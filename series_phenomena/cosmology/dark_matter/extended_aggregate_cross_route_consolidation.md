@@ -1,6 +1,6 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v17 (consolidation memo; integer-per-revision — rev1=0871 … rev16=0887, **rev17=this/0888**) · **Lane:** DM-local + two registry crossings (0877 register; 0885 close DM-3 + lift lemma)
+**Version:** v18 (consolidation memo; integer-per-revision — rev1=0871 … rev17=0888, **rev18=this/0889**) · **Lane:** DM-local + two registry crossings (0877 register; 0885 close DM-3 + lift lemma)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
 **Status of result:** Layer C. Cross route **VIABLE; corona RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel-ratified V5-Q: 3 CONFIRM + 1 RESTATE-with-fix, fix folded rev6). Beam stiffness confirmed (panel 4/4, Q2); strand/ball retired (4/4, Q3/Q4). The corona's V_surf well (0874) is real but **unfilled**: V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV) and the only dense reservoir (the vacuum Sea) is balanced — so σ/m is undiluted *given* ASM-DM-CORONA-LOCALITY (§7), the one remaining named assumption (a candidate future theorem). **No remaining computed kill-risk.**
@@ -514,3 +514,12 @@ draft is **v0.2** (not v1.0; v1.0 only on agreement across all reviews). v0.2 co
 state — corona retired unconditionally (DM-3 closed, lemma lifted), σ/m normalization element-verified (0886),
 the single number scoped as the external SF make-or-break (0887) — into a coherent submission and hands the
 whole paper to the four-model CONV-001 panel. v1.0 flips on convergence. Memo → v17.
+
+**[Patch 0889 — DM-1 SHIPPED v1.0.]** The paper-level CONV-001 review returned **4/4 CONFIRM on the paper and
+4/4 CONFIRM on the v1.0 promotion** (Grok, Gemini, Copilot, ChatGPT; the last consistent with its earlier
+corona ratification). No RESTATE, no REFUTE → DM-1 v0.2 promoted to **v1.0**. Non-blocking polish folded
+(velocity-dependence headline; Genesis = "structural Layer-C reasoning"; 0.11·N element-cancellation pointer;
+framework-internal caveat). Scope held: Layer-C candidate (corona at Layer B); **not** a THEO, **not** a swarm
+entry; **CONJ-COSMO-1 stays NOT-confirmed**. The single σ/m number remains the external SF-2/SF-5 make-or-break
+(0887). Reviews: `documentation_suite/reviews-DM-1.md`. The Cross-Rod campaign ships its flagship at v1.0, off
+every internal hedge; the positive next target is the E_bond pin. Memo → v18.
