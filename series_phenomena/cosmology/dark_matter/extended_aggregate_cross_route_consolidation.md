@@ -1,6 +1,6 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v15 (consolidation memo; integer-per-revision — rev1=0871 … rev14=0885, **rev15=this/0886**) · **Lane:** DM-local + two registry crossings (0877 register; 0885 close DM-3 + lift lemma)
+**Version:** v16 (consolidation memo; integer-per-revision — rev1=0871 … rev15=0886, **rev16=this/0887**) · **Lane:** DM-local + two registry crossings (0877 register; 0885 close DM-3 + lift lemma)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
 **Status of result:** Layer C. Cross route **VIABLE; corona RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel-ratified V5-Q: 3 CONFIRM + 1 RESTATE-with-fix, fix folded rev6). Beam stiffness confirmed (panel 4/4, Q2); strand/ball retired (4/4, Q3/Q4). The corona's V_surf well (0874) is real but **unfilled**: V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV) and the only dense reservoir (the vacuum Sea) is balanced — so σ/m is undiluted *given* ASM-DM-CORONA-LOCALITY (§7), the one remaining named assumption (a candidate future theorem). **No remaining computed kill-risk.**
@@ -497,3 +497,14 @@ existing O(1) g (illustratively mildly enhanced, ~0.11→~0.2, which would shift
 robustly rigid). The eCP shell screens only the electric (corona) channel, not color, so σ/m is set by the
 unscreened cube core. **Consequence: the E_bond pin can build on σ/m = 0.11·N (N = cube-elements) safely;** the
 footnote "open check" is closed; no qualitative change to any DM result. Memo → v15.
+
+**[Patch 0887 — edge-bond SSV make-or-break SCOPED.]** The E_bond pin is **not** DM-local and **not**
+fabricable: E_bond is the registered SF-2/SF-5 edge-bond SSV make-or-break (no pinned binding potential; SF-2
+cage masses calibrated via η ~ 10⁻¹⁷, root blocker **OPEN-FP-SF-2-η**), a sub-Planck near-cancellation
+charge-sum that 0865 declined to fake. Scoping doc `edge_bond_ssv_makeorbreak_scoping.md` instead **specifies**
+it: the over-determined target window (E_bond ∈ [0.8 keV, 2 MeV]; E_bond/kT_form ~ 24–41; E_bond ≳ 100
+kT_present; kT_form/kT_present ≳ 7; closing iff kT_present ≲ 19 keV), the dependency chain rooted at
+OPEN-FP-SF-2-η, what is robust despite the cancellation (E_qq > E_ee, E_bond ≡ E_ee, in-window reachability),
+the payoff (single σ/m → hard core-size-vs-halo-mass curve → moves CONJ-COSMO-1), and the pre-registered
+falsifiable contract (a return outside the window kills the candidate). The DM lane has done all it can without
+the SF input. Memo → v16.
