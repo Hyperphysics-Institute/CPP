@@ -3,8 +3,9 @@
 **STATUS: STAGED, founder-gated. Post-v1.0 companion note. Supersedes step 5 ("velocity dependence") of
 `mechanism-DM-1.md` PENDING founder approval + a CONV-001 panel pass.** DM-1 stays v1.0; this note documents
 the corrected velocity mechanism assembled in patches 1815–1826 (30 June 2026, Opus lane). It does not edit the
-v1.0 papers. Layer C throughout. **CONV-001 round 1 folded (3/4: ChatGPT SwC, Copilot SwC, Gemini NOT-SOUND
-engaged, Grok pending) — net SOUND-WITH-CHANGES; see "Panel review" below.**
+v1.0 papers. Layer C throughout (order-of-magnitude, CPP-geometry-dependent — not framework-free). **CONV-001
+round 1 CLOSED (4/4: ChatGPT, Grok, Copilot all SwC; Gemini NOT-SOUND engaged) — net SOUND-WITH-CHANGES; see
+"Panel review" below.**
 
 ## Why this note exists (the revision)
 
@@ -98,11 +99,13 @@ backing, δ*/d ~ 1 (force balance). **O(1) knobs (flagged, not fit):** per-fusio
 
 ## Panel review (CONV-001 round 1) — verdicts, dissent engagement, and the folded sharpening
 
-**Returned 3 of 4** (30 June 2026). ChatGPT **SOUND-WITH-CHANGES**; Copilot **SOUND-WITH-CHANGES**; Gemini
-**NOT-SOUND**; Grok pending. The two SwC reviews and Gemini's dissent **converge** on one load-bearing item —
-the X-junction flexibility / per-fusion drop — and engaging Gemini's objections on the merits sharpens it into
-a single computable question. (Honor-don't-outvote: Gemini's four points are answered individually below, not
-dismissed by tally.)
+**Returned 4 of 4 — round 1 CLOSED** (30 June 2026). ChatGPT **SOUND-WITH-CHANGES**; Grok **SOUND-WITH-CHANGES**;
+Copilot **SOUND-WITH-CHANGES**; Gemini **NOT-SOUND**. *(Attribution correction: an earlier fold labeled the
+recurring SwC review "ChatGPT"; that review is Grok's. ChatGPT's distinct review — verdict table, R_color
+"RESTATE-WITH-FIX", explicit three-wall grading — arrived separately and is folded below.)* The three SwC
+reviews and Gemini's dissent **converge** on the same load-bearing items, and engaging Gemini's objections on the
+merits sharpens them. (Honor-don't-outvote: Gemini's four points are answered individually below, not dismissed
+by tally.)
 
 **Gemini Obj 1 — "rigid core ⇒ rigid joint; can't be stiff and floppy." DISSOLVED.** The objection conflates
 two independent stiffnesses. The E_qq bond gives high **stretch** stiffness (resists pulling the spine apart →
@@ -147,18 +150,38 @@ property controls **both** open numbers, which therefore **stand or fall togethe
 
 This refutes Gemini's "cannibalizes its own logic" charge: the model consistently needs **stretch-stiff +
 angular-flexible**, and *both* desired behaviors (low floor, self-limiting) follow from the *same* angular
-flexibility. It also means the candidate's viability reduces to a single **computable** question — derive the
-angular/hinge stiffness of a glueball-jointed single-point contact between two color cores — rather than a vague
-"is the X floppy?"
+flexibility. The junction angular stiffness is therefore the **one number we can compute next** that settles two
+open items at once.
 
-**Net panel position: SOUND-WITH-CHANGES.** Folded changes (this round): (a) distinguish stretch- vs
-angular-stiffness and name the junction angular stiffness as the single make-or-break controlling both the floor
-and the self-limiting (above); (b) record R_color ~ d as the qDP-bond-length identification, flag the needed
-SF-5 support, and state the v_thr sensitivity (Obj 2); (c) add the Sea-drag clarification — transient local
-energy-routing, uniform motion drag-free per SR-1 (Obj 4). Gemini's NOT-SOUND is **recorded as a standing
-dissent** with its two valid pressures (junction stiffness underived; R_color wants SF-5 support) preserved and
-its two invalid points (Obj 3 backwards; Obj 4 conflation) rebutted with the reasoning above. **No promotion;
-DM-1 stays v1.0; CONJ-COSMO-1 remains founder-gated.** Grok's review to be folded on arrival.
+**ChatGPT's correction (folded, honored): it is not a *single* question — it is a coupled package.** ChatGPT's
+genuine review (SwC) flags that the make-or-break is the **coupled trio** of (i) the color range R_color, (ii)
+the penetrating-tail *rate*, and (iii) the flexible-X transport suppression — not the junction stiffness alone.
+That is correct, and it tempers the round-1 framing: the junction stiffness is the *most computable* of the
+three and uniquely controls floor + self-limiting together, but R_color and the tail-rate are **co-load-bearing**
+and must not be treated as settled while the stiffness is pinned. ChatGPT additionally grades the three walls
+unequally: the **energy wall** is cleanly cleared (strip, don't cut), but the **v_pen wall** ("conditionally
+yes — geometry/distribution-sensitive") and the **repair gate** ("conditionally yes — only if color capture at
+range outruns recoating") are the *less secure* two, and both lean on the same color-range physics as R_color.
+So R_color is not one isolated knob; it propagates into the repair gate and the tail-rate as well — which raises
+its priority. ChatGPT also rightly calibrates the layer label: **Layer C here means an order-of-magnitude
+estimate, NOT "framework-free"** — the mechanism depends throughout on CPP-specific geometry (color range,
+recoating, rod-collision kinematics, X-junction transport). The earlier "framework-free" phrasing (in the panel
+cover) is withdrawn; "Layer C, CPP-geometry-dependent" is the accurate label.
+
+**Net panel position (round 1 CLOSED, 4/4): SOUND-WITH-CHANGES** — 3 SwC (ChatGPT, Grok, Copilot) + 1 NOT-SOUND
+(Gemini, engaged). Folded changes: (a) distinguish stretch- vs angular-stiffness and name the junction angular
+stiffness as the make-or-break controlling both the floor and the self-limiting (above); (b) elevate **R_color ~
+d to a named live risk, NOT a settled input** — ChatGPT "RESTATE-WITH-FIX", Grok "needs SF-5 support", Gemini
+"numerology": the three-reviewer consensus pressure, and it propagates into the repair gate and tail-rate, so it
+ranks alongside the junction stiffness (record the qDP-bond-length identification + the v_thr sensitivity, flag
+SF-5 support as required, keep it live); (c) add the Sea-drag clarification — transient local energy-routing,
+uniform motion drag-free per SR-1 (Obj 4); (d) grade the three walls unequally (energy clean; v_pen and repair
+conditional, color-range-sensitive); (e) withdraw "framework-free" — Layer C = order-of-magnitude,
+CPP-geometry-dependent. Gemini's NOT-SOUND is **recorded as a standing dissent**: its two valid pressures
+(junction stiffness underived; R_color wants strong-sector support — both now shared by the SwC majority) are
+preserved; its two invalid points (Obj 3 backwards; Obj 4 conflation) are rebutted with the reasoning above.
+**No promotion** — ChatGPT explicitly endorses only a *staged, founder-gated* CONJ-COSMO-1 discussion and "does
+not yet justify treating the velocity curve as final"; concur. **DM-1 stays v1.0; CONJ-COSMO-1 founder-gated.**
 
 ## Relation to DM-1 v1.0
 
@@ -176,11 +199,12 @@ shortening) · strip-then-fuse 1821 (gate) / 1822 (penetration tail) / 1824 (for
 
 ## Disposition
 
-STAGED for founder review. **CONV-001 round 1 folded (net SOUND-WITH-CHANGES).** The panel collapsed the
-candidate's exposure to one computable question: **the angular (hinge) stiffness of the single-point glueball
-junction** — which controls the cluster floor and the self-limiting *together* (flexible → 0.8 + stalls; rigid
-→ 1.6 + runaway). That is the decisive next calculation. On founder approval: (a) supersede `mechanism-DM-1.md`
-step 5 with a pointer to this note; (b) fold Grok on arrival and, if it concurs, close round 1; (c)
-founder-gated, open the CONJ-COSMO-1 discussion — the velocity signature is now mechanistic on the corrected
-geometry. **No promotion until the junction angular stiffness is derived; DM-1 stays v1.0; CONJ-COSMO-1
-founder-gated.**
+STAGED for founder review. **CONV-001 round 1 CLOSED — 4/4 in, net SOUND-WITH-CHANGES** (3 SwC + Gemini
+NOT-SOUND, dissent recorded). The panel's converging make-or-break is the **coupled trio**: the glueball-junction
+**angular stiffness** (the one number computable next, controlling cluster floor + self-limiting together), the
+**color range R_color ~ d** (now a named live risk — propagates into the repair gate and tail-rate; wants SF-5
+support), and the **penetrating-tail rate**. On founder approval: (a) supersede `mechanism-DM-1.md` step 5 with a
+pointer to this note; (b) take the junction-angular-stiffness calculation first, then the R_color ~ d
+strong-sector (SF-5) support; (c) founder-gated, open the CONJ-COSMO-1 *discussion* (staged only — the panel
+endorses a discussion, not finality for the velocity curve). **No promotion until the coupled trio is pinned;
+DM-1 stays v1.0; CONJ-COSMO-1 founder-gated.**
