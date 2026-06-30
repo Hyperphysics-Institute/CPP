@@ -3,7 +3,8 @@
 **STATUS: STAGED, founder-gated. Post-v1.0 companion note. Supersedes step 5 ("velocity dependence") of
 `mechanism-DM-1.md` PENDING founder approval + a CONV-001 panel pass.** DM-1 stays v1.0; this note documents
 the corrected velocity mechanism assembled in patches 1815–1826 (30 June 2026, Opus lane). It does not edit the
-v1.0 papers. Layer C throughout.
+v1.0 papers. Layer C throughout. **CONV-001 round 1 folded (3/4: ChatGPT SwC, Copilot SwC, Gemini NOT-SOUND
+engaged, Grok pending) — net SOUND-WITH-CHANGES; see "Panel review" below.**
 
 ## Why this note exists (the revision)
 
@@ -95,6 +96,70 @@ backing, δ*/d ~ 1 (force balance). **O(1) knobs (flagged, not fit):** per-fusio
   the exact floor is not.
 - **N_coll** couples the curve to the optical depth; representative, carries O(1).
 
+## Panel review (CONV-001 round 1) — verdicts, dissent engagement, and the folded sharpening
+
+**Returned 3 of 4** (30 June 2026). ChatGPT **SOUND-WITH-CHANGES**; Copilot **SOUND-WITH-CHANGES**; Gemini
+**NOT-SOUND**; Grok pending. The two SwC reviews and Gemini's dissent **converge** on one load-bearing item —
+the X-junction flexibility / per-fusion drop — and engaging Gemini's objections on the merits sharpens it into
+a single computable question. (Honor-don't-outvote: Gemini's four points are answered individually below, not
+dismissed by tally.)
+
+**Gemini Obj 1 — "rigid core ⇒ rigid joint; can't be stiff and floppy." DISSOLVED.** The objection conflates
+two independent stiffnesses. The E_qq bond gives high **stretch** stiffness (resists pulling the spine apart →
+no fragmentation); the X-junction's **angular/hinge** stiffness (resistance to the four arms *pivoting* about a
+single-point glueball contact) is a *different* property and is the actual unknown. A strong but spatially
+localized bond can be angularly compliant — two stiff rods spot-welded at one point still scissor. So
+"stretch-stiff core + angular-flexible junction" is not a contradiction. **What survives** is not Gemini's
+contradiction but the shared concern (ChatGPT, Copilot too): the junction angular stiffness is **asserted, not
+derived**. That is a real residual — see the sharpening below.
+
+**Gemini Obj 2 — "R_color ~ d is numerology." FAIR CAUTION (partly answered).** Copilot defends it directly:
+the qDP bond length *is* d and the qDP transverse size is O(d), so the residual-color range between exposed
+cores is ~d. ChatGPT and Gemini are right that the note *asserted* it. Fold: R_color ~ d traces to the qDP bond
+length/size (both ~d); it is **load-bearing** and wants an explicit strong-sector (SF-5) support, and the v_thr
+sensitivity to it must be stated (a 0.7d range pushes v_thr up by ~1/√0.7 ≈ 1.2× → ~2100 km/s, tightening the
+cluster end). Not numerology, but not yet derived either.
+
+**Gemini Obj 3 — "flexible joint ⇒ decoupled arms ⇒ full backing ⇒ no self-limiting." INVALID — backwards
+(verified numerically).** If the joint is angularly flexible, the arms *are* decoupled — so a later collision
+on an arm is backed by **only that arm's** (shorter, N/2) inertia, giving v_thr(N/2) ≈ 4050 km/s, **higher**
+than the parent rod's 2865. Threshold **rises** → fusion stalls. The *rigid* joint is the dangerous case:
+whole-X backing (2N) gives v_thr ≈ 2025 km/s, **lower** → runaway. So the flexible joint **is required for**
+self-limiting; it does not contradict it. Gemini inverted the inertial bookkeeping.
+
+**Gemini Obj 4 — "Sea backing ⇒ strongly-interacting fluid ⇒ drag ⇒ violates collisionless DM." INVALID
+(conflation), but worth a disclosure.** The SF-6 backing is **transient, local** collisional energy-routing at
+the contact (fm/fs scale) — KE briefly held in Sea modes instead of rebounding instantly. It is **not** a
+sustained macroscopic ram pressure. Uniform motion of a rod through the Sea is **drag-free by the SR-1
+construction** (the Sea is the Lorentz-invariant vacuum; if it dragged DM it would drag ordinary matter too,
+since it is the same medium EM propagates through). The vacuum mediating a violent collision without dragging
+uniform motion is exactly how the EM vacuum already behaves. No dynamical-friction / large-scale-structure
+problem. The note should say this explicitly.
+
+**The sharpening (the round's decisive result).** Obj 1 and Obj 3, properly answered, collapse the candidate's
+exposure to **one property: the angular (hinge) stiffness of the single-point glueball junction** — and that one
+property controls **both** open numbers, which therefore **stand or fall together**:
+
+| junction angular stiffness | per-fusion drop → cluster floor | post-fusion backing → self-limiting |
+|---|---|---|
+| **flexible** (point-contact pivots) | ~1/8 → **σ/m ≈ 0.8** (viable) | arms decoupled (N/2 backing) → v_thr **rises** → **stalls** |
+| **rigid** (locked cross) | ~1/2 → **σ/m ≈ 1.6** (in tension) | whole-X backing (2N) → v_thr **falls** → **runaway** |
+
+This refutes Gemini's "cannibalizes its own logic" charge: the model consistently needs **stretch-stiff +
+angular-flexible**, and *both* desired behaviors (low floor, self-limiting) follow from the *same* angular
+flexibility. It also means the candidate's viability reduces to a single **computable** question — derive the
+angular/hinge stiffness of a glueball-jointed single-point contact between two color cores — rather than a vague
+"is the X floppy?"
+
+**Net panel position: SOUND-WITH-CHANGES.** Folded changes (this round): (a) distinguish stretch- vs
+angular-stiffness and name the junction angular stiffness as the single make-or-break controlling both the floor
+and the self-limiting (above); (b) record R_color ~ d as the qDP-bond-length identification, flag the needed
+SF-5 support, and state the v_thr sensitivity (Obj 2); (c) add the Sea-drag clarification — transient local
+energy-routing, uniform motion drag-free per SR-1 (Obj 4). Gemini's NOT-SOUND is **recorded as a standing
+dissent** with its two valid pressures (junction stiffness underived; R_color wants SF-5 support) preserved and
+its two invalid points (Obj 3 backwards; Obj 4 conflation) rebutted with the reasoning above. **No promotion;
+DM-1 stays v1.0; CONJ-COSMO-1 remains founder-gated.** Grok's review to be folded on arrival.
+
 ## Relation to DM-1 v1.0
 
 DM-1 v1.0 stands: the species (Cross-Rod), the σ/m = 0.11·N floor, the no-corona closure (OPEN-COSMO-DM-3), and
@@ -111,6 +176,11 @@ shortening) · strip-then-fuse 1821 (gate) / 1822 (penetration tail) / 1824 (for
 
 ## Disposition
 
-STAGED for founder review. On approval: (a) supersede `mechanism-DM-1.md` step 5 with a pointer to this note;
-(b) CONV-001 panel pass (single-block protocol) with the stress points above named; (c) founder-gated, open the
-CONJ-COSMO-1 discussion — the velocity signature is now mechanistic on the corrected geometry.
+STAGED for founder review. **CONV-001 round 1 folded (net SOUND-WITH-CHANGES).** The panel collapsed the
+candidate's exposure to one computable question: **the angular (hinge) stiffness of the single-point glueball
+junction** — which controls the cluster floor and the self-limiting *together* (flexible → 0.8 + stalls; rigid
+→ 1.6 + runaway). That is the decisive next calculation. On founder approval: (a) supersede `mechanism-DM-1.md`
+step 5 with a pointer to this note; (b) fold Grok on arrival and, if it concurs, close round 1; (c)
+founder-gated, open the CONJ-COSMO-1 discussion — the velocity signature is now mechanistic on the corrected
+geometry. **No promotion until the junction angular stiffness is derived; DM-1 stays v1.0; CONJ-COSMO-1
+founder-gated.**
