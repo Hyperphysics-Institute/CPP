@@ -702,3 +702,36 @@ The K$_3$ pair potential $V_{\rm pair}(\xi) = -B_{\rm pair} \exp(-\xi^2/2)$ Tayl
 
 ---
 
+### OPEN-SS-40: qq-Edge-Bond Angular Stiffness — the Scissor/Bend Ratio g and the Absolute κ_θ
+**Status:** OPEN (G1a evaluated — partial; G1b open; both blocked at root on OPEN-FP-SF-2-η)
+**Sector(s):** SS / SF-2 / SF-5, (cosmology / dark-matter consumer)
+**Priority:** HIGH (DM make-or-break; co-located with OPEN-SS-39 as the DM edge-bond family)
+**One-line statement:** Derive the qq-edge-bond SSV angular-stiffness potential and evaluate it in two
+geometries — (G1a) the scale-free ratio g = κ_scissor/κ_bend that decides the DM Cross-Rod X-junction floor,
+and (G1b) the absolute κ_θ that sets the ribbon persistence length ℓ_p (~100–700 fm).
+**Why now / gap:** The 30 June DM→SF handover reduced the DM-floor half of G1 to the ratio g < 6/N (≈0.43 at
+N≈14), in which absolute scale, kT_form, the ZBW params, and the Earnshaw sign all CANCEL (the X-junction
+scissor stiffness and the in-line ribbon bend are the SAME edge-bond potential in two geometries). The held DM
+panel round 2 was waiting on this number.
+**What a solution looks like:** (G1a) g from the same-potential ratio — DELIVERED THIS PATCH as a partial:
+the clean ratio evaluates to **g ≈ 1.6–3.8, at or above g_crit = 0.43**, REVERSING the DM-lane's staged g~0.1
+"viable" read. Verdict = **marginal-to-tense, leaning AGAINST clean viability — NOT a clean kill, NOT the
+comfortable viable expected.** Diagnosis: the founder's 1835 softness read used the E_qq core (~66 MeV) as
+reference, but the floor's reference is the E_ee in-line bend (same perimeter shell as the scissor), so the
+E_qq/E_ee hierarchy cancels and g returns to geometric O(1). A DEFINITIVE g (and all of G1b) still needs the
+pinned charge map — exact qCP counts, the alternating like/opposite cancellation, exact lever arms — i.e. the
+edge-bond SSV potential itself, blocked on OPEN-FP-SF-2-η. (Patch 2200: `flagship_papers/strong/reasoning/2200.md`,
+`code/2200_verify_g1a_scalefree_ratio.py`.)
+**Dependencies:** OPEN-FP-SF-2-η (substrate-thermodynamic framework — pins the absolute edge-bond SSV potential;
+ROOT BLOCKER for a definitive g and for all of G1b/G2). Geometry inputs from DM 1830–1836.
+**Cross-sector connections:** OPEN-SS-39 (glueball kinetics — the other half of the DM make-or-break family;
+both consume the same edge-bond SSV potential); DM-1 program is the consumer (plugs g into the floor verdict,
+σ/m, and DM-1 status — DM lane, not SF). SF-2 (electroweak edge-bond home) and SF-5 (strong sector).
+**Current best lead:** The scale-free ratio framing (DM 1836) is correct and cancels the blocked absolute scale;
+the residual obstacle is purely geometric and resolvable only with the pinned charge map. Founder may hold that
+map (his decision, preserved in 2200 §10).
+**Paper(s):** numbers home = SF-2/SF-5 (this OPEN); consumer = DM-1.
+**Last updated:** 30 June 2026 (registered from the SF-2/SF-5 G1a delivery, patch 2200).
+
+---
+
