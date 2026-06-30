@@ -5,8 +5,8 @@
 the corrected velocity mechanism assembled in patches 1815–1826 (30 June 2026, Opus lane). It does not edit the
 v1.0 papers. Layer C throughout (order-of-magnitude, CPP-geometry-dependent — not framework-free). **CONV-001
 round 1 CLOSED (4/4: ChatGPT, Grok, Copilot all SwC; Gemini NOT-SOUND engaged) — net SOUND-WITH-CHANGES; see
-"Panel review" below. JUNCTION-STIFFNESS CALC (1830): cluster floor leans ~1.0–1.5 (tense), not 0.8 — velocity
-sector now rides on one SF-5 number; see "Junction angular stiffness" below.**
+"Panel review" below. JUNCTION: founder edge-hinge mechanism (1831) corrects 1830 — self-limiting SECURED, floor
+~0.8–1.0 (not the 1830 tense ~1.0–1.5); make-or-break = one qq-edge-hinge dihedral-stiffness number.**
 
 ## Why this note exists (the revision)
 
@@ -209,6 +209,39 @@ rides on one SF-5 number:** the angular energy U(θ) of a 4-arm color knot — �
 find sub-E_ee softness), but the cluster end is now the make-or-break, consistent with all four reviewers'
 concern. **No promotion — more exposed, not less.**
 
+## Founder's junction mechanism — the qq edge-hinge (1831): corrects 1830, floor → ~0.8–1.0
+
+Thomas supplied the junction-formation sequence, and it **corrects 1830's category error.** Two
+velocity-qualified rods strip a single eDP each; the 8qDP cores appose at 90°; **neither core fractures** and
+**no glueball forms** (the collision is below the transverse-plane fracture energy — the established energy
+wall); a **single strong qq bond forms between the two edges** — a literal hinge, like two hTetras bonded on
+apposed qq edges. The rods' rigidity prevents bending into a full-face 8qCP bond, so they stay **edge-bonded and
+free to hinge.**
+
+**Where 1830 was wrong:** it tied the junction angular stiffness to the **bond depth** (modeled a knot, κ_θ ≥
+E_ee) and concluded a tense floor. For an **edge** bond, rotating about the edge **does not stretch the bond** —
+so E_qq sets only the **stretch** stiffness (holds the junction, forbids fragmentation), while the **hinge
+(dihedral) stiffness is decoupled** and set by secondary coat/steric effects (≲ E_ee). This is the
+mechanism-level realization of the stretch-stiff + angular-flexible split — now grounded, not assumed. Three
+consequences, all favorable vs 1830:
+
+1. **Hinge stable.** A one-point edge hinge folds by rotating about the edge (rods go coplanar/side-by-side),
+   **not** stacking face-to-face; the rigid face-bond needs a translation a single-point hinge + rigid rods
+   cannot supply → the face-bond is **geometrically inaccessible**, no hinge→rigid conversion channel.
+2. **Self-limiting SECURED.** The free hinge **guarantees** inertial decoupling (arm backs penetration with its
+   own N/2 inertia → v_thr rises → stalls); the rigid-junction runaway required a rigidity the hinge lacks. The
+   1828/1830 runaway worry is **removed by the mechanism.**
+3. **Cluster floor → ~0.8–1.0.** Wide kinematic dihedral range → substantial orientation-averaging if soft.
+   Floor ≲ 0.8 as long as the **residual dihedral stiffness κ_θ ≲ 0.4–0.5 MeV (sub-E_ee)** — plausible for a
+   geometric hinge with secondary coat/steric restoring torque and one of four eDPs already stripped.
+
+**Revised floor (supersedes the 1830 reading):** the 1830 "tense ~1.0–1.5" lean was an artifact of the wrong
+(knot) junction model and is **partially retracted.** With the edge-hinge: floor **~0.8 (soft hinge) to ~1.0
+(E_ee-scale dihedral bias)** — favorable-to-marginal, not tense. The make-or-break re-sharpens to **one tractable
+number: the dihedral restoring torque of a single locally-stripped qq edge-hinge** (coat + steric) — a
+one-junction calculation, no longer the strong-sector 4-arm-knot problem. **Still no promotion** (κ_θ ~ E_ee
+would land at ~1.0); founder mechanism STAGED for `founders_vision.md`.
+
 ## Relation to DM-1 v1.0
 
 DM-1 v1.0 stands: the species (Cross-Rod), the σ/m = 0.11·N floor, the no-corona closure (OPEN-COSMO-DM-3), and
@@ -225,13 +258,14 @@ shortening) · strip-then-fuse 1821 (gate) / 1822 (penetration tail) / 1824 (for
 
 ## Disposition
 
-STAGED for founder review. **CONV-001 round 1 CLOSED (4/4, net SOUND-WITH-CHANGES); junction-stiffness leg of
-the coupled trio now COMPUTED (1830) — and it leans unfavorable: cluster floor ~1.0–1.5 (mild-to-moderate
-tension), not 0.8.** The velocity-sector viability now reduces to **one SF-5 number**: the angular energy U(θ) of
-a 4-arm color knot (κ_θ ≲ 0.4 MeV → floor returns to ~0.8, viable; κ_θ ≳ E_ee → cluster tension stands). On
-founder approval: (a) flag the **SF-5 4-arm-knot angular-energy calculation** as the velocity-sector make-or-break
-(needs strong-sector machinery, not Layer C); (b) decide whether to keep developing on the optimistic
-(flexible) branch or treat the cluster tension as the leading result and reframe DM-1's velocity signature as
-constrained; (c) `mechanism-DM-1.md` step 5 supersession and any CONJ-COSMO-1 discussion **wait** on the SF-5
-number — the clean velocity signature is no longer established. **No promotion — the candidate is more exposed,
-not less; DM-1 stays v1.0; CONJ-COSMO-1 founder-gated.**
+STAGED for founder review. **CONV-001 round 1 CLOSED (4/4, net SOUND-WITH-CHANGES). Junction now resolved by the
+founder's edge-hinge mechanism (1831), which corrects 1830:** self-limiting is SECURED (the hinge guarantees
+inertial decoupling — runaway branch closed), the hinge is stable (face-bond geometrically inaccessible), and
+the cluster floor moves to **~0.8–1.0** (not the 1830 tense ~1.0–1.5, which rested on a wrong knot model). The
+velocity-sector make-or-break is now **one tractable number: the dihedral restoring torque of a single
+locally-stripped qq edge-hinge** (κ_θ ≲ 0.4 MeV → floor ~0.8 viable; κ_θ ~ E_ee → ~1.0 marginal) — a
+one-junction calculation, no longer strong-sector-hard. On founder approval: (a) **promote the edge-hinge
+mechanism to `founders_vision.md`**; (b) compute κ_θ (I can take this directly); (c) re-fold the panel (round 2)
+— it answers the reviewers' shared flexible-X concern; (d) only then, the `mechanism-DM-1.md` step 5 supersession
+and any founder-gated CONJ-COSMO-1 discussion. **No promotion until κ_θ is pinned; DM-1 stays v1.0; CONJ-COSMO-1
+founder-gated.**
