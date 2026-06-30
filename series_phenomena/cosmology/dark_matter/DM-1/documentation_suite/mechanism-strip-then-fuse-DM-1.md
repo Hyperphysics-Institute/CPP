@@ -5,8 +5,9 @@
 the corrected velocity mechanism assembled in patches 1815–1826 (30 June 2026, Opus lane). It does not edit the
 v1.0 papers. Layer C throughout (order-of-magnitude, CPP-geometry-dependent — not framework-free). **CONV-001
 round 1 CLOSED (4/4: ChatGPT, Grok, Copilot all SwC; Gemini NOT-SOUND engaged) — net SOUND-WITH-CHANGES; see
-"Panel review" below. JUNCTION: founder edge-hinge mechanism (1831) corrects 1830 — self-limiting SECURED, floor
-~0.8–1.0 (not the 1830 tense ~1.0–1.5); make-or-break = one qq-edge-hinge dihedral-stiffness number.**
+"Panel review" below. JUNCTION: founder edge-hinge mechanism (1831) corrects 1830 — self-limiting SECURED;
+κ_θ COMPUTED (1833) ≈ 0.27 MeV (sub-E_ee, hinging) → cluster floor ~0.8, viable-to-marginal, clears the 1830
+tense scenario.**
 
 ## Why this note exists (the revision)
 
@@ -242,6 +243,23 @@ number: the dihedral restoring torque of a single locally-stripped qq edge-hinge
 one-junction calculation, no longer the strong-sector 4-arm-knot problem. **Still no promotion** (κ_θ ~ E_ee
 would land at ~1.0); founder mechanism STAGED for `founders_vision.md`.
 
+## κ_θ computed (1833): ~0.27 MeV (sub-E_ee), cluster floor ~0.8, viable-to-marginal
+
+The make-or-break number is now computed (`code/1833_...py`). The hinge bond is hinge-soft, so κ_θ comes from the
+**perimeter eCP charges** near the hinge, whose separations change with the dihedral: nearest pair at ~d, r(φ) =
+2d sin(φ/2), U = kq²/r with kq² = E_ee·d. With alternating-perimeter partial cancellation and the locally-stripped
+contact (1 of 4 eDPs gone), **κ_θ ≈ 0.27 MeV (best), ~0.2–0.5 MeV over O(1) charge-count/cancellation** —
+**sub-E_ee**, confirming the edge-hinge softness. Against the flexibility threshold 3B/L_arm, κ_θ ≈ 0.27 is
+**below** it for the floor-setting post-fusion arms (N = 14 → 0.30; N = 8 → 0.53), i.e. **those junctions hinge**
+→ per-fusion drop ~1/4 → **cluster floor ≈ 0.8 (range 0.4–1.0)**. The candidate lands **viable-to-marginal**,
+**clearing the 1830 tense scenario.** The full σ/m(v) curve (~3.1 dwarf → ~0.8 cluster → ~0.2 mergers, knee
+~1000–1500 km/s) now rests on a **computed** junction stiffness.
+
+**Residual:** κ_θ ≈ 0.27 sits *close* to the N = 14 threshold (0.30), so it is flexible-but-not-by-much; the O(1)
+perimeter charge-count/cancellation could move it to ~0.5 (floor ~1.0, marginal) or ~0.15 (floor ~0.4, comfortably
+viable). Pinnable by the full dihedral Madelung sum over the **28 June alternating-charge-square** perimeter — an
+in-corpus calculation, not a strong-sector unknown. **Still no promotion** (floor marginal until κ_θ is pinned).
+
 ## Relation to DM-1 v1.0
 
 DM-1 v1.0 stands: the species (Cross-Rod), the σ/m = 0.11·N floor, the no-corona closure (OPEN-COSMO-DM-3), and
@@ -258,14 +276,13 @@ shortening) · strip-then-fuse 1821 (gate) / 1822 (penetration tail) / 1824 (for
 
 ## Disposition
 
-STAGED for founder review. **CONV-001 round 1 CLOSED (4/4, net SOUND-WITH-CHANGES). Junction now resolved by the
-founder's edge-hinge mechanism (1831), which corrects 1830:** self-limiting is SECURED (the hinge guarantees
-inertial decoupling — runaway branch closed), the hinge is stable (face-bond geometrically inaccessible), and
-the cluster floor moves to **~0.8–1.0** (not the 1830 tense ~1.0–1.5, which rested on a wrong knot model). The
-velocity-sector make-or-break is now **one tractable number: the dihedral restoring torque of a single
-locally-stripped qq edge-hinge** (κ_θ ≲ 0.4 MeV → floor ~0.8 viable; κ_θ ~ E_ee → ~1.0 marginal) — a
-one-junction calculation, no longer strong-sector-hard. On founder approval: (a) **promote the edge-hinge
-mechanism to `founders_vision.md`**; (b) compute κ_θ (I can take this directly); (c) re-fold the panel (round 2)
-— it answers the reviewers' shared flexible-X concern; (d) only then, the `mechanism-DM-1.md` step 5 supersession
-and any founder-gated CONJ-COSMO-1 discussion. **No promotion until κ_θ is pinned; DM-1 stays v1.0; CONJ-COSMO-1
-founder-gated.**
+STAGED for founder review. **CONV-001 round 1 CLOSED (4/4, net SOUND-WITH-CHANGES). Junction resolved by the
+founder's edge-hinge mechanism (1831) and the κ_θ computation (1833):** self-limiting SECURED (hinge inertial
+decoupling — runaway closed), and **κ_θ ≈ 0.27 MeV (sub-E_ee, hinging) → cluster floor ~0.8, viable-to-marginal**,
+clearing the 1830 tense scenario. The velocity signature (~3.1 dwarf → ~0.8 cluster → ~0.2 mergers, knee
+~1000–1500 km/s) now rests on a computed junction stiffness. The one remaining tightening is the **full dihedral
+Madelung sum over the 28 June alternating-charge-square perimeter** — collapses the O(1) κ_θ range, deciding
+viable (~0.8) vs marginal (~1.0). On founder approval: (a) pin κ_θ via that charge sum (I can take it directly);
+(b) re-fold the panel (round 2) with the edge-hinge mechanism + computed κ_θ — it answers the reviewers' shared
+flexible-X concern with a number; (c) only then, founder-gated, the `mechanism-DM-1.md` step-5 supersession and
+the CONJ-COSMO-1 discussion. **No promotion until κ_θ is pinned; DM-1 stays v1.0; CONJ-COSMO-1 founder-gated.**
