@@ -5,7 +5,8 @@
 the corrected velocity mechanism assembled in patches 1815–1826 (30 June 2026, Opus lane). It does not edit the
 v1.0 papers. Layer C throughout (order-of-magnitude, CPP-geometry-dependent — not framework-free). **CONV-001
 round 1 CLOSED (4/4: ChatGPT, Grok, Copilot all SwC; Gemini NOT-SOUND engaged) — net SOUND-WITH-CHANGES; see
-"Panel review" below.**
+"Panel review" below. JUNCTION-STIFFNESS CALC (1830): cluster floor leans ~1.0–1.5 (tense), not 0.8 — velocity
+sector now rides on one SF-5 number; see "Junction angular stiffness" below.**
 
 ## Why this note exists (the revision)
 
@@ -183,6 +184,31 @@ preserved; its two invalid points (Obj 3 backwards; Obj 4 conflation) are rebutt
 **No promotion** — ChatGPT explicitly endorses only a *staged, founder-gated* CONJ-COSMO-1 discussion and "does
 not yet justify treating the velocity curve as final"; concur. **DM-1 stays v1.0; CONJ-COSMO-1 founder-gated.**
 
+## Junction angular stiffness — first calculation (1830): the cluster floor leans tense
+
+The coupled-trio calculation the panel asked for has been run on its decisive leg (`code/1830_...py`). A
+junction is angularly **flexible (a hinge)** — the case the ~0.8 floor needs — **iff κ_θ < 3B/L_arm** (pivoting
+the junction is cheaper than bending the arm). With the arm flexural rigidity from the E_ee shell, B ≈ 0.71
+MeV·fm, the threshold is **3B/L_arm ≈ 0.15–0.53 MeV** for the relevant arms (N = 28…8) — **below E_ee.** The
+natural junction scale is ≥ E_ee ≈ 0.9 MeV (color-knot reorganization), up to E_qq ≈ 66 MeV if color-continuous;
+either **exceeds** the threshold. So the junction **leans rigid-to-marginal, not clean-flexible**, giving
+per-fusion drop ~1/3–1/2 and **cluster floor ~1.0–1.6 cm²/g — mild-to-moderate tension**, not the 0.8 assumed in
+round 1.
+
+Two partial mitigations: the crossing geometry **excludes** the fully-rigid E_qq limit (no continuous
+perpendicular spine → the junction is a knot, removing the 1.6 worst case but landing near the E_ee-marginal ~1.0
+case); and 3B/L_arm ∝ 1/N means **shorter arms are more flexible**, with self-limiting stopping fusion at short
+arms (the late, floor-setting junctions are the most flexible). Neither rescues it: flexibility still needs κ_θ ≲
+0.3–0.5 MeV (sub-E_ee), not guaranteed. The other two legs move the **same** way — sub-d R_color and a thinner
+penetrating tail both *raise* the floor — so the trio's risks add rather than cancel.
+
+**Revised floor reading:** bracket **[0.8 flexible (now disfavored) — 1.6 rigid (geometry-excluded)], computed
+lean ≈ 1.0–1.5 (tense).** The clean 0.8 is downgraded to the optimistic edge. **The velocity-sector viability now
+rides on one SF-5 number:** the angular energy U(θ) of a 4-arm color knot — κ_θ ≲ 0.4 MeV rescues the 0.8 floor;
+κ_θ ≳ E_ee leaves the cluster tension standing. Not falsified (B carries an O(1) area-moment factor; SF-5 could
+find sub-E_ee softness), but the cluster end is now the make-or-break, consistent with all four reviewers'
+concern. **No promotion — more exposed, not less.**
+
 ## Relation to DM-1 v1.0
 
 DM-1 v1.0 stands: the species (Cross-Rod), the σ/m = 0.11·N floor, the no-corona closure (OPEN-COSMO-DM-3), and
@@ -199,12 +225,13 @@ shortening) · strip-then-fuse 1821 (gate) / 1822 (penetration tail) / 1824 (for
 
 ## Disposition
 
-STAGED for founder review. **CONV-001 round 1 CLOSED — 4/4 in, net SOUND-WITH-CHANGES** (3 SwC + Gemini
-NOT-SOUND, dissent recorded). The panel's converging make-or-break is the **coupled trio**: the glueball-junction
-**angular stiffness** (the one number computable next, controlling cluster floor + self-limiting together), the
-**color range R_color ~ d** (now a named live risk — propagates into the repair gate and tail-rate; wants SF-5
-support), and the **penetrating-tail rate**. On founder approval: (a) supersede `mechanism-DM-1.md` step 5 with a
-pointer to this note; (b) take the junction-angular-stiffness calculation first, then the R_color ~ d
-strong-sector (SF-5) support; (c) founder-gated, open the CONJ-COSMO-1 *discussion* (staged only — the panel
-endorses a discussion, not finality for the velocity curve). **No promotion until the coupled trio is pinned;
-DM-1 stays v1.0; CONJ-COSMO-1 founder-gated.**
+STAGED for founder review. **CONV-001 round 1 CLOSED (4/4, net SOUND-WITH-CHANGES); junction-stiffness leg of
+the coupled trio now COMPUTED (1830) — and it leans unfavorable: cluster floor ~1.0–1.5 (mild-to-moderate
+tension), not 0.8.** The velocity-sector viability now reduces to **one SF-5 number**: the angular energy U(θ) of
+a 4-arm color knot (κ_θ ≲ 0.4 MeV → floor returns to ~0.8, viable; κ_θ ≳ E_ee → cluster tension stands). On
+founder approval: (a) flag the **SF-5 4-arm-knot angular-energy calculation** as the velocity-sector make-or-break
+(needs strong-sector machinery, not Layer C); (b) decide whether to keep developing on the optimistic
+(flexible) branch or treat the cluster tension as the leading result and reframe DM-1's velocity signature as
+constrained; (c) `mechanism-DM-1.md` step 5 supersession and any CONJ-COSMO-1 discussion **wait** on the SF-5
+number — the clean velocity signature is no longer established. **No promotion — the candidate is more exposed,
+not less; DM-1 stays v1.0; CONJ-COSMO-1 founder-gated.**
