@@ -5,9 +5,9 @@
 the corrected velocity mechanism assembled in patches 1815–1826 (30 June 2026, Opus lane). It does not edit the
 v1.0 papers. Layer C throughout (order-of-magnitude, CPP-geometry-dependent — not framework-free). **CONV-001
 round 1 CLOSED (4/4: ChatGPT, Grok, Copilot all SwC; Gemini NOT-SOUND engaged) — net SOUND-WITH-CHANGES; see
-"Panel review" below. JUNCTION: founder edge-hinge mechanism (1831) corrects 1830 — self-limiting SECURED;
-κ_θ COMPUTED (1833) ≈ 0.27 MeV (sub-E_ee, hinging) → cluster floor ~0.8, viable-to-marginal, clears the 1830
-tense scenario.**
+"Panel review" below. JUNCTION: founder edge-hinge (1831) corrects 1830 — self-limiting SECURED; κ_θ static pin
+FAILED by Earnshaw (1834, 1833 static RETRACTED) → real κ_θ is ZBW-dynamic ~0.1–0.9 MeV → floor ~0.8–1.0
+viable-to-marginal, undecided pending the ponderomotive dihedral calc.**
 
 ## Why this note exists (the revision)
 
@@ -260,6 +260,25 @@ perimeter charge-count/cancellation could move it to ~0.5 (floor ~1.0, marginal)
 viable). Pinnable by the full dihedral Madelung sum over the **28 June alternating-charge-square** perimeter — an
 in-corpus calculation, not a strong-sector unknown. **Still no promotion** (floor marginal until κ_θ is pinned).
 
+## κ_θ pin attempt (1834): static sum FAILS by Earnshaw — the 1833 static number is RETRACTED
+
+The full alternating-square dihedral sum was run to collapse the range. **It did not — it broke the static
+method.** Across 24/25 geometries the static dihedral stiffness κ_θ(90°) is **negative** (90° is an electrostatic
+*maximum*): this is **Earnshaw's theorem** (a static point-charge cluster has no stable equilibrium; by Laplace
+the curvatures sum to zero). The 1833 static ≈ 0.27 MeV was a two-term subset that hid the net instability and is
+**retracted.** Static electrostatics cannot supply the hinge restoring torque.
+
+The stiffness is therefore the **ZBW dynamic (ponderomotive) stiffness** — the *same* mechanism Thomas posited
+for the rod's longitudinal E_ee (28 June, `founders_vision.md`): cycle-symmetric oscillation time-averages to a
+second-order restoring force that stabilizes what statics cannot. So the Earnshaw failure **re-derives the
+dynamic-stiffness mechanism from the DM side.** Scale: the longitudinal dynamic stiffness *is* ~E_ee; the hinge
+is a softer mode, so κ_θ^dyn ~ f·E_ee, f ~ 0.1–1 → **~0.1–0.9 MeV → floor ~0.4–1.6, lean ~0.8–1.0.** The range is
+**not collapsed — relocated** to a ponderomotive dihedral calculation needing the ZBW frequency/amplitude.
+
+**Net:** cluster floor stays **viable-to-marginal (~0.8–1.0), genuinely undecided**, now correctly a
+dynamic-stiffness quantity. **Self-limiting and hinge stability (1831) are unaffected** (kinematic/geometric,
+κ_θ-independent). No promotion; the ponderomotive dihedral calc is the real make-or-break.
+
 ## Relation to DM-1 v1.0
 
 DM-1 v1.0 stands: the species (Cross-Rod), the σ/m = 0.11·N floor, the no-corona closure (OPEN-COSMO-DM-3), and
@@ -276,13 +295,13 @@ shortening) · strip-then-fuse 1821 (gate) / 1822 (penetration tail) / 1824 (for
 
 ## Disposition
 
-STAGED for founder review. **CONV-001 round 1 CLOSED (4/4, net SOUND-WITH-CHANGES). Junction resolved by the
-founder's edge-hinge mechanism (1831) and the κ_θ computation (1833):** self-limiting SECURED (hinge inertial
-decoupling — runaway closed), and **κ_θ ≈ 0.27 MeV (sub-E_ee, hinging) → cluster floor ~0.8, viable-to-marginal**,
-clearing the 1830 tense scenario. The velocity signature (~3.1 dwarf → ~0.8 cluster → ~0.2 mergers, knee
-~1000–1500 km/s) now rests on a computed junction stiffness. The one remaining tightening is the **full dihedral
-Madelung sum over the 28 June alternating-charge-square perimeter** — collapses the O(1) κ_θ range, deciding
-viable (~0.8) vs marginal (~1.0). On founder approval: (a) pin κ_θ via that charge sum (I can take it directly);
-(b) re-fold the panel (round 2) with the edge-hinge mechanism + computed κ_θ — it answers the reviewers' shared
-flexible-X concern with a number; (c) only then, founder-gated, the `mechanism-DM-1.md` step-5 supersession and
-the CONJ-COSMO-1 discussion. **No promotion until κ_θ is pinned; DM-1 stays v1.0; CONJ-COSMO-1 founder-gated.**
+STAGED for founder review. **CONV-001 round 1 CLOSED (4/4, net SOUND-WITH-CHANGES). Junction: founder edge-hinge
+(1831) secures the self-limiting; κ_θ static pin FAILED by Earnshaw (1834) — static charges can't stabilize the
+hinge (the 1833 static ~0.27 is retracted), so the stiffness is the ZBW DYNAMIC (ponderomotive) stiffness, the
+same mechanism as the rod's longitudinal E_ee (28 June).** Scale ~0.1–0.9 MeV → **cluster floor ~0.8–1.0,
+viable-to-marginal, genuinely undecided.** The make-or-break is now the **ponderomotive dihedral calculation**
+(time-average the ZBW perimeter-eCP oscillation over a dihedral displacement; needs the ZBW frequency/amplitude
+from the corpus; shares machinery with the 28 June longitudinal-stiffness derivation). On founder approval: (a)
+pull the ZBW parameters and run the ponderomotive κ_θ; (b) **founder read wanted** on whether the dihedral
+ponderomotive stiffness is a soft fraction of the longitudinal one (floor ~0.8) or comparable (floor ~1.0); (c)
+panel round 2 waits for the ponderomotive number. **No promotion; DM-1 stays v1.0; CONJ-COSMO-1 founder-gated.**
