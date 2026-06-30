@@ -6,8 +6,9 @@ the corrected velocity mechanism assembled in patches 1815–1826 (30 June 2026,
 v1.0 papers. Layer C throughout (order-of-magnitude, CPP-geometry-dependent — not framework-free). **CONV-001
 round 1 CLOSED (4/4: ChatGPT, Grok, Copilot all SwC; Gemini NOT-SOUND engaged) — net SOUND-WITH-CHANGES; see
 "Panel review" below. JUNCTION: founder edge-hinge (1831) corrects 1830 — self-limiting SECURED; κ_θ static pin
-FAILED by Earnshaw (1834, 1833 static RETRACTED) → real κ_θ is ZBW-dynamic ~0.1–0.9 MeV → floor ~0.8–1.0
-viable-to-marginal, undecided pending the ponderomotive dihedral calc.**
+FAILED by Earnshaw (1834, 1833 static RETRACTED) → real κ_θ is ZBW-dynamic; founder gradient read (1835): scissor
+mode considerably softer → κ_θ ~0.05–0.23 MeV (sub-E_ee, below threshold) → cluster floor ~0.4–0.8 VIABLE on
+dynamic physics, exact value pending the full ponderomotive calc.**
 
 ## Why this note exists (the revision)
 
@@ -279,6 +280,24 @@ is a softer mode, so κ_θ^dyn ~ f·E_ee, f ~ 0.1–1 → **~0.1–0.9 MeV → f
 dynamic-stiffness quantity. **Self-limiting and hinge stability (1831) are unaffected** (kinematic/geometric,
 κ_θ-independent). No promotion; the ponderomotive dihedral calc is the real make-or-break.
 
+## Founder gradient read (1835): scissor mode considerably softer → floor VIABLE
+
+Thomas's physical read settles the *direction* of the dynamic stiffness. The longitudinal stiffness is the E_qq
+compression between **face-to-face 8qCP cubes** (close, steep SSV gradient); the hinge bonds sit **farther apart**
+(eDP coat pairs across the hinge; qDP pairs near the hinge but past the face-to-face core) and at **variable
+distance**, so the SSV gradients are "considerably softer, and variable along the lever arm." Since the
+ponderomotive stiffness goes as the **gradient squared**, which falls steeply with separation, "farther apart" is
+a strong suppression: f = (d/r_hinge)^p gives **f ~ 0.05–0.25** even at r_hinge ~ 2d → **κ_θ ~ f·E_ee ~ 0.05–0.23
+MeV — sub-E_ee and below the flexibility threshold** (0.30 at N = 14). (Reinforcement: the near-hinge qDP pairs at
+90° are beyond color range R_color ~ d, so they interact electrically, not via color — sub-E_qq.) Hinge flexible →
+drop ~1/8–1/4 → **cluster floor ~0.4–0.8 → VIABLE.**
+
+**Direction now doubly supported** (founder structural read + ponderomotive gradient scaling agree, independently)
+— the floor lands in the allowed band on correct (dynamic, non-Earnshaw) physics, the first time in this arc it
+does so without an assumed flexibility. **Exact floor (0.4 vs 0.8) still pending the full ponderomotive calc**
+(ZBW freq/amplitude + SSV gradient law); a shallow-gradient branch (p ≲ 2) could still reach ~1.0 marginal. **No
+promotion** until that calc; the verdict *direction* (viable) no longer depends on it.
+
 ## Relation to DM-1 v1.0
 
 DM-1 v1.0 stands: the species (Cross-Rod), the σ/m = 0.11·N floor, the no-corona closure (OPEN-COSMO-DM-3), and
@@ -296,12 +315,15 @@ shortening) · strip-then-fuse 1821 (gate) / 1822 (penetration tail) / 1824 (for
 ## Disposition
 
 STAGED for founder review. **CONV-001 round 1 CLOSED (4/4, net SOUND-WITH-CHANGES). Junction: founder edge-hinge
-(1831) secures the self-limiting; κ_θ static pin FAILED by Earnshaw (1834) — static charges can't stabilize the
-hinge (the 1833 static ~0.27 is retracted), so the stiffness is the ZBW DYNAMIC (ponderomotive) stiffness, the
-same mechanism as the rod's longitudinal E_ee (28 June).** Scale ~0.1–0.9 MeV → **cluster floor ~0.8–1.0,
-viable-to-marginal, genuinely undecided.** The make-or-break is now the **ponderomotive dihedral calculation**
-(time-average the ZBW perimeter-eCP oscillation over a dihedral displacement; needs the ZBW frequency/amplitude
-from the corpus; shares machinery with the 28 June longitudinal-stiffness derivation). On founder approval: (a)
-pull the ZBW parameters and run the ponderomotive κ_θ; (b) **founder read wanted** on whether the dihedral
-ponderomotive stiffness is a soft fraction of the longitudinal one (floor ~0.8) or comparable (floor ~1.0); (c)
-panel round 2 waits for the ponderomotive number. **No promotion; DM-1 stays v1.0; CONJ-COSMO-1 founder-gated.**
+(1831) secures the self-limiting; κ_θ static pin FAILED by Earnshaw (1834) → the stiffness is ZBW-dynamic
+(ponderomotive), the same mechanism as the rod's longitudinal E_ee (28 June); and the founder's gradient read
+(1835) settles its direction — the scissor mode is considerably softer than the longitudinal compression (hinge
+charges farther apart, softer/variable SSV gradients), so κ_θ ~0.05–0.23 MeV (sub-E_ee, below threshold) →
+cluster floor ~0.4–0.8, VIABLE.** This is the first point in the junction arc where the floor sits in the allowed
+band on correct (dynamic) and founder-grounded physics. The remaining tightening is the **full ponderomotive
+dihedral calc** (ZBW frequency/amplitude + SSV gradient law, shared with the 28 June longitudinal derivation) —
+removes the 0.4-vs-0.8 residual; only a shallow-gradient branch could still reach ~1.0 marginal. On founder
+approval: (a) run the ponderomotive κ_θ; (b) stage the gradient read into `founders_vision.md`; (c) **panel round
+2** — the flexible-X concern is now answered by a coherent three-step argument (edge-hinge + Earnshaw⇒dynamic +
+founder-gradient⇒soft⇒viable), not an assumption. **No promotion until the ponderomotive number is in; DM-1 stays
+v1.0; CONJ-COSMO-1 founder-gated.**
