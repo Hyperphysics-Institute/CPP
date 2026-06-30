@@ -8,7 +8,9 @@ round 1 CLOSED (4/4: ChatGPT, Grok, Copilot all SwC; Gemini NOT-SOUND engaged) �
 "Panel review" below. JUNCTION: founder edge-hinge (1831) corrects 1830 — self-limiting SECURED; κ_θ static pin
 FAILED by Earnshaw (1834, 1833 static RETRACTED) → real κ_θ is ZBW-dynamic; founder gradient read (1835): scissor
 mode considerably softer → κ_θ ~0.05–0.23 MeV (sub-E_ee, below threshold) → cluster floor ~0.4–0.8 VIABLE on
-dynamic physics, exact value pending the full ponderomotive calc.**
+dynamic physics; (1836) floor verdict collapses to a SCALE-FREE ratio g = κ_scissor/κ_bend < 6/N (Earnshaw +
+all absolute scales cancel), founder geometry → g~0.1 → VIABLE; unified with the edge-bond SSV make-or-break
+(ℓ_p, E_ee), definitive g still the open SF-2/SF-5 calc.**
 
 ## Why this note exists (the revision)
 
@@ -298,6 +300,27 @@ does so without an assumed flexibility. **Exact floor (0.4 vs 0.8) still pending
 (ZBW freq/amplitude + SSV gradient law); a shallow-gradient branch (p ≲ 2) could still reach ~1.0 marginal. **No
 promotion** until that calc; the verdict *direction* (viable) no longer depends on it.
 
+## κ_θ resolves to a scale-free ratio (1836): floor verdict = g < 6/N, unified with the edge-bond SSV potential
+
+Running the full κ_θ converges on the corpus's **own edge-bond SSV potential** — the **G1 make-or-break** flagged
+25 June, which sets the ribbon ℓ_p and per-rung E_ee. The X-junction dihedral stiffness **is** that same qq-edge-
+bond angular stiffness. Since κ_θ (scissor) and the arm rigidity B (in-line bend) are the **same potential in two
+geometries**, the flexibility test κ_θ < 3B/L_arm collapses to a **scale-free ratio**:
+
+  **g ≡ κ_scissor/κ_bend < 6/N** (= 0.43 at N = 14)
+
+and the absolute stiffness, kT_form, ZBW frequency/amplitude, **and the static-vs-dynamic (Earnshaw) sign
+question all CANCEL** — whatever stabilizes the bend stabilizes the scissor the same way. Only geometry survives.
+Thomas's read fixes it: the scissor is the same bond with the rods **perpendicular** (off-hinge charges farther
+apart than the in-line ribbon bend), so g ~ 0.06–0.30 — **below 0.43 → flexible → floor ~0.4–0.8 → VIABLE.**
+
+This **unifies** the DM cluster floor, ℓ_p, and E_ee onto **one edge-bond SSV potential** (the existing 25 June
+make-or-break), and makes the verdict robust to every absolute-scale uncertainty that broke 1833 (bouncing
+static value) and 1834 (Earnshaw) — both of which **cancel in the ratio**. **Definitive g** = that potential
+evaluated in scissor-vs-bend geometry (open SF-2/SF-5 calc). **No promotion** until then; but the floor now hangs
+on a calculation the programme already prioritizes, not a DM-specific unknown, and the anchored estimate is
+viable. (1834's Earnshaw finding stands for the full static config but is moot for the ratio.)
+
 ## Relation to DM-1 v1.0
 
 DM-1 v1.0 stands: the species (Cross-Rod), the σ/m = 0.11·N floor, the no-corona closure (OPEN-COSMO-DM-3), and
@@ -320,10 +343,15 @@ STAGED for founder review. **CONV-001 round 1 CLOSED (4/4, net SOUND-WITH-CHANGE
 (1835) settles its direction — the scissor mode is considerably softer than the longitudinal compression (hinge
 charges farther apart, softer/variable SSV gradients), so κ_θ ~0.05–0.23 MeV (sub-E_ee, below threshold) →
 cluster floor ~0.4–0.8, VIABLE.** This is the first point in the junction arc where the floor sits in the allowed
-band on correct (dynamic) and founder-grounded physics. The remaining tightening is the **full ponderomotive
-dihedral calc** (ZBW frequency/amplitude + SSV gradient law, shared with the 28 June longitudinal derivation) —
-removes the 0.4-vs-0.8 residual; only a shallow-gradient branch could still reach ~1.0 marginal. On founder
-approval: (a) run the ponderomotive κ_θ; (b) stage the gradient read into `founders_vision.md`; (c) **panel round
-2** — the flexible-X concern is now answered by a coherent three-step argument (edge-hinge + Earnshaw⇒dynamic +
-founder-gradient⇒soft⇒viable), not an assumption. **No promotion until the ponderomotive number is in; DM-1 stays
+band on correct (dynamic) and founder-grounded physics. The remaining tightening is the **full ponderomotive dihedral calc** (ZBW frequency/amplitude + SSV gradient law,
+shared with the 28 June longitudinal derivation) — removes the 0.4-vs-0.8 residual; only a shallow-gradient
+branch could still reach ~1.0 marginal. **Update (1836): the calc converges on the corpus edge-bond SSV
+potential (the 25 June G1 make-or-break), and the floor verdict collapses to a SCALE-FREE ratio g =
+κ_scissor/κ_bend < 6/N — in which the absolute scale, kT, ZBW params, and the Earnshaw sign question all cancel.
+Founder geometry → g ~ 0.06–0.30 < 0.43 → VIABLE.** The DM floor, ℓ_p, and E_ee are now unified onto **one
+edge-bond SSV potential**; the definitive g is that potential in scissor-vs-bend geometry (open SF-2/SF-5 calc,
+now closing three questions not one). On founder approval: (a) elevate the edge-bond SSV potential calc from open
+to active; (b) stage the gradient read + g-ratio unification to `founders_vision.md`; (c) **panel round 2** — the
+flexible-X concern is answered by a robust chain (edge-hinge + scale-free g < 6/N + founder geometry ⇒ viable)
+with no contestable absolute number. **No promotion until the edge-bond SSV potential is evaluated; DM-1 stays
 v1.0; CONJ-COSMO-1 founder-gated.**
