@@ -310,6 +310,38 @@ Proposed answers that exist but are not yet proved from CPP axioms.
 
 ---
 
+### OPEN-COSMO-DM-4: DM formation-size / relic-epoch aggregation temperature (kT_form)
+**Status:** **OPEN — registered 30 June 2026** (DM 18xx strip-then-fuse lane, patches 1842–1846). The
+single remaining make-or-break of the Cross-Rod DM candidate once the velocity floor is cleared and the cluster
+σ/m ∝ 1/v² branch is secured (reasoning 1845): whether formation produces a Cross-Rod population of the size the
+**dwarf** normalization requires.
+**One-line statement:** Derive the substrate relic-epoch freeze-out temperature **kT_form** (equivalently the ratio
+ν_PCD/H_form of the PCD attempt frequency to the Hubble rate at formation), which sets the equilibrium-aggregation
+Cross-Rod size ⟨N⟩.
+**What a solution looks like:** From CPP substrate cosmology, the PCD attempt frequency ν_PCD and the Hubble rate
+H_form at the DM-aggregation freeze-out epoch, giving kT_form and hence ⟨N⟩ = √(φ · ν_PCD/H_form) = √φ ·
+exp(E_bond/2kT_form) — a zero-parameter prediction of the formation size to compare against the dwarf-required
+N_form ~ 400–1000 elements.
+**Current best result (DM-lane, 1846, Layer C):** The formation size reduces to this one quantity. Reversible
+equilibrium polymerization gives ⟨N⟩ = √φ · exp(E_bond/2kT_form); freeze-out (detach rate = H) gives ⟨N⟩ =
+√(φ · ν_PCD/H_form). **N_form ~ 400–1000 requires E_bond/kT_form ~ 12–14**, i.e. **kT_form ~ E_bond/13 ~ 4.7–19 MeV**
+for the element–element E_qq detachment bond (E_bond ~ 66–264 MeV). **Exponentially sensitive:** a factor ~3 in
+kT_form spans ~4 orders in ⟨N⟩, so the dwarf normalization needs kT_form pinned to ~10–15%. This makes N_form a
+**sharp, falsifiable prediction IF the substrate thermal history naturally sets kT_form there — otherwise a
+fine-tuning.** Deciding which is this problem; not computable from DM-lane geometry (needs ν_PCD + H_form).
+**Dependencies:** the substrate thermal history / relic-epoch cosmology (cross-link the substrate-thermodynamic
+framework — the OPEN-FP-SF-2-* cluster — but distinct from OPEN-FP-SF-2-η, which is the EW boson η dilution
+factors, unrelated); E_bond identification (the element–element E_qq detachment energy, SF-2/SF-5-adjacent). The
+**cluster** σ/m ∝ 1/v² branch (1845) is *independent* of this (parameter-free); only the **dwarf** normalization
+depends on kT_form.
+**Falsification route:** if the substrate thermal history gives kT_form outside the ~10–15% window around
+E_bond/13, ⟨N⟩ misses 400–1000 by orders → the dwarf σ/m normalization fails (too small → no dwarf cores; too
+large → over-cored). The candidate's dwarf branch lives or dies here.
+**Paper(s):** DM-1 §5 re-scope draft (`series_phenomena/cosmology/dark_matter/DM-1/section5_velocity_rescope_draft.md`);
+reasoning/code 1845–1846.
+
+---
+
 ### LEMMA-DM-CROSS-ROUTE-1: 4-wide-cross extended aggregate as the σ/m-viable DM morphology — finding-level, UNCONDITIONAL (panel-ratified)
 **Status:** REGISTERED finding-level (frontier-tracked like **LEMMA-DM-CONSIST-1** / LEMMA-NS-HTHEOREM/BATH; **NO THEO, no `theorem-registry.md` row, no swarm-count change**) — registered 27 June 2026 (Patch 0877), **LIFTED to UNCONDITIONAL 27 June 2026 (Patch 0885):** the gating assumption OPEN-COSMO-DM-3 (ASM-DM-CORONA-LOCALITY) is now DERIVED (Layer B) and panel-ratified 4/4 (re-review, incl. the original dissenter). Still finding-level; does **NOT** move CONJ-COSMO-1 off NOT-confirmed; no verdict/swarm change. **[Patch 0889: DM-1 — the paper carrying this lemma — SHIPPED v1.0 on a 4/4 paper-level multi-AI review (4/4 CONFIRM paper + 4/4 CONFIRM promotion). v1.0 is the paper milestone only; still no THEO/swarm change; CONJ-COSMO-1 unchanged. Reviews: `series_phenomena/cosmology/dark_matter/documentation_suite/reviews-DM-1.md`.]**
 **The finding:** Among the extended-aggregate morphologies for the DM-1 candidate (single strand/loop, 4-wide cross/ribbon, branched ball), the **4-wide "+" cross** is the σ/m-viable morphology. Established across the goalpost campaign (patches 0865–0876, four-model panel-reviewed): **G2** edge-bond depth bracketed-reachable (0865); **G3** glueball dilution over-determined by the Sea-vs-relic concentration hierarchy (0866); the **single strand KILLED** on two kill-conditions — symmetric-vertex buckling + untunable ~18° alternating docking → loops ~15× too small (0867/0869); the **monomer-fed ball dilutes** (d_f ~ 2.5; only cluster-cluster coalescence of *extended* sub-units reaches d_f < 2 — DLCA ≈ 1.8 external anchor; 0868); the cross's **bend stiffness is a favorable BEAM property** ℓ_p = c_geom·(E_bond/kT), sign-safe, over-determined by the same G2 depth (0870); and the spine **corona** — the last dilution risk — is **retired conditional on OPEN-COSMO-DM-3**: the eDP→spine residual is an electric van der Waals well ~34–94 keV, ~1500× too shallow to bind real eDPs, and the only dense reservoir (the balanced Planck-scale vacuum Sea) supplies none, so σ/m is undiluted (0872–0876).
