@@ -1,5 +1,27 @@
 # Mechanism (revised velocity sector) — Strip-then-Fuse — DM-1
 
+> **FOUNDER-REVIEW CORRECTIONS (30 June 2026) — read first; these supersede any conflicting wording below.**
+> A founder-review pass corrected framing that had drifted (mostly legacy contamination from the earlier
+> ribbon/loop candidate). Authoritative record: `reasoning/1842.md`. In brief:
+> - **Relic = the coat-inclusive Cross Rod** (8qCP core + 8eCP coat per element, ~1408 MeV); the bare core is
+>   reactive, not the relic. **Cross Rod ⇄ DM particle; N counts elements.**
+> - **Edge bonds are E_qq** (axial spine + fusion junction). **E_ee is the strippable coat / secondary
+>   bending-stiffness layer, not an edge bond.** The "one edge-bond potential sets κ_θ, ℓ_p, per-rung E_ee"
+>   unification was ribbon-legacy — **retired for the Cross Rod; ℓ_p exits** (thermal-bath quantity, not a
+>   collision quantity).
+> - **g = κ_scissor/κ_bend is E_qq/E_qq** (junction scissor vs spine bend) — pure geometry, g ≈ 0.02; the floor
+>   rests on the structural free-hinge, confirmed by g, with **no ℓ_p / kT / substrate-thermodynamics pin.**
+> - **σ/m ≈ 0.013·N, NOT 0.11·N** (0.11 was the dead compact/point-scattering value; "0.11·N" conflated the two).
+>   Data band at N ≈ 48–160 elements (~10²–10³ DPs); dwarf σ/m ~ 3 at N ~ 240.
+> - **Formation = three tracks** (four-hTetra-direct / ribbon+2hTetra / ribbon+two chains); ribbon is an
+>   intermediate; **hTetra loop ruled out** (amorphous polymerization) → Cross Rod is the sole relic.
+> - **Transport = three channels:** slice-through ruled out; catch (maximal, matched N); bounce (sub-maximal,
+>   capped at the bonding threshold). σ/m near the geometric ceiling.
+> - **δ\* is a two-coat balance** (both rods' eCP coats, alternating-charge Madelung — sign-dependent), replacing
+>   the single-coat δ*.
+> - **OPEN-FP-SF-2-η is NOT the DM blocker** — it is the EW boson η dilution factors. The DM pins are E_bond
+>   (SF-2/SF-5) and kT_form (relic/epoch calc, apparently unregistered). See below (references corrected).
+
 **STATUS: STAGED, founder-gated. Post-v1.0 companion note. Supersedes step 5 ("velocity dependence") of
 `mechanism-DM-1.md` PENDING founder approval + a CONV-001 panel pass.** DM-1 stays v1.0; this note documents
 the corrected velocity mechanism assembled in patches 1815–1826 (30 June 2026, Opus lane). It does not edit the
@@ -14,7 +36,7 @@ the ponderomotive |E|²-curvature resolves Earnshaw, g ≈ 0.02 ≪ g_crit=0.43 
 no-sub-Coulomb screening argument) → cluster floor VIABLE, direction robust, lands ~0.4–0.8 (whole band ≤ cluster
 bound ~1.0); stiff-ribbon/soft-scissor tension dissolved (same bond, ratio → requirements reinforce; junction is
 the softer of two STIFF modes, not fragile). EXACT floor (0.4 vs 0.8) + G1b absolute κ_θ pending the ZBW
-amplitude = OPEN-FP-SF-2-η. NO promotion on the floor alone — G1b/G2/G3 (OPEN-SS-39) open.**
+amplitude = the substrate thermal-scale pin (kT_form via the relic/epoch calc; NOT OPEN-FP-SF-2-η — that is the EW boson η dilution factors). NO promotion on the floor alone — G1b/G2/G3 (OPEN-SS-39) open.**
 
 ## Why this note exists (the revision)
 
@@ -369,7 +391,7 @@ soft-scissor tension dissolves** (same bond, ratio ⇒ a large κ_bend is the de
 junction is the *softer of two stiff modes, not a fragile joint*). Two corrections recorded straight: the g ~ 0.1
 estimate had the right direction but mis-referenced the softness to the E_qq core (the hierarchy cancels in the
 true ratio → pure geometry ~0.02); 1836's ratio *framing* is confirmed. **Still open (no promotion):** the exact
-floor (0.4 vs 0.8) and G1b (absolute κ_θ → ℓ_p) both root on **OPEN-FP-SF-2-η** (ZBW amplitude); G2 (E_qq/E_ee)
+floor (0.4 vs 0.8) and G1b (absolute κ_θ → ℓ_p) both root on **the substrate thermal-scale pin** (kT_form / ZBW amplitude via the relic/epoch calc + the edge-bond potential via SF-2/SF-5; NOT OPEN-FP-SF-2-η); G2 (E_qq)
 and G3 (glueball-arrest, **OPEN-SS-39**, the sharpest remaining kill risk) open. On approval: (a) DM-side ℓ_p×g
 partial-G1b (absolute κ_scissor, no FP-blocker); (b) **panel round 2** — framed as a *velocity-sector floor
 clearance*, not a candidate-wide green light, carrying the stiff-vs-soft consistency result. **DM-1 stays v1.0 /
