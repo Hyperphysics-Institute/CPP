@@ -311,10 +311,13 @@ Proposed answers that exist but are not yet proved from CPP axioms.
 ---
 
 ### OPEN-COSMO-DM-4: DM formation-size / relic-epoch aggregation temperature (kT_form)
-**Status:** **OPEN — registered 30 June 2026** (DM 18xx strip-then-fuse lane, patches 1842–1846). The
+**Status:** **OPEN — registered 30 June 2026** (DM 18xx lane, 1842–1846); **calc executed 30 June 2026
+(substrate-cosmology lane, patch 2204): the natural freeze-out OVER-CORES (⟨N⟩ ~ 10⁴–10⁶, over by ~2–3 orders) and
+the reduction to kT_form is shown INCOMPLETE** (N_form depends on φ/decoupling/nucleation, not kT_form alone). The
 single remaining make-or-break of the Cross-Rod DM candidate once the velocity floor is cleared and the cluster
 σ/m ∝ 1/v² branch is secured (reasoning 1845): whether formation produces a Cross-Rod population of the size the
-**dwarf** normalization requires.
+**dwarf** normalization requires. **After 2204: N_form is not a zero-parameter prediction; open sub-question is now
+whether N_form should be re-derived as a NUCLEATION-limited (monomers-per-nucleus) quantity — founder-gated.**
 **One-line statement:** Derive the substrate relic-epoch freeze-out temperature **kT_form** (equivalently the ratio
 ν_PCD/H_form of the PCD attempt frequency to the Hubble rate at formation), which sets the equilibrium-aggregation
 Cross-Rod size ⟨N⟩.
@@ -322,21 +325,31 @@ Cross-Rod size ⟨N⟩.
 H_form at the DM-aggregation freeze-out epoch, giving kT_form and hence ⟨N⟩ = √(φ · ν_PCD/H_form) = √φ ·
 exp(E_bond/2kT_form) — a zero-parameter prediction of the formation size to compare against the dwarf-required
 N_form ~ 400–1000 elements.
-**Current best result (DM-lane, 1846, Layer C):** The formation size reduces to this one quantity. Reversible
-equilibrium polymerization gives ⟨N⟩ = √φ · exp(E_bond/2kT_form); freeze-out (detach rate = H) gives ⟨N⟩ =
-√(φ · ν_PCD/H_form). **N_form ~ 400–1000 requires E_bond/kT_form ~ 12–14**, i.e. **kT_form ~ E_bond/13 ~ 4.7–19 MeV**
-for the element–element E_qq detachment bond (E_bond ~ 66–264 MeV). **Exponentially sensitive:** a factor ~3 in
-kT_form spans ~4 orders in ⟨N⟩, so the dwarf normalization needs kT_form pinned to ~10–15%. This makes N_form a
-**sharp, falsifiable prediction IF the substrate thermal history naturally sets kT_form there — otherwise a
-fine-tuning.** Deciding which is this problem; not computable from DM-lane geometry (needs ν_PCD + H_form).
+**Current best result (substrate-cosmology lane, 2204, Layer C — the calc executed):** The forward freeze-out was
+run. With the physically-correct vibrational Arrhenius detach prefactor ν_vib ~ 1.5×10²² Hz (not the substrate Planck
+tick 1/t_P ~ 1.85×10⁴³ Hz — that is the substrate resolution, not a mode's escape-attempt rate) and standard
+Friedmann H(T), the self-consistent thermal-contact freeze-out gives **kT_form ~ 1.3–5.4 MeV, E_bond/kT_form ~ 49–51,
+and ⟨N⟩ ~ 10⁴–10⁶** (E_bond = 66–264 MeV; φ = 10⁻⁹…10⁻¹⁴). **This is ABOVE the dwarf target 400–1000 by ~2–3 orders
+→ OVER-CORED.** The encouraging 1846 target (kT_form ~ E_bond/13 ~ 5 MeV, ratio ~ 12–14) rested on **φ ~ 1**
+(close-packed, unphysical); the physical dilute-gas φ ~ 10⁻⁹…10⁻¹⁴ (0881) moves the band-required ratio to ~34–45
+(kT_form ~ 1.5–2.0 MeV), which the forward freeze-out ~matches — landing ⟨N⟩ ~2–3 orders high. **N_form is therefore
+NOT a zero-parameter prediction of kT_form.** The window is reachable only via (a) DM colder than radiation by ~10²×
+at the QCD epoch (an unpinned decoupling = tuning) or (b) a nucleation/depletion cap: at E_bond/kT ~ 50 essentially
+all monomers polymerize, so the true size is set by monomers-per-nucleus, **not kT_form — i.e. the reduction to
+kT_form is incomplete.** What actually controls N_form: φ (abundance, unpinned to orders), the DM–radiation thermal
+history (unpinned), and the nucleation-site density (unpinned). The **cluster** branch is untouched (independent,
+parameter-free); only the **dwarf** normalization is affected, and it now lacks a zero-parameter route. Verify:
+`series_phenomena/cosmology/dark_matter/scripts/2204_kTform_freezeout.py`; reasoning `reasoning/2204.md`.
 **Dependencies:** the substrate thermal history / relic-epoch cosmology (cross-link the substrate-thermodynamic
 framework — the OPEN-FP-SF-2-* cluster — but distinct from OPEN-FP-SF-2-η, which is the EW boson η dilution
 factors, unrelated); E_bond identification (the element–element E_qq detachment energy, SF-2/SF-5-adjacent). The
 **cluster** σ/m ∝ 1/v² branch (1845) is *independent* of this (parameter-free); only the **dwarf** normalization
 depends on kT_form.
-**Falsification route:** if the substrate thermal history gives kT_form outside the ~10–15% window around
-E_bond/13, ⟨N⟩ misses 400–1000 by orders → the dwarf σ/m normalization fails (too small → no dwarf cores; too
-large → over-cored). The candidate's dwarf branch lives or dies here.
+**Falsification route:** ⟨N⟩ outside 400–1000 by orders → the dwarf σ/m normalization fails (too small → no dwarf
+cores; too large → over-cored). **2204 outcome: the natural inputs land in the "too large → over-cored" direction
+(⟨N⟩ ~ 10⁴–10⁶).** This does not kill the candidate (the cluster branch is independent), but the dwarf branch has no
+zero-parameter route as posed; it is salvageable only via an unpinned DM-decoupling (~10²× colder) or by reframing
+N_form as nucleation-limited. The candidate's *dwarf* branch lives or dies on those two founder-gated questions.
 **Paper(s):** DM-1 §5 re-scope draft (`series_phenomena/cosmology/dark_matter/DM-1/section5_velocity_rescope_draft.md`);
 reasoning/code 1845–1846.
 
