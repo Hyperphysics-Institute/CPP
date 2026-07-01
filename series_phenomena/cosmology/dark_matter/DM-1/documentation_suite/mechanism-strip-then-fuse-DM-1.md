@@ -9,8 +9,12 @@ round 1 CLOSED (4/4: ChatGPT, Grok, Copilot all SwC; Gemini NOT-SOUND engaged) �
 FAILED by Earnshaw (1834, 1833 static RETRACTED) → real κ_θ is ZBW-dynamic; founder gradient read (1835): scissor
 mode considerably softer → κ_θ ~0.05–0.23 MeV (sub-E_ee, below threshold) → cluster floor ~0.4–0.8 VIABLE on
 dynamic physics; (1836) floor verdict collapses to a SCALE-FREE ratio g = κ_scissor/κ_bend < 6/N (Earnshaw +
-all absolute scales cancel), founder geometry → g~0.1 → VIABLE; unified with the edge-bond SSV make-or-break
-(ℓ_p, E_ee), definitive g still the open SF-2/SF-5 calc.**
+all absolute scales cancel); **SF-2/SF-5 delivered G1a (OPEN-SS-40, patches 2200–2202) and DM consumed it (1839):
+the ponderomotive |E|²-curvature resolves Earnshaw, g ≈ 0.02 ≪ g_crit=0.43 (~17× margin, corpus-pinned via the
+no-sub-Coulomb screening argument) → cluster floor VIABLE, direction robust, lands ~0.4–0.8 (whole band ≤ cluster
+bound ~1.0); stiff-ribbon/soft-scissor tension dissolved (same bond, ratio → requirements reinforce; junction is
+the softer of two STIFF modes, not fragile). EXACT floor (0.4 vs 0.8) + G1b absolute κ_θ pending the ZBW
+amplitude = OPEN-FP-SF-2-η. NO promotion on the floor alone — G1b/G2/G3 (OPEN-SS-39) open.**
 
 ## Why this note exists (the revision)
 
@@ -350,8 +354,23 @@ potential (the 25 June G1 make-or-break), and the floor verdict collapses to a S
 κ_scissor/κ_bend < 6/N — in which the absolute scale, kT, ZBW params, and the Earnshaw sign question all cancel.
 Founder geometry → g ~ 0.06–0.30 < 0.43 → VIABLE.** The DM floor, ℓ_p, and E_ee are now unified onto **one
 edge-bond SSV potential**; the definitive g is that potential in scissor-vs-bend geometry (open SF-2/SF-5 calc,
-now closing three questions not one). On founder approval: (a) elevate the edge-bond SSV potential calc from open
-to active; (b) stage the gradient read + g-ratio unification to `founders_vision.md`; (c) **panel round 2** — the
-flexible-X concern is answered by a robust chain (edge-hinge + scale-free g < 6/N + founder geometry ⇒ viable)
-with no contestable absolute number. **No promotion until the edge-bond SSV potential is evaluated; DM-1 stays
-v1.0; CONJ-COSMO-1 founder-gated.**
+now closing three questions not one). The gradient read + g-ratio unification were staged to `founders_vision.md`
+(30 June entry), and the edge-bond SSV calc was handed to the SF-2/SF-5 lane.
+
+**Update (SF return, consumed 1839): G1a DELIVERED — floor VIABLE, direction corpus-pinned.** SF-2/SF-5 evaluated
+the ratio (OPEN-SS-40, patches 2200–2202) and returned it viable. The key physics: the *static* curvature (2200)
+gave g ≈ 1.6–3.8 (tense) — but that operator is wrong (the static config is Earnshaw-unstable, exactly 1834); the
+correct **ponderomotive |E|²-curvature** (2201, the calc 1835 named "mine to run") resolves Earnshaw (q = 0 a true
+minimum, both modes restoring) and gives **g ≈ 0.02**; and the viability *condition* (steep/screened field) is
+**met by the corpus, not assumed** (2202: a localized near-cancellation residual cannot be sub-Coulomb, plus
+derived fm-scale screening → ~17× margin under g_crit). DM consumed g (1839): **cluster floor VIABLE, direction
+robust, lands ~0.4–0.8 cm²/g (whole band ≤ cluster bound ~1.0); self-limiting re-confirmed; the stiff-ribbon /
+soft-scissor tension dissolves** (same bond, ratio ⇒ a large κ_bend is the denominator that makes g small — the
+junction is the *softer of two stiff modes, not a fragile joint*). Two corrections recorded straight: the g ~ 0.1
+estimate had the right direction but mis-referenced the softness to the E_qq core (the hierarchy cancels in the
+true ratio → pure geometry ~0.02); 1836's ratio *framing* is confirmed. **Still open (no promotion):** the exact
+floor (0.4 vs 0.8) and G1b (absolute κ_θ → ℓ_p) both root on **OPEN-FP-SF-2-η** (ZBW amplitude); G2 (E_qq/E_ee)
+and G3 (glueball-arrest, **OPEN-SS-39**, the sharpest remaining kill risk) open. On approval: (a) DM-side ℓ_p×g
+partial-G1b (absolute κ_scissor, no FP-blocker); (b) **panel round 2** — framed as a *velocity-sector floor
+clearance*, not a candidate-wide green light, carrying the stiff-vs-soft consistency result. **DM-1 stays v1.0 /
+Layer-C; CONJ-COSMO-1 founder-gated.**
