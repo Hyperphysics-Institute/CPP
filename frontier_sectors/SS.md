@@ -804,3 +804,23 @@ branch lives or dies on this one number.
 **Paper(s):** numbers home = SF-2/SF-5 (geometry lane); consumer = DM-1 (§5 re-scope draft). Reasoning: DM 1849;
 substrate-cosmology 2207; geometry handover `handovers/2026-06-30_geometry_dGnuc_ribbon_to_cross_barrier.md`.
 **Last updated:** 30 June 2026 (registered; awaiting the geometry-lane derivation of ΔG*_nuc).
+
+### OPEN-SS-41a: f and n* — the element-cross-section inputs that pin ΔG*_nuc (sub-item of OPEN-SS-41; the dwarf-branch last-mile)
+**Status:** **OPEN — registered 30 June 2026** (DM 18xx lane, founder-authorized; **sub-item of OPEN-SS-41**). The
+single input between the reachable/bracketed dwarf branch (OPEN-SS-41 first pass, 2209/2210) and a *pinned* dwarf
+σ/m(v) prediction — and the gate the founder set before panel round 2 (submit pinned, not bracketed).
+**One-line statement:** Derive **f** (the eCP-coat spine-face solid-angle fraction — the orientation selectivity
+for a correct axial E_qq bond) and **n\*** (the critical nucleus — the smallest cooperatively-stable rod seed) from
+the **8qCP+8eCP element cross-section**, so that **ΔG*_nuc = (n*−1)·|ln f|·kT_form** is pinned (not bracketed).
+**What a solution looks like:** f and n* as numbers from the element/nucleon cross-section geometry (SS-2-adjacent
+kit — the same element the corpus already uses), yielding a single ΔG*_nuc, hence ε_nuc = exp(−ΔG*_nuc/kT_form),
+N_form = 1/ε_nuc, and the dwarf σ/m = K·N_form·ε_bounce as a zero-parameter prediction.
+**Target / win:** pinned **ΔG*_nuc ∈ [6.0, 6.9] kT_form** ⇒ N_form ~ 400–1000 ⇒ the dwarf normalization is a
+zero-parameter prediction (the first-pass most-natural reading n* ~ 4, f ~ 0.11 already sits here).
+**Kill:** pinned ΔG*_nuc ≲ 4 kT (under-cored) or ≳ 9 kT (over-cored). The cluster σ/m ∝ 1/v² branch stands regardless.
+**Dependencies:** OPEN-SS-41 (parent — the ΔG*_nuc = (n*−1)·|ln f| form); the 8qCP+8eCP element cross-section
+(SS-2-adjacent). **Lane:** strong/geometry (same as OPEN-SS-41), 2200-series patch 2211+.
+**Falsification route:** pin (f, n*) → ΔG*_nuc; outside [~4, ~9] kT the dwarf normalization fails by orders.
+**Paper(s):** numbers home = SF-2/SF-5 geometry lane; consumer = DM-1 (§5 re-scope draft). Handover:
+`handovers/2026-06-30_geometry_fnstar_pin_dGnuc_OPEN-SS-41a_patch2211.md`.
+**Last updated:** 30 June 2026 (registered; the pinning input, gating panel round 2).
