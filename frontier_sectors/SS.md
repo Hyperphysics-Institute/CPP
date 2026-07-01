@@ -703,7 +703,7 @@ The K$_3$ pair potential $V_{\rm pair}(\xi) = -B_{\rm pair} \exp(-\xi^2/2)$ Tayl
 ---
 
 ### OPEN-SS-40: qq-Edge-Bond Angular Stiffness — the Scissor/Bend Ratio g and the Absolute κ_θ
-**Status:** OPEN (G1a evaluated — partial; G1b open; both blocked at root on OPEN-FP-SF-2-η)
+**Status:** OPEN (G1a evaluated both statically [2200] and ponderomotively [2201] — VIABLE-conditional; G1b open; exact floor + both blocked at root on OPEN-FP-SF-2-η)
 **Sector(s):** SS / SF-2 / SF-5, (cosmology / dark-matter consumer)
 **Priority:** HIGH (DM make-or-break; co-located with OPEN-SS-39 as the DM edge-bond family)
 **One-line statement:** Derive the qq-edge-bond SSV angular-stiffness potential and evaluate it in two
@@ -713,25 +713,37 @@ and (G1b) the absolute κ_θ that sets the ribbon persistence length ℓ_p (~100
 N≈14), in which absolute scale, kT_form, the ZBW params, and the Earnshaw sign all CANCEL (the X-junction
 scissor stiffness and the in-line ribbon bend are the SAME edge-bond potential in two geometries). The held DM
 panel round 2 was waiting on this number.
-**What a solution looks like:** (G1a) g from the same-potential ratio — DELIVERED THIS PATCH as a partial:
-the clean ratio evaluates to **g ≈ 1.6–3.8, at or above g_crit = 0.43**, REVERSING the DM-lane's staged g~0.1
-"viable" read. Verdict = **marginal-to-tense, leaning AGAINST clean viability — NOT a clean kill, NOT the
-comfortable viable expected.** Diagnosis: the founder's 1835 softness read used the E_qq core (~66 MeV) as
-reference, but the floor's reference is the E_ee in-line bend (same perimeter shell as the scissor), so the
-E_qq/E_ee hierarchy cancels and g returns to geometric O(1). A DEFINITIVE g (and all of G1b) still needs the
-pinned charge map — exact qCP counts, the alternating like/opposite cancellation, exact lever arms — i.e. the
-edge-bond SSV potential itself, blocked on OPEN-FP-SF-2-η. (Patch 2200: `flagship_papers/strong/reasoning/2200.md`,
-`code/2200_verify_g1a_scalefree_ratio.py`.)
+**What a solution looks like:** (G1a) g from the same-potential ratio — evaluated in two passes:
+  - **Static curvature (patch 2200):** the V'' ratio gives **g ≈ 1.6–3.8, ≥ g_crit = 0.43**, *leaning tense*.
+    BUT this used the static curvature operator on a config 1834 showed is **Earnshaw-unstable (non-restoring)**
+    — the wrong operator. Superseded by the ponderomotive pass.
+  - **Ponderomotive / "appropriate gradient" (patch 2201, the calc 1835 named "mine to run"):** the correct
+    dynamic stiffness is the curvature of the squared field |E|² (Kapitza term, defeats Earnshaw via the
+    positive-definite |E|² stabilization). Result: **(i) Earnshaw RESOLVED** — q=0 is a true |E|² minimum for
+    both modes (both restoring); **(ii) per-core g_pond < g_crit (≈0.003–0.04) in the screened/steep branch
+    (p ≳ 3)** → the scissor IS the soft mode → **model CONSISTENT (viable)** in the regime the bond's own
+    "screened near-cancellation residual" definition selects; **(iii) shallow/long branch (p ≲ 2) goes TENSE**
+    (g_pond → O(1)+) — exactly the branch 1835 flagged, a real escape hatch contingent on the screening
+    assumption. Raw g_pond≈0.001 was REJECTED as a core-counting artifact (per-core normalization used).
+  **Current G1a verdict: VIABLE in the screened regime (direction robust, Earnshaw resolved), CONDITIONAL on
+  p ≳ 3; exact floor (comfortably-vs-marginally viable, g_pond spans ~0.002–0.30) NOT pinned** — needs the ZBW
+  amplitude + pinned charge map = OPEN-FP-SF-2-η. (1835's "removes the 0.4-vs-0.8 residual" tempered: direction
+  confirmed, exact floor still pending.) G1b (absolute κ_θ → ℓ_p) still fully open on the same root.
+  (Patches 2200, 2201: `flagship_papers/strong/reasoning/{2200,2201}.md`,
+  `code/{2200_verify_g1a_scalefree_ratio,2201_verify_g1a_ponderomotive}.py`.)
 **Dependencies:** OPEN-FP-SF-2-η (substrate-thermodynamic framework — pins the absolute edge-bond SSV potential;
 ROOT BLOCKER for a definitive g and for all of G1b/G2). Geometry inputs from DM 1830–1836.
 **Cross-sector connections:** OPEN-SS-39 (glueball kinetics — the other half of the DM make-or-break family;
 both consume the same edge-bond SSV potential); DM-1 program is the consumer (plugs g into the floor verdict,
 σ/m, and DM-1 status — DM lane, not SF). SF-2 (electroweak edge-bond home) and SF-5 (strong sector).
-**Current best lead:** The scale-free ratio framing (DM 1836) is correct and cancels the blocked absolute scale;
-the residual obstacle is purely geometric and resolvable only with the pinned charge map. Founder may hold that
-map (his decision, preserved in 2200 §10).
+**Current best lead:** The scale-free ratio framing (DM 1836) is correct and cancels the blocked absolute scale.
+The correct dynamic operator is the ponderomotive (Kapitza) |E|²-curvature, not the static V'' (2201): it resolves
+Earnshaw and makes the scissor the soft mode in the screened/steep regime the bond's own definition selects.
+The two residual obstacles are (i) confirming the bond is steep/screened (p ≳ 3) from the charge map — else the
+p ≲ 2 branch goes tense — and (ii) the ZBW amplitude that pins the exact floor. Founder may hold both (his
+decision, preserved in 2201 §10).
 **Paper(s):** numbers home = SF-2/SF-5 (this OPEN); consumer = DM-1.
-**Last updated:** 30 June 2026 (registered from the SF-2/SF-5 G1a delivery, patch 2200).
+**Last updated:** 30 June 2026 (G1a static [2200] + ponderomotive [2201] passes; VIABLE-conditional verdict).
 
 ---
 
