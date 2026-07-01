@@ -764,3 +764,32 @@ back out an absolute κ_scissor — a partial G1b route, but ℓ_p is DM-derived
 
 ---
 
+
+### OPEN-SS-41: ΔG*_nuc — the Cross-Rod ribbon→cross nucleation barrier (the DM dwarf-branch make-or-break)
+**Status:** **OPEN — registered 30 June 2026** (DM 18xx lane via the substrate-cosmology 2208 handover;
+founder-authorized). The sole remaining make-or-break of the Cross-Rod DM candidate's **dwarf** branch, after
+OPEN-COSMO-DM-4 (route B) reduced the formation size to a single barrier.
+**One-line statement:** Derive **ΔG*_nuc**, the free-energy barrier to form the smallest stable relic-forming
+Cross-Rod seed along the ribbon→cross pathway (relative to free monomers), at the formation epoch.
+**Why it is the pin (from OPEN-COSMO-DM-4 / 2207):** in the nucleation-vs-accretion competition the cosmological
+prefactors (n_mono, σ, v) cancel in the ratio, so the seed fraction is **ε_nuc = exp(−ΔG*_nuc/kT_form)** — a pure
+barrier quantity, epoch-independent. Hence **N_form = 1/ε_nuc = exp(+ΔG*_nuc/kT_form)**, and the dwarf normalization
+σ/m = K·N_form·ε_bounce is set entirely by ΔG*_nuc.
+**What a solution looks like:** ΔG*_nuc from the ribbon→cross seed energetics — E_qq/E_ee edge-bond energies +
+assembly entropy on the *selective* ordered-seed branch (the one that discriminates ordered Cross-Rod seeds from
+amorphous product; amorphous polymerization is ruled out, so the Cross-Rod is the sole relic — 1842). This is the
+SF-2/SF-5 edge-bond kit, a geometry/energetics calc (not cosmology).
+**Target / win:** ΔG*_nuc ~ **6.0–6.9 kT_form** ⇒ ε_nuc ~ 10⁻³ ⇒ N_form ~ 400–1000 ⇒ the dwarf normalization is a
+**non-tuned prediction** (~6.5 kT is the generic scale of a specific-geometry nucleation barrier, so this is a
+reachable, non-coincidental target; ~14% pinning of ΔG*_nuc/kT holds N in-band).
+**Kill:** ΔG*_nuc ≲ 4 kT (ε_nuc ≳ 10⁻² ⇒ N_form ≲ 100, under-cored) or ≳ 9 kT (ε_nuc ≲ 10⁻⁴ ⇒ N_form ≳ 10⁴,
+over-cored) — misses by orders; the dwarf branch dies. **The cluster σ/m ∝ 1/v² branch stands regardless**
+(parameter-free, Bullet-safe).
+**Dependencies:** the ribbon→cross formation tracks (1842); the E_qq/E_ee edge-bond energetics (SF-2/SF-5,
+shared with OPEN-SS-40). **Cross-link: OPEN-COSMO-DM-4** (cosmology-complete; pin relocated here). Distinct from
+OPEN-FP-SF-2-η (EW boson η dilution factors).
+**Falsification route:** compute ΔG*_nuc; if outside [~4, ~9] kT the dwarf normalization fails by orders. The dwarf
+branch lives or dies on this one number.
+**Paper(s):** numbers home = SF-2/SF-5 (geometry lane); consumer = DM-1 (§5 re-scope draft). Reasoning: DM 1849;
+substrate-cosmology 2207; geometry handover `handovers/2026-06-30_geometry_dGnuc_ribbon_to_cross_barrier.md`.
+**Last updated:** 30 June 2026 (registered; awaiting the geometry-lane derivation of ΔG*_nuc).

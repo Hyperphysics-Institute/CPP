@@ -325,7 +325,10 @@ not detachment-equilibrium). This is linear in ε_nuc (vs kT_form's exponential)
 1.0–2.5×10⁻³** — a mild, non-fine-tuned target, unlike route A's ~15%-pinned decoupling temperature. The kT_form
 freeze-out (2204) is retained as the over-cored *equilibrium bound* that motivated the reframe, not the pin.
 **Reframed calc handed to the substrate-cosmology lane, opening patch 2206** (derive the CPP nucleation rate vs
-growth rate at the aggregation epoch → ε_nuc → N_form). Route A (DM ~10²× colder than radiation) is **deprioritized
+growth rate at the aggregation epoch → ε_nuc → N_form). **DONE (2207): ε_nuc = exp(−ΔG*_nuc/kT_form) — the epoch
+prefactors cancel, so the pin is the Cross-Rod ribbon→cross nucleation barrier ΔG*_nuc (target ~6.0–6.9 kT_form),
+now registered as OPEN-SS-41 (geometry/energetics). OPEN-COSMO-DM-4 is cosmology-complete; the dwarf make-or-break
+lives at OPEN-SS-41.** Route A (DM ~10²× colder than radiation) is **deprioritized
 as a fallback**, not discarded (non-exclusive; decoupling can affect nucleation kinetics). See
 `code/1848_nucleation_vs_freezeout_sensitivity.py` for the exponential-A-vs-linear-B sensitivity contrast.
 **Route-B EXECUTED (substrate-cosmology, 2207, Layer C):** ε_nuc derived from the nucleation-vs-growth competition.
