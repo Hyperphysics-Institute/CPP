@@ -318,6 +318,16 @@ single remaining make-or-break of the Cross-Rod DM candidate once the velocity f
 σ/m ∝ 1/v² branch is secured (reasoning 1845): whether formation produces a Cross-Rod population of the size the
 **dwarf** normalization requires. **After 2204: N_form is not a zero-parameter prediction; open sub-question is now
 whether N_form should be re-derived as a NUCLEATION-limited (monomers-per-nucleus) quantity — founder-gated.**
+**FOUNDER CHOICE (30 June 2026, reasoning 1848): route B — REFRAME onto the nucleation-limited axis.** The
+controlling quantity is the **nucleation-site density / seed fraction ε_nuc**, not kT_form: in the strong-binding
+regime (E_bond/kT ~ 50) monomers don't detach, so **N_form ~ n_monomer/n_seed = 1/ε_nuc** (nucleation-and-growth,
+not detachment-equilibrium). This is linear in ε_nuc (vs kT_form's exponential), so the band 400–1000 ⇔ **ε_nuc ~
+1.0–2.5×10⁻³** — a mild, non-fine-tuned target, unlike route A's ~15%-pinned decoupling temperature. The kT_form
+freeze-out (2204) is retained as the over-cored *equilibrium bound* that motivated the reframe, not the pin.
+**Reframed calc handed to the substrate-cosmology lane, opening patch 2206** (derive the CPP nucleation rate vs
+growth rate at the aggregation epoch → ε_nuc → N_form). Route A (DM ~10²× colder than radiation) is **deprioritized
+as a fallback**, not discarded (non-exclusive; decoupling can affect nucleation kinetics). See
+`code/1848_nucleation_vs_freezeout_sensitivity.py` for the exponential-A-vs-linear-B sensitivity contrast.
 **One-line statement:** Derive the substrate relic-epoch freeze-out temperature **kT_form** (equivalently the ratio
 ν_PCD/H_form of the PCD attempt frequency to the Hubble rate at formation), which sets the equilibrium-aggregation
 Cross-Rod size ⟨N⟩.
