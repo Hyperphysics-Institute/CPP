@@ -820,6 +820,19 @@ zero-parameter prediction (the first-pass most-natural reading n* ~ 4, f ~ 0.11 
 **Kill:** pinned ΔG*_nuc ≲ 4 kT (under-cored) or ≳ 9 kT (over-cored). The cluster σ/m ∝ 1/v² branch stands regardless.
 **Dependencies:** OPEN-SS-41 (parent — the ΔG*_nuc = (n*−1)·|ln f| form); the 8qCP+8eCP element cross-section
 (SS-2-adjacent). **Lane:** strong/geometry (same as OPEN-SS-41), 2200-series patch 2211+.
+**Result (strong/geometry lane, 2212, Layer C — PARTIAL close, honest):** **n\* ~ 2–4 IS pinnable** (0863: the cross
+forms "within a few moiety additions," hTetra chaperone barrierless; + cooperative stability of the soft-hinge axial
+seed). **f is NOT pinnable from the current corpus:** f = (exposed-core spine-face solid angle)/4π needs the DM
+element cross-section *shape* (8qCP core polyhedron, eCP-coat corner coverage, which face presents the axial E_qq
+spine), which the corpus gives only qualitatively (ℓ_el ~ 2 fm, r₀ ~ 0.26 fm, "corner-buffered"). The window needs
+**f ~ 0.04–0.11** (pinned n*); the plausible exposed-core range f ~ 0.05–0.20 **brackets the window but also reaches
+both kill bands** (~3.2 kT under-cored at f=0.20, ~9.0 kT over-cored at f=0.05), so **window-vs-kill is NOT decided**.
+**ΔG*_nuc is therefore NOT pinned;** the dwarf branch stays **REACHABLE / plausibly non-tuned** (2209 bracket
+confirmed, not upgraded to a pinned prediction). **The genuine last-mile narrows to one derivation: the DM element
+cross-section (the exposed-core spine-face fraction f) from the 8qCP+8eCP structure on the tetrahedral-cage/600-cell
+substrate** — one step beyond the currently-pinned corpus. Verify: `flagship_papers/strong/code/2212_fnstar_pin_dGnuc.py`;
+reasoning `flagship_papers/strong/reasoning/2212.md`. **Note:** the "n* ~ 4, f ~ 0.11 already sits in-window" reading
+above is *one* option in the plausible range, not a confirmed pin — the range also reaches both kills.
 **Falsification route:** pin (f, n*) → ΔG*_nuc; outside [~4, ~9] kT the dwarf normalization fails by orders.
 **Paper(s):** numbers home = SF-2/SF-5 geometry lane; consumer = DM-1 (§5 re-scope draft). Handover:
 `handovers/2026-06-30_geometry_fnstar_pin_dGnuc_OPEN-SS-41a_patch2211.md`.
