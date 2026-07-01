@@ -788,6 +788,17 @@ over-cored) — misses by orders; the dwarf branch dies. **The cluster σ/m ∝ 
 **Dependencies:** the ribbon→cross formation tracks (1842); the E_qq/E_ee edge-bond energetics (SF-2/SF-5,
 shared with OPEN-SS-40). **Cross-link: OPEN-COSMO-DM-4** (cosmology-complete; pin relocated here). Distinct from
 OPEN-FP-SF-2-η (EW boson η dilution factors).
+**First-pass result (strong/geometry lane, 2209, Layer C):** ΔG*_nuc is a **configurational-selectivity** barrier —
+**not** strain (0.3–1.2 kT: the soft scissor hinge g ≈ 0.02 that made the floor viable makes junction strain cheap)
+and **not** bond energy (E_qq/kT ≈ 12–51 ≫ 1 ⇒ barrierless ⇒ under-cored null). The eCP coat buffers the core, so E_qq
+bonding is accessible only on the exposed spine face (fraction f of orientations); the ordered registered seed costs
+~|ln f| kT per bond, giving **ΔG*_nuc ≈ (n*−1)·|ln f|·kT_form**. For the natural range (f ~ 0.05–0.30, n* ~ 2–4) this
+is **~1–9 kT, which BRACKETS the 6.0–6.9 kT window**, and the most natural reading (n* ~ 4 for the 4-wide cross,
+axial-spine f ~ 0.11) lands **in-window**. **Verdict: the dwarf branch is REACHABLE / plausibly NON-TUNED** (target
+inside the natural barrier range, not a fine-tuned edge) — not a kill, not yet a *pinned* prediction. **Remaining
+last-mile:** the eCP-coat spine-face solid angle f and the critical nucleus n* from the 8qCP+8eCP element cross-section
+(SS-2-adjacent) — the single input between here and a pinned dwarf σ/m(v) prediction. Verify:
+`flagship_papers/strong/code/2209_dGnuc_nucleation_barrier.py`; reasoning `flagship_papers/strong/reasoning/2209.md`.
 **Falsification route:** compute ΔG*_nuc; if outside [~4, ~9] kT the dwarf normalization fails by orders. The dwarf
 branch lives or dies on this one number.
 **Paper(s):** numbers home = SF-2/SF-5 (geometry lane); consumer = DM-1 (§5 re-scope draft). Reasoning: DM 1849;
