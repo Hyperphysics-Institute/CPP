@@ -22,6 +22,11 @@
 >   earlier √2-doubling estimate is retracted.
 > - **OPEN-FP-SF-2-η is NOT the DM blocker** — it is the EW boson η dilution factors. The DM pins are E_bond
 >   (SF-2/SF-5) and kT_form (relic/epoch calc, apparently unregistered). See below (references corrected).
+> - **DWARF BRANCH OVER-CORES (OPEN-COSMO-DM-4 / 2204, consumed 1847):** the natural freeze-out gives ⟨N⟩ ~
+>   10⁴–10⁶ (2–3 orders over the 400–1000 target), so the dwarf normalization has **no zero-parameter route** —
+>   the size is nucleation-limited, not kT_form-limited. The **cluster σ/m ∝ 1/v² branch (parameter-free,
+>   Bullet-safe) is the lead result**; dwarf salvage is founder-gated (route A: DM colder than radiation, a
+>   tuning; route B: nucleation-density reframe, recommended).
 
 **STATUS: STAGED, founder-gated. Post-v1.0 companion note. Supersedes step 5 ("velocity dependence") of
 `mechanism-DM-1.md` PENDING founder approval + a CONV-001 panel pass.** DM-1 stays v1.0; this note documents

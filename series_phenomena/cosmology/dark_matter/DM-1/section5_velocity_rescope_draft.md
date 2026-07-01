@@ -111,11 +111,20 @@ a de-risked residual (gated by the small glueball fraction).
 
 The candidate reduces to the **E_qq structure plus collision dynamics**. The **velocity-sector floor is CLEARED**
 (structural free-hinge + g ≈ 0.02, direction corpus-pinned); the exact floor pends the collision-dynamics
-convolution (two-coat δ*, catch/bounce transport), **not** a substrate-thermodynamics calc. Still open: the E_qq
-bond depth / fragmentation window and the aggregate-size formation dynamics (does PCD produce N ~ 10²–10³?).
+convolution (two-coat δ*, catch/bounce transport), **not** a substrate-thermodynamics calc.
+
+**The cluster branch is a near-parameter-free prediction (1845):** a super-threshold rod self-limits until
+v_thr(segment) = v_cluster, i.e. N_seg(v) = 28·(1720/v)², giving **σ/m ∝ 1/v²** — ≈ 0.86, 0.43, 0.25 cm²/g at
+1000, 1500, 2000 km/s and ≈ 0.08 at the Bullet (3600 km/s), in-band and under the tight Bullet bound; distinctive
+(not the v⁻⁴ of light-mediator SIDM). **The dwarf branch, however, over-cores under natural formation**
+(OPEN-COSMO-DM-4 / 2204, consumed 1847): the freeze-out gives ⟨N⟩ ~ 10⁴–10⁶ (2–3 orders over the 400–1000 dwarf
+target), the size is nucleation-limited (not kT_form-limited), and the dwarf normalization has **no zero-parameter
+route** as posed — salvage is founder-gated. Still open besides: the E_qq bond-depth / fragmentation window.
+
 **Grade: Layer-C, velocity-sector floor cleared, no promotion.** DM-1 stays v1.0. Headline: a **velocity-dependent**
-self-interaction (σ/m falls with v) via **strip-then-fuse X-formation** on the Cross Rod, with a viable cluster
-floor. **Framework-internal** — conditional on the CPP inputs it inherits.
+self-interaction via **strip-then-fuse X-formation** on the Cross Rod — the **cluster σ/m ∝ 1/v² branch is a
+parameter-free, Bullet-safe prediction** (lead result); the **dwarf normalization over-cores under natural
+formation** (salvage founder-gated). **Framework-internal** — conditional on the CPP inputs it inherits.
 
 ---
 
