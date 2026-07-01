@@ -30,9 +30,14 @@
 > - **DWARF BRANCH REDUCED TO ΔG*_nuc (route B executed, 2207/2208, consumed 1849):** ε_nuc = exp(−ΔG*_nuc/kT_form)
 >   (the epoch/abundance prefactors cancel), so N_form = exp(ΔG*_nuc/kT). The dwarf make-or-break is now the single
 >   **Cross-Rod ribbon→cross nucleation barrier ΔG*_nuc, target ~6.0–6.9 kT_form** (⇒ ε_nuc ~ 10⁻³ ⇒ N_form ~
->   400–1000) — a geometry/energetics number at a naturally-reachable few-kT scale, ~14% tolerance, pending the
->   geometry lane. (Correction to the 1848 "linear" claim: N_form is exponential in ΔG*_nuc/kT; B is the better
->   gradient by ~4× looser pinning + a natural barrier scale, not by linearity.)
+>   400–1000) — pending the geometry lane. **FIRST PASS (2209/2210, consumed 1851): ΔG*_nuc is a
+>   CONFIGURATIONAL-SELECTIVITY barrier** (register the E_qq spine face for the ordered seed) — *not* strain
+>   (0.3–1.2 kT: the soft hinge g ≈ 0.02 that made the floor viable makes junction strain cheap — a nice
+>   cross-consistency) and *not* bond energy (barrierless null). ΔG*_nuc ≈ (n*−1)·|ln f|·kT_form, whose natural
+>   range **BRACKETS the 6.0–6.9 kT window**, most-natural reading (n* ~ 4, f ~ 0.11) **in-window**. **The dwarf
+>   branch is REACHABLE and plausibly NON-TUNED** — not secured, one cross-section input (f, n*) from pinned.
+>   (Correction to the 1848 "linear" claim: N_form is exponential in ΔG*_nuc/kT; B is the better gradient by ~4×
+>   looser pinning + a natural barrier scale, not by linearity.)
 
 **STATUS: STAGED, founder-gated. Post-v1.0 companion note. Supersedes step 5 ("velocity dependence") of
 `mechanism-DM-1.md` PENDING founder approval + a CONV-001 panel pass.** DM-1 stays v1.0; this note documents

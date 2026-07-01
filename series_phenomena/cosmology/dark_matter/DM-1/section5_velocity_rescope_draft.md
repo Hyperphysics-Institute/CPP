@@ -120,9 +120,12 @@ v_thr(segment) = v_cluster, i.e. N_seg(v) = 28·(1720/v)², giving **σ/m ∝ 1/
 (OPEN-COSMO-DM-4 / 2204, consumed 1847): the freeze-out gives ⟨N⟩ ~ 10⁴–10⁶ (2–3 orders over the 400–1000 dwarf
 target), the size is nucleation-limited (not kT_form-limited). **Reframed (route B, 2207/2208, consumed 1849):**
 ε_nuc = exp(−ΔG*_nuc/kT_form) with the epoch prefactors cancelling, so the dwarf make-or-break is the single
-**Cross-Rod ribbon→cross nucleation barrier ΔG*_nuc ~ 6.0–6.9 kT_form** (⇒ N_form ~ 400–1000) — a modest
-geometry/energetics number at a naturally-reachable few-kT scale (~14% tolerance), pending the geometry lane; a
-non-tuned prediction if it lands there. Still open besides: the E_qq bond-depth / fragmentation window.
+**Cross-Rod ribbon→cross nucleation barrier ΔG*_nuc ~ 6.0–6.9 kT_form** (⇒ N_form ~ 400–1000). **First pass
+(2209/2210): ΔG*_nuc is a configurational-selectivity barrier** (register the E_qq spine face for the ordered
+seed — not strain, since the soft hinge g ≈ 0.02 makes junction strain cheap; not bond energy), ΔG*_nuc ≈
+(n*−1)·|ln f|·kT_form, whose natural value **brackets the window** (most-natural reading n* ~ 4, f ~ 0.11
+in-window). **The dwarf branch is REACHABLE and plausibly non-tuned** — one cross-section input (f, n*) from a
+pinned prediction, not secured, not killed. Still open besides: the E_qq bond-depth / fragmentation window.
 
 **Grade: Layer-C, velocity-sector floor cleared, no promotion.** DM-1 stays v1.0. Headline: a **velocity-dependent**
 self-interaction via **strip-then-fuse X-formation** on the Cross Rod — the **cluster σ/m ∝ 1/v² branch is a
