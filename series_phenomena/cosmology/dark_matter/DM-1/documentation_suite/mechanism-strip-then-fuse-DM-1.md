@@ -27,6 +27,12 @@
 >   the size is nucleation-limited, not kT_form-limited. The **cluster σ/m ∝ 1/v² branch (parameter-free,
 >   Bullet-safe) is the lead result**; dwarf salvage is founder-gated (route A: DM colder than radiation, a
 >   tuning; route B: nucleation-density reframe, recommended).
+> - **DWARF BRANCH REDUCED TO ΔG*_nuc (route B executed, 2207/2208, consumed 1849):** ε_nuc = exp(−ΔG*_nuc/kT_form)
+>   (the epoch/abundance prefactors cancel), so N_form = exp(ΔG*_nuc/kT). The dwarf make-or-break is now the single
+>   **Cross-Rod ribbon→cross nucleation barrier ΔG*_nuc, target ~6.0–6.9 kT_form** (⇒ ε_nuc ~ 10⁻³ ⇒ N_form ~
+>   400–1000) — a geometry/energetics number at a naturally-reachable few-kT scale, ~14% tolerance, pending the
+>   geometry lane. (Correction to the 1848 "linear" claim: N_form is exponential in ΔG*_nuc/kT; B is the better
+>   gradient by ~4× looser pinning + a natural barrier scale, not by linearity.)
 
 **STATUS: STAGED, founder-gated. Post-v1.0 companion note. Supersedes step 5 ("velocity dependence") of
 `mechanism-DM-1.md` PENDING founder approval + a CONV-001 panel pass.** DM-1 stays v1.0; this note documents

@@ -118,8 +118,11 @@ v_thr(segment) = v_cluster, i.e. N_seg(v) = 28·(1720/v)², giving **σ/m ∝ 1/
 1000, 1500, 2000 km/s and ≈ 0.08 at the Bullet (3600 km/s), in-band and under the tight Bullet bound; distinctive
 (not the v⁻⁴ of light-mediator SIDM). **The dwarf branch, however, over-cores under natural formation**
 (OPEN-COSMO-DM-4 / 2204, consumed 1847): the freeze-out gives ⟨N⟩ ~ 10⁴–10⁶ (2–3 orders over the 400–1000 dwarf
-target), the size is nucleation-limited (not kT_form-limited), and the dwarf normalization has **no zero-parameter
-route** as posed — salvage is founder-gated. Still open besides: the E_qq bond-depth / fragmentation window.
+target), the size is nucleation-limited (not kT_form-limited). **Reframed (route B, 2207/2208, consumed 1849):**
+ε_nuc = exp(−ΔG*_nuc/kT_form) with the epoch prefactors cancelling, so the dwarf make-or-break is the single
+**Cross-Rod ribbon→cross nucleation barrier ΔG*_nuc ~ 6.0–6.9 kT_form** (⇒ N_form ~ 400–1000) — a modest
+geometry/energetics number at a naturally-reachable few-kT scale (~14% tolerance), pending the geometry lane; a
+non-tuned prediction if it lands there. Still open besides: the E_qq bond-depth / fragmentation window.
 
 **Grade: Layer-C, velocity-sector floor cleared, no promotion.** DM-1 stays v1.0. Headline: a **velocity-dependent**
 self-interaction via **strip-then-fuse X-formation** on the Cross Rod — the **cluster σ/m ∝ 1/v² branch is a
