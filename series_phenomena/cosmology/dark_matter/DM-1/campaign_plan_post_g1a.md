@@ -1,76 +1,68 @@
-# DM-1 Campaign Plan — post-G1a (velocity-sector floor cleared)
+# DM-1 Campaign Plan — post-G1a, post-founder-review (corrected)
 **Date:** 2026-06-30 · **Lane:** DM 18xx · **Author:** Opus · **Status of DM-1:** v1.0, Layer-C (no promotion)
 
-This plan is written at the point where the **velocity-sector floor is cleared** (G1a consumed, patch 1839) and
-the DM lane has consumed everything the SF G1a return can give it. Its purpose: map the remaining make-or-breaks,
-fix a kill-risk-first sequence, and separate what the DM lane can do now from what waits upstream. It supersedes
-no prior plan; it sequences the 0859–0863 / 1815–1840 program from here.
+Rewritten after the 30 June founder-review pass (`reasoning/1842.md`), which cleared several framing errors and
+substantially simplified the remaining campaign. The velocity-sector floor is cleared *without* a founder-gated
+substrate pin, and the ribbon-legacy make-or-breaks (ℓ_p / edge-bond persistence potential) are retired.
 
 ## 1. Where the candidate stands
-- **Velocity sector — CLEARED.** Strip-then-fuse is the operative channel; the X-junction hinges freely (g ≈
-  0.02 ≪ g_crit, corpus-pinned via SF 2200–2202); the cluster floor is **viable, direction robust** (~0.4–0.8,
-  whole band ≤ bound ~1.0); self-limiting secured; the stiff-ribbon / soft-scissor tension is dissolved (same
-  bond, ratio ⇒ requirements reinforce; junction is the softer of two *stiff* modes, κ_scissor ≲ E_bond — 1840).
-- **Leading relic geometry — the 4-wide CROSS** (0862): stiffest and most collapse-resistant; the bare ribbon is
-  mostly a transient that collapses to a glueball or, in a minority, loops before contact.
-- **Not settled:** the exact floor magnitude and three formation-side make-or-breaks (below). **DM-1 stays v1.0 /
-  Layer-C. CONJ-COSMO-1 founder-gated.**
+- **Candidate:** the **Cross Rod** (sole relic; hTetra loop ruled out) — N DM elements (each 8qCP+8eCP, ~1408 MeV)
+  on a continuous axial **E_qq** spine; σ/m ∝ N (geometric, extended body).
+- **Velocity sector — CLEARED.** Strip-then-fuse via the **E_qq edge-bond hinge**; floor viable (structural
+  free-hinge + g ≈ 0.02 = κ_scissor/κ_bend, **E_qq/E_qq, pure geometry** — no ℓ_p, no kT, no substrate-thermo pin).
+  Stiff/soft tension dissolved; self-limiting secured.
+- **Dilution — defanged.** Two-channel chaperone (hTetra + eCP-qCP chain) → glueballs extremely rare; Cross-Rod
+  cocooning = mere polarization.
+- **DM-1 stays v1.0 / Layer-C. CONJ-COSMO-1 founder-gated.**
 
-## 2. The remaining make-or-breaks — the map (all upstream of the DM lane)
-Four open items. The DM lane cannot advance any of them itself; each needs an SF/FP deliverable, then a DM
-consumption. Two natural clusters:
+## 2. Remaining questions (re-mapped — most of the old make-or-break list retired)
+**Retired by founder review (no longer open):**
+- ~~G1b (absolute κ_θ → ℓ_p)~~ — ℓ_p is ribbon-legacy; the floor is g (pure geometry), no absolute κ_θ needed.
+- ~~The "edge-bond SSV potential" as a 3-in-1 make-or-break~~ — ribbon-legacy; the Cross-Rod floor doesn't use it.
+- ~~OPEN-FP-SF-2-η as the DM blocker~~ — that is the EW boson η dilution factors; never a DM item (see 1842/1845).
 
-**Cluster A — the glueball / dilution kill risk (independent, SHARPEST).**
-- **G3 — glueball-arrest radius + formation branching ratios** → **OPEN-SS-39** (SF-5). 0862: **"the most likely
-  program-killer," "least under analytic control."** The dilution tax (0862/0863): present-day σ is a
-  population-weighted average σ_eff = f·σ_ext + (1−f)·σ_glue, so even a stiff extended species fails the band if
-  the glueball mass-fraction is too high. **DM-side goalposts already set** (ready to hand off):
-  - cocoon-arrest radius: **few fm ⇒ pure dilutant (σ ~ 0.11); 100s fm ⇒ a second size-setter that must agree
-    with ℓ_p.**
-  - suppression ratio **ρ = R_cross/R_appose ≈ [hTetra]/[ribbon]·(σ_accrete/σ_appose) must be ≳ 9** to hold the
-    glueball fraction < 10% (0863).
-  - dilution-tax f-thresholds (0862): to reach σ = 0.6 needs f ≈ 0.55 at σ_ext = 1, 0.26 at σ_ext = 2, etc.
-  - Independent of the edge-bond potential — can be run without OPEN-FP-SF-2-η.
+**Genuinely open:**
+1. **Formation-size dynamics — the PRIMARY make-or-break (0859/0860).** Does PCD aggregation actually produce Cross
+   Rods of **N ~ 48–160 elements** (data band) — up to **~240** for the dwarf σ/m — i.e. ~10²–10³ DPs? This needs
+   the formation kinetics + the relic/epoch thermal scale **kT_form** (⟨N⟩ ~ exp(E_bond/2kT_form)). *(kT_form is
+   the substrate thermal-history pin, apparently unregistered — recommend registering it under the owning
+   DM/cosmology or SF substrate-thermodynamics lane; it is NOT OPEN-FP-SF-2-η.)*
+2. **Collision-dynamics floor refinement — DM-lane, mine to run.** The exact floor value is the σ/m(v) convolution
+   with (a) the **two-coat δ\*** (Madelung near-cancellation, sign-dependent — the calc I flagged as next) and (b)
+   the **catch/bounce transport weighting** (slice-through ruled out; both channels transfer momentum, capped at
+   the bonding threshold). No upstream dependency.
+3. **σ/m coefficient tightening — DM-lane.** K ≈ 0.013·N (element crossing length ℓ_el and c_geo carry a
+   factor-few band); pin ℓ_el from the element geometry. (The "0.11·N" shorthand was a conflation with the dead
+   compact value — corrected in 1842.)
+4. **G3 residual (OPEN-SS-39, SF-5) — de-risked, low priority.** Only the glueball cocoon-arrest radius, gated by
+   small f_glue. Not a gate.
+5. **E_qq bond depth / fragmentation window** — largely established (E_qq ~66 MeV; ~600 MeV transverse-fracture
+   wall). A confirmation, not a make-or-break.
 
-**Cluster B — the edge-bond-potential / substrate-thermodynamics cluster (one calc closes three).**
-- **G2 — E_qq / E_ee well depths** → edge-bond SSV potential (SF-2/SF-5): sets fragmentation/lifetime kinetics
-  (E_ee scission) and the length-distribution freeze-out (E_bond ~ 0.8 keV–2 MeV target, 0860).
-- **G1b — absolute κ_θ → ℓ_p** → edge-bond SSV potential absolute + kT_form (**OPEN-FP-SF-2-η**): the absolute
-  formation/stiffness side. (Partial DM-side close 1840 gives κ in kT_form units + the kT_form-free
-  κ_scissor/E_bond ~ 0.15–1.0; the absolute MeV still needs kT_form.)
-- **Exact floor (0.4 vs 0.8)** → ZBW amplitude (**OPEN-FP-SF-2-η**): refines the *already-viable* floor within the
-  band. Not a kill risk — a tightening.
-- **These three share a root:** the absolute edge-bond SSV potential + the ZBW amplitude + kT_form (the
-  substrate-thermodynamic framework, OPEN-FP-SF-2-η). **One SF-2/SF-5 + FP calc closes G2 + G1b + exact-floor
-  together.** FP/**founder-gated** (Thomas may hold OPEN-FP-SF-2-η).
+## 3. Sequence
+1. **Two-coat δ\* + collision-dynamics floor** (DM-lane, mine to run) — refines the cleared floor and the σ/m(v)
+   knee; no upstream wait.
+2. **Formation-size dynamics** (the primary make-or-break) — the PCD aggregation calc for N ~ 10²–10³, needing
+   kT_form. This is where the candidate lives or dies now that the floor is cleared. DM/cosmology + substrate lane.
+3. **σ/m coefficient tightening** (DM-lane) — pin ℓ_el.
+4. **G3 residual** (SF-5) — de-risked, at convenience.
 
-## 3. Sequence (rationale: kill-risk first, then the shared-potential cluster)
-1. **G3 first (OPEN-SS-39 → SF-5).** It is the sharpest kill risk *and* independent, so resolving it first avoids
-   investing further in a candidate its most likely killer might take down. DM goalposts are ready (§2A). If G3
-   fails (glueball fraction too high / ρ < 9 / arrest radius ~ few fm), the extended-aggregate program is largely
-   dead regardless of the (cleared) floor — so this gates everything downstream.
-2. **Cluster B (G2 + G1b + exact-floor → the OPEN-FP-SF-2-η calc).** One FP/founder-gated calc. Lower urgency
-   (completes/tightens rather than kills) and gated on the founder's decision to run OPEN-FP-SF-2-η. Sequence
-   after G3 so the founder-gated substrate calc is spent on a candidate that has survived its sharpest test.
-
-## 4. DM-side work that can proceed NOW (no upstream needed)
-- **G3 handoff to SF-5** — package the §2A goalposts (arrest-radius targets, ρ ≳ 9, dilution-tax f-thresholds) as
-  a sharpened handover pointing at OPEN-SS-39 (the G1a-handoff pattern). **Highest-leverage immediate move.**
-- **DM-1 §5 re-scope paper edit** (0862 item #4; 0861 "takes the next free number when built"): fold the 0859
-  null + 0860 ledger + 0861 collapse + 0862 mixture/dilution + the strip-then-fuse mechanism + the three-goalpost
-  framing into DM-1's velocity section. Founder-gated + panel before it lands; the content is staged (the
-  mechanism note). Can be *drafted* now.
-- **Panel round 2** — held; ready to assemble (floor verdict + stiff-vs-soft consistency). Recommend holding until
-  G3 resolves, then reviewing the candidate with its sharpest kill risk settled.
+## 4. DM-side work available now (no upstream)
+- The two-coat δ* Madelung calc and the σ/m(v) convolution.
+- The σ/m coefficient tightening.
+- The DM-1 §5 re-scope (staged draft, corrected — `section5_velocity_rescope_draft.md`); founder-gated + panel to
+  land.
+- **Panel round 2** — held; ready. The floor case is now cleaner (E_qq/E_qq g, no contestable substrate pin), so
+  round 2 is well-posed; recommend running it once the two-coat δ* / transport refinement is in.
 
 ## 5. Decision gates (Thomas)
-- **OPEN-FP-SF-2-η** — FP/founder-gated; closes G2 + G1b + exact-floor. Thomas decides whether/when to run it.
-- **Panel round 2** — hold (recommended, until G3) vs run now.
+- **kT_form registration** — the formation-size pin needs it; recommend registering (owning lane's clone-first gate).
+- **Panel round 2** — hold vs run.
+- **DM-1 promotion off Layer-C** — needs the formation-size result (does PCD make N ~ 10²–10³?); the floor alone is
+  not sufficient, but it no longer waits on a founder-gated substrate calc.
 - **CONJ-COSMO-1** — founder-gated, untouched.
-- **DM-1 promotion off Layer-C** — requires G3 pass *and* the Cluster-B calc; the floor alone is not sufficient.
 
 ## 6. Immediate next move (recommendation)
-**Hand G3 to the SF-5 lane** — a sharpened handover carrying the DM-side goalposts (§2A), the way G1a was handed
-off. It is the sharpest kill risk, it is independent of the founder-gated substrate calc, and its goalposts are
-already in hand — so it is the single highest-leverage thing that can advance the campaign right now. Draft the
-DM-1 §5 re-scope in parallel (founder-gated to land). Hold the panel for G3's outcome.
+**The two-coat δ\* Madelung calc + the collision-dynamics floor/transport convolution** — it's mine to run, needs
+no upstream, refines the cleared floor and the σ/m(v) curve, and feeds the panel. Formation-size dynamics is the
+larger make-or-break behind it and the place the candidate now stands or falls.
