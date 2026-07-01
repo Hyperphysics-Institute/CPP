@@ -328,6 +328,19 @@ freeze-out (2204) is retained as the over-cored *equilibrium bound* that motivat
 growth rate at the aggregation epoch → ε_nuc → N_form). Route A (DM ~10²× colder than radiation) is **deprioritized
 as a fallback**, not discarded (non-exclusive; decoupling can affect nucleation kinetics). See
 `code/1848_nucleation_vs_freezeout_sensitivity.py` for the exponential-A-vs-linear-B sensitivity contrast.
+**Route-B EXECUTED (substrate-cosmology, 2207, Layer C):** ε_nuc derived from the nucleation-vs-growth competition.
+In nucleation-and-growth, ε_nuc = R_nuc/R_acc at the nucleation freeze, and the collision prefactors (n_mono, σ, v —
+the *entire* epoch/abundance dependence) **cancel** between the two channels (valid since aggregation is
+collision-fast, Γ_coll/H ~ 10⁷–10¹¹), leaving **ε_nuc ~ exp(−ΔG*_nuc/kT_form)** — set by the Cross-Rod nucleation
+BARRIER, not the epoch. So **ε_nuc ~ 10⁻³ ⇔ ΔG*_nuc ~ 6.0–6.9 kT_form**, and the decisive pin is ΔG*_nuc (a
+geometry/energetics quantity, SF-2/SF-5-adjacent), *not* a further cosmology calc. **Sensitivity correction to 1848:**
+N_form = 1/ε_nuc is linear in ε_nuc, but ε_nuc = exp(−ΔG*/kT) is exponential in the barrier, so N_form = exp(ΔG*/kT)
+is exponential in its knob — as is route A. B is nonetheless the better gradient because its **exponent (ΔG*/kT ~ 6.6)
+is ~4× smaller** than A's (E_bond/2kT ~ 25) → ~14% pinning vs A's ~3.7%, **and** ΔG*_nuc ~ 6.5 kT is a natural few-kT
+scale for a specific-geometry nucleus (A's T_DM/T_rad ~ 10⁻² needs a decoupling coincidence). So the founder's B>A
+conclusion holds, for the smaller-exponent + natural-scale reason, not linearity. Substrate-cosmology's part is now
+complete; the successor pin is ΔG*_nuc. Verify: `scripts/2207_eps_nuc_from_nucleation_growth.py`; reasoning
+`reasoning/2207.md`; handover `handovers/2026-06-30_geometry_dGnuc_ribbon_to_cross_barrier.md`.
 **One-line statement:** Derive the substrate relic-epoch freeze-out temperature **kT_form** (equivalently the ratio
 ν_PCD/H_form of the PCD attempt frequency to the Hubble rate at formation), which sets the equilibrium-aggregation
 Cross-Rod size ⟨N⟩.
