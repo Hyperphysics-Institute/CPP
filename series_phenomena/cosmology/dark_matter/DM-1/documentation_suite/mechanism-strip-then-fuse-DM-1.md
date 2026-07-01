@@ -34,8 +34,11 @@
 >   CONFIGURATIONAL-SELECTIVITY barrier** (register the E_qq spine face for the ordered seed) — *not* strain
 >   (0.3–1.2 kT: the soft hinge g ≈ 0.02 that made the floor viable makes junction strain cheap — a nice
 >   cross-consistency) and *not* bond energy (barrierless null). ΔG*_nuc ≈ (n*−1)·|ln f|·kT_form, whose natural
->   range **BRACKETS the 6.0–6.9 kT window**, most-natural reading (n* ~ 4, f ~ 0.11) **in-window**. **The dwarf
->   branch is REACHABLE and plausibly NON-TUNED** — not secured, one cross-section input (f, n*) from pinned.
+>   range **BRACKETS the 6.0–6.9 kT window**. **PARTIAL CLOSE (2212/2213, consumed 1853): n\* ~ 2–4 PINS; f does
+>   NOT** — f (the exposed-core spine-face fraction) needs the DM element cross-section *shape*, and the plausible
+>   range f ~ 0.05–0.20 reaches *both* kill bands (~3.2 kT under-cored, ~9.0 kT over-cored). **The dwarf branch is
+>   REACHABLE / plausibly non-tuned but genuinely UNDECIDED** (window-vs-kill) pending one number — f from the
+>   element cross-section; the "n* ~ 4, f ~ 0.11 in-window" reading is one option in the range, not a pin.
 >   (Correction to the 1848 "linear" claim: N_form is exponential in ΔG*_nuc/kT; B is the better gradient by ~4×
 >   looser pinning + a natural barrier scale, not by linearity.)
 
