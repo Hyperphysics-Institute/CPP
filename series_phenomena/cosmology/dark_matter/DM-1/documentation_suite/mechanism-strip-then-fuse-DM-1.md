@@ -17,8 +17,9 @@
 >   intermediate; **hTetra loop ruled out** (amorphous polymerization) → Cross Rod is the sole relic.
 > - **Transport = three channels:** slice-through ruled out; catch (maximal, matched N); bounce (sub-maximal,
 >   capped at the bonding threshold). σ/m near the geometric ceiling.
-> - **δ\* is a two-coat balance** (both rods' eCP coats, alternating-charge Madelung — sign-dependent), replacing
->   the single-coat δ*.
+> - **δ\* is a two-coat balance** — computed (1844) as a Madelung **near-cancellation** residual (~0.36× single-coat,
+>   registry-averaged; attractive registry aids penetration), so **v_thr ~0.6× or lower, penetration easier** — the
+>   earlier √2-doubling estimate is retracted.
 > - **OPEN-FP-SF-2-η is NOT the DM blocker** — it is the EW boson η dilution factors. The DM pins are E_bond
 >   (SF-2/SF-5) and kT_form (relic/epoch calc, apparently unregistered). See below (references corrected).
 

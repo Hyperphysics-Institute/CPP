@@ -60,8 +60,10 @@ to a velocity threshold because the attraction must also haul the rod mass), and
 the Sea and released as sustained relative motion** (SF-6) so the cores stay in contact; rod-tail inertia backs
 the contact, and penetration is set by a **force balance** — the inertial drive (∝ velocity × perpendicularity ×
 centrality) against the coat repulsion. That balance depth is **δ\***, and — a founder correction folded in here —
-it is set against **two** eCP coats (one per rod), an alternating-charge Madelung interaction that can raise or
-lower the threshold; the exact two-coat δ* is a pending calc. The X arms are shorter than the reactants, so fusion
+it is set against **two** eCP coats (one per rod). Computed (1844): because the coats are alternating-charge
+squares, the two-coat interaction is a **Madelung near-cancellation** — registry-averaged it is a small residual
+(~0.36× the single-coat scale) and the coats can relax to the attractive registry, so **δ\* penetration is easier,
+not harder** (v_thr ~0.6× or lower). The earlier √2-barrier estimate is retracted. The X arms are shorter than the reactants, so fusion
 carries the σ/m-lowering effect fragmentation was meant to provide, and the formation rate rises with velocity.
 
 ## 4. The three encounter channels and the σ/m(v) curve
