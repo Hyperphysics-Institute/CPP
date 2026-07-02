@@ -840,7 +840,20 @@ above is *one* option in the plausible range, not a confirmed pin — the range 
 **Last updated:** 30 June 2026 (n* pinned; f handed to OPEN-SS-42 — the element cross-section).
 
 ### OPEN-SS-42: the DM element cross-section — the exposed-core spine-face fraction f (pins ΔG*_nuc; closes OPEN-SS-41a)
-**Status:** **OPEN — registered 30 June 2026** (DM 18xx lane, founder-authorized). The **element-structure**
+**Status:** **RESULT IN — 30 June 2026 (strong/geometry lane, 2215, Layer C).** The element is a **cube** (0886:
+cross-section = cube face = the 4 hTetra arms / 8 qCP; one axial rung = one cube; eCP coat screens the transverse
+faces). f follows from the cube's orientational combinatorics (|O| = 24), not a free cone: the E_qq spine distinguishes
+1 of 3 axes ⇒ **f ∈ [1/12, 1/3]** (f_steric = 8/24 = 1/3 for the 4-fold cross shape; f_reg = 2/24 = 1/12 if the E_qq
+color pattern forces rotational registration). With ΔG*_nuc = (n*−1)·|ln f| and n* ~ 2–4 (OPEN-SS-41a): **(i) the
+over-cored kill is EXCLUDED** (f ≥ 1/12 ⇒ ΔG*_nuc ≤ 7.5 kT < 9); **(ii) the geometric DEFAULT (4-fold shape,
+coat-blocking only, f = 1/3) is UNDER-CORED** (ΔG*_nuc ~ 1–3 kT, N_form = 3^(n*−1) ~ 3–27); **(iii) the dwarf window
+is reached ONLY in the corner f ~ 1/9–1/12 AND n* ~ 4** (ΔG*_nuc ~ 6.6–7.5 kT, N_form ~ 730–1720). **Honest lean:
+UNDER-CORED** unless the E_qq spine-face color pattern breaks the 4-fold symmetry (→ registration, f ~ 1/10) AND
+n* ~ 4. **Decider:** the cube-face E_qq color-pattern symmetry — an SS-1b color-cage sub-question (4-fold-symmetric ⇒
+under-cored kill; registration-forcing ⇒ window). **Over-coring off the table; dwarf branch is now under-cored-kill or
+in-window-prediction, one color-structure calc from settled.** Cluster σ/m ∝ 1/v² branch stands regardless. Verify:
+`flagship_papers/strong/code/2215_f_from_cube_element.py`; reasoning `flagship_papers/strong/reasoning/2215.md`.
+**Prior framing (superseded by the result above):** The **element-structure**
 derivation (SS-2-adjacent) that closes OPEN-SS-41a: OPEN-SS-41a pinned **n\* ~ 2–4** but **f did not pin** (2212),
 because f needs the DM element cross-section *shape*, which the corpus has only qualitatively. **This is the single
 derivation between the reachable/bracketed dwarf branch and a settled one — a pinned prediction or a clean kill.**
