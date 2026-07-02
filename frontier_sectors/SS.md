@@ -836,4 +836,28 @@ above is *one* option in the plausible range, not a confirmed pin — the range 
 **Falsification route:** pin (f, n*) → ΔG*_nuc; outside [~4, ~9] kT the dwarf normalization fails by orders.
 **Paper(s):** numbers home = SF-2/SF-5 geometry lane; consumer = DM-1 (§5 re-scope draft). Handover:
 `handovers/2026-06-30_geometry_fnstar_pin_dGnuc_OPEN-SS-41a_patch2211.md`.
-**Last updated:** 30 June 2026 (registered; the pinning input, gating panel round 2).
+**Successor:** the f-derivation is now **OPEN-SS-42** (element cross-section); n* ~ 2–4 pinned here (2212).
+**Last updated:** 30 June 2026 (n* pinned; f handed to OPEN-SS-42 — the element cross-section).
+
+### OPEN-SS-42: the DM element cross-section — the exposed-core spine-face fraction f (pins ΔG*_nuc; closes OPEN-SS-41a)
+**Status:** **OPEN — registered 30 June 2026** (DM 18xx lane, founder-authorized). The **element-structure**
+derivation (SS-2-adjacent) that closes OPEN-SS-41a: OPEN-SS-41a pinned **n\* ~ 2–4** but **f did not pin** (2212),
+because f needs the DM element cross-section *shape*, which the corpus has only qualitatively. **This is the single
+derivation between the reachable/bracketed dwarf branch and a settled one — a pinned prediction or a clean kill.**
+Founder sequence: pin f → present the panel the full package (cluster prediction + settled dwarf branch).
+**One-line statement:** Derive **f = (exposed-core spine-face solid angle)/4π** from the **8qCP+8eCP element**
+cross-section on the tetrahedral-cage / 600-cell substrate — the 8qCP core polyhedron, the eCP-coat corner
+coverage, and which face presents the axial E_qq spine for a correct ordered bond.
+**What a solution looks like:** f as a number from the element geometry (the same element the corpus uses;
+ℓ_el ~ 2 fm, r₀ ~ 0.26 fm, corner-buffered — now made quantitative), yielding a single **ΔG*_nuc =
+(n*−1)·|ln f|·kT_form** (n* from OPEN-SS-41a), hence ε_nuc, N_form, and the dwarf σ/m(v).
+**Target / win:** f in the range that gives **ΔG*_nuc ∈ [6.0, 6.9] kT_form** (with n* ~ 2–4 this is f ~ 0.04–0.11)
+⇒ dwarf normalization a zero-parameter prediction.
+**Kill:** f giving ΔG*_nuc ≲ 4 kT (under-cored) or ≳ 9 kT (over-cored). The plausible exposed-core range
+f ~ 0.05–0.20 reaches *both*, so this calc genuinely decides window-vs-kill. Cluster σ/m ∝ 1/v² stands regardless.
+**Dependencies:** OPEN-SS-41a (n*, the ΔG*_nuc form) + the element structure (1842; SS-2 lattice-scale nucleon
+kit). **Lane:** strong/geometry (SS-2 / element-structure), 2200-series patch 2214+.
+**Falsification route:** compute f → ΔG*_nuc; decides pinned-prediction vs clean-kill for the dwarf branch.
+**Paper(s):** numbers home = SS-2 / SF-2/SF-5 geometry lane; consumer = DM-1 (§5 re-scope draft). Handover:
+`handovers/2026-06-30_geometry_element_xsection_f_OPEN-SS-42_patch2214.md`.
+**Last updated:** 30 June 2026 (registered; the pinning derivation, gating the full-package panel submission).
