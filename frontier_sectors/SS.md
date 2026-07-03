@@ -766,8 +766,14 @@ back out an absolute κ_scissor — a partial G1b route, but ℓ_p is DM-derived
 
 
 ### OPEN-SS-41: ΔG*_nuc — the Cross-Rod ribbon→cross nucleation barrier (the DM dwarf-branch make-or-break)
-**Status:** **OPEN — registered 30 June 2026** (DM 18xx lane via the substrate-cosmology 2208 handover;
-founder-authorized). The sole remaining make-or-break of the Cross-Rod DM candidate's **dwarf** branch, after
+**Status:** **SUPERSEDED — 2 July 2026 (DM 1855/1856).** The dwarf make-or-break is **not** a formation barrier.
+Two findings retire it: (i) the observable σ/m = 0.11·N wants the *scattering* length short, and rigid-rod
+**momentum-transfer** scattering (1856, ε ≈ 0.30 flat, sphere-validated) shows a long rod over-cores ~11× — so
+the scattering population is short (**N ~ 30–60** transport-corrected), and the 400–1000 target is retired; (ii)
+at short N formation is trivial (1855: peaked monomer-addition, E_bond/kT ≈ 4, no barrier). N_form was never the
+pin. Kept for provenance; the barrier's own honest-central case (OPEN-SS-42) already leaned N_form ~ 3–27.
+**Original registration (retired):** **OPEN — 30 June 2026** (DM 18xx lane via the substrate-cosmology 2208
+handover; founder-authorized). The (then-)sole make-or-break of the Cross-Rod dwarf branch, after
 OPEN-COSMO-DM-4 (route B) reduced the formation size to a single barrier.
 **One-line statement:** Derive **ΔG*_nuc**, the free-energy barrier to form the smallest stable relic-forming
 Cross-Rod seed along the ribbon→cross pathway (relative to free monomers), at the formation epoch.
@@ -806,7 +812,9 @@ substrate-cosmology 2207; geometry handover `handovers/2026-06-30_geometry_dGnuc
 **Last updated:** 30 June 2026 (registered; awaiting the geometry-lane derivation of ΔG*_nuc).
 
 ### OPEN-SS-41a: f and n* — the element-cross-section inputs that pin ΔG*_nuc (sub-item of OPEN-SS-41; the dwarf-branch last-mile)
-**Status:** **OPEN — registered 30 June 2026** (DM 18xx lane, founder-authorized; **sub-item of OPEN-SS-41**). The
+**Status:** **SUPERSEDED — 2 July 2026 (DM 1855/1856)** with parent OPEN-SS-41: ΔG*_nuc no longer gates the dwarf
+branch (scattering population is short, N ~ 30–60; formation trivial). f/n* no longer on the critical path.
+**Original (retired):** **OPEN — registered 30 June 2026** (DM 18xx lane, founder-authorized; **sub-item of OPEN-SS-41**). The
 single input between the reachable/bracketed dwarf branch (OPEN-SS-41 first pass, 2209/2210) and a *pinned* dwarf
 σ/m(v) prediction — and the gate the founder set before panel round 2 (submit pinned, not bracketed).
 **One-line statement:** Derive **f** (the eCP-coat spine-face solid-angle fraction — the orientation selectivity
@@ -840,7 +848,10 @@ above is *one* option in the plausible range, not a confirmed pin — the range 
 **Last updated:** 30 June 2026 (n* pinned; f handed to OPEN-SS-42 — the element cross-section).
 
 ### OPEN-SS-42: the DM element cross-section — the exposed-core spine-face fraction f (pins ΔG*_nuc; closes OPEN-SS-41a)
-**Status:** **RESULT IN — 30 June 2026 (strong/geometry lane, 2215, Layer C).** The element is a **cube** (0886:
+**Status:** **SUPERSEDED (for the dwarf-normalization purpose) — 2 July 2026 (DM 1855/1856):** f/n* pinned ΔG*_nuc,
+which no longer gates the dwarf branch (short scattering N, transport-corrected 30–60). The cube geometry result
+below stands as geometry; it is simply no longer the dwarf pin. Note its own central case already leaned short
+(N_form ~ 3–27). **Geometry result (retained):** **RESULT IN — 30 June 2026 (strong/geometry lane, 2215, Layer C).** The element is a **cube** (0886:
 cross-section = cube face = the 4 hTetra arms / 8 qCP; one axial rung = one cube; eCP coat screens the transverse
 faces). f follows from the cube's orientational combinatorics (|O| = 24), not a free cone: the E_qq spine distinguishes
 1 of 3 axes ⇒ **f ∈ [1/12, 1/3]** (f_steric = 8/24 = 1/3 for the 4-fold cross shape; f_reg = 2/24 = 1/12 if the E_qq
@@ -874,3 +885,22 @@ kit). **Lane:** strong/geometry (SS-2 / element-structure), 2200-series patch 22
 **Paper(s):** numbers home = SS-2 / SF-2/SF-5 geometry lane; consumer = DM-1 (§5 re-scope draft). Handover:
 `handovers/2026-06-30_geometry_element_xsection_f_OPEN-SS-42_patch2214.md`.
 **Last updated:** 30 June 2026 (registered; the pinning derivation, gating the full-package panel submission).
+
+### OPEN-SS-43: the short-N cluster-suppression tension — the real dwarf-branch make-or-break (replaces OPEN-SS-41)
+**Status:** **OPEN — registered 2 July 2026 (DM 1855/1856, founder-authorized).** With the formation barrier
+retired (OPEN-SS-41/41a/42 superseded) and the scattering population pinned SHORT — transport-corrected
+**N ~ 30–60** (1856: ε ≈ 0.30 flat momentum-transfer efficiency, sphere-validated; a long rod over-cores ~11×,
+so 500 is retired on transport grounds) — the remaining dwarf-branch make-or-break is the **cluster tension**.
+**One-line statement:** at short N, does strip-then-fuse suppress *typical* clusters? 1823's own honest tension:
+v_thr ~ 2500 km/s leaves typical clusters (~2000 km/s) **below** threshold and unsuppressed at the full
+σ/m₀ = 0.11·N, colliding with the cluster bound (≲1) unless N ~ 10 AND/OR v_thr sits low (~1700–2000) AND/OR
+multiple-fusion compounding deepens the fall.
+**What a solution looks like:** the v_thr / multiple-fusion cluster-suppression calc (penetration-gate physics,
+1822), scanning v_thr and fusion depth against dwarf (σ/m ~ 1–2) and cluster (≲1) simultaneously.
+**Residuals carried (1856):** (a) absolute normalization (r fm, per-element mass) unpinned — ε and N-scaling robust,
+exact cm²/g not; (b) cross-section functional-form reconciliation: MC rod–rod σ_T/m ~ N^0.7 vs corpus 0.11·N
+(linear, the L² perpendicular limit) — convention reconciliation is follow-on, does not change short-vs-long.
+**What stands:** cluster σ/m ∝ 1/v² parameter-free headline; over-coring exclusion; DM-1 v1.0.
+**Verify:** `series_phenomena/cosmology/dark_matter/code/1856_rod_transport_efficiency.py`,
+`.../code/1855_kinetic_aggregation_Nform_scan.py`. **Reasoning:** DM 1855, 1856.
+**Lane:** DM 18xx (cluster dynamics) + strong/geometry (penetration gate). **Last updated:** 2 July 2026.
