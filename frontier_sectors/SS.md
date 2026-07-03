@@ -886,17 +886,23 @@ kit). **Lane:** strong/geometry (SS-2 / element-structure), 2200-series patch 22
 `handovers/2026-06-30_geometry_element_xsection_f_OPEN-SS-42_patch2214.md`.
 **Last updated:** 30 June 2026 (registered; the pinning derivation, gating the full-package panel submission).
 
-### OPEN-SS-43: the dwarf-branch capture-focusing prediction — two ZBW/SSV_abs pins (reframed from the v_thr tension)
-**Status:** **OPEN — reframed 2 July 2026 (DM 1857).** The v_thr / threshold framing is **retired** (Thomas's
-1/r²-locked-lattice: E_qq magnitude-only all the way in, no confinement range ⇒ no δ\* crossover, no threshold).
-The strip-then-fuse *threshold tension* (below) is dissolved: with a smooth **capture-focusing** curve
-σ/m(v) = σ_floor + σ_cap/(1+(v/v_sat)²), clusters see the **low elastic floor** (1856 σ_T, short N), not a high
-plateau, and dwarfs are cored by the 1/r² capture (origin of the parameter-free 1/v²). **Squeeze dissolved;
-short N consistent both ends.** Cost: prediction shape moves threshold→smooth (retires "threshold not a power
-law"; DM-1 revision queued for panel). **Viable window is FAT** (1857: 62% of grid; σ_floor ∈ [0.05,0.68],
-v_sat ∈ [100,600] km/s ⇒ non-tuned). **One-line statement:** derive the two ZBW/SSV_abs pins and confirm they
-land in the window — **σ_floor** ← r (radial-ZBW coat amplitude anchored by SSV_abs, ℓ_rung-class); **v_sat** ←
-the E_qq capture-saturation range. Verify `code/1857_capture_focusing_window.py`; reasoning DM 1857.
+### OPEN-SS-43: the DM-core E_qq sea-screening length R_s — the de-novo make-or-break for dwarf cores (mechanism identified 1858)
+**Status:** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
+**mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
+(the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's
+short-range under-cored ~20×, 1856/1857); a net ~1/r² residual escapes, sea-screened at a finite length R_s
+(SSV-summation-to-zero, the same mechanism as confinement). **Robust/parameter-free result:** velocity-dependent
+**cluster- and Bullet-safe** self-interaction (safe for any R_s). **Conditional result:** strong dwarf cores,
+gated on **R_s ~ 15–30 fm** and residual **E_c ~ 0.3 MeV** (1858 verify: reaches dwarf σ/m ~ 1–2, clusters
+~0.003). **One-line make-or-break:** derive R_s(N) — how far the DP Sea penetrates a dense N-element qCP core
+before the interior E_qq leaks out as a net residual. Genuinely new Strong-Sector physics (sea penetration of an
+extended qCP aggregate); corpus has not touched it (founder confirmed de novo). Target R_s ~ 15–30 fm closes it;
+R_s ~ 1 fm (pion-like) → under-cored → weak-SIDM fallback. **Honest label: magnitude CONDITIONAL, not predicted**
+(the residual/screening have been reverse-engineered to the data; DM-1 must say so).
+Verify `code/1858_eqq_screened_residual_capture.py`; reasoning DM 1858; founder voice `founders_vision.md`
+(2026-07-03). **Lane:** Strong Sector Series (sea-screening) + DM 18xx.
+**Superseded framing (retained):** the v_thr / threshold / capture-focusing "fat window" (1857) — the window was
+real as geometry but empty until E_qq supplied the magnitude E_ee could not.
 **Superseded framing (retained for provenance): the strip-then-fuse cluster tension.** With v_thr ~ 2500 km/s
 (1823) typical clusters sat below threshold, unsuppressed — the two-sided N-squeeze (transport wants short,
 v_thr ∝ 1/√N wants long). 1824's relief (v_thr ~ 1770) rested on the confined-color δ\* pinning, retired by the

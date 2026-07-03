@@ -1175,3 +1175,28 @@ The junction is **not** a full glueball (that would require a core fracture the 
 The ponderomotive stiffness goes as the **SSV gradient squared**, which falls steeply with separation, so "the bonds are farther apart" is not a small correction but a strong suppression — the scissor mode is **considerably softer** than the longitudinal E_qq compression. This settled the *direction* of the dynamic stiffness toward the viable (soft-hinge) branch.
 
 **The unification: the floor is a scale-free ratio set by the one edge-bond potential.** Carrying that read into the calculation, the worker found that the X-junction dihedral stiffness **is the corpus's own qq-edge-bond SSV angular stiffness** — the same potential that sets the ribbon persistence length ℓ_p and the per-rung E_ee (the "G1 make-or-break" of the 25 June edge-bond handover). Because the scissor stiffness κ_θ and the arm's bending rigidity B are that **same bond in two geometries**, the floor's flexibility test collapses to a **scale-free ratio**, g ≡ κ_scissor/κ_bend < 6/N — in which the absolute stiffness, the formation temperature, the ZBW frequency and amplitude, and even the static-vs-dynamic (Earnshaw) sign question **all cancel**, because whatever stabilizes the in-line bend stabilizes the perpendicular scissor the same way. Only the geometry survives, and Thomas's gradient read fixes the geometry: the perpendicular crossing puts the off-hinge charges farther apart than the in-line bend, so g ~ 0.1, below the 0.43 threshold → the hinge is flexible → the cluster floor is **viable**. So the founder's structural read does double duty — it sets the soft direction, and it is the input to the one geometric ratio the floor reduces to. The DM cluster floor, ℓ_p, and E_ee are now **one substrate calculation** (the edge-bond SSV potential in scissor-vs-bend geometry), which the SF-2/SF-5 lane owns and which now closes three questions at once.
+
+---
+
+## 2026-07-03 — Unipolar E_qq non-cancellation and DP-Sea screening (DM dwarf-coring mechanism)
+
+**Context:** dwarf self-interaction magnitude gap (E_ee coat is bipolar, short-range, under-cores ~20×). Founder
+identified the resolving force and its screening. Promoted from DM 1858 under explicit authorization (TLA, 3 July
+2026). Verbatim:
+
+> The strong/E_qq force of a qCP has no polar/dipole-cancellation with distance superimposition effects. The E_qq
+> is only attractive, thus the addition of more qCPs will be purely additive in its force v. distance profile. The
+> only decay that the qCP/E_qq suffers is inverse square... there is no mechanism by which the E_qq could
+> diminish/cancel/subtract its influence.
+
+> the SSV summation to zero using the Lagrange point as the analogous summation to zero for gravity, only in the
+> case of the DP Sea, the antipodal body to the bare/concentration of qCPs is the distributed DP sea E_qq
+> contributions that result in the zeroing of the strong force with distance... The [apparent] rapid tailoff of
+> the E_qq effective force following the Yukawa Potential curve... is an artifact... which disguises the 1/r^2
+> effect.
+
+**What this grounds:** E_qq is unipolar → a qCP aggregate (nucleus, baryon, or DM rod core) cannot cancel its
+field at distance the way a bipolar coat does → a net ~1/r² residual escapes, screened at a finite length by the
+DP Sea (same mechanism as confinement / pion short-range). For the DM rod this is the dwarf-coring capture force,
+1/r² out to a rod-scale sea-screening length R_s. **The magnitude remains conditional** on the de-novo derivation
+of R_s(N) and the residual E_c (Strong Sector Series); cluster/Bullet safety is robust for any R_s.
