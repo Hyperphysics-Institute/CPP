@@ -10,6 +10,14 @@ DM-1 is pre-review.
 
 ## v1.1 — Mechanism Correction: Fragmentation → Capture — Patch 1860 (3 July 2026)
 
+- **PANEL RE-RATIFIED 4/4 (same day, Patch 1862):** Grok, Gemini, Copilot RATIFY;
+  ChatGPT RATIFY-WITH-CHANGES; no REFUTE; 4/4 SCRIPT-EXECUTED. Changes folded:
+  "parameter-free" → "robust within the stated capture model"; explicit process
+  note added (the v1.0 panel missed the stale provenance; caught by audit, not
+  review). CONV-003 registered. Copilot's ∝1/v⁴ gloss vs corpus ∝1/v² pinned to
+  OPEN-SS-43. Records: `documentation_suite/reviews-DM-1.md` Round 2 (curated);
+  `review/reviews_v1.1_panel_returns.md` (verbatim).
+
 - **What changed:** the v1.0 velocity-dependence mechanism (Cross-Rod fragments at
   cluster velocities ⇒ collisionless) is **retracted**; the mechanism is **capture**
   (screened unipolar E_qq residual, reasoning/code 1857/1858).

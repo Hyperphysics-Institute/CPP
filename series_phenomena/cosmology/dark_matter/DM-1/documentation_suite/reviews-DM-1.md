@@ -23,6 +23,36 @@
 - **Critiques declined:** none rose to RESTATE; nothing declined.
 - **Full record:** `documentation_suite/reviews-DM-1.md` (this file) + `OPEN-COSMO-DM-3_derivation.md` review history.
 
+### Round 2 — v1.1 mechanism-correction re-ratification (3 July 2026, Patches 1859–1862)
+- **Trigger:** in-house audit (1859) proved §5's fragmentation figures (~1.95 MeV / ~0.78 keV) were unrescaled
+  0860 hoop-ledger imports; §5 rewritten to the capture mechanism (1860); delta-scoped package dispatched (1861).
+- **Return: 4/4 ratification — Grok, Gemini, Copilot RATIFY v1.1; ChatGPT RATIFY WITH CHANGES.** No REFUTE
+  anywhere. All four SCRIPT-EXECUTED with matching outputs. Per-item matrix: items 1, 2, 4, 5 = 4× CONFIRM;
+  item 3 (capture sufficiency) = 3× CONFIRM + 1× RESTATE (ChatGPT).
+- **Changes requested (ChatGPT) and FOLDED (Patch 1862):** (1) "parameter-free" moderated to "robust within the
+  stated capture model" — the steep-falloff safety is generic to the screened-residual mechanism, the quantitative
+  suppression inherits the screening-profile assumptions; wording updated in the §5 v1.1 notice, top notice, and
+  OPEN-SS-43. (2) An explicit process note added to the §5 v1.1 notice: the v1.0 panel ratified with the stale
+  figures undetected (internally plausible, untraced to their originating parameter set); the correction came from
+  in-house audit, not review.
+- **Changes declined:** none.
+- **Process criticism (invited, delivered by all four):** Gemini owned the panel miss directly ("narrative
+  coherence can mask basic arithmetic drift during morphology pivots") and called for mandatory script-based
+  verification; Grok and Copilot noted the error was detectable with modest diligence (the 300× mass discrepancy
+  sat in one paragraph); ChatGPT framed it as a parameter-provenance requirement. **Consolidated into CONV-003**
+  (todolist.md Standing conventions): load-bearing numbers carry parameter-set provenance; at any
+  morphology/mechanism pivot every carried-over number is re-derived at the new object's parameters; review
+  packages embed runnable verification. Author-side failure mode recorded in `templates/AI_team_expectations.md`
+  (Opus: stale-number carry-over across a morphology pivot).
+- **Discrepancy flagged for OPEN-SS-43 (not verdict-affecting, registered):** Copilot glossed the capture falloff
+  as σ_capture ∝ R_s²/v⁴ (Rutherford-transfer scaling); the corpus headline (1857/1858, frontier) is ∝ 1/v²
+  (capture-focusing). Both reach the same cluster-safety conclusion, but the exact velocity power is part of the
+  smooth-turnover prediction shape and therefore part of the OPEN-SS-43 deliverable; pinned there.
+- **Strengths singled out:** the correction *reduces* claims rather than expanding them (ChatGPT: "scope
+  reduction generally increases the credibility"); Gemini: "brutally honest about its own previous shortcomings";
+  Grok: "does not attempt to paper over the issue."
+- **Full verbatim returns:** `review/reviews_v1.1_panel_returns.md`.
+
 ## Part 2 — FAQ
 - **Methodology — Why is σ/m "0.11·N" and not a single number?** The floor (0.11) is verified at the
   cube-element level; the size N (hence the value) is set by the freeze-out aggregate size, which awaits the

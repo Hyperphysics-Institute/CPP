@@ -49,6 +49,12 @@ Procedure (committer, per high-risk file touched):
 
 High-risk shared files = the integration-owned list in `parallel_dev/scripts/collision_audit.sh` (`SHARED_REGEX`): `theorem-registry.md`, `predictions.md`, `axiom-registry.md`, `master_glossary.md`, `research_frontier.md`, `frontier_sectors/*`, `todolist.md`, `future_projects.md`, `paper_catalog.md`, `research_timeline.md`, `organizational_frontier.md`, `theory-overview.md`, `programme_orientation.md`, `README.md`, `INDEX.md`, `parallel_dev/lease_board.md`. The single source of truth for this list is that `SHARED_REGEX` — update it there, not here. Files inside a paper's own folder are low-risk and exempt. Registered 8 Jun 2026 Session 154.
 
+### CONV-003 — Parameter-set provenance for load-bearing numbers (panel-requested, DM-1 v1.1)
+
+Every **load-bearing numerical claim** in a paper, revision notice, registry entry, or review package states the **parameter set (and source patch/ledger) it was computed from**. At any **morphology / mechanism / model pivot**, every number carried across the pivot is **re-derived or explicitly rescaled at the new object's parameters** before being quoted — "same formula, stale parameters" is the failure this convention exists to prevent. Review packages for results with load-bearing numbers **embed runnable (stdlib) verification code**, and reviewers run it before verdict (SCRIPT-EXECUTED).
+
+Origin: DM-1 v1.0 quoted the 0860 hoop ledger's collision energies (~1.95 MeV / ~0.78 keV; N=1183, m=264 MeV) in the Cross-Rod paragraph (N=5–60, m_el=1408 MeV); the paper's central velocity-dependence discriminant rested on a retired morphology's numbers, shipped v1.0, and passed the panel 4/4 — the values were internally plausible but untraced. Caught by in-house audit (Patch 1859) six days post-ship; convention requested independently by all four reviewers at the v1.1 re-ratification (Patch 1862). Author-side failure mode recorded in `templates/AI_team_expectations.md` (Opus). Registered 3 July 2026, Patch 1862.
+
 ---
 
 ## P1 — Must clear before next paper (SS-10)

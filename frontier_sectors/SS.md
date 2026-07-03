@@ -923,6 +923,15 @@ bare 0.11·N = perpendicular-limit upper bound only; cluster floor ⇒ **N ≲ 2
 the cluster side. Verify `code/1859_collision_energy_reconciliation.py`, `code/1860_floor_ceiling_convention.py`;
 reasoning DM 1859/1860. **CONV-001 panel unblocked** (§5 ↔ registry now in sync); the de-novo R_s(N) derivation
 remains this entry's make-or-break, unchanged.
+**Update (patch 1862, 3 July 2026): DM-1 v1.1 PANEL RE-RATIFIED 4/4** (Grok/Gemini/Copilot RATIFY, ChatGPT
+RATIFY-WITH-CHANGES, no REFUTE, 4/4 SCRIPT-EXECUTED). ChatGPT's moderation folded programme-wide: cluster/Bullet
+safety is **robust within the stated screened-residual capture model** (steep-falloff safety generic; the
+quantitative ~0.003/~0.001 suppression inherits the screening-profile assumptions) — supersedes this entry's
+earlier "parameter-free / safe for any R_s" phrasing. **Pinned to this entry's deliverable:** the exact velocity
+power of the capture term — corpus 1857/1858 carries ∝1/v² (capture-focusing); Copilot's re-ratification gloss
+used ∝1/v⁴ (Rutherford transfer). Both reach cluster safety, but the power sets the smooth-turnover shape (the
+live falsifier), so R_s(N) work must derive it, not assume it. CONV-003 registered (parameter-set provenance).
+Records: `DM-1/documentation_suite/reviews-DM-1.md` Round 2; `DM-1/review/reviews_v1.1_panel_returns.md`.
 **Verify:** `series_phenomena/cosmology/dark_matter/code/1856_rod_transport_efficiency.py`,
 `.../code/1855_kinetic_aggregation_Nform_scan.py`. **Reasoning:** DM 1855, 1856.
 **Lane:** DM 18xx (cluster dynamics) + strong/geometry (penetration gate). **Last updated:** 2 July 2026.
