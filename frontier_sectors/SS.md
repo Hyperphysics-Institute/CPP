@@ -886,17 +886,22 @@ kit). **Lane:** strong/geometry (SS-2 / element-structure), 2200-series patch 22
 `handovers/2026-06-30_geometry_element_xsection_f_OPEN-SS-42_patch2214.md`.
 **Last updated:** 30 June 2026 (registered; the pinning derivation, gating the full-package panel submission).
 
-### OPEN-SS-43: the short-N cluster-suppression tension — the real dwarf-branch make-or-break (replaces OPEN-SS-41)
-**Status:** **OPEN — registered 2 July 2026 (DM 1855/1856, founder-authorized).** With the formation barrier
-retired (OPEN-SS-41/41a/42 superseded) and the scattering population pinned SHORT — transport-corrected
-**N ~ 30–60** (1856: ε ≈ 0.30 flat momentum-transfer efficiency, sphere-validated; a long rod over-cores ~11×,
-so 500 is retired on transport grounds) — the remaining dwarf-branch make-or-break is the **cluster tension**.
-**One-line statement:** at short N, does strip-then-fuse suppress *typical* clusters? 1823's own honest tension:
-v_thr ~ 2500 km/s leaves typical clusters (~2000 km/s) **below** threshold and unsuppressed at the full
-σ/m₀ = 0.11·N, colliding with the cluster bound (≲1) unless N ~ 10 AND/OR v_thr sits low (~1700–2000) AND/OR
-multiple-fusion compounding deepens the fall.
-**What a solution looks like:** the v_thr / multiple-fusion cluster-suppression calc (penetration-gate physics,
-1822), scanning v_thr and fusion depth against dwarf (σ/m ~ 1–2) and cluster (≲1) simultaneously.
+### OPEN-SS-43: the dwarf-branch capture-focusing prediction — two ZBW/SSV_abs pins (reframed from the v_thr tension)
+**Status:** **OPEN — reframed 2 July 2026 (DM 1857).** The v_thr / threshold framing is **retired** (Thomas's
+1/r²-locked-lattice: E_qq magnitude-only all the way in, no confinement range ⇒ no δ\* crossover, no threshold).
+The strip-then-fuse *threshold tension* (below) is dissolved: with a smooth **capture-focusing** curve
+σ/m(v) = σ_floor + σ_cap/(1+(v/v_sat)²), clusters see the **low elastic floor** (1856 σ_T, short N), not a high
+plateau, and dwarfs are cored by the 1/r² capture (origin of the parameter-free 1/v²). **Squeeze dissolved;
+short N consistent both ends.** Cost: prediction shape moves threshold→smooth (retires "threshold not a power
+law"; DM-1 revision queued for panel). **Viable window is FAT** (1857: 62% of grid; σ_floor ∈ [0.05,0.68],
+v_sat ∈ [100,600] km/s ⇒ non-tuned). **One-line statement:** derive the two ZBW/SSV_abs pins and confirm they
+land in the window — **σ_floor** ← r (radial-ZBW coat amplitude anchored by SSV_abs, ℓ_rung-class); **v_sat** ←
+the E_qq capture-saturation range. Verify `code/1857_capture_focusing_window.py`; reasoning DM 1857.
+**Superseded framing (retained for provenance): the strip-then-fuse cluster tension.** With v_thr ~ 2500 km/s
+(1823) typical clusters sat below threshold, unsuppressed — the two-sided N-squeeze (transport wants short,
+v_thr ∝ 1/√N wants long). 1824's relief (v_thr ~ 1770) rested on the confined-color δ\* pinning, retired by the
+color catch. The capture-focusing reframe removes the threshold entirely, so this tension no longer applies.
+**What a solution looks like:** the ZBW/SSV_abs derivations of r (→ σ_floor) and the E_qq capture range (→ v_sat).
 **Residuals carried (1856):** (a) absolute normalization (r fm, per-element mass) unpinned — ε and N-scaling robust,
 exact cm²/g not; (b) cross-section functional-form reconciliation: MC rod–rod σ_T/m ~ N^0.7 vs corpus 0.11·N
 (linear, the L² perpendicular limit) — convention reconciliation is follow-on, does not change short-vs-long.
