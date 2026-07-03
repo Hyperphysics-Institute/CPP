@@ -8,6 +8,32 @@ through the panel review cycle (v0.2, v0.3, … as reviewer feedback is folded i
 promoting to **v1.0** only once the multi-AI panel is satisfied at final ship.
 DM-1 is pre-review.
 
+## v1.1 — Mechanism Correction: Fragmentation → Capture — Patch 1860 (3 July 2026)
+
+- **What changed:** the v1.0 velocity-dependence mechanism (Cross-Rod fragments at
+  cluster velocities ⇒ collisionless) is **retracted**; the mechanism is **capture**
+  (screened unipolar E_qq residual, reasoning/code 1857/1858).
+- **Why:** the 1859 collision-energy reconciliation **proved** §5's fragmentation
+  figures (~1.95 MeV cluster / ~0.78 keV dwarf) were unrescaled imports from the
+  0860 **hoop** ledger (N=1183, m_rung=264 MeV, 312 GeV rod). At the Cross-Rod's
+  own pins (N=5–60, m_el=1408 MeV, 7–85 GeV rod) typical-cluster collisions
+  deposit 0.044–0.53 MeV < E_ee = 0.9 MeV: **no fragmentation** (the Maxwellian
+  tail prunes only N ≳ 40). Verify: `code/1859_collision_energy_reconciliation.py`.
+- **What stands (robust, parameter-free):** velocity-dependent, cluster- and
+  Bullet-safe self-interaction — capture's steep Rutherford-like falloff gives
+  cluster σ/m ~ 0.003, Bullet ~ 0.001 for **any** screening length R_s.
+- **What is now conditional:** dwarf-core magnitude, gated on the de-novo
+  R_s(N) ~ 15–30 fm / E_c ~ 0.3 MeV derivation (**OPEN-SS-43**).
+- **Convention settled (task 3):** observable = transport σ_T/m = ε·0.11·N,
+  ε ≈ 0.30 (1856 MC); bare 0.11·N demoted to perpendicular-limit upper bound.
+  Cluster floor ⇒ **N ≲ 20** (`code/1860_floor_ceiling_convention.py`), cutting
+  the v1.0 N = 5–60 band from the cluster side.
+- **Where:** layered olive mdframed notice at §5 (`sec:xsec`), restated live
+  falsifiers at §Falsifiability, top-of-paper notice, title bump. All v1.0 text
+  retained as the superseded record per house convention.
+- *(Record note: the v0.1-R2 → v0.2 → v1.0 entries were tracked in the .tex
+  header changelog block, Patches 0879–0889; see the .tex header for that arc.)*
+
 ## v0.1-R (DRAFT, under revision) — Extended-Aggregate Pivot — Patch 0864 (25 June 2026)
 - **Retraction.** The point-scattering self-interaction σ/m ≈ 0.20 cm²/g (abstract,
   §5, §6, Table 1, Figs. 2–4) is withdrawn. Patch 0859 identified it as an artifact

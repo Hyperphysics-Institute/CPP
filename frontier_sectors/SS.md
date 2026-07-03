@@ -912,6 +912,17 @@ color catch. The capture-focusing reframe removes the threshold entirely, so thi
 exact cm²/g not; (b) cross-section functional-form reconciliation: MC rod–rod σ_T/m ~ N^0.7 vs corpus 0.11·N
 (linear, the L² perpendicular limit) — convention reconciliation is follow-on, does not change short-vs-long.
 **What stands:** cluster σ/m ∝ 1/v² parameter-free headline; over-coring exclusion; DM-1 v1.0.
+**Update (patches 1859–1860, 3 July 2026): paper ↔ registry reconciled; DM-1 → v1.1.** The 1859
+collision-energy audit **proved** DM-1 §5's fragmentation figures (~1.95 MeV / ~0.78 keV) were unrescaled 0860
+**hoop**-ledger imports (N=1183, m_rung=264 MeV); at Cross-Rod pins (N=5–60, m_el=1408 MeV) typical clusters
+deposit 0.044–0.53 MeV < E_ee = 0.9 MeV ⇒ **fragmentation retired as the cluster-safety mechanism** (Maxwellian
+tail prunes only N ≳ 40; every relaxation of the total-KE criterion strengthens the verdict). **Capture (this
+entry's mechanism) is confirmed as the paper's mechanism**; DM-1 §5 rewritten to it (v1.1, layered notice), live
+falsifiers restated. **Residual (b) above resolved:** convention = transport σ_T/m = ε·0.11·N, ε ≈ 0.30 (1856 MC);
+bare 0.11·N = perpendicular-limit upper bound only; cluster floor ⇒ **N ≲ 20**, cutting the old N=5–60 band from
+the cluster side. Verify `code/1859_collision_energy_reconciliation.py`, `code/1860_floor_ceiling_convention.py`;
+reasoning DM 1859/1860. **CONV-001 panel unblocked** (§5 ↔ registry now in sync); the de-novo R_s(N) derivation
+remains this entry's make-or-break, unchanged.
 **Verify:** `series_phenomena/cosmology/dark_matter/code/1856_rod_transport_efficiency.py`,
 `.../code/1855_kinetic_aggregation_Nform_scan.py`. **Reasoning:** DM 1855, 1856.
 **Lane:** DM 18xx (cluster dynamics) + strong/geometry (penetration gate). **Last updated:** 2 July 2026.
