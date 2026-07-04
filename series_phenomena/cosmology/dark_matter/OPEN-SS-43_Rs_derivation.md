@@ -128,11 +128,53 @@ pin is the queued data action and moves both η and the χ verdict**). J4 pairwi
 CONFRONT-1 (collective alternative noted, voids CONFRONT-1). J5 sensitivity anchors order-of-magnitude
 (a_np ± 0.003 fm; mass fits ~1 MeV). J6 calibration band N ∈ {5…20} from the floor ceiling + formation kinetics.
 
-## 9. Queued next steps (data first, per mandate)
+## 9. Queued next steps (data first, per mandate) — SUPERSEDED by §10's reordered queue (Patch 1865)
 
 1. **Pin the empirical dwarf coring σ/m** from published SIDM analyses (moves J3, decides the χ question).
+   **DONE — Patch 1865 (§10 below).**
 2. Refine ΔB with a proper nuclear density integral; check whether mass-formula absorption hides it.
 3. Formation-lane N (1855–1856 E_ee reversibility) — now load-bearing for where in the band nature sits.
 4. CONFRONT-2: CC correlation-length ξ channel consistency with the calibrated Sea response.
 5. Recompute p(v)/falsifier shape at the calibrated (N, R_s, E_c); paper integration under CONV-003 tags; panel.
+
+## 10. The empirical dwarf pin — and χ revives (Patch 1865, 4 July 2026)
+
+Queued action 1 executed (verify: `code/1865_empirical_dwarf_pin_recalibration.py`; verbatim record
+`reasoning/1865.md`; source provenance in the verify-script header per CONV-003).
+
+**The pin (J3 → J3′).** The published dwarf-scale landscape is a broad band, not [1, 2]: rotation-curve fits
+prefer ~2–3 cm²/g at v ~ 50–100 km/s (Kaplinghat–Tulin–Yu 2016; Ren et al. 2019); core-formation viability at
+V_max ≈ 40 km/s spans 0.5–50 cm²/g with the LARGEST cores at 5–10 (Elbert et al. 2015); MW dSphs at
+v ~ 10–40 km/s want 20–100 (Correa 2021; Roberts et al. 2024). High-v bounds: groups 0.5 ± 0.2 (Sagunski
+2021); clusters < 0.13 tightest (Andrade 2022). **Adopted: σ/m(50 km/s) ∈ [1, 5] central, [0.5, 10] extended.
+The old corpus [1, 2] was the low edge of the empirical window.**
+
+**Verdicts at the pin (1864 pipeline unchanged, targets moved):**
+
+- **χ REVIVES.** η = χ = φ⁻³/6 (R_s = 25.4 fm) delivers σ_dwarf = 3.6–4.2 cm²/g at N = 20 (IN-central),
+  5.6–7.0 at N = 12–15 (in-extended), both E_c models. The 1864 contingency ("χ revives only if the dwarf
+  target is ~4–5") is cashed by data. Cluster at η = χ: 0.0016–0.0036.
+- **Surviving band tightens.** CONFRONT-1 at the widened calibration excludes N = 5 everywhere and N = 8 at
+  nearly every corner: survivors **N ≈ 12–20, R_s ≈ 8–32 fm, η ≈ 0.12–0.03** — and the χ point (N = 15–20)
+  sits inside it, ΔB ≈ 0.5–0.8 MeV.
+- **Cluster safety passes the tightest published bound post-calibration:** max σ/m(1500) over the whole pinned
+  band = 0.058 < 0.13.
+
+**Consilience read (founder's criterion):** floor ceiling (N ≲ 20) + tail pruning (N ≲ 40) + baryon residual
+(N ≳ 12–15) + empirical dwarf window under η = χ (N ≈ 15–20) converge on **N ≈ 15–20, η = χ** — a
+zero-parameter candidate (Capotauro heritage) where §6 had only a calibration. Candidate coherence, NOT a
+closure: it must survive the ΔB density-integral refinement (now load-bearing) and CONFRONT-2.
+
+**Honest flags:** J3′ band-drawing is still a judgment (heterogeneous analyses mapped to one number at
+50 km/s; sources pinned so the panel can re-draw it). χ IN-central holds exactly at N = 20; N = 15 gives 5.6,
+just past the central edge. All results remain conditional on the 1858 V(r) form (J1) and pairwise additivity
+(J4). The dSph-regime fits (20–100 at v ~ 10–40) are an unrun SHAPE test on σ(v) at η = χ.
+
+**Reordered queue (by load-bearing-ness):**
+
+1. **ΔB density-integral refinement** (J5) — now gates the χ-revival claim.
+2. σ(v) shape at η = χ, N = 15–20: p(v) recompute + confrontation with dSph-regime fits and the group point.
+3. CONFRONT-2: CC ξ-channel consistency with η = χ.
+4. Formation-lane N (E_ee reversibility) — does formation kinetics land N ≈ 15–20 naturally?
+5. Paper integration under CONV-003 tags; then the held CONV-001 panel.
 

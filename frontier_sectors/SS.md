@@ -887,7 +887,18 @@ kit). **Lane:** strong/geometry (SS-2 / element-structure), 2200-series patch 22
 **Last updated:** 30 June 2026 (registered; the pinning derivation, gating the full-package panel submission).
 
 ### OPEN-SS-43: the DM-core E_qq sea-screening length R_s — the de-novo make-or-break for dwarf cores (mechanism identified 1858)
-**Status:** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
+**STATUS UPDATE (Patches 1863–1865, 3–4 July 2026):** **OPEN — founder-inverted to calibrate-then-confront;
+empirical dwarf pin executed; χ REVIVES.** The D1–D3 mechanism-selection fork (1863) was superseded by founder
+direction (1864): calibrate the Sea's residual-channel response amplitude η ≡ r_color/R_s from the coring
+requirement, then confront every other pillar. Phase-1 calibration + CONFRONT-1 (baryon residual) landed
+η ≈ 0.06–0.14, N ≈ 10–20 (1864). Patch 1865 pinned the empirical dwarf σ/m from published SIDM literature
+(J3′: [1, 5] cm²/g central at 50 km/s — the old corpus [1, 2] was the low edge of the window) and reran the
+machinery: **η = χ = φ⁻³/6 is a live zero-parameter candidate at N ≈ 15–20** (σ_dwarf 3.6–4.2 IN-central at
+N = 20; cluster 0.002–0.004 « 0.13 tightest bound; CONFRONT-1 ΔB ≈ 0.5–0.8 MeV, safe). Four independent
+pressures converge on N ≈ 15–20, η = χ. Candidate coherence, NOT closure — gated on the ΔB density-integral
+refinement (now load-bearing) and CONFRONT-2 (CC ξ-channel). Campaign file `OPEN-SS-43_Rs_derivation.md`
+§§5–10; verify `code/1864_...py`, `code/1865_...py`; reasoning 1863/1864/1865.
+**Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's
 short-range under-cored ~20×, 1856/1857); a net ~1/r² residual escapes, sea-screened at a finite length R_s
