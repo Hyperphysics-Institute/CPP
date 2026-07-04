@@ -239,5 +239,35 @@ independent anchor — worth ×1.5–2, enough for < 0.35, not < 0.13); **D4-C**
 
 **Ledger:** J7 registered — the hard-capsule velocity-independent floor is now the load-bearing judgment of
 the campaign. Honest summary: **the floor is simultaneously the model's best unfit hit (group) and its
-sharpest violation (clusters).** The 1150–1500 km/s window decides.
+sharpest violation (clusters).** The 1150–1500 km/s window decides. **[D4 RESOLVED by §§13–14 below.]**
+
+## 13. J7 audited — the "wall" is the coat radius, and the convention already knew it (Patch 1868, 4 July 2026)
+
+D4 executed under founder-delegated judgment: audit the hard-capsule idealization before inventing mechanisms
+or demoting. The rod's elastic size is b_eff(v) solving V_coat(b) = KE, from the REGISTERED coat scales only
+(E_ee = 0.9 MeV, r_scr = 1.0 fm, r_c = 1 fm). **Self-consistency hit:** the 1860 convention's normalization
+implies r_impl = 9.46 fm; the coat gives b_eff(50 km/s, segment) = 9.21 fm — **3% agreement, zero tuning**.
+The 0.11·N "geometric" size IS the low-velocity coat radius. The 1856 MC froze it; the physical floor inherits
+b_eff(v). Variant grid k ∈ {1, 2} × μ ∈ {seg, rod}: cluster spans 0.028–0.245; stress test with the MC's own
+f(A) assembly gives k_eff ≈ 0.4 (still violating) — spread decidable only by treating the softness exactly →
+Patch 1869. All variants convert the 1867 group "hit" into an undershoot (it was borrowed from frozen b_eff).
+Verify `code/1868_coat_radius_floor.py`; reasoning 1868. J7 → J7′; J8 (element spacing unpinned) registered.
+
+## 14. The exact classical S(v) — D4 resolved, cluster ladder passes, χ stands, group becomes the falsifier (Patch 1869, 4 July 2026)
+
+Orbit-integral deflection angle for the repulsive coat channel (sanity: low-v σ_T = π·b_eff² × 1.06–1.09) →
+derived shape **S(v): 1.00 (50) → 0.44 (200) → 0.082 (1150) → 0.056 (1500) → 0.012 (3500)**; effective
+exponent ≈ 1.85, ruling out the k_eff ≈ 0.4 hard-interior reading. Full curve at χ, N = 15–20: dwarf pin PASS,
+LSB PASS, **cluster 0.034–0.037 — the ENTIRE ladder passes with ×3.5 margin on Andrade**, Bullet PASS, dSph-lo
+grazing (~20–25% low, unchanged), **group 0.053–0.056 → 2.2σ below Sagunski's mild 0.5 ± 0.2.** Data-trumps
+arithmetic: three independent 95% cluster limits outweigh one 2.5σ mild preference. **χ = φ⁻³/6 at N ≈ 15–20
+STANDS** (np channel untouched). **New crisp falsifier: predicted group-scale σ/m ≈ 0.05–0.25, not 0.5 —
+near-term group analyses discriminate.** PRED-candidate at paper integration. Verify
+`code/1869_coat_channel_deflection_integral.py`; reasoning 1869. J7′ → J7″ (floor = ε·0.11·N·S(v), derived
+shape, single v_ref anchor); J9 closed by computation.
+
+**Queue after 1869 (paper path REOPENED):** (1) soft-potential rigid-body MC confirming S(v) [gold-standard
+check, founder may deem non-blocking]; (2) CONFRONT-2 (CC ξ-channel at η = χ); (3) formation-lane N;
+(4) DM-1 §5 integration under CONV-003 (capture channel + derived-shape coat channel + the group falsifier +
+the 1867 exposure correction) → CONV-001 panel. Founder may reorder.
 
