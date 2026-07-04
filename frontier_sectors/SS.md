@@ -896,8 +896,14 @@ requirement, then confront every other pillar. Phase-1 calibration + CONFRONT-1 
 machinery: **η = χ = φ⁻³/6 is a live zero-parameter candidate at N ≈ 15–20** (σ_dwarf 3.6–4.2 IN-central at
 N = 20; cluster 0.002–0.004 « 0.13 tightest bound; CONFRONT-1 ΔB ≈ 0.5–0.8 MeV, safe). Four independent
 pressures converge on N ≈ 15–20, η = χ. Candidate coherence, NOT closure — gated on the ΔB density-integral
-refinement (now load-bearing) and CONFRONT-2 (CC ξ-channel). Campaign file `OPEN-SS-43_Rs_derivation.md`
-§§5–10; verify `code/1864_...py`, `code/1865_...py`; reasoning 1863/1864/1865.
+refinement (now load-bearing) and CONFRONT-2 (CC ξ-channel). **Patch 1866 (4 July 2026): the ΔB gate is
+cleared** — proper density integral shows the crude estimate was ~1.6–1.8× high (χ-point raw ΔB 0.29–0.80 MeV
+≤ anchor even without absorption credit), SEMF absorption voids the heavy-nucleus channel (residual ~2×10⁻⁵ of
+raw), and the constraint migrates to the unabsorbable np scattering length, which still enforces the χ corner:
+**N ≈ 15–20 survives (N = 12 excluded, N = 15 marginal, N ≈ 18–20 comfortable)**. Low-N generic-band exclusion
+honestly downgraded to a joint (N, target) bound. Remaining gates: σ(v) shape vs dSph-regime fits, CONFRONT-2.
+Campaign file `OPEN-SS-43_Rs_derivation.md`
+§§5–10; verify `code/1864_...py`, `code/1865_...py`, `code/1866_...py`; reasoning 1863-1866.
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's

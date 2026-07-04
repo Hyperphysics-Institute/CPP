@@ -172,9 +172,36 @@ just past the central edge. All results remain conditional on the 1858 V(r) form
 
 **Reordered queue (by load-bearing-ness):**
 
-1. **ΔB density-integral refinement** (J5) — now gates the χ-revival claim.
+1. **ΔB density-integral refinement** (J5) — now gates the χ-revival claim. **DONE — Patch 1866 (§11 below).**
 2. σ(v) shape at η = χ, N = 15–20: p(v) recompute + confrontation with dSph-regime fits and the group point.
 3. CONFRONT-2: CC ξ-channel consistency with η = χ.
 4. Formation-lane N (E_ee reversibility) — does formation kinetics land N ≈ 15–20 naturally?
 5. Paper integration under CONV-003 tags; then the held CONV-001 panel.
+
+## 11. ΔB refined — heavy-nucleus channel voided, constraint migrates to np scattering, χ corner survives (Patch 1866, 4 July 2026)
+
+Queued item 1 executed (verify: `code/1866_db_density_integral.py`; verbatim record `reasoning/1866.md`).
+Proper density integral (exact shell–shell Yukawa kernel; Coulomb sanity anchor passes to 5 decimals; uniform
+sphere and Woods–Saxon agree within 2%) plus an SEMF-absorption test.
+
+- **The crude 1864 estimate was ~1.6–1.8× high** (refined/crude ≈ 0.55–0.65 band-wide). At the χ point, raw
+  refined ΔB = **0.29–0.80 MeV for N = 12–20 — under the ~1 MeV anchor with NO absorption credit.** N = 5
+  stays in raw tension (1.5–3.2); N = 8 drops to safe-to-edge.
+- **Absorption voids the heavy-nucleus channel:** ΔB(A) along the valley fits the SEMF basis to a residual of
+  ~2×10⁻⁵ of raw; implied coefficient shifts are milli-MeV, far inside independent determinations. A smooth
+  valley-wide shift of this shape is not detectable in mass fits. (Collinearity caveat on individual shifts
+  tagged in the verify output.)
+- **The constraint migrates to δa_np — unabsorbable, two-body:** at the χ point it EXCLUDES N = 12
+  (3.7–4.6×10⁻³ fm > ~3×10⁻³), puts N = 15 at the edge (2.9×10⁻³), clears N = 20 (1.6–2.2×10⁻³). Anchor now
+  pinned to the measured triplet length a_t = 5.4194(20) fm. **Surviving χ corner: N ≈ 15–20 — unchanged,
+  carried by a cleaner channel, sharpest at N ≈ 18–20.**
+- **Honest re-statement of the low-N leg:** the generic low-N low-target corner (N = 5–8 at σ_dwarf 1–2) is no
+  longer robustly baryon-excluded once absorption is credited; conservative raw-refined reading still disfavors
+  N = 5. The 1864 "baryon window pushes N to ≳ 12" claim is DOWNGRADED to a joint (N, target) bound for the
+  generic band; it remains sharp specifically at the χ point via the np channel. Flagged for the panel.
+- **Ledger:** J5 → J5′ (ΔB channel refined and retired-in-absorbed-reading; np channel promoted to the binding
+  CONFRONT-1 observable). J6′ → J6″ (χ corner N ≈ 15–20 np-carried; generic band re-widens at low N).
+
+**Queue after 1866:** (1) σ(v) shape at η = χ vs dSph-regime fits + group point; (2) CONFRONT-2 (CC ξ-channel);
+(3) formation-lane N; (4) paper integration under CONV-003; panel.
 
