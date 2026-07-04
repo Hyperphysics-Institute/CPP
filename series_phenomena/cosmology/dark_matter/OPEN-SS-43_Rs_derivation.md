@@ -202,6 +202,42 @@ sphere and Woods–Saxon agree within 2%) plus an SEMF-absorption test.
 - **Ledger:** J5 → J5′ (ΔB channel refined and retired-in-absorbed-reading; np channel promoted to the binding
   CONFRONT-1 observable). J6′ → J6″ (χ corner N ≈ 15–20 np-carried; generic band re-widens at low N).
 
-**Queue after 1866:** (1) σ(v) shape at η = χ vs dSph-regime fits + group point; (2) CONFRONT-2 (CC ξ-channel);
-(3) formation-lane N; (4) paper integration under CONV-003; panel.
+**Queue after 1866:** (1) σ(v) shape at η = χ vs dSph-regime fits + group point **— DONE, Patch 1867 (§12);
+opened the D4 fork**; (2) CONFRONT-2 (CC ξ-channel); (3) formation-lane N; (4) paper integration under
+CONV-003; panel. **Items 2–4 HELD at the D4 fork (§12).**
+
+## 12. The full-curve shape test — group point nailed, cluster floor collision, D4 fork opened (Patch 1867, 4 July 2026)
+
+First assembly of the FULL σ(v) = floor + capture curve (1857 decomposition) at the χ point (verify:
+`code/1867_sigma_v_shape_test.py`; verbatim record `reasoning/1867.md`). The elastic floor ε·0.11·N
+(1856 MC ε ≈ 0.30, 1860 convention) = **0.49–0.66 cm²/g at N = 15–20, velocity-independent** — and every
+prior cluster-safety number (1858/1865) was capture-only.
+
+**Verdicts:** dwarf pin PASS (N = 18–20); LSB PASS (never calibrated to); **group PASS — the floor lands
+directly on Sagunski's positive 0.5 ± 0.2 detection with zero adjustment** (ε from geometry MC, 0.11·N from
+rod geometry, N from the np channel); Bullet PASS (marginal at N = 20); dSph regime LOW by ~25–50% (grazing
+the window's edge — recorded as a miss within that window's systematics); **cluster FAIL — the floor violates
+the full ladder ×1.4–1.9 (Sagunski < 0.35), ×2.6–3.5 (Eckert), ×3.8–5.1 (Andrade < 0.13).**
+
+**The squeeze is in the data:** the group detection (≥ 0.3 at 1150) plus the cluster ladder (< 0.13–0.35 at
+1500) demand σ falling ≳ 2.3× in that narrow window — for ANY model. The capture term is long gone by there;
+only the flat floor remains. Natural CPP onset scales bracket but miss the window (whole-rod KE = E_ee at
+~3500–4000 km/s; per-element at ~15,000); the needed barrier scale is ~0.06–0.13 MeV. Flat-floor fallback
+(N ≲ 4) is np-dead at η = χ: **the χ corner stands or falls with a floor-suppression mechanism or a
+bound-applicability argument.**
+
+**PAPER EXPOSURE flagged (not edited):** DM-1 v1.1 §5's "cluster-safe, robust" is capture-only; the paper's
+own σ_T convention implies a 0.5–0.7 cluster floor at the calibrated N. Same class as 1859, caught in-house
+before the panel. Paper untouched pending the fork; **CONV-001 panel stays HELD.**
+
+**D4 — founder decision points (campaign live fork; no route chosen in-patch):**
+**D4-A** floor-suppression mechanism (~×2–5 between 1150 and 1500 km/s; barrier scale ~0.06–0.13 MeV — a
+natural N-dependent CPP scale?); **D4-B** floor-normalization re-audit (linear ε·0.11·N vs MC ~N^0.7 with
+independent anchor — worth ×1.5–2, enough for < 0.35, not < 0.13); **D4-C** bound-applicability audit
+(cluster ladder calibrated on isotropic point-particle SIDM; anisotropic rod scattering may core less per unit
+σ_T — must be argued quantitatively); **D4-D** accept and demote (χ dies; fallback N ≲ 4, small R_s).
+
+**Ledger:** J7 registered — the hard-capsule velocity-independent floor is now the load-bearing judgment of
+the campaign. Honest summary: **the floor is simultaneously the model's best unfit hit (group) and its
+sharpest violation (clusters).** The 1150–1500 km/s window decides.
 

@@ -901,7 +901,7 @@ cleared** — proper density integral shows the crude estimate was ~1.6–1.8× 
 ≤ anchor even without absorption credit), SEMF absorption voids the heavy-nucleus channel (residual ~2×10⁻⁵ of
 raw), and the constraint migrates to the unabsorbable np scattering length, which still enforces the χ corner:
 **N ≈ 15–20 survives (N = 12 excluded, N = 15 marginal, N ≈ 18–20 comfortable)**. Low-N generic-band exclusion
-honestly downgraded to a joint (N, target) bound. Remaining gates: σ(v) shape vs dSph-regime fits, CONFRONT-2.
+honestly downgraded to a joint (N, target) bound. **Patch 1867: the σ(v) full-curve shape test opened the D4 fork** — the elastic floor (0.5–0.7 at N = 15–20) lands on the group point 0.5±0.2 with zero adjustment but violates the cluster ladder ×1.4–5; χ corner stands or falls with a floor-suppression mechanism/bound-applicability argument (D4-A/B/C/D, founder-gated). DM-1 v1.1 cluster-safety exposure flagged (capture-only); panel HELD. Remaining gates: D4 resolution, then CONFRONT-2.
 Campaign file `OPEN-SS-43_Rs_derivation.md`
 §§5–10; verify `code/1864_...py`, `code/1865_...py`, `code/1866_...py`; reasoning 1863-1866.
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
