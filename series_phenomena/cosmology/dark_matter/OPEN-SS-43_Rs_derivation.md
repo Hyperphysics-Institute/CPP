@@ -78,20 +78,61 @@ as the v1.1 falsifier pre-registers. E_c must come from the SAME mechanism (resi
 including its N-scaling (charge-additive E_c ∝ N vs flat — §D shows the two give measurably different coring
 N-trends).
 
-## 5. Founder decision points (campaign blocked on these — substrate-mechanism selection is vision-driven)
+## 5. Campaign restructure (founder-directed inversion — TLA, 3 July 2026, Patch 1864)
 
-- **D1 (primary): which screening mechanism is substrate-true?** A (saturation), B (channel-suppressed medium
-  response), C (source coherence), a hybrid (e.g., C inside the rod length + B beyond), or an alternative from
-  the founding picture. What does the Sea *do*, PCD-cycle by PCD-cycle, at the boundary of a color-balanced
-  unipolar core?
-- **D2: is the E_qq residual charge-additive along the rod** (E_c ∝ N) **or contact-local** (E_c flat)?
-- **D3: does χ = φ⁻³/6 have standing in the Sea's screening response**, or is its appearance at 25.4 fm a
-  coincidence to be resisted?
+The mechanism-selection decision points (D1–D3, §5 of the 1863 layer) are **superseded by founder direction**:
+do not guess the subquantum structure; **invert** — assume the DM model, calibrate the invisible Sea parameter
+from the coring requirement, then test whether the calibrated value keeps every other pillar standing. Data
+trumps theory; loop back on counterfactuals. (Verbatim capture: `reasoning/1864.md`, two FOUNDER CONTRIBUTION
+blocks.) Registry note: the master glossary defines the Sea as all-sites-occupied at the Planck-scale lattice,
+so the calibrated quantity is not raw DP density but the **residual-channel response amplitude relative to the
+color channel**: η ≡ r_color/R_s under linear screening, anchored to SF-5's empirical ~1 fm confinement length.
+The ontology alternative (sparse occupancy; η reinterpreted as occupancy-weighted response) is FLAGGED, not
+adopted — it would touch the glossary and A-tier.
 
-## 6. Queued next steps (post-selection)
+## 6. Phase-1 calibration result (Patch 1864; `code/1864_eta_calibration_and_confront1.py`)
 
-1. Derive the selected route's (R_s(N), E_c(N)) from substrate mechanics (not fit).
-2. Recompute p(v) and the full σ(v) shape under the derived V(r); update the falsifier form in DM-1 if changed.
-3. Run the three-way intersection (§4); verdict: coring discriminant DERIVED / KILLED.
-4. Feed the surviving N-band back to the formation lane (1855–1856 reversibility question, still open there).
-5. Paper integration + panel, under CONV-003 provenance tags throughout.
+Calibrating R_s so σ/m(50 km/s) ∈ [1, 2] cm²/g (corpus v1.1 central band; **empirical re-pin queued as the
+first data-trumps action**), across N = 5–20 and both D2 E_c-scalings:
+
+- **R_s ≈ 3.5–17 fm, η ≈ 0.29–0.058**, monotone falling with N. The calibrated range sits *below* the old
+  "15–30 fm" quote at nearly every N — the 1863 tightening, confirmed by inversion.
+- **Cluster safety survives calibration everywhere** (σ/m ≈ 0.001–0.02 at the calibrated R_s): post-calibration
+  this is a genuine prediction, and it passes across the whole band.
+- **D3 answered by measurement, conditionally:** η = χ = φ⁻³/6 (R_s = 25.4 fm) over-cores at every N ≤ 20 under
+  the [1, 2] target. Closest approach η(N=20, σ=2) ≈ 0.058 ≈ 1.5χ. χ revives only if the empirical dwarf target
+  is ~4–5 cm²/g — which some SIDM fits allow. **The Capotauro question is now hostage to the empirical dwarf
+  cross-section, i.e. to data — exactly where the founder wants it.**
+
+## 7. CONFRONT-1: the baryon-residual bound (first cross-sector confrontation — and it bites)
+
+If the residual coupling is pairwise-additive in qCP count (rod core 8N, nucleon 3), the calibrated rod residual
+implies an NN long-range tail: E_NN = 9·E_c/(8N)², same screening length. Born-level observables:
+
+- **np scattering length: PASSES with 3–10× margin** across the whole band (δa ≈ 3×10⁻⁴–1×10⁻³ fm vs ~3×10⁻³ fm
+  sensitivity).
+- **Heavy-nucleus coherent binding: CONSTRAINS.** ΔB(A=200) ≈ 2.7–3.9 MeV at N = 5 (flat E_c) — in tension with
+  ~1 MeV mass-fit systematics; ≈ 0.4–1.0 MeV at N ≳ 12 — safe-to-marginal. **The baryon window disfavors small-N
+  calibrations (N ≲ 8) and pushes toward N ≈ 10–20** — converging with the floor ceiling (N ≲ 20) and tail
+  pruning (N ≲ 40) on a narrow surviving band: **N ≈ 10–20, R_s ≈ 7–17 fm, η ≈ 0.06–0.14.**
+- Caveats attached (judgment ledger): the ΔB estimate is pairs × ⟨V⟩ at 4 fm typical separation (crude; density
+  integral queued); the semi-empirical mass formula could partially absorb a smooth ΔB; and if the rod residual
+  is *collective/geometric* rather than pairwise-decomposable (a live mechanism alternative), the nucleon
+  residual could vanish and CONFRONT-1 is moot — in which case its constraint evaporates rather than kills.
+
+## 8. Judgment ledger (auditable; founder may veto any entry and we loop back)
+
+J1 linear N-flat screening baseline (source-extent correction deferred, testable). J2 r_color = 1.0 fm
+(0.85–1.0 fm spread untagged in corpus). J3 dwarf target [1, 2] cm²/g at v = 50 (corpus; **empirical literature
+pin is the queued data action and moves both η and the χ verdict**). J4 pairwise-additive qCP coupling for
+CONFRONT-1 (collective alternative noted, voids CONFRONT-1). J5 sensitivity anchors order-of-magnitude
+(a_np ± 0.003 fm; mass fits ~1 MeV). J6 calibration band N ∈ {5…20} from the floor ceiling + formation kinetics.
+
+## 9. Queued next steps (data first, per mandate)
+
+1. **Pin the empirical dwarf coring σ/m** from published SIDM analyses (moves J3, decides the χ question).
+2. Refine ΔB with a proper nuclear density integral; check whether mass-formula absorption hides it.
+3. Formation-lane N (1855–1856 E_ee reversibility) — now load-bearing for where in the band nature sits.
+4. CONFRONT-2: CC correlation-length ξ channel consistency with the calibrated Sea response.
+5. Recompute p(v)/falsifier shape at the calibrated (N, R_s, E_c); paper integration under CONV-003 tags; panel.
+
