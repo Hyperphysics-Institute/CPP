@@ -460,3 +460,13 @@ F5 XQC-reflight 46 events at the ruling point (×11) / 2–28 region-weighted (m
 **DAMIC edge: 40% of the region unshielded — the future pin adjudicates it**; group 0.037–0.05 standing.
 Verify `code/1888_...py` + XQC grid json; reasoning 1888. **Queue: DM-1 v1.4 wording cycle → stability
 cycle → OSF.**
+
+## 28. v1.4-DRAFT + short-cycle package (Patch 1889, 6 July 2026)
+
+Brown notice drafted: CONV-004 supersession of the v1.3 governance sentence (debts → MEASUREMENTS;
+**F3′ kill-branches retained undiminished and stated so in-notice**); SI-1/SI-2 folded (inferences, portrait
+with prior-shaped flags, F7 corner, non-empty existence with pre-registered kill-condition); falsifiers
+updated (F5 dual-form; DAMIC edge 40%; F6; group); governance revised (overdetermination discipline +
+stability cycle + open derivation target). Compile clean. Package
+`DM-1/review/DM-1_review_package_v1.4.md`: asks A–D; §5 invites the unfalsifiability attack on CONV-004
+itself. Queue: panel → fold → ship → stability cycle → OSF.
