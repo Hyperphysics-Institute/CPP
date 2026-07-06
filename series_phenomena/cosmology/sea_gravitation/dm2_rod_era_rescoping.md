@@ -70,3 +70,18 @@ entries; `mu_eps_closure/R2-STATUS.md` (for the namespace caution only).
 **Relation to DM-1's stability cycle:** DM-2 sessions are DM-lane sessions (they run the clock). L1 or L2
 failing is exactly what the cycle exists to catch — a load-bearing result would pause the OSF gate, per
 the deposit record's checklist, and we would be glad of it.
+
+---
+
+## L1 RESULT — rod equivalence PASSES, margin ≥ 600 (Patch 1895, 6 July 2026)
+
+Computed (verify `../dark_matter/code/1895_dm2_L1_coat_budget.py`): the unledgered Sea-excess around the
+rod — the q-channel residual coat (0.144 MeV, exact Yukawa field-energy integral outside r_c at the
+registered E_c/R_s normalization), the e-channel ceiling (0.43 MeV; the neutral shell sits below it), and
+the added-mass drag bound — totals **≤ 3.4×10⁻⁵ of m_rod**, against anchor tolerances of 2–5×10⁻².
+Inter-element binding (0.1–0.7% scale) enters both ledgers identically and cancels in the ratio. The S_c
+suppression is a colour-channel property; gravity couples to energy — untouched. **m_grav = m_inertial to
+3×10⁻⁵: every DM-1 gravitational anchor is correctly normalized.** The physical reason is transparent and
+worth the paper stating: the same weakness of the residual channel (E_c ~ 0.3 MeV against 25.3 GeV) that
+makes capture gentle enough for SIDM phenomenology makes the coat gravitationally negligible — one scale,
+two consequences, no tuning. **Arc advances to L2.**

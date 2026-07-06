@@ -523,4 +523,5 @@ DM-2 campaign opened at `sea_gravitation/dm2_rod_era_rescoping.md`: June-era sta
 equivalence (coat-budget vs inertial mass; CONFRONT-4 in spirit), L2 portrait-budget confrontation (Sea
 budget = 10³⁹–10⁴²× ρ_Λ ⇒ zeroing must be exact; import verdict: ρ_Λ is consistency, not an SI target,
 under the registered coefficient). Arc order L1 → L2 → Gate-1/D3 carry → paper → panel. DM-2 sessions run
-this paper's stability clock.
+this paper's stability clock. **[L1 PASS, Patch 1895: m_grav = m_inertial to 3×10⁻⁵ (coat ≤ 0.6 MeV
+unledgered vs 25.3 GeV; margin ≥ 600) — every DM-1 gravitational anchor correctly normalized.]**
