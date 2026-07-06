@@ -79,3 +79,20 @@ process-why sentence, F1 disqualifier phrasing. **Anomaly:** the Gemini-slot ret
 "Claude Opus / AI Review Node" — independence to be confirmed by founder; verdict counted pending. Full
 verbatim returns: `review/reviews_v1.2_panel_returns.md`. **DM-1 v1.2 SHIPPED.** Promotion gate beyond
 Layer-C: the de-novo gap derivation, m_s = χ·(ħc/r_c) (OPEN-SS-43 §17).
+
+---
+
+## v1.3 cycle (5 July 2026, Patches 1883–1884)
+
+**Package:** `review/DM-1_review_package_v1.3.md` (Patch 1883) — re-review forced by the RETRACTION of
+panel-ratified v1.2 claim C (np selection), plus explicit judgment of the survival-conditional D5-A′ ruling's
+disclosure standard (ask D). **Verdict: 5/5 ratification** — unanimous on the retraction (A), the J12
+residual accounting (E), and the falsifiers (F); ask D returned 3× sufficient-to-exemplary + ChatGPT RESTATE
++ Copilot RWC demanding stronger provisional/authority wording. Four wording changes folded (Patch 1884):
+D5-A′ stated PROVISIONAL/non-upgradable/overturnable; exclusion wording tempered with reproduction invited;
+shielding-coarseness and island-existence-vs-edges in-notice; governance sentence (promotion = both debts +
+a stability cycle). **Anomaly recurs, slot shifted:** Gemini signed correctly this cycle; the DeepSeek slot
+self-identifies as "Claude Opus" — flagged, counted pending founder confirmation (5/5 stands at 4/4 without
+it). Full returns: `review/reviews_v1.3_panel_returns.md`. **DM-1 v1.3 SHIPPED.** Promotion gates: the
+m_s = χ·(ħc/r_c) gap and the first-multipole coupling order, plus a stability cycle. OSF decision returned
+to the founder.

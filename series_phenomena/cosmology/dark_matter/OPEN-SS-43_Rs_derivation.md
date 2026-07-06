@@ -401,3 +401,19 @@ scope; DAMIC-shallow SHIELDED at S_c = 0.035 (81 collisions), operative only at 
 (S_c ≲ 0.01) where its 25-GeV floor is unpinned (J12′-a); Earth heating 0.16 GW vs 44 TW; XQC ε_th caveat
 top-edge only. **Ruling point clears every pinned channel.** DM-3 signature registered: deep-Earth
 thermalized rod population (n̄ ~ 2×10¹³ cm⁻³, center-concentrated). Verify `code/1881_...py`; reasoning 1881.
+
+## 24. DM-1 v1.3 SHIPPED — panel 5/5; the retraction ratified unanimously; the epistemics ratified with a restatement, folded (Patch 1884, 5 July 2026)
+
+Second five-member cycle: **5/5 ratification, no REFUTE** — unanimous on A (the retraction), E (J12
+accounting), F (falsifiers). Ask D (judging the survival-conditional ruling's disclosure): Grok/Gemini/
+DeepSeek-slot found it sufficient-to-exemplary ("transforms a fine-tuning vulnerability into a sharp,
+maximally falsifiable target"); ChatGPT RESTATE + Copilot RWC folded — the teal notice now states the ruling
+is PROVISIONAL, non-upgradable until the multipole order is derived, and overturnable by that derivation.
+Also folded: tempered exclusion wording (reproduction invited); shielding-criterion coarseness +
+island-existence-vs-edges + dipole-squared clarification; governance (promotion = both debts cleared + a
+stability cycle with no load-bearing corrections; review-lessons record = this file). **Anomaly recurs, slot
+shifted** (Gemini signed correctly; DeepSeek slot self-identifies as a Claude node — flagged, counted pending
+founder confirmation; 5/5 stands at 4/4 without it). Returns: `DM-1/review/reviews_v1.3_panel_returns.md`.
+**DM-1 is v1.3 SHIPPED. Standing gates: m_s gap; multipole order; stability cycle. OSF decision returned to
+the founder. Open threads: derivation debts (the campaign's remaining physics), DAMIC-floor pin (island
+bottom edge), rod–nucleus MC refinement (Gemini, low-priority), F1/F5 data watch, formation cap, DM-2/DM-3.**
