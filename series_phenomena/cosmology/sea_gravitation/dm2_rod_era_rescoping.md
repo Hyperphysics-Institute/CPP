@@ -152,3 +152,17 @@ Gate-1/B1 the break-point; D3(b) argument-not-derivation with w(z) as falsifier 
 the record; DM-1 falsifiers inherited); grade one-mechanism-four-cases-two-conditions (§8). CONV-004 tags
 in-text per the step-3 rule. Authors: Thomas Lee Abshier, ND + Claude Opus. NOT SHIPPED — CONV-001 panel
 pending founder go.
+
+## DM-2 v1.0 SHIPPED — first-cycle panel 5/5 (Patch 2300, 6 July 2026; DM lane continues in the 23xx band)
+
+Five returns (founder-attributed; Grok delivered last per deletion-and-recopy; no misidentification):
+**5/5** — unanimous on the four-case structure, L1, the decoupling, and the disclosure posture. The three
+watch-verdicts: **(A)** physics-vs-bookkeeping returned in the paper's favor with a folded RESTATE (the
+zeroing's physics content arrives with the Gate-1/B1 reduction — now stated in the box); **(ii-EP)**
+convergent demand folded — the general equivalence-principle check (all excess forms at Eötvös precision,
+binding sign) is now a NAMED sub-item of Gate-1/B1, explicitly not discharged by L1; **(iv-w(z))** returned
+as a near-term LIVE discriminant — DESI-era evolving-w data test the R_h form on release timescales;
+registered as data-watch **F-DM2-1**. Also folded: the 1107–1108 scope sentence. Returns:
+`DM-2/review/reviews_v1.0_panel_returns.md`. **The dark-matter series now stands: DM-1 v1.4 (stability
+cycle running), DM-2 v1.0 (shipped), DM-3 scoped. Standing opens: Gate-1/B1 (+EP sub-item), D3(b)
+(+F-DM2-1 watch), the DM-1 derivation targets.**
