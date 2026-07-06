@@ -85,3 +85,34 @@ suppression is a colour-channel property; gravity couples to energy — untouche
 worth the paper stating: the same weakness of the residual channel (E_c ~ 0.3 MeV against 25.3 GeV) that
 makes capture gentle enough for SIDM phenomenology makes the coat gravitationally negligible — one scale,
 two consequences, no tuning. **Arc advances to L2.**
+
+## L2 RESULT — the zeroing is referential (exact by construction, portrait-independent); the rod-split is clean; the coefficient is portrait-free (Patch 1896, 6 July 2026)
+
+Grounded in stepB (0721) / stepC (0722) / the 1163 contested-reading banner; verify
+`../dark_matter/code/1896_dm2_L2_zeroing_split_coefficient.py`.
+
+**(i) The sharp zeroing statement.** CPP gravity couples to ∇(ΔSSV) — excess *above the Sea ground state* —
+and the quiescent Sea **is the zero of the sourcing variable**. The zeroing is therefore **referential**:
+no subtraction of two large numbers occurs, and the portrait's 10³⁹–10⁴²×ρ_Λ absolute budget never enters
+the coupling at all. This is exactly the "exact, not approximate" structure L2 demanded — and it makes the
+DM-2 paper's stakes statement quotable: *in CPP the vacuum catastrophe is not solved by cancellation; it is
+structurally incapable of arising.* CONDITIONAL (named, carried): Gate-1/B1 — the c08 field-equation
+reduction must confirm the ground state's exclusion from T_μν at the GR-limit level.
+
+**(ii) The rod-split.** The rod is a localized ΔSSV excess measured from the *same unperturbed reference*;
+the zeroing operation cannot touch it — its full L1-verified ledger (constituents + binding + coat) sources.
+The subtlety is handled: the coat does not locally re-define the reference (the reference is the
+unperturbed equilibrium Sea; the coat is a deformation = excess = sourced, already in the L1 ledger at
+0.6 MeV). One mechanism, four cases — bulk zero, matter/rod full, swirls full, Λ = the horizon residual —
+with no per-case assumptions.
+
+**(iii) The coefficient question — answered NO.** The registered live derivation chain carries no portrait
+parameter: amplitude = the SSV/PSR ceiling c²; IR scale = the **future event horizon** R_h set by A4 global
+coherence (per the 1163 supersession of the retarded R_H reading); field energy = g²/(8πG) with c05's
+G = ħc/m_P². **ρ_Λ is a consistency statement for the portrait, not an SI hard target; the SI
+under-determination stays at 2; the CC sector and the Sea portrait are cleanly decoupled.** Conditional
+door (flagged, not claimed): a retarded/equilibration IR scale would inherit S_p — but that branch is the
+arc-breaking falsifier D3-1 regardless.
+
+**Carried conditions for the DM-2 paper (never silently upgraded): Gate-1/B1 and D3/D3-1.**
+Arc advances to step 3: the Gate-1/D3 status read-and-carry from the 11xx/20xx records, then the paper.
