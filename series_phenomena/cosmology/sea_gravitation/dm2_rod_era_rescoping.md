@@ -116,3 +116,27 @@ arc-breaking falsifier D3-1 regardless.
 
 **Carried conditions for the DM-2 paper (never silently upgraded): Gate-1/B1 and D3/D3-1.**
 Arc advances to step 3: the Gate-1/D3 status read-and-carry from the 11xx/20xx records, then the paper.
+
+## STEP 3 — STATUS CARRY: what the June/umbrella arcs discharged vs what DM-2 carries open (Patch 1897, 6 July 2026)
+
+Read from: `frontier_sectors/SR.md` OPEN-SR-5a/b/c entries; `condition2_2i_...md` (1163);
+`condition2_2ii_gradient_vs_mode_and_A4_horizon.md` (1164); the stepA–D files; the 6/10 umbrella handover.
+**This table is the paper's condition ledger — nothing below may be silently upgraded at L3.**
+
+| Condition | Status (as read) | What the DM-2 paper says |
+|---|---|---|
+| **5a** Friedmann/homogeneous-source | **ADDRESSED** (0720; Milne–McCrea/shell theorem; falsifier A1 tracked under B1) | cite as settled-conceptual |
+| **5c** Sea-vs-matter (one mechanism) | **DELIVERED structural** (0721) | the referential-zeroing basis of L2-(i) |
+| **5b** Λ-suppression | **PARTIAL→derived** (0722): scaling + 1/8π + ~2× magnitude derived; **mechanism language REFRAMED** by 1163/1164 — the residual is the longest **zero-point coherence mode**, NOT a retarded un-smoothed gradient. The paper MUST use the mode-structure language; the Step-C equilibration heuristic is banner-superseded. | derived-with-reframe |
+| **Gate-1 / B1** (c08 field-equation reduction: ground-state exclusion from T_μν at the GR limit, equivalence preserved for excess) | **OPEN — the arc's named break-point.** L2-(i)'s exactness is *given* gradient-sourcing; its from-substrate GR-limit grounding is this condition. Falsifier B1/A1: if the CPP GR limit forces ground-state energy to gravitate, the mechanism fails. | carried OPEN, CONJECTURED-level grounding; kill-branch stated |
+| **D3 part (a)** — gradient vs coherence-mode | **CLEARED** (1164): zero-point coherence mode ⇒ the retarded-scale death (D3-1) does not fire | cite as cleared, with the reframe cost disclosed |
+| **D3 part (b)** — which coherence scale | **ADVANCED, NOT CLOSED** (1164): A4's spatial a-causality (Bell) bounds the coordinable set by the **future event horizon R_h**; F-COST-1 foreknowledge paradox dissolved in principle; empirical anchor: the R_h (Li-2004) form reproduces the observed history, w_now ≈ −1.02 (0723 script). **Live residual: the particle-horizon alternative; the key step is a physical argument, not a derivation — no verdict promotion.** | carried as coherent-substrate-argument; w(z) is the falsifier channel |
+| **SR-5 ≡ SM-6 unification** | Registered same-theorem cross-connection; the umbrella arc's close-state (11xx band) selected the **dynamical excess-sourcing** account. At L3 assembly, cite the umbrella close directly (re-read then). | one-mechanism claim, umbrella-cited |
+
+**Net for L3:** the paper's honest grade is *one mechanism, four cases, two named open conditions* —
+Gate-1/B1 (the GR-limit grounding) and D3(b) (the horizon selection) — with the empirical successes
+(the ~2× magnitude, w_now ≈ −1.02, the referential dissolution of the catastrophe, L1 equivalence, L2
+decoupling) all conditional on those two and stated so. CONV-004 tags: the mechanism's cases are
+DERIVED-structural; Gate-1/B1 grounding CONJECTURED; the R_h selection CONJECTURED-with-empirical-anchor.
+**Arc advances to L3 — paper assembly under the falsification-first rule (the gate has now decisively
+NOT killed: L1 pass, L2 pass, D3-1 defused; paper framing is permitted).**
