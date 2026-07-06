@@ -340,3 +340,18 @@ a working synthesis; (3) J4 + density-integral conditionality stated in-claim; (
 sharpened de-novo target (§17): derive the χ·(ħc/r_c) = 7.76 MeV gap in the colour-residual channel with the
 |SSV| scalar gapless — the promotion gate beyond Layer-C. Secondary open threads: formation-cap mechanism
 (§18), soft-MC refinements (J10′), F1 group-scale data watch.
+
+## 20. CONFRONT-3 OPENED — the baryon sector (founder green-light; Patch 1878, 5 July 2026)
+
+The campaign used the rod–nucleon coupling (np channel, 1866) and now confronts everything it implies
+(verify: `code/1878_confront3_baryon_sector_scoping.py`; reasoning 1878; sources pinned in-header).
+Scoping verdicts at the χ corner (a₀ = 0.17–0.23 fm; σ_n(0) = 3.6–6.4×10⁻²⁷ cm²): **CMB drag +
+dwarf-gas heating PASS ×20** (≲10⁻²⁵, 2112.00707); **underground detectors INAPPLICABLE** — ~1200
+atmospheric collisions at ~45% loss each thermalize the rods high in the atmosphere (the SIMP shielding
+structure of 2209.04387; internally forced by the same coupling the np channel required); **XQC LIVE
+TENSION** — XQC-effective σ_n(q = 2–11 MeV) = 0.4–3.7×10⁻²⁷ sits at the reported reach of the excluded
+band at tens of GeV (Erickcek 2007; Mahdawi–Farrar 2017/18), but every published boundary is a
+contact-interaction mapping and ours is a 7.76 MeV-mediator, 20 fm composite. **Arc task 1 (decisive):
+recompute the XQC boundary for the light-mediator composite. Task 1 now outranks the de-novo gap in
+priority — a live kill risk before a promotion gate.** Tasks 2–5: rod form factor; Earth-thermalized
+population (Dewar-class); computed CMB drag; verdict + paper hook (DM-1 v1.3 / DM-3).
