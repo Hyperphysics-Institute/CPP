@@ -355,3 +355,25 @@ contact-interaction mapping and ours is a 7.76 MeV-mediator, 20 fm composite. **
 recompute the XQC boundary for the light-mediator composite. Task 1 now outranks the de-novo gap in
 priority — a live kill risk before a promotion gate.** Tasks 2–5: rod form factor; Earth-thermalized
 population (Dewar-class); computed CMB drag; verdict + paper hook (DM-1 v1.3 / DM-3).
+
+## 21. CONFRONT-3 task 1 — XQC EXCLUDES the registered coupling ×20–30; fork D5 opened: XQC survival and the np-selection claim are mutually exclusive (Patch 1879, 5 July 2026)
+
+The published XQC exclusion is a contact mapping inapplicable to a light-mediator composite (Born diverges on
+heavy nuclei), so the actual scattering was solved: partial-wave Numerov for V = ±A·E_rN·(r_c/r)e^{−r/R_s},
+rod-extension-folded, Helm form factor, solver validated to 0.1% against the exact finite-k Born formula, full
+pinned XQC exposure model (Erickcek 2007: 34-pixel layer stack, swept-volume normalization, Table-I bins,
+per-bin sensitivities, >4 keV rate). Verify `code/1879_xqc_recomputation.py`; reasoning 1879.
+
+**Verdict: 10,261–14,998 predicted in-band events vs 527 observed; 1,404–3,542 vs 60 above 4 keV — every bin
+violated ≫5σ, both signs, both rod models. At the registered J4-additive nucleon coupling the χ-corner rod is
+EXCLUDED as more than ~3.5% of local DM.** No numerical or astrophysical band approaches the factor 20–30.
+
+**The fork (D5, founder-gated):** the saturated σ makes the escape logarithm-assisted — S_c ≲ 0.1 on the
+nucleon coupling clears XQC — but the 1866 np-selection of N ≈ 15–20 (DM-1 v1.2 item (ii)) required S_c ≈ 1.
+**Mutually exclusive.** D5-A: color-neutrality/dipole suppression of the nucleon coupling (natural estimate
+(R_N/R_s)² ≈ 1.3×10⁻³; XQC clears ×10³; δa_np → invisible; DM-1 v1.3 must retract the np-selection argument —
+N ≈ 15–20 then rests on floor ceiling + dwarf window + tail pruning). D5-B: additive coupling upheld —
+candidate falsified as the DM at the χ corner. The mechanism question (does unipolar residual sourcing require
+the rod's cage coherence, which color-neutral nucleons lack?) is the founder's to rule. **J11 (S_c) registered
+as the baryon sector's load-bearing unknown. External release (OSF) HELD pending D5. CONFRONT-3 tasks 2–4
+downstream of D5. Queue: D5 ruling → v1.3 under the chosen horn → CONFRONT-3 remainder → de-novo gap → panel.**
