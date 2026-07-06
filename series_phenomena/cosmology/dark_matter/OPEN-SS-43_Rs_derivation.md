@@ -392,3 +392,12 @@ first power — maximally falsifiable from inside the theory); DM-1 v1.3 retract
 near-threshold XQC-class events ×11 below current data; thermalized atmospheric/crustal rod population.
 J11 resolved-provisionally; **J12 registered (island-I residual pins: CRESST-surface/DAMIC-shallow/Dewar at
 25 GeV — unpinned, island could shrink). Queue: J12 pins → v1.3 → panel → derivation debts. OSF HELD.**
+
+## 23. J12 pinned — Island I survives the surface/Dewar ladder at the ruling point (Patch 1881, 5 July 2026)
+
+Full-text pins (2112.00707/NFM18/NBN19/CRESST-s): Dewar-class channels NOT constraining at 25.3 GeV
+(source-stated 0.5–10 GeV reach; barometric collapse of surface density, H ~ 9 km); CRESST-surface low-mass
+scope; DAMIC-shallow SHIELDED at S_c = 0.035 (81 collisions), operative only at the island bottom edge
+(S_c ≲ 0.01) where its 25-GeV floor is unpinned (J12′-a); Earth heating 0.16 GW vs 44 TW; XQC ε_th caveat
+top-edge only. **Ruling point clears every pinned channel.** DM-3 signature registered: deep-Earth
+thermalized rod population (n̄ ~ 2×10¹³ cm⁻³, center-concentrated). Verify `code/1881_...py`; reasoning 1881.
