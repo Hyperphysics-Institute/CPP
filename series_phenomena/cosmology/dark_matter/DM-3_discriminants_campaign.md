@@ -72,3 +72,29 @@ assembly: pull the corpus's registered capture computation and recompute S2/S3 f
 by the anchor cross-check — the compute-before-claim rule firing within its own patch.
 
 **Arc queue updated: J-DM3-3 reconciliation → S2/S3 recompute → P1 assembly → paper → panel.**
+
+## 5. J-DM3-3 CLOSED — S2′/S3′ recomputed from the registered model; a new analytic result: the running-slope law (Patch 2303, 6 July 2026)
+
+Verify `code/2303_dm3_shape_reconciled.py` (anchor validation gates the claims: dwarf 4.38 ✓, LSB 0.74 ✓,
+dSph@10 = 14.6 grazing ✓).
+
+**Diagnosis:** the registered pipeline (1864/1865) is the **dissipative-reach criterion** — V(b_max) = KE,
+σ = πb² — which is the correct capture physics: conservative dynamics cannot capture at all (energy
+conservation), and the 2302 barrier implementation was therefore wrong in principle, not merely in shape.
+The Sea-response channel supplies the dissipation; the reach criterion is its standard approximation.
+
+**S2′ — logarithmic saturation:** the reach grows as b ~ R_s·ln(1/v²), so σ_cap ∝ ln²(1/v) — slower than
+any power law, faster than a plateau. The dSph grazing is now a SHAPE PREDICTION: σ(10 km/s) ≈ 15,
+20–25% under the heterogeneous window's low edge — analyses firming that edge above ~17 kill CPP;
+landings at 12–18 select CPP over both flat-plateau and steep-power SIDM.
+
+**S3′ — THE RUNNING-SLOPE LAW (new analytic result):** differentiating the reach condition gives the
+local capture exponent in closed form, **p(v) = 4R_s/(b_max(v) + R_s)**, verified numerically
+(0.60 → 0.98 → 1.80 → 3.0 across 10 → 600 km/s; the 3500 km/s numeric slope is floor-dominated, capture
+negligible there). Neither a constant-p power law nor the SIDM (v/w)⁴ knee runs this way — and the law
+INVERTS: two slope measurements at known velocities determine R_s directly. **Halo shape data alone
+measure the screening length — an in-situ χ determination independent of normalization and of every
+laboratory channel. Registered F-DM3-2.**
+
+**S1 unchanged** (implementation-independent; ×51/×121/×2000 in the reconciled table — F1′ three-way).
+**P3 is COMPLETE. Queue: P1 assembly → paper (v1.0-DRAFT) → CONV-001 panel.**
