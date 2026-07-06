@@ -495,3 +495,14 @@ discharged — trimmed-window F5 prior-robust across 1.5 orders: **8–50 events
 (ruling-point form 46/×11 unchanged); refreshed figures to the OSF-deposit addendum. Verify
 `code/1891_...py`; reasoning 1891. **Queue: OSF deposit package → reader's guide → cycle completion →
 release.**
+
+## 31. OSF deposit record prepared (Patch 1892, 6 July 2026)
+
+`DM-1/documentation_suite/osf-deposit-DM-1.md` (house format): DOI versioning vs parent JXE8D + the 8 June
+conjecture priority chain; honest-scope abstract (near-kill and PROVISIONAL ruling disclosed in-abstract);
+full manifest (paper, campaign, SI-1, founder ruling, 49 scripts, 63 reasoning fragments, 3 review cycles
+verbatim); **the stability-cycle completion criterion as an objective five-box checklist** (≥14 d or 2
+sessions; zero load-bearing corrections, 1891-precedent carve-out for pre-registered adjudications; no
+standing REFUTE; residual scan; founder sign-off); the 1891 addendum text (island [0.012, 0.05]; F5 8–50,
+median ~17, ×30). Paper untouched; cycle intact. **Queue: reader's guide (item 3) → cycle completion →
+deposit.**
