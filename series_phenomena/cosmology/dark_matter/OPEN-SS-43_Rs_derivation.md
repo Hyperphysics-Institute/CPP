@@ -515,3 +515,12 @@ measured-coefficient turn with printed counting, the ordered kill list, a 30-min
 1871 → 1879 → 1888), and the objections we agree with. Deposit manifest updated (item 8 + wiki front page).
 **Release plan complete: hardening ✓ (1891), deposit package ✓ (1892), reader's guide ✓ (1893). Remaining:
 the stability-cycle clock → closing residual scan → founder sign-off → deposit.**
+
+## 33. DM-2 opened (re-scoped for the rod era) — pointer (Patch 1894, 6 July 2026)
+
+DM-2 campaign opened at `sea_gravitation/dm2_rod_era_rescoping.md`: June-era state mapped (A→D no-kill;
+0722-derived Λ-suppression 0.46× observed; CC unification) and NOT re-opened; rod-era legs defined — L1 rod
+equivalence (coat-budget vs inertial mass; CONFRONT-4 in spirit), L2 portrait-budget confrontation (Sea
+budget = 10³⁹–10⁴²× ρ_Λ ⇒ zeroing must be exact; import verdict: ρ_Λ is consistency, not an SI target,
+under the registered coefficient). Arc order L1 → L2 → Gate-1/D3 carry → paper → panel. DM-2 sessions run
+this paper's stability clock.
