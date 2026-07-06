@@ -3,7 +3,7 @@
 **Cycle:** CONV-001 re-review of DM-1 v1.3-DRAFT (package Patch 1883). **Panel:** five members, founder
 delivery order ChatGPT, Grok, Gemini, Copilot, DeepSeek.
 
-**ATTRIBUTION ANOMALY (recurring pattern; flagged, counted pending founder confirmation):** this cycle Gemini
+**ATTRIBUTION ANOMALY — RESOLVED (founder confirmation, 6 July 2026):** the founder confirms the slot-5 return was in fact DeepSeek, self-misidentifying — the same failure mode Gemini exhibited at v1.2. The return is independent and its verdict stands without qualification; the v1.3 outcome is an unqualified 5/5. Original flag retained below for the record. **Original flag:** this cycle Gemini
 SIGNED CORRECTLY ("As Gemini"), and it is the **DeepSeek slot** whose return self-identifies as "Claude Opus
 (Anthropic)." Precedent (v1.2): the founder confirmed the then-anomalous slot was a tool self-misidentifying.
 Verdict counted pending the same confirmation. Note: the 5/5 outcome stands at 4/4 without the anomalous slot.
