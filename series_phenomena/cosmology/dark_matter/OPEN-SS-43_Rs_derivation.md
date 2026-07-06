@@ -437,3 +437,14 @@ group point from the inverted substrate. Paper hook: "What the dark-matter data 
 **Obligation carried: a v1.4 wording cycle** — the panel-ratified "derivation debt / non-upgradable-until-
 derived" governance sentence must be revised to the measured-parameter framing and re-ratified (short cycle).
 OSF: after the inversion existence proof + v1.4 + a stability cycle.
+
+## 26. SI-1 shipped — ledgers, forward maps, three pre-scan inferences, NON-EMPTY existence preview (Patch 1887, 6 July 2026)
+
+Task 1 of the inversion arc complete (`SI-1_unknowns_and_forward_maps.md`; verify `code/1887_...py`;
+reasoning 1887). 8-unknown ledger vs 9-target ledger (CONV-004 tags); 7 forward maps from registered
+structure (J-SI-1…5); honest counting: 6 hard / 8 unknowns, under-determined by 2 — pinned COMBINATIONS
+stated. **Pre-scan inferences: α_e/α_q ≈ 6×10⁻³; C_r ≈ 2.5×10⁻⁴ (the Sea's colour-channel cancellation is
+now a measured number); D_st = O(1) (singlets present a static leading moment).** Existence preview
+(200k MC): **NON-EMPTY** — sensible region (α_q median 0.75; occupancy f_occ ~ 0.1, a sparse Sea; C_r
+independently confined to the 10⁻⁴ decade). Kill-condition did not fire. **Queue: SI task 2 (tightened scan +
+substrate table + no-refit predictions) → DM-1 v1.4 wording cycle → stability cycle → OSF.**

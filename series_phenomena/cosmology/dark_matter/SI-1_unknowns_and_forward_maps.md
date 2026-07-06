@@ -1,0 +1,81 @@
+# SI-1 — Substrate Inversion Arc, Task 1: the unknown ledger, the target ledger, and the forward-map system (CONV-004 execution)
+
+**Status:** foundation document (Patch 1887, 6 July 2026). Charter: founder ruling of 6 July
+(`founders_voice/founder_ruling_measured_coefficients_2026-07-06.md`; CONV-004). Every number below carries
+its CONV-004 tag; every modeling choice is J-tagged. Verify: `code/1887_si1_forward_maps_counting.py`.
+
+## 1. Target ledger M (what the data have fixed)
+
+| # | Quantity | Value | Tag | Source |
+|---|---|---|---|---|
+| M1 | m_s — colour-residual channel gap | χ·ħc/r_c = 7.764 MeV (R_s = 25.42 fm) | **MEASURED** | halo ladder, 1863–1877 |
+| M2 | S_c — colour-singlet coupling suppression | [0.005, 0.05], center R_N/R_s = 0.035 | **MEASURED** | XQC/LZ/shielding ladder, 1879–1881 |
+| M3 | E_ee — eDP side-bond energy | 0.9 MeV | PINNED (corpus, 1813) | |
+| M4 | E_c — rod–rod unipolar residual at contact | ≈ 0.3 MeV (flat) / 0.02N (additive) | PINNED (corpus, 1858-era anchors) | |
+| M5 | d ≡ a — rung spacing / lattice pitch | 1.0–1.3 fm | PINNED (0835/1812) | |
+| M6 | E_hDP — qDP bond scale | ≈ 150 MeV (λ = ħc/E_hDP ≈ 1.3 fm) | PINNED (0835) | |
+| M7 | m_el — element mass | 1408 MeV | PINNED (08xx band) | |
+| M8 | kT_form — formation-window temperature | 16.2–16.6 keV | **MEASURED-scoping** (1873; cap mechanism open) | |
+| M9 | m_const — cage constituent scale | ħc/r_ZBW = 312.7 MeV (r_ZBW = 0.631 fm) | DERIVED (SS-2) | |
+
+r_c = 1 fm is used interchangeably with a throughout the DM corpus [J-SI-1: r_c ≡ a adopted; the η = χ
+measurement then reads "the gap in PITCH units is the Capotauro constant"].
+
+## 2. Unknown ledger U (the founder's named depths, in registered language)
+
+| # | Symbol | Meaning (glossary-grounded) | Prior range scanned |
+|---|---|---|---|
+| U0q | α_q | CP-scale colour-channel coupling strength (dimensionless, fine-structure-like) | 10⁻⁴ – 10 |
+| U0e | α_e | CP-scale e-channel coupling strength | 10⁻⁴ – 10 |
+| U1 | n | DP Sea number density (fm⁻³); occupancy f_occ = n·a³ | 10⁻³ – 10 fm⁻³ |
+| U2 | E_z | ZBW energy scale of a quiescent Sea DP (ħω_z; glossary: CP oscillation between DP partners) | 1 keV – 1 GeV |
+| U3 | C_r | residual (non-cancelled) fraction of the colour channel in the quiescent Sea — the founder's "cancellation" | 10⁻⁶ – 1 |
+| U4 | S_p | superposition factor for collective Sea response (√N-random ↔ N-coherent, expressed as multiplicative factor) | 10⁻² – 1 |
+| U5 | D_st | static fraction of a confined colour-singlet's leading residual moment | 10⁻³ – 1 |
+| U6 | T_amb | ambient Sea excitation temperature | 0.1 – 10³ keV |
+
+## 3. Forward-map system F: U → M (registered structure only; κ's are O(1) geometric constants of the
+600-cell, scanned in [1/3, 3] — J-SI-2)
+
+- **F1 (screening/gap):** Debye-form response of a polarizable medium to a colour-residual source
+  [J-SI-3: Debye form adopted; plasmon form differs by O(1) absorbed in κ₁]:
+  **m_s² = κ₁ · 4π α_q (ħc)³ · n C_r S_p / E_z.**
+- **F2 (e-channel bond):** contact bond at pitch: **E_ee = κ₂ · α_e ħc / a.**
+- **F3 (q-channel bond):** **E_hDP = κ₃ · α_q ħc / a.** (F2/F3 ⇒ α_e/α_q = (κ₃/κ₂)·E_ee/E_hDP ≈ 6×10⁻³·O(1)
+  — a substrate inference independent of a.)
+- **F4 (rod residual):** the unipolar residual exists because cancellation is imperfect and the cage is
+  coherent: **E_c = κ₄ · C_r · 8 · α_q ħc / a** [J-SI-4: linear in C_r; cage coherence factor 8 (one per
+  core qCP) folded; alternative coherence powers absorbed in κ₄ span].
+- **F5 (singlet suppression):** **S_c = κ₅ · D_st · (R_N/R_s).** The MEASURED S_c ≈ R_N/R_s therefore
+  reads: **D_st ≈ 1/κ₅ = O(1) — the data dictate that a confined singlet presents an essentially fully
+  STATIC leading moment to the Sea channel** (not a fluctuating/van-der-Waals one). First substrate
+  inference of the arc, available before any scan.
+- **F6 (constituent/element):** **m_el = κ₆ · 8 · m_const · b₈**, b₈ ≈ 0.563 the cage binding fraction
+  implied by 1408/(8·312.7) [J-SI-5: LOW-CONFIDENCE MAP — bookkeeping identity until the SS-band binding
+  chain is imported; carried for counting, not constraint].
+- **F7 (formation window):** **T_amb = kT_form** if aggregation freezes at ambient [CONJECTURED — the 1873
+  cap mechanism is open; carried as a soft target].
+
+## 4. Elimination and counting (the CONV-004 ledger)
+
+Unknowns: 8 (U0q, U0e, U1–U6). Hard targets: M1–M6 = 6 (M7 via F6 is soft; M8 via F7 is soft; M9 feeds F6).
+κ-freedom: [1/3, 3] per map (J-SI-2). **The hard system is 6 equations / 8 unknowns at O(1) resolution:
+UNDER-determined by 2 — honestly stated.** What the data pin are COMBINATIONS:
+- **X1 ≡ α_q n C_r S_p / E_z = m_s² / (4π κ₁ (ħc)³)** — the Sea's colour-channel response density.
+- **X2 ≡ α_q / a = E_hDP / (κ₃ ħc)** and **α_e/α_q ≈ 6×10⁻³** — the channel-strength ladder.
+- **X3 ≡ C_r = E_c a / (8 κ₄ α_q ħc) = (κ₃/8κ₄)·E_c/E_hDP ≈ 2.5×10⁻⁴·O(1)** — **the cancellation is
+  measured: the quiescent Sea cancels the colour channel to a few parts in 10⁴.** Second substrate inference
+  available before scanning (F3+F4 combine; a and α_q drop out).
+- **D_st ≈ O(1)** (F5, above).
+Substituting X3 into X1 pins **n S_p / E_z** — the density-coherence-per-restoring combination. The two
+residual flat directions are (n vs S_p vs E_z internal split) and (T_amb) — exactly where new targets from
+other sectors (or the F7 cap mechanism) will bite. **Overdetermination margin at task-1 resolution: 0 on the
+hard system; the arc's growth path is importing more pinned corpus numbers as targets, not adding unknowns.**
+
+## 5. Task-2 plan
+
+Monte-Carlo existence scan over U (log-priors above, κ ∈ [1/3, 3]): accept a sample iff ALL hard targets are
+reproduced within the κ bands. Deliverables: existence verdict (non-empty/empty), the accepted region's
+marginal ranges (the "what the data reveal about the DP Sea" table), the pinned-combination values with
+uncertainties, and the no-refit forward predictions (F5/F6-falsifier channels, DAMIC edge, group point) from
+the accepted region. Kill-condition stands: an empty region is a structural falsification of the candidate.
