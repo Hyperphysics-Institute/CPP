@@ -377,3 +377,18 @@ candidate falsified as the DM at the χ corner. The mechanism question (does uni
 the rod's cage coherence, which color-neutral nucleons lack?) is the founder's to rule. **J11 (S_c) registered
 as the baryon sector's load-bearing unknown. External release (OSF) HELD pending D5. CONFRONT-3 tasks 2–4
 downstream of D5. Queue: D5 ruling → v1.3 under the chosen horn → CONFRONT-3 remainder → de-novo gap → panel.**
+
+## 22. D5 resolved by landscape: one non-sterile survival island, and S_c = R_N/R_s lands dead-center — ruling D5-A′ adopted provisionally with derivation debt (Patch 1880, 5 July 2026)
+
+Founder directive ("choose the choice that saves the candidate") executed as model selection by computation,
+with the motivation recorded as survival-conditional (verify `code/1880_d5_sc_landscape.py`; reasoning 1880;
+LZ pin 9.2×10⁻⁴⁸ @ 36 GeV, arXiv:2207.03764). The full-ladder S_c landscape: S_c ≳ 0.1 dead (XQC);
+**S_c ∈ [~0.005, 0.05] ALIVE (Island I: XQC 46 events vs 527, rock-shielded from LZ, np invisible)**;
+S_c ∈ (10⁻⁹, 0.003) dead (LZ — un-shielded; **the naive second-power dipole 1.3×10⁻³ lands here**);
+S_c ≲ 10⁻⁹ alive-but-sterile (Island II). **Ruling D5-A′: first-power color-dipole, S_c = R_N/R_s = 0.035 —
+the unique natural scale inside the unique non-sterile island.** Debts: derive the multipole order (must be
+first power — maximally falsifiable from inside the theory); DM-1 v1.3 retracting the np-selection claim
+(N ≈ 15–20 reverts to floor ceiling + dwarf window + tail pruning); panel re-consult. Signature space:
+near-threshold XQC-class events ×11 below current data; thermalized atmospheric/crustal rod population.
+J11 resolved-provisionally; **J12 registered (island-I residual pins: CRESST-surface/DAMIC-shallow/Dewar at
+25 GeV — unpinned, island could shrink). Queue: J12 pins → v1.3 → panel → derivation debts. OSF HELD.**
