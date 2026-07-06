@@ -309,3 +309,20 @@ N ≈ 15–20: alive and unobstructed** — the capture channel was never touche
 chain 1867→1869→1870→1871 closed and recorded. J8 closed; J10′ (MC bands: tumbling ×1.4, dt ×1.2) carried.
 **Queue: CONFRONT-2 → formation-lane N → paper integration (capture + measured floor + falsifier + audit
 trail) → panel.**
+
+## 17. CONFRONT-2: consistent — gapped color-residual channel vs gapless |SSV| mode; de-novo target pinned at m_s = χ·(ħc/r_c) = 7.8 MeV (Patch 1872, 4 July 2026)
+
+No conflict between R_s ≈ 25 fm (DM) and ξ ~ R_h (CC): channel decomposition — the screening is a GAPPED
+response channel (m_s = ħc/R_s = χ·ħc/r_c = 7.764 MeV at η = χ), the CC coherence is the GAPLESS |SSV| scalar
+(1107–1108); e^{−m_s r} cannot leak to cosmological r; D-FRAG spot check clean (rods = localized excesses,
+baryon footing). **The de-novo derivation target is now sharp: a χ·(ħc/r_c) gap in the color-residual channel,
+|SSV| scalar gapless — the gap in rung units IS χ.** Verify `code/1872_confront2_cc_xi_channel.py`; reasoning 1872.
+
+## 18. Formation-lane scoping: kT_form ≈ 16.5 keV lands on the 0860 ≤19 keV hook — log-robust — but the N-cap must be kinetic; coincidence registered, not claimed (Patch 1873, 4 July 2026)
+
+Isodesmic equilibrium inversion (all inputs pinned): ⟨N⟩ = 15–20 ⟺ kT_form = 16.2–16.6 keV, insensitive to
+the occupancy judgment. Kinetic check: rate/H ≈ 10⁵ there — equilibrium tracks, so the cap is kinetic or
+collisional (candidates: re-equilibration shutoff, virialization tail-pruning, or smaller E_b within the 0860
+window — the last inverts into an E_b selection worth a dedicated arc). Verify
+`code/1873_formation_lane_scoping.py`; reasoning 1873. **Queue: paper integration (founder-gated: §5 rewrite
+carrying capture + measured floor + group falsifier + correction-chain audit) → CONV-001 panel.**
