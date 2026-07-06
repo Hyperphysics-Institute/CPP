@@ -50,3 +50,25 @@ the compute-before-claim rule catching its author, again.
 
 P3 computation → P1 assembly → paper (v1.0-DRAFT) → CONV-001 panel. DM-3 sessions run DM-1's stability
 clock (fourth DM-lane session banked at this patch).
+
+## 4. P3 RESULT — S1 (the plateau) DELIVERED implementation-independent; S2/S3 provisional pending capture-model reconciliation (Patch 2302, 6 July 2026)
+
+Verify `code/2302_dm3_sigma_v_shape_discriminant.py` (the script states its own tension when run).
+
+**S1 — THE PLATEAU (the paper's sharpest discriminant; STANDS):** CPP's high-velocity behaviour is the
+1871 MEASURED geometric floor (0.05 → 0.035 → 0.02 across 1150–3500 km/s), while the standard SIDM
+phenomenological form σ₀/(1+(v/w)⁴), FITTED to the same dwarf+LSB anchors (σ₀ = 4.69, w = 135 km/s), has
+crashed to 10⁻³–10⁻⁵ there: **divergence ×56 (group), ×135 (cluster), ×2000 (Bullet)** — pure shape, zero
+normalization freedom. **F1 → F1′, a three-way decision channel:** group-scale detection at 0.03–0.05
+selects CPP over single-mediator SIDM; a firm 0.5 kills CPP; a firm null below ~0.02 kills CPP's measured
+floor and favors SIDM. Every branch is decisive; Sagunski-class analyses at 0.03–0.1 sensitivity are the
+instrument.
+
+**S2 (low-v saturation) and S3 (mid-band curvature): PROVISIONAL — J-DM3-3-OPEN.** The at-patch classical
+capture implementation disagrees with the panel-ratified v1.2 anchors in the mid/low band (gives 0.34 at
+LSB vs registered 0.74–0.85; 50 at dSph vs registered grazing-low). The registered anchors are
+authoritative; the implementation's capture SHAPE is wrong between ~15–300 km/s. **Required before paper
+assembly: pull the corpus's registered capture computation and recompute S2/S3 from it.** Caught at-patch
+by the anchor cross-check — the compute-before-claim rule firing within its own patch.
+
+**Arc queue updated: J-DM3-3 reconciliation → S2/S3 recompute → P1 assembly → paper → panel.**
