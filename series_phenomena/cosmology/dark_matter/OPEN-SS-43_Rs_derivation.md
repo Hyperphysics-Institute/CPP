@@ -484,3 +484,14 @@ D_st-prior sensitivity check (SI follow-up). No attribution anomaly this cycle. 
 `DM-1/review/reviews_v1.4_panel_returns.md`. **DM-1 is v1.4 SHIPPED. THE STABILITY-CYCLE CLOCK STARTS AT
 THIS PATCH — OSF release on its completion. Open threads (none load-bearing): D_st sensitivity, DAMIC-floor
 pin, rod–nucleus MC refinement, formation cap, F1/F5 data watch, the standing derivation target, DM-2/DM-3.**
+
+## 30. Hardening — DAMIC adjudication fires as pre-registered; island trims to [0.012, 0.05]; D_st concern discharged; F5 sharpens (Patch 1891, 6 July 2026)
+
+Bounding confrontation (MF17/MF18/1510.02126 pins; no digitization needed at ≥10³ margin): the unshielded
+corner (S_c < 0.0124) carries σ_n = 2×10⁻³³–3×10⁻³¹ — inside DAMIC-shallow's excluded band. **Island trims
+to S_c ∈ [0.012, 0.05]; ruling point untouched. NOT a correction — the v1.4 notice pre-registered exactly
+this adjudication; paper untouched; stability cycle stands.** D_st-prior sensitivity (queued at v1.4):
+discharged — trimmed-window F5 prior-robust across 1.5 orders: **8–50 events, median ~17, margin ×30**
+(ruling-point form 46/×11 unchanged); refreshed figures to the OSF-deposit addendum. Verify
+`code/1891_...py`; reasoning 1891. **Queue: OSF deposit package → reader's guide → cycle completion →
+release.**
