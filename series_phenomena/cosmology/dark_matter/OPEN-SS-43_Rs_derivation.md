@@ -470,3 +470,17 @@ updated (F5 dual-form; DAMIC edge 40%; F6; group); governance revised (overdeter
 stability cycle + open derivation target). Compile clean. Package
 `DM-1/review/DM-1_review_package_v1.4.md`: asks A–D; §5 invites the unfalsifiability attack on CONV-004
 itself. Queue: panel → fold → ship → stability cycle → OSF.
+
+## 29. v1.4 SHIPPED — panel 5/5; CONV-004 survives its own invited attack; the stability-cycle clock starts (Patch 1890, 6 July 2026)
+
+Third five-member cycle: **5/5** (Grok "SHIP"); unanimous on the SI discipline and the falsifiers; **every
+reviewer returned the invited unfalsifiability attack on CONV-004 in the programme's favor** — the
+overdetermination rule + retained kill-branches judged sufficient ("falsifiability bookkeeping, not an
+escape"). Folded: the provisional-empirical-anchors sentence with the anti-semantic-drift guard (measured ≠
+established); the governance hard rules (no MEASURED→DERIVED promotion without an independent derivation
+preserving the confrontation ledger; Layer-C promotion = one full no-supersession stability cycle +
+independent-channel overdetermination — "so governance cannot keep moving the goalposts"). Queued: F5
+D_st-prior sensitivity check (SI follow-up). No attribution anomaly this cycle. Returns:
+`DM-1/review/reviews_v1.4_panel_returns.md`. **DM-1 is v1.4 SHIPPED. THE STABILITY-CYCLE CLOCK STARTS AT
+THIS PATCH — OSF release on its completion. Open threads (none load-bearing): D_st sensitivity, DAMIC-floor
+pin, rod–nucleus MC refinement, formation cap, F1/F5 data watch, the standing derivation target, DM-2/DM-3.**

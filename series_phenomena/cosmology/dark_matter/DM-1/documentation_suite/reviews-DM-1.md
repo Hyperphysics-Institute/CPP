@@ -96,3 +96,15 @@ self-identifies as "Claude Opus" — flagged, counted pending founder confirmati
 it). Full returns: `review/reviews_v1.3_panel_returns.md`. **DM-1 v1.3 SHIPPED.** Promotion gates: the
 m_s = χ·(ħc/r_c) gap and the first-multipole coupling order, plus a stability cycle. OSF decision returned
 to the founder.
+
+---
+
+## v1.4 cycle (6 July 2026, Patches 1889–1890)
+
+Short re-look on the CONV-004 supersession + SI results. **5/5 ratification** (Grok "SHIP"); unanimous on B
+(SI discipline) and D (falsifiers); **§5(i) — the invited unfalsifiability attack on CONV-004 — returned in
+the programme's favor by all five** ("falsifiability bookkeeping, not an escape"). Folded (Patch 1890):
+provisional-empirical-anchors sentence + anti-drift guard; governance hard rules (no MEASURED→DERIVED without
+independent derivation preserving the confrontation ledger; Layer-C promotion = one full no-supersession
+stability cycle + independent-channel overdetermination). F5 D_st-prior sensitivity queued. No attribution
+anomaly. **DM-1 v1.4 SHIPPED; the stability-cycle clock starts; OSF on its completion.**
