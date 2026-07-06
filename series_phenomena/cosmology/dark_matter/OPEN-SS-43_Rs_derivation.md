@@ -506,3 +506,12 @@ sessions; zero load-bearing corrections, 1891-precedent carve-out for pre-regist
 standing REFUTE; residual scan; founder sign-off); the 1891 addendum text (island [0.012, 0.05]; F5 8–50,
 median ~17, ×30). Paper untouched; cycle intact. **Queue: reader's guide (item 3) → cycle completion →
 deposit.**
+
+## 32. Reader's guide written — the release plan's three items are complete (Patch 1893, 6 July 2026)
+
+`DM-1/readers_guide.md`: the cold-reader companion — five-input table (ontology-independence stated), the
+claim led by χ's prior provenance, both near-kills told straight (incl. both retractions), the
+measured-coefficient turn with printed counting, the ordered kill list, a 30-minute audit path (1865 →
+1871 → 1879 → 1888), and the objections we agree with. Deposit manifest updated (item 8 + wiki front page).
+**Release plan complete: hardening ✓ (1891), deposit package ✓ (1892), reader's guide ✓ (1893). Remaining:
+the stability-cycle clock → closing residual scan → founder sign-off → deposit.**

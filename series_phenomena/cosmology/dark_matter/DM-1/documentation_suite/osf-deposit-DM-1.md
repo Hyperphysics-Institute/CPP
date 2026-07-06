@@ -78,6 +78,7 @@ coefficients; effective theory; DP Sea; substrate inversion; falsifiability; mul
 5. `founders_voice/founder_ruling_measured_coefficients_2026-07-06.md` (CONV-004, verbatim)
 6. `osf_registration_qdp_dm_conjecture.md` (the 8 June priority record; see §1)
 7. `DEPOSIT_ADDENDUM_1891.md` (§7 below — generate at deposit time from this section)
+8. `DM-1/readers_guide.md` (the cold-reader companion — Patch 1893; ALSO paste its first paragraph into the OSF wiki front page)
 
 **Zipped archive `DM-1_full_record.zip`:**
 8. `DM-1/documentation_suite/` (complete: changelog, development, glossary, keywords, mechanism ×2,
