@@ -65,3 +65,17 @@
   substrate already contains.
 - **Future work — What would make it discriminating?** The E_bond pin (SF-2/SF-5 make-or-break): pinning it
   collapses N_dwarf to a single σ/m → a hard core-size-vs-halo-mass curve.
+
+---
+
+## v1.2 cycle (5 July 2026, Patches 1875–1876)
+
+**Package:** `review/DM-1_review_package_v1.2.md` (Patch 1875). **Panel: FIVE members** (grown from four):
+ChatGPT, Grok, Gemini, Copilot, DeepSeek. **Verdict: 5/5 ratification** — 3× RATIFY (Grok: "SHIP"; DeepSeek:
+"full ratification"; Gemini-slot: substantive claims ratified, notation change required), 2×
+RATIFY-WITH-CHANGES (ChatGPT; Copilot per-claim). No RESTATE, no REFUTE. Unanimous on claims B/D/E. Five
+changes requested, all folded (Patch 1876): `\smt` macro, working-synthesis label, in-claim J4 conditionality,
+process-why sentence, F1 disqualifier phrasing. **Anomaly:** the Gemini-slot return self-identifies as
+"Claude Opus / AI Review Node" — independence to be confirmed by founder; verdict counted pending. Full
+verbatim returns: `review/reviews_v1.2_panel_returns.md`. **DM-1 v1.2 SHIPPED.** Promotion gate beyond
+Layer-C: the de-novo gap derivation, m_s = χ·(ħc/r_c) (OPEN-SS-43 §17).

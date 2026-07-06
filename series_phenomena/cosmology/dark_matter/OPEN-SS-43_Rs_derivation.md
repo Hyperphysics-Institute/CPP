@@ -326,3 +326,18 @@ collisional (candidates: re-equilibration shutoff, virialization tail-pruning, o
 window — the last inverts into an E_b selection worth a dedicated arc). Verify
 `code/1873_formation_lane_scoping.py`; reasoning 1873. **Queue: paper integration (founder-gated: §5 rewrite
 carrying capture + measured floor + group falsifier + correction-chain audit) → CONV-001 panel.**
+
+## 19. DM-1 v1.2 SHIPPED — panel 5/5, five changes folded; the de-novo gap is the standing gate (Patch 1876, 5 July 2026)
+
+CONV-001 cycle complete on the v1.2-DRAFT (package Patch 1875): **five-member panel this round (ChatGPT, Grok,
+Gemini, Copilot, DeepSeek) — 5/5 ratification** (3× RATIFY incl. Grok "SHIP" and DeepSeek "full ratification";
+2× RATIFY-WITH-CHANGES), no RESTATE, no REFUTE. Per-claim: B (η = χ characterization), D (measured floor),
+E (correction-chain disclosure) unanimous; A, C, F carry minor wording changes. All five requested changes
+folded in Patch 1876: (1) `\smt` transport-observable macro (archival `\smm` body untouched); (2) J3′ labeled
+a working synthesis; (3) J4 + density-integral conditionality stated in-claim; (4) process-why sentence;
+(5) F1 phrased as a pre-registered disqualifier. **Attribution anomaly flagged** (Gemini-slot return
+self-identifies as a Claude node; founder to confirm independence; verdict counted pending). Returns:
+`DM-1/review/reviews_v1.2_panel_returns.md`. **DM-1 is v1.2 SHIPPED.** OPEN-SS-43's remaining work is the
+sharpened de-novo target (§17): derive the χ·(ħc/r_c) = 7.76 MeV gap in the colour-residual channel with the
+|SSV| scalar gapless — the promotion gate beyond Layer-C. Secondary open threads: formation-cap mechanism
+(§18), soft-MC refinements (J10′), F1 group-scale data watch.
