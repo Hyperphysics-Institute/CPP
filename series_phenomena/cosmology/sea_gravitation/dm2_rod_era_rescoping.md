@@ -140,3 +140,15 @@ decoupling) all conditional on those two and stated so. CONV-004 tags: the mecha
 DERIVED-structural; Gate-1/B1 grounding CONJECTURED; the R_h selection CONJECTURED-with-empirical-anchor.
 **Arc advances to L3 — paper assembly under the falsification-first rule (the gate has now decisively
 NOT killed: L1 pass, L2 pass, D3-1 defused; paper framing is permitted).**
+
+## L3 — DM-2 v1.0-DRAFT ASSEMBLED (Patch 1898, 6 July 2026)
+
+`DM-2/DM-2_sea_gravitation_dark_sector.tex` — compiled clean. Structure: the referential-zeroing box
+(§2, the quotable dissolution); one-rule-four-cases table (§3); L1 with the one-scale insight (§4); the
+Λ residual in the REFRAMED mode-structure language with the shell-sum symmetry unification stated —
+*dark energy = the Sea's gapless mode at the horizon; dark matter = aggregates coupled through its gapped
+mode; two modes, one medium* (§5); L2 decoupling (§6); the condition ledger verbatim-faithful (§7:
+Gate-1/B1 the break-point; D3(b) argument-not-derivation with w(z) as falsifier channel; D3-1 defused on
+the record; DM-1 falsifiers inherited); grade one-mechanism-four-cases-two-conditions (§8). CONV-004 tags
+in-text per the step-3 rule. Authors: Thomas Lee Abshier, ND + Claude Opus. NOT SHIPPED — CONV-001 panel
+pending founder go.
