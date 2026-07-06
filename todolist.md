@@ -55,6 +55,24 @@ Every **load-bearing numerical claim** in a paper, revision notice, registry ent
 
 Origin: DM-1 v1.0 quoted the 0860 hoop ledger's collision energies (~1.95 MeV / ~0.78 keV; N=1183, m=264 MeV) in the Cross-Rod paragraph (N=5–60, m_el=1408 MeV); the paper's central velocity-dependence discriminant rested on a retired morphology's numbers, shipped v1.0, and passed the panel 4/4 — the values were internally plausible but untraced. Caught by in-house audit (Patch 1859) six days post-ship; convention requested independently by all four reviewers at the v1.1 re-ratification (Patch 1862). Author-side failure mode recorded in `templates/AI_team_expectations.md` (Opus). Registered 3 July 2026, Patch 1862.
 
+### CONV-004 — The measured-coefficient (Galilean-layer) discipline (founder-ruled, DM sector first)
+
+Where the substrate physics beneath a result is genuinely unresolved (DP density, lattice occupancy, ZBW
+amplitude, cancellation/superposition factors), the programme may claim the STRUCTURE and let DATA fix the
+coefficients that encode the unresolved depth — Galileo's law before Newton's mechanism; effective-theory
+practice one level below where conventional physics believes anything exists. Rules: (1) every such number
+carries a ledger tag — **MEASURED** (inverted from data through the claimed structure), **DERIVED**
+(theorem-level from axioms), or **CONJECTURED** — and the tag travels with the number everywhere (CONV-003
+provenance extended); (2) a measured coefficient is honest only under **overdetermination** — it must survive
+channels it was not fitted to, pre-registered, no refit; the measured-vs-unknown count is kept visible, and
+the moment unknowns outnumber measurements the work is curve-fitting and must say so; (3) the discipline
+applies ONLY where derivation is premature — sectors holding zero-parameter DERIVED results (the programme's
+strongest asset) are NOT re-framed; (4) the derivation layer remains the standing goal: with coefficients
+pinned, the later axiomatic derivation is confirmed by overdetermination against numbers it did not fit — a
+firewall the tags exist to guarantee (no measured value may silently leak into a "derivation" that then
+"confirms" it). Origin: founder methodological ruling, 6 July 2026 (DM sector; D5/F3′ context), verbatim in
+`founders_voice/founder_ruling_measured_coefficients_2026-07-06.md`. Registered Patch 1886.
+
 ---
 
 ## P1 — Must clear before next paper (SS-10)

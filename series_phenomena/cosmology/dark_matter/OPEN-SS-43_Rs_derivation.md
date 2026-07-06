@@ -415,3 +415,25 @@ stability cycle with no load-bearing corrections; review-lessons record = this f
 **DM-1 is v1.3 SHIPPED. Standing gates: m_s gap; multipole order; stability cycle. OSF decision returned to
 the founder. Open threads: derivation debts (the campaign's remaining physics), DAMIC-floor pin (island
 bottom edge), rod–nucleus MC refinement (Gemini, low-priority), F1/F5 data watch, formation cap, DM-2/DM-3.**
+
+## 25. CONV-004 adopted — the debts become measurements; the SUBSTRATE INVERSION ARC opens (Patch 1886, 6 July 2026)
+
+Founder methodological ruling (verbatim in `founders_voice/founder_ruling_measured_coefficients_2026-07-06.md`;
+registered as CONV-004 in `todolist.md`): where substrate physics is unresolved, claim the structure and let
+data fix the coefficients — Galileo before Newton — with MEASURED/DERIVED/CONJECTURED tags, an
+overdetermination requirement, scope limited to derivation-premature sectors, and the derivation layer
+retained as the standing goal ("the coefficient-free layer will fall faster, with the coefficients in place
+and the unified theory confirming them by overdetermination"). **Under CONV-004 the campaign's two debts are
+re-read as its first two substrate MEASUREMENTS: m_s = 7.76 MeV [MEASURED: halo ladder → gap; = χ·ħc/r_c] and
+S_c ∈ [0.005, 0.05] ∼ R_N/R_s [MEASURED: XQC/LZ/shielding ladder → colour-singlet suppression].**
+
+**SUBSTRATE INVERSION ARC (opened):** invert the full measured set {m_s, S_c, E_ee, ε, m_el, d, η = χ} into
+the deep unknowns the founder named (DP density, lattice occupancy, ZBW amplitude, cancellation/superposition
+factors). Deliverables: (1) the **existence region** — do substrate parameters exist producing ALL measured
+values simultaneously? (non-empty and natural = the existence proof the founder's bet needs; EMPTY = a
+structural falsification that legitimately kills the candidate); (2) the explicit **measured-vs-unknown
+count**, kept visible per CONV-004; (3) **no-refit predictions** for F5, F6, the DAMIC-floor pin, and the
+group point from the inverted substrate. Paper hook: "What the dark-matter data reveal about the DP Sea."
+**Obligation carried: a v1.4 wording cycle** — the panel-ratified "derivation debt / non-upgradable-until-
+derived" governance sentence must be revised to the measured-parameter framing and re-ratified (short cycle).
+OSF: after the inversion existence proof + v1.4 + a stability cycle.
