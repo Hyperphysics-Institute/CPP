@@ -271,3 +271,25 @@ check, founder may deem non-blocking]; (2) CONFRONT-2 (CC ξ-channel at η = χ)
 (4) DM-1 §5 integration under CONV-003 (capture channel + derived-shape coat channel + the group falsifier +
 the 1867 exposure correction) → CONV-001 panel. Founder may reorder.
 
+
+## 15. LOOP-BACK CORRECTION — the soft MC supersedes the 1869 shape; cluster verdict is normalization-limited and marginal (Patch 1870, 4 July 2026)
+
+The gold-standard check was run (`code/1870_soft_rod_mc.py`; reasoning 1870): full rigid-body rod–rod MC with
+the screened coat force law, registered scales only, robustness seeds + dt/2 probe. **It does NOT confirm
+§14's shape: S_MC(1150) = 0.40 ± 0.06, S_MC(1500) = 0.37 ± 0.05 (dt/2 probe 0.30) — ~4–7× softer than the
+deflection integral at cluster velocities.** The central-potential reduction missed multi-segment contact
+accumulation and the torque channel; it was a lower bound on transport. **§14's "cluster ladder passes with
+×3.5 margin" is RETRACTED** (this section corrects; §14 retained for the audit trail per house discipline).
+
+Where it stands now: cluster total = 0.25 ± 0.04 (convention normalization) to ≈ 0.11–0.14 (MC-absolute
+normalization, 0.54× convention, known-biased low by sampling truncation) — **×1.0–1.9 of the tightest
+isotropy-calibrated bounds; a live marginal tension.** Group prediction updates to ≈ 0.1–0.3 (1.3–1.9σ below
+Sagunski's mild 0.5 ± 0.2) — still the near-term discriminant. Dwarf pin, LSB, Bullet, np channel: all
+unchanged, all pass. **χ at N ≈ 15–20: alive, not clean.**
+
+Resolution now concentrates in: (a) MC refinement (sampling-disk truncation, J8 element-spacing pin, tumbling
+temperature, dt convergence) → settle the normalization band [0.32, 0.59]; (b) **D4-C bound-applicability,
+now operative** — the < 0.13–0.19 cluster limits assume isotropic point-particle scattering; rod DM's
+anisotropic, rotational-channel transport must be mapped onto core-formation efficiency quantitatively.
+J10 (MC systematics) registered. Queue: MC refinement → D4-C → CONFRONT-2 → formation-lane N → paper
+integration (carrying the corrected floor story and the marginal tension honestly) → panel.
