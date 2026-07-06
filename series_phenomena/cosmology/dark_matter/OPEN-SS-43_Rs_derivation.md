@@ -335,8 +335,7 @@ Gemini, Copilot, DeepSeek) — 5/5 ratification** (3× RATIFY incl. Grok "SHIP" 
 E (correction-chain disclosure) unanimous; A, C, F carry minor wording changes. All five requested changes
 folded in Patch 1876: (1) `\smt` transport-observable macro (archival `\smm` body untouched); (2) J3′ labeled
 a working synthesis; (3) J4 + density-integral conditionality stated in-claim; (4) process-why sentence;
-(5) F1 phrased as a pre-registered disqualifier. **Attribution anomaly flagged** (Gemini-slot return
-self-identifies as a Claude node; founder to confirm independence; verdict counted pending). Returns:
+(5) F1 phrased as a pre-registered disqualifier. **Attribution anomaly RESOLVED** (founder confirms 5 Jul: the slot-3 return was Gemini, which consistently misidentifies itself; the 5/5 stands unqualified). Returns:
 `DM-1/review/reviews_v1.2_panel_returns.md`. **DM-1 is v1.2 SHIPPED.** OPEN-SS-43's remaining work is the
 sharpened de-novo target (§17): derive the χ·(ħc/r_c) = 7.76 MeV gap in the colour-residual channel with the
 |SSV| scalar gapless — the promotion gate beyond Layer-C. Secondary open threads: formation-cap mechanism

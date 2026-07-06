@@ -3,7 +3,7 @@
 **Cycle:** CONV-001 re-ratification of DM-1 v1.2-DRAFT (package `DM-1_review_package_v1.2.md`, Patch 1875).
 **Panel:** FIVE members this round (panel grew from four): ChatGPT, Grok, Gemini, Copilot, DeepSeek — attribution by the founder's delivery order.
 
-**ATTRIBUTION ANOMALY (flagged, not adjudicated):** the return in the Gemini slot self-identifies as
+**ATTRIBUTION ANOMALY — RESOLVED (founder confirmation, 5 July 2026):** the founder confirms the slot-3 return was in fact Gemini, which "has consistently misidentified itself"; the return is independent and its verdict stands without qualification. Original flag retained below for the record. **Original flag:** the return in the Gemini slot self-identifies as
 "Claude Opus (Anthropic) / AI Review Node." If that node is in fact a Claude instance, its independence from
 the (Claude-authored) campaign should be confirmed by the founder; its verdict is recorded and counted below
 pending that confirmation. The DeepSeek return carries a date typo ("5 May 2026"; the cycle ran 5 July 2026).
