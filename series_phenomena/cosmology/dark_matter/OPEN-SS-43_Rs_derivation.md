@@ -448,3 +448,15 @@ now a measured number); D_st = O(1) (singlets present a static leading moment).*
 (200k MC): **NON-EMPTY** — sensible region (α_q median 0.75; occupancy f_occ ~ 0.1, a sparse Sea; C_r
 independently confined to the 10⁻⁴ decade). Kill-condition did not fire. **Queue: SI task 2 (tightened scan +
 substrate table + no-refit predictions) → DM-1 v1.4 wording cycle → stability cycle → OSF.**
+
+## 27. SI-2 — the portrait, the F7 corner, the predictions (Patch 1888, 6 July 2026)
+
+Tightened scan (2M numpy samples, SI-1 criteria): **913 accepted — existence confirmed ×10 statistics.**
+Portrait (16/50/84, prior-shaped entries flagged): α_q = 0.89 (0.35–2.3); α_e = 5.5×10⁻³;
+**C_r = 2.4×10⁻⁴ (0.6–8.7×10⁻⁴)**; D_st = 0.34 (0.15–0.67; window-softened from the center-point ≈1);
+**f_occ = 0.10 (sparse Sea)**; X1 = n·S_p/Ez pinned to a decade. **F7-conditional corner EXISTS** (E_z ≈ 16
+keV ⇒ f_occ ~ 4×10⁻³, n ~ 3×10⁻³ fm⁻³, S_p ~ 0.04 — very sparse, weakly coherent). **No-refit predictions:**
+F5 XQC-reflight 46 events at the ruling point (×11) / 2–28 region-weighted (median ×98); F6 n̄ ~ 2×10¹³ cm⁻³;
+**DAMIC edge: 40% of the region unshielded — the future pin adjudicates it**; group 0.037–0.05 standing.
+Verify `code/1888_...py` + XQC grid json; reasoning 1888. **Queue: DM-1 v1.4 wording cycle → stability
+cycle → OSF.**
