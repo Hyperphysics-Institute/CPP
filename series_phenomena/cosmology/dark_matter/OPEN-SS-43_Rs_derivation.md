@@ -293,3 +293,19 @@ now operative** — the < 0.13–0.19 cluster limits assume isotropic point-part
 anisotropic, rotational-channel transport must be mapped onto core-formation efficiency quantitatively.
 J10 (MC systematics) registered. Queue: MC refinement → D4-C → CONFRONT-2 → formation-lane N → paper
 integration (carrying the corrected floor story and the marginal tension honestly) → panel.
+
+## 16. J8 pinned — the normalization was the artifact; cluster ladder passes by direct measurement; χ unobstructed (Patch 1871, 4 July 2026)
+
+Registry pin (1812/0835): element pitch = corpus rung spacing **d ≈ 1.0–1.3 fm**; 1868's 4.7 fm conflated coat
+radius with structural pitch. MC rerun at physical geometry (L(N=18) ≈ 20 fm; verify
+`code/1871_soft_rod_mc_pinned_geometry.py`): **σ_T/m measured directly = 0.094–0.154 (50 km/s) → 0.027–0.044
+(1500) cm²/g.** Cluster total ≈ 0.03–0.05 → **entire ladder passes, ×2.7–4.5 margin on Andrade — by
+measurement, not composition.** The ε·0.11·N convention (1860) is superseded (it was the coat-fattened
+side-projection at dwarf v — the true origin of 1868's 3% hit — overestimating transport ~4–6×): **paper
+exposure registered for §5 integration.** Dwarf coring unaffected (capture-carried). Group ≈ 0.037–0.05 —
+2.3σ below Sagunski, an undershoot that survived every floor treatment: **robust falsifier, final form:
+group-scale σ/m ≈ 0.03–0.05.** D4-C stands down (σ_V/σ_T ≈ 0.9–1.2; rotational uptake 3–9%). **χ at
+N ≈ 15–20: alive and unobstructed** — the capture channel was never touched by the floor arc. Correction
+chain 1867→1869→1870→1871 closed and recorded. J8 closed; J10′ (MC bands: tumbling ×1.4, dt ×1.2) carried.
+**Queue: CONFRONT-2 → formation-lane N → paper integration (capture + measured floor + falsifier + audit
+trail) → panel.**
