@@ -1,0 +1,187 @@
+% DM-3: The Discriminating Predictions
+% CHANGELOG
+% v1.0-DRAFT (Patch 2305, 6 July 2026) --- initial assembly (the harvest paper
+%   closing the series' first arc). Synthesizes: P1 protocol table (2304, incl.
+%   the Javorsek J-DM3-1 pin); P2 bound-state threshold (2301); P3 shape
+%   discriminants (2302/2303: S1 plateau, S2' log saturation, S3' running-slope
+%   law + chi inversion, J-DM3-3 reconciliation on record). Inheritance ledger:
+%   conditional on DM-1's D5-A' ruling (PROVISIONAL) and DM-2's gate
+%   (Gate-1/B1 + EP sub-item; D3(b) + F-DM2-1). CONV-004 tags throughout.
+%   NOT SHIPPED: CONV-001 panel review pending.
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{mdframed}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{booktabs}
+\newcommand{\som}{\sigma/m}
+\newcommand{\Rs}{R_s}
+\title{\textbf{DM-3: The Discriminating Predictions}\\[4pt]
+\large Nine observational protocols for the Cross-Rod dark-matter candidate ---
+two of them two-sided --- and a proposal to measure $\chi = \varphi^{-3}/6$ from
+galactic dynamics}
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)\\[2pt]
+\normalsize Hyperphysics Institute --- Conscious Point Physics}
+\date{6 July 2026 --- v1.0-DRAFT (panel review pending)}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent DM-1 identified a dark-matter candidate --- the Cross-Rod, an $N \approx 15$--$20$ element
+substrate aggregate at $25.3$~GeV whose screening length is the zero-parameter value
+$\Rs = r_c/\chi = 25.4$~fm --- and DM-2 certified its gravitational footing. DM-3 is the harvest: the
+candidate's complete testable surface, assembled as nine observational protocols, each with an
+instrument class, an observable, and explicit decision bands. Three results organize the suite.
+\textbf{(1) The plateau.} The candidate's high-velocity self-interaction is a \emph{measured} geometric
+floor ($\som = 0.05 \to 0.02$ across $1150$--$3500$~km/s), while the standard velocity-dependent SIDM
+form fitted to the same dwarf and LSB anchors has collapsed to $10^{-3}$--$10^{-5}$ there: a shape
+divergence of $\times 56$ (groups), $\times 121$ (clusters), $\times 2000$ (Bullet) with zero remaining
+normalization freedom. Group-scale analyses at current sensitivity are therefore a \emph{three-way}
+channel (F1$'$): a detection at $0.03$--$0.05$ selects the candidate over single-mediator SIDM; a firm
+$0.5$ kills it; a firm null below $0.02$ kills its floor and favors SIDM. \textbf{(2) The running-slope
+law.} The dissipative-reach capture mechanism yields a closed-form local velocity exponent,
+$p(v) = 4\Rs/(b_{\max}(v) + \Rs)$, running $0.60 \to 0.98 \to 1.80 \to 3.0$ across $10 \to 600$~km/s ---
+a shape neither a power law nor an SIDM knee reproduces --- and the law \emph{inverts}: two slope
+measurements determine $\Rs$ from halo data alone. Since $\Rs = r_c/\chi$, this is, to our knowledge,
+the first proposal to measure a lattice-geometry constant from galactic dynamics (F-DM3-2).
+\textbf{(3) The bound-state threshold.} The rod--nucleus attractive channel supports bound states only
+above a sharp critical mass number: at the ruling coupling \emph{no terrestrial element binds}
+($A_{\rm thresh} = 257$; Pb sits at $s = 1.32$ against the critical $1.68$), so the anomalous-isotope
+prediction is a clean null over most of the survival island --- itself discriminating against generic
+composite dark matter --- switching to a heavy-element-only population ($A \gtrsim 186$) at the island's
+top edge, four orders of magnitude below the pinned AMS limits (Javorsek et al., anomalous Au at
+$200$--$350$~amu; a rod-bound Au nucleus is $224$~amu). The suite further carries the XQC-class reflight
+prediction ($46$ events at the ruling point; $8$--$50$ region-weighted, a factor $11$--$30$ below
+existing data), the deep-Earth population, the np consistency bound, the multipole kill-branches, the
+dSph saturation band $\sigma(10\,{\rm km/s}) \approx 15$, and the live DESI-era $w(z)$ watch inherited
+from DM-2. Everything is conditional on DM-1's explicitly provisional coupling ruling and DM-2's named
+open gate, and every kill propagates: this paper states where the candidate dies, where it is merely
+constrained, and --- unusually --- where it can be positively selected.
+\end{abstract}
+
+\section{Role in the series}
+DM-1 (v1.4) identified the candidate and survived three adversarial review cycles including one
+unanimously ratified retraction; DM-2 (v1.0) certified that the rods gravitate correctly and the Sea
+does not, on one sourcing rule. DM-3 completes the arc's first pass: it is where the candidate can die,
+and --- through its two two-sided channels --- where it can win. The campaign's pedigree is
+falsification-first in practice, not posture: five load-bearing errors were caught in-house before
+external exposure, two of them by computations that overturned the very heuristics proposing them
+(the isotope kill-risk, \S\ref{sec:bound}; the capture-shape implementation, \S\ref{sec:shape}).
+
+\section{The shape of $\sigma(v)$ (P3)}
+\label{sec:shape}
+The registered interaction is dissipative-reach capture on the screened colour residual --- the pair
+captures when it enters the region where the potential dominates its kinetic energy,
+$V(b_{\max}) = \tfrac{1}{2}\mu v^2$ with $V(r) = (E_c r_c/r)e^{-r/\Rs}$ --- plus the elastic floor
+\emph{measured} by rigid-body Monte Carlo at registered geometry (DM-1). A conservative-ballistic
+treatment cannot capture at all (energy conservation); the 2302$\to$2303 reconciliation of exactly that
+error is on the record, and the reconciled curve validates every registered anchor before claiming
+anything (dwarf $4.38$; LSB $0.74$; dSph@10 $= 14.6$, the registered grazing). Three shape statements:
+
+\textbf{S1 --- the plateau.} With the SIDM comparator $\sigma_0/(1+(v/w)^4)$ fitted to the same
+dwarf+LSB anchors ($\sigma_0 = 4.69$, $w = 135$~km/s), the divergence at high velocity is pure shape:
+\begin{center}\begin{tabular}{@{}rrrr@{}}
+\toprule
+$v$ (km/s) & CPP ($\som$) & SIDM-fit & ratio \\
+\midrule
+10 & 14.6 & 4.69 & 3.1 \\
+50 & 4.38 & 4.60 & 1.0 \\
+200 & 0.74 & 0.81 & 0.9 \\
+1150 & 0.046 & $9\times10^{-4}$ & 51 \\
+1500 & 0.037 & $3\times10^{-4}$ & 121 \\
+3500 & 0.021 & $\sim10^{-5}$ & $\sim$2000 \\
+\bottomrule
+\end{tabular}\end{center}
+
+\textbf{S2$'$ --- logarithmic saturation.} As $v \to 0$ the reach grows as $b \sim \Rs\ln(1/v^2)$, so
+$\sigma_{\rm cap} \propto \ln^2(1/v)$: slower than any power law, faster than a plateau. The dSph
+grazing becomes a prediction: $\sigma(10) \approx 15$; analyses firming the empirical window's low edge
+above $\sim$17 kill the candidate; landings at $12$--$18$ select it over both flat-plateau and
+steep-power SIDM (F-DM3-3).
+
+\textbf{S3$'$ --- the running-slope law.} Differentiating the reach condition:
+\[ p(v) \;\equiv\; -\frac{d\ln\sigma_{\rm cap}}{d\ln v} \;=\; \frac{4\Rs}{b_{\max}(v) + \Rs},
+\qquad p = 0.60,\ 0.98,\ 1.80,\ 3.0 \ \text{at}\ v = 10, 50, 200, 600~\text{km/s}, \]
+verified numerically to two decimals across the capture regime. The running inverts: two slope
+measurements $(p_1, p_2)$ at known velocities determine $\Rs$ directly, independent of normalization
+and of every laboratory channel. \textbf{Since $\Rs = r_c/\chi$ with $\chi = \varphi^{-3}/6$ the
+programme's Capotauro constant, halo velocity-structure data measure $\chi$ in situ} (F-DM3-2). [Tags:
+capture form DERIVED at the registered ledger; floor MEASURED; the comparator is a fit to the same
+data.]
+
+\section{The bound-state channel (P2)}
+\label{sec:bound}
+The rod--nucleus channel at the DM-1 ruling ($S_c = R_N/\Rs = 0.035$, island $[0.012, 0.05]$) is
+attractive, $V = -A\,E_{rN}S_c\,(r_c/r)e^{-r/\Rs}$, and an attractive Yukawa binds only above the
+critical screening coupling $s = 2\mu g^2 \Rs/(\hbar c)^2 \geq 1.680$. Both $g^2$ and $\mu$ grow with
+$A$, so binding has a sharp mass-number threshold: $A_{\rm thresh} = 257$ at the ruling point ---
+\emph{no terrestrial element binds}; even Pb sits at $s = 1.32$ --- falling to $186$ only at the
+island's top edge. Consequences: the stringent light-element anomalous-isotope limits
+($\lesssim 10^{-28}$) are satisfied by across-the-board sub-criticality, not threshold-dodging; over
+most of the island the prediction is a clean null (generic strongly-interacting composite dark matter
+binds --- the null discriminates); and at the top edge a heavy-element-only population
+(W, Pt, Au, Pb, Th, U) switches on at a crustal ceiling $\sim 10^{-15}$/nucleus. \textbf{The pin
+(J-DM3-1, closed):} Javorsek et al.\ (PRD \textbf{64}, 012005) searched anomalous Au and Fe over
+$200$--$350$~amu --- a rod-bound Au nucleus at $\approx 224$~amu is in-window --- with limits
+$X/{\rm Au} \sim 10^{-11}$--$10^{-8}$: the top-edge ceiling undershoots by $\geq 4$ orders. Safe across
+the island; an AMS sensitivity gain of $\sim 10^4$ would probe the top edge, and a heavy-only
+anomalous-isotope detection with the predicted $A$-threshold is a signature no generic WIMP shares
+(F-DM3-1). The opening heuristic for this channel predicted Fe binding at $\sim$12 keV; the computation
+overturned it before any claim --- recorded per discipline.
+
+\section{Laboratory and space channels}
+\textbf{F5 --- the reflight.} The XQC partial-wave pipeline (validated to $0.1\%$; the instrument that
+forced DM-1's retraction) predicts an XQC-class flight at 2007 exposure sees $46$ events at the ruling
+point ($\times 11$ below the $527$ observed) and $8$--$50$ region-weighted (median $17$, $\times 30$;
+robust across $1.5$ orders of $D_{st}$-prior variation). Confirm band $8$--$50$; a persistent excess
+far above breaches the island's top; a deep deficit breaches its bottom into LZ exposure --- both kill.
+\textbf{F6 --- the deep-Earth population.} Thermalized rods accumulate at
+$\bar n \sim 2\times10^{13}$~cm$^{-3}$ column-average with harmonic core concentration
+($H_c \approx 1100$~km); heat flux ($0.16$~GW) and density perturbation ($5\times10^{-8}$~g/cm$^3$) are
+far sub-detection --- carried as the consistency input to F-DM3-1. \textbf{F2 --- np consistency} at
+island couplings (a bound, not a selector, post-v1.3). \textbf{F3$'$ --- the multipole kill-branches:}
+the standing derivation target; zeroth order is XQC-dead, second is LZ-dead, first confirms the
+survival-conditional ruling.
+
+\section{The cosmological channel}
+\textbf{F-DM2-1 --- the $w(z)$ watch (inherited from DM-2, LIVE).} The $R_h$-form dynamical
+$\Lambda$ predicts a specific evolving $w$ with $w_{\rm now} \approx -1.02$; DESI-era evolving-$w$
+measurements test it on release timescales. A precision constant-$\Lambda$ excluding the evolution, or
+an evolving $w$ of the wrong sign/shape, kills the horizon selection D3(b) --- with consequences
+governed by DM-2's condition ledger.
+
+\section{The protocol table}
+The consolidated suite --- ID, prediction, instrument class, decision bands, status, provenance --- is
+maintained as the registered artifact \texttt{DM-3/falsifier\_protocols.md} (Patch 2304) and is
+normative for this paper; the sections above are its narrative. Suite-level properties: three channels
+are live now (F1$'$, F-DM2-1, the dSph analyses feeding F-DM3-3); F1$'$ and F-DM3-2 are
+\emph{two-sided} --- capable of selecting the candidate, not merely failing to kill it.
+
+\section{Conditions and inheritance (nothing upgraded silently)}
+Every protocol is conditional on: \textbf{(i)} DM-1's coupling ruling D5-A$'$ --- explicitly
+PROVISIONAL, survival-conditional, with the island $[0.012, 0.05]$ post-DAMIC-adjudication and the
+derivation target F3$'$ open with intact kill-branches; \textbf{(ii)} DM-2's gravitational gate ---
+Gate-1/B1 (the GR-limit ground-state exclusion, with its equivalence-principle sub-item) and D3(b)
+(the horizon selection, argument-grade) both OPEN by name. Kills propagate: a Gate-1/B1 failure removes
+the gravitational anchors from under every halo-side protocol; an F3$'$ zeroth- or second-order
+derivation kills the candidate outright regardless of this paper's contents. [Tags: the suite's
+predictions are DERIVED or MEASURED at the registered ledger; the two inherited conditions are carried
+at their registered grades.]
+
+\section{Grade}
+Layer-C harvest under CONV-004: this paper adds no new mechanism and no new coefficient; it assembles,
+sharpens, and pins the series' testable surface. What selection would mean: a group-scale detection at
+$0.03$--$0.05$ \emph{plus} a slope-running consistent with $p(v) = 4\Rs/(b_{\max}+\Rs)$ would constitute
+a two-channel positive identification of the substrate's screening geometry --- $\chi$ measured from
+the sky, against a constant derived for the matter--antimatter asymmetry. What death would mean is
+stated in every row. Promotion requires the inherited conditions' discharge and the standing stability
+discipline.
+
+\section*{Verification pointers}
+\texttt{code/2301} (bound-state threshold + binding energies), \texttt{code/2302} (plateau + the
+recorded implementation tension), \texttt{code/2303} (reconciled shape; anchor-validation-gated;
+the slope law), \texttt{DM-3/falsifier\_protocols.md} (the normative table),
+\texttt{DM-3\_discriminants\_campaign.md} \S\S1--6 (the arc record), plus the DM-1/DM-2 corpora for
+every inherited quantity.
+\end{document}

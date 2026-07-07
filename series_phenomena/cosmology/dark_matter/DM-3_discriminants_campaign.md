@@ -108,3 +108,14 @@ X/Au ~ 10⁻¹¹–10⁻⁸) vs our top-edge ceiling ~10⁻¹⁵ → **safe by �
 graduates to future-instrument discriminant. Suite properties: three LIVE channels; F1′ and F-DM3-2
 two-sided; F-DM3-2 = the first proposal to measure χ from galactic dynamics. **All three pillars done.
 Queue: paper (v1.0-DRAFT) → panel.**
+
+## 7. DM-3 v1.0-DRAFT ASSEMBLED (Patch 2305, 6 July 2026)
+
+`DM-3/DM-3_discriminating_predictions.tex` — compiled clean. Structure: abstract organized around the
+three results (the plateau ×56–×2000 with F1′ three-way; the running-slope law with the χ-from-the-sky
+inversion; the bound-state threshold with the Javorsek pin); §1 the series role incl. the five in-house
+catches stated as pedigree; §2 P3 with the reconciled table and the 2302→2303 reconciliation on record;
+§3 P2 with the overturned-heuristic note; §4–5 lab/space/cosmological channels; §6 the protocol table
+declared NORMATIVE (the paper is its narrative); §7 the inheritance ledger (D5-A′ PROVISIONAL; Gate-1/B1
++ EP sub-item; D3(b)) with kill-propagation stated; §8 grade with the two-channel positive-identification
+statement. CONV-004 tags in-text. NOT SHIPPED — CONV-001 panel pending founder go.
