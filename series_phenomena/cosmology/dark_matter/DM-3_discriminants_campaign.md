@@ -98,3 +98,13 @@ laboratory channel. Registered F-DM3-2.**
 
 **S1 unchanged** (implementation-independent; ×51/×121/×2000 in the reconciled table — F1′ three-way).
 **P3 is COMPLETE. Queue: P1 assembly → paper (v1.0-DRAFT) → CONV-001 panel.**
+
+## 6. P1 COMPLETE — the protocol table assembled; J-DM3-1 CLOSED in the model's favor (Patch 2304, 6 July 2026)
+
+`DM-3/falsifier_protocols.md`: nine protocols (F1′, F5, F6, F-DM2-1, F2, F3′, F-DM3-1, F-DM3-2, F-DM3-3),
+each with instrument class, observable, decision bands, status, provenance. **J-DM3-1 pinned:** Javorsek
+et al. PRD 64 012005 (AMS, anomalous Au/Fe, 200–350 amu — rod-bound Au ≈ 224 amu in-window; limits
+X/Au ~ 10⁻¹¹–10⁻⁸) vs our top-edge ceiling ~10⁻¹⁵ → **safe by ≥4 orders across the island**; channel
+graduates to future-instrument discriminant. Suite properties: three LIVE channels; F1′ and F-DM3-2
+two-sided; F-DM3-2 = the first proposal to measure χ from galactic dynamics. **All three pillars done.
+Queue: paper (v1.0-DRAFT) → panel.**
