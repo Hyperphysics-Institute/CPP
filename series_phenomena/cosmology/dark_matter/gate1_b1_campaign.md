@@ -74,7 +74,7 @@ Gate-1/B1's grade moves only by explicit per-claim verdicts entered here.
 
 | Claim | Status | Patch |
 |---|---|---|
-| G1 | OPEN — next action | — |
+| G1 | **DISCHARGED-conditional (C-a 12-edge shell, C-b first-moment response, C-c A3′ review calibration)** — no kill; reduction component CONJECTURED → DERIVED-conditional; audit `gate1_b1_G1_reduction_audit.md`, recompute `code/2313_g1_reduction_audit.py` (5/5, exact arithmetic) | 2313 |
 | G2 | OPEN | — |
-| G3 | OPEN | — |
+| G3 | OPEN — next action (cheap-kill order) | — |
 | G4 | OPEN (registered 2311) | — |

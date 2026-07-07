@@ -9,3 +9,7 @@ quantitative claim; each gets a CHANGELOG line crediting the round.
 3. **DM-3** abstract/S3′ operational sentence: add "(capture-dominated window or floor-subtracted;
    protocol in the normative table)" to the two-slope inversion claim. [W1]
 4. **DM-1/DM-2/DM-3** — placeholder for further red-team returns (Grok/Gemini/Copilot/DeepSeek pending).
+5. **DM-2** §2 box (wording-level, non-blocking): "The ground state *defines* Δ|SSV| ≡ 0" may be
+   sharpened to "the zero is *symmetry-enforced* (the 12-edge shell's monopole annihilates any
+   uniform ground-state value)" per the G1 reduction audit (Patch 2313) — the folded panel sentence
+   anticipated exactly this upgrade; the Gate-1/B1 tag on the box moves per the campaign ledger only.
