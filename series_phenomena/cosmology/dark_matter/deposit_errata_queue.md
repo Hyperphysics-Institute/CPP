@@ -13,3 +13,7 @@ quantitative claim; each gets a CHANGELOG line crediting the round.
    sharpened to "the zero is *symmetry-enforced* (the 12-edge shell's monopole annihilates any
    uniform ground-state value)" per the G1 reduction audit (Patch 2313) — the folded panel sentence
    anticipated exactly this upgrade; the Gate-1/B1 tag on the box moves per the campaign ledger only.
+6. **DM-2** §5 (wording-level, non-blocking): the "derived, not inserted" coefficient sentence may
+   add its upgraded pedigree — "1/8π traceable to λ = 16πG/c⁴ (Patch 2314; general identity
+   ∇²Φ = κρ ⇒ 1/(2κ))" — plus the O(1) disclosure "(static-normalization level; mode-convention
+   factors unpinned, span ~½–8π², subsuming the stated ~2×)". Discharges the DeepSeek SCRATCH.

@@ -75,6 +75,6 @@ Gate-1/B1's grade moves only by explicit per-claim verdicts entered here.
 | Claim | Status | Patch |
 |---|---|---|
 | G1 | **DISCHARGED-conditional (C-a 12-edge shell, C-b first-moment response, C-c A3′ review calibration)** — no kill; reduction component CONJECTURED → DERIVED-conditional; audit `gate1_b1_G1_reduction_audit.md`, recompute `code/2313_g1_reduction_audit.py` (5/5, exact arithmetic) | 2313 |
-| G2 | OPEN | — |
-| G3 | OPEN — next action (cheap-kill order) | — |
+| G2 | OPEN — next action (cheap-kill order) | — |
+| G3 | **DISCHARGED-with-disclosure** — 1/8π forced by λ = 16πG/c⁴ (λ→Poisson→assembly ledger under THEO-SR-EIN-4; general identity ∇²Φ = κρ ⇒ 1/(2κ)); no numeric correction; O(1) mode-convention span ½–8π² disclosed (subsumes the ~2×); DeepSeek SCRATCH discharged; `gate1_b1_G3_lambda_normalization.md`, `code/2314_g3_lambda_normalization.py` (6/6 exact) | 2314 |
 | G4 | OPEN (registered 2311) | — |
