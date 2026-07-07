@@ -132,3 +132,10 @@ allows a harvest paper to exist"). Unanimous on C/E/F. Folded (six edits, no num
 programme-level; floor-extrapolation flag. Returns: `DM-3/review/reviews_v1.0_panel_returns.md`.
 **Series state: DM-1 v1.4 (stability cycle; calendar ≥ 20 July binding), DM-2 v1.0, DM-3 v1.0 — three
 papers, five panel cycles, every one ratified. Standing opens unchanged and named.**
+
+## 9. DM-4 registered as prospectus (Patch 2308) — pointer
+
+`DM-4/DM-4_prospectus.md`: the complete outline/strategy/methods for the structure-formation arc,
+written at arc-close while fresh. Work NOT started; sequencing OSF → Gate-1/B1 → DM-4; the
+capture-aftermath ruling identified as the true gate; K1 (dissipative collapse timescale) pre-identified
+as the opening cheap kill; seeds and relic abundance named and fenced OUT of scope.
