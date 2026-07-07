@@ -84,3 +84,39 @@ way derived, not chosen). If **denied** (the Sea's disorder is not dynamically a
 sub-gap encounter frequencies), D-A stands and G4 kills.
 
 **Status: OPEN — awaiting the (narrowed) founder ruling: D-A vs D-C.**
+
+---
+
+## RULING (Patch 2320, 7 July 2026): **D-C — CONFIRMED by founder, verbatim on record**
+
+Founder ruling received and preserved verbatim at
+`founders_voice/fork_diss_1_ruling_bath_availability_2026-07-07.md` (and in the §10 block of
+`reasoning/2320.md`). Summary: **strong yes** — the Sea's sub-resolution configurational state is
+per-GP unique, time-varying every Moment (ZBW + transiting-CP generators named), dynamically
+coupled in both directions (configuration → SSV_abs/SSV_net → PSR → CP trajectory), sensitive to
+near and far fields. The disorder IS available as the THEO-QM-8 tracing bath.
+
+**Grade:** bath availability = **FOUNDER-ATTESTED (PROVISIONAL per the D5-A′ precedent;
+overturnable; non-upgradable until derived)** — consistent with THEO-QM-8 (which sanctions exactly
+this sink) and with the founder's prior unprompted language (session-16x "dissipates back into the
+DP Sea"); the *rate* is not attested and was not asked of the founder. **What the ruling
+establishes:** the sink exists and is dynamically engaged. **What it deliberately leaves to
+arithmetic:** the per-encounter fraction f.
+
+**S2-3 UNBLOCKED — spec sharpened by the ruling (execution order):**
+1. **Λ-mode protection check** (inherited obligation): long-wavelength self-averaging must protect
+   the horizon-coherence mode (and, identically, IR Lorentz/W2) from the same bath — expected
+   automatic via wavelength scaling; must be shown, not assumed.
+2. **The load-bearing input — the disorder correlation scale ℓ_dis** from the registered portrait:
+   DP-scale (fm-class, f_occ ≈ 0.1) vs GP-scale. The self-averaging suppression of near-zone
+   friction is polynomial in (ℓ_dis/b); ℓ_dis ~ fm keeps friction alive at b ~ 31–145 fm,
+   ℓ_dis ~ l_P would bury it. The founder's ruling names fm-class dynamical generators (ZBW,
+   DP-level transits), which bears directly.
+3. **The friction computation:** disorder scattering of the near-zone field (elastic in ω,
+   diffusive in k) → per-encounter f(b_max, v).
+4. **Verdict vs the pre-registered condition:** f ≥ 3.8×10⁻⁴ (dwarfs) → capture survives, f is a
+   *derived-from-portrait* quantity (a prediction, not a fit); f below → **G4 KILLS** despite the
+   ruling — D-C confirms the sink, not the sufficiency. Either outcome is arithmetic. Grok's
+   propagation follows the verdict in both branches.
+
+**Status: RULED D-C (founder). Gate fate → S2-3 arithmetic.**
