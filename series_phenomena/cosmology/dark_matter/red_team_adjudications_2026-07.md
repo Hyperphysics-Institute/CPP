@@ -110,3 +110,16 @@ reconciliation; floor-focusing). 2 dismissals by executed arithmetic. 2 auditabl
 Grok's checked-surfaces list). Zero quantitative claims moved; the stability cycles stand; the papers
 rest. **The window's priorities are now: OPEN-DM-CAPTURE-1 + Gate-1/B1 (joined derivation campaign),
 then the four queued computations, then the release ritual.**
+
+### W2 execution update (Patch 2328, 7 July 2026)
+
+**Grok W2 EXECUTED** (`grok_w2_formation_floor_reconciliation.md`, `code/2328_...py`, 8/8): static
+reconciliation PASSES (N_form 3–27 ∋ floor-N 18 ≤ ceiling 18–21); formation-epoch capture
+reach-dead (Θ_crit(337 km/s) = 1.59 > 1) — the 1855 endpoint stands. NEW SURFACE: post-formation
+free-streaming descent activates capture in the radiation era for EVERY spectrum under D = const
+(survive window z ~ 5×10⁷ at ~10⁵/Hubble; light-speed cap z ~ 1.3×10⁷ at ~10⁴/Hubble; bare Ohmic
+borderline O(1) at z ~ 10⁴) → the monomeric anchor-calibration population does not survive to the
+halo era → **OPEN-DM-AGG-1 registered** (routes: (i) D(T_amb) cooling history — delivered by the
+same Stage-3 D derivation that decides G4; (ii) endpoint reproduction via the d_f map, disfavored).
+Dynamic reconciliation CONDITIONAL on AGG-1; no registered verdict moved; survive branch now reads
+PRW-D ∧ route-(i) history.
