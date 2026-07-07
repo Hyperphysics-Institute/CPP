@@ -56,6 +56,7 @@ before 1108: the derived mechanism is **annihilation at the monopole**, with no 
 existing at any point — which is both stronger than and inconsistent in wording with the frontier
 line (and DM-2's Box-2 relies on the stronger reading). Queue: one-line frontier correction in a
 dedicated patch (collision surface — `frontier_sectors/SR.md`; per-band warning protocol applies).
+**[EXECUTED — Patch 2325: SR.md D2 wording corrected subtraction→annihilation; F-1 closed.]**
 
 **F-2 (a sharpening available to DM-2 at next wording pass — errata queue, not now).** The paper's
 box says the ground state "defines" the zero. Post-audit, the stronger and more defensible sentence
