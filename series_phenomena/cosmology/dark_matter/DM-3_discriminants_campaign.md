@@ -119,3 +119,16 @@ catches stated as pedigree; §2 P3 with the reconciled table and the 2302→2303
 declared NORMATIVE (the paper is its narrative); §7 the inheritance ledger (D5-A′ PROVISIONAL; Gate-1/B1
 + EP sub-item; D3(b)) with kill-propagation stated; §8 grade with the two-channel positive-identification
 statement. CONV-004 tags in-text. NOT SHIPPED — CONV-001 panel pending founder go.
+
+## 8. DM-3 v1.0 SHIPPED — first-cycle 5/5; the counter-comparator challenge failed; THE SERIES' FIRST ARC IS COMPLETE (Patch 2307, 6 July 2026)
+
+Five returns (ChatGPT/Grok/Gemini/Copilot/DeepSeek; no anomaly): **5/5** — Grok clean RATIFY; four RWC,
+all disclosure-level ("disclosure refinements, not physics repairs"). **§5(ii): no reviewer could
+construct a plateau-mimicking single-mediator comparator** ("we cannot construct one — the divergence
+is robust"); **§5(vii): prematurity unanimously rejected** (the kill-propagation ledger "is exactly what
+allows a harvest paper to exist"). Unanimous on C/E/F. Folded (six edits, no numbers moved): comparator
+"representative" + community challenge; slope-inversion systematics caveat (4× convergent); χ-scoping
+("within the CPP interaction model"); unit-capture-efficiency note; two-channel statement conditional/
+programme-level; floor-extrapolation flag. Returns: `DM-3/review/reviews_v1.0_panel_returns.md`.
+**Series state: DM-1 v1.4 (stability cycle; calendar ≥ 20 July binding), DM-2 v1.0, DM-3 v1.0 — three
+papers, five panel cycles, every one ratified. Standing opens unchanged and named.**
