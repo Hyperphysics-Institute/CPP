@@ -52,3 +52,61 @@ Cross-paper consistency fix: "conditionally certified" in DM-3, release-day erra
 sharpened) / 1 DISMISSED by computation / 1 wording. Zero quantitative claims moved; the stability
 cycles stand; the falsifier suite exits STRONGER (an amplitude-free shape test now exists that did not
 before).**
+
+## Returns 2–5 — Grok, Gemini, Copilot, DeepSeek (6 July). Panel complete.
+
+**Attribution note:** an early duplicate paste (Copilot's text delivered twice) was resolved by the
+founder's re-delivery; DeepSeek's genuine return arrived last. Final set: ChatGPT (5W), Grok (2W+1S),
+Gemini (1 KILL-claim + 2W + 1S), Copilot (auditable NO FINDINGS, 9 surfaces), DeepSeek (1 KILL-claim +
+1W + 1S).
+
+### The two KILL claims — the round's center of gravity
+
+**GEMINI KILL (no dissipation channel at dwarf energies) — CONVERTED TO A NAMED GATE
+(OPEN-DM-CAPTURE-1); neither confirmed nor dismissed today.** Verify `code/2311_...py`: the sub-gap
+kinematics CONFIRM every gapped channel closed (encounter ħω is 10²–10⁴ below m_s, E_ee, rod
+vibration/rotation — Gemini right on each); the premise "no light mediator" is FALSE against the
+registered gapless |SSV| mode (1107–1108) — but that mode's coupling to a moving rod pair is
+unregistered. The claim therefore identifies a genuinely un-derived load-bearing assumption. Routed:
+the gate file, window priority #1, release-decision rule pre-stated. This is the round's most valuable
+finding and precisely what the brief asked for.
+
+**DEEPSEEK KILL (rigidity/J4 breakdown at cluster velocities) — DISMISSED BY ITS OWN ARITHMETIC, with
+a legitimate residue queued.** Their computed sound speed c_s ≈ 0.1c vs cluster velocity 0.005c: the
+motion is SUBSONIC by ×20, the collision adiabatic (stress waves cross the rod ~400× during the
+encounter), the rigid-body treatment validated — their "supersonic" premise contradicts their own
+numbers. Residue extracted and QUEUED (J-FLOOR-FOCUS): does the measured floor include field-focusing
+where V_contact ~ KE (cluster velocities)? Even a ×2 floor clears Andrade (0.07–0.08 vs 0.13) —
+refinement-class, not kill-class; one MC rerun with the potential on settles it.
+
+### The wounds — adjudicated or queued with sizing
+
+**Gemini W2 (solar accumulation/helioseismology) — QUEUED, sized (`code/2311`):** geometric-ceiling
+accumulation is 2×10⁻¹¹ M_⊙ — eight orders below mass-fraction sensitivity; the queued computation is
+CONDUCTION-focused (the rods' huge self-scattering vs rod-nucleon transport at S_c in solar plasma). A
+genuinely new confrontation surface; window task.
+**Gemini W3 + DeepSeek W (VDF sensitivity: p(v) smearing; XQC halo-model dependence) — MERGED and
+QUEUED:** one computation covers both — convolve σ_cap(v) and the XQC rate over SHM++/Gaia-class VDFs;
+report p_obs variance and the F5 band's movement. The F-DM3-2 protocol already carries the
+"observationally ambitious" caveat; this quantifies it.
+**Gemini SCRATCH (formation latent heat vs N_eff) — DISMISSED (`code/2311`):** fractional bath
+injection ~3×10⁻⁸, seven orders below N_eff sensitivity.
+**Grok W1 (P(v) < 1) — MERGED into OPEN-DM-CAPTURE-1** (the soft form of the same physics; his
+decisive check — re-anchor with P(v) and propagate — is the gate's partial-efficiency branch).
+**Grok W2 (formation-N vs floor-N reconciliation) — CONFIRMED as an open reconciliation; QUEUED**
+(1855-style kinetics with capture+floor active → N distribution → floor check; the decisive check as
+specified).
+**Grok SCRATCH (Javorsek digitization) — already on the release-day checklist** (with the W4 dual-cite
+fix from return 1).
+**DeepSeek SCRATCH (Λ-coefficient circularity charge) — PARTIAL; folded into Gate-1/B1's scope:** the
+1/8π rides on the c05/c07 field-energy normalization; the reduction must DERIVE that normalization,
+not import it — added to the Gate-1/B1 claim-set. The paper's conditionality already points there.
+
+### Round synthesis
+
+0 confirmed KILLs. 1 named gate opened (the round's crown finding, convergent with our own DM-4
+prospectus). 4 queued window computations (solar conduction; VDF sensitivity; formation-N
+reconciliation; floor-focusing). 2 dismissals by executed arithmetic. 2 auditable nulls (Copilot;
+Grok's checked-surfaces list). Zero quantitative claims moved; the stability cycles stand; the papers
+rest. **The window's priorities are now: OPEN-DM-CAPTURE-1 + Gate-1/B1 (joined derivation campaign),
+then the four queued computations, then the release ritual.**
