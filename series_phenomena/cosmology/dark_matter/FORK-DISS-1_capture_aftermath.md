@@ -120,3 +120,9 @@ arithmetic:** the per-encounter fraction f.
    propagation follows the verdict in both branches.
 
 **Status: RULED D-C (founder). Gate fate → S2-3 arithmetic.**
+
+**S2-3 executed under this ruling (Patch 2321):** G4 = UNRESOLVED-QUANTIFIED; the gate's fate =
+the Sea's configurational bath spectrum S(ω) at encounter frequencies (survive/kill thresholds per
+anchor in `gate1_b1_G4_s2_3_friction.md`); consistency triple (Λ/W2/halo) shown. The founder's
+companion statement on energy-as-configurational-information preserved verbatim at
+`founders_voice/energy_as_configuration_information_2026-07-07.md`.
