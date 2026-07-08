@@ -95,3 +95,12 @@ reproduced within the κ bands. Deliverables: existence verdict (non-empty/empty
 marginal ranges (the "what the data reveal about the DP Sea" table), the pinned-combination values with
 uncertainties, and the no-refit forward predictions (F5/F6-falsifier channels, DAMIC edge, group point) from
 the accepted region. Kill-condition stands: an empty region is a structural falsification of the candidate.
+
+## OPEN-DM-DSPH-1 (registered Patch 2339) — the inverse arc
+The Gate-1/B1 kill treated as specification: SPEC-1 (charter §2) states the measured
+requirements on the physics the dSph anchors demand and the registered structure has
+not yet supplied. Founder working hypothesis (correct candidate, missing mechanism)
+carried under RENT + EXIT discipline; Clause 1 falsification condition PROPOSED,
+awaiting founder-attested text — arc verdicts frozen until ratified. Lanes L1–L4 per
+charter §3; forward map: any lane producing a derived, rent-paying SPEC-1 mechanism
+routes back through the anchor suite under Gate-1/B1 grading.
