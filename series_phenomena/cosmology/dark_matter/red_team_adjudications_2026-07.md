@@ -157,3 +157,14 @@ excitation ×5×10³⁹ gentler in gradient. Exemption = inconsistency, not open
 DEAD; G4 → KILL-on-suite-conditional per pre-registered outcome (ii). **Panel: attack
 check 3 (the a-fortiori anchor) first — it is the load-bearing novelty.** Kill stack =
 corner stack (symmetric; no selective exposure).
+
+### The attraction MC (Patch 2336, 7 July 2026)
+
+**Measured** (`gate1_b1_attraction_mc.md`; grading 6/6): the 2335 in-prior elastic
+closure holds by direct MC — measured low-v slope s = 0.85 (envelope said ≤2; bars
+need ≥2.71 / ≤1.42 jointly). Suite fails on dSph ×2.1 (8.8σ) and the pin/LSB
+simultaneity. **Texture corrected:** the killed candidate is a velocity-dependent
+elastic SIDM near-miss (×486 dynamic range, cluster-safe, LSB-grazing), NOT a flat
+0.046 relic. **Panel note:** the classical-MC flag is now load-bearing at the ×2
+margin; the quantum s-wave treatment and the unregistered S_ATT(N) scaling are the
+two named founder-gated follow-ups. Verdict untouched.
