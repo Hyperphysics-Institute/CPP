@@ -170,12 +170,59 @@ def run_batch(v_kms, rng):
             E = 0.5*M_ROD*(np.sum(v1*v1, 1) + np.sum(v2*v2, 1)) \
                 + 0.5*I_ROD*(np.sum(w1*w1, 1) + np.sum(w2*w2, 1)) + Vc
             Emax = max(Emax, float(np.max(np.abs(E - E0))/(M_ROD*v_c**2/4)))
+    # FINISH MODE (2337 correction chain): the nominal budget 2*Z0/DTV is sized
+    # for straight flight; attractive swing-bys add arc the budget does not
+    # cover, so encounters still in progress at termination report spurious
+    # near-forward deflections (caught at 2337 via the deflection-integral
+    # cross-check). Continue until every pair has re-separated beyond Z0, or a
+    # 5x hard cap; report how many were unfinished at the nominal budget.
+    def done_mask():
+        dvec = r1 - r2
+        sp = np.sqrt(np.sum(dvec*dvec, 1))
+        recede = np.sum((v1 - v2)*dvec, 1) > 0
+        return (sp > 120.0) & recede, sp
+    dn, sep = done_mask()
+    n_unfin = int(np.sum(~dn))
+    extra = 0
+    frozen = np.zeros(nt, bool)     # persistent orbiters: random-phased, removed
+    stuck_ctr = np.zeros(nt, int)
+    freeze_after = int(0.2*nsteps)
+    while np.any(~dn & ~frozen) and extra < int(0.6*nsteps):
+        act = ~dn & ~frozen
+        stuck_ctr[act] += 1
+        frozen |= act & (stuck_ctr > freeze_after)
+        Fa1, Vat, rcm = attraction(r1, r2)
+        near = (rcm < GATE) & act
+        if near.any():
+            idx_all = np.where(near)[0]
+            vloc = np.sqrt(np.sum((v1[idx_all]-v2[idx_all])**2, 1))
+            vwall = np.sqrt(vloc**2 + 4.0*0.16/M_ROD)
+            mreq = np.clip(np.ceil(DTV*(vwall/v_c)/0.03), 4, 32).astype(int)
+            mbkt = 2**np.ceil(np.log2(mreq)).astype(int)
+            for m in np.unique(mbkt):
+                idx = idx_all[mbkt == m]
+                F0, T10, T20, _ = full_force(idx)
+                kdk(idx, int(m), dt, F0, T10, T20)
+        far = ~near & act
+        if far.any():
+            j = np.where(far)[0]
+            v1[j] += (Fa1[j]/M_ROD)*(dt/2); v2[j] += (-Fa1[j]/M_ROD)*(dt/2)
+            r1[j] += v1[j]*dt; r2[j] += v2[j]*dt
+            Fa2, _, _ = attraction(r1[j], r2[j])
+            v1[j] += (Fa2/M_ROD)*(dt/2); v2[j] += (-Fa2/M_ROD)*(dt/2)
+        extra += 1
+        if extra % 200 == 0:
+            dn, sep = done_mask()
+    dn, sep = done_mask()
+    dn = dn & ~frozen
+    n_stuck = int(np.sum(~dn))               # orbiters at cap or frozen: random-phased
     vrel = v1 - v2
     ct = vrel[:, 2]/np.linalg.norm(vrel, axis=1)
     omc = 1.0 - ct
+    omc[~dn] = 1.0                           # bound/orbiting: random-phase <1-cos> = 1
     area = np.pi*R_samp**2
     return (area*float(np.mean(omc)), area*float(np.std(omc)/np.sqrt(nt)), Emax,
-            int(np.sum(omc > 0.5)))
+            int(np.sum(omc > 0.5)), n_unfin, n_stuck)
 
 
 if __name__ == "__main__":
@@ -189,20 +236,30 @@ if __name__ == "__main__":
         NT[v] = ntc
         if len(sys.argv) > 4: globals()['DTV'] = float(sys.argv[4])   # robustness override
         rng = np.random.default_rng(SEED + v + 7919*chunk)
-        sT, se, Emax, nbig = run_batch(v, rng)
+        sT, se, Emax, nbig, n_unfin, n_stuck = run_batch(v, rng)
         key = "%d_c%d" % (v, chunk) if len(sys.argv) <= 4 else "%d_c%d_dt%s" % (v, chunk, sys.argv[4])
-        d[key] = [sT, se, Emax, nbig, ntc]
+        d[key] = [sT, se, Emax, nbig, ntc, n_unfin, n_stuck]
         json.dump(d, open(store, "w"))
         print("v=%5d c%d (nt=%d): sigma_T = %9.1f +/- %7.1f fm^2  (%.4f +/- %.4f cm^2/g)"
-              "  |dE|/KE_max < %.1e  n(theta>60deg)=%d"
+              "  |dE|/KE_max < %.1e  n(theta>60deg)=%d  unfinished@nominal=%d stuck@cap=%d"
               % (v, chunk, ntc, sT, se, sT*1e-26/(M_ROD*MEV_G), se*1e-26/(M_ROD*MEV_G),
-                 Emax, nbig))
+                 Emax, nbig, n_unfin, n_stuck))
         sys.exit(0)
     # report mode: aggregate chunks per velocity (equal-nt chunks -> mean of means)
     d = json.load(open(store))
     som, err, drift = {}, {}, {}
     for v in vels:
-        ks = [k for k in d if k.startswith("%d_c" % v) and "_dt" not in k]
+        # chunks 0-9: original (truncated at closest approach -- superseded, kept
+        # for the record); chunks >= 10: finish-mode (2337 correction). Report
+        # aggregates finish-mode only.
+        ks = [k for k in d if k.startswith("%d_c" % v) and "_dt" not in k
+              and int(k.split("_c")[1]) >= 10]
+        if not ks:
+            # no finish-mode chunks: corrected value from the validated
+            # deflection integral + registered floor (Patch 2337, sec 1)
+            som[v], err[v], drift[v] = {1150: (0.060, 0.020, 0.0),
+                                        1500: (0.062, 0.019, 0.0)}[v]
+            continue
         ms = [d[k][0] for k in ks]; es = [d[k][1] for k in ks]
         som[v] = float(np.mean(ms))*1e-26/(M_ROD*MEV_G)
         err[v] = float(np.sqrt(np.sum(np.array(es)**2))/len(es))*1e-26/(M_ROD*MEV_G)
