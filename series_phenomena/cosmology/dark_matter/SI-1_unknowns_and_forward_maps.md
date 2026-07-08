@@ -103,4 +103,10 @@ not yet supplied. Founder working hypothesis (correct candidate, missing mechani
 carried under RENT + EXIT discipline; Clause 1 falsification condition PROPOSED,
 awaiting founder-attested text — arc verdicts frozen until ratified. Lanes L1–L4 per
 charter §3; forward map: any lane producing a derived, rent-paying SPEC-1 mechanism
+
+**FRAME-ADOPTION GATE LEDGER (from Patch 2346/F3; updated at 2349):**
+- **G1 (formation rent):** PASSED-with-texture (2349). 1855 kinetics realize suite-passing populations at both audited frames; extended deep/unstrained (natural α=1, p_min=0), central shallow/strained (α≈3–6, p≥13). Dimer-dominance reachable (α_99≈989) but not required. v1 kill strengthened (×1.189). Inverse targets registered: α_pass(central), p_min(central)=13, S(N) derivation under OPEN-SS-43.
+- **G2 (satellite survival):** OWED — Ando 2025 / SIDM Concerto counter-check against the passing population; 1856 transport-efficiency suppression folds in here (could bite the extended pass's N~15–25 rods).
+- **G3 (per-dSph likelihood):** OWED — Correa-class, pericentre priors; the rigorous version of the 2345 synthesis.
+All three clear → F3 v2-adoption auto-proposal to founder. Clause 1 re-draft still pending founder text.
 routes back through the anchor suite under Gate-1/B1 grading.
