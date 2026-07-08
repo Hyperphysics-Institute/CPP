@@ -33,7 +33,7 @@ measurement then reads "the gap in PITCH units is the Capotauro constant"].
 | U4 | S_p | superposition factor for collective Sea response (√N-random ↔ N-coherent, expressed as multiplicative factor) | 10⁻² – 1 |
 | U5 | D_st | static fraction of a confined colour-singlet's leading residual moment | 10⁻³ – 1 |
 | U6 | T_amb | ambient Sea excitation temperature | 0.1 – 10³ keV |
-| U7 | D_occ | Sea occupancy diffusivity at the R_s scale (c·fm); forward map = PRW-D (Patch 2327): survive iff D ∈ [5.2×10⁻³, 3.7×10⁻²] c·fm, KILL-on-suite outside; joint with U6/U2 via v = √(2T_amb/m_DP) once m_DP pinned; cosmological history D(z) additionally constrained by OPEN-DM-AGG-1 (Patch 2328: early knee ≳ 0.6 MeV-class required — the survive branch needs D early-high, late-in-window) | static (0) – ballistic cap cℓ_cp/3 ≈ 1.06 c·fm |
+| U7 | D_occ | Sea occupancy diffusivity at the R_s scale (c·fm); forward map = PRW-D (Patch 2327): survive iff D ∈ [5.2×10⁻³, 3.7×10⁻²] c·fm, KILL-on-suite outside; joint with U6/U2 via v = √(2T_amb/m_DP) once m_DP pinned; cosmological history D(z) additionally constrained by OPEN-DM-AGG-1 (Patch 2328: early knee ≳ 0.6 MeV-class required — the survive branch needs D early-high, late-in-window). **DERIVED as a law at Patch 2330 (no-carried-velocity ruling):** knee_tot(T_amb) = ħ[D_hop k² + Γ_loc], D_hop = (a²κ_νE_z/6ħ)e^(−κ_aE_ee/T_amb) (ballistic-capped), Γ_loc = κ_cκ_ν(E_z/ħ)e^(−E_gap/T_amb); monotone in T_amb; window invariant form = knee_tot ∈ [1.60, 11.3] keV; the accepted corner rides Γ_loc (see X4′, §4); Planck floor l_P·c/6 for the coherent channel (harmonic-null theorem) | static (0) – ballistic cap cℓ_cp/3 ≈ 1.06 c·fm |
 
 ## 3. Forward-map system F: U → M (registered structure only; κ's are O(1) geometric constants of the
 600-cell, scanned in [1/3, 3] — J-SI-2)
@@ -68,6 +68,13 @@ UNDER-determined by 2 — honestly stated.** What the data pin are COMBINATIONS:
   measured: the quiescent Sea cancels the colour channel to a few parts in 10⁴.** Second substrate inference
   available before scanning (F3+F4 combine; a and α_q drop out).
 - **D_st ≈ O(1)** (F5, above).
+- **X4 ≡ κ_ν E_z e^(−κ_aE_ee/T_amb) ∈ [6.2, 43.7] MeV** and **X4′ ≡ κ_cκ_ν E_z e^(−E_gap/T_amb) ∈
+  [1.60, 11.3] keV** — the Patch-2330 PRW inversions (transport- and local-channel forms of the same
+  knee window; the existence scan puts 99.8% of the accepted corner on X4′, with T_amb marginal
+  82–872 keV, ×5–53 above the F7 soft target — named tension). Conditional on the G4 survive branch;
+  subject to OPEN-DM-TAMB-1 (closure bound: a thermalized gapless coherence mode caps T_amb at
+  3.2 meV — bites the entire keV-class U6 prior; two-temperature Sea or one-ledger exemption
+  required, neither established).
 Substituting X3 into X1 pins **n S_p / E_z** — the density-coherence-per-restoring combination. The two
 residual flat directions are (n vs S_p vs E_z internal split) and (T_amb) — exactly where new targets from
 other sectors (or the F7 cap mechanism) will bite. **Overdetermination margin at task-1 resolution: 0 on the

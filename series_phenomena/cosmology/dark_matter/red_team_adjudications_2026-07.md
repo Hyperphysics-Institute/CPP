@@ -123,3 +123,18 @@ halo era → **OPEN-DM-AGG-1 registered** (routes: (i) D(T_amb) cooling history 
 same Stage-3 D derivation that decides G4; (ii) endpoint reproduction via the d_f map, disfavored).
 Dynamic reconciliation CONDITIONAL on AGG-1; no registered verdict moved; survive branch now reads
 PRW-D ∧ route-(i) history.
+
+### Stage-3 execution addendum (Patch 2330, 7 July 2026)
+
+**D(T_amb) DERIVED** (`gate1_b1_G4_stage3_D_of_Tamb_derivation.md`, `code/2330_...py`, 12/12):
+harmonic-null theorem (coherent transport = 0 exactly under the no-carried-velocity ruling) ⇒
+activated two-channel law knee_tot(T) = ħ[D_hop k² + Γ_loc], monotone in T. **Route (i) of
+OPEN-DM-AGG-1 is now half-closed, half-narrowed:** the transport half CANNOT deliver it (hop knee
+≤ 324 keV < 579 keV pin requirement — the W2 light-speed row is the derived optimum of the whole
+hop branch); the surviving half is R-III (above-gap activated creation), generic under
+free-streaming cooling, protecting to v_edge = 0.15 km/s ((1+z) ≈ 3.1×10⁴). Residual registered as
+**AGG-1-R**: the tail integral below v_edge under the derived law with a specified T_amb(z)
+(window-D ceiling 17/Hubble at onset, marginal by construction). New surface **OPEN-DM-TAMB-1**
+(closure bound: thermalized gapless mode caps T_amb at 3.2 meV; bites the corner ×10²⁹ and the F7
+soft target ×6.5×10²⁶; two-temperature Sea or one-ledger exemption required). W2's dynamic-layer
+condition now reads: AGG-1 ⇐ R-III history ∧ AGG-1-R tail ∧ TAMB-1 evasion.
