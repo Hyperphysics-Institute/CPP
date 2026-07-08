@@ -138,3 +138,11 @@ free-streaming cooling, protecting to v_edge = 0.15 km/s ((1+z) ≈ 3.1×10⁴).
 (closure bound: thermalized gapless mode caps T_amb at 3.2 meV; bites the corner ×10²⁹ and the F7
 soft target ×6.5×10²⁶; two-temperature Sea or one-ledger exemption required). W2's dynamic-layer
 condition now reads: AGG-1 ⇐ R-III history ∧ AGG-1-R tail ∧ TAMB-1 evasion.
+
+### TAMB-1 sharpening addendum (Patch 2331, 7 July 2026)
+
+**Uncertainty floor** (`gate1_b1_tamb1_uncertainty_floor.md`, `code/2331_...py`, 6/6): closure is
+mechanism-independent — ρ ≥ knee_tot/R_s³ for any activated window knee (×10³⁴⁺ today; ×10¹²–10²³
+over radiation in the R-III era). Evasion (a) closed-insufficient; the W2 dynamic-layer condition
+tightens to: AGG-1 ⇐ R-III history ∧ AGG-1-R tail ∧ **TAMB-1(b)** (one-ledger status of dynamical
+Sea excitation — the sole surviving evasion, a G-sector derivation).

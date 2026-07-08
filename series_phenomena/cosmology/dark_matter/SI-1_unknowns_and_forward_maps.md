@@ -72,9 +72,12 @@ UNDER-determined by 2 — honestly stated.** What the data pin are COMBINATIONS:
   [1.60, 11.3] keV** — the Patch-2330 PRW inversions (transport- and local-channel forms of the same
   knee window; the existence scan puts 99.8% of the accepted corner on X4′, with T_amb marginal
   82–872 keV, ×5–53 above the F7 soft target — named tension). Conditional on the G4 survive branch;
-  subject to OPEN-DM-TAMB-1 (closure bound: a thermalized gapless coherence mode caps T_amb at
-  3.2 meV — bites the entire keV-class U6 prior; two-temperature Sea or one-ledger exemption
-  required, neither established).
+  subject to OPEN-DM-TAMB-1, SHARPENED at Patch 2331 to the uncertainty floor: any activated
+  realization of a window knee carries ρ ≥ knee_tot/R_s³ = ×2×10³⁴⁺ over closure (event energy
+  cancels; T⁴ bound was the weaker face; evasion (a) two-temperature Sea CLOSED-insufficient) —
+  survival is BINARY on TAMB-1(b), the one-ledger status of dynamical Sea excitation (G-sector
+  derivation, Gate-1's own apparatus); if (b) holds, all closure faces evaporate including F7's
+  ×6.5×10²⁶.
 Substituting X3 into X1 pins **n S_p / E_z** — the density-coherence-per-restoring combination. The two
 residual flat directions are (n vs S_p vs E_z internal split) and (T_amb) — exactly where new targets from
 other sectors (or the F7 cap mechanism) will bite. **Overdetermination margin at task-1 resolution: 0 on the
