@@ -77,7 +77,12 @@ UNDER-determined by 2 — honestly stated.** What the data pin are COMBINATIONS:
   cancels; T⁴ bound was the weaker face; evasion (a) two-temperature Sea CLOSED-insufficient) —
   survival is BINARY on TAMB-1(b), the one-ledger status of dynamical Sea excitation (G-sector
   derivation, Gate-1's own apparatus); if (b) holds, all closure faces evaporate including F7's
-  ×6.5×10²⁶.
+  ×6.5×10²⁶. **RESOLVED at Patch 2333: TAMB-1(b) FAILS — dynamical Sea excitation SOURCES**
+  (DERIVED-conditional on the corner's own stack: one zeroing mechanism reaching exactly the
+  gradient-free component; harmonic-null forces localized knee-carriers; Case-3 provenance-blindness
+  + C-d form-blindness exclude the discriminant; Case-4/Λ a-fortiori anchor). **X4/X4′ are DEAD as
+  survive-branch quantities** — OPEN-DM-TAMB-1 adjudicated-operative; the closure surface binds the
+  whole keV-class U6 prior; G4 → KILL-on-suite-conditional per pre-registered outcome (ii).
 Substituting X3 into X1 pins **n S_p / E_z** — the density-coherence-per-restoring combination. The two
 residual flat directions are (n vs S_p vs E_z internal split) and (T_amb) — exactly where new targets from
 other sectors (or the F7 cap mechanism) will bite. **Overdetermination margin at task-1 resolution: 0 on the

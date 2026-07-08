@@ -146,3 +146,14 @@ mechanism-independent — ρ ≥ knee_tot/R_s³ for any activated window knee (�
 over radiation in the R-III era). Evasion (a) closed-insufficient; the W2 dynamic-layer condition
 tightens to: AGG-1 ⇐ R-III history ∧ AGG-1-R tail ∧ **TAMB-1(b)** (one-ledger status of dynamical
 Sea excitation — the sole surviving evasion, a G-sector derivation).
+
+### TAMB-1(b) resolution (Patch 2333, 7 July 2026)
+
+**Derived — fails** (`gate1_b1_tamb1b_one_ledger_status.md`, `code/2333_...py`, 7/7): the
+apparatus's one zeroing mechanism (Σv̂ = 0) reaches exactly the gradient-free component;
+harmonic-null forces knee-carriers to be localized events; Case-3 provenance-blindness and
+C-d form-blindness exclude any discriminant; DM-2 §5's own Λ already sources a Sea
+excitation ×5×10³⁹ gentler in gradient. Exemption = inconsistency, not open-ness. Corner
+DEAD; G4 → KILL-on-suite-conditional per pre-registered outcome (ii). **Panel: attack
+check 3 (the a-fortiori anchor) first — it is the load-bearing novelty.** Kill stack =
+corner stack (symmetric; no selective exposure).
