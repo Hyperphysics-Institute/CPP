@@ -111,3 +111,22 @@ all three deltas are at shippable status on the panel's own grading. Part B stan
 wounded nowhere and sharpened where the panel was right; the strand statement is now
 conditional-on-L4-b in every place it appears. **The release call is the founder's;
 the one computation the panel unanimously wants under it is L4-b.**
+
+
+---
+
+## ATTRIBUTION CORRECTION (Patch 2356; founder mapping received 9 July 2026)
+
+The founder confirms the returns were pasted in seat order: **ChatGPT, Grok, Gemini,
+Copilot, DeepSeek** — and that two self-identifications were wrong (the return in
+DeepSeek's seat self-labeled "ChatGPT"; the return in Gemini's seat self-labeled
+"DeepSeek"). The founder's order ruling is the attribution of record. Corrected map:
+R1 = **ChatGPT**; R2 = **Grok**; the return adjudicated above as "DeepSeek" =
+**Gemini**; R3 = **Copilot**; the return adjudicated above as "ChatGPT" =
+**DeepSeek**. Consequential re-attributions: the J-A HOLD graded down on inverted
+arithmetic belongs to **DeepSeek**; the A2 assert-closure repair (rejected as
+manufacturing) and the freezing-dynamics finding belong to **Gemini**; the A1
+"measured-not-prediction" demand belongs to **ChatGPT**; the J-D BREAK belongs to
+**Grok**; the 0.700 quarantine and B1 sensitivity flags belong to **Copilot**. No
+verdict, grade, or executed repair changes — only the names. The record above is
+retained as written per house discipline; this annotation governs.
