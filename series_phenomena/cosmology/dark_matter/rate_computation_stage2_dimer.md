@@ -1,6 +1,6 @@
 # F-DM3-4 rate computation — STAGE 2: σ_dimer via the P2 machinery at A_dimer (Patch 2366, 9 July 2026)
 
-## STATUS: CANDIDATE-KILL REGISTERED — PENDING PANEL VERIFICATION + FOUNDER ADJUDICATION
+## STATUS: VERIFIED BY FLASH PANEL (2368, V1–V5 all seats) — ADJUDICATION-READY, ON THE FOUNDER'S DESK
 **Finding, stated plainly: the 2007 XQC data appears to exclude the dimer-weighted
 corner of every passing region — at every point of the registered island
 [0.012, 0.05], both potential signs, the full abundance bracket — and the exclusion
@@ -62,7 +62,11 @@ corner: violations persist at S_c = 0.010, 0.008, 0.006 — below the island flo
 The violating bins at the weakest corner are 29–36 eV (obs 0) and 36–128 eV
 (obs 11) — the light dimer's recoils land exactly in XQC's quietest bins; the
 exclusion rests on the most robust part of the spectrum, with the published
-sensitivity factors (0.38, 0.51) already applied.
+sensitivity factors (0.38, 0.51) already applied. **Background
+model (panel repair, Patch 2368):** the criterion assumes ZERO background
+subtraction — the predicted signal alone must exceed observed + 5√(obs+1); any
+unattributed background only tightens the allowance. Weakest-corner margins:
+15.1 predicted vs threshold 5 (29–36 eV); 142.3 vs 28.3 (36–128 eV).
 
 ## What could still save the corner (the honest list — each item owes rent)
 (a) **A dimer S_c structurally below the rod's island** — would need DERIVING
