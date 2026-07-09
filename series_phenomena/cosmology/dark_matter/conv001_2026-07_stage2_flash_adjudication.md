@@ -77,7 +77,7 @@ Patches 2366–2368) — the campaign's second kill, joining the capture branch'
 kill at the registered frame (2333). Clause 1 exit-class event (dimer face,
 adverse direction); OPEN-DM-DSPH-1 verdicts UNFROZEN per the attested Clause 1;
 the missing-physics search reopens with both candidate branches dead.
-> KILL ADJUDICATION (TLA, date): ______
+> KILL ADJUDICATION (TLA, 9 July 2026): **"Please proceed as recommended with kill recorded and new physics pursued."** — ATTESTED. The population branch is KILLED at the audited frames (XQC-2007 channel, Patches 2366–2368, panel-verified V1–V5). The campaign's second kill stands beside the first (capture, registered frame, 2333). Clause 1 exit-class event, dimer face; OPEN-DM-DSPH-1 verdicts UNFROZEN; the missing-physics search reopens with both candidate branches dead.
 
 **(B) RELEASE RE-DECISION (the 2364 unified ruling is superseded by events for
 DM-1/DM-3; DM-2 is not named by the finding).** Worker recommendation: DM-2
@@ -87,4 +87,4 @@ registered frame, population at the audited frames, each by the programme's
 own instrument) with OPEN-DM-DSPH-1 reopened, re-releasable on a short panel
 round when the revisions are ready. This is publishable falsification work of
 exactly the kind the programme's operating system was built to produce.
-> RELEASE RE-DECISION (TLA, date): ______
+> RELEASE RE-DECISION (TLA, 9 July 2026): per the same founder verbatim, the worker recommendation is ADOPTED — **DM-2 releases ALONE on 20 July** (the 2364 unified ruling superseded by events for DM-1/DM-3); **DM-1/DM-3 are PULLED from the release calendar with NO rewrite scheduled** — the papers stand in the repo as record, marked killed-not-rewritten; the rewrite is deferred to follow the new-physics arc so the eventual papers carry the kill and its resolution as one arc.

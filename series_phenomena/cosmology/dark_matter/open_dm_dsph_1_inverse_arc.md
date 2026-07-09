@@ -112,3 +112,38 @@ propose mechanism classes we have not seen. First scout-team use of the swarm.
 Arc ID OPEN-DM-DSPH-1 registered this patch; SI-1 entry added; lane patches carry the
 `dsph_` prefix. Verdict grammar inherited unchanged from Gate-1/B1: pre-register,
 grade as written, record either way.
+
+
+---
+
+## ARC REOPENED — BOTH CANDIDATE BRANCHES DEAD (Patch 2369, 9 July 2026, founder-attested)
+**Founder verbatim: "Please proceed as recommended with kill recorded and new
+physics pursued."** Per the attested Clause 1, all OPEN-DM-DSPH-1 verdicts are
+UNFROZEN. Status of the candidate space: capture branch KILLED at the registered
+frame (2333); population branch KILLED at the audited frames (XQC-2007 channel,
+2366–2368–2369). The inverse question is now the lane.
+
+### Successor gate G-XQC-0 (pre-registered, cheap-kill-first, binding on every future candidate)
+Any successor population/candidate must, BEFORE investment: (a) be XQC-safe at
+its required abundance under the 1879 per-bin conservative criterion (the
+pipeline is validated, parameter-level, and cheap to run), OR (b) not require
+the ≈2.8 GeV species — or any species in XQC's kinematic acceptance — at
+XQC-visible abundance. The Stage-1 overburden ceilings (2365) and the
+per-experiment window map bind alongside.
+
+### The doors (from the verified 2366 save-the-corner list, with rents)
+- **WIDE DOOR — the formation kinetics (the recommended lane):** the kill chain
+  runs entirely through "every suite-passing population is dimer-weighted"
+  (2344/2349), whose S(N) derivation rent (OPEN-SS-43) was never paid. If the
+  substrate's true nucleation suppresses N=2 — if the derived S(N) does not
+  populate the dimer at 0.94–0.99 — the population's dwarf/LSB/cluster passes
+  survive with the XQC problem gone. This is simultaneously the campaign's
+  oldest unpaid rent and the reopened arc's most promising physics. First task:
+  derive, don't fit — and gate G-XQC-0 the result before anything else.
+- **Narrow door 1 — dimer-specific screening suppression:** must be DERIVED
+  from substrate structure; Gemini's verified multipole argument (minimal cage
+  → less cancellation → S_c likely HIGHER) stands against it. Rent: the
+  derivation must survive the 1888 island framework.
+- **Narrow door 2 — dimer-specific mediator structure:** contradicts the
+  shared-mediator core; rent: an axiom-consistent derivation plus consistency
+  with every registered rod-channel result.

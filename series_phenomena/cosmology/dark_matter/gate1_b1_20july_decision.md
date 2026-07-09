@@ -93,3 +93,16 @@ OSF deposit-queue entries + ledger row — one auditable act, per 2363).
 Until then all three papers remain flagged. If the Copilot re-run or any
 other input lands a BREAK before the 20th, the affected paper's status
 reopens without ceremony (2363 clause) and this ruling is re-presented.
+
+
+---
+
+## RELEASE RE-DECISION (Patch 2369, 9 July 2026 — FOUNDER-ATTESTED)
+**Founder verbatim: "Please proceed as recommended with kill recorded and new
+physics pursued."** The 2364 unified ruling is SUPERSEDED for DM-1/DM-3 by the
+second kill (2366–2368, attested 2369): **DM-2 releases ALONE on 20 July 2026**
+(unaffected by the finding; its own flash round closed at 2355). DM-1/DM-3 are
+OFF the calendar, marked killed-not-rewritten; their revision is deferred
+behind the new-physics arc (OPEN-DM-DSPH-1) by founder decision, so the
+eventual papers carry the kill and its resolution as one arc. The 20-July
+release-execution patch flips DM-2's flag only.
