@@ -39,14 +39,19 @@ trade is exhausted) / ×1.908 (central).
 ceiling (≤5 central / ≤10 extended) by ×5.6 / ×2.8 with no candidate consulted.**
 Her Carina anchor (≥40–50 at ⟨v⟩ = 48) against the pin (≤5–10 at 50) demands a
 local slope s = ln 2 / ln(50/48) ≈ 17 even at softened edges; the measured family
-maximum (orbiting onset, 2337/2344) is s ≈ 3.2, and no smooth σ(v) of any origin
-holds a ×2 drop over 2 km/s. **The collapse strand and the pin anchor cannot share
+maximum (orbiting onset, 2337/2344) is s ≈ 3.2, and no monotone smooth σ(v) — and
+none within the measured family class — holds a ×2 drop over 2 km/s; the logical
+remainder, a fine-tuned non-monotonic dip between 48 and 50 km/s, is unrealized in
+every registered family and flagged as such (flash-review sharpening, 2355). **The collapse strand and the pin anchor cannot share
 one evaluation frame.** The G3 "miss" is therefore not a candidate failure — it is
 the demand heterogeneity of 2345, now measured as an internal inconsistency between
-published strands. *Named sensitivity, registered, not graded:* the L4-b +10 km/s
-pin-velocity reading lowers the required slope to s ≈ 3.1 — inside the family's
-onset capability. The pin-velocity audit is now load-bearing for the strand
-question, one more reason it sits on the panel list.
+published strands. **Conditionality (flash-review sharpening, 2355 — four seats):** the collision claim
+is CONDITIONAL ON L4-b. At the registered v_pin = 50 the collapse strand is
+inconsistent with the pin (s_req ≈ 17 vs family max ≈ 3.2); at the +10 km/s reading
+s_req = 3.11 grazes the family maximum from below — the collision softens from
+impossible to marginal-open. Per the unanimous panel finding, **L4-b is promoted to
+the lane's required next computation**; it decides this statement's final form
+before the DM-1 rewrite.
 
 ## 4. Grade and the F3 trigger
 

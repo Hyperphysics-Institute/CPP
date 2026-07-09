@@ -39,6 +39,9 @@ simultaneously) under the envelope:
   (α = 0.01, inside 1855's own quoted range; the coupling knob absorbs the
   suppression) and depth ×2.18 with it off. The suppressed-end pass is thin — LSB
   grazes its low edge by 0.4%, s_eff rides the B1 bar at 1.01 — but non-empty.
+  *Flash-review flag (2355):* the B1 bar ridden at 1.01 is a constraint-active
+  sensitivity point, not a robust interior pass — small S(N) or ε(N) changes
+  could flip it.
 - **Audited-central: ENVELOPE-SPLIT** — clean pass at the registered rig, joint
   miss **×1.0032 (0.32%)** under the worst-case proxy. That miss sits inside the
   proxy's own error budget (ε MC noise is a few percent; the true rod-extent

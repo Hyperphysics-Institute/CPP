@@ -111,5 +111,18 @@ distinction (FORK-DISS-1 precedent) — it discharges the trigger question the f
 delegated; it does NOT adopt a frame, ratify Clause 1, or place the strand statement
 in DM-1. Those remain founder verbatim, block below still empty.
 
+**RESTATED per flash-review adjudication (2355; J-A four-seat SHARPEN, J-D BREAK
+graded to SHARPEN, J-B phrase), separating demand-evaluation from
+candidate-evaluation:** the gates are passed because the population satisfies the
+REGISTERED per-galaxy demand under the audited frames (the isothermal strand). The
+collapse-strand demand is internally inconsistent with the pin anchor AT THE
+REGISTERED PIN VELOCITY (v_pin = 50; s_req ≈ 17 vs family max ≈ 3.2) and that claim
+is CONDITIONAL ON L4-b (at +10 km/s, s_req = 3.11 grazes the family max from below —
+marginal-open). The G3 per-galaxy leg rests on a three-anchor subset (the dwarfs
+with in-text ⟨v⟩) — a sample-size limitation carried explicitly; the Carina–pin
+clash is independent of the omitted six. Demand revisions — the L4-b resolution or
+the full-anchor completion — REOPEN this certification without ceremony. L4-b is
+promoted to the lane's required next computation (unanimous panel finding).
+
 **FOUNDER DECISION (verbatim):**
 > [empty — awaiting founder text]
