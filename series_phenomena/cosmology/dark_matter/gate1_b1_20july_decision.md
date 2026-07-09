@@ -59,3 +59,13 @@ proceeds on its own clock and feeds the eventual v2-frame adoption proposal.
 
 > RELEASE DECISION (TLA, date): ______
 > If R2: DM-1/DM-3 target date and gate set: ______
+
+
+---
+
+**FOUNDER DECISION (via consolidated slate, verbatim "Slate ratified as recommended",
+9 July 2026; Patch 2358): R2 SPLIT ADOPTED.** DM-2 releases on/after 20 July 2026
+(pre-release items executed 2353; flash-review conditions cleared 2355). DM-1/DM-3
+release on passing their own panel round after the rewrites (population section
+drafted 2357; DM-3 rewrite in progress). The pre-registered "on or after 20 July"
+condition is hereby discharged by founder decision.

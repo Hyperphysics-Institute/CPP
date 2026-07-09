@@ -150,5 +150,16 @@ recommended" — suffices; edits govern where they differ).
    cleared, 2355); DM-1/DM-3 on passing their own panel round after the rewrites.
    *Worker recommendation and approval: YES.*
 
-**FOUNDER RATIFICATION (verbatim):**
-> [empty — awaiting founder text]
+**FOUNDER RATIFICATION (verbatim, 9 July 2026):**
+> "Slate ratified as recommended
+> Please start DM-3"
+
+**REGISTERED CONSEQUENCES (Patch 2358):** FRAME = **F3 ADOPTED, founder-attested**
+(dual-frame reporting primary; v1 kill + audited-frame population side by side;
+frames as delivered at 2345). PIN READING = **band-reporting ADOPTED** (⟨v⟩ ∈
+[50, 72] per the 2356 audit; no point selected; steep edge live). CLAUSE 1 =
+**RATIFIED as drafted (population form, 2357) — FOUNDER-ATTESTED**; frames and
+readings hereby FIXED at the F3 dual-frame set and the [50, 72] band; the
+OPEN-DM-DSPH-1 arc verdicts UNFREEZE under Clause 1's exits. RELEASE = **R2 SPLIT
+ADOPTED** — DM-2 releases on/after 20 July 2026 (flash-review conditions cleared at
+2355); DM-1/DM-3 release on passing their own panel round after the rewrites.

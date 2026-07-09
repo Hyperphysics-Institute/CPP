@@ -33,7 +33,7 @@ the same standards as Gate-1/B1 — then the working hypothesis loses protected 
 and the dSph shortfall is registered as evidence against the Cross-Rod rather than as
 incompleteness. New lanes may be added before closure only with pre-registered rent.*
 
-**CLAUSE 1 — POPULATION FORM, DRAFTED FOR FOUNDER RATIFICATION (Patch 2357):**
+**CLAUSE 1 — POPULATION FORM — FOUNDER-ATTESTED (ratified via slate, verbatim "Slate ratified as recommended", 9 July 2026; Patch 2358). Frames/readings fixed at ratification: F3 dual-frame set (2345) + pin band [50, 72] (2356). ARC VERDICTS UNFROZEN.** Text as ratified:
 *The working hypothesis — that the dark matter is a formation-generated population of
 Cross-Rod aggregates whose mass distribution passes the anchor suite at
 literature-audited frames — loses protected status, and the record registers evidence
@@ -53,8 +53,7 @@ group-scale falsifier hit.*
 *Frames and readings are fixed at ratification per the founder's slate; softening a
 window or reading AFTER an adverse result does not rescue protected status. New exit
 conditions may be added, and none removed, without a founder-attested amendment.*
-(The founder may ratify, amend, or replace; the arc's verdicts remain frozen until
-Clause 1 carries founder-attested text.)
+(Ratified as drafted; amendments henceforth per the clause's own add-only rule with founder attestation.)
 
 ## §2 SPEC-1 — the specification theorem (founding document)
 
