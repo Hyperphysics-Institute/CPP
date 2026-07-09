@@ -1,0 +1,108 @@
+{
+ "prereg": "see header",
+ "sigma_T": {
+  "attractive,Sc=0.012,atm14.5": {
+   "sigma_A_cm2": 4.8792630670840036e-26,
+   "sigma_eff_cm2": 2.1170426892484596e-29
+  },
+  "attractive,Sc=0.012,rock22": {
+   "sigma_A_cm2": 1.2303891396976003e-25,
+   "sigma_eff_cm2": 2.0542793130834552e-29
+  },
+  "attractive,Sc=0.012,Si28": {
+   "sigma_A_cm2": 2.09708578843175e-25,
+   "sigma_eff_cm2": 2.0366730206006976e-29
+  },
+  "attractive,Sc=0.035,atm14.5": {
+   "sigma_A_cm2": 4.369540946534591e-25,
+   "sigma_eff_cm2": 1.895881527404759e-28
+  },
+  "attractive,Sc=0.035,rock22": {
+   "sigma_A_cm2": 1.1368818132183538e-24,
+   "sigma_eff_cm2": 1.8981578388194122e-28
+  },
+  "attractive,Sc=0.035,Si28": {
+   "sigma_A_cm2": 1.989057652947674e-24,
+   "sigma_eff_cm2": 1.931756955545129e-28
+  },
+  "attractive,Sc=0.05,atm14.5": {
+   "sigma_A_cm2": 9.227922654660574e-25,
+   "sigma_eff_cm2": 4.003864092672228e-28
+  },
+  "attractive,Sc=0.05,rock22": {
+   "sigma_A_cm2": 2.4531171843033574e-24,
+   "sigma_eff_cm2": 4.095767527273916e-28
+  },
+  "attractive,Sc=0.05,Si28": {
+   "sigma_A_cm2": 4.371208168888736e-24,
+   "sigma_eff_cm2": 4.2452825698002235e-28
+  },
+  "repulsive,Sc=0.012,atm14.5": {
+   "sigma_A_cm2": 4.6310645483560207e-26,
+   "sigma_eff_cm2": 2.0093528901269305e-29
+  },
+  "repulsive,Sc=0.012,rock22": {
+   "sigma_A_cm2": 1.132587882634423e-25,
+   "sigma_eff_cm2": 1.8909886169157197e-29
+  },
+  "repulsive,Sc=0.012,Si28": {
+   "sigma_A_cm2": 1.8828060275750486e-25,
+   "sigma_eff_cm2": 1.8285662229651196e-29
+  },
+  "repulsive,Sc=0.035,atm14.5": {
+   "sigma_A_cm2": 3.7521792504958443e-25,
+   "sigma_eff_cm2": 1.6280170881951e-28
+  },
+  "repulsive,Sc=0.035,rock22": {
+   "sigma_A_cm2": 8.927426408528909e-25,
+   "sigma_eff_cm2": 1.490538789591661e-28
+  },
+  "repulsive,Sc=0.035,Si28": {
+   "sigma_A_cm2": 1.4519882399801192e-24,
+   "sigma_eff_cm2": 1.4101594178502744e-28
+  },
+  "repulsive,Sc=0.05,atm14.5": {
+   "sigma_A_cm2": 7.422747464845845e-25,
+   "sigma_eff_cm2": 3.2206243111996756e-28
+  },
+  "repulsive,Sc=0.05,rock22": {
+   "sigma_A_cm2": 1.7362365792651446e-24,
+   "sigma_eff_cm2": 2.8988510807887826e-28
+  },
+  "repulsive,Sc=0.05,Si28": {
+   "sigma_A_cm2": 2.786662417899489e-24,
+   "sigma_eff_cm2": 2.7063843526888253e-28
+  }
+ },
+ "xqc": {
+  "attractive,Sc=0.05,f=0.99,rho=0.6": 53522.974280386516,
+  "attractive,Sc=0.05,f=0.94,rho=0.2": 16939.931253725026,
+  "attractive,Sc=0.035,f=0.99,rho=0.6": 25328.63156848834,
+  "attractive,Sc=0.035,f=0.94,rho=0.2": 8016.469250632669,
+  "attractive,Sc=0.012,f=0.99,rho=0.6": 2029.1390540157222,
+  "attractive,Sc=0.012,f=0.94,rho=0.2": 642.2190945369623,
+  "attractive,Sc=0.035,f=0.94,rho=0.3": 12024.703875949011,
+  "repulsive,Sc=0.05,f=0.99,rho=0.6": 19951.779329682653,
+  "repulsive,Sc=0.05,f=0.94,rho=0.2": 6314.704568990466,
+  "repulsive,Sc=0.035,f=0.99,rho=0.6": 10759.231248635306,
+  "repulsive,Sc=0.035,f=0.94,rho=0.2": 3405.2785770091537,
+  "repulsive,Sc=0.012,f=0.99,rho=0.6": 1522.5405670452442,
+  "repulsive,Sc=0.012,f=0.94,rho=0.2": 481.8815262702122,
+  "repulsive,Sc=0.035,f=0.94,rho=0.3": 5107.91786551373
+ },
+ "grading": {
+  "sigma_eff_range_cm2": [
+   1.8285662229651196e-29,
+   4.2452825698002235e-28
+  ],
+  "above_ALL_ceilings_incl_surface": false,
+  "below_deep_ceilings": false,
+  "xqc_counts_range": [
+   481.8815262702122,
+   53522.974280386516
+  ],
+  "B1_all_above_314": true,
+  "B2_all_in_band": false,
+  "B4_all_below_band": false
+ }
+}

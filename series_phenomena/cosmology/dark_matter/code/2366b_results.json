@@ -1,0 +1,114 @@
+{
+ "attractive,Sc=0.05,f=0.99,rho=0.6": {
+  "violated_bins": 12,
+  "sat_violated": false,
+  "total": 53522.974280386516,
+  "verdict": "EXCLUDED-class"
+ },
+ "attractive,Sc=0.05,f=0.94,rho=0.2": {
+  "violated_bins": 10,
+  "sat_violated": false,
+  "total": 16939.931253725026,
+  "verdict": "EXCLUDED-class"
+ },
+ "attractive,Sc=0.035,f=0.99,rho=0.6": {
+  "violated_bins": 10,
+  "sat_violated": false,
+  "total": 25328.63156848834,
+  "verdict": "EXCLUDED-class"
+ },
+ "attractive,Sc=0.035,f=0.94,rho=0.2": {
+  "violated_bins": 8,
+  "sat_violated": false,
+  "total": 8016.469250632669,
+  "verdict": "EXCLUDED-class"
+ },
+ "attractive,Sc=0.012,f=0.99,rho=0.6": {
+  "violated_bins": 4,
+  "sat_violated": false,
+  "total": 2029.1390540157222,
+  "verdict": "EXCLUDED-class"
+ },
+ "attractive,Sc=0.012,f=0.94,rho=0.2": {
+  "violated_bins": 3,
+  "sat_violated": false,
+  "total": 642.2190945369623,
+  "verdict": "EXCLUDED-class"
+ },
+ "repulsive,Sc=0.05,f=0.99,rho=0.6": {
+  "violated_bins": 12,
+  "sat_violated": false,
+  "total": 19951.779329682653,
+  "verdict": "EXCLUDED-class"
+ },
+ "repulsive,Sc=0.05,f=0.94,rho=0.2": {
+  "violated_bins": 9,
+  "sat_violated": false,
+  "total": 6314.704568990466,
+  "verdict": "EXCLUDED-class"
+ },
+ "repulsive,Sc=0.035,f=0.99,rho=0.6": {
+  "violated_bins": 10,
+  "sat_violated": false,
+  "total": 10759.231248635306,
+  "verdict": "EXCLUDED-class"
+ },
+ "repulsive,Sc=0.035,f=0.94,rho=0.2": {
+  "violated_bins": 7,
+  "sat_violated": false,
+  "total": 3405.2785770091537,
+  "verdict": "EXCLUDED-class"
+ },
+ "repulsive,Sc=0.012,f=0.99,rho=0.6": {
+  "violated_bins": 4,
+  "sat_violated": false,
+  "total": 1522.5405670452442,
+  "verdict": "EXCLUDED-class"
+ },
+ "repulsive,Sc=0.012,f=0.94,rho=0.2": {
+  "violated_bins": 2,
+  "sat_violated": false,
+  "total": 481.8815262702122,
+  "verdict": "EXCLUDED-class"
+ },
+ "scan,attractive,Sc=0.012": {
+  "violated_bins": 3,
+  "sat_violated": false,
+  "total": 642.2190945369623
+ },
+ "scan,attractive,Sc=0.01": {
+  "violated_bins": 2,
+  "sat_violated": false,
+  "total": 433.07159746148085
+ },
+ "scan,attractive,Sc=0.008": {
+  "violated_bins": 2,
+  "sat_violated": false,
+  "total": 269.4462493160803
+ },
+ "scan,attractive,Sc=0.006": {
+  "violated_bins": 2,
+  "sat_violated": false,
+  "total": 147.50486942655596
+ },
+ "scan,repulsive,Sc=0.012": {
+  "violated_bins": 2,
+  "sat_violated": false,
+  "total": 481.8815262702122
+ },
+ "scan,repulsive,Sc=0.01": {
+  "violated_bins": 2,
+  "sat_violated": false,
+  "total": 341.1831779187359
+ },
+ "scan,repulsive,Sc=0.008": {
+  "violated_bins": 2,
+  "sat_violated": false,
+  "total": 222.77693004943325
+ },
+ "scan,repulsive,Sc=0.006": {
+  "violated_bins": 1,
+  "sat_violated": false,
+  "total": 127.94020588031626
+ }
+}
