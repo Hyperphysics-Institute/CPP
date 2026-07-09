@@ -116,3 +116,6 @@ charter §3; forward map: any lane producing a derived, rent-paying SPEC-1 mecha
 - **0.700 quarantine rule:** empirical, not derived; may not be used as a prior or input in any other CPP sector until independently derived (R3 finding; also stated in DM-2 §5 box).
 - **Perturbation-level growth residual:** dynamic Sea response to matter overdensities (μ(k,z), slip η, growth under Case-3) not discharged by the standing-density bookkeeping; forward map housed with the Gate-1/B1 c08 reduction (4 seats; DM-2 §8 carries the named residual).
 routes back through the anchor suite under Gate-1/B1 grading.
+
+- **[Patch 2362] Overburden/rate computation PROMOTED to the population lane's required next computation** (joint-round J-D BREAK, unanimous-in-substance + top ranked finding): F-DM3-4 (dimer ~2.8 GeV) is a registered CONDITIONAL falsifier until the rate computation demonstrates visibility below the strongly-interacting overburden ceiling; the computation now gates the discriminant's activation in both DM-1 and DM-3. Clause 1 exit (d) unaffected (fires on a null at computed-visible abundance).
+- **[Patch 2362] F5 script review-grade reformatting** (R1 finding 3, SCRATCH): queued to next DM-3 code pass; not release-blocking.
