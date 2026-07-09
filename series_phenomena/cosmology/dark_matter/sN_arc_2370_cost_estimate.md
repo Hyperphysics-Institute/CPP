@@ -366,7 +366,9 @@ exactly where it died.
 **Scope stated:** the XQC kill is graded at the corridor floor grid points
 that survived 2374c (S_c=0.012, ρ ≤ 0.3-class); above the floor the
 two-species exclusions stand from 2374c and higher S_c only increases
-couplings. Flory truncated/renormalized at N_cut=32 XQC-side with the
+couplings. Halo parameters, explicit (panel WOUND, 2378): ρ ∈ {0.2, 0.3}
+GeV/cm³ IS the graded grid; the velocity distribution is the 1879 pinned SHM
+set (v₀ = 220, v_esc = 584, v_det = 233.8 km/s) and was NOT varied in 2375. Flory truncated/renormalized at N_cut=32 XQC-side with the
 additive tail bound carrying the remainder in the hurting direction.
 
 **NO VERDICT MOVED. Founder's desk: the flash-panel round on 2375.**
