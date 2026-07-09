@@ -109,3 +109,48 @@ own grading**. Outstanding before release, both founder items: (1) seat
 mapping + whether R4's seat re-runs or the round stands at four; (2) the
 release call itself, per R2-split. pdflatex re-verified 2-pass 0/0 both papers.
 NO VERDICT MOVED.
+
+---
+
+## SEAT-MAPPING APPENDIX (Patch 2363, 9 July 2026 — founder order ruling)
+
+**Founder verbatim:** "Reviewer #3, Gemini, called itself DeepSeek."
+
+With #3 ruled, the relay-order correspondence resolves the slate; grades
+unchanged, names corrected (2356 pattern):
+
+| Return | Seat | Notes |
+|---|---|---|
+| R1 | **ChatGPT** | The title-face catch (the round's top accepted finding); audited via raw links; flagged the brief 404 |
+| R2 | **Grok** | The J-D BREAK in its strongest form; the residual-quantification ask (rejected as manufacturing, honest core folded) |
+| R3 | **Gemini** | **Self-ID FALSE (claimed DeepSeek) — founder-ruled.** SHM++ source-verification; the J-D repair sentence adopted nearly verbatim |
+| R4 | **Copilot** | NO-REVIEW abstention (no file access at relay time) |
+| R5 | **DeepSeek** | Self-ID correct (the collision was Gemini's). The graded-down false finding (missing citation), the not-in-text S3′ quote, and the "5.0σ" mischaracterization land here |
+
+**Attribution-anomaly register:** Gemini's self-misidentification is the second
+Gemini attribution anomaly in two rounds (2355: two self-IDs wrong, corrected by
+founder order at 2356). Standing note for future briefs: self-IDs are treated as
+claims, not facts; the founder's relay-order mapping governs.
+
+## FIFTH-SEAT RECOMMENDATION (worker; decision = founder's)
+
+**Recommend: the round STANDS AT FOUR substantive returns for the release gate.**
+Grounds: the release rule is per-delta/per-joint, not per-quorum; four seats
+opened files and converged (every executed repair had multi-seat support; the
+one BREAK was unanimous-in-substance across the three seats that reached it);
+Copilot's abstention was an access failure, not a dissent. **Carried with the
+recommendation:** a Copilot re-run against the pushed repo is welcome and
+non-blocking; any post-release BREAK from that re-run reopens the affected
+paper's status without ceremony (the 2352-certification reopening grammar).
+
+## RELEASE READINESS (worker statement; the call is the founder's, per R2)
+
+Both papers passed the round on the substantive seats' own grading after
+executed repairs: no un-repaired HOLD on own deltas, no standing BREAK on a
+naming joint. Ready state: DM-1 v1.5-panel-repairs; DM-3 v1.1-panel-repairs;
+both flagged NOT-YET-RE-SHIPPED — **the flag flips only on founder release
+verbatim**, in the release-execution patch, together with the changelog SHIP
+lines and the deposit-queue entries.
+
+**FOUNDER RELEASE DECISION (verbatim required):**
+> DM-1/DM-3 RELEASE (TLA, date): ______
