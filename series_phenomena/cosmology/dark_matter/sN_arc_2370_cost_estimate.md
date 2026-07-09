@@ -79,3 +79,36 @@ derived S(N) may cap below the steepness any Q1 survivor demands.
 **Recommendation: execute Q1 as Patch 2371.** Its answer reshapes everything
 downstream, it costs one session, and either outcome is progress: a target or
 a closed door.
+
+---
+
+## Q1 EXECUTED — OUTCOME (b): DIMER-FREE PASSES EXIST (Patch 2371, 9 July 2026)
+
+`code/2371_q1_dimerfree_rescan.py` + `2371_results.json`, verify 3/3 (machinery
+equivalence to stored 2344 totals at 0 rel dev; N≥3 floor enforced across every
+evaluated point; anneal seed-stability <5%). Pre-registered ranges and outcomes
+per the script header; frames FIXED per the attested Clause 1.
+
+| Frame | best violation | PASS | best composition |
+|---|---|---|---|
+| audited_extended | **1.0000** (already in wide scan) | **YES** | N=(4, 5), w=0.217, R_s=27.0 |
+| audited_central | **1.0000** | **YES** | N=(3, 6), w=0.064, R_s=90.6 |
+| registered | 1.0927 (anneal best) | no | — (coherent with the standing registered-frame kill) |
+
+**The dSph channel CAN be carried without the dimer.** Small-N (3–6) two-species
+mixtures pass the entire anchor suite elastically at both audited frames. The
+successor family is live; masses in play: N=3 → 4.22 GeV, N=4 → 5.63, N=5 →
+7.04, N=6 → 8.45 GeV, at mixture fractions where BOTH species are substantial.
+
+**Honest limits of Q1 (carried into Q2's scope):** these are annealed POINTS,
+not mapped regions; couplings are in the mixture machinery's units and need the
+registered per-N bridge (E_rN = 3E_c/(8N) × island S_c) for the XQC gate;
+naturalness costs (α, S(N) steepness) not yet graded — that is G1-machinery
+work and belongs with Q3's target-setting if Q2 clears.
+
+**Next: Q2 (2372) — G-XQC-0 on the survivors:** every species of both passing
+compositions through the 1879 per-bin criterion at its required abundance
+(heavier species: recoils shift into XQC's populated bins and number density
+drops as 1/M — genuinely open both ways), plus the Stage-1 ceiling map. The
+gate the dimer failed is the gate these must clear before any derivation
+investment.
