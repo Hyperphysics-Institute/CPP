@@ -372,3 +372,78 @@ set (v₀ = 220, v_esc = 584, v_det = 233.8 km/s) and was NOT varied in 2375. Fl
 additive tail bound carrying the remainder in the hurting direction.
 
 **NO VERDICT MOVED. Founder's desk: the flash-panel round on 2375.**
+
+---
+
+## THE XQC FIDELITY AUDIT (Patch 2379, 9 July 2026) — FOUNDER-DIRECTED; (B) HELD FOR THIS RESULT
+
+**Founder's question, verbatim:** "Note that the data that killed our DM-1, 3 …
+were from only one study, on a rocket 20 years ago. Are we confident in the
+fidelity of that measurement?" One clarification carried into the record: the
+dSph anchors are the survival side; the killing channel is XQC — one
+instrument, one ~100 s flight (1999), reanalyzed 2007.
+
+**What the literature says (session-searched, cited):** the dataset's
+interpretation has been independently derived by four groups over two decades
+— Wandelt et al. 2000; Zaharijas & Farrar 2005; Erickcek et al. 2007 (PRD 76
+042007, the pinned analysis); Mahdawi & Farrar 2017 (JCAP 12, 004) and 2018
+(JCAP 10, 007); plus a 2022 systematic reanalysis (arXiv:2209.04387) — mutually
+consistent where comparable. The literature's NAMED systematic is the
+nuclear-recoil **thermalization efficiency ε_th** (recoil → heat → measured
+energy; flagged as an assumption in that literature and bracketed as low as
+ε_th = 0.02 by Mahdawi & Farrar). Our 1879 pipeline implicitly assumed
+ε_th = 1. For a calorimeter, ε_th near 1 is the physical expectation (heat is
+what it measures); the 0.02–0.1 extremes are worst-case literature brackets.
+
+**The audit (`code/2379_xqc_fidelity_audit.py` + `2379_results.json` +
+`2379b_eth025_refinement.json` + `2379_unit_cache.json`; verify 3/3 — ε_th=1
+reproduces stored 2366b and all four stored 2375 closest approaches;
+threshold-loss monotone; attenuation cross-check exact). Direction was
+pre-stated honestly open: compression slides high-E_R recoils INTO the quiet
+binding bins — and that is exactly what happens first (ratios RISE at
+ε_th = 0.5) before threshold loss wins at lower ε_th.**
+
+**(A1) The registered 2369 dimer kill:** all twelve pre-registered points
+remain EXCLUDED at ε_th ∈ {1, 0.5, 0.1}. At ε_th = 0.02 the four
+island-floor points (S_c = 0.012) un-exclude while every S_c ≥ 0.035 point
+remains excluded (viol 1–2). So the kill is robust across the physically
+plausible range and down to 0.1; what is conditional at the 0.02 extreme is
+the WHOLESALE twelve-point form, specifically its island-floor corner.
+**Outcome (ii) as pre-registered: reported to founder + panel; this audit
+moves no verdict and edits no registered text.**
+
+**(A2) The 2375 candidate kill (equilibrium shape):** wholesale at
+ε_th ∈ {1, 0.5} (loosest corner ×1.130 at 0.5); first re-opening at the
+(repulsive, ρ=0.2) corner at ε_th = 0.25 (×0.914; refinement run); all four
+combos open by ε_th = 0.1. **Measured conditionality: the equilibrium-shape
+kill holds wholesale for ε_th ≳ 0.35–0.5 (linear crossing ≈ 0.35 at the
+loosest corner) — comfortably inside calorimetric expectation, outside the
+literature's worst-case bracket.** The (B) adjudication language carries
+this conditionality.
+
+**(A3) The corridor itself is ε_th-sensitive, non-monotonically:** at
+ε_th = 0.5 the pileup direction FLIPS marginal points EXCLUDED
+(central-attractive ρ=0.3: 0.985 → 1.132; extended corners similarly); at
+ε_th ≤ 0.1 the corridor widens. **The live corner (central-repulsive,
+ρ ≤ 0.3) survives the ENTIRE bracket** (worst ratios 0.73 / 0.87 / 0.71 /
+0.31 across ε_th = 1 / 0.5 / 0.1 / 0.02). Wall re-mapping under ε_th is
+conditional work, not owed until ε_th is pinned.
+
+**(B) Attenuation envelope:** filter stack (generous 10⁻⁴ g/cm² envelope) and
+residual atmosphere (10⁻⁵ g/cm²) give attenuation ~3×10⁻⁶ and ~4×10⁻⁷ at the
+dimer's worst-sign per-nucleus σ_T (5.9×10⁻²⁵ cm² on C at the island high
+edge) — the 1879 no-attenuation model is VINDICATED at envelope level; no
+paper-level pin owed.
+
+**Registered regardless of outcome (SI-1): the SINGLE-FLIGHT CONDITIONALITY**
+— every XQC-channel verdict is conditional on XQC-2007 fidelity, with ε_th
+the named systematic and the measured sensitivity thresholds above; DAMIC
+independently carves the island's edges; **F5 (the reflight prediction, 46
+events at the ruling point) is the direct future test, Micro-X-class
+sounding-rocket calorimeters the natural vehicle; the ε_th pin itself
+(thermalization of nuclear recoils in HgTe/Si microcalorimeters — a
+detector-physics literature question) is the owed external input.**
+
+**NO VERDICT MOVED.** Desk: (A) seat anomaly; (B) the 2375 kill adjudication,
+now in conditional form; (B2) NEW — whether the registered 2369 kill text
+gains the ε_th conditionality clause (founder + panel); (C) Q3b-2 go/no-go.

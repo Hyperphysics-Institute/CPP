@@ -1,0 +1,18 @@
+{
+ "attractive,rho=0.3": {
+  "closest": 1.7117460400530533,
+  "at_Nn": 6.25
+ },
+ "attractive,rho=0.2": {
+  "closest": 1.1411640267020355,
+  "at_Nn": 6.25
+ },
+ "repulsive,rho=0.3": {
+  "closest": 1.3704015787110653,
+  "at_Nn": 6.0
+ },
+ "repulsive,rho=0.2": {
+  "closest": 0.9136010524740437,
+  "at_Nn": 6.0
+ }
+}

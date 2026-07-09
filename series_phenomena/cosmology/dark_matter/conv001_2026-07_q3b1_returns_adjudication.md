@@ -110,10 +110,21 @@ substantive seats (worker recommendation: yes — unanimity in substance across 
 seats, per-delta rule not quorum, 2363 precedent; a non-blocking single-seat re-run is welcome
 if you want the fourth voice), or hold for a re-run.
 
-**(B) THE KILL ADJUDICATION:** on your verbatim, the 2375 candidate kill REGISTERS — the
-equilibrium-shaped (Flory/isodesmic) small-N population family is KILLED at the corridor
-(summed-XQC channel; Flory-scoped per GPT-2; "verify 2/3-as-preregistered, verdict robust" per
-GPT-1). This is the round's one movable verdict. Block: EMPTY.
+**(B) THE KILL ADJUDICATION** *(HELD at founder direction pending the 2379 fidelity audit;
+audit complete — language updated):* on your verbatim, the 2375 candidate kill REGISTERS in
+CONDITIONAL form — the equilibrium-shaped (Flory/isodesmic) small-N population family is
+KILLED at the corridor, **conditional on XQC thermalization efficiency ε_th ≳ 0.35–0.5**
+(2379-measured; wholesale at 0.5, first re-opening at the loosest corner at 0.25; calorimetric
+expectation is ε_th near 1) — summed-XQC channel; Flory-scoped per GPT-2; "verify
+2/3-as-preregistered, verdict robust" per GPT-1; single-flight conditionality per SI-1/2379.
+This is the round's one movable verdict. Block: EMPTY.
+
+**(B2) NEW, from the 2379 audit — the REGISTERED 2369 kill's conditionality clause:** at
+ε_th = 0.02 (the literature's extreme bracket) the twelve-point wholesale form's island-floor
+corner un-excludes, while every S_c ≥ 0.035 point stays excluded across the whole bracket.
+Whether the registered kill text gains an explicit ε_th clause is a founder + panel matter
+(it edits registered language). Worker recommendation: add the clause — it costs nothing and
+the record is stronger for naming its own conditionality. Block: EMPTY.
 
 **(C) Q3b-2 go/no-go** returns to the desk after (B): the weeks-scale derived-nucleation
 attempt is now the sole road, with the walls, the demand sheet, and the R-round's unanimous
