@@ -25,13 +25,36 @@ Two rules keep this Neptune-hunting rather than Vulcan-hunting:
 - **EXIT (Clause 1):** a pre-stated condition under which the hypothesis loses protected
   status.
 
-**CLAUSE 1 — PROPOSED, awaiting founder verbatim ratification:** *If lanes L1–L4 all
-close without producing a derived, rent-paying mechanism meeting SPEC-1 — closure
-graded by the same standards as Gate-1/B1 — then the working hypothesis loses protected
-status and the dSph shortfall is registered as evidence against the Cross-Rod rather
-than as incompleteness. New lanes may be added before closure only with pre-registered
-rent.* (The founder may ratify, amend, or replace; the arc's first verdict cannot move
-until Clause 1 carries founder-attested text.)
+**CLAUSE 1 — PROPOSED (mechanism form, 2339) — SUPERSEDED BY THE POPULATION RE-DRAFT
+BELOW (2357), per the 2346 requirement; NEITHER carries founder attestation yet.**
+Original mechanism-form text retained for the record: *If lanes L1–L4 all close
+without producing a derived, rent-paying mechanism meeting SPEC-1 — closure graded by
+the same standards as Gate-1/B1 — then the working hypothesis loses protected status
+and the dSph shortfall is registered as evidence against the Cross-Rod rather than as
+incompleteness. New lanes may be added before closure only with pre-registered rent.*
+
+**CLAUSE 1 — POPULATION FORM, DRAFTED FOR FOUNDER RATIFICATION (Patch 2357):**
+*The working hypothesis — that the dark matter is a formation-generated population of
+Cross-Rod aggregates whose mass distribution passes the anchor suite at
+literature-audited frames — loses protected status, and the record registers evidence
+against the Cross-Rod rather than incompleteness, if ANY of the following resolves
+against it, each graded by Gate-1/B1 standards:*
+*(a) **the S(N) rent:** the OPEN-SS-43 derivation of the residual coupling excludes
+every suite-passing (S₀, p) region at the adopted frame;*
+*(b) **the formation rent:** a registered correction to the 1855 mechanism (or its
+successor derivation) removes every suite-passing distribution from the admissible
+knob space;*
+*(c) **the completion audits:** the per-source pin-velocity recomputation restores the
+steep-edge reading AND the full-anchor (nine-dwarf) completion excludes the population
+at every licensed reading of the adopted frame;*
+*(d) **the discriminant:** a direct-detection null at the dimer-regime mass
+(≈ 2.8 GeV) at the abundance the passing regions require, or a confirmed F1
+group-scale falsifier hit.*
+*Frames and readings are fixed at ratification per the founder's slate; softening a
+window or reading AFTER an adverse result does not rescue protected status. New exit
+conditions may be added, and none removed, without a founder-attested amendment.*
+(The founder may ratify, amend, or replace; the arc's verdicts remain frozen until
+Clause 1 carries founder-attested text.)
 
 ## §2 SPEC-1 — the specification theorem (founding document)
 

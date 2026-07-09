@@ -126,3 +126,29 @@ promoted to the lane's required next computation (unanimous panel finding).
 
 **FOUNDER DECISION (verbatim):**
 > [empty — awaiting founder text]
+
+
+---
+
+## CONSOLIDATED FOUNDER DECISION SLATE (Patch 2357, 9 July 2026)
+
+Four items; each carries the worker recommendation and worker approval where given.
+Ratification lands in the block below (a single line — "Slate ratified as
+recommended" — suffices; edits govern where they differ).
+
+1. **FRAME:** adopt **F3** — dual-frame reporting made primary per the auto-proposal
+   (v1 kill and audited-frame population pass side by side; the annex above carries
+   the full gate record and the restated, re-closed certification).
+   *Worker recommendation and approval: YES.*
+2. **PIN READING:** **band-reporting** across ⟨v⟩ ∈ [50, 72] — no point selected;
+   papers state the strand result per reading (steep edge live; table in the DM-1
+   section draft). *Worker recommendation and approval: YES.*
+3. **CLAUSE 1:** ratify the **population-form draft** in
+   `open_dm_dsph_1_inverse_arc.md` (2357); exits (a)–(d); frames/readings fixed at
+   ratification. *Text delivered; founder may amend freely.*
+4. **RELEASE:** **R2 split** — DM-2 on/after 20 July (flash-review conditions
+   cleared, 2355); DM-1/DM-3 on passing their own panel round after the rewrites.
+   *Worker recommendation and approval: YES.*
+
+**FOUNDER RATIFICATION (verbatim):**
+> [empty — awaiting founder text]
