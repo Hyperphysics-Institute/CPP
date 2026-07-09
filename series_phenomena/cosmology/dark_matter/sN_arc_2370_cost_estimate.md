@@ -488,3 +488,54 @@ fully derived and the arc says so.
 **Warm-launch: keyword class DM-WARM-2381; handover = this document
 (§Q1 → §Q3b-2, complete) + `2379_unit_cache.json` (committed, reusable) +
 the adjudication doc. Patch numbering resumes at 2381.**
+
+---
+
+## Q3b-2a EXECUTED — THE GROUNDING PASS: FLOOR STRUCTURAL, CEILING NOT FREE, STIFFNESS DEMAND INVERTED (Patch 2381, 9 July 2026)
+
+**Warm-launch DM-WARM-2381 consumed as registered.** All three contracted
+items executed; artifact `code/2381_q3b2a_grounding_ringclosure_Nc.py`
+(exit-coded battery). **VERIFY 6/6.**
+
+**Re-runs (clean clone):** 0861 reproduces exactly (SY peak 3.37; ℓ_p band
+[105, 702] fm; representative N_peak = 820); 0881 reproduces exactly
+(E_bond/kT_form ≈ 24–41; closure all-YES at kT_form ≤ 19 keV). The D1
+small-N band independently recomputed from the 0881 inverse map:
+survivors N = 3–6 → **[23.2, 36.2]**, exact match to the registered 2374
+demand sheet.
+
+**Bending-cost statement (extracted):** E_close(N) = c·(ℓ_p/ℓ_rung)·kT/N;
+c = 14.054 (SY, registered J-factor) or 2π² = 19.739 (rigid). The discrete
+N-gon equals the continuum rigid ring to machine precision (V4) — the form
+is trustworthy down to N = 3.
+
+**The N_c implication (four computed statements):**
+1. **Floor — STRUCTURAL.** Closed rings require N ≥ 3; N = 1, 2 cannot
+   close non-degenerately. If the frozen stable species is the ring,
+   w(1) = w(2) = 0 IDENTICALLY (D2/D3 met identically, not marginally) and
+   N_c = 3 EMERGES. Conditional carried: "stability = closure" is Q3b-2b's
+   to derive; residual open chains at freeze-out re-arm D2/D3.
+2. **Energetic window roomy:** closure at N = 3 favorable for
+   ℓ_p/ℓ_rung ≲ 3.5–7.7 under D1.
+3. **Placement — the stiffness demand INVERTS:** peak at survivors
+   N ∈ [3, 6] demands **ℓ_p/ℓ_rung ∈ [0.89, 1.78]** — ×59–×788 softer than
+   the 0861 large-loop era. Same single substrate object (2eDP:2qDP
+   rung-bond SSV angular stiffness), inverted band. **NAMED KILL for
+   Q3b-2b:** derived stiffness lands in [0.89, 1.78] or the ring mechanism
+   dies at placement.
+4. **Ceiling — NOT FREE (the pass's honest surprise):** equilibrium ring
+   weighting gives tail suppression ×1.0–1.2 at the soft end and
+   ANTI-suppression ×0.4–0.7 at the stiff end — the ceiling above N ≈ 6
+   does not come from ring statics. If it exists it is KINETIC: rings have
+   no reactive ends, growth stops at closure, and the frozen product is set
+   by closure-vs-growth competition on open chains. That shutoff is
+   Q3b-2b's named ceiling candidate; the registered death mode
+   ("equilibrium shape emerges anyway") stays fully armed. (Closing text
+   corrected in-session after the grid refuted the drafted summary — the
+   2375 pattern, owned pre-commit.)
+
+**Battery FIXED (binding under Q3b-2b/2c):** V1 SY peak; V2 0861 band;
+V3 0881 + D1; V4 bending identity; V5 unit-cache integrity (336 keys,
+schema N,sign,S_c,ε_th, 13 bins). Semantic cache cross-check
+(viol = 3/642.219095) deliberately left to the summed-criterion channel in
+Q3b-2c. **NO VERDICT MOVED.** Reasoning: `reasoning/2381.md`.
