@@ -112,3 +112,61 @@ compositions through the 1879 per-bin criterion at its required abundance
 drops as 1/M — genuinely open both ways), plus the Stage-1 ceiling map. The
 gate the dimer failed is the gate these must clear before any derivation
 investment.
+
+---
+
+## Q2 EXECUTED — OUTCOME (b), CORRIDOR-CONDITIONED: THE SUCCESSORS CLEAR THE GATE ONLY AT THE ISLAND FLOOR (Patch 2372, 9 July 2026)
+
+`code/2372_q2_gxqc0_survivors.py` + `2372_results.json`, verify 3/3 (V-a: the
+dimer regression anchor reproduces stored 2366b EXACTLY — viol=3, total
+642.219, rel dev 0.0; V-b: bridge E_rN = 3E_c/(8N)·S_c asserted at every
+evaluated point; V-c: 2368-class convergence at the N=6 hurting corner —
+violated bins unchanged, totals ≤1.1e-4 rel under h/r_max/l_max variations).
+Conventions pre-stated: the XQC-side mediator range stays the REGISTERED
+R_s = r_c/χ = 25.4 fm (the Q1 mixture R_s is the OPEN-SS-43 dSph-side
+screening, a different quantity); geometry M = N·1408 MeV, L = (N−1)·1.15 fm;
+abundance per species = its Q1 mass fraction × ρ, Erickcek normalization;
+criterion = 1879's own per-bin conservative test, verbatim, no new criterion.
+
+**The grid (2 signs × S_c {0.012, 0.035, 0.05} × ρ {0.2, 0.3, 0.6}), both
+compositions, all four species:**
+
+| Grid point class | extended N=(4,5) w=0.217 | central N=(3,6) w=0.064 |
+|---|---|---|
+| S_c = 0.05 (island high edge), any ρ | EXCLUDED-class (up to 12 bins) | EXCLUDED-class (up to 12 bins) |
+| S_c = 0.035 (ruling point), any ρ | EXCLUDED-class (1–8 bins) | EXCLUDED-class (1–9 bins) |
+| S_c = 0.012 (island floor), ρ = 0.6 | EXCLUDED-class (1 bin, ×1.39) | EXCLUDED-class (1 bin, ×1.03–1.31) |
+| **S_c = 0.012, ρ ∈ {0.2, 0.3}** | **XQC-SAFE, both signs, both species** | **XQC-SAFE, both signs, both species** |
+
+**What resolved of the "open both ways" physics:** at the island floor, the
+1/M number-density suppression plus the populated-bin thresholds win — the
+successor recoils land in bins where obs + 5√(obs+1) is a real budget, and
+the dimer's quiet-bin kill (29–128 eV, obs 0 and 11, persisting below the
+floor to S_c = 0.006) does NOT transfer. Above the floor, coupling wins: the
+ruling point S_c = 0.035 excludes everything decisively. The high-ρ boundary
+is soft in the hurting direction honestly stated: the ρ = 0.6 exclusions at
+the floor are near-threshold (×1.03–1.39 in the 36–128 eV bin) — the corridor
+edge, not a wall.
+
+**The gate-cleared target Q3 inherits (sharpened, not just alive):** the
+successor family survives in a CORRIDOR — S_c ≈ 0.012 (the post-DAMIC low
+island edge, exactly the DAMIC-adjudicable boundary) at ρ_local ≤ 0.3
+GeV/cm³. A Q3 derivation must now deliver BOTH: an S(N) that suppresses N=2
+while populating N = 3–6, AND a realized coupling landing at the low island
+edge. Noted as hint, not evidence: 1888's accepted-region S_c distribution
+skews low, so the corridor is where the data-drawn portrait already lived.
+
+**Stage-1 map at the surviving coupling (record):** σ_eff ~ 0.8–8×10⁻³⁰ cm²
+across N = 3–6 — overburden-blind to the deep sites (SNOLAB/LSM ceilings
+0.9–1.1×10⁻³¹) but inside or near the MINOS-depth window (2.3×10⁻³⁰) and
+below the surface ceiling: **the survivors are not invisible; shallow-site
+experiments have a computed visibility window** — an F-DM3-4-class
+falsification channel attaches to the corridor from day one.
+
+**Honest limits carried forward:** corridor endpoints are grid points, not
+mapped boundaries (the S_c edge between 0.012 and 0.035, and the ρ edge
+between 0.3 and 0.6, are unbracketed inside); Q1's limits persist (annealed
+points not regions; naturalness ungraded). **NO VERDICT MOVED** — G-XQC-0 was
+pre-registered as the derivation-investment gate, and it has now been passed
+in corridor form. Q3 entry is UNLOCKED per the 2370 plan; whether to pay the
+weeks-scale cost is the founder's call.

@@ -1,0 +1,1677 @@
+{
+ "prereg": "header",
+ "compositions": {
+  "extended": [
+   [
+    4,
+    0.2167197916747189
+   ],
+   [
+    5,
+    0.7832802083252811
+   ]
+  ],
+  "central": [
+   [
+    3,
+    0.0642646465176494
+   ],
+   [
+    6,
+    0.9357353534823506
+   ]
+  ]
+ },
+ "V": {
+  "a_regression": {
+   "viol": 3,
+   "total": 642.2190945369623,
+   "stored": 642.2190945369623,
+   "rel_dev": 0.0,
+   "ok": true
+  },
+  "c_convergence": {
+   "base": {
+    "viol": 12,
+    "total": 4318.744881472286
+   },
+   "h_0.05": {
+    "viol": 12,
+    "total": 4318.746012076857,
+    "rel_dev": 2.6179008085186854e-07,
+    "ok": true
+   },
+   "rmax_240": {
+    "viol": 12,
+    "total": 4318.271853254459,
+    "rel_dev": 0.00010952909486651405,
+    "ok": true
+   },
+   "lmax_+20": {
+    "viol": 12,
+    "total": 4318.6891993155305,
+    "rel_dev": 1.2893134066355922e-05,
+    "ok": true
+   }
+  },
+  "b_bridge_asserted": true,
+  "passed": "3/3"
+ },
+ "perbin": {
+  "extended,N=4,f=0.2167,attractive,Sc=0.05,rho=0.6": {
+   "violated_bins": 10,
+   "sat_violated": false,
+   "total": 2865.460847666619,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     69.2,
+     0
+    ],
+    [
+     36,
+     128,
+     644.1,
+     11
+    ],
+    [
+     128,
+     300,
+     985.2,
+     129
+    ]
+   ]
+  },
+  "extended,N=4,f=0.2167,attractive,Sc=0.05,rho=0.3": {
+   "violated_bins": 4,
+   "sat_violated": false,
+   "total": 1432.7304238333095,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     34.6,
+     0
+    ],
+    [
+     36,
+     128,
+     322.1,
+     11
+    ],
+    [
+     128,
+     300,
+     492.6,
+     129
+    ]
+   ]
+  },
+  "extended,N=4,f=0.2167,attractive,Sc=0.05,rho=0.2": {
+   "violated_bins": 4,
+   "sat_violated": false,
+   "total": 955.1536158888734,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     23.1,
+     0
+    ],
+    [
+     36,
+     128,
+     214.7,
+     11
+    ],
+    [
+     128,
+     300,
+     328.4,
+     129
+    ]
+   ]
+  },
+  "extended,N=4,f=0.2167,attractive,Sc=0.035,rho=0.6": {
+   "violated_bins": 4,
+   "sat_violated": false,
+   "total": 1373.6532103658424,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     37.8,
+     0
+    ],
+    [
+     36,
+     128,
+     330.1,
+     11
+    ],
+    [
+     128,
+     300,
+     466.2,
+     129
+    ]
+   ]
+  },
+  "extended,N=4,f=0.2167,attractive,Sc=0.035,rho=0.3": {
+   "violated_bins": 3,
+   "sat_violated": false,
+   "total": 686.8266051829212,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     18.9,
+     0
+    ],
+    [
+     36,
+     128,
+     165.0,
+     11
+    ],
+    [
+     128,
+     300,
+     233.1,
+     129
+    ]
+   ]
+  },
+  "extended,N=4,f=0.2167,attractive,Sc=0.035,rho=0.2": {
+   "violated_bins": 2,
+   "sat_violated": false,
+   "total": 457.8844034552808,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     12.6,
+     0
+    ],
+    [
+     36,
+     128,
+     110.0,
+     11
+    ]
+   ]
+  },
+  "extended,N=4,f=0.2167,attractive,Sc=0.012,rho=0.6": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 129.26732347965213,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "extended,N=4,f=0.2167,attractive,Sc=0.012,rho=0.3": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 64.63366173982607,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "extended,N=4,f=0.2167,attractive,Sc=0.012,rho=0.2": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 43.08910782655072,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "extended,N=4,f=0.2167,repulsive,Sc=0.05,rho=0.6": {
+   "violated_bins": 5,
+   "sat_violated": false,
+   "total": 1385.268379587745,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     22.6,
+     0
+    ],
+    [
+     36,
+     128,
+     229.5,
+     11
+    ],
+    [
+     128,
+     300,
+     399.7,
+     129
+    ]
+   ]
+  },
+  "extended,N=4,f=0.2167,repulsive,Sc=0.05,rho=0.3": {
+   "violated_bins": 4,
+   "sat_violated": false,
+   "total": 692.6341897938725,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     11.3,
+     0
+    ],
+    [
+     36,
+     128,
+     114.7,
+     11
+    ],
+    [
+     128,
+     300,
+     199.8,
+     129
+    ]
+   ]
+  },
+  "extended,N=4,f=0.2167,repulsive,Sc=0.05,rho=0.2": {
+   "violated_bins": 2,
+   "sat_violated": false,
+   "total": 461.7561265292486,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     7.5,
+     0
+    ],
+    [
+     36,
+     128,
+     76.5,
+     11
+    ]
+   ]
+  },
+  "extended,N=4,f=0.2167,repulsive,Sc=0.035,rho=0.6": {
+   "violated_bins": 4,
+   "sat_violated": false,
+   "total": 742.9194517890886,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     12.7,
+     0
+    ],
+    [
+     36,
+     128,
+     129.5,
+     11
+    ],
+    [
+     128,
+     300,
+     219.7,
+     129
+    ]
+   ]
+  },
+  "extended,N=4,f=0.2167,repulsive,Sc=0.035,rho=0.3": {
+   "violated_bins": 2,
+   "sat_violated": false,
+   "total": 371.4597258945443,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     6.4,
+     0
+    ],
+    [
+     36,
+     128,
+     64.8,
+     11
+    ]
+   ]
+  },
+  "extended,N=4,f=0.2167,repulsive,Sc=0.035,rho=0.2": {
+   "violated_bins": 1,
+   "sat_violated": false,
+   "total": 247.63981726302958,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     36,
+     128,
+     43.2,
+     11
+    ]
+   ]
+  },
+  "extended,N=4,f=0.2167,repulsive,Sc=0.012,rho=0.6": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 103.3044308185401,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "extended,N=4,f=0.2167,repulsive,Sc=0.012,rho=0.3": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 51.65221540927005,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "extended,N=4,f=0.2167,repulsive,Sc=0.012,rho=0.2": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 34.43481027284673,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "extended,N=5,f=0.7833,attractive,Sc=0.05,rho=0.6": {
+   "violated_bins": 12,
+   "sat_violated": false,
+   "total": 5912.767792665703,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     106.2,
+     0
+    ],
+    [
+     36,
+     128,
+     1144.7,
+     11
+    ],
+    [
+     128,
+     300,
+     1947.5,
+     129
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,attractive,Sc=0.05,rho=0.3": {
+   "violated_bins": 11,
+   "sat_violated": false,
+   "total": 2956.3838963328517,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     53.1,
+     0
+    ],
+    [
+     36,
+     128,
+     572.4,
+     11
+    ],
+    [
+     128,
+     300,
+     973.7,
+     129
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,attractive,Sc=0.05,rho=0.2": {
+   "violated_bins": 7,
+   "sat_violated": false,
+   "total": 1970.9225975552336,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     35.4,
+     0
+    ],
+    [
+     36,
+     128,
+     381.6,
+     11
+    ],
+    [
+     128,
+     300,
+     649.2,
+     129
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,attractive,Sc=0.035,rho=0.6": {
+   "violated_bins": 11,
+   "sat_violated": false,
+   "total": 2845.8330676835067,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     56.6,
+     0
+    ],
+    [
+     36,
+     128,
+     588.6,
+     11
+    ],
+    [
+     128,
+     300,
+     934.9,
+     129
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,attractive,Sc=0.035,rho=0.3": {
+   "violated_bins": 5,
+   "sat_violated": false,
+   "total": 1422.9165338417533,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     28.3,
+     0
+    ],
+    [
+     36,
+     128,
+     294.3,
+     11
+    ],
+    [
+     128,
+     300,
+     467.5,
+     129
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,attractive,Sc=0.035,rho=0.2": {
+   "violated_bins": 4,
+   "sat_violated": false,
+   "total": 948.6110225611683,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     18.9,
+     0
+    ],
+    [
+     36,
+     128,
+     196.2,
+     11
+    ],
+    [
+     128,
+     300,
+     311.6,
+     129
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,attractive,Sc=0.012,rho=0.6": {
+   "violated_bins": 1,
+   "sat_violated": false,
+   "total": 279.39677185558867,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     36,
+     128,
+     52.7,
+     11
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,attractive,Sc=0.012,rho=0.3": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 139.69838592779433,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "extended,N=5,f=0.7833,attractive,Sc=0.012,rho=0.2": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 93.13225728519623,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "extended,N=5,f=0.7833,repulsive,Sc=0.05,rho=0.6": {
+   "violated_bins": 12,
+   "sat_violated": false,
+   "total": 3153.3475724088294,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     45.2,
+     0
+    ],
+    [
+     36,
+     128,
+     474.9,
+     11
+    ],
+    [
+     128,
+     300,
+     884.8,
+     129
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,repulsive,Sc=0.05,rho=0.3": {
+   "violated_bins": 8,
+   "sat_violated": false,
+   "total": 1576.6737862044147,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     22.6,
+     0
+    ],
+    [
+     36,
+     128,
+     237.5,
+     11
+    ],
+    [
+     128,
+     300,
+     442.4,
+     129
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,repulsive,Sc=0.05,rho=0.2": {
+   "violated_bins": 5,
+   "sat_violated": false,
+   "total": 1051.11585746961,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     15.1,
+     0
+    ],
+    [
+     36,
+     128,
+     158.3,
+     11
+    ],
+    [
+     128,
+     300,
+     294.9,
+     129
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,repulsive,Sc=0.035,rho=0.6": {
+   "violated_bins": 8,
+   "sat_violated": false,
+   "total": 1681.2525527557725,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     25.1,
+     0
+    ],
+    [
+     36,
+     128,
+     265.0,
+     11
+    ],
+    [
+     128,
+     300,
+     483.7,
+     129
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,repulsive,Sc=0.035,rho=0.3": {
+   "violated_bins": 5,
+   "sat_violated": false,
+   "total": 840.6262763778863,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     12.5,
+     0
+    ],
+    [
+     36,
+     128,
+     132.5,
+     11
+    ],
+    [
+     128,
+     300,
+     241.8,
+     129
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,repulsive,Sc=0.035,rho=0.2": {
+   "violated_bins": 2,
+   "sat_violated": false,
+   "total": 560.4175175852578,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     8.4,
+     0
+    ],
+    [
+     36,
+     128,
+     88.3,
+     11
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,repulsive,Sc=0.012,rho=0.6": {
+   "violated_bins": 1,
+   "sat_violated": false,
+   "total": 230.29173270120393,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     36,
+     128,
+     39.3,
+     11
+    ]
+   ]
+  },
+  "extended,N=5,f=0.7833,repulsive,Sc=0.012,rho=0.3": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 115.14586635060196,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "extended,N=5,f=0.7833,repulsive,Sc=0.012,rho=0.2": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 76.76391090040129,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "central,N=3,f=0.0643,attractive,Sc=0.05,rho=0.6": {
+   "violated_bins": 4,
+   "sat_violated": false,
+   "total": 1645.6944150254753,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     44.8,
+     0
+    ],
+    [
+     36,
+     128,
+     487.5,
+     11
+    ],
+    [
+     128,
+     300,
+     582.5,
+     129
+    ]
+   ]
+  },
+  "central,N=3,f=0.0643,attractive,Sc=0.05,rho=0.3": {
+   "violated_bins": 3,
+   "sat_violated": false,
+   "total": 822.8472075127377,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     22.4,
+     0
+    ],
+    [
+     36,
+     128,
+     243.8,
+     11
+    ],
+    [
+     128,
+     300,
+     291.2,
+     129
+    ]
+   ]
+  },
+  "central,N=3,f=0.0643,attractive,Sc=0.05,rho=0.2": {
+   "violated_bins": 3,
+   "sat_violated": false,
+   "total": 548.5648050084916,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     14.9,
+     0
+    ],
+    [
+     36,
+     128,
+     162.5,
+     11
+    ],
+    [
+     128,
+     300,
+     194.2,
+     129
+    ]
+   ]
+  },
+  "central,N=3,f=0.0643,attractive,Sc=0.035,rho=0.6": {
+   "violated_bins": 3,
+   "sat_violated": false,
+   "total": 786.0775789904249,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     24.3,
+     0
+    ],
+    [
+     36,
+     128,
+     249.4,
+     11
+    ],
+    [
+     128,
+     300,
+     268.6,
+     129
+    ]
+   ]
+  },
+  "central,N=3,f=0.0643,attractive,Sc=0.035,rho=0.3": {
+   "violated_bins": 2,
+   "sat_violated": false,
+   "total": 393.0387894952124,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     12.1,
+     0
+    ],
+    [
+     36,
+     128,
+     124.7,
+     11
+    ]
+   ]
+  },
+  "central,N=3,f=0.0643,attractive,Sc=0.035,rho=0.2": {
+   "violated_bins": 2,
+   "sat_violated": false,
+   "total": 262.0258596634749,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     8.1,
+     0
+    ],
+    [
+     36,
+     128,
+     83.1,
+     11
+    ]
+   ]
+  },
+  "central,N=3,f=0.0643,attractive,Sc=0.012,rho=0.6": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 69.14543624132571,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "central,N=3,f=0.0643,attractive,Sc=0.012,rho=0.3": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 34.572718120662856,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "central,N=3,f=0.0643,attractive,Sc=0.012,rho=0.2": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 23.04847874710857,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "central,N=3,f=0.0643,repulsive,Sc=0.05,rho=0.6": {
+   "violated_bins": 4,
+   "sat_violated": false,
+   "total": 702.0316844977461,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     12.1,
+     0
+    ],
+    [
+     36,
+     128,
+     136.3,
+     11
+    ],
+    [
+     128,
+     300,
+     216.1,
+     129
+    ]
+   ]
+  },
+  "central,N=3,f=0.0643,repulsive,Sc=0.05,rho=0.3": {
+   "violated_bins": 2,
+   "sat_violated": false,
+   "total": 351.01584224887307,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     6.0,
+     0
+    ],
+    [
+     36,
+     128,
+     68.2,
+     11
+    ]
+   ]
+  },
+  "central,N=3,f=0.0643,repulsive,Sc=0.05,rho=0.2": {
+   "violated_bins": 1,
+   "sat_violated": false,
+   "total": 234.01056149924847,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     36,
+     128,
+     45.4,
+     11
+    ]
+   ]
+  },
+  "central,N=3,f=0.0643,repulsive,Sc=0.035,rho=0.6": {
+   "violated_bins": 2,
+   "sat_violated": false,
+   "total": 378.2750696373649,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     6.9,
+     0
+    ],
+    [
+     36,
+     128,
+     77.8,
+     11
+    ]
+   ]
+  },
+  "central,N=3,f=0.0643,repulsive,Sc=0.035,rho=0.3": {
+   "violated_bins": 1,
+   "sat_violated": false,
+   "total": 189.13753481868244,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     36,
+     128,
+     38.9,
+     11
+    ]
+   ]
+  },
+  "central,N=3,f=0.0643,repulsive,Sc=0.035,rho=0.2": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 126.09168987912156,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "central,N=3,f=0.0643,repulsive,Sc=0.012,rho=0.6": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 53.31457517493312,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "central,N=3,f=0.0643,repulsive,Sc=0.012,rho=0.3": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 26.65728758746656,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "central,N=3,f=0.0643,repulsive,Sc=0.012,rho=0.2": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 17.771525058311045,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "central,N=6,f=0.9357,attractive,Sc=0.05,rho=0.6": {
+   "violated_bins": 12,
+   "sat_violated": false,
+   "total": 4318.744881472286,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     61.4,
+     0
+    ],
+    [
+     36,
+     128,
+     770.1,
+     11
+    ],
+    [
+     128,
+     300,
+     1311.6,
+     129
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,attractive,Sc=0.05,rho=0.3": {
+   "violated_bins": 11,
+   "sat_violated": false,
+   "total": 2159.372440736143,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     30.7,
+     0
+    ],
+    [
+     36,
+     128,
+     385.1,
+     11
+    ],
+    [
+     128,
+     300,
+     655.8,
+     129
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,attractive,Sc=0.05,rho=0.2": {
+   "violated_bins": 5,
+   "sat_violated": false,
+   "total": 1439.5816271574288,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     20.5,
+     0
+    ],
+    [
+     36,
+     128,
+     256.7,
+     11
+    ],
+    [
+     128,
+     300,
+     437.2,
+     129
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,attractive,Sc=0.035,rho=0.6": {
+   "violated_bins": 9,
+   "sat_violated": false,
+   "total": 2085.3128026993472,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     33.0,
+     0
+    ],
+    [
+     36,
+     128,
+     393.1,
+     11
+    ],
+    [
+     128,
+     300,
+     637.8,
+     129
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,attractive,Sc=0.035,rho=0.3": {
+   "violated_bins": 4,
+   "sat_violated": false,
+   "total": 1042.6564013496736,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     16.5,
+     0
+    ],
+    [
+     36,
+     128,
+     196.5,
+     11
+    ],
+    [
+     128,
+     300,
+     318.9,
+     129
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,attractive,Sc=0.035,rho=0.2": {
+   "violated_bins": 4,
+   "sat_violated": false,
+   "total": 695.104267566449,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     11.0,
+     0
+    ],
+    [
+     36,
+     128,
+     131.0,
+     11
+    ],
+    [
+     128,
+     300,
+     212.6,
+     129
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,attractive,Sc=0.012,rho=0.6": {
+   "violated_bins": 1,
+   "sat_violated": false,
+   "total": 211.68796477064424,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     36,
+     128,
+     37.2,
+     11
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,attractive,Sc=0.012,rho=0.3": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 105.84398238532212,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "central,N=6,f=0.9357,attractive,Sc=0.012,rho=0.2": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 70.56265492354802,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "central,N=6,f=0.9357,repulsive,Sc=0.05,rho=0.6": {
+   "violated_bins": 12,
+   "sat_violated": false,
+   "total": 2501.2609299699984,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     29.4,
+     0
+    ],
+    [
+     36,
+     128,
+     367.9,
+     11
+    ],
+    [
+     128,
+     300,
+     661.5,
+     129
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,repulsive,Sc=0.05,rho=0.3": {
+   "violated_bins": 5,
+   "sat_violated": false,
+   "total": 1250.6304649849992,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     14.7,
+     0
+    ],
+    [
+     36,
+     128,
+     184.0,
+     11
+    ],
+    [
+     128,
+     300,
+     330.8,
+     129
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,repulsive,Sc=0.05,rho=0.2": {
+   "violated_bins": 5,
+   "sat_violated": false,
+   "total": 833.7536433233333,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     9.8,
+     0
+    ],
+    [
+     36,
+     128,
+     122.6,
+     11
+    ],
+    [
+     128,
+     300,
+     220.5,
+     129
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,repulsive,Sc=0.035,rho=0.6": {
+   "violated_bins": 5,
+   "sat_violated": false,
+   "total": 1325.739706923062,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     16.4,
+     0
+    ],
+    [
+     36,
+     128,
+     202.3,
+     11
+    ],
+    [
+     128,
+     300,
+     359.7,
+     129
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,repulsive,Sc=0.035,rho=0.3": {
+   "violated_bins": 3,
+   "sat_violated": false,
+   "total": 662.869853461531,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     8.2,
+     0
+    ],
+    [
+     36,
+     128,
+     101.2,
+     11
+    ],
+    [
+     300,
+     540,
+     126.9,
+     80
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,repulsive,Sc=0.035,rho=0.2": {
+   "violated_bins": 2,
+   "sat_violated": false,
+   "total": 441.913235641021,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     29,
+     36,
+     5.5,
+     0
+    ],
+    [
+     36,
+     128,
+     67.4,
+     11
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,repulsive,Sc=0.012,rho=0.6": {
+   "violated_bins": 1,
+   "sat_violated": false,
+   "total": 179.0408229293816,
+   "verdict": "EXCLUDED-class",
+   "worst_bins": [
+    [
+     36,
+     128,
+     29.1,
+     11
+    ]
+   ]
+  },
+  "central,N=6,f=0.9357,repulsive,Sc=0.012,rho=0.3": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 89.5204114646908,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  },
+  "central,N=6,f=0.9357,repulsive,Sc=0.012,rho=0.2": {
+   "violated_bins": 0,
+   "sat_violated": false,
+   "total": 59.680274309793866,
+   "verdict": "XQC-SAFE",
+   "worst_bins": []
+  }
+ },
+ "sigma_T": {
+  "N=3,attractive,Sc=0.012": {
+   "sigma_eff_cm2": {
+    "atm14.5": 8.279517082886048e-30,
+    "rock22": 7.574232473104968e-30,
+    "Si28": 7.28930883657619e-30
+   },
+   "class": "straddles ceilings"
+  },
+  "N=3,attractive,Sc=0.035": {
+   "sigma_eff_cm2": {
+    "atm14.5": 7.346260656951192e-29,
+    "rock22": 6.89309488584243e-29,
+    "Si28": 6.773700526178355e-29
+   },
+   "class": "OVERBURDEN-BLIND (above surface ceiling)"
+  },
+  "N=3,attractive,Sc=0.05": {
+   "sigma_eff_cm2": {
+    "atm14.5": 1.541578246389845e-28,
+    "rock22": 1.471327513254336e-28,
+    "Si28": 1.4663812122949412e-28
+   },
+   "class": "OVERBURDEN-BLIND (above surface ceiling)"
+  },
+  "N=3,repulsive,Sc=0.012": {
+   "sigma_eff_cm2": {
+    "atm14.5": 7.929662087823433e-30,
+    "rock22": 7.071824666847018e-30,
+    "Si28": 6.666366267260823e-30
+   },
+   "class": "straddles ceilings"
+  },
+  "N=3,repulsive,Sc=0.035": {
+   "sigma_eff_cm2": {
+    "atm14.5": 6.477025320493154e-29,
+    "rock22": 5.642633576833753e-29,
+    "Si28": 5.220289559823178e-29
+   },
+   "class": "straddles ceilings"
+  },
+  "N=3,repulsive,Sc=0.05": {
+   "sigma_eff_cm2": {
+    "atm14.5": 1.287751959552638e-28,
+    "rock22": 1.1054266905233393e-28,
+    "Si28": 1.0108360620564583e-28
+   },
+   "class": "OVERBURDEN-BLIND (above surface ceiling)"
+  },
+  "N=4,attractive,Sc=0.012": {
+   "sigma_eff_cm2": {
+    "atm14.5": 3.8714125211165884e-30,
+    "rock22": 3.326446118023123e-30,
+    "Si28": 3.1001294327517918e-30
+   },
+   "class": "straddles ceilings"
+  },
+  "N=4,attractive,Sc=0.035": {
+   "sigma_eff_cm2": {
+    "atm14.5": 3.410416917377852e-29,
+    "rock22": 2.9909146568676024e-29,
+    "Si28": 2.833981094768482e-29
+   },
+   "class": "straddles ceilings"
+  },
+  "N=4,attractive,Sc=0.05": {
+   "sigma_eff_cm2": {
+    "atm14.5": 7.121795813491755e-29,
+    "rock22": 6.330770250169224e-29,
+    "Si28": 6.064412675324427e-29
+   },
+   "class": "straddles ceilings"
+  },
+  "N=4,repulsive,Sc=0.012": {
+   "sigma_eff_cm2": {
+    "atm14.5": 3.734439520592027e-30,
+    "rock22": 3.14229343249238e-30,
+    "Si28": 2.8794045963626935e-30
+   },
+   "class": "straddles ceilings"
+  },
+  "N=4,repulsive,Sc=0.035": {
+   "sigma_eff_cm2": {
+    "atm14.5": 3.070317795186197e-29,
+    "rock22": 2.5333496154857196e-29,
+    "Si28": 2.2851936279268163e-29
+   },
+   "class": "straddles ceilings"
+  },
+  "N=4,repulsive,Sc=0.05": {
+   "sigma_eff_cm2": {
+    "atm14.5": 6.129421161813854e-29,
+    "rock22": 4.9945592381954893e-29,
+    "Si28": 4.4606620211998384e-29
+   },
+   "class": "straddles ceilings"
+  },
+  "N=5,attractive,Sc=0.012": {
+   "sigma_eff_cm2": {
+    "atm14.5": 2.0613368911009595e-30,
+    "rock22": 1.6673416717634732e-30,
+    "Si28": 1.5053414311154599e-30
+   },
+   "class": "straddles ceilings"
+  },
+  "N=5,attractive,Sc=0.035": {
+   "sigma_eff_cm2": {
+    "atm14.5": 1.805885979106768e-29,
+    "rock22": 1.4851688094985226e-29,
+    "Si28": 1.3587052666483173e-29
+   },
+   "class": "straddles ceilings"
+  },
+  "N=5,attractive,Sc=0.05": {
+   "sigma_eff_cm2": {
+    "atm14.5": 3.757210931604941e-29,
+    "rock22": 3.123629951101854e-29,
+    "Si28": 2.882181874359356e-29
+   },
+   "class": "straddles ceilings"
+  },
+  "N=5,repulsive,Sc=0.012": {
+   "sigma_eff_cm2": {
+    "atm14.5": 1.9994956658854322e-30,
+    "rock22": 1.5897106980398768e-30,
+    "Si28": 1.4156107968352466e-30
+   },
+   "class": "straddles ceilings"
+  },
+  "N=5,repulsive,Sc=0.035": {
+   "sigma_eff_cm2": {
+    "atm14.5": 1.6523917094966536e-29,
+    "rock22": 1.2924604466803625e-29,
+    "Si28": 1.135970153875463e-29
+   },
+   "class": "straddles ceilings"
+  },
+  "N=5,repulsive,Sc=0.05": {
+   "sigma_eff_cm2": {
+    "atm14.5": 3.3095203754408416e-29,
+    "rock22": 2.561492791549839e-29,
+    "Si28": 2.232504906179147e-29
+   },
+   "class": "straddles ceilings"
+  },
+  "N=6,attractive,Sc=0.012": {
+   "sigma_eff_cm2": {
+    "atm14.5": 1.209354628026353e-30,
+    "rock22": 9.239944961346465e-31,
+    "Si28": 8.09048240788708e-31
+   },
+   "class": "straddles ceilings"
+  },
+  "N=6,attractive,Sc=0.035": {
+   "sigma_eff_cm2": {
+    "atm14.5": 1.0549614703059136e-29,
+    "rock22": 8.170719879766808e-30,
+    "Si28": 7.230966707040092e-30
+   },
+   "class": "straddles ceilings"
+  },
+  "N=6,attractive,Sc=0.05": {
+   "sigma_eff_cm2": {
+    "atm14.5": 2.188645863116244e-29,
+    "rock22": 1.7101145205128514e-29,
+    "Si28": 1.5237636915198122e-29
+   },
+   "class": "straddles ceilings"
+  },
+  "N=6,repulsive,Sc=0.012": {
+   "sigma_eff_cm2": {
+    "atm14.5": 1.1781913712173256e-30,
+    "rock22": 8.874441199462534e-31,
+    "Si28": 7.683164931188161e-31
+   },
+   "class": "straddles ceilings"
+  },
+  "N=6,repulsive,Sc=0.035": {
+   "sigma_eff_cm2": {
+    "atm14.5": 9.776278304004143e-30,
+    "rock22": 7.263869299037713e-30,
+    "Si28": 6.220760153250514e-30
+   },
+   "class": "straddles ceilings"
+  },
+  "N=6,repulsive,Sc=0.05": {
+   "sigma_eff_cm2": {
+    "atm14.5": 1.9631442175534771e-29,
+    "rock22": 1.4457411507889424e-29,
+    "Si28": 1.2293976161872082e-29
+   },
+   "class": "straddles ceilings"
+  }
+ },
+ "boundary_scan": {},
+ "composition_verdicts": {
+  "extended,attractive,Sc=0.05,rho=0.6": "EXCLUDED-class",
+  "extended,attractive,Sc=0.05,rho=0.3": "EXCLUDED-class",
+  "extended,attractive,Sc=0.05,rho=0.2": "EXCLUDED-class",
+  "extended,attractive,Sc=0.035,rho=0.6": "EXCLUDED-class",
+  "extended,attractive,Sc=0.035,rho=0.3": "EXCLUDED-class",
+  "extended,attractive,Sc=0.035,rho=0.2": "EXCLUDED-class",
+  "extended,attractive,Sc=0.012,rho=0.6": "EXCLUDED-class",
+  "extended,attractive,Sc=0.012,rho=0.3": "XQC-SAFE",
+  "extended,attractive,Sc=0.012,rho=0.2": "XQC-SAFE",
+  "extended,repulsive,Sc=0.05,rho=0.6": "EXCLUDED-class",
+  "extended,repulsive,Sc=0.05,rho=0.3": "EXCLUDED-class",
+  "extended,repulsive,Sc=0.05,rho=0.2": "EXCLUDED-class",
+  "extended,repulsive,Sc=0.035,rho=0.6": "EXCLUDED-class",
+  "extended,repulsive,Sc=0.035,rho=0.3": "EXCLUDED-class",
+  "extended,repulsive,Sc=0.035,rho=0.2": "EXCLUDED-class",
+  "extended,repulsive,Sc=0.012,rho=0.6": "EXCLUDED-class",
+  "extended,repulsive,Sc=0.012,rho=0.3": "XQC-SAFE",
+  "extended,repulsive,Sc=0.012,rho=0.2": "XQC-SAFE",
+  "central,attractive,Sc=0.05,rho=0.6": "EXCLUDED-class",
+  "central,attractive,Sc=0.05,rho=0.3": "EXCLUDED-class",
+  "central,attractive,Sc=0.05,rho=0.2": "EXCLUDED-class",
+  "central,attractive,Sc=0.035,rho=0.6": "EXCLUDED-class",
+  "central,attractive,Sc=0.035,rho=0.3": "EXCLUDED-class",
+  "central,attractive,Sc=0.035,rho=0.2": "EXCLUDED-class",
+  "central,attractive,Sc=0.012,rho=0.6": "EXCLUDED-class",
+  "central,attractive,Sc=0.012,rho=0.3": "XQC-SAFE",
+  "central,attractive,Sc=0.012,rho=0.2": "XQC-SAFE",
+  "central,repulsive,Sc=0.05,rho=0.6": "EXCLUDED-class",
+  "central,repulsive,Sc=0.05,rho=0.3": "EXCLUDED-class",
+  "central,repulsive,Sc=0.05,rho=0.2": "EXCLUDED-class",
+  "central,repulsive,Sc=0.035,rho=0.6": "EXCLUDED-class",
+  "central,repulsive,Sc=0.035,rho=0.3": "EXCLUDED-class",
+  "central,repulsive,Sc=0.035,rho=0.2": "EXCLUDED-class",
+  "central,repulsive,Sc=0.012,rho=0.6": "EXCLUDED-class",
+  "central,repulsive,Sc=0.012,rho=0.3": "XQC-SAFE",
+  "central,repulsive,Sc=0.012,rho=0.2": "XQC-SAFE"
+ },
+ "safe_points": {
+  "extended": [
+   [
+    "attractive",
+    0.012,
+    0.3
+   ],
+   [
+    "attractive",
+    0.012,
+    0.2
+   ],
+   [
+    "repulsive",
+    0.012,
+    0.3
+   ],
+   [
+    "repulsive",
+    0.012,
+    0.2
+   ]
+  ],
+  "central": [
+   [
+    "attractive",
+    0.012,
+    0.3
+   ],
+   [
+    "attractive",
+    0.012,
+    0.2
+   ],
+   [
+    "repulsive",
+    0.012,
+    0.3
+   ],
+   [
+    "repulsive",
+    0.012,
+    0.2
+   ]
+  ]
+ },
+ "OUTCOME": "(b) BOTH compositions XQC-SAFE at >=1 island point"
+}
