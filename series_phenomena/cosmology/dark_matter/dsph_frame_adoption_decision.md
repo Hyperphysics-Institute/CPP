@@ -56,3 +56,43 @@ condition should now speak to the population hypothesis.
 
 > FRAME DECISION (TLA, date): ______
 > CLAUSE 1 (TLA, verbatim, replaces the 2339 proposal): ______
+
+
+---
+
+## ANNEX (Patch 2351, 8 July 2026): gate record and the F3 auto-proposal — ASSEMBLED, NOT ADOPTED
+
+Per §2/F3, adoption is auto-proposed to the founder when the gates clear. All three
+gates are now traversed; this annex is that proposal. Nothing here is decisional;
+the decision block below remains empty until it carries founder-attested text.
+
+**Gate record:**
+- **G1 (formation, 2349): PASSED-with-texture.** The registered 1855 kinetics
+  realize suite-passing populations at both audited frames. Extended: natural α = 1,
+  p_min = 0, margin ×2.18. Central: α ≈ 3–6, p ≥ 13 (measured), depth ×1.032.
+  v1 kill strengthened (×1.189 > ×1.074).
+- **G2 (satellite survival, 2350): PASSED-with-texture.** Evaporation clears ×6+;
+  population in the Concerto-simulated viable collapse branch. Transport bracket
+  (measured 1856 ε(N) proxy): extended bracket-stable joint pass; central
+  envelope-split ×1.0032 (inside proxy systematics).
+- **G3 (per-dSph, 2351): CLEARED-conditional-on-strand.** Isothermal strand holds
+  per-galaxy; collapse strand (Correa 2021) missed ×1.34+ — traced to a
+  DEMAND-INTERNAL collision: Correa's own curve fails the registered pin ceiling
+  ×2.8–5.6 (σ_C(50) = 28 vs ≤5–10); no candidate can satisfy both. L4-b's +10 km/s
+  pin-velocity reading is the one door (required slope drops 17 → 3.1) — registered
+  sensitivity, panel item.
+
+**The proposal:** adopt v2 = dual-frame reporting made primary per F3, with the
+audited-extended frame as the population story's home (natural at every gate) and
+the following carried explicitly in all papers: (a) the v1 kill, untouched and
+strengthened by G1; (b) central-frame strains (α ≈ 3–6, p ≥ 13, envelope-split);
+(c) the strand statement — the audited frames embody the isothermal strand, and the
+collapse strand is inconsistent with the pin anchor for ANY candidate; (d) Clause 1
+re-draft (population form) required before OPEN-DM-DSPH-1 verdicts unfreeze.
+
+**Founder readings requested:** (1) does CLEARED-conditional satisfy F3's trigger;
+(2) frame choice (F0–F3 stand as drafted); (3) the strand statement's placement in
+DM-1; (4) Clause 1 text.
+
+**FOUNDER DECISION (verbatim):**
+> [empty — awaiting founder text]
