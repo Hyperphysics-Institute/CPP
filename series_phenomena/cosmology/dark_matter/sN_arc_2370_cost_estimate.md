@@ -117,6 +117,15 @@ investment.
 
 ## Q2 EXECUTED — OUTCOME (b), CORRIDOR-CONDITIONED: THE SUCCESSORS CLEAR THE GATE ONLY AT THE ISLAND FLOOR (Patch 2372, 9 July 2026)
 
+> **CORRECTION NOTICE (Patch 2374):** the composition verdicts in this section
+> used a PER-SPECIES criterion (each species alone vs the full bin threshold —
+> a convention inherited from the single-species 2366 run, where it was exact).
+> For a mixture the observed spectrum is the SUM over species; under the
+> corrected summed-spectrum criterion, TWO verdicts flip (extended at
+> (S_c=0.012, ρ=0.3), both signs: SAFE → EXCLUDED); all EXCLUDED verdicts
+> stand a fortiori. Text below retained as record; corrected grading in §Q3
+> OPENED (2374). The 2369 kill and Q1 are unaffected.
+
 `code/2372_q2_gxqc0_survivors.py` + `2372_results.json`, verify 3/3 (V-a: the
 dimer regression anchor reproduces stored 2366b EXACTLY — viol=3, total
 642.219, rel dev 0.0; V-b: bridge E_rN = 3E_c/(8N)·S_c asserted at every
@@ -175,6 +184,12 @@ weeks-scale cost is the founder's call.
 
 ## CORRIDOR EDGE-MAPPING (Patch 2373, 9 July 2026) — THE WALLS, MEASURED: A GRADED CORRIDOR, KNIFE-EDGE AT ONE CORNER, MODEST AT THE OTHER
 
+> **CORRECTION NOTICE (Patch 2374):** these walls were located under the 2372
+> per-species criterion. Corrected walls (summed-spectrum criterion, ρ* now
+> EXACT) in §Q3 OPENED (2374): every wall moves INWARD — extended-attractive
+> effectively closes (ρ* = 0.211); central-repulsive remains the live corner
+> (ρ* = 0.411; 5.7% of the island at ρ=0.3). Text below retained as record.
+
 `code/2373_corridor_edge_mapping.py` + `2373_results.json`, verify 3/3 (V-a:
 20/20 bracket endpoints reproduce stored 2372 composition verdicts from fresh
 evaluation; V-b: bridge asserted every point; V-c: every bisection path
@@ -227,3 +242,71 @@ tunable freedom.
 **NO VERDICT MOVED.** The 2372 gate result stands as graded; this patch
 locates its boundaries. The Q3 go/no-go is on the founder's desk with these
 numbers.
+
+---
+
+## Q3 OPENED ON FOUNDER GO (Patch 2374, 9 July 2026) — THE DEMAND SHEET, A CRITERION CORRECTION OWNED, AND THE CORRECTED CORRIDOR
+
+**Founder verbatim: "Please proceed with recommendation."** — Q3 is GO per the
+2373 recommendation. Stage structure registered: **Q3a** (this patch) = the
+quantified demand sheet from registered relations only; **Q3b** = the
+mechanism layer — full-distribution grading (summed spectrum + anchor suite),
+nucleation/ring-closure S(N) shape, and the SIGN deliverable; **Q3c** = the
+absolute E_bond / realized coupling — root-blocked on **OPEN-FP-SF-2-η**
+per the standing scoping doc (`edge_bond_ssv_makeorbreak_scoping.md`; 0865
+declined to fabricate a coupling and that discipline holds): Q3c either pays
+that rent through the conjectured substrate-thermodynamic closure or declares
+it unpayable.
+
+### The criterion correction (owned; 2366/B1 precedent)
+Computing the demand sheet's joint contamination budgets EXPOSED a
+mis-specification in my own 2372 criterion: composition verdicts tested each
+species ALONE against the full per-bin threshold. The observed spectrum is
+the SUM. Diagnosis confirmed before correcting: extended at (0.012, 0.3)
+sums to 40.3 (att) / 29.6 (rep) vs threshold 28.3 in the 36–128 eV bin —
+graded SAFE by 2372, wrongly. `code/2374c_summed_criterion_regrade.py`
+re-graded everything under the summed criterion (verify 3/3: single-species
+limit reproduces the stored 2366b dimer point EXACTLY; f·ρ linearity 2e-15;
+bisection monotonicity). **Exactly two verdicts flip** (extended, floor,
+ρ=0.3, both signs); every EXCLUDED verdict stands a fortiori; **the 2369
+dimer kill (single-species) and the Q1 anchor-suite passes (2344 sums
+channels correctly) are unaffected.**
+
+### The corrected corridor (ρ* now EXACT via f·ρ linearity)
+| Combo | ρ* (GeV/cm³) | island kept @ ρ=0.3 | @ ρ=0.2 | status |
+|---|---|---|---|---|
+| extended, attractive | 0.211 | — (absent) | 0.5% | effectively CLOSED |
+| extended, repulsive | 0.287 | — (absent) | 6.6% | sub-standard-ρ only |
+| central, attractive | 0.305 | ~0.0% (at the wall) | 6.6% | knife-edge |
+| **central, repulsive** | **0.411** | **5.7%** | **14.7%** | **the live corner** |
+
+The sign deliverable is now near-decisive: attractive-sign corridors are
+hair-thin everywhere; the successor family effectively NEEDS the repulsive
+channel and the central-type composition (trace light + heavy carrier).
+
+### THE DEMAND SHEET (corrected; what a viable derived population must satisfy)
+- **D1 — freeze-out ratio:** E_bond/kT_form = **23.2–36.2** for survivor
+  N=3–6 (registered 0881 inverse map; logarithmic in φ). Closure inside the
+  fragmentation window [0.78 keV, 1.95 MeV] holds at every plausible kT_form
+  ≤ 19 keV — the old four-constraint closure survives the small-N transition
+  essentially intact (survivor demand overlaps the registered 24–41 band).
+- **D2/D3 — contamination (JOINT rectangle bounds, carriers first, floor
+  coupling):** at the live corner (central-repulsive): w(2) < **0.034**,
+  w(1) < **0.013** at ρ=0.3; w(2) < 0.096, w(1) < 0.037 at ρ=0.2.
+- **D4 — suppression beyond generic equilibrium:** isodesmic (Flory) at
+  ⟨N⟩ₙ=6 gives w(2)=0.046, w(1)=0.028 → demanded suppression ×1.4 (dimer) /
+  ×2.1 (monomer) at ρ=0.3; ~×1 at ρ=0.2. **Modest, not 10×-class — the
+  generic-equilibrium death mode is NOT armed as a wholesale killer.**
+  CAVEAT carried loudly: isodesmic at ⟨N⟩ₙ=6 puts 67% of mass at N>6, whose
+  summed-spectrum contribution AND anchor-suite behavior are UNGRADED — the
+  full-distribution grade is Q3b's named first computation, and it can still
+  kill.
+- **D5 — coupling:** land S_c at the island floor; corrected walls above
+  (central-repulsive keeps 5.7–14.7% of the post-DAMIC island).
+- **D6 — sign:** derived, not chosen — and now near-decisive (repulsive or
+  bust, at standard density).
+
+**NO VERDICT MOVED** (the corridor was never a registered verdict; its
+grading is corrected in the hurting direction). Q3b next: the
+full-distribution summed grade is cheap-first and can close the family
+before any nucleation derivation is attempted.

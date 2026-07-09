@@ -1,0 +1,319 @@
+{
+ "prereg": "header+diagnosis",
+ "V": {
+  "a_single_species_limit": {
+   "viol": 3,
+   "total": 642.2190945369624,
+   "ok": true
+  },
+  "b_linearity": {
+   "max_rel_dev": 2.0215081507254072e-15,
+   "ok": true
+  },
+  "c_monotone": true,
+  "passed": "3/3"
+ },
+ "grid": {
+  "extended,attractive,Sc=0.05,rho=0.6": {
+   "verdict": "EXCLUDED-class",
+   "viol": 12,
+   "worst_ratio": 63.16398554024604
+  },
+  "extended,attractive,Sc=0.05,rho=0.3": {
+   "verdict": "EXCLUDED-class",
+   "viol": 12,
+   "worst_ratio": 31.58199277012302
+  },
+  "extended,attractive,Sc=0.05,rho=0.2": {
+   "verdict": "EXCLUDED-class",
+   "viol": 11,
+   "worst_ratio": 21.054661846748687
+  },
+  "extended,attractive,Sc=0.035,rho=0.6": {
+   "verdict": "EXCLUDED-class",
+   "viol": 12,
+   "worst_ratio": 32.43876675384243
+  },
+  "extended,attractive,Sc=0.035,rho=0.3": {
+   "verdict": "EXCLUDED-class",
+   "viol": 6,
+   "worst_ratio": 16.219383376921215
+  },
+  "extended,attractive,Sc=0.035,rho=0.2": {
+   "verdict": "EXCLUDED-class",
+   "viol": 5,
+   "worst_ratio": 10.81292225128081
+  },
+  "extended,attractive,Sc=0.012,rho=0.6": {
+   "verdict": "EXCLUDED-class",
+   "viol": 2,
+   "worst_ratio": 2.847940614441594
+  },
+  "extended,attractive,Sc=0.012,rho=0.3": {
+   "verdict": "EXCLUDED-class",
+   "viol": 1,
+   "worst_ratio": 1.423970307220797
+  },
+  "extended,attractive,Sc=0.012,rho=0.2": {
+   "verdict": "XQC-SAFE",
+   "viol": 0,
+   "worst_ratio": 0.9493135381471981
+  },
+  "extended,repulsive,Sc=0.05,rho=0.6": {
+   "verdict": "EXCLUDED-class",
+   "viol": 12,
+   "worst_ratio": 24.872842101916437
+  },
+  "extended,repulsive,Sc=0.05,rho=0.3": {
+   "verdict": "EXCLUDED-class",
+   "viol": 12,
+   "worst_ratio": 12.436421050958218
+  },
+  "extended,repulsive,Sc=0.05,rho=0.2": {
+   "verdict": "EXCLUDED-class",
+   "viol": 6,
+   "worst_ratio": 8.29094736730548
+  },
+  "extended,repulsive,Sc=0.035,rho=0.6": {
+   "verdict": "EXCLUDED-class",
+   "viol": 12,
+   "worst_ratio": 13.930824609692392
+  },
+  "extended,repulsive,Sc=0.035,rho=0.3": {
+   "verdict": "EXCLUDED-class",
+   "viol": 5,
+   "worst_ratio": 6.965412304846196
+  },
+  "extended,repulsive,Sc=0.035,rho=0.2": {
+   "verdict": "EXCLUDED-class",
+   "viol": 4,
+   "worst_ratio": 4.643608203230799
+  },
+  "extended,repulsive,Sc=0.012,rho=0.6": {
+   "verdict": "EXCLUDED-class",
+   "viol": 2,
+   "worst_ratio": 2.087376393480113
+  },
+  "extended,repulsive,Sc=0.012,rho=0.3": {
+   "verdict": "EXCLUDED-class",
+   "viol": 1,
+   "worst_ratio": 1.0436881967400564
+  },
+  "extended,repulsive,Sc=0.012,rho=0.2": {
+   "verdict": "XQC-SAFE",
+   "viol": 0,
+   "worst_ratio": 0.6957921311600378
+  },
+  "central,attractive,Sc=0.05,rho=0.6": {
+   "verdict": "EXCLUDED-class",
+   "viol": 12,
+   "worst_ratio": 44.40645765490671
+  },
+  "central,attractive,Sc=0.05,rho=0.3": {
+   "verdict": "EXCLUDED-class",
+   "viol": 12,
+   "worst_ratio": 22.203228827453355
+  },
+  "central,attractive,Sc=0.05,rho=0.2": {
+   "verdict": "EXCLUDED-class",
+   "viol": 6,
+   "worst_ratio": 14.80215255163557
+  },
+  "central,attractive,Sc=0.035,rho=0.6": {
+   "verdict": "EXCLUDED-class",
+   "viol": 11,
+   "worst_ratio": 22.68545766606244
+  },
+  "central,attractive,Sc=0.035,rho=0.3": {
+   "verdict": "EXCLUDED-class",
+   "viol": 5,
+   "worst_ratio": 11.34272883303122
+  },
+  "central,attractive,Sc=0.035,rho=0.2": {
+   "verdict": "EXCLUDED-class",
+   "viol": 4,
+   "worst_ratio": 7.561819222020814
+  },
+  "central,attractive,Sc=0.012,rho=0.6": {
+   "verdict": "EXCLUDED-class",
+   "viol": 1,
+   "worst_ratio": 1.9690539801344953
+  },
+  "central,attractive,Sc=0.012,rho=0.3": {
+   "verdict": "XQC-SAFE",
+   "viol": 0,
+   "worst_ratio": 0.9845269900672476
+  },
+  "central,attractive,Sc=0.012,rho=0.2": {
+   "verdict": "XQC-SAFE",
+   "viol": 0,
+   "worst_ratio": 0.6563513267114984
+  },
+  "central,repulsive,Sc=0.05,rho=0.6": {
+   "verdict": "EXCLUDED-class",
+   "viol": 12,
+   "worst_ratio": 17.805712295032365
+  },
+  "central,repulsive,Sc=0.05,rho=0.3": {
+   "verdict": "EXCLUDED-class",
+   "viol": 8,
+   "worst_ratio": 8.902856147516182
+  },
+  "central,repulsive,Sc=0.05,rho=0.2": {
+   "verdict": "EXCLUDED-class",
+   "viol": 5,
+   "worst_ratio": 5.9352374316774545
+  },
+  "central,repulsive,Sc=0.035,rho=0.6": {
+   "verdict": "EXCLUDED-class",
+   "viol": 8,
+   "worst_ratio": 9.890570378246148
+  },
+  "central,repulsive,Sc=0.035,rho=0.3": {
+   "verdict": "EXCLUDED-class",
+   "viol": 4,
+   "worst_ratio": 4.945285189123074
+  },
+  "central,repulsive,Sc=0.035,rho=0.2": {
+   "verdict": "EXCLUDED-class",
+   "viol": 2,
+   "worst_ratio": 3.296856792748716
+  },
+  "central,repulsive,Sc=0.012,rho=0.6": {
+   "verdict": "EXCLUDED-class",
+   "viol": 1,
+   "worst_ratio": 1.4605773334317
+  },
+  "central,repulsive,Sc=0.012,rho=0.3": {
+   "verdict": "XQC-SAFE",
+   "viol": 0,
+   "worst_ratio": 0.73028866671585
+  },
+  "central,repulsive,Sc=0.012,rho=0.2": {
+   "verdict": "XQC-SAFE",
+   "viol": 0,
+   "worst_ratio": 0.4868591111439
+  }
+ },
+ "walls": {
+  "rho*,extended,attractive": {
+   "rho_star_exact": 0.21067855030314395,
+   "corridor": "present"
+  },
+  "Sc*,extended,attractive,rho=0.3": {
+   "corridor": "ABSENT at this rho (floor EXCLUDED)"
+  },
+  "Sc*,extended,attractive,rho=0.2": {
+   "safe_below": 0.012179687500000001,
+   "excluded_above": 0.012359375,
+   "island_fraction": 0.0047286184210526576,
+   "monotone": true
+  },
+  "rho*,extended,repulsive": {
+   "rho_star_exact": 0.2874421699287634,
+   "corridor": "present"
+  },
+  "Sc*,extended,repulsive,rho=0.3": {
+   "corridor": "ABSENT at this rho (floor EXCLUDED)"
+  },
+  "Sc*,extended,repulsive,rho=0.2": {
+   "safe_below": 0.014515625,
+   "excluded_above": 0.014695312500000002,
+   "island_fraction": 0.06620065789473685,
+   "monotone": true
+  },
+  "rho*,central,attractive": {
+   "rho_star_exact": 0.3047148559934437,
+   "corridor": "present"
+  },
+  "Sc*,central,attractive,rho=0.3": {
+   "safe_below": 0.012,
+   "excluded_above": 0.012179687500000001,
+   "island_fraction": 0.0,
+   "monotone": true
+  },
+  "Sc*,central,attractive,rho=0.2": {
+   "safe_below": 0.014515625,
+   "excluded_above": 0.014695312500000002,
+   "island_fraction": 0.06620065789473685,
+   "monotone": true
+  },
+  "rho*,central,repulsive": {
+   "rho_star_exact": 0.41079646128032793,
+   "corridor": "present"
+  },
+  "Sc*,central,repulsive,rho=0.3": {
+   "safe_below": 0.014156250000000002,
+   "excluded_above": 0.014335937500000001,
+   "island_fraction": 0.056743421052631624,
+   "monotone": true
+  },
+  "Sc*,central,repulsive,rho=0.2": {
+   "safe_below": 0.0175703125,
+   "excluded_above": 0.017750000000000002,
+   "island_fraction": 0.14658717105263158,
+   "monotone": true
+  }
+ },
+ "joint_bounds": {
+  "extended,attractive,rho=0.2,dimer": {
+   "f_max": 0.0058616448645296354,
+   "binding_bin": "36-128"
+  },
+  "extended,attractive,rho=0.2,monomer": {
+   "f_max": 0.0027065373948116957,
+   "binding_bin": "36-128"
+  },
+  "extended,repulsive,rho=0.2,dimer": {
+   "f_max": 0.05692357314381477,
+   "binding_bin": "36-128"
+  },
+  "extended,repulsive,rho=0.2,monomer": {
+   "f_max": 0.022154081928005265,
+   "binding_bin": "36-128"
+  },
+  "central,attractive,rho=0.3,dimer": {
+   "f_max": 0.001192919317384686,
+   "binding_bin": "36-128"
+  },
+  "central,attractive,rho=0.3,monomer": {
+   "f_max": 0.0005508147996192154,
+   "binding_bin": "36-128"
+  },
+  "central,attractive,rho=0.2,dimer": {
+   "f_max": 0.03974131173002,
+   "binding_bin": "36-128"
+  },
+  "central,attractive,rho=0.2,monomer": {
+   "f_max": 0.018350027816773747,
+   "binding_bin": "36-128"
+  },
+  "central,repulsive,rho=0.3,dimer": {
+   "f_max": 0.03364570606816002,
+   "binding_bin": "36-128"
+  },
+  "central,repulsive,rho=0.3,monomer": {
+   "f_max": 0.01309457027366164,
+   "binding_bin": "36-128"
+  },
+  "central,repulsive,rho=0.2,dimer": {
+   "f_max": 0.09601925496295771,
+   "binding_bin": "36-128"
+  },
+  "central,repulsive,rho=0.2,monomer": {
+   "f_max": 0.037369727928727746,
+   "binding_bin": "36-128"
+  }
+ },
+ "diagnosis": {
+  "extended_0.012_0.3_sum_36_128": {
+   "attractive": 40.33,
+   "repulsive": 29.56,
+   "threshold": 28.32050807568877
+  }
+ },
+ "flips": [
+  "extended,attractive,Sc=0.012,rho=0.3",
+  "extended,repulsive,Sc=0.012,rho=0.3"
+ ]
+}

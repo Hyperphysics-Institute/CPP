@@ -1,0 +1,27 @@
+{
+ "note": "joint rectangle bounds at corridor point (0.012, 0.3)",
+ "extended,attractive": {
+  "f2_joint": 0.0,
+  "f1_joint": 0.0,
+  "dimer_bind": "36-128",
+  "monomer_bind": "36-128"
+ },
+ "extended,repulsive": {
+  "f2_joint": 0.0,
+  "f1_joint": 0.0,
+  "dimer_bind": "36-128",
+  "monomer_bind": "36-128"
+ },
+ "central,attractive": {
+  "f2_joint": 0.0011929193173846667,
+  "f1_joint": 0.0005508147996192072,
+  "dimer_bind": "36-128",
+  "monomer_bind": "36-128"
+ },
+ "central,repulsive": {
+  "f2_joint": 0.03364570606816008,
+  "f1_joint": 0.01309457027366163,
+  "dimer_bind": "36-128",
+  "monomer_bind": "36-128"
+ }
+}
