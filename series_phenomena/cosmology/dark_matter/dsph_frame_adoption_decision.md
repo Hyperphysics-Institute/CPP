@@ -94,5 +94,22 @@ re-draft (population form) required before OPEN-DM-DSPH-1 verdicts unfreeze.
 (2) frame choice (F0–F3 stand as drafted); (3) the strand statement's placement in
 DM-1; (4) Clause 1 text.
 
+
+**FABLE CERTIFICATION (Patch 2352, 8 July 2026; founder-delegated: "Please certify
+if you consider these adequate for our purposes"):** I certify the gate record
+ADEQUATE to satisfy F3's trigger — the auto-proposal legitimately stands on the
+founder's desk. Grounds: (i) G1 and G2 passed with textures that qualify but do not
+undermine the passes; (ii) G3's condition is a measured property of the DEMAND side
+(the collapse strand is internally inconsistent with the registered pin anchor for
+any candidate; a gate cannot be failed by a demand nothing could satisfy), and the
+strand the audited frames embody holds per-galaxy. Carve-out carried with the
+certification: it is FRAME-ASYMMETRIC — under audited-extended the population story
+is natural at every gate; under audited-central two named strains ride along
+(S(N) steepness p >= 13; transport envelope-split x1.0032). Status of this
+certification: FABLE-CERTIFIED / PROVISIONAL per the attested-vs-provisional
+distinction (FORK-DISS-1 precedent) — it discharges the trigger question the founder
+delegated; it does NOT adopt a frame, ratify Clause 1, or place the strand statement
+in DM-1. Those remain founder verbatim, block below still empty.
+
 **FOUNDER DECISION (verbatim):**
 > [empty — awaiting founder text]
