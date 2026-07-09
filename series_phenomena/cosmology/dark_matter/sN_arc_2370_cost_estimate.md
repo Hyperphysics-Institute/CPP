@@ -539,3 +539,64 @@ V3 0881 + D1; V4 bending identity; V5 unit-cache integrity (336 keys,
 schema N,sign,S_c,ε_th, 13 bins). Semantic cache cross-check
 (viol = 3/642.219095) deliberately left to the summed-criterion channel in
 Q3b-2c. **NO VERDICT MOVED.** Reasoning: `reasoning/2381.md`.
+
+---
+
+## Q3b-2b EXECUTED — NUCLEATION-AND-GROWTH: FLOOR, CEILING, AND NEAR-BIDISPERSITY ALL EMERGE; THE STABILITY FLOOR IS EPOCH-FREE (Patch 2382, 9 July 2026)
+
+**Founder verbatim: "recommend and proceed."** Worker recommendation
+executed: the QSS closure-vs-growth branching cascade (cheap-kill-first;
+the time-dependent master equation deferred as unneeded — no verdict came
+out marginal). Artifact `code/2382_q3b2b_nucleation_growth_cascade.py`,
+**VERIFY 7/7** (2381 battery re-run green underneath by subprocess).
+
+**Formulation (all registered or bracketed):** growth = a·φ per tick
+(registered φ bracket); closure = g_SY(N/r)/r³·v_f (the r³ ℓ_p→rung
+conversion carried explicitly — it moves onsets by decades); ε over the D1
+band; v_f ∈ [0.1, 10], kernel ratio q ∈ [0.5, 2].
+
+**The organizing result — the stability floor is EPOCH-FREE:** with
+ℓ_p = κ/kT and ε = E_bond/kT scaling identically under cooling,
+**N_stab = c·r/ε = c·κ/(ℓ_rung·E_bond)** — temperature-independent, a pure
+stiffness-to-depth ratio of the one rung-bond SSV well. Rings below it pop
+forever; above it lock permanently; ln Λ delays, never moves, the boundary.
+
+**Contract answer: YES on both counts, nothing imposed.**
+- **Floor:** N_c = max(3 topology, N_stab, closure onset J·v_f ≳ a·φ) —
+  three stacked derived mechanisms; N_c ≥ 3 everywhere, rising with r.
+- **Ceiling:** cascade termination — φ < J_peak across the whole registered
+  window (×6 worst corner to ×10¹⁰⁺), onset always on J's exponential
+  rising side, escape ≤ 1.5e-28, width ≤ 2 at every corridor placement. A
+  NARROW MOVING BAND, not an N=6 wall: W(N>6) ≤ ~0.08 for peaks ≤ 5,
+  ~0.5 at the peak=6 top edge — quantified exposure carried to 2c.
+- **Near-bidispersity EMERGES BY MECHANISM:** dimers, the unique
+  closure-less chain species, accumulate (C₂/c₁ = 0.31–0.41) and pair-jump
+  (2+2→4): w(3) = 0.71–0.88, w(4) = 0.12–0.29 in the deep-closure regime —
+  dominant light ring + O(20%) heavier companion, the qualitative shape of
+  the 2371 corridor occupants, from topology + kinetics.
+- **Anti-Flory collision:** DOES NOT FIRE. Categorical metric =
+  top2-adjacent share ≥ 0.71 everywhere vs Flory ≤ ~0.3 matched (×3.4+).
+  Honest edge owned: the first-draft summary claimed zero N>6 tail at every
+  placement; the grid refuted it (0.48 at the peak=6 edge, Flory-tail ratio
+  ×1.5 there) — corrected pre-commit, third machinery-catches-author this
+  arc. The shape verdict rests on width.
+
+**Placement kill RESTATED (2381 implication-3 SUPERSEDED,
+retained-not-rewritten):** the binding placement is kinetic —
+N_c(r, φ, ε) ∈ [3, 6] ⇔ **r ≲ 5.5–13** (bracket-corner table in script) —
+an upper kill only; the equilibrium band [0.89, 1.78] was the wrong
+ensemble, as 2381's own implication 4 anticipated.
+
+**Λ condition registered (named, not fabricated):** D2/D3 budgets met for
+Λ = ν_PCD/H(form) > 5.1e10–5.7e15 (φ-corner-dependent); SF/substrate-
+cosmology pin owed, direction generic.
+
+**Residuals carried:** chain-chain beyond 2+2 = O(1) shape correction near
+onset; r-epoch drift bracketed by the scan; SY u>6 usage confined to
+r<0.5 (flexible regime, one-sided robust — battery V7).
+
+**NO VERDICT MOVED.** Reasoning: `reasoning/2382.md`. **Next — Q3b-2c:**
+the derived w(N | r, ε) family through summed-XQC (2379 unit cache) + the
+anchor suite at the ε_th-robust live corner, SIGN extraction, outcome
+graded: the derived (3,4)-dominant shape lands in the corridor or the
+third kill lands fully derived.
