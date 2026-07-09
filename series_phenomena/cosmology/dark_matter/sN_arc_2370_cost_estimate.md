@@ -170,3 +170,60 @@ points not regions; naturalness ungraded). **NO VERDICT MOVED** — G-XQC-0 was
 pre-registered as the derivation-investment gate, and it has now been passed
 in corridor form. Q3 entry is UNLOCKED per the 2370 plan; whether to pay the
 weeks-scale cost is the founder's call.
+
+---
+
+## CORRIDOR EDGE-MAPPING (Patch 2373, 9 July 2026) — THE WALLS, MEASURED: A GRADED CORRIDOR, KNIFE-EDGE AT ONE CORNER, MODEST AT THE OTHER
+
+`code/2373_corridor_edge_mapping.py` + `2373_results.json`, verify 3/3 (V-a:
+20/20 bracket endpoints reproduce stored 2372 composition verdicts from fresh
+evaluation; V-b: bridge asserted every point; V-c: every bisection path
+monotone). Bisection on the COMPOSITION verdict, 2372 machinery verbatim;
+S_c* to ±1.8e-4, ρ* to ±0.0094.
+
+**S_c* (fraction of the post-DAMIC island surviving, [0.012, 0.05]):**
+
+| Composition, sign | S_c* @ ρ=0.3 | island kept | S_c* @ ρ=0.2 | island kept |
+|---|---|---|---|---|
+| extended, attractive | 0.0125 | **0.9%** | 0.0150 | 7.6% |
+| extended, repulsive | 0.0146 | 6.6% | 0.0182 | 16.1% |
+| central, attractive | 0.0146 | 6.6% | 0.0177 | 14.7% |
+| central, repulsive | 0.0171 | **13.2%** | 0.0214 | **24.6%** |
+
+**ρ* at the island floor (S_c = 0.012), GeV/cm³:** extended-attractive
+**0.32** (a hair above the standard 0.3); extended-repulsive 0.43;
+central-attractive 0.45; central-repulsive **0.58** (nearly the full 2366
+bracket). **Interior headroom at (0.012, 0.3)** (worst bin ratio):
+extended-attractive 0.931 (×1.07 under the gate — a hair); central-repulsive
+0.514 (×1.95).
+
+**The structure, stated hurting-first:** the extended-attractive corner is a
+knife-edge on every axis — 0.9% of the island, ρ* barely above the standard
+local density, ×1.07 headroom. If the substrate fixes the attractive sign
+(the capture-channel heritage) AND realizes the extended-type composition,
+the corridor effectively does not exist at standard ρ. The corridor is REAL
+at the other corner: central-type composition (trace N=3 + heavy N=6
+carrier), repulsive channel — ~13% of the island at ρ=0.3, ~25% at ρ=0.2,
+ρ-exposure tolerant to 0.58, ×1.95 headroom. Ordering throughout: repulsive
+> attractive; central > extended (the heavier carrier at higher fraction
+buys more 1/M suppression).
+
+**What this does to Q3's specification (sharpened again, and honestly
+constrained):** the derivation does not get to aim. Its outputs —
+composition (which N's, what fractions), interaction sign, and realized
+coupling — are COMPUTED from substrate structure and then checked against
+these measured walls, no steering. The sign is now flagged as a Q3
+deliverable in its own right: the substrate must SAY which sign the
+rod-nucleus channel carries, because the corridor width depends on it by a
+factor ~2–15. The 1888 low-skewed S_c distribution remains a hint that the
+floor region is where the data-drawn portrait lived; a hint, still.
+
+**ρ is an exposure, not a knob (pre-stated in 2373, now quantified):** the
+survivors are hostage to the local-density literature at the
+extended-attractive corner (dies above 0.32) and robust at the
+central-repulsive corner (survives to 0.58). Stated so nobody reads ρ* as
+tunable freedom.
+
+**NO VERDICT MOVED.** The 2372 gate result stands as graded; this patch
+locates its boundaries. The Q3 go/no-go is on the founder's desk with these
+numbers.

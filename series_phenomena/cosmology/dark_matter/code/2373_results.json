@@ -1,0 +1,100 @@
+{
+ "prereg": "header",
+ "V": {
+  "a_endpoints": {
+   "ok": true,
+   "n_checked": 20
+  },
+  "b_bridge_asserted": true,
+  "c_monotone": true,
+  "passed": "3/3"
+ },
+ "edges": {
+  "Sc*,extended,attractive,rho=0.3": {
+   "safe_below": 0.012359375,
+   "excluded_above": 0.0125390625,
+   "island_fraction": 0.00945723684210527,
+   "monotone": true
+  },
+  "Sc*,extended,attractive,rho=0.2": {
+   "safe_below": 0.014875000000000001,
+   "excluded_above": 0.0150546875,
+   "island_fraction": 0.07565789473684212,
+   "monotone": true
+  },
+  "Sc*,extended,repulsive,rho=0.3": {
+   "safe_below": 0.014515625,
+   "excluded_above": 0.014695312500000002,
+   "island_fraction": 0.06620065789473685,
+   "monotone": true
+  },
+  "Sc*,extended,repulsive,rho=0.2": {
+   "safe_below": 0.018109375000000004,
+   "excluded_above": 0.0182890625,
+   "island_fraction": 0.16077302631578955,
+   "monotone": true
+  },
+  "Sc*,central,attractive,rho=0.3": {
+   "safe_below": 0.014515625,
+   "excluded_above": 0.014695312500000002,
+   "island_fraction": 0.06620065789473685,
+   "monotone": true
+  },
+  "Sc*,central,attractive,rho=0.2": {
+   "safe_below": 0.0175703125,
+   "excluded_above": 0.017750000000000002,
+   "island_fraction": 0.14658717105263158,
+   "monotone": true
+  },
+  "Sc*,central,repulsive,rho=0.3": {
+   "safe_below": 0.01703125,
+   "excluded_above": 0.017210937500000002,
+   "island_fraction": 0.1324013157894737,
+   "monotone": true
+  },
+  "Sc*,central,repulsive,rho=0.2": {
+   "safe_below": 0.02134375,
+   "excluded_above": 0.0215234375,
+   "island_fraction": 0.24588815789473684,
+   "monotone": true
+  },
+  "rho*,extended,attractive": {
+   "safe_below": 0.31875,
+   "excluded_above": 0.328125,
+   "monotone": true
+  },
+  "rho*,extended,repulsive": {
+   "safe_below": 0.43124999999999997,
+   "excluded_above": 0.44062499999999993,
+   "monotone": true
+  },
+  "rho*,central,attractive": {
+   "safe_below": 0.44999999999999996,
+   "excluded_above": 0.459375,
+   "monotone": true
+  },
+  "rho*,central,repulsive": {
+   "safe_below": 0.58125,
+   "excluded_above": 0.590625,
+   "monotone": true
+  }
+ },
+ "headroom": {
+  "extended,attractive": {
+   "worst_ratio": 0.9308162500743075,
+   "safe": true
+  },
+  "extended,repulsive": {
+   "worst_ratio": 0.6944994890336186,
+   "safe": true
+  },
+  "central,attractive": {
+   "worst_ratio": 0.6559152780191119,
+   "safe": true
+  },
+  "central,repulsive": {
+   "worst_ratio": 0.5139001288251985,
+   "safe": true
+  }
+ }
+}
