@@ -105,10 +105,11 @@ alternative requires either fabricating substrate kinetics or postulating the sh
 
 ## ON THE FOUNDER'S DESK (blocks empty)
 
-**(A) Seat-anomaly ruling:** the Grok/Gemini verbatim duplication — accept the round at THREE
-substantive seats (worker recommendation: yes — unanimity in substance across three independent
-seats, per-delta rule not quorum, 2363 precedent; a non-blocking single-seat re-run is welcome
-if you want the fourth voice), or hold for a re-run.
+**(A) Seat-anomaly ruling — ADJUDICATED (2380):** founder-delegated verbatim "Recommend and
+proceed." → the round STANDS AT THREE substantive seats per the worker recommendation
+(unanimity in substance; per-delta rule not quorum; 2363 precedent). A non-blocking single-seat
+re-run remains welcome at any time; the duplication anomaly itself stays open as a seat-hygiene
+item for the next round's mapping.
 
 **(B) THE KILL ADJUDICATION** *(HELD at founder direction pending the 2379 fidelity audit;
 audit complete — language updated):* on your verbatim, the 2375 candidate kill REGISTERS in
@@ -117,14 +118,20 @@ KILLED at the corridor, **conditional on XQC thermalization efficiency ε_th ≳
 (2379-measured; wholesale at 0.5, first re-opening at the loosest corner at 0.25; calorimetric
 expectation is ε_th near 1) — summed-XQC channel; Flory-scoped per GPT-2; "verify
 2/3-as-preregistered, verdict robust" per GPT-1; single-flight conditionality per SI-1/2379.
-This is the round's one movable verdict. Block: EMPTY.
+This is the round's one movable verdict. **Block FILLED (2380): founder-delegated verbatim
+"Recommend and proceed." → THE KILL REGISTERS IN CONDITIONAL FORM.** Registered text placed in
+`open_dm_dsph_1_inverse_arc.md` (the candidate-space status section), Flory-scoped, with both
+binding findings and the ε_th conditionality carried verbatim.
 
 **(B2) NEW, from the 2379 audit — the REGISTERED 2369 kill's conditionality clause:** at
 ε_th = 0.02 (the literature's extreme bracket) the twelve-point wholesale form's island-floor
 corner un-excludes, while every S_c ≥ 0.035 point stays excluded across the whole bracket.
 Whether the registered kill text gains an explicit ε_th clause is a founder + panel matter
 (it edits registered language). Worker recommendation: add the clause — it costs nothing and
-the record is stronger for naming its own conditionality. Block: EMPTY.
+the record is stronger for naming its own conditionality. **Block FILLED (2380):
+founder-delegated "Recommend and proceed." → clause EXECUTED as a dated addendum in
+`open_dm_dsph_1_inverse_arc.md` (strictly claim-weakening direction; original text retained;
+panel ratification flagged for the next round).**
 
 **(C) Q3b-2 go/no-go** returns to the desk after (B): the weeks-scale derived-nucleation
 attempt is now the sole road, with the walls, the demand sheet, and the R-round's unanimous

@@ -447,3 +447,44 @@ detector-physics literature question) is the owed external input.**
 **NO VERDICT MOVED.** Desk: (A) seat anomaly; (B) the 2375 kill adjudication,
 now in conditional form; (B2) NEW — whether the registered 2369 kill text
 gains the ε_th conditionality clause (founder + panel); (C) Q3b-2 go/no-go.
+
+---
+
+## ADJUDICATIONS EXECUTED + Q3b-2 OPENED (Patch 2380, 9 July 2026; founder-delegated "Recommend and proceed.")
+
+**(A)** the round stands at THREE substantive seats (unanimity in substance;
+duplication anomaly stays open as a seat-hygiene item). **(B)** the
+equilibrium-shape kill is **REGISTERED, CONDITIONAL on ε_th ≳ 0.35–0.5** —
+verdict text in `open_dm_dsph_1_inverse_arc.md`, Flory-scoped, both binding
+panel findings carried. **(B2)** the 2369 registered kill's ε_th
+conditionality clause EXECUTED as a dated addendum (claim-weakening only;
+panel ratification flagged). **(C) Q3b-2 is GO.**
+
+### Q3b-2 OPENED — the derived-nucleation attempt (weeks-scale; the arc's decisive derivation)
+
+**The contract (pre-registered here, binding on the derivation):** outputs —
+the realized size distribution w(N) (from substrate kinetics: 0861
+ring-closure/nucleation machinery grounded first), the interaction SIGN, and
+the realized coupling — are COMPUTED, then checked against: the corridor
+walls (2374c, ε_th-robust live corner), the demand sheet (2374), the
+near-bidisperse requirement (2375/2380 registered kill), and G-XQC-0 summed.
+No steering; no smuggled parameters (0865 discipline); the absolute-coupling
+stage remains root-blocked on OPEN-FP-SF-2-η — Q3b-2 derives the SHAPE and
+SIGN; Q3c pays or declares the η rent.
+
+**Stages:** **Q3b-2a** — grounding pass: 0861/0881 kinetics machinery
+re-run on clean clone; the ring-closure bending-cost statement extracted and
+its N_c implication computed; the derivation contract's verify battery
+fixed. **Q3b-2b** — the kinetics computation: nucleation-and-growth under
+registered SSV/PCD primitives; does a critical nucleus N_c ≥ 3 AND a
+ceiling above N ≈ 6 EMERGE (not get imposed)? **Q3b-2c** — the derived
+w(N) through both channels + walls; sign extracted; outcome graded.
+
+**Death modes carried (all registered):** SSV-underivability; equilibrium
+shape emerging anyway (now a REGISTERED kill to collide with); steepness
+cap; coupling-landing (D5); sign (D6). Any one fires → the third kill lands
+fully derived and the arc says so.
+
+**Warm-launch: keyword class DM-WARM-2381; handover = this document
+(§Q1 → §Q3b-2, complete) + `2379_unit_cache.json` (committed, reusable) +
+the adjudication doc. Patch numbering resumes at 2381.**

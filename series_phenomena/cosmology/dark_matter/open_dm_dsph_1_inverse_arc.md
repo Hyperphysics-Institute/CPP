@@ -123,6 +123,29 @@ UNFROZEN. Status of the candidate space: capture branch KILLED at the registered
 frame (2333); population branch KILLED at the audited frames (XQC-2007 channel,
 2366–2368–2369). The inverse question is now the lane.
 
+> **CONDITIONALITY CLAUSE (Patch 2380, founder-delegated "Recommend and
+> proceed."; panel ratification flagged for the next round):** per the 2379
+> fidelity audit, the population-branch kill (2369) carries the XQC
+> single-flight conditionality: robust across thermalization efficiency
+> ε_th ∈ {1, 0.5, 0.1}; at the literature's extreme bracket edge
+> (ε_th = 0.02) the wholesale form's island-floor corner (S_c = 0.012)
+> un-excludes while every S_c ≥ 0.035 point remains excluded. Calorimetric
+> expectation is ε_th near 1; the ε_th pin is the registered owed external
+> input (SI-1/2379). This clause weakens no claim as physically expected and
+> names the condition under which the wholesale form would narrow.
+
+> **NEW REGISTERED VERDICT (Patch 2380, adjudicated on founder-delegated
+> verbatim "Recommend and proceed."; three substantive panel seats unanimous,
+> 2378; fidelity-audited, 2379):** the **equilibrium-shaped (Flory/isodesmic)
+> small-N population family is KILLED at the corridor — CONDITIONAL on
+> ε_th ≳ 0.35–0.5** (2379-measured; wholesale at 0.5, first re-opening at the
+> loosest corner at 0.25; calorimetric expectation comfortably above).
+> Summed-XQC channel; Flory-scoped (GPT-2 finding binds); "verify
+> 2/3-as-preregistered, verdict robust" (GPT-1 finding binds); single-flight
+> conditionality per SI-1. The corridor's surviving occupants are
+> near-bidisperse populations only (the 2371 two-species points, live-corner
+> ε_th-robust across the full bracket).
+
 ### Successor gate G-XQC-0 (pre-registered, cheap-kill-first, binding on every future candidate)
 Any successor population/candidate must, BEFORE investment: (a) be XQC-safe at
 its required abundance under the 1879 per-bin conservative criterion (the
