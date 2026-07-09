@@ -69,3 +69,27 @@ proceeds on its own clock and feeds the eventual v2-frame adoption proposal.
 release on passing their own panel round after the rewrites (population section
 drafted 2357; DM-3 rewrite in progress). The pre-registered "on or after 20 July"
 condition is hereby discharged by founder decision.
+
+
+---
+
+## UNIFIED RELEASE RULING (Patch 2364, 9 July 2026 — FOUNDER-DECIDED)
+
+**Founder verbatim:** "OK, we have DM-1,2,3 ready for OSF release on the 20th."
+
+**Ruling registered:** DM-1 v1.5-panel-repairs, DM-2 v1.1-flash-repairs, and
+DM-3 v1.1-panel-repairs release TOGETHER on OSF on **20 July 2026** — the
+founder consolidates the R2 split's two release events into one unified date.
+Consistency with the ratified slate: R2's binding conditions are both
+satisfied (DM-2 "on/after 20 July" — the 20th is the earliest permitted day;
+DM-1/DM-3 "on panel pass" — passed at 2362/2363, no un-repaired HOLD, no
+standing BREAK). The 2363-staged option of an immediate DM-1/DM-3 release was
+declined in favor of the unified date; nothing in the slate required the
+earlier option.
+
+**Execution contract:** the NOT-YET-RE-SHIPPED flags flip in a single
+release-execution patch **on the 20th** (flags + changelog SHIP lines +
+OSF deposit-queue entries + ledger row — one auditable act, per 2363).
+Until then all three papers remain flagged. If the Copilot re-run or any
+other input lands a BREAK before the 20th, the affected paper's status
+reopens without ceremony (2363 clause) and this ruling is re-presented.
