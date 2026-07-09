@@ -1,5 +1,15 @@
 # CONV-001 FLASH VERIFICATION BRIEF — the 2375 full-distribution grade (Q3b-1 candidate kill)
 
+> **SUPERSEDED (Patch 2377, founder-directed):** this round was restructured
+> BEFORE submission into a COMBINED verification + generation round — the
+> founder ruled that with no release at risk and the arc at a genuine
+> impasse, the panel's generative capacity should be engaged alongside
+> verification rather than after it ("it would be more useful to ask them if
+> they have any ideas to pursue resolving the problem"). The operative brief
+> is `conv001_2026-07_q3b1_combined_brief.md`. This file is retained as the
+> record of the round as first assembled; no return was ever solicited
+> against it.
+
 **Round type:** FLASH (2354/2367 pattern) — one computation, five items, fast turnaround.
 **Patch under review:** 2375 (`code/2375_q3b1_full_distribution_grade.py` + `2375_results.json` +
 `2375b_verdict_robustness.json` + `2375_unit_counts.json`; arc doc §Q3b-1 in
