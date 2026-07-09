@@ -310,3 +310,63 @@ channel and the central-type composition (trace light + heavy carrier).
 grading is corrected in the hurting direction). Q3b next: the
 full-distribution summed grade is cheap-first and can close the family
 before any nucleation derivation is attempted.
+
+---
+
+## Q3b-1 EXECUTED — THE FULL-DISTRIBUTION GRADE: THE EQUILIBRIUM SHAPE DIES AT THE GATE (CANDIDATE) (Patch 2375, 9 July 2026)
+
+`code/2375_q3b1_full_distribution_grade.py` + `2375_results.json` +
+`2375b_verdict_robustness.json`. Verify 2/3 AS PRE-REGISTERED, with the failed
+check's decisive content discharged by executed supplementary check (2368
+pattern): V-a two-species limit reproduces stored 2371 totals to 2.6e-16;
+V-b single-species limit reproduces stored 2366b exactly; V-c totals moved
+1.03% under N_cut 96→128 against a pre-registered 0.5% tolerance — FAILED as
+stated — and the supplementary check shows the PASS VERDICT itself is robust
+(viol = 1.0000 at N_cut 96/128/192; a 128-anneal converges to the same
+point). Two process events owned in the reasoning: a first-run truncation
+artifact at N_cut=32 caught by V-c BEFORE recording (anchor N_cut raised to
+96), and the scan budget reduced 150k→30k wide for tractability, disclosed,
+seed-stability retained.
+
+**The two channels:**
+
+**XQC (summed criterion + hurting-direction tail bound, corridor floor):**
+NO ⟨N⟩ₙ ∈ [1.5, 12] is viable at ANY surviving corridor point — both signs,
+both ρ. Closest approaches: ×1.214 (repulsive, ρ=0.2, ⟨N⟩ₙ=6.00), ×1.821
+(repulsive, ρ=0.3), ×1.729 (attractive, ρ=0.2), ×2.593 (attractive, ρ=0.3)
+— binding bin 36–128 eV in every case. Not a hair-thin miss anywhere the
+two-species corridor actually lives.
+
+**Anchor suite (eff() generalized exactly from 2344's own two-species form;
+g²(N) = g₀²(N/4)^p strain family):** the CENTRAL audited frame REFUSES the
+Flory shape outright — best ×1.043, echoing the 2344-era near-miss
+character. The EXTENDED frame admits Flory passes (⟨N⟩ₙ ≈ 9.6, p ≈ 5.9,
+R_s ≈ 26; verdict-robust to N_cut=192) — and every such pass sits at
+XQC-unviable ⟨N⟩ₙ anyway.
+
+**OUTCOME (b) as pre-registered — CANDIDATE KILL of the equilibrium-shaped
+(Flory/isodesmic) small-N family:** even where the anchor suite admits the
+shape, the summed XQC gate excludes every ⟨N⟩ₙ at every corridor point.
+CONTAINMENT: candidate only — no verdict moves, no paper edits; verification
+= flash panel round on this single computation (2366→2367 pattern).
+
+**The contrast that now defines Q3's remaining physics:** the 2371
+TWO-SPECIES POINTS still pass both channels at the central-repulsive corner;
+the EQUILIBRIUM SHAPE does not, anywhere. The corridor can host sharply
+peaked, near-bidisperse populations but not broad equilibrium ones — the
+distribution spreads mass across many species whose recoils pile into the
+same 36–128 eV bin. Death mode (ii) is REARMED in sharpened form: the
+derivation must produce a strongly non-Flory, near-bidisperse distribution —
+nucleation with a critical nucleus AND a stiff size ceiling, not isodesmic
+growth — plus the D5/D6 coupling and sign demands. That is a much taller
+order than the 2374 sheet's modest ×1.4–2.1 rectangle-bound reading
+suggested, and the sheet's own loud caveat (the ungraded N>6 tail) is
+exactly where it died.
+
+**Scope stated:** the XQC kill is graded at the corridor floor grid points
+that survived 2374c (S_c=0.012, ρ ≤ 0.3-class); above the floor the
+two-species exclusions stand from 2374c and higher S_c only increases
+couplings. Flory truncated/renormalized at N_cut=32 XQC-side with the
+additive tail bound carrying the remainder in the hurting direction.
+
+**NO VERDICT MOVED. Founder's desk: the flash-panel round on 2375.**

@@ -1,0 +1,100 @@
+{
+ "prereg": "header",
+ "V": {
+  "a_two_species_limit": true,
+  "b_single_species_limit": {
+   "viol": 3,
+   "total": 642.2190945369625,
+   "ok": true
+  },
+  "c_truncation_and_stability": {
+   "ncut_rel_dev": 0.010278529684824074,
+   "seed_stable": true,
+   "ok": false
+  },
+  "passed": "2/3"
+ },
+ "xqc_curve": {
+  "attractive,rho=0.3": [],
+  "attractive,rho=0.3,closest": {
+   "worst_ratio": 2.5932514343113775,
+   "at_Nn": 6.25,
+   "binding_bin": "36-128"
+  },
+  "attractive,rho=0.2": [],
+  "attractive,rho=0.2,closest": {
+   "worst_ratio": 1.7288342895409183,
+   "at_Nn": 6.25,
+   "binding_bin": "36-128"
+  },
+  "repulsive,rho=0.3": [],
+  "repulsive,rho=0.3,closest": {
+   "worst_ratio": 1.8209399074451573,
+   "at_Nn": 6.0,
+   "binding_bin": "36-128"
+  },
+  "repulsive,rho=0.2": [],
+  "repulsive,rho=0.2,closest": {
+   "worst_ratio": 1.2139599382967716,
+   "at_Nn": 6.0,
+   "binding_bin": "36-128"
+  }
+ },
+ "anchor": {
+  "audited_extended": {
+   "wide_best": 1.0,
+   "anneal_best": 1.0,
+   "anneal_seed2": 1.0,
+   "best_params": [
+    9.644699747574531,
+    5.6234548193933555e-06,
+    5.939295749578315,
+    25.700874629388757
+   ],
+   "best_totals": {
+    "30": 5.569683713914246,
+    "50": 3.493941738044532,
+    "200": 0.6455515846924353,
+    "1500": 0.04695023373413778
+   },
+   "PASS": true
+  },
+  "audited_central": {
+   "wide_best": 1.0474692650974273,
+   "anneal_best": 1.0427332513497947,
+   "anneal_seed2": 1.0474692650974273,
+   "best_params": [
+    2.293625713716027,
+    0.00023060990277945034,
+    9.530400469782194,
+    52.78251170064615
+   ],
+   "best_totals": {
+    "30": 9.729801703667196,
+    "50": 5.211226937262421,
+    "200": 0.6713126287033292,
+    "1500": 0.055524364387367825
+   },
+   "PASS": false
+  },
+  "registered": {
+   "wide_best": 1.4311155890564122,
+   "anneal_best": 1.3585568485779846,
+   "anneal_seed2": 1.3933957890943587,
+   "best_params": [
+    1.5,
+    0.02078479319014662,
+    8.147894212870007,
+    53.10247503234932
+   ],
+   "best_totals": {
+    "30": 14.796420451223891,
+    "50": 6.792784242889923,
+    "200": 0.5187831425548595,
+    "1500": 0.05512172871305776
+   },
+   "PASS": false
+  }
+ },
+ "OUTCOME": "(b) anchor passes exist but NO <N>_n is XQC-viable -- family dies at the gate (CANDIDATE)"
+}

@@ -1,0 +1,16 @@
+{
+ "ncut_robustness": {
+  "96_pass": true,
+  "see_stdout": "logged in reasoning"
+ },
+ "reanneal_128": {
+  "viol": 1.0,
+  "params": [
+   9.644699747574531,
+   5.6234548193933555e-06,
+   5.939295749578315,
+   25.700874629388757
+  ],
+  "PASS": true
+ }
+}
