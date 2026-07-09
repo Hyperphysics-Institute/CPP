@@ -1,0 +1,115 @@
+{
+ "m_chi_GeV": 2.8,
+ "convention": "CSDA, coherent-SI (hurting), Si target",
+ "sites": {
+  "surface (atm only)": {
+   "note": "CRESST-surface / nu-cleus class",
+   "rock_column_g_cm2": 0.0,
+   "ceiling_sigma_n_cm2": {
+    "v0=220,Eth=10eV": 1.1946017469293217e-28,
+    "v0=220,Eth=100eV": 3.542883392653681e-29,
+    "v0=220,Eth=1000eV": 0.0,
+    "v0=340,Eth=10eV": 1.5123347271257032e-28,
+    "v0=340,Eth=100eV": 6.720213194617494e-29,
+    "v0=340,Eth=1000eV": 0.0,
+    "v0=540,Eth=10eV": 1.8499975995003606e-28,
+    "v0=540,Eth=100eV": 1.0096841918364068e-28,
+    "v0=540,Eth=1000eV": 1.6937078417245333e-29
+   },
+   "ceiling_central": 6.720213194617494e-29,
+   "ceiling_range": [
+    1.6937078417245333e-29,
+    1.8499975995003606e-28
+   ]
+  },
+  "MINOS-class (225 mwe)": {
+   "note": "SENSEI early-run class",
+   "rock_column_g_cm2": 22500.0,
+   "ceiling_sigma_n_cm2": {
+    "v0=220,Eth=10eV": 4.081009990627003e-30,
+    "v0=220,Eth=100eV": 1.2103232360250015e-30,
+    "v0=220,Eth=1000eV": 0.0,
+    "v0=340,Eth=10eV": 5.166452457010607e-30,
+    "v0=340,Eth=100eV": 2.2957657024086048e-30,
+    "v0=340,Eth=1000eV": 0.0,
+    "v0=540,Eth=10eV": 6.319979612957683e-30,
+    "v0=540,Eth=100eV": 3.4492928583556796e-30,
+    "v0=540,Eth=1000eV": 5.786061037536779e-31
+   },
+   "ceiling_central": 2.2957657024086048e-30,
+   "ceiling_range": [
+    5.786061037536779e-31,
+    6.319979612957683e-30
+   ]
+  },
+  "LSM Modane (4800 mwe)": {
+   "note": "DAMIC-M class",
+   "rock_column_g_cm2": 480000.0,
+   "ceiling_sigma_n_cm2": {
+    "v0=220,Eth=10eV": 1.9773576782243107e-31,
+    "v0=220,Eth=100eV": 5.864337380658153e-32,
+    "v0=220,Eth=1000eV": 0.0,
+    "v0=340,Eth=10eV": 2.503283368213762e-31,
+    "v0=340,Eth=100eV": 1.1123594280552665e-31,
+    "v0=340,Eth=1000eV": 0.0,
+    "v0=540,Eth=10eV": 3.062197897727511e-31,
+    "v0=540,Eth=100eV": 1.6712739575690157e-31,
+    "v0=540,Eth=1000eV": 2.803500174105202e-32
+   },
+   "ceiling_central": 1.1123594280552665e-31,
+   "ceiling_range": [
+    2.803500174105202e-32,
+    3.062197897727511e-31
+   ]
+  },
+  "SNOLAB (6010 mwe)": {
+   "note": "SuperCDMS / SENSEI-SNOLAB class",
+   "rock_column_g_cm2": 601000.0,
+   "ceiling_sigma_n_cm2": {
+    "v0=220,Eth=10eV": 1.579780517779332e-31,
+    "v0=220,Eth=100eV": 4.6852251596526187e-32,
+    "v0=220,Eth=1000eV": 0.0,
+    "v0=340,Eth=10eV": 1.9999610283640926e-31,
+    "v0=340,Eth=100eV": 8.887030265500226e-32,
+    "v0=340,Eth=1000eV": 0.0,
+    "v0=540,Eth=10eV": 2.44649748181066e-31,
+    "v0=540,Eth=100eV": 1.3352394799965898e-31,
+    "v0=540,Eth=1000eV": 2.239814781825197e-32
+   },
+   "ceiling_central": 8.887030265500226e-32,
+   "ceiling_range": [
+    2.239814781825197e-32,
+    2.44649748181066e-31
+   ]
+  }
+ },
+ "floor_class_cm2": [
+  1e-42,
+  1e-38
+ ],
+ "floor_note": "CRESST-III/DarkSide-50/Migdal-class order at ~3 GeV; bracketed 4 decades wide -- window verdict must be robust to this",
+ "verify": {
+  "1_monotone_in_depth": true,
+  "2_surface_ceiling_published_order": true,
+  "3_window_robust_2decades_worst_case": true,
+  "passed": "3/3"
+ },
+ "window": {
+  "surface (atm only)": [
+   1e-38,
+   1.6937078417245333e-29
+  ],
+  "MINOS-class (225 mwe)": [
+   1e-38,
+   5.786061037536779e-31
+  ],
+  "LSM Modane (4800 mwe)": [
+   1e-38,
+   2.803500174105202e-32
+  ],
+  "SNOLAB (6010 mwe)": [
+   1e-38,
+   2.239814781825197e-32
+  ]
+ }
+}
