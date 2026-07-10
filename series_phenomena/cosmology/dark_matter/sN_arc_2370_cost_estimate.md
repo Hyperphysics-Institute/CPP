@@ -600,3 +600,74 @@ the derived w(N | r, ε) family through summed-XQC (2379 unit cache) + the
 anchor suite at the ε_th-robust live corner, SIGN extraction, outcome
 graded: the derived (3,4)-dominant shape lands in the corridor or the
 third kill lands fully derived.
+
+---
+
+## Q3b-2c EXECUTED — THE COLLISION: OUTCOME (c)+(d); THE HEAVY DERIVED MEMBERS SURVIVE BOTH CHANNELS AT STANDARD DENSITY ON THE REGISTERED-DEFAULT SIGN (Patch 2383, 9 July 2026)
+
+**Founder verbatim: "Please recommend and proceed."** Cheap channel first.
+Artifacts: `code/2383_q3b2c_family_channels_sign_grade.py` (**VERIFY 5/5**,
+pre-registered header incl. outcome taxonomy + hurting-first predictions),
+`2383_results.json`, `2383_joint_couplings.json`, extended
+`2379_unit_cache.json` (360 keys). Process owned: first launch killed by an
+environment limit at the anchor header (XQC complete); DISCLOSED AMENDMENT
+pre-anchor — stratified representatives (19/73), reduced budgets;
+joint-member couplings recovered by targeted re-anneal.
+
+**The 2381-named semantic debt DISCHARGED (V2):** the cache reproduces the
+stored 2366b regression at 1.8e-16 AND matches a fresh 1879 pipeline call
+bit-level. V4: the Q1 compositions re-graded from the cache reproduce every
+stored 2374c verdict + worst ratio checked.
+
+**XQC channel (73 members; exact ρ*; floor across the full ε_th bracket):**
+- **Deep-closure (3,4) members DIE AT THE GATE** (ρ* = 0.099 rep / 0.066
+  att at the floor) — G-XQC-0 kills the family's own light end.
+- N4-dominant marginal (ρ* ≲ 0.24); N5-dominant alive at ρ=0.2 only.
+- **N6-dominant members (r ≈ 8.5–12): ρ* = 0.43–0.66 repulsive /
+  0.32–0.52 attractive, ε_th-robust — SAFE AT STANDARD DENSITY, BOTH
+  SIGNS.**
+- Above the floor the corridor CLOSES for every member (ρ* ≤ 0.09 at
+  S_c ≥ 0.035): the population is **FLOOR-ANCHORED** — D5 is now a sharp
+  landing demand at S_c ≈ 0.012.
+
+**Anchor channel (composition PINNED; coupling-only scans):** the extended
+frame admits nearly the whole family under BOTH laws; the central frame
+REFUSES the registered strain family for every member (1.25–2.15) but
+admits every multi-species member with free per-species couplings (the
+2375 finding sharpened: central refuses the strain LAW, not these shapes);
+the one shape failure is monodisperse {4} (fails both frames). Passing
+couplings: g0² ≈ 0.001–0.011, p ≈ 1.3–12.6 (pass REGION; demanded
+steepness as low as p ≈ 1.3), R_s ≈ 20–51 fm — bracketing the OPEN-SS-43
+15–30 fm target.
+
+**SIGN (extracted, not chosen):** the registered 1858 residual (screened
+unipolar E_qq) is ATTRACT-ONLY — the registered default is attractive in
+both channels; repulsion must emerge (or not) from the OPEN-SS-43 derived
+form. **The run's central finding: 2374c's "repulsive or bust" was
+composition-specific** (the Q1 points carry light contaminants); the
+derived heavy members carry none (ring topology zeroed it) and **survive
+at standard density on the default sign** — {6:1.0} ρ*=0.428
+[bracket-min 0.344], plus three more attractive members ≥ 0.3 ε_th-robust.
+**D6 does not fire on the default;** the sign now prices corridor WIDTH
+(repulsive ≈ doubles headroom), not existence.
+
+**OUTCOME (graded as pre-registered): (c)+(d).** Six repulsive joint
+points at ρ ≥ 0.3; nine attractive at ρ ≥ 0.2, four of them ≥ 0.3.
+
+**Q3c inherits a fully-specified derived target:** r ≈ 8.5–12;
+N_stab = c·κ/(ℓ_rung·E_bond) ≈ 3.3–7.3; S_c at the island floor (sharp);
+R_s ≈ 20–50 fm; either sign at standard ρ (repulsive preferred); Λ per
+2382; masses N=6 → 8.45 GeV dominant (+7.04/9.86 companions) — the
+direct-detection discriminant moves from the dead dimer's ≈2.8 GeV to
+≈8.5 GeV (**Clause-1(d) relevance flagged to founder + panel**).
+
+**Failures recorded with equal weight:** light members dead at the gate;
+monodisperse {4} anchor-dead; strain law central-dead family-wide;
+above-floor corridor closed.
+
+**NO VERDICT MOVED** — candidate grading only (2375 precedent binds).
+Reasoning: `reasoning/2383.md`. **WORKER RECOMMENDATION: combined CONV-001
+verification round on the 2381–2383 arc** (stability floor, cascade, both
+channel grades, sign extraction, disclosed amendments), carrying the
+flagged 2380(B2) ratification + 2378 seat-hygiene mapping. Founder's desk:
+round go/no-go; block EMPTY.
