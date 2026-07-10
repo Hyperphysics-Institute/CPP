@@ -952,6 +952,24 @@ classes fully derived, fork moot, Clause 1(a) to founder; (b) V-t clears ⇒ ali
 Q4 (which now carries double duty: R_s + the vertex class from substrate mechanics); (c) split ⇒
 channel-by-channel, no smoothing. Handover `handovers/2026-07-10_dm_ss43_q2_dichotomy_q3_contract.md`;
 reasoning 2394.
+**[Patch 2395, 10 July 2026] SS43-Q3 EXECUTED — LADDER AT RING COMPOSITION: BRANCH (c), THE FORK SHARPENED
+AND QUANTIFIED (battery ALL PASS; founder verbatim go "Go. Please proceed as recommended."):** V2 PASS-GATE
+passed (fresh-1880 rod landscape reproduced verdict-for-verdict, all ten rows, before any ring grading;
+ell_v reproduces 2393 < 1e-9). **Identity end clears the ENTIRE ladder by exact identity** (⇒ branch (a)
+computed unreachable). **Envelope end fails LZ(strict) + DAMIC at every species N = 4–8** (σ_n
+3.1e-33–2.0e-32 vs 9.2e-48; DAMIC 3.4e7–1.5e8 expected events vs N90 = 123, both unshielded); XQC passes
+everywhere (member ρ* 76.6–109.3), np and CMB pass with orders of headroom. **DAMIC-shallow low-mass pin
+registered CONV-004 this patch** (arXiv:1804.03073 + 1105.5191/1712.01170: 106.7 m NuMI hall, 2.7 g/cm³,
+107 g·d Si, 550 eV, N90 = 123; full differential grading above threshold — forward-peaked light mediator
+makes total-σ counting a several-order overcount). **Named pins:** LZ failures at N = 4–6 (5.63–8.45 GeV)
+are EDGE-CONDITIONAL (at/below the published 9-GeV edge; N = 7, 8 fail in-coverage); branch rests on DAMIC
+in-coverage regardless. **Residual-coupling demand → Q4 (now TRIPLE duty: R_s + vertex class + residual
+scale):** V-t survival requires the true post-closure residual amplitude ≤ envelope/(5.3e2–1.1e3) (DAMIC)
+and ≤ envelope/(1.8e7–4.6e7) (LZ in-coverage) — the envelope is a first-moment upper bound (second-order
+scattering of a zero-mean vector potential), so this is a derivation demand, not a death sentence. Class S
+bookkeeping rows carried: gate-death over-determined (XQC nviol 2–11 + rock- and DAMIC-shielded at 0.0356).
+Class adjudication stays HELD per (c). Cache 590 → 605 (schema-pure). Script
+`code/2395_ss43_q3_ring_ladder.py`; results `code/2395_results.json`; campaign file §34.11; reasoning 2395.
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's

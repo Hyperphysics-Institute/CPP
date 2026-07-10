@@ -1,0 +1,456 @@
+{
+ "contract": "sec 34.10 SS43-Q3 (Patch 2394; DM-WARM-2394)",
+ "founder_go": "Go. Please proceed as recommended.",
+ "V2_rod_reproduction": [
+  {
+   "sc": 1.0,
+   "verdict": "dead: XQC",
+   "ref": "dead: XQC",
+   "match": true,
+   "ncoll": 912911.1687479914,
+   "lz": 2.5535411639599526e-30,
+   "danp": 0.0029
+  },
+  {
+   "sc": 0.3,
+   "verdict": "dead: XQC",
+   "ref": "dead: XQC",
+   "match": true,
+   "ncoll": 102255.37515871388,
+   "lz": 2.298187047563958e-31,
+   "danp": 0.0008699999999999999
+  },
+  {
+   "sc": 0.1,
+   "verdict": "dead: XQC",
+   "ref": "dead: XQC",
+   "match": true,
+   "ncoll": 10539.933833316438,
+   "lz": 2.553541163959955e-32,
+   "danp": 0.00029
+  },
+  {
+   "sc": 0.035,
+   "verdict": "ALIVE",
+   "ref": "ALIVE",
+   "match": true,
+   "ncoll": 1247.7696855161814,
+   "lz": 3.128087925850944e-33,
+   "danp": 0.0001015
+  },
+  {
+   "sc": 0.01,
+   "verdict": "ALIVE",
+   "ref": "ALIVE",
+   "match": true,
+   "ncoll": 100.42954842575362,
+   "lz": 2.553541163959955e-34,
+   "danp": 2.9e-05
+  },
+  {
+   "sc": 0.003,
+   "verdict": "dead: LZ",
+   "ref": "dead: LZ",
+   "match": true,
+   "ncoll": 9.002168312570674,
+   "lz": 2.298187047563958e-35,
+   "danp": 8.7e-06
+  },
+  {
+   "sc": 0.0013,
+   "verdict": "dead: LZ",
+   "ref": "dead: LZ",
+   "match": true,
+   "ncoll": 1.6887384840556203,
+   "lz": 4.315484567092323e-36,
+   "danp": 3.7699999999999995e-06
+  },
+  {
+   "sc": 0.0001,
+   "verdict": "dead: LZ",
+   "ref": "dead: LZ",
+   "match": true,
+   "ncoll": 0.009985671936411207,
+   "lz": 2.553541163959955e-38,
+   "danp": 2.9e-07
+  },
+  {
+   "sc": 1e-06,
+   "verdict": "dead: LZ",
+   "ref": "dead: LZ",
+   "match": true,
+   "ncoll": 9.997834831260201e-07,
+   "lz": 2.5535411639599527e-42,
+   "danp": 2.8999999999999995e-09
+  },
+  {
+   "sc": 2e-09,
+   "verdict": "dead: LZ",
+   "ref": "dead: LZ",
+   "match": true,
+   "ncoll": 8.121739310446633e-12,
+   "lz": 1.0214164655839818e-47,
+   "danp": 5.8e-12
+  }
+ ],
+ "V3_predeclared": [
+  "rod sc=0.035 fresh generalized-row verdict == ALIVE",
+  "rod sc=1.3e-3 fresh generalized-row verdict == dead: LZ",
+  "ring N=6 envelope XQC per-unit (counts,sat) identical on a fresh second pipeline_unit_V call",
+  "ring N=8 rock ncoll identical on a fresh second sigA_total_V call",
+  "Class S N=4 LZ Born value identical on recompute"
+ ],
+ "Vt_identity_end": {
+  "4": {
+   "xqc": "0 exact",
+   "rock_ncoll": 0.0,
+   "lz_sig_n": 0.0,
+   "damic_events": 0.0,
+   "danp_fm": 0.0,
+   "cmb": 0.0,
+   "all_pass": true
+  },
+  "5": {
+   "xqc": "0 exact",
+   "rock_ncoll": 0.0,
+   "lz_sig_n": 0.0,
+   "damic_events": 0.0,
+   "danp_fm": 0.0,
+   "cmb": 0.0,
+   "all_pass": true
+  },
+  "6": {
+   "xqc": "0 exact",
+   "rock_ncoll": 0.0,
+   "lz_sig_n": 0.0,
+   "damic_events": 0.0,
+   "danp_fm": 0.0,
+   "cmb": 0.0,
+   "all_pass": true
+  },
+  "7": {
+   "xqc": "0 exact",
+   "rock_ncoll": 0.0,
+   "lz_sig_n": 0.0,
+   "damic_events": 0.0,
+   "danp_fm": 0.0,
+   "cmb": 0.0,
+   "all_pass": true
+  },
+  "8": {
+   "xqc": "0 exact",
+   "rock_ncoll": 0.0,
+   "lz_sig_n": 0.0,
+   "damic_events": 0.0,
+   "danp_fm": 0.0,
+   "cmb": 0.0,
+   "all_pass": true
+  }
+ },
+ "Vt_envelope_end": {
+  "4": {
+   "ell_v": 25.873206095978823,
+   "xqc_rho_star_mono": 14.435850740326481,
+   "rock_sigma_Si": 6.32389952554978e-28,
+   "rock_ncoll": 6.825493965829331,
+   "shielded": false,
+   "lz_sig_n": 1.977960687596486e-32,
+   "lz_ok_strict": "False",
+   "lz_ok_registered": "False",
+   "damic_ncoll": 0.4572922224687842,
+   "damic_shielded": false,
+   "damic_events_th": 154775638.8304692,
+   "damic_events_all": 220141735.26086462,
+   "damic_ok": false,
+   "danp_fm": 8.2215e-05,
+   "np_ok": true,
+   "cmb": 3.8808e-32,
+   "cmb_ok": true,
+   "xqc_ok_mono": true,
+   "lz_coverage": "at/below the 9-GeV edge"
+  },
+  "5": {
+   "ell_v": 26.181696149031975,
+   "xqc_rho_star_mono": 70.95075634043543,
+   "rock_sigma_Si": 3.134823864365912e-28,
+   "rock_ncoll": 3.3834695323226462,
+   "shielded": false,
+   "lz_sig_n": 7.8858973514277e-33,
+   "lz_ok_strict": "False",
+   "lz_ok_registered": "False",
+   "damic_ncoll": 0.2266845901318212,
+   "damic_shielded": false,
+   "damic_events_th": 68391902.28722113,
+   "damic_events_all": 87082021.33761604,
+   "damic_ok": false,
+   "danp_fm": 5.26176e-05,
+   "np_ok": true,
+   "cmb": 3.10464e-32,
+   "cmb_ok": true,
+   "xqc_ok_mono": true,
+   "lz_coverage": "at/below the 9-GeV edge"
+  },
+  "6": {
+   "ell_v": 26.44509868284559,
+   "xqc_rho_star_mono": 104.94538669868679,
+   "rock_sigma_Si": 3.230068606552107e-28,
+   "rock_ncoll": 3.486268827352927,
+   "shielded": false,
+   "lz_sig_n": 1.534596579891563e-32,
+   "lz_ok_strict": "False",
+   "lz_ok_registered": "False",
+   "damic_ncoll": 0.23357190383072202,
+   "damic_shielded": false,
+   "damic_events_th": 62148201.65989322,
+   "damic_events_all": 74527866.20218605,
+   "damic_ok": false,
+   "danp_fm": 3.654e-05,
+   "np_ok": true,
+   "cmb": 2.5872e-32,
+   "cmb_ok": true,
+   "xqc_ok_mono": true,
+   "lz_coverage": "at/below the 9-GeV edge"
+  },
+  "7": {
+   "ell_v": 26.756016311273413,
+   "xqc_rho_star_mono": 112.51552590008714,
+   "rock_sigma_Si": 2.6925072737478592e-28,
+   "rock_ncoll": 2.906069597669627,
+   "shielded": false,
+   "lz_sig_n": 4.505697002822527e-33,
+   "lz_ok_strict": "False",
+   "lz_ok_registered": "False",
+   "damic_ncoll": 0.19469990474247512,
+   "damic_shielded": false,
+   "damic_events_th": 45785437.55314544,
+   "damic_events_all": 53043048.23374088,
+   "damic_ok": false,
+   "danp_fm": 2.684571428571429e-05,
+   "np_ok": true,
+   "cmb": 2.2176e-32,
+   "cmb_ok": true,
+   "xqc_ok_mono": true,
+   "lz_coverage": "in-coverage"
+  },
+  "8": {
+   "ell_v": 27.02957424864529,
+   "xqc_rho_star_mono": 139.14313875923088,
+   "rock_sigma_Si": 2.2586776691310194e-28,
+   "rock_ncoll": 2.4378298135701266,
+   "shielded": false,
+   "lz_sig_n": 3.082727953046338e-33,
+   "lz_ok_strict": "False",
+   "lz_ok_registered": "False",
+   "damic_ncoll": 0.16332892813753902,
+   "damic_shielded": false,
+   "damic_events_th": 34339790.03473418,
+   "damic_events_all": 38771437.73573763,
+   "damic_ok": false,
+   "danp_fm": 2.055375e-05,
+   "np_ok": true,
+   "cmb": 1.9404e-32,
+   "cmb_ok": true,
+   "xqc_ok_mono": true,
+   "lz_coverage": "in-coverage"
+  }
+ },
+ "Vt_envelope_members_xqc": {
+  "((6, 1.0),)": {
+   "rho_star": 104.94538669868679,
+   "xqc_ok": true
+  },
+  "((5, 0.1662), (6, 0.7809), (7, 0.0529))": {
+   "rho_star": 99.4599115327191,
+   "xqc_ok": true
+  },
+  "((6, 0.658), (7, 0.3264), (8, 0.0156))": {
+   "rho_star": 109.2655675221906,
+   "xqc_ok": true
+  },
+  "((4, 0.0119), (5, 0.2762), (6, 0.5428), (7, 0.1572), (8, 0.0119))": {
+   "rho_star": 93.2061163026447,
+   "xqc_ok": true
+  },
+  "((4, 0.0273), (5, 0.4146), (6, 0.4741), (7, 0.084))": {
+   "rho_star": 78.85044380932645,
+   "xqc_ok": true
+  },
+  "((4, 0.0145), (5, 0.5953), (6, 0.3767), (7, 0.0135))": {
+   "rho_star": 76.60857638621194,
+   "xqc_ok": true
+  }
+ },
+ "classS_bookkeeping": {
+  "4": {
+   "xqc_nviol": 11,
+   "rock_ncoll": 15524.027895486599,
+   "shielded": true,
+   "lz_sig_n": 5.175347801291712e-32,
+   "damic_ncoll": 1040.0737666071475,
+   "damic_shielded": true,
+   "danp_fm": 0.002090128271484375,
+   "cmb": 2.5082164894866942e-29
+  },
+  "5": {
+   "xqc_nviol": 5,
+   "rock_ncoll": 11649.046664474647,
+   "shielded": true,
+   "lz_sig_n": 3.509968450609034e-32,
+   "damic_ncoll": 780.4590357136049,
+   "damic_shielded": true,
+   "danp_fm": 0.00133768209375,
+   "cmb": 2.0065731915893552e-29
+  },
+  "6": {
+   "xqc_nviol": 5,
+   "rock_ncoll": 8959.283662151298,
+   "shielded": true,
+   "lz_sig_n": 2.535974453973006e-32,
+   "damic_ncoll": 600.2511698207367,
+   "damic_shielded": true,
+   "danp_fm": 0.0009289458984375,
+   "cmb": 1.6721443263244628e-29
+  },
+  "7": {
+   "xqc_nviol": 4,
+   "rock_ncoll": 7054.369297540723,
+   "shielded": true,
+   "lz_sig_n": 1.917573458326387e-32,
+   "damic_ncoll": 472.62633742523417,
+   "damic_shielded": true,
+   "danp_fm": 0.0006824908641581633,
+   "cmb": 1.433266565420968e-29
+  },
+  "8": {
+   "xqc_nviol": 2,
+   "rock_ncoll": 5671.812286373252,
+   "shielded": true,
+   "lz_sig_n": 1.5005938156726372e-32,
+   "damic_ncoll": 379.99823292587683,
+   "damic_shielded": true,
+   "danp_fm": 0.0005225320678710938,
+   "cmb": 1.2541082447433471e-29
+  }
+ },
+ "grading": {
+  "branch": "c",
+  "verdict": "BRANCH (c): SPLIT VERDICTS between the bracket ends -- the identity end clears exactly; the envelope end fails: N=4: LZ(strict),DAMIC; N=5: LZ(strict),DAMIC; N=6: LZ(strict),DAMIC; N=7: LZ(strict),DAMIC; N=8: LZ(strict),DAMIC. Recorded channel-by-channel; the conditionality becomes a named pin/derivation demand; NO SMOOTHING.",
+  "env_channel_failures": {
+   "4": [
+    "LZ(strict)",
+    "DAMIC"
+   ],
+   "5": [
+    "LZ(strict)",
+    "DAMIC"
+   ],
+   "6": [
+    "LZ(strict)",
+    "DAMIC"
+   ],
+   "7": [
+    "LZ(strict)",
+    "DAMIC"
+   ],
+   "8": [
+    "LZ(strict)",
+    "DAMIC"
+   ]
+  },
+  "env_member_xqc_failures": [],
+  "named_pins": [
+   "LZ low-mass edge: N=4,5,6 (5.63/7.04/8.45 GeV) are at/below LZ's published 9-GeV lower edge -- their LZ(strict) failures are EDGE-CONDITIONAL (named pin), while N=7,8 (9.86/11.26 GeV) fail LZ unconditionally in-coverage; the branch verdict does not rest on the edge because DAMIC kills in-coverage.",
+   "Residual-coupling demand (Q4): survival of the V-t branch requires the TRUE post-closure residual amplitude to sit below the conservative |V| envelope by the per-channel factors recorded in residual_demand -- the envelope is an upper BOUND, not a derived value; the identity end (exact zero) trivially satisfies every factor. Q4's substrate derivation must produce the residual scale, or a derived tighter bracket, for the fork to resolve toward survival.",
+   "DAMIC-shallow pin registered CONV-004 this patch (arXiv:1804.03073 + 1105.5191/1712.01170 lineage): 106.7 m, 2.7 g/cm^3 crust, 107 g-d Si, 550 eV threshold, N90 = 123."
+  ],
+  "residual_demand": {
+   "4": {
+    "DAMIC": 1121.7568930374287,
+    "LZ(strict)": 46367631.69633117
+   },
+   "5": {
+    "DAMIC": 745.6753488699804,
+    "LZ(strict)": 29277342.0171635
+   },
+   "6": {
+    "DAMIC": 710.8234184340397,
+    "LZ(strict)": 40841642.48352041
+   },
+   "7": {
+    "DAMIC": 610.1141939836914,
+    "LZ(strict)": 22130288.615827855
+   },
+   "8": {
+    "DAMIC": 528.3798679314317,
+    "LZ(strict)": 18305166.62942798
+   }
+  }
+ },
+ "V4_trace": [
+  [
+   "E_C = 0.30 MeV",
+   "registered (1879 lineage)"
+  ],
+  [
+   "chi = phi^-3/6 -> R_s = 25.42 fm",
+   "registered (1879)"
+  ],
+  [
+   "M_EL = 1408 MeV; masses N x 1.408 GeV",
+   "registered"
+  ],
+  [
+   "d = 1.15 fm",
+   "J8 pin"
+  ],
+  [
+   "R_N = 0.9 fm -> SC_RULING = R_N/R_s",
+   "D5-A' scale (1880 RN)"
+  ],
+  [
+   "SC_S = 0.035591796875",
+   "sec 34.9 registered Class S equivalent"
+  ],
+  [
+   "ell_v per N",
+   "2393 deterministic rod-integral match (asserted above)"
+  ],
+  [
+   "envelope scale ell_v*ern1*SC_RULING/N",
+   "2393 registered convention"
+  ],
+  [
+   "ROCK 4.3e5 g/cm^2, A~24 proxy, >=10 coll",
+   "1880 registered"
+  ],
+  [
+   "LZ q = 49.5 MeV; 1e-47 registered; 9.2e-48 strict-point gate",
+   "1880 pins (CONV-004); strict gate makes low-mass-edge moot"
+  ],
+  [
+   "DAMIC 106.7 m x 2.7 g/cm^3; 107 g-d; 550 eV; N90 = 123",
+   "CONV-004 THIS PATCH (arXiv:1804.03073 + 1105.5191/1712.01170)"
+  ],
+  [
+   "np anchor 2.9e-3 fm (N=15, 1866); re-arm (18/N)^2 from rod",
+   "contract's own x9-at-N=6 statement fixes the convention"
+  ],
+  [
+   "CMB 4.4e-27 anchor vs 1e-25",
+   "2112.00707 (registered 1880); x(18/N)"
+  ],
+  [
+   "halo v0/vesc/vdet = 220/584/233.8; rock/DAMIC v = 230 km/s",
+   "registered engine values"
+  ],
+  [
+   "member weights",
+   "2383 committed JSON (no re-fit)"
+  ]
+ ],
+ "V5": {
+  "baseline": 590,
+  "appends": 15,
+  "nonschema_calls_kept_out": 22
+ }
+}

@@ -927,3 +927,70 @@ grading branch (a) = the family dead on both classes, fully derived.
 
 **Next session opens with SS43-Q3 on the keyword; the founder's verbatim go completes
 the launch.**
+
+### 34.11 SS43-Q3 EXECUTED — the ladder at ring composition: BRANCH (c), the fork sharpened and quantified (Patch 2395; DM-WARM-2394)
+
+**Launch:** warm on DM-WARM-2394; founder verbatim go: **"Go. Please proceed as
+recommended."** Contract §34.10 executed as written; grading branches stood
+pre-registered; no renegotiation.
+
+**Battery: ALL PASS** (`code/2395_ss43_q3_ring_ladder.py`, results
+`code/2395_results.json`, Tier-4 record `reasoning/2395.md`).
+- **V1** 2393 green underneath, run in a SCRATCH COPY (provenance guard — committed
+  artifacts untouched by the warm re-run; the 2394 lesson made mechanical).
+- **V2 PASS-GATE PASSED:** the generalized ladder reproduced a fresh 1880 subprocess
+  verdict-for-verdict on all ten rod-grid rows (0.035 ALIVE; 1.3e-3 dead-LZ) before
+  any ring point was graded. ell_v(N = 4–8) reproduced the committed 2393 values to
+  < 1e-9.
+- **V3** five pre-declared spot checks green; **V4** no new free parameters (trace
+  table in-script); **V5** cache 590 byte-identical baseline + 15 schema-pure flat
+  appends (→ 605); 22 non-schema calls (ring-form/envelope/DAMIC-differential) kept
+  out.
+
+**The DAMIC-shallow low-mass pin (CONV-004 THIS PATCH** — the contract's one named
+data action; arXiv:1804.03073 §§2.2/6/B, lineage arXiv:1105.5191 + 1712.01170):
+106.7 m NuMI-hall depth, crust ρ = 2.7 g/cm³ → 2.8809e4 g/cm² column (Si-proxy
+collision convention as the registered 1880 rock channel); silicon, 107 g·days,
+E_nr threshold 550 eV, 106 observed events, 90% CL expected-event bound N90 = 123.
+Detection graded by the FULL DIFFERENTIAL spectrum above threshold (halo-folded) —
+the forward-peaked light-mediator potential makes total-σ counting a
+several-order overcount; shielding ceiling by total σ (1880 convention). The
+25-GeV J12′-a pin confirmed non-transferable, as flagged.
+
+**GRADING (mechanical, §34.10): BRANCH (c) — SPLIT VERDICTS.**
+- **Identity end (registered fold convention): clears the ENTIRE ladder by exact
+  identity** (A2a + A2b ⇒ every baryon channel exactly zero). Corollary computed,
+  not assumed: branch (a) cannot trigger.
+- **Envelope end (conservative |V| upper bracket): FAILS LZ(strict) and DAMIC at
+  every species N = 4–8.** Unshielded (rock 2.4–6.8 collisions; DAMIC column
+  0.16–0.46); σ_n = 3.1e-33–2.0e-32 vs the strict-point 9.2e-48 (15 orders); DAMIC
+  expected events 3.4e7–1.5e8 vs 123 (5.4–6.1 orders). XQC passes everywhere
+  (member-weighted ρ* = 76.6–109.3 ≥ 0.3); np passes (≤ 8.2e-5 fm vs 3e-3); CMB
+  passes (≤ 3.9e-32 vs 1e-25).
+- **Named pins (branch (c) clause), recorded at grading time:**
+  1. **LZ low-mass edge:** N = 4, 5, 6 (5.63/7.04/8.45 GeV) sit at/below LZ's
+     published 9-GeV lower edge — their LZ(strict) failures are EDGE-CONDITIONAL;
+     N = 7, 8 (9.86/11.26 GeV) fail unconditionally in-coverage. The branch verdict
+     rests on neither: DAMIC kills all five species inside its silicon coverage.
+  2. **Residual-coupling demand (→ Q4):** rate ∝ amplitude² ⇒ survival of the V-t
+     branch requires the TRUE post-closure residual amplitude below the |V| envelope
+     by ×5.3e2–1.1e3 (DAMIC, per N) and ×1.8e7–4.6e7 (LZ strict). The envelope is a
+     first-moment upper BOUND (a zero-mean vector potential scatters at second
+     order), so these are a derivation demand, not a death sentence — but nothing
+     registered currently derives the residual scale.
+  3. The DAMIC pin itself (above), registered CONV-004.
+- **Class S bookkeeping rows carried:** XQC gate-death stands at ring composition
+  (nviol 2–11 at standard density); the species are additionally rock-shielded
+  (5.7e3–1.55e4 collisions) AND DAMIC-shielded (380–1040) at S_c = 0.0356 — the
+  §34.9 kill shown over-determined, per contract intent.
+
+**Where this leaves the campaign:** the class fork did not resolve — it SHARPENED
+into a quantified conditionality. The V-t branch survives the full ladder **iff**
+the true residual coupling after closure sits ≲ envelope/2e7 (in-coverage LZ,
+N = 7, 8; envelope/1e3 suffices for the DAMIC-only species) — with the identity end
+(exact zero) trivially inside. **Q4's registered duty is now triple: R_s from
+substrate mechanics + the vertex class + the residual coupling scale**, the last
+being the fork-resolver. Class adjudication stays HELD per the founder's (c)
+ruling; this record goes to the founder's desk; session-close handover follows the
+reading, per operating_system.md §15. Q5 queues behind Q4; R2 release lane separate
+and untouched.
