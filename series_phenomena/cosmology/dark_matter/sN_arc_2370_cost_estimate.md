@@ -746,3 +746,20 @@ D2 adjudicate the tally (PANEL-VERIFIED, 2-seat coverage → Q3c OPENS on the
 inherited target incl. F-A1's theorem demand, sign ARGUMENT-LEVEL per F-A2);
 D3 confirm R1 ratification (discharges the 2380 B2 flag); D4 attest/edit/decline
 (d′). **NO VERDICT MOVED** pending D1–D4. Reasoning: `reasoning/2385.md`.
+
+---
+
+## ROUND 2384 COLLECTION FINAL — THIRD RETURN (DEEPSEEK, R3, WITH RE-EXECUTION); 3× VERIFIED ON ALL ITEMS; CLOSE AT 3/5 RECOMMENDED (Patch 2386, 9 July 2026)
+
+Return C (DeepSeek, seat R3 — distinct label, no collision) landed before
+adjudication; Grok failed a second, definitive time. **Final collection 3/5.**
+**Tally: V1–V5 = 3× VERIFIED each, 0 REFUTED, 0 INDETERMINATE; R1 = 3× RATIFY;
+R2 convergent ×3.** **Coverage fact upgraded:** Return C RE-RAN 2381 + 2382
+(batteries independently confirmed 6/6, 7/7) and spot-checked 2383 (XQC ρ* for
+the N6-dominant members, anchor anneals, cache regression, sign logic) — the
+round now contains independent re-execution of both derivation stages. No new
+actionable finding; F-A1/F-A2 (executed at 2385) cover the set. The 2385 D1
+retry recommendation is DISCHARGED BY EVENTS; **updated recommendation: CLOSE
+at 3/5.** D2–D4 stand on the 3/5 tally. Supplement + verbatim Return C:
+`conv001_2026-07_arc2381_2383_returns_adjudication.md` §S1–S5. **NO VERDICT
+MOVED** pending D1–D4. Reasoning: `reasoning/2386.md`.

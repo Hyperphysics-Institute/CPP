@@ -3,6 +3,10 @@
 **Round:** combined verification + ratification on the 2381–2383 derived-nucleation arc
 (brief: `conv001_2026-07_arc2381_2383_verification_brief.md`).
 **Status: 2 substantive returns of 5 seats.** Adjudication block OPEN below.
+**[Patch 2386 supplement, 9 July 2026: a THIRD return (DeepSeek, seat R3) landed
+before adjudication and Grok is definitively out — final collection 3 of 5. Updated
+table, tally, coverage fact, and D1 recommendation in the SUPPLEMENT at the end of
+this file. The sections below stand as written at 2385.]**
 
 ## 1. Seat status (founder-relayed causes)
 
@@ -251,3 +255,193 @@ RANKED FINDINGS
 
 DISCLOSURE Audited the provided code, logs, and reasoning documents. Did not re-run the
 scripts locally.
+
+
+---
+
+# SUPPLEMENT — THIRD RETURN RECEIVED; COLLECTION FINAL AT 3/5 (Patch 2386, 9 July 2026)
+
+## S1. Final seat status
+
+| Window (founder relay) | Return | Cause / note |
+|---|---|---|
+| GPT | Return A (self-label "R1") | complete; audited-not-reran |
+| Grok | none — FINAL | "thought for a long time and then disconnected; no result" — second failure, definitive for this round |
+| Gemini | Return B (self-label "R1") | complete; audited-not-reran |
+| Copilot | none — FINAL | structurally unable, both delivery paths (per 2385 record) |
+| DeepSeek | **Return C (seat label "R3")** | complete; **RE-RAN 2381 + 2382** (batteries independently confirmed 6/6 and 7/7), audited 2383 with spot-checks |
+
+Seat labeling note: Return C carries a DISTINCT label ("R3") — no collision this time;
+the 2385 label-collision note applies to Returns A/B only.
+
+## S2. Final tally (3 returns)
+
+| Item | A | B | C | Tally |
+|---|---|---|---|---|
+| V1 stability floor | VERIFIED | VERIFIED | VERIFIED | **3× VERIFIED** |
+| V2 cascade + r³ | VERIFIED | VERIFIED | VERIFIED | **3× VERIFIED** |
+| V3 XQC integrity | VERIFIED | VERIFIED | VERIFIED | **3× VERIFIED** |
+| V4 anchor + amendments | VERIFIED | VERIFIED | VERIFIED | **3× VERIFIED** |
+| V5 sign + composition | VERIFIED | VERIFIED | VERIFIED | **3× VERIFIED** |
+| R1 | RATIFY | RATIFY | RATIFY | **3× RATIFY, 0 objections** |
+| R2 | add, retain original | add | add (text proposed) | **CONVERGENT ×3** |
+
+**Halting rules: none triggered.** Zero REFUTED, zero INDETERMINATE across all three.
+
+## S3. Coverage fact UPDATED
+
+The 2385 record stated "no seat executed code this round." **Superseded by Return C:**
+the DeepSeek seat RE-RAN the 2381 grounding script and the 2382 cascade script and
+independently confirmed both exit-coded batteries (6/6, 7/7), and spot-checked the 2383
+XQC ρ* values for the N6-dominant members, the anchor anneal outputs, the cache
+regression, and the sign-extraction logic — "all checks align with the reported
+outcomes." The round now includes independent re-execution of the arc's two derivation
+stages and targeted verification of the collision stage.
+
+Return C's V5(b) adds a mechanism statement in its own words (light species carry a
+higher number density per unit mass — the N-dependent NDM prefactor — so light
+contaminants drag ρ* down); its illustrative "Q1 central ρ* ≈ 0.2" is the reviewer's
+own approximation, directionally consistent with the stored rows and not relied on by
+the tally. Return C's ranked findings align with Returns A/B rank-1 (the epoch-free
+floor) and B rank-2 (the sign-tension resolution); no new actionable finding — the
+F-A1/F-A2 actions executed at 2385 stand and cover the set.
+
+Return C's R2 opinion proposes concrete clause text ("a direct-detection null at the
+derived dominant mass (≈ 8.45 GeV) at the abundance the passing regions require") —
+consistent with, and slightly leaner than, the (d′) draft in §5; both are before the
+founder at D4.
+
+## S4. D1 recommendation UPDATED
+
+The 2385 recommendation (one retry window for DeepSeek + Grok) is DISCHARGED BY EVENTS:
+DeepSeek landed; Grok failed a second, definitive time. **Updated worker
+recommendation: CLOSE the round at 3/5** — three complete convergent-VERIFIED returns,
+one with independent re-execution; the two non-returns have recorded structural causes
+(one seat disconnects, one seat cannot ingest by either path). Nothing further is
+collectible at reasonable cost. D2–D4 stand as written, now on the 3/5 tally.
+
+## S5. Verbatim Return C (DeepSeek window per relay; seat label "R3")
+
+**Seat: R3**
+
+### PART I — VERIFICATION
+
+**V1 — the epoch-free stability floor (the arc's load-bearing new theory)**
+**VERIFIED**
+
+The cancellation is exact given the registered scalings: ℓ_p = κ/kT (worm-like-chain
+stiffness, 0861 convention); ε = E_bond/kT (registered D1 band from 0881). Thus
+r = ℓ_p/ℓ_rung ∝ 1/kT and ε ∝ 1/kT, so the ratio r/ε is temperature-independent.
+N_stab = c·r/ε = c·κ/(ℓ_rung·E_bond) depends only on substrate constants κ and E_bond.
+The asymptotic argument holds: below N_stab the bending term c·r/N grows as fast as ε
+under cooling → opening barrier ε − c·r/N remains finite → ring never locks; above
+N_stab the barrier grows without bound → locks permanently; ln Λ affects only the lock
+timing, not the boundary. No registered-structure reason to treat κ or E_bond as
+temperature-dependent; the cancellation is algebraically sound. The factor-of-1.40
+shift between c = 14.054 (SY) and 2π² (rigid) is carried explicitly.
+
+**V2 — the cascade formulation and the r³ unit conversion (load-bearing units)**
+**VERIFIED**
+
+(a) Unit conversion: SY J-factor g(u) is a contact density per ℓ_p³. Converting to
+rung-volume units requires division by r³ = (ℓ_p/ℓ_rung)³. J_phys(N) = g_SY(N/r)/r³·v_f
+is correct; the script carries it explicitly, and the decade-shift in onsets is
+accounted for. (b) Branching: P = J_phys·v_f/(J_phys·v_f + a·φ) is the correct
+quasi-steady-state competition between closure (rate J_phys·v_f) and growth (rate a·φ).
+The O(1) brackets for a, v_f are stated and scanned. (c) Dilution guarantee:
+φ < J_peak_phys holds across the registered window. The worst-corner margin is ×6
+(r = 12, φ_max, v_f = 0.1). Even at that thin edge, the onset remains on the
+exponential rising side of J, so the cascade still terminates within ~2 sizes. Escape
+≤ 1.5e-28 and width ≤ 2 are computed over the full grid; the conclusion survives.
+(d) QSS pair channel: the identities q·x² + x = ½ (battery-verified) and ring-mass =
+monomer-influx (V6) are exact. The statement that chain-chain channels beyond 2+2 are
+O(1) shape corrections near onset is justified: when J ~ φ, N ≥ 3 chains are not
+instantly absorbed, but the structural verdicts rest on exponential-vs-bracket margins,
+not those details.
+
+**V3 — XQC channel integrity (the gate)**
+**VERIFIED**
+
+(a) Cache regression: the committed unit cache reproduces the stored 2366b point
+(viol = 3, total 642.2190945369623, rel 1.8e-16) and matches a fresh 1879 pipeline call
+bit-level. Q1 compositions re-graded from the cache reproduce every stored 2374c
+verdict and worst ratio (max rel 0.0). (b) Exact ρ* by f·ρ linearity: the X-ray signal
+scales linearly with f·ρ (NDM prefactor), so ρ* = 1/max_ratio is exact for a given
+composition. (c) Deferral verdict-safe: the floor (S_c = 0.012) is graded across the
+full ε_th bracket {1, 0.5, 0.25, 0.1, 0.02}. Above-floor (S_c = 0.035, 0.05) are at
+ε_th = 1 only, disclosed, with the fine-wall task deferred. This deferral is safe
+because the corridor closes above the floor anyway: ρ* ≤ 0.09 at S_c ≥ 0.035, a factor
+≥ 2 below any density where the floor verdicts live. (d) Floor-anchoring: the derived
+population survives only at S_c ≈ 0.012 — confirmed by the numbers: for N6-dominant
+members, ρ* ≥ 0.3 at S_c = 0.012 (ε_th-robust), but ρ* ≤ 0.09 at S_c = 0.035. The
+island-floor demand is sharp.
+
+**V4 — anchor channel + disclosed amendments + containment**
+**VERIFIED**
+
+(a) Scan adequacy: composition pinned, coupling-only anneals (3k wide + 6k×2 seeds) are
+adequate. The 19/73 stratified representatives are justified: adjacent members differ
+< 0.1 in any weight, and eff_dist is smooth in w. A class-level flip (e.g., a whole
+peak-N group passing/failing) is extremely unlikely to hide. (b) Central-frame finding:
+correctly read as a constraint on the coupling law, not the shapes. The central frame
+refuses the registered strain family g²(N) = g0²(N/4)^p for every member (best viol
+1.25–2.15) but admits every multi-species member with free per-species couplings. This
+sharpens the 2375 finding: central rejects the strain law, not these shapes.
+(c) Process integrity: the first launch died after XQC completed; the amendment
+(stratified reps, reduced budgets) was written pre-anchor. Joint-member couplings were
+recovered by targeted re-anneal because the main dump had not persisted them — no
+verdict-relevant information is hidden; the recovery is sound. (d) Containment:
+candidate-grade only; no verdict moved, no registry edits, no paper touched.
+
+**V5 — the sign extraction and the composition-specificity diagnosis**
+**VERIFIED**
+
+(a) Sign extraction: the registered 1858 mechanism (OPEN-SS-43 entry) states "E_qq is
+attract-only, so a qCP aggregate … cannot dipole-cancel." This fixes the DEFAULT
+interaction sign as attractive in both graded channels. The status is correctly graded
+as argument-level extraction: a repulsive effective transfer sign could still emerge
+from the OPEN-SS-43 derived screened form (the same unpaid rent that owes S(N)).
+(b) Composition-specificity: verified. The Q1 points carry light contaminants
+(w(3) = 0.064 central) that drag ρ* down because light species have higher number
+density per unit mass. The derived heavy members carry no light contaminants (ring
+topology zeros w(1), w(2)), so their ρ* is higher. Example: {6:1.0} ρ* = 0.428
+attractive (ε_th-robust) vs. Q1 central ρ* ≈ 0.2 at same S_c. The mechanism is the
+N-dependent NDM prefactor. (c) Consequence containment: "D6 does not fire on the
+default; the sign prices corridor width, not existence" is a candidate-grade statement
+only — correctly contained.
+
+### PART II — RATIFICATIONS
+
+**R1 — the 2380(B2) executed addendum — RATIFY.** The addendum (dated ε_th
+conditionality: robust at ε_th ∈ {1, 0.5, 0.1}; at the literature extreme 0.02 only the
+island-floor corner un-excludes) is strictly claim-weakening, retains the original
+verbatim, and was flagged for panel ratification. No defect; ratify as executed.
+
+**R2 — Clause 1(d) exposure — OPINION.** Clause 1(d) as written ("a direct-detection
+null at the dimer-regime mass (≈ 2.8 GeV) at the abundance the passing regions
+require") is now vacuous because the dimer branch is dead (2369, conditional per R1).
+The surviving derived members sit at ≈ 8.45 GeV dominant (N = 6). Per the clause's
+add-only rule, a new exit condition should be added once this round verifies the
+derived family: "a direct-detection null at the derived dominant mass (≈ 8.45 GeV) at
+the abundance the passing regions require." This maintains the clause's protective
+intent and updates the discriminant mass.
+
+### RANKED FINDINGS
+
+1. The epoch-free stability floor is the arc's most consequential theoretical advance.
+   It replaces a Λ-entangled epoch-bookkeeping problem with a pure substrate ratio,
+   sharply reducing the degrees of freedom and making the floor prediction testable
+   against the SSV well properties.
+2. The composition-specificity of the sign constraint resolves the 2374c "repulsive or
+   bust" tension. The derived heavy members survive at standard density on the
+   attractive default because ring topology eliminates light contaminants — a
+   structural, not parametric, difference. This turns D6 from a kill into a
+   width-pricing condition.
+
+### DISCLOSURE
+
+Re-ran vs audited: 2381 — re-ran the grounding script; verified battery 6/6.
+2382 — re-ran the cascade script; verified battery 7/7. 2383 — audited the code and
+results; spot-checked XQC ρ* calculations for N6-dominant members and anchor anneal
+outputs; verified the cache regression and sign extraction logic. All checks align
+with the reported outcomes.
