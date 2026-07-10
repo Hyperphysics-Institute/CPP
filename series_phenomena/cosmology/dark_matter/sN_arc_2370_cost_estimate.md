@@ -650,6 +650,10 @@ at standard density on the default sign** — {6:1.0} ρ*=0.428
 [bracket-min 0.344], plus three more attractive members ≥ 0.3 ε_th-robust.
 **D6 does not fire on the default;** the sign now prices corridor WIDTH
 (repulsive ≈ doubles headroom), not existence.
+**[Dated tag, Patch 2385, 9 July 2026, panel finding F-A2 (2384 round, executed):]**
+every attractive-default statement in this section and its inheritances carries
+**ARGUMENT-LEVEL** status pending the OPEN-SS-43 derived screened form; no occurrence
+may be read as a completed derivation.
 
 **OUTCOME (graded as pre-registered): (c)+(d).** Six repulsive joint
 points at ρ ≥ 0.3; nine attractive at ρ ≥ 0.2, four of them ≥ 0.3.
@@ -660,6 +664,11 @@ R_s ≈ 20–50 fm; either sign at standard ρ (repulsive preferred); Λ per
 2382; masses N=6 → 8.45 GeV dominant (+7.04/9.86 companions) — the
 direct-detection discriminant moves from the dead dimer's ≈2.8 GeV to
 ≈8.5 GeV (**Clause-1(d) relevance flagged to founder + panel**).
+**[Dated addendum, Patch 2385, 9 July 2026, panel finding F-A1 (2384 round, executed):]**
+the Q3c target additionally carries the **SUBSTRATE-CONSTANCY THEOREM DEMAND** — the
+temperature-independence (or bounded drift) of κ and E_bond, load-bearing for the
+epoch-free stability floor, to be elevated from inherited convention to explicit
+derivation inside the same SSV/OPEN-FP-SF-2-η work that owes the absolute pair.
 
 **Failures recorded with equal weight:** light members dead at the gate;
 monodisperse {4} anchor-dead; strain law central-dead family-wide;
@@ -699,3 +708,41 @@ window → return); Copilot gets pasted contents AND raw-format links
 (founder-directed, no blob URLs). **NO VERDICT MOVED.** Reasoning:
 `reasoning/2384.md`. Founder's desk: paste the presentation block to the
 five seats; the adjudication block opens on returns.
+
+---
+
+## ROUND 2384 RETURNS RECORDED — 2× VERIFIED ACROSS ALL FIVE ITEMS, ZERO REFUTATIONS; ADJUDICATION OPEN (Patch 2385, 9 July 2026)
+
+**Collection (founder relay):** 2 substantive returns of 5 seats (GPT window =
+Return A; Gemini window = Return B); Grok disconnected; Copilot unable on BOTH
+delivery paths ("rules for retrieval" — the 2378 A2 fix recorded as insufficient
+for that seat); DeepSeek empty at collection. **LABEL COLLISION documented, not a
+duplication anomaly:** both returns self-claim "R1" (the brief's example label;
+no per-seat paste preamble) — texts verified distinct. Protocol note: assign seat
+labels in a one-line paste preamble next round.
+
+**Tally:** V1–V5 = 2× VERIFIED each, 0 REFUTED, 0 INDETERMINATE — **no halting
+rule triggered.** R1 = 2× RATIFY, 0 objections. R2 = convergent: ADD a new exit
+condition at the derived mass, retain the 2.8 GeV original for provenance. Both
+returns audited-not-reran (disclosed; no seat executed code — coverage fact
+recorded for the founder's weighing).
+
+**Findings triage:** F-A1 (Return A, WOUND) EXECUTED — the
+**SUBSTRATE-CONSTANCY THEOREM DEMAND** (κ, E_bond temperature-independence or
+bounded drift) appended dated-additive to the Q3c inherited target; it lands
+inside the same SSV/OPEN-FP-SF-2-η work that owes the absolute pair. F-A2
+(Return A, SCRATCH) EXECUTED — ARGUMENT-LEVEL tag appended dated-additive to the
+§Q3b-2c sign paragraph. Return B findings: commendations, no action.
+
+**(d′) draft for founder attestation** (add-only respected; NOT applied): a
+direct-detection null at ≈ 8.45 GeV dominant (companions 7.04/9.86) at the floor
+coupling and required abundance, effective once the derived family is registered
+as successor branch; original (d) retained verbatim.
+
+**ADJUDICATION BLOCK OPEN** (`conv001_2026-07_arc2381_2383_returns_adjudication.md`):
+D1 close at 2/5 or one retry window (worker recommends: one retry for
+DeepSeek + Grok, then close; registry-grade moves may await fuller coverage);
+D2 adjudicate the tally (PANEL-VERIFIED, 2-seat coverage → Q3c OPENS on the
+inherited target incl. F-A1's theorem demand, sign ARGUMENT-LEVEL per F-A2);
+D3 confirm R1 ratification (discharges the 2380 B2 flag); D4 attest/edit/decline
+(d′). **NO VERDICT MOVED** pending D1–D4. Reasoning: `reasoning/2385.md`.
