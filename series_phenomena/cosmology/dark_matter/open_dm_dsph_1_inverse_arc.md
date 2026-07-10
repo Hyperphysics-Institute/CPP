@@ -55,6 +55,13 @@ window or reading AFTER an adverse result does not rescue protected status. New 
 conditions may be added, and none removed, without a founder-attested amendment.*
 (Ratified as drafted; amendments henceforth per the clause's own add-only rule with founder attestation.)
 
+**CLAUSE 1 ADDITION (d′) — FOUNDER-ATTESTED (verbatim "Yes to D4.", 9 July 2026; Patch 2388;
+panel-recommended 3× convergent, 2384 round; per the clause's add-only rule — original (d)
+retained verbatim above):**
+*(d′) a direct-detection null at the derived dominant mass (≈ 8.45 GeV) at the abundance the
+passing regions require, effective once the derived family is registered as the successor
+branch; original (d) retained verbatim.*
+
 ## §2 SPEC-1 — the specification theorem (founding document)
 
 Measured requirements on the missing mechanism, all in the N = 18 CM frame

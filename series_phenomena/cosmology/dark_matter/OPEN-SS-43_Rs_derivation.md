@@ -525,3 +525,101 @@ budget = 10³⁹–10⁴²× ρ_Λ ⇒ zeroing must be exact; import verdict: ρ
 under the registered coefficient). Arc order L1 → L2 → Gate-1/D3 carry → paper → panel. DM-2 sessions run
 this paper's stability clock. **[L1 PASS, Patch 1895: m_grav = m_inertial to 3×10⁻⁵ (coat ≤ 0.6 MeV
 unledgered vs 25.3 GeV; margin ≥ 600) — every DM-1 gravitational anchor correctly normalized.]**
+
+## 34. Q3c RE-AIM — the campaign re-scoped for the panel-verified ring family (Patch 2388, 9 July 2026)
+
+**What changed since §33:** the population arc (OPEN-DM-DSPH-1, patches 2312–2387) killed the
+dimer branch (2369, ratified with ε_th conditionality), derived a replacement population from
+registered nucleation kinetics (2381–2383), and the derived family was **PANEL-VERIFIED**
+(2384 round, 3× convergent, one re-executing seat; adjudicated 2387). The family is
+**N = 6-dominant closed RINGS at ≈ 8.45 GeV** (companions 5, 7; kinetic placement
+r = ℓ_p/ℓ_rung ≈ 8.5–12), floor-anchored in coupling — NOT the rod-era N ≈ 15–20 / 25.3 GeV
+picture this campaign calibrated (§§6–32). This section re-aims the campaign's standing
+targets at the verified family. Rod-era results are NOT retracted; each is tagged below as
+carrying over or as rod-specific pending recompute.
+
+### 34.1 The inherited demands (from 2383/2385/2387, all derived, none imposed)
+
+| Demand | Value | Source |
+|---|---|---|
+| R_s | ∈ [20, 51] fm (anchor joint passes) | 2383_joint_couplings |
+| S_c | floor-anchored: alive at 0.012, DEAD at 0.035 — fine wall S_c* owed | 2383 XQC |
+| Sign | ARGUMENT-LEVEL attractive default (1858 E_qq); derivation owed here | 2383/F-A2 |
+| Masses | 8.45 GeV dominant (N = 6); 7.04 / 9.86 companions | 2383 |
+| Also carried in Q3c (not this campaign's channel) | N_stab = c·κ/(ℓ_rung·E_bond) ∈ ≈ [3.3, 7.3] + the F-A1 substrate-constancy theorem | 2382/2385 |
+
+### 34.2 The reconciliation ledger — carries over vs rod-specific
+
+**Carries over intact:** the channel decomposition (§17: gapped color-residual vs gapless
+|SSV| — geometry-independent); the de-novo gap target m_s = χ·ħc/r_c = 7.76 MeV ⇒
+R_s = 25.4 fm (Route B, N-flat — sits INSIDE the demanded [20, 51] band); the S(v)/soft-MC
+methods (1869–1871); the CONFRONT method suite; the 1879 XQC pipeline (it graded the ring
+family directly); CONV-004 measured-coefficient discipline.
+
+**Rod-specific, pending recompute or superseded-in-part:** the N ≈ 15–20 selection chain
+(floor ceiling + dwarf window + tail pruning) — superseded by the kinetic derivation's
+N = 5–7 band; the dwarf-coring capture calibration at N = 15–20 (the dSph channel is now
+carried by the 2371/2383 anchor machinery at the audited frames, which the ring family
+passes); the group falsifier value 0.03–0.05 (rod floor at N = 18 — recompute for rings);
+CONFRONT-1/3 numbers at 8N = 144–160 qCP (ring 8N = 40–56 — recompute); the D5-A′ ruling
+point S_c = 0.035 (see C1).
+
+### 34.3 The named collisions — where the derivation must land or the family dies
+
+**C1 — the S_c gap (the sharpest number in Q3c).** The ring family is XQC-DEAD at the rod
+era's natural scale S_c = R_N/R_s = 0.035 and ALIVE at the island floor 0.012 — a ×2.9 gap.
+Either (i) ring topology supplies additional colour-singlet suppression beyond the rod's
+first-power dipole (the closed cage's multipole structure — plausibly the same coherence
+argument that carried D5-A′, taken one order further by closure), or (ii) the derived
+coupling lands above S_c* and the family dies at the gate FULLY DERIVED — the third kill via
+the D5 lineage. Note the island itself is [0.012, 0.05] (1891): the ring demand sits at its
+bottom edge; DAMIC-floor behavior at the edge (J12′-a) becomes relevant again.
+
+**C2 — Route C is now killable.** Source-coherence screening (R_s ≈ N·d_el) gives
+R_s ≈ 6–12 fm at N = 6 — BELOW the demanded [20, 51] band at every anchor. The ring demand
+selects the N-FLAT route (B, medium property): the de-novo gap derivation IS the R_s
+deliverable, and its pre-registered kill stands — a √χ response order gives R_s ≈ 5 fm,
+outside the band, weak-SIDM fallback per the v1.1 falsifier.
+
+**C3 — CONFRONT-1 re-arms at ring composition.** Pairwise-additive E_NN ∝ 1/(8N)²: the ring
+N = 6 gives ×(144/48)² ≈ ×9 the per-pair rod residual at N = 18. The np channel that
+selected-then-released N must be recomputed at the ring point under the D5-A′
+colour-suppressed coupling — cheap, and it can kill.
+
+**C4 — the sign, decomposed by channel.** The registered structure ALREADY contains both
+signs: the E_qq capture residual (attract-only, 1858 — the 2383 default) and the E_ee coat
+channel (REPULSIVE, the measured floor, 1868–1871). The derivation owed is the effective
+TRANSFER sign entering each graded channel for ring–ring and ring–nucleus scattering — i.e.,
+which channel dominates σ_T at dwarf velocities and at XQC momentum transfer for the closed
+ring (whose saturated bonds plausibly enhance the repulsive coat share). Deliverable: the
+per-channel sign with the 2383 corridor re-graded on it (machinery standing). This
+discharges F-A2's ARGUMENT-LEVEL tag in whichever direction it lands.
+
+### 34.4 Stage plan (cheap-kill order; each stage carries its kill)
+
+- **SS43-Q1 — the fine wall (1 session, existing machinery).** Pipeline S_c* bisection for
+  the N6-dominant members (ε_th = 1 + floor-bracket robustness): turn "floor-anchored" into
+  the quantitative landing window [0.012, S_c*]. Kill statement: the window IS the target
+  C1's derivation must hit.
+- **SS43-Q2 — ring multipole pass (1–2 sessions).** Does closure suppress the nucleon
+  coupling beyond the rod's first power? Target ≥ ×2.9 at the ruling R_s. KILL: no extra
+  suppression ⇒ S_c(ring) = 0.035 > S_c* ⇒ gate-death, fully derived.
+- **SS43-Q3 — CONFRONT-1/3 recompute at ring composition (1 session).** np length + XQC +
+  shielding ladder at N = 5–7, w from 2383, under Q2's coupling. KILL: np or ladder
+  violation at every S_c in the Q1 window.
+- **SS43-Q4 — the de-novo gap (the physics core; weeks-scale).** Derive m_s = χ·ħc/r_c:
+  linear-in-χ response order in the colour-residual channel, |SSV| gapless (§17 target,
+  standing since 1872). Delivers R_s = 25.4 fm into the [20, 51] demand. KILL: √χ order
+  (R_s ≈ 5 fm) — pre-registered.
+- **SS43-Q5 — sign synthesis + corridor re-grade (1 session on Q4/Q2 output).** Per-channel
+  transfer sign for rings; re-run the 2383 corridor on the derived sign; F-A2 tag resolved.
+- Held behind these: the group-falsifier recompute for rings; the F-A1 constancy theorem
+  (OPEN-FP-SF-2-η side); registration of the family as successor branch (founder,
+  post-rent).
+
+### 34.5 Exits and rent
+
+Clause 1(a) binds this leg directly: if the derivation excludes every suite-passing region,
+the hypothesis takes the exit. The newly attested (d′) binds post-registration at 8.45 GeV.
+Every stage above is a registered-primitives computation or derivation; no dark-sector
+freedom is introduced at any stage (0865 held).

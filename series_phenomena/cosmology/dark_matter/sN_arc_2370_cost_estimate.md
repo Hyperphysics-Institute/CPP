@@ -785,3 +785,29 @@ standing; delivers R_s + the sign — the cheapest decisive leg), with the
 OPEN-FP-SF-2-η root block (absolute κ, E_bond + the F-A1 constancy theorem) as
 the long pole behind it. Entries: adjudication doc §ADJUDICATION ENTRIES.
 Reasoning: `reasoning/2387.md`.
+
+---
+
+## D4 ATTESTED + Q3c OPENING MOVE SCOPED — OPEN-SS-43 RE-AIMED AT THE RING FAMILY (Patch 2388, 9 July 2026)
+
+**Founder verbatim "Yes to D4."** — (d′) ENTERED into Clause 1 (dated, add-only,
+original retained); round 2384 fully closed, no outstanding items. **Founder
+verbatim "Please scope it."** — executed: campaign file §34 re-aims OPEN-SS-43 at
+the panel-verified ring family. The campaign's standing targets (the de-novo gap
+m_s = χ·ħc/r_c ⇒ R_s = 25.4 fm; the multipole order behind S_c) survive re-aim —
+R_s = 25.4 sits inside the demanded [20, 51] fm — but FOUR NAMED COLLISIONS now
+structure Q3c: **C1** the ×2.9 S_c gap (family alive at 0.012, dead at the rod
+ruling point 0.035; ring closure must supply the extra colour-singlet suppression
+or the family gate-dies fully derived); **C2** Route C (R_s ∝ N·d) killable at
+N = 6 (lands 6–12 fm, below band) — the N-flat Route B gap derivation IS the R_s
+deliverable; **C3** CONFRONT-1 re-arms (ring per-pair residual ×9 rod's); **C4**
+the sign decomposes by channel — the REPULSIVE ingredient is already registered
+and measured (the E_ee coat floor, 1868–1871); owed is the ring-ring channel
+weighting, which discharges F-A2's tag either way. **Stage plan (cheap-kill
+order): SS43-Q1** fine S_c* wall (1 session, the 2383 deferred debt — defines
+C1's numeric target) → **Q2** ring multipole pass (the sharpest kill risk) →
+**Q3** CONFRONT recompute at ring composition → **Q4** the de-novo gap (physics
+core; pre-registered √χ kill ⇒ 5 fm now load-bearing) → **Q5** sign synthesis +
+corridor re-grade. Scoped, NOT launched; recommended launch: SS43-Q1 next
+session. Campaign file `OPEN-SS-43_Rs_derivation.md` §34; reasoning
+`reasoning/2388.md`.

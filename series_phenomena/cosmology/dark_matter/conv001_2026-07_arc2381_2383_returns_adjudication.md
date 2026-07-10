@@ -482,3 +482,13 @@ worker's plain-language explanation to the founder; D4 enters on the founder's e
 yes (or edited text), dated.
 
 **Round 2384 is CLOSED.** Items outstanding from the round: D4 only.
+
+
+---
+
+# D4 ENTERED (Patch 2388, 9 July 2026)
+
+**Founder verbatim: "Yes to D4."** — explicit, informed attestation on the exact sentence
+presented. **(d′) is ENTERED into Clause 1** (`open_dm_dsph_1_inverse_arc.md`, dated addition
+per the add-only rule; original (d) retained verbatim). **Round 2384 is fully closed: no
+outstanding items.**
