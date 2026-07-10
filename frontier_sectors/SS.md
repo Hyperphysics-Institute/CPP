@@ -1064,6 +1064,23 @@ registration stays unblocked-and-queued. Pins PIN-Q4c-1/2/3. Four instrument mis
 fixed, derivation unmoved (reasoning §4). Script `code/2403_ss43_q4c_residual_scale.py`; results
 `code/2403_results.json`; campaign file §34.15; reasoning 2403; methods Patch 2402.
 
+**[Patch 2404, 10 July 2026] CONV-004 AMENDMENT ADOPTED (PIN-Q4c-3 → (a)) — the LZ 9.86-GeV pin STRUCTURED;
+numeric assignment = a named founder data action; two adjacent data facts registered.** Founder ruling
+verbatim ("Please adopt the contract amendments as recommended."). The pin executed to the in-session access
+limit: primary source PRL 135, 011802 (2025) = arXiv:2410.17036 (combined WS2022+WS2024, coverage ≥ 9 GeV,
+min 2.2×10⁻⁴⁸ at 40 GeV); digitized curve = HEPData ins2841863 table "SI cross section" — download endpoints
+bot-blocked this session and NO text source quotes the 9.86-GeV value; per CONV-004 no number manufactured.
+**Named founder action (~2 min): read σ_LZ(9.86 GeV) off the HEPData table; pre-staged re-grade: N=7 CLEARS
+iff it exceeds 1.16×10⁻⁴⁶ cm².** Adjacent facts: (i) the registered strict point 9.2×10⁻⁴⁸ is SUPERSEDED by
+2.2×10⁻⁴⁸ — **N=8's unconditional clear survives the supersession at 7.7× (audited)**; METH-L2-012 re-arms on
+the stronger value at next consumption; (ii) **a Dec-2025 LZ low-mass analysis (417 live days, 3–9 GeV
+coverage, world-leading above 5 GeV; arXiv/PRL pending at announcement) will dissolve the N=4–6 edge pins**
+— all three species incl. the 8.45-GeV (d′) attestation mass fall inside; named founder-gated follow-up:
+grade the three derived residuals against the published curve on release (plausible intra-family
+discrimination; not pre-graded). §34.15's (c)-adjudication PARTIALLY DISCHARGED — residue = two named
+numbers, mechanical on receipt. Q5 gated on completion; Q2-identity registration queued. Campaign §34.16;
+reasoning 2404.
+
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's

@@ -1375,3 +1375,75 @@ one stale variable.
 Artifacts: `code/2403_ss43_q4c_residual_scale.py`, `code/2403_results.json`;
 registry `frontier_sectors/SS.md` 2403 block; `reasoning/2403.md` (verbatim,
 at-patch). Methods registrations: Patch 2402 (catalog-first).
+
+### 34.16 CONV-004 CONTRACT AMENDMENT ADOPTED (PIN-Q4c-3 → option (a)) — the LZ 9.86-GeV local-value pin STRUCTURED; source identified; numeric assignment = a named founder data action; two adjacent data facts registered (Patch 2404, 10 July 2026)
+
+**Founder ruling (verbatim, this session):** **"Please adopt the contract
+amendments as recommended."** — adopting PIN-Q4c-3 option (a): the §34.12 V4
+founder-gated CONV-004 amendment authorizing the pin of the published LZ local
+value at 9.86 GeV. Recorded here; the gate is OPEN.
+
+**The pin, structured (CONV-004; executed to the limit of in-session access):**
+- **Primary source identified:** LZ WS2022+WS2024 combined analysis, *Phys.
+  Rev. Lett.* **135**, 011802 (2025) = arXiv:2410.17036 (280.0 live days,
+  4.2 t·y). The SI limit curve is Fig. 5; the digitized values are the HEPData
+  record **ins2841863** (DOI 10.17182/hepdata.155182.v2), table **"SI cross
+  section"** (record page hepdata.net/record/158592).
+- **Published-in-text anchors (verified this session):** coverage: masses
+  ≥ 9 GeV/c² (9.86 GeV IS in coverage); curve minimum 2.2×10⁻⁴⁸ cm² at
+  40 GeV/c² (power-constrained; median sensitivity 5.1×10⁻⁴⁸); the combined
+  limits "surpass previous best exclusions by a factor of four or more for
+  WIMP masses > 9 GeV/c²."
+- **Access record (no smoothing):** the HEPData table download endpoints
+  (csv/yaml) were bot-blocked from this session; the 9.86-GeV numeric value is
+  published only in Fig. 5 / the digitized table, and NO text source quotes
+  it. Manufacturing the number from curve-shape expectations is forbidden by
+  the same CONV-004 discipline this amendment exists to honor.
+- **NAMED FOUNDER DATA ACTION (completes the pin — ~2 minutes):** read the
+  "SI cross section" table at the HEPData record above on a local machine and
+  report σ_LZ(9.86 GeV/c²) — at the tabulated mass nearest 9.86, or linearly
+  log-interpolated. One number completes the amendment.
+- **Pre-staged mechanical re-grade (fires on the number, no renegotiation):**
+  **N = 7 CLEARS iff σ_LZ,combined(9.86 GeV) > 1.16×10⁻⁴⁶ cm²** (the Patch-2403
+  derived value). On a clear: every ladder channel passes at N = 7 and N = 8;
+  the family's in-coverage grading upgrades toward the branch-(b) full
+  landing, gated only on the N = 4–6 item below. On a fail: N = 7 dies
+  in-coverage fully derived; N = 8 stands alone unconditionally clear;
+  family-level survival persists on N = 8 with member-weight consequences to
+  the founder's desk.
+
+**Adjacent data facts registered in the same CONV-004 search (both material,
+neither smoothed):**
+
+- **(i) The registered strict point is SUPERSEDED.** The registered
+  LZ_STRICT = 9.2×10⁻⁴⁸ (SR1/WS2022, 36 GeV) is now dominated by the combined
+  curve's 2.2×10⁻⁴⁸ at 40 GeV. **Q4c's grading is UNMOVED in kind:** N = 8's
+  derived σ = 2.85×10⁻⁴⁹ clears even the superseded-updated strict point by
+  **7.7×** (verified arithmetically this patch) — the N = 8 unconditional
+  clear stands against the strongest published point of the strongest
+  published curve. N = 7 remains strict-point-conditional exactly as graded.
+  Carried note: the strict-point gate (METH-L2-012) re-arms on the 2.2×10⁻⁴⁸
+  value at the next confrontation that consumes it.
+- **(ii) A NEW LZ low-mass analysis exists (Dec 2025) that will dissolve the
+  N = 4–6 edge pins.** LBL/SURF announcement, 8 Dec 2025: 417 live days
+  (Mar 2023–Apr 2025), **first LZ search below 9 GeV, covering
+  3–9 GeV/c², world-leading above 5 GeV/c²**; presented at SURF; arXiv/PRL
+  release pending at announcement. All three edge-conditional species
+  (N = 4: 5.63 GeV, N = 5: 7.04 GeV, N = 6: 8.45 GeV — the (d′) attestation
+  mass) fall inside this new coverage. **Named follow-up data action
+  (founder-gated, same CONV-004 family):** locate the published curve and
+  grade the three species' derived residuals (1.37×10⁻³⁸, 2.46×10⁻⁴¹,
+  5.07×10⁻⁴⁴ cm²) against it. No pre-grading here; recorded stake: these
+  residuals are large on the xenon scale, so the new data plausibly
+  discriminates WITHIN the family (killing lighter members while N = 7–8
+  stand) — a member-weight / attestation-mass consequence that goes to the
+  founder's desk with the numbers, not before.
+
+**Standing consequences:** the (c)-branch founder-adjudication requirement of
+§34.15 is now PARTIALLY DISCHARGED (the amendment adopted and structured; the
+residue reduces to two named data numbers). Q5 remains gated on the completed
+adjudication. The Q2-identity theorem registration remains unblocked-and-queued.
+Scope guard held: no number manufactured, no pre-grading, no Q5 pre-work, R2
+lane untouched. Artifacts: this section; `frontier_sectors/SS.md` 2404 block;
+`reasoning/2404.md` (verbatim, at-patch; includes the full search/access
+record).
