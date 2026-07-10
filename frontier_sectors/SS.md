@@ -941,6 +941,17 @@ CONV-004 measurement. **FOUNDER ADJUDICATION INVITED on the class question** (ad
 hold for Q3–Q4 discrimination); scope guard held, no verdict moved. Cache 475 → 590 (schema-pure);
 script `code/2393_ss43_q2_ring_multipole.py`; results `code/2393_results.json`; campaign file §34.9;
 reasoning 2393.
+**[Patch 2394, 10 July 2026] FOUNDER RULES (c) — DICHOTOMY HELD; SS43-Q3 REGISTERED (§34.10, keyword
+DM-WARM-2394):** no vertex class adopted by preference (verbatim: "please proceed as recommended," on the
+stated (c)+Q3-next recommendation). Q3 = the full 1880 baryon ladder at ring composition PER CLASS, the V-t
+leg at the collapsed coupling with the ACTUAL ring-form potential (rod-era dead-zone logic assumed the flat
+long-range form — does not transfer untested); DAMIC low-mass pin at ≈ 8.45 GeV named as the one data action
+(the 25-GeV J12′-a pin does not transfer); C3 np re-arm in scope; V2 = PASS-GATE (rod-point landscape
+reproduction before any ring grading). Grading pre-registered: (a) V-t ladder-dead ⇒ family dead on BOTH
+classes fully derived, fork moot, Clause 1(a) to founder; (b) V-t clears ⇒ alive on V-t only, class fork to
+Q4 (which now carries double duty: R_s + the vertex class from substrate mechanics); (c) split ⇒
+channel-by-channel, no smoothing. Handover `handovers/2026-07-10_dm_ss43_q2_dichotomy_q3_contract.md`;
+reasoning 2394.
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's

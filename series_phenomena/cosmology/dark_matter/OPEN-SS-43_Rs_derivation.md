@@ -850,3 +850,80 @@ fully derived — the third kill via the D5 lineage; (c) hold the dichotomy open
 let Q3/Q4 discriminate — Q4's de-novo gap derivation is exactly the substrate
 mechanics that would DERIVE the vertex class. No recommendation smuggled; the
 derivation says the registered primitives genuinely do not decide, and says why.
+
+### 34.10 CLASS ADJUDICATION RULED (c) + SS43-Q3 CONTRACT + WARM-LAUNCH REGISTRATION (Patch 2394, 10 July 2026)
+
+**Founder ruling on the §34.9 dichotomy: option (c) — HOLD OPEN, let Q3/Q4 discriminate.**
+Verbatim: "please proceed as recommended" (on the recommendation whose stated content was
+(c) + Q3 next; recorded in `reasoning/2394.md`). No vertex class is adopted; neither
+branch's grading is promoted; the dichotomy is the campaign's registered live fork.
+
+**Warm-launch keyword: DM-WARM-2394.**
+
+**Handover set (self-contained):** this file §34 (re-aim §34.1–34.5; the wall §34.7; the
+Q2 result §34.9; this contract); §22 (D5-A′ + the 1880 landscape whose ladder this task
+re-runs); `code/2393_results.json` + `code/2393_ss43_q2_ring_multipole.py` (the two
+vertex classes, the ring-form potential machinery, the envelope); `code/1880_d5_sc_landscape.py`
+(the full baryon ladder: XQC / rock-overburden shielding / LZ / np / CMB — the machinery
+this task re-parameterizes); `code/2391_results.json` (the wall); the committed
+`code/2379_unit_cache.json` (590 keys); `code/1879_xqc_recomputation.py` (engine);
+`code/2383_joint_couplings.json` (the six members); arc-doc context §Q3b-2c → §Patch-2393.
+
+**SS43-Q3 pre-registered scope (CONFRONT-1/3 recompute at ring composition — the
+dichotomy's cheap discriminator):** re-run the FULL 1880 baryon ladder at the ring
+family's registered parameters (masses N·1.408 GeV, N = 4–8; member weights from 2383;
+ring geometry from 2393), PER CLASS:
+- **(i) Class V-t branch (the decisive leg — the §34.9 below-floor flag made
+  load-bearing):** the ladder at the COLLAPSED coupling, using the actual ring-form
+  potential (2393 machinery: identity zero + envelope bracket), NOT the flat-S_c
+  long-range form the rod-era dead-zone logic assumed. Channels: rock-overburden
+  shielding collision count at ring masses; LZ σ_n at Xe-recoil momenta with the
+  ring-form amplitude; DAMIC-shallow at ≈ 8.45 GeV (the J12′-a edge, now at LOW mass —
+  the 25-GeV floor pin does not transfer; a fresh low-mass reach pin is a NAMED data
+  action inside this task); np channel at ring composition (C3 re-arm: per-pair
+  E_NN ∝ 1/(8N)², ×9 the rod per-pair at N = 6); CMB drag.
+- **(ii) Class S branch (bookkeeping leg):** the branch is already XQC-gate-dead
+  (§34.9); record the remaining ladder rows at S_c = 0.0356 for completeness of the
+  kill's derivation chain — cheap, no bisection.
+
+**Grading (mechanical, pre-registered — no adjustment after the numbers):**
+- **(a)** V-t branch fails ANY ladder channel at both bracket ends (identity 0 AND
+  envelope ≤ 0.0014) → the V-t branch is DEAD → with Class S gate-dead (§34.9), **the
+  family is dead on BOTH classes, fully derived, adjudication moot** — the third kill
+  via the D5 lineage lands regardless of the vertex question; Clause 1(a) exit engages
+  on the founder's desk.
+- **(b)** V-t branch clears EVERY channel at both bracket ends → the family is **alive
+  on the V-t class only**; the class fork becomes the campaign's single live question;
+  Q4 (the de-novo gap, which must also derive the vertex class from substrate
+  mechanics) is the registered discriminator; Q5 (coat-channel sign synthesis) queues
+  on the anchor side.
+- **(c)** Split verdicts between the bracket ends (identity passes, envelope fails, or
+  channel-conditional) → recorded faithfully channel-by-channel; the conditionality
+  becomes a named pin/derivation demand; no smoothing.
+
+**Verify battery (binding):**
+- **V1** the 2393 battery green underneath (subprocess; carries 2391 → 2381/2382/2383
+  transitively).
+- **V2 rod-era ladder reproduction (PASS-GATE):** before any ring point is graded, the
+  re-parameterized ladder machinery must REPRODUCE the registered 1880 landscape
+  verdicts at the rod point (N = 18, 25.3 GeV, flat S_c grid incl. 0.035 ALIVE and
+  1.3×10⁻³ dead-LZ). Failure = machinery not trusted; no grading proceeds; fix or
+  escalate.
+- **V3 grading reproduction:** ring-point verdicts reproduced by fresh calls on a
+  pre-declared spot-check set spanning both classes and both V-t bracket ends.
+- **V4 no-freedom audit:** every coefficient traced (0865 held; CONV-004 tags where
+  measured quantities enter — the DAMIC low-mass pin will be one).
+- **V5 cache integrity** (schema-pure appends only; ring-form calls stay out).
+
+**Exits and rent:** Clause 1(a) binds — grading branch (a) puts the exit on the
+founder's desk fully derived. The attested (d′) binds post-registration at 8.45 GeV.
+Scope guard: verdict moves ONLY by the mechanical grading above; the class adjudication
+itself stays HELD per the founder's (c) ruling — Q3 can moot it or sharpen it, not
+decide it by preference.
+
+**Expected cost:** 1–2 sessions (ladder machinery exists at 1880; ring-form machinery
+exists at 2393; the DAMIC low-mass pin is the one data action). KILL statement carried:
+grading branch (a) = the family dead on both classes, fully derived.
+
+**Next session opens with SS43-Q3 on the keyword; the founder's verbatim go completes
+the launch.**
