@@ -656,3 +656,57 @@ S_c above every member's S_c*, the family gate-dies fully derived.
 
 **Next session opens with SS43-Q1 on the keyword; the founder's verbatim go completes
 the launch.**
+
+### 34.7 SS43-Q1 EXECUTED — the fine wall (Patch 2391, 9 July 2026)
+
+**Launch:** DM-WARM-2389 keyword + founder's go ("Shall SS43-Q1 proceed there?").
+Contract §34.6 executed as pre-registered: pipeline-level S_c* bisection, six 2383
+joint members, ε_th = 1, both signs, ρ ∈ {0.2, 0.3}, tolerance 0.001; every fresh
+point appended to the committed cache (360 → 475 keys; 115 fresh calls, under the
+~170 budget). Script `code/2391_ss43_q1_fine_wall.py`; results
+`code/2391_results.json`. **Battery 4/4 PASS** (V1 underneath 2381 6/6, 2382 7/7,
+2383 5/5; V2 all 48 endpoint verdicts + stored ρ* rows reproduced at rel 0; V3
+worst-ratio monotone in S_c on all 12 paths / 112 sampled points — bisection valid,
+not merely convergent; V4 original 360 cache keys byte-identical, +115, round-trip).
+
+**Pre-flight repair owned in-session (Patch 2390):** the 2381 V5 cache check pinned
+an exact 336-key count, falsified by the cache's own registered growth (2383's
+committed above-floor extension to 360; this task's contract appends more). Repaired
+to the invariant form — floor bracket complete (320/320), 13-bin schema for every
+key, count monotone ≥ 336 — machinery-catches-author, pre-commit, no verdict content
+touched.
+
+**The wall (S_c* = alive end of the 0.001 bracket; window = [0.012, S_c*]; required
+C1 suppression = 0.035/S_c* from the rod-natural scale):**
+
+| Member | Composition | attr ρ=0.2 | attr ρ=0.3 | rep ρ=0.2 | rep ρ=0.3 |
+|---|---|---|---|---|---|
+| A | {6: 1.0} | 0.0170 (×2.06) | 0.0142 (×2.47) | 0.0206 (×1.70) | 0.0163 (×2.15) |
+| B | {5:.166, 6:.781, 7:.053} | 0.0163 (×2.15) | 0.0134 (×2.60) | 0.0192 (×1.82) | 0.0156 (×2.24) |
+| C | {6:.658, 7:.326, 8:.016} | 0.0177 (×1.97) | 0.0149 (×2.35) | **0.0221 (×1.59)** | 0.0170 (×2.06) |
+| D | {4:.012, 5:.276, 6:.543, 7:.157, 8:.012} | 0.0156 (×2.24) | 0.0127 (×2.75) | 0.0192 (×1.82) | 0.0149 (×2.35) |
+| E | {4:.027, 5:.415, 6:.474, 7:.084} | 0.0149 (×2.35) | **0.0120 (×2.92)** | 0.0177 (×1.97) | 0.0142 (×2.47) |
+| F | {4:.015, 5:.595, 6:.377, 7:.014} | 0.0142 (×2.47) | DEAD-AT-FLOOR | 0.0170 (×2.06) | 0.0134 (×2.60) |
+
+**Reading (no verdict moved — the wall is C1's input):**
+- **S_c* spans [0.0120, 0.0221].** The §34.3 "×2.9 gap" was the floor-referenced
+  worst case; the fine wall grades it. Q2's derived ring suppression lands the WHOLE
+  surviving table at ≥ ×2.92; it keeps at least one joint-(c) cell alive at ≥ ×1.59
+  (member C, repulsive, ρ=0.2 — the loosest wall). Between those, the family narrows
+  member-by-member instead of dying whole; the kill carried from §34.4 fires only if
+  the derived S_c exceeds 0.0221.
+- **Loosest walls by branch:** (c) repulsive ρ=0.3 → 0.0170 (×2.06); (d) attractive
+  ρ=0.2 → 0.0177 (×1.97). The repulsive coat channel is uniformly the more forgiving
+  target — consistent with its smaller per-unit XQC yield in the cache.
+- **Two floor-edge facts, faithfully carried:** F(attr, ρ=0.3) has no window — its
+  floor ρ* = 0.2969 < 0.3, i.e., F carried joint (d) at ρ ≥ 0.2 only in 2383; and
+  E(attr, ρ=0.3)'s wall sits essentially AT the floor (S_c* = 0.0120, floor
+  ρ* = 0.3244) — the J12′-a DAMIC-edge caution in §34.3 applies to that cell first.
+- ε_th floor-bracket robustness (min ρ* over the 5-point bracket, read from the
+  committed cache, not recomputed) is recorded per member/sign in
+  `2391_results.json` (`floor_bracket_rho_star_min_over_eth`).
+
+**Hand-off to SS43-Q2 (ring multipole pass):** the quantitative landing window is
+now numeric per cell. Q2's deliverable is a DERIVED ring S_c; the grading against
+this table is mechanical. Stage plan §34.4 unchanged; Q3 (CONFRONT recompute) and
+Q4 (de-novo gap) queue behind Q2 as registered.
