@@ -993,6 +993,27 @@ per-stage known-limit PASS-GATES: 1872 anchor / D5-A′ rod phenomenology / 2393
 discipline). Out of scope: Q5 pre-work, early theorem registration, DAMIC re-pin, R2 lane, glossary
 promotion. Weeks-scale; each session closes with the §15 handover. Campaign file §34.12; reasoning 2397.
 NEXT SESSION opens on DM-WARM-2397; the founder's verbatim go completes the Q4a launch.
+**[Patch 2399, 10 July 2026] SS43-Q4a EXECUTED — THE RESPONSE ORDER IS LINEAR IN χ, DERIVED; R_s = 25.42 fm
+IN-DEMAND; THE √χ KILL NOT TRIGGERED (battery ALL PASS; V2 PASS-GATE passed before grading):** launched on
+the recorded founder go ("Go to complete SS43-Q4 launch."). The derivation from registered structure:
+**L1** the residual-channel vertex is the registered Wigner–Eckart matrix element (METH-CHIR-CONT-1,
+Capotauro v2.0) — an AMPLITUDE-level object, g_res/g_color = φ⁻³·d_Γ/V_cage = χ, one power per vertex;
+**L2** vertex hermiticity — perceive- and source-side elements equal in magnitude, every loop leg carries χ
+once; **L3** the gap is the channel-diagonal polarization (two vertex insertions; registered J1/1864
+linear-screening baseline) ⇒ **Π_res/Π_color = χ² ⇒ m_s = χ·(ħc/r_c) = 7.764 MeV ⇒ R_s = r_c/χ = 25.42 fm,
+INSIDE [20, 51]** — colour anchor ħc/r_c = SF-5 empirical confinement (J2). **√χ EXCLUDED, not merely
+disfavored:** it requires χ once in the bubble — probability-level registration (contradicts
+METH-CHIR-CONT-1) or asymmetric legs (contradicts hermiticity); the kill point (R_s = 5.04 fm) reproduced
+numerically and did not fire. Decomposition exact: |SSV| gapless at SYMMETRY level (5-design, 1107–1108
+CLOSED — reproduced fresh: ℓ=1–5 exact at machine precision, ℓ=6 deviates ⇒ 5-design, not 6-design) while
+colour-residual gaps at χ²; §17's pinned target discharged as derived; Route B's "numerological" label (§3)
+lifted; Route C stays killed. Named pins, none straddling: PIN-Q4a-1 (inherits registered J1 baseline —
+standing footing, not new freedom), PIN-Q4a-2 (O(1) coefficient tolerance c ∈ [0.787, 2.007] contains 1;
+√χ rescue needs c ≥ 3.97, not O(1)), PIN-Q4a-3 (r_c spread 0.85–1.0 fm ⇒ R_s ∈ [21.60, 25.42], in-window
+end to end). **GRADING: Q4a LANDS, branch-(b) track.** Q4b (vertex class derived, S vs V-t) unblocked by
+this record, opens next session; **the (c) HOLD stands**. Scope guard held (no Q4b pre-work, no class
+adoption, no theorem registration, no DAMIC re-pin, R2 lane untouched). Script
+`code/2399_ss43_q4a_response_order.py`; results `code/2399_results.json`; campaign file §34.13; reasoning 2399.
 
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate

@@ -1,0 +1,94 @@
+{
+  "contract": "sec 34.12 Q4a (keyword DM-WARM-2397)",
+  "founder_go": "Go to complete SS43-Q4 launch.",
+  "V1": "2395 battery ALL PASS in scratch copy at session open (reasoning/2399.md sec 2)",
+  "V2_pass_gate": {
+    "anchor_1872": {
+      "chi": 0.03934466291663161,
+      "m_s_MeV": 7.763764299350166,
+      "R_s_fm": 25.41640786499874,
+      "band_MeV": [
+        6.16646875,
+        24.665875
+      ]
+    },
+    "channel_decomposition": {
+      "xi_over_Rs": 6.295146066661058e+39,
+      "leak_exponent_at_RH": -6.295146066661058e+39
+    },
+    "five_design": {
+      "l_1_to_5_machine_precision": true,
+      "l6_max_deviation": 0.016477787296088675
+    }
+  },
+  "derivation": {
+    "p2_linear": {
+      "m_s_MeV": 7.763764299350166,
+      "R_s_fm": 25.41640786499874,
+      "in_window": true
+    },
+    "p1_sqrt": {
+      "m_s_MeV": 39.14077564251723,
+      "R_s_fm": 5.041468820195037,
+      "in_window": false
+    },
+    "discriminant": "amplitude-level registration + vertex hermiticity force p = 2"
+  },
+  "robustness": {
+    "c_tolerance": [
+      0.7868932583326324,
+      2.0065778087482125
+    ],
+    "c_rescue_sqrt": 3.9670978267056443,
+    "Rs_over_rc_spread_fm": [
+      21.60394668524893,
+      25.41640786499874
+    ]
+  },
+  "grading": {
+    "stage": "Q4a",
+    "derived_order": "LINEAR (p = 2 legs; gap m_s = chi * hbarc/r_c)",
+    "m_s_MeV": 7.7638,
+    "R_s_fm": 25.4164,
+    "window_fm": [
+      20.0,
+      51.0
+    ],
+    "landing": "IN-DEMAND",
+    "kill_triggered": false,
+    "sqrt_chi_status": "EXCLUDED by registration (amplitude-level METH-CHIR-CONT-1 + vertex hermiticity); numerically R_s = 5.041 fm, outside",
+    "named_pins": {
+      "PIN-Q4a-1": "two-leg linear-response identification inherits registered J1/1864 baseline (standing campaign footing, not new freedom)",
+      "PIN-Q4a-2": "O(1) coefficient unpinned; tolerance c in [0.787, 2.007]; no straddle (sqrt-chi rescue needs c >= 3.97)",
+      "PIN-Q4a-3": "r_c spread 0.85-1.0 fm => R_s in [21.60, 25.42] fm, in-window"
+    }
+  },
+  "V4_inputs": [
+    [
+      "phi",
+      "mathematical constant (600-cell native)"
+    ],
+    [
+      "d_Gamma = 2",
+      "registered topological integer (METH-CHIR-CONT-1 universal data)"
+    ],
+    [
+      "V_cage = 12",
+      "registered topological integer (first-shell icosahedron)"
+    ],
+    [
+      "r_c = 1.0 fm",
+      "SF-5 empirical confinement anchor (J2, registered; spread scanned)"
+    ],
+    [
+      "window [20, 51] fm",
+      "sec 34.1 inherited demand (CLOSED input)"
+    ],
+    [
+      "hbarc = 197.327",
+      "registered engine value (1872)"
+    ]
+  ],
+  "V5": "no cache opened; this file is the only output",
+  "battery": "ALL PASS"
+}

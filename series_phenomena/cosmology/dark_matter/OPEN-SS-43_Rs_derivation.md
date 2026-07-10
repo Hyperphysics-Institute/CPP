@@ -1118,3 +1118,71 @@ grading lands in this file before the next stage opens.
 
 **Next session opens with SS43-Q4a on the keyword; the founder's verbatim go
 completes the launch.**
+
+### 34.13 SS43-Q4a EXECUTED — the response order is LINEAR in χ, derived from the registered amplitude-level structure; R_s = 25.42 fm IN-DEMAND, the √χ kill not triggered (Patch 2399, 10 July 2026)
+
+**Launch:** warm on **DM-WARM-2397**; chain-verify 2398 → 2397 → 2396 → 2395 → 2394
+green. Founder launch go cited verbatim per the 2026-07-10 handover's mandate:
+**"Go to complete SS43-Q4 launch."** (recorded at that handover; carried in
+`reasoning/2399.md` §1 per the §10 block). Battery: **ALL PASS** — V1 2395 battery
+green in a scratch copy (transitive 2393 → 2391 → 2381/2382/2383; 181 s, committed
+artifacts untouched); **V2 PASS-GATE passed before any grading** (1872 anchor
+recomputed fresh: χ = 0.03934466, m_s = 7.7638 MeV, R_s = 25.4164 fm, calibration
+band 6.2–24.7 MeV; §17 decomposition reproduced: ξ/R_s = 6.3×10³⁹, gapped-channel
+leak exponent −6.3×10³⁹ at r = R_H; the gapless side's geometric core reproduced as
+a known limit — the first-shell icosahedron IS a spherical 5-design at machine
+precision for ℓ = 1–5 and is NOT a 6-design, max ℓ=6 deviation 1.6×10⁻²); V3 3/3
+(independent algebraic path χ = 1/(6(2φ+1)); m_s·R_s = ħc exact; ℓ=6 deviation
+persists under an independent seed); V4 zero tunables (inputs: φ, d_Γ = 2,
+V_cage = 12, r_c = 1 fm SF-5/J2, window §34.1, ħc — all registered; 0865 held);
+V5 no cache opened, output only `code/2399_results.json`.
+
+**THE DERIVED ANSWER (the contract's Q4a deliverable):**
+
+- **L1 (registered — METH-CHIR-CONT-1, Capotauro v2.0):** the residual-channel
+  vertex on a Sea qDP's first shell is a Wigner–Eckart **matrix element — an
+  amplitude-level object**: g_res/g_color = |χ_sub|·d_Γ/V_cage = φ⁻³·(2/12) = χ.
+  One power of χ **per vertex**; its square governs probabilities. Universal data
+  (φ⁻³, 2, 12) registered and verified at the three Capotauro v2.0 sectors.
+- **L2 (hermiticity):** perceive-side and source-side matrix elements of the same
+  channel operator are equal in magnitude — every leg of a closed response loop in
+  the residual channel carries χ once.
+- **L3 (the registered J1/1864 linear-screening baseline):** the static gap is the
+  channel-diagonal polarization, m_c² = Π_c(0) — a two-point function with exactly
+  **two** vertex insertions (perceive + re-source per Sea response cycle).
+- **THEOREM:** Π_res/Π_color = (g_res/g_color)² = χ² ⟹ **m_s = χ·√Π_color =
+  χ·(ħc/r_c) = 7.764 MeV ⟹ R_s = r_c/χ = 25.42 fm — the gap is LINEAR in χ**, with
+  the colour anchor √Π_color = ħc/r_c the SF-5 empirical confinement input (J2).
+- **COROLLARY (√χ EXCLUDED, not merely disfavored):** m_s = √χ·ħc/r_c requires
+  Π_res = χ·Π_color — one power of χ in the bubble — i.e. either a
+  **probability-level** registration of χ (contradicts METH-CHIR-CONT-1) or
+  **asymmetric legs** (contradicts L2 hermiticity). Not constructible from the
+  registered primitives. Numerically the √χ point lands at R_s = 5.04 fm, outside
+  [20, 51], reproducing the pre-registered kill value — the kill branch was armed
+  and did not fire.
+- **Channel decomposition exact:** the |SSV| scalar stays gapless because its
+  restoring average vanishes at **symmetry level** (5-design, 1107–1108 CLOSED
+  input — zero legs to suppress), while the colour-residual channel gaps at χ² in
+  the bubble. Same mechanics, two channels; §17's target discharged as derived
+  rather than pinned. **Route B's "numerological until derived" label (§3) is
+  hereby lifted; Route C stays killed (§34.3 C2).**
+
+**Named pins (recorded, not smoothed; none straddles — no (c)-trigger):**
+**PIN-Q4a-1:** L3 inherits the registered J1/1864 linear-screening baseline (the
+campaign's standing footing; the formal PCD → linear-response bridge remains the
+FP-side debt, not new freedom introduced here). **PIN-Q4a-2:** the O(1)
+channel-geometry coefficient c in R_s = c·r_c/χ is unpinned; window tolerance
+c ∈ [0.787, 2.007] contains c = 1 with margin; a √χ rescue needs c ≥ 3.97 — not an
+O(1); the two orders are cleanly separated by the window. **PIN-Q4a-3:** the r_c
+spread 0.85–1.0 fm (J2, untagged) gives R_s ∈ [21.60, 25.42] fm — in-window end to
+end.
+
+**GRADING (mechanical, pre-registered §34.12): Q4a LANDS on the branch-(b) track —
+linear order derived, R_s = 25.42 fm IN-DEMAND, kill not triggered.** Q4b (the
+vertex class derived, S vs V-t) is now unblocked by this record and opens next
+session per the contract's ordering; **the (c) HOLD on the vertex class stands**
+until Q4b derives it or a kill moots it. Out-of-scope guard held this session: no
+Q4b pre-work, no class adoption, no theorem registration, no DAMIC re-pin, R2 lane
+untouched. Artifacts: `code/2399_ss43_q4a_response_order.py`,
+`code/2399_results.json`; registry `frontier_sectors/SS.md` 2399 block;
+`reasoning/2399.md` (verbatim, at-patch).
