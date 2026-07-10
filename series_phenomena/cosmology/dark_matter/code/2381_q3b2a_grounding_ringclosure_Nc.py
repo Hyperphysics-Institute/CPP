@@ -145,10 +145,25 @@ try:
         if not (isinstance(v, list) and len(v) == 13
                 and all(isinstance(x, (int, float)) and x >= 0 for x in v)):
             bins_ok = False
-    check("V5 cache", schema_ok and bins_ok and n_keys == 336,
-          f"{n_keys} keys (expect 336); schema N,sign,S_c,eps_th; 13 non-negative "
-          f"bins each; N in [{min(Ns)},{max(Ns)}], signs {sorted(signs)}, "
-          f"S_c {sorted(scs)}, eps_th {sorted(eps)}")
+    # INVARIANT FORM (repaired Patch 2390; was an exact n_keys == 336 pin,
+    # falsified by the cache's own registered growth mode -- 2383 committed
+    # above-floor extension points with the DM-WARM-2389 handover, and
+    # SS43-Q1 fine-wall bisection appends more by contract. The protected
+    # content is: (i) the FULL floor eps_th bracket present -- 32 N x 2
+    # signs x 5 eps_th at S_c = 0.012 = 320 keys, what every floor-
+    # robustness read depends on; (ii) valid 13-bin schema for EVERY key;
+    # (iii) count monotone >= the 336-key state this battery was fixed at.)
+    floor_expected = {"%d,%s,0.012,%g" % (N, s, e)
+                      for N in range(1, 33)
+                      for s in ("attractive", "repulsive")
+                      for e in (0.02, 0.1, 0.25, 0.5, 1.0)}
+    floor_ok = floor_expected <= set(cache)
+    check("V5 cache", schema_ok and bins_ok and floor_ok and n_keys >= 336,
+          f"{n_keys} keys (>= 336; growth = registered above-floor/fine-wall "
+          f"extensions); floor bracket complete (320/320); schema "
+          f"N,sign,S_c,eps_th; 13 non-negative bins each; "
+          f"N in [{min(Ns)},{max(Ns)}], signs {sorted(signs)}, "
+          f"eps_th {sorted(eps)}")
     print("   NOTE: semantic cross-check (eps_th=1 reproducing the stored 2366b")
     print("         viol=3/642.219095) lives in the summed-criterion machinery and")
     print("         is re-asserted when that channel runs in Q3b-2c -- not duplicated here.")
