@@ -763,3 +763,25 @@ retry recommendation is DISCHARGED BY EVENTS; **updated recommendation: CLOSE
 at 3/5.** D2–D4 stand on the 3/5 tally. Supplement + verbatim Return C:
 `conv001_2026-07_arc2381_2383_returns_adjudication.md` §S1–S5. **NO VERDICT
 MOVED** pending D1–D4. Reasoning: `reasoning/2386.md`.
+
+---
+
+## ROUND 2384 CLOSED — ARC PANEL-VERIFIED; Q3c OPEN; D4 HELD FOR EXPLICIT ATTESTATION (Patch 2387, 9 July 2026)
+
+**Founder verbatim:** *"Approve D1-D4 if you approve. If you want a statement,
+tell me what needs to be said. I don't know what is being requested of me."*
+**Entered on founder delegation:** D1 round CLOSED at 3/5; D2 the 2381–2383 arc
+**PANEL-VERIFIED** (3-seat coverage, one re-executing seat, zero refutations) —
+**Q3c OPENS** on the inherited target; D3 **R1 ratification CONFIRMED** (3×
+RATIFY) — the 2380(B2) flag discharged. **D4 HELD, not entered, on the worker's
+own judgment:** Clause 1 attestation must be personal and informed; the founder's
+same message disclaims knowing what was requested, so the blanket delegation is
+not accepted for that one item. Deferral costless ((d′) operative only
+post-registration); enters on the founder's explicit yes. **Scope guard on D2:**
+PANEL-VERIFIED ≠ registered — the derived family is not the registered successor
+branch until Q3c pays rent (or an explicit earlier founder decision).
+**Next: Q3c opening move = OPEN-SS-43** (mechanism identified, campaign file
+standing; delivers R_s + the sign — the cheapest decisive leg), with the
+OPEN-FP-SF-2-η root block (absolute κ, E_bond + the F-A1 constancy theorem) as
+the long pole behind it. Entries: adjudication doc §ADJUDICATION ENTRIES.
+Reasoning: `reasoning/2387.md`.

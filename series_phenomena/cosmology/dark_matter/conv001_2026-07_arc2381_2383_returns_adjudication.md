@@ -445,3 +445,40 @@ Re-ran vs audited: 2381 — re-ran the grounding script; verified battery 6/6.
 results; spot-checked XQC ρ* calculations for N6-dominant members and anchor anneal
 outputs; verified the cache regression and sign extraction logic. All checks align
 with the reported outcomes.
+
+---
+
+# ADJUDICATION ENTRIES (Patch 2387, 9 July 2026)
+
+**Founder verbatim, on the record:** *"Approve D1-D4 if you approve. If you want a
+statement, tell me what needs to be said. I don't know what is being requested of me."*
+
+**D1 — ENTERED: ROUND CLOSED at 3/5** (founder approval by explicit delegation to the
+worker recommendation; three complete convergent-VERIFIED returns, one with independent
+re-execution; both non-returns carry recorded structural causes).
+
+**D2 — ENTERED: THE 2381–2383 ARC IS ADJUDICATED PANEL-VERIFIED** (3-seat coverage,
+one re-executing seat, zero refutations; founder approval by explicit delegation).
+Consequence: **Q3c OPENS** on the inherited target (r ≈ 8.5–12; N_stab ≈ 3.3–7.3 + the
+F-A1 substrate-constancy theorem demand; S_c at the island floor; R_s ≈ 20–50 fm;
+Λ thresholds; 8.45 GeV dominant; sign ARGUMENT-LEVEL per F-A2). Scope guard:
+PANEL-VERIFIED is not registration — the derived family is NOT registered as the
+successor branch by this entry; that registry-grade move follows Q3c's rent (or an
+explicit earlier founder decision).
+
+**D3 — ENTERED: R1 RATIFICATION CONFIRMED** (3× RATIFY, 0 objections; founder approval
+by explicit delegation). The panel-ratification flag carried by the 2380(B2) ε_th
+addendum since execution is DISCHARGED; the 2369 kill's conditionality clause stands
+ratified.
+
+**D4 — HELD, NOT ENTERED.** The blanket delegation is NOT accepted for this item, on
+the worker's own judgment: D4 amends the founder-attested Clause 1, whose add-only rule
+exists precisely so that exit conditions carry the founder's personal, informed
+attestation — and the same founder message states *"I don't know what is being
+requested of me."* An attestation entered under those words would be an attestation in
+name only. The deferral is costless: (d′) becomes operative only once the derived
+family is registered (post-Q3c). The exact proposed sentence stands in §5 and in the
+worker's plain-language explanation to the founder; D4 enters on the founder's explicit
+yes (or edited text), dated.
+
+**Round 2384 is CLOSED.** Items outstanding from the round: D4 only.
