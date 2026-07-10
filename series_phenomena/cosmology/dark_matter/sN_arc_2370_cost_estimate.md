@@ -811,3 +811,19 @@ core; pre-registered √χ kill ⇒ 5 fm now load-bearing) → **Q5** sign synth
 corridor re-grade. Scoped, NOT launched; recommended launch: SS43-Q1 next
 session. Campaign file `OPEN-SS-43_Rs_derivation.md` §34; reasoning
 `reasoning/2388.md`.
+
+---
+
+## HANDOVER REGISTERED — DM-WARM-2389 → SS43-Q1 (Patch 2389, 9 July 2026)
+
+**Founder verbatim: "Initiate handover protocol for SS43-Q1."** Warm-launch
+keyword **DM-WARM-2389** registered; handover = campaign file §34 (re-aim +
+collisions + stage plan + Q1 contract, self-contained) + `2383_results.json` +
+`2383_joint_couplings.json` + the committed unit cache + the 1879 bisection
+engine + this doc's §Q3b-2c→§2388 context. **SS43-Q1 pre-registered:** fine
+S_c* wall for the six joint members (ε_th = 1, both signs, ρ ∈ {0.2, 0.3};
+tolerance 0.001; cache-extending; verify battery V1–V4 fixed in the contract) —
+turns "floor-anchored" into the quantitative landing window [0.012, S_c*] that
+collision C1's derivation must hit. One session. Next session opens on the
+keyword; the founder's verbatim go completes the launch. Reasoning:
+`reasoning/2389.md`.

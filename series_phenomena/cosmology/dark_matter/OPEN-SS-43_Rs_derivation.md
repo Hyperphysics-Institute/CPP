@@ -623,3 +623,36 @@ Clause 1(a) binds this leg directly: if the derivation excludes every suite-pass
 the hypothesis takes the exit. The newly attested (d′) binds post-registration at 8.45 GeV.
 Every stage above is a registered-primitives computation or derivation; no dark-sector
 freedom is introduced at any stage (0865 held).
+
+### 34.6 SS43-Q1 CONTRACT + WARM-LAUNCH REGISTRATION (Patch 2389, 9 July 2026)
+
+**Warm-launch keyword: DM-WARM-2389.** Founder verbatim: "Initiate handover protocol for
+SS43-Q1."
+
+**Handover set (self-contained):** this file §34 (the re-aim, collisions, stage plan, and
+this contract); `code/2383_results.json` (member weights + XQC ρ* rows) +
+`code/2383_joint_couplings.json` (the six joint members); the committed
+`code/2379_unit_cache.json` (360 keys); the bisection engine
+`code/1879_xqc_recomputation.py`; arc-doc context = `sN_arc_2370_cost_estimate.md`
+§Q3b-2c through §Patch-2388.
+
+**SS43-Q1 pre-registered scope (the fine wall — the 2383 deferred debt):**
+pipeline-level S_c* bisection for the six 2383 joint members (N6-dominant class) at
+ε_th = 1, BOTH signs, ρ ∈ {0.2, 0.3}; floor-bracket ε_th robustness read from the cache
+(already computed). Output: the quantitative landing window **[0.012, S_c*(member, sign,
+ρ)]** — the numeric target collision C1's derivation (SS43-Q2) must hit. Bisection
+tolerance 0.001 in S_c; every fresh pipeline point appended to the committed cache.
+
+**Verify battery (binding):** V1 the 2381/2382/2383 batteries green underneath
+(subprocess); V2 bisection bracket endpoints reproduce the cached grid verdicts
+(alive at 0.012, dead at 0.035, per member/sign/ρ); V3 worst-ratio monotone
+non-decreasing in S_c along each bisection path (the physical sanity that makes
+bisection valid); V4 cache integrity after extension (schema + count).
+
+**Scope guard:** no verdict moved; the wall is an input to Q2, not a grading. Expected
+cost: one session (~170 pipeline calls ≈ 10 min compute + write-up). KILL statement
+carried from §34.4: the window IS C1's target; if Q2's derived ring suppression lands
+S_c above every member's S_c*, the family gate-dies fully derived.
+
+**Next session opens with SS43-Q1 on the keyword; the founder's verbatim go completes
+the launch.**
