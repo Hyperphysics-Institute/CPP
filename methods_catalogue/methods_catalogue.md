@@ -104,6 +104,14 @@
 
 **Example applications.** LSP′ = $A \oplus T_1 \oplus H$ = 9 = the lattice's full protected content; no fourth rung (Patch 1123). The icosahedral-vs-cubic discriminant: under $O$, $l=2 \to E \oplus T_2$ (splits 2+3), under $I$, $l=2 \to H$ intact — the basis of PRED-O-37's lattice-discriminant falsifier (Patch 1120).
 
+### METH-L1-013: Registration-level response-order counting
+
+**Description.** To decide the order at which a suppression constant enters a response function, ask first at what LEVEL the constant is REGISTERED — amplitude (per-vertex matrix element) or probability (per-process) — then count vertex insertions in the response's structure under hermiticity (perceive-side and source-side legs of the same channel operator equal in magnitude). The order is then forced: a two-insertion polarization carries the *square* of an amplitude-registered constant; alternative orders require either re-registering the constant at a different level or asymmetric legs — both contradictions of registered structure, making the excluded orders NOT CONSTRUCTIBLE rather than merely disfavored. Extension: the same registration audit answers tensor-character questions — the registered datum's convention parity (e.g. a $\zeta$-ODD operator placement, sign convention-relative) combined with the registered transport structure fixes what a vertex sources under composition, with the excluded composition classes carrying the same not-constructible status.
+
+**Canonical citation.** SS43-Q4a response-order derivation (`series_phenomena/cosmology/dark_matter/code/2399_ss43_q4a_response_order.py` + `reasoning/2399.md`, Patch 2399).
+
+**Example applications.** The linear-vs-$\sqrt{\chi}$ gap order (Patch 2399: $\Pi_{\rm res}/\Pi_{\rm color} = \chi^2$, $R_s = 25.42$ fm in-demand; $\sqrt{\chi}$ excluded by registration). The vertex-class derivation (Patch 2401: Class S excluded — an unsigned per-unit source requires probability-level registration or a $\zeta$-EVEN operator, both contradicting the datum; Class V-t derived). The Q4c protected/residual decomposition (Patch 2403, the 2400 handover's named recurrence trigger — this entry registered catalog-first at that session): first order exactly protected for every closure-preserving configuration; the residual enters at second order through closure-breaking virtual states.
+
 ---
 
 ## Layer 2 — Methodological disciplines
@@ -199,6 +207,22 @@
 
 **Example applications.** The $e=0.6$ test + $\tau=0$ counterfactual: a reviewer testing only circular waveforms would miss the completion's load-bearing role (Patch 1125). The eccentric energy ledger closing the operational-energy objection where it could still hide (TT flux vs full Peters $f(e)$ decay, ratio 1.000640; Patch 1127). Sister instance in the chirality lane: 400 adversarial $\eta$-dependent rules against the refined-chord bound (CAPACITY-1 closure, Patch 0828 — convergent independent deployment).
 
+### METH-L2-012: Strict-point experimental-curve gate
+
+**Description.** When grading a prediction against a measured exclusion curve whose value at the relevant parameter point is UNPINNED (e.g. a mass at or below the experiment's published coverage edge), grade against the STRICTEST point of the entire registered curve. The logic is deliberately one-way: a PASS at the strictest point is insensitive to the unpinned value (edge-independent, no new data pin needed); a FAIL below the published coverage edge is EDGE-CONDITIONAL and is recorded as a named pin, never promoted to an unconditional kill. The discipline prevents both false kills (over-extending a curve beyond its coverage) and false survivals (under-reading it), and separates in-coverage failures (binding) from edge-conditional ones (pinned) so a branch verdict can be rested only on the former.
+
+**Citation.** SS43-Q3 ring-composition ladder (`series_phenomena/cosmology/dark_matter/code/2395_ss43_q3_ring_ladder.py` + campaign file §34.11 named-pin 1, Patch 2395; LZ_STRICT = 9.2e-48 gate; carried as a registration candidate at the 2396/2398 handovers with the Q4c re-confrontation as the named recurrence — fired at Patch 2402).
+
+**Example deployment.** The 2395 branch verdict deliberately rested on DAMIC (squarely in-coverage) with the N = 4–6 LZ failures recorded edge-conditional and N = 7–8 unconditional; reused verbatim at the Q4c residual re-confrontation (Patch 2403).
+
+### METH-L2-013: Differential-vs-total cross-section channel discipline
+
+**Description.** For forward-peaked interactions (light mediators, range ≫ target nuclear size), assign each experimental channel the cross-section OBJECT its physics actually gates. DETECTION channels integrate the differential spectrum $d\sigma/dE_R$ above the instrument threshold, halo-folded — total σ counts the forward-peak scatters that deposit below threshold and overstates the detectable rate by orders. SHIELDING/overburden ceilings use TOTAL σ — any collision degrades kinetic energy regardless of the recoil it would deposit in a detector, so the threshold is irrelevant there. Mixing the two objects across channel types silently flips verdicts in either direction; the discipline is to declare the object per channel before computing.
+
+**Citation.** SS43-Q3 DAMIC-shallow treatment vs rock-overburden convention (`series_phenomena/cosmology/dark_matter/code/2395_ss43_q3_ring_ladder.py` + `reasoning/2395.md` §3, Patch 2395; carried as a registration candidate at the 2396/2398 handovers with the Q4c re-confrontation as the named recurrence — fired at Patch 2402).
+
+**Example deployment.** The 2395 DAMIC kill of the envelope end (3.4e7–1.5e8 events above the 550 eV threshold vs N90 = 123) was computable only differentially, while the same species' shielding columns were graded by total σ per the registered 1880 convention; reused verbatim at the Q4c residual re-confrontation (Patch 2403).
+
 ---
 
 ## Layer 3 — Heuristic strategies
@@ -254,3 +278,5 @@
 **Example deployment.** A3′: "by necessity, not by convenience" — the registration language is licensed precisely because the three routes were closed independently before the axiom was drafted. Anticipated applications: any future would-be d.o.f. (dark-sector carriers, additional packet content) must clear the same three-route closure before registration; conversely, a single closed route does NOT license an axiom (the Weinberg–Witten evasion at Patch 1115 made the emergent route *permitted*, and 1116 still had to test whether it was *realized*).
 
 **End of seed catalog (totals corrected and updated at Patch 1133).** Total entries: 12 Layer 1 (METH-L1-001 through METH-L1-012) + 11 Layer 2 (METH-L2-001 through METH-L2-011) + 6 Layer 3 (METH-L3-001 through METH-L3-006) = **29 entries**. *Footer-count correction note (symmetric honesty, Patch 1133):* the previous footer read "8 Layer 2 … = 20 entries" but METH-L2-009 had been added at Patch 0540 without a footer update — the pre-1133 actual count was 21 (7+9+5), not 20. METH-L3-004 was refilled at Patch 0780 with a physics-scoped derivation-strategy entry (the slot was vacated at Patch 0462 and reserved for physics-scoped use; this entry honors that reservation). **METH-L3-006 was filled at Patch 1133** with a physics-scoped derivation-strategy entry (the multi-assault necessity standard), honoring the Patch 0462 reservation; METH-L3-007 remains vacated and reserved for a future *physics-scoped* entry. The METH-L2-007 and METH-L2-008 slots were refilled with physics-scoped entries at Patch 0464 from the Session 134 Tier-4 audit. Spin-2-arc additions at Patch 1133 (SR-2 pre-draft C14 audit): METH-L1-008..012 (3 NEW + 2 ADAPTED), METH-L2-010..011 (2 NEW), METH-L3-006 (1 NEW), plus example-application updates to METH-L3-004. Full catalog completion (back-fill from earlier closure arcs: SF-4, SS-9, SM-line, EW-line) queued as OPEN-ORG-016.
+
+**Patch 2402 additions (SS43 DM-lane carried triggers fired, catalog-first per the 2400 handover's binding note):** METH-L1-013 (registration-level response-order counting — the named METH-L1 trigger, fired on the Q4c residual-order derivation's confirmed reuse), METH-L2-012 + METH-L2-013 (the 2396/2398 carried strict-point experimental-curve gate and differential-vs-total σ disciplines — both reused by the Q4c ladder re-confrontation). Updated totals: **13 Layer 1 + 13 Layer 2 + 6 Layer 3 = 32 entries** (METH-L3-007 remains vacated and reserved).
