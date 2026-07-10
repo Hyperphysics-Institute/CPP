@@ -671,3 +671,31 @@ verification round on the 2381–2383 arc** (stability floor, cascade, both
 channel grades, sign extraction, disclosed amendments), carrying the
 flagged 2380(B2) ratification + 2378 seat-hygiene mapping. Founder's desk:
 round go/no-go; block EMPTY.
+
+---
+
+## PANEL ROUND OPENED — COMBINED VERIFICATION + RATIFICATION ON THE 2381–2383 ARC (Patch 2384, 9 July 2026)
+
+**Founder verbatim: "Please recommend, then proceed. Panel review if
+recommended."** Worker recommendation (from 2383) executed: verification
+round BEFORE any Q3c investment or registration — the 2375 precedent binds.
+Brief: `conv001_2026-07_arc2381_2383_verification_brief.md`. Five items:
+**V1** the epoch-free stability floor (N_stab = c·κ/(ℓ_rung·E_bond),
+identical-scaling cancellation); **V2** the cascade + the r³ unit
+conversion + the dilution guarantee + the QSS pair channel; **V3** XQC
+channel integrity (cache regressions; exact ρ*; the disclosed above-floor
+ε_th deferral; the floor-anchoring finding); **V4** anchor channel +
+disclosed amendments + containment (joint structure stated — the XQC
+algebra does the gating); **V5** the sign extraction (registered 1858
+attract-only E_qq → attractive default) + the composition-specificity
+diagnosis of 2374c's "repulsive or bust". Halting: REFUTED on V1–V3 halts
+the survival grading; V5 REFUTED reverts to (c)-repulsive-conditional-only.
+Ratifications: **R1** the 2380(B2) ε_th addendum (flag discharged this
+round); **R2** opinion-only on the Clause-1(d) exposure (dimer-regime
+2.8 GeV names a dead region; derived family sits at 8.45 GeV; add-only,
+founder attests). Seats: five, 2363 seat-blank relay + the 2378 seat-hygiene
+fix (returns open with the founder-assigned label; founder records
+window → return); Copilot gets pasted contents AND raw-format links
+(founder-directed, no blob URLs). **NO VERDICT MOVED.** Reasoning:
+`reasoning/2384.md`. Founder's desk: paste the presentation block to the
+five seats; the adjudication block opens on returns.
