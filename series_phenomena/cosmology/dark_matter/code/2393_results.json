@@ -1,0 +1,147 @@
+{
+ "contract": "sec 34.8 SS43-Q2 (Patch 2392; DM-WARM-2392)",
+ "structure": {
+  "4": {
+   "Rg_fm": 0.8131727983645297,
+   "Rg_over_Rs": 0.03199400964462647
+  },
+  "5": {
+   "Rg_fm": 0.9782484296048458,
+   "Rg_over_Rs": 0.03848885471152689
+  },
+  "6": {
+   "Rg_fm": 1.1500000000000001,
+   "Rg_over_Rs": 0.045246362354126365
+  },
+  "7": {
+   "Rg_fm": 1.3252398008034296,
+   "Rg_over_Rs": 0.052141113246314964
+  },
+  "8": {
+   "Rg_fm": 1.5025474096078328,
+   "Rg_over_Rs": 0.0591172213472782
+  }
+ },
+ "V2_rod_limit": {
+  "class_S_order": 0,
+  "class_Vt_order": 0,
+  "slope_Vt": 0.10551115823629864,
+  "agreement_with_D5Aprime": true,
+  "escalation": null
+ },
+ "class_S": {
+  "('((6, 1.0),)', 'attractive')": {
+   "rho_star_ring": 0.03936683087766533,
+   "sc_equiv": 0.035591796875,
+   "rel": "="
+  },
+  "('((6, 1.0),)', 'repulsive')": {
+   "rho_star_ring": 0.07704920588138121,
+   "sc_equiv": 0.035591796875,
+   "rel": "="
+  },
+  "('((5, 0.1662), (6, 0.7809), (7, 0.0529))', 'attractive')": {
+   "rho_star_ring": 0.035442079530098966,
+   "sc_equiv": 0.035591796875,
+   "rel": "="
+  },
+  "('((5, 0.1662), (6, 0.7809), (7, 0.0529))', 'repulsive')": {
+   "rho_star_ring": 0.07157260940548432,
+   "sc_equiv": 0.035591796875,
+   "rel": "="
+  },
+  "('((6, 0.658), (7, 0.3264), (8, 0.0156))', 'attractive')": {
+   "rho_star_ring": 0.04552795897705663,
+   "sc_equiv": 0.035591796875,
+   "rel": "="
+  },
+  "('((6, 0.658), (7, 0.3264), (8, 0.0156))', 'repulsive')": {
+   "rho_star_ring": 0.08704084598019582,
+   "sc_equiv": 0.035591796875,
+   "rel": "="
+  },
+  "('((4, 0.0119), (5, 0.2762), (6, 0.5428), (7, 0.1572), (8, 0.0119))', 'attractive')": {
+   "rho_star_ring": 0.03332513797256542,
+   "sc_equiv": 0.035591796875,
+   "rel": "="
+  },
+  "('((4, 0.0119), (5, 0.2762), (6, 0.5428), (7, 0.1572), (8, 0.0119))', 'repulsive')": {
+   "rho_star_ring": 0.0688452604654981,
+   "sc_equiv": 0.035591796875,
+   "rel": "="
+  },
+  "('((4, 0.0273), (5, 0.4146), (6, 0.4741), (7, 0.084))', 'attractive')": {
+   "rho_star_ring": 0.02881083692754808,
+   "sc_equiv": 0.035591796875,
+   "rel": "="
+  },
+  "('((4, 0.0273), (5, 0.4146), (6, 0.4741), (7, 0.084))', 'repulsive')": {
+   "rho_star_ring": 0.06141196618780467,
+   "sc_equiv": 0.035591796875,
+   "rel": "="
+  },
+  "('((4, 0.0145), (5, 0.5953), (6, 0.3767), (7, 0.0135))', 'attractive')": {
+   "rho_star_ring": 0.02620037485776068,
+   "sc_equiv": 0.035591796875,
+   "rel": "="
+  },
+  "('((4, 0.0145), (5, 0.5953), (6, 0.3767), (7, 0.0135))', 'repulsive')": {
+   "rho_star_ring": 0.05677852804453765,
+   "sc_equiv": 0.035591796875,
+   "rel": "="
+  }
+ },
+ "class_S_sc_span": [
+  0.035591796875,
+  0.035591796875
+ ],
+ "class_S_grading": "GATE-DEATH FULLY DERIVED",
+ "class_Vt": {
+  "registered_convention_sc": 0.0,
+  "identity": "tangent.radius = 0 exact (A2b) + closed-loop telescoping (A2a)",
+  "envelope": {
+   "4": {
+    "ell_v": 25.873206095978823,
+    "rod_env_consistency": 0.7311868427766846,
+    "rho_star_ring_env": 14.435850740326481,
+    "sc_equiv": 0.0013886718750000001,
+    "rel": "="
+   },
+   "5": {
+    "ell_v": 26.181696149031975,
+    "rod_env_consistency": 1.0549392491284724,
+    "rho_star_ring_env": 70.95075634043543,
+    "sc_equiv": 0.001,
+    "rel": "<="
+   },
+   "6": {
+    "ell_v": 26.44509868284559,
+    "rod_env_consistency": 0.7479668018388295,
+    "rho_star_ring_env": 104.94538669868679,
+    "sc_equiv": 0.001,
+    "rel": "<="
+   },
+   "7": {
+    "ell_v": 26.756016311273413,
+    "rod_env_consistency": 1.1760144202983283,
+    "rho_star_ring_env": 112.51552590008714,
+    "sc_equiv": 0.001,
+    "rel": "<="
+   },
+   "8": {
+    "ell_v": 27.02957424864529,
+    "rod_env_consistency": 1.345691342251604,
+    "rho_star_ring_env": 139.14313875923088,
+    "sc_equiv": 0.0013886718750000001,
+    "rel": "="
+   }
+  },
+  "envelope_sc_max": 0.0013886718750000001
+ },
+ "class_Vt_grading": "WHOLE TABLE LANDS (all 23 walled cells)",
+ "below_floor_flag": "class V-t landing sits below island floor 0.012 (1891); LZ/shielding recompute at collapsed coupling LOAD-BEARING for Q3; J12'-a attaches",
+ "dichotomy": "registered primitives underdetermine the vertex class between S and V-t; both reproduce the two D5-A' data points; discrimination ground = the ruling's own mechanism language (coherence requires oriented sourcing) -> V-t primary, CONDITIONAL on D5-A' as the whole S_c framework is; founder adjudication invited",
+ "fresh_flat_calls": 115,
+ "ring_form_calls": 20,
+ "battery_failures": []
+}

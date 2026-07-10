@@ -776,3 +776,77 @@ from closure ⇒ S_c(ring) = 0.035 > 0.0221 ⇒ the family gate-dies fully deriv
 
 **Next session opens with SS43-Q2 on the keyword; the founder's verbatim go completes
 the launch.**
+
+### 34.9 SS43-Q2 EXECUTED — the ring multipole pass lands a DICHOTOMY, graded both ways (Patch 2393, 10 July 2026)
+
+**Launch:** DM-WARM-2392 keyword + founder verbatim go ("Please proceed as per your
+recommendation"). Contract §34.8 executed as pre-registered. Script
+`code/2393_ss43_q2_ring_multipole.py`; results `code/2393_results.json`; reasoning
+`reasoning/2393.md` (verbatim, at-patch — the full chain including a retracted
+refutation and a rejected measured-coefficient route). **Battery 5/5 PASS** (V1
+underneath 2391 4/4 transitive; **V2 rod-limit PASS — no escalation**; V3 12/12
+spanning cells at fresh pipeline calls; V4 twelve coefficients traced, 0865 held;
+V5 cache 475 byte-identical, +115 schema-pure flat appends, 20 ring-form calls
+kept out of the cache by schema).
+
+**The derived answer:** the registered primitives fix the machinery's boundary
+conditions (the two D5-A′ data points: rod source side power-0; nucleon side
+power-1) but **underdetermine the per-unit vertex class between exactly two
+survivors** — both reproduce both data points:
+
+- **Class S (scalar per-qCP additive — the registered 1879 line-fold's own
+  composition law; 1858 unipolarity: magnitude cannot cancel by arrangement).**
+  Closure supplies NO suppression: the ring is a single-shell fold at
+  R_g = d/(2 sin(π/N)) (J8 pin d = 1.15 fm), and the XQC-equivalent flat
+  **S_c = 0.0356 for every member and both signs** (form factor ≈ +0.6% on the
+  ruling scale). **Grading: > 0.0221 → GATE-DEATH FULLY DERIVED** (the §34.4
+  kill, landed by the registered model's own law).
+- **Class V-t (chain-axis vector — the D5-A′ ruling's mechanism language
+  "coherent cage"/"lacking cage coherence" made operational; the chain/rung axis
+  is the rod's only registered coherence axis, 2381; no torsional lock registered
+  → no transverse component admitted, 0865).** Two EXACT identities: closed-loop
+  telescoping (Σ edge-differences = 0 identically; verified at machine precision)
+  and orientation-average orthogonality (⟨t̂·∇Y⟩ ∝ t̂·x̂ = 0 exactly on the ring —
+  tangent ⊥ radius) — under the registered fold convention the ring
+  **decouples IDENTICALLY, near zone included**; the open-chain limit telescopes
+  to END-SOURCED coupling: **the free ends ARE the coupling and closure removes
+  them** — the contract's named question answered in mechanism. Conservative
+  |V|-envelope bracket (ℓ_v fixed by deterministic rod-limit integral matching,
+  one condition one parameter; rod consistency ×0.73–1.35 reported not fitted):
+  **equivalent flat S_c ≤ 0.0014.** **Grading at both bracket ends: ≤ 0.0120 →
+  WHOLE TABLE LANDS (all 23 walled cells).**
+
+**V2 (escalation-typed): PASS.** Both classes give source-side power-0 in the
+open-chain limit (Class V-t: end-sourced, saturating, log-log slope 0.106 — no
+suppression power) → total = FIRST power = D5-A′. No 1880 collision. Adjacency
+recorded against the 1880 debt (not discharged): under V-t the rod's power-0 is
+END-sourced O(N⁰), not bulk-∝N — a substrate-level discriminant for the future
+vertex derivation.
+
+**Carried flags (no verdict moved — scope guard held):**
+- **Below-floor flag (Class V-t):** the landing sits BELOW the island floor 0.012
+  (1891 trim). Rod-era below-floor kills (DAMIC-unshielded, LZ dead zone) were
+  derived for the flat long-range form; a collapsed/contact-range coupling is a
+  different scattering object. **The LZ/shielding/DAMIC recompute at the derived
+  coupling is Q3's registered job and is now LOAD-BEARING on this branch.**
+  J12′-a attaches.
+- **Anchor-channel consequence (for C4/Q5):** under V-t the ring–ring E_qq vertex
+  collapses too — the dwarf anchors fall to the E_ee coat channel (repulsive,
+  measured, 1868–1871), CONSISTENT with 2383's six repulsive joint points, §34.7's
+  repulsive-walls-are-loosest finding, and C4's own anticipation.
+- **1858 reconciliation (stated in full in the reasoning):** the telescoping is a
+  coherence projection of the VERTEX, not sign-cancellation of the FORCE; E_qq
+  remains attract-only between nonzero-vertex bodies; 1858 stands.
+- **Rejected route recorded:** the 2383 per-species g² anneal pass-points span
+  eight orders of magnitude — an existence witness, not a CONV-004 measurement;
+  using them to pin the vertex would manufacture precision. Consistency brackets
+  only; both branches sit inside the admitted region.
+
+**FOUNDER'S DESK — the class adjudication (the campaign's sharpest open object):**
+(a) adopt Class V-t (the ruling's own mechanism language): whole wall cleared
+fully derived; survival shifts to Q3's below-floor recompute + Q5's coat-channel
+sign synthesis; (b) adopt Class S (the pipeline's own composition law): gate-death
+fully derived — the third kill via the D5 lineage; (c) hold the dichotomy open and
+let Q3/Q4 discriminate — Q4's de-novo gap derivation is exactly the substrate
+mechanics that would DERIVE the vertex class. No recommendation smuggled; the
+derivation says the registered primitives genuinely do not decide, and says why.

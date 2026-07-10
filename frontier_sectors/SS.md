@@ -922,6 +922,25 @@ exact-count cache pin → invariant form. **SS43-Q2 (ring multipole pass) regist
 DM-WARM-2392:** derive the closed-ring colour-singlet suppression vs the rod first power from registered
 primitives (0865); grading mechanical against the wall table; kill = derived S_c > 0.0221, fully derived.
 Wall table + reading: campaign file §34.7; results `code/2391_results.json`; reasoning 2390–2392.
+**[Patch 2393, 10 July 2026] SS43-Q2 EXECUTED — THE C1 DERIVATION LANDS A DICHOTOMY, GRADED BOTH WAYS
+(battery 5/5; V2 rod-limit PASS, no escalation):** the registered primitives fix the D5-A′ boundary
+conditions but underdetermine the per-unit vertex class between exactly two survivors. **Class S** (scalar
+per-qCP additive — the registered 1879 line-fold's own law; 1858 unipolarity): closure supplies NO
+suppression — XQC-equivalent S_c = 0.0356 every member/sign → **gate-death fully derived** (> 0.0221).
+**Class V-t** (chain-axis vector — the D5-A′ "coherent cage" mechanism language operational; the rung axis
+the only registered coherence axis, 2381): two EXACT identities (closed-loop telescoping at machine
+precision; tangent⊥radius orientation-average zero) — **the free ends ARE the coupling and closure removes
+them**; ring decouples identically under the registered fold convention; conservative |V|-envelope ≤ 0.0014
+→ **whole 23-cell wall table lands** (≤ 0.0120), with the **BELOW-FLOOR flag carried to Q3** (island floor
+0.012, 1891; LZ/shielding/DAMIC recompute at the collapsed coupling now LOAD-BEARING on this branch;
+J12′-a attaches; ring–ring E_qq collapse pushes the dwarf anchors to the repulsive E_ee coat — consistent
+with 2383's repulsive joint points and C4's anticipation). V2: both classes source-side power-0 in the
+open-chain limit → total first power = D5-A′ (Class V-t rod = END-sourced O(N⁰), recorded as 1880-debt
+adjacency). Rejected route recorded: 2383 per-species g² are anneal pass-points (8 orders scatter), not a
+CONV-004 measurement. **FOUNDER ADJUDICATION INVITED on the class question** (adopt V-t / adopt S /
+hold for Q3–Q4 discrimination); scope guard held, no verdict moved. Cache 475 → 590 (schema-pure);
+script `code/2393_ss43_q2_ring_multipole.py`; results `code/2393_results.json`; campaign file §34.9;
+reasoning 2393.
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's
