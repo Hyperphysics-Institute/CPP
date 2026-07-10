@@ -970,6 +970,30 @@ scattering of a zero-mean vector potential), so this is a derivation demand, not
 bookkeeping rows carried: gate-death over-determined (XQC nviol 2–11 + rock- and DAMIC-shielded at 0.0356).
 Class adjudication stays HELD per (c). Cache 590 → 605 (schema-pure). Script
 `code/2395_ss43_q3_ring_ladder.py`; results `code/2395_results.json`; campaign file §34.11; reasoning 2395.
+**[Patch 2397, 10 July 2026] SS43-Q4 CONTRACT REGISTERED (§34.12, keyword DM-WARM-2397) — the de-novo
+substrate derivation, TRIPLE duty (founder verbatim: "Register the Q4 contract: Please proceed as per
+recommendation."):** ordered cheap-kill ladder Q4a → Q4b → Q4c, each stage graded before the next opens.
+**Q4a** — R_s from substrate mechanics: derive the colour-residual channel gap m_s = χ·(ħc/r_c) = 7.764 MeV
+(linear-in-χ response order, |SSV| scalar gapless — the §17 target standing since 1872), delivering
+R_s = 25.4 fm into the [20, 51] fm demand; pre-registered kill: √χ order ⇒ R_s ≈ 5 fm ⇒ Clause 1(a).
+**Q4b** — the vertex class DERIVED (S vs V-t), not read off D5-A′'s language; binding discriminant: V-t ⇒
+end-sourced O(N⁰) rod sourcing vs bulk ∝ N (2393 adjacency record); must reproduce the rod's registered
+D5-A′ phenomenology; kill: derived S ⇒ family dead fully derived (gate-death §34.9, over-determined §34.11);
+a V-t landing unblocks theorem-registry entry for the two Q2 exact identities. **Q4c** (reached only on V-t)
+— the post-closure residual coupling scale, the fork-resolver: derive order + scale of the true residual
+amplitude after A2a/A2b cancellations (physical expectation: second-order scattering of a zero-mean vector
+potential); graded against the CLOSED 2395 window (≤ envelope/(1.8e7–4.6e7) LZ in-coverage;
+≤ envelope/(5.3e2–1.1e3) DAMIC); re-confrontation via the 2395 generalized ladder, V2 pass-gate re-armed.
+Grading pre-registered three ways before any derivation: (a) any stage kill ⇒ family dead on both classes
+fully derived, Clause 1(a); (b) full landing ⇒ family ALIVE fully derived, Q2 identities register, Q5
+launches, successor registration to founder post-rent; (c) partial/conditional ⇒ named pins, no smoothing,
+founder adjudication before downstream stages. Battery per-session (V1 scratch-copy chain green; V2
+per-stage known-limit PASS-GATES: 1872 anchor / D5-A′ rod phenomenology / 2393 zeros + 2395 rod grid; V4
+0865 held, LZ 9-GeV edge pinnable only by founder-gated CONV-004 amendment; V5 cache + redirected-output
+discipline). Out of scope: Q5 pre-work, early theorem registration, DAMIC re-pin, R2 lane, glossary
+promotion. Weeks-scale; each session closes with the §15 handover. Campaign file §34.12; reasoning 2397.
+NEXT SESSION opens on DM-WARM-2397; the founder's verbatim go completes the Q4a launch.
+
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's

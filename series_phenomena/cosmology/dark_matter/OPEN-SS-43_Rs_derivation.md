@@ -994,3 +994,127 @@ being the fork-resolver. Class adjudication stays HELD per the founder's (c)
 ruling; this record goes to the founder's desk; session-close handover follows the
 reading, per operating_system.md §15. Q5 queues behind Q4; R2 release lane separate
 and untouched.
+
+### 34.12 SS43-Q4 CONTRACT + WARM-LAUNCH REGISTRATION — the de-novo substrate derivation, TRIPLE duty (Patch 2397, 10 July 2026)
+
+**Founder direction:** verbatim: "Register the Q4 contract: Please proceed as per
+recommendation." (on the Priority-1 recommendation of the 2026-07-10 Q3-close
+handover; recorded in `reasoning/2397.md`). This section registers the contract;
+per the standing anti-priority, NO derivation work begins until the next session's
+warm launch completes on the founder's go.
+
+**Warm-launch keyword: DM-WARM-2397.**
+
+**Handover set (self-contained, all under `series_phenomena/cosmology/dark_matter/`
+unless noted):** this file §34 in full (re-aim §34.1–34.5; wall §34.7; dichotomy
+§34.9; Q3 contract §34.10; Q3 record §34.11; this contract); §17 (the de-novo
+target: m_s = χ·ħc/r_c = 7.764 MeV, colour-residual channel gapped, |SSV| scalar
+gapless — standing since 1872); §22 (D5-A′ + derivation debt); `reasoning/2395.md`
+(the residual demand and its physics read); `code/2395_results.json`
+(grading.residual_demand, grading.named_pins, Vt_envelope_end per-N);
+`code/2393_ss43_q2_ring_multipole.py` + `code/2393_results.json` (the two vertex
+classes, the exact identities, the envelope construction);
+`code/2395_ss43_q3_ring_ladder.py` (the generalized ladder — Q4c's re-confrontation
+instrument, V2-gated); `code/1880_d5_sc_landscape.py`; the committed
+`code/2379_unit_cache.json` (605 keys at this registration); arc-doc context.
+
+**SS43-Q4 pre-registered scope — the de-novo gap derivation (§34.4 stage 4),
+carrying TRIPLE duty. From registered primitives only (0865 held; no dark-sector
+freedom; CONV-004 tags wherever a measured quantity enters):**
+
+- **(i) Q4a — R_s from substrate mechanics (the response-order question; the
+  original §34.4 charter):** derive the colour-residual channel gap
+  m_s = χ·(ħc/r_c) — i.e., establish that the response order in the colour-residual
+  channel is LINEAR in χ, with the |SSV| scalar gapless (§17). Deliverable:
+  R_s = ħc/m_s = 25.4 fm landing inside the inherited [20, 51] fm demand (§34.1).
+  **Pre-registered kill (carried unchanged from §34.4): √χ response order ⇒
+  R_s ≈ 5 fm ⇒ outside the demand ⇒ Clause 1(a) exit.**
+- **(ii) Q4b — the vertex class DERIVED (S vs V-t), not read off D5-A′'s ruling
+  language:** the same substrate mechanics that fixes the response order must fix
+  what a per-unit qCP vertex sources — scalar per-qCP additive (Class S) or
+  chain-axis vector (Class V-t). The registered discriminant is available and
+  binding: under V-t the rod's D5-A′ power-0 sourcing is END-sourced O(N⁰), not
+  bulk ∝ N (2393, V2 adjacency record against the 1880 debt) — the derivation must
+  reproduce the rod's registered first-power dipole phenomenology under whichever
+  class it lands. **Pre-registered kill: derived class = S ⇒ the family is dead
+  fully derived (gate-death §34.9, over-determined §34.11) ⇒ Clause 1(a) exit,
+  fork resolved toward death.** A derived V-t additionally discharges the
+  registration debt on the two Q2 exact identities (theorem-registry entry
+  unblocks — the §34.9/2394 deliberate deferral).
+- **(iii) Q4c — the post-closure residual coupling scale (the fork-resolver;
+  reached only on a Q4b V-t landing):** derive the order and scale of the TRUE
+  residual amplitude a closed ring presents to a nucleon after the exact
+  cancellations (A2a telescoping + A2b orientation orthogonality). The physical
+  expectation named at 2395 is the second-order scattering of a zero-mean vector
+  potential (the envelope being a first-moment bound); the derivation must produce
+  the actual order, not assume it. **Grading window (quantified at 2395, CLOSED
+  input):** V-t survival requires residual ≤ envelope/(1.8e7–4.6e7) at LZ
+  in-coverage (N = 7, 8) and ≤ envelope/(5.3e2–1.1e3) at DAMIC (sufficient alone
+  for N = 4–6); the registered-convention identity end (exact zero) is trivially
+  inside. On a derived residual, the 2395 generalized ladder re-runs at the derived
+  value (V2 pass-gate re-armed) — the re-confrontation is mechanical, not a new
+  contract.
+
+**Cheap-kill ordering (binding; the contract's own):** Q4a → Q4b → Q4c. Q4a is the
+cheapest kill (response order; the pre-registered √χ kill moots everything
+downstream). Q4b next (a Class-S landing kills the family with no residual work).
+Q4c only on a V-t landing. No stage is skipped, none reordered, none begun before
+its predecessor's grading is recorded in this file (§34.13+ execution records,
+one per stage or session per §15 lane practice).
+
+**Grading (mechanical, pre-registered — no adjustment after the derivation):**
+- **(a) Any stage kill triggers** (Q4a √χ order; Q4b Class S; Q4c residual outside
+  the window at any in-coverage channel with Class S already dead) → **the family
+  is dead on both classes, fully derived** → Clause 1(a) exit on the founder's
+  desk. The (d′) attestation at 8.45 GeV binds as registered.
+- **(b) Full landing** (Q4a linear-in-χ ⇒ R_s = 25.4 fm in-demand; Q4b derives
+  V-t; Q4c residual inside the window, ladder re-confrontation clean) → **the
+  family is ALIVE fully derived**: the class fork is resolved by derivation, the
+  Q2 identities register, Q5 (coat-channel sign synthesis + corridor re-grade)
+  launches on the derived machinery, and successor-branch registration goes to the
+  founder post-rent (§34.4 held list).
+- **(c) Partial/conditional** (e.g., a derived response order carrying an unpinned
+  O(1) coefficient that straddles a window edge; a class derivation conditional on
+  an unregistered lock) → recorded faithfully stage-by-stage and channel-by-channel;
+  named pins; NO smoothing; founder adjudication on the recorded residue before any
+  downstream stage proceeds.
+
+**Verify battery (binding, per-session across the weeks-scale arc):**
+- **V1 chain green underneath:** the 2395 battery (transitively 2393 → 2391 →
+  2381/2382/2383) run in a SCRATCH COPY at every session that touches the
+  machinery (the provenance guard, now mechanical).
+- **V2 known-limit reproduction (PASS-GATE, per stage):** every analytic stage
+  must reproduce its registered limits before its result is graded — Q4a: the §17
+  channel decomposition (gapped colour-residual vs gapless |SSV|) and the 1872
+  numerical anchor; Q4b: the rod's D5-A′ first-power phenomenology under the
+  derived class; Q4c: the 2393 identity zeros and envelope values, and (on
+  re-confrontation) the 2395 V2 rod-grid reproduction. Failure = machinery/derivation
+  not trusted; no grading proceeds; fix or escalate.
+- **V3 spot-check reproduction** on pre-declared sets per stage.
+- **V4 no-freedom audit:** every coefficient traced; 0865 held; CONV-004 tags on
+  every measured entry. The LZ 9-GeV edge stays UNPINNED unless a Q4c
+  re-confrontation makes it load-bearing — in which case pinning it is a named
+  CONV-004 action registered by amendment to this contract (founder-gated), not a
+  casual pin.
+- **V5 cache integrity:** schema-pure appends only; derivation-stage calls stay
+  out unless schema-compatible; committed-record runs get redirected output (the
+  2395 §5 lesson).
+
+**Exits and rent:** Clause 1(a) binds at every stage kill, fully derived. The
+attested (d′) binds at 8.45 GeV. The §34.7 wall, §34.9 gradings, §34.11 grading,
+and the 2395 residual-demand window are CLOSED inputs — cited, never re-derived,
+never re-graded. The (c) HOLD on the vertex class stands until Q4b derives the
+class or a kill moots it; no adoption in passing at any intermediate point.
+
+**Out of scope (binding):** Q5 pre-work; theorem-registry entry for the Q2
+identities before Q4b lands V-t; any DAMIC re-pin; the R2 release lane (DM-1
+v1.5 / DM-3 v1.1 — separate, staged, founder-gated); glossary promotion of S/V-t
+(stays §34.9-local until survival).
+
+**Expected cost:** weeks-scale (§34.4). Q4a expected 1–2 sessions; Q4b 1–3
+sessions; Q4c dependent on the Q4b landing (analytic core + one mechanical
+re-confrontation session). Each session closes with the §15 handover; each stage's
+grading lands in this file before the next stage opens.
+
+**Next session opens with SS43-Q4a on the keyword; the founder's verbatim go
+completes the launch.**
