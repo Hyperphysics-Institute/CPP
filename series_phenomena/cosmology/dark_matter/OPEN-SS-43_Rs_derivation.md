@@ -1186,3 +1186,99 @@ Q4b pre-work, no class adoption, no theorem registration, no DAMIC re-pin, R2 la
 untouched. Artifacts: `code/2399_ss43_q4a_response_order.py`,
 `code/2399_results.json`; registry `frontier_sectors/SS.md` 2399 block;
 `reasoning/2399.md` (verbatim, at-patch).
+
+### 34.14 SS43-Q4b EXECUTED — the per-unit vertex class is CLASS V-t, DERIVED from the registered structure; the Class-S kill armed and not fired; the (c) HOLD discharged by derivation (Patch 2401, 10 July 2026)
+
+**Launch:** warm on **DM-WARM-2400**; chain-verify 2400 → 2399 → 2398 → 2397 → 2396
+green. Founder launch go this session (verbatim): **"Go on Q4b."** ("Please proceed
+with Q4b." — recorded at `reasoning/2401.md` §1 per the §10 block; no go was on
+record at the 2400 close; the launch completed on this verbatim per the 2397/2398
+pattern). Battery: **ALL PASS** — V1 2395 battery green in a scratch copy
+(181.4 s; transitive 2393 → 2391 → 2381/2382/2383; committed artifacts untouched);
+**V2 PASS-GATE passed before any grading** — (a) the rod's registered D5-A′
+phenomenology reproduced UNDER THE DERIVED CLASS: open-chain composite telescopes
+EXACTLY to the end form (machine precision), source side power-0 (log-log slope
+0.1055; 2393 record 0.106), total = FIRST power at the ruling scale
+R_N/R_s = 0.0354; (b) the two Q2 exact identities reproduced as CONSEQUENCES of
+the derived composition (closed-loop telescoping = 0 at machine precision, N = 4–8
+× 12 random probes; orientation orthogonality 8.4×10⁻¹⁷; node-form crosschecks:
+closed-ring node sum 8.0×10⁻¹², open-chain node-vs-edge 0.62% at midpoint rule);
+V3 5/5 (global-flip sum → −sum exact; LOCAL single-unit flip physical, breaks
+telescoping by O(per-edge); chain reversal flips the composite sign exactly — the
+vector character checked; class verdict normalization-independent under arbitrary
+c = 3.7; R_s = r_c/χ reproduces the 1879 engine RS to machine precision); V4 zero
+tunables (φ; χ = φ⁻³/6; r_c = 1 fm SF-5/J2; R_s Q4a CLOSED; R_N = 0.9 fm 1880;
+d = 1.15 fm J8; the D5-A′ data points enter as the GATE'S targets, not derivation
+inputs; 0865 held — no torsional lock, no transverse component, no new transport
+datum); V5 no cache opened, output only `code/2401_results.json`.
+
+**THE DERIVED ANSWER (the contract's Q4b deliverable — the same substrate
+mechanics as Q4a, asked its second question):**
+
+- **L1 (the Q4a identification, §34.13 CLOSED input):** the per-unit
+  residual-channel vertex is the METH-CHIR-CONT-1 Wigner–Eckart matrix element
+  M = ±χ·(d_Γ/V_cage) — SIGNED, amplitude-level. The datum's ± is explicit: the
+  magnitude is universal; the SIGN is relative to the unit's local ℤ₂ pairing
+  convention (Ĉ in a ζ-ODD 1D irrep; M connects ζ-EVEN to ζ-ODD doublet
+  components — relabeling flips M). In isolation only |M|² enters (the Q4a
+  bubble); the sign is unphysical alone.
+- **L2 (transport):** relative signs between units are physical iff a registered
+  structure refers the conventions — the rung bond (2381 rung-bond primitives) IS
+  that structure: bonding is a pairing relation between adjacent units' DPs and
+  transports the ℤ₂ convention along the chain, the rod's ONLY registered
+  coherence axis; no torsional lock registered ⟹ no second transport datum (0865).
+- **L3 (chain-reversal parity fixes the tensor character):** the transported sign
+  is defined relative to the bond ORDERING; chain reversal exchanges bond roles ⟹
+  flips the convention-referred sign ⟹ the coherently sourced per-unit amplitude
+  is ODD under t̂ → −t̂ — a chain-axis vector component v_k = M·t̂_k, coupling
+  through the directional derivative t̂·∇ₓY, whose discrete form is the per-edge
+  difference (the 2393 machinery, now derived rather than posited).
+- **THEOREM (the class): Class V-t.** Composition = the rung-transported signed
+  sum (discrete line integral). Closed loop: interior contributions telescope to
+  zero identically. Open chain: telescopes to the ENDS — **the rod's D5-A′
+  power-0 sourcing is END-sourced O(N⁰), the 2393 V2 adjacency record reproduced
+  as a CONSEQUENCE, not an input.**
+- **COROLLARY (Class S EXCLUDED by registration, not merely disfavored — the √χ
+  exclusion's twin):** Class S needs the composite's per-unit source to be the
+  UNSIGNED |M| (chain-reversal-EVEN), requiring either probability-level
+  registration of the per-unit source (contradicts the amplitude-level L1,
+  CLOSED) or a ζ-EVEN vertex operator (contradicts the ζ-ODD irrep placement in
+  the registered datum). Not constructible. The incoherent composition
+  (uncorrelated signs, RMS ~ √N — numerically resolved in the trichotomy) requires
+  NO transport, contradicting the registered bonded structure itself; D5-A′'s
+  "coherent cage" language is thereby given MECHANISM without being consumed as a
+  premise.
+- **1858 reconciliation carried:** telescoping is a coherence projection of the
+  VERTEX; the force between nonzero-net-vertex bodies is second-order in the net
+  amplitude — attractive always; unipolarity stands.
+
+**Named pins (recorded, not smoothed; none straddles — no (c)-trigger; the
+verdict is structural, coefficient-free, normalization-independent):**
+**PIN-Q4b-1:** L2's transport stands on the 2381 rung-bond primitives as
+registered; the PCD-level derivation of the transport rule is the standing
+FP-side debt (same family as PIN-Q4a-1) — named conditionality, not new freedom.
+**PIN-Q4b-2:** the derivation fixes the CLASS, not the post-closure TRUE residual
+magnitude — Q4c's charter, untouched. **PIN-Q4b-3:** the per-edge normalization
+inherits the PIN-Q4a-2 O(1) freedom; the class verdict is independent of it
+(V3-iv).
+
+**Instrument discipline note (recorded per no-smoothing):** two missteps in the
+VERIFY INSTRUMENT (a check-design ~0/~0 division; a probe-vs-source gradient sign
+in the node-form crosscheck) were caught by the V2 gate failing loudly, diagnosed,
+and fixed; the derivation and identities moved zero. Full record
+`reasoning/2401.md` §4.
+
+**GRADING (mechanical, pre-registered §34.12): Q4b LANDS on the branch-(b)
+track — derived class = V-t; the Class-S kill armed and NOT FIRED (Class S is
+excluded by registration).** Consequences firing on this record: **the (c) HOLD
+on the vertex class is DISCHARGED BY DERIVATION** (its stated terminus); **the
+Q2-identity theorem registration UNBLOCKS** (the §34.9/2394 deliberate deferral
+discharged — registration itself QUEUED as a named next-session action, not
+executed in passing); **Q4c (the post-closure residual fork-resolver) unblocks**
+and opens next session on the founder's verbatim go, graded at §34.15 against the
+CLOSED 2395 window, the generalized-ladder re-confrontation V2-re-armed. Glossary
+promotion of S/V-t stays gated on survival (not established until Q4c). Scope
+guard held: no Q4c pre-work, no theorem registration executed, no DAMIC re-pin,
+no LZ pin, R2 lane untouched. Artifacts: `code/2401_ss43_q4b_vertex_class.py`,
+`code/2401_results.json`; registry `frontier_sectors/SS.md` 2401 block;
+`reasoning/2401.md` (verbatim, at-patch).

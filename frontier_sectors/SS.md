@@ -1015,6 +1015,30 @@ this record, opens next session; **the (c) HOLD stands**. Scope guard held (no Q
 adoption, no theorem registration, no DAMIC re-pin, R2 lane untouched). Script
 `code/2399_ss43_q4a_response_order.py`; results `code/2399_results.json`; campaign file §34.13; reasoning 2399.
 
+**[Patch 2401, 10 July 2026] SS43-Q4b EXECUTED — THE VERTEX CLASS IS V-t, DERIVED; the Class-S kill armed and
+NOT FIRED; the (c) HOLD DISCHARGED BY DERIVATION.** Warm launch DM-WARM-2400; founder go verbatim this
+session ("Go on Q4b."). Battery ALL PASS (V1 2395 battery green in scratch copy, 181.4 s transitive; V2
+PASS-GATE before grading — the rod's D5-A′ first-power phenomenology reproduced UNDER the derived class:
+open chain telescopes exactly to the end form, source-side power-0 slope 0.1055 vs 2393's 0.106, total =
+FIRST power at R_N/R_s = 0.0354; the two Q2 exact identities reproduced as CONSEQUENCES, machine precision;
+V3 5/5 incl. chain-reversal sign flip = the vector character and normalization-independence of the verdict;
+V4 zero tunables, 0865 held; V5 no cache). **The derivation (the Q4a mechanics asked its second question):**
+L1 the per-unit vertex = the METH-CHIR-CONT-1 SIGNED amplitude-level matrix element (±χ·d_Γ/V_cage; Ĉ
+ζ-ODD — the sign is convention-relative, §34.13 CLOSED); L2 the rung bond (2381) is the registered ℤ₂
+convention TRANSPORT along the chain, the only coherence axis (no torsional lock, 0865); L3 chain-reversal
+exchanges bond roles ⟹ flips the transported sign ⟹ the per-unit source is chain-reversal-ODD on the one
+registered axis = a chain-axis VECTOR v_k = M·t̂_k coupling via t̂·∇ₓY (the 2393 per-edge machinery, now
+derived). ⟹ **Class V-t: closed loop telescopes to zero identically; open chain END-sourced O(N⁰) — the
+2393 V2 adjacency record reproduced as a consequence.** Corollary: **Class S EXCLUDED by registration**
+(needs unsigned |M| as source ⟹ probability-level or ζ-EVEN — both contradict the registered datum; the
+√χ exclusion's twin); incoherent composition excluded by the registered bonded structure itself. 1858
+unipolarity stands (vertex projection, not force cancellation). Pins PIN-Q4b-1/2/3, none straddling; the
+verdict is structural and coefficient-free. **GRADING: Q4b LANDS, branch-(b) track. The Q2-identity theorem
+registration UNBLOCKS (queued, not executed in passing); Q4c unblocks, opens next session on the founder's
+go, graded at §34.15 against the CLOSED 2395 window.** Glossary S/V-t promotion stays survival-gated. Scope
+guard held (no Q4c pre-work, no registration executed, no DAMIC re-pin, R2 untouched). Script
+`code/2401_ss43_q4b_vertex_class.py`; results `code/2401_results.json`; campaign file §34.14; reasoning 2401.
+
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's

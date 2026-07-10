@@ -1,0 +1,63 @@
+{
+ "patch": 2401,
+ "task": "SS43-Q4b vertex class derivation",
+ "derived_class": "V-t",
+ "kill_S": {
+  "armed": true,
+  "fired": false
+ },
+ "derivation": {
+  "L1": "per-unit vertex = METH-CHIR-CONT-1 matrix element; SIGNED, amplitude-level (Q4a L1, sec 34.13 CLOSED)",
+  "L2": "sign is zeta-convention-relative; rung bond (2381) is the registered convention transport; chain axis the only registered coherence axis (0865: no torsional lock)",
+  "L3": "chain-reversal-ODD transported sign => chain-axis vector v_k = M t-hat_k; leading coupling = directional derivative = per-edge difference (discrete line integral)",
+  "corollary": "Class S requires |M| as source: probability-level or zeta-EVEN -- both contradict registration; incoherent requires no transport -- contradicts 2381 bonding"
+ },
+ "V2_pass_gate": {
+  "rod_end_sourced_exact_max_diff": 0.0,
+  "rod_source_side_loglog_slope": 0.10551115823629864,
+  "d5aprime_total_power": "FIRST (source 0 x nucleon 1)",
+  "closed_loop_telescoping_max": 0.0,
+  "orientation_orthogonality_max": 8.377525516152482e-17,
+  "closed_ring_node_form_max": 7.979717581152457e-12,
+  "open_chain_node_vs_edge_rel": 0.006218554938261588
+ },
+ "trichotomy": {
+  "4": {
+   "vt": 0.0,
+   "s": 0.5510272583689397,
+   "incoh_rms": 0.04869032817024131
+  },
+  "5": {
+   "vt": 0.0,
+   "s": 0.6669116782724476,
+   "incoh_rms": 0.04986323876652501
+  },
+  "6": {
+   "vt": 0.0,
+   "s": 0.7748307365794459,
+   "incoh_rms": 0.05282185968815935
+  },
+  "7": {
+   "vt": 0.0,
+   "s": 0.8755915835290425,
+   "incoh_rms": 0.05509816924365129
+  },
+  "8": {
+   "vt": 0.0,
+   "s": 0.9698875650706241,
+   "incoh_rms": 0.05472144605409494
+  }
+ },
+ "V4_inputs": {
+  "phi": 1.618033988749895,
+  "chi = phi^-3/6 (METH-CHIR-CONT-1: |chi_sub|*d_G/V_cage)": 0.03934466291663161,
+  "r_c_fm (SF-5/J2)": 1.0,
+  "R_s_fm = r_c/chi (Q4a CLOSED, sec 34.13)": 25.41640786499874,
+  "R_N_fm (1880 RN)": 0.9,
+  "d_unit_fm (J8)": 1.15,
+  "SC_ruling = R_N/R_s (D5-A')": 0.03541019662496846
+ },
+ "V1": "2395 battery ALL PASS in scratch copy at session open (181.4 s; reasoning/2401.md sec 2)",
+ "V5": "no cache opened; this file is the only output",
+ "battery": "ALL PASS"
+}
