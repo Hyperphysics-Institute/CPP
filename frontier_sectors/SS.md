@@ -1039,6 +1039,31 @@ go, graded at §34.15 against the CLOSED 2395 window.** Glossary S/V-t promotion
 guard held (no Q4c pre-work, no registration executed, no DAMIC re-pin, R2 untouched). Script
 `code/2401_ss43_q4b_vertex_class.py`; results `code/2401_results.json`; campaign file §34.14; reasoning 2401.
 
+**[Patch 2403, 10 July 2026] SS43-Q4c EXECUTED — THE RESIDUAL SCALE DERIVED (the discreteness defect,
+(N−1)-order multipole-protected); BRANCH (c) — ONE NAMED RESIDUE: the LZ 9.86-GeV local-value pin,
+founder-gated.** Founder go verbatim ("Please proceed as per recommendation."); Patch 2401 verified at
+origin before opening (grading-lands-first); carried triggers fired catalog-first at Patch 2402
+(METH-L1-013 + METH-L2-012 + METH-L2-013). Battery ALL PASS 27/27; **V2 RE-ARMED per the contract clause**
+(ℓ_v and the committed 2395 envelope LZ/DAMIC rows reproduced byte-exact; rod decisive rows fresh;
+identities fresh). **The derivation:** three nested protections — the fold-convention zero is
+configuration-independent (an edge-convention artifact, not physics); the continuum node form is zero for
+ANY closed loop (topological, gradient theorem); **the physical residual is the DISCRETENESS DEFECT** of
+the N-vertex ring (2401 v_k = M·t̂_k, bisector tangents). Structure factor exactly C_N-selected (jN
+azimuthal harmonics only, machine floor); leading radial order **(qR_g/2ħc)^{N−1}/(N−1)!·√N** confirmed
+within 10% at every N — the residual is (N−1)-order multipole-protected, exponentially small in N.
+**Graded absolutely (Born exact): DAMIC passes at EVERY species by 3–15 orders (max 0.133 events vs 123 —
+the envelope end's killer channel cleared); LZ strict: N=8 PASSES unconditionally 32× inside; N=7 sits
+12.6× over the 36-GeV strict point at 9.86 GeV — STRICT-POINT-CONDITIONAL (METH-L2-012), the local value
+unpinned; N=4–6 edge-conditional (2395 pins carry); XQC/rock/np/CMB pass by domination (ratio ≤ 3.7e-3).**
+**GRADING: BRANCH (c), no smoothing — no branch-(a) trigger fires unconditionally; N=8 is fully
+derived-and-clear across the entire ladder; the single residue is PIN-Q4c-3: the N=7 verdict conditional on
+the LZ local value at 9.86 GeV, which this re-confrontation makes LOAD-BEARING — the §34.12 V4 pre-registered
+founder-gated CONV-004 amendment. Founder adjudication on the residue before Q5 proceeds** (options at
+§34.15). Q4 triple duty now fully executed (Q4a order ✓, Q4b class ✓, Q4c residual ✓). Q2-identity theorem
+registration stays unblocked-and-queued. Pins PIN-Q4c-1/2/3. Four instrument missteps caught by the gates,
+fixed, derivation unmoved (reasoning §4). Script `code/2403_ss43_q4c_residual_scale.py`; results
+`code/2403_results.json`; campaign file §34.15; reasoning 2403; methods Patch 2402.
+
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's

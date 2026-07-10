@@ -1,0 +1,159 @@
+{
+ "patch": 2403,
+ "task": "SS43-Q4c residual coupling scale",
+ "derived_order": "(N-1)-th azimuthal harmonic of qRg/hbarc; C_N selection exact (jN+/-1 only)",
+ "protections": {
+  "fold_convention_config_independent_max": 0.0,
+  "continuum_refinement": [
+   [
+    6,
+    1.1821307232845468e-05
+   ],
+   [
+    12,
+    2.997070820687231e-09
+   ],
+   [
+    24,
+    1.0928757898653885e-16
+   ],
+   [
+    48,
+    1.6479873021779667e-17
+   ],
+   [
+    96,
+    8.673617379884035e-19
+   ]
+  ],
+  "generic_defect_N6": 1.1821307232845468e-05
+ },
+ "lz": {
+  "4": {
+   "sig_n_res": 1.3658012687758524e-38,
+   "sqrtD2": 0.0003182267027199565,
+   "pass_strict": false,
+   "coverage": "edge-conditional (<9 GeV)",
+   "ratio_vs_env": 0.0008309692022902363
+  },
+  "5": {
+   "sig_n_res": 2.4571857540820877e-41,
+   "sqrtD2": 2.0246152519519633e-05,
+   "pass_strict": false,
+   "coverage": "edge-conditional (<9 GeV)",
+   "ratio_vs_env": 5.5820463018073864e-05
+  },
+  "6": {
+   "sig_n_res": 5.070339705509428e-44,
+   "sqrtD2": 1.2854495606074624e-06,
+   "pass_strict": false,
+   "coverage": "edge-conditional (<9 GeV)",
+   "ratio_vs_env": 1.8176966872894853e-06
+  },
+  "7": {
+   "sig_n_res": 1.1599778305711913e-46,
+   "sqrtD2": 8.153204167912338e-08,
+   "pass_strict": false,
+   "coverage": "IN-COVERAGE",
+   "ratio_vs_env": 1.6045152640959905e-07
+  },
+  "8": {
+   "sig_n_res": 2.8489547547795874e-49,
+   "sqrtD2": 5.167314227970002e-09,
+   "pass_strict": true,
+   "coverage": "IN-COVERAGE",
+   "ratio_vs_env": 9.613359331502198e-09
+  }
+ },
+ "damic": {
+  "4": {
+   "events_th": 0.13342097967560732,
+   "pass": true
+  },
+  "5": {
+   "events_th": 8.144352638942494e-05,
+   "pass": true
+  },
+  "6": {
+   "events_th": 9.355712497644847e-08,
+   "pass": true
+  },
+  "7": {
+   "events_th": 1.7694283534557148e-10,
+   "pass": true
+  },
+  "8": {
+   "events_th": 4.922936822720197e-13,
+   "pass": true
+  }
+ },
+ "window_continuity": {
+  "4": {
+   "res_env_lz": 0.0008309692022902363,
+   "demand_lz": 2.1566768959630188e-08,
+   "res_env_damic": 2.7308042658640323e-05,
+   "demand_damic": 0.0008914587520761809,
+   "inside_lz": false,
+   "inside_damic": true
+  },
+  "5": {
+   "res_env_lz": 5.5820463018073864e-05,
+   "demand_lz": 3.4156106090975116e-08,
+   "res_env_damic": 4.106927853532461e-07,
+   "demand_damic": 0.001341066191225754,
+   "inside_lz": false,
+   "inside_damic": true
+  },
+  "6": {
+   "res_env_lz": 1.8176966872894853e-06,
+   "demand_lz": 2.4484813518542983e-08,
+   "res_env_damic": 2.977615139195229e-09,
+   "demand_damic": 0.0014068191537682073,
+   "inside_lz": false,
+   "inside_damic": true
+  },
+  "7": {
+   "res_env_lz": 1.6045152640959905e-07,
+   "demand_lz": 4.5186938921564163e-08,
+   "res_env_damic": 5.823486545345851e-11,
+   "demand_damic": 0.0016390374291582706,
+   "inside_lz": false,
+   "inside_damic": true
+  },
+  "8": {
+   "res_env_lz": 9.613359331502198e-09,
+   "demand_lz": 5.4629385257404187e-08,
+   "res_env_damic": 7.726326966952631e-13,
+   "demand_damic": 0.001892577784832958,
+   "inside_lz": true,
+   "inside_damic": true
+  }
+ },
+ "domination_worst_ratio": 0.0036808038790905545,
+ "V2_rearm": {
+  "ell_v_worst_rel": 0.0,
+  "lz_env_worst_rel": 0.0,
+  "damic_env_N6": [
+   62148201.65989322,
+   62148201.65989322
+  ],
+  "rod_rows": {
+   "sc0.035_xqc_nviol": 0,
+   "sc0.035_lz": 4.4407652253000595e-33,
+   "sc1.3e-3_lz": 6.126443453679264e-36
+  },
+  "identities": {
+   "telescoping_max": 2.7755575615628914e-17,
+   "end_sourcing_diff": 0.0
+  }
+ },
+ "V3": {
+  "ft_crosscheck_rel": 1.6834464620469463e-05,
+  "born_parameter": 0.0032280908228917494,
+  "quadrature_rel": 5.480060849549773e-13
+ },
+ "V4": "zero tunables; A_N = ell_v*ern1*SC_RULING/N; bisector tangents; 0865 held",
+ "V5": "no cache opened",
+ "grading": "branch (c) -- N=8 unconditional PASS + DAMIC all-N PASS + domination PASS; N=7 STRICT-POINT-CONDITIONAL (12.6x over the 36-GeV strict point at 9.86 GeV; local-value pin = the founder-gated CONV-004 amendment, now load-bearing); N=4-6 edge-conditional (pinned)",
+ "battery": "ALL PASS"
+}

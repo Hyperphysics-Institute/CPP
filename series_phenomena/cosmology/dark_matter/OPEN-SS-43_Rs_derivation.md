@@ -1282,3 +1282,96 @@ guard held: no Q4c pre-work, no theorem registration executed, no DAMIC re-pin,
 no LZ pin, R2 lane untouched. Artifacts: `code/2401_ss43_q4b_vertex_class.py`,
 `code/2401_results.json`; registry `frontier_sectors/SS.md` 2401 block;
 `reasoning/2401.md` (verbatim, at-patch).
+
+### 34.15 SS43-Q4c EXECUTED — the residual coupling scale DERIVED: the discreteness defect, (N−1)-order multipole-protected; BRANCH (c) with ONE named residue — the LZ 9.86-GeV local-value pin, founder-gated (Patch 2403, 10 July 2026)
+
+**Launch:** same-session continuation on the DM-WARM-2400 arc; founder go this
+session (verbatim): **"Please proceed as per recommendation."** (on the stated
+Q4c recommendation; `reasoning/2403.md` §1). Pass-gate honored: Patch 2401
+verified at origin/main before Q4c opened (§34.12 grading-lands-first). Carried
+triggers fired catalog-first at **Patch 2402**: METH-L1-013 (registration-level
+response-order counting — the 2400 handover's named trigger), METH-L2-012
+(strict-point gate) + METH-L2-013 (differential-vs-total σ) — all three reused
+by this stage. Battery: **ALL PASS (27/27)** — V1 2395 scratch-copy green at
+session open (181.4 s transitive); **V2 RE-ARMED and passed before grading**
+per the Q4c contract clause: ℓ_v(4–8) byte-exact vs committed 2393; the
+committed 2395 envelope LZ σ_n per N byte-exact; the committed 2395 DAMIC
+envelope events reproduced (N = 6, rel 0.0); the rod-grid decisive rows fresh
+(0.035 ALIVE; 1.3e-3 dead-LZ); the exact identities fresh. V3 5/5 (analytic
+structure-factor FT vs numeric 3D FT exact; Born parameter 3.2×10⁻³; the
+(N−1)-order law tracks the computed structure factor at ratio 0.90–1.09 for
+every N; quadrature 5.5×10⁻¹³; uniform-tilt convention robustness). V4 zero
+tunables (A_N = ℓ_v·ern1·SC_RULING/N the registered envelope convention; Si
+28.09 the committed construction; bisector tangents per 2401 L2; 0865 held).
+V5 no cache opened. Runtime 12.9 s.
+
+**THE DERIVED ANSWER (the contract's Q4c deliverable — order NOT assumed):**
+
+- **Three nested protections locate the residual exactly.** (P1-i) The
+  fold-convention edge-difference zero is CONFIGURATION-INDEPENDENT (holds for
+  arbitrarily deformed closed loops — verified 0.0) — an artifact of the edge
+  convention, carrying no ring physics. (P1-ii) The continuum node form — the
+  closed line integral of ∇Y — is zero for ANY closed loop by the gradient
+  theorem: a TOPOLOGICAL protection that smooth deformations cannot break
+  (refinement decays the node sum super-algebraically to the numerical floor).
+  (P1-iii) **The physical residual is the DISCRETENESS DEFECT**: the ring is N
+  point vertices (the 2401-derived v_k = M·t̂_k, bisector tangents), and the
+  discrete node sum at generic orientation is nonzero — the 2401
+  symmetric-probe zeros reproduced as the reflection-symmetric special case.
+  Internal-excitation channels (phonons, ζ-flips) enter only as gap-suppressed
+  second-order corrections to the static defect (PIN-Q4c-2) — never
+  load-bearing.
+- **The order (METH-L1-013 reused):** the structure factor
+  D(q) = Σ_k(t̂_k·q̂)e^{iq·x_k} is exactly 2π/N-periodic in azimuth (C_N —
+  forbidden harmonics at the absolute machine floor), with leading radial
+  behavior **|D| ≈ (qR_g/2ħc)^{N−1}/(N−1)!·√N** — confirmed numerically within
+  10% at every N. The residual is **(N−1)-order multipole-protected**:
+  species-dependent, exponentially small in N at experimental momenta. The
+  2395 "zero-mean second-order" expectation is upgraded to an exact
+  selection-rule statement.
+- **The scale, graded absolutely (Born exact; parameter 3.2×10⁻³):**
+  **DAMIC — the envelope end's killer — passes at EVERY species by 3–15
+  orders** (max 0.133 events vs N90 = 123; METH-L2-013 differential
+  machinery, committed construction reproduced at the gate). **LZ strict:
+  N = 8 (11.26 GeV) PASSES unconditionally, 32× inside** (2.85×10⁻⁴⁹ vs
+  9.2×10⁻⁴⁸). **N = 7 (9.86 GeV) sits 12.6× over the 36-GeV strict point** —
+  a STRICT-POINT-CONDITIONAL row (METH-L2-012): the local LZ value at
+  9.86 GeV is unpinned and far weaker than the 36-GeV floor. N = 4–6 stay
+  LZ-edge-conditional (2395 pins carry) and DAMIC-clean. Domination:
+  XQC/rock/np/CMB pass (residual/envelope amplitude ≤ 3.7×10⁻³ across the
+  band, on the envelope end's committed passes).
+
+**GRADING (mechanical, pre-registered §34.12): BRANCH (c) — recorded
+faithfully, channel-by-channel, NO smoothing.** No branch-(a) trigger fires
+unconditionally anywhere. **N = 8 is fully derived-and-clear across the entire
+ladder.** The single open residue: **PIN-Q4c-3 — the N = 7 verdict is
+conditional on the LZ local value at 9.86 GeV, which this re-confrontation has
+made LOAD-BEARING — exactly the fork §34.12 V4 pre-registered as a
+founder-gated CONV-004 contract amendment, not a casual pin.** On the
+founder's desk: (a) authorize the pin (named data action: the published LZ
+limit at 9.86 GeV; if it exceeds 1.16×10⁻⁴⁶ cm², N = 7 clears); (b) decline
+and carry N = 7 conditional (N = 8 alone gives the family an unconditionally
+clear member); (c) direct otherwise. **Per branch (c): founder adjudication on
+this recorded residue before Q5 proceeds.** Also on the desk (unchanged
+queue): the Q2-identity theorem registration (unblocked at 2401, queued, not
+executed in passing); Q5 and successor-branch registration post-adjudication;
+R2 release lane separate.
+
+**Pins:** PIN-Q4c-1 (bisector node-tangent convention; V3-v shows the C_N
+selection robust under any UNIFORM convention — only site-dependent
+conventions leak, excluded by uniform transport/0865); PIN-Q4c-2
+(internal-excitation channels subleading for gaps ≳ keV — violation would
+preclude the ring's registered survival as a cold species); PIN-Q4c-3 (the
+LZ 9.86-GeV residue, above).
+
+**Instrument discipline note (per no-smoothing; full record
+`reasoning/2403.md` §4):** four instrument-side missteps caught by the gates
+and fixed with the derivation unmoved — a guessed Si factor (V2c caught it;
+the committed 2395 construction transplanted: the standing transplant-never-
+reconstruct lesson), a harmonic-selection mis-statement (jN±1 → jN azimuthal
++ (N−1) radial), FFT aliasing + a relative-vs-absolute floor criterion, and
+one stale variable.
+
+Artifacts: `code/2403_ss43_q4c_residual_scale.py`, `code/2403_results.json`;
+registry `frontier_sectors/SS.md` 2403 block; `reasoning/2403.md` (verbatim,
+at-patch). Methods registrations: Patch 2402 (catalog-first).
