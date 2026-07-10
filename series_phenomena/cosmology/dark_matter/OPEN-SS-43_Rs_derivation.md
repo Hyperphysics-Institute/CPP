@@ -710,3 +710,69 @@ C1 suppression = 0.035/S_c* from the rod-natural scale):**
 now numeric per cell. Q2's deliverable is a DERIVED ring S_c; the grading against
 this table is mechanical. Stage plan §34.4 unchanged; Q3 (CONFRONT recompute) and
 Q4 (de-novo gap) queue behind Q2 as registered.
+
+### 34.8 SS43-Q2 CONTRACT + WARM-LAUNCH REGISTRATION (Patch 2392, 9 July 2026)
+
+**Warm-launch keyword: DM-WARM-2392.** Founder verbatim: "draft Q2 contract and initiate
+handover protocol."
+
+**Handover set (self-contained):** this file §34 (re-aim §34.1–34.5, Q1 contract §34.6,
+the executed wall §34.7, this contract); §22 (the D5-A′ provisional ruling and its
+standing derivation debt — the multipole-order question Q2 inherits one order further);
+§17 (the channel decomposition, geometry-independent, carries over per §34.2);
+`code/2391_results.json` (the wall + per-path traces); the committed
+`code/2379_unit_cache.json` (475 keys); the grading engine
+`code/1879_xqc_recomputation.py`; `code/2383_results.json` +
+`code/2383_joint_couplings.json` (the six members and their weights); arc-doc context
+`sN_arc_2370_cost_estimate.md` §Q3b-2c through §Patch-2388.
+
+**SS43-Q2 pre-registered scope (the ring multipole pass — collision C1's derivation):**
+derive, from registered primitives only (0865 held — no dark-sector freedom at any
+step), the colour-singlet nucleon-coupling suppression of the CLOSED N-ring relative to
+the rod's first-power dipole (the D5-A′ scale S_c = R_N/R_s = 0.035), at the ruling R_s,
+for the ring compositions N = 4–8 where composition matters. The physical question, as
+named at §34.3 C1: does closure — saturated bonds, no free ends, closed colour
+circulation — take the D5-A′ coherence argument one order further? Deliverable: the
+DERIVED ring S_c (or equivalently the derived suppression factor vs 0.035), with the
+derivation chain written and every coefficient traced.
+
+**Grading (mechanical, pre-registered against the §34.7 wall — no adjustment permitted
+after the derived number exists):**
+- derived S_c ≤ 0.0120 → the WHOLE surviving table lands (all 23 walled cells);
+- 0.0120 < derived S_c ≤ 0.0221 → partial landing; cell-by-cell readout against the
+  §34.7 table; the family narrows member-by-member, faithfully recorded;
+- derived S_c > 0.0221 → **gate-death fully derived** (the kill carried from §34.4 —
+  the third kill via the D5 lineage).
+Adjacency, not obligation: if the same machinery resolves the ROD's multipole order in
+its open-chain limit, record it against the 1880 D5-A′ derivation debt; discharging
+that debt is NOT required for Q2 completion.
+
+**Verify battery (binding):**
+- **V1** the 2391 battery green underneath (subprocess; carries 2381/2382/2383
+  transitively).
+- **V2 rod-limit readout (MANDATORY, escalation-typed):** the multipole machinery's
+  open-chain limit order is computed and REPORTED. Agreement with the D5-A′ first power
+  = PASS. Disagreement is NOT a silent fail — it is a BLOCKING flag escalated to the
+  founder, because it collides with the 1880 provisional ruling and its landscape
+  (second power = the LZ dead zone, a registered kill). No grading proceeds past an
+  unresolved V2 collision.
+- **V3 grading reproduction:** the derived S_c's alive/dead verdicts via fresh pipeline
+  calls match the §34.7 wall-table brackets (alive below each cell's S_c_alive, dead
+  above its S_c_dead) on a pre-declared spot-check set spanning both signs and both ρ.
+- **V4 no-freedom audit:** every coefficient in the derivation chain traced to a
+  registered primitive, itemized in the reasoning fragment (0865 discipline; CONV-004
+  measured-coefficient tags where a measured quantity enters).
+- **V5 cache integrity** (schema + original keys byte-identical + append-only) if any
+  fresh pipeline points are computed.
+
+**Exits and rent:** Clause 1(a) binds this leg directly; the attested (d′) binds
+post-registration at 8.45 GeV; every stage is registered-primitives derivation or
+computation (0865 held). Scope guard: verdict moves ONLY by the mechanical grading
+above or by founder adjudication of a V2 collision.
+
+**Expected cost:** 1–2 sessions (§34.4 estimate stands: derivation-heavy; the pipeline
+grading is cheap on the extended cache). KILL statement carried: no extra suppression
+from closure ⇒ S_c(ring) = 0.035 > 0.0221 ⇒ the family gate-dies fully derived.
+
+**Next session opens with SS43-Q2 on the keyword; the founder's verbatim go completes
+the launch.**

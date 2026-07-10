@@ -910,6 +910,18 @@ derivation rent is now the recommended door of the reopened OPEN-DM-DSPH-1
 `series_phenomena/cosmology/dark_matter/sN_arc_2370_cost_estimate.md` — Q1
 dimer-free rescan → Q2 G-XQC-0 on survivors → Q3 substrate derivation (gated).
 §§5–10; verify `code/1864_...py`, `code/1865_...py`, `code/1866_...py`; reasoning 1863-1866.
+**[Patches 2388–2392, 9 July 2026] Q3c RE-AIM + SS43-Q1 WALL EXECUTED + Q2 REGISTERED:** the campaign
+re-aimed at the panel-verified ring family (N = 6-dominant closed rings ≈ 8.45 GeV; §34 re-aim, four named
+collisions C1–C4, five-stage cheap-kill plan). **SS43-Q1 executed (2391, battery 4/4):** pipeline-level S_c*
+bisection for the six 2383 joint members at ε_th = 1, both signs, ρ ∈ {0.2, 0.3}, tolerance 0.001 — **the
+fine wall: S_c* ∈ [0.0120, 0.0221]**; C1's required ring suppression from the rod-natural 0.035 graded
+×1.59 (loosest cell: member C, repulsive, ρ=0.2) to ×2.92 (tightest: member E, attractive, ρ=0.3, wall AT
+the floor); F(attr, ρ=0.3) dead-at-floor, consistent with its 2383 (d)-branch ρ≥0.2 membership. Cache
+360 → 475 keys; V3 monotonicity held at all 112 sampled points. Pre-flight repair 2390: 2381's V5
+exact-count cache pin → invariant form. **SS43-Q2 (ring multipole pass) registered at §34.8, keyword
+DM-WARM-2392:** derive the closed-ring colour-singlet suppression vs the rod first power from registered
+primitives (0865); grading mechanical against the wall table; kill = derived S_c > 0.0221, fully derived.
+Wall table + reading: campaign file §34.7; results `code/2391_results.json`; reasoning 2390–2392.
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's
