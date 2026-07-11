@@ -34,3 +34,37 @@ the entire anchor suite **elastically** — no capture, no new mechanism, no SPE
 feature. **L4 is promoted to the decisive lane**: it now simultaneously decides this
 flank, SPEC-1's steepness bar, and the inverse arc's central question — the missing
 physics may be a *population*, not a mechanism.
+
+---
+
+## RESOLUTION (Patch 2419, 11 July 2026) — (C) closed by the cascade vise
+
+The 2344 rent ("the 1855–56/2382 formation kinetics must produce dimer dominance; S(N) must
+survive derivation") is now checkable against the derived cascade (2382), and it **fails**.
+`code/2419_population_vise.py`:
+
+- **The coring population is dimer-dominant:** f_dimer ≈ 0.99 (2344 — dimers carry the steep dSph
+  channel; each contributes little, so nearly all the mass must be dimers).
+- **DD/XQC hiding forbids it:** the D2/D3 contamination bound (2374) caps the light-species share at
+  f_dimer < 0.034 — dimers have minimal (N−1=1) protection and contaminate the summed-XQC channel.
+  **Coring and hiding are mutually exclusive by ×29.**
+- **The cascade derives the hiding side, not the coring side:** 2382's frozen product is
+  **closed-RING dominant** (representative w: N=3 78% / N=4 22% at r=5; N=5 79% at r=7.5; N=6 70% at
+  r=9), with dimers only a ≤3.4% residual (the D2/D3 budget, satisfied for the registered Λ). Dimer
+  dominance is not a corner of the kinetics — dimers are the one species with no closure channel, so
+  they accumulate to C₂/c₁ ≈ 0.3–0.4 relative to *monomers* but never dominate the closed mass.
+
+So the population that **cores** (99% dimers) is not the one the cascade **derives**; the population
+the cascade **derives** (small-N rings) is the corridor that **died for coring at Q5 (2413)**. No
+population both derives and cores.
+
+**Consequence.** With the elastic corridor dead (Q5/2413), |SSV| dissipative capture dead
+candidate-blind (2418), and the population route closed here, **the ring family cannot core the
+dwarfs by any derivable mechanism.** Honest successor → **(B): a CDM-like / collisionless ring**,
+with dwarf cores (if real) supplied by baryonic feedback, not DM microphysics.
+
+**What could reopen it (derived-vs-assumed):** only (i) a cascade corner with dimer dominance that
+does not close rings — but early freeze-out gives *monomer* dominance (w(1)), not dimer, and monomers
+don't core; or (ii) a DM-DM coring coupling decoupled from the XQC-contamination coupling, which would
+require S(N=2)'s self-interaction and its XQC signature to be independent — unregistered and against
+the single-S(N) structure. Neither is a live corner on current registered ground.
