@@ -1094,6 +1094,17 @@ P1 fully structured: FOUR numbers, one HEPData visit (ins2841863 at 9.86 GeV + i
 the consolidated adjudication record lands at §34.18 (declared re-pointing, form only: §34.17 = staging).
 Q5 gated on all four + founder adjudication; Q2-identity registration stays queued. Campaign §34.17;
 reasoning 2406.
+**[Patch 2407, 10 July 2026] Q2-IDENTITY THEOREM REGISTRATION EXECUTED — THEO-SS-17 (closed-ring Class V-t
+vertex decoupling identities) registered in `theorem-registry.md`** (P2 of the 2405 handover; founder go
+verbatim "Please proceed as recommended."). The two SS43-Q2 exact identities — closed-loop telescoping = 0
+identically + orientation-average orthogonality t̂·x̂ = 0 exactly — derived and machine-verified at 2393
+(§34.9), reproduced as consequences of the derived vertex class at 2401 (§34.14); the 2394 deliberate
+deferral (class-conditional while the S/V-t dichotomy was HELD) discharged by the 2401 V-t derivation.
+Entry carries the 2403 scope refinement (fold-convention zero = edge-convention structure; continuum node
+form topologically zero; physical residual = the discreteness defect, (N−1)-order protected — defect scale
+NOT part of the theorem) and asserts NOTHING about family survival (the four-number adjudication stays
+PENDING at §34.18). Registry counts: SS 16 → 17, Total 81 → 82; caveat-table row added. Glossary promotion
+of S/V-t stays survival-gated. Surgical registry-class patch; no new physics; no campaign-file edit.
 
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
