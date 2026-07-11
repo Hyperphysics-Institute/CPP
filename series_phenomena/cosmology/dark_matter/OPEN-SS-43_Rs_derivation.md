@@ -1846,3 +1846,134 @@ machinery is standing; the sign synthesis is the analytic core.
 verified at origin), then gives the **verbatim go on the contract**; Q5a
 opens on the go — in this session if the go lands here, else next session on
 **DM-WARM-2412**.
+
+### 34.22 SS43-Q5 EXECUTED — the sign DERIVED (dwarf channel REPULSIVE, coat-dominated; F-A2 discharged) and the corridor re-grade FIRES THE PRE-REGISTERED KILL: the anchor channel fails BOTH audited frames at the derived coupling by ×27–×90; the {N = 8} family is DEAD AT THE CORRIDOR, FULLY DERIVED — Clause 1(a) on the founder's desk (Patch 2413, 11 July 2026)
+
+**Launch:** contract §34.21 verified at origin (e7a37e7) BEFORE any
+computation — the pass-gate held; founder go verbatim: **"Go on the
+contract. Please proceed as per your recommendations."** Battery: **ALL
+PASS** — V1 scratch-copy chain green (2410 0.0 s / 2403 10.7 s / 2401 0.0 s
+/ 2393 96.5 s; committed artifacts untouched); **V2 pass-gates passed
+before any grading** — (i) the corridor machinery reproduced ALL 17
+committed 2383 joint (member, frame, law) viol values via eff_dist (worst
+rel 0.0) and ALL 438 committed ρ* rows from the cache (worst rel 0.0);
+(ii) the coat-floor transplant byte-identical to 2383 and FL(1500) = 0.04
+inside the committed 1871 t0 measured band [0.0361, 0.0518]; (iii) the C_8
+azimuthal selection exact fresh (forbidden < 1.6×10⁻¹⁶ absolute) and the
+(N−1) radial law tracking at ratio 1.09 at every signal-above-floor
+momentum (8/20/49.5 MeV). V3 3/3 (independent bisection bracket rel 0.0;
+sign-flip rows distinct 1.019 vs 1.224; orientation-average stable 320 vs
+997 directions). V4 zero tunables (E_C, M_EL from the committed 1879
+source; d = 1.15 fm J8; R_s = 25.42 fm the 2399 derived value; FL/F-table/
+frames = committed 2344/2345 artifacts; the E_qq ceiling deliberately
+GENEROUS — first-moment envelope N²·E_C·R_s = 488 MeV·fm, hurting the
+kill's own margin; 0865 held; no external data consumed). V5 cache
+read-only (605 keys unchanged); sole output `code/2413_results.json`.
+
+**Q5a — THE DERIVED SIGN (C4 resolved; F-A2 DISCHARGED):**
+
+- **Ring–ring at dwarf velocities: REPULSIVE, coat-dominated.** The E_qq
+  channel carries the discreteness-defect protection on BOTH sides — each
+  partner is a closed Class V-t loop subject to the same C_N selection —
+  so the pair coupling is doubly suppressed:
+  g²(r) = g²_env·D̄²(q ~ ħc/r) with D̄/ring = 1.21×10⁻¹⁴ at r = R_s
+  (q = 7.8 MeV), 1.98×10⁻¹⁰ at R_s/4, 3.77×10⁻⁸ at the 3-fm far-field
+  edge. Even under the generous 488 MeV·fm ceiling the derived ring–ring
+  E_qq coupling is 7.1×10⁻²⁶ MeV·fm at the screening range (6.9×10⁻¹³ at
+  the far-field edge — 12+ orders short even there). The surviving
+  dwarf-channel term is the coat floor (E_ee, repulsive, the 1868–1871
+  measured record) — the effective transfer sign at dwarf velocities is
+  the coat's. **F-A2's ARGUMENT-LEVEL attractive-default tag discharges
+  REPULSIVE — by derivation, in the direction the 2383 attractive default
+  did NOT assume.**
+- **Ring–nucleus at XQC momenta: the E_qq defect (attract-only), at a
+  magnitude far below every graded threshold** — sign immaterial at the
+  derived coupling; both signs graded anyway (below).
+
+**Q5b — THE CORRIDOR RE-GRADE at w(8) = 1.0 (derived sign + couplings):**
+
+- **Anchor channel: FAILS BOTH AUDITED FRAMES at every probed range.**
+  Totals = the bare coat floor (0.111/0.091/0.051/0.041 at v = 30/50/200/
+  1500) at every derived-g² row — the E_qq share adds nothing above
+  10⁻²⁶. viol(audited_extended) = **27.13**; viol(audited_central) =
+  **90.42** (binding wall: the v = 30 coring demand, lo = 3.0 and 10.0 vs
+  the 0.11 floor). Hurting-first quantification (the 2383 free-g²
+  precedent): the REQUIRED coupling at the extended frame is
+  g² = 2.61×10⁻² MeV·fm — the derived value falls short by **10^23.6**;
+  at the central frame **NO passing g² exists at any coupling on
+  [10⁻⁸, 10⁶]** (best viol 1.80 — monodisperse {8} is shape-closed there
+  independent of coupling strength). This is not a knife-edge: no O(1) —
+  or O(10⁶) — factor moves it.
+- **XQC channel: PASSES at the derived coupling.** Exact cached
+  ρ*(N = 8): 1.019/0.104/0.053 attractive and 1.224/0.169/0.091 repulsive
+  at S_c = 0.012/0.035/0.05 — worst-ratio monotone in S_c (the 2391 V3
+  structure), so the derived coupling, far below the island floor, passes
+  with more headroom than every graded point; ρ* ≥ 1 at the floor means
+  N = 8 is XQC-clean at FULL standard density even at the most
+  conservative graded coupling. Consistent with the committed 2403
+  domination row (CLOSED input).
+
+**GRADING (mechanical, pre-registered §34.21): BRANCH (a) — THE KILL
+FIRES.** The anchor channel fails both audited frames at the derived
+coupling. **The sole member dies; the ring family is dead at the corridor,
+FULLY DERIVED → the Clause 1(a) exit lands on the founder's desk.** Per
+the pre-registered branch: the P2 registration items do NOT execute
+(nothing survives to register); the (d′)/attestation consequence record
+still writes (queued, founder's desk).
+
+**The physical content, stated straight (no smoothing):** the derivation
+chain is self-consistent end to end, and that is precisely what kills. The
+(N−1)-order discreteness-defect protection — the SAME derived structure
+that made N = 8 unconditionally clear at LZ (×32), DAMIC (orders), XQC,
+and every ladder rung — is channel-blind: it suppresses the ring's E_qq
+grip on a neighboring ring exactly as it hides the ring from a xenon
+nucleus. A closed ring cannot be seventh-multipole-invisible to detectors
+and simultaneously supply σ_T/m ~ 3–10 at 30 km/s to core dwarfs. The
+charter hypothesis — the screened E_qq residual as the dwarf-coring
+mechanism (1858) — is excluded for the ring family by its own completed
+derivation. **What died is the CORING claim, not the species' experimental
+viability:** N = 8 passed every published experimental rung and emerges as
+an effectively collisionless (CDM-like) relic at dwarf scales — the
+closure analogue of the original entry's "under-cored → weak-SIDM
+fallback" exit, with the under-coring supplied by topology rather than a
+short R_s. Whether a CDM-like N = 8 successor branch (no coring claim) is
+worth registering is the founder's call, NOT executed or presumed here.
+
+**Named pins:** PIN-Q5a-1 — FL is the ROD-measured coat floor (1868–1871,
+J8 geometry); the ring's coat geometric factor is untraced O(1)–O(few);
+the verdict survives any such rescaling in either direction (the shortfall
+is ×27–×90 at floor level and 10^23.6 in coupling). PIN-Q5b-1 — the
+far-field q ↔ ħc/r correspondence for the ring–ring channel; robustness
+shown across r = R_s down to the 3-fm far-field edge (12+ orders of margin
+at the worst case); sub-3-fm contact scattering is outside far-field
+validity but its geometric cross-section IS the coat floor, already
+counted. Adjacent fact recorded, not consumed: dissipative capture via
+the gapless |SSV| channel (OPEN-DM-CAPTURE-1) remains an UNREGISTERED
+coupling and cannot enter under 0865 — its future registration would be a
+new derivation, not a rescue of this grading.
+
+**Instrument discipline note (per no-smoothing; full record
+`reasoning/2413.md` §4):** one instrument misstep caught by the gates and
+fixed with the physics unmoved — the arc's 7th machinery-catches-worker:
+the V2(iii) v1 probe set included q = 2 MeV, where the (N−1)-law value
+(8.3×10⁻¹⁹) sits below the double-precision floor of the orientation
+average (~10⁻¹⁶ on eight O(1) summands); the gate went RED on machine
+noise. The 2403 §4 absolute-floor criterion reapplied: law-tracking
+checked where signal clears the floor; the low-q numeric value recorded as
+an upper bound. Every Q5a grading momentum (7.8–65.8 MeV) is in the clean
+region; no grading value moved.
+
+**Campaign state at this grading:** OPEN-SS-43 stages Q1–Q5 are ALL
+EXECUTED. Q5 grading = branch (a). On the founder's desk: (i) the Clause
+1(a) adjudication of the ring family's corridor death; (ii) the disposition
+of N = 8 as a possible CDM-like (no-coring) successor branch — register,
+hold, or decline; (iii) the (d′)/attestation consequence record; (iv)
+whether OPEN-SS-43's dashboard status changes (the coring hypothesis at
+ring composition is now derivation-excluded; the problem's original
+make-or-break question is ANSWERED in the negative for this family);
+(v) optional CONV-001 panel consult on the completed campaign record.
+NO adoption in passing at this record.
+
+Artifacts: `code/2413_ss43_q5_sign_corridor.py`, `code/2413_results.json`;
+registry `frontier_sectors/SS.md` 2413 block; `reasoning/2413.md`
+(verbatim, at-patch).

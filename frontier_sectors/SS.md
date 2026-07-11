@@ -1171,6 +1171,30 @@ strict point 2.1817×10⁻⁴⁸. Out of scope: R2 execution (separate window); 
 grading + founder adjudication. Registration-only — NO Q5 computation this patch; launch completes on the
 contract verified at origin + the founder's verbatim go. Reasoning: `reasoning/2412.md`.
 
+**[Patch 2413, 11 July 2026] SS43-Q5 EXECUTED — THE SIGN DERIVED (dwarf channel REPULSIVE,
+coat-dominated; F-A2 DISCHARGED by derivation, against the 2383 attractive default) AND THE PRE-REGISTERED
+KILL FIRES: the anchor channel fails BOTH audited frames at the derived coupling (viol 27.1 extended / 90.4
+central; totals = the bare coat floor); the {N = 8} ring family is DEAD AT THE CORRIDOR, FULLY DERIVED —
+Clause 1(a) on the founder's desk (§34.22; battery ALL PASS; founder go verbatim "Go on the contract.
+Please proceed as per your recommendations."; contract verified at origin pre-launch).** The derived
+structure is channel-blind: the same (N−1)-order discreteness-defect protection that cleared N = 8 at every
+direct-detection rung (LZ ×32, DAMIC by orders, XQC ρ* ≥ 1 at the island floor) doubly suppresses the
+ring–ring E_qq grip — D̄/ring = 1.2×10⁻¹⁴ at r = R_s ⇒ derived g² = 7.1×10⁻²⁶ MeV·fm vs required
+2.6×10⁻² (extended; shortfall 10^23.6); the central frame is shape-closed at ANY coupling (best viol 1.80
+on [10⁻⁸, 10⁶]). Not a knife-edge. WHAT DIED IS THE CORING CLAIM, not the species' experimental viability:
+N = 8 emerges effectively collisionless (CDM-like) at dwarf scales — the closure analogue of the 1858
+entry's under-cored/weak-SIDM exit, with the under-coring supplied by topology. XQC PASSES at the derived
+coupling (both signs, monotone). Pins: PIN-Q5a-1 (rod-measured coat floor, O(few) ring factor untraced —
+verdict survives any rescaling); PIN-Q5b-1 (far-field q↔ħc/r correspondence; robust R_s → 3 fm, 12+ orders
+margin). Adjacent fact NOT consumed: |SSV| dissipative capture (OPEN-DM-CAPTURE-1) unregistered — no rescue
+under 0865. One instrument misstep gate-caught (arc's 7th machinery-catch: sub-floor V2 probe at q = 2 MeV;
+the 2403 absolute-floor criterion reapplied; physics unmoved; reasoning §4). Campaign state: Q1–Q5 ALL
+EXECUTED; grading branch (a). Founder's desk: Clause 1(a) adjudication; disposition of a CDM-like
+(no-coring) N = 8 successor branch — register/hold/decline; the (d′)/attestation record; the dashboard
+status call; optional CONV-001 consult on the completed campaign record. P2 registration items NOT executed
+per the pre-registered branch. Computation-class, ONE git am: instrument + results + §34.22 + this block +
+reasoning/2413.md.
+
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's

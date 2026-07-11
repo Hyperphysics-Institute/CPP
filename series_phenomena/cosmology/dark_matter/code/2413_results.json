@@ -1,0 +1,143 @@
+{
+ "patch": 2413,
+ "task": "SS43-Q5 sign synthesis + corridor re-grade at {N=8}",
+ "V1": {
+  "scratch": true,
+  "scripts": {
+   "2410_ss43_1a_regrade.py": 0.0,
+   "2403_ss43_q4c_residual_scale.py": 9.7,
+   "2401_ss43_q4b_vertex_class.py": 0.0,
+   "2393_ss43_q2_ring_multipole.py": 95.3
+  }
+ },
+ "V2_coat_floor": {
+  "FL": {
+   "30": 0.11,
+   "50": 0.09,
+   "200": 0.05,
+   "1500": 0.04
+  },
+  "band_1500_committed": [
+   0.03612276539206505,
+   0.05182754993438721
+  ]
+ },
+ "V2_defect_N8": {
+  "8.0": {
+   "sqrtD2": 1.4937826225252278e-14,
+   "law": 1.3646651224519315e-14,
+   "ratio": 1.0946147871364273
+  },
+  "20.0": {
+   "sqrtD2": 9.111655142712882e-12,
+   "law": 8.329254897777899e-12,
+   "ratio": 1.0939340018449566
+  },
+  "49.5": {
+   "sqrtD2": 5.167314227970002e-09,
+   "law": 4.7384093408834e-09,
+   "ratio": 1.090516638861479
+  },
+  "2.0": {
+   "sqrtD2_floor_saturated": 2.1310278387565725e-16,
+   "law": 8.3292548977779025e-19,
+   "floor_note": "numeric = machine floor; upper bound only"
+  }
+ },
+ "Q5a_ring_ring_Eqq": {
+  "r = R_s (screening range)": {
+   "r_fm": 25.42,
+   "q_mev": 7.76266719118804,
+   "Dbar_per_ring": 1.20991072410559e-14,
+   "g2_derived": 7.144690612026476e-26
+  },
+  "r = R_s/4": {
+   "r_fm": 6.355,
+   "q_mev": 31.05066876475216,
+   "Dbar_per_ring": 1.9792934318194357e-10,
+   "g2_derived": 1.9120407413101684e-17
+  },
+  "r = 3 fm (near-contact edge of far-field": {
+   "r_fm": 3.0,
+   "q_mev": 65.77566666666667,
+   "Dbar_per_ring": 3.769132933177346e-08,
+   "g2_derived": 6.933614384401837e-13
+  }
+ },
+ "Q5a_sign": {
+  "dwarf_ring_ring": "REPULSIVE (coat-dominated: the E_qq share is doubly defect-protected; the coat floor is the surviving term)",
+  "xqc_ring_nucleus": "E_qq defect (attract-only) at magnitude far below every graded threshold; sign immaterial at the derived magnitude -- both signs graded"
+ },
+ "Q5b_anchor_derived": {
+  "r = R_s (screening range)": {
+   "totals": {
+    "30": 0.11059079372662123,
+    "50": 0.09059079372662122,
+    "200": 0.05059079372662123,
+    "1500": 0.04059079372662123
+   },
+   "viol_extended": 27.127031997039055,
+   "viol_central": 90.42343999013018
+  },
+  "r = R_s/4": {
+   "totals": {
+    "30": 0.11059079372662123,
+    "50": 0.09059079372662122,
+    "200": 0.05059079372662123,
+    "1500": 0.04059079372662123
+   },
+   "viol_extended": 27.127031997039055,
+   "viol_central": 90.42343999013018
+  },
+  "r = 3 fm (near-contact edge of far-field": {
+   "totals": {
+    "30": 0.11059079372662123,
+    "50": 0.09059079372662122,
+    "200": 0.05059079372662123,
+    "1500": 0.04059079372662123
+   },
+   "viol_extended": 27.127031997039055,
+   "viol_central": 90.42343999013018
+  },
+  "floor_only": {
+   "totals": {
+    "30": 0.11059079372662123,
+    "50": 0.09059079372662122,
+    "200": 0.05059079372662123,
+    "1500": 0.04059079372662123
+   },
+   "viol_extended": 27.127031997039055,
+   "viol_central": 90.42343999013018
+  }
+ },
+ "Q5b_required_g2": {
+  "audited_extended": {
+   "required_g2": 0.026085773438039195,
+   "derived_g2_at_Rs": 7.144690612026476e-26,
+   "shortfall_orders": 23.562420290802123
+  },
+  "audited_central": {
+   "passing_g2": null,
+   "best_viol": 1.8046501217478508,
+   "at_g2": 0.03162277660168379
+  }
+ },
+ "Q5b_xqc": {
+  "rho_star": {
+   "attractive,0.012": 1.019035315786939,
+   "attractive,0.035": 0.10385662633122354,
+   "attractive,0.05": 0.05274473441674021,
+   "repulsive,0.012": 1.2236939143192926,
+   "repulsive,0.035": 0.16920655209800275,
+   "repulsive,0.05": 0.09134418713168731
+  },
+  "monotone": true,
+  "pass_at_derived": true
+ },
+ "grading": {
+  "anchor_fails_both_frames_at_derived": true,
+  "xqc_pass_at_derived": true,
+  "kill_fires": true,
+  "branch": "(a) KILL"
+ }
+}
