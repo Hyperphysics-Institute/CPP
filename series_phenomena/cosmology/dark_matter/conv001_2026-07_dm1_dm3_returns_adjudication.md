@@ -153,4 +153,11 @@ verbatim**, in the release-execution patch, together with the changelog SHIP
 lines and the deposit-queue entries.
 
 **FOUNDER RELEASE DECISION (verbatim required):**
-> DM-1/DM-3 RELEASE (TLA, date): ______
+> DM-1/DM-3 RELEASE (TLA, 10 July 2026): "Release DM-1 v1.5 and DM-3 v1.1"
+
+*Recorded at Patch 2408 (10 July 2026), verbatim from the founder in-session.
+The gate is OPEN. Per the standing lane rule the release-execution patch
+(NOT-YET-RE-SHIPPED flag flips + changelog SHIP lines + deposit-queue
+entries) runs as its own dedicated action in a fresh window — it is NOT
+executed in this campaign session. The Copilot re-run carry (non-blocking,
+2352 reopening grammar) rides with the execution.*
