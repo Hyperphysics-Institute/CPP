@@ -1151,6 +1151,26 @@ consult. Separate lane: R2 execution (gate opened at 2408). METH-L2-014 register
 external-data authentication battery, arc's 5th machinery-catch). Handover:
 `handovers/2026-07-10_dm_ss43_p1_complete_n8_alone_q5_gate_open.md`. NEXT-SESSION KEYWORD: DM-WARM-2411.
 
+**[Patch 2412, 11 July 2026] SS43-Q5 CONTRACT REGISTERED (§34.21, keyword DM-WARM-2412) — the campaign's
+FINAL stage: coat-channel sign synthesis + corridor re-grade at the resolved family {N = 8, 11.26 GeV,
+w(8) = 1.0}.** Founder verbatim: "DM-Warm 2411" / "Please proceed as per recommendations." Two deliverables,
+ordered: **Q5a** — the effective per-channel TRANSFER sign DERIVED (C4): E_qq capture residual (attract-only
+1858, screened form now fully derived by Q4: linear-in-χ / Class V-t / discreteness defect) vs the E_ee coat
+channel (repulsive, measured floor 1868–1871), per graded channel (ring–ring at dwarf velocities; ring–nucleus
+at XQC momentum transfer), from registered primitives (0865 held) — discharges F-A2 either way, the sign
+itself carries no kill; **Q5b** — the 2383 two-channel corridor re-graded at w(8) = 1.0 under the derived
+sign + derived couplings (anchor eff_dist at both audited frames + XQC summed criterion at the Q4c defect
+coupling, NOT the rod-natural 0.035). **PRE-REGISTERED KILL: the corridor closes at {N = 8} ⇒ the sole member
+dies, family dead FULLY DERIVED ⇒ Clause 1(a) — the campaign's last gate, no fallback member.** Grading
+pre-registered (a) kill / (b) full landing = the §34.4 five-stage plan COMPLETE at candidate level, P2 package
+unblocks, dashboard flip to the founder / (c) conditional with named pins, no smoothing. Battery: V1 scratch
+chain green (2410 transitive); V2 pass-gates = 2383 both-sign row reproduction + coat-floor anchors fresh +
+Q4c defect at N = 8; V3 spot checks; V4 no-freedom (METH-L2-014 mandatory on any verdict-firing external
+data — none expected); V5 cache schema-purity. CLOSED inputs: §34.7/§34.9/§34.11/§34.13–§34.20 + the precise
+strict point 2.1817×10⁻⁴⁸. Out of scope: R2 execution (separate window); N = 4–7 re-litigation; P2 before
+grading + founder adjudication. Registration-only — NO Q5 computation this patch; launch completes on the
+contract verified at origin + the founder's verbatim go. Reasoning: `reasoning/2412.md`.
+
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's

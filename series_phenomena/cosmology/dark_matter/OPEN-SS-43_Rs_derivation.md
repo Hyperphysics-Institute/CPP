@@ -1713,3 +1713,136 @@ queued the Q2-identity registration at 2405); the (d′) attestation-record
 consequence write-up; an optional CONV-001 panel consult at family
 resolution (founder's call). Handover:
 `handovers/2026-07-10_dm_ss43_p1_complete_n8_alone_q5_gate_open.md`.
+
+### 34.21 SS43-Q5 CONTRACT + WARM-LAUNCH REGISTRATION — coat-channel sign synthesis + corridor re-grade at the resolved family {N = 8}; the campaign's FINAL stage (Patch 2412, 11 July 2026)
+
+**Founder direction:** verbatim: **"DM-Warm 2411"** / **"Please proceed as per
+recommendations."** (on the Priority-1 recommendation of the 2026-07-10
+P1-complete handover; recorded in `reasoning/2412.md` §1 per the §10 block).
+This section registers the contract; per the standing anti-priority and the
+§34.20 launch requirement, **NO Q5 computation begins until (i) this contract
+is verified AT ORIGIN (the 2400/2401 pass-gate lesson) and (ii) the founder's
+verbatim go on the contract is on record.**
+
+**Warm-launch keyword: DM-WARM-2412.**
+
+**Target family (CLOSED input, §34.20):** **{N = 8}, monodisperse
+w(8) = 1.0, mass 11.26 GeV** — the founder-adopted single survivor of the
+four-number P1 adjudication (§34.17–§34.19, adopted §34.20). No other member
+is graded; the N = 4–7 deaths are founder-adopted and are not re-litigated
+(reopening only via the 2352 grammar on a direct-read mismatch).
+
+**Handover set (self-contained, all under
+`series_phenomena/cosmology/dark_matter/` unless noted):** this file §34 in
+full — especially §34.3 C4 (the sign collision this stage resolves), §34.7
+(the wall), §34.13–§34.15 (the Q4 derived machinery Q5 consumes: linear-in-χ
+gap ⇒ R_s = 25.42 fm; Class V-t; the discreteness-defect residual at
+(N−1) = 7 multipole order for N = 8), §34.19–§34.20 (the family resolution);
+`code/2383_q3b2c_family_channels_sign_grade.py` + `code/2383_results.json` +
+`code/2383_joint_couplings.json` (the standing two-channel corridor machinery
+and its committed both-sign precedent rows); the committed
+`code/2379_unit_cache.json`; `code/1879_xqc_recomputation.py` (the XQC
+pipeline); the 1868–1871 coat-floor record (b_eff(v), S(v), the soft-MC
+measured floor — the repulsive channel's registered anchors);
+`code/2403_ss43_q4c_residual_scale.py` + `code/2403_results.json` (the
+derived ring–nucleus defect at N = 8); `reasoning/2399.md`,
+`reasoning/2401.md`, `reasoning/2403.md`.
+
+**Pre-registered scope — TWO deliverables, ordered (analytic core first):**
+
+- **(i) Q5a — the effective per-channel TRANSFER sign, DERIVED (C4;
+  discharges F-A2):** the registered structure already carries BOTH signs —
+  the E_qq capture residual (attract-only, 1858; its screened form now fully
+  DERIVED by Q4: linear-in-χ gap, Class V-t sourcing, post-closure residual
+  = the discreteness defect) and the E_ee coat channel (REPULSIVE; the
+  measured floor, 1868–1871). The deliverable is the effective transfer sign
+  entering each graded channel for the closed N = 8 ring: **(a) ring–ring
+  scattering at dwarf velocities** (the anchor channel's σ_T — where the
+  saturated closed-ring bonds plausibly enhance the repulsive coat share,
+  §34.3 C4) and **(b) ring–nucleus scattering at XQC momentum transfer** —
+  i.e., which channel dominates each graded observable, derived from
+  registered primitives (0865 held; CONV-004 tags wherever a measured
+  quantity enters), NOT chosen. F-A2's ARGUMENT-LEVEL tag (Patch 2385,
+  panel finding, executed) is discharged in whichever direction the
+  derivation lands — either landing is admissible; the sign itself carries
+  no kill; the corridor does.
+- **(ii) Q5b — the corridor RE-GRADE at {N = 8} on the derived sign
+  (machinery standing, §34.4):** re-run the 2383 two-channel grade at
+  composition w(8) = 1.0 under the DERIVED sign and the DERIVED coupling
+  scales — **anchor channel** (eff_dist at the fixed audited frames,
+  audited_extended + audited_central, viol ≤ 1 + 1e-9 ⇔ PASS, 2349/2371
+  convention) + **XQC channel** (the 2374c summed-spectrum criterion via the
+  committed unit cache; the ring–nucleus coupling is the Q4c-derived defect
+  at seventh multipole order, NOT the rod-natural S_c = 0.035). Fresh
+  pipeline points append to the cache schema-pure. Report per (frame,
+  channel), hurting-first ordering; no pre-grading of either channel in
+  this registration.
+
+**Pre-registered KILL (the contract's own):** if the derived sign + derived
+couplings CLOSE the corridor at {N = 8} — anchor-channel failure at BOTH
+audited frames under the derived coupling, or an XQC violation at the derived
+ring–nucleus coupling — the sole member dies and **the family is dead FULLY
+DERIVED → Clause 1(a) exit on the founder's desk.** There is no fallback
+member; this is the campaign's last gate.
+
+**Grading (mechanical, pre-registered — no adjustment after the derivation):**
+
+- **(a) KILL** as above → Clause 1(a), fully derived; the P2 package's
+  registration items do NOT execute (nothing survives to register); the
+  (d′)/attestation consequence record still writes (founder's desk).
+- **(b) FULL LANDING** (sign derived from registered structure; corridor
+  passes at {N = 8} at both audited frames and XQC) → **the §34.4 five-stage
+  plan is COMPLETE at candidate level**: F-A2 discharged; N = 8 stands as
+  the fully-derived candidate DM species clearing BOTH the published
+  direct-detection ladder (§34.19) and the corridor; the P2 package
+  (successor/prediction registration — founder adjudication;
+  S/V-t + defect-multipole glossary promotion; the (d′) attestation
+  write-up; optional CONV-001 panel consult) UNBLOCKS for execution; the
+  `research_frontier.md` dashboard flip goes to the founder with the
+  completed record — no flip in passing.
+- **(c) PARTIAL/CONDITIONAL** (e.g., a derived sign or coupling carrying an
+  unpinned O(1) that straddles a corridor wall; a frame-split outcome) →
+  recorded channel-by-channel, named pins, NO smoothing; founder
+  adjudication on the recorded residue before any P2 execution.
+
+**Verify battery (binding):**
+
+- **V1 chain green underneath:** the 2410 battery (transitively
+  2409 → 2403 → 2401 → 2399 → 2395 → 2393 → 2391 → 2381/2382/2383) run in a
+  SCRATCH COPY; committed artifacts untouched.
+- **V2 known-limit PASS-GATES (before any grading):** (i) the corridor
+  machinery reproduces its committed 2383 both-sign rows for a pre-declared
+  member subset, consistent against `code/2383_results.json`; (ii) the
+  1868–1871 coat-floor anchors recomputed fresh; (iii) the Q4c defect
+  scaling at N = 8 reproduced against `code/2403_results.json`. Failure =
+  machinery/derivation not trusted; fix or escalate; NO grading past a red
+  gate.
+- **V3 pre-declared spot checks:** independent seed on the anchor anneals;
+  sign-flip symmetry of the corridor machinery verified on a cached row.
+- **V4 no-freedom audit:** 0865 held; every coefficient traced; CONV-004
+  tags on every measured entry; NO external data may fire a verdict without
+  the METH-L2-014 authentication battery (mandatory, the §34.19 lesson) AND
+  a founder-gated amendment to this contract — none is expected (the
+  corridor consumes committed data only).
+- **V5 cache integrity:** schema-pure appends only; redirected output for
+  committed-record runs (the 2395 §5 lesson).
+
+**CLOSED inputs (cited, never re-derived, never re-graded):** the §34.7
+wall; the §34.9/§34.11/§34.13–§34.16 gradings; the §34.18/§34.19 four-number
+adjudication (the strict point at its precise 2.1817×10⁻⁴⁸ at 40 GeV — cite
+this value, not the rounding); §34.20.
+
+**Out of scope (binding):** the R2 release execution (separate dedicated
+window; gate open at 2408); any N = 4–7 re-litigation; the P2 registration
+items before this contract's grading is recorded AND the founder adjudicates;
+TATWD or dashboard edits in passing; DAMIC re-pin; the F-A1
+substrate-constancy theorem (lives in the OPEN-FP-SF-2-η work, §34.1 carried,
+not this stage's channel).
+
+**Expected cost:** one session on the Q4/Q2 output (§34.4); the corridor
+machinery is standing; the sign synthesis is the analytic core.
+
+**Launch completion:** the founder applies and pushes this patch (2412
+verified at origin), then gives the **verbatim go on the contract**; Q5a
+opens on the go — in this session if the go lands here, else next session on
+**DM-WARM-2412**.
