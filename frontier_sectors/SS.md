@@ -1237,6 +1237,23 @@ DM-4; run the (C) cascade cheap-kill in parallel; HOLD (B) until (A) lands, then
 falsifiers if (A) dies); D4 the Copilot lane note. **NO VERDICT MOVED.** Registry/panel-class patch;
 reasoning/2415.md.
 
+**[Patch 2416, 11 July 2026] SESSION CLOSE — FOUNDER D-VERDICT ADOPTED VERBATIM ("Accept your
+recommendations as adjudication verdict."): the Q5 panel round CLOSED at 4/5; the §34.22 terminal grading
+PANEL-VERIFIED; the ring family's corridor death stands FOUNDER-ADOPTED on a verified record (recorded as
+the consequence of the adopted sequencing, slot open for a founder-worded 1(a) statement); the SUCCESSOR
+SEQUENCING ADOPTED — (A) the |SSV| coupling derivation FIRST (fresh contract; the panel-sharpened TWO-SIDED
+kill: τ_cool < t_Hubble AND no runaway collapse / stellar-kinematics / gas-heating violation; dual-consumer
+with the DM-4 Stage-0(ii) rent; natural registry home OPEN-DM-CAPTURE-1); (C) the cascade cheap-kill
+PARALLEL (own contract; two-part kill: derived open-chain fraction bridging ×90 AND blended shape passing
+the V3-closed central frame); (B) HELD pending (A) — on an (A) landing N = 8 registers WITH a coring
+mechanism, on an (A) death (B) registers only with the compiled falsifier menu; D4 Copilot lane note
+adopted (§34.23, Patch 2416).** OPEN-SS-43 Q1–Q5 ALL EXECUTED — the campaign's stage plan is COMPLETE;
+dashboard status call CARRIED to the founder (decide with the (A) registration; no flip in passing).
+Carried founder items: (d′)/attestation record; dashboard call; optional 1(a) wording. Two methods
+candidates carried with NAMED triggers (generous-ceiling kill-bounding; double-form-factor construction) —
+catalog-first on reuse. Handover:
+`handovers/2026-07-11_dm_ss43_q5_complete_panel_verified_ssv_queued.md`. NEXT-SESSION KEYWORD: DM-WARM-2416.
+
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's

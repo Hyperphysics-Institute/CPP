@@ -1977,3 +1977,54 @@ NO adoption in passing at this record.
 Artifacts: `code/2413_ss43_q5_sign_corridor.py`, `code/2413_results.json`;
 registry `frontier_sectors/SS.md` 2413 block; `reasoning/2413.md`
 (verbatim, at-patch).
+
+### 34.23 FOUNDER ADJUDICATION OF THE Q5 PANEL ROUND — D1–D4 ADOPTED AS RECOMMENDED: round CLOSED at 4/5; the terminal grading PANEL-VERIFIED; the successor sequencing ADOPTED (|SSV| derivation first, (C) cascade cheap-kill parallel, (B) HELD); the ring family's corridor death stands founder-adopted on a verified record (Patch 2416, session close, 11 July 2026)
+
+**Founder ruling (verbatim):** **"Accept your recommendations as
+adjudication verdict."** (followed by "Please initiate the handover
+protocol." and the apply confirmation "2315 applied" — a typo for 2415,
+resolved by chain-verify: origin stood at 2415/24c21e3 when the ruling
+landed.)
+
+**Effect — the D1–D4 recommendations of
+`conv001_2026-07_ss43_q5_returns_adjudication.md` are ADOPTED verbatim:**
+
+- **D1 ADOPTED — the round is CLOSED at 4/5.** R4's structured
+  access-decline stands non-blocking; no retry.
+- **D2 ADOPTED — the tally is adjudicated.** V1–V3 at 4× VERIFIED, zero
+  refutations: **the §34.22 terminal grading is PANEL-VERIFIED at audit
+  grade.** With the successor sequencing adopted at D3 on the premise of
+  the corridor death, **the Clause 1(a) exit for the ring family's coring
+  claim stands FOUNDER-ADOPTED on a verified record** — recorded as the
+  consequence of this verdict, not silently expanded beyond it; the slot
+  for a founder-worded 1(a) statement remains open if he wishes to add
+  one.
+- **D3 ADOPTED — the successor sequencing:** **(first)** the |SSV|
+  coupling derivation campaign (the OPEN-DM-CAPTURE-1 rent; dual-consumer
+  with DM-4 Stage-0(ii)), carrying the panel-sharpened TWO-SIDED
+  pre-registrable kill (τ_cool < t_Hubble AND no runaway gravothermal
+  collapse / stellar-kinematics / gas-heating violation; XQC headroom as
+  sieve); **(parallel, cheap)** the (C) cascade cheap-kill — one session
+  interrogating the committed 2382 cascade for a surviving open-chain
+  fraction, against the V3 shape-closure constraint; **(HELD)** avenue
+  (B) CDM-like registration until (A) lands — on an (A) landing, N = 8
+  registers WITH a coring mechanism; on an (A) death, (B) registers only
+  with the compiled falsifier menu attached (§Part-II triage, Patch
+  2415). Per standing discipline, BOTH (A) and (C) open under fresh
+  launch contracts + the founder's verbatim go — nothing computes on this
+  adoption alone.
+- **D4 ADOPTED — the Copilot lane note:** artifact-level rounds inline
+  artifacts for the Copilot seat or scope its deliverable process-level;
+  the 2415 return anomaly stands documented.
+
+**Still on the founder's desk (carried, NOT closed by this verdict):**
+the (d′)/attestation consequence record; the OPEN-SS-43 dashboard status
+call (worker recommendation: decide it WITH the (A) campaign
+registration, since the |SSV| route is a new mechanism aimed at the same
+coring problem — no flip in passing at this close); the optional
+founder-worded Clause 1(a) statement.
+
+**Campaign state at this close:** OPEN-SS-43 Q1–Q5 ALL EXECUTED; Q5
+branch (a) PANEL-VERIFIED and founder-adopted; the successor programme is
+sequenced and gated on fresh contracts. Handover:
+`handovers/2026-07-11_dm_ss43_q5_complete_panel_verified_ssv_queued.md`.

@@ -145,3 +145,15 @@ their content.
 **NO VERDICT MOVED.** The §34.22 grading stands recorded and now carries
 panel verification; the Clause 1(a) ruling, the successor direction, and
 the round-close decision are the founder's. Reasoning: `reasoning/2415.md`.
+
+---
+
+## DECISION SLOT — FILLED (Patch 2416, 11 July 2026)
+
+**Founder ruling (verbatim): "Accept your recommendations as adjudication
+verdict."** D1–D4 ADOPTED as written above: round CLOSED at 4/5; tally
+adjudicated (the §34.22 terminal grading PANEL-VERIFIED); successor
+sequencing adopted ((A) |SSV| derivation first under a fresh contract;
+(C) cascade cheap-kill parallel under its own contract; (B) HELD pending
+(A)); the Copilot lane note adopted. Full effect record: campaign file
+§34.23.
