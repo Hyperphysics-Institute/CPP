@@ -1447,3 +1447,75 @@ Scope guard held: no number manufactured, no pre-grading, no Q5 pre-work, R2
 lane untouched. Artifacts: this section; `frontier_sectors/SS.md` 2404 block;
 `reasoning/2404.md` (verbatim, at-patch; includes the full search/access
 record).
+
+### 34.17 THE (1b) LOCATE EXECUTED — the Dec-2025 LZ low-mass publication FOUND, its digitized curve LOCATED, and the three edge-species pins STRUCTURED to the access limit; per-mass reads = named founder data actions; three pre-staged conditionals registered (Patch 2406, 10 July 2026)
+
+**Founder go (verbatim):** "Please recommend and proceed." (the (1b) locate search,
+this session's queued P1 item per the 2405 handover) and "Please proceed as
+recommended." (this registration patch). Data/registration-class patch, the
+2404 pattern applied to the second named number set.
+
+**The publication is FOUND.** arXiv:2512.08065v1, posted 8 December 2025:
+"Searches for Light Dark Matter and Evidence of Coherent Elastic
+Neutrino-Nucleus Scattering of Solar Neutrinos with the LUX-ZEPLIN (LZ)
+Experiment" — the WS2025 low-mass analysis anticipated at §34.16(ii).
+Verified against the announcement fingerprint: 417 live days post-selection
+(546 calendar live days, March 2023–April 2025), 5.7 ± 0.2 tonne-year
+exposure, DM masses 3–9 GeV/c², ROI ≈ 1–6 keV nuclear recoil, world-leading
+SI and SD-neutron limits down to 5 GeV/c²; submitted to PRL (the HEPData
+record carries no journal information at locate time — status: arXiv preprint
+plus official collaboration data release, which satisfies the §34.16(ii)
+"on publication" trigger).
+
+**The digitized curve is LOCATED.** HEPData record **ins3091049** (alternate
+record id 167350), DOI 10.17182/hepdata.167350.v1, table t1 **"SI cross
+section"** (90% CL WIMP SI cross sections, including sensitivities) — the
+exact analogue of the (1a) table on ins2841863. The record and table
+metadata fetched successfully in-session; the data download endpoints
+(hepdata.net/download/table/1868157/{csv,yaml,root}) returned bot-detection
+blocks — **the identical access limit as the 2404 pin**. Per CONV-004, no
+per-mass value was read, inferred, or manufactured.
+
+**Text-anchored adjacent facts (quoted in the paper's prose, not read off a
+figure):** the observed 90% CL SI upper limit spans **2.9×10⁻⁴² cm² at
+3 GeV/c²** to **1.2×10⁻⁴⁶ cm² at 9 GeV/c²**. These are recorded as endpoint
+anchors ONLY. No verdict is drawn from them: the per-mass local values at
+the three derived masses must be READ, not inferred — the (d′) attestation
+mass sits inside this window, which is exactly the flip-a-verdict
+configuration the discipline exists for (the 2404 stop, replayed). The
+already-committed §34.16 stake stands unchanged and is not upgraded here:
+the endpoints are consistent with plausible intra-family discrimination;
+the verdicts await the reads.
+
+**Pre-staged mechanical re-grades (fire on paste, zero judgment):** against
+the derived residual couplings committed at §34.15 (Patch 2403) —
+
+- **N = 4 (5.63 GeV, derived σ = 1.37×10⁻³⁸ cm²):** SURVIVES iff
+  σ_LZ(5.63 GeV) > 1.37×10⁻³⁸ cm²; else EXCLUDED.
+- **N = 5 (7.04 GeV, derived σ = 2.46×10⁻⁴¹ cm²):** SURVIVES iff
+  σ_LZ(7.04 GeV) > 2.46×10⁻⁴¹ cm²; else EXCLUDED.
+- **N = 6 (8.45 GeV — the (d′) attestation mass, derived
+  σ = 5.07×10⁻⁴⁴ cm²):** SURVIVES iff σ_LZ(8.45 GeV) > 5.07×10⁻⁴⁴ cm²;
+  else EXCLUDED.
+
+Reads at the tabulated mass nearest each derived mass, or log-interpolated
+between adjacent tabulated points (the same convention as the (1a) pin).
+
+**The consolidated founder visit (one HEPData session, FOUR numbers):**
+(1a) hepdata.net/record/ins2841863, table "SI cross section", at 9.86 GeV —
+re-grade: N = 7 CLEARS iff > 1.16×10⁻⁴⁶ cm² (§34.16); (1b)
+hepdata.net/record/ins3091049, table "SI cross section", at 5.63, 7.04, and
+8.45 GeV — the three conditionals above. **The consolidated adjudication
+record for all four numbers lands at §34.18** on the founder's paste. This
+re-points, in form only and declared here, the 2405 handover's "(1a) record
+lands at §34.17": §34.17 is this staging block; the adjudication record is
+§34.18. Substance unchanged.
+
+**Standing consequences:** P1 is now fully structured — residue = four
+numbers, all mechanical on receipt, one site visit. Q5 remains gated on all
+four landing plus founder adjudication of the completed record. The
+Q2-identity theorem registration remains unblocked-and-queued (P2, founder's
+ordering preference). Scope guard held: no number manufactured, no
+pre-grading, no Q5 pre-work, R2 lane untouched, no DAMIC re-pin. Artifacts:
+this section; `frontier_sectors/SS.md` 2406 block; `reasoning/2406.md`
+(verbatim, at-patch; carries the full search/access record).

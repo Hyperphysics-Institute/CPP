@@ -1080,6 +1080,20 @@ grade the three derived residuals against the published curve on release (plausi
 discrimination; not pre-graded). §34.15's (c)-adjudication PARTIALLY DISCHARGED — residue = two named
 numbers, mechanical on receipt. Q5 gated on completion; Q2-identity registration queued. Campaign §34.16;
 reasoning 2404.
+**[Patch 2406, 10 July 2026] THE (1b) LOCATE EXECUTED — the Dec-2025 LZ low-mass publication FOUND
+(arXiv:2512.08065v1, 8 Dec 2025; WS2025, 5.7 t-y, 417 live days, 3–9 GeV/c², PRL submitted), its digitized
+curve LOCATED (HEPData ins3091049, DOI 10.17182/hepdata.167350.v1, table "SI cross section"), and the three
+edge-species pins STRUCTURED to the access limit.** Founder go verbatim ("Please recommend and proceed." /
+"Please proceed as recommended."). Download endpoints bot-blocked in-session — the identical 2404 access
+limit; per CONV-004 no per-mass value read, inferred, or manufactured. Text-anchored endpoint facts (quoted
+in the paper's prose): observed 90% CL SI limit spans 2.9×10⁻⁴² cm² at 3 GeV to 1.2×10⁻⁴⁶ cm² at 9 GeV —
+endpoint anchors ONLY, no verdict drawn; the §34.16 intra-family-discrimination stake stands unchanged, not
+upgraded. **Pre-staged mechanical re-grades (fire on paste): N=4 SURVIVES iff σ_LZ(5.63 GeV) > 1.37×10⁻³⁸;
+N=5 iff σ_LZ(7.04 GeV) > 2.46×10⁻⁴¹; N=6 (the (d′) attestation mass) iff σ_LZ(8.45 GeV) > 5.07×10⁻⁴⁴ cm².**
+P1 fully structured: FOUR numbers, one HEPData visit (ins2841863 at 9.86 GeV + ins3091049 at 5.63/7.04/8.45);
+the consolidated adjudication record lands at §34.18 (declared re-pointing, form only: §34.17 = staging).
+Q5 gated on all four + founder adjudication; Q2-identity registration stays queued. Campaign §34.17;
+reasoning 2406.
 
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
