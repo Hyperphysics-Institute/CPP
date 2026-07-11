@@ -1519,3 +1519,92 @@ ordering preference). Scope guard held: no number manufactured, no
 pre-grading, no Q5 pre-work, R2 lane untouched, no DAMIC re-pin. Artifacts:
 this section; `frontier_sectors/SS.md` 2406 block; `reasoning/2406.md`
 (verbatim, at-patch; carries the full search/access record).
+
+### 34.18 THE (1b) ADJUDICATION RECORD — three re-grades FIRED against the authenticated official WS2025 curve: N = 4, 5, 6 ALL EXCLUDED (including the (d′) attestation mass, ×361); the (1a) N=7 number remains at the access limit (Patch 2409, 10 July 2026)
+
+**Founder delegation (verbatim):** "Please do your best on this. I don't know
+how to do what you want me to do." — the named data actions delegated to the
+worker; the access route below is fully recorded; verdict adjudication (what
+the kills mean for the family) remains the founder's.
+
+**The access route (owned in full; Tier 4 `reasoning/2409.md` §2):** the
+HEPData download endpoints for BOTH records were re-tried and remain
+bot-blocked (ins3091049 table 1868157; ins2841863 v2 table 1775562 — the
+metadata chain succeeds, the data endpoint blocks; the 2404/2406 limit
+unchanged). The values were then obtained from a **verbatim vendored copy of
+the official HEPData release file**: `github.com/xjw44/QuantumDMLimits`,
+`curves/2512.08065v2/HEPData-ins3091049-v2-SI_cross_section.yaml`, committed
+into this campaign as `code/2409_HEPData-ins3091049-v2-SI_cross_section.yaml`
+(md5 de096873b1bc77fa04c47e173dd0596b). **Three-factor authentication:**
+(i) the file carries HEPData's own download naming convention
+(HEPData-ins{N}-v{V}-{table}); (ii) BOTH curve endpoints reproduce the
+arXiv-v2 paper-text anchors exactly — 2.10996×10⁻⁴² at 3.0 GeV ("2.1×10⁻⁴²")
+and 1.11240×10⁻⁴⁶ at 9.0 GeV ("1.1×10⁻⁴⁶"); (iii) the source repo's own
+documentation distinguishes vendored official HEPData YAML from
+pixel-digitized curves — this file is the former. This is a read of the
+published official data product through an authenticated mirror, NOT an
+inference or a manufactured value; CONV-004 holds.
+
+**VERSION CORRECTIONS (anti-erasure, declared):** (a) the paper has an
+**arXiv v2** (~23 Dec 2025) whose endpoint sentence reads 2.1×10⁻⁴² /
+1.1×10⁻⁴⁶ — superseding the v1 anchors (2.9×10⁻⁴² / 1.2×10⁻⁴⁶) recorded at
+§34.17; both were honest reads of their respective versions; the operative
+curve is **HEPData record v2**, matching arXiv v2. (b) The 2024 combined
+record now carries its PRL publication (Phys. Rev. Lett. 135, 011802;
+journal DOI 10.1103/4dyc-z8zf attached in-record) — minor status upgrade
+over the 2404 pin record; the pinned table and DOI are unchanged.
+
+**THE THREE RE-GRADES (pre-staged at §34.17, fired mechanically; instrument
+`code/2409_ss43_1b_regrade.py`, battery 10/10 PASS incl. both text-anchor
+authentications and a PyYAML-free fallback-parser cross-check; results
+`code/2409_results.json`; log-log interpolation per the registered
+convention, brackets committed in the results file):**
+
+| Species | Mass | σ_LZ (observed 90% CL) | Derived residual | Verdict |
+|---|---|---|---|---|
+| N = 4 | 5.63 GeV | 1.561×10⁻⁴⁵ cm² | 1.37×10⁻³⁸ | **EXCLUDED ×8.8×10⁶** |
+| N = 5 | 7.04 GeV | 3.459×10⁻⁴⁶ cm² | 2.46×10⁻⁴¹ | **EXCLUDED ×7.1×10⁴** |
+| N = 6 (the (d′) attestation mass) | 8.45 GeV | 1.403×10⁻⁴⁶ cm² | 5.07×10⁻⁴⁴ | **EXCLUDED ×361** |
+
+The §34.16(ii) anticipation ("the new data plausibly discriminates WITHIN
+the family, killing lighter members while N = 7–8 stand") fired as written:
+the 2395 edge pins on N = 4–6 are DISSOLVED — into exclusions. The margins
+(10²–10⁷) are orders beyond any transcription-error mode of the mirror
+route; the founder's direct HEPData read remains invited as the
+gold-standard backstop, **non-blocking** (any mismatch on direct read
+reopens without ceremony, the 2352 grammar).
+
+**Adjacent fact (recorded, NO verdict consumed):** the WS2025 observed
+endpoint 1.112×10⁻⁴⁶ at 9.0 GeV sits numerically below the N=7 threshold
+1.16×10⁻⁴⁶ — but at the wrong mass AND from a different dataset than the
+pinned 2024 combined curve. It is explicitly NOT consumed for the (1a) pin.
+
+**(1a) REMAINS PINNED at the access limit.** σ_LZ(9.86 GeV) on the 2024
+combined curve (ins2841863 v2, table 1775562): download bot-blocked; no text
+source; no vendored mirror found across five cloned collections
+(QuantumDMLimits, DarkMatterLimits, WimpLimitsPlotting, DDCalc — LZ 2022
+only, obscura) plus repo searches. **Simplified founder paths (any one, ~2
+minutes):** (i) open hepdata.net/record/ins2841863 in a browser, click
+"SI cross section" in the left-hand table list — the table renders on the
+page; read the "limit" column at the row(s) nearest 9.86 GeV; (ii) simpler
+still: **screenshot that rendered table and paste the image into chat** —
+the worker reads it; (iii) delegate the CSV pull to Isak. Pre-staged
+re-grade unchanged: **N=7 CLEARS iff σ_LZ(9.86 GeV) > 1.16×10⁻⁴⁶ cm².**
+
+**Family state after this record (pending founder adjudication):** live =
+N = 7 (strict-point + local-value conditional, the one outstanding number)
+and N = 8 (unconditional clear, audited ×7.7 against the superseding strict
+point); excluded fully derived-and-graded = N = 4, 5, 6. **Consequences
+routed to the founder's desk, NOT auto-adopted:** the (d′) attestation-mass
+exclusion (member-weight and attestation-record consequences); the family's
+mass support collapsing to 9.86/11.26 GeV; whether Q5 (coat-channel sign
+synthesis + corridor re-grade) proceeds on a {7?, 8} family. **Q5 stays
+GATED:** the §34.16 gate requires BOTH number sets + founder adjudication;
+(1b) is now complete; (1a) is outstanding.
+
+**Scope guard held:** no Q5 pre-work; no (1a) value inferred from the
+adjacent fact or from curve shape; no glossary promotion; R2 lane separate
+(gate opened at 2408, execution queued for a dedicated window); §34.7–§34.17
+CLOSED inputs untouched. Artifacts: this section; the committed data file +
+instrument + results JSON in `code/`; `frontier_sectors/SS.md` 2409 block;
+`reasoning/2409.md` (verbatim, at-patch — full route record).

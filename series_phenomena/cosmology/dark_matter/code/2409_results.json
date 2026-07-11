@@ -1,0 +1,86 @@
+{
+  "table": {
+    "n_points": 13,
+    "mass_range_GeV": [
+      3.0,
+      9.0
+    ],
+    "endpoints": {
+      "3.0": 2.109960836759407e-42,
+      "9.0": 1.1123992891974162e-46
+    },
+    "file_md5": "de096873b1bc77fa04c47e173dd0596b",
+    "source": "HEPData ins3091049 v2, table 'SI cross section' (DOI 10.17182/hepdata.167350), via vendored mirror github.com/xjw44/QuantumDMLimits"
+  },
+  "adjacent_fact_no_verdict": {
+    "note": "WS2025 observed endpoint 1.112e-46 at 9.0 GeV is below the N=7 threshold 1.16e-46 but at the wrong mass AND from a different dataset than the pinned 2024 combined curve \u2014 explicitly NOT consumed for the (1a) N=7 pin.",
+    "ws2025_at_9GeV": 1.1123992891974162e-46,
+    "n7_threshold": 1.16e-46
+  },
+  "grades": {
+    "N=4": {
+      "mass_GeV": 5.63,
+      "sigma_LZ_cm2_loginterp": 1.561095048922859e-45,
+      "bracket_low": {
+        "mass": 5.5,
+        "limit": 1.883608251794532e-45
+      },
+      "bracket_high": {
+        "mass": 6.0,
+        "limit": 9.358552235538168e-46
+      },
+      "derived_residual_cm2": 1.37e-38,
+      "pre_staged_condition": "SURVIVES iff sigma_LZ(5.63) > 1.370e-38",
+      "verdict": "EXCLUDED",
+      "limit_over_derived": 1.1394854371699702e-07,
+      "exclusion_factor_derived_over_limit": 8775891.006414292
+    },
+    "N=5": {
+      "mass_GeV": 7.04,
+      "sigma_LZ_cm2_loginterp": 3.4592654413791902e-46,
+      "bracket_low": {
+        "mass": 7.0,
+        "limit": 3.5743149586009706e-46
+      },
+      "bracket_high": {
+        "mass": 7.5,
+        "limit": 2.4051823982504194e-46
+      },
+      "derived_residual_cm2": 2.46e-41,
+      "pre_staged_condition": "SURVIVES iff sigma_LZ(7.04) > 2.460e-41",
+      "verdict": "EXCLUDED",
+      "limit_over_derived": 1.4062054639752806e-05,
+      "exclusion_factor_derived_over_limit": 71113.3632757367
+    },
+    "N=6_dprime_attestation": {
+      "mass_GeV": 8.45,
+      "sigma_LZ_cm2_loginterp": 1.4030647783814724e-46,
+      "bracket_low": {
+        "mass": 8.0,
+        "limit": 1.791701785874015e-46
+      },
+      "bracket_high": {
+        "mass": 8.5,
+        "limit": 1.3665638319819067e-46
+      },
+      "derived_residual_cm2": 5.07e-44,
+      "pre_staged_condition": "SURVIVES iff sigma_LZ(8.45) > 5.070e-44",
+      "verdict": "EXCLUDED",
+      "limit_over_derived": 0.002767386150653792,
+      "exclusion_factor_derived_over_limit": 361.35181198465966
+    }
+  },
+  "checks": {
+    "V-COL_observed_is_col0_named_limit": true,
+    "V-COL_band_columns_present": true,
+    "V-AUTH_endpoint_3GeV_eq_2.1e-42": true,
+    "V-AUTH_endpoint_9GeV_eq_1.1e-46": true,
+    "V-BRACK_N=4": true,
+    "V-INTERP_N=4_inside_bracket": true,
+    "V-BRACK_N=5": true,
+    "V-INTERP_N=5_inside_bracket": true,
+    "V-BRACK_N=6_dprime_attestation": true,
+    "V-INTERP_N=6_dprime_attestation_inside_bracket": true
+  },
+  "ALL_CHECKS_PASS": true
+}

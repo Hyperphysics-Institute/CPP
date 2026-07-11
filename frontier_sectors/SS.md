@@ -1094,6 +1094,24 @@ P1 fully structured: FOUR numbers, one HEPData visit (ins2841863 at 9.86 GeV + i
 the consolidated adjudication record lands at §34.18 (declared re-pointing, form only: §34.17 = staging).
 Q5 gated on all four + founder adjudication; Q2-identity registration stays queued. Campaign §34.17;
 reasoning 2406.
+**[Patch 2409, 10 July 2026] THE (1b) ADJUDICATION FIRED — N = 4, 5, 6 ALL EXCLUDED against the
+authenticated official WS2025 curve, including the 8.45-GeV (d′) attestation mass (×361); N=4 ×8.8×10⁶,
+N=5 ×7.1×10⁴ (§34.18; battery 10/10).** Founder delegation verbatim ("Please do your best on this. I don't
+know how to do what you want me to do."). Access route owned in full: HEPData downloads re-tried and still
+bot-blocked (both records); values read from a verbatim vendored copy of the official HEPData v2 release
+file (github.com/xjw44/QuantumDMLimits), committed as `code/2409_HEPData-ins3091049-v2-SI_cross_section.yaml`
+(md5 de096873…) — three-factor authenticated (HEPData naming; BOTH endpoints reproduce the arXiv-v2 text
+anchors 2.1×10⁻⁴²/1.1×10⁻⁴⁶ exactly; source repo distinguishes vendored releases from digitizations). NOT
+manufactured; CONV-004 holds. Version corrections declared: arXiv/HEPData v2 supersede §34.17's v1 endpoint
+anchors; the 2024 record now carries PRL 135, 011802 in-record. The §34.16(ii) anticipation fired as written
+(edge pins dissolved into exclusions). Adjacent fact recorded NOT consumed: WS2025's 1.112×10⁻⁴⁶ at 9.0 GeV
+is below the N=7 threshold but wrong-mass/wrong-dataset. **(1a) REMAINS PINNED** — σ_LZ(9.86 GeV) on the
+2024 combined curve: bot-blocked, no text source, no mirror across five collections; simplified founder
+paths staged (browser table read, or a SCREENSHOT pasted to chat, or Isak) — N=7 CLEARS iff > 1.16×10⁻⁴⁶.
+Family state pending founder adjudication: live {N=7 conditional, N=8 clear ×7.7}; excluded {4, 5, 6}; the
+attestation-mass consequence to the founder's desk. Q5 stays GATED ((1b) complete, (1a) outstanding).
+Computation-class patch, ONE git am: data file + instrument `code/2409_ss43_1b_regrade.py` + results JSON +
+§34.18 + this block + reasoning/2409.md.
 **[Patch 2407, 10 July 2026] Q2-IDENTITY THEOREM REGISTRATION EXECUTED — THEO-SS-17 (closed-ring Class V-t
 vertex decoupling identities) registered in `theorem-registry.md`** (P2 of the 2405 handover; founder go
 verbatim "Please proceed as recommended."). The two SS43-Q2 exact identities — closed-loop telescoping = 0
