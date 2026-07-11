@@ -34,3 +34,26 @@ unresolved on 20 July, the founder decides between (a) hold, or (b) release with
 a named open condition — noting the papers already disclose the unit-efficiency assumption (folded at
 DM-3 v1.0), which this gate sharpens from "efficiency < 1?" to "does the channel exist?". The
 recommendation will follow the derivation attempt, not precede it.
+
+---
+
+## CAMPAIGN LAUNCHED — the |SSV| coupling derivation (Patch 2417, 11 July 2026)
+
+**Status update:** this gate is now the target of a founder-adopted derivation campaign — the
+Priority-1 successor to OPEN-SS-43 (D3 verdict, §34.23, Patch 2416). The panel (CONV-001 Q5 round)
+named the gapless |SSV| dissipation channel the **unanimous structural survivor** after the ring
+family's corridor death for coring; this campaign derives its coupling from substrate primitives or
+the route dies.
+
+**Contract + execution + grading live in the dedicated campaign file:**
+`OPEN-DM-CAPTURE-1_coupling_campaign.md` (§1 contract registered this patch; §2/§3 reserved for the
+execution session). The campaign carries a **pre-registered two-sided kill** (panel-sharpened):
+K-LOW (τ_cool < t_Hubble at dwarf–LSB kinematics) AND K-HIGH (no runaway gravothermal collapse /
+stellar-kinematics / gas-heating violation), with K-XQC as an additional sieve and K-DERIV (0865
+held — derived from primitives, no assertion) as the discipline gate. It executes the pre-registered
+Stage-2 ladder S2-1 → S2-2 → S2-3 (2316), building on the Stage-1 inventory.
+
+**Dual-consumer:** resolving this gate pays the DM-4 prospectus Stage-0(ii) rent simultaneously.
+
+**Registration-only at this patch — no verdict moved.** D-DERIVE opens only on the founder's verbatim
+go on the contract, verified at origin. NEXT-SESSION KEYWORD: **DM-WARM-2417.**
