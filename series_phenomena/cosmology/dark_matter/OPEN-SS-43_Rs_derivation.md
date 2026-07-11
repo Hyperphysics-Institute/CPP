@@ -1608,3 +1608,80 @@ adjacent fact or from curve shape; no glossary promotion; R2 lane separate
 CLOSED inputs untouched. Artifacts: this section; the committed data file +
 instrument + results JSON in `code/`; `frontier_sectors/SS.md` 2409 block;
 `reasoning/2409.md` (verbatim, at-patch — full route record).
+
+### 34.19 THE (1a) ADJUDICATION RECORD — the number LANDED (founder-delivered official CSV): σ_LZ(9.86 GeV) = 5.40×10⁻⁴⁷ cm²; **N = 7 FAILS the pre-staged clear — the §34.16 fail branch fires: N = 7 dies in-coverage fully derived; N = 8 stands alone**; the founder's (1b) adjudication recorded; P1 COMPLETE (Patch 2410, 10 July 2026)
+
+**Founder contributions this stage (verbatim):**
+- Data delivery: the official HEPData CSV tarball for ins2841863 v2
+  (downloaded from the record page; "There was a 503 service unavailable
+  for the table CSV download" — the full-record export succeeded) plus a
+  screenshot of the rendered table. Patches 2406–2409 confirmed applied.
+- The (1b) adjudication: **"The N=4, 5, and 6 species are excluded, and
+  the N+ 7, 8 are candidates to consider for Q5."** — the three exclusions
+  ADOPTED. (Given before the (1a) number landed; see the family-state
+  consequence below.)
+
+**The data artifact and its authentication (four-factor):**
+`code/2410_HEPData-ins2841863-v2_SIcrosssection.csv`
+(md5 6b613af81add72ba9eb3971efeb92753), the official HEPData CSV export.
+(i) The file header self-identifies with the PINNED table DOI
+**10.17182/hepdata.155182.v2/t1** (§34.16) and names the combined analysis
+(`SI_WS2022+WS2024.yaml`); (ii) the 40-GeV row, 2.1817×10⁻⁴⁸, reproduces
+the §34.16 registered text anchor ("curve minimum 2.2×10⁻⁴⁸ at 40 GeV")
+and IS the tabulated minimum; (iii) coverage starts at 9.0 GeV (the
+"masses ≥ 9 GeV" anchor); (iv) the 9.0-GeV row matches the founder's
+screenshot digit-for-digit. Founder-delivered official data — not a
+mirror; the strongest provenance class this pin has had.
+
+**THE RE-GRADE (pre-staged at §34.16, fired mechanically; instrument
+`code/2410_ss43_1a_regrade.py`, battery 11/11 PASS; results
+`code/2410_results.json`):**
+
+σ_LZ,combined(9.86 GeV) = **5.397×10⁻⁴⁷ cm²** (log-interpolated on the
+bracket 9.0 GeV / 9.797×10⁻⁴⁷ … 11.0 GeV / 2.640×10⁻⁴⁷). Under the
+alternative registered convention (nearest tabulated mass, 9.0 GeV):
+9.797×10⁻⁴⁷. The pre-staged condition — **N = 7 CLEARS iff
+σ_LZ(9.86) > 1.16×10⁻⁴⁶** — FAILS under BOTH conventions (×2.15 and ×1.18
+below threshold respectively; the verdict is convention-independent).
+**The §34.16 fail branch fires verbatim: "N = 7 dies in-coverage fully
+derived; N = 8 stands alone unconditionally clear; family-level survival
+persists on N = 8 with member-weight consequences to the founder's
+desk."**
+
+**Strict-point re-arm CONSUMED (the carried note discharged):** this patch
+consumes the combined curve; the superseding strict point is now pinned at
+its precise tabulated value **2.1817×10⁻⁴⁸ cm² at 40 GeV** (supersedes the
+2.2×10⁻⁴⁸ rounding). N = 8's derived σ = 2.85×10⁻⁴⁹ clears it by
+**×7.655** — the §34.16 "audited 7.7×" re-verified arithmetically in the
+battery. The N = 8 unconditional clear stands against the strongest
+tabulated point of the strongest published curve.
+
+**P1 IS COMPLETE.** All four numbers landed and all four pre-staged
+re-grades have fired: N = 4 EXCLUDED ×8.8×10⁶; N = 5 EXCLUDED ×7.1×10⁴;
+N = 6 (the (d′) attestation mass) EXCLUDED ×361 (§34.18, founder-adopted
+above); N = 7 FAILS ×2.15 (this section). **Family state: N = 8 stands
+alone** — 11.26 GeV, unconditionally clear at every rung of the full
+experimental ladder including the superseding strict point (×7.655) and
+its own local value.
+
+**Consequence routed to the founder's desk (NOT auto-adopted):** the
+founder's (1b) adjudication named "7, 8" as Q5 candidates before the (1a)
+number landed; the pre-staged contract has now removed N = 7 mechanically.
+**The Q5 candidate family is N = 8 alone unless the founder rules
+otherwise.** The Q5 gate's conditions are now met in structure — both
+number sets landed, the (1b) exclusions adopted — and Q5 (coat-channel
+sign synthesis + corridor re-grade) awaits: (i) the founder's adjudication
+of the N = 7 death and the single-member family, and (ii) a fresh Q5
+launch contract (new session, §15 discipline; this session is deep and
+the launch deserves a clean window).
+
+**Scope guard held:** no Q5 pre-work; the strict-point consumption
+recorded above is the carried note discharging, not new grading; glossary
+promotion of the S/V-t + defect-multipole coinages remains gated on the
+founder's family-survival adjudication (survival now = N 8 alone); R2
+execution stays queued separate. Artifacts: this section; the official CSV
++ instrument + results in `code/`; `frontier_sectors/SS.md` 2410 block;
+`reasoning/2410.md` (verbatim; carries the parser-incident record — the
+first instrument version mixed the CSV's stacked column blocks and the
+V-SHOT + V-ANCHOR gates CAUGHT it before any verdict was trusted;
+machinery-catches-worker, 5th of the arc).

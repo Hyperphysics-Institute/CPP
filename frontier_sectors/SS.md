@@ -1094,6 +1094,18 @@ P1 fully structured: FOUR numbers, one HEPData visit (ins2841863 at 9.86 GeV + i
 the consolidated adjudication record lands at §34.18 (declared re-pointing, form only: §34.17 = staging).
 Q5 gated on all four + founder adjudication; Q2-identity registration stays queued. Campaign §34.17;
 reasoning 2406.
+**[Patch 2407, 10 July 2026] Q2-IDENTITY THEOREM REGISTRATION EXECUTED — THEO-SS-17 (closed-ring Class V-t
+vertex decoupling identities) registered in `theorem-registry.md`** (P2 of the 2405 handover; founder go
+verbatim "Please proceed as recommended."). The two SS43-Q2 exact identities — closed-loop telescoping = 0
+identically + orientation-average orthogonality t̂·x̂ = 0 exactly — derived and machine-verified at 2393
+(§34.9), reproduced as consequences of the derived vertex class at 2401 (§34.14); the 2394 deliberate
+deferral (class-conditional while the S/V-t dichotomy was HELD) discharged by the 2401 V-t derivation.
+Entry carries the 2403 scope refinement (fold-convention zero = edge-convention structure; continuum node
+form topologically zero; physical residual = the discreteness defect, (N−1)-order protected — defect scale
+NOT part of the theorem) and asserts NOTHING about family survival (the four-number adjudication stays
+PENDING at §34.18). Registry counts: SS 16 → 17, Total 81 → 82; caveat-table row added. Glossary promotion
+of S/V-t stays survival-gated. Surgical registry-class patch; no new physics; no campaign-file edit.
+
 **[Patch 2409, 10 July 2026] THE (1b) ADJUDICATION FIRED — N = 4, 5, 6 ALL EXCLUDED against the
 authenticated official WS2025 curve, including the 8.45-GeV (d′) attestation mass (×361); N=4 ×8.8×10⁶,
 N=5 ×7.1×10⁴ (§34.18; battery 10/10).** Founder delegation verbatim ("Please do your best on this. I don't
@@ -1112,18 +1124,22 @@ Family state pending founder adjudication: live {N=7 conditional, N=8 clear ×7.
 attestation-mass consequence to the founder's desk. Q5 stays GATED ((1b) complete, (1a) outstanding).
 Computation-class patch, ONE git am: data file + instrument `code/2409_ss43_1b_regrade.py` + results JSON +
 §34.18 + this block + reasoning/2409.md.
-**[Patch 2407, 10 July 2026] Q2-IDENTITY THEOREM REGISTRATION EXECUTED — THEO-SS-17 (closed-ring Class V-t
-vertex decoupling identities) registered in `theorem-registry.md`** (P2 of the 2405 handover; founder go
-verbatim "Please proceed as recommended."). The two SS43-Q2 exact identities — closed-loop telescoping = 0
-identically + orientation-average orthogonality t̂·x̂ = 0 exactly — derived and machine-verified at 2393
-(§34.9), reproduced as consequences of the derived vertex class at 2401 (§34.14); the 2394 deliberate
-deferral (class-conditional while the S/V-t dichotomy was HELD) discharged by the 2401 V-t derivation.
-Entry carries the 2403 scope refinement (fold-convention zero = edge-convention structure; continuum node
-form topologically zero; physical residual = the discreteness defect, (N−1)-order protected — defect scale
-NOT part of the theorem) and asserts NOTHING about family survival (the four-number adjudication stays
-PENDING at §34.18). Registry counts: SS 16 → 17, Total 81 → 82; caveat-table row added. Glossary promotion
-of S/V-t stays survival-gated. Surgical registry-class patch; no new physics; no campaign-file edit.
-
+**[Patch 2410, 10 July 2026] P1 COMPLETE — THE (1a) NUMBER LANDED (founder-delivered official CSV) AND
+N = 7 FAILS THE PRE-STAGED CLEAR: σ_LZ,combined(9.86 GeV) = 5.397×10⁻⁴⁷ cm² vs threshold 1.16×10⁻⁴⁶ —
+the §34.16 fail branch fires verbatim: N=7 dies in-coverage fully derived; N=8 STANDS ALONE (§34.19;
+battery 11/11).** Founder verbatims recorded: the (1b) adjudication ("The N=4, 5, and 6 species are
+excluded, and the N+ 7, 8 are candidates to consider for Q5.") + the data delivery (official HEPData CSV
+tarball, ins2841863 v2; 503 on the table button, full-record export succeeded; screenshot cross-check).
+Four-factor authentication: pinned DOI in-header (10.17182/hepdata.155182.v2/t1) + SI_WS2022+WS2024 name +
+the 40-GeV row reproduces the §34.16 text anchor (2.1817×10⁻⁴⁸ = the tabulated minimum) + screenshot
+digit-match at 9.0 GeV. Verdict convention-independent (log-interp ×2.15 below; nearest-mass ×1.18 below).
+Strict-point re-arm CONSUMED at the precise 2.1817×10⁻⁴⁸ (40 GeV); N=8's clear re-verified ×7.655 (the
+audited 7.7×). FAMILY STATE: N=8 alone (11.26 GeV), unconditionally clear at every rung incl. the
+superseding strict point. Founder's desk: the N=7 death post-dates his "7, 8" Q5-candidate ruling — Q5
+family = {N=8} unless he rules otherwise; Q5 launch awaits his adjudication + a fresh contract (new
+session). INCIDENT owned (machinery-catches-worker, 5th of the arc): instrument v1 mixed the CSV's stacked
+column blocks; V-SHOT + V-ANCHOR gates CAUGHT it pre-verdict; fixed to block-scoped parse; reasoning §5.
+Computation-class, ONE git am: official CSV + instrument + results + §34.19 + this block + reasoning/2410.md.
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's

@@ -1,0 +1,53 @@
+{
+  "table": {
+    "n_points": 26,
+    "mass_range_GeV": [
+      9.0,
+      10000.0
+    ],
+    "file_md5": "6b613af81add72ba9eb3971efeb92753",
+    "source": "founder-downloaded official HEPData CSV export, record ins2841863 v2, table 'SI cross section' (header DOI 10.17182/hepdata.155182.v2/t1)"
+  },
+  "grade_N7": {
+    "mass_GeV": 9.86,
+    "sigma_LZ_loginterp_cm2": 5.396907231249119e-47,
+    "bracket_low": {
+      "mass": 9.0,
+      "limit": 9.797484060822151e-47
+    },
+    "bracket_high": {
+      "mass": 11.0,
+      "limit": 2.6404553011944104e-47
+    },
+    "sigma_LZ_nearest_mass_cm2": {
+      "mass": 9.0,
+      "limit": 9.797484060822151e-47
+    },
+    "derived_threshold_cm2": 1.16e-46,
+    "pre_staged_condition": "N=7 CLEARS iff sigma_LZ(9.86) > 1.16e-46",
+    "verdict": "FAILS",
+    "fail_factor_interp": 2.1493791727294838,
+    "fail_factor_nearest": 1.1839774301226669,
+    "registered_fail_branch": "N=7 dies in-coverage fully derived; N=8 stands alone unconditionally clear; family-level survival persists on N=8 with member-weight consequences to the founder's desk (S34.16 verbatim)"
+  },
+  "strict_point_rearm_consumed": {
+    "superseding_strict_point_cm2": 2.1816833824484827e-48,
+    "at_mass_GeV": 40.0,
+    "N8_derived_cm2": 2.85e-49,
+    "N8_clear_factor": 7.655029412099939
+  },
+  "checks": {
+    "V-DOI_pinned_table_doi_in_header": true,
+    "V-NAME_combined_analysis": true,
+    "V-ANCHOR_40GeV_min_eq_2.2e-48": true,
+    "V-ANCHOR_40GeV_is_curve_min": true,
+    "V-COVER_starts_at_9GeV": true,
+    "V-SHOT_9GeV_row_matches_screenshot": true,
+    "V-BRACK_9.86_inside": true,
+    "V-INTERP_inside_bracket": true,
+    "V-CONV_both_conventions_agree": true,
+    "V-STRICT_N8_clears_superseding_strict_point": true,
+    "V-STRICT_N8_factor_matches_audited_7.7x": true
+  },
+  "ALL_CHECKS_PASS": true
+}
