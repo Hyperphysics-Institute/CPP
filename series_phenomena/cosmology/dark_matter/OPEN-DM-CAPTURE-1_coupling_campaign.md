@@ -168,6 +168,56 @@ contract is on record. This section is the registration and nothing more.
 
 ---
 
-## §2 — Execution (RESERVED — opens on the founder's go, verified at origin)
+## §2 — Execution (Patch 2418, 11 July 2026): the ladder was already run; the door is closed candidate-blind
 
-## §3 — Grading against the two-sided kill (RESERVED)
+**Discovery that reshaped this section.** The S2 ladder the §1 contract calls "D-DERIVE" was not
+unexecuted — it was run four days earlier in the Gate-1/B1 **G4 arc** (G4 ≡ OPEN-DM-CAPTURE-1 ≡ DM-4
+Stage-0(ii); confirmed at 2318). The §1.2 framing ("retained by label from 2316") saw the 2316
+*pre-registration* but not the 2317–2333 *execution*. Consumed CLOSED here:
+
+- **2317 (S2-1):** c_s = c derived (C-e). R1 closed.
+- **2318 (S2-2):** the coat↔mode vertex is an **Adler zero** at k=0 (C-f) — gradient-coupled only.
+  Radiative route dead ×10¹³–10¹⁹; R3 closed-negative.
+- **2321/2322 → 2327 → 2330 (S2-3 and its reduction):** friction → sub-cone S(k,ω) → one number D →
+  the **harmonic-null theorem** (coherent field-following transports *nothing*, Kubo D_coh = 0 exactly)
+  ⇒ survival needs thermally activated threshold events. The derived law:
+  **knee_tot(T_amb) = ħ[D_hop k² + Γ_loc]**, both channels carrying exp(−0.9 MeV/T_amb).
+- **2330 §6 (OPEN-DM-TAMB-1):** the mode's own thermalized radiation gravitates → **T_amb ≤ 3.2 meV**.
+- **2333:** the corner died → G4 = KILL-on-suite-conditional (for the DM-1 rod suite), closed on
+  every flank 2334–2338.
+
+**The ring re-run (founder-directed, 2026-07-11: "a kill in one configuration doesn't bind another").**
+Evaluated whether the derived law reaches the ring family's coring demand. `code/2418_ring_ssv_eval.py`:
+
+- At the capped T_amb the surviving (k-independent) Channel-L knee is suppressed by
+  exp(−0.9 MeV / 3.2 meV) = exp(−2.81×10⁸); the **most generous** possible knee (band-edge cadence,
+  κ_c=3) falls short of the easiest window edge by **~10^(1.2×10⁸)**. (The "×10²⁹" of 2330 is the
+  T_amb ratio; the knee ratio is far worse.)
+- **Candidate-dependence audit:** every killing term is a Sea/mode property, not a ring property —
+  harmonic-null (mode: ω=ck + no-carried-velocity), E_gap = 0.9 MeV (Sea's creation channel),
+  T_amb ≤ 3.2 meV (mode radiation, one-ledger). The ring's only lever is its coring demand (a ~keV
+  required knee); it cannot bridge 10^(10⁸) orders. k = 1/R_s enters only the already-CLOSED transport
+  channel, so R_s = 25.42 fm is irrelevant to the operative knee. The encounter's own content (~45 eV)
+  is ×2×10⁴ below the gap, so no transient self-activation.
+
+**Result: |SSV| dissipative capture is dead for the ring family, and dead *candidate-blind*.** This is
+*stronger* than the 2333 DM-1 kill (which was suite-conditional): the door is closed for any DM species
+coupling to the gapless mode through a broadcast-built coat.
+
+**Honest conditionality (derived vs assumed).** The kill is derived-conditional on three Sea/substrate
+statements, none of which the ring configuration can move:
+1. the gapless mode **thermalizes** (sets the 3.2 meV cap) — OPEN-DM-TAMB-1 evasion (a) is exactly "it
+   stays a cold two-temperature mode"; if so, the cap lifts;
+2. **no one-ledger self-excitation exemption** — evasion (b), needs a G-sector derivation;
+3. the **no-carried-velocity ruling** stands (harmonic-null's premise; provisional per D5-A′).
+All three are Sea-level. Re-aiming at the ring does not reopen any of them — so the live questions, if
+one wants to keep this door ajar, are those three, not anything about the ring.
+
+**Successor consequence (plainly, not as a graded verdict).** The ring's coring cannot come from the
+elastic channel (Q5 corridor kill, 2413) *or* from |SSV| capture (here). The two honest paths are
+(B) register the ring as **CDM-like / collisionless at dwarf scales** with the falsifier menu, or
+(C) **the population route** — a polydisperse mix from the 1855–56/2382 formation cascade whose blended
+σ(v) cores the dwarfs while the ring majority hides in direct detection (2344's "the missing physics may
+be a *population*, not a mechanism"). (C) is the one with explanatory reach.
+
+## §3 — Grading (folded into §2): dead candidate-blind; successor = (B) or (C), founder-steered.

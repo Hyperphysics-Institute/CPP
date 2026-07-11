@@ -57,3 +57,12 @@ Stage-2 ladder S2-1 → S2-2 → S2-3 (2316), building on the Stage-1 inventory.
 
 **Registration-only at this patch — no verdict moved.** D-DERIVE opens only on the founder's verbatim
 go on the contract, verified at origin. NEXT-SESSION KEYWORD: **DM-WARM-2417.**
+
+**UPDATE (Patch 2418, 11 July 2026) — the ladder was already run; door closed candidate-blind.** The
+S2 ladder this contract calls D-DERIVE was executed in the G4 arc (2317/2318/2321/2322/2327/2330/2333;
+G4 ≡ this gate). Re-run for the ring family (founder-directed), |SSV| dissipative capture is dead by a
+knee shortfall ~10^(1.2×10⁸), and dead **candidate-blind**: every killing term (harmonic-null; the
+0.9 MeV activation gap; the 3.2 meV T_amb cap) is a Sea/mode property no DM configuration can move. The
+only ways to reopen the door are the OPEN-DM-TAMB-1 Sea-level evasions (mode non-thermalization /
+one-ledger self-excitation) or overturning the no-carried-velocity ruling — none candidate-specific.
+See `OPEN-DM-CAPTURE-1_coupling_campaign.md` §2. Ring coring successor → (B) CDM-like or (C) population.
