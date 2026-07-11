@@ -1212,6 +1212,31 @@ paste preamble (2385 lesson); Copilot pasted + raw links (2378 fix). **NO VERDIC
 grading stands recorded; the founder's adjudication block opens on returns. Registration/panel-class patch;
 founder verbatim + drafting rationale in `reasoning/2414.md`.
 
+**[Patch 2415, 11 July 2026] CONV-001 Q5-ROUND RETURNS RECORDED — V1–V3 = 4× VERIFIED EACH, ZERO
+REFUTATIONS; NO HALTING RULE TRIGGERED; ADJUDICATION OPEN.** Collection 4/5 substantive + 1 structured
+access-decline (R4 Copilot — second documented delivery failure for that seat; return anomaly documented:
+its text references the 2384 round's ratification items, absent from this brief; treated as decline-only,
+self-declared non-blocking). Founder seat mapping: GPT R1 / Grok R2 / Gemini R3 / Copilot R4 / DeepSeek R5;
+no label collisions (the 2385 preamble fix worked). Coverage facts disclosed: no seat re-executed the 2413
+instrument (execution assurance = the committed battery's byte-level row reproductions); R2 fetched primary
+sources and cross-checked every quoted number (zero discrepancies); R5 audited the code and independently
+recalculated g²_env and the FL floor; R3 supplied a normalization-independent argument for V3 (fixed σ(v)
+shape translates vertically under coupling rescaling — cannot match the central frame's steepness).
+Part II convergent: (A) |SSV| dissipation = the unanimous structural survivor, pre-funding cheap kill =
+derive/bound the coupling into a TWO-SIDED timescale window (τ_cool < t_Hubble AND no runaway gravothermal
+collapse / stellar-kinematics violation; XQC headroom as sieve) — the same rent DM-4 Stage-0(ii) owes;
+(C) bound TIGHTER than briefed — two-part kill: derived open-chain fraction from the 2382 cascade AND blended
+shape passing the V3-closed central frame (R5's ring-chain hybrid = a (C)-variant); (B) registration
+acceptable ONLY with falsifiers — compiled candidate set: cascade relic abundance, small-scale structure
+cutoff (streams/lensing), next-gen DD vs the fog, BBN/CMB. No unlisted avenue produced. Rankings diverge on
+SEQUENCING only (R1 A>C>B; R3 C>A>B; R5 A-kill cheapest). ADJUDICATION D1–D4 on the founder's desk
+(`conv001_2026-07_ss43_q5_returns_adjudication.md`): D1 close at 4/5 (worker recommends CLOSE); D2 the tally
+→ §34.22 PANEL-VERIFIED at audit grade, Clause 1(a) ruling now on a verified record; D3 successor sequencing
+(worker recommends: fund the |SSV| derivation first — two-sided kill pre-registered, dual-consumer with
+DM-4; run the (C) cascade cheap-kill in parallel; HOLD (B) until (A) lands, then register with the compiled
+falsifiers if (A) dies); D4 the Copilot lane note. **NO VERDICT MOVED.** Registry/panel-class patch;
+reasoning/2415.md.
+
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's
