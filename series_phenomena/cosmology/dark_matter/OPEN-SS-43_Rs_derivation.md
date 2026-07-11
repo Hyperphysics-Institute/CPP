@@ -1685,3 +1685,31 @@ execution stays queued separate. Artifacts: this section; the official CSV
 first instrument version mixed the CSV's stacked column blocks and the
 V-SHOT + V-ANCHOR gates CAUGHT it before any verdict was trusted;
 machinery-catches-worker, 5th of the arc).
+
+### 34.20 FOUNDER ADJUDICATION OF THE COMPLETED P1 RECORD — the N=7 death ADOPTED; **Q5 CONFIRMED to proceed on N=8 as THE candidate DM species**; the Q5 gate is OPEN pending a fresh launch contract (Patch 2411, session close, 10 July 2026)
+
+**Founder ruling (verbatim):** "Adjudication of the N=7 death and
+confirmation of Q5 proceeding on N=8 as a candidate DM species."
+
+**Effect:** the §34.19 fail-branch outcome is ADOPTED — N = 7 dead
+in-coverage fully derived; the ring family resolves to the single member
+**N = 8 (11.26 GeV)**, unconditionally clear at every rung of the full
+experimental ladder including the superseding strict point (2.1817×10⁻⁴⁸,
+×7.655) and its own local value. Combined with the §34.19-recorded (1b)
+adoption ("The N=4, 5, and 6 species are excluded..."), the founder's
+adjudication of the completed four-number record is COMPLETE. **The Q5
+gate (coat-channel sign synthesis + corridor re-grade) is OPEN**, target
+family {N = 8}, launch requirements: a fresh session (clean window) + a
+Q5 launch contract written under §15 discipline + the founder's go on the
+contract. This section is the in-repo launch-state record per the 2400
+lesson (launch gos verified in the repo, never taken from prose).
+
+**Queued with Q5 (the 2405 P3 package, now unblocked by this
+adjudication):** successor/prediction registration for the surviving
+species; glossary promotion of the S/V-t and defect-multipole coinages
+(survival has landed — promotion is now executable but is NOT executed in
+passing at this close, per the same no-adoption-in-passing discipline that
+queued the Q2-identity registration at 2405); the (d′) attestation-record
+consequence write-up; an optional CONV-001 panel consult at family
+resolution (founder's call). Handover:
+`handovers/2026-07-10_dm_ss43_p1_complete_n8_alone_q5_gate_open.md`.

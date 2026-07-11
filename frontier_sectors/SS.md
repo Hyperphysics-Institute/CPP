@@ -1140,6 +1140,17 @@ family = {N=8} unless he rules otherwise; Q5 launch awaits his adjudication + a 
 session). INCIDENT owned (machinery-catches-worker, 5th of the arc): instrument v1 mixed the CSV's stacked
 column blocks; V-SHOT + V-ANCHOR gates CAUGHT it pre-verdict; fixed to block-scoped parse; reasoning §5.
 Computation-class, ONE git am: official CSV + instrument + results + §34.19 + this block + reasoning/2410.md.
+**[Patch 2411, 10 July 2026] SESSION CLOSE — FOUNDER ADJUDICATION COMPLETE: the N=7 death ADOPTED and
+Q5 CONFIRMED on N=8 as THE candidate DM species (verbatim: "Adjudication of the N=7 death and confirmation
+of Q5 proceeding on N=8 as a candidate DM species."); the Q5 gate is OPEN, target family {N=8, 11.26 GeV},
+launch = fresh session + Q5 contract + founder go on the contract (§34.20 = the in-repo launch-state
+record).** P1 residue ZERO: four numbers, four fired re-grades (N=4 ×8.8×10⁶ / N=5 ×7.1×10⁴ / N=6 ×361 /
+N=7 ×2.15, all founder-adopted). Queued P2 (unblocked, not executed in passing): N=8 successor/prediction
+registration; S/V-t + defect-multipole glossary promotion; the (d′) attestation write-up; optional CONV-001
+consult. Separate lane: R2 execution (gate opened at 2408). METH-L2-014 registered catalog-first (the
+external-data authentication battery, arc's 5th machinery-catch). Handover:
+`handovers/2026-07-10_dm_ss43_p1_complete_n8_alone_q5_gate_open.md`. NEXT-SESSION KEYWORD: DM-WARM-2411.
+
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's
