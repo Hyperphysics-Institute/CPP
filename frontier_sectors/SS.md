@@ -1195,6 +1195,23 @@ status call; optional CONV-001 consult on the completed campaign record. P2 regi
 per the pre-registered branch. Computation-class, ONE git am: instrument + results + §34.22 + this block +
 reasoning/2413.md.
 
+**[Patch 2414, 11 July 2026] CONV-001 ROUND OPENED — VERIFY THE Q5 TERMINAL GRADING + OPEN IDEAS
+CHANNEL (founder verbatim: "Please initiate review protocol as recommended.").** Brief:
+`conv001_2026-07_ss43_q5_terminal_grading_brief.md`. Three verification asks: **V1** the kill itself (the
+corridor re-grade fired mechanically: viol 27.1/90.4 at the derived coupling, frames/floor/clause); **V2**
+the sign derivation — the double defect protection (structure factor on BOTH legs of ring–ring; the far-field
+q↔ħc/r correspondence; the generous ceiling; the rod-measured coat floor's O(few) pin; any missed registered
+attraction channel); **V3** the shape-closure finding (monodisperse {8} central-frame closed at ANY coupling
+— constrains every successor). Part II ideas channel (findings-only, ≤3 ranked per seat): avenue (A) the
+|SSV| dissipation route (OPEN-DM-CAPTURE-1, coupling unregistered, DM-4 Stage-0(ii) convergence — name the
+cheapest kill); (B) CDM-like no-coring successor registration (falsifier-poverty concern named — what
+falsifiers would you attach?); (C) polydisperse open-chain carrier (must derive from the 2382 cascade; V3
+constrains compositions). Halting: REFUTED on V1/V2 halts the successor decision on the corrected number;
+V3-REFUTED narrows constraints only. Hostile pass invited both directions. Five seats, one-line seat-label
+paste preamble (2385 lesson); Copilot pasted + raw links (2378 fix). **NO VERDICT MOVED** — the §34.22
+grading stands recorded; the founder's adjudication block opens on returns. Registration/panel-class patch;
+founder verbatim + drafting rationale in `reasoning/2414.md`.
+
 **Original entry (1858, retained):** **OPEN — de-novo derivation required (DM 1858, 3 July 2026, founder-driven).** The dwarf-coring
 **mechanism is identified**: a **screened unipolar E_qq residual**. E_qq is attract-only, so a qCP aggregate
 (the DM rod core) cannot dipole-cancel its field the way the bipolar eCP coat does (which is why the coat's
