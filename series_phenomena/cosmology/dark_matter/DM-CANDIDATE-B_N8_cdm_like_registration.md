@@ -81,10 +81,33 @@ N=8:* at central brackets the clean DD-surviving peak is **N ≈ 9–11 (12.7–
 sits right at the boundary (marginal on the N=6 tail at central brackets, comfortable at slightly higher
 N_stab). So the joint formation+DD candidate is a ring at **N ≈ 8–11**, not sharply N=8.
 
-**Falsifier, now sharp:** pin N_stab = c·κ/(ℓ_rung·E_bond) from the substrate constants (κ, ℓ_rung,
-E_bond) and derive the absolute Ω_DM. If N_stab ≳ 6.2 → the DD-selected heavy-ring relic is confirmed
-self-consistent (preferred mass N≈9–11). If N_stab ≲ 6 → formation makes DD-excluded light rings and
-**(B) dies**. This is the next computation; it is a bounded substrate-constant evaluation.
+**N_stab DERIVED (Patch 2422).** `code/2422_nstab_derivation.py`. N_stab = c·r/ε from the registered
+constituents (2381): r = ℓ_p/ℓ_rung ∈ [8.5, 12] (ring placement, ℓ_rung = 1 fm); ε = E_bond/kT_form ∈
+[23.2, 36.2]; **c = the rung-bond bending stiffness, 14.054 (Salpeter fluctuation-corrected) or
+2π² = 19.739 (rigid)** — two standard forms of the same object. The candidate's fate on (i) collapses
+onto *which coefficient governs the stability floor*:
+
+| coefficient | N_stab range | central | vs 6.2 | box fraction clearing |
+|---|---|---|---|---|
+| SY 14.054 (fluctuation-corrected) | [3.30, 7.27] | **4.85** | FAILS | 8% |
+| rigid 2π² = 19.739 | [4.63, 10.21] | **6.81** | CLEARS | 71% |
+
+**The physics of the choice (and my read).** N_stab is the boundary where a formed ring's opening
+barrier ε − c·r/N crosses zero — a *barrier-height*, i.e. energetic, quantity. The stored bending
+energy of the exact discrete N-gon is 2π²·r·kT/N (2381 §3), so the **bare energetic floor uses c = 2π²
+= 19.739 → central N_stab ≈ 6.81, which clears 6.2**. The SY value 14.054 = 0.712×2π² is the
+fluctuation-corrected *nucleation-rate* coefficient (the J-factor exponent); the 2382 code used it for
+the floor, which appears to conflate the closure *rate* with the stability *boundary*. 2382's own §2
+prose supports the energetic reading — "ln Λ only delaying the lock, never moving the boundary." **So on
+the leading-order (energetic) reading the candidate SURVIVES (i);** the open uncertainty is how much
+thermal fluctuation softens the floor toward the SY value — enough softening (down to ≲4.85) sinks it.
+
+**Net for (i):** not settled by fiat, but reduced to one sharp, bounded, decidable question — *does the
+ring-stability floor take the rigid 2π² bending stiffness or its fluctuation-corrected value?* The
+energetic leading order says rigid (survives, central N_stab ≈ 6.81); a full fluctuation treatment of
+the pop-open barrier settles it. A clean panel target. Still owed alongside: the absolute Ω_DM
+normalization.
+
 
 ### (ii) Small-scale structure cutoff
 The 11.26 GeV cold relic's free-streaming length is far below observable halo scales (CDM-like to
