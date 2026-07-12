@@ -1,18 +1,30 @@
-# Avenue (B) — the N=8 closed ring as a CDM-like dark-matter candidate — **FALSIFIED on falsifier (i)** (Patch 2431, founder-registered)
+# Avenue (B) — the N=8 closed ring as a CDM-like dark-matter candidate — **FALSIFICATION REOPENED / UNDER RE-DERIVATION** (Patch 2433, founder-directed)
 
-> **STATUS: FALSIFIED (11 July 2026, Patches 2426–2431; founder-registered this session).** Falsifier (i) —
-> the ring-formation make-or-break κ_θ/E_bond ≥ 0.43 — **FAILS.** The rung-bond bending stiffness-to-depth ratio
-> is κ_θ/E_bond ~ 0.05–0.35 < 0.43 on every non-refuted read (founder gradient read 1835; tensor anisotropy 2430;
-> registered central 0.345 / 2424), so the bond is **soft in bending** → short persistence length → low N_stab
-> (≈ 1.4–4.9 vs the 6.05 survival floor) → light (N < 8) rings close and persist → the DM population contains
-> LZ-excluded light rings → **seen in direct detection → excluded.** The favorable 2426 value (0.74–1.5) was an
-> artifact of assuming isotropic dynamic stiffness (f_stiff = f_depth), refuted by the anisotropic ponderomotive
-> tensor (2430). Per the 1836 unification the ZBW amplitude/frequency and the Earnshaw sign **cancel** in the
-> ratio, so 1811 #2 is moot; the result is geometric. **Unification:** the SAME soft-hinge geometry that makes the
-> DM cluster floor VIABLE (1835/1836) is what kills ring formation. Honest residual: the fully-evaluated edge-bond
-> SSV potential (open SF-2/SF-5 G1) would pin f exactly — **sign robust, evaluation confirmatory** (it could flip
-> only by overturning the founder's own gradient read; every non-refuted read is below 0.43). **This closes
-> OPEN-SS-43's last live candidate; Ω_DM is moot (no surviving candidate to normalize).** See §6.
+> **STATUS: FALSIFICATION REOPENED (11 July 2026, Patch 2433 — founder-directed).** The 2432 FALSIFIED verdict is
+> **UNDER RE-DERIVATION and does not stand as settled.** The founder identified that the kill's load-bearing geometry
+> was wrong: the registered result (2431) rested on the founder gradient read (1835) with a far-out eCP coat at
+> non-uniform spacing. The corrected geometry (founder, this session): **the DM element is two planes, each two
+> crosses with eCP–qCP–qCP–eCP diagonals, UNIFORM spacing (strong force sets the effective inter-layer d; eCPs align
+> to the qCP lattice), tiny lattice-stabilized CP–CP separations (≪ free-DP ZBW excursion), and a qCP core that is
+> "jello" — no static bending integrity (a bare qCP toward a neighbour has no static well: it accelerates to
+> superposition and rebounds — the Earnshaw problem; only ZBW holds the core, as a soup).** Consequence: the qCP core
+> governs neither bending nor (its stiffness); **the eCP coat is the sole bending resistance** (resists compression on
+> the ring's inner circumference, tension on the outer). The make-or-break κ_θ/E_bond is REOPENED and its SIGN is
+> genuinely undetermined, hinging on ONE question: **does the jello qCP core provide deep AVERAGE axial binding
+> (→ E_bond strong → κ_θ/E_bond ~ few % → soft → light rings form → falsified) or little net binding (→ E_bond
+> coat-set → κ_θ/E_bond ~ (R/d)² ~ O(1) → stiff → N=8 too small to close → heavier ring family survives at drifted
+> mass)?** Competing pushes both present: weak E_ee (net-zero charge, small dipole) → soft; tiny separations (steep
+> SSV gradient) + outer-radius R² lever arm → stiff. **Agreed regardless: N=8 specifically is unlikely** (too stiff to
+> close if stiff; drowned by DD-excluded light rings if soft) — the live object, if any, is a ring FAMILY at N set by
+> the plane count (= 2× DM-element count). **Re-derivation target:** the variational/Monte-Carlo SSV–ZBW equilibrium
+> for the lattice-stabilized separations, then the eCP-coat bending stiffness AND the end-to-end binding AT those
+> separations — never computed on this lattice. Until then, neither FALSIFIED nor SURVIVES. See §6.
+>
+> ---
+> **(SUPERSEDED) Prior 2432 verdict — FALSIFIED:** Falsifier (i) make-or-break κ_θ/E_bond ~ 0.05–0.35 < 0.43 on the
+> founder gradient read + 2430 tensor + registered 0.345, giving soft bending → light rings → LZ-excluded. **This is
+> the verdict now reopened; the 2430 tensor was computed on the superseded far-out-coat lattice and the 1835 gradient
+> read used a geometry the founder now disputes.**
 
 **Draft, Patch 2420, 11 July 2026.** Successor to OPEN-SS-43 D3 (§34.23) after the coring routes closed:
 elastic corridor death (Q5, 2413), |SSV| dissipative capture dead candidate-blind (2418), population
