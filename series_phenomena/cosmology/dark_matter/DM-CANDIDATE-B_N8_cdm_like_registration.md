@@ -49,22 +49,42 @@ account. The candidate hides where DM should hide and is collisionless where the
 A CDM-like candidate below the neutrino fog is an epistemic liability *without* attached falsifiers
 (R5, 2415). These are the gates; each is a real way the candidate dies.
 
-### (i) Relic abundance & population reconciliation — **THE SHARPEST, and OWED**
-This is the make-or-break gate, and it is currently in tension. The formation cascade (2382) derives a
-**closed-ring population that is N=6–7-dominant** at the relevant size scales (w peaks at N=6 for
-r≈9, at N=7 for r≈11), with N=8 only a tail. But the direct-detection ladder **excludes N=4–7 as the
-dark matter** — an N=6 or N=7 component excluded by ×361 / ×2.15 cannot be a dominant fraction of the
-local density without LZ having seen it. So the candidate requires one of:
-- a size-scale / kinetic corner where the cascade yields **N=8-dominance** without DD-excluded
-  co-dominant members; or
-- a mechanism that **converts or removes** the N<8 rings (further growth to N=8, decay, or genuine
-  subdominance below LZ's abundance reach — note the exclusions are strong enough that even few-percent
-  N=6 is excluded); and
-- the surviving N=8 abundance must land at **Ω_DM ≈ 0.12 h⁻²** without tuning.
+### (i) Relic abundance & population reconciliation — **RUN (Patch 2421); conditionally reconcilable, pinned to one number**
+The make-or-break gate, now computed. `code/2421_falsifier_i_population_dd.py` scans the cascade
+w(N | r, φ, ε, v_f) across the full registered brackets against the DD-survival test — each excluded
+species allowed only at mass fraction f_N < 1/X_N (a species at fraction f gives f× the LZ signal):
+f_4 < 1.1×10⁻⁷, f_5 < 1.4×10⁻⁵, f_6 < 2.8×10⁻³, f_7 < 0.47; N≥8 DD-clear.
 
-**Falsifier:** if the derived cascade cannot produce an N=8-dominant relic at the observed abundance
-while keeping the DD-excluded members subdominant below LZ reach, the candidate fails. *This is the next
-computation to run, and it is the one that decides whether (B) is a candidate at all.*
+**Result: the reconciliation exists — the candidate is NOT internally falsified — but only at the top
+edge of the registered corridor.** At central brackets, the DD-surviving (N≥8-dominant, N<8 suppressed)
+population switches on at **r ≳ 13, i.e. N_stab ≳ 6.2**:
+
+| r | N_stab | peak | f(N≥8) | f(N=6) | DD-survive |
+|---|---|---|---|---|---|
+| 10 | 4.7 | N7 | 0.12 | 0.27 | no (small-N, excluded) |
+| 12 | 5.7 | N8 | 0.88 | 4.2×10⁻³ | no (N=6 over ceiling ×1.5) |
+| 13 | 6.2 | N9 | 0.98 | 0 | **yes** |
+| 14 | 6.6 | N10 | 1.00 | 0 | **yes** |
+| 15 | 7.1 | N11 | 1.00 | 0 | **yes** |
+
+Below the edge — the *bulk* of the registered corridor (r = 3–12, N_c = 3–6) — the population is
+small-N-dominant (N=3–7), which the LZ ladder excludes. So the whole reconciliation reduces to **one
+substrate number: N_stab = c·κ/(ℓ_rung·E_bond)**. The candidate survives iff **N_stab ≳ 6.2**; it fails
+if N_stab ≲ 6 (formation then makes DD-excluded light rings). The registered band is N_stab ∈ [3.3, 7.3]
+— so survival needs the **top ~third** of that band.
+
+**Two honest riders.** (a) *The DD data independently pushes N_stab high:* "N=8 is the lightest LZ
+survivor" *is* the observational statement that, if these rings are the DM, the formation floor sits at
+N≥8 — i.e. N_stab ≳ 7. DD and formation therefore agree at the top of the band; the open question is
+whether the substrate constants land there. (b) *Formation prefers slightly heavier than the bare-DD
+N=8:* at central brackets the clean DD-surviving peak is **N ≈ 9–11 (12.7–15.5 GeV)**; N=8 (11.26 GeV)
+sits right at the boundary (marginal on the N=6 tail at central brackets, comfortable at slightly higher
+N_stab). So the joint formation+DD candidate is a ring at **N ≈ 8–11**, not sharply N=8.
+
+**Falsifier, now sharp:** pin N_stab = c·κ/(ℓ_rung·E_bond) from the substrate constants (κ, ℓ_rung,
+E_bond) and derive the absolute Ω_DM. If N_stab ≳ 6.2 → the DD-selected heavy-ring relic is confirmed
+self-consistent (preferred mass N≈9–11). If N_stab ≲ 6 → formation makes DD-excluded light rings and
+**(B) dies**. This is the next computation; it is a bounded substrate-constant evaluation.
 
 ### (ii) Small-scale structure cutoff
 The 11.26 GeV cold relic's free-streaming length is far below observable halo scales (CDM-like to
