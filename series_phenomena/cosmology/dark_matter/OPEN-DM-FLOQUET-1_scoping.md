@@ -1,0 +1,91 @@
+# OPEN-DM-FLOQUET-1 — the transverse charge-switched bending eigenvalue on geometry #3 (the make-or-break, scoped)
+
+**Registered:** Patch 2438, 11 July 2026 (Opus, DM lane). **Status:** OPEN, blocking candidate (B)'s make-or-break.
+**Supersedes as the operative computation:** every cheaper route tried in 2426–2435 (isotropic assumption, gradient
+read, axial average, charge-switching truncation) — all either failed CONV-001 review or reproduced worker bias.
+**This doc pins exactly what must be computed and the guardrails that would have caught each prior failure.** No
+shortcut is authorized; a result that skips any Required Element below is not an answer to OPEN-DM-FLOQUET-1.
+
+## 0. The single blocking question
+On geometry #3 (uniform axial spacing d; 8-qCP cube core at radius r_q; 8-eCP shell at R_e > r_q; opposite polarity
+plane-to-plane; eCP–qCP–qCP–eCP diagonals), with the qCP core dynamically stabilized (jello/Earnshaw + ZBW +
+charge-switching), **is the rod's effective TRANSVERSE bending modulus κ_θ large enough that κ_θ/E_bond ≥ 0.43?**
+- ≥ 0.43 → candidate (B) survives (as a ring family at whatever N_stab = c·κ_θ/E_bond gives; N=8 specifically out).
+- < 0.43 → soft → light rings form → DD-excluded → falsified.
+- non-convergent / unresolvable → honestly UNRESOLVED (no default to either side).
+
+## 1. The object to compute (precise definition)
+κ_θ ≡ the second variation of the TIME-AVERAGED (secular/Floquet) energy of the rod with respect to a transverse
+BENDING deformation of the rod axis, evaluated at the DRIVEN dynamical equilibrium of the ZBW + charge-switching
+lattice, expressed as the lowest bending eigenvalue:
+
+    κ_θ = min-bending-eigenvalue of  δ²E_sec[ρ] / δκ²  |_(driven equilibrium)
+
+where E_sec is the cycle-averaged Coulomb energy over the full ZBW + charge-switching dynamics (BOTH charge phases),
+ρ is the driven stationary distribution over configurations, and κ is the imposed rod-axis curvature. E_bond is the
+axial fragmentation-bond depth for the SAME failure coordinate whose curvature enters κ_θ.
+
+## 2. Required Elements (each is mandatory; skipping any voids the result)
+- **R1 — Driven equilibrium.** Solve the lattice-stabilized separations (r_q, R_e, d) and CP trajectories
+  self-consistently under ZBW + charge-switching, i.e. find where the SECULAR force vanishes. (2430/2434 evaluated
+  at a hand-set site where |E|≠0 — non-equilibrium; that is disqualified.)
+- **R2 — Dynamical duty cycle δ.** The stationary distribution over charge configurations under the driven
+  dynamics. The combinatorial 3/7 (Patch 2435) is a UNIFORM-sampling UPPER BOUND, not the value. δ must come from
+  the transition rates / residence times (or a rigorous detailed-balance argument that uniform holds).
+- **R3 — Both charge phases.** E_sec must average the same-charge (repulsive, +curvature) AND opposite-charge
+  (attractive, −curvature) intervals. (2434 dropped the (1−δ) opposite-charge term; the honest static average is
+  (2δ−1), NEGATIVE at δ=3/7 — that truncation is the exact error being fixed.)
+- **R4 — Transverse mode, not axial.** The bending eigenvalue is TRANSVERSE. It must be computed as such and shown
+  distinct from the axial stiffness. (2434 substituted axial curvature ×x² for the bending mode — disqualified by
+  2430's Laplace lesson: axial and transverse curvatures differ in sign.)
+- **R5 — Netted, not stacked.** κ_θ = the lowest eigenvalue of the FULL secular Hessian = K_switch + K_ponderomotive
+  + K_structural for the SAME mode at the SAME equilibrium. The charge-switching term must be NETTED against the
+  2430 ponderomotive tensor (eigenvalues [−190,+173,+292] on the old geometry), not added on top of an unaddressed
+  negative contribution. Recompute the ponderomotive tensor on geometry #3.
+- **R6 — E_bond branch derived.** Which axial bond fragments first (E_qq core ~66 MeV vs E_ee coat ~0.49–1.25 MeV,
+  a factor α_s/α ≈ 53) must be DERIVED from the fragmentation coordinate, not selected. The registered 2424 value
+  used E_ee; 2434 used E_qq without justification.
+- **R7 — Deformation-correlation, if invoked.** If any "both phases restoring" argument is used (same-charge resists
+  compression, opposite resists tension), the switching law must be DERIVED to be correlated with the deformation
+  (a ratchet/Floquet mechanism with phase and cycle work). With a deformation-UNCORRELATED δ it does not hold.
+
+## 3. Anti-bias guardrails (verification battery the computation MUST pass)
+Each guardrail names a specific prior failure it prevents. A result must report ALL of these, pass or fail.
+- **G1 (both-phases limit check):** the method must reproduce δ→0 ⇒ pure-attraction Earnshaw-NEGATIVE and δ→1 ⇒
+  pure-repulsion POSITIVE. A method that gives positive stiffness at δ→0 has dropped the attractive phase. [catches
+  the 2434 truncation]
+- **G2 (transverse ≠ axial):** report BOTH the axial and the transverse eigenvalues; the ratio uses the transverse.
+  If they're equal, prove it; don't assume it. [catches the 2434 axial substitution]
+- **G3 (equilibrium check):** report |secular force| at the evaluation point; it must be ≈ 0. [catches the
+  2430/2434 non-equilibrium site]
+- **G4 (netting check):** report K_switch, K_ponderomotive, K_structural separately AND their sum; removing any one
+  must change the reported κ_θ. [catches stacking a positive term on an unaddressed negative one]
+- **G5 (δ upper-bound honesty):** report both the uniform 3/7 upper bound AND the dynamical δ; if they differ, the
+  dynamical one governs. [catches quoting the upper bound as the value]
+- **G6 (branch honesty):** report the ratio for BOTH E_bond branches AND the derivation of which governs. [catches
+  the deep-branch cherry-pick]
+- **G7 (pre-registered sign):** it is stated NOW, before the computation, that a negative or sub-0.43 transverse
+  eigenvalue will be reported as FAIL/UNRESOLVED and NOT re-truncated, re-parametrized, or re-geometried into
+  survival. Any post-hoc geometry change to rescue a failing result must go through CONV-001 as a new round.
+
+## 4. Method (multi-session; not a single-patch job)
+Candidate approaches, in increasing rigor: (a) reduced Floquet–Mathieu analysis of the dominant bending mode
+(analytic, gives the sign and rough magnitude); (b) molecular-dynamics / kinetic-Monte-Carlo of the ZBW +
+charge-switching lattice with the secular bending Hessian extracted numerically at the self-consistent equilibrium;
+(c) a rigorous variational lower bound on the lowest transverse bending eigenvalue. Recommended order: (a) to fix
+the sign honestly (with G1–G7), then (b) for the magnitude if (a) is favorable. This is explicitly scoped as
+multi-session; no pressure to force a single-patch number — that pressure is what produced the 2434 shortcut.
+
+## 5. Decision rule (pre-registered)
+Let κ_θ* = the transverse bending eigenvalue from R1–R5, E_bond* = the branch from R6.
+- κ_θ*/E_bond* ≥ 0.43 → SURVIVES; register the ring family at N_stab = c·(κ_θ*/E_bond*), rerun DD at that mass.
+- κ_θ*/E_bond* < 0.43 → FALSIFIED (light rings, DD-excluded).
+- R1–R5 non-convergent → UNRESOLVED; do not default.
+Ω_DM is not built until this resolves and (if survives) DD is rerun at the resulting mass.
+
+## 6. Provenance / why this doc exists
+Candidate (B) is the last DM-core coring survivor. Its make-or-break κ_θ/E_bond has been attempted four times this
+session and each attempt was either refuted by CONV-001 or found to reproduce worker bias toward the founder's
+lean (2437 adjudication; 3/5 seats flagged motivated reasoning). The honest state is UNRESOLVED. This scoping doc
+converts the flailing into a disciplined specification so the next attempt is bias-guarded. Related open items:
+OPEN-SS-43 (parent), OPEN-DM-CAPTURE-1, OPEN-COSMO-DM-1..4.
