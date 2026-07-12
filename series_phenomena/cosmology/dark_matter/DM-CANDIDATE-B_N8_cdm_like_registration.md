@@ -1,4 +1,18 @@
-# Avenue (B) — the N=8 closed ring as a CDM-like dark-matter candidate (draft registration)
+# Avenue (B) — the N=8 closed ring as a CDM-like dark-matter candidate — **FALSIFIED on falsifier (i)** (Patch 2431, founder-registered)
+
+> **STATUS: FALSIFIED (11 July 2026, Patches 2426–2431; founder-registered this session).** Falsifier (i) —
+> the ring-formation make-or-break κ_θ/E_bond ≥ 0.43 — **FAILS.** The rung-bond bending stiffness-to-depth ratio
+> is κ_θ/E_bond ~ 0.05–0.35 < 0.43 on every non-refuted read (founder gradient read 1835; tensor anisotropy 2430;
+> registered central 0.345 / 2424), so the bond is **soft in bending** → short persistence length → low N_stab
+> (≈ 1.4–4.9 vs the 6.05 survival floor) → light (N < 8) rings close and persist → the DM population contains
+> LZ-excluded light rings → **seen in direct detection → excluded.** The favorable 2426 value (0.74–1.5) was an
+> artifact of assuming isotropic dynamic stiffness (f_stiff = f_depth), refuted by the anisotropic ponderomotive
+> tensor (2430). Per the 1836 unification the ZBW amplitude/frequency and the Earnshaw sign **cancel** in the
+> ratio, so 1811 #2 is moot; the result is geometric. **Unification:** the SAME soft-hinge geometry that makes the
+> DM cluster floor VIABLE (1835/1836) is what kills ring formation. Honest residual: the fully-evaluated edge-bond
+> SSV potential (open SF-2/SF-5 G1) would pin f exactly — **sign robust, evaluation confirmatory** (it could flip
+> only by overturning the founder's own gradient read; every non-refuted read is below 0.43). **This closes
+> OPEN-SS-43's last live candidate; Ω_DM is moot (no surviving candidate to normalize).** See §6.
 
 **Draft, Patch 2420, 11 July 2026.** Successor to OPEN-SS-43 D3 (§34.23) after the coring routes closed:
 elastic corridor death (Q5, 2413), |SSV| dissipative capture dead candidate-blind (2418), population
@@ -176,12 +190,37 @@ decisive one*; (ii) the kinetic-decoupling cutoff → minimum halo mass; (iii) t
 at 11.26 GeV; (iv) the ΔN_eff from the light Sea sector. Provisional pins: S_c fine wall S_c* (SS43-Q1);
 the D5-A′ coupling ruling (derivation debt).
 
-## 5. Grade and posture
+## 5. Grade and posture (SUPERSEDED — see §6)
 
-**CONSISTENCY-grade, not IDENTIFICATION-grade.** The candidate is *compatible with* being the dark
-matter — DD-selected, collisionless, cold — but does not yet *identify* as it: falsifier (i) is
-unresolved and could sink it. For the swarm claim, the value is that the nine axioms produce a single,
-sharply-specified relic that the direct-detection data itself selected, with a complete falsifier menu —
-a genuine prediction, not a placeholder. **The honest headline is not "we found the DM"; it is "the
-axioms produce one CDM-like candidate, the data picked its mass, and here are the four ways to kill it."**
-The first of those four is the next computation.
+~~**CONSISTENCY-grade, not IDENTIFICATION-grade.**~~ The candidate was registered CONSISTENCY-grade pending
+falsifier (i). Falsifier (i) has now been RUN to a verdict (§6): it FAILS. The candidate is **FALSIFIED**, not
+CONSISTENCY-grade. The swarm-claim value stands in a different form: the axioms produced a single sharply-specified
+relic *and its own formation physics killed it* — a genuine falsifiable prediction that was falsified, which is a
+stronger scientific outcome than an untestable placeholder. **The honest headline is not "we found the DM" and no
+longer "one CDM-like candidate with four ways to kill it"; it is "the axioms produced one CDM-like candidate, the
+data picked its mass, and the candidate's own rung-bond formation physics excluded it."**
+
+## 6. Falsification record — falsifier (i) FAILS (Patches 2426–2431, founder-registered)
+
+Falsifier (i) reduced (2421–2424) to one number: κ_θ/E_bond ≥ 0.43 (κ_θ = rung-bond hinge bending stiffness,
+E_bond = well depth). The derivation arc:
+
+- **2426** — derived κ_θ/E_bond = 2R_perp²/d² = 0.74–1.5 on the founder Cross-Rod geometry (E_ee-outer-layer);
+  E_bond validated at 494 keV vs registered 490. **Favorable — but rested on f_stiff = f_depth (isotropic
+  dynamic stiffness).**
+- **2427** — Kapitza test of that assumption in the AXIAL mode: favorable. **Later retracted** (tested the wrong
+  mode).
+- **CONV-001 panel** (2428/2429) — 1 VERIFIED + 4 VERIFIED-WITH-CAVEATS; net "not-yet-falsified, not survives."
+  Gemini (D): κ_θ is a TRANSVERSE stiffness; by Laplace the transverse dynamic stiffness need not track the axial.
+- **2430** — the ponderomotive stiffness TENSOR is strongly anisotropic and sign-indefinite (eig [−190,+173,+292]):
+  **f_stiff ≠ f_depth. The isotropic assumption behind 2426 is REFUTED; the favorable verdict withdrawn.**
+- **2431** — CLOSE. Per the 1836 unification the ZBW amplitude/frequency and the Earnshaw sign CANCEL in the
+  same-bond two-geometry ratio (1811 #2 moot); the ratio is geometric. Founder gradient read (1835):
+  κ_θ/E_bond ~ f = (d/r_hinge)^p ~ 0.05–0.25. **Three independent non-refuted reads (founder gradient; 2430 tensor;
+  registered 0.345) ALL < 0.43.** → soft bending → short ℓ_p → light (N < 8) rings form and persist → LZ-excluded.
+
+**Verdict: falsifier (i) FAILS → candidate (B) FALSIFIED.** Consequence for OPEN-SS-43: the coring routes were
+closed (2413/2418/2419) and candidate (B) was the CDM-like successor; with (i) failing, **OPEN-SS-43's last live
+candidate is closed.** Ω_DM is moot. Honest residual: the fully-evaluated edge-bond SSV potential (open SF-2/SF-5
+G1) would pin f exactly — **sign robust, evaluation confirmatory**, overturnable only by contradicting the
+founder's own gradient read.
