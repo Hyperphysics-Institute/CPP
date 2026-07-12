@@ -122,12 +122,22 @@ DD-survival requires the peak pushed to N≥8, which needs the substrate at larg
 - **favorable (r≳11, ε≲26):** N_stab ≳ 9, peak N≥9 → **survives**.
 - **DD-surviving fraction of the registered (r,ε) box: ≈ 53%.**
 
-**Verdict on (i): a genuine coin-flip.** The central substrate expectation *fails* (formation makes
-N=7-dominant rings, LZ-excluded by ×1.6), but ~half the registered parameter box survives (peak at
-N≥8). The floor derivation is clean (N_stab ≈ 6.8, rigid-like); the residual is now **two substrate
-ratios — r = ℓ_p/ℓ_rung and ε = E_bond/kT_form — which must land in the upper-r/lower-ε half** for the
-candidate to survive. Pinning those two ratios (and the absolute Ω_DM) is what remains; the central
-values do not favor the candidate.
+**r AND ε DERIVED — reduced to one owed number (Patch 2424).** `code/2424_r_eps_derivation.py`. Both
+ratios trace to the *same* object: r = ℓ_p/ℓ_rung = κ_θ/kT_form and ε = E_bond/kT_form, where ℓ_rung =
+1 fm (pinned) and kT_form ≈ 16.5 keV (registered). The kT_form **cancels** in the deciding combination:
+**r/ε = κ_θ/E_bond** — the *stiffness-to-depth ratio* of the 2eDP:2qDP rung-bond hinge well. DD-survival
+needs r/ε ≳ 0.43; central registered value 0.345 → **fails by ×1.25**. In absolute terms (via kT_form):
+κ_θ ≈ 169 keV, E_bond ≈ 490 keV; survival requires the rung-bond SSV potential to give κ_θ ≳ 211 keV
+(~25% stiffer) or E_bond ≲ 393 keV (~25% shallower). Both sit inside the 0860 fragmentation window and
+the 1858 E_c scale, so neither is independently pinned tighter.
+
+**So r and ε do not resolve the coin-flip from registered constants — they collapse it onto a single
+strong-sector calculation: the 2eDP:2qDP rung-bond SSV potential (κ_θ, E_bond).** This is exactly the
+"make-or-break" flagged since 0861/0863 ("derive the rung-bond SSV potential → E_bond and κ_θ"), now
+sharpened to one numeric target that decides the entire candidate: **κ_θ/E_bond ≳ 0.43.** Mild
+qualitative lean — at ℓ_rung/R_s = 0.039 the bond is nearly unscreened Coulomb, which favors stiffer
+wells — but 0863's near-cancellation warning stands: the value needs the SSV charge-sum, not an estimate.
+The candidate's fate, and the relic-abundance normalization, both wait on that one calculation.
 
 
 ### (ii) Small-scale structure cutoff
