@@ -20,6 +20,17 @@
 > for the lattice-stabilized separations, then the eCP-coat bending stiffness AND the end-to-end binding AT those
 > separations — never computed on this lattice. Until then, neither FALSIFIED nor SURVIVES. See §6.
 >
+> **UPDATE (Patch 2437, CONV-001 panel): the 2434/2435 charge-switching "survives" inversion is REFUTED.** 2/5
+> REFUTED + 2/5 HOLD + 1/5 survives → 4/5 do-not-promote; 3/5 flagged motivated reasoning (accepted). Decisive
+> error (GPT + Gemini, independent, worker-verified): 2434's κ_θ = δ·Σk_rep·x² kept only the same-charge
+> (+curvature) fraction and DROPPED the (1−δ) opposite-charge (−curvature) fraction; the honest duty-cycle average
+> is (2δ−1)·2A/z³, which at δ=3/7 is **−1/7 < 0 (net negative)** — positive only for δ>1/2. The 6/7, N≈12, ~17 GeV
+> figures are **WITHDRAWN**. Surviving: geometry #3 (retires the 2431 kill's superseded lattice — kill NOT
+> reinstated) and δ=3/7 as a UNIFORM-sampling UPPER bound (not the dynamical value). Make-or-break **UNRESOLVED**.
+> Required: the lowest TRANSVERSE charge-switched Floquet bending eigenvalue on geometry #3 at driven equilibrium,
+> BOTH phases, netted against the 2430 tensor — plus the E_bond branch and the dynamical δ. Status stays REOPENED,
+> NOT promoted.
+>
 > ---
 > **(SUPERSEDED) Prior 2432 verdict — FALSIFIED:** Falsifier (i) make-or-break κ_θ/E_bond ~ 0.05–0.35 < 0.43 on the
 > founder gradient read + 2430 tensor + registered 0.345, giving soft bending → light rings → LZ-excluded. **This is
