@@ -108,6 +108,27 @@ energetic leading order says rigid (survives, central N_stab ≈ 6.81); a full f
 the pop-open barrier settles it. A clean panel target. Still owed alongside: the absolute Ω_DM
 normalization.
 
+**DIRECT COMPUTATION (Patch 2423) — the floor is rigid-like, but the candidate is a coin-flip.**
+`code/2423_softened_floor.py` builds the ring free energy explicitly: anharmonic mean-field bending
+[E = N·r·(1−cos 2π/N), c_eff ≈ 18.0–18.8 at N=6–8] plus the harmonic fluctuations of the joint angles
+under the three closure constraints (tangent + position). The softening and the fluctuation entropy
+**nearly cancel**: **N_stab ≈ 6.79 central** (vs rigid 6.81, SY 4.85) — so the coefficient question is
+resolved in favor of the near-rigid value. **But N_stab ≈ 6.79 is not sufficient.** Feeding this floor
+back into the cascade (consistently — the 2421 "6.2" used the SY floor), the population piles up *just
+above* the floor at **N = 7 (77% mass), which LZ excludes** (f₇ = 0.77 over its 0.47 ceiling by ×1.6).
+DD-survival requires the peak pushed to N≥8, which needs the substrate at larger r / smaller ε:
+
+- **central (r=10.25, ε=29.7):** N_stab 6.79, peak **N=7 → EXCLUDED** (fails).
+- **favorable (r≳11, ε≲26):** N_stab ≳ 9, peak N≥9 → **survives**.
+- **DD-surviving fraction of the registered (r,ε) box: ≈ 53%.**
+
+**Verdict on (i): a genuine coin-flip.** The central substrate expectation *fails* (formation makes
+N=7-dominant rings, LZ-excluded by ×1.6), but ~half the registered parameter box survives (peak at
+N≥8). The floor derivation is clean (N_stab ≈ 6.8, rigid-like); the residual is now **two substrate
+ratios — r = ℓ_p/ℓ_rung and ε = E_bond/kT_form — which must land in the upper-r/lower-ε half** for the
+candidate to survive. Pinning those two ratios (and the absolute Ω_DM) is what remains; the central
+values do not favor the candidate.
+
 
 ### (ii) Small-scale structure cutoff
 The 11.26 GeV cold relic's free-streaming length is far below observable halo scales (CDM-like to
