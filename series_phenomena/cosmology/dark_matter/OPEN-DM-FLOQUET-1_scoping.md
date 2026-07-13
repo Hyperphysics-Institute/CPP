@@ -89,3 +89,14 @@ session and each attempt was either refuted by CONV-001 or found to reproduce wo
 lean (2437 adjudication; 3/5 seats flagged motivated reasoning). The honest state is UNRESOLVED. This scoping doc
 converts the flailing into a disciplined specification so the next attempt is bias-guarded. Related open items:
 OPEN-SS-43 (parent), OPEN-DM-CAPTURE-1, OPEN-COSMO-DM-1..4.
+
+## 7. Progress log
+- **Method (a) — sign — COMPLETE (Patch 2440, 12 July 2026).** Meissner (square-wave Floquet) analysis of the
+  transverse mode. **G1 PASS.** Result: **sign is CONDITIONAL and NARROW.** The statically-inverted δ=3/7 mode is
+  stabilized only inside ε ∈ ~[0.18, 0.43] (ω_sw/ω_A ~ 1.5–2.4); the fast-switching limit is UNSTABLE (the naive
+  ponderomotive expectation fails — negative static average O(ε) dominates the O(ε²) gain). In-band recovery is
+  modest (~0.12·A mid-band). Levers: branch asymmetry ε_att/ε_rep<1 helps (R6); dynamical δ likely ≤ 3/7 keeps it
+  narrow (R2). **NOT-YET-FALSIFIED; survival NOT demonstrated; registry not promoted.** The sign now hinges on
+  R1/R2 (does substrate ε,δ fall in-window), R6 (branch), and decisively R5/G4 (net against the recomputed geom-#3
+  ponderomotive tensor — 2430 analog had a −190 transverse eigenvalue). See `floquet_method_a_sign_result.md`,
+  `reasoning/2440.md`, `code/2440_floquet_method_a_sign.py`. **Next: R1 (driven equilibrium) → R5 (net).**
