@@ -109,3 +109,15 @@ OPEN-SS-43 (parent), OPEN-DM-CAPTURE-1, OPEN-COSMO-DM-1..4.
   bond fragments (only deep-core is in-window); (2) the effective ω_sw (qDP-hop vs eDP-hop vs residence-suppressed).
   R5/G4 netting still gates the final sign. **Next: full self-consistent R1 solve (branch derived; ω_sw from
   residence times) → R5.**
+
+
+## §7 — FORK-SWITCH-1 (registered Patch 2452, 13 July 2026; founder-gated adjudication)
+
+**The switching-process reading fork, discovered by the R1 in-situ solve's own mean-force diagnostic.** The corpus holds two readings of the δ=3/7 charge-switching:
+
+- **(ANCHORED)** Pattern-anchored excursions: each pair spends (1−δ)=4/7 in its PATTERN product state, 3/7 flipped. This is the reading every quantitative patch since 2437 uses — E_static = (1−2δ)·(pattern) is only correct here. The jello property (2435) supplies broad excursion statistics about the pattern (yielding the combinatorial 3/7) without erasing the pattern the lattice is made of. Under ANCHORED the R1 drive is a coherent duty-3/7 alternation; the resonance-resolved response stabilizes the candidate on the central E_qq branch under clock readings C1 (bridgeable ×0.87, K_switch tongue-IN) and C2 (×1.62 fully), and kills under C3 (two-hop).
+- **(UNIFORM)** 2435-literal uniform sampling of neutral configs: ⟨cᵢcⱼ⟩ = −1/7 for all intra-element pairs (pattern-independent), 0 inter-element. Demonstrated (2452 simulation): this breaks the arc's registered E_static convention (mean-force ratio 5.76 vs required 1.0) AND its stochastic spectrum is adiabatic-dominated (net λ_q ≈ −7×10⁻³, kills). UNIFORM-literal is therefore internally inconsistent with the 2437–2451 quantitative arc — evidence for ANCHORED, but adjudication belongs to the founder/panel, not Opus.
+
+**Sub-fork (clock counting, C1 vs C2):** one collective pattern↔flipped alternation per Compton period (ħω₁=264; founder's 90/180/270 deterministic-cycle language leans this way) vs independent-DP flips at rate 12/7 per period (ħω₁=226.3). C3 (two hops/period, ħω₁=452.6) kills everywhere and is least natural against the glossary's one-oscillation-per-period ZBW. All shown in `code/2452_r1_insitu_solve.py`; none selected.
+
+**Consumers:** the OPEN-DM-FLOQUET-1 verdict (directly); the arc's E_static convention corpus-wide within this campaign (via the UNIFORM branch's inconsistency). **Adjudication route:** CONV-001 packet (2450+2451+2452) or founder ruling. **Status: OPEN, founder-gated.**
