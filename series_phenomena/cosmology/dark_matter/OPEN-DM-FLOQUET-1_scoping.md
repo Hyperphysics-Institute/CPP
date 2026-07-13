@@ -100,3 +100,12 @@ OPEN-SS-43 (parent), OPEN-DM-CAPTURE-1, OPEN-COSMO-DM-1..4.
   R1/R2 (does substrate ε,δ fall in-window), R6 (branch), and decisively R5/G4 (net against the recomputed geom-#3
   ponderomotive tensor — 2430 analog had a −190 transverse eigenvalue). See `floquet_method_a_sign_result.md`,
   `reasoning/2440.md`, `code/2440_floquet_method_a_sign.py`. **Next: R1 (driven equilibrium) → R5 (net).**
+- **R1 — driven equilibrium — SCOPED (Patch 2441, 12 July 2026).** Setup + order-level ε map in
+  `R1_geom3_driven_equilibrium_scoping.md` (`code/2441_r1_eps_scale_estimate.py`, `reasoning/2441.md`). Using
+  ω_sw = the "SU(3)-type ZBW hop" (Compton-scale) [reasoning/2435], the sign question is **branch-dependent**: only
+  the **deep E_qq core + qDP-hop** corner lands ε ≈ 0.21 in the method-(a) window [0.18,0.43]; shallow-E_ee and
+  eDP-hop corners are deep in the unstable (too-fast) region. Favorable corner is **plausible, not established**
+  (±30% in E_qq spans unstable ↔ in-window). Two decisive R1 sub-questions, both to be **derived**: (1) R6/G6 which
+  bond fragments (only deep-core is in-window); (2) the effective ω_sw (qDP-hop vs eDP-hop vs residence-suppressed).
+  R5/G4 netting still gates the final sign. **Next: full self-consistent R1 solve (branch derived; ω_sw from
+  residence times) → R5.**
