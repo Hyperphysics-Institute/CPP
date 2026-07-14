@@ -100,3 +100,9 @@ The final seat's leverage is recorded in advance so its reading cannot be shaped
 
 4. **τ_cap-from-local-SSV sensitivity variant** (DeepSeek Q2): re-run #1's headline with per-CP caps set by the local SSV timescale rather than the global Compton clock. Dimensional form to be fixed at execution (the return's expression is schematic); cheap; strengthens or weakens the derived-status finding either way. Attached to OPEN-DM-CONTINUOUS-PCD-1 as its light-weight companion.
 5. **The near-equality is now four-ways contested** — identity (Gemini), diagnosis (Grok), coincidence (DeepSeek), unsettled-needs-explanation-pre-promotion (GPT). Attached to the parked E_qq pin; GPT's formulation adopted as the standing statement of what promotion must flag.
+
+---
+
+# AMENDMENT 2 (Patch 2466, 14 July 2026) — Copilot seat CLOSED at founder direction; round closes at 4/5; HOLD fires as pre-registered
+
+The founder, reviewing Copilot's non-return, directed closure rather than substitution or a bespoke re-brief ("all that is a waste of time and compute cycles"). Adjudicator concurrence recorded: a substitute seated now would read a brief whose cascade and stakes are already public in the repo — a weaker seat than the four held. Per the pre-registered Copilot cascade (Amendment 1), the no-valid-return branch fires: **HOLD ~70%, UNPROMOTED, Ω_DM parked; the follow-up is OPEN-DM-CONTINUOUS-PCD-1** — which the founder simultaneously directed be executed immediately rather than deferred to a next session ("execute your recommendations. Initiate review protocol."). Round record: 4 valid seats (Grok, Gemini, ChatGPT, DeepSeek); calibration envelope {30, 65, 72, 85}, median 68.5; Copilot 0-for-3 on fresh-context returns across three rounds — reviewer-reliability record updated. The promotion question is NOT closed: it continues through the CONTINUOUS-PCD-1 results dispatch back to the four seated reviewers (the re-ask pre-registered in the dispatch package).
