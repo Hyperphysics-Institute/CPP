@@ -164,3 +164,51 @@ This round added no faithful computation and no new adverse finding; the duplica
 no information; Copilot's concordant bottom line adds no lift (stale reasoning path).
 Computations #1 (v ∝ SSV + derived parameters) and #2 (registry priced both ways)
 remain the sole gate, with the re-adjudication branches pre-registered in this file.
+
+---
+
+## AMENDMENT 2 (Patch 2459, 13 July 2026) — attribution resolved; panel COMPLETE (5/5)
+
+**Attribution resolution (founder-confirmed):** the round-1 return scored under the GPT
+label was GROK's; the genuine ChatGPT return arrived this round (distinct text). All
+prior references read GPT→Grok. The round-2 "duplicate" is explained: Grok's text was
+pasted twice under two labels. Panel now complete: Grok, ChatGPT, Gemini, DeepSeek,
+Copilot (stale ×2 but seat filled, concordant bottom line; fresh re-run remains
+desirable, no longer blocking).
+
+**ChatGPT's genuine return, scored:** Q1 INSUFFICIENT ("requires derivation or
+simulation, not preference"); Q2 **CANNOT CERTIFY** — explicitly refused to fabricate
+numbers ("Doing otherwise would violate the independence requested"); Q3 **UPHOLD
+(needs scrutiny)** — the first reviewer NOT to overturn Q3: the choices are not
+uniquely fixed but "none of these individually prove the conclusion wrong"; the
+implementation is "a model of the founder's description, not the unique mathematical
+realization" (accepted as the fairest one-line characterization on record); Q4
+INSUFFICIENT; Q5 INSUFFICIENT (demands the explicit Hessian = computation #2); Q6
+PARTIAL UPHOLD — geometry correction substantive, dynamics conjectural, **calibration
+60–65% rather than 75%**.
+
+**Updates to the standing adjudication:**
+- **H1 STRENGTHENED to four distinct voices** (Grok, Gemini, DeepSeek, + ChatGPT's Q3
+  speed item). v ∝ SSV remains computation #1's core.
+- **Q5 tally now: Grok UPHOLD / ChatGPT INSUFFICIENT / Gemini OVERTURN / DeepSeek
+  REFUTE** — maximally contested; computation #2 remains the sole resolution.
+- **Q6 panel envelope: {<30% (Gemini), 50% (DeepSeek), 60–65% (ChatGPT), hold
+  (Copilot), internal-ok-pending-external (Grok)}. The standing ~55% sits inside the
+  envelope near its center. VERDICT UNCHANGED: candidate (B) = ~55%, UNRESOLVED,
+  UNPROMOTED, Ω_DM PARKED.** (No computation this round; attribution and one new
+  audit-only return move nothing.)
+- **Integrity note for the record:** ChatGPT's explicit refusal to return numbers it
+  had not computed is precisely the reviewer behavior the commission's independence
+  clause required, and stands in documented contrast to the round-1 fabrication
+  finding. Reviewer reliability is now itself part of this panel's record.
+- **NEW long-horizon item registered (ChatGPT Q1):** OPEN-DM-DANCE-ATTRACTOR-1 — derive
+  the founder's dance as the LONG-TIME ATTRACTOR of Moment-level PCD dynamics, rather
+  than implementing it as specified. This is the ultimate Q1 closure, distinct from and
+  beyond the near-term #1/#2 gate; parked behind them.
+- Geometry #3 amendment ratification tally corrected: **Grok, Gemini, DeepSeek — 3–0
+  stands** (ChatGPT silent; Copilot n/a). Formalization unchanged.
+
+**Gate unchanged:** computations #1 (v ∝ SSV + derived parameters) and #2 (registry
+priced both ways) with the pre-registered re-adjudication branches. The unanimous
+panel demand — a faithful independent reproduction — remains open; the brief's Q2
+invitation stands for any reviewer with execution capability.
