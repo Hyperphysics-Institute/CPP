@@ -49,3 +49,54 @@ No duplicate-text finding this round (the two valid returns are distinct texts w
 1. **ChatGPT seat:** the paste received was the Patch 2463 diff, not a return. If ChatGPT produced commission answers, re-paste them; if it echoed the brief, re-run in a fresh conversation with the presentation block only.
 2. **Copilot seat:** open a BRAND-NEW conversation; paste ONLY the 2463 presentation block. (Do not answer the round-selection question inside the old thread — the thread is contaminated by prior rounds and the return would be scored stale for a fourth time.)
 3. **DeepSeek seat:** the fourth paste did not arrive; re-paste the return.
+
+---
+
+# AMENDMENT 1 (Patch 2465, 14 July 2026) — ChatGPT and DeepSeek seats received; panel 4/5 valid; NO threshold met; Copilot seat now formally DECISIVE; the cascade pre-registered
+
+## Seat ledger update
+
+| Seat | Status | Disposition |
+|---|---|---|
+| ChatGPT | **VALID** | Genuine, on-brief, distinct text. Scored below. |
+| DeepSeek | **VALID** | Genuine, on-brief, distinct text (not a duplicate of any prior paste). One fidelity note: its Q3 written formula α_s·ħc/√(a_qq²+a_qq²) evaluates to 72.1 MeV, not 55.6 — but its numeric path 102 × 0.545 = 55.6 decomposes the correct expression α_s·ħc/√(d²+a_qq²) exactly (0.545 = a_qq/√(d²+a_qq²)). Written-formula typo; numbers reproduce. Minor note, NOT a reliability strike. |
+| Copilot | **OUTSTANDING** | Fresh-conversation re-run pending. Its seat is now formally decisive — see the cascade below. |
+
+## ChatGPT — scored
+
+- **Q1: INSUFFICIENT.** Neither reference is derived; the correct reference "should emerge from the underlying lattice energy functional, not from whichever convention yields greater stability." (Convergent with Grok's variational decider and OPEN-DM-CONTINUOUS-PCD-1.)
+- **Q2: PARTIALLY UPHOLD** — "reasonable but not uniquely compelled": explicitly NOT an arbitrary rescue (the disclosure practice credited), but the wait rule is a modeling assumption inferred from the registered clock, not derived from the axioms. **Not a sustained objection** for threshold purposes.
+- **Q3: UPHOLD with one reservation** — the display is "one of the strongest aspects of the current work"; the near-equality (55.6 vs 66) "deserves explanation before promotion" — could be convergence or the same interaction counted twice.
+- **Q4: PROMOTE-CONDITIONAL, ~65%.** Condition: the promotion must be recorded as **PROVISIONAL**, with the s₀-reference and the E_qq interpretation flagged as open foundational questions. Distinction drawn: promotion ≠ validation; the methodological record (pre-registration, disclosed adverse arcs, displayed bookkeepings) justifies provisional promotion. **Adjudication ruling: this condition prescribes the FORM of promotion and is satisfiable by the promoting act itself. The adjudicator hereby COMMITS (before the final seat arrives): any promotion executed under this round carries the provisional rider with both flags. GPT's promote is therefore COUNTABLE.**
+- **Q5: DEFER** (retain 2437–2452 as historical record until Q1 resolves).
+
+## DeepSeek — scored
+
+- **Q1: (ii) ring-native** — "the registry registers the actual physical structure"; the straight chain is bend-unstable (per #1) and so cannot be the reference equilibrium; charging the ring for curvature double-counts.
+- **Q2: DERIVED** — the registered clock is "the only physically motivated timescale"; τ_cap-flatness confirms. Names a second discriminator variant: **τ_cap from the local SSV timescale** (registered below).
+- **Q3: faithful; display honest; DC-CORRECTED bookkeeping most physically accurate; near-equality = COINCIDENCE** (both quantities derive from the α_s·ħc/~1 fm scale; different physical origins; diagnosis: the central E_qq may be slightly high, true value ~55–60).
+- **Q4: PROMOTE-CONDITIONAL, 85%** (drops to 65% "if forced to straight-registry"). Condition: adopt hypothesis (ii). **Adjudication ruling: NOT currently countable — the condition adopts one side of a contested fork the panel has not resolved (Q1 stands 2–1–1); a promotion cannot decide the physics it is conditioned on. Becomes countable if and only if Q1 resolves to (ii) by ≥3 seats.**
+- **Q5: YES** (supersede formally; maintain as historical record).
+
+## Threshold check at 4/5 (pre-registered reading applied unmodified)
+
+- **Q4 countable promotes: 1** (ChatGPT, via the committed provisional rider). Grok's condition (Q1→(ii) by ≥3, or E_qq ≲100 under (i)) unmet; DeepSeek's condition (adopt (ii)) unmet. Gemini: DO-NOT-PROMOTE. **≥3 NOT met.**
+- **Sustained computable Q2/Q3 objections: 1** (Gemini Q2). GPT's partial-uphold is explicitly not sustained. **≥2 NOT met — the ~55% branch does not fire.**
+- **Q1: (ii)×2 (Grok, DeepSeek), (i)×1 (Gemini), INSUFFICIENT×1 (GPT). Neither ≥3.**
+- **Q5: YES×2, NO×1, DEFER×1 — no majority; supersessions remain conditional/unenacted.**
+- **Four-seat calibration envelope: {30, 65, 72, 85}; median 68.5 — brackets the standing ~70% almost exactly.**
+- **Consequence: HOLD. Verdict ~70%, UNPROMOTED, Ω_DM parked.**
+
+## The Copilot cascade (pre-registered NOW, before the final return exists)
+
+The final seat's leverage is recorded in advance so its reading cannot be shaped post-hoc:
+
+- **If Copilot answers Q1 = (ii):** the Q1→(ii)-by-≥3 branch fires (3 of 5). Consequences cascade mechanically: (a) the (i)-contingency discount lifts; (b) Grok's promote-condition becomes record-satisfied → countable; (c) DeepSeek's promote-condition becomes record-satisfied → countable; (d) countable promotes = GPT + Grok + DeepSeek (+ Copilot's own Q4 if promote) ≥ 3 → **the PROMOTION branch fires: promotion executes at the next patch with the founder's sign-off, as PROVISIONAL (the committed GPT rider: s₀-reference and E_qq interpretation flagged open), Ω_DM unparks, verdict to the five-seat panel median.**
+- **If Copilot answers Q1 = (i):** Q1 stands 2–2–1; no Q1 branch fires; promotes remain at 1–2 countable; **HOLD ~70%** with the split-branch follow-up = OPEN-DM-CONTINUOUS-PCD-1 (which discharges Q1 and Q2 in one computation).
+- **If Copilot answers Q1 = INSUFFICIENT (or does not return validly):** as above — **HOLD ~70%**, targeted follow-up per the strongest specific objection = OPEN-DM-CONTINUOUS-PCD-1.
+- **If Copilot sustains a Q2/Q3 computable objection:** sustained count reaches 2 → **the ~55% branch fires; the named computation (OPEN-DM-CONTINUOUS-PCD-1 unless Copilot names sharper) becomes the gate; no promotion.**
+
+## Registered this amendment
+
+4. **τ_cap-from-local-SSV sensitivity variant** (DeepSeek Q2): re-run #1's headline with per-CP caps set by the local SSV timescale rather than the global Compton clock. Dimensional form to be fixed at execution (the return's expression is schematic); cheap; strengthens or weakens the derived-status finding either way. Attached to OPEN-DM-CONTINUOUS-PCD-1 as its light-weight companion.
+5. **The near-equality is now four-ways contested** — identity (Gemini), diagnosis (Grok), coincidence (DeepSeek), unsettled-needs-explanation-pre-promotion (GPT). Attached to the parked E_qq pin; GPT's formulation adopted as the standing statement of what promotion must flag.
