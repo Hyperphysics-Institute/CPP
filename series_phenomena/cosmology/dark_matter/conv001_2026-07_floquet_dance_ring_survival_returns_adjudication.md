@@ -116,3 +116,51 @@ from the actual net-SSV vector. = computation #3, folded into #1.
    and Ω_DM stays parked indefinitely.
 
 **Verdict of record: candidate (B) = ~55%, UNRESOLVED. UNPROMOTED. Ω_DM PARKED.**
+
+---
+
+## AMENDMENT (Patch 2458, 13 July 2026) — second round of returns
+
+**1. The "Grok" paste is a VERBATIM DUPLICATE** of the return previously scored under
+the GPT label (identical text throughout — impossible for independent reviewers). It is
+NOT double-counted. Standing panel: FOUR distinct returns (one of ambiguous GPT-or-Grok
+attribution, Gemini, DeepSeek, Copilot); one seat unfilled. The scoreboard's "GPT"
+column represents that single ambiguous-attribution return. No adjudication substance
+changes: H1's convergence rested on three DISTINCT texts (the ambiguous return, Gemini,
+DeepSeek) and stands. ACTION: founder to identify which model produced the duplicated
+text and obtain the missing seat's return (fresh conversation, 2456 fenced block only).
+
+**2. Copilot R4 (second attempt) is STALE-CONTEXT AGAIN** — it reviews the pre-session
+state (κθ = 2δ·E_bond inversion, 2430 transverse softening, the E_bond denominator
+fork, N≈12/~17 GeV) rather than the 2456 brief; it self-reports working from "the
+pasted brief" of a prior round and offers the Q1–Q6 format only on request. Scored as
+stale but NOT discarded:
+- **Bottom line CONCORDANT with the standing verdict** (NOT-YET-FALSIFIED; HOLD; no
+  promotion; Ω_DM parked = the post-2457 state exactly).
+- **Its decisive objection, translated to the current frame, is legitimate and
+  ABSORBED:** "a favorable term was stacked on an undislodged unfavorable one; recompute
+  the full mode structure with ALL channels present." Under the dance reading there is
+  no separate ponderomotive channel to dislodge — the mean dance energy subsumes the
+  linear-response machinery — but that subsumption must be EARNED, not asserted:
+  2430's transverse-softening question becomes exactly "do the ring's transverse modes
+  (m=1, m=2) soften under the full treatment?", which is the currently-marginal center
+  of computations #1 and #2. Copilot's demand is therefore already the registered gate.
+- **NEW registry item (conditional supersession enumeration):** IF the dance reading
+  holds after #1/#2, the following are formally superseded-by-reading (none deleted):
+  2430 ponderomotive Hessian/transverse softening; 2434/2435 κθ = 2δ·E_bond arithmetic
+  (δ is no longer an input — apposition statistics are dance OUTPUTS, answering
+  Copilot's "δ = 3/7 may be an upper bound"); the 2440 Meissner-tongue machinery; 2441's
+  ε framing; the 2443–2452 statics/netting family. **The ORIGINAL pre-session CONV-001
+  question (the E_bond denominator convention, E_qq vs E_ee) is conditionally MOOTED:**
+  the mean-energy treatment has no E_bond denominator; E_qq re-enters only through the
+  registry bond model (computation #2) and the saturation-scale check. This disposition
+  is CONDITIONAL on #1/#2 and is registered, not enacted.
+- ACTION: founder to re-run Copilot in a FRESH conversation with only the 2456 fenced
+  block (its own "R4: produce full panel return" prompt is safe ONLY with the correct
+  brief in context).
+
+**3. Verdict: UNCHANGED — candidate (B) = ~55%, UNRESOLVED, UNPROMOTED, Ω_DM PARKED.**
+This round added no faithful computation and no new adverse finding; the duplicate adds
+no information; Copilot's concordant bottom line adds no lift (stale reasoning path).
+Computations #1 (v ∝ SSV + derived parameters) and #2 (registry priced both ways)
+remain the sole gate, with the re-adjudication branches pre-registered in this file.
