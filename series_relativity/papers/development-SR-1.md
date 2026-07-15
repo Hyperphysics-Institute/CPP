@@ -205,3 +205,50 @@ The heavy half — candidate (a) against the full M1–M9 burden, starting with 
 uniqueness — was deliberately deferred to a fresh window rather than attacked on a spent
 context. The K1 effort clock stands at session 1 of the founder-bounded two. Session
 derivation log: `series_relativity/development/SR-MECH-2485_mechanism_session.md`.
+
+---
+
+## 15 July 2026 (third entry) — SR-MECH-2485 session 2: M1 passed, M2 underdetermined, K1 fired — the campaign closes negative and the question comes out sharper (Patches 2491–2494)
+
+The heavy half ran, and the campaign ended the way pre-registration is supposed to let
+things end: cleanly, on its own terms, with the physics better off.
+
+M1 (2491) was the session's genuine positive. The uniqueness of the distinguished plane
+was not argued — it was enumerated. The postulate-available data for a uniformly moving
+aggregate (τ̂ from c01's universal tick; ê_motion, the sole motion-sourced datum; an
+isotropic arena from A3′-C2 + M4) has an SO(2) stabilizer, and the invariant-subspace
+sweep over ALL dimensions — run over all k precisely so the answer's dimensionality
+would be an output, not an input — returned continua at k = 1 and k = 3 and exactly two
+invariant planes at k = 2, of which only Π = span(τ̂, ê_motion) contains any of the
+data. The dimension the tube needs is the one dimension the postulates single out. The
+K3a counterfactual passed in its strongest form: under an n = 3 target the same sweep
+returns "no unique 3-space" and kills the campaign — the argument is target-lethal
+under the counterfactual, not merely target-independent. One near-miss is on the
+verbatim record: a convenient-but-false "P⊥ is only derivatively specifiable" argument,
+drafted, checked, dropped.
+
+M2 (2492) is where it stopped, and the stopping is the result. The drift-meets-budget
+composition rules were enumerated target-blind; the one available forward filter
+(rest-limit continuity, c01-grounded) killed the half-space floor and — notably — the
+corpus's own per-Moment obligation template: c01's exact-advance structure transfers to
+a slice, and the slice dies. Four survivors remained, machine-pinned pairwise
+inequivalent, and the postulates do not discriminate among them. Three routes to the
+tube were drafted and abandoned on the K3′ test; the corpus sweep converged from three
+independent directions (c01's response rule, SR-1's withdrawn consumption claim,
+OPEN-SR-EPSILON's own registry text) on one missing object: the per-Moment single-CP
+content of the motion state — the SF-6 inertia mechanism, unpinned by founder ruling one
+day earlier. The session declined to select and shipped the disposition upward, argued
+against interest in both directions.
+
+The founder took option α (2493, verbatim: "Sounds good. Let's go with choice alpha."):
+K1 fired at its registered two-session bound. OPEN-SR-H1-CLASS is CLOSED
+NEGATIVE-FOR-MECHANISM; PROP-SR-H1-1 registered (the four-model Proposition, codim-2
+member geometric-existence-only); OPEN-SR-EPSILON stays open, inheriting the pinned fork
+and a binding blind-adjudication protocol: no SF-6 session ever sees the fork; when the
+isolated impulse-transfer investigation pins the inertia mechanism, a new pre-registered
+round makes the comparison. The negative is stated precisely in the closure record —
+dynamics AS CURRENTLY DERIVED does not select the tube, which is weaker than "the
+postulates do not select it" — and the distinction was weighed, not buried. What SR-1
+owes is unchanged from the triage: ε(v). What changed is that "derive ε(v) somehow"
+became "the answer is one of four pinned rules and a blind derivation decides." Session
+log complete at steps 1–5: `series_relativity/development/SR-MECH-2485_mechanism_session.md`.
