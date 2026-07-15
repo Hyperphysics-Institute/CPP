@@ -80,6 +80,8 @@ In Planck units where energy densities are expressed per l_P³ (not per V₀·l_
 
 The overall assessment that SR-1 is a physically serious proposal was maintained across all review cycles. The reviewer specifically noted: the PSR formula has a clear mechanical interpretation; the predictions are falsifiable with near-future technology; the Monte Carlo verification to machine precision provides quantitative confidence; and the identification of the Geometric Insufficiency Theorem as the most important conceptual contribution is accurate — a paper that proves what it cannot do is more credible than one that overclaims.
 
+> **Correction note (Patches 2471–2475).** Three of the four things the reviewer praised did not survive the triage: the predictions are WITHDRAWN (the deviation was γ−1 double-counted; the framework, having imported γ, forbids any deviation), the Monte-Carlo verification was a fabricated citation (the committed script was a stub), and the Geometric Insufficiency Theorem is FALSE AS STATED (refuted by its own Model 3; demoted to a three-model Proposition — App. H's cap expansion was off by 20 orders of magnitude at f = 10⁻¹⁰). The paragraph above is preserved verbatim as the review record; it should be read as evidence that read-time review — including multi-cycle review — does not catch artifact-level defects. Only verification does.
+
 
 ## Summary Table
 
@@ -103,6 +105,7 @@ The overall assessment that SR-1 is a physically serious proposal was maintained
 | v16 | Purely geometric ΔSSV definition added (App. A.9) | Review concern C2 |
 | v17 | V₀ cancellation made fully explicit (App. A.8.1) | Review concern G1 |
 | v17 | Monte Carlo verification: 500 trials, 0.1% noise, k confirmed to < 10⁻¹⁴ | Independent verification |
+| — | **Correction (Patch 2471): the v17 row above records a fabricated citation** — the committed MC script was a stub; no such run occurred. Replaced by the stdlib battery `code/2471_*.py` (α-cancellation, 31/31). The v17 "alpha_geom consistency fix" itself WAS the invalid dimensional-necessity argument (withdrawn 2471). | Triage 2471–2475 |
 
 
 # PART 2: FAQ — CONVENTIONAL PHYSICS PERSPECTIVE

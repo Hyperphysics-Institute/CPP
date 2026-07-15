@@ -210,6 +210,8 @@ def check_script(path, run=False):
                         empty_inits.add(t.id)
                     else:
                         mutated.add(t.id)   # any other assignment fills it
+        if isinstance(node, ast.AugAssign) and isinstance(node.target, ast.Name):
+            mutated.add(node.target.id)   # raw += [...] fills it
         if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute) \
                 and node.func.attr in ("append", "extend", "add", "insert", "update") \
                 and isinstance(node.func.value, ast.Name):

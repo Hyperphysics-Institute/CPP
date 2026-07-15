@@ -282,3 +282,17 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 **Discipline (G7):** a region reverse-engineered to give f² is *fitting*, not deriving. The motivation must be independent of the target exponent. This is precisely the trap the k defect fell into.
 **Paper(s):** SR-1 App. H.1
 **Last updated:** 15 July 2026
+
+---
+
+### OPEN-SR-C02-NORM: Is c02's Coulomb-Constant Chain Convention-Invariant?
+**Status:** OPEN (NEW 15 July 2026, Patch 2480 — blast-radius adjudication of the k convention)
+**Sector(s):** SR / EM — companion paper c02 (Dipole Stiffness C)
+**Priority:** MEDIUM-HIGH — c02 is the only k-inheritor whose OWN result may carry α-dependence.
+**One-line statement:** c02 derives the Coulomb constant from the stiffness C = α_geom·SSV_crit and the shell-broadcast geometry ("No separate electromagnetic coupling constant is introduced; k_e is determined by C and Q"). α_geom is unit-dependent (0.5594 per circumradius, 0.2444 per l_P). If the k_e chain uses C's numerical value in one unit convention while other lattice quantities enter in another, the result inherits the matched-pair defect (rescaling by α, up to ~44%); if the chain is built entirely from convention-invariant combinations, the result stands. Nobody has checked which.
+**How this differs from the SR-1 case:** SR-1's k appears only in the product k·ΔSSV, where α cancels. c02 uses the stiffness C *directly* as a physical input to an EM prediction — the cancellation argument does not automatically transfer.
+**What a solution looks like:** trace the k_e derivation (c02 §Physical Implications) symbol by symbol; every occurrence of C or α_geom must either (a) pair with a quantity carrying the inverse convention dependence, or (b) be shown to enter only through unit-fixed physical combinations. A verify script per the 2471 stdlib standard: recompute the chain at α = 0.5594 and α = 0.2444 and show the physical output is identical (pass) or differs (fail — the defect is live in c02's own result).
+**Discipline (G7):** if the outputs differ, the fix is NOT to pick the convention that gives the wanted k_e.
+**Blast-radius context:** registered during the Patch-2480 sweep of the 14 SR-1 k/PSR inheritors. All product-only inheritors (c03, c05, c08, c14) verified convention-safe; c01/c07 carried value-billing only (corrected in place); c02 is the sole live physics question.
+**Paper(s):** c02_dipole_stiffness_C.tex
+**Last updated:** 15 July 2026

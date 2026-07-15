@@ -89,13 +89,18 @@ The central formula of Version~16 is
   \qquad k = \frac{\lP^3}{\EP} \approx 2.16\times10^{-114}\ \text{m}^3/\text{J}.
   \label{eq:PSR}
 \end{equation}
-The coupling constant $k$ encodes the elastic stiffness $C = \EP/(\alphageom\lP^3)$
-of the Dipole Sea against SSV perturbation.  In Version~16 this value is
-fixed by dimensional necessity alone: $k$ is the unique combination of Planck
-constants with units m$^3$/J.  That is a necessary condition but not a
-sufficient one; a referee may reasonably ask whether the microscopic
-Planck-scale interactions of the DP sea actually produce this value, or whether
-a different stiffness is equally consistent with the CPP postulates.
+The coefficient $k$ encodes the elastic stiffness of the Dipole Sea against SSV
+perturbation.  \emph{Correction note (SR-1 Patches 2471/2474):} Version~16's claim
+that this value is ``fixed by dimensional necessity alone'' is withdrawn ---
+dimensional analysis fixes dimensions, never a dimensionless prefactor --- and $k$'s
+numerical value is now understood as a normalisation convention: $k = \alpha\,
+\lP^3/\EP$, with $\alpha$ cancelling identically in the physical product
+$k\cdot\Delta\SSV$ and $(k,\Delta\SSV)$ inherited as a matched pair.  This paper's
+original question survives the correction and becomes sharper: what a referee may
+reasonably ask is whether the microscopic Planck-scale interactions of the DP sea
+actually produce the \emph{stiffness} $C$ --- a physical quantity, unlike $k$'s
+convention-dependent numerical value --- or whether a different stiffness is equally
+consistent with the CPP postulates.
 
 This companion paper answers that question.  We show that:
 \begin{enumerate}
@@ -252,13 +257,7 @@ and explores its physical consequences.
 Equation~\eqref{eq:C} has a simple dimensional interpretation.
 $\SSVcrit = \EP/\lP^3$ is the Planck energy density --- the maximum
 SSV storable in one Planck volume without geometric collapse.
-The factor $\alphageom \approx 0.5594 < 1$ is the geometric efficiency
-of the 600-cell's icosahedral packing: the lattice can only exploit
-$\approx 56\%$ of the theoretical maximum Planck stiffness because its
-12-fold coordination and pentagonal faces do not tile 3D space perfectly.
-No other regular 4-polytope produces this precise efficiency; the 600-cell
-is selected by the same argument that fixes the dimensionality theorem in
-Version~16 (Appendix~G).
+The factor $\alphageom \approx 0.5594$ is the Voronoi second-moment integral evaluated in circumradius units (\emph{convention note, SR-1 Patch 2474:} the same integral evaluates to $0.2444$ in $l_P$ units --- the number is exact but unit-dependent, so the earlier ``geometric packing efficiency $\approx 56\%$'' physical interpretation is withdrawn; only convention-invariant combinations carry physical content).  At any \emph{fixed} unit convention the integral's value still discriminates between polytopes: no other regular 4-polytope produces this value, its 12-fold coordination and pentagonal faces being unique to the 600-cell.  (The earlier appeal to the Version~16 Appendix~G dimensionality theorem as the selecting argument is retained only with the Patch-2474 scope note: Appendix~G's postulates include exact Lorentz covariance, which SR-1 now concedes is imported, and the theorem itself is flagged unaudited.)
 
 % ══════════════════════════════════════════════════════════════════════════════
 \section{Physical Implications}
@@ -296,12 +295,22 @@ is determined by $C$, $Q$, and the Planck units already fixed in Version~16.
 \subsection{Consistency with the PSR formula}
 
 The strain~\eqref{eq:strain} directly supplies the denominator of the PSR
-formula~\eqref{eq:PSR}.  Because $C$ (and therefore $k = 1/(C\lP^3/\EP)$)
-is fixed by the lattice geometry alone, the relativistic factor
-$\gamma = 1 + k\cdot\Delta\SSV$ is \emph{fully geometric} --- no free
-parameter remains.  The Monte-Carlo verification routine in the GitHub
-repository (Version~16, Appendix~A.8.1) recovers the exact low-velocity
-expansion and saturation behavior with $k$ fixed at this value.
+formula~\eqref{eq:PSR}.  The stiffness $C$ is fixed by the lattice geometry; the product
+$k\cdot\Delta\SSV$ is convention-invariant.  \emph{Correction note (SR-1
+Patches 2471/2474):} the earlier text here claimed $\gamma = 1 + k\cdot\Delta\SSV$
+is ``fully geometric --- no free parameter remains'' and cited a Monte-Carlo
+verification routine.  Both claims are withdrawn: the $\gamma$ content enters
+through the $\Delta\SSV$ normalisation (an input, per SR-1 App.~A.8.1), so the
+equivalence with $\gamma_{\rm SR}$ holds by construction rather than by geometric
+derivation; and the cited Monte-Carlo script was a stub (one of four fabricated
+citations withdrawn at Patch 2471; the surviving verification is the stdlib
+$\alpha$-cancellation battery, \texttt{code/2471\_*.py}, 31/31).  The earlier
+inline expression $k = 1/(C\lP^3/\EP)$ was also dimensionally inconsistent with
+the $\alpha=1$ value quoted in \S1 --- an instance of the matched-pair hazard this
+correction removes (mixing $(k,\Delta\SSV)$ conventions rescales $\gamma-1$ by
+exactly $\alpha$).  Whether this paper's Coulomb-constant chain
+(Section~\ref{sec:implications}) is itself convention-invariant is registered as
+OPEN-SR-C02-NORM.
 
 \subsection{Fractional quark charges as a cage-occupation prediction}
 \label{sec:cage}

@@ -1,9 +1,21 @@
 # Phenomena — SR-1: Mechanistic Derivation of Relativistic Effects via SSV in the Dipole Sea
 
-**Paper:** SR-1_special_relativity_emergence.tex (v17, 26 March 2026)
-**Last updated:** 30 March 2026
+**Paper:** SR-1_special_relativity_emergence.tex
+**Last updated:** 15 July 2026 (Patch 2480 status correction; content baseline v17, 26 March 2026)
 
-SR-1 is a different kind of paper from SS-1 or the SM series. Those papers derive new algebraic structures or mass ratios from CPP geometry. SR-1 derives something already known — special relativity — from first principles, and shows that the CPP mechanical account is not merely consistent with SR but contains it exactly. The phenomena entries here reflect this character: there are fewer "explained" entries and more "validated" entries, because SR-1's primary contribution is showing that the lattice framework reproduces SR with zero free parameters and makes a small number of additional predictions that diverge from SR only at Planck-scale accelerations.
+> **CORRECTION BANNER (Patches 2471–2475, SR-1 triage — read before any entry below).**
+> The 2471–2475 triage established: k is a normalisation convention, not a derived constant
+> (α cancels identically in k·ΔSSV; the dimensional-necessity argument is withdrawn); γ enters
+> as an INPUT via the ΔSSV normalisation (App. A.8.1), so γ_CPP = γ_SR is an identity by
+> construction and admits no deviation; the five acceleration-scaled predictions and the muon
+> bound are WITHDRAWN (the claimed deviation k·ΔSSV IS γ−1, double-counted; every ΔSSV
+> definition is velocity-dependent and no derivation bridges to acceleration); the Monte-Carlo
+> "machine-precision confirmation" citations are WITHDRAWN (the cited scripts were stubs);
+> and the Geometric Insufficiency Theorem (App. H.1) is DEMOTED to a three-model Proposition.
+> Entry-level statuses below are corrected accordingly; original claims are preserved struck
+> or quoted so the correction is legible.
+
+SR-1 is a different kind of paper from SS-1 or the SM series. Those papers derive new algebraic structures or mass ratios from CPP geometry. SR-1 gives a mechanical account of special relativity — and, post-triage, its honest billing is: the lattice framework reproduces SR **exactly by construction** (the γ content is supplied through the ΔSSV normalisation), with the geometry contributing the displacement-budget structure and functional form. It is a mechanism-and-consistency paper, not a prediction paper; it currently has zero falsifiable predictions (OPEN-SR-EPSILON carries the physical debt; OPEN-SR-H1-CLASS carries the reopened route).
 
 
 ## Section 1: Explained Phenomena (PHEN-E)
@@ -67,21 +79,21 @@ is nonzero for any non-inertial path and exactly zero for any inertial path. The
 
 **Falsifiability:** A null result at 10²⁰g sensitivity would require k to differ from l_P³/E_P by a factor of 10²⁰ — well outside the current experimental constraint of k < 10¹⁶ × (l_P³/E_P) from muon storage ring data.
 
-**Status:** PRED-O — primary falsification target.
+**Status:** **WITHDRAWN (Patch 2474).** Acceleration-scaled; no derivation bridges the velocity-dependent ΔSSV to acceleration, and the claimed deviation is γ−1 double-counted. δ ~ 10⁻²⁰ corresponds to v ≈ 4 cm/s, unrelated to 10²⁰g.
 
 
 ### PHEN-SR1-P2. Clock Offset in Ultra-High-Speed Centrifuges
 
 **Prediction:** Precision optical clocks in next-generation centrifuges reaching 10¹⁸–10¹⁹g for seconds should show a measurable offset from the SR prediction at the 10⁻¹⁸–10⁻¹⁹ level.
 
-**Status:** PRED-O — near-term testable with next-generation centrifuge technology.
+**Status:** **WITHDRAWN (Patch 2474).** Same defect as P1 (acceleration-scaled, deviation double-counted).
 
 
 ### PHEN-SR1-P3. Gravitational-Wave Dispersion at Extreme Curvature
 
 **Prediction:** In regions of extreme spacetime curvature near neutron-star mergers, small deviations in gravitational-wave propagation speed or phase are expected at the 10⁻²⁰ level, arising from the same PSR_eff compression mechanism applied to the GW carrier modes.
 
-**Status:** PRED-O — requires future GW detector sensitivity.
+**Status:** **WITHDRAWN (Patch 2474).** Same defect as P1.
 
 
 ### PHEN-SR1-P4. Casimir Pressure Modification from 4D Voronoi UV Cutoff
@@ -92,7 +104,7 @@ is nonzero for any non-inertial path and exactly zero for any inertial path. The
 
 where d is the plate separation. The fourth power (not second power) arises from the 4D mode-density scaling: the 4D mode volume integral contributes two extra powers of l_P/d compared to a 3D UV cutoff. At d = 100 nm this correction is ~10⁻⁴⁰; at d = 10 nm it rises to ~10⁻³⁰. These are far below current experimental sensitivity but represent a falsifiable signature of the 4D lattice structure distinct from any 3D-cutoff model.
 
-**Status:** PRED-O — currently undetectable; may become accessible with next-generation MEMS technology at d ≈ 10 nm.
+**Status:** **CONDITIONAL (Patch 2474)** — retained, not withdrawn: the (l_P/d)⁴ form needs an independent 4D spectral-measure derivation before it can be billed as a prediction. Currently undetectable; possibly accessible with next-generation MEMS at d ≈ 10 nm.
 
 
 ### PHEN-SR1-P5. Unruh Temperature Modification
@@ -103,7 +115,7 @@ where d is the plate separation. The fourth power (not second power) arises from
 
 where T_U = ħa/(2πk_Bc) is the standard Unruh temperature. The fractional shift δT/T ≈ 10⁻²⁰ at a ≈ 10²⁰g — identical in magnitude to the clock-dilation deviation but from a completely different observable (thermal radiation spectrum or excitation rate). This prediction is orthogonal to the clock tests and can be probed through analogue systems (superconducting-qubit circuits, superradiant amplification).
 
-**Status:** PRED-O — consistent with all current data; Unruh effect itself not yet directly observed in laboratory.
+**Status:** **WITHDRAWN (Patch 2474).** Same defect as P1 — the modification factor (1 + k·ΔSSV) is γ_CPP, an identity with γ_SR; the "deviation" is the double-count.
 
 
 ## Section 3: Validated Phenomena — Consilience (PHEN-V)
@@ -112,32 +124,26 @@ where T_U = ħa/(2πk_Bc) is the standard Unruh temperature. The fractional shif
 
 **The data:** Relativistic muons (γ ≈ 29.33) in a CERN storage ring experienced sustained centripetal accelerations of order 10¹⁸g while their lifetimes were precisely measured. The observed time-dilation factor agreed with the standard SR prediction to fractional accuracy 2 × 10⁻³ (95% CL).
 
-**CPP prediction:** At a ≈ 10¹⁸g, the CPP fractional deviation from SR is δ_predicted ≈ 10⁻²². This lies 19 orders of magnitude below the experimental sensitivity. The Planck-derived value of k therefore survives this test with a margin of 10¹⁶ — experimental data are fully consistent with CPP, and any k up to 10¹⁶ times the theoretical value would also be consistent.
-
-**Consilience significance:** SR-1 makes a specific numerical prediction for the Bailey 1977 result. The prediction (10⁻²²) is unambiguously smaller than the experimental bound (2 × 10⁻³). CPP does not merely accommodate the muon data — it predicts that the deviation should be unmeasurably small at that acceleration, consistent with the result.
+**Status: WITHDRAWN as consilience (Patch 2474 — the muon bound is void twice).** The entry bounded (i) a normalisation convention (k carries no physical content by itself) and (ii) a deviation that the framework forbids (γ_CPP = γ_SR is an identity; the predicted deviation was γ−1 double-counted). CPP's actual statement about Bailey 1977 is exact agreement by construction — a consistency property shared with SR itself, carrying no discriminating power. The original billing is preserved above for the record; it is not a consilience datum.
 
 
-### PHEN-SR1-V2. k = l_P³/E_P Confirmed by Monte Carlo to Machine Precision
+### PHEN-SR1-V2. ~~k = l_P³/E_P Confirmed by Monte Carlo to Machine Precision~~ — STRUCK (Patch 2471)
 
-**The computation:** A full Monte Carlo simulation of the 600-cell honeycomb was performed over all 120 vertices with proper 4D Voronoi tessellation (scipy.spatial.Voronoi), 500 independent trials, 0.1% measurement noise. The simulation recovers the theoretical coupling constant k = 2.158453 × 10⁻¹¹⁴ m³/J to machine precision — relative difference < 10⁻¹⁴, limited only by double-precision floating-point arithmetic.
-
-**Consilience significance:** The PSR formula is not fitted to any observed relativistic effect. The coupling constant k is derived from the 600-cell geometry and then verified numerically, with no adjustable parameters. The fact that this geometrically-derived k produces the correct Lorentz factor (via the energy-momentum bridge) is a substantive consistency check.
+**Struck in full.** The cited Monte-Carlo simulation was never performed: the committed script was a stub (empty vertex list, pass-body loop, "For brevity" marker — AI chat output committed as code), one of four fabricated MC citations withdrawn at Patch 2471. Independently of the fabrication, the claim was doubly void: k = l_P³/E_P with prefactor 1 rests on the withdrawn dimensional-necessity argument, and k's numerical value is a normalisation convention that no simulation could "confirm" (α cancels identically in k·ΔSSV — verified in the replacement stdlib battery `code/2471_k_convention_and_alpha_geom_verification.py`, 31/31). Entry retained as a tombstone so the correction is legible.
 
 
 ### PHEN-SR1-V3. α_geom Appears Independently in Both SR-1 and SS-1
 
 **The number:** α_geom = 3(11+5√5)√(5+√5)/320 ≈ 0.5594 appears in two independent derivations: in SR-1 as the 600-cell Voronoi stiffness integral that establishes the functional form of the PSR saturation curve, and in SS-1 (THEO-SS-4) as the exact geometric coupling constant from which sea_strength is derived. Both derivations use the same 600-cell Voronoi face-area second-moment integral in 4D.
 
-**Consilience significance:** The same geometric object that governs how strongly kinetic energy compresses the Voronoi cell (SR-1) also governs how strongly the Dipole Sea couples to the 600-cell lattice (SS-1). This is not a coincidence of fitting — both are computed from the same integral. The presence of α_geom in both sectors is a cross-paper consilience result confirming that SR and QCD share the same underlying geometric source in CPP.
+**Status: DOWNGRADED from consilience to shared-geometry observation (Patch 2474).** The SS-1 leg stands (THEO-SS-4). The SR-1 leg is withdrawn as a physical constant: within SR-1, α_geom is a normalisation-dependent stiffness measure (0.5594 per circumradius, 0.2444 per l_P) whose value cancels from the physical product k·ΔSSV. That both sectors evaluate the same 600-cell Voronoi face-area second-moment integral remains true and is worth recording — but with only one leg carrying physical content, it is no longer a two-sector consilience result. If ΔSSV acquires an independent operational normalisation (OPEN-SR-EPSILON; the DM/SF-6 coupling route), α becomes physical and this entry can be re-evaluated.
 
 
 ### PHEN-SR1-V4. GPS Clock Corrections Are Consistent with CPP
 
 **The data:** GPS satellite clocks require daily corrections for both special-relativistic time dilation (satellites moving at ~3.9 km/s, γ-1 ≈ 8.4 × 10⁻¹¹) and general-relativistic gravitational blueshifting (combined correction ≈ 38 μs/day). These corrections are verified daily to ~1 ns precision.
 
-**CPP prediction:** At GPS orbital velocities (effective acceleration ~2 × 10⁻⁸g), the CPP fractional deviation from SR is of order 10⁻³⁸ — far below any observable. GPS clock corrections are completely consistent with CPP at all accessible precision.
-
-**Consilience significance:** GPS represents the most routinely tested and practically consequential application of SR. CPP's complete compatibility with GPS corrections confirms the framework is not in tension with any applied relativistic technology.
+**Status: REFRAMED (Patch 2474).** The original entry quoted a deviation of order 10⁻³⁸ from the withdrawn acceleration-scaled formula. The corrected statement is stronger and emptier at once: γ_CPP = γ_SR identically, so CPP's deviation from SR at GPS precision is exactly zero by construction. Compatibility with GPS is therefore automatic — a consistency property, not a validated prediction, and it carries no discriminating power against SR.
 
 
 *Document prepared by Thomas Lee Abshier ND and Claude Sonnet (Anthropic), 30 March 2026.*
