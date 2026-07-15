@@ -48,16 +48,12 @@ Because V_eff = V₀/(1 + k·ΔSSV) and the 4D Voronoi volume scales as V ∝ r�
 
 This is the central formula of SR-1. It states that stored kinetic energy reduces the effective displacement budget per Absolute Moment. All relativistic effects follow from this single expression.
 
-**Step 6 — The coupling constant k is purely geometric.**
-The derivation of k proceeds in three steps. First, the elastic stiffness C of a Voronoi cell against isotropic distortion is the second moment of the face-area distribution over the 12 nearest-neighbour faces of the dual 120-cell:
+**Step 6 — The coupling constant k is a normalisation convention (corrected, Patches 2471/2474).**
+Earlier versions of this document derived k in three steps ending with "dimensional analysis forces the prefactor to be exactly 1." That argument is **withdrawn**: dimensional analysis fixes the dimensions of a quantity and can never fix a dimensionless prefactor. What survives is this: the elastic stiffness integral gives the functional form C = α_geom × SSV_crit with α_geom ≈ 0.5594 (an exact 600-cell constant, but **unit-dependent** — 0.5594 per circumradius vs 0.2444 per l_P), and the collapse condition sets the scale SSV_crit = E_P/l_P³. The prefactor α then **cancels identically in the product k·ΔSSV for any α** (verified, `code/2471_k_convention_and_alpha_geom_verification.py`, 31/31): k's numerical value is fixed by the ΔSSV normalisation convention, not by geometry. There is no single k to derive.
 
-    C = α_geom × SSV_crit,   α_geom = 3(11+5√5)√(5+√5)/320 ≈ 0.5594
+    k = α · l_P³/E_P   —   (k, ΔSSV) is a matched normalisation pair; only k·ΔSSV is physical.
 
-This α_geom is an exact algebraic constant from the 600-cell golden-ratio geometry, confirmed numerically by Monte Carlo (Appendix E.2). Second, the collapse condition (one Planck energy E_P filling one Planck-volume l_P³ saturates the displacement budget) sets SSV_crit = E_P/l_P³ without free parameters. Third, dimensional analysis forces the prefactor to be exactly 1 — the only combination of Planck quantities with units m³/J is l_P³/E_P. The geometric prefactor α_geom confirms the functional form; dimensional necessity pins the exact value:
-
-    k = l_P³/E_P ≈ 2.16 × 10⁻¹¹⁴ m³/J  (prefactor = 1 exactly)
-
-This value is confirmed by Monte Carlo simulation over all 120 Voronoi cells across 500 independent trials to machine precision (relative difference < 10⁻¹⁴).
+**Live hazard for inheritors:** downstream artifacts must inherit (k, ΔSSV) as a matched pair; mixing conventions rescales γ−1 by exactly α (a 44% error at α = 0.5594). The earlier "confirmed by Monte Carlo to machine precision (500 trials)" citation is also **withdrawn** — the cited script was a stub (Patch 2471; four fabricated MC citations replaced by the stdlib `code/2471_*.py` battery).
 
 **Step 7 — The 4D→3D projection is exact.**
 The 600-cell has one timelike dimension (the Absolute Moment direction, fixed and universal) and three spatial dimensions. Because the timelike advance τ = l_P is stress-invariant — the Absolute Moment ticks once per Planck time for every CP regardless of local stress, a foundational CPP postulate — it contributes a fixed factor to the 4D insphere radius and does not participate in the stress-induced distortion. The 4D insphere radius decomposes as R₄D² = r₃D² + τ², and since τ is invariant, the spatial component contracts by the same factor as R₄D. To first order in k·ΔSSV:

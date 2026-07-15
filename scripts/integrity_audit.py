@@ -269,9 +269,9 @@ def check_prose(paperdir):
             path = os.path.join(root, fn)
             txt = read(path)
             for m in DIMFORCE_RE.finditer(txt):
-                ctx = txt[max(0, m.start() - 400):m.start()]
-                if re.search(r"withdraw|retract|correction note|is invalid|"
-                             r"that argument", ctx, re.I):
+                ctx = txt[max(0, m.start() - 400):m.end() + 400]
+                if re.search(r"withdraw|retract|correct(?:ion|ed)|is invalid|"
+                             r"that argument|earlier versions?", ctx, re.I):
                     continue   # quoted inside a withdrawal — not live billing
                 out.append(("FAIL", "F6-DIMFORCE", rel(path),
                             m.group(0)[:110].replace("\n", " ")))
@@ -289,6 +289,15 @@ def check_prose(paperdir):
                             "identity language + prediction billing in one file "
                             "(gamma-bridge pattern; adjudicate)"))
     return out
+
+def live_zeroparam(path):
+    """True if the file carries zero-parameter billing OUTSIDE withdrawal context."""
+    txt = read(path)
+    for m in ZEROPARAM_RE.finditer(txt):
+        ctx = txt[max(0, m.start() - 250):m.end() + 250]
+        if not re.search(r"withdraw|retract|correct(?:ion|ed)|void", ctx, re.I):
+            return True
+    return False
 
 def check_frontier(paper_id, paperdir):
     """F7: WITHDRAWN status in the frontier vs live zero-parameter billing."""
@@ -313,7 +322,7 @@ def check_frontier(paper_id, paperdir):
     for root, dirs, files in os.walk(paperdir):
         dirs[:] = [d for d in dirs if d != ".git"]
         for fn in files:
-            if fn.endswith(".tex") and ZEROPARAM_RE.search(read(os.path.join(root, fn))):
+            if fn.endswith(".tex") and live_zeroparam(os.path.join(root, fn)):
                 (live_own if fn.upper().startswith(paper_id.upper())
                  else live_neighbor).append(rel(os.path.join(root, fn)))
     wsrc = (f"{withdrawn[0]}" + (f" +{len(withdrawn)-1} more"

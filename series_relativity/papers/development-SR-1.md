@@ -21,13 +21,13 @@ The paper derives special relativistic effects from the PSR formula:
 
     PSR_eff = l_P / (1 + k·ΔSSV)
 
-**k derivation (three steps):**
+**k status (corrected, Patches 2471/2474 — the earlier three-step derivation is withdrawn):**
 
-Step 1 — Elastic stiffness from the 600-cell Voronoi face-area second-moment integral gives the functional form C = α_geom × SSV_crit, where α_geom = 3(11+5√5)√(5+√5)/320 ≈ 0.5594 (exact closed form, confirmed numerically in Appendix E.2).
+Step 1 (survives) — Elastic stiffness from the 600-cell Voronoi face-area second-moment integral gives the functional form C = α_geom × SSV_crit, where α_geom ≈ 0.5594 per circumradius (**unit-dependent**: 0.2444 per l_P — the constant is exact but not normalisation-free).
 
-Step 2 — The collapse condition (one Planck energy E_P filling one Planck-volume l_P³ saturates the displacement budget) sets SSV_crit = E_P/l_P³ without free parameters.
+Step 2 (survives) — The collapse condition (one Planck energy E_P filling one Planck-volume l_P³ saturates the displacement budget) sets the scale SSV_crit = E_P/l_P³.
 
-Step 3 — Dimensional analysis forces the prefactor to be exactly 1: l_P³/E_P is the unique combination of Planck quantities with units m³/J. Therefore k = l_P³/E_P ≈ 2.16 × 10⁻¹¹⁴ m³/J exactly.
+Step 3 (WITHDRAWN) — "Dimensional analysis forces the prefactor to be exactly 1" is invalid: dimensional analysis fixes dimensions, never a dimensionless prefactor. The correct statement: α **cancels identically in k·ΔSSV for any α** (verified, `code/2471_k_convention_and_alpha_geom_verification.py`, 31/31). k = α·l_P³/E_P is a normalisation convention; (k, ΔSSV) must be inherited as a matched pair (mixing conventions rescales γ−1 by exactly α).
 
 **Key geometric quantities:**
 

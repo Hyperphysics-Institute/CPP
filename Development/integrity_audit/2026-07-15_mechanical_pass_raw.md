@@ -41,8 +41,8 @@
 | SM-7 | 0 | 3 | 1 | fail (repro) |
 | SM-8 | 0 | 3 | 1 | fail (repro) |
 | SM-9 | 0 | 3 | 1 | fail (repro) |
-| SR-1 | 8 | 6 | 3 | **FAIL** |
-| SR-2 | 4 | 4 | 3 | **FAIL** |
+| SR-1 | 4 | 6 | 4 | **FAIL** |
+| SR-2 | 1 | 4 | 3 | **FAIL** |
 | SS-1 | 0 | 4 | 1 | fail (repro) |
 | SS-1A | 0 | 4 | 2 | fail (repro) |
 | SS-1B | 0 | 4 | 1 | fail (repro) |
@@ -263,7 +263,7 @@
 - **WARN** `W1-HARDCODED-PRINT` `series_electroweak/notebooks/mc_weinberg_unification.py` — print() of a string literal carrying >=6-sig-fig decimals (fabricated-output signature; verify the number is computed)
 - **FAIL** `F3-NONSTDLIB` `series_electroweak/notebooks/mc_weinberg_unification.py` — non-stdlib imports: numpy (undeclared)
 
-## SR-1  [FAIL]  (14 fail / 3 warn)  series_relativity/papers
+## SR-1  [FAIL]  (10 fail / 4 warn)  series_relativity/papers
 
 - **FAIL** `F3-NONSTDLIB` `series_relativity/op_einstein_closure/spin2_construction/code/1123_task2_completion_check.py` — non-stdlib imports: numpy (undeclared)
 - **WARN** `W1-HARDCODED-PRINT` `series_relativity/op_einstein_closure/spin2_construction/code/1124_task3_quadrupole_verification.py` — print() of a string literal carrying >=6-sig-fig decimals (fabricated-output signature; verify the number is computed)
@@ -277,13 +277,10 @@
 - **FAIL** `F3-NONSTDLIB` `series_relativity/notebooks/SR-2_figures.py` — non-stdlib imports: matplotlib, numpy (undeclared)
 - **FAIL** `F4-STUB` `series_relativity/notebooks/600cell_monte_carlo_voronoi_k_fit.py` — 'vertices = []/{}' never filled but used 1x (SR-1 fabricated-MC pattern)
 - **FAIL** `F3-NONSTDLIB` `series_relativity/notebooks/600cell_monte_carlo_voronoi_k_fit.py` — non-stdlib imports: numpy, scipy (undeclared)
-- **FAIL** `F6-DIMFORCE` `series_relativity/papers/mechanism-SR-1.md` — dimensional analysis forces the prefactor
-- **FAIL** `F6-DIMFORCE` `series_relativity/papers/development-SR-1.md` — Dimensional analysis forces the prefactor
-- **FAIL** `F6-DIMFORCE` `series_relativity/papers/glossary-SR-1.md` — dimensional analysis forces the prefactor
 - **WARN** `W5-IDENTITY-BILLING` `series_relativity/papers/SR-1_special_relativity_emergence.tex` — identity language + prediction billing in one file (gamma-bridge pattern; adjudicate)
-- **FAIL** `F7-CONTRADICTION` `series_relativity/papers/SR-1_special_relativity_emergence.tex` — frontier records withdrawal (frontier_sectors/SR.md:27) but the paper still bills zero-parameter
+- **WARN** `W-F7-NEIGHBOR` `series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` — SR-1 withdrawal in frontier (frontier_sectors/SR.md:27); this co-resident paper bills zero-parameter — check inheritance (blast radius)
 
-## SR-2  [FAIL]  (8 fail / 3 warn)  series_relativity/papers
+## SR-2  [FAIL]  (5 fail / 3 warn)  series_relativity/papers
 
 - **FAIL** `F3-NONSTDLIB` `series_relativity/op_einstein_closure/spin2_construction/code/1123_task2_completion_check.py` — non-stdlib imports: numpy (undeclared)
 - **WARN** `W1-HARDCODED-PRINT` `series_relativity/op_einstein_closure/spin2_construction/code/1124_task3_quadrupole_verification.py` — print() of a string literal carrying >=6-sig-fig decimals (fabricated-output signature; verify the number is computed)
@@ -293,9 +290,6 @@
 - **FAIL** `F4-STUB` `series_relativity/notebooks/SR-2_figures.py` — 'raw = []/{}' never filled but used 1x (SR-1 fabricated-MC pattern)
 - **FAIL** `F3-NONSTDLIB` `series_relativity/notebooks/SR-2_figures.py` — non-stdlib imports: matplotlib, numpy (undeclared)
 - **WARN** `W5-IDENTITY-BILLING` `series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` — identity language + prediction billing in one file (gamma-bridge pattern; adjudicate)
-- **FAIL** `F6-DIMFORCE` `series_relativity/papers/mechanism-SR-1.md` — dimensional analysis forces the prefactor
-- **FAIL** `F6-DIMFORCE` `series_relativity/papers/development-SR-1.md` — Dimensional analysis forces the prefactor
-- **FAIL** `F6-DIMFORCE` `series_relativity/papers/glossary-SR-1.md` — dimensional analysis forces the prefactor
 
 ## SS-1  [FAIL]  (4 fail / 1 warn)  series_strong/papers
 

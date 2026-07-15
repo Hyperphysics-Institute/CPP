@@ -27,11 +27,11 @@ The exact algebraic constant from the 600-cell Voronoi stiffness integral:
 
 ## Coupling Constant (k)
 
-The SR-1 lattice coupling constant relating stored energy density to the fractional PSR reduction:
+The SR-1 lattice normalisation coefficient relating stored energy density to the fractional PSR reduction (renamed from "coupling constant" at Patch 2474):
 
-    k = l_P³/E_P ≈ 2.16 × 10⁻¹¹⁴ m³/J  (prefactor = 1 exactly)
+    k = α · l_P³/E_P   —   a normalisation convention, not a derived constant.
 
-k is derived in three steps: (1) the elastic stiffness integral gives C = α_geom × SSV_crit, confirming the functional form; (2) the collapse condition SSV_crit = E_P/l_P³ sets the scale without free parameters; (3) dimensional analysis forces the prefactor to exactly 1, since l_P³/E_P is the unique combination of Planck quantities with units m³/J. No fitting, calibration, or phenomenological parameter is involved. Confirmed by Monte Carlo simulation to machine precision (relative difference < 10⁻¹⁴, 500 trials). Note: α_geom appears in the derivation as a stiffness measure but cancels when dimensional analysis is applied, leaving k = l_P³/E_P exactly.
+**Correction (Patches 2471/2474).** The earlier three-step derivation ending in "dimensional analysis forces the prefactor to exactly 1" is withdrawn — dimensional analysis fixes dimensions, never a dimensionless prefactor. What survives: the stiffness integral gives the functional form (α_geom ≈ 0.5594 per circumradius; unit-dependent, 0.2444 per l_P), and the collapse condition sets the scale SSV_crit = E_P/l_P³. The prefactor α cancels identically in the physical product k·ΔSSV for any α (verified, `code/2471_k_convention_and_alpha_geom_verification.py`, 31/31), so k's numerical value carries no physical content by itself. The earlier "confirmed by Monte Carlo to machine precision (500 trials)" citation is also withdrawn — the cited script was a stub (one of the four fabricated MC citations replaced at Patch 2471). **Inheritance rule:** (k, ΔSSV) is a matched pair; mixing conventions rescales γ−1 by exactly α.
 
 ---
 
