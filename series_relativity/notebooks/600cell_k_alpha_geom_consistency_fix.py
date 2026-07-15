@@ -1,6 +1,6 @@
 """
 ================================ REJECTED ================================
-STATUS: REJECTED at Patch 2471 (14 July 2026). Retained for provenance only.
+STATUS: REJECTED at Patch 2471 (15 July 2026). Retained for provenance only.
 DO NOT APPLY. Superseded by ../code/2471_k_convention_and_alpha_geom_verification.py
 
 This script (AI-authored, March 2026) correctly identified a real defect in

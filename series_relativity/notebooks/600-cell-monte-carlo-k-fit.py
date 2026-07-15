@@ -1,6 +1,6 @@
 """
 =========================== NON-FUNCTIONAL STUB ===========================
-STATUS: DOES NOT RUN. Retained for provenance only. Patch 2471 (14 July 2026).
+STATUS: DOES NOT RUN. Retained for provenance only. Patch 2471 (15 July 2026).
 
 The Monte-Carlo loop is `pass`. The "Results printed:" block at the foot --
 including `Monte Carlo mean k = 2.158453e-114 +- 3.61e-130` and

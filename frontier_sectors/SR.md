@@ -20,7 +20,7 @@
 ---
 
 ### OPEN-SR-2: Derive k = l_P³/E_P from Voronoi Integral
-**Status:** ⚠ **RE-POSED** — 14 July 2026, Patch 2474. *(Patch 2471 marked this RESOLVED BY DISSOLUTION; **CONV-001 overturned that 4–1** and the dissolution is withdrawn.)*
+**Status:** ⚠ **RE-POSED** — 15 July 2026, Patch 2474. *(Patch 2471 marked this RESOLVED BY DISSOLUTION; **CONV-001 overturned that 4–1** and the dissolution is withdrawn.)*
 **Why dissolution was wrong:** the cancellation is real, but α is unobservable **only because ΔSSV has no operational definition independent of its effect on PSR**. Three reviewers converged: if ΔSSV couples to *any* other sector with an independent normalisation — explicitly flagged as *"your own dark-matter investigation is exactly where such a mismatch could show up"* — then α becomes a physical relative weight and is measurable. Closing the item conceded the prefactor and buried the live question one step before it became answerable. Dissolution was motivated neatness.
 **Resolution:** The question is **ill-posed**. There is no single k to derive: k's numerical value is fixed by the ΔSSV *normalisation convention*, not by geometry. For any α, k = α·l_P³/E_P paired with ΔSSV = E_kin/(α·l_P³) gives k·ΔSSV = E_kin/E_P = γ−1 identically — so every observable is invariant under the prefactor, and **k is not separately physical**. The registry's own "two inconsistent estimates" are the α = 1 (collapse-postulate/bridge) and α = α_geom ≈ 0.5594 (stiffness-integral) conventions; they are *physically equivalent*, not inconsistent. Verified `code/2471_k_convention_and_alpha_geom_verification.py` (31/31). What geometry *does* fix: the functional form 1/(1+ε) (Hooke + saturation → unique lowest-order rational approximant) and the App. H.1 elimination theorem. γ is supplied by the energy-momentum bridge (App. A.8.1) by identification, which H.1 proves necessary.
 **Live hazard (inheritors read this):** (k, ΔSSV) must be inherited as a **matched pair**. Mixing conventions rescales γ−1 by exactly α — a 44% error. Applies directly to any SF-6 / DM-dance inheritance of k.
@@ -233,7 +233,7 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 ---
 
 ### OPEN-SR-1-MC-VERIFY: Restore Numerical Verification Withdrawn from SR-1
-**Status:** OPEN (NEW 14 July 2026, Patch 2471)
+**Status:** OPEN (NEW 15 July 2026, Patch 2471)
 **Sector(s):** SR
 **Priority:** HIGH
 **One-line statement:** SR-1 cited four Monte-Carlo verifications that do not exist; one has been replaced with a real script, the remainder are outstanding.
@@ -241,26 +241,26 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 **What was done:** `code/2471_k_convention_and_alpha_geom_verification.py` (31/31) now genuinely verifies the geometric inputs (a = 1/φ, z = 12, V₀, α_geom vs closed form, the 1/L rescaling, and the rescaling-invariance of k·ΔSSV) from vertices generated out of the binary icosahedral group 2I.
 **What a solution looks like:** (1) a real stressed-Voronoi computation if any claim about cell distortion under ΔSSV is to be retained; (2) a real Unruh mode-counting integration, or permanent withdrawal of that numerical claim (the analytic derivation in App. F is unaffected).
 **Paper(s):** SR-1
-**Last updated:** 14 July 2026
+**Last updated:** 15 July 2026
 
 ---
 
 ### OPEN-SR-EPSILON: Derive the Strain–Kinematics Map ε(v) Without Importing γ
-**Status:** OPEN (NEW 14 July 2026, Patch 2474 — successor to OPEN-SR-2; **CONV-001 panel consensus**)
+**Status:** OPEN (NEW 15 July 2026, Patch 2474 — successor to OPEN-SR-2; **CONV-001 panel consensus**)
 **Sector(s):** SR — **cross-links DM (OPEN-SS-43 / SF-6 inertia)**
 **Priority:** CRITICAL — this is the outstanding physical question of the entire SR line.
 **One-line statement:** Starting only from CPP substrate rules (PCD dynamics, DI-bit emission, A3′ broadcast), derive or falsify ε(v) = γ(v) − 1 **without** using relativistic kinetic energy, the Lorentz factor, or any equivalent SR identity as input.
 **Why it is the real question:** SR-1's App. A.8.1 obtains γ_CPP = γ_SR by *defining* ΔSSV ∝ (γ_SR−1)mc²/V. γ is therefore an **input**, not an output. The debt did not disappear when k dissolved; it moved.
-**UPDATED 14 Jul 2026 (Patch 2475) — the route is more open than 2474 recorded.** H.1's class-coverage theorem is **withdrawn**: its cap expansion was wrong (f^{1/2} published; **f^{5/2}** correct, verified to 50 digits, `code/2475_h1_cap_exponent_verification.py` 8/8), and the theorem's own claim (n ≤ 1 for all models) was **refuted by its own Model 3** (n = 5/2). What stands is the elimination of three models, exponents n ∈ {1, 1, 5/2}. **They bracket the target n = 2.** So an exclusion geometry with V_excl ∝ f² would give ε ∝ f² exactly as required — the erroneous theorem was closing a route that may be open. See OPEN-SR-H1-CLASS: that is now the recommended first attack on this item.
+**UPDATED 15 Jul 2026 (Patch 2475) — the route is more open than 2474 recorded.** H.1's class-coverage theorem is **withdrawn**: its cap expansion was wrong (f^{1/2} published; **f^{5/2}** correct, verified to 50 digits, `code/2475_h1_cap_exponent_verification.py` 8/8), and the theorem's own claim (n ≤ 1 for all models) was **refuted by its own Model 3** (n = 5/2). What stands is the elimination of three models, exponents n ∈ {1, 1, 5/2}. **They bracket the target n = 2.** So an exclusion geometry with V_excl ∝ f² would give ε ∝ f² exactly as required — the erroneous theorem was closing a route that may be open. See OPEN-SR-H1-CLASS: that is now the recommended first attack on this item.
 **What a solution looks like:** reproduce at least the leading v²/2c² behaviour, preferably the divergence as v→c, from substrate dynamics alone. A provable impossibility (extending H.1 beyond the geometric class to include history-dependent / accumulated-energy models) would also close it — and would be a major negative result.
 **Where α becomes physical (the lever):** if ΔSSV is given an operational definition — or couples to the DM/SF-6 sector with an independent normalisation — then α is no longer absorbable and OPEN-SR-EPSILON and the DM campaign become the same problem. **This is the recommended attack route.**
 **Paper(s):** SR-1; SF-6; DM campaign
-**Last updated:** 14 July 2026
+**Last updated:** 15 July 2026
 
 ---
 
 ### OPEN-SR-1-PREDICTIONS: SR-1 Has No Falsifiable Predictions — Restore or Accept
-**Status:** OPEN (NEW 14 July 2026, Patch 2474)
+**Status:** OPEN (NEW 15 July 2026, Patch 2474)
 **Sector(s):** SR
 **Priority:** HIGH
 **One-line statement:** All five of SR-1's falsifiable predictions were withdrawn at Patch 2474; the paper is now empirically equivalent to SR by construction and makes no independent testable claim.
@@ -268,12 +268,12 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 **What a solution looks like:** derive an acceleration-dependent contribution to ΔSSV from substrate dynamics (distinct from, and additional to, the kinetic term), yielding a genuine residual beyond γ_SR. Absent that, accept that SR-1 is an interpretation and remove it from the programme's prediction count.
 **Consequence for the null-hypothesis raise:** the registry's zero-parameter prediction tally must be reduced accordingly. See OPEN-WORKFLOW-PREDICTION-AUDIT.
 **Paper(s):** SR-1
-**Last updated:** 14 July 2026
+**Last updated:** 15 July 2026
 
 ---
 
 ### OPEN-SR-H1-CLASS: Is There an Exclusion Geometry with V_excl ∝ f²?
-**Status:** OPEN (NEW 14 July 2026, Patch 2475)
+**Status:** OPEN (NEW 15 July 2026, Patch 2475)
 **Sector(s):** SR — direct sub-problem of OPEN-SR-EPSILON
 **Priority:** HIGH — cheapest live route to ε(v) = γ−1.
 **One-line statement:** By V ∝ r⁴ volume conservation, an excluded region with V_excl ∝ f² yields ε ∝ f² — exactly γ_SR−1. Does such a region exist with independent physical motivation, or can its non-existence be proved?
@@ -281,4 +281,4 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 **What a solution looks like:** (a) exhibit a physically motivated exclusion region with V_excl ∝ f² — this would derive γ from geometry and close OPEN-SR-EPSILON affirmatively; or (b) prove no such region is admissible under CPP's displacement postulates — a genuine class theorem, which is what H.1 was wrongly billed as.
 **Discipline (G7):** a region reverse-engineered to give f² is *fitting*, not deriving. The motivation must be independent of the target exponent. This is precisely the trap the k defect fell into.
 **Paper(s):** SR-1 App. H.1
-**Last updated:** 14 July 2026
+**Last updated:** 15 July 2026

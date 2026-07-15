@@ -1,6 +1,6 @@
 """
 =========================== NON-FUNCTIONAL STUB ===========================
-STATUS: DOES NOT RUN. Retained for provenance only. Patch 2471 (14 July 2026).
+STATUS: DOES NOT RUN. Retained for provenance only. Patch 2471 (15 July 2026).
 
 `vertices = []` -- the vertex list is empty, so Voronoi(points) cannot execute.
 This file was cited by SR-1 App. A.7 as a Monte-Carlo verification of

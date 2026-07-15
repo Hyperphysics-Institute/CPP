@@ -457,7 +457,7 @@ EW/QM/SD/GR/strong uniques + the 3 SR-1 dup self-keys), now de-risked by the 115
 ---
 
 ### OPEN-WORKFLOW-AI-ARTIFACT: Distinguish Computed from Asserted in the Corpus
-**Status:** OPEN (NEW 14 July 2026, Patch 2471)
+**Status:** OPEN (NEW 15 July 2026, Patch 2471)
 **Sector(s):** Infrastructure / Epistemics
 **Priority:** HIGH
 **One-line statement:** AI-generated chat output is entering the corpus as executed artifact and being cited in shipped papers as numerical verification; nothing structurally distinguishes a stub from a simulation at read-time.
@@ -469,12 +469,12 @@ EW/QM/SD/GR/strong uniques + the 3 SR-1 dup self-keys), now de-risked by the 115
 **What a solution looks like:** (1) every numerical claim in a paper cites a script that is **executed in-container at patch time**, with its stdout captured into the patch (2471 is the first to comply); (2) a `publication_audit.sh` gate that FAILs on a cited script which is absent, non-executable, or whose data is generated from the quantity it fits (circularity check); (3) elision markers ("for brevity", "full version in repo", "…") as a blocking FAIL in any committed `.py`; (4) a routing rule that any `notebooks/` finding which contradicts a shipped claim must open a frontier item within the same session; (5) periodic registry-vs-abstract consistency sweep.
 **Tractability:** (3) is a grep; (1)–(2) are one focused infrastructure session; (5) needs a scripted diff of frontier status vs paper claims.
 **Paper(s):** None (infrastructure) — but SR-1 is the live casualty.
-**Last updated:** 14 July 2026
+**Last updated:** 15 July 2026
 
 ---
 
 ### OPEN-WORKFLOW-PREDICTION-AUDIT: How Many of the ~28 Zero-Parameter Predictions Are k?
-**Status:** OPEN (NEW 14 July 2026, Patch 2474)
+**Status:** OPEN (NEW 15 July 2026, Patch 2474)
 **Sector(s):** Infrastructure / Epistemics
 **Priority:** CRITICAL — this may be the most consequential open item in the programme.
 **One-line statement:** SR-1's k was a normalisation convention billed as a zero-parameter prediction, and its five falsifiable predictions were void; the axiom registry lists ~28 zero-parameter predictions whose independence underwrites the entire √N null-hypothesis-raise strategy. Nobody knows how many are like k.
@@ -484,4 +484,4 @@ EW/QM/SD/GR/strong uniques + the 3 SR-1 dup self-keys), now de-risked by the 115
 **Blast radius already known:** 14 downstream artifacts cite SR-1's k / PSR formula (c01, c02, c03, c05, c07, c08, c09, c12, c14, plus early-universe reasoning). SR-1 is not the unit of repair.
 **Tractability:** one focused session for the script; the adjudications will take longer.
 **Paper(s):** all flagships
-**Last updated:** 14 July 2026
+**Last updated:** 15 July 2026
