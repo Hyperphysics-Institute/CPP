@@ -365,3 +365,29 @@ and was weighed by the founder in taking α.
 4. The M9-dissolution and M1/M4-caveat K2 packages remain queued at founder
    timing; a closed-negative campaign does not extinguish the panel's audit of
    its session-level assets.
+
+### 6a. Panel closure-audit adjudication (folded 15 July 2026, Patch 2495)
+
+Closure-audit return: GPT (single slot; under the founder's review-economy ruling
+of the same date, the closure-audit round closes with this return — negatives do
+not consume further panel turns; any future WIN round re-bills these assets to
+the full 5-slot panel). Findings folded verbatim-in-substance:
+
+| Asset | Adjudicated status |
+|---|---|
+| Closure/K1 | **RATIFIED** — "exemplary against-interest disposition"; negative reads "structural within the current corpus," not a universal no-go |
+| M9 | **RATIFIED DISSOLUTION, UNIFORM-SCOPE** — trigger interpreted by physical purpose, not label-matching; valid under the c07 rod/clock channel convention; reopens if that convention changes; gradient backgrounds require re-derivation |
+| M4 | **CORPUS-CONDITIONAL PASS** — exact given a continuous isotropic uniformly-measured PSR-ball reach set; that single-CP reach interpretation is NOT established by A3′ (scalar speed / shell / geodesic clauses underdetermine target-set density) |
+| M1 | **CORPUS-CONDITIONAL PASS** — stabilizer enumeration sound given the continuous arena symmetry + the methodological distinguishedness criterion; not a postulate theorem |
+| M2 | **NOT DERIVED** — pinned fork unresolved |
+| Blind-adjudication protocol | **RATIFIED** |
+
+**FI-SR-REACH (foundational input, registered per panel Amendment 3, in
+`frontier_sectors/SR.md`):** before M1 or M4 may be promoted from
+corpus-conditional to postulate-grounded, a future round must derive: for a
+single matter CP in one Absolute Moment, the admissible displacement-target
+ensemble is the full continuous round PSR ball with rotationally invariant
+measure — not a shell, discrete hop set, anisotropic kernel, or weighted
+subset — derived without reference to the exclusion exponent or any Lorentz
+identity. It must not be silently bundled into the quarantined independent
+investigation unless that charter itself raises the reach-set question.

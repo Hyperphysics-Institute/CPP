@@ -74,10 +74,15 @@ the panel's audit of its session-level assets.
 
 ## GATES — founder actions owed / at founder timing
 
-1. **CONV-001 panel round (dispatch block provided at session close in chat):** closure
-   audit + M9-dissolution ratify/reject + M1/M4 shared scope caveat. **Panel-side
-   quarantine applies:** reviewers must not restate the fork inventory in any text that
-   could be pasted into an SF-6 session.
+1. ~~CONV-001 panel round~~ **CLOSED (Patch 2495):** GPT closure audit returned and
+   folded — closure RATIFIED, M9 RATIFIED-WITH-SCOPE, M1/M4 downgraded to
+   CORPUS-CONDITIONAL (FI-SR-REACH registered). Under the same-date
+   **review-economy founder ruling** (see WORKFLOW-REVIEW-ECONOMY,
+   `frontier_sectors/WORKFLOW.md` — BINDING): panel rounds henceforth for WINS,
+   stuck-asking-help, or founder request only; negatives/closures = dated line and
+   move on; full verbatim reasoning capture UNCHANGED ("crucial, not abbreviating
+   is crucial"); commits/handovers lean. **SF-6 must open in a FRESH window** (this
+   window is fork-contaminated; see quarantine notice).
 2. **Standing (unchanged from 2485/2490):** SR-1 OSF re-deposit/retraction wording
    (must NOT say "the elimination theorem stands"; should now also cite PROP-SR-H1-1
    and the corrected exponent set); C0/A3′ source-clause draft (parked — candidate (d)

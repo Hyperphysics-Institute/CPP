@@ -486,3 +486,16 @@ EW/QM/SD/GR/strong uniques + the 3 SR-1 dup self-keys), now de-risked by the 115
 **Tractability:** one focused session for the script; the adjudications will take longer.
 **Paper(s):** all flagships
 **Last updated:** 15 July 2026
+
+
+---
+
+### WORKFLOW-REVIEW-ECONOMY: Review Effort Scales With Claim Strength (FOUNDER RULING)
+**Status:** BINDING — founder ruling 15 July 2026 (Patch 2495), issued on compute-budget and turn-economy grounds after the OPEN-SR-H1-CLASS closure.
+**The rule:** verification turns (panel rounds, founder review cycles) are spent where fraud risk lives — on POSITIVE claims. Specifically:
+1. **Panel (full 5-slot) ONLY for:** (a) wins — any positive claim entering a registry or billing a derivation; (b) genuinely stuck and asking for help; (c) explicit founder request. "Five independent super-mind reviewers is strong insurance against self-confidence" — spent on wins, where we might be fooling ourselves.
+2. **Negatives, closures, abandonments, sector switches:** one dated line in `todolist.md` (or the relevant registry) and MOVE ON. No confirmation rounds. Nobody fudges toward a kill.
+3. **KEEP, unchanged (these are efficiency tools, not ceremony):** (i) pre-committed kill conditions + effort bounds on any multi-session campaign, one page, written BEFORE work starts — stopping fast is the biggest compute saver and only works if the stop rule predates the work; (ii) verify scripts on every computational claim (the direct anti-2471 measure); (iii) **FULL VERBATIM per-patch reasoning capture — founder ruling: "Saving the entire reasoning at every turn is crucial, not abbreviating is crucial." Never trimmed, never summarized.**
+4. **Trim:** commit messages lean (~10 lines; the reasoning fragment carries the record); handovers ~half a page (kickoff line, state, next action, gates); no per-step ceremony beyond the reasoning fragment.
+5. **The counterpart obligation:** when a win comes, the full review is NOT skipped because the programme has gotten used to moving fast. The trade is "save the scrutiny for where it counts" — it must actually be spent there.
+**Registered:** 15 July 2026, Patch 2495.
