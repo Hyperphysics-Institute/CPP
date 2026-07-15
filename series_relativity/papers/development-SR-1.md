@@ -169,3 +169,39 @@ panel round 1 folded at 2484 (burden M1–M7, kills K1–K4, single-candidate ru
 mechanism phase, which is also this paper's completion path (OPEN-SR-EPSILON), awaits the
 founder's §3a candidate ratification and opens fresh on SR-MECH-2485, M4 arena
 determination first.
+
+## Session vignette — 15 July 2026 (SR-MECH-2485 session 1, Patches 2487–2490)
+
+The mechanism session opened the same day the gates cleared: the founder ratified §3a
+(2487, ruling verbatim "ratified."), binding candidate (a), the (ê_motion, τ̂) plane,
+under K4. The session then ran the two cheapest kills in the pre-registered order and
+neither fired — but each in an instructive way.
+
+M4 (2488): the arena question dissolved into pre-target corpus structure. A3′'s flat
+per-hop scalar c makes one Moment's reach a ball by the meaning of the axiom — an axiom
+drafted for the GR-radiation sector a month before this campaign existed — and SR-1's own
+Patch-0736-era normalisation r_in ≡ l_P makes that ball the inscribed ball of the Voronoi
+cell. The polytope is the ownership partition, not the reach set; it never binds. The
+coefficient 2 arrives by derivation. The counterfactual (4-cube, same inradius: π/4) is
+on record so the verdict cannot be mistaken for vacuous. One live K3′ near-miss was
+caught during the derivation: the quasicrystalline-averaging route to isotropy was
+abandoned the moment the test showed it was reaching for whatever produces 2.
+
+M9 (2489): the fork turned out not to be a fork. The exclusion radius is kinematically
+forced — d = v_abs·t_P, the absolute branch's formula, and the first honest reaction was
+that the kill had landed. Before firing K1 the fork's premise was checked: c07's
+pre-target channel split (g_tt from the |SSV|_abs magnitude, g_ij from the gradient
+tensor — the structure that carries the factor-of-2 lensing result) means uniform
+background stress slows clocks and leaves rods alone, so v_loc = v_abs·g_bg and the
+absolute branch's formula IS the local branch's formula in the observable velocity.
+ε = γ(v_loc) − 1 at every stress; composition exactly multiplicative; the c/g_bg ceiling
+is the coordinate ceiling at exactly v_loc = c. Because the derivation defuses a
+registered kill trigger, it was NOT self-certified: M9 is RESOLVED-BY-DISSOLUTION,
+PENDING K2, with the trigger-semantics, uniform-scope, and v_loc-convention caveats
+stated against interest. A session that lawyers its own kill conditions is the 2471–2475
+failure mode; this one goes to the reviewers.
+
+The heavy half — candidate (a) against the full M1–M9 burden, starting with M1 canonical
+uniqueness — was deliberately deferred to a fresh window rather than attacked on a spent
+context. The K1 effort clock stands at session 1 of the founder-bounded two. Session
+derivation log: `series_relativity/development/SR-MECH-2485_mechanism_session.md`.
