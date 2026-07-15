@@ -128,7 +128,7 @@ First sub-umbrella established. Three papers organized under the OPEN-SD-CHIR-PR
 
 | ID | Type | Title | File | Status |
 |----|------|-------|------|--------|
-| **SR-1** | Paper | Mechanistic Derivation of Relativistic Effects via Space Stress Vector | `series_relativity/main_special_relativity_emergence/SR-1_special_relativity_emergence.tex` (v17) | **Submission-ready** |
+| **SR-1** | Paper | Mechanistic Derivation of Relativistic Effects via Space Stress Vector | `series_relativity/papers/SR-1_special_relativity_emergence.tex` | **TRIAGED + PURGED (Patches 2471–2484)** — prediction set + muon bound WITHDRAWN (γ is an input via App. A.8.1; γ_CPP = γ_SR an identity); k renamed normalisation coefficient (α cancels in k·ΔSSV; matched-pair inheritance rule); H.1 demoted to three-model Proposition; doc-suite leftovers purged (2479–2480, instances 9–14 of the eight-passes lesson); pre-protocol MC citations reclassified UNRECORDED VERIFICATION (reconstructible, founder statement 15 Jul). OSF re-deposit/retraction owed (founder). Completion path = OPEN-SR-EPSILON via the OPEN-SR-H1-CLASS mechanism phase (pre-registered v1.1, panel round 1 folded; awaiting §3a candidate ratification). NOT submission-ready. |
 | **SR-2** | Paper | The Spin-Bit Axiom: Necessity, Construction, and the Derived Einstein Quadrupole Formula | `series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` (v1.0) | **v1.0 SHIPPED** (OSF deposit pending DOI) |
 
 **Documentation:** SR-1 documentation files are planned but not yet produced.

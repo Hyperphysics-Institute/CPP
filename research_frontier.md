@@ -56,7 +56,7 @@ The active open problems, conjectures, and propositions are organized by sector 
 | SM | [`frontier_sectors/SM.md`](frontier_sectors/SM.md) | Standard Model Emergence | 11 |
 | EW | [`frontier_sectors/EW.md`](frontier_sectors/EW.md) | Electroweak Sector | 6 |
 | QM | [`frontier_sectors/QM.md`](frontier_sectors/QM.md) | Quantum Mechanics | 5 |
-| SR | [`frontier_sectors/SR.md`](frontier_sectors/SR.md) | Special Relativity / Gravity | 8 |
+| SR | [`frontier_sectors/SR.md`](frontier_sectors/SR.md) | Special Relativity / Gravity | 9 |
 | SD | [`frontier_sectors/SD.md`](frontier_sectors/SD.md) | Foundations / Superdeterminism | 6 |
 | CHIR | [`frontier_sectors/CHIR.md`](frontier_sectors/CHIR.md) | Substrate Chirality Arc — chirality audit + downstream OPEN-CHIR-* derivation programme | 5 active, 1 resolved |
 | GLOBAL | [`frontier_sectors/GLOBAL.md`](frontier_sectors/GLOBAL.md) | Cross-Series (e.g., three SM generations, full SM from single 600-cell) | 2 |

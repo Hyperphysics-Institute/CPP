@@ -141,3 +141,31 @@ predictions survive, then dispatch to the AI review panel. Brick #1 (this sessio
 the two-question spine. Remaining bricks (per `handovers/2026-06-02_session_153_SR1_rederivation_scope.md`): settle
 Q1 (#2), pose Q2 as an explicit fork (#3), the first-moment Big-Bang story (#4), with the Gaussianity thread (CLT
 over ZBW phases, distinct from the failed multiplicative cascade) running in parallel.
+
+---
+
+## Session vignette — 15 July 2026 (AUDIT-WARM-2476 continuation, Patches 2477–2484)
+
+The integrity-audit session that the 2471–2475 triage demanded. The publication integrity
+gate was built (`scripts/integrity_audit.py`, BLOCKING inside `publication_audit.sh`) and
+its first calibration run against this paper found the withdrawn k-derivation still live
+in mechanism-, development-, and glossary-SR-1.md — instances nine through twelve of the
+triage's eight-passes lesson — plus three surviving "parameter-free" billings in the .tex,
+all purged at 2479. The blast-radius sweep (2480) then found the withdrawn five-prediction
+set living on in phenomena-SR-1.md as a "Novel Predictions" section, with a registered
+consilience entry (PHEN-SR1-V2) built on the unrecorded Monte Carlo — struck and
+tombstoned — and the reviews doc praising, in one paragraph, three things the triage
+withdrew (annotated, not rewritten). The 44% matched-pair hazard was found realized
+exactly once, inside c02 itself, never downstream. The founder's 15-July statement
+(founders_voice) corrected the failure taxonomy: the pre-protocol MC runs occurred; the
+failure was recording — "unrecorded verification," reconstructible, with a seven-item
+Reconstruction Track opened.
+
+The session's forward-looking result: OPEN-SR-H1-CLASS opened (2482) with the codim-2
+all-orders identity — the f-neighborhood of a central 2-plane at radius exactly d gives
+V_free/V₀ = (1−f²)² and hence ε = γ_SR − 1 exactly under this paper's strain rule,
+continuum-conditional — pre-registered with full G7 disclosure before any mechanism work,
+panel round 1 folded at 2484 (burden M1–M7, kills K1–K4, single-candidate rule). The
+mechanism phase, which is also this paper's completion path (OPEN-SR-EPSILON), awaits the
+founder's §3a candidate ratification and opens fresh on SR-MECH-2485, M4 arena
+determination first.
