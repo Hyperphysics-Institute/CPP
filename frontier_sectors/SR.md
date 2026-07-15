@@ -273,7 +273,8 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 ---
 
 ### OPEN-SR-H1-CLASS: Is There an Exclusion Geometry with V_excl ∝ f²?
-**Status:** OPEN (NEW 15 July 2026, Patch 2475)
+**Status:** OPEN — GEOMETRIC HALF ANSWERED YES (Patch 2482); MECHANISM HALF PRE-REGISTERED, awaiting founder go. (NEW 15 July 2026, Patch 2475.)
+**Patch 2482 result (verified, `code/2482_exclusion_family_exponents.py`, all checks pass):** within the systematic family of central-locus f-neighborhoods in the 4-ball, the small-f exponent equals the codimension (n = k, k = 1..4), so **codim-2 is the unique n = 2 member** — and the codim-2 tube at radius exactly d = f·l_P satisfies V_free/V₀ = (1−f²)² exactly, which under SR-1's own V ∝ r⁴ strain rule gives **ε(f) = γ_SR(f) − 1 EXACTLY, at all orders** (machine precision, f = 0.01–0.99). Coefficient and every higher-order term come out with zero tuning. **NOTHING IS PROMOTED**: this is a geometric identity, not a derivation of γ; the enumeration disclosure and the entire mechanism burden (M1 distinguished 2-plane, M2 full-neighborhood exclusion rule, M3 radius exactly d + projection consistency) are pre-registered with kill conditions K1–K3 in `series_relativity/development/OPEN-SR-H1-CLASS_campaign.md` — read §1 (disclosure) and K1–K3 before touching. CONV-001 ratification required before any billing (K2). Success branch = candidate closure of OPEN-SR-EPSILON; kill branch = clean negative, four-model Proposition.
 **Sector(s):** SR — direct sub-problem of OPEN-SR-EPSILON
 **Priority:** HIGH — cheapest live route to ε(v) = γ−1.
 **One-line statement:** By V ∝ r⁴ volume conservation, an excluded region with V_excl ∝ f² yields ε ∝ f² — exactly γ_SR−1. Does such a region exist with independent physical motivation, or can its non-existence be proved?
