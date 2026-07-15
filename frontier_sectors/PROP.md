@@ -11,6 +11,15 @@ Physically motivated claims with partial demonstration. See `propositions.md` fo
 
 ---
 
+### PROP-SR-H1-1: Four-Model Exclusion-Geometry Proposition — Codim-2 Tube Realizes γ Exactly, Geometric Existence Only (TIER 2)
+**Status:** REGISTERED 15 July 2026, Patch 2493 — executing the pre-registered, panel-ratified K1 kill branch of OPEN-SR-H1-CLASS (campaign v1.2, CONV-001 round 1 complete 5/5). NOT a derivation of γ; the mechanism half of the campaign closed NEGATIVE-FOR-MECHANISM by founder ruling.
+**Sector(s):** SR (relativity)
+**One-line statement:** Within the systematic family of central-locus f-neighborhoods of the round 4-ball, the small-f volume exponent equals the codimension — exponent set {1, 1, 2, 5/2} across H.1's Models 1/2, the codim-2 tube, and the boundary-anchored cap — and the codim-2 member at radius exactly d = f·l_P satisfies V_free/V₀ = (1−f²)², hence ε = γ_SR − 1 exactly at all orders under SR-1's V ∝ r⁴ strain rule. **The codim-2 member is marked GEOMETRIC EXISTENCE ONLY: no dynamical selection is established** (M2 underdetermined; see OPEN-SR-EPSILON for the pinned fork and the SF-6 blind-adjudication route).
+**Evidence:** machine-precision verification f = 0.01–0.99 (`series_relativity/code/2482_exclusion_family_exponents.py`); H.1 cap exponent corrected to 5/2 verified to 50 digits (`code/2475_h1_cap_exponent_verification.py`). Arena condition: the registered K1 text anticipated a continuum-conditional marking; M4 (Patch 2488, session-level, K2-pending) discharged it forward — arena = the PSR insphere, coefficient 2 exact.
+**Dependencies:** SR-1 corrected constitutive rule (V ∝ r⁴, minimal ansatz); M4 arena determination (K2-pending); enumeration disclosure per campaign §1 (the family was target-informed — carried honestly into this Proposition's epistemic status).
+**Paper(s):** SR-1; OPEN-SR-H1-CLASS campaign file (closure record §6); SR-MECH-2485 session log.
+**Registered:** 15 July 2026 (Patch 2493)
+
 ### PROP-SS-5-1: Diproton and Dineutron Unbound by Open-Vertex Polarity Mismatch (TIER 1)
 **Status:** REFINED by SS-5 v0.2 — the uniform-polarity argument is replaced by the base-to-base K$_3$ charge-misalignment argument, which more accurately accommodates the empirical near-bound ${}^{1}S_{0}$ virtual states at $+66$ keV (pp) and $+118$ keV (nn). pp and nn remain unbound as the virtual states sit above threshold.
 **Sector(s):** SS (nuclear physics)

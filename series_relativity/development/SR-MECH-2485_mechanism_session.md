@@ -598,6 +598,27 @@ here. Assets for the dispatch: this entry, the campaign file, the fork script,
 
 ---
 
-*(Session 2 of the K1 clock ends at this step; handover to follow on founder
-instruction.)*
+## Step 5 — K1 EXECUTION: campaign closes NEGATIVE-FOR-MECHANISM (Patch 2493)
+
+**Founder ruling (verbatim): "Sounds good. Let's go with choice alpha."** —
+option (α) of the Patch-2492 disposition. K1 fires per its registered text: the
+committed candidate did not yield M1–M9 forward from postulates within the
+founder-bounded effort (two sessions, not extended).
+
+Executed per the registered kill branch + the 2492 protocol: campaign file
+closed (§6 closure record); OPEN-SR-H1-CLASS → CLOSED in `frontier_sectors/
+SR.md`; OPEN-SR-EPSILON updated (fork-sharpened state + SF-6 blind-adjudication
+protocol); **PROP-SR-H1-1** registered (`frontier_sectors/PROP.md`, the
+four-model Proposition, exponents {1, 1, 2, 5/2}, codim-2 member "geometric
+existence only" with the M4 discharge note); dashboard §9 counts updated
+(SR: Open 8→7, Prop 0→1, Resolved 0→1, Total 8→9); `future_projects.md` dated
+update. The session-level assets (M4, M9-dissolution, M1) remain K2-queued at
+founder timing. The failure asymmetry held as designed: the kill branch is
+clean, publishable, and leaves the physics question (OPEN-SR-EPSILON) sharper
+than the campaign found it — four machine-pinned candidate rules and one named
+discriminating input, testable blind.
+
+**This closes the SR-MECH-2485 mechanism session log.** Any future mechanism
+round on this problem is a NEW pre-registered round per K4 (panel consent,
+this full record in the package).
 

@@ -7,9 +7,15 @@ posting order), ALL RATIFY (with changes/calibration); every required change fro
 return adopted.**
 **Registry entry:** `frontier_sectors/SR.md` § OPEN-SR-H1-CLASS.
 **Verify script:** `series_relativity/code/2482_exclusion_family_exponents.py` (stdlib, all checks pass).
-**Status: geometric half YES, now explicitly CONTINUUM-CONDITIONAL (§2a); NOTHING promoted;
-mechanism phase pre-registered below (M1–M7, K1–K4) and gated on founder ratification of the
-single-candidate commitment (§3a).**
+**Status: CLOSED — NEGATIVE-FOR-MECHANISM. K1 FIRED 15 July 2026, Patch 2493, by
+founder ruling (verbatim: "Sounds good. Let's go with choice alpha."), after the
+session-2 M2 determination (Patch 2492: exclusion rule UNDERDETERMINED by the
+current corpus; fork {R1, R2, R3y, R4} pinned; discriminating input = the
+unpinned SF-6 inertia mechanism). Closure record: §6. NOTHING was promoted at
+any point (K2 respected throughout). The geometric identity stands as
+PROP-SR-H1-1 (four-model Proposition, `frontier_sectors/PROP.md`);
+OPEN-SR-EPSILON stays open, sharpened to the pinned fork with the SF-6
+blind-adjudication protocol.**
 
 ---
 
@@ -309,3 +315,53 @@ by content. Remaining slots, if any, fold into a v1.2 on arrival.
    Verify: `../code/2492_m2_rule_fork.py` (W1–W3 ALL PASS). NOTHING PROMOTED
    (K2).
 4. Any mechanism claim returns to the panel with this file (K2).
+
+## 6. CLOSURE RECORD — K1 FIRED (15 July 2026, Patch 2493)
+
+**Founder ruling (verbatim):** "Sounds good. Let's go with choice alpha." — in
+response to the Patch-2492 disposition options (α: K1 fires now; β: explicit
+extension gated on the SF-6 isolated investigation).
+
+**What the campaign established (all session-level, K2-gated as marked):**
+- **Geometric half: YES.** The codim-2 tube at radius exactly d = f·l_P gives
+  V_free/V₀ = (1−f²)² and hence ε = γ − 1 exactly, all orders (Patch 2482) —
+  now registered as **PROP-SR-H1-1** per this file's own K1 branch.
+- **M4 PASSED** (arena = PSR insphere, coefficient 2 exact, forward; Patch
+  2488, one scope caveat). **M9 RESOLVED-BY-DISSOLUTION** (one rule, two
+  velocity variables; Patch 2489, K2-pending, three caveats). **M1 PASSED**
+  (unique distinguished plane Π = span(τ̂, ê_motion), canonical; Patch 2491,
+  three caveats). These stand as session-level assets inside a closed-negative
+  campaign; any future round inherits them WITH their K2-pending status and
+  caveats.
+- **M2 NOT DERIVED** (Patch 2492): the exclusion rule is underdetermined by
+  the current corpus; the fork {R1 translation, R2 lens, R3y slab, R4 tube} is
+  machine-pinned pairwise-inequivalent; the discriminating input is the
+  per-Moment single-CP content of the motion state — the SF-6 inertia
+  mechanism, unpinned (Patch 2470). M3/M6/M7/M8 were not worked (downstream of
+  the rule).
+
+**The negative, stated precisely:** dynamics, *as currently derived from the
+postulates*, does not select the tube. This is weaker than "the postulates do
+not select it" — the distinction is on the record (2492 disposition section)
+and was weighed by the founder in taking α.
+
+**Standing consequences (per the registered K1 branch + the 2492 protocol):**
+1. OPEN-SR-H1-CLASS is CLOSED. This file is frozen except for pointer
+   corrections.
+2. OPEN-SR-EPSILON stays OPEN, sharpened: its state is now the pinned fork,
+   and the SF-6 isolated investigation (Patch 2470) is its discriminating
+   route. **Blind-adjudication protocol (binding):** the fork inventory (this
+   file §5/§6, session-log step 4, `code/2492_m2_rule_fork.py`,
+   `reasoning/2492.md`) must NOT be loaded into any SF-6 working session; SF-6
+   runs on its Patch-2470 charter only. When SF-6 pins the inertia mechanism,
+   a NEW pre-registered round (panel consent, full negative record in the
+   package, per K4) may test the pinned mechanism against the fork — the
+   comparison is made by that round, not by the SF-6 session.
+3. The H.1 successor graduates to the four-model Proposition PROP-SR-H1-1
+   (exponents {1, 1, 2, 5/2}), codim-2 member marked "geometric existence
+   only" — with the M4 note: the continuum-conditionality anticipated by the
+   registered K1 text was discharged at session level (arena = ball, Patch
+   2488, K2-pending).
+4. The M9-dissolution and M1/M4-caveat K2 packages remain queued at founder
+   timing; a closed-negative campaign does not extinguish the panel's audit of
+   its session-level assets.
