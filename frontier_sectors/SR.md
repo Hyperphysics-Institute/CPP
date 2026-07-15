@@ -20,11 +20,12 @@
 ---
 
 ### OPEN-SR-2: Derive k = l_P³/E_P from Voronoi Integral
-**Status:** ✗ RESOLVED BY DISSOLUTION — 14 July 2026, Patch 2471 (CONV-001 pending)
+**Status:** ⚠ **RE-POSED** — 14 July 2026, Patch 2474. *(Patch 2471 marked this RESOLVED BY DISSOLUTION; **CONV-001 overturned that 4–1** and the dissolution is withdrawn.)*
+**Why dissolution was wrong:** the cancellation is real, but α is unobservable **only because ΔSSV has no operational definition independent of its effect on PSR**. Three reviewers converged: if ΔSSV couples to *any* other sector with an independent normalisation — explicitly flagged as *"your own dark-matter investigation is exactly where such a mismatch could show up"* — then α becomes a physical relative weight and is measurable. Closing the item conceded the prefactor and buried the live question one step before it became answerable. Dissolution was motivated neatness.
 **Resolution:** The question is **ill-posed**. There is no single k to derive: k's numerical value is fixed by the ΔSSV *normalisation convention*, not by geometry. For any α, k = α·l_P³/E_P paired with ΔSSV = E_kin/(α·l_P³) gives k·ΔSSV = E_kin/E_P = γ−1 identically — so every observable is invariant under the prefactor, and **k is not separately physical**. The registry's own "two inconsistent estimates" are the α = 1 (collapse-postulate/bridge) and α = α_geom ≈ 0.5594 (stiffness-integral) conventions; they are *physically equivalent*, not inconsistent. Verified `code/2471_k_convention_and_alpha_geom_verification.py` (31/31). What geometry *does* fix: the functional form 1/(1+ε) (Hooke + saturation → unique lowest-order rational approximant) and the App. H.1 elimination theorem. γ is supplied by the energy-momentum bridge (App. A.8.1) by identification, which H.1 proves necessary.
 **Live hazard (inheritors read this):** (k, ΔSSV) must be inherited as a **matched pair**. Mixing conventions rescales γ−1 by exactly α — a 44% error. Applies directly to any SF-6 / DM-dance inheritance of k.
 **Also corrected at 2471:** SR-1 App. A.5 Step 3's "dimensional analysis forces prefactor identically 1" is **withdrawn** (dimensional analysis fixes dimensions, never a dimensionless prefactor; and its Step-2 cross-check was circular). The March-2026 remedy `notebooks/600cell_k_alpha_geom_consistency_fix.py` is **REJECTED**: α_geom is unit-dependent (0.5594 per circumradius vs 0.2444 per l_P — a defect that script itself printed and walked past), and is superseded by the cancellation result.
-**Superseded status:** OPEN
+**Successor:** OPEN-SR-EPSILON (below) carries the physical debt.
 **Sector(s):** SR
 **Priority:** HIGH
 **One-line statement:** Derive a single consistent k value from 600-cell Voronoi cell structure.
@@ -239,5 +240,31 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 **What was found (Patch 2471):** The cited MC artifact 404s; both repo MC files are non-functional stubs (`vertices = []`; trial loop is `pass`) whose reported figures — including `k = 2.158453e-114 ± 3.61e-130` — are hard-coded comments. The fit was circular by construction (data generated from `k_theoretical`, `p0=[k_theoretical]`), and the claimed 1.7e-16 relative precision is unattainable from 0.1% noise on 30 points × 500 trials (floor ~1e-5). **Four** claim sites were withdrawn: A.7 (k to machine precision), the γ-recovery claim (which also falsely asserted recovery "without ever invoking Lorentz transformations" — the bridge *defines* ΔSSV via γ_SR), the Data-Availability duplicate, and the Unruh mode-counting MC (App. F — **no such artifact exists anywhere in the repo**).
 **What was done:** `code/2471_k_convention_and_alpha_geom_verification.py` (31/31) now genuinely verifies the geometric inputs (a = 1/φ, z = 12, V₀, α_geom vs closed form, the 1/L rescaling, and the rescaling-invariance of k·ΔSSV) from vertices generated out of the binary icosahedral group 2I.
 **What a solution looks like:** (1) a real stressed-Voronoi computation if any claim about cell distortion under ΔSSV is to be retained; (2) a real Unruh mode-counting integration, or permanent withdrawal of that numerical claim (the analytic derivation in App. F is unaffected).
+**Paper(s):** SR-1
+**Last updated:** 14 July 2026
+
+---
+
+### OPEN-SR-EPSILON: Derive the Strain–Kinematics Map ε(v) Without Importing γ
+**Status:** OPEN (NEW 14 July 2026, Patch 2474 — successor to OPEN-SR-2; **CONV-001 panel consensus**)
+**Sector(s):** SR — **cross-links DM (OPEN-SS-43 / SF-6 inertia)**
+**Priority:** CRITICAL — this is the outstanding physical question of the entire SR line.
+**One-line statement:** Starting only from CPP substrate rules (PCD dynamics, DI-bit emission, A3′ broadcast), derive or falsify ε(v) = γ(v) − 1 **without** using relativistic kinetic energy, the Lorentz factor, or any equivalent SR identity as input.
+**Why it is the real question:** SR-1's App. A.8.1 obtains γ_CPP = γ_SR by *defining* ΔSSV ∝ (γ_SR−1)mc²/V. γ is therefore an **input**, not an output. App. H.1 (Hyperspherical Cap Elimination Theorem) proves no purely geometric displacement model of the class examined yields the required v²/c² scaling — so the bridge is unavoidable *within that class*, but H.1 does not show it is unavoidable in general. The debt did not disappear when k dissolved; it moved.
+**What a solution looks like:** reproduce at least the leading v²/2c² behaviour, preferably the divergence as v→c, from substrate dynamics alone. A provable impossibility (extending H.1 beyond the geometric class to include history-dependent / accumulated-energy models) would also close it — and would be a major negative result.
+**Where α becomes physical (the lever):** if ΔSSV is given an operational definition — or couples to the DM/SF-6 sector with an independent normalisation — then α is no longer absorbable and OPEN-SR-EPSILON and the DM campaign become the same problem. **This is the recommended attack route.**
+**Paper(s):** SR-1; SF-6; DM campaign
+**Last updated:** 14 July 2026
+
+---
+
+### OPEN-SR-1-PREDICTIONS: SR-1 Has No Falsifiable Predictions — Restore or Accept
+**Status:** OPEN (NEW 14 July 2026, Patch 2474)
+**Sector(s):** SR
+**Priority:** HIGH
+**One-line statement:** All five of SR-1's falsifiable predictions were withdrawn at Patch 2474; the paper is now empirically equivalent to SR by construction and makes no independent testable claim.
+**What was found (CONV-001, off-plan):** γ_CPP = γ_SR is an **identity** (A.8.1), and an identity admits no deviation. The claimed deviation δt′/t′ ≈ k·ΔSSV **is** γ_SR−1 — the SR effect itself, double-counted as a correction to the result it reproduces. Every ΔSSV definition in the paper is velocity-dependent (E_kin/V); all five predictions scaled with **acceleration**; no derivation bridges them. The magnitudes were not derived either: δ ~ 10⁻²⁰ ⇒ v ≈ 4 cm/s, while every natural Planck-acceleration ratio gives 1.8×10⁻³¹ at 10²⁰g. The muon bound was void twice — it bounded a convention *and* a forbidden deviation.
+**What a solution looks like:** derive an acceleration-dependent contribution to ΔSSV from substrate dynamics (distinct from, and additional to, the kinetic term), yielding a genuine residual beyond γ_SR. Absent that, accept that SR-1 is an interpretation and remove it from the programme's prediction count.
+**Consequence for the null-hypothesis raise:** the registry's zero-parameter prediction tally must be reduced accordingly. See OPEN-WORKFLOW-PREDICTION-AUDIT.
 **Paper(s):** SR-1
 **Last updated:** 14 July 2026

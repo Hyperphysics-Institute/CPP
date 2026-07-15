@@ -5,7 +5,7 @@
   Master dashboard: Research_Frontier.md
 -->
 
-## Workflow / Infrastructure (WORKFLOW) — 5 problems
+## Workflow / Infrastructure (WORKFLOW) — 6 problems
 
 ### OPEN-WORKFLOW-1: Consolidate All Bibliography Files
 **Status:** OPEN
@@ -469,4 +469,19 @@ EW/QM/SD/GR/strong uniques + the 3 SR-1 dup self-keys), now de-risked by the 115
 **What a solution looks like:** (1) every numerical claim in a paper cites a script that is **executed in-container at patch time**, with its stdout captured into the patch (2471 is the first to comply); (2) a `publication_audit.sh` gate that FAILs on a cited script which is absent, non-executable, or whose data is generated from the quantity it fits (circularity check); (3) elision markers ("for brevity", "full version in repo", "…") as a blocking FAIL in any committed `.py`; (4) a routing rule that any `notebooks/` finding which contradicts a shipped claim must open a frontier item within the same session; (5) periodic registry-vs-abstract consistency sweep.
 **Tractability:** (3) is a grep; (1)–(2) are one focused infrastructure session; (5) needs a scripted diff of frontier status vs paper claims.
 **Paper(s):** None (infrastructure) — but SR-1 is the live casualty.
+**Last updated:** 14 July 2026
+
+---
+
+### OPEN-WORKFLOW-PREDICTION-AUDIT: How Many of the ~28 Zero-Parameter Predictions Are k?
+**Status:** OPEN (NEW 14 July 2026, Patch 2474)
+**Sector(s):** Infrastructure / Epistemics
+**Priority:** CRITICAL — this may be the most consequential open item in the programme.
+**One-line statement:** SR-1's k was a normalisation convention billed as a zero-parameter prediction, and its five falsifiable predictions were void; the axiom registry lists ~28 zero-parameter predictions whose independence underwrites the entire √N null-hypothesis-raise strategy. Nobody knows how many are like k.
+**The pattern to search for:** (1) a geometric factor is computed; (2) it does not give the wanted number; (3) it is absorbed or removed by an appeal that does not hold (dimensional analysis "forcing" a dimensionless prefactor, "consistent use of units", "absorbed into the normalisation"); (4) the result is billed as zero-parameter; (5) a verification is cited that was never run.
+**Why this is not paranoia:** SR-1 exhibited all five. It was found by accident, four months late, on a detour from an unrelated dark-matter campaign. Three prior attempts at this very file (`development/lattice-derived_coupling_constant_k.md`, `development/k_prefactor_resolution.md`, `notebooks/600cell_k_alpha_geom_consistency_fix.py`) failed to land, and SR-1's own CHANGELOG records the defect **as the repair**: *"v17 — alpha_geom consistency fix"* **was** the invalid dimensional-necessity argument.
+**What a solution looks like:** for each registered prediction — (a) does a cited verification script exist? (b) does it execute on a stock interpreter? (c) does it generate its test data from the quantity it purports to measure (circularity)? (d) is any prefactor computed, then absorbed, then billed as derived? (e) is any claimed input actually an output of the thing it predicts (the γ-bridge pattern)? (f) does the frontier's status for that item contradict the paper's claim? Mechanical and scriptable; (c)–(f) are the ones that matter.
+**Blast radius already known:** 14 downstream artifacts cite SR-1's k / PSR formula (c01, c02, c03, c05, c07, c08, c09, c12, c14, plus early-universe reasoning). SR-1 is not the unit of repair.
+**Tractability:** one focused session for the script; the adjudications will take longer.
+**Paper(s):** all flagships
 **Last updated:** 14 July 2026

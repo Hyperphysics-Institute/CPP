@@ -9,6 +9,21 @@
 %   v17     26 Mar 2026 — alpha_geom consistency fix, final proofs
 %   v18     2 Apr 2026  — Formatting template compliance: .bib,
 %                         natbib, graphicspath, TOC, OSF DOI
+%   v19     14 Jul 2026 — TRIAGE (patches 2471-2474), CONV-001 5-reviewer panel.
+%                         WITHDRAWN: the five-prediction set + Table 1 (double-
+%                         counted k*dSSV = gamma-1 as a deviation FROM the SR it
+%                         reproduces; no acceleration law exists; magnitudes not
+%                         derived); the muon bound (bounds a convention AND a
+%                         forbidden deviation); "no adjustable parameters"; four
+%                         Monte-Carlo citations (artifacts were stubs; figures
+%                         hard-coded).  CORRECTED: k rebilled as a normalisation
+%                         convention, not a prediction (alpha cancels); gamma
+%                         conceded as INPUT via the A.8.1 bridge; "geometry fixes
+%                         the functional form" softened to a minimal ansatz;
+%                         "coupling constant" -> "normalisation coefficient".
+%                         NOTE: v17's "alpha_geom consistency fix" WAS the invalid
+%                         dimensional-necessity argument, logged as a repair.
+%                         Principal surviving positive result: App. H.1.
 %
 % CONTRIBUTORS:
 %   Thomas Lee Abshier ND — CPP framework, physical vision
@@ -88,7 +103,7 @@ via Space Stress Vector (SSV) in the Dipole Sea}\\[6pt]
 
 
 \begin{abstract}
-Conscious Point Physics (CPP) derives special relativistic effects---time dilation, length contraction, and the twin paradox---from geometric constraints in a discrete 4D lattice based on the 600-cell polychoron. Kinetic energy stored as excess Space Stress Vector ($\Delta$SSV) reduces effective Voronoi cell volumes, shrinking the Planck Sphere Radius (PSR) and limiting displacement per absolute Moment. This produces relativistic phenomena as consequences of lattice saturation rather than postulated spacetime geometry. The framework reproduces standard SR at accessible energies while predicting deviations at accelerations $\gtrsim 10^{20}g$. We provide a first-principles derivation of the \emph{functional form} of the PSR formula from 600-cell packing geometry: Hooke-like response plus the exact saturation boundary condition fix $\text{PSR}_{\rm eff} = l_P/(1+k\cdot\Delta\text{SSV})$ as the unique lowest-order rational approximant. The coupling constant $k = l_P^3/E_P \approx 2.16 \times 10^{-114}$ m$^3$/J is \emph{not} an independent prediction: any rescaling $k \to \alpha k$ absorbed into the $\Delta$SSV normalisation leaves $k\cdot\Delta\text{SSV}$, and hence every observable, unchanged, so $k$'s numerical value records a normalisation convention rather than a derived quantity (Appendix~A.5, Step~3). Exact Lorentz equivalence follows from the energy-momentum bridge of Appendix~A.8.1, which is \emph{necessary}: the elimination theorem of Appendix~H.1 proves that no purely geometric displacement model recovers the required $v^2/c^2$ scaling. Existing muon storage-ring data at accelerations of order $10^{18}g$ are fully consistent with CPP, constraining any deviation from the Planck-derived value of $k$ by a factor of $10^{16}$ and confirming that the framework survives all current experimental tests.
+Conscious Point Physics (CPP) \emph{represents} special relativistic effects---time dilation, length contraction, and the twin paradox---as consequences of stress-limited displacement in a discrete 4D lattice based on the 600-cell polychoron. Kinetic energy stored as excess Space Stress Vector ($\Delta$SSV) reduces effective Voronoi cell volumes, shrinking the Planck Sphere Radius (PSR) and limiting displacement per absolute Moment. We state plainly what this construction does and does not establish. \textbf{Established:} the 600-cell geometry is reproduced from the binary icosahedral group $2I$ (edge $a = 1/\phi$, coordination $z = 12$, cell volume $V_0$); a Hooke-like low-stress response together with the exact saturation boundary condition motivates the minimal rational constitutive relation $\text{PSR}_{\rm eff} = l_P/(1+k\cdot\Delta\text{SSV})$ within the lowest-order rational class; and---the principal positive result of this paper---the elimination theorem of Appendix~H.1 proves that \emph{no} purely geometric displacement model of the class examined (linear subtraction, corridor exclusion, exact 4D hyperspherical cap) recovers the $v^2/c^2$ scaling that $\gamma_{\rm SR}$ requires. \textbf{Not established:} the Lorentz factor is \emph{not derived here}. It enters as an \emph{input} through the energy-momentum identification of Appendix~A.8.1, which sets $\Delta\text{SSV} \propto (\gamma_{\rm SR}-1)mc^2$; exact Lorentz equivalence then follows by construction. Appendix~H.1 shows this input is unavoidable within the class examined, but proving that an external bridge is necessary does not convert that bridge into a derivation. The framework is consequently \emph{empirically equivalent to standard special relativity by construction} and yields no independent falsifiable predictions at present; the prediction set of earlier versions is withdrawn (Sec.~\ref{sec:empirical_status}). Nor is $k$ an independent prediction: any rescaling $k \to \alpha k$ absorbed into the $\Delta$SSV normalisation leaves $k\cdot\Delta\text{SSV}$---and hence every observable---unchanged, so $k = l_P^3/E_P \approx 2.16\times10^{-114}$~m$^3$/J records a \emph{normalisation convention} paired with the $\Delta$SSV definition, not a derived quantity (Appendix~A.5, Step~3). The functional form is a minimal ansatz within the rational class and is not shown to be unique to the 600-cell: Hooke-like response and saturation fix only the initial slope and the asymptote, and other saturating laws ($e^{-\varepsilon}$, $(1+2\varepsilon)^{-1/2}$, $(1+\varepsilon/n)^{-n}$) satisfy the same two conditions. Deriving the strain--kinematics map $\varepsilon(v)$ from substrate dynamics \emph{without} importing $\gamma_{\rm SR}$ is the outstanding problem of this line of work.
 \end{abstract}
 
 \bigskip
@@ -98,7 +113,7 @@ Conscious Point Physics (CPP) derives special relativistic effects---time dilati
 
 \bigskip\noindent
 \textbf{Plain Language Summary:}
-Imagine the universe is built from tiny conscious points arranged in a perfect 4-dimensional crystal---the 600-cell lattice. Each point can only move a tiny fixed distance (the Planck length) once per tiny tick of cosmic time (the Planck time). When something moves very fast or feels strong gravity, it stores energy as ``stress'' in the crystal around it. This stress squeezes the available space inside each tiny crystal cell, so every movement step becomes shorter. Clocks, hearts, and chemical reactions all depend on completing a fixed number of macroscopic steps to finish one ``tick.'' With shorter steps, it takes more cosmic ticks to finish the same job---so time appears to slow down for the moving object. That's time dilation. The same squeezing shortens lengths along the direction of motion, which explains why the traveling twin ages less. This paper shows how the math of the 600-cell crystal produces Einstein's formulas---not as abstract rules, but as the natural result of how space is built.
+Imagine the universe is built from tiny conscious points arranged in a perfect 4-dimensional crystal---the 600-cell lattice. Each point can only move a tiny fixed distance (the Planck length) once per tiny tick of cosmic time (the Planck time). When something moves very fast or feels strong gravity, it stores energy as ``stress'' in the crystal around it. This stress squeezes the available space inside each tiny crystal cell, so every movement step becomes shorter. Clocks, hearts, and chemical reactions all depend on completing a fixed number of macroscopic steps to finish one ``tick.'' With shorter steps, it takes more cosmic ticks to finish the same job---so time appears to slow down for the moving object. That's time dilation. The same squeezing shortens lengths along the direction of motion, which explains why the traveling twin ages less. This paper shows that the crystal picture can \emph{carry} Einstein's formulas consistently---but it does not derive them. To get the numbers right we must still feed Einstein's own energy formula into the crystal by hand; the geometry alone provably cannot produce it (Appendix~H.1). So what is offered here is a mechanical picture of relativity, not an explanation of where relativity comes from. That remains an open problem, and this paper's most solid result is the \emph{negative} one: a proof that a whole natural family of ``shorter steps'' pictures cannot do the job on their own.
 
 \bigskip
 \tableofcontents
@@ -116,7 +131,7 @@ The key innovation is the derivation of the effective Planck Sphere Radius (PSR)
 \text{PSR}_{\text{eff}} = \frac{l_P}{1 + k \cdot \Delta\text{SSV}}
 \label{eq:psr}
 \end{equation}
-where $\Delta$SSV represents excess Space Stress Vector accumulation from kinetic energy or gravitational effects, and $k$ is a lattice-derived coupling constant.
+where $\Delta$SSV represents excess Space Stress Vector accumulation from kinetic energy or gravitational effects, and $k$ is a normalisation coefficing constant.
 
 This derivation continues the author's ongoing Conscious Point Physics series \cite{abshier2025}.
 
@@ -198,187 +213,129 @@ The PSR reduction mechanism successfully accounts for:
 
 These effects emerge naturally from geometric constraints rather than being postulated as fundamental principles.
 
-\section{Predictions and Testability}
+\section{Empirical Status}
+\label{sec:empirical_status}
 
-The CPP framework is empirically equivalent to standard special relativity at laboratory energies but makes clear, quantitative predictions that diverge at extreme accelerations. These predictions arise directly from the finite displacement budget per absolute Moment and can be tested with near-future technology.
+\textbf{This framework is empirically equivalent to standard special relativity by
+construction, and yields no independent falsifiable predictions at present.}
+Appendix~A.8.1 establishes $\gamma_{\rm CPP} = \gamma_{\rm SR}$ \emph{identically at all
+velocities}. An identity admits no deviation: if the two Lorentz factors agree
+everywhere, no measurement can distinguish the frameworks, and no residual remains to
+be predicted.
 
-Table~\ref{tab:predictions} summarises all five predictions. Each arises from the single expression $\text{PSR}_{\rm eff} = l_P/(1+k\cdot\Delta\text{SSV})$ with no adjustable parameters. The 600-cell geometry fixes the \emph{functional form} of this expression (Appendix~A.5); the coupling constant $k \approx 2.16\times10^{-114}$\,m$^3$/J is a normalisation convention paired with the $\Delta$SSV definition of Appendix~A.8.1, and the predictions depend only on the product $k\cdot\Delta\text{SSV}$, which is invariant under a common rescaling of the pair (Appendix~A.5, Step~3).
+\subsection{Retraction of the previous prediction set (Patch 2474)}
 
-\begin{table}[H]
-\centering
-\caption{%
-  \textbf{Summary of CPP falsifiable predictions.}
-  All five predictions follow from $\text{PSR}_{\rm eff} = l_P/(1+k\cdot\Delta\text{SSV})$
-  with $k = l_P^3/E_P \approx 2.16\times10^{-114}$\,m$^3$/J, the convention paired
-  with $\Delta\text{SSV} = E_{\rm kin}/l_P^3$; only the product $k\cdot\Delta\text{SSV}$
-  enters, and it is rescaling-invariant. Fractional deviations scale linearly with acceleration
-  in the elastic-strain regime. ``Consistent'' means the predicted CPP
-  deviation lies far below current experimental sensitivity; ``testable''
-  means near-future technology could reach the relevant precision.
-}
-\label{tab:predictions}
-\small
-\begin{tabular}{p{3.2cm} p{2.4cm} p{2.4cm} p{2.6cm} p{2.8cm}}
-\toprule
-\textbf{Effect} &
-\textbf{Observable} &
-\textbf{Fractional deviation} &
-\textbf{Acceleration threshold} &
-\textbf{Status} \\
-\midrule
-Time-dilation deviation
-  & Atomic clock rate
-  & $\sim 10^{-20}$
-  & $\sim 10^{20}\,g$ (primary)
-  & Testable: laser-plasma accelerators \\[4pt]
+Versions through v18 asserted five falsifiable predictions --- a high-acceleration
+time-dilation deviation, an atomic-clock offset in ultra-centrifuges, gravitational-wave
+dispersion at extreme curvature, a Casimir modification, and an Unruh temperature shift
+--- together with an existing muon-storage-ring constraint, all summarised in a table of
+``CPP falsifiable predictions'' with fractional deviations scaling linearly with proper
+acceleration. \textbf{The entire set is withdrawn.} The reasons are independent and each
+is sufficient.
 
-Clock offset in centrifuges
-  & Optical clock comparison
-  & $10^{-18}$--$10^{-19}$
-  & $10^{18}$--$10^{19}\,g$
-  & Near-term: next-gen centrifuges \\[4pt]
+\begin{enumerate}
+\item \textbf{The claimed deviation was the effect itself (double counting).} The
+  fractional deviation was given as $\delta t'/t' \approx k\cdot\Delta\text{SSV}$. But
+  $k\cdot\Delta\text{SSV} = \gamma_{\rm SR}-1$ by Eq.~(\ref{eq:bridge}) --- that quantity
+  \emph{is} the ordinary relativistic effect. The same expression was used once to
+  reproduce special relativity exactly and then again as a correction to the very result
+  it had just reproduced.
 
-Gravitational-wave dispersion
-  & GW phase / speed
-  & $\sim 10^{-20}$
-  & Extreme curvature (NS mergers)
-  & Future GW detectors \\[4pt]
+\item \textbf{No acceleration law exists.} Every definition of $\Delta\text{SSV}$ in this
+  paper is $E_{\rm kin}/V$ --- a function of \emph{velocity}. The withdrawn predictions
+  all scaled with \emph{proper acceleration}. No derivation connects the two, and they
+  are not interchangeable: uniform motion produces time dilation at zero proper
+  acceleration, while a large acceleration sustained over an infinitesimal interval
+  produces a negligible Lorentz factor. The twin-paradox discussion inherits the same
+  confusion, attributing stress accumulation to the accelerating leg while writing the
+  integrand in terms of $\gamma_{\rm SR}(v)-1$, which is nonzero throughout inertial
+  coasting.
 
-Casimir pressure modification
-  & Force between plates
-  & $(l_P/d)^4 \sim 10^{-40}$ at $d=100\,$nm
-  & Planck-scale UV cutoff
-  & Consistent; $\sim 10^{-30}$ at $d=10\,$nm \\[4pt]
+\item \textbf{The quoted magnitudes were not derived.} A fractional deviation
+  $\delta \sim 10^{-20}$ corresponds to $\gamma-1 = 10^{-20}$, i.e.\ $v \approx 4$~cm/s
+  --- unrelated to $10^{20}g$. No natural Planck-acceleration ratio yields it either:
+  $a\,l_P/c^2 = a\,t_P/c = a/a_P \approx 1.8\times10^{-31}$ at $a = 10^{20}g$. The
+  agreement of exponents in ``$\sim 10^{-20}$ at $\sim 10^{20}g$'' reflects no
+  computation.
 
-Unruh temperature shift
-  & Thermal spectrum / excitation rate
-  & $\sim 10^{-20}$
-  & $\sim 10^{20}\,g$ (analogue systems)
-  & Consistent with muon data; analogue probes proposed \\[4pt]
+\item \textbf{The muon bound was void twice over.} It purported to constrain $k$, which
+  is a normalisation convention and not separately measurable (Appendix~A.5, Step~3); and
+  it constrained a deviation that the exactness identity forbids. A statement that ``muon
+  data permit $k$ to deviate by a factor of $10^{16}$'' is not a physical constraint,
+  because varying $k$ alone is not a physical variation.
 
-\midrule
-\multicolumn{2}{l}{\textit{Existing constraint (muon storage ring \cite{bailey1977})}}
-  & $< 2\times10^{-3}$
-  & $\sim 10^{18}\,g$
-  & Consistent: CPP predicts $\delta \sim 10^{-22}$ \\
-\bottomrule
-\end{tabular}
-\end{table}
+\item \textbf{``No adjustable parameters'' is withdrawn as stated.} The absence of a
+  fitted numerical constant is not the same as the absence of modelling freedom. This
+  construction contains at least: the choice of energy-bearing volume in
+  $\Delta\text{SSV}$; the selection of the lowest-order rational family; the
+  energy-momentum identification itself; and, in the withdrawn predictions, an
+  undeclared acceleration-to-stress map. The defensible statement is narrower: \emph{no
+  adjustable numerical parameter enters the SR-identification layer}.
+\end{enumerate}
 
-\subsection{High-acceleration time-dilation test} 
-The model predicts a fractional deviation from standard SR of order
-\[
-\frac{\delta t'}{t'} \approx k \cdot \Delta\text{SSV} \sim 10^{-20}
-\]
-at sustained accelerations \(a \approx 10^{20}\,g\).  
-A single measurement of an atomic clock (or precision pendulum) subjected to \(10^{20}\,g\) for 1 ms in a laser-driven plasma accelerator or extreme centrifugal field would produce a \(>5\sigma\) discrepancy from standard SR while remaining fully consistent with CPP. This is the most direct and near-term test.
+\subsection{What survives, and under what condition}
 
-\subsection{Atomic-clock offset in ultra-centrifuges}  
-Precision optical clocks in next-generation centrifuges reaching \(10^{18}\)–\(10^{19}\,g\) for seconds should show a measurable offset from the SR prediction at the \(10^{-18}\)–\(10^{-19}\) level.
+The mode-counting algebra of Appendix~F is internally correct and is retained as
+\emph{conditional} structure: \emph{if} an acceleration-dependent contribution to
+$\Delta\text{SSV}$ were derived, then $\delta T/T = \varepsilon$ follows exactly --- and
+exactly, not merely to leading order, since $T \propto \mathcal{E}_0^{1/4} \propto
+(1+\varepsilon)$. The antecedent has not been established. The same conditional status
+applies to the Casimir $(l_P/d)^4$ scaling of Appendix~E, which additionally requires an
+independent derivation of the 4D spectral measure and boundary conditions before it can
+be advanced as a prediction. Neither result inherits validity from the PSR constitutive
+formula alone.
 
-\subsection{Gravitational-wave dispersion at extreme curvatures}  
-In regions of extreme spacetime curvature (e.g., near neutron-star mergers observed by future detectors), small deviations in propagation speed or phase are expected at the \(10^{-20}\) level.
+\subsection{The outstanding problem}
 
-\subsection{Casimir Effect Modification}
+What must be derived, and has not been, is the \textbf{strain--kinematics map}
+$\varepsilon(v)$ --- from Conscious Point dynamics, without importing $\gamma_{\rm SR}$
+or an equivalent relativistic identity as input. A satisfactory closure would reproduce
+at least the leading $v^2/2c^2$ behaviour and preferably the divergence as $v \to c$.
+Appendix~H.1 shows this cannot be done by displacement geometry of the class examined;
+it does not show that it cannot be done at all. Registered as
+\texttt{OPEN-SR-EPSILON}.
 
-The discrete 600-cell lattice imposes a natural ultraviolet cutoff at the Planck scale on vacuum fluctuation modes. In the CPP framework the Casimir force arises from the same mode suppression between plates as in standard QED, but the 4D Voronoi volume scaling $V \propto r^4$ (Appendix E) now limits the number of allowed high-frequency modes inside the cavity. Because the effective mode density scales with the fourth power of the 
-available displacement radius, the number of allowed modes with wavelength 
-$\lambda \geq 2d$ inside a cavity of plate separation $d$ is modified by the 
-ratio of the stressed to unstressed 4D Voronoi volumes. In standard Casimir 
-calculations the mode sum runs over 3D momenta $\mathbf{k}$ with 
-$|\mathbf{k}| \leq \pi/l_P$; in CPP the upper cutoff shifts to 
-$\pi/\text{PSR}_{\rm eff}$ and the 4D volume scaling $V \propto r^4$ 
-introduces an additional suppression factor $(l_P/d)^4$ relative to the 
-$(l_P/d)^2$ correction that would arise from a 3D cutoff alone. Explicitly, 
-the fractional correction to the Casimir pressure is
-\[
-\frac{\delta P_{\rm Casimir}}{P_{\rm Casimir}} \sim \left(\frac{l_P}{d}\right)^4,
-\]
-where the fourth power rather than second power follows directly from the 4D Voronoi volume scaling: the Casimir cavity is a 3D physical cavity with the standard mode density $\rho(\mathbf{k}) \propto |\mathbf{k}|^2$, but the CPP UV cutoff is set by the 4D Voronoi volume: raising the cutoff from $\pi/l_P$ to $\pi/\text{PSR}_{\rm eff}$ shifts the upper limit of a 4D mode-volume integral, contributing an extra factor of $(\text{PSR}_{\rm eff}/l_P)^4$ relative to the unstressed vacuum. When expanded around $\text{PSR}_{\rm eff} \approx l_P$, the leading correction to the 3D mode sum is proportional to $(l_P/d)^4$ — two extra powers of $l_P/d$ compared to the $(l_P/d)^2$ correction that a purely 3D cutoff shift would give. This prediction is derived from the 4D mode-density scaling already 
-established in Appendix~F (specifically the zero-point energy integral 
-Eq.~\eqref{eq:E0_cutoff} with the raised UV cutoff 
-$\omega_{\max} = c/\text{PSR}_{\rm eff}$), and requires no additional 
-parameters beyond those already fixed by the 600-cell geometry. For 
-$d \approx 100\,\text{nm}$ this correction is $\sim 10^{-40}$, far below 
-current experimental sensitivity. 
-
-At separations approaching $10\,\text{nm}$ (accessible in next-generation micro-electromechanical systems) the correction rises to $\sim 10^{-30}$ and may become detectable. This provides an independent, falsifiable prediction distinct from standard special relativity and gives CPP a second direct contact point with measured physics.
-
-
-\subsection{Unruh Temperature Modification}
-
-A second, completely independent falsifiable prediction arises from the same PSR-reduction mechanism applied to an accelerated observer’s perception of the vacuum.
-
-In standard Unruh theory an observer with proper acceleration \(a\) perceives the Minkowski vacuum as a thermal bath at temperature
-\[
-T_U = \frac{\hbar a}{2\pi k_B c}
-\]
-\cite{unruh1976}.
-
-In the CPP framework the same acceleration stores \(\Delta\)SSV in the local Voronoi 
-cells, contracting \(\text{PSR}_{\rm eff} = l_P / (1 + k \cdot \Delta\text{SSV})\) 
-and modifying the 4D mode volume \(V_{\rm eff} \propto (\text{PSR}_{\rm eff})^4\). 
-The vacuum-fluctuation spectrum therefore experiences both a raised ultraviolet cutoff 
-frequency (more high-frequency modes are accessible in the stressed cells) and a 
-modified effective temperature. The lowest-order geometric correction, derived from 
-the same 4D volume scaling and elastic strain response as the time-dilation formula 
-(Appendix~E), is linear in the strain:
-\[
-T_{\rm CPP} = T_U \times (1 + k \cdot \Delta\text{SSV}) = T_U \times \gamma_{\rm CPP}.
-\]
-
-At the primary-test acceleration \(a \approx 10^{20}\,g\) the predicted fractional shift is
-\[
-\frac{\delta T}{T} \approx 10^{-20}
-\]
-— identical in magnitude to the clock-dilation deviation but arising from a completely different observable (thermal radiation spectrum or analogue-system excitation rate).
-
-Because the Unruh effect itself has not yet been observed in the laboratory, this prediction is orthogonal to the clock tests. It can be probed in next-generation analogue systems: superconducting-qubit circuits, superradiant amplification in mirrors synchronized with atoms, or fluid/plasma analogues reaching effective accelerations \(\gtrsim 10^{18}\,g\) (see e.g.\ recent proposals in superconducting circuits and oscillatory Unruh schemes). A measured deviation from the standard \(T_U\) at the \(10^{-20}\) level (or a cutoff shift scaling as \((\text{PSR}_{\rm eff}/l_P)^4\)) would confirm the lattice-stress mechanism; exact agreement with \(T_U\) to that precision would tighten the same bound on \(k\) derived from clock data.
-
-See Appendix~F for the full mode-counting derivation. This prediction requires no adjustable parameters and is directly tied to the same single expression (Eq.~1) that generates time dilation, length contraction, and the twin-paradox resolution.
-
-
-
-\subsection{Near-term experimental bounds}  
-Even without observing a deviation, existing high-precision data already constrain any deviation from standard SR in the low-stress regime and thereby place a quantitative upper bound on the coupling constant \(k\).
-
-The most directly relevant accelerator test is the CERN muon storage-ring experiment \cite{bailey1977}. Relativistic muons (\(\gamma \approx 29.33\)) experienced sustained centripetal accelerations of order \(10^{18}\,g\) while their lifetimes were precisely measured (muon lifetime serving as the clock). The observed time-dilation factor agreed with the standard SR prediction to a fractional accuracy of \(2 \times 10^{-3}\) (95\% CL).
-
-In the CPP framework the fractional deviation from the SR prediction is
-\[
-\delta \equiv \frac{\tau_{\rm CPP} - \tau_{\rm SR}}{\tau_{\rm SR}} \approx k \cdot \Delta{\rm SSV} \approx \left( \frac{a}{10^{20}\,g} \right) \times 10^{-20},
-\]
-where the linear scaling with acceleration follows directly from the elastic strain response derived in Appendix E.2. Substituting \(a \approx 10^{18}\,g\) yields a predicted deviation
-\[
-\delta_{\rm predicted} \approx 10^{-22}.
-\]
-This lies more than 19 orders of magnitude below the experimental sensitivity. The data are therefore fully consistent with CPP and would remain consistent with any \(k\) up to \(10^{16}\) times the theoretical Planck-derived value \(k \approx 2.16 \times 10^{-114}\) m\(^3\)/J. The Planck-derived value of \(k\) thus survives all current experimental tests and remains a genuine prediction of the framework.
-
-Laboratory centrifuges (\(\sim 10^6\,g\)) and GPS satellite clocks (\(\sim 2 \times 10^{-8}\,g\)) produce even smaller predicted deviations (\(\sim 10^{-34}\) and \(\sim 10^{-38}\), respectively). Existing optical-clock comparisons in these systems (fractional precision \(\gtrsim 10^{-18}\)) are likewise consistent and reinforce the bound. Future experiments reaching \(10^{18}\)--\(10^{19}\,g\) will begin to probe the regime in which the Planck-scale value of \(k\) becomes directly testable.
-
-These predictions are falsifiable with technology expected within the next decade. Confirmation of any deviation would distinguish CPP from standard SR; null results would tighten the bound on \(k\) or require higher-order corrections.
+Until that question is answered, the honest characterisation of this paper is: \emph{a
+substrate representation of relativistic dilation, conditional on an imported
+energy-momentum bridge, together with a rigorous negative theorem constraining what pure
+displacement geometry can achieve.}
 
 \section{Conclusion}
 
-This paper presents a complete, first-principles geometric derivation of special 
-relativity from the infinite quasicrystalline 600-cell lattice of Conscious Point 
-Physics. By modeling space as an overlapping lattice of 600-cell motifs whose vertices 
+This paper presents a \emph{substrate representation} of special relativity within the
+quasicrystalline 600-cell lattice of Conscious Point Physics, conditional on an imported
+energy-momentum bridge. It is not a first-principles derivation of special relativity:
+the Lorentz factor is supplied as an input (Appendix~A.8.1), and Appendix~H.1 proves that
+the geometry cannot supply it unaided. By modeling space as an overlapping lattice of 600-cell motifs whose vertices
 form the absolute Grid Points, excess Space Stress Vector ($\Delta$SSV) reduces 
 effective Voronoi cell volumes and contracts the Planck Sphere Radius, limiting 
-displacement per absolute Moment. This single mechanism naturally produces time 
-dilation (fewer resonant cycles in stressed frames), length contraction, and the twin 
-paradox resolution through asymmetric stress accumulation along non-inertial paths. 
-The derivation is supported by analytic expressions for the PSR formula and by a
-numerical verification over all 120 vertices (Appendix~A.7) that reproduces the
-600-cell geometric inputs ($a=1/\phi$, $z=12$, $V_0$, $\alpha_{\rm geom}$) and
-confirms the rescaling-invariance of $k\cdot\Delta\text{SSV}$, together with
-explicit clarification of the underlying displacement-reduction process. The framework has been checked against existing muon
-storage-ring data at accelerations of order $10^{18}\,g$ \cite{bailey1977}, which are 
-fully consistent with CPP and confirm that the Planck-derived value of $k$ survives 
-all current experimental tests. The framework is empirically equivalent to standard SR 
-at laboratory energies while predicting small deviations at extreme accelerations 
-($\gtrsim 10^{20}$ g), establishing Conscious Point Physics as a scientifically 
-coherent, testable, and unifying geometric interpretation of relativistic phenomena.
+displacement per absolute Moment. Once the bridge is supplied, this mechanism carries time
+dilation (fewer resonant cycles in stressed frames), length contraction, and the twin
+paradox consistently. The construction is supported by analytic expressions for the PSR
+formula and by a numerical verification over all 120 vertices (Appendix~A.7) that
+reproduces the 600-cell geometric inputs ($a = 1/\phi$, $z = 12$, $V_0$,
+$\alpha_{\rm geom}$) from the binary icosahedral group and confirms the
+rescaling-invariance of $k\cdot\Delta\text{SSV}$.
+
+We state the standing of this work without embellishment. The framework is empirically
+equivalent to standard special relativity \emph{by construction}, and therefore makes no
+independent testable claim at present; the prediction set and muon constraint of earlier
+versions are withdrawn (Sec.~\ref{sec:empirical_status}). What is established is
+narrower than earlier versions asserted, and it is real: the 600-cell geometric
+constants are derived from $2I$; the constitutive form is a minimal rational ansatz
+consistent with Hooke-like response and saturation; and---the principal positive result
+of this paper---Appendix~H.1 proves that no purely geometric displacement model of the
+class examined can recover the $v^2/c^2$ scaling that $\gamma_{\rm SR}$ demands. That
+negative theorem is not a limitation of the paper; it is the paper's most secure
+contribution, and it sharply constrains any future substrate account of relativistic
+kinematics---including CPP's own.
+
+The programme's obligation is now explicit: derive $\varepsilon(v)$ from Conscious Point
+dynamics without importing $\gamma_{\rm SR}$. Should that succeed, the representation
+offered here becomes the derivation it was previously billed as. Should it fail in a
+provable way, that too would be a result. Until then, Conscious Point Physics offers a
+coherent mechanical interpretation of relativistic phenomena, conditional on standard
+relativistic kinematics as input---not an explanation of their origin.
 
 % ============================================================
 % BIBLIOGRAPHY
@@ -638,11 +595,17 @@ Planck-scale normalization of $k$, and (iv) the orthogonality of the absolute
 timelike Moment, which guarantees that the 4D volume scaling projects to a 
 linear 3D displacement budget without approximation.
 
-\subsection{First-Principles Derivation of $k$ from the 600-Cell Second-Moment Integral}
+\subsection{The 600-Cell Second-Moment Integral and the Normalisation of $k$}
 
-The coupling constant $k$ is fixed entirely by the 600-cell geometry; no 
-dimensional argument or external normalization is required. The derivation 
-proceeds in three steps.
+This appendix computes the 600-cell elastic stiffness and fixes the normalisation of
+$k$. It is important to be clear at the outset about what each step delivers: Step~1
+derives a genuine geometric quantity (the stiffness ratio $\alpha_{\rm geom}$), Step~2
+identifies the saturation scale, and Step~3 shows that the resulting prefactor is
+\emph{unobservable} --- so that $k$'s numerical value is set by a normalisation
+convention rather than by the geometry. Earlier versions of this appendix asserted the
+contrary (``$k$ is fixed entirely by the 600-cell geometry; no dimensional argument or
+external normalization is required''); that claim is \textbf{withdrawn} at Patch 2474.
+The derivation proceeds in three steps.
 
 \textbf{Step 1: Elastic stiffness from the face-area second-moment integral.}
 The effective stiffness $C$ of a single Voronoi cell against isotropic radial 
@@ -680,9 +643,14 @@ C = \alpha_{\rm geom}\,\text{SSV}_{\rm crit}, \qquad
 \approx 0.5594,
 \label{eq:C_value_A5}
 \end{equation}
-where $\alpha_{\rm geom}$ is an exact algebraic constant fixed entirely by the 
-golden-ratio geometry of the 600-cell faces and the $1/d = 1/4$ angular-average 
-factor in $\mathbb{R}^4$. It is confirmed numerically in Appendix~E.2 
+where $\alpha_{\rm geom}$ is an algebraic constant fixed by the golden-ratio geometry of
+the 600-cell faces and the $1/d = 1/4$ angular-average factor in $\mathbb{R}^4$
+--- \emph{relative to a choice of length unit}. This qualifier is essential and was
+missing from earlier versions: $C = 3\bar{A}/V_0$ carries dimensions of inverse length
+($\bar{A} \sim L^2$, $V_0 \sim L^3$), so the value $0.5594$ holds in unit-circumradius
+coordinates while the same ratio is $\alpha_{\rm geom}/(\phi\sqrt{2}) \approx 0.2444$ in
+unit-insphere (Planck) coordinates, where $r_{\rm in} = l_P$. $\alpha_{\rm geom}$ is not
+a pure number, and by Step~3 it is in any case unobservable. It is confirmed numerically in Appendix~E.2
 (Eq.~\ref{eq:C_result}); the full algebraic path from $3\phi^5\sin(2\pi/5)/(40\sqrt{2})$ 
 to $\alpha_{\rm geom}$ is given there.
 
@@ -747,8 +715,8 @@ k\cdot\Delta\text{SSV}
 = \frac{\alpha\,l_P^3}{E_P}\cdot\frac{E_{\rm kin}}{\alpha\,l_P^3}
 = \frac{E_{\rm kin}}{E_P} = \gamma_{\rm SR}-1 ,
 \]
-so $\text{PSR}_{\rm eff}$, every prediction in Table~\ref{tab:predictions}, and the
-muon bound are all independent of the prefactor. The quantity $k$ is not
+so $\text{PSR}_{\rm eff}$ and every quantity derived from it are independent of the
+prefactor. The quantity $k$ is not
 separately observable; only the product $k\cdot\Delta\text{SSV}$ is.
 
 We therefore adopt the natural convention $\alpha = 1$, paired with
@@ -900,7 +868,7 @@ special-relativistic Lorentz factor. This identification is exact: the Dipole Se
 \end{equation}
 
 \textbf{Step 2: Evaluate at the natural Planck-scale normalization.}
-The coupling constant $k = l_P^3/E_P$ was derived from the condition that one Planck energy $E_P$ stored in one Voronoi cell of spatial volume $l_P^3$ saturates the displacement budget. The natural normalization for a single CP aggregate is therefore $m = m_P$ (Planck mass) and $V_{\rm cell} = l_P^3$ (one Planck-volume cell), giving $E_P = m_P c^2$. Substituting into Eq.~(\ref{eq:DSSV_exact}):
+The normalisation coefficient $k = l_P^3/E_P$ follows, \emph{given the convention $\alpha = 1$ fixed in Appendix~A.5 Step~3}, from the condition that one Planck energy $E_P$ stored in one Voronoi cell of spatial volume $l_P^3$ saturates the displacement budget. The natural normalization for a single CP aggregate is therefore $m = m_P$ (Planck mass) and $V_{\rm cell} = l_P^3$ (one Planck-volume cell), giving $E_P = m_P c^2$. Substituting into Eq.~(\ref{eq:DSSV_exact}):
 \begin{equation}
 \Delta\text{SSV} = \frac{(\gamma_{\rm SR}-1)\,m_P c^2}{V_0\,l_P^3} = \frac{(\gamma_{\rm SR}-1)\,E_P}{V_0\,l_P^3}.
 \label{eq:DSSV_planck}
@@ -917,7 +885,7 @@ The geometric factor $V_0 \approx 16.693$ is the dimensionless Voronoi cell volu
 The physical Voronoi cell volume in SI units is $V_{\rm cell}^{\rm SI} = V_0 \cdot l_P^3$, where $l_P^3$ converts from circumradius units to physical cubic metres. This is the volume that appears in the denominator of Eq.~(\ref{eq:DSSV_exact}): 
 $\Delta\text{SSV} = E_{\rm kin}/(V_0 \cdot l_P^3)$.
 
-The coupling constant $k$ was derived in Appendix~A.5 from the condition that one Planck energy $E_P$ stored in one physical 
+The normalisation coefficient $k$ follows, \emph{in the convention adopted in Appendix~A.5 Step~3}, from the condition that one Planck energy $E_P$ stored in one physical
 Voronoi cell of volume $V_0 \cdot l_P^3$ saturates the displacement budget. Explicitly, the saturation condition — one Planck energy fills one 
 Planck-volume cell — is
 \begin{equation}
@@ -1169,7 +1137,7 @@ The excess Space Stress Vector follows immediately as a purely geometric quantit
 \[
 \Delta{\rm SSV}_{\rm geom} \equiv \frac{\varepsilon_{\rm geom}}{k},
 \]
-where \(k \approx 2.16 \times 10^{-114}\) m\(^3\)/J is the already-derived lattice coupling constant (Eq.~\ref{eq:k_value}). No kinematic energy, \(\gamma_{\rm SR}\), or special-relativistic postulates appear anywhere.
+where \(k \approx 2.16 \times 10^{-114}\) m\(^3\)/J is the normalisation coefficient in the adopted convention (Eq.~\ref{eq:k_value}; its value is not separately predicted --- see Appendix~A.5, Step~3). No kinematic energy, \(\gamma_{\rm SR}\), or special-relativistic postulates appear anywhere.
 
 The effective Planck Sphere Radius is then
 \[
@@ -1548,7 +1516,9 @@ C = \alpha_{\rm geom}\,\text{SSV}_{\rm crit}, \qquad
 \approx 0.5594,
 \label{eq:C_result}
 \end{equation}
-where $\alpha_{\rm geom}$ is an exact algebraic constant fixed by the
+where $\alpha_{\rm geom}$ is an algebraic constant --- exact only relative to
+unit-circumradius coordinates (see Appendix~A.5, Step~1), and unobservable in any case
+(Step~3) --- fixed by the
 golden-ratio geometry of the 600-cell faces; it is not a fit parameter.
 The derivation proceeds as follows. First, the ratio of the face area
 to the cell volume reduces to
@@ -2149,9 +2119,18 @@ same sense that the selection of the 600-cell is a theorem
 of universal coverage, deterministic evolution, and exact Lorentz 
 covariance.
 
-This represents the deepest level of first-principles derivation 
-currently achieved within CPP: not only the lattice geometry, 
-but the dimensionality of spacetime itself, emerges from the 
+\emph{Scope note (Patch 2474).} This result is \emph{conditional on its postulates},
+one of which is exact Lorentz covariance --- which this paper does \emph{not} derive but
+imports via the energy-momentum bridge (Appendix~A.8.1; see Sec.~\ref{sec:empirical_status}).
+The theorem therefore states: \emph{if} universal coverage, deterministic evolution and
+exact Lorentz covariance are required, \emph{then} $d = 4$ and the 600-cell follow
+uniquely. That is a genuine structural result and is not weakened by the $k$/prediction
+retractions, but it is not an unconditional derivation of spacetime dimensionality, and
+Appendix~G has not been re-audited to the standard applied to Appendices~A.5, E and H at
+Patches 2471--2474 (registered: \texttt{OPEN-WORKFLOW-PREDICTION-AUDIT}). Subject to that
+qualification, the dimensionality result is the deepest structural derivation
+currently achieved within CPP: not only the lattice geometry,
+but the dimensionality of spacetime itself, follows from the
 foundational postulates without independent assumption.
 
 
@@ -2173,7 +2152,7 @@ self-consistency loop of the entire framework.
 Together the three derivations — energy-momentum bridge (A.8.1), elimination theorem (H.1), and self-consistent geometric recovery (H.2) — establish a precise and complete picture of how CPP produces exact Lorentz equivalence. They demarcate two distinct layers of the framework:
 
 \begin{description}
-\item[The geometric layer] (600-cell, Voronoi cells, displacement budget, Appendices A--G) determines the functional form of $\text{PSR}_{\rm eff}$, the coupling constant $k$, and the structure of the displacement budget. This layer is purely geometric and contains no reference to SR kinematics.
+\item[The geometric layer] (600-cell, Voronoi cells, displacement budget, Appendices A--G) determines the functional form of $\text{PSR}_{\rm eff}$, the normalisation coefficient $k$, and the structure of the displacement budget. This layer is purely geometric and contains no reference to SR kinematics.
 
 \item[The physical layer] (Dipole Sea, kinetic energy storage, 
 proper-time definition of the absolute Moment) determines what 
@@ -2342,7 +2321,7 @@ The Geometric Insufficiency Theorem is not a failure of CPP — it is a precise 
 \item The energy-momentum bridge (Appendix~A.8.1) is therefore not merely one convenient derivation among several — it is the \emph{only} route from CPP geometry to the exact Lorentz factor. The identification of $\Delta\text{SSV}$ with relativistic kinetic energy density is a necessary physical input, not an optional shortcut.
 
 \item This demarcates the two layers of CPP precisely: the 
-\emph{geometric layer} (600-cell, Voronoi cells, displacement budget, Appendices A--G) determines the functional form of $\text{PSR}_{\rm eff}$ and the coupling constant $k$; the \emph{physical layer} (Dipole Sea, kinetic energy storage, energy-momentum relation) determines what $\Delta\text{SSV}$ represents physically and thereby fixes the exact correspondence with SR.
+\emph{geometric layer} (600-cell, Voronoi cells, displacement budget, Appendices A--G) determines the functional form of $\text{PSR}_{\rm eff}$ and the normalisation coefficient $k$; the \emph{physical layer} (Dipole Sea, kinetic energy storage, energy-momentum relation) determines what $\Delta\text{SSV}$ represents physically and thereby fixes the exact correspondence with SR.
 
 \item The self-consistency analysis of Appendix~H.2 identifies the unique effective displacement fraction $f_{\rm eff} = 1 - 1/\gamma_{\rm SR}$ as the bridge between these two layers. This quantity — distinct from both the naive coordinate fraction $v/c$ and the proper-time fraction $(v/c)/\gamma_{\rm SR}$ — is the fraction of the Planck-length budget permanently committed to sustaining bulk motion through the lattice, and its $v^2/c^2$ low-velocity scaling is precisely what the Geometric Insufficiency Theorem requires.
 \end{enumerate}
@@ -2470,7 +2449,7 @@ The framework is self-consistent, parameter-free, and exact at all velocities.
 
 \item[Voronoi cell:] Region of space closer to one lattice point than any other; its free volume limits displacement.
 
-\item[{$k$}:] Lattice-derived coupling constant $\approx 2.16 \times 10^{-114}$ m$^3$/J linking stress to volume reduction.
+\item[{$k$}:] Normalisation coefficient $\approx 2.16 \times 10^{-114}$ m$^3$/J linking stress to volume reduction, in the convention $\Delta\text{SSV} = E_{\rm kin}/l_P^3$. Not separately observable: only the product $k\cdot\Delta\text{SSV}$ is physical, and $(k, \Delta\text{SSV})$ must be used as a matched pair (Appendix~A.5, Step~3).
 
 \item[Moment:] The fundamental unit of absolute time, equal to the Planck time $t_P \approx 5.39 \times 10^{-44}$ s.
 
@@ -2491,7 +2470,7 @@ This paper presents a geometrically motivated derivation that reproduces standar
 
 \item \textbf{Quantum-classical tension}: CPP is formulated with deterministic evolution at global clock ticks, while standard quantum mechanics is fundamentally probabilistic. How the 600-cell lattice and Dipole Sea give rise to Born-rule probabilities, wavefunction collapse, and entanglement will be addressed in companion papers.
 
-\item \textbf{Unification}: The same lattice structure and coupling constant \(k\) govern particle masses (Standard Model emergence), quantum effects (vacuum polarization cutoffs), and gravitational effects (GR extension). These connections will be developed in subsequent papers.
+\item \textbf{Unification}: The same lattice structure and normalisation coefficient \(k\) govern particle masses (Standard Model emergence), quantum effects (vacuum polarization cutoffs), and gravitational effects (GR extension). These connections will be developed in subsequent papers.
 \end{enumerate}
 
 \section{Data Availability}
