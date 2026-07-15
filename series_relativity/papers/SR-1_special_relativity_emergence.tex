@@ -959,7 +959,20 @@ Eq.~(\ref{eq:DSSV_planck}), giving $k\cdot\Delta\text{SSV} = \gamma_{\rm SR}-1$
 with $V_0$ manifestly absent.
 
 
-The cancellation is therefore exact and requires no approximation: it follows from the consistent use of Planck units throughout, in which energy densities are expressed per $l_P^3$ and the dimensionless cell geometry factor $V_0$ is absorbed into the definition of the stress field amplitude.
+The cancellation is exact, but it is worth being precise about its status, because
+the point generalises. With $\Delta\text{SSV}$ defined per \emph{physical cell
+volume} $V_0 l_P^3$, Eq.~(\ref{eq:k_DSSV_intermediate}) gives
+$k\cdot\Delta\text{SSV} = (\gamma_{\rm SR}-1)/V_0$, not $\gamma_{\rm SR}-1$; the
+factor $V_0$ is then removed by \emph{redefining} the stress field to be measured
+per $l_P^3$, i.e.\ by absorbing $V_0$ into the field amplitude. This is a
+legitimate and self-consistent normalisation \emph{choice}, not a necessity ---
+the alternative convention ($\Delta\text{SSV}$ per $V_0 l_P^3$, with
+$k = V_0 l_P^3/E_P$) yields identical physics. It is the same freedom identified
+for $\alpha_{\rm geom}$ in Appendix~A.5 Step~3, exercised here for $V_0$, and the
+same freedom by which the 4D$\to$3D projection prefactor is absorbed into the
+Planck normalisation in Appendix~D.4. In every case only the product
+$k\cdot\Delta\text{SSV}$ is physical, and $(k, \Delta\text{SSV})$ must be quoted
+and used as a matched pair. \emph{(Clarified at Patch 2473; no result changes.)}
 
 \textbf{Step 3: The exact Lorentz factor follows immediately.}
 Substituting Eq.~(\ref{eq:bridge}) into the CPP Lorentz factor:
@@ -1585,19 +1598,21 @@ $\alpha/\text{SSV}_{\rm crit} = k$ gives
 s(\varepsilon) = \frac{1}{1 + k\cdot\Delta\text{SSV}}.
 \]
 The identification $\alpha/\text{SSV}_{\rm crit} = k$ requires care.
-From Step~1, $\alpha = \alpha_{\rm geom} \approx 0.5594$ and
-$\text{SSV}_{\rm crit} = E_P/l_P^3$, so naively
-$\alpha/\text{SSV}_{\rm crit} = \alpha_{\rm geom}\,l_P^3/E_P$, which
-carries the geometric prefactor $\alpha_{\rm geom}$. This prefactor
-does not appear in the physical coupling constant $k$ because
-dimensional necessity eliminates it: the unique monomial
-$l_P^{\,a}E_P^{\,b}$ with units $\text{m}^3\,\text{J}^{-1}$
-requires $a = 3$, $b = -1$, forcing $k = l_P^3/E_P$ with dimensionless
-prefactor exactly~1 (Appendix~A.5, Step~3). The geometric prefactor
-$\alpha_{\rm geom}$ is an internal feature of the 600-cell face-area
-integral and does not appear in the observable coupling constant. The collapse condition of Appendix~A.5 Step~2 confirms this 
-independently: $\text{SSV}_{\rm crit} = E_P/l_P^3$ gives 
-$k = 1/\text{SSV}_{\rm crit} = l_P^3/E_P$ directly, with no $\sqrt{5}$.
+From Step~1, $\alpha = \alpha_{\rm geom} \approx 0.5594$ (in unit-circumradius
+coordinates), so $k = \alpha_{\rm geom}\,l_P^3/E_P$ under that reading. As
+established in Appendix~A.5 Step~3, the prefactor is \emph{unobservable}: the
+energy-momentum bridge pairs $k$ with $\Delta\text{SSV} = E_{\rm kin}/V_{\rm eff}$,
+and any rescaling $\alpha$ acts on $k$ and $V_{\rm eff}$ together, so
+$k\cdot\Delta\text{SSV} = E_{\rm kin}/E_P$ regardless of $\alpha$. We therefore
+adopt $\alpha = 1$ by convention, paired with $\text{SSV}_{\rm crit} = E_P/l_P^3$
+(Appendix~A.5 Step~2), and $k = l_P^3/E_P$ follows. \emph{Correction note (Patch
+2473):} earlier versions asserted that ``dimensional necessity eliminates''
+$\alpha_{\rm geom}$ --- that the unique monomial with units
+$\text{m}^3\,\text{J}^{-1}$ forces prefactor exactly~1. That argument is
+withdrawn here as it is in Appendix~A.5: dimensional analysis fixes dimensions
+and never a dimensionless prefactor, and the Step~2 cross-check is circular
+(writing $k = 1/\text{SSV}_{\rm crit}$ presupposes $\alpha = 1$). Nothing
+downstream changes, because the prefactor was never observable.
 
 Thus the effective radius is
 \[
@@ -1699,14 +1714,14 @@ s(\varepsilon^*) = \frac{1}{1 + \frac{\alpha}{\text{SSV}_{\rm crit}}
 \]
 where SymPy confirms $\alpha_{\rm geom}/\text{SSV}_{\rm crit} =
 \alpha_{\rm geom}\,l_P^3/E_P \approx 0.5594\,l_P^3/E_P$.
-The geometric prefactor $\alpha_{\rm geom}$ in the Padé coefficient
-and the stiffness $C$ is an internal feature of the 600-cell
-face-area integral; it disappears from the physical coupling
-constant $k$ because dimensional necessity — the unique monomial 
-$l_P^a E_P^b$ with units $\text{m}^3\,\text{J}^{-1}$ requires 
-$a=3$, $b=-1$ with prefactor 1 — forces $k = l_P^3/E_P$ exactly, 
-as established independently by the collapse condition in 
-Appendix~A.5 Step~2.
+The geometric prefactor $\alpha_{\rm geom}$ in the Padé coefficient and the
+stiffness $C$ is an internal feature of the 600-cell face-area integral. It does
+not appear in any observable, because $\alpha$ rescales $k$ and the
+$\Delta\text{SSV}$ normalisation together and cancels from their product
+(Appendix~A.5, Step~3); the choice $\alpha = 1$, giving $k = l_P^3/E_P$, is the
+convention adopted throughout. \emph{Correction note (Patch 2473):} the appeal to
+``dimensional necessity'' previously made at this point is withdrawn --- see
+Appendix~A.5 Step~3.
 
 The \texttt{sympy.simplify} call on the residual higher-order terms 
 ($\beta\varepsilon^2$, $\gamma\varepsilon^3$) returns \texttt{0} identically in the isotropic case, confirming the Padé form is algebraically exact and not a truncation.
