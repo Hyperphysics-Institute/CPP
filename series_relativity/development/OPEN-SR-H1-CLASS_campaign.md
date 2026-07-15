@@ -248,4 +248,11 @@ by content. Remaining slots, if any, fold into a v1.2 on arrival.
    any plane derivation), **M9 stress-scaling second** (second-cheapest kill: the
    absolute branch kills for stressed aggregates), then the committed candidate against
    the full M1–M9 burden with K3/K3′/K3a logged per step.
+   **→ M4 PASSED (Patch 2488): arena = the PSR insphere**, derived forward (A3′
+   flat-per-hop scalar c + pre-target r_in ≡ l_P normalisation ⇒ reach ball inscribed
+   ⇒ ball ∩ polytope = ball identically); coefficient 2 exact by derivation;
+   counterfactual polytope (4-cube) gives π/4 — kill was live. §2a condition 1
+   discharged. One K2-package caveat (A3′ matter-clause scope) logged. Full derivation
+   + K3/K3′/K3a log: `SR-MECH-2485_mechanism_session.md`; verify:
+   `../code/2488_m4_arena_coefficient.py` (ALL PASS). Session step 2 = M9.
 4. Any mechanism claim returns to the panel with this file (K2).
