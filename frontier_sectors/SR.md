@@ -250,7 +250,8 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 **Sector(s):** SR — **cross-links DM (OPEN-SS-43 / SF-6 inertia)**
 **Priority:** CRITICAL — this is the outstanding physical question of the entire SR line.
 **One-line statement:** Starting only from CPP substrate rules (PCD dynamics, DI-bit emission, A3′ broadcast), derive or falsify ε(v) = γ(v) − 1 **without** using relativistic kinetic energy, the Lorentz factor, or any equivalent SR identity as input.
-**Why it is the real question:** SR-1's App. A.8.1 obtains γ_CPP = γ_SR by *defining* ΔSSV ∝ (γ_SR−1)mc²/V. γ is therefore an **input**, not an output. App. H.1 (Hyperspherical Cap Elimination Theorem) proves no purely geometric displacement model of the class examined yields the required v²/c² scaling — so the bridge is unavoidable *within that class*, but H.1 does not show it is unavoidable in general. The debt did not disappear when k dissolved; it moved.
+**Why it is the real question:** SR-1's App. A.8.1 obtains γ_CPP = γ_SR by *defining* ΔSSV ∝ (γ_SR−1)mc²/V. γ is therefore an **input**, not an output. The debt did not disappear when k dissolved; it moved.
+**UPDATED 14 Jul 2026 (Patch 2475) — the route is more open than 2474 recorded.** H.1's class-coverage theorem is **withdrawn**: its cap expansion was wrong (f^{1/2} published; **f^{5/2}** correct, verified to 50 digits, `code/2475_h1_cap_exponent_verification.py` 8/8), and the theorem's own claim (n ≤ 1 for all models) was **refuted by its own Model 3** (n = 5/2). What stands is the elimination of three models, exponents n ∈ {1, 1, 5/2}. **They bracket the target n = 2.** So an exclusion geometry with V_excl ∝ f² would give ε ∝ f² exactly as required — the erroneous theorem was closing a route that may be open. See OPEN-SR-H1-CLASS: that is now the recommended first attack on this item.
 **What a solution looks like:** reproduce at least the leading v²/2c² behaviour, preferably the divergence as v→c, from substrate dynamics alone. A provable impossibility (extending H.1 beyond the geometric class to include history-dependent / accumulated-energy models) would also close it — and would be a major negative result.
 **Where α becomes physical (the lever):** if ΔSSV is given an operational definition — or couples to the DM/SF-6 sector with an independent normalisation — then α is no longer absorbable and OPEN-SR-EPSILON and the DM campaign become the same problem. **This is the recommended attack route.**
 **Paper(s):** SR-1; SF-6; DM campaign
@@ -267,4 +268,17 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 **What a solution looks like:** derive an acceleration-dependent contribution to ΔSSV from substrate dynamics (distinct from, and additional to, the kinetic term), yielding a genuine residual beyond γ_SR. Absent that, accept that SR-1 is an interpretation and remove it from the programme's prediction count.
 **Consequence for the null-hypothesis raise:** the registry's zero-parameter prediction tally must be reduced accordingly. See OPEN-WORKFLOW-PREDICTION-AUDIT.
 **Paper(s):** SR-1
+**Last updated:** 14 July 2026
+
+---
+
+### OPEN-SR-H1-CLASS: Is There an Exclusion Geometry with V_excl ∝ f²?
+**Status:** OPEN (NEW 14 July 2026, Patch 2475)
+**Sector(s):** SR — direct sub-problem of OPEN-SR-EPSILON
+**Priority:** HIGH — cheapest live route to ε(v) = γ−1.
+**One-line statement:** By V ∝ r⁴ volume conservation, an excluded region with V_excl ∝ f² yields ε ∝ f² — exactly γ_SR−1. Does such a region exist with independent physical motivation, or can its non-existence be proved?
+**Why this is now open (it was thought closed):** H.1 claimed all simply connected exclusion models give n ≤ 1 < 2. That claim is **false** — its own hyperspherical cap gives n = 5/2 (Patch 2475; the published f^{1/2} expansion was wrong by twenty orders of magnitude at f = 10⁻¹⁰). The three natural models give n ∈ {1, 1, 5/2}, **straddling** n = 2 rather than lying below it. The exponent is set by how the excluded volume scales with f: corridor exclusion is n = 1 by fiat; a cap of height h on a d-ball has volume ∝ h^{(d+1)/2}, giving n = 5/2 at d = 4. **Nothing currently excludes n = 2.**
+**What a solution looks like:** (a) exhibit a physically motivated exclusion region with V_excl ∝ f² — this would derive γ from geometry and close OPEN-SR-EPSILON affirmatively; or (b) prove no such region is admissible under CPP's displacement postulates — a genuine class theorem, which is what H.1 was wrongly billed as.
+**Discipline (G7):** a region reverse-engineered to give f² is *fitting*, not deriving. The motivation must be independent of the target exponent. This is precisely the trap the k defect fell into.
+**Paper(s):** SR-1 App. H.1
 **Last updated:** 14 July 2026
