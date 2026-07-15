@@ -255,4 +255,15 @@ by content. Remaining slots, if any, fold into a v1.2 on arrival.
    discharged. One K2-package caveat (A3′ matter-clause scope) logged. Full derivation
    + K3/K3′/K3a log: `SR-MECH-2485_mechanism_session.md`; verify:
    `../code/2488_m4_arena_coefficient.py` (ALL PASS). Session step 2 = M9.
+   **→ M9 RESOLVED-BY-DISSOLUTION, PENDING K2 (Patch 2489):** d = v_abs·t_P is
+   kinematically forced (Branch L's formula) and, via c07's pre-target channel
+   split (uniform background: rods untouched, clocks slow, v_loc = v_abs·g_bg),
+   is IDENTICALLY Branch P's formula in local velocity — the branches are one
+   rule in two velocity variables. ε = γ(v_loc)−1 at every stress; composition
+   multiplicative g_bg·γ(v_loc); ceiling c/g_bg = the point v_loc = c. The
+   dissolution defuses a registered kill trigger and is therefore NOT
+   self-certified — panel ratification required (trigger semantics, uniform
+   scope, v_loc convention caveats logged in the session file). Verify:
+   `../code/2489_m9_stress_scaling.py` (V1–V5 ALL PASS). Session step 3 = the
+   committed candidate (a) against the full burden, starting M1.
 4. Any mechanism claim returns to the panel with this file (K2).
