@@ -182,6 +182,24 @@ else
 fi
 echo
 
+# --- Integrity gate (Patch 2477; OPEN-WORKFLOW-PREDICTION-AUDIT) ------------
+# Checks the ARTIFACTS, not the prose: cited scripts exist / parse / are not
+# stubs / carry no elision markers / declare non-stdlib imports; paper prose
+# carries no live dimensional-necessity or withdrawn zero-parameter billing.
+# Registered after the SR-1 triage (Patches 2471-2475). BLOCKING.
+echo "--- Integrity gate (scripts/integrity_audit.py; BLOCKING) ---"
+if command -v python3 >/dev/null 2>&1 || command -v python >/dev/null 2>&1; then
+  PY=$(command -v python3 || command -v python)
+  if "$PY" scripts/integrity_audit.py --paper "$ID"; then
+    echo "  [PASS] integrity gate"
+  else
+    echo "  [FAIL] integrity gate (see findings above)"; FAIL=1
+  fi
+else
+  echo "  [FAIL] no python interpreter found — integrity gate cannot run"; FAIL=1
+fi
+echo
+
 # --- LaTeX compile (optional; skip cleanly if no pdflatex) ------------------
 echo "--- LaTeX compile (optional) ---"
 if [ -n "${TEX:-}" ] && command -v pdflatex >/dev/null 2>&1; then
