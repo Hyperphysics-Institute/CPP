@@ -159,7 +159,7 @@ of M1–M9:
   (C0-clause dependent). Reading R1 ("the obligatory drift pre-empts a floor of the
   in-plane budget each Moment") remains a reading, not a derivation.
 
-### 3a. Single-candidate commitment (K4 instrument — PENDING FOUNDER RATIFICATION)
+### 3a. Single-candidate commitment (K4 instrument — **RATIFIED BY FOUNDER, 15 July 2026, Patch 2487**)
 
 Per the panel's anti-shopping mandate, exactly ONE candidate is committed before mechanism
 work. **Proposed commitment: candidate (a), the (ê_motion, τ̂) plane.** Rationale, stated
@@ -169,8 +169,10 @@ universal lattice structure alone; (a) is the only listed candidate satisfying t
 construction — (b) and (c) vary with internal ZBW configuration and would violate M7
 unless an alignment mechanism is separately derived; (d) is blocked pending the A3′/C0
 source clause. This rationale references universality (an M7 requirement), not the target
-exponent. **The founder ratifies or replaces this commitment before the mechanism session
-opens; the ratified choice is then binding under K4.**
+exponent. **RATIFIED** — founder ruling, verbatim: "ratified." (15 July 2026, in response
+to the v1.2 round-completion notice.) **Candidate (a), the (ê_motion, τ̂) motion–time
+plane, is now BINDING under K4.** Evaluating any other candidate in the mechanism session
+— including "quick checks" — voids the round per K4.
 
 **Kill conditions (binding):**
   **K1 (no-selection kill).** If, within the founder-bounded effort (default: two focused
@@ -238,8 +240,8 @@ by content. Remaining slots, if any, fold into a v1.2 on arrival.
 ## 5. Immediate next actions
 
 1. ~~Slot attribution~~ CONFIRMED (posting order); ~~remaining returns~~ ROUND COMPLETE.
-2. **Founder ratifies or replaces the §3a single-candidate commitment** — the sole
-   remaining gate.
+2. ~~Founder ratifies the §3a commitment~~ **RATIFIED (Patch 2487)** — candidate (a)
+   binding. ALL GATES CLEARED.
 3. Mechanism session opens (fresh context, warm keyword SR-MECH-2485) against this v1.2,
    K4-bound. Order: **M4 arena determination first** (cheapest kill, K4-safe: if the
    arena is the polytope and the leading coefficient misses 2, the campaign dies before
