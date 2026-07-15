@@ -283,4 +283,29 @@ by content. Remaining slots, if any, fold into a v1.2 on arrival.
    `SR-MECH-2485_mechanism_session.md` step 3; verify:
    `../code/2491_m1_plane_uniqueness.py` (V1–V6 ALL PASS). Session step 4 = M2
    (exclusion rule).
+   **→ M2 NOT DERIVED — UNDERDETERMINED BY THE CURRENT CORPUS; FORK PINNED;
+   MECHANISM WORK STOPPED; DISPOSITION TO FOUNDER + PANEL (Patch 2492).** The
+   candidate composition rules for drift-meets-budget were enumerated forward;
+   the rest-limit continuity filter (grounded in c01's displacement-response
+   continuity) kills the half-space floor and the exact-advance slice — notably,
+   the corpus's own per-Moment obligation template (c01's τ-advance structure)
+   transfers to a slice and dies. Four survivors remain, pairwise inequivalent
+   at leading order: R1 translation (ε = 0), R2 lens (n = 1, coeff 8/3π), R3y
+   symmetrized slab (n = 1, coeff 16/3π), R4 in-plane magnitude-floor tube
+   (n = 2, (1−f²)² exact). The postulates as developed do not discriminate; the
+   discriminating input — the per-Moment single-CP content of the motion state —
+   is the SF-6 inertia mechanism, UNPINNED and the subject of a registered open
+   isolated investigation (Patch 2470, 14 Jul), which OPEN-SR-EPSILON's registry
+   text independently flags as the recommended route. Selecting R4 today would
+   be selection by target (K3′); three drafted routes to it were abandoned on
+   that test and are recorded verbatim in `../reasoning/2492.md`. Disposition
+   options shipped upward, each stated against interest: (α) K1 fires —
+   NEGATIVE-FOR-MECHANISM per the registered kill branch; (β) explicit founder
+   extension gated on the SF-6 isolated investigation, pre-committed so that an
+   SF-6 landing on R1/R2/R3y (or nothing) kills with no further extension, and
+   with the fork WITHHELD from the SF-6 working instance to preserve its
+   blindness. M3/M6/M7/M8 are downstream of the rule and were not worked;
+   M5 respected (nothing absorbed); K4 untouched (rule fork, not plane fork).
+   Verify: `../code/2492_m2_rule_fork.py` (W1–W3 ALL PASS). NOTHING PROMOTED
+   (K2).
 4. Any mechanism claim returns to the panel with this file (K2).

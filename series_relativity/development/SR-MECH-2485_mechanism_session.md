@@ -419,5 +419,185 @@ derived from single-CP rules — interlocking with M6's micro-to-macro bridge).
 
 ---
 
-*(M2 entry to follow as the session's step 4.)*
+## Step 4 — M2: the exclusion rule (Patch 2492)
+
+### Verdict
+
+**M2 IS NOT DERIVED — and this session records that the failure is structural,
+not merely effort-bounded: the exclusion rule is UNDERDETERMINED BY THE CURRENT
+CORPUS.** The candidate rules for how the obligatory drift interacts with the
+per-Moment capacity set were enumerated forward; one available forward filter
+(rest-limit continuity) kills two of six; the four survivors — including the
+tube — are pairwise inequivalent at leading order and the postulates, as
+currently developed, do not discriminate among them. The discriminating input is
+the per-Moment, single-CP content of the motion state — i.e., **the SF-6 inertia
+mechanism, which is an explicitly unpinned, registered open investigation**
+(founder-directed, Patch 2470, handover 2026-07-14: "the SF-6 inertia
+coefficient is not pinned from anything yet (the mechanism was documented 'on
+the road to DM' and set aside)"). The SR registry independently flags this
+coupling as the recommended route (OPEN-SR-EPSILON: "couples to the DM/SF-6
+sector with an independent normalisation… OPEN-SR-EPSILON and the DM campaign
+become the same problem"). Per the campaign's own discipline, the disposition —
+K1 NEGATIVE now versus explicit founder extension pending the SF-6 isolated
+investigation — is NOT this session's to adjudicate. The fork is pinned
+(`code/2492_m2_rule_fork.py`, W1–W3 ALL PASS) and ships to founder + panel.
+
+### What M2 requires, decomposed
+
+The rule to derive: forbidden targets are exactly {x : |P_Π x| ≤ d}, the full
+symmetric codim-2 tube. Decomposed into its three independent features, each
+needing forward grounds: **(i) a floor** (the in-plane commitment is ≥ d, not
+= the drift vector); **(ii) on the magnitude of the Π-projection** (not the
+ê_motion component); **(iii) Π-plane isotropic** (symmetric between τ̂ and
+ê_motion — noting NO postulate symmetry rotates τ̂ into space; c01 makes τ̂
+absolutely distinguished, so (iii) cannot come from any stabilizer argument).
+
+### The candidate-rule enumeration (forward; target never consulted for selection)
+
+For a single CP whose aggregate is in motion state v, the postulate-available
+kinematics are: c01's displacement-response (the step is set by net SSV,
+Eq.~(disp)), A3′/M4's reach bound (arena = the ball), M1's distinguished plane,
+and the drift d = v·t_P (2489 step (i)). The composition rules these admit:
+
+- **R1 — translation/relabeling.** The drift is bookkeeping inside the one
+  computed displacement; the admissible target set is unchanged. V_free/V₀ = 1;
+  ε = 0. This is what reach + displacement-response give with NO further
+  principle: the strongest honest statement of the current postulates' default.
+- **R2 — vector reach consumption (lens).** The drift consumes reach
+  vectorially and the discretionary part carries its own full-reach bound:
+  capacity = Ball ∩ (Ball + d·ê_motion). V_free/V₀ = 1 − (8/3π)f + O(f³);
+  n = 1. The double-bound premise has no corpus source.
+- **R3h — component floor (half-space).** The ê_motion component cannot fall
+  below the drift: free iff x₁ ≥ d. **KILLED FORWARD** by the rest-limit
+  filter: V_free/V₀ → 1/2 (not 1) as v → 0⁺, a discontinuity in ε at rest,
+  inconsistent with c01's displacement-response being continuous in net SSV (an
+  infinitesimally moving aggregate is an infinitesimally perturbed Sea state).
+- **R3s — exact-advance slice** (the corpus's one established per-Moment
+  obligation template, c01's τ-advance, transferred to the drift): x₁ = d
+  exactly. Free set has measure zero; ε → ∞ for any v > 0. **KILLED FORWARD**
+  by the same filter. Notable finding: the corpus's own obligation template
+  does NOT produce the tube — it produces a slice, and the slice dies.
+- **R3y — symmetrized component slab** (codim-1; E₁ of the 2482 family):
+  forbidden iff |x₁| ≤ d. V_free/V₀ = 1 − (16/3π)f + O(f³); n = 1. Survives
+  the filter. No forward source for the symmetrization found.
+- **R4 — in-plane magnitude floor** (codim-2 tube; E₂; the identity's rule):
+  forbidden iff |P_Π x| ≤ d. V_free/V₀ = (1−f²)² exactly; n = 2. Survives the
+  filter. Feature (iii) has a PARTIAL pre-target anchor — SR-1's budget metric
+  is round in all four coordinates (the strain variable is the 4D radius,
+  R² = r² + τ²), so a rule stated at budget level would inherit Π-roundness —
+  but features (i) and (ii) have **no forward source found**, in c01, SR-1's
+  corrected text, A3′, or anywhere in the pre-target corpus.
+
+**The corpus sweep (recorded so the panel can audit exhaustion):** c01's
+"displacement step set by net SSV" is a response rule, not an obligation
+structure for a persisting motion state; a momentum/dressed-state per-Moment
+mechanism does not exist in the corpus (grep across series_relativity/ and
+series_quantum/ returns nothing); SR-1's "bulk velocity consumes part of the
+displacement budget" (line 768) is the assertion the 2471–2475 triage withdrew
+— SR-1's corrected text itself registers the derivation as owed (line 337) —
+so it cannot serve as a premise without circularity; OPEN-SR-EPSILON's own
+registry entry routes the missing normalisation through the SF-6 coupling; and
+the SF-6 inertia mechanism is unpinned by explicit founder ruling as of 14 July
+(Patch 2470), with the isolated impulse-transfer investigation opened and
+unstarted. The convergence is exact: **the input M2 needs is the deliverable of
+a registered open investigation.**
+
+### Why the session does not select R4 (the K3′ record)
+
+Every route constructed toward features (i)+(ii) passed through a step whose
+only distinguishing virtue was that it produces the tube — the precise K3′
+profile ("structures whose only distinguishing virtue is target-consistency").
+Three such routes were drafted and abandoned, recorded verbatim in
+`reasoning/2492.md`: (1) a dressed-state/polaron narrative ("the state's
+per-Moment reproduction consumes in-plane capacity isotropically") — its
+Π-isotropic magnitude-floor form has no source other than yielding the tube,
+and the dressed-state per-Moment mechanics is exactly the unpinned SF-6
+content; (2) treating the burden text's own wording ("full symmetric
+neighborhood") as a premise — the burden was panel-designed AFTER the target
+was known (campaign §1c); it describes what must be derived and cannot ground
+the derivation; (3) leaning the budget-metric roundness into more than it
+carries — it grounds (iii) only, and was demoted accordingly. Per the
+handover's binding instruction ("if the honest answer is ever 'this step
+exists because the target needs it,' that is K1 firing early — take the
+kill"), the session declines to select.
+
+### K3 / K3′ / K3a log for this step
+
+- **K3:** the target is never used to select. The finding "only R4 reproduces
+  γ" is computed and stated AFTER the enumeration and filter (script output,
+  labeled as such). The step's verdict exists BECAUSE K3 discipline was
+  enforced, not despite it. CLEAN.
+- **K3′:** three near-misses caught live and recorded (above and verbatim in
+  the reasoning fragment). The rest-limit filter itself passes the test: a
+  target-ignorant derivation checking any candidate rule's physical sanity
+  applies the v → 0 limit first (M1's step (iv) had already established the
+  structure dies at rest), and the filter kills candidates on both sides of
+  the exponent ledger indiscriminately (it kills the slice, which would have
+  given no identity, and the half-space, whose exponent class n = 1 is shared
+  by a survivor). CLEAN.
+- **K3a:** no new principle is posited — the step's content is precisely the
+  REFUSAL to posit one. The rest-limit continuity filter is grounded in c01's
+  displacement-response continuity in net SSV, not posited fresh. n = 3
+  counterfactual: the identical enumeration, sweep, and filter yield the
+  identical four-way underdetermination — under ANY target the reasoning
+  returns "the corpus does not discriminate"; it cannot bend because it
+  selects nothing. PASS.
+- **K4:** untouched — the fork is a RULE fork within the committed candidate
+  (a); no alternative plane candidate was constructed or tested. **M5:** no
+  constant was absorbed (nothing was derived).
+
+### Disposition — stated against interest in BOTH directions
+
+- **Against the campaign:** K1's default effort bound is two focused sessions;
+  this is session 2; the burden is not met and will not be met this session.
+  "Blocked-on-open-item" must not become a device for indefinitely deferring a
+  registered kill — the panel should weigh whether the SF-6 dependency was
+  foreseeable at pre-registration (§2a condition 6 and OPEN-SR-EPSILON's
+  registry text suggest the sector coupling was already visible).
+- **Against the kill:** recording NEGATIVE-FOR-MECHANISM now would encode "the
+  postulates do not select the exclusion rule" when the demonstrated state is
+  "the corpus has not yet derived what the postulates select" — a negative
+  carrying a known, in-flight confound: the SF-6 isolated investigation
+  (opened for independent reasons, founder-directed, one day before this step)
+  has as its deliverable exactly M2's missing input. K1's own text makes the
+  effort bound founder-adjustable ("founder may extend explicitly").
+- **The session adjudicates neither.** Per the 2489 precedent (a session must
+  not lawyer its own kill conditions — in either direction), the fork, the
+  sweep, and both framings ship to the founder and the K2 panel. The two
+  clean options on the table: **(α)** K1 fires — campaign closes
+  NEGATIVE-FOR-MECHANISM, H.1's successor graduates to the four-model
+  Proposition per the registered kill branch; **(β)** founder explicitly
+  extends/suspends the campaign PENDING the SF-6 isolated investigation, whose
+  result then discriminates the pinned fork {R1, R2, R3y, R4} — with the
+  explicit pre-commitment that if SF-6's mechanism lands on R1/R2/R3y (or on
+  nothing), K1 fires with no further extension. Option (β), if taken, should
+  itself be pre-registered before SF-6 work resumes, so the inertia
+  investigation cannot be steered toward R4 (the SF-6 window was opened
+  blind to this fork — that independence is an asset to preserve; the fork
+  should NOT be shown to the SF-6 working instance, only to the panel).
+
+### Effect on the remaining burden
+
+M3, M6, M7, M8 are downstream of the rule (there is no projection treatment,
+bridge, universality proof, or frame-consistency check FOR a rule that has not
+been derived); M5 is a standing ban, not a work item. **Mechanism derivation
+work on this campaign STOPS at this step** pending the founder/panel
+disposition. Working M3+ "conditionally on R4" would evaluate the target rule's
+consequences without a derivation — geometry the 2482 identity already
+supplies — and would add fitting surface while the rule is underivable. Not
+done.
+
+### Step outcome
+
+M2 **NOT DERIVED — UNDERDETERMINED; FORK PINNED
+(`code/2492_m2_rule_fork.py`, seed 2492, W1–W3 ALL PASS); DISPOSITION TO
+FOUNDER + PANEL (options α/β above).** The session's mechanism phase closes
+here. Assets for the dispatch: this entry, the campaign file, the fork script,
+`reasoning/2492.md`, and the SF-6 handover cross-reference
+(`handovers/2026-07-14_sf6_inertia_impulse_investigation_opened.md`).
+
+---
+
+*(Session 2 of the K1 clock ends at this step; handover to follow on founder
+instruction.)*
 
