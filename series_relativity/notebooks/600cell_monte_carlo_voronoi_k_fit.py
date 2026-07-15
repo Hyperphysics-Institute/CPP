@@ -1,3 +1,21 @@
+"""
+=========================== NON-FUNCTIONAL STUB ===========================
+STATUS: DOES NOT RUN. Retained for provenance only. Patch 2471 (14 July 2026).
+
+`vertices = []` -- the vertex list is empty, so Voronoi(points) cannot execute.
+This file was cited by SR-1 App. A.7 as a Monte-Carlo verification of
+k = 2.158453e-114 m^3/J "to machine precision". That citation is WITHDRAWN.
+
+Even with vertices supplied, the fit is CIRCULAR: the data is generated from
+`k_theoretical` and then fitted back with `p0=[k_theoretical]`. The geometry
+enters only as `V_ratio`, an overall scale the fit model does not contain. It
+could never have tested the geometry.
+
+Real verification: ../code/2471_k_convention_and_alpha_geom_verification.py
+See OPEN-SR-1-MC-VERIFY, OPEN-WORKFLOW-AI-ARTIFACT.
+===========================================================================
+"""
+
 import numpy as np
 from scipy.spatial import Voronoi
 from scipy.optimize import curve_fit

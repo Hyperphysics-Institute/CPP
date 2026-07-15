@@ -1,3 +1,29 @@
+"""
+================================ REJECTED ================================
+STATUS: REJECTED at Patch 2471 (14 July 2026). Retained for provenance only.
+DO NOT APPLY. Superseded by ../code/2471_k_convention_and_alpha_geom_verification.py
+
+This script (AI-authored, March 2026) correctly identified a real defect in
+SR-1 App. A.5 Step 3 -- the "dimensional analysis forces prefactor identically 1"
+argument is invalid. That diagnosis stands and is now fixed in the paper.
+
+Its REMEDY is rejected on two grounds:
+
+ 1. Option B adopts alpha_geom = 0.5594, but 3*Abar/V_0 has dimensions of 1/L
+    and so is unit-dependent: 0.5594 per circumradius, 0.2444 per insphere
+    radius (= per l_P, the physical normalisation). THIS SCRIPT DISCOVERS THAT
+    ITSELF -- see Section 10: "WAIT -- this means 3*Abar/V0 is NOT
+    dimensionless!" -- and then proceeds on 0.5594 regardless.
+
+ 2. Superseded: alpha CANCELS in k*dSSV for ANY alpha, so the prefactor is not
+    physical at all and no value of it is derivable. Adopting 0.5594 would trade
+    an invalid argument for a subtler one.
+
+PROCESS NOTE: this file sat unrouted for four months while the defect it
+diagnosed remained in a shipped flagship. See OPEN-WORKFLOW-AI-ARTIFACT.
+==========================================================================
+"""
+
 #!/usr/bin/env python3
 """
 Resolution of the α_geom Prefactor Inconsistency in the CPP Coupling Constant k

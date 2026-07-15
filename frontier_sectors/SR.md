@@ -20,7 +20,11 @@
 ---
 
 ### OPEN-SR-2: Derive k = l_P³/E_P from Voronoi Integral
-**Status:** OPEN
+**Status:** ✗ RESOLVED BY DISSOLUTION — 14 July 2026, Patch 2471 (CONV-001 pending)
+**Resolution:** The question is **ill-posed**. There is no single k to derive: k's numerical value is fixed by the ΔSSV *normalisation convention*, not by geometry. For any α, k = α·l_P³/E_P paired with ΔSSV = E_kin/(α·l_P³) gives k·ΔSSV = E_kin/E_P = γ−1 identically — so every observable is invariant under the prefactor, and **k is not separately physical**. The registry's own "two inconsistent estimates" are the α = 1 (collapse-postulate/bridge) and α = α_geom ≈ 0.5594 (stiffness-integral) conventions; they are *physically equivalent*, not inconsistent. Verified `code/2471_k_convention_and_alpha_geom_verification.py` (31/31). What geometry *does* fix: the functional form 1/(1+ε) (Hooke + saturation → unique lowest-order rational approximant) and the App. H.1 elimination theorem. γ is supplied by the energy-momentum bridge (App. A.8.1) by identification, which H.1 proves necessary.
+**Live hazard (inheritors read this):** (k, ΔSSV) must be inherited as a **matched pair**. Mixing conventions rescales γ−1 by exactly α — a 44% error. Applies directly to any SF-6 / DM-dance inheritance of k.
+**Also corrected at 2471:** SR-1 App. A.5 Step 3's "dimensional analysis forces prefactor identically 1" is **withdrawn** (dimensional analysis fixes dimensions, never a dimensionless prefactor; and its Step-2 cross-check was circular). The March-2026 remedy `notebooks/600cell_k_alpha_geom_consistency_fix.py` is **REJECTED**: α_geom is unit-dependent (0.5594 per circumradius vs 0.2444 per l_P — a defect that script itself printed and walked past), and is superseded by the cancellation result.
+**Superseded status:** OPEN
 **Sector(s):** SR
 **Priority:** HIGH
 **One-line statement:** Derive a single consistent k value from 600-cell Voronoi cell structure.
@@ -224,3 +228,16 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 **Cross-sector connections:** **R2 / OPEN-COSMO-DM-2** (the root grounds R2's exact-Lorentz premise (i) and the isotropy premise (ii)); SF-6 Michelson–Morley falsifier; VTD-1.
 **Working home:** `series_relativity/development/mu_eps_closure/em_emergence/lorentz_root/`. **Opener:** `em_emergence/2058_HANDOVER_lorentz_root_campaign.md`. **Rounds-1–3 banked handover:** `lorentz_root/2066_HANDOVER_lorentz_root_rounds1-3_banked.md`. **Round-4 finding (v1.2, panel-closed):** `lorentz_root/2068_round4_periodic_nogo_quasicrystal.md` + `review/reviews-2068.md`.
 **Registered:** 23 June 2026 (Patch 2067); Round-4 determination folded Patch 2072. NO THEO.
+
+---
+
+### OPEN-SR-1-MC-VERIFY: Restore Numerical Verification Withdrawn from SR-1
+**Status:** OPEN (NEW 14 July 2026, Patch 2471)
+**Sector(s):** SR
+**Priority:** HIGH
+**One-line statement:** SR-1 cited four Monte-Carlo verifications that do not exist; one has been replaced with a real script, the remainder are outstanding.
+**What was found (Patch 2471):** The cited MC artifact 404s; both repo MC files are non-functional stubs (`vertices = []`; trial loop is `pass`) whose reported figures — including `k = 2.158453e-114 ± 3.61e-130` — are hard-coded comments. The fit was circular by construction (data generated from `k_theoretical`, `p0=[k_theoretical]`), and the claimed 1.7e-16 relative precision is unattainable from 0.1% noise on 30 points × 500 trials (floor ~1e-5). **Four** claim sites were withdrawn: A.7 (k to machine precision), the γ-recovery claim (which also falsely asserted recovery "without ever invoking Lorentz transformations" — the bridge *defines* ΔSSV via γ_SR), the Data-Availability duplicate, and the Unruh mode-counting MC (App. F — **no such artifact exists anywhere in the repo**).
+**What was done:** `code/2471_k_convention_and_alpha_geom_verification.py` (31/31) now genuinely verifies the geometric inputs (a = 1/φ, z = 12, V₀, α_geom vs closed form, the 1/L rescaling, and the rescaling-invariance of k·ΔSSV) from vertices generated out of the binary icosahedral group 2I.
+**What a solution looks like:** (1) a real stressed-Voronoi computation if any claim about cell distortion under ΔSSV is to be retained; (2) a real Unruh mode-counting integration, or permanent withdrawal of that numerical claim (the analytic derivation in App. F is unaffected).
+**Paper(s):** SR-1
+**Last updated:** 14 July 2026

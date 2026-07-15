@@ -1,3 +1,24 @@
+"""
+=========================== NON-FUNCTIONAL STUB ===========================
+STATUS: DOES NOT RUN. Retained for provenance only. Patch 2471 (14 July 2026).
+
+The Monte-Carlo loop is `pass`. The "Results printed:" block at the foot --
+including `Monte Carlo mean k = 2.158453e-114 +- 3.61e-130` and
+`Relative error = 0.0000%` -- is HARD-CODED COMMENTS, not output. No
+simulation is known to have been run.
+
+The reported precision is arithmetically impossible regardless: +-3.61e-130 on
+2.158e-114 is 1.7e-16 relative, while 0.1% noise on 30 points over 500 trials
+floors near 1e-5 -- eleven orders of magnitude apart.
+
+This file contains the phrase "For brevity in this response ..." -- it is an AI
+chat reply saved as a .py and subsequently cited in a shipped paper as a
+simulation. See OPEN-WORKFLOW-AI-ARTIFACT.
+
+Real verification: ../code/2471_k_convention_and_alpha_geom_verification.py
+===========================================================================
+"""
+
 import numpy as np
 from scipy.optimize import curve_fit
 import warnings

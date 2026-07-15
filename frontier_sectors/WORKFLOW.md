@@ -5,7 +5,7 @@
   Master dashboard: Research_Frontier.md
 -->
 
-## Workflow / Infrastructure (WORKFLOW) — 4 problems
+## Workflow / Infrastructure (WORKFLOW) — 5 problems
 
 ### OPEN-WORKFLOW-1: Consolidate All Bibliography Files
 **Status:** OPEN
@@ -453,3 +453,20 @@ latent risk into structural prevention:
 **Net:** the per-series consolidation can be safely deferred — new accretion is now gate-blocked,
 and the strong-series file confusion is cleared. Remaining per-series work unchanged (merge
 EW/QM/SD/GR/strong uniques + the 3 SR-1 dup self-keys), now de-risked by the 1158 classification.
+
+---
+
+### OPEN-WORKFLOW-AI-ARTIFACT: Distinguish Computed from Asserted in the Corpus
+**Status:** OPEN (NEW 14 July 2026, Patch 2471)
+**Sector(s):** Infrastructure / Epistemics
+**Priority:** HIGH
+**One-line statement:** AI-generated chat output is entering the corpus as executed artifact and being cited in shipped papers as numerical verification; nothing structurally distinguishes a stub from a simulation at read-time.
+**Evidence (three instances, one class):**
+1. `series_relativity/notebooks/600-cell-monte-carlo-k-fit.py` — trial loop is `pass`; results hard-coded in comments; contains the phrase *"For brevity **in this response** the full 120-point generator is included in the repo file"* — an AI chat reply saved as `.py`, then cited by SR-1 across four sites as a Monte-Carlo verification. The sibling file has an empty vertex list.
+2. `series_relativity/notebooks/600cell_k_alpha_geom_consistency_fix.py` — AI-authored March 2026, correctly diagnosed a real flagship defect, proposed a remedy, listed seven paper changes. **Never routed anywhere.** Sat unapplied four months. Also printed an unresolved objection to its own remedy (*"WAIT — this means 3Ā/V₀ is NOT dimensionless!"*) and proceeded regardless.
+3. `OPEN-SR-2` has recorded k as unresolved ("two inconsistent estimates") since ~23 March 2026 while the shipped SR-1 abstract claimed k derived from first principles. Registry and paper contradicted each other, uncaught.
+**Why it matters:** the failure mode is invisible at read-time — a stub and a simulation are indistinguishable in a citation. The reasoning-capture protocol captures *reasoning* but does not separate **computed** from **asserted**, and `notebooks/` has no path to the frontier. Patch 2471's defect was found only by an unrelated detour (DM → SF-6 inertia → A3′ source clause → Grid Resolution → k). It was luck, not process.
+**What a solution looks like:** (1) every numerical claim in a paper cites a script that is **executed in-container at patch time**, with its stdout captured into the patch (2471 is the first to comply); (2) a `publication_audit.sh` gate that FAILs on a cited script which is absent, non-executable, or whose data is generated from the quantity it fits (circularity check); (3) elision markers ("for brevity", "full version in repo", "…") as a blocking FAIL in any committed `.py`; (4) a routing rule that any `notebooks/` finding which contradicts a shipped claim must open a frontier item within the same session; (5) periodic registry-vs-abstract consistency sweep.
+**Tractability:** (3) is a grep; (1)–(2) are one focused infrastructure session; (5) needs a scripted diff of frontier status vs paper claims.
+**Paper(s):** None (infrastructure) — but SR-1 is the live casualty.
+**Last updated:** 14 July 2026

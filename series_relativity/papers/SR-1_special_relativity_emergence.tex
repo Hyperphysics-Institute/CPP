@@ -88,7 +88,7 @@ via Space Stress Vector (SSV) in the Dipole Sea}\\[6pt]
 
 
 \begin{abstract}
-Conscious Point Physics (CPP) derives special relativistic effects---time dilation, length contraction, and the twin paradox---from geometric constraints in a discrete 4D lattice based on the 600-cell polychoron. Kinetic energy stored as excess Space Stress Vector ($\Delta$SSV) reduces effective Voronoi cell volumes, shrinking the Planck Sphere Radius (PSR) and limiting displacement per absolute Moment. This produces relativistic phenomena as consequences of lattice saturation rather than postulated spacetime geometry. The framework reproduces standard SR at accessible energies while predicting deviations at accelerations $\gtrsim 10^{20}g$. We provide a first-principles derivation of the PSR formula and coupling constant $k \approx 2.16 \times 10^{-114}$ m$^3$/J from 600-cell packing geometry. Existing muon storage-ring data at accelerations of order $10^{18}g$ are fully consistent with CPP, constraining any deviation from the Planck-derived value of $k$ by a factor of $10^{16}$ and confirming that the framework survives all current experimental tests.
+Conscious Point Physics (CPP) derives special relativistic effects---time dilation, length contraction, and the twin paradox---from geometric constraints in a discrete 4D lattice based on the 600-cell polychoron. Kinetic energy stored as excess Space Stress Vector ($\Delta$SSV) reduces effective Voronoi cell volumes, shrinking the Planck Sphere Radius (PSR) and limiting displacement per absolute Moment. This produces relativistic phenomena as consequences of lattice saturation rather than postulated spacetime geometry. The framework reproduces standard SR at accessible energies while predicting deviations at accelerations $\gtrsim 10^{20}g$. We provide a first-principles derivation of the \emph{functional form} of the PSR formula from 600-cell packing geometry: Hooke-like response plus the exact saturation boundary condition fix $\text{PSR}_{\rm eff} = l_P/(1+k\cdot\Delta\text{SSV})$ as the unique lowest-order rational approximant. The coupling constant $k = l_P^3/E_P \approx 2.16 \times 10^{-114}$ m$^3$/J is \emph{not} an independent prediction: any rescaling $k \to \alpha k$ absorbed into the $\Delta$SSV normalisation leaves $k\cdot\Delta\text{SSV}$, and hence every observable, unchanged, so $k$'s numerical value records a normalisation convention rather than a derived quantity (Appendix~A.5, Step~3). Exact Lorentz equivalence follows from the energy-momentum bridge of Appendix~A.8.1, which is \emph{necessary}: the elimination theorem of Appendix~H.1 proves that no purely geometric displacement model recovers the required $v^2/c^2$ scaling. Existing muon storage-ring data at accelerations of order $10^{18}g$ are fully consistent with CPP, constraining any deviation from the Planck-derived value of $k$ by a factor of $10^{16}$ and confirming that the framework survives all current experimental tests.
 \end{abstract}
 
 \bigskip
@@ -202,15 +202,16 @@ These effects emerge naturally from geometric constraints rather than being post
 
 The CPP framework is empirically equivalent to standard special relativity at laboratory energies but makes clear, quantitative predictions that diverge at extreme accelerations. These predictions arise directly from the finite displacement budget per absolute Moment and can be tested with near-future technology.
 
-Table~\ref{tab:predictions} summarises all five predictions. Each arises from the single expression $\text{PSR}_{\rm eff} = l_P/(1+k\cdot\Delta\text{SSV})$ with no adjustable parameters; the coupling constant $k \approx 2.16\times10^{-114}$\,m$^3$/J is fixed entirely by the 600-cell geometry (Appendix~A.5).
+Table~\ref{tab:predictions} summarises all five predictions. Each arises from the single expression $\text{PSR}_{\rm eff} = l_P/(1+k\cdot\Delta\text{SSV})$ with no adjustable parameters. The 600-cell geometry fixes the \emph{functional form} of this expression (Appendix~A.5); the coupling constant $k \approx 2.16\times10^{-114}$\,m$^3$/J is a normalisation convention paired with the $\Delta$SSV definition of Appendix~A.8.1, and the predictions depend only on the product $k\cdot\Delta\text{SSV}$, which is invariant under a common rescaling of the pair (Appendix~A.5, Step~3).
 
 \begin{table}[H]
 \centering
 \caption{%
   \textbf{Summary of CPP falsifiable predictions.}
   All five predictions follow from $\text{PSR}_{\rm eff} = l_P/(1+k\cdot\Delta\text{SSV})$
-  with $k = l_P^3/E_P \approx 2.16\times10^{-114}$\,m$^3$/J fixed by
-  600-cell geometry. Fractional deviations scale linearly with acceleration
+  with $k = l_P^3/E_P \approx 2.16\times10^{-114}$\,m$^3$/J, the convention paired
+  with $\Delta\text{SSV} = E_{\rm kin}/l_P^3$; only the product $k\cdot\Delta\text{SSV}$
+  enters, and it is rescaling-invariant. Fractional deviations scale linearly with acceleration
   in the elastic-strain regime. ``Consistent'' means the predicted CPP
   deviation lies far below current experimental sensitivity; ``testable''
   means near-future technology could reach the relevant precision.
@@ -367,11 +368,11 @@ effective Voronoi cell volumes and contracts the Planck Sphere Radius, limiting
 displacement per absolute Moment. This single mechanism naturally produces time 
 dilation (fewer resonant cycles in stressed frames), length contraction, and the twin 
 paradox resolution through asymmetric stress accumulation along non-inertial paths. 
-The derivation is fully supported by analytic expressions for the PSR formula and 
-coupling constant $k \approx 2.158453 \times 10^{-114}$ m$^3$/J, a complete 4D 
-Voronoi Monte Carlo simulation over all 120 vertices confirming the theoretical value 
-to machine precision, and explicit clarification of the underlying 
-displacement-reduction process. The framework has been checked against existing muon 
+The derivation is supported by analytic expressions for the PSR formula and by a
+numerical verification over all 120 vertices (Appendix~A.7) that reproduces the
+600-cell geometric inputs ($a=1/\phi$, $z=12$, $V_0$, $\alpha_{\rm geom}$) and
+confirms the rescaling-invariance of $k\cdot\Delta\text{SSV}$, together with
+explicit clarification of the underlying displacement-reduction process. The framework has been checked against existing muon 
 storage-ring data at accelerations of order $10^{18}\,g$ \cite{bailey1977}, which are 
 fully consistent with CPP and confirm that the Planck-derived value of $k$ survives 
 all current experimental tests. The framework is empirically equivalent to standard SR 
@@ -713,52 +714,77 @@ The collapse condition is therefore purely geometric: it is the unique stress
 level at which one Planck energy fills the three-dimensional free volume of one 
 Voronoi insphere. No phenomenological fitting is involved.
 
-\textbf{Step 3: The dimensionless prefactor is exactly 1.}
-The Padé approximant derived in Appendix~E requires the low-stress linear 
-coefficient to be $\alpha = C / \text{SSV}_{\rm crit} = \alpha_{\rm geom} \approx 0.5594$ 
-(Appendix~E.2, Eq.~\ref{eq:C_result}). Inverting the saturation relation 
-$s(\varepsilon) = 1/(1 + \alpha\varepsilon)$ with 
+\textbf{Step 3: The prefactor is a normalisation convention, not a prediction.}
+The Pad\'{e} approximant derived in Appendix~E gives the low-stress linear
+coefficient $\alpha = C/\text{SSV}_{\rm crit} = \alpha_{\rm geom} \approx 0.5594$
+(Appendix~E.2, Eq.~\ref{eq:C_result}). Inverting the saturation relation
+$s(\varepsilon) = 1/(1+\alpha\varepsilon)$ with
 $\varepsilon = \Delta\text{SSV}/\text{SSV}_{\rm crit}$ gives
 \[
-\text{PSR}_{\rm eff} = \frac{l_P}{1 + (\alpha / \text{SSV}_{\rm crit}) \cdot \Delta\text{SSV}}
-= \frac{l_P}{1 + k \cdot \Delta\text{SSV}},
+\text{PSR}_{\rm eff} = \frac{l_P}{1 + (\alpha/\text{SSV}_{\rm crit})\cdot\Delta\text{SSV}}
+= \frac{l_P}{1 + k\cdot\Delta\text{SSV}},
+\qquad
+k \equiv \frac{\alpha}{\text{SSV}_{\rm crit}} = \frac{\alpha\,l_P^3}{E_P}.
 \]
-where
-\begin{equation}
-k \equiv \frac{\alpha_{\rm geom}}{\text{SSV}_{\rm crit}} 
-= \frac{\alpha_{\rm geom}\,l_P^3}{E_P} 
-\approx \frac{0.5594\,l_P^3}{E_P}.
-\label{eq:k_derived}
-\end{equation}
-This intermediate result carries the geometric prefactor $\alpha\_{\rm geom} \approx 0.5594$ from the 600-cell stiffness integral; it is resolved in the paragraph below.
-The geometric prefactor $\alpha_{\rm geom} \approx 0.5594$ from the
-600-cell stiffness integral does not appear in the physical coupling
-constant $k$, because dimensional analysis forces $k = l_P^3/E_P$
-with prefactor identically~1. The stiffness integral establishes that
-$\alpha_{\rm geom}$ is of order unity (confirming the Pad\'{e}
-coefficient is geometrically well-motivated) and fixes the functional
-form $s = 1/(1+\alpha\varepsilon)$; dimensional necessity then pins
-the exact numerical value of $k$. This is confirmed independently by
-the CPP collapse postulate of Step~2: $\text{SSV}_{\rm crit} =
-E_P/l_P^3$ gives $k = 1/\text{SSV}_{\rm crit} = l_P^3/E_P$
-directly. The coupling constant is therefore:
+Two facts about $\alpha$ must be stated plainly, because together they determine
+what this appendix can and cannot claim.
+
+\emph{First, $\alpha_{\rm geom}$ is not a pure number.} The stiffness ratio
+$C = 3\bar{A}/V_0$ carries dimensions of inverse length ($\bar{A}\sim L^2$,
+$V_0 \sim L^3$), so its numerical value tracks the coordinate scale. The value
+$0.5594$ holds in unit-\emph{circumradius} coordinates; in unit-\emph{insphere}
+coordinates --- the physical normalisation, in which $r_{\rm in} = l_P$ --- the
+same ratio is $\alpha_{\rm geom}/(\phi\sqrt{2}) \approx 0.2444$. The closed form
+$3(11+5\sqrt{5})\sqrt{5+\sqrt{5}}/320$ is exact \emph{relative to a choice of
+unit}, not absolutely.
+
+\emph{Second, and decisively, $\alpha$ cancels.} The energy-momentum bridge of
+Appendix~A.8.1 supplies $\Delta\text{SSV} = E_{\rm kin}/V_{\rm eff}$, and the
+same rescaling that sends $k \to \alpha k$ sends $V_{\rm eff} \to \alpha V_{\rm eff}$.
+Hence for \emph{any} $\alpha$,
+\[
+k\cdot\Delta\text{SSV}
+= \frac{\alpha\,l_P^3}{E_P}\cdot\frac{E_{\rm kin}}{\alpha\,l_P^3}
+= \frac{E_{\rm kin}}{E_P} = \gamma_{\rm SR}-1 ,
+\]
+so $\text{PSR}_{\rm eff}$, every prediction in Table~\ref{tab:predictions}, and the
+muon bound are all independent of the prefactor. The quantity $k$ is not
+separately observable; only the product $k\cdot\Delta\text{SSV}$ is.
+
+We therefore adopt the natural convention $\alpha = 1$, paired with
+$\Delta\text{SSV} = E_{\rm kin}/l_P^3$ and $\text{SSV}_{\rm crit} = E_P/l_P^3$
+(Step~2), giving
 \begin{equation}
 k = \frac{l_P^3}{E_P},
 \label{eq:k_final}
 \end{equation}
-with dimensionless prefactor identically equal to~1. This is not
-accidental: it is forced by dimensional analysis alone, which admits no
-other combination of Planck quantities with units $\text{m}^3/\text{J}$. Substituting Planck values 
-($l_P \approx 1.616 \times 10^{-35}$ m, $E_P \approx 1.956 \times 10^{9}$ J) 
-yields
+and, on substituting Planck values ($l_P \approx 1.616\times10^{-35}$~m,
+$E_P \approx 1.956\times10^{9}$~J),
 \begin{equation}
-k = \frac{l_P^3}{E_P} \approx 2.16 \times 10^{-114} \, \text{m}^3/\text{J},
+k = \frac{l_P^3}{E_P} \approx 2.16 \times 10^{-114} \, \text{m}^3/\text{J}.
 \label{eq:k_value}
 \end{equation}
-with no undetermined prefactor. The Monte Carlo simulation (Appendix~A.7) 
-recovers this value to machine precision, confirming that the geometric 
-cancellation holds numerically across all 120 Voronoi cells and 500 independent 
-trials. The Planck unit framework follows from Planck's original work 
+This is a \emph{convention}, adopted for its transparency, and $k$ and
+$\Delta\text{SSV}$ must always be used as a matched pair: combining $k$ from one
+normalisation with $\Delta\text{SSV}$ from another rescales $\gamma-1$ by $\alpha$
+and is a genuine error. What the 600-cell geometry does fix --- and this is the
+substantive content of Appendices~A.5 and~E --- is the \emph{functional form}
+$s = 1/(1+\alpha\varepsilon)$, as the unique lowest-order rational approximant
+consistent with Hooke-like low-stress response and the exact saturation boundary
+condition $s\to 0$ as $\varepsilon\to\infty$. Exact Lorentz equivalence is then
+supplied by the energy-momentum bridge (Appendix~A.8.1), which Appendix~H.1
+proves to be necessary rather than optional.
+
+\emph{Correction note (Patch 2471).} Earlier versions of this appendix asserted
+that ``dimensional analysis forces $k = l_P^3/E_P$ with prefactor identically~1.''
+That argument is withdrawn: dimensional analysis fixes the dimensions of a
+quantity and can never fix a dimensionless prefactor, and the supporting appeal
+to Step~2 was circular, since writing $k = 1/\text{SSV}_{\rm crit}$ already
+presupposes $\alpha = 1$. The correct statement is the one given above --- the
+prefactor is unobservable, so no argument is needed to remove it and none can
+establish it. The reasoning is recorded verbatim in
+\texttt{series\_relativity/reasoning/2471.md} and verified by
+\texttt{series\_relativity/code/2471\_k\_convention\_and\_alpha\_geom\_verification.py}. The Planck unit framework follows from Planck's original work 
 \cite{planck1900}.
 
 \subsection{Emergence of Relativistic Effects}
@@ -811,7 +837,35 @@ which has units of time as required ($k \cdot \langle\Delta\text{SSV}\rangle_{\r
 
 \subsection{Numerical Verification Note}
 
-The baseline $V_0$ and $r_{\text{in}}$ were verified against exact 600-cell metrics \cite{conway1988}. A full Monte Carlo simulation over the 600-cell honeycomb (all 120 vertices with proper 4D Voronoi tessellation via \texttt{scipy.spatial.Voronoi}) was performed across 500 independent trials with 0.1\% measurement noise. The simulation recovers the theoretical coupling constant $k = 2.158453 \times 10^{-114}$ m$^3$/J to machine precision (relative difference $< 10^{-14}$, limited only by double-precision floating-point arithmetic). This confirms the analytic prediction with no adjustable parameters. The complete Python code (numpy + quaternion vertex generation + scipy Voronoi + curve\_fit) is released on the GitHub repository at \url{https://github.com/tlabshier/CPP/blob/main/600-cell_special-relativity_emergence/600cell_monte_carlo_voronoi_k_fit.py}.
+The 600-cell geometric inputs are verified numerically by
+\texttt{series\_relativity/code/2471\_k\_convention\_and\_alpha\_geom\_verification.py}
+(31/31 checks), which generates the 120 vertices from the binary icosahedral group
+$2I$ and reproduces, from the generated set alone, the edge length $a = 1/\phi$, the
+uniform coordination $z = 12$, and $V_0 = 600\sqrt{2}/(12\phi^3) \approx 16.6925$; it
+further reproduces the stiffness ratio $\alpha_{\rm geom} = 3\bar{A}/V_0 \approx 0.5594$
+against its closed form, exhibits the $1/L$ rescaling of that ratio to
+$\approx 0.2444$ in insphere (Planck) units, and confirms that
+$k\cdot\Delta\text{SSV} = \gamma_{\rm SR}-1$ holds to machine precision under every
+prefactor convention while a \emph{mismatched} $(k,\Delta\text{SSV})$ pair rescales
+$\gamma-1$ by exactly $\alpha$. The script is in the repository at
+\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_relativity/code/2471_k_convention_and_alpha_geom_verification.py}.
+
+\emph{Retraction note (Patch 2471).} Earlier versions of this subsection reported that
+``a full Monte Carlo simulation over the 600-cell honeycomb \dots\ across 500
+independent trials with 0.1\% measurement noise \dots\ recovers the theoretical
+coupling constant $k = 2.158453 \times 10^{-114}$ m$^3$/J to machine precision
+(relative difference $< 10^{-14}$)'' and cited a script at
+\texttt{tlabshier/CPP}. That claim is \textbf{withdrawn}. The cited URL does not
+resolve; the two Monte-Carlo files in the repository
+(\texttt{series\_relativity/notebooks/600cell\_monte\_carlo\_voronoi\_k\_fit.py} and
+\texttt{600-cell-monte-carlo-k-fit.py}) are non-functional stubs --- the first has an
+empty vertex list, the second's trial loop is \texttt{pass} --- and the quoted figures
+appear only as hard-coded comments. The reported precision is in any case
+unattainable: $0.1\%$ noise on $30$ points over $500$ trials floors the relative
+uncertainty near $10^{-5}$, some eleven orders of magnitude above the claimed
+$10^{-14}$. Independently, the fit as written was circular, generating its data from
+\texttt{k\_theoretical} and recovering it. No such simulation is known to have been
+run, and the claim is replaced by the executable verification cited above.
 
 \subsection{Mapping of Geometric $\Delta$SSV to Kinematic Quantities and Recovery of the Lorentz Factor}
 
@@ -1109,7 +1163,7 @@ The effective Planck Sphere Radius is then
 {\rm PSR}_{\rm eff} = \frac{l_P}{1 + k \cdot \Delta{\rm SSV}_{\rm geom}} = \frac{l_P}{1 + \varepsilon_{\rm geom}}.
 \]
 
-Because the 600-cell packing enforces exact 4D volume conservation \(V_{\rm eff} \propto ({\rm PSR}_{\rm eff})^4\), the geometric Padé approximant gives $\varepsilon_{\rm geom} = f/(1-f) \approx f = v/c$ at low velocity using the naive coordinate fraction. The physically correct low-velocity expansion $\varepsilon_{\rm geom} \approx v^2/(2c^2)$ — matching $\gamma_{\rm SR} - 1$ — requires the effective displacement fraction $f_{\rm eff} = 1 - 1/\gamma_{\rm SR} \approx v^2/(2c^2)$ derived in Appendix~H.2. The geometric framework provides the correct functional form; the physical identification of $\Delta\text{SSV}$ with relativistic kinetic energy density (Appendix~A.8.1) supplies the correct input, and the two together recover SR exactly. Saturation at \(v \to c\) enforces the absolute speed limit. Full Monte-Carlo verification (500 independent trials, 0.1\,\% noise) recovers the standard relativistic dilation factor to machine precision at all laboratory velocities without ever invoking Lorentz transformations.
+Because the 600-cell packing enforces exact 4D volume conservation \(V_{\rm eff} \propto ({\rm PSR}_{\rm eff})^4\), the geometric Padé approximant gives $\varepsilon_{\rm geom} = f/(1-f) \approx f = v/c$ at low velocity using the naive coordinate fraction. The physically correct low-velocity expansion $\varepsilon_{\rm geom} \approx v^2/(2c^2)$ — matching $\gamma_{\rm SR} - 1$ — requires the effective displacement fraction $f_{\rm eff} = 1 - 1/\gamma_{\rm SR} \approx v^2/(2c^2)$ derived in Appendix~H.2. The geometric framework provides the correct functional form; the physical identification of $\Delta\text{SSV}$ with relativistic kinetic energy density (Appendix~A.8.1) supplies the correct input, and the two together recover SR exactly. Saturation at \(v \to c\) enforces the absolute speed limit. The verification script of Appendix~A.7 confirms that $\gamma_{\rm CPP} = \gamma_{\rm SR}$ holds to machine precision at all laboratory velocities and under every prefactor convention. This is an identity rather than an independent recovery: the energy-momentum bridge \emph{defines} $\Delta\text{SSV}$ in terms of $(\gamma_{\rm SR}-1)$, so $\gamma_{\rm SR}$ is an input to this step, not an output of it. Appendix~H.1 establishes that this input is unavoidable.
 
 This construction eliminates the last circularity: \(\Delta\)SSV is now a purely geometric property of how a moving ``cage'' partitions the fixed \(l_P\) budget inside overlapping Voronoi cells. 
 The Padé approximant is not a heuristic shortcut but the algebraically 
@@ -1734,7 +1788,7 @@ energy~\eqref{eq:E0_cutoff}, which is unsuppressed at the cutoff
 because it has no $e^{\hbar\omega/kT}$ denominator.
 
 
-At Planck-scale accelerations (\(\Delta\text{SSV} \gtrsim \text{SSV}_{\rm crit}\)) the spectrum saturates nonlinearly as \(\text{PSR}_{\rm eff} \to 0\), providing a sharp ultraviolet cutoff that is a genuine, testable deviation from the standard Unruh prediction. Full numerical integration of the stressed 600-cell mode-counting integral (Monte-Carlo over the 120 vertices) recovers the linear result to machine precision at laboratory accelerations and confirms the saturation behaviour at extreme stress.
+At Planck-scale accelerations (\(\Delta\text{SSV} \gtrsim \text{SSV}_{\rm crit}\)) the spectrum saturates nonlinearly as \(\text{PSR}_{\rm eff} \to 0\), providing a sharp ultraviolet cutoff that is a genuine, testable deviation from the standard Unruh prediction. The linear-regime result at laboratory accelerations and the saturation behaviour at extreme stress both follow analytically from the mode-counting derivation of Appendix~F. \emph{Correction note (Patch 2471):} an earlier version of this paragraph additionally reported that ``full numerical integration of the stressed 600-cell mode-counting integral (Monte-Carlo over the 120 vertices) recovers the linear result to machine precision''; that claim is \textbf{withdrawn}, as no such artifact exists in the repository and none is known to have been executed. The analytic derivation is unaffected; the numerical confirmation is registered as outstanding under \texttt{OPEN-SR-1-MC-VERIFY}.
 
 This derivation uses only the geometric machinery already established in Appendices~A–E and closes the Unruh prediction loop without additional postulates.
 
@@ -2428,13 +2482,19 @@ This paper presents a geometrically motivated derivation that reproduces standar
 \section{Data Availability}
 
 \begin{itemize}
-\item \textbf{Numerical verification}: A full 4D Voronoi Monte Carlo simulation over 
-the complete 600-cell honeycomb (all 120 vertices with proper tessellation via 
-\texttt{scipy.spatial.Voronoi}) confirms $k = 2.158453 \times 10^{-114}$ m$^3$/J to 
-machine precision (relative difference $< 10^{-14}$, limited only by double-precision 
-floating-point arithmetic) across 500 independent trials.
+\item \textbf{Numerical verification}: \texttt{series\_relativity/code/2471\_k\_convention\_and\_alpha\_geom\_verification.py}
+(31/31 checks) generates the 120 vertices of the 600-cell from the binary icosahedral
+group $2I$ and reproduces $a = 1/\phi$, $z = 12$, $V_0 \approx 16.6925$, and
+$\alpha_{\rm geom} \approx 0.5594$ against its closed form; it demonstrates the $1/L$
+rescaling of $\alpha_{\rm geom}$ and the rescaling-invariance of
+$k\cdot\Delta\text{SSV}$. Available at
+\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_relativity/code/2471_k_convention_and_alpha_geom_verification.py}.
 
-\item The complete Python code (\texttt{600cell\_monte\_carlo\_voronoi\_k\_fit.py}), including the velocity-projection and geometric-strain functions (\texttt{compute\_geometric\_strain()}), together with all Monte Carlo results, are available at the GitHub repository: \url{https://github.com/tlabshier/CPP/blob/main/600-cell_special-relativity_emergence}. Additional datasets will be deposited at the Open Science Framework upon final publication.
+\item \textbf{Withdrawn (Patch 2471)}: a previously listed Monte-Carlo confirmation of
+$k$ ``to machine precision'' across 500 trials, and its associated code link, have been
+retracted --- the cited artifact is a non-functional stub whose reported figures were
+hard-coded comments. See the retraction note in Appendix~A.7.
+
 \end{itemize}
 
 
