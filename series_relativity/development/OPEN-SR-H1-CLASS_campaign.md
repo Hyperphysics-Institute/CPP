@@ -1,8 +1,10 @@
 # OPEN-SR-H1-CLASS campaign — geometric half ANSWERED (continuum-conditional), mechanism half PRE-REGISTERED
 
-**Opened:** 15 July 2026, Patch 2482. **v1.1:** 15 July 2026, Patch 2484 — CONV-001 round-1
-returns folded (3 unique returns, all RATIFY-WITH-CHANGES; every required change adopted;
-slot attribution pending founder confirmation — two returns arrived as verbatim duplicates).
+**Opened:** 15 July 2026, Patch 2482. **v1.1:** Patch 2484 — first 4 slots folded.
+**v1.2:** 15 July 2026, Patch 2486 — DeepSeek return folded; **ROUND 1 COMPLETE: 5/5 slots,
+4 unique contents (Copilot verbatim-identical to Gemini, anomaly recorded, founder confirmed
+posting order), ALL RATIFY (with changes/calibration); every required change from every
+return adopted.**
 **Registry entry:** `frontier_sectors/SR.md` § OPEN-SR-H1-CLASS.
 **Verify script:** `series_relativity/code/2482_exclusion_family_exponents.py` (stdlib, all checks pass).
 **Status: geometric half YES, now explicitly CONTINUUM-CONDITIONAL (§2a); NOTHING promoted;
@@ -29,13 +31,15 @@ was examined before settling on this one, and the continuum 4-ball baseline was 
 from H.1's own Model-3 setup without independent justification. The panel is right that the
 contamination therefore extends to the choice of arena: a continuum ball yields clean
 polynomial fractional volumes of exactly the kind capable of matching (1−f²)²; the actual
-substrate cell is a flat-faced polytope. This is now a derivation obligation (M4), not a
-modeling convenience.
+substrate cell is a flat-faced polytope. Sharper still (DeepSeek): the family E_k(f) was
+chosen because it yields integer exponents n = k, making n = 2 appear naturally at
+codim-2 — the family selection, while systematic, was itself target-informed. This is now
+a derivation obligation (M4), not a modeling convenience.
 
 **1c (burden design — added at panel instruction).** The mechanism burden M1–M7 and kill
 conditions K1–K4 were designed AFTER the target was known. The panel must treat the burden
 as potentially biased toward selecting the codim-2 tube unless each element is
-independently justified — which is precisely why the burden has been made maximally
+independently justified — which is precisely why the burden (now M1–M9) has been made maximally
 demanding (every panel-proposed addition was adopted) and why K2 routes the eventual
 mechanism claim back through the panel.
 
@@ -90,11 +94,18 @@ object is the whole question.
 5. **Coordinate alignment.** The family privileges coordinate subspaces; a rotationally
    invariant ball does not. The mechanism must derive the plane coordinate-independently
    or show the postulates privilege the alignment (folded into M3).
+6. **Unstressed-arena-conditional (DeepSeek).** The identity uses the UNSTRESSED l_P as
+   both arena radius and exclusion-radius scale. For a pre-stressed aggregate
+   (background SSV ≠ 0, PSR_eff = l_P/g_bg < l_P) the two natural scalings fork:
+   exclusion radius d = (v/c)·PSR_eff (local) preserves γ at every background stress
+   with exactly multiplicative composition g_bg·γ(v); d = (v/c)·l_P (absolute) breaks
+   γ and lowers the local speed ceiling to c/g_bg. Demonstrated (not resolved) in
+   `code/2486_stressed_arena_fork.py`; resolution is mechanism obligation **M9**.
 
 ## 3. Mechanism phase — PRE-REGISTERED (no mechanism work has been done)
 
 **The question.** Does CPP's postulate set, for a uniformly moving CP aggregate, derive ALL
-of M1–M7:
+of M1–M9:
 
   **M1 (distinguished 2-plane, unique).** A distinguished 2-plane per moving aggregate —
   and the derivation must show it is the CANONICAL one: exactly one 2-plane is
@@ -106,9 +117,10 @@ of M1–M7:
   λ·d), derived; the identity must survive the SAME 4D→3D projection treatment as
   corrected SR-1, with explicit statements of (i) the τ-invariance decomposition used,
   (ii) how the distinguished plane interacts with the Absolute-Moment axis, (iii) how the
-  projection acts on the exclusion region; and the plane must be derived
-  coordinate-independently or the coordinate alignment shown postulate-privileged. No
-  bespoke re-projection.
+  projection acts on the exclusion region; (iv) explicit verification that the 4D tube
+  projects, under that same treatment, to a 3D structure still carrying exclusion scale
+  d = v·t_P (DeepSeek). The plane must be derived coordinate-independently or the
+  coordinate alignment shown postulate-privileged. No bespoke re-projection.
   **M4 (arena/polytope constraint — new, panel).** Derive from the postulates whether the
   displacement arena is the PSR insphere (ball exact by definition) or the full Voronoi
   polytope. If the polytope: compute the tube–polytope intersection exactly, including the
@@ -125,6 +137,21 @@ of M1–M7:
   ALL uniformly moving aggregates — any CP composition, internal ZBW structure or phasing,
   motion history, SSV environment. Reliance on a single-CP idealization or a cherry-picked
   special aggregate = fail.
+  **M8 (frame-consistency — new, DeepSeek, folded with a circularity caveat).** The plane
+  identification must be consistent under composition of motions as computed in the
+  absolute lattice frame: for aggregates in relative motion, the construction applied to
+  each must yield mutually consistent descriptions, with the observed relativity of
+  inertial frames emerging as an OUTPUT. Caveat, recorded so the requirement cannot be
+  gamed in reverse: demanding a priori Lorentz covariance of P → P′ would presuppose the
+  Lorentz group — the very structure under derivation — so M8 is stated lattice-natively;
+  a mechanism that IMPORTS covariance to satisfy M8 fails K3.
+  **M9 (stress-composition — new, DeepSeek).** Derive which radius the exclusion scales
+  with for a pre-stressed aggregate: (v/c)·PSR_eff (local — preserves γ, multiplicative
+  composition with the background factor) or (v/c)·l_P (absolute — breaks γ, ceiling
+  c/g_bg). The fork and its consequences are pinned in
+  `code/2486_stressed_arena_fork.py`; the answer must come forward from postulates. If
+  the derivation lands on the absolute branch, the identity fails for stressed
+  aggregates and K1 fires.
 
 **Candidate 2-planes (recorded for completeness; see K4 — no menu-shopping):**
   (a) the (ê_motion, τ̂) motion–time plane; (b) the ZBW rotation plane;
@@ -147,7 +174,7 @@ opens; the ratified choice is then binding under K4.**
 
 **Kill conditions (binding):**
   **K1 (no-selection kill).** If, within the founder-bounded effort (default: two focused
-  sessions), the committed candidate does not yield M1–M7 forward from postulates, the
+  sessions), the committed candidate does not yield M1–M9 forward from postulates, the
   campaign records **NEGATIVE-FOR-MECHANISM**: geometry admits γ; dynamics does not select
   it. OPEN-SR-H1-CLASS closes negative; OPEN-SR-EPSILON stays open; the H.1 successor
   graduates to a four-model Proposition (exponents {1, 1, 2, 5/2}) with the codim-2 member
@@ -165,13 +192,20 @@ opens; the ratified choice is then binding under K4.**
   postulates and even if γ is never mentioned. Test: would the step have been taken, in
   that form, by a derivation that did not know the target? Structures whose only
   distinguishing virtue is target-consistency fail this test.
+  **K3a (intermediate-principle launder + counterfactual test — new, DeepSeek).** Any
+  posited intermediate principle (a conservation law, minimization, or symmetry) not
+  previously established in CPP's corpus for moving aggregates, whose specific
+  functional form yields n = 2, counts as FITTING unless the principle itself is derived
+  forward from postulates. Operational counterfactual test, applied at every such step:
+  if the target were n = 3, would the same reasoning yield a different result? YES ⇒
+  forward derivation; NO (the reasoning bends to whatever target) ⇒ fitting.
   **K4 (single-candidate commitment — new, panel).** Mechanism work proceeds only on the
   §3a-ratified candidate. Evaluating other candidates — including "quick checks" — is
   menu-shopping and voids the round. If the committed candidate fails, K1 fires; a
   DIFFERENT candidate may be opened only as a NEW pre-registered round, with panel
   consent, carrying the full negative record of the failed round in the package.
 
-**Success criterion.** M1–M7 derived forward on the committed candidate, K3/K3′-clean,
+**Success criterion.** M1–M9 derived forward on the committed candidate, K3/K3′-clean,
 panel-ratified (K2) ⇒ candidate closure of OPEN-SR-EPSILON and restoration, in corrected
 form, of the claim the 2471–2475 triage withdrew. The all-orders identity means leading
 order, coefficient, and the full curve come together or not at all — subject to M4's arena
@@ -179,11 +213,20 @@ determination.
 
 **Failure asymmetry (stated so the incentive is visible):** the success branch is the
 programme's largest single result; the kill branch is a clean negative that still upgrades
-H.1's successor. Both publishable. No branch on which fudging M1–M7 helps.
+H.1's successor. Both publishable. No branch on which fudging M1–M9 helps.
 
-## 4. Panel round-1 record (v1.1)
+## 4. Panel round-1 record (v1.2 — ROUND COMPLETE)
 
-Three unique returns, all RATIFY-WITH-CHANGES (one styled MANDATORY). Every required
+**5/5 slots returned; 4 unique contents; ALL RATIFY.** ChatGPT RATIFY-WITH-CHANGES ·
+Grok RATIFY-WITH-MANDATORY-CHANGES · Gemini RATIFY-WITH-CHANGES · Copilot
+(verbatim-identical to Gemini; anomaly recorded) · DeepSeek CONFIRM-WITH-CALIBRATION.
+Verbatim returns: `series_relativity/development/review_h1class_prereg_round1/`.
+DeepSeek fold (v1.2, Patch 2486): §1b family-selection sharpening; §2a condition 6 + M9
+(the stressed-arena fork, demonstrated in `code/2486_stressed_arena_fork.py`); M8
+frame-consistency (folded lattice-natively with the covariance-circularity caveat); M3
+sub-check (iv); K3a intermediate-principle clause + the n = 3 counterfactual test.
+Earlier v1.1 fold — three unique returns, all RATIFY-WITH-CHANGES (one styled MANDATORY).
+Every required
 change adopted: §1b/§1c disclosure augmentations; §2a scope conditions 1–5 (incl. the
 polytope/continuum finding, sharpened here to the leading coefficient, and the
 strain-rule conditionality); M1 uniqueness; M3 tightening; M4–M7 added; K3′ added; K4
@@ -194,10 +237,13 @@ by content. Remaining slots, if any, fold into a v1.2 on arrival.
 
 ## 5. Immediate next actions
 
-1. Founder confirms slot attribution and whether further returns are expected.
-2. Founder ratifies or replaces the §3a single-candidate commitment.
-3. Mechanism session opens (fresh context, warm keyword SR-MECH-2485) against this v1.1,
-   K4-bound, with the verify battery extended per M4 (arena determination first — it is
-   the cheapest kill: if the arena is the polytope and the leading coefficient misses 2,
-   the campaign dies before any plane derivation).
+1. ~~Slot attribution~~ CONFIRMED (posting order); ~~remaining returns~~ ROUND COMPLETE.
+2. **Founder ratifies or replaces the §3a single-candidate commitment** — the sole
+   remaining gate.
+3. Mechanism session opens (fresh context, warm keyword SR-MECH-2485) against this v1.2,
+   K4-bound. Order: **M4 arena determination first** (cheapest kill, K4-safe: if the
+   arena is the polytope and the leading coefficient misses 2, the campaign dies before
+   any plane derivation), **M9 stress-scaling second** (second-cheapest kill: the
+   absolute branch kills for stressed aggregates), then the committed candidate against
+   the full M1–M9 burden with K3/K3′/K3a logged per step.
 4. Any mechanism claim returns to the panel with this file (K2).
