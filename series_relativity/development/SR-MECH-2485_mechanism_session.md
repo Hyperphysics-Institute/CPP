@@ -213,5 +213,211 @@ distinguished 2-plane). This is the heavy half of the session; K1's effort clock
 
 ---
 
-*(M1 entry to follow as the session's step 3.)*
+## Step 3 — M1: canonical uniqueness of the distinguished 2-plane (Patch 2491)
+
+**Session note:** this step opens session 2 of the K1 effort clock (fresh context,
+warm keyword SR-MECH-2490). K4-binding: all work below is on the ratified candidate
+(a), the (ê_motion, τ̂) plane; no other campaign candidate is constructed or tested.
+
+### Verdict
+
+**Exactly one 2-plane is postulate-distinguished for a uniformly moving aggregate:
+Π = span(τ̂, ê_motion) — the committed candidate (a) — and it is canonical: it is
+the span of the postulate-available data itself, not a selection among
+alternatives.** The uniqueness argument runs over the space of ALL k-planes
+(k = 1, 2, 3) on postulate criteria alone; k = 2 emerges as the unique dimension at
+which the invariant candidate set is even finite (two members: Π and its
+orthocomplement P⊥), and Π is the unique member containing any of the data. At
+v = 0 no 2-plane is distinguished, consistently with d = v·t_P = 0. Status:
+**M1 PASSED at session level, subject to K2**, with two scope caveats and one
+orientation caveat logged below.
+
+### The derivation (forward; every input pre-dates the target)
+
+**(i) Inventory: what the postulates make available for a uniformly moving
+aggregate.** The distinguishing data — the structure that separates the moving
+aggregate from the same aggregate at rest — is exhaustively:
+
+- **τ̂ — the Absolute Moment axis.** c01 (Absolute Moment postulate, pre-target):
+  "every CP advances exactly l_P in the timelike direction once per universal tick
+  t_P = l_P/c, frame-independently and independent of local Voronoi-cell stress."
+  One universal timelike direction, the same for every CP and every aggregate.
+  SR-1 (§3D-projection): the four coordinates are (**x**, τ) with τ = c·t_P "fixed
+  and universal," the two subspaces "orthogonal by construction." A3′ carries the
+  same structure ("At every Absolute Moment… in the absolute (Nexus) frame").
+- **ê_motion — the absolute velocity direction.** The scenario's own
+  specification: uniform motion = constant absolute velocity v = v·ê_motion; for
+  v ≠ 0 this supplies exactly one unit spatial direction. This is the ONLY datum
+  that motion adds.
+- **The per-Moment displacement 4-vector.** Δ = c·t_P·τ̂ + v·t_P·ê_motion: the
+  temporal part is c01's mandatory universal advance; the spatial part is the
+  kinematic drift d = v·t_P already established forward at step 2(i) (Patch 2489:
+  "no postulate rescales a coordinate drift distance"). Δ lies in span(τ̂,
+  ê_motion) identically, with zero component elsewhere.
+- **The arena and its symmetry.** M4 (step 1): the displacement arena is the PSR
+  insphere — a round ball. A3′ C2 (flat isotropic per-hop transport) plus the ball
+  verdict means the per-Moment displacement problem carries the arena's continuous
+  spatial isotropy: SO(3) rotations about the aggregate, with τ̂ fixed (c01/SR-1:
+  the Moment axis is a separate universal register, not mixable with space by any
+  lattice operation). The arena contributes NO directional structure of its own.
+- **What is NOT in the inventory.** (1) Internal aggregate structure (ZBW plane,
+  composition, phasing): aggregate-particular and not motion-sourced — it persists
+  unchanged at v = 0, where the drift d = 0. Recorded as an inventory fact, NOT as
+  an evaluation of campaign candidates (b)/(c) — K4 intact. (2) The GP lattice's
+  discrete orientation: excluded from per-Moment displacement kinematics on the
+  same grounds M4 established (reach = ball; the polytope never binds; A3′ C2's
+  flat isotropic c). Caveat 1 below states this against interest.
+
+**(ii) The construction.** For v ≠ 0 the data {τ̂, ê_motion} spans exactly one
+2-plane: **Π = span(τ̂, ê_motion) = span(τ̂, Δ)** — the plane the obligatory
+per-Moment displacement lies in. No coefficient, no choice, no menu: Π is the span
+of the data itself.
+
+**(iii) Uniqueness: enumeration over ALL subspaces.** Definition (the standing
+meaning of "postulate-distinguished, not chosen by hand," with corpus precedent in
+the equivariance-at-construction condition of METH-CHIR-CONT-2, methods catalogue,
+chirality sector, pre-target): a subspace is postulate-distinguished iff it is
+(a) constructible from the inventory in (i) and postulate scalars alone, and
+(b) invariant under the stabilizer of the data inside the arena's symmetry group —
+otherwise its specification requires structure the postulates do not supply, which
+is precisely a hand choice. The stabilizer of {τ̂, ê_motion} is SO(2), rotations
+about ê_motion, acting as the identity on Π and as rotation on the spatial
+orthocomplement plane P⊥. Under this SO(2), ℝ⁴ = span(τ̂) ⊕ span(ê_motion) ⊕ P⊥ =
+trivial ⊕ trivial ⊕ rotation-rep. Enumerating invariant k-planes for EVERY
+k ∈ {1, 2, 3} — the dimension is an output, not an input:
+
+- **k = 1:** every line in Π is invariant (SO(2) acts trivially there), and a
+  continuum of them is constructible — span(τ̂), span(ê_motion), span(Δ),
+  span(c·τ̂ − v·ê_motion), … **No unique distinguished line exists.** (V3)
+- **k = 3:** the orthocomplements of that continuum — τ̂⊥, ê_motion⊥, Δ⊥, … **No
+  unique distinguished 3-space exists.** (V3)
+- **k = 2:** an invariant 2-plane must decompose into invariant summands of the
+  rep: it is the trivial² summand Π, or the rotation summand P⊥, or a (line in Π)
+  ⊕ (invariant line in P⊥) — and at generic rotation angle P⊥ has no invariant
+  lines. **Exactly two invariant 2-planes exist: Π and P⊥.** (V1, V2)
+
+So k = 2 is the unique dimension at which the invariant set is finite — and of the
+two members, exactly one contains any of the data: τ̂, ê_motion, Δ ∈ Π; the
+P⊥-projection of every datum is identically zero (V6). P⊥ is distinguished only
+negatively, as the plane the data avoids (equivalently, as Π's orthocomplement).
+**The unique positively-distinguished 2-plane is Π — candidate (a).** Purely
+spatial planes through ê_motion, planes containing τ̂ and a transverse direction,
+and every other 2-plane fail invariance and are excluded automatically by the
+enumeration — the argument never consults the campaign's candidate menu.
+
+**(iv) The v → 0 limit (pre-logged risk zone ii).** At rest, ê_motion is
+undefined; the inventory reduces to {τ̂}; the stabilizer grows to the full spatial
+SO(3); ℝ⁴ = trivial(τ̂) ⊕ vector(3), and the 3D vector rep is irreducible over ℝ —
+**no invariant 2-plane exists at all** (V4; only span(τ̂) at k = 1 and the spatial
+3-space at k = 3 survive). The distinguished plane ceases to exist exactly where
+the exclusion scale d = v·t_P vanishes: nothing is left needing it. Consistency,
+not a patch. (As v → 0⁺ the plane Π depends on the limiting direction of ê_motion
+and has no continuous limit — but its physical payload, the exclusion of radius
+d = v·t_P → 0, converges to the empty exclusion along every direction sequence;
+the directional discontinuity is unobservable. The quantitative version belongs to
+M2/M3.)
+
+**(v) Counterfactual (kill-liveness) — the broken branch kept.** The finiteness of
+the invariant set — hence the uniqueness — is carried by the arena symmetry being
+the CONTINUOUS SO(2). Had the residual symmetry about ê_motion been discrete —
+e.g., C₂ = {1, R(π)}, the generic surviving element if the lattice's point-group
+orientation participated in displacement kinematics — then R(π) = −1 on P⊥ fixes
+every line of P⊥, and the entire two-parameter mixed family (line in Π) ⊕ (line in
+P⊥) becomes invariant: a continuum of "distinguished" 2-planes; **uniqueness dies**
+(V5, machine-verified). For fully generic ê_motion the discrete stabilizer is
+trivial and the invariance constraint evaporates altogether. M1's uniqueness
+therefore rides on A3′ C2 + M4's ball verdict — the same load-bearing structure,
+and the same failure mode, M4 already put on record. Had the postulates given the
+polytope's discrete symmetry to the displacement problem, M1 would have died at
+this step. The kill was live. Secondary data counterfactual (qualitative): without
+c01's universal τ̂ (per-CP local ticks), Π's second spanning vector does not exist
+and no 2-plane containing the drift is constructible at all — M1 fails for want of
+data. Verify: `series_relativity/code/2491_m1_plane_uniqueness.py` (stdlib, fixed
+seed 2491, V1–V6, ALL PASS).
+
+### K3 / K3′ / K3a log for this step
+
+- **K3 (explicit target invocation):** none. No step invokes n = 2, γ,
+  coefficient 1, or (1−f²)². The enumeration runs over all k ∈ {1, 2, 3}; the
+  target's dimensionality is compared against only AFTER the enumeration returns
+  its answer. CLEAN.
+- **K3′ ("would the step have been taken, in that form, by a derivation that did
+  not know the target?"):** two load-bearing selections. (1) The distinguishedness
+  criterion (constructible + stabilizer-invariant): this is what "not chosen by
+  hand" means, and equivariance-imposed-at-construction is corpus method a sector
+  away, pre-target (METH-CHIR-CONT-2). A target-ignorant derivation asked "which
+  subspaces do the postulates single out for a moving aggregate" formulates
+  exactly this and enumerates exactly these reps. (2) The positive/negative
+  discrimination between Π and P⊥ by data-containment: the question M1 answers is
+  "which plane does the MOTION distinguish," and the motion's entire geometric
+  content is Δ; the plane Δ distinguishes is its span (with the universal τ̂), in
+  the same sense a vector distinguishes its span and not its orthocomplement.
+  Fitting pressure was highest here — the tube wants Π — so the honest fallback is
+  logged as caveat 2 rather than argued away. Pre-logged risk zone (i)
+  (privileging the drift-spanned plane BECAUSE the tube needs it) is discharged
+  structurally: the enumeration ran over the full Grassmannian at every dimension,
+  and Π's selection criterion (span of the data) is stated without reference to
+  what any exclusion geometry needs. CLEAN, with caveat 2 shipping to the panel.
+- **K3a (intermediate-principle launder + n = 3 counterfactual):** no new physical
+  principle is posited. Inputs: c01 (τ̂, 2025-era), A3′ C2 (June 2026, GR sector),
+  SR-1's τ-orthogonality (Patch-0736 era), M4 and d = v·t_P (this campaign, steps
+  1–2, forward), equivariance-at-construction (chirality sector, pre-target).
+  Counterfactual test: were the target n = 3 — needing a unique distinguished
+  3-space — the identical inventory and enumeration return "k = 3 carries a
+  continuum; no unique 3-space exists" and the campaign dies at M1. The reasoning
+  cannot bend to an n = 3 target; it would KILL under one. This is the strongest
+  form of the test: the same argument is target-lethal under the counterfactual
+  target. PASS.
+
+### Caveats logged for the K2 panel (stated against interest)
+
+1. **Lattice-orientation scope (shared with M4's caveat — ships together).** The
+   finiteness of the invariant set requires the per-Moment displacement problem to
+   carry the arena's continuous isotropy (A3′ C2 + M4), with the GP lattice's
+   discrete orientation not participating. If the panel judges the lattice
+   orientation postulate-available to displacement kinematics, the stabilizer is
+   generically trivial (or C₂), V5's continuum appears, and M1's uniqueness fails
+   as derived. This is the same scope question M4 logged, now with a second,
+   sharper consequence attached.
+2. **Π vs P⊥ orientation.** {Π, P⊥} is one geometric datum (an orthogonal
+   splitting). The selection of Π within the pair rests on the positivity
+   criterion (the data spans Π and avoids P⊥). If the panel finds that criterion
+   insufficiently postulate-grounded, M1 delivers "unique distinguished splitting"
+   rather than "unique plane," and the orientation transfers to M2's burden —
+   where the exclusion rule's derivation must show the obligatory drift prices
+   Π-budget (its own support) and not P⊥-budget. Nothing downstream changes if M2
+   carries it; the accounting of where the orientation is established should be
+   honest.
+3. **Distinguishedness as methodological definition.** The
+   constructible-plus-invariant criterion is the standing corpus meaning of "no
+   hand choice" (METH-CHIR-CONT-2 precedent) but is itself a methodological
+   definition, not an axiom. Recorded so the panel may reject or sharpen it.
+
+### Interlocks noted forward (pre-logged risk zone iii)
+
+- **M2:** the stabilizer machinery transfers directly — any postulate-derived
+  exclusion region must be SO(2)-invariant about ê_motion, which is exactly M2's
+  "full symmetric neighborhood, not a half, sector, or weighted variant"
+  requirement. M2 should derive the rule and then check SO(2)-invariance as a
+  consistency output, not impose it.
+- **M3(ii)/(iv):** τ̂ ∈ Π by construction; SR-1's τ-invariance decomposition
+  (R²₄D = r²₃D + τ²) applies with Π ∩ τ̂⊥ = span(ê_motion), so the 4D→3D
+  projection of the Π-projection condition is the object M3(iv) must track — the
+  projection treatment must preserve d = v·t_P. Nothing here prejudges it.
+- **M7:** the derivation used zero internal structure — inventory (i) is
+  aggregate-independent by construction, which is the backbone the ratified §3a
+  rationale anticipated. M7's residual burden is that the EXCLUSION RULE (M2/M6)
+  also uses none.
+
+### Step outcome
+
+M1 **PASSED at session level, subject to K2** (nothing promoted; the eventual
+mechanism claim carries this step's caveats in the panel package). Next per the
+burden: **M2 — the exclusion rule** (forbidden targets are exactly those whose
+projection onto the distinguished pair is ≤ d, full symmetric neighborhood,
+derived from single-CP rules — interlocking with M6's micro-to-macro bridge).
+
+---
+
+*(M2 entry to follow as the session's step 4.)*
 

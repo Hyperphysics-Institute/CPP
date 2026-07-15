@@ -266,4 +266,21 @@ by content. Remaining slots, if any, fold into a v1.2 on arrival.
    scope, v_loc convention caveats logged in the session file). Verify:
    `../code/2489_m9_stress_scaling.py` (V1–V5 ALL PASS). Session step 3 = the
    committed candidate (a) against the full burden, starting M1.
+   **→ M1 PASSED at session level, subject to K2 (Patch 2491, session 2 of the
+   K1 clock):** exactly one 2-plane is postulate-distinguished for a uniformly
+   moving aggregate — Π = span(τ̂, ê_motion), candidate (a), canonical as the
+   span of the data itself. Uniqueness by enumeration over ALL k-planes on
+   postulate criteria (constructible + stabilizer-invariant, METH-CHIR-CONT-2
+   precedent): k = 1 and k = 3 carry constructible continua (no unique object);
+   k = 2 admits exactly two invariant planes {Π, P⊥}, of which only Π contains
+   any data. v → 0: stabilizer grows to SO(3), NO invariant 2-plane exists,
+   consistent with d = v·t_P = 0. Counterfactual live: a discrete (C₂/trivial)
+   stabilizer — the lattice-orientation-participates branch — yields a CONTINUUM
+   of invariant planes and kills M1 (machine-verified, kept as V5). Three
+   caveats to K2: lattice-orientation scope (shared with M4's caveat); Π-vs-P⊥
+   orientation (fallback: unique splitting, orientation transfers to M2);
+   distinguishedness-criterion status. Full derivation + K3/K3′/K3a log:
+   `SR-MECH-2485_mechanism_session.md` step 3; verify:
+   `../code/2491_m1_plane_uniqueness.py` (V1–V6 ALL PASS). Session step 4 = M2
+   (exclusion rule).
 4. Any mechanism claim returns to the panel with this file (K2).
