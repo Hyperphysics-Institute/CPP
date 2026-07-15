@@ -1,118 +1,203 @@
-# OPEN-SR-H1-CLASS campaign — geometric half ANSWERED, mechanism half PRE-REGISTERED
+# OPEN-SR-H1-CLASS campaign — geometric half ANSWERED (continuum-conditional), mechanism half PRE-REGISTERED
 
-**Opened:** 15 July 2026, Patch 2482 (session AUDIT-WARM-2476 continuation).
+**Opened:** 15 July 2026, Patch 2482. **v1.1:** 15 July 2026, Patch 2484 — CONV-001 round-1
+returns folded (3 unique returns, all RATIFY-WITH-CHANGES; every required change adopted;
+slot attribution pending founder confirmation — two returns arrived as verbatim duplicates).
 **Registry entry:** `frontier_sectors/SR.md` § OPEN-SR-H1-CLASS.
 **Verify script:** `series_relativity/code/2482_exclusion_family_exponents.py` (stdlib, all checks pass).
-**Status at open: the geometric question is answered YES; NOTHING is promoted; the mechanism
-question is pre-registered below with kill conditions and goes to the founder and CONV-001
-before any further step.**
+**Status: geometric half YES, now explicitly CONTINUUM-CONDITIONAL (§2a); NOTHING promoted;
+mechanism phase pre-registered below (M1–M7, K1–K4) and gated on founder ratification of the
+single-candidate commitment (§3a).**
 
 ---
 
-## 1. Disclosure (G7 — read first)
+## 1. Disclosure (G7 — read first) [v1.1: augmented per panel A-findings]
 
 The handover warned: "the pull toward 'find the f² geometry and win the flagship back' is
 precisely the pressure that produced the k defect." The following disclosure exists because
-of that warning. While designing the enumeration frame — before any mechanism work, and
-before this file was written — the enumerating instance observed that the systematic family
+of that warning.
+
+**1a (enumeration order).** While designing the enumeration frame — before any mechanism
+work, and before this file was written — the enumerating instance observed that the family
 "f-neighborhoods of central loci" makes the exponent trivially equal to the codimension,
-and therefore that the codim-2 member hits n = 2. The observation could not be un-seen, so
-it is disclosed rather than laundered: **the geometric result below was found by systematic
-enumeration, but the enumerator knew the target while enumerating.** Consequently the
-geometric result is billed only as what it provably is (§2), and the entire discriminating
-burden is placed on the mechanism phase (§3), which is pre-registered here BEFORE any
-mechanism work has been attempted, with kill conditions that do not reference the target's
-desirability.
+and therefore that the codim-2 member hits n = 2. The observation could not be un-seen:
+**the geometric result was found by systematic enumeration, but the enumerator knew the
+target while enumerating.**
+
+**1b (family choice — added at panel instruction).** No other comparably systematic family
+was examined before settling on this one, and the continuum 4-ball baseline was adopted
+from H.1's own Model-3 setup without independent justification. The panel is right that the
+contamination therefore extends to the choice of arena: a continuum ball yields clean
+polynomial fractional volumes of exactly the kind capable of matching (1−f²)²; the actual
+substrate cell is a flat-faced polytope. This is now a derivation obligation (M4), not a
+modeling convenience.
+
+**1c (burden design — added at panel instruction).** The mechanism burden M1–M7 and kill
+conditions K1–K4 were designed AFTER the target was known. The panel must treat the burden
+as potentially biased toward selecting the codim-2 tube unless each element is
+independently justified — which is precisely why the burden has been made maximally
+demanding (every panel-proposed addition was adopted) and why K2 routes the eventual
+mechanism claim back through the panel.
 
 ## 2. The geometric result (verified, C1–C3 in the script)
 
 **Family.** Regions of the round 4-ball (radius l_P) of the form
-E_k(f) = {x : |P_k x| ≤ f·l_P}, where P_k projects onto k of the 4 coordinates — i.e., the
-f-neighborhood of a central locus of codimension k. This family is systematic and
-exhaustive over central-subspace neighborhoods: k = 1 (slab about a hyperplane), k = 2
-(tube about a 2-plane), k = 3 (tube about an axis), k = 4 (ball about the center).
+E_k(f) = {x : |P_k x| ≤ f·l_P}, where P_k projects onto k of the 4 coordinates — the
+f-neighborhood of a central locus of codimension k: k = 1 slab, k = 2 tube-about-2-plane,
+k = 3 tube-about-axis, k = 4 central ball.
 
-**C1 (exponent law).** The small-f volume exponent equals the codimension: n = k, for
-k ∈ {1,2,3,4}. Verified by closed forms and fixed-seed MC. Hence **codim-2 is the unique
-member with n = 2**, and H.1's prior models slot in as: Model 1/2 → n = 1 structures,
-Model 3 (boundary-anchored cap) → n = 5/2. The corrected H.1 exponent set {1, 1, 5/2}
-brackets 2 exactly as the reopening predicted.
+**C1 (exponent law).** Small-f volume exponent = codimension: n = k for k ∈ {1,2,3,4}
+(closed forms + fixed-seed MC). **Codim-2 is the unique n = 2 member of this family.**
+H.1's prior models slot in as n = 1 structures (Models 1/2) and the boundary-anchored cap
+n = 5/2 (Model 3). The corrected exponent set {1, 1, 5/2} brackets 2 as the reopening
+predicted.
 
-**C2 (the identity — the reason this file exists).** The codim-2 tube of radius exactly
-d = f·l_P has exact fractional volume V_excl/V₀ = 2f² − f⁴ = 1 − (1−f²)², hence
-V_free/V₀ = (1−f²)². Under SR-1's own strain rule (V ∝ r⁴, ε = l_P/r − 1):
+**C2 (the identity).** The codim-2 tube of radius exactly d = f·l_P has exact fractional
+volume V_excl/V₀ = 2f² − f⁴ = 1 − (1−f²)², hence V_free/V₀ = (1−f²)². Under SR-1's strain
+rule (V ∝ r⁴, ε = l_P/r − 1):
 
     ε(f) = (V_free/V₀)^(−1/4) − 1 = (1 − f²)^(−1/2) − 1 = γ_SR(f) − 1
 
-**exactly, at all orders in f = v/c**, machine-precision verified over f = 0.01–0.99. Three
-features are individually nontrivial: (i) n = 2 is unique in the family; (ii) the
-coefficient is exactly ½ with the radius set to the displacement magnitude d itself —
-nothing else; (iii) every higher-order term matches γ automatically (the tube's −f⁴ is
-precisely what the fourth root requires). A generic n = 2 profile fails (iii).
+exactly, at all orders in f — **in the continuum-ball model** (see §2a) — machine-precision
+verified over f = 0.01–0.99. Three features are individually nontrivial within that model:
+(i) n = 2 unique in the family; (ii) coefficient exactly ½ with radius = the displacement
+magnitude d itself; (iii) every higher-order term matches γ automatically (the tube's −f⁴
+is precisely what the fourth root requires; a generic n = 2 profile fails this).
 
-**What C2 is NOT.** It is a geometric identity, not a derivation of γ. Given the strain
-rule, the volume profile (1−f²)² that yields γ exists by inverse construction; what C2
-adds is that this profile is realized by a *natural geometric object* (a codim-2
-neighborhood at radius d) rather than an arbitrary function. Whether CPP **selects** that
-object is the open question, and it is the whole question.
+**What C2 is NOT.** A derivation of γ. The profile (1−f²)² exists by inverse construction;
+C2 adds that it is realized by a natural geometric object. Whether CPP **selects** that
+object is the whole question.
+
+### 2a. Scope conditions (v1.1 — panel D-findings, all adopted)
+
+1. **Continuum-conditional.** The identity is exact for the round 4-ball. The substrate's
+   actual Voronoi cell is a polytope bounded by flat faces (12-neighbor coordination). For
+   a polytope arena the tube–cell intersection is piecewise-polynomial, and — sharpening
+   the panel's point — the correction enters at LEADING order: the f² coefficient equals
+   π·A₂·l_P²/V_cell (A₂ = central 2-section area), which equals the required 2 only for
+   the ball. Countervailing substrate fact, to be settled not chosen: the PSR is by
+   definition a *sphere* radius — if the displacement arena is the PSR insphere
+   (isotropic budget), the ball is exact by definition and no polytope correction arises.
+   Which arena the postulates give is derivation obligation **M4**.
+2. **Strain-rule-conditional.** The identity holds under SR-1's V ∝ r⁴ / ε = l_P/r − 1
+   constitutive rule, which is a minimal ansatz (per the corrected SR-1 abstract), not a
+   geometric necessity. Any modification breaks the exact match.
+3. **Not a classification theorem.** Geometries outside the family (non-axis-aligned or
+   anisotropic tubes, curved loci, weighted projections, unions) can also produce n = 2.
+   The claim is existence-of-a-natural-object, not n = 2 ⇒ codim-2 tube.
+4. **Coefficient-conditional.** Radius λ·d with λ ≠ 1 collapses the identity; λ = 1 must
+   be DERIVED (M5 bans absorbing any constant to rescue it).
+5. **Coordinate alignment.** The family privileges coordinate subspaces; a rotationally
+   invariant ball does not. The mechanism must derive the plane coordinate-independently
+   or show the postulates privilege the alignment (folded into M3).
 
 ## 3. Mechanism phase — PRE-REGISTERED (no mechanism work has been done)
 
-**The question.** Does CPP's postulate set, for a uniformly moving CP aggregate, derive all
-three of:
-  (M1) a distinguished 2-plane (equivalently, a distinguished orthogonal pair of
-       directions) — per moving aggregate, universally;
-  (M2) the exclusion rule: forbidden displacement targets are exactly those whose
-       projection onto the distinguished pair is ≤ the obligatory displacement scale
-       (the full symmetric neighborhood — not a half, not a sector);
-  (M3) the radius exactly d = v·t_P at leading order (coefficient 1, not λ·d) —
-       and the identity must then survive the SAME 4D→3D projection treatment used in
-       corrected SR-1 (the τ-invariance decomposition), with no bespoke re-projection.
+**The question.** Does CPP's postulate set, for a uniformly moving CP aggregate, derive ALL
+of M1–M7:
 
-**Candidate 2-planes to evaluate (listed WITHOUT evaluation; order is not a ranking):**
-  (a) the (ê_motion, τ̂) motion–time plane — both directions are postulate-distinguished
-      for any moving aggregate (motion axis; universal Absolute-Moment axis);
-  (b) the ZBW rotation plane of the aggregate's constituent CPs;
-  (c) the (ê_motion, ê_ZBW-axis) plane;
-  (d) any plane singled out by the SSV_abs broadcast structure (C0-clause dependent —
-      note the parked A3′ source-clause item).
-An unadjudicated physical reading is logged for the record as R1: excluding the
-d-neighborhood of the transverse pair means every allowed displacement must carry ≥ d of
-projection in the distinguished plane — "the obligatory drift pre-empts a floor of the
-in-plane budget each Moment." R1 is a reading, not a derivation.
+  **M1 (distinguished 2-plane, unique).** A distinguished 2-plane per moving aggregate —
+  and the derivation must show it is the CANONICAL one: exactly one 2-plane is
+  postulate-distinguished, not one of several with the winner chosen by hand.
+  **M2 (exclusion rule).** Forbidden displacement targets are exactly those whose
+  projection onto the distinguished pair is ≤ the obligatory displacement scale — the full
+  symmetric neighborhood, not a half, sector, or weighted variant.
+  **M3 (radius + projection, tightened).** Radius exactly d = v·t_P (coefficient 1, not
+  λ·d), derived; the identity must survive the SAME 4D→3D projection treatment as
+  corrected SR-1, with explicit statements of (i) the τ-invariance decomposition used,
+  (ii) how the distinguished plane interacts with the Absolute-Moment axis, (iii) how the
+  projection acts on the exclusion region; and the plane must be derived
+  coordinate-independently or the coordinate alignment shown postulate-privileged. No
+  bespoke re-projection.
+  **M4 (arena/polytope constraint — new, panel).** Derive from the postulates whether the
+  displacement arena is the PSR insphere (ball exact by definition) or the full Voronoi
+  polytope. If the polytope: compute the tube–polytope intersection exactly, including the
+  leading-order coefficient π·A₂·l_P²/V_cell, and show the deviation from γ is zero or
+  derive its physical status. "Assume the ball" is not available.
+  **M5 (prefactor ban — new, panel).** No constant may be absorbed into any normalisation
+  to make any coefficient come out right. The √(2/φ)-class move is banned by name. One
+  auxiliary parameter, length scale, or selection rule not already in the core postulates
+  = fail.
+  **M6 (micro-to-macro bridge — new, panel).** The postulates govern single-CP
+  displacement. The aggregate-level codim-2 exclusion must be derived from single-CP rules;
+  inserting collective relativistic kinematics by hand = fail.
+  **M7 (aggregate-independence — new, panel).** The same plane and rule must follow for
+  ALL uniformly moving aggregates — any CP composition, internal ZBW structure or phasing,
+  motion history, SSV environment. Reliance on a single-CP idealization or a cherry-picked
+  special aggregate = fail.
+
+**Candidate 2-planes (recorded for completeness; see K4 — no menu-shopping):**
+  (a) the (ê_motion, τ̂) motion–time plane; (b) the ZBW rotation plane;
+  (c) the (ê_motion, ê_ZBW-axis) plane; (d) an SSV_abs-broadcast-selected plane
+  (C0-clause dependent). Reading R1 ("the obligatory drift pre-empts a floor of the
+  in-plane budget each Moment") remains a reading, not a derivation.
+
+### 3a. Single-candidate commitment (K4 instrument — PENDING FOUNDER RATIFICATION)
+
+Per the panel's anti-shopping mandate, exactly ONE candidate is committed before mechanism
+work. **Proposed commitment: candidate (a), the (ê_motion, τ̂) plane.** Rationale, stated
+forward and recorded before any mechanism work: γ is universal (every aggregate dilates
+identically), so the distinguished plane must be constructible from the motion state plus
+universal lattice structure alone; (a) is the only listed candidate satisfying this by
+construction — (b) and (c) vary with internal ZBW configuration and would violate M7
+unless an alignment mechanism is separately derived; (d) is blocked pending the A3′/C0
+source clause. This rationale references universality (an M7 requirement), not the target
+exponent. **The founder ratifies or replaces this commitment before the mechanism session
+opens; the ratified choice is then binding under K4.**
 
 **Kill conditions (binding):**
-  **K1 (no-selection kill).** If, after a founder-bounded effort (default: two focused
-  sessions), no candidate mechanism derives M1+M2+M3 from the postulates without
-  referencing the target, the route records **NEGATIVE-FOR-MECHANISM**: the geometry
-  admits γ; the dynamics does not select it. OPEN-SR-H1-CLASS closes negative,
-  OPEN-SR-EPSILON remains open, and the H.1 successor Proposition graduates to a
-  four-model Proposition (exponents {1, 1, 2, 5/2}) with the codim-2 member marked
-  "geometric existence only."
-  **K2 (adjudication-before-billing).** No claim of "γ derived from geometry" may be
-  registered, billed in any paper, or added to the predictions/theorem registries until
-  a CONV-001 panel has ratified the mechanism derivation. The panel package must include
-  this file, so reviewers see the disclosure in §1.
-  **K3 (fitting flag).** Any mechanism argument that invokes the target at any step —
-  "we need n = 2," "γ requires," "the coefficient must be 1" — is recorded as FITTING
-  and does not count toward K1's success branch, even if its conclusion is correct.
-  Mechanism derivations must run forward from postulates only.
+  **K1 (no-selection kill).** If, within the founder-bounded effort (default: two focused
+  sessions), the committed candidate does not yield M1–M7 forward from postulates, the
+  campaign records **NEGATIVE-FOR-MECHANISM**: geometry admits γ; dynamics does not select
+  it. OPEN-SR-H1-CLASS closes negative; OPEN-SR-EPSILON stays open; the H.1 successor
+  graduates to a four-model Proposition (exponents {1, 1, 2, 5/2}) with the codim-2 member
+  marked "geometric existence only (continuum-conditional)."
+  **K2 (adjudication-before-billing).** No "γ derived" claim may be registered, billed, or
+  added to any registry until a CONV-001 panel has ratified the mechanism derivation, with
+  this file (including §1) in the package.
+  **K3 (fitting flag — explicit).** Any argument invoking the target at any step ("we need
+  n = 2," "γ requires," "the coefficient must be 1") is FITTING regardless of its
+  conclusion's truth.
+  **K3′ (implicit-target kill — new, panel).** Any step in which an intermediate structure,
+  plane, measure, scaling, or symmetry assumption is selected, derived in a particular
+  form, or given special emphasis BECAUSE it produces or is consistent with n = 2,
+  V_free ∝ (1−f²)², or coefficient 1 is FITTING, even if formally justified from
+  postulates and even if γ is never mentioned. Test: would the step have been taken, in
+  that form, by a derivation that did not know the target? Structures whose only
+  distinguishing virtue is target-consistency fail this test.
+  **K4 (single-candidate commitment — new, panel).** Mechanism work proceeds only on the
+  §3a-ratified candidate. Evaluating other candidates — including "quick checks" — is
+  menu-shopping and voids the round. If the committed candidate fails, K1 fires; a
+  DIFFERENT candidate may be opened only as a NEW pre-registered round, with panel
+  consent, carrying the full negative record of the failed round in the package.
 
-**Success criterion.** M1+M2+M3 derived forward, K3-clean, panel-ratified ⇒ candidate
-closure of OPEN-SR-EPSILON (γ derived from substrate geometry + dynamics), and the
-restoration — in corrected form — of the flagship claim that the 2471–2475 triage
-withdrew. The all-orders identity means no further matching work would remain: leading
-order, coefficient, and the full curve come together or not at all.
+**Success criterion.** M1–M7 derived forward on the committed candidate, K3/K3′-clean,
+panel-ratified (K2) ⇒ candidate closure of OPEN-SR-EPSILON and restoration, in corrected
+form, of the claim the 2471–2475 triage withdrew. The all-orders identity means leading
+order, coefficient, and the full curve come together or not at all — subject to M4's arena
+determination.
 
-**Failure asymmetry (stated so the incentive is visible and resisted):** the success
-branch would be the programme's largest single result; the kill branch is a clean negative
-that still upgrades H.1's successor. Both outcomes are publishable. There is no branch on
-which fudging M1–M3 helps.
+**Failure asymmetry (stated so the incentive is visible):** the success branch is the
+programme's largest single result; the kill branch is a clean negative that still upgrades
+H.1's successor. Both publishable. No branch on which fudging M1–M7 helps.
 
-## 4. Immediate next actions
+## 4. Panel round-1 record (v1.1)
 
-1. **Founder reads this file** (it is short; §1 and K1–K3 are the load-bearing parts).
-2. Founder decides: proceed to mechanism phase (and with which candidate order), or park.
-3. If proceeding: mechanism work happens in a fresh session against this pre-registration,
-   with the verify-script battery extended per-candidate.
-4. CONV-001 panel sees this file with any mechanism claim (K2).
+Three unique returns, all RATIFY-WITH-CHANGES (one styled MANDATORY). Every required
+change adopted: §1b/§1c disclosure augmentations; §2a scope conditions 1–5 (incl. the
+polytope/continuum finding, sharpened here to the leading coefficient, and the
+strain-rule conditionality); M1 uniqueness; M3 tightening; M4–M7 added; K3′ added; K4
+single-candidate rule added with the §3a commitment instrument. Two of the returns arrived
+as verbatim duplicates — slot attribution (ChatGPT/Grok/Gemini/Copilot/DeepSeek) pending
+founder confirmation per the standing attribution-anomaly procedure; the round is recorded
+by content. Remaining slots, if any, fold into a v1.2 on arrival.
+
+## 5. Immediate next actions
+
+1. Founder confirms slot attribution and whether further returns are expected.
+2. Founder ratifies or replaces the §3a single-candidate commitment.
+3. Mechanism session opens (fresh context, warm keyword SR-MECH-2485) against this v1.1,
+   K4-bound, with the verify battery extended per M4 (arena determination first — it is
+   the cheapest kill: if the arena is the polytope and the leading coefficient misses 2,
+   the campaign dies before any plane derivation).
+4. Any mechanism claim returns to the panel with this file (K2).
