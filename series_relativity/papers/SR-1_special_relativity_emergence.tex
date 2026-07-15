@@ -372,7 +372,7 @@ The derivation is supported by analytic expressions for the PSR formula and by a
 numerical verification over all 120 vertices (Appendix~A.7) that reproduces the
 600-cell geometric inputs ($a=1/\phi$, $z=12$, $V_0$, $\alpha_{\rm geom}$) and
 confirms the rescaling-invariance of $k\cdot\Delta\text{SSV}$, together with
-explicit clarification of the underlying displacement-reduction process. The framework has been checked against existing muon 
+explicit clarification of the underlying displacement-reduction process. The framework has been checked against existing muon
 storage-ring data at accelerations of order $10^{18}\,g$ \cite{bailey1977}, which are 
 fully consistent with CPP and confirm that the Planck-derived value of $k$ survives 
 all current experimental tests. The framework is empirically equivalent to standard SR 
@@ -784,7 +784,7 @@ presupposes $\alpha = 1$. The correct statement is the one given above --- the
 prefactor is unobservable, so no argument is needed to remove it and none can
 establish it. The reasoning is recorded verbatim in
 \texttt{series\_relativity/reasoning/2471.md} and verified by
-\texttt{series\_relativity/code/2471\_k\_convention\_and\_alpha\_geom\_verification.py}. The Planck unit framework follows from Planck's original work 
+\texttt{series\_relativity/code/2471\_k\_convention\_and\_alpha\_geom\_verification.py}. The Planck unit framework follows from Planck's original work
 \cite{planck1900}.
 
 \subsection{Emergence of Relativistic Effects}
@@ -839,7 +839,7 @@ which has units of time as required ($k \cdot \langle\Delta\text{SSV}\rangle_{\r
 
 The 600-cell geometric inputs are verified numerically by
 \texttt{series\_relativity/code/2471\_k\_convention\_and\_alpha\_geom\_verification.py}
-(31/31 checks), which generates the 120 vertices from the binary icosahedral group
+(31/31 checks; Python~3 standard library only --- no third-party dependencies, so the verification runs wherever \texttt{python3} does), which generates the 120 vertices from the binary icosahedral group
 $2I$ and reproduces, from the generated set alone, the edge length $a = 1/\phi$, the
 uniform coordination $z = 12$, and $V_0 = 600\sqrt{2}/(12\phi^3) \approx 16.6925$; it
 further reproduces the stiffness ratio $\alpha_{\rm geom} = 3\bar{A}/V_0 \approx 0.5594$

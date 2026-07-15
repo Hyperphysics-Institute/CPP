@@ -38,13 +38,16 @@ elimination theorem. It does not fix k's number. The abstract's "first-
 principles derivation of ... k ~ 2.16e-114 m^3/J from 600-cell packing
 geometry" is not supportable under any prefactor choice.
 
+Dependencies: NONE. Python 3 standard library only (math, itertools).
+This is deliberate. A verification artifact that requires an uninstalled package
+is a verification artifact that does not verify -- the same failure class this
+patch retracts. Runs anywhere `python3` runs.
+
 Author: Opus (Anthropic), for Thomas Lee Abshier / Hyperphysics Institute.
 """
 
 import itertools
 import math
-
-import numpy as np
 
 PHI = (1.0 + math.sqrt(5.0)) / 2.0
 
@@ -98,7 +101,7 @@ def vertices_600cell():
             for i, s in zip(nz, signs):
                 v[i] = abs(v[i]) * s
             add(v)
-    return np.array(sorted(V))
+    return sorted(V)
 
 
 def _parity(p):
@@ -114,21 +117,29 @@ def _parity(p):
 print("=" * 74)
 print("C1  600-cell vertex set from the binary icosahedral group 2I")
 print("=" * 74)
+def _norm(v):
+    return math.sqrt(sum(x * x for x in v))
+
+
+def _dist(u, v):
+    return math.sqrt(sum((a - b) ** 2 for a, b in zip(u, v)))
+
+
 P = vertices_600cell()
 check("vertex count = 120", float(len(P)), 120.0, 0.0)
 check("all unit quaternions (max |norm-1|)",
-      float(np.abs(np.linalg.norm(P, axis=1) - 1.0).max()), 0.0, 1e-12)
+      max(abs(_norm(v) - 1.0) for v in P), 0.0, 1e-12)
 
-D = np.linalg.norm(P[:, None, :] - P[None, :, :], axis=2)
-np.fill_diagonal(D, np.inf)
-edge = float(D.min())
+# full pairwise distance table (120 x 120 = 7140 unique pairs; trivial in stdlib)
+D = [[_dist(P[i], P[j]) if i != j else float("inf") for j in range(len(P))]
+     for i in range(len(P))]
+edge = min(min(row) for row in D)
 check("edge length a = 1/phi", edge, 1.0 / PHI, 1e-10)
 check("circumradius/edge = phi", 1.0 / edge, PHI, 1e-10)
 
-z = int((np.abs(D - edge) < 1e-9).sum(axis=1)[0])
-zs = set((np.abs(D - edge) < 1e-9).sum(axis=1).tolist())
-check("coordination z = 12", float(z), 12.0, 0.0)
-print(f"        (coordination is uniform across all vertices: {zs == {12}})")
+coord = [sum(1 for d in row if abs(d - edge) < 1e-9) for row in D]
+check("coordination z = 12", float(coord[0]), 12.0, 0.0)
+print(f"        (coordination is uniform across all vertices: {set(coord) == {12}})")
 
 # --------------------------------------------------------------------------
 # C2. V_0
