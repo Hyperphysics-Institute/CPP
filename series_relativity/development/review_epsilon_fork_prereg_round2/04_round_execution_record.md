@@ -42,3 +42,7 @@ OPEN-SR-EPSILON: mechanism question SETTLED NEGATIVE (update appended). OPEN-SR-
 - **The founder's α/β fork stands, with β now enumerated:** β = {OPEN-SR-10 residual item (i)} + {debt (b) vector completion} + {capacity-set integration (DeepSeek), founder's discretion whether it joins the gate or registers as a separate pursuit}.
 
 **Copilot seat: REOPENED prospectively (founder-directed this patch)** — roster returns to five for future rounds — **with a standing non-independence caveat on this topic family** (rehabilitation exposed it to this round's returns); see `03x_copilot_unsolicited_no_standing.md`. Its round-2 text remains unseated and untallied on the two grounds stated there.
+
+## §6 — FOUNDER RULING (Patch 2502): α
+
+Ruled verbatim: "α, go." Q2 records **YES at W2 world-call strength** for closed self-bound patterns, OPEN-SR-10's caveats inherited; β's enumerated gates remain registered as residual debts, not verdict-bearing; capacity-set integration is a discretionary pursuit, no gate. OPEN-SR-EPSILON → RESOLVED-α; OPEN-SR-SF6-RECON-1 → RESOLVED. Round 2 is fully executed and closed. Next: the SR-1 rewrite (SR1-WARM-2502).

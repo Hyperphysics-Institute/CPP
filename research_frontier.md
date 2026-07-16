@@ -262,10 +262,10 @@ CROSS-SERIES:
 | SM (Standard Model) | 24 | 11 | 7 | 1 | 3 | 5 |
 | EW (Electroweak) | 10 | 6 | 3 | 0 | 0 | 0 |
 | QM (Quantum Mechanics) | 13 | 5 | 0 | 4 | 3 | 0 |
-| SR (Relativity) | 10 | 8 | 0 | 1 | 1 | 0 |
+| SR (Relativity) | 10 | 6 | 0 | 1 | 3 | 0 |
 | SD (Foundations) | 7 | 6 | 1 | 0 | 0 | 0 |
 | GLOBAL | 2 | 2 | 0 | 0 | 0 | 0 |
-| **Total** | **107** | **70** | **15** | **7** | **8** | **6** |
+| **Total** | **107** | **68** | **15** | **7** | **10** | **6** |
 
 *(Note: Propositions counted only at Tier 2–3 level in this summary. Tier 4 items (10) grouped under PROP-6–15. FP count updated 25 May 2026 from 2 → 15 to reflect: (a) 9 prior SF-line OPs registered through SF-2 and SF-4 v1.0 SHIPs and prior Capotauro work (already present in `frontier_sectors/FP.md` at decomposition); (b) 6 new OPEN-FP-F1-1 through OPEN-FP-F1-6 registered at F.1 v1.0 SHIP on 24 May 2026, Session 142, Patches 0569e + 0570.)*
 

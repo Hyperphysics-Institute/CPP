@@ -381,3 +381,5 @@ This file is maintained per session: any session that completes a TODO item move
 If this file's P1 section grows large (more than ~10 items), reconsider whether some items should be promoted to `future_projects.md` as registered multi-session projects rather than carried as to-dos.
 
 If a P1 item turns out not to actually block the next paper on reflection, demote it to P2 with a note explaining why. The discipline is "P1 must be empty before SS-10," not "every deferred item is P1."
+
+- **2026-07-15 (Patch 2502):** OPEN-SR-EPSILON RESOLVED-α (founder-ruled; W2 strength, caveats inherited); OPEN-SR-SF6-RECON-1 RESOLVED; geometric ε-route dead (round-2 unanimous). SR-1 rewrite opened, warm keyword SR1-WARM-2502. Panel next sees SR-1 when the rewrite is a shippable win.
