@@ -1,4 +1,37 @@
-# Avenue (B) — the N=8 closed ring as a CDM-like dark-matter candidate — **FALSIFICATION REOPENED / UNDER RE-DERIVATION** (Patch 2433, founder-directed)
+# Avenue (B) — the N=8 closed ring as a CDM-like dark-matter candidate
+
+> **STATUS: 79.5% PROVISIONAL-FAVORABLE (16 July 2026, Patch 2511 — panel-executed, PD-006).** The hardened
+> Momentwise computation (Patch 2510: the founder's home-anchored dance + SF-6 speed memory at the
+> independently pinned coefficient κ_q=132/κ_e=44 MeV/c² (Patch 2496, never fit) + full qCP pile contention)
+> returned ring−rod sign-consistent on BOTH E_pot (−136.1/−137.0/−128.9 MeV) and E_tot (−501/−477/−402) at
+> dt=τ_C/{100,50,25}, κ-scan-strengthening, with the (ii)-class bond-reference derivation intact. The four
+> seated reviewers (ChatGPT, Grok, Gemini, DeepSeek) returned 4/4 promote-class with no sustained objection;
+> the pre-registered clean-returns branch fired; verdict = four-seat median {75,78,81,82} = **79.5%**,
+> recorded **PROVISIONAL** per the committed rider. Adjudication:
+> `conv001_2026-07_hardened_repres_returns_adjudication.md`; returns verbatim:
+> `review/reviews-CONTINUOUS-PCD-1-HARDENED.md`.
+>
+> **OPEN LIMITATIONS — EXPLICITLY FLAGGED AS REGISTRY CONDITIONS (not in passing):**
+> 1. **C7 / OPEN-DM-MW-MODES-1 — Momentwise mode-curvature decorrelation UNRESOLVED.** Inertia does NOT fix
+>    it (m2 dt-sign-flips persist at the pinned coefficient). Ensemble averaging is the named fix; until
+>    executed, the leg-based #1+#2 mode record is the operative mode evidence. This flag is a condition of
+>    the promotion (DeepSeek seat), not a footnote.
+> 2. **Emergent-duty residual:** whether the dance's emergent same-charge apposition duty ≥ 3/7 (expected
+>    yes; not yet measured in-run).
+> 3. **E_qq pin (statics):** the central E_qq remains an estimator-spanned window (40–170 MeV; 102 MeV
+>    contact-depth lock), not a single derived value.
+> 4. **Statics gates PARKED, not discharged:** the E_bond convention fork (CONV-001 adjudication) and the
+>    R5 transverse ponderomotive tensor (geometry #3) reactivate the moment any statics-route claim is made.
+> 5. **Ω_DM/Ω_b ≈ 5.36 NOT derived.** The promotion UNPARKS the relic-abundance line (route B, asymmetric
+>    DM scoping) as schedulable work; the ratio itself remains open.
+>
+> The promotion is of the DYNAMICAL reading (ring preference under the hardened Momentwise dynamics), is
+> PROVISIONAL, and is reversible by any pre-registered kill condition. Prior stale headers below are
+> superseded but preserved for the audit trail.
+
+---
+
+# (SUPERSEDED HEADER) Avenue (B) — **FALSIFICATION REOPENED / UNDER RE-DERIVATION** (Patch 2433, founder-directed)
 
 > **STATUS: FALSIFICATION REOPENED (11 July 2026, Patch 2433 — founder-directed).** The 2432 FALSIFIED verdict is
 > **UNDER RE-DERIVATION and does not stand as settled.** The founder identified that the kill's load-bearing geometry
