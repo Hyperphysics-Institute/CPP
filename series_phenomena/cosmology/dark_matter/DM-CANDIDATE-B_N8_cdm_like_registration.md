@@ -1,6 +1,8 @@
 # Avenue (B) — the N=8 closed ring as a CDM-like dark-matter candidate
 
-> **STATUS: 79.5% PROVISIONAL-FAVORABLE (16 July 2026, Patch 2511 — panel-executed, PD-006).** The hardened
+> **STATUS: 79.5% PROVISIONAL-FAVORABLE (16 July 2026, Patch 2511 — panel-executed, PD-006; RE-AFFIRMED at
+> dispatch-1, Patch 2517: four-seat median {75, 79.5, 79.5, 79.5} = 79.5 on the 2513/2514 disclosures; ChatGPT
+> 75% dissent recorded verbatim; five-seat sensitivity median 79.5, no branch flips).** The hardened
 > Momentwise computation (Patch 2510: the founder's home-anchored dance + SF-6 speed memory at the
 > independently pinned coefficient κ_q=132/κ_e=44 MeV/c² (Patch 2496, never fit) + full qCP pile contention)
 > returned ring−rod sign-consistent on BOTH E_pot (−136.1/−137.0/−128.9 MeV) and E_tot (−501/−477/−402) at
@@ -33,6 +35,13 @@
 >    (the promoted dynamical reading integrates the pairwise energy directly; no duty is plugged in). The
 >    adverse flag + the apposition-scale/energy-weighting convention question are QUEUED FOR DISCLOSURE in
 >    the next panel dispatch. `reasoning/2514.md`, `code/2514_emergent_duty.py`.
+>    *PANEL-ADJUDICATED CONVENTION (Patch 2517, dispatch-1 Q2): the contact-scale ADVERSE record stands
+>    verbatim (no retroactive primary switch — ChatGPT seat, honored); the FORWARD-OPERATIVE convention is
+>    bond-scale count-weighted (3/4 binding + Copilot concurring on sensitivity), under which this condition
+>    reads NEAR-THRESHOLD (0.368–0.381, 85–89% of 3/7, dt-stable, still below); the physically relevant
+>    energy/force-weighted duty remains OPEN pending a pre-registered measurement (adopted definition:
+>    δ_E = ⟨Σ_same|V|⟩/⟨Σ_all|V|⟩ + force- and curvature-weighted diagnostics; branch readings committed
+>    before the run). `conv001_2026-07_relic1_dispatch1_adjudication.md`.*
 > 3. **E_qq pin (statics):** the central E_qq remains an estimator-spanned window (40–170 MeV; 102 MeV
 >    contact-depth lock), not a single derived value.
 > 4. **Statics gates PARKED, not discharged:** the E_bond convention fork (CONV-001 adjudication) and the

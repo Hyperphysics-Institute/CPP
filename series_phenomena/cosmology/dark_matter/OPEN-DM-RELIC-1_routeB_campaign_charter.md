@@ -1,6 +1,8 @@
 # OPEN-DM-RELIC-1 — the Ω_DM route-B relic-abundance campaign (asymmetric DM via a shared Sea asymmetry), scoped for candidate (B)
 
-**Registered:** Patch 2515, 16 July 2026. **Status:** OPEN — campaign charter; no derivation attempted at open.
+**Registered:** Patch 2515, 16 July 2026. **Status:** OPEN — v1.1 **FROZEN** (Patch 2517: panel-amended per
+dispatch-1 Q1 returns, then frozen per the dispatch's own terms; see
+`conv001_2026-07_relic1_dispatch1_adjudication.md`). No derivation attempted at open.
 **Lane:** DM campaign (`series_phenomena/cosmology/dark_matter/`). **Warm lineage:** DM-WARM-2514 → this campaign.
 **Provenance:** Route survey Patch 0843 (`qdp_relic_abundance_scoping.md`, routes A/B/C; route B judged the
 structurally promising one); OPEN-COSMO-DM-1 Step-2 bookkeeping (Patch 0704: ratio NOT derived, relocated to the
@@ -48,19 +50,34 @@ asymmetry and the ring number density. That factor is the campaign's entire subj
 - **S4 — Consistency gates (run on any S3 candidate that lands):** (i) the cascade's N≥8 population dominance must
   be preserved under the asymmetric production history; (ii) falsifier (iv) carries over — N_eff = 2.99 ± 0.17 and
   BBN light-element abundances; (iii) no double-counting of baryon-bound CP content (the 0704 ~19% effect,
-  cleanly avoidable there, must stay avoided here).
+  cleanly avoidable there, must stay avoided here); **panel-added gates (2517):** (iv) symmetric-component
+  depletion — the symmetric ring/anti-ring or precursor population must be shown annihilated or otherwise
+  removed; (v) conserved-charge closure — baryons + DM + every residual carrier must reproduce the assumed
+  total shared asymmetry; (vi) entropy/dilution-history survival — the predicted number ratio must survive
+  reheating, annihilation, phase transitions, and any late entropy injection; (vii) perturbation
+  compatibility — no forbidden baryon–DM isocurvature mode, no disruption of the observed matter power
+  spectrum; (viii) formation-temperature/density consistency with the registered thermal history (EU-1 +
+  BBN/CMB; the corpus value is kT_form ≈ 16.5 keV — the gate is consistency, not a scale assertion).
+  Violation of any gate = K2, even in-window.
 
 ## 3. Pre-registered branches and kill conditions (fixed at open, before any computation)
 
-- **Branch D-strong:** a zero-knob mechanism yields n_ring/n_b inside the observational ±2σ window
-  **[0.436, 0.458]**. → Route B DERIVES the ratio; panel adjudicates whether/how this moves candidate (B)'s
-  verdict (it is favorable evidence, but promotion semantics are the panel's, not the worker's).
-- **Branch D-weak:** the mechanism lands within ×1.5 either side, **[0.30, 0.67]**, but not D-strong. → Recorded
-  as FAVORABLE-DIRECTIONAL only; the ratio remains NOT derived; no verdict movement claimed.
+- **Branch D-strong:** a zero-knob mechanism yields a predicted n_ring/n_b whose distribution, WITH propagated
+  registered uncertainties, overlaps the observational ±2σ window **[0.436, 0.458]** (a bare central value
+  inside the window is insufficient — panel amendment, 2517). → Route B DERIVES the ratio; panel adjudicates
+  whether/how this moves candidate (B)'s verdict (favorable evidence, but promotion semantics are the
+  panel's, not the worker's).
+- **Branch D-directional** (renamed from D-weak, panel amendment 2517): the mechanism lands within ×1.5 either
+  side, **[0.30, 0.67]**, but not D-strong. → Recorded as FAVORABLE-DIRECTIONAL only; the ratio remains NOT
+  derived; no verdict movement claimed; this label may NEVER be described as partial derivation.
 - **Branch T (tunable-only → route KILLED as a derivation claim):** the only way to land in-window is a continuous
-  free parameter with no independent pin. G7 applies in full: no re-parametrizing toward the window. The ratio
-  then stays CALIBRATED (on par with ΛCDM, per 0704/0843) — this kills the route-B derivation claim for
-  candidate (B), NOT the candidate.
+  free parameter with no independent pin. **Broadened (panel amendment, 2517): T also fires for discrete model
+  selection among unpinned mechanisms; post-result selection of the conserved charge; unregistered cutoffs,
+  freeze-out epochs, or stopping rules; products of individually unpinned order-one factors; survivorship
+  conditioning (counting only surviving formation channels); and any parameter — continuous or discrete —
+  beyond the registered corpus, even if the output lands in-window.** G7 applies in full: no re-parametrizing
+  toward the window. The ratio then stays CALIBRATED (on par with ΛCDM, per 0704/0843) — this kills the
+  route-B derivation claim for candidate (B), NOT the candidate.
 - **Branch I (indeterminate → campaign PARKS):** S1–S3 bottom out in an undeveloped sub-sector (net-CP bookkeeping
   unregistered; CPP baryogenesis mechanism undeveloped; chirality-arc asymmetry uncomputed — the FI-C-9 primitive
   is registered as not-yet-derived). Park with the named blocker; ratio stays calibrated; candidate (B) untouched.
