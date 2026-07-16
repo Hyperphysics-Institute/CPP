@@ -37,7 +37,10 @@ asymmetry and the ring number density. That factor is the campaign's entire subj
 
 ## 2. Scoping steps (in order; each a separate pre-registered patch)
 
-- **S1 — Baryon-side net-CP bookkeeping.** Extract from the registered SS/SF-3 corpus the net conserved-CP content
+- **S1 — Baryon-side net-CP bookkeeping.** *[STATUS ANNOTATION, Patch 2518 — not a semantics amendment:
+  S1 COMPLETE; registered, Branch I does not fire; proton (+3 qCP, −1 eCP), neutron (+3, −2), neutral bulk
+  (+3, −2)/baryon invariant; ring (0, 0) per 2435 → S2 candidate (a) CLOSED-NEGATIVE. See
+  `relic1_s1_baryon_cp_bookkeeping.md`.]* Extract from the registered SS/SF-3 corpus the net conserved-CP content
   of the nucleon (net qCP count A_p; net eCP if the conserved charge involves it). If the corpus does not register
   a net-CP bookkeeping for the baryon, that is a NAMED BLOCKER (→ Branch I) — record it; do not improvise one.
 - **S2 — The conserved shared charge.** Enumerate candidates: (a) net qCP number; (b) the substrate
