@@ -24,4 +24,4 @@
 
 **Concurrent, non-blocking:** the SR-1 v20 verification round is dispatched/dispatching (package: `series_relativity/development/sr1_v20_shippable_win_panel_package_UNDISPATCHED.md`); returns fold in any window under the next free patch numbers. No file collision: SR-1 fold touches `series_relativity/`, DM touches `series_strong/`/DM homes. OSF re-deposit of SR-1 v20 is with Isak.
 
-**Next patch: 2510.**
+**Next patch: check `git log --oneline -1` for the current highest (2510 was consumed by the SR-2 leftover fix in this same window).**
