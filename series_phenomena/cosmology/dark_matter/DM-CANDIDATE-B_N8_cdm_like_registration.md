@@ -39,6 +39,11 @@
 >    R5 transverse ponderomotive tensor (geometry #3) reactivate the moment any statics-route claim is made.
 > 5. **Ω_DM/Ω_b ≈ 5.36 NOT derived.** The promotion UNPARKS the relic-abundance line (route B, asymmetric
 >    DM scoping) as schedulable work; the ratio itself remains open.
+>    *Campaign OPENED (Patch 2515, 16 July 2026): OPEN-DM-RELIC-1 registered at charter level — target T1
+>    (n_ring/n_b = 0.4468 ± 0.0054), branches D-strong/D-weak/T/I and kills K1/K2 pre-registered before any
+>    derivation; verdict semantics fixed (only a panel-adjudicated D-strong can move this promotion; a route
+>    kill returns the ratio to calibrated status and does NOT touch the candidate).
+>    `OPEN-DM-RELIC-1_routeB_campaign_charter.md`.*
 >
 > The promotion is of the DYNAMICAL reading (ring preference under the hardened Momentwise dynamics), is
 > PROVISIONAL, and is reversible by any pre-registered kill condition. Prior stale headers below are
