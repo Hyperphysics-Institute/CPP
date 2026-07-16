@@ -233,7 +233,7 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 ---
 
 ### OPEN-SR-1-MC-VERIFY: Restore Numerical Verification Withdrawn from SR-1
-**Status:** OPEN (NEW 15 July 2026, Patch 2471)
+**Status:** **RESOLVED (15 July 2026, Patch 2503 — SR-1 v20 rewrite).** Item (1) resolves MOOT: v20 retains the PSR constitutive relation as a minimal ansatz/representation only — no computational cell-distortion claim survives that a stressed-Voronoi run would back. Item (2) resolves by **permanent withdrawal**: under the α ruling the Unruh conditional's antecedent (an acceleration-dependent ΔSSV contribution *additional* to the kinetic term) is settled negative for closed self-bound patterns (the pinned mechanism's acceleration response is the coefficient-1 inertial back-reaction, exhausted), so no restored MC could promote App. F's conditional algebra to a prediction. The retained numerical verification is the 2471 geometric-inputs script (31/31), which the v20 claims fully support. Historical status follows. — OPEN (NEW 15 July 2026, Patch 2471)
 **Sector(s):** SR
 **Priority:** HIGH
 **One-line statement:** SR-1 cited four Monte-Carlo verifications that do not exist; one has been replaced with a real script, the remainder are outstanding.
@@ -280,7 +280,7 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 
 ---
 ### OPEN-SR-1-PREDICTIONS: SR-1 Has No Falsifiable Predictions — Restore or Accept
-**Status:** OPEN (NEW 15 July 2026, Patch 2474)
+**Status:** **RESOLVED — ACCEPT-INTERPRETATION EXECUTED (15 July 2026, Patch 2503 — SR-1 v20 rewrite).** The fork had only one live arm after the α ruling: the pinned mechanism supplies the acceleration law and it forecloses restoration — the store is ½κv² (velocity-sourced, matching every ΔSSV definition), the acceleration response is the back-reaction at **Laue coefficient exactly 1** for closed self-bound patterns, i.e. it IS relativistic inertia with **no residual beyond γ_SR** left to predict. The "acceleration-dependent contribution distinct from and additional to the kinetic term" that this item's solution-shape named does exist (F_self = −κa) but is exhausted by the coefficient-1 inertia. v20 rebilled SR-1 a **GROUNDING paper** (ε = γ−1 grounds at the energy level at W2 world-call strength, OPEN-SR-10 caveats inherited verbatim), removes it from the zero-parameter prediction count on those terms (feeds OPEN-WORKFLOW-PREDICTION-AUDIT), and carries the **inherited falsifier**: the l=6/q⁴ dispersion-anisotropy floor at ~l_P/10³⁰ from OPEN-SR-10 (in-principle discriminating, below observational reach — billed per SR-10's own appraisal, not dressed up). Per-prediction mechanism-level diagnoses (C2 semantics: energy ∝ v², force ∝ a) are in SR-1 v20 §Empirical Status; withdrawals stay, upgraded from "not derived" to "settled negative within the pinned mechanism." Historical status follows. — OPEN (NEW 15 July 2026, Patch 2474)
 **Sector(s):** SR
 **Priority:** HIGH
 **One-line statement:** All five of SR-1's falsifiable predictions were withdrawn at Patch 2474; the paper is now empirically equivalent to SR by construction and makes no independent testable claim.
