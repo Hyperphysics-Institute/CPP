@@ -5,7 +5,7 @@
   Master dashboard: Research_Frontier.md
 -->
 
-## Special Relativity / Gravity (SR) — 10 problems
+## Special Relativity / Gravity (SR) — 11 problems
 
 ### OPEN-SR-1: PSR Reduction Formula from 600-Cell Geometry
 **Status:** OPEN
@@ -256,10 +256,25 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 **Where α becomes physical (the lever):** if ΔSSV is given an operational definition — or couples to the DM/SF-6 sector with an independent normalisation — then α is no longer absorbable and OPEN-SR-EPSILON and the DM campaign become the same problem. **This is the recommended attack route.**
 **UPDATED 15 July 2026 (Patch 2493 — OPEN-SR-H1-CLASS closed NEGATIVE-FOR-MECHANISM; this item inherits the sharpened state):** the question is no longer open-ended. The candidate rules for how the obligatory drift interacts with the per-Moment capacity set are enumerated, rest-limit-filtered, and machine-pinned pairwise-inequivalent (`series_relativity/code/2492_m2_rule_fork.py`): **R1 translation (ε = 0), R2 lens (n = 1, coeff 8/3π), R3y slab (n = 1, coeff 16/3π), R4 in-plane magnitude-floor tube (n = 2, ε = γ−1 all orders)**. The discriminating input is the per-Moment single-CP content of the motion state — **the SF-6 inertia mechanism (isolated investigation, Patch 2470)**. **Blind-adjudication protocol (BINDING):** the fork inventory must NOT be loaded into any SF-6 working session — SF-6 runs on its Patch-2470 charter only; when SF-6 pins the mechanism, a NEW pre-registered round (panel consent, the full OPEN-SR-H1-CLASS negative record in package, per its K4) tests the pinned mechanism against the fork. Pre-committed semantics carried from the 2492 record: an SF-6 landing on R1/R2/R3y (or on nothing) settles this item's mechanism question NEGATIVE with no further geometric-route rounds; a blind landing on R4 would close this item positive at the largest-single-result level. Session-level assets available to the future round (adjudicated, Patch 2495): M9 dissolution RATIFIED-WITH-SCOPE; M4 and M1 CORPUS-CONDITIONAL — promotion to postulate-grounded requires **FI-SR-REACH**: derive that a single matter CP's one-Moment admissible displacement-target ensemble is the full continuous round PSR ball with rotationally invariant measure (not a shell, discrete hop set, anisotropic kernel, or weighted subset), without reference to the exclusion exponent or any Lorentz identity. FI-SR-REACH must not be silently bundled into the quarantined investigation unless its own charter raises the reach-set question.
 **Paper(s):** SR-1; SF-6; DM campaign
-**Last updated:** 15 July 2026 (Patch 2493)
+**UPDATED 15 July 2026 (Patch 2498 — SF-6 pin reconciled):** the SF-6 mechanism is now pinned blind (Patch 2496; blind certification in `handovers/2026-07-15_sf6_inertia_impulse_pin_2496.md`) and reconciled against this sector's post-2470 record — see `series_relativity/development/sf6_sr_reconciliation.md` and OPEN-SR-SF6-RECON-1 below. The pre-registered fork round is DRAFTED (`series_relativity/development/review_epsilon_fork_prereg_round2/00_package_draft_UNDISPATCHED.md`), un-dispatched at founder timing per K4. The fork was NOT adjudicated by the reconciliation.
+**Last updated:** 15 July 2026 (Patch 2498)
 
 ---
 
+### OPEN-SR-SF6-RECON-1: Resolve the Pin→Fork Mapping and Covariance-Provenance Questions via the Pre-Registered Round
+**Status:** OPEN (NEW 15 July 2026, Patch 2498 — registered per the 2496 handover's capture-and-delay reconciliation discipline)
+**Sector(s):** SR — cross-links FP/SF-6 (OPEN-FP-6-INERTIA-1)
+**Priority:** HIGH — gates the OPEN-SR-EPSILON fork adjudication and any SR-1 inheritance of the pin.
+**One-line statement:** The SF-6⇄SR reconciliation (Patch 2498) registered three items no working session may resolve inline: T1, whether the pin's "zero per-Moment cost at constant v" (continuum toy, no capacity set) maps to R1 or is capacity-silent; T2, whether Laue-coefficient-1 via the sea equation's own covariance satisfies OPEN-SR-EPSILON's "without importing γ" clause; T3 (recorded no-op), FI-SR-REACH untouched by the pin. T1/T2 are Q1/Q2 of the pre-registered round-2 package (drafted, UNDISPATCHED).
+**What a solution looks like:** the round runs with panel consent per K4; its Q1 outcome executes the Patch-2493 pre-committed semantics mechanically; its Q2 outcome either grounds ε = γ−1 for closed patterns at the energy level or names the derivation still owed. This item closes when the round's record lands.
+**Dependencies:** founder timing + panel consent (K4); the full negative record (OPEN-SR-H1-CLASS closure); Patch 2496 pin + blind certification; Patch 2498 reconciliation record.
+**Cross-sector connections:** OPEN-SR-EPSILON (this item is its adjudication vehicle); OPEN-SR-1-PREDICTIONS (C2 semantics + the Laue result bear directly, gated on T1/T2); OPEN-FP-6-INERTIA-1 debts (b)/(c) bound the round's scope.
+**Anti-priorities carried:** no coefficient promotion before the round; DM candidate (B) stays PARKED; no fork scoring outside the round.
+**Paper(s):** SR-1; SF-6; reconciliation record `series_relativity/development/sf6_sr_reconciliation.md`.
+**Registered:** 15 July 2026, Patch 2498
+**Last updated:** 15 July 2026
+
+---
 ### OPEN-SR-1-PREDICTIONS: SR-1 Has No Falsifiable Predictions — Restore or Accept
 **Status:** OPEN (NEW 15 July 2026, Patch 2474)
 **Sector(s):** SR

@@ -97,6 +97,7 @@ The Flagship Papers sit at the apex of the CPP programme, taking completed deriv
 **Falsification route:** A dynamics run whose measured Momentwise coefficient fails to converge to the statics prediction under σ-refinement would falsify the storage mechanism; an SF-1 cage simulation yielding an inertial coefficient ≠ E₀/c² (beyond discreteness corrections) would falsify the closed-pattern anchor.
 **Paper(s):** SF-6 v1.0 SHIPPED Patch 1607 (the tuned effective-inertial-mass section this item replaces); Patch 2496 sketch + verify script.
 **Registered:** 15 July 2026, Patch 2496 (first computation; charter opened 14 July 2026, Patch 2470 handover).
+**UPDATED 15 July 2026 (Patch 2498):** the owed unblinded reconciliation is COMPLETE — `series_relativity/development/sf6_sr_reconciliation.md` (firewalled convergences C1–C4; tensions T1–T3 registered as OPEN-SR-SF6-RECON-1; fork adjudication reserved to the pre-registered round, package drafted un-dispatched). Coefficient remains sketch-level, NOT registry-canonical, per the 2496 handover anti-priorities.
 
 ---
 
