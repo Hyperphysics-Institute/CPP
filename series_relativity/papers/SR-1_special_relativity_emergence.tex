@@ -24,6 +24,25 @@
 %                         NOTE: v17's "alpha_geom consistency fix" WAS the invalid
 %                         dimensional-necessity argument, logged as a repair.
 %                         Principal surviving positive result: App. H.1.
+%   v20     15 Jul 2026 — REWRITE (Patch 2503) after the epsilon-arc closed.
+%                         Geometric route CLOSED negative-for-mechanism
+%                         (OPEN-SR-H1-CLASS K1 Patch 2493; round-2 Q1 unanimous
+%                         NOTHING Patch 2500; geometric half -> PROP-SR-H1-1).
+%                         Energy route RESOLVED-alpha (founder ruling, Patch
+%                         2502): eps = gamma-1 GROUNDS at the energy level for
+%                         closed self-bound patterns at W2 world-call strength
+%                         via the SF-6 inertia pin (kappa=(2/3)U_pol/c^2 open
+%                         cloud; Laue coefficient exactly 1 closed patterns,
+%                         E0 = hbar*nu_C) + the Sea equation's own covariance;
+%                         OPEN-SR-10 caveats inherited verbatim. Withdrawals
+%                         STAY; mechanism-level diagnosis added per prediction
+%                         (energy tracks v^2, force tracks a). Paper rebilled
+%                         as a GROUNDING paper (OPEN-SR-1-PREDICTIONS,
+%                         accept-interpretation: coefficient exactly 1 => no
+%                         residual beyond gamma_SR); inherited falsifier =
+%                         the l=6/q^4 anisotropy floor (OPEN-SR-10). Unruh MC
+%                         claim permanently withdrawn (OPEN-SR-1-MC-VERIFY
+%                         resolved). No coefficient registry-canonical here.
 %
 % CONTRIBUTORS:
 %   Thomas Lee Abshier ND — CPP framework, physical vision
@@ -86,7 +105,7 @@
 \title{\textbf{SR-1: Mechanistic Derivation of Relativistic Effects\\
 via Space Stress Vector (SSV) in the Dipole Sea}\\[6pt]
 {\large 600-Cell Standard Model Emergence Series}\\[4pt]
-{\normalsize Version 18, 2 April 2026}}
+{\normalsize Version 20, 15 July 2026}}
 
 \author{Thomas Lee Abshier, ND \and Grok (xAI) \and Claude Sonnet (Anthropic)}
 
@@ -103,7 +122,7 @@ via Space Stress Vector (SSV) in the Dipole Sea}\\[6pt]
 
 
 \begin{abstract}
-Conscious Point Physics (CPP) \emph{represents} special relativistic effects---time dilation, length contraction, and the twin paradox---as consequences of stress-limited displacement in a discrete 4D lattice based on the 600-cell polychoron. Kinetic energy stored as excess Space Stress Vector ($\Delta$SSV) reduces effective Voronoi cell volumes, shrinking the Planck Sphere Radius (PSR) and limiting displacement per absolute Moment. We state plainly what this construction does and does not establish. \textbf{Established:} the 600-cell geometry is reproduced from the binary icosahedral group $2I$ (edge $a = 1/\phi$, coordination $z = 12$, cell volume $V_0$); a Hooke-like low-stress response together with the exact saturation boundary condition motivates the minimal rational constitutive relation $\text{PSR}_{\rm eff} = l_P/(1+k\cdot\Delta\text{SSV})$ within the lowest-order rational class; and---the principal positive result of this paper---Appendix~H.1 establishes that the three natural displacement models (linear subtraction, corridor exclusion, and the exact 4D hyperspherical cap) yield low-velocity strain exponents $n \in \{1, 1, 5/2\}$ against the $n = 2$ that $\gamma_{\rm SR}$ requires, and so none of them recovers it. \emph{This is an elimination of three models, not of the class}: the class-coverage theorem asserted in versions through v19 rested on an erroneous cap expansion ($f^{1/2}$ published; $f^{5/2}$ correct) and is withdrawn at Patch 2475. The corrected exponents \emph{bracket} the target ($1 < 2 < 5/2$), so an exclusion geometry with $V_{\rm excl} \propto f^2$ remains a live candidate. \textbf{Not established:} the Lorentz factor is \emph{not derived here}. It enters as an \emph{input} through the energy-momentum identification of Appendix~A.8.1, which sets $\Delta\text{SSV} \propto (\gamma_{\rm SR}-1)mc^2$; exact Lorentz equivalence then follows by construction. Appendix~H.1 shows the three natural displacement models cannot supply it, but this does not establish that no substrate route exists---and in any case, proving an external bridge necessary would not convert it into a derivation. The framework is consequently \emph{empirically equivalent to standard special relativity by construction} and yields no independent falsifiable predictions at present; the prediction set of earlier versions is withdrawn (Sec.~\ref{sec:empirical_status}). Nor is $k$ an independent prediction: any rescaling $k \to \alpha k$ absorbed into the $\Delta$SSV normalisation leaves $k\cdot\Delta\text{SSV}$---and hence every observable---unchanged, so $k = l_P^3/E_P \approx 2.16\times10^{-114}$~m$^3$/J records a \emph{normalisation convention} paired with the $\Delta$SSV definition, not a derived quantity (Appendix~A.5, Step~3). The functional form is a minimal ansatz within the rational class and is not shown to be unique to the 600-cell: Hooke-like response and saturation fix only the initial slope and the asymptote, and other saturating laws ($e^{-\varepsilon}$, $(1+2\varepsilon)^{-1/2}$, $(1+\varepsilon/n)^{-n}$) satisfy the same two conditions. Deriving the strain--kinematics map $\varepsilon(v)$ from substrate dynamics \emph{without} importing $\gamma_{\rm SR}$ is the outstanding problem of this line of work.
+Conscious Point Physics (CPP) \emph{represents} special relativistic effects---time dilation, length contraction, and the twin paradox---as consequences of stress-limited displacement in a discrete 4D lattice based on the 600-cell polychoron. Kinetic energy stored as excess Space Stress Vector ($\Delta$SSV) reduces effective Voronoi cell volumes, shrinking the Planck Sphere Radius (PSR) and limiting displacement per absolute Moment. We state plainly what this construction does and does not establish. \textbf{Established:} the 600-cell geometry is reproduced from the binary icosahedral group $2I$ (edge $a = 1/\phi$, coordination $z = 12$, cell volume $V_0$); a Hooke-like low-stress response together with the exact saturation boundary condition motivates the minimal rational constitutive relation $\text{PSR}_{\rm eff} = l_P/(1+k\cdot\Delta\text{SSV})$ within the lowest-order rational class; and---the principal positive result of this paper---Appendix~H.1 establishes that the three natural displacement models (linear subtraction, corridor exclusion, and the exact 4D hyperspherical cap) yield low-velocity strain exponents $n \in \{1, 1, 5/2\}$ against the $n = 2$ that $\gamma_{\rm SR}$ requires, and so none of them recovers it. \emph{This is an elimination of three models, not of the class}: the class-coverage theorem asserted in versions through v19 rested on an erroneous cap expansion ($f^{1/2}$ published; $f^{5/2}$ correct) and is withdrawn at Patch 2475. The corrected exponents \emph{bracket} the target ($1 < 2 < 5/2$); the class question this reopened was pursued to closure after v19, and the geometric route is now \textbf{closed negative-for-mechanism} (\texttt{OPEN-SR-H1-CLASS}, K1 founder ruling, Patch 2493; pre-registered round~2, Q1 unanimous, Patch 2500 --- no further geometric rounds), the geometric half surviving only as the ungrounded identity \texttt{PROP-SR-H1-1}. \textbf{Grounding (new at v20):} the Lorentz factor is still \emph{not derived in this paper} --- it enters through the energy-momentum identification of Appendix~A.8.1, which sets $\Delta\text{SSV} \propto (\gamma_{\rm SR}-1)mc^2$, and exact Lorentz equivalence follows by construction. What has changed is the standing of that input. The strain--kinematics map $\varepsilon = \gamma - 1$ now \emph{grounds at the energy level} for closed self-bound patterns, at W2 world-call strength, via the independently (blind-)pinned SF-6 inertia mechanism --- $\kappa = (2/3)\,U_{\rm pol}/c^2$ for the open polarization cloud; Laue coefficient \emph{exactly}~1 for closed self-bound patterns anchored on $E_0 = \hbar\nu_C$ --- together with the Lorentz covariance of the Sea wave equation itself (founder ruling $\alpha$, Patch 2502; \texttt{OPEN-SR-EPSILON} RESOLVED-$\alpha$). The grounding inherits \texttt{OPEN-SR-10}'s caveats verbatim: a viability result at world-call strength, not a theorem; the covariance rests on a hopping-sum proxy; and it leans on C3 and \texttt{OPEN-SR-9}. Because the Laue coefficient is exactly~1, closed patterns carry \emph{no residual beyond $\gamma_{\rm SR}$}: empirical equivalence to special relativity is not a defect awaiting repair but the grounded consequence of the mechanism, and this paper is accordingly rebilled as a \emph{grounding paper} (\texttt{OPEN-SR-1-PREDICTIONS}, accept-interpretation). Its sole inherited falsifier is the $l{=}6/q^4$ dispersion-anisotropy floor at $\sim l_P/10^{30}$ from \texttt{OPEN-SR-10} --- a genuinely non-SR structural consequence of the deterministic 600-cell substrate, far below present observational reach. The prediction set of earlier versions stays withdrawn (Sec.~\ref{sec:empirical_status}). Nor is $k$ an independent prediction: any rescaling $k \to \alpha k$ absorbed into the $\Delta$SSV normalisation leaves $k\cdot\Delta\text{SSV}$---and hence every observable---unchanged, so $k = l_P^3/E_P \approx 2.16\times10^{-114}$~m$^3$/J records a \emph{normalisation convention} paired with the $\Delta$SSV definition, not a derived quantity (Appendix~A.5, Step~3). The functional form is a minimal ansatz within the rational class and is not shown to be unique to the 600-cell: Hooke-like response and saturation fix only the initial slope and the asymptote, and other saturating laws ($e^{-\varepsilon}$, $(1+2\varepsilon)^{-1/2}$, $(1+\varepsilon/n)^{-n}$) satisfy the same two conditions. Deriving the strain--kinematics map $\varepsilon(v)$ from substrate dynamics \emph{without} importing $\gamma_{\rm SR}$ --- the outstanding problem stated at v19 --- is resolved at W2 strength by the energy-level route above (\texttt{OPEN-SR-EPSILON} RESOLVED-$\alpha$, Patch 2502); the residual theorem-grade debts (the from-PCD dispersion derivation, the SF-6 vector completion) remain registered and are not verdict-bearing.
 \end{abstract}
 
 \bigskip
@@ -216,12 +235,16 @@ These effects emerge naturally from geometric constraints rather than being post
 \section{Empirical Status}
 \label{sec:empirical_status}
 
-\textbf{This framework is empirically equivalent to standard special relativity by
-construction, and yields no independent falsifiable predictions at present.}
-Appendix~A.8.1 establishes $\gamma_{\rm CPP} = \gamma_{\rm SR}$ \emph{identically at all
-velocities}. An identity admits no deviation: if the two Lorentz factors agree
-everywhere, no measurement can distinguish the frameworks, and no residual remains to
-be predicted.
+\textbf{This framework is empirically equivalent to standard special relativity, and as
+of Patch 2502 that equivalence is a grounded result rather than an unexplained
+construction.} Appendix~A.8.1 establishes $\gamma_{\rm CPP} = \gamma_{\rm SR}$
+\emph{identically at all velocities}. An identity admits no deviation: if the two
+Lorentz factors agree everywhere, no measurement can distinguish the frameworks, and no
+residual remains to be predicted. At v19 this identity rested on an imported bridge;
+it now grounds at the energy level for closed self-bound patterns at W2 world-call
+strength (Sec.~\ref{sec:resolution} below), with the Laue coefficient \emph{exactly}~1
+--- so the correct reading of the withdrawn prediction set is that no such predictions
+were ever available within this mechanism, not that they await restoration.
 
 \subsection{Retraction of the previous prediction set (Patch 2474)}
 
@@ -273,43 +296,135 @@ is sufficient.
   adjustable numerical parameter enters the SR-identification layer}.
 \end{enumerate}
 
+\subsection{Mechanism-level diagnosis of the withdrawn set (Patch 2503)}
+
+The blind-pinned SF-6 inertia mechanism (pinned Patch 2496; reconciled against this
+sector's record at Patch 2498) supplies the mechanism-level diagnosis that the v19
+triage could state only formally. In the pinned mechanism, the co-moving Sea-polarization
+cloud carries an energy store $\tfrac{1}{2}\kappa v^2$ --- the store tracks
+\emph{velocity}, exactly as every $\Delta$SSV definition in this paper does --- while
+acceleration appears only in the retarded back-reaction force $F_{\rm self} = -\kappa a$.
+\textbf{Energy tracks $v^2$; force tracks $a$.} The withdrawn predictions each placed
+the force variable where the store belongs:
+
+\begin{enumerate}
+\item \textbf{High-acceleration time-dilation deviation} and
+\item \textbf{ultra-centrifuge clock offset}: both read proper acceleration into
+  $\Delta$SSV, i.e.\ into the store. The store is velocity-sourced; the acceleration
+  response is the back-reaction force, which for closed self-bound patterns carries Laue
+  coefficient exactly~1 --- it \emph{is} relativistic inertia, with nothing left over to
+  shift a clock beyond $\gamma_{\rm SR}(v)$.
+\item \textbf{Gravitational-wave dispersion at extreme curvature} and
+\item \textbf{Casimir modification}: both scaled a stress residual with an
+  acceleration/curvature variable for which the mechanism supplies no store term at all.
+\item \textbf{Unruh temperature shift}: assumed an acceleration-dependent contribution
+  to $\Delta$SSV \emph{additional} to the kinetic term. The pinned mechanism settles this
+  negative for closed patterns: the acceleration response exists ($F_{\rm self} =
+  -\kappa a$, retarded by the cloud light-crossing time) but is exhausted by the
+  coefficient-1 inertia; no additional stress contribution, hence no residual.
+\end{enumerate}
+
+The muon bound inherits the confusion of items 1--2 in addition to the convention defect
+already recorded above. \textbf{The withdrawal is therefore not provisional: within the
+pinned mechanism there is no acceleration-sourced residual to restore.}
+
+\emph{Inheritance caveats.} Any use of the pin's $\kappa$ inside this paper's machinery
+is subject to the $(k, \Delta\text{SSV})$ matched-pair hazard of Appendix~A.8.1 ---
+$\kappa$ and its paired stress definition must be quoted and used together. And no
+coefficient cited here is registry-canonical: $\kappa = (2/3)\,U_{\rm pol}/c^2$ and the
+Laue coefficient~1 are cited at pinned/session strength; their promotion is SF-6 v2.0's.
+
 \subsection{What survives, and under what condition}
 
 The mode-counting algebra of Appendix~F is internally correct and is retained as
 \emph{conditional} structure: \emph{if} an acceleration-dependent contribution to
 $\Delta\text{SSV}$ were derived, then $\delta T/T = \varepsilon$ follows exactly --- and
 exactly, not merely to leading order, since $T \propto \mathcal{E}_0^{1/4} \propto
-(1+\varepsilon)$. The antecedent has not been established. The same conditional status
-applies to the Casimir $(l_P/d)^4$ scaling of Appendix~E, which additionally requires an
-independent derivation of the 4D spectral measure and boundary conditions before it can
-be advanced as a prediction. Neither result inherits validity from the PSR constitutive
-formula alone.
+(1+\varepsilon)$. \textbf{The antecedent is now settled negative for closed self-bound
+patterns} (Patch 2503, per the pinned mechanism: the acceleration response is the
+coefficient-1 inertial back-reaction itself, leaving no additional stress contribution;
+see the diagnosis subsection above). Appendix~F and the Casimir $(l_P/d)^4$ scaling of
+Appendix~E are accordingly retained as internal algebra only, \emph{not} as candidate
+predictions --- permanently so within the pinned mechanism, not merely pending a
+derivation. Consequently the withdrawn Unruh mode-counting Monte-Carlo claim is
+\textbf{permanently withdrawn} rather than outstanding: no restored numerical artifact
+could promote conditional structure whose antecedent fails
+(\texttt{OPEN-SR-1-MC-VERIFY}, resolved by withdrawal; the retained numerical
+verification is the geometric-inputs script of Appendix~A.7, which the reframed claims
+fully support). Neither result inherits validity from the PSR constitutive formula
+alone.
 
-\subsection{The outstanding problem}
+\subsection{Resolution of the outstanding problem (Patches 2493--2502)}
+\label{sec:resolution}
 
-What must be derived, and has not been, is the \textbf{strain--kinematics map}
-$\varepsilon(v)$ --- from Conscious Point dynamics, without importing $\gamma_{\rm SR}$
-or an equivalent relativistic identity as input. A satisfactory closure would reproduce
-at least the leading $v^2/2c^2$ behaviour and preferably the divergence as $v \to c$.
-Appendix~H.1 eliminates the three natural displacement models (exponents $n \in \{1,1,5/2\}$
-against the required $n=2$); it does \emph{not} establish class coverage --- that claim
-was withdrawn at Patch 2475 when the underlying cap expansion was found to be wrong. The
-corrected exponents \emph{bracket} the target, so a displacement geometry with
-$V_{\rm excl} \propto f^2$ remains a live candidate (\texttt{OPEN-SR-H1-CLASS}). Registered as
-\texttt{OPEN-SR-EPSILON}.
+v19 registered the \textbf{strain--kinematics map} $\varepsilon(v)$ --- to be derived
+from Conscious Point dynamics without importing $\gamma_{\rm SR}$ or an equivalent
+relativistic identity --- as the outstanding problem of this line
+(\texttt{OPEN-SR-EPSILON}). It was pursued to closure in two arms.
 
-Until that question is answered, the honest characterisation of this paper is: \emph{a
-substrate representation of relativistic dilation, conditional on an imported
-energy-momentum bridge, together with a rigorous negative theorem constraining what pure
-displacement geometry can achieve.}
+\textbf{The geometric arm is dead.} The bracketing observation of Appendix~H.1.4
+launched \texttt{OPEN-SR-H1-CLASS}: the codim-2 tube geometry was confirmed as the
+unique $n=2$ member of the systematic exclusion family, reproducing
+$\varepsilon = \gamma_{\rm SR} - 1$ exactly at all orders \emph{as a geometric
+identity}. But its mechanism burden could not be discharged: the campaign derived the
+displacement arena (M4: the PSR insphere), dissolved the stress-scaling fork (M9), and
+established the distinguished 2-plane (M1), yet the exclusion rule (M2) proved
+underdetermined by the corpus --- four surviving rules, pairwise inequivalent
+($\varepsilon = 0$; $n=1$ twice; $n=2$) --- and the item closed
+\textbf{NEGATIVE-FOR-MECHANISM} (K1, founder ruling, Patch 2493). The subsequently
+blind-pinned SF-6 inertia mechanism was then tested against the pinned fork in a
+pre-registered panel round: \textbf{unanimous NOTHING} --- the mechanism is
+capacity-silent, and no seat selected the $n=2$ rule (Patch 2500). Per the
+pre-committed semantics, no further geometric rounds; the geometric half survives only
+as the ungrounded identity \texttt{PROP-SR-H1-1}.
+
+\textbf{The energy arm closed positive at W2 strength.} The same pinned mechanism
+supplies the independent normalisation that this item's registry text had named as the
+recommended attack: $\kappa = (2/3)\,U_{\rm pol}/c^2$ for the open polarization cloud
+(statics-pinned, zero knobs), and --- for closed self-bound patterns anchored on
+$E_0 = \hbar\nu_C$ --- the Laue coefficient \emph{exactly}~1, riding on the Lorentz
+covariance of the Sea wave equation itself. Whether that covariance satisfies the
+``without importing $\gamma$'' clause was adjudicated by the pre-registered round
+(Q2: 1~YES / 1~NO / 2~CONDITIONAL, filed to founder) and ruled $\alpha$ (Patch 2502):
+\emph{recorded SATISFIED for closed self-bound patterns at W2 world-call strength}, the
+ratified grounding being \texttt{OPEN-SR-10} RESOLVED-W2. The grounding inherits
+\texttt{OPEN-SR-10}'s caveats \emph{verbatim}: a viability win, not a theorem; the
+covariance rests on a hopping-sum proxy (the full PCD dynamics are not computed); and it
+leans on C3 and \texttt{OPEN-SR-9}. Residual theorem-grade debts remain registered and
+are \emph{not} verdict-bearing: the from-PCD-dynamics dispersion derivation
+(\texttt{OPEN-SR-10} residual item~(i)), the SF-6 vector completion (debt~(b)), and
+capacity-set integration (discretionary pursuit, no gate). Record:
+\texttt{series\_relativity/development/review\_epsilon\_fork\_prereg\_round2/}
+\texttt{04\_round\_execution\_record.md}, \S6.
+
+\textbf{Consequence: this is a grounding paper.} With the Laue coefficient exactly~1
+for closed self-bound patterns, the identity $\gamma_{\rm CPP} = \gamma_{\rm SR}$ is the
+grounded output of the mechanism, and there is \emph{no residual beyond
+$\gamma_{\rm SR}$} to predict. SR-1's empirical content is therefore settled by
+acceptance (\texttt{OPEN-SR-1-PREDICTIONS}, accept-interpretation executed at Patch
+2503): the paper grounds relativistic kinematics in substrate mechanics rather than
+competing with special relativity empirically, and it is removed from the programme's
+zero-parameter prediction count on those terms. Its \textbf{inherited falsifier} is
+\texttt{OPEN-SR-10}'s $l{=}6/q^4$ dispersion-anisotropy floor at $\sim l_P/10^{30}$: a
+genuinely non-SR structural consequence of the deterministic 600-cell substrate ---
+in-principle discriminating, though far below present observational reach.
+
+The honest characterisation of this paper is now: \emph{a substrate grounding of
+relativistic dilation for closed self-bound patterns, at W2 world-call strength with
+caveats inherited, together with a closed negative on the pure-displacement-geometry
+route.}
 
 \section{Conclusion}
 
-This paper presents a \emph{substrate representation} of special relativity within the
-quasicrystalline 600-cell lattice of Conscious Point Physics, conditional on an imported
-energy-momentum bridge. It is not a first-principles derivation of special relativity:
-the Lorentz factor is supplied as an input (Appendix~A.8.1), and Appendix~H.1 shows that
-the three natural displacement models cannot supply it unaided. By modeling space as an overlapping lattice of 600-cell motifs whose vertices
+This paper presents a \emph{substrate grounding} of special relativity within the
+quasicrystalline 600-cell lattice of Conscious Point Physics. It is not a
+first-principles derivation \emph{within these pages}: the Lorentz factor enters through
+the energy-momentum bridge (Appendix~A.8.1), and Appendix~H.1 shows that the three
+natural displacement models cannot supply it unaided. But the bridge is no longer a bare
+import: $\varepsilon = \gamma - 1$ grounds at the energy level for closed self-bound
+patterns at W2 world-call strength, via the blind-pinned SF-6 inertia mechanism and the
+Lorentz covariance of the Sea wave equation, with \texttt{OPEN-SR-10}'s caveats
+inherited verbatim (Sec.~\ref{sec:resolution}). By modeling space as an overlapping lattice of 600-cell motifs whose vertices
 form the absolute Grid Points, excess Space Stress Vector ($\Delta$SSV) reduces 
 effective Voronoi cell volumes and contracts the Planck Sphere Radius, limiting 
 displacement per absolute Moment. Once the bridge is supplied, this mechanism carries time
@@ -321,9 +436,12 @@ $\alpha_{\rm geom}$) from the binary icosahedral group and confirms the
 rescaling-invariance of $k\cdot\Delta\text{SSV}$.
 
 We state the standing of this work without embellishment. The framework is empirically
-equivalent to standard special relativity \emph{by construction}, and therefore makes no
-independent testable claim at present; the prediction set and muon constraint of earlier
-versions are withdrawn (Sec.~\ref{sec:empirical_status}). What is established is
+equivalent to standard special relativity, and that equivalence is now grounded: the
+Laue coefficient is exactly~1 for closed self-bound patterns, so no residual beyond
+$\gamma_{\rm SR}$ exists to predict --- the paper makes no independent testable claim by
+\emph{consequence of the mechanism}, not by oversight. The prediction set and muon
+constraint of earlier versions stay withdrawn, with mechanism-level diagnoses now
+attached to each (Sec.~\ref{sec:empirical_status}). What is established is
 narrower than earlier versions asserted, and it is real: the 600-cell geometric
 constants are derived from $2I$; the constitutive form is a minimal rational ansatz
 consistent with Hooke-like response and saturation; and---the principal positive result
@@ -334,12 +452,17 @@ none recovers it. That negative result is not a limitation of the paper; it is i
 secure contribution. It is narrower than earlier versions claimed --- the class-coverage
 theorem was withdrawn at Patch 2475 --- and narrower is what it is.
 
-The programme's obligation is now explicit: derive $\varepsilon(v)$ from Conscious Point
-dynamics without importing $\gamma_{\rm SR}$. Should that succeed, the representation
-offered here becomes the derivation it was previously billed as. Should it fail in a
-provable way, that too would be a result. Until then, Conscious Point Physics offers a
-coherent mechanical interpretation of relativistic phenomena, conditional on standard
-relativistic kinematics as input---not an explanation of their origin.
+The obligation stated at v19 --- derive $\varepsilon(v)$ from Conscious Point dynamics
+without importing $\gamma_{\rm SR}$ --- has been discharged at W2 world-call strength
+for closed self-bound patterns, by the energy-level route and after the geometric route
+closed negative (Sec.~\ref{sec:resolution}). The grounding is a viability result, not a
+theorem: the from-PCD dispersion derivation, the SF-6 vector completion, and the exact
+$l{=}6$ floor coefficient remain registered as residual debts that do not bear on the
+verdict. On these terms Conscious Point Physics offers a grounded mechanical account of
+relativistic phenomena for physical (closed self-bound) particles --- with the
+$l{=}6/q^4$ anisotropy floor at $\sim l_P/10^{30}$ as its inherited, in-principle
+falsifier --- rather than either an unexplained representation or an empirical
+competitor to special relativity.
 
 % ============================================================
 % BIBLIOGRAPHY
@@ -960,6 +1083,20 @@ exact at every $v \in [0,c)$.
 This result has a precise meaning: the CPP framework does not \emph{approximate} special relativity — it \emph{contains} it exactly, in the sense that the geometric strain produced by the 600-cell lattice is the unique function of velocity that equals $\gamma_{\rm SR} - 1$ when the Dipole Sea stores the complete relativistic kinetic energy. The energy-momentum bridge (Eq.~\ref{eq:bridge}) is not a new postulate; 
 it follows from the definition of $k$, the definition of $\Delta\text{SSV}$ as kinetic energy density, and the Planck-scale normalization already established in Appendix~A.5. Appendix~H undertakes the deeper geometric analysis: H.1 shows that none of the three natural displacement models recovers the
 exact Lorentz factor independently (strain exponents $n \in \{1,1,5/2\}$ against the required $n = 2$), so the energy-momentum bridge is required within that set --- though \emph{not}, as versions through v19 asserted, provably required for the whole class (withdrawn at Patch 2475; see H.1.4) --- while H.2 identifies the unique effective displacement fraction $f_{\rm eff} = 1 - 1/\gamma_{\rm SR}$ that renders the framework internally consistent to all orders in $v/c$.
+
+\emph{Grounding note (Patch 2503).} The standing of the bridge changed at Patch 2502.
+It remains an input \emph{to this paper}, but it is no longer a circular import of
+$\gamma_{\rm SR}$: the identification $\Delta\text{SSV} \propto (\gamma_{\rm SR}-1)mc^2$
+is now grounded at the energy level for closed self-bound patterns at W2 world-call
+strength, via the blind-pinned SF-6 inertia mechanism ($\kappa = (2/3)\,U_{\rm pol}/c^2$
+open cloud; Laue coefficient exactly~1 for closed patterns, anchored on
+$E_0 = \hbar\nu_C$) riding on the Lorentz covariance of the Sea wave equation itself
+(founder ruling $\alpha$; \texttt{OPEN-SR-EPSILON} RESOLVED-$\alpha$;
+\texttt{OPEN-SR-10}'s caveats inherited verbatim --- viability win, not theorem;
+hopping-sum proxy; leans on C3 and \texttt{OPEN-SR-9}). See
+Sec.~\ref{sec:resolution}. The matched-pair discipline of this appendix applies
+unchanged to any inheritance of the pin's $\kappa$: coefficient and paired stress
+definition are quoted together, and no coefficient here is registry-canonical.
 
 \subsubsection{The Speed Limit as a Geometric Theorem}
 \label{app:A82}
@@ -1777,7 +1914,7 @@ energy~\eqref{eq:E0_cutoff}, which is unsuppressed at the cutoff
 because it has no $e^{\hbar\omega/kT}$ denominator.
 
 
-At Planck-scale accelerations (\(\Delta\text{SSV} \gtrsim \text{SSV}_{\rm crit}\)) the spectrum saturates nonlinearly as \(\text{PSR}_{\rm eff} \to 0\), providing a sharp ultraviolet cutoff that is a genuine, testable deviation from the standard Unruh prediction. The linear-regime result at laboratory accelerations and the saturation behaviour at extreme stress both follow analytically from the mode-counting derivation of Appendix~F. \emph{Correction note (Patch 2471):} an earlier version of this paragraph additionally reported that ``full numerical integration of the stressed 600-cell mode-counting integral (Monte-Carlo over the 120 vertices) recovers the linear result to machine precision''; that claim is \textbf{withdrawn}, as no such artifact exists in the repository and none is known to have been executed. The analytic derivation is unaffected; the numerical confirmation is registered as outstanding under \texttt{OPEN-SR-1-MC-VERIFY}.
+At Planck-scale accelerations (\(\Delta\text{SSV} \gtrsim \text{SSV}_{\rm crit}\)) the spectrum saturates nonlinearly as \(\text{PSR}_{\rm eff} \to 0\), providing a sharp ultraviolet cutoff that would deviate from the standard Unruh prediction \emph{if} an acceleration-dependent contribution to $\Delta$SSV existed. \emph{(Status at v20: that antecedent is settled negative for closed self-bound patterns --- the pinned mechanism's acceleration response is the coefficient-1 inertial back-reaction, with no additional stress contribution; see Sec.~\ref{sec:empirical_status}. This paragraph is retained as internal conditional algebra, not as a prediction.)} The linear-regime result at laboratory accelerations and the saturation behaviour at extreme stress both follow analytically from the mode-counting derivation of Appendix~F. \emph{Correction note (Patch 2471, finalised Patch 2503):} an earlier version of this paragraph additionally reported that ``full numerical integration of the stressed 600-cell mode-counting integral (Monte-Carlo over the 120 vertices) recovers the linear result to machine precision''; that claim was withdrawn at Patch 2471, as no such artifact exists in the repository and none is known to have been executed, and is \textbf{permanently withdrawn} at Patch 2503: with the conditional antecedent settled negative, no restored numerical artifact could promote this structure to a prediction (\texttt{OPEN-SR-1-MC-VERIFY}, resolved by withdrawal). The analytic derivation is unaffected as internal algebra.
 
 This derivation uses only the geometric machinery already established in Appendices~A–E and closes the Unruh prediction loop without additional postulates.
 
@@ -2160,10 +2297,12 @@ alternatives --- it is the unique physical input required to close the argument.
 by its own Model~3, which yields $n = 5/2 > 1$ in contradiction of the theorem's own
 premise. What stands is the elimination of the three models examined. Moreover the
 corrected exponents \emph{bracket} the target ($1 < 2 < 5/2$) rather than lying beneath
-it, so the class question is genuinely open and an exclusion geometry with
-$V_{\rm excl} \propto f^2$ remains a live candidate (\texttt{OPEN-SR-H1-CLASS}). Within
-the three models examined the bridge is required; whether it is required \emph{in
-principle} is not established here.
+it, so the class question was genuinely reopened by this correction. \emph{(Status at
+v20: pursued to closure and now CLOSED negative-for-mechanism ---
+\texttt{OPEN-SR-H1-CLASS}, K1, Patch 2493; round-2 Q1 unanimous, Patch 2500; the
+geometric half survives as the ungrounded identity \texttt{PROP-SR-H1-1}. See
+Sec.~\ref{sec:resolution}.)} Within the three models examined the bridge is required;
+the pure-geometry route to supplying it independently is now closed.
 
 The second part (Appendix~H.2) completes the geometric picture by asking the inverse question: given that $\gamma_{\rm CPP} = 
 \gamma_{\rm SR}$ exactly (established in A.8.1), what effective displacement fraction $f_{\rm eff}$ must the corridor exclusion model 
@@ -2340,12 +2479,19 @@ the class. \textbf{The class-coverage claim is withdrawn and the question is reo
 This matters, and not only for bookkeeping: with the corrected exponents the natural
 models \emph{bracket} the target, $1 < 2 < 5/2$. The only argument previously offered for
 class coverage was that all exponents lie at or below $1$, hence below $2$. That argument
-is gone, and nothing now excludes an exclusion geometry whose excluded volume scales as
-$V_{\rm excl} \propto f^{2}$ --- which by $V \propto r^4$ volume conservation would yield
-$\varepsilon \propto f^2$, exactly what $\gamma_{\rm SR}$ requires. \emph{The erroneous
-theorem closed a route that may in fact be open.} Registered as
-\texttt{OPEN-SR-H1-CLASS}; see also \texttt{OPEN-SR-EPSILON}, for which this is now a
-live candidate attack.
+is gone, and nothing in this appendix excludes an exclusion geometry whose excluded
+volume scales as $V_{\rm excl} \propto f^{2}$ --- which by $V \propto r^4$ volume
+conservation would yield $\varepsilon \propto f^2$, exactly what $\gamma_{\rm SR}$
+requires. \emph{The erroneous theorem closed a route that was, at that point, open.}
+Registered as \texttt{OPEN-SR-H1-CLASS} and pursued to closure: the codim-2 tube was
+confirmed as the unique $n=2$ member of the systematic family and reproduces
+$\varepsilon = \gamma_{\rm SR}-1$ exactly at all orders \emph{as a geometric identity}
+--- but the mechanism burden could not be discharged (the exclusion rule proved
+underdetermined by the corpus; the blind-pinned SF-6 mechanism is capacity-silent;
+round-2 Q1 unanimous NOTHING, Patch 2500). The item is \textbf{CLOSED
+negative-for-mechanism} (K1, founder ruling, Patch 2493); the identity survives
+ungrounded as \texttt{PROP-SR-H1-1}, and \texttt{OPEN-SR-EPSILON} closed instead on the
+energy-level route (RESOLVED-$\alpha$, Patch 2502; Sec.~\ref{sec:resolution}).
 
 \textbf{Scope of the theorem.} The Geometric Insufficiency Theorem covers all geometric exclusion models in which the excluded volume is 
 (i) simply connected, (ii) determined solely by the current displacement direction and magnitude, and (iii) computed within a 
