@@ -19,3 +19,9 @@ The review protocol earned its keep: cycle 1 caught a real overclaim, the restat
 - Stale README source map (EW-3/EW-5) — corrected 1601.
 - Stale "manifestation (iii) open" framing inherited from the 1305 outline — corrected 1602 (it is closed; the EM expression is what's owed).
 - A CHANGELOG comment block mistakenly added to the .tex header at 1607 — removed 1608 per the version-archaeology rule (archaeology lives in changelog-sf-6.md).
+
+---
+
+## Vignette — the inertia impulse pin (Patch 2496, 15 July 2026, blind session)
+
+The session that paid SF-6's oldest debt was run deliberately blind: post-2470 SR-sector work existed in the tree (fragments 2491–2495, filenames only), and the charter required this derivation to be independent of it. The founder's mechanism — eDP poles swinging counter to an accelerating CP, ½LI² storage with velocity as current — went from analogy to computation in three integrator iterations. The first two failures were themselves physics: the stability-vs-transmission mobility conflict, and the undressed massless point's Abraham–Lorentz runaway (v shot to 0.42c during "coast"), which registered as a sub-debt rather than being suppressed. The instrument that worked: prescribe the trajectory, let the back-reaction be the measurement, release the CP only after it is dressed. The coefficient κ = (2/3)U_pol/c² was predicted from statics before dynamics ran and confirmed six independent ways; κ_E = κ_P was seen numerically (0.5752 vs 0.5749) before it was proved in two lines. Newton I arrived unbidden: the dressed CP coasts, with a finite-mobility drain τ = κμ that is itself a third κ reading. The open-cloud 2/3 versus the closed-pattern Laue coefficient 1 is the bridge to the electron anchor — and the mechanism-level replacement for the parameter-tuned convergence at ~line 213.
