@@ -16,6 +16,14 @@
 >    it (m2 dt-sign-flips persist at the pinned coefficient). Ensemble averaging is the named fix; until
 >    executed, the leg-based #1+#2 mode record is the operative mode evidence. This flag is a condition of
 >    the promotion (DeepSeek seat), not a footnote.
+>    *Attempt record (Patch 2513, 16 July 2026):* the named fix was executed (28-member deterministic
+>    phase/amplitude ensemble at pinned κ, dt=τ_C/{50,25}) and returned **Branch U — C7 STANDS**: m1/ell
+>    unclassifiable, and the pre-registered amplitude diagnostic showed the 2ΔE/x² estimator outside its
+>    quadratic regime (amplitude-independent chaotic floor ~O(10 MeV) at TC=60; ratio 0.08/0.03 vs ~4), so
+>    neither stability nor instability is licensed by it at this TC/amplitude point (the ensemble's m2
+>    SIG-NEG-at-both-dt is disclosed and equally unlicensed). Leg-based record remains operative. Named
+>    follow-up: TC-extension floor-scaling arc and/or pre-registered larger-amplitude arc
+>    (`reasoning/2513.md` §7).
 > 2. **Emergent-duty residual:** whether the dance's emergent same-charge apposition duty ≥ 3/7 (expected
 >    yes; not yet measured in-run).
 > 3. **E_qq pin (statics):** the central E_qq remains an estimator-spanned window (40–170 MeV; 102 MeV
