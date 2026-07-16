@@ -1,6 +1,6 @@
 # DRAFT — SR-1 v20 shippable-win verification round
 
-**STATUS: UNDISPATCHED DRAFT. Dispatch at founder timing, after (i) the founder's read of v20 and (ii) the ClearPC PDF recompile. This is the single panel round the economy regime (WORKFLOW-REVIEW-ECONOMY) budgets for the SR-1 rewrite.**
+**STATUS: READY TO DISPATCH once patches 2503-2507 are pushed and the ClearPC PDF recompile is done (worker ruling under PD-006; founder read welcome but not gating). This is the single panel round the economy regime (WORKFLOW-REVIEW-ECONOMY) budgets for the SR-1 rewrite.**
 **Format on dispatch:** CONV-001 single-block format — one fenced copy-paste block per reviewer (GitHub links, one-paragraph intro, full rendered Markdown; 4-backtick outer fence). The canonical block is §3 below; paste it verbatim to each seated reviewer.
 
 ---

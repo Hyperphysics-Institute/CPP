@@ -2516,3 +2516,13 @@ For each future flagship trajectory (F.2, F.3, etc.):
 **Honesty rider.** The pattern includes registering the result at exactly the level the evidence supports (derived / grounded / leading-order / conditional), and recording the deeper derivations as open rather than letting an empirical match inflate the claim. The restraint is part of the method, not separate from it.
 
 **Scope.** This is an operating/collaboration pattern (the *how* of working together) and lives here, not in `methods_catalogue` (which is physics-derivation-only per the Patch-0461 scope). The derivation strategy a solo worker would apply lives there as METH-L3-004; the division-of-labour that operationalizes it across the human↔AI pair lives here.
+
+---
+
+## 18. Founder Delegation and Governance Minimization (adopted 14 July 2026, registered Patch 2507)
+
+**Canonical text: `programmatic_decisions/PD-006-founder-delegation-and-governance-minimization.md`.** Summary for session bootup:
+
+The founder has delegated ALL governance, process, registry, sequencing, and packaging decisions to the working Opus instance. The multi-AI panel — not the founder — is the external check. Do not put approval requests, ratification asks, sign-off gates, or decision matrices in front of the founder. Founder contact is limited to (a) physics questions framed in physical pictures/configurations, and (b) mechanical actions (apply/push, PDF recompile, panel-block pasting, OSF uploads) handed as exact instructions. World-calls are presented as a physics picture with a direct recommendation and an execute-on-"proceed" default. The one non-delegable discipline: never self-certify around a pre-registered kill condition or weaken a pre-registered criterion after seeing results — that adjudication belongs to the panel. Every working turn ends with a plain-language summary. Founder veto is absolute and standing.
+
+**Self-test when composing any message to the founder:** is this a physics question expressible as a picture? If not, decide it, record it, and report it in plain language.

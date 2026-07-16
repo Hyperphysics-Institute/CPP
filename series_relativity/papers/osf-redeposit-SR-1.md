@@ -8,7 +8,7 @@
 
 ## §1 — Why this re-deposit is not optional and should not wait long
 
-The OSF component currently hosts **v17**, which contains: the invalid dimensional-necessity k-derivation, four Monte-Carlo citations whose artifacts were stubs with hard-coded figures, the five-prediction set that double-counts k·ΔSSV = γ−1 as a deviation from the SR it reproduces, and the class-coverage "Geometric Insufficiency Theorem" that is false as stated (refuted by its own Model 3). That is a live integrity exposure on the public record under DOI. **Recommended sequencing:** founder read of v20 → ClearPC PDF recompile → **re-deposit promptly** → panel round (which can trigger a further v20.x update if SHIP-WITH-CHANGES). Rationale: the panel round verifies fidelity of an already-founder-ratified state; the public-record correction should not gate on it. Alternative (deposit after panel fold) is founder's call; the exposure argues against extended delay either way.
+The OSF component currently hosts **v17**, which contains: the invalid dimensional-necessity k-derivation, four Monte-Carlo citations whose artifacts were stubs with hard-coded figures, the five-prediction set that double-counts k·ΔSSV = γ−1 as a deviation from the SR it reproduces, and the class-coverage "Geometric Insufficiency Theorem" that is false as stated (refuted by its own Model 3). That is a live integrity exposure on the public record under DOI. **Sequencing (worker ruling under PD-006):** ClearPC PDF recompile → **re-deposit promptly** → panel round (which can trigger a further v20.x update if SHIP-WITH-CHANGES). Rationale: the panel verifies fidelity of an already-ratified state; the public-record correction does not gate on it.
 
 ## §2 — Deposit mechanics
 
@@ -44,4 +44,4 @@ special relativity; Lorentz factor; time dilation; 600-cell; quasicrystal; Consc
 - [ ] `publication_status_audit.md`: SR-1 entry updated.
 - [ ] This file: flip **Status: PREPARED** → **Status: DEPOSITED at <date>**.
 
-**Status: PREPARED (awaiting founder read + ClearPC recompile).**
+**Status: PREPARED (awaiting ClearPC recompile; deposit immediately after).**
