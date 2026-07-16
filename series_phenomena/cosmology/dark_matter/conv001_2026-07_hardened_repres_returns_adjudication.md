@@ -54,3 +54,8 @@ median of the updated calibrations; Ω_DM unparks. No founder sign-off (PD-006 s
    its park; it may be scheduled as a named campaign. Unparking ≠ derived — the 5:1 ratio remains open.
 4. G7 audit: no parameter moved to obtain this outcome; κ pinned (2496) before the probe; headline at ×1;
    Branch S and the returns reading both pre-registered before their respective evidence.
+
+## §4 Post-adjudication amendment (Patch 2512, same day)
+Founder reports Copilot functioning again. PROSPECTIVE probationary re-seating registered (pre-registered
+fidelity screen; four-seat binding reads until two consecutive screen-clean returns; details
+`reasoning/2512.md`). §1–§3 above are UNCHANGED — no retroactive re-opening.

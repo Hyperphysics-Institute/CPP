@@ -11,7 +11,12 @@
 - **Ω_DM UNPARKED** (route-B relic line schedulable; 5.36 ratio NOT derived).
 - **Statics gates PARKED, not discharged:** E_bond convention CONV-001 fork + R5 transverse tensor
   reactivate on any statics-route claim.
-- Copilot seat remains CLOSED; its unsolicited 2511 return archived and excluded (outcome-neutral).
+- Copilot seat: **PROBATIONARY RE-SEATING registered (Patch 2512, prospective only)** — founder reports the
+  tool functions again. From the next dispatch: Copilot receives packages; returns pass a pre-registered
+  fidelity screen (answer the actual questions as numbered; no imported numbering; no claiming other seats'
+  conditions; no fabrications); binding reads stay four-seat until TWO consecutive screen-clean returns
+  restore the full seat; screen failures re-close it. The 2511 aggregation is unchanged. Full ruling:
+  `reasoning/2512.md`.
 
 ## This session (2510–2511)
 2510: hardening probe — three disclosed artifact catches (v6 signed-axis parametric pump retired; v7
