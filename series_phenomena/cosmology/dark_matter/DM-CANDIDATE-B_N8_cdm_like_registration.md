@@ -24,8 +24,15 @@
 >    SIG-NEG-at-both-dt is disclosed and equally unlicensed). Leg-based record remains operative. Named
 >    follow-up: TC-extension floor-scaling arc and/or pre-registered larger-amplitude arc
 >    (`reasoning/2513.md` §7).
-> 2. **Emergent-duty residual:** whether the dance's emergent same-charge apposition duty ≥ 3/7 (expected
->    yes; not yet measured in-run).
+> 2. **Emergent-duty residual — MEASURED IN-RUN, RESOLVED ADVERSE-DIRECTION AT CONTACT SCALE (Patch 2514,
+>    16 July 2026; pre-registered Branch L).** At the pre-registered primary radius (contact, a_qq) the
+>    dance's same-charge qCP–qCP apposition duty is ~0 (0.0010/0.0021/0.0095 at dt=τ_C/{100,50,25}), far
+>    BELOW 3/7 — contact apposition is mechanically opposite-charge (OUT legs terminate on opposite-charge
+>    targets; piles stack there). At the pre-registered secondary bond-scale shell (2a_qq ≈ 1.49 fm) the
+>    duty is 0.368/0.370/0.381 — dt-stable, just below 3/7 (85–89%). Verdict-neutral by pre-registration
+>    (the promoted dynamical reading integrates the pairwise energy directly; no duty is plugged in). The
+>    adverse flag + the apposition-scale/energy-weighting convention question are QUEUED FOR DISCLOSURE in
+>    the next panel dispatch. `reasoning/2514.md`, `code/2514_emergent_duty.py`.
 > 3. **E_qq pin (statics):** the central E_qq remains an estimator-spanned window (40–170 MeV; 102 MeV
 >    contact-depth lock), not a single derived value.
 > 4. **Statics gates PARKED, not discharged:** the E_bond convention fork (CONV-001 adjudication) and the
