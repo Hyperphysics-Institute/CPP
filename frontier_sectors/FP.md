@@ -84,6 +84,22 @@ The Flagship Papers sit at the apex of the CPP programme, taking completed deriv
 
 ---
 
+### OPEN-FP-6-INERTIA-1: Emergent inertia — F = ma from DP-sea back-reaction with a derived coefficient
+**Status:** **OPEN** — first computation complete (Patch 2496); registered per the 2026-07-14 investigation charter
+**Sector(s):** FP / SF-6 (electromagnetism)
+**Priority:** HIGH (pays SF-6's effective-inertial-mass "tuned parameters" debt at the mechanism level; the CPP primitive is Aristotelian and memoryless, so Newtonian inertia must be *derived* from sea back-reaction or the framework owes an explanation)
+**One-line statement:** Derive Newton's second law and the inertial coefficient of a single CP from DP-sea polarization back-reaction (counter-oscillatory eDP pole movement; ½LI² storage analog), with the coefficient read off from substrate statics — never tuned — and anchor on the electron rest mass.
+**What a solution looks like:** (i) F = κa emerging Momentwise from the sea with the memoryless primitive unmodified; (ii) κ pinned by a statics-only prediction with zero free parameters; (iii) coasting (Newton I) emergent for the dressed CP; (iv) the electron anchor m = E₀/c² = ℏν_C/c² with coefficient exactly 1 for the closed SF-1 standing pattern, replacing SF-6's parameter-tuned convergence; (v) the vector (true eDP polarization) redo of the scalar-toy geometric factor.
+**Dependencies:** SF-6 v1.0 (E = ℏν_C; wave dynamics at c); the 2470 §5 founder mechanism (inductance analog); SF-1 (electron cage energy, for the anchor step).
+**Cross-sector connections:** Feeds the SF-6 v2.0 effective-inertial-mass section. The open-cloud (2/3) vs closed-pattern (Laue, coefficient 1) distinction connects to SF-1 cage structure. Deliberately firewalled this session from the SR/PROP sectors (blind-session guards) — reconciliation with any post-2470 SR-sector inertia work is a follow-up for an unblinded session.
+**Current best result:** Patch 2496 (scalar toy, one CP, non-relativistic): κ = (2/3)U_pol/c² predicted from statics and confirmed by six independent readings (steady FFT P/v and 2dE/v²; Momentwise −F_self/a; hold-phase P/v; coast τ/μ at two mobilities) within lattice-discreteness corrections that shrink under σ-refinement (Momentwise ratio 1.051 → 1.020 for σ 1.5 → 2.5). κ_E = κ_P proved exactly at O(v²) for the rigid source (no 4/3 ambiguity at this order). Newton I emergent with finite-mobility drain τ = κμ. Sketch: `flagship_papers/electromagnetism/sketches/sf6_inertia_impulse_pin.md`; verify: `flagship_papers/electromagnetism/code/2496_sf6_inertia_impulse.py`.
+**Registered sub-debts:** (a) bare-point runaway (undressed massless CP not a stable asymptotic object; Abraham–Lorentz analog, observed empirically); (b) scalar-toy → vector redo of the geometric factor; (c) O(β²)/rigid-source structure and radiation reaction; (d) electron-anchor numerical simulation (SF-1 cage under the same protocol).
+**Falsification route:** A dynamics run whose measured Momentwise coefficient fails to converge to the statics prediction under σ-refinement would falsify the storage mechanism; an SF-1 cage simulation yielding an inertial coefficient ≠ E₀/c² (beyond discreteness corrections) would falsify the closed-pattern anchor.
+**Paper(s):** SF-6 v1.0 SHIPPED Patch 1607 (the tuned effective-inertial-mass section this item replaces); Patch 2496 sketch + verify script.
+**Registered:** 15 July 2026, Patch 2496 (first computation; charter opened 14 July 2026, Patch 2470 handover).
+
+---
+
 **[Maintainer note — FP count reconciliation pending]** The section header count ("16 active + 1 resolved (17 problems)") was extracted 2026-05-25 and predates OPEN-FP-3-CKM (registered 14 Jun, Patch 1506) the two OPEN-FP-5-* entries (15 Jun), and the two OPEN-FP-6-* entries above (21 Jun, Patch 1609). The header count should be reconciled at the next FP audit; the auditable record is the per-entry blocks, which are current.
 
 ---
