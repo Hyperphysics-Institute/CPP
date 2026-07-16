@@ -274,7 +274,8 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 **Paper(s):** SR-1; SF-6; reconciliation record `series_relativity/development/sf6_sr_reconciliation.md`.
 **Registered:** 15 July 2026, Patch 2498
 **UPDATED 15 July 2026 (Patch 2500):** **T1 CLOSED** — panel unanimous NOTHING (the pin is capacity-silent; the record says the substrate as pinned is uncommitted on the admissible set, not affirmatively translation-neutral). **T2 AWAITING FOUNDER RULING** on the compiled condition (α/β fork in `04_round_execution_record.md` §2; the named derivation coincides with OPEN-SR-10 residual item (i)). T3 was a recorded no-op. This item now stays OPEN on T2 alone and closes at the founder's ruling.
-**Last updated:** 15 July 2026 (Patch 2500)
+**AMENDED 15 July 2026 (Patch 2501):** DeepSeek's true return filed (provenance resolved: the duplicated text was Copilot's, unseated). **Q1 execution UNCHANGED** (4/4 NOTHING). **Q2 tally now 1 YES / 1 NO / 2 CONDITIONAL — still files to founder**, compilation strengthened: THREE of four seats independently name substrate-derived covariance (= OPEN-SR-10 residual item (i)) as the gate; β is now enumerated as {OPEN-SR-10 item (i)} + {debt (b) vector completion} + {capacity-set integration (new, DeepSeek; scope-guarded: a γ-grounding condition that CANNOT reopen the settled Q1)}. Copilot seat REOPENED prospectively with a non-independence caveat on this topic family (`04_round_execution_record.md` §5).
+**Last updated:** 15 July 2026 (Patch 2501)
 
 ---
 ### OPEN-SR-1-PREDICTIONS: SR-1 Has No Falsifiable Predictions — Restore or Accept

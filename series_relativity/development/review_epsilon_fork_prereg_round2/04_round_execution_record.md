@@ -30,3 +30,15 @@ The pasted DeepSeek return is verbatim-identical to an unsolicited return pasted
 ## §4 — Registry execution in this patch
 
 OPEN-SR-EPSILON: mechanism question SETTLED NEGATIVE (update appended). OPEN-SR-SF6-RECON-1: T1 CLOSED (unanimous NOTHING); T2 AWAITING FOUNDER RULING (α/β above); item stays OPEN on T2 alone. PROP-SR-H1-1: round outcome appended; GEOMETRIC EXISTENCE ONLY now permanent. Dashboard: no count changes (no item opened or fully closed). DM candidate (B): PARKED, untouched. No coefficient promoted.
+
+## §5 — AMENDMENT (Patch 2501): DeepSeek's true return filed; provenance resolved; Copilot seat reopened prospectively
+
+**Provenance resolution:** the duplicated Patch-2500 text was **Copilot's** (founder-confirmed); DeepSeek's true return is now filed at `03_deepseek_return.md`. The §1 table's DeepSeek row is superseded as follows: **R0 CONSENT / Q1 NOTHING / Q2 CONDITIONAL** (two named conditions: (1) vector completion with substrate-derived covariance; (2) capacity-set integration).
+
+**Re-run tallies (seated four):** R0 4/4 CONSENT — valid, unchanged. **Q1 4/4 NOTHING — the Patch-2500 execution stands exactly as executed** (mechanism question NEGATIVE; no further geometric-route rounds; the robustness analysis in §2 anticipated precisely this: any NEGATIVE-class replacement leaves the execution untouched). **Q2 now 1 YES / 1 NO / 2 CONDITIONAL** — still no category at ≥3; **disposition unchanged: files to the founder** — but the compilation strengthens and enriches:
+- **Three of four seats** (ChatGPT NO, Gemini CONDITIONAL, DeepSeek condition 1) independently name the same primary gate: **the sea equation's covariance must be substrate-derived, not assumed** = OPEN-SR-10 residual item (i). Grok is the lone unconditional YES.
+- DeepSeek's condition 1 additionally names **vector completion** — already registered as the pin's debt (b); no new item needed.
+- DeepSeek's condition 2 is **new**: **capacity-set integration** — showing m = E₀/c² consistent with the per-Moment displacement-capacity structure. Recorded with a scope guard: this is a Q2 (γ-grounding) condition and **cannot reopen the settled Q1** — "no further geometric-route rounds" stands; any capacity-set work it motivates addresses how γ emerges, not which fork member the mechanism selects.
+- **The founder's α/β fork stands, with β now enumerated:** β = {OPEN-SR-10 residual item (i)} + {debt (b) vector completion} + {capacity-set integration (DeepSeek), founder's discretion whether it joins the gate or registers as a separate pursuit}.
+
+**Copilot seat: REOPENED prospectively (founder-directed this patch)** — roster returns to five for future rounds — **with a standing non-independence caveat on this topic family** (rehabilitation exposed it to this round's returns); see `03x_copilot_unsolicited_no_standing.md`. Its round-2 text remains unseated and untallied on the two grounds stated there.

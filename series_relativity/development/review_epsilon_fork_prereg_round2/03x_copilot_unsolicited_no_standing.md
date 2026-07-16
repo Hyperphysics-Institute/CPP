@@ -1,3 +1,9 @@
-# Unsolicited return pasted under the Copilot label — NO STANDING (seat CLOSED at Patch 2466; not dispatched to)
+# Copilot-authored return — NO STANDING IN ROUND 2 (filed for transparency; provenance resolved and seat status updated, Patch 2501)
 
-Filed for transparency only, 15 July 2026, Patch 2500. Text is verbatim-identical to `03_deepseek_return.md` — see the provenance flag there and `04_round_execution_record.md` §3. Not counted in any tally.
+**Provenance (resolved 15 July 2026, Patch 2501):** the text pasted at Patch 2500 under both the DeepSeek and Copilot labels is confirmed by the founder to be **Copilot's** (the DeepSeek label was a paste duplication; DeepSeek's true return is now filed at `03_deepseek_return.md`). The Copilot text — R0 CONSENT / Q1 NOTHING / Q2 YES — is preserved verbatim in the Patch-2500 history of `03_deepseek_return.md`.
+
+**Round-2 standing: NONE, on two independent grounds.** (1) The seat was CLOSED (Patch 2466, founder-directed) at charter pre-registration and at dispatch; the pre-registered instrument fixed four seats, and a pre-registered round cannot add seats after returns are in. (2) The founder rehabilitated Copilot *by showing it the other seats' returns* — so its answers on this round's questions are not independent, and independence is what a panel convergence measures. Not counted in any tally, including informally.
+
+**Seat status going forward: REOPENED prospectively (founder-directed, Patch 2501).** The panel roster for future rounds is five seats: ChatGPT, Grok, Gemini, DeepSeek, Copilot. **Standing caveat carried with the reopening:** because the rehabilitation exposed Copilot to this round's returns, its seat is **non-independent on this topic family** (the SF-6 pin ⇄ OPEN-SR-EPSILON fork ⇄ Q2 covariance-provenance questions) and must be excluded or explicitly discounted in any future round touching it. Unrelated topics: full standing.
+
+**Noted for the record, without tallying:** Copilot's Q1 answer (NOTHING, on the capacity-silence ground) agrees with the four seated returns; its Q2 (YES) would not have changed the Q2 disposition (no category reaches 3 in any counting).
