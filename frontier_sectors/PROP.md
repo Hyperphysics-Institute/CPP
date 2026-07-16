@@ -19,6 +19,7 @@ Physically motivated claims with partial demonstration. See `propositions.md` fo
 **Dependencies:** SR-1 corrected constitutive rule (V ∝ r⁴, minimal ansatz); M4 arena determination (K2-pending); enumeration disclosure per campaign §1 (the family was target-informed — carried honestly into this Proposition's epistemic status).
 **Paper(s):** SR-1; OPEN-SR-H1-CLASS campaign file (closure record §6); SR-MECH-2485 session log.
 **Registered:** 15 July 2026 (Patch 2493)
+**UPDATED 15 July 2026 (Patch 2500):** the pre-registered round-2 adjudication returned **unanimous NOTHING** (no seat selected R4; the blind-pinned SF-6 mechanism is capacity-silent). Per the 2493 semantics there are **no further geometric-route rounds**: the codim-2 member's GEOMETRIC EXISTENCE ONLY marking is now permanent. Record: `series_relativity/development/review_epsilon_fork_prereg_round2/04_round_execution_record.md`.
 
 ### PROP-SS-5-1: Diproton and Dineutron Unbound by Open-Vertex Polarity Mismatch (TIER 1)
 **Status:** REFINED by SS-5 v0.2 — the uniform-polarity argument is replaced by the base-to-base K$_3$ charge-misalignment argument, which more accurately accommodates the empirical near-bound ${}^{1}S_{0}$ virtual states at $+66$ keV (pp) and $+118$ keV (nn). pp and nn remain unbound as the virtual states sit above threshold.
