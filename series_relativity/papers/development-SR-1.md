@@ -53,11 +53,11 @@ Error 2 (ln2 vs ln(r_S/l_P) echo delay in C9): An error in the black hole echo d
 
 The SR-1 main paper itself was assessed as A− by independent review. The primary weakness identified: the paper relies on the energy-momentum bridge (Appendix A.8.1) for the exact Lorentz factor recovery, and this bridge is a physical identification that must be stated clearly rather than appearing to emerge geometrically. The Geometric Insufficiency Theorem (Appendix H) was added in response to make the logical structure transparent.
 
-**v15 (Geometric Insufficiency Theorem added):** Appendix H was added, proving that no purely geometric displacement model can recover the exact Lorentz factor independently. This theorem makes explicit what was implicit: the energy-momentum bridge (identifying ΔSSV as relativistic kinetic energy density) is the necessary physical input, not a consequence of geometry alone. The theorem strengthened the paper by being honest about where physical content enters.
+**v15 (Geometric Insufficiency Theorem added):** *(Historical entry; the theorem was later found FALSE as stated and demoted at Patch 2475 — see the correction block at the end of this file.)* Appendix H was added, claiming to prove that no purely geometric displacement model can recover the exact Lorentz factor independently. This theorem makes explicit what was implicit: the energy-momentum bridge (identifying ΔSSV as relativistic kinetic energy density) is the necessary physical input, not a consequence of geometry alone. The theorem strengthened the paper by being honest about where physical content enters.
 
 **v16 (A.9 circularity elimination):** Appendix A.9 was added to provide a purely geometric definition of ΔSSV from the Voronoi displacement budget, eliminating the last remaining circularity in the derivation. The geometric strain ε_geom = f/(1-f) (the Padé approximant) was derived from 4D volume conservation plus the saturation boundary condition, confirmed as the unique lowest-order rational form satisfying both constraints.
 
-**v17 (26 March 2026 — current):** Final submission-ready version. All corrections incorporated. Monte Carlo verification (500 trials, 0.1% noise) confirms k = 2.158453 × 10⁻¹¹⁴ m³/J to machine precision (relative difference < 10⁻¹⁴). The paper passes all self-consistency checks:
+**v17 (26 March 2026):** *(Historical entry; the MC claim below was withdrawn at Patch 2471 — the committed script was a stub and the claimed precision is unattainable from the stated noise; and "confirming k" is void in principle since k is a normalisation convention. Current version is v20, Patch 2503.)* Final submission-ready version as then believed. All corrections incorporated. Monte Carlo verification (500 trials, 0.1% noise) was reported to confirm k = 2.158453 × 10⁻¹¹⁴ m³/J to machine precision (relative difference < 10⁻¹⁴). The paper passed all self-consistency checks:
 
     kT_P/ħω₀ >> 1  ✓   (thermal limit holds)
     γ_CPP = γ_SR exactly  ✓  (energy-momentum bridge closes the loop)
@@ -101,7 +101,7 @@ The binary icosahedral group derivation of the edge length (Appendix A.1.1) and 
 
 **Planned sequence:** ViXra timestamp → GitHub release → OSF preregistration (Isak Gutierrez handles OSF submissions and graphics).
 
-**Companion papers to submit simultaneously:** The SR-1 predictions depend on the companion technical note TN-SR-1 (Holographic Vacuum Energy Suppression from the 600-Cell Lattice Structure), which develops the Casimir and Unruh predictions in more detail. Both should be submitted together.
+**Companion papers to submit simultaneously:** *(Historical; superseded — the prediction set was withdrawn at Patch 2474 and SR-1 v20 is a grounding paper.)* The SR-1 predictions were said to depend on the companion technical note TN-SR-1 (Holographic Vacuum Energy Suppression from the 600-Cell Lattice Structure), which developed the Casimir and Unruh material in more detail. TN-SR-1's standing must be re-audited against the v20 state before any submission.
 
 **Current status:** v17 is submission-ready pending OSF preregistration infrastructure.
 

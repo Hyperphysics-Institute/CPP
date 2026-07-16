@@ -53,13 +53,13 @@ where V₀ = 600√2/(12φ³) ≈ 16.693 is the undistorted cell volume in unit 
 
 ## Energy-Momentum Bridge
 
-The physical identification that connects the CPP geometric strain k·ΔSSV to the standard SR Lorentz factor. When ΔSSV is identified as relativistic kinetic energy density — ΔSSV = (γ_SR−1)mc²/(V₀·l_P³) for a CP aggregate of mass m moving at velocity v — the product k·ΔSSV evaluates to exactly γ_SR−1 after Planck normalisation cancels all factors of V₀ and l_P. This gives γ_CPP = γ_SR exactly. The bridge is not a new postulate; it follows from the definition of k, the definition of ΔSSV as kinetic energy density, and the Planck-scale normalisation established in the k derivation. The Geometric Insufficiency Theorem (Appendix H) proves that this physical identification is the necessary input — no purely geometric displacement model can recover the exact Lorentz factor without it.
+The physical identification that connects the CPP geometric strain k·ΔSSV to the standard SR Lorentz factor. When ΔSSV is identified as relativistic kinetic energy density — ΔSSV = (γ_SR−1)mc²/(V₀·l_P³) for a CP aggregate of mass m moving at velocity v — the product k·ΔSSV evaluates to exactly γ_SR−1 after Planck normalisation cancels all factors of V₀ and l_P. This gives γ_CPP = γ_SR exactly. *(Corrected, Patches 2474/2508: through v18 this entry claimed the bridge "follows from the definition of k" — withdrawn; the identification supplies γ as an INPUT, and k is a normalisation convention (α cancels in k·ΔSSV; quote (k, ΔSSV) as a matched pair). The "necessity" clause via the Geometric Insufficiency Theorem is withdrawn with that theorem's demotion (Patch 2475). At v20 the bridge is grounded externally at W2 world-call strength: the blind-pinned SF-6 inertia mechanism yields ε = γ−1 at the energy level for closed self-bound patterns, Laue coefficient exactly 1 — see SR-1 v20 §Resolution.)*
 
 ---
 
-## Geometric Insufficiency Theorem (Appendix H)
+## Geometric Insufficiency Theorem (Appendix H) — DEMOTED (Patch 2475)
 
-Proved in SR-1 Appendix H: no purely geometric displacement model — one that expresses PSR_eff solely as a function of the velocity fraction f = v/c — can recover the exact SR Lorentz factor 1/√(1−v²/c²) independently for all v ∈ [0,c). The exact Lorentz factor requires the energy-momentum bridge (identifying ΔSSV with relativistic kinetic energy density). The geometric framework provides the correct functional form (PSR_eff ∝ 1/(1+k·ΔSSV)); the physical identification of ΔSSV supplies the correct input. Both together recover SR exactly; neither alone is sufficient.
+**Demoted to a three-model Proposition.** Through v19 this was billed as a theorem: no purely geometric displacement model can recover the exact Lorentz factor. The proof rested on an erroneous 4D cap expansion (f^{1/2} published; f^{5/2} correct — verified to 50 digits) and the theorem was refuted by its own Model 3. What stands: the elimination of the three natural displacement models (strain exponents 1, 1, 5/2 against the required 2). The class question was subsequently pursued to closure and the geometric route is CLOSED negative-for-mechanism (OPEN-SR-H1-CLASS, K1, Patch 2493; round-2 Q1 unanimous, Patch 2500); the surviving codim-2 geometric identity is PROP-SR-H1-1, ungrounded.
 
 ---
 

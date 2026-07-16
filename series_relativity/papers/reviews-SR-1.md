@@ -1,8 +1,10 @@
 # Reviews and FAQ — SR-1: Mechanistic Derivation of Relativistic Effects via SSV in the Dipole Sea
 
-**Paper:** SR-1_special_relativity_emergence.tex (v17, 26 March 2026)
+**Paper:** SR-1_special_relativity_emergence.tex (reviews below address v15–v17; current version v20, 15 July 2026)
 **Document type:** Living review record and FAQ
-**Last updated:** 30 March 2026
+**Last updated:** 16 July 2026 (Patch 2508 banner; review content 30 March 2026)
+
+> **READ FIRST (Patch 2508).** Every review below predates the July 2026 triage and rewrite (Patches 2471–2503). Reviewer text is preserved verbatim as history; several things the reviewers praised — the prediction set, the Monte-Carlo verification, the Geometric Insufficiency Theorem — were subsequently withdrawn or demoted. The inline correction note after Review 1 details this. For the current state of every claim, read SR-1 v20 itself and `frontier_sectors/SR.md`.
 
 
 # PART 1: FORMAL REVIEWS

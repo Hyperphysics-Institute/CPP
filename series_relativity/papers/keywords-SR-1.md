@@ -34,10 +34,10 @@
 - 82B20 (Lattice systems — general)
 
 ## Elevator Pitch
-Special relativity is derived from the geometry of the 600-cell lattice: kinetic energy stored as Space Stress Vector squeezes Voronoi cells, reducing the Planck Sphere Radius and producing time dilation and length contraction as lattice saturation effects, with the coupling constant k derived from first principles and consistent with muon storage-ring data at 10¹⁸g accelerations.
+*(Rewritten at Patch 2508 for v20; the prior pitch billed a first-principles k derivation and a muon-data consistency claim, both withdrawn at Patches 2471–2474.)* Special relativity is grounded in the geometry and dynamics of the 600-cell substrate: kinetic energy stored as Space Stress Vector reduces the per-Moment displacement budget, carrying time dilation, length contraction, and the twin paradox mechanically; at v20 the strain–kinematics identity ε = γ−1 is grounded at the energy level for physical particles via an independently blind-pinned inertia mechanism (Laue coefficient exactly 1) at W2 world-call strength — a grounding paper, empirically equivalent to SR as a consequence of the mechanism, with the l=6/q⁴ anisotropy floor as its in-principle structural falsifier.
 
 ## SEO Notes
 - Alternative search terms: "deriving special relativity from discrete spacetime," "lattice model of time dilation," "600-cell relativity," "Planck length time dilation"
 - Related searches: "is spacetime discrete," "discrete vs continuous spacetime," "alternatives to Minkowski spacetime"
-- Meta description for hyperphysics.com: "SR-1 derives Einstein's special relativity from 600-cell lattice geometry. Time dilation and length contraction emerge from Voronoi cell compression, with the coupling constant derived from first principles."
+- Meta description for hyperphysics.com: "SR-1 grounds Einstein's special relativity in 600-cell substrate mechanics. Time dilation and length contraction emerge from displacement-budget compression, with the Lorentz identity grounded by an independent inertia mechanism." *(Updated Patch 2508; the previous meta claimed a first-principles coupling-constant derivation, withdrawn at Patch 2471.)*
 - Long-tail: "can special relativity be derived from a crystal lattice," "Voronoi cell time dilation derivation," "600-cell Planck sphere radius"

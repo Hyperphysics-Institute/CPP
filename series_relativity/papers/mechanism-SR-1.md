@@ -100,7 +100,7 @@ Therefore:
 
     γ_CPP = 1 + k·ΔSSV = γ_SR = 1/√(1−v²/c²)
 
-The CPP and SR Lorentz factors are identical at all velocities. No approximation is involved; the equality is exact at every v ∈ [0,c). This is not a coincidence — it is a consistency condition. The energy-momentum bridge is the necessary physical input; the Geometric Insufficiency Theorem (Appendix H) proves rigorously that no purely geometric displacement model can recover the exact Lorentz factor independently.
+The CPP and SR Lorentz factors are identical at all velocities. No approximation is involved; the equality is exact at every v ∈ [0,c). This is not a coincidence — it is a consistency condition: the bridge supplies γ, so the identity holds by construction. *(Corrected, Patch 2508: the "Geometric Insufficiency Theorem" invoked here through v19 was demoted at Patch 2475 to a three-model Proposition — it eliminates the three natural displacement models (exponents 1, 1, 5/2 vs the required 2) but proves nothing about the class; its class-coverage proof rested on an erroneous cap expansion. At v20 the bridge is grounded externally: ε = γ−1 grounds at the energy level via the blind-pinned SF-6 inertia mechanism at W2 world-call strength, Patch 2502.)*
 
 **Step 12 — The speed limit as a theorem.**
 In the unstressed lattice (ΔSSV = 0), a CP executing a pure spatial step achieves |Δx| = l_P in time t_P, so v = l_P/t_P =: c. This is the maximum possible speed — forced by the finite Voronoi insphere. Under nonzero SSV strain, PSR_eff < l_P and v_max < c. As ΔSSV → ∞, v_max → 0. The speed of light is not a separate CPP postulate; it is Theorem A.8.2, derived from the 600-cell Voronoi geometry.

@@ -1,7 +1,7 @@
 # Phenomena — SR-1: Mechanistic Derivation of Relativistic Effects via SSV in the Dipole Sea
 
 **Paper:** SR-1_special_relativity_emergence.tex
-**Last updated:** 15 July 2026 (Patch 2480 status correction; content baseline v17, 26 March 2026)
+**Last updated:** 16 July 2026 (Patch 2508 v20 sync; prior: Patch 2480 status correction; content baseline v17, 26 March 2026)
 
 > **CORRECTION BANNER (Patches 2471–2475, SR-1 triage — read before any entry below).**
 > The 2471–2475 triage established: k is a normalisation convention, not a derived constant
@@ -15,7 +15,7 @@
 > Entry-level statuses below are corrected accordingly; original claims are preserved struck
 > or quoted so the correction is legible.
 
-SR-1 is a different kind of paper from SS-1 or the SM series. Those papers derive new algebraic structures or mass ratios from CPP geometry. SR-1 gives a mechanical account of special relativity — and, post-triage, its honest billing is: the lattice framework reproduces SR **exactly by construction** (the γ content is supplied through the ΔSSV normalisation), with the geometry contributing the displacement-budget structure and functional form. It is a mechanism-and-consistency paper, not a prediction paper; it currently has zero falsifiable predictions (OPEN-SR-EPSILON carries the physical debt; OPEN-SR-H1-CLASS carries the reopened route).
+SR-1 is a different kind of paper from SS-1 or the SM series. Those papers derive new algebraic structures or mass ratios from CPP geometry. SR-1 gives a mechanical account of special relativity. **v20 status (Patches 2493–2503):** the physical debt registered at triage is now discharged — OPEN-SR-EPSILON is RESOLVED-α (ε = γ−1 grounds at the energy level for closed self-bound patterns at W2 world-call strength via the blind-pinned SF-6 inertia mechanism; OPEN-SR-10 caveats inherited verbatim) and OPEN-SR-H1-CLASS is CLOSED negative-for-mechanism (the geometric route is dead; its identity survives ungrounded as PROP-SR-H1-1). SR-1 is accordingly a **grounding paper**: empirical equivalence to SR is the grounded consequence of coefficient-exactly-1 inertia, the withdrawn predictions are permanently unrestorable within the pinned mechanism, and the paper's one inherited in-principle falsifier is the l=6/q⁴ dispersion-anisotropy floor at ~l_P/10³⁰ (from OPEN-SR-10).
 
 
 ## Section 1: Explained Phenomena (PHEN-E)
@@ -104,7 +104,7 @@ is nonzero for any non-inertial path and exactly zero for any inertial path. The
 
 where d is the plate separation. The fourth power (not second power) arises from the 4D mode-density scaling: the 4D mode volume integral contributes two extra powers of l_P/d compared to a 3D UV cutoff. At d = 100 nm this correction is ~10⁻⁴⁰; at d = 10 nm it rises to ~10⁻³⁰. These are far below current experimental sensitivity but represent a falsifiable signature of the 4D lattice structure distinct from any 3D-cutoff model.
 
-**Status:** **CONDITIONAL (Patch 2474)** — retained, not withdrawn: the (l_P/d)⁴ form needs an independent 4D spectral-measure derivation before it can be billed as a prediction. Currently undetectable; possibly accessible with next-generation MEMS at d ≈ 10 nm.
+**Status:** **CONDITIONAL (Patch 2474; unchanged at v20, Patch 2508)** — retained, not withdrawn: the (l_P/d)⁴ form needs an independent 4D spectral-measure derivation before it can be billed as a prediction. This condition is untouched by the α ruling (unlike the Unruh conditional, whose antecedent is settled negative). Currently undetectable; internal algebra until the spectral-measure derivation exists.
 
 
 ### PHEN-SR1-P5. Unruh Temperature Modification
