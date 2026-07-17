@@ -43,7 +43,14 @@ asymmetry and the ring number density. That factor is the campaign's entire subj
   `relic1_s1_baryon_cp_bookkeeping.md`.]* Extract from the registered SS/SF-3 corpus the net conserved-CP content
   of the nucleon (net qCP count A_p; net eCP if the conserved charge involves it). If the corpus does not register
   a net-CP bookkeeping for the baryon, that is a NAMED BLOCKER (→ Branch I) — record it; do not improvise one.
-- **S2 — The conserved shared charge.** Enumerate candidates: (a) net qCP number; (b) the substrate
+- **S2 — The conserved shared charge.** *[STATUS ANNOTATION, Patch 2519 — not a semantics amendment:
+  S2 COMPLETE on founder physical-picture input (16 Jul). (a) closed-negative (2518); (b) retained as asymmetry
+  SOURCE at registered strength; (c) sharpened to the common-precursor mechanism c-hT: baryons (1 hTetra each)
+  and rings (32 each) drain one precursor species. Closure theorem: the founder's two sinks are FORCED at
+  hDP-B excess = 2n_b, free −qCP = n_b; n_r drops out (rings asymmetry-blind, ledger level). S3 target:
+  ring:baryon hTetra branching = 14.30 ± 0.17 (93.46%/6.54%). New scenario gate SG-1 (charged-cloud relics)
+  UNRESOLVED. FI-RELIC-1 (initial sign symmetry) conditionality rides on all downstream results. See
+  `relic1_s2_closure_theorem_and_common_precursor.md`.]* Enumerate candidates: (a) net qCP number; (b) the substrate
   chirality/polarity asymmetry (the chirality-arc primitive FI-C-9 — flagged at 0843 as the native candidate,
   DIRECTION not result); (c) composite charges (color-singlet units, electric-neutral units). For each: what the
   asymmetry conserves, what a baryon costs, what a ring costs.
