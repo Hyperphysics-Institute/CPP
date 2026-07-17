@@ -95,7 +95,13 @@ asymmetry and the ring number density. That factor is the campaign's entire subj
   termination order LOCKED (T-1 screening-stoichiometry primary → T-2 geometric → T-3 blocked-expected;
   post-hoc selection = Branch T); Q-B2 k-linearity to verify; Q-B3 closure via registered N=8/G1 geometry
   only. All windows propagate; OBS-RELIC-1 fence at maximum tension (14.30 = 32/√5 to 0.1%). See
-  `relic1_smB_preregistration.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
+  `relic1_smB_preregistration.md`.]*
+  *[SM-B EXECUTED, Patch 2527: T-1 PARKED (Branch I, NB-T1-1 — registered screening is ambient-medium,
+  no adsorbate stoichiometry; grep conflation 0757↔1858 caught and recorded). T-2 COMPUTED: maximal
+  geometric bound m/k = (π/96)·c_pack·φ³·(r_c/l_unit)³ ∈ [0.678, 0.959] vs 0.4468 — NECESSARY CONDITION
+  PASSED ×1.5–2.2 headroom; required yield f = 0.47–0.66 pre-stated; √5 appeared via registered φ³ = 2+√5,
+  fence held (provenance documented). Reading STRUCTURAL-PARTIAL; route ALIVE on NB-T2-1 (Sea species
+  composition from 0672a locks/sinks, own pre-registration). See `relic1_smB_t1_parked_t2_computed.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
   kT_form ≈ 16.5 keV; the N≥8-dominance corridor), the fraction of the shared asymmetry that lands ring-bound vs
   baryon-bound. Zero free parameters. This is where the ×2.24 / ×3.57 factor must come from or the route dies.
 - **S4 — Consistency gates (run on any S3 candidate that lands):** (i) the cascade's N≥8 population dominance must
