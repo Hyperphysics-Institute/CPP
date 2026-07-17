@@ -54,7 +54,14 @@ asymmetry and the ring number density. That factor is the campaign's entire subj
   chirality/polarity asymmetry (the chirality-arc primitive FI-C-9 — flagged at 0843 as the native candidate,
   DIRECTION not result); (c) composite charges (color-singlet units, electric-neutral units). For each: what the
   asymmetry conserves, what a baryon costs, what a ring costs.
-- **S3 — The branching/counting mechanism.** Derive, from registered formation physics only (cascade 2382/2421–2423;
+- **S3 — The branching/counting mechanism.** *[STATUS ANNOTATION, Patch 2520 — not a semantics amendment:
+  S3 OPENED at pre-registration on founder mechanism S3-M1 (unpaired-monomer-limited baryogenesis vs
+  barrier-free paired aggregation; n_b = U_q/3; decomposition n_ring/n_b = 3·n_ring/U_q, one ring per 6.71
+  unpaired +qCPs at target). Retro-prediction check PASSED (skeleton forces the 2519 sinks at exact magnitude
+  + pins U_q = 3n_b, U_e = 2n_b). Hazard H1 quantified: equilibrium Boltzmann readings give e^(−30)–e^(−10⁴),
+  so only the frozen-inventory kinetic form is viable. Sub-computations S3a (U_q from pairing freeze-out),
+  S3b (ring yield, Paths #1/#2 jointly), S3c (combination + branch reading) — each pre-registered before
+  running. See `relic1_s3_preregistration.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
   kT_form ≈ 16.5 keV; the N≥8-dominance corridor), the fraction of the shared asymmetry that lands ring-bound vs
   baryon-bound. Zero free parameters. This is where the ×2.24 / ×3.57 factor must come from or the route dies.
 - **S4 — Consistency gates (run on any S3 candidate that lands):** (i) the cascade's N≥8 population dominance must
