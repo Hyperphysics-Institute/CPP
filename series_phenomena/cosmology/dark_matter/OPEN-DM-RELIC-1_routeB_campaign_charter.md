@@ -73,7 +73,12 @@ asymmetry and the ring number density. That factor is the campaign's entire subj
   D2 (homogeneous; computable kill-test defined, run FIRST) vs D3 (calibrated incumbent, named fallback).
   Anti-readings locked (no seed switching, no post-hoc clustering-k, no target-justified derivations).
   OBS-RELIC-1 recorded and FENCED (T1 at 0.077σ from 1/√5; NON-EVIDENTIAL; reverse-engineering = Branch T).
-  See `relic1_s3b_preregistration.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
+  See `relic1_s3b_preregistration.md`.]*
+  *[S3b R1 EXECUTED, Patch 2523: D2 KILLED — ungated bound n_ring/n_γ ≤ 9.3×10³⁴ vs target 2.734×10⁻¹⁰,
+  overshoot 44.5 orders on the CONSERVATIVE density basis (Ω cross-check 12× below the R2 band low end =
+  the understating direction; kill a fortiori). Ring formation MUST be gated; D1 LICENSED under the locked
+  seed criterion. Next: the m derivation (founder nucleation-geometry input → pre-registered computation).
+  See `relic1_s3b_d2_kill_test.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
   kT_form ≈ 16.5 keV; the N≥8-dominance corridor), the fraction of the shared asymmetry that lands ring-bound vs
   baryon-bound. Zero free parameters. This is where the ×2.24 / ×3.57 factor must come from or the route dies.
 - **S4 — Consistency gates (run on any S3 candidate that lands):** (i) the cascade's N≥8 population dominance must
