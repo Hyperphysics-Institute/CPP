@@ -85,7 +85,11 @@ asymmetry and the ring number density. That factor is the campaign's entire subj
   seed catalytic, ring (0,0) preserved, shells persist → SG-1 sharpened, Debye 0757 flagged). Sub-mechanisms
   locked: SM-A trap (primary) / SM-B direct capture (alternative; no blending). m-computation pre-registered:
   target m_shell/k = 0.4468±0.0054; Q-m1 k-cancellation (p=1 ⇒ c = 0.4468 structural); Q-m2 trap-magnitude
-  kill gate (adverse prior recorded). See `relic1_d1_mechanism_registration.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
+  kill gate (adverse prior recorded). See `relic1_d1_mechanism_registration.md`.]*
+  *[Q-m2 EXECUTED, Patch 2525: SM-A (trap) FAILS — δ ≈ 9×10⁻³⁸ at the founder-equilibrium bound
+  k_max ≈ 313 (E_qq-window-spanned 74–313), ×1000 grace granted, still ≥28 orders short; failure entailed by
+  CPP's GR-derivation claim (consistency success). SM-B (direct screened capture, 0757 potential) takes the
+  field on its own pre-registered terms; no blending. See `relic1_qm2_gate_smA_fails.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
   kT_form ≈ 16.5 keV; the N≥8-dominance corridor), the fraction of the shared asymmetry that lands ring-bound vs
   baryon-bound. Zero free parameters. This is where the ×2.24 / ×3.57 factor must come from or the route dies.
 - **S4 — Consistency gates (run on any S3 candidate that lands):** (i) the cascade's N≥8 population dominance must
