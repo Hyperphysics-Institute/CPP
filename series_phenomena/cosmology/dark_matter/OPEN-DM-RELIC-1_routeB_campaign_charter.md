@@ -67,7 +67,13 @@ asymmetry and the ring number density. That factor is the campaign's entire subj
   (n_b anchored-not-derived; NB-S3a-2 = forward leptogenesis pin). Transposed S3b target: n_ring/n_γ =
   (2.734±0.038)×10⁻¹⁰. Direction S3b-D1 (asymmetry-seeded nucleation, founder provenance) registered NOT
   adopted; S3b pre-registration must weigh it against a non-seeded alternative. See
-  `relic1_s3a_uq_from_registered_anchors.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
+  `relic1_s3a_uq_from_registered_anchors.md`.]*
+  *[S3b STATUS, Patch 2522: pre-registration COMMITTED — three-way contest D1 (seeded; seed criterion locked:
+  clouds primary, per-qCP reading, B-excess considered-and-rejected; target m = 0.4468±0.0054 rings/seed) vs
+  D2 (homogeneous; computable kill-test defined, run FIRST) vs D3 (calibrated incumbent, named fallback).
+  Anti-readings locked (no seed switching, no post-hoc clustering-k, no target-justified derivations).
+  OBS-RELIC-1 recorded and FENCED (T1 at 0.077σ from 1/√5; NON-EVIDENTIAL; reverse-engineering = Branch T).
+  See `relic1_s3b_preregistration.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
   kT_form ≈ 16.5 keV; the N≥8-dominance corridor), the fraction of the shared asymmetry that lands ring-bound vs
   baryon-bound. Zero free parameters. This is where the ×2.24 / ×3.57 factor must come from or the route dies.
 - **S4 — Consistency gates (run on any S3 candidate that lands):** (i) the cascade's N≥8 population dominance must
