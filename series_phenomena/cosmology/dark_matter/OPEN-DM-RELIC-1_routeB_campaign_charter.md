@@ -78,7 +78,14 @@ asymmetry and the ring number density. That factor is the campaign's entire subj
   overshoot 44.5 orders on the CONSERVATIVE density basis (Ω cross-check 12× below the R2 band low end =
   the understating direction; kill a fortiori). Ring formation MUST be gated; D1 LICENSED under the locked
   seed criterion. Next: the m derivation (founder nucleation-geometry input → pre-registered computation).
-  See `relic1_s3b_d2_kill_test.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
+  See `relic1_s3b_d2_kill_test.md`.]*
+  *[D1 MECHANISM REGISTERED, Patch 2524: FI-RELIC-3 (founder third note) — shell-seed catalytic trap.
+  Clouds = spherical shells (k from equilibrium; N_shell = n_b/k); seeding = environmental catalysis
+  (interior: zero SSV gradient + elevated SSV_abs → registered time dilation → threshold-adequate assembly;
+  seed catalytic, ring (0,0) preserved, shells persist → SG-1 sharpened, Debye 0757 flagged). Sub-mechanisms
+  locked: SM-A trap (primary) / SM-B direct capture (alternative; no blending). m-computation pre-registered:
+  target m_shell/k = 0.4468±0.0054; Q-m1 k-cancellation (p=1 ⇒ c = 0.4468 structural); Q-m2 trap-magnitude
+  kill gate (adverse prior recorded). See `relic1_d1_mechanism_registration.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
   kT_form ≈ 16.5 keV; the N≥8-dominance corridor), the fraction of the shared asymmetry that lands ring-bound vs
   baryon-bound. Zero free parameters. This is where the ×2.24 / ×3.57 factor must come from or the route dies.
 - **S4 — Consistency gates (run on any S3 candidate that lands):** (i) the cascade's N≥8 population dominance must
