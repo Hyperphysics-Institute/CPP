@@ -89,7 +89,13 @@ asymmetry and the ring number density. That factor is the campaign's entire subj
   *[Q-m2 EXECUTED, Patch 2525: SM-A (trap) FAILS — δ ≈ 9×10⁻³⁸ at the founder-equilibrium bound
   k_max ≈ 313 (E_qq-window-spanned 74–313), ×1000 grace granted, still ≥28 orders short; failure entailed by
   CPP's GR-derivation claim (consistency success). SM-B (direct screened capture, 0757 potential) takes the
-  field on its own pre-registered terms; no blending. See `relic1_qm2_gate_smA_fails.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
+  field on its own pre-registered terms; no blending. See `relic1_qm2_gate_smA_fails.md`.]*
+  *[SM-B PRE-REGISTERED, Patch 2526: capacity-limited by flux check (Sea saturates any surface instantly);
+  structure m_shell = C_coat/32; target C_coat/k = 14.30±0.17 hTetra-equivalents per shell qCP. Q-B1
+  termination order LOCKED (T-1 screening-stoichiometry primary → T-2 geometric → T-3 blocked-expected;
+  post-hoc selection = Branch T); Q-B2 k-linearity to verify; Q-B3 closure via registered N=8/G1 geometry
+  only. All windows propagate; OBS-RELIC-1 fence at maximum tension (14.30 = 32/√5 to 0.1%). See
+  `relic1_smB_preregistration.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
   kT_form ≈ 16.5 keV; the N≥8-dominance corridor), the fraction of the shared asymmetry that lands ring-bound vs
   baryon-bound. Zero free parameters. This is where the ×2.24 / ×3.57 factor must come from or the route dies.
 - **S4 — Consistency gates (run on any S3 candidate that lands):** (i) the cascade's N≥8 population dominance must
