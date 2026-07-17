@@ -61,7 +61,13 @@ asymmetry and the ring number density. That factor is the campaign's entire subj
   + pins U_q = 3n_b, U_e = 2n_b). Hazard H1 quantified: equilibrium Boltzmann readings give e^(−30)–e^(−10⁴),
   so only the frozen-inventory kinetic form is viable. Sub-computations S3a (U_q from pairing freeze-out),
   S3b (ring yield, Paths #1/#2 jointly), S3c (combination + branch reading) — each pre-registered before
-  running. See `relic1_s3_preregistration.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
+  running. See `relic1_s3_preregistration.md`.]*
+  *[S3a STATUS, Patch 2521: COMPLETE at Reading B. Route α (pairing kinetics) BLOCKED — NB-S3a-1, no
+  registered rate framework. Route β: U_q/n_γ = 3η_B = (1.836±0.012)×10⁻⁹ via the registered PRED-O-25 anchor
+  (n_b anchored-not-derived; NB-S3a-2 = forward leptogenesis pin). Transposed S3b target: n_ring/n_γ =
+  (2.734±0.038)×10⁻¹⁰. Direction S3b-D1 (asymmetry-seeded nucleation, founder provenance) registered NOT
+  adopted; S3b pre-registration must weigh it against a non-seeded alternative. See
+  `relic1_s3a_uq_from_registered_anchors.md`.]* Derive, from registered formation physics only (cascade 2382/2421–2423;
   kT_form ≈ 16.5 keV; the N≥8-dominance corridor), the fraction of the shared asymmetry that lands ring-bound vs
   baryon-bound. Zero free parameters. This is where the ×2.24 / ×3.57 factor must come from or the route dies.
 - **S4 — Consistency gates (run on any S3 candidate that lands):** (i) the cascade's N≥8 population dominance must
