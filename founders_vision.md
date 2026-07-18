@@ -1388,3 +1388,43 @@ then gates on eCP liberation — NOT on the reverse reaction** — and the first
 fragments into the Sea, a natural cross-link to the §6f defect-shell layer. Registered as
 founder-ledger-conditional; the channel ordering is re-derived under whichever energy model OPEN-6F-LEDGER
 resolves to.
+
+**§6f Third Addendum — OPEN-6F-LEDGER RESOLVED: Repulsive Edges Are Exothermic; the Compression-Storage Mechanism (18 July 2026, same session).**
+*Source: Thomas's ruling on the Patch-2533 ledger fork. Verbatim:*
+
+> "You are correct, regarding the breakup of bonds which are repulsive rather than attractive: those bonds
+> will be exothermic upon release of the two bonds holding the CP in attractive tension. The energy stored
+> in the attractive tension of the two opposite-charge bonds holds the compressed state of the
+> repelled/same-charge bond in place. Releasing the two opposite-charge attractive bonds will free the
+> repulsive bond, which will leave with the KE of that stored quantum of energy."
+
+**[Opus scope note — the resolution and its structure.]** **OPEN-6F-LEDGER: RESOLVED (founder ruling).**
+Repulsive edges refund on release; the 2533 4-E_ee pricing is amended accordingly. The ruling does more than
+pick the sign — it supplies the mechanism: the repulsive edge's compression energy is *stored in the
+structure*, held in place by the tension of the attractive bonds (a compressed spring held by latches;
+assembly *invests* the compression energy, the attractive network holds the investment, disassembly returns
+it as KE). Consequences, each verified in `code/2534_amended_ledger.py`:
+
+1. **Leading-order convergence.** With the refund included, the founder ledger and the 2532 neutrality
+   theorem agree: the eDP + qDP channel nets ≈ 0 at leading electric order (two attractive crosses paid, two
+   repulsive compressions refunded, equal magnitudes at the symmetric point). The near-threshold character
+   of the reaction is now **founder-endorsed at leading order**, no longer a census-vs-ledger dispute.
+2. **The mechanism IS the repackaging term.** "Attractive tension holding compressed repulsion" is a force-
+   balance statement: the tetra's equilibrium bond lengths differ from the free DPs' precisely because each
+   CP sits where attraction and repulsion balance. The elastic energy of that distortion network is the
+   2532 "repackaging" second-order term — and it is **positive-definite** (harmonic order: Σ½k·δℓ² > 0).
+   At pure-electric second order the tetra therefore trends *metastable* (shallow positive ΔE_b): a state
+   protected by its assembly barrier rather than by a deep well. The **sign of ΔE_b** now hangs on the
+   competition of three named second-order terms: distortion (+, positive-definite), color-in-tetra (−, per
+   the founder's SSV_abs-deepened q–q binding, Second Addendum), and ZBW-storage vs compression-storage
+   asymmetry (sign unknown). This is NB-F-1-T's complete, signed target list.
+3. **The gating channel flips under the amended ledger.** Leading-order channel costs become: reverse
+   (eDP + qDP) ≈ ΔE_b (small); free-eCP ≈ E(e–e bond); free-qCP ≈ E(q–q bond, doubly bound). The cheapest
+   hot-edge channel is now the **reverse reaction** — the 2533 eCP-liberation gate was an artifact of the
+   unamended pricing. Both results stay registered with their conditions: original-ledger → eCP gate;
+   amended-ledger → reverse gate; NB-F-1-T's second-order values decide finally.
+4. **Kinetic-stability reading of the relic (flagged, not asserted).** If ΔE_b is genuinely small, a formed
+   hTetra at low temperature survives not because it is deeply bound but because the barrier is closed from
+   both sides — the relic population is *kinetically frozen*, fixed by formation history at the window. This
+   is a structurally natural dark-matter profile and dovetails with §6c's freeze-out ordering; registered as
+   the interpretive frame NB-F-1-T will confirm or refute.
