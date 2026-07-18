@@ -38,7 +38,7 @@ simultaneously bear on gate SG-1 (flagged as a possible joint discharge; NOT ass
 
 ## 3. D2's computable kill-test (defined now; expected lethal; must be run, not presumed)
 
-Registered inputs: bound states at kT_form ≈ 16.5 keV are favored by exp(+E_bond/kT) (the H1 direction);
+Registered inputs: bound states at kT_form ≈ 16.5 keV *[retired as T_form(DM), Patch 2543 — see 2542]* are favored by exp(+E_bond/kT) (the H1 direction);
 the paired-feedstock reservoir is vast (0704; R2 registers Ω_Sea ~ 10⁴⁵–10¹²⁰ at full gravitating density);
 no registered kinetic gate exists (NB-S3a-1). **Test: compute the ungated complete-condensation bound on
 n_ring/n_γ from registered Sea density.** Reading: if the bound overshoots the 2.734×10⁻¹⁰ target by many

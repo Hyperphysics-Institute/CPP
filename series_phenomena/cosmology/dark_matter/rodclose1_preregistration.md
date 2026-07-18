@@ -65,7 +65,9 @@ composition reading.
    = 4·132 + 4·44 = 704 MeV; element (2 planes) = 1408 MeV.
 5. **Thermal scale:** kT_form ≈ 16.5 keV carried as the registered corpus value with its
    consistency-gate status UNADJUDICATED (2529 input 6 lineage); the compute patch may test the window
-   AT this value and report consistency, but may not adjust it.
+   AT this value and report consistency, but may not adjust it. *[Post-execution rider, Patch 2543:
+   the 2542 test recorded the ~3-order inconsistency; the founder ratified RETIREMENT of the 16.5 keV
+   value as T_form(DM), in favor of the derived bend-close epoch. This input is settled.]*
 6. **Standing pre-commitments:** 2521 (in-campaign rate construction = Branch T); the 2529 §6 Branch-T
    triggers verbatim; the 2529 trap clause + 2537 near-threshold extension (no composition reading in
    this campaign, §0 scope limit); the OBS-RELIC-1 √5 fence (any √5 in the window derivation →

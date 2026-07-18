@@ -41,7 +41,7 @@ Two scope commitments, fixed now:
 4. **The registered regime caution** (0672a, verbatim class): the 1:1 lock is a hot/thermal-equilibrium
    statement; the sink and on-demand pictures are kinetic freeze-out statements. The two must not be conflated.
 5. **The 2519 stoichiometry** (4 CPs/hTe; hTetra = hDP-A + hDP-B).
-6. **kT_form ≈ 16.5 keV** (registered corpus value; charter §"consistency, not scale assertion").
+6. **kT_form ≈ 16.5 keV** (registered corpus value; charter §"consistency, not scale assertion"). *[RETIRED as T_form(DM) at founder ratification, Patch 2543; superseded by the derived bend-close epoch kT_form(L=16) ∈ [10.2, 17.0] MeV (2542). Historical input of the D3-closed campaign; annotation per anti-erasure.]*
 7. **Standing pre-commitment (2521)**: constructing pairing/condensation rates in-campaign = Branch T.
    NB-S3a-1 (the CPP kinetic framework) remains a missing PROJECT.
 

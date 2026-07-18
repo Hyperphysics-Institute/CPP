@@ -47,7 +47,7 @@ overlap [0.436, 0.458], not the central value). Readings:
 - **U_q or the ring yield bottoms out in unregistered pairing-freeze-out thermodynamics** → Branch I (park,
   named blocker).
 Sub-computations, each its own patch with readings committed before running: **S3a** — U_q from pairing
-freeze-out (what fraction of +qCPs escapes qDP/hDP-A/hTetra pairing; kT_form ≈ 16.5 keV; failed channels
+freeze-out (what fraction of +qCPs escapes qDP/hDP-A/hTetra pairing; kT_form ≈ 16.5 keV *[retired as T_form(DM), Patch 2543 — see 2542]*; failed channels
 carried). **S3b** — ring yield of the paired channel (Paths #1/#2 jointly; the 4th-hTetra activation step
 1855–1856; eDP-displacement energetics per the founder's note). **S3c** — the combination and branch reading.
 

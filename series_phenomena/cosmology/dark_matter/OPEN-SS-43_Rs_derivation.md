@@ -320,6 +320,8 @@ baryon footing). **The de-novo derivation target is now sharp: a χ·(ħc/r_c) g
 
 ## 18. Formation-lane scoping: kT_form ≈ 16.5 keV lands on the 0860 ≤19 keV hook — log-robust — but the N-cap must be kinetic; coincidence registered, not claimed (Patch 1873, 4 July 2026)
 
+*[RETIRED AS T_form(DM), Patch 2543 — founder-ratified adjudication (18 July 2026): under the §6g bending anchor, T_form(DM) is the rod bend-and-close epoch, derived at kT_form(L=16) ∈ [10.2, 17.0] MeV (2542, statics strength, conditional). The 16.5 keV value is retired as the DM formation temperature; the 2542 consistency test recorded the ~3-order inconsistency. The 0860 ≤19 keV hook loses its formation-epoch referent; whether it constrains a DIFFERENT epoch (kinetic decoupling, late processing) is registered OPEN — the coincidence here is annotated, not deleted.]*
+
 Isodesmic equilibrium inversion (all inputs pinned): ⟨N⟩ = 15–20 ⟺ kT_form = 16.2–16.6 keV, insensitive to
 the occupancy judgment. Kinetic check: rate/H ≈ 10⁵ there — equilibrium tracks, so the cap is kinetic or
 collisional (candidates: re-equilibration shutoff, virialization tail-pruning, or smaller E_b within the 0860
