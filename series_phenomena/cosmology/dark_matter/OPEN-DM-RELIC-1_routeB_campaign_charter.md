@@ -10,6 +10,15 @@ free amplitude); registry condition 5 of `DM-CANDIDATE-B_N8_cdm_like_registratio
 NOT derived; the promotion UNPARKS the relic-abundance line (route B, asymmetric DM scoping)").
 **Verify at open:** `code/2515_relic_targets.py`. **Reasoning:** `reasoning/2515.md`.
 
+*[STATUS ANNOTATION, Patch 2530 — not a semantics amendment: campaign **CLOSED at Branch D3** (calibrated
+incumbent) under the 2529 frozen readings. Terminus: SM-B STRUCTURAL-PARTIAL (2527) → NB-T2-1 f-dial
+**Branch I** (2530) — the relic-epoch Sea composition dial is unregistered (**NB-F-1**; Part I §3 registers
+the abundances as empirical questions; the draft-tier 25/25/50 statement is superseded in its generating
+assumption by 0672a). Ratio stays calibrated; candidate (B) 79.5% untouched per §3 verdict semantics.
+**REOPENING CONTRACT:** a declarative-strength registration of the dial x (founder channel, the NB-S3a-1
+project, or a phase-transition derivation) reopens the campaign directly into the 2526/2527/2529
+pre-registered apparatus — resolution is then one number. See `relic1_f_route_execution_branch_i_d3.md`.]*
+
 ---
 
 ## 1. What changed since the 0843 survey — the DM unit is now pinned
