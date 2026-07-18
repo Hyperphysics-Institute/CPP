@@ -1550,3 +1550,132 @@ channel.]**
   energetics select that length, or is N_planes = 16 set upstream (rod growth termination) with
   bending closing whatever length presents? This decides whether the bending computation predicts N
   or consumes it.
+
+**§6g First Addendum — The Five Clarifications: hTetra Energetically Impossible Free-Standing, Second-Generation Wrapper Structure, the e–q–q–e Plane Assembly, the Bend-and-Close Multivariable Window, and the Dial Re-Scope (18 July 2026, Session 166).**
+*Source: Thomas's answers to the Patch-2538 clarification questions Q1–Q5. Verbatim; scope notes marked.*
+
+*Q1 (the conversion bullet):*
+
+> "The hTetras never form except during baryogenesis once populated with either a UUD or UDD. The
+> discussion of the hTetra in the last turn was included only for historical purposes to document the
+> evolution of thought. Your question caused me to examine the forces holding the hTetra together.
+> Upon examination, I realized that the repulsive members of the hTetra made the hTetra an
+> energetically impossible configuration of the eDP-qDP. Hence, it was abandoned as a free-standing
+> unit in the DP Sea. It can only exist when another force acts on the eDP-qDP unit. (In particular,
+> the baryon: the hTetra is the center of the baryon, with quarks bonding at 3/4 of the eDP-qDPs. The
+> 2nd-generation quarks and leptons also contain an hTetra. The hTetra forms as an eDP-qDP wrapper
+> folded around the down qCP (strange quark) or the eCP (muon), causing it to assume the hTetra shape.
+> Note: this implies that the Tau neutrino is a spinning eDP-qDP, and that neutrino oscillation is
+> between the eDP, qDP, and qDP-eDP, and that neutrino oscillation is due to collisions and momentum
+> transfer with DP sea elements. The hTetra as a free DP Sea unit is obsolete; it does not exist, it
+> does not compete or react, because it does not exist. There is no competition between hTetras and
+> baryogenesis."
+
+*Q2 (flat-unit binding):*
+
+> "The eDP-qDP units do not fold, but the edges are reactive and can bind onto any plus-minus surface.
+> The preferential surface will be another qDP surface to form a qDP-qDP bond, forming the
+> eDP-qDP-qDP-eDP plane, the elemental unit of DM."
+
+*Q3 (the anchor):*
+
+> "The formation of the hTetra is obsolete. It does not have a temperature at which it can form. It
+> cannot form without a third binding point (quarks on the edge or encompassing a quark). The thermal
+> collision energy required to bend and bond the DM rod will be computed as a multivariable problem
+> involving the bend and bond of the DM rod and the mixture of inertia of the ends, the species of the
+> DP sea, and their spectrum of KE they carry. At what temperature-species mixture do you have enough
+> bend to produce the required end bond?"
+
+*Q4 (the dial):*
+
+> "Yes, eDP+qDP pairing and hDP-A+hDP-B pairing both produce the identical plane unit, which is
+> 2eDP-2qDP, the DM plane, which, as we computed, is 16 (not something I independently developed, only
+> repeating what we discovered earlier). There may be a transient formation of qDPs, Type A hDPs, and
+> Type B hDPs, but they will quickly convert into 2eDP-2qDPs/DM planes. The high abundance of DM and
+> the small abundance of baryons reflect the ease of forming DM compared to the rarity of UUD and UDD
+> bonding with the 2eDP-2qDPs. This competition will be more relevant to the DM story than the
+> transient existence of the type A and type B hDPs. There might be other species that are not
+> detected as DM that might also be a DM plane sink. There is probably a percentage of DM rods that
+> are longer than 16 DP planes that form DM loops. There will be a split between the baryons and DM
+> loops that produce DM effects. There might be a remnant of other DM species that are not exactly 16
+> DM plane loops."
+
+*Q5 (predict or consume N):*
+
+> "The rod bends into a ring at 16 planes because bending energetics select that length. The 16 is not
+> set by rod-growth termination. The bending will close at whatever length the rod presents. Thus, if
+> the empirics correspond to a 16-DM plane species, I suspect that the kinetics were such that the DM
+> rods were repeatedly buffeted during their formation, and when the length reached 16, the
+> probability was high that it would bend sufficiently to form an end-to-end bond. Otherwise, if that
+> length formed excessively rapidly and did not get sufficient collisions of sufficient magnitude, it
+> might form a longer length. At some point, the DM rod length is too long for the thermal impulse to
+> provide to produce the collision displacement, inertia-bending, and end-bond-and-close sequence."
+
+**[Opus scope note — the founder adjudication of the ΔE_b sign, and what retires.]** Q1's "energetically
+impossible configuration of the eDP-qDP" is a founder ruling on exactly the sign the 2537 prereg left
+open: the free tetra is UNBOUND relative to its parts absent an external force (the second-order sum
+nets decisively positive, or the configuration is dynamically unstable — either reading suffices).
+Consequences, each annotated at source per anti-erasure: the 2534 kinetic-stability relic frame
+(flagged, never asserted) RETIRES; the 2537 §4 super-additive entailment survives as formal
+leading-order algebra whose physical referent is the externally-forced tetra (baryon interior,
+second-generation wrappers), not a free Sea species; the 2533/2534 dissociation-channel registrations
+keep their conditional status as statements about the forced tetra's disassembly.
+
+**[Opus scope note — the assembly-ordering convergence (`code/2539_plane_ordering.py`).]** Q2's
+assembly — two units joined at the preferential qDP–qDP bond — produces the ordering
+eDP–qDP–qDP–eDP. The registered Candidate-B element-plane carries eCP–qCP–qCP–eCP on both diagonals
+(2437 lineage; re-confirmed in the 2455 founder answers). The formation-side ordering matches the
+registered structural ordering at DP↔CP level. Registered as a convergence at face value, with the
+standard caveat that the founder has had access to the Candidate-B documents; the *mechanism*
+(edge-reactivity + qDP-surface preference, consistent with §6c's doubly-bound qDP skew driver) is the
+new, independent content.
+
+**[Opus scope note — CORRECTION RIDER on the Patch-2538 convergence claim (anti-erasure).]** The 2538
+scope note counted "stack 16 high" as part of the stoichiometric convergence. The founder's Q4
+disclosure corrects this: the 16 was an echo of the earlier campaign result ("only repeating what we
+discovered earlier"), NOT an independent formation-side derivation. The convergence claim is NARROWED
+accordingly: what stands independently is the plane-unit CP content (2×(eDP–qDP) = 8 CPs = the
+element-plane) and, now, the Q2 assembly ordering; the N=16 component is consumed, not converged.
+Founder-initiated honesty disclosure, recorded with thanks.
+
+**[Opus scope note — second-generation and neutrino registrations, with reconciliation questions
+OPEN.]** Q1 registers, at founder authority, new structural claims: strange quark = eDP-qDP wrapper
+folded around a down qCP; muon = eDP-qDP wrapper folded around an eCP; tau neutrino = spinning eDP-qDP
+unit; neutrino oscillation = transitions among {eDP, qDP, qDP-eDP} driven by collisions/momentum
+transfer with Sea elements. These touch registered structures and are NOT adjudicated here:
+(a) *Candidate convergence:* the registered charged-lepton structure is "a tetrahedral cage hosting an
+electron, muon, or tau" (glossary; SM-6/SM-7 K₃ machinery) — the muon-as-hTetra-wrapper claim and the
+registered tetrahedral lepton cage are plausibly the SAME object described from the formation side vs
+the structural side. If so, this is a §6g-class convergence; registered as candidate, pending
+reconciliation. (b) *Candidate tension:* the registered quark-generation mechanism is nested cage
+shells (tetrahedron → icosahedron → dodecahedron → icosidodecahedron; V^2.38 law; SM-9
+cooperative-enhancement chains, strange = 6×) — whether "strange = wrapper-fold around a down qCP" is
+the microscopic description of the second shell or a competing picture is an open reconciliation
+question for the SF-3/SM-9 lane. (c) The neutrino-oscillation mechanism (Sea-collision-driven, with a
+natural matter-effect analog) is registered as a future derivation target outside the current
+campaign. None of these move any current-campaign reading.
+
+**[Opus scope note — the target architecture: statics/kinetics split, and the over-determination
+prize.]** Q3+Q5 fix the successor campaign's shape. The founder's multivariable window separates
+cleanly into: **(statics)** the bend-and-close threshold — the energy to bend a rod of L planes into
+end-bond closure, computable from registered inputs (the corrected pure-bend stiffness lineage from
+2450, pinned inertias m_qCP = 132 / m_eCP = 44, a_q = 1.15 fm, D = 1.15 fm, the end-bond depth) — and
+**(kinetics)** the buffeting rate and Sea KE-spectrum sampling, which sit at the NB-S3a-1 boundary
+(2521: in-campaign rate construction = Branch T; the successor prereg carries Branch-I limbs for the
+kinetic half, same discipline as 2537). Q5's structure defines the prize: the closure window in L at
+the formation temperature — too short = too stiff per unit length, too long = too much inertia for
+the thermal impulse — selecting L ≈ 16 planes would be a SECOND, formation-side route to the number
+OPEN-SS-43 derived from the stability side (N = 8 elements as sole survivor). Registered as the
+successor campaign's headline target, with the blindness caution pre-stated: the empirical 16 is
+currently consumed; the window computation must be pre-registered with its inputs closed before the
+output is compared to 16.
+
+**[Opus scope note — the dial re-scope, and the remnant-spectrum prediction candidate.]** Q4 confirms:
+NB-F-1's dial is no longer the species split x but the **plane-resident vs free fraction at the
+bending epoch**, with transient qDP/hDP-A/hDP-B populations converting quickly to plane units and the
+operative competition being DM-plane formation vs the rarity of UUD/UDD baryon assembly on the same
+units. The 2529/2530 apparatus's frozen readings consume whatever the re-scoped dial supplies; the
+formal NB-F-1 re-scope annotation rides with the successor pre-registration. Q4 additionally registers
+a prediction candidate: a subdominant remnant spectrum of non-16-plane loops (longer rods closing
+late) — a registrable DM species-spectrum prediction for the successor campaign to formalize or
+discard.
