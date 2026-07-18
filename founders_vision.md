@@ -107,7 +107,7 @@ Electron capture (down to up + electron + neutrino) is the natural reverse of th
 
 *Source: Thomas's description, 4 April 2026:*
 
-Each heavier quark generation adds the next larger cage shell around the previous structure. The cages nest like Russian dolls. Mass grows because each shell adds oscillating edges storing ZBW energy.
+Each heavier quark generation adds the next larger cage shell around the previous structure. The cages nest like Russian dolls. Mass grows because each shell adds oscillating edges storing ZBW energy. *[SUPERSEDED — nested-wrapping retired at founder authority; single-cage model current (strange: tetrahedron; charm: icosahedron; bottom: dodecahedron; top: icosidodecahedron), matching shipped SF-3. See §6g Second Addendum, Patch 2540.]*
 
 **The cage sequence — dictated by 600-cell geometry:**
 
@@ -315,7 +315,7 @@ Down quark = up quark + captured electron. -eCP binds with +qCP for linear ZBW o
 
 ### 4 April 2026 — Nested Cage Hierarchy (Opus session)
 
-Each generation adds a cage shell: tetrahedron, icosahedron, dodecahedron, icosidodecahedron. Each wraps around the previous. **Discovery:** All four cages embed exactly in the 600-cell as bonded distance shells (Shells cell/1/2/4). Shell 3 has zero bonds — a gap. V^2.38 law predicts m_b to 3%, agreeing with Koide to 2%. Top is 12× anomalous.
+Each generation adds a cage shell: tetrahedron, icosahedron, dodecahedron, icosidodecahedron. Each wraps around the previous. *[SUPERSEDED — "wraps around the previous" retired; single-cage assignments current per SF-3. See §6g Second Addendum, Patch 2540.]* **Discovery:** All four cages embed exactly in the 600-cell as bonded distance shells (Shells cell/1/2/4). Shell 3 has zero bonds — a gap. V^2.38 law predicts m_b to 3%, agreeing with Koide to 2%. Top is 12× anomalous.
 
 ### 4 April 2026 — Mixed DP/hTetra Sea (Opus session)
 
@@ -1679,3 +1679,65 @@ formal NB-F-1 re-scope annotation rides with the successor pre-registration. Q4 
 a prediction candidate: a subdominant remnant spectrum of non-16-plane loops (longer rods closing
 late) — a registrable DM species-spectrum prediction for the successor campaign to formalize or
 discard.
+
+**§6g Second Addendum — The Single-Cage Ruling and the End-Bond Specification (18 July 2026, Session 166).**
+*Source: Thomas's answers to the Patch-2539 reconciliation question (nested-cage hierarchy) and the
+end-bond input request. Verbatim; scope notes marked.*
+
+*On the nested-cage hierarchy:*
+
+> "I don't know the context of the statement about the 'nested cage shell hierarchy', but I do know
+> that there was a previous iteration of the framework in which the structure of the quarks was
+> modeled as a successive nesting of cages, with the strange being the first layer with an tetrahedral
+> cage, the charm nested an icosahedron atop it, and the bottom a dodecahedron on the two previous
+> cages, and the top with a fullerene cage over the previous 3 cages. This was later determined to be
+> incorrect, and the nested-cage hierarchy was retired as obsolete and replaced with the single-cage
+> model, which is the following: strange: tetrahedron; charm: icosahedron; bottom: dodecahedron; top:
+> 30 vertex polytope."
+
+*On the end bond (rod→ring closure):*
+
+> "The DM rod bent into a loop bonded end-to-end bond is the same bonding configuration as all DM
+> plane to DM plane bonding; the plus-minus configuration of the end-to-end bond will be a 90-degree
+> offset, a plus-minus relationship between all coat eCPs and all core qCPs. Of course, the 4qCP
+> core-to-4qCP core bond will be the most energetic, and thus have the greatest attractive effect, and
+> thus would be preferential over an E_ee type bond that the end bond might accidentally bond onto.
+> (If an E_ee bond formed, it would probably break soon from a collision with the environmental
+> species in the Sea during that DM ring-forming regime/epoch.)"
+
+**[Opus scope note — the single-cage supersession, and where it lands.]** The founder ruling confirms a
+supersession the shipped SF-3 flagship already carries: SF-3's structural core assigns the four bonded
+600-cell shells V ∈ {4, 12, 20, 30} as per-generation cage ASSIGNMENTS (strange: tetrahedron V=4;
+charm: icosahedron V=12; bottom: dodecahedron V=20; top: icosidodecahedron V=30 — the founder's
+"30 vertex polytope"), with three generations forced by palindrome symmetry + antipodal identification.
+The nested-wrapping language surviving at founders_vision.md Part I/II (the "Russian dolls" paragraph,
+the "each wraps around the previous" discovery note, and the shell-7 no-fourth-generation argument) is
+a STALE CARRIER of the retired iteration — supersession pointer-riders added inline at those passages
+this patch (annotation, not deletion, per anti-erasure; the historical record of the nested iteration
+is itself part of the evolution-of-thought documentation the founder cites). The V^2.38 law and the
+three-generation prediction both survive in single-cage form (they consume vertex counts and shell
+inventory, not nesting). The SM-9 cooperative-enhancement chains remain a separately-registered
+mass-scale mechanism; their reconciliation with the single-cage picture stays open at low stakes.
+
+**[Opus scope note — the 2539 candidate tension DISSOLVES into convergence.]** With nesting retired,
+"strange = eDP-qDP wrapper folded around a down qCP, causing it to assume the hTetra shape" and SF-3's
+"strange: tetrahedron (V=4)" are the formation-side and structural-side descriptions of the SAME
+single tetrahedral cage — exactly parallel to the muon case (§6g First Addendum note (a)). The 2539
+candidate-tension registration is annotated resolved-to-convergence; the wrapper-fold mechanism is now
+the registered formation story for BOTH second-generation tetrahedral cages. (The charm/bottom/top
+wrapper mechanisms — what folds into an icosahedron, dodecahedron, icosidodecahedron — are NOT
+addressed by this capture and are registered open.)
+
+**[Opus scope note — the end-bond identity, its convergence, and the proofreading mechanism.]** Three
+registrations from the end-bond answer: (1) **End-bond ≡ inter-plane stacking bond** — the closure
+seam is the SAME bonding configuration as plane-to-plane stacking. This makes the end-bond depth a
+REGISTERED-LINEAGE quantity (the axial stacking wells: depth in the E_qq branch, map [40, 170] MeV;
+the 102 MeV contact-depth consistency lock at 2455; D = 1.15 fm), not a new unknown — the single most
+important unblocking fact for the successor campaign's statics half. (2) **The 90-degree offset** in
+the founder's specification is the registered Candidate-B "planes stack with alternating parity" —
+formation-side and structure-side language for the same relationship; convergence noted. (3) **Kinetic
+proofreading registered as mechanism:** accidental weak (E_ee-type) end closures anneal away under Sea
+collisions at the ring-forming epoch, selecting the energetic 4qCP-core-to-core closure — a
+founder-supplied selection mechanism that strengthens the closure window's specificity without any new
+rate construction (the mechanism is comparative: weak bonds break where strong ones survive, at
+whatever the ambient collision scale is).
