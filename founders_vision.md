@@ -1279,3 +1279,45 @@ results* and for *exhausted-avenue help requests*. Negative and incomplete closu
 (dated line) and the work moves forward — confirmation-of-a-known-negative is redundant compute. Dispatch-2
 (the RELIC-1 closure package) is accordingly HELD; the disclosure queue rides with the next positive-result
 dispatch. This sharpens WORKFLOW-REVIEW-ECONOMY's existing text and corrects Patch 2530 §7.
+
+**§6f Addendum — The Activation-Energy Picture of hTetra Formation (18 July 2026, same session).**
+*Source: Thomas's response to the Patch-2531 request for the physical picture of the hTetra's binding
+relative to separated eDP + qDP. Verbatim:*
+
+> "The hTetra forms because it has the velocity (which corresponds to KE, and hence to activation energy) to
+> overcome the repulsion of the two edge repulsive pairs. So the eDP and qDP will be the preferred species at
+> low temperature. At thermal energies where activation energy is possible, an increasing collision rate of
+> sufficient-energy collisions will result in the formation of hTetras as the temperature of the Sea Bath of
+> eDP and qDP solute is increased."
+
+**[Opus scope note — the two quantities this registers, and the theorem it triggered.]** The statement
+supplies the *kinetic* half of the reaction eDP + qDP ⇌ hTetra at mechanism level: a positive activation
+barrier E_act sourced by the two repulsive edges, encountered along the assembly path. Combined with §6f's
+window ("too hot they break / too cold they don't form"), the structure is the canonical activated formation
+of a bound state: the frozen relic composition = the reaction's *equilibrium at its own kinetic freeze-out
+temperature* — requiring the well-depth differential ΔE_b (thermodynamic), E_act (kinetic), and the
+freeze-out condition (rate vs ambient timescale). NB-F-1's requirement refines accordingly (annotation at
+Patch 2530 §7).
+
+**The neutrality-cancellation theorem (proved at capture; `code/2532_tetra_neutrality_theorem.py`):** in the
+regular-tetra geometry (all six edges equal, per Part I §3), assign the vertices +e, −e, +q, −q. The four
+cross edges (e-vertex to q-vertex) carry charge products q_e·q_q·[(+)(+) + (+)(−) + (−)(+) + (−)(−)] = 0 —
+**the electric cross-interaction between the eDP pair and the qDP pair vanishes identically at the symmetric
+point**, for any charge magnitudes, because each pair is neutral and all four cross distances are equal. The
+edge census falls out as Part I §3 states: 4 attractive, 2 repulsive. Two consequences, both registered:
+(i) **The barrier is a path property, not a state property** — at the finished tetra the repulsive edges are
+exactly paid for by the hybrid attractive edges, but *assembly paths* pass through asymmetric configurations
+where the cancellation fails and the repulsive edges can dominate: this is precisely Thomas's activation
+picture, now with its geometric origin. (ii) **The thermodynamic differential ΔE_b is second-order**: with
+the cross terms zero at the symmetric point, ΔE_b reduces to bond-length repackaging (free eDP/qDP
+equilibrium lengths vs the shared tetra edge length), any modification of the q–q color-channel energy
+inside the tetra, and ZBW dynamics — i.e., the reaction is *near-threshold at leading electric order*, which
+is exactly the regime in which neither side dominates and order-half hybrid fractions are natural. This is
+registered as a derivation target, not a result.
+
+**Derivation target registered — NB-F-1-T:** compute ΔE_b at second order (length repackaging +
+color-in-tetra + ZBW) and E_act (minimum-barrier assembly path), then the freeze-out composition, from
+registered structure only. Two elaborations requested from the founder, open: (1) the tetra's preferred
+*dissociation* channel when "too hot" — back to eDP + qDP (reverse reaction) or into hDP-A + hDP-B — since
+that channel's energy gates the hot edge of the window; (2) whether the q–q edge's color-channel energy
+inside the tetra equals that of a free qDP or is modified by the tetra frame.
