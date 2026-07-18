@@ -89,9 +89,19 @@ the Sea's proportions, registered through the standing channel, is route (ii).
 
 ## 7. Bookkeeping
 
-79.5% untouched. Dispatch-2 disclosure package now COMPLETE (S1 adverse-direction; closure theorem +
-common-precursor reframing, win-class; SM-A kill; T-1 park; T-2 necessary-condition pass; the 2529
-pre-registration discoveries incl. the ceiling and the trap; this Branch I → D3 close with the reopening
-contract) — fires next patch per WORKFLOW-REVIEW-ECONOMY: a genuine campaign closure carrying win-class
-items warrants the panel. Queued measurements (δ_E energy-weighted duty; MW-MODES TC-extension) resume
-priority after dispatch.
+79.5% untouched. Dispatch-2 disclosure package COMPLETE (S1 adverse-direction; closure theorem +
+common-precursor reframing; SM-A kill; T-1 park; T-2 necessary-condition pass; the 2529 pre-registration
+discoveries; this Branch I → D3 close with the reopening contract).
+
+*[CORRECTION, Patch 2531 — founder governance ruling, 18 July 2026: the dispatch does NOT fire on this
+closure. Panel dispatches are for positive results and exhausted-avenue help requests; negative/incomplete
+closures are recorded in-repo and the work moves forward. The disclosure queue rides with the next
+positive-result dispatch. The "fires next patch" reading above is superseded.]*
+
+*[STATUS ANNOTATION, Patch 2531 — NB-F-1 route (ii) ADVANCED: founder capture §6f (`founders_vision.md`)
+registers the equal-CP-inventory affirmation, the sequestration/defect ledger with the generalized lock, the
+epoch anchor T_form(DM) ≈ T_form(hTetra), and the bulk competition reaction eDP + qDP ⇌ hTetra. The
+reopening requirement refines from "a registered x" to ONE registrable comparison: E(hTetra) vs
+E(eDP)+E(qDP) against the window temperature. Campaign remains CLOSED at D3 pending that comparison.]*
+
+Queued measurements (δ_E energy-weighted duty; MW-MODES TC-extension) resume priority.

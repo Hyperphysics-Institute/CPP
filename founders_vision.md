@@ -1200,3 +1200,82 @@ field at distance the way a bipolar coat does → a net ~1/r² residual escapes,
 DP Sea (same mechanism as confinement / pion short-range). For the DM rod this is the dwarf-coring capture force,
 1/r² out to a rod-scale sea-screening length R_s. **The magnitude remains conditional** on the de-novo derivation
 of R_s(N) and the residual E_c (Strong Sector Series); cluster/Bullet safety is robust for any R_s.
+
+### 6f. Sequestration-Skewed Sea Composition — The Defect Ledger, the Thermal Formation Window, and "Not a Fixed Target" (18 July 2026, Session 165)
+
+*Source: Thomas's description, 18 July 2026, delivered as the founder response to the OPEN-DM-RELIC-1 D3
+close (Patch 2530) and its NB-F-1 registration. Extends §6c (the qDP skew / conservation lock / hTetra sink)
+and Part I §3. Thomas's physical claims are stated in his voice; passages marked **[Opus scope note]** are
+reviewer annotations registered so they travel with the vision — they are not part of the founder's claim.*
+
+**The retraction, and the CP-level inventory.** Thomas: *"I had stated before that there are 25% each of
+eCPs, qCPs, Type A hDPs, and Type B hDPs. This is incorrect."* The correct constraint is at the CP level:
+*"50% eCPs, with 25% plus eCPs and 25% minus eCPs; and 50% qCPs, with 25% plus qCPs and 25% minus qCPs."*
+**[Opus scope note.]** This retires, at founder authority, every equal-*species*-split statement (including
+the draft-tier 25/25/50 of `DP_sea_and_cage_composition.tex`, adjudicated superseded at Patch 2530) while
+*affirming* the equal-CP-inventory premise on which the §6c conservation lock stands. The lock survives;
+the species split does not.
+
+**Sequestration and the defect ledger.** Thomas: *"The number of qCPs will be determined by the number of
+minus eCPs sequestered. The sequestration will depend on where we are in the cosmic cycle."* He deduced the
+mechanism while working on paper: *"there must be −qCP cloud shells created by the mismatch between the plus
+qCPs and minus eCPs in the formation of baryons."* The stage-dependent ledger, in his words: at the
+quark-only stage, *"the defect in the universe's net neutrality is due to the shielding of charge in bonding
+relationships"*; at the baryon stage the ratio is species-dependent — *"3 eCP and 6 qCPs for deuterium ion;
+1 eCP to 3 qCPs for hydrogen ion"*; at the atomic stage, *"the defect consists of 4 eCPs and 6 qCPs for the
+deuterium ion,"* and *"the defect of 2 extra/unbound/uncancelled minus eCPs for every 6 qCPs sequestered
+occurs when atoms have formed."* Thomas flags his own ledger openly: *"Even that is ambiguous"* — the
+per-stage counts are registered as stated, with their ambiguity registered alongside them.
+
+**[Opus scope note — the generalized lock, and what the defect IS algebraically.]** Writing the §6c budgets
+with a sequestration vector S = (S₊ₑ, S₋ₑ, S₊q, S₋q) removed from the free inventories, the four pairing
+equations are *overdetermined*: they close only if the sequestered net charge vanishes. When it does not —
+Thomas's ions are exactly this case — the system forces **unpaired free CPs of the compensating sign**, and
+their count equals the sequestration charge mismatch. Thomas's hand-derived "defect" (unbound −eCPs; the
+−qCP cloud shells around baryons) is precisely the algebra's unpaired-CP term: charged sequestration
+*mathematically requires* a compensating unpaired population in the Sea. His paper deduction and the budget
+algebra are the same result reached independently (verify: `code/2531_sequestration_lock.py`; S → 0 recovers
+the §6c 1:1 lock exactly). Cross-links: the campaign's U_q = 3η_B anchor and the S1 charge-ADM
+structural-unavailability finding both sit naturally beside a Sea that carries the compensating charge in
+distributed shells. **Scale note, load-bearing:** the *global* sequestered fraction is of order the
+baryon-to-Sea CP ratio (~10⁻⁴⁵ at one-CP-per-GP density) — sequestration cannot materially move the *bulk*
+species percentages. Its domain is **local**: the defect shells around baryonic matter. The picture
+therefore splits cleanly into a **bulk layer** (thermal species competition, below) and a **local layer**
+(sequestration shells — the catalysis question).
+
+**"It isn't a fixed target."** Thomas: the species percentages are epoch- and environment-dependent — *"My
+point being that it isn't a fixed target."* **[Opus scope note.]** This reframes NB-F-1: the resolution
+object is not one number x but **x evaluated at the DM-formation epoch with that epoch's conditions**. The
+2526/2527/2529 frozen apparatus is unaffected — it consumes whatever x the epoch supplies.
+
+**The thermal formation window (the epoch anchor).** Thomas: *"It seems like the temperature at which baryon
+hTetras can form would be about the same temperature at which hTetras can form DM elements from hTetras."*
+And the window itself: *"Thermal conditions will be the most influential: if the rods and rings are too hot,
+they will break; if the Sea bath is too cold, the DM rods and rings will not form."* **[Opus scope note.]**
+This registers, for the first time, the composition-setting epoch the R-B route died for lack of:
+**T_form(DM) ≈ T_form(hTetra)** — the dial is to be evaluated *at the hTetra window itself*. Consistency
+gate carried, unadjudicated: whether the registered corpus value kT_form ≈ 16.5 keV is that window.
+
+**The catalyst question.** Thomas: *"do DM elements, DM rods, form only when there is a minus qCP shell? It
+is my feeling that the hTetras and the 2-wide and 4-wide ribbons form without a catalyst in a sufficiently
+energetic thermal environment... the question is whether a catalyst is necessary at all. Perhaps simply
+correcting the percentage of eDP qDP and type A and type B hDP would be adequate."* Registered as an open
+fork: bulk-thermal formation (no catalyst) vs shell-catalyzed nucleation — with Thomas's lean to the former.
+
+**The species-competition equilibrium.** Thomas: *"The eDP will compete with type A hDP and type B hDP. The
+qDP will compete with type A hDP and type B hDP. This species concentration competition probably has a
+solution that determines the percentage of species."* Plus the sequestration couplings: sequestration of
++qCPs competes with hybrid formation, and *"the sequestration of eDPs in hydrogen ions will compete with the
+formation of type A hDPs."* **[Opus scope note.]** In DP language the bulk competition is the
+CP-content-neutral reaction **eDP + qDP ⇌ hDP-A + hDP-B ⇌ hTetra** — and with the epoch now anchored to the
+hTetra window, the bulk dial is potentially calculable from **one registrable comparison**: E(hTetra) vs
+E(eDP) + E(qDP), against the window temperature. That single comparison is now the entirety of what stands
+between NB-F-1 and the frozen readings. *(Labeling flag: Thomas's message uses "type A hDP (+qCP and −eCP)";
+the canonical Part I §3 table has hDP-A = +eCP/−qCP, hDP-B = −eCP/+qCP. Polarity-mirror species; content
+unaffected; canonical labels retained here.)*
+
+**Governance ruling registered same turn (founder, 18 July 2026):** panel dispatches are for *positive
+results* and for *exhausted-avenue help requests*. Negative and incomplete closures are recorded in-repo
+(dated line) and the work moves forward — confirmation-of-a-known-negative is redundant compute. Dispatch-2
+(the RELIC-1 closure package) is accordingly HELD; the disclosure queue rides with the next positive-result
+dispatch. This sharpens WORKFLOW-REVIEW-ECONOMY's existing text and corrects Patch 2530 §7.
