@@ -1321,3 +1321,70 @@ registered structure only. Two elaborations requested from the founder, open: (1
 *dissociation* channel when "too hot" — back to eDP + qDP (reverse reaction) or into hDP-A + hDP-B — since
 that channel's energy gates the hot edge of the window; (2) whether the q–q edge's color-channel energy
 inside the tetra equals that of a free qDP or is modified by the tetra frame.
+
+**§6f Second Addendum — Dissociation Channels, SSV_abs vs SSV_net in the Tetra, and the Non-Separability Principle (18 July 2026, same session).**
+*Source: Thomas's answers to the two Patch-2532 open elaborations. Verbatim.*
+
+*On dissociation (Q1 — what does an overheated tetra break into):*
+
+> "At sufficient temperature/collision energy to break 3 E_ee hTetra bonds, the eCP bonds will break due to
+> phonon transmission or direct collision and form a free eCP.
+> At sufficient energy to break 4 E_ee bonds, the hTetra will dissociate into an eDP and a qDP.
+> At sufficient energy to break 1 E_qq bond and 2 E_ee bonds, the hTetra will dissociate into a free qCP
+> plus a type A or B hDP plus an eCP that may be loosely bonded to the hDP pole of opposite polarity to the
+> polarity of the eCP."
+
+*On the q–q edge inside the tetra (Q2):*
+
+> "The E_qq bond between the two qCPs is placed under greater SSV_abs stress, but the SSV_net is unchanged
+> by the presence of the four E_ee bonds from the two eCPs. That is, the SSV_net from the two eCPs will
+> cancel out (being of opposite polarity at equal distance), resulting in no net SSV on either qCP. But
+> SSV_abs will be greater in the qCP bond space in the hTetra vs the free qDP. ... I think that extra
+> SSV_abs will be translated into the energy of breaking the 2 E_ee bonds to free, plus one E_qq to free one
+> qCP from the hTetra. So, in that sense, the bonding energy between the qCPs in an hTetra is greater than
+> the bond energy between the qCPs in a qDP. Restated: Given that the qDP bond is modified by the bond with
+> the two eCPs, it really isn't reasonable to ask about the bond energy between the two qCPs in the hTetra
+> without also considering what it would take to break the bond between the eCPs also, since the qCP would
+> not be free from the other qCP until all the bonds had been broken, which in this case includes the two
+> eCP bonds also. Note: the bond length of the E_qq bond will be shorter than the E_ee bond length as it
+> will have both E_qq and E_ee."
+
+**[Opus scope note — the convergence.]** Thomas's "SSV_net from the two eCPs will cancel out (opposite
+polarity at equal distance), resulting in no net SSV on either qCP" **is the 2532 neutrality-cancellation
+theorem stated independently in substrate (SSV) language** — reached from his side before seeing the proof
+applied to SSV. Registered as an independent convergence. Moreover his bond-length prediction (the q–q edge
+shorter, being doubly bound E_qq + E_ee) makes the tetra *isosceles-irregular* — and the theorem SURVIVES:
+in the two-axis geometry (e-pair and q-pair on perpendicular axes, centers aligned) all four cross distances
+remain equal by symmetry, so the electric cross-cancellation holds for ANY edge-length asymmetry
+(`code/2533_channels_and_irregular_tetra.py`). The shorter-E_qq-edge prediction is registered as a
+structural prediction of the tetra geometry.
+
+**[Opus scope note — the non-separability principle, adopted.]** Thomas's methodological point is correct
+and is adopted as NB-F-1-T's variable convention: per-edge bond energies in a four-body cluster are not
+separately well-defined; only **total channel energies** (initial state → named products) are. NB-F-1-T
+therefore computes channel energies, not edge energies. His SSV_abs-deepened q–q binding ("greater than in a
+free qDP") is registered as the founder's expectation for the q-liberation channel.
+
+**[Opus scope note — the ledger tension, registered openly as OPEN-6F-LEDGER.]** The founder's channel
+ledger prices the eDP + qDP dissociation at **4 E_ee** (all four e-involving cross edges charged as costs).
+The static-charge census (and Part I §3's own 4-attractive/2-repulsive count, with the repulsive pair forced
+to be the like-sign +e/+q and −e/−q edges) implies that channel nets **~0 at leading electric order**: two
+attractive cross edges paid, two repulsive cross edges *refunded* — the 2532 theorem. Both cannot be right
+as stated. The crux is a single well-posed question: **does breaking the +e/+q edge cost energy, release
+energy, or neither?** Candidate reconciliations, registered without adjudication: (i) the E_ee ledger is a
+counting heuristic to be replaced by computed channel energies (NB-F-1-T's job); (ii) the operative energy
+model is not static-Coulomb but ZBW-quantum (Part I §3: "each **attractive** bond stores ZBW energy,
+probably an ℏ unit") — under which the eDP+qDP channel costs 2 stored quanta (the two attractive crosses),
+matching neither the 4-E_ee ledger nor the ~0 static result and making a THIRD candidate; (iii) the ZBW
+bond structure differs from the static census (which edges are the "4 attractive ZBW bonds" is then the
+question). Whichever model the derivation vindicates, the choice must be made ONCE, globally, and carried
+into every channel — this is the energy-model fork NB-F-1-T must adjudicate first.
+
+**[Opus scope note — the gating channel.]** Taking the founder ledger at face value: the cheapest channel is
+free-eCP liberation at 3 E_ee whenever E_ee < E_qq (3E_ee < 4E_ee always; 3E_ee < 2E_ee + E_qq ⟺ E_ee <
+E_qq, which §6c's doubly-bound logic and the Q2 answer both suggest). **The hot edge of the formation window
+then gates on eCP liberation — NOT on the reverse reaction** — and the first dissociation product is a
+*charged three-CP fragment* (+q, −q, −e or mirror) plus a free eCP: partial dissociation feeds charged
+fragments into the Sea, a natural cross-link to the §6f defect-shell layer. Registered as
+founder-ledger-conditional; the channel ordering is re-derived under whichever energy model OPEN-6F-LEDGER
+resolves to.
