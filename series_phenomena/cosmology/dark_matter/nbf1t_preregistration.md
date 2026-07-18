@@ -148,3 +148,21 @@ win-class dispatch. Queued measurements (δ_E energy-weighted duty; MW-MODES TC-
 behind NB-F-1-T. Founder physical input on ZBW bond statics (stiffness/length of the e–e and q–q bonds)
 remains welcome through the standing channel and would directly convert R-A's T_dist limb from Branch I
 to computable. Next patch: the R-A compute, under this document only.
+
+---
+
+*[STATUS RIDER, Patch 2538 — founder capture §6g (18 July 2026): this pre-registration is **HELD**.
+The §6g model shift registers that the hTetra does not form as a Sea species (fold-blocked by the two
+repulsive cross relationships; hTetra formation occurs only at the baryogenesis final step, folded by
+up/down-quark attraction). The reaction target eDP + qDP ⇌ hTetra is therefore superseded IN ROLE as
+the Sea's composition-setting reaction, before any compute patch executed under this document — no
+reading was ever taken here. What carries forward intact into the re-scoped campaign: the trap clause
+and its near-threshold extension (§0); the bond-identity adjudication criteria (§3); the closed-list
+method and Branch semantics (§§2, 5–6); and the §4 structural consequences (the super-additive
+entailment survives as a statement about tetra binding wherever the tetra occurs — now the baryon
+interior — and the 47 MeV margin retains that meaning). The successor targets are the §6g plane-unit
+energetics (flat eDP–qDP binding) and the rod→ring bending window (T_form(DM) from the registered
+pure-bend stiffness, Patch 2450 lineage); a successor pre-registration will be written against those
+targets after the §6g clarification questions (Q1–Q5) resolve. Per anti-erasure this document is
+annotated, not deleted; it remains the reference implementation of the prereg discipline for the
+successor.]*

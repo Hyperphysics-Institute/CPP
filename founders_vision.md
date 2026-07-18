@@ -1428,3 +1428,125 @@ it as KE). Consequences, each verified in `code/2534_amended_ledger.py`:
    both sides — the relic population is *kinetically frozen*, fixed by formation history at the window. This
    is a structurally natural dark-matter profile and dovetails with §6c's freeze-out ordering; registered as
    the interpretive frame NB-F-1-T will confirm or refute.
+
+### 6g. The Model Shift: hTetra Is Not a Sea Species — the eDP–qDP Plane Unit, Fold-Blocking Repulsion, Baryogenesis-Final-Step hTetra Formation, and the Rod→Ring Thermal Epoch (18 July 2026, Session 166)
+
+*Source: Thomas's message, 18 July 2026, delivered as the founder response to the NB-F-1-T
+pre-registration (Patch 2537). Self-described: "This is a Big shift in the model." Thomas's claims
+verbatim; passages marked **[Opus scope note]** are reviewer annotations — not part of the founder's
+claim. This capture supersedes-in-role several §6f registrations (each named below with an annotation,
+per anti-erasure — nothing is deleted).*
+
+**The bottom line (verbatim, bulleted as delivered):**
+
+> - Bottom line, the hTetra does not form as a DP Sea component.
+> - The hTetra only forms in the final step of Baryogenesis
+> - Baryogenesis: When quarks bind at three out of four corners of the 2eCP-2qCP (which is the same
+>   thing as an eDP-qDP unit), the plane folds into an hTetra (The attraction of the up and down quarks
+>   being the folding force.
+> - The eDP-qDP will be a major species in the early universe Sea.
+> - The eDP-qDP will react with another eDP-qDP to form a DM plane unit.
+> - The DM planes will stack to form a DM rod, which bends into a DM ring upon collision.
+> - (Note: this bending of the DM rod into a DM ring would be due to thermal collisions - so, the
+>   energies of the thermal collision required for bending the DM rod into a DM ring will give us the
+>   thermal epoch where DM matter is formed.)
+> - This will be the thermal epoch where DM formation competes with baryon formation.
+> - The free qCPs and free eCPs will determine the qDP
+> - Baryon formation will compete for the free ups (qCP only) and free downs (qCP plus eCP)
+
+**The thinking evolution (verbatim):**
+
+> The ZBW oscillations of the 4 components of the hTetra are influenced as follows:
+> - Every component of the hTetra, the plus/minus eCP and plus/minus qCP, is bonded to the 3 other
+>   nearest neighbors. 4/6 of those bonds are attractive, and 2/6 are repulsive.
+> - The oscillation dynamics are, in general, as described previously in the discussion of the DM core
+>   and coat species.
+> - All four species are potential dance partners in the ZBW dance, but the 3 edge relationships are
+>   the most likely.
+> - The repulsive relationship, the e-q plus plus and e-q minus-minus will not be engaged in a ZBW
+>   dance relationship.
+> - When the hTetra converts into a DM core and coat configuration, there is no longer the 2 repulsive
+>   bonds as nearest edge relationships because the hTetra does not retain the Tetrahedral orientation.
+> - The hTetra bonds are rotated 90 degrees into a cubic relationship, in which each core-species pair
+>   has 5 qCP oscillation edge partners and 1 eCP oscillation edge partner.
+> - The stability of the hTetra bonds is relevant only as far as how difficult it is to rotate the
+>   hTetra edge bonds.
+> - Of the two repulsive bonds, the 1) plus eCP and plus qCP and the 2) minus eCP and minus qCP, those
+>   will prevent the folding of the qDP and eDP from becoming an hTetra.
+> - Also, type A and type B hDPs will not form an hTetra for the same reason. When they bond, they are
+>   in the same configuration as the eDP-qDP.
+> - The two qDP-eDP units bond to form a DM plane comprising 4 eCPs and 4 qCPs.
+> - Likewise, the type A and type B hDPs form the same configuration.
+> - Thus, the eDP-qDP is the elemental plane of DM and will stack 16 high to form DM rings.
+
+**[Opus scope note — the stoichiometric convergence, verified at capture
+(`code/2538_plane_stoichiometry.py`).]** The founder's formation story reproduces the registered
+Candidate-B structure EXACTLY, with no adjustment: plane unit = 2×(eDP–qDP) = 2 eDP + 2 qDP = 4 eCP +
+4 qCP = 8 CPs, matching the registered element-plane (4 qCPs at square corners + 4 eCPs on diagonals);
+element = 2 planes = 4 eDP + 4 qDP = 16 CPs = 4·88 + 4·264 = 1408 MeV, matching the 2452 DD-priced
+mass lock; 8 elements × 2 planes = 16 planes, matching N_planes = 16 and the founder's "stack 16
+high." A formation narrative written from the Sea side landing on the survival-tested geometry's
+stoichiometry, registered seven days earlier from the stability side, is an independent convergence of
+the §6f-Second-Addendum class.
+
+**[Opus scope note — what the 2532–2534 theorems become.]** The geometry results SURVIVE and are
+re-purposed, not retired: (i) the 2532 neutrality-cancellation theorem and the 2534 repulsive-edge
+refund are statements about the tetra geometry wherever it occurs — now, inside baryons at the
+baryogenesis final step. (ii) The activation barrier (repulsive edges on the assembly path) is
+promoted from "kinetic gate on Sea-side formation" to **the mechanism that PREVENTS Sea-side hTetra
+formation entirely** — the founder's fold-blocking claim is the barrier doing its work; the folding
+force that overcomes it (up/down quark attraction) exists only in the baryogenesis context. The 2532
+"barrier is a path property" theorem is the geometric backbone of the fold-block. (iii) The 2533
+dissociation channels and the 2534 gating flip retain their conditional registrations but their Sea-
+composition application retires with the reaction they gated.
+
+**[Opus scope note — supersessions-in-role, each annotated at source per anti-erasure.]**
+1. **The §6f bulk competition eDP + qDP ⇌ hTetra** is superseded as the Sea's composition-setting
+   reaction. The Sea-side reactions are now: DP pairing into eDP–qDP units; plane-unit formation
+   (2 units); plane stacking (rods); rod→ring bending. Note the founder's own §6f species-competition
+   language (eDP/qDP competing with hDP-A/hDP-B) persists — but with hDP-A + hDP-B bonding into "the
+   same configuration as the eDP-qDP," BOTH pairings feed the SAME plane unit, which restructures the
+   composition dial (see clarification Q4).
+2. **The §6f epoch anchor T_form(DM) ≈ T_form(hTetra)** is superseded by the **rod→ring bending
+   anchor**: T_form(DM) is set by the thermal collision energy required to bend a DM rod into a ring.
+   This is a MATERIALLY better-registered target: the corrected pure-bend stiffness (+291, Patch 2450,
+   independently validated) and the eCP-coat bending-resistance mechanism already exist at DM-lane
+   depth — the bending anchor has registered quantitative inputs where the hTetra anchor had none.
+3. **The 2537 NB-F-1-T pre-registration** is annotated HELD (rider at
+   `nbf1t_preregistration.md`): its reaction target is superseded in role before the compute patch
+   executed; its discipline apparatus (trap clause + extension, bond-identity adjudication criteria,
+   closed-list method, Branch semantics) carries forward intact into the re-scoped campaign.
+4. **The 0672a hTetra sink** (super-additive inequality; scarce-free-hDPs picture) retires as a SEA
+   mechanism; the 2537 §4 entailment survives as a statement about tetra binding wherever the tetra
+   occurs (baryon interior).
+
+**[Opus scope note — the new competition structure.]** The DM-vs-baryon competition at the formation
+epoch now runs through the FREE-CP inventory: baryon formation consumes free ups (qCP-only) and free
+downs (qCP + captured eCP — matching the registered SS-2 linear-oscillator down-quark structure), while
+DM formation consumes eDP–qDP units built from the paired inventory. This connects the composition
+question directly to the S1/S2 baryon net-CP bookkeeping and the U_q = 3η_B anchor already in the
+campaign record — the sequestration/defect-shell layer (§6f) and the DM-formation competition now
+share one ledger.
+
+**[Opus scope note — clarification questions registered, open, for the founder through the standing
+channel.]**
+- **Q1 (the conversion bullet):** "When the hTetra converts into a DM core and coat configuration" —
+  is this a physical pathway (some baryogenesis-formed hTetras convert into DM material), or a
+  geometric comparison (the DM cubic core/coat arrangement described by reference to what the hTetra
+  bonds would look like rotated 90°)? The bottom-line claims read cleanest under the comparison
+  reading; the pathway reading would reopen a Sea←baryon transfer channel.
+- **Q2 (flat-unit stability):** the eDP–qDP plane unit carries the same two like-sign cross
+  relationships that block folding. Does the FLAT configuration bind (repulsion holds it flat and
+  planar — the fold-block as a stabilizer), and is its binding registered/derivable? This is the new
+  bulk-species energetics question, replacing ΔE_b(hTetra) in that role.
+- **Q3 (both anchors or one):** does the rod→ring bending anchor REPLACE T_form(DM) ≈ T_form(hTetra),
+  or do both windows coincide (folding suppressed at all temperatures in the Sea, bending setting the
+  epoch alone)? The capture reads as replacement; confirming closes the §6f anchor cleanly.
+- **Q4 (the dial's new shape):** if eDP+qDP pairing AND hDP-A+hDP-B pairing both produce the identical
+  plane unit, the species split x may no longer be the composition dial at all — the dial becomes the
+  paired-vs-free (or plane-resident vs free-DP) fraction at the bending epoch. Confirm, and the NB-F-1
+  blocker re-scopes accordingly.
+- **Q5 (ring closure number):** does the rod bend into a ring at exactly 16 planes because the bending
+  energetics select that length, or is N_planes = 16 set upstream (rod growth termination) with
+  bending closing whatever length presents? This decides whether the bending computation predicts N
+  or consumes it.
