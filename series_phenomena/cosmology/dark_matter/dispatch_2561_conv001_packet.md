@@ -82,3 +82,24 @@ opens.
 Package items 1–8 clear the standing disclosure queue as of this dispatch; new items
 accumulate fresh. Responses route to a consolidation patch; charter amendments (ITEM 9)
 freeze into the K1 pre-registration. 79.5 % is not before the panel.
+
+---
+
+## §2 — DISPATCH DEFERRAL RIDER (Patch 2563, 18 July 2026; founder direction, session channel)
+
+**Status: this packet is UNDISPATCHED and stands as a standing disclosure document.** The founder
+directed (18 Jul session channel, confirming the WORKFLOW-REVIEW-ECONOMY ruling): panel review fires
+only when (a) the programme is blocked and needs advice or ideas, or (b) a positive result is wanted
+reviewed. A disclosure batch alone does not auto-dispatch. Consequences, frozen:
+
+1. **§1's queue-clearing language is annotated:** the standing disclosure queue clears ONLY on actual
+   dispatch. Items 1–9 REMAIN STANDING and accrete new dated lines until a dispatch fires under (a)
+   or (b). Nothing in the record may cite this packet as a completed review.
+2. **Phase K1 opens WITHOUT ITEM 9 panel amendments.** The charter's review questions Q1–Q3 are
+   internalized into the K1 pre-registration as self-adjudicated gates (Q3 → the K1 RP-GATE; Q1 →
+   a recorded-evidence hook adjudicated at the K2 prereg; Q2 → K3's prereg). If a future dispatch
+   returns ITEM 9 amendments, they enter as riders binding every not-yet-run cell; already-frozen
+   results stand with the amendment noted.
+3. **Precedent note:** the RELIC-1 charter's pre-dispatch review remains the precedent for
+   PROMOTION-class campaigns; this deferral does not weaken that bar — 79.5% still moves only on a
+   dedicated dispatch.
