@@ -147,3 +147,14 @@ conservative instrument + K1b sink named-and-blocked pending registered physics)
 re-run the Copilot paste to complete probation screen #2. On ratification: the K1 re-charter
 (K1a/K1b split, all §2 R2 hazards, the §5 capability census) is the next registration. Next
 patch: 2568.
+
+---
+
+## §7 — FIFTH-REVIEW RIDER (Patch 2568)
+
+The Copilot channel was re-run and returned a distinct review: probation screen #2 CLEAN, full
+five-seat panel RESTORED. R1 tally updates to 3–2 O3-first; the §2 synthesis stands unchanged and
+now carries all five seats. New hazards (phase-space sampling; timescale registration; the
+bound-state invariance control) and the Q2 absolute-abundance clarification fold into the
+re-charter. Copilot's R3 dissent ("no change to Q1/Q2") recorded, not averaged. Full record:
+`nbs3a1_adjudication2_copilot_screen.md`.
