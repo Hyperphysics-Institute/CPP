@@ -76,3 +76,30 @@ Harmonic extrapolation from small-κ stiffness to closure curvature (unquantifie
 B from a two-point L-scaling (5% coherence); comparator union spread (factor 3/2); E_endbond carried
 as the full [40, 170] MeV band; L = 16 consumed, not derived (blindness protocol honored — the
 formation-side route to 16 remains open pending the kinetic limb); kinetic limbs Branch I throughout.
+
+---
+
+## 7. REVISION RIDER (Patch 2552, 18 July 2026 — licensed by the ENDBOND-3 banked pin, 2551)
+
+The dance-strength closure measurement (OPEN-DM-ENDBOND-3, `endbond3_ra_curve.md`) pins
+the net closure energetics directly: **ΔE_close(16) = [−137.5, −128.9] MeV (±2 MeV
+chaotic-floor rider)**, superseding this document's §4(b) statics-band value
+[−154.7, −23.0] — a collapse from a 132 MeV width to ~9 MeV, landing inside the old band.
+Consequences, per the 2548/2550 pre-registered propagation:
+
+- **§4(b) net closure energetics: REVISED to the dance pin.** Closure is strongly
+  net-exothermic with no barrier at the registered grid resolution (κ* = 0, dt-stable);
+  the ratchet picture strengthens — no impulse threshold required at this resolution.
+- **Survival margin: COLLAPSED accordingly** (the closed ring sits 129–138 MeV below the
+  straight rod at dance strength; the statics-side survival floor is superseded by the
+  direct measurement).
+- **kT_form(L=16) ∈ [10.2, 17.0] MeV: EXPLICITLY NOT COLLAPSED** — the band is
+  comparator/convention-dominated (2544 §0, 2548 §0, restated at every step); the closure
+  relation kT·L ∈ [163.6, 271.5] MeV and the epoch band stand unrevised.
+- **E_endbond as a separate carried quantity:** the [40, 170] input-3 band is superseded
+  FOR NET-CLOSURE USES by the direct ΔE_close pin (the dance does not decompose bend from
+  bond — barrier-free curve); the mixed-lineage orientation arithmetic (statics E_bend +
+  dance ΔE_close → implied seam bond [144, 155] MeV) is carried for orientation only,
+  NOT a pin (2551 §4).
+- Conditionality ledger (§6): unchanged in kind; the L = 16 consumption now additionally
+  cites the ENDBOND-3 use under the same rider.
