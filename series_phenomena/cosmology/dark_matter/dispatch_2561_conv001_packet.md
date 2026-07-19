@@ -62,7 +62,9 @@ authors state the honest implication: the kinetic framework inherits "why 16 rat
 than 22," with stability-side selection (a separate, earlier campaign) currently
 carrying the answer.
 
-ITEM 9 (charter for pre-registration review): NB-S3a-1 — the pairing/condensation
+ITEM 9 (charter for pre-registration review) [UPDATE, Patches 2564–2566: Q3 now has an
+EMPIRICAL answer — the K1 kill condition FIRED at the RP-GATE exactly where it was aimed;
+see ITEM 10. Q1 and Q2 remain live as posed.]: NB-S3a-1 — the pairing/condensation
 kinetic framework, phased K1 (two-body capture) → K2 (assembly) → K3 (growth-vs-closure
 competition; owns the selection observable = abundance-weighted L at freeze-out) → K4
 (relic reconnection; the relic target stays fenced as a gate). Adverse abundance
@@ -71,10 +73,45 @@ need >2-body capture)? Q2 is abundance-at-freeze-out the right formalization of 
 selection question? Q3 does K1's kill condition correctly locate the risk of forcing a
 bound-state choreography to represent scattering?
 
+ITEM 10 (FOCAL — the live blockage; your ideas are the reason this dispatch fired):
+K1 opened under a pre-registration whose first act was a representational-premise gate.
+The gate's controls ALL PASSED (a minimal moving-home extension transports a bound dipole
+ballistically at 0.1% fidelity; a 500 MeV head-on passes through; a contact pair binds —
+classifiers validated). Production then FAILED STRUCTURALLY on two independent grounds:
+(i) the instrument's interaction lists are built once at initialization, so far-separated
+structures can never target each other (spec question: static vs live evaluation); and
+(ii) — found by a post-verdict diagnostic — even under live lists, a slow head-on
+encounter ESCAPES in every cell, because home frames translate at constant velocity
+forever: the instrument has NO channel for momentum exchange between the interaction
+layer and the scaffold layer. Capture requires shedding translational energy into the
+encounter; the rail runs through the collision. K1 is CLOSED BLOCKED per its own
+pre-registered reading. Three candidate routes are named, none adopted:
+  O1 — two-layer dynamics: live lists + a single new back-reaction rule (homes acquire
+  ΔV from the cycle-averaged cross-structure force, relaxation governed by the
+  registered SF-6 inertia pins m_qCP=132 / m_eCP=44 MeV/c²).
+  O2 — v-vector rebuild: in scattering contexts CPs carry persistent velocity vectors
+  with SF-6 inertial relaxation; homes disappear (closest to the postulate layer;
+  a real rebuild).
+  O3 — statics-adjacent re-scope: register a capture CRITERION instead of trajectories
+  (capture iff E_rel is below the well depth the encounter geometry can access — the
+  same computation class as the programme's earlier flux-check precedent). Fastest;
+  sacrifices σ(E,b) structure for a threshold form consumed by later phases.
+The founder inclines to the feasible route ("go for the one that is possible and see
+how it did") and asks for your help. The authors' recommendation on record: O3 first
+(unblock the phase chain now), O1 as the upgrade if trajectory structure proves
+necessary, O2 only if the postulates demand it. Your asks:
+  R1 — recommend among O1/O2/O3 (or a fourth route), with reasons.
+  R2 — for your recommended route, the hazards that MUST be pre-registered: for O3,
+  what would make a capture criterion dishonest (e.g., well-depth accessibility
+  assumptions, dissipation-channel hand-waving)? for O1, what back-reaction law is
+  actually licensed by the SF-6 lineage vs invented? for O2, what must be preserved to
+  keep continuity with every registered dance result?
+  R3 — does the blockage change your ITEM 9 Q1/Q2 answers?
+
 Respond with: numbered findings per item; protocol-integrity verdict per item
 (SOUND / CONCERN with specifics); your three highest-value adversarial observations;
-and for ITEM 9, answers to Q1–Q3 with any amendments you would require before Phase K1
-opens.
+for ITEM 9, answers to Q1–Q2 (Q3 is empirically resolved) with any amendments you would
+require; and for ITEM 10, R1–R3 — treat ITEM 10 as the packet's priority.
 ---
 
 ## §1 — bookkeeping
@@ -103,3 +140,17 @@ reviewed. A disclosure batch alone does not auto-dispatch. Consequences, frozen:
 3. **Precedent note:** the RELIC-1 charter's pre-dispatch review remains the precedent for
    PROMOTION-class campaigns; this deferral does not weaken that bar — 79.5% still moves only on a
    dedicated dispatch.
+
+---
+
+## §3 — DISPATCH LICENSED (Patch 2566, 18 July 2026)
+
+The founder's trigger (a) fired: K1 is genuinely blocked (2565) and the founder requested
+panel ideas (session channel: "Perhaps the panel has an idea… maybe the panel could give
+us some help"). This packet, updated with ITEM 10 (focal) and the ITEM 9 Q3 annotation,
+is NOW LICENSED FOR DISPATCH to the five seats. Upon actual paste, items 1–10 clear the
+standing disclosure queue per §1 (the §2 rider's clears-only-on-actual-dispatch condition
+is hereby satisfied by the paste, not by this licensing line). Responses route to a
+consolidation patch; ITEM 10 R1–R2 outcomes feed the founder's final route selection and
+the K1 re-charter; K2 remains closed pending that re-charter. 79.5% remains not before
+the panel.
