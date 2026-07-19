@@ -1,63 +1,104 @@
-# NB-S3a-1 PROJECT CHARTER (scoping, v1.0): the CPP pairing/condensation kinetic framework — the route to selecting L within the derived window; phased, kill-conditioned, dispatched for panel pre-registration review
+# NB-S3a-1 PROJECT CHARTER v1.1 (re-registration under the panel amendments and founder adjudication #2): the K1a/K1b split, the sink named, the merged hazard inventory, the capability-census rule
 
-**Patch 2560, 18 July 2026. Status: PROJECT CHARTERED at scoping level; NO derivation
-performed; NO phase opened.** Founder priority ("we need to do the kinetic study"). This
-charter goes to the five-seat panel for pre-registration review in the 2561 dispatch
-before Phase K1 opens (RELIC-1 charter precedent).
+**Patch 2569, 19 July 2026. Status: CHARTER RE-REGISTERED at v1.1; NO derivation performed; NO phase
+opened.** Updates the charter IN PLACE per the no-version-suffix convention; v1.0 is preserved verbatim in
+git history (Patch 2560) as the object the panel reviewed. Lineage: v1.0 → five-seat review (2561 packet as amended 2566, consolidated 2567/2568) →
+founder adjudication #2 (2568: synthesis RATIFIED; Sea/SF-6 sink direction). CHANGELOG at foot.
 
-## 0. Objective and the selection question it inherits
+## 0. Objective (unchanged) and the selection observable (amended)
 
-Construct, from CPP postulates and the registered dance instrument, the kinetic framework
-for DM assembly: rates for qDP-eDP pairing → plane assembly → element stacking → rod
-growth → ring closure, in the ambient medium near the (independently derived, conditional)
-formation epoch. **The selection observable: the abundance-weighted L distribution of
-closed rings at channel freeze-out.** The question sharpened by FORM-L-2: energetics
-defines the window (even L ∈ [8, 22], wall at (22, 24)) and *rewards L = 22 most*, while
-the stability side (OPEN-SS-43) selects N = 8 elements (16 planes). The framework must
-show whether assembly kinetics concentrates abundance at 16 — convergence — or elsewhere —
-a registered tension. Both outcomes are chartered as reportable; the charter pre-commits
-that an adverse abundance result is recorded as-is.
+Construct, from CPP postulates and the registered dance instrument, the kinetic framework for DM
+assembly. **The selection observable (amended per unanimous Q2 review + Copilot clarification): the
+MASS-weighted L distribution of the RELIC ring population — after the K4 transfer/survival map —
+with number-weighted distribution and absolute abundance reported alongside.** The K3 denominator
+includes free monomers, transient complexes, permanently stabilized intermediates, non-ring
+aggregates, and closed rings of each L: a captured subpopulation peaking at 16 while carrying
+negligible dark mass is a FALSE selection and is pre-committed as such. The FORM-L-2 question the
+framework inherits ("why 16 rather than 22") belongs to K3 and may not be answered by energetics.
 
-## 1. Phase structure (each phase gets its own pre-registration before opening)
+## 1. Phase structure v1.1 (each phase gets its own pre-registration before opening)
 
-- **K1 — two-body capture at dance strength.** Capture probability for qDP+qDP and
-  qDP-eDP encounters vs impact parameter and relative KE, using dance_v8 (reach-S) with
-  initialized velocities; output: capture cross-sections σ_cap(E_rel). Kill condition:
-  if the dance's deterministic choreography cannot represent unbound incoming
-  trajectories without new rules (rule additions = Branch I, founder-routed), K1 closes
-  blocked with the named gap.
-- **K2 — plane and element assembly.** 4-body → plane, plane+plane → element formation
-  probabilities; ordering vs kT. Kill: combinatorial explosion beyond the instrument's
-  reach at TC = 60-class budgets → Branch I with the budget named.
-- **K3 — growth vs closure competition (the L-selector).** Rod + element attachment rate
-  vs end-to-end closure rate as functions of L; the L-distribution from the competition;
-  the wall enters as an absorbing boundary. This phase owns the selection observable.
-- **K4 — abundance reconnection.** The K3 distribution against the relic bookkeeping
-  (NB-F-1 reopening contract; T1 = n_ring/n_b remains FENCED as a gate, never an input).
+- **K1a — encounter-complex formation** (A + B → (AB)*). Instruments, both mandatory:
+  - **O3′ — the accessibility bound** (statics-adjacent, 2526-class): maps cells where E_rel
+    exceeds every dynamically accessible well → DEAD regardless of dynamics. Reported as
+    "energetic accessibility," NEVER as capture. Partial-accessibility rule: full equilibrium
+    well depth may not be used where geometry restricts access; phase-space/impact-parameter
+    sampling pre-registered (no double-counting of encounter geometries).
+  - **O1a — the conservative instrument:** live lists + momentum-conserving scaffold dynamics,
+    NO damping, NO tunable coupling: M_A·dV_A/dt = Σ_{i∈A, j∈B} F_ij with M_A = Σ pinned masses
+    (132/44). Observables: encounter probability, dwell-time distributions, transient trapping.
+    PERMANENT capture is not an O1a observable and may not be read from it.
+- **K1b — stabilization** ((AB)* → AB + X): permanent capture requires the sink X. Routes:
+  - **R-A (founder direction, 2568): Sea excitation via the SF-6 inertia-transfer mechanism** —
+    the registered capture-and-delay coupling that pins κ_q/κ_e is the candidate channel by which
+    translational energy sheds into the Sea. The transfer law (how much, how fast) must be
+    DERIVED from the ramp-hold-release lineage with zero free coefficients, or the route is
+    Branch I. **Fence, verbatim and binding: "inertia licenses memory and acceleration, not
+    arbitrary dissipation."** No −γV term under any framing.
+  - **R-B: three-body / cluster-assisted stabilization** via the K1–K2 coupling (the third body
+    carries the energy) — independent of R-A; plausibly dominant at ambient densities (flagged by
+    four seats); its rates consume K1a outputs.
+- **K2 — assembly** (plane and element formation): NOT restricted to sequential two-body bonds;
+  >2-body capture channels admitted where derived from the same interaction physics; K2 may
+  couple back into K1b (cluster-assisted capture). Kill: combinatorial reach beyond TC-60-class
+  budgets → Branch I, budget named.
+- **K3 — growth vs closure competition (the L-selector):** owns the amended §0 observable; the
+  FORM-L walls enter as absorbing boundaries; net abundance tracks formation MINUS dissociation
+  (thermal-tail destruction of young rings explicitly in the ledger).
+- **K4 — relic reconnection:** the transfer/survival map n_L^relic = Σ T_LL′ n_L′^freeze
+  (fragmentation, fusion, stripping, ring opening, dilution); the relic target (T1) remains
+  FENCED as a gate, never an input; the S1 shared-charge-ADM adverse line travels with any K4
+  claim.
 
-## 2. Standing constraints inherited in full
+## 2. The merged hazard inventory (binds every phase pre-registration)
 
-Circularity fences (kT·L, kT_form conditional bands enter only as *ambient inputs* with
-their conditionality riders, never as selection evidence); trap clause (no composition
-reading); √5 fence; the S1 charge-ADM adverse line travels with any K4 claim; chaotic
-floor ±2 MeV on all dance-derived energies; reach-S is the functional (2556); NB-S3a-1's
-own historical boundary dissolves *into* this project — after this charter, "Branch I,
-NB-S3a-1 named" limbs re-route to the specific phase that owns them.
+Exact back-reaction law with no adjustable coupling (any non-unity transfer coefficient is an
+open DERIVATION, not a parameter); Newton-pair force symmetry + total momentum conservation with
+dt-converging pre-registered tolerances; full energy ledger (scaffold KE / internal / pair
+potential / any reservoir) with conservation tolerance — capture never declared while untracked
+energy disappears; torque and angular-momentum transfer included (else impact-parameter
+dependence is corrupt); live-list rules pre-registered (update frequency, spatial cutoff, smooth
+entry/exit weighting, commitment survival across list changes, cutoff+dt convergence); the
+multi-part capture definition (negative relative orbital energy + bounded separation over a
+pre-registered multiple of the internal period + no outward asymptotic velocity + survives
+integration extension + not tether-held); **the bound-state invariance control (mandatory, 2568):
+the O1a rule run on a registered bound configuration must reproduce it within the chaotic
+floor** — the new dynamics may not retroactively invalidate any registered dance result;
+timescale registration (SF-6 relaxation vs interaction times — capture neither suppressed nor
+inflated by construction); controls: zero-coupling ballistic passage, high-E passage, low-E
+attractive encounter, time-reversed nondissipative trajectory, projectile/target exchange
+symmetry, b/orientation symmetries, dt convergence; ALL thresholds and conventions frozen before
+any production capture fraction is seen; exploratory scans full-landscape-reported only.
 
-## 3. Honest scale statement
+## 3. Standing constraints (inherited from v1.0 in full, plus one adoption)
 
-Multi-session. K1 alone requires an initialization protocol for unbound states that the
-registered instrument has never run; the panel is explicitly asked whether K1's
-representational premise is sound before it opens. No numbers in this charter; any number
-appearing before a phase pre-registration is a protocol violation by definition.
+Circularity fences (kT bands as ambient inputs with riders, never selection evidence); trap
+clause; √5 fence; chaotic floor ±2 MeV; reach-S is the functional; the 2521 Branch-T
+pre-commitment remains in force outside this project's own preregs; "Branch I, NB-S3a-1 named"
+limbs re-route to the owning phase. **ADOPTED (2567 §5, PD-006): the instrument-capability
+census** — every pre-registration whose routes use a computational instrument opens with a named
+census of what the instrument can represent, verified against the actual code by inspection or
+control, before any production gate is framed.
 
-## 4. Review questions for the panel (carried into the 2561 dispatch)
+## 4. Honest scale statement
 
-Q1: Is the phase decomposition K1–K4 well-ordered, or does plane assembly (K2) require
-capture physics beyond two-body (K1) in a way that reorders the phases? Q2: Is the
-selection observable (abundance-weighted L at freeze-out) the right formalization of
-"why 16," given the energetics/stability division of labor? Q3: Does the K1 kill
-condition correctly locate the representational risk of forcing a bound-state
-choreography to describe scattering?
+Multi-session, now with a runnable near tier: O3′ and K1a are executable on the banked 2565
+extension; K1b R-A is a derivation campaign against the SF-6 lineage; K2–K4 remain
+instrument-and-derivation heavy. No numbers appear before a phase pre-registration; any that do
+are protocol violations by definition.
 
-Next patch: 2561 (CONV-001 dispatch packet).
+## 5. Queue (frozen per the 2568 delegated ordering)
+
+O3′ pre-registration → K1a pre-registration → K1b R-A pre-registration (after K1a's dwell-time
+observables exist) → K2 → K3 → K4. OPEN-DM-REACH-AUDIT-2 holds the first audit slot alongside
+(2567 §3); the ITEM 4 ΔE_n decomposition test queues behind it. Next patch: the O3′
+pre-registration, under this charter.
+
+---
+
+**CHANGELOG.** v1.1 (Patch 2569): K1 split into K1a/K1b per unanimous panel amendment; K1b sink
+routes named (R-A Sea/SF-6 per founder adjudication #2 at direction strength; R-B three-body);
+selection observable amended to mass-weighted relic distribution with full denominator; K2
+>2-body admitted with K1b coupling; merged hazard inventory §2 (five-seat R2 union + the
+bound-state invariance control); capability-census rule adopted; execution queue frozen.
+v1.0 (Patch 2560): original scoping charter; reviewed by the five-seat dispatch.
