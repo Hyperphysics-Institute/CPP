@@ -78,3 +78,6 @@ alongside the S1 charge-ADM line.
 blocked project and is now the *only* live route to a formation-side derivation of 16.
 Queue: plane-resident-fraction limb → δ_E → MW-MODES TC-extension; AUDIT-DANCE-REACH-1
 available as a registrable audit. Next patch: 2555.
+
+---
+## 7. CORRECTION RIDER (Patch 2557): under reach-S (2556), the corrected table (see `reregistration_reach_s.md` §2) makes the **(20, 24) sign change UNION-STABLE** (L=24 closure-unfavorable beyond floor in all cells); argmax stays at L=20. The §2 upper-cutoff fence still governs in-campaign; the structure is promotion-READY for FORM-L-2 (held per 2556 §4).

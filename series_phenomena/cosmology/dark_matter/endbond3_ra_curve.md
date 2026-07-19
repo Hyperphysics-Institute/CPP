@@ -71,3 +71,6 @@ standing disclosure package. Next patch: 2552 — the licensed downstream revisi
 `rodclose1_ra_statics.md` (ΔE_close and survival collapse; kT_form band explicitly NOT
 collapsed). Queue after: RODCLOSE-1 kinetic limb → plane-resident-fraction limb → δ_E →
 MW-MODES TC-extension.
+
+---
+## 7. CORRECTION RIDER (Patch 2557): under the founder-adjudicated reach-S classifier (2556), the pin is **E_close(16) ∈ [+152.7, +156.9] MeV** (G1 PASS, G2 fail, spread 4.2); the §2 reach-G band [+128.9, +137.5] is superseded-by-correction for ring use. Curve remains barrier-free (κ* = 0, classifier-robust); intermediate-κ shape is classifier-sensitive (see `reregistration_reach_s.md` §3).

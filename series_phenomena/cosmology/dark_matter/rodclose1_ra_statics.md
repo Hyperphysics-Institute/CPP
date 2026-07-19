@@ -103,3 +103,5 @@ Consequences, per the 2548/2550 pre-registered propagation:
   NOT a pin (2551 §4).
 - Conditionality ledger (§6): unchanged in kind; the L = 16 consumption now additionally
   cites the ENDBOND-3 use under the same rider.
+
+## 7a. CORRECTION RIDER (Patch 2557): §7's dance pin updates under the founder-adjudicated reach-S classifier (2556): **ΔE_close(16) = [−156.9, −152.7] MeV** (±2 floor). All §7 qualitative statements stand (strongly exothermic, barrier-free, kT_form NOT collapsed); the mixed-lineage orientation arithmetic updates to an implied seam bond ≈ [168, 174] MeV (orientation only, NOT a pin).
