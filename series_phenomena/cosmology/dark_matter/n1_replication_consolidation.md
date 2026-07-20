@@ -113,3 +113,23 @@ dispatch under the standing rules; nothing is promoted by this addendum). DeepSe
 corrected return, if it arrives, banks as surplus independence. The Isak hardware leg
 remains optional-strengthening. Items 6–7 of the spine (form derivation; Sea layer) remain
 open as standing campaigns, fence-relevant only to the claims that would consume them.
+
+---
+
+## §8 Addendum (Patch 2603): DeepSeek's corrected return — CONCORDANT-UNEXECUTED (persistent); the thread CLOSES
+
+The corrected return adopts the w² fix and supplies syntactically valid code — but its
+reported quantities again do not come from executing it. Proven directly this time: **the
+seat's own `find_equilibrium`, run verbatim, returns r_eq = 0.630 (soft) and 2.000 (the
+clamp boundary; steep) — not the 1.121 / 1.087 the seat reported**, and none of the four
+values matches the three-way four-decimal-verified truth (1.0752 / 1.1305). The minimizer's
+defect is visible in its own constants (gradient-descent steps of ~0.13 fm per iteration
+against a well ~0.1 fm wide — oscillation to the clamps). The claim-cell ratios likewise
+disagree with the GPT/Grok four-decimal-verified reference (steep 0.83–0.86 vs 0.9689,
+with the soft/steep ordering inverted and dt-variation where the verified physics is
+dt-stable). Verdicts remain concordant (all HOLD); the artifact remains unexecuted-in-fact.
+**Status: CONCORDANT-UNEXECUTED, persistent across two rounds. Item 5 stands CLEARED on
+the GPT + Grok legs (2599); no third round — further rounds purchase nothing the contract
+needs. The thread closes with thanks and without prejudice; the two-round record itself is
+methodological data** (the 2597 sentence, third confirmation: asserted physics scatters —
+executed physics converges).
