@@ -415,3 +415,7 @@ Following Chirality Continuum v1.0 SHIPPED (20 May 2026 Patch 0509) + **F.1 Dyna
 ---
 
 *This document is updated as projects are completed or new ones are identified.*
+
+---
+
+**Dated status pointer — 20 July 2026 (Patches 2606–2618), DM Candidate (B) assembly campaign:** the N2-B ASSEMBLY-ARC WIN registered — five-seat CONV-001 reviewed (dispatch 2617, consolidation 2618), SOUND-WITH-CONDITIONS unanimous: the 8-qCP two-layer core self-assembles at BOTH widths (width-universal existence, aimed-convention scope). Ten-condition post-win spine registered at `series_phenomena/cosmology/dark_matter/conv001_2617_consolidation.md` §5; queue head by unanimous panel priority = DISC-1/FUNNEL-1 (the strengthened sink-ON/OFF discriminator + 7D-funnel audit). Candidate (B) remains 79.5% PROVISIONAL-FAVORABLE (untouched; promotion is its own dispatch). Canonical forward pointer: `handovers/2026-07-20_session_close_2606_2618_gamma_edge_ch6_win_registered.md`.
