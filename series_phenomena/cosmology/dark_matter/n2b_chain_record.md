@@ -22,6 +22,20 @@ cluster presents a non-capturing face to that channel — N3-relevant geometry, 
 declared follow-on (channel scan over the 6-cluster) queues rather than runs (the
 prereg's channel was fixed; scanning it now would be post-hoc).
 
+> **CORRECTION — 20 Jul 2026, Patch 2612 (2574-class, disclosed; original text above
+> preserved).** The declared channel scan's control chain (2610/2611/2612) found the
+> stall's mechanism and it is NOT shell structure. The chain protocol launches every
+> incident at a FIXED laboratory column ([b·D, 0, ztop+4D]) while the grown cluster
+> recoil-drifts; at soft stage-7 launch the 6-cluster centroid sat 13.3 fm (≈ 11.5 D)
+> off the column, and the verbatim absolute-aim reproduction recovers the registered
+> miss exactly (UNBOUND, Sea = 0.7, γ = 1.01, dt-stable at 1/100 and 1/200). **The
+> "non-sticking face / shell-plateau" classification is RETRACTED: the soft stall is
+> an AIM-DRIFT ARTIFACT of the protocol, not cluster physics.** The steep chain's
+> completion is untouched (its captures are real — and occurred at ≈ 8 fm ≈ 7 D aim
+> error, which is the capture funnel's reach doing the work). The face question is
+> answered by the corrected scan campaign (2613/2614). The win-candidate packet must
+> carry this correction before dispatch.
+
 ## 2. B3 — the basin under H-γ (dt-stable throughout; verdicts identical at 1/100 and 1/200)
 
 **Outward, the basin is WIDE:** ×1.5, ×2.0, ×3.0 expansions ALL CONVERGE at both widths
