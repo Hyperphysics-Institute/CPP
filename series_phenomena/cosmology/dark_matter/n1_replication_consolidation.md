@@ -88,3 +88,28 @@ Standing: item 5 = ONE full replication banked (Seat-GPT) + hardware leg dispatc
 on SHA b15a0c4f…7a14) + one corrected-return pending. The N1 registration, the sink
 registration, and 79.5% untouched. N2-B prereg remains next on the physics track; this
 consolidation ran on the governance track per the review economy.
+
+---
+
+## §7 Addendum (Patch 2599): Seat-Grok returns FULL — ITEM 5 CLEARS; the promotion-adjacent fence LIFTS
+
+**Seat-Grok (fresh seat per the 2598 substitution ruling; corrected spec; no other-seat
+visibility):** executed, runnable code supplied (scalar-minimized r_eq, analytic
+sign-verified forces), gate 6/6 HOLD at machine precision, **claim 6/6 HOLD**, robustness
+HOLD (seed 42), drift dt-convergent, ambiguity list closing with "the specification has no
+material holes for this test" — the 2597 corrections did their job. **Cross-validation
+gold:** Grok's r_eq (1.0752 / 1.1305) matches our engines and Seat-GPT to four decimals —
+THREE independent minimizers agree; and Grok's claim-cell RMS ratios (0.9159 / 0.9689)
+match Seat-GPT's (0.915887 / 0.968917) to four decimals — two fully independent codebases
+computing identical deterministic physics from the spec alone. Executed physics converges;
+the 2597 contrast sentence now has its positive half.
+
+**Contract application:** two executed independent implementations are banked (Seat-GPT +
+Seat-Grok) — the amended contract's substance is satisfied in full. **SPINE ITEM 5 CLEARS.
+Per the 2590 fence: with battery items 1–4 discharged (2592) and item 5 now clear, the N1
+win's promotion-adjacent fence LIFTS** — the win may henceforth be cited in
+promotion-adjacent argumentation (any actual 79.5% promotion move remains its own dedicated
+dispatch under the standing rules; nothing is promoted by this addendum). DeepSeek's
+corrected return, if it arrives, banks as surplus independence. The Isak hardware leg
+remains optional-strengthening. Items 6–7 of the spine (form derivation; Sea layer) remain
+open as standing campaigns, fence-relevant only to the claims that would consume them.
