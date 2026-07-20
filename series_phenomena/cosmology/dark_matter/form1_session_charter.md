@@ -63,6 +63,20 @@ soft-vs-steep split at **0.41% / 7.2% / 11.6% at ω = 1.74 / 2.61 / 3.49 c/fm**.
 derivation passes if it predicts the ordering and the boundary's location class; it
 does not pass by reproducing T1 alone (that is the entry condition, not the test).
 
+**CHARTER v1.1 AMENDMENT (Patch 2648, panel-directed at the 2647 adjudication,
+J2; pre-execution — no derivation has run, freeze discipline unviolated).** The
+three-point test is admissible ONLY under the tiered structure: **(Tier 1)
+derivation inputs** fixed entirely from prior registered physics; **(Tier 2)
+the three calibration points as BLIND predictions** — no tuning of any form
+parameter, cutoff, coarse-graining rule, phase convention, or effective damping
+coefficient to reproduce them (a derivation that reaches them by tuning FAILS
+regardless of numerical agreement); **(Tier 3) at least one HOLDOUT
+prediction** not used in constructing the derivation — preferably an
+intermediate stiffness or amplitude point plus one extrapolative point,
+computed by the instrument only AFTER the derivation's prediction is committed.
+FD-FULL now requires Tiers 2 AND 3; Tier-2-only passes read FD-PARTIAL with
+the holdout named as the residue.
+
 **Consumer:** the DISC amendment's "schedule quantities blocked pending FORM-1"
 clause. A pass grounds the schedule discussion the amendment defers; a fail leaves
 the amendment's endpoint-only scope as the permanent scope, recorded.
