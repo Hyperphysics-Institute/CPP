@@ -37,7 +37,9 @@ units of c, time in fm/c; hbar*c = 197.3 MeV*fm):
 
 3. FORCES (pairwise, between every pair i,j):
    (a) ELECTRIC-LIKE (soft-core Coulomb): U_e(r) = w^2 * q_i * q_j * 197.3 / sqrt(r^2 + a^2)
-       with w^2 = 5/(8*phi) where phi = (1+sqrt(5))/2 (so w^2 = 0.38197...), and softening
+       with w^2 = 5/(8*phi) where phi = (1+sqrt(5))/2 (so w^2 = 0.38627124...; corrected
+       Patch 2597 -- an earlier parenthetical carried a transcription error; the formula
+       was and remains authoritative), and softening
        length a = 197.3/264 = 0.7473 fm. Force = -dU_e/dr along the pair vector.
    (b) STRONG (Morse, charge-INDEPENDENT, acts between every qCP pair):
        U_s(r) = E * [ (1 - exp(-beta*(r - D)))^2 - 1 ]
@@ -50,7 +52,9 @@ units of c, time in fm/c; hbar*c = 197.3 MeV*fm):
    dt = tau/200, tau/100, tau/50 where tau = 2*pi*197.3/264 = 4.696 fm/c.
    Total duration: T = 60*tau (~281.8 fm/c).
 
-5. GATE (run FIRST; report before the claim): two particles only, charges (+1, -1), masses
+5. GATE (run FIRST; report before the claim; TWO cells per beta case as of the Patch
+   2597 strengthening -- (a) at r_eq, (b) starting at separation 1.1*r_eq, same
+   classifier, must remain bounded): two particles only, charges (+1, -1), masses
    as above, both force terms active, placed at rest at the separation r_eq that minimizes
    U_e + U_s (find it numerically; report your r_eq for each beta case — you should find
    it near 1.07-1.13 fm). Over the final 25% of the run, the pair's RMS distance from its
