@@ -49,3 +49,16 @@ Bookkeeping only; no registration changes, no blocks lifted or added; consumers 
 this ledger cite it as a map, not as evidence. Maintained forward: any new N2-B
 registration adds a row at its own patch. 79.5% untouched. Founder-free queue
 after this patch: ROB-1, R-B items 1–4.
+
+## 4. Morse-bracket axis status note (Patch 2660, 20 July 2026 — additive; rows above unedited)
+
+FORM-1 composite (FD-PARTIAL, sub-case A-CLASS; `form1_composite_adjudication.md`):
+the Morse FORM CLASS is DERIVED conditional on FA-C1 (quadratic registration
+energy) + FA-C2 (exponential amplitude screening) at Patch 2659; depth E_qq and
+minimum d were already pinned (1812/2433). Every row graded MED/HIGH on the
+"Morse bracket" axis now reads against the derived class: **form-class revision
+is off the table absent a named attack on FA-C1/FA-C2; width revision remains
+live** (two zero-parameter lattice candidates βd = d/ℓ_unit = 1.95 and
+d/ℓ_edge = 3.16 registered unpromoted; FA-C3 the named successor). The bracket
+{2, 4} remains the instrument-level registration, now understood as bracketing
+both lattice candidates.
