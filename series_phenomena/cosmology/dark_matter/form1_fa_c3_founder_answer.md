@@ -80,3 +80,20 @@ Flagged supporting-only: a hop picture can be isotropized on average.
   carried. **79.5% untouched.**
 
 Reasoning: `reasoning/2662.md`.
+
+---
+
+## PANEL SUPERSESSION NOTE (Patch 2664, additive; CONV-001 returns on the 2663 packet, Q2a DEMOTE-TO-OPEN 3–2)
+
+The strength register above is SUPERSEDED. Standing register as of 2664:
+**FA-C3 OPEN FORK: per-cell provisionally hypothesized by the founder;
+per-edge remains live.** Majority ground (Seats 1/3/5): the phase-localization
+argument is descriptive architecture, not a quantitative discrimination — the
+static response kernel's correlation length is not derived to equal the cell
+scale rather than an edge or other eigenlength of the Sea. The founders_voice
+verbatim is untouched (archival, per the 2663 pre-commit). The soft-member
+βd = 2 coincidence is permanently NON-ADJUDICATIVE. The §3 kill condition is
+superseded by the frozen discriminant **FA-C3-DISC-1** and the analytic route
+**FA-SEA-GREEN** (adjudication file §5–§6). Every fork citation carries
+observation-grade + quarantined-onset qualifiers. Nothing above this line is
+edited.

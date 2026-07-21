@@ -98,3 +98,20 @@ FA-C3 as the named successor; exhibits 3 and 4 produced, 1 answered at
 structure, 2 and 5 consistent. DEP-1 "Morse MED" row conversion executes at
 the composite patch, same font. No fence moves; no consumer sentence rides;
 quarantines carried; **79.5% untouched.** Reasoning: `reasoning/2659.md`.
+
+---
+
+## PANEL AMENDMENT (Patch 2664, additive; CONV-001 returns on the 2663 packet, Q1a ADOPTED-AMENDED 5–0)
+
+A-CLASS is restated: **the Morse form is derived as the unique result within
+the registered quadratic-registration and exponential-screening ansatz.** The
+derivation does not establish that nature must use either ansatz. FA-C1's
+uniqueness clause is completed: U(0) = 0, U(1) = −E_qq, U′(1) = 0, positive
+curvature at f = 1, quadratic over-registration cost; harmonic response
+motivates the quadratic locally near f = 1 only — the global extension is a
+structural assumption. **THE 2664 RIDER (mandatory):** every Morse-class
+consumer sentence carries: "conditional on FA-C1 and FA-C2, structural
+conditions at the SS-9 C5–C8 register, neither yet derived from the axiom
+set." Sea-level successor for FA-C2: FA-SEA-GREEN (see
+`conv001_2026-07_form1_packet_returns_adjudication.md` §6). Nothing above this
+line is edited.

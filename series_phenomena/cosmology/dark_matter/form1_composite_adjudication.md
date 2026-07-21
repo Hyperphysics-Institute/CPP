@@ -59,3 +59,18 @@ quarantined; no DM consumer sentence rode on any campaign number;
 2513/2635/2626/2629/C7/DISC records unedited; **79.5% untouched — the
 candidate's standing is exactly where the morning found it, as the charter
 promised under every reading.** Reasoning: `reasoning/2660.md`.
+
+---
+
+## PANEL NOTE (Patch 2664, additive; CONV-001 returns on the 2663 packet, Q1b SOUND-AT-GRADE 5–0)
+
+The FB-MECH-B / Branch-U classification is carried at observation grade with
+mandatory qualifiers (observation-grade; onset window from quarantined
+widths). **Promotion bar (registered):** any upgrade beyond observation grade
+requires at least one of — positive finite-time Lyapunov exponent;
+trajectory-separation scaling; phase-ensemble statistics; recurrence or
+spectral-broadening diagnostics; or a force-law/continuum refinement
+reproducing the boundary. Canonical framing sentence (J6 discipline): Agenda
+A, conditional form-class success; Agenda B, endpoint theorem with
+schedule-derivation failure; composite FD-PARTIAL. Nothing above this line is
+edited.
