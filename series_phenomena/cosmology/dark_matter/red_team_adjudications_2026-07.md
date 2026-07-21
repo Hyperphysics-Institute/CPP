@@ -168,3 +168,198 @@ elastic SIDM near-miss (×486 dynamic range, cluster-safe, LSB-grazing), NOT a f
 0.046 relic. **Panel note:** the classical-MC flag is now load-bearing at the ×2
 margin; the quantum s-wave treatment and the unregistered S_ATT(N) scaling are the
 two named founder-gated follow-ups. Verdict untouched.
+
+---
+
+# SECOND WAVE — five returns registered 20 July (Patch 2682); TRIAGE + release-gate ruling; full computation-level adjudication = RELEASE SESSION agenda item 1
+
+**Returns verbatim: `red_team_returns_2026-07-20_verbatim.md` (R-A…R-E,
+attribution PENDING FOUNDER — paste labels supplied blank). Per the
+brief's promise, every KILL/WOUND receives a written computation-level
+response; this section registers the TRIAGE (dedupe into finding
+classes, record-answered items pointed at their records, computation
+checks named and queued) and rules on the release gate. Nothing below is
+a final adjudication except where marked; final CONFIRMED/PARTIAL/
+DISMISSED rulings execute in the RELEASE SESSION with the papers and
+code open.**
+
+## Release-gate ruling (now, Patch 2682)
+
+Three KILL-class claims are on the table (T2, T3, T4 below). None is
+CONFIRMED; none is dismissible without computation except T4a (whose
+dismissal computation is one line and is executed below). **Per plan
+§Release gates, the deposit (items B5–B6) is PAUSED-PENDING-ADJUDICATION
+of T2/T3/T5. This is the gate working as designed, not a schedule slip:
+the wave came back same-day and the adjudication was already scheduled
+(B4) ahead of sign-off.**
+
+## Triage classes (deduped across R-A…R-E)
+
+**T1 — Relic abundance / production history** (R-A F1; R-E S2 BBN
+energy-injection). Record: the relic question is REGISTERED OPEN —
+OPEN-DM-RELIC-1 stands at charter level with target T1 = n_ring/n_b =
+0.4468 ± 0.0054 and BOTH naive readings failing at open (charter v1.1
+FROZEN, panel-amended). RELEASE SESSION check: verify the three papers
+STATE the relic status as open/conditional rather than claiming a closed
+production history (if any sentence overclaims → WOUND, erratum; if the
+disclosure is present → PARTIAL, pointer response). R-E's BBN
+energy-injection remedy is queued as an OPEN-DM-RELIC-1 campaign
+sub-item, not a release blocker, unless the papers claim BBN safety
+quantitatively (check in-session; R-E quotes a sentence — verify it
+exists as quoted).
+
+**T2 — CMB momentum-transfer bounds on σ_DM-baryon (KILL-class; R-C
+K1).** The genuinely new confrontation of the wave: Planck-era
+DM-baryon scattering limits (Gluscevic/Boddy parameterization) vs the
+σ_DM-b implied by the capture/overburden physics at 25 GeV. Not in the
+existing confrontation ledger by name. RELEASE SESSION computation:
+extract the registered σ_DM-b (velocity dependence included — the
+capture channel is dissipative/composite, NOT a constant elastic σ, and
+the v-scaling between recombination (~10⁻⁶ c thermal) and terrestrial
+(~10⁻³ c) regimes is exactly where this check will be decided); compute
+the recombination-era momentum-transfer rate; compare to the published
+25 GeV bound. CONFIRMED → release pauses per gate; DISMISSED → the
+computation joins the confrontation ledger as a new passed row (the
+attack strengthens the arc either way).
+
+**T3 — SIDM cluster bounds on σ_self/m (KILL-class; R-D F1).**
+PRELIMINARY-DISMISSAL-PENDING-VERIFICATION: the finding is explicitly
+conditional ("IF DM-1's σ_self/m band overlaps or exceeds ∼1 cm²/g"),
+and the paper's registered band — σ_V/m ≈ 0.11–0.20 cm²/g halo-scale,
+0.037–0.05 cm²/g group-scale, velocity-independent — sits a factor
+5–25 BELOW the quoted exclusion threshold, on the reviewer's own
+numbers. RELEASE SESSION: verify the band from the paper text, execute
+the v ≈ 1000 km/s recomputation the reviewer names, write the
+DISMISSED (or otherwise) ruling with the numbers in the response.
+
+**T4 — XQC astrophysics** (R-E K1 focusing; R-D W2 halo ensemble; R-A
+S4 single-pipeline).
+- **T4a (R-E K1, gravitational focusing "factor 2–3") — DISMISSED at
+  computation level, here.** Gravitational focusing enhancement for a
+  collisionless flow scales as 1 + (v_esc/v∞)² at the body. Earth:
+  v_esc = 11.2 km/s against a halo flow v∞ ≈ 220 km/s →
+  1 + (11.2/220)² = 1.0026 (0.26%). Sun at 1 AU: v_esc,☉(1 AU) =
+  42.1 km/s → 1 + (42.1/220)² = 1.037 (3.7%), and the annual-average
+  focusing correction used in the direct-detection literature is at the
+  percent level. A "factor 2–3 density enhancement" at 250 km altitude
+  for a 220 km/s flow is off by ~two orders of magnitude and would
+  require v∞ ≈ v_esc, i.e., a gravitationally bound population — which
+  is not the halo model under attack. "Solar radiation pressure effects"
+  on dark matter is not a mechanism (DM is not photon-coupled at any
+  strength relevant here — that is the arc's own point and also the
+  reviewer's elsewhere). No release impact. (Verify script queued for
+  the RELEASE SESSION as a one-liner for the record; the arithmetic
+  above is complete.)
+- **T4b (halo-model bracketing, R-D W2):** legitimate protocol check —
+  whether the XQC confrontation brackets ρ ∈ [0.2, 0.6] GeV/cm³ and
+  v_0 ∈ [180, 260]. RELEASE SESSION: read the paper's stated margin
+  (the record cites ×20–30 exclusion margins in the J4-additive case
+  and order-of-magnitude margins elsewhere — a ×2–3 halo systematic
+  does not move a ×20 margin; state this with the paper's numbers).
+- **T4c (single-pipeline reproducibility, R-A S4):** fold as a deposit-
+  record item (manifest already lists 49 scripts; the residual scan
+  confirms the XQC chain end-to-end or notes the gap honestly).
+
+**T5 — Born-regime S_c² overburden scaling at low velocity
+(KILL/WOUND-class; R-C W2 + R-E K2, same physics).** The sharpest
+technical attack of the wave and the one the first-wave round did not
+hit. RELEASE SESSION computation: (i) establish what the papers
+actually claim the S_c² scaling FOR (shielding suppression en route to
+deep detectors) and in which velocity regime; (ii) check the Born
+validity criterion in that regime against the registered potential; if
+Born fails where the paper uses it, quantify the direction of the error
+(NOTE: Born breakdown at low v generically INCREASES stopping — which
+STRENGTHENS shielding/suppression conclusions where the paper's claim
+is "the flux is stopped/degraded" and WEAKENS them where the claim is
+"flux survives to depth X" — the direction question is the whole
+adjudication and must be answered against the paper's actual claim
+structure, not in the abstract).
+
+**T6 — Cross-paper parameter/J4 ledger** (R-A W3; R-D F3; R-C S3; R-E
+W1). Record: the six-axis DEP-1 dependency ledger and
+`n2b_dep1_dependency_ledger.md` already exist for the candidate-B
+validation lane; the papers' own cross-paper ledger is the residual-scan
+deliverable (B3). RELEASE SESSION: produce the single-table ledger the
+reviewers ask for (E_c, pitch, χ, floor — value + scope + provenance per
+paper); any mismatch found = WOUND with erratum; expected clean (the
+1892 deposit record already manifests provenance). R-E W1's three-body
+additivity check at rod spacing: NOTE the scale error to correct in the
+response — R-E quotes d_DP = 0.589 fm and reads ℓ = 0.091 fm as
+"comparable to interparticle spacing"; ℓ/d_DP ≈ 0.25 wait — this ratio
+and its consequence for pairwise additivity at rod scale is a REAL check
+worth one computation (three-body correction under exponential
+screening at spacing ≈ 4ℓ is suppressed ~e^{-2·(extra path)/ℓ}; make
+the estimate concrete in-session). Also correct in the response: R-E's
+d_DP value (the registered d_DP = ℓ_edge = 0.364 fm in the FA lane;
+0.589 fm is a different quantity — identify which the papers use where,
+this is itself a T6 ledger row).
+
+**T7 — Disclosed-tension items re-attacked** (R-B F1 IC 2574; R-B F2
+Sagunski 2.3σ). The reviewer's own quotes show the paper DISCLOSES both
+(the under-prediction and the 2.3σ). RELEASE SESSION: verify the
+disclosures are load-stated (abstract-level where load-bearing), then
+rule PARTIAL (presentation) or DISMISSED (already-disclosed
+confrontation, reviewer confirms the numbers) — the F2 charge that
+"similar margins are treated as exclusions elsewhere" deserves one
+honest paragraph on the asymmetry (a 2.3σ *shortfall against one
+measurement with large systematics* vs a ×20 *exclusion margin*).
+
+**T8 — Conditional-status propagation** (R-B F3 first-multipole; R-B F5
+propagation; R-B F4 Gate-1/B1 + L insertion). Record answers exist:
+the first-multipole conditionality is IN THE PAPER as quoted by the
+reviewer (v1.2 retraction disclosed; survival conditional — that is
+the honest state, and F5-class falsifiers carry it); Gate-1/B1 is NOT
+open — the campaign EXECUTED post-brief (2310–2336, TAMB-1(b)
+resolution; errata-queue items 5–6 already anticipate exactly the §2/§5
+wording upgrades). RELEASE SESSION: point F4 at the campaign record +
+fold the queued errata; respond to F3/F5 with the registered
+conditional-claims policy (conditions carried in-paper, falsifier-
+classed) and the ±factor-2 propagation exercise the reviewer names IF
+cheap (else queue with owner).
+
+**T9 — DM-2 scope/wording** (R-B F6 referential zero; R-D F6 shell-sum
+vs later Sea structure; R-E S3 priors). SCRATCH-class; fold candidates
+for the errata queue. R-D F6 note: the FA-SEA-GREEN sign-staggered
+result is CANDIDATE-B-LANE, fm-scale, observation-grade, and fenced
+(F1–F4) — the DM-2 shell-sum scope sentence can cite the registered
+rider without importing the result; draft at RELEASE SESSION. R-B F6's
+requested paragraph (referential zero from the axioms) EXISTS as
+D2/1161 (symmetry-enforced monopole annihilation, Σv̂ = 0 — exactly the
+"not by construction" derivation asked for); errata-queue item 5
+already queues this wording; extend it to note the staggered-response
+compatibility question as registered (the zeroing is of the absolute-
+|SSV| monopole; the staggered component is a gradient structure the
+mechanism does not touch — one sentence, verify in-session).
+
+**T10 — "1871" misreadings** (R-D F4; R-E S1; R-B F1c usage). **1871 is
+a PATCH NUMBER** (the measured-floor MC of Patch 1871, July 2026), not
+the year 1871 and not "1871 MeV." R-E attacked a nonexistent
+19th-century apparatus ("historical apparatus diagrams … thermal
+expansion"); R-D rendered it "1871 MeV measured floor." DISMISSED as
+posed, both — but the misreading is diagnostic: if two independent
+reviewers parse the label as a year/energy, cold readers will too.
+**Erratum queued (new item): rename/gloss on first use in every paper
+and companion — "the measured floor (Patch 1871 MC)" — and the
+deposit-record manifest entry likewise.** R-D's underlying geometry-
+robustness question (floor spread under motif/box/boundary variation)
+survives the misreading as a fair check: answer in-session from the
+1871 MC's own registered robustness content, or queue with owner if
+absent.
+
+## RELEASE SESSION agenda (supersedes the bare B4 row; order is severity)
+
+1. T2 computation (CMB σ_DM-b bound) — the live KILL check.
+2. T5 computation (Born validity + direction ruling) — the live
+   KILL/WOUND check.
+3. T3 verification (paper band vs SIDM bounds) — expected DISMISSED
+   with numbers.
+4. T4a verify one-liner; T4b margin statement; T6 ledger table (+ the
+   ℓ/spacing three-body estimate + the d_DP row); T7/T8/T9 record-
+   pointer responses; T10 erratum fold.
+5. Then B1–B3 as scheduled (deposit records, reader's guide, residual
+   scan — the scan now cites this section).
+6. Errata queue updated throughout; gate re-assessed at close: all
+   KILL-class DISMISSED → B5 sign-off unblocks.
+
+**Attribution:** final per-return credit lines are written when the
+founder confirms the R-A…R-E ↔ seat mapping.
