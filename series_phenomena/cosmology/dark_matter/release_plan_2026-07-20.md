@@ -44,3 +44,12 @@ outstanding) reaching a revised DM-1/DM-3, a fresh panel round, and a
 fresh stability cycle; or a founder decision on a DM-2-standalone or
 record-release framing. Founder decision pending; see the re-scoped
 schedule.
+
+**FOUNDER DECISION B7 (Patch 2684, 20 July 2026): option (i) — HOLD.**
+All three papers hold behind the Candidate (B) revision path. The
+revision checklist (2683 adjudications: stellar-capture row, cross-paper
+ledger, halo bracket, ±2 propagation, single pipeline; errata queue
+items 1–9) executes when the Candidate (B) arc (FA-SG-R1 →
+OPEN-DM-RELIC-1 → promotion) reaches paper-revision maturity. No
+standalone or record release. This file is CLOSED as a plan; it stands
+as the release-attempt record.
