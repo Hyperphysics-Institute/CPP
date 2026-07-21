@@ -22,3 +22,25 @@ gravitation, and discrimination in one stroke.
   is not required for release, since the papers carry the condition honestly, but a KILL blocks).
 - Any load-bearing correction from any source (the checklist's own rule; pre-registered adjudications
   excepted per the 1891 precedent).
+
+---
+
+## BLOCKED — annotation of record (Patch 2683, 20 July 2026)
+
+**This plan's own release gate fired on 9 July and this file was never
+annotated until now.** Gate-1/B1's verdict (Patch 2333: capture branch
+killed at the registered frame) and the population kill (Patches
+2366–2369, five-seat flash) placed founder-attested banners in DM-1 and
+DM-3: "**NOT-FOR-RELEASE**, retained as record, not rewritten — revision
+deferred behind OPEN-DM-DSPH-1 by founder decision." DM-1 v1.5
+additionally reads "NOT YET RE-SHIPPED: panel round pending." DM-2
+carries no banner. **The 20-July joint deposit does not execute.** The
+red-team second wave (adjudicated 2683: zero confirmed kills against
+claims the papers make) and the completed window-items retain their
+value for the deferred revision. Path back to release: the successor
+candidate arc (Candidate (B), N=8 ring — currently 79.5%
+PROVISIONAL-FAVORABLE with FA-SG-R1, OPEN-DM-RELIC-1, and promotion
+outstanding) reaching a revised DM-1/DM-3, a fresh panel round, and a
+fresh stability cycle; or a founder decision on a DM-2-standalone or
+record-release framing. Founder decision pending; see the re-scoped
+schedule.

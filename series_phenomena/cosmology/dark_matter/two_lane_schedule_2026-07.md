@@ -49,3 +49,22 @@ lanes and remain at the founder's word.
 and push this patch; (2) paste the B0 block to each of the four seats;
 (3) open the next session with the word RELEASE (or R1 to reorder — the
 schedule tolerates either).
+
+---
+
+## LANE B RE-SCOPED (Patch 2683) — the deposit is BLOCKED BY THE RECORD
+
+The 9-July KILL banners (Patch 2369, founder-attested) in DM-1 and DM-3
+— found on opening the manuscripts for the B4 adjudications — mark both
+NOT-FOR-RELEASE with revision deferred behind OPEN-DM-DSPH-1 by founder
+decision. **B5–B6 do not execute for the v1.4/v1.0 texts.** Superseding
+rows:
+
+| # | Task | Owner | Status |
+|---|---|---|---|
+| B4′ | Second-wave adjudications | Worker | **DONE at 2683** — zero confirmed KILLs; five revision-checklist additions; errata items 7–9 |
+| B7 | FOUNDER DECISION: release posture — (i) hold all three behind the Candidate-(B) revision path (honest default), (ii) DM-2 standalone (no banner; joint framing dissolves), or (iii) any record-release framing the founder wants scoped | **Founder** | OPEN — the single LANE B act remaining |
+| B8 | IF (i): revision checklist executes when the Candidate-(B) arc (R1 → RELIC-1 → promotion) reaches paper-revision maturity; B1–B3 deliverables (deposit records, reader's guide, ledger, scan) produce then, against the revised texts | Worker | parked behind LANE A + the validation campaigns |
+
+LANE A (FA-SG-R1) is UNAFFECTED and remains the standing next fresh-
+session act.

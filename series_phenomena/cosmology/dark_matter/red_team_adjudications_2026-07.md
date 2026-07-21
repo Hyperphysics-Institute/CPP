@@ -363,3 +363,151 @@ absent.
 
 **Attribution:** final per-return credit lines are written when the
 founder confirms the R-A…R-E ↔ seat mapping.
+
+## Second-wave adjudications (Patch 2683, 20 July) — attribution confirmed by founder (R-A=ChatGPT, R-B=Grok, R-C=Gemini, R-D=Copilot, R-E=DeepSeek); rulings executed at record level
+
+**Context ruling first (supersedes the 2682 gate ruling): while opening
+the manuscripts for these adjudications, the standing 9-July KILL
+banners were found in BOTH DM-1 and DM-3 (Patch 2369, founder-attested:
+both candidate branches dead — capture at 2333, population at 2369;
+"retained as record, NOT-FOR-RELEASE, not rewritten — revision deferred
+behind OPEN-DM-DSPH-1 by founder decision"; DM-1 v1.5 additionally
+"NOT YET RE-SHIPPED: panel round pending"). The 20-July joint deposit
+is therefore BLOCKED BY THE RECORD ITSELF — the release plan's own
+Gate-1/B1 kill gate fired 9 July and the plan file was never annotated
+(annotated now, this patch). The 2682 "PAUSED-PENDING-ADJUDICATION"
+ruling is superseded: the pause is unconditional pending founder
+decision on the re-scoped LANE B (see the schedule). ADJUDICATOR
+DISCLOSURE, same-font: the 2680 release-plan audit checked the plan's
+window-items by tree but did not open the manuscripts; the banners were
+present since 9 July and should have been the audit's first line. The
+audit-miss lesson is registered in the 2683 close: a release audit
+opens the papers first.**
+
+The second-wave findings attacked the resting v1.4/v1.0 texts as the
+brief directed; their value survives the block (they inform the
+deferred revision). Rulings:
+
+**T2 (Gemini K1 — CMB momentum-transfer bounds) — DISMISSED-BY-RECORD.**
+The confrontation the finding demands is IN the paper's composed ladder:
+DM-1 v1.3 §(ii) runs "XQC partial-wave; rock-overburden shielding; LZ;
+np; **CMB drag**" as a function of S_c, and §(iii) states "**CMB drag
+and gas-cloud bounds pass ×20 and better**" (reasoning/code 1880/1881).
+The finding's premise imports the SELF-interaction magnitude
+(σ_self/m ~ 0.1–1 cm²/g) into the BARYON channel; the registered baryon
+coupling is multipole-suppressed (S_c ∈ [0.005, 0.05], first-power
+color-dipole ruling) — five-plus orders below geometric. The reviewer's
+decisive check was already executed by the arc, in the direction the
+reviewer specifies, and passed with stated margin. Carried forward: the
+deferred revision re-runs the CMB-drag row for whatever candidate
+replaces the killed branches (queued to the revision checklist).
+
+**T3 (Copilot F1 — SIDM cluster bounds) — DISMISSED, reviewer's own
+threshold.** The finding is conditional: KILL "if σ_self/m ≳ 1 cm²/g at
+cluster velocities." The registered values (DM-1 v1.1 notice, standing):
+cluster σ/m ~ 0.003, Bullet ~ 0.001 cm²/g (screened E_qq residual
+capture falloff, reasoning 1857/1858); group-scale falsifier band
+0.037–0.05 at ~1150 km/s. Two to three orders BELOW the threshold the
+finding requires. The quoted "velocity-independent 0.20" is the
+superseded as-shipped abstract, corrected in-paper by the v0.1-R/v1.0/
+v1.1 notice chain the reviewer's excerpt sits beside. No computation
+needed beyond the record; the v-dependence direction (falls with v) is
+the SIDM-preferred pattern and the paper's headline.
+
+**T5 (Gemini W2 + DeepSeek K2 — Born-regime breakdown) — DISMISSED AS
+POSED; one wording erratum queued.** The attacked sentence ("shielding
+cross section scales as S_c² in the Born regime, giving suppression
+exp(−nσS_c²L)", cited to "DM-1 §3.3"/"DM-3 §4") DOES NOT EXIST in
+either paper — both reviewers attacked the BRIEF's shorthand phrase
+("the Born-regime S_c² scaling used for shielding"), not the papers.
+The record is opposite to the charge: the XQC computation is a
+partial-wave recomputation adopted BECAUSE "Born is invalid here"
+(solver validated to 0.1% against the exact finite-k Born limit, 1879);
+the overburden shielding is a coarse transport threshold (≥10 slowing
+collisions) with the in-paper disclosure that "the island's existence
+is more robust than its numerical edges." Direction ruling, recorded
+for the revision: Born breakdown at low velocity generically INCREASES
+stopping, which STRENGTHENS every shielding-based survival claim
+(LZ/DAMIC-shallow shielded) — the conservative direction for the
+paper's claim structure. ERRATUM (new queue item): the brief's phrase
+is corrected in the brief file, and the revision adds one sentence
+citing the direction argument at the shielding paragraph.
+
+**T4a (DeepSeek K1 — XQC gravitational focusing) — DISMISSED (2682
+arithmetic stands):** enhancement 1+(v_esc/v∞)² = 1.003 (Earth) /
+1.037 (Sun at 1 AU) at v∞ = 220 km/s; "factor 2–3" requires a bound
+population, not the halo model under attack; radiation pressure on DM
+is a non-mechanism. T4b (Copilot W2, halo bracketing) — PARTIAL:
+legitimate protocol preference; the registered margins (×11 F5 ruling
+point, ×98 region-weighted median) absorb the named ×2–3 halo
+systematics; the revision states the bracket explicitly. T4c (ChatGPT
+S4, single pipeline) — ACCEPTED as deposit-record work item for the
+eventual release.
+
+**T1 (ChatGPT W1 — relic production) — PARTIAL, scope confirmed
+disclosed.** The papers do NOT claim a production history: the abstract
+states "the absolute mass scale and the dark-to-baryon ratio are
+inherited as calibrated inputs (on par with ΛCDM)." The quantitative
+relic campaign is REGISTERED OPEN (OPEN-DM-RELIC-1, charter v1.1
+frozen, both naive readings failing at open — the reviewer's instinct
+matches the programme's own highest-priority open item). The
+"load-bearing dependency" framing is accepted for the IDENTIFICATION
+claim (which the paper already grades as "a positive discriminant, not
+yet a full identification"); no erratum needed; the revision inherits
+the RELIC-1 outcome. ChatGPT W2 (stellar capture) — ACCEPTED as a
+revision-checklist confrontation row (solar/stellar capture rates vs
+cooling bounds), not previously run by name; queued.
+
+**T6 (ChatGPT W3 / Copilot F3 / Gemini S3 / DeepSeek W1 — cross-paper
+ledger) — ACCEPTED as B-lane work item** (the single-table ledger:
+E_c, pitch, χ, floor — value/scope/provenance per paper), executes with
+the revision rather than for a blocked deposit. DeepSeek W1's specific
+numbers are corrected in the response: d_DP = 0.364 fm is the FA-lane
+edge length (0.589 fm is a different registered quantity — the ledger
+row disambiguates); the three-body estimate at spacing/ℓ ≈ 4 under
+exponential screening is queued as a one-liner with the ledger.
+
+**T7 (Grok F1/F2) — DISMISSED-AS-DISCLOSED with respect stated:** both
+findings quote the paper's OWN disclosures (IC 2574 under-prediction
+"a genuine tension… the flat prediction must own"; the 2.3σ group-scale
+shortfall carried as a standing falsifier). The asymmetry charge (F2)
+is answered: a 2.3σ shortfall against one measurement with large
+systematics is not the same object as a ×20–30 exclusion margin, and
+the paper treats neither as the other. Both rows carry to the revision
+unchanged.
+
+**T8 (Grok F3/F4/F5 — conditionality) — F3 CONFIRMED-AS-DISCLOSED
+(the F3′ multipole derivation debt is the paper's own named decisive
+debt; nothing to fix, everything to derive); F4 PARTIAL-STALE:
+Gate-1/B1 is not "listed as OPEN" — the campaign EXECUTED (2310–2336)
+and its verdict is IN the v1.5 banner the release block rests on; the
+reviewer read the resting v1.0 text, which the revision supersedes.
+F5 ACCEPTED-IN-PRINCIPLE: the ±2 propagation exercise joins the
+revision checklist.**
+
+**T9 (Grok F6 / Copilot F6 / DeepSeek S3 — DM-2 scope) — errata-queue
+items 5–6 already carry the referential-zero upgrade (D2/1161
+symmetry-enforcement is precisely the "not by construction" derivation
+Grok F6 requests); Copilot F6's staggered-response compatibility
+sentence and DeepSeek S3's prior-specification note are ADDED to the
+queue (items 8–9).**
+
+**T10 (Copilot F4 / DeepSeek S1 — "1871" misreadings) — DISMISSED AS
+POSED (patch number, not year/energy); the gloss erratum (item 7)
+stands; Copilot's underlying geometry-robustness question routes to
+the revision checklist with the 1871 MC's registered robustness
+content.**
+
+**Wave disposition:** ZERO CONFIRMED KILLs; zero confirmed WOUNDs
+against claims the papers actually make; five reviewer-driven additions
+to the revision checklist (stellar capture row, cross-paper ledger,
+halo-bracket statement, ±2 propagation, single-pipeline); four errata
+items added or extended. The wave's real finding is the one the
+adjudicator supplied while executing it: the release was already
+blocked by the arc's own 9-July kill, and the plan file didn't say so.
+Credit lines: ChatGPT (scope discipline, pipeline), Grok (the closest
+paper-reading of the five; both disclosed-tension re-attacks correct on
+the numbers), Gemini (the CMB check worth having in the ladder — and it
+was), Copilot (SIDM conditional correctly posed; ledger), DeepSeek
+(arithmetic verifications E_c/χ correct; two findings dismissed on
+mechanism).
