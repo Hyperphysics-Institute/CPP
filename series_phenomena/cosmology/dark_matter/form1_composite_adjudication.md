@@ -74,3 +74,20 @@ reproducing the boundary. Canonical framing sentence (J6 discipline): Agenda
 A, conditional form-class success; Agenda B, endpoint theorem with
 schedule-derivation failure; composite FD-PARTIAL. Nothing above this line is
 edited.
+
+---
+
+## PANEL NOTE (Patch 2675, additive; CONV-001 returns on the 2672 packet adjudicated at 2674, five of five)
+
+The FA-C2 conditionality named in §1 (Agenda A conditional on FA-C1 + FA-C2)
+is updated by the FA-SEA-GREEN adjudication: **FA-C2's exponential FORM is
+now Sea-derived** (G1-anchored; the conditional leg strengthens), while the
+**screening SCALE supersedes the candidate values** — ℓ = 0.091 ± 0.002 fm
+(βd = 12.6 ± 0.3), FG-OTHER, observation grade pending FA-SG-R1. The §2.1
+DEP-1 clause ("width revisions remain live via FA-C3") has its answer:
+FA-C3 CLOSED 5–0; width-dependent consumer quantities carry the **2674
+rider** and the demotion clause per
+`conv001_2026-07_seagreen_readout_returns_adjudication.md` §5 and the DEP-1
+ledger §5 reading rule. The A-CLASS verdict itself is untouched — its
+content was the form class, which survives strengthened. Nothing above this
+line is edited.

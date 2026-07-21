@@ -62,3 +62,26 @@ live** (two zero-parameter lattice candidates βd = d/ℓ_unit = 1.95 and
 d/ℓ_edge = 3.16 registered unpromoted; FA-C3 the named successor). The bracket
 {2, 4} remains the instrument-level registration, now understood as bracketing
 both lattice candidates.
+
+## 5. Morse-bracket WIDTH-axis note (Patch 2675, 20 July 2026 — additive; rows above unedited; the §4 note stands)
+
+The §4 note left width revision "live via FA-C3." FA-C3 has now answered and
+CLOSED (CONV-001 five-of-five, Patch 2674): the Sea-derived screening is
+**ℓ = 0.091 ± 0.002 fm, βd = 12.6 ± 0.3 — FG-OTHER, observation grade
+pending FA-SG-R1** — which sits **outside the instrument bracket {2, 4}**
+and supersedes both lattice candidates for width-dependent quantities.
+Reading rule from 2674 §5 (the Gemini demotion clause, bounded along this
+ledger's own §4 seam):
+
+- Rows whose Morse-axis dependence is on the **form class and well
+  existence** read unchanged — the form class is derived (§4) and the
+  derivation's exponential FORM is now Sea-grounded (FA-SEA-GREEN).
+- Rows and downstream results whose registered content depends on the
+  **width VALUE** carry the **2674 rider** and read at
+  **phenomenological-fit grade** (instrument-parameter results at
+  w ∈ {2, 4}) pending the re-derivation campaign queued behind FA-SG-R1.
+- The bracket {2, 4} remains a valid **instrument registration** — it no
+  longer brackets any live physical candidate.
+
+The 2664 rider is untouched and travels alongside. No row is edited; this
+note is the ledger's reading instruction, per its own charter as a map.

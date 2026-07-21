@@ -113,3 +113,21 @@ FG-BAND, not Branch I.**
 
 **79.5% untouched. Nothing renamed after results (classes as frozen).
 Next action: the CONV-001 packet.** Reasoning: `reasoning/2671.md`.
+
+---
+
+## PANEL RULING NOTE (Patch 2675, additive; CONV-001 returns on the 2672 packet adjudicated at 2674, five of five)
+
+The §5 panel-gated items are answered. §5.1: routing = **CLOSE-FORK-FG-OTHER
+5–0** — FA-C3 CLOSED; FA-C3-DISC-1 replication route CLOSED, discovery route
+re-scoped to the derived scale. §5.2: tension ADJUDICATED 5–0 — the **2674
+rider** (canonical text at `conv001_2026-07_seagreen_readout_returns_adjudication.md`
+§5) is in force on every FA-C2 consumer sentence; Gemini demotion clause
+active for width-dependent quantities. Q1a: FG-OTHER ADOPTED 5–0 with
+amendments A1+A2 — this record's readout is cited as **"FG-OTHER on the
+present operator construction"**; the sign-staggered component is a property
+of the derived operator pending representation-independence. Q1b:
+SUFFICIENT-WITH-REMEDY-QUEUED 5–0 — **FA-SG-R1** registered (multi-motif
+arena + robustness battery + mandatory J3 leg); the numerical ℓ is capped at
+observation grade until R1 executes. No breach finding; the blind-protocol
+close-out stands as audited. Nothing above this line is edited.

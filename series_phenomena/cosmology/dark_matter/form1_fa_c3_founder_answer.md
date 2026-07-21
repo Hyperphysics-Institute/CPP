@@ -97,3 +97,24 @@ superseded by the frozen discriminant **FA-C3-DISC-1** and the analytic route
 **FA-SEA-GREEN** (adjudication file §5–§6). Every fork citation carries
 observation-grade + quarantined-onset qualifiers. Nothing above this line is
 edited.
+
+---
+
+## PANEL CLOSURE NOTE (Patch 2675, additive; CONV-001 returns on the 2672 packet adjudicated at 2674)
+
+**FA-C3 is CLOSED — CLOSE-FORK-FG-OTHER, 5–0.** The FA-SEA-GREEN blind
+derivation (2668–2671) produced ℓ = 0.091 ± 0.002 fm (βd = 12.6 ± 0.3) from
+the zero-parameter operator — neither the per-cell candidate this file
+registers (1.953) nor the per-edge alternative (3.159). The dichotomy is
+falsified as a dichotomy: neither candidate is the Sea's screening scale.
+**The founder's mechanism statement above retires to historical record**
+(Copilot's formulation, adopted at 2674 §4): the founders_voice verbatim is
+untouched and archival; the PCD phase-localization intuition remains on
+record as founder intuition, removed from active interpretive use. The
+Perceive/Compute-vs-Displace phase distinction it articulates was partially
+vindicated in structure — the elementary step is indeed neither lattice
+candidate (the founder's own 2666 charter consequence) — while the specific
+per-unit-cell identification did not survive derivation. FA-C3-DISC-1:
+replication route CLOSED; discovery route re-scoped to the derived scale.
+Full record: `conv001_2026-07_seagreen_readout_returns_adjudication.md`.
+Nothing above this line is edited.
