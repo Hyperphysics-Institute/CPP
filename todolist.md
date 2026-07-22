@@ -73,18 +73,39 @@ firewall the tags exist to guarantee (no measured value may silently leak into a
 "confirms" it). Origin: founder methodological ruling, 6 July 2026 (DM sector; D5/F3′ context), verbatim in
 `founders_voice/founder_ruling_measured_coefficients_2026-07-06.md`. Registered Patch 1886.
 
-### CONV-005 — Blocking Hamiltonian-identity gate (gate v2) before every Metropolis production run
+### CONV-005 (v2, panel-ratified 22 Jul 2026 Patch 2764) — Blocking Hamiltonian-identity gate before every Markov-chain production run
 
-Every future act that runs (or re-runs) a Metropolis sampler executes, BEFORE any production sweep, a
-**blocking Hamiltonian-identity gate**: a small frozen set of trial moves (≥5, fixed non-pool seed) on which
-the sampler's per-move increment ΔE is compared against a from-scratch total-energy difference computed by an
-independent code path; relative discrepancy threshold 10⁻⁸; FAIL blocks production and the session reports the
-defect instead. The gate is written into the act's prereg and its PASS line is quoted in the record. Origin:
-the 2714 self-pair defect (a detailed-balance-breaking increment error) survived five campaign acts and
-manufactured a 5.6σ artifact; the first act to carry this gate (B-CHECK-80, Patch 2754) caught it in five
-trial moves before consuming a seed, and the fixed re-run (Patch 2756) killed the anomaly at 0.02σ. Registered
-22 July 2026, Patch 2758, as deliverable 3 of the REACH-AUDIT-2714 charter
-(`series_phenomena/cosmology/dark_matter/reach_audit_2714_charter.md`).
+Every act that runs (or re-runs) ANY Markov-chain sampler (Metropolis, HMC, or other) executes, BEFORE any
+production sweep, a **blocking Hamiltonian-identity gate**, per distinct move type, interaction
+implementation, boundary condition, external-field mode, and code path: **≥20 randomly generated states ×
+≥20 proposed moves per state**, mandatorily including boundary-crossing moves, near-core moves,
+particle-index edge cases (i = 0, i = N−1), deliberately large displacements, and the zero-move identity.
+The incremental ΔH is compared against a from-scratch total-energy difference from an independent code
+path: **|ΔH_inc − ΔH_full| ≤ 10⁻¹⁰·max(1, |ΔH_full|)** (typical target 10⁻¹²), plus the inverse-move
+antisymmetry check ΔH(x→x′) = −ΔH(x′→x). ANY failure blocks production and the session reports the defect
+instead. The gate re-runs after ANY change to energy computation, neighbor masks, boundary handling, or
+source terms. The gate is written into the act's prereg and its PASS line is quoted in the record.
+Invariance checks (permutation, periodic translation, energy/force-gradient consistency) are recommended
+where the implementation admits them. Origin (v1, Patch 2758): the 2714 self-pair defect survived five
+campaign acts and manufactured a 5.6σ artifact; the first five-move gate (B-CHECK-80, Patch 2754) caught it
+before consuming a seed; the fixed re-run (Patch 2756) killed the anomaly at 0.02σ. v2 amendments ratified
+by the CONV-001 panel at the S4-X bundle adjudication (Patch 2764): coverage 400 checks vs five; mixed
+threshold; edge-case move classes; inverse-move test; all-MCMC scope; re-gate-on-change rule.
+
+### CONV-006 — Authentication-before-adoption for artifacts of interrupted or externally-executed sessions (panel-ratified 22 Jul 2026 Patch 2764)
+
+When a session finds completed computational artifacts it did not itself produce (stalled-window recovery,
+parallel-agent output, any uncommitted work of uncertain provenance), the artifacts are NOT adopted on
+trust or on memory. Before scientific adoption: (1) SHA-256 manifests for the code and data artifacts are
+computed and committed with the authentication record; (2) every quoted number is reproduced by re-running
+the frozen analyzers over the immutable raw archives; (3) **at least one full chain per distinct executable
+configuration is regenerated from its recorded seed** to the bit-identical-sampling standard (accumulator
+residues at the disclosed refresh level permitted), with the chain chosen by a rule stated BEFORE any
+comparison is seen (e.g., cheapest); (4) more than one chain regenerates when conclusions depend on
+chain-to-chain variance; (5) the authentication record commits BEFORE the artifacts' adoption patch or in
+the same push. Clean-environment rerun is recommended, not mandatory (revisit on first discrepancy).
+Origin: the RV-2714 stalled-window recovery (Patches 2761/2762); precedent authenticated by deterministic
+reproduction; formalized with amendments by the CONV-001 panel at the S4-X bundle adjudication (Patch 2764).
 
 ---
 
