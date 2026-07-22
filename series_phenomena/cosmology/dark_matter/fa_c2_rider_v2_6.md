@@ -47,3 +47,18 @@ precisely: arena-independent WITHIN the dense 1/r multiple-scattering
 assembly (not across operator assemblies — L5's J6-DIVERGE). The
 joint band is an instrument/construction ROBUSTNESS ENVELOPE, not a
 statistical confidence interval.
+
+## Addendum v2.6-A (Patch 2767, 22 July 2026 — founder ruling consumed)
+
+Per `founders_voice/founder_ruling_core_occupancy_2026-07-22.md`:
+the r < a core is OCCUPIED by responding both-charge DP-Sea medium;
+the α′ self-exclusion premise is REJECTED in the ontology. Clause 5
+status update: the site-matched branch (≈0.168 fm) is DEMOTED to
+PREMISE-REJECTED / sensitivity-bound only; the continuum-matched
+branch (0.0904 ± 0.0028 fm) is the physically-grounded LEADING
+ORDER. The cap, the zero-parameter ban (clause 7), and the
+states-which rule remain in force unchanged — the pair collapses
+only when the FA-C2 χ(r) superposition calculation lands (clause 8,
+now concretely specified: near-core χ modified by superposition of
+adjacent charges' oppositely-signed radial polarization gradients
+under the Gauss's-law constraint).
