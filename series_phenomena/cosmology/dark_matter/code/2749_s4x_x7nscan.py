@@ -17,7 +17,11 @@ THETA=2*math.sqrt(2)*math.pi*Q2/A
 A_S=0.04; EPS=2.4
 SEEDS={(128,"DRV"):20260783,(128,"UND"):20260784,
        (216,"DRV"):20260785,(216,"UND"):20260786,
-       (320,"DRV"):20260787,(320,"UND"):20260788}
+       (320,"DRV"):20260787,(320,"UND"):20260788,
+       # X7-NSCAN-EXT (Patch 2750 prereg, frozen before any EXT run)
+       (80,"DRV"):20260789,(80,"UND"):20260790,
+       (96,"DRV"):20260791,(96,"UND"):20260792,
+       (112,"DRV"):20260793,(112,"UND"):20260794}
 
 def setup(N):
     L=(N/NCP)**(1.0/3.0); B_=2*math.pi/L
@@ -95,7 +99,7 @@ def analyze(ckdir="/tmp/x7nscan"):
     beta=1.0/THETA
     print("N     <A>_UND        Var     linear    tilt          <A>_DRV        r=DRV/tilt")
     curve={}
-    for N in (128,216,320):
+    for N in (int(x) for x in (sys.argv[2].split(',') if len(sys.argv)>2 else ('128','216','320'))):
         sD,mD,eD=stats(f"N{N}-DRV",ckdir)
         sU,mU,eU=stats(f"N{N}-UND",ckdir)
         varU=sU.var(ddof=1)
@@ -120,6 +124,7 @@ def analyze(ckdir="/tmp/x7nscan"):
         elif abs(r-1.13)<=2*math.sqrt(er*er+0.12*0.12) and r<1.30: cls[N]="UNENHANCED"
         else: cls[N]="INTERMEDIATE"
     print("classification:",cls)
+    if set(curve)!={128,216,320}: return curve,cls
     Ns=[128,216,320]; c=[cls[n] for n in Ns]
     bracket=any(c[i]=="UNENHANCED" and "ENHANCED" in c[i+1:] for i in range(3))
     bad=any(c[i]=="ENHANCED" and "UNENHANCED" in c[i+1:] for i in range(3))
@@ -130,9 +135,29 @@ def analyze(ckdir="/tmp/x7nscan"):
     elif mono and not bracket: v="G2 SMOOTH DRIFT -> (a)-like reading; automaton arbiter"
     else: v="G4 OTHER -> PARTIAL; extend"
     print("FROZEN FORK:",v)
+    return curve,cls
+
+def analyze_ext(ckdir="/tmp/x7nscan"):
+    """X7-NSCAN-EXT frozen H-fork (record 2750 par.3). Sizes 80/96/112;
+    anchors r(64)=1.13+/-0.12 (X5-FE), r(128)=1.720+/-0.263 (X7)."""
+    import sys as _s
+    _argv=_s.argv; _s.argv=[_argv[0],"analyze","80,96,112"]
+    curve,cls=analyze(ckdir); _s.argv=_argv
+    seq=[(64,"UNENHANCED"),(80,cls[80]),(96,cls[96]),(112,cls[112]),(128,"ENHANCED")]
+    print("sequence:",seq)
+    c=[x[1] for x in seq]
+    bracket=any(c[i]=="UNENHANCED" and "ENHANCED" in c[i+1:] for i in range(len(c)))
+    inversion=any(c[i]=="ENHANCED" and "UNENHANCED" in c[i+1:] for i in range(len(c)))
+    ext=[cls[80],cls[96],cls[112]]
+    if ext==["ENHANCED"]*3: v="H2 ALL ENHANCED -> onset in (64,80]; B-CHECK at 80"
+    elif ext==["UNENHANCED"]*3: v="H3 ALL UNENHANCED -> transition compressed into (112,128] OR 128 fluctuation; replicate at 128 (seed 20260795 pair) before any reading"
+    elif bracket and not inversion: v="H1 ONSET BRACKETED -> B-CHECK at smallest ENHANCED N"
+    else: v="H4 OTHER -> gradual rise ((a)-compatible, recorded not enacted); automaton arbiter"
+    print("FROZEN FORK (EXT):",v)
 
 if __name__=="__main__":
     a=sys.argv[1]
     if a=="analyze": analyze()
+    elif a=="analyze_ext": analyze_ext()
     else:
         N,mode=a.split("-"); run_A(int(N[1:]),mode,int(sys.argv[2]))
