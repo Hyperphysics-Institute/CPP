@@ -73,6 +73,19 @@ firewall the tags exist to guarantee (no measured value may silently leak into a
 "confirms" it). Origin: founder methodological ruling, 6 July 2026 (DM sector; D5/F3′ context), verbatim in
 `founders_voice/founder_ruling_measured_coefficients_2026-07-06.md`. Registered Patch 1886.
 
+### CONV-005 — Blocking Hamiltonian-identity gate (gate v2) before every Metropolis production run
+
+Every future act that runs (or re-runs) a Metropolis sampler executes, BEFORE any production sweep, a
+**blocking Hamiltonian-identity gate**: a small frozen set of trial moves (≥5, fixed non-pool seed) on which
+the sampler's per-move increment ΔE is compared against a from-scratch total-energy difference computed by an
+independent code path; relative discrepancy threshold 10⁻⁸; FAIL blocks production and the session reports the
+defect instead. The gate is written into the act's prereg and its PASS line is quoted in the record. Origin:
+the 2714 self-pair defect (a detailed-balance-breaking increment error) survived five campaign acts and
+manufactured a 5.6σ artifact; the first act to carry this gate (B-CHECK-80, Patch 2754) caught it in five
+trial moves before consuming a seed, and the fixed re-run (Patch 2756) killed the anomaly at 0.02σ. Registered
+22 July 2026, Patch 2758, as deliverable 3 of the REACH-AUDIT-2714 charter
+(`series_phenomena/cosmology/dark_matter/reach_audit_2714_charter.md`).
+
 ---
 
 ## P1 — Must clear before next paper (SS-10)
