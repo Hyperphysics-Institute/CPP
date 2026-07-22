@@ -94,3 +94,14 @@ assurance.
    — deterministic re-derivation before adoption — is the general
    cure; CONV-002's re-fetch discipline already covers the git side,
    and this record is the precedent for the filesystem side.
+
+## §5 — Provenance closure (founder-identified, 22 July 2026)
+
+The founder identified the executing process: this same session's own
+earlier window incarnation, which stalled mid-work and was restarted;
+the successor instance found the completed artifacts and continued.
+The "another process" of §1 was therefore the predecessor of the
+committing instance itself — the benign branch anticipated in §4.3.
+Nothing in the physics record depended on the answer (§2), and the
+authentication battery's value stands independent of it: work
+recovered across a stall is adopted on reproduction, not on memory.
