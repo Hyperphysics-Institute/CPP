@@ -115,3 +115,35 @@ moving-feature discriminant are the designed arbiters and run next.
 
 **Next legs:** X4 rung completions ascending in cost (0.02: 686 +
 1024; then 0.01; then 0.005), gate-gated, PA-1 archival throughout.
+
+---
+
+## LEG 3 — X4 rung a_s = 0.02 completions (Patch 2790)
+
+**Executed 2026-07-23/24 under the frozen 2786 prereg §2 + PA-1.
+Runner: `code/2790_x4_execution.py` (2761 verbatim + licensed X4
+RUNS table + v2 gate with per-geometry invocation + PA-1). Data:
+`data/x3x4/X4-02-686.json.gz`, `data/x3x4/X4-02-1024.json.gz`.**
+
+**Gate v2 (BLOCKING, quoted):** X4-02-686 — 400 checks, worst rel
+9.051e−13, antisymmetry 1.482e−14 → PASS. X4-02-1024 — 400 checks,
+worst rel 2.567e−12, antisymmetry 2.698e−14 → PASS.
+
+**Chains:** X4-02-686 (seed 20260805): 3000 sweeps (600 eq + 2400),
+480 samples, acc 0.91, S-drift ≤ 2.6e−12. X4-02-1024 (seed
+20260806): 3000 sweeps, 480 samples, acc 0.91, S-drift ≤ 2.7e−12.
+PA-1 per-sample S_zz archived for both.
+
+**Rung-level F1 (frozen extraction + frozen 24×2000 bootstrap;
+DATA ONLY — all committed X4 analyses run at ladder completion):**
+X4-02-686: κ_fit/κ_D = 0.8950 ± 0.0188. X4-02-1024: 0.8901 ± 0.0126.
+With RV-CORE (0.8726 ± 0.0218), the a_s = 0.02 rung now holds three
+sizes {432, 686, 1024} × three independent seeds. Same-font note
+(observation, no conclusion): the deficit does not visibly diminish
+at the largest box; the frozen 1/L scaling, window-map,
+two-component, and moving-feature analyses are the arbiters and run
+only when the ladder closes.
+
+**Rung status:** a_s = 0.04 COMPLETE (archived RV, 4 chains);
+a_s = 0.02 COMPLETE (RV-CORE + 2 new, 3 sizes); a_s = 0.01 NEXT
+(4 chains, seeds 20260807–10); a_s = 0.005 queued (seeds 20260811–14).
