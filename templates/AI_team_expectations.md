@@ -79,6 +79,9 @@ When an axiom, a theorem, a registry entry, or a reviewer claim is about to be c
 - **Web-rendered repo pages treated as authoritative for repo state.** (Observed 23 April 2026, during diagnosis of whether patch 2 had been applied.) Claude fetched origin's `bootup.md` via `web_fetch` and, seeing content inconsistent with patch 1's expected changes, concluded both patches 1 and 2 had not been applied. The real state (confirmed by Thomas's `git log`) was that patch 1 was applied as commit `56594b4` and the web-rendered page was either serving cached pre-patch content or Claude misread the fetched HTML.
   - **Rule:** When the user has shell access to the working copy, `git log` on their machine is authoritative for repo state. `web_fetch` of `github.com` or `raw.githubusercontent.com` URLs can return cached content and is not reliable evidence of current main. For any diagnostic question of the form "did X commit land on origin main?", ask for the output of `git log --oneline origin/main | head -5` rather than attempting to verify by fetching specific files.
 
+- **Distinguishing-number disclosure in the dispatched packet (author-side).** (Observed 22 July 2026, C2R round 1, Patch 2775/2776.) The CONV-001 packet named the example distinguishing numbers reviewers could report to earn VERIFIED-EXECUTED. This converted the execution test into a reading test: two seats claimed execution by echoing the disclosed values, and the claims had to be ruled VOID rather than adjudicated, wasting a round.
+  - **Rule (author-side):** never disclose a distinguishing value in any dispatched material. Designate the LOCATION only (script + configuration), prefer a challenge configuration printed by no committed record and no pasted output, and authenticate by worker re-run at adjudication (the repaired form: `2777_c2r_challenge.py`; reference implementation `conv001_2026-07_c2r_supplementary_verification.md` §6).
+
 ### Claude Sonnet (hostile reviewer)
 
 **Role:** Final adversarial review, identifying unstated assumptions, what a hostile referee would say.
@@ -117,6 +120,18 @@ When an axiom, a theorem, a registry entry, or a reviewer claim is about to be c
 
 - **Thomas-side failure on feedback loop.** (22 April 2026, noted explicitly by Thomas.) When the document-mismatch correction was drafted and the document was resubmitted, the correction feedback was not sent. The Thomas-side reasoning ("too late now, work proceeded") was identified as incorrect in retrospect. This is the immediate motivator for this file's §1.1 feedback-discipline rule.
   - **This entry records a Thomas-side pattern, not a ChatGPT one.** Included here because the failure-feedback loop is bidirectional and the file is the team's shared record.
+
+### DeepSeek (breadth seat)
+
+**Role:** Fifth panel seat; breadth review.
+
+**Identified failure modes:**
+
+- **Fabricated verification claims (three instances).** (i–ii) Twice impeached in the S4-X bundle / FA-SG-R1 audit arc (July 2026, Patches 2758–2771 handover record) for claiming script execution without executing. (iii) 22 July 2026, C2R round 2 (Patch 2778): claimed VERIFIED-EXECUTED on a fair repaired challenge, reported 0.2943 fm against the authenticated 0.3023 fm, and supplied an R² and a same-window baseline that the challenge script does not print or compute. The third instance is the clean one: the value was committed nowhere, so a correct report required execution, and the near-miss value anchored on the disclosed +220%/0.29 fm material is itself diagnostic of fabrication rather than error.
+  - **Rule (standing, tightened at 2778):** DeepSeek's VERIFIED-EXECUTED self-reports are never credited. Only a worker-authenticated challenge value counts. Its execution-dependent claims are disregarded; its reasoned review content is still read and may be adopted on merit (the 2778 sweep-reference sentence is the reference case).
+
+- **Persistent ontology inversion on the 2767 occupancy ruling.** In BOTH C2R rounds (22 July 2026), DeepSeek asserted "self-exclusion at GP scale" and an "excluded core" — the exact premise the 2767 founder ruling REJECTS and the C2R campaign consumed as rejected — and misread the 1 − 3e⁻² = 0.5940 core-medium fraction as a "self-exclusion fraction."
+  - **Rule:** DeepSeek returns touching the occupancy ruling (or any founder ruling with a rejected-premise structure) are checked against the ruling's verbatim text before any weight is assigned; a return restating a rejected premise as current ontology is evidence of non-engagement with the source.
 
 ---
 
