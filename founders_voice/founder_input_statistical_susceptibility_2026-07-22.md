@@ -124,3 +124,12 @@ not as founder-normative, pending explicit confirmation.
    precisely the finite region where the residual is nonzero and
    decays over ℓ. The founder's own ZBW qualifier already carries
    the never-true-equilibrium point.
+
+## §5 — Flag resolution (Patch 2782, 22 July 2026)
+
+The §3 flag is DISCHARGED: the founder confirmed verbatim that "the
+statistical redistribution mechanism operates the same way in the
+core and coat regions for the polar effects" (the core hosting both
+strong and polar modes). The core-extension sentence is now
+founder-normative. See
+`founder_input_core_confirmation_species_ladder_2026-07-22.md`.
