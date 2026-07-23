@@ -190,3 +190,17 @@ the PR ledger is panel business at the consolidated S4-X report.
   r_min ≥ 2a_s; every rung at a_s ≤ 0.01 has ≥2 sizes and ≥2 chains;
   no seed collides with the 20260798–802 block or any earlier
   reservation.
+
+---
+
+## §PA-1 — PREREG ADDENDUM (Patch 2788; panel authority Q5: S4 archival advisory + S1 diagnostic-scope rationale, ratified 5–0)
+
+Output-format addition only — no frozen prediction, threshold,
+window, seed, or analysis rule changes: **every NEW X3/X4 chain
+archives per-sample S_zz(k) (all committed shells) and per-sample
+profile blocks**, so requirement-7-class comparisons on these chains
+support the preregistered per-sample bootstrap that the rv2714
+archive could not. DEV-1's diagnostic-envelope error model remains
+ratified for the archived-data leg only; shellwise uncertainties
+under DEV-1 are diagnostic envelopes and support no individual-shell
+discovery claim.

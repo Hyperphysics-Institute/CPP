@@ -185,3 +185,42 @@ label.
     after an adverse result, and recommends adverse closure.
   - **Q4:** whether the §3 no-sub-threshold characterization should be
     forwarded to the K1-S1 arc as a named input.
+
+---
+
+## §6 — PANEL DISPOSITION (Patch 2788; adjudication: `conv001_2026-07_l2rb_x3x4_batch_adjudication.md`)
+
+**Q1 (5–0 on substance, amended wording adopted):** RB-1 COMMITTED
+VERDICT VOID under D1; DISCLOSED evidence nevertheless supports that
+the earlier 19-site non-staggering result was a
+compact-boundary/scattering-depth artifact, not evidence for an
+intrinsic population threshold; not promoted to
+preregistered-confirmation grade. Downstream citations must carry the
+disclosed-evidence label.
+
+**Q2 (split, reasoned adjudication):** repaired gate for FUTURE
+structural-class tests: z = 12 exactly; min|L| ≥ 3 d_nn; frozen count
+bracket N ∈ [0.9, 1.1]·N_target replacing exact-count matching; ≥2
+counts per stacking family where constructible. No retroactive RB-1
+verdict.
+
+**Q3 (5–0): RB-2 CLOSED ADVERSE** — staggered class metric-robust on
+I1; shell amplitudes, signs, decay structure, and antipodal
+concentration NOT quantitatively transportable chord → geodesic; D2
+does not alter the disposition. RB-2R only under a fresh prereg with
+an independently derived mapping. **THE L2-RB ARC IS CLOSED.**
+
+**Q4 (5–0):** onset-ladder characterization forwarded to K1-S1 under
+provenance tag "L2-RB onset ladder characterization (2784–2785)",
+characterization-only, adopted wording in the adjudication record.
+
+**MACHINE-READABLE D1 NOTE (S4 action item 1):**
+```json
+{"defect":"D1","type":"jointly-unsatisfiable-frozen-constraints",
+ "constraint_a":"min_boxvector >= 3*d_nn",
+ "constraint_b":"FCC torus with exactly 120 sites (4abc=120, all dims>=2)",
+ "proof":"4abc=120, a,b,c>=2 => {a,b,c}={5,3,2} uniquely; min dim 2 cells => min|L|=2*sqrt(2)*d_nn=2.828*d_nn < 3*d_nn",
+ "consequence":"committed RB-1 verdict void; results stand as disclosed evidence",
+ "repair_adopted":"z=12 exact; min|L|>=3*d_nn; count bracket [0.9,1.1]*N_target; >=2 counts per stacking family (future tests only)",
+ "d2_repair_artifact":"code/2785_defect_check.py (immutable, committed Patch 2785)"}
+```
