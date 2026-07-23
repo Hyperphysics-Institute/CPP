@@ -42,3 +42,21 @@ prediction was read; strict-gate FAIL kept and converted to the
 worn method floor); the Grok-gloss detailed-balance conflation
 corrected at intake; R3 instrument-circularity disclosed unprompted;
 no grade, rider, or cap motion made from inside the arc.
+
+## §4 — Addendum (Patch 2779, 22 July 2026): the C2R spatial deliverable, panel-ratified
+
+The C2R campaign (2768–2778, class C2R-OBSTRUCTED, panel-ratified
+4–0) registered its obstruction as this item's concrete question,
+with the deliverable specification adopted from the S1 return
+(2778 §2 Q3): **derive the short-distance, frequency-zero per-site
+response kernel χ_static(r, r′) from the explicit Moment dynamics,
+including its self-cell treatment, spatial nonlocality, anisotropy
+bounds, and local-environment dependence** — determining at minimum
+the integrated susceptibility, the radial/tensor profile, the
+self-cell contribution, whether the response is pointlike,
+distributed, or sign-changing, and how the profile changes near a
+rod or bound aggregate. Statics brackets the answer's readout
+consequence at 0.0904 fm (point idealization) vs ≈ 0.29 fm
+(leading-order cloud, non-convergent first order); the kernel's
+shape selects within or beyond that bracket. See
+`c2r_l4_readout.md` §3 and `conv001_2026-07_c2r_round2_adjudication.md`.
