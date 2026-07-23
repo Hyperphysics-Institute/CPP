@@ -60,3 +60,18 @@ consequence at 0.0904 fm (point idealization) vs ≈ 0.29 fm
 (leading-order cloud, non-convergent first order); the kernel's
 shape selects within or beyond that bracket. See
 `c2r_l4_readout.md` §3 and `conv001_2026-07_c2r_round2_adjudication.md`.
+
+## §5 — Addendum (Patch 2781, 22 July 2026): founder input resolves the trichotomy element
+
+The founder's statistical-susceptibility input
+(`founders_voice/founder_input_statistical_susceptibility_2026-07-22.md`)
+resolves the §4 deliverable's trichotomy at picture level: the
+per-site response is a DISTRIBUTED, time-averaged statistical
+redistribution of the neighborhood (plasma/ionic-type, not
+molecular-dielectric-type), with the ZBW/Moment-dynamics
+fluctuations named as the effective agitation bath. K1-S1's
+fluctuation-response arc should derive the agitation scale from the
+update rule; χ_static's shape and the screening scale (κ·a = 2,
+currently imposed) then become derivable. AUTOMATON-1 deliverable
+(v) carries the pre-registered qualitative expectation from this
+input.
