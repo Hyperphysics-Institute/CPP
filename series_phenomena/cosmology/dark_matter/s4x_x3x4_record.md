@@ -188,3 +188,43 @@ alone.
 **Rung status:** 0.04 COMPLETE, 0.02 COMPLETE, 0.01 COMPLETE;
 0.005 NEXT (final rung, seeds 20260811–14), then the full frozen
 battery + PR2 evaluation.
+
+---
+
+## LEG 5 — X4 rung a_s = 0.005 COMPLETE — LADDER FULLY POPULATED (Patch 2792)
+
+**Executed 2026-07-24 under the frozen 2786 prereg §2 + PA-1. Data:
+`data/x3x4/X4-005-{432A,432B,686,1024}.json.gz`. The committed chain
+matrix is now COMPLETE: 15 chains, 4 rungs {0.04, 0.02, 0.01,
+0.005}, ≥2 sizes and ≥2 seeds at every rung ≤ 0.01 as PR2 requires.
+No reserve chain activated (all ESS well above the mechanical
+trigger; quoted in the battery leg).**
+
+**Gate v2 (BLOCKING, quoted):** 432A/B — worst rel 6.969e−13,
+antisym 1.776e−14 → PASS. 686 — 1.167e−12 / 1.541e−14 → PASS.
+1024 — 1.820e−12 / 2.842e−14 → PASS.
+
+**Chains (seeds 20260811–14):** 432A/B 2000 sweeps / 320 samples;
+686 and 1024 3000 sweeps / 480 samples; acc 0.88–0.89; S-drift
+≤ 2.9e−12 at every boundary; PA-1 archived all four.
+
+**Rung-level F1 (frozen extraction + bootstrap; DATA ONLY):**
+432A 0.4706 ± 0.0325; 432B 0.5096 ± 0.0305; 686 0.4997 ± 0.0376;
+1024 0.3994 ± 0.0170.
+
+**RV-4 alternation census (2709/2713 counter verbatim), all twelve
+new campaign chains (X3 + X4): ZERO significant alternations —
+MONOTONIC everywhere.** The PR2 clause "no significant
+sign-staggered response" is satisfied on its own terms across the
+full ladder.
+
+**Same-font observation (no conclusion; battery next):** the frozen
+F1 ratio now traces ~0.90 → ~0.89 → ~0.72 → ~0.45 down the ladder —
+a collapse strongly correlated with the frozen window's a_s-tied
+lower edge (2a_s = 0.08 → 0.01 fm), and formally consistent with
+either a soft-core-masked physical deepening or a window-edge
+extraction artifact sweeping in short-range structure. The frozen
+battery — fixed-physical-window maps, ΔAIC two-component form test,
+shared-pole joint real/k fits, the (a_s, 1/L) surface, and the
+moving-feature discriminant — executes next as the sole arbiter,
+and PR2's κ_eff is evaluated only there.
