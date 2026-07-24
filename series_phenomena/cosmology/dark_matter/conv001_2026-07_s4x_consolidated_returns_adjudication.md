@@ -133,3 +133,25 @@ specification (PD-006 founder contact item — physics question)**;
 PR5 per the clean X6 re-read; PR6/PR7 per their charters. Next
 worker actions: draft the PR2-PHYS successor prereg for panel
 ratification; surface PR4 to the founder.
+
+---
+
+## ERRATUM (Patch 2795, same-font) — the PR4 status line above is STALE
+
+The "Standing" section states "PR4 awaits the founder's update-rule
+specification (PD-006 founder contact item)." **That is FALSE and is
+corrected here:** the founder's AUTOMATON-1 specification was
+provided in full at Patch 2729 (`automaton1_founder_specification.md`,
+four verbatim answers, commitments 14–18) and completed by the
+founder's confirming ruling at Patch 2732 ("I accept your proposed
+resolution of v/c"), freezing the charter
+(`automaton1_charter.md`: d = (|SSV_net|/SSV_abs)·PSR_eff,
+synchronous semantics, periodic boundaries). **PR4 awaits WORKER
+EXECUTION** — the AUTOMATON-1 execution prereg and run against the
+charter's deliverables (i)–(iii) — and nothing from the founder. The
+stale line originated in the 2763 dispatch text (written before this
+worker re-read the charter chain) and was propagated uncritically
+into this adjudication and into two founder-facing summaries; the
+founder flagged the repetition. Process note for future sessions:
+PR-status lines are to be re-derived from the charter files at each
+citation, not inherited from dispatch prose.
