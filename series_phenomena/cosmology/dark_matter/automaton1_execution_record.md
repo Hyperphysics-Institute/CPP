@@ -82,3 +82,88 @@ DI-bit relay.
 
 **Production (2796 §4, unchanged) now licensed: R ∈ {2, 3, 4}
 melee runs proceed.**
+
+---
+
+## LEG 3 — PRODUCTION + DELIVERABLES: **VERDICT NOT-GIBBS** — the bare Moment rule QUENCHES (Patch 2799)
+
+**Executed 2026-07-24/25 under frozen 2796 §4. Analysis:
+`code/2799_automaton1_deliverables.py`; final states archived
+(`data/x3x4/automaton1_final_states.json.gz`; full trajectories
+regenerate deterministically from the committed engine + seeds).
+Reasoning: `reasoning/2799.md`.**
+
+**The observed dynamics (all three R, identically in kind):** during
+warm-up the melee AGGREGATES into massive multi-CP piles (R = 2: 57
+occupied sites, piles to 26 CPs; R = 3: 34 sites, to 52 CPs; R = 4:
+extreme) — then FREEZES COMPLETELY: zero CP motion across the entire
+80k-Moment production window at every R (all 4000 samples identical;
+⟨H⟩ variance exactly zero).
+
+**Mechanism (diagnosed, two parts):** (1) **Co-location is
+absorbing** — the committed rule samples the field at the CP's GP,
+so CPs sharing a GP feel identical fields and displace identically
+forever; merges are irreversible and piles only grow, regardless of
+charge sign (R = 2 final state holds 1378 like-sign same-site
+pairs). (2) **Rounding-floor stasis** — once inter-pile fields
+produce displacement components < ½ GP, the nearest-GP snap
+(committed engine convention) yields zero motion; the pile
+configuration locks. The bare rule is deterministic and dissipative:
+it finds a fixed point and stays there.
+
+**Committed deliverable evaluations (frozen bands):**
+- **D-(vi) θ_κ/θ_H: FAILS BY NON-EXISTENCE, 3/3 R.** The frozen
+  automaton ⟨H⟩ is POSITIVE (+106.0 / +495.4 / +5030.2 — same-site
+  like-pair stacking dominates); Gibbs ⟨H⟩ for the lattice
+  Hamiltonian is NEGATIVE at every temperature (−126.0 ± 0.5 at
+  θ = 0.5 → −43.2 ± 1.0 at θ = 8, → 0⁻ as θ → ∞). No matching θ_H
+  exists.
+- **D-(ii) Gibbsian screening: FAIL, 3/3 R.** The automaton
+  "ensemble" is a delta function on a frozen crystal (R = 4 κ
+  extraction degenerate at 0.000); Gibbs κ ∈ [0.45, 0.94] across
+  the grid. No band can be met.
+- **D-(i):** the stationary marginal is a point mass — vacuously
+  "energy-only," substantively uninformative; recorded as
+  DEGENERATE.
+- **D-(iii):** probability currents identically zero (frozen) —
+  trivially detailed-balance-consistent; DEGENERATE.
+- **D-(iv):** relaxation time infinite (motion ceased);
+  SLOW-VARIABLE in the extreme.
+- **D-(v):** the committed dipole estimator (signed min-image COM)
+  is torus-wrap ill-defined and its nine biased-run responses show
+  no coherent on-axis pattern — reported FAIL/NOISE same-font, with
+  the estimator defect flagged (a Resta-phase polarization is the
+  clean follow-up estimator; not substituted post-hoc).
+
+**FROZEN VERDICT: NOT-GIBBS** (committed bands (ii) and (vi) fail at
+3 of 3 R). Per the charter: an adverse outcome is a first-class
+physics finding, reported in full; no promotion from inside; the
+79.5% untouched.
+
+**The physics finding (offered for the founder and the record):**
+the Moment rule as chartered (commitments 14–18) contains NO
+agitation source — it is deterministic and, with the displacement
+quantization, dissipative. Left alone it does exactly what such a
+rule must: binds opposite charges, aggregates (co-location
+absorption), and quenches to a static configuration — a T → 0
+quench, not a finite-θ ensemble. **Gibbs statistics — the
+foundational assumption of the entire MCMC screening programme —
+therefore requires an EXPLICIT agitation degree of freedom that the
+bare rule does not supply.** This lands precisely on the founder's
+ZBW-as-agitation-bath route (the K1-S1 arc): PR4's discriminator
+elevates that route from "a derivation path for κ·a = 2" to "the
+physically necessary ingredient for the Sea to be a statistical
+ensemble at all." Two further doctrine-adjacent observations for the
+founder's reading: (a) the spontaneous ± binding the automaton
+exhibits is qualitatively the Sea's dipole (DP) formation; (b) what
+the automaton lacks — the agitation that keeps the Sea from total
+collapse into inert piles — is exactly what ZBW supplies in the
+founder's physical picture. Whether the next automaton iteration
+adds a chartered agitation term (founder's physics) is a founder
+question, not a worker resolution.
+
+**Positive findings retained from this arc:** emergent inverse-
+square electrostatics (leg 2, ±2.9% shape, Δp ≤ 0.022) stands
+independently of the quench result — the bare rule gets the FIELD
+right and the STATISTICS absent, which is itself a sharp,
+publishable characterization of the Moment rule.
