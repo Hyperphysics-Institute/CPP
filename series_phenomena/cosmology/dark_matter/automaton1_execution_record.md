@@ -50,3 +50,35 @@ comparator on identical geometry, axes, and window, with the band
 on the DIFFERENCE — after the comparator is validated against the
 free-space law at small r/M. No production Moment has been run; the
 79.5% is untouched; PR4 remains open pending the re-gated run.
+
+---
+
+## LEG 2 — V-1R COMPARATIVE GATE: 3/3 PASS; V-2 PASS — PRODUCTION LICENSED (Patch 2798)
+
+**Executed 2026-07-24 under the frozen 2798 re-prereg
+(`automaton1_v1r_reprereg.md`). Comparator:
+`code/2798_ewald_comparator.py`, V-1b validated at 0.856% vs free
+space. The 2797 FAIL is classified a GATE-DESIGN defect: exact torus
+Coulomb itself has p = 2.291 on the original diagnostic window — the
+frozen [1.8, 2.2] band was unsatisfiable for any Coulombic field on
+the geometry.**
+
+**V-1R (comparative, quoted):** R = 2: normalized ρ ∈ [0.991, 1.026],
+Δp = 0.022 → PASS. R = 3 (confirmatory-disclosed): ρ ∈
+[0.994, 1.029], Δp = 0.022 → PASS. R = 4: ρ ∈ [0.991, 1.005],
+Δp = 0.020 → PASS. **3/3 — GATE OPEN.**
+
+**V-2 (melee conservation/boundedness):** net charge conserved to
+−2.9e−13; L1 field-content trend +1.4% second-half vs first-half
+(bounded oscillation, no growth) → PASS.
+
+**First-class positive finding (offered for the record):** the
+founder's Moment rule under DR-1's minimal faithful implementation
+produces EMERGENT INVERSE-SQUARE ELECTROSTATICS — shape agreement
+with exact torus Coulomb within ±2.9% pointwise and Δp ≤ 0.022
+across an 2× range of shell radii. The Coulomb field is not an input
+anywhere in the automaton; it emerges from surface-integrated
+DI-bit relay.
+
+**Production (2796 §4, unchanged) now licensed: R ∈ {2, 3, 4}
+melee runs proceed.**
