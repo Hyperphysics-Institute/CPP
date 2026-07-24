@@ -228,3 +228,75 @@ battery — fixed-physical-window maps, ΔAIC two-component form test,
 shared-pole joint real/k fits, the (a_s, 1/L) surface, and the
 moving-feature discriminant — executes next as the sole arbiter,
 and PR2's κ_eff is evaluated only there.
+
+---
+
+## LEG 6 — THE FROZEN BATTERY + PR2 VERDICT (Patch 2793) — CAMPAIGN ANALYSIS COMPLETE
+
+**Executed 2026-07-24 under the frozen 2786 prereg §2 + PA-1. Script:
+`code/2793_x4_battery.py` (staged; window maps cached then consumed).
+One implementation defect caught pre-commit by its own output and
+fixed with disclosure (DEV-B1: the archived-szz branch of the req-4
+k-side estimator double-normalized, producing an absurd 38.5 at
+a_s = 0.04; archived szz is stored already-normalized exactly as the
+req-7 leg consumed it; the PA-1 per-sample branches were never
+affected; committed script carries the fix).**
+
+**REQ 2 — the decisive row. Fixed physical window (0.08, 0.546) fm
+across ALL rungs (per-chain, frozen 24×2000 bootstrap):** a_s = 0.04:
+0.887–0.941; 0.02: 0.953–0.980; 0.01: 0.953–0.988; 0.005:
+0.930–0.995. **The down-ladder collapse (0.90 → 0.45 under the
+frozen 2a_s-lo window) VANISHES at fixed physical window, and the
+fixed-window ratio TRENDS TOWARD UNITY as the regulator is removed.**
+The full 328-cell per-chain maps are in the cached battery output and
+regenerate deterministically from the committed script + archives.
+
+**REQ 3 — two-component form test (rung-pooled):** ΔAIC(B−A) = 28.6 /
+121.4 / 1106.9 / 4048.5 down the ladder — the two-mode form is
+decisively preferred everywhere and overwhelmingly at fine a_s;
+κ_asym/κ_D = 1.020 ± 0.084, 0.982 ± 0.016, 0.972 ± 0.012,
+0.980 ± 0.014. Frozen classes: TRANSIENT-MODE at 0.04, 0.02, 0.005;
+UNRESOLVED-FORM at 0.01 (κ_asym at 2.43σ, marginally past the frozen
+2σ line).
+
+**REQ 4 — joint real/k shared-pole fits:** κ_joint/κ_D =
+0.9643 ± 0.0094 (0.04; archived-mean k-side, advisory weights),
+0.9665 ± 0.0102 (0.02), 0.9787 ± 0.0104 (0.01), 0.9600 ± 0.0118
+(0.005; per-sample PA-1 k-sides throughout the new rungs). K-sides
+alone: 0.99–1.02 everywhere.
+
+**REQ 5 + PR2 — the frozen surface extrapolation of the F1
+extraction:** all 15 chains tabulated in the battery output;
+κ(a_s, L) = κ_∞∞ + c₁a_s^p + c₂/L gives κ_eff/κ_D = 0.5206 ± 0.0446
+(p = 1, AIC-selected) vs 0.6215 ± 0.0442 (p = 2); total uncertainty
+0.0674; χ²/dof = 35.6 — the frozen surface form does not describe
+the F1 data (same-font: the extrapolation is fitting a
+window-confounded observable, and its own χ² says so). Staggering
+clause: satisfied (zero alternations, leg 5). **PR2 FROZEN VERDICT:
+FAIL** — κ_eff/κ_D = 0.52 is far outside [0.97, 1.03]. The verdict
+is recorded exactly as frozen; its INTERPRETATION is panel business
+(see the consolidated-report questions), because the battery's own
+requirements 2–4 demonstrate that the F1 extraction the PR2 surface
+consumes does not measure asymptotic screening across a ladder.
+
+**REQ 6 — moving-feature discriminant:** FIXED-R at 0.04 (r* ≈
+0.48–0.54 fm, spread 11.9%) and 0.02 (spread 9.7%); at 0.01 and
+0.005 the max-deviation location jumps to the window's inner edge
+(0.015–0.025 fm) on the largest boxes — UNRESOLVED-LOCATION per the
+frozen classes, consistent with the short-range transient dominating
+fine-a_s windows.
+
+**ESS (reserve-trigger quote):** 242–740 across all twelve new
+chains; the mechanical ESS < 100 trigger never fired; reserves
+20260815–16 unused.
+
+**The coherent picture the instruments jointly draw (offered for
+adjudication, not enacted):** the below-DH F1 residual that
+motivated this campaign is a SUPERPOSITION OF TWO AUTHOR-SIDE
+SYSTEMATICS — a soft-core regulator distortion (fixed-window ratio
+rises toward 1 as a_s → 0) and a window-edge extraction confound
+(the frozen window's 2a_s lower edge sweeps short-range transient
+structure into a one-mode fit) — over DH-CONSISTENT asymptotic
+screening (κ_asym ≈ κ_joint ≈ k-side ≈ 0.96–1.02; req-7 conjugate
+null; MONOTONIC everywhere). Nothing in the ladder supports a
+physical screening anomaly.
