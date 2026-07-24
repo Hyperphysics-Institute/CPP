@@ -147,3 +147,44 @@ only when the ladder closes.
 **Rung status:** a_s = 0.04 COMPLETE (archived RV, 4 chains);
 a_s = 0.02 COMPLETE (RV-CORE + 2 new, 3 sizes); a_s = 0.01 NEXT
 (4 chains, seeds 20260807–10); a_s = 0.005 queued (seeds 20260811–14).
+
+---
+
+## LEG 4 — X4 rung a_s = 0.01 COMPLETE (Patch 2791)
+
+**Executed 2026-07-24 under the frozen 2786 prereg §2 + PA-1. Data:
+`data/x3x4/X4-01-{432A,432B,686,1024}.json.gz`.**
+
+**Gate v2 (BLOCKING, quoted):** X4-01-432A/B — 400 checks each,
+worst rel 7.261e−13, antisym 1.776e−14 → PASS. X4-01-686 — worst
+9.333e−13 / 1.528e−14 → PASS. X4-01-1024 — worst 1.994e−12 /
+2.842e−14 → PASS.
+
+**Chains (seeds 20260807–10):** 432A/B: 2000 sweeps, 320 samples
+each, acc 0.90. 686: 3000 sweeps, 480 samples, acc 0.90. 1024:
+3000 sweeps, 480 samples, acc 0.90. S-drift ≤ 2.7e−12 at every
+boundary. PA-1 per-sample S_zz archived, all four.
+
+**Rung-level F1 (frozen extraction + frozen 24×2000 bootstrap; DATA
+ONLY):** 432A 0.6919 ± 0.0297; 432B 0.7315 ± 0.0237; 686
+0.7637 ± 0.0226; 1024 0.7233 ± 0.0169.
+
+**Same-font observation (no conclusion; battery reserved for ladder
+close):** the F1 ratio exhibits a STRONG a_s trend — ~0.90 at
+a_s = 0.02 → ~0.69–0.76 at 0.01, i.e. the apparent below-DH deficit
+DEEPENS as the soft core is removed. Two frozen-battery facts bear
+on reading this and are stated now so no one reads the rung alone:
+(i) the frozen F1 window's lower edge is 2a_s, so finer rungs admit
+more short-range structure into a single-Yukawa fit — an
+extraction/window-edge mechanism that would produce exactly this
+trend without any asymptotic physics; (ii) the committed
+sliding-window map uses FIXED PHYSICAL r_min values across rungs,
+and the two-component form test separates a transient short-range
+mode from an asymptotic shift — these are the designed
+discriminants. PR2's extrapolation quantity κ_eff comes from the
+joint (a_s, 1/L) surface at ladder close, not from any rung read
+alone.
+
+**Rung status:** 0.04 COMPLETE, 0.02 COMPLETE, 0.01 COMPLETE;
+0.005 NEXT (final rung, seeds 20260811–14), then the full frozen
+battery + PR2 evaluation.
