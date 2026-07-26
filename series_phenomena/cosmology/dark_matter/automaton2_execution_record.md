@@ -220,3 +220,104 @@ channel for both.
 governance, the WIN PACKET now assembles for the five seats
 (`conv001_2026-07_automaton_s4x_win_packet.md`) carrying the banked
 results and the open questions.
+
+---
+
+## LEG 5 — CRYSTALLITE DIAGNOSTIC CAMPAIGN: the fault is located in the MODEL REGIME, not the founder's physics (Patch 2810)
+
+**Executed 2026-07-25 at founder direction (win packet HELD), with
+predictions frozen first (`automaton2_crystallite_diagnostic_predictions.md`,
+Patch 2809). Scripts: `code/2809_scale_scan.py` + session diagnostics.
+Reasoning: `reasoning/2810.md`. Characterization only — no verdict
+class, no promotion consequence.**
+
+### Findings against the frozen predictions
+
+**P-X1 (floor census): FALSIFIED AS STATED, CONFIRMED IN SUBSTANCE.**
+75% of static CPs are rounding-limited (band was > 80%). Decisive
+detail: **0% of static CPs are force-free** — every one feels a
+field, mean committed displacement 0.397 GP, just under the ½-GP
+snap. They are not at rest; they are *quantized* to rest.
+**Premise correction (same-font):** in the G3RR final state the
+28-CP sheet is NOT static — all 28 members moved within 200 Moments.
+The genuinely frozen population is the 126 parked singletons. The
+"static crystallite" picture of leg 4 held only for the 2803 seed.
+
+**P-X4 (scale test): CONFIRMED, dramatically.** At IDENTICAL density
+(fill 1/4, N = 1728): R = 3 (13 CPs per PSR) → mover 0.000, a single
+1447-CP condensate. R = 6 (325 CPs per PSR) → **mover 1.000, max
+cluster size 1 — not one cluster anywhere.** Corrected-fill runs at
+R = 6: fill 1/8 (160 CPs/PSR) mover 1.000, no clusters; fill 1/32
+(80 CPs/PSR) mover 0.968, no clusters. **Condensation, crystallites,
+sheets, and parked singletons are ALL artifacts of running with
+PSR/spacing ≈ 1.5. With a Planck sphere that actually contains a
+Sea, no structures form at any tested density — exactly the founder's
+stated expectation.** (Disclosed: the scan's first two runs were
+mislabeled 1/32 by a fill-arithmetic error; they were fill 1/4. The
+error is corrected in the committed script and the comparison it
+supports — same density, two R values — is unaffected.)
+
+**Mechanism decomposition (fill 1/8):** R = 3 — ratio |SSV_net|/
+SSV_abs mean 0.154 against a floor of 0.5/R = 0.167, so only 40%
+clear the floor, median displacement 0.00 GP. R = 6 — ratio mean
+0.364 against floor 0.083, 100% clear, displacement 2.12 GP. Larger
+PSR both raises the ratio and lowers the floor in ratio-space; the
+frozen phase at R = 3 is a quantization trap, not a bound state.
+
+**P-X5 (turnover): NOT CONFIRMED — and the reason is a NEW and more
+important finding.** At R ≥ 6 there are no structures to turn over,
+but the motion is not thermal either: **velocity autocorrelation is
+exactly −1.000 at lag 2 and +1.000 at lag 20 — every CP flipping in
+rigid global lockstep, a synchronous-update period-2 limit cycle**
+(displacement mean = median = 2.12 GP, zero spread). R = 3 movers do
+the same at tiny amplitude. **No tested uniform-PSR configuration
+thermalizes; the automaton lands on limit cycles, not chaos** — so
+the founder's formation–dissolution equilibrium has never actually
+been tested, because the thermal bath it presupposes was never
+produced.
+
+**The candidate desynchronizer — and it is the founder's own
+physics.** The uniform PSR = R is a worker simplification (A1 DR-2,
+carried into A2); C22/the founder's rule makes PSR
+SSV_abs-dependent. Diagnostic proxy (PSR ∈ {4, 6, 8} bucketed by
+local SSV_abs, declared a proxy, not doctrine): mover 1.000, no
+structures, **displacement spread appears (mean 3.21 ± 1.59 GP vs
+2.12 ± 0.00 uniform) and the lockstep degrades from exactly −1.000
+to −0.902 at lag 2, with lag-1 autocorrelation collapsing to +0.012
+and lag-3 to −0.075.** Variable range demonstrably begins to
+desynchronize the Sea — a partial, encouraging, not-yet-thermal
+result.
+
+**P-X2 (perturbation/metastability): NOT RUN.** P-X3 (sub-GP
+accumulation, a declared doctrine deviation): **NOT RUN.** Both were
+frozen against the structures that the scale test has now shown to
+be regime artifacts; running them would characterize an artifact.
+Reported unrun rather than quietly dropped.
+
+### Answer to the founder's question (model / limits / expectations / physics)
+
+**The fault is the MODEL and its LIMITS; the founder's physics stands
+untested rather than contradicted.** Three worker-side causes, in
+order of severity: (1) **no scale separation** — PSR/spacing ≈ 1.5
+where the framework needs ≫ 1; this alone manufactures every
+structure we have been studying; (2) **displacement quantization** —
+the ½-GP snap converts residual fields into exact stasis, creating
+absorbing states with no analogue in a continuum Sea; (3) **uniform
+PSR** — a simplification that removes the SSV_abs-dependent range
+variation which is the founder's own mechanism and which the proxy
+test shows begins to break the synchronous lockstep. The founder's
+expectation (small stable population maintained by
+formation/dissolution balance) requires a thermal tail; no tested
+configuration produced one; the framework's prediction therefore
+remains open, and the next automaton generation must earn a thermal
+bath before any crystallite population is meaningful.
+
+### Recommended next axis (worker recommendation; founder rules)
+
+AUTOMATON-3 with (i) the founder's SSV_abs → PSR law as *physics*
+rather than proxy (founder question: the exact law), (ii) PSR ≫
+spacing by construction, (iii) sub-GP position accumulation or an
+explicitly quantized-displacement justification, and (iv)
+thermalization as the FIRST gate — no crystallite, Gibbs, or inertia
+claim until velocity statistics show a tail rather than a limit
+cycle.
