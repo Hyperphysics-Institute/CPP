@@ -57,3 +57,63 @@ UNCHANGED — in particular the 0.20 mover band stays even though
 observed number is fitting the test to the answer. P-A2-1 stands
 CONFIRMED regardless of G3. The 79.5% untouched; no panel action
 (win packet assembles when the arc completes).
+
+---
+
+## LEG 2 — G3R (dilution ladder): BOTH FILLS FAIL AS FROZEN — STOP; phenomenology resolved to LIVE GAS + INERT CRYSTALLITES; a scale hypothesis registered for analysis before any further axis (Patch 2804)
+
+**Executed 2026-07-25 under the frozen 2803 ladder. Both-fail branch
+fires; per the freeze, its language is corrected same-font by the
+data: this is NOT "no live gas phase" — the gas phase is
+emphatically alive.**
+
+**G3R fill = 1/32 (quoted):** mover 0.432 (PASS ≥ 0.20); clusters
+≤ 2: 76% (PASS ≥ 60%); max cluster 21 (FAIL ≤ 8). Census {1: 164,
+12: 1, 19: 1, 21: 1}. **G3R fill = 1/16 (committed leg, seed
+2804):** mover 0.096 (FAIL); clusters ≤ 2: 92% (PASS); max 36
+(FAIL). Census {1: 396, 36: 1}. **VERDICT: FAIL at both rungs; no
+production; no Gibbs battery ran.**
+
+**Droplet-fate diagnostic (4000 further Moments at 1/32):** the
+three droplets are EXACTLY static — sizes 21/19/12 and free count
+164 unchanged to the CP — neither growing nor evaporating: inert
+A1-class micro-crystals embedded in a gas whose free CPs move at
+~57% per Moment. Two-phase structure: **live gas + dead
+inclusions.** The bare rule's gas is self-sustainingly agitated;
+its condensed phase is kinetically frozen (droplet interiors have
+no jostling neighbors to receive C24's thermalized KE, and no
+environmental fluctuation cracks them on these timescales).
+
+**SCALE HYPOTHESIS (registered for analysis BEFORE any further
+axis; checkable from committed checkpoints, no new runs needed):**
+the cluster definition (contact at ≤ 1.5 lattice units) presumes
+bonded DPs are contact pairs — but in CPP's own scales the ZBW
+amplitude is Compton-class, i.e., ENORMOUS in GP units, and C28's
+"very shallow" oscillation is shallow relative to that scale, not
+relative to one lattice spacing. **The 164 "free" CPs may BE the
+bonded ZBW Sea** — dedicated cycling partners at multi-GP
+separation, which a contact census misclassifies as unbonded gas.
+Decisive tests, queued as the next analytical leg: (i) unlike-pair
+correlation of the live gas (preferred partner distance?); (ii)
+partner persistence (does each + CP keep the SAME nearest − partner
+across Moments — dedicated bonds — or exchange constantly —
+plasma?); (iii) per-CP displacement autocorrelation (the ZBW cycle
+signature). If persistence is high at a preferred separation, the
+live phase is the founder's bonded Sea seen at the right scale, and
+the [W] cluster bands were operationalized at the wrong one.
+
+**Founder questions surfaced (PD-006; no worker resolution):** (Q-a)
+Does C30's chaining prohibition condemn compact droplets, or
+specifically chain-geometry polymers? The ≤ 8 cap was a [W] proxy.
+(Q-b) Is gas + inert-crystallite coexistence acceptable Sea
+phenomenology (condensation nuclei), or must the true Sea evaporate
+its droplets — and if the latter, is the C27 rogue-wave flux the
+intended evaporation channel? These await the founder AFTER the
+scale-hypothesis analysis, which may dissolve part of them.
+
+**Disposition:** STOP honored; no bands changed at any point (the
+0.20 band was retained through a 0.171 near-miss and is now
+vindicated by the 0.432 at 1/32); next leg = the three
+scale-hypothesis analyses on committed checkpoint data, then either
+a re-operationalized G3 (only with founder-ratified physics
+grounds) or the founder questions as posed.
