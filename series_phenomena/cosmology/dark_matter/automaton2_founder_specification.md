@@ -1,4 +1,19 @@
-# AUTOMATON-2 FOUNDER SPECIFICATION — **CANDIDATE, AWAITING FOUNDER RATIFICATION**
+# AUTOMATON-2 FOUNDER SPECIFICATION — **RATIFIED AND FROZEN (Patch 2801)**
+
+**RATIFICATION RECORD: the founder ratified this specification
+verbatim on 2026-07-25 ("Accepted. Please proceed."), with no
+wording amendments. The CANDIDATE status below is preserved as
+drafting history; C19–C30 are now the governing commitments, frozen
+under the standing rider discipline (revisable only by founder
+ruling + fresh patch). SF-6 inertia-coefficient provenance,
+excavated per C23: OPEN-FP-6-INERTIA-1, Patch 2496 — F = κa emerges
+Momentwise from DP-sea back-reaction with the Aristotelian
+primitive unmodified; κ = (2/3)·U_pol/c² (open cloud,
+statics-predicted, six independent dynamical confirmations); Laue
+coefficient exactly 1 (closed patterns); Newton I emergent with
+drain τ = κμ; blind-firewalled from the SR track. P-A2-2 therefore
+seeks the SECOND, fully-emergent derivation of a result already
+pinned once independently.**
 
 **Patch 2800. Drafted 2026-07-25 by the worker from the founder's
 rulings of the 2026-07-24/25 session (the ZBW-emergence dialogue),
