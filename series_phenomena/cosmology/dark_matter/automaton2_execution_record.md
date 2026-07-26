@@ -174,3 +174,49 @@ frozen. Registered for the density-dependence characterization.
 - **R-2:** the droplet ruling as previously posed (Q-a/Q-b): do
   inert compact crystallites violate C30 (a CHAINING prohibition),
   and is Sea + crystallite coexistence acceptable phenomenology?
+
+---
+
+## LEG 4 — G3RR: FAIL AS FROZEN (B3, B4) — ARC AT NATURAL PAUSE; one freeze defect disclosed; the crystallite is a PLANAR SHEET (Patch 2808)
+
+**Executed 2026-07-25 under the frozen 2807 bands (R-1/R-2
+authority). Quoted:** B1 dedication 100% of mobile CPs (PASS ≥ 60%);
+B2 mover 0.281 (PASS ≥ 0.20); B3 droplet-phase mass 58% (FAIL
+≤ 30%), growth +0%; B4 worst gyration aspect ~4.9e8 (FAIL ≤ 6).
+Census: 188 singletons + one 28-CP cluster. **VERDICT: FAIL; STOP
+honored; production, ballistic test, and Gibbs battery remain
+gated-out (honestly: NOT run).**
+
+**DEFECT DISCLOSED (D-G3RR-1, same-font):** the [W] phase
+definition ("static = droplet phase") conflated two populations:
+the 28-CP crystallite AND ~97 PARKED SINGLETONS — isolated CPs
+immobile for the whole final quarter, stuck where SSV_net rounds
+below the displacement floor. The R-2 ruling concerned
+crystallites; under a crystallite-only reading the droplet mass is
+28/216 = 13% (would PASS B3, growth 0%). The frozen verdict stands
+as written; the defect is recorded for any successor gate.
+
+**FINDING (B4 is real, and remarkable):** the crystallite's minimal
+gyration eigenvalue is ~0 — it is a PLANAR SHEET: a two-dimensional
+± alternating facet, not a compact blob and not a 1D chain. The R-2
+compactness reasoning did not anticipate 2D order; whether a salt-
+plane facet violates C30's chaining prohibition is a genuine
+doctrine question now backed by a concrete object.
+
+**STATE OF THE BARE RULE (the arc's consolidated finding):** at
+every tested density the bare Moment rule produces a THREE-component
+mixed state: (1) a live, 100%-dedicated ZBW-cycling bonded Sea
+(C26/C28/C25 confirmed by measurement); (2) parked singletons
+(rounding-floor stasis of isolated CPs); (3) planar ± crystallites
+(inert, bounded, 2D-ordered). A predominantly-live Sea did not
+emerge at any tested configuration. Open physics questions for the
+founder and/or panel: the parked-singleton population (is the
+displacement floor the physical PSR quantization or a simulation
+artifact?), the 2D sheet's doctrinal status under C30, and whether
+C27's rogue-wave flux at higher density is the intended melting
+channel for both.
+
+**Disposition:** arc at NATURAL PAUSE; per the founder's economy
+governance, the WIN PACKET now assembles for the five seats
+(`conv001_2026-07_automaton_s4x_win_packet.md`) carrying the banked
+results and the open questions.
