@@ -117,3 +117,60 @@ vindicated by the 0.432 at 1/32); next leg = the three
 scale-hypothesis analyses on committed checkpoint data, then either
 a re-operationalized G3 (only with founder-ratified physics
 grounds) or the founder questions as posed.
+
+---
+
+## LEG 3 — SCALE-HYPOTHESIS ANALYSIS: **CONFIRMED — THE BONDED ZBW SEA IDENTIFIED** (Patch 2805)
+
+**Executed 2026-07-25 on a 4000-Moment full trajectory recorded from
+the committed 1/32 G3R state (archived:
+`data/x3x4/automaton2_scale_traj.pkl.gz`). Gas subset: 102 CPs
+(52 ± pairs); static droplet subset: 114 CPs.**
+
+**Test (ii) — partner persistence (the decisive test): 100.0% at
+EVERY lag — dt = 1, 10, 100, 500, 1000, 2000, 4000 Moments — against
+a 2.0% random-assignment null. 52 of 52 pairs keep the SAME
+dedicated unlike partner for the entire window. C26's dedicated
+semi-persistent DP bond: EMPIRICALLY CONFIRMED.**
+
+**Test (iii) — the ZBW cycle: pair separation oscillates through
+SUPERPOSITION — range [0.0, 2.8] GP, mean 1.72, per-pair std 1.19 —
+periodically (separation autocorrelation returning to 0.97–0.99
+every ~10 Moments; velocity autocorrelation exactly 1.000 at lag
+12). The turning radii sit at the lattice's √2 and 2√2: a quantized
+swing superposition ↔ √2 ↔ 2√2. C28's shallow dedicated-pair
+oscillation and C25's superposition-exit: EMPIRICALLY CONFIRMED.
+D-A2-2's ZBW spectral signature is thereby delivered (period 10–12
+Moments at this density/R).**
+
+**Test (i) — pair correlation: the gas's unlike/like ratio is
+effectively infinite at r ≈ √2 and 2√2 and background elsewhere —
+the gas contains NO like-charge contact structure and consists
+entirely of unlike pairs at the ZBW turning radii.**
+
+**REFINED PICTURE OF RECORD:** the automaton's two phases are (1)
+**the founder's bonded ZBW Sea** — dedicated ± pairs cycling through
+superposition with lattice-quantized amplitude — and (2) inert
+crystallite droplets (the A1 quench in miniature). The G3/G3R
+"FAIL"s were the [W] contact-census misreading phase (1) as unbonded
+gas: pairs mid-swing (beyond 1.5 GP) counted as singletons. The
+frozen verdicts stand as written (bands are bands), but their
+operationalization is now demonstrated wrong-scale by measurement.
+
+**Same-font tension noted (not resolved):** partner persistence of
+100% over 4000 Moments means ZERO partner switching at this density
+— C27's rogue-wave dance is ABSENT here. The switching engine
+evidently requires higher density (more overlapping far fields) or
+droplet-boundary dynamics; at 1/32 the Sea is bonded but socially
+frozen. Registered for the density-dependence characterization.
+
+**Founder requests (PD-006; two rulings, now sharp and small):**
+- **R-1:** ratify a re-operationalization of the D-A2-1 aliveness
+  gate in C26's OWN terms — e.g., dedicated-bond fraction (CPs in
+  ≥ N-Moment persistent unlike pairs) ≥ 60%, mover fraction ≥ 0.20,
+  and max STATIC cluster ≤ 8 — so that G3RR tests the physics C26
+  actually states. (Worker will not re-band after seeing data
+  without founder authority; this is the fitting-the-test guard.)
+- **R-2:** the droplet ruling as previously posed (Q-a/Q-b): do
+  inert compact crystallites violate C30 (a CHAINING prohibition),
+  and is Sea + crystallite coexistence acceptable phenomenology?
