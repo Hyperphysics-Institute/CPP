@@ -78,3 +78,69 @@ is NOT part of the committed dataset — no committed leg uses seed
 20260833 at those lengths. It is disclosed because it was observed
 before this document was frozen, per the 2784 §0 precedent. The
 committed legs below are blind.
+
+---
+
+## EXECUTION RECORD (Patch 2822) — **PR3-R VOIDED BY ITS OWN CONTROLS**
+
+**Executed 2026-07-26 under the frozen protocol. Four legs
+(A = −1.32, −0.66, +0.66, +1.32; seeds 20260831–34), acceptance 0.94
+throughout, origin-constrained weighted slope fit.**
+
+**Results:**
+
+| shell | slope S | Λ | |Λ−1|/err |
+|---|---|---|---|
+| n²=1 (driven) | −3.417 ± 0.499 | **2.135 ± 0.312** | 3.64σ |
+| n²=2 (driven) | −1.416 ± 0.585 | not computable (see D-PR3R-3) | — |
+| n²=3 (driven) | −2.466 ± 0.713 | not computable (see D-PR3R-3) | — |
+| **n²=4 CONTROL (undriven)** | **−1.452 ± 0.696** | must be 0 | **2.08σ from zero** |
+
+**VERDICT: VOIDED — no PR3 verdict is drawn.** Three independent
+grounds, all frozen in advance, all disclosed:
+
+- **D-PR3R-1 — CROSS-TALK CONTROL FAILED.** The undriven n² = 4 shell
+  responded at −1.452 ± 0.696 (2.08σ from zero), a magnitude
+  comparable to the driven shells n² = 2 (−1.416) and n² = 3
+  (−2.466). The frozen text: "A nonzero n² = 4 response invalidates
+  the multi-mode assumption and voids the leg." **It does.** The
+  control responding at driven-shell magnitude means the measured
+  "responses" are not demonstrably mode-specific; a common systematic
+  is present. **Most probable cause (diagnosis, not excuse): 200
+  equilibration sweeps is insufficient, leaving a drifting initial
+  transient common to all modes** — the frozen chain length was set
+  by compute budget, as the prereg itself warned.
+- **D-PR3R-2 — LINEARITY CHECK FAILED at one point** (n² = 2,
+  |A| = 1.32: odd-symmetry residual 2.02σ against a ≤ 2σ bar). **And
+  the prereg is internally inconsistent about the consequence:** §1
+  says a linearity failure ⇒ "NONLINEAR-REGIME, no verdict"; §3 lists
+  it under PR3-FAIL. **This is the third jointly-inconsistent freeze
+  in this campaign** (after 2784 D1 and 2820 D-PR3-1) and is recorded
+  as such. The protective reading is applied — no verdict — because a
+  nonlinear regime means the linear-response identity under test does
+  not apply, so failure of the identity cannot be concluded.
+- **D-PR3R-3 — PROTOCOL GAP: the unperturbed S_zz references for
+  n² = 2 and n² = 3 were never measured.** The prereg asserted they
+  would be "measured in the same run family"; no such run was
+  specified or executed. Λ is therefore computable for only ONE of
+  three driven shells — which alone fails PR3's parent requirement of
+  ≥ 3 wave numbers, independent of everything above.
+
+**THE NUMBER I AM NOT CLAIMING.** The n² = 1 result, Λ = 2.135 ±
+0.312, is 3.64σ from unity — read naively it is a *factor-of-two
+violation of the fluctuation-response bridge*, which would be a major
+finding directly relevant to PR3, PR6, PR7, and to every screening
+result that assumes the bridge. **It is not claimed, not reported as
+a finding, and must not be cited.** A shell whose companion control
+is simultaneously showing a spurious response of comparable size
+cannot support a claim of this magnitude; the most likely reading is
+that both are the same under-equilibration artifact. Extracting the
+exciting number from a run whose controls failed is precisely the
+error the controls exist to prevent.
+
+**Successor requirements (for a fresh prereg; NOT chosen here):**
+equilibration long enough that the cross-talk control is consistent
+with zero at ≤ 1σ **before** any driven measurement is read; explicit
+unperturbed S_zz measurement for every driven shell; and a single
+internally-consistent statement of the linearity-failure consequence.
+PR3 remains **PARTIAL**; PR6's external-field leg remains **OPEN**.
