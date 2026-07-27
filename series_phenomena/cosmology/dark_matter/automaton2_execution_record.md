@@ -321,3 +321,110 @@ explicitly quantized-displacement justification, and (iv)
 thermalization as the FIRST gate — no crystallite, Gibbs, or inertia
 claim until velocity statistics show a tail rather than a limit
 cycle.
+
+---
+
+## LEG 6 — THE EXAMINATION SEQUENCE: lock-in traced to ABSENT MOMENTUM; the founder's kinetic mechanism VALIDATED IN PROXY, with its predicted artifact found (Patch 2811)
+
+**Executed 2026-07-25/26 at founder direction (document the
+examination sequence). Script: `code/2811_velocity_proxy_diagnostic.py`.
+Reasoning: `reasoning/2811.md`. All runs DIAGNOSTIC — no verdict
+class, no promotion consequence, no doctrine change. C21 (bit content)
+and C23 (no velocity memory; inertia in Sea arc configuration) STAND;
+the velocity vector used below is a LABELED PROXY for arc-stored
+inertia, run under the founder's explicit approval and with his stated
+caveat carried: a hard-coded velocity cannot represent all
+energy-transfer and axis-change variables exactly, so artifacts are
+possible — and one was found (see §4).**
+
+### §1 — Sequence step 1: random ZBW phase/axis initialization (founder's proposal)
+Paired-DP init with random ZBW phase (superposed/√2/2√2) and random
+3D axis; deterministic evolution thereafter; R = 6, N = 864, fill 1/8.
+**Result: the founder's predicted heterogeneity APPEARS and PERSISTS**
+— speed spread CV = 0.51 vs EXACTLY ZERO under uniform init; no
+clusters at all (census: 864 singletons). **But lock-in returned:**
+lag-2 velocity autocorrelation drifted −0.838 (early) → **−0.969**
+(late). Diversity without exchange.
+
+### §2 — Sequence step 2: the time-resolved regime (is short-window periodicity just fast ZBW, as the founder proposed?)
+M = 64, R = 6, 40 sparse DPs, separation ≈ 8 GP ≫ step ≈ 2.7 GP, so a
+ZBW cycle spans many Moments. **Two corrections to the worker's own
+prior reading:** (a) the attractor is **period-4**, not period-2
+(autocorr ≈ 0 at odd lags, ≈ −0.9 at lags 2, 10, 50 — all ≡ 2 mod 4);
+the earlier "period-2" claim was itself undersampled. (b) The founder's
+aliasing hypothesis is therefore PARTLY RIGHT — resolution was
+misleading me — but does not dissolve the finding, because:
+**DP CENTERS ARE PINNED. MSD scaling exponent α = 0.14** (2 = ballistic,
+1 = diffusive, 0 = pinned); centers jitter 30–140 GP² over 1200 Moments
+with no growth trend. **A center that cannot coast cannot collide,
+cannot rebound, and cannot slowly re-orient anything — so the
+randomization channel the founder identifies (multibody kinetic
+collision directing SSV_net) has no stage to act on in the model as
+built.** The gap is not a missing degree of freedom; it is missing
+MOMENTUM: C23 stores inertia in the Sea's arc configuration, but the
+model's state vector (positions + scalar charge field; C21 bits carry
+charge/polarity/origin only) contains no rotational or orientational
+state for that storage to inhabit.
+
+### §3 — Sequence step 3: the velocity proxy (founder-approved) — **THE MECHANISM VALIDATES**
+[W] proxy law: v ← v + η·σ_c·(SSV_net/|SSV_net|)·(|SSV_net|/SSV_abs);
+x ← x + v (continuous positions — which also removes the ½-GP snap
+floor); collisions within 1.0 GP → elastic exchange + energy-conserving
+random re-orientation of the pair's relative velocity (the founder's
+"varying the DP ZBW oscillation axis with each collision").
+
+| coupling η | KE growth | MSD α | speed CV | collisions |
+|---|---|---|---|---|
+| 0.05 | 49× | 0.31 | 0.294 | 232 |
+| 0.01 | 2.2× | 0.76 | 0.409 | 459 |
+| 0.002 | 1.2× | 0.73 | 0.460 | 268 |
+
+Long weak-coupling run (η = 0.004, 60 DPs, 2500 Moments):
+- **LOCK-IN BROKEN.** Velocity autocorrelation decays smoothly
+  (1.000 → 0.999 → 0.995 → 0.981 → 0.946 at lags 1/3/10/25/50) with
+  **no alternation whatsoever** — the period-4 attractor is gone.
+- **KINETIC TRAJECTORIES APPEAR.** MSD α = 0.76 (vs 0.14 pinned) —
+  motion is now transport, approaching diffusive.
+- **COLLISIONS OCCUR:** 797 events with axis re-randomization.
+- **MAXWELL–BOLTZMANN SPEED STATISTICS.** CV = 0.513 against the 3D
+  MB value 0.422; decile χ² vs a mean-matched MB distribution = 14.7
+  on 9 dof — **MB-CONSISTENT**. (The η-scan brackets it: CV = 0.409
+  and 0.460 at η = 0.01 and 0.002.)
+
+**The founder's mechanism is validated in proxy: given momentum, the
+kinetic trajectories, collisions, rebounds, and thermal speed
+statistics he specified all appear, and the lock-in he said should be
+impossible indeed becomes impossible.**
+
+### §4 — The artifact the founder predicted, found and named
+**Energy is not conserved: slow, roughly LINEAR heating** (KE last-half
+/ first-half = 3.87× at η = 0.004; 49× at η = 0.05). Diagnosed cause:
+the proxy applies field-derived momentum to CPs with **no back-reaction
+on the field**, which is regenerated each Moment from positions alone —
+an infinite energy reservoir. This is precisely the founder's stated
+concern ("a hard-coded velocity … will not produce an exactly accurate
+representation of all the variables, and so something will be
+misrepresented"). Consequence for interpretation, stated plainly: the
+proxy demonstrates that **momentum unlocks the dynamics and generates
+thermal statistics**, but it is a DRIVEN system, not a closed one, so
+it CANNOT be used to test C24's fluctuation–dissipation balance or
+P-A2-3 (Gibbs). Those require the doctrine-true arc-inertia
+implementation, in which the Sea both stores and returns the momentum.
+
+### §5 — Consolidated state of the investigation
+1. Emergent Coulomb: CONFIRMED twice (unaffected by everything since).
+2. Bonded ZBW Sea with 100% dedicated partners: CONFIRMED (leg 3).
+3. Crystallites/sheets/parked singletons: REGIME ARTIFACTS of
+   PSR/spacing ≈ 1.5 and the ½-GP snap (leg 5) — the founder's
+   formation–dissolution equilibrium remains untested, not contradicted.
+4. Lock-in: traced to ABSENT MOMENTUM, not to missing degrees of
+   freedom (this leg) — and broken the moment momentum is supplied.
+5. The founder's kinetic-randomization mechanism: VALIDATED IN PROXY,
+   with MB speed statistics as the strongest single indicator.
+6. Remaining obstacle, precisely located: the model has nowhere to
+   store arc inertia. Founder's own assessment recorded — a faithful
+   implementation "would require FEM since every CP of every DP … is
+   also carrying the arc momentum for other DPs," i.e. computationally
+   very intensive; whether inertia is irreducibly collective (and thus
+   inaccessible at any hostable lattice size) is now the open
+   structural question for AUTOMATON-3 chartering.
