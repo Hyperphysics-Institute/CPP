@@ -1,4 +1,4 @@
-# CONV-001 WIN PACKET — the AUTOMATON arc + the closed S4-X chain (Patch 2808)
+# CONV-001 WIN PACKET — the AUTOMATON arc (CLOSED) + the closed S4-X chain (Patch 2808; updated 2812 at arc closure)
 
 **Scope: consolidated results since the S4-X consolidated
 adjudication (2794). Artifacts: automaton1/2 charters, specs
@@ -47,6 +47,24 @@ data/x3x4/. Questions W1–W5 at the end.**
    geometry; G3RR phase definition); the Gibbs battery and
    ballistic test remain gated-out and NOT run.
 
+## Added at arc closure (Patch 2812 — see `automaton_arc_closure.md`)
+
+7. **THE KINETIC MECHANISM VALIDATED IN PROXY.** Lock-in was traced
+   not to missing degrees of freedom but to ABSENT MOMENTUM (DP
+   centres pinned, MSD exponent 0.14). With momentum supplied as a
+   labelled proxy for C23 arc inertia: transport appears (0.14 →
+   0.76), 797 collisions occur, the period-4 attractor is destroyed
+   entirely, and **Maxwell–Boltzmann speed statistics emerge**
+   (decile χ² = 14.7 on 9 dof; CV bracketed 0.409–0.513 vs MB 0.422).
+8. **THE ARC'S OWN LIMITS, BINDING.** The proxy is a DRIVEN system
+   (KE grows 3.9–49×; no damping parameter exists — η is a coupling
+   strength): therefore no temperature, therefore **no DP density
+   calibration by any route**, and the MB result may NOT be cited as
+   satisfying PR4/P-A2-3. Inertia, Gibbs, and fluctuation–dissipation
+   await an FEM-class implementation (the founder's assessment,
+   recorded). Crystallite/sheet/chaining observations are regime
+   artifacts (PSR/spacing ≈ 1.5) and transfer nowhere.
+
 ## Questions for the seats
 
 **W1.** Ratify the emergent-Coulomb pair (A1 V-1R + A2 G1) as a
@@ -61,11 +79,17 @@ and the A1-quench-as-T→0 reinterpretation?
 **W4.** PR2-PHYS UNRESOLVED disposition: direct a statistics
 extension (longer chains, existing geometries) to resolve the 3%
 band, or hold?
-**W5.** The open physics fork (advisory to the founder, who rules):
-parked singletons (displacement-floor physics vs artifact), the
-planar sheet's C30 status, and density-activated C27 switching as
-the candidate melting channel — which axis should the successor
-gate charter prioritize?
+**W5.** *(Superseded and replaced at arc closure — the worker's own
+diagnostic answered the original W5: all three phenomena are regime
+artifacts.)* **W5'.** Ratify the arc closure and its scope statement
+(`automaton_arc_closure.md`): banked findings §1, the FEM boundary
+§2, and binding limitations L-1..L-4 — in particular L-1, that no DP
+number density may be extracted from this arc by any route?
+**W6.** Advisory: does the automaton result set (emergent Coulomb
+under two relays + the measured bonded ZBW Sea, both independent of
+the dark-matter machinery and of the momentum question) warrant a
+standalone paper, and if so should it lead with the Coulomb result
+or the ZBW-Sea result?
 
 RETURN FORMAT: per seat, UPHOLD/OVERTURN/AMEND per question +
 execution-integrity challenges per the standing authentication
