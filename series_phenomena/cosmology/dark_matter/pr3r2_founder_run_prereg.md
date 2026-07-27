@@ -73,3 +73,38 @@ outcome above was fixed before any PR3-R2 number existed. The worker
 will not execute this run and will analyse only what the founder
 returns. A discovered defect voids the affected leg and requires a
 fresh prereg, same-font.
+
+---
+
+## AMENDMENT (Patch 2825) — the §1.1 control GATE is withdrawn as defective; C-CTRL is unchanged and moves to analysis
+
+**Founder's partial run of 2026-07-27 (v1 script, cancelled at chain 4)
+exposed a defect in the gate, NOT in the protocol.** Observed control
+block means: chain A=−0.66 → {−2.249, −0.942, +6.327, −1.314, +1.014};
+chain A=+0.66 → {+4.298, +4.317, +1.676, −3.815, −1.740}, each quoting
+an internal error of ±0.5–1.0. **A quantity whose 200-sweep block means
+span ±6 while reporting ±0.7 errors is a SLOW MODE**: its
+autocorrelation time greatly exceeds the probe length, so the naive
+std/√n error understates the true uncertainty by ≈ 4× (implied τ ≈ 16
+sweeps). The gate therefore did not test equilibration — it passed
+whenever the wandering control happened to drift near zero, and chain 4
+never passed in five blocks purely by luck of phase.
+
+**This also retroactively reinterprets D-PR3R-1** (Patch 2822): the
+2.08σ "cross-talk" was most probably the same slow fluctuation
+evaluated with a naive error, not mode contamination. That leg's VOID
+stands as recorded; its *diagnosis* is corrected here.
+
+**Amendment (worker-stratum only; the frozen §3 outcome table and every
+condition in §2 are UNCHANGED):** the §1.1 iterative control gate is
+WITHDRAWN. Equilibration is a fixed 2000 sweeps per chain. **C-CTRL is
+evaluated exactly as frozen — on the production data, with the same
+24-block × 2000-resample bootstrap used for every other quantity**,
+which is autocorrelation-aware by construction. No condition, bar, or
+outcome changes; only the point of evaluation moves from a defective
+pre-production probe to the committed estimator.
+
+**Power restatement with the measured τ:** at τ ≈ 16 and 6000
+production sweeps, effective samples ≈ 375, per-leg error ≈ 0.39,
+four-point slope error ≈ 0.19, **Λ error ≈ 0.12** — comfortably inside
+the frozen 0.35 bar. The protocol was adequate all along.
