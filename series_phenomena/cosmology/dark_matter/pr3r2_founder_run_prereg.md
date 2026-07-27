@@ -108,3 +108,72 @@ pre-production probe to the committed estimator.
 production sweeps, effective samples ≈ 375, per-leg error ≈ 0.39,
 four-point slope error ≈ 0.19, **Λ error ≈ 0.12** — comfortably inside
 the frozen 0.35 bar. The protocol was adequate all along.
+
+---
+
+## EXECUTION RECORD (Patch 2826) — **PR3-PASS**
+
+**Executed by the FOUNDER on ClearPC, 2026-07-27, v2b runner (Patch
+2825). Five chains, 2000 eq + 6000 production sweeps each, acceptance
+0.94 throughout, ~470 s per chain (39 min total — no GPU required;
+the v2 vectorisation delivered what the CUDA path was supposed to).
+Worker did not execute; analysis is the frozen §3 table applied to the
+returned report.**
+
+### DEFECT DISCLOSED — script report label (D-PR3R2-1), and it is verdict-critical
+
+The runner records `R[j] = Σ_i z_i cos(k_j·x_i)` — which is
+**Re ρ_k**, not ρ_k — and the A = 0 chain therefore measures
+**⟨(Re ρ_k)²⟩**. The report block labels this line
+`UNPERT <|rho|^2>`, which is **WRONG**: ⟨|ρ_k|²⟩ = 2⟨(Re ρ_k)²⟩.
+
+Consequently the correct linear-response prediction against the
+measured reference is **slope = −β⟨(Re ρ_k)²⟩**, with **no factor of
+½** (the ½ in §2's formula belongs with ⟨|ρ_k|²⟩, a quantity this run
+never reports). **Had the mislabel been taken at face value, every Λ
+would have doubled to 1.26 / 1.82 / 2.04 and the leg would have read as
+a factor-of-two violation of the fluctuation-response bridge — an
+apparent major discovery produced entirely by a units error in my own
+print statement.** The label is a reporting defect, not a physics or
+sampling defect; the recorded time series are correct and the
+correction is applied openly here rather than silently.
+
+### Results (frozen origin-constrained weighted slope fit, 24×2000 bootstrap, reference uncertainty propagated)
+
+| shell | slope S | −β⟨(Re ρ)²⟩ | **Λ** | \|Λ−1\|/σ |
+|---|---|---|---|---|
+| n²=1 | −0.7153 ± 0.2076 | −1.1393 | **0.628 ± 0.187** | 1.99 |
+| n²=2 | −1.6803 ± 0.2972 | −1.8502 | **0.908 ± 0.183** | 0.50 |
+| n²=3 | −2.9439 ± 0.3377 | −2.8818 | **1.022 ± 0.133** | 0.16 |
+| n²=4 **CONTROL** | −0.2827 ± 0.2570 | (undriven) | — | **1.10σ from zero** |
+
+**C-CTRL: PASS** (1.10 ≤ 2) — the cross-talk control is quiet, and the
+2822 "contamination" is confirmed to have been the slow-mode artifact
+diagnosed at 2825. **C-LIN: PASS at all six checks** (0.08σ–0.77σ,
+bar 2σ) — the drive is linear, measured not assumed. **C-POWER: PASS
+at all three shells** (Λ errors 0.13–0.19 against the 0.35 bar frozen
+before data) — the τ ≈ 16 power estimate was accurate.
+
+### Frozen outcome table (§3, top to bottom, first match wins)
+
+Row 1 no · Row 2 no · Row 3 no (0 shells over the power bar) · Row 4
+no (0 shells deviate > 3σ) · **Row 5 FIRES: C-AGREE at 3 of 3 driven
+shells and C-DEVIATE nowhere** ⇒ **PR3-PASS**.
+
+**Same-font caveat:** n² = 1 sits at 1.99σ, i.e. inside the ≤ 2σ
+agreement condition by 0.01σ. Row 5 requires agreement at ≥ 2 shells
+and is therefore satisfied by n² = 2 and n² = 3 alone (0.50σ, 0.16σ) —
+**the verdict does not depend on the marginal shell.** The n² = 1
+low-side pull is reported, unexplained, and is the natural first target
+of any follow-up.
+
+### Meaning
+
+**The fluctuation-response bridge is TESTED, not assumed, and it
+HOLDS** at three independent wave numbers on the model all screening
+results rest on: directly measured susceptibility agrees with the
+susceptibility inferred from unperturbed charge fluctuations, with a
+quiet undriven control and demonstrated linearity. **PR3 is MET**, and
+PR6's external-field leg — its missing third component — is
+**DISCHARGED**; PR6 now awaits only its Moment-rule leg, which
+PR4-BARE supplies. Enactment into the PR ledger is panel business.
