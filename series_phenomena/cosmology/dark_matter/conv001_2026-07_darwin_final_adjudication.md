@@ -122,3 +122,89 @@ seven** · B7 holds.
 
 **The next artifact is a single ambient-Sea velocity bound.** That is
 the smallest the last gap has ever been.
+
+---
+
+## ERRATUM AND AMENDMENT (Patch 2850) — the true roster, and two dispositions TIGHTENED
+
+**The founder confirms Grok's return was pasted correctly and supplies
+it; the duplicated text was S1/GPT's return appearing twice. The true
+roster is FIVE distinct positions. The 2849 flag stands as to the
+duplication (no seat misconduct; a dispatch-side paste error), but its
+count of "four positions" is corrected here, and S2/Grok's actual
+position materially changes two rulings — both in the STRICTER
+direction.**
+
+### Corrected tally
+
+| Q | S1/GPT | **S2/Grok (now supplied)** | S3/Gemini | S4/Copilot | S5/DeepSeek |
+|---|---|---|---|---|---|
+| D1 | AMEND (3, 6 conditional) | **UPHOLD** | YES | UPHOLD | UPHOLD |
+| D2 | AMEND | **AMEND — conditional "continues to have force"** | discharged-but-superseded | AMEND | AMEND |
+| D3 | restore conditional | **AMEND — restore conditional** | yes, conditioned on D5 | uphold conditional | restore with D5 condition |
+| D4 | reduces to 0.387 | **only AFTER D5; stricter bar stays operative** | yes | necessary-not-sufficient | yes |
+| D5 | validation gate, non-blocking | **UPHOLD — must condition restoration** | must remain PENDING | required | conditioned on it |
+
+### D1 — unchanged in outcome
+
+S2 upholds all six as supplied. **S1's qualifications on prereqs 3 and
+6 remain ADOPTED**, not by weight of numbers but on merits: ω₀ = c/d_DP
+was asserted by the worker as a derived natural frequency when only a
+propagation timescale had been established, and C₂ ≤ 1 was computed for
+one geometry. Neither S2 nor the other seats addressed those points;
+adopting a qualification no one rebutted is not a vote count.
+
+### D4 — **TIGHTENED. The operative bar stays at v/c ≤ 0.15.**
+
+My 2849 disposition recorded 1B as "reduced to v/c ≤ 0.387." **S2's
+actual position forbids that as the operative limit:**
+
+> *"1B may close on an ambient-Sea v/c bound of v/c ≤ 0.387 **only
+> after** the measurement condition in D5 is satisfied. Until a
+> correctly scoped transverse measurement exists, **the stricter
+> ambient bar should remain the operative limit for any
+> promotion-critical use.**"*
+
+With S4's "necessary but not sufficient," that is **two seats holding
+the relaxed bar in abeyance**, and S3 conditioning everything on D5.
+**AMENDED DISPOSITION:**
+
+> **1B's TARGET reduces to v/c ≤ 0.387 under CPP-DARWIN. Its
+> OPERATIVE bar for any promotion-critical use remains v/c ≤ 0.15
+> until OPEN-C23-TRANSVERSE-VALIDATION is discharged.** The relaxed
+> bar is a *conditional target*, not a live threshold.
+
+### D5 — **STRENGTHENED to 4–1: restoration IS conditioned on the measurement**
+
+2849 recorded D5 as a split resolved by opening a non-blocking gate.
+With S2's true position, **four seats condition restoration on the
+transverse measurement** (S2, S3, S4, S5); only S1 treats it as
+non-blocking validation. S2's reasoning is adopted verbatim:
+
+> *"Given that this panel has twice already had to adjudicate against
+> overclaims by the same worker, restoring a bound that depends on an
+> unmeasured sector without requiring a proper measurement would be
+> imprudent… the institutional risk of proceeding without it is higher
+> than the cost of waiting."*
+
+**AMENDED DISPOSITION:**
+
+> **CPP-DARWIN remains RESTORED-CONDITIONAL, and
+> OPEN-C23-TRANSVERSE-VALIDATION is elevated from a downstream gate to
+> a CONDITION OF THE RESTORATION ITSELF.** The bound may be reasoned
+> with and cited as conditional; it may NOT be relied upon for any
+> promotion-critical determination until a correctly-scoped transverse
+> measurement — dynamically responding Sea, DP poles, arcs — is
+> executed.
+
+### Net effect on standing
+
+1A **MET** · **CPP-DARWIN RESTORED-CONDITIONAL, conditioned on
+OPEN-C23-TRANSVERSE-VALIDATION** · 1B **OPEN**, target v/c ≤ 0.387,
+**operative bar v/c ≤ 0.15** · PR7 **PARTIAL** · six of seven · B7
+holds.
+
+**The last gap is still a single ambient-Sea velocity bound — but the
+bar it must clear is the stricter one until the magnetic sector is
+measured.** Both amendments move against the worker's interest and are
+recorded for that reason.
