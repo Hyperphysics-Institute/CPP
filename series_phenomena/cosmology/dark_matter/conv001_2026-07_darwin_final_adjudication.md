@@ -208,3 +208,87 @@ holds.
 bar it must clear is the stricter one until the magnetic sector is
 measured.** Both amendments move against the worker's interest and are
 recorded for that reason.
+
+---
+
+## SECOND AMENDMENT (Patch 2852) — S2 re-run in a CLEAN window; the outcome does NOT change
+
+**The founder re-ran S2/Grok in a fresh window, noting that the
+original return came from a thread in which the worker had rejected
+S2's reasoning on the founder's magnetic/inertia draft. The fresh
+return is materially MORE PERMISSIVE than the original — and therefore
+FAVOURS THE WORKER. It is recorded, counted, and does not change the
+disposition.**
+
+### The two S2 returns, side by side
+
+| | S2 original (shared thread) | **S2 fresh (clean window)** |
+|---|---|---|
+| D3 | restore conditionally | **restore, YES** |
+| D4 | 0.387 only AFTER D5; stricter bar operative | **0.387 closes 1B; no further ingredients** |
+| D5 | **must condition restoration** | **does NOT condition restoration** |
+| Standing | 1B does not close | **"PR7 MET · seven of seven pending the single velocity bound"** |
+| Execution | REASONED-UNVERIFIED | **VERIFIED-EXECUTED (22)** |
+
+### Execution ruling: **VERIFIED-EXECUTED — S2's SECOND**
+
+S2 reported **22** distinct n² shell values in `make_k(L, nmax=5)`.
+**Worker re-execution: 22** — values {1–6, 8–14, 16–22, 24, 25}, i.e.
+1…25 minus the three non-representable-as-sum-of-three-squares values
+7, 15, 23. **Exact match.** The key was constructed under the 2837
+rule (unpublished, uncomputed by the worker until return) and S2 is
+the only seat to have cleared such a key **twice** (2832, 2852).
+
+### Contamination question: the clean-context rule is ADOPTED; the specific charge is NOT sustained
+
+The founder's methodological point is correct and is adopted as
+standing governance: **panel dispatches go to fresh contexts, and any
+prior engagement by a seat on the underlying physics is disclosed with
+the return.** A referee should not review the argument that rebuts him
+in the same conversation.
+
+**But the worker declines to treat the original S2 return as
+contaminated**, and states its reason plainly: **the original was the
+return that made the worker's position HARDER, and the fresh one makes
+it EASIER.** Discounting the strict return and adopting the permissive
+one — on a contamination theory the worker did not raise and which
+arrives conveniently — is the exact shape of the motivated reasoning
+this panel has twice corrected. The original's strictness rested on a
+documented fact (two prior adjudications against the worker's
+overclaims) and its D4/D5 positions were technically defensible.
+**Both returns are recorded; the fresh one is counted as S2's position
+under the new clean-context rule; neither is struck.**
+
+### Corrected D5 tally — and the disposition SURVIVES
+
+With the fresh S2 return substituted:
+
+| seat | D5 |
+|---|---|
+| S1/GPT | non-blocking validation gate |
+| **S2/Grok (fresh)** | **does not condition restoration** |
+| S3/Gemini | *"decisive ruling"* — must remain PENDING |
+| S4/Copilot | measurement required; restoration conditional |
+| S5/DeepSeek | restoration conditioned on it |
+
+> **3–2 for conditioning restoration on the transverse measurement.**
+
+The 2850 amendment therefore **STANDS on the merits**, at 3–2 rather
+than 4–1. **OPEN-C23-TRANSVERSE-VALIDATION remains a condition of the
+restoration**, and the **operative bar for promotion-critical use
+remains v/c ≤ 0.15**, with 0.387 a conditional target.
+
+### "Seven of seven" is NOT enacted
+
+S2's fresh return declares *"PR7 MET · seven of seven."* **One seat.**
+S1, S3, S4, S5 all record 1B as OPEN pending an ambient-Sea velocity
+bound that has not been supplied — and Patch 2851 documents that the
+worker's own attempt at that bound failed against its own check.
+**PR7 remains PARTIAL; six of seven; the claim is recorded and not
+enacted.**
+
+### Standing
+
+1A MET · **CPP-DARWIN RESTORED-CONDITIONAL, conditioned on
+OPEN-C23-TRANSVERSE-VALIDATION (3–2)** · 1B **OPEN**, target 0.387,
+**operative bar 0.15** · PR7 **PARTIAL** · **six of seven** · B7 holds.
