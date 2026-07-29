@@ -5,7 +5,18 @@ specification: *"compute L_field for the bonded dilute Sea — the
 correlation length of the residual field after each pair's own partner
 is subtracted. Analytic; no arc-inertia specification needed."***
 
-**VERDICT: ROUTE 2 FAILS.** The pair-centre drift ratio at committed
+> **STATUS DOWNGRADED TO PROVISIONAL — Patch 2858, founder ruling (b)
+> of 2026-07-28.** The founder rules that the interpenetrating geometry
+> below is **not** an intended physical picture and that **the Sea's
+> density is unknown**: the α1 parameters used here are a calibration
+> convention (κ_D = κ = 2/d_DP was *imposed*, which *defines* θ; the α1
+> record itself flagged θ as CHI-INCOMPLETE and referred it to the
+> founder — a referral never made). This verdict's physics stands **as
+> a function of η ≡ d_DP·n_DP^(1/3)**; only its application to the
+> physical Sea is suspended. See `open_sea_density_triangulation.md`
+> (OPEN-SEA-DENSITY-1). Route 2 revives only if η ≪ 0.075.
+
+**VERDICT (PROVISIONAL): ROUTE 2 FAILS AT THE α1 CALIBRATION.** The pair-centre drift ratio at committed
 Sea parameters is **0.711 (RMS)**, against an operative bar of 0.15 —
 **4.74× the bar**. It is saturated at its statistically-independent
 ceiling 1/√2 = 0.7071 to within 0.5%. **1B does not close by this
