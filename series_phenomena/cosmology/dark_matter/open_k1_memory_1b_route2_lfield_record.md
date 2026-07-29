@@ -17,7 +17,12 @@ is subtracted. Analytic; no arc-inertia specification needed."***
 > (OPEN-SEA-DENSITY-1). Route 2 revives only if η ≪ 0.075.
 
 **VERDICT (PROVISIONAL): ROUTE 2 FAILS AT THE α1 CALIBRATION.** The pair-centre drift ratio at committed
-Sea parameters is **0.711 (RMS)**, against an operative bar of 0.15 —
+Sea parameters is **0.711 (RMS)**. **[BAR CORRECTED AT PATCH 2861: the
+bar used here, 0.15, is the subdominance threshold on ε_mem, NOT a bar
+on v/c. The correct v/c bar is 1.5×10⁻² (reading B) or 1.4×10⁻⁴
+(reading A) per `open_k1_memory_1_derivation_sketch.md` §3. The verdict
+survives and STRENGTHENS: 0.711 is 47× the reading-(B) bar, not 4.74×.]**
+Against the superseded 0.15 figure this was —
 **4.74× the bar**. It is saturated at its statistically-independent
 ceiling 1/√2 = 0.7071 to within 0.5%. **1B does not close by this
 route.** Per the 2851 SS4 structural finding, PR7 now joins
