@@ -124,6 +124,21 @@ values and could be neither credited nor penalised. Verify script: `series_pheno
 (6/6 values found in each location). The failure was the worker's, not the seat's — clause (i) was
 satisfied and the complementary clause had never been written down.
 
+### CONV-008 — Roster byte-identity check before scoring any CONV-001 round (registered 29 Jul 2026 Patch 2876)
+
+**Before adjudicating any CONV-001 round, compare the returns pairwise for byte-identity or near-identity.**
+Any identical pair is counted as **ONE seat position**, and the effective roster size is stated in the
+adjudication's header *before any question is scored*. Independent models do not produce multi-thousand-word
+identical returns; the near-certain cause is a duplicated paste at dispatch, and **no blame is assigned to any
+seat** — the worker requests confirmation and proceeds on the reduced roster.
+
+Originating history: **three occurrences.** Patch 2849 (Darwin final motion) caught it and established the
+one-position rule, and requested confirmation before the next round. The SF-6 dispatch's first attempt hit it
+again and **the worker did not catch it**, counting two identical declines as two independent positions and
+drawing an unsound capability inference from the count. Patch 2876 hit it a third time. Per-round flagging has
+failed to prevent recurrence, which is why the check is now a standing convention rather than a habit: the
+check is cheap, the failure is silent, and an inflated roster count is indistinguishable from consensus.
+
 ---
 
 ## P1 — Must clear before next paper (SS-10)
