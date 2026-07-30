@@ -29,6 +29,15 @@ Run this first, in the container working directory (typically `/home/claude`):
 
 After cloning, every subsequent file referenced in this bootup (and in §9.5, and in every handover document) is read from the local clone using filesystem tools — NOT via web_fetch. URL patterns shown in this document and in §9.5 are reference paths; the actual reads happen against the cloned working tree.
 
+**NO `--depth`. CLONE FULL HISTORY.** (Added Patch 2873a.) The command above is deliberately
+unflagged. A `--depth N` clone does **not refuse** history questions — it answers them *wrongly*:
+the shallow boundary commit appears to introduce every file in the tree, so `git log -- <path>`
+reports one commit for files with dozens. At Patch 2871 a `--depth 50` clone reported exactly one
+commit ever touching `DM-1_substrate_dark_matter_candidate.tex`, which would have supported the
+opposite of the true finding, with a git log behind it. If a session has already cloned shallow,
+run `git fetch --unshallow` before making ANY claim about when a file changed, who changed it, or
+whether a clock has run.
+
 If `git clone` fails (no bash tool, network restriction, github.com unreachable), STOP and tell Thomas — do not attempt to bootstrap by fetching individual `raw.githubusercontent` URLs. That path works for the bootup file itself and then fails opaquely on everything downstream.
 
 ### Step 1: Read these files IN ORDER (from the local clone)

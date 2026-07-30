@@ -1795,6 +1795,31 @@ Walk each of the following registries; for each, either update with the session'
 
 Completion criterion: each registry has either been updated or explicitly marked N/A in Step H. **Each registry must be audited independently** — bundling them as "registry updates done" without per-registry verification is the failure mode that registry drift accumulates from.
 
+#### Standing order — SEARCH BEFORE FORMING A POSITION (adopted Patch 2865, codified 2873a)
+
+On any question touching an existing mechanism, artifact, decision, or requirement: **search the
+repository BEFORE forming a position, not to check one.** The earlier mitigation — cite the file
+and line when characterising an existing derivation — governs what to do once a position exists.
+The failures happen earlier: a position is formed, then the search runs looking for confirmation
+of a commitment already made.
+
+Empirical basis (session 2855–2873a, six instances in one session): the C23 gloss carried into a
+founder decision list; B7's trigger condition restated as "pending PR7" and ratified by the
+founder in that wrong form; the 0.15 bar applied to v/c when it is the threshold on eps_mem; PR7
+clause 2 asserted unexamined when the panel had adjudicated it 5-0; the 2814 audit impugned when
+it was correct; DM-1 asserted self-contradictory when its supersession is explicit. Three
+mitigations were written across that session and none held; the order below is the only one that
+changed the rate, and Patch 2871 is the first case where a false claim died before reaching the
+founder as an action.
+
+**Corollary.** A pre-registered test is not a correct test. Freezing a test in advance prevents
+outcome-shopping; it does nothing about asking the wrong question. At Patch 2860 a frozen
+chronology test returned a clean FALSE answer because it measured whether a label existed rather
+than whether the requirement did. When a frozen test returns the result the worker had reason to
+prefer — **in either direction, including the self-punishing one** — run an explicit disconfirming
+search before reporting. The self-punishing direction is not safer; it is motivated in a
+direction that is harder to see.
+
 #### Step F — Reviewer Response Artifacts
 
 If the session generated review content (reviewer letters received, correction letters issued, synthesis letters to reviewers, multi-AI exchange transcripts), commit these in full verbatim form to the paper's `letters/` and/or `reviews/` folders. Summaries of reviewer content are particularly lossy because specific language and line-citations are the review's substance, not decoration.

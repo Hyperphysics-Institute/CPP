@@ -232,3 +232,18 @@ SS-1, SM-1, SM-2, SM-3, SM-4, SM-5, SR-1.
 ---
 
 *See also: `research_frontier.md`, `theorem-registry.md`, `axiom-registry.md`, `predictions.md`, `nomenclature.md`, `problem_histories/`*
+
+---
+
+## Reserved paper IDs (not yet drafted)
+
+**SF-8** — *Emergent Electrostatics and the Bonded ZBW Sea.* **CHARTER ONLY; ID RESERVED.**
+Authorized by founder decision 28 July 2026 (Patch 2857) on a standing 5-0 panel recommendation.
+Charter at `flagship_papers/electromagnetism/SF-8/charter-SF-8.md`. No draft text exists. Scope is
+fenced to two panel-ratified AUTOMATON results (emergent inverse-square electrostatics under two
+independent relay implementations; the measured bonded ZBW Sea); the magnetic sector, CPP-DARWIN,
+the PR chain, Candidate (B) and any Sea-density characterisation are excluded by charter.
+**Registered here at Patch 2873a to prevent ID collision** — 2857 grepped the catalog for a free ID
+and then did not write the reservation back, so a later session grepping for a free SF number could
+have re-used SF-8. Note F.2/F.3 are separately reserved for OPEN-SD-CHIR-PRIMITIVE manifestations
+and are not this line.

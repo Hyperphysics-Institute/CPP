@@ -112,3 +112,63 @@ heredoc; the commit still succeeded because `git add -A` had nothing to
 add). Landed at 2857a with the mismatch disclosed. **Verify content
 against message with `git show --stat` before considering a patch
 closed.**
+
+---
+
+## §7 — §15 PROTOCOL AUDIT TABLE (added Patch 2873a)
+
+**The §15 eight-step sequence was NOT run when this handover was first
+written at Patch 2872.** The handover was improvised from the worker's
+own judgement without opening `templates/operating_system.md` §15. The
+founder caught it. Status of each step, per §15's requirement that
+skipped steps be explicitly marked and never silently omitted:
+
+| step | status |
+|---|---|
+| **A** — Tier 1 session log | **DEFERRED** (see below). No `session_logs/` entry exists for this session; the folder's most recent entry is 2026-06-01, so the practice appears lapsed programme-wide, which is not a licence. |
+| **B** — Tier 2 transcript pointer-map | **DEFERRED** (see below). |
+| **C** — Tier 3 development vignettes | **DEFERRED** (see below). **NOT N/A** — substantive paper-scoped reasoning occurred (SF-6 pin correction, DM-1 sweep, SF-8 charter). |
+| **D** — Tier 4 verbatim reasoning narrative | **DEFERRED** (see below). **NOT N/A** — same reason. |
+| **E** — registry updates, each independently audited | **PARTIAL, Patch 2873a.** DONE: SF-8 ID reservation written into `paper_catalog.md`. NOT DONE: `OPEN-SEA-DENSITY-1` and the `OPEN-C23-TRANSVERSE-VALIDATION → OPEN-C23-MAGNETIC-SECTOR-VALIDATION` rename are absent from `frontier_sectors/SS.md` (the DM sector's registry home) and from `research_frontier.md`. `organizational_frontier.md`, `axiom-registry.md`, `theorem-registry.md`, and the TATWD integration audit against `programme_orientation.md` were not walked. |
+| **F** — reviewer response artifacts | **N/A.** No reviewer letters were received or issued this session; three dispatches are queued but unwritten. |
+| **G** — protocol / OS updates | **DONE, Patch 2873a.** Both standing orders codified: the search-before-position order plus its pre-registration corollary into `templates/operating_system.md` §15; the full-clone requirement into `bootup.md` Step 0. |
+| **H** — handover document | **PARTIAL.** File exists at the canonical location but the filename violates the `YYYY-MM-DD_session_NNN_<scope>.md` convention (`session_close_2855_2872` is not `session_NNN`) — note the 2026-07-27 predecessor has the same defect, so the drift is not new. Written without the audit table (added here) and without the mandatory kickoff-line chat echo and orienting paragraph, which were also never produced. |
+
+## §8 — CORRECTION TO §2 ITEM 7 / PATCH 2871
+
+**2871 claimed the CLONE-FIRST GATE "says nothing about depth." That is
+wrong.** `bootup.md` Step 0 gives the clone command **unflagged** — a
+full clone is what the spec instructs. The worker added `--depth 50` on
+its own initiative and then attributed the resulting false provenance log
+to a gap in the specification.
+
+**The spec was correct. The deviation was the worker's.** The depth
+warning added to Step 0 at 2873a is a warning about *why* the flag is
+absent, not a repair of an absent rule.
+
+## §9 — DEFERRAL RECORD for Steps A, B, C, D
+
+Per §15's deferral discipline, which requires three elements and
+explicitly rejects open-ended "we'll do it later":
+
+**(a) Rationale.** Context budget exhausted in the originating session
+after 19 patches. Not a judgement that the capture is unnecessary.
+
+**(b) Source materials for reconstruction.** Eighteen per-patch
+reasoning fragments at `series_phenomena/cosmology/dark_matter/reasoning/2855.md`
+through `2872.md`; the patch commit messages 2855–2873a; the seven
+founder-voice files listed in §2 and §4; this handover.
+
+**(c) Acknowledgment of loss.** **Reconstruction from these sources is
+substantively lossier than capture while fresh**, and §15 Step D names
+the specific trap: patch commit messages and per-patch reasoning
+fragments are *derivative* artifacts and **do not satisfy Step D**.
+The Tier-4 structure (Title + summary + inclusion scope + Strategy +
+technical sections + Findings + Verdict + State at close + Forward
+pointers) is not reproduced anywhere in what exists. The methodological
+observations most at risk are the six-instance failure-mode analysis and
+the k=1 convergence-refusal reasoning, both of which exist only in the
+fragments and in the conversation transcript.
+
+**Next session should treat Steps A–D as the first item after the
+CONV-001 dispatch, not as optional cleanup.**
