@@ -1,0 +1,551 @@
+% ============================================================
+% SF-8: Emergent Electrostatics and the Bonded ZBW Sea ---
+%       Coulomb's Law Measured Out of the Moment Rule
+% Conscious Point Physics Flagship Paper Series (SF-line)
+% Version history: SF-8/documentation_suite/changelog-sf-8.md
+% Charter: SF-8/charter-SF-8.md (authorized Patch 2857/2857a)
+% Measurement inventory: SF-8/sketches/inventory-SF-8.md (Patch 2877)
+%
+% DRAFT STATE (Patch 2878): sections 1-3 drafted per charter action 2.
+% Sections 4 onward are STUBS and are marked as such in the text.
+% Do not circulate as complete.
+%
+% BINDING EXCLUSIONS (charter section 2; inventory section 5):
+%   - no magnetic-sector claim (OPEN-C23-MAGNETIC-SECTOR-VALIDATION open)
+%   - the arc is LONGITUDINAL; corrected C23-R language only (Patch 2856)
+%   - no Sea density characterisation (OPEN-SEA-DENSITY-1)
+%   - no lattice -> physical transfer of the 10-12 Moment period
+%   - no CPP-DARWIN / PR7 / Candidate B / B7 material
+%   - SF-6 pin's F = kappa a NOT citable as a CPP substrate result
+%     (demoted 4-0, Patch 2876; statics-pinned kappa IS citable)
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openproblem}{Open Problem}
+
+% --- Standard CPP macros ---
+\newcommand{\phig}{\varphi}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\DP}{\mathrm{DP}}
+\newcommand{\CP}{\mathrm{CP}}
+\newcommand{\GP}{\mathrm{GP}}
+
+% --- Paper-specific macros ---
+\newcommand{\eDP}{e\mathrm{DP}}
+\newcommand{\ZBW}{\mathrm{ZBW}}
+\newcommand{\AM}{\mathrm{AM}}
+\newcommand{\PSR}{\mathrm{PSR}}
+\newcommand{\SSVnet}{\SSV_{\mathrm{net}}}
+\newcommand{\SSVabs}{\SSV_{\mathrm{abs}}}
+\newcommand{\DIbit}{\mathrm{DI}}
+
+\title{\textbf{SF-8: Emergent Electrostatics and the Bonded ZBW Sea}\\[6pt]
+{\large Coulomb's Law Measured Out of the Moment Rule}\\[4pt]
+{\large Conscious Point Physics Flagship Paper Series}\\[4pt]
+{\Large \textbf{Version 0.1 --- 30 July 2026}}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}\\[4pt]
+\small OSF DOI: pending}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Conscious Point Physics (CPP) posits a discrete substrate in which
+Conscious Points occupy Grid Points of a 600-cell lattice and exchange
+Displacement-Increment bits (DI-bits) once per Absolute Moment. The
+substrate rules contain no field equation, no force law, and no inverse
+power of distance. This paper reports that Coulomb's law is nonetheless
+\emph{measured out of} those rules, under two independent relay
+implementations, in a cellular-automaton realisation of the substrate.
+Against an Ewald reference independently validated to $0.856\%$ of free
+space, the idealized-shell relay reproduces the shape of the exact
+periodic Coulomb solution to $\pm 2.9\%$ pointwise with a fitted-exponent
+gap $\Delta p \le 0.022$ across a $2\times$ range of shell radii, and the
+lattice-native origin-directed twelve-neighbour hop relay reproduces it to
+$\pm 0.4\%$ pointwise at hop count $R = 4$ with $\Delta p = 0.010$, the
+agreement tightening monotonically with hop count. Pre-registered pass
+bands were $\pm 10\%$ pointwise and $\Delta p \le 0.15$; both
+implementations land well inside them. Separately, the same substrate
+exhibits a \emph{bonded} zero-point-oscillation sea: partner persistence
+of $100.0\%$ at every lag out to 4000 Moments against a $2.0\%$ random
+null across $52/52$ dedicated pairs, with separation cycling through
+superposition at lattice-quantised turning radii. This supplies the direct
+empirical content of the dedicated-bond rule C26.
+
+\medskip
+\noindent\textbf{What this paper does not establish.} The result is
+confined to the \emph{scalar} sector. CPP's magnetic sector is
+\emph{derived but not measured}: the curl construction and its
+normalisation are analytic results, the corresponding validation item
+(OPEN-C23-MAGNETIC-SECTOR-VALIDATION) is open, and no measurement in this
+paper bears on it. Nor is any coupling constant predicted here --- the
+relay's amplitude unit is conventional and only the radial \emph{shape}
+is measured. SF-6 advances the unification claim for electromagnetism as a
+whole; SF-8 supplies the substrate measurement for one half of it and
+names the other half as open.
+\end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} Conscious Point Physics, emergent electrostatics,
+Coulomb's law, cellular automaton, discrete substrate, 600-cell lattice,
+DI-bit relay, Ewald summation, zitterbewegung, dipole-particle sea,
+dedicated bonds, pre-registration, substrate measurement
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+The rules of this model say nothing about electric forces. They say only
+that each point of space passes small messages to its neighbours once per
+tick of a universal clock, and that each point then shifts by an amount
+set by how much those messages agree in direction. When we ran those rules
+on a computer and measured how strongly a charge pushes on its
+surroundings at different distances, we recovered the familiar
+electrostatic law --- not because it was put in, but because it fell out.
+Two quite different ways of passing the messages gave the same answer, and
+the more carefully we passed them the closer the answer became. In the same
+model, the pairs of particles filling empty space turned out to lock into
+dedicated partnerships that survived unbroken for thousands of ticks,
+rather than swapping partners at random. We are careful to say what is
+\emph{not} shown: this covers the electric side only, and the magnetic
+side remains calculated but unmeasured.
+
+\raggedright
+\tableofcontents
+\newpage
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+The substrate question in electromagnetism is old and usually deferred.
+Maxwell's equations describe how the electromagnetic field behaves; they do
+not say what the field is made of. Special relativity constrains how the
+field transforms; quantum electrodynamics quantises its excitations. At
+each step the constitutive question --- what \emph{is} this thing whose
+divergence and curl we are computing? --- was set aside as either
+metaphysical or premature.
+
+Conscious Point Physics answers it structurally: the electromagnetic field
+is a bookkeeping summary of Displacement-Increment bits in transit across a
+discrete lattice. SF-6 develops that claim into a unification, treating
+classical Maxwell theory, special-relativistic photon kinematics, and QED
+as three limits of a single substrate mechanism. But SF-6 is a synthesis
+paper. It assembles shipped results and argues that they cohere; it does
+not measure the substrate.
+
+This paper measures it, for the scalar sector, and reports the result
+that the review panel unanimously recommended leading with.
+
+\medskip
+\noindent\textbf{The claim.} The substrate rules of CPP, implemented
+faithfully as a cellular automaton, contain no field equation, no force
+law, and no inverse power of separation anywhere. Coulomb's law is not
+among the inputs. Nevertheless, when a single pinned charge is placed in
+the automaton against a neutralising background and the resulting radial
+profile is measured, that profile agrees with the exact Coulomb solution
+for the same geometry --- and it does so under two structurally
+independent implementations of the message relay, with the agreement
+improving as the relay is made more faithful.
+
+\medskip
+\noindent\textbf{Why two implementations matter.} A single automaton
+reproducing Coulomb's law is suggestive but weakly so: any lattice
+construction has geometric accidents, and a result that depends on one
+relay's particular shell structure is a result about that shell structure.
+The two relays here differ in exactly the respect that matters. The first
+integrates over an idealised sphere of influence; the second hops
+DI-bits along the twelve nearest-neighbour directions of the lattice
+itself, which is the founder's own specification and is not a sphere at
+all. That both recover the same law, and that the lattice-native version
+recovers it \emph{better}, is the evidence that the law is a property of
+the relay rule rather than of a convenient idealisation.
+
+\medskip
+\noindent\textbf{What is deliberately absent.} This paper makes no
+magnetic claim. In CPP the magnetic field is identified with the
+rotational component of the same dipole displacement whose radial
+component is the electric field, and that identification has been carried
+through analytically, including a normalisation verified at several
+geometries. It has not been \emph{measured}. The corresponding validation
+item is open, and nothing reported below touches it. Section~\ref{sec:scope}
+states the boundary precisely, because the gap between ``we measured the
+electric sector out of the substrate'' and ``we derived electromagnetism
+from the substrate'' is exactly the gap a reader is most likely to close
+without noticing.
+
+\subsection{Open Problems Addressed}
+
+This paper supplies the empirical content for two substrate rules and
+bears on the associated frontier entries:
+
+\begin{itemize}[nosep]
+\item \textbf{C26} (dedicated semi-persistent dipole-particle bonds) ---
+      direct measurement supplied (Section~\ref{sec:sea}, stub at v0.1).
+\item \textbf{C28} (shallow dedicated-pair oscillation) and \textbf{C25}
+      (superposition exit as a consequence of the one law) ---
+      empirically confirmed in the same runs.
+\item \textbf{P-A2-1} (the lattice-native relay reproduces the
+      comparative field-law gate) --- CONFIRMED.
+\item \textbf{OPEN-C23-MAGNETIC-SECTOR-VALIDATION} --- \emph{not}
+      addressed; explicitly left open and named as such
+      (Section~\ref{sec:scope}).
+\end{itemize}
+
+% ============================================================
+\section{The Substrate Rules, and What They Do Not Contain}
+\label{sec:rules}
+% ============================================================
+
+This section states the rules in full. Its purpose is adversarial: a
+reader should finish it able to confirm that no electrostatic content has
+been smuggled in, because the paper's entire claim rests on that absence.
+
+\subsection{Ontology}
+
+Space is not a container. The lattice \emph{is} space: a 600-cell
+polytope structure whose vertices are Grid Points, each occupied by a
+Conscious Point. The 600-cell has $V = 120$ vertices, $E = 720$ edges,
+$F = 1200$ faces, $C = 600$ cells, and vertex coordination $z = 12$; the
+coordination number is the only one of these that does load-bearing work
+below.
+
+Time is discrete and absolute. One \emph{Absolute Moment} ($\AM$) is one
+tick of a universal clock, during which every Conscious Point executes one
+Perceive--Compute--Displace cycle. There is no continuous time and no
+per-observer time coordinate at this level.
+
+\subsection{The three quantities}
+
+\begin{definition}[Space Stress Vector]
+The \emph{Space Stress Vector} $\SSV$ at a Grid Point is the running
+vector bookkeeping of DI-bit arrivals at that point. Two reductions of it
+are used:
+\[
+\SSVnet \;=\; \sum_i \vec{s}_i ,
+\qquad
+\SSVabs \;=\; \sum_i \lVert \vec{s}_i \rVert ,
+\]
+the vector sum and the scalar magnitude-sum of the contributions $\vec{s}_i$
+arriving at that point. $\SSVnet$ is directional and subject to
+cancellation; $\SSVabs$ is not.
+\end{definition}
+
+\begin{definition}[Planck Sphere Radius]
+The \emph{Planck Sphere Radius} ($\PSR$) is the maximum displacement a
+Conscious Point can achieve in one Absolute Moment --- a per-Moment reach
+ceiling, equal in the rest frame to the Planck length.
+\end{definition}
+
+\subsection{The relay rule}
+
+Once per Absolute Moment, every Conscious Point emits DI-bits to its
+neighbours and receives those emitted toward it. The emission is
+\emph{synchronous}: all points emit on the same tick and all arrivals are
+tallied before any displacement occurs.
+
+\begin{remark}[Bit content closure --- rule C21]
+A DI-bit carries \textbf{charge, polarity, and origin, and nothing else}.
+It carries no distance, no field strength, no force, no potential, and no
+orientational or rotational state. This closure is not a simplifying
+convenience; it is the reason the result below is a measurement rather
+than a restatement. A bit that carried field strength would be carrying
+Coulomb's law.
+\end{remark}
+
+\subsection{The displacement law}
+
+Having tallied arrivals, each Conscious Point displaces by
+\begin{equation}
+d \;=\; \frac{\lVert \SSVnet \rVert}{\SSVabs}\,\PSR .
+\label{eq:displacement}
+\end{equation}
+The prefactor is a \emph{directional coherence fraction} lying in
+$[0,1]$: it is unity when every arriving bit points the same way and zero
+when arrivals cancel exactly. The displacement is that fraction of the
+per-Moment reach ceiling.
+
+Equation~\eqref{eq:displacement} is the whole dynamics. It is worth
+stating plainly what it is not:
+
+\begin{itemize}[nosep]
+\item It contains \textbf{no separation variable}. Distance appears
+      nowhere on the right-hand side.
+\item It contains \textbf{no exponent}. There is no $r^{-2}$, no
+      $r^{-1}$, and no power law of any kind to be tuned or fitted.
+\item It contains \textbf{no coupling constant}. No $\epsilon_0$, no
+      elementary charge, no fine-structure constant.
+\item It is \textbf{not a force law}. Nothing is accelerated by anything;
+      a point is displaced by a fraction of its own reach.
+\end{itemize}
+
+Whatever radial dependence the automaton exhibits must therefore come
+from the \emph{geometry of the relay} --- how many bits arrive from where,
+after how many hops --- and not from the displacement law. That is the
+sense in which the measurement below is a measurement.
+
+% ============================================================
+\section{The Measurement}
+\label{sec:measurement}
+% ============================================================
+
+\subsection{The reference must come first}
+\label{sec:reference}
+
+A percentage agreement against an unvalidated reference measures nothing.
+Before either relay result is quoted, the comparator itself must be
+established.
+
+The reference is a real-space Ewald summation for the periodic
+(three-torus) geometry the automaton runs on. Validated against free space,
+it reproduces the free-space result to a worst deviation of
+$\mathbf{0.856\%}$ over $r \in [3,6]$ in three directions at $M = 48$,
+inside its pre-declared $2\%$ band.
+
+\begin{remark}[A geometry effect that must not be mis-stated]
+\label{rem:p2291}
+On the periodic geometry with a neutralising background, the
+\emph{exact} Coulomb solution does not have local logarithmic slope $2$.
+Over the original diagnostic window it has $p = 2.291$. This is a property
+of the torus and the background, not of the automaton.
+
+Two consequences follow, and both matter for how this paper may be read.
+First, an early gate band of $[1.8, 2.2]$ on the fitted exponent was
+\emph{unsatisfiable by any Coulombic field whatsoever on this geometry};
+the resulting failure was correctly reclassified as a gate-design defect
+rather than a defect of the substrate implementation. Second, and more
+important here: \textbf{this paper does not claim to have measured an
+exponent of $2$, and no such claim should be read into it.} The quantity
+tested is agreement with the exact Coulomb solution \emph{for the geometry
+simulated}, which is the correct comparison and a strictly more demanding
+one than fitting a power law in free space would be.
+\end{remark}
+
+\begin{definition}[The two figures of merit]
+For each configuration, with $\rho(r)$ the ratio of the automaton's
+measured radial profile to the Ewald reference, normalised by its own
+window mean:
+\begin{align}
+\text{(shape)} \quad &\rho(r) \in [0.90,\, 1.10] \text{ at every window point,}\\
+\text{(slope)} \quad &\Delta p \;\equiv\; \lvert p_{\text{auto}} - p_{\text{Ewald}} \rvert \;\le\; 0.15 ,
+\end{align}
+both required at no fewer than two of three hop counts. These bands were
+\textbf{frozen before any gate run}.
+\end{definition}
+
+\begin{remark}[Why $\rho$ is normalised by its window mean]
+The relay's amplitude unit is conventional. The automaton is not asked to
+predict the strength of the electrostatic interaction and does not do so;
+it is asked to predict its \emph{radial shape}. No coupling constant is
+derived anywhere in this paper.
+\end{remark}
+
+\subsection{Configuration}
+
+Single positive charge pinned at the origin; uniform neutralising
+background injected at $-1/M^3$ per Grid Point per Moment; $M = 48$;
+equilibration $4M$ Moments; averaging over a further $2M$ Moments; profiles
+read along $\pm x$, $\pm y$, $\pm z$; window $r \in [2R+2,\, 16]$ for hop
+count $R$.
+
+\begin{remark}[Blinding, stated for the record]
+At $R = 3$ the axis profile was already of record when the gate was
+frozen and is therefore reported as \textbf{confirmatory-disclosed}. The
+$R = 2$ and $R = 4$ configurations were \textbf{blind}.
+\end{remark}
+
+\subsection{Relay A --- the idealised sphere of influence}
+\label{sec:relayA}
+
+The first implementation integrates DI-bit transfer over an idealised
+shell at radius $R$ around each emitting point.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+hop count & normalised $\rho$ range & $\Delta p$ & verdict \\
+\midrule
+$R = 2$ (blind) & $[0.991,\ 1.026]$ & $0.022$ & PASS \\
+$R = 3$ (confirmatory-disclosed) & $[0.994,\ 1.029]$ & $0.022$ & PASS \\
+$R = 4$ (blind) & $[0.991,\ 1.005]$ & $0.020$ & PASS \\
+\midrule
+\multicolumn{4}{l}{\textbf{3/3 --- gate open.} Shape agreement with exact
+torus Coulomb within $\pm 2.9\%$}\\
+\multicolumn{4}{l}{pointwise, $\Delta p \le 0.022$, across a $2\times$
+range of shell radii.}\\
+\bottomrule
+\end{tabular}
+\caption{Relay A (idealised shell), comparative field-law gate. Every
+value lies well inside the frozen bands of $\pm 10\%$ and
+$\Delta p \le 0.15$.}
+\end{table}
+
+A conservation and boundedness check accompanied the gate: net charge
+conserved to $-2.9\times 10^{-13}$, and the summed field content drifting
+by $+1.4\%$ between run halves --- a bounded oscillation with no secular
+growth.
+
+\subsection{Relay B --- the lattice-native twelve-neighbour hop}
+\label{sec:relayB}
+
+The second implementation abandons the shell. DI-bits hop along the
+twelve nearest-neighbour directions of the lattice --- the coordination
+number $z = 12$ of Section~\ref{sec:rules} --- directed by origin, for $R$
+hops. This is the founder's own specification of the relay and is
+geometrically nothing like a sphere.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcc}
+\toprule
+hop count & normalised $\rho$ range & $\Delta p$ \\
+\midrule
+$R = 2$ & $[0.986,\ 1.044]$ & $0.052$ \\
+$R = 3$ & $[0.991,\ 1.004]$ & $0.011$ \\
+$R = 4$ & $[0.996,\ 1.002]$ & $\mathbf{0.010}$ \\
+\bottomrule
+\end{tabular}
+\caption{Relay B (lattice-native origin-directed twelve-neighbour hop).
+At $R = 4$ the agreement is $\pm 0.4\%$ pointwise. Prediction P-A2-1:
+CONFIRMED. Field content bounded, trending $-0.4\%$.}
+\end{table}
+
+\begin{remark}[The trend is the result, not the endpoint]
+The three rows above should be read as a sequence. From $R = 2$ to
+$R = 4$ the shape window narrows from $[0.986, 1.044]$ to
+$[0.996, 1.002]$ and the slope gap falls from $0.052$ to $0.010$ ---
+\textbf{the agreement tightens monotonically as the relay is given more
+hops to work with}. A fixed offset that happened to be small would be a
+coincidence; a discrepancy that shrinks under refinement of the mechanism
+is the signature of a limit being approached. Quoting only the $R = 4$
+figure discards the evidence.
+\end{remark}
+
+\subsection{What the two relays jointly establish, and what they do not}
+\label{sec:scope}
+
+\noindent\textbf{Established.} The radial shape of electrostatics is a
+consequence of synchronous DI-bit relay under
+Equation~\eqref{eq:displacement}, and not an input. It survives
+replacement of the relay's geometry by a structurally different one, and
+improves under refinement of the more faithful of the two.
+
+\medskip
+\noindent\textbf{Not established, itemised.}
+\begin{itemize}[nosep]
+\item \textbf{Any coupling constant.} Amplitude is conventional
+      (Section~\ref{sec:reference}); only shape is measured.
+\item \textbf{An exponent of $2$.} See Remark~\ref{rem:p2291}. The
+      comparison is against the exact solution on the simulated geometry.
+\item \textbf{The magnetic sector.} Derived, not measured. The curl
+      construction and its normalisation are analytic; the validation item
+      is open. \textbf{No measurement in this paper bears on the magnetic
+      sector, and the scalar result must not be read as covering it.}
+\item \textbf{Any property of the physical dipole-particle sea's density
+      or geometry.} The automaton's occupancy figures are regime
+      artifacts and are forbidden as physical. This paper reports that the
+      sea is \emph{bonded and dedicated} and characterises it no further
+      --- not as dilute, not as dense, not as geometrically anything.
+\item \textbf{Inertia, or any dynamical law beyond
+      Equation~\eqref{eq:displacement}.} The substrate rules implemented
+      here carry no rotational or orientational state, which is precisely
+      what a treatment of arc-stored inertia would require.
+\end{itemize}
+
+% ============================================================
+\section{The Bonded ZBW Sea}
+\label{sec:sea}
+% ============================================================
+
+\textit{[Section pending. Charter action 2 covers Sections 1--3; the
+measurement record and its provenance are assembled at
+\texttt{sketches/inventory-SF-8.md} \S2, including the hazard note on
+lattice-scale period transfer, which binds this section.]}
+
+% ============================================================
+\section{Kinetic Randomisation in Proxy}
+\label{sec:kinetic}
+% ============================================================
+
+\textit{[Section pending, and optional per charter \S1. If included it
+must carry its proxy caveat in the subsection heading: momentum was
+supplied as a labelled proxy, the runs are driven with no back-reaction,
+and the thermal result is mechanism-level only --- it does not establish
+equilibrium. See \texttt{inventory-SF-8.md} \S3.]}
+
+% ============================================================
+\section{Physical Interpretation}
+% ============================================================
+
+\textit{[Section pending.]}
+
+\subsection{CP/GP Signature at This Scale}
+
+\textit{[Section pending --- REQUIRED per PD-001. Must name the
+load-bearing axioms, distinguish where lattice discreteness remains
+visible from where it has been averaged out, and identify the macroscopic
+shadow. Note for the drafter: the coordination number $z = 12$ is visible
+in Relay B's hop structure and is load-bearing; the shell idealisation of
+Relay A is where discreteness is smoothed.]}
+
+% ============================================================
+\section{CPP-to-Conventional-Physics Mapping}
+% ============================================================
+
+\textit{[Section pending.]}
+
+% ============================================================
+\section{Conclusion}
+% ============================================================
+
+\textit{[Section pending.]}
+
+\subsection{Swarm-Validation Contribution}
+
+\textit{[Section pending --- REQUIRED per PD-001.]}
+
+\subsection{Problem Status After This Paper}
+
+\textit{[Section pending.]}
+
+\section*{Acknowledgements}
+
+\textit{[Pending. Panel attribution owed: the structural recommendation to
+lead with the electrostatics result was returned unanimously by all five
+review seats.]}
+
+\end{document}

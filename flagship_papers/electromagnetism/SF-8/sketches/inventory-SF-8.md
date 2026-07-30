@@ -37,7 +37,7 @@ independent relay implementations**.
 | item | value | source |
 |---|---|---|
 | agreement with exact torus Coulomb | **±2.9% pointwise** | `automaton1_execution_record.md:78` |
-| polarity/shape discriminant | **Δp ≤ 0.022** | `automaton1_execution_record.md:78` |
+| fitted-exponent gap vs the reference | **Δp ≤ 0.022** | `automaton1_execution_record.md:78` |
 | replication | **3/3 R** | `automaton_arc_closure.md:14–17` |
 | engine | `series_phenomena/cosmology/dark_matter/code/2797_automaton1_engine.py` | — |
 | deliverables | `.../code/2799_automaton1_deliverables.py` | — |
@@ -59,6 +59,44 @@ count** — the R = 2 → 3 → 4 progression above is the evidence for that
 claim and should be presented as the progression rather than as the
 endpoint alone. Engine:
 `.../code/2802_automaton2_engine.py`.
+
+### ⚠ CORRECTION TO THIS INVENTORY, PATCH 2878 — Δp WAS MIS-DEFINED ABOVE AT 2877
+
+**Δp is NOT a "polarity/shape discriminant"**, which is how this file
+described it when first written. Its frozen definition
+(`automaton1_v1r_reprereg.md`, V-1R pass bands) is:
+
+> **Δp ≡ |p_auto − p_Ewald| ≤ 0.15 on the window**
+
+i.e. **the gap between the automaton's fitted power-law exponent and the
+EWALD REFERENCE's exponent on the same window.** Corrected in the table
+above.
+
+**AND THE CONSEQUENCE IS THE SHARPEST PRESENTATION HAZARD IN THIS PAPER.
+Exact torus Coulomb on this geometry has p = 2.291, NOT 2**
+(`automaton1_v1r_reprereg.md:12–15`; `automaton1_execution_record.md:60–64`)
+— a property of the periodic boundary plus the neutralising background, not
+of the automaton. Two consequences:
+
+1. An early gate band of [1.8, 2.2] on the exponent **was unsatisfiable
+   by ANY Coulombic field on this geometry**, which is why the Patch 2797
+   FAIL was reclassified a **GATE-DESIGN defect** rather than a defect of
+   the implementation.
+2. **SF-8 MUST NOT CLAIM A MEASURED EXPONENT OF 2, and must not let
+   "emergent inverse-square" be read as one.** The tested quantity is
+   agreement with the exact Coulomb solution *for the geometry simulated*
+   — which is the correct comparison and strictly more demanding than
+   fitting a free-space power law.
+
+**Also load-bearing and easy to lose:** ρ is normalised by its own window
+mean because *"the relay's amplitude unit is conventional."* **No coupling
+constant is predicted by either relay.** Only the radial SHAPE is
+measured. Pre-registered bands were ρ ∈ [0.90, 1.10] pointwise and
+Δp ≤ 0.15 at ≥ 2 of 3 R values; both relays land far inside them, and
+saying so is stronger than quoting the achieved figures alone.
+
+**Blinding, for the record:** R = 3 was CONFIRMATORY-DISCLOSED (already of
+record at freeze); **R = 2 and R = 4 were BLIND.**
 
 ### The external reference both were measured against
 

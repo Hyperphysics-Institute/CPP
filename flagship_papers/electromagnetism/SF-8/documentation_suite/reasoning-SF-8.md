@@ -72,3 +72,78 @@ referenced. It is the gating item for the panel dispatch, not for the
 draft, so the draft can proceed first -- but it must not be forgotten,
 because a dispatch without it fails CONV-003 §4 and, per 2876 §7, a key
 scoped across dependencies is unanswerable in practice.
+
+## Patch 2878 — sections 1-3 drafted, and the inventory corrected one patch after writing it
+
+**STATUS: contemporaneous, captured at patch. Session of 2026-07-30.**
+
+The drafting turned up an error in my own inventory, written one patch
+earlier, and it is the kind that would have put a false claim in a paper.
+
+I had tabulated Delta p as a "polarity/shape discriminant" because that is
+what it looked like from the usage -- a small number, decreasing with hop
+count, quoted as a pass criterion. Its frozen definition is
+|p_auto - p_Ewald|: the gap between the automaton's fitted exponent and the
+EWALD REFERENCE'S exponent on the same window. I had not opened the
+pre-registration when I built the inventory; I inferred the meaning from
+the surrounding numbers, which is the same move that produced four gloss
+failures earlier in this session, in a third costume.
+
+Then the definition led somewhere worse. Exact torus Coulomb on this
+geometry has p = 2.291, not 2, because of the periodic boundary and the
+neutralising background. So an early gate band of [1.8, 2.2] on the
+exponent was unsatisfiable by ANY Coulombic field on that geometry, which
+is why a prior FAIL was correctly reclassified as a gate-design defect. And
+had I drafted from "emergent inverse-square electrostatics" -- the arc
+closure's own headline phrase, which I had copied into the inventory
+without interrogating -- the natural sentence to write is "the measured
+exponent is 2." That sentence would be false. It is exactly the sentence a
+later drafter working from the summary would write.
+
+So the paper now carries an explicit remark saying it does NOT claim an
+exponent of 2, and stating that the comparison is against the exact
+solution on the simulated geometry, which is a harder test rather than an
+excuse. The honest framing is actually stronger than the wrong one: the
+automaton is being asked to match a nontrivial reference profile, not a
+textbook power law.
+
+The second thing I nearly lost is that rho is normalised by its own window
+mean because the relay's amplitude unit is conventional. That means no
+coupling constant is predicted anywhere in this paper -- only shape. If
+that is not said explicitly, a reader is entitled to think we derived the
+strength of the electrostatic interaction, which we did not. It is in the
+abstract and in the scope section now.
+
+Two structural choices I want on the record.
+
+First, the reference goes before the results, as its own subsection, with
+the 0.856% validation stated before either agreement figure. I considered
+putting it in a methods appendix and decided against it: a percentage
+agreement against an unvalidated comparator is decoration, and burying the
+comparator's own validation invites precisely the reading where the 0.4%
+sounds like an absolute accuracy claim.
+
+Second, I wrote Relay B's three rows as a sequence and added a remark
+saying the trend IS the result. The shape window narrows from [0.986,
+1.044] to [0.996, 1.002] and the slope gap falls 0.052 -> 0.011 -> 0.010 as
+hops increase. A small fixed offset would be a coincidence; a discrepancy
+that shrinks under refinement of the mechanism is a limit being
+approached. Quoting only the R = 4 figure throws away the actual evidence,
+and R = 4 alone is what the arc closure's summary quotes.
+
+Section 2 is written adversarially on purpose. Its job is to let a hostile
+reader confirm that no electrostatic content was smuggled in, so it
+enumerates what the displacement law does NOT contain -- no separation
+variable, no exponent, no coupling constant, and it is not a force law.
+The C21 bit-content closure gets its own remark with the reason attached:
+a bit carrying field strength would be carrying Coulomb's law. That is the
+whole argument for why this is a measurement, and it should not be a
+parenthetical.
+
+The blinding status is in the paper: R = 3 confirmatory-disclosed, R = 2
+and R = 4 blind. It slightly weakens the headline and it belongs there.
+
+Stubs are marked as stubs in rendered text, not hidden in comments, so
+nobody circulates this as complete. Compiles clean at 8 pages, no
+undefined references. Still owed before dispatch: the stdlib verifier,
+which must be a single self-contained artifact per 2876 section 7.
