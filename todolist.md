@@ -107,6 +107,23 @@ the same push. Clean-environment rerun is recommended, not mandatory (revisit on
 Origin: the RV-2714 stalled-window recovery (Patches 2761/2762); precedent authenticated by deterministic
 reproduction; formalized with amendments by the CONV-001 panel at the S4-X bundle adjudication (Patch 2764).
 
+### CONV-007 — Withheld-key admissibility (registered 29 Jul 2026 Patch 2874)
+
+A withheld verification key issued with a CONV-001 dispatch must be a quantity that **(i)** is computable
+from a committed artifact whose path is named in the dispatch — S2's requirement, established at Patch 2829
+and what made honest verification possible — **AND (ii)** does **not** appear in any commit message,
+docstring, README, prose file, or prior adjudication anywhere in the repository. Requirement (ii) must be
+checked before the dispatch is issued, by grepping the full history (`git log --all --format=%B`) *and* the
+artifact's own source, including its docstring. **A key failing (ii) is VOID and no execution ruling —
+neither VERIFIED-EXECUTED nor fabrication — may be made on it.**
+
+Originating failure: the Patch 2873 dispatch nominated the 2868 dt/vf ladders and sign as its key. Both
+ladders appear verbatim in Patch 2868's commit message *and* in the target script's own `RESULT` docstring
+block, so a seat could return all six values and the sign without executing anything. S2 returned correct
+values and could be neither credited nor penalised. Verify script: `series_phenomena/cosmology/dark_matter/code/2874_key_void_check.py`
+(6/6 values found in each location). The failure was the worker's, not the seat's — clause (i) was
+satisfied and the complementary clause had never been written down.
+
 ---
 
 ## P1 — Must clear before next paper (SS-10)
