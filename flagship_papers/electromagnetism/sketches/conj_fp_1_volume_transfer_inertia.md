@@ -1,3 +1,84 @@
+# ⚠ CONJ-FP-1 MAJOR REVISION — PATCH 2884: MECHANISM REPLACED, FREE PARAMETER ELIMINATED
+
+**The founder has ruled the ROUND-TRIP TIMING ASYMMETRY the sole
+mechanism, superseding the volume-transfer/slab account below. Source:
+`founders_voice/founder_mechanism_roundtrip_timing_inertia_2026-08-02.md`.
+Computation: `../code/2884_roundtrip_asymmetry.py`.**
+
+**FILENAME RETAINED DELIBERATELY.** This path is the registered pointer
+for CONJ-FP-1 in `frontier_sectors/CONJ.md`; renaming it would break the
+registry reference. The banner carries the correction instead. *(Noted
+because this worker criticised exactly this defect — a filename
+misdescribing its contents — two patches ago.)*
+
+## What changed
+
+**ξ_arc IS ELIMINATED.** The round-trip asymmetry is **pure kinematics**:
+it follows from the CP moving during a finite-speed out-and-back and
+assumes nothing about arc dynamics. **No collapse asymmetry, no
+store-and-release lifecycle, no arc/spacing ratio, and no DP-Sea density
+are required.** LINK 1 of §3 below is **RETIRED**, and with it Route 1
+(the AUTOMATON ξ_arc measurement) as a *gating* item.
+
+**Replaced by two BINARY structural conditions**, both testable without
+any density measurement:
+
+| | condition | status |
+|---|---|---|
+| **A** | the Sea's net response to a moving CP is **REPULSIVE** (attractive gives drag of the same magnitude) | founder asserts; untested |
+| **B** | the relay does **NOT** reproduce Liénard–Wiechert structure — the DP responds to the **retarded** separation, not the instantaneous position | **untested; see escalation** |
+
+**Two binary questions in place of one unmeasured continuous parameter is
+a strict gain in falsifiability**, and it removes the dependence on
+OPEN-SEA-DENSITY-1 that was the stated reason for filing as a conjecture.
+
+## What survives unchanged
+
+**LINK 2** (the marginality condition, §2 below) and **LINK 3** (stability
+of the coasting family — B1, still the worker's own job) are untouched.
+The drive's magnitude must still land exactly on the self-consistency
+condition, and that family must still be neutrally stable.
+
+## The computed result
+
+`2884_roundtrip_asymmetry.py`, static Sea in the absolute frame, CP at the
+origin moving +v, doubly-retarded round trip solved exactly per DP:
+
+- **Exactly linear in β** — drive/β = −15.955, −15.954, −15.947, −15.923
+  at β = 0.01, 0.02, 0.05, 0.10. Constant to four significant figures.
+  **The founder's kinematic claim is confirmed.**
+- **Sign = inverse of the response's sign.** Attractive → backward (drag).
+  Repulsive → forward, of exactly the required form.
+- **Under Liénard–Wiechert propagation: EXACTLY ZERO at every β** (10⁻¹⁷
+  across β = 0.01–0.4). The LW field of a uniformly moving source points
+  at its **instantaneous** position, so retardation is exactly compensated
+  by field direction. **This is also the computation's self-validation** —
+  it reproduces the known null result for a uniformly moving charge, which
+  is what licenses trusting case A.
+
+## ESCALATION: CONDITION B EXCEEDS THIS CONJECTURE
+
+**If the relay IS LW-like, the Sea exerts no net drive on a coasting CP at
+all.** Then SSV_net = 0 for uniform motion, and the CPP primitive
+d = (|SSV_net|/SSV_abs)·PSR gives **d = 0 — nothing could coast.**
+
+**The programme therefore requires a non-LW relay for COASTING ITSELF to
+be possible, independently of whether this inertia mechanism is correct.**
+Condition B is a question about the **substrate's viability**, not merely
+about inertia, and it is registered at that level.
+
+## New executable route, replacing Route 1
+
+**AUTOMATON MOVING-SOURCE TEST.** The arc measured the **static** Coulomb
+profile to ±0.4% under two independent relays. **Whether a MOVING source
+produces a field pointing at its instantaneous or its retarded position
+has never been run.** It is a defined simulation on an existing, committed
+engine (`2802_automaton2_engine.py`), needs no new physics, and settles
+Condition B — and with it, whether coasting is possible in the substrate
+at all.
+
+---
+
 # CONJ-FP-1 — THE VOLUME-TRANSFER MECHANISM OF INERTIAL MAINTENANCE
 
 **Founder mechanism, developed 29 July – 1 August 2026 across the

@@ -300,3 +300,110 @@ worker against its own prior position. Items 4–5 were the worker
 correcting itself unprompted. Recorded together because a Tier 4 record
 that keeps only the successful chain is worth less than one that keeps the
 groping.**
+
+---
+
+## §7 — DERIVATION E: THE ROUND-TRIP ASYMMETRY (Patch 2884)
+
+**Added under CONV-010. This is the derivation, not an account of it.**
+
+### E.1 — Round-trip times, closed form
+
+CP at x=0 at t=0 moving +v. DP at axial distance r. Signal speed c.
+
+**Forward DP.** Outbound leg length r, arriving at t = r/c with the CP now
+at vr/c. Gap r − vr/c = r(1−β); closing speed c+v; return time
+r(1−β)/(c+v); return path length r(1−β)/(1+β). Total path:
+
+    L_fwd = r + r(1−β)/(1+β) = r[(1+β)+(1−β)]/(1+β) = 2r/(1+β)
+
+**Rear DP.** Outbound r; CP now receding. Gap r + vr/c = r(1+β); closing
+speed c−v; return path r(1+β)/(1−β). Total:
+
+    L_aft = 2r/(1−β)
+
+    Δt = (L_aft − L_fwd)/c = (2r/c)[1/(1−β) − 1/(1+β)] = 4rv/(c²−v²)  (E1)
+
+**≈ 4rβ to first order — FIRST ORDER in v/c, and GROWING LINEARLY WITH r.**
+Δt = 1 Moment at r = (1−β²)/(4β): ≈ 0.94 GP at β=0.25, ≈ 25 GP at β=0.01.
+**So "one increment" is exact only at close range and moderate β.**
+
+### E.2 — The doubly-retarded solve, for the numerical integration
+
+Fix the CP at the origin at t=0. A response **arriving now** left the DP at
+y at t₂ = −|y|/c (return leg). That response was triggered by CP emission
+at t₁ = t₂ − s, with s the outbound travel time satisfying
+
+    |y − v t₁ x̂| = c s
+
+Writing A ≡ y_x − v t₂ = y_x + v|y|/c and expanding:
+
+    (A + vs)² + y_⊥² = c²s²
+    (c² − v²)s² − 2Avs − (A² + y_⊥²) = 0
+
+    ⟹  s = [Av + √(A²v² + (c²−v²)(A² + y_⊥²))] / (c² − v²)          (E2)
+
+taking the positive root. Outbound distance d_out = cs; return distance is
+|y|, which is **symmetric** under y_x → −y_x for a symmetric Sea.
+**Therefore the entire asymmetry lives in d_out.**
+
+**Sign of the asymmetry, read off (E2):** for a forward DP the CP was
+*further away* at emission (it has been approaching), so d_out > |y|; for
+a rear DP the CP was *closer* at emission, so d_out < |y|.
+
+### E.3 — Why the sign follows immediately
+
+With response amplitude ∝ 1/d_out², forward amplitude is **smaller** and
+rear amplitude **larger**. If the response is **attractive**, the rear
+pulls harder ⟹ **net BACKWARD (drag)**. If **repulsive**, the rear pushes
+harder ⟹ **net FORWARD**. **The drive's sign is the inverse of the
+response's sign, and nothing else in the geometry can change it.**
+
+### E.4 — Numerical result
+
+`code/2884_roundtrip_asymmetry.py`, spherical shell integration
+r ∈ [1,12], 160×240 grid, force ∝ amp/|y|² along ŷ, axial component summed:
+
+| β | drive (attractive response) | drive/β |
+|---|---|---|
+| 0.01 | −1.5955e−01 | −15.955 |
+| 0.02 | — | −15.954 |
+| 0.05 | −7.9736e−01 | −15.947 |
+| 0.10 | −1.5923e+00 | −15.923 |
+
+**Exactly linear in β to four significant figures.** Founder kinematics
+confirmed.
+
+### E.5 — The Liénard–Wiechert null, and why it is the validation
+
+Replacing the retarded-distance response with the LW form
+amp ∝ (1−β²)/[(1−β²sin²θ)^{3/2} R²], with R the **instantaneous**
+separation:
+
+| β | 0.01 | 0.05 | 0.10 | 0.20 | 0.40 |
+|---|---|---|---|---|---|
+| drive | −5.7e−17 | +8.4e−17 | −1.8e−16 | −5.3e−17 | +5.4e−18 |
+
+**Exactly zero at every β.** This is the known result — a uniformly moving
+charge in a wave-equation field experiences no self-drag, because the LW
+field points at the source's **instantaneous** position and retardation is
+exactly compensated by field direction. **Recovering it numerically is
+what licenses trusting the case-A number**; a machine that produced a
+spurious drive here would be untrustworthy everywhere.
+
+### E.6 — The escalation, derived
+
+If the relay is LW-like then the Sea's net axial drive on a coasting CP is
+**identically zero**, so SSV_net = 0, and the primitive
+
+    d = (|SSV_net| / SSV_abs) · PSR
+
+gives **d = 0**. **Nothing could coast.** Hence a non-LW relay is required
+for coasting to exist *at all*, independently of this inertia mechanism.
+**Condition B is a substrate-viability question.**
+
+### E.7 — What this retires and what it does not
+
+**Retires:** LINK 1 (collapse asymmetry) and ξ_arc entirely — the effect is
+kinematic and assumes nothing about arc dynamics. **Does not touch:**
+LINK 2 (marginality, §A) and LINK 3 (stability, B1).
