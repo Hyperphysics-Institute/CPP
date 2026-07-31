@@ -172,6 +172,34 @@ a fragment.**
 
 ---
 
+### CONV-010 — Tier 4 means the derivation, not a retrospective about it (registered 1 Aug 2026 Patch 2882)
+
+**A Tier 4 fragment must contain the DERIVATION — the equations, the substitutions, the intermediate
+steps, the dead ends — not a finished-prose account of having done it.** `templates/documentation-suite.md`
+defines Tier 4 as *"verbatim derivation reasoning — the moment-by-moment groping, false starts, PAIRING
+resolutions, recognition moments… the canonical record from which Tiers 1–3 derive."* Tiers 1–3 derive
+FROM Tier 4, so **Tier 4 must be the richest layer in the suite. If a fragment is thinner than the
+documents that cite it, the structure is inverted.**
+
+**Diagnostic, applied at the patch that writes the fragment:** could a competent stranger reconstruct the
+result from this file alone, without the chat transcript? If the answer is no, it is Tier 3 content and
+does not discharge the Tier 4 obligation.
+
+**Originating measurement (founder audit, 1 Aug 2026).** Fragments `reasoning/2873.md` through
+`reasoning/2880.md` averaged a few hundred words of polished retrospective; `2880.md` ran 67 lines of
+which **three** contained any mathematics. Two load-bearing derivations of the inertia arc — the
+C·PSR = SSV_abs condition and the dipole-algebra sign reversal — existed in the corpus **only as
+conclusions**, and two computations (`wake_sign`, `robustness`) were **never committed at all** despite
+the reasoning-capture rider requiring a verify script whenever a computation is run. Remediated at
+`sketches/tier4_derivation_record_inertia_arc.md` and `code/2882_*`.
+
+**Observed failure mode worth naming:** the retrospective register captures **failures** well ("I nearly
+did X and did not") and **successful derivations** poorly, because a chain that worked gets compressed
+into its result while a chain that broke gets narrated. **That is backwards for validation** — an
+external validator needs the working derivations most. Record both.
+
+---
+
 ## P1 — Must clear before next paper (SS-10)
 
 *(Empty — gate cleared 7 May 2026 Session 36 close patch 0288. SS-10 may begin.)*
