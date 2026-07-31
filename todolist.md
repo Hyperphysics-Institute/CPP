@@ -141,6 +141,37 @@ check is cheap, the failure is silent, and an inflated roster count is indisting
 
 ---
 
+### CONV-009 — Founder verbatim capture is a patch obligation, not a courtesy (registered 1 Aug 2026 Patch 2881)
+
+**Any turn in which the founder supplies physics — a mechanism, a ruling, a correction, a decision on
+scope or status — is captured VERBATIM to `founders_voice/` in the SAME patch that acts on it.** The
+capture is the primary source; any conjecture entry, frontier update, paper passage, or panel dispatch
+derived from it is secondary and must cite it by path. **The primary source is written FIRST, or at
+minimum in the same `git am`. Registering a derivative before its source inverts the dependency and is
+the error at Patch 2880.**
+
+**Scope.** Verbatim means verbatim — the founder's own words, block-quoted, not compressed and not
+tidied. Worker commentary is permitted but must be visibly separated (`**Worker note:**`) so that a
+later reader can always recover what the founder actually said from what the worker made of it.
+
+**Why this is a convention and not a reminder.** The founder reports the capture has been missed in
+prior sessions whenever he has asked, i.e. it is a chronic cross-worker failure. The cause is
+structural: the worker reasoning fragment rides inside the patch bundle and is carried by the
+mechanical workflow, while founder capture has no trigger and therefore depends on memory. This is the
+same shape as the roster duplication, which recurred three times under per-round flagging and stopped
+only when it became a procedural step (CONV-008). **The founder's verbatim is the one source in the
+corpus that cannot be reconstructed from anything else** — and this session demonstrated four separate
+times that worker summaries drift from their sources, the source being right every time.
+
+**Companion obligation.** The reasoning-capture rider has no exemption for addenda, corrections, or
+adjudication records. Patch 2879 was skipped on the assumption that an addendum is bookkeeping; it
+contained an adopted dissent and the re-scoping of an open item. **If a patch makes a judgment, it owes
+a fragment.**
+
+---
+
+---
+
 ## P1 — Must clear before next paper (SS-10)
 
 *(Empty — gate cleared 7 May 2026 Session 36 close patch 0288. SS-10 may begin.)*
