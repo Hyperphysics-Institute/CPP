@@ -316,3 +316,15 @@ It survives every objection raised against it except LINK 1, which is
 answerable. **Calling it a conjecture is correct. Calling it finished would
 overclaim the derivation and simultaneously underclaim how close the
 remaining questions are to being computable.**
+
+---
+
+# APPENDIX (Patch 2912) — CONDITION STATUS TABLE
+
+| condition | status | evidence |
+|---|---|---|
+| **A — net Sea response to motion is repulsive (forward)** | **HOLDS** | Sign round 5.7σ (2910) + pooled 1.3×-domain variation 5.4σ, 16/18 positive, clean floors (2911–2912) |
+| **B — relay is retarded, not Liénard–Wiechert** | **CLOSED-VERIFIED** | Branch-1 verification: ballistic, 1/r², isotropic, retarded by construction (2895) |
+
+Curvature of the dressed drive: OPEN, owned by the hybrid pipeline
+(2908 §4 item 2). LINK 2, LINK 3: OPEN.

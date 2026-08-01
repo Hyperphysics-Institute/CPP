@@ -16,7 +16,7 @@ from numba import njit, prange
 
 SOFT2 = eng.SOFT2; PSR = eng.PSR; CLAT = 1.0
 
-@njit(parallel=True, cache=True, fastmath=False)
+@njit(parallel=True, cache=False, fastmath=False)
 def kernel(recv, ridx, H, T_pre, t_now, t, T_max, q, tr_prev, use_warm):
     M = recv.shape[0]; N = H.shape[1]
     net = np.zeros((M, 3)); ab = np.zeros(M); tr_out = np.empty((M, N))
