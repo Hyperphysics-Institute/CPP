@@ -144,3 +144,77 @@ Ledger untouched: 1B OPEN; PR7 PARTIAL; six of seven; B7 holds; Candidate
 the CP's carried state; the memory lives in the Sea's entrained
 configuration, which is exactly where the founder has always said inertia
 is carried.
+
+---
+
+# ADDENDUM — PATCH 2901: THE ε\*·|k| = 1 IDENTITY IS AN ACCIDENT; THE DECISION MOVES TO THE SUBSTRATE
+
+**Executes the founder's 31 Jul ruling
+(`founders_voice/founder_ruling_universal_primitive_no_arc_compliance_2026-07-31.md`):
+there is no separate arc compliance — every CP obeys the same primitive,
+and quantities like ε are emergent bookkeeping, not primitives.**
+
+## §7 — TEST 3 (PRE-REGISTERED): THE IDENTITY FAILS
+
+The ruling's naive algebraic consequence — ε_substrate = μ = 1/|k|, so
+that curvature-cancellation and LINK-2 marginality would be the *same
+condition* — was suggested by a four-significant-figure match in the
+baseline variant (ε\* = 0.058929 vs 1/|k(ε\*)| = 0.05895). Pre-registered
+test: the product ε\*·|k(ε\*)| across all six robustness variants
+(`code/2901_eps_k_identity_test.py`):
+
+| variant | ε\* | \|k(ε\*)\| | **ε\*·\|k\|** |
+|---|---|---|---|
+| m=2, r=[1,12] | 0.058929 | 16.963 | **0.99962** |
+| m=2, r=[1,20] | 0.059104 | 17.719 | **1.04727** |
+| m=2, r=[2,12] | 0.446202 | 7.672 | **3.42338** |
+| m=2, r=[0.5,12] | (no zero-crossing ≤ 1) | — | — |
+| m=1, r=[1,12] | 0.171030 | 45.333 | **7.75325** |
+| m=3, r=[1,12] | 0.029865 | 9.303 | **0.27784** |
+
+> **NOT STRUCTURAL. The baseline match is a normalization accident.**
+> Registered so that 0.99962 is never banked by a later reader. This is
+> the eighth favourable convergence of the inertia arc to die under
+> interrogation; it survived one hour.
+
+**Post-mortem (why the identity had no right to hold):** the chain
+ε = μ silently equated the DP's arriving amplitude (units 1/L²) with the
+CP's summed drive (amplitude × volume measure / L^m) — a unit mismatch
+absorbed by the arbitrary normalization of the baseline variant. The
+emission strength A and background sum S_bg enter the two sides
+differently, and how they enter depends on whether the DP's re-emission
+scales with its received amplitude — a model choice. **Which is precisely
+the founder's point: at the emergent-model level these coefficients are
+bookkeeping, and their relations are model-dependent. The primitive-level
+computation is the only arbiter.**
+
+## §8 — WHAT SURVIVES, AND THE REVISED ROADMAP
+
+**Survives (robust across variants):** entrainment *cancels* the β²
+curvature — a zero-crossing ε\* exists with healthy k in every variant
+that has one. The mechanism stands.
+
+**Does not survive:** any toy-level determination of *where the substrate
+sits* relative to ε\*. ε\* itself moves by an order of magnitude with the
+inner cutoff (0.059 → 0.45 as rmin goes 1 → 2), i.e. the cancellation is
+dominated by near-field DPs, where the toy's cutoffs are arbitrary but
+the substrate's (lattice spacing, PSR, emission strength) are pinned.
+
+**Therefore the deciding computation is the one already registered in
+CONJ-FP-1 as the new executable route: the AUTOMATON MOVING-SOURCE TEST,
+extended per the founder's ruling to a MOBILE Sea** — every Sea DP
+displaced per Moment by the same primitive from the DI-bit sum on its own
+GP, nothing else. One run measures, at machine-language level:
+
+1. **Condition B** — instantaneous vs retarded pointing of the moving
+   source's field (coasting viability);
+2. **the forced entrainment** — the Sea's actual co-moving profile, with
+   no ε anywhere in the code;
+3. **the dressed drive's curvature** — the pre-registered discriminator
+   from §3: c → 0 and c₄ → 0 (Newton I as travelling-family existence)
+   vs residual curvature (conflict survives, weakened).
+
+**Implementation decision under the ruling (recorded for correction if
+the picture disagrees):** bound DPs are moved **per-CP** — each CP of a
+pair responds solely to the sum on its own GP. Arc stretch, restoring
+behaviour, and compliance are then *outputs* of the run, never inputs.
