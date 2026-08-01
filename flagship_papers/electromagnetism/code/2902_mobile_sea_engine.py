@@ -137,7 +137,12 @@ def moment_step(pos, q, hist, t, T_max, beta, mobile_sea=True,
     (SSV_net vector, SSV_abs), and the retarded-time table for
     warm-starting."""
     n_it = 14 if tr_guess is not None else 28
-    tr, amp, u = field_at(pos, np.arange(len(pos)), hist, t, T_max,
+    if mobile_sea:
+        recv, ridx = pos, np.arange(len(pos))
+    else:
+        # frozen Sea: only the source moves/measures -- field at source only
+        recv, ridx = pos[:1], np.arange(1)
+    tr, amp, u = field_at(recv, ridx, hist, t, T_max,
                           n_iter=n_it, tr_guess=tr_guess)
     sgn = q[None, :] * q[:, None]                    # (recv, emit)
     net = np.einsum('re,re,rec->rc', amp, sgn, u)
