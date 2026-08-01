@@ -27,8 +27,13 @@ def build_sea(rho_min=1.0, rho_max=8.0, x_lo=-16.0, x_hi=16.0, spacing=2.5):
     """Neutral pairs on a regular grid in a cylinder about the x-axis.
     Initial dipole orientation transverse-radial (x-reflection symmetric).
     Returns pos (N,3), charge (N,), pair index array (Np,2)."""
-    xs = np.arange(x_lo, x_hi + 1e-9, spacing)
-    ys = np.arange(-rho_max, rho_max + 1e-9, spacing)
+    # Reflection-symmetric grids (Patch 2903 defect fix: arange-built
+    # grids were asymmetric, e.g. xs = -16..+14, seeding a spurious
+    # fore/aft bias into the axial observable).
+    kx = int(np.floor(min(abs(x_lo), abs(x_hi)) / spacing))
+    xs = spacing * np.arange(-kx, kx + 1)
+    ky = int(np.floor(rho_max / spacing))
+    ys = spacing * np.arange(-ky, ky + 1)
     centres, orient = [], []
     for x in xs:
         for y in ys:
@@ -79,15 +84,33 @@ class History:
         return (1 - f) * self.H[m0, e_idx] + f * self.H[m1, e_idx]
 
 
-def field_at(recv_pos, recv_idx, hist, t, T_max, n_iter=28):
+def field_at(recv_pos, recv_idx, hist, t, T_max, n_iter=28, tr_guess=None):
     """SSV_net (M,3) and SSV_abs (M,) at receiver positions recv_pos
     (their CP indices recv_idx, for self-exclusion), from all N emitters,
-    retarded condition solved by vectorized bisection."""
+    retarded condition solved by vectorized bisection. If tr_guess (the
+    previous Moment's retarded times) is given, brackets are warm-started
+    at tr_guess + 1 +/- 3 Moments and n_iter=14 suffices for ~4e-4
+    precision; rows where the warm bracket fails fall back to the full
+    bracket (validated: warm and cold solutions agree to bracket
+    precision)."""
     N = hist.N
     M = len(recv_pos)
     e_idx = np.broadcast_to(np.arange(N)[None, :], (M, N))
-    lo = np.full((M, N), t - T_max)
-    hi = np.full((M, N), float(t))
+    if tr_guess is not None:
+        lo = tr_guess + 1.0 - 3.0
+        hi = np.minimum(tr_guess + 1.0 + 3.0, float(t))
+        # validity: g(lo) < 0 < g(hi)
+        def gval(tq):
+            xe = hist.interp(tq, e_idx)
+            return (np.linalg.norm(recv_pos[:, None, :] - xe, axis=2)
+                    - CLAT * (t - tq))
+        bad = (gval(lo) > 0) | (gval(hi) < 0)
+        lo = np.where(bad, t - T_max, lo)
+        hi = np.where(bad, float(t), hi)
+        n_iter = max(n_iter, 24) if bad.any() else n_iter
+    else:
+        lo = np.full((M, N), t - T_max)
+        hi = np.full((M, N), float(t))
     for _ in range(n_iter):
         mid = 0.5 * (lo + hi)
         xe = hist.interp(mid, e_idx)
@@ -104,14 +127,18 @@ def field_at(recv_pos, recv_idx, hist, t, T_max, n_iter=28):
     amp = np.where(self_mask, 0.0, amp)
     with np.errstate(invalid='ignore'):
         u = dvec / np.where(R[..., None] > 0, R[..., None], 1.0)
-    return None, amp, u  # composed by caller with charges
+    return tr, amp, u  # tr returned for warm-starting the next Moment
 
 
-def moment_step(pos, q, hist, t, T_max, beta, mobile_sea=True):
+def moment_step(pos, q, hist, t, T_max, beta, mobile_sea=True,
+                tr_guess=None):
     """One Moment: compute SSV at every CP, move Sea CPs by the
-    primitive, advect the source. Returns new pos and the source's
-    (SSV_net vector, SSV_abs)."""
-    _, amp, u = field_at(pos, np.arange(len(pos)), hist, t, T_max)
+    primitive, advect the source. Returns new pos, the source's
+    (SSV_net vector, SSV_abs), and the retarded-time table for
+    warm-starting."""
+    n_it = 14 if tr_guess is not None else 28
+    tr, amp, u = field_at(pos, np.arange(len(pos)), hist, t, T_max,
+                          n_iter=n_it, tr_guess=tr_guess)
     sgn = q[None, :] * q[:, None]                    # (recv, emit)
     net = np.einsum('re,re,rec->rc', amp, sgn, u)
     ab = amp.sum(axis=1)
@@ -124,7 +151,7 @@ def moment_step(pos, q, hist, t, T_max, beta, mobile_sea=True):
             / np.where(nn[:, None] > 0, nn[:, None], 1.0)
         new[1:] = pos[1:] + step
     new[0, 0] = pos[0, 0] + beta      # prescribed source advection
-    return new, src_net, src_ab
+    return new, src_net, src_ab, tr
 
 
 def run(beta, rho_min=1.0, rho_max=8.0, x_half=16.0, spacing=2.5,
@@ -136,16 +163,24 @@ def run(beta, rho_min=1.0, rho_max=8.0, x_half=16.0, spacing=2.5,
     T_max = np.sqrt((2 * x_half + 20) ** 2 + (2 * rho_max) ** 2) + 5
     hist = History(pos, beta, int(np.ceil(T_max)) + 2, T_eq + T_meas)
     Dx, AB = [], []
+    tr = None
+    drift_sum = None
     for t in range(T_eq + T_meas):
-        pos, src_net, src_ab = moment_step(pos, q, hist, t, T_max,
-                                           beta, mobile_sea)
+        prev = pos.copy()
+        pos, src_net, src_ab, tr = moment_step(pos, q, hist, t, T_max,
+                                               beta, mobile_sea, tr)
         hist.append(pos)
         if t >= T_eq:
             Dx.append(src_net[0])
             AB.append(src_ab)
+            step_x = pos[1:, 0] - prev[1:, 0]
+            drift_sum = step_x if drift_sum is None else drift_sum + step_x
         if verbose and t % 20 == 0:
             print(f"  t={t:4d}  D_x={src_net[0]:+.3e}  ab={src_ab:.3f}")
-    return float(np.mean(Dx)), float(np.std(Dx)), float(np.mean(AB)), pos
+    rel = pos[1:, :] - pos[0, :]          # final positions rel. source
+    drift = drift_sum / max(len(Dx), 1)   # mean Sea step_x per Moment
+    return (float(np.mean(Dx)), float(np.std(Dx)), float(np.mean(AB)),
+            pos, rel, drift)
 
 
 # ------------------------------------------------------------ validations
@@ -180,7 +215,7 @@ def v2():
     hist = History(pos, 0.0, 30, 501)
     seps = []
     for t in range(500):
-        pos, _, _ = moment_step(pos, q, hist, t, 25.0, 0.0, True)
+        pos, _, _, _ = moment_step(pos, q, hist, t, 25.0, 0.0, True)
         hist.append(pos)
         seps.append(np.linalg.norm(pos[1] - pos[2]))
     seps = np.array(seps)
@@ -192,7 +227,7 @@ def v2():
 
 def v3():
     """beta = 0 floor: axial drive from symmetry violation only."""
-    D, sd, ab, _ = run(0.0, T_eq=30, T_meas=30)
+    D, sd, ab, _, _, _ = run(0.0, T_eq=30, T_meas=30)
     print(f"  F0 = |D(0)| = {abs(D):.3e}   (std/Moment {sd:.3e}, "
           f"SSV_abs at source {ab:.3f})")
     return abs(D)
@@ -200,7 +235,7 @@ def v3():
 
 def v4():
     """Smoke: moving source, mobile Sea, short run; drive NOT read."""
-    _, _, _, pos = run(0.10, T_eq=20, T_meas=10)
+    _, _, _, pos, _, _ = run(0.10, T_eq=20, T_meas=10)
     disp = np.linalg.norm(pos[1:], axis=1)
     print(f"  final Sea extent: max|x| = {disp.max():.2f} "
           f"(finite => no blow-up); step cap held by construction")
@@ -223,6 +258,6 @@ if __name__ == '__main__':
         for kv in sys.argv[3:]:
             k, v = kv.split('=')
             kw[k] = float(v) if '.' in v else int(v)
-        D, sd, ab, _ = run(beta, verbose=True, **kw)
+        D, sd, ab, _, _, _ = run(beta, verbose=True, **kw)
         print(f"D({beta}) = {D:+.6e}   std/Moment {sd:.3e}   "
               f"SSV_abs {ab:.4f}")
