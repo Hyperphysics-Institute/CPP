@@ -5,7 +5,7 @@
   Master dashboard: Research_Frontier.md
 -->
 
-## Electroweak Sector (EW) — 6 problems
+## Electroweak Sector (EW) — 8 problems
 
 ### OPEN-EW-1: Derive η ~ 10⁻¹⁷ (Planck-to-Weak Scale Ratio)
 **Status:** OPEN
@@ -87,6 +87,8 @@
 ---
 
 **[Patch 0743 — physical cartoon recorded (not yet absorbed): B field as rotating DPs.** A moving charge radially polarizes the DPs (radial pole displacement = E) and swings each DP's like-pole around an axis (rotation = B) — so there is no separate B field, only rotating DPs; E and B are two motions of one DP response (hence μ₀,ε₀ share one stiffness, reinforcing the Patch 0740 Z₀-geometric result). The mathematical form exists in the corpus (EW-5 SSV-curl field strength; c06 B=curl-of-pattern); the **mechanical cartoon does NOT** — captured in `series_electroweak/development/b_field_as_rotating_dp_physical_cartoon.md` (Thomas's interpretation, w/ Grok). Small EM-sector task to fold it formally into EW-1 (Maxwell derivation) / c06 as the physical paragraph under the math.]**
+
+**[Patch 2926 — arc queue item CLOSED: c = 1/5 DERIVED ANALYTICALLY.** The 2884/2900 round-trip drive admits an exact closed form — the outgoing-leg discriminant is a perfect square, d_out = r(1+2βμ+β²)/(1−β²), radial/angular dependence factorizes exactly (deriving the measured m- and r-range invariance), and D(β) = 2πR_m Σ 8β^{2n+1}/[(2n−1)(2n+1)(2n+3)] — the second difference of the even sphere moments. **c = 1/5 EXACT; c₄ = 1/35 exact (7/240 candidate REFUTED — fit-truncation artifact, explained to 3×10⁻⁵); c_{2n} = 3/[(2n−1)(2n+1)(2n+3)].** Confronted with the banked direct bound c = +0.91 ± 2.40 (Patch 2924): consistent. Sharper targets inherited by the entrainment cancellation programme and OPEN-HYB-SHAPE-1. Record: `flagship_papers/electromagnetism/sketches/c_one_fifth_analytic_derivation.md`; script `code/2926_c_one_fifth_derivation.py`. Sketch-tier per arc precedent; no items opened/closed; ledger untouched.]**
 
 ### OPEN-EW-ANTISCREEN-1: Collective Anti-Screening of the Bonded ZBW Sea
 **Status:** OPEN
