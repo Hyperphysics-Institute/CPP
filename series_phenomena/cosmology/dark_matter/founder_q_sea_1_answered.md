@@ -84,6 +84,42 @@ patch, with this line as its pre-registered bar.
    computed or implied here. Ledger untouched: six of seven; PR7
    PARTIAL; B7 holds; Candidate (B) 79.5%; 2855 PROVISIONAL.
 
+## §3b — THE NEUTRAL-PARTICLE BAR: FOUNDER ANSWER (Patch 2931, same day)
+
+The §2 bar ("neutral-particle interferometry through a magnetic-arc
+carrier") was answered by the founder immediately. Verbatim:
+
+> The neutrality of the object is not an issue. The neutron is
+> composed of three quarks, UDD, with a hTetra core holding three
+> quarks. It is not just that the quarks are charged; it is that every
+> CP composing the quarks is charged, and all have a kinetic energy
+> storage, which is additive and results in the dB wavelength of the
+> neutron (or neutral atomic structure).
+
+**Worker mapping (recorded as the derivation's required structure, not
+as a completed derivation):** additivity of constituent kinetic-energy
+storage is exactly the ingredient the harmony-of-phases route needs.
+If every constituent CP carries a ZBW clock, and clock frequencies add
+(total ω = Mc²/ℏ with M the composite mass), then a rigidly
+translating bound state imprints ONE beat pattern at
+λ = h/(γMv) = **h/P_total** — the composite's momentum, which is what
+neutron, atom, and C₆₀ interferometry measure. The bar therefore
+REFINES rather than closes:
+
+> **CAND-QM-DB-1 bar (v2):** the derivation must show that bound
+> constituents' CP-level phases cohere into a single composite clock
+> at total mass (frequency additivity + binding coherence), yielding
+> h/P_total and not a superposition of per-constituent wavelengths.
+> The founder's additivity postulate is the stated mechanism; showing
+> the coherence is the derivation's job.
+
+Charge-neutrality is thereby dissolved as an objection at the picture
+level (net-zero charge ≠ zero CP-level coupling), and the record
+notes the corollary: in this picture **λ_dB is CP-level universal** —
+anything with mass beats, because mass itself is stored CP kinetic
+energy. Status: picture-level, founder-ruled; derivation still
+CANDIDATE; nothing numeric.
+
 ## §4 — CROSS-LINKS
 
 CAND-QM-DB-1, if derived, bears on OPEN-QM-1 (matter-wave
