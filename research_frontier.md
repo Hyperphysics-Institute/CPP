@@ -54,7 +54,7 @@ The active open problems, conjectures, and propositions are organized by sector 
 | FP | [`frontier_sectors/FP.md`](frontier_sectors/FP.md) | Flagship Papers — apex layer (F-line + SF-line) | 16 active, 1 resolved |
 | SS | [`frontier_sectors/SS.md`](frontier_sectors/SS.md) | Strong Sector (includes SS-specific propositions and conjectures from SS-5, SS-6, SS-7) | 18 active, 1 retired |
 | SM | [`frontier_sectors/SM.md`](frontier_sectors/SM.md) | Standard Model Emergence | 11 |
-| EW | [`frontier_sectors/EW.md`](frontier_sectors/EW.md) | Electroweak Sector | 6 |
+| EW | [`frontier_sectors/EW.md`](frontier_sectors/EW.md) | Electroweak Sector | 8 |
 | QM | [`frontier_sectors/QM.md`](frontier_sectors/QM.md) | Quantum Mechanics | 5 |
 | SR | [`frontier_sectors/SR.md`](frontier_sectors/SR.md) | Special Relativity / Gravity | 10 |
 | SD | [`frontier_sectors/SD.md`](frontier_sectors/SD.md) | Foundations / Superdeterminism | 6 |

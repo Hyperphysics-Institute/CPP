@@ -87,3 +87,31 @@
 ---
 
 **[Patch 0743 — physical cartoon recorded (not yet absorbed): B field as rotating DPs.** A moving charge radially polarizes the DPs (radial pole displacement = E) and swings each DP's like-pole around an axis (rotation = B) — so there is no separate B field, only rotating DPs; E and B are two motions of one DP response (hence μ₀,ε₀ share one stiffness, reinforcing the Patch 0740 Z₀-geometric result). The mathematical form exists in the corpus (EW-5 SSV-curl field strength; c06 B=curl-of-pattern); the **mechanical cartoon does NOT** — captured in `series_electroweak/development/b_field_as_rotating_dp_physical_cartoon.md` (Thomas's interpretation, w/ Grok). Small EM-sector task to fold it formally into EW-1 (Maxwell derivation) / c06 as the physical paragraph under the math.]**
+
+### OPEN-EW-ANTISCREEN-1: Collective Anti-Screening of the Bonded ZBW Sea
+**Status:** OPEN
+**Sector(s):** EW, SD
+**Priority:** HIGH
+**One-line statement:** The bonded ZBW Sea's persistent static response to a +1 source is polarization-REVERSED (+ member leans toward the source) while an isolated pair polarizes normally — derive the many-body inversion mechanism.
+**Dependencies:** None blocking (measured; convention audited clean at Patch 2918)
+**Cross-sector connections:** Statics rebuild (suspended 2892); ε₀/screening story of SF-6; the β⁰ core of the co-moving pattern (Patch 2917–2922 anatomy)
+**Current best lead:** Founder-physics question candidate — what in the pair–pair ZBW bonding inverts the collective polarization? Data: `flagship_papers/electromagnetism/data/2918_control_fields.json`.
+**Paper(s):** SF-6 successor / SF-8
+**Registered:** Patch 2918; frontier entry Patch 2925.
+**Last updated:** 1 August 2026
+
+---
+
+### OPEN-HYB-SHAPE-1: Hybrid Pipeline High-β Shape Failure — Mechanism Unidentified
+**Status:** OPEN
+**Sector(s):** EW, WORKFLOW
+**Priority:** MEDIUM (deprioritized: the direct instrument answers the arc's question)
+**One-line statement:** The hybrid Stage-2 drive turns over at β ≈ 0.15 while the direct measurement shows sustained growing drive through β = 0.30 (12σ sign-level refutation at Patch 2924) — identify the hybrid's high-β failure mechanism.
+**Dependencies:** None blocking
+**Cross-sector connections:** OPEN-K1-MEMORY-1 adjacency (pattern-window convergence); the parity-defect class (Patch 2920)
+**Current best lead:** Prime suspect (window-support truncation growing with β) tested and KILLED at Patch 2924 §2. Remaining candidates: co-moving pattern non-convergence at short T; β³ basis leakage; kernel-weighted truncation.
+**Paper(s):** none yet
+**Registered:** Patch 2924; frontier entry Patch 2925.
+**Last updated:** 1 August 2026
+
+---
