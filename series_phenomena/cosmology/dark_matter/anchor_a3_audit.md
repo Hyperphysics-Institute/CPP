@@ -77,3 +77,8 @@ panel. The CONV-001 motion bundle should now carry three items:
 RMS/median freeze, the "≪" quantification, and a call for A5-class
 n_DP-sensitive channels. Ledger untouched: six of seven; PR7 PARTIAL;
 B7 holds; Candidate (B) 79.5%; 2855 PROVISIONAL.
+
+
+---
+
+**ADDENDUM (Patch 2934): FOUNDER-Q-SEA-2 ANSWERED — READING (iii), the collective mode** (verbatim and consequences at `founder_q_sea_2_answered.md`). The §2 fork is dissolved rather than chosen: the Compton frequency is an emergent collective resonance of the enrolled DP cohort, so **A3 is DISQUALIFIED as a Sea-density anchor** (it measures the particle's enrolled energy). With A4 blocked behind OPEN-FP-6-CONSTANTS and no n_DP-sensitive leg, the 'cannot close from the shipped corpus' finding is FULLY FILED; path forward: FP-6-CONSTANTS + CONV-001 dispatch with the A5-channel call.
