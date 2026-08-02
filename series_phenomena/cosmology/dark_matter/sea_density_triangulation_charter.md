@@ -156,3 +156,15 @@ K1 precedent (no frontier_sectors entry; the dashboard's campaign
 pointer suffices). What this charter changes: the item now has a
 pre-registered structure that a swarm can execute without any step
 being invented after its answer is visible.
+
+---
+
+**ADDENDUM (Patch 2930, 1 Aug 2026): FOUNDER-Q-SEA-1 ANSWERED —
+READING (2).** The founder rules the fine-mesh/response reading and
+postulates the DP-sea magnetic (arc) polarization as carrier; verbatim
+answer, sharpened derivation candidate CAND-QM-DB-1, and applied
+consequences at `founder_q_sea_1_answered.md`. Binding changes to this
+charter: A1/A2 are bounds-only (§4 frozen consequence); **A2 shares
+ZBW ancestry with A3 and the pair counts as ONE independent leg** —
+the ≥3 requirement now needs A4 plus at least one new anchor; the §4
+numeric gate is cleared; all other pre-number gates stand unchanged.
