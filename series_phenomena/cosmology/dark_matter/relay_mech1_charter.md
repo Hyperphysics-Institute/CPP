@@ -221,3 +221,24 @@ may now be chartered in parallel with E-1/E-2 per §4 there). E-3:
 PARTIAL — one question outstanding: does the re-radiated DI-bit
 carry the arriving DI-bit's phase? Yes ratifies the coherent front;
 no reopens F-1.
+
+---
+
+## ADDENDUM (Patch 2957) — PHASE ANSWERED NO; v1 RETIRED; v2 (ADDRESS-DIRECTED) PROPOSED; FORK-A/B IS THE GATE
+
+Founder ruling (verbatim at
+`founder_registration_2957_no_phase_equalization.md`): DI-bits carry
+NO phase — content is {charge, type, origin address}, count-like
+magnitude, synchronous absorb/emit. Per the frozen 2956 §3 rule the
+phase-Huygens synthesis (§3 above) is RETIRED as posed; F-1
+reopened and immediately re-addressed by synthesis v2: ORIGIN
+ADDRESS as the gradient, outward-steered relay ⇒ ballistic front +
+counting inverse-square, with the founder's new EQUALIZATION
+mechanism (P-4) as reservoir maintenance (signal/reservoir
+distinction required). Outstanding gate: Fork-A (address-steered
+outward re-emission) vs Fork-B (spherical re-emission). Glossary
+DI-bit entry conflict opened (TODO-2957-A) and QM-1 phase-provenance
+audit opened (TODO-2957-B); §2 R-1/R-2 WITHDRAWN as evidence.
+E-2's toy verification is re-scoped to the v2 mechanism and waits on
+the fork ruling; E-1 (AUTOMATON re-read) proceeds unchanged and now
+also classifies the implementations against Fork-A/B.

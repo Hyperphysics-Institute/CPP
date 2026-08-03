@@ -222,6 +222,22 @@ The Session 36 P1 audit found that all originally-P1 items except TODO-002 were 
 
 ## P2 — At Thomas's discretion (not blocking next paper)
 
+### TODO-2957-A — Correct master-glossary DI-bit entry per founder phase ruling (P1)
+
+Founder ruling 2 Aug 2026 (Patch 2957 P-1): DI-bits carry {charge, type, origin address}, count-like
+magnitude — NO phase. Registered glossary entry claims "phase, amplitude, and polarisation" — conflict.
+Correct the entry with the ruling cited and the superseded text preserved in a history note
+(anti-erasure). Blocked only by nothing; execute after the Fork-A/B ruling lands so one edit carries
+the full pinned content.
+
+### TODO-2957-B — QM-1 phase-provenance audit (P1)
+
+If DI-bits carry no phase, where does quantum phase live? Candidate: the DP-displacement PATTERN
+level (Sea polarization configuration), DI-bits as sub-pattern carriers. Audit QM-1's shipped
+"hopping amplitude → Schrödinger" derivation for survivability under re-grounding. Until resolved,
+QM-1 lineage may NOT be cited as evidence in the RELAY-MECH-1 arc (2957 §3 withdrawal). Registered
+Patch 2957.
+
 ### TODO-2952-A — Reconcile "ZDC" (SF-6 shipped vocabulary) with the founder's ZBW-chain picture (P2) — RESOLVED Patch 2953/2954
 
 At FOUNDER-Q-XI2-1 (2 Aug 2026) the founder did not recognize "ZDC pattern"; ZDC ("Zero-point
