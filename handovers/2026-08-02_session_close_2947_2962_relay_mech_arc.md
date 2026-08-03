@@ -1,4 +1,4 @@
-# SESSION CLOSE — Patches 2947–2961 (2 Aug 2026): the relay-mechanism arc
+# SESSION CLOSE — Patches 2947–2962 (2 Aug 2026): the relay-mechanism arc
 
 ## What happened
 FP-6-CONSTANTS scoped (2947). A5-SHOT/A5-LENS preregged (2948/2949). ξ₂ arc: prereg (2950),
@@ -10,7 +10,8 @@ conflict + QM-1 audit opened at P1 (2957); VERSION B adopted, three CP types reg
 A-line flag (2958); E-2 toy 7/7 PASS, FACT G1 confirmed in mechanism, band finding F-E2-3
 (2959); band default PROTOCOL-D1, transit-imprint fork posed (2960); double-counting resolved by
 PRINCIPLE-R1 (sampling not consumption, pending ratification) + K1-MEMORY derivation charter
-filed (2961).
+filed (2961). Handover audit executed at founder request (2962): fragment resolved as retracted;
+A-line item restored to pendings; no other discrepancies found — canonical pointer unchanged.
 
 ## Canonical next pointer
 **(1) K1-MEMORY W-1: the T-1 detailed-balance theorem** (charter
@@ -21,8 +22,7 @@ TODO-2957-A glossary DI-bit correction (unblocked; anti-erasure history note). (
 QM-1 phase-provenance audit (P1; QM-1 uncitable in this arc until closed). (5) Combined CONV-001
 cycle: E-1+E-2 + the 2951 roadblock item + PR2 verdict ambiguity. Founder pendings: R1
 ratification (one word); FOUNDER-Q-RELAY-2 formally closed by R1 if ratified; subquantum-
-divisions glossary candidate; SF-6 v1.0.1 recompile; truncated message fragment completion
-(2961 §1). Density lane unchanged (A5-SHOT/A5-LENS preregged, not computed); CAND-QM-DB-1
+divisions glossary candidate; SF-6 v1.0.1 recompile; A-LINE ITEM (2958 V-3): three-Conscious-Point-types ontology awaits axiom reconciliation via the SR-2/A3′ registered-change process — omitted from this list at 2961, added by the 2962 audit; ~~truncated fragment~~ RESOLVED 2962: retracted by founder, no content. Density lane unchanged (A5-SHOT/A5-LENS preregged, not computed); CAND-QM-DB-1
 remains parked behind the root-node work per the 2953 re-sequencing.
 
 ## Ledger (unchanged all session)

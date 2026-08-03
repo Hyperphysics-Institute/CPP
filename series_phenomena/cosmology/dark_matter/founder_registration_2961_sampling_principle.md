@@ -20,8 +20,12 @@ quantity appears.**
 (A trailing fragment — "…of the DI-Bits, or radiate a message
 indicating that the DI-bits had an effect, were acting as though
 they had been influenced by the DI-bits in passing, that they
-would" — arrived truncated; registered as incomplete, completion
-invited if it carried content.)
+would" — arrived truncated; registered as incomplete at Patch 2961.
+RESOLVED Patch 2962: the founder confirms the text was unseen
+draft below the typing line, meant to be erased — status
+RETRACTED BY FOUNDER; the fragment is preserved here per
+anti-erasure discipline but carries no physics content and must
+not be cited.)
 
 ## §2 — PRINCIPLE-R1 (worker proposal, pending founder ratification): SAMPLING, NOT CONSUMPTION
 
