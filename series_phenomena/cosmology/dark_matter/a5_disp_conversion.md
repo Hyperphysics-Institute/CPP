@@ -1,3 +1,14 @@
+# [VOIDED AT PATCH 2944 — SUPERSEDED BY `a5_disp_conversion_reissue.md` (PATCH 2945)]
+
+**This document is VOID per the literal terms of its own PANEL-PENDING
+banner: the combined review (Patch 2944 adjudication) ratified CASE-Q
+WITH a condition, and "conditions" triggers the void. The identical
+ceiling is reissued under the unchanged frozen 2942 formula with the
+expanded conditionality stack at `a5_disp_conversion_reissue.md`.
+Preserved verbatim below for the audit trail; no content edited.**
+
+---
+
 # A5-DISP CONVERSION — THE FIRST REGISTERED d_DP CEILING [PANEL-PENDING]
 
 **Patch 2943 (2 Aug 2026). Mechanical application of the frozen rules
