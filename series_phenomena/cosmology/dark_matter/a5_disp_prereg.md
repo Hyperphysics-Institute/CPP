@@ -111,3 +111,68 @@ session.
 Nothing moves: six of seven; PR7 PARTIAL; B7 holds; Candidate (B)
 79.5%; 2855 PROVISIONAL; M1/M2 frozen per Patch 2936. No value of η,
 d_DP, n_DP, ξ₁, or any experimental bound appears in this document.
+
+
+---
+
+## ADDENDUM (Patch 2938) — S2 CORRECTED AFTER FOUNDER CHALLENGE; OPERATIVE CONCLUSION SURVIVES ON SHARPER GROUNDS
+
+**The founder challenged S2's premise** ("chirality has not been proven
+to be a primitive... calculated as emergent, or leaning that way...
+still being adjudicated as to its originating event, which may be the
+same event that precipitated the matter-antimatter asymmetry").
+Registry verification (grep, `frontier_sectors/CHIR.md` + `SD.md`)
+adjudicates:
+
+**S2 as written OVERSTATED.** The registered status is: the
+determination arc (Patch 0903) concluded chirality is *"emergent down
+to one currently-identified irreducible primitive (FI-C-9)"*, with V3
+confirmed by THEO-CHIR-CAPACITY-1 (Patch 0927) **conditional on
+Mechanism A and two named sub-conditions** (one carried as not
+derived). Three routes against primitive status remain OPEN:
+OPEN-CHIR-1d-β (the H₄→I₄ symmetry-breaking dynamics that would
+eliminate FI-C-9); the **V2 reopener, explicitly untouched**, via the
+SM CP/T phase **OPEN-SM-4 (CPT-linked)** — the founder's
+matter-antimatter originating-event reading, verbatim in the
+registry's own cross-links; and umbrella manifestation (v)
+(cosmological-vacuum asymmetry), the one leg of five still
+structurally unidentified. S2 is hereby restated: *"FI-C-9 is
+confirmed primitive at current rigor, conditionally, with the
+emergence-by-cosmological-event route open."* The founder's
+recollection described the open half correctly; the original S2
+stated the closed half without its conditions.
+
+**The operative conclusion (linear term not symmetry-forbidden)
+SURVIVES, on grounds the correction sharpens:** for propagation, the
+origin of the bias is immaterial — what matters is whether the
+ambient medium is chiral in the CURRENT epoch. The corpus answers
+this independently of the primitive/emergent question:
+**THEO-SD-CHIR-2 closed umbrella manifestation (iii) —
+electromagnetic handedness, the qDP/eDP polarization sector — at
+full Layer 3 with registered coupling magnitude |M| = χ/6 = φ⁻³/6 ≈
+0.0394.** Photons traverse a chiral Sea today whether the
+enantiomorph sign was frozen primitively or nucleated at the
+matter-antimatter event. The P-protection premise of S1 fails either
+way.
+
+**Two binding upgrades to §4 (the relay computation):**
+1. **Input upgrade:** the chirality coupling into the EM sector is
+   not an unknown O(1) — the computation shall use the registered
+   THEO-SD-CHIR-2 structure (χ/6 magnitude, A_{2u}(D_{5d}) operator
+   content, cage-shell averaging) as its chirality input.
+2. **Conditionality propagation extended:** any CASE conclusion now
+   inherits "conditional on Mechanism A" from BOTH legs (the
+   TARROW-2 temporal arrow AND the CAPACITY-1 spatial verdict with
+   its two named sub-conditions), and must state so. A CASE-L
+   falsifier-class finding additionally cannot be billed as
+   unconditional while OPEN-CHIR-1d-β and the OPEN-SM-4 V2 reopener
+   stand.
+
+**Cross-link registered:** if the relay computation lands in CASE-CB,
+the resulting polarization-rotation observable would bear on the
+ORIGIN question itself — a cosmological-distance rotation signal
+probes the bias in the early-epoch Sea, connecting A5-DISP to
+OPEN-SM-4 / manifestation (v). Noted as a cross-link, not a claim.
+
+Verdict bands of §2 otherwise UNCHANGED; nothing computed; no bounds
+cited.
