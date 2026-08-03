@@ -64,6 +64,7 @@ The Flagship Papers sit at the apex of the CPP programme, taking completed deriv
 **Cross-sector connections:** OPEN-K1-MEMORY-1; KINETIC-1; OPEN-FP-6-CONSTANTS (Stage A stiffness = same object); xi_2 arc (2950–2952; under M-A the 2951 edge-stencil machinery is reinstated at the sub-Moment tier); AUTOMATON dual relay implementations (robustness evidence, not adjudication); SR-1 0736 resolution-independence.
 **Paper(s):** feeds DM-1 (7th derivation), SF-6 successor content, QM-1 lineage.
 **Registered:** 2 Aug 2026, Patch 2953.
+**UPDATED 2 Aug 2026 (Patch 2955):** resolution charter FILED at `series_phenomena/cosmology/dark_matter/relay_mech1_charter.md` — founder physics F-1…F-5 registered verbatim (diffusion worry; DP-arc inertia model as magnetic-field substrate with fore-stretch/aft-contract storage; volume-vs-shell + holographic criterion; stopping-rule problem; photon-residual question); worker COHERENT-FRONT SYNTHESIS proposed (M-B as the emergent Huygens front of phase-coherent M-A; Moment = N sub-Moments = subquantum divisions; wake = the ξ₂ object; DP-arc ↔ anchored non-cancelling displacement identification POSED for founder ratification) — proposal status, unratified; discrimination criteria C-1…C-7 and CONV-011 timing frozen; work plan E-1 (AUTOMATON implementation re-read) → E-2 (lattice-Huygens toy verification) → E-3 (founder ratification) → K1-MEMORY derivation charter.
 
 ---
 
