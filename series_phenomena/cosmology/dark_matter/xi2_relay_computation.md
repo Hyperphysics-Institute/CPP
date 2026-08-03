@@ -162,3 +162,28 @@ underdetermination, banked as such. New registered items:
 FACTS G1–G3 (exact geometric moments and quadratic
 polarization-degeneracy, R1/R4-conditional), FOUNDER-Q-XI2-1, and
 the queued CONV-001 roadblock item.
+
+---
+
+## ADDENDUM (Patch 2952) — FOUNDER-Q-XI2-1 ANSWERED; G2's FORCING CLAIM WITHDRAWN; COMPLETIONS REFUTED AS PICTURES, PROOF ROLE INTACT
+
+The founder's answer (verbatim + applied consequences at
+`founder_q_xi2_1_answered.md`) settles the missing temporal object:
+per-Moment displacement is PSR-scale (registered: PSR = l_P rest
+frame, Moment = t_P; GPs at finer sub-Planck spacing per SR-1 Patch
+0736), SSV_net-determined, GP-quantized landing — **nothing advances
+one lattice edge per Moment**, and §5(a)'s edge-per-Moment option was
+never a live reading of the registered corpus (worker error,
+withdrawn). Consequences for THIS document: **FACT G2's claim that
+R4 + I_h transitivity force the uniform edge stencil as THE
+elementary relay step is WITHDRAWN** — the registered data includes
+the PSR mechanism, so the elementary step is PSR-scale; G2's moments
+stand as exact mathematics of the 12-direction stencil only. FACTS
+G1 and G3 are stencil-general and SURVIVE INTACT. Both §3
+completions are REFUTED as candidate relay pictures; their
+underdetermination-proof role stands. The re-entry derivation is
+posed sharp at `founder_q_xi2_1_answered.md` §4, including the
+frozen band note that a formula outcome ξ₂ = ζ·(l_P/d_DP)² matches
+no 2950 band and HALTS with pre-action review (it touches the ACTIVE
+ceiling's anchor semantics). CASE-DEP partially discharged; queued
+CONV-001 item updated per §6 there.
