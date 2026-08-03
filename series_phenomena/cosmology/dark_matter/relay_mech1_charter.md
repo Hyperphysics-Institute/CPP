@@ -205,3 +205,19 @@ PROPOSAL (unratified), criteria C-1…C-7, work plan E-1…E-3. No
 value of ξ₂, N, PSR, d_DP, n_DP, or any open quantity appears; the
 "10^30" and "~20 oscillations" figures retain their prior
 unverified/founder-picture statuses.
+
+---
+
+## ADDENDUM (Patch 2956) — E-3 PARTIAL; C-7 SATISFIED IN-PICTURE
+
+The founder's DP-arc mechanism message (registered verbatim at
+`founder_registration_2956_dp_arc_mechanism.md`) CONFIRMS the §3.6
+identification in his own vocabulary: arcs = anchored, co-moving,
+fore-charging/aft-discharging displaced-DP patterns, with the
+SSV_net differential sustaining Newton-1 constant velocity and the
+same structure producing the magnetic field (SF-6 curl linkage).
+C-7: SATISFIED-IN-PICTURE, formalization owed to the K1 arc (which
+may now be chartered in parallel with E-1/E-2 per §4 there). E-3:
+PARTIAL — one question outstanding: does the re-radiated DI-bit
+carry the arriving DI-bit's phase? Yes ratifies the coherent front;
+no reopens F-1.
