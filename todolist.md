@@ -222,6 +222,13 @@ The Session 36 P1 audit found that all originally-P1 items except TODO-002 were 
 
 ## P2 — At Thomas's discretion (not blocking next paper)
 
+### TODO-2946-A — Recover full verbatim Grok/Gemini/Muse/Qwen A5-DISP cycle returns (P2)
+
+Full texts recoverable from the 2 Aug 2026 session transcript (/mnt/transcripts) and Thomas's paste
+records; deferred at session close under context pressure per Step D deferral discipline. Evidentiary
+excerpts + GPT and Llama full texts already at review/a5_disp_combined_cycle/. Registered Patch 2946.
+
+
 ### TODO-001 — SS-9 Phase 7 Section A 7-companion documentation suite
 
 **Status**: DEFERRED pending external-feedback trigger; not a forward blocker for SS-10

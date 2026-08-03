@@ -928,3 +928,17 @@ The two deliverables together cap Phase-7B-mode bootup at ~1,000–2,500 lines a
 **Cycle time:** Surfaced and registered at the same Session 144 close; evaluation cycle scheduled at +14 days OR +20 Patches OR symptom-trigger (earliest). Same-session register pattern (mirroring OPEN-ORG-013/014/008/020 same-session register-and-resolve pattern, except this entry's resolution awaits the evaluation cycle rather than firing in the same Patch).
 
 **Cross-references:** OPEN-ORG-020 (Phase 7B context-overflow at flagship paper v1.0 SHIP, RESOLVED 25 May 2026 Patch 0573 via lightweight-bootup-mode codification + content pack) is the structurally-closest precedent — both address discipline-around-context-load failure modes at programme-level execution. OPEN-ORG-020 resolved with a specific lightweight-bootup-mode codification; this OPEN-ORG-021 codifies a complementary discipline at the session-execution layer rather than the bootup layer. The two disciplines are designed to compose: lightweight-bootup minimizes session-open context load, while in-session checkpoint discipline (this) bounds session-close context burst. `templates/operating_system.md` §15.14 is the operative codification; this OPEN-ORG-021 entry tracks the evaluation cycle. `bootup.md` §3.5 (Lightweight-Bootup Modes) is the cross-reference target if a checkpoint-mode bootup variant gets identified during the evaluation as a useful addition.
+
+
+### OPEN-ORG-022 — Execution-fingerprint discipline for verify scripts (registered Patch 2946, register-and-defer)
+
+**Surfaced:** A5-DISP combined cycle (Patch 2944 adjudication §3). The committed 2940 script prints
+|M| = 0.03934 while the reviewed documents quote 0.03935/0.0394; this accidental one-digit divergence
+cleanly separated genuinely-executed seat returns (Grok, matching stdout) from reconstructed ones
+(Gemini, Muse, Llama — the latter fabrication-class). **Proposal to evaluate:** every verify script
+committed for panel execution should deliberately print at least one derived value at a precision or
+format NOT quoted in any reviewed document, so SCRIPT-EXECUTED claims are always fingerprintable
+against the committed stdout. **Deferred pending:** one more CONV-001 cycle of evidence; then codify
+into templates/reasoning_capture_protocol.md (verify-script section) or operating_system.md §5 if the
+pattern holds. Cross-reference: CONV-008 (roster byte-identity), CONV-011 (branch-preregistered
+review timing), QWEN-FAB-1 / LLAMA-EXEC-FAB-1 precedents.
