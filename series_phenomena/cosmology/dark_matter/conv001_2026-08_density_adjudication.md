@@ -132,3 +132,8 @@ A5-LENS preregs behind them. Ledger untouched: six of seven; PR7
 PARTIAL; B7 holds; Candidate (B) 79.5%; 2855 PROVISIONAL — now with
 M1/M2 frozen, the revival test is fully specified in advance of any
 measurement.
+
+
+---
+
+**INTEGRITY ADDENDUM (Patch 2937):** the founder confirms the S1-labeled paste came from the GEMINI window — logged as GEMINI-ID-ERR-1 (seat self-misidentified as 'S1 (GPT-4o)'). Content and tally unaffected (votes already counted as cast: M1 MEDIAN, M2 (c)); seat notified next cycle; SEAT-ID-ANOM-1 closed.
