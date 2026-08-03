@@ -222,7 +222,7 @@ The Session 36 P1 audit found that all originally-P1 items except TODO-002 were 
 
 ## P2 — At Thomas's discretion (not blocking next paper)
 
-### TODO-2952-A — Reconcile "ZDC" (SF-6 shipped vocabulary) with the founder's ZBW-chain picture (P2)
+### TODO-2952-A — Reconcile "ZDC" (SF-6 shipped vocabulary) with the founder's ZBW-chain picture (P2) — RESOLVED Patch 2953/2954
 
 At FOUNDER-Q-XI2-1 (2 Aug 2026) the founder did not recognize "ZDC pattern"; ZDC ("Zero-point
 Dipole Chain") appears ~33 times in SHIPPED SF-6 v1.0 as a core term, while the founder's vocabulary
@@ -231,7 +231,7 @@ Task: confirm with the founder whether SF-6's ZDC definition faithfully renders 
 concept; then either record the synonymy in `master_glossary.md` or open an SF-6 terminology
 correction. Also pending the same pass: the founder's "subquantum divisions" definition (recorded
 verbatim at `series_phenomena/cosmology/dark_matter/founder_q_xi2_1_answered.md` §1) as a glossary
-candidate. Registered Patch 2952.
+candidate. Registered Patch 2952. RESOLUTION (2 Aug 2026): founder ruled — ZDC NOT entered in glossary; SF-6 rewritten replacing the ZDC acronym with ZBW-rooted "ZBW chain" language (NOT a strict synonym: chain of ZBW oscillators vs the oscillation; blind substitution avoided). Executed Patch 2954. Still pending from the same pass: founder ruling on the "subquantum divisions" glossary candidate.
 
 ### TODO-2946-A — Recover full verbatim Grok/Gemini/Muse/Qwen A5-DISP cycle returns (P2)
 

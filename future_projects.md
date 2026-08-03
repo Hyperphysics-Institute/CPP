@@ -457,3 +457,12 @@ leapfrog-class superluminal above σ²=3/5; leapfrog CFL excludes σ=1). Missing
 temporal order class + Moment-step ratio σ (KINETIC-1-adjacent; FP-6 Stage A/B cross-citation confirmed as
 unblock path). FOUNDER-Q-XI2-1 registered (physical-picture question per PD-006); CONV-001 roadblock item
 QUEUED. No value of ξ₂ minted; the ACTIVE ceiling unchanged at ξ₂ = 1 reference normalization.
+
+
+## FOUNDER-PICTURE-PHOTON-1 — photon emission as ~20-ZBW-oscillation envelope (registered 2 Aug 2026, Patch 2953)
+
+Founder picture, verbatim record at `series_phenomena/cosmology/dark_matter/founder_registration_2953_dibits_and_threads.md` §1:
+photonic emission (activated orbital → ground state) modeled as a series of ZBW oscillations radiating between orbital and
+nucleus, the envelope of ~20 oscillations constituting the photon. Status per the founder's own words: NOT rigorously
+validated. Filed as a validation-arc candidate; no number, no status beyond founder-picture. Natural adjacency: the
+OPEN-FP-RELAY-MECH-1 resolution (Patch 2953) and SF-6 successor content.

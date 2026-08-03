@@ -54,6 +54,19 @@ The Flagship Papers sit at the apex of the CPP programme, taking completed deriv
 **Paper(s):** SF-5 v1.0 SHIPPED Session 161, Patches 1520→1521; §4 + §8 (flagged, not headlined).
 **Registered:** 15 June 2026 Session 161, Patches 1520→1521.
 
+### OPEN-FP-RELAY-MECH-1: DI-bit Transport Mechanism — Sub-Moment Edge Relay vs Direct PSR Broadcast
+**Status:** OPEN — ROOT NODE of the DM-promotion dependency tree (see Patch 2953 map)
+**Sector(s):** FP (cross: DM, QM, SR)
+**Priority:** CRITICAL — blocks OPEN-K1-MEMORY-1 (= PR7 clause 2, the Candidate B promotion blocker), KINETIC-1 stiffness, FP-6-CONSTANTS Stage A, and the xi_2 re-entry
+**One-line statement:** Adjudicate and derive how DI-bits traverse from GP_origin to the PSR shell within one Moment: (M-A) sub-Moment relay along the 12 nearest-GP edges composing to one PSR per Moment, vs (M-B) direct GP_origin-to-GP_PSR broadcast — including what displacement memory the mechanism stores (the DP-arc inertia/stiffness content).
+**Provenance:** Founder registration 2 Aug 2026 (Patch 2953, verbatim §1): the mechanism was "an idea that we seemed to have just accepted and moved on" — an UNRATIFIED LOAD-BEARING ASSUMPTION now on the record. Registered corpus carries both pictures unadjudicated: glossary DI-bit entry (neighbour-CP propagation; QM-1 hopping amplitude → Schrödinger) vs glossary PSR entry + SF-6 per-PSR-shell advance (per-Moment reach = l_P).
+**Dependencies:** None blocking — this IS the root. Founder physical-picture input invited per PD-006.
+**Cross-sector connections:** OPEN-K1-MEMORY-1; KINETIC-1; OPEN-FP-6-CONSTANTS (Stage A stiffness = same object); xi_2 arc (2950–2952; under M-A the 2951 edge-stencil machinery is reinstated at the sub-Moment tier); AUTOMATON dual relay implementations (robustness evidence, not adjudication); SR-1 0736 resolution-independence.
+**Paper(s):** feeds DM-1 (7th derivation), SF-6 successor content, QM-1 lineage.
+**Registered:** 2 Aug 2026, Patch 2953.
+
+---
+
 ### OPEN-FP-6-CONSTANTS: First-principles electromagnetic constants without parameter tuning
 **Status:** **OPEN** — registered at SF-6 v1.0 SHIP (Patch 1607; integration Patch 1609)
 **Sector(s):** FP / SF-6 (electromagnetism)
