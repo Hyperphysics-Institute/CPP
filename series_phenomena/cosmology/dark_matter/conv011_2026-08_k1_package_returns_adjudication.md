@@ -87,3 +87,9 @@ Theorem-registry registration of T-1/T-2/T-3 was deferred at 2970 pending the pa
 ## §6 — Ledger at close of this patch
 
 **UNCHANGED: six of seven; PR7 PARTIAL (1B OPEN = K-MEM); B7 holds DM-1/DM-3 release banners; Candidate (B) 79.5% PROVISIONAL-FAVORABLE; 2855 PROVISIONAL; d_DP ceiling ACTIVE.** PR2 MET re-affirmed (frozen text governs). The 2838 second-order branch remains REGISTERED CONDITIONAL HYPOTHESIS. No value of ξ₂, ζ, η, d_DP, n_DP, or N minted. Name-collision standing maintained: PRINCIPLE-R1 (sampling, ratified) ≠ K-MEM (PR7 clause 2).
+
+---
+
+## §7 — Addendum (Patch 2972): A-1 attribution resolved
+
+Founder re-delivery (this session, post-2971): the return labeled "DeepSeek" was pasted inline-equivalent and is **byte-identical to the §1 I-1 duplicated text**. Ruling: **the DUP return is ATTRIBUTED TO DEEPSEEK.** Consequently **Copilot delivered NO return** in this round (two empty-attachment rounds + the intact round contained no distinct Copilot text). Recorded as COPILOT: NO-RETURN-RECEIVED — an absence, not a fabrication event; if a genuine Copilot return later surfaces it may be filed as a further addendum with zero capacity to alter the enacted verdicts (§3 closure argument, which covered exactly this case: every enacted item is unanimous among the returns received or amendment-accommodating, and a lone hypothetical OVERTURN routes to revision per the frozen charter). All §2 tallies stand as recorded with "DUP" now reading "DeepSeek"; DeepSeek's execution status stands at REASONED-UNVERIFIED (honorably declared). Integrity ledger unchanged: DeepSeek ×4 prior confirmed fabrication events (no new event this round), GPT ×1. The adjudication is **FINAL**.
