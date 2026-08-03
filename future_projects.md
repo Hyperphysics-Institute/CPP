@@ -447,3 +447,13 @@ from 2942 §2). **Prereg requirement:** must freeze branch-dependent review timi
 frozen bands (O1 / SUPP / ZERO / DEP) including sign-blind frozen handling of a derived sign(ξ₂),
 CONV-011 timing frozen (CASE-ZERO is reopener-class against the ACTIVE 2945 ceiling → pre-action review),
 FP-6 Stage B cross-check registered per the 2947 cross-citation. Derivation not yet executed.
+**UPDATE (Patch 2951):** derivation EXECUTED — classification **CASE-DEP** per the frozen band, at
+`series_phenomena/cosmology/dark_matter/xi2_relay_computation.md` (verify `code/2951_xi2_relay_moments.py`,
+8/8 PASS). Banked unconditionally (R1/R4-conditional): FACT G1 every I_h orbit is a spherical 5-design ⇒
+exact quadratic isotropy for any equivariant stencil; FACT G2 uniform edge-stencil moments Σμ²=4, Σμ⁴=12/5
+exact (ratio 3/5); FACT G3 exact polarization-degeneracy at O(kd)² (no birefringent output at this order).
+Underdetermination PROVEN by opposite-sign temporal completions (continuous-time subluminal vs
+leapfrog-class superluminal above σ²=3/5; leapfrog CFL excludes σ=1). Missing object named: the relay's
+temporal order class + Moment-step ratio σ (KINETIC-1-adjacent; FP-6 Stage A/B cross-citation confirmed as
+unblock path). FOUNDER-Q-XI2-1 registered (physical-picture question per PD-006); CONV-001 roadblock item
+QUEUED. No value of ξ₂ minted; the ACTIVE ceiling unchanged at ξ₂ = 1 reference normalization.
