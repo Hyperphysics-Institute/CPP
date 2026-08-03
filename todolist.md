@@ -200,6 +200,18 @@ external validator needs the working derivations most. Record both.
 
 ---
 
+### CONV-011 — Branch-preregistered review timing (panel-proposed GPT S1, adopted Patch 2944)
+
+Every prereg that freezes verdict bands for a computation must ALSO freeze, before the computation
+runs, the panel-review timing per branch: falsifier-class branches (CASE-L-type) trigger pre-action
+review before any conversion or downstream use; conservative/bound-type branches (CASE-Q-type)
+permit a single combined completed-package review. Discretion over review timing after the branch is
+known is removed. Origin: the Patch 2941 economy amendment was defensible but was made after the
+branch was revealed; GPT S1's combined-cycle return (Patch 2944 adjudication §4.3) supplied the
+prospective rule verbatim. Registered 2 Aug 2026 Patch 2944.
+
+---
+
 ## P1 — Must clear before next paper (SS-10)
 
 *(Empty — gate cleared 7 May 2026 Session 36 close patch 0288. SS-10 may begin.)*

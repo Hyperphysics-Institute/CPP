@@ -92,6 +92,29 @@ A₁g ⊗ A₂ᵤ ⊗ A₁g forbidden; script C8). **The Sea is chiral as a 4D
 structure; its physical 3D section, as seen by the ambient EM relay,
 is achiral.**
 
+## §2′ — Fact 2′ (Equivariance Lemma; registered Patch 2944 after panel adjudication)
+
+Let D = (V, E, {L(e)}, {r(e)}, ω_PCD) be the registered relay data
+at vertex-aligned Reading C. Every component of D is I_h-invariant
+(geometry: script C4; both scalar fields: script C6, lattice-wide;
+ω_PCD ∥ n̂: every stabilizer element fixes n̂, in particular P₃).
+Then any relay operator U defined intrinsically from D — U = F(D)
+with F using no input beyond D — satisfies gUg⁻¹ = U for all
+g ∈ I_h, since g·F(D) = F(g·D) = F(D). This closes, without
+enumeration, the composite-structure classes raised at panel review
+(ordered path products, multi-link and host-link interference,
+beyond-first-shell contributions, polarization parallel transport
+and holonomy): each is a function of invariant data. What the lemma
+does NOT close is registered as conditions: (i) relay
+intrinsicality — the SF-6 PCD rule must carry no structure external
+to D (reopener R4); (ii) realized-state symmetry — the ambient Sea
+must occupy an I_h-symmetric state; equivariant dynamics on a
+symmetry-broken state does not inherit the zero (R1 expanded).
+Operative-premise clarification: the odd-order vanishing rests on
+the exact LOCAL P₃ symmetry of each admitted ambient relay state;
+orientation averaging carries no proof weight for odd orders. See
+`a5_disp_panel_adjudication.md` §2 for the adjudication record.
+
 ## §3 — The O(kd) coefficient matrix
 
 Per prereg §4(ii), the output object is the 2×2 Hermitian coefficient
