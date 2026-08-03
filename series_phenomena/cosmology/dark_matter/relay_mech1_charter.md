@@ -242,3 +242,22 @@ audit opened (TODO-2957-B); §2 R-1/R-2 WITHDRAWN as evidence.
 E-2's toy verification is re-scoped to the v2 mechanism and waits on
 the fork ruling; E-1 (AUTOMATON re-read) proceeds unchanged and now
 also classifies the implementations against Fork-A/B.
+
+---
+
+## ADDENDUM (Patch 2958) — FORK RULED: VERSION B ADOPTED; VOCABULARY CANONICALIZED; E-2 UN-GATED
+
+Founder ruling (verbatim at
+`founder_registration_2958_version_b_three_cp_types.md`): **Version
+B** — hop-by-hop even-split outward relay, one volley per GP per
+Moment, equal hop count N to the PSR — is the mechanism under
+development; Version A (direct addressed broadcast) set aside on
+computational-load grounds. Prior Fork-A/B labels DEPRECATED (V-1
+mapping recorded). GP state protocol (V-2) resolves the
+signal/reservoir exemption by construction. THREE CONSCIOUS-POINT
+TYPES registered (V-3: GPs, DI-bits, CPs) — A-line axiom
+reconciliation flagged, SR-2/A3′ process. Smoothness question
+ANSWERED via FACT G1: exact isotropy through degree 5, measurable
+degree-6 residual — E-2 scoped to quantify, plus 1/r² counting,
+N-hop ballistics, and remainder-rule sensitivity. C-1/C-2: PASS
+in-picture under Version B, verification owed to E-2.
