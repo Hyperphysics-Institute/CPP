@@ -176,3 +176,39 @@ OPEN-SM-4 / manifestation (v). Noted as a cross-link, not a claim.
 
 Verdict bands of §2 otherwise UNCHANGED; nothing computed; no bounds
 cited.
+
+---
+
+## ADDENDUM (Patch 2941) — §4(v) PANEL-REVIEW TIMING AMENDED UNDER ECONOMY GOVERNANCE (PD-006)
+
+**Ruling (Claude, under PD-006 full delegation; founder raised the
+economy constraint 2 Aug 2026):** the §4(v) requirement "panel review
+before the conversion patch" is AMENDED to "panel review of the
+COMPLETED PACKAGE (relay computation Patch 2940 + conversion patch)
+in a single combined cycle," per the standing economy-governance
+convention that the panel convenes for completed work or roadblocks,
+and that patch-registered conditions constitute adequate
+pre-registration.
+
+**Rationale, stated for the record:** (1) the 2936 HIGH-STAKES flag
+attached to the CASE-L branch (a linear O(1) coefficient indicting
+the mesh) — the branch that obtained is CASE-Q, the conservative
+bound-type branch, so the pre-action hostile-review motive does not
+apply; (2) the 2940 result is a deterministic symmetry zero whose
+every input carries a registered patch number predating the
+computation, with a stdlib verify script re-deriving the chain from
+raw coordinates — the fabrication-risk profile panel review targets
+is minimal; (3) the no-retreat clause binds CASE-L and is not
+triggered; (4) founder's credit budget is at 50% mid-week and is
+reserved for high-utilization computation.
+
+**Binding safeguard:** the conversion result carries a
+**PANEL-PENDING banner** until the combined review cycle ratifies
+CASE-Q. If the panel overturns or conditions CASE-Q, the conversion
+is VOIDED (not revised in place) and re-derived under the corrected
+classification. The combined review package must include: the 2940
+document, this addendum, the conversion prereg, and the conversion
+result, as ONE CONV-001 block.
+
+Verdict bands, conditionality (2938 upgrade 2), and reopeners R1–R3
+of Patch 2940 are UNCHANGED. Ledger untouched.
