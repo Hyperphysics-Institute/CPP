@@ -442,3 +442,8 @@ reference-normalized anchor into a sharp one, and per GPT S1's §4 note, registe
 ξ₂ > 0 bounded away from zero would upgrade the family of conditional ceilings to a finite bound.
 **Falsifier/bar:** any ξ₂ ≪ 1 claim requires a formula with registered provenance (anti-α1, inherited
 from 2942 §2). **Prereg requirement:** must freeze branch-dependent review timing per CONV-011.
+**UPDATE (Patch 2950):** prereg FILED at `series_phenomena/cosmology/dark_matter/xi2_derivation_prereg.md`
+— definition inherited from 2942, scalar-at-quadratic-order symmetry statement (R1-conditional), four
+frozen bands (O1 / SUPP / ZERO / DEP) including sign-blind frozen handling of a derived sign(ξ₂),
+CONV-011 timing frozen (CASE-ZERO is reopener-class against the ACTIVE 2945 ceiling → pre-action review),
+FP-6 Stage B cross-check registered per the 2947 cross-citation. Derivation not yet executed.
