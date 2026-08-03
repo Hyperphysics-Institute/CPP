@@ -2,6 +2,12 @@
 
 Canonical filename `sf-6_electromagnetism.tex` (no version suffix). Version lives in the title block; history here (per the OS version-archaeology rule — no CHANGELOG block in the `.tex`).
 
+## v1.0.1 — 2 August 2026 (Patch 2954) — terminology only, no physics moved
+- Founder ruling (registered Patch 2953 §1–§2): the "ZDC / Zero-point Dipole Chain" acronym is retired; it is NOT entered in the master glossary. Synonymy determination: ZDC named a CHAIN of ZBW-oscillating dipoles, not the ZBW oscillation itself, so the rewrite uses ZBW-rooted "ZBW chain" language rather than a blind ZDC→ZBW substitution.
+- `.tex`: macro `\ZDC` renamed `\ZBWC` (renders "ZBW-chain"; 39 sites); Definition retitled "ZBW chain"; §2 heading, abstract, and keywords rephrased; internal labels eq:massZDC/eq:photonZDC renamed (no rendered change). Physics content, equations, tier labels, and open-problem registrations untouched.
+- documentation_suite/glossary-SF-6.md: four entries reworded to ZBW-chain vocabulary with the retirement noted.
+- Recompile pending founder-side (mechanical); expected 15 pp, 0 undefined refs as at v1.0.
+
 ## v1.0 SHIPPED — 21 June 2026 (Patch 1607)
 - SHIP on unanimous-advance panel: Grok SHIP, Gemini SHIP, Copilot advance-no-restate, ChatGPT accept-v0.3-to-v1.0 (cycle-2 confirm pass, SCRIPT-EXECUTED, no verdict-flipping objections remaining).
 - Two final wording edits (editorial; no physics moved):
