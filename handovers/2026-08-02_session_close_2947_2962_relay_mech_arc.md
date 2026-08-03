@@ -22,7 +22,7 @@ TODO-2957-A glossary DI-bit correction (unblocked; anti-erasure history note). (
 QM-1 phase-provenance audit (P1; QM-1 uncitable in this arc until closed). (5) Combined CONV-001
 cycle: E-1+E-2 + the 2951 roadblock item + PR2 verdict ambiguity. Founder pendings: R1
 ratification (one word); FOUNDER-Q-RELAY-2 formally closed by R1 if ratified; subquantum-
-divisions glossary candidate; SF-6 v1.0.1 recompile; A-LINE ITEM (2958 V-3): three-Conscious-Point-types ontology awaits axiom reconciliation via the SR-2/A3′ registered-change process — omitted from this list at 2961, added by the 2962 audit; ~~truncated fragment~~ RESOLVED 2962: retracted by founder, no content. Density lane unchanged (A5-SHOT/A5-LENS preregged, not computed); CAND-QM-DB-1
+divisions glossary candidate; SF-6 v1.0.1 recompile; A-LINE ITEM (2958 V-3): three-Conscious-Point-types ontology awaits axiom reconciliation via the SR-2/A3′ registered-change process — omitted from this list at 2961, added by the 2962 audit — STAGED at `axiom_impact_register_2026-08-02.md` (root, Patch 2962a: Tier A candidates A-1 three CP types / A-2 DI-bit content / A-3 GP state protocol; ordering fixed, R1 ratification first; T-1 does not wait); ~~truncated fragment~~ RESOLVED 2962: retracted by founder, no content. Density lane unchanged (A5-SHOT/A5-LENS preregged, not computed); CAND-QM-DB-1
 remains parked behind the root-node work per the 2953 re-sequencing.
 
 ## Ledger (unchanged all session)
