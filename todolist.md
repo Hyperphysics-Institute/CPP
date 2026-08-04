@@ -222,13 +222,13 @@ The Session 36 P1 audit found that all originally-P1 items except TODO-002 were 
 
 ## P2 — At Thomas's discretion (not blocking next paper)
 
-### TODO-2957-A — Correct master-glossary DI-bit entry per founder phase ruling (P1)
+### TODO-2957-A — Correct master-glossary DI-bit entry per founder phase ruling (P1) — EXECUTED Patch 2989
 
 Founder ruling 2 Aug 2026 (Patch 2957 P-1): DI-bits carry {charge, type, origin address}, count-like
 magnitude — NO phase. Registered glossary entry claims "phase, amplitude, and polarisation" — conflict.
 Correct the entry with the ruling cited and the superseded text preserved in a history note
 (anti-erasure). Blocked only by nothing; execute after the Fork-A/B ruling lands so one edit carries
-the full pinned content. **STAGED Patch 2988**: verbatim-ready replacement text at `series_quantum_mechanics/qm1_phase_provenance_audit.md` §6; executes at AP-2 ratification (request issued 2988 §7).
+the full pinned content. **STAGED Patch 2988**; **EXECUTED Patch 2989** on founder ratification of AP-2 (verbatim registered at `series_phenomena/cosmology/dark_matter/founder_registration_2989_ap2_ratified.md`): entry replaced with the pinned content + falsifiers + anti-erasure history note; 2982 editorial flag removed; AP-2 registered into the A1′ row of `axiom-registry.md`. CLOSED.
 
 ### TODO-2957-B — QM-1 phase-provenance audit (P1) — EXECUTED Patch 2988
 
