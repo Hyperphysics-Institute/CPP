@@ -57,7 +57,7 @@ The background medium of CPP — all lattice sites occupied by DPs in their grou
 
 ### DI-bit (Displacement Increment)
 
-The fundamental quantum of energy/information transfer. When a CP is displaced from its equilibrium position, the displacement propagates as a DI-bit to the neighbouring CP. DI-bits carry phase, amplitude, and polarisation. The DI-bit hopping amplitude determines the Schrödinger equation (QM-1).
+**[EDITORIAL FLAG, Patch 2982: this entry is under registered review (TODO-2957-A). The founder has ruled (2957, pinned) that DI-bits carry NO phase — content = {charge, type, origin address} — and are one of the three Conscious Point types (A1′). The sentence below predates that ruling and must not be relied upon; the consolidated correction executes with AP-2 ratification after the QM-1 audit (W-7).]** The fundamental quantum of energy/information transfer. When a CP is displaced from its equilibrium position, the displacement propagates as a DI-bit to the neighbouring CP. DI-bits carry phase, amplitude, and polarisation. The DI-bit hopping amplitude determines the Schrödinger equation (QM-1).
 
 ### LSP′ (Completed Lattice State Packet) — Axiom A3′
 The GP→GP broadcast after the A3′ amendment (registered Patch 1129, DG-3 3/3): nine dynamical
@@ -83,7 +83,7 @@ The regular 4-dimensional polytope with V=120 vertices, E=720 edges, F=1200 tria
 
 ### Grid Point
 
-A vertex of the 600-cell lattice. Each Grid Point is occupied by a CP. The lattice is not embedded in pre-existing space — the lattice IS space. The Planck length l_P ≈ 1.616 × 10⁻³⁵ m is the scale of a single coarse 600-cell motif — the rest-frame Planck Sphere Radius (PSR), or per-Moment reach ceiling — *not* the fundamental Grid-Point spacing. Per the canonical nested-600-cell hierarchy (SR-1 §"Grid Resolution", Patch 0736), Grid Points sit at a finer, sub-Planck spacing; the often-quoted "~10³⁰ GPs per l_P" is an unverified early estimate and is not relied upon. The resolution choice enters no prediction formula (0736).
+One of the **three types of Conscious Points** (A1′, ratified Patch 2982): a fixed lattice site that computes, holds, and refreshes state — distinct from CPs (the charge-bearers) and DI-bits (the messengers). **GP state protocol (A3′ definitional clause, AP-3, founder text 2958 V-2):** the GP computes, holds, and per-Moment refreshes SSV_abs and SSV_net from Perceive-stage arrivals; it imprints on every outgoing DI-bit; DI-bits reset at every hop; the GP resets its SSV values each Moment from the newly arriving Perceive-stage data. *Elevation falsifier F-AP3-1: a consistent alternative protocol producing different physics from the same A1′+A3′ base would elevate this clause to axiom grade.* A vertex of the 600-cell lattice. The lattice is not embedded in pre-existing space — the lattice IS space. The Planck length l_P ≈ 1.616 × 10⁻³⁵ m is the scale of a single coarse 600-cell motif — the rest-frame Planck Sphere Radius (PSR), or per-Moment reach ceiling — *not* the fundamental Grid-Point spacing. Per the canonical nested-600-cell hierarchy (SR-1 §"Grid Resolution", Patch 0736), Grid Points sit at a finer, sub-Planck spacing; the often-quoted "~10³⁰ GPs per l_P" is an unverified early estimate and is not relied upon. The resolution choice enters no prediction formula (0736).
 
 ### Absolute Moment
 
