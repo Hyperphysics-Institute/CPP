@@ -38,6 +38,19 @@
 %                     construction; (d) OPEN-QMRG-B1 mandatory-
 %                     derivation + mutual-support prohibition noted
 %                     in the Grade remark. Mathematics unchanged.
+%   v2.2 4 Aug 2026 — R-4 STATUS UPDATE (Patch 3001): plane stability
+%                     advanced to CLOSURE CANDIDATE at derivation
+%                     grade, panel-pending — the 5-design lemma
+%                     package (exact closure for the shipped
+%                     component-diagonal transport; (k Delta-s)^4
+%                     suppression of the lattice-anisotropic channel
+%                     from the icosahedral spherical-5-design theorem,
+%                     numerically verified with negative control;
+%                     the isotropic direction-coupled channel
+%                     identified as the spin/longitudinal sector).
+%                     Record: sketches/3001_r4_plane_stability_lemma.md
+%                     + code/3001_r4_5design_check.py (ALL PASS).
+%                     Grade remark updated; mathematics unchanged.
 %
 % FIGURE PATH:
 %   .tex: series_quantum_mechanics/papers/
@@ -80,7 +93,7 @@
 \title{\textbf{Quantum Mechanics in Conscious Point Physics:\\
 The Schr\"{o}dinger Equation from Sea-Polarization\\
 Pattern Dynamics on the 600-Cell Lattice}\\[6pt]
-{\large QM Series --- Paper 2 (Version 2.1)}}
+{\large QM Series --- Paper 2 (Version 2.2)}}
 
 \author{Thomas Lee Abshier, ND\\
 Hyperphysics Institute\\
@@ -383,11 +396,25 @@ or a dedicated coherent-mode bridge arc) before any grade elevation
 of this Proposition or of the Born-rule reconciliation; until then,
 neither this paper nor Paper~6 may be cited as support for the
 amplitude--count relation (mutual-support prohibition).
-\textbf{R-4} --- plane stability: prove the GP refresh preserves the
-distinguished plane for the admitted pattern class (a bounding lemma
-on out-of-plane perturbations under the tight-binding update), and
-establish the plane's existence for all quantum-relevant patterns
-including stationary states (severity: medium--high).  The theorem of
+\textbf{R-4} --- plane stability: \emph{CLOSURE CANDIDATE at
+derivation grade, panel-pending (Patch 3001).}  (i)~For the
+component-diagonal transport this paper's update actually uses,
+plane closure is \emph{exact at all orders}: a scalar stencil cannot
+mix Cartesian components.  (ii)~For general direction-coupled
+transport $T(v) = \alpha I + \beta v v^{\!\top}$, the
+lattice-anisotropic out-of-plane channel is suppressed as
+$(k\Delta s)^4$, because the twelve icosahedral neighbour directions
+form a spherical \emph{5-design} (moments through order five exactly
+isotropic; first anisotropy at order six) --- numerically verified
+with an octahedron negative control, and bounded by
+$(2\pi\lP/\lambda_C)^4 \approx 3\times10^{-90}$ per refresh.
+(iii)~The remaining isotropic direction-coupled channel is
+identified as the longitudinal/spin sector, not leakage error.
+(iv)~Universality: under $E = \hbar\nu_C$ the rotation rate obeys
+$\omega \ge mc^2/\hbar > 0$ on the full support, so the plane is
+defined for stationary states as well.  Record:
+\texttt{sketches/3001\_r4\_plane\_stability\_lemma.md};
+verify \texttt{code/3001\_r4\_5design\_check.py} (ALL PASS).  The theorem of
 \S4 consumes only the \emph{form} of the update (complex, linear,
 Hermitian-generated), which this proposition supplies conditionally.
 \end{remark}
