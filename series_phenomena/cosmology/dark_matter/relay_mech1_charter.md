@@ -261,3 +261,27 @@ ANSWERED via FACT G1: exact isotropy through degree 5, measurable
 degree-6 residual — E-2 scoped to quantify, plus 1/r² counting,
 N-hop ballistics, and remainder-rule sensitivity. C-1/C-2: PASS
 in-picture under Version B, verification owed to E-2.
+
+---
+
+## ADDENDUM (Patch 2991) — E-1 EXECUTED
+
+Classification record at `automaton_e1_classification.md`. Verdicts:
+AUTOMATON-1 (2797 shell) = Version A class, C-2 evidence at shell level
+mechanism-class-shared (does not discriminate A vs B); AUTOMATON-2
+(2802 front kernel) = Version B in reduced/precomposed form WITHIN one
+Moment (its ±0.4% pointwise inverse-square is direct C-2 evidence for
+the Version B composition), NEITHER across Moments — the engine drops
+the origin address at every Moment boundary and the 2887 diffusive
+finding is thereby RECLASSIFIED anomaly → predicted negative control
+(no address, no light cone — synthesis v2's own logic); the directed
+relay (2888/2889) = Version B multi-Moment ballistic class by PROXY
+(direction ≡ address at point-source geometry; p = 1.0000 exact).
+Charter §6 outcome: implementations DO instantiate the mechanism
+classes — conservative branch, rides to CONV-013 with the C-5 package.
+Registered: O-1 (AP-2's count/no-phase content is what licenses the
+engines' field-level reductions — retroactive consistency evidence for
+the ratified ontology); O-2 (equalization P-4 and per-bit V-2 protocol
+untested by every implementation — E-2 territory, with already-evidenced
+items enumerated). E-2 remains scoped per the 2958 addendum.
+
