@@ -1,11 +1,19 @@
 % ============================================================
 % QM-2: Superposition and Interference from DI-Bit Path Summation
-% Version 1.1 — 2 April 2026
+% Version 1.2 — 4 August 2026
 %
 % CHANGELOG:
 %   v1   Mar 2026  — Initial draft
 %   v1.1 2 Apr 2026 — Formatting compliance: .bib, natbib,
 %                     graphicspath, TOC, PLS, OSF DOI
+%   v1.2 4 Aug 2026 — LINEAGE ATTRIBUTION SWEEP (OPEN-QM-1-REGROUND,
+%                     Patches 2995/2996/2997/2998): per-bit phase /
+%                     "DI-bit state" attribution language relocated to
+%                     the pattern level per QM-1 v2.0 (FI-QMRG-1).
+%                     Mathematics unchanged (Patch 2995 sweep: no
+%                     proof consumes per-bit phase). Anti-erasure
+%                     notes added. Title-block version marker
+%                     reconciled (was stale "(Version 3.1)").
 %
 % FIGURE PATH:
 %   .tex: series_quantum_mechanics/papers/
@@ -46,7 +54,7 @@
 \title{\textbf{Quantum Mechanics in Conscious Point Physics:\\
 Superposition and Interference from Multi-Path\\
 DI-Bit Summation on the 600-Cell Lattice}\\[6pt]
-{\large QM Series --- Paper 3 (Version 3.1)}}
+{\large QM Series --- Paper 3 (Version 1.2)}}
 
 \author{Thomas Lee Abshier, ND\\
 Hyperphysics Institute\\
@@ -60,11 +68,13 @@ Hyperphysics Institute\\
 
 \begin{abstract}
 Superposition and interference in Conscious Point Physics emerge from
-the coherent summation of phase-carrying Displacement Increment (DI)
-bits propagating simultaneously along all available geodesics of the
-600-cell lattice --- the discrete Feynman path integral.  Each DI bit
-emitted from source vertex $s$ accumulates a deterministic geometric
-phase $\phi_k$ along path $k$, determined by the DI-bit velocity
+the coherent summation of Sea-polarization pattern contributions
+propagating simultaneously along all available geodesics of the
+600-cell lattice --- the discrete Feynman path integral.  Each path
+contribution launched from source vertex $s$ accrues a deterministic
+geometric phase $\phi_k$ along path $k$ --- the pattern's ZBW
+rotation integrated along the path (QM-1 v2.0, FI-QMRG-1) ---
+determined by the propagation velocity
 $c = \lP/\tP$ and the local SSV potential.  The total amplitude at
 detector vertex $d$ is $\psi(d) = \sum_k A_0 e^{i\phi_k}$, where
 $A_0$ is the geometrically fixed emission amplitude.  The detection
@@ -89,10 +99,6 @@ When a particle passes through two slits, CPP says it sends DI bits along every 
 
 \bigskip
 \raggedright
-\tableofcontents
-\newpage
-
-
 \tableofcontents
 \newpage
 
@@ -123,8 +129,10 @@ This paper derives:
 \section{DI-Bit Multi-Path Propagation}
 %=====================================================================
 
-A CP aggregate at source vertex $s$ emits DI bits that propagate
-simultaneously along \emph{all} geodesics to detector vertex $d$.
+A CP aggregate at source vertex $s$ launches a Sea-polarization
+pattern whose contributions propagate (maintained by stateless
+DI-bit messengers, per A1$'$/AP-2) simultaneously along \emph{all}
+geodesics to detector vertex $d$.
 Each path $k$ is a sequence of lattice edges of total length $L_k$.
 The complex amplitude contributed by path $k$ is
 \begin{equation}
@@ -145,6 +153,17 @@ The phase per edge is
 with $\Delta s = \lP$ and $\Delta t = \tP$.  Summing along path $k$
 gives the total action phase $\phi_k = S_k/\hbar$, exactly the
 Feynman phase~\cite{feynman1965}.
+
+\emph{Anti-erasure note (v1.2).}  Versions prior to 1.2 read
+Eq.~\eqref{eq:phaseedge} as phase ``accumulated'' by individual DI
+bits.  That reading is retired (A1$'$/AP-2: DI-bits are stateless,
+phase-free couriers that reset at every hop).  The equation itself is
+unchanged and remains load-bearing: it is the per-edge phase advance
+of the propagating \emph{pattern} --- the ZBW rotation rate
+integrated along the edge, plus the SSV-potential modulation (QM-1
+v2.0, \S2).  The mathematics of this paper consumes $\phi_k$ only
+as a per-path functional and is unaffected by the re-attribution
+(Patch 2995 sweep, Finding Q2-S1).
 
 \begin{figure}[H]
 \centering
@@ -293,17 +312,14 @@ without requiring a separate quantum detector.
 %=====================================================================
 
 Superposition and interference in CPP are the coherent summation of
-phase-carrying DI bits along all lattice paths --- the discrete
-Feynman path integral.  The Born rule follows from DI-bit density
+Sea-polarization pattern contributions along all lattice paths ---
+the discrete Feynman path integral.  The Born rule follows from DI-bit density
 non-circularly.  The SSV encodes which-path information geometrically.
 The path-sum and Schr\"{o}dinger forms are equivalent limits of the
 same DI-bit hopping dynamics.  All results follow from the four CPP
 postulates and the 600-cell geometry.
 
 %=====================================================================
-\ibliographystyle{plainnat}
-\ibliography{cpp_qm_series}
-
 
 \section*{Acknowledgements}
 The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).

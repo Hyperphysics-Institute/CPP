@@ -1,11 +1,19 @@
 % ============================================================
 % QM-5: QFT Emergence from Lattice Eigenmodes
-% Version 1.1 — 2 April 2026
+% Version 1.2 — 4 August 2026
 %
 % CHANGELOG:
 %   v1   Mar 2026  — Initial draft
 %   v1.1 2 Apr 2026 — Formatting compliance: .bib, natbib,
 %                     graphicspath, TOC, PLS, OSF DOI
+%   v1.2 4 Aug 2026 — LINEAGE ATTRIBUTION SWEEP (OPEN-QM-1-REGROUND,
+%                     Patches 2995/2996/2997/2998): per-bit phase /
+%                     "DI-bit state" attribution language relocated to
+%                     the pattern level per QM-1 v2.0 (FI-QMRG-1).
+%                     Mathematics unchanged (Patch 2995 sweep: no
+%                     proof consumes per-bit phase). Anti-erasure
+%                     notes added. Title-block version marker
+%                     reconciled (was stale "(Version 3.1)").
 %
 % FIGURE PATH:
 %   .tex: series_quantum_mechanics/papers/
@@ -47,7 +55,7 @@
 \title{\textbf{Quantum Mechanics in Conscious Point Physics:\\
 Emergent Quantum Field Theory, Second Quantization,\\
 and Finite Renormalization from the 600-Cell Lattice}\\[6pt]
-{\large QM Series --- Paper 6 (Version 3.1)}}
+{\large QM Series --- Paper 6 (Version 1.2)}}
 
 \author{Thomas Lee Abshier, ND\\
 Hyperphysics Institute\\
@@ -61,9 +69,11 @@ Hyperphysics Institute\\
 
 \begin{abstract}
 Quantum field theory emerges in Conscious Point Physics from the
-collective excitation modes of complex phase-carrying DI bits on the
-600-cell lattice.  The DI-bit amplitude $\psi_i = \sqrt{\rho_i}\,
-e^{i\phi_i}$ is expanded in the 120 orthonormal eigenmodes of the
+collective excitation modes of the complex Sea-polarization site
+field on the 600-cell lattice.  The site field $\psi_i =
+\sqrt{\rho_i}\,e^{i\phi_i}$ (QM-1 v2.0: count register
+$\rho_i$, $\SSV_{\rm net}$-orientation phase $\phi_i$) is
+expanded in the 120 orthonormal eigenmodes of the
 600-cell adjacency matrix, yielding field operators
 $\hat{\phi}(\mathbf{r}_i) = \sum_k(a_k u_k(i)
 + a_k^\dagger u_k(i)^*)/\sqrt{2\omega_k}$.
@@ -95,27 +105,30 @@ Quantum field theory — the framework that describes particle creation and anni
 \tableofcontents
 \newpage
 
-
-\tableofcontents
-\newpage
-
 %=====================================================================
 \section{Introduction}
 %=====================================================================
 
 Quantum field theory in CPP emerges as the natural description of
-collective excitations of phase-carrying DI bits on the 600-cell
-lattice.  No separate QFT postulates are required; the field operators,
+collective excitations of the Sea-polarization site field on the
+600-cell lattice.  No separate QFT postulates are required; the field operators,
 commutation relations, fermion--boson distinction, propagators, and
 UV finiteness all follow from the lattice structure and the CP exclusion
 principle established in CPP-5014~\cite{cpp5014}.
 
 %=====================================================================
-\section{Complex DI-Bit Amplitudes and Lattice Eigenmodes}
+\section{The Complex Site Field and Lattice Eigenmodes}
 %=====================================================================
 
-At each Grid Point $i$ the DI-bit state is $\psi_i =
-\sqrt{\rho_i}\,e^{i\phi_i}$ (Paper~2~\cite{cpp2040a}).  The dynamics
+At each Grid Point $i$ the site field is $\psi_i =
+\sqrt{\rho_i}\,e^{i\phi_i}$ (Paper~2~\cite{cpp2040a}, v2.0
+pattern-level grounding).  (\emph{Anti-erasure note, v1.2:} prior
+versions called this ``the DI-bit state''; retired per A1$'$/AP-2,
+mathematics unchanged.)  The mode operators below act on the
+count-like occupation content of the sites --- the AP-2-compliant
+register --- and the coherent-mode amplitude--count relation this
+expansion presupposes is exactly the B-QMRG-1 bridge registered at
+QM-1 v2.0.  The dynamics
 are governed by the 600-cell adjacency matrix $A$, which is real
 symmetric ($120\times120$) with exactly 120 orthonormal eigenvectors
 $\mathbf{u}_k$ and real eigenvalues $\lambda_k$:
@@ -281,8 +294,8 @@ eigenvalues~\eqref{eq:eigenvalues} and the Planck energy.
 
 QFT in CPP emerges from 600-cell eigenmodes:
 \begin{enumerate}
-\item Field operators from eigenmode expansion of complex DI-bit
-  amplitude (equations~\eqref{eq:ak}--\eqref{eq:field}).
+\item Field operators from eigenmode expansion of the complex
+  site field (equations~\eqref{eq:ak}--\eqref{eq:field}).
 \item Commutation relations from eigenmode orthonormality
   (Theorem~\ref{thm:commutators}).
 \item Fermion--boson split from CP exclusion
@@ -294,9 +307,6 @@ QFT in CPP emerges from 600-cell eigenmodes:
 \end{enumerate}
 
 %=====================================================================
-\ibliographystyle{plainnat}
-\ibliography{cpp_qm_series}
-
 
 \section*{Acknowledgements}
 The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).

@@ -1,11 +1,19 @@
 % ============================================================
 % QM-3: Bell Inequality and Entanglement from the Nexus
-% Version 1.1 — 2 April 2026
+% Version 1.2 — 4 August 2026
 %
 % CHANGELOG:
 %   v1   Mar 2026  — Initial draft
 %   v1.1 2 Apr 2026 — Formatting compliance: .bib, natbib,
 %                     graphicspath, TOC, PLS, OSF DOI
+%   v1.2 4 Aug 2026 — LINEAGE ATTRIBUTION SWEEP (OPEN-QM-1-REGROUND,
+%                     Patches 2995/2996/2997/2998): per-bit phase /
+%                     "DI-bit state" attribution language relocated to
+%                     the pattern level per QM-1 v2.0 (FI-QMRG-1).
+%                     Mathematics unchanged (Patch 2995 sweep: no
+%                     proof consumes per-bit phase). Anti-erasure
+%                     notes added. Title-block version marker
+%                     reconciled (was stale "(Version 3.1)").
 %
 % FIGURE PATH:
 %   .tex: series_quantum_mechanics/papers/
@@ -47,7 +55,7 @@
 \title{\textbf{Quantum Mechanics in Conscious Point Physics:\\
 Entanglement and Bell Inequality Violation\\
 from Non-Separable Nexus States}\\[6pt]
-{\large QM Series --- Paper 4 (Version 3.1)}}
+{\large QM Series --- Paper 4 (Version 1.2)}}
 
 \author{Thomas Lee Abshier, ND\\
 Hyperphysics Institute\\
@@ -62,10 +70,13 @@ Hyperphysics Institute\\
 \begin{abstract}
 We derive quantum entanglement and Bell inequality violation in
 Conscious Point Physics from first principles.  A spin-$\tfrac12$
-CP aggregate carries a two-component DI-bit state whose phase encodes
-the spin direction via the ZBW helix (companion~C4~\cite{abshier2026c4}).
+CP aggregate carries a two-component pattern state --- its
+Sea-polarization configuration --- whose phase, the ZBW helix angle
+(companion~C4~\cite{abshier2026c4}), encodes the spin direction
+(this is the QM-1 v2.0 FI-QMRG-1 identification specialised to the
+spin qubit: the helix angle \emph{is} $\phi$).
 When two such aggregates are created in a total-spin-zero state, their
-joint DI-bit state is non-separable: it cannot be written as a product
+joint pattern state is non-separable: it cannot be written as a product
 of independent single-particle states (Theorem~\ref{thm:nonsep}).  The
 Nexus maintains this joint state globally at each Absolute Moment tick,
 enforcing total DI-bit conservation across all Grid Points regardless
@@ -95,10 +106,6 @@ Einstein called quantum entanglement 'spooky action at a distance.' CPP explains
 \tableofcontents
 \newpage
 
-
-\tableofcontents
-\newpage
-
 %=====================================================================
 \section{Introduction and the Previous Argument}
 %=====================================================================
@@ -123,7 +130,7 @@ $E = -\cos\theta$.
 
 From companion~C4~\cite{abshier2026c4}, a spin-$\tfrac12$ CP
 aggregate executes a ZBW helix whose axis defines the spin direction.
-The two-component DI-bit state is
+The two-component pattern state is
 \begin{equation}
 \ket{\psi} = \alpha\ket{\uparrow} + \beta\ket{\downarrow},
 \qquad |\alpha|^2 + |\beta|^2 = 1.
@@ -131,11 +138,19 @@ The two-component DI-bit state is
 \end{equation}
 
 %=====================================================================
-\section{The Singlet as Non-Separable Joint DI-Bit State}
+\section{The Singlet as Non-Separable Joint Pattern State}
 %=====================================================================
 
 When two spin-$\tfrac12$ CP aggregates are created with total spin
-zero, their joint DI-bit state is the singlet:
+zero, their joint pattern state is the singlet:
+
+\emph{Anti-erasure note (v1.2).}  Prior versions named this object
+the ``joint DI-bit state.''  The naming is retired (A1$'$/AP-2:
+DI-bits carry no state beyond \{charge, type, origin address\});
+the object itself --- and every theorem below --- is unchanged.  The
+state is a property of the aggregate pattern maintained in the
+Grid-Point registers and, as this paper already stated in v1.x, of
+the global Nexus ledger, not of any locally carried content.
 \begin{equation}
 \ket{\Psi^-} = \frac{1}{\sqrt{2}}
 \bigl(\ket{\uparrow}_A\ket{\downarrow}_B
@@ -171,8 +186,8 @@ Nexus ledger, not carried locally by either particle.
 \includegraphics[width=0.90\textwidth]{qm2040c_fig1_nexus_singlet.pdf}
 \caption{EPR pair maintained by the Nexus.  Particles A (blue) and B
   (purple) fly apart after creation in the singlet state $\ket{\Psi^-}$.
-  The Nexus (dashed ellipse) enforces the non-separable joint DI-bit
-  state globally at every tick.  Measurement at Detector~A along axis
+  The Nexus (dashed ellipse) enforces the non-separable joint
+  pattern state globally at every tick.  Measurement at Detector~A along axis
   $\hat{a}$ and at Detector~B along $\hat{b}$ yield outcomes
   correlated by $E(\hat{a},\hat{b}) = -\cos\theta$ (boxed), not by any
   pre-established local correlation.}
@@ -287,7 +302,7 @@ For optical photons: $(\nu/\nu_P)^2 \sim 10^{-63}$ --- unobservable.
 %=====================================================================
 
 Entanglement and Bell violation in CPP arise from:
-(1)~the non-separable singlet DI-bit state (Theorem~\ref{thm:nonsep}),
+(1)~the non-separable singlet pattern state (Theorem~\ref{thm:nonsep}),
 maintained globally by the Nexus; and
 (2)~the Born rule $P = |\psi|^2$ (companion~C3~\cite{abshier2026c3}).
 Together these give $E = -\cos\theta$ and $|S| = 2\sqrt{2}$, consistent
@@ -296,9 +311,6 @@ The non-local resource is the global Nexus constraint --- not a signal
 or local hidden variable.
 
 %=====================================================================
-\ibliographystyle{plainnat}
-\ibliography{cpp_qm_series}
-
 
 \section*{Acknowledgements}
 The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).

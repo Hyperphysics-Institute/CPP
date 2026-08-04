@@ -207,7 +207,7 @@ During ZBW, a CP switches between DP partners. The switching rate is determinist
 
 ### Born Rule
 
-In CPP, the Born rule (P = |ψ|²) emerges from the DI-bit interference pattern. The probability of detecting a particle at a point is proportional to the squared amplitude of the DI-bit field at that point, because detection requires a threshold interaction that depends on amplitude² (QM-2).
+In CPP, the Born rule (P = |ψ|²) emerges from the count-like DI-bit density: the probability of a CP state change at a Grid Point is proportional to the local DI-bit number density ρ, and |ψ|² = ρ (QM-2 Theorem 4.1 — the proof consumes only the count register, P-2-compliant). The spatial interference structure of ρ is set by the pattern-level phase (the SSV_net orientation register, FI-QMRG-1 / QM-1 v2.0). Under the B-QMRG-1 coherent-mode bridge (|SSV_net,⊥|² ∝ ρ), "squared amplitude of the field" and "count of DI-bits" are the same number — the amplitude² and density readings are dual statements of one quantity. *History note (anti-erasure): the pre-2998 entry attributed the Born rule to "the DI-bit interference pattern" and "the squared amplitude of the DI-bit field"; the Patch 2995 sweep (F-SW-5) found this overstated the shipped mathematics relative to the count-based proof, and the Patch 2997 B-QMRG-1 bridge showed the amplitude² reading is the count reading's coherent-mode dual rather than an error. Updated Patch 2998.*
 
 ### Bell Violation (S = 2√2)
 

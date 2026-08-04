@@ -1,11 +1,23 @@
 % ============================================================
 % QM-6: Capstone — Four Primitives to Full QM
-% Version 1.1 — 2 April 2026
+% Version 2.0 — 4 August 2026
 %
 % CHANGELOG:
 %   v1   Mar 2026  — Initial draft
 %   v1.1 2 Apr 2026 — Formatting compliance: .bib, natbib,
 %                     graphicspath, TOC, PLS, OSF DOI
+%   v2.0 4 Aug 2026 — PRIMITIVES REWRITE (OPEN-QM-1-REGROUND, Patches
+%                     2995/2996/2997/2998; sweep verdict: PROSE-LAYER
+%                     at PRIMITIVE-DEFINITION severity). The §1 four-
+%                     primitives list restated under the ratified
+%                     A1'/AP-2/AP-3 ontology (three CP types; DI-bits
+%                     stateless couriers; phase at the pattern level
+%                     per FI-QMRG-1). The retired per-bit Eq.
+%                     (phasehop) reprise replaced by the QM-1 v2.0
+%                     pattern-rotation statement. Mathematics
+%                     unchanged (capstone: all equations are reprints).
+%                     Anti-erasure notes added. Title-block version
+%                     marker reconciled (was stale "(Version 3.1)").
 %
 % FIGURE PATH:
 %   .tex: series_quantum_mechanics/papers/
@@ -48,7 +60,7 @@
 
 \title{\textbf{Quantum Mechanics in Conscious Point Physics:\\
 Full Synthesis --- From Four Primitives to Quantum Field Theory}\\[6pt]
-{\large QM Series --- Capstone (Version 3.1)}}
+{\large QM Series --- Capstone (Version 2.0)}}
 
 \author{Thomas Lee Abshier, ND\\
 Hyperphysics Institute\\
@@ -62,15 +74,19 @@ Hyperphysics Institute\\
 
 \begin{abstract}
 All of quantum mechanics emerges in Conscious Point Physics from four
-primitives: Conscious Points (CPs), phase-carrying Displacement
-Increment (DI) bits, the 600-cell lattice, and the Nexus.  The
-complex DI-bit amplitude $\psi_i = \sqrt{\rho_i}\,e^{i\phi_i}$
-evolves by deterministic hopping, yielding the Schr\"{o}dinger
-equation in the continuum limit (Paper~2~\cite{cpp2040a}).
+primitives: Conscious Points in their three ratified types (charge
+bearers, Grid Points, and DI-bit messengers; A1$'$), the 600-cell
+lattice, the Grid-Point-held Sea-polarization pattern state (count
+register $\SSV_{\rm abs}$ + orientation register $\SSV_{\rm net}$;
+A3$'$), and the Nexus.  The complex site field $\psi_i =
+\sqrt{\rho_i}\,e^{i\phi_i}$ --- reading the count and orientation
+registers (FI-QMRG-1) --- evolves by deterministic hopping, yielding
+the Schr\"{o}dinger equation in the continuum limit
+(Paper~2~\cite{cpp2040a}, v2.0 pattern-level grounding).
 Simultaneous propagation along all geodesics gives the discrete
 Feynman path integral and quantum superposition
 (Paper~3~\cite{cpp2040b_super}).  The Nexus maintains non-separable
-joint DI-bit states, giving quantum entanglement and Bell violation
+joint pattern states, giving quantum entanglement and Bell violation
 $|\mathrm{CHSH}|=2\sqrt{2}$ with no-signaling
 (Paper~4~\cite{cpp2040c}).  DP~Sea decoherence produces apparent
 collapse with pointer basis fixed at SSV eigenstates
@@ -88,14 +104,10 @@ postulates.
 
 \bigskip\noindent
 \textbf{Plain Language Summary:}
-This paper summarises what CPP has achieved for quantum mechanics. Starting from just four ingredients — conscious points, the 600-cell lattice, DI-bit amplitudes, and the Nexus global constraint — the entire framework of quantum mechanics follows: the Schrödinger equation, the Born rule for probabilities, quantum interference, Bell inequality violations, decoherence and measurement, and quantum field theory with three generations. No additional postulates are needed beyond the four primitives. The remaining open problem is deriving Planck's constant from these four ingredients.
+This paper summarises what CPP has achieved for quantum mechanics. Starting from just four ingredients — conscious points (in their three types, including the stateless DI-bit messengers), the 600-cell lattice, the pattern state held at each Grid Point (a count and a direction — intensity and quantum phase), and the Nexus global constraint — the entire framework of quantum mechanics follows: the Schrödinger equation, the Born rule for probabilities, quantum interference, Bell inequality violations, decoherence and measurement, and quantum field theory with three generations. No additional postulates are needed beyond the four primitives. The remaining open problem is deriving Planck's constant from these four ingredients.
 
 \bigskip
 \raggedright
-\tableofcontents
-\newpage
-
-
 \tableofcontents
 \newpage
 
@@ -104,14 +116,24 @@ This paper summarises what CPP has achieved for quantum mechanics. Starting from
 %=====================================================================
 
 \begin{enumerate}
-\item \textbf{Conscious Points (CPs)}: Planck-scale entities carrying
-  charge $\pm e$.  Each occupies one Grid Point and executes local
-  deterministic rules.
+\item \textbf{Conscious Points (CPs), in three types (A1$'$)}: the
+  charge-bearing CPs (Planck-scale entities carrying charge $\pm e$,
+  executing the local deterministic Perceive--Compute--Displace
+  rules); the Grid Points (fixed lattice sites that compute, hold,
+  and per-Moment refresh state); and the \textbf{DI-bit messengers}
+  --- stateless couriers with content \{charge, type, origin
+  address\} (AP-2) that reset at every hop.  DI-bits carry no phase.
 
-\item \textbf{Displacement Increment (DI) bits}: Relational quanta
-  exchanged between CPs, carrying both density $\rho$ and geometric
-  phase $\phi$.  The complex amplitude $\psi = \sqrt{\rho}\,e^{i\phi}$
-  encodes the full DI-bit state at each Grid Point.
+\item \textbf{The Grid-Point pattern state (A3$'$)}: each Grid Point
+  holds two dynamical registers refreshed every Moment from
+  Perceive-stage arrivals --- the count-like scalar
+  $\SSV_{\rm abs}$ and the vector $\SSV_{\rm net}$ (the sum of
+  all $\SSV$ contributions at the point, whose microscopic
+  contributors are the underlying dipole orientations).  The complex
+  site field $\psi = \sqrt{\rho}\,e^{i\phi}$ reads these two
+  registers: $\rho$ is the count, $\phi$ is the orientation of
+  $\SSV_{\rm net}$ in the distinguished ZBW plane (FI-QMRG-1;
+  Paper~2 v2.0).
 
 \item \textbf{600-cell lattice}: 120 Grid Points, 720 edges,
   coordination $z=12$, adjacency matrix with exactly six distinct
@@ -119,9 +141,22 @@ This paper summarises what CPP has achieved for quantum mechanics. Starting from
   -(1+\varphi)\}$ where $\varphi = (1+\sqrt5)/2$.
 
 \item \textbf{Nexus}: Atemporal global constraint enforcing DI-bit
-  number conservation and total phase circulation at every Absolute
+  number conservation and total pattern-phase circulation (the
+  winding number of the site-field configuration) at every Absolute
   Moment tick.  Not a signal; not a hidden variable.
 \end{enumerate}
+
+\emph{Anti-erasure note (v2.0).}  Versions prior to 2.0 stated
+primitive~2 as ``phase-carrying DI bits: relational quanta exchanged
+between CPs, carrying both density $\rho$ and geometric phase
+$\phi$.''  That statement conflicted twice with the ratified
+ontology: DI-bits carry no phase (founder ruling 2957 P-1, ratified
+AP-2), and DI-bits are the third CP \emph{type}, not a relational
+quantum passed between CPs (A1$'$).  The audit and sweep records
+(\texttt{qm1\_phase\_provenance\_audit.md},
+\texttt{qm\_series\_phase\_attribution\_sweep.md}) established
+that no derivation in the series consumes the retired content; every
+result summarised in this capstone is unchanged.
 
 %=====================================================================
 \section{The Emergence Chain}
@@ -130,7 +165,10 @@ This paper summarises what CPP has achieved for quantum mechanics. Starting from
 \subsection{Paper~2 --- Schr\"{o}dinger equation from lattice
 hopping~\cite{cpp2040a}}
 
-DI bits hop with phase accumulation $\Delta\phi = m_{\rm CP}c\Delta s/\hbar$.
+The pattern's phase advances at the ZBW rotation rate,
+$\Delta\phi = mc\Delta s/\hbar = \omega_C\Delta t$ (Paper~2
+v2.0 pattern-rotation equation; the pre-2.0 per-bit ``phase
+accumulation'' reading is retired --- same value, corrected bearer).
 The discrete evolution:
 \begin{equation}
 \psi_i(t+\Delta t) = \psi_i(t)
@@ -193,7 +231,7 @@ Hierarchy problem $=$ finite fine-tuning (not solved, but well-defined).
 \toprule
 Level & Nexus enforces & Physical effect \\
 \midrule
-DI-bit dynamics & DI-bit number conservation & Born rule: $P = |\psi|^2$ \\
+Site-field dynamics & DI-bit number conservation (count register) & Born rule: $P = |\psi|^2$ \\
 Schr\"{o}dinger & Phase circulation (winding number) & Linear unitary evolution \\
 Entanglement & Non-separable joint state maintained & Bell $= 2\sqrt{2}$ \\
 Measurement & Global unitarity during decoherence & Apparent (not true) collapse \\
@@ -310,9 +348,6 @@ papers (C1--C15) via the SSV mechanism.
 \end{figure}
 
 %=====================================================================
-\ibliographystyle{plainnat}
-\ibliography{cpp_qm_series}
-
 
 \section*{Acknowledgements}
 The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).

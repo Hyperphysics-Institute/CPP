@@ -1,11 +1,19 @@
 % ============================================================
 % QM-4: Measurement Problem and Decoherence from the DP Sea
-% Version 1.1 — 2 April 2026
+% Version 1.2 — 4 August 2026
 %
 % CHANGELOG:
 %   v1   Mar 2026  — Initial draft
 %   v1.1 2 Apr 2026 — Formatting compliance: .bib, natbib,
 %                     graphicspath, TOC, PLS, OSF DOI
+%   v1.2 4 Aug 2026 — LINEAGE ATTRIBUTION SWEEP (OPEN-QM-1-REGROUND,
+%                     Patches 2995/2996/2997/2998): per-bit phase /
+%                     "DI-bit state" attribution language relocated to
+%                     the pattern level per QM-1 v2.0 (FI-QMRG-1).
+%                     Mathematics unchanged (Patch 2995 sweep: no
+%                     proof consumes per-bit phase). Anti-erasure
+%                     notes added. Title-block version marker
+%                     reconciled (was stale "(Version 3.1)").
 %
 % FIGURE PATH:
 %   .tex: series_quantum_mechanics/papers/
@@ -48,7 +56,7 @@
 \title{\textbf{Quantum Mechanics in Conscious Point Physics:\\
 The Measurement Problem and Apparent Wavefunction Collapse\\
 from DP Sea Decoherence}\\[6pt]
-{\large QM Series --- Paper 5 (Version 3.1)}}
+{\large QM Series --- Paper 5 (Version 1.2)}}
 
 \author{Thomas Lee Abshier, ND\\
 Hyperphysics Institute\\
@@ -63,7 +71,9 @@ Hyperphysics Institute\\
 \begin{abstract}
 The quantum measurement problem is resolved in Conscious Point Physics
 by identifying the DP~Sea as the physical environment that decoheres
-the coherent DI-bit state.  Coupling via
+the coherent pattern state (the system's Sea-polarization
+configuration held in the Grid-Point registers; QM-1 v2.0,
+FI-QMRG-1).  Coupling via
 $H_{\rm int} = \sum_j g_j(a_j+a_j^\dagger)\otimes\hat{\sigma}_z$
 (the SSV projection operator) and applying the Born--Markov
 approximation yields the Lindblad master equation with dephasing rate
@@ -89,14 +99,10 @@ of order $(\lP/\lambda)^2$ and unobservable at laboratory scales.
 
 \bigskip\noindent
 \textbf{Plain Language Summary:}
-Why do quantum superpositions disappear when we look at them? In CPP, every measurement couples the quantum system to the Dipole Sea — the vast background of conscious point pairs that fills the lattice. This coupling scrambles the delicate phase relationships that make superposition possible, at a rate of about 10⁴² times per second. Macroscopic objects decohere so fast that they are always in definite states. The preferred measurement outcomes are determined by the Space Stress Vector — the same field that governs gravity and relativity.
+Why do quantum superpositions disappear when we look at them? In CPP, every measurement couples the quantum system to the Dipole Sea — the vast background of conscious point pairs that fills the lattice. This coupling scrambles the delicate phase relationships that make superposition possible, at a rate of about $10^{42}$ times per second. Macroscopic objects decohere so fast that they are always in definite states. The preferred measurement outcomes are determined by the Space Stress Vector — the same field that governs gravity and relativity.
 
 \bigskip
 \raggedright
-\tableofcontents
-\newpage
-
-
 \tableofcontents
 \newpage
 
@@ -107,12 +113,17 @@ Why do quantum superpositions disappear when we look at them? In CPP, every meas
 The quantum measurement problem asks why a coherent superposition
 $\ket{\psi} = \alpha\ket{0}+\beta\ket{1}$ appears to collapse to a
 definite outcome when measured.  In CPP the answer is
-environment-induced decoherence~\cite{zeh1970,zurek1981}: the DI-bit
-state couples to the thermal DP~Sea, whose random phase kicks destroy
-off-diagonal coherences while preserving populations.
+environment-induced decoherence~\cite{zeh1970,zurek1981}: the pattern
+state couples to the thermal DP~Sea, whose random phase kicks ---
+bath-interaction rotations acting on the system's $\SSV_{\rm net}$
+orientation register --- destroy off-diagonal coherences while
+preserving populations.  (\emph{Anti-erasure note, v1.2:} prior
+versions named the system the ``DI-bit state''; the naming is retired
+per A1$'$/AP-2 --- DI-bits are stateless couriers --- with every
+theorem below unchanged.)
 
-This paper derives the Lindblad equation from explicit DI-bit/DP-Sea
-scattering, proves the pointer basis is the SSV eigenstates, connects
+This paper derives the Lindblad equation from explicit
+pattern/DP-Sea scattering, proves the pointer basis is the SSV eigenstates, connects
 measurement to the entangled singlet state of Paper~4, and shows
 global unitarity is preserved by the Nexus.
 
@@ -145,7 +156,7 @@ projects onto the local SSV direction.
 \begin{theorem}[Lindblad from DP Sea scattering]
 \label{thm:lindblad}
 Under the Born--Markov approximation applied to~\eqref{eq:Hint},
-the reduced density matrix of the DI-bit qubit satisfies
+the reduced density matrix of the pattern qubit satisfies
 \begin{equation}
 \frac{d\rho}{dt} = -\frac{i}{\hbar}[H_S,\rho]
 + \gamma\bigl(\hat{\sigma}_z\rho\hat{\sigma}_z - \rho\bigr),
@@ -200,8 +211,8 @@ classical mixture representing apparent collapse.
 \begin{theorem}[Pointer basis $=$ SSV eigenstates]
 \label{thm:pointer}
 The states robust under DP~Sea coupling are the eigenstates of
-$\hat{\sigma}_z$, i.e., the DI-bit states of definite phase projection
-onto the local SSV direction.
+$\hat{\sigma}_z$, i.e., the pattern states of definite phase
+projection onto the local SSV direction.
 \end{theorem}
 
 \begin{proof}
@@ -226,7 +237,7 @@ by the lattice geometry --- independent of the apparatus.
 \centering
 \includegraphics[width=0.90\textwidth]{qm2040d_fig2_pointer_basis.pdf}
 \caption{Pointer basis identification.
-  \textit{Left:} An arbitrary DI-bit state $\ket{\psi}$ on the
+  \textit{Left:} An arbitrary pattern state $\ket{\psi}$ on the
   Bloch sphere (blue arrow), not aligned with the SSV axis (green
   vertical).
   \textit{Centre:} DP~Sea dipoles (amber circles) scatter the state,
@@ -307,9 +318,6 @@ No collapse postulate is required.  Measurement is a local thermodynamic
 process whose global structure is maintained by the Nexus.
 
 %=====================================================================
-\ibliographystyle{plainnat}
-\ibliography{cpp_qm_series}
-
 
 \section*{Acknowledgements}
 The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
