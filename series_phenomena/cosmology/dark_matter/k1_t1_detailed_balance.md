@@ -8,6 +8,19 @@ ESTABLISHED-AT-MECHANISM-LEVEL, PANEL-PENDING per charter §3
 (conservative outcome → combined completed-package review). No
 value of any open quantity is minted; toy units only.**
 
+**CHANGELOG — v1.1 (Patch 2975, 3 Aug 2026): CONV-011 condition C-2
+executed (adjudication 2971 §2 Q1; Copilot addendum 2974). Adds
+§R1 the explicit conditional-on-A2 statement; §R2 Lemma T-1.L (the
+DISCRETE traversal telescoping — exact at every finite Moment step,
+every initial phase, every commensurability, via the DP-book ledger
+route) with the pairing/bijection corollary; §R3 the A3 import
+citation sharpened to microscopic reciprocity only. New sweep
+verify `code/2975_t1_discrete_sweep.py` (Copilot's exhaustive
+phase-sweep requirement + negative control). Theorem CONTENT
+unchanged; the proof obligations the panel named are discharged
+explicitly. Grade remains ESTABLISHED-AT-MECHANISM-LEVEL per the
+panel; operator-grade use stays gated on C-1/B-1 review.**
+
 **Assumptions cited (charter duty, every result):**
 - **PROTOCOL-D1** (2960, reopenable working default): Version B
   band arrival. Load-bearing use: guarantees every GP in the
@@ -223,3 +236,94 @@ d_DP ceiling ACTIVE. T-1 status: ESTABLISHED-AT-MECHANISM-LEVEL,
 PANEL-PENDING (combined completed-package review with W-2/W-3 per
 charter §3). W-2 (T-2, inertia as establishment cost) is next in
 the frozen order.
+
+
+---
+
+## §R1 (v1.1, C-2(a)) — The conditional statement, stated
+
+T-1 is, and always was, a CONDITIONAL theorem until Lemma M1 is
+invoked: *Assume the translated bound steady state exists (premise
+A2); then the fore-charging cost and aft-discharging return balance
+exactly, per DP, per traversal, in energy and in impulse.* Premise
+A2 is discharged — non-circularly — by T-2's Lemma M1 (the anchored
+configuration is the fixed point of the D-1 per-Moment refresh; M1
+makes no use of T-1). The dependency order is M1 → T-1 → (T-2's
+p = Mv identification), a DAG with no cycle. Until M1 is cited,
+every T-1 consequence carries the A2 condition explicitly. This
+section makes the panel-accepted reading (GPT Q1; 2971 C-2(a)) the
+letter of the theorem.
+
+## §R2 (v1.1, C-2(b)) — Lemma T-1.L: the discrete traversal telescoping (exact)
+
+**Setting.** Under the registered Moment-stepped update, a Sea DP's
+interaction with the passing pattern is a finite state sequence
+s_0 → s_1 → … → s_K in the DP's own state space, where s_0 is
+unpolarized rest and — by the M1/Version-B structure (anchored
+content is the pattern's, not the DP's; unanchored content departs
+at c with no return) — the traversal CLOSES: s_K = s_0. At each
+step the interaction is a PAIR exchange: the impulse delivered to
+the composite at step k is the negative of the DP's momentum change
+at step k (microscopic reciprocity, §R3), and likewise for energy.
+
+**Lemma T-1.L.** For every Sea DP, every initial phase φ, every
+velocity v (commensurate with the Moment lattice or not), and every
+finite Moment step Δt:
+
+  Σ_{k=0}^{K−1} Δp_k^{→comp} = −[p_DP(s_K) − p_DP(s_0)] = 0
+  Σ_{k=0}^{K−1} ΔE_k^{→comp} = −[E_DP(s_K) − E_DP(s_0)] = 0
+
+both EXACTLY — no continuum limit is taken anywhere.
+
+**Proof.** The per-step exchanges telescope against the DP's own
+books: summing the reciprocity identity over the traversal, the
+right side is a pure difference of the DP's state functions at the
+endpoints, and closure (s_K = s_0) annihilates it. Phase φ and
+commensurability enter only through WHICH sequence {s_k} is
+traversed and how many steps K it takes; they never touch the two
+ingredients of the proof (per-step reciprocity; endpoint closure).
+Boundary/spin-up transients (Copilot Q1) are outside the theorem by
+the §R1 conditional: the establishment transient is T-2's ledger
+(W = ΔE + E_rad), not T-1's, and the steady-state premise excludes
+it by construction. ∎
+
+**Corollary (the pairing/bijection, GPT's formulation).** Closure
+plus reciprocity implies the fore/aft pairing exists: the involution
+on traversal steps induced by the DP's return path pairs each
+charging exchange with a discharging counterpart of opposite sign.
+The ledger proof above SUBSUMES the bijection — the theorem does
+not need the pairing exhibited, because endpoint closure is
+strictly stronger — but the corollary records that the discrete
+update operator preserves exactly the one-to-one structure the
+telescoping argument was accused of assuming.
+
+**What the lemma does and does not claim.** It upgrades the
+telescoping argument from continuum-sweep-plus-toy-numerics to an
+exact finite-step identity, discharging C-2(b) as stated by the
+panel (GPT's "decisive missing item" and DeepSeek's "decisive
+computation" — the same object). It does NOT claim engine-grade
+verification of closure itself: closure is inherited from M1 at
+M1's grade (mechanism level; its instrument-grade test is the W-4
+ensemble via the B-1 bridge's L-4 leg). The condition is inherited,
+not laundered.
+
+**Sweep verification.** `code/2975_t1_discrete_sweep.py` (18/18):
+random initial phases × incommensurate velocities × step counts,
+per-DP impulse and energy sums at machine zero; plus a NEGATIVE
+CONTROL — an update with closure deliberately broken produces a
+nonzero residual, demonstrating the sweep can fail and is therefore
+a test, not a tautology.
+
+## §R3 (v1.1, C-2(c)) — The A3 import, cited exactly
+
+What T-1 imports from SF-6 is MICROSCOPIC RECIPROCITY OF PAIR
+EXCHANGES: each Perceive-stage message between the pattern's
+anchored content and a Sea DP is mutual — the curl-linkage messaging
+of the SF-6 stencil — so each interaction event's impulse/energy
+books balance pairwise at the event. This is a statement about the
+stencil's mutual messaging, NOT composite-level action–reaction:
+Newton 3 for composites is downstream OUTPUT of the package (via
+T-1/T-2/B-1), never input. The panel-accepted scope (GPT: "only
+microscopic translation symmetry/reciprocity"; Grok: "mutual
+messaging, not action-reaction pairs of forces") is hereby the
+letter of the import.
