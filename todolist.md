@@ -228,15 +228,23 @@ Founder ruling 2 Aug 2026 (Patch 2957 P-1): DI-bits carry {charge, type, origin 
 magnitude — NO phase. Registered glossary entry claims "phase, amplitude, and polarisation" — conflict.
 Correct the entry with the ruling cited and the superseded text preserved in a history note
 (anti-erasure). Blocked only by nothing; execute after the Fork-A/B ruling lands so one edit carries
-the full pinned content.
+the full pinned content. **STAGED Patch 2988**: verbatim-ready replacement text at `series_quantum_mechanics/qm1_phase_provenance_audit.md` §6; executes at AP-2 ratification (request issued 2988 §7).
 
-### TODO-2957-B — QM-1 phase-provenance audit (P1)
+### TODO-2957-B — QM-1 phase-provenance audit (P1) — EXECUTED Patch 2988
 
 If DI-bits carry no phase, where does quantum phase live? Candidate: the DP-displacement PATTERN
 level (Sea polarization configuration), DI-bits as sub-pattern carriers. Audit QM-1's shipped
 "hopping amplitude → Schrödinger" derivation for survivability under re-grounding. Until resolved,
 QM-1 lineage may NOT be cited as evidence in the RELAY-MECH-1 arc (2957 §3 withdrawal). Registered
-Patch 2957.
+Patch 2957. **EXECUTED Patch 2988** — audit record at `series_quantum_mechanics/qm1_phase_provenance_audit.md`. Verdict: shipped per-bit phase grounding RETIRED (contradicts P-1 AND A1′ reset-per-hop); mathematical spine (tight-binding → Schrödinger, T = ℏ²/(4mΔs²), Madelung/Q) is grounding-independent → QM-1 result DEMOTED TO CONDITIONAL on OPEN-QM-1-REGROUND (pattern-level phase); **AP-2 CLEARED for ratification** (no shipped mathematics consumes DI-bit phase). Citation bar continues until the re-grounding revision ships. Follow-on sweep TODO-2988-A (QM-2..6 + SF-6 attribution check).
+
+### TODO-2988-A — Downstream phase-attribution sweep: QM-2..6 + SF-6 (P2)
+
+The Patch 2988 audit confirmed QM-1's phase attribution to DI-bits is prose-layer, not
+math-layer. QM-2's Born-rule grounding ("DI-bit interference pattern", glossary line 210) and
+QM-3..6 + SF-6's citations of the QM-1 lineage need the same attribution-layer check and, where
+contaminated, relocation to the DP-displacement pattern level. Expected similar in kind to the
+QM-1 finding; each paper gets its own line-cited inventory. Registered Patch 2988.
 
 ### TODO-2952-A — Reconcile "ZDC" (SF-6 shipped vocabulary) with the founder's ZBW-chain picture (P2) — RESOLVED Patch 2953/2954
 

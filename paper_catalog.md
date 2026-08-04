@@ -175,7 +175,7 @@ Empirical-phenomenon derivations (home of record, any maturity). See [`series_ph
 
 | ID | Type | Title | File | Status |
 |----|------|-------|------|--------|
-| **QM-1** | Paper | QM Synthesis | `series_synthesis/QM-1_qm_synthesis.tex` | Needs review |
+| **QM-1** | Paper | QM Synthesis | `series_synthesis/QM-1_qm_synthesis.tex` | Needs review. **STATUS NOTE (Patch 2988):** the QM-1 Schrödinger result is **CONDITIONAL on OPEN-QM-1-REGROUND** — the shipped per-bit phase grounding is retired under founder ruling 2957 P-1 + A1′ reset-per-hop; the mathematical theorem survives pending pattern-level re-grounding. Audit: `series_quantum_mechanics/qm1_phase_provenance_audit.md`. |
 
 **Documentation:** 6 files per paper (QM-1 through QM-6) complete — individual topic papers in `series_quantum_mechanics/QM-1_schrodinger_emergence/` through `QM-6_capstone/`.
 
