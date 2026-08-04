@@ -1,6 +1,8 @@
 # B-1 — THE MECHANISM→RESPONSE-OPERATOR BRIDGE (W-1, discharging condition C-1 structurally) — Patch 2973
 
-**Status:** DERIVED-AT-MECHANISM-LEVEL, PANEL-PENDING (next CONV round). Conditional inheritance declared in §7.
+**Status:** GRADED (b) YES-CONDITIONAL AT OPERATOR GRADE (CONV-012 adjudication 2979); condition C-5 discharged in §9 below (v1.1). Conditional inheritance declared in §7.
+
+**CHANGELOG — v1.1 (Patch 2980, 3 Aug 2026): CONV-012 condition C-5 executed. §9 added: C-5(i) Lemma L-3′ — the discrete-time (Z-domain) restatement of L-3 on the Moment-sampled spectrum, exact below the Moment Nyquist frequency, incorporating the panel-recorded entire-function observation; C-5(ii) L-2 restated on the DRESSED kernel via T-1's TOTAL-force zero — the v1.0 §3 "population superposition" remark is WITHDRAWN (the theorem never used it). New verify `code/2980_b1_discrete_check.py`. Grade per panel; promotion bar remains C-5-review + the floor-clearing W-4 ensemble.**
 **Commissioned by:** CONV-011 adjudication (2971), condition C-1 / worker item W-1 — the unanimous Q3(b) gap: "the explicit bridge from the per-DP cycle lemma (and the composite steady-state cancellation) to the full linear-response operator of the ambient Sea," including the acceleration channel (DeepSeek), A2/A3 discharge at operator grade and the I_h residual-odd-channel check (Grok).
 **Verify:** `code/2973_b1_bridge_toy.py` (toy units; 9/9).
 **What this is NOT:** not a 1B closure; not a promotion move; not an instrument-grade test of the kernel decomposition (that is the W-4 ensemble measurement); mints no value of ξ₂, ζ, η, d_DP, n_DP, or N.
@@ -33,7 +35,7 @@ The S1 statement, made precise: **linear-order cancellation** = (i) the DC (drag
 
 *Proof.* Take the admissible drive v(t) ≡ v₀ (constant, any |v₀| < v_max). By T-1 the composite force vanishes identically: F = 0 at every constant v₀ — the per-DP cycle lemma × steady-population lemma gives zero net impulse per traversal for every Sea DP, and the population superposition is exact (linearity of impulse). Inserting v ≡ v₀ into L: F = −v₀ ∫₀^∞ γ(τ) dτ = 0 for all v₀ ≠ 0, hence ∫γ = 0. ∎
 
-*Remarks.* (i) T-1's zero is stronger than linear order (it holds at every constant v below cap); L-2 uses only its linear content. (ii) This is the exact point at which the mechanism theorem enters the operator: the cycle lemma's zero net impulse per traversal IS the vanishing of the kernel's DC weight, population-summed. (iii) L-2 inherits T-1's grade — mechanism level now; engine-grade discrete upon C-2(b) (the discrete traversal bijection). The bridge does not launder that condition; see §7.
+*Remarks (v1.1, C-5(ii)).* (i) T-1's zero is stronger than linear order (it holds at every constant v below cap); L-2 uses only its linear content. (ii) γ is the DRESSED kernel of the FULL linearized dynamics as defined at L-1 — including every DP–DP (relay) effect at linear order — and T-1's statement is a TOTAL-force zero, so L-2 requires NO per-DP decomposition and NO traversal-independence premise: insert the constant drive into the full linear response and the total kernel's DC weight vanishes. The v1.0 remark that read this as a "population superposition, exact by linearity of impulse" is WITHDRAWN as unnecessary and misleading (CONV-012 C-5(ii)); the per-DP cycle-lemma picture remains the MECHANISM behind the zero, but the operator proof runs on the total force alone. (iii) L-2 inherits T-1's grade — now engine-grade discrete via T-1 v1.1 Lemma T-1.L (C-2 discharged-confirmed at 2979). The bridge does not launder conditions; see §7.
 
 ## §4 — Lemma L-3 (propagation to every admissible channel: no linear-order dissipation)
 
@@ -72,3 +74,29 @@ Hence **the linear-order cancellation of the full CPP response operator holds**:
 ## §8 — What the toy verifies (and what it cannot)
 
 `code/2973_b1_bridge_toy.py` builds an explicit per-DP traversal impulse profile satisfying the cycle lemma by construction, population-superposes it into a kernel, and verifies the full implication chain numerically: cycle-lemma zero → γ̂(0)=0 → constant-v force zero → first-order-in-ω purely imaginary (dressing extracted) → Re γ̂ = O(ω²) (log-log slope fit) → finite support → adiabatic Markovian-plus-stiffness residual scaling (ωτ_b)² (factor-4 test under Ω-doubling) → I_h odd-moment cancellation (ranks 1, 3, 5) → M-consistency of the dressed inertial coefficient. The toy demonstrates the IMPLICATION STRUCTURE of L-2…L-5; it does not re-derive the microphysics and does not test P3 at instrument grade — that is W-4's job. Toy units only; no physical value of any open quantity is computed.
+
+
+---
+
+## §9 (v1.1) — C-5(i): Lemma L-3′, the discrete-spectrum form (exact, no continuum borrowed)
+
+**Setting.** The engine is Moment-stepped: the kernel is the finite sample sequence {γ_k}, k = 0…K−1, with K·Δt ≤ τ_b (finite support, L-4), and the admissible drive class is defined ON Moments — frequencies satisfy ω < ω_N ≡ π/Δt (the Moment Nyquist frequency) by construction of the drive space, not by assumption. The transfer function is the trigonometric polynomial
+
+  γ̂(ω) = Δt Σ_{k=0}^{K−1} γ_k e^{−iωkΔt}.
+
+**Lemma L-3′.** If Σ_k γ_k = 0 (the discrete DC zero, supplied EXACTLY by T-1 v1.1 Lemma T-1.L through the restated L-2), then for every admissible ω:
+
+  Re γ̂(ω) = Δt Σ_k γ_k [cos(ωkΔt) − 1] = −(ω²Δt/2) Σ_k γ_k (kΔt)² + R(ω), with |R(ω)| ≤ (ω⁴Δt/24) Σ_k |γ_k| (kΔt)⁴;
+  Im γ̂(ω) = −ωΔt Σ_k γ_k (kΔt) + O(ω³) — purely inertial dressing at first order, ΔM = Δt Σ_k γ_k (kΔt).
+
+Hence Re γ̂(ω) = O(ω²) with an EXACT finite-sum coefficient and an EXPLICIT remainder bound — no linear-order dissipation in any admissible channel, at the discrete grade the engine computes.
+
+*Proof.* Insert the DC zero to replace e^{−iωkΔt} by (e^{−iωkΔt} − 1) termwise; the cosine and sine Taylor expansions are exact with Lagrange remainders for each of the FINITELY many terms; sum the bounds. Because γ̂ is a trigonometric polynomial it is an ENTIRE function of ω (the panel-recorded observation, Gemini CONV-012 Q1): the expansion is globally convergent, and the only physical restriction is the drive class ω < ω_N, which the Moment-stepped drive space imposes by construction. Aliasing is not a failure mode but a domain statement: frequencies ≥ ω_N do not exist in the admissible class, so nothing is asserted about them. ∎
+
+*What changed vs L-3 (v1.0).* Nothing in the conclusion; everything in the grade. L-3 expanded a continuum integral; L-3′ expands the finite Moment sum the engine actually evaluates, with exact coefficients and a bound in place of an O(·). L-3 is retained as the continuum shadow of L-3′.
+
+**Verification.** `code/2980_b1_discrete_check.py` (9/9): coarse-sampling exactness (K = 8, where continuum quadrature is visibly wrong and the discrete identity still holds to machine precision); slope-2 fit of Re γ̂ across three decades below Nyquist; remainder-bound audit; discrete-dressing dual extraction; behavior approaching ω_N finite and defined; NEGATIVE CONTROL — Σγ_k ≠ 0 produces Re γ̂(0) ≠ 0, i.e., linear-order dissipation appears the moment the DC zero is broken, so the check can fail.
+
+## §10 (v1.1) — Condition ledger after C-5
+
+C-1: bridge DERIVED and panel-graded (b). C-2/C-3/C-4: DISCHARGED-CONFIRMED (2979). C-5: discharged structurally HERE, subject to next-round panel confirmation. Standing bar for any operator-grade promotion or 1B movement: C-5 review + the floor-clearing W-4 ensemble (which also tests L-4's support/tail leg and the disclosed passivity sign). Nothing in this revision moves the ledger.

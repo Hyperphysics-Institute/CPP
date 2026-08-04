@@ -8,6 +8,8 @@ ESTABLISHED-AT-MECHANISM-LEVEL, PANEL-PENDING per charter §3
 (conservative outcome → combined completed-package review). No
 value of any open quantity is minted; toy units only.**
 
+**CHANGELOG — v1.2 (Patch 2980): CONV-012 Q2 wording strengthening — per-step reciprocity stated as an exact event-level property of the registered update (Copilot adoption, 2979). No content change.**
+
 **CHANGELOG — v1.1 (Patch 2975, 3 Aug 2026): CONV-011 condition C-2
 executed (adjudication 2971 §2 Q1; Copilot addendum 2974). Adds
 §R1 the explicit conditional-on-A2 statement; §R2 Lemma T-1.L (the
@@ -306,6 +308,14 @@ verification of closure itself: closure is inherited from M1 at
 M1's grade (mechanism level; its instrument-grade test is the W-4
 ensemble via the B-1 bridge's L-4 leg). The condition is inherited,
 not laundered.
+
+**Wording strengthening (v1.2, Patch 2980, CONV-012 Q2 adoption).** "Per-step
+reciprocity" in this lemma is an EXACT event-level property of the registered
+update rule — each Perceive-stage exchange is a pairwise transfer in which the
+impulse (energy) credited to the composite's book at step k equals the negative
+of the DP's momentum (energy) change at step k, by the event's own bookkeeping —
+NOT an assumption layered on top of the update. The SF-6 mutual-messaging
+citation of §R3 is the provenance of this event-level structure.
 
 **Sweep verification.** `code/2975_t1_discrete_sweep.py` (18/18):
 random initial phases × incommensurate velocities × step counts,
