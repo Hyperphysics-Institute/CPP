@@ -67,6 +67,28 @@ exactly isotropic (odd orders vanish by parity; orders 2 and 4 are
 confirmed: order-4 anisotropic residual 1.9×10⁻¹⁶; order-6 residual
 0.419; §6.)
 
+### §3a — Proof and citations (added at CONV-015 adjudication, Patch 3004)
+
+The 5-design property is here proved, not merely measured (the
+CONV-015 DeepSeek residue, remediated on its stated terms). The
+rotational icosahedral group I ⊂ SO(3) has invariant-polynomial
+degrees 2, 6, 10, 15 (its Molien series
+1/((1−t²)(1−t⁶)(1−t¹⁰)) · (1+t¹⁵) — the degree-2 invariant is r²,
+isotropic). Hence NO anisotropic I-invariant polynomial of degree
+< 6 exists. The moment tensor M_n of any centrally symmetric
+I_h-orbit (the 12 icosahedron vertices are one) is an I-invariant
+symmetric tensor of rank n; for n ≤ 5 it must therefore be built
+from δ's alone (isotropic; odd n vanish by central symmetry) —
+which is exactly the spherical 5-design property. First anisotropy
+at n = 6, where the degree-6 invariant enters. Citations: Delsarte,
+Goethals & Seidel, "Spherical codes and designs," Geom. Dedicata 6
+(1977) 363–388 (spherical t-designs; the icosahedron as a 5-design
+is classical — their Example 5.16 class); invariant degrees of the
+icosahedral group: standard, e.g. Klein's classical treatment and
+modern invariant-theory references (Shephard–Todd degrees 2, 6, 10
+for the rotation group). The numerical check of §6 confirms the
+theorem and calibrates the order-6 residual (0.419).
+
 **Consequence.** A β-kernel term with m gradient factors carries
 total v-order 2+m. Lattice-anisotropic structure requires v-order
 ≥ 6, hence m ≥ 4: **the lattice-anisotropic out-of-plane channel is
@@ -169,7 +191,7 @@ ALL ASSERTIONS PASS
 
 ## §7 — Status, honest limits, and registrations
 
-**R-4 status: CLOSURE CANDIDATE at derivation grade, PANEL-PENDING.**
+**R-4 status: CLOSED at derivation grade FOR THE SHIPPED TRANSPORT CLASS (CONV-015 adjudication, Q1 5–0; Patch 3004). Residue spun off as OPEN-QMRG-R4-MULTILINK (multi-edge-correlated kernels; non-blocking for the current corpus, blocking for universal substrate-theorem claims).** Original candidate framing preserved below for the record:
 What is proved vs. inherited:
 - L-1 is exact and elementary (component-diagonal operators cannot
   mix components) — theorem-strength for the shipped transport class.

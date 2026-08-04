@@ -26,10 +26,26 @@ register":
   energy quantum; the medium's elasticity converts maintained energy
   to displacement quadratically ⇒ |S|² ∝ N.
 
-**AP-2 decides the fork.** The ratified founder ruling P-2 (Patch
-2989) states the count is "intensity-like, NOT amplitude-like."
-Reading L makes the count amplitude-like — it contradicts the
-ratified ontology. Reading I is the unique AP-2-consistent reading.
+**Dependency order (AMENDED at CONV-015 adjudication, Patch 3004 —
+GPT's amendment adopted verbatim in substance).** The load-bearing
+derivation is DYNAMICAL: quadratic elastic energy (I-1) + additive
+messenger energy (I-3) ⟹ A² ∝ N (§2), with the rival reading
+excluded dynamically — it requires quadrature phase-locking of every
+arrival, an arrival-phase discipline the substrate lacks under P-3's
+temporal-synchrony structure (verified: the rival appears ONLY under
+enforced phase-locking, §5(b)). AP-2 then IDENTIFIES N with the
+registered ρ book — a register identification and consistency check,
+NOT a dynamical premise. The original framing below ("AP-2 decides
+the fork") is retained for the record with this correction standing
+over it: the ratified P-2 clause ("intensity-like, NOT
+amplitude-like") is the boundary condition the dynamics is
+independently shown to satisfy.
+
+**AP-2 decides the fork (original framing, superseded as above).**
+The ratified founder ruling P-2 (Patch 2989) states the count is
+"intensity-like, NOT amplitude-like." Reading L makes the count
+amplitude-like — it contradicts the ratified ontology. Reading I is
+the unique AP-2-consistent reading.
 The name "Displacement Increment" correctly describes the microscopic
 delivery event; the SUSTAINED register's scaling passes through the
 elastic medium, and stiffness is where the square root comes from.
@@ -67,9 +83,16 @@ elastic storage u = ½κ|S_⊥|² = ½μω²|S_⊥|²:
     N·ħω ∝ turnover rate × μω²|S_⊥|²
     ⇒  |S_⊥|² ∝ N·ħ/(μω)  ∝ ρ        (fixed mode; fixed medium)
 
-**This is B-QMRG-1, with its constant.** Per count unit, the
-sustained displacement-squared is ħ/(2μω) up to the O(1) turnover
-factor — which is EXACTLY the canonical 1/(2ω) field normalization.
+**This is B-QMRG-1 at proportionality grade.** Per count unit, the
+sustained displacement-squared scales as ħ/(μω) up to the O(1)
+turnover factor. \[Precision note, CONV-015 amendment: what is
+DERIVED is the ∝ 1/ω per-quantum SCALING — the structure of the
+canonical normalization; the exact coefficient (the canonical ½)
+awaits the turnover/participation constant, registered as
+OPEN-QMRG-B1-CONST. Amplitude-convention dependencies (peak/RMS/
+complex; per-oscillator vs per-mode; quadrature counting;
+participation fraction; the definition of μ) are absorbed into that
+constant.\]
 
 ## §3 — The anti-circularity payoff
 
@@ -122,7 +145,7 @@ ALL ASSERTIONS PASS
 
 ## §6 — Status, honest limits, registrations
 
-**OPEN-QMRG-B1 status: DERIVATION CANDIDATE, PANEL-PENDING.**
+**OPEN-QMRG-B1 status: CLOSED at PROPORTIONALITY grade (CONV-015 adjudication, Q2 5–0; Patch 3004). The exact-coefficient claim is NOT closed — see OPEN-QMRG-B1-CONST. The mutual-support prohibition is DISCHARGED with the standing rider (QM-1/QM-5 cite this record, not each other, for the relation).** Original candidate framing preserved below:
 Proved vs inherited:
 - The quadratic-vs-linear fork resolution is forced by ratified AP-2
   (theorem-adjacent: the rival reading contradicts a ratified
