@@ -26,6 +26,18 @@
 %                     throughout. Title-block version marker
 %                     reconciled with this CHANGELOG (pre-2.0 title
 %                     carried a stale "(Version 3.1)").
+%   v2.1 4 Aug 2026 — CONV-014 PANEL AMENDMENTS ENACTED (adjudication
+%                     Patch 3000, 4-1 on Q1): (a) A-1 restated as
+%                     natural-availability, not uniqueness
+%                     (OPEN-QMRG-UNIQ registered); (b) FI-QMRG-1 now
+%                     carries two explicit conditions — C-i the
+%                     amplitude-count magnitude constraint (B-QMRG-1)
+%                     and C-ii plane stability under GP refresh (R-4,
+%                     severity medium-high); (c) node-singularity
+%                     wording downgraded to consistency-by-
+%                     construction; (d) OPEN-QMRG-B1 mandatory-
+%                     derivation + mutual-support prohibition noted
+%                     in the Grade remark. Mathematics unchanged.
 %
 % FIGURE PATH:
 %   .tex: series_quantum_mechanics/papers/
@@ -68,7 +80,7 @@
 \title{\textbf{Quantum Mechanics in Conscious Point Physics:\\
 The Schr\"{o}dinger Equation from Sea-Polarization\\
 Pattern Dynamics on the 600-Cell Lattice}\\[6pt]
-{\large QM Series --- Paper 2 (Version 2.0)}}
+{\large QM Series --- Paper 2 (Version 2.1)}}
 
 \author{Thomas Lee Abshier, ND\\
 Hyperphysics Institute\\
@@ -186,7 +198,15 @@ Grid Point's $\SSV_{\rm net}$ directional content in the
 distinguished plane (FI-QMRG-1).  The microscopic contributors to
 $\SSV_{\rm net}$ are the orientations of the underlying dipoles; the
 Grid Point computes, holds, and per-Moment refreshes the aggregate
-(A3$'$ state protocol).
+(A3$'$ state protocol).  \emph{The identification carries two
+explicit conditions (CONV-014 panel amendment, enacted v2.1):}
+\textbf{C-i} the in-plane magnitude tracks the count,
+$|\SSV_{{\rm net},\perp}| \propto \sqrt{\rho}$ (the B-QMRG-1
+bridge below), so the vector register carries no planar degree of
+freedom unmapped by the Madelung pair; and \textbf{C-ii} the
+distinguished plane is stable under the per-Moment GP refresh
+(registered obligation R-4).  Absent C-i the register mapping is not
+one-to-one; absent C-ii the U(1) reduction is only approximate.
 \end{definition}
 
 Two structural facts anchor this grounding:
@@ -195,11 +215,16 @@ Two structural facts anchor this grounding:
 \item \textbf{U(1) compactness for free.}  A quantum phase must live
   on a circle ($\phi \cong \phi + 2\pi$); this is the U(1) target
   space that interference, winding numbers, and gauge structure
-  require.  Of the registers the Grid Point holds, only the direction
-  of a vector in a 2-plane natively supplies a compact periodic
-  coordinate.  A scalar register would require the periodicity to be
-  postulated by hand; the $\SSV_{\rm net}$-orientation reading obtains
-  it from geometry.
+  require.  Of the registers the Grid Point currently holds, the
+  direction of a vector in a 2-plane natively supplies a compact
+  periodic coordinate; a scalar register would require the
+  periodicity to be postulated by hand.  \emph{This argument
+  establishes natural availability among the currently registered
+  variables, not uniqueness} (CONV-014 amendment): alternative
+  compactifications (an auxiliary angular register, a projected
+  higher-dimensional orientation, discrete cyclic counts modulo $N$)
+  are not excluded here; their exclusion from the substrate axioms is
+  registered as OPEN-QMRG-UNIQ.
 \item \textbf{The A3$'$ register mapping.}  The Madelung content of
   the site field, $(\sqrt{\rho},\phi)$, maps one-to-one onto the
   scalar ($\SSV_{\rm abs}$, $l=0$) and vector ($\SSV_{\rm net}$,
@@ -232,8 +257,10 @@ photon ontology, of which this grounding is the standing-pattern
 counterpart.)  Where the periodic component vanishes, $\phi$ is
 undefined --- and these are exactly the nodes $\rho \to 0$ where
 $\psi = 0$ and the quantum phase is undefined in standard quantum
-mechanics as well: phase singularities occur precisely where the
-register that carries the phase vanishes.
+mechanics as well.  \emph{Grading note (CONV-014):} this match is
+consistency-by-construction --- undefined phase at vanishing
+magnitude is generic to any polar decomposition --- and is therefore
+recorded as a consistency check, not an independent prediction.
 
 \medskip
 \noindent The pattern's phase advances deterministically.  Over a
@@ -345,16 +372,24 @@ this because its update is reversible (clause~ii), whereas diffusion
 is not.
 \end{proof}
 
-\begin{remark}[Grade]
+\begin{remark}[Grade and registered obligations (CONV-014)]
 Proposition~\ref{prop:unitarity} is carried at derivation-sketch
-grade: clauses (i) and (ii) are corpus-level substrate facts; clause
-(iii) consumes the bridging input B-QMRG-1 (coherent-mode
-amplitude--count relation) and the small-signal linear-response
-regime.  A publication-grade hardening would derive the linear
-regime's validity bounds from the substrate response functions.  The
-theorem of \S4 consumes only the \emph{form} of the update
-(complex, linear, Hermitian-generated), which this proposition
-supplies.
+grade (panel-ratified 4--1): clauses (i) and (ii) are corpus-level
+substrate facts; clause (iii) consumes the bridging input B-QMRG-1
+(coherent-mode amplitude--count relation) and the small-signal
+linear-response regime.  Registered obligations: \textbf{OPEN-QMRG-B1}
+--- B-QMRG-1 must be derived from substrate dynamics (locus: Paper~6
+or a dedicated coherent-mode bridge arc) before any grade elevation
+of this Proposition or of the Born-rule reconciliation; until then,
+neither this paper nor Paper~6 may be cited as support for the
+amplitude--count relation (mutual-support prohibition).
+\textbf{R-4} --- plane stability: prove the GP refresh preserves the
+distinguished plane for the admitted pattern class (a bounding lemma
+on out-of-plane perturbations under the tight-binding update), and
+establish the plane's existence for all quantum-relevant patterns
+including stationary states (severity: medium--high).  The theorem of
+\S4 consumes only the \emph{form} of the update (complex, linear,
+Hermitian-generated), which this proposition supplies conditionally.
 \end{remark}
 
 \begin{remark}[Why $T = \hbar^2/(4m\Delta s^2)$, not $\hbar^2/(2m\Delta s^2)$]

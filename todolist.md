@@ -236,7 +236,12 @@ If DI-bits carry no phase, where does quantum phase live? Candidate: the DP-disp
 level (Sea polarization configuration), DI-bits as sub-pattern carriers. Audit QM-1's shipped
 "hopping amplitude → Schrödinger" derivation for survivability under re-grounding. Until resolved,
 QM-1 lineage may NOT be cited as evidence in the RELAY-MECH-1 arc (2957 §3 withdrawal). Registered
-Patch 2957. **EXECUTED Patch 2988** — audit record at `series_quantum_mechanics/qm1_phase_provenance_audit.md`. Verdict: shipped per-bit phase grounding RETIRED (contradicts P-1 AND A1′ reset-per-hop); mathematical spine (tight-binding → Schrödinger, T = ℏ²/(4mΔs²), Madelung/Q) is grounding-independent → QM-1 result DEMOTED TO CONDITIONAL on OPEN-QM-1-REGROUND (pattern-level phase); **AP-2 CLEARED for ratification** (no shipped mathematics consumes DI-bit phase). Citation bar continues until the re-grounding revision ships. Follow-on sweep TODO-2988-A (QM-2..6 + SF-6 attribution check).
+Patch 2957. **BAR STATUS UPDATE (Patch 3000, CONV-014 adjudication): bar → PARTIAL.** Admissible
+with a mandatory conditional note (naming OPEN-QMRG-B1 + R-4): the pattern-level phase-location
+claim (FI-QMRG-1 as amended, incl. pattern rotation + SF-6 consistency) and the formal
+mathematical results cited AS formal results. Still barred: B-QMRG-1's truth, unitarity beyond
+the sketch Proposition, plane stability, un-noted phase interpretation. Scope authority:
+`series_quantum_mechanics/conv014_adjudication.md` §6 E-1. **EXECUTED Patch 2988** — audit record at `series_quantum_mechanics/qm1_phase_provenance_audit.md`. Verdict: shipped per-bit phase grounding RETIRED (contradicts P-1 AND A1′ reset-per-hop); mathematical spine (tight-binding → Schrödinger, T = ℏ²/(4mΔs²), Madelung/Q) is grounding-independent → QM-1 result DEMOTED TO CONDITIONAL on OPEN-QM-1-REGROUND (pattern-level phase); **AP-2 CLEARED for ratification** (no shipped mathematics consumes DI-bit phase). Citation bar continues until the re-grounding revision ships. Follow-on sweep TODO-2988-A (QM-2..6 + SF-6 attribution check).
 
 ### TODO-2988-A — Downstream phase-attribution sweep: QM-2..6 + SF-6 (P2)
 
