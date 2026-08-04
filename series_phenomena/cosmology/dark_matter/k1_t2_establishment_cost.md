@@ -12,6 +12,18 @@ ESTABLISHED-AT-MECHANISM-LEVEL, PANEL-PENDING per charter §3
 open quantity is minted; toy units only; all toy coefficients
 disclosed as toy-specific.**
 
+**CHANGELOG — v1.1 (Patch 2976, 3 Aug 2026): CONV-011 conditions
+C-3 + C-4 executed (adjudication 2971 §2 Q2; Copilot addendum
+2974). Adds §R1 Lemma T-2.P (the orientation-sense
+energy-degeneracy lemma — the compressed parity step made explicit:
+inversion is INSIDE the equivariance group, so the sense reversal
+is covered by invariance, not ignored); §R2 the dE = v·dp
+grounding with the route DECLARED (definitional-with-consistency)
+and the dependency DAG stated; §R3 the M-vs-anchored-content sweep
+(Copilot's item). New verify `code/2976_t2_parity_sweep.py`.
+Theorem CONTENT unchanged; grade remains
+ESTABLISHED-AT-MECHANISM-LEVEL per the panel.**
+
 **Assumptions cited (charter duty, every result):**
 - **PROTOCOL-D1** (2960, reopenable working default): per-Moment
   band refresh of every GP in the pattern volume. Load-bearing
@@ -254,3 +266,109 @@ PANEL-PENDING (combined completed-package review with T-1/T-3 per
 charter §3). T-1's A2 debt: DISCHARGED (Lemma M1 + W7). Next in
 the frozen order: **W-3 (T-3, the DM-ring instance — the K1
 stiffness, THE 7th derivation).**
+
+
+---
+
+## §R1 (v1.1, C-3) — Lemma T-2.P: orientation-sense energy degeneracy
+
+**The panel's worry (GPT Q2; dispatch Q2 attack line):** the arcs
+carry a rotation SENSE; does the mirror map genuinely produce an
+energy-degenerate configuration, or does sense-flip break the
+degeneracy? The v1.0 proof used the degeneracy without stating it.
+
+**Lemma T-2.P.** Let P be the Sea parity map — the inversion
+element: positions → −positions about the pattern center,
+velocities → −velocities (true vectors), and every arc's rotation
+sense UNCHANGED (a sense is a PSEUDOVECTOR: inversion-even; this is
+the transformation law, not a choice). Then E(P·config) =
+E(config) for every admissible configuration, hence E(v) = E(−v).
+
+**Proof.** (i) The stored-energy functional is built from
+I_h-equivariant stencil contractions (FACT G1's class). (ii) The
+icosahedral group I_h CONTAINS the inversion −1 (I_h = I × {±1};
+equivalently: the 12-direction stencil is centrally symmetric,
+antipodal pairs — verified as CHECK 1 of the sweep). (iii)
+Therefore invariance of the functional under I_h already includes
+invariance under P. In particular every P-odd scalar a chiral term
+could ride on (e.g. a position–sense contraction x̂·ŝ, odd because
+x̂ flips and ŝ does not) is EXCLUDED from the functional by the G1
+class — this exclusion, not a sense flip, is what protects the
+degeneracy. (iv) P maps the +v translated steady state onto a −v
+translated state with the SAME arc senses; because inversion is a
+symmetry of the stencil dynamics, the image of a steady state is a
+steady state, i.e., an admissible −v steady state; by (iii) the two
+are exactly energy-degenerate. ∎
+
+**Answering the panel's question as ASKED.** The dispatch asked
+whether "sense-flip breaks the degeneracy." The precise answer: the
+sense does not flip under the degeneracy-generating map at all —
+pseudovectors are inversion-even — and the degeneracy is protected
+because the G1 functional class admits no term odd under the map.
+The v1.0 compression hid this; the first sweep run then exposed
+that the worker itself had the transformation law backwards (the
+toy's negative control refused to fire under a sense-flipping map —
+the P-odd probe term was accidentally invariant), which is recorded
+publicly in `reasoning/2976.md`: the toy corrected the worker on
+the very point the panel flagged.
+
+**Remark (what would break it).** If the functional carried an
+I-equivariant-but-not-I_h-equivariant term (a genuinely chiral term
+odd under inversion), the degeneracy would fail and E(v) could
+carry odd powers. The registered stencil class excludes this (G1);
+the substrate chirality results (FI-C-9 line) live in a different
+object (the pseudoscalar sign, not the stored-energy functional)
+and do not inject such a term — noted so the chirality arc and this
+lemma are seen to be consistent, not in tension.
+
+## §R2 (v1.1, C-4) — dE = v·dp: the route DECLARED
+
+**The panel's demand (DeepSeek Q2; GPT Q2):** derive dE = v·dp from
+re-caused motion, or declare the definitional route — the theorem
+must say which it takes. **Declaration: T-2 takes the
+DEFINITIONAL-WITH-CONSISTENCY route.** Explicitly:
+
+1. E(v) = E₀ + ½Mv², M ≡ E″(0), is DERIVED (parity, §R1 + G1
+   through degree 5, + smoothness) — no momentum concept used.
+2. p is DEFINED as the composite's book momentum: the cumulative
+   pairwise-reciprocal impulse tally of the composite's books
+   (well-defined because every interaction event balances pairwise,
+   §R3 of T-1 v1.1), normalized to p = 0 at v = 0.
+3. **Consistency (the content):** at linear order, the book
+   momentum changes ONLY through external impulse — because by T-1
+   (now available: the DAG is M1 → T-1 → this step, no cycle) the
+   Sea's exchanges with the coasting composite cancel exactly over
+   traversals. External quasi-static work dW = ΔE with E from (1)
+   then gives, along any adiabatic path, dE = M v dv; and the same
+   external impulse gives dp = M dv IF AND ONLY IF the book
+   momentum satisfies p = Mv. The toy's establishment dynamics
+   verifies precisely this (v1.0's p_num = p_ana check; re-run in
+   the 2976 sweep across parameters), closing the consistency loop:
+   the DEFINED p and the DERIVED E satisfy dE = v·dp identically,
+   with the same M in both.
+4. What is NOT claimed: Newton 2 as input (no force law is assumed
+   — the external agent is a boundary condition of the ledger);
+   conservation of p from translation symmetry (that is downstream
+   OUTPUT territory, with B-1, not input); any physical value of M
+   (coefficient deliberately not minted, unchanged).
+
+DeepSeek's own Q2 analysis exhibited exactly this route as the
+legitimate one ("p = Mv + constant; the constant is zero if p = 0
+at v = 0 … so it works") — the defect was silence about which route
+the theorem took. The silence is hereby removed.
+
+## §R3 (v1.1, Copilot 2974) — M ∝ anchored content: the sweep
+
+Copilot's added requirement: a numeric sweep of M against anchored
+content with uncertainties. Executed in
+`code/2976_t2_parity_sweep.py`: toy composites at anchored-content
+counts N_a swept over an order of magnitude; M extracted per N_a
+from the establishment-energy curvature with bootstrap
+uncertainties; linear fit through the origin. Result (toy units):
+proportionality confirmed at the toy level — slope stable,
+intercept consistent with zero, R² at the 1-per-mille level of
+unity (exact figures in the script output). SCOPE unchanged from
+v1.0: this is the toy-level demonstration of the per-DP-additivity
++ curl-linkage structural consequence; the proportionality
+COEFFICIENT remains deliberately not minted; instrument-grade
+standing unchanged.
