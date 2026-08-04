@@ -110,3 +110,9 @@ Copilot's distinct return arrived post-2972 (REASONED-UNVERIFIED, plainly declar
 - **Key stdouts:** Copilot requests the KEY-A/KEY-B stdouts to convert its return. Worker will include both full stdouts in the next dispatch package (the keys are already worker-verified; publishing stdout post-adjudication no longer contaminates this round).
 
 Integrity ledger: unchanged (no new events; Copilot credited for plain declaration). The adjudication remains FINAL; this addendum enriches W-2/W-3/W-4 requirements and the next round's promotion bar.
+
+---
+
+## §9 — Erratum pointer (Patch 2979)
+
+The CONV-012 adjudication (`conv012_2026-08_returns_adjudication.md` §5) records, by 5/5 panel ruling, an erratum against the CONV-011 dispatch's Q2 framing: the "sense-flip" phrasing carried the wrong pseudovector transformation law (senses are inversion-EVEN). No CONV-011 verdict relied on it (5/5). The frozen dispatch text stands unedited as the immutable request record; the erratum of record lives at the CONV-012 adjudication §5.
