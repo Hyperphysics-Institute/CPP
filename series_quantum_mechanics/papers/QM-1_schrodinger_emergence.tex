@@ -1,11 +1,31 @@
 % ============================================================
-% QM-1: Emergence of the Schrödinger Equation from DI-Bit Hopping
-% Version 1.1 — 2 April 2026
+% QM-1: Emergence of the Schrödinger Equation from Sea-Polarization
+%       Pattern Dynamics (formerly: from DI-Bit Hopping)
+% Version 2.0 — 4 August 2026
 %
 % CHANGELOG:
 %   v1   Mar 2026  — Initial draft
 %   v1.1 2 Apr 2026 — Formatting compliance: .bib, natbib,
 %                     graphicspath, TOC, PLS, OSF DOI
+%   v2.0 4 Aug 2026 — PATTERN-LEVEL RE-GROUNDING (OPEN-QM-1-REGROUND,
+%                     Patches 2988/2995/2996/2997). The per-bit
+%                     phase-accumulation grounding is RETIRED under
+%                     founder ruling 2957 P-1 + A1' reset-per-hop
+%                     (audit: series_quantum_mechanics/
+%                     qm1_phase_provenance_audit.md). The site field
+%                     is re-grounded on FI-QMRG-1 (phi = orientation
+%                     of the GP's SSV_net directional content in the
+%                     distinguished ZBW plane; rho = the count-like
+%                     SSV_abs register). Eq. (phasehop) replaced by
+%                     the pattern-rotation equation (same numerical
+%                     content, corrected bearer). Unitarity grounded
+%                     in reversible conserved PCD displacement.
+%                     Theorem statement and proof UNCHANGED (the 2988
+%                     audit's Finding S-1: the mathematics never
+%                     consumed per-bit phase). Anti-erasure notes
+%                     throughout. Title-block version marker
+%                     reconciled with this CHANGELOG (pre-2.0 title
+%                     carried a stale "(Version 3.1)").
 %
 % FIGURE PATH:
 %   .tex: series_quantum_mechanics/papers/
@@ -46,9 +66,9 @@
 \newcommand{\SSV}{\mathrm{SSV}}
 
 \title{\textbf{Quantum Mechanics in Conscious Point Physics:\\
-The Schr\"{o}dinger Equation from Phase-Carrying\\
-DI-Bit Hopping on the 600-Cell Lattice}\\[6pt]
-{\large QM Series --- Paper 2 (Version 3.1)}}
+The Schr\"{o}dinger Equation from Sea-Polarization\\
+Pattern Dynamics on the 600-Cell Lattice}\\[6pt]
+{\large QM Series --- Paper 2 (Version 2.0)}}
 
 \author{Thomas Lee Abshier, ND\\
 Hyperphysics Institute\\
@@ -62,39 +82,50 @@ Hyperphysics Institute\\
 
 \begin{abstract}
 The time-dependent Schr\"{o}dinger equation is derived in Conscious
-Point Physics from the hopping of phase-carrying Displacement Increment
-(DI) bits on the 600-cell lattice.  Each DI bit carries a complex
-amplitude $\psi_i = \sqrt{\rho_i}\,e^{i\phi_i}$ at each Grid Point,
-where $\rho_i$ is the DI-bit number density and $\phi_i$ is the
-geometric phase accumulated at velocity $c = \lP/\tP$.  The discrete
-evolution over one Absolute Moment tick involves a complex hopping
-Hamiltonian with off-diagonal amplitude $T = \hbar^2/(4m\Delta s^2)$,
-derived from the DI-bit velocity and the icosahedral coordination
-$z=12$ of the 600-cell.  The graph Laplacian of the 600-cell satisfies
-$\sum_{j\sim i}(\psi_j - \psi_i) = 2\Delta s^2\nabla^2\psi + O(\Delta
-s^4)$ in the continuum limit, yielding exactly
-$i\hbar\partial_t\psi = [-\hbar^2\nabla^2/(2m) + V]\psi$.
-The imaginary unit arises physically from DI-bit phase accumulation
-per hop, not from diffusion.  The Madelung decomposition shows the
-quantum pressure term $Q = -\hbar^2\nabla^2\!\sqrt{\rho}/(2m\sqrt{\rho})$
-emerges automatically from complex hopping; it is not postulated.
-Lattice corrections are of order $(\lP/\lambda)^2$ and unobservable at
+Point Physics from the per-Moment dynamics of the Sea-polarization
+pattern registered at the Grid Points of the 600-cell lattice.  The
+complex site field $\psi_i = \sqrt{\rho_i}\,e^{i\phi_i}$ is not
+postulated: it is a repackaging of the two dynamical registers the
+Grid-Point state protocol (A3$'$) already holds --- $\rho_i$ is the
+count-like scalar register ($\SSV_{\rm abs}$; DI-bit number density),
+and $\phi_i$ is the orientation of the vector register
+($\SSV_{\rm net}$) in the distinguished ZBW plane (foundational input
+FI-QMRG-1, founder-anchored).  DI-bits are stateless couriers with
+content \{charge, type, origin address\} (A1$'$/AP-2); they carry no
+phase --- the phase is a property of the pattern they collectively
+refresh.  The pattern's phase advances at the Zitterbewegung rate
+$\omega_C = mc^2/\hbar$, modulated to first order by the local
+$\SSV$ potential; this preserves, at the pattern level, the exact
+numerical content of the earlier per-bit phase-accumulation equation,
+whose per-bit reading is retired (see the anti-erasure notes in
+\S2).  The discrete evolution over one Absolute Moment tick is a
+complex hopping Hamiltonian with off-diagonal amplitude
+$T = \hbar^2/(4m\Delta s^2)$; the graph Laplacian of the 600-cell
+satisfies $\sum_{j\sim i}(\psi_j - \psi_i) = 2\Delta
+s^2\nabla^2\psi + O(\Delta s^4)$ in the continuum limit, yielding
+exactly $i\hbar\partial_t\psi = [-\hbar^2\nabla^2/(2m) + V]\psi$.
+The imaginary unit is grounded in the geometry of the phase register:
+multiplication by $-i$ is a quarter-turn of $\SSV_{\rm net}$ in the
+distinguished plane, and the update is unitary because PCD
+displacement is reversible and the Nexus conserves the count register
+(derivation-sketch grade, conditional on the named inputs
+FI-QMRG-1 and B-QMRG-1; see \S3).  The Madelung decomposition shows
+the quantum pressure term
+$Q = -\hbar^2\nabla^2\!\sqrt{\rho}/(2m\sqrt{\rho})$ emerges
+automatically from complex hopping; it is not postulated.  Lattice
+corrections are of order $(\lP/\lambda)^2$ and unobservable at
 laboratory wavelengths.
 \end{abstract}
 
 \medskip\noindent
-\textbf{Keywords:} Schrödinger equation, 600-cell lattice, DI-bit hopping, graph Laplacian, tight-binding model, discrete quantum mechanics, Madelung decomposition, quantum pressure
+\textbf{Keywords:} Schrödinger equation, 600-cell lattice, Sea-polarization pattern, SSV\_net phase register, graph Laplacian, tight-binding model, discrete quantum mechanics, Madelung decomposition, quantum pressure
 
 \bigskip\noindent
 \textbf{Plain Language Summary:}
-In CPP, the Schrödinger equation is not a postulate — it is the natural result of tiny information packets (DI bits) hopping between sites on the 600-cell lattice. Each hop accumulates a phase determined by the local stress in the lattice. When the lattice spacing is much smaller than the observation scale, these discrete hops smooth into the familiar continuous wave equation of quantum mechanics. The quantum potential that governs particle behaviour is the same Space Stress Vector field that produces time dilation in special relativity.
+In CPP, the Schrödinger equation is not a postulate — it is the natural result of the Dipole Sea's polarization pattern being refreshed, Moment by Moment, at the sites of the 600-cell lattice. Each Grid Point holds two things: a count (how much pattern is there) and a direction (which way the local net polarization points in its rotation plane). The count is the wave's intensity; the direction is the quantum phase. The tiny information packets (DI bits) that stream between sites are stateless couriers — they carry no phase themselves; the phase belongs to the pattern they collectively maintain, which rotates at the particle's Zitterbewegung frequency. When the lattice spacing is much smaller than the observation scale, the discrete per-Moment updates smooth into the familiar continuous wave equation. The potential that governs particle behaviour is the same Space Stress Vector field that produces time dilation in special relativity.
 
 \bigskip
 \raggedright
-\tableofcontents
-\newpage
-
-
 \tableofcontents
 \newpage
 
@@ -103,56 +134,154 @@ In CPP, the Schrödinger equation is not a postulate — it is the natural resul
 %=====================================================================
 
 The Schr\"{o}dinger equation must emerge in CPP from the only two
-processes that exist: (1)~the deterministic displacement of DI bits at
-velocity $c = \lP/\tP$ along 600-cell edges, and (2)~global ledger
-reconciliation at each Absolute Moment tick enforced by the Nexus.
-No diffusion or stochastic process is required or used.
+processes that exist: (1)~the deterministic Perceive--Compute--Displace
+(PCD) cycle executed at every Absolute Moment, with DI-bits streaming
+between Grid Points at velocity $c = \lP/\tP$ along 600-cell edges,
+and (2)~global ledger reconciliation at each tick enforced by the
+Nexus.  No diffusion or stochastic process is required or used.
 
-The key physical fact is that every DI bit carries both a density
-$\rho$ and a geometric phase $\phi$ accumulated along its path.
-Classical diffusion transports density without phase; quantum hopping
-transports the complex amplitude $\psi = \sqrt{\rho}\,e^{i\phi}$.
-This single distinction --- real vs.\ complex coefficient on the
-lattice Laplacian --- produces the wave-like Schr\"{o}dinger equation
-rather than the diffusive heat equation.
+The key physical fact is that each Grid Point holds, and refreshes
+every Moment, two dynamical registers (the A3$'$ state protocol): the
+count-like scalar $\SSV_{\rm abs}$ and the vector $\SSV_{\rm net}$
+--- the vector sum of all $\SSV$ contributions at the point, whose
+microscopic contributors are the orientations of the underlying
+dipoles.  Classical diffusion transports a density alone; the
+Sea-polarization pattern transports a density \emph{and} a direction,
+i.e., the complex amplitude $\psi = \sqrt{\rho}\,e^{i\phi}$ with
+$\rho$ read from the count register and $\phi$ read from the
+orientation of the vector register in the distinguished plane
+(\S2).  This single distinction --- real vs.\ complex coefficient on
+the lattice Laplacian --- produces the wave-like Schr\"{o}dinger
+equation rather than the diffusive heat equation.
+
+\emph{Anti-erasure note (v2.0).}  Versions prior to 2.0 grounded the
+complex amplitude in ``phase-carrying DI bits'' that ``accumulate''
+phase along their paths.  That grounding is retired: under the
+ratified ontology (A1$'$/AP-2, Patches 2982/2989), DI-bits are
+stateless couriers with content \{charge, type, origin address\} that
+reset at every hop --- they can carry neither a phase nor an
+accumulation register.  The Patch 2988 phase-provenance audit
+(\texttt{series\_quantum\_mechanics/qm1\_phase\_provenance\_audit.md})
+established that no step of this paper's mathematics ever consumed
+per-bit phase; the theorem below is unchanged from v1.1.  What
+changes in v2.0 is the grounding layer: the phase now lives where the
+audit's registered candidate placed it --- at the level of the
+Sea-polarization \emph{pattern}, in the Grid-Point-held
+$\SSV_{\rm net}$ register (FI-QMRG-1, Patch 2996).
 
 %=====================================================================
-\section{DI-Bit Complex Amplitude and Phase Accumulation}
+\section{The Site Field: Substrate Grounding at the Pattern Level}
 %=====================================================================
 
-\begin{definition}[DI-bit complex amplitude]
-At each Grid Point $i$ the DI-bit state is
+\begin{definition}[Complex site field, pattern-level grounding]
+At each Grid Point $i$ the site field is
 \begin{equation}
 \psi_i = \sqrt{\rho_i}\,e^{i\phi_i},
 \label{eq:psi}
 \end{equation}
-where $\rho_i \ge 0$ is the DI-bit number density and $\phi_i$ is
-the geometric phase accumulated along the lattice geodesic.
+where $\rho_i \ge 0$ is the count-like scalar register (the DI-bit
+number density held as $\SSV_{\rm abs}$, per AP-2's count-like
+magnitude clause), and $\phi_i$ is the orientation angle of the
+Grid Point's $\SSV_{\rm net}$ directional content in the
+distinguished plane (FI-QMRG-1).  The microscopic contributors to
+$\SSV_{\rm net}$ are the orientations of the underlying dipoles; the
+Grid Point computes, holds, and per-Moment refreshes the aggregate
+(A3$'$ state protocol).
 \end{definition}
 
-When a DI bit hops from neighbour $j$ to site $i$ along an edge of
-length $\Delta s = \lP$, it acquires the phase
+Two structural facts anchor this grounding:
+
+\begin{enumerate}
+\item \textbf{U(1) compactness for free.}  A quantum phase must live
+  on a circle ($\phi \cong \phi + 2\pi$); this is the U(1) target
+  space that interference, winding numbers, and gauge structure
+  require.  Of the registers the Grid Point holds, only the direction
+  of a vector in a 2-plane natively supplies a compact periodic
+  coordinate.  A scalar register would require the periodicity to be
+  postulated by hand; the $\SSV_{\rm net}$-orientation reading obtains
+  it from geometry.
+\item \textbf{The A3$'$ register mapping.}  The Madelung content of
+  the site field, $(\sqrt{\rho},\phi)$, maps one-to-one onto the
+  scalar ($\SSV_{\rm abs}$, $l=0$) and vector ($\SSV_{\rm net}$,
+  $l=1$) registers of the ratified Grid-Point state.  The grounding
+  therefore adds \emph{no} state to the substrate: the complex site
+  field reads content the state protocol already holds and
+  broadcasts.
+\end{enumerate}
+
+\noindent\textbf{Amplitude--count bridge (B-QMRG-1).}  The
+identification $|\psi_i|^2 = \rho_i$ requires that the squared
+amplitude of the net planar polarization track the count register:
+$|\SSV_{{\rm net},\perp}|^2 \propto \rho$.  This is the standard
+coherent-mode relation (amplitude $\propto \sqrt{N}$ for $N$ quanta
+of a coherent mode, i.e., mode energy $\propto$ occupation) and is
+the same harmonic structure presupposed by the eigenmode quantization
+of Paper~6.  It is registered as a bridging input of this grounding,
+valid in the coherent, weak-field regime the Schr\"{o}dinger limit
+occupies.
+
+\medskip
+\noindent\textbf{The distinguished plane.}  The orientation angle is
+read in the plane swept by the periodic (Zitterbewegung) component of
+$\SSV_{\rm net}$: a massive pattern executes ZBW at the Compton rate,
+and any nondegenerate periodic orbit of a vector observable sweeps a
+2-plane, which the pattern itself thereby supplies --- no external
+plane field is postulated.  (For the traveling massless pattern the
+same role is played by the transverse plane; see the flagship SF-6
+photon ontology, of which this grounding is the standing-pattern
+counterpart.)  Where the periodic component vanishes, $\phi$ is
+undefined --- and these are exactly the nodes $\rho \to 0$ where
+$\psi = 0$ and the quantum phase is undefined in standard quantum
+mechanics as well: phase singularities occur precisely where the
+register that carries the phase vanishes.
+
+\medskip
+\noindent The pattern's phase advances deterministically.  Over a
+trajectory element $\Delta s$ traversed at $c$ (equivalently, per
+time $\Delta t = \Delta s/c$),
 \begin{equation}
-\Delta\phi_{j\to i} = \frac{m_{\rm CP}\,c\,\Delta s}{\hbar}
-= \frac{m_{\rm CP}}{\mP},
-\label{eq:phasehop}
+\Delta\phi
+= \frac{m\,c\,\Delta s}{\hbar}
+= \omega_C\,\Delta t,
+\qquad \omega_C = \frac{mc^2}{\hbar},
+\label{eq:patternrotation}
 \end{equation}
-using $c = \lP/\tP$, $\hbar = \EP\tP$, and $\EP = \mP c^2$.
-In Planck units $\Delta\phi = m_{\rm CP}/\mP$.  This is deterministic
-and conserved modulo $2\pi$ by the Nexus.
+i.e., the local Sea-polarization configuration rotates at the
+Zitterbewegung (Compton) rate of the pattern.  In an $\SSV$
+background the rotation rate is modulated to first order,
+$\omega_{\rm local} = (mc^2 + V_{\SSV})/\hbar$, under the corpus
+identification $E = \hbar\nu_C$ (total energy \emph{is} pattern
+rotation rate in $\hbar$ units); this is the origin of the potential
+term in the phase evolution.
+
+\begin{remark}[Anti-erasure: the retired per-bit equation]
+Versions prior to 2.0 stated Eq.~\eqref{eq:patternrotation} as a
+per-bit claim: ``when a DI bit hops\ldots it acquires the phase
+$\Delta\phi_{j\to i} = m_{\rm CP}c\Delta s/\hbar$.''  That reading is
+retired twice over: DI-bits carry no phase register (P-1/AP-2), and
+an entity that resets at every hop (A1$'$) cannot accumulate anything
+across hops.  The equation's \emph{numerical content}, however, was
+correct all along: $m c \Delta s/\hbar$ at $c$-traversal is exactly
+the ZBW rotation rate $\omega_C\Delta t$ of the pattern.  The v1.x
+equation measured the rotation of the pattern and mis-attributed it
+to the courier.  The correction is a re-label of the bearer, not a
+change of value --- which is why every downstream numerical result is
+unaffected.
+\end{remark}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.90\textwidth]{qm2040a_fig1_gaussian_packet.pdf}
-\caption{Gaussian DI-bit wave packet on the 600-cell lattice.
-  Grid Points (circles) are coloured by local DI-bit density
+\caption{Gaussian Sea-polarization wave packet on the 600-cell lattice.
+  Grid Points (circles) are coloured by the local count register
   $\rho_{\rm bit}$ (dark blue $=$ high, pale blue $=$ low),
   following the Gaussian envelope $\rho_{\rm bit}(r,0) \propto
   e^{-r^2/2\sigma^2}$ shown as the upper curve.
-  Amber arrows indicate the direction of coherent DI-bit flow.
-  The lower dashed curve shows the phase oscillation $e^{i\phi}$.
-  The total DI-bit complex amplitude $\psi = \sqrt{\rho_{\rm bit}}\,e^{i\phi}$
-  encodes both density and phase at each Grid Point.}
+  Amber arrows indicate the direction of coherent DI-bit messenger flow.
+  The lower dashed curve shows the phase oscillation $e^{i\phi}$ ---
+  the rotation of each site's $\SSV_{\rm net}$ orientation.
+  The site field $\psi = \sqrt{\rho_{\rm bit}}\,e^{i\phi}$
+  encodes the count and orientation registers at each Grid Point.}
 \label{fig:gaussian}
 \end{figure}
 
@@ -177,10 +306,56 @@ H_{ij} = \begin{cases}
 \label{eq:H}
 \end{equation}
 
-The factor $-i/\hbar$ is not postulated: it is the mathematical
-translation of \emph{phase accumulation per hop}.  Classical diffusion
-would replace $-i$ by $+D$ (real, positive); the imaginary unit is the
-direct signature of phase-carrying DI bits.
+The factor $-i/\hbar$ is not postulated; it is grounded in the
+geometry and dynamics of the phase register.
+
+\begin{proposition}[Origin of unitarity and the imaginary unit;
+derivation-sketch grade, conditional on FI-QMRG-1 and B-QMRG-1]
+\label{prop:unitarity}
+The per-Moment update of the site field is unitary, with
+continuous-time generator of the form $-\tfrac{i}{\hbar}H$,
+$H$ Hermitian.
+\end{proposition}
+
+\begin{proof}[Argument]
+Three substrate facts combine.
+(i)~\emph{Norm conservation:} $\sum_i \rho_i$ is the total count
+register, conserved per Moment by the Nexus; hence
+$\sum_i|\psi_i|^2$ is conserved.  Nothing about phase enters this
+clause.
+(ii)~\emph{Reversibility:} PCD displacement is deterministic and
+invertible (A1--A9 rules; the substrate has no diffusive or
+stochastic process), so the per-Moment map is invertible.
+(iii)~\emph{Linearity:} $\SSV_{\rm net}$ is by definition the vector
+sum of arriving contributions, and vector summation of planar
+vectors with magnitudes $\sqrt{\rho_j}$ and angles $\phi_j$ \emph{is}
+complex addition of the $\psi_j$; in the coherent weak-field regime
+(B-QMRG-1) the per-Moment refresh therefore acts linearly on the
+site fields, and superposition of patterns is vector addition of
+their $\SSV_{\rm net}$ contributions.
+An invertible, norm-preserving, linear update on a complex site
+field is unitary; its continuous-time generator is
+$-\tfrac{i}{\hbar}H$ with $H$ Hermitian, which is exactly the
+tight-binding form~\eqref{eq:evolution}.  Under FI-QMRG-1 the
+imaginary unit has a concrete substrate meaning: multiplication by
+$-i$ is a quarter-turn of $\SSV_{\rm net}$ in the distinguished
+plane --- the generator of pattern rotation.  Classical diffusion
+would replace $-i$ by a real positive $D$; the substrate excludes
+this because its update is reversible (clause~ii), whereas diffusion
+is not.
+\end{proof}
+
+\begin{remark}[Grade]
+Proposition~\ref{prop:unitarity} is carried at derivation-sketch
+grade: clauses (i) and (ii) are corpus-level substrate facts; clause
+(iii) consumes the bridging input B-QMRG-1 (coherent-mode
+amplitude--count relation) and the small-signal linear-response
+regime.  A publication-grade hardening would derive the linear
+regime's validity bounds from the substrate response functions.  The
+theorem of \S4 consumes only the \emph{form} of the update
+(complex, linear, Hermitian-generated), which this proposition
+supplies.
+\end{remark}
 
 \begin{remark}[Why $T = \hbar^2/(4m\Delta s^2)$, not $\hbar^2/(2m\Delta s^2)$]
 The icosahedral 600-cell has $z=12$ nearest neighbours in 3D.
@@ -225,6 +400,18 @@ i\hbar\,\frac{\psi_i(t+\Delta t) - \psi_i(t)}{\Delta t}
 Taking $\Delta t \to 0$ gives~\eqref{eq:Schrodinger}. \qed
 \end{proof}
 
+\begin{remark}[Origin of the potential term]
+The potential enters the phase evolution as the first-order
+modulation of the pattern rotation rate,
+$\omega_{\rm local} = (mc^2 + V_{\SSV})/\hbar$
+(\S2, under the corpus identification $E = \hbar\nu_C$): a region of
+higher $\SSV$ shifts the local relation between pattern rotation and
+coordinate time --- the same $\SSV\!\to$ tick machinery that produces
+time dilation in the relativity sector.  The diagonal term
+$V_i\psi_i$ in the discrete update is this modulation written
+site-wise.
+\end{remark}
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.90\textwidth]{qm2040a_fig2_discrete_continuum.pdf}
@@ -259,9 +446,10 @@ $Q = -\hbar^2\nabla^2\!\sqrt{\rho}/(2m\sqrt{\rho})$.
 
 Equation~\eqref{eq:continuity} is DI-bit number conservation, enforced
 by the Nexus.  The quantum pressure $Q$ in~\eqref{eq:HJ} is the
-geometric interference effect of phase-carrying DI bits arriving from
-regions of different density; it is not postulated but emerges
-automatically from the complex hopping.
+geometric interference effect of Sea-polarization pattern
+contributions arriving from regions of different density --- planar
+$\SSV_{\rm net}$ vectors summing with different orientations; it is
+not postulated but emerges automatically from the complex hopping.
 
 %=====================================================================
 \section{Predictions}
@@ -282,13 +470,25 @@ would probe the lattice structure.
 \section{Conclusion}
 %=====================================================================
 
-The Schr\"{o}dinger equation emerges in CPP from complex phase-carrying
-DI-bit hopping on the 600-cell lattice.  The derivation uses no
-diffusion step; the imaginary unit arises from phase accumulation per
-hop.  The quantum pressure term is automatic, not postulated.  The
-key corrected result: $T = \hbar^2/(4m\Delta s^2)$, not
+The Schr\"{o}dinger equation emerges in CPP from the per-Moment
+dynamics of the Sea-polarization pattern on the 600-cell lattice.
+The site field reads the two registers the Grid-Point state protocol
+already holds: the count ($\rho \leftrightarrow \SSV_{\rm abs}$) and
+the orientation ($\phi \leftrightarrow \SSV_{\rm net}$ direction in
+the ZBW plane) --- the grounding adds no state to the substrate.
+DI-bits are stateless couriers; the phase belongs to the pattern
+they refresh, rotating at the Compton rate $\omega_C = mc^2/\hbar$.
+The derivation uses no diffusion step; the imaginary unit is the
+quarter-turn generator of pattern rotation, and unitarity follows
+from reversible, count-conserving PCD dynamics
+(Proposition~\ref{prop:unitarity}, derivation-sketch grade with
+named inputs FI-QMRG-1 and B-QMRG-1).  The quantum pressure term is
+automatic, not postulated.  The key numerical results are unchanged
+from v1.x: $T = \hbar^2/(4m\Delta s^2)$, not
 $\hbar^2/(2m\Delta s^2)$, to account for the factor of 2 from the
-12-neighbour graph Laplacian of the 600-cell.
+12-neighbour graph Laplacian of the 600-cell; and the phase-advance
+rate $mc\Delta s/\hbar$, now correctly attributed to the pattern's
+ZBW rotation rather than to courier-carried accumulation.
 
 %=====================================================================
 \appendix
@@ -308,9 +508,6 @@ $\sum_j(\Delta\mathbf{r}_{ij})^2 = z\Delta s^2\mathbf{1}/d$);
 the numerical value $z/(2d) = 12/6 = 2$ is a property of the 600-cell.
 
 %=====================================================================
-\ibliographystyle{plainnat}
-\ibliography{cpp_qm_series}
-
 
 \section*{Acknowledgements}
 The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).

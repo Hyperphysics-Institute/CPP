@@ -175,7 +175,7 @@ Empirical-phenomenon derivations (home of record, any maturity). See [`series_ph
 
 | ID | Type | Title | File | Status |
 |----|------|-------|------|--------|
-| **QM-1** | Paper | QM Synthesis | `series_synthesis/QM-1_qm_synthesis.tex` | Needs review. **STATUS NOTE (Patch 2988):** the QM-1 Schrödinger result is **CONDITIONAL on OPEN-QM-1-REGROUND** — the shipped per-bit phase grounding is retired under founder ruling 2957 P-1 + A1′ reset-per-hop; the mathematical theorem survives pending pattern-level re-grounding. Audit: `series_quantum_mechanics/qm1_phase_provenance_audit.md`. |
+| **QM-1** | Paper | QM Synthesis | `series_synthesis/QM-1_qm_synthesis.tex` | Needs review. **STATUS NOTE (Patch 2988):** the QM-1 Schrödinger result is **CONDITIONAL on OPEN-QM-1-REGROUND** — the shipped per-bit phase grounding is retired under founder ruling 2957 P-1 + A1′ reset-per-hop; the mathematical theorem survives pending pattern-level re-grounding. Audit: `series_quantum_mechanics/qm1_phase_provenance_audit.md`. **UPDATE (Patch 2997):** the QM-1 Schrödinger paper (`series_quantum_mechanics/papers/QM-1_schrodinger_emergence.tex`) revised to **v2.0** — pattern-level re-grounding on FI-QMRG-1 executed (theorem byte-identical to v1.1; grounding layer rewritten; unitarity Proposition added at derivation-sketch grade; anti-erasure notes). Conditionality PERSISTS pending panel review of v2.0 + the lineage sweep (F-SW-6 steps 2–5); citation bar stands. |
 
 **Documentation:** 6 files per paper (QM-1 through QM-6) complete — individual topic papers in `series_quantum_mechanics/QM-1_schrodinger_emergence/` through `QM-6_capstone/`.
 
