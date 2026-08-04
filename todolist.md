@@ -244,7 +244,14 @@ The Patch 2988 audit confirmed QM-1's phase attribution to DI-bits is prose-laye
 math-layer. QM-2's Born-rule grounding ("DI-bit interference pattern", glossary line 210) and
 QM-3..6 + SF-6's citations of the QM-1 lineage need the same attribution-layer check and, where
 contaminated, relocation to the DP-displacement pattern level. Expected similar in kind to the
-QM-1 finding; each paper gets its own line-cited inventory. Registered Patch 2988.
+QM-1 finding; each paper gets its own line-cited inventory. Registered Patch 2988. **EXECUTED
+Patch 2995** — sweep record at `series_quantum_mechanics/qm_series_phase_attribution_sweep.md`.
+Verdicts: QM-2/3/4/5 PROSE-LAYER; QM-6 PROSE-LAYER at PRIMITIVE-DEFINITION severity (highest
+revision priority — §1 states the retired ontology as the four primitives); **SF-6 CLEAN**
+(pattern-level already; lineage-conditional by citation only; registered as re-grounding
+template asset SF6-A1). No paper math-layer contaminated; the 2988 S-1 separability propagates
+series-wide. Glossary Born Rule entry confirmed as overstating the shipped math (QM-2's proof
+is already P-2-compliant); edit rides the OPEN-QM-1-REGROUND revision pass. CLOSED.
 
 ### TODO-2952-A — Reconcile "ZDC" (SF-6 shipped vocabulary) with the founder's ZBW-chain picture (P2) — RESOLVED Patch 2953/2954
 

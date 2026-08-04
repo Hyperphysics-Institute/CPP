@@ -5,7 +5,21 @@
   Master dashboard: Research_Frontier.md
 -->
 
-## Quantum Mechanics (QM) — 6 problems (5 QM + 1 quantum-optics phenomena)
+## Quantum Mechanics (QM) — 7 problems (6 QM + 1 quantum-optics phenomena)
+
+### OPEN-QM-1-REGROUND: Pattern-Level Re-Grounding of the QM-Series Phase
+**Status:** OPEN
+**Sector(s):** QM
+**Priority:** P1 (HIGHEST — lifts the K1 citation bar; un-conditions the QM sector ahead of SF-7)
+**One-line statement:** Re-derive the QM series' complex site field at the DP-displacement pattern level: (i) substrate origin of the phase variable φ (candidate: local DP polarization orientation registered in SSV_net's directional content, held/refreshed in GP state per A3′); (ii) origin of unitarity (reversible conserved PCD displacement → −i, replacing the retired per-bit accumulation argument); (iii) revise the lineage.
+**What a solution looks like:** The two derivation obligations closed, then ONE coherent revision pass (ordering per sweep record §7 F-SW-6): QM-1 (abstract, §1, §2 incl. Eq. phasehop, §3, §5, conclusion) → QM-6 four-primitives rewrite under A1′/AP-2 → QM-2 Eq. phaseedge re-label + prose → QM-5/QM-4/QM-3 naming sweeps → glossary Born Rule entry — all with anti-erasure history notes.
+**Dependencies:** None blocking. **Asset SF6-A1 (Patch 2995):** SF-6's shipped v1.0 pattern-level photon ontology (phase in the DP-alignment configuration imprinted in the GP network; per-Moment reconstruction by DI-bit-string summation) is the ready-made template — the re-ground is a cross-sector port, not a blank-page derivation.
+**Cross-sector connections:** A1′/AP-2 (ratified 2982/2989); F-AP2-1 falsifier (survives the 2995 sweep: no shipped derivation irreducibly requires DI-bit phase); RELAY-MECH-1 citation bar (QM-1 lineage not citable in that arc until this closes, per 2957 §3).
+**Current best lead:** The 2988 audit (V-2) + the 2995 sweep: the entire series' mathematics is separable from the retired grounding (no proof consumes per-bit phase); QM-2's Eq. phaseedge re-labels as the per-edge phase advance of the propagating pattern; the density half is already P-2-compliant everywhere it appears.
+**Paper(s):** QM-1 (CONDITIONAL); QM-2..6 (lineage-CONDITIONAL, prose-layer per Patch 2995 sweep — QM-6 at primitive-definition severity); SF-6 (CLEAN, citation-conditional only). Records: `series_quantum_mechanics/qm1_phase_provenance_audit.md` (2988), `series_quantum_mechanics/qm_series_phase_attribution_sweep.md` (2995).
+**Last updated:** 4 Aug 2026 (Patch 2995 — registered in this sector file; opened Patch 2988, previously tracked in `frontier_sectors/FP.md` status blocks)
+
+---
 
 ### OPEN-QM-1: Born Rule from CPP Statistics
 **Status:** OPEN
