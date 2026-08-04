@@ -1,3 +1,8 @@
+> **Next-session kickoff line (paste verbatim into a fresh window):**
+> ```
+> Bootup for Conscious Point Physics (CPP). Clone the repo and read the bootup file at https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/bootup.md. Honor the line-1 CLONE-FIRST GATE before registering any ID, placing any file, or computing any coefficient (clone the repo and grep the registry first). Then open the handovers/ folder, sort by filename, and read the most recent dated file (named YYYY-MM-DD_session_NNN_*.md) — that newest entry is the canonical "what's next" pointer. Note: the folder is handovers/ (plural) and there is no file named handover.md; never look for either — always use the newest dated entry.
+> ```
+
 # SESSION CLOSE — PATCHES 2988–2993: QM-1 AUDIT → AP-2 RATIFIED → W-6b/W-5 → CONV-013 SKELETON; ALL PRE-DATA ITEMS DONE
 
 **Patch 2993 (4 Aug 2026). Next global patch number: 2994.**
@@ -104,3 +109,15 @@ addendum, future_projects). Tally-from-verbatim-only was applied at
 its first two substantive uses (2988 audit; 2991 classification —
 every number cited to its registered record). No compaction-summary
 sourcing was used for any tally or verdict this session.
+
+## §5 — Steps A–H Completion Audit (Patch 2994, per §15.11) — EXECUTED ON FOUNDER PROMPT
+
+**Disclosure first:** the 2993 close was committed WITHOUT this audit, without the kickoff-line header, and without the Tier-1 session log — the worker reproduced the 2985 handover's BODY format and skipped the §15 protocol walk (the 2985 audit was a later addendum, so format-mimicry missed it). Caught by the founder's direct question, the §15.15 recurrence class ("again caught only on Thomas's prompt"). Remedied at 2994. Root cause + guard noted at Step G.
+
+- **A (Tier 1):** DONE (2994, remediation) — `session_logs/2026-08-04_session_2988_2994_log.md`, incl. founder verbatims (ratification verbatim filed at 2989; goal-stack verbatim preserved in the log per CONV-009).
+- **B (Tier 2):** N/A as separate artifact — DM-lane convention (commit records + per-patch fragments index the session).
+- **C/D (Tier 3/4):** captured INCREMENTALLY at-patch — `DM/reasoning/2988.md` … `2992.md` committed in their producing patches; **2993 fragment was MISSING (protocol-walk skip), written at 2994** alongside `2994.md`; §15.15 conformance check (stranger test): each fragment carries the decision structure and the reasoning that produced it, not a retrospective summary — attested.
+- **E (Registries, per-registry):** `frontier_sectors/FP.md` UPDATED per-patch (2988–2992 status blocks). `research_frontier.md` dashboard — **was NOT updated at 2993 (defect); Last-updated entry prepended at 2994.** `axiom-registry.md` UPDATED (2989, AP-2 into A1′). `master_glossary.md` UPDATED (2989, DI-bit entry). `paper_catalog.md` UPDATED (2988, QM-1 CONDITIONAL note). `todolist.md` UPDATED (2988/2989). `future_projects.md` UPDATED (2988–2993 incl. roadmap). `theorem-registry.md` N/A — deferral stands (register T-1 v1.3/L-6/CL at CONV-013 adjudication; text may still be amended by the round). `predictions.md` N/A (same trigger). `organizational_frontier.md` — dated note appended at 2994 (this event; no new OPEN-ORG: the OS already mandates what failed; execution failure, not codification gap). `problem_histories/` N/A. `methods_catalogue/` N/A — no new physics-derivation method (the audit/classification methods reuse the 2988-established line-cited-inventory pattern registered in that record). TATWD N/A (no SHIP).
+- **F (Reviewer artifacts):** N/A — no reviewer returns received this session (CONV-013 not yet dispatched). A-4 (CONV-011 verbatim re-paste) remains optional/open.
+- **G (Protocol/OS):** N/A as an OS edit — §15 already mandates everything that was skipped; the failure was execution. Guard adopted into practice (recorded here + org-frontier note): **at any session close, open `templates/operating_system.md` §15 and walk Steps A–H against the checklist itself, never against a prior handover's body format.** If this class recurs, promote the guard to an OS standing-order line.
+- **H (Handover doc):** DONE — this document; kickoff line now at top (2994 amendment); audit section at end per §15.11; chat-echo of the kickoff line performed in the 2994 reply.
