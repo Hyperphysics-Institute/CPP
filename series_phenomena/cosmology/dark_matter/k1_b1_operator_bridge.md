@@ -1,5 +1,7 @@
 # B-1 — THE MECHANISM→RESPONSE-OPERATOR BRIDGE (W-1, discharging condition C-1 structurally) — Patch 2973
 
+**CHANGELOG — v1.2 (Patch 2990): C-5(iii) discharged structurally — NEW §11 Lemma L-6 (the stationarity-regime lemma, GPT's CONV-012 Q1 item per the corrected 2986 tallies): the admissible perturbation class 𝒫 is DEFINED and proven to remain within the stationary linear-response regime licensed by M1 throughout the operator construction, via a contraction argument whose rate is supplied structurally by M1's exit-at-c/no-return property (the same structure behind L-4's finite support). Verify `code/2990_b1_stationarity_check.py` (4/4, two negative controls). §10 condition ledger updated. Subject to CONV-013 panel confirmation, same status as C-5(i)/(ii) at 2980.**
+
 **Status:** GRADED (b) YES-CONDITIONAL AT OPERATOR GRADE (CONV-012 adjudication 2979); condition C-5 discharged in §9 below (v1.1). Conditional inheritance declared in §7.
 
 **CHANGELOG — v1.1 (Patch 2980, 3 Aug 2026): CONV-012 condition C-5 executed. §9 added: C-5(i) Lemma L-3′ — the discrete-time (Z-domain) restatement of L-3 on the Moment-sampled spectrum, exact below the Moment Nyquist frequency, incorporating the panel-recorded entire-function observation; C-5(ii) L-2 restated on the DRESSED kernel via T-1's TOTAL-force zero — the v1.0 §3 "population superposition" remark is WITHDRAWN (the theorem never used it). New verify `code/2980_b1_discrete_check.py`. Grade per panel; promotion bar remains C-5-review + the floor-clearing W-4 ensemble.**
@@ -99,4 +101,25 @@ Hence Re γ̂(ω) = O(ω²) with an EXACT finite-sum coefficient and an EXPLICIT
 
 ## §10 (v1.1) — Condition ledger after C-5
 
-C-1: bridge DERIVED and panel-graded (b). C-2/C-3/C-4: DISCHARGED-CONFIRMED (2979). C-5: discharged structurally HERE, subject to next-round panel confirmation. Standing bar for any operator-grade promotion or 1B movement: C-5 review + the floor-clearing W-4 ensemble (which also tests L-4's support/tail leg and the disclosed passivity sign). Nothing in this revision moves the ledger.
+C-1: bridge DERIVED and panel-graded (b). C-2/C-3/C-4: DISCHARGED-CONFIRMED (2979). C-5(i)/(ii): discharged structurally HERE (v1.1, 2980); **C-5(iii): discharged structurally at §11 (v1.2, 2990)** — all three clauses subject to CONV-013 panel confirmation. Standing bar for any operator-grade promotion or 1B movement: C-5 review + the floor-clearing W-4 ensemble (which also tests L-4's support/tail leg and the disclosed passivity sign). Nothing in this revision moves the ledger.
+
+## §11 (v1.2) — C-5(iii): Lemma L-6, the stationarity-regime lemma (the admissible class 𝒫, defined and kept)
+
+**What the panel asked (GPT, CONV-012 Q1, corrected record 2986 D-3, verbatim basis at `reviews/conv012_returns/seat1_gpt.md`):** "explicit proof that the perturbation space used in B-1 stays within the stationary linear-response regime licensed by M1" — M1 licenses linearization *around* the translated steady state; what was missing is that admissible perturbations REMAIN inside that regime throughout the construction, not merely at the linearization instant.
+
+**Definition (the admissible perturbation class 𝒫).** Moment-sampled drive histories {v_n} satisfying:
+(𝒫-a) **amplitude bound:** sup_n |v_n| ≤ v_max ≪ c (the linearization small parameter ε = v_max/c);
+(𝒫-b) **slow variation:** sup_n |v_{n+1} − v_n| ≤ Δv_max, with Δv_max small on the scale set below.
+Frequency content below the Moment Nyquist is implied by Moment sampling (C-5(i) grade); no continuum class is invoked.
+
+**Lemma L-6.** For every drive in 𝒫, the Sea state remains, at every Moment n, within a uniformly small neighborhood of the *instantaneous* M1 fixed point S(v_n):
+
+  d_n ≡ dist(state_n, S(v_n)) satisfies sup_n d_n ≤ d_0 κⁿ + C·Δv_max/(1−κ), with κ < 1,
+
+so the linearization of L-1 is uniformly valid along the whole trajectory (residual O(ε²), never accumulating), and the operator construction of §§2–6 proceeds inside the stationary linear-response regime at every step.
+
+**Proof.** (i) *The fixed-point family and its linear sensitivity.* M1 (T-2 §(v)) supplies, for each constant v below cap, the anchored co-moving configuration S(v) as the attracting fixed point of the per-Moment map. The family is linearly sensitive in v at first order: the anchored content is the source's SSV imprint, whose v-dependence at first order is the SF-6 curl linkage (already an admissible T-2 input); hence dist(S(v), S(v′)) ≤ C·|v − v′| for |v|,|v′| ≤ v_max, with C the imprint sensitivity. (ii) *One Moment of an admissible drive.* Between Moments the drive moves the target fixed point by at most C·Δv_max (by (i)), and the per-Moment map contracts the existing deviation toward the instantaneous fixed point at rate κ < 1. The contraction is STRUCTURAL, not assumed: deviation content is, by M1's dichotomy, unanchored — it receives no sustaining imprint, propagates at c, and exits the co-moving neighborhood within τ_b = d_DP/c Moments with no return and no back-scatter (Version B outward-only volley) — the same exit-at-c structure that gives L-4 its finite support. A deviation that survived ≫ τ_b would BE a long-time kernel tail; boundedness of memory and contraction are one property. (iii) *The recursion.* Therefore d_{n+1} ≤ κ·d_n + C·|v_{n+1} − v_n|, and iterating: d_n ≤ d_0κⁿ + C·Δv_max·(1−κⁿ)/(1−κ) ≤ d_0κⁿ + C·Δv_max/(1−κ). Uniform, no secular growth, for every drive in 𝒫. (iv) *Uniform linearity.* With sup_n d_n uniformly O(ε), the O(v²) remainder declared at L-1(c) is uniformly bounded along the trajectory; the convolution representation and every lemma L-2…L-5 built on it operate inside the regime M1 licenses at every Moment, which is the C-5(iii) demand. ∎
+
+**Honest boundaries.** (a) κ < 1 is established at MECHANISM grade from M1's exit-at-c/no-return structure; its instrument-grade counterpart is exactly the MEAS-2 support/no-tail leg — **a measured long-time tail at d_DP falsifies L-6's contraction and L-4's support in the same stroke** (one structure, two lemma-level consequences; the cross-falsifier link is registered here). (b) The class 𝒫 excludes fast drives by construction; nothing is claimed for |Δv| beyond Δv_max — the toy's negative control 4 shows the bound genuinely fails there, so admissibility is load-bearing. (c) No value of κ, C, τ_b, v_max, or Δv_max is minted; all appear symbolically, with toy-specific disclosed values only inside the verify script.
+
+**Verification.** `code/2990_b1_stationarity_check.py` (4/4): uniform bound across 200 random admissible drives; linearity residual exponent 2.000 (halve the drive, quarter the residual — the regime holds ALONG the trajectory); NEGATIVE CONTROL κ = 1 (memory tail) breaks the bound by secular accumulation; NEGATIVE CONTROL fast drive exceeds the admissible-class bound. Both failure modes are reachable, so the checks are tests, not tautologies.

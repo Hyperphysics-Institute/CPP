@@ -8,6 +8,8 @@ ESTABLISHED-AT-MECHANISM-LEVEL, PANEL-PENDING per charter §3
 (conservative outcome → combined completed-package review). No
 value of any open quantity is minted; toy units only.**
 
+**CHANGELOG — v1.3 (Patch 2990): closure-scope amendment per DeepSeek's SUSTAINED CONV-012 Q2 AMEND (corrected record 2986; verbatim at `reviews/conv012_returns/seat5_deepseek.md`): the closure premise s_K = s_0 is now stated as a NAMED premise (CL) with its actual basis unpacked — pointwise closure rests on the M1/Version-B anchored/unanchored DICHOTOMY (structural, mechanism grade), NOT on M1's stationarity alone, which by itself licenses only statistical closure (DeepSeek's point, conceded in its valid scope). A statistical-closure fallback is added: under statistical closure the telescoping conclusion survives in ensemble mean with O(1/√N) relative fluctuation and no systematic drag. A pointwise-closure failure with nonzero MEAN residual = a DP-level memory signature = exactly what the running MEAS-2 ensemble adjudicates (RESOLVED-FALSIFIER branch). Theorem content and grade unchanged; the premise's provenance is now the letter of the lemma.**
+
 **CHANGELOG — v1.2 (Patch 2980): CONV-012 Q2 wording strengthening — per-step reciprocity stated as an exact event-level property of the registered update (Copilot adoption, 2979). No content change.**
 
 **CHANGELOG — v1.1 (Patch 2975, 3 Aug 2026): CONV-011 condition C-2
@@ -261,9 +263,8 @@ letter of the theorem.
 **Setting.** Under the registered Moment-stepped update, a Sea DP's
 interaction with the passing pattern is a finite state sequence
 s_0 → s_1 → … → s_K in the DP's own state space, where s_0 is
-unpolarized rest and — by the M1/Version-B structure (anchored
-content is the pattern's, not the DP's; unanchored content departs
-at c with no return) — the traversal CLOSES: s_K = s_0. At each
+unpolarized rest and the traversal CLOSES: s_K = s_0 — **premise CL**
+(v1.3; basis unpacked below, DeepSeek CONV-012 Q2 sustained amend). At each
 step the interaction is a PAIR exchange: the impulse delivered to
 the composite at step k is the negative of the DP's momentum change
 at step k (microscopic reciprocity, §R3), and likewise for energy.
@@ -308,6 +309,54 @@ verification of closure itself: closure is inherited from M1 at
 M1's grade (mechanism level; its instrument-grade test is the W-4
 ensemble via the B-1 bridge's L-4 leg). The condition is inherited,
 not laundered.
+
+**Closure premise CL — pointwise basis, statistical fallback, and the
+measurement connection (v1.3, Patch 2990).** DeepSeek's sustained
+amend states, correctly, that M1's fixed-point/attraction statement
+BY ITSELF is a stationarity statement and licenses only STATISTICAL
+closure of traversals, not pointwise periodicity. Conceded: the v1.1
+citation "by the M1/Version-B structure" compressed two different
+things, and if the lemma's closure rested on stationarity alone the
+pointwise claim would be unproven. It does not. The pointwise basis
+is the FINER structural dichotomy inside M1's proof, not its
+stationarity conclusion: (i) anchored content is the SOURCE'S
+per-Moment imprint — it is the pattern's state, carried by whichever
+GPs the pattern currently occupies, and is never a persistent
+attribute of the transited Sea DP; when the pattern has passed, the
+source no longer imprints that DP, so the DP retains no anchored
+content BY CONSTRUCTION, not by averaging; (ii) unanchored content
+receives no sustaining imprint and departs at c with no return and
+no back-scatter (Version B outward-only volley) — it leaves the DP's
+state, not merely the ensemble mean. Exhaustiveness of the
+dichotomy (T-3 §6, mechanism grade) then forces s_K = unpolarized
+rest = s_0 for EVERY traversal — pointwise, at mechanism grade.
+
+**Statistical fallback (theorem-preserving weakening).** If CL is
+weakened to statistical closure — s_K = s_0 in distribution under
+the steady state — the telescoping identity holds in ensemble mean:
+Σ_k E[Δp_k^{→comp}] = −E[p_DP(s_K) − p_DP(s_0)] = 0, and likewise
+for energy. The composite force is the sum over the Sea DP
+population, i.e., N times the empirical mean of per-DP residuals;
+under statistical closure this vanishes in mean with relative
+fluctuation O(1/√N) (the same suppression class as FACT G1's
+shot-noise remark) — no systematic drag in either reading. Pointwise
+CL gives the exact zero; statistical CL gives the zero-in-mean. The
+theorem's operative conclusion (no net force on the composite at
+constant v) survives under both, at the grade each supplies.
+
+**What would falsify CL — and what is measuring it right now.** A
+pointwise-closure failure with nonzero MEAN residual is, by
+definition, persistent post-traversal DP state — a DP-level
+displacement-memory signature. That is precisely the object the
+K1-MEMORY arc investigates and precisely what the executing MEAS-2
+ensemble tests: a resolved memory tail lands in the
+RESOLVED-FALSIFIER branch (contradicting T-3 §6 and the B-1 L-4
+support leg — and, via the same structure, B-1 L-6's contraction).
+DeepSeek's scope item is therefore not merely accommodated in
+wording: it names the exact empirical question the running campaign
+adjudicates, and the theorem's mechanism-level grade already prices
+that in. Nothing is laundered; CL's instrument-grade test is in
+flight.
 
 **Wording strengthening (v1.2, Patch 2980, CONV-012 Q2 adoption).** "Per-step
 reciprocity" in this lemma is an EXACT event-level property of the registered
