@@ -1,4 +1,31 @@
-# HANDOVER — 4 Aug 2026 session close (Patches 2995–3011): THE QM RE-GROUNDING ARC COMPLETED AND THE LANE AT REST; DISPATCH DAY IMMINENT
+> **Next-session kickoff line (paste verbatim into a fresh window):**
+> ```
+> Bootup for Conscious Point Physics (CPP). Clone the repo and read the bootup file at https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/bootup.md. Honor the line-1 CLONE-FIRST GATE before registering any ID, placing any file, or computing any coefficient (clone the repo and grep the registry first). Then open the handovers/ folder, sort by filename, and read the most recent dated file (named YYYY-MM-DD_session_NNN_*.md) — that newest entry is the canonical "what's next" pointer. Note: the folder is handovers/ (plural) and there is no file named handover.md; never look for either — always use the newest dated entry.
+> ```
+
+**Patch 3011, amended 3012 (4 Aug 2026). Next global patch number: 3013.**
+
+## Orientation — read this first
+
+The QM re-grounding arc (2988→3010) is COMPLETE: sector conditionality
+resolved at CONV-016, bar widened near-full, OPEN-QMRG-ETA closed as a
+touchpoint-batched candidate, QM-1 at v2.9, the lane at rest. The one
+thing that matters next: **the MEAS-2 run (~720/1280 at session close)
+— if `data/kmem2` is COMPLETE (1280/1280) when you boot, go straight
+to §4's dispatch-day checklist; it takes precedence over everything.**
+If the run is still going, there is no urgent work: do not convene any
+panel round (the QM touchpoint batch rides with dispatch day).
+
+*Handover-protocol audit note (Patch 3012): this file originally
+shipped (3011) without the kickoff-line mirror, without this
+Orientation section, and under a non-convention filename; corrected on
+founder-prompted audit. The audit lapse (README not consulted before
+writing — a CLONE-FIRST miss on the handover protocol itself) is
+recorded here deliberately.*
+
+# SESSION CLOSE — PATCHES 2995–3011: THE QM RE-GROUNDING ARC COMPLETED; LANE AT REST; DISPATCH DAY IMMINENT
+
+<!-- original title: HANDOVER — 4 Aug 2026 session close (Patches 2995–3011) -->
 
 **For the next bootup. If `data/kmem2` is COMPLETE (1280/1280 legs)
 at bootup time, this handover's §4 checklist governs and TAKES
@@ -70,4 +97,4 @@ unchanged since v1.1 throughout.
    auxiliary questions — no separate round.
 5. DM ledger moves ONLY through that adjudication.
 
-Next patch number after this handover: **3012**.
+Next patch number after this handover as amended: **3013**.
