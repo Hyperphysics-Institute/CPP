@@ -80,8 +80,19 @@ unchanged since v1.1 throughout.
 ## §3 — Next-window priorities (in order)
 
 1. **IF `data/kmem2` complete → §4.** Else:
-2. QM lane stays at rest (do NOT convene a round for the touchpoint
-   batch alone).
+2. **ACTIVE WHILE THE RUN COMPLETES (founder-initiated, 4 Aug): the
+   SR-LINEAGE CONSISTENCY AUDIT** — charter at
+   `series_relativity/audits/3014_sr_lineage_audit_charter.md`. The
+   2998 sweep never covered SR-1/SR-2/the 20 companions; recon found
+   real debt: the A3′ label-lineage question (SR-2's spin-bit
+   amendment vs Completed Broadcast vs the QM arc's citations — the
+   GATE question, do first), c06/c01 phase-on-strings language
+   (retired ontology, 6 sites), the SR-2 spin-bit bearer vs AP-2
+   minimal content, the §2a modifier-enumeration completeness
+   (c20–c22), and c03 vs the re-grounded Born rule. Run in a FRESH
+   window; kmem2 completion PREEMPTS mid-stream (park with a dated
+   progress note); panel questions batch with dispatch day. QM lane
+   otherwise at rest (no round for the touchpoint batch alone).
 3. **QM status for the record (founder question, 4 Aug): worker-side
    QM work is FINISHED.** Of the four E-2 note classes: η-universality
    and the physical ρ-calibrated normalization are CLOSURE/DISCHARGE
