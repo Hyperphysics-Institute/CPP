@@ -96,8 +96,13 @@ named factor, and the derived layer is provably indifferent to it.
 
 ## §4 — Status, and what this does to the CONV-015 exclusions
 
-**OPEN-QMRG-B1-CONST status: DISPOSITION CANDIDATE (derive-and-
-quarantine), PANEL-PENDING.** Under this disposition, if adjudicated:
+**OPEN-QMRG-B1-CONST status: DISPOSED (CONV-016 adjudication, Q2
+5–0; Patch 3008; the E = Nħω provenance audited acyclic at
+`conv016_adjudication.md` §5).** **Convention-labeling obligation
+(CONV-016 amendment, GPT):** coefficient 1 = the FULL in-plane
+cycle-averaged mean square; ½ = EITHER single quadrature; peak² =
+2× mean-square; conversions between conventions must be explicit;
+convention-INDEPENDENCE is not claimed. Original candidate framing: Under this disposition, if adjudicated:
 - The E-1 exclusion "any claim that the canonical 1/(2ω) coefficient
   is fully substrate-derived" RESOLVES into precise form: the
   coefficient IS derived (virial + quadrature split, exact-in-regime)

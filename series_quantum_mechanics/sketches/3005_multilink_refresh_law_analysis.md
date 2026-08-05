@@ -76,6 +76,21 @@ handedness manifestations are derived observable-level structures
 (pattern-class irrep content), not register-formation rules; no
 (v_a × v_b) Compute rule exists in the committed corpus.
 
+## §2a — Committed update-modifier enumeration (CONV-016 amendment; the audit-completeness residue documented)
+
+Every committed mechanism at HEAD that touches the GP refresh path,
+with its classification:
+
+| Committed modifier | Class | Plane status |
+|---|---|---|
+| F.1 Mechanism A (chirality: per-edge rate asymmetry δ(v·n̂)) | per-edge SCALAR weight | Channel A — plane-exact under any weights (audited §2) |
+| SSV scalar-potential modulation of the rotation rate (R-3 closure) | local SCALAR on the phase rate | component-diagonal — cannot torque |
+| Strong-field saturation / nonlinearity (SF-6 Tier-2 regime) | local map on the summed register | outside the registered weak-field regime; where isotropic (g(|S|²)·S) it is direction-preserving |
+| — | — | no other refresh-path modifiers are registered at HEAD |
+
+A future registered modifier outside these classes triggers
+W-MULTILINK-1 before shipping.
+
 ## §3 — The quantitative moat (what WOULD happen in excluded or adjacent classes)
 
 Three verified facts give the exclusion its force and its margin:
@@ -107,8 +122,14 @@ demonstration quantifies exactly how much they bear.
 
 ## §4 — Status and honest limits
 
-**OPEN-QMRG-R4-MULTILINK status: RESOLUTION CANDIDATE at
-registry-theorem grade, PANEL-PENDING.** What is proved vs.
+**OPEN-QMRG-R4-MULTILINK status: RESOLVED at registry-theorem grade
+(CONV-016 adjudication, Q1 5–0; Patch 3008).** **Scope (CONV-016
+amendment, GPT):** the theorem is about THE PRESENTLY RATIFIED
+REFRESH CONSTRUCTION. DERIVED: the current registered refresh law is
+in the single-edge class. NOT DERIVED: that all physically possible
+microscopic refresh laws are — the registered falsifier F-AP3-1 and
+watch condition W-MULTILINK-1 carry that boundary. Original
+candidate framing: What is proved vs.
 inherited:
 - The exclusion (§1) is a theorem ABOUT THE COMMITTED LAW — its
   premises are the three ratified clauses, quoted from the registry.
