@@ -82,8 +82,37 @@ unchanged since v1.1 throughout.
 1. **IF `data/kmem2` complete → §4.** Else:
 2. QM lane stays at rest (do NOT convene a round for the touchpoint
    batch alone).
-3. Roadmap unchanged: DM promotion path after MEAS-2 → CC before
-   Chirality → SF-7 last → TATWD (`future_projects.md`).
+3. **QM status for the record (founder question, 4 Aug): worker-side
+   QM work is FINISHED.** Of the four E-2 note classes: η-universality
+   and the physical ρ-calibrated normalization are CLOSURE/DISCHARGE
+   CANDIDATES (3009+3010 — add the normalization-discharge question
+   to the §4 touchpoint batch); uniqueness is criterion-gated (E-5 —
+   activates only if the criterion fires, no work by choice);
+   universal-microscopic is a permanent epistemic boundary policed by
+   W-MULTILINK-1, not a task. All remaining movement is panel
+   authority.
+4. **The "CC" roadmap item is a RESUMPTION, not a new arc — do NOT
+   register anything new (audit of 4 Aug caught this).** The
+   cosmological constant is **OPEN-SR-5**: sequence A→D traversed
+   NO-KILL; condition (1) discharged (Patch 1161 op:einstein);
+   2-i/2-ii addressed (1162–1164: the residual is a zero-point
+   coherence mode; A4 event-horizon rationale, uniqueness NOT
+   established); panel unit-review 3/3 (1165–1166). **ADJUDICATED
+   ROUTING (architect-approved, standing): the CORRELATION-LENGTH
+   ROUTE** — derive the Sea ground-state two-point function and its
+   length ξ(t); microscopic ξ ⇒ D-FRAG fires (the cheap kill);
+   macroscopic ⇒ ρ_Λ ~ 1/ξ² with the deliverable = the CPP
+   self-consistency relation (Li-analog ODE) landing ξ on the future
+   event horizon; A4 coordinable-region construction = fallback.
+   Assets: `series_relativity/.../sea_gravitation/` (steps A–D),
+   `condition2_*` files, `review/cc_arc_review_package_v1.0.md` +
+   `review/reviews-CC-ARC.md`; registry: SR.md OPEN-SR-5 + CONJ.md
+   cross-links. **Sequencing note: OPEN-SR-5 is a hard prerequisite
+   for DM Steps 4–5 (OPEN-COSMO-DM-1 ↔ OPEN-SR-5 cross-link), so
+   resuming it right after the MEAS-2 adjudication serves both
+   lanes.**
+5. Roadmap unchanged thereafter: Chirality → SF-7 last → TATWD
+   (`future_projects.md`).
 
 ## §4 — DISPATCH-DAY CHECKLIST (verbatim carry-forward; CONV-013 skeleton)
 
@@ -93,8 +122,13 @@ unchanged since v1.1 throughout.
 3. Worker executes the CONV-013 pre-registered analysis EXACTLY as
    frozen (no peeking-then-choosing; outcome classes are
    pre-registered).
-4. Attach the QM touchpoint batch (§2) to the same panel dispatch as
-   auxiliary questions — no separate round.
+4. Attach the QM touchpoint batch to the same panel dispatch as
+   auxiliary questions — no separate round. The batch is THREE items:
+   (a) OPEN-QMRG-ETA closure candidate (3009+3010); (b) the
+   η-universality note-class discharge; (c) the physical
+   ρ-calibrated-normalization note-class discharge (fell as a
+   consequence of c_geo; the calibration now exists at bookkeeping
+   grade — panel decides sufficiency).
 5. DM ledger moves ONLY through that adjudication.
 
 Next patch number after this handover as amended: **3013**.
