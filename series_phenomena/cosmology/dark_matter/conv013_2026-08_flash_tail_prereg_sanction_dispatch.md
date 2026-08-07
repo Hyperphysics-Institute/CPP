@@ -1,3 +1,13 @@
+# CONV-013-FLASH — SANCTION ROUND — **WITHDRAWN BEFORE ISSUE (Patch 3025)**
+
+**NEVER PASTED. Withdrawn on the founder's WORKFLOW-REVIEW-ECONOMY
+challenge (7 Aug 2026): a pre-execution sanction round is neither a win
+nor an impasse and duplicates the freeze-before-code protection; the
+2981 precedent carried no pre-sanction. The panel receives the EXECUTED
+record in one round and may attack the design there; a sustained design
+objection voids the disposition. Retained verbatim below as the record
+of the withdrawn instrument. — original header follows —**
+
 # CONV-013-FLASH — SANCTION ROUND FOR THE KMEM-TAIL-1 DISPOSITION PREREG — DISPATCH (Patch 3024)
 
 **One question, five seats (GPT, Grok, Gemini, DeepSeek, Copilot —

@@ -1,11 +1,17 @@
 # OPEN-KMEM-TAIL-1 — TAIL-DISPOSITION SUPPLEMENTARY PREREGISTRATION — FROZEN — Patch 3024
 
 **Status: FROZEN AT COMMIT. No analysis code exists for this document
-at freeze time** (the 2967/2981 discipline). **Execution is gated on
-FLASH SANCTION by the five-seat panel**
-(`conv013_2026-08_flash_tail_prereg_sanction_dispatch.md`, this patch);
-if any seat's sanction return is AMEND and the amendment is adopted,
-this document re-freezes as v1.1 before any code is written. Evidentiary
+at freeze time** (the 2967/2981 discipline). **GATE AMENDED at Patch
+3025 (7 Aug 2026, BEFORE any analysis code exists), on the founder's
+WORKFLOW-REVIEW-ECONOMY challenge: the flash sanction round is
+CANCELLED as economy-noncompliant** — a sanction round is neither a
+win nor an impasse; the 2981 precedent executed its frozen prereg with
+no pre-sanction; the freeze-before-code discipline is the integrity
+protection; the panel attacks the DESIGN and the RESULT together at the
+single adjudication of the executed record, where a sustained design
+objection voids the disposition. §1–§3 (the frozen analysis terms) are
+UNTOUCHED by this amendment. Execution is gated on the freeze alone.
+Evidentiary
 standing of any result: NONE until executed under the sanctioned frozen
 terms and panel-adjudicated. **No retune of anything, anywhere:** every
 constant below is either carried unchanged from the frozen 2981/2983
@@ -93,12 +99,11 @@ it; T-D-PHYSICS-ANOMALY co-routes to Route B.
 
 ## §4 — Execution and integrity protocol
 
-Analysis code committed AFTER sanction, citing this document; single
+Analysis code committed AFTER the freeze (gate as amended above), citing this document; single
 script; branch semantics printed in §3 language only; verbatim stdout
 into the execution record; standing NONE until the panel adjudicates
-the record (a flash adjudication suffices if the class is DISP-A or
-DISP-B unanimous-on-the-record; DISP-C convenes ordinary
-adjudication). **Ledger untouched by this prereg:** 1B OPEN (HOLD,
+the record in ONE round (design + result together, per the Patch 3025
+economy correction). **Ledger untouched by this prereg:** 1B OPEN (HOLD,
 CONV-013 final); six of seven; PR7 PARTIAL; B7; Candidate (B) 79.5%;
 2855 PROVISIONAL; d_DP ceiling ACTIVE. Nothing here computes any value
 of ξ₂, ζ, η, d_DP, n_DP, or N.
