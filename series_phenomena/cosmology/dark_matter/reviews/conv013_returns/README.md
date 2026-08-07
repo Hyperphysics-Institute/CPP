@@ -7,6 +7,6 @@ in each file; everything below that line is untouched founder paste.
 
 Files: s1_gpt_return.md; grok_return.md;
 gemini_slot_return_PROVENANCE_PENDING.md (delivered in the Gemini slot
-but self-headed "SEAT: Copilot" — attribution awaiting founder
-confirmation); deepseek_return.md; copilot_delivery_event.md (a stall
+but self-headed "SEAT: Copilot" — attribution RESOLVED at Patch 3021:
+founder-confirmed GEMINI, mislabel event #6); deepseek_return.md; copilot_delivery_event.md (a stall
 message, not a return — see the adjudication §1 remediation ruling).

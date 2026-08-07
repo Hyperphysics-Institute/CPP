@@ -255,3 +255,33 @@ supplementary prereg; [G?] attribution finalization.
 **Founder mechanical actions:** (1) apply/push Patches 3019–3020;
 (2) Copilot re-paste per §1 remediation; (3) one-line confirmation of
 the [G?] return's source model. Next patch: 3021.
+
+---
+
+## ADDENDUM (Patch 3021, 7 Aug 2026) — [G?] attribution RESOLVED; Copilot remediation log
+
+**[G?] = GEMINI, founder-confirmed** ("Gemini called itself
+'Copilot'"). **Gemini mislabel event #6 registered** (registered
+failure class; prior count ×5; now ×6 — this instance is a
+seat-identity mislabel that additionally copied the Copilot-specific
+re-seating condition text from the dispatch into its own header). All
+§3 tally lines citing [G?] now attribute to Gemini; no tally outcome
+changes (every PROVISIONAL marking in §3 depended on the outstanding
+fifth seat, not on this attribution). The archive file retains its
+name `gemini_slot_return_PROVENANCE_PENDING.md` as an accurate record
+of its state at archive time; its header carries the resolution note
+as of this patch.
+
+**Copilot remediation log:** founder executed the §1 script — clean
+re-paste, then the exact confirmation line, twice — with NO response
+either time. Observation: Copilot's stall message ended with a menu
+("Proceed with full CPP returns" / "Start with Q1 only" / ...), and
+the founder's replies were free text rather than a menu selection; the
+interface may accept only its own listed options. **Final remediation
+step (one attempt): reply with the menu option "Proceed with full CPP
+returns", verbatim.** If that attempt produces no return, **Copilot
+records NO-RETURN for CONV-013 without further attempts**, the round
+completes on FOUR seated returns, and completion-round tallies
+recompute on seated returns (3-of-4 to carry, per the four-seat
+precedent, Patch 2511 lineage). Strike count remains 2 either way —
+the stale-redelivery clause is untouched by any of this.

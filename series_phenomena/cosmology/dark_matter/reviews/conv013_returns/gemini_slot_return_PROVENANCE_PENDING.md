@@ -2,9 +2,8 @@
 GEMINI slot ("Gemini 3"), but the return SELF-HEADS "SEAT: Copilot" and
 claims "Fresh conversation confirmed" (the Copilot-specific re-seating
 condition). The founder's covering note also mentioned the return
-"refers to self as S1". Seat attribution is PENDING FOUNDER CONFIRMATION;
-if confirmed as Gemini this is mislabel event #6 (its registered failure
-class, x5 prior). Tallies decided by this seat's vote alone are marked
+"refers to self as S1". Seat attribution RESOLVED at Patch 3021: FOUNDER-CONFIRMED GEMINI
+("Gemini called itself 'Copilot'") -- mislabel event #6 registered. Tallies decided by this seat's vote alone are marked
 PROVISIONAL in the adjudication. Below the VERBATIM line untouched,
 including the visible thinking block as delivered. -->
 <!-- ===================== VERBATIM BELOW ===================== -->
