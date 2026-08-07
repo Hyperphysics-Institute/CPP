@@ -285,3 +285,128 @@ completes on FOUR seated returns, and completion-round tallies
 recompute on seated returns (3-of-4 to carry, per the four-seat
 precedent, Patch 2511 lineage). Strike count remains 2 either way —
 the stale-redelivery clause is untouched by any of this.
+
+---
+
+## COMPLETION (Patch 3023) — five seats returned; CONV-013 CLOSED
+
+**Copilot's return landed 7 Aug 2026 after the Patch 3021 final
+remediation step (the verbatim menu-option reply). Citation key
+[COP] = `reviews/conv013_returns/copilot_return.md` (Patch 3022);
+classification REASONED-UNVERIFIED (no execution claim). Seat ACTIVE;
+strike count unchanged at 2. All PARTIAL/PROVISIONAL items now close
+at five seats; 3-of-5 carries.**
+
+### Final five-seat tallies (deltas and closures only)
+
+- **Q1(i): CONFIRM 4/5** [GPT][GROK][G?=Gemini][COP] vs AMEND [DS] —
+  stands CONFIRMED. [COP] non-blocking residual (K≤8 remainder table)
+  joins [DS]'s items as hardening candidates.
+- **Q1(ii): CONFIRM 4/5** — stands CONFIRMED. [COP] residual (dressed-
+  kernel→T-1 mapping paragraph) recorded.
+- **Q1(iii): NOT CONFIRMED — now 1 CONFIRM [GROK], 2 AMEND [GPT][COP],
+  2 INSUFFICIENT [Gemini][DS].** The remediation is now CONCRETELY
+  SPECIFIED by [COP] and convergent with [GPT][DS]: **deliverable
+  D-KAPPA** — (a) an analytic inequality chain exhibiting κ ≤ 1−δ,
+  δ > 0, under the frozen admissible class 𝒫, naming the metric and
+  the contraction map, OR (b) a seeded deterministic test returning
+  the Jacobian spectral radius for representative legs with a
+  uniform-boundedness (SF-6 linear-sensitivity) diagnostic. Worker
+  deliverable; reviewed when produced; no new OPEN ID (attaches to
+  the OPEN-K1-MEMORY-1 remit).
+- **Q2: discharge NOT UPHELD — FINAL.** UPHOLD 2 [GPT][GROK], AMEND 2
+  [DS][COP], INSUFFICIENT 1 [Gemini]; no class carries. Enacted
+  obligation on T-1 (v1.4 work item), convergent [DS]+[COP]+[GPT
+  wording note]: state the closure as STATISTICAL at current grade;
+  expose the exact upgrade hypothesis; supply the partial-anchoring
+  bound (formal lemma or explicit exhaustive partition construction).
+- **Q3(a): RESOLVED-FALSIFIER-CANDIDATE class carries 3/5**
+  [GROK][Gemini][COP] vs CONSISTENT [GPT], UNRESOLVED-BY-FLOOR [DS].
+  **Enacted status: FALSIFIER-CANDIDATE UNDER MANDATORY DISPOSITION.**
+  Two of the majority three expressly condition on the memory-vs-
+  ballistic reconciliation ([GROK]: "does not yet constitute a clean
+  refutation"; [COP]: "must be reconciled... before any clearance"),
+  and the frozen branch-2 firing condition (domain-INDEPENDENT late
+  response) is unmet on the record (discriminator 2.080). Therefore:
+  the registered exportable falsifier is **NOT declared FIRED and NOT
+  retired**; T-3 §6 / B-1 L-4 / L-6 stand INDICTED-PENDING-DISPOSITION;
+  the disposition vehicle is the frozen supplementary prereg
+  `kmem_tail1_disposition_prereg.md` (Patch 3024), executed only after
+  flash sanction. The Patch 3020 coverage-gap observation stands on
+  the record and is compatible with the majority's candidate reading.
+- **Q3(b): no class carries** (cleared 2 [GPT][Gemini]; not-cleared 2
+  [DS][COP]; formal-cleared-with-tail [GROK]). The mechanical σ_ctrl
+  check remains PASSED as a fact of record; the bar element FAILS with
+  the branch (Q5 HOLD already final).
+- **Q3(c): NOT refuted** (refuted-class 2 [Gemini][COP] vs tension/
+  consistent 3 [GPT][GROK][DS]). L-4/L-6 remain UNDER TENSION pending
+  disposition.
+- **Q4: AMEND carries 3/5 — FINAL** [GPT][DS][COP] vs RATIFY [GROK],
+  REJECT [Gemini]. **E-1 conditionally adopted** subject to three
+  enacted amendments: (1) preserve the dual historical record
+  (anomaly under the superseded ontology / predicted negative control
+  under the ratified one) [GPT]; (2) publish the negative-control
+  replication protocol + ONE independent seeded negative control
+  demonstrating the origin-deletion prediction at Moment boundaries
+  [COP; discharges [DS]'s proof demand]; (3) explicit within-Moment-
+  only scope statement for AUTOMATON-2 [COP]. REJECT does not carry;
+  the rescue-by-reinterpretation charge resolves into amendment (2).
+- **Q5: HOLD 4/5 — enacted at Patch 3020, unchanged.** [COP]'s
+  remediation trio maps onto the registered program: tail disposition
+  (→ OPEN-KMEM-TAIL-1 Route A), D-KAPPA, extended-control re-run
+  (→ Route B, activates only on DISP-C).
+- **AUX-1: NOT closed — FINAL** (CLOSE 2 [GROK][COP]; AMEND 1 [GPT];
+  INSUFFICIENT 2 [Gemini][DS]). Touchpoint batch stays stocked; named
+  items: mode-coverage extension [DS], grade labeling [GPT],
+  reproducibility note [COP].
+- **AUX-2: NOT discharged.** Written DISCHARGE 3 [GPT][GROK][COP], but
+  [GPT]'s is expressly conditional ("If AUX-1 stands") and AUX-1 did
+  NOT close — the condition fails, so the effective clean tally is
+  2/5. Tally-from-verbatim requires counting the verdict AS WRITTEN,
+  conditions included. AUX-2 rides with AUX-1.
+- **AUX-3: DISCHARGE carries 3/5 — ENACTED** [GPT][GROK][COP] vs HOLD
+  [Gemini], INSUFFICIENT [DS]. Distinction from AUX-2: [GPT]'s proviso
+  here ("stated exactly at bookkeeping grade") is a satisfiable
+  wording obligation on the discharge itself, not a condition on
+  another item's outcome. Discharge obligations (worker, at the
+  recording patch): exact bookkeeping-grade wording [GPT] + a one-page
+  calibration provenance note [COP].
+- **AUX-4 Q-A: CONFIRM-WITH-AMENDMENTS — stands (now 4/5 confirm-
+  class).** [COP] amendment folds to AP-4 v1.1: restate the no-phase
+  invariant + proof sketch that the identification obligations
+  reintroduce no phase degree of freedom.
+- **AUX-4 Q-B: AMENDMENT-REQUIRED carries 3/5 — FINAL REVERSAL of the
+  2–2 interim** ([Gemini][DS][COP] vs [GPT][GROK]). AP-4 v1.1 must
+  carry the clarifying messenger-content vs computed-state sentence;
+  whether as A3′ textual amendment or as an AP-4d clarifying clause is
+  a drafting choice for the proposal; enactment authority remains
+  founder ratification.
+- **AUX-4 Q-C: SEVERABLE — stands (4/5).**
+- **AUX-4 Q-D: PRESERVES — stands (3/5)**, with the folded obligation
+  ([DS]+[COP]): k substrate-determined, with an explicit no-tunability
+  statement in AP-4 v1.1.
+- **AUX-4 Q-E: SUFFICIENT — stands (3/5).** [COP]'s amendment (header
+  provenance statement) is ALREADY SATISFIED: the proposal header
+  (`axiom_amendment_proposal_AP-4_2026-08-06.md`, Patch 3016) carries
+  the explicit Grok-drafting disclosure and founder-adoption
+  statement; cited and closed.
+
+### AP-4 net outcome
+
+**Panel endorsement OBTAINED WITH AMENDMENTS.** AP-4 → v1.1 work item
+(next window): fold Q-A's invariant restatement + proof sketch, Q-B's
+clarifying sentence, Q-D's no-tunability statement. Then founder
+ratification decision. O-1..O-7 scoping confirmed; O-6 severable from
+this round, BLOCKING for AP-4-dependent shipping (unchanged). The
+SR-lineage audit's HELD items (R-B/R-C/R-E, Patch 3016) unblock at
+ratification.
+
+### CONV-013 CLOSED
+
+All questions adjudicated at five seats. Live worker queue, in order:
+(1) flash sanction round for `kmem_tail1_disposition_prereg.md`
+(dispatch at Patch 3024) — the critical path to 1B; (2) D-KAPPA;
+(3) T-1 v1.4 statistical-closure amendment; (4) E-1 amendment trio;
+(5) AP-4 v1.1; (6) AUX-3 discharge-recording with its two wording
+obligations. Ledger: unchanged from §6 except AUX-3 discharged and
+E-1 conditionally adopted as above. Next patch: 3024.

@@ -54,6 +54,19 @@ The Flagship Papers sit at the apex of the CPP programme, taking completed deriv
 **Paper(s):** SF-5 v1.0 SHIPPED Session 161, Patches 1520→1521; §4 + §8 (flagged, not headlined).
 **Registered:** 15 June 2026 Session 161, Patches 1520→1521.
 
+### OPEN-KMEM-TAIL-1: Disposition of the MEAS-2 Significant Tail (+ the 2981 branch-coverage gap)
+**Status:** OPEN — SANCTION-GATED (frozen prereg committed Patch 3024; flash round pending)
+**Sector(s):** FP (cross: DM — the 1B promotion blocker)
+**Priority:** CRITICAL — named blocker #1 on PR7 clause 2 / OPEN-K1-MEMORY-1 item 1B (CONV-013 Q5 HOLD, 4/5, FINAL)
+**One-line statement:** Disposition the K-MEM-MEAS-2 low-frequency PSD excess (tail 1.570e-3, scale 2.805e-5, SIGNIFICANT) as transient/support artifact vs genuine long-time memory, given the ballistic domain discriminator (2.080) and the undetected D_bar — a triple satisfying NO frozen 2981 §3 branch (registered coverage gap) — and audit the ~100×-below-scale D_bar non-detection.
+**Provenance:** Registered Patch 3020 (partial adjudication); enacted FALSIFIER-CANDIDATE UNDER MANDATORY DISPOSITION at Patch 3023 (completion, falsifier-candidate class 3/5 with two of three majority seats expressly deferring memory-vs-ballistic).
+**Route:** Route A (frozen supplementary prereg `kmem_tail1_disposition_prereg.md`, Patch 3024 — four discriminants on existing data, exhaustive DISP-A/B/C mapping) after flash sanction (`conv013_2026-08_flash_tail_prereg_sanction_dispatch.md`); DISP-C activates Route B (extended-control re-run, fresh prereg).
+**Dependencies:** flash sanction (pending). Consequences pre-registered: DISP-A lifts the L-4/L-6 indictment and re-arms the 1B bar (pending D-KAPPA); DISP-B fires the exportable falsifier (charter revision/HALT routing); DISP-C = Route B.
+**Cross-sector connections:** OPEN-K1-MEMORY-1 (blocker #1; blocker #2 = D-KAPPA, the C-5(iii) explicit κ<1 contraction supplement); T-3 §6 / B-1 L-4 / L-6 (indicted-pending-disposition); W-MULTILINK-1 (unaffected).
+**Registered:** 7 Aug 2026, Patches 3020/3023/3024.
+
+**Status update (7 Aug 2026, Patches 3019–3024 — CONV-013 COMPLETE at five seats; 1B HOLD FINAL; the disposition instrument frozen).** Dispatch-day executed end to end: MEAS-2 record (3017, all-seeds-match audit, zero exclusions), dispatch completion (3018), verbatim returns archive (3019, 3022), adjudications (3020 partial, 3023 completion). Enacted: Q5 HOLD 4/5 (1B OPEN, blockers = this problem + D-KAPPA); C-5(i)/(ii) CONFIRMED, (iii) NOT (D-KAPPA spec from [COP], convergent [GPT][DS]); Q2 discharge NOT upheld (T-1 v1.4 statistical-closure obligation); Q4 E-1 AMEND 3/5 (conditionally adopted: dual historical record + negative-control replication + within-Moment scope); AUX-3 DISCHARGED (two wording obligations); AUX-1/2 stay stocked; AP-4 endorsed WITH AMENDMENTS (Q-B reversal at 3/5: clarifying amendment REQUIRED; v1.1 work item → founder ratification). Integrity: Grok SCRIPT-EXECUTED-QUALIFIED with BOTH KEYS VERIFIED-MATCH (keys published post-adjudication; non-reconstructibility re-audited incl. 7-figure renderings); Gemini mislabel #6 (founder-confirmed, self-labeled "SEAT: Copilot"); DeepSeek adverse event #6 (invented prereg text + stdout-contradicting floor ruling); Copilot recovered via the menu-option remediation, strike count 2, ACTIVE. Next trigger: founder pastes the flash sanction block ×5.
+
 ### OPEN-FP-RELAY-MECH-1: DI-bit Transport Mechanism — Sub-Moment Edge Relay vs Direct PSR Broadcast
 **Status:** OPEN — ROOT NODE of the DM-promotion dependency tree (see Patch 2953 map)
 **Sector(s):** FP (cross: DM, QM, SR)
