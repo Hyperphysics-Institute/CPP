@@ -1,6 +1,23 @@
 # AXIOM AMENDMENT PROPOSAL AP-4 — THE DI-BIT PAYLOAD RESPECIFICATION ({origin address, E, S}; weighted SSV_abs; emergent gravitational channels)
 
-**Patch 3016 (6 Aug 2026). DRAFT for the dispatch-day panel round.
+**v1.1, Patch 3031 (8 Aug 2026). PANEL-ENDORSED-WITH-AMENDMENTS at
+CONV-013 (completion adjudication, Patch 3023); this revision folds the
+three panel amendments — Q-A no-phase invariant restatement + proof
+sketch (§2-I, [COP], 4/5 confirm-class), Q-B messenger-content vs
+computed-state clarifying clause (appended to AP-4d, [Gemini][DS][COP]
+3/5 — drafted as an AP-4d clarifying clause rather than an A3′ textual
+amendment, the drafting choice the ruling delegated to the proposal),
+and Q-D explicit no-tunability statement (appended to AP-4b,
+[DS]+[COP], 3/5). Q-C: O-6 SEVERABLE from the CONV-013 round, BLOCKING
+for AP-4-dependent shipping. Q-E: provenance disclosure SUFFICIENT and
+already satisfied by the header below. AWAITING FOUNDER RATIFICATION —
+nothing enacts until the founder ratifies; AP-2/AP-3 stand meanwhile.
+On ratification: the full O-7 corpus sweep fires (the F-SW-7 audit's
+registered entries — SR-1 glossary + master glossary DI-bit — resolve
+in that pass); the SR-lineage reconciliation notes shipped at Patch
+3030 convert from "ratification pending" to settled citations.**
+
+**v1.0, Patch 3016 (6 Aug 2026). DRAFT for the dispatch-day panel round.
 Founder anchor: `founders_voice/founder_specification_dibit_payload_automaton_2026-08-06.md`
 (Patch 3015). Drafting provenance DISCLOSED: the §3 automaton sequence in
 the anchor was Grok-drafted from founder text and founder-adopted; Grok
@@ -34,7 +51,18 @@ strong-to-electric strength ratio, unchanged by external conditions
 (environment acts only through arrival counts, directions, and geometric
 dilution). k is subject to the identification obligation O-2 (§4) — it
 enters as a citation of shipped derived couplings, not as a free
-parameter.
+parameter. *(Q-D no-tunability statement, v1.1, folded per
+[DS]+[COP]):* **k is substrate-determined and not tunable.** It takes
+one value, everywhere, always: fixed by the intrinsic strong-to-electric
+charge-strength ratio of the substrate itself, prior to and independent
+of any configuration, environment, or observation, and identical at
+every GP and every Moment. Nothing in CPP — no fit, no calibration, no
+per-sector adjustment — may set, refine, or vary k; the programme's
+only permitted act regarding k's value is *identification* with an
+already-shipped derived coupling ratio per O-2. If no shipped
+identification exists, the honest state is "k unidentified," reported
+as such — never "k fitted." This preserves the zero-parameter posture:
+k is a substrate constant awaiting recognition, not a dial.*
 
 **AP-4c (transit and reset — AP-3 clarification, not correction):** the
 imprint is invariant during the sub-Planck transit from GP_origin to its
@@ -54,7 +82,74 @@ payload slot: energy in all its forms is an emergent low-entropy
 configuration of CPs/DPs/unpaired CPs, seen by the census through the
 Sea polarization it maintains (anchor §5).
 
+*(Q-B clarifying clause, v1.1, folded per [Gemini][DS][COP]; drafted as
+an AP-4d clarifying clause rather than an A3′ textual amendment — A3′'s
+ratified text is untouched):* **Wherever A3′ or any downstream text
+speaks of the LSP′ packet being "broadcast," "transmitted," or
+"carried," the referent is the computed state that receivers
+reconstruct, never additional messenger content: messenger content is
+exhaustively {origin address, E, S}, and everything else attributed to
+the broadcast channel — Φ, V_i, Q_ij, SSV_net, SSV_abs, and all
+gravitational parameters — is computed state, produced receiver-side by
+summation over arriving payloads.** The division is exclusive and
+exhaustive: every quantity in the theory is either (i) messenger
+content (the three payload slots), or (ii) computed state (a GP
+register or a function of GP registers); no quantity is both, and no
+third category exists.*
+
 ## §2 — Reconciliation arguments (for the panel to test)
+
+**I-1 (the no-phase invariant, restated — Q-A amendment, v1.1, folded
+per [COP], 4/5 confirm-class).**
+
+*Invariant:* **No per-messenger phase degree of freedom exists anywhere
+in AP-4, and none of AP-4's obligations (O-1..O-7) can reintroduce
+one.** Precisely: the DI-bit's state space is the static tuple {origin
+address, E, S} (AP-4a), imprinted once at emission, invariant during
+transit (AP-4c), and reset at delivery; a phase degree of freedom would
+require either (i) a messenger variable that evolves during transit —
+excluded by AP-4c's invariance clause — or (ii) a compact variable in
+the payload beyond the three enumerated slots — excluded by AP-4a's
+exhaustive enumeration. The orientations of E and S are not phase
+degrees of freedom: they are frozen images of the origin GP's register
+orientation, carrying no dynamics; the phase-equivalent content of the
+theory is the RECEIVER's SSV_net orientation register (FI-QMRG-1:
+φ = SSV_net orientation), reconstructed by summation, exactly as R-1
+below states.
+
+*Proof sketch that the identification obligations reintroduce no phase
+degree of freedom (obligation by obligation):*
+
+- **O-1 (census-tracks-energy):** a receiver-side scaling claim about
+  aggregate census perturbations; consumes counts and magnitudes only;
+  adds no messenger state.
+- **O-2 (k identification):** k is a fixed universal scalar constant in
+  the receiver-side summation rule AP-4b — and now, per the Q-D clause,
+  explicitly non-tunable. A constant is not a degree of freedom, let
+  alone an oscillating one, and k appears nowhere in the messenger
+  tuple.
+- **O-3 (conservation-under-recursion):** a ledger property of fixed
+  emission counts and shell dilution; states no new variable.
+- **O-4 (F-E2-3 arrival-band):** a transit-property formalization.
+  AP-4c fixes the imprint invariant during transit, so any arrival-band
+  reading constrains delivery timing and geometry, never messenger
+  content.
+- **O-5 (Q_ij emergence):** derives the tensor register as
+  receiver-side computed state (AP-4d); by construction the derived
+  object lives in the GP register, not on the messenger.
+- **O-6 (W-MULTILINK-1 re-runs):** re-derivations conducted UNDER
+  AP-4a's premises, which include the snapshot clause; any derivation
+  admitted through O-6 that irreducibly required per-messenger phase
+  dynamics would trip the falsifier F-AP4-1 rather than amend the
+  payload.
+- **O-7 (corpus sweep):** editorial; touches text, not ontology.
+
+*Closure:* every obligation either (a) operates receiver-side on
+registers and aggregates, (b) concerns a fixed constant, or (c) is
+editorial; none has write access to the messenger tuple. The invariant
+is therefore stable under the discharge of all seven obligations, and
+F-AP4-1 (§5) remains the standing falsifier should any future
+derivation contradict this sketch.
 
 **R-1 (the no-phase clause).** The 2957 ruling (AP-2's provenance)
 retired the COHERENT-FRONT picture: a per-messenger oscillating phase
@@ -135,7 +230,7 @@ GP level.
   reading.
 - **F-AP4-4 (inherited):** F-AP3-1 stands unchanged.
 
-## §6 — Questions to the panel (draft; final wording at dispatch)
+## §6 — Questions to the panel (v1.0 draft wording; RESOLVED at CONV-013)
 
 Q-A: does R-1 preserve what the no-phase ruling protected (CONFIRM /
 BREAK / CONFIRM-WITH-AMENDMENTS)? Q-B: is the AP-4a/AP-4d split
@@ -146,3 +241,13 @@ complete before enactment vs after)? Q-D: does AP-4b's k, entered as an
 identification obligation, preserve the zero-parameter posture? Q-E:
 arc-integrity check on this proposal's provenance handling (Grok
 drafting disclosure sufficient?).
+
+**Outcomes (CONV-013 completion adjudication, Patch 3023; record:
+`series_phenomena/cosmology/dark_matter/conv013_2026-08_returns_adjudication.md`):**
+Q-A CONFIRM-WITH-AMENDMENTS (4/5 confirm-class) → §2-I above. Q-B
+AMENDMENT-REQUIRED (3/5, final reversal of the 2–2 interim) → the
+AP-4d clarifying clause above. Q-C O-6 SEVERABLE from the round,
+BLOCKING for AP-4-dependent shipping (4/5). Q-D PRESERVES (3/5) → the
+AP-4b no-tunability statement above. Q-E SUFFICIENT (3/5; the header
+provenance disclosure already satisfies [COP]'s amendment). Enactment
+authority: FOUNDER RATIFICATION of this v1.1 text.
