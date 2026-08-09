@@ -1,5 +1,16 @@
 # AXIOM AMENDMENT PROPOSAL AP-4 — THE DI-BIT PAYLOAD RESPECIFICATION ({origin address, E, S}; weighted SSV_abs; emergent gravitational channels)
 
+**RATIFIED + ENACTED — v1.1, founder-ratified Patch 3032 (8 Aug 2026),
+"ratify as written"; verbatim founder statement + worker reading +
+enactment inventory:
+`founders_voice/founder_ratification_AP-4_2026-08-08.md`. AP-4a
+supersedes the AP-2 content clause under A1′; axiom count unchanged at
+9 (definitional-layer content, amendment accounting per the A3′
+precedent). Registry rows updated at the same patch
+(`axiom-registry.md` A1′ + A3′). O-1..O-6 remain OPEN (O-6 BLOCKING
+for AP-4-dependent shipping); O-7 corpus sweep fires at the next
+patch; falsifiers F-AP4-1..4 armed.**
+
 **v1.1, Patch 3031 (8 Aug 2026). PANEL-ENDORSED-WITH-AMENDMENTS at
 CONV-013 (completion adjudication, Patch 3023); this revision folds the
 three panel amendments — Q-A no-phase invariant restatement + proof
