@@ -1,12 +1,31 @@
 # E-1 EXECUTED — CLASSIFICATION OF THE AUTOMATON TRANSPORT IMPLEMENTATIONS AGAINST VERSION A / VERSION B (W-5)
 
+**v1.1 (Patch 3036, 9 Aug 2026): CONV-013 Q4 ruling executed - E-1
+CONDITIONALLY ADOPTED (AMEND 3/5 [GPT][DS][COP]; REJECT did not carry,
+the rescue-by-reinterpretation charge resolving into amendment (2)).
+The three enacted amendments are folded: (1) the 2887 finding now
+carries the DUAL HISTORICAL RECORD (SS2.2a) - anomaly under the
+superseded ontology / predicted negative control under the ratified
+one, both readings preserved and dated [GPT]; (2) the negative-control
+REPLICATION PROTOCOL is published and ONE INDEPENDENT SEEDED negative
+control demonstrating the origin-deletion prediction is executed -
+`code/3036_e1_negative_control.py`, 4/4: per-bit FCC walker, new code,
+new seed; origin-deleted arm alpha = 0.483 (vs 2887's field-level
+0.478 - two independent implementations, one exponent),
+origin-retained contrast arm alpha = 0.994 in the SAME harness [COP;
+discharges [DS]'s proof demand]; (3) the AUTOMATON-2 classification
+carries an EXPLICIT WITHIN-MOMENT-ONLY scope statement (SS2.2, table)
+[COP].**
+
 **Patch 2991 (4 Aug 2026). Executes work-plan step E-1 of the
 RELAY-MECH-1 charter (`relay_mech1_charter.md` §5, as amended 2957 →
 2958: classify against Version A/B, the canonical post-fork
-vocabulary). This is a re-read/classification task: every number
-cited below is from a registered record (arc closure 2812; front-class
-finding 2887; directed-relay execution 2889); no new computation is
-performed and no verify script is owed. The charter names "the two
+vocabulary). This was, at v1.0, a re-read/classification task: every number
+cited in the v1.0 text is from a registered record (arc closure 2812;
+front-class finding 2887; directed-relay execution 2889), with no new
+computation performed. (v1.1 note: amendment (2) DID require a new
+computation - the independent seeded negative control - and its verify
+script `code/3036_e1_negative_control.py` is owed and supplied.) The charter names "the two
 AUTOMATON relay implementations"; the corpus now carries THREE
 registered transport implementations (the directed relay of 2888/2889
 postdates the charter), and all three are classified — the complete
@@ -58,6 +77,14 @@ coordination), conservation exact (Σw = 1 asserted). Applied each
 Moment by translation-invariant convolution; the resulting front Q is
 re-aggregated and re-emitted the next Moment with the same kernel.
 
+**SCOPE STATEMENT (v1.1, enacted amendment (3)):** every Version-B
+classification claim for AUTOMATON-2 in this document - and every
+piece of C-1/C-2 evidence credited to it - is WITHIN-MOMENT ONLY.
+AUTOMATON-2 instantiates the Version B composition inside a single
+Moment and instantiates NO registered mechanism class across Moments;
+no multi-Moment claim of any kind is made on its behalf, and any
+future citation of A-2 evidence must carry this scope qualifier.
+
 **Class, WITHIN one Moment: VERSION B, in reduced form.** W_R is
 exactly the R-fold composition of Version B's per-hop rule (even-split
 + outward-only + conservation); the translation-invariance reduction
@@ -68,18 +95,49 @@ registered pointwise inverse-square at R = 4 (±0.4%, Δp = 0.010,
 evidence for the Version B composition, and the outward-only front at
 exact graph distance R is the within-Moment expression of C-1.
 
-**Class, ACROSS Moments: NEITHER — and that is the mechanism's own
-prediction, not a defect.** The engine reduces the field to scalar Q
-at each Moment boundary and re-steers outward from the CURRENT front
-(translation invariance), i.e., it DROPS the origin address at every
-Moment boundary. Finding 2887 measured the consequence: ⟨r⟩ ~ t^0.478,
-diffusive, no light cone. Under the ratified ontology this is a
-NEGATIVE CONTROL: P-1 makes the origin address the load-bearing
-content whose retention steers the ballistic front; A-2's multi-Moment
-dynamics deletes precisely that content and ballisticity dies —
-exactly what synthesis v2 (2957 §4) predicts for address-free
-re-emission. The 2887 finding is thereby RECLASSIFIED from anomaly to
-confirming control of the Version B logic: no address, no light cone.
+**Class, ACROSS Moments: NEITHER.** The engine reduces the field to
+scalar Q at each Moment boundary and re-steers outward from the
+CURRENT front (translation invariance), i.e., it DROPS the origin
+address at every Moment boundary. Finding 2887 measured the
+consequence: <r> ~ t^0.478, diffusive, no light cone.
+
+### SS2.2a - The 2887 finding: the DUAL HISTORICAL RECORD (v1.1, enacted amendment (1))
+
+Both readings are the record; neither erases the other.
+
+**Reading 1 - as registered (pre-2957 ontology): ANOMALY.** At its
+registration the 2887 diffusive result stood as an unexplained
+failure of a ratified engine to exhibit the expected light cone. That
+status was real, was earned by measurement, and is preserved here as
+history: under the ontology in force at the time, the finding was an
+anomaly, full stop.
+
+**Reading 2 - under the ratified ontology (2957 P-1 / synthesis v2):
+PREDICTED NEGATIVE CONTROL.** P-1 makes the origin address the
+load-bearing content whose retention steers the ballistic front;
+A-2's multi-Moment dynamics deletes precisely that content at every
+Moment boundary, and synthesis v2 (2957 SS4) predicts exactly this
+consequence for address-free re-emission: no address, no light cone.
+Under the ratified reading the same measurement is a confirming
+control of the Version B logic.
+
+**Why Reading 2 is not rescue-by-reinterpretation (the [COP]/[DS]
+demand, discharged by measurement):** a reinterpretation earns
+evidential standing only if the reinterpreting prediction survives an
+INDEPENDENT test it could fail. Executed at this patch:
+`code/3036_e1_negative_control.py` (protocol published in the script
+header; frozen verdict bands; seeded, deterministic, replication
+exact). A per-bit FCC walker - new code, independent of both the
+field-level A-2 engine and the 2888/2889 directed relay - runs the
+origin-DELETED dynamics and the origin-RETAINED dynamics in the same
+harness: deleted arm <r> ~ t^0.483 (diffusive; independently
+convergent with 2887's field-level 0.478), retained arm
+<r> ~ t^0.994 (ballistic), ratio 11.5x at T = 200, within-Moment
+ballisticity in both arms. The prediction discriminates and lands
+where the ratified ontology says: the reclassification is a tested
+claim, not a relabeling. The transition Reading 1 -> Reading 2 is
+dated (ontology 2957; classification 2991; independent control 3036)
+and the anomaly period remains on the books.
 
 ### 2.3 The DIRECTED RELAY (execution 2888/2889, `automaton_directed_relay_execution.md`)
 
@@ -104,7 +162,7 @@ engine; registered as such.
 | Implementation | Within-Moment class | Across-Moment class | C-1 (ballistic) | C-2 (inverse-square) |
 |---|---|---|---|---|
 | AUTOMATON-1 (2797 shell) | Version A (direct broadcast) | — (endpoint rule) | no bearing | YES, shell-level, mechanism-class-shared (±2.9%) |
-| AUTOMATON-2 (2802 front kernel) | **Version B (reduced/precomposed)** | NEITHER (address dropped) → diffusive 2887 = **predicted negative control** | within-Moment only | **YES, direct Version-B composition (±0.4%, tightens with hops)** |
+| AUTOMATON-2 (2802 front kernel) | **Version B (reduced/precomposed) - WITHIN-MOMENT ONLY (v1.1 scope, SS2.2)** | NEITHER (address dropped) → 2887, dual record SS2.2a: anomaly (as registered) / **predicted negative control** (ratified ontology; independently demonstrated, `code/3036_e1_negative_control.py`) | within-Moment only | **YES, direct Version-B composition (±0.4%, tightens with hops) - within-Moment only** |
 | Directed relay (2888/2889) | — (per-bit rule) | **Version B class, proxy (direction ≡ address at this geometry)** | **YES, p = 1.0000 exact** | not measured in that execution |
 
 **Charter §6 outcome:** the implementations DO instantiate the
