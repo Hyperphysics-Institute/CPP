@@ -1,5 +1,16 @@
 \documentclass[12pt]{article}
 
+% CHANGELOG:
+%   v2   13 Mar 2026 — prior shipped text.
+%   v2.1  8 Aug 2026 — (Patch 3030, F-SW-7 R-E fix pass) reconciliation
+%     remark added to §Born: the shipped QM-series result is QM-2's
+%     count-based theorem (|psi|^2 = rho) with amplitude^2 as its
+%     B-QMRG-1 coherent-mode dual; this companion's two-quadrature
+%     conjecture addresses the microscopic sampling mechanism, remains
+%     an explicitly labeled conjecture, consumed by no shipped result;
+%     consonance with the Patch 3006 derived 1/2 noted. No derivation
+%     touched.
+
 % ── packages ──────────────────────────────────────────────────────────────────
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{geometry}
@@ -38,7 +49,7 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{13 March 2026 --- Version~2}
+\date{8 August 2026 --- Version~2.1}
 
 \begin{document}
 \maketitle
@@ -314,6 +325,28 @@ the sampling is uniform in both quadratures, nor why the solid-angle
 proportionality holds exactly in the 600-cell's discrete geometry.  These
 are the key steps required for a complete proof and constitute the most
 important open problem in the CPP program.
+
+\begin{remark}[Relation to the shipped QM-series Born-rule results — reconciliation note, v2.1]
+Since this companion's v2, the QM series has shipped a count-based
+Born-rule theorem (QM-2, Theorem~4.1): the probability of a CP state
+change at a Grid Point is proportional to the local DI-bit number
+density $\rho$, with $|\psi|^2 = \rho$ — a proof that consumes only the
+count register. Under the B-QMRG-1 coherent-mode bridge
+($|\SSV_{{\rm net},\perp}|^2 \propto \rho$), the squared-amplitude and
+count readings are dual statements of one quantity. The present
+conjecture is neither superseded by nor in competition with that
+theorem: it addresses the \emph{microscopic sampling mechanism} — why
+the maximum-gradient selection statistics produce the $A_i^2$ weighting
+in the first place — a level beneath what the count theorem asserts. It
+remains an explicitly labeled conjecture, consumed by no shipped
+result. Its two-quadrature structure is consonant with the Patch 3006
+derivation, in which the canonical $\tfrac{1}{2}$ of the oscillator
+ground state emerges as the two-quadrature split of the rotating ZBW
+pattern — rotation physics, not bookkeeping — lending the two-quadrature
+premise independent support without discharging the conjecture's open
+steps (uniform sampling; exact solid-angle proportionality in the
+discrete geometry).
+\end{remark}
 
 \begin{remark}[Relation to existing derivations of Born rule]
 Several derivations of the Born rule exist within standard quantum mechanics
