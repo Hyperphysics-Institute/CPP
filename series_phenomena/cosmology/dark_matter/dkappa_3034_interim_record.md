@@ -195,6 +195,16 @@ micro-arrangements of the Sea, in the manner of a thermodynamic
 state — rather than a unique point configuration? The measurements
 say the committed dynamics realizes the class reading, and the shape
 matches the QM re-grounding (state and phase at pattern level, not
-particle level). The founder's ruling, when given, is registered
-verbatim and the §6 amendment candidate inherits it before the panel
-round.
+particle level).
+
+**CLOSED at Patch 3035: the founder AFFIRMED the class reading and
+supplied its mechanism — partner switching (opposite-charge Sea-DP
+CPs bind to the unpaired mass-composing CPs at random times, the DP's
+other CP becoming the new unpaired CP; micro-identities exchange
+chaotically while the pattern-level conserved totals — mass, KE,
+momentum — are stored in the configuration). Verbatim registration +
+worker reading:
+`founders_voice/founder_ruling_partner_switching_realization_class_2026-08-09.md`.
+The §6 amendment candidate inherits the ruling; T-1 v1.4's
+statistical-closure statement acquires its physical grounding from the
+same ruling.**
