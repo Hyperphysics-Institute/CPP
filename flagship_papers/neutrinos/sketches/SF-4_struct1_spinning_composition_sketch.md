@@ -173,3 +173,14 @@ the composition picture reproduces (eDP→4, qDP→12) and hence
 on the model inputs. Open residue: derive (I1) and the pairwise form
 from arc dynamics proper; close S3 by either route; panel review of
 the model grade (rides in the MEAS-3 disposition batch).
+
+## §6 — v0.3 (Patch 3045): cross-corpus consonance registered
+
+The F-SW-9 SF-2 audit (`flagship_papers/audits/3045_fsw9_mechanism_audit_sf2.md`
+§2) found: (C1) the composition-flavor identification ν_μ = spinning
+qDP is SHIPPED SF-2 content (muon-decay walkthrough, verbatim) — this
+sketch therefore reconciles two SHIPPED corpus descriptions, not a
+new statement against an old one; (C2) SF-2's Z axial-vector argument
+independently invokes the icosahedron-as-three-interlocked-tetrahedra
+structure = FACT-G2's 3-frame partition. The acceptance test and all
+sub-claim statuses are unchanged; the sketch's standing is upgraded.
