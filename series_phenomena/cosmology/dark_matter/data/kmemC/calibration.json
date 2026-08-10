@@ -1,0 +1,40 @@
+{
+ "a0": {
+  "x_src0": -18.0,
+  "T_exit": 94,
+  "T_close": 60.0,
+  "DT": 34.0,
+  "target": 0,
+  "tuned": false,
+  "ok": false
+ },
+ "a1": {
+  "x_src0": -15.765625,
+  "T_exit": 84,
+  "T_close": 54.0,
+  "DT": 30.0,
+  "target": -12,
+  "tuned": true,
+  "ok": false
+ },
+ "a2": {
+  "x_src0": -19.703125,
+  "T_exit": 97,
+  "T_close": 60.0,
+  "DT": 37.0,
+  "target": 8,
+  "tuned": true,
+  "ok": false
+ },
+ "a3": {
+  "x_src0": -11.828125,
+  "T_exit": 71,
+  "T_close": 48.0,
+  "DT": 23.0,
+  "target": -12,
+  "tuned": true,
+  "ok": false
+ },
+ "beta_f": 0.6,
+ "all_ok": false
+}
