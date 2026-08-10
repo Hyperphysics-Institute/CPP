@@ -156,3 +156,26 @@ Also recorded for the process ledger: the §0 tally-invariance
 argument was correct about VERDICT CLASSES and silent about CONTENT
 — a late return added a binding mathematical finding. Future
 invariance closures must state that distinction explicitly.
+
+## §8 — ANNEX 2 (Patch 3064): F0 RESOLVED BY FOUNDER RULING — the geometry question dissolved by replacement
+
+The founder's local-summation ruling (verbatim in founders_voice,
+3064) rejects the premise of the relational construction: no distant
+agreement exists; the vacuum is the per-GP arrival sum; the horizon
+is emergent separation. The clique construction (and with it both
+GPT's ball-ambiguity and the width repair) is RETIRED; the
+**ARRIVAL-DOMAIN construction** replaces it (2-iii §6 v0.4): each
+GP's ongoing-arrival domain is the ball B(O, χ_h) EXACTLY — unique,
+spherical by receiver isotropy (GPT's route-1 isotropy principle
+supplied by the physics for free). **F0: RESOLVED. The
+agreement-object fork: DISSOLVED (category conflation, per the
+ruling). OBL-CC-1′'s geometry repair: DISCHARGED-BY-REPLACEMENT**
+(the robustness question migrates into OBL-CC-2 as the stability of
+the truncated sum under the corpus perturbation class). The residual
+is now CONCRETELY defined — the uncancelled remainder of the
+horizon-truncated arrival sum with a soft, kinematics-derivable
+truncation profile — and OBL-CC-2's derivation plan freezes that
+computation. R-BRANCH becomes mechanical (unbounded domain ⇒
+complete cancellation ⇒ zero residual). GPT's remaining sequencing
+guidance stands: the full theory curve freezes before any
+confrontation; no cosmological inputs in the derivation.

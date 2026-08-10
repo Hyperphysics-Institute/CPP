@@ -210,3 +210,56 @@ mutuality (the fork above); the shape/spectral normalization
 (inside OBL-CC-2); the branch (external). The 3060 confrontation's
 numbers are unchanged (they used L = R_h; the width reformulation
 feeds the same magnitude through the coefficient bookkeeping).
+
+---
+
+## §6 — v0.4 (Patch 3064): THE ARRIVAL-DOMAIN CONSTRUCTION — the founder's local-summation ruling supersedes the relational construction entirely; L = R_h returns AS A RADIUS, unique and spherical by construction; F0 RESOLVED; the fork DISSOLVED
+
+**The founder's ruling** (verbatim:
+`founders_voice/founder_ruling_local_summation_horizon_2026-08-11.md`)
+rejects the premise the clique construction stood on: the vacuum is
+the per-GP LOCAL SUM of arrivals; nothing is agreed between distant
+patches; the horizon is an emergent separation phenomenon; the fork
+conflated local and emergent scales. Consequences, drawn honestly:
+
+**Retired:** the relational (pairwise-coordinability) construction
+in its entirety — the clique condition, the mutuality requirement,
+the "vacuum realization class" as an agreement domain, and with them
+BOTH the ball-uniqueness problem GPT found AND the width theorem
+that repaired it (§5 stands in the record as the trail; the
+mathematics was sound about a relation that has no physical
+referent under the ruling).
+
+**The replacement (the founder's framing made quantitative):**
+define, per GP O at Moment t, the **ONGOING-ARRIVAL DOMAIN** —
+the comoving sources whose future emissions (t_e ≥ t) ever land on
+O. A source at comoving d contributes iff d ≤ χ(t_e) = ∫_{t_e}^∞
+dt′/a for some t_e ≥ t; χ is strictly decreasing, so the condition
+is d ≤ χ_h(t). **The domain is the ball B(O, χ_h) EXACTLY — unique,
+and SPHERICAL by the isotropy of propagation about the RECEIVER**
+(verify `scripts/3064_arrival_domain.py`). No pairwise relation, no
+shape freedom: GPT's Q1 objection is answered by REPLACEMENT, and
+GPT's own route (1) — an isotropy principle — is supplied for free
+by the receiving-GP's isotropy. **L = R_h returns as a RADIUS.**
+**F0 is RESOLVED; the AGREEMENT-OBJECT FORK is DISSOLVED.**
+
+**The residual, redefined concretely (the OBL-CC-2 target):** the
+vacuum energy at O is the UNCANCELLED REMAINDER OF THE
+HORIZON-TRUNCATED ARRIVAL SUM. In a non-accelerating universe the
+ongoing sum draws on an unbounded domain and cancellation completes
+(zero residual — the R-BRANCH statement, now mechanical); with
+acceleration, the sum is truncated at χ_h and the cancellation is
+incomplete at the longest scales. The truncation is SOFT — arrivals
+from near the horizon are redshifted/diluted by the summed expansion
+along the path (the founder's own per-increment picture) — and the
+soft-truncation profile is DERIVABLE from the expansion kinematics
+plus the registered per-Moment displacement law. The mode-counting
+coefficient (the ≈2) is therefore no longer a boundary-condition
+guess on an abstract region: it is the computable residual of a
+concretely defined truncated sum. OBL-CC-2's plan (next patch)
+freezes exactly that computation.
+
+**Scale hygiene (R-CATEGORY, adopted as method):** the construction
+speaks only of (i) local per-Moment summation and (ii) the emergent
+horizon as the bound on arrivals — never of trans-horizon agreement.
+All downstream prose (flagship included) inherits this language.
