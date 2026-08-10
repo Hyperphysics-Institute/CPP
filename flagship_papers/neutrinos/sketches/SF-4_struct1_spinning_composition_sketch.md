@@ -114,3 +114,62 @@ No shell coupling is derived here. G1–G4 are exact geometry; S1 is
 ratified channel structure; S2–S3 are open physical claims with named
 closure paths and a falsifier. σ_ν, the mass formula, and all SF-4
 numerics are untouched.
+
+---
+
+## §5 — v0.2 (Patch 3044): S2 CONDITIONALLY CLOSED AT MODEL GRADE; the cost model SELECTED by consistency; an independent bound on k
+
+**The computation** (`code/3044_s2_threshold_selection.py`, 4/4;
+exact inequalities, no fits). Model inputs stated openly: (I1) driven
+entrainment — a spinner entrains the largest shell it can hold
+mutually coherent; (I2) a universal species-independent threshold τ
+with cost = τ·f(V), f tested across the three natural orders
+{V, V², V(V−1)/2}. Couplings from the ratified channel structure:
+C_e = 1 (E-only), C_q = 1+k (E and k-weighted S), C_pair = 2+k
+(strict additivity baseline).
+
+**R-S2a (conditional closure).** Under the PAIRWISE cost
+f = V(V−1)/2 — one coherence resource per mutual phase relation,
+which is SM-1's cage-cooperation clause made quantitative — a single
+universal threshold window exists at the O-2 candidate
+k* = 33+15√5 ≈ 66.541: τ ∈ (0.15527, 0.16667], producing EXACTLY the
+founder assignment: eDP → V=4 (capped below 12), qDP → V=12 (capped
+below 30). The eDP sits at its shell marginally at the window's top
+(6τ → 1 = C_e): "minimal stable shell" = marginal entrainment.
+
+**R-S2b (the cost model is SELECTED, not chosen).** The same joint
+assignment admits NO threshold under f = V² (window (0.0751, 0.0625]:
+empty) and NO threshold under f = V (window (2.251, 0.250]: empty).
+Among the three natural orders the pairwise form is the UNIQUE
+survivor. The mass formula's V² is thus NOT the entrainment cost —
+mass scaling and shell selection are different functions of V, and
+consistency forces the pairwise form for selection.
+
+**R-S2c (an independent cross-sector bound on k).** The window
+exists iff **0 < k < 71.5** (= 435/6 − 1, exact). The AP-4b constant
+is thereby BOUNDED ABOVE by neutrino shell selection — a constraint
+from a sector that never mentions k's own derivation. The O-2
+identification candidate 66.541 sits INSIDE (with ~7% headroom); the
+founder-recalled ~67 sits inside; a charged-lepton-like 206.8 would
+be EXCLUDED. Registered as cross-link **S2↔O-2**: any future k
+identification must land under 71.5 or S2's model dies.
+
+**R-S2d (the pair's requirement quantified).** Under strict
+additivity the full three-shell assignment survives only in a
+τ-sliver of width ~1.5% — fine-tuned. But ANY cooperative
+enhancement of the pair coupling by ≥ 5.8% (g ≥ 72.5/(2+k) ≈ 1.058)
+widens it to the full R-S2a window; alternatively the FACT-G4
+tetrad-position mode bypasses brute pairwise cost entirely. S3's
+burden is therefore WEAK and quantified: a ≥6% two-species
+cooperative effect, or the edge-midpoint anchoring mode.
+
+**Grade and residue.** S2 is CONDITIONALLY CLOSED at MODEL grade:
+conditional on (I1) and on the pairwise cost form — the latter now
+consistency-selected (R-S2b) and mechanism-motivated (SM-1), the
+former still a physical postulate awaiting an SF-6 arc-dynamics
+derivation. The acceptance test's first half is met at this grade:
+the composition picture reproduces (eDP→4, qDP→12) and hence
+**m₂/m₁ = (12/4)² = 9.00** with zero fitted parameters, contingent
+on the model inputs. Open residue: derive (I1) and the pairwise form
+from arc dynamics proper; close S3 by either route; panel review of
+the model grade (rides in the MEAS-3 disposition batch).
