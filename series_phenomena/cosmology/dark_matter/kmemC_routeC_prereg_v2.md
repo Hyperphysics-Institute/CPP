@@ -46,7 +46,7 @@ pattern exactly (artifact at Δ = 0, absent at Δ < 0).
 | **A0′** | isolation | 16 | 264 | 0.10 | 24 | −12 | 4 | **0** | 128 | matched Δ, DISTINCT geometry — the artifact must ALSO appear |
 | **A1** | isolation | 32 | 384 | 0.10 | 36 | −18 | 14 | **−12** | 128 | Route B d32 replicate at 2× pairs — must be ABSENT |
 | **A2** | isolation | 28 | 504 | 0.10 | 48 | −24 | 4 | **+6** | 128 | the POSITIVE side, never explored — must be ABSENT |
-| **AK** | margin | 28 | 104 | 0.60 | 48 | −24 | 4 | +6 | 512 | κ_sys ONLY (window 32 pts ≥ 8); NON-tail-inferential |
+| **AK** | margin | 28 | 104 | 0.60 | 48 | −24 | 4 | +6 | 512 | κ_sys ONLY (v2.1: 20 fit points ≥ 8, baseline 12); NON-tail-inferential |
 
 Design-class compliance (the frozen minority requirements, now in the
 correct variable): both signs of Δ present (A1 −12, A2 +6) ✓; two
@@ -84,8 +84,28 @@ non-tail-inferential; the isolation arms carry the tail question.
   NON-INTERPRETABLE and drops from inference (minority clause).
 - **S1-C tail** (isolation arms only): Route B S1 recipe verbatim.
 - **κ_sys** (AK primary; isolation arms reported non-gating): the
-  Patch 3051 estimator, per-arm t_post = t_step + 1.5·x_half + 6,
-  late window = final 48 Moments; BRANCH-FIT expected at AK.
+  Patch 3051 estimator, per-arm t_post = t_step + 1.5·x_half + 6 and
+  **stationary-baseline length = max(12, min(48, (T_END − t_post)//3))**
+  (v2.1 amendment, Patch 3057 — see the note below); the fit window
+  is [t_post, T_END − baseline). BRANCH-FIT expected at AK.
+
+  *v2.1 window amendment (Patch 3057; pre-launch, evidence-excluded
+  pilot legs only, no evidentiary leg run).* v2 §4 froze the
+  stationary baseline at a flat 48 Moments. On AK — deliberately the
+  SHORTEST arm (T_END = 104, chosen so the strong drive could not
+  move Δ) — a 48-Moment baseline starts at t = 56, BEFORE AK's own
+  post-transient boundary t_post = 72: the fit window inverted to
+  −16 points and the pilot crashed on an empty slice. (v2 §2's "32
+  pts" counted T_END − t_post without subtracting the baseline — an
+  arithmetic slip in the same family as the v1 exit-time error, and
+  caught the same way, by an executable gate rather than by reading.)
+  The amended rule is scale-free and leaves EVERY isolation arm
+  bit-identical at 48 (a0 270 fit points, a0′ 162, a1 258, a2 384)
+  while giving AK baseline 12 and 20 fit points (≥ the frozen
+  8-point BRANCH-FIT minimum). The eight AK pilot legs already
+  computed are unaffected — the defect was in the analysis window,
+  not the dynamics — and are reused; re-running `--pilot` skips them
+  and recomputes the projection.
 - **P-ISO:** S1-C SIGNIFICANT at BOTH Δ = 0 arms (A0 and A0′) AND
   c.w.z. at every valid Δ ≠ 0 arm.
 - **P-κ:** AK resolves on BRANCH-FIT with κ_sys^{U99} < 1.

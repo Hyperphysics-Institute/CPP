@@ -17,6 +17,10 @@ DATA = os.path.normpath(os.path.join(HERE, '../data/kmemC'))
 T_STEP = 24
 Z, NBOOT, BOOT_SEED, CHUNK = 2.576, 10000, 30530811, 4
 SUST_REF0, SNR_NOTE = 2.6e-3, 10.0
+def windows(x_half, T_END):
+    t_post = int(T_STEP + 1.5 * x_half) + 6
+    return t_post, max(12, min(48, (T_END - t_post) // 3))
+
 ARMS = [('a0','iso',24.0,384,0.10,128,0.0), ('a0p','iso',16.0,264,0.10,128,0.0),
         ('a1','iso',32.0,384,0.10,128,-12.0), ('a2','iso',28.0,504,0.10,128,6.0),
         ('ak','margin',28.0,104,0.60,512,6.0)]
@@ -58,14 +62,15 @@ def main():
     s3_pass, s1_sig, kappa = {}, {}, {}
     for tag, cls, x_half, T_END, beta, _N, dt in ARMS:
         band = SUST_REF0 * beta / 0.10
-        LATE = slice(T_END - 48, T_END)
+        t_post, base = windows(x_half, T_END)
+        LATE = slice(T_END - base, T_END)
         n = nmap[tag]
         used = [p for p in range(n) if p not in excl[tag]]
         m = len(used)
         S = np.stack([F[(p, 'step', tag)] for p in used])
         C = np.stack([F[(p, 'ctrl', tag)] for p in used])
         D = S - C
-        t_post = int(T_STEP + 1.5 * x_half) + 6
+
         # ---- S3-C sustained positive control (band recentred on drive)
         sust = np.abs(D[:, 60:100].mean() - D[:, LATE].mean(axis=1).mean())
         boots = np.array([np.abs(D[rng.integers(0, m, m), 60:100].mean()
@@ -90,7 +95,7 @@ def main():
         sig_t = boots2.std(0)
         def est(Dv_, sig_):
             W = []
-            for t in range(t_post, T_END - 48):
+            for t in range(t_post, T_END - base):
                 if abs(Dv_[t]) > 3 * sig_[t]: W.append(t)
                 else: break
             if len(W) >= 8:

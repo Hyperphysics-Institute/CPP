@@ -73,6 +73,15 @@ ARMS = [('a0',  'iso',    24.0, 384, 0.10, 128,   0.0),
 T_MAXPAIRS = max(a[5] for a in ARMS)
 SEEDS = np.random.default_rng(SEED_GEN).integers(10**6, 10**7, size=T_MAXPAIRS)
 
+def windows(x_half, T_END):
+    """Prereg v2.1 §4 (Patch 3057): per-arm post-transient boundary and
+    stationary-baseline length. baseline = max(12, min(48, (T_END -
+    t_post)//3)) — unchanged (48) on every isolation arm; fixes AK,
+    whose short run made a fixed 48-Moment baseline collide with its
+    own fit window."""
+    t_post = int(T_STEP + 1.5 * x_half) + 6
+    return t_post, max(12, min(48, (T_END - t_post) // 3))
+
 def geom(x_half, T_END, beta):
     L = beta * (T_END - T_STEP)
     return L, -L / 2.0, x_half - L / 2.0, L - 1.5 * x_half   # L, x0, margin, DT
@@ -180,9 +189,12 @@ def pilot(workers, n_target=None):
         c = np.array(json.load(open(leg_path(p, 'ctrl', 'ak', True)))['F'])
         D.append(s - c)
     D = np.stack(D)
-    t_post = int(T_STEP + 1.5 * ak['x_half'] + 6)
-    T_END = int(ak['T_END']); late = slice(T_END - 48, T_END)
-    w = slice(t_post, T_END - 48)
+    T_END = int(ak['T_END'])
+    t_post, base = windows(ak['x_half'], T_END)
+    late = slice(T_END - base, T_END)
+    w = slice(t_post, T_END - base)
+    print(f"[ak] windows: fit {t_post}..{T_END-base} ({T_END-base-t_post} "
+          f"points), stationary baseline final {base} Moments")
     Dm = D.mean(0)[w] - D.mean(0)[late].mean()
     sd_pair = D[:, w].std(0).mean()
     snr = float(np.max(np.abs(Dm)) / (sd_pair / np.sqrt(N)))
@@ -200,6 +212,10 @@ def pilot(workers, n_target=None):
               "LADDER EXHAUSTED -> STOP AND REPORT (panel).")
 
 def run_all(workers, max_legs, n_scale=1.0):
+    if not os.path.exists(_pilot_path()):
+        print("REFUSING TO RUN: no pilot_report.json — run and commit "
+              "`--pilot` first (prereg v2 §3.2).")
+        return
     cal = _load_cal(); rep = json.load(open(_pilot_path()))
     assert cal['all_ok'] and rep['status'] == 'OK', "prereqs not OK"
     tasks = []
