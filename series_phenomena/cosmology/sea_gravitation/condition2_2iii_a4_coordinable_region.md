@@ -163,3 +163,50 @@ derived parameter or a refuted construction — and the R_h-cutoff and
 rebound mechanisms may yet be one thing seen from two ends (the
 rebound as the microscopic realization whose IR regularization is
 the R_h mode cutoff): flagged for the panel, not claimed.
+
+---
+
+## §5 — v0.3 (Patch 3063): THE C2 BALL-UNIQUENESS CLAIM RETRACTED (GPT late return, verified correct); THE WIDTH THEOREM stated in its place — the derived invariant is the causal IR WIDTH 2R_h, exactly and shape-independently
+
+**The error (GPT's finding, verified `scripts/3063_width_invariant.py`):**
+maximal mutually coordinable sets are maximal diameter-2χ_h sets,
+and those are NOT uniquely balls — the Reuleaux/constant-width class
+provides explicit distinct maximal cliques (numerically confirmed:
+a width-2χ_h Reuleaux body passes every pairwise check, is maximal,
+and is not a ball). C2's "the maximal mutually coordinable sets are
+comoving balls of RADIUS χ_h" is RETRACTED as a uniqueness claim.
+
+**What survives, uniquely (the corrected theorem):** by the
+classical completeness theorem, the maximal-by-inclusion sets of
+diameter D are EXACTLY the constant-width-D bodies. Therefore
+**every maximal clique has constant width 2χ_h — the WIDTH is the
+clique-shape-independent invariant, and the proper causal IR width
+2R_h is derived exactly.** The shape (ball vs Meissner-class) is
+NOT determined by the coordinability relation alone and enters only
+the spectral normalization, at bounded O(1) (Blaschke: the ball
+maximizes volume at fixed width) — i.e., inside the OBL-CC-2
+coefficient, not the scale. GPT's repair route (2) is thereby
+adopted as the default: the IR regulator is formulated from the
+invariant width; route (1) (an isotropy/class-equivalence selection
+principle for the ball) remains open as a possible sharpening.
+
+**The physics fork underneath (to the founder, in pictures):** the
+mutuality (clique) requirement itself now needs its grounding made
+explicit, because the alternative — CHAINED agreement (A agrees
+with B, B with C, therefore A with C through B) — would make the
+class unbounded and the residual ZERO. Whether mutuality binds
+depends on WHAT is being agreed: a single scalar LEVEL (equality is
+transitive → chains suffice → the construction dies) or a
+CONFIGURATION/pattern (orientation- and phase-rich register
+content, where A–B reconciliation at one meeting event and B–C at
+another need not compose into A–C agreement → mutual meeting
+required → the finite width stands). Registered as the
+**AGREEMENT-OBJECT FORK**; founder ruling requested.
+
+**Standing after this correction:** derived, exactly: the causal IR
+width 2R_h (and the particle-horizon exclusion, and the F-COST-1
+dissolution — untouched). Open: the agreement-object grounding of
+mutuality (the fork above); the shape/spectral normalization
+(inside OBL-CC-2); the branch (external). The 3060 confrontation's
+numbers are unchanged (they used L = R_h; the width reformulation
+feeds the same magnitude through the coefficient bookkeeping).
