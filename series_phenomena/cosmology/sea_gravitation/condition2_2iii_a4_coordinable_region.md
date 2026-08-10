@@ -102,3 +102,64 @@ coefficient-mapping + data confrontation patch (F-CLI-1); (ii) the
 flagship + THEO + swarm entry. Founder physical-picture ratification
 of the construction is requested (the §1 definitions are physics, not
 procedure — his lane).
+
+---
+
+## §4 — v0.2 (Patch 3059): RE-ATTRIBUTED under the founder's ruling — the mathematics survives intact; the mechanism simplifies; a new founder mechanism joins the discrimination
+
+**The founder's correction** (verbatim at `founders_voice/
+founder_ruling_nexus_role_and_zbw_rebound_de_2026-08-10.md`): A4 is
+the SYNCHRONIZER of the PCD Moment cycle, not a coherence-enforcer;
+causal disconnection is kinematic (the expansion increment between
+two points exceeding signal propagation); dark energy is emergent
+from the automaton + synchronization + displacement rules.
+
+**What the correction changes — the attribution, and for the
+better.** The June fork (1163/1164: "A3′ retarded vs A4 global") was
+a FALSE DICHOTOMY. Step C's error was never that it used the
+retarded primitive — it was the QUANTIFIER: it asked what can
+equilibrate "within a Hubble time" (a rate criterion → R_H,
+dynamically dead) instead of where reconciliation can EVER occur.
+Under the founder's picture, the maintenance of one vacuum ground
+level is ordinary local ZBW equilibration running on A4's
+synchronized clock, reconciling any two patches wherever signals
+from both can ever meet — and "wherever signals can ever meet" is
+EXACTLY the relation J⁺(P,t) ∩ J⁺(Q,t) ≠ ∅ of §1. Every §2 result
+therefore survives verbatim — C1 (d ≤ 2χ_h), C2 (the clique ball,
+L = R_h exactly), the particle-horizon exclusion, C3 (R-BRANCH), C4
+(c_Li = 1 / F-CLI-1) — because they are causal-structure kinematics,
+and the founder's "increment of expansion exceeding signal
+propagation" IS that kinematics in his own words, sharpened only by
+the ever-quantifier (permanent disconnection = the event horizon;
+instantaneous recession > c = the Hubble sphere, the scale the
+dynamics already ruled out). What is DROPPED: the enforcement
+language, the "A4-by-elimination" argument of §0(3), and the
+F-COST-1 machinery's A4-a-causality crutch (no longer needed:
+nothing global acts; the partition is pure bookkeeping over
+kinematics). The construction is now STRICTLY WEAKER in assumptions
+and identical in output — emergent, as the founder ruled: automaton
++ synchronization + displacement, nothing else.
+
+**A4's retained (and necessary) role:** synchronization is what
+makes "the same Absolute Moment, lattice-wide" — and hence a
+well-defined per-Moment vacuum class — meaningful at all.
+Infrastructure, not agent. The registry's minimal A4 wording is, in
+retrospect, closer to the founder's picture than the 3058 §0/§1
+enforcement reading was; corrected here with the anti-erasure trail
+intact (§0–§3 stand as the frozen 3058 snapshot).
+
+**The founder's new mechanism (M-ZBW-REBOUND) and the three-way
+discrimination.** The rebound-lengthening mechanism — dilution ⇒
+longer per-Moment ZBW rebound ⇒ accelerating expansion — is a
+substrate SOURCE for the residual itself, and its naive quantitative
+reading (increment ∝ spacing ⇒ ȧ ∝ a) is a pure de Sitter term:
+**w = −1 exactly** (verified, `scripts/3059_zbw_rebound_desitter.py`).
+The data confrontation (next patch) now discriminates THREE
+candidate readings: the Step-D fit (c ≈ 0.8, w_now ≈ −1.02), the
+R_h-cutoff derivation (c = 1, w_now ≈ −0.885 freezing), and the
+founder mechanism (w = −1 exact). These are distinguishable at
+current survey precision; whichever survives, the arc gains either a
+derived parameter or a refuted construction — and the R_h-cutoff and
+rebound mechanisms may yet be one thing seen from two ends (the
+rebound as the microscopic realization whose IR regularization is
+the R_h mode cutoff): flagged for the panel, not claimed.
