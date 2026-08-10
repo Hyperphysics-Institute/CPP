@@ -1,5 +1,16 @@
 \documentclass[12pt]{article}
 
+% CHANGELOG:
+%   v3   15 Mar 2026 — prior shipped text.
+%   v3.2  8 Aug 2026 — (Patch 3033, O-7 at-enactment sweep) note
+%     status converted: AP-4 founder-ratified Patch 3032.
+%   v3.1  8 Aug 2026 — (Patch 3030, F-SW-7 R-C fix pass) glossary
+%     reconciliation note added to the LSP + DI-bit entries: payload =
+%     {origin address, E, S} per AP-4a; stress magnitude/direction =
+%     receiver-computed registers per AP-4d (panel-endorsed,
+%     ratification pending); the four-quantity LSP statement reads
+%     substantially true as written. No derivation touched.
+
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{geometry}
 \usepackage{hyperref}
@@ -46,7 +57,7 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{15 March 2026 --- Version~3}
+\date{8 August 2026 --- Version~3.2}
 
 \begin{document}
 \maketitle
@@ -231,6 +242,25 @@ directly to Section~\ref{sec:intro}.}
   $|\SSV|_{\rm abs}$ component. The DI-bit is the SR limit of the
   LSP in flat spacetime. The term is retained in the SR companions
   for historical continuity.
+
+  \emph{Reconciliation note (v3.1, Patch 3030) for this and the LSP
+  entry above.} Under the AP-4 payload respecification (panel-endorsed
+  at CONV-013; founder-ratified Patch 3032), the DI-bit
+  payload is \{origin address, $\mathbf{E}$, $\mathbf{S}$\} — a static
+  snapshot imprinted by the origin GP — and the receiver extracts
+  $\SSV_{\rm net} = \mathbf{E}+\mathbf{S}$ and computes
+  $|\SSV|_{\rm abs}$ per AP-4b. The LSP's four components read
+  accordingly: $(\mathbf{x}_{\rm GP}, t_{\rm abs})$ is AP-4a's origin
+  address, and the stress magnitude and direction are the
+  \emph{receiver-computed} registers (AP-4d), reconstructed each Moment
+  from arriving payloads rather than riding as additional messenger
+  content. In AP-4's own words, the payload is ``an LSP in miniature'':
+  the four-quantity statement of this paper is substantially true as
+  written, with the carriage mechanism now made precise. The
+  ``predecessor carrying only the scalar'' phrasing above is the SR-era
+  minimal-content reading that AP-4a supersedes. No derivation in this
+  paper consumes the carriage mechanism; the weak-field results are
+  unchanged.
 
 \item[Atemporal Nexus:] The timeless, non-local synchronization
   substrate that advances every CP and GP simultaneously at each

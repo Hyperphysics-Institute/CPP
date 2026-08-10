@@ -72,7 +72,7 @@
 \title{\textbf{SF-8: Emergent Electrostatics and the Bonded ZBW Sea}\\[6pt]
 {\large Coulomb's Law Measured Out of the Moment Rule}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\Large \textbf{Version 0.1 --- 30 July 2026}}}
+{\Large \textbf{Version 0.2 --- 9 August 2026 (F-SW-8 C21/AP-4 reconciliation; v0.1 30 Jul 2026)}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -277,13 +277,24 @@ neighbours and receives those emitted toward it. The emission is
 \emph{synchronous}: all points emit on the same tick and all arrivals are
 tallied before any displacement occurs.
 
-\begin{remark}[Bit content closure --- rule C21]
-A DI-bit carries \textbf{charge, polarity, and origin, and nothing else}.
-It carries no distance, no field strength, no force, no potential, and no
-orientational or rotational state. This closure is not a simplifying
-convenience; it is the reason the result below is a measurement rather
-than a restatement. A bit that carried field strength would be carrying
-Coulomb's law.
+\begin{remark}[Bit content closure --- rule C21, reconciled to AP-4 (v0.2, Patch 3039)]
+As originally ratified (C21), a DI-bit carried \textbf{charge, polarity,
+and origin, and nothing else}. Under the ratified payload
+respecification AP-4a (founder-ratified Patch 3032, superseding the
+AP-2/C21 enumeration) the content is \{origin address, electric vector
+$\mathbf{E}$, strong vector $\mathbf{S}$\} --- a static snapshot of the
+\emph{origin} GP's computed registers, with species identified by slot
+rather than flag. The closure's load-bearing point SURVIVES intact: the
+payload still carries no receiver-side distance, no field strength at
+the receiver, no force, no potential, and no per-messenger phase or
+orientational dynamics --- $\mathbf{E}$ and $\mathbf{S}$ are frozen
+images of the \emph{source} registers, and Coulomb structure still
+emerges only from receiver-side tallying of arrivals under geometric
+dilution. A bit that carried the receiver's field strength would be
+carrying Coulomb's law; the AP-4 payload does not. The measured results
+of this paper consumed only count-like magnitude and origin-directed
+steering, both preserved verbatim by AP-4a; they stand unchanged under
+the respecification.
 \end{remark}
 
 \subsection{The displacement law}

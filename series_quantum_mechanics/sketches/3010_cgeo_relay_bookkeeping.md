@@ -1,5 +1,18 @@
 # c_geo COMPUTED — OPEN-QMRG-ETA CLOSURE CANDIDATE (BOOKKEEPING GRADE, TOUCHPOINT-BATCHABLE)
 
+**GRADE LABEL (v1.1, Patch 3038 — the CONV-013 AUX-1 [GPT]
+amendment executed): every result in this record is
+LATTICE-BOOKKEEPING GRADE — an identity/computation of the ratified
+accounting clauses (A3' universal Moment cadence; I-3 per-transit
+quantum; Version-B relay multiplicity). It is NOT a MICROSCOPIC
+LATTICE DERIVATION of eta from CP-level dynamics, and no citation of
+this record may claim the microscopic grade. The distinction is
+load-bearing for the AUX-1 closure question and is maintained
+verbatim in the ALL-MODES lemma record
+(`code/3038_eta_mode_coverage_extension.py` header) and the AUX-3
+discharge record.**
+
+
 **Patch 3010 (4 Aug 2026).** Completes OPEN-QMRG-ETA's remaining
 scope (the value; mode-independence was derived at 3009). Verify:
 `series_quantum_mechanics/code/3010_cgeo_relay_multiplicity_check.py`

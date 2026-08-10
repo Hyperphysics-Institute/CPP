@@ -1,5 +1,8 @@
 % ============================================================
 % QM-6: Capstone — Four Primitives to Full QM
+% Version 2.1 — 8 August 2026 (Patch 3033, O-7 sweep: primitives-list
+%   DI-bit content updated to the AP-4 payload, ratified 3032; reset
+%   pinned to Moment level per AP-4c; no-phase preserved.)
 % Version 2.0 — 4 August 2026
 %
 % CHANGELOG:
@@ -121,8 +124,12 @@ This paper summarises what CPP has achieved for quantum mechanics. Starting from
   executing the local deterministic Perceive--Compute--Displace
   rules); the Grid Points (fixed lattice sites that compute, hold,
   and per-Moment refresh state); and the \textbf{DI-bit messengers}
-  --- stateless couriers with content \{charge, type, origin
-  address\} (AP-2) that reset at every hop.  DI-bits carry no phase.
+  --- stateless couriers with content \{origin address, electric
+  vector E, strong vector S\} (AP-4, ratified Patch 3032, superseding
+  AP-2's enumeration) that reset at Moment-level delivery (AP-4c pins
+  the earlier ``reset per hop'' to the origin$\to$PSR reading).
+  DI-bits carry no phase (preserved from AP-2; F-AP2-1 restated as
+  F-AP4-1).
 
 \item \textbf{The Grid-Point pattern state (A3$'$)}: each Grid Point
   holds two dynamical registers refreshed every Moment from

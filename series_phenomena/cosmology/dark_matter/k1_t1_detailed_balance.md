@@ -8,6 +8,8 @@ ESTABLISHED-AT-MECHANISM-LEVEL, PANEL-PENDING per charter §3
 (conservative outcome → combined completed-package review). No
 value of any open quantity is minted; toy units only.**
 
+**CHANGELOG — v1.4 (Patch 3035): CONV-013 Q2 enacted obligation executed (discharge NOT UPHELD at 2/2/1; convergent [DS]+[COP]+[GPT wording]). Three items: (1) the closure premise CL is now stated as STATISTICAL at current grade — the operative theorem conclusion is the zero-in-mean with O(1/√N) relative fluctuation; the v1.3 pointwise-dichotomy argument is DEMOTED to the named upgrade hypothesis H-PW (exact statement in the CL section), no longer the operative basis; (2) the exact upgrade hypothesis H-PW is exposed, with its instrument-grade test named (ensemble mean tail = ᾱ > 0); (3) NEW Lemma PA (partial-anchoring bound) supplies the formal bound the panel required: composite residual ≤ C_p·N·ᾱ·S_max, exact zero at ᾱ=0, O(1/√N) relative under statistical closure with independence/mixing load-bearing (verify `code/3035_t1_partial_anchoring_bound_check.py`, 4/4 incl. correlated-residual negative control). Physical grounding registered: the founder's partner-switching ruling (`founders_voice/founder_ruling_partner_switching_realization_class_2026-08-09.md`) — micro-identities exchange chaotically beneath conserved pattern-level totals, so the statistical grade is the physically natural one, not a retreat. Theorem grade otherwise unchanged.**
+
 **CHANGELOG — v1.3 (Patch 2990): closure-scope amendment per DeepSeek's SUSTAINED CONV-012 Q2 AMEND (corrected record 2986; verbatim at `reviews/conv012_returns/seat5_deepseek.md`): the closure premise s_K = s_0 is now stated as a NAMED premise (CL) with its actual basis unpacked — pointwise closure rests on the M1/Version-B anchored/unanchored DICHOTOMY (structural, mechanism grade), NOT on M1's stationarity alone, which by itself licenses only statistical closure (DeepSeek's point, conceded in its valid scope). A statistical-closure fallback is added: under statistical closure the telescoping conclusion survives in ensemble mean with O(1/√N) relative fluctuation and no systematic drag. A pointwise-closure failure with nonzero MEAN residual = a DP-level memory signature = exactly what the running MEAS-2 ensemble adjudicates (RESOLVED-FALSIFIER branch). Theorem content and grade unchanged; the premise's provenance is now the letter of the lemma.**
 
 **CHANGELOG — v1.2 (Patch 2980): CONV-012 Q2 wording strengthening — per-step reciprocity stated as an exact event-level property of the registered update (Copilot adoption, 2979). No content change.**
@@ -117,6 +119,13 @@ its co-moving pattern is a conservative fixed point of the
 mechanism: zero net energy drawn, zero net momentum leaked, no
 wake; coasting persists indefinitely. Inertia enters only when v
 changes (T-2).
+
+*Grade note (v1.4, CONV-013 Q2 enacted):* clauses (i)–(iii) hold at
+the grade the closure premise CL supplies. At current grade CL is
+STATISTICAL, so the operative reading of "exactly"/"zero" throughout
+is zero-in-ensemble-mean with O(1/√N) relative fluctuation and no
+systematic drag (Lemma PA); the exact-per-traversal reading is
+conditional on the exposed upgrade hypothesis H-PW (CL section).
 
 ## §3 — PROOF
 
@@ -230,7 +239,11 @@ problem); the magnitude of the establishment cost (T-2, the
 mass-energy link); the bound-state ring instance and the K1
 stiffness (T-3, the 7th derivation). The falsifier branch frozen at
 charter §3 (T-1 failure = ledger does not balance) is NOT taken:
-outcome is conservative-class.
+outcome is conservative-class. Not established (v1.4): pointwise
+closure per traversal — held as H-PW with its instrument-grade test
+(ensemble mean tail = ᾱ > 0, Lemma PA) in flight on the K-MEM
+campaigns; the theorem's operative conclusion at current grade is
+the statistical zero-in-mean.
 
 ## §7 — LEDGER
 
@@ -264,7 +277,9 @@ letter of the theorem.
 interaction with the passing pattern is a finite state sequence
 s_0 → s_1 → … → s_K in the DP's own state space, where s_0 is
 unpolarized rest and the traversal CLOSES: s_K = s_0 — **premise CL**
-(v1.3; basis unpacked below, DeepSeek CONV-012 Q2 sustained amend). At each
+(v1.4: STATISTICAL at current grade — s_K = s_0 in distribution under the
+steady state; pointwise closure is the exposed upgrade hypothesis H-PW; see
+the CL section below, CONV-013 Q2 enacted). At each
 step the interaction is a PAIR exchange: the impulse delivered to
 the composite at step k is the negative of the DP's momentum change
 at step k (microscopic reciprocity, §R3), and likewise for energy.
@@ -310,53 +325,119 @@ M1's grade (mechanism level; its instrument-grade test is the W-4
 ensemble via the B-1 bridge's L-4 leg). The condition is inherited,
 not laundered.
 
-**Closure premise CL — pointwise basis, statistical fallback, and the
-measurement connection (v1.3, Patch 2990).** DeepSeek's sustained
-amend states, correctly, that M1's fixed-point/attraction statement
-BY ITSELF is a stationarity statement and licenses only STATISTICAL
-closure of traversals, not pointwise periodicity. Conceded: the v1.1
-citation "by the M1/Version-B structure" compressed two different
-things, and if the lemma's closure rested on stationarity alone the
-pointwise claim would be unproven. It does not. The pointwise basis
-is the FINER structural dichotomy inside M1's proof, not its
-stationarity conclusion: (i) anchored content is the SOURCE'S
-per-Moment imprint — it is the pattern's state, carried by whichever
-GPs the pattern currently occupies, and is never a persistent
-attribute of the transited Sea DP; when the pattern has passed, the
-source no longer imprints that DP, so the DP retains no anchored
-content BY CONSTRUCTION, not by averaging; (ii) unanchored content
-receives no sustaining imprint and departs at c with no return and
-no back-scatter (Version B outward-only volley) — it leaves the DP's
-state, not merely the ensemble mean. Exhaustiveness of the
-dichotomy (T-3 §6, mechanism grade) then forces s_K = unpolarized
-rest = s_0 for EVERY traversal — pointwise, at mechanism grade.
+**Closure premise CL — STATISTICAL at current grade (v1.4, Patch
+3035; the CONV-013 Q2 ruling executed).** The panel did not uphold
+the v1.3 pointwise-basis discharge (2 UPHOLD / 2 AMEND / 1
+INSUFFICIENT — no class carried). Enacted here per the convergent
+[DS]+[COP] obligation: **the closure premise CL is STATISTICAL at
+the theorem's current grade.** Operative statement: s_K = s_0 in
+distribution under the steady state, whence the telescoping identity
+holds in ensemble mean — Σ_k E[Δp_k^{→comp}] = −E[p_DP(s_K) −
+p_DP(s_0)] = 0, and likewise for energy — and the composite force
+(the N-DP population sum) vanishes in mean with relative fluctuation
+O(1/√N) (the FACT G1 shot-noise class): **no systematic drag.** That
+zero-in-mean-with-1/√N is the theorem's operative conclusion as of
+v1.4.
 
-**Statistical fallback (theorem-preserving weakening).** If CL is
-weakened to statistical closure — s_K = s_0 in distribution under
-the steady state — the telescoping identity holds in ensemble mean:
-Σ_k E[Δp_k^{→comp}] = −E[p_DP(s_K) − p_DP(s_0)] = 0, and likewise
-for energy. The composite force is the sum over the Sea DP
-population, i.e., N times the empirical mean of per-DP residuals;
-under statistical closure this vanishes in mean with relative
-fluctuation O(1/√N) (the same suppression class as FACT G1's
-shot-noise remark) — no systematic drag in either reading. Pointwise
-CL gives the exact zero; statistical CL gives the zero-in-mean. The
-theorem's operative conclusion (no net force on the composite at
-constant v) survives under both, at the grade each supplies.
+**Physical grounding of the statistical grade (founder ruling, Patch
+3035).** The statistical statement is not a retreat from an
+unproven pointwise claim; it is the physically natural grade. Per
+the founder's partner-switching ruling
+(`founders_voice/founder_ruling_partner_switching_realization_class_2026-08-09.md`):
+opposite-charge Sea-DP CPs bind at random times to the unpaired
+mass-composing CPs, the DP's other CP becoming the new unpaired CP —
+micro-identities exchange chaotically while the conserved totals
+(mass, kinetic energy, momentum) are stored at pattern level. Under
+that mechanism "THIS DP returns to ITS rest state" is not even a
+stable referent; the invariant object is the population state, and
+closure of the population state IS statistical closure. (Consonant,
+at the measurement level, with the Patch 3034 D-KAPPA findings:
+micro-chaos within a realization class, response decorrelation to
+the floor.)
 
-**What would falsify CL — and what is measuring it right now.** A
-pointwise-closure failure with nonzero MEAN residual is, by
-definition, persistent post-traversal DP state — a DP-level
-displacement-memory signature. That is precisely the object the
-K1-MEMORY arc investigates and precisely what the executing MEAS-2
-ensemble tests: a resolved memory tail lands in the
-RESOLVED-FALSIFIER branch (contradicting T-3 §6 and the B-1 L-4
-support leg — and, via the same structure, B-1 L-6's contraction).
-DeepSeek's scope item is therefore not merely accommodated in
-wording: it names the exact empirical question the running campaign
-adjudicates, and the theorem's mechanism-level grade already prices
-that in. Nothing is laundered; CL's instrument-grade test is in
-flight.
+**The upgrade hypothesis H-PW (exposed exactly, per the enacted
+obligation).** The v1.3 pointwise argument survives as a named
+hypothesis, no longer the operative basis:
+
+  **H-PW:** for every traversal, the post-traversal anchored residual
+  vanishes per-DP — α_i = 0 for all i in the sense of Lemma PA below.
+  Equivalently: the anchored/unanchored dichotomy (T-3 §6) is
+  exhaustive AT EVENT LEVEL — (i) anchored content is the source's
+  per-Moment imprint, never a persistent attribute of the transited
+  DP, so it ends BY CONSTRUCTION when the pattern passes; (ii)
+  unanchored content departs at c with no return and no back-scatter
+  (Version B), leaving the DP's state within τ_b; and (iii) no third
+  content class exists beyond the ≤ τ_b handoff window.
+
+  Under H-PW, CL upgrades from statistical to pointwise and the
+  telescoped zero is exact per traversal. H-PW's instrument-grade
+  test is the ensemble mean tail: a resolved nonzero-mean
+  post-traversal residual is precisely ᾱ > 0 (Lemma PA), which is
+  what the K-MEM ensemble campaigns measure — H-PW is exactly as
+  strong as the no-mean-tail outcome, no stronger and no weaker.
+
+**Lemma PA (the partial-anchoring bound; the formal lemma the panel
+required).** Decompose each Sea DP's post-traversal deviation
+s_K^{(i)} − s_0 = a_i + u_i, where a_i is the residual ANCHORED
+component (‖a_i‖ ≤ α_i·S_max with α_i ∈ [0,1] the DP's anchoring
+fraction and S_max the per-DP polarization scale) and u_i the
+residual UNANCHORED component. Then:
+
+  (PA-0) u_i = 0 for K ≥ transit + τ_b, exactly, by Version B finite
+  support (departing content is outside the DP's state after τ_b —
+  this leg is structural and is NOT the contested one).
+  (PA-1) the composite telescoped residual obeys
+  |F_res| ≤ C_p · Σ_i ‖a_i‖ ≤ C_p · N · ᾱ · S_max, with
+  ᾱ = (1/N)Σα_i — linear in the mean anchoring fraction, tight in
+  the adversarial (aligned-residual) direction.
+  (PA-2) ᾱ = 0 (H-PW) ⟹ F_res = 0 exactly: the pointwise reading is
+  the ᾱ → 0 limit of the same object, not a separate theorem.
+  (PA-3) statistical closure (E[a_i] = 0 with independent — or, per
+  the founder mechanism, partner-switching-mixed — residuals) ⟹
+  |F_res| = O(√N) absolutely, i.e. O(1/√N) relative to the
+  N-extensive force scale; INDEPENDENCE/MIXING IS LOAD-BEARING:
+  fully correlated zero-mean residuals scale as N and break the
+  suppression.
+
+  *Proof.* (PA-0) is the L-4/T-3 finite-support structure restated
+  at the DP-state level. (PA-1): triangle inequality on the
+  telescoped sum, then ‖a_i‖ ≤ α_i S_max termwise. (PA-2):
+  immediate. (PA-3): variance additivity for independent zero-mean
+  terms; the correlated case sums coherently. ∎
+  *Verify:* `code/3035_t1_partial_anchoring_bound_check.py` — 4/4:
+  bound linear and tight adversarially; exact zero at ᾱ=0; measured
+  N^0.519 scaling under independence (target 0.5); NEGATIVE CONTROL
+  correlated residuals at N^1.000 — the suppression is not
+  automatic. Toy units; nothing minted.
+
+**Exhaustive-partition status (the "or" branch of the obligation).**
+The obligation permitted a formal lemma OR an explicit exhaustive
+partition construction; v1.4 supplies the LEMMA, and records the
+partition honestly: the per-Moment content classes are
+(1) currently-imprinted anchored, (2) departing unanchored, and
+(3) the handoff window (content whose imprint ceased ≤ τ_b Moments
+ago, in flight). Classes (1)–(3) are exhaustive at mechanism grade
+with class (3) transient by construction; the CONTESTED step —
+that class (3) empties completely and no residual re-anchors — is
+exactly H-PW, and v1.4 declines to assert it above its grade. The
+partition is thus the STRUCTURE of the upgrade hypothesis, not an
+independent proof of it.
+
+**What would falsify CL — and what is measuring it right now (v1.4
+status).** A nonzero-MEAN post-traversal residual is, by Lemma PA,
+exactly ᾱ > 0 — a DP-level displacement-memory signature that
+refutes H-PW and quantifies the statistical theorem's residual scale
+in the same stroke. The MEAS-2 ensemble put this under adjudication
+(CONV-013 Q3(a): FALSIFIER-CANDIDATE UNDER MANDATORY DISPOSITION;
+the frozen Patch 3026 disposition enacted DISP-C MIXED — the tail
+structure sign-inverts in the doubled domain, T-D-EXPECTATION-
+DEFECT); the MEAS-3 supplementary ensemble (Route B, executing on
+dedicated hardware at this patch) is the disposition vehicle. The
+theorem's v1.4 grade already prices the open question in: the
+operative conclusion is the statistical zero-in-mean, H-PW rides as
+the exposed upgrade, and the D-KAPPA/L-6 contraction margin attaches
+to the same disposition round (Patch 3034 record §5) — one
+measurement, three lemma-level consequences, no laundering.
 
 **Wording strengthening (v1.2, Patch 2980, CONV-012 Q2 adoption).** "Per-step
 reciprocity" in this lemma is an EXACT event-level property of the registered

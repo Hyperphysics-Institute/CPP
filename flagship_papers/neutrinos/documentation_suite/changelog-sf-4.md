@@ -1186,3 +1186,33 @@ CHANGELOG:
     sections; v1.0 SHIPs after Thomas review and AI review
     passes per SS-9 methodology.
 ============================================================
+
+============================================================
+v3.1 (9 Aug 2026, Patch 3041) — PICTURE A BEARER RELOCATION
+under the ratified AP-4 automaton (founder-ratified Patch 3032)
+and the founder ruling of Patch 3041
+(founders_voice/founder_ruling_neutrino_spinning_dp_2026-08-09.md).
+RES-SF4-AP4-1 (registered 3039, analyzed 3040) CLOSED-BY-RULING:
+the send-side 1/z is the MODE'S OWN configuration-orientation
+register (the spinning-DP unit's instantaneous orientation), not
+an emission selection — messenger emission is deterministic and
+omnidirectional per AP-4c; the constituent CPs follow the standard
+PCD automaton (founder universality clause). Edits: Story and
+Counting paragraphs re-worded to the two-register bearer;
+sub-claim (c) extended — ONE transitive-action lemma now closes
+BOTH 1/z marginals (mode-side + substrate-side); walk-channel
+intro and the phase-transmission hedge given ruling/AP-4
+citations. sigma_nu = z^{-10} and every numerical result
+UNCHANGED. The closure sketch is a frozen Tier-4 capture, not
+edited (its psi = sqrt(rho) e^{i phi} aside flagged in the 3040
+record). Title version marker advanced 1.1 -> 3.1 to match the
+body's own v2.0/v3.0 arc references (marker had lagged the
+changelog). NEW founder constitutive content (flavor-by-
+composition; 207x; counterspinning-ZBW-DP beta-decay narrative)
+registered but NOT folded in — reconciliation item
+RES-SF4-STRUCT-1 with phenomenology check
+code/3041_nu_mass_ratio_check.py (3/3: 207x consistent, sharp
+prediction m1 = 41.7 ueV / m2 = 8.61 meV; naive tau-scaling
+excluded 8.4x, consonant with the pair-structure claim; target
+m3/m2 = 5.82).
+============================================================

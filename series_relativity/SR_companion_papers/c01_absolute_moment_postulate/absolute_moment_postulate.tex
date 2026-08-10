@@ -1,5 +1,16 @@
 \documentclass[12pt]{article}
 
+% CHANGELOG:
+%   v3   12 Mar 2026 — prior shipped text.
+%   v3.2  8 Aug 2026 — (Patch 3033, O-7 at-enactment sweep) note
+%     status converted: AP-4 founder-ratified Patch 3032.
+%   v3.1  8 Aug 2026 — (Patch 3030, F-SW-7 O-7 sweep) reconciliation
+%     note added under the DI-bit definition: (x,y,z,t_abs) = AP-4a's
+%     origin-address clause; type-implicit SSV reading superseded by
+%     AP-4a's explicit E/S slots (panel-endorsed, ratification pending);
+%     content-minimal spirit (no per-messenger phase) unchanged. No
+%     derivation touched.
+
 % ── packages ──────────────────────────────────────────────────────────────────
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{geometry}
@@ -29,7 +40,7 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{12 March 2026 --- Version~3}
+\date{8 August 2026 --- Version~3.2}
 
 \begin{document}
 \maketitle
@@ -158,6 +169,22 @@ unique identifier for every emitted signal, enabling each GP's register
 to enforce the no-double-counting rule (Section~\ref{sec:4d}) without
 circularity.
 \end{definition}
+
+\noindent\emph{Reconciliation note (v3.1, Patch 3030).} The payload
+respecification AP-4a (panel-endorsed at CONV-013; founder-ratified
+Patch 3032) states the DI-bit content as \{origin address,
+electric vector $\mathbf{E}$, strong vector $\mathbf{S}$\}, imprinted by
+the originating GP as a static snapshot of its computed registers. This
+definition reconciles as follows: the address-time vector
+$(x,y,z,t_{\rm abs})$ above is precisely AP-4a's \emph{origin address}
+(spatial address plus emission tick), and its unique-identifier role
+survives unchanged; the type-implicit SSV reading (``not an independent
+variable field'') is the SR-era minimal-content formulation that AP-4a
+supersedes with explicit aggregated $\mathbf{E}$/$\mathbf{S}$ slots.
+Both formulations are content-minimal in the sense that matters here:
+neither carries an oscillator, an evolving degree of freedom, or a
+per-messenger phase variable, so every derivation in this paper is
+unaffected by the respecification.
 
 \begin{remark}[Absolute time as axiomatic postulate]
 The component $t_{\rm abs}$ is a \emph{primitive postulate}, not derived from

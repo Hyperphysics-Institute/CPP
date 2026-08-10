@@ -5,6 +5,18 @@
 % via Space Stress Vector (SSV) in the Dipole Sea” (Version 16)
 % Version 2 — Revised with lensing downgrade, Z0 flag, and magnetic component
 % 15 March 2026
+% Version 2.2 — 8 August 2026 (Patch 3033, O-7 at-enactment sweep):
+%   reconciliation-remark status converted, AP-4 founder-ratified 3032.
+% Version 2.1 — 8 August 2026 (Patch 3030, F-SW-7 R-B fix pass): phase
+%   attribution relocated from DI-bit messengers to GP registers per the
+%   ratified no-phase-on-messenger ontology (AP-2 / FI-QMRG-1; AP-4a
+%   panel-endorsed, ratification pending); five sites revised (abstract,
+%   Prop. constructive-summation, Perceive/Compute items, coherence
+%   remark) + anti-erasure reconciliation remark added. Mathematics and
+%   the E = hbar*nu_C identification untouched. Hygiene: removed the
+%   illegal \newcommand{\hbar}{\hbar} preamble line (pre-existing
+%   compile failure on the standard toolchain; flagged for the ClearPC
+%   recompile diff).
 % ==================================================================
 
 \documentclass[12pt]{article}
@@ -30,7 +42,6 @@
 \newcommand{\DP}{\text{DP}}
 \newcommand{\CP}{\text{CP}}
 \newcommand{\GP}{\text{GP}}
-\newcommand{\hbar}{\hbar}
 
 \title{\textbf{Dipole Chain Patterns as the Substrate of\\
 Mass and Electromagnetic Radiation in CPP}\\[6pt]
@@ -42,7 +53,7 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{15 March 2026 --- Version~2}
+\date{8 August 2026 --- Version~2.2}
 
 \begin{document}
 \maketitle
@@ -50,7 +61,7 @@ Hyperphysics Institute\\
 \noindent\textbf{Keywords:} Conscious Point Physics, ZDC chain, dipole chain, photon substrate, inertial mass substrate, standing wave, traveling wave, constructive summation propagation, emission impedance, absorption resonance, \(E = \hbar\nu_C\) unification.
 
 \begin{abstract}
-We show that both inertial mass and electromagnetic radiation share a single microscopic substrate: coherent Zero-point Dipole chain (ZDC) patterns in the Dipole Sea, oscillating at the Compton scale. The distinction between mass and radiation is purely a boundary condition: mass is a standing ZDC pattern pinned by an unpaired CP nucleation center, while a photon is a traveling ZDC pattern with no nucleation center. In both cases the energy is \(E = \hbar\nu_C\), unifying \(E = mc^2\) and \(E = h\nu\) as a single equation. The photon propagates not as a discrete object in transit but as a phase-coherent SSV distribution reconstructed at each Absolute Moment by the vector summation of DI-bit strings across the GP network. Gravitational lensing (Newtonian limit), photon delocalization, and coherence length follow from this picture without new postulates. Emission is governed by the impedance of free space \(Z_0 = \sqrt{\mu_0/\epsilon_0}\) (expressed in lattice units to be derived in the GR companion) acting as the discharge load for the decaying orbital ZDC reservoir; absorption is pattern-mode overlap entrainment of the target medium’s natural ZDC resonances. All four DP types participate equally in both mass and photonic ZDC formation. No new postulates are introduced.
+We show that both inertial mass and electromagnetic radiation share a single microscopic substrate: coherent Zero-point Dipole chain (ZDC) patterns in the Dipole Sea, oscillating at the Compton scale. The distinction between mass and radiation is purely a boundary condition: mass is a standing ZDC pattern pinned by an unpaired CP nucleation center, while a photon is a traveling ZDC pattern with no nucleation center. In both cases the energy is \(E = \hbar\nu_C\), unifying \(E = mc^2\) and \(E = h\nu\) as a single equation. The photon propagates not as a discrete object in transit but as a phase-coherent SSV distribution — the phase residing in the GP registers, not on the messengers — reconstructed at each Absolute Moment by the vector summation of DI-bit payloads (static register snapshots) across the GP network. Gravitational lensing (Newtonian limit), photon delocalization, and coherence length follow from this picture without new postulates. Emission is governed by the impedance of free space \(Z_0 = \sqrt{\mu_0/\epsilon_0}\) (expressed in lattice units to be derived in the GR companion) acting as the discharge load for the decaying orbital ZDC reservoir; absorption is pattern-mode overlap entrainment of the target medium’s natural ZDC resonances. All four DP types participate equally in both mass and photonic ZDC formation. No new postulates are introduced.
 \end{abstract}
 
 \section{Introduction}
@@ -101,21 +112,25 @@ The “Compton frequency” of the photon is simply the EM frequency \(\nu\): th
 
 \subsection{Propagation: constructive summation, not transit}
 \begin{proposition}[Constructive summation propagation]
-A photon is not a discrete object in transit between Grid Points. It is a phase-coherent SSV distribution across the GP network, reconstructed at each Absolute Moment by the vector summation of DI-bit strings from all contributing GPs.
+A photon is not a discrete object in transit between Grid Points. It is a phase-coherent SSV distribution across the GP network — the phase borne by the GP registers (SSV\(_{\rm net}\) orientation), not by the messengers — reconstructed at each Absolute Moment by the vector summation of DI-bit payloads from all contributing GPs, each payload a static snapshot of its origin GP's computed register.
 \end{proposition}
 
 The mechanism is the standard PCD cycle (Absolute Moment companion, §3):
 \begin{enumerate}[noitemsep]
-\item Perceive: Each GP in the photon’s path receives DI-bit strings from all GPs in its PSR. The photon’s ZDC pattern is encoded in the phase and direction of these strings.
-\item Compute: The GP computes the vector sum of all arriving DI-bit strings (net SSV direction and magnitude). This sum faithfully reconstructs the photon’s ZDC pattern because all contributing signals originated from the same emission event and have propagated in phase since then — their phase coherence is preserved in the summation.
+\item Perceive: Each GP in the photon’s path receives DI-bit payloads from all GPs in its PSR. Each payload is a static snapshot of its origin GP's computed register (net directional content and magnitude); the photon’s ZDC pattern is encoded in the spatial distribution of these snapshots across the contributing GPs — no phase variable rides on any messenger.
+\item Compute: The GP computes the vector sum of all arriving DI-bit payloads (net SSV direction and magnitude). This sum faithfully reconstructs the photon’s ZDC pattern because the origin registers imaged by the arriving snapshots all descend, Moment by Moment through the relay, from the same emission event — the coherence lives in the register lineage, and the vector summation reproduces it.
 \item Displace/Broadcast: The GP broadcasts the net SSV sum to its PSR shell, advancing the pattern by one shell at speed \(c\).
 \end{enumerate}
+
+\begin{remark}[Phase attribution — reconciliation note, v2.1]
+Earlier printings of this companion (v2 and prior) stated that the photon's pattern was ``encoded in the phase and direction of these strings'' and that contributing signals had ``propagated in phase.'' That phrasing attributed a phase variable to the DI-bit messengers — the COHERENT-FRONT picture retired by the Patch 2957 ruling and excluded by ratified AP-2 (minimal messenger content) and its pending successor AP-4a (the payload is a static register snapshot; no oscillator, no per-messenger phase variable; panel-endorsed at CONV-013, founder-ratified Patch 3032). Under the ratified ontology (FI-QMRG-1), phase is the orientation of the GP's SSV\(_{\rm net}\) register; the messenger transports a frozen image of that register, and coherence is a property of the register lineage descending from the emission event. The physics of this section is unchanged by the relocation: the vector-summation reconstruction, the delocalization, coherence, and lensing consequences, and in particular the \(E=\hbar\nu_C\) identification (this paper's Tier-1 contribution, cited by the CONV-016 §5 provenance audit) are all independent of which entity bears the phase — the energy relation consumes the pattern frequency, not the phase bearer.
+\end{remark}
 
 \begin{remark}[Three consequences]
 Proposition 4.2 implies three phenomena without new postulates:
 \begin{itemize}
 \item Photon delocalization. The photon is not at any single GP; it is the SSV pattern distributed across the GP network. A photon can therefore pass through both slits of a double-slit apparatus simultaneously, because the pattern exists across both arms of the network.
-\item Photon coherence. Phase coherence is maintained because all contributing DI-bit strings encode the same emission event. The coherence length is set by how long the emitting source maintains a stable phase — i.e., by the duration of the emission event (Section 6).
+\item Photon coherence. Phase coherence is maintained because the GP registers imaged by the arriving payloads share a common Moment-by-Moment descent from the same emission event. The coherence length is set by how long the emitting source maintains a stable register phase — i.e., by the duration of the emission event (Section 6).
 \item Gravitational lensing (Newtonian limit). When the photon’s ZDC pattern passes a massive body, the GPs on the inner limb (closer to the mass) have higher absolute SSV and therefore smaller PSR. Their broadcasts advance by a shorter distance per Moment. The vector summation on the far side therefore reconstructs the pattern at a slightly deflected position — this produces the Newtonian deflection limit; full GR lensing requires the curvature companion.
 \end{itemize}
 \end{remark}
@@ -175,7 +190,7 @@ The ZDC chaining framework uses only established CPP machinery:
 \item The ZBW two-level hierarchy (ZBW Mass companion) applies to photons as well as massive particles: Planck-scale DP oscillation aggregates to Compton-scale ZDC pattern oscillation.
 \item The CP Exclusion Rule (Absolute Moment companion) provides the inner reflection boundary for standing ZDC patterns in mass.
 \item The stiffness \(C\) (Stiffness \(C\) companion) governs the elastic response of individual ZDC links.
-\item The no-double-counting rule (Absolute Moment companion, §4.3) ensures that the vector summation of DI-bit strings in constructive summation propagation does not double-count contributions.
+\item The no-double-counting rule (Absolute Moment companion, §4.3) ensures that the vector summation of DI-bit payloads in constructive summation propagation does not double-count contributions.
 \end{itemize}
 
 No element of this framework contradicts the SR derivation of Version 16 or any previous companion.
