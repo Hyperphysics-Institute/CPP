@@ -111,3 +111,62 @@ the effective V-eigenmode) or competing assignments is a derivation
 question, not a wording question; nothing is harmonized silently. The
 207× prediction and the m₃/m₂ ≈ 5.82 target are the discriminating
 handles the reconciliation work should aim at.
+
+---
+
+## §4 — FOUNDER CORRECTION (Patch 3042; anti-erasure — appended, nothing above rewritten)
+
+**The founder's correction (verbatim):**
+
+> Note: It is interesting that the 207x was related to anything
+> associated with the mu neutrino. The 207x number was a mistake on
+> my part, a momentary lapse in thinking we were talking about
+> electrons and muons, not electron and mu neutrinos. I quoted the
+> mass relationship between the electron and the muon, not the
+> relationship between the electron and the mu neutrino, which I have
+> no idea about. So, if you can compute any kind of relationship
+> between them from first principles, that would be good.
+
+**Worker reading of the correction:**
+
+1. **The 207× claim is WITHDRAWN** as founder content. §3 item 3
+   above and the §3 phenomenology framing are corrected accordingly:
+   the 3041 check's V1 line ("207× consistent and sharp; m₁ ≈ 41.7
+   μeV") loses its founder-prediction status and stands only as a
+   numerical observation about a withdrawn premise. The 3041 script
+   is retained unedited as the frozen record of what was checked.
+2. **What survives the withdrawal on its own legs:** (a) the
+   m₃/m₂ ≈ 5.8 hierarchical-regime data target (it follows from the
+   measured Δm²'s alone whenever m₁ ≪ m₂); (b) the exclusion of
+   naive charged-lepton scaling for the third state (8.4× in Δm²₃₁),
+   which remains consonant with the founder's structural claim that
+   ν_τ is a different kind of object; (c) every part of §2 — the
+   RES-SF4-AP4-1 ruling is untouched by the correction.
+3. **The founder's ask — a first-principles relationship — is
+   ANSWERED BY THE SHIPPED PAPER:** SF-4's mass formula
+   m_νi = M₀·V²·σ_ν with the topology-forced shells
+   (V₁,V₂,V₃) = (4,12,30) predicts **m₂/m₁ = (12/4)² = 9.00
+   exactly**, zero parameters. Fresh verification
+   (`code/3042_shipped_ratio_check.py`, 5/5): the ratio fixes the
+   absolute spectrum from Δm²₂₁ alone — m₁ = 0.963 meV,
+   m₂ = 8.668 meV, m₃ = 50.1 meV, Σ = 59.7 meV — under the cosmology
+   bound and sitting AT the near-future cosmology sensitivity
+   (~60 meV): a live, testable, zero-parameter prediction. The
+   m₃-ratios run ~8% high vs (30/V)² — the known ν₃ K3
+   partial-binding residual class. Discriminant recorded: the
+   withdrawn 207× reading and the shipped prediction differ 23× in
+   m₁; the withdrawal has empirical content, not just verbal.
+   Flavor/mass-eigenstate caveat: ν_e, ν_μ are PMNS mixtures of the
+   mass eigenstates ν₁, ν₂, ν₃ (ν_e mostly ν₁); the first-principles
+   ratio is between MASS eigenstates — the object the formula and
+   the data both speak about.
+4. **RES-SF4-STRUCT-1's discriminating handles, restated post-
+   correction:** the reconciliation task for the spinning-DP
+   composition picture is now precise — derive WHY the spinning eDP
+   couples as the V=4 tetrahedral shell and the spinning qDP as the
+   V=12 icosahedral shell (yielding (12/4)² = 9), and why the
+   spinning qDP–eDP pair lands the V=30 shell with the ~8% ν₃
+   residual absorbed by the K3 partial-binding correction. If the
+   composition picture reproduces the shell couplings, the two
+   descriptions unify; if it cannot, they compete and the panel
+   adjudicates.
