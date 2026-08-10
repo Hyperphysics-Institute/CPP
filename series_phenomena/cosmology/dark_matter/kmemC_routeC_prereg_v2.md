@@ -120,3 +120,41 @@ now, usable only before launch, at the founder's election): isolation
 N 128 → 96 and AK 512 → 384, giving ≈ 2800 CPU-h ≈ 5.3 days — AK's
 SNR projection must still clear 10 at the reduced N or the reduction
 is void.
+
+## §7 — Compute platform (FROZEN): the committed CPU engine; no GPU port on this campaign
+
+The campaign runs the committed `2902_mobile_sea_engine.py` on CPU —
+the SAME binary-identical dynamics that produced MEAS-2 and MEAS-3
+and that the D-KAPPA instrument measured. A GPU port is EXCLUDED for
+this campaign on three grounds, recorded so the question is settled
+rather than revisited under schedule pressure:
+
+1. **Reproducibility, decisive.** Patch 3034 MEASURED this engine's
+   micro-chaos: ρ_micro ≈ 2.1–2.6 per Moment. Any re-implementation
+   differing at float64 round-off (1×10⁻¹⁶) — different reduction
+   order, fused multiply-add, or library kernels, all unavoidable on
+   GPU — reaches O(1) micro-divergence in **39–50 Moments**, far
+   inside every arm's 104–504 Moment run. Bitwise agreement with the
+   committed engine is therefore IMPOSSIBLE to demonstrate beyond
+   ~40 Moments; only distributional equivalence could be argued, and
+   establishing that requires running both implementations at
+   ensemble scale — paying the CPU cost we sought to avoid, plus the
+   port. A panel that has twice sent campaigns back on instrument
+   grounds would be entitled to reject a new-instrument result.
+2. **Workload shape.** Per-Moment work is ~0.9–3.2 M pair-operations
+   on 937–1801 CPs — microseconds of GPU compute against
+   kernel-launch latency, with 104–504 STRICTLY SERIAL Moments and a
+   branchy retarded-time search per step. A GPU pays only if legs are
+   batch-vectorized into one kernel, which is precisely the rewrite
+   that triggers ground 1.
+3. **The parallelism is already harvested.** Legs are independent and
+   individually seeded; CPU multiprocessing across legs is
+   embarrassingly parallel and scheduling-order-independent, so
+   worker count is a free lever with NO effect on results.
+
+**Sanctioned wall-time levers (no design or evidentiary impact):**
+(i) raise `--workers` to (logical cores − 2); (ii) the §6 frozen
+pre-launch reduction. A GPU port remains a legitimate INFRASTRUCTURE
+project for future campaigns, gated by a documented equivalence
+study (ensemble-level distributional agreement plus a short-horizon
+bitwise check) — off the critical path, never adopted mid-campaign.
