@@ -1,40 +1,68 @@
 {
  "a0": {
+  "cls": "iso",
+  "x_half": 24.0,
+  "T_END": 384,
+  "beta": 0.1,
+  "L": 36.0,
   "x_src0": -18.0,
-  "T_exit": 94,
-  "T_close": 60.0,
-  "DT": 34.0,
-  "target": 0,
-  "tuned": false,
-  "ok": false
+  "margin": 6.0,
+  "DT": 0.0,
+  "target": 0.0,
+  "N": 128,
+  "ok": true
+ },
+ "a0p": {
+  "cls": "iso",
+  "x_half": 16.0,
+  "T_END": 264,
+  "beta": 0.1,
+  "L": 24.0,
+  "x_src0": -12.0,
+  "margin": 4.0,
+  "DT": 0.0,
+  "target": 0.0,
+  "N": 128,
+  "ok": true
  },
  "a1": {
-  "x_src0": -15.765625,
-  "T_exit": 84,
-  "T_close": 54.0,
-  "DT": 30.0,
-  "target": -12,
-  "tuned": true,
-  "ok": false
+  "cls": "iso",
+  "x_half": 32.0,
+  "T_END": 384,
+  "beta": 0.1,
+  "L": 36.0,
+  "x_src0": -18.0,
+  "margin": 14.0,
+  "DT": -12.0,
+  "target": -12.0,
+  "N": 128,
+  "ok": true
  },
  "a2": {
-  "x_src0": -19.703125,
-  "T_exit": 97,
-  "T_close": 60.0,
-  "DT": 37.0,
-  "target": 8,
-  "tuned": true,
-  "ok": false
+  "cls": "iso",
+  "x_half": 28.0,
+  "T_END": 504,
+  "beta": 0.1,
+  "L": 48.0,
+  "x_src0": -24.0,
+  "margin": 4.0,
+  "DT": 6.0,
+  "target": 6.0,
+  "N": 128,
+  "ok": true
  },
- "a3": {
-  "x_src0": -11.828125,
-  "T_exit": 71,
-  "T_close": 48.0,
-  "DT": 23.0,
-  "target": -12,
-  "tuned": true,
-  "ok": false
+ "ak": {
+  "cls": "margin",
+  "x_half": 28.0,
+  "T_END": 104,
+  "beta": 0.6,
+  "L": 48.0,
+  "x_src0": -24.0,
+  "margin": 4.0,
+  "DT": 6.0,
+  "target": 6.0,
+  "N": 512,
+  "ok": true
  },
- "beta_f": 0.6,
- "all_ok": false
+ "all_ok": true
 }
