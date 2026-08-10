@@ -91,3 +91,71 @@ SS-1b construction's actual consumption), then SF-1, SF-3 (light).
 Batching: legs execute in idle windows; findings ride to panel
 rounds with their nearest batch. F-SW-9 status: **CHARTERED;
 SF-2 LEG COMPLETE (COMPLIANT); SF-4 precedent-complete.**
+
+---
+
+## §4 — REMAINING LEGS EXECUTED (Patch 3046) — F-SW-9 COMPLETE
+
+**SF-6 (electromagnetism) — MECHANISM-COMPLIANT, one legacy-naming fix
+executed.** Dynamical cores audited: the Tier-1 E=ħν_C mechanism
+(standing/traveling ZBW-chain patterns; per-Moment nucleation imprint;
+honesty notes already in-text on what is identified vs derived) —
+consumes pattern resonance + register imprint, no selective emission,
+no messenger phase; the corrected propagation paragraph (3039) verified
+at consumption grade; emission (Z₀ ringdown), absorption (mode
+overlap), second quantization (register-amplitude eigenmode expansion
+with the 3039 parenthetical) — all pattern/register-level. ONE residue
+the keyword sweeps could not catch: the mass-mechanism sentence "emits
+its type-and-polarity SSV signal" — AP-2-era content wording (species
+by flag). Fixed at this patch to the AP-4a register-imprint wording;
+SF-6 → v1.2. VERDICT: COMPLIANT.
+
+**SF-8 (emergent electrostatics) — MECHANISM-COMPLIANT at consumption
+grade.** The 3039 preserved-clause argument VERIFIED against the
+implementations themselves: Relay A (idealised shell) and Relay B (the
+lattice-native TWELVE-NEIGHBOUR hop — the all-edges standing class) run
+count + origin-directed steering only, with frozen gates and disclosed
+blinding; the C-2 counting consumed nothing AP-4 retired. VERDICT:
+COMPLIANT.
+
+**SF-5 / SF-7 (strong / unification) — COMPLIANT; the 3039 naming note
+verified at consumption grade.** The SS-1b construction's own text
+states the consumption: "a coloured object is a configuration of
+charge labels on the cage vertices, and the strong interaction is the
+propagation of hDP configurations along the cage edges that permute
+those labels" — label-configuration (pattern) dynamics throughout; the
+su(3) algebra acts on cage-vertex register content exactly as the
+naming note claimed. SF-7 inherits by citation. VERDICT: COMPLIANT.
+
+**SF-1 / SF-3 (charged leptons / quarks) — COMPLIANT (light legs).**
+SF-1: count-like consumption (visit rate, occupation) re-verified;
+circulation phase is pattern-level. SF-3: all dynamical keyword hits
+are Koide mass-AMPLITUDE bookkeeping (A_q scale cancellation) plus one
+generic intro line; the paper is spectral/algebraic; nothing dynamical
+consumed. VERDICTS: COMPLIANT.
+
+## §5 — Registered gap (noted, not executed): implementation
+classification coverage
+
+The E-1 transport classification (Patches 2991/3036) covers
+AUTOMATON-2 and the directed relay. THREE further registered
+implementations exist and are UNCLASSIFIED in E-1's table: SF-8's
+Relay A (idealised shell), SF-8's Relay B (twelve-neighbour hop), and
+the 2902 mobile-sea engine (the MEAS evidentiary dynamics and the
+D-KAPPA instrument). Their within-Moment/multi-Moment class should be
+recorded by an E-1 table extension (an E-1-discipline task with its
+own verify obligations — queued, not executed here). No compliance
+issue is implied: Relay B is manifestly standing-class; 2902 is an
+effective retarded-field implementation whose classification statement
+should say so explicitly.
+
+## §6 — F-SW-9 CLOSED
+
+All seven remaining SF papers audited at mechanism-consumption grade:
+**SEVEN COMPLIANT VERDICTS, zero CONSUMING findings** (SF-4 remains
+the sole consumption case, resolved the hard way at 3040–3044). One
+legacy-naming fix (SF-6 v1.2), one classification-coverage gap
+registered (§5), two consonance findings standing (§2). **The entire
+SF line is now cleared against the ratified automaton at both
+attribution and consumption depth.** Findings batch to the MEAS-3
+disposition round.
