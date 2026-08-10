@@ -131,6 +131,23 @@ prose amendment and the closure-sketch aside cleanup are then
 executed as a v-bump under the ruling, and the whole item (ruling +
 amendment) rides to the panel in the MEAS-3 disposition batch.
 
+**RULED at Patch 3041 — CLOSED-BY-RULING.** The founder's answer
+(verbatim:
+`founders_voice/founder_ruling_neutrino_spinning_dp_2026-08-09.md`)
+decides for the substance of (A) with a sharper identity: the
+constituent CPs "follow all the rules of the automata" (Reading B's
+special mechanism ruled OUT), and S(t) is the spinning-DP unit's own
+instantaneous configuration orientation, unpinned for an unbound mode
+and uniform by the same I_h lemma as the receive side. SF-4 → v3.1
+executed under the ruling (both 1/z factors from one lemma, two
+registers; σ_ν unchanged). New constitutive content
+(flavor-by-composition, 207×, counterspinning-ZBW beta-decay
+narrative) registered separately as RES-SF4-STRUCT-1 with a
+phenomenology check (207× consistent and sharp: m₁ ≈ 41.7 μeV,
+m₂ ≈ 8.61 meV; naive tau-scaling excluded 8.4×, consonant with the
+pair-structure claim; pair target m₃/m₂ ≈ 5.82). Ruling + amendment +
+RES-SF4-STRUCT-1 ride to the MEAS-3 disposition batch.
+
 ## §5 — Interim safeguards (this patch)
 
 - RES-SF4-AP4-1 status: REGISTERED → **ANALYZED / AWAITING FOUNDER
