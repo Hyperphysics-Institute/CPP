@@ -86,3 +86,56 @@ per-CP emission multiplicity under AP-4c) is next; note the
 factorization boundary — SCR-1 has counted PAIRS; whether each pair
 contributes one or two emission quanta per Moment is entirely
 SCR-2's question, and no double-counting path exists between them.
+
+---
+
+## §6 — FOUNDER CORRECTION (Patch 3072, v1.1) — the picture refined; the resolution robust
+
+**The founder, on reviewing the v1.0 resolution (verbatim):**
+
+> One point per lattice site, except for when they are superimposed,
+> which is the very essence/center of the ZBW mechanism.
+> Superimposition is what creates the expansion effect. Given that
+> ZBW is the driving force of the CC, the number of times that a DP
+> is in a superimposed state, the double occupancy of GPs will be
+> frequent, but it is not stable, which was my point in saying 1 CP
+> per GP.
+
+> Pairs do not swap every cycle. They only swap when they are closer
+> to a new partner on the perigee than the old partner. We discussed
+> this in the past, it may have been in the context of deriving
+> inertia. I think the partner swapping frequency is small (smaller)
+> compared to the monogamous partner fidelity. I don't know what the
+> percentage would be. That was an unknown rather than a declared
+> value.
+
+**Disposition of correction 1 (superposition / double occupancy):**
+changes WHERE the pair centres sit, not HOW MANY pairs there are.
+The census (N_pairs = N_sites/2) is picture-invariant — superposition
+is transient double occupancy by a pair's own two CPs, not a change
+in the count. Geometry revision: with exactly-opposite excursions
+about the superposition GP, the pair CENTRE sits ON a site for the
+whole cycle (half the sites occupied per Moment) rather than at the
+edge midpoint of the v1.0 static reading. Recomputed (script §D):
+φ₁ = 0.4803–0.5000 under centres-on-sites (self-pair placement
+bracket), vs 0.4844 under midpoints. **Adopted: φ₁ = 0.49 ± 0.01,
+robust across both pictures.** Direction unchanged (away from the
+band); the correction TIGHTENS the resolution.
+
+**Disposition of correction 2 (monogamous fidelity, rare swapping):**
+does not enter SCR-1 at all — a static 1/r⁴ ensemble sum depends
+only on the marginal pair-position distribution, not the reshuffle
+rate, and the correlation extremes were already bracketed. **The
+swap fraction is hereby flagged as an SCR-3 input** (D-ETA-Z):
+registered as an UNKNOWN, not a declared value, per the founder.
+Preliminary read, to be tested in the SCR-3 note: swap-vs-return at
+close approach redirects the NEXT cycle without materially changing
+the completed cycle's ⟨δ²⟩, so the unknown fraction may drop out of
+η_z entirely; if it does not, it becomes a named open input, never a
+guess. Consonance noted: the founder's superposition emphasis (real
+dwell at δ = 0) is precisely the content of the η_z ≤ 1 bound in
+R-DELTA-ZBW — the corrected picture and the frozen parameterization
+agree.
+
+**Status: SCR-1 CLOSED at φ₁ = 0.49 ± 0.01.** The ±0.01 rides along
+as an honest sub-2% band, not a dial.

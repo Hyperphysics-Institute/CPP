@@ -113,3 +113,23 @@ ok = (abs(C4 - C4c) < 0.05 and abs(S4mf - S4mfc) < 0.05 and abs(S4par - S4parc) 
 print(f"\nconvergence: {'PASS' if ok else 'FAIL'}")
 print("SCR-1 enters rho_Lambda multiplicatively as phi_1; verdict NOT")
 print("recomputed here (factors multiply once, at the end).")
+
+# ---------- (D) Patch 3072 founder-correction variant ---------------
+# Founder (3072, verbatim in the resolution note SS6): superposition =
+# transient DOUBLE occupancy of a GP by a pair's two CPs (the essence
+# of the mechanism); excursions exactly opposite => the pair CENTRE
+# stays at the superposition GP for the whole cycle. Pair centres
+# therefore sit ON SITES (half occupied per Moment), not at edge
+# midpoints. Census unchanged: N_pairs = N_sites/2.
+# Mean-field: each site hosts a centre w.p. 1/2; exclude the origin
+# site; bracket the self-pair position (own centre at origin vs at an
+# adjacent site) as the sub-percent detail it is.
+S4_ctr_hi = 0.5 * C4                                   # own centre at origin (r=0, auto-excluded)
+S4_ctr_lo = 0.5 * C4 - 0.5 * 12.0 / 12.0               # own centre sometimes on the nn shell:
+# worst case removes one full nn-shell slot's half-weight: 0.5*(1/1^4)
+phi_ctr_hi, phi_ctr_lo = S4_ctr_hi / C4, S4_ctr_lo / C4
+print(f"\n(D) centres-on-sites variant (3072 founder correction):")
+print(f"    phi_1 = {phi_ctr_lo:.4f} .. {phi_ctr_hi:.4f} (self-pair placement bracket)")
+print(f"    combined SCR-1 robust band across BOTH pictures: phi_1 = 0.48 .. 0.50")
+print("    census (pairs = sites/2) is picture-invariant; the midpoint-vs-site")
+print("    geometry is a 3% detail. Adopted going forward: phi_1 = 0.49 +/- 0.01.")
