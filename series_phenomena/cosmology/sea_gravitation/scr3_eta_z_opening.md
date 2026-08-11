@@ -197,3 +197,80 @@ the worker takes NO position, noting only that (ii) would touch a
 closed factor and therefore requires an explicit founder ruling, with
 the anti-extraction record showing the flag was raised by mechanism
 consonance, not by the factor's direction.
+
+---
+
+## §8 — FOUNDER ANSWERS TO FQ-4 (Patch 3077, verbatim) AND THE SELF-CONSISTENCY PROGRAM
+
+**FQ-4.1 (what sets d):**
+
+> The d is set by how much SSV_net is pulling the CP radially away
+> from superimposition. Then the evolution of SSV_net with
+> time/distance/at each Moment will determine how much
+> inertia/KE/momentum it builds up, and how the counterbalancing
+> SSV_net contribution of the CP associated with its faithful CP of
+> the DP pair. The d is always due the sum of the forces and when the
+> force turns the outward velocity to perigee/zero before returning
+> to the faithful CP and it DP pairing and superposition.
+
+**FQ-4.2 (the reach):**
+
+> Same as question 1
+
+**FQ-4.3 (the smallest step):**
+
+> The theoretical move is 1 GP, but that is probably not correct
+> because of the delay in arrival of the influence of the DI-bits
+> from the PSR shell.
+
+## §9 — Extractions and one honest reading note
+
+- **R-APOGEE-DYNAMIC:** the excursion apogee is a PURE FORCE-BALANCE
+  outcome — no geometric shell condition anywhere. The outbound leg
+  is driven by the environment's SSV_net pull, builds DP-arc
+  inertia, and ends at the Moment the (retarded) faithful-partner
+  counterforce turns the outward velocity to zero; return and
+  re-superposition follow. The nn-vs-next-shell dichotomy of the
+  frozen SCR-3 enumeration is hereby DISSOLVED — the reach is
+  whatever the dynamics deliver, and FQ-4.2 is the same fact as
+  FQ-4.1 by founder identification.
+- **R-STEP-MIN (with founder caveat):** the theoretical minimum
+  per-Moment displacement is 1 GP; the founder flags that the
+  PSR-shell arrival delay probably modifies the effective minimum.
+  Registered as: quantum = 1 GP nominal, retardation-corrected
+  effective step OPEN (a property the simulation below will exhibit
+  rather than assume).
+- **Reading note (registered openly):** the worker's FQ-4.1 asked
+  what sets the mean INTER-DP SPACING; the founder's answer gives
+  the dynamics of the excursion reach. Two readings are possible and
+  are NOT silently merged: (α) the founder identifies the Sea's
+  characteristic spacing with the dynamical reach scale (the Sea
+  spaces itself at the amplitude of its own dance); (β) the spacing
+  determination is a separate fact not yet ruled. The
+  self-consistency program below is constructed so that BOTH
+  readings are testable: if (α), the program's fixed point IS the
+  answer; if (β), the founder can rule the spacing separately and
+  the program takes it as input.
+
+## §10 — D-SEA-SELFCONSIST: the proposed zero-parameter closure
+
+The founder's answers make spacing, reach, and η_z three faces of
+ONE dynamical problem, which suggests the arc's deepest possible
+closure. The loop: (1) the mean inter-DP spacing d_s sets the
+statistics of the environmental SSV_net a member feels at
+superposition-exit; (2) that field, through R-STEP-SSV displacement
+and R-INERTIA-ARC persistence, with the faithful partner's influence
+retarded per R-ZBW-DELAY, determines the apogee distribution and the
+full cycle δ(t) — hence η_z and the reach scale; (3) P-SEA-DILUTE
+closes the loop: the Sea sits where discrete-DP fidelity survives —
+pairs at the stability boundary against partner-poaching. A
+self-consistent triple (d_s, apogee, η_z) with NO free parameter:
+every input is a registered ruling. Deliverable: a discrete PCD
+simulation implementing exactly the ruled dynamics (unit charges,
+1/r² DI-bit influence at unit propagation speed, SSV_net-proportional
+displacement, arc inertia, retarded partner force, environmental
+field from the DP array itself), scanned in d_s for the fidelity
+boundary. Outputs: the boundary d_s*, the apogee/d_s ratio, and
+η_z — all exhibited, none assumed. Anti-extraction: the simulation
+plan contains no band quantity; its outputs go into the ledger
+whichever way they point.
