@@ -1,3 +1,13 @@
+> **[BANNER — Patch 3076, 11 Aug 2026: SCR-1 REOPENED BY FOUNDER RULING
+> R-OCC-DILUTE.** The full-occupancy census (every GP a CP; pairs =
+> sites/2) computed below is ruled INCORRECT — the Sea is below full
+> occupancy (`founders_voice/founder_ruling_dilute_sea_ssv_step_
+> 2026-08-11.md`). The lattice-sum machinery below remains valid AS
+> MATHEMATICS and is carried forward re-anchored on the mean inter-DP
+> spacing d; φ₁'s value is VOID pending the d ruling (FQ-4.1/4.2).
+> The v1.0–v1.1 text is preserved unedited below per the
+> frozen-record protocol.]
+
 # SCR-1 RESOLVED — PAIR DENSITY / OCCUPANCY: φ₁ = 0.4844 (dynamic-matching cycle average), plus a ~2% truncation erratum on the 3067 C₄
 
 **Patch 3071 (11 Aug 2026). The first of the four frozen counting
