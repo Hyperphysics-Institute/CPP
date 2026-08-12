@@ -1,5 +1,15 @@
 # D-SEA-SELFCONSIST STAGE 3c — THE LATTICE RUN: superposition RESTORED (the continuum obstruction removed), the faithful phase still un-exhibited, and the scalar-brake proxy DIAGNOSED as structurally unable to deliver fidelity — the ruled arc force (SF-6) identified as the missing agent
 
+> **PROVENANCE BANNER (Patch 3088, 12 Aug 2026):** this run's electric
+> sector was INVERTED (anti-Coulomb; see the 3088 sign audit). The §1
+> phase table is contaminated: at the same cells the sign-corrected
+> array gives bound, regenerating, stationary states where GLASS is
+> tabled here. The §2 structural diagnosis (relaunch kick ~ binding at
+> 1 GP ≫ 1/r² restoring at apogee) is a force-shape magnitude argument
+> and survives as logic, but its empirical exhibits do not. The 3084
+> falsification clause was consumed correctly: the corrected arc run
+> EXHIBITS the branch. See `darcforce_array_record.md`.
+
 **Patch 3084 (12 Aug 2026). Pre-stated criterion (3083): recurrent
 superposition passages + η ≪ 2.25 + small f_sw + flat v². Verify:
 `scripts/3083_selfconsist_stage3b.py` (lattice flag + charge-coupled

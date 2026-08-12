@@ -1,5 +1,17 @@
 # D-ARC-FORCE TWO-BODY VALIDATION — the 3085 instability DIAGNOSED (naive v×B kick) and FIXED (Boris rotation, parameter-free); close-range floor flagged for the array port
 
+> **PROVENANCE BANNER (Patch 3088, 12 Aug 2026):** the 3086 code's
+> MAGNETIC sign is inverted relative to its own docstring (repulsion
+> for parallel currents where the analytic derivation — the ruled,
+> textbook SF-6 limit — has attraction). Finding 2 of this record
+> (Boris fixes the pump) VALIDATED THE PUSHER, which is sign-agnostic;
+> the orbit also stayed bounded partly because the sign/launch
+> mismatch kept it away from close range. With textbook signs,
+> resolved orbits (a = 4/6/10) are bounded with drift 1.6e-5 / 8.8e-6
+> / 8.0e-7; the a = 2 orbit decays into sub-unit passages — the §3
+> close-range flag reproduced, and structurally absent on the lattice.
+> See `darcforce_array_record.md` §1–§2.
+
 **Patch 3086 (12 Aug 2026). Verify: `scripts/3086_arc_twobody.py`.
 One +/− pair, free space, instantaneous forces (retardation off so
 the analytic limit exists). Analytic orbit condition with the

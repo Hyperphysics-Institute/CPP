@@ -1,5 +1,14 @@
 # D-SEA-SELFCONSIST STAGE 3 — THE EXPLICIT ARRAY: heating diagnosis, the missing energy regulator, and FQ-5.3
 
+> **PROVENANCE BANNER (Patch 3088, 12 Aug 2026):** the 3D array behind
+> this record ran with an INVERTED electric sector (anti-Coulomb:
+> unlike repels, like attracts; retarded partner term repulsive where
+> R-ZBW-DELAY requires attraction) — found in the 3088 sign audit. The
+> heating/ionisation TABLE is contaminated; the ledger-level argument
+> (retardation pumps; a regulator is a ruled necessity, per O-3) stands
+> on its own and was independently confirmed by the corrected array
+> (γ → 1 heats). See `darcforce_array_record.md` §1/§3.
+
 **Patch 3080 (11 Aug 2026). The explicit 3D periodic array (27 DPs /
 54 CPs, all-pairs Coulomb with minimum image, RETARDED partner
 interaction over true stored trajectories, natural closer-at-perigee

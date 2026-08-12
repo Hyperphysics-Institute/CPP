@@ -1,5 +1,13 @@
 # D-SEA-SELFCONSIST STAGE 3b — THE REGULATED CLOSED ARRAY: the faithful phase NOT YET EXHIBITED; the diagnosis points at the continuum approximation, and Stage 3c is specified on the lattice
 
+> **PROVENANCE BANNER (Patch 3088, 12 Aug 2026):** this run's electric
+> sector was INVERTED (anti-Coulomb; see the 3088 sign audit). The
+> GLASS-everywhere table is contaminated. The continuum-vs-lattice
+> diagnosis (co-location measure-zero in a continuum integrator)
+> stands: the corrected lattice array exhibits recurrent superposition
+> where the corrected continuum would still not. See
+> `darcforce_array_record.md` §1/§3.
+
 **Patch 3083 (12 Aug 2026). The pump/brake balance implemented with
 everything ruled: retardation pump (R-ZBW-DELAY), entropic brake
 (R-CP-ENTROPIC-LOSS, retention γ scanned pending D-ARC-GAMMA), the
