@@ -67,3 +67,19 @@ Raider repo relocated to ~/Documents/GitHub/CPP (non-OneDrive; the
 OneDrive clone abandoned after lock failures — never revive it).
 ClearPC user is DrThomas: downloads at ~/Downloads. Patches 3070–3081
 all pushed through 3080 at session close; 3081 pending founder apply.
+
+## POST-CLOSE ADDENDUM (Patch 3082)
+
+FQ-5 answered in full after session close (verbatim:
+`founders_voice/founder_ruling_fq5_jitter_isotropy_entropic_loss_
+2026-08-11.md`). Headlines: jitter INHERENT in per-Moment SSV_net
+re-summation (frozen branch retired as unphysical); d_s a
+cosmological relic — isotropy evolved, not initial (M-ZBW-REBOUND
+carrier; boundary question routes through expansion history); the
+regulator fully ruled as R-CP-ENTROPIC-LOSS (γ_eff DERIVABLE from
+the 10% PSR shell + cross-section: derivation D-ARC-GAMMA minted)
+plus R-GP-REZERO (per-Moment GP load reset — NEW automaton rule
+surfaced). Stage-3b queue item updated: (1) D-ARC-GAMMA derivation,
+(2) annealed array with intrinsic summation-noise jitter + derived
+γ_eff + per-Moment field rebuild. Everything else in the queue
+unchanged.
