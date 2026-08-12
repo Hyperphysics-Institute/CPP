@@ -83,3 +83,23 @@ surfaced). Stage-3b queue item updated: (1) D-ARC-GAMMA derivation,
 (2) annealed array with intrinsic summation-noise jitter + derived
 γ_eff + per-Moment field rebuild. Everything else in the queue
 unchanged.
+
+## SECOND ADDENDUM (Patches 3083–3084, 12 Aug)
+
+Stage 3b (3083): regulated closed array → GLASS everywhere;
+superposed fraction exactly zero → continuum-integrator diagnosis
+(co-location measure-zero vs the ruled ADDRESS-JUMP kinematics).
+Stage 3c (3084): lattice quantization RESTORES superposition
+(vindicating the diagnosis; frozen-superposed at low noise, recurrent
+passages at moderate) but fidelity never accompanies relaunch —
+structural diagnosis: the scalar-brake proxy cannot both relaunch and
+retain (relaunch kick ~ binding at 1 GP ≫ restoring pull at apogee;
+ratio fixed by 1/r²). Construction NOT falsified; PROXY exhausted.
+**D-ARC-FORCE minted: implement the SF-6 arc/magnetic force law
+(relative-motion braking — the ruled fidelity agent) in the lattice
+array; same pre-stated criterion; if THAT fails, the falsification
+conversation is earned in full.** D-ARC-GAMMA folds in as its
+dissipative component. NEXT SESSION: (1) Kila6 Route C completion
+handling if arrived (resumed 12 Aug at 27.1%, ETA ~Thu–Fri); (2)
+D-ARC-FORCE (read SF-6's ruled force law first — no improvisation);
+(3) D-COMP-WEIGHT Ω-budget bound; (4) then the single final assembly.
