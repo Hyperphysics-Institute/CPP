@@ -28,7 +28,7 @@ No band quantity appears anywhere. Fixed seeds; one repeat seed line.
 import sys
 import numpy as np
 
-def run_3b(ds, gamma, T=3000, kick=0.05, seed=5, sig_n=0.0, lattice=False):
+def run_3b(ds, gamma, T=3000, kick=0.05, seed=5, sig_n=0.0, lattice=False, arc=False):
     # sig_n: R-JITTER-SOURCE noise floor (per-Moment SSV_net summation
     # fluctuation; granularity unruled => scanned for insensitivity).
     rng = np.random.default_rng(seed)
@@ -39,6 +39,7 @@ def run_3b(ds, gamma, T=3000, kick=0.05, seed=5, sig_n=0.0, lattice=False):
     partner = np.arange(Nc); partner[0::2] += 1; partner[1::2] -= 1
     V = rng.normal(0, kick, (Nc, 3)); V[1::2] = -V[0::2]
     Hist = np.zeros((T, Nc, 3)); Hist[0] = X
+    VHist = np.zeros((T, Nc, 3))
     ptr = np.zeros(Nc, dtype=int); qq = np.outer(q, q)
     eye = np.eye(Nc, dtype=bool); opp = (qq < 0)
     d2s, v2s, sws, regen = [], [], 0, 0
@@ -49,6 +50,23 @@ def run_3b(ds, gamma, T=3000, kick=0.05, seed=5, sig_n=0.0, lattice=False):
         co = r < 1e-6; rs = np.where(co, 1.0, r); re = np.maximum(rs, 1.0)
         kern = np.where(co, 0.0, qq/(re**2 * rs))
         F = -np.einsum('ij,ijk->ik', kern, D)
+        if arc:
+            # Arc-sector velocities saturate at the substrate signal speed
+            # (arc fields are MADE of DI-bits at c=1): |v_eff| <= 1. A
+            # substrate bound, not a dial.
+            vn = np.sqrt(np.einsum('ij,ij->i', V, V))
+            Vc = V / np.maximum(vn, 1.0)[:, None]
+            # D-ARC-FORCE: magnetic interaction of moving charges, c=1,
+            # the unique low-order form of SF-6's committed macroscopic
+            # limit (E and B locked, Maxwell emergent). Does no work;
+            # opposite charges excursing oppositely = parallel currents
+            # => v^2-proportional BINDING (the ruled fidelity agent).
+            # Quasi-static velocities for non-partners (same caveat as
+            # the electric sector); partner handled retarded below.
+            rhat = D / rs[:, :, None]
+            Bk = np.where(co, 0.0, 1.0/(re**2))[:, :, None] *                  np.cross(V[None, :, :] * q[None, :, None], rhat)
+            Btot = Bk.sum(axis=1)
+            F += q[:, None] * np.cross(V, Btot)
         for i in range(Nc):
             p = partner[i]
             dv = D[i, p]; rr = np.sqrt(dv@dv)
@@ -64,6 +82,14 @@ def run_3b(ds, gamma, T=3000, kick=0.05, seed=5, sig_n=0.0, lattice=False):
                 w = X[i] - Hist[tr, p]; w -= L*np.round(w/L); s = np.sqrt(w@w)
                 if s > 1e-9:
                     F[i] += -qq[i, partner[i]]/(max(s, 1.0)**2 * s) * w
+                    if arc:
+                        # retarded partner magnetic term (replaces the
+                        # quasi-static one for the partner)
+                        def clip1(u):
+                            n = np.sqrt(u@u); return u/max(n, 1.0)
+                        Bq = q[p]*np.cross(clip1(VHist[tr, p]), w/s)/max(s, 1.0)**2
+                        Bi = q[p]*np.cross(clip1(V[p]), w/s)/max(s, 1.0)**2
+                        F[i] += q[i]*np.cross(clip1(V[i]), Bq - Bi)
         if sig_n > 0:
             # R-JITTER-SOURCE as a FIELD: co-located partners feel the SAME
             # vector and respond OPPOSITELY (charge-coupled) -- the R-DWELL-1
@@ -75,6 +101,7 @@ def run_3b(ds, gamma, T=3000, kick=0.05, seed=5, sig_n=0.0, lattice=False):
                     fld[partner[i]] = fld[i]
             F = F + q[:, None]*fld
         V = gamma*V + F                              # brake + pump + ruled floor
+        VHist[t-1] = V
         X = (X + (np.round(V) if lattice else V)) % L   # Stage 3c: GP-address jumps
         Hist[t] = X
         ro = np.where(opp & ~eye, r, np.inf)
@@ -112,6 +139,7 @@ if __name__ == "__main__":
     print(f"{'d_s':>5} {'gamma':>6} {'sig_n':>7} {'phase':>10} {'eta_z':>9} {'f_sw':>6} {'regen':>6} {'v2_late':>9} {'drift':>6}")
     for cfg in cfgs:
         ds, g, sd, sn = cfg[:4]; lat = cfg[4] if len(cfg) > 4 else False
-        z = run_3b(ds, g, seed=sd, sig_n=sn, lattice=lat)
+        arc = cfg[5] if len(cfg) > 5 else False
+        z = run_3b(ds, g, seed=sd, sig_n=sn, lattice=lat, arc=arc)
         print(f"{ds:5.0f} {g:6.2f} {sn:7.3f} {z['phase']:>10} {z['eta']:9.4f} {z['fsw']:6.2f} "
               f"{z['regen']:6d} {z['v2']:9.2e} {z['drift']:6.2f}")
