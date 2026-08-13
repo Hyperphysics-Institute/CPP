@@ -121,3 +121,11 @@ extraction run (§5) — or, if the founder prefers, a bracketed
 assembly first with the extraction as the tightening pass. Factors
 multiply ONCE; in band or F-CLI-1 fires in those words. Kila6 Route C
 and the DM ledger untouched.
+
+---
+
+**STATUS UPDATE (appended 13 Aug 2026, Patch 3118; original above
+unaltered):** §1's O-2 discharge, tagged PROPOSED at commit, is now
+**RATIFIED** — CONV-019 full-panel majority (4 RATIFY, 1 MODIFY
+absorbed as OBL-K-SENS). k = √(α_s/α) = 7.2755 stands as the
+discharged identification.

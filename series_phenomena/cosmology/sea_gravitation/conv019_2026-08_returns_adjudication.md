@@ -119,3 +119,50 @@ derivation/exposition items and remain independently open.
 CONV-019** (both answered the prior round). The CONV-019 block
 (3115) awaits re-dispatch to those two; Q1–Q3 tallies finalize on
 their return.
+
+---
+
+## §6 — PANEL COMPLETION (13 Aug 2026, Patch 3118): all five seats responsive; tallies FINAL
+
+**Seat-attribution note:** the return received via the Gemini
+dispatch channel self-labeled "SEAT: GPT" internally; it is recorded
+as the GEMINI seat per dispatch channel, mislabel noted. The
+DeepSeek re-dispatch returned responsive.
+
+**Final tallies (5 distinct seats):**
+
+| Q | tally | BINDING OUTCOME |
+|---|---|---|
+| Q1 | UNDERDETERMINED ×4 (GPT, Grok, Copilot, DeepSeek) · OVERTURN-TO-SECONDARY ×1 (Gemini) | **UNDERDETERMINED** (majority) — D-DS-INDEP decides; NO relocation of d_s* now |
+| Q2 | RATIFY ×4 · MODIFY ×1 (Copilot) | **RATIFY — O-2 DISCHARGED: k = √(α_s/α) RATIFIED** (PROPOSED tag lifted; OBL-K-SENS retained regardless) |
+| Q3 | UNDERDETERMINED ×4 · COHERENT ×1 (Gemini) | **UNDERDETERMINED** — D-CHAN-ADD stands; the ×1.27 fork rides as bracket |
+| Q4 | SOUND-WITH-CAVEATS ×5 | **FINAL** — obligations as §2 (OBL-MEMORYLESS-PROV is the direct answer to Gemini's sharpened phrasing: "risks being a disguised parameter tune") |
+| Q5 | CONCUR ×5 | **FINAL — THE THREE VERDICTS STAND, unanimous, full panel** |
+| Q6 | CLOSED-PENDING ×4 · OPEN ×1 (Gemini, conditioned on the same gating items — a labeling difference, recorded) | **CLOSED-PENDING** — no third assembly until D-DS-INDEP + D-CHAN-ADD + OBL-ARC-FIELD land |
+
+**Minority positions recorded (not adopted, preserved):** (i) Gemini
+Q1: the attainability edge IS the phase boundary; r = 0.5 is "a bulk
+percolation threshold, not the phase boundary" — a substantive
+argument sharpening the majority's diagnosis, which would relocate
+d_s* to 3.0–3.5 (inside the corridor); explicitly NOT acted on —
+the majority's independent experiment decides. (ii) Gemini Q3:
+COHERENT on the linear-response-before-squaring argument — a
+candidate premise for D-CHAN-ADD, not a discharge of it.
+
+**D-DS-INDEP SPEC UPGRADED (merging Gemini's named methodological
+error with the consensus design):** Gemini's catch — a 27-unit array
+cannot locate a phase transition; finite-size scaling shifts are
+severe — is CONFIRMED as a methodological requirement. The mandated
+campaign is now: sizes N = 27, 64, 125 in-container (n_side 3, 4, 5)
+with N = 216 (n_side 6) queued for Kila6 after Route C completes;
+d_s ∈ [2.0, 5.0]; ≥ 2 seeds per cell; the four predeclared
+microscopic order parameters (pair lifetime, partner-change rate,
+bound-state occupancy, correlation/percolation length) PLUS both
+prior locators tracked for coincidence-testing only; NO cosmological
+quantity anywhere in the analysis file; per-size transition
+estimates extrapolated to the large-N limit; the extrapolated
+transition FROZEN before any fold. Preregistration next patch;
+execution follows it.
+
+**CONV-019: CLOSED.** All outcomes final; the lane's gate is
+D-DS-INDEP.
