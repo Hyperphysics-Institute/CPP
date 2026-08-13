@@ -126,3 +126,45 @@ actions; Plain Language summary every turn) · reasoning-capture
 rider on every physics patch · anti-extraction: no factor computed
 toward the band, ever · patch macro after every present_files ·
 CONV-001 single-block format for panel rounds.
+
+---
+
+## SESSION-CLOSE AUDIT (manual, per the capture-and-audit protocol; run at TLA's request, Patch 3096)
+
+**PASS (9):** (1) ID mints — 15 new IDs this session (R-SEA-WEAVE,
+R-ZBW-EXCHANGE, R-QDP-CASCADE, R-CHAIN-COCOON, R-ISOTROPY-NOGRAV,
+R-QDP-GRAV-RESPONSE, R-PAIRPROD-WEAVE, R-PAIRPROD-ASYM,
+R-TUNNEL-ROGUE, R-CC-DIST-CONT, H-FILAMENT-SEED, H-GLUEBALL-SMBH-SEED,
+H-TETRA-DEMOTION, OPEN-ARC-CHURN, OPEN-EXCH-FRAC) — ZERO collisions
+(no pre-session commits contain any of them); each registered in ≥3
+files (definition + dashboard + handover). (2) Reasoning rider —
+`reasoning/3088.md`, `reasoning/3089.md` present; 3090–3095 are
+registration/handover patches whose worker analysis is embedded in
+the registered notes. (3) Verify scripts filed per LANE convention
+(`sea_gravitation/scripts/`, matching priors 3079–3086); no tracked
+`__pycache__`. (4) Patch 3096 was free at claim time; handover
+next-patch claim correct. (5) Founder voice — both 2026-08-12 ruling
+files in `founders_voice/`, verbatim throughout. (6)
+`Registries_pending/` empty (README only) — nothing unmerged. (7)
+Dashboard chain intact 3088→3094. (8) All four provenance banners
+(Patch 3088) present on the contaminated records. (9) Repo tree
+clean at close.
+
+**FLAG F-1 (blocking-at-bootup class, per the protocol's own §5):**
+the nightly heartbeat in `Development/audit_log.md` is STALE — last
+entry **2026-07-09**, ~34 days ago. The scheduler on the local
+machine has stopped, and the loud-failure rail failed silently — the
+exact rot §2D exists to catch. No content was lost (every run in the
+log shows transcripts=0; the §3.1 auto-capture mechanism was never
+built, so the audit had nothing to consume), but the scheduler
+outage must be routed to the machine owner (Isak's domain) and the
+next window's bootup must treat the stale heartbeat as the blocking
+flag it is until resolved or formally waived by TLA.
+
+**FLAG F-2 (TLA mechanical action, recommended):** today's session
+transcript is not yet exported to `Development/transcripts/`. Given
+the constitutional weight of today's rulings (R-SEA-WEAVE,
+R-ZBW-EXCHANGE, the glueball hook, the pair-production history), the
+raw verbatim backstop is worth having: export the chat with the
+standing pattern, e.g.
+`2026-08-12_export_260812-3088-3095-signs-weave-exchange.md`.
