@@ -162,6 +162,14 @@ label churn physical relabeling or perigee-rule thrash, and does the
 criterion's intent (Stage-2's switch fraction 0.07–0.14, a different
 normalization) survive a per-episode counting?
 
+> **ADDENDUM (Patch 3093):** OPEN-ARC-CHURN is RESOLVED-REINTERPRETED
+> by founder ruling R-ZBW-EXCHANGE — partner switching on ZBW
+> encounters is a ruled feature of the Sea (the exchange equilibrium
+> maintaining the transient free-species population), not a model
+> defect. The disposition above stands as written; the successor
+> quantity is OPEN-EXCH-FRAC. See
+> `founders_voice/founder_ruling_fq64_sea_weave_zbw_exchange_2026-08-12.md` §6.
+
 ## §7 — Ledger
 
 φ₁ REOPENED (needs d_s) · φ₂ = 1 CLOSED · **φ₃ ≈ 0.2-class: the

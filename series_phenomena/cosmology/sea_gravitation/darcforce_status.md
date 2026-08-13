@@ -25,7 +25,7 @@ brake necessary per R-CP-ENTROPIC-LOSS). At recurrence onset
 d_s ∈ {8, 12, 16} and seeds — overlapping Stage-2's independent
 0.19–0.25. Criterion disposition: three of four components MET;
 f_sw NOT met as coded, with the R-SWAP-EQUIV qualifier (swap
-fraction cancels from η_z) — registered as **OPEN-ARC-CHURN**.
+fraction cancels from η_z) — registered as **OPEN-ARC-CHURN** (RESOLVED-REINTERPRETED at 3093: R-ZBW-EXCHANGE — the swap channel is ruled exchange physics; successor quantity OPEN-EXCH-FRAC).
 Flags held open, not resolved by convenience: per-axis vs 3D
 projection into ρ_Λ (belongs to the assembly derivation); the σ_n
 operating point (derive the floor per R-JITTER-SOURCE or rule the
