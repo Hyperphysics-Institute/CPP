@@ -93,3 +93,29 @@ no-dissent rules). Next lane milestone: the D-DS-INDEP
 preregistration (design constraints per the mandate above) —
 committed only after the outstanding seats return or the founder
 directs otherwise. Kila6 Route C and the DM ledger untouched.
+
+---
+
+## §5 — ADDENDUM (13 Aug 2026, Patch 3117): the Grok seat confirms; duplication flag RESOLVED
+
+Grok returned a confirmation affirming the six verdicts "as written"
+with fresh independent elaboration (restating the locator objection
+in its own terms, re-deriving the erratum arithmetic, and endorsing
+the D-DS-INDEP design). **The duplication flag is RESOLVED: GPT and
+Grok count as two independent responsive seats.** Tallies update to
+3 distinct responsive seats (GPT, Grok, Copilot); all §2 outcomes
+unchanged and strengthened (Q1/Q3/Q4/Q6 now unanimous across three
+distinct seats; Q5 CONCUR ×3; Q2 two RATIFY + one MODIFY-absorbed).
+
+One precision note for the registry, so the record does not inherit
+an overstatement: Grok's closing claim that the D-DS-INDEP
+experiment "simultaneously closes the three Q6 items" is too strong.
+D-DS-INDEP closes item (a) — the independent boundary definition.
+Items (b) D-CHAN-ADD (the channel addition rule) and (c)
+OBL-ARC-FIELD (the arc-force field-state exposition) are separate
+derivation/exposition items and remain independently open.
+
+**Outstanding: the Gemini and DeepSeek seats have NOT ruled on
+CONV-019** (both answered the prior round). The CONV-019 block
+(3115) awaits re-dispatch to those two; Q1–Q3 tallies finalize on
+their return.
