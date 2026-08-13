@@ -19,7 +19,7 @@ import numpy as np
 
 SIG_N = 0.30
 T = 3000
-STATE = "/tmp/3120_state.json"
+STATE = "/tmp/3121_state.json"  # v2 state; v1 retained at /tmp/3120_state.json
 
 
 def run(ds, n_side, seed):
@@ -58,25 +58,43 @@ def run(ds, n_side, seed):
         np.einsum('iik->ik', Bk)[:] = 0.0
         B = Bk.sum(axis=1)
         F = F + q[:, None]*np.cross(Vc, B)
-        for i in range(Nc):
-            p = partner[i]
-            dv = D[i, p]; rr = r[i, p]
-            if not co[i, p]:
-                F[i] -= qq[i, p]/(max(rr, 1.0)**2 * rr) * dv
-            tr = min(ptr[i], t-1)
-            def gap(tt):
-                w = X[i] - Hist[tt, p]; w -= L*np.round(w/L)
-                return np.sqrt(w@w)
-            while tr+1 <= t-1 and (t-(tr+1)) >= gap(tr+1):
-                tr += 1
-            while tr >= 0 and (t-tr) < gap(tr):
-                tr -= 1
-            ptr[i] = max(tr, 0)
-            if tr >= 0:
-                w = X[i] - Hist[tr, p]; w -= L*np.round(w/L)
-                s = np.sqrt(w@w)
-                if s > 1e-9:
-                    F[i] += Gcp[i]*qq[i, p]/(max(s, 1.0)**2 * s) * w
+        # --- retarded partner term, VECTORIZED (declared instrument
+        # optimization, Patch 3121: identical arithmetic per element;
+        # bit-identity regression vs the part-1 state REQUIRED) -------
+        P = partner
+        qp = qq[idx, P]
+        dvp = D[idx, P]; rrp = r[idx, P]; cop = co[idx, P]
+        F -= np.where(cop, 0.0, qp/(np.maximum(rrp, 1.0)**2 * rrp))[:, None] * dvp
+        tr = np.minimum(ptr, t-1)
+        # advance to fixpoint
+        for _ in range(64):
+            cand = tr + 1
+            ok = cand <= t-1
+            cc = np.where(ok, cand, 0)
+            w = X - Hist[cc, P]; w -= L*np.round(w/L)
+            g = np.sqrt(np.einsum('ij,ij->i', w, w))
+            adv = ok & ((t - cand) >= g)
+            if not adv.any():
+                break
+            tr = np.where(adv, cand, tr)
+        # retreat to fixpoint
+        for _ in range(64):
+            ok = tr >= 0
+            cc = np.where(ok, tr, 0)
+            w = X - Hist[cc, P]; w -= L*np.round(w/L)
+            g = np.sqrt(np.einsum('ij,ij->i', w, w))
+            ret = ok & ((t - tr) < g)
+            if not ret.any():
+                break
+            tr = np.where(ret, tr - 1, tr)
+        ptr[:] = np.maximum(tr, 0)
+        use = tr >= 0
+        cc = np.where(use, tr, 0)
+        w = X - Hist[cc, P]; w -= L*np.round(w/L)
+        s = np.sqrt(np.einsum('ij,ij->i', w, w))
+        good = use & (s > 1e-9)
+        coef = np.where(good, Gcp*qp/(np.maximum(s, 1.0)**2 * np.where(s > 1e-9, s, 1.0)), 0.0)
+        F += coef[:, None] * w
         fld = rng.normal(0, SIG_N, (Nc, 3))
         near = r[idx, partner] < 1.0
         for i in np.where(near)[0]:
