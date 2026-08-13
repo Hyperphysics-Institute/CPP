@@ -130,3 +130,83 @@ A-1 census recount · φ₂ = 1 · φ₃ ≈ 0.2-class, 3088 qualifiers, with
 the f_sw qualifier now RESOLVED-REINTERPRETED per §6 ·
 OPEN-EXCH-FRAC registered · A-1..A-6 active. Kila6 Route C runs;
 arrival trumps all.
+
+
+---
+
+## §8 — ADDENDUM (Patch 3094): polarity resolved, the asymmetry refinement, and the historical note (verbatim)
+
+**Polarity:** the founder confirms the §2 flag was a typo — the freed
+plus member seeds the positron; the delayed minus member emerges as
+the electron. R-PAIRPROD-WEAVE stands corrected; the flag is closed.
+
+> You are correct; my error, a typo. As you correctly stated, pair
+> production is exactly how I have envisioned it.
+
+**R-PAIRPROD-ASYM (refinement, registered):**
+
+> It may be an unnecessary refinement, or it may be the main effect,
+> but the passage of a gamma near a nucleus is asymmetrical on the
+> effect of the minus eCP because of the difference in the SSV_abs;
+> this results in an asymmetrical PSR traveled by the minus eCP and
+> the plus eCP, causing the photon's energy to be converted into the
+> mass organization (polarized DP Sea and orbital ZBW eDP) to create
+> the electron as the minus eCP came into nearer proximity to the
+> nucleus due to the photon's polarization of the eDPs as it passed
+> in proximity to the nucleus. Note that the photon is merely a
+> correlation wave of separated eDPs as the PSR Shell advances.
+
+The nuclear SSV_abs gradient breaks the ± symmetry of the PSR
+traveled — the conversion mechanism from photon correlation energy
+to organized mass (polarized Sea + orbital ZBW eDP). Whether it is
+a correction or the main effect is registered as an open question of
+the pair-production lane, not resolved here.
+
+**Historical note (registered for the record and the TATWD
+material):**
+
+> As a historical note, pair production and pair annihilation were
+> the first phenomena that I examined when I was introduced to the
+> concept of the Dirac Sea by my physics mentor, Steven J. Smith, in
+> Portland, OR, in 1988. He told me about the Dirac Sea of electrons
+> and positrons. I used/altered/extended that concept to justify the
+> existence of the Dipole Sea composed of only eDPs. It took me til
+> 2015 or 16 to develop the concept of the qDP; the decay products
+> of the muon were my Rosetta Stone for decoding the particle zoo.
+> [...] It was with the realization of the mechanism of pair
+> production that I was certain that this framing of the subquantum
+> realm had merit.
+
+## §9 — The founder on R-SWAP-EQUIV as a triangulation standard (verbatim)
+
+> The most exciting thing is that we have a confirmation/mechanism
+> to explain/solve the problem of (R-SWAP-EQUIV)! The idea that we
+> now have a standard/metric that we can use to judge a number of
+> different phenomena and triangulate physical constants is very
+> useful!
+
+Registered framing: R-ZBW-EXCHANGE supplies the MECHANISM beneath
+R-SWAP-EQUIV's statistical equivalence (swap and faithful restarts
+draw from the same environmental randomness BECAUSE both are moves
+of one exchange equilibrium), and OPEN-EXCH-FRAC — the transient-
+population fraction, measurable in the 3088-class arrays — becomes a
+cross-phenomenon standard: the same number feeds pair-production
+availability, tunneling (rogue-wave) statistics, quark-isolation
+scavenging, and the exchange-side systematics of η_z. A
+swarm-validation node in the making.
+
+## §10 — A-3 CLOSED (register-blind annihilation verified)
+
+The D2 exclusion's engine is geometric: the 600-cell 12-neighbour
+shell is an icosahedron (spherical 5-design), so the shell-sum's
+monopole Σv̂ = 0 EXACTLY and the operator reduces to the isotropic
+Laplacian on the sampled scalar (Patches 1107–1108). The identity
+annihilates the uniform part of WHATEVER scalar the shell samples.
+AP-4b defines the gravitational source SSV_abs = Σ|polar| +
+k·Σ|strong| sampled over the SAME shell — therefore a uniform
+strong-register addition from the weave is annihilated exactly as
+the electric one: same shell, same sampling, zero new physics. The
+weave's ground state is Friedmann-silent in BOTH registers; only
+Δ(SSV_abs) sources. **A-3 verified and closed.** (The k-weighting
+survives where it should: in the VALUE of perturbations — excess
+structures' clouds — which is φ_comp's W, untouched here.)
