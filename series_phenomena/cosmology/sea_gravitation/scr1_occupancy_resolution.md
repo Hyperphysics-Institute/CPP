@@ -7,6 +7,14 @@
 > spacing d; φ₁'s value is VOID pending the d ruling (FQ-4.1/4.2).
 > The v1.0–v1.1 text is preserved unedited below per the
 > frozen-record protocol.]
+>
+> **[POINTER — Patch 3097, 12 Aug 2026: the census is RECOUNTED under
+> R-SEA-WEAVE at `a1_weave_census_recount.md` — φ₁ = 2 × [1 + O(ξ²/d²)]
+> on the declared canonical inter-unit-spacing anchoring (2^{−1/3} ×
+> that under fixed-DP-density anchoring), unit-internal exclusion
+> convention named, arrangement bracket [0.78, 1.35] on C₄′ flagged,
+> OPEN-EXCH-FRAC rider attached. The recount fully supersedes the
+> voided φ₁ = 0.49 below.]**
 
 # SCR-1 RESOLVED — PAIR DENSITY / OCCUPANCY: φ₁ = 0.4844 (dynamic-matching cycle average), plus a ~2% truncation erratum on the 3067 C₄
 
