@@ -1,3 +1,10 @@
+> **[BANNER — Patch 3100, 13 Aug 2026: FQ-7.2/7.3 RULED
+> (`founders_voice/founder_ruling_fq72_fq73_ds_boundary_13gp_2026-08-13.md`).
+> The §5 "NO RULING YET" is superseded: H-EXCH-VOLFILL's filling
+> clause is RULED IN SUBSTANCE via the FQ-7.2 answer (R-DS-BOUNDARY);
+> the sign clause and D-VOLFILL-LEDGER remain standing worker
+> obligations; T-CC-CONT-1 RESOLVED in the driver reading.]**
+
 # FQ-7.1 EXCHANGE — THE FOUNDER'S VOLUME-FILLING MECHANISM (H-EXCH-VOLFILL, registered verbatim): expansion-opened volume shifts the ZBW exchange equilibrium toward NEW PAIR FORMATION, increasing the entity count that fills the space — the founder's gas-in-a-balloon pressure picture; worker assessment requested and given: the mechanism passes as a DENSITY-MAINTENANCE (tension) story and fails as a raw kinetic-pressure story, by CPP's OWN derived acceleration criterion; the CP-permanence inventory ledger is the load-bearing check; NO RULING YET
 
 **Patch 3099 (13 Aug 2026). The founder's response to the D-DS-RELIC
