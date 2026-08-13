@@ -86,3 +86,11 @@ and the full patch lineage 3097–3107. The founder receives the same,
 with the standing physical-picture questions. Kila6 Route C and the
 DM ledger untouched — the DM lane's six-of-seven and Candidate B's
 79.5% are unaffected by this verdict.
+
+---
+
+**ERRATUM (appended 13 Aug 2026, Patch 3116; CONV-019 panel catch —
+original text above unaltered):** §2's "×2.2 … ×62" are shortfalls
+to the band's LOWER edge (0.6) — the minimum correction required to
+reach viability. Against the band's upper edge (0.9) the worst
+corner is ×137. Convention now stated; verdict unaffected.
