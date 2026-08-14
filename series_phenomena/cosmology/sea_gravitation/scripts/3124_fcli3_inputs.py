@@ -6,7 +6,7 @@ lagged arc scheme = the campaign scheme), 3104 S3 read-outs."""
 import sys, json, os
 import numpy as np
 
-def run_cell(ds, n_side, seed, T=3000):
+def run_cell(ds, n_side, seed, T=3000, sig_n=0.30):
     rng = np.random.default_rng(seed)
     Np = n_side**3; Nc = 2*Np; L = n_side*ds
     grid = np.array([[i,j,kk] for i in range(n_side) for j in range(n_side)
@@ -49,7 +49,7 @@ def run_cell(ds, n_side, seed, T=3000):
         s = np.sqrt(np.einsum('ij,ij->i',w,w))
         good = use & (s>1e-9)
         Fc += np.where(good, Gcp*qp/(np.maximum(s,1.0)**2*np.where(s>1e-9,s,1.0)), 0.0)[:,None]*w
-        fld = rng.normal(0,0.30,(Nc,3))
+        fld = rng.normal(0,sig_n,(Nc,3))
         near = r[idx,partner]<1.0
         for i in np.where(near)[0]:
             if i<partner[i]: fld[partner[i]]=fld[i]
@@ -79,11 +79,19 @@ def run_cell(ds, n_side, seed, T=3000):
     We,Wq=W[:,eq],W[:,qm]
     ge=We>ds/2.0; gq=Wq>ds/2.0
     be=We[We<=ds/2.0]; bq=Wq[Wq<=ds/2.0]
+    # threshold-variant aggregates (OBL-INV-SENS): 0.75*ds gas threshold
+    ge2=We>0.75*ds; gq2=Wq>0.75*ds
+    be2=We[We<=0.75*ds]; bq2=Wq[Wq<=0.75*ds]
     return dict(r_e=float(ge.mean()),
                 x_q=float(gq.sum()/max(ge.sum()+gq.sum(),1)),
                 eta_gas=float((We**2)[ge].mean()/ds**2) if ge.any() else np.nan,
                 eta_e=float((be**2).mean()/ds**2) if be.size else np.nan,
-                s=float((bq**2).mean()/(be**2).mean()) if bq.size and be.size else np.nan)
+                s=float((bq**2).mean()/(be**2).mean()) if bq.size and be.size else np.nan,
+                r_e75=float(ge2.mean()),
+                x_q75=float(gq2.sum()/max(ge2.sum()+gq2.sum(),1)),
+                eta_gas75=float((We**2)[ge2].mean()/ds**2) if ge2.any() else np.nan,
+                eta_e75=float((be2**2).mean()/ds**2) if be2.size else np.nan,
+                s75=float((bq2**2).mean()/(be2**2).mean()) if bq2.size and be2.size else np.nan)
 
 ALPHA = 1/137.035999
 C_COH = 68.4841       # (1+k)^2, D-CHAN-ADD derived
