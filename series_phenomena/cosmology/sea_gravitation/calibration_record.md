@@ -57,3 +57,16 @@ hands every future kinetics derivation a fixed target. The four
 fired verdicts remain the permanent record of how the
 first-principles programme was pursued and where it stopped. Kila6
 Route C and the DM ledger untouched; arrival still trumps all.
+
+---
+
+**PANEL BANNER (appended 14 Aug 2026, Patch 3128; original above
+unaltered):** CONV-020 adjudicated: the re-scoping ENDORSED-WITH-
+CONDITIONS by all five seats (obligations register: conv020
+adjudication §2). Q6 majority OVERCLAIMED sustained — the claim
+"the zero-parameter mechanism brackets the observed Λ... closing
+~122 of 123 orders" is WITHDRAWN and replaced by the §3 revised
+language (spacing-consistent span ×1.35-under to ×3.2-over; full
+historical span ~three orders; "zero-parameter" withdrawn pending
+σ_n and latent-input derivation). d_s^emp is ALWAYS
+cosmology-calibrated (OBL-CAL-LABEL).
