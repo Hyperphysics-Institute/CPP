@@ -55,13 +55,20 @@ R = np.sqrt((P**2).sum(1))
 N_sites = len(P)
 
 # precompute outward-neighbor lists and split counts
+# PASS 3 (R-OUTWARD-FANOUT, founder clarification 14 Aug): outward =
+# strictly positive radial COMPONENT (x . d > 0) — radial+tangential
+# combos, never anti-radial; at the ORIGIN all 12 qualify (the
+# spherical first submoment as the rule's own x = 0 limit).
 out_nbrs = [[] for _ in range(N_sites)]
 for i in range(N_sites):
-    ri = R[i]
+    xi = P[i].astype(float)
+    at_origin = (R[i] < 1e-9)
     for d in NBRS:
         q = tuple(P[i] + d)
         j = IDX.get(q)
-        if j is not None and R[j] > ri + 1e-9:
+        if j is None:
+            continue
+        if at_origin or float(xi @ d) > 1e-9:
             out_nbrs[i].append(j)
 
 def relay(T, pulse):

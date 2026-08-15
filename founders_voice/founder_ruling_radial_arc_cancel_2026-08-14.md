@@ -51,3 +51,13 @@ pair's inertia lives in the arc store — the cancellation story is
 the dressed-level account); R-DWELL-1 (the dwell is now MECHANISM,
 not just rule: the arc-cancelled pair has nothing to move it until
 relaunch).
+
+---
+
+**CLARIFICATION BANNER (appended 14 Aug 2026, Patch 3135; original
+above unaltered):** §2's interpretation of "only radial" as
+single-ray ballistic propagation was the WORKER'S over-reading —
+superseded by the founder's clarification (R-OUTWARD-FANOUT:
+every-hop fan-out to all outward-component neighbors; the band is
+genuine physics; F-E2-3 = option (a)). §1's verbatim text and §3
+(R-ARC-CANCEL-TURNAROUND) are unaffected.

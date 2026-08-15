@@ -60,3 +60,16 @@ contact. Remaining inside the examination: the unit normalization
 superposition approach itself (the last submoments before
 co-location, where the arc-cancellation dynamics act). Kila6
 Route C and the DM ledger untouched; arrival still trumps all.
+
+---
+
+**SUPERSESSION BANNER (appended 14 Aug 2026, Patch 3135; original
+above unaltered):** the founder clarified his intent
+(`founders_voice/founder_clarification_outward_fanout_2026-08-14.md`):
+"only radial" meant NO ANTI-RADIAL progression — DI-bits fan out at
+EVERY hop to all outward-component neighbors with equal shares
+(R-OUTWARD-FANOUT). This note's "purely radial single-ray" model,
+its exact-1/s² claim, and its retirement of the band are all
+SUPERSEDED: the ~10% band is GENUINE (F-E2-3 option (a) ruled). The
+kick = E/12 and the maximize-inward conclusion survive. See
+`subpsr_pass3_fanout_results.md`.
