@@ -30,7 +30,7 @@ BAND_PASS = (0.5, 2.0)
 BAND_MARG = (1/3.0, 3.0)
 DS_EMP = 4.64
 
-def run_cell_probe(ds, n_side, seed, T=3000):
+def run_cell_probe(ds, n_side, seed, T=3000, sig_n=0.30):
     rng = np.random.default_rng(seed)
     Np = n_side**3; Nc = 2*Np; L = n_side*ds
     grid = np.array([[i,j,k] for i in range(n_side) for j in range(n_side)
@@ -81,7 +81,7 @@ def run_cell_probe(ds, n_side, seed, T=3000):
         s = np.sqrt(np.einsum('ij,ij->i',w,w))
         good = use & (s>1e-9)
         Fc += np.where(good, Gcp*qp/(np.maximum(s,1.0)**2*np.where(s>1e-9,s,1.0)), 0.0)[:,None]*w
-        fld = rng.normal(0,0.30,(Nc,3))
+        fld = rng.normal(0,sig_n,(Nc,3))
         near = r[idx,partner]<1.0
         for i in np.where(near)[0]:
             if i<partner[i]: fld[partner[i]]=fld[i]
