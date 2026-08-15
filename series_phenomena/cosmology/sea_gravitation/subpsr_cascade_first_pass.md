@@ -79,3 +79,15 @@ decomposition's component (b), closing FQ-12's derivable branch);
 (iv) test the max(r, 1) replacement in one array cell (does the
 d_s = 2.0 anomaly respond?). All flagged provisional until then.
 Kila6 Route C and the DM ledger untouched; arrival still trumps all.
+
+---
+
+**SUPERSESSION BANNER (appended 14 Aug 2026, Patch 3134; original
+above unaltered):** R-RADIAL-AFTER-FIRST (founder ruling) corrects
+the relay reading: the even split is the FIRST SUBMOMENT ONLY,
+purely radial thereafter. The pass-1 findings derived from
+re-splitting every hop — the ~20% softening, the 0.9/√N thickness
+law, the 0.82 front speed, the declining directed fraction — are
+RETIRED as protocol artifacts (as was F-E2-3's ~10% band, months
+older, same cause). The surviving results: exact 1/s² to the
+adjacent GP; kick = E/12. See `subpsr_pass2_radial_resolution.md`.
