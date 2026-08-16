@@ -5,6 +5,34 @@
   Master dashboard: Research_Frontier.md
 -->
 
+## Standing conventions (permanent — not "problems"; never cleared)
+
+### CONV-022 — Patch-number LANE RESERVATION for parallel campaigns
+
+**Founder ruling, 16 Aug 2026 (Patch 3200).** When two campaigns run
+concurrently on different machines, patch numbers are allocated by **reserved
+integer block per lane**, not first-come. First allocation:
+
+| Block | Lane | Note |
+|---|---|---|
+| 3100–3199 | **DE / cosmology lane** (VideoCPU: n=7, n=8 critical-FSS) | HEAD at reservation = 3144 |
+| 3200– | **SR lane** (F-SW-10 delta audit and successors) | opens at 3200 |
+
+**Why this and not alpha-suffix.** The existing collision discipline
+(`operating_system.md` §16 item 7; `templates/paper_completion_checklist.md`;
+Patch 0481M precedent) is *recovery* — it repairs a collision after two windows
+have both claimed an integer. Lane reservation is *prevention*, and it is the
+correct instrument when the concurrency is known in advance and machine-bound.
+The two coexist: alpha-suffix continuation remains the recovery path for an
+unforeseen collision **within** a lane. Reserving a block does not oblige a lane
+to exhaust it; unused numbers in a closed lane's block are retired, not
+reclaimed, so that patch number alone identifies the lane in `git log`.
+
+**Rule for new lanes.** A new parallel campaign takes the next free hundred-block
+at its launch patch, recorded by amending the table above in the same patch.
+
+---
+
 ## Workflow / Infrastructure (WORKFLOW) — 6 problems
 
 ### OPEN-WORKFLOW-1: Consolidate All Bibliography Files
