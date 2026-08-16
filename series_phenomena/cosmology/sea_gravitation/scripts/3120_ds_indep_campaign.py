@@ -169,8 +169,17 @@ def run(ds, n_side, seed):
                  dp_hist[2*th:-1] < 1.0])).sum())
     phase = ("FAITHFUL" if (eta_all < 1.2 and regen >= 5 and 0.5 < stat < 2.0)
              else "OTHER")
+    # --- ADDITIVE instrumentation (Patch 3147, CONV-021-mandated): the
+    # per-Moment bound-fraction series over the same final-third window,
+    # giving the Binder moments. NO dynamics, RNG draws, or existing
+    # outputs are touched -- every prior key is bit-identical. -----------
+    fb_t = (W <= ds/2.0).mean(axis=1)          # per-Moment bound fraction
+    m1 = float(fb_t.mean()); dm = fb_t - m1
+    m2 = float((dm**2).mean()); m4 = float((dm**4).mean())
+    binder = float(1.0 - m4/(3.0*m2**2)) if m2 > 1e-15 else None
     return dict(f_b=f_b, rho_swap=rho_swap, f_dwell=f_dwell,
-                xi_state=xi_state, r=1.0-f_b, phase=phase, stat=stat)
+                xi_state=xi_state, r=1.0-f_b, phase=phase, stat=stat,
+                m2=m2, m4=m4, binder=binder)
 
 
 def peak(dss, vals):
