@@ -123,3 +123,14 @@ Reviewer responses come back to Thomas, who relays them. The assistant then inte
 *Updated Patch 2073 (23 June 2026, SR-10 Round-4 cycle) — added the §4 in-document IDENTITY instruction + §4.1 reviewer-identity disambiguation subsection (known cross-labelling failure mode; remedy is receipt-labelling + attribute-by-content at aggregation, NOT per-reviewer wrappers).*
 
 *Updated Patch 1604 (21 June 2026, SF-6 cycle) — **retired the per-reviewer dispatch prompts (old §3(c)/§4 skeleton) in favour of a single shared document.** The dispatch is now ONE identical copy-paste block pasted to every reviewer; each reviewer's steer (and any disambiguation rider) lives in the package's own §6 "read your own row," which made the per-reviewer wrappers redundant. §3 now emits three blocks (header, single shared document, delivery-mode note); §4 is the reviewer-agnostic single-document lead-in. Trigger and §5 cheat-sheet unchanged.*
+
+---
+
+## Cross-reference — WHETHER to dispatch at all
+
+This protocol governs HOW to build and run a review round. The prior
+question — whether a round should be spent at all — is governed by
+`templates/review_economy_protocol.md` (WORKFLOW-REVIEW-ECONOMY:
+rounds are for wins, exhausted avenues, or panel-named obligations;
+otherwise fix it and freeze the fix before its testing data exists).
+Panel-ratified CONV-021 Q4, 4-1.
