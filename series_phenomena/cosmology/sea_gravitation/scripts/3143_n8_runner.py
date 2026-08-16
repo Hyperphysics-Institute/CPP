@@ -5,7 +5,11 @@ existed). Usage:
     python 3143_n8_runner.py run       (16 cells, 14 workers, ~3-5 h)
     python 3143_n8_runner.py analyze   (prints interval + verdict)
 """
-import sys, os, json, importlib.util
+import os
+for _v in ("OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "OMP_NUM_THREADS",
+           "NUMEXPR_NUM_THREADS"):
+    os.environ.setdefault(_v, "1")   # avoid BLAS/process oversubscription
+import sys, json, importlib.util
 from multiprocessing import Pool
 import numpy as np
 
@@ -32,8 +36,11 @@ def one_cell(args):
 def cmd_run():
     st = json.load(open(STATE)) if os.path.exists(STATE) else {}
     todo = [(ds, sd) for ds in GRID for sd in SEEDS if f"{ds}:{sd}" not in st]
-    print(f"n={NSIDE} cells remaining: {len(todo)}  (checkpointed; safe to interrupt)")
-    with Pool(min(14, max(1, len(todo)))) as p:
+    nw = min(16, max(1, len(todo)))   # 16 cells total -> one batch; worker
+    # count is NOT a scientific parameter (cells are independent, seeded
+    # processes: results bit-identical at any count -- wall clock only)
+    print(f"n={NSIDE} cells remaining: {len(todo)}; workers: {nw}  (checkpointed; safe to interrupt)")
+    with Pool(nw) as p:
         for key, z in p.imap_unordered(one_cell, todo):
             st[key] = z; json.dump(st, open(STATE, "w"))
             print(f"  done {key}: " + " ".join(

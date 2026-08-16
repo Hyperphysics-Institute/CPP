@@ -60,7 +60,7 @@ panel, and the calibration is untouched (OBL-CAL-LABEL).
 
 `scripts/3143_n8_runner.py run` on VideoCPU — n = 8 (512 pairs,
 1024 CPs), the same v2 instrument, grid {1.5…5.0} × seeds {5, 11},
-14 workers, per-cell checkpointing; ≈ 3–5 h wall (scales ~(1024/686)²
+16 workers (= the cell count: ONE batch, no idle tail; worker count is not a scientific parameter — cells are independent seeded processes, bit-identical at any count), per-cell checkpointing; ≈ 2–3 h wall (scales ~(1024/686)²
 per cell), safe to run overnight and resumable. Then
 `scripts/3143_n8_runner.py analyze` prints the frozen interval,
 both fits, and the verdict in the §4 words — paste-back is the only
