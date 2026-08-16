@@ -22,7 +22,7 @@ T = 3000
 STATE = "/tmp/3121_state.json"  # v2 state; v1 retained at /tmp/3120_state.json
 
 
-def run(ds, n_side, seed):
+def run(ds, n_side, seed, r_soft=1.0):
     rng = np.random.default_rng(seed)
     Np = n_side**3; Nc = 2*Np
     L = n_side*ds
@@ -47,7 +47,10 @@ def run(ds, n_side, seed):
         D = X[:, None, :] - X[None, :, :]; D -= L*np.round(D/L)
         r = np.sqrt(np.einsum('ijk,ijk->ij', D, D)); np.fill_diagonal(r, 1.0)
         co = r < 1e-6
-        rs = np.where(co, 1.0, r); re = np.maximum(rs, 1.0)
+        # r_soft: the Coulomb softening radius (Patch 3152 -- parameterized
+        # for the commensuration test; DEFAULT 1.0 is the historical value,
+        # so every prior result is bit-identical).
+        rs = np.where(co, 1.0, r); re = np.maximum(rs, r_soft)
         kern = np.where(co, 0.0, qq/(re**2 * rs))
         F = np.einsum('ij,ijk->ik', kern, D)
         nv = np.sqrt(np.einsum('ij,ij->i', Disp, Disp))
