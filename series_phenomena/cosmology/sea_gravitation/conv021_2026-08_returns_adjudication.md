@@ -75,3 +75,44 @@ ratification is recorded as PRECEDENT: instrument repairs frozen
 before their testing data may proceed without a round; the two-seat
 dissent is preserved verbatim in the record. Kila6 Route C untouched
 and still trumping all.
+
+---
+
+# §5 — RE-ADJUDICATION ON THE INDEPENDENT FIFTH RETURN (Patch 3148; appended, §1–§4 above unaltered)
+
+DeepSeek supplied a GENUINELY INDEPENDENT return (the earlier
+submission, verbatim-identical to Copilot's, is SUPERSEDED and
+retained only as the record of the duplication). Corrected tallies,
+five independent seats:
+
+| Q | corrected tally | change |
+|---|---|---|
+| Q1 estimator | INSUFFICIENT-DATA ×2 (GPT, DeepSeek), NEITHER-SPECIFY ×2 (Gemini, Copilot), DIRECT-CONVERGENCE ×1 (Grok) | **no majority — NO ESTIMATOR FIXED (unchanged outcome, cleaner basis)** |
+| Q2 challenge | **REMAINS-OPEN ×3** (GPT, Gemini, DeepSeek), STANDS-QUANTIFIED ×1, RESOLVES-CONFIRMING ×1 | **STRENGTHENED to a majority** (was 2–2–1) |
+| Q3 convergence | **APPARENT-ONLY ×5** | unanimous, unchanged |
+| Q4 repair w/o round | **PROCEDURALLY-SOUND ×4**, SHOULD-HAVE-DISPATCHED ×1 (Copilot) | **STRENGTHENED 4–1** — the economy-rule precedent is now near-unanimous |
+| Q5 anomaly | UNKNOWN-INVESTIGATE ×4, CONFOUNDING ×1 | strengthened; same mandated diagnostic |
+| Q6 next action | unanimous: n = 9 (±10), global FSS / scale-invariant diagnostics, anomaly diagnostic | unchanged, adopted |
+
+## §5.1 — Rule amendments (adopted BEFORE any n = 9 datum exists)
+
+1. **DeepSeek's stricter drift diagnostic ADOPTED as a reported
+   companion:** |Δpeak| ≤ 0.005 at the last two steps. The frozen
+   primary test (≤ 0.02) is NOT replaced — instead, **disagreement
+   between the two tests is itself a REMAINS-OPEN trigger.** Strictly
+   more conservative; cannot manufacture a resolution.
+2. **The collapse estimator is computed BOTH ways** — over all cells
+   and excluding the d_s ∈ [1.7, 2.3] anomaly region (DeepSeek's and
+   Copilot's request). A shift > 0.05 between them CONFIRMS Q5
+   CONFOUNDING and is reported as such.
+3. **DeepSeek's concrete finding — PARTIALLY SUSTAINED with
+   clarification.** A pre-declared rule for the secondary refit DID
+   exist ("reported, never substituted", 3143 §3.3), so it can never
+   supersede; but the record never stated its ROLE, which is the
+   ambiguity DeepSeek names. **Stated now: the drop-n=3 refit is a
+   SENSITIVITY DIAGNOSTIC, never an estimator, and no verdict may
+   ever be taken from it.** Recorded corpus-wide.
+
+The frozen d_s* = 2.450 stands unrevised; the calibration is
+untouched (OBL-CAL-LABEL); the mandated pass (§3) runs unchanged
+except for the strictly-more-conservative additions above.

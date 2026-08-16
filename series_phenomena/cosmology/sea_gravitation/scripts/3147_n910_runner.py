@@ -74,9 +74,15 @@ def cmd_analyze():
     steps=[seq[i+1]-seq[i] for i in range(len(seq)-1)]
     ok = (len(seq)>=6 and abs(steps[-1])<=0.02 and abs(steps[-2])<=0.02
           and abs(sum(steps[-3:]))<=0.03)
+    # DeepSeek (CONV-021 independent return): stricter drift diagnostic,
+    # amended in BEFORE any n=9 data existed; REPORTED, and a disagreement
+    # with the primary test is itself a REMAINS-OPEN trigger (Patch 3148).
+    strict = (len(seq)>=6 and abs(steps[-1])<=0.005 and abs(steps[-2])<=0.005)
     E1=seq[-1]
-    print(f"E1 peak-convergence = {E1:.4f}; last steps {[f'{s:+.4f}' for s in steps[-3:]]}; "
-          f"convergence test: {'ESTABLISHED-CONVERGED' if ok else 'FAILED'}")
+    print(f"E1 peak-convergence = {E1:.4f}; last steps {[f'{s:+.4f}' for s in steps[-3:]]}")
+    print(f"   primary test (<=0.02): {'PASS' if ok else 'FAIL'};  "
+          f"strict test (<=0.005, DeepSeek): {'PASS' if strict else 'FAIL'}"
+          f"{'   [DISAGREE -> REMAINS-OPEN trigger]' if ok != strict else ''}")
     # E2 Binder crossings between adjacent sizes n>=6
     ns=sorted([n for n in bdn if n>=6]); cross=[]
     for a,b in zip(ns,ns[1:]):
@@ -88,26 +94,36 @@ def cmd_analyze():
     print(f"E2 Binder crossings {['%.4f'%c for c in cross]}")
     E2=float(np.mean(cross[-2:])) if len(cross)>=2 else (cross[-1] if cross else None)
     # E3 global data collapse over n>=6
-    best=None
-    for dc in np.arange(1.8,3.4,0.005):
+    def collapse(exclude_anom):
+      best=None
+      for dc in np.arange(1.8,3.4,0.005):
         for nu in np.arange(0.4,3.01,0.02):
             pts=[]
             for n in [x for x in fbn if x>=6]:
                 ds,v=fbn[n]
-                for d,val in zip(ds,v): pts.append(((d-dc)*n**(1.0/nu), val))
+                for d,val in zip(ds,v):
+                    if exclude_anom and 1.7 <= d <= 2.3: continue
+                    pts.append(((d-dc)*n**(1.0/nu), val))
             pts.sort()
             x=np.array([p[0] for p in pts]); y=np.array([p[1] for p in pts])
             m=(x>-8)&(x<8)
             if m.sum()<10: continue
             r=float(np.mean(np.abs(np.diff(y[m]))))     # collapse roughness
             if best is None or r<best[0]: best=(r,float(dc),float(nu))
-    E3=best[1] if best else None
-    print(f"E3 collapse d_c = {E3}  (nu = {best[2] if best else None})")
+      return best
+    b_all = collapse(False); b_ex = collapse(True)
+    E3 = b_all[1] if b_all else None
+    E3x = b_ex[1] if b_ex else None
+    print(f"E3 collapse d_c = {E3} (nu = {b_all[2] if b_all else None});  "
+          f"excluding the d_s=2.0 region (DeepSeek/Copilot): {E3x} "
+          f"(nu = {b_ex[2] if b_ex else None})")
+    if E3 is not None and E3x is not None and abs(E3-E3x) > 0.05:
+        print("   [collapse SHIFTS when the anomaly region is removed -> Q5 CONFOUNDING confirmed]")
     Es=[e for e in (E1,E2,E3) if e is not None]
     spread=max(Es)-min(Es); Dres=float(np.mean(Es))
     print(f"\nestimator spread = {spread:.4f}; D_res = {Dres:.4f}")
     print("=== VERDICT (frozen, adjudication S3) ===")
-    if not ok or spread>0.10:
+    if (not ok) or (ok != strict) or spread>0.10:
         print("REMAINS-OPEN -> back to panel with all three numbers")
     elif abs(Dres-2.450)<=0.182:
         print(f"|{Dres:.3f} - 2.450| = {abs(Dres-2.450):.3f} <= 0.182: CHALLENGE RESOLVES-CONFIRMING")
