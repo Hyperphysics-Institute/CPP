@@ -7,6 +7,23 @@
 
 ## Standing conventions (permanent — not "problems"; never cleared)
 
+### CONV-023 — "turnaround": three senses, one convention
+
+**Registered Patch 3203 (F-SW-10 R-5).** Full reasoning:
+`series_relativity/audits/3203_fsw10_r5_turnaround_terminology_findings.md`.
+
+| Sense | Referent | Rule |
+|---|---|---|
+| **A** | ZBW pair's stop-and-reverse at superposition (R-ARC-CANCEL-TURNAROUND, 3134) | **Must be qualified on first use** in any paper section — *ZBW turnaround*, *arc-cancel turnaround*, or an explicit superposition construction. Bare *turnaround* for this sense is not permitted in shipped prose. All current sites comply. |
+| **B** | Relativistic trajectory reversal (twin paradox) | **Unqualified *turnaround* is correct and standard.** Do not "fix" it — it is the universal term in the SR literature and renaming it would read as an error to reviewers. |
+| **C** | Elapsed project time ("24-hour turnaround", "reviewer turnaround") | **Out of scope permanently.** Ordinary English idiom, no collision risk. Excluded with prejudice; future sweeps must not re-raise it. |
+
+**Note for future auditors:** R-2.5 initially recommended the opposite asymmetry
+(qualify the relativistic sense, leave the ZBW sense bare). That recommendation
+was examined and **reversed** at R-5. The principle established: a delta audit
+keeps the corpus consistent with its own rulings; it does not impose
+CPP-internal vocabulary onto terms that physics already owns.
+
 ### CONV-022 — Patch-number LANE RESERVATION for parallel campaigns
 
 **Founder ruling, 16 Aug 2026 (Patch 3200).** When two campaigns run
