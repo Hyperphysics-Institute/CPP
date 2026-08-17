@@ -19,6 +19,7 @@ STATE=os.path.join(HERE,"3152_state.json")
 NSIDE=7; SEEDS=[5,11]
 DS=[1.4,1.5,1.6,1.9,2.0,2.1,2.4,2.5,2.6]
 RSOFT=[0.75,1.25]          # predicted feature locations: 1.5 and 2.5
+CONTROL=[1.0]              # Patch 3153: the missing n=7 baseline (size/r_soft deconfound)
 
 def cell(a):
     ds,rs,sd=a
@@ -28,7 +29,8 @@ def cell(a):
 
 def cmd_run():
     st=json.load(open(STATE)) if os.path.exists(STATE) else {}
-    todo=[(ds,rs,sd) for rs in RSOFT for ds in DS for sd in SEEDS if f"{rs}:{ds}:{sd}" not in st]
+    rlist = CONTROL if (len(sys.argv)>2 and sys.argv[2]=="control") else RSOFT
+    todo=[(ds,rs,sd) for rs in rlist for ds in DS for sd in SEEDS if f"{rs}:{ds}:{sd}" not in st]
     print(f"cells remaining: {len(todo)}; workers: {min(16,max(1,len(todo)))}")
     with Pool(min(16,max(1,len(todo)))) as p:
         for k,z in p.imap_unordered(cell,todo):
