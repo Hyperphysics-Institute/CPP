@@ -3,6 +3,20 @@
 % in Conscious Point Physics
 % Companion Paper to “Mechanistic Derivation of Relativistic Effects
 % via Space Stress Vector (SSV) in the Dipole Sea” (Version 16)
+% Version 2.1 — 16 August 2026 (Patch 3210): MATHEMATICS CORRECTED.
+%   (a) eq:rin and its abstract twin stated r_in = aBohr/(4(1+sqrt2)^2)
+%       = aBohr/(24+16 sqrt2). The two forms are not equal:
+%       4(1+sqrt2)^2 = 23.3137, while 24+16 sqrt2 = 46.6274 — a factor
+%       of 2. The first form is correct and is what the paper's own
+%       numerics (23.31, 0.0429, 2.270e-12 m) use throughout. The
+%       expanded form is corrected to 12+8 sqrt2.
+%   (b) The lepton scaling claim read 'radii scale as 1/m_ell^2 through
+%       aBohr ∝ 1/m', which is self-inconsistent. Rederivation from the
+%       paper's own eq:force_balance and L = m w_out r_in^2 (2sqrt2+4)
+%       with L = hbar/2 gives r_in = hbar^2/(4 e^2 k_e m (1+sqrt2)^2),
+%       i.e. r_in ∝ 1/m exactly. Corrected to 1/m_ell.
+%   No other result changes; every other occurrence already used the
+%   correct 4(1+sqrt2)^2 form.
 % Version 2 — Revised with glossary wording, open-problem clarification,
 % and numerical-ratio column
 % 16 March 2026
@@ -51,7 +65,10 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{16 March 2026 --- Version~2}
+\date{16 March 2026 --- Version~2\\[2pt]
+{\small Version~2.1 --- 16 August 2026 (Patch 3210: corrected the
+expanded denominator in Eq.~(\ref{eq:rin}) and the lepton radius
+scaling exponent; see CHANGELOG.)}}
 
 \begin{document}
 \maketitle
@@ -115,7 +132,7 @@ captured DP is:
 which equals $\hbar/2$ exactly when:
 \begin{equation}
   \rin \;=\; \frac{\aBohr}{4(1+\sqrt{2})^2}
-  \;=\; \frac{\aBohr}{24+16\sqrt{2}},
+  \;=\; \frac{\aBohr}{12+8\sqrt{2}},
   \label{eq:rin_abstract}
 \end{equation}
 where $\aBohr = \hbar^2/(m_e k_e e^2)$ is the Bohr radius.
@@ -296,7 +313,7 @@ The total orbital angular momentum of the captured DP equals $\hbar/2$
 when the inner orbital radius is:
 \begin{equation}
   \rin \;=\; \frac{\aBohr}{4(1+\sqrt{2})^2}
-  \;=\; \frac{\aBohr}{24+16\sqrt{2}},
+  \;=\; \frac{\aBohr}{12+8\sqrt{2}},
   \label{eq:rin}
 \end{equation}
 where $\aBohr = \hbar^2/(m_e k_e e^2)$ is the Bohr radius.
@@ -397,7 +414,7 @@ mechanism applies to all spin-$1/2$ Standard Model fermions:
 
 \begin{itemize}[noitemsep]
   \item \textbf{Muon, tau:} Same eDP capture mechanism with higher
-    mass eigenvalue; the orbital radii scale as $1/m_\ell^2$ through
+    mass eigenvalue; the orbital radii scale as $1/m_\ell$ through
     $\aBohr \propto 1/m$ in Eq.~\eqref{eq:rin}.
   \item \textbf{Quarks:} qDP capture around an unpaired qCP, with
     the strong-force analog of the Coulomb potential replacing $k_e e^2$.
