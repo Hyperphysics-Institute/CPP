@@ -36,6 +36,9 @@ def cmd_run(which):
     if which == "anom":
         todo = [(ds,n,sd) for n in (8,9) for ds in FINE for sd in SEEDS
                 if f"{n}:{ds}:{sd}" not in st]; nw = 16
+    elif which == "cross":       # Patch 3156: the Binder-crossing confirmation
+        todo = [(ds,n,sd) for n in (8,9,10) for ds in (1.78,1.82,1.86)
+                for sd in SEEDS if f"{n}:{ds}:{sd}" not in st]; nw = 12
     elif which == "anom11":      # Patch 3155: the spot-check at n=11
         todo = [(ds,11,sd) for ds in (1.9,2.0,2.1,2.2) for sd in SEEDS
                 if f"11:{ds}:{sd}" not in st]; nw = 8
