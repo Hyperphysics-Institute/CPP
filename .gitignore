@@ -35,3 +35,4 @@ desktop.ini
 # Flagship paper v1.0+ SHIP PDFs (committed deliberately at milestone Patches;
 # working-draft compilation PDFs in deeper subfolders remain ignored)
 !flagship_papers/*/*.pdf
+anaconda_projects/
