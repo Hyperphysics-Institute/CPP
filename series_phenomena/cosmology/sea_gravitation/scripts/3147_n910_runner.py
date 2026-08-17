@@ -36,6 +36,9 @@ def cmd_run(which):
     if which == "anom":
         todo = [(ds,n,sd) for n in (8,9) for ds in FINE for sd in SEEDS
                 if f"{n}:{ds}:{sd}" not in st]; nw = 16
+    elif which == "anom10":      # Patch 3154: the spike's size-scaling at n=10
+        todo = [(ds,10,sd) for ds in FINE for sd in SEEDS
+                if f"10:{ds}:{sd}" not in st]; nw = 8
     else:
         n = int(which)
         todo = [(ds,n,sd) for ds in GRID for sd in SEEDS if f"{n}:{ds}:{sd}" not in st]
