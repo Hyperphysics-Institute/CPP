@@ -6,8 +6,8 @@
 
 | Verdict | Count | Meaning |
 |---|---|---|
-| **READY** | 25 of 117 | Compiles clean, no unfinished markers, no internal jargon in the rendered text. Deposit as-is. |
-| **MASSAGE** | 85 | Compiles, but the PDF carries internal programme machinery (patch numbers, OPEN- IDs, governance codes) or has unresolved refs/citations. Publishable after a read-through. |
+| **READY** | 38 of 117 | Compiles clean, no unfinished markers, no internal jargon in the rendered text. Deposit as-is. |
+| **MASSAGE** | 72 | Compiles, but the PDF carries internal programme machinery (patch numbers, OPEN- IDs, governance codes) or has unresolved refs/citations. Publishable after a read-through. |
 | **BLOCKED — content** | 7 | Compiles, but contains unfinished markers or not-for-circulation text. Must be fixed. |
 | **BLOCKED — compile** | 0 | Produces no PDF. Cannot be deposited at all. |
 
@@ -15,14 +15,23 @@ Comment lines (`%`) are stripped before content scanning — internal notes in c
 
 ---
 
-## READY — 25
+## READY — 38
 
 | Paper | Pages |
 |---|---|
+| `series_electroweak/papers/EW-1_electroweak_introduction.tex` | 6 |
 | `series_electroweak/papers/EW-2_w_boson_from_cpp.tex` | 6 |
+| `series_electroweak/papers/EW-3_z_boson_from_cpp.tex` | 5 |
 | `series_electroweak/papers/EW-4_higgs_boson_from_cpp.tex` | 5 |
+| `series_electroweak/papers/EW-5_electroweak_unification.tex` | 6 |
 | `series_foundations/TN-SR-1_vacuum_energy_holographic_suppression.tex` | 4 |
 | `series_foundations/dp-sea-polarization/DP-Sea-Polarization-Model.tex` | 3 |
+| `series_foundations/series_superdeterminism/SD-1_nexus_superdeterminism.tex` | 12 |
+| `series_foundations/series_superdeterminism/SD-2_h4_angular_structure.tex` | 11 |
+| `series_foundations/series_superdeterminism/SD-3_apparatus_model.tex` | 10 |
+| `series_foundations/series_superdeterminism/SD-4_nexus_correlation_function.tex` | 11 |
+| `series_quantum_mechanics/papers/QM-4_measurement_problem.tex` | 7 |
+| `series_quantum_mechanics/papers/QM-5_qft_emergence.tex` | 6 |
 | `series_relativity/SR_companion_papers/c05_newtonian_gravity_from_SSV/c05_gravity_from_SSV_shell_broadcast.tex` | 6 |
 | `series_relativity/SR_companion_papers/c08_strong-field_GR.tex/c08_strong-field_GR.tex` | 13 |
 | `series_relativity/SR_companion_papers/c10_Hawking_Radiation_and_the_Planck_Remnant/c10_Hawking_Radiation.tex` | 8 |
@@ -35,9 +44,13 @@ Comment lines (`%`) are stripped before content scanning — internal notes in c
 | `series_standard_model/papers/SM-10_chain_network_FEM.tex` | 10 |
 | `series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex` | 8 |
 | `series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex` | 10 |
+| `series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex` | 8 |
 | `series_standard_model/papers/SM-4_charged_lepton_masses_from_k3.tex` | 5 |
 | `series_standard_model/papers/SM-5_tribimaximal_neutrino_mixing_from_k3.tex` | 6 |
+| `series_standard_model/papers/SM-6_lepton_mass_spectrum.tex` | 17 |
+| `series_standard_model/papers/SM-9_scaling_exponent.tex` | 12 |
 | `series_standard_model/papers/SM-TN-2_bridge_original_to_600cell.tex` | 3 |
+| `series_strong/papers/SS-1_strong_sector_from_600cell_lattice.tex` | 23 |
 | `series_strong/papers/SS-1b_su3_algebra_exact_proof.tex` | 8 |
 | `series_strong/papers/SS-1c_eight_gluons_hdp_structures.tex` | 9 |
 | `series_strong/papers/SS-1d_confinement_beta_function.tex` | 9 |
@@ -45,7 +58,7 @@ Comment lines (`%`) are stripped before content scanning — internal notes in c
 | `series_strong/papers/SS-1f_su3_hop_realization.tex` | 6 |
 | `series_strong/papers/SS-2_lattice_scale_nucleon_structure.tex` | 8 |
 
-## MASSAGE — 85
+## MASSAGE — 72
 
 | Paper | Findings |
 |---|---|
@@ -56,39 +69,26 @@ Comment lines (`%`) are stripped before content scanning — internal notes in c
 | `flagship_papers/neutrinos/sf-4_neutrinos.tex` | internal open-problem ID (OPEN-...) ×81; internal patch number ×8; internal governance reference ×7 |
 | `flagship_papers/quarks/sf-3_quarks.tex` | internal open-problem ID (OPEN-...) ×7 |
 | `flagship_papers/strong/sf-5_strong.tex` | internal open-problem ID (OPEN-...) ×27; internal patch number ×1; internal governance code ×2 |
-| `series_electroweak/papers/EW-1_electroweak_introduction.tex` | undefined citations ×1 |
-| `series_electroweak/papers/EW-3_z_boson_from_cpp.tex` | undefined refs ×1 |
-| `series_electroweak/papers/EW-5_electroweak_unification.tex` | undefined citations ×1 |
 | `series_foundations/dp_sea_composition/DP_sea_and_cage_composition.tex` | internal open-problem ID (OPEN-...) ×1 |
-| `series_foundations/series_superdeterminism/SD-1_nexus_superdeterminism.tex` | undefined citations ×10 |
-| `series_foundations/series_superdeterminism/SD-2_h4_angular_structure.tex` | undefined citations ×7 |
-| `series_foundations/series_superdeterminism/SD-3_apparatus_model.tex` | undefined citations ×10 |
-| `series_foundations/series_superdeterminism/SD-4_nexus_correlation_function.tex` | undefined citations ×11 |
 | `series_phenomena/cosmology/dark_matter/DM-1/DM-1_substrate_dark_matter_candidate.tex` | internal open-problem ID (OPEN-...) ×20; internal patch number ×20; internal governance code ×7; internal governance reference ×1 |
 | `series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex` | internal open-problem ID (OPEN-...) ×1; internal patch number ×10; internal governance code ×1 |
 | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | internal open-problem ID (OPEN-...) ×3 |
 | `series_phenomena/cosmology/sea_gravitation/DM-2/DM-2_sea_gravitation_dark_sector.tex` | internal patch number ×6; internal governance code ×3 |
 | `series_quantum_mechanics/papers/QM-1_schrodinger_emergence.tex` | internal open-problem ID (OPEN-...) ×7; internal patch number ×13; internal governance code ×10 |
-| `series_quantum_mechanics/papers/QM-2_superposition.tex` | internal patch number ×1; undefined citations ×6 |
-| `series_quantum_mechanics/papers/QM-3_bell_entanglement.tex` | internal patch number ×1; undefined citations ×12 |
-| `series_quantum_mechanics/papers/QM-4_measurement_problem.tex` | undefined citations ×7 |
-| `series_quantum_mechanics/papers/QM-5_qft_emergence.tex` | undefined citations ×4 |
-| `series_quantum_mechanics/papers/QM-6_capstone.tex` | internal patch number ×1; internal governance reference ×1; undefined citations ×16 |
+| `series_quantum_mechanics/papers/QM-2_superposition.tex` | internal patch number ×1 |
+| `series_quantum_mechanics/papers/QM-3_bell_entanglement.tex` | internal patch number ×1 |
+| `series_quantum_mechanics/papers/QM-6_capstone.tex` | internal patch number ×1; internal governance reference ×1 |
 | `series_relativity/SR_companion_papers/c01_absolute_moment_postulate/absolute_moment_postulate.tex` | internal patch number ×6; internal governance code ×5 |
 | `series_relativity/SR_companion_papers/c03_born_rule/c03_born_rule.tex` | internal patch number ×1 |
 | `series_relativity/SR_companion_papers/c04_ZBW_hbar_mass_units/c04_ZBW_hbar_mass_units.tex` | internal patch number ×4; internal governance code ×4 |
 | `series_relativity/SR_companion_papers/c06_DP_chaining_as_mass_and_EM_substrate/c06_dipole_chain_patterns_as_mass_EM_subtrate.tex` | internal open-problem ID (OPEN-...) ×1; internal patch number ×9; internal governance code ×4; internal governance reference ×1 |
-| `series_relativity/SR_companion_papers/c07_weak_field_GR/c07_weak_field_GR.tex` | internal patch number ×6; internal governance code ×7; undefined citations ×81 |
+| `series_relativity/SR_companion_papers/c07_weak_field_GR/c07_weak_field_GR.tex` | internal patch number ×6; internal governance code ×7 |
 | `series_relativity/SR_companion_papers/c09_gravitational_wave_echoes/c09_GW_echoes.tex` | undefined refs ×1 |
 | `series_relativity/SR_companion_papers/c20_Spin I emergent_Spin-Captured_DPs/c8 spin_I_emergent_spin_from_captured_DPs.tex` | undefined refs ×1 |
-| `series_relativity/papers/SR-1_special_relativity_emergence.tex` | internal open-problem ID (OPEN-...) ×25; internal patch number ×44; internal governance reference ×5; undefined citations ×22 |
-| `series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` | internal open-problem ID (OPEN-...) ×1; internal patch number ×4; internal governance code ×1; undefined citations ×6 |
-| `series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex` | undefined citations ×10 |
-| `series_standard_model/papers/SM-6_lepton_mass_spectrum.tex` | undefined citations ×19 |
-| `series_standard_model/papers/SM-7_heavy_quark_mass_spectrum.tex` | internal open-problem ID (OPEN-...) ×2; undefined citations ×8 |
-| `series_standard_model/papers/SM-8_quark_generation_600cell_shells.tex` | undefined refs ×2; undefined citations ×4 |
-| `series_standard_model/papers/SM-9_scaling_exponent.tex` | undefined citations ×3 |
-| `series_strong/papers/SS-1_strong_sector_from_600cell_lattice.tex` | undefined citations ×40 |
+| `series_relativity/papers/SR-1_special_relativity_emergence.tex` | internal open-problem ID (OPEN-...) ×25; internal patch number ×44; internal governance reference ×5 |
+| `series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` | internal open-problem ID (OPEN-...) ×1; internal patch number ×4; internal governance code ×1 |
+| `series_standard_model/papers/SM-7_heavy_quark_mass_spectrum.tex` | internal open-problem ID (OPEN-...) ×2 |
+| `series_standard_model/papers/SM-8_quark_generation_600cell_shells.tex` | undefined refs ×2 |
 | `series_strong/papers/SS-1a_cage_geometry_eigenvalue_bridge.tex` | undefined refs ×2 |
 | `series_strong/papers/SS-3_su3_uniqueness.tex` | internal open-problem ID (OPEN-...) ×3 |
 | `series_strong/papers/SS-4_string_tension.tex` | internal open-problem ID (OPEN-...) ×10 |
@@ -141,8 +141,8 @@ Comment lines (`%`) are stripped before content scanning — internal notes in c
 |---|---|
 | `flagship_papers/electroweak/sf-2_companion.tex` | placeholder text ×9; internal open-problem ID (OPEN-...) ×25; internal patch number ×10; internal governance code ×1 |
 | `flagship_papers/unification/sf-7_grand_unification.tex` | placeholder text ×1; internal open-problem ID (OPEN-...) ×21; internal governance code ×2 |
-| `series_foundations/series_superdeterminism/SD-5_k0_derivation.tex` | placeholder text ×1; undefined citations ×9 |
-| `series_phenomena/quantum_optics/photon_truncation/TP-1/TP-1_truncated_photon.tex` | placeholder text ×1; internal open-problem ID (OPEN-...) ×9; undefined citations ×15 |
+| `series_foundations/series_superdeterminism/SD-5_k0_derivation.tex` | placeholder text ×1 |
+| `series_phenomena/quantum_optics/photon_truncation/TP-1/TP-1_truncated_photon.tex` | placeholder text ×1; internal open-problem ID (OPEN-...) ×9 |
 | `series_relativity/SR_companion_papers/c02_dipole_stiffness_C/c02_dipole_stiffness_C.tex` | placeholder text ×1; internal open-problem ID (OPEN-...) ×1; internal patch number ×2 |
 | `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex` | placeholder text ×1; internal open-problem ID (OPEN-...) ×59 |
 | `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` | placeholder text ×2; internal open-problem ID (OPEN-...) ×55 |

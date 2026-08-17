@@ -79,21 +79,52 @@ def compile_one(rel):
            "undef_cite": 0, "pages": 0}
     try:
         with tempfile.TemporaryDirectory() as td:
-            shutil.copy(src, td)
             base = os.path.basename(rel)
+            stem = base[:-4]
             env = dict(os.environ)
-            # Source dir on TEXINPUTS so \input, figures and .bib resolve.
-            env["TEXINPUTS"] = f"{srcdir}//:{td}//:"
+            env["TEXINPUTS"] = f"{srcdir}//:"
             env["BIBINPUTS"] = f"{srcdir}//:"
+            env["BSTINPUTS"] = f"{srcdir}//:"
             log = ""
-            for _ in range(2):
+            uses_bibtex = False
+            try:
+                with open(src, encoding="utf-8", errors="replace") as fh:
+                    uses_bibtex = "\\bibliography{" in fh.read()
+            except OSError:
+                pass
+
+            # Run FROM the source directory with -output-directory, rather
+            # than copying the .tex somewhere isolated. Papers cite their
+            # bibliography by relative path (SM-6 uses
+            # ../../bibliography/cpp_references), which resolves correctly
+            # from the paper's own directory and resolves NOWHERE from a temp
+            # copy. Compiling in a temp dir produced 19 phantom "undefined
+            # citation" findings against SM-6 alone. Output still goes to the
+            # temp dir, so nothing is written into the repo.
+            passes = 3 if uses_bibtex else 2
+            for i in range(passes):
                 p = subprocess.run(
                     ["pdflatex", "-interaction=nonstopmode",
-                     "-file-line-error", base],
-                    cwd=td, env=env, capture_output=True, text=True,
+                     "-file-line-error", f"-output-directory={td}", base],
+                    cwd=srcdir, env=env, capture_output=True, text=True,
                     errors="replace", timeout=180)
                 log = p.stdout
-            pdf = os.path.join(td, base[:-4] + ".pdf")
+                if uses_bibtex and i == 0:
+                    # bibtex runs FROM the source dir so the relative path in
+                    # \bibdata (e.g. ../../bibliography/cpp_references)
+                    # resolves as it does for the author. BIBINPUTS cannot do
+                    # this job: its entries do not compose with a leading
+                    # "../..". openout_any=a is then required because TeX
+                    # ships in paranoid mode and otherwise refuses to write
+                    # the .blg into the temp output directory, which silently
+                    # aborts the whole bibtex pass.
+                    benv = dict(env)
+                    benv["openout_any"] = "a"
+                    subprocess.run(
+                        ["bibtex", os.path.join(td, stem)],
+                        cwd=srcdir, env=benv, capture_output=True, text=True,
+                        errors="replace", timeout=120)
+            pdf = os.path.join(td, stem + ".pdf")
             if os.path.exists(pdf) and os.path.getsize(pdf) > 5000:
                 res["ok"] = True
                 res["pages"] = len(re.findall(r"\[\d+", log))
