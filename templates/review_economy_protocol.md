@@ -102,3 +102,22 @@ round is warranted) · `templates/operating_system.md` (PD-006 full
 delegation) · CONV-021 adjudication
 (`series_phenomena/cosmology/sea_gravitation/conv021_2026-08_returns_adjudication.md`,
 §1 Q4 and §5) for the ratification and its single dissent.
+
+---
+
+## §9 — Claim hygiene (adopted VOLUNTARILY, CONV-022 Q5, single-seat)
+
+A majority found the worker's conduct DISCIPLINED and mandated no
+constraint. One seat (GPT) nonetheless stated a discipline worth
+keeping, and it is adopted here voluntarily — provenance flagged so
+the record does not overstate its authority:
+
+**Before interpreting any positive result, the record must identify
+(a) the independent statistic being used, (b) that statistic's
+resolution floor, and (c) the preregistered falsification criterion.**
+
+Rationale from this programme's own week: two hypotheses were raised
+and withdrawn (a commensuration artifact, a Binder crossing) where
+step (b) — the resolution floor — had not been computed before the
+claim was made. Computing it first would have prevented both
+announcements without preventing either discovery.
