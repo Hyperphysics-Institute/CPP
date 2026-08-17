@@ -37,7 +37,6 @@ def main():
         print(f"REFUSING TO RUN: pre-launch artifact missing ({e.filename}) "
               "— calibration and pilot must be committed first.")
         return 2
-    beta_f = rep['beta_f']
     nmap = {a[0]: (int(rep['N_projected']) if a[0]=='ak' else a[5]) for a in ARMS}
     missing = 0
     F = {}
