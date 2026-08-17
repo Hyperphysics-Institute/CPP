@@ -10,9 +10,15 @@ graded, or treated as a source of record. Automated sweeps and delta audits
 
 | File | What it really is |
 |---|---|
-| `c07_weak_field_GR.tex` | **MISNAMED.** Not c07. Titled *"Inertial Mass from Zitterbewegung"* — a stale copy of **c04** (`c04_ZBW_hbar_mass_units.tex`). Lines 320–350 were byte-identical to live c04 at the time of registration. |
-| `weak field GR.tex` | Stale draft. Filename contains spaces, violating repo naming convention. |
-| `weak_field_general_relativity.tex` | Stale draft. |
+| ~~`c07_weak_field_GR.tex`~~ | **DELETED, Patch 3202, on founder authorization of 16 Aug 2026.** It was misnamed: not c07 but a stale copy of **c04**, titled *"Inertial Mass from Zitterbewegung"*, byte-identical to live c04 through lines 320–350 — including the inertia-conclusion sentence amended in the same patch. Recoverable from git history if ever wanted. |
+| `weak field GR.tex` | Stale early draft of c07 proper (135 lines vs. live c07's 863). Filename contains spaces, violating repo naming convention. **Byte-identical to the file below.** |
+| `weak_field_general_relativity.tex` | Stale early draft of c07 proper. Byte-identical to the file above — the two are redundant copies of one draft. |
+
+**Status of the two survivors.** They are honest, obviously-superseded early
+drafts of c07 — not shadows of current text — so their drift risk is far lower
+than the deleted ghost's. They were **not** covered by the founder's deletion
+authorization, which named the ghost copy specifically. They remain quarantined
+pending separate disposition.
 
 The canonical c07 is one level up: `../c07_weak_field_GR.tex`.
 The canonical c04 is at
@@ -29,7 +35,8 @@ any sweep that greps only the live tree.
 
 ## Disposition
 
-**Deletion is recommended and NOT performed.** A delta audit does not silently
+**The ghost copy is deleted (Patch 3202).** For the two surviving drafts,
+deletion is recommended and NOT performed. A delta audit does not silently
 destroy artifacts; the founder may want the history. Founder disposition is
 requested at the F-SW-10 close record. Until then this quarantine notice is the
 control.
