@@ -40,7 +40,10 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{8 August 2026 --- Version~3.2}
+\date{8 August 2026 --- Version~3.2\\[2pt]
+{\small Version~3.3 --- 16 August 2026 (Patch 3204, F-SW-10 R-3 fix pass:
+PSR-arrival band refinement per R-OUTWARD-FANOUT, Patch 3135; leading-order
+propagation law and all results unchanged)}}
 
 \begin{document}
 \maketitle
@@ -69,7 +72,20 @@ Third, the postulate is \emph{consistent} with causal field propagation: the
 Grid Point SSV quantum propagates outward at one PSR shell per Moment,
 distributing a fixed total SSV over a growing spherical surface and thereby
 reproducing the inverse-square falloff required by Coulomb's law and
-Newtonian gravity.  The PSR (communication radius, set by absolute SSV) and
+Newtonian gravity.  \emph{[Band refinement (Version~3.3, Patch 3204, F-SW-10
+R-3 fix pass).  Under R-OUTWARD-FANOUT (Patch 3135) a GP's received DI-bit
+count splits equally at every hop among all neighbours with strictly positive
+outward radial component --- radial-plus-tangential combinations admitted,
+anti-radial excluded --- so total hop count varies with path.  PSR arrival is
+therefore genuinely a \textbf{band} of roughly 10\% thickness rather than a
+mathematically sharp shell, and that thickness is substrate physics
+(path-length variation), not a protocol artifact: F-E2-3 is answered option
+(a), reversing the 3134 \S2 disposition.  ``One PSR shell per Moment'' remains
+exact as the leading-order propagation law and every result in this series is
+computed at that order; the band is a refinement on the arrival profile, not a
+correction to the speed.  \textbf{This is the definitional statement of PSR
+shell propagation for the SR series; the shell language used in the companion
+papers inherits this refinement and is not separately qualified.}]}  The PSR (communication radius, set by absolute SSV) and
 the displacement step (set by net SSV) are identified as two distinct
 quantities, with their coincidence for photons recovering the null-geodesic
 condition.  No new postulates beyond those of Version~16 are introduced;
