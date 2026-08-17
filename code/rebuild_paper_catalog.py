@@ -156,7 +156,12 @@ def extract_version(text):
 
     Returns (version, date_stamp, mismatch_bool). version is "—" if unstamped.
     """
-    head = text[:12000]
+    # The header is everything before \begin{document}, not an arbitrary
+    # character count. DM-1 carries a 205-line comment block and its
+    # version entry sits at offset 15382, which a 12000-char window missed
+    # entirely -- reporting a correctly stamped paper as unstamped.
+    cut = text.find("\\begin{document}")
+    head = text[:cut] if cut > 0 else text[:20000]
     cands = ANY_VER_RE.findall(head)
     version = max(cands, key=_vtuple) if cands else "—"
 
