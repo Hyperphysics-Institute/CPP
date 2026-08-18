@@ -146,3 +146,57 @@ configuration is answerable.
 `code/3167_beta_ladder_driver.py --run` (to be written on approval of this
 prereg), then `--verify-duplicates`, then `--analyze`. The analyze step refuses
 to run if `--verify-duplicates` has not passed.
+
+---
+
+## §8 — AMENDMENT v2 (Patch 3174, 18 Aug 2026): R-INSIDE-SEA — THE SPLIT DESIGN
+
+**Status: adopted PRE-LAUNCH.** No evidentiary leg from the v1 protocol
+completed (the v1 `--run` was interrupted within its first legs; any
+`leg_*.json` from v1 rungs found on disk is quarantined to
+`data/beta_ladder_void_3173/` and is EVIDENCE-EXCLUDED). The founder ruled
+(R-INSIDE-SEA, `founders_voice/founder_ruling_inside_sea_dp_entities_2026-08-18.md`)
+that no rung may measure the sustained response with the source outside
+the built Sea, and selected the split design over the ~5×-longer-Sea
+single campaign (~3 weeks).
+
+**PHASE 1 — the ladder, rescoped (this campaign).**
+- β ladder: **{0.05, 0.10, 0.15, 0.20}**. Every rung's source path ends at
+  or inside x = +24 (L = 240β ∈ {12, 24, 36, 48}); the β = 0.20 rung
+  realizes the a2/AK geometry (L = 48, Δ = +6) verbatim. NOTHING ELSE
+  CHANGES: geometry, T_END = 264, N = 128, the 3164 statistic, the §5
+  corruption guard (duplicate set per rung: pairs {0, 127} × both
+  branches), and the §4 anti-extraction disclosures all stand.
+- Frozen readings restated for the new endpoints (mechanical
+  substitution, same rules): the ratio test is **s(0.20)/s(0.05)** with
+  reference values **4.0** (proportional) and **1.0** (flat). BETA-LINEAR
+  = through-origin fit's check passes AND ratio CI contains 4.0 excluding
+  1.0; BETA-FLAT = contains 1.0 excluding 4.0; BETA-SUBLINEAR = excludes
+  both (exponent reported); BETA-UNRESOLVED = contains both (required N
+  reported). Coefficient reading vs 0.026·β unchanged.
+- **Power disclosure, recorded before the run:** at β = 0.05 the expected
+  signal under proportionality (~0.026·0.05 predicted; ~4e-4 by the
+  measured cluster) approaches the resolution floor at N = 128; §9 claim
+  hygiene applies verbatim — any rung whose CI half-width exceeds band/2
+  is labelled UNDERPOWERED and may not be used in any direction.
+- **What Phase 1 can and cannot decide:** it decides β-scaling and the
+  coefficient on 0.05–0.20 (a 4× lever). It does NOT reproduce AK's
+  drive; AK's null is confronted only by Phase 2.
+
+**PHASE 2 — the long-Sea AK-drive arm (CONDITIONAL, chartered not
+launched).** Fires only if Phase 1 returns BETA-LINEAR or BETA-SUBLINEAR
+(a scaling response that AK should have seen). One arm: β = 0.60,
+T_END = 264, Sea extended so the source remains inside through t = 264
+(x_half sized to cover x_src0 + 240·0.60 with the WALL margin; ≈ 5× the
+v1 dipole count, own prereg with its own duplicate gate and cost estimate
+≈ 3–4 days). If Phase 1 returns BETA-FLAT, Phase 2 is unnecessary: flat
+scaling already explains AK's null as the band's β-scaling error, and the
+tree consequence in §4 proceeds to the panel on Phase 1 alone.
+
+**Hazard direction: unchanged from §4**, restated per the discipline —
+every outcome that repairs the instrument still moves toward DISP-T
+against Candidate (B).
+
+**LIM-ISOLATED-DP rides with this campaign** (see the founder ruling file
+§4.4): scaling readings robust, absolute coefficient reading
+fidelity-limited by the isolated-DP surrogate.

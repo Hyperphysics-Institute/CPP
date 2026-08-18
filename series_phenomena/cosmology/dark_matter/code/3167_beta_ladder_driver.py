@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 """3167_beta_ladder_driver.py — THE β-LADDER CALIBRATION CAMPAIGN (Kila6).
 
+v2 (Patch 3174): R-INSIDE-SEA — the founder ruled no rung may measure with
+the source outside the built Sea; ladder rescoped to {0.05, 0.10, 0.15,
+0.20} (every path ends at or inside x = +24; the 0.20 rung IS the a2/AK
+geometry verbatim). Ratio endpoints 0.05/0.20, proportional reference 4.0.
+Any v1 legs are auto-quarantined to data/beta_ladder_void_3173/ on first
+v2 --run. Phase 2 (long-Sea beta = 0.60) is chartered CONDITIONAL in
+prereg §8 and is NOT this driver. Everything else in the v1 header stands.
+
 Executes the FROZEN `beta_ladder_prereg.md` (Patch 3167) verbatim.
 Written at Patch 3173, AFTER MemTest86 returned 4 passes / 0 errors
 (prereg §5.4 acceptance condition SATISFIED — this campaign is NOT
@@ -84,7 +92,7 @@ T_END = 264
 X_HALF, X_SRC0 = 28.0, -24.0
 RHO, SPACING = (1.0, 8.0), 2.5
 JIT_LO, JIT_HI = -0.05, 0.05
-RUNGS = (0.10, 0.20, 0.40, 0.60)
+RUNGS = (0.05, 0.10, 0.15, 0.20)   # v2 (Patch 3174, prereg §8)
 N_PAIRS = 128
 NBOOT, BOOT_SEED = 10000, 30530811
 PRE = slice(12, 24)                       # Route B PRE_W, verbatim (3164)
@@ -191,7 +199,32 @@ def _dup_tasks():
             for br in ('step', 'ctrl')]
 
 
+VOID_DIR = os.path.normpath(os.path.join(HERE, '../data/beta_ladder_void_3173'))
+V1_TAGS = ('b040', 'b060')     # v1-only rungs; b010/b020 v1 legs are also void
+                               # (different protocol vintage) — ALL pre-v2 legs
+                               # are moved by timestamped sweep below.
+
+
+def quarantine_v1():
+    """Prereg §8: any leg written under the v1 protocol is EVIDENCE-
+    EXCLUDED. v2 starts from an empty evidentiary directory; anything
+    already in DATA/DUP is swept to VOID_DIR before v2 writes a leg."""
+    moved = 0
+    for d in (DATA, DUP):
+        for f in glob.glob(os.path.join(d, 'leg_*.json')):
+            os.makedirs(VOID_DIR, exist_ok=True)
+            os.replace(f, os.path.join(VOID_DIR, os.path.basename(f)))
+            moved += 1
+    if moved:
+        print(f"QUARANTINED {moved} v1 leg(s) -> {VOID_DIR} "
+              f"(prereg §8: evidence-excluded)")
+
+
 def run_all(workers, duplicates=False):
+    if not os.path.exists(os.path.join(DATA, '.v2_started')):
+        quarantine_v1()
+        os.makedirs(DATA, exist_ok=True)
+        open(os.path.join(DATA, '.v2_started'), 'w').write('3174\n')
     if duplicates:
         tasks = _dup_tasks()
         print(f"DUPLICATE PASS: {len(tasks)} legs -> {DUP}")
@@ -301,17 +334,19 @@ def analyze():
 
     # ratio s(0.60)/s(0.10), bootstrap over pairs independently per rung
     rr = np.random.default_rng(BOOT_SEED + 1)
-    p10, p60 = per[0.10]['pp'], per[0.60]['pp']
+    p10, p60 = per[RUNGS[0]]['pp'], per[RUNGS[-1]]['pp']
     ratios = np.array([
         p60[rr.integers(0, len(p60), len(p60))].mean()
         / p10[rr.integers(0, len(p10), len(p10))].mean()
         for _ in range(NBOOT)])
     r_lo, r_hi = (float(np.percentile(ratios, 0.5)),
                   float(np.percentile(ratios, 99.5)))
-    print(f"\nratio s(0.60)/s(0.10) = "
-          f"{per[0.60]['s'] / per[0.10]['s']:.3f}  99% CI "
+    R_PROP = RUNGS[-1] / RUNGS[0]          # 4.0 under the v2 ladder
+    print(f"\nratio s({RUNGS[-1]})/s({RUNGS[0]}) = "
+          f"{per[RUNGS[-1]]['s'] / per[RUNGS[0]]['s']:.3f}  99% CI "
           f"[{r_lo:.3f}, {r_hi:.3f}]   (contains 1.0: "
-          f"{r_lo <= 1.0 <= r_hi}; contains 6.0: {r_lo <= 6.0 <= r_hi})")
+          f"{r_lo <= 1.0 <= r_hi}; contains {R_PROP}: "
+          f"{r_lo <= R_PROP <= r_hi})")
 
     # through-origin fit, bootstrap-SE weighted
     betas = np.array(RUNGS)
@@ -324,7 +359,7 @@ def analyze():
           f"(prediction {K_PRED:.3e}); every rung's 99% CI contains "
           f"k_hat*beta: {all(inband)} {['%.2f:%s' % (b, i) for b, i in zip(RUNGS, inband)]}")
 
-    has1, has6 = r_lo <= 1.0 <= r_hi, r_lo <= 6.0 <= r_hi
+    has1, has6 = r_lo <= 1.0 <= r_hi, r_lo <= R_PROP <= r_hi
     if all(inband) and has6 and not has1:
         reading = 'BETA-LINEAR'
     elif has1 and not has6:
@@ -338,7 +373,7 @@ def analyze():
     else:
         reading = 'BETA-UNRESOLVED'
         need = int(np.ceil(N_PAIRS * (max(ses) * 3
-                   / max(abs(per[0.10]['s']), 1e-30)) ** 2))
+                   / max(abs(per[RUNGS[0]]['s']), 1e-30)) ** 2))
         print(f"  required N estimate from measured scatter: ~{need} "
               f"pairs/rung (reported per §3)")
     print(f"\n>>> FROZEN READING: {reading}")
