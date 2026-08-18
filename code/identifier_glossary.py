@@ -189,7 +189,32 @@ def build_registry(gl, used):
     io.open(REGISTRY, "w", encoding="utf-8").write("\n".join(L) + "\n")
 
 
-def appendix_block(ids, gl):
+MODEL_RE = re.compile(
+    r"\b(?:ChatGPT|GPT-?[0-9o]+|Grok|Gemini|Copilot|DeepSeek|Claude)\b")
+
+REVIEW_NOTE = [
+    "",
+    "\\subsection*{How we review}",
+    "",
+    "\\noindent Results in this programme are checked by an \\emph{AI review "
+    "panel}: several large language models from different vendors are given the "
+    "same paper and the same fixed protocol, and asked to find errors and raise "
+    "objections independently. Objections are recorded and either answered in "
+    "the text or registered as open problems under the identifiers glossed "
+    "above.",
+    "",
+    "\\noindent This is a \\emph{verification method the authors apply to their "
+    "own work}. It is not journal peer review, it is not equivalent to it, and "
+    "agreement among panel members is not evidence that a result is correct --- "
+    "only that no member found a specific fault. Where individual models are "
+    "named in the text, they are named for reproducibility of the method; model "
+    "versions change, and a reader should treat the named models as a record of "
+    "what was run rather than as an endorsement.",
+    "",
+]
+
+
+def appendix_block(ids, gl, name_models=False):
     L = [BEGIN,
          "\\clearpage",
          "\\section*{Appendix: Programme identifiers used in this paper}",
@@ -209,7 +234,10 @@ def appendix_block(ids, gl):
     for i in sorted(ids):
         g, _ = gl.get(i, ("(gloss pending)", "missing"))
         L.append(f"  \\item[\\texttt{{{tex_escape(i)}}}] \\hfill \\\\ {tex_escape(g)}")
-    L += ["\\end{description}", END]
+    L += ["\\end{description}"]
+    if name_models:
+        L += REVIEW_NOTE
+    L += [END]
     return "\n".join(L)
 
 
@@ -224,7 +252,12 @@ def inject(gl, per_paper, only=None):
         if "\\end{document}" not in t:
             skipped.append((p, "no \\end{document}"))
             continue
-        block = appendix_block(ids, gl)
+        # The review note goes only where models are actually named, so
+        # papers that never mention the panel do not acquire a disclaimer
+        # about a process they do not invoke.
+        stripped = strip_comments(
+            re.sub(re.escape(BEGIN) + r".*?" + re.escape(END), "", t, flags=re.S))
+        block = appendix_block(ids, gl, bool(MODEL_RE.search(stripped)))
         if BEGIN in t:                      # idempotent refresh
             # The replacement is LaTeX and full of backslashes; a string repl
             # would have them parsed as regex escapes ("bad escape \c").

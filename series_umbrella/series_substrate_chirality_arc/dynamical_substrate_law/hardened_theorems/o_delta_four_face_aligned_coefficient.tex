@@ -87,6 +87,12 @@
 %
 % Verify script: code/verify_face_alpha4_closure.py (ALL PASS checks).
 % Reasoning fragment: hardened_theorems/reasoning/0624.md.
+% Version 1.2 --- 17 August 2026 (Patch 3214):
+%   added a How-we-review methodology note stating plainly that AI panel
+%   review is a self-applied verification method and not journal peer
+%   review; twelve chirality papers retitled so the descriptive title
+%   leads and the identifier is demoted to a subtitle. No claim,
+%   equation, number or section changed.
 % Version 1.1 --- 17 August 2026 (Patch 3213):
 %   extended the generated identifier appendix to all five identifier
 %   families (THEO-, FI-, PRED-, CONJ-, PH- as well as OPEN-), and
@@ -134,7 +140,8 @@ OPEN-FP-F1-5 Sequence-4B; Patch 0624)}}
 \author{CPP Programme}
 \date{28 May 2026 (Session 147)\\[2pt]
 {\small Version~1.0 --- 17 August 2026 (Patch 3212: added the generated plain-language appendix glossing the internal programme identifiers used in this paper (founder jargon ruling, 16 Aug 2026). No claim, equation, number or section changed.)}\\[2pt]
-{\small Version~1.1 --- 17 August 2026 (Patch 3213: extended the generated identifier appendix to all five identifier families (THEO-, FI-, PRED-, CONJ-, PH- as well as OPEN-), and replaced review-convergence scores with AI review panel wording where present. No claim, equation, number or section changed.)}}
+{\small Version~1.1 --- 17 August 2026 (Patch 3213: extended the generated identifier appendix to all five identifier families (THEO-, FI-, PRED-, CONJ-, PH- as well as OPEN-), and replaced review-convergence scores with AI review panel wording where present. No claim, equation, number or section changed.)}\\[2pt]
+{\small Version~1.2 --- 17 August 2026 (Patch 3214: added a How-we-review methodology note stating plainly that AI panel review is a self-applied verification method and not journal peer review; twelve chirality papers retitled so the descriptive title leads and the identifier is demoted to a subtitle. No claim, equation, number or section changed.)}}
 
 \begin{document}
 \maketitle
@@ -524,13 +531,24 @@ validation at $k=4$, paralleling the THEO-DSL-9 review cycle (Patches
 
 \begin{description}
   \item[\texttt{OPEN-FP-F1-5}] \hfill \\ Extend or reformulate F.1 Theorems 5.1 (host-first-shell projection), 5.2 (first-shell perpendicularity), and 7.1 (substrate-locality umbrella) under edge-aligned Reading C (\$\textbackslash\{\}hat\{n\}\$ along a 600-cell short-edge direction; residual \$D\_5\$ symmetry at edge midpoint per Patch 0596 Remark 5.1 anti-erasure correction — see below) and face-aligned Reading C (\$\textbackslash\{\}hat\{n\}\$ perpendicular to a triangular face; residual \$C\_s\$ symmetry under vertex-host convention per Patch 0597 Remark 7.1 anti-erasure correction — see below).
+  \item[\texttt{OPEN-SD-CHIR-PRIMITIVE}] \hfill \\ Derive the universe's primitive chirality bias from a single substrate-level mechanism (current leading candidate: primitive 4D direction \$\textbackslash\{\}hat\{n\}\$ aligned with a 600-cell host vertex per Reading C) that simultaneously accounts for the five observable manifestations across the CPP corpus: K3-doublet chirality (Capotauro \$\textbackslash\{\}Delta p\_\{LR\}\$, mass-mixing sector), W-bracelet V-A coupling (electroweak, massless helicity limit), electromagnetic handedness (E×B / Poynting / Maxwell right-hand rule and qDP/eDP polarization patterns), thermodynamic causal arrow (DI-bit propagation direction / PCD cycle ordering / Conscious Moment sequence), and cosmological vacuum asymmetry (matter-antimatter / baryogenesis / Capotauro nucleation-event sign-selection).
+  \item[\texttt{THEO-DSL-1}] \hfill \\ Perturbation-Theory Propagation Rule + Shell-Locality at \$\textbackslash\{\}mathcal\{O\}(\textbackslash\{\}delta\textasciicircum{}1)\$ (**first F-line flagship theorem under THEO-DSL-N sub-prefix convention**; publication-grade Layer 3 **unconditional**; first of three F.1 v1.0 SHIPPED theorems closing OPEN-SD-CHIR-PRIMITIVE manifestation (iv) thermodynamic causal arrow at sketch-document Layer 3 via Theorem 7.1 substrate-locality umbrella)
   \item[\texttt{THEO-DSL-10}] \hfill \\ A Dynamical Substrate Law theorem confirmed by multi-model review.
   \item[\texttt{THEO-DSL-11}] \hfill \\ A Dynamical Substrate Law theorem with empirical validation carried out at fourth order.
   \item[\texttt{THEO-DSL-12}] \hfill \\ A Dynamical Substrate Law theorem in the registered series running from DSL-1 to DSL-12.
+  \item[\texttt{THEO-DSL-2}] \hfill \\ First-Shell Geometric Identities at Vertex-Aligned Reading C in 600-Cell (**second F-line flagship theorem under THEO-DSL-N sub-prefix convention**; publication-grade Layer 3 **conditional on G1** first-shell inner-product primitive; combines two paper-body theorems of F.1 v1.0 SHIP into a single registry entry per F-line flagship convention)
   \item[\texttt{THEO-DSL-3}] \hfill \\ Substrate-Locality Umbrella Theorem (**third F-line flagship theorem under THEO-DSL-N sub-prefix convention**; **sketch-document Layer 3** — not independently hardened, assembled from THEO-DSL-1 + THEO-DSL-2 + icosahedral rank-1 sum identity; **closes OPEN-SD-CHIR-PRIMITIVE manifestation (iv) thermodynamic causal arrow** — fourth manifestation closure under the umbrella)
   \item[\texttt{THEO-DSL-7}] \hfill \\ Umbrella registration covering first- and second-order edge-aligned coefficient content in the Dynamical Substrate Law.
   \item[\texttt{THEO-DSL-9}] \hfill \\ The candidate coefficient theorem for the face-aligned branch of the substrate law.
+  \item[\texttt{THEO-DSL-N}] \hfill \\ (family) A proposed family registration for the shell-perpendicularity pattern that recurs at every perturbative order.
 \end{description}
+
+\subsection*{How we review}
+
+\noindent Results in this programme are checked by an \emph{AI review panel}: several large language models from different vendors are given the same paper and the same fixed protocol, and asked to find errors and raise objections independently. Objections are recorded and either answered in the text or registered as open problems under the identifiers glossed above.
+
+\noindent This is a \emph{verification method the authors apply to their own work}. It is not journal peer review, it is not equivalent to it, and agreement among panel members is not evidence that a result is correct --- only that no member found a specific fault. Where individual models are named in the text, they are named for reproducibility of the method; model versions change, and a reader should treat the named models as a record of what was run rather than as an endorsement.
+
 % END GENERATED IDENTIFIER APPENDIX
 
 \end{document}

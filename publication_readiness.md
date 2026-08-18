@@ -63,17 +63,17 @@ Comment lines (`%`) are stripped before content scanning — internal notes in c
 
 | Paper | Findings |
 |---|---|
-| `flagship_papers/charged_leptons/sf-1_charged_leptons.tex` | internal open-problem ID (OPEN-...) ×12; internal patch number ×2 |
-| `flagship_papers/electromagnetism/SF-8/sf-8_emergent_electrostatics.tex` | internal open-problem ID (OPEN-...) ×3; internal patch number ×4; internal governance code ×3 |
-| `flagship_papers/electromagnetism/sf-6_electromagnetism.tex` | internal open-problem ID (OPEN-...) ×23; internal patch number ×8; internal governance code ×4; internal governance reference ×1 |
-| `flagship_papers/electroweak/sf-2_electroweak.tex` | internal open-problem ID (OPEN-...) ×89; internal patch number ×16; internal governance code ×4 |
-| `flagship_papers/neutrinos/sf-4_neutrinos.tex` | internal open-problem ID (OPEN-...) ×83; internal patch number ×10; internal governance reference ×7 |
-| `flagship_papers/quarks/sf-3_quarks.tex` | internal open-problem ID (OPEN-...) ×8; internal patch number ×2 |
-| `flagship_papers/strong/sf-5_strong.tex` | internal open-problem ID (OPEN-...) ×33; internal patch number ×3; internal governance code ×2 |
-| `series_foundations/dp_sea_composition/DP_sea_and_cage_composition.tex` | internal open-problem ID (OPEN-...) ×4; internal patch number ×2 |
-| `series_phenomena/cosmology/dark_matter/DM-1/DM-1_substrate_dark_matter_candidate.tex` | internal open-problem ID (OPEN-...) ×24; internal patch number ×22; internal governance code ×7; internal governance reference ×1 |
-| `series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex` | internal open-problem ID (OPEN-...) ×2; internal patch number ×12; internal governance code ×1 |
-| `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | internal open-problem ID (OPEN-...) ×5; internal patch number ×2 |
+| `flagship_papers/charged_leptons/sf-1_charged_leptons.tex` | internal open-problem ID (OPEN-...) ×12; internal patch number ×3 |
+| `flagship_papers/electromagnetism/SF-8/sf-8_emergent_electrostatics.tex` | internal open-problem ID (OPEN-...) ×3; internal patch number ×5; internal governance code ×3 |
+| `flagship_papers/electromagnetism/sf-6_electromagnetism.tex` | internal open-problem ID (OPEN-...) ×24; internal patch number ×9; internal governance code ×4; internal governance reference ×1 |
+| `flagship_papers/electroweak/sf-2_electroweak.tex` | internal open-problem ID (OPEN-...) ×89; internal patch number ×17; internal governance code ×4 |
+| `flagship_papers/neutrinos/sf-4_neutrinos.tex` | internal open-problem ID (OPEN-...) ×83; internal patch number ×11; internal governance reference ×7 |
+| `flagship_papers/quarks/sf-3_quarks.tex` | internal open-problem ID (OPEN-...) ×8; internal patch number ×3 |
+| `flagship_papers/strong/sf-5_strong.tex` | internal open-problem ID (OPEN-...) ×33; internal patch number ×4; internal governance code ×2 |
+| `series_foundations/dp_sea_composition/DP_sea_and_cage_composition.tex` | internal open-problem ID (OPEN-...) ×4; internal patch number ×3 |
+| `series_phenomena/cosmology/dark_matter/DM-1/DM-1_substrate_dark_matter_candidate.tex` | internal open-problem ID (OPEN-...) ×24; internal patch number ×23; internal governance code ×7; internal governance reference ×1 |
+| `series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex` | internal open-problem ID (OPEN-...) ×2; internal patch number ×13; internal governance code ×1 |
+| `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | internal open-problem ID (OPEN-...) ×5; internal patch number ×3 |
 | `series_phenomena/cosmology/sea_gravitation/DM-2/DM-2_sea_gravitation_dark_sector.tex` | internal patch number ×7; internal governance code ×3 |
 | `series_quantum_mechanics/papers/QM-1_schrodinger_emergence.tex` | internal open-problem ID (OPEN-...) ×12; internal patch number ×15; internal governance code ×10 |
 | `series_quantum_mechanics/papers/QM-2_superposition.tex` | internal patch number ×2 |
@@ -86,64 +86,64 @@ Comment lines (`%`) are stripped before content scanning — internal notes in c
 | `series_relativity/SR_companion_papers/c06_DP_chaining_as_mass_and_EM_substrate/c06_dipole_chain_patterns_as_mass_EM_subtrate.tex` | internal open-problem ID (OPEN-...) ×2; internal patch number ×11; internal governance code ×4; internal governance reference ×1 |
 | `series_relativity/SR_companion_papers/c07_weak_field_GR/c07_weak_field_GR.tex` | internal patch number ×6; internal governance code ×7 |
 | `series_relativity/SR_companion_papers/c20_Spin I emergent_Spin-Captured_DPs/c8 spin_I_emergent_spin_from_captured_DPs.tex` | internal patch number ×1 |
-| `series_relativity/papers/SR-1_special_relativity_emergence.tex` | internal open-problem ID (OPEN-...) ×32; internal patch number ×47; internal governance reference ×5 |
-| `series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` | internal open-problem ID (OPEN-...) ×2; internal patch number ×6; internal governance code ×1 |
-| `series_standard_model/papers/SM-7_heavy_quark_mass_spectrum.tex` | internal open-problem ID (OPEN-...) ×4; internal patch number ×2 |
-| `series_standard_model/papers/SM-9_scaling_exponent.tex` | internal patch number ×1 |
-| `series_strong/papers/SS-3_su3_uniqueness.tex` | internal open-problem ID (OPEN-...) ×4; internal patch number ×2 |
-| `series_strong/papers/SS-4_string_tension.tex` | internal open-problem ID (OPEN-...) ×16; internal patch number ×2 |
-| `series_strong/papers/SS-5/SS-5_light_nuclei_open_vertex_cascade.tex` | internal open-problem ID (OPEN-...) ×26; internal patch number ×2 |
-| `series_strong/papers/SS-6/SS-6_deuteron_observables_beyond_binding.tex` | internal open-problem ID (OPEN-...) ×27; internal patch number ×2 |
-| `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` | internal open-problem ID (OPEN-...) ×144; internal patch number ×2; internal governance code ×2 |
-| `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` | internal open-problem ID (OPEN-...) ×78; internal patch number ×92; internal governance code ×2 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_audit/theo_chir_audit_1.tex` | internal open-problem ID (OPEN-...) ×68; internal patch number ×11 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` | internal open-problem ID (OPEN-...) ×43; internal patch number ×10; internal governance code ×3 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_bridge_1.tex` | internal open-problem ID (OPEN-...) ×23; internal patch number ×9 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_cap_1.tex` | internal open-problem ID (OPEN-...) ×8; internal patch number ×7 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_chi_1.tex` | internal open-problem ID (OPEN-...) ×10; internal patch number ×7 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_merge_1.tex` | internal open-problem ID (OPEN-...) ×28; internal patch number ×5 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_merge_2.tex` | internal open-problem ID (OPEN-...) ×18; internal patch number ×11 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_pcd_orientation_1.tex` | internal open-problem ID (OPEN-...) ×16; internal patch number ×6 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_status_1.tex` | internal open-problem ID (OPEN-...) ×14; internal patch number ×10 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_status_2.tex` | internal open-problem ID (OPEN-...) ×10; internal patch number ×10 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_tarrow_1.tex` | internal open-problem ID (OPEN-...) ×13; internal patch number ×9 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_tarrow_2.tex` | internal open-problem ID (OPEN-...) ×11; internal patch number ×4 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_vw_1.tex` | internal open-problem ID (OPEN-...) ×6; internal patch number ×13 |
-| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_vw_2.tex` | internal open-problem ID (OPEN-...) ×3; internal patch number ×5 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` | internal open-problem ID (OPEN-...) ×39; internal patch number ×27 |
+| `series_relativity/papers/SR-1_special_relativity_emergence.tex` | internal open-problem ID (OPEN-...) ×32; internal patch number ×48; internal governance reference ×5 |
+| `series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` | internal open-problem ID (OPEN-...) ×2; internal patch number ×7; internal governance code ×1 |
+| `series_standard_model/papers/SM-7_heavy_quark_mass_spectrum.tex` | internal open-problem ID (OPEN-...) ×4; internal patch number ×3 |
+| `series_standard_model/papers/SM-9_scaling_exponent.tex` | internal patch number ×2 |
+| `series_strong/papers/SS-3_su3_uniqueness.tex` | internal open-problem ID (OPEN-...) ×4; internal patch number ×3 |
+| `series_strong/papers/SS-4_string_tension.tex` | internal open-problem ID (OPEN-...) ×16; internal patch number ×3 |
+| `series_strong/papers/SS-5/SS-5_light_nuclei_open_vertex_cascade.tex` | internal open-problem ID (OPEN-...) ×26; internal patch number ×3 |
+| `series_strong/papers/SS-6/SS-6_deuteron_observables_beyond_binding.tex` | internal open-problem ID (OPEN-...) ×27; internal patch number ×3 |
+| `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` | internal open-problem ID (OPEN-...) ×144; internal patch number ×3; internal governance code ×2 |
+| `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` | internal open-problem ID (OPEN-...) ×78; internal patch number ×93; internal governance code ×2 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_audit/theo_chir_audit_1.tex` | internal open-problem ID (OPEN-...) ×69; internal patch number ×12 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` | internal open-problem ID (OPEN-...) ×43; internal patch number ×11; internal governance code ×3 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_bridge_1.tex` | internal open-problem ID (OPEN-...) ×23; internal patch number ×10 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_cap_1.tex` | internal open-problem ID (OPEN-...) ×8; internal patch number ×8 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_chi_1.tex` | internal open-problem ID (OPEN-...) ×10; internal patch number ×8 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_merge_1.tex` | internal open-problem ID (OPEN-...) ×28; internal patch number ×6 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_merge_2.tex` | internal open-problem ID (OPEN-...) ×17; internal patch number ×12 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_pcd_orientation_1.tex` | internal open-problem ID (OPEN-...) ×16; internal patch number ×7 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_status_1.tex` | internal open-problem ID (OPEN-...) ×13; internal patch number ×11 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_status_2.tex` | internal open-problem ID (OPEN-...) ×9; internal patch number ×11 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_tarrow_1.tex` | internal open-problem ID (OPEN-...) ×14; internal patch number ×10 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_tarrow_2.tex` | internal open-problem ID (OPEN-...) ×10; internal patch number ×5 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_vw_1.tex` | internal open-problem ID (OPEN-...) ×8; internal patch number ×14 |
+| `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_vw_2.tex` | internal open-problem ID (OPEN-...) ×6; internal patch number ×6 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` | internal open-problem ID (OPEN-...) ×39; internal patch number ×28 |
 | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/cross_shell_edge_d5_orbits.tex` | internal open-problem ID (OPEN-...) ×5; internal patch number ×43 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/edge_aligned_invariant_subspace_structural.tex` | internal open-problem ID (OPEN-...) ×28; internal patch number ×19 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/face_aligned_invariant_subspace_structural.tex` | internal open-problem ID (OPEN-...) ×18; internal patch number ×9 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_d5_orbit_projections.tex` | internal open-problem ID (OPEN-...) ×8; internal patch number ×37 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_first_shell_edge_d5_orbits.tex` | internal open-problem ID (OPEN-...) ×9; internal patch number ×37 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex` | internal open-problem ID (OPEN-...) ×15; internal patch number ×5 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_perpendicularity.tex` | internal patch number ×3 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_second_shell_edge_orbits.tex` | internal open-problem ID (OPEN-...) ×11; internal patch number ×5 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/host_second_shell_uniform_projection.tex` | internal open-problem ID (OPEN-...) ×11; internal patch number ×6 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/host_to_first_shell_projection.tex` | internal patch number ×6 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_four_face_aligned_coefficient.tex` | internal open-problem ID (OPEN-...) ×5; internal patch number ×17 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_one_edge_aligned_coefficient.tex` | internal open-problem ID (OPEN-...) ×16; internal patch number ×37 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_squared_path_class_weights.tex` | internal open-problem ID (OPEN-...) ×18; internal patch number ×7 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_squared_substrate_locality_umbrella.tex` | internal open-problem ID (OPEN-...) ×33; internal patch number ×5 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_three_edge_aligned_coefficient.tex` | internal open-problem ID (OPEN-...) ×7; internal patch number ×18 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_three_face_aligned_coefficient.tex` | internal open-problem ID (OPEN-...) ×7; internal patch number ×19 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_two_edge_aligned_coefficient.tex` | internal open-problem ID (OPEN-...) ×11; internal patch number ×5 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_two_face_aligned_coefficient.tex` | internal open-problem ID (OPEN-...) ×7; internal patch number ×9 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/perturbation_locality_propagation.tex` | internal patch number ×2 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_order_parallel_to_n_structural.tex` | internal open-problem ID (OPEN-...) ×29; internal patch number ×5 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_shell_inner_product_primitive.tex` | internal open-problem ID (OPEN-...) ×24; internal patch number ×5 |
-| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_shell_perpendicularity.tex` | internal open-problem ID (OPEN-...) ×12; internal patch number ×6 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/edge_aligned_invariant_subspace_structural.tex` | internal open-problem ID (OPEN-...) ×29; internal patch number ×20 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/face_aligned_invariant_subspace_structural.tex` | internal open-problem ID (OPEN-...) ×20; internal patch number ×10 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_d5_orbit_projections.tex` | internal open-problem ID (OPEN-...) ×8; internal patch number ×38 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_first_shell_edge_d5_orbits.tex` | internal open-problem ID (OPEN-...) ×10; internal patch number ×38 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex` | internal open-problem ID (OPEN-...) ×15; internal patch number ×6 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_perpendicularity.tex` | internal patch number ×4 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_second_shell_edge_orbits.tex` | internal open-problem ID (OPEN-...) ×11; internal patch number ×6 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/host_second_shell_uniform_projection.tex` | internal open-problem ID (OPEN-...) ×11; internal patch number ×7 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/host_to_first_shell_projection.tex` | internal patch number ×7 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_four_face_aligned_coefficient.tex` | internal open-problem ID (OPEN-...) ×7; internal patch number ×18 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_one_edge_aligned_coefficient.tex` | internal open-problem ID (OPEN-...) ×17; internal patch number ×38 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_squared_path_class_weights.tex` | internal open-problem ID (OPEN-...) ×20; internal patch number ×8 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_squared_substrate_locality_umbrella.tex` | internal open-problem ID (OPEN-...) ×33; internal patch number ×6 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_three_edge_aligned_coefficient.tex` | internal open-problem ID (OPEN-...) ×10; internal patch number ×19 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_three_face_aligned_coefficient.tex` | internal open-problem ID (OPEN-...) ×10; internal patch number ×20 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_two_edge_aligned_coefficient.tex` | internal open-problem ID (OPEN-...) ×13; internal patch number ×6 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_two_face_aligned_coefficient.tex` | internal open-problem ID (OPEN-...) ×8; internal patch number ×10 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/perturbation_locality_propagation.tex` | internal patch number ×3 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_order_parallel_to_n_structural.tex` | internal open-problem ID (OPEN-...) ×30; internal patch number ×6 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_shell_inner_product_primitive.tex` | internal open-problem ID (OPEN-...) ×24; internal patch number ×6 |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_shell_perpendicularity.tex` | internal open-problem ID (OPEN-...) ×12; internal patch number ×7 |
 | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_shell_projection_d5_orbits.tex` | internal open-problem ID (OPEN-...) ×8; internal patch number ×53 |
 
 ## BLOCKED — content — 7
 
 | Paper | Findings |
 |---|---|
-| `flagship_papers/electroweak/sf-2_companion.tex` | placeholder text ×9; internal open-problem ID (OPEN-...) ×30; internal patch number ×12; internal governance code ×1 |
-| `flagship_papers/unification/sf-7_grand_unification.tex` | placeholder text ×1; internal open-problem ID (OPEN-...) ×29; internal patch number ×2; internal governance code ×2 |
+| `flagship_papers/electroweak/sf-2_companion.tex` | placeholder text ×9; internal open-problem ID (OPEN-...) ×30; internal patch number ×13; internal governance code ×1 |
+| `flagship_papers/unification/sf-7_grand_unification.tex` | placeholder text ×1; internal open-problem ID (OPEN-...) ×29; internal patch number ×3; internal governance code ×2 |
 | `series_foundations/series_superdeterminism/SD-5_k0_derivation.tex` | placeholder text ×1 |
-| `series_phenomena/quantum_optics/photon_truncation/TP-1/TP-1_truncated_photon.tex` | placeholder text ×1; internal open-problem ID (OPEN-...) ×10; internal patch number ×2 |
+| `series_phenomena/quantum_optics/photon_truncation/TP-1/TP-1_truncated_photon.tex` | placeholder text ×1; internal open-problem ID (OPEN-...) ×10; internal patch number ×3 |
 | `series_relativity/SR_companion_papers/c02_dipole_stiffness_C/c02_dipole_stiffness_C.tex` | placeholder text ×1; internal open-problem ID (OPEN-...) ×2; internal patch number ×4 |
-| `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex` | placeholder text ×1; internal open-problem ID (OPEN-...) ×66; internal patch number ×2 |
-| `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` | placeholder text ×2; internal open-problem ID (OPEN-...) ×61; internal patch number ×2 |
+| `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex` | placeholder text ×1; internal open-problem ID (OPEN-...) ×66; internal patch number ×3 |
+| `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` | placeholder text ×2; internal open-problem ID (OPEN-...) ×61; internal patch number ×3 |
 
