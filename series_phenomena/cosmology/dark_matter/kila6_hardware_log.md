@@ -24,15 +24,35 @@ draw); standoff short (founder verified); USB overcurrent (BT dongle draw is
 enumeration failures are most likely a consequence of unclean shutdowns, not a
 cause).
 
-Outstanding: **MemTest86 (never run)** · CMOS battery voltage · BMC System
-Event Log via the DM_LAN1 management port · single-stick isolation test ·
-front-panel PWR_SW header test.
+Outstanding: CMOS battery voltage · BMC System Event Log via the DM_LAN1
+management port · front-panel PWR_SW header test. (Single-stick isolation
+test: no longer indicated — memory tested clean, below.)
+
+## MemTest86 result (18 Aug 2026)
+
+**PASSED — 4 complete passes, 0 errors** (founder-reported; no screenshot
+retained). Consequences:
+
+1. **The β-ladder prereg §5.4 acceptance condition is SATISFIED.** The
+   campaign, when run, is NOT provisional — no downstream label required.
+2. **RAM is ruled out as a silent-corruption source.** The Route C
+   integrity sweep's known gap (files verified to parse and pair, but
+   arithmetic unverifiable) is now closed on the memory side for future
+   campaigns; the duplicate-seed bit-identity gate (§5.1–5.3) remains in
+   force as the in-campaign arithmetic check.
+3. **Diagnostic bonus for the shutdown fault:** the machine survived the
+   full multi-hour test (4 passes on 64 GB) with no spontaneous reboot,
+   running outside Windows with no drivers loaded. Combined with the
+   zero-WHEA / zero-minidump signature, the fault profile continues to
+   point at power delivery or front-panel/PSU hardware, not memory, not
+   the OS. The remaining outstanding checks above are the live suspects.
 
 ## Change log
 
 | timestamp | change | campaign legs in flight | notes |
 |---|---|---|---|
 | 2026-08-17 | BIOS → factory-optimized defaults | none | auto-OC enhancer off |
+| 2026-08-18 | MemTest86 free edition, USB boot — 4 passes, 0 errors | none | prereg §5.4 acceptance SATISFIED; no spontaneous reboot during the test |
 | | | | |
 
 **Recording rule:** append a row BEFORE making the change where possible, or
