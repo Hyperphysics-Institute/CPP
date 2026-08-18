@@ -33,7 +33,11 @@ def save(st): json.dump(st, open(STATE,"w"))
 
 def cmd_run(which):
     st = json.load(open(STATE)) if os.path.exists(STATE) else {}
-    if which == "anom":
+    if which == "fb":            # Patch 3170: the 3166 prereg's execution mode
+        FBGRID = [1.9, 2.0, 2.1, 2.2, 2.3]
+        todo = [(ds,n,sd) for n in (7,8,9,10,11) for ds in FBGRID
+                for sd in SEEDS if f"{n}:{ds}:{sd}" not in st]; nw = 16
+    elif which == "anom":
         todo = [(ds,n,sd) for n in (8,9) for ds in FINE for sd in SEEDS
                 if f"{n}:{ds}:{sd}" not in st]; nw = 16
     elif which == "cross":       # Patch 3156: the Binder-crossing confirmation
@@ -140,6 +144,65 @@ def cmd_analyze():
         print(f"|{Dres:.3f} - 2.450| = {abs(Dres-2.450):.3f} > 0.182: CHALLENGE STANDS-QUANTIFIED at {Dres:.3f}")
     print("[frozen 2.450 unrevised in every branch; calibration untouched]")
 
+def cmd_analyze_fb():
+    """Patch 3170 -- the 3166 prereg S4/S5 statistics and frozen readings."""
+    st=json.load(open(STATE))
+    FBGRID=[1.9,2.0,2.1,2.2,2.3]
+    print("=== 3166 f_b n-scaling: loc(n), depth(n), var_fb(n), per seed ===")
+    res={}
+    for n in (7,8,9,10,11):
+        per={}
+        for sd in SEEDS:
+            v=[st.get(f"{n}:{d}:{sd}") for d in FBGRID]
+            if any(x is None for x in v): per[sd]=None; continue
+            fb=[x["f_b"] for x in v]
+            i=int(np.argmin(fb)); i=min(max(i,1),len(FBGRID)-2)
+            x=np.array(FBGRID[i-1:i+2]); y=np.array(fb[i-1:i+2])
+            A=np.vstack([x**2,x,np.ones(3)]).T
+            a,b,c=np.linalg.solve(A,y)
+            loc=float(-b/(2*a)) if a>0 else float(FBGRID[int(np.argmin(fb))])
+            depth=float(a*loc*loc+b*loc+c) if a>0 else float(min(fb))
+            var=st[f"{n}:{FBGRID[int(np.argmin(fb))]}:{sd}"]["m2"]
+            per[sd]=(loc,depth,var)
+        res[n]=per
+        if all(per[sd] for sd in SEEDS):
+            l=[per[sd][0] for sd in SEEDS]; d=[per[sd][1] for sd in SEEDS]; m=[per[sd][2] for sd in SEEDS]
+            print(f"  n={n}: loc {np.mean(l):.4f} (seeds {l[0]:.4f}/{l[1]:.4f})  "
+                  f"depth {np.mean(d):.4f} (Δseed {abs(d[0]-d[1]):.4f})  var_fb {np.mean(m):.3e}")
+        else:
+            print(f"  n={n}: INCOMPLETE (missing cells)")
+    ns=[n for n in (7,8,9,10,11) if all(res[n][sd] for sd in SEEDS)]
+    if len(ns)<5: print("\n[cells missing -- run fb first]"); return
+    locs=[np.mean([res[n][sd][0] for sd in SEEDS]) for n in ns]
+    deps=[np.mean([res[n][sd][1] for sd in SEEDS]) for n in ns]
+    def steps(a): return [a[i+1]-a[i] for i in range(len(a)-1)]
+    sl,sd_=steps(locs),steps(deps)
+    print(f"\n  loc steps:   {['%+.4f'%x for x in sl]}")
+    print(f"  depth steps: {['%+.4f'%x for x in sd_]}")
+    # UNDERPOWERED gate (S4): seed diff > 20% of size-to-size change
+    under=[]
+    for name,arr,stp in (("loc",locs,sl),("depth",deps,sd_)):
+        sdiff=np.mean([abs(res[n][5][0 if name=="loc" else 1]-res[n][11][0 if name=="loc" else 1]) for n in ns])
+        sig=np.mean(np.abs(stp))
+        if sig>0 and sdiff>0.2*sig: under.append(name)
+        print(f"  {name}: mean seed diff {sdiff:.4f} vs mean step {sig:.4f} "
+              f"{'-> UNDERPOWERED' if name in under else '-> adequate'}")
+    def stab(stp): return abs(stp[-1])<=0.2*abs(stp[-2]) and stp[-1]*stp[-2]>=0 if abs(stp[-2])>0 else abs(stp[-1])<1e-9
+    def drift(stp): return all(x*stp[0]>0 for x in stp) and abs(stp[-1])>=abs(stp[-2])
+    print("\n=== VERDICT (3166 S5 frozen words) ===")
+    if under:
+        print(f"UNDETERMINED-PERSISTS ({'/'.join(under)} UNDERPOWERED)")
+    else:
+        L_stab,D_stab=stab(sl),stab(sd_)
+        L_dr,D_dr=drift(sl),drift(sd_)
+        if L_stab and D_stab: print("PHYSICAL-FEATURE (both quantities approach stable limits)")
+        elif L_dr or D_dr:
+            if L_stab or D_stab: print("UNDETERMINED-PERSISTS (the two quantities disagree)")
+            else: print("FINITE-SIZE-EFFECT (systematic drift, non-decelerating)")
+        else: print("UNDETERMINED-PERSISTS (neither frozen pattern matches cleanly)")
+    print("[frozen d_s* = 2.450 untouched; calibration untouched; no Binder anywhere]")
+
 if __name__=="__main__":
     if sys.argv[1]=="run": cmd_run(sys.argv[2])
+    elif len(sys.argv)>2 and sys.argv[2]=="fb": cmd_analyze_fb()
     else: cmd_analyze()
