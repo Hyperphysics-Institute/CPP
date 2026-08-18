@@ -8,20 +8,56 @@ Plain-language glosses for the internal identifiers appearing in public papers, 
 |---|---|---|---|
 | `OPEN-FP-F1-2` | 21 | Derive Mechanism A (F.1 framework axioms MA.1 + MA.2: propagation-rate asymmetry $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\hat{n})$ and framework-local current construction at $\mathcal{O}(\delta^1)$) from CPP primitive axioms A1–A11 alone. | frontier |
 | `OPEN-FP-F1-5` | 21 | Extend or reformulate F.1 Theorems 5.1 (host-first-shell projection), 5.2 (first-shell perpendicularity), and 7.1 (substrate-locality umbrella) under edge-aligned Reading C ($\hat{n}$ along a 600-cell short-edge direction; residual $D_5$ symmetry at edge midpoint per Patch 0596 Remark 5.1 anti-erasure correction — see below) and face-aligned Reading C ($\hat{n}$ perpendicular to a triangular face; residual $C_s$ symmetry under vertex-host convention per Patch 0597 Remark 7.1 anti-erasure correction — see below). | frontier |
+| `THEO-DSL-4` | 18 | $\mathcal{O}(\delta^k)$ Substrate-Current Parallel-to-$\hat{n}$ Structural Theorem at All Orders $k \geq 1$ (**fourth F-line flagship theorem under THEO-DSL-N sub-prefix convention**; publication-grade Layer 3 **unconditional** for the structural sub-question; **first Route C sequence 1 artifact** under the OPEN-FP-F1-1 trajectory; **closes the structural sub-question of OPEN-FP-F1-1** at all orders $k \geq 1$ via symmetry-only argument; coefficient $\alpha_k$ at $k \geq 2$ remains OPEN as target of Route C sequence 2) | theorem-registry |
+| `THEO-DSL-5` | 17 | A Dynamical Substrate Law theorem giving a real coefficient in the substrate rate function at the host vertex. | manual |
+| `FI-C-9` | 14 | The substrate chirality magnitude, a free-magnitude postulate at v1.0 later grounded at v2.0. | manual |
+| `FI-C-RC-1` | 12 | The substrate primitive: a preferred 4D direction in the ambient space where the 600-cell substrate sits, sourcing all parity-sensitive observables. | manual |
+| `THEO-DSL-3` | 12 | Substrate-Locality Umbrella Theorem (**third F-line flagship theorem under THEO-DSL-N sub-prefix convention**; **sketch-document Layer 3** — not independently hardened, assembled from THEO-DSL-1 + THEO-DSL-2 + icosahedral rank-1 sum identity; **closes OPEN-SD-CHIR-PRIMITIVE manifestation (iv) thermodynamic causal arrow** — fourth manifestation closure under the umbrella) | theorem-registry |
+| `FI-C-RC-2` | 11 | The vertex-aligned reading identifying that 4D direction with the host vertex, fixing the local structure as the icosahedral first shell. | manual |
 | `OPEN-FP-F1-1` | 11 | Extend the F.1 substrate-locality umbrella theorem (Theorem 7.1) to $\mathcal{O}(\delta^2)$ by deriving the second-shell inner-product and edge-projection identities for the 600-cell, and determine whether the parallel-to-$\hat{n}$ structure of $\vec{J}_{\text{DI-net}}(v_{\text{host}})$ survives at second order. **Resolution**: both sub-questions closed — structural sub-question at publication-grade Layer 3 unconditional ($\vec{j}_k(v_{\text{host}}) \parallel \hat{n}$ at every $k \geq 1$ via THEO-DSL-4) + coefficient sub-question at sketch-document Layer 3 under (H5) ($\alpha_2 = -9/\phi^2 = -9(2-\phi) \approx -3.438$ via THEO-DSL-5 candidate; ratio $\alpha_2/\alpha_1 = -3/2$ exactly). | frontier |
+| `THEO-CHIR-CHI-1` | 10 | The substrate chirality magnitude result fixing the golden-ratio power of the chirality parameter. | manual |
+| `THEO-DSL-7` | 10 | Umbrella registration covering first- and second-order edge-aligned coefficient content in the Dynamical Substrate Law. | manual |
+| `THEO-DSL-8` | 10 | The cross-shell edge orbit closure under the reflection stabilizer of face-aligned Reading C. | manual |
+| `FI-QMRG-1` | 9 | The founder-anchored input that the quantum register is the directional content of the net space-stress vector in the distinguished plane. | manual |
+| `THEO-DSL-1` | 9 | Perturbation-Theory Propagation Rule + Shell-Locality at $\mathcal{O}(\delta^1)$ (**first F-line flagship theorem under THEO-DSL-N sub-prefix convention**; publication-grade Layer 3 **unconditional**; first of three F.1 v1.0 SHIPPED theorems closing OPEN-SD-CHIR-PRIMITIVE manifestation (iv) thermodynamic causal arrow at sketch-document Layer 3 via Theorem 7.1 substrate-locality umbrella) | theorem-registry |
+| `THEO-DSL-6` | 9 | The order-10 stabilizer of an oriented first-shell edge in the icosahedral group at the host vertex. | manual |
 | `OPEN-CHIR-2` | 8 | For each entry the audit classifies as *unregistered*, | frontier |
 | `OPEN-SM-4` | 8 | Derive the lattice chirality-activation event that establishes χ = φ⁻³ and produces CP violation. *(φ⁻¹ was the original pre-Session-86 conjecture, superseded at Finding C-3 Patch 0378 — lost-1/φ arithmetic error φ⁻²→φ⁻³; the live magnitude is |χ| = φ⁻³ ≈ 0.236 per FI-C-9 / THEO-CHIR-CHI-1 / Capotauro v1.0–v2.0. Corrected Patch 0670.)* | frontier |
+| `THEO-DSL-9` | 7 | The candidate coefficient theorem for the face-aligned branch of the substrate law. | manual |
 | `OPEN-CHIR-1` | 6 | Derive each entry the audit classifies as *emergent* from | frontier |
 | `OPEN-FP-SF-2-CHIR` | 6 | Derive from CPP substrate primitives the 100% V-A coupling structure of $W^\pm$ gauge boson interactions with fermions at the massless helicity limit. | frontier |
 | `OPEN-SD-CHIR-PRIMITIVE` | 6 | Derive the universe's primitive chirality bias from a single substrate-level mechanism (current leading candidate: primitive 4D direction $\hat{n}$ aligned with a 600-cell host vertex per Reading C) that simultaneously accounts for the five observable manifestations across the CPP corpus: K3-doublet chirality (Capotauro $\Delta p_{LR}$, mass-mixing sector), W-bracelet V-A coupling (electroweak, massless helicity limit), electromagnetic handedness (E×B / Poynting / Maxwell right-hand rule and qDP/eDP polarization patterns), thermodynamic causal arrow (DI-bit propagation direction / PCD cycle ordering / Conscious Moment sequence), and cosmological vacuum asymmetry (matter-antimatter / baryogenesis / Capotauro nucleation-event sign-selection). | frontier |
+| `THEO-CAP-1` | 5 | Composite Capotauro Wigner-Eckart Theorem (Capotauro sub-claim (c) v1.0 closure) | theorem-registry |
+| `THEO-CHIR-MERGE-2` | 5 | The chirality merge theorem giving the cycle sign as the product of the director and offset signs. | manual |
+| `THEO-CHIR-PCD-ORIENTATION-1` | 5 | A candidate theorem deriving the PCD winding orientation from the chirality director. | manual |
+| `THEO-DSL-2` | 5 | First-Shell Geometric Identities at Vertex-Aligned Reading C in 600-Cell (**second F-line flagship theorem under THEO-DSL-N sub-prefix convention**; publication-grade Layer 3 **conditional on G1** first-shell inner-product primitive; combines two paper-body theorems of F.1 v1.0 SHIP into a single registry entry per F-line flagship convention) | theorem-registry |
 | `OPEN-FP-SF-4-1` | 4 | Derive from CPP primitives the full mass formula $m_{\nu_i} = M_0 \cdot V_{\nu_i}^2 \cdot \sigma_\nu$ for unbound neutrino modes. **CLOSURE ACHIEVED v3.0**: Picture A delivers $\sigma_\nu = 1/z^{10}$; α-exponent closure delivers $V^{1/3} \to 1$ at the bound/unbound boundary; together, the full mass formula is rigorously derived from CPP axioms plus six foundational inputs (three shared with Picture A; one shared with α-exponent; three operational definitions). | frontier |
 | `OPEN-FP-SF-4-2` | 4 | Derive from CPP primitives the cage-shell assignment $(\nu_1 \to V=4, \nu_2 \to V=12, \nu_3 \to V=30)$ such that neutrino mass eigenstates align with K3 eigenmodes at zeroth order. **CLOSURE ACHIEVED v4.0**: assignment rigorously derived via Composite K3-Cage-Shell Coupling Theorem from CPP substrate dynamics + standard $S_3$ representation theory + 6 FIs. | frontier |
+| `THEO-CHIR-AUDIT-1` | 4 | The chirality structural audit theorem. | manual |
+| `THEO-CHIR-CAP-1` | 4 | The Capotauro-sector chirality theorem. | manual |
+| `THEO-CHIR-CONT-1` | 4 | Substrate-Handle-to-Effective-Coupling Bridge Theorem (first Layer 4 continuum-EFT projection closure under OPEN-SD-CHIR-PRIMITIVE umbrella; sub-claim (a) closure of joint Layer 4 paper §A shared bridge work at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/`; sector-agnostic continuum-EFT projection of the substrate handle $\chi/6$ to chirality-sensitive effective operators in continuum EFT at observable scales) | theorem-registry |
+| `THEO-CHIR-STATUS-2` | 4 | The chirality status capstone identifying the order parameter as the sign of the 4D director. | manual |
+| `THEO-CHIR-TARROW-1` | 4 | The temporal-arrow status theorem unifying parity-face and time-face structure under substrate CPT. | manual |
+| `THEO-DSL-12` | 4 | A Dynamical Substrate Law theorem in the registered series running from DSL-1 to DSL-12. | manual |
+| `THEO-SD-CHIR-1` | 4 | Cross-Sector Substrate Chirality Unification Theorem (first cross-sector substrate-level closure under OPEN-SD-CHIR-PRIMITIVE umbrella) | theorem-registry |
+| `THEO-SD-CHIR-2` | 4 | qDP/eDP Sector Substrate Chirality Closure Theorem (second cross-sector substrate-level closure under OPEN-SD-CHIR-PRIMITIVE umbrella; manifestation (iii) electromagnetic handedness / qDP-eDP polarization patterns; three-way cross-sector unification with K3-doublet ↔ W-bracelet achieved at substrate level) | theorem-registry |
+| `CONJ-SS-11` | 3 | The nuclear binding conjecture resting on a cascade reinforcement factor and a Pauli penalty coefficient not yet derived from primitives. | manual |
 | `OPEN-FP-SF-2` | 3 | (family) Open problems of the SF-2 electroweak flagship, chiefly the first-principles derivation of the per-boson holographic dilution factor on absolute electroweak boson masses. | manual |
 | `OPEN-SS-10` | 3 | Derive nucleon–nucleon potential V(r) from qDP chain insertion dynamics. | frontier |
 | `OPEN-SS-19` | 3 | Derive the two working conjectures at the heart of CONJ-SS-11 — the $(A-1)$ cascade reinforcement factor and the Pauli penalty coefficient $M_0/\varphi^3$ — from CPP primitives. Also derive the NLO correction $\varepsilon_d \approx 0.050$ closing the 5.3% LO residual. | frontier |
 | `OPEN-SS-23` | 3 | Extend the SS-7 alpha-chain binding formula to non-$N{=}Z$ isotopes at alpha-chain $N_\alpha$ values, odd-$A$ nuclei with extra-nucleon-bound-to-alpha-core structures, and non-alpha-clustered nuclei. | frontier |
 | `OPEN-SS-24` | 3 | Derive assumption C4 of SS-7 (alpha clusters in bound strict-$N{=}Z$ nuclei arrange as vertices of simplicial convex 3-polytopes) from CPP lattice-level dynamics. | frontier |
 | `OPEN-SS-6` | 3 | Compute lightest scalar glueball mass using f_geom formula applied to closed hDP loop. | frontier |
+| `THEO-CHIR-MERGE-1` | 3 | The first of the chirality merge theorems, unifying parity and time-reversal structure. | manual |
+| `THEO-CHIR-STATUS-1` | 3 | The first chirality status capstone, recording what the chirality programme had established. | manual |
+| `THEO-DSL` | 3 | (family) The Dynamical Substrate Law theorem series. | manual |
+| `THEO-DSL-10` | 3 | A Dynamical Substrate Law theorem confirmed by multi-model review. | manual |
+| `THEO-DSL-11` | 3 | A Dynamical Substrate Law theorem with empirical validation carried out at fourth order. | manual |
+| `THEO-EW-6` | 3 | SU(2)_L algebra | theorem-registry |
+| `THEO-EW-8` | 3 | Yang-Mills EFT limit | theorem-registry |
+| `CONJ-CHIR-1` | 2 | The chirality conjecture discharged, conditional on an interpretive premise, by the first chirality bridge theorem. | manual |
+| `FI-C-1` | 2 | One of the ten foundational inputs of Capotauro v1.0. | manual |
+| `FI-C-10` | 2 | The last of the ten foundational inputs of Capotauro v1.0, extending cage-shell structure to chirality observables. | manual |
 | `OPEN-CHIR-3` | 2 | Connect substrate chirality (FI-C-9, `sign(δ)`) to electroweak chiral structure (parity violation, δ_CP). Decide whether substrate chirality is the **source** of SM chiral structure (→ chirality fully emergent V2/W2 via the SM) or independent of it (→ two distinct primitives). | frontier |
 | `OPEN-CHIR-F1-LINK` | 2 | Whether the PCD winding is derived from the chirality director (Scenario A) or is an independent primitive (Scenario B). | manual |
 | `OPEN-CHIR-MERGE` | 2 | Decide whether the temporal PCD-cycle handedness `σ_cycle` (E20; A1+A4) | frontier |
@@ -45,6 +81,45 @@ Plain-language glosses for the internal identifiers appearing in public papers, 
 | `OPEN-SS-28` | 2 | Derive D3 (bulk averaging of the interstitial-neutron SSV landscape reproduces the 2E/V scaling law of H2' with residuals accounted for by a small set of identifiable physical mechanisms) from CPP primitives, and decompose the observed residual in the SS-8 Phase 1 empirical map into its constituent mechanisms. | frontier |
 | `OPEN-SS-29` | 2 | Derive C5 (the bound alpha-cluster ground state minimizes total energy among physically realizable rigid-tetrahedral packing configurations) from CPP primitives A1–A11 without importing energy minimization as a structural assumption. | frontier |
 | `OPEN-SS-32` | 2 | Derive from CPP primitives the cluster-level collective oblate-deformation mode that activates at alpha-cluster shapes with belt/seam structure and contributes a $+\Bpair \times \text{attenuation factor}$ binding bonus to the leading-order SS-7 edge-sum prediction. This is the SS-7-level analog of SS-8's H3$'$ provisional opposite-polarity pair-bonus mechanism: same $+\Bpair$-attenuated structural form, same provisional-tier registration, same forward-looking derivation target. | frontier |
+| `THEO-CAP-N` | 2 | (family) The naming convention for sector-specific Capotauro theorems, as distinct from cross-sector ones. | manual |
+| `THEO-CHIR-BRIDGE-1` | 2 | The first bridge theorem linking the chirality sector to the electroweak sector. | manual |
+| `THEO-CHIR-CONT-3` | 2 | Sector B SM-2 Effective Free-Energy Chiral-Polarity-Bias Exclusion Theorem (third Layer 4 continuum-EFT projection closure under OPEN-SD-CHIR-PRIMITIVE umbrella; second sector-specific Layer 4 closure under THEO-CHIR-CONT-N sub-prefix convention; §C SUB-CLAIM (f)+(g)+(h)+(i) closure of joint Layer 4 paper at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/`; SM-2 chiral-polarity-bias derivation at observable thermodynamic scales) | theorem-registry |
+| `THEO-CHIR-VW-1` | 2 | The first theorem on the Vafa-Witten route in the chirality programme. | manual |
+| `THEO-SD-CHIR-3` | 2 | A substrate-level chirality theorem reserved for future work. | manual |
+| `THEO-SD-CHIR-4` | 2 | A candidate substrate-level chirality theorem linked to the Q7 question. | manual |
+| `THEO-SD-CHIR-N` | 2 | (family) The naming convention for cross-sector substrate chirality unification theorems. | manual |
+| `THEO-SF-4-5` | 2 | Composite K3-Cage-Shell Coupling Theorem, Theorem 5.2 of v4.0+ | theorem-graph |
+| `CONJ-COSMO-1` | 1 | The conjecture that cosmological dark matter consists of charge-neutral substrate aggregates of quark-sector dipole pairs and hybrid tetrahedra. | manual |
+| `CONJ-SM-9-2` | 1 | A conjecture registered in the axiom registry for the SM-9 sector. | manual |
+| `CONJ-SS-10` | 1 | The single-bond binding formula of v0.1, superseded by CONJ-SS-11. | manual |
+| `CONJ-SS-12` | 1 | A structural conjecture relating nuclear binding to Euler's formula for simplicial polytopes. | manual |
+| `CONJ-SS-2-1` | 1 | The heuristic string-tension formula of SS-2, carried as a conjecture. | manual |
+| `CONJ-SS-5` | 1 | A strong-sector conjecture promoted from an open problem, awaiting one step to become a theorem. | manual |
+| `CONJ-SS-G` | 1 | (family) Strong-sector gluon-counting conjectures, flagged as forward-looking rather than headline results. | manual |
+| `FI-C-2` | 1 | The foundational input supplying the K3 base structure used in the composite matrix element. | manual |
+| `FI-C-3` | 1 | The foundational input supplying the perpendicular-wavefunction structure carrying chirality content. | manual |
+| `FI-C-4` | 1 | A foundational input combining with FI-C-3 and FI-C-5 to carry chirality without further projection. | manual |
+| `FI-C-5` | 1 | A foundational input combining with FI-C-3 and FI-C-4 to carry chirality without further projection. | manual |
+| `FI-C-6` | 1 | The foundational input supplying the perpendicular-wavefunction factor on the twelve-vertex icosahedral cage. | manual |
+| `FI-C-7` | 1 | The chirality-eigenvalue matching principle identifying the relevant generator eigenvalue. | manual |
+| `FI-C-8` | 1 | The baryon asymmetry taken as empirical input rather than predicted. | manual |
+| `FI-C-N` | 1 | (family) The Capotauro foundational-input inventory; at v1.0 all sat at postulate status, at v2.0 they are graded by epistemic standing. | manual |
+| `FI-CHIR-CONT-1` | 1 | The substrate primitive 4D direction, as inherited at continuum-EFT level. | manual |
+| `FI-CHIR-CONT-10` | 1 | A sector specialization of the polytope-geometric invariants at continuum level. | manual |
+| `FI-CHIR-CONT-11` | 1 | The Yang-Mills effective-field-theory framework input. | manual |
+| `FI-CHIR-CONT-12` | 1 | The continuum-EFT chirality-projection structure input. | manual |
+| `FI-CHIR-CONT-13` | 1 | A sector specialization of the polytope-geometric invariants at continuum level. | manual |
+| `FI-CHIR-CONT-14` | 1 | The effective free-energy and partition-function framework input for the electroweak sector. | manual |
+| `FI-CHIR-CONT-15` | 1 | The last of six sector-specific foundational inputs introduced for the continuum sectors. | manual |
+| `FI-CHIR-CONT-2` | 1 | The substrate chirality magnitude, derived at v2.0 rather than postulated. | manual |
+| `FI-CHIR-CONT-3` | 1 | The substrate residual symmetry at the host vertex. | manual |
+| `FI-CHIR-CONT-9` | 1 | The substrate-locality inheritance underwriting gauge interaction at continuum level. | manual |
+| `FI-K-1` | 1 | The K3 spectrum, inherited at SM-3 level, as an input to the composite cage-shell theorem. | manual |
+| `FI-K-2` | 1 | The neutrino identification, inherited at SM-5 level. | manual |
+| `FI-K-3` | 1 | The K3 base structure, inherited at SM-1 level. | manual |
+| `FI-K-4` | 1 | The 600-cell distance-shell structure measured from the K3 centroid. | manual |
+| `FI-K-5` | 1 | The cage-shell mass formula inherited from the neutrino flagship at v3.0. | manual |
+| `FI-K-6` | 1 | The charged-lepton vertex identification, inherited at SM-4 level. | manual |
 | `OPEN-C23-MAGNETIC-SECTOR-VALIDATION` | 1 | Numerical validation of the derived magnetic sector; the curl construction and its normalisation are analytic and as yet unmeasured. | manual |
 | `OPEN-CHIR` | 1 | (family) The downstream chirality-derivation programme registered by the chirality structural audit. | manual |
 | `OPEN-CHIR-4` | 1 | Determine whether Mechanism A's derivation (OPEN-FP-F1-2) | frontier |
@@ -92,4 +167,48 @@ Plain-language glosses for the internal identifiers appearing in public papers, 
 | `OPEN-SS-B1` | 1 | Layer-4 axiomatic derivation and second-order extension of the Mechanism-A minimal-local framework. | manual |
 | `OPEN-TP-1` | 1 | Fix the $O(1)$ coefficient $C$ in $\langle N\rangle_{\max}=C\ln(\omega_{\max}/\omega_\gamma)$ for the truncated photon (Rukan–Gulla–Skaar) from the 600-cell Hilbert–Schmidt mode sum $\|T_2\|^2_{\mathrm{HS}}$ near the band top. | frontier |
 | `OPEN-WORKFLOW-PREDICTION-AUDIT` | 1 | SR-1's k was a normalisation convention billed as a zero-parameter prediction, and its five falsifiable predictions were void; the axiom registry lists ~28 zero-parameter predictions whose independence underwrites the entire √N null-hypothesis-raise strategy. Nobody knows how many are like k. | frontier |
+| `PH-OPEN-SS-22` | 1 | The problem history of a retired open problem whose empirical anchor proved to be an isotope-selection artifact. | manual |
+| `PH-OPEN-SS-26` | 1 | The problem history recording a programme-level proximity-binding question raised by a Level-3 gap. | manual |
+| `PRED-C-96` | 1 | The registered prediction for the scalar spectral index. | manual |
+| `PRED-O-16` | 1 | The registered prediction extending alpha-chain results to a single larger cluster. | manual |
+| `PRED-O-17` | 1 | The registered prediction for the transition between single and hierarchical alpha-chain regimes. | manual |
+| `PRED-O-18` | 1 | The registered prediction for hierarchical slip-plane additivity. | manual |
+| `PRED-O-25` | 1 | A prediction inherited through the bridge theorem to observable scale. | manual |
+| `PRED-O-30` | 1 | A registered prediction entering the first-order coefficient closed form. | manual |
+| `PRED-O-34` | 1 | The registered prediction for the running strong coupling. | manual |
+| `PRED-O-35` | 1 | A registered gravitational-wave prediction of the relativity sector. | manual |
+| `PRED-O-35--38` | 1 | (family) The four registered gravitational-wave predictions of the relativity sector. | manual |
+| `PRED-O-36` | 1 | The registered prediction that gravitational-wave propagation speed is exactly the speed of light. | manual |
+| `PRED-O-37` | 1 | The registered prediction of multiplet integrity under the protection theorem. | manual |
+| `PRED-O-38` | 1 | The registered prediction of no helicity-dependent vacuum dispersion. | manual |
+| `THEO-CHIR-CONT` | 1 | (family) Layer-4 continuum-EFT chirality theorems. | manual |
+| `THEO-CHIR-CONT-2` | 1 | Sector A Yang-Mills EFT V--A Coupling Derivation Theorem (second Layer 4 continuum-EFT projection closure under OPEN-SD-CHIR-PRIMITIVE umbrella; first sector-specific Layer 4 closure under THEO-CHIR-CONT-N sub-prefix convention; §B SUB-CLAIM (b)+(c)+(d)+(e) closure of joint Layer 4 paper at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/`; SF-2 V--A coupling derivation at observable scales) | theorem-registry |
+| `THEO-CHIR-CONT-4` | 1 | A candidate Layer-4 continuum theorem covering the temporal arrow. | manual |
+| `THEO-CHIR-CONT-5` | 1 | A candidate Layer-4 continuum theorem covering cosmological vacuum asymmetry. | manual |
+| `THEO-CHIR-CONT-N` | 1 | (family) The naming convention for Layer-4 continuum-EFT chirality theorems. | manual |
+| `THEO-CHIR-TARROW-2` | 1 | The successor temporal-arrow theorem in the chirality series. | manual |
+| `THEO-CHIR-VW-2` | 1 | The theorem marking the reachable boundary of the Vafa-Witten route. | manual |
+| `THEO-DSL-N` | 1 | (family) A proposed family registration for the shell-perpendicularity pattern that recurs at every perturbative order. | manual |
+| `THEO-EW-7` | 1 | Nexus gauge invariance | theorem-registry |
+| `THEO-FP-F1-3` | 1 | The first-shell inner-product primitive theorem of the F.1 geometric series. | manual |
+| `THEO-SF-2-1` | 1 | W bracelet uniqueness | theorem-registry |
+| `THEO-SF-2-2` | 1 | Z icosahedral uniqueness | theorem-registry |
+| `THEO-SF-2-3` | 1 | H dodecahedral uniqueness | theorem-registry |
+| `THEO-SF-2-5` | 1 | Yang-Mills EFT continuum limit (proof outline) | theorem-registry |
+| `THEO-SF-4-4` | 1 | $\alpha$-Exponent Reduction at the Bound/Unbound Boundary, Theorem 3.1 of v3.0+ | theorem-graph |
+| `THEO-SF7-CONSIST-1` | 1 | A pairwise consistency theorem between two flagship papers, checking shared observables are sourced consistently. | manual |
+| `THEO-SF7-CONSIST-2` | 1 | The consistency theorem between the charged-lepton and electroweak flagships. | manual |
+| `THEO-SF7-CONSIST-3` | 1 | The consistency theorem between the strong-sector and electroweak flagships. | manual |
+| `THEO-SF7-CONSIST-4` | 1 | The consistency theorem between the gravitation and electroweak flagships. | manual |
+| `THEO-SF7-CONSIST-5` | 1 | The consistency theorem between the electromagnetism and electroweak flagships. | manual |
+| `THEO-SF7-CONSIST-6` | 1 | The consistency theorem between the gravitation and strong-sector flagships. | manual |
+| `THEO-SF7-CONSIST-7` | 1 | The consistency theorem between the charged-lepton and neutrino flagships. | manual |
+| `THEO-SM-1` | 1 | Particle-type cage taxonomy | theorem-graph |
+| `THEO-SM-3` | 1 | SU(3 | theorem-graph |
+| `THEO-SM-5` | 1 | Neutrino sector foundations | theorem-graph |
+| `THEO-SR-EIN-1` | 1 | The Completion Theorem of the relativity-to-Einstein sequence. | manual |
+| `THEO-SR-EIN-2` | 1 | The Statics Theorem of the relativity-to-Einstein sequence. | manual |
+| `THEO-SR-EIN-3` | 1 | The transverse-traceless response, or cancellation, theorem. | manual |
+| `THEO-SR-EIN-4` | 1 | The Operational-Energy Lemma of the relativity-to-Einstein sequence. | manual |
+| `THEO-SS` | 1 | (family) Strong-sector theorems; a conjecture is promoted into this series once its open step closes. | manual |
 

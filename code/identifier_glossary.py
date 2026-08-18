@@ -47,7 +47,13 @@ END = "% END GENERATED IDENTIFIER APPENDIX"
 # truncated a longer identifier (OPEN-FP-SF-2-$\eta$ contains LaTeX math and
 # was being captured as "OPEN-FP-SF-2-"). Four phantom identifiers in the first
 # survey came from exactly this.
-ID_RE = re.compile(r"\bOPEN-[A-Z][A-Z0-9-]*[A-Z0-9]")
+# Five identifier families appear in public papers, not one. The 3211 pass
+# glossed only OPEN-, leaving ~1530 THEO-/FI-/PRED-/CONJ-/PH- sites across 58
+# papers unexplained -- the same defect the ruling was issued to fix.
+#   OPEN-  unresolved question        THEO-  proved theorem
+#   FI-    foundational input         PRED-  registered prediction
+#   CONJ-  conjecture                 PH-    problem history
+ID_RE = re.compile(r"\b(?:OPEN|THEO|FI|PRED|CONJ|PH)-[A-Z0-9][A-Z0-9-]*[A-Z0-9]")
 
 
 def strip_comments(text):
@@ -73,6 +79,34 @@ def papers():
             if "\\title{" in t:
                 out.append((p, t))
     return sorted(out)
+
+
+def harvest_theorem_sources():
+    """THEO- glosses from the dependency graph and the theorem registry.
+    Graph style:    **THEO-SM-1** (Particle-type cage taxonomy): ...
+    Registry style: | **THEO-SS-17** | Short name | Full statement |
+    """
+    gl = {}
+    g = os.path.join(REPO, "theorem-dependency-graph.md")
+    if os.path.exists(g):
+        txt = io.open(g, encoding="utf-8", errors="replace").read()
+        for m in re.finditer(
+                r"\*\*((?:THEO|PROP|FI|PRED|CONJ)-[A-Z0-9-]+)\*\*\s*\(([^)]{4,200})\)", txt):
+            gl.setdefault(m.group(1), (m.group(2).strip(), "theorem-graph"))
+    r = os.path.join(REPO, "theorem-registry.md")
+    if os.path.exists(r):
+        txt = io.open(r, encoding="utf-8", errors="replace").read()
+        for ln in txt.splitlines():
+            if not ln.startswith("|"):
+                continue
+            cells = [c.strip().strip("*") for c in ln.strip().strip("|").split("|")]
+            if len(cells) >= 2 and re.fullmatch(
+                    r"(?:THEO|PROP|FI|PRED|CONJ)-[A-Z0-9-]+", cells[0]):
+                for cand in cells[1:]:
+                    if len(cand) > 8:
+                        gl.setdefault(cells[0], (cand, "theorem-registry"))
+                        break
+    return gl
 
 
 def harvest_frontier():
@@ -121,6 +155,8 @@ def tex_escape(s):
 
 def collect():
     gl = harvest_frontier()
+    for k, v in harvest_theorem_sources().items():
+        gl.setdefault(k, v)
     for k, v in read_manual().items():
         gl.setdefault(k, v)          # frontier wins; manual fills gaps
     used = Counter()
@@ -159,10 +195,15 @@ def appendix_block(ids, gl):
          "\\section*{Appendix: Programme identifiers used in this paper}",
          "\\addcontentsline{toc}{section}{Appendix: Programme identifiers}",
          "",
-         "\\noindent This programme tracks its unresolved questions under "
-         "short identifiers so that a claim and its open dependencies can be "
-         "cited precisely. The identifiers appearing in this paper are glossed "
-         "below; no external document is needed to read them.",
+         "\\noindent This programme tracks its results, assumptions and "
+         "unresolved questions under short identifiers, so that a claim and "
+         "its dependencies can be cited precisely. Prefixes denote the kind of "
+         "item: \\texttt{THEO-} a proved theorem, \\texttt{FI-} a foundational "
+         "input the derivation assumes, \\texttt{PRED-} a registered "
+         "prediction, \\texttt{CONJ-} a conjecture, \\texttt{OPEN-} an "
+         "unresolved question, \\texttt{PH-} a problem history. Those "
+         "appearing in this paper are glossed below; no external document is "
+         "needed to read them.",
          "",
          "\\begin{description}"]
     for i in sorted(ids):
