@@ -25,12 +25,14 @@ Usage:  python3 code/build_osf_queue.py
 """
 
 import io
+import json
 import os
 import re
 import sys
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE = os.path.join(REPO, "osf_deposit_queue.md")
+MANIFEST = os.path.join(REPO, "osf_deposit_manifest.json")
 EXCLUDE = ("archive/", "/duplicates/", "duplicates/", "/development/")
 
 # Phrases that mean DO NOT DEPOSIT. NOT-FOR-RELEASE is here because the
@@ -155,8 +157,24 @@ def seed_from_worksheet():
     return seed
 
 
+# --- Columns owned by humans and by the pipeline -------------------------
+# Order matters: carry-forward reads the LAST len(OWNED) cells of each row.
+OWNED = ["APPROVED", "CHANGE_CLASS", "PREPRINT_ID", "POSTED", "OSF_LINK",
+         "NOTES"]
+
+VALID_CHANGE = {"", "editorial", "substantive"}
+
+
 def read_existing():
-    """Carry forward Isak's three columns, keyed on the .tex path."""
+    """Carry forward every human/pipeline-owned column, keyed on .tex path.
+
+    Handles BOTH layouts. The previous queue owned three columns (POSTED,
+    OSF LINK, NOTES) and had 9 cells per row; this one owns six and has 13.
+    Blindly taking the last six cells of an old row shifts Ver and Changed
+    into APPROVED and CHANGE_CLASS -- which on the first run marked all 113
+    rows as having an invalid CHANGE_CLASS. Old rows are therefore detected
+    by width and mapped onto the three columns they actually had.
+    """
     keep = {}
     if not os.path.exists(QUEUE):
         return keep
@@ -164,129 +182,199 @@ def read_existing():
         if not line.startswith("|"):
             continue
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if len(cells) < 9:
-            continue
         m = re.search(r"`([^`]+\.tex)`", " ".join(cells))
-        if m:
-            keep[m.group(1)] = (cells[-3], cells[-2], cells[-1])
+        if not m:
+            continue
+        if len(cells) >= len(OWNED) + 6:                 # current layout
+            keep[m.group(1)] = cells[-len(OWNED):]
+        elif len(cells) == 9:                            # legacy layout
+            keep[m.group(1)] = ["", "", ""] + cells[-3:]
     return keep
+
+
+def eligibility(r):
+    """Why a paper may or may not be deposited. Returns (eligible, reason).
+
+    Deliberately conservative: anything ambiguous is NOT eligible. An
+    unnecessary hold costs a day; an erroneous deposit cannot be undone,
+    because a submitted preprint can only be withdrawn, which leaves its
+    metadata as a permanent public record.
+    """
+    if r["withheld"]:
+        return False, f"WITHHELD: {r['withheld']}"
+    if not r["APPROVED"]:
+        return False, "not approved"
+    if r["CHANGE_CLASS"] not in VALID_CHANGE:
+        return False, (f"CHANGE_CLASS '{r['CHANGE_CLASS']}' invalid "
+                       "(use 'editorial' or 'substantive')")
+    if not r["PREPRINT_ID"]:
+        return True, "create: approved, no preprint yet"
+    if r["CHANGE_CLASS"] != "substantive":
+        return False, ("existing preprint, change is editorial or "
+                       "unclassified -- no new version")
+    # CHANGE_CLASS is not cleared after a deposit, so on its own it would keep
+    # a paper eligible forever and republish it on every pipeline run. Require
+    # the file to have actually changed since the last successful deposit.
+    posted = (r["POSTED"] or "").strip()
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", posted) and r["changed"] <= posted:
+        return False, f"already deposited {posted}; unchanged since"
+    return True, "new version: substantive change since last deposit"
 
 
 def main():
     keep = read_existing()
     seed = seed_from_worksheet()
-    seeded = 0
-    rows = []
+    rows, seeded = [], 0
     for rel, t in papers():
-        # WITHHOLD detection scans the RAW text, comments included, unlike
-        # every other check in this repo. The usual rule -- comments never
-        # reach the PDF, so they are not public-facing -- is right for jargon
-        # and wrong here. SF-7 marks its unwritten sections with %%TODO
-        # comments; they render nothing, but they are exactly the evidence
-        # that the paper is scaffolded and unfinished. Withholding asks
-        # whether the PAPER is finished, not what the READER sees.
-        body = t
+        body = t          # raw: see WITHHOLD note above
         why = ""
         for pat, reason in WITHHOLD:
             if re.search(pat, body, re.I):
                 why = reason
                 break
-        posted, link, notes = keep.get(rel, ("", "", ""))
-        if not (posted or link or notes) and rel in seed:
-            posted, link, notes = seed[rel]
+        owned = dict(zip(OWNED, keep.get(rel, [""] * len(OWNED))))
+        if not any(owned.values()) and rel in seed:
+            p_, l_, n_ = seed[rel]
+            owned["POSTED"], owned["OSF_LINK"], owned["NOTES"] = p_, l_, n_
             seeded += 1
-        rows.append({
-            "rel": rel, "title": title_of(t), "ver": version_of(t),
-            "changed": last_changed(rel), "cls": classify(rel),
-            "withheld": why, "posted": posted, "link": link, "notes": notes,
-        })
+        r = {"rel": rel, "title": title_of(t), "ver": version_of(t),
+             "changed": last_changed(rel), "cls": classify(rel),
+             "withheld": why}
+        r.update(owned)
+        r["eligible"], r["reason"] = eligibility(r)
+        rows.append(r)
 
     held = [r for r in rows if r["withheld"]]
     rdy = [r for r in rows if not r["withheld"]]
-    carried = sum(1 for r in rows if r["posted"] or r["link"] or r["notes"])
+    elig = [r for r in rows if r["eligible"]]
+    bad = [r for r in rows if r["CHANGE_CLASS"] not in VALID_CHANGE]
     missing = [k for k in keep if k not in {r["rel"] for r in rows}]
+
+    # ---- machine contract ------------------------------------------------
+    manifest = {
+        "generated": "regenerate with code/build_osf_queue.py; do not hand-edit",
+        "contract_version": 1,
+        "counts": {"total": len(rows), "withheld": len(held),
+                   "eligible_now": len(elig)},
+        "never_deposit": sorted(r["rel"] for r in held),
+        "papers": [{k: r[k] for k in
+                    ("rel", "title", "ver", "changed", "cls", "withheld",
+                     "eligible", "reason", *OWNED)} for r in rows],
+    }
+    io.open(MANIFEST, "w", encoding="utf-8").write(
+        json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
 
     L = []
     A = L.append
     A("# OSF deposit queue")
     A("")
-    A("**Generated by `code/build_osf_queue.py`. Re-run it after any patch.**")
+    A("**Generated by `code/build_osf_queue.py`. Re-run after any patch.**")
     A("")
-    A("## For Isak — how to use this file")
+    A("## The contract")
     A("")
-    A("Fill in the last three columns — **POSTED**, **OSF LINK**, **NOTES** — "
-      "as you deposit. **This script never overwrites those three.** It reads "
-      "them back and re-attaches them by file path, so the rest of the table "
-      "can be regenerated after every change without losing your entries. "
-      "Everything else in the table is derived from the repository and will be "
-      "overwritten, so put your working notes only in the NOTES column.")
+    A("This file is for people. **Automation must read "
+      "`osf_deposit_manifest.json`, generated in the same pass — never this "
+      "markdown.** Parsing prose to decide what to publish is how the wrong "
+      "paper gets published.")
     A("")
-    A("Deposit by **version change**, not on a schedule: OSF entries are "
-      "versioned and DOI'd, so a daily run churns new versions of papers that "
-      "did not change. The VER and CHANGED columns tell you what actually "
-      "moved since you last deposited.")
+    A("Six columns are owned by you and the pipeline, and the generator "
+      "**never overwrites them**: it reads them back and re-attaches them by "
+      "file path. Everything else is derived from the repository and will be "
+      "overwritten.")
     A("")
-    A("If a paper is renamed or moved, its row is re-keyed and your columns "
-      "for it are lost. Renames are reported at the bottom of this file rather "
-      "than dropped silently — check that section after a big patch.")
+    A("| Column | Owner | Meaning |")
+    A("|---|---|---|")
+    A("| `APPROVED` | Thomas | Date + initials. **Nothing may be deposited "
+      "without this.** Empty means not approved. |")
+    A("| `CHANGE_CLASS` | Thomas | `substantive` or `editorial`. Only "
+      "`substantive` triggers a new version of an existing preprint. |")
+    A("| `PREPRINT_ID` | pipeline | OSF preprint ID, **written back on "
+      "creation**. Empty = no preprint yet; non-empty = update, never create. |")
+    A("| `POSTED` | pipeline/Isak | Date of last successful deposit. |")
+    A("| `OSF_LINK` | pipeline/Isak | DOI or URL. |")
+    A("| `NOTES` | Isak | Free text. Safe to write anything here. |")
     A("")
-    A(f"**Counts:** {len(rdy)} clear to deposit · **{len(held)} WITHHELD** · "
-      f"{len(rows)} total · {carried} rows carrying deposit records.")
+    A("**Why `PREPRINT_ID` matters more than it looks.** It is the only thing "
+      "distinguishing *create a preprint* from *post a new version*. If the "
+      "pipeline creates where it should update, the paper gets a second DOI — "
+      "and a submitted preprint can only be removed by withdrawal, which "
+      "leaves its metadata as a permanent public record. There is no clean "
+      "undo, so the pipeline must write this field back immediately on "
+      "creation.")
+    A("")
+    A("**Why `CHANGE_CLASS` exists.** Version stamps bump for cosmetic edits: "
+      "one patch in this session bumped 60+ papers to add a glossary "
+      "appendix. Republishing on every bump would put 60 meaningless versions "
+      "on 60 DOIs. The version stamp records *that* a paper changed; "
+      "`CHANGE_CLASS` records whether the change is worth a deposit.")
+    A("")
+    A(f"**Counts:** {len(rows)} papers · **{len(held)} never deposit** · "
+      f"{len(elig)} eligible right now · {seeded} rows seeded from the DOI "
+      "worksheet.")
+    if bad:
+        A("")
+        A(f"> **{len(bad)} row(s) have an invalid `CHANGE_CLASS`.** The "
+          "pipeline treats these as not eligible. Use `substantive` or "
+          "`editorial`.")
     A("")
     A("---")
     A("")
-    A("## DO NOT DEPOSIT — withheld")
+    A("## NEVER DEPOSIT")
     A("")
-    A("These are listed rather than omitted on purpose: a paper that must not "
-      "be deposited is more dangerous missing from this list than present on "
-      "it, because an absent row invites someone to add it back from another "
-      "source. **Do not post these, and do not remove these rows.**")
+    A("Listed rather than omitted on purpose: a paper that must not be "
+      "deposited is more dangerous missing from this list than present on it, "
+      "because an absent row invites someone to add it back from another "
+      "source. **Do not post these; do not delete these rows.** The pipeline "
+      "reads the same set from `never_deposit` in the manifest and must refuse "
+      "them regardless of any other column.")
     A("")
-    A("| # | Paper | File | Why withheld |")
+    A("| # | Paper | File | Why |")
     A("|---|---|---|---|")
     for i, r in enumerate(held, 1):
         A(f"| {i} | {r['title']} | `{r['rel']}` | **{r['withheld']}** |")
     A("")
     A("---")
     A("")
-    A("## Clear to deposit")
+    A("## Deposit queue")
     A("")
-    A("Every paper below compiles to a PDF and carries no unfinished or "
-      "not-for-release marker. **CLASS is a judgement call, not a rule** — "
+    A("Every paper below compiles and carries no unfinished or "
+      "not-for-release marker. **CLASS is a judgement, not a rule** — "
       "\"Theorem artifact\" marks short proof documents supporting a larger "
-      "paper, which may belong as supplementary files rather than standalone "
-      "deposits. Confirm with Thomas before treating those as separate "
-      "publications.")
+      "paper. STATUS is computed; it is not something to edit.")
     A("")
-    A("| # | Class | Paper | File | Ver | Changed | POSTED | OSF LINK | NOTES |")
-    A("|---|---|---|---|---|---|---|---|---|")
+    hdr = ("| # | Class | Paper | File | Ver | Changed | STATUS | "
+           + " | ".join(OWNED) + " |")
+    A(hdr)
+    A("|" + "---|" * (hdr.count("|") - 1))
     order = {"Flagship": 0, "Series paper": 1, "Companion": 2,
              "Chirality derivation": 3, "Theorem artifact": 4}
     rdy.sort(key=lambda r: (order.get(r["cls"], 9), r["rel"]))
     for i, r in enumerate(rdy, 1):
+        status = "**READY**" if r["eligible"] else r["reason"]
         A(f"| {i} | {r['cls']} | {r['title']} | `{r['rel']}` | {r['ver']} | "
-          f"{r['changed']} | {r['posted']} | {r['link']} | {r['notes']} |")
+          f"{r['changed']} | {status} | "
+          + " | ".join(r[c] for c in OWNED) + " |")
     A("")
     if missing:
         A("---")
         A("")
-        A("## Rows carried from a previous run whose file no longer exists")
+        A("## Carried rows whose file no longer exists")
         A("")
-        A("These were renamed, moved or deleted. Any deposit record attached "
-          "to them could not be re-keyed — re-attach it to the new path by "
-          "hand.")
+        A("Renamed, moved or deleted. Their deposit records could not be "
+          "re-keyed — re-attach by hand.")
         A("")
         for k in sorted(missing):
             A(f"- `{k}` — was: {keep[k]}")
         A("")
 
     io.open(QUEUE, "w", encoding="utf-8").write("\n".join(L) + "\n")
-    print(f"osf_deposit_queue.md written: {len(rdy)} clear, {len(held)} "
-          f"withheld, {len(rows)} total.")
+    print(f"queue: {len(rows)} papers, {len(held)} never-deposit, "
+          f"{len(elig)} eligible now.")
+    print(f"manifest: {os.path.relpath(MANIFEST, REPO)}")
     if seeded:
-        print(f"  seeded {seeded} row(s) from the DOI harmonization worksheet.")
-    if carried:
-        print(f"  carried {carried} existing deposit record(s) forward.")
+        print(f"  seeded {seeded} row(s) from the DOI worksheet.")
+    if bad:
+        print(f"  WARNING: {len(bad)} invalid CHANGE_CLASS value(s).")
     if missing:
         print(f"  WARNING: {len(missing)} carried row(s) no longer resolve.")
     return 0
