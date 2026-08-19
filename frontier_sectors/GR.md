@@ -1,0 +1,96 @@
+# Frontier sector: GR (local gravitation series)
+
+**Location:** `/CPP/frontier_sectors/GR.md`
+**Created:** 19 Aug 2026, Patch 3229 (Session 149), concurrent with the GR-1
+V0 assembly (Patch 3228). Series home: `series_gravitation/`.
+**Scope of this sector:** the gravitational series parent GR-1 and its
+companions (currently c05, c07–c13 under
+`series_relativity/SR_companion_papers/`, pending re-identification —
+organizational side tracked as OPEN-ORG-023 in `organizational_frontier.md`).
+**Boundary:** LOCAL gravitation only. Cosmology (FRW/Friedmann, dark energy)
+is owned by OPEN-EU-1 (`frontier_sectors/SR.md` / CONJ.md) and the DE lane;
+nothing in this sector claims it.
+
+---
+
+## OPEN-GR-FE-1 — Derive the general CPP field equations (registered Patch 3229)
+
+**The problem.** The arc reproduces the Schwarzschild (isotropic
+coordinates), Kerr, and Kerr–Newman *solutions* exactly, but the general
+field *equations* are present only as correspondence claims: c07 states the
+CPP self-consistency condition is "≡ Einstein field equations" in the
+continuum limit; c08 "identifies the CPP equation that plays the role of
+Einstein's field equations" (a nonlinear wave equation for Δ|SSV| reducing
+to the linearised Einstein equations in the weak field). Recovering specific
+metrics is not the same as deriving the equation family whose solutions they
+are, and a GR-literate reader will make exactly that distinction (Patch 3225
+scoping assessment §3; founder ruling: V0 claims the solutions and registers
+the derivation).
+
+**The target.** Derive the general CPP field equations from the deeper
+DI-bit / SSV_abs / SSV_net / DP Sea picture — not by positing correspondence
+in the continuum limit. Folded into this item (consequences of the same
+underived general equation, 0 mentions each across the eight companions):
+
+- **Birkhoff-type uniqueness** — is the c08 static solution the unique
+  spherically symmetric vacuum solution of the CPP equation?
+- **The CPP energy-momentum tensor** — the object the field equations are
+  equated *to*; currently absent from the corpus.
+
+**What would count as progress.** (i) A stated general equation for the
+LSP/SSV field configuration with the c08 nonlinear wave equation as its
+static reduction; (ii) proof that Eq. (isotropic_schw) is its unique
+spherically symmetric vacuum solution; (iii) identification of the source
+tensor and its conservation law within PCD dynamics.
+
+**Dependencies / inheritance.** Rests on the PSR constitutive form whose
+SR-1 grounding is W2 viability strength (OPEN-SR-10 caveats inherited
+verbatim; k is a normalisation convention, not a derived quantity — see GR-1
+§7). Any derivation here inherits, and must not silently upgrade, that
+standing.
+
+**Status:** OPEN. Deliberately deferred out of GR-1 V0 by founder ruling
+(Session 148 handover §5). The single most consequential open item in the
+arc.
+
+---
+
+## OPEN-GR-TESTS-1 — The classical-tests companion (registered Patch 3229)
+
+**The problem.** The three conventional entry-criterion tests of any
+gravitational theory (perihelion precession, light deflection, Shapiro
+delay) plus gravitational redshift were absent or barely touched across the
+eight companions (perihelion 0 mentions, Shapiro 0, geodesic 1 of 8). GR-1
+V0 now carries the predicted-versus-observed summary table (GR-1 Table 1),
+with every number verified by `series_gravitation/code/3228_classical_tests_verify.py`
+(8/8 PASS: closed forms cross-checked against independent numeric
+Binet-equation geodesic integration; the c08 isotropic form verified to BE
+Schwarzschild at machine precision).
+
+**The target.** ONE dedicated companion paper (founder ruling: not inside
+GR-1, not split into three) carrying the full geodesic derivations of all
+four tests on the c08 metric — timelike orbit precession, null deflection,
+round-trip Shapiro delay, static redshift — as consequences worked out from
+the parent's result, exactly as c09 takes c08's core and derives echoes.
+Independently citable, because "does it pass the classical tests" is
+precisely what a reader will search for.
+
+**Frozen constraints.** The results it must reproduce are frozen in GR-1
+Table 1 and the 3228 verify script: perihelion 42.99″/century, deflection
+1.75″ at the solar limb, Shapiro ~233 μs (Earth–Venus superior conjunction,
+grazing, leading log), redshift gh/c² = 2.46×10⁻¹⁵ (22.5 m) and GPS net
++38.5 μs/day. The claim discipline is also frozen: since the metric is
+exactly Schwarzschild, the values are GR-identical by construction — the
+tests discriminate CPP from Newton, NOT from GR, and the companion must say
+so. Lense–Thirring frame-dragging is already covered (c11 ×16 mentions, c08
+×7); do not redo it.
+
+**Numerical cautions for the implementer** (found and fixed at 3228, see
+`series_gravitation/reasoning/3228.md`): (1) accumulate the integration
+angle as i·dφ from an integer counter — naive `phi += dphi` over ~10⁷ steps
+injects rounding drift at percent level against a 5×10⁻⁷ rad/orbit signal;
+(2) locate zero crossings by interpolation — first-grid-point stopping
+overshoots at 10% level against an 8.5×10⁻⁶ rad deflection.
+
+**Status:** OPEN. Bounded, standard work; the clearest next paper in the
+series after GR-1 V0 review.
