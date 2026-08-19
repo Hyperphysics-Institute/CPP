@@ -124,6 +124,37 @@ def classify(rel):
     return "Series paper"
 
 
+def seed_from_worksheet():
+    """Pre-fill deposit records from bibliography/doi_harmonization_worksheet.csv.
+
+    That worksheet already holds 39 real OSF DOIs -- the deposits nobody could
+    otherwise account for, since the repo had no other record of what was live.
+    These are REGISTRATION DOIs, not preprint DOIs, and are labelled as such:
+    re-depositing a paper as a preprint mints a NEW DOI, so conflating the two
+    would put the wrong identifier in a bibliography.
+
+    Seeded values are written into Isak's columns only when those columns are
+    empty, so anything he records by hand always wins.
+    """
+    import csv
+    ws = os.path.join(REPO, "bibliography", "doi_harmonization_worksheet.csv")
+    if not os.path.exists(ws):
+        return {}
+    tex = [r for r, _ in papers()]
+    seed = {}
+    for row in csv.DictReader(io.open(ws, encoding="utf-8-sig")):
+        pid = (row.get("paper_id") or "").strip()
+        doi = (row.get("REAL_DOI__fill") or "").strip()
+        if not pid or not doi:
+            continue
+        hits = [p for p in tex
+                if os.path.basename(p).lower().startswith(pid.lower() + "_")]
+        if len(hits) == 1:
+            seed[hits[0]] = ("registered", f"https://doi.org/{doi}",
+                             "registration DOI (not a preprint DOI)")
+    return seed
+
+
 def read_existing():
     """Carry forward Isak's three columns, keyed on the .tex path."""
     keep = {}
@@ -143,6 +174,8 @@ def read_existing():
 
 def main():
     keep = read_existing()
+    seed = seed_from_worksheet()
+    seeded = 0
     rows = []
     for rel, t in papers():
         # WITHHOLD detection scans the RAW text, comments included, unlike
@@ -159,6 +192,9 @@ def main():
                 why = reason
                 break
         posted, link, notes = keep.get(rel, ("", "", ""))
+        if not (posted or link or notes) and rel in seed:
+            posted, link, notes = seed[rel]
+            seeded += 1
         rows.append({
             "rel": rel, "title": title_of(t), "ver": version_of(t),
             "changed": last_changed(rel), "cls": classify(rel),
@@ -247,6 +283,8 @@ def main():
     io.open(QUEUE, "w", encoding="utf-8").write("\n".join(L) + "\n")
     print(f"osf_deposit_queue.md written: {len(rdy)} clear, {len(held)} "
           f"withheld, {len(rows)} total.")
+    if seeded:
+        print(f"  seeded {seeded} row(s) from the DOI harmonization worksheet.")
     if carried:
         print(f"  carried {carried} existing deposit record(s) forward.")
     if missing:

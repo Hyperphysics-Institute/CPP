@@ -10,7 +10,7 @@ Deposit by **version change**, not on a schedule: OSF entries are versioned and 
 
 If a paper is renamed or moved, its row is re-keyed and your columns for it are lost. Renames are reported at the bottom of this file rather than dropped silently — check that section after a big patch.
 
-**Counts:** 113 clear to deposit · **4 WITHHELD** · 117 total · 0 rows carrying deposit records.
+**Counts:** 113 clear to deposit · **4 WITHHELD** · 117 total · 33 rows carrying deposit records.
 
 ---
 
@@ -33,19 +33,19 @@ Every paper below compiles to a PDF and carries no unfinished or not-for-release
 
 | # | Class | Paper | File | Ver | Changed | POSTED | OSF LINK | NOTES |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Flagship | SF-1: The Charged-Lepton Sector from 600-Cell Geometry | `flagship_papers/charged_leptons/sf-1_charged_leptons.tex` | 1.3 | 2026-08-18 |  |  |  |
+| 1 | Flagship | SF-1: The Charged-Lepton Sector from 600-Cell Geometry | `flagship_papers/charged_leptons/sf-1_charged_leptons.tex` | 1.3 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/Q4BFH | registration DOI (not a preprint DOI) |
 | 2 | Flagship | SF-8: Emergent Electrostatics and the Bonded ZBW Sea | `flagship_papers/electromagnetism/SF-8/sf-8_emergent_electrostatics.tex` | 0.5 | 2026-08-18 |  |  |  |
 | 3 | Flagship | SF-6: Electromagnetism Unified | `flagship_papers/electromagnetism/sf-6_electromagnetism.tex` | 1.6 | 2026-08-18 |  |  |  |
 | 4 | Flagship | SF-2 Companion: Cage Geometry Figures, Executive Overview, Glossary, Quantitative Frameworks, a | `flagship_papers/electroweak/sf-2_companion.tex` | 1.05 | 2026-08-18 |  |  |  |
 | 5 | Flagship | SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry | `flagship_papers/electroweak/sf-2_electroweak.tex` | 1.05 | 2026-08-18 |  |  |  |
-| 6 | Flagship | SF-4: Neutrino Sector Unification from 600-Cell Geometry | `flagship_papers/neutrinos/sf-4_neutrinos.tex` | 3.4 | 2026-08-18 |  |  |  |
+| 6 | Flagship | SF-4: Neutrino Sector Unification from 600-Cell Geometry | `flagship_papers/neutrinos/sf-4_neutrinos.tex` | 3.4 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/S4GQF | registration DOI (not a preprint DOI) |
 | 7 | Flagship | SF-3: The Quark Sector from 600-Cell Geometry | `flagship_papers/quarks/sf-3_quarks.tex` | 1.6 | 2026-08-18 |  |  |  |
 | 8 | Flagship | SF-5: Strong-Sector Unification from 600-Cell Geometry | `flagship_papers/strong/sf-5_strong.tex` | 1.04 | 2026-08-18 |  |  |  |
-| 9 | Series paper | Conscious Point Physics: | `series_electroweak/papers/EW-1_electroweak_introduction.tex` | 1.1 | 2026-04-02 |  |  |  |
-| 10 | Series paper | Conscious Point Physics: | `series_electroweak/papers/EW-2_w_boson_from_cpp.tex` | 1.1 | 2026-04-02 |  |  |  |
-| 11 | Series paper | Conscious Point Physics: | `series_electroweak/papers/EW-3_z_boson_from_cpp.tex` | 1.1 | 2026-08-17 |  |  |  |
-| 12 | Series paper | Conscious Point Physics: | `series_electroweak/papers/EW-4_higgs_boson_from_cpp.tex` | 1.1 | 2026-04-02 |  |  |  |
-| 13 | Series paper | Conscious Point Physics: | `series_electroweak/papers/EW-5_electroweak_unification.tex` | 1.1 | 2026-04-02 |  |  |  |
+| 9 | Series paper | Conscious Point Physics: | `series_electroweak/papers/EW-1_electroweak_introduction.tex` | 1.1 | 2026-04-02 | registered | https://doi.org/10.17605/OSF.IO/6DM45 | registration DOI (not a preprint DOI) |
+| 10 | Series paper | Conscious Point Physics: | `series_electroweak/papers/EW-2_w_boson_from_cpp.tex` | 1.1 | 2026-04-02 | registered | https://doi.org/10.17605/OSF.IO/3XNK5 | registration DOI (not a preprint DOI) |
+| 11 | Series paper | Conscious Point Physics: | `series_electroweak/papers/EW-3_z_boson_from_cpp.tex` | 1.1 | 2026-08-17 | registered | https://doi.org/10.17605/OSF.IO/ZWQRY | registration DOI (not a preprint DOI) |
+| 12 | Series paper | Conscious Point Physics: | `series_electroweak/papers/EW-4_higgs_boson_from_cpp.tex` | 1.1 | 2026-04-02 | registered | https://doi.org/10.17605/OSF.IO/SDW7G | registration DOI (not a preprint DOI) |
+| 13 | Series paper | Conscious Point Physics: | `series_electroweak/papers/EW-5_electroweak_unification.tex` | 1.1 | 2026-04-02 | registered | https://doi.org/10.17605/OSF.IO/3SX4H | registration DOI (not a preprint DOI) |
 | 14 | Series paper | Holographic Vacuum Energy Suppression | `series_foundations/TN-SR-1_vacuum_energy_holographic_suppression.tex` | — | 2026-03-27 |  |  |  |
 | 15 | Series paper | The Silly Putty Analogy: Velocity-Dependent Polarization of the Dipole Particle Sea | `series_foundations/dp-sea-polarization/DP-Sea-Polarization-Model.tex` | — | 2026-03-26 |  |  |  |
 | 16 | Series paper | Conscious Point Physics: | `series_foundations/dp_sea_composition/DP_sea_and_cage_composition.tex` | 1.2 | 2026-08-18 |  |  |  |
@@ -56,40 +56,40 @@ Every paper below compiles to a PDF and carries no unfinished or not-for-release
 | 21 | Series paper | EU-1: The Primordial Scalar Spectral Index from Substrate Inflation | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | 1.3 | 2026-08-18 |  |  |  |
 | 22 | Series paper | DM-2: Sea Gravitation and the Dark Sector | `series_phenomena/cosmology/sea_gravitation/DM-2/DM-2_sea_gravitation_dark_sector.tex` | 1.0 | 2026-08-18 |  |  |  |
 | 23 | Series paper | TP-1: The Truncated Photon and the Lattice Regularization of Shutter-Induced Photon Creation | `series_phenomena/quantum_optics/photon_truncation/TP-1/TP-1_truncated_photon.tex` | 1.4 | 2026-08-18 |  |  |  |
-| 24 | Series paper | Quantum Mechanics in Conscious Point Physics: | `series_quantum_mechanics/papers/QM-1_schrodinger_emergence.tex` | 3.3 | 2026-08-18 |  |  |  |
-| 25 | Series paper | Quantum Mechanics in Conscious Point Physics: | `series_quantum_mechanics/papers/QM-2_superposition.tex` | 3.2 | 2026-08-18 |  |  |  |
-| 26 | Series paper | Quantum Mechanics in Conscious Point Physics: | `series_quantum_mechanics/papers/QM-3_bell_entanglement.tex` | 3.2 | 2026-08-18 |  |  |  |
-| 27 | Series paper | Quantum Mechanics in Conscious Point Physics: | `series_quantum_mechanics/papers/QM-4_measurement_problem.tex` | 3.2 | 2026-08-18 |  |  |  |
-| 28 | Series paper | Quantum Mechanics in Conscious Point Physics: | `series_quantum_mechanics/papers/QM-5_qft_emergence.tex` | 3.1 | 2026-08-04 |  |  |  |
-| 29 | Series paper | Quantum Mechanics in Conscious Point Physics: | `series_quantum_mechanics/papers/QM-6_capstone.tex` | 3.2 | 2026-08-18 |  |  |  |
-| 30 | Series paper | SR-1: Mechanistic Derivation of Relativistic Effects | `series_relativity/papers/SR-1_special_relativity_emergence.tex` | 1.2 | 2026-08-18 |  |  |  |
+| 24 | Series paper | Quantum Mechanics in Conscious Point Physics: | `series_quantum_mechanics/papers/QM-1_schrodinger_emergence.tex` | 3.3 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/FBNJC | registration DOI (not a preprint DOI) |
+| 25 | Series paper | Quantum Mechanics in Conscious Point Physics: | `series_quantum_mechanics/papers/QM-2_superposition.tex` | 3.2 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/YT82E | registration DOI (not a preprint DOI) |
+| 26 | Series paper | Quantum Mechanics in Conscious Point Physics: | `series_quantum_mechanics/papers/QM-3_bell_entanglement.tex` | 3.2 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/29CG4 | registration DOI (not a preprint DOI) |
+| 27 | Series paper | Quantum Mechanics in Conscious Point Physics: | `series_quantum_mechanics/papers/QM-4_measurement_problem.tex` | 3.2 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/DTQFE | registration DOI (not a preprint DOI) |
+| 28 | Series paper | Quantum Mechanics in Conscious Point Physics: | `series_quantum_mechanics/papers/QM-5_qft_emergence.tex` | 3.1 | 2026-08-04 | registered | https://doi.org/10.17605/OSF.IO/3P8DF | registration DOI (not a preprint DOI) |
+| 29 | Series paper | Quantum Mechanics in Conscious Point Physics: | `series_quantum_mechanics/papers/QM-6_capstone.tex` | 3.2 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/34RXZ | registration DOI (not a preprint DOI) |
+| 30 | Series paper | SR-1: Mechanistic Derivation of Relativistic Effects | `series_relativity/papers/SR-1_special_relativity_emergence.tex` | 1.2 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/BU8AQ | registration DOI (not a preprint DOI) |
 | 31 | Series paper | SR-2: The Spin-Bit Axiom --- Necessity, Construction | `series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` | 1.5 | 2026-08-18 |  |  |  |
-| 32 | Series paper | SM-10: Toward First-Principles Quark Mass from | `series_standard_model/papers/SM-10_chain_network_FEM.tex` | 2.0 | 2026-06-13 |  |  |  |
-| 33 | Series paper | SM-1: Binding Mechanisms and Cage Stability | `series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex` | — | 2026-04-02 |  |  |  |
-| 34 | Series paper | SM-2: Mass Generation from Geometric Hierarchies | `series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex` | — | 2026-03-28 |  |  |  |
-| 35 | Series paper | SM-3: K3 Spectral Theorem and the Koide Formula | `series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex` | — | 2026-04-16 |  |  |  |
-| 36 | Series paper | SM-4: Charged Lepton Masses from the K3 Spectral Theorem | `series_standard_model/papers/SM-4_charged_lepton_masses_from_k3.tex` | — | 2026-03-28 |  |  |  |
-| 37 | Series paper | SM-5: Tribimaximal Neutrino Mixing as the Zeroth-Order | `series_standard_model/papers/SM-5_tribimaximal_neutrino_mixing_from_k3.tex` | — | 2026-03-28 |  |  |  |
-| 38 | Series paper | The Charged Lepton Mass Spectrum | `series_standard_model/papers/SM-6_lepton_mass_spectrum.tex` | — | 2026-06-13 |  |  |  |
-| 39 | Series paper | The Heavy Quark Mass Spectrum and Strong Coupling | `series_standard_model/papers/SM-7_heavy_quark_mass_spectrum.tex` | 2.5 | 2026-08-18 |  |  |  |
-| 40 | Series paper | SM-8: Quark Generation Structure | `series_standard_model/papers/SM-8_quark_generation_600cell_shells.tex` | 4.1 | 2026-08-17 |  |  |  |
-| 41 | Series paper | SM-9: The Quark Mass Scaling Exponent | `series_standard_model/papers/SM-9_scaling_exponent.tex` | 2.4 | 2026-08-18 |  |  |  |
+| 32 | Series paper | SM-10: Toward First-Principles Quark Mass from | `series_standard_model/papers/SM-10_chain_network_FEM.tex` | 2.0 | 2026-06-13 | registered | https://doi.org/10.17605/OSF.IO/23X7N | registration DOI (not a preprint DOI) |
+| 33 | Series paper | SM-1: Binding Mechanisms and Cage Stability | `series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex` | — | 2026-04-02 | registered | https://doi.org/10.17605/OSF.IO/R8ESY | registration DOI (not a preprint DOI) |
+| 34 | Series paper | SM-2: Mass Generation from Geometric Hierarchies | `series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex` | — | 2026-03-28 | registered | https://doi.org/10.17605/OSF.IO/Z98UM | registration DOI (not a preprint DOI) |
+| 35 | Series paper | SM-3: K3 Spectral Theorem and the Koide Formula | `series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex` | — | 2026-04-16 | registered | https://doi.org/10.17605/OSF.IO/C5A7B | registration DOI (not a preprint DOI) |
+| 36 | Series paper | SM-4: Charged Lepton Masses from the K3 Spectral Theorem | `series_standard_model/papers/SM-4_charged_lepton_masses_from_k3.tex` | — | 2026-03-28 | registered | https://doi.org/10.17605/OSF.IO/6EA94 | registration DOI (not a preprint DOI) |
+| 37 | Series paper | SM-5: Tribimaximal Neutrino Mixing as the Zeroth-Order | `series_standard_model/papers/SM-5_tribimaximal_neutrino_mixing_from_k3.tex` | — | 2026-03-28 | registered | https://doi.org/10.17605/OSF.IO/UVS5H | registration DOI (not a preprint DOI) |
+| 38 | Series paper | The Charged Lepton Mass Spectrum | `series_standard_model/papers/SM-6_lepton_mass_spectrum.tex` | — | 2026-06-13 | registered | https://doi.org/10.17605/OSF.IO/PGR38 | registration DOI (not a preprint DOI) |
+| 39 | Series paper | The Heavy Quark Mass Spectrum and Strong Coupling | `series_standard_model/papers/SM-7_heavy_quark_mass_spectrum.tex` | 2.5 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/BE5Q8 | registration DOI (not a preprint DOI) |
+| 40 | Series paper | SM-8: Quark Generation Structure | `series_standard_model/papers/SM-8_quark_generation_600cell_shells.tex` | 4.1 | 2026-08-17 | registered | https://doi.org/10.17605/OSF.IO/RZMPA | registration DOI (not a preprint DOI) |
+| 41 | Series paper | SM-9: The Quark Mass Scaling Exponent | `series_standard_model/papers/SM-9_scaling_exponent.tex` | 2.4 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/WJ3KM | registration DOI (not a preprint DOI) |
 | 42 | Series paper | SM-TN-2: Bridging the Strong-Sector Mass Method | `series_standard_model/papers/SM-TN-2_bridge_original_to_600cell.tex` | — | 2026-03-28 |  |  |  |
-| 43 | Series paper | SS-1: The Strong Sector from the 600-Cell Lattice | `series_strong/papers/SS-1_strong_sector_from_600cell_lattice.tex` | 1.1 | 2026-04-02 |  |  |  |
+| 43 | Series paper | SS-1: The Strong Sector from the 600-Cell Lattice | `series_strong/papers/SS-1_strong_sector_from_600cell_lattice.tex` | 1.1 | 2026-04-02 | registered | https://doi.org/10.17605/OSF.IO/P73JQ | registration DOI (not a preprint DOI) |
 | 44 | Series paper | Conscious Point Physics: | `series_strong/papers/SS-1a_cage_geometry_eigenvalue_bridge.tex` | — | 2026-08-17 |  |  |  |
 | 45 | Series paper | Conscious Point Physics: | `series_strong/papers/SS-1b_su3_algebra_exact_proof.tex` | — | 2026-04-02 |  |  |  |
 | 46 | Series paper | Conscious Point Physics: | `series_strong/papers/SS-1c_eight_gluons_hdp_structures.tex` | — | 2026-04-02 |  |  |  |
 | 47 | Series paper | Conscious Point Physics: | `series_strong/papers/SS-1d_confinement_beta_function.tex` | — | 2026-04-02 |  |  |  |
 | 48 | Series paper | Conscious Point Physics: | `series_strong/papers/SS-1e_hadron_spectrum.tex` | — | 2026-04-02 |  |  |  |
 | 49 | Series paper | Conscious Point Physics: | `series_strong/papers/SS-1f_su3_hop_realization.tex` | 1.0 | 2026-06-18 |  |  |  |
-| 50 | Series paper | Lattice-Scale Grounding and Nucleon Structure | `series_strong/papers/SS-2_lattice_scale_nucleon_structure.tex` | — | 2026-04-12 |  |  |  |
-| 51 | Series paper | SS-3: Uniqueness of SU(3) from the Tetrahedral Cage | `series_strong/papers/SS-3_su3_uniqueness.tex` | 1.7 | 2026-08-18 |  |  |  |
-| 52 | Series paper | SS-4: String Tension from the 600-Cell Face-Mode Multiplicity | `series_strong/papers/SS-4_string_tension.tex` | 0.4 | 2026-08-18 |  |  |  |
-| 53 | Series paper | SS-5: Light-Nuclei Binding Energies from the Open-Vertex Cascade | `series_strong/papers/SS-5/SS-5_light_nuclei_open_vertex_cascade.tex` | 1.2 | 2026-08-18 |  |  |  |
-| 54 | Series paper | SS-6: Deuteron Observables Beyond Binding: | `series_strong/papers/SS-6/SS-6_deuteron_observables_beyond_binding.tex` | 0.5 | 2026-08-18 |  |  |  |
-| 55 | Series paper | SS-7: Alpha-Cluster Regime and the 3N-6 Edge Formula | `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex` | 1.6 | 2026-08-18 |  |  |  |
-| 56 | Series paper | Interstitial-Neutron Binding in Alpha-Cluster Nuclei: | `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` | 1.3 | 2026-08-18 |  |  |  |
-| 57 | Series paper | (untitled) | `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` | 1.3 | 2026-08-18 |  |  |  |
+| 50 | Series paper | Lattice-Scale Grounding and Nucleon Structure | `series_strong/papers/SS-2_lattice_scale_nucleon_structure.tex` | — | 2026-04-12 | registered | https://doi.org/10.17605/OSF.IO/3HWE2 | registration DOI (not a preprint DOI) |
+| 51 | Series paper | SS-3: Uniqueness of SU(3) from the Tetrahedral Cage | `series_strong/papers/SS-3_su3_uniqueness.tex` | 1.7 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/Q48K5 | registration DOI (not a preprint DOI) |
+| 52 | Series paper | SS-4: String Tension from the 600-Cell Face-Mode Multiplicity | `series_strong/papers/SS-4_string_tension.tex` | 0.4 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/GK5WY | registration DOI (not a preprint DOI) |
+| 53 | Series paper | SS-5: Light-Nuclei Binding Energies from the Open-Vertex Cascade | `series_strong/papers/SS-5/SS-5_light_nuclei_open_vertex_cascade.tex` | 1.2 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/7NZHT | registration DOI (not a preprint DOI) |
+| 54 | Series paper | SS-6: Deuteron Observables Beyond Binding: | `series_strong/papers/SS-6/SS-6_deuteron_observables_beyond_binding.tex` | 0.5 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/76NYH | registration DOI (not a preprint DOI) |
+| 55 | Series paper | SS-7: Alpha-Cluster Regime and the 3N-6 Edge Formula | `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex` | 1.6 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/J6C2Y | registration DOI (not a preprint DOI) |
+| 56 | Series paper | Interstitial-Neutron Binding in Alpha-Cluster Nuclei: | `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` | 1.3 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/362QC | registration DOI (not a preprint DOI) |
+| 57 | Series paper | (untitled) | `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` | 1.3 | 2026-08-18 | registered | https://doi.org/10.17605/OSF.IO/ZK9GV | registration DOI (not a preprint DOI) |
 | 58 | Companion | The Absolute Moment Postulate: Necessity, Consistency | `series_relativity/SR_companion_papers/c01_absolute_moment_postulate/absolute_moment_postulate.tex` | 3.3 | 2026-08-17 |  |  |  |
 | 59 | Companion | Microscopic Origin of the Dipole Sea Stiffness C | `series_relativity/SR_companion_papers/c02_dipole_stiffness_C/c02_dipole_stiffness_C.tex` | 2.3 | 2026-08-18 |  |  |  |
 | 60 | Companion | Quantum Probability and the Classical Transition | `series_relativity/SR_companion_papers/c03_born_rule/c03_born_rule.tex` | 2.1 | 2026-08-09 |  |  |  |
