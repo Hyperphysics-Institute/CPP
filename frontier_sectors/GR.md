@@ -4,9 +4,9 @@
 **Created:** 19 Aug 2026, Patch 3229 (Session 149), concurrent with the GR-1
 V0 assembly (Patch 3228). Series home: `series_gravitation/`.
 **Scope of this sector:** the gravitational series parent GR-1 and its
-companions (currently c05, c07–c13 under
-`series_relativity/SR_companion_papers/`, pending re-identification —
-organizational side tracked as OPEN-ORG-023 in `organizational_frontier.md`).
+companions GR-1a–GR-1h (formerly c05, c07–c13; moved to
+`series_gravitation/GR_companion_papers/` at Patch 3230 — OPEN-ORG-023
+Item 2 executed). GR-1i is reserved for the classical-tests companion.
 **Boundary:** LOCAL gravitation only. Cosmology (FRW/Friedmann, dark energy)
 is owned by OPEN-EU-1 (`frontier_sectors/SR.md` / CONJ.md) and the DE lane;
 nothing in this sector claims it.
