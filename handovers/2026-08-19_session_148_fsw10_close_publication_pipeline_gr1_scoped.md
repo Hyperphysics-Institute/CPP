@@ -130,10 +130,33 @@ parent, not a mistitled one.
 - **Full field-equation derivation is deferred**, to be pursued afterwards using
   the deeper DI-bit / SSV_abs / SSV_net / DP Sea picture. Register it; do not
   attempt it in V0.
-- **The classical tests go INSIDE GR-1.** *This reverses this worker's
-  recommendation of a separate companion — it is the founder's ruling, made
-  deliberately, and should not be "corrected" back.* Rationale: it makes GR-1
-  self-contained against the entry criterion.
+- **The classical tests go in ONE COMPANION PAPER, not inside GR-1 and not
+  split into three.** *Superseded ruling, recorded because the first version of
+  this handover said the opposite:* Patch 3226 recorded "the tests go INSIDE
+  GR-1" and flagged it as a deliberate founder override not to be corrected
+  back. The founder had not intended an override — the intent was to accept the
+  recommendation of a single combined companion rather than three separate
+  papers. **The instruction in 3226 is withdrawn. Do not follow it.**
+
+  Structure to build:
+  - **Derivations live in the companion.** The tests are consequences worked
+    out from the parent's result, which is exactly what every other companion
+    in this arc is: c09 takes c08's core and derives echoes; the tests
+    companion takes c08's metric and derives Mercury. Same relation.
+  - **Results live in GR-1**, as a short summary table — predicted versus
+    observed for perihelion precession, light deflection, Shapiro delay and
+    gravitational redshift — with a pointer to the companion for the working.
+  - Rationale for the split: GR-1's job is the thesis, not the calculations.
+    Four full geodesic derivations inside it would bury the unifying argument
+    the paper exists to make. The table keeps GR-1 self-contained on CLAIMS
+    while the companion carries the DERIVATIONS and stays independently
+    citable — which matters, because "does it pass the classical tests" is
+    precisely what a reader will search for.
+  - Why one companion and not three: the three tests introduce **no new
+    mechanism** (unlike Kerr, Kerr-Newman and superradiance, which each
+    introduced a new SSV component or source term), they function as a set
+    rather than singly, and three thin papers applying textbook integration to
+    an already-published metric would read as padding in a bulk deposit.
 
 ### What GR-1 must contain
 
@@ -145,8 +168,11 @@ parent, not a mistitled one.
    scalar; c07 introduces `SSV_net` as a vector. That step is where gravity
    stops resembling electrostatics, and it is currently introduced inside a
    companion rather than argued.
-3. **The classical tests** — perihelion precession, light deflection, Shapiro
-   delay, gravitational redshift. **All absent from the corpus** (0 mentions of
+3. **The classical tests — RESULTS ONLY, as a summary table.** Perihelion
+   precession, light deflection, Shapiro delay, gravitational redshift. The
+   DERIVATIONS belong in the separate tests companion (see the ruling above);
+   GR-1 carries predicted-versus-observed and points to it. **All four are
+   absent from the corpus** (0 mentions of
    perihelion, Shapiro, energy-momentum tensor, Birkhoff). Bounded work:
    standard geodesic integration on the c08 metric, no new physics required —
    *if* the metric is genuinely exact. **Lense-Thirring frame-dragging is
