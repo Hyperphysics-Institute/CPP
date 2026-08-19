@@ -104,3 +104,17 @@ the next programme-level closeout.
 4. Numeric targets are frozen; if any derivation disagrees with Table 1,
    the derivation is wrong or the trap notes apply — do not adjust targets.
 5. Patch numbering continues at 3250.
+
+## Addendum (same session, Patch 3250) — audit correction
+
+The Step-H pointer coverage checklist's **anthology chapter** category was
+omitted from the audit table above at Patch 3249 — a partial-firing miss,
+caught by the founder. Corrected: spin-III shipped v1.0 this session, so
+the chapter was owed and is now written →
+`book_project/chapters/spin-III_the_twelve_sided_room.md` (Rovelli
+register per `templates/anthology_chapter_template.md`; centerpiece =
+selection-by-exclusion + the eight-interloper fingerprint; anchors:
+Schrödinger 1930, Bethe 1929, Rayleigh, Plato's Timaeus; doctrinally
+neutral). TATWD Book 2 roadmap: N/A (no chapter-dependency rows for the
+spin arc). programme_orientation.md integration remains deferred under
+the 0343 delayed-batch precedent as recorded above.
