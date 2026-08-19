@@ -44,7 +44,7 @@ Every paper below compiles and carries no unfinished or not-for-release marker. 
 
 | # | Class | Paper | File | Ver | Changed | STATUS | APPROVED | CHANGE_CLASS | PREPRINT_ID | POSTED | OSF_LINK | NOTES |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Flagship | SF-1: The Charged-Lepton Sector from 600-Cell Geometry | `flagship_papers/charged_leptons/sf-1_charged_leptons.tex` | 1.3 | 2026-08-18 | not approved |  |  |  |  |  | registration DOI (not a preprint DOI) |
+| 1 | Flagship | SF-1: The Charged-Lepton Sector from 600-Cell Geometry | `flagship_papers/charged_leptons/sf-1_charged_leptons.tex` | 1.3 | 2026-08-18 | not approved |  |  |  | registered | https://doi.org/10.17605/OSF.IO/Q4BFH | registration DOI (not a preprint DOI) |
 | 2 | Flagship | SF-8: Emergent Electrostatics and the Bonded ZBW Sea | `flagship_papers/electromagnetism/SF-8/sf-8_emergent_electrostatics.tex` | 0.5 | 2026-08-18 | not approved |  |  |  |  |  |  |
 | 3 | Flagship | SF-6: Electromagnetism Unified | `flagship_papers/electromagnetism/sf-6_electromagnetism.tex` | 1.6 | 2026-08-18 | not approved |  |  |  |  |  |  |
 | 4 | Flagship | SF-2 Companion: Cage Geometry Figures, Executive Overview, Glossary, Quantitative Frameworks, a | `flagship_papers/electroweak/sf-2_companion.tex` | 1.05 | 2026-08-18 | not approved |  |  |  |  |  |  |

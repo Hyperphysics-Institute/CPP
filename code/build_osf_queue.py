@@ -233,10 +233,22 @@ def main():
                 why = reason
                 break
         owned = dict(zip(OWNED, keep.get(rel, [""] * len(OWNED))))
-        if not any(owned.values()) and rel in seed:
+        if rel in seed:
+            # Seed FIELD BY FIELD, never all-or-nothing. The previous guard was
+            # `if not any(owned.values())`, which meant a single carried-forward
+            # cell suppressed seeding of every other cell in the row. SF-1
+            # carried its NOTES through the 3-column-to-6-column migration and
+            # so silently lost its POSTED date and its recovered DOI -- exactly
+            # the data loss the carry-forward contract exists to prevent.
+            # A recorded value always wins; an empty one gets the seed.
             p_, l_, n_ = seed[rel]
-            owned["POSTED"], owned["OSF_LINK"], owned["NOTES"] = p_, l_, n_
-            seeded += 1
+            filled = False
+            for col, val in (("POSTED", p_), ("OSF_LINK", l_), ("NOTES", n_)):
+                if not (owned.get(col) or "").strip() and val:
+                    owned[col] = val
+                    filled = True
+            if filled:
+                seeded += 1
         r = {"rel": rel, "title": title_of(t), "ver": version_of(t),
              "changed": last_changed(rel), "cls": classify(rel),
              "withheld": why}
