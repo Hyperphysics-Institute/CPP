@@ -100,7 +100,7 @@ Earlier **Last updated:** 4 Aug 2026 (Patch 2997 — **QM-1 v2.0 REVISION SHIPPE
 
 ### OPEN-QM-8: The Spin-Arc Capstone — Mode Selection from the Lattice Voronoi-Cell Eigenproblem (registered Patch 3234)
 
-**Status:** OPEN
+**Status:** NUMERICAL LEG MEASURED — **MODE2-RECOVERED** (Patch 3236, frozen verdict, both densities; sphere control exact; A1 ruled: true Voronoi cell = regular dodecahedron, 24-cell retired as prior-worker initiative). ANALYTIC LEG (2I-symmetry selection argument) still OPEN, now with a measured target. Record: `series_quantum_mechanics/spin_papers/spin-III_600cell_voronoi_ZBW_eigenvalues/qm8_corrected_run_record.md`; instrument `scripts/3236_qm8_true_cell_run.py`. Second instrument trap found and closed in design: psi-Neumann ≠ Spin II's u-Neumann (tan kR = kR vs (2n−1)π/2) — the u-equation is discretized directly.
 **Sector(s):** QM (spin sub-arc, `series_quantum_mechanics/spin_papers/`)
 **Priority:** MEDIUM-HIGH (the last gap in the L = ħ/2 chain's grounding to the lattice)
 **One-line statement:** Show that the substrate cell's eigenvalue problem, with the CP-Exclusion node and thermal free boundary encoded, selects the open–closed mode family k_n = (2n−1)π/2r_th — in particular the Mode-2 node/antinode topology — rather than another family.

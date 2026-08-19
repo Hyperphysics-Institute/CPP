@@ -17,6 +17,14 @@
 %        boundary-condition mismatch diagnosed and a corrected
 %        instrument frozen (OPEN-QM-8). Verify:
 %        scripts/3234_verify_spin3_v0.py (10/10).
+%   V0.1 19 Aug 2026  Patch 3236  A1 RULED (founder: true Voronoi cell;
+%        24-cell was a prior worker's initiative) and the corrected
+%        measurement EXECUTED: sphere control exact; true cell
+%        (regular dodecahedron, dual-120-cell) returns the frozen
+%        verdict MODE2-RECOVERED at both densities (node 0.6670 vs
+%        2/3; antinode 0.3333; spectrum shift 0.31%). New Section 7;
+%        ledger updated. Run: scripts/3236_qm8_true_cell_run.py;
+%        record: qm8_corrected_run_record.md.
 % =====================================================================
 \documentclass[12pt]{article}
 
@@ -78,12 +86,19 @@ lattice-cell computation (a graph Laplacian on the 24-cell interior)
 solves the closed (Neumann-type) problem rather than the open--closed
 one --- the CP-Exclusion node at $r=0$ is never encoded --- so its low
 spectrum consists of the four 4D dipole modes and its own Mode-2
-diagnostic correctly reports no identification.  \textbf{Registered
-here:} the corrected instrument (Dirichlet core, free outer boundary,
-isotropy-scored radial profiling), with readings frozen before its
-data exists, and the substrate-domain question (24-cell surrogate
-versus the true GP-lattice Voronoi cell) put to the founder ---
-together \texttt{OPEN-QM-8}.
+diagnostic correctly reports no identification.  \textbf{Measured here
+(V0.1):} the founder ruled the domain question --- the 24-cell carried
+no physical-picture weight; the true Voronoi cell of the 600-cell-based
+lattice is the \emph{regular dodecahedron} (dual-120-cell cell) --- and
+the corrected instrument, frozen before its data existed, was executed:
+the sphere control reproduces the continuum result to five decimal
+places, and on the true cell the frozen verdict fires
+\textsc{mode2-recovered} at both mesh densities (Mode-2 node at
+$0.6670$ against the exact $2/3$; antinode at $0.3333$; spectrum
+shifted $0.31\%$ from the sphere).  The lattice cell's icosahedral
+anisotropy does not disturb the mode topology the captured DP anchors
+to.  The analytic $2I$-symmetry selection argument remains open
+(\texttt{OPEN-QM-8}, analytic leg).
 \end{abstract}
 
 \tableofcontents
@@ -272,8 +287,15 @@ the difference: whether the 24-cell is (a)~the intended Voronoi domain
 of the CPP Grid-Point lattice, (b)~a deliberate tractable surrogate for
 it, or (c)~a stand-in that should be replaced by the true GP-lattice
 Voronoi cell, is a physical-picture question reserved to the founder.
-It is registered as assumption A1 of the corrected instrument below and
-flagged in \texttt{OPEN-QM-8}.
+\textbf{Ruled (19 Aug 2026, registered
+\texttt{founders\_voice/founder\_ruling\_A1\_voronoi\_domain\_2026-08-19.md}):}
+the 24-cell was a prior worker's initiative with no physical-picture
+weight; the corrected run uses the true Voronoi cell.  The geometry is
+exact and standard: the 600-cell's dual is the 120-cell, so the Voronoi
+domain of each lattice vertex is the corresponding \emph{regular
+dodecahedron} --- twelve pentagonal faces whose normals point at the
+twelve icosahedral nearest-neighbor directions (the vertex figure of
+FACT G1).
 
 % =====================================================================
 \section{The corrected instrument, frozen before its data exists}
@@ -315,6 +337,50 @@ This measurement, plus the analytic $2I$-symmetry selection argument
 \texttt{OPEN-QM-8}.  Neither is attempted in V0.
 
 % =====================================================================
+\section{The corrected measurement, executed (V0.1)}
+\label{sec:measurement}
+
+The instrument of Section~\ref{sec:corrected} was implemented on the
+$u$-equation directly, $-u'' - r^{-2}\Delta_S u = k^2 u$, with the
+Dirichlet center and the free end $u'=0$ along each ray --- closing not
+only the missing-node defect of Section~\ref{sec:instrument} but a
+second semantic trap recorded here for the reviewer: a free (Neumann)
+condition on $\psi$ is \emph{not} Spin II's free condition on $u$ (on
+a sphere, $\psi$-Neumann gives the $\tan kR = kR$ spectrum,
+$k_1R \approx 4.493$, not $(2n-1)\pi/2$).  Discretization: cotangent
+Laplacian on an icosphere for $\Delta_S$; per-ray FEM in the
+fractional coordinate $s = r/R(\omega)$; boundary radius by the
+dodecahedron's support function over the twelve icosahedral face
+normals.  Declared approximations (anisotropy-squared class,
+$\sim1\%$ in positions): shell-averaged angular metric weight;
+ray-coordinate cross-terms neglected.
+
+\textbf{Sphere control (instrument validation):} $k_1 R = 1.57079$
+($\pi/2 = 1.57080$), $k_2 R = 4.71209$ ($3\pi/2$), Mode-2 zero at
+$0.66667$, antinode at $0.3333$ --- exact to instrument precision.
+
+\textbf{True Voronoi cell, two densities ($162\times80$ and
+$642\times120$):} three radial candidates among the lowest ninety
+modes at both densities (isotropy scores $0.999$--$1.000$); Mode-2
+$k\langle R\rangle = 4.6976$ ($-0.31\%$ from the sphere); node at
+$s = 0.6670$ against the exact $2/3$; antinode at $0.3333$ against
+$1/3$; Mode~3 exhibiting the expected double-zero structure
+($0.402, 0.801$ against $0.4, 0.8$).  \textbf{Frozen verdict
+(Section~\ref{sec:corrected} readings, applied verbatim):
+\textsc{mode2-recovered}} at both densities, node drift $0.0000$
+against the $0.02$ gate.  The worker's expectation, declared at V0
+before the A1 ruling existed, is confirmed --- and, more to the point,
+the icosahedral cell's $\pm11\%$ radial anisotropy moves the Mode-2
+anchoring geometry by less than $0.1\%$: the lattice cell
+\emph{selects} the open--closed family and preserves exactly the
+topology the captured DP anchors to.  Full record:
+\texttt{qm8\_corrected\_run\_record.md}; instrument:
+\texttt{scripts/3236\_qm8\_true\_cell\_run.py} (5/5 checks).
+
+What remains of \texttt{OPEN-QM-8} is its analytic leg: the
+$2I$-symmetry selection argument, now with a measured target.
+
+% =====================================================================
 \section{Epistemic ledger}
 \label{sec:ledger}
 
@@ -325,12 +391,16 @@ scale-bridge identity \eqref{eq:bridge}; the discreteness bound.
 \item \textbf{Established numerically:} FD eigenvalues to $10^{-4}$
 across eight modes; Mode-2 geometry to $10^{-3}$; committed CSV
 regenerated bit-identically.
-\item \textbf{Diagnosed, not settled:} the lattice-cell selection
-computation --- the committed instrument solved the closed problem;
-capstone remains \texttt{OPEN-QM-8} with the corrected instrument
-frozen above.
-\item \textbf{Assumption awaiting founder ruling:} A1, the Voronoi
-domain (Section~\ref{sec:domain}).
+\item \textbf{Measured (V0.1):} the lattice-cell selection question,
+numerical leg --- \textsc{mode2-recovered} on the true Voronoi cell at
+both densities under the pre-frozen verdict rule
+(Section~\ref{sec:measurement}); the committed March instrument's
+closed-problem defect stands diagnosed (Section~\ref{sec:instrument}).
+\item \textbf{Open:} the analytic $2I$-symmetry selection argument
+(\texttt{OPEN-QM-8}, analytic leg).
+\item \textbf{Ruled:} A1, the Voronoi domain --- true cell (regular
+dodecahedron); 24-cell retired as a prior worker's initiative
+(Section~\ref{sec:domain}).
 \item \textbf{Inherited:} everything Spin~I and Spin~II inherit; in
 particular the $L = \hbar/2$ chain is complete at the continuum level
 (Spin~I $+$ Spin~II) independently of this paper's open capstone.
