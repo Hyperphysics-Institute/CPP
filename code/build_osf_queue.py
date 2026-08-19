@@ -160,7 +160,7 @@ def seed_from_worksheet():
 # --- Columns owned by humans and by the pipeline -------------------------
 # Order matters: carry-forward reads the LAST len(OWNED) cells of each row.
 OWNED = ["APPROVED", "CHANGE_CLASS", "RESERVED_DOI", "CONCEPT_DOI",
-         "PREPRINT_ID", "POSTED", "OSF_LINK", "NOTES"]
+         "PREPRINT_ID", "POSTED", "OSF_LINK", "PARENT", "RELATION", "NOTES"]
 
 VALID_CHANGE = {"", "editorial", "substantive"}
 
@@ -208,6 +208,86 @@ def read_existing():
                         else "")
         keep[m.group(1)] = [row[c] for c in OWNED]
     return keep
+
+
+F1_PARENT = ("series_umbrella/series_substrate_chirality_arc/"
+             "dynamical_substrate_law/dynamical_substrate_law.tex")
+
+VALID_RELATION = {"", "isSupplementTo", "isPartOf", "isDocumentedBy",
+                  "isDerivedFrom", "references"}
+
+
+def norm_title(s):
+    s = re.sub(r"\\[a-zA-Z]+\s*", " ", s)
+    s = re.sub(r"[{}$\\`'\"~,.:;-]", " ", s)
+    return re.sub(r"\s+", " ", s).strip().lower()
+
+
+def infer_parents(rows, texts):
+    """Infer PARENT and RELATION from evidence in the papers themselves.
+
+    Evidence-first, and deliberately conservative: where a paper gives no
+    evidence of a parent, the field is left EMPTY and reported, rather than
+    inferred from its directory. The SR_companion_papers folder is not
+    homogeneous -- c07-c13 are general relativity and c14-c15 are
+    strong-sector -- so a blanket 'everything here is a companion to SR-1'
+    default would attach a dozen papers to the wrong parent, and a wrong
+    relation in DataCite metadata is worse than none: it is machine-readable
+    and propagates into indexes.
+
+    Rule 1: anything under hardened_theorems/ is a proof step supporting the
+            F.1 Dynamical Substrate Law, which those papers state in their own
+            author line ("F.1 Dynamical Substrate Law trajectory").
+    Rule 2: a paper declaring `Companion Paper to ``TITLE''` is matched to the
+            paper whose title is TITLE.
+    Rule 3: otherwise blank.
+    """
+    by_title = {}
+    for rel, t in texts.items():
+        i = t.find("\\title{")
+        if i < 0:
+            continue
+        j, d = i + 7, 1
+        while j < len(t) and d:
+            if t[j] == "{":
+                d += 1
+            elif t[j] == "}":
+                d -= 1
+            j += 1
+        by_title.setdefault(norm_title(re.split(r"\\\\", t[i + 7:j - 1])[0]), rel)
+
+    out = {}
+    for rel, t in texts.items():
+        if "hardened_theorems/" in rel and F1_PARENT in texts:
+            out[rel] = (F1_PARENT, "isSupplementTo", "rule1: F.1 trajectory")
+            continue
+        m = re.search(r"[Cc]ompanion [Pp]aper to\s*[`\u201c]{1,2}"
+                      r"([^`\u201d]{5,140})", t)
+        if m:
+            want = norm_title(m.group(1))
+            # Titles carry a paper-ID prefix ("SR-1: Mechanistic Derivation
+            # of...") that the companion's declaration omits, so a prefix
+            # comparison never matches. Strip a leading "xx 9 " style ID from
+            # both sides and compare by containment instead.
+            def core(x):
+                return re.sub(r"^[a-z]{1,3}\s*\d+[a-z]?\s+", "", x)
+            wc = core(want)
+            hit = ""
+            for k, v in by_title.items():
+                kc = core(k)
+                if not kc or v == rel:
+                    continue
+                if wc[:45] in kc or kc[:45] in wc:
+                    hit = v
+                    break
+            if hit and hit != rel:
+                out[rel] = (hit, "isSupplementTo", "rule2: declared companion")
+                continue
+            out[rel] = ("", "", f"declares companion to '{m.group(1)[:40]}' "
+                                "-- no matching paper found")
+            continue
+        out[rel] = ("", "", "")
+    return out
 
 
 def citation_graph(rows, texts):
@@ -357,10 +437,17 @@ def main():
     # ---- waves -----------------------------------------------------------
     texts = {r["rel"]: r.pop("_text") for r in rows}
     dep = citation_graph(rows, texts)
+    inferred = infer_parents(rows, texts)
     wave = assign_waves(dep)
     byrel = {r["rel"]: r for r in rows}
     never = {r["rel"] for r in rows if r["withheld"]}
     for r in rows:
+        # A recorded PARENT always wins over an inferred one; inference only
+        # fills a blank, so a founder correction is never overwritten.
+        pi, ri, why = inferred.get(r["rel"], ("", "", ""))
+        if not (r.get("PARENT") or "").strip() and pi:
+            r["PARENT"], r["RELATION"] = pi, ri
+        r["parent_source"] = why
         r["wave"] = wave.get(r["rel"])
         r["cites"] = sorted(dep.get(r["rel"], ()))
         # A dependency is satisfied once it HAS a DOI, or once it is known to
@@ -379,6 +466,23 @@ def main():
     bad = [r for r in rows if r["CHANGE_CLASS"] not in VALID_CHANGE]
     missing = [k for k in keep if k not in {r["rel"] for r in rows}]
 
+    # Reciprocal links: Zenodo relations are NOT auto-reciprocal, so a parent
+    # must declare isSupplementedBy/hasPart for each child or its record will
+    # not list them. Generated here so the 137 back-links are never hand-set.
+    INVERSE = {"isSupplementTo": "isSupplementedBy", "isPartOf": "hasPart",
+               "isDocumentedBy": "documents", "isDerivedFrom": "isSourceOf",
+               "references": "isReferencedBy"}
+    kids = {}
+    for r in rows:
+        par = (r.get("PARENT") or "").strip()
+        if par:
+            kids.setdefault(par, []).append(
+                {"child": r["rel"], "inverse":
+                 INVERSE.get(r.get("RELATION") or "", "isSupplementedBy")})
+    for r in rows:
+        r["children"] = sorted(kids.get(r["rel"], []),
+                               key=lambda k: k["child"])
+
     # ---- machine contract ------------------------------------------------
     manifest = {
         "generated": "regenerate with code/build_osf_queue.py; do not hand-edit",
@@ -392,6 +496,7 @@ def main():
         "papers": [{k: r[k] for k in
                     ("rel", "title", "ver", "changed", "cls", "withheld",
                      "wave", "cites", "wave_blocked_by",
+                     "children", "parent_source",
                      "eligible", "reason", *OWNED)} for r in rows],
     }
     io.open(MANIFEST, "w", encoding="utf-8").write(

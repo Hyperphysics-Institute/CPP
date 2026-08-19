@@ -156,6 +156,8 @@
         "series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex"
       ],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -165,6 +167,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/Q4BFH",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -177,6 +181,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -186,6 +192,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -198,6 +206,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -207,6 +217,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -219,6 +231,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -228,6 +242,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -240,6 +256,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -249,6 +267,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -261,6 +281,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -270,6 +292,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/S4GQF",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -282,6 +306,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -291,6 +317,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -303,6 +331,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -312,6 +342,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -330,6 +362,8 @@
       "wave_blocked_by": [
         "flagship_papers/electroweak/sf-2_companion.tex"
       ],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "WITHHELD: unfinished: live TODO/FIXME scaffolding markers",
       "APPROVED": "",
@@ -339,6 +373,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -351,6 +387,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -360,6 +398,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/6DM45",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -372,6 +412,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -381,6 +423,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/3XNK5",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -393,6 +437,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -402,6 +448,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/ZWQRY",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -414,6 +462,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -423,6 +473,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/SDW7G",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -435,6 +487,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -444,6 +498,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/3SX4H",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -456,6 +512,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -465,6 +523,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -477,6 +537,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -486,6 +548,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -498,6 +562,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -507,6 +573,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -519,6 +587,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -528,6 +598,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -540,6 +612,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -549,6 +623,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -561,6 +637,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -570,6 +648,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -582,6 +662,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -591,6 +673,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -603,6 +687,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "WITHHELD: unfinished: declares itself a placeholder",
       "APPROVED": "",
@@ -612,6 +698,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -627,6 +715,8 @@
         "series_relativity/papers/SR-1_special_relativity_emergence.tex"
       ],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "WITHHELD: founder-attested: retained as record, not for release",
       "APPROVED": "",
@@ -636,6 +726,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -648,6 +740,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "WITHHELD: founder-attested: retained as record, not for release",
       "APPROVED": "",
@@ -657,6 +751,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -669,6 +765,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -678,6 +776,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -690,6 +790,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -699,6 +801,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -714,6 +818,8 @@
         "series_quantum_mechanics/papers/QM-5_qft_emergence.tex"
       ],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -723,6 +829,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -735,6 +843,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -744,6 +854,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/FBNJC",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -756,6 +868,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -765,6 +879,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/YT82E",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -777,6 +893,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -786,6 +904,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/29CG4",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -798,6 +918,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -807,6 +929,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/DTQFE",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -819,6 +943,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -828,6 +954,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/3P8DF",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -840,6 +968,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -849,6 +979,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/34RXZ",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -861,6 +993,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule2: declared companion",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -870,6 +1004,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -882,6 +1018,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule2: declared companion",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -891,6 +1029,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -903,6 +1043,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule2: declared companion",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -912,6 +1054,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -924,6 +1068,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule2: declared companion",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -933,6 +1079,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -945,6 +1093,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule2: declared companion",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -954,6 +1104,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -966,6 +1118,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule2: declared companion",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -975,6 +1129,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -987,6 +1143,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule2: declared companion",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -996,6 +1154,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -1008,6 +1168,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1017,6 +1179,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1029,6 +1193,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1038,6 +1204,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1050,6 +1218,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1059,6 +1229,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1071,6 +1243,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1080,6 +1254,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1092,6 +1268,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1101,6 +1279,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1113,6 +1293,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1122,6 +1304,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1134,6 +1318,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1143,6 +1329,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1155,6 +1343,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1164,6 +1354,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1176,6 +1368,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule2: declared companion",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1185,6 +1379,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -1197,6 +1393,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule2: declared companion",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1206,6 +1404,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -1218,6 +1418,45 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [
+        {
+          "child": "series_relativity/SR_companion_papers/c01_absolute_moment_postulate/absolute_moment_postulate.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_relativity/SR_companion_papers/c02_dipole_stiffness_C/c02_dipole_stiffness_C.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_relativity/SR_companion_papers/c03_born_rule/c03_born_rule.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_relativity/SR_companion_papers/c04_ZBW_hbar_mass_units/c04_ZBW_hbar_mass_units.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_relativity/SR_companion_papers/c05_newtonian_gravity_from_SSV/c05_gravity_from_SSV_shell_broadcast.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_relativity/SR_companion_papers/c06_DP_chaining_as_mass_and_EM_substrate/c06_dipole_chain_patterns_as_mass_EM_subtrate.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_relativity/SR_companion_papers/c07_weak_field_GR/c07_weak_field_GR.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_relativity/SR_companion_papers/c20_Spin I emergent_Spin-Captured_DPs/c8 spin_I_emergent_spin_from_captured_DPs.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_relativity/SR_companion_papers/c21_Spin II standing_wave_subharmonics/c9 spin_II_standing_wave_sub_harmonic_captured_DPs.tex",
+          "inverse": "isSupplementedBy"
+        }
+      ],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1227,6 +1466,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/BU8AQ",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1239,6 +1480,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1248,6 +1491,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1260,6 +1505,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1269,6 +1516,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/23X7N",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1281,6 +1530,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1290,6 +1541,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/R8ESY",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1302,6 +1555,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1311,6 +1566,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/Z98UM",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1327,6 +1584,8 @@
         "series_strong/papers/SS-1_strong_sector_from_600cell_lattice.tex"
       ],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1336,6 +1595,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/C5A7B",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1348,6 +1609,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1357,6 +1620,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/6EA94",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1369,6 +1634,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1378,6 +1645,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/UVS5H",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1397,6 +1666,8 @@
         "series_strong/papers/SS-1_strong_sector_from_600cell_lattice.tex"
       ],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1406,6 +1677,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/PGR38",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1422,6 +1695,8 @@
         "series_strong/papers/SS-1_strong_sector_from_600cell_lattice.tex"
       ],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1431,6 +1706,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/BE5Q8",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1447,6 +1724,8 @@
         "series_standard_model/papers/SM-7_heavy_quark_mass_spectrum.tex"
       ],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1456,6 +1735,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/RZMPA",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1471,6 +1752,8 @@
         "series_standard_model/papers/SM-8_quark_generation_600cell_shells.tex"
       ],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1480,6 +1763,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/WJ3KM",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1492,6 +1777,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1501,6 +1788,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1513,6 +1802,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1522,6 +1813,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/P73JQ",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1534,6 +1827,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1543,6 +1838,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1555,6 +1852,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1564,6 +1863,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1576,6 +1877,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1585,6 +1888,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1597,6 +1902,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1606,6 +1913,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1618,6 +1927,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1627,6 +1938,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1639,6 +1952,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1648,6 +1963,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1660,6 +1977,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1669,6 +1988,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/3HWE2",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1681,6 +2002,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1690,6 +2013,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/Q48K5",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1702,6 +2027,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1711,6 +2038,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/GK5WY",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1723,6 +2052,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1732,6 +2063,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/7NZHT",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1748,6 +2081,8 @@
         "series_strong/papers/SS-5/SS-5_light_nuclei_open_vertex_cascade.tex"
       ],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1757,6 +2092,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/76NYH",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1769,6 +2106,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1778,6 +2117,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/J6C2Y",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1793,6 +2134,8 @@
         "series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex"
       ],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1802,6 +2145,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/362QC",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1817,6 +2162,8 @@
         "series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex"
       ],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1826,6 +2173,8 @@
       "PREPRINT_ID": "",
       "POSTED": "registered",
       "OSF_LINK": "https://doi.org/10.17605/OSF.IO/ZK9GV",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
@@ -1838,6 +2187,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1847,6 +2198,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1859,6 +2212,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1868,6 +2223,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1880,6 +2237,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1889,6 +2248,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1901,6 +2262,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1910,6 +2273,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1922,6 +2287,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1931,6 +2298,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1943,6 +2312,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1952,6 +2323,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1964,6 +2337,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1973,6 +2348,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -1985,6 +2362,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -1994,6 +2373,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -2006,6 +2387,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2015,6 +2398,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -2027,6 +2412,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2036,6 +2423,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -2048,6 +2437,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2057,6 +2448,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -2069,6 +2462,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2078,6 +2473,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -2090,6 +2487,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2099,6 +2498,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -2111,6 +2512,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2120,6 +2523,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -2132,6 +2537,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2141,6 +2548,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -2153,6 +2562,101 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/cross_shell_edge_d5_orbits.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/edge_aligned_invariant_subspace_structural.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/face_aligned_invariant_subspace_structural.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_d5_orbit_projections.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_first_shell_edge_d5_orbits.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_perpendicularity.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_second_shell_edge_orbits.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/host_second_shell_uniform_projection.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/host_to_first_shell_projection.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_four_face_aligned_coefficient.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_one_edge_aligned_coefficient.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_squared_path_class_weights.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_squared_substrate_locality_umbrella.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_three_edge_aligned_coefficient.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_three_face_aligned_coefficient.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_two_edge_aligned_coefficient.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_two_face_aligned_coefficient.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/perturbation_locality_propagation.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_order_parallel_to_n_structural.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_shell_inner_product_primitive.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_shell_perpendicularity.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_shell_projection_d5_orbits.tex",
+          "inverse": "isSupplementedBy"
+        }
+      ],
+      "parent_source": "",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2162,6 +2666,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
       "NOTES": ""
     },
     {
@@ -2174,6 +2680,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2183,6 +2691,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2195,6 +2705,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2204,6 +2716,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2216,6 +2730,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2225,6 +2741,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2237,6 +2755,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2246,6 +2766,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2258,6 +2780,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2267,6 +2791,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2279,6 +2805,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2288,6 +2816,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2300,6 +2830,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2309,6 +2841,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2321,6 +2855,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2330,6 +2866,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2342,6 +2880,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2351,6 +2891,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2363,6 +2905,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2372,6 +2916,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2384,6 +2930,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2393,6 +2941,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2405,6 +2955,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2414,6 +2966,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2426,6 +2980,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2435,6 +2991,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2447,6 +3005,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2456,6 +3016,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2468,6 +3030,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2477,6 +3041,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2489,6 +3055,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2498,6 +3066,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2510,6 +3080,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2519,6 +3091,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2531,6 +3105,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2540,6 +3116,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2552,6 +3130,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2561,6 +3141,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2573,6 +3155,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2582,6 +3166,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2594,6 +3180,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2603,6 +3191,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2615,6 +3205,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2624,6 +3216,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     },
     {
@@ -2636,6 +3230,8 @@
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule1: F.1 trajectory",
       "eligible": false,
       "reason": "not approved",
       "APPROVED": "",
@@ -2645,6 +3241,8 @@
       "PREPRINT_ID": "",
       "POSTED": "",
       "OSF_LINK": "",
+      "PARENT": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
+      "RELATION": "isSupplementTo",
       "NOTES": ""
     }
   ]
