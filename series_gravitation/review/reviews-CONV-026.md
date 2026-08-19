@@ -141,3 +141,14 @@ under-sourced. Three routes now converge; the paper records two of them.
   symmetry-breaking robustness, Gemini provenance).
 - Minority specifications preserved verbatim above; convergence counts
   taken from the verdict lines; attribution: the AI review panel.
+
+## §6 Confirmation pass (dispatched Patch 3246)
+
+Targeted Q1/Q4 confirm to the three RESTATE seats only (GPT, Gemini,
+Copilot) — the two SHIP seats already accepted the substance, so five
+pastes would spend founder labor to re-ask the satisfied. Dispatch:
+`conv026_confirmation_pass_dispatch.md` (the three V0.2 edits verbatim,
+before → after; one frozen question, CONFIRMED-DISCHARGED /
+NOT-DISCHARGED(residue); binding 2-of-3). On 2/3+ CONFIRMED, Q4 converts
+to SHIP-PATH-CLEAR with calibrations applied; on 2/3 NOT-DISCHARGED, a
+second restate under the named residues. Awaiting founder paste ×3.
