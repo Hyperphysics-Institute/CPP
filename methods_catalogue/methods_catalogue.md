@@ -116,6 +116,23 @@
 
 ## Layer 2 — Methodological disciplines
 
+
+### METH-L1-014 — Ray-bundle u-equation discretization for star-shaped resonator cells
+**Layer 1 (mathematical technique). Registered Session 149, Patch 3249. NEW METHOD.**
+For a scalar resonator on a star-shaped domain with a radial boundary
+condition stated on u = r·ψ (open–closed string per ray), discretize the
+u-equation −u″ − r⁻²Δ_S u = k²u directly: per-ray 1D FEM in the fractional
+coordinate s = r/R(ω) (Dirichlet at s=0, natural at s=1), cotangent
+Laplacian + Voronoi-area mass on an angular mesh for Δ_S, boundary radius by
+the domain's support function. Exact separable FEM in the sphere limit
+(validates the instrument against closed forms); declared anisotropy²
+approximations (shell-averaged angular metric; dropped cross-terms).
+Motivation: a free (Neumann) condition on ψ is NOT the u-free condition —
+graph-Laplacian natural boundaries silently solve a different spectrum.
+First use: `series_quantum_mechanics/spin_papers/spin-III_600cell_voronoi_ZBW_eigenvalues/scripts/3236_qm8_true_cell_run.py`.
+Reusable wherever a CPP resonator's published BCs live on u but the cavity
+is a lattice cell (any Voronoi-cell mode problem; GR-lane cavity analogues).
+
 ### METH-L2-001: Layer A/B/C epistemic decomposition
 
 **Description.** Decompose a derivation into Layer A (CPP-derived content), Layer B (imported formalism whose CPP-derivation is open), Layer C (empirical inputs). The decomposition makes the load-bearing inputs explicit so each can be audited independently.
