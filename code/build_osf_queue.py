@@ -159,8 +159,8 @@ def seed_from_worksheet():
 
 # --- Columns owned by humans and by the pipeline -------------------------
 # Order matters: carry-forward reads the LAST len(OWNED) cells of each row.
-OWNED = ["APPROVED", "CHANGE_CLASS", "PREPRINT_ID", "POSTED", "OSF_LINK",
-         "NOTES"]
+OWNED = ["APPROVED", "CHANGE_CLASS", "RESERVED_DOI", "CONCEPT_DOI",
+         "PREPRINT_ID", "POSTED", "OSF_LINK", "NOTES"]
 
 VALID_CHANGE = {"", "editorial", "substantive"}
 
@@ -168,27 +168,45 @@ VALID_CHANGE = {"", "editorial", "substantive"}
 def read_existing():
     """Carry forward every human/pipeline-owned column, keyed on .tex path.
 
-    Handles BOTH layouts. The previous queue owned three columns (POSTED,
-    OSF LINK, NOTES) and had 9 cells per row; this one owns six and has 13.
-    Blindly taking the last six cells of an old row shifts Ver and Changed
-    into APPROVED and CHANGE_CLASS -- which on the first run marked all 113
-    rows as having an invalid CHANGE_CLASS. Old rows are therefore detected
-    by width and mapped onto the three columns they actually had.
+    Columns are matched BY HEADER NAME, never by position. Positional reading
+    is what corrupted the two previous migrations: the 3-to-6 column change
+    shifted Ver and Changed into APPROVED and CHANGE_CLASS and marked all 113
+    rows malformed, and a subsequent all-or-nothing guard silently erased
+    SF-1's recovered DOI (fixed at Patch 3218). Reading by name means a column
+    may be added, removed or reordered without any cell landing in the wrong
+    field -- which matters now that RESERVED_DOI holds values that exist
+    NOWHERE ELSE: a reserved Zenodo DOI is internal to Zenodo, is not
+    recoverable if its draft is deleted, and may already be baked into a built
+    PDF's bibliography. Losing one silently would invalidate that PDF with no
+    way to reconstruct the value.
+
+    Rows in an older layout are read for whichever owned columns their header
+    did contain; columns that did not exist come back empty rather than
+    picking up a neighbour's value.
     """
     keep = {}
     if not os.path.exists(QUEUE):
         return keep
+    header = None
     for line in io.open(QUEUE, encoding="utf-8", errors="replace"):
         if not line.startswith("|"):
             continue
-        cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        m = re.search(r"`([^`]+\.tex)`", " ".join(cells))
+        cells = [c.strip().strip("`*") for c in line.strip().strip("|").split("|")]
+        # The header is the row naming the file column alongside owned columns.
+        if header is None:
+            names = [c.upper().replace(" ", "_") for c in cells]
+            if "FILE" in names and any(o in names for o in OWNED):
+                header = names
+            continue
+        m = re.search(r"`([^`]+\.tex)`", line)
         if not m:
             continue
-        if len(cells) >= len(OWNED) + 6:                 # current layout
-            keep[m.group(1)] = cells[-len(OWNED):]
-        elif len(cells) == 9:                            # legacy layout
-            keep[m.group(1)] = ["", "", ""] + cells[-3:]
+        row = {}
+        for col in OWNED:
+            row[col] = (cells[header.index(col)]
+                        if col in header and header.index(col) < len(cells)
+                        else "")
+        keep[m.group(1)] = [row[c] for c in OWNED]
     return keep
 
 
@@ -281,8 +299,14 @@ def eligibility(r):
         n = len(r["wave_blocked_by"])
         return False, (f"wave {r.get('wave')}: blocked, {n} cited paper(s) "
                        "have no DOI yet")
+    # Reservation is a tracked step that must happen BEFORE the PDF is built,
+    # because the whole point of reserving is to bake the DOI into the paper's
+    # own bibliography. Depositing without it would publish a paper whose
+    # references are already wrong.
+    if not (r.get("RESERVED_DOI") or "").strip():
+        return False, "no reserved DOI yet (reserve before building the PDF)"
     if not r["PREPRINT_ID"]:
-        return True, "create: approved, no preprint yet"
+        return True, "create: approved, DOI reserved, no deposit yet"
     if r["CHANGE_CLASS"] != "substantive":
         return False, ("existing preprint, change is editorial or "
                        "unclassified -- no new version")
