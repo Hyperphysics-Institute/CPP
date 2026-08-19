@@ -49,7 +49,7 @@ verbatim; k is a normalisation convention, not a derived quantity — see GR-1
 §7). Any derivation here inherits, and must not silently upgrade, that
 standing.
 
-**GR-1 cycle note (CONV-026, Patch 3242/3243):** Q4 3–2 RESTATE-REQUIRED fired on the Q1 3–2 OVERCLAIMS finding (abstract/thesis outran the ledger); restate EXECUTED at V0.2 — the W2/PSR conditionality promoted into the abstract and thesis. Q2 4–1 COMPLETE, Q3 5–0 SOUND stand. **Confirmation pass owed before any ship-path move.**
+**GR-1 cycle note (CONV-026, Patch 3242/3243):** Q4 3–2 RESTATE-REQUIRED fired on the Q1 3–2 OVERCLAIMS finding (abstract/thesis outran the ledger); restate EXECUTED at V0.2 — the W2/PSR conditionality promoted into the abstract and thesis. Q2 4–1 COMPLETE, Q3 5–0 SOUND stand. **Confirmation pass returned 3/3 CONFIRMED-DISCHARGED (Patch 3247; one cross-label recorded — the Gemini window signed "ChatGPT"; attributed by receipt): Q4 = SHIP-PATH-CLEAR; CONV-026 CLOSED.** V1.0 prep unblocked; deposit still gated by the founder's ruling + the tests companion. Next papers in the lane, in readiness order: the tests companion (OPEN-GR-TESTS-1, → GR-1i; bounded, targets frozen) then OPEN-GR-FE-1.
 
 **Status:** OPEN. Deliberately deferred out of GR-1 V0 by founder ruling
 (Session 148 handover §5). The single most consequential open item in the

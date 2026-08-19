@@ -152,3 +152,41 @@ before → after; one frozen question, CONFIRMED-DISCHARGED /
 NOT-DISCHARGED(residue); binding 2-of-3). On 2/3+ CONFIRMED, Q4 converts
 to SHIP-PATH-CLEAR with calibrations applied; on 2/3 NOT-DISCHARGED, a
 second restate under the named residues. Awaiting founder paste ×3.
+
+## §7 Confirmation returns — CYCLE CLOSED (Patch 3247)
+
+Three returns received, 19 Aug 2026:
+
+| Receipt label | Self-label | Q-CONFIRM |
+|---|---|---|
+| GPT | "GPT-5.6 Sol" | CONFIRMED-DISCHARGED |
+| Gemini | **"ChatGPT"** (cross-label) | CONFIRMED-DISCHARGED |
+| Copilot | "Copilot" | CONFIRMED-DISCHARGED |
+
+**Identity caveat (§4.1 discipline):** the Gemini-window response
+self-labeled "ChatGPT" — the known cross-labelling failure mode.
+Attribution is by receipt label (the founder knows which window produced
+it); three pastes = three independent reads; no double-counting. The
+verdict is label-independent in any case (3/3 unanimous).
+
+**Binding outcome:** 3/3 ≥ 2-of-3 ⇒ **Q4 CONVERTS TO SHIP-PATH-CLEAR**
+with the calibrations already applied. All three rationales name the same
+cure — the PSR/W2 conditionality now carried in the headline claims and
+scoping every "generates" and "exact."
+
+**CONV-026 final state:**
+- **Package A (GR-1 V0.2):** Q1 discharged by restate + 3/3 confirm;
+  Q2 4–1 COMPLETE; Q3 5–0 SOUND; **Q4 SHIP-PATH-CLEAR.** Ship-path clear
+  means the V1.0 preparation path is unblocked — it does NOT itself
+  authorize deposit, which remains governed by the founder's deposit
+  ruling (test run first; the big wave gated on GR-1 + companions +
+  OPEN-GR-FE-1) and by the still-open tests companion (OPEN-GR-TESTS-1).
+- **Package B (spin arc, Spin III V0.3):** Q5 4–1 VALID; Q6 3–2
+  CALIBRATED (stricter wording adopted); Q7 3–2 JUSTIFIED-AS-INHERITED;
+  **Q8 RATIFY — OPEN-QM-8 SUBSTANTIALLY RESOLVED, panel-ratified**, two
+  residual notes registered.
+- Worker errors sustained across the full cycle: none. Process notes:
+  no duplicate returns; one cross-label (this section); one execution
+  fingerprint credited (Grok, 3.331e-16).
+
+Cycle CONV-026 is CLOSED.
