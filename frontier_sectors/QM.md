@@ -98,3 +98,18 @@ Earlier **Last updated:** 4 Aug 2026 (Patch 2997 — **QM-1 v2.0 REVISION SHIPPE
 
 ---
 
+### OPEN-QM-8: The Spin-Arc Capstone — Mode Selection from the Lattice Voronoi-Cell Eigenproblem (registered Patch 3234)
+
+**Status:** OPEN
+**Sector(s):** QM (spin sub-arc, `series_quantum_mechanics/spin_papers/`)
+**Priority:** MEDIUM-HIGH (the last gap in the L = ħ/2 chain's grounding to the lattice)
+**One-line statement:** Show that the substrate cell's eigenvalue problem, with the CP-Exclusion node and thermal free boundary encoded, selects the open–closed mode family k_n = (2n−1)π/2r_th — in particular the Mode-2 node/antinode topology — rather than another family.
+**What exists:** the continuum spectrum is exact and FD-verified two ways to 1e-4 (Spin III V0 §2); discreteness corrections are (l_P/r_th)² ≈ 7e-45, so the lattice owes SELECTION, not corrections (V0 §4); the committed Part-3 instrument is DIAGNOSED — it solved the closed (Neumann) problem, its low modes are the four 4D dipole modes, and its Mode-2 diagnostic correctly found nothing (V0 §5, reproducible: verify check 4).
+**The frozen corrected instrument (V0 §6):** Dirichlet core (r < ε pinned) + free outer boundary; radial candidates by declared isotropy score, zero-counting on candidates only; readings frozen (MODE2-RECOVERED / MODE2-ABSENT / INDETERMINATE) with node/antinode windows declared; worker expectation MODE2-RECOVERED stated pre-run.
+**Assumption A1 (FOUNDER RULING REQUESTED):** the domain — is the 24-cell the intended Voronoi cell of the GP lattice, a deliberate surrogate, or a stand-in to be replaced by the true GP-lattice Voronoi cell? The corrected run waits on this ruling (or runs both as a robustness pair if so ruled).
+**Second route:** the analytic 2I-symmetry selection argument named in the arc's development notes; independent of the numerical instrument.
+**Dependencies:** none blocking besides A1.
+**Paper(s):** Spin III (V0, `spin-III_600cell_voronoi_ZBW_eigenvalues.tex`); Spin I, Spin II (complete at continuum level independently of this item).
+**Last updated:** 19 Aug 2026 (Patch 3234)
+
+---

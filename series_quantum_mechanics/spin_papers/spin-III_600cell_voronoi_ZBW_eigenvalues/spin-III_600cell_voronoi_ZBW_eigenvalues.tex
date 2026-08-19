@@ -1,0 +1,360 @@
+% =====================================================================
+% Spin III: The ZBW Mode Spectrum and the Lattice Voronoi-Cell
+% Eigenvalue Problem
+% Third paper of the CPP spin sub-arc (Spin I, Spin II, Spin III).
+%
+% CHANGELOG
+%   V0   19 Aug 2026  Patch 3234  Initial draft (Session 149), written
+%        from the arc's own materials at founder request: the
+%        development-notes charter ("Spin III: derive the sub-harmonic
+%        spectrum from the 600-cell Voronoi eigenvalues"), the committed
+%        eigenvalue script (16 Mar 2026), its data and figure. No Spin
+%        III paper previously existed (full-history finding, Patch 3232
+%        record). Honest-content ruleset: the rigorous pieces (mode
+%        arithmetic, FD verification, scale-bridge identity,
+%        discreteness bound) are stated as results; the lattice-cell
+%        capstone is reported as OPEN with the committed instrument's
+%        boundary-condition mismatch diagnosed and a corrected
+%        instrument frozen (OPEN-QM-8). Verify:
+%        scripts/3234_verify_spin3_v0.py (10/10).
+% =====================================================================
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+\geometry{margin=1in}
+
+% ---- corpus macros (matching the Spin I/II conventions) ----
+\newcommand{\lP}{l_P}
+\newcommand{\SSV}{\text{SSV}}
+\newcommand{\rth}{r_{\rm th}}
+\newcommand{\rin}{r_{\rm in}}
+\newcommand{\rout}{r_{\rm out}}
+\newcommand{\rC}{r_C}
+\newcommand{\aBohr}{a_0}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{remark}{Remark}
+
+\title{Spin III: The ZBW Mode Spectrum and the Lattice
+Voronoi-Cell Eigenvalue Problem\\
+\normalsize Version 0 (draft) --- Conscious Point Physics spin sub-arc}
+\author{Thomas Lee Abshier, ND\\ Hyperphysics Institute}
+\date{19 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper is the capstone of the CPP spin sub-arc.  Spin~I established
+that the captured Dipole Particle orbital geometry yields the electron
+spin angular momentum $L = \hbar/2$ exactly, \emph{given} the radius
+condition $\rout = 2\rin$.  Spin~II derived that condition from the ZBW
+polarization cloud's standing-wave structure: an open--closed resonator
+(node at $r=0$ by CP Exclusion, antinode at the thermal boundary
+$\rth = \hbar/2m_ec$) whose Mode~2 has an interior antinode at $\rth/3$
+and an interior node at $2\rth/3$ --- ratio $2$, exactly, independent of
+every physical constant.  Spin~III's charter, set when Spin~II was
+written, is to ground that mode structure in the substrate itself: to
+derive the spectrum from the eigenvalue problem of the lattice
+Voronoi cell.  This V0 establishes what can currently be established
+and reports plainly what cannot.  \textbf{Established here:} the exact
+resonator spectrum $k_n = (2n-1)\pi/2\rth$ with finite-difference
+verification to $0.01\%$ across eight modes by two independent
+constructions; the Mode-2 geometry to $0.1\%$; the scale-bridge
+identity $\rin^{\rm (I)}/\rin^{\rm (II)} = 6/[4\alpha(1+\sqrt{2})^2]
+= 35.2675$, shown to be an \emph{exact algebraic identity} rather than
+a numerical coincidence; and the discreteness bound
+$(\lP/\rth)^2 \approx 7\times10^{-45}$, which fixes the division of
+labor --- the lattice must supply mode \emph{selection}, not mode
+\emph{corrections}.  \textbf{Diagnosed here:} the arc's committed
+lattice-cell computation (a graph Laplacian on the 24-cell interior)
+solves the closed (Neumann-type) problem rather than the open--closed
+one --- the CP-Exclusion node at $r=0$ is never encoded --- so its low
+spectrum consists of the four 4D dipole modes and its own Mode-2
+diagnostic correctly reports no identification.  \textbf{Registered
+here:} the corrected instrument (Dirichlet core, free outer boundary,
+isotropy-scored radial profiling), with readings frozen before its
+data exists, and the substrate-domain question (24-cell surrogate
+versus the true GP-lattice Voronoi cell) put to the founder ---
+together \texttt{OPEN-QM-8}.
+\end{abstract}
+
+\tableofcontents
+
+% =====================================================================
+\section{The arc and this paper's charter}
+\label{sec:arc}
+
+The spin sub-arc was planned as three papers, and the plan is recorded
+verbatim in the arc's development notes:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Spin I}: given $\rout = 2\rin$, derive $L = \hbar/2$.
+The captured-DP orbital geometry with the $1/r^2$ force law gives the
+angular-frequency ratio $\omega_{\rm in}/\omega_{\rm out} = 2\sqrt{2}$
+and total orbital angular momentum $\hbar/2$ exactly when
+$\rin = \aBohr/[4(1+\sqrt{2})^2]$.
+\item \textbf{Spin II}: derive $\rout = 2\rin$ from ZBW sub-harmonics.
+The ZBW cloud is an open--closed radial resonator; its Mode~2 anchors
+the inner $+$CP at the interior antinode ($\rth/3$) and the outer $-$CP
+at the interior node ($2\rth/3$).
+\item \textbf{Spin III}: derive the sub-harmonic spectrum from the
+lattice Voronoi-cell eigenvalues --- ``the last mathematical gap to the
+lattice.''
+\end{itemize}
+The honesty constraint on this third paper was also set in advance, in
+the same notes: the lattice claim must not be asserted without either a
+numerical eigenvalue computation of the lattice cell or an analytic
+selection argument from the $2I$ symmetry group.  This V0 obeys that
+constraint.  It consolidates what is provable now, diagnoses why the
+existing numerical attempt did not settle the capstone, and freezes the
+corrected instrument that can.
+
+% =====================================================================
+\section{The continuum spectrum, verified two ways}
+\label{sec:spectrum}
+
+\begin{proposition}[Resonator spectrum; Spin II]
+The ZBW radial problem in the $\ell = 0$ sector, with a node at $r = 0$
+(CP Exclusion) and a free antinode at $r = \rth$, has modes
+\begin{equation}
+\psi_n(r) = \sin(k_n r), \qquad
+k_n = \frac{(2n-1)\pi}{2\rth}, \quad n = 1, 2, 3, \ldots
+\label{eq:spectrum}
+\end{equation}
+\end{proposition}
+
+\begin{theorem}[Mode-2 geometry; Spin II]
+Mode 2 has its interior antinode at $\rin = \rth/3$ and its interior
+node at $\rout = 2\rth/3$, whence $\rout/\rin = 2$ exactly ---
+integer arithmetic of trigonometric zeros, independent of every
+physical constant.
+\end{theorem}
+
+Table~\ref{tab:fd} reproduces the arc's committed finite-difference
+verification (forward-difference Neumann ghost; the committed CSV was
+regenerated bit-identically this session) alongside this paper's
+independent reconstruction (symmetric lumped-mass Neumann formulation
+--- a different discretization route).  Both agree with
+Eq.~\eqref{eq:spectrum} at the $10^{-4}$ level across eight modes, and
+the independent route locates the Mode-2 antinode and node at $R/3$ and
+$2R/3$ to $0.1\%$ with ratio $2.000$ (verify script, checks 1--2).
+
+\begin{table}[h]
+\centering
+\caption{Resonator eigenvalues: analytic vs.\ committed FD
+(\texttt{data/spin3\_eigenvalues.csv}).  The independent lumped-mass
+reconstruction agrees with both to $<0.05\%$
+(\texttt{scripts/3234\_verify\_spin3\_v0.py}).}
+\label{tab:fd}
+\begin{tabular}{cccc}
+\toprule
+mode $n$ & $k_n$ (analytic) & $k_n$ (FD) & rel.\ error \\
+\midrule
+1 & 1.57079633 & 1.57063926 & $1.0\times10^{-4}$ \\
+2 & 4.71238898 & 4.71191761 & $1.0\times10^{-4}$ \\
+3 & 7.85398163 & 7.85319551 & $1.0\times10^{-4}$ \\
+4 & 10.99557429 & 10.99447263 & $1.0\times10^{-4}$ \\
+5 & 14.13716694 & 14.13574866 & $1.0\times10^{-4}$ \\
+6 & 17.27875959 & 17.27702330 & $1.0\times10^{-4}$ \\
+7 & 20.42035225 & 20.41829623 & $1.0\times10^{-4}$ \\
+8 & 23.56194490 & 23.55956715 & $1.0\times10^{-4}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =====================================================================
+\section{The scale-bridge identity}
+\label{sec:bridge}
+
+Spin~I places the inner orbit at the Bohr-derived scale
+$\rin^{\rm (I)} = \aBohr/[4(1+\sqrt{2})^2]$; Spin~II places it at the
+ZBW-cloud scale $\rin^{\rm (II)} = \rth/3$.  The committed script
+records their ratio as $35.267491$ and observes that it equals
+$6/[\alpha\cdot4(1+\sqrt{2})^2]$.  This paper upgrades that observation
+to a theorem-grade statement:
+
+\begin{theorem}[Scale bridge, exact]
+Given the standard relations $\aBohr = \rC/\alpha$ and $\rth = \rC/2$,
+\begin{equation}
+\frac{\rin^{\rm (I)}}{\rin^{\rm (II)}}
+= \frac{\aBohr/[4(1+\sqrt{2})^2]}{\rth/3}
+= \frac{3\,\aBohr}{4(1+\sqrt{2})^2\,\rth}
+= \frac{6}{4\alpha(1+\sqrt{2})^2}
+\approx 35.2675
+\label{eq:bridge}
+\end{equation}
+exactly --- an algebraic identity, not a numerical coincidence.
+\end{theorem}
+
+\noindent (Verified numerically to $10^{-12}$; verify check~3.)  The
+physical reading, following the arc's development record: the
+sub-harmonic constrains the \emph{ratio}, the Coulomb force balance
+constrains the \emph{scale}, and the bridge between the two scales
+involves $\alpha$ in exactly the combination \eqref{eq:bridge}.  The
+mode structure and the orbital scale are two constraints, not one
+constraint stated twice, and their compatibility is what
+Eq.~\eqref{eq:bridge} records.
+
+% =====================================================================
+\section{The division of labor: selection, not corrections}
+\label{sec:division}
+
+The discreteness parameter at the ZBW scale is
+\begin{equation}
+\left(\frac{\lP}{\rth}\right)^2 \approx 7.0\times10^{-45},
+\end{equation}
+(verify check~3), so lattice discreteness cannot measurably shift the
+continuum eigenvalues \eqref{eq:spectrum} at any accessible precision.
+This sharpens what Spin~III must actually deliver: the lattice's job is
+not to \emph{correct} the spectrum but to \emph{select} it --- to show
+that the substrate's cell geometry, with the CP-Exclusion node and the
+thermal free boundary as its physical boundary conditions, produces the
+open--closed mode family (and in particular admits the Mode-2
+node/antinode topology the captured DP anchors to) rather than some
+other family.  A selection statement survives at any lattice fineness;
+a correction statement would be empty at $10^{-45}$.
+
+% =====================================================================
+\section{The committed lattice-cell computation: what it did and did
+not show}
+\label{sec:instrument}
+
+The arc's committed script (16 March 2026) contains, as its Part~3, a
+lattice-cell computation: rejection-sample the interior of the 24-cell
+(unit circumradius, the origin included as a sample point), build a
+Gaussian-kernel $k$-nearest-neighbour graph, take the normalised graph
+Laplacian $L_{\rm sym} = I - D^{-1/2}WD^{-1/2}$, and inspect the
+radially averaged low eigenmodes for a ``Mode-2-like'' profile (exactly
+one interior radial sign change).  Executed this session at both
+reduced and default sampling ($8\,000$ and $20\,000$ points), the
+computation reports, by its own diagnostic, \emph{no Mode-2-like mode}
+--- and this V0's finding is that it cannot, for a stated reason:
+
+\begin{proposition}[Boundary-condition mismatch]
+The kNN graph Laplacian on uniformly sampled interior points
+approximates the Laplacian with \emph{closed} (Neumann-type, free)
+boundary behaviour everywhere; nothing in the construction encodes the
+CP-Exclusion Dirichlet node at $r = 0$.  Its lowest nontrivial modes
+are therefore the four 4D dipole modes of the closed cell, not the
+open--closed radial family.
+\end{proposition}
+
+\noindent The diagnosis is verified reproducibly (verify check~4, same
+construction, same seed): the lowest nontrivial spectrum is a 4-fold
+near-degenerate group (spread $\sim10\%$, gap ratio $\sim2$ to the next
+group --- the dipole signature in four dimensions), and no mode among
+the lowest ten has exactly one interior radial zero.  Two consequences,
+stated plainly:
+\begin{itemize}[leftmargin=2em]
+\item The Part-3 computation, as committed, neither confirms nor
+disconfirms the capstone claim.  It solves a different boundary-value
+problem.  (The committed figure, consistently, carries panels for
+Parts~1, 2 and 4 only.)
+\item Nothing upstream is affected: Parts~1--2 (the continuum spectrum
+and its FD verification) are independent of Part~3 and reproduce
+bit-identically.
+\end{itemize}
+
+\subsection{The domain question (founder ruling requested)}
+\label{sec:domain}
+
+The committed computation takes the \textbf{24-cell} as its domain.
+The arc's charter language says ``600-cell Voronoi eigenvalue
+spectrum.''  These are different objects, and V0 declines to paper over
+the difference: whether the 24-cell is (a)~the intended Voronoi domain
+of the CPP Grid-Point lattice, (b)~a deliberate tractable surrogate for
+it, or (c)~a stand-in that should be replaced by the true GP-lattice
+Voronoi cell, is a physical-picture question reserved to the founder.
+It is registered as assumption A1 of the corrected instrument below and
+flagged in \texttt{OPEN-QM-8}.
+
+% =====================================================================
+\section{The corrected instrument, frozen before its data exists}
+\label{sec:corrected}
+
+Per corpus practice (freeze the repair by principle, before the testing
+data exists), the corrected lattice-cell measurement is specified now:
+
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{Boundary conditions encoded, not implied.}  Dirichlet on
+a small central core (all sample points with $r < \epsilon$ pinned to
+zero --- the CP-Exclusion node), free (natural/Neumann) outer boundary
+--- the open--closed problem the physics states.
+\item \textbf{Radial-mode identification by isotropy score, not raw
+sign counting.}  For each low eigenmode, compute the fraction of its
+variance explained by its radial average; score modes with fraction
+above a declared threshold as radial candidates; count interior zeros
+on those only.  (The committed sign-counter applied to raw radial
+averages of anisotropic modes is what produced zero counts of 13--36.)
+\item \textbf{Domain per the founder's A1 ruling}: 24-cell, or the
+GP-lattice Voronoi cell, or both as a robustness pair.
+\item \textbf{Frozen readings.}  \textsc{mode2-recovered}: a radial
+candidate with exactly one interior zero, node in $[0.60, 0.73]$ and
+antinode in $[0.28, 0.40]$ of the boundary radius, stable across two
+seeds and two sampling densities.  \textsc{mode2-absent}: no such mode
+among the lowest twenty radial candidates at the highest density.
+\textsc{indeterminate}: anything else $\Rightarrow$ instrument work,
+not a verdict.
+\item \textbf{Worker expectation, declared pre-run
+(anti-extraction).}  \textsc{mode2-recovered} --- the continuum limit
+is exact, discreteness corrections sit at $10^{-45}$, and the closed
+problem's dipole modes are removed by the Dirichlet core; the risk is
+angular interleaving in four dimensions, which the isotropy score is
+designed to separate.
+\end{enumerate}
+
+This measurement, plus the analytic $2I$-symmetry selection argument
+(the second route the arc's notes named), constitute
+\texttt{OPEN-QM-8}.  Neither is attempted in V0.
+
+% =====================================================================
+\section{Epistemic ledger}
+\label{sec:ledger}
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Exact:} the resonator spectrum \eqref{eq:spectrum} and
+Mode-2 ratio (Spin~II, restated and re-verified here two ways); the
+scale-bridge identity \eqref{eq:bridge}; the discreteness bound.
+\item \textbf{Established numerically:} FD eigenvalues to $10^{-4}$
+across eight modes; Mode-2 geometry to $10^{-3}$; committed CSV
+regenerated bit-identically.
+\item \textbf{Diagnosed, not settled:} the lattice-cell selection
+computation --- the committed instrument solved the closed problem;
+capstone remains \texttt{OPEN-QM-8} with the corrected instrument
+frozen above.
+\item \textbf{Assumption awaiting founder ruling:} A1, the Voronoi
+domain (Section~\ref{sec:domain}).
+\item \textbf{Inherited:} everything Spin~I and Spin~II inherit; in
+particular the $L = \hbar/2$ chain is complete at the continuum level
+(Spin~I $+$ Spin~II) independently of this paper's open capstone.
+\end{itemize}
+
+% =====================================================================
+\section*{Provenance}
+
+Drafted at founder request (Session 149) from the arc's own materials:
+the development-notes dialogue (Thomas Lee Abshier with Claude and
+Grok, March 2026), the committed eigenvalue script and its data and
+figure.  No prior Spin~III paper existed (full-history finding,
+Patch 3232 record).  Verify:
+\texttt{scripts/3234\_verify\_spin3\_v0.py} --- 10/10, including the
+reproducible Part-3 diagnosis.
+
+\begin{thebibliography}{9}
+\bibitem{spin1} T.~L. Abshier, \emph{Emergent Spin-$\tfrac12$ from
+Captured Dipole Particle Orbital Geometry} (spin sub-arc, Spin I).
+\bibitem{spin2} T.~L. Abshier, \emph{Derivation of the Standing-Wave
+Sub-Harmonic Condition for Captured Dipole Particle Orbits} (spin
+sub-arc, Spin II).
+\bibitem{zbwmass} T.~L. Abshier, \emph{ZBW $\hbar$ and Mass Units}
+(SR companion c04) --- source of the thermal-boundary condition.
+\end{thebibliography}
+
+\end{document}
