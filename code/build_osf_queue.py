@@ -192,6 +192,67 @@ def read_existing():
     return keep
 
 
+def citation_graph(rows, texts):
+    """Which CPP papers each paper cites, as .tex paths.
+
+    Self-citations are resolved through bibliography/doi_harmonization_worksheet.csv:
+    bib key -> paper ID -> .tex filename. Only 12 of 117 papers cite any other
+    CPP paper, and the graph is acyclic -- which is what makes single-pass
+    publication possible at all.
+    """
+    import csv
+    key2id = {}
+    ws = os.path.join(REPO, "bibliography", "doi_harmonization_worksheet.csv")
+    if os.path.exists(ws):
+        for row in csv.DictReader(io.open(ws, encoding="utf-8-sig")):
+            k = (row.get("bib_key") or "").strip()
+            pid = (row.get("paper_id") or "").strip()
+            if k and pid:
+                key2id[k] = pid
+    id2tex = {}
+    for rel in texts:
+        base = os.path.basename(rel).lower()
+        for pid in set(key2id.values()):
+            if base.startswith(pid.lower() + "_"):
+                id2tex.setdefault(pid, rel)
+    dep = {}
+    for rel, t in texts.items():
+        d = set()
+        for m in re.finditer(r"\\cite[a-z]*\{([^}]*)\}", t):
+            for k in m.group(1).split(","):
+                k = k.strip()
+                tgt = id2tex.get(key2id.get(k, ""), "")
+                if tgt and tgt != rel:
+                    d.add(tgt)
+        dep[rel] = d
+    return dep
+
+
+def assign_waves(dep):
+    """Topological layering: a paper's wave is one past its latest dependency.
+
+    Wave N can only be deposited once every paper in waves < N has a DOI, so
+    each paper is published EXACTLY ONCE with correct citations -- no
+    deposit-then-republish cycle. Papers on the never-deposit list are treated
+    as satisfied dependencies: nothing may stall waiting for a DOI that will
+    never be minted.
+    """
+    wave, remaining, guard = {}, set(dep), 0
+    satisfied = set()
+    while remaining and guard < 100:
+        guard += 1
+        ready = [r for r in remaining if dep[r] <= satisfied]
+        if not ready:                       # cycle: fail loudly, do not guess
+            for r in sorted(remaining):
+                wave[r] = None
+            break
+        for r in ready:
+            wave[r] = guard
+        satisfied |= set(ready)
+        remaining -= set(ready)
+    return wave
+
+
 def eligibility(r):
     """Why a paper may or may not be deposited. Returns (eligible, reason).
 
@@ -204,9 +265,22 @@ def eligibility(r):
         return False, f"WITHHELD: {r['withheld']}"
     if not r["APPROVED"]:
         return False, "not approved"
-    if r["CHANGE_CLASS"] not in VALID_CHANGE:
-        return False, (f"CHANGE_CLASS '{r['CHANGE_CLASS']}' invalid "
+    # Require an EXPLICIT classification, not merely a well-formed one. Blank
+    # is accepted as a valid *format* (VALID_CHANGE) so the queue does not
+    # report every untouched row as malformed, but it is not enough to deposit
+    # on. The reason is defence in depth: the worst failure this contract
+    # guards against is creating a duplicate preprint for a paper that already
+    # has one, which is not cleanly reversible. That happens when PREPRINT_ID
+    # goes missing -- and a PREPRINT_ID was in fact silently dropped by the
+    # seeding bug fixed at Patch 3218. Requiring a human-entered CHANGE_CLASS
+    # puts a second, independent human check on the same row.
+    if r["CHANGE_CLASS"] not in ("editorial", "substantive"):
+        return False, (f"CHANGE_CLASS '{r['CHANGE_CLASS']}' not set "
                        "(use 'editorial' or 'substantive')")
+    if r.get("wave_blocked_by"):
+        n = len(r["wave_blocked_by"])
+        return False, (f"wave {r.get('wave')}: blocked, {n} cited paper(s) "
+                       "have no DOI yet")
     if not r["PREPRINT_ID"]:
         return True, "create: approved, no preprint yet"
     if r["CHANGE_CLASS"] != "substantive":
@@ -253,8 +327,27 @@ def main():
              "changed": last_changed(rel), "cls": classify(rel),
              "withheld": why}
         r.update(owned)
-        r["eligible"], r["reason"] = eligibility(r)
+        r["_text"] = t
         rows.append(r)
+
+    # ---- waves -----------------------------------------------------------
+    texts = {r["rel"]: r.pop("_text") for r in rows}
+    dep = citation_graph(rows, texts)
+    wave = assign_waves(dep)
+    byrel = {r["rel"]: r for r in rows}
+    never = {r["rel"] for r in rows if r["withheld"]}
+    for r in rows:
+        r["wave"] = wave.get(r["rel"])
+        r["cites"] = sorted(dep.get(r["rel"], ()))
+        # A dependency is satisfied once it HAS a DOI, or once it is known to
+        # be one that will never be deposited. Otherwise a live paper could
+        # stall forever behind a withheld one.
+        r["wave_blocked_by"] = sorted(
+            d for d in dep.get(r["rel"], ())
+            if d not in never
+            and not (byrel.get(d, {}).get("OSF_LINK") or "").strip())
+    for r in rows:
+        r["eligible"], r["reason"] = eligibility(r)
 
     held = [r for r in rows if r["withheld"]]
     rdy = [r for r in rows if not r["withheld"]]
@@ -269,8 +362,12 @@ def main():
         "counts": {"total": len(rows), "withheld": len(held),
                    "eligible_now": len(elig)},
         "never_deposit": sorted(r["rel"] for r in held),
+        "waves": {str(w): sorted(r["rel"] for r in rows if r["wave"] == w)
+                  for w in sorted({r["wave"] for r in rows
+                                   if r["wave"] is not None})},
         "papers": [{k: r[k] for k in
                     ("rel", "title", "ver", "changed", "cls", "withheld",
+                     "wave", "cites", "wave_blocked_by",
                      "eligible", "reason", *OWNED)} for r in rows],
     }
     io.open(MANIFEST, "w", encoding="utf-8").write(
