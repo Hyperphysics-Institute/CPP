@@ -47,6 +47,15 @@
 %        residual notes now on OPEN-QM-8 (non-perturbative bound
 %        with discharge path; dynamic symmetry-breaking robustness,
 %        Gemini provenance).
+%   v1.0 19 Aug 2026  Patch 3248  SHIPPED. Paper production protocol
+%        executed: Keywords + Plain Language Summary + CPP Physical
+%        Mechanism Bridge & conventional-mapping section added
+%        (Phase 2 formatting); 8-file documentation suite produced
+%        (Phase 7); Phase 5 N/A (no new axioms/predictions); Phase 6
+%        deposit = founder/Isak Zenodo test run, BLOCKED on the
+%        SPIN-N naming confirmation + DOI reservation; Phase 8
+%        transcript curation registered as owed. Review basis:
+%        CONV-026 (Q5 4-1 VALID; Q8 3-2 RATIFY; cycle closed 3247).
 % =====================================================================
 \documentclass[12pt]{article}
 
@@ -135,6 +144,30 @@ residual to $20\%$.  What remains registered is only a
 non-perturbative-in-$\epsilon_6$ bound --- a rigor upgrade, not a gap
 in the physical argument.
 \end{abstract}
+
+\noindent\textbf{Keywords:} Zitterbewegung; electron spin; 600-cell
+lattice; Voronoi cell; regular dodecahedron; icosahedral symmetry;
+mode selection; boundary perturbation; Conscious Point Physics.
+
+\section*{Plain Language Summary}
+The electron's spin, in this framework, comes from a tiny standing wave
+--- like the vibration of an organ pipe closed at one end --- inside the
+electron's jitter cloud.  The first two papers of this arc derived the
+spin value and the wave's shape assuming space is smooth.  But in CPP,
+space is a lattice of discrete points, and each point's territory is a
+twelve-sided room (a regular dodecahedron), not a perfect sphere.  This
+paper asks: does the wave pattern survive in the real room?  We answer
+three ways.  First, the room's corners are astronomically too small to
+distort the wave (forty-plus orders of magnitude).  Second, we build a
+careful computational instrument, test it on a perfect sphere where the
+answer is known exactly, then run it in the twelve-sided room: the
+pattern survives, its landmarks moving by less than a tenth of a
+percent.  Third --- the elegant half --- we prove with symmetry
+arithmetic that the room \emph{cannot} support any competing pattern:
+the icosahedral shape forbids every lopsided wave below a high
+threshold, so the lattice has no choice but to select exactly the wave
+that produces spin-$\tfrac12$.  The proof even predicted the size of the
+tiny imperfections the computer had already measured.
 
 \tableofcontents
 
@@ -575,6 +608,59 @@ $0.999$--$1.000$, exactly where the theorem puts them).  What remains
 registerable is a fully non-perturbative bound --- a rigor upgrade,
 not a gap in the physical argument; recorded as the residual note on
 \texttt{OPEN-QM-8}.
+
+% =====================================================================
+\section{CPP physical mechanism and conventional mapping}
+\label{sec:mechanism}
+
+\textbf{What is physically happening.}  An unpaired $-e$CP moving
+through the Dipole Sea captures a DP (Spin I): the inner $+$CP orbits at
+$r_{\rm in}$, the outer $-$CP at $r_{\rm out}$.  The ZBW polarization
+cloud around the bare CP is a compression pattern of the Sea whose
+scalar (breathing) degree of freedom obeys the radial wave equation of
+Spin II: the CP Exclusion Rule pins a node at the center, and the
+cloud's thermal boundary at $r_{\rm th}$ is a free end.  The captured
+DP anchors to the standing wave's structure --- $+$CP at the interior
+antinode, $-$CP at the interior node --- which is what makes Mode 2,
+the lowest mode possessing both features, the physically selected
+state, and what fixes $r_{\rm out} = 2 r_{\rm in}$ and hence
+$L = \hbar/2$.  This paper's contribution: the wave does not live in a
+continuum but inside one Grid Point's territory --- the regular
+dodecahedral Voronoi cell of the 600-cell lattice --- and the cell's
+icosahedral symmetry \emph{forbids} every non-radial competitor below
+the $l = 6$ channel, forcing the selection the continuum papers
+assumed.
+
+\textbf{How this maps to conventional physics.}  The correspondence is
+structural, not literal:
+
+\begin{center}
+\begin{tabular}{p{0.44\textwidth}|p{0.46\textwidth}}
+\textbf{CPP element} & \textbf{Conventional counterpart} \\
+\hline
+ZBW cloud scalar breathing mode & Zitterbewegung of the Dirac electron
+(the $\sim 2mc^2/\hbar$ internal oscillation) \\
+Captured-DP orbital angular momentum $L = \hbar/2$ & Electron spin
+$s = \tfrac12$ (intrinsic, not orbital, in the conventional account) \\
+CP Exclusion node at $r = 0$ & Boundary condition selecting the mode
+family (no conventional analogue --- axiom-level) \\
+Thermal boundary free end at $r_{\rm th} = \hbar/2m_ec$ & Reduced
+Compton wavelength scale of the electron \\
+Trivial irrep of $I_h$ (invariant sector) & $s$-wave ($l = 0$) sector of
+a central-potential problem \\
+Icosahedral forbidden channels $l = 1..5$ & Crystal-field selection
+rules (here: exact, from character theory) \\
+$O(\epsilon_6^2)$ position protection & Second-order perturbation
+theory under a symmetry-restricted perturbation \\
+\end{tabular}
+\end{center}
+
+The conventional account postulates spin-$\tfrac12$ as an irreducible
+quantum number; CPP derives the same magnitude from a resonator whose
+geometry the lattice enforces.  The discriminating content is not the
+value (both give $\hbar/2$) but the mechanism's collateral structure:
+the mode spectrum, the scale bridge to Spin I, and the icosahedral
+selection rules of Section~\ref{sec:analytic}.
 
 % =====================================================================
 \section{Epistemic ledger}
