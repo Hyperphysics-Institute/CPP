@@ -297,6 +297,65 @@ def infer_parents(rows, texts):
     return out
 
 
+# Zenodo's genuinely required fields are creators, license, title,
+# publication date, resource type and description -- "only minimal metadata
+# (what's needed for a citation)". SUBJECT IS NOT REQUIRED; an earlier note in
+# this contract said it was, carrying over a rule from OSF preprints where it
+# IS mandatory. It is still emitted, because Zenodo strongly encourages it and
+# it aids discovery.
+ZENODO_LICENSE = "cc-by-4.0"
+ZENODO_RESOURCE_TYPE = "publication-preprint"
+ZENODO_SUBJECTS = ["Physics"]
+ZENODO_ACCESS = "open"
+
+
+def zenodo_metadata(rel, text, row):
+    """Everything Zenodo needs for a record, derived from the paper itself.
+
+    Emitted so the pipeline never invents metadata: each field traces to the
+    .tex or to a contract constant. `description_source` records where the
+    abstract came from, and description_ok flags whether one was found at all,
+    so a missing abstract surfaces as a blocked deposit rather than an empty
+    Zenodo record.
+    """
+    creators = []
+    m = re.search(r"\\author\{(.*?)\n*\}", text, re.S)
+    if m:
+        for part in re.split(r"\\and", m.group(1)):
+            name = re.sub(r"\\[a-zA-Z]+\s*|[{}\\]", "", part)
+            name = re.sub(r"\s+", " ", name).strip(" ,")
+            if name:
+                creators.append(name)
+
+    a = re.search(r"\\begin\{abstract\}(.*?)\\end\{abstract\}", text, re.S)
+    desc = ""
+    if a:
+        d = a.group(1)
+        d = re.sub(r"(?<!\\)%.*", "", d)
+        # Strip COMMANDS FIRST, then braces. Unwrapping \textbf{...} before
+        # removing \noindent leaves "\noindentPaper type:", and the command
+        # pattern then swallows "noindentPaper" as one command name -- which
+        # silently ate the first word of the abstract, i.e. of the public
+        # description shown on the Zenodo record.
+        d = re.sub(r"\\[a-zA-Z]+\*?(\[[^\]]*\])?", " ", d)
+        d = re.sub(r"[{}]", "", d)
+        desc = re.sub(r"\s+", " ", d).strip()
+
+    return {
+        "title": row.get("title", ""),
+        "creators": creators,
+        "publication_date": row.get("changed", ""),
+        "resource_type": ZENODO_RESOURCE_TYPE,
+        "license": ZENODO_LICENSE,
+        "access_right": ZENODO_ACCESS,
+        "subjects": list(ZENODO_SUBJECTS),
+        "version": row.get("ver", ""),
+        "description": desc,
+        "description_ok": bool(desc) and len(desc) > 200,
+        "description_source": "abstract environment" if a else "NONE FOUND",
+    }
+
+
 def citation_graph(rows, texts):
     """Which CPP papers each paper cites, as .tex paths.
 
@@ -443,6 +502,8 @@ def main():
 
     # ---- waves -----------------------------------------------------------
     texts = {r["rel"]: r.pop("_text") for r in rows}
+    for r in rows:
+        r["zenodo"] = zenodo_metadata(r["rel"], texts[r["rel"]], r)
     dep = citation_graph(rows, texts)
     inferred = infer_parents(rows, texts)
     wave = assign_waves(dep)
@@ -518,6 +579,13 @@ def main():
             "the concept DOI.",
             "7. ACCEPT the community request as curator, then record "
             "PREPRINT_ID, POSTED, CONCEPT_DOI.",
+            "NOTE ON METADATA: every field Zenodo requires -- title, "
+            "creators, publication date, resource type, description, license "
+            "-- is emitted per paper under `zenodo` in this manifest, derived "
+            "from the .tex. Do not hand-enter them. SUBJECT IS NOT REQUIRED by "
+            "Zenodo (an earlier version of this contract wrongly said it was, "
+            "carrying over a rule from OSF preprints); 'Physics' is emitted "
+            "anyway because Zenodo encourages it and it aids discovery.",
             "8. SET the reciprocal relation on the PARENT record. Zenodo "
             "relations are NOT automatically reciprocal: the child's "
             "isSupplementTo does not create the parent's isSupplementedBy. "
@@ -534,7 +602,7 @@ def main():
         "papers": [{k: r[k] for k in
                     ("rel", "title", "ver", "changed", "cls", "withheld",
                      "wave", "cites", "wave_blocked_by",
-                     "children", "parent_source",
+                     "children", "parent_source", "zenodo",
                      "eligible", "reason", *OWNED)} for r in rows],
     }
     io.open(MANIFEST, "w", encoding="utf-8").write(

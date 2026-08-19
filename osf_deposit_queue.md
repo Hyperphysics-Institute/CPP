@@ -36,6 +36,8 @@ Each step exists because doing it later breaks something that cannot be repaired
 5. CREATE the community review request on the DRAFT, before publishing. Community membership is no longer a metadata field; under InvenioRDM it is a request/review flow, and only ONE community per record is permitted.
 6. PUBLISH. This mints the version DOI and, on first publication, the concept DOI.
 7. ACCEPT the community request as curator, then record PREPRINT_ID, POSTED, CONCEPT_DOI.
+
+**NOTE ON METADATA: every field Zenodo requires -- title, creators, publication date, resource type, description, license -- is emitted per paper under `zenodo` in this manifest, derived from the .tex. Do not hand-enter them. SUBJECT IS NOT REQUIRED by Zenodo (an earlier version of this contract wrongly said it was, carrying over a rule from OSF preprints); 'Physics' is emitted anyway because Zenodo encourages it and it aids discovery.**
 8. SET the reciprocal relation on the PARENT record. Zenodo relations are NOT automatically reciprocal: the child's isSupplementTo does not create the parent's isSupplementedBy. See each parent's 'children' list.
 
 **NEVER delete a draft holding a reserved DOI that has already been written into a built PDF.**
