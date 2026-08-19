@@ -7,20 +7,26 @@ founder rulings and the Patch 3225 scoping assessment
 ## What this series is
 
 The series parent **GR-1** (`papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex`)
-plus, pending re-identification and file moves (tracked as **OPEN-ORG-023**),
-the eight gravitational companions currently filed under
-`series_relativity/SR_companion_papers/`:
+plus the eight gravitational companions in `GR_companion_papers/`
+(moved from `series_relativity/SR_companion_papers/` at Patch 3230;
+OPEN-ORG-023 Item 2 executed):
 
-| Current ID | Content | Lines (approx.) |
+| ID | Formerly | Content |
 |---|---|---|
-| c05 | Newtonian gravity from SSV shell broadcast | 349 |
-| c07 | Weak-field GR (two-component LSP; SSV_net vector) | 877 |
-| c08 | Strong-field GR: exact isotropic Schwarzschild; Planck core r_S/2 | 991 |
-| c09 | Gravitational-wave echoes from the Planck core | 714 |
-| c10 | Hawking evaporation with a Planck remnant | 599 |
-| c11 | Kerr from azimuthal SSV_net | 648 |
-| c12 | Kerr-Newman (M, J, Q) | 617 |
-| c13 | Superradiance | 651 |
+| GR-1a | c05 | Newtonian gravity from SSV shell broadcast |
+| GR-1b | c07 | Weak-field GR (two-component LSP; SSV_net vector) |
+| GR-1c | c08 | Strong-field GR: exact isotropic Schwarzschild; Planck core r_S/2 |
+| GR-1d | c09 | Gravitational-wave echoes from the Planck core |
+| GR-1e | c10 | Hawking evaporation with a Planck remnant |
+| GR-1f | c11 | Kerr from azimuthal SSV_net |
+| GR-1g | c12 | Kerr-Newman (M, J, Q) |
+| GR-1h | c13 | Superradiance |
+
+Moved and re-identified at Patch 3230 (founder-approved layout and IDs;
+SS-1a-f precedent). GR-1i is reserved for the classical-tests companion
+(OPEN-GR-TESTS-1). Each paper's internal header/prose modernization rides
+its next natural version bump; legacy cNN mentions in frozen records
+(handovers, reasoning fragments) are historical and are not rewritten.
 
 c14 (quark confinement) and c15 (colour charge) are strong-sector papers
 misfiled in the SR companion folder; they belong under SS-1, **not** here.
