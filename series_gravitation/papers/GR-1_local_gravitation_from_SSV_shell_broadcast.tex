@@ -1,0 +1,491 @@
+% =====================================================================
+% GR-1: Local Gravitation from SSV Shell Broadcast
+% Series parent for the CPP gravitational arc (companions c05, c07-c13,
+% pending re-identification as GR-series companions).
+%
+% CHANGELOG
+%   V0   19 Aug 2026  Patch 3228  Initial assembly (Session 149).
+%        Synthesis of the eight-companion gravitational arc per the
+%        Patch 3225 scoping assessment and the Session 148 founder
+%        rulings: series paper (flagship deferred); claims exact
+%        reproduction of SOLUTIONS (Schwarzschild in isotropic
+%        coordinates, Kerr, Kerr-Newman), NOT derivation of the field
+%        equations (registered OPEN-GR-FE-1); classical tests as a
+%        results-only summary table (derivations in a single dedicated
+%        tests companion, registered OPEN-GR-TESTS-1); explicit SR-1
+%        inheritance subsection; explicit LOCAL-gravitation scope
+%        boundary (cosmology owned by OPEN-EU-1 and the dark-energy
+%        lane). Verify script: code/3228_classical_tests_verify.py.
+% =====================================================================
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+\geometry{margin=1in}
+
+% ---- corpus macros (matching c05/c07/c08 conventions) ----
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\EP}{E_P}
+\newcommand{\mP}{m_P}
+\newcommand{\SSV}{\text{SSV}}
+\newcommand{\PSR}{\text{PSR}}
+\newcommand{\LSP}{\text{LSP}}
+\newcommand{\rS}{r_S}
+\newcommand{\riso}{r_{\mathrm{iso}}}
+\newcommand{\vrho}{\varrho}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{claim}{Claim}
+
+\title{GR-1: Local Gravitation from SSV Shell Broadcast\\
+\large One nonlinear substrate response from Coulomb's law to the exact
+Schwarzschild, Kerr, and Kerr--Newman metrics\\
+\normalsize Version 0 (assembly draft) --- Conscious Point Physics
+gravitation series}
+\author{Thomas Lee Abshier, ND\\ Hyperphysics Institute}
+\date{19 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper is the series parent for the Conscious Point Physics (CPP)
+gravitational arc.  Its thesis is a single unifying statement: the same
+Space Stress Vector (SSV) shell-broadcast mechanism that produces
+Coulomb's law produces, in successive regimes of one nonlinear substrate
+response, Newtonian gravity, the weak-field limit of general relativity,
+and the \emph{exact} Schwarzschild metric in isotropic coordinates ---
+extended by the companion papers to the Kerr and Kerr--Newman families
+and their consequences (gravitational-wave echoes, modified Hawking
+evaporation, superradiance).  The nonlinearity resides entirely in the
+Planck Sphere Radius response formula
+$\PSR_{\rm eff} = \lP/(1 + k\,\Delta|\SSV|)$, which is why one mechanism
+spans all four regimes.  We state the claim precisely: CPP reproduces the
+named \emph{solutions} of general relativity --- Schwarzschild in
+isotropic coordinates, Kerr, Kerr--Newman --- exactly and with no free
+parameters; it does \emph{not} yet derive the general Einstein field
+equations, and that derivation is registered as an open problem
+(\texttt{OPEN-GR-FE-1}) rather than claimed.  The four classical tests
+(perihelion precession, light deflection, Shapiro delay, gravitational
+redshift) follow from the recovered metric by standard geodesic
+integration; this paper carries the predicted-versus-observed summary
+table, with the derivations in a dedicated tests companion
+(\texttt{OPEN-GR-TESTS-1}).  An epistemic ledger aggregates what is
+exact, what is correspondence, and what is conditional across the arc,
+and an inheritance subsection states explicitly what this arc does and
+does not inherit from SR-1, including SR-1's withdrawn prediction set
+(Patch~2474) and withdrawn class-coverage theorem (Patch~2475).
+\textbf{Scope: local gravitation only.}  Cosmological solutions
+(FRW/Friedmann) are outside this series and are pursued separately under
+\texttt{OPEN-EU-1} and the dark-energy programme.
+\end{abstract}
+
+\tableofcontents
+
+% =====================================================================
+\section{Introduction: the missing parent}
+\label{sec:intro}
+
+The CPP corpus contains eight gravitational papers totalling roughly
+5{,}600 lines --- more than twice the length of SR-1, the
+special-relativity paper beneath which they have been filed.  They were
+not written as strays: they cross-cite one another by companion number
+and form a clean acyclic dependency ladder,
+\begin{center}
+\begin{tabular}{l}
+c05 Newtonian gravity (SSV shell broadcast) \\
+\quad$\downarrow$ \\
+c07 weak-field GR \\
+\quad$\downarrow$ \\
+c08 strong-field GR: exact Schwarzschild (isotropic coordinates), Planck
+core at $\rS/2$ \\
+\quad$\hookrightarrow$ c09 gravitational-wave echoes \\
+\quad$\hookrightarrow$ c10 Hawking evaporation with a Planck remnant \\
+\quad$\hookrightarrow$ c11 Kerr from azimuthal $\SSV_{\rm net}$ \\
+\qquad$\hookrightarrow$ c12 Kerr--Newman $(M, J, Q)$ \\
+\qquad$\hookrightarrow$ c13 superradiance
+\end{tabular}
+\end{center}
+What the ladder lacked was a parent: a paper that makes the unifying
+argument once, states the arc's epistemic standing in one place, and
+carries the entry-criterion results (the classical tests) that a reader
+of any gravitational theory looks for first.  This paper is that parent.
+It follows the strong sector's precedent (SS-1 as series parent to
+SS-1a--f, with the flagship SF-5 written only after the series was
+complete): GR-1 is a \emph{series} paper, and the gravitational flagship
+is deferred until the series stands.
+
+Three writing rules, fixed by founder ruling before assembly, govern
+everything below.
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{Solutions, not equations.}  This paper claims exact
+reproduction of named metric solutions --- Schwarzschild \emph{in
+isotropic coordinates}, Kerr, Kerr--Newman --- in the stated coordinates,
+so that the claim is checkable.  It does not claim derivation of the
+general field equations (Section~\ref{sec:ledger};
+\texttt{OPEN-GR-FE-1}).
+\item \textbf{Results here, derivations in the companion.}  The
+classical tests appear in this paper as a predicted-versus-observed
+summary table (Table~\ref{tab:tests}); the geodesic derivations live in
+a single dedicated tests companion, exactly as c09 takes c08's core and
+derives echoes.
+\item \textbf{Local gravitation only.}  Nothing in this series addresses
+FRW cosmology; the boundary is stated, not left to be discovered
+(Section~\ref{sec:scope}).
+\end{enumerate}
+
+% =====================================================================
+\section{The mechanism, stated once}
+\label{sec:mechanism}
+
+\subsection{Shell broadcast and the scalar source}
+
+In CPP, every mass-energy concentration broadcasts its presence through
+the Dipole Sea by the same shell-broadcast geometry that carries the
+Coulomb interaction: Displacement Increment bits (DI-bits) fan outward
+at every hop to all outward-component neighbours, so that the integrated
+influence crossing any concentric shell is conserved and the per-site
+influence falls as the inverse square of the shell radius.  The
+gravitational case differs from the electromagnetic case in exactly one
+respect, established in c05: \emph{the source is mass-energy, a positive
+scalar, rather than charge polarity, a signed quantity}.  Two
+consequences follow immediately and with no adjustable input:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Universal attraction.}  Mass-energy SSV has no polarity;
+every ZBW Dipole Particle unit contributes compressive SSV in all
+directions with no cancellation.
+\item \textbf{The coupling.}  $G = \hbar c/\mP^2$, fixed entirely by the
+Planck mass already determined by the 600-cell lattice.  The weakness of
+gravity relative to electromagnetism is the pure Planck-unit ratio
+$F_{\rm grav}/F_{\rm EM} = (m/\mP)^2/(e/e_P)^2$.
+\end{itemize}
+This is the Coulomb--Newton half of the unification: one broadcast
+geometry, two source types.
+
+\subsection{The nonlinear response}
+
+The substrate's response to accumulated stress is the Planck Sphere
+Radius formula
+\begin{equation}
+\PSR_{\rm eff}(r) \;=\; \frac{\lP}{1 + k\,\Delta|\SSV|(r)},
+\label{eq:psr}
+\end{equation}
+which is \emph{already nonlinear}: it is not a linearisation awaiting
+higher-order corrections, but the full constitutive statement.  Combined
+with the shell-broadcast source relation $k\,\Delta|\SSV| = GM/rc^2$
+(exact, from c05), Eq.~\eqref{eq:psr} is the single input from which the
+strong-field results of c08 follow.  This is the reason one mechanism
+spans four regimes: expanding Eq.~\eqref{eq:psr} to zeroth order in
+$k\,\Delta|\SSV|$ gives flat space; to first order, Newtonian gravity
+and the weak-field metric; keeping it unexpanded gives the exact
+Schwarzschild solution.  The regimes are not separate theories patched
+together --- they are Taylor truncations of one response, and the paper
+series is organised accordingly.
+
+% =====================================================================
+\section{The scalar--vector transition, argued at series level}
+\label{sec:scalarvector}
+
+The step from c05 to c07 is where gravity stops resembling
+electrostatics, and it deserves an argument rather than an assertion;
+this section supplies it at series level.
+
+c05 works entirely with the \emph{absolute} SSV scalar
+$|\SSV|_{\rm abs}$: a positive stress density sourced by the compressive
+polarization energy $E_{\rm pol} = mc^2$ of the source's eDP cloud.  A
+scalar stress field can slow clocks --- it sources $g_{tt}$, time
+curvature --- but it cannot by itself curve space: there is no direction
+in it.  Newtonian gravity, which is blind to spatial curvature, is
+exactly the theory of the scalar alone.
+
+The observational fact that forces the extension is the factor of two in
+light deflection: the Newtonian (time-curvature-only) calculation gives
+$0.875''$ at the solar limb, and the measured value is $1.75''$.  c07
+resolves this by extending the DI-bit broadcast to carry, alongside the
+scalar, the \emph{net} SSV vector $\mathbf{\SSV}_{\rm net}$, whose
+directional information sources the spatial components $g_{ij}$.  The
+Lattice State Packet (LSP) is the two-component broadcast object:
+$|\SSV|_{\rm abs} = E_{\rm pol}/V_0$ sources $g_{tt}$;
+$\mathbf{\SSV}_{\rm net}$ sources $g_{ij}$.  In the weak field the two
+contributions to null deflection are equal, which is precisely the
+GR factor of two --- a retroactive prediction of the two-component LSP
+structure rather than a fitted correction.
+
+At series level the transition is therefore not an ad hoc enrichment but
+a forced move: a scalar broadcast cannot produce equal temporal and
+spatial curvature contributions, the data demand them, and the vector
+component is the minimal directional content the broadcast can carry.
+Everything downstream of c07 --- the exact static metric of c08, the
+rotational (azimuthal $\SSV_{\rm net}$) extension to Kerr in c11, the
+charged extension to Kerr--Newman in c12 --- is built on the
+two-component LSP, with rotation and charge entering as new
+\emph{configurations} of the same broadcast content rather than new
+mechanisms.
+
+% =====================================================================
+\section{The exact static solution and its consequences}
+\label{sec:exact}
+
+c08 is the keystone of the arc.  Its central result
+(c08 Theorem~1) is:
+
+\begin{claim}[Exact static solution --- established in c08]
+With $\vrho = GM/(2c^2\riso)$, the shell-broadcast source relation and
+the PSR response Eq.~\eqref{eq:psr} yield the line element
+\begin{equation}
+ds^2 \;=\; -\left(\frac{1-\vrho}{1+\vrho}\right)^{\!2} c^2\,dt^2
+\;+\; (1+\vrho)^4 \left( d\riso^2 + \riso^2\, d\Omega^2 \right),
+\label{eq:iso}
+\end{equation}
+which is \emph{exactly} the Schwarzschild metric in isotropic
+coordinates, with no approximation and no free parameters.  Standard
+Schwarzschild coordinates follow by the transformation
+$r = \riso(1+\vrho)^2$.
+\end{claim}
+
+\noindent The coordinate statement matters and is part of the claim:
+``exact Schwarzschild \emph{in isotropic coordinates}'' is checkable,
+and the identity of Eq.~\eqref{eq:iso} with the standard form under
+$r = \riso(1+\vrho)^2$ is verified to machine precision in this paper's
+verify script (\texttt{code/3228\_classical\_tests\_verify.py}, check~0).
+
+Two structural consequences, each carried by its own companion:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{The Planck core.}  The CP Exclusion Rule imposes
+$\PSR_{\rm eff} \geq \lP/2$, so the metric cannot reach zero at $r=0$:
+the GR point singularity is replaced by a Planck-density core at
+$r_{\rm core} = \rS/2$ (c08 Theorem~2).  The core is the source of the
+gravitational-wave echo predictions of c09 and the modified
+(remnant-terminated) Hawking evaporation of c10.
+\item \textbf{The rotating and charged families.}  Azimuthal
+$\SSV_{\rm net}$ yields the Kerr metric (c11); adding the charge source
+yields Kerr--Newman (c12); superradiance follows from the Kerr
+construction (c13).  Lense--Thirring frame-dragging is treated in c11
+and c08 and is not repeated here.
+\end{itemize}
+
+% =====================================================================
+\section{The classical tests: results}
+\label{sec:tests}
+
+Because the recovered static metric is exactly Schwarzschild, the four
+classical tests follow by standard geodesic integration with no new
+physics and no adjustable input --- and their predicted values are
+therefore \emph{identical to those of general relativity}.  The tests
+discriminate CPP from Newtonian gravity; they do not discriminate CPP
+from GR, and this paper does not claim otherwise.  Equivalence to GR at
+these orders is the claim.
+
+The derivations (timelike and null geodesics on Eq.~\eqref{eq:iso},
+perihelion advance, deflection, round-trip delay, and static redshift)
+are carried in the dedicated tests companion registered as
+\texttt{OPEN-GR-TESTS-1}; every number in Table~\ref{tab:tests} is
+reproduced by this paper's verify script, which computes the two
+dynamical tests both in closed form and by independent numeric geodesic
+(Binet-equation) integration, agreeing to better than $0.1\%$ and
+$0.2\%$ respectively.
+
+\begin{table}[h]
+\centering
+\caption{Classical tests: CPP prediction (= GR value, since the metric
+is exactly Schwarzschild) versus observation.  Derivations in the tests
+companion (\texttt{OPEN-GR-TESTS-1}); numbers verified in
+\texttt{code/3228\_classical\_tests\_verify.py}.}
+\label{tab:tests}
+\begin{tabular}{lll}
+\toprule
+Test & CPP prediction & Observed \\
+\midrule
+Perihelion precession (Mercury) & $42.99''$/century &
+$42.98 \pm 0.04''$/century \\
+Light deflection (solar limb) & $1.75''$ &
+$1.75''$ (Eddington 1919); \\
+& & $\gamma - 1 = (-0.8\pm1.2)\times10^{-4}$ (VLBI) \\
+Shapiro delay (superior conj.) & $\sim 233\,\mu$s (Earth--Venus,
+grazing) & $\gamma - 1 = (2.1\pm2.3)\times10^{-5}$ (Cassini) \\
+Gravitational redshift & $\Delta\nu/\nu = gh/c^2 = 2.46\times10^{-15}$
+(22.5 m) & Pound--Rebka--Snider, $\sim1\%$ \\
+ & GPS net $+38.5\,\mu$s/day & GPS operational \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Three of the four (perihelion precession, Shapiro delay, and the
+energy-momentum-tensor machinery behind them) had zero prior mentions in
+the eight companions; the deflection factor of two was derived in c07.
+The tests companion closes that gap as bounded work: standard geodesic
+integration on an already-published metric, deriving all four in one
+independently citable paper.
+
+% =====================================================================
+\section{Epistemic ledger}
+\label{sec:ledger}
+
+The companions hedge locally --- c07 carries six limitation-flagged
+passages and c08 seven --- but nothing has aggregated them, so the arc's
+true standing has been invisible.  This section is that aggregate.  Each
+row is the arc's strongest honest statement of the corresponding claim.
+
+\subsection{Exact (theorem-grade within CPP's own axioms)}
+\begin{itemize}[leftmargin=2em]
+\item The static metric: Eq.~\eqref{eq:iso} is exactly isotropic
+Schwarzschild, given the PSR response \eqref{eq:psr} and the
+shell-broadcast source relation (c08 Theorem~1).
+\item The Planck core: $\PSR_{\rm eff} \ge \lP/2$ excludes the point
+singularity and fixes $r_{\rm core} = \rS/2$ (c08 Theorem~2).
+\item The classical-test values of Table~\ref{tab:tests}, conditional
+only on the exactness of the metric (standard geodesic integration
+thereafter).
+\end{itemize}
+
+\subsection{Correspondence claims (not derivations)}
+\begin{itemize}[leftmargin=2em]
+\item \textbf{The field equations.}  c07 states the CPP self-consistency
+condition is ``$\equiv$ Einstein field equations'' in the continuum
+limit; c08 ``identifies the CPP equation that \emph{plays the role of}
+Einstein's field equations,'' a nonlinear wave equation for $\Delta\SSV$
+reducing to the linearised Einstein equations in the weak field.
+Recovering the Schwarzschild, Kerr, and Kerr--Newman \emph{solutions} is
+not the same as deriving the \emph{equations} whose solutions they are:
+one can reproduce specific metrics without obtaining the general field
+equation, and a reader in general relativity will make exactly that
+distinction.  \textbf{This paper claims the solutions.  The general
+field-equation derivation --- expected to proceed from the deeper
+DI-bit / $\SSV_{\rm abs}$ / $\SSV_{\rm net}$ / DP Sea picture --- is
+registered as \texttt{OPEN-GR-FE-1} and is not attempted in V0.}
+\item \textbf{Consequences of correspondence.}  With the general
+equations underived, Birkhoff-type uniqueness statements and the CPP
+form of the energy-momentum tensor are likewise open; the corpus
+currently contains neither (0 mentions of Birkhoff, 0 of the
+energy-momentum tensor across the eight companions).  Both are folded
+into \texttt{OPEN-GR-FE-1}.
+\end{itemize}
+
+\subsection{Conditional and inherited}
+\begin{itemize}[leftmargin=2em]
+\item Everything in the arc rests on the PSR machinery whose standing is
+set by SR-1; the inheritance is stated in full in
+Section~\ref{sec:inheritance}.
+\item c09--c13 inherit c08's exactness claim; where they add mechanisms
+(azimuthal $\SSV_{\rm net}$ for rotation, the charge source for
+Kerr--Newman), the additions carry their own companion-level
+limitations, flagged locally in those papers.
+\end{itemize}
+
+% =====================================================================
+\section{What this arc inherits from SR-1 --- and what SR-1 withdrew}
+\label{sec:inheritance}
+
+GR-1 rests on the same PSR machinery as SR-1, and SF-line papers read as
+consolidations; a consolidation silent about partially withdrawn ground
+would hand a hostile reader their finding.  This subsection forecloses
+it.
+
+\textbf{Inherited and load-bearing.}
+\begin{itemize}[leftmargin=2em]
+\item The constitutive form $\PSR_{\rm eff} = \lP/(1+k\,\Delta\SSV)$,
+motivated in SR-1 as the minimal rational saturating response
+(Hooke-like at low stress, exact saturation boundary) --- a minimal
+ansatz within the rational class, \emph{not} shown unique to the
+600-cell; other saturating laws satisfy the same two conditions.
+\item The status of $k$: \emph{a normalisation convention paired with
+the $\Delta\SSV$ definition, not a derived quantity} --- any rescaling
+$k \to \alpha k$ absorbed into the $\Delta\SSV$ normalisation leaves
+every observable unchanged.  GR-1's source relation
+$k\,\Delta|\SSV| = GM/rc^2$ inherits this reading verbatim.
+\item The grounding of the strain--kinematics map at the energy level
+(W2 world-call strength, founder ruling $\alpha$, Patch 2502,
+\texttt{OPEN-SR-EPSILON} RESOLVED-$\alpha$), with
+\texttt{OPEN-SR-10}'s caveats inherited verbatim: a viability result,
+not a theorem; covariance resting on a hopping-sum proxy; leaning on C3
+and \texttt{OPEN-SR-9}.
+\end{itemize}
+
+\textbf{Withdrawn by SR-1 --- and therefore claimed nowhere here.}
+\begin{itemize}[leftmargin=2em]
+\item \emph{The prediction set of SR-1 versions through v19} was
+retracted at Patch~2474; SR-1 is rebilled as a grounding paper.  GR-1
+inherits no prediction from that set.
+\item \emph{The class-coverage theorem} (that the energy-momentum bridge
+is provably required for the whole displacement-model class) was
+withdrawn at Patch~2475: its proof rested on an erroneous hyperspherical
+cap expansion ($f^{1/2}$ published; $f^{5/2}$ correct), and the theorem
+was refuted by its own Model~3.  What survives is a three-model
+elimination (strain exponents $n \in \{1, 1, 5/2\}$ against the required
+$n = 2$), and the geometric route is closed negative-for-mechanism
+(\texttt{OPEN-SR-H1-CLASS}, K1 founder ruling, Patch 2493).
+\end{itemize}
+
+\noindent The net statement for a reader: the gravitational arc's
+exactness claims are \emph{conditional on the PSR constitutive form},
+whose SR-1 grounding is at W2 viability strength --- honest, registered,
+and inherited here without amplification.
+
+% =====================================================================
+\section{Scope boundary: local gravitation}
+\label{sec:scope}
+
+This series treats \textbf{local} gravitation: compact sources, their
+metrics, and their consequences.  There are zero FRW/Friedmann
+constructions anywhere in the eight companions, and none is implied
+here.  Cosmology is pursued separately and deliberately elsewhere in the
+programme: the axiom-level derivation of FRW/VSL homogeneity is
+registered as \texttt{OPEN-EU-1}, and the dark-energy lane runs its own
+substrate phase-transition campaign.  A gravitation series silent on
+cosmology reads as an omission; this stated boundary is discipline, not
+oversight.
+
+% =====================================================================
+\section{Open problems registered by this paper}
+\label{sec:open}
+
+\begin{itemize}[leftmargin=2em]
+\item \texttt{OPEN-GR-FE-1} --- Derive the general CPP field equations
+(and their consequences: Birkhoff-type uniqueness, the CPP
+energy-momentum tensor) from the DI-bit / $\SSV_{\rm abs}$ /
+$\SSV_{\rm net}$ / DP Sea picture, rather than identifying a
+correspondence in the continuum limit.  The single most consequential
+open item in the arc; deliberately deferred out of V0 by founder ruling.
+\item \texttt{OPEN-GR-TESTS-1} --- The classical-tests companion: full
+geodesic derivations of perihelion precession, light deflection, Shapiro
+delay, and gravitational redshift on the c08 metric, as one
+independently citable paper.  Bounded, standard work; the results it
+must reproduce are frozen in Table~\ref{tab:tests} and in this paper's
+verify script.
+\end{itemize}
+
+% =====================================================================
+\section*{Acknowledgements and provenance}
+
+Assembled from the eight-companion gravitational arc (c05, c07--c13)
+under the Session 148 founder rulings and the Patch 3225 scoping
+assessment.  The AI review panel adjudicates major findings of this
+programme; see the corpus ``How we review'' note.
+
+\begin{thebibliography}{9}
+\bibitem{c05} T.~L. Abshier, \emph{Newtonian Gravity from SSV Shell
+Broadcast} (CPP gravitational companion c05, pending re-identification
+in the GR series).
+\bibitem{c07} T.~L. Abshier, \emph{Weak-Field General Relativity from
+the Two-Component LSP Broadcast} (companion c07).
+\bibitem{c08} T.~L. Abshier, \emph{Strong-Field General Relativity and
+the CPP Field Equation} (companion c08).
+\bibitem{c09c13} T.~L. Abshier, companions c09 (gravitational-wave
+echoes), c10 (Hawking evaporation with Planck remnant), c11 (Kerr), c12
+(Kerr--Newman), c13 (superradiance).
+\bibitem{sr1} T.~L. Abshier, \emph{SR-1: Special Relativity Emergence}
+(v20), including the Patch 2474 prediction-set retraction and the Patch
+2475 class-coverage withdrawal.
+\bibitem{will} C.~M. Will, \emph{The Confrontation between General
+Relativity and Experiment}, Living Rev.\ Relativity \textbf{17}, 4
+(2014) --- source for the observational values in
+Table~\ref{tab:tests}.
+\end{thebibliography}
+
+\end{document}
