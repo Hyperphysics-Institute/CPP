@@ -160,7 +160,14 @@ def seed_from_worksheet():
 # --- Columns owned by humans and by the pipeline -------------------------
 # Order matters: carry-forward reads the LAST len(OWNED) cells of each row.
 OWNED = ["APPROVED", "CHANGE_CLASS", "RESERVED_DOI", "CONCEPT_DOI",
-         "PREPRINT_ID", "POSTED", "OSF_LINK", "PARENT", "RELATION", "NOTES"]
+         "PREPRINT_ID", "POSTED", "OSF_LINK", "PARENT", "RELATION",
+         "COMMUNITY", "NOTES"]
+
+# Default Zenodo community for the corpus. A record may belong to only ONE
+# community by the review-request route, so the community carries the
+# CORPUS-WIDE grouping and the PARENT/RELATION links carry the F.1 and SR-1
+# clusters. The two are complementary, not alternatives.
+DEFAULT_COMMUNITY = "conscious-point-physics"
 
 VALID_CHANGE = {"", "editorial", "substantive"}
 
@@ -444,6 +451,11 @@ def main():
     for r in rows:
         # A recorded PARENT always wins over an inferred one; inference only
         # fills a blank, so a founder correction is never overwritten.
+        # Never default a community onto a withheld paper: it will not be
+        # deposited, so a community assignment on its row would read as
+        # deposit intent for a paper that must never be deposited.
+        if not (r.get("COMMUNITY") or "").strip() and not r["withheld"]:
+            r["COMMUNITY"] = DEFAULT_COMMUNITY
         pi, ri, why = inferred.get(r["rel"], ("", "", ""))
         if not (r.get("PARENT") or "").strip() and pi:
             r["PARENT"], r["RELATION"] = pi, ri
@@ -486,7 +498,33 @@ def main():
     # ---- machine contract ------------------------------------------------
     manifest = {
         "generated": "regenerate with code/build_osf_queue.py; do not hand-edit",
-        "contract_version": 1,
+        "contract_version": 2,
+        "deposit_sequence": [
+            "1. RESERVE the DOI on a Zenodo draft and record it in "
+            "RESERVED_DOI immediately. A reserved DOI exists only inside "
+            "Zenodo and CANNOT be recovered if the draft is deleted.",
+            "2. WRITE the reserved DOI into the paper's own bibliography. "
+            "This is the whole point of reserving, and it is why the PDF must "
+            "not be built first.",
+            "3. BUILD the PDF from the .tex that now contains the DOI.",
+            "4. UPLOAD the PDF to the draft that holds that reserved DOI. "
+            "Never to a new draft -- a new draft means a different DOI, and "
+            "the PDF's own bibliography would then be wrong.",
+            "5. CREATE the community review request on the DRAFT, before "
+            "publishing. Community membership is no longer a metadata field; "
+            "under InvenioRDM it is a request/review flow, and only ONE "
+            "community per record is permitted.",
+            "6. PUBLISH. This mints the version DOI and, on first publication, "
+            "the concept DOI.",
+            "7. ACCEPT the community request as curator, then record "
+            "PREPRINT_ID, POSTED, CONCEPT_DOI.",
+            "8. SET the reciprocal relation on the PARENT record. Zenodo "
+            "relations are NOT automatically reciprocal: the child's "
+            "isSupplementTo does not create the parent's isSupplementedBy. "
+            "See each parent's 'children' list.",
+            "NEVER delete a draft holding a reserved DOI that has already "
+            "been written into a built PDF.",
+        ],
         "counts": {"total": len(rows), "withheld": len(held),
                    "eligible_now": len(elig)},
         "never_deposit": sorted(r["rel"] for r in held),
@@ -554,6 +592,20 @@ def main():
         A(f"> **{len(bad)} row(s) have an invalid `CHANGE_CLASS`.** The "
           "pipeline treats these as not eligible. Use `substantive` or "
           "`editorial`.")
+    A("")
+    A("---")
+    A("")
+    A("## Deposit sequence — the order is not optional")
+    A("")
+    A("Each step exists because doing it later breaks something that cannot "
+      "be repaired afterwards. The same list is in "
+      "`osf_deposit_manifest.json` under `deposit_sequence`, so the pipeline "
+      "and the operator read identical instructions.")
+    A("")
+    for step in manifest["deposit_sequence"]:
+        # Numbered steps carry their own ordinal; anything else is a standing
+        # warning, not a step, and must not be given a step number.
+        A(step if step[0].isdigit() else f"\n**{step}**")
     A("")
     A("---")
     A("")
