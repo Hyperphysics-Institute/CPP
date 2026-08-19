@@ -1,0 +1,709 @@
+% =====================================================================
+% GR-1i: The Classical Tests of Gravitation in Conscious Point Physics
+% Companion i to GR-1 (Local Gravitation from SSV Shell Broadcast).
+% Discharges OPEN-GR-TESTS-1: full geodesic derivations of the four
+% classical tests on the GR-1c isotropic Schwarzschild metric.
+% Version history: documentation_suite/changelog-GR-1i.md
+% =====================================================================
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+\geometry{letterpaper, margin=1in}
+
+% ---- corpus macros (matching GR-1 / GR-1c conventions) ----
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\mP}{m_P}
+\newcommand{\EP}{E_P}
+\newcommand{\SSV}{\text{SSV}}
+\newcommand{\PSR}{\text{PSR}}
+\newcommand{\LSP}{\text{LSP}}
+\newcommand{\rS}{r_S}
+\newcommand{\riso}{r_{\mathrm{iso}}}
+\newcommand{\vrho}{\varrho}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{GR-1i: The Classical Tests of Gravitation\\
+\large Perihelion precession, light deflection, Shapiro delay, and
+gravitational redshift as geodesic consequences of the CPP
+shell-broadcast metric\\
+\normalsize Companion~i to GR-1 --- Conscious Point Physics gravitation
+series --- Version 0}
+\author{Thomas Lee Abshier, ND\\ Hyperphysics Institute}
+\date{19 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+GR-1c established --- conditional on the PSR constitutive form, whose
+SR-1 grounding stands at W2 viability strength (GR-1 \S7) --- that the
+CPP shell-broadcast mechanism yields \emph{exactly} the Schwarzschild
+metric in isotropic coordinates.  This companion works out the standard
+consequences: the full geodesic derivations of the four classical tests
+of gravitation on that metric.  We derive the timelike orbit equation
+and the perihelion advance ($42.99''$/century for Mercury), the null
+geodesic and the light deflection at the solar limb ($1.75''$), the
+round-trip radar excess (Shapiro) delay at superior conjunction
+($\sim\!233\,\mu$s, Earth--Venus, grazing), and the static
+gravitational redshift ($\Delta\nu/\nu = gh/c^2 = 2.46\times10^{-15}$
+over 22.5\,m; GPS net $+38.5\,\mu$s/day including the special-relativistic
+term).  The claim discipline is stated once and holds throughout:
+because the metric is exactly Schwarzschild, every value is
+\emph{identical to the GR prediction by construction}.  The classical
+tests therefore discriminate CPP from Newtonian gravity --- decisively,
+at the factor of two in deflection and at the entirety of the
+perihelion and Shapiro signals --- but they do not, and cannot,
+discriminate CPP from general relativity.  This paper adds no new
+physics and no adjustable input; it is entry-criterion compliance,
+written so that a reader asking ``does this theory pass the classical
+tests?'' finds the derivations in one independently citable place.
+Every number is machine-verified in the series verify script
+(\texttt{series\_gravitation/code/3228\_classical\_tests\_verify.py},
+8/8~PASS), which computes the two dynamical tests both in closed form
+and by independent numeric Binet-equation geodesic integration.
+\end{abstract}
+
+\noindent\textbf{Keywords:} Conscious Point Physics; classical tests of
+general relativity; perihelion precession; light deflection; Shapiro
+delay; gravitational redshift; Schwarzschild metric; isotropic
+coordinates; geodesic integration; Space Stress Vector.
+
+% =====================================================================
+\section*{Plain Language Summary}
+% =====================================================================
+Any proposed theory of gravity faces four famous entry exams.  Mercury's
+orbit slowly swivels --- its closest-approach point creeps forward by 43
+seconds of arc per century beyond what the other planets' tugs explain.
+Starlight grazing the Sun bends by 1.75 seconds of arc --- twice the
+value a naive Newtonian light-corpuscle calculation gives.  Radar
+signals skimming the Sun on their way to Venus and back arrive about a
+quarter of a millisecond late.  And clocks run slower the deeper they
+sit in a gravitational well --- measurably so over a 22-metre tower, and
+operationally so for every GPS satellite, whose clocks must be corrected
+by 38 microseconds per day.
+
+The parent paper GR-1 showed that Conscious Point Physics, via one
+substrate response formula, reproduces the exact geometry general
+relativity assigns to a static mass.  This companion takes the exam:
+starting from that geometry and nothing else, it derives all four
+effects step by step, and gets all four numbers.  Because the geometry
+is \emph{exactly} the one general relativity uses, the answers agree
+with general relativity exactly --- the honest statement, made
+throughout, is that these tests separate CPP from Newton, not from
+Einstein.  Passing them is a requirement, not a triumph; this paper
+exists so that the requirement is met in writing.
+
+\raggedright
+\tableofcontents
+\newpage
+
+% =====================================================================
+% SECTION 1: Introduction
+% =====================================================================
+\section{Introduction}
+\label{sec:intro}
+
+GR-1, the series parent, carries the predicted-versus-observed summary
+of the four classical tests as a results-only table (GR-1
+Table~1) and defers the derivations, by founder ruling, to one
+dedicated companion: this paper.  The gap it closes is real ---
+across the eight prior companions GR-1a--GR-1h, perihelion precession
+and Shapiro delay had zero mentions and the word ``geodesic'' appeared
+in one paper of eight --- and the closure is deliberately bounded:
+standard geodesic integration on an already-published metric, with
+every target number frozen in GR-1 Table~1 and machine-checked in the
+series verify script before this paper was written.  The paper derives
+what the script checks.
+
+\subsection{Open Problems Addressed}
+This paper discharges \texttt{OPEN-GR-TESTS-1} (the classical-tests
+companion; registered Patch 3229, \texttt{frontier\_sectors/GR.md}).
+It does not touch \texttt{OPEN-GR-FE-1} (derivation of the general CPP
+field equations), which remains the deep open item of the arc; every
+result here is a consequence of the recovered \emph{solution}, not of
+any claimed field equation.
+
+\subsection{Claim discipline (frozen)}
+\label{sec:claims}
+Three statements govern everything below.
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{Conditionality.}  All results are conditional on the PSR
+constitutive form $\PSR_{\rm eff} = \lP/(1 + k\,\Delta|\SSV|)$, whose
+SR-1 grounding stands at W2 viability strength.  The inheritance is
+stated in full in GR-1 \S7 and is not upgraded here.
+\item \textbf{GR-identity by construction.}  Given that form, the
+recovered metric is exactly Schwarzschild (GR-1c Theorem~1; identity
+with the standard form verified at machine precision,
+$3.3\times10^{-16}$).  Every classical-test value below is therefore
+the GR value \emph{by construction}.  Nothing in this paper is a novel
+prediction relative to GR.
+\item \textbf{What the tests discriminate.}  The tests discriminate
+CPP from Newtonian gravity (which fails deflection by a factor of two
+and predicts no perihelion advance and no Shapiro delay at these
+orders); they do not discriminate CPP from GR.  Frame-dragging
+(Lense--Thirring) is treated in GR-1f and GR-1c and is not repeated
+here.
+\end{enumerate}
+
+% =====================================================================
+% SECTION 2: The metric
+% =====================================================================
+\section{The metric and its standard form}
+\label{sec:metric}
+
+The object under test is the GR-1c static solution.  With
+$\vrho = GM/(2c^2\riso)$, the shell-broadcast source relation
+$k\,\Delta|\SSV| = GM/rc^2$ and the PSR response yield
+\begin{equation}
+ds^2 \;=\; -\left(\frac{1-\vrho}{1+\vrho}\right)^{\!2} c^2\,dt^2
+\;+\; (1+\vrho)^4 \left( d\riso^2 + \riso^2\, d\Omega^2 \right),
+\label{eq:iso}
+\end{equation}
+exactly the Schwarzschild metric in isotropic coordinates.  Under the
+exact coordinate transformation
+\begin{equation}
+r \;=\; \riso\,(1+\vrho)^2,
+\label{eq:transform}
+\end{equation}
+Eq.~\eqref{eq:iso} takes the standard Schwarzschild form
+\begin{equation}
+ds^2 \;=\; -\Bigl(1 - \frac{\rS}{r}\Bigr) c^2\,dt^2
++ \Bigl(1 - \frac{\rS}{r}\Bigr)^{-1} dr^2 + r^2\,d\Omega^2,
+\qquad \rS = \frac{2GM}{c^2}.
+\label{eq:std}
+\end{equation}
+The identity of \eqref{eq:iso} with \eqref{eq:std} under
+\eqref{eq:transform} is verified numerically at machine precision
+(maximum relative $g_{tt}$ mismatch $3.3\times10^{-16}$ over five radii
+spanning $10^9$\,m to 10\,AU; verify check~0).  Because the classical
+tests are coordinate-invariant observables (proper-time ratios, asymptotic
+deflection angles, round-trip proper-time delays measured by a distant
+static clock), we are free to derive them in the standard coordinates
+\eqref{eq:std}, where the geodesic equations take their most familiar
+form; the results apply verbatim to \eqref{eq:iso}.  Section
+\ref{sec:mechanism} returns to the isotropic form, where the CPP
+mechanism is most transparent.
+
+% =====================================================================
+% SECTION 3: Geodesics
+% =====================================================================
+\section{Geodesics of the static metric}
+\label{sec:geodesics}
+
+Motion in \eqref{eq:std} conserves two quantities.  For an affinely
+parametrized trajectory $x^\mu(\lambda)$ confined (without loss of
+generality, by spherical symmetry) to the equatorial plane
+$\theta = \pi/2$,
+\begin{equation}
+\tilde E \;=\; \Bigl(1-\frac{\rS}{r}\Bigr) c^2\,\frac{dt}{d\lambda},
+\qquad
+h \;=\; r^2\,\frac{d\varphi}{d\lambda}
+\label{eq:conserved}
+\end{equation}
+(specific energy and specific angular momentum).  Substituting into
+$g_{\mu\nu}\dot x^\mu \dot x^\nu = -\epsilon c^2$
+($\epsilon = 1$ timelike with $\lambda = \tau$; $\epsilon = 0$ null)
+gives the radial equation; with $u \equiv 1/r$ and
+$'\equiv d/d\varphi$,
+\begin{equation}
+u'^2 \;=\; \frac{\tilde E^2}{c^2 h^2} - \bigl(\epsilon\,\tfrac{c^2}{h^2}
++ u^2\bigr)\bigl(1 - \rS u\bigr).
+\end{equation}
+Differentiating with respect to $\varphi$ yields the Binet equations
+\begin{align}
+\textbf{timelike:}\quad & u'' + u \;=\; \frac{GM}{h^2}
++ \frac{3GM}{c^2}\,u^2,
+\label{eq:binet-m}\\[2pt]
+\textbf{null:}\quad & u'' + u \;=\; \frac{3GM}{c^2}\,u^2.
+\label{eq:binet-p}
+\end{align}
+The Newtonian limits are the same equations without the
+$3GM u^2/c^2$ term: a closed Keplerian ellipse in the timelike case, a
+straight line ($u = \sin\varphi/b$) in the null case.  Every classical
+dynamical effect below is the work of that single relativistic term ---
+which, in CPP language, is the first place the \emph{unexpanded}
+nonlinearity of the PSR response becomes observable (GR-1 \S3).
+
+% =====================================================================
+% SECTION 4: Perihelion precession
+% =====================================================================
+\section{Test I: Perihelion precession of Mercury}
+\label{sec:perihelion}
+
+\subsection{Perturbative solution}
+Write \eqref{eq:binet-m} as $u'' + u = A + B u^2$ with $A = GM/h^2$,
+$B = 3GM/c^2$, and treat $B$ as small (for Mercury,
+$B A \sim 10^{-7}$).  The zeroth-order solution is the Kepler ellipse
+$u_0 = A(1 + e\cos\varphi)$.  Inserting $u_0$ into the perturbation and
+retaining the resonant (secular) term $2A^2 B\,e\cos\varphi$ --- the
+constant and $\cos 2\varphi$ pieces produce only bounded,
+non-accumulating corrections --- gives
+\begin{equation}
+u \;\simeq\; A\bigl[1 + e\cos\bigl((1-\delta)\varphi\bigr)\bigr],
+\qquad
+\delta \;=\; A B \;=\; \frac{3\,(GM)^2}{c^2 h^2}
+\;=\; \frac{3GM}{c^2\,a(1-e^2)},
+\end{equation}
+using $h^2 = GM\,a(1-e^2)$ for an orbit of semi-major axis $a$ and
+eccentricity $e$.  Perihelion recurs when $(1-\delta)\varphi$ advances
+by $2\pi$, i.e.\ after $\Delta\varphi = 2\pi/(1-\delta) \simeq 2\pi(1+\delta)$:
+the orbit is an almost-closed ellipse whose apsidal line advances by
+\begin{equation}
+\Delta\varphi_{\rm prec} \;=\; \frac{6\pi GM}{a(1-e^2)\,c^2}
+\quad\text{per orbit.}
+\label{eq:prec}
+\end{equation}
+
+\subsection{Mercury}
+With $a = 5.7909050\times10^{10}$\,m, $e = 0.205630$, orbital period
+$87.9691$\,d, and $GM_\odot = 1.3275\times10^{20}$\,m$^3$\,s$^{-2}$,
+Eq.~\eqref{eq:prec} gives
+$\Delta\varphi_{\rm prec} = 5.019\times10^{-7}$\,rad per orbit.  Mercury
+completes $36525/87.9691 = 415.2$ orbits per Julian century, so
+\begin{equation}
+\Delta\varphi_{\rm prec} \;=\; 42.99''\ \text{per century},
+\end{equation}
+against the observed anomalous advance $42.98 \pm 0.04''$/century
+(the residual after planetary perturbations and solar oblateness are
+removed).
+
+\subsection{Independent numeric cross-check}
+The verify script integrates \eqref{eq:binet-m} directly (RK4,
+$d\varphi = 2\times10^{-5}$, 30 orbits, $\sim\!10^7$ steps), locates
+perihelion passages as zero crossings of $u'$, and extracts the advance
+by a telescoping estimator over 29 orbit intervals.  Numeric and
+closed-form values agree to four decimal places:
+$42.9917$ vs $42.9917$ arcsec/century.  Two numerical traps, found on
+the script's first run and documented for any reimplementer, are
+recorded in Section~\ref{sec:numerics}.
+
+% =====================================================================
+% SECTION 5: Light deflection
+% =====================================================================
+\section{Test II: Light deflection at the solar limb}
+\label{sec:deflection}
+
+\subsection{Perturbative solution}
+For a photon with impact parameter $b$, the unperturbed solution of
+\eqref{eq:binet-p} is the straight line $u_0 = \sin\varphi/b$
+(incoming asymptote $\varphi = 0$, outgoing $\varphi = \pi$).  Writing
+$u = u_0 + u_1$ and solving
+$u_1'' + u_1 = (3GM/c^2)\sin^2\!\varphi/b^2$ gives
+\begin{equation}
+u_1 \;=\; \frac{3GM}{2c^2 b^2}\Bigl(1 + \tfrac{1}{3}\cos 2\varphi\Bigr)
+\;=\; \frac{GM}{c^2 b^2}\bigl(1 + \cos^2\!\varphi\bigr)
+\;\longrightarrow\;
+\frac{2GM}{c^2 b^2}\ \text{at each asymptote.}
+\end{equation}
+Setting $u = 0$ at the outgoing asymptote $\varphi = \pi + \alpha_{1/2}$
+and linearizing gives $\alpha_{1/2} = 2GM/(c^2 b)$ per asymptote, hence a
+total deflection
+\begin{equation}
+\alpha \;=\; \frac{4GM}{c^2 b}.
+\label{eq:defl}
+\end{equation}
+At the solar limb, $b = R_\odot = 6.957\times10^{8}$\,m:
+\begin{equation}
+\alpha \;=\; 1.75''
+\qquad (1.7516''\ \text{in full precision}),
+\end{equation}
+confirmed by direct numeric integration of \eqref{eq:binet-p} to
+$1.7517''$ (0.006\% agreement).  Observationally: the 1919 Eddington
+expeditions at $\sim\!30\%$ precision, and modern VLBI at
+$\gamma - 1 = (-0.8 \pm 1.2)\times10^{-4}$, i.e.\ the coefficient of
+\eqref{eq:defl} confirmed to $10^{-4}$ relative precision.
+
+\subsection{The factor of two}
+\label{sec:factor2}
+Half of \eqref{eq:defl} comes from time curvature ($g_{tt}$) and half
+from spatial curvature ($g_{ij}$); a purely Newtonian (corpuscular or
+time-curvature-only) treatment yields $2GM/(c^2 b) = 0.875''$.  In CPP
+this split is structural, not accidental: the scalar broadcast
+$|\SSV|_{\rm abs}$ sources $g_{tt}$ only, and GR-1b's extension of the
+LSP broadcast to carry the net vector $\mathbf{\SSV}_{\rm net}$ ---
+which sources $g_{ij}$ --- was forced by exactly this observable
+(GR-1 \S4).  The classical deflection test is thus the single sharpest
+discriminant in this paper: it separates CPP-with-two-component-LSP
+from Newton \emph{and} from any scalar-broadcast-only variant of CPP
+itself.
+
+% =====================================================================
+% SECTION 6: Shapiro delay
+% =====================================================================
+\section{Test III: Shapiro (radar echo) delay}
+\label{sec:shapiro}
+
+For a radar pulse traveling between coordinate radii $r_1$ and $r_2$
+past the Sun with closest approach $b$, the coordinate time along the
+null path of \eqref{eq:std} exceeds the flat-space value.  Integrating
+$dt/dr$ along the null geodesic to first order in $\rS$,
+\begin{equation}
+\Delta t_{1\to2} \;=\; \frac{2GM}{c^3}
+\ln\!\frac{4 r_1 r_2}{b^2}
+\qquad \text{(leading logarithm, one way, } r_{1,2} \gg b\text{)},
+\end{equation}
+so the round-trip excess measured by a clock at Earth is
+\begin{equation}
+\Delta t \;=\; \frac{4GM}{c^3}\,\ln\!\frac{4\,r_E\,r_V}{b^2}.
+\label{eq:shapiro}
+\end{equation}
+At Earth--Venus superior conjunction with a grazing ray
+($r_E = 1$\,AU, $r_V = 1.0821\times10^{11}$\,m, $b = R_\odot$),
+\begin{equation}
+\Delta t \;=\; 232.6\,\mu\text{s} \;\approx\; 233\,\mu\text{s},
+\end{equation}
+the classic $\sim\!200\,\mu$s-class signal first measured by Shapiro's
+group in 1968 at the few-percent level.  Sub-leading (non-logarithmic)
+terms of order $GM/c^3$ contribute at the percent level and are
+absorbed, in modern practice, into the parametrized coefficient
+$\gamma$: the Cassini conjunction experiment constrains
+$\gamma - 1 = (2.1 \pm 2.3)\times10^{-5}$.  Since the metric here is
+exactly Schwarzschild, CPP has $\gamma = 1$ identically, and
+\eqref{eq:shapiro} at the quoted leading-log precision is the honest
+statement of this paper's claim.
+
+% =====================================================================
+% SECTION 7: Gravitational redshift
+% =====================================================================
+\section{Test IV: Gravitational redshift and clock rates}
+\label{sec:redshift}
+
+\subsection{Static clock rates}
+A clock at rest at radius $r$ in \eqref{eq:std} accumulates proper time
+$d\tau = \sqrt{1 - \rS/r}\;dt$.  For emitter at $r_e$ and receiver at
+$r_r$, the received-to-emitted frequency ratio is
+\begin{equation}
+\frac{\nu_r}{\nu_e}
+\;=\; \sqrt{\frac{1 - \rS/r_e}{1 - \rS/r_r}}\,,
+\qquad
+\frac{\Delta\nu}{\nu}
+\;\simeq\; \frac{GM}{c^2}\Bigl(\frac{1}{r_e} - \frac{1}{r_r}\Bigr)
+\;\;\text{(weak field)}.
+\label{eq:redshift}
+\end{equation}
+Over a small height difference $h$ near the Earth's surface this is the
+uniform-field formula $\Delta\nu/\nu = gh/c^2$.  For the
+Pound--Rebka--Snider 22.5\,m tower,
+\begin{equation}
+\frac{\Delta\nu}{\nu} \;=\; \frac{(9.80665)(22.5)}{c^2}
+\;=\; 2.46\times10^{-15},
+\end{equation}
+measured to $\sim\!1\%$.  This test probes $g_{tt}$ alone --- in CPP
+terms, the scalar $|\SSV|_{\rm abs}$ leg of the broadcast --- and is
+the one classical test already implicit in the Newtonian-plus-clock-rate
+layer of GR-1a.
+
+\subsection{GPS: the operational test}
+A GPS satellite ($r = R_E + 20{,}200$\,km) combines the gravitational
+blueshift of \eqref{eq:redshift} with the special-relativistic time
+dilation of its orbital speed $v = \sqrt{GM_E/r}$ (SR-1 physics,
+inherited):
+\begin{align}
+\text{gravitational:}\quad
+&+\frac{GM_E}{c^2}\Bigl(\frac{1}{R_E} - \frac{1}{r}\Bigr)
+\times 86400\,\text{s} \;=\; +45.7\,\mu\text{s/day},\\
+\text{special-relativistic:}\quad
+&-\frac{v^2}{2c^2}\times 86400\,\text{s} \;=\; -7.2\,\mu\text{s/day},\\[2pt]
+\text{net:}\quad &+38.5\,\mu\text{s/day}.
+\end{align}
+Uncorrected, this offset would accumulate a ranging error of
+$\sim\!11$\,km/day; the correction is engineered into the satellite
+clocks, making GPS a continuously operating confirmation of both terms.
+
+% =====================================================================
+% SECTION 8: Summary table
+% =====================================================================
+\section{Summary: predicted versus observed}
+\label{sec:table}
+
+Table~\ref{tab:tests} reproduces GR-1 Table~1; every number traces to
+the derivations above and to the verify script.
+
+\begin{table}[h]
+\centering
+\caption{Classical tests: CPP prediction (= GR value, since the metric
+is exactly Schwarzschild) versus observation.  All values verified in
+\texttt{series\_gravitation/code/3228\_classical\_tests\_verify.py}
+(8/8 PASS).}
+\label{tab:tests}
+\begin{tabular}{lll}
+\toprule
+Test & CPP prediction & Observed \\
+\midrule
+Perihelion precession (Mercury) & $42.99''$/century &
+$42.98 \pm 0.04''$/century \\
+Light deflection (solar limb) & $1.75''$ &
+$1.75''$ (Eddington 1919); \\
+& & $\gamma - 1 = (-0.8\pm1.2)\times10^{-4}$ (VLBI) \\
+Shapiro delay (superior conj.) & $\sim 233\,\mu$s (Earth--Venus,
+grazing) & $\gamma - 1 = (2.1\pm2.3)\times10^{-5}$ (Cassini) \\
+Gravitational redshift & $\Delta\nu/\nu = gh/c^2 = 2.46\times10^{-15}$
+(22.5 m) & Pound--Rebka--Snider, $\sim1\%$ \\
+ & GPS net $+38.5\,\mu$s/day & GPS operational \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The Newtonian column, were it added, would read: $0''$ (no relativistic
+advance), $0.875''$ (half value), $0\,\mu$s (no coordinate-speed
+retardation), and --- with clock rates grafted on via the equivalence of
+potential and frequency shift --- the same redshift.  The discriminating
+power of the table is entirely against that column.
+
+% =====================================================================
+% SECTION 9: Numerical verification and the two traps
+% =====================================================================
+\section{Numerical verification}
+\label{sec:numerics}
+
+The series verify script
+(\texttt{series\_gravitation/code/3228\_classical\_tests\_verify.py})
+performs, with no free parameters and no CPP-specific inputs beyond
+``the metric is exactly Schwarzschild'': (0) the machine-precision
+identity of \eqref{eq:iso} with \eqref{eq:std} under
+\eqref{eq:transform}; (1) RK4 integration of \eqref{eq:binet-m} over 30
+Mercury orbits, agreeing with \eqref{eq:prec} to $0.1\%$ (in practice,
+four decimal places); (2) RK4 integration of \eqref{eq:binet-p},
+agreeing with \eqref{eq:defl} to $0.006\%$; (3) evaluation of
+\eqref{eq:shapiro}; (4) the Pound--Rebka and GPS numbers.  Result:
+8/8 PASS.
+
+Two numerical traps were found on the script's first run and are
+documented here because either one silently corrupts the result at a
+level large compared to the signal
+(\texttt{series\_gravitation/reasoning/3228.md}):
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{$\varphi$-accumulation drift.}  The integration angle
+must be computed as $i\cdot d\varphi$ from an integer step counter.
+Naive floating-point accumulation (\texttt{phi += dphi}) over
+$\sim\!10^7$ steps injects $\sim\!10^{-6}$\,rad of rounding drift ---
+percent-level against a perihelion signal of
+$5\times10^{-7}$\,rad/orbit.
+\item \textbf{Crossing overshoot.}  Zero crossings (perihelion
+passages; the outgoing photon asymptote) must be located by linear
+interpolation between bracketing steps.  Taking the first
+post-crossing grid point overshoots by up to $d\varphi$ ---
+10\%-level against a deflection of $8.5\times10^{-6}$\,rad.
+\end{enumerate}
+
+% =====================================================================
+% SECTION 10: CPP physical mechanism
+% =====================================================================
+\section{CPP Physical Mechanism}
+\label{sec:mechanism}
+
+What is physically happening, in the substrate picture, during each
+test?  The isotropic form \eqref{eq:iso} is the natural frame for the
+answer, because in isotropic coordinates the spatial metric is
+conformally flat and the two broadcast components appear separately:
+$g_{tt} = -[(1-\vrho)/(1+\vrho)]^2$ carries the scalar
+($|\SSV|_{\rm abs}$) content, and the conformal factor $(1+\vrho)^4$
+carries the vector ($\mathbf{\SSV}_{\rm net}$) content.
+
+\textbf{The medium.}  The source mass's polarization energy loads the
+Dipole Sea with compressive stress, broadcast outward as shells of
+$\LSP$ content.  The local response is the PSR shrinkage
+$\PSR_{\rm eff} = \lP/(1 + k\,\Delta|\SSV|)$: Planck spheres nearer
+the mass are smaller, so more processing steps fit per unit distance
+--- the Sea is effectively \emph{denser} there.  Clocks (bound ZBW
+cycles) tick slower in the denser region; light, which advances one
+Planck sphere per Moment, has a lower coordinate speed there.  To first
+order the coordinate light speed from \eqref{eq:iso} is
+$c(r) \simeq c\,(1 - 2GM/c^2 r)$: the gravitating Sea behaves as a
+graded-index medium with $n(r) \simeq 1 + 2GM/c^2 r$.
+
+\textbf{The four tests, mechanistically.}
+\begin{itemize}[leftmargin=2em]
+\item \emph{Redshift} is the clock-rate gradient directly: the same
+oscillator runs slower deep in the stressed Sea, so its emitted
+frequency arrives low at a shallower receiver.  Pure scalar
+($|\SSV|_{\rm abs}$) physics.
+\item \emph{Light deflection} is refraction in the graded-index Sea:
+wavefronts advance slower on the sun-side, turning the ray.  Exactly
+half of $n - 1$ comes from the slowed clock rate (scalar) and half from
+the compressed spatial lattice (vector); a scalar-only Sea would bend
+light half as much (Section~\ref{sec:factor2}).
+\item \emph{Shapiro delay} is the same slowed propagation integrated
+along the path: the pulse spends extra coordinate time in the dense
+region near the Sun, and a distant clock registers the accumulated
+lateness.
+\item \emph{Perihelion precession} is the orbit-scale signature of the
+\emph{unexpanded} PSR nonlinearity: the effective potential acquires
+the $\propto u^2$ correction of \eqref{eq:binet-m}, the apsides no
+longer close, and the ellipse swivels.  Of the four tests it is the
+only one sensitive beyond first order in $\vrho$ --- the first
+observable to see that the PSR response is a full constitutive law
+rather than a linearization.
+\end{itemize}
+
+\subsection{CP/GP Signature at This Scale}
+\label{sec:signature}
+
+\textbf{Load-bearing structure.}  The derivations rest on: the PSR
+constitutive form (the arc's single nonlinear input, GR-1 Eq.~2;
+conditional at W2 strength per the SR-1 inheritance), the
+shell-broadcast source relation $k\,\Delta|\SSV| = GM/rc^2$ (exact,
+GR-1a), and the two-component LSP broadcast (GR-1b), which supplies the
+spatial half of the deflection and delay.  No axiom-level input enters
+beyond what GR-1 already invokes; this paper adds only standard
+geodesic mathematics.
+
+\textbf{Visible versus smoothed discreteness.}  At solar-system scales
+the lattice discreteness is entirely smoothed: the expansion parameter
+$(\lP/r)^2$ is $\sim\!10^{-90}$ at Mercury's orbit, and the continuum
+geodesic equations are exact to that accuracy.  Nothing in the four
+tests can see a Planck sphere.  What remains visible is the
+\emph{functional form} of the substrate response: the specific
+$u^2$ correction in \eqref{eq:binet-m}, and the equal scalar/vector
+split in the deflection, are fingerprints of the PSR formula and the
+two-component broadcast respectively --- structure, not granularity.
+
+\textbf{Macroscopic shadow.}  The classical tests are the macroscopic
+shadow of the Dipole Sea's stress-response gradient: what conventional
+physics describes as ``curved spacetime'' near a mass is, in CPP, the
+smoothed manifestation of position-dependent Planck-sphere shrinkage
+and directional Sea compression.  The factor of two in deflection is
+the shadow of the broadcast's two-component structure.
+
+% =====================================================================
+% SECTION 11: Mapping to conventional physics
+% =====================================================================
+\section{CPP-to-Conventional-Physics Mapping}
+\label{sec:mapping}
+
+\begin{table}[h]
+\centering
+\caption{Structural correspondence for the classical tests.}
+\label{tab:mapping}
+\begin{tabular}{p{0.44\textwidth}p{0.48\textwidth}}
+\toprule
+CPP mechanistic element & Conventional description \\
+\midrule
+PSR shrinkage $\PSR_{\rm eff} = \lP/(1+k\,\Delta|\SSV|)$ &
+Metric functions of the Schwarzschild solution \\
+Scalar broadcast $|\SSV|_{\rm abs}$ (clock-rate gradient) &
+$g_{tt}$; gravitational time dilation / redshift \\
+Vector broadcast $\mathbf{\SSV}_{\rm net}$ (Sea compression) &
+$g_{ij}$; spatial curvature; the $\gamma$-dependent half of
+deflection and delay \\
+Graded-index Sea, $n(r) \simeq 1 + 2GM/c^2 r$ &
+Coordinate light speed in isotropic coordinates \\
+Unexpanded PSR nonlinearity at orbital scale &
+The $3GM u^2/c^2$ term of the relativistic Binet equation \\
+Bound ZBW cycle ticking in the stressed Sea &
+Ideal clock measuring proper time $d\tau = \sqrt{-g_{tt}}\,dt$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The correspondence is structural: CPP operates beneath the metric
+description, and the tests confirm the smoothed (metric-level) output
+of the mechanism, not the mechanism itself.  Any metric theory
+producing exactly Schwarzschild produces this table's right column;
+the left column is what CPP adds --- and what \texttt{OPEN-GR-FE-1}
+must eventually ground in a derived field equation.
+
+% =====================================================================
+% SECTION 12: Conclusion
+% =====================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+The four classical tests of gravitation follow from the CPP
+shell-broadcast metric by standard geodesic integration, with no new
+physics and no adjustable input, at values identical to general
+relativity's by construction: $42.99''$/century, $1.75''$,
+$\sim\!233\,\mu$s, and $gh/c^2$ with its GPS twin $+38.5\,\mu$s/day.
+The entry criterion is met, in writing, in one citable place.  The
+tests separate CPP from Newton --- completely --- and from
+scalar-broadcast-only variants of CPP itself (via the deflection factor
+of two); they do not separate CPP from GR, and the arc's genuinely
+discriminating predictions remain where GR-1 locates them: the Planck
+core and its echo/remnant consequences (GR-1d, GR-1e), which modify GR
+where the classical tests cannot look.
+
+\subsection{Swarm-Validation Contribution}
+This paper mints \textbf{no new zero-parameter predictions}: by the
+frozen claim discipline, its values are GR-identical consequences of an
+already-published solution, and counting them as independent
+correspondences would double-count GR-1c's exactness result.  Its
+contribution to the swarm is qualitative --- entry-criterion
+compliance: the programme's gravitational sector now passes, with
+derivations on record, the four tests any gravitational theory must
+pass before its distinctive predictions (the GR-1d/GR-1e echo and
+remnant signatures, which \emph{are} counted in \texttt{predictions.md})
+merit attention.
+
+\subsection{Problem Status After This Paper}
+\begin{itemize}[leftmargin=2em]
+\item \texttt{OPEN-GR-TESTS-1}: OPEN $\rightarrow$ DISCHARGED at V0
+(derivations complete; targets frozen in GR-1 Table~1 reproduced;
+verify 8/8).  Final discharge at panel review / ship per the standard
+cycle.
+\item \texttt{OPEN-GR-FE-1}: unchanged (OPEN).  Nothing here bears on
+the field-equation derivation.
+\end{itemize}
+
+\section*{Acknowledgements}
+Derivations, drafting, and verification by the Anthropic Claude worker
+under the CPP delegation protocol (PD-006), building on the GR-1c
+solution and the Patch 3228 verify script.  The scope ruling (one
+bounded tests companion; frozen targets; frozen claim discipline) is
+the founder's (Session 148--149).
+
+\begin{thebibliography}{9}
+
+\bibitem{gr1} T.~L. Abshier, \emph{GR-1: Local Gravitation from SSV
+Shell Broadcast}, CPP gravitation series, V0.2 (2026).  Parent paper;
+Table~1 and the epistemic ledger govern this companion's claims.
+
+\bibitem{gr1c} T.~L. Abshier, \emph{GR-1c: Strong-Field GR}
+(formerly c08), CPP gravitation series (2026).  Theorem~1: the exact
+isotropic Schwarzschild solution.
+
+\bibitem{gr1b} T.~L. Abshier, \emph{GR-1b: Weak-Field GR}
+(formerly c07), CPP gravitation series (2026).  The two-component LSP
+broadcast and the deflection factor of two.
+
+\bibitem{eddington} F.~W. Dyson, A.~S. Eddington, C.~Davidson,
+``A Determination of the Deflection of Light by the Sun's
+Gravitational Field,'' \emph{Phil. Trans. R. Soc. A} \textbf{220},
+291--333 (1920).
+
+\bibitem{shapiro64} I.~I. Shapiro, ``Fourth Test of General
+Relativity,'' \emph{Phys. Rev. Lett.} \textbf{13}, 789--791 (1964);
+I.~I. Shapiro \emph{et al.}, ``Fourth Test of General Relativity:
+Preliminary Results,'' \emph{Phys. Rev. Lett.} \textbf{20}, 1265--1269
+(1968).
+
+\bibitem{poundrebka} R.~V. Pound and G.~A. Rebka,
+``Apparent Weight of Photons,'' \emph{Phys. Rev. Lett.} \textbf{4},
+337--341 (1960); R.~V. Pound and J.~L. Snider, \emph{Phys. Rev.}
+\textbf{140}, B788 (1965).
+
+\bibitem{cassini} B.~Bertotti, L.~Iess, P.~Tortora, ``A test of
+general relativity using radio links with the Cassini spacecraft,''
+\emph{Nature} \textbf{425}, 374--376 (2003).
+
+\bibitem{vlbi} D.~E. Lebach \emph{et al.}, ``Measurement of the Solar
+Gravitational Deflection of Radio Waves Using VLBI,''
+\emph{Phys. Rev. Lett.} \textbf{75}, 1439 (1995); S.~B. Lambert and
+C.~Le Poncin-Lafitte, \emph{Astron. Astrophys.} \textbf{529}, A70
+(2011).
+
+\bibitem{will} C.~M. Will, ``The Confrontation between General
+Relativity and Experiment,'' \emph{Living Rev. Relativ.} \textbf{17},
+4 (2014).
+
+\end{thebibliography}
+
+\end{document}

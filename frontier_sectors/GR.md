@@ -94,5 +94,19 @@ injects rounding drift at percent level against a 5×10⁻⁷ rad/orbit signal;
 (2) locate zero crossings by interpolation — first-grid-point stopping
 overshoots at 10% level against an 8.5×10⁻⁶ rad deflection.
 
-**Status:** OPEN. Bounded, standard work; the clearest next paper in the
-series after GR-1 V0 review.
+**Status:** DISCHARGED AT V0 (Session 150, Patch 3252) — final discharge at
+panel review/ship. GR-1i drafted:
+`series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex`,
+full geodesic derivations of all four tests on the c08 metric (standard
+coordinates via the machine-verified exact transformation; isotropic form
+carries the mechanism section). All frozen Table-1 values reproduced
+(42.99″/cy · 1.75″ · ~233 μs · 2.46e-15 / +38.5 μs/day); 3228 verify re-run
+8/8 PASS pre-draft; both numerical traps promoted into the paper body;
+claim discipline verbatim (W2 conditionality in the abstract's first
+sentence — the CONV-026 restate lesson applied from the start; GR-identical
+by construction; discriminates from Newton, not GR; Lense–Thirring not
+redone). Swarm-Validation subsection written honestly at ZERO new
+predictions (entry-criterion compliance, no double-count of GR-1c's
+exactness). Compile gate clean. Next lane item: OPEN-GR-FE-1 (charter
+first, then founder physical-picture session, per the Session 149
+handover).
