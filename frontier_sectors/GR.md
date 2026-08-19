@@ -49,6 +49,8 @@ verbatim; k is a normalisation convention, not a derived quantity — see GR-1
 §7). Any derivation here inherits, and must not silently upgrade, that
 standing.
 
+**GR-1 cycle note (CONV-026, Patch 3242/3243):** Q4 3–2 RESTATE-REQUIRED fired on the Q1 3–2 OVERCLAIMS finding (abstract/thesis outran the ledger); restate EXECUTED at V0.2 — the W2/PSR conditionality promoted into the abstract and thesis. Q2 4–1 COMPLETE, Q3 5–0 SOUND stand. **Confirmation pass owed before any ship-path move.**
+
 **Status:** OPEN. Deliberately deferred out of GR-1 V0 by founder ruling
 (Session 148 handover §5). The single most consequential open item in the
 arc.
