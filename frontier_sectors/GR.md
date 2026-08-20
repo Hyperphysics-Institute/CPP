@@ -129,6 +129,14 @@ of the clock rate; the lattice census is additive in Δ|SSV|; the static
 measured-frame nonlinearity is purely the dictionary. F-3 (static
 superposition-in-u vs GR's nonlinear constraints) remains FLAGGED,
 unminted.
+**CONV-027 DISPATCHED (Patch 3260, founder-initiated):** bundled round —
+Package A: the T-1 candidate (Q6b: ACCEPT-AS-CHARTER-T-1 vote); Package B:
+the F-term finding + corrigendum (Q6a: APPROVE Form A/B vote). Package:
+`review/conv027_fe1_t1_fterm_review_package_v1.0.md` (single block, one
+paste per seat; both verify scripts inlined in full); returns receiver:
+`review/reviews-CONV-027.md`. Ratification gate for the corrigendum AND
+the T-1 acceptance = CONV-027 returns + founder ruling. W-3/W-4 remain
+gated on that adjudication.
 
 Deliberately deferred out of GR-1 V0 by founder ruling (Session 148
 handover §5). The single most consequential open item in the arc; the
