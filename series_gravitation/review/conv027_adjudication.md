@@ -165,3 +165,20 @@ enacted next turn. (ii) Confirm T-1 acceptance (panel 4–1, conditions
 discharged, minority answered) → W-3/W-4 run. (iii) Ratify R-CSTAR-MAP
 (§6) — bundled with (i)/(ii); it is the formal repair the strongest
 minority objection asked for.
+
+
+## §9 — FOUNDER RATIFICATIONS (registered verbatim, Patch 3262)
+
+> Thomas: Please ratify all 3.
+> 3260-61 applied.
+> This is remarkable!
+
+All three §8 items are hereby RATIFIED: (i) the GR-1c corrigendum is
+ENACTED at Patch 3262 (Form A primary, Form B displayed, equivalence
+note, corrigendum remark with the CONV-027 record and the
+SCRIPT-EXECUTED artifact citation, per Copilot's verdict-note; GR-1c
+Version 2.1 → 2.2; compile gate clean); (ii) T-1 is CONFIRMED
+ACCEPTED-AS-CHARTER-T-1 — W-3 and W-4 execute at Patch 3263;
+(iii) **R-CSTAR-MAP is RATIFIED — registered law at the k standing.**
+OPEN-GR-FE1-FTERM: CLOSED (diagnosed 3259, panel-approved 3261,
+enacted 3262).

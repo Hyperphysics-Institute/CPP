@@ -153,10 +153,16 @@ dispersion FAMILY cos(ωτ) = α·sinc(kR)+(1−α), unminted). Protocol
 defects recorded: Gemini-seat identity defect (self-labeled "ChatGPT");
 Copilot format deviation. **NOTE-GR-CSTAR-STRONGFIELD** registered
 (DeepSeek novel contribution): c_*(x) → ~0.29c near the exclusion
-radius — GR-1d/GR-1e cross-check flag, unminted. **AWAITING FOUNDER:
-(i) ratify the GR-1c corrigendum (panel 5–0; enactment next turn);
-(ii) confirm T-1 acceptance (panel 4–1) → W-3 + W-4 run;
-(iii) ratify R-CSTAR-MAP.**
+radius — GR-1d/GR-1e cross-check flag, unminted. **FOUNDER RATIFIED ALL THREE (Patch 3262, verbatim in the adjudication
+§9): (i) GR-1c corrigendum ENACTED — Proposition field_eq restated
+(Form A log-lapse boxed; Form B quasilinear; equivalence identity
+displayed; corrigendum remark with the old formula preserved
+anti-erasure, the CONV-027 record, and the SCRIPT-EXECUTED artifact
+citation); proof sketch + downstream remarks + op:einstein entry
+re-pointed (op:einstein remains OPEN); GR-1c V2.1 → V2.2, compile gate
+clean. (ii) T-1 CONFIRMED AS CHARTER T-1 → W-3 + W-4 execute
+(Patch 3263). (iii) R-CSTAR-MAP RATIFIED — registered law at the k
+standing. OPEN-GR-FE1-FTERM: CLOSED.**
 
 Deliberately deferred out of GR-1 V0 by founder ruling (Session 148
 handover §5). The single most consequential open item in the arc; the

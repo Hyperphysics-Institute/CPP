@@ -8,6 +8,13 @@
 % included PCD moment-cycle — 17 March 2026
 % PCD terminology corrected to canonical "Perceive--Compute--Displace"
 %   (was the Session-146 drift "Polarize--Capture--Depolarize") — Patch 0803, 8 June 2026
+% CORRIGENDUM (Patch 3262, 20 Aug 2026): Proposition field_eq restated with
+%   the correct potential (log-lapse Form A; quasilinear Form B); the prior
+%   F-term formula was defective at leading nonlinear order (O(u^2) vs the
+%   required O(u); it failed against this paper's own exact Theorem-1
+%   solution). Panel CONV-027 APPROVE-EITHER 5/5; founder-ratified.
+%   Verification: series_gravitation/code/3259_fterm_reconciliation_verify.py
+%   (8/8, exact-symbolic; independently SCRIPT-EXECUTED by two panel seats).
 % ==================================================================
 
 \documentclass[12pt]{article}
@@ -50,7 +57,7 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{17 March 2026 --- Version~2.1}
+\date{17 March 2026 (corrigendum 20 August 2026) --- Version~2.2}
 
 \begin{document}
 \maketitle
@@ -475,30 +482,77 @@ geometry and matter are self-consistently determined.
 \subsection{Proposition: explicit CPP field equation}
 \label{subsec:field_eq}
 
-\begin{proposition}[CPP field equation]
+\begin{proposition}[CPP field equation --- corrected, Patch 3262]
 \label{prop:field_eq}
-In the continuum limit, the self-consistency condition~\eqref{eq:fixed_point}
-for $\Delta|\SSV|$ takes the form:
+In the continuum limit, the self-consistency
+condition~\eqref{eq:fixed_point} is exactly the statement that the
+\emph{logarithmic lapse}
 \begin{equation}
-  \boxed{\nabla_\lambda\nabla^\lambda\bigl(\Delta|\SSV|\bigr)
-  \;+\; \mathcal{F}\bigl[\PSR_{\rm eff},\,\Delta|\SSV|\bigr]
-  \;=\; \frac{8\pi G}{c^4}\,T,}
+  N \;\equiv\; \ln\sqrt{-g_{tt}/c^2}
+  \;=\; \ln\!\frac{1-\varrho}{1+\varrho}
+  \;=\; -2\,\mathrm{artanh}\!\bigl(\tfrac{k\,\Delta|\SSV|}{2}\bigr),
+  \qquad \varrho = \tfrac{k\,\Delta|\SSV|}{2},
+\end{equation}
+is harmonic with respect to the effective metric, sourced by the
+compressed-DP census:
+\begin{equation}
+  \boxed{\;\nabla_\lambda\nabla^\lambda N
+  \;=\; -\,\frac{4\pi G}{c^2}\,\rho_{\rm mass}
+  \;+\; \text{(higher multipole channels)}\,;
+  \qquad \text{vacuum: } \nabla_\lambda\nabla^\lambda N = 0.\;}
   \label{eq:field_eq}
 \end{equation}
-where $\nabla_\lambda$ is the covariant derivative on the effective
-metric $g_{\mu\nu}[\PSR_{\rm eff}]$, $\mathcal{F}$ is the nonlinear
-PSR feedback term:
+\textbf{(Form A.)}  Equivalently, in the $\Delta|\SSV|$ variable
+\textbf{(Form B)}:
 \begin{equation}
-  \mathcal{F} \;=\; \frac{2k\,(\Delta|\SSV|)^2}
-  {(1 + k\,\Delta|\SSV|)^2}\,\nabla_\lambda\nabla^\lambda
-  \ln(1 + k\,\Delta|\SSV|),
-  \label{eq:F_term}
+  \nabla_\lambda\nabla^\lambda\bigl(\Delta|\SSV|\bigr)
+  \;+\; \mathcal{F}_{\rm true} \;=\; \text{source},
+  \qquad
+  \mathcal{F}_{\rm true}
+  = \frac{k^2\,\Delta|\SSV|/2}{1-(k\,\Delta|\SSV|/2)^2}\,
+    \bigl|\nabla(\Delta|\SSV|)\bigr|^2_g .
+  \label{eq:F_true}
 \end{equation}
-and $T = T^{\mu}{}_\mu$ is the trace of the stress-energy tensor.
-In the weak-field limit $k\,\Delta|\SSV| \ll 1$:\ $\mathcal{F} \to 0$
-and Eq.~\eqref{eq:field_eq} reduces to the linearised Einstein
-equations derived in companion~7.
+\textbf{Equivalence to the lattice frame.}  For the pointwise isotropic
+dictionary $A(\Delta|\SSV|)$, $B(\Delta|\SSV|)$ of this paper, the
+identity
+\begin{equation}
+  \nabla_\lambda\nabla^\lambda\,
+  \mathrm{artanh}\!\bigl(\tfrac{k\,v}{2}\bigr)
+  \;=\; \frac{32k}{(2-kv)(2+kv)^5}\;\nabla^2_{\rm flat}\,v
+  \label{eq:equivalence}
+\end{equation}
+holds for \emph{generic} $v$ (no derivative terms survive; in full 3D
+the cancellation of every $|\nabla v|^2$ term follows from
+$f''/f' + \tfrac{d}{dv}\ln(\sqrt{A}\,B^{1/2}) = 0$, which holds
+identically for $f = \mathrm{artanh}(kv/2)$).  The field equation is
+therefore algebraically equivalent to the flat-lattice statement
+$\nabla^2_{\rm flat}(\Delta|\SSV|) = \text{normalised source}$ --- the
+form derived from the messenger census (T-1, Patch 3258).  In the
+weak-field limit both forms reduce to
+$\nabla^2\Phi = 4\pi G\rho$ and the linearised Einstein equations of
+companion~7, unchanged.
 \end{proposition}
+
+\begin{remark}[Corrigendum note]
+The Proposition as originally published stated the compensator as
+$\mathcal{F} = [2k(\Delta|\SSV|)^2/(1+k\Delta|\SSV|)^2]\,
+\Box\ln(1+k\Delta|\SSV|)$.  That formula is defective: on this paper's
+own exact Theorem-1 solution it is $O(a^4)$ where the required
+compensator is $O(a^3)$ (with the $O(a^2)$ term cancelling
+identically), so it fails against the exact solution at leading
+nonlinear order.  The defect was found by the T-1 census derivation's
+HALT check (Patch 3258), diagnosed and repaired at Patch 3259, and the
+correction was approved APPROVE-EITHER by all five seats of review
+round CONV-027 and ratified by the founder (Patch 3262).  Machine
+verification: \texttt{series\_gravitation/code/3259\_fterm\_%
+reconciliation\_verify.py} (8/8, exact-symbolic; independently
+SCRIPT-EXECUTED by two panel seats, outputs registered in
+\texttt{series\_gravitation/review/reviews-CONV-027.md}).  Nothing
+observable changes: Theorem~1's metric, the classical tests, and the
+weak-field sector are identical under the defective and corrected
+statements.
+\end{remark}
 
 \begin{proof}[Proof sketch]
 In the continuum limit, the LSP broadcast equation at each Grid Point
@@ -508,14 +562,17 @@ gives, after summing over shells:
   \label{eq:poisson}
 \end{equation}
 at linear order (Newton's equation, recovered exactly from companion~5).
-The nonlinear correction arises from the metric dependence of the
-d'Alembertian $\nabla_\lambda\nabla^\lambda$: replacing
-$\nabla^2 \to \nabla_\lambda\nabla^\lambda$ on the curved metric
-$g_{\mu\nu}[\PSR_{\rm eff}]$ introduces a curvature-dependent term.
-Expanding $\nabla_\lambda\nabla^\lambda$ using the Christoffel symbols
-identified in companion~7 (from the 12-edge selection rule), and
-retaining all orders in $k\,\Delta|\SSV|$, yields the
-$\mathcal{F}$ term as stated.  The right-hand side follows from
+The nonlinear structure arises from the metric dependence of the
+d'Alembertian: writing the curved operator on the pointwise dictionary
+$A(\Delta|\SSV|)$, $B(\Delta|\SSV|)$ and changing variable to the
+logarithmic lapse $N = -2\,\mathrm{artanh}(k\Delta|\SSV|/2)$, every
+gradient-squared term cancels identically
+($f''/f' + \tfrac{d}{du}\ln(\sqrt{A}B^{1/2}) = 0$ for
+$f = \mathrm{artanh}(ku/2)$), leaving the harmonicity statement of
+Form~A --- equivalently the quasilinear Form~B with
+$\mathcal{F}_{\rm true}$ as stated, and equivalently (via
+Eq.~\eqref{eq:equivalence}) the flat-lattice census equation of the
+T-1 derivation (Patch 3258).  The right-hand side follows from
 $G = \hbar c/\mP^2$ and the identification of the gravitational
 source as the ZBW polarisation energy $T = \rho_{\rm mass}c^2$
 (companion~5, Proposition~2.1).  The weak-field reduction to
@@ -524,8 +581,9 @@ linearised Einstein equations was proved in companion~7.
 
 \begin{remark}[Status relative to the full Einstein equations]
 Equation~\eqref{eq:field_eq} has the same weak-field limit as the
-Einstein field equations by construction.  Whether $\mathcal{F}$
-produces the full nonlinear Ricci tensor
+Einstein field equations by construction.  Whether the corrected
+equation (equivalently, the lattice-frame census equation with its
+pointwise dictionary) produces the full nonlinear Ricci tensor
 $G_{\mu\nu} = R_{\mu\nu} - \tfrac{1}{2}g_{\mu\nu}R$ in the
 strong-field regime --- i.e.\ whether Eq.~\eqref{eq:field_eq}
 is exactly equivalent to $G_{\mu\nu} = 8\pi G\,T_{\mu\nu}/c^4$ ---
@@ -536,8 +594,9 @@ spherically symmetric vacuum case alone.
 \end{remark}
 
 \begin{remark}[Weak-field reduction]
-Setting $k\,\Delta|\SSV| = GM/rc^2 \ll 1$ and $\mathcal{F} \to 0$
-in Eq.~\eqref{eq:field_eq}:
+Setting $k\,\Delta|\SSV| = GM/rc^2 \ll 1$ (so $N \to -k\,\Delta|\SSV|$
+and $\mathcal{F}_{\rm true} \to 0$, both forms coinciding at linear
+order) in Eq.~\eqref{eq:field_eq}:
 \begin{equation}
   \nabla^2(\Delta|\SSV|) \;=\; \frac{8\pi G}{c^4}\,T
   \;\longrightarrow\;
@@ -775,9 +834,10 @@ postulates:
 \begin{enumerate}
   \item \label{op:einstein}
     \textbf{Exact equivalence of CPP field equation and Einstein equations.}
-    Proposition~\ref{prop:field_eq} gives the CPP field equation and
+    Proposition~\ref{prop:field_eq} (corrected, Patch 3262) gives the
+    CPP field equation and
     proves its weak-field reduction to linearised GR.  Whether the
-    full nonlinear $\mathcal{F}$ term in Eq.~\eqref{eq:field_eq}
+    corrected quasilinear structure in Eq.~\eqref{eq:field_eq}
     produces the Ricci tensor $G_{\mu\nu}$ of the exact Einstein
     equations is the central unsolved problem.  Resolution requires
     either an algebraic proof that
@@ -846,11 +906,13 @@ postulates:
     kg\,m$^{-3}$ at radius $r_{\rm core} = r_S/2$.
 
   \item \textbf{CPP field equation} (rigorous,
-    Proposition~\ref{prop:field_eq}): the self-consistency condition
-    on the LSP distribution is the nonlinear wave equation
-    $\nabla_\lambda\nabla^\lambda(\Delta|\SSV|) + \mathcal{F} =
-    8\pi G T/c^4$.  It reduces to the linearised Einstein equations
-    in the weak-field limit.
+    Proposition~\ref{prop:field_eq}, corrected Patch 3262): the
+    self-consistency condition on the LSP distribution is the
+    harmonicity of the logarithmic lapse,
+    $\nabla_\lambda\nabla^\lambda N = \text{source}$ with
+    $N = \ln\sqrt{-g_{tt}/c^2}$ --- algebraically equivalent to the
+    flat-lattice census equation of T-1.  It reduces to the linearised
+    Einstein equations in the weak-field limit.
 
   \item \textbf{Planck remnant} (qualitative,
     Proposition~\ref{prop:remnant}): Hawking evaporation terminates
