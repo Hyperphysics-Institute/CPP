@@ -163,6 +163,29 @@ re-pointed (op:einstein remains OPEN); GR-1c V2.1 → V2.2, compile gate
 clean. (ii) T-1 CONFIRMED AS CHARTER T-1 → W-3 + W-4 execute
 (Patch 3263). (iii) R-CSTAR-MAP RATIFIED — registered law at the k
 standing. OPEN-GR-FE1-FTERM: CLOSED.**
+**W-3 + W-4 EXECUTED (Patch 3263,
+`fe1_derivation/T2_T3_uniqueness_and_source.md`, verify `code/3263`
+9/9):** **T-2** — static uniqueness EXACT (general spherical static
+solution C₁+C₂/r; decay + Gauss matching pin the GR-1c profile
+uniquely); honesty check REGISTERED: the bare T-1 equation admits
+monopole radiation (f(t−r/c)/r is an exact vacuum solution), so the
+Birkhoff-type theorem is CONDITIONAL — proved on (i) T-3 census
+conservation with J = 0 through the boundary and (ii) no-incoming
+radiation, via the machine-checked chain (general spherical solution →
+flux −4π[f+(R/c)∂_t f] → constant-flux forces f′ = 0). GR stores
+no-monopole in the field equations; CPP stores it in the census — same
+physics for census-conserving sources; the counterfactual discriminator
+is op:einstein commentary, unminted. **T-3** — the source object is the
+conserved census current (ρ, J): ρ = compressed-DP SSV_abs excess
+density, J = its CP-displacement flux; continuity EXACT from CP
+conservation + once-per-Moment displacement (founder Q1/A1′;
+discrete checks exact-integer over 10⁴ Moments); weak-field ρ ↔ mass
+density confirmed; rank-2 completion explicitly bounded at op:einstein
+(REMAINS OPEN — the arc's clean frontier is now the dynamic/rank-2
+sector). **Standing: T-2/T-3 DERIVED-PENDING-REVIEW** (recommend a
+CONV round bundling T-2/T-3 + the FE-1 paper draft). **All three
+charter theorem targets now exist; the Patch-3231 big-wave gate moves
+toward open upon T-2/T-3 review + founder confirmation.**
 
 Deliberately deferred out of GR-1 V0 by founder ruling (Session 148
 handover §5). The single most consequential open item in the arc; the
