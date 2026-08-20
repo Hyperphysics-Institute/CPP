@@ -36,9 +36,9 @@
 gravitational redshift as geodesic consequences of the CPP
 shell-broadcast metric\\
 \normalsize Companion~i to GR-1 --- Conscious Point Physics gravitation
-series --- Version 0}
+series --- Version 0.1}
 \author{Thomas Lee Abshier, ND\\ Hyperphysics Institute}
-\date{19 August 2026}
+\date{19 August 2026 --- V0.1 (CONV-029 revisions, 20 August 2026)}
 
 \begin{document}
 \maketitle
@@ -149,7 +149,12 @@ prediction relative to GR.
 \item \textbf{What the tests discriminate.}  The tests discriminate
 CPP from Newtonian gravity (which fails deflection by a factor of two
 and predicts no perihelion advance and no Shapiro delay at these
-orders); they do not discriminate CPP from GR.  Frame-dragging
+orders); they do not discriminate CPP from GR.  To pre-empt a
+misreading (CONV-029, DeepSeek-seat note): CPP \emph{reproduces} GR's
+classical tests; it does not \emph{share} GR's theoretical basis ---
+the mechanism beneath (rigid GP lattice, compressed-DP aggregates, PSR
+response) is entirely different, and the agreement is a derived
+consequence, not a reformulation.  Frame-dragging
 (Lense--Thirring) is treated in GR-1f and GR-1c and is not repeated
 here.
 \end{enumerate}
@@ -367,9 +372,13 @@ terms of order $GM/c^3$ contribute at the percent level and are
 absorbed, in modern practice, into the parametrized coefficient
 $\gamma$: the Cassini conjunction experiment constrains
 $\gamma - 1 = (2.1 \pm 2.3)\times10^{-5}$.  Since the metric here is
-exactly Schwarzschild, CPP has $\gamma = 1$ identically, and
-\eqref{eq:shapiro} at the quoted leading-log precision is the honest
-statement of this paper's claim.
+exactly Schwarzschild, the PPN parameters are $\beta = \gamma = 1$
+IDENTICALLY: compliance with the Cassini bound is a structural feature
+of the formulation, not a numerical property of the leading-log term
+--- which closes the loop on the sub-leading terms (CONV-029,
+Gemini-seat note).  Accordingly, \eqref{eq:shapiro} at leading-log
+precision is a COARSE consistency check, not a precision $\gamma$
+test, and is presented as nothing more.
 
 % =====================================================================
 % SECTION 7: Gravitational redshift
@@ -495,6 +504,31 @@ post-crossing grid point overshoots by up to $d\varphi$ ---
 10\%-level against a deflection of $8.5\times10^{-6}$\,rad.
 \end{enumerate}
 
+\subsection{Constants provenance and sensitivity}
+\label{sec:constants}
+Per the CONV-029 panel (constants-provenance question): this paper
+deliberately quotes $GM_\odot = 1.3275\times10^{20}$\,m$^3$\,s$^{-2}$
+--- the verify script's own $G \times M_\odot$ product --- so that the
+paper's inputs ARE the script's inputs (provenance matching).  The IAU
+nominal value is $GM_\odot = 1.3271244\times10^{20}$, a difference of
+$0.028\%$.  Sensitivity of the table entries (all $\propto GM_\odot$
+at leading order): perihelion $42.99 \to 42.98''$/cy (dead-centre of
+the observed $42.98 \pm 0.04$), deflection $1.7516 \to 1.7511''$,
+Shapiro $232.6 \to 232.5\,\mu$s; the redshift/GPS entries use Earth
+constants and are unaffected.  Every shift is far inside the quoted
+observational uncertainty; a reader preferring the IAU value may apply
+the $0.028\%$ rescaling throughout.  Constants used: $G =
+6.6743\times10^{-11}$, $c = 2.99792458\times10^{8}$, $R_\odot =
+6.957\times10^{8}$\,m, $1\,\mathrm{AU} = 1.495979\times10^{11}$\,m
+(as in the script).  The panel's independent SCRIPT-EXECUTED runs (two
+seats; digits registered in \texttt{review/reviews-CONV-029.md})
+serve as the archival verification artifact.  A caution the panel
+endorsed: the numeric Binet integration agreeing with the closed forms
+is an IMPLEMENTATION cross-check --- both routes instantiate the same
+Schwarzschild geodesics --- not independent physical evidence; the
+zero-new-predictions accounting of the Conclusion reflects exactly
+this.
+
 % =====================================================================
 % SECTION 10: CPP physical mechanism
 % =====================================================================
@@ -528,7 +562,12 @@ oscillator runs slower deep in the stressed Sea, so its emitted
 frequency arrives low at a shallower receiver.  Pure scalar
 ($|\SSV|_{\rm abs}$) physics.
 \item \emph{Light deflection} is refraction in the graded-index Sea:
-wavefronts advance slower on the sun-side, turning the ray.  Exactly
+wavefronts advance slower on the sun-side, turning the ray.  The
+index $n(r) \simeq 1 + 2GM/c^2 r$ is frequency-independent, so the
+bending is ACHROMATIC --- implicit in the metric's exactness, but
+worth stating: chromatic dispersion of starlight at the limb would
+falsify the mechanism as formulated (registered as an observation,
+unminted; CONV-029, DeepSeek-seat note).  Exactly
 half of $n - 1$ comes from the slowed clock rate (scalar) and half from
 the compressed spatial lattice (vector); a scalar-only Sea would bend
 light half as much (Section~\ref{sec:factor2}).

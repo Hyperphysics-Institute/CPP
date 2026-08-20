@@ -300,3 +300,18 @@ language-harmony check; 3228 inlined; Q6a OPEN-GR-TESTS-1
 final-discharge vote; Q6b GR-1i ship-path vote gated on Q2
 discipline). Receiver: `reviews-CONV-029.md`. On adjudication:
 OPEN-GR-TESTS-1 final-discharges and GR-1 proceeds to V1.0 prep.
+
+
+**CONV-029 RETURNED AND ADJUDICATED (Patch 3269,
+`review/conv029_adjudication.md`): UNANIMOUS ON EVERY QUESTION — the
+cleanest round of the cycle. Q6a: OPEN-GR-TESTS-1 FINALLY DISCHARGED
+5–0 (the item opened at Patch 3229 is CLOSED). Q6b: GR-1i
+SHIP-PATH-CLEAR 5–0 → V0.1** with five editorial adoptions (constants
+provenance/sensitivity — the IAU shift lands the perihelion prediction
+dead-centre of observation; PPN β = γ = 1 structural note; the
+reproduces-vs-shares sentence; the achromatic-bending falsifiable
+feature, unminted; the implementation-cross-check caution).
+**GR-1 V1.0 PREP IS UNBLOCKED — the gravitational arc has no
+unreviewed papers and no open review gates.** Seat ledger: Grok
+count-line anomaly SECOND occurrence (pattern; next dispatch will
+instruct verbatim count-line pasting). Lane frontier: op:einstein.

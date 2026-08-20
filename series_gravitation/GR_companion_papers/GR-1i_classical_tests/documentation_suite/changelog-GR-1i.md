@@ -53,3 +53,18 @@ this session, 8/8 PASS (isotropic≡Schwarzschild 3.3e-16; perihelion
 checks; no new script minted.
 
 Compile gate: pdflatex ×2, zero errors.
+
+---
+
+## V0.1 — 20 August 2026, Patch 3269 (Session 150)
+
+CONV-029 adjudicated: unanimous across all six questions;
+OPEN-GR-TESTS-1 FINALLY DISCHARGED 5–0; SHIP-PATH-CLEAR 5–0. Five
+editorial adoptions folded in: (1) the Constants-provenance-and-
+sensitivity subsection (script-GM vs IAU, 0.028%, per-entry shifts,
+full constants list, panel SCRIPT-EXECUTED runs as archival artifact);
+(2) PPN β = γ = 1 structural note + Shapiro relabelled a coarse
+consistency check; (3) the reproduces-vs-shares claim-discipline
+sentence; (4) the achromatic-bending falsifiable-feature remark
+(unminted); (5) the implementation-cross-check caution on numeric-vs-
+closed-form agreement. Compile gate clean. V1.0 prep may begin.
