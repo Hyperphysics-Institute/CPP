@@ -1,0 +1,538 @@
+% =====================================================================
+% GR-1j: The CPP Field Equations from the Messenger Census
+% Companion j to GR-1. Consolidates the OPEN-GR-FE-1 programme:
+% T-1 (the general equation, ratified), T-2 (Birkhoff-type uniqueness),
+% T-3 (the source current), the GR-1c corrigendum context, and the
+% CONV-027 panel record.
+% Version history: documentation_suite/changelog-GR-1j.md
+% =====================================================================
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+\geometry{letterpaper, margin=1in}
+
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\SSV}{\text{SSV}}
+\newcommand{\PSR}{\text{PSR}}
+\newcommand{\LSP}{\text{LSP}}
+\newcommand{\Dssv}{\Delta|\SSV|}
+\newcommand{\vrho}{\varrho}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{GR-1j: The CPP Field Equations from the Messenger Census\\
+\large T-1 (the general equation), T-2 (Birkhoff-type uniqueness), and
+T-3 (the conserved source current), derived from the three-type
+conscious-point automaton\\
+\normalsize Companion~j to GR-1 --- Conscious Point Physics gravitation
+series --- Version 0}
+\author{Thomas Lee Abshier, ND\\ Hyperphysics Institute}
+\date{20 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Conditional on the PSR constitutive form
+$\PSR_{\rm eff} = \lP/(1 + k\,\Dssv)$, whose SR-1 grounding stands at
+W2 viability strength, we derive the general CPP gravitational field
+equation from the substrate messenger census --- closing the gap GR-1c
+named as its central limitation: the arc possessed exact
+\emph{solutions} but only a correspondence-level \emph{equation}.  The
+derivation uses three registered facts about the three-type
+conscious-point automaton (Grid Points compute; charge-bearing CPs
+displace; DI-bit messengers are conserved, emitted at fixed per-GP
+count, and delivered at the PSR shell in one Moment): census linearity,
+homogeneous-Sea cancellation, and the one-hop shell kernel on the rigid
+absolute lattice.  Statics follow \emph{exactly}: the vacuum equation
+is flat-lattice Laplace for any PSR profile, its unique decaying
+spherical solution is the shipped source relation
+$k\,\Dssv = GM/rc^2$, and the absolute-lattice coordinates are
+identified with the isotropic coordinates --- deriving why the corpus
+solution is conformally flat.  Time-reversal invariance forces a
+two-level relay closure whose entire admissible class yields the same
+continuum operator: a variable-speed wave equation, the ratified
+\textbf{T-1}.  Its measured-frame form is exactly the harmonicity of
+the logarithmic lapse $N = \ln\sqrt{-g_{tt}/c^2}$; the corrected GR-1c
+Proposition (corrigendum enacted at V2.2 after the five-seat CONV-027
+round approved it unanimously) and the lattice equation are one
+equation in two variables.  \textbf{T-2}: the isotropic solution is the
+unique static spherically symmetric vacuum exterior; the Birkhoff-type
+theorem holds \emph{conditionally} --- the bare equation admits
+monopole radiation, and staticity is enforced by the census
+conservation law, not by the field equation, mirroring GR's
+no-monopole mechanism at a different address.  \textbf{T-3}: the
+source object is the conserved census current $(\rho, \mathbf{J})$,
+with continuity exact from CP conservation and once-per-Moment
+displacement.  Every claim is machine-verified across four scripts
+(10/10, 8/8, 6/6, 9/9); no Einstein structure is imported, no constant
+is tuned, and the rank-2/dynamic completion is explicitly bounded at
+the still-open op:einstein.
+\end{abstract}
+
+\noindent\textbf{Keywords:} Conscious Point Physics; field equations;
+messenger census; DI-bits; shell-mean kernel; mean-value property;
+logarithmic lapse; Birkhoff theorem; conserved current; lattice
+dispersion; Space Stress Vector.
+
+% =====================================================================
+\section*{Plain Language Summary}
+% =====================================================================
+Until now, this research programme could produce the exact
+\emph{answers} general relativity gives for gravity around a star or
+black hole, but it had only a sketch of the underlying \emph{equation}
+those answers solve.  This paper derives that equation from the ground
+floor of the theory: a bookkeeping of conserved messengers.  Every tick
+of the universal clock, each point of space sends out a fixed number of
+messenger points, which land one ``reach'' away, are tallied, and are
+recycled.  Because the messengers are never created or destroyed, the
+tally obeys strict accounting rules --- and those rules, written in the
+language of calculus, turn out to BE the gravitational field equation.
+
+Three results follow.  First, in the static case the accounting is
+exact and forces precisely the formula the programme has used all
+along --- and it explains a long-standing curiosity: why the theory's
+exact solution looks like flat space with shrunken rulers and slowed
+clocks.  (Because the underlying lattice IS flat; only the rulers and
+clocks change.)  Second, the famous theorem that a spherical star's
+gravity cannot ripple holds here too, but for a new reason: not because
+the equation forbids it, but because the conserved bookkeeping does ---
+an isolated star's ledger cannot change, so its gravity cannot breathe.
+Third, the ``source'' of gravity is now formally defined: the local
+excess of messenger influence carried by compressed matter, together
+with its flow, forming a conserved current.
+
+Along the way, the derivation's built-in self-check caught a defective
+formula in an already-published companion paper --- inconsistent with
+that paper's own exact solution.  The error was diagnosed, corrected,
+approved unanimously by a five-member external review panel, ratified
+by the founder, and enacted with the original formula preserved in the
+paper's corrigendum note.  The corrected formula and the new equation
+turn out to be the same law written in two natural languages: the
+substrate's (where messenger counts add) and the observer's (where
+clock rates multiply, so the natural potential is a logarithm).
+
+\raggedright
+\tableofcontents
+\newpage
+
+% =====================================================================
+\section{Introduction}
+\label{sec:intro}
+
+GR-1b asserted, and GR-1c reiterated, that the CPP self-consistency
+condition ``is'' the Einstein field equations in the continuum limit
+--- a correspondence claim, not a derivation.  GR-1 V0.2's epistemic
+ledger and the OPEN-GR-FE-1 registration named this the arc's most
+consequential open item: the big-wave deposit gate (founder ruling,
+Patch 3231) rests on it.  The derivation was chartered (Patch 3254)
+with the order of work frozen: worker expectations on record first;
+then the founder's physical-picture session, registered verbatim
+(Patches 3255/3257); then derivation.  This paper consolidates the
+executed programme: T-1 (Patch 3258, ratified 3262 after CONV-027),
+the corrigendum arc (3258--3262), the closure annex (3261), and
+T-2/T-3 (3263).
+
+\subsection{Open Problems Addressed}
+Discharges the theorem targets of \texttt{OPEN-GR-FE-1} (T-1 ratified;
+T-2/T-3 derived, panel review pending at V0).  \texttt{OPEN-GR-FE1-FTERM}
+was opened and CLOSED within the same programme (\S\ref{sec:corrig}).
+\texttt{op:einstein} (GR-1c) remains OPEN and is sharpened here
+(\S\ref{sec:conclusion}).
+
+\subsection{Claim discipline (frozen)}
+\label{sec:claims}
+(i) Everything is conditional on the PSR constitutive form at W2
+strength (GR-1 \S7); $k$ is a registered normalisation.  (ii) The
+kinematic mapping \textbf{R-CSTAR-MAP} (ratified, Patch 3262):
+$c \equiv R_{\rm vac}/(\sqrt{3}\,\tP)$ --- a units convention at the
+$k$ standing with no long-wave observable content
+(\S\ref{sec:dynamics}).  (iii) Barred and not used: positing Einstein's
+equations and working backward; variational principles not derived
+from PCD dynamics; tuned constants; cosmology (LOCAL scope).
+(iv) Fresh results (T-2/T-3 and this paper) carry
+DERIVED-PENDING-REVIEW standing until their panel round completes.
+
+% =====================================================================
+\section{Inputs: the three-type automaton}
+\label{sec:inputs}
+
+Per the ratified axiom layer (A1$'$/AP-3/AP-4) and the founder's
+registered picture (founders\_voice, 2026-08-19): \textbf{GPs} (fixed
+lattice sites, 600-cell geometry, zero configuration freedom) execute
+Perceive (integrate DI-bit arrivals) and Compute (refresh their
+$\SSV_{\rm abs}$/$\SSV_{\rm net}$ registers); \textbf{CPs}
+(charge-bearers composing matter) execute Displace, once per Moment,
+per their GP's computed $\SSV_{\rm net}$; \textbf{DI-bits} are
+conserved messengers with payload exactly \{origin address, $E$, $S$\},
+emitted at fixed per-GP count each Moment, delivered in a thin band at
+the PSR shell, then reset and reused.  Receiver GPs compute
+$\SSV_{\rm net}$ and $\SSV_{\rm abs}$ from arrivals.  The registered
+invariant: every GP begins each cycle with the same DI-bit count, and
+every GP's total DI-bit influence on its PSR is equal.  Symmetry
+statements hold only over the full Moment cycle (A3$'$).  The
+Voronoi-cell-to-PSR ratio is an open input, carried symbolically; it
+cancels from every result below.
+
+% =====================================================================
+\section{Statics: the census is exactly Laplacian}
+\label{sec:statics}
+
+Let $u = \Dssv$ be the departure of the receiver-computed
+$\SSV_{\rm abs}$ census from its homogeneous-Sea value.
+
+\begin{lemma}[Census linearity]
+Fixed per-GP emission + static-snapshot payload + reset-at-delivery
+$\Rightarrow$ the per-Moment computed state at a GP is a linear
+shell-sum of origin-GP registers one hop away.
+\end{lemma}
+
+\begin{lemma}[Homogeneous cancellation]
+The equal-influence invariant $\Rightarrow$ the uniform Sea (including
+the uniformly distributed DP-Entity background) cancels identically;
+the dynamics closes on $u$.
+\end{lemma}
+
+\begin{lemma}[The kernel]
+One hop = one Moment = one PSR: the elementary operator is the shell
+mean $M_{R(x)}$ over radius $R(x) = \PSR_{\rm eff}(x)$ on the rigid
+flat lattice; only the \emph{reach} varies with stress.
+\end{lemma}
+
+\begin{theorem}[Exact statics]
+\label{thm:statics}
+Static self-consistency $u = M_{R(x)}[u]$ at every vacuum GP is, for
+ANY PSR profile, exactly flat-lattice Laplace:
+$\nabla^2_{\rm lattice}\,u = 0$ (the mean-value property holds at
+every radius simultaneously; verified numerically at $10^{-9}$
+including position-dependent $R(x)$).  With sources, at the registered
+normalisation: $\nabla^2_{\rm lattice}\,u = -(4\pi G/kc^2)\,\rho$.
+The unique decaying spherical vacuum solution is
+$u = GM/(kc^2 r)$ --- the GR-1a source relation, re-derived --- and the
+absolute-lattice coordinates are thereby identified with the isotropic
+coordinates of GR-1c: the corpus solution is conformally flat because
+the lattice IS flat; only rulers ($\PSR_{\rm eff}$) and clocks shrink.
+\end{theorem}
+
+% =====================================================================
+\section{Dynamics: the forced closure and its robust continuum limit}
+\label{sec:dynamics}
+
+The irreversible one-level relay $u(t{+}\tau) = M_R u(t)$ is a
+documented dead end: the shell operator's plane-wave eigenvalue is
+$\mathrm{sinc}(kR) \in (-1,1)$ for $k>0$, so every mode damps ---
+and it violates messenger conservation.
+
+\begin{lemma}[The two-level form is forced --- CONV-027 annex L1]
+For a linear one-register recurrence
+$u(t{+}\tau) = \mathcal{A}u(t) + \mathcal{B}u(t{-}\tau)$, invariance
+under running the same law backwards forces $\mathcal{B} = -1$ (the
+only alternative is the trivial swap $\mathcal{A}=0$,
+$\mathcal{B}=+1$); the companion map is volume-preserving.
+\end{lemma}
+
+\begin{lemma}[The admissible class --- annex L2]
+One-hop locality restricts $\mathcal{A}$ to the operators available to
+a GP in one Moment: $\mathcal{A} = 2[\alpha M_R + (1-\alpha)I]$,
+$\alpha \in (0,1]$; the dispersion
+$\cos(\omega\tau) = \alpha\,\mathrm{sinc}(kR) + (1-\alpha)$ is real
+(unitary) for the whole class.
+\end{lemma}
+
+\begin{theorem}[Closure-robust continuum limit --- annex L3; \textbf{T-1}]
+\label{thm:t1}
+For every admissible $\alpha$, the long-wavelength phase and group
+speed is $c_*(\alpha) = \sqrt{\alpha}\,R/(\sqrt{3}\tau)$: the
+continuum operator is the SAME variable-speed wave equation across the
+entire class --- only the speed coefficient varies, and it is
+degenerate with the ratified kinematic mapping.  With the
+picture-preferred $\alpha = 1$ (AP-3's per-Moment register refresh):
+\begin{equation}
+\boxed{\;
+\frac{1}{c_*(x)^2}\,\partial_t^2\,\Dssv
+\;-\; \nabla^2_{\rm lattice}\,\Dssv
+\;=\; \frac{4\pi G}{k c^4}\,\mathcal{S}[\rho],
+\qquad
+c_*(x) = \frac{\PSR_{\rm eff}(x)}{\sqrt{3}\,\tP}.
+\;}
+\label{eq:t1}
+\end{equation}
+Ordering of limits: $N_V \to \infty$ (Voronoi sampling $\to$ continuum
+shell mean); then $\lambda/R \to \infty$; then the adiabatic condition
+$|\nabla R|\lambda \ll R$ --- the static sector (Theorem
+\ref{thm:statics}) is exempt, exact at every order.
+\end{theorem}
+
+\begin{remark}[R-CSTAR-MAP and the dispersion family]
+The $k$ convention cannot absorb the $\sqrt{3}$ in the homogeneous
+limit (where $\Dssv = 0$) --- a point pressed correctly by the
+CONV-027 minority.  The ratified repair is the registered mapping
+$c \equiv R_{\rm vac}/(\sqrt{3}\,\tP)$: $R_{\rm vac}$ and $\tP$ are
+not separately observable at long wavelength; only their ratio through
+the dispersion is.  The honest observable residue is the one-parameter
+FAMILY $\cos(\omega\tau) = \alpha\,\mathrm{sinc}(kR) + (1-\alpha)$
+(non-vacuous: members separate by $0.8$\,rad at $kR \sim 1$) ---
+falsifier-shaped, deliberately unminted.
+\end{remark}
+
+% =====================================================================
+\section{The measured frame: one equation, two variables; the corrigendum}
+\label{sec:corrig}
+
+\begin{theorem}[Equivalence]
+\label{thm:equiv}
+For the pointwise isotropic dictionary $A(u), B(u)$ of GR-1c, and
+$f = \mathrm{artanh}(ku/2)$: $f''/f' + \frac{d}{du}\ln(\sqrt{A}
+B^{1/2}) = 0$ identically, so every $|\nabla u|^2$ term cancels and
+$\Box_g f(u) = [f'(u)/B(u)]\,\nabla^2_{\rm flat} u$ in full 3D; for
+generic radial $v$,
+$\Box_g\,\mathrm{artanh}(kv/2) = [32k/((2-kv)(2+kv)^5)]\,
+\nabla^2_{\rm flat} v$ --- a pure algebraic factor.  The
+measured-frame vacuum statics is therefore exactly the harmonicity of
+the logarithmic lapse
+$N = \ln\sqrt{-g_{tt}/c^2} = -2\,\mathrm{artanh}(k\Dssv/2)$:
+$\Box_g N = 0$, identically satisfied by the exact solution; and the
+measured-frame equation and Eq.~\eqref{eq:t1}'s statics are ONE
+equation in two variables --- messenger counts add (lattice potential
+$\Dssv$); clock rates multiply (measured potential $N$, a logarithm).
+\end{theorem}
+
+\begin{remark}[The corrigendum, condensed]
+The T-1 HALT check (charter \S4) found that GR-1c's published
+compensator formula was $O(u^2)$-class where the exact requirement is
+$O(u)$-class --- it failed against GR-1c's own exact Theorem-1
+solution.  The exact compensator is
+$\mathcal{F}_{\rm true} = [(k^2\Dssv/2)/(1-(k\Dssv/2)^2)]\,
+|\nabla\Dssv|^2_g$.  Review round CONV-027 approved the correction
+5--0 (APPROVE-EITHER); the founder ratified; GR-1c V2.2 now carries
+Form A (boxed log-lapse harmonicity), Form B (quasilinear with
+$\mathcal{F}_{\rm true}$), the equivalence identity, and a corrigendum
+remark preserving the defective formula anti-erasure.  Nothing
+observable moved: the metric, the classical tests (GR-1i, 8/8), and
+the weak field are identical under both statements.
+\end{remark}
+
+% =====================================================================
+\section{T-2: uniqueness, and where Birkhoff lives}
+\label{sec:t2}
+
+\begin{theorem}[Static uniqueness --- exact]
+The general spherically symmetric static vacuum solution of
+Eq.~\eqref{eq:t1} is $C_1 + C_2/r$; decay kills $C_1$; the Gauss flux
+$-4\pi C_2$ through every sphere matches the enclosed census, fixing
+$C_2 = GM/kc^2$.  The GR-1c isotropic solution is the UNIQUE static
+spherically symmetric vacuum exterior --- of Eq.~\eqref{eq:t1} and,
+via Theorem~\ref{thm:equiv}, of the corrected measured-frame equation.
+\end{theorem}
+
+\begin{remark}[Honesty check]
+The bare Eq.~\eqref{eq:t1} admits monopole radiation:
+$u = f(t - r/c_*)/r$ is an exact vacuum solution for arbitrary $f$
+(symbolic).  Birkhoff is therefore NOT a property of the field
+equation alone in CPP.
+\end{remark}
+
+\begin{theorem}[Birkhoff-type --- conditional on T-3]
+\label{thm:birkhoff}
+For a spherically symmetric configuration with (i) conserved enclosed
+census (T-3 continuity, $\mathbf{J} = 0$ through the boundary) and
+(ii) no incoming radiation, the vacuum exterior is the unique static
+profile.  \emph{Chain (machine-checked):} general spherical vacuum
+solution $[f(t-r/c) + g(t+r/c)]/r$; no-incoming kills $g$; the
+outgoing flux $-4\pi[f + (R/c)\partial_t f]$ must equal the census
+constant at every $(R,t)$; independence of $(t - R/c)$ and $R$ forces
+$f'' = 0$ then $f' = 0$.
+\end{theorem}
+
+\begin{remark}[Where the theorem lives]
+GR stores ``the monopole cannot radiate'' in its field equations; CPP
+stores it in the census conservation --- the founder's ``all are
+conserved.''  For census-conserving sources the two agree; accreting
+sources are non-static in both (Vaidya-type).  The counterfactual
+discriminator (a census-violating process would radiate monopole waves
+GR forbids absolutely) is op:einstein commentary, unminted.
+\end{remark}
+
+% =====================================================================
+\section{T-3: the conserved source current}
+\label{sec:t3}
+
+\begin{theorem}[Source and conservation]
+The object Eq.~\eqref{eq:t1} is equated to is the conserved census
+current $(\rho, \mathbf{J})$: $\rho$ = the compressed-DP
+$\SSV_{\rm abs}$ census excess density; $\mathbf{J}$ = its
+CP-displacement flux.  Continuity
+$\partial_t\rho + \nabla\!\cdot\!\mathbf{J} = 0$ is exact, a direct
+consequence of CP conservation (founder ruling) and once-per-Moment
+displacement (A1$'$); discrete checks conserve the census with
+exact-integer precision over $10^4$ Moments.  Weak field:
+$\rho \leftrightarrow$ mass density; Poisson at the registered
+normalisation; the companion-5/7 sector is unchanged.
+\end{theorem}
+
+\begin{remark}[Scope]
+Eq.~\eqref{eq:t1} is the scalar channel; $(\rho, \mathbf{J})$ is
+correspondingly its scalar source current, matching GR-1c's trace
+source $T = \rho c^2$.  The rank-2 object (momentum flux, shear)
+belongs to the vector/tensor broadcast channels and the dynamic
+sector: op:einstein, explicitly OPEN.
+\end{remark}
+
+% =====================================================================
+\section{Numerical verification}
+\label{sec:verify}
+
+Four scripts, computation-before-claims throughout
+(\texttt{series\_gravitation/code/}): \texttt{3258} (statics exactness
+incl.\ variable $R(x)$; kernel eigenvalue; dead-end damping;
+dispersion; the HALT comparison; 10/10); \texttt{3259} (log-lapse
+harmonicity; $\mathcal{F}_{\rm true}$; the equivalence identity and
+its 3D coefficient form; slip localisation; 8/8); \texttt{3261} (the
+closure annex: forced form, class unitarity, robustness, family
+non-vacuity; 6/6); \texttt{3263} (T-2 uniqueness and conditional
+Birkhoff chain; T-3 exact-integer conservation; 9/9).  CONV-027 seats
+independently SCRIPT-EXECUTED \texttt{3258}/\texttt{3259} with pasted
+digits (registered in \texttt{review/reviews-CONV-027.md}).
+
+% =====================================================================
+\section{CPP Physical Mechanism}
+\label{sec:mechanism}
+
+The field equation is bookkeeping made continuous.  Each Moment, every
+GP disperses its fixed complement of DI-bits to the PSR shell and
+tallies what arrives; matter (compressed-DP aggregates) biases the
+tally; the PSR response converts tally into geometry.  Because the
+messengers are conserved and the update is reversible, the tally's
+departure field can only \emph{wave}, never damp --- and because the
+tally is a shell average, its static self-consistency is the
+mean-value property, i.e.\ Laplace's equation, exactly.  Gravity's
+statics is the statement that a conserved, shell-averaged census has
+no choice but to be harmonic in vacuum.
+
+The two natural potentials are the two natural bookkeepings: on the
+lattice, messenger counts ADD, so the potential is $\Dssv$ itself and
+statics superpose linearly; for observers, clock rates MULTIPLY along
+chains of frames, so the natural potential is the clock-rate LOG ---
+and the measured-frame nonlinearity of static gravity is entirely the
+dictionary between the two, not the substrate dynamics.
+
+\subsection{CP/GP Signature at This Scale}
+\textbf{Load-bearing:} the A1$'$ division of labor (GP computes; CP
+displaces; DI-bits conserved) supplies linearity, the kernel, and both
+conservation laws; A3$'$ full-Moment symmetry supplies the two-level
+closure; the PSR form (W2, conditional) supplies the constitutive
+closure; the rigid lattice (founder Q5) supplies the frame in which
+statics is exact.  \textbf{Smoothed:} at solar-system scales the
+discreteness is invisible ($(\lP/r)^2$ negligible); what survives is
+structure --- the dispersion FAMILY (Planck-scale, unminted) and the
+strong-field $c_*(x)$ suppression near the exclusion radius
+($\to \sim 0.29c$; NOTE-GR-CSTAR-STRONGFIELD, flagged for the
+GR-1d/GR-1e lane).  \textbf{Macroscopic shadow:} the field equations
+of gravitation are the shadow of messenger conservation --- what
+conventional physics writes as geometry--matter coupling is, in CPP,
+the continuum limit of a conserved census on a rigid lattice.
+
+% =====================================================================
+\section{CPP-to-Conventional-Physics Mapping}
+\label{sec:mapping}
+
+\begin{table}[h]
+\centering
+\caption{Structural correspondence for the field-equation programme.}
+\begin{tabular}{p{0.46\textwidth}p{0.46\textwidth}}
+\toprule
+CPP mechanistic element & Conventional description \\
+\midrule
+Conserved DI-bit census, equal redistribution & Field degrees of
+freedom; superposition (statics) \\
+Shell-mean kernel, one hop per Moment & Finite propagation;
+d'Alembertian structure \\
+Two-level reversible relay (forced form) & Second-order-in-time wave
+dynamics; unitarity \\
+$\Dssv$ (counts add) & Lattice-frame potential; linear statics \\
+$N = \ln\sqrt{-g_{tt}/c^2}$ (rates multiply) & Log-lapse; the exact
+static potential of the metric frame \\
+Census current $(\rho, \mathbf{J})$, continuity exact & Source
+density/flux; $\partial_\mu T^{\mu 0} = 0$ (scalar sector) \\
+Census conservation of an isolated source & Birkhoff's theorem
+(no-monopole mechanism) \\
+Dispersion family $\cos\omega\tau = \alpha\,\mathrm{sinc}(kR)+(1-\alpha)$ &
+Planck-scale modified dispersion (unminted) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =====================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+The gravitational arc now possesses what it lacked: a general field
+equation DERIVED from the substrate picture (T-1, ratified), the
+uniqueness theorem tying it to the shipped exact solution (T-2, with
+Birkhoff honestly relocated to the conservation law), and the source
+object with its exact conservation (T-3).  The published equation
+defect the derivation's self-check uncovered has been corrected
+through full external review with the history preserved.  The clean
+frontier is op:einstein, now sharpened: whether the vector/tensor
+broadcast channels, run through the same census machinery, produce the
+full dynamic rank-2 Einstein structure --- or a machine-distinguishable
+alternative (static superposition-in-$\Dssv$; the dispersion family;
+the strong-field $c_*$ suppression --- all flagged, none minted).
+
+\subsection{Swarm-Validation Contribution}
+This paper mints \textbf{no new zero-parameter predictions}: T-1's
+static sector reproduces already-counted correspondences (GR-1a's
+relation; Newton; linearised Einstein; the GR-1c metric), and counting
+them again would double-count.  The contribution is structural: the
+equation layer now exists, derived and panel-reviewed, moving the arc
+from ``solutions with a correspondence claim'' to ``equations with
+solutions.''  Three falsifier-shaped residues are registered unminted
+(claim discipline \S\ref{sec:claims}).
+
+\subsection{Problem Status After This Paper}
+\begin{itemize}[leftmargin=2em]
+\item \texttt{OPEN-GR-FE-1}: theorem targets COMPLETE (T-1 ratified;
+T-2/T-3 derived-pending-review).  Final closure at the T-2/T-3 panel
+round + founder confirmation, upon which the Patch-3231 big-wave
+deposit gate formally moves toward open.
+\item \texttt{OPEN-GR-FE1-FTERM}: CLOSED (found 3258; repaired 3259;
+panel 5--0; enacted 3262).
+\item \texttt{op:einstein}: OPEN --- the dynamic/rank-2 sector is the
+arc's frontier.
+\end{itemize}
+
+\section*{Acknowledgements}
+Derivations, verification, and drafting by the Anthropic Claude worker
+under PD-006, on the founder's registered physical picture (the
+three-type automaton, the conservation rulings, and the rigid-lattice
+ruling are load-bearing throughout).  The CONV-027 panel (five seats)
+provided the external adjudication; the closure annex and R-CSTAR-MAP
+answer its named objections.
+
+\begin{thebibliography}{9}
+\bibitem{gr1} T.~L. Abshier, \emph{GR-1: Local Gravitation from SSV
+Shell Broadcast}, CPP gravitation series, V0.2 (2026).
+\bibitem{gr1c} T.~L. Abshier, \emph{GR-1c: Strong-Field GR}, V2.2 with
+the Patch-3262 corrigendum (2026).
+\bibitem{gr1b} T.~L. Abshier, \emph{GR-1b: Weak-Field GR} (2026).
+\bibitem{gr1i} T.~L. Abshier, \emph{GR-1i: The Classical Tests of
+Gravitation}, V0 (2026).
+\bibitem{charter} \emph{OPEN-GR-FE-1 Derivation Charter}, Patch 3254;
+founder physical-picture registration, Patches 3255/3257
+(\texttt{founders\_voice/}).
+\bibitem{conv27} \emph{CONV-027 package, returns, and adjudication},
+Patches 3260--3261 (\texttt{series\_gravitation/review/}).
+\bibitem{evans} L.~C. Evans, \emph{Partial Differential Equations},
+2nd ed., AMS (2010) --- mean-value property; spherical means.
+\end{thebibliography}
+
+\end{document}

@@ -186,6 +186,11 @@ sector). **Standing: T-2/T-3 DERIVED-PENDING-REVIEW** (recommend a
 CONV round bundling T-2/T-3 + the FE-1 paper draft). **All three
 charter theorem targets now exist; the Patch-3231 big-wave gate moves
 toward open upon T-2/T-3 review + founder confirmation.**
+**GR-1j V0 DRAFTED (Patch 3264):** the FE-1 consolidation companion —
+T-1 (ratified) + equivalence/corrigendum context + T-2/T-3 + the
+four-script verification record + full PD-001 suite; compile gate
+clean; V0 / DERIVED-PENDING-REVIEW. **Next action: CONV-028 dispatch
+bundling GR-1j V0 + T-2/T-3.**
 
 Deliberately deferred out of GR-1 V0 by founder ruling (Session 148
 handover §5). The single most consequential open item in the arc; the
