@@ -30,7 +30,7 @@
 | SSV₀ | Rest-state SSV | The SSV field energy at the electron mass scale = m_e c²/2 = 0.2555 MeV |
 | PSR | Planck Sphere Radius | The effective displacement per Absolute Moment (shrinks with SSV_abs) |
 | ZBW | Zitterbewegung | The rapid oscillation of a CP between partner DPs |
-| PCD | Perceive-Compute-Displace | The three-phase agentic cycle executed by each CP at every Absolute Moment: perceive local SSV environment, compute response per A1–A9 rules, displace to new position. Preserves the consciousness-as-fundamental commitment of the Conscious Point name. Distinct from ZBW (the between-CPs oscillation in DPs). |
+| PCD | Perceive-Compute-Displace | The three-phase agentic cycle of the substrate, run once per Absolute Moment under the A1′ division of labor (AP-1/AP-3, Patch 2982; founder GR-FE-1 picture, Patch 3255; nexus ruling R-A4-ROLE, 2026-08-10): the **GP** executes Perceive (integrate DI-bit arrivals) and Compute (refresh its SSV_abs/SSV_net registers, imprint outgoing DI-bits); the **CP** executes Displace, moving the distance associated with the SSV_net its GP computed and presented. Per-Moment synchrony (A4/Nexus) and the P→C→D ordering are unchanged from the original picture. Preserves the consciousness-as-fundamental commitment of the Conscious Point name. Distinct from ZBW (the between-CPs oscillation in DPs). *History (anti-erasure): pre-2982 wording read "executed by each CP at every Absolute Moment"; superseded by the A1′ three-type division and pinned by the founder's Patch-3255 ruling ("The CPs do not PCD in the large sense; the GPs do the PCD cycle"). Harmonized Patch 3256; audit: `founders_vision/PCD_executor_harmonization_audit_2026-08-19.md`.* |
 | K₃ | Complete graph on 3 vertices | The triangular face of the tetrahedral cage — the mass-generating structure |
 | K₄ | Complete graph on 4 vertices | The full tetrahedral cage — 4 vertices, 6 edges, 4 faces |
 | TBM | Tribimaximal Mixing | The zeroth-order neutrino mixing pattern derived from K₃ eigenvectors |
@@ -45,7 +45,7 @@
 
 ### Conscious Point (CP)
 
-The irreducible building block of CPP reality. A CP has: (a) definite polarity (positive or negative, electric-type or quark-type), (b) position on the 600-cell lattice, (c) the capacity to perceive its local environment (SSV field), and (d) the capacity to respond according to deterministic rules (the PCD cycle). CPs are not particles — they are the substrate from which particles are built.
+The irreducible building block of CPP reality. A CP has: (a) definite polarity (positive or negative, electric-type or quark-type), (b) position on the 600-cell lattice, (c) the capacity to perceive the state its local GP presents (the GP-integrated SSV registers, per A1′/AP-3), and (d) the capacity to respond by executing the Displace phase of the PCD cycle — moving per the SSV_net its GP computed (founder picture, Patch 3255; harmonized Patch 3256). CPs are not particles — they are the substrate from which particles are built.
 
 ### Dipole Pair (DP)
 
@@ -87,7 +87,7 @@ One of the **three types of Conscious Points** (A1′, ratified Patch 2982): a f
 
 ### Absolute Moment
 
-The fundamental unit of time in CPP. One tick of the cosmic clock during which every CP executes one PCD cycle. Duration: the Planck time t_P ≈ 5.391 × 10⁻⁴⁴ s. Time in CPP is discrete and absolute (not relative), but relativistic time dilation is reproduced through the PSR mechanism.
+The fundamental unit of time in CPP. One tick of the cosmic clock during which every GP executes one PCD cycle (Perceive + Compute) and every CP executes one Displace step per its GP's computed SSV_net (A1′ division of labor; pre-2982 shorthand read "every CP executes one PCD cycle" — per-Moment synchrony and once-per-tick displacement unchanged; harmonized Patch 3256). Duration: the Planck time t_P ≈ 5.391 × 10⁻⁴⁴ s. Time in CPP is discrete and absolute (not relative), but relativistic time dilation is reproduced through the PSR mechanism.
 
 ### Voronoi Cell
 
