@@ -75,3 +75,16 @@ At every flagship paper v1.0 SHIP that produces a new anthology chapter:
 The INDEX.md file is itself a programme-level navigation artifact, parallel in spirit to `INDEX.md` at the repo root and the per-series `README.md` files. It records what the filesystem cannot encode without renaming the files, and it stays up to date because every v1.0 SHIP touches it.
 
 — Codified at Patch 0571c (25 May 2026, the F.1 anthology chapter + INDEX establishment Patch); discipline reference `templates/operating_system.md` §15.12.
+
+---
+
+## GR-arc addendum (Patch 3272, 20 Aug 2026)
+
+**New chapter:** `GR-1j_the_ledger_and_the_law.md` — the field-
+equations story (GR-1j + the FE-1/corrigendum arc, Session 150).
+Discovery chronology: after `spin-III_the_twelve_sided_room.md`
+(SPIN-3 shipped Session 149; the FE-1 arc closed Session 150).
+Book-outline integration: gravitation part (with GR-1's family).
+Four further GR-arc chapters are planned; see
+`book_project/GR_arc_chapter_plan.md` (five-chapter segmentation,
+founder-delegated, CHS lesson mapping noted).
