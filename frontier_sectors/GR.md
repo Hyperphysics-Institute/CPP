@@ -436,3 +436,65 @@ the suite pass — because no compile gate and no review round checks
 whether last March's open problem is still open, and the suite is the
 only step that reads a paper whole. W-B should be expected to keep
 finding these in GR-1c–h.
+
+**OPEN-GR-PPP-1 W-B ROWS 6–8 (Patches 3285–3288, Session 152): GR-1c,
+GR-1d, GR-1e suites complete — EIGHT of eleven done; three remain
+(GR-1f, GR-1g, GR-1h).** All three papers received a CREATED changelog
+(none had one) and STATUS: reconstructed markers where the record does
+not exist. GR-1c's changelog now carries the **V2.2 corrigendum in
+full** — found by the T-1 HALT check against the paper's own exact
+solution, diagnosed to the wrong-potential root cause, APPROVE-EITHER
+5–0 at CONV-027, founder-ratified, enacted with the defective formula
+preserved. That chain previously lived only scattered across reasoning
+fragments; it is the arc's reference case and now has one home.
+
+**THIRD STALENESS FINDING — GR-1c, and the sharpest so far.** Three of
+five open problems delivered or superseded (`op:kerr` → GR-1f/GR-1g;
+`op:echoes` → GR-1d; `op:hawking` → GR-1e substantially); `op:einstein`
+correctly still open. **`op:24cell` is DOUBLY STALE**: it requests a
+discrete-to-continuum proof "on the 600-cell lattice with 24-cell
+Voronoi cells, requiring the eigenvalue spectrum established in Spin
+III." SPIN-3 now exists and supplies that spectrum — **but on the
+REGULAR DODECAHEDRON**, because founder ruling A1 (Patch 3236) retired
+the 24-cell (600-cell dual = 120-cell). The item states a superseded
+geometry as current, not merely a stale status. `.tex` NOT edited —
+third time under the boundary held since 3283. **This strengthens the
+W-D case: a deposited paper asserting a retired geometry is worse than
+one listing a solved problem as open.**
+
+**AND THE PATTERN IS NOT UNIVERSAL — GR-1d and GR-1e have NO staleness
+finding, for a principled reason.** Every open problem in both papers
+depends on the strong-field INTERIOR or a full quantum-field treatment,
+and the Session-150 field-equation programme deliberately stopped at the
+exterior (T-1/T-2/T-3 are census-level exterior results; the interior
+stays at `op:einstein`). Papers whose open problems sit *behind*
+`op:einstein` have not been overtaken. Refines the Session-151 finding:
+status sections rot only where the arc actually advanced past them.
+
+**FORWARD POINTER REGISTERED FOR THE ECHO/EVAPORATION LANE (both papers,
+unexploited):** NOTE-GR-CSTAR-STRONGFIELD — census speed c_* → ~0.29c
+near the exclusion radius — was minted at CONV-027 and flagged
+*explicitly* for the GR-1d/GR-1e lane, and extended at CONV-028 to
+frequency-dependent GW dispersion/birefringence in strong fields.
+**Neither has ever been folded into either paper.** For GR-1d the
+suppression sits in the same region as the echo cavity and would modify
+the tortoise-coordinate travel time — hence the delay formula — if
+significant at the stated precision. For GR-1e the geometric-breakdown
+criterion counts cells and may be untouched, while the force-balance
+stability argument involves propagation and may not be. Bounded,
+well-posed, unasked. Recorded rather than guessed at — resolving it is
+physics, not documentation.
+
+**REVIEW-COVERAGE MAP, now explicit across the arc's legacy papers.**
+None of GR-1a, GR-1b, GR-1c (whole-paper), GR-1d, or GR-1e has had a
+dedicated CONV round. CONV-027 reviewed GR-1c's field-equation
+Proposition **and nothing else in that paper** — so GR-1c's Theorem 1
+(exact Schwarzschild) and Theorem 2 (Planck core) are unreviewed, and
+GR-1d and GR-1e both rest on Theorem 2. Each suite names where a future
+round should start: GR-1a the "by analogy" Q_grav normalization; GR-1b
+the equal-shares result; GR-1c Theorem 1's shell integration and Theorem
+2's Exclusion argument; GR-1d the r₀ = r_S + l_P identification (the
+delay is logarithmically sensitive to it); GR-1e the mechanical-stability
+fixed point (the strong, exposed claim — not the termination argument,
+which is a robust breakdown-of-validity claim). **In GR-1c and GR-1e the
+unreviewed parts and the uncaptured-reasoning parts coincide exactly.**
