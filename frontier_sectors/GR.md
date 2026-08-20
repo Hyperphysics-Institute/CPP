@@ -74,7 +74,35 @@ cross-check the new full-occupancy mechanism against GR-1c/GR-1e before
 quoting); DP-Entities gravitationally silent at LOCAL scale (founder
 expectation, DM-lane confirmation owed); Voronoi-cell-to-PSR ratio OPEN
 (~10^30 GPs/PSR quoted; W-2 must not depend on it or carries it
-symbolically). **W-2 (T-1 derivation attempt) UNBLOCKED — own session.**
+symbolically). **W-2 EXECUTED — Patch 3258, T-1 CANDIDATE DERIVED, WITH
+A HALT FINDING** (`series_gravitation/fe1_derivation/T1_derivation.md`;
+verify `code/3258_t1_relay_verify.py` 10/10): from the census (AP-4
+linearity + equal-redistribution cancellation + one-hop-per-Moment shell
+kernel on the RIGID lattice), statics are EXACTLY flat-lattice
+Laplace/Poisson for any PSR profile — the GR-1a relation k·Δ|SSV| = GM/rc²
+re-derived as the unique vacuum solution, and absolute-lattice
+coordinates identified with the isotropic coordinates (why the corpus
+solution is conformally flat). Dynamics: messenger conservation +
+determinism + full-Moment symmetry force the time-symmetric two-level
+relay u(t+τ)+u(t−τ) = 2M_R u(t) — unitary, dispersion cos(ωτ) = sinc(kR),
+emergent speed c_* = PSR_eff/(√3 t_P) (the √3 is a kinematic
+normalisation at the k standing, Finding F-1; dispersion form flagged as
+future falsifier material, unminted). T-1 candidate (lattice frame,
+conditional-on-PSR/W2): (1/c_*²)∂²_t(Δ|SSV|) − ∇²_lattice(Δ|SSV|) =
+normalized compressed-DP census source. Standing:
+**DERIVED-PENDING-ADJUDICATION** — nothing downstream cites it yet.
+**OPEN-GR-FE1-FTERM (minted Patch 3258, HALT registered per charter §4):**
+the static reduction is NOT the GR-1c Proposition as stated — symbolic
+Check 5: □_g on GR-1c's OWN exact profile = −a³/(2kr⁵)+O(a⁴) (required
+compensator O(a³)) while GR-1c's stated 𝓕-term is O(a⁴) under all three
+readings — i.e. the 𝓕 formula fails against GR-1c's own exact solution,
+independent of the new derivation. Solution-level agreement is EXACT
+(the metric, the classical tests, and the weak-field sector are
+untouched). GR-1c NOT adjusted (HALT discipline). ADJUDICATION OWED
+(founder/panel): (i) GR-1c 𝓕-term corrigendum question; (ii) acceptance
+of the T-1 candidate. **W-3 (Birkhoff — classical uniqueness of the
+harmonic exterior on the lattice frame, near-free if T-1 accepted) and
+W-4 (T-3 source tensor) are GATED on the adjudication.**
 Deliberately deferred out of GR-1 V0 by founder ruling (Session 148
 handover §5). The single most consequential open item in the arc; the
 big-wave deposit gate (Patch 3231 ruling) rests on it.
