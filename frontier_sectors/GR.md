@@ -91,7 +91,8 @@ future falsifier material, unminted). T-1 candidate (lattice frame,
 conditional-on-PSR/W2): (1/c_*²)∂²_t(Δ|SSV|) − ∇²_lattice(Δ|SSV|) =
 normalized compressed-DP census source. Standing:
 **DERIVED-PENDING-ADJUDICATION** — nothing downstream cites it yet.
-**OPEN-GR-FE1-FTERM (minted Patch 3258, HALT registered per charter §4):**
+**OPEN-GR-FE1-FTERM (minted Patch 3258, HALT registered per charter §4;
+DIAGNOSED AND RESOLVED Patch 3259 — PENDING RATIFICATION):**
 the static reduction is NOT the GR-1c Proposition as stated — symbolic
 Check 5: □_g on GR-1c's OWN exact profile = −a³/(2kr⁵)+O(a⁴) (required
 compensator O(a³)) while GR-1c's stated 𝓕-term is O(a⁴) under all three
@@ -103,6 +104,32 @@ untouched). GR-1c NOT adjusted (HALT discipline). ADJUDICATION OWED
 of the T-1 candidate. **W-3 (Birkhoff — classical uniqueness of the
 harmonic exterior on the lattice frame, near-free if T-1 accepted) and
 W-4 (T-3 source tensor) are GATED on the adjudication.**
+**RESOLUTION (Patch 3259, `fe1_derivation/FTERM_reconciliation.md`,
+verify `code/3259_fterm_reconciliation_verify.py` 8/8 exact-symbolic):**
+the Proposition was written for the wrong POTENTIAL. The measured-frame
+vacuum statics is EXACTLY harmonic for the LOG-LAPSE
+N = ln√(−g_tt/c²) = −2·artanh(k·Δ|SSV|/2): □_g N = 0 identically on the
+exact solution (C1). In Δ|SSV| variables the exact compensator is
+F_true = (k²Δ|SSV|/2)/(1−(kΔ|SSV|/2)²)·|∇Δ|SSV||²_g (C2) — an
+O(u)·gradient-squared, where the stated 𝓕 was O(u²)·□ln (slip localised:
+right building block, prefactor one power of u too many, artanh-vs-ln
+resummation; C6). **EQUIVALENCE THEOREM (C3/C4):**
+□_g artanh(kv/2) = [32k/((2−kv)(2+kv)⁵)]·∇²_flat v for GENERIC v —
+pure algebraic factor, no derivative terms — and the full-3D coefficient
+identity f″/f′ + d/du ln(√A B^{1/2}) = 0 holds identically: the corrected
+measured-frame equation and the Patch-3258 lattice-frame T-1 statics are
+THE SAME EQUATION in two variables. The HALT's substantive content is
+DISCHARGED: the T-1 static reduction IS the (corrected) GR-1c equation,
+in full 3D. GR-1c still UNEDITED; proposed corrigendum text (Form A
+log-lapse / Form B quasilinear) in the reconciliation doc §6 — panel
+dispatch (CONV) + founder ratification owed. T-1 candidate standing
+STRENGTHENED (statics equivalence full-3D). Physical reading (commentary):
+clock rates compose multiplicatively ⇒ the measured potential is the LOG
+of the clock rate; the lattice census is additive in Δ|SSV|; the static
+measured-frame nonlinearity is purely the dictionary. F-3 (static
+superposition-in-u vs GR's nonlinear constraints) remains FLAGGED,
+unminted.
+
 Deliberately deferred out of GR-1 V0 by founder ruling (Session 148
 handover §5). The single most consequential open item in the arc; the
 big-wave deposit gate (Patch 3231 ruling) rests on it.
