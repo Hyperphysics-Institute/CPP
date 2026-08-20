@@ -289,3 +289,14 @@ run first; on reservation the worker executes the deposit-metadata
 pass against permanent filenames) → GR-1j V1.0 prep → GR-1i review
 (the last unreviewed GR companion; OPEN-GR-TESTS-1 final discharge
 rides on it). Lane frontier: op:einstein (dynamic/rank-2 sector).
+
+
+**CONV-029 DISPATCHED (Patch 3268):** GR-1i (the last unreviewed GR
+paper) to the five seats — package
+`review/conv029_gr1i_review_package_v1.0.md` (claim chain C-1…C-8;
+triage incl. the perturbation bookkeeping, the deflection identity,
+Shapiro/γ honesty, the constants-provenance call, and the FE-1
+language-harmony check; 3228 inlined; Q6a OPEN-GR-TESTS-1
+final-discharge vote; Q6b GR-1i ship-path vote gated on Q2
+discipline). Receiver: `reviews-CONV-029.md`. On adjudication:
+OPEN-GR-TESTS-1 final-discharges and GR-1 proceeds to V1.0 prep.
