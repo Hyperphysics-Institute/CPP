@@ -93,6 +93,11 @@ the old shorthand exist in founder-voice documents; proposed handling:
   the GR-FE-1 picture the executor attribution is refined — the GP runs
   Perceive+Compute, the CP runs Displace. The per-Moment reshuffling,
   synchrony, and thermalization argument of this entry are unchanged.]"*
+  **[STATUS UPDATE, Patch 3257: APPROVED and APPLIED — the founder ruled
+  the old verbiage obsolete (“replaced with the concept of the GPs as
+  the mediators of the PCD cycle, with each of them being controlled by
+  the Nexus”); annotation applied to `founders_vision.md` with the
+  ruling quoted.]**
 - **`founders_voice/founder_ruling_neutrino_spinning_dp_2026-08-09.md`**
   line "The constituent CPs run the standard PCD": verbatim
   registration, predates nothing (A1′ was already ratified) but reads
@@ -127,6 +132,12 @@ a picture registration. **Question put to the founder; W-2 proceeds
 under reading (a) unless he rules (b).** If (b), an AP-5 charter fires
 before W-2 quotes any payload content.
 
+**RESOLVED (Patch 3257): the founder ruled READING (a)** — verbatim:
+“(a) was the intended mechanism, and my current description was a
+shorthand for the AP-4 process.” No AP-5 fires; AP-4d stands; W-2
+proceeds under AP-4 as ratified. Registered in the GR-FE-1 picture
+file's Patch-3257 addendum.
+
 ## §7 — Ledger
 
 Glossary: 3 entries harmonized (this patch). Founder-voice: 0 edits;
@@ -134,3 +145,17 @@ Glossary: 3 entries harmonized (this patch). Founder-voice: 0 edits;
 edits; physics-impact NO CHANGE verdict recorded (§2). New check item:
 CHECK-DSL-PCD-EXECUTOR (§5). Open founder question: AP-4 payload
 reading (§6). Axiom registry: UNTOUCHED (already current).
+
+## §8 — Post-audit founder statements (Patch 3257)
+
+Both registered verbatim in the GR-FE-1 picture file's addendum
+(`founders_voice/founder_ruling_GR-FE-1_physical_picture_2026-08-19.md`):
+(1) the executor-verbiage OBSOLESCENCE ruling (GPs mediate the PCD
+cycle, each controlled by the Nexus) — confirms §1–§3 and approves the
+§4 annotation, applied; (2) NEW SPECULATION, not adopted: the GPs
+informing the Nexus of each phase completion “may be part of an
+interactive/full-duplex loop” — a potential future A4-clause
+elaboration (per-phase handshake vs bare Moment trigger); no ID minted,
+no charter fired, W-2 does not use it; (3) the §6 AP-4 question
+RESOLVED reading (a). Audit ledger §7 amended accordingly: open founder
+question CLOSED; founder-voice annotations: 1 applied.

@@ -256,3 +256,41 @@ it.
 derivation attempt) is unblocked and proceeds from THIS picture; where
 this picture and charter §5's expectations differ (C-1, C-4), the
 picture governs.
+
+---
+
+## ADDENDUM (same session, Patch 3257) — two founder statements following the harmonization audit
+
+Registered verbatim from the Session-150 chat, post-Patch-3256:
+
+**A-1. Executor-verbiage obsolescence ruling + Nexus/GP loop speculation:**
+
+> Thomas: The "CP runs its own cycle" verbiage is obsolete and has been
+> replaced with the concept of the GPs as the mediators of the PCD
+> cycle, with each of them being controlled by the Nexus. The GPs
+> completing each phase of their processes and informing the Nexus of
+> each phase completion may be part of an interactive/full-duplex loop.
+
+**A-2. AP-4 payload question — RESOLVED, reading (a):**
+
+> Thomas: (a) was the intended mechanism, and my current description
+> was a shorthand for the AP-4 process.
+
+**Worker commentary (labelled; nothing adopted):**
+
+- A-1 first sentence is a RULING: it confirms the harmonization
+  executed at 3256 and approves the 6-June founders_vision annotation
+  (applied at 3257). GPs mediate the PCD cycle; the Nexus controls the
+  Moment synchronization — consonant with R-A4-ROLE (2026-08-10).
+- A-1 second sentence ("may be part of an interactive/full-duplex
+  loop") is founder SPECULATION by its own wording, registered verbatim
+  and NOT adopted as ruled mechanism. If firmed, it would elaborate the
+  A4/Nexus synchronization protocol (per-phase completion handshakes
+  rather than a bare Moment trigger) — a potential future A4-clause
+  amendment in the AP series; no ID minted, no charter fired. Flagged
+  in the harmonization audit §8. W-2 does not use it.
+- A-2 CLOSES the audit §6 open question: the Q1 phrase "carrying the
+  SSV_net and SSV_abs, both EE_q and EE_e" is founder shorthand for the
+  ratified AP-4 payload {origin address, E, S} with receiver-computed
+  SSV_net/SSV_abs (AP-4d exclusive-and-exhaustive division intact). No
+  AP-5 fires. **W-2 proceeds under AP-4 as ratified.**
