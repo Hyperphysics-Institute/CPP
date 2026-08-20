@@ -498,3 +498,90 @@ delay is logarithmically sensitive to it); GR-1e the mechanical-stability
 fixed point (the strong, exposed claim — not the termination argument,
 which is a robust breakdown-of-validity claim). **In GR-1c and GR-1e the
 unreviewed parts and the uncaptured-reasoning parts coincide exactly.**
+
+---
+
+## OPEN-GR-PPP-1 W-B: **COMPLETE** (Patches 3276–3292, Sessions 151–152)
+
+**All eleven gravitational papers now carry documentation suites to the
+SPIN-3 ten-file standard.** Rows: GR-1 (3277), GR-1j (3278), GR-1i
+(3281), GR-1a (3282), GR-1b (3283), GR-1c (3285), GR-1d (3286), GR-1e
+(3287), GR-1f (3289), GR-1g (3290), GR-1h (3291). Nine of the eleven
+had **no changelog at all** and received one; every legacy suite carries
+`STATUS: reconstructed` where the record does not exist, with unrecorded
+content deltas left BLANK rather than invented.
+
+### What the pass produced beyond the suites
+
+**1. One in-paper correction, executed** (Patch 3276, GR-1 → V1.0.2):
+the epistemic ledger contradicted the paper's own abstract. Corrected
+anti-erasure under PD-006.
+
+**2. Four staleness findings, recorded and NOT executed** — GR-1b
+(items 2, 3 delivered), GR-1c (three of five delivered/superseded, and
+`op:24cell` **states a retired geometry as current**), GR-1f (two of
+four delivered by same-week siblings), GR-1g (one partially). Boundary
+held throughout: a paper contradicting *itself* is bookkeeping; a paper
+overtaken by *later work* is a founder decision.
+
+**3. The staleness pattern, refined to a rule.** Status sections rot
+**exactly where the programme advanced past them, and nowhere else.**
+GR-1d, GR-1e, and GR-1h came back clean because every open problem in
+all three sits behind the strong-field interior (`op:einstein`), where
+the arc has not gone. GR-1f's finding is a distinct kind: its
+delivering siblings carry the *same March week* date — a batch shipped
+without a closing cross-reference pass, not a document aging.
+
+**4. A shared bottleneck, newly visible.** Three of GR-1h's four open
+problems **and** GR-1d's amplitude problem all reduce to one uncomputed
+quantity: **Planck-core reflectivity**. Two papers, different
+directions, one blocker behind `op:einstein`. Computing it would unblock
+the arc's two most observationally live results simultaneously. This is
+the strongest argument the suite pass produced for prioritising the
+interior sector.
+
+**5. Forward pointers on an unexploited review note.**
+NOTE-GR-CSTAR-STRONGFIELD (census speed c_* → ~0.29c near the exclusion
+radius) was minted at CONV-027, flagged *explicitly* for GR-1d/GR-1e,
+and never folded into either. The suite pass found it bears on **four**
+papers, not two: GR-1d (echo cavity sits in that region), GR-1e
+(force-balance stability involves propagation), **GR-1f and GR-1g**
+(their bounds are derived from a near-horizon velocity *reaching c* —
+directly exposed to a near-horizon speed reduction), and GR-1h (its
+threshold compares velocities at the horizon). Unworked in all five.
+
+**6. The arc-wide review-coverage map — the pass's most uncomfortable
+output.** **None of the eight legacy companions has ever had a dedicated
+CONV round.** CONV-027 examined GR-1c's field-equation Proposition **and
+nothing else in that paper**, so GR-1c's Theorem 1 (exact Schwarzschild)
+and Theorem 2 (Planck core) are unreviewed — and GR-1d, GR-1e, and
+GR-1g all rest on Theorem 2. Textbook agreement (Gravity Probe B;
+standard Kerr results) is *inherited* agreement and must not be read as
+coverage. Each suite names its own best attack surface:
+
+| Paper | First thing a panel should attack |
+|---|---|
+| GR-1a | the "by analogy" Q_grav normalization, from which G follows |
+| GR-1b | the equal-shares result behind the factor of two |
+| GR-1c | Theorem 1's shell integration; Theorem 2's Exclusion argument |
+| GR-1d | the r₀ = r_S + l_P identification (delay is log-sensitive to it) |
+| GR-1e | the mechanical-stability fixed point (not the termination argument, which is robust) |
+| GR-1f | treating a **pattern** velocity as a subluminality-constrained propagation speed — this carries the Kerr-bound theorem, i.e. the arc's cosmic-censorship claim |
+| GR-1g | **additivity** — Einstein–Maxwell is nonlinear; charge does not generally superpose onto vacuum solutions |
+| GR-1h | Ω₊ read as a literal broadcast frequency — same class as GR-1f, so **one round should examine both together** |
+
+**In GR-1c, GR-1e, GR-1f, GR-1g, and GR-1h the unreviewed parts and the
+uncaptured-reasoning parts coincide exactly.** Five papers where the
+load-bearing step has neither external examination nor a recorded
+derivation.
+
+### Remaining in OPEN-GR-PPP-1
+
+- **W-C: anthology chapters 1–4** per `book_project/GR_arc_chapter_plan.md`
+  (chapter 5 written at 3272). Chapter one, "The One Formula"
+  (GR-1 + 1a/1b), is next.
+- **W-D (proposed, founder decision outstanding):** status-note pass
+  across the legacy companions' open-problem sections, anti-erasure per
+  the 3276 pattern. Scope is now known precisely from the W-B findings —
+  **GR-1b, GR-1c, GR-1f, GR-1g only**; GR-1a, GR-1d, GR-1e, GR-1h need
+  nothing. Bounded at four papers. Recommended before the Zenodo wave.
