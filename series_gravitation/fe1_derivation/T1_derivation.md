@@ -123,8 +123,15 @@ the substrate dissipates.
 **Reversible two-level relay.** Messenger conservation + determinism +
 the founder's full-Moment symmetry (Q3: "there is no symmetry in the
 pieces of a Moment" — the completed cycle couples emission at t−1,
-transit, and delivery at t+1) force the unique linear, conservative,
-time-symmetric one-hop closure:
+transit, and delivery at t+1) force the two-level time-symmetric FORM
+u(t+τ) + u(t−τ) = 𝒜u(t) (annex L1, Patch 3261: ℬ = −1 is the only
+nontrivial time-reversal-invariant one-register recurrence), with 𝒜
+restricted by one-hop locality to the class 2[α·M_R + (1−α)I],
+α ∈ (0,1] (annex L2). The continuum operator below is
+CLOSURE-INDEPENDENT across that entire class (annex L3; the earlier
+"unique closure" wording was withdrawn per the CONV-027 Q5 minority).
+The picture-preferred member, α = 1 (AP-3's per-Moment register
+refresh), is:
 
     u(x, t+τ) + u(x, t−τ) = 2·M_{R(x)}[u](x, t) + source terms.
 
@@ -148,13 +155,14 @@ the GR-1 rate — the GR-1b/GR-1c metric dictionary; light propagating
 BY the relay sees the graded index n ≈ 1 + 2GM/c²r (GR-1i §10).
 
 **Finding F-1 (the √3):** the relay's emergent speed is
-PSR_eff/(√3 t_P), not PSR_eff/t_P. The identification of the OBSERVED
-c with c_* is a kinematic normalisation of exactly the standing GR-1
-§7 assigns to k — registered as a convention, NOT tuned (it is forced
-by the shell kernel; changing it is not available). Its physical
-residue is the full dispersion relation cos(ωτ) = sinc(kR): a
-Planck-scale dispersion FORM that is in principle falsifier material
-(deferred; not minted as a prediction at W-2 — panel review first).
+√α·PSR_eff/(√3 t_P). As the CONV-027 minority correctly pressed, the k
+convention CANNOT absorb this factor in the homogeneous limit (where
+Δ|SSV| = 0); the repair is the explicitly registered kinematic mapping
+**R-CSTAR-MAP** (adjudication §6, Patch 3261): c ≡ R_vac/(√3·t_P) with
+the picture-preferred α = 1 — a registered normalisation at the k
+standing with no long-wave observable content. The physical residue is
+the dispersion FAMILY cos(ωτ) = α·sinc(kR) + (1−α) (annex L4):
+falsifier-shaped, non-vacuous, still deliberately UNMINTED.
 
 **Finding F-2 (two-component extension).** The identical census run on
 the vector channel (AP-4 E/S vectors → SSV_net) yields the same relay

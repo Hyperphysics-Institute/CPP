@@ -137,6 +137,26 @@ paste per seat; both verify scripts inlined in full); returns receiver:
 `review/reviews-CONV-027.md`. Ratification gate for the corrigendum AND
 the T-1 acceptance = CONV-027 returns + founder ruling. W-3/W-4 remain
 gated on that adjudication.
+**CONV-027 RETURNED AND ADJUDICATED (Patch 3261,
+`review/conv027_adjudication.md`; returns verbatim in
+`reviews-CONV-027.md`):** Q3 VERIFIED 5–0; Q4 CORRECT-AND-SUFFICIENT 5–0;
+**Q6a corrigendum APPROVED 5–0 (APPROVE-EITHER)**; Q1 SOUND 4–1 (flipper
+not sustained); Q2 NORMALISATION 4–1; Q5 DISCIPLINED 4–1; **Q6b T-1
+ACCEPTED 4–1** (Copilot's conditions DISCHARGED: panel script runs +
+the A-5 closure annex + ordering-of-limits, `code/3261` 6/6; ChatGPT-seat
+BLOCK's named condition discharged by the registered kinematic mapping
+**R-CSTAR-MAP**: c ≡ R_vac/(√3·t_P), α = 1 picture-preferred; the
+"unique closure" wording withdrawn — annex L1–L3 prove the two-level
+FORM is forced and the continuum operator is CLOSURE-INDEPENDENT over
+the admissible class, with the honest falsifier weakening to the
+dispersion FAMILY cos(ωτ) = α·sinc(kR)+(1−α), unminted). Protocol
+defects recorded: Gemini-seat identity defect (self-labeled "ChatGPT");
+Copilot format deviation. **NOTE-GR-CSTAR-STRONGFIELD** registered
+(DeepSeek novel contribution): c_*(x) → ~0.29c near the exclusion
+radius — GR-1d/GR-1e cross-check flag, unminted. **AWAITING FOUNDER:
+(i) ratify the GR-1c corrigendum (panel 5–0; enactment next turn);
+(ii) confirm T-1 acceptance (panel 4–1) → W-3 + W-4 run;
+(iii) ratify R-CSTAR-MAP.**
 
 Deliberately deferred out of GR-1 V0 by founder ruling (Session 148
 handover §5). The single most consequential open item in the arc; the
