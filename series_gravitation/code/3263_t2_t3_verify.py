@@ -22,6 +22,10 @@ Checks, in the order the T2_T3 document makes its claims:
         the exterior monopole flux constant, hence f' = 0: the exterior
         IS the unique static profile of T2-1. Symbolic implication
         chain checked step by step.
+  T2-3b (added Patch 3266, CONV-028 adjudication): the GPT-seat two-radius
+        argument — constant flux at two radii forces f' = 0 directly,
+        needing only C^1 regularity (discharges the Copilot-seat regularity
+        defect with a STRONGER proof, not just a hypothesis clause).
   T3-1  THE SOURCE OBJECT: the scalar census density rho (compressed-DP
         SSV_abs excess) with its CP-displacement flux J form a conserved
         current: continuity d_t rho + div J = 0 follows from CP-count
@@ -96,6 +100,20 @@ c0 = expr.coeff(Rv, 0); c1_ = expr.coeff(Rv, 1)
 check("step 3: constant flux for all (R,t) forces f'' = 0 and f' = 0 (static exterior)",
       c0 == F1(s_).diff(s_) and sp.simplify(c1_ - F1(s_).diff(s_, 2)/c) == 0,
       "coefficients in R force both derivatives to vanish")
+
+print("== T2-3b (CONV-028, GPT-seat two-radius argument): C^1 suffices ==")
+# With s = t - R/c independent of R on the exterior, constant flux requires
+# f(s) + (R/c) f'(s) = K for all admissible R at fixed s. Subtracting at
+# R1 != R2: (R1 - R2) f'(s)/c = 0 => f'(s) = 0 directly — no second
+# derivative needed (regularity: C^1 with well-defined flux).
+R1, R2, Ksym = sp.symbols('R_1 R_2 K', positive=True)
+F2 = sp.Function('F2')
+eq1 = F2(s_) + (R1/c)*sp.diff(F2(s_), s_) - Ksym
+eq2 = F2(s_) + (R2/c)*sp.diff(F2(s_), s_) - Ksym
+diff12 = sp.simplify(eq1 - eq2)
+check("two-radius subtraction yields (R1-R2) f'(s)/c — f'(s) = 0 with only C^1",
+      sp.simplify(diff12 - (R1 - R2)*sp.diff(F2(s_), s_)/c) == 0,
+      f"difference = {diff12}")
 
 print("== T3-1: conserved census current (discrete mechanism check) ==")
 rng = np.random.default_rng(3263)

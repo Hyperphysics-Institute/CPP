@@ -51,7 +51,13 @@ boundary, not smuggled.
 
 ## §2 — T-2: uniqueness (W-3)
 
-**§2.1 Static uniqueness (exact, unconditional given T-1).** The
+**§2.1 Static uniqueness (exact, unconditional given T-1; decay class
+explicit per CONV-028).** Uniqueness is claimed in the
+asymptotically-flat LOCAL class (u → 0 at infinity). A constant offset
+C₁ ≠ 0 corresponds to embedding in a non-empty background — a
+cosmological configuration, explicitly OUTSIDE this paper's LOCAL
+scope (the DE/EU lanes own it). This is not a universal vacuum
+statement, and is not presented as one. The
 general spherically symmetric static solution of the lattice-frame
 vacuum equation is u = C₁ + C₂/r (symbolic dsolve, T2-1); decay at
 infinity forces C₁ = 0; the Gauss flux of C₂/r is −4πC₂ through EVERY
@@ -70,11 +76,22 @@ field equations themselves forbid monopole radiation), the T-1
 equation alone does not deliver Birkhoff. What delivers it is the
 SOURCE side — precisely T-3:
 
-**Theorem (Birkhoff-type, T-2).** Let a spherically symmetric
-configuration have (i) conserved enclosed census (T-3 continuity with
-J = 0 through the boundary — an isolated, non-accreting source), and
-(ii) no incoming radiation. Then the vacuum exterior is the unique
-static profile of §2.1.
+**Theorem (Birkhoff-type, T-2 — hypotheses explicit per CONV-028).**
+Let a spherically symmetric configuration have (i) conserved enclosed
+census (T-3 continuity with J = 0 through the boundary — an isolated,
+non-accreting source), (ii) no incoming radiation, and (iii) an
+outgoing profile f that is C¹ with a well-defined radial flux on the
+exterior. Then the vacuum exterior is the unique static profile of
+§2.1.
+
+*Regularity note (CONV-028 adjudication).* The Copilot seat flagged
+that the original coefficient-extraction step tacitly used C²
+regularity. The GPT seat supplied a STRONGER proof needing only C¹,
+adopted here and machine-checked (3263 check T2-3b): at fixed
+s = t−R/c, constant flux requires f(s) + (R/c)f′(s) = K for every
+admissible R; subtracting at two radii R₁ ≠ R₂ gives
+(R₁−R₂)f′(s)/c = 0, hence f′(s) = 0 directly — no second derivative,
+no growth condition beyond a well-defined flux.
 
 *Proof chain (each step machine-checked, T2-3):* the general spherical
 vacuum solution is [f(t−r/c) + g(t+r/c)]/r (step 1); no-incoming kills

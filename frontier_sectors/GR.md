@@ -200,6 +200,24 @@ scalar-vs-rank-2 charter language, CONV-027 representation fairness;
 Gemini identity reminder in-document; 3263 script inlined). Receiver:
 `reviews-CONV-028.md`. On adjudication + founder confirmation:
 OPEN-GR-FE-1 closes and the Patch-3231 big-wave gate formally moves.
+**CONV-028 RETURNED AND ADJUDICATED (Patch 3266,
+`review/conv028_adjudication.md`):** Q2 CORRECT-AND-HONEST 5–0; Q3
+SOUND 5–0; Q4 DISCIPLINED 5–0; Q1 SOUND 4–1 (Copilot regularity
+defect, explicitly non-flipping — discharged by ADOPTING the GPT
+seat's STRONGER two-radius proof, C¹-only, new 3263 check T2-3b,
+re-run 10/10); Q5 READY 4–1 (the minority's three revisions adopted
+anyway); **Q6a T-2 RATIFIED (5–0 ratify-family, conditions
+discharged); Q6b T-3 RATIFIED 5–0; Q6c GR-1j SHIP-PATH-CLEAR 4–1
+(Q4 gate met 5–0)** — GR-1j → V0.1 with five adoptions (explicit
+hypotheses; the "what this theorem does NOT give" remark; cosmology
+exclusion; units note; trace mapping; GW-dispersion extension of
+NOTE-GR-CSTAR-STRONGFIELD). Seat hygiene: both CONV-027 defects
+CURED; one Grok reporting anomaly recorded. **OPEN-GR-FE-1: ALL
+THREE THEOREM TARGETS RATIFIED — charter COMPLETE pending the
+founder's one-word confirmation ("Confirm FE-1 complete"), which
+formally MOVES the Patch-3231 big-wave gate.** Then: founder APPROVED
+column (fail-closed) → Isak's DOIs (spin-trio test run first) →
+GR-1j V1.0 prep.**
 
 Deliberately deferred out of GR-1 V0 by founder ruling (Session 148
 handover §5). The single most consequential open item in the arc; the

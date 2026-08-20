@@ -34,9 +34,9 @@
 T-3 (the conserved source current), derived from the three-type
 conscious-point automaton\\
 \normalsize Companion~j to GR-1 --- Conscious Point Physics gravitation
-series --- Version 0}
+series --- Version 0.1}
 \author{Thomas Lee Abshier, ND\\ Hyperphysics Institute}
-\date{20 August 2026}
+\date{20 August 2026 --- V0.1 (CONV-028 revisions)}
 
 \begin{document}
 \maketitle
@@ -325,11 +325,14 @@ the weak field are identical under both statements.
 \section{T-2: uniqueness, and where Birkhoff lives}
 \label{sec:t2}
 
-\begin{theorem}[Static uniqueness --- exact]
+\begin{theorem}[Static uniqueness --- exact; decay class explicit]
 The general spherically symmetric static vacuum solution of
-Eq.~\eqref{eq:t1} is $C_1 + C_2/r$; decay kills $C_1$; the Gauss flux
+Eq.~\eqref{eq:t1} is $C_1 + C_2/r$; the asymptotically-flat LOCAL
+class ($u \to 0$ at infinity) kills $C_1$; the Gauss flux
 $-4\pi C_2$ through every sphere matches the enclosed census, fixing
-$C_2 = GM/kc^2$.  The GR-1c isotropic solution is the UNIQUE static
+$C_2 = GM/kc^2$.  A constant offset $C_1 \neq 0$ corresponds to
+embedding in a non-empty (cosmological) background, explicitly outside
+this paper's LOCAL scope: this is not a universal vacuum statement.  The GR-1c isotropic solution is the UNIQUE static
 spherically symmetric vacuum exterior --- of Eq.~\eqref{eq:t1} and,
 via Theorem~\ref{thm:equiv}, of the corrected measured-frame equation.
 \end{theorem}
@@ -341,17 +344,36 @@ $u = f(t - r/c_*)/r$ is an exact vacuum solution for arbitrary $f$
 equation alone in CPP.
 \end{remark}
 
-\begin{theorem}[Birkhoff-type --- conditional on T-3]
+\begin{theorem}[Birkhoff-type --- conditional on T-3; hypotheses explicit]
 \label{thm:birkhoff}
 For a spherically symmetric configuration with (i) conserved enclosed
-census (T-3 continuity, $\mathbf{J} = 0$ through the boundary) and
-(ii) no incoming radiation, the vacuum exterior is the unique static
-profile.  \emph{Chain (machine-checked):} general spherical vacuum
-solution $[f(t-r/c) + g(t+r/c)]/r$; no-incoming kills $g$; the
-outgoing flux $-4\pi[f + (R/c)\partial_t f]$ must equal the census
-constant at every $(R,t)$; independence of $(t - R/c)$ and $R$ forces
-$f'' = 0$ then $f' = 0$.
+census (T-3 continuity, $\mathbf{J} = 0$ through the boundary --- an
+isolated, non-accreting source), (ii) no incoming radiation, and
+(iii) an outgoing profile $f \in C^1$ with well-defined radial flux on
+the exterior, the vacuum exterior is the unique static profile.
+\emph{Proof (two-radius form, machine-checked):} the general spherical
+vacuum solution is $[f(t-r/c) + g(t+r/c)]/r$; no-incoming kills $g$;
+the outgoing flux $-4\pi[f + (R/c)\partial_t f]$ must equal the census
+constant at every $(R,t)$; at fixed $s = t - R/c$, subtracting the
+flux condition at two radii $R_1 \neq R_2$ gives
+$(R_1 - R_2)f'(s)/c = 0$, hence $f'(s) = 0$ directly --- no second
+derivative and no growth condition are needed.
 \end{theorem}
+
+\begin{remark}[What this theorem does NOT give --- CONV-028 record]
+GR's Birkhoff theorem is unconditional: the Einstein equations
+themselves forbid monopole radiation, with no boundary proviso.  The
+CPP theorem is weaker in exactly this respect: in a setting with
+residual incoming radiation --- e.g.\ a source bathed in an ambient
+wave background --- the theorem as written does not apply, and
+staticity is not guaranteed for a radiating exterior even when the
+enclosed census is conserved.  The no-incoming condition is doing
+genuine physical work (conservation alone does not eliminate a
+homogeneous incoming/outgoing field).  Readers should not over-read
+the result as full Birkhoff equivalence; the modular content is: the
+field equation admits monopoles; census conservation + boundary
+conditions forbid them for isolated sources.
+\end{remark}
 
 \begin{remark}[Where the theorem lives]
 GR stores ``the monopole cannot radiate'' in its field equations; CPP
@@ -382,10 +404,27 @@ normalisation; the companion-5/7 sector is unchanged.
 \begin{remark}[Scope]
 Eq.~\eqref{eq:t1} is the scalar channel; $(\rho, \mathbf{J})$ is
 correspondingly its scalar source current, matching GR-1c's trace
-source $T = \rho c^2$.  The rank-2 object (momentum flux, shear)
-belongs to the vector/tensor broadcast channels and the dynamic
-sector: op:einstein, explicitly OPEN.
+source $T = \rho c^2$.  In GR-language (Gemini-seat suggestion,
+CONV-028): for dust ($p = 0$) the CPP scalar source matches the trace
+of the stress-energy tensor exactly, making the deferral of the
+rank-2 components transparent --- pressure terms, momentum flux, and
+shear belong to the vector/tensor broadcast channels and the dynamic
+sector: op:einstein, explicitly OPEN.  CPP does not yet possess the
+full $T_{\mu\nu}$; it possesses, derived, the trace-sector current.
 \end{remark}
+
+\subsection*{Units note: discrete census to continuum density (CONV-028)}
+The map from CP counts to mass density: let $n_{\rm exc}(x)$ be the
+compressed-DP census excess (DI-bit-influence units) per lattice
+volume, so $\rho_{\rm census} = n_{\rm exc}/V_{\rm cell}$ in census
+units.  The registered normalisation chain fixes mass units through
+the weak-field anchor: $k\,\Dssv = GM/rc^2$ for a point mass $M$,
+whence $\nabla^2(k\,\Dssv) = -(4\pi G/c^2)\rho_{\rm mass}$ identifies
+$\rho_{\rm mass} = (c^2 k/4\pi G)\times$[census-excess source
+density].  Every conversion routes through $k$ (the registered
+normalisation) and $G$; no new constant enters, and the exact-integer
+discrete conservation checks (\S\ref{sec:verify}) hold identically in
+census and mass units.
 
 % =====================================================================
 \section{Numerical verification}
@@ -436,7 +475,11 @@ discreteness is invisible ($(\lP/r)^2$ negligible); what survives is
 structure --- the dispersion FAMILY (Planck-scale, unminted) and the
 strong-field $c_*(x)$ suppression near the exclusion radius
 ($\to \sim 0.29c$; NOTE-GR-CSTAR-STRONGFIELD, flagged for the
-GR-1d/GR-1e lane).  \textbf{Macroscopic shadow:} the field equations
+GR-1d/GR-1e lane; the CONV-028 DeepSeek seat adds: a stress-dependent
+wave speed implies, in the eventual dynamic sector,
+frequency-dependent dispersion and birefringence of gravitational
+waves in strong fields --- registered as an extension of the same
+flag, unminted).  \textbf{Macroscopic shadow:} the field equations
 of gravitation are the shadow of messenger conservation --- what
 conventional physics writes as geometry--matter coupling is, in CPP,
 the continuum limit of a conserved census on a rigid lattice.
