@@ -1,5 +1,17 @@
 # OPEN-GR-FE-1 DERIVATION CHARTER — THE GENERAL CPP FIELD EQUATIONS
 
+**STATUS: CLOSED — COMPLETE (Patch 3267, 20 Aug 2026; founder
+confirmation verbatim: "Confirm FE-1 complete.").** All three theorem
+targets ratified: T-1 (founder + CONV-027, Patch 3262), T-2 and T-3
+(CONV-028, Patch 3266; T-3 unanimous). The GR-1c corrigendum arc opened
+and closed inside the same programme (OPEN-GR-FE1-FTERM: found 3258,
+repaired 3259, panel 5–0, enacted 3262). The Patch-3231 big-wave
+deposit gate's FE-1 condition is DISCHARGED — the gate formally moves.
+op:einstein (the dynamic/rank-2 sector) remains the arc's open
+frontier. The original charter text follows unchanged (anti-erasure).
+
+---
+
 **Patch 3254 (19 Aug 2026, Session 150). Charters the derivation
 registered at Patch 3229 (`frontier_sectors/GR.md`) per the Session-149
 handover's Priority-3 instruction: charter FIRST, then the founder's

@@ -278,3 +278,14 @@ predictions (entry-criterion compliance, no double-count of GR-1c's
 exactness). Compile gate clean. Next lane item: OPEN-GR-FE-1 (charter
 first, then founder physical-picture session, per the Session 149
 handover).
+
+
+**OPEN-GR-FE-1: CLOSED — COMPLETE (Patch 3267; founder verbatim:
+"Confirm FE-1 complete.").** The Patch-3231 big-wave gate's FE-1
+condition is DISCHARGED; the gate FORMALLY MOVES. Remaining
+wave-opening mechanics: founder APPROVED column (fail-closed) → Isak's
+DOI reservations (IN PROGRESS per the founder, 20 Aug — spin-trio test
+run first; on reservation the worker executes the deposit-metadata
+pass against permanent filenames) → GR-1j V1.0 prep → GR-1i review
+(the last unreviewed GR companion; OPEN-GR-TESTS-1 final discharge
+rides on it). Lane frontier: op:einstein (dynamic/rank-2 sector).
