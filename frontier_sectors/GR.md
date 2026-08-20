@@ -325,3 +325,18 @@ ship-ready — GR-1 V1.0; GR-1a–h stable; GR-1c V2.2; GR-1i V0.1
 (cleared unanimous); GR-1j V1.0.** Remaining: deposit mechanics
 (Isak's DOIs → spin-trio test run → queue regeneration → founder
 APPROVED rows). Lane frontier: op:einstein (future charter).
+
+
+**OPEN-GR-PPP-1 REGISTERED (Patch 3271; trigger: founder PPP audit
+question — honest answer NO):** the Paper Production Protocol is NOT
+complete across the arc. Audit: GR-1 was missing Keywords/PLS/CP-GP
+Signature at V1.0 (FIXED this patch → V1.0.1); GR-1a missing
+PLS+Signature; GR-1b–h missing Signature; documentation suites
+changelog-only vs the ~10-file SPIN-3 standard, all 11 papers;
+anthology/TATWD: ZERO of 17 existing chapters cover the GR arc.
+Program: W-A formatting pass GR-1a–h (bounded, next warm-up); W-B
+suites ×11 (multi-session); W-C anthology chapters (≈1 session each;
+FOUNDER DECISION FLAGGED: chapter-per-paper vs a smaller arc-spine
+set — the FE-1 story is prime chapter material). None of it gates the
+Zenodo wave mechanically; suites-before-deposit preference on
+flagship rows flagged for the founder.

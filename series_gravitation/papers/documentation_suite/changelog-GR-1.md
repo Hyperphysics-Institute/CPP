@@ -22,3 +22,15 @@ of THIS paper unchanged); the Open Problems section entries marked
 CLOSED/DISCHARGED with their execution records; header changelog +
 version/date lines. The epistemic ledger's conditionality (W2/PSR)
 is unchanged — it was already correct. Compile gate clean.
+
+---
+
+## V1.0.1 — 20 August 2026, Patch 3271 (Session 150)
+
+Formatting completion (founder audit question exposed the gap): the
+PD-001 sections Keywords, Plain Language Summary, and CP/GP Signature
+at This Scale were MISSING from GR-1 at V1.0 ship — added now; no
+technical content changed. Registered alongside: OPEN-GR-PPP-1, the
+paper-production completion program for the whole arc (formatting pass
+GR-1a–h; documentation suites ×11; anthology/TATWD chapters — none of
+the GR arc's chapters exist yet). Compile gate clean.
