@@ -20,11 +20,7 @@
 \usepackage{natbib}
 \usepackage{float}
 
-\usepackage{svg}
-\svgsetup{
-    inkscapelatex=false,
-    inkscapeformat=pdf,
-    inkscapepath=svgdir}
+\usepackage{graphicx}
 
 \geometry{letterpaper, margin=1in}
 
@@ -409,7 +405,7 @@ The full LSP is:
 
 \begin{figure}[H]
   \centering
-  \includesvg[width=0.88\textwidth]{fig1_lsp_metric.svg}
+  \includegraphics[width=0.88\textwidth]{fig1_lsp_metric.pdf}
   \caption{The four-component Lattice State Packet (LSP) and its
   mapping to the weak-field metric tensor.
   The scalar component $|\SSV|_{\rm abs} = mc^2/V_0$ (red) sources
@@ -560,7 +556,7 @@ only $0.875$~arcsec.  The LSP recovers the GR value.
 
 \begin{figure}[H]
   \centering
-  \includesvg[width=0.88\textwidth]{fig2_lensing}
+  \includegraphics[width=0.88\textwidth]{fig2_lensing.pdf}
   \caption{Gravitational lensing of starlight by the Sun.
   The blue curve shows the GR-predicted deflection
   $\theta_{\rm GR} = 4GM_\odot/R_\odot c^2 \approx 1.750$~arcsec,
@@ -692,7 +688,7 @@ the information paradox without additional quantum-gravity assumptions.
 
 \begin{figure}[H]
   \centering
-  \includesvg[width=0.82\textwidth]{fig3_psr_horizon.svg}
+  \includegraphics[width=0.82\textwidth]{fig3_psr_horizon.pdf}
   \caption{PSR contraction as a function of radial distance from a
   mass $M$, in units of the Schwarzschild radius $r_s = 2GM/c^2$.
   The blue curve shows
