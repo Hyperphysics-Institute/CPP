@@ -384,3 +384,55 @@ the development vignettes will be correspondingly shorter) and GR-1i
 (recent, CONV-029 records available). Suggested pace 2–3 per session.
 **W-C: chapters 1–4** per `book_project/GR_arc_chapter_plan.md`
 (chapter 5 written at 3272); chapter one "The One Formula" is next.
+
+**OPEN-GR-PPP-1 W-B ROWS 3–5 (Patches 3281–3284, Session 152): GR-1i,
+GR-1a, GR-1b suites complete — five of eleven done, six remaining
+(GR-1c–h).** GR-1i was straightforward (recent paper, CONV-029 records
+in-repo). The two legacy companions required a different discipline and
+got it: **GR-1a and GR-1b each received a CREATED changelog** (neither
+had one) and carry **STATUS: reconstructed** on changelog, reasoning,
+and transcript. The V1→V3 content deltas of both papers were never
+recorded and are left BLANK rather than invented; `reviews-GR-1a.md` and
+`reviews-GR-1b.md` each open by stating there is NO paper-level review
+basis, list indirect coverage as indirect, and name the never-reviewed
+load-bearing claim (GR-1a: the "by analogy" Q_grav normalization from
+which G follows; GR-1b: the equal-shares result behind the factor of
+two).
+
+**W-B ROW-4 CROSS-CHECK WORTH THE RECORD:** GR-1a's central relation
+k·Δ|SSV| = GM/rc², obtained in March 2026 by shell-broadcast analogy,
+was **independently re-derived from the messenger census** by the
+field-equation programme five months later (T-1's exact statics; unique
+decaying spherical vacuum solution, Patches 3258–3262). Neither route
+knew the other when it started. For a paper that has never had a panel
+round, this is stronger evidence than a round would have been.
+
+**SECOND STALENESS FINDING — REGISTERED, NOT EXECUTED (Patch 3283).**
+GR-1b's §Open Problems is overtaken by the arc's own later work: item
+(2) exact Schwarzschild with non-singular Planck-scale interior
+**DELIVERED** (GR-1c Theorem 1, r_core = r_S/2); item (3) Kerr
+**DELIVERED** (GR-1f; GR-1g for Kerr–Newman); item (1) full nonlinear
+Einstein still open as stated but substantially advanced (GR-1j T-1,
+rank-2 at op:einstein); item (5) cosmological constant **downgraded**
+rather than advanced (OBL-CAL-LABEL at V3.3; bracketing language
+withdrawn at CONV-020). Status table in
+`GR-1b_weak_field_GR/documentation_suite/phenomena-GR-1b.md`.
+
+**THE .tex WAS NOT EDITED, and the boundary is the point.** A paper
+contradicting *itself* is bookkeeping — corrected unilaterally under
+PD-006 at Patch 3276 (GR-1's ledger). A paper overtaken by *later work*
+is a decision about how a legacy document should read, and belongs to
+the founder. **PROPOSED W-D: a status-note pass across GR-1a–h open-problem
+and future-direction sections**, on the 3276 anti-erasure pattern
+(original retained verbatim; dated status note beside it, naming the
+delivering companion). Bounded — a survey plus one patch per paper.
+**Recommended BEFORE the Zenodo wave: DOIs are permanent, and a
+deposited paper listing a solved problem as open is the kind of thing a
+hostile reader finds first.** Founder decision; not started.
+
+**PATTERN, now explicit: status sections rot silently.** Two findings in
+two sessions (GR-1's ledger, GR-1b's open problems), both surfaced by
+the suite pass — because no compile gate and no review round checks
+whether last March's open problem is still open, and the suite is the
+only step that reads a paper whole. W-B should be expected to keep
+finding these in GR-1c–h.
