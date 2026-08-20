@@ -191,6 +191,15 @@ T-1 (ratified) + equivalence/corrigendum context + T-2/T-3 + the
 four-script verification record + full PD-001 suite; compile gate
 clean; V0 / DERIVED-PENDING-REVIEW. **Next action: CONV-028 dispatch
 bundling GR-1j V0 + T-2/T-3.**
+**CONV-028 DISPATCHED (Patch 3265):** package
+`review/conv028_t2_t3_gr1j_review_package_v1.0.md` (scope fence: T-1/
+corrigendum/R-CSTAR-MAP/annex SETTLED, not re-opened; six frozen
+questions — Q6a T-2 ratify, Q6b T-3 ratify, Q6c GR-1j ship-path;
+triage: Birkhoff circularity, no-incoming honesty, decay class,
+scalar-vs-rank-2 charter language, CONV-027 representation fairness;
+Gemini identity reminder in-document; 3263 script inlined). Receiver:
+`reviews-CONV-028.md`. On adjudication + founder confirmation:
+OPEN-GR-FE-1 closes and the Patch-3231 big-wave gate formally moves.
 
 Deliberately deferred out of GR-1 V0 by founder ruling (Session 148
 handover §5). The single most consequential open item in the arc; the
