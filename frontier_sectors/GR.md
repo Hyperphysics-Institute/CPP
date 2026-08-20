@@ -51,9 +51,18 @@ standing.
 
 **GR-1 cycle note (CONV-026, Patch 3242/3243):** Q4 3–2 RESTATE-REQUIRED fired on the Q1 3–2 OVERCLAIMS finding (abstract/thesis outran the ledger); restate EXECUTED at V0.2 — the W2/PSR conditionality promoted into the abstract and thesis. Q2 4–1 COMPLETE, Q3 5–0 SOUND stand. **Confirmation pass returned 3/3 CONFIRMED-DISCHARGED (Patch 3247; one cross-label recorded — the Gemini window signed "ChatGPT"; attributed by receipt): Q4 = SHIP-PATH-CLEAR; CONV-026 CLOSED.** V1.0 prep unblocked; deposit still gated by the founder's ruling + the tests companion. Next papers in the lane, in readiness order: the tests companion (OPEN-GR-TESTS-1, → GR-1i; bounded, targets frozen) then OPEN-GR-FE-1.
 
-**Status:** OPEN. Deliberately deferred out of GR-1 V0 by founder ruling
-(Session 148 handover §5). The single most consequential open item in the
-arc.
+**Status:** OPEN — CHARTERED (Session 150, Patch 3254:
+`series_gravitation/OPEN-GR-FE-1_derivation_charter.md`). Three theorem
+targets frozen (T-1 general equation with the c08 wave equation as static
+reduction; T-2 Birkhoff-type uniqueness; T-3 source tensor + PCD
+conservation); inheritance bar frozen (W2/PSR standing must not be silently
+upgraded); worker pre-picture expectations on record (charter §5, the A1
+anti-extraction pattern); **founder physical-picture session REQUESTED**
+(charter §6, five questions) — derivation does not start until the
+founder's mechanism narrative is registered verbatim in `founders_voice/`.
+Deliberately deferred out of GR-1 V0 by founder ruling (Session 148
+handover §5). The single most consequential open item in the arc; the
+big-wave deposit gate (Patch 3231 ruling) rests on it.
 
 ---
 
