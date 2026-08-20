@@ -315,3 +315,13 @@ feature, unminted; the implementation-cross-check caution).
 unreviewed papers and no open review gates.** Seat ledger: Grok
 count-line anomaly SECOND occurrence (pattern; next dispatch will
 instruct verbatim count-line pasting). Lane frontier: op:einstein.
+
+
+**GR-1 V1.0 + GR-1j V1.0 SHIPPED (Patch 3270):** closed-state updates
+only (abstract/claims/open-problems with execution records; W2 ledger,
+Table 1, and all derivations untouched); both compile gates clean;
+changelogs updated. **ARC END-STATE: fully derived, fully reviewed,
+ship-ready — GR-1 V1.0; GR-1a–h stable; GR-1c V2.2; GR-1i V0.1
+(cleared unanimous); GR-1j V1.0.** Remaining: deposit mechanics
+(Isak's DOIs → spin-trio test run → queue regeneration → founder
+APPROVED rows). Lane frontier: op:einstein (future charter).

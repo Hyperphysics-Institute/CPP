@@ -44,3 +44,16 @@ listed; fresh content at DERIVED-PENDING-REVIEW.
 
 Compile gate: pdflatex ×2, zero errors, zero undefined references.
 Next: CONV-028 round bundling this paper + T-2/T-3.
+
+---
+
+## V1.0 — 20 August 2026, Patch 3270 (Session 150)
+
+SHIPPED. Review basis complete: T-1 founder-ratified (CONV-027,
+Patch 3262); T-2/T-3 ratified (CONV-028, Patch 3266; T-3 unanimous);
+this paper SHIP-PATH-CLEAR at CONV-028 with all panel adoptions in the
+text (V0.1); GR-1i cleared unanimously at CONV-029; OPEN-GR-FE-1
+CLOSED by founder confirmation (Patch 3267). V1.0 changes: version/
+date lines; claim-discipline item (iv) rewritten from pending-review
+to the completed review basis; Problem Status FE-1 entry to CLOSED.
+No technical content changed. Compile gate clean.

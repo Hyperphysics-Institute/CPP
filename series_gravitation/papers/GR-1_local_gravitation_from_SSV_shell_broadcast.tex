@@ -26,6 +26,12 @@
 %        SHIP-PATH-CLEAR; cycle CONV-026 CLOSED. V1.0 prep is
 %        unblocked; deposit remains gated by the founder's deposit
 %        ruling and OPEN-GR-TESTS-1/OPEN-GR-FE-1.
+%   V1.0 20 Aug 2026  Patch 3270  Review basis complete: CONV-026 Q4
+%        SHIP-PATH-CLEAR + confirmation pass 3/3; OPEN-GR-TESTS-1
+%        finally discharged (CONV-029 unanimous; companion GR-1i V0.1);
+%        OPEN-GR-FE-1 CLOSED (CONV-027/028; companion GR-1j; founder
+%        confirmation Patch 3267). Abstract/claims/open-problems updated
+%        to the closed state; solutions-level claims unchanged.
 %   V0.1 19 Aug 2026  Patch 3230  Companion re-identification: the
 %        eight companions moved into series_gravitation/ as
 %        GR-1a..GR-1h (founder-approved layout + IDs); ladder,
@@ -65,7 +71,7 @@ Schwarzschild, Kerr, and Kerr--Newman metrics\\
 \normalsize Version 0 (assembly draft) --- Conscious Point Physics
 gravitation series}
 \author{Thomas Lee Abshier, ND\\ Hyperphysics Institute}
-\date{19 August 2026}
+\date{19 August 2026 --- Version~1.0 (20 August 2026)}
 
 \begin{document}
 \maketitle
@@ -88,14 +94,19 @@ $\PSR_{\rm eff} = \lP/(1 + k\,\Delta|\SSV|)$, which is why one mechanism
 spans all four regimes.  We state the claim precisely: conditional on the
 PSR constitutive form (W2), CPP reproduces the named \emph{solutions} of
 general relativity --- Schwarzschild in isotropic coordinates, Kerr,
-Kerr--Newman --- exactly, with no free parameters beyond that form; it does \emph{not} yet derive the general Einstein field
-equations, and that derivation is registered as an open problem
-(\texttt{OPEN-GR-FE-1}) rather than claimed.  The four classical tests
+Kerr--Newman --- exactly, with no free parameters beyond that form; At V0 the general field equations were registered as an open
+problem rather than claimed; that problem is now CLOSED
+(\texttt{OPEN-GR-FE-1}, Patches 3254--3267): the general CPP field
+equation is derived from the messenger census, panel-ratified across
+two review rounds, and consolidated in companion GR-1j --- with the
+static sector proven equivalent to the corrected GR-1c Proposition
+(V2.2 corrigendum) and the uniqueness and source theorems (T-2/T-3)
+ratified alongside.  The four classical tests
 (perihelion precession, light deflection, Shapiro delay, gravitational
 redshift) follow from the recovered metric by standard geodesic
 integration; this paper carries the predicted-versus-observed summary
-table, with the derivations in a dedicated tests companion
-(\texttt{OPEN-GR-TESTS-1}).  An epistemic ledger aggregates what is
+table, with the derivations in the dedicated tests companion GR-1i
+(\texttt{OPEN-GR-TESTS-1}: finally discharged, CONV-029 unanimous).  An epistemic ledger aggregates what is
 exact, what is correspondence, and what is conditional across the arc,
 and an inheritance subsection states explicitly what this arc does and
 does not inherit from SR-1, including SR-1's withdrawn prediction set
@@ -146,9 +157,11 @@ everything below.
 \item \textbf{Solutions, not equations.}  This paper claims exact
 reproduction of named metric solutions --- Schwarzschild \emph{in
 isotropic coordinates}, Kerr, Kerr--Newman --- in the stated coordinates,
-so that the claim is checkable.  It does not claim derivation of the
-general field equations (Section~\ref{sec:ledger};
-\texttt{OPEN-GR-FE-1}).
+so that the claim is checkable.  At V0 it did not claim derivation of the
+general field equations; as of V1.0 the derivation EXISTS and is
+panel-ratified (companion GR-1j; \texttt{OPEN-GR-FE-1} CLOSED,
+Patch 3267), while this paper's own claims remain solutions-level
+(Section~\ref{sec:ledger}).
 \item \textbf{Results here, derivations in the companion.}  The
 classical tests appear in this paper as a predicted-versus-observed
 summary table (Table~\ref{tab:tests}); the geodesic derivations live in
@@ -468,18 +481,25 @@ oversight.
 \label{sec:open}
 
 \begin{itemize}[leftmargin=2em]
-\item \texttt{OPEN-GR-FE-1} --- Derive the general CPP field equations
-(and their consequences: Birkhoff-type uniqueness, the CPP
-energy-momentum tensor) from the DI-bit / $\SSV_{\rm abs}$ /
-$\SSV_{\rm net}$ / DP Sea picture, rather than identifying a
-correspondence in the continuum limit.  The single most consequential
-open item in the arc; deliberately deferred out of V0 by founder ruling.
-\item \texttt{OPEN-GR-TESTS-1} --- The classical-tests companion: full
-geodesic derivations of perihelion precession, light deflection, Shapiro
-delay, and gravitational redshift on the c08 metric, as one
-independently citable paper.  Bounded, standard work; the results it
-must reproduce are frozen in Table~\ref{tab:tests} and in this paper's
-verify script.
+\item \texttt{OPEN-GR-FE-1} --- \textbf{CLOSED (Patch 3267;
+founder-confirmed).}  As registered at V0: derive the general CPP field
+equations (and their consequences: Birkhoff-type uniqueness, the CPP
+energy-momentum object) from the DI-bit / $\SSV_{\rm abs}$ /
+$\SSV_{\rm net}$ / DP Sea picture.  Executed Session 150: T-1 derived
+from the messenger census and founder-ratified after review round
+CONV-027; T-2 (Birkhoff-type, conditional on census conservation) and
+T-3 (the conserved census current) ratified at CONV-028; the GR-1c
+Proposition received a panel-approved corrigendum (V2.2) after the
+derivation's self-check exposed a defective compensator formula.
+Consolidated in companion GR-1j.  The remaining frontier is
+\texttt{op:einstein} (the dynamic/rank-2 sector), which stays open.
+\item \texttt{OPEN-GR-TESTS-1} --- \textbf{FINALLY DISCHARGED
+(CONV-029, unanimous; Patch 3269).}  As registered at V0: the
+classical-tests companion.  Delivered as GR-1i (V0.1), with all four
+geodesic derivations, the frozen Table~\ref{tab:tests} values
+reproduced, and the panel's editorial adoptions (constants
+provenance/sensitivity; the PPN $\beta = \gamma = 1$ structural note;
+the reproduces-vs-shares discipline sentence) in the shipped text.
 \end{itemize}
 
 % =====================================================================
