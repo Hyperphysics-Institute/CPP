@@ -57,9 +57,24 @@ targets frozen (T-1 general equation with the c08 wave equation as static
 reduction; T-2 Birkhoff-type uniqueness; T-3 source tensor + PCD
 conservation); inheritance bar frozen (W2/PSR standing must not be silently
 upgraded); worker pre-picture expectations on record (charter §5, the A1
-anti-extraction pattern); **founder physical-picture session REQUESTED**
-(charter §6, five questions) — derivation does not start until the
-founder's mechanism narrative is registered verbatim in `founders_voice/`.
+anti-extraction pattern); **founder physical-picture session ANSWERED —
+W-1 EXECUTED (Patch 3255):** all five §6 questions answered same-session;
+narrative registered verbatim at
+`founders_voice/founder_ruling_GR-FE-1_physical_picture_2026-08-19.md`
+(worker commentary labelled, nothing adopted). Picture-set constraints for
+W-2, per the labelled commentary: conserved quantity = the conscious
+points themselves + the per-Moment DI-bit equal-redistribution invariant
+(redirects §5 E-1); PCD executor = the GP (CP displaces per the GP's
+computed SSV_net; DI-bits a third conserved CP type — glossary/axiom-impact
+flag recorded, not actioned); source = compressed-DP SSV_abs content, no
+independent kinetic term posited (narrows §5 E-2); A3′ load-bearing
+(symmetry at full-Moment granularity only); lattice zero-freedom + CP-only
+configuration freedom + full-occupancy black-hole saturation (T-2 skeleton;
+cross-check the new full-occupancy mechanism against GR-1c/GR-1e before
+quoting); DP-Entities gravitationally silent at LOCAL scale (founder
+expectation, DM-lane confirmation owed); Voronoi-cell-to-PSR ratio OPEN
+(~10^30 GPs/PSR quoted; W-2 must not depend on it or carries it
+symbolically). **W-2 (T-1 derivation attempt) UNBLOCKED — own session.**
 Deliberately deferred out of GR-1 V0 by founder ruling (Session 148
 handover §5). The single most consequential open item in the arc; the
 big-wave deposit gate (Patch 3231 ruling) rests on it.

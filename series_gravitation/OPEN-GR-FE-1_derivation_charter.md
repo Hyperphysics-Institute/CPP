@@ -71,7 +71,17 @@ expectations recorded in §5; founder physical-picture session
 REQUESTED (§6 questions).
 **W-1:** founder's mechanism narrative received → registered verbatim
 in `founders_voice/` (the A1 pattern); worker commentary labelled,
-nothing adopted without the label.
+nothing adopted without the label. **[EXECUTED — Patch 3255,
+19 Aug 2026: all five §6 questions answered; registered verbatim at
+`founders_voice/founder_ruling_GR-FE-1_physical_picture_2026-08-19.md`.
+Key redirections of the §5 expectations, per the labelled commentary:
+the conserved quantity is DI-bit count + the equal-redistribution
+invariant (not an energy-flux bookkeeping); the source is compressed-DP
+SSV_abs content (no independent kinetic-gravitation term posited); A3′
+confirmed load-bearing (symmetry only at full-Moment granularity); the
+Voronoi-cell-to-PSR ratio is an OPEN input (~10^30 GPs per PSR quoted,
+ratio not fixed) — W-2 must not depend on it or must carry it
+symbolically. W-2 UNBLOCKED.]**
 **W-2:** T-1 derivation attempt (own session; verify script for any
 computation; reasoning fragment per patch).
 **W-3:** T-2 uniqueness on the T-1 equation.
