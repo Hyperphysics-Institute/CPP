@@ -340,3 +340,47 @@ FOUNDER DECISION FLAGGED: chapter-per-paper vs a smaller arc-spine
 set — the FE-1 story is prime chapter material). None of it gates the
 Zenodo wave mechanically; suites-before-deposit preference on
 flagship rows flagged for the founder.
+
+**OPEN-GR-PPP-1 W-B PROGRESS (Patches 3276–3278, Session 151): the two
+flagship rows are done — GR-1 and GR-1j now carry full ten-file
+documentation suites** to the SPIN-3 standard (keywords, glossary,
+mechanism, phenomena, philosophy, FAQ, reviews, reasoning pointer-map,
+transcript pointer-map, development vignettes), each beside its existing
+changelog. Every relative pointer in both suites was asserted to resolve
+before commit.
+
+**AND THE SUITE PASS EARNED ITS KEEP IMMEDIATELY — a defect in shipped
+GR-1 V1.0.1 was found by writing it (Patch 3276 → V1.0.2).** GR-1's
+epistemic ledger, §"Correspondence claims", still asserted that the
+general field equation was correspondence-level and "not attempted in
+V0", and that Birkhoff-type uniqueness and the CPP energy-momentum
+object "are likewise open ... the corpus currently contains neither" —
+while the SAME paper's abstract and Open Problems section both recorded
+OPEN-GR-FE-1 as CLOSED. The V1.0 prep (3270) had checked the ledger's
+W2/PSR *conditionality*, which was correct, and not its *status rows*.
+Corrected anti-erasure: V0 rows retained verbatim under a superseded
+heading, each followed by a Status-at-V1.0 note giving the delivered
+result at ratified strength (T-1 CONV-027 4–1; T-2 conditional Birkhoff
+in the asymptotically-flat local class; T-3 a conserved current, NOT a
+rank-2 tensor) and naming what is still not claimed (op:einstein).
+Process finding registered: a ledger has as many independent staleness
+surfaces as it has rows; "the ledger is fine" is not a checkable
+statement, and a status change closes some rows while leaving others
+correct.
+
+**Second defect, and its corpus scan CLOSED:** GR-1's title-block
+version line had lagged at "Version 0 (assembly draft)" against a \date
+of 1.0.1 — the same defect class caught in SPIN-3 six patches earlier
+(3253). The corpus-wide check flagged in `reasoning/3276.md` was then
+RUN across all eleven GR .tex files: no further instances. GR-1a–h carry
+no version string in the title block at all (nothing to disagree), GR-1i
+and GR-1j are consistent. The defect class is confined to papers that
+put a version string in `\title`, and both known instances are now
+fixed. No further W-A2-style sweep is owed on this item.
+
+**W-B REMAINING: nine suites** — GR-1a–h (eight legacy companions,
+March-2026 vintage; source material is thinner than the flagships and
+the development vignettes will be correspondingly shorter) and GR-1i
+(recent, CONV-029 records available). Suggested pace 2–3 per session.
+**W-C: chapters 1–4** per `book_project/GR_arc_chapter_plan.md`
+(chapter 5 written at 3272); chapter one "The One Formula" is next.
