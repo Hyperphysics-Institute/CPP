@@ -129,7 +129,7 @@ the domain's support function. Exact separable FEM in the sphere limit
 approximations (shell-averaged angular metric; dropped cross-terms).
 Motivation: a free (Neumann) condition on ψ is NOT the u-free condition —
 graph-Laplacian natural boundaries silently solve a different spectrum.
-First use: `series_quantum_mechanics/spin_papers/spin-III_600cell_voronoi_ZBW_eigenvalues/scripts/3236_qm8_true_cell_run.py`.
+First use: `series_quantum_mechanics/spin_papers/SPIN-3_600cell_voronoi_ZBW_eigenvalues/scripts/3236_qm8_true_cell_run.py`.
 Reusable wherever a CPP resonator's published BCs live on u but the cavity
 is a lattice cell (any Voronoi-cell mode problem; GR-lane cavity analogues).
 
