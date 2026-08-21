@@ -773,6 +773,39 @@ its missing prerequisite.
   GR-1f/g/h, now with the adopted execution plan (per-paper dependency
   audit for hidden horizon/interior assumptions FIRST — CONV-030
   adoption 4); OPEN-GR-RCORE-2 items i–x.
+- **RCORE-2(iv) DERIVATION (Patch 3320) — THE KERR EXCLUSION SURFACE
+  AND THE ERGOREGION-CENSORSHIP THEOREM: censorship at ALL spins; the
+  3318 χ_crit = 2/√7 retired as a conservative scalar-only artifact.**
+  Two-component census: A1 scalar ≡ lapse dictionary (inverts to
+  s = 2(1−α)/(1+α); reproduces the ratified μ/r̄ EXACTLY at a = 0);
+  A2 vector ≡ ZAMO dragging speed v = ωϖ/α (register demand in local
+  reach units); A3 quadrature |kΔ|² = s² + v²; surface = {s² + v² = 1}.
+  Engine: the exact Kerr identity g_tt = −α²(1 − v²) — the ergosphere
+  IS the v = 1 surface — so F = s² + 1 > 1 there strictly: **the
+  circulation register alone is full at the ergosphere, so total
+  saturation occurs outside it, at every spin and latitude. The same
+  floor that censors the horizon censors the ergoregion. No exterior
+  ergoregion ⇒ no ergoregion instability, any spin, any
+  reflectivity.** Min ergosphere-F 1.706; min clearance 0.25 M;
+  extremal clearance 0.258 M; χ = 0.68 equator: derived surface
+  2.267 M (proxy was 2.052 M). GR-1f's Kerr-bound subluminality
+  relocates to the exclusion surface (register capacity, not a
+  never-formed horizon). SECONDARY FINDING (script's own first run):
+  **prograde-ring burial from χ ≈ 0.55** — at remnant spins the
+  prograde equatorial photon ring lies INSIDE the surface; the echo
+  cavity is RETROGRADE-ring keyed: Δt_ret(χ = 0.68) ≈ 8.59 GM/c³ =
+  2.62 ms GW150914 (+22% over Schwarzschild — the feared 45% (a/M)²
+  systematic is now a derived 22%); f_echo ≈ 380 Hz in-band; the
+  pro/retro asymmetry is itself a CPP-vs-horizon-ECO discriminator.
+  Grade: DERIVATION-CONDITIONAL on A1–A3; **CONV-032 OWED** (attack
+  surface: A3's composition law, A2's identification, eikonal grade);
+  no paper edits until the round + ratification. **OPEN-GR-RCORE-3
+  minted:** Kerr wall spectroscopy (time-domain (2,±2) on the derived
+  co-rotating Dirichlet surface; echo comb; fate of prograde modes
+  above ring burial). Zel'dovich surface superradiance survives
+  censorship as a separate milder channel (registered, unexplored).
+  Verify `code/3320_kerr_surface_derivation_verify.py` 8/8. Record
+  `rcore_derivation/3320_kerr_surface_derivation.md`.
 - **RCORE-2(iv) RECONNAISSANCE (Patch 3318): THE ERGOREGION-BURIAL
   CRITERION — χ_crit = 2/√7 ≈ 0.756, and the GW merger-remnant
   population is GEOMETRICALLY SAFE.** Under the dictionary-consistent
