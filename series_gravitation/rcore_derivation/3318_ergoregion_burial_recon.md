@@ -1,6 +1,18 @@
 # RCORE-2(iv) RECONNAISSANCE — The Ergoregion-Burial Criterion
 ## Patch 3318, 21 Aug 2026 — reconnaissance grade, panel-pending
 
+> **STATUS (Patch 3326, 21 Aug 2026 — founder-ratified CONV-032
+> adjudication): χ_crit = 2/√7 is SUPERSEDED-CONDITIONAL-ON-A1–A3.**
+> The derived Kerr exclusion surface (Patch 3320; CONV-032 CLOSED 5/5)
+> censors the ergosphere at EVERY spin and latitude given the A1–A3
+> census assumptions, strictly superseding this scalar-only proxy —
+> the quadrature only adds census demand, so derived surface ≥ proxy
+> everywhere. The label is CONDITIONAL (per the GPT dissent, adopted):
+> A2's normalization and A3's norm are underived assumptions of the
+> 3320 model (OPEN-GR-RCORE-4); until that discharges, this recon's
+> criterion remains the record of what the scalar sector ALONE
+> guarantees. File stands unedited below, anti-erasure.
+
 **Question addressed (founder, this session):** "Should we pursue the
 spinning-mirror stability question? Does this threaten the edifice of
 GR we have assembled?"

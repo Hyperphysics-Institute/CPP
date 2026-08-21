@@ -816,7 +816,21 @@ its missing prerequisite.
   Q1 "unique extension" WITHDRAWN (minimal, not unique); χ_crit =
   2/√7 relabeled SUPERSEDED-CONDITIONAL-ON-A1–A3 (GPT compromise
   adopted). Adjudication `review/conv032_adjudication.md` v1.0;
-  founder ratification pending — on it, GR-2 drafting opens.**
+  founder RATIFIED 21 Aug 2026 (Patch 3326,
+  `founders_voice/founder_ruling_conv032_censorship_ratification_2026-08-21.md`,
+  verbatim: "Ratify the bundle. Please proceed with GR-2") — all seven
+  items ENACTING Patches 3326–3329; **GR-2 drafting IS OPEN.**
+  **OPEN-GR-RCORE-3 AMENDED (Patch 3326, CONV-032 Q7 adoptions):** the
+  statement now reads — Kerr wall spectroscopy: (a) systematic
+  finite-ℓ, m-mode time-domain analysis on the derived co-rotating
+  Dirichlet surface (the eikonal equatorial ring is NOT the finite-ℓ
+  barrier — Copilot item (a)); (b) surface co-rotation ω(r_surf) in
+  the template as COMMITTED work, not an implicit omission; (c) echo
+  comb structure and the fate of prograde modes above ring burial;
+  (d) quantitative growth-time bounds for the surviving Zel'dovich
+  surface-superradiance channel (censorship of an exterior ergoregion
+  does not dispose of rotating-boundary amplification — GPT closing
+  caution, adopted verbatim).**
 - **OPEN-GR-RCORE-4 (minted Patch 3325, from the CONV-032 GPT
   dissent): DERIVE THE ROTATIONAL CENSUS FUNCTIONAL FROM MICROSCOPIC
   REGISTER DYNAMICS.** Two conjuncts, both currently assumptions of
