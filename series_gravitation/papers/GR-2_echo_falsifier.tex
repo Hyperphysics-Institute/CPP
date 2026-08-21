@@ -15,6 +15,28 @@
 %   adoption). Spin-saturation finding surfaced by the script's own
 %   first run: dDt/dchi = 0.299 GM/c^3 at the benchmark, so the
 %   +/-0.1 spin bar is +/-0.35% -- mass dominates ~20x.
+% V1.1 (Patch 3338, 21 Aug 2026): the OPEN-GR-RCORE-3 Legs A+B
+%   amendment set, ADDITIVE under the existing eikonal scoping
+%   (CONV-034, 5/5, AMENDMENTS-CLEAR 4-1, founder-ratified "Ratify
+%   the bundle"). New Remark (rem:rcore3) in section 3: the comb does
+%   not survive the finer calculation (single top-of-barrier
+%   resonance at l=2 chi=0; N_trapped = 0 at every exposed mode and
+%   every astrophysical spin -- the integer census at eikonal-WKB
+%   grade); a mode-resolved LINE SET replaces it, with the
+%   Eq.(delay) delay retained as the early-transient timescale; line
+%   positions/widths NOT quantitatively predicted (eikonal tops
+%   211/233/260/294 Hz orientation-scale only; the one computed
+%   anchor's +17%/Q~5 is direction and scale, NOT an error model --
+%   CONV-034 adopted revision); burial sharpens to the whole (l,l)
+%   branch but the onset is repriced to chi ~ 0.665 UNDER THE mu
+%   CORRESPONDENCE with the finite-l onset unquantified and the 0.026
+%   margin possibly inside the correspondence error; the wave-side
+%   check is corroborative AT THE SAME GRADE; co-rotation UNTESTED
+%   for line structure. Section 3 onset labelled "equatorial
+%   eikonal"; Honest Limits items (2) and (5) updated; conclusion
+%   points at the remark. NO shipped claim is falsified as scoped and
+%   no number in the template table changes; verify script unchanged
+%   at 9/9.
 % V1.0 (Patch 3332, 21 Aug 2026): SHIPPED on CONV-033 (5/5 same-
 %   session; Q7b V1.0-PREP-CLEAR 4-1) with the adjudication's six
 %   adopted revisions folded at the bump (GR-1i/CONV-029 precedent):
@@ -45,6 +67,8 @@
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
 \newcommand{\SSV}{\mathrm{SSV}}
 \newcommand{\Msun}{M_\odot}
 
@@ -54,7 +78,7 @@ CPP Compact Objects}\\[6pt]
 {\large Second series paper of the Conscious Point Physics
 gravitation series (parent: GR-1)}}
 \author{Thomas Lee Abshier, ND\\Hyperphysics Institute}
-\date{21 August 2026 --- Version~1.0}
+\date{21 August 2026 --- Version~1.1}
 
 \begin{document}
 \maketitle
@@ -185,8 +209,9 @@ census model to a physical theorem of CPP.
 The echo cavity is bounded inside by the reflecting surface and
 outside by the photon-ring potential barrier.  At remnant spins the
 derived surface swallows the \emph{prograde} equatorial ring
-($\chi \gtrsim 0.55$; script check~7 puts the onset at
-$\chi = 0.555$), so the surviving eikonal cavity is set by the
+($\chi \gtrsim 0.55$; script check~7 puts the \emph{equatorial
+eikonal} onset at $\chi = 0.555$; the mode-resolved value is higher
+--- see the Leg-A note below), so the surviving eikonal cavity is set by the
 \emph{retrograde} ring: the round-trip delay is
 \begin{equation}
 \Delta t_{\rm ret}(M,\chi)
@@ -242,11 +267,55 @@ not yet in the integrand --- both are committed work under the
 amended OPEN-GR-RCORE-3 and \emph{must precede} any
 matched-filter search template built from this paper.
 
-The echo-comb spacing at the benchmark is
+The eikonal comb spacing at the benchmark is
 $f = 1/\Delta t \approx 381$~Hz (check~8) --- in-band, and in a
 delay range (milliseconds) not covered by the published echo
 searches surveyed here, which target $\sim$$0.1$--$0.3$~s
 delays~\cite{abedi2017,westerweck2018,tsang2020}.
+
+\begin{remark}[V1.1 amendment: what the finite-$\ell$ discharge
+found]
+\label{rem:rcore3}
+OPEN-GR-RCORE-3 Legs A and B have since been discharged at their
+stated grades (Patches 3333--3334; audited CONV-034, 5/5,
+AMENDMENTS-CLEAR 4--1; founder-ratified), and the result refines the
+phenomenology of this section \emph{without contradicting any claim
+scoped above}, exactly as the eikonal labelling anticipated.
+\emph{(i) The comb does not survive the finer calculation.} At
+$\ell = 2$, $\chi = 0$ the wall--barrier cavity ($\sim$$3.5M$)
+supports a single top-of-barrier resonance per parity, not a trapped
+ladder; and on Kerr the Bohr--Sommerfeld census gives
+$N_{\rm trapped} = 0$ for every exposed mode at $\chi = 0.68$ and
+across $\chi \in [0.30, 0.98]$ --- the lengthening retrograde cavity
+and the falling barrier top cancel (the integer census at
+eikonal-WKB grade).  \emph{(ii) What replaces it} is a mode-resolved
+\emph{line set} near the corresponding barrier-top frequencies,
+together with early broadband transients that still arrive at the
+Eq.~\eqref{eq:delay} delay --- so $\Delta t_{\rm ret}$ and its error
+budget stand.  Line positions and widths are \emph{not} yet
+quantitatively predicted; the equatorial eikonal tops
+($211/233/260/294$~Hz at the benchmark for
+$(2,-2)/(2,-1)/(2,0)/(2,+1)$) are orientation-scale only, and the
+single computed anchor ($\chi = 0$, $\ell = 2$: true position
+$\sim$$17\%$ above its eikonal top, $Q \approx 5$) gives the
+direction and rough scale of the above-top shift, \emph{not} an
+error model.  Full-Teukolsky positions and widths are the remaining
+RCORE-3 computation.  \emph{(iii) Burial sharpens but reprices}: the
+entire corotating $(\ell,\ell)$ branch is buried at $\chi = 0.68$
+($\mu_{\rm crit} = 0.774$ against $\mu(\ell,\ell) \ge 0.8$), so the
+discriminator of \S\ref{sec:discriminator} survives as the
+\emph{ordering of the line set}; but the onset is
+$\chi \approx 0.665$ \emph{under the eikonal/geodesic $\mu$
+correspondence}, the finite-$\ell$ onset is unquantified, and the
+$0.026$ margin at $\chi = 0.68$ may lie inside the correspondence
+error.  The wave-side check (the forbidden region beginning at the
+wall for $(2,+2)$) corroborates this \emph{at the same grade} ---
+same fixed-$Q$ construction --- and does not independently eliminate
+the correspondence uncertainty.  \emph{(iv) Untested:} the static
+Dirichlet wall has not been tested against surface co-rotation for
+\emph{line structure}; the $N = 0$ phase-volume margin makes comb
+restoration by co-rotation implausible but uncomputed.
+\end{remark}
 
 %======================================================================
 \section{Amplitude: exact reflectivity, estimate-grade transmission}
@@ -343,15 +412,22 @@ selection functions for delays two orders of magnitude longer.
 (1)~Every spin-sector statement is conditional on A1--A3;
 OPEN-GR-RCORE-4 is the discharge path, and until it lands the
 censorship theorem and the burial finding are theorems of the census
-model.  (2)~Eikonal grade: finite-$(\ell,m)$ wall spectroscopy and
-surface co-rotation (amended OPEN-GR-RCORE-3) precede search
-templates.  (3)~The Zel'dovich \emph{surface}-superradiance channel
+model.  (2)~Eikonal grade: finite-$(\ell,m)$ wall spectroscopy is now
+partly discharged (Remark~\ref{rem:rcore3}) --- it replaces the comb
+with a line set and reprices the burial onset --- while
+full-Teukolsky line positions/widths and surface co-rotation remain
+open under OPEN-GR-RCORE-3 and precede any search template.  The
+mode-resolved burial onset ($\chi \approx 0.665$) is a
+geodesic-correspondence estimate, not an established finite-$\ell$
+threshold, and its margin at the benchmark spin is thin.  (3)~The Zel'dovich \emph{surface}-superradiance channel
 (rotating-reflector amplification without an ergoregion) survives
 censorship; growth-time bounds are committed under RCORE-3 ---
 censorship of an exterior ergoregion does not dispose of
 rotating-boundary amplification.  (4)~The chain inherits the parent
-series' W2/PSR conditionality.  (5)~This paper is V0, not yet
-panel-reviewed; its inputs are reviewed, its assembly is not.
+series' W2/PSR conditionality.  (5)~This paper is V1.1: the assembly was
+reviewed at CONV-033 (5/5, V1.0-PREP-CLEAR 4--1) and the
+finite-$\ell$ amendments at CONV-034 (5/5, AMENDMENTS-CLEAR 4--1),
+both founder-ratified.
 
 %======================================================================
 \section{Conclusion}
@@ -359,7 +435,9 @@ panel-reviewed; its inputs are reviewed, its assembly is not.
 %======================================================================
 
 CPP's compact objects must echo, at $2.62$~ms $\pm 6.5\%$ for
-GW150914, at $5\%$ of ringdown, keyed to the retrograde ring, with
+GW150914 (the delay of Eq.~\eqref{eq:delay}, now carried by early
+transients rather than a trapped comb --- Remark~\ref{rem:rcore3}),
+at $5\%$ of ringdown, keyed to the retrograde ring, with
 no ergoregion instability at any spin --- and the data that can
 convict or acquit this chain is already on disk.  The template is
 effectively mass-only \emph{at equatorial eikonal grade} for the

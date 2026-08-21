@@ -56,3 +56,37 @@ uncertainty. No numbers changed; verify script unchanged, 9/9 PASS
 (FAST 4/4). Compile gate: pdflatex ×2, 0 errors, 0 undefined refs,
 7 pages. Deposit posture: queue row stays fail-closed (founder
 APPROVED column + Isak's DOIs remain the gate).
+
+## V1.1 — 21 August 2026, Patch 3338 (Session 156) — RCORE-3 amendment set
+
+Review basis: CONV-034, 5/5 same-session, AMENDMENTS-CLEAR 4–1
+(`review/conv034_adjudication.md` v1.0); founder-ratified ("Ratify
+the bundle", `founders_voice/founder_ruling_conv034_rcore3_
+ratification_2026-08-21.md`). ADDITIVE under the existing CONV-033
+eikonal scoping — no shipped claim is falsified as scoped, and no
+number in the template table changes; the verify script is untouched
+and still passes 9/9 (FAST 4/4).
+
+New Remark (§3, `rem:rcore3`) records what the finite-ℓ discharge
+found: (i) the comb does not survive — a single top-of-barrier
+resonance at ℓ=2, χ=0, and N_trapped = 0 for every exposed mode at
+χ=0.68 and across χ ∈ [0.30, 0.98] (the integer census at
+eikonal-WKB grade); (ii) a mode-resolved LINE SET replaces it, with
+Eq. (1)'s delay retained as the early-transient timescale, and line
+positions/widths explicitly NOT quantitatively predicted — eikonal
+tops 211/233/260/294 Hz are orientation-scale, and the single
+computed anchor's +17%/Q≈5 gives direction and rough scale, NOT an
+error model (CONV-034 adopted revision); (iii) burial sharpens to
+the entire corotating (ℓ,ℓ) branch, so the discriminator survives as
+line ORDERING, while the onset is repriced to χ ≈ 0.665 UNDER THE μ
+CORRESPONDENCE with the finite-ℓ onset unquantified and the 0.026
+margin possibly inside the correspondence error, and the wave-side
+check is corroborative AT THE SAME GRADE; (iv) co-rotation UNTESTED
+for line structure. Also: §3's onset labelled "equatorial eikonal";
+Honest Limits (2) rewritten and (5) updated to the paper's real
+review basis (CONV-033 + CONV-034, both ratified); conclusion points
+at the remark. Preamble gains a `remark` theorem environment.
+Compile gate: pdflatex ×2, 0 errors, 0 undefined refs, 8 pages.
+Deposit posture unchanged: queue row fail-closed behind the founder
+APPROVED column + Isak's DOIs; publication held until the GR series
+completes.
