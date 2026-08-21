@@ -33,3 +33,26 @@ mass-only.
 Compile gate: pdflatex ×2, 0 errors, 0 undefined refs, 7 pages.
 Standing: V0 / inputs reviewed, assembly NOT yet panel-reviewed —
 a CONV round is the natural next gate before any V1.0/ship move.
+
+## V1.0 — 21 August 2026, Patch 3332 (Session 156) — SHIPPED
+
+Review basis: CONV-033, 5/5 same-session, Q7b V1.0-PREP-CLEAR 4–1
+(`review/conv033_adjudication.md` v1.0). The adjudication's six
+adopted revisions folded at the bump (GR-1i/CONV-029 fold precedent;
+the minority's restate list IS the fold list): (1) amplitude grade
+split — |R| = 1 exact/parameter-free vs ~5% transmission as an
+argument-level GR-1d estimate, in abstract, §4 (retitled "exact
+reflectivity, estimate-grade transmission"), and PLS; strike
+condition retained at estimate grade; (2) "effectively mass-only at
+equatorial eikonal grade" at every occurrence incl. conclusion;
+(3) search-coverage claim cited (Abedi+2017; Westerweck+2018;
+Tsang+2020 — supplied in-round by the falsifier seat) and bounded to
+"surveyed here"; (4) null falsifier operationalized: preregistered
+injection-recovery-efficiency criterion at the predicted delay and
+amplitude; (5) discriminator scoped: CPP surface ordering vs
+horizon-keyed templates, not uniqueness over all ECOs; (6) dedicated
+abstract sentence naming the eikonal systematic the dominant formal
+uncertainty. No numbers changed; verify script unchanged, 9/9 PASS
+(FAST 4/4). Compile gate: pdflatex ×2, 0 errors, 0 undefined refs,
+7 pages. Deposit posture: queue row stays fail-closed (founder
+APPROVED column + Isak's DOIs remain the gate).
