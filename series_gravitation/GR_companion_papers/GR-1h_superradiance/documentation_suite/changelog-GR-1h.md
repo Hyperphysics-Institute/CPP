@@ -30,3 +30,21 @@ suite produced; this changelog created. **No staleness finding:** all
 four open problems are genuinely open, and three of them turn on the
 Planck-core reflectivity that GR-1d also needs and nobody has computed.
 No .tex change.
+
+## V1.1 — 20 August 2026 (Patch 3308) — RCORE delivery notes + F-R1/C* dependency audit
+
+Occasion: the W-B shared-bottleneck finding (3 of this paper's 4 open
+problems reduce to the Planck-core reflectivity) was DISCHARGED by
+OPEN-GR-RCORE-1 (Patch 3297; CONV-030 5–0; founder-ratified). Notes
+per the W-D form (original verbatim): OP-1 amplification — |R|=1 +
+Dirichlet DELIVERED as input, wall relocated to the exclusion surface;
+still open as posed (Teukolsky on the underived Kerr surface;
+tensor/polar wall, RCORE-2(iii)/(iv)). OP-2 — "Planck-core bomb"
+RE-FRAMED as the ergoregion instability of a horizonless spinning
+perfect reflector (RCORE-2(iv), load-bearing for spinning-object
+viability); scalar/vector wall open. OP-3 — reflectivity input
+delivered, geometry input changed, saturation unposed against amended
+geometry. OP-4 untouched (genuinely open, outside the arc). One
+dependency-audit note at the threshold derivation (horizon-defined
+Ω_+; c-vs-c_*; exterior Teukolsky agreement fenced). Compile: 0
+errors, 10pp.

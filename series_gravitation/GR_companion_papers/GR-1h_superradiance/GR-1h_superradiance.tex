@@ -3,6 +3,20 @@
 % Companion 13 to "Mechanistic Derivation of Relativistic Effects
 % via Space Stress Vector (SSV) in the Dipole Sea" (Version 16)
 % Version 1 — 18 March 2026
+% V1.1 (Patch 3308, 20 Aug 2026): status notes on Open Problems 1-3
+%   + one F-R1/C* dependency-audit note. Occasion: OPEN-GR-RCORE-1
+%   (Patch 3297, CONV-030-ratified) computed the Planck-core reflectivity
+%   this paper's problems 1-3 all reduce to (the Session-152 W-B finding
+%   of the shared bottleneck) — |R| = 1 exact, Dirichlet — and relocated
+%   the surface OUTSIDE the never-formed horizon. Problems 1-3 receive
+%   their delivered inputs honestly (delivered-input, not closed:
+%   scalar/vector wall condition and Kerr surface remain open); problem 2's
+%   "Planck-core bomb" is re-framed as the textbook ergoregion instability
+%   of horizonless spinning perfect reflectors (OPEN-GR-RCORE-2(iv)).
+%   Horizon-defined threshold flagged. Original text verbatim, notes
+%   inline (anti-erasure). OP-4 (EM superradiance) untouched: genuinely
+%   open, outside the RCORE arc; the threshold audit note covers its
+%   horizon-defined condition by reference.
 % ==================================================================
 
 \documentclass[12pt]{article}
@@ -45,7 +59,7 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{18 March 2026 --- Version~1}
+\date{18 March 2026 (status notes 20 August 2026) --- Version~1.1}
 
 \begin{document}
 \maketitle
@@ -132,6 +146,15 @@ reflection coefficient exceeds unity when $\omega < m\Oplus$.
 The mechanism is elegant but abstract: the wave satisfies a
 wave equation in a curved spacetime, and the amplification emerges
 from the boundary conditions at the horizon.
+\emph{[Dependency-audit note added Patch 3308, 20 Aug 2026 (CONV-030
+adoption 4).  The threshold $\omega < m\Omega_+$ and the co-rotation
+argument are defined AT the outer horizon, which under the ratified
+horizonless reading (GR-1c V2.3; CONV-030) never forms; the ratified
+R-CSTAR-MAP additionally puts the local substrate wave speed at
+$c_*(\bar r) \leq c$ in the evaluation region.  The exterior Teukolsky
+agreement is unaffected as an exterior statement; the threshold's
+restatement on the exclusion surface, and the c-vs-$c_*$ question, are
+OPEN-GR-RCORE-2.]}
 
 In CPP, the mechanism is transparent at the level of the SSV
 broadcast.  The rotating black hole's azimuthal $\SSV_{\rm net}$
@@ -481,6 +504,16 @@ No new postulates beyond companion~11 are required.
     boundary conditions at the Planck core ($r_0 = \rplus + \lP$).
     The CPP core modifies the near-horizon boundary condition, potentially
     changing the amplification relative to the standard GR result.
+    \emph{[Status note added Patch 3308, 20 Aug 2026.  The key input
+    is DELIVERED: OPEN-GR-RCORE-1 (Patch 3297; CONV-030 5--0) derives
+    $|R_{\rm core}| = 1$ exactly with Dirichlet phase for the axial
+    gravitational sector, and relocates the wall to areal
+    $\tfrac{9}{8}r_S$ --- outside the never-formed horizon (GR-1c
+    V2.3), so the boundary condition is at the exclusion surface, not
+    at $r_+ + \lP$.  STILL OPEN as posed here: the Teukolsky solve
+    with the derived wall on the (underived) Kerr exclusion surface,
+    and the tensor-sector/polar wall condition
+    (OPEN-GR-RCORE-2(iii)/(iv)).]}
 
   \item \textbf{Superradiance from the Planck core.}
     The Planck core (companion~8) is reflective for gravitational
@@ -488,12 +521,28 @@ No new postulates beyond companion~11 are required.
     and vector bosonic waves?  If so, superradiant instability is
     enhanced by the echo cavity between the potential barrier and
     the core, producing a ``Planck-core bomb'' instability.
+    \emph{[Status note added Patch 3308, 20 Aug 2026.  The
+    gravitational-sector reflectivity is now DERIVED ($|R| = 1$,
+    GR-1d V3); the scalar/vector question this item asks remains open
+    (OPEN-GR-RCORE-2(iii)).  RE-FRAMED: with the surface outside the
+    never-formed horizon, the ``Planck-core bomb'' is the textbook
+    \emph{ergoregion instability} of a horizonless spinning perfect
+    reflector --- a sharper and better-studied problem, registered as
+    OPEN-GR-RCORE-2(iv).  Its resolution is load-bearing for the
+    viability of rapidly spinning CPP compact objects.]}
 
   \item \textbf{Boson cloud saturation in CPP.}
     The standard saturation calculation uses the GR Kerr metric.
     CPP corrections at the Planck scale ($\sim (l_P/r_+)^2$) are
     negligible for astrophysical black holes, but the Planck-core
     reflectivity modifies the boson occupation near the horizon.
+    \emph{[Status note added Patch 3308, 20 Aug 2026.  The
+    reflectivity input is DELIVERED for the gravitational sector
+    ($|R| = 1$; scalar bosonic wall condition open,
+    OPEN-GR-RCORE-2(iii)); the geometry input has CHANGED --- the
+    relevant boundary is the exclusion surface at areal
+    $\tfrac{9}{8}r_S$, not a near-horizon region.  The saturation
+    problem is unposed against the amended geometry.]}
 
   \item \textbf{Electromagnetic superradiance.}
     The 12-edge broadcast mechanism also applies to electromagnetic
