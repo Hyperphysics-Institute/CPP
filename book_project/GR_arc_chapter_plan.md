@@ -16,7 +16,11 @@ template).
 
 1. **"The One Formula"** (GR-1 + GR-1a/1b) — the census, the
    PSR response, Coulomb → Newton → Einstein's weak field. Entry
-   lesson. [TO WRITE]
+   lesson. **[WRITTEN — Patch 3311,
+   `chapters/GR-1_the_one_formula.md`, ~2,300 words, post-RCORE so
+   the trailer names the horizonless objects honestly. CHS note
+   embedded: the Q_grav "by analogy" asterisk and its independent
+   payoff as the ethical core.]**
 2. **"The Black Hole That Was Already There"** (GR-1c) — exact
    Schwarzschild from the same formula; rulers shrink, clocks slow,
    the lattice never bends; isotropic coordinates as the lattice's

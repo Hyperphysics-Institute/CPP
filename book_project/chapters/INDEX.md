@@ -88,3 +88,24 @@ Book-outline integration: gravitation part (with GR-1's family).
 Four further GR-arc chapters are planned; see
 `book_project/GR_arc_chapter_plan.md` (five-chapter segmentation,
 founder-delegated, CHS lesson mapping noted).
+
+## GR-arc addendum 2 (Patch 3311, 20 Aug 2026)
+
+**New chapter:** `GR-1_the_one_formula.md` — the arc's ENTRY lesson
+(GR-1 parent + GR-1a/GR-1b, chapter 1 of the five-chapter plan). The
+census (broadcast, dilution, conservation); matter as compressed
+dipoles; the PSR response formula; Newton at first order with the
+honest "by analogy" asterisk on Q_grav and its five-months-later
+independent payoff from the T-1 census derivation (the two-roads
+cross-check); the factor of two as a two-channel census statement
+(equal weak-field potentials by construction; the single-channel rival
+killed by Eddington); the chase-vs-commit epistemology as the parent
+paper's thesis. Dramatic centerpiece: one sentence read to deeper and
+deeper precision — nothing added between Newton and Einstein.
+Discovery chronology: this chapter opens the gravitation part;
+chronologically it sits with the GR arc (Sessions 148–154).
+Book-outline integration: gravitation part, first. CHS lesson note
+embedded (concept load 4; ethical core = label your scaffolding;
+exercise included). Written Session 155-equivalent, after the RCORE
+arc closed, so the trailer honestly names the "strange solid-surfaced
+objects" ahead. Remaining planned: chapters 2–4.
