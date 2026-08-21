@@ -4,6 +4,15 @@
 % Companion 11 to "Mechanistic Derivation of Relativistic Effects
 % via Space Stress Vector (SSV) in the Dipole Sea" (Version 16)
 % Version 1 — 18 March 2026
+% V1.1 (Patch 3306, 20 Aug 2026): W-D status notes on Open Problems 2-4
+%   + dated F-R1/C* dependency-audit notes (CONV-030 adoption 4 executed:
+%   audit for hidden horizon/interior assumptions BEFORE the notes).
+%   Audit findings: thm:kerr_bound consumes (a) evaluation AT the outer
+%   horizon and (b) the ceiling c-vs-c_*; sec:horizons tabulates surfaces
+%   that never form under the ratified horizonless reading; the Penrose
+%   discussion consumes "falling into the horizon". Exterior weak-field
+%   results (Lense-Thirring, GP-B) unaffected. Original text verbatim,
+%   notes inline (anti-erasure). Founder-ratified CONV-030 basis.
 % ==================================================================
 
 \documentclass[12pt]{article}
@@ -45,7 +54,7 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{18 March 2026 --- Version~1}
+\date{18 March 2026 (status notes 20 August 2026) --- Version~1.1}
 
 \begin{document}
 \maketitle
@@ -253,6 +262,21 @@ which is the Kerr bound.  A black hole with $a > GM/c^2$ cannot form
 in CPP because the azimuthal SSV broadcast would exceed $c$.
 \end{theorem}
 
+\emph{[Dependency-audit note added Patch 3306, 20 Aug 2026 (CONV-030
+adoption 4).  This theorem's proof consumes two inputs now flagged:
+(a)~the subluminality condition is evaluated AT the outer horizon
+$r_+$, which under the ratified horizonless reading (GR-1c V2.3;
+CONV-030) never forms --- the natural evaluation surface becomes the
+exclusion surface, whose Kerr-analog location is underived; and
+(b)~the ceiling is taken as $c$, while the ratified R-CSTAR-MAP gives
+the local substrate wave speed $c_*(\bar r) = c/(1 + k\Delta|\SSV|)$,
+equal to $c/2$ at the Schwarzschild surface --- whether broadcast
+subluminality binds at $c$ or at local $c_*$ is exactly the question
+NOTE-GR-CSTAR-STRONGFIELD raised, now subsumed under OPEN-GR-RCORE-2.
+The weak-field results of this paper (Lense--Thirring, Gravity
+Probe~B) are unaffected; the bound's status for the horizonless
+spinning body is open alongside RCORE-2(iv).]}
+
 \begin{proof}
 The Absolute Moment postulate (companion~1~\cite{c1}) requires that all
 LSP broadcasts propagate at exactly $c$.  The azimuthal SSV at the
@@ -417,6 +441,17 @@ metric from reaching the singular configuration: the Planck-core
 boundary applies at the ring radius, replacing the singularity with a
 ring of Planck density.
 
+\emph{[Status note added Patch 3306, 20 Aug 2026.  Under the ratified
+horizonless reading (GR-1c V2.3 corrigendum; CONV-030), the table above
+describes the \emph{would-be} GR surfaces: in CPP the exclusion
+surface sits outside the outer horizon in the Schwarzschild case
+(areal $\tfrac{9}{8}r_S$), so $r_\pm$ are never reached and the
+Cauchy-horizon row describes a region that does not form.  The
+ergosphere row survives --- $r_{\rm ergo}$ lies outside $r_+$ and,
+pending the Kerr-analog surface location (open), outside the surface
+as well.  The Kerr exclusion-surface geometry is underived; registered
+under OPEN-GR-RCORE-2(iv).]}
+
 %======================================================================
 \section{Penrose Process and Energy Extraction}
 \label{sec:penrose}
@@ -427,6 +462,12 @@ ergosphere: a particle entering the ergosphere can split, with one
 fragment falling into the horizon with negative energy (in the frame
 of infinity) and the other escaping with more energy than the original.
 The net energy comes from the black hole's rotational kinetic energy.
+\emph{[Dependency-audit note, Patch 3306: ``falling into the horizon''
+consumes the horizon; under the horizonless reading the negative-energy
+fragment is instead absorbed at --- or reflected by --- the exclusion
+surface, and with $|R| = 1$ derived (GR-1d V3) the ergoregion-stability
+question for a spinning perfect reflector becomes live:
+OPEN-GR-RCORE-2(iv).]}
 
 In CPP, the mechanism is transparent.  Inside the ergosphere, the
 azimuthal $\SSV_{\rm net}$ component carries rotational energy at
@@ -493,6 +534,12 @@ No new postulates beyond companion~8 are introduced.
     SSV magnitude gives the Kerr-Newman metric for a charged, rotating
     black hole.  The mechanism is established; the explicit derivation
     is deferred.
+    \emph{[Status note added Patch 3306 (W-D), 20 Aug 2026.  DELIVERED
+    by companion GR-1g (18 Mar 2026, same batch --- the deferral and
+    the delivery shipped the same week without a closing
+    cross-reference pass, the W-B finding this note repairs).  GR-1g
+    carries the charge-polarity extension explicitly; its own caveats
+    are recorded in its W-D notes (Patch 3307).]}
 
   \item \textbf{Gravitational wave echoes from Kerr.}
     The GW echo calculation of companion~9~\cite{c9} used the
@@ -500,6 +547,15 @@ No new postulates beyond companion~8 are introduced.
     on the spin parameter $a$ and the angular momentum $\ell$ of the
     perturbation mode.  The echo delay acquires a spin-dependent
     correction at order $(a/r_S)^2$.
+    \emph{[Status note added Patch 3306 (W-D), 20 Aug 2026.  The
+    Schwarzschild baseline this item defers from has CHANGED: GR-1d V3
+    (Patch 3302, CONV-030-ratified) relocates the reflecting surface to
+    areal $\tfrac{9}{8}r_S$ and replaces the delay with
+    $(3/2 + 8\ln 2)\,GM/c^3$.  The Kerr extension remains open and now
+    requires the Kerr exclusion-surface location first
+    (OPEN-GR-RCORE-2(iv)); the quoted $(a/r_S)^2$ correction estimate
+    is inherited from the superseded geometry and is unverified against
+    the amended baseline.]}
 
   \item \textbf{Superradiance.}
     A rotating black hole can amplify waves that enter the ergosphere
@@ -508,6 +564,14 @@ No new postulates beyond companion~8 are introduced.
     horizon angular velocity and $m$ is the azimuthal mode number.
     The CPP mechanism for superradiance — azimuthal SSV coupling to
     the wave mode — is identified but not yet quantified.
+    \emph{[Status note added Patch 3306 (W-D), 20 Aug 2026.  DELIVERED
+    at mechanism level by companion GR-1h (18 Mar 2026, same batch).
+    Caveats carried: the threshold $\omega < m\Omega_+$ is defined at
+    the outer horizon, which under the ratified horizonless reading
+    never forms --- the threshold's surface-form restatement, and the
+    stability of a spinning \emph{perfect reflector} ($|R| = 1$,
+    GR-1d V3) against the ergoregion instability, are
+    OPEN-GR-RCORE-2(iv).]}
 \end{enumerate}
 
 %======================================================================
