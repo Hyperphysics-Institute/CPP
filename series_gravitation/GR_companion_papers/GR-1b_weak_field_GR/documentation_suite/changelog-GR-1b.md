@@ -124,3 +124,25 @@ untouched** — (4) and (6) are genuinely open and outside this arc, and
 a status note would.
 
 Compile gate clean (0 errors, 14 pages). No technical content changed.
+
+## V3.6 — 20 August 2026 (Patch 3309) — Note addendum + the figure repair that didn't survive a clone
+
+**(a) Addendum to the 3294 W-D note on Open Problem (2):** both of its
+sentences were overtaken within the week — GR-1c Theorems 1–2 received
+their first external review (CONV-030: Thm 1 SOUND 5–0, Thm 2
+SOUND-WITH-RELABELING 5–0), and the note's own "r_core = r_S/2" gloss
+was the relabeled defect (isotropic radius; areal image (9/8) r_S,
+outside the never-formed horizon). Addendum appended beside the 3294
+note, both verbatim.
+
+**(b) DEFECT FOUND AND FIXED — the 3293 figure repair never survived a
+clone:** `.gitignore`'s blanket `*.pdf` silently excluded the three
+figure PDFs that 3293 generated, so the repo carried only the SVGs and
+every fresh clone compiled with the same three pdftex.def errors 3293
+claimed to have fixed. Found by this patch's own pre-edit baseline
+compile (the 3276 discipline, third catch). Fix: figure PDFs
+regenerated (cairosvg) and committed under a new principled gitignore
+exception (`!**/figures/*.pdf` — figure ASSETS are content, not build
+artifacts). Corpus scan: GR-1b is the only .tex with includegraphics
+dependencies; class closed. Compile: 0 errors, 14 pages, 554 KB
+(figures rendering).
