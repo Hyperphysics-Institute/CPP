@@ -104,6 +104,14 @@ def title_of(t):
 def version_of(t):
     cut = t.find("\\begin{document}")
     head = t[:cut] if cut > 0 else t[:20000]
+    # The \date{} line is authoritative when it carries a version: header
+    # comments cite OTHER papers' versions (e.g. GR-1a citing the parent
+    # "Version~16"), so a max() over the whole header can report a foreign
+    # version. Integer versions ("Version~3") are legal in \date{} lines.
+    m = re.search(r"\\date\{[^{}]*?\bVersion[~\s]*(\d+(?:\.\d+){0,2})\b",
+                  head, re.I)
+    if m:
+        return m.group(1)
     c = re.findall(r"\bVersion[~\s]*(\d+\.\d+(?:\.\d+)?)\b", head, re.I)
     if not c:
         return "—"

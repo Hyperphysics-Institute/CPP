@@ -14,7 +14,7 @@
     "NEVER delete a draft holding a reserved DOI that has already been written into a built PDF."
   ],
   "counts": {
-    "total": 117,
+    "total": 122,
     "withheld": 4,
     "eligible_now": 0
   },
@@ -46,6 +46,17 @@
       "series_foundations/series_superdeterminism/SD-3_apparatus_model.tex",
       "series_foundations/series_superdeterminism/SD-4_nexus_correlation_function.tex",
       "series_foundations/series_superdeterminism/SD-5_k0_derivation.tex",
+      "series_gravitation/GR_companion_papers/GR-1a_newtonian_gravity_from_SSV/GR-1a_gravity_from_SSV_shell_broadcast.tex",
+      "series_gravitation/GR_companion_papers/GR-1b_weak_field_GR/GR-1b_weak_field_GR.tex",
+      "series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/GR-1c_strong_field_GR.tex",
+      "series_gravitation/GR_companion_papers/GR-1d_gravitational_wave_echoes/GR-1d_GW_echoes.tex",
+      "series_gravitation/GR_companion_papers/GR-1e_hawking_radiation_planck_remnant/GR-1e_hawking_radiation.tex",
+      "series_gravitation/GR_companion_papers/GR-1f_kerr_metric_from_rotational_SSV/GR-1f_kerr_metric.tex",
+      "series_gravitation/GR_companion_papers/GR-1g_kerr_newman_charged_rotating_BH/GR-1g_kerr_newman.tex",
+      "series_gravitation/GR_companion_papers/GR-1h_superradiance/GR-1h_superradiance.tex",
+      "series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex",
+      "series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex",
+      "series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex",
       "series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex",
       "series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex",
       "series_phenomena/cosmology/sea_gravitation/DM-2/DM-2_sea_gravitation_dark_sector.tex",
@@ -55,26 +66,20 @@
       "series_quantum_mechanics/papers/QM-4_measurement_problem.tex",
       "series_quantum_mechanics/papers/QM-5_qft_emergence.tex",
       "series_quantum_mechanics/papers/QM-6_capstone.tex",
+      "series_quantum_mechanics/spin_papers/SPIN-1_emergent_spin_from_captured_DPs/SPIN-1_emergent_spin_from_captured_DPs.tex",
+      "series_quantum_mechanics/spin_papers/SPIN-2_standing_wave_subharmonics/SPIN-2_standing_wave_subharmonics.tex",
+      "series_quantum_mechanics/spin_papers/SPIN-3_600cell_voronoi_ZBW_eigenvalues/SPIN-3_600cell_voronoi_ZBW_eigenvalues.tex",
       "series_relativity/SR_companion_papers/c01_absolute_moment_postulate/absolute_moment_postulate.tex",
       "series_relativity/SR_companion_papers/c02_dipole_stiffness_C/c02_dipole_stiffness_C.tex",
       "series_relativity/SR_companion_papers/c03_born_rule/c03_born_rule.tex",
       "series_relativity/SR_companion_papers/c04_ZBW_hbar_mass_units/c04_ZBW_hbar_mass_units.tex",
-      "series_relativity/SR_companion_papers/c05_newtonian_gravity_from_SSV/c05_gravity_from_SSV_shell_broadcast.tex",
       "series_relativity/SR_companion_papers/c06_DP_chaining_as_mass_and_EM_substrate/c06_dipole_chain_patterns_as_mass_EM_subtrate.tex",
-      "series_relativity/SR_companion_papers/c07_weak_field_GR/c07_weak_field_GR.tex",
-      "series_relativity/SR_companion_papers/c08_strong-field_GR.tex/c08_strong-field_GR.tex",
-      "series_relativity/SR_companion_papers/c09_gravitational_wave_echoes/c09_GW_echoes.tex",
-      "series_relativity/SR_companion_papers/c10_Hawking_Radiation_and_the_Planck_Remnant/c10_Hawking_Radiation.tex",
-      "series_relativity/SR_companion_papers/c11_Kerr_metric_from_rotational_SSV/c11_Kerr_metric.tex",
-      "series_relativity/SR_companion_papers/c12_Kerr-Newman_charged_rotating_BH/c12_Kerr_Newman.tex",
-      "series_relativity/SR_companion_papers/c13_superradiance/c13_superradiance.tex",
-      "series_relativity/SR_companion_papers/c14_quark_confinement_qDP_chaining/c14_quark_confinement.tex",
-      "series_relativity/SR_companion_papers/c15_SU3_color_from_600-cell/c15_color_charge.tex",
-      "series_relativity/SR_companion_papers/c20_Spin I emergent_Spin-Captured_DPs/c8 spin_I_emergent_spin_from_captured_DPs.tex",
-      "series_relativity/SR_companion_papers/c21_Spin II standing_wave_subharmonics/c9 spin_II_standing_wave_sub_harmonic_captured_DPs.tex",
       "series_relativity/papers/SR-1_special_relativity_emergence.tex",
       "series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex",
+      "series_standard_model/development-transcripts/SM-12/grok_SU3_color.tex",
       "series_standard_model/papers/SM-10_chain_network_FEM.tex",
+      "series_standard_model/papers/SM-11_quark_confinement_qDP_chaining.tex",
+      "series_standard_model/papers/SM-12_SU3_color_from_600cell.tex",
       "series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex",
       "series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex",
       "series_standard_model/papers/SM-4_charged_lepton_masses_from_k3.tex",
@@ -865,7 +870,7 @@
     {
       "rel": "series_foundations/dp_sea_composition/DP_sea_and_cage_composition.tex",
       "title": "Conscious Point Physics:",
-      "ver": "1.2",
+      "ver": "6",
       "changed": "2026-08-18",
       "cls": "Series paper",
       "withheld": "",
@@ -886,7 +891,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.2",
+        "version": "6",
         "description": "Conscious Point Physics (CPP) derives the Dipole Sea (DP Sea) spectrum and cage compositions for quarks, leptons, and bosons from discrete primitives and Big Bang thermodynamics. The sea mix (eDPs 25\\%, qDPs 25\\%, hDPs A/B 50\\%) emerges from random CP pairing at $ $GeV scales, with energies $ $MeV-TeV for formation/dissociation. Cages form as bare CPs bonded by mixed DPs/hDPs—direct CP-to-CP until tensile gaps (no spacers needed; ZBW prevents collapse). Central affinity skews mixes (quarks qDP/hDP-heavy inner, mixed outer; leptons more uniform). Imbalanced mixes (Boltzmann populated) predict broader decay widths. Bosons (W/Z/Higgs) as averaged sea aggregates explain narrow masses. ZBW prevents collapse until black hole SSV equality. Addresses the cosmological constant problem ($ _ 10^-120\\, _ Planck$) through the GR companion's dynamical, excess-sourced suppression $ _ =(1/8 ) _ Planck(l_P/R_H)^2$ (conditional on the closed strong-field equation); the static $ _ sea/N^4$ ratio coincides with this only at the present epoch and is not the mechanism. $ $99\\% agreement with PDG via simulations. Predictions: Decay widths from mixes, chiral asymmetries from 600-cell edges, boson mass averaging from sea statistics, hDP signatures in flavor-changing decays. Unifies particle assembly—testable via collider data.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -1080,7 +1085,7 @@
     {
       "rel": "series_foundations/series_superdeterminism/SD-5_k0_derivation.tex",
       "title": "Conscious Point Physics:",
-      "ver": "1.1",
+      "ver": "1",
       "changed": "2026-04-02",
       "cls": "Series paper",
       "withheld": "unfinished: declares itself a placeholder",
@@ -1101,7 +1106,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.1",
+        "version": "1",
         "description": "SD\\#4~ cpp_sd4 completed the CPP superdeterminism series with two exact theorems (macroscopic limit $K 0$; single-CP limit $K = K_0 f_H_4$) and one conjecture (the interpolation formula). Two quantitative questions were left open: enumerate The hidden variable factor $K_0( )$: What is the explicit functional form of $K_0( )$, the projection of the particle hidden variable onto the DI-bit exchange degree of freedom? Non-perturbative proof of the interpolation: The conjecture $K K_0 f_H_4$ is supported by a saddle-point calculation but not yet proved to all orders in $ $. enumerate These two questions determine the amplitude of the CPP correction to Bell correlations. The angular form is already exact (SD\\#2) and the ratio test $ E(36°)/ E(120°) -1.065$ does not depend on the amplitude (SD\\#2 eq.~21). Nevertheless, a complete theory must provide the amplitude $A_5 = ^-3/(2 )$ (conjectured) from first principles. This paper records the mathematical programme required to answer both questions, identifies the specific techniques available from existing CPP results, and states what new mathematics is needed. It is a research agenda for future work, not a completed derivation. Upon completion of the derivation, this document becomes Version~1 with the full results.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -1118,6 +1123,479 @@
       "PARENT": "",
       "RELATION": "",
       "COMMUNITY": "",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_gravitation/GR_companion_papers/GR-1a_newtonian_gravity_from_SSV/GR-1a_gravity_from_SSV_shell_broadcast.tex",
+      "title": "Newtonian Gravity from SSV Shell Broadcast",
+      "ver": "3",
+      "changed": "2026-08-20",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule2: declared companion",
+      "zenodo": {
+        "title": "Newtonian Gravity from SSV Shell Broadcast",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
+        ],
+        "publication_date": "2026-08-20",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "3",
+        "description": "We show that Newtonian gravity emerges from the same Space Stress Vector (SSV) shell-broadcast mechanism that produces Coulomb's law, with one essential difference: the gravitational SSV source is mass-energy (a positive scalar) rather than charge polarity (a signed quantity). This difference has two immediate consequences. First, gravity is universally attractive because mass-energy SSV has no polarity --- every ZBW Dipole Particle unit contributes compressive SSV in all directions, with no cancellation. Second, the gravitational coupling constant is $G = c/ ^2$, fixed entirely by the Planck mass $ $ already determined by the 600-cell lattice. The inverse-square law follows from the shell-broadcast geometry established in the Stiffness~$C$ companion. The weakness of gravity relative to electromagnetism is explained as the ratio $F_ grav/F_ EM = (m/ )^2/(e/ )^2$, a pure ratio of Planck-unit suppressions with no free parameters. No new postulates are introduced. This paper closes the classical-force sector of CPP and opens the direct path to the General Relativity companion.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
+      "RELATION": "isSupplementTo",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_gravitation/GR_companion_papers/GR-1b_weak_field_GR/GR-1b_weak_field_GR.tex",
+      "title": "Weak-Field General Relativity",
+      "ver": "3.6",
+      "changed": "2026-08-21",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule2: declared companion",
+      "zenodo": {
+        "title": "Weak-Field General Relativity",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
+        ],
+        "publication_date": "2026-08-21",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "3.6",
+        "description": "We derive the weak-field limit of general relativity in Conscious Point Physics by extending the DI-bit broadcast to include the net SSV vector $ _ net$ alongside the absolute SSV scalar $| |_ abs$. The Lattice State Packet (LSP) is explicitly constructed from the compressive polarization energy $E_ pol = mc^2$ of the eDP cloud abshier2026mass: $| |_ abs = E_ pol/V_0$ sources $g_tt$ (time curvature) and $ _ net$ sources $g_ij$ (spatial curvature). Together they reproduce the weak-field isotropic Schwarzschild metric with no free parameters. The famous factor-of-two between the Newtonian and GR gravitational lensing deflection angles (0.875 vs.\\ 1.75~arcsec) is explained as equal contributions from temporal and spatial curvature --- a retroactive prediction of the two-component LSP structure that independently confirms the classical measurement of eddington1920. Geodesic motion follows from the 12-edge maximum-gradient selection rule in the continuum limit abshier2026am. The impedance of free space $Z_0 = _0/ _0$ is derived from lattice parameters, closing an open problem from the ZDC Chaining companion abshier2026zdc. Gravitational waves arise as lattice perturbations propagating at $c$, consistent with abbott2016. No new postulates beyond the LSP are introduced.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
+      "RELATION": "isSupplementTo",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/GR-1c_strong_field_GR.tex",
+      "title": "Strong-Field General Relativity and the CPP Field Equation",
+      "ver": "2.3",
+      "changed": "2026-08-21",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "Strong-Field General Relativity and the CPP Field Equation",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
+        ],
+        "publication_date": "2026-08-21",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "2.3",
+        "description": "We extend the weak-field GR results of companion~7 to the full nonlinear regime. The PSR formula $ _ eff(r) = /(1 + k\\, | |(r))$, combined with the shell-broadcast source equation $k\\, | | = GM/rc^2$ (exact, from the Newtonian Gravity companion), yields the Schwarzschild metric in isotropic coordinates without approximation (Theorem~ thm:schwarzschild). Standard Schwarzschild follows by coordinate transformation. The CPP field equation governing the self-consistent LSP distribution is identified as a nonlinear wave equation for $ $ that reduces to the linearised Einstein equations in the weak-field limit (Proposition~ prop:field_eq). The CP Exclusion Rule imposes a minimum lattice spacing $ _ eff /2$, preventing the metric from reaching zero at $r = 0$ and replacing the GR singularity with a Planck-density core (Theorem~ thm:core). Additional predictions include a Planck remnant from Hawking evaporation, suppressed scalar/vector gravitational wave modes, and a qualitative derivation of the Kerr frame-dragging term from the angular SSV curl. No new postulates are introduced beyond those of Version~16.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_gravitation/GR_companion_papers/GR-1d_gravitational_wave_echoes/GR-1d_GW_echoes.tex",
+      "title": "Gravitational Wave Echoes from the Planck Core",
+      "ver": "3",
+      "changed": "2026-08-21",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "Gravitational Wave Echoes from the Planck Core",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
+        ],
+        "publication_date": "2026-08-21",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "3",
+        "description": "The CPP strong-field companion (companion~8) established that the CP Exclusion Rule replaces the GR point singularity with a Planck-density core at radius $ = /2$ inside the event horizon. We show that this core acts as a partially reflective boundary for gravitational perturbations, producing post-merger gravitational wave echoes with a characteristic time delay: equation \\;=\\; 2 c\\! \\; \\; 2 c \\! ( ), eq:delay_abstract equation derived from the tortoise-coordinate travel time between the photon-sphere potential barrier ($r 3 /2$) and the effective reflective surface at $r_0 = + $ (quantum Planck boundary just outside the horizon). The correction term $-0.193$ is negligible compared to $ ( / ) 88$--$93$ for all astrophysical black holes. For the GW150914 remnant ($M 62\\,M_ $), the predicted echo delay is $ 112$~ms, with a signal frequency $f_ echo 8.9$~Hz at the boundary of LIGO O4 sensitivity and within the design band of the Einstein Telescope. A table of predictions spanning stellar-mass to intermediate-mass black holes is provided. No new postulates beyond companion~8 are required.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_gravitation/GR_companion_papers/GR-1e_hawking_radiation_planck_remnant/GR-1e_hawking_radiation.tex",
+      "title": "Hawking Radiation and the Planck Remnant",
+      "ver": "1.1",
+      "changed": "2026-08-21",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "Hawking Radiation and the Planck Remnant",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
+        ],
+        "publication_date": "2026-08-21",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "1.1",
+        "description": "We derive the CPP modifications to Hawking black hole evaporation resulting from the Planck core established in companion~8. Standard Hawking radiation proceeds unchanged for $M $. Evaporation terminates when the Schwarzschild radius reaches $ 2 $ — not when the Hawking temperature reaches the Planck temperature, but when the geometric condition $ $ required by the semiclassical approximation breaks down. The result is a stable Planck-mass remnant $M_ rem $ (Proposition~ prop:remnant). We show that this remnant is mechanically stable via a self-sustaining fixed point: gravitational SSV compression is exactly balanced by CP Exclusion repulsion at $ _ eff = /2$ (Proposition~ prop:stability). The remnant does not require external pressure and cannot evaporate further. We discuss implications for the black hole information paradox and observable consequences. No new postulates beyond companion~8 are required.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_gravitation/GR_companion_papers/GR-1f_kerr_metric_from_rotational_SSV/GR-1f_kerr_metric.tex",
+      "title": "The Kerr Metric from Rotational SSV",
+      "ver": "1.1",
+      "changed": "2026-08-21",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "The Kerr Metric from Rotational SSV",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
+        ],
+        "publication_date": "2026-08-21",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "1.1",
+        "description": "We derive the CPP origin of the Kerr metric for a rotating mass. A rotating source with angular momentum $J$ produces an azimuthal $ _ net$ component: equation k\\,( _ net)_ \\;=\\; GJ ^2 c^2 r^3, eq:ssv_phi_abstract equation sourced by the same 12-edge selection rule that generates the Schwarzschild scalar SSV. Via the LSP off-diagonal metric mapping, this produces the Lense-Thirring frame-dragging term: equation g_t \\;=\\; - 2GJ ^2 c^2 r eq:gtphi_abstract equation exactly in the weak-field limit, confirmed by Gravity Probe~B to $0.3\\%$~ everitt2011. The Kerr bound $J GM^2/c$ follows rigorously from the requirement that the azimuthal SSV broadcast velocity not exceed $c$ (Theorem~ thm:kerr_bound). The ergosphere arises where the azimuthal SSV drag velocity equals $c$ (Theorem~ thm:ergosphere). The Schwarzschild limit ($J=0$) is recovered exactly (Corollary~ cor:schwarz_limit). The full Boyer-Lindquist Kerr metric is consistent with the CPP mechanism at all orders (Proposition~ prop:kerr_full); the all-orders derivation from the CPP field equation is Open Problem~ op:allorders. No new postulates beyond companion~8 are introduced.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_gravitation/GR_companion_papers/GR-1g_kerr_newman_charged_rotating_BH/GR-1g_kerr_newman.tex",
+      "title": "The Kerr-Newman Metric from Combined SSV Sources",
+      "ver": "1.1",
+      "changed": "2026-08-21",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "The Kerr-Newman Metric from Combined SSV Sources",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
+        ],
+        "publication_date": "2026-08-21",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "1.1",
+        "description": "We complete the CPP charged black hole family by deriving the Kerr-Newman metric for a rotating, charged mass $(M, J, Q)$. Three SSV components simultaneously source the spacetime: scalar compressive SSV from $M$ (companion~8), azimuthal vector SSV from $J$ (companion~11), and radial vector SSV from charge $Q$ (companion~2). The Kerr-Newman $ $ function: equation _ KN \\;=\\; r^2 - 2Mr + a^2 + Q^2, eq:delta_kn_abstract equation where $Q^2 = k_e Q_ SI^2 G/c^4$ in geometric units, follows from adding the Coulomb SSV contribution to the Kerr $ $. The Kerr-Newman bound $M^2 a^2 + Q^2$ (Theorem~ thm:kn_bound) is derived from SSV subluminality at the outer horizon — generalising the Kerr bound of companion~11. The Reissner-Nordstr\\\"om metric (Corollary~ cor:rn) and the full three-parameter Kerr-Newman metric (Proposition~ prop:kn) are verified in all limiting cases. No new postulates beyond companion~2 and companion~11 are required.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_gravitation/GR_companion_papers/GR-1h_superradiance/GR-1h_superradiance.tex",
+      "title": "Superradiance from the Kerr SSV",
+      "ver": "1.1",
+      "changed": "2026-08-21",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "Superradiance from the Kerr SSV",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
+        ],
+        "publication_date": "2026-08-21",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "1.1",
+        "description": "We derive superradiance from the rotating black hole azimuthal SSV established in companion~11~ c11. The horizon angular velocity $ = ac/(r_+^2 + a^2)$ is the angular frequency of the SSV broadcast at the outer horizon. A bosonic wave of frequency $ $ and azimuthal quantum number $m$ is amplified when: equation \\;<\\; m\\, , eq:threshold_abstract equation because its phase velocity is slower than the rotating SSV field (Theorem~ thm:threshold). The maximum extractable energy is $(1-1/ 2)\\,Mc^2 29.3\\%$ of the rest mass for an extremal Kerr black hole (Proposition~ prop:max_energy). For the Kerr-Newman case~ c12, the threshold generalises to $ < m + q $ (Corollary~ cor:kn). Superradiant instability of ultralight boson clouds produces continuous gravitational wave signals at frequencies $f_ GW 2 c^2/h$ falling in the LIGO O4 band for boson masses $ 10^-13$--$10^-12$~eV and stellar-mass black holes. No new postulates beyond companion~11 are required.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex",
+      "title": "GR-1i: The Classical Tests of Gravitation",
+      "ver": "0.1",
+      "changed": "2026-08-20",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "GR-1i: The Classical Tests of Gravitation",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute"
+        ],
+        "publication_date": "2026-08-20",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "0.1",
+        "description": "GR-1c established --- conditional on the PSR constitutive form, whose SR-1 grounding stands at W2 viability strength (GR-1 7) --- that the CPP shell-broadcast mechanism yields exactly the Schwarzschild metric in isotropic coordinates. This companion works out the standard consequences: the full geodesic derivations of the four classical tests of gravitation on that metric. We derive the timelike orbit equation and the perihelion advance ($42.99''$/century for Mercury), the null geodesic and the light deflection at the solar limb ($1.75''$), the round-trip radar excess (Shapiro) delay at superior conjunction ($ \\!233\\, $s, Earth--Venus, grazing), and the static gravitational redshift ($ / = gh/c^2 = 2.46 10^-15$ over 22.5\\,m; GPS net $+38.5\\, $s/day including the special-relativistic term). The claim discipline is stated once and holds throughout: because the metric is exactly Schwarzschild, every value is identical to the GR prediction by construction. The classical tests therefore discriminate CPP from Newtonian gravity --- decisively, at the factor of two in deflection and at the entirety of the perihelion and Shapiro signals --- but they do not, and cannot, discriminate CPP from general relativity. This paper adds no new physics and no adjustable input; it is entry-criterion compliance, written so that a reader asking ``does this theory pass the classical tests?'' finds the derivations in one independently citable place. Every number is machine-verified in the series verify script ( series\\_gravitation/code/3228\\_classical\\_tests\\_verify.py, 8/8~PASS), which computes the two dynamical tests both in closed form and by independent numeric Binet-equation geodesic integration.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex",
+      "title": "GR-1j: The CPP Field Equations from the Messenger Census",
+      "ver": "1.0",
+      "changed": "2026-08-20",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "GR-1j: The CPP Field Equations from the Messenger Census",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute"
+        ],
+        "publication_date": "2026-08-20",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "1.0",
+        "description": "Conditional on the PSR constitutive form $ _ eff = /(1 + k\\, )$, whose SR-1 grounding stands at W2 viability strength, we derive the general CPP gravitational field equation from the substrate messenger census --- closing the gap GR-1c named as its central limitation: the arc possessed exact solutions but only a correspondence-level equation. The derivation uses three registered facts about the three-type conscious-point automaton (Grid Points compute; charge-bearing CPs displace; DI-bit messengers are conserved, emitted at fixed per-GP count, and delivered at the PSR shell in one Moment): census linearity, homogeneous-Sea cancellation, and the one-hop shell kernel on the rigid absolute lattice. Statics follow exactly: the vacuum equation is flat-lattice Laplace for any PSR profile, its unique decaying spherical solution is the shipped source relation $k\\, = GM/rc^2$, and the absolute-lattice coordinates are identified with the isotropic coordinates --- deriving why the corpus solution is conformally flat. Time-reversal invariance forces a two-level relay closure whose entire admissible class yields the same continuum operator: a variable-speed wave equation, the ratified T-1. Its measured-frame form is exactly the harmonicity of the logarithmic lapse $N = -g_tt/c^2$; the corrected GR-1c Proposition (corrigendum enacted at V2.2 after the five-seat CONV-027 round approved it unanimously) and the lattice equation are one equation in two variables. T-2: the isotropic solution is the unique static spherically symmetric vacuum exterior; the Birkhoff-type theorem holds conditionally --- the bare equation admits monopole radiation, and staticity is enforced by the census conservation law, not by the field equation, mirroring GR's no-monopole mechanism at a different address. T-3: the source object is the conserved census current $( , J)$, with continuity exact from CP conservation and once-per-Moment displacement. Every claim is machine-verified across four scripts (10/10, 8/8, 6/6, 9/9); no Einstein structure is imported, no constant is tuned, and the rank-2/dynamic completion is explicitly bounded at the still-open op:einstein.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex",
+      "title": "GR-1: Local Gravitation from SSV Shell Broadcast",
+      "ver": "1.0.2",
+      "changed": "2026-08-20",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "GR-1: Local Gravitation from SSV Shell Broadcast",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute"
+        ],
+        "publication_date": "2026-08-20",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "1.0.2",
+        "description": "This paper is the series parent for the Conscious Point Physics (CPP) gravitational arc. Its thesis is a single unifying statement, conditional throughout on the PSR constitutive form, whose SR-1 grounding stands at W2 viability strength (Section~ sec:inheritance): given that form, the same Space Stress Vector (SSV) shell-broadcast mechanism that produces Coulomb's law produces, in successive regimes of one nonlinear substrate response, Newtonian gravity, the weak-field limit of general relativity, and the exact Schwarzschild metric in isotropic coordinates --- extended by the companion papers to the Kerr and Kerr--Newman families and their consequences (gravitational-wave echoes, modified Hawking evaporation, superradiance). The nonlinearity resides entirely in the Planck Sphere Radius response formula $ _ eff = /(1 + k\\, | |)$, which is why one mechanism spans all four regimes. We state the claim precisely: conditional on the PSR constitutive form (W2), CPP reproduces the named solutions of general relativity --- Schwarzschild in isotropic coordinates, Kerr, Kerr--Newman --- exactly, with no free parameters beyond that form; At V0 the general field equations were registered as an open problem rather than claimed; that problem is now CLOSED ( OPEN-GR-FE-1, Patches 3254--3267): the general CPP field equation is derived from the messenger census, panel-ratified across two review rounds, and consolidated in companion GR-1j --- with the static sector proven equivalent to the corrected GR-1c Proposition (V2.2 corrigendum) and the uniqueness and source theorems (T-2/T-3) ratified alongside. The four classical tests (perihelion precession, light deflection, Shapiro delay, gravitational redshift) follow from the recovered metric by standard geodesic integration; this paper carries the predicted-versus-observed summary table, with the derivations in the dedicated tests companion GR-1i ( OPEN-GR-TESTS-1: finally discharged, CONV-029 unanimous). An epistemic ledger aggregates what is exact, what is correspondence, and what is conditional across the arc, and an inheritance subsection states explicitly what this arc does and does not inherit from SR-1, including SR-1's withdrawn prediction set (Patch~2474) and withdrawn class-coverage theorem (Patch~2475). Scope: local gravitation only. Cosmological solutions (FRW/Friedmann) are outside this series and are pursued separately under OPEN-EU-1 and the dark-energy programme.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
       "NOTES": ""
     },
     {
@@ -1605,9 +2083,138 @@
       "NOTES": "registration DOI (not a preprint DOI)"
     },
     {
+      "rel": "series_quantum_mechanics/spin_papers/SPIN-1_emergent_spin_from_captured_DPs/SPIN-1_emergent_spin_from_captured_DPs.tex",
+      "title": "SPIN-1: Emergent Spin-12 from Captured Dipole Particle",
+      "ver": "2",
+      "changed": "2026-08-20",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule2: declared companion",
+      "zenodo": {
+        "title": "SPIN-1: Emergent Spin-12 from Captured Dipole Particle",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
+        ],
+        "publication_date": "2026-08-20",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "2",
+        "description": "We derive the electron spin quantum number $s = 1/2$ from first principles in Conscious Point Physics. An unpaired $-$eCP moving through the Dipole Sea captures a Dipole Particle (DP), placing the inner $+$CP at orbital radius $ $ and the outer $-$CP at $ = 2 $. The Coulomb force balance for circular orbits gives the exact angular frequency ratio: equation \\;=\\; 2 2, eq:ratio_abstract equation derived solely from the $1/r^2$ force law and the standing-wave boundary condition. The total orbital angular momentum of the captured DP is: equation L \\;=\\; m_e\\, \\, ^2\\,(2 2+4), eq:L_abstract equation which equals $ /2$ exactly when: equation \\;=\\; 4(1+ 2)^2 \\;=\\; 12+8 2, eq:rin_abstract equation where $ = ^2/(m_e k_e e^2)$ is the Bohr radius. This condition is shown to follow from the Coulomb force balance at the Compton scale. No free parameters are introduced. The mechanism extends naturally to all spin-$1/2$ Standard Model fermions via the same orbital geometry with DP type (eDP or qDP) appropriate to the particle. Spin is emergent, not intrinsic.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
+      "RELATION": "isSupplementTo",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_quantum_mechanics/spin_papers/SPIN-2_standing_wave_subharmonics/SPIN-2_standing_wave_subharmonics.tex",
+      "title": "SPIN-2: Derivation of the Standing-Wave Sub-Harmonic Condition",
+      "ver": "2",
+      "changed": "2026-08-20",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "rule2: declared companion",
+      "zenodo": {
+        "title": "SPIN-2: Derivation of the Standing-Wave Sub-Harmonic Condition",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
+        ],
+        "publication_date": "2026-08-20",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "2",
+        "description": "The Spin~I companion established that the electron spin quantum number $L = /2$ follows from the captured Dipole Particle orbital geometry given the condition $ = 2 $. We derive this condition from the standing-wave mode structure of the ZBW polarization cloud. The ZBW cloud constitutes a radial standing-wave resonator with a node at $r = 0$ (CP Exclusion Rule) and an antinode at the thermal boundary $ = /(2m_e c)$. The allowed modes are: equation _n(r) \\;=\\; (k_n r), k_n \\;=\\; (2n-1) 2 , n = 1,\\,2,\\,3, eq:modes_abstract equation The fundamental mode ($n=1$) has no interior structure. The first sub-harmonic ($n=2$) has an interior antinode at $ /3$ and an interior node at $2 /3$. The captured DP anchors its inner $+$CP at the interior antinode and its outer $-$CP at the interior node, giving: equation \\;=\\; 2 /3 /3 \\;=\\; 2. eq:ratio_abstract equation This ratio is independent of all physical constants and depends only on the integer arithmetic of the trigonometric zeros of the $n=2$ mode. This is exact and independent of all physical constants. Mode 2 is the minimum-energy mode that simultaneously provides an interior antinode and an interior node. The orbital scale differs from the ZBW cloud scale by the factor $6/[ 4(1+ 2)^2]$ where $ $ is the fine structure constant, connecting the Compton scale to the Bohr scale. The derivation of this scale connection from the 600-cell Voronoi eigenvalue spectrum is deferred to Spin~III.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
+      "RELATION": "isSupplementTo",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_quantum_mechanics/spin_papers/SPIN-3_600cell_voronoi_ZBW_eigenvalues/SPIN-3_600cell_voronoi_ZBW_eigenvalues.tex",
+      "title": "SPIN-3: The ZBW Mode Spectrum and the Lattice Voronoi-Cell Eigenvalue Problem",
+      "ver": "1.0.1",
+      "changed": "2026-08-20",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "SPIN-3: The ZBW Mode Spectrum and the Lattice Voronoi-Cell Eigenvalue Problem",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute"
+        ],
+        "publication_date": "2026-08-20",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "1.0.1",
+        "description": "This paper is the capstone of the CPP spin sub-arc. Spin~I established that the captured Dipole Particle orbital geometry yields the electron spin angular momentum $L = /2$ exactly, given the radius condition $ = 2 $. Spin~II derived that condition from the ZBW polarization cloud's standing-wave structure: an open--closed resonator (node at $r=0$ by CP Exclusion, antinode at the thermal boundary $ = /2m_ec$) whose Mode~2 has an interior antinode at $ /3$ and an interior node at $2 /3$ --- ratio $2$, exactly, independent of every physical constant. Spin~III's charter, set when Spin~II was written, is to ground that mode structure in the substrate itself: to derive the spectrum from the eigenvalue problem of the lattice Voronoi cell. This V0 establishes what can currently be established and reports plainly what cannot. Established here: the exact resonator spectrum $k_n = (2n-1) /2 $ with finite-difference verification to $0.01\\%$ across eight modes by two independent constructions; the Mode-2 geometry to $0.1\\%$; the scale-bridge identity $ ^ (I)/ ^ (II) = 6/[4 (1+ 2)^2] = 35.2675$, shown to be an exact algebraic identity rather than a numerical coincidence; and the discreteness bound $( / )^2 7 10^-45$, which fixes the division of labor --- the lattice must supply mode selection, not mode corrections. Diagnosed here: the arc's committed lattice-cell computation (a graph Laplacian on the 24-cell interior) solves the closed (Neumann-type) problem rather than the open--closed one --- the CP-Exclusion node at $r=0$ is never encoded --- so its low spectrum consists of the four 4D dipole modes and its own Mode-2 diagnostic correctly reports no identification. Measured here (V0.1): the founder ruled the domain question --- the 24-cell carried no physical-picture weight; the true Voronoi cell of the 600-cell-based lattice is the regular dodecahedron (dual-120-cell cell) --- and the corrected instrument, frozen before its data existed, was executed: the sphere control reproduces the continuum result to five decimal places, and on the true cell the frozen verdict fires mode2-recovered at both mesh densities (Mode-2 node at $0.6670$ against the exact $2/3$; antinode at $0.3333$; spectrum shifted $0.31\\%$ from the sphere). The lattice cell's icosahedral anisotropy does not disturb the mode topology the captured DP anchors to. Proved here (V0.2), the analytic leg: the icosahedral rotation group admits no invariant spherical harmonic for $1 l 5$ (exact character counts), so the cell's anisotropy lives entirely in $l = 6, 10, 12, $ (measured on the actual cell: $ _6 = 0.051$, forbidden channels at the quadrature floor); within the invariant sector the first anisotropy-carrying mode sits at $kR = 8.211$, far above Mode 2's $3 /2 = 4.712$, so the second invariant mode of the true cell is the anchoring mode --- the lattice must choose Mode 2 (Selection Theorem); and the radial family's fractional node/antinode positions are protected to $O( _6^2)$ (Protection Theorem), with the predicted $ _6^2 = 0.0026$ matching the measured $0.0031$ eigenvalue residual to $20\\%$. What remains registered is only a non-perturbative-in-$ _6$ bound --- a rigor upgrade, not a gap in the physical argument.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
       "rel": "series_relativity/SR_companion_papers/c01_absolute_moment_postulate/absolute_moment_postulate.tex",
       "title": "The Absolute Moment Postulate: Necessity, Consistency",
-      "ver": "3.3",
+      "ver": "3.2",
       "changed": "2026-08-17",
       "cls": "Companion",
       "withheld": "",
@@ -1628,7 +2235,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "3.3",
+        "version": "3.2",
         "description": "The Absolute Moment postulate of Conscious Point Physics (CPP) asserts that every Conscious Point (CP) advances exactly $l_P$ in the timelike direction once per universal tick $t_P = l_P/c$, frame-independently and independent of local Voronoi-cell stress. We establish three results. First, the postulate is necessary: global DI-bit conservation, in which each DI-bit carries a complete four-component address-time vector $( x,\\, t_ abs)$, requires simultaneous ledger reconciliation across cell boundaries; the Perceive-Compute-Displace (PCD) cycle shows that no local, asynchronous tick can satisfy this requirement. Second, the postulate is consistent with the atemporal Nexus: because the Nexus lies outside every Voronoi cell, the timelike component $l_P$ is stress-invariant, supplying the fixed denominator in $ PSR_ eff = l_P/(1+k SSV)$. Third, the postulate is consistent with causal field propagation: the Grid Point SSV quantum propagates outward at one PSR shell per Moment, distributing a fixed total SSV over a growing spherical surface and thereby reproducing the inverse-square falloff required by Coulomb's law and Newtonian gravity. [Band refinement (Version~3.3, Patch 3204, F-SW-10 R-3 fix pass). Under R-OUTWARD-FANOUT (Patch 3135) a GP's received DI-bit count splits equally at every hop among all neighbours with strictly positive outward radial component --- radial-plus-tangential combinations admitted, anti-radial excluded --- so total hop count varies with path. PSR arrival is therefore genuinely a band of roughly 10\\% thickness rather than a mathematically sharp shell, and that thickness is substrate physics (path-length variation), not a protocol artifact: F-E2-3 is answered option (a), reversing the 3134 2 disposition. ``One PSR shell per Moment'' remains exact as the leading-order propagation law and every result in this series is computed at that order; the band is a refinement on the arrival profile, not a correction to the speed. This is the definitional statement of PSR shell propagation for the SR series; the shell language used in the companion papers inherits this refinement and is not separately qualified.] The PSR (communication radius, set by absolute SSV) and the displacement step (set by net SSV) are identified as two distinct quantities, with their coincidence for photons recovering the null-geodesic condition. No new postulates beyond those of Version~16 are introduced; chirality and quantum-tunnelling phenomenology are noted as topics for dedicated companion papers.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -1650,7 +2257,7 @@
     {
       "rel": "series_relativity/SR_companion_papers/c02_dipole_stiffness_C/c02_dipole_stiffness_C.tex",
       "title": "Microscopic Origin of the Dipole Sea Stiffness C",
-      "ver": "2.3",
+      "ver": "2.1",
       "changed": "2026-08-18",
       "cls": "Companion",
       "withheld": "",
@@ -1671,7 +2278,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "2.3",
+        "version": "2.1",
         "description": "The elastic stiffness $C$ of the Dipole Sea governs the linear Hooke-like response of Space Stress Vector (SSV) and appears in the main paper's central formula $ _ eff = /(1 + k )$ as $k = 1/C / ^3$. We establish the microscopic origin of $C$ in three steps. First, all four Dipole Particle (DP) types present in the equilibrium sea carry the same elementary charge $ 1$ with identical Coulombic coupling strength; their equal abundances and the quasi-static limit of Zitterbewegung (ZBW) oscillations together reduce the multi-component medium to a single effective stiffness. Second, that stiffness is the second-moment integral of the 600-cell Voronoi face-area distribution over all SSV directions, computed exactly from the H4 golden-ratio coordinates in Version~16 Appendix~A.5: \\[ C \\;=\\; , = ^3, \\;=\\; 3(11+5 5) 5+ 5320 \\; \\; 0.5594. \\] Third, the identical stiffness $C$ and the 12-neighbor shell-broadcast geometry of SSV quanta together reproduce the universal inverse-square force law and, via cage-occupation projection factors fixed by H4 representation theory, predict the fractional effective charges of quarks relative to leptons --- a result deferred in detail to a dedicated companion paper. No new postulates are introduced beyond those of Version~16.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -1736,7 +2343,7 @@
     {
       "rel": "series_relativity/SR_companion_papers/c04_ZBW_hbar_mass_units/c04_ZBW_hbar_mass_units.tex",
       "title": "Inertial Mass from Zitterbewegung:",
-      "ver": "2.1",
+      "ver": "2",
       "changed": "2026-08-17",
       "cls": "Companion",
       "withheld": "",
@@ -1757,51 +2364,8 @@
         "subjects": [
           "Physics"
         ],
-        "version": "2.1",
+        "version": "2",
         "description": "We show that inertial mass in Conscious Point Physics (CPP) arises from a two-level Zitterbewegung (ZBW) resonance hierarchy in the polarized Dipole Sea. At the Planck scale (Level~1), each elementary Dipole Particle (DP) oscillates at frequency $ = 1/(2 )$, carrying action $ = $ per half-cycle. At the particle scale (Level~2), the coherent eDP polarization cloud surrounding an unpaired electron-type Conscious Point oscillates collectively as a radial standing wave at the Compton frequency $ = mc^2/ $, reflecting between the nucleation center and the thermal boundary of the cloud. The particle's rest mass is the energy of one complete Compton resonance cycle, $mc^2 = $, derived here from standing-wave boundary conditions rather than assumed. The ratio of scales $ / = /(2m)$ shows that one Compton cycle spans $ /m$ Planck ticks, realizing the assembly principle that larger organizational units are built from smaller ones. The relation $E = mc^2$ follows from the Absolute Moment step-budget constraint. The classical non-radiation of ground-state electrons is explained as a driven steady state maintained by the eternal nucleation signal of the unpaired eCP. All four DP types participate equally in the polarization cloud. No new postulates are introduced.",
-        "description_ok": true,
-        "description_source": "abstract environment"
-      },
-      "eligible": false,
-      "reason": "not approved",
-      "APPROVED": "",
-      "CHANGE_CLASS": "",
-      "RESERVED_DOI": "",
-      "CONCEPT_DOI": "",
-      "PREPRINT_ID": "",
-      "POSTED": "",
-      "OSF_LINK": "",
-      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
-      "RELATION": "isSupplementTo",
-      "COMMUNITY": "conscious-point-physics",
-      "NOTES": ""
-    },
-    {
-      "rel": "series_relativity/SR_companion_papers/c05_newtonian_gravity_from_SSV/c05_gravity_from_SSV_shell_broadcast.tex",
-      "title": "Newtonian Gravity from SSV Shell Broadcast",
-      "ver": "—",
-      "changed": "2026-05-31",
-      "cls": "Companion",
-      "withheld": "",
-      "wave": 1,
-      "cites": [],
-      "wave_blocked_by": [],
-      "children": [],
-      "parent_source": "rule2: declared companion",
-      "zenodo": {
-        "title": "Newtonian Gravity from SSV Shell Broadcast",
-        "creators": [
-          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
-        ],
-        "publication_date": "2026-05-31",
-        "resource_type": "publication-preprint",
-        "license": "cc-by-4.0",
-        "access_right": "open",
-        "subjects": [
-          "Physics"
-        ],
-        "version": "—",
-        "description": "We show that Newtonian gravity emerges from the same Space Stress Vector (SSV) shell-broadcast mechanism that produces Coulomb's law, with one essential difference: the gravitational SSV source is mass-energy (a positive scalar) rather than charge polarity (a signed quantity). This difference has two immediate consequences. First, gravity is universally attractive because mass-energy SSV has no polarity --- every ZBW Dipole Particle unit contributes compressive SSV in all directions, with no cancellation. Second, the gravitational coupling constant is $G = c/ ^2$, fixed entirely by the Planck mass $ $ already determined by the 600-cell lattice. The inverse-square law follows from the shell-broadcast geometry established in the Stiffness~$C$ companion. The weakness of gravity relative to electromagnetism is explained as the ratio $F_ grav/F_ EM = (m/ )^2/(e/ )^2$, a pure ratio of Planck-unit suppressions with no free parameters. No new postulates are introduced. This paper closes the classical-force sector of CPP and opens the direct path to the General Relativity companion.",
         "description_ok": true,
         "description_source": "abstract environment"
       },
@@ -1822,7 +2386,7 @@
     {
       "rel": "series_relativity/SR_companion_papers/c06_DP_chaining_as_mass_and_EM_substrate/c06_dipole_chain_patterns_as_mass_EM_subtrate.tex",
       "title": "Dipole Chain Patterns as the Substrate of",
-      "ver": "2.5",
+      "ver": "2.2",
       "changed": "2026-08-18",
       "cls": "Companion",
       "withheld": "",
@@ -1843,481 +2407,8 @@
         "subjects": [
           "Physics"
         ],
-        "version": "2.5",
+        "version": "2.2",
         "description": "We show that both inertial mass and electromagnetic radiation share a single microscopic substrate: coherent Zero-point Dipole chain (ZDC) patterns in the Dipole Sea, oscillating at the Compton scale. The distinction between mass and radiation is purely a boundary condition: mass is a standing ZDC pattern pinned by an unpaired CP nucleation center, while a photon is a traveling ZDC pattern with no nucleation center. In both cases the energy is \\(E = _C\\), unifying \\(E = mc^2\\) and \\(E = h \\) as a single equation. The photon propagates not as a discrete object in transit but as a phase-coherent SSV distribution — the phase residing in the GP registers, not on the messengers — reconstructed at each Absolute Moment by the vector summation of DI-bit payloads (static register snapshots) across the GP network. Gravitational lensing (Newtonian limit), photon delocalization, and coherence length follow from this picture without new postulates. Emission is governed by the impedance of free space \\(Z_0 = _0/ _0\\) (expressed in lattice units to be derived in the GR companion) acting as the discharge load for the decaying orbital ZDC reservoir; absorption is pattern-mode overlap entrainment of the target medium’s natural ZDC resonances. All four DP types participate equally in both mass and photonic ZDC formation. No new postulates are introduced.",
-        "description_ok": true,
-        "description_source": "abstract environment"
-      },
-      "eligible": false,
-      "reason": "not approved",
-      "APPROVED": "",
-      "CHANGE_CLASS": "",
-      "RESERVED_DOI": "",
-      "CONCEPT_DOI": "",
-      "PREPRINT_ID": "",
-      "POSTED": "",
-      "OSF_LINK": "",
-      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
-      "RELATION": "isSupplementTo",
-      "COMMUNITY": "conscious-point-physics",
-      "NOTES": ""
-    },
-    {
-      "rel": "series_relativity/SR_companion_papers/c07_weak_field_GR/c07_weak_field_GR.tex",
-      "title": "Weak-Field General Relativity",
-      "ver": "3.3",
-      "changed": "2026-08-17",
-      "cls": "Companion",
-      "withheld": "",
-      "wave": 1,
-      "cites": [],
-      "wave_blocked_by": [],
-      "children": [],
-      "parent_source": "rule2: declared companion",
-      "zenodo": {
-        "title": "Weak-Field General Relativity",
-        "creators": [
-          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
-        ],
-        "publication_date": "2026-08-17",
-        "resource_type": "publication-preprint",
-        "license": "cc-by-4.0",
-        "access_right": "open",
-        "subjects": [
-          "Physics"
-        ],
-        "version": "3.3",
-        "description": "We derive the weak-field limit of general relativity in Conscious Point Physics by extending the DI-bit broadcast to include the net SSV vector $ _ net$ alongside the absolute SSV scalar $| |_ abs$. The Lattice State Packet (LSP) is explicitly constructed from the compressive polarization energy $E_ pol = mc^2$ of the eDP cloud abshier2026mass: $| |_ abs = E_ pol/V_0$ sources $g_tt$ (time curvature) and $ _ net$ sources $g_ij$ (spatial curvature). Together they reproduce the weak-field isotropic Schwarzschild metric with no free parameters. The famous factor-of-two between the Newtonian and GR gravitational lensing deflection angles (0.875 vs.\\ 1.75~arcsec) is explained as equal contributions from temporal and spatial curvature --- a retroactive prediction of the two-component LSP structure that independently confirms the classical measurement of eddington1920. Geodesic motion follows from the 12-edge maximum-gradient selection rule in the continuum limit abshier2026am. The impedance of free space $Z_0 = _0/ _0$ is derived from lattice parameters, closing an open problem from the ZDC Chaining companion abshier2026zdc. Gravitational waves arise as lattice perturbations propagating at $c$, consistent with abbott2016. No new postulates beyond the LSP are introduced.",
-        "description_ok": true,
-        "description_source": "abstract environment"
-      },
-      "eligible": false,
-      "reason": "not approved",
-      "APPROVED": "",
-      "CHANGE_CLASS": "",
-      "RESERVED_DOI": "",
-      "CONCEPT_DOI": "",
-      "PREPRINT_ID": "",
-      "POSTED": "",
-      "OSF_LINK": "",
-      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
-      "RELATION": "isSupplementTo",
-      "COMMUNITY": "conscious-point-physics",
-      "NOTES": ""
-    },
-    {
-      "rel": "series_relativity/SR_companion_papers/c08_strong-field_GR.tex/c08_strong-field_GR.tex",
-      "title": "Strong-Field General Relativity and the CPP Field Equation",
-      "ver": "2.1",
-      "changed": "2026-06-08",
-      "cls": "Companion",
-      "withheld": "",
-      "wave": 1,
-      "cites": [],
-      "wave_blocked_by": [],
-      "children": [],
-      "parent_source": "",
-      "zenodo": {
-        "title": "Strong-Field General Relativity and the CPP Field Equation",
-        "creators": [
-          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
-        ],
-        "publication_date": "2026-06-08",
-        "resource_type": "publication-preprint",
-        "license": "cc-by-4.0",
-        "access_right": "open",
-        "subjects": [
-          "Physics"
-        ],
-        "version": "2.1",
-        "description": "We extend the weak-field GR results of companion~7 to the full nonlinear regime. The PSR formula $ _ eff(r) = /(1 + k\\, | |(r))$, combined with the shell-broadcast source equation $k\\, | | = GM/rc^2$ (exact, from the Newtonian Gravity companion), yields the Schwarzschild metric in isotropic coordinates without approximation (Theorem~ thm:schwarzschild). Standard Schwarzschild follows by coordinate transformation. The CPP field equation governing the self-consistent LSP distribution is identified as a nonlinear wave equation for $ $ that reduces to the linearised Einstein equations in the weak-field limit (Proposition~ prop:field_eq). The CP Exclusion Rule imposes a minimum lattice spacing $ _ eff /2$, preventing the metric from reaching zero at $r = 0$ and replacing the GR singularity with a Planck-density core (Theorem~ thm:core). Additional predictions include a Planck remnant from Hawking evaporation, suppressed scalar/vector gravitational wave modes, and a qualitative derivation of the Kerr frame-dragging term from the angular SSV curl. No new postulates are introduced beyond those of Version~16.",
-        "description_ok": true,
-        "description_source": "abstract environment"
-      },
-      "eligible": false,
-      "reason": "not approved",
-      "APPROVED": "",
-      "CHANGE_CLASS": "",
-      "RESERVED_DOI": "",
-      "CONCEPT_DOI": "",
-      "PREPRINT_ID": "",
-      "POSTED": "",
-      "OSF_LINK": "",
-      "PARENT": "",
-      "RELATION": "",
-      "COMMUNITY": "conscious-point-physics",
-      "NOTES": ""
-    },
-    {
-      "rel": "series_relativity/SR_companion_papers/c09_gravitational_wave_echoes/c09_GW_echoes.tex",
-      "title": "Gravitational Wave Echoes from the Planck Core",
-      "ver": "—",
-      "changed": "2026-08-17",
-      "cls": "Companion",
-      "withheld": "",
-      "wave": 1,
-      "cites": [],
-      "wave_blocked_by": [],
-      "children": [],
-      "parent_source": "",
-      "zenodo": {
-        "title": "Gravitational Wave Echoes from the Planck Core",
-        "creators": [
-          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
-        ],
-        "publication_date": "2026-08-17",
-        "resource_type": "publication-preprint",
-        "license": "cc-by-4.0",
-        "access_right": "open",
-        "subjects": [
-          "Physics"
-        ],
-        "version": "—",
-        "description": "The CPP strong-field companion (companion~8) established that the CP Exclusion Rule replaces the GR point singularity with a Planck-density core at radius $ = /2$ inside the event horizon. We show that this core acts as a partially reflective boundary for gravitational perturbations, producing post-merger gravitational wave echoes with a characteristic time delay: equation \\;=\\; 2 c\\! \\; \\; 2 c \\! ( ), eq:delay_abstract equation derived from the tortoise-coordinate travel time between the photon-sphere potential barrier ($r 3 /2$) and the effective reflective surface at $r_0 = + $ (quantum Planck boundary just outside the horizon). The correction term $-0.193$ is negligible compared to $ ( / ) 88$--$93$ for all astrophysical black holes. For the GW150914 remnant ($M 62\\,M_ $), the predicted echo delay is $ 112$~ms, with a signal frequency $f_ echo 8.9$~Hz at the boundary of LIGO O4 sensitivity and within the design band of the Einstein Telescope. A table of predictions spanning stellar-mass to intermediate-mass black holes is provided. No new postulates beyond companion~8 are required.",
-        "description_ok": true,
-        "description_source": "abstract environment"
-      },
-      "eligible": false,
-      "reason": "not approved",
-      "APPROVED": "",
-      "CHANGE_CLASS": "",
-      "RESERVED_DOI": "",
-      "CONCEPT_DOI": "",
-      "PREPRINT_ID": "",
-      "POSTED": "",
-      "OSF_LINK": "",
-      "PARENT": "",
-      "RELATION": "",
-      "COMMUNITY": "conscious-point-physics",
-      "NOTES": ""
-    },
-    {
-      "rel": "series_relativity/SR_companion_papers/c10_Hawking_Radiation_and_the_Planck_Remnant/c10_Hawking_Radiation.tex",
-      "title": "Hawking Radiation and the Planck Remnant",
-      "ver": "—",
-      "changed": "2026-05-31",
-      "cls": "Companion",
-      "withheld": "",
-      "wave": 1,
-      "cites": [],
-      "wave_blocked_by": [],
-      "children": [],
-      "parent_source": "",
-      "zenodo": {
-        "title": "Hawking Radiation and the Planck Remnant",
-        "creators": [
-          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
-        ],
-        "publication_date": "2026-05-31",
-        "resource_type": "publication-preprint",
-        "license": "cc-by-4.0",
-        "access_right": "open",
-        "subjects": [
-          "Physics"
-        ],
-        "version": "—",
-        "description": "We derive the CPP modifications to Hawking black hole evaporation resulting from the Planck core established in companion~8. Standard Hawking radiation proceeds unchanged for $M $. Evaporation terminates when the Schwarzschild radius reaches $ 2 $ — not when the Hawking temperature reaches the Planck temperature, but when the geometric condition $ $ required by the semiclassical approximation breaks down. The result is a stable Planck-mass remnant $M_ rem $ (Proposition~ prop:remnant). We show that this remnant is mechanically stable via a self-sustaining fixed point: gravitational SSV compression is exactly balanced by CP Exclusion repulsion at $ _ eff = /2$ (Proposition~ prop:stability). The remnant does not require external pressure and cannot evaporate further. We discuss implications for the black hole information paradox and observable consequences. No new postulates beyond companion~8 are required.",
-        "description_ok": true,
-        "description_source": "abstract environment"
-      },
-      "eligible": false,
-      "reason": "not approved",
-      "APPROVED": "",
-      "CHANGE_CLASS": "",
-      "RESERVED_DOI": "",
-      "CONCEPT_DOI": "",
-      "PREPRINT_ID": "",
-      "POSTED": "",
-      "OSF_LINK": "",
-      "PARENT": "",
-      "RELATION": "",
-      "COMMUNITY": "conscious-point-physics",
-      "NOTES": ""
-    },
-    {
-      "rel": "series_relativity/SR_companion_papers/c11_Kerr_metric_from_rotational_SSV/c11_Kerr_metric.tex",
-      "title": "The Kerr Metric from Rotational SSV",
-      "ver": "—",
-      "changed": "2026-05-31",
-      "cls": "Companion",
-      "withheld": "",
-      "wave": 1,
-      "cites": [],
-      "wave_blocked_by": [],
-      "children": [],
-      "parent_source": "",
-      "zenodo": {
-        "title": "The Kerr Metric from Rotational SSV",
-        "creators": [
-          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
-        ],
-        "publication_date": "2026-05-31",
-        "resource_type": "publication-preprint",
-        "license": "cc-by-4.0",
-        "access_right": "open",
-        "subjects": [
-          "Physics"
-        ],
-        "version": "—",
-        "description": "We derive the CPP origin of the Kerr metric for a rotating mass. A rotating source with angular momentum $J$ produces an azimuthal $ _ net$ component: equation k\\,( _ net)_ \\;=\\; GJ ^2 c^2 r^3, eq:ssv_phi_abstract equation sourced by the same 12-edge selection rule that generates the Schwarzschild scalar SSV. Via the LSP off-diagonal metric mapping, this produces the Lense-Thirring frame-dragging term: equation g_t \\;=\\; - 2GJ ^2 c^2 r eq:gtphi_abstract equation exactly in the weak-field limit, confirmed by Gravity Probe~B to $0.3\\%$~ everitt2011. The Kerr bound $J GM^2/c$ follows rigorously from the requirement that the azimuthal SSV broadcast velocity not exceed $c$ (Theorem~ thm:kerr_bound). The ergosphere arises where the azimuthal SSV drag velocity equals $c$ (Theorem~ thm:ergosphere). The Schwarzschild limit ($J=0$) is recovered exactly (Corollary~ cor:schwarz_limit). The full Boyer-Lindquist Kerr metric is consistent with the CPP mechanism at all orders (Proposition~ prop:kerr_full); the all-orders derivation from the CPP field equation is Open Problem~ op:allorders. No new postulates beyond companion~8 are introduced.",
-        "description_ok": true,
-        "description_source": "abstract environment"
-      },
-      "eligible": false,
-      "reason": "not approved",
-      "APPROVED": "",
-      "CHANGE_CLASS": "",
-      "RESERVED_DOI": "",
-      "CONCEPT_DOI": "",
-      "PREPRINT_ID": "",
-      "POSTED": "",
-      "OSF_LINK": "",
-      "PARENT": "",
-      "RELATION": "",
-      "COMMUNITY": "conscious-point-physics",
-      "NOTES": ""
-    },
-    {
-      "rel": "series_relativity/SR_companion_papers/c12_Kerr-Newman_charged_rotating_BH/c12_Kerr_Newman.tex",
-      "title": "The Kerr-Newman Metric from Combined SSV Sources",
-      "ver": "—",
-      "changed": "2026-05-31",
-      "cls": "Companion",
-      "withheld": "",
-      "wave": 1,
-      "cites": [],
-      "wave_blocked_by": [],
-      "children": [],
-      "parent_source": "",
-      "zenodo": {
-        "title": "The Kerr-Newman Metric from Combined SSV Sources",
-        "creators": [
-          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
-        ],
-        "publication_date": "2026-05-31",
-        "resource_type": "publication-preprint",
-        "license": "cc-by-4.0",
-        "access_right": "open",
-        "subjects": [
-          "Physics"
-        ],
-        "version": "—",
-        "description": "We complete the CPP charged black hole family by deriving the Kerr-Newman metric for a rotating, charged mass $(M, J, Q)$. Three SSV components simultaneously source the spacetime: scalar compressive SSV from $M$ (companion~8), azimuthal vector SSV from $J$ (companion~11), and radial vector SSV from charge $Q$ (companion~2). The Kerr-Newman $ $ function: equation _ KN \\;=\\; r^2 - 2Mr + a^2 + Q^2, eq:delta_kn_abstract equation where $Q^2 = k_e Q_ SI^2 G/c^4$ in geometric units, follows from adding the Coulomb SSV contribution to the Kerr $ $. The Kerr-Newman bound $M^2 a^2 + Q^2$ (Theorem~ thm:kn_bound) is derived from SSV subluminality at the outer horizon — generalising the Kerr bound of companion~11. The Reissner-Nordstr\\\"om metric (Corollary~ cor:rn) and the full three-parameter Kerr-Newman metric (Proposition~ prop:kn) are verified in all limiting cases. No new postulates beyond companion~2 and companion~11 are required.",
-        "description_ok": true,
-        "description_source": "abstract environment"
-      },
-      "eligible": false,
-      "reason": "not approved",
-      "APPROVED": "",
-      "CHANGE_CLASS": "",
-      "RESERVED_DOI": "",
-      "CONCEPT_DOI": "",
-      "PREPRINT_ID": "",
-      "POSTED": "",
-      "OSF_LINK": "",
-      "PARENT": "",
-      "RELATION": "",
-      "COMMUNITY": "conscious-point-physics",
-      "NOTES": ""
-    },
-    {
-      "rel": "series_relativity/SR_companion_papers/c13_superradiance/c13_superradiance.tex",
-      "title": "Superradiance from the Kerr SSV",
-      "ver": "—",
-      "changed": "2026-05-31",
-      "cls": "Companion",
-      "withheld": "",
-      "wave": 1,
-      "cites": [],
-      "wave_blocked_by": [],
-      "children": [],
-      "parent_source": "",
-      "zenodo": {
-        "title": "Superradiance from the Kerr SSV",
-        "creators": [
-          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
-        ],
-        "publication_date": "2026-05-31",
-        "resource_type": "publication-preprint",
-        "license": "cc-by-4.0",
-        "access_right": "open",
-        "subjects": [
-          "Physics"
-        ],
-        "version": "—",
-        "description": "We derive superradiance from the rotating black hole azimuthal SSV established in companion~11~ c11. The horizon angular velocity $ = ac/(r_+^2 + a^2)$ is the angular frequency of the SSV broadcast at the outer horizon. A bosonic wave of frequency $ $ and azimuthal quantum number $m$ is amplified when: equation \\;<\\; m\\, , eq:threshold_abstract equation because its phase velocity is slower than the rotating SSV field (Theorem~ thm:threshold). The maximum extractable energy is $(1-1/ 2)\\,Mc^2 29.3\\%$ of the rest mass for an extremal Kerr black hole (Proposition~ prop:max_energy). For the Kerr-Newman case~ c12, the threshold generalises to $ < m + q $ (Corollary~ cor:kn). Superradiant instability of ultralight boson clouds produces continuous gravitational wave signals at frequencies $f_ GW 2 c^2/h$ falling in the LIGO O4 band for boson masses $ 10^-13$--$10^-12$~eV and stellar-mass black holes. No new postulates beyond companion~11 are required.",
-        "description_ok": true,
-        "description_source": "abstract environment"
-      },
-      "eligible": false,
-      "reason": "not approved",
-      "APPROVED": "",
-      "CHANGE_CLASS": "",
-      "RESERVED_DOI": "",
-      "CONCEPT_DOI": "",
-      "PREPRINT_ID": "",
-      "POSTED": "",
-      "OSF_LINK": "",
-      "PARENT": "",
-      "RELATION": "",
-      "COMMUNITY": "conscious-point-physics",
-      "NOTES": ""
-    },
-    {
-      "rel": "series_relativity/SR_companion_papers/c14_quark_confinement_qDP_chaining/c14_quark_confinement.tex",
-      "title": "Quark Confinement and the Cornell Potential",
-      "ver": "1.1",
-      "changed": "2026-05-31",
-      "cls": "Companion",
-      "withheld": "",
-      "wave": 1,
-      "cites": [],
-      "wave_blocked_by": [],
-      "children": [],
-      "parent_source": "",
-      "zenodo": {
-        "title": "Quark Confinement and the Cornell Potential",
-        "creators": [
-          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
-        ],
-        "publication_date": "2026-05-31",
-        "resource_type": "publication-preprint",
-        "license": "cc-by-4.0",
-        "access_right": "open",
-        "subjects": [
-          "Physics"
-        ],
-        "version": "1.1",
-        "description": "We derive quark confinement and the Cornell interquark potential from the quark Dipole Particle ($ $) chaining mechanism of Conscious Point Physics. Two regimes arise from the $ $ SSV broadcast: Short range ($r r_0 0.26$~fm): the $ $ SSV spreads isotropically via the 12-edge selection rule, producing a Coulomb-like potential: equation V_ short(r) \\;=\\; - \\, cr. eq:V_short_abstract equation Long range ($r r_0$): the $ $ SSV collimates into a $ $ chain (flux tube) with constant energy per unit length $ 0.9$~GeV/fm, producing a linear potential: equation V_ long(r) \\;=\\; \\,r. eq:V_long_abstract equation Together these give the Cornell potential~ cornell1978: equation V(r) \\;=\\; - \\, cr \\;+\\; \\,r, eq:cornell_abstract equation which is the phenomenological quark-antiquark potential confirmed by lattice QCD and quarkonium spectroscopy~ eichten1980. Confinement follows as a theorem from the positive energy of the $ $ chain: infinite energy is required to separate a quark pair to infinite distance (Theorem~ thm:confinement). Color neutrality is derived from $ $ charge conservation (Theorem~ thm:color_neutral). Asymptotic freedom is identified mechanistically as PSR attenuation of the $ $ SSV at short distances (Proposition~ prop:asymptotic_freedom). No new postulates beyond those of Version~16 are required.",
-        "description_ok": true,
-        "description_source": "abstract environment"
-      },
-      "eligible": false,
-      "reason": "not approved",
-      "APPROVED": "",
-      "CHANGE_CLASS": "",
-      "RESERVED_DOI": "",
-      "CONCEPT_DOI": "",
-      "PREPRINT_ID": "",
-      "POSTED": "",
-      "OSF_LINK": "",
-      "PARENT": "",
-      "RELATION": "",
-      "COMMUNITY": "conscious-point-physics",
-      "NOTES": ""
-    },
-    {
-      "rel": "series_relativity/SR_companion_papers/c15_SU3_color_from_600-cell/c15_color_charge.tex",
-      "title": "Color Charge as Emergent Vertex Identity:",
-      "ver": "—",
-      "changed": "2026-05-31",
-      "cls": "Companion",
-      "withheld": "",
-      "wave": 1,
-      "cites": [],
-      "wave_blocked_by": [],
-      "children": [],
-      "parent_source": "",
-      "zenodo": {
-        "title": "Color Charge as Emergent Vertex Identity:",
-        "creators": [
-          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
-        ],
-        "publication_date": "2026-05-31",
-        "resource_type": "publication-preprint",
-        "license": "cc-by-4.0",
-        "access_right": "open",
-        "subjects": [
-          "Physics"
-        ],
-        "version": "—",
-        "description": "We derive the observed color charge properties of quarks from the geometry of the Dipole Sea, without postulating SU(3) as a fundamental gauge symmetry. Two distinct but related tetrahedral structures carry the physical content. The first is the individual qCP cage: a regular tetrahedral ($T_d$) substructure of the 600-cell that every quark Conscious Point occupies. This cage already gave fractional electric charges ($e/3$, $2e/3$) via 3D projection (companion~2). Here we show that the same cage also encodes the three color states via its C$_3$ rotational degeneracy: a 120$^ $ rotation around the apex-to-centroid axis cyclically permutes the three base vertices, generating the color triplet (Theorem~ thm:color_triplet). Fractional electric charge and color charge are therefore two properties of one geometric object — projective and rotational views of the same tetrahedron. The second is the hDP tetrahedral skeleton: a spontaneously nucleated structure of hybrid Dipole Particles in the DP Sea that provides the charge-buffering scaffold for baryons. Three quarks occupy three of its four vertices; the fourth remains open, giving the baryon its net charge. Color charge, in this picture, is vertex identity: a quark's color is which of the three occupied tetrahedral vertices it is bonded to. The central theorem of the paper is: color charge is not an intrinsic quantum number; it is a relational property describing a quark's position in a physical bonding structure. Color neutrality, the prohibition on free quarks, and the restriction to specific hadron configurations ($q q$, $qqq$, $ q q q$) all follow from charge geometry alone. The 1+3+4 = 8 qDP chain layer modes of companion~14 are identified as the geometric origin of the 8 gluon generators; their explicit mode-to-generator correspondence is deferred to companion~16. SU(3) is identified as the permutation algebra that correctly describes this geometry --- it is correct and useful, but it is derived from the physical structure rather than postulated as the foundation of it. No new postulates beyond those of Version~16 are required.",
-        "description_ok": true,
-        "description_source": "abstract environment"
-      },
-      "eligible": false,
-      "reason": "not approved",
-      "APPROVED": "",
-      "CHANGE_CLASS": "",
-      "RESERVED_DOI": "",
-      "CONCEPT_DOI": "",
-      "PREPRINT_ID": "",
-      "POSTED": "",
-      "OSF_LINK": "",
-      "PARENT": "",
-      "RELATION": "",
-      "COMMUNITY": "conscious-point-physics",
-      "NOTES": ""
-    },
-    {
-      "rel": "series_relativity/SR_companion_papers/c20_Spin I emergent_Spin-Captured_DPs/c8 spin_I_emergent_spin_from_captured_DPs.tex",
-      "title": "Emergent Spin-12 from Captured Dipole Particle",
-      "ver": "2.1",
-      "changed": "2026-08-17",
-      "cls": "Companion",
-      "withheld": "",
-      "wave": 1,
-      "cites": [],
-      "wave_blocked_by": [],
-      "children": [],
-      "parent_source": "rule2: declared companion",
-      "zenodo": {
-        "title": "Emergent Spin-12 from Captured Dipole Particle",
-        "creators": [
-          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
-        ],
-        "publication_date": "2026-08-17",
-        "resource_type": "publication-preprint",
-        "license": "cc-by-4.0",
-        "access_right": "open",
-        "subjects": [
-          "Physics"
-        ],
-        "version": "2.1",
-        "description": "We derive the electron spin quantum number $s = 1/2$ from first principles in Conscious Point Physics. An unpaired $-$eCP moving through the Dipole Sea captures a Dipole Particle (DP), placing the inner $+$CP at orbital radius $ $ and the outer $-$CP at $ = 2 $. The Coulomb force balance for circular orbits gives the exact angular frequency ratio: equation \\;=\\; 2 2, eq:ratio_abstract equation derived solely from the $1/r^2$ force law and the standing-wave boundary condition. The total orbital angular momentum of the captured DP is: equation L \\;=\\; m_e\\, \\, ^2\\,(2 2+4), eq:L_abstract equation which equals $ /2$ exactly when: equation \\;=\\; 4(1+ 2)^2 \\;=\\; 12+8 2, eq:rin_abstract equation where $ = ^2/(m_e k_e e^2)$ is the Bohr radius. This condition is shown to follow from the Coulomb force balance at the Compton scale. No free parameters are introduced. The mechanism extends naturally to all spin-$1/2$ Standard Model fermions via the same orbital geometry with DP type (eDP or qDP) appropriate to the particle. Spin is emergent, not intrinsic.",
-        "description_ok": true,
-        "description_source": "abstract environment"
-      },
-      "eligible": false,
-      "reason": "not approved",
-      "APPROVED": "",
-      "CHANGE_CLASS": "",
-      "RESERVED_DOI": "",
-      "CONCEPT_DOI": "",
-      "PREPRINT_ID": "",
-      "POSTED": "",
-      "OSF_LINK": "",
-      "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
-      "RELATION": "isSupplementTo",
-      "COMMUNITY": "conscious-point-physics",
-      "NOTES": ""
-    },
-    {
-      "rel": "series_relativity/SR_companion_papers/c21_Spin II standing_wave_subharmonics/c9 spin_II_standing_wave_sub_harmonic_captured_DPs.tex",
-      "title": "Derivation of the Standing-Wave Sub-Harmonic Condition",
-      "ver": "—",
-      "changed": "2026-05-31",
-      "cls": "Companion",
-      "withheld": "",
-      "wave": 1,
-      "cites": [],
-      "wave_blocked_by": [],
-      "children": [],
-      "parent_source": "rule2: declared companion",
-      "zenodo": {
-        "title": "Derivation of the Standing-Wave Sub-Harmonic Condition",
-        "creators": [
-          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
-        ],
-        "publication_date": "2026-05-31",
-        "resource_type": "publication-preprint",
-        "license": "cc-by-4.0",
-        "access_right": "open",
-        "subjects": [
-          "Physics"
-        ],
-        "version": "—",
-        "description": "The Spin~I companion established that the electron spin quantum number $L = /2$ follows from the captured Dipole Particle orbital geometry given the condition $ = 2 $. We derive this condition from the standing-wave mode structure of the ZBW polarization cloud. The ZBW cloud constitutes a radial standing-wave resonator with a node at $r = 0$ (CP Exclusion Rule) and an antinode at the thermal boundary $ = /(2m_e c)$. The allowed modes are: equation _n(r) \\;=\\; (k_n r), k_n \\;=\\; (2n-1) 2 , n = 1,\\,2,\\,3, eq:modes_abstract equation The fundamental mode ($n=1$) has no interior structure. The first sub-harmonic ($n=2$) has an interior antinode at $ /3$ and an interior node at $2 /3$. The captured DP anchors its inner $+$CP at the interior antinode and its outer $-$CP at the interior node, giving: equation \\;=\\; 2 /3 /3 \\;=\\; 2. eq:ratio_abstract equation This ratio is independent of all physical constants and depends only on the integer arithmetic of the trigonometric zeros of the $n=2$ mode. This is exact and independent of all physical constants. Mode 2 is the minimum-energy mode that simultaneously provides an interior antinode and an interior node. The orbital scale differs from the ZBW cloud scale by the factor $6/[ 4(1+ 2)^2]$ where $ $ is the fine structure constant, connecting the Compton scale to the Bohr scale. The derivation of this scale connection from the 600-cell Voronoi eigenvalue spectrum is deferred to Spin~III.",
         "description_ok": true,
         "description_source": "abstract environment"
       },
@@ -2347,6 +2438,22 @@
       "wave_blocked_by": [],
       "children": [
         {
+          "child": "series_gravitation/GR_companion_papers/GR-1a_newtonian_gravity_from_SSV/GR-1a_gravity_from_SSV_shell_broadcast.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_gravitation/GR_companion_papers/GR-1b_weak_field_GR/GR-1b_weak_field_GR.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_quantum_mechanics/spin_papers/SPIN-1_emergent_spin_from_captured_DPs/SPIN-1_emergent_spin_from_captured_DPs.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
+          "child": "series_quantum_mechanics/spin_papers/SPIN-2_standing_wave_subharmonics/SPIN-2_standing_wave_subharmonics.tex",
+          "inverse": "isSupplementedBy"
+        },
+        {
           "child": "series_relativity/SR_companion_papers/c01_absolute_moment_postulate/absolute_moment_postulate.tex",
           "inverse": "isSupplementedBy"
         },
@@ -2363,23 +2470,7 @@
           "inverse": "isSupplementedBy"
         },
         {
-          "child": "series_relativity/SR_companion_papers/c05_newtonian_gravity_from_SSV/c05_gravity_from_SSV_shell_broadcast.tex",
-          "inverse": "isSupplementedBy"
-        },
-        {
           "child": "series_relativity/SR_companion_papers/c06_DP_chaining_as_mass_and_EM_substrate/c06_dipole_chain_patterns_as_mass_EM_subtrate.tex",
-          "inverse": "isSupplementedBy"
-        },
-        {
-          "child": "series_relativity/SR_companion_papers/c07_weak_field_GR/c07_weak_field_GR.tex",
-          "inverse": "isSupplementedBy"
-        },
-        {
-          "child": "series_relativity/SR_companion_papers/c20_Spin I emergent_Spin-Captured_DPs/c8 spin_I_emergent_spin_from_captured_DPs.tex",
-          "inverse": "isSupplementedBy"
-        },
-        {
-          "child": "series_relativity/SR_companion_papers/c21_Spin II standing_wave_subharmonics/c9 spin_II_standing_wave_sub_harmonic_captured_DPs.tex",
           "inverse": "isSupplementedBy"
         }
       ],
@@ -2462,6 +2553,49 @@
       "NOTES": ""
     },
     {
+      "rel": "series_standard_model/development-transcripts/SM-12/grok_SU3_color.tex",
+      "title": "SU(3) Color Charge from Tetrahedral Cage Representations",
+      "ver": "1",
+      "changed": "2026-08-19",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "SU(3) Color Charge from Tetrahedral Cage Representations",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
+        ],
+        "publication_date": "2026-08-19",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "1",
+        "description": "We derive the SU(3) color structure of quarks from the tetrahedral cage geometry of the 600-cell lattice. The qCP cage is a regular tetrahedron (Td symmetry). Its apex vertex plus three base vertices generate a color triplet under the C₃ rotation around the apex-centroid axis (Theorem 3.1). Color charge is the Z₃ quantum number carried by the chain-attachment point on the base triangle. The 1+3+4 layered qDP chain between quarks maps onto the 8 gluon generators: the central + constrained outer chains give the 2 diagonal Cartan generators, while the three middle-layer chains at 120° give the 6 off-diagonal raising/lowering operators (Proposition 4.1). Color neutrality requires the total Z₃ charge ≡ 0 mod 3, which algebraically selects only meson (\\(q q\\)), baryon (\\(qqq\\)), and glueball configurations (Theorem 5.1). Fractional electric charges and color share the same tetrahedral projection origin (Remark 3.2). The result closes the strong-force sector: confinement mechanism (companion 14) + color algebra (this paper) together give QCD phenomenology from first principles.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
       "rel": "series_standard_model/papers/SM-10_chain_network_FEM.tex",
       "title": "SM-10: Toward First-Principles Quark Mass from",
       "ver": "2.0",
@@ -2504,6 +2638,92 @@
       "RELATION": "",
       "COMMUNITY": "conscious-point-physics",
       "NOTES": "registration DOI (not a preprint DOI)"
+    },
+    {
+      "rel": "series_standard_model/papers/SM-11_quark_confinement_qDP_chaining.tex",
+      "title": "Quark Confinement and the Cornell Potential",
+      "ver": "1.1",
+      "changed": "2026-08-19",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "Quark Confinement and the Cornell Potential",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
+        ],
+        "publication_date": "2026-08-19",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "1.1",
+        "description": "We derive quark confinement and the Cornell interquark potential from the quark Dipole Particle ($ $) chaining mechanism of Conscious Point Physics. Two regimes arise from the $ $ SSV broadcast: Short range ($r r_0 0.26$~fm): the $ $ SSV spreads isotropically via the 12-edge selection rule, producing a Coulomb-like potential: equation V_ short(r) \\;=\\; - \\, cr. eq:V_short_abstract equation Long range ($r r_0$): the $ $ SSV collimates into a $ $ chain (flux tube) with constant energy per unit length $ 0.9$~GeV/fm, producing a linear potential: equation V_ long(r) \\;=\\; \\,r. eq:V_long_abstract equation Together these give the Cornell potential~ cornell1978: equation V(r) \\;=\\; - \\, cr \\;+\\; \\,r, eq:cornell_abstract equation which is the phenomenological quark-antiquark potential confirmed by lattice QCD and quarkonium spectroscopy~ eichten1980. Confinement follows as a theorem from the positive energy of the $ $ chain: infinite energy is required to separate a quark pair to infinite distance (Theorem~ thm:confinement). Color neutrality is derived from $ $ charge conservation (Theorem~ thm:color_neutral). Asymptotic freedom is identified mechanistically as PSR attenuation of the $ $ SSV at short distances (Proposition~ prop:asymptotic_freedom). No new postulates beyond those of Version~16 are required.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_standard_model/papers/SM-12_SU3_color_from_600cell.tex",
+      "title": "Color Charge as Emergent Vertex Identity:",
+      "ver": "2",
+      "changed": "2026-08-19",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "Color Charge as Emergent Vertex Identity:",
+        "creators": [
+          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
+        ],
+        "publication_date": "2026-08-19",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "2",
+        "description": "We derive the observed color charge properties of quarks from the geometry of the Dipole Sea, without postulating SU(3) as a fundamental gauge symmetry. Two distinct but related tetrahedral structures carry the physical content. The first is the individual qCP cage: a regular tetrahedral ($T_d$) substructure of the 600-cell that every quark Conscious Point occupies. This cage already gave fractional electric charges ($e/3$, $2e/3$) via 3D projection (companion~2). Here we show that the same cage also encodes the three color states via its C$_3$ rotational degeneracy: a 120$^ $ rotation around the apex-to-centroid axis cyclically permutes the three base vertices, generating the color triplet (Theorem~ thm:color_triplet). Fractional electric charge and color charge are therefore two properties of one geometric object — projective and rotational views of the same tetrahedron. The second is the hDP tetrahedral skeleton: a spontaneously nucleated structure of hybrid Dipole Particles in the DP Sea that provides the charge-buffering scaffold for baryons. Three quarks occupy three of its four vertices; the fourth remains open, giving the baryon its net charge. Color charge, in this picture, is vertex identity: a quark's color is which of the three occupied tetrahedral vertices it is bonded to. The central theorem of the paper is: color charge is not an intrinsic quantum number; it is a relational property describing a quark's position in a physical bonding structure. Color neutrality, the prohibition on free quarks, and the restriction to specific hadron configurations ($q q$, $qqq$, $ q q q$) all follow from charge geometry alone. The 1+3+4 = 8 qDP chain layer modes of companion~14 are identified as the geometric origin of the 8 gluon generators; their explicit mode-to-generator correspondence is deferred to companion~16. SU(3) is identified as the permutation algebra that correctly describes this geometry --- it is correct and useful, but it is derived from the physical structure rather than postulated as the foundation of it. No new postulates beyond those of Version~16 are required.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
     },
     {
       "rel": "series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex",
@@ -3551,7 +3771,7 @@
     {
       "rel": "series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex",
       "title": "Interstitial-Neutron Binding in Alpha-Cluster Nuclei:",
-      "ver": "1.3",
+      "ver": "1.0",
       "changed": "2026-08-18",
       "cls": "Series paper",
       "withheld": "",
@@ -3576,7 +3796,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.3",
+        "version": "1.0",
         "description": "Single-neutron interstitial binding in alpha-cluster nuclei is derived from Conscious-Point Physics (CPP) primitives as \\[ _1( ) \\;=\\; 2EV\\, \\;=\\; (6 - 12 ) , \\] where $V = $ is the alpha-polytope vertex count, $E = 3V - 6$ its edge count under simplicial 3-polytope topology, and $ = / 2.342$~MeV the fourth-scale occurrence of the programme-level -mode quantum first identified in SS-5 and subsequently transported to the alpha--alpha contact scale in SS-7. This is a prediction paper. ``Prediction'' here means zero-parameter concurrent prediction conditional on hypotheses C1--C4 (inherited from SS-7) and D1--D3 (introduced in this paper), not prediction from the programme-level axiom set alone; the epistemic contract is made explicit in sec:epistemic-split. It reports twelve concurrent zero-parameter predictions at $ = 2$ across the strict $N = Z$ alpha-chain for $ \\3, , 14\\$, with the effective-coordination residual $|k_ eff^ obs - 2E/V|$ below 15\\% for eleven of twelve rows (the exception being the $ = 3$ planar degenerate case) and below 1.5\\% for $ = 6$ ($^26 Mg$, octahedron) and $ = 10$ ($^42 Ca$, gyroelongated square bipyramid). Among the six canonical even-$ $ validation nuclei, five match observed binding under the zero-parameter prediction to within 10\\%. Zero SS-8-specific parameters are fitted; the derivation inherits axioms A2, A5, A8$'$, A11 and hypotheses C1--C4 unchanged from SS-5/SS-7, extended by three interstitial-scale hypotheses D1--D3 with D1 (vertex localization) promoted to a conditional theorem under two functionally independent sufficient premises (Level~1 algebraic and Level~2 functional independence established; Level~3 physical-principle independence explicitly open). A provisional residual model ( sec:residual-decomposition), applied after the leading-order prediction rather than as part of the proof of Theorem~ thm:h2prime, decomposes the bulk-regime residual into an opposite-polarity pair bonus H3$'$ --- transported from SS-5's \\ pair mechanism with an inherited $1/ ^2$ geometric attenuation --- plus small-polytope attenuation H5$'$. The residual model is interpretive, not parameter-fitted, and carries less confidence than the leading-order Theorem~ thm:h2prime; it tightens the apparent bulk-regime band from 8--15\\% to 3--7\\%, but the paper's primary epistemic load remains on the conditional 2E/V law itself. Secondary content in sec:extension-nex extends the same derivation to $ \\3, , 8\\$ at residual magnitudes in the 8--15\\% range under the same DP-pair polarity mechanics of SS-5, at a precision bounded above by OPEN-SS-28 (bulk-regime averaging) and OPEN-SS-24 (simplicial connectivity from primitives). The sec:numerical-predictions primary result stands independently of any sec:extension-nex outcome.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -3688,7 +3908,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_audit/theo_chir_audit_1.tex",
       "title": "Chirality Entry-Point Enumeration",
-      "ver": "1.4",
+      "ver": "1.1",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -3709,7 +3929,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.4",
+        "version": "1.1",
         "description": "We produce an exhaustive, classified inventory of every point in the current Conscious Point Physics (CPP) framework where chirality is referenced, presupposed, or implicitly used. The framework inputs audited are: the canonical nine-axiom set (A1--A11 in the post-consolidation numbering, with A6$'$ consolidating four earlier axioms and A7/A9 retired); the 600-cell geometric substrate; the Perceive--Compute--Displace (PCD) per-Conscious-Point per-Absolute-Moment cycle; and the existing chirality-sector derivations (THEO-CHIR-CONT-1/2/3, THEO-SD-CHIR-1/2, THEO-DSL-1 through THEO-DSL-12, under the OPEN-SD-CHIR-PRIMITIVE umbrella). For each chirality-touching element we record its source (axiom / geometry / dynamics / derivation), its operational sense (spatial / temporal / CP-asymmetric), and its category (primitive / emergent / unregistered). The result (Theorem~ thm:audit) is a 27-entry classification map. Its central finding is that spatial chirality enters the framework at a single irreducible primitive --- the substrate primitive 4D direction $ $ (FI-C-RC-1) --- with all other geometric handednesses either gauge-removable or reducing to $ $ plus the 600-cell (the reductions established where a registered theorem carries them and provisional --- registered derivation targets --- otherwise); that temporal chirality is sourced by the PCD sequence (carried by A1 + A4), whose ordering is primitive while its time-reversal asymmetry is presupposed rather than asserted; and that CP-asymmetric chirality is uniformly emergent, requiring $ $, the dynamics, and the matter content to combine. The audit registers the downstream OPEN-CHIR-* derivation programme. This is a structural-cataloging theorem at publication-grade Layer~3 unconditional: it uses the current axiom set and geometric primitives as given and introduces no new framework axiom. Falsification is by exhibiting a chirality-touching element absent from the inventory, or by showing an inventory entry is misclassified. (v1.1: multi-AI-review calibration of labels --- emergent graded established/provisional, E20 reclassified unregistered-conditional, ZBW registered as deferred exclusion X5/OPEN-CHIR-2e; no entry added or removed, no falsifier produced. See reviews-CHIR-AUDIT-1.md. )",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -3731,7 +3951,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex",
       "title": "Cross-Sector Layer 4 Closure of the Substrate Chirality Handle:",
-      "ver": "1.3",
+      "ver": "1.0",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -3752,7 +3972,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.3",
+        "version": "1.0",
         "description": "We present a joint Layer 4 continuum-EFT closure of two Standard Model phenomenological features --- the V--A coupling structure of $W^ $-mediated weak interactions and the chiral-polarity-bias structure of quark charge asymmetry --- as parallel projections of a single substrate-level chirality matrix element $|M| = /6 = ^-3/6 0.0394$. The substrate handle is inherited at full Layer 3 rigor from Capotauro v2.0's cross-sector unification theorems (THEO-SD-CHIR-1 for the W-bracelet sector under the electroweak V--A manifestation; THEO-SD-CHIR-2 for the qDP/eDP sector under the electromagnetic-handedness manifestation), together with the K3-doublet sector closure (THEO-CAP-1) under the OPEN-SD-CHIR-PRIMITIVE umbrella's three-way cross-sector unification at substrate level. The shared substrate-handle-to-effective-coupling bridge step is identified as the load-bearing technical content and closed at sector-agnostic level as Theorem 3.1 (programme-level registration THEO-CHIR-CONT-1); the two sector-specific Layer 4 closures (Theorems 4.4 = THEO-CHIR-CONT-2 and 5.5 = THEO-CHIR-CONT-3) proceed via standard SM machinery (Yang-Mills $SU(2)_L U(1)_Y$ effective field theory for the V--A coupling kinematic projection; effective free-energy partition-function framework for the chiral-polarity-bias thermodynamic projection). The two sector-specific projections converge at observable level on a single primary empirical channel --- the leptogenesis CP-asymmetry $ 0.0394$ inferred from the observed baryon asymmetry of the universe at $ _B 6 10^-10$ via standard thermal-leptogenesis machinery --- providing cross-sector convergent empirical anchor at $ /6 0.0394$ versus observed $ 0.04$ (match within 2\\% of substrate-handle prediction at current $ 5 10^-3$ BAU back-derivation precision). The paper constitutes the second cross-sector closure in Conscious Point Physics after SF-4 v4.0 (Composite K3-Cage-Shell Coupling Theorem) and establishes the THEO-CHIR-CONT-N sub-prefix convention for Layer 4 continuum-EFT projection closures under the OPEN-SD-CHIR-PRIMITIVE umbrella. The closure is conditional theorem closure within the current CPP theorem stack: it rests on the foundational input stack inherited from Capotauro v2.0, on a small number of additional sector-specific continuum-EFT framework foundational inputs, and on the CPP axiom set; first-principles derivation of the substrate primitive 4D direction $ n$ and of the substrate chirality magnitude $| | = ^-3$ remains as future-window work tied to the Q1$'$+Q1$'$.A Layer 3 promotion programme.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -3774,7 +3994,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_bridge_1.tex",
       "title": "The Substrate,,Electroweak Chirality Correspondence:",
-      "ver": "1.4",
+      "ver": "1.1",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -3795,7 +4015,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.4",
+        "version": "1.1",
         "description": "The chirality primitive/emergent-status capstone is review-hardened on both halves (spatial $ ( )=$ FI-C-9 at V3, STATUS-1+STATUS-2; temporal $ ( )$ at W3, TARROW-1), and the only lever that can move either verdict lives in the electroweak sector (bridge scope sketch, Patch 0662). This theorem crystallizes the first reachable step, B-i: a structural correspondence between substrate chirality and electroweak chiral structure. (1) The $ $-match (centerpiece). The OPEN-SM-4 chirality-activation $ $ (the factor in $[ 600-cell] [ 600-cell]$ whose breaking establishes $ ( )$) and the STATUS-2 chiral-vacuum quotient $ = / $ are the same $ $ object: both are the 600-cell det-coset (orientation / enantiomorph) $ $, generated by an orientation-reversing reflection ($ =-1$), with order parameter the substrate pseudoscalar $ ( )= ( )=$ FI-C-9 (Thm~ thm:match). This is a kinematic identification --- it rests on STATUS-2's det-coset $ $ (rigorous group theory) and on reading OPEN-SM-4's $ $ as the enantiomorph $ $ (a well-supported interpretation, the flagged assumption); it does not establish that the breaking occurs (capacity) or that it is electroweak symmetry breaking (EWSB). (2) The P/T-face dictionary. The correspondence-of- character map $ ( )=$ FI-C-9 ($ $-odd) $ $ electroweak parity violation (V$-$A; audit E26), and $ ( )$ ($ $-odd) $ $ SM $ $-violation ($ _CP$), $ $-unified (TARROW-1) into one EW chiral structure (Thm~ thm:dict); the magnitude thread $| FI-C-9| = ^-3$ (CHI-1) $ $ the P-face observable $ p_LR = ^-3/6 0.0394$ (CAP-1, shipped). This is a correspondence of symmetry character, not a derivation that the substrate objects produce the SM observables. (Cor) Effect on CONJ-CHIR-1. BRIDGE-1 discharges --- conditional on the interpretive premise P2 --- the proposed $ $-identification and character-dictionary portion (the kinematic half) of CONJ-CHIR-1, and isolates the dynamical half as the sole remaining content: does this one $ $ break, and is the break EWSB? (Cor~ cor:conj.) In summary: BRIDGE-1 identifies the bridge's $ $-skeleton; it does not build the bridge. No verdict move: chirality stays V3/W3 --- BRIDGE-1 derives no mechanism. Layer 2.5, provisional; verified by code/verify\\_bridge\\_1\\_z2\\_match.py.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -3817,7 +4037,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_cap_1.tex",
       "title": "The Capture/Partnering Handedness as a Registered Involution",
-      "ver": "1.3",
+      "ver": "1.0",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -3838,7 +4058,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.3",
+        "version": "1.0",
         "description": "Audit entry E19 --- the capture/partnering handedness (dynamics sub-question D3) --- is the deepest unregistered entry of THEO-CHIR-AUDIT-1: ``the load-bearing dynamical chirality source,'' consumed by every SD-CHIR closure through the pairing-convention generators $ $ and $ $, yet derived from no registered axiom. We resolve its classification. The capture handedness, as consumed, is the SD-CHIR $ Z_2$ generator $ $, which factors as a registered-geometric involution times a handedness sign: $ : p - p$ is the icosahedral-center inversion (built from $ = $ and the 600-cell, A2), an involution whose linear part $-I$ flips $ $ but which carries no handedness sign by itself. The sign $ $ is the decisive question. Reading the SD-CHIR proof chain's sign bookkeeping, we find $ $ is not an independent primitive: the chirality matrix-element sign is carried by the first-shell edge-perturbation pattern, whose sign is fixed by the orientation of $ $ ($ \\, e $ reverses under $ - $); and the choice of $ $ vs $- $ is exactly the FI-C-9 frozen substrate-vacuum enantiomorph (``Operation~B implies Operation~A'': any primitive direction picks one enantiomorph). Both factors of the capture handedness are therefore registered: $ $ (geometry: $ $ + A2; plus A1 charge-conjugation for the $ $ variant) and $ $ (the FI-C-9 enantiomorph sign). The capture handedness introduces no independent third chirality primitive; E19 is emergent. The new-primitive outcome (R3) is refuted; the merge with E20's temporal sign $ $ (R2) is left as a hypothesis (the capture handedness is the spatial face of the FI-C-9 sign; whether the temporal cycle shares it is a separate question). The result is Layer~2/2.5 and does not eliminate FI-C-9 (it consumes the enantiomorph sign; deriving that sign is the deferred 1d-$ $ dynamics). E19 $ $ emergent (provisional), collapsing the OPEN-CHIR-1c/2d duplication onto 1c. Verified by code/verify\\_capture\\_involution.py.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -3860,7 +4080,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_chi_1.tex",
       "title": "The Substrate Chirality Magnitude = ^-3 as the",
-      "ver": "1.3",
+      "ver": "1.0",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -3881,7 +4101,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.3",
+        "version": "1.0",
         "description": "The substrate chirality magnitude $ = ^-3 0.236$ (audit entry E21) is registered as a foundational input (FI-C-9) whose value is computed, via Capotauro Finding~C-3, as the symmetric bias $(1- ^-1)/(1+ ^-1)$ of the 600-cell's edge-to-first-non-edge distance pair. The standing open question is not the arithmetic but the ratio selection: why this pair, rather than the literature alternatives $1/ 5$ and $5-2 5$? We enumerate the symmetric biases of all $ 82=28$ distinct distance pairs in the 600-cell's distance spectrum from a host vertex and show that a single locality criterion --- the symmetric bias of the host vertex's two nearest distance shells (the $d= ^-1$ icosahedral vertex figure and the $d=1$ dodecahedral next shell, the local neighborhood where $ $ breaks $ = $) --- uniquely yields $ = ^-3$. The exponent $-3$ then follows as numerator $ ^-2$ over denominator $ ^+1$. The alternatives are excluded as non-local: $1/ 5$ is the edge-to-$ $-shell bias (skipping three shells) and $5-2 5$ is the edge-to-antipode bias (the global extreme); neither is an adjacent or two-nearest pairing. This closes the ratio-selection sub-gap (1d-$ $) of OPEN-CHIR-1d at Layer~2/2.5 and answers the reviewer's standing ``why exponent $-3$?'' question. It does not eliminate FI-C-9: the value is selected given (a) the symmetric-bias form of the magnitude generator and (b) the locality criterion, and the symmetry-breaking dynamics (sub-gap 1d-$ $) remain a deferred deep target. E21 stays emergent (provisional): 1d-$ $ closed, 1d-$ $ open. All claims are verified at machine precision by code/verify\\_chi\\_phi3\\_ratio.py.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -3903,7 +4123,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_merge_1.tex",
       "title": "The Unified Chirality Sign: Identification of the PCD-Cycle Orientation",
-      "ver": "1.3",
+      "ver": "1.0",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -3924,7 +4144,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.3",
+        "version": "1.0",
         "description": "OPEN-CHIR-MERGE is the primitive-count capstone of the audit-downstream chirality programme: after the three derivations, chirality reduces to $\\ ,\\ FI-C-9,\\ \\$; THEO-CHIR-CAP-1 pinned the spatial capture-handedness sign to $ = sign( ) = FI-C-9$; the open question is whether the temporal cycle handedness $ $ (E20) is the same sign --- i.e.\\ whether the programme carries one chirality sign or two. We resolve the identification half and report the sign half. MERGE-$ $ (resolved, provisional): $ $ --- the orientation of the PCD-cycle pseudovector $ $ --- is the THEO-DSL-3 thermodynamic causal arrow. The DSL mechanism narrative routes the substrate current $ $ through a capture-phase bias in the PCD cycle to a preferred $ $ and thence to the macroscopic arrow; the cycle and the arrow are one temporal orientation, not two. MERGE-$ $ (verdict M3, undetermined): whether that one orientation's sign reduces to $ sign( ) = FI-C-9$ is undetermined at current rigor, for two registered reasons: (i) THEO-DSL-3 holds the sign $ $ in $ = $ to be a Layer-3 convention (the two choices time-reversal-symmetric, physical only when coupled to the F.2 substrate-Wigner-Eckart datum); (ii) the current is $ = (6 / ^2) $, so the arrow direction is $ sign( )\\, $, and $ $ (Mechanism A) is an independent framework input whose tie to the spatial chirality parameter is unpinned until the Layer-4 Mechanism-A derivation (OPEN-FP-F1-2). Hence not M1 (merge) and not M2 (independence): M3. We also clarify (not close) OPEN-CHIR-2a: the PCD T-asymmetry is exactly the question of whether $ $'s sign is physical vs a convention --- the same question as MERGE-$ $ being physical; $ 2a MERGE- -physical$, both gated on the same F.2 coupling $+$ Layer-4 derivation. The temporal chirality is one orientation (MERGE-$ $), but the spatial$ $temporal sign merge is open (MERGE-$ $): the programme's chirality sign count is reduced from a naive four-way ambiguity to at most two ($ sign( )$ and $ $), with merge to one gated on Layer-4 Mechanism A. FI-C-9 is not eliminated either way. OPEN-CHIR-MERGE $ $ partially resolved. Verified by code/verify\\_merge\\_current\\_sign.py.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -3946,7 +4166,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_merge_2.tex",
       "title": "The Parity Decomposition of the Cycle Handedness:",
-      "ver": "1.5",
+      "ver": "1.2",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -3967,7 +4187,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.5",
+        "version": "1.2",
         "description": "THEO-CHIR-MERGE-1 (Patch 0644) reduced the temporal cycle handedness to $ = ( ) ( )$ and reported the reduction of $ $ to $ ( ) = FI-C-9$ as undetermined (M3), gating it on (a) tying $ ( )$ to the enantiomorph at Layer 4 (OPEN-FP-F1-2) and (b) the F.2 substrate-Wigner-Eckart coupling. This theorem --- the L4-D sub-target of OPEN-FP-F1-2 --- attacks (a) by a discrete-symmetry ($ $, $ $) bookkeeping of the factors. Result. The Mechanism-A rate-asymmetry parameter $ $ is $ $- even (it scales a propagation rate, a $ $-even scalar, against the $ $-even contraction $ e $) and $ $- odd (time reversal sends the rate function $r( e) r(- e)$, i.e.\\ $ - $). The PCD-cycle orientation $ $ is an axial vector ($ $-even) representing the cycle's temporal progression sense ($ $-odd); with $ $ a polar direction ($ $-odd, $ $-even), the relation $ = \\, $ forces $ $ to be $ $-odd and $ $-odd. Matching parities in $ = ( ) ( )$ then decomposes $ $ by symmetry character: its entire $ $-odd (spatial-chirality, pseudoscalar) content is $ ( ) = FI-C-9$, and its entire $ $-odd (temporal-arrow) content is $ ( )$. Because the 600-cell substrate is achiral (it admits a reflection symmetry --- verified), FI-C-9 is the unique primitive pseudoscalar, so this identification is forced. Consequences. (1) The chirality primitive count is ONE. The pseudoscalar content of the temporal cycle handedness is exactly FI-C-9 --- the same enantiomorph as the spatial capture handedness (THEO-CHIR-CAP-1: $ = FI-C-9$, $ $ a $ $-even involution). Both faces of chirality, spatial and temporal, are FI-C-9 modulated by a $ $-even factor (geometric involution $ $ / temporal arrow $ ( )$). This is verdict M1-$ $: M1 at the chirality level. (2) MERGE-1's M1 route is corrected. ``Tie $ ( )$ to $ ( )$'' is a parity category-mismatch: $ ( )$ is $ $-even/$ $-odd while $ ( )$ is $ $-odd/$ $-even, so no $ , $-covariant relation can equate or tie them. The merge is achieved not by tying the two signs but by recognising $ ( )$ is the arrow, not a chirality. (3) The chirality merge is F.2-independent. It is pure parity bookkeeping; F.2 (and equivalently OPEN-CHIR-2a) is required only to physicalize the $ $-odd arrow $ ( )$ --- a pure temporal question now decoupled from the chirality count. Honest caps. Layer 2.5 (a discrete-symmetry structural argument resting on the $ / $ assignments of Lemmas~ lem:delta-p-- lem:sigma); does not derive FI-C-9 (that is 1d-$ $); does not fix $ ( )$ (the arrow; OPEN-CHIR-2a / F.2); does not establish the $ $--$ $ magnitude tie (L4-E). The $ $-odd character of $ $ --- hence the verdict --- is conditional on the registered MERGE-$ $ identification of $ $ with the $ $-odd thermodynamic arrow (the rate law alone does not force it; $ $ couples oddly to $ e$, so it is flux-like, not an even static anisotropy). AI review panel cycle closed with all members confirming, no falsifier (ChatGPT + Grok + Copilot; ChatGPT CONFIRMED at v1.1 re-review; v1.2 applied two wording residuals). Verified by code/verify\\_merge\\_2\\_parity\\_decomposition.py.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -3989,7 +4209,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_pcd_orientation_1.tex",
       "title": "Deriving the PCD Winding Orientation from the Chirality Director:",
-      "ver": "1.3",
+      "ver": "1.0",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -4010,7 +4230,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.3",
+        "version": "1.0",
         "description": "THEO-CHIR-AUDIT-1 (v1.1) left exactly one entry of its 27-entry chirality classification map undecided: entry E20, the link between the substrate primitive 4D direction $ $ and the PCD-cycle orientation pseudovector $ $. The audit classified E20 unregistered (conditional) --- emergent under Scenario~A ($ $ derived from $ $) and primitive under Scenario~B ($ $ an independent primitive) --- and registered the resolution as OPEN-CHIR-F1-LINK. We resolve the classification by answering the primitive-count question rather than the magnitude question. Lifting the F.1 sub-question sketch's Phase-1 result (the substrate net DI-bit current is aligned with $ $) and Phase-2 result (the cycle-orientation coupling rule), the cycle-orientation pseudovector decomposes as $ = \\, $, the product of the registered spatial primitive $ $ (audit E16, the axis) and the registered temporal primitive's handedness $ $ (audit E2/E5/E17, the sign). We reconcile a pre-canonical axiom-attribution drift: $ $ is content of A1$+$A4 (the temporal primitive), not of A5 (the metric). The decomposition shows $ $ introduces no independent third chirality primitive: Scenario~B is refuted and E20 is emergent from the two registered primitives jointly, preserving the audit's headline that all spatial chirality reduces to $ $. The result is stated at viability level (Layer~2.5): it inherits the F.1 trajectory's three open structural commitments as a ceiling, so E20 reclassifies to emergent (provisional), not established. The load-bearing economy is that the primitive-count is robust to all three open commitments (none reintroduces an independent direction or handedness), even though the magnitude and Layer-3 rigor remain provisional. Falsification is by exhibiting an independent direction in $ $ unequal to $ $, or a sign content independent of the temporal primitive's ordering.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -4032,7 +4252,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_status_1.tex",
       "title": "The Primitive/Emergent Status of Chirality:",
-      "ver": "1.4",
+      "ver": "1.1",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -4053,7 +4273,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.4",
+        "version": "1.1",
         "description": "The Substrate Chirality Arc's headline goal is to determine whether chirality in CPP is primitive or emergent. THEO-CHIR-MERGE-2 (cycle closed 3/3, Patches 0647--0651, conditional on MERGE-$ $) reduced all currently-identified chirality (pseudoscalar) content to one primitive: $ FI-C-9 = ( )$, the frozen substrate-vacuum enantiomorph. The temporal-arrow $ ( )$ is not a chirality (it is the $ $-arrow, OPEN-CHIR-2a) and is tracked separately. Hence the chirality-status question reduces to: is FI-C-9 primitive or emergent? --- which is OPEN-CHIR-1d-$ $. This theorem is its sub-target 1d-$ $-iv: it does not derive FI-C-9, but it formalizes the verdict structure and places current rigor. Decomposing emergence into a capacity axis (is there a derivable mechanism producing a chiral vacuum?) and a value axis (is the enantiomorph sign derived, spontaneous, or free), we define three verdicts --- V3 (irreducible primitive: no mechanism), V1 (emergent mechanism, contingent sign), V2 (fully emergent: mechanism $+$ sign derived) --- and prove they exhaustively partition the outcome space (Theorem~ thm:partition). We then show (Theorem~ thm:placement) that under the present registered framework the status is V3: the 600-cell is achiral (so geometry supplies no handedness), every registered chirality theorem (CHI-1, CAP-1, MERGE-2) consumes FI-C-9, and no registered substrate mechanism derives a chiral vacuum (1d-$ $-ii open). Crucially, V3 means ``not yet derived,'' not ``underivable'': it is the current-rigor placement, explicitly upgradeable. The achievable upgrade is V1 (Theorem~ thm:upgrade), reached iff 1d-$ $-ii derives a chiral-vacuum mechanism; V2 additionally requires a sign-fixing asymmetry (1d-$ $-iii-explicit), currently not in evidence. Honest one-line status of the goal: chirality in CPP is emergent down to one currently-identified irreducible primitive (FI-C-9, verdict V3, conditional on MERGE-$ $) plus the separately-tracked $ $-arrow (2a), with a mapped (deep, cross-sector) path to upgrading FI-C-9 to V1. Layer 2.5, provisional; a classification result, not a derivation. Verified by code/verify\\_status\\_1\\_verdict\\_partition.py.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -4075,7 +4295,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_status_2.tex",
       "title": "The Chiral-Vacuum Breaking Chain",
-      "ver": "1.4",
+      "ver": "1.1",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -4096,7 +4316,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.4",
+        "version": "1.1",
         "description": "THEO-CHIR-STATUS-1 placed the current-rigor status of the one currently-identified chirality primitive, $ FI-C-9 = ( )$, at V3 (irreducible primitive --- not yet derived), with the achievable upgrade being V1 (emergent mechanism, contingent sign). This theorem sharpens the upgrade target (it does not move the placement: the verdict stays V3). (1d-$ $-i, the breaking chain.) A handedness-bearing substrate vacuum is, structurally, the spontaneous breaking of the achiral 600-cell isometry group $ $ (order 14400, generated by reflections) to its rotation subgroup $ $ (order 7200, index 2): the orientation map $ : \\ 1\\$ is a homomorphism with kernel $ $, the quotient $ / $ is the enantiomorph order parameter, and the two degenerate chiral vacua are its two cosets (related by any reflection; e.g.\\ $ diag(-1,1,1,1)$, MERGE-2). The order parameter is the pseudoscalar $ ( ) = FI-C-9$. (Partial 1d-$ $-iii, the sign.) Fixing the value of this $ $ order parameter requires a $ $-odd (pseudoscalar) quantity: every $ $-even invariant (Gram data, unsigned volumes, the full distance spectrum) is invariant under the reflection relating the two vacua and so cannot distinguish them. By MERGE-2 the unique primitive pseudoscalar is FI-C-9 itself; hence no axiom-level pseudoscalar can explicitly fix the sign without circularity. Therefore the value-axis is not ``derived'' at the axiom level: V2 is excluded at the axiom level, and the capacity-$= Yes$ outcome is pinned to V1 --- reopenable to V2 only by a cross-sector pseudoscalar (1d-$ $-v, e.g.\\ a Standard-Model CP-violating phase). Net sharpening of the goal: chirality is V3 at current rigor, and when/if FI-C-9 becomes emergent (via the deep mechanism 1d-$ $-ii) it will be exactly V1 --- emergent mechanism, contingent sign --- not V2, absent a cross-sector pseudoscalar. Layer 2.5, provisional; no mechanism is derived (V3 stands). Verified by code/verify\\_status\\_2\\_breaking\\_chain.py.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -4118,7 +4338,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_tarrow_1.tex",
       "title": "The Primitive/Emergent Status of the Time-Reversal Arrow ():",
-      "ver": "1.4",
+      "ver": "1.1",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -4139,7 +4359,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.4",
+        "version": "1.1",
         "description": "THEO-CHIR-MERGE-2 (cycle closed 3/3, conditional on MERGE-$ $) decomposed the cycle handedness $ = ( ) ( )$ by symmetry character: its entire $ $-odd (pseudoscalar / chirality) content is $ ( ) = FI-C-9$ (the spatial primitive, $ $-odd/$ $-even), and its entire $ $-even/$ $-odd (arrow) content is $ ( )$. The STATUS pair (STATUS-1 verdict structure; STATUS-2 breaking chain) then settled the spatial half --- FI-C-9 is V3 at current rigor, upgrade pinned to V1. This theorem settles the temporal half, the time-reversal arrow $ ( )$ (OPEN-CHIR-2a), at comparable rigor. We instantiate the STATUS-1 partition on the time-reversal axis --- capacity $ C_ $ (is a substrate $ $-asymmetry mechanism derivable?), value $ V_ $ (is the arrow direction fixed?) --- yielding three verdicts W3 (irreducible primitive arrow), W1 (emergent mechanism, contingent direction), W2 (fully emergent), exhaustively partitioning $ C_ V_ $ (Thm~ thm:partition). The new structural content is a disanalogy with parity. (i) The substrate geometry is purely $ $-even (a static lattice; every static-geometric invariant --- coordinates, Gram data, distance spectrum, the orientation pseudoscalar $ ( )$ --- is $ $-even), so time reversal admits no finite-group breaking chain (the analog of $ $ does not exist) and the geometry supplies no $ $-odd quantity at all (Lemma~ lem:teven). (ii) The unique $ $-odd object in the registered framework is the arrow $ ( )$ itself (the $ $ arrow, via MERGE-$ $); fixing the direction therefore requires $ ( )$ to fix itself --- circular --- so $ V_ derived$ at the axiom level: W2 is excluded at the axiom level, and the upgrade is pinned to W1 (Thm~ thm:w2excluded), with the natural $ V_ = free$ subtype being cosmological inheritance (a low-entropy boundary state) --- exactly the standard thermodynamic-arrow picture. (iii) Under assumed $ $ (in a $ $-invariant theory a $ $-violating and a $ $-violating sign-fixer are paired in the corresponding physical sector) the temporal W2-reopener and the spatial V2-reopener (STATUS-2's 1d-$ $-v) are the same cross-sector object --- the Standard-Model $ / $-violating phase (OPEN-SM-4) --- so fully deriving chirality (the $ $-sign and the $ $-arrow) is a single cross-sector target (Thm~ thm:cpt). At current rigor the $ $-asymmetry mechanism is not derived (DSL-3 narrates the arrow but inherits the DSL viability ceiling; the physicalization is gated on F.2), so $ C_ = No$ and the placement is W3. Full chirality status (STATUS-1 $ $ STATUS-2 $ $ this): chirality is emergent down to one $ $-odd primitive (FI-C-9, V3, upgrade $ $V1) $+$ one $ $-odd arrow ($ ( )$, W3, upgrade $ $W1); neither sign is derivable at the axiom level (each is the unique object of its symmetry character), and both reopen to full derivation only through the single $ $-linked SM $ / $ phase. Layer 2.5, provisional; a classification result, not a derivation. Verified by code/verify\\_tarrow\\_1\\_arrow\\_status.py.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -4161,7 +4381,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_tarrow_2.tex",
       "title": "A Derived Substrate Time-Asymmetry Mechanism:",
-      "ver": "1.4",
+      "ver": "1.1",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -4182,7 +4402,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.4",
+        "version": "1.1",
         "description": "THEO-CHIR-TARROW-1 placed the time-reversal arrow $ ( )$ at the verdict W3 and stated explicitly that it does not derive a substrate $ $-asymmetry mechanism: the capacity $ $ (``is such a mechanism derivable?'') was answered No, pinned on the F.2 physicalization being unbuilt. This theorem supplies the mechanism. Mechanism~A (the F.1 framework rate law $r( )= (1+ \\, )$ on the 600-cell) induces a continuous-time Markov process; we show it is non-reversible at $ ^3$. The detailed-balance / Kolmogorov cycle log-ratio is odd in $ $ (forward/backward antisymmetry), so there is no $ ^2$ violation; per triangular face the three oriented edge-projections satisfy $a+b+c=0$ (closed loop $+$ uniform edge length), giving an $ ^1$ cycle sum that vanishes for every face and an $ ^3$ content equal to $2 ^3 abc$ (via $a^3+b^3+c^3=3abc$). A direct computation over the 1200 triangular faces finds $abc 0$ on 420 of them (values $\\1/8,1/4\\$, all touching the second shell). A non-reversible process carries a steady-state probability current --- a time-asymmetry --- so $ $ is answered Yes conditional on Mechanism~A: a candidate $ W1$ conditional on Mechanism~A (mechanism derivable; direction free, per TARROW-1's axiom-level W2-exclusion), the residual being the Layer-4 question $A1 --A11 Mechanism~A$ (OPEN-FP-F1-2; once discharged the move is unconditional). The result does not contradict TARROW-1: the current is the dynamical realization of the unique $ $-odd object $ ( )$ (it flips sign with $ $ via $2 ^3 abc$), not a new $ $-odd object --- precisely the F.2 physicalization TARROW-1 flagged as unbuilt. Layer~2.5, conditional on Mechanism~A; the spatial verdict (V3) is untouched and the arrow direction is not fixed. AI review panel cycle closed with all members confirming (no falsifier); the W-move is claimed at this close.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -4204,7 +4424,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_vw_1.tex",
       "title": "The Reflection-Positivity Structure of the Substrate Parity :",
-      "ver": "1.4",
+      "ver": "1.1",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -4225,7 +4445,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.4",
+        "version": "1.1",
         "description": "B-iii reduced the chirality capacity question to one bit --- $ ( ^2)$ of the $ $-even Landau potential $V( )$ for the det-coset order parameter $ $ (Patch 0668) --- and pinned that bit behind the F.1 14.17 viability ceiling. This theorem opens a route to the bit that does not require the full effective action, by asking whether a Vafa--Witten reflection-positivity no-go forces $ ^2>0$. Four results, all on review-hardened inputs. (VW-b, established) the det-coset $ $ (STATUS-2's $ / $ quotient) is a vectorial reflection ($ =-1$), not an axial/chiral symmetry, hence in the class a Vafa--Witten no-go protects (Lemma~ lem:vwb). (VW-c, established at the reachable level) the bare substrate carries none of the three Vafa--Witten evasion routes $\\$chiral content, $ $-term, complex measure$\\$ at the level currently hardened; each, where it appears, enters through the SM bridge (BRIDGE-1, kinematic/P2), not the bare substrate (Lemma~ lem:vwc). (The unification, centerpiece) STATUS-2's axiom-level V2-exclusion (value side: no internal $ $-odd pseudoscalar can fix the sign $ $ parity is not broken explicitly) and the Vafa--Witten no-go (capacity side: $ ^2>0 $ parity is not broken spontaneously) are two faces of one property --- the substrate measure is parity-even and reflection-positive --- and together they close both routes by which a symmetry can break (Theorem~ thm:unif). (VW-d, conditional) If reflection positivity (H1) holds, then within the substrate axioms $ ^2>0$ and $ =0$, so the observed FI-C-9 $ 0$ is either a primitive input (V3 by principle) or externally sourced by the SM bridge (emergent via the bridge $=$ B-iii-(ii)/CONJ-CHIR-1) (Theorem~ thm:vwd). The open residual is H1 itself: reflection positivity is not proved here (criteria $+$ a first-pass real-measure assessment only, Prop.~ prop:vwa); a full Osterwalder--Schrader proof may still need the explicit DSL action. The payoff is that the entire verdict-moving capacity question is reduced to one sharp question --- ``is the DSL measure reflection-positive?'' --- rather than ``compute the whole effective action.'' No verdict move: chirality stays V3/W3. Layer 2.5, provisional; verified by code/verify\\_vw\\_1\\_reflection\\_positivity.py.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -4247,7 +4467,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_vw_2.tex",
       "title": "The =0 Reflection-Positivity Anchor and the Osterwalder--Schrader Reduction of H1 to VW-a-4",
-      "ver": "1.3",
+      "ver": "1.1",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -4268,7 +4488,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.3",
+        "version": "1.1",
         "description": "THEO-CHIR-VW-1 reduced the chirality capacity question to one open hypothesis --- H1, reflection positivity of the dynamical-substrate-law (DSL) measure. The VW-a probe (Patch 0683) sharpened H1 into an Osterwalder--Schrader (OS) criterion and isolated its single residual. This theorem registers the reachable structural content of that probe. Theorem A (unconditional): at $ =0$ the substrate is $ $-symmetric with outgoing--incoming detailed balance (THEO-DSL-3, vanishing net current), and a reversible (detailed-balance) measure is reflection-positive for the Euclidean time-reflection $ $ --- the positivity input the VW route consumes --- so H1 (the OS-positivity input) holds at the symmetric reference point. Theorem B (Layer 2.5, conditional on the reachable OS ingredients): given the tested parity $ $ as a lattice symmetry (VW-a-1 $=$ VW-b), a real measure (VW-a-2, first pass), and $ $-symmetry of the action on its geometric part (VW-a-3, the $I_h$-equivariant rate function), H1 for the full measure is equivalent to VW-a-4 --- persistence of cross-plane transfer-operator positivity under the $ $-perturbation --- with the $ =0$ base case settled by Theorem A. This marks the VW route's reachable boundary: everything past VW-a-4 (which is $ ( ^2)$ itself) is the F.1~ 14.17 / F.2 remainder. Honest caps: VW-a-4 is OPEN and 14.17-gated; reflection positivity encodes unitarity, not time-reversal symmetry, so the coupling to the substrate arrow (TARROW-1) is a sufficient-condition link, not an equivalence. No verdict move: chirality stays V3/W3. Layer 2.5, provisional; verified by code/verify\\_vw\\_2\\_delta0\\_rp\\_reduction.py.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -4290,7 +4510,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
       "title": "The Dynamical Substrate Law:",
-      "ver": "1.3",
+      "ver": "1.0",
       "changed": "2026-08-18",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -4404,7 +4624,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.3",
+        "version": "1.0",
         "description": "We establish the substrate-locality property for DI-bit currents on the 600-cell substrate at vertex-aligned Reading~C: under Mechanism~A (the propagation-rate-asymmetry primitive $r( e) = r_0(1 + \\, e )$) and the framework-local current construction at first order in $ $, the substrate net DI-bit current at any host vertex $ $ depends only on first-shell content. The result is proved at sketch-document Layer~3 in three steps: (i)~the host-to-first-shell unit-direction projection $ u_i = -1/(2 )$ is uniform across all twelve first-shell neighbours (Theorem~ thm:host-first-shell-projection); (ii)~the first-shell-to-first-shell edge-direction projection $ e_ij = 0$ vanishes for any pair of first-shell vertices (Theorem~ thm:first-shell-perpendicularity); (iii)~the perturbation-theory propagation rule confines the $ ^n$ coefficient of the substrate current to graph-distance-$n$ edges in the 600-cell edge graph (Theorem~ thm:perturbation-locality, with shell-locality Corollary~ cor:shell-locality). The three load-bearing identities --- host-to-first-shell uniform projection, first-shell-to-first-shell perpendicularity, and the perturbation-theory propagation rule (with shell-locality corollary) --- are hardened at publication-grade rigor with explicit hypothesis tracking and five-class exclusion enumeration each. We make the scope qualifier --- perturbative locality under Mechanism~A and the framework-local current construction at $ ^1$ --- structurally inseparable from the theorem statements. Five open higher-order questions are registered (Section~ sec:open-questions); the three core extension/derivation questions are: extension to $ ^2$ (Open~Problem~ op:delta-squared); Layer~4 axiomatic derivation of Mechanism~A from the eleven CPP primitive axioms~A1--A11 (Open~Problem~ op:layer4-mechanism-a); and publication-grade hardening of the first-shell inner-product primitive G1 (Open~Problem~ op:g1-hardening). Two additional research-direction-choosing questions register the broader chirality continuum (Open~Problem~ op:sector5-schema, Sector-5 schema instantiation) and Reading~C-variant programmes (Open~Problem~ op:non-vertex-aligned-c, non-vertex-aligned Reading~C variants). Scope of the closure: the present paper establishes substrate-locality structure (the closed-form first-order DI-bit current at the host vertex) supporting the candidate thermodynamic-arrow mechanism for manifestation~(iv) of OPEN-SD-CHIR-PRIMITIVE. The full thermodynamic-arrow emergence in the conventional physics sense --- entropy production, irreversible coarse-graining, statistical-mechanics emergence --- is the candidate mechanism narrative supported by, but not derived from, the present paper's result; the emergence layer is registered as future work beyond the present paper's framework qualifiers. The paper integrates the F.1 sub-question of the OPEN-SD-CHIR-PRIMITIVE manifestation~(iv) trajectory and is the temporal-sector analog to the Capotauro~v2.0 spatial-sector substrate-locality theorem, with which it shares the structural constant $-1/(2 )$.",
         "description_ok": true,
         "description_source": "abstract environment"
