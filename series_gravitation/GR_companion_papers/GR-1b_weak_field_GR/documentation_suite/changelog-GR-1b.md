@@ -96,3 +96,31 @@ log); it is not addressed here and is recorded for a future pass.
 Patch-3283 suite pass, stated the figures were committed as PDF. That
 was a reconstruction error on my part — the repository contained only
 SVGs — and the sentence is amended in place rather than deleted.
+
+---
+
+## V3.5 — 20 August 2026, Patch 3294 (Session 153) — **W-D status notes**
+
+OPEN-GR-PPP-1 **W-D**, executed on the scope the W-B pass established.
+Dated status notes added to Open Problems (1)–(3), anti-erasure: the
+original item text is retained **verbatim** and each note is appended
+beside it, naming the delivering companion *and its limits*.
+
+- **(1) Full nonlinear Einstein equations** — STILL OPEN as stated, and
+  substantially advanced (T-1 from the messenger census, CONV-027;
+  GR-1c's corrected Proposition proven equivalent). What this item names
+  — producing the Ricci tensor — is untouched. `op:einstein`.
+- **(2) Exact Schwarzschild** — DELIVERED, GR-1c Theorems 1 and 2. The
+  note also records that **neither theorem has been externally
+  reviewed**, since CONV-027 examined GR-1c's field-equation Proposition
+  only.
+- **(3) Kerr metric** — DELIVERED, GR-1f (with GR-1g for Kerr–Newman),
+  carrying forward the caveat that GR-1f shows consistency at all orders
+  rather than deriving Σ and Δ (`op:allorders`, open).
+
+**(4) Big Bang, (5) cosmological constant, and (6) qDP chaining are
+untouched** — (4) and (6) are genuinely open and outside this arc, and
+(5) already carries its own V3.3 calibration label, which says more than
+a status note would.
+
+Compile gate clean (0 errors, 14 pages). No technical content changed.
