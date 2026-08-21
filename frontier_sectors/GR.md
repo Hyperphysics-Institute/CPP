@@ -773,6 +773,32 @@ its missing prerequisite.
   GR-1f/g/h, now with the adopted execution plan (per-paper dependency
   audit for hidden horizon/interior assumptions FIRST — CONV-030
   adoption 4); OPEN-GR-RCORE-2 items i–x.
+- **RCORE-2(iv) RECONNAISSANCE (Patch 3318): THE ERGOREGION-BURIAL
+  CRITERION — χ_crit = 2/√7 ≈ 0.756, and the GW merger-remnant
+  population is GEOMETRICALLY SAFE.** Under the dictionary-consistent
+  proxy (spinning exclusion surface = Kerr ZAMO-lapse-1/3 surface;
+  exact at a = 0, recovering areal 9M/4), the closed form
+  α²(r_E,eq) = a²/(2(2M²+a²)) gives an exact critical spin: below
+  2/√7 the exclusion surface sits OUTSIDE the ergosphere at every
+  latitude — no exterior ergoregion, no negative-energy modes, NO
+  ergoregion instability at any reflectivity. χ = 0.68 (GW150914-class)
+  is buried with gap 0.052 M. Above χ_crit an equatorial exposure band
+  opens (±20° at 0.80, ±41° at 0.95); only there do the growth-time and
+  drain conjuncts even arise — and the high-spin X-ray-binary
+  comparison is a MODELING question (those spin fits assume a Kerr
+  horizon to the ISCO). Honest grade: reconnaissance; the lapse-1/3
+  criterion is the approximation (rotational census enters at O(a²));
+  Zel'dovich surface superradiance survives burial as a separate milder
+  channel, noted unexplored. Verify
+  `code/3318_ergoregion_burial_recon.py` 7/7 (two check-logic sign
+  errors caught by the script's own first run — the binding case is the
+  lapse MAXIMUM on the ergosphere, and burial means α(r_E) < 1/3 —
+  fixed before commit). Record
+  `rcore_derivation/3318_ergoregion_burial_recon.md`. HARDENING PATH =
+  RCORE-2(iv) proper (derive the Kerr surface from the rotational
+  census, re-run the comparison). PRIORITY EFFECT: the corpus's only
+  viability-class flag drops to ordinary urgency — SD-5/K₀ and
+  OPEN-QM-9 no longer queue behind an existential question.
 - **W-D COMPLETE (4/4) AND THE FIVE-PAPER C* PASS COMPLETE (Patches
   3305–3309):** GR-1c V2.3.1 (notes on op:kerr / op:24cell /
   op:hawking / op:echoes; op:einstein untouched — op:hawking honestly
