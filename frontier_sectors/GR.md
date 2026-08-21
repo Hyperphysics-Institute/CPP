@@ -806,6 +806,34 @@ its missing prerequisite.
   censorship as a separate milder channel (registered, unexplored).
   Verify `code/3320_kerr_surface_derivation_verify.py` 8/8. Record
   `rcore_derivation/3320_kerr_surface_derivation.md`.
+  **CONV-032 CLOSED 5/5 (Patches 3324–3325): theorem CORRECT given
+  A1–A3, 5–0; burial CONFIRMED 5–0; template ADEQUATE-FOR-DRAFT 5–0
+  with a BINDING error-bar rider; the reverse-engineering suspicion
+  SURVIVES on the paper trail 4–1 — while the GPT dissent's
+  γ-weighted-norm counterexample (F = s² + γv², γ < 1, preserves the
+  full a = 0 result yet can admit the ergosphere) SUSTAINS the
+  load-bearing-ness of A3's unweighted norm as a derivation debt.
+  Q1 "unique extension" WITHDRAWN (minimal, not unique); χ_crit =
+  2/√7 relabeled SUPERSEDED-CONDITIONAL-ON-A1–A3 (GPT compromise
+  adopted). Adjudication `review/conv032_adjudication.md` v1.0;
+  founder ratification pending — on it, GR-2 drafting opens.**
+- **OPEN-GR-RCORE-4 (minted Patch 3325, from the CONV-032 GPT
+  dissent): DERIVE THE ROTATIONAL CENSUS FUNCTIONAL FROM MICROSCOPIC
+  REGISTER DYNAMICS.** Two conjuncts, both currently assumptions of
+  the 3320 construction: (a) A2's normalization — WHY is the
+  rotational register demand the ZAMO dragging speed v = ωϖ/α rather
+  than another locally normalized gravitomagnetic invariant (the
+  decisive property v = 1 ⟺ g_tt = 0 is a consequence of this
+  choice, not independently established); (b) A3's norm and relative
+  weighting — WHY unweighted L² quadrature (the registered
+  counterexample: F = s² + γv² with γ < 1 preserves the entire
+  static sector but can de-censor the ergosphere; L∞ places the
+  surface AT it). Discharging RCORE-4 upgrades all-spin ergoregion
+  censorship from a theorem of the A1–A3 model to a physical theorem
+  of CPP; until then all censorship prose stays explicitly
+  conditional (CONV-032 Q4 adoption). Logically prior to any
+  unconditional-censorship claim; independent of (and parallel to)
+  RCORE-3's finite-ℓ spectroscopy.
 - **RCORE-2(iv) RECONNAISSANCE (Patch 3318): THE ERGOREGION-BURIAL
   CRITERION — χ_crit = 2/√7 ≈ 0.756, and the GW merger-remnant
   population is GEOMETRICALLY SAFE.** Under the dictionary-consistent

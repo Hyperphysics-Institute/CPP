@@ -15,18 +15,15 @@ Adjudication follows in `conv032_adjudication.md`; on confirmation +
 founder ratification: the 3318 recon formally retires, the GR-1f/1h
 caveat notes gain their settled content, and GR-2 drafting opens.
 
-**Status (Patch 3324, re-paste registration): 3/5 CLEAN (Grok Seat 2;
-Gemini Seat 3; Copilot Seat 4) + ONE valid CONV-032 return with
-AMBIGUOUS seat attribution (registered under Seat 5 below; delivered in
-the founder's DeepSeek slot but self-identifying as ChatGPT in both its
-visible reasoning and its §8 REVIEWER field) + ONE WRONG-PACKAGE
-delivery in the Seat 1 slot (a CONV-031-format entanglement return,
-archived verbatim below, NOT counted toward CONV-032). The prior
-Patch-3322 delivery-failure record stands as history. Outstanding
-mechanical cure requested from the founder: (i) confirm which model
-produced the Seat 5 return, and (ii) re-pull the missing seat's
-CONV-032 return (ChatGPT's if the Seat 5 return is DeepSeek's
-identity-echo; DeepSeek's if the paste labels crossed).**
+**Status (Patch 3325): 5/5 REGISTERED — ROUND COMPLETE.** Seat 1
+ChatGPT/GPT-5.6 Sol (true return registered below, after the archived
+wrong-package delivery); Seat 2 Grok; Seat 3 Gemini; Seat 4 Copilot;
+Seat 5 DeepSeek (founder-confirmed authorship — "DeepSeek mislabeled
+itself as GPT" — DeepSeek identity-echo #1; flag on the section
+updated). Registration history preserved above/below anti-erasure:
+the Patch-3322 delivery failure, the Patch-3324 crossed re-paste, and
+this completion. Adjudication FINAL in `conv032_adjudication.md`
+(v1.0, Patch 3325); founder-ratification bundle pending.
 
 ---
 
@@ -220,9 +217,19 @@ DEFECTS/OBJECTIONS:
 
 ---
 
-## Seat 5 — [slot: DeepSeek] — IDENTITY CONFLICT, seat attribution DEFERRED
+## Seat 5 — DeepSeek — IDENTITY-ECHO #1 (founder-confirmed 2026-08-21)
 
-**Registration flag (Patch 3324):** Delivered in the founder's
+**Resolution flag (Patch 3325):** The founder confirms DeepSeek
+authored this return and mislabeled itself as GPT/ChatGPT — the exact
+violation the IDENTITY mandate names, committed while QUOTING the
+mandate in its own visible reasoning. DeepSeek identity-echo count: 1.
+Cure adopted: per-seat DeepSeek identity line in the next CONV
+dispatch (mirroring the Gemini cure, which worked this round).
+Verdicts stand as registered; the Q6 falsifier steer is thereby
+answered by its designated seat. Original Patch-3324 registration
+flag retained below anti-erasure.
+
+**Registration flag (Patch 3324, historical):** Delivered in the founder's
 DeepSeek slot, but the return self-identifies as ChatGPT in BOTH its
 visible reasoning ("We are ChatGPT, so we will put 'ChatGPT'") and its
 §8 REVIEWER field. Content IS a genuine, complete CONV-032 return
@@ -297,3 +304,51 @@ These are clean, observationally accessible tests.
 **SCRIPT:** INSPECTED (reference run) — I cannot execute Python code in this environment; I have inspected the reference run output and the script logic. The reference run shows `8/8 PASS`.
 
 **DEFECTS/OBJECTIONS:** NONE
+
+---
+
+## Seat 1 — ChatGPT (GPT-5.6 Sol) — TRUE RETURN (registered Patch 3325)
+
+**Registration note:** Delivered by the founder 2026-08-21 after the
+crossed re-paste (the wrong-package CONV-031 document archived in the
+Seat 1 slot above). This is the round's substantive DISSENT seat:
+SOUND-WITH-GAPS on Q1, SUSPECT on Q3's reverse-engineering question,
+retirement NOT WARRANTED on Q4, MISSING-ITEMS on Q7 with a new OPEN
+proposed. SCRIPT: honest NOT-EXECUTED with an own-run ATTEMPT
+described (extraction succeeded, execution exceeded the available
+interval) — OWN-RUN mandate honored in the breach, second consecutive
+round with GPT own-run delivery/runtime friction (dispatch-design
+note: see adjudication §2).
+
+### Verbatim paste
+
+REVIEWER: GPT-5.6 Sol
+TIER LEGEND USED: INSPECTED / INDEPENDENTLY RECOMPUTED / SCRIPT-EXECUTED
+
+Q1: **SOUND-WITH-GAPS** [INDEPENDENTLY RECOMPUTED + INSPECTED] — The static algebra is exact: for isotropic Schwarzschild (\alpha=(1-x/2)/(1+x/2)), direct substitution gives (2(1-\alpha)/(1+\alpha)=x=\mu/\bar r). But "unique lapse-side extension" is stronger than this proves: exact agreement on the (a=0) submanifold does not uniquely determine the spinning extension; spin-dependent scalar terms vanishing as (a\to0) remain mathematically possible. Thus A1 is a clean, minimal extension of the ratified dictionary, not uniquely forced by the static limit alone.
+
+Q2: **JUSTIFIED-BUT-NOT-UNIQUE** [INDEPENDENTLY RECOMPUTED + INSPECTED] — (v=\omega\varpi/\alpha) has a strong physical case because it is the locally measured speed of the stationary Killing congruence relative to ZAMOs, hence dimensionless in precisely the "fraction of local reach" units A2 wants. I independently verify the key 3+1 identity:
+[
+g_{tt}=-\alpha^2+\omega^2g_{\phi\phi}
+=-\alpha^2(1-v^2).
+]
+But a defensible alternative rotational census could be based on a locally normalized gravitomagnetic field/vorticity, e.g. (v_{\rm alt}\sim L,|B_g|) with a specified local reach (L), which also vanishes at (a=0). Such an alternative need **not** equal one on the ergosphere and therefore can undo censorship. A2 is physically motivated, but the theorem's decisive property (v=1\iff g_{tt}=0) is not established independently of choosing this particular rotational observable.
+
+Q3: **SOUND-BUT-NOT-UNIQUE; SUSPECT** [INDEPENDENTLY RECOMPUTED + INSPECTED] — If (s) and (v) genuinely are orthogonal components of **one Euclidean register vector**, quadrature follows. But orthogonality of physical directions alone does not prove that the capacity functional is the Euclidean (L^2) norm. Both (F_{\max}=\max(s,v)) and an (L^1) rule (F_1=s+|v|), suitably interpreted as alternative capacity norms, preserve the static saturation (s=1). Interestingly, both still censor the ergosphere: at (v=1,s>0), (L^1>1), while (L^\infty=1) exactly there, giving a surface at—not strictly outside—the ergosphere. More generally a weighted Euclidean law (F=s^2+\gamma v^2), (\gamma<1), preserves the entire (a=0) result but can permit the ergosphere before saturation. Therefore A3's *specific normalization and norm* are load-bearing and are not derived here. The reverse-engineering concern consequently survives: the striking theorem is partly encoded by A2+A3 rather than emerging independently from already-fixed register dynamics.
+
+Q4: **CORRECT-WITH-CAVEATS; retirement NOT WARRANTED** [INDEPENDENTLY RECOMPUTED + INSPECTED] — **Given A1–A3**, the theorem is exceptionally short and correct: on (g_{tt}=0), A2 gives (v^2=1), while finite-radius (\alpha<1) gives (s>0), hence (F=1+s^2>1). Assuming the exterior branch continuously approaches (F\to0) at infinity, an (F=1) crossing lies outside the ergosphere. The corollary excluding the standard exterior-ergoregion instability then follows at this conditional grade. But I would not retire the previous (\chi_{\rm crit}=2/\sqrt7) as physically superseded until A2/A3 are independently derived from register dynamics; label it **superseded conditional on A1–A3**, not retired outright.
+
+Q5: **CONFIRMED; ADEQUATE-FOR-DRAFT** [INSPECTED + INDEPENDENTLY RECOMPUTED] — Conditional on the derived A1–A3 surface, the reported (\chi=0.68) ordering (r_{\rm ph}^{pro}\simeq2.05M<r_{\rm surf}\simeq2.267M<r_{\rm ph}^{ret}\simeq3.706M) supports prograde-ring burial and a retrograde eikonal cavity. The stated (8.592,GM/c^3) converts to about (2.62) ms for (62M_\odot), and (8.592/7.045-1\simeq21.96%), so the quoted +22% is internally consistent. This is appropriately draft/eikonal grade; finite-(\ell,m), wall co-rotation, and parameter uncertainties must precede phenomenological templates.
+
+Q6: **The strongest CPP-specific falsifier is an independently established exterior ergoregion for a compact object whose surface is also independently localized outside the would-be horizon under CPP's own mapping.** Merely observing rapid spin does not suffice after this construction. A robust echo/barrier spectrum at (\chi\gtrsim0.55) requiring a persistent **prograde** photon-ring cavity exterior to the reflector would directly contradict the conditional surface ordering; however, finite-(\ell,m) RCORE-3 must first turn that into a quantitative prediction. Observation of an ergoregion-instability signature would be powerful but interpretation must establish that the source actually has the horizonless reflective boundary CPP predicts.
+
+Q7: **MISSING-ITEMS** — Add **OPEN: derive the rotational census functional from microscopic register dynamics**, explicitly covering both A2's normalization and A3's norm/relative weighting. That is logically prior to treating all-spin censorship as a physical theorem rather than a theorem of the A1–A3 model. Also retain the listed Zel'dovich surface-superradiance and finite-(\ell,m) problems; censorship of an exterior ergoregion does not dispose of rotating-boundary amplification.
+
+SCRIPT: **NOT-EXECUTED — own run attempted.** I extracted the supplied inline script from the mounted package and launched it, but the run exceeded the available execution interval before producing a completed stdout/count line. Under the round's OWN-RUN rule I therefore claim no execution credit and do not reproduce the package's reference `8/8 PASS` as my own.
+
+DEFECTS/OBJECTIONS:
+
+1. **A1 uniqueness overclaim:** recovering the exact (a=0) relation does not mathematically make its Kerr extension unique.
+2. **A2 is theorem-generating:** its choice makes the ergosphere identically (v=1); another locally normalized rotational invariant can preserve the static limit without doing so.
+3. **A3 lacks a capacity-law derivation:** geometric orthogonality does not alone establish an unweighted Euclidean register norm.
+4. **The censorship theorem is therefore exact but conditional in a stronger sense than the headline suggests.** The package itself correctly calls A1–A3 assumptions, but the phrase "the same floor ... censors the ergoregion" should remain explicitly conditional until A2/A3 are substrate-derived.
