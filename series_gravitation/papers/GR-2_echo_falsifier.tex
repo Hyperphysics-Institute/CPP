@@ -1,0 +1,427 @@
+% ==================================================================
+% GR-2: The Echo Falsifier
+% Millisecond Gravitational-Wave Echoes from Horizonless CPP Compact
+% Objects: the Complete Retrograde-Keyed Template and What Kills It
+% Second series paper of the CPP gravitation series (parent GR-1)
+% V0 (Patch 3329, 21 Aug 2026): assembled on the founder-ratified
+%   CONV-032 adjudication (5/5) with the complete input set: |R| = 1
+%   (GR-1d V3, spin-independent), the Schwarzschild closed form
+%   (3/2 + 8 ln 2) GM/c^3 (CONV-030), the derived Kerr exclusion
+%   surface + ergoregion-censorship theorem (Patch 3320, conditional
+%   on A1-A3), the prograde-burial finding (onset chi ~ 0.55), and
+%   the binding error-bar rider. Verify script
+%   series_gravitation/code/3329_gr2_template_verify.py, 9/9 PASS
+%   (FAST subset 4/4 -- first enactment of the CONV-032 FAST-mode
+%   adoption). Spin-saturation finding surfaced by the script's own
+%   first run: dDt/dchi = 0.299 GM/c^3 at the benchmark, so the
+%   +/-0.1 spin bar is +/-0.35% -- mass dominates ~20x.
+% ==================================================================
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+\geometry{letterpaper, margin=1in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\Msun}{M_\odot}
+
+\title{\textbf{The Echo Falsifier:\\
+Millisecond Gravitational-Wave Echoes from Horizonless\\
+CPP Compact Objects}\\[6pt]
+{\large Second series paper of the Conscious Point Physics
+gravitation series (parent: GR-1)}}
+\author{Thomas Lee Abshier, ND\\Hyperphysics Institute}
+\date{21 August 2026 --- Version~0 (assembly draft)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Conscious Point Physics predicts that black-hole merger remnants are
+horizonless, hard-surfaced, maximally compact bodies whose surface
+sits at exactly the Buchdahl radius (areal $\tfrac{9}{8}r_S$;
+sector standing reading F-R1, founder-ratified CONV-030), with
+gravitational-sector reflectivity $|R| = 1$ derived with zero free
+parameters (GR-1d~V3).  Such objects \emph{must} echo.  This paper
+assembles the complete falsifier: the echo-delay template
+$\Delta t(M,\chi)$ at eikonal grade, keyed --- distinctively --- to
+the \emph{retrograde} photon ring, because the derived Kerr exclusion
+surface buries the prograde ring for remnant spins
+$\chi \gtrsim 0.55$; the parameter-free first-echo amplitude
+($\sim$5\% of ringdown); the observational discriminators separating
+CPP from horizon-anchored exotic-compact-object templates; and the
+explicit kill conditions.  Benchmark: for GW150914
+($M = 62 \pm 4\,\Msun$, $\chi = 0.68$),
+$\Delta t_{\rm ret} = 8.59\,GM/c^3 = 2.62$~ms
+$\pm\,6.5\%$~(mass)~$\pm\,0.35\%$~(spin)~$\pm$~eikonal-grade
+systematic, echo-comb spacing $f \approx 381$~Hz --- in the LIGO
+band, in a delay range that published echo searches
+($0.1$--$0.3$~s) have not examined.  A supporting result of the same
+construction, the ergoregion-censorship theorem, removes the
+ergoregion-instability objection to rapidly spinning horizonless
+reflectors at every spin and reflectivity.  \textbf{Conditionality
+stated first:} the spin sector of the template and the censorship
+theorem are derivation-conditional on three stated census assumptions
+A1--A3 (OPEN-GR-RCORE-4 carries their substrate derivation); the
+delay is eikonal-grade pending finite-$\ell$ wall spectroscopy
+(OPEN-GR-RCORE-3); and the whole chain inherits the W2/PSR
+conditionality of the parent series.  Registered prediction:
+PRED-O-39.
+\end{abstract}
+
+%======================================================================
+\section{Introduction: a theory that hands over its own executioner}
+\label{sec:intro}
+%======================================================================
+
+A physical theory earns credibility by exposing itself.  The CPP
+gravitational arc reproduces the classical tests of general
+relativity by construction (GR-1i) --- those results discriminate CPP
+from Newton, not from GR, and the arc has said so plainly.  The place
+where CPP \emph{departs} from GR is the compact-object interior: the
+Exclusion floor censors the horizon, so the object that forms is a
+horizonless, hard-surfaced body whose exterior is GR-identical but
+whose surface reflects rather than absorbs.  Everything observable
+about that departure funnels into one phenomenon: gravitational-wave
+echoes, at a specific delay, a specific amplitude, and --- this
+paper's central new content --- a specific \emph{keying} to the
+retrograde photon ring.
+
+This paper is the falsifier's handbook.  It contains no new
+derivations; every input is inherited from a reviewed source, cited
+at its ratified strength, and every number is reproduced by the
+paper's verify script
+(\texttt{code/3329\_gr2\_template\_verify.py}, 9/9~PASS; a FAST
+subset of four core checks runs in seconds).  What is new is the
+assembly: the template, the error budget, the discriminators, and
+the kill conditions in one citable place, aimed at archived
+LIGO/Virgo/KAGRA data.
+
+%======================================================================
+\section{Inputs and their provenance}
+\label{sec:inputs}
+%======================================================================
+
+\begin{center}
+\begin{tabular}{p{5.6cm}p{5.2cm}p{3.6cm}}
+\toprule
+\textbf{Input} & \textbf{Source and grade} & \textbf{Status}\\
+\midrule
+Horizonless hard surface at areal $\tfrac98 r_S$ (F-R1) &
+GR-1c V2.3 + RCORE (Patch 3297); CONV-030 5/5; founder-ratified &
+Sector standing reading\\
+$|R| = 1$, phase $\pi$, zero free parameters &
+GR-1d V3 (RCORE derivation); spin-independent &
+Derived\\
+Schwarzschild delay $(3/2 + 8\ln 2)\,GM/c^3$ &
+CONV-030 (GPT seat independent re-derivation) &
+Ratified\\
+Kerr exclusion surface $\{s^2 + v^2 = 1\}$ &
+Patch 3320; CONV-032 5/5 &
+Derivation-conditional on A1--A3\\
+Ergoregion censorship at every spin &
+Patch 3320 theorem; CONV-032 Q4 CORRECT 5--0 &
+Same conditionality\\
+Prograde-ring burial, onset $\chi \approx 0.55$ &
+Patch 3320 finding; CONV-032 Q5 CONFIRMED 5--0 &
+Same conditionality\\
+Error-bar rider (mass, spin, eikonal) &
+CONV-032 Q5 binding adoption &
+Mandatory, applied \S\ref{sec:template}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The census assumptions, stated in full because they are the
+conditionality: \textbf{A1} the scalar census is the ratified
+log-lapse dictionary, $s = 2(1-\alpha)/(1+\alpha)$, exact at
+$a = 0$ (a \emph{minimal} extension --- the CONV-032 round withdrew
+the word ``unique'': static-limit exactness cannot force the
+spinning extension); \textbf{A2} the rotational census is the ZAMO
+dragging speed $v = \omega\varpi/\alpha$ in local reach units;
+\textbf{A3} the demands compose in unweighted quadrature,
+$F = s^2 + v^2$.  The panel's registered counterexample --- a
+weighted law $F = s^2 + \gamma v^2$, $\gamma < 1$, preserves the
+entire static sector yet can de-censor the ergosphere --- is why
+A2/A3 are named load-bearing and why OPEN-GR-RCORE-4 (derive the
+census functional from register dynamics) is the item that would
+upgrade every spin-sector statement below from a theorem of the
+census model to a physical theorem of CPP.
+
+%======================================================================
+\section{The delay template $\Delta t(M, \chi)$, retrograde-keyed}
+\label{sec:template}
+%======================================================================
+
+The echo cavity is bounded inside by the reflecting surface and
+outside by the photon-ring potential barrier.  At remnant spins the
+derived surface swallows the \emph{prograde} equatorial ring
+($\chi \gtrsim 0.55$; script check~7 puts the onset at
+$\chi = 0.555$), so the surviving eikonal cavity is set by the
+\emph{retrograde} ring: the round-trip delay is
+\begin{equation}
+\Delta t_{\rm ret}(M,\chi)
+ = 2\int_{r_{\rm surf}(\chi)}^{r_{\rm ph}^{\rm ret}(\chi)}
+   \frac{\sqrt{g_{rr}}}{\alpha}\,dr ,
+\qquad
+r_{\rm ph}^{\rm ret} = 2M\Bigl(1 + \cos\tfrac{2}{3}
+  \arccos(+\chi)\Bigr),
+\label{eq:delay}
+\end{equation}
+evaluated equatorially at eikonal grade, with the $\chi \to 0$ limit
+machine-recovered against the closed form
+$(3/2 + 8\ln 2)\,GM/c^3$ to four decimals (check~F1).
+
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+$\chi$ & $\Delta t_{\rm ret}$ [$GM/c^3$] &
+$\Delta t_{\rm ret}$ [ms, $62\,\Msun$] & note\\
+\midrule
+0.00 & 7.045 & 2.151 & Schwarzschild closed form\\
+0.30 & 8.261 & 2.523 & \\
+0.55 & 8.538 & 2.607 & prograde-burial onset\\
+\textbf{0.68} & \textbf{8.592} & \textbf{2.624} &
+\textbf{GW150914 benchmark}\\
+0.80 & 8.619 & 2.632 & \\
+0.90 & 8.630 & 2.635 & \\
+0.95 & 8.632 & 2.636 & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Error budget (the CONV-032 binding rider, quantified).}
+The delay is exactly linear in $M$: the GW150914 mass uncertainty
+$\pm 4\,\Msun$ gives $\pm 6.5\%$ (check~F4).  The spin bar was
+mandated at $\pm\Delta\chi \sim 0.1$; \emph{quantifying it produced
+this paper's one new finding}: above burial onset the template
+\textbf{saturates in spin} --- $d\Delta t/d\chi = 0.299\,GM/c^3$ at
+the benchmark, so $\pm 0.1$ in $\chi$ moves the delay only
+$\pm 0.35\%$ (check~6).  The mass uncertainty dominates the spin
+uncertainty by a factor $\sim\!20$.  The strong spin lever lives
+\emph{below} onset ($2.151 \to 2.607$~ms across
+$\chi = 0 \to 0.55$), which is observationally convenient: for the
+merger-remnant population ($\chi \approx 0.6$--$0.75$) the template
+is nearly a one-parameter (mass-only) family.  The remaining,
+unquantified systematic is the eikonal grade itself: the
+finite-$\ell$, $m$-dependent Kerr barrier is not the equatorial
+ring, and the surface's own co-rotation $\omega(r_{\rm surf})$ is
+not yet in the integrand --- both are committed work under the
+amended OPEN-GR-RCORE-3 and \emph{must precede} any
+matched-filter search template built from this paper.
+
+The echo-comb spacing at the benchmark is
+$f = 1/\Delta t \approx 381$~Hz (check~8) --- in-band, and in a
+delay range (milliseconds) that the published echo searches, which
+target $0.1$--$0.3$~s delays, have not examined.
+
+%======================================================================
+\section{Amplitude: five percent, no knobs}
+\label{sec:amplitude}
+%======================================================================
+
+The first-echo amplitude is $|T_{\rm barrier}|^2 \approx 5\%$ of the
+ringdown amplitude, inherited from GR-1d~V3 with \emph{zero free
+parameters}: the wall reflectivity is $|R| = 1$ exactly (absorption
+forbidden three ways: no register headroom at the Exclusion floor;
+AP-4 DI-bit conservation; GR-1e fixed-point stability), and the
+barrier transmissivity is fixed by the same geometry that fixes the
+delay.  The $|R| = 1$ derivation is spin-independent, so the
+amplitude carries over to the spinning template unchanged.  There is
+nothing to tune: if ms-band echoes exist at the predicted delay but
+at, say, $0.05\%$ amplitude, that is a strike against this chain,
+not a fit opportunity.
+
+%======================================================================
+\section{The pro/retro discriminator}
+\label{sec:discriminator}
+%======================================================================
+
+Horizon-anchored exotic-compact-object templates key their echo
+delay to near-horizon crossing times and, where spin enters, to the
+prograde ring.  CPP's cavity is retrograde-keyed at remnant spins
+because the prograde ring is \emph{inside the wall} --- there is no
+exterior prograde cavity to echo (check~9: at $\chi = 0.68$ the
+prograde ring sits at $2.050\,M$ against a wall at $2.267\,M$).
+The keying is therefore not a fit choice but a structural
+discriminant: a detected comb whose spacing tracks the prograde
+delay across a population of remnant spins would falsify CPP
+specifically while remaining compatible with horizon-ECO models,
+and vice versa.
+
+%======================================================================
+\section{What kills this theory}
+\label{sec:falsifiers}
+%======================================================================
+
+Adopted at CONV-032 (Q6, closed by the designated falsifier seat,
+with the GPT seat's interpretive calibrations):
+
+\begin{enumerate}[label=(\roman*)]
+  \item \textbf{An ergoregion-instability signature} ---
+    exponentially growing GW emission tied to trapped
+    negative-energy modes --- from any compact-object candidate.
+    The censorship theorem predicts this never occurs, at any spin
+    or reflectivity.  \emph{Calibration:} the interpretation must
+    establish the source is the horizonless reflective body CPP
+    predicts; rapid spin alone proves nothing.
+  \item \textbf{A prograde-keyed echo comb at $\chi > 0.55$.}  CPP
+    buries that ring; a robust comb demanding a persistent exterior
+    prograde cavity contradicts the surface ordering directly.
+    \emph{Calibration:} OPEN-GR-RCORE-3 must first make the
+    finite-$\ell$ version of this statement quantitative.
+  \item \textbf{The conjunction} of an independently established
+    exterior ergoregion \emph{and} independently localized
+    horizonless surface in the same object --- the strongest prong,
+    since CPP forbids the ergoregion precisely when the surface is
+    where CPP puts it.
+\end{enumerate}
+
+And the standing one: \textbf{a sufficiently sensitive ms-band echo
+search that finds nothing} at the predicted delay and amplitude in
+events where the template applies constrains the chain directly ---
+subject to the search-systematics caveat registered as
+OPEN-GR-RCORE-2(viii): the falsifier is only as sharp as the
+search's selection function, and the published searches' selection
+functions were built for delays two orders of magnitude longer.
+
+%======================================================================
+\section{Honest limits}
+\label{sec:limits}
+%======================================================================
+
+(1)~Every spin-sector statement is conditional on A1--A3;
+OPEN-GR-RCORE-4 is the discharge path, and until it lands the
+censorship theorem and the burial finding are theorems of the census
+model.  (2)~Eikonal grade: finite-$(\ell,m)$ wall spectroscopy and
+surface co-rotation (amended OPEN-GR-RCORE-3) precede search
+templates.  (3)~The Zel'dovich \emph{surface}-superradiance channel
+(rotating-reflector amplification without an ergoregion) survives
+censorship; growth-time bounds are committed under RCORE-3 ---
+censorship of an exterior ergoregion does not dispose of
+rotating-boundary amplification.  (4)~The chain inherits the parent
+series' W2/PSR conditionality.  (5)~This paper is V0, not yet
+panel-reviewed; its inputs are reviewed, its assembly is not.
+
+%======================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+%======================================================================
+
+CPP's compact objects must echo, at $2.62$~ms $\pm 6.5\%$ for
+GW150914, at $5\%$ of ringdown, keyed to the retrograde ring, with
+no ergoregion instability at any spin --- and the data that can
+convict or acquit this chain is already on disk.  The template is
+effectively mass-only for the remnant population (the spin
+saturation finding), the band is unsearched, and the discriminator
+against horizon-anchored alternatives is structural.  Archived data
+can convict this theory.  That is the point.
+
+%======================================================================
+\section*{Keywords}
+%======================================================================
+gravitational-wave echoes; horizonless compact objects; Buchdahl
+radius; exclusion surface; ergoregion censorship; retrograde photon
+ring; prograde-ring burial; echo template; LIGO ringdown;
+Conscious Point Physics
+
+%======================================================================
+\section*{Plain Language Summary}
+%======================================================================
+In this theory, a ``black hole'' is not a bottomless pit but a solid
+object compressed to the absolute limit of space, with a surface
+that reflects gravitational waves like a mirror.  When two of them
+merge, the ringing of the merged object should be followed by faint
+echoes --- arriving about $2.6$ thousandths of a second apart for an
+event like GW150914, each about $5\%$ as loud as the ring itself.
+Because the object spins, the echo timing is set by light circling
+\emph{against} the spin (the with-spin path is swallowed inside the
+surface) --- a fingerprint that distinguishes this theory from other
+``no-horizon'' proposals.  Searches to date have looked for echoes
+hundreds of times slower than this; the millisecond band predicted
+here is unexplored, and the recordings that could prove or disprove
+the prediction already exist.
+
+%======================================================================
+\section*{CP/GP Signature}
+%======================================================================
+The echo exists because the Exclusion floor --- the per-GP register
+capacity that no census may exceed --- censors the horizon and
+presents a full-register wall to incoming gravitational
+perturbations ($|R| = 1$: no headroom to absorb, DI-bit conservation
+forbids deletion, the GR-1e fixed point forbids restructuring).  The
+spin sector adds the circulation register: the frame-dragging demand
+$v = \omega\varpi/\alpha$ fills the register azimuthally, and where
+$v = 1$ (the would-be ergosphere) circulation alone saturates it, so
+total saturation --- the wall --- must stand outside.  The echo delay
+is the round-trip light time in the cavity between that wall and the
+retrograde ring, measured in the lattice's own reduced-reach steps.
+
+%======================================================================
+\section*{Mechanism Bridge}
+%======================================================================
+GR language: a horizonless ultracompact object with a reflective
+surface at the Buchdahl radius supports a photon-sphere cavity;
+perturbations leak through the potential barrier as delayed,
+damped echo pulses.  CPP mechanism: the same cavity is the region
+between the census-saturation surface and the unstable circular
+null geodesic of the (exterior-exact) metric; reflectivity is
+register conservation, not a material property; the spin correction
+is the circulation census, not an independent postulate.
+
+%======================================================================
+\section*{Swarm-Validation Statement}
+%======================================================================
+This paper registers no new predictions.  Its single quantitative
+content is PRED-O-39 (registered Patch 3326 on the founder-ratified
+CONV-032 adjudication): the retrograde-keyed ms echo comb with the
+error budget of \S\ref{sec:template}.  The spin-saturation finding
+(\S\ref{sec:template}) sharpens PRED-O-39's error budget but is not
+counted separately.  Swarm count unchanged.
+
+%======================================================================
+\section*{Verification}
+%======================================================================
+\texttt{series\_gravitation/code/3329\_gr2\_template\_verify.py} ---
+9/9 PASS.  FAST subset (4/4, seconds-scale, own count line; first
+enactment of the CONV-032 FAST-mode dispatch adoption): Schwarzschild
+closed-form recovery; the GW150914 benchmark
+($8.592\,GM/c^3$, $2.624$~ms, $+21.96\%$); censorship and burial at
+$\chi = 0.68$; mass linearity.  Full run adds: the template table;
+the spin-saturation quantification ($d\Delta t/d\chi = 0.299$,
+$\pm 0.35\%$ at $\pm 0.1$); burial onset $\chi = 0.555$;
+$f_{\rm echo} = 381$~Hz; the absent-prograde-cavity discriminator.
+The script's own first run corrected the worker's prior expectation
+of a $3$--$10\%$ spin bar --- recorded in the script header per
+computation-before-claims.
+
+%======================================================================
+\begin{thebibliography}{9}
+%======================================================================
+\bibitem{gr1} T.~L.~Abshier, ``Local Gravitation from SSV Shell
+Broadcast'' (GR-1, V1.0), CPP gravitation series parent, 2026.
+\bibitem{gr1c} T.~L.~Abshier, ``Strong-Field GR'' (GR-1c, V2.3.1),
+2026 --- exact isotropic Schwarzschild; horizonless reading
+(CONV-030 ratified).
+\bibitem{gr1d} T.~L.~Abshier, ``Gravitational-Wave Echoes''
+(GR-1d, V3), 2026 --- $|R| = 1$ derived; Schwarzschild delay
+closed form.
+\bibitem{gr1f} T.~L.~Abshier, ``The Kerr Metric from Rotational
+SSV'' (GR-1f, V1.2), 2026.
+\bibitem{gr1h} T.~L.~Abshier, ``Superradiance'' (GR-1h, V1.2),
+2026 --- ergoregion-instability item resolved by censorship.
+\bibitem{kerr3320} CPP Patch 3320, ``The Kerr Exclusion Surface and
+the Ergoregion-Censorship Theorem,''
+\texttt{rcore\_derivation/3320\_kerr\_surface\_derivation.md};
+CONV-032 adjudication v1.0 (5/5).
+\end{thebibliography}
+
+\end{document}

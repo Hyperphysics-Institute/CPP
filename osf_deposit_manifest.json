@@ -14,7 +14,7 @@
     "NEVER delete a draft holding a reserved DOI that has already been written into a built PDF."
   ],
   "counts": {
-    "total": 122,
+    "total": 123,
     "withheld": 4,
     "eligible_now": 0
   },
@@ -57,6 +57,7 @@
       "series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex",
       "series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex",
       "series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex",
+      "series_gravitation/papers/GR-2_echo_falsifier.tex",
       "series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex",
       "series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex",
       "series_phenomena/cosmology/sea_gravitation/DM-2/DM-2_sea_gravitation_dark_sector.tex",
@@ -1343,7 +1344,7 @@
     {
       "rel": "series_gravitation/GR_companion_papers/GR-1f_kerr_metric_from_rotational_SSV/GR-1f_kerr_metric.tex",
       "title": "The Kerr Metric from Rotational SSV",
-      "ver": "1.1",
+      "ver": "1.2",
       "changed": "2026-08-21",
       "cls": "Series paper",
       "withheld": "",
@@ -1364,7 +1365,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.1",
+        "version": "1.2",
         "description": "We derive the CPP origin of the Kerr metric for a rotating mass. A rotating source with angular momentum $J$ produces an azimuthal $ _ net$ component: equation k\\,( _ net)_ \\;=\\; GJ ^2 c^2 r^3, eq:ssv_phi_abstract equation sourced by the same 12-edge selection rule that generates the Schwarzschild scalar SSV. Via the LSP off-diagonal metric mapping, this produces the Lense-Thirring frame-dragging term: equation g_t \\;=\\; - 2GJ ^2 c^2 r eq:gtphi_abstract equation exactly in the weak-field limit, confirmed by Gravity Probe~B to $0.3\\%$~ everitt2011. The Kerr bound $J GM^2/c$ follows rigorously from the requirement that the azimuthal SSV broadcast velocity not exceed $c$ (Theorem~ thm:kerr_bound). The ergosphere arises where the azimuthal SSV drag velocity equals $c$ (Theorem~ thm:ergosphere). The Schwarzschild limit ($J=0$) is recovered exactly (Corollary~ cor:schwarz_limit). The full Boyer-Lindquist Kerr metric is consistent with the CPP mechanism at all orders (Proposition~ prop:kerr_full); the all-orders derivation from the CPP field equation is Open Problem~ op:allorders. No new postulates beyond companion~8 are introduced.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -1429,7 +1430,7 @@
     {
       "rel": "series_gravitation/GR_companion_papers/GR-1h_superradiance/GR-1h_superradiance.tex",
       "title": "Superradiance from the Kerr SSV",
-      "ver": "1.1",
+      "ver": "1.2",
       "changed": "2026-08-21",
       "cls": "Series paper",
       "withheld": "",
@@ -1450,7 +1451,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.1",
+        "version": "1.2",
         "description": "We derive superradiance from the rotating black hole azimuthal SSV established in companion~11~ c11. The horizon angular velocity $ = ac/(r_+^2 + a^2)$ is the angular frequency of the SSV broadcast at the outer horizon. A bosonic wave of frequency $ $ and azimuthal quantum number $m$ is amplified when: equation \\;<\\; m\\, , eq:threshold_abstract equation because its phase velocity is slower than the rotating SSV field (Theorem~ thm:threshold). The maximum extractable energy is $(1-1/ 2)\\,Mc^2 29.3\\%$ of the rest mass for an extremal Kerr black hole (Proposition~ prop:max_energy). For the Kerr-Newman case~ c12, the threshold generalises to $ < m + q $ (Corollary~ cor:kn). Superradiant instability of ultralight boson clouds produces continuous gravitational wave signals at frequencies $f_ GW 2 c^2/h$ falling in the LIGO O4 band for boson masses $ 10^-13$--$10^-12$~eV and stellar-mass black holes. No new postulates beyond companion~11 are required.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -1581,6 +1582,49 @@
         ],
         "version": "1.0.2",
         "description": "This paper is the series parent for the Conscious Point Physics (CPP) gravitational arc. Its thesis is a single unifying statement, conditional throughout on the PSR constitutive form, whose SR-1 grounding stands at W2 viability strength (Section~ sec:inheritance): given that form, the same Space Stress Vector (SSV) shell-broadcast mechanism that produces Coulomb's law produces, in successive regimes of one nonlinear substrate response, Newtonian gravity, the weak-field limit of general relativity, and the exact Schwarzschild metric in isotropic coordinates --- extended by the companion papers to the Kerr and Kerr--Newman families and their consequences (gravitational-wave echoes, modified Hawking evaporation, superradiance). The nonlinearity resides entirely in the Planck Sphere Radius response formula $ _ eff = /(1 + k\\, | |)$, which is why one mechanism spans all four regimes. We state the claim precisely: conditional on the PSR constitutive form (W2), CPP reproduces the named solutions of general relativity --- Schwarzschild in isotropic coordinates, Kerr, Kerr--Newman --- exactly, with no free parameters beyond that form; At V0 the general field equations were registered as an open problem rather than claimed; that problem is now CLOSED ( OPEN-GR-FE-1, Patches 3254--3267): the general CPP field equation is derived from the messenger census, panel-ratified across two review rounds, and consolidated in companion GR-1j --- with the static sector proven equivalent to the corrected GR-1c Proposition (V2.2 corrigendum) and the uniqueness and source theorems (T-2/T-3) ratified alongside. The four classical tests (perihelion precession, light deflection, Shapiro delay, gravitational redshift) follow from the recovered metric by standard geodesic integration; this paper carries the predicted-versus-observed summary table, with the derivations in the dedicated tests companion GR-1i ( OPEN-GR-TESTS-1: finally discharged, CONV-029 unanimous). An epistemic ledger aggregates what is exact, what is correspondence, and what is conditional across the arc, and an inheritance subsection states explicitly what this arc does and does not inherit from SR-1, including SR-1's withdrawn prediction set (Patch~2474) and withdrawn class-coverage theorem (Patch~2475). Scope: local gravitation only. Cosmological solutions (FRW/Friedmann) are outside this series and are pursued separately under OPEN-EU-1 and the dark-energy programme.",
+        "description_ok": true,
+        "description_source": "abstract environment"
+      },
+      "eligible": false,
+      "reason": "not approved",
+      "APPROVED": "",
+      "CHANGE_CLASS": "",
+      "RESERVED_DOI": "",
+      "CONCEPT_DOI": "",
+      "PREPRINT_ID": "",
+      "POSTED": "",
+      "OSF_LINK": "",
+      "PARENT": "",
+      "RELATION": "",
+      "COMMUNITY": "conscious-point-physics",
+      "NOTES": ""
+    },
+    {
+      "rel": "series_gravitation/papers/GR-2_echo_falsifier.tex",
+      "title": "The Echo Falsifier:",
+      "ver": "0",
+      "changed": "—",
+      "cls": "Series paper",
+      "withheld": "",
+      "wave": 1,
+      "cites": [],
+      "wave_blocked_by": [],
+      "children": [],
+      "parent_source": "",
+      "zenodo": {
+        "title": "The Echo Falsifier:",
+        "creators": [
+          "Thomas Lee Abshier, NDInstitute"
+        ],
+        "publication_date": "—",
+        "resource_type": "publication-preprint",
+        "license": "cc-by-4.0",
+        "access_right": "open",
+        "subjects": [
+          "Physics"
+        ],
+        "version": "0",
+        "description": "Conscious Point Physics predicts that black-hole merger remnants are horizonless, hard-surfaced, maximally compact bodies whose surface sits at exactly the Buchdahl radius (areal $ 98r_S$; sector standing reading F-R1, founder-ratified CONV-030), with gravitational-sector reflectivity $|R| = 1$ derived with zero free parameters (GR-1d~V3). Such objects must echo. This paper assembles the complete falsifier: the echo-delay template $ t(M, )$ at eikonal grade, keyed --- distinctively --- to the retrograde photon ring, because the derived Kerr exclusion surface buries the prograde ring for remnant spins $ 0.55$; the parameter-free first-echo amplitude ($ $5\\% of ringdown); the observational discriminators separating CPP from horizon-anchored exotic-compact-object templates; and the explicit kill conditions. Benchmark: for GW150914 ($M = 62 4\\, $, $ = 0.68$), $ t_ ret = 8.59\\,GM/c^3 = 2.62$~ms $ \\,6.5\\%$~(mass)~$ \\,0.35\\%$~(spin)~$ $~eikonal-grade systematic, echo-comb spacing $f 381$~Hz --- in the LIGO band, in a delay range that published echo searches ($0.1$--$0.3$~s) have not examined. A supporting result of the same construction, the ergoregion-censorship theorem, removes the ergoregion-instability objection to rapidly spinning horizonless reflectors at every spin and reflectivity. Conditionality stated first: the spin sector of the template and the censorship theorem are derivation-conditional on three stated census assumptions A1--A3 (OPEN-GR-RCORE-4 carries their substrate derivation); the delay is eikonal-grade pending finite-$ $ wall spectroscopy (OPEN-GR-RCORE-3); and the whole chain inherits the W2/PSR conditionality of the parent series. Registered prediction: PRED-O-39.",
         "description_ok": true,
         "description_source": "abstract environment"
       },
