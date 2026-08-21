@@ -21,6 +21,7 @@
 \usepackage{float}
 
 \usepackage{graphicx}
+\graphicspath{{figures/}}
 
 \geometry{letterpaper, margin=1in}
 
@@ -56,7 +57,11 @@ Hyperphysics Institute\\
 \date{8 August 2026 --- Version~3.2\\[2pt]
 {\small Version~3.3 --- 16 August 2026 (Patch 3204, F-SW-10 R-1 fix pass:
 OBL-CAL-LABEL applied to the cosmological-constant future-direction item per
-R-CC-CALIBRATE, Patch 3125; mathematics untouched)}}
+R-CC-CALIBRATE, Patch 3125; mathematics untouched)\\[2pt]
+Version~3.4 --- 20 August 2026 (Patch 3293: figure rendering repaired --- the
+three figure assets existed only as SVG and no \texttt{graphicspath} was set,
+so the paper had never rendered them; PDFs committed and path added.
+No technical content changed.)}}
 
 \begin{document}
 \maketitle

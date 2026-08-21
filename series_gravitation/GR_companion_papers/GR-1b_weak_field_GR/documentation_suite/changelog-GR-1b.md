@@ -43,7 +43,9 @@ Moved into `series_gravitation/GR_companion_papers/` and re-identified
 W-A: CP/GP Signature subsection added. **W-A2: three figures created.**
 The paper's three SVG figure assets had never existed in-repo — the
 captions were shipped without the images. Drawn to the shipped captions
-(matplotlib → PDF, committed): the four-component LSP channel map with
+(committed **as SVG only** — this file's original wording said "matplotlib
+→ PDF, committed", which was a reconstruction error; see the V3.4 entry
+below): the four-component LSP channel map with
 the equal weak-field potentials; the lensing geometry with α = 4GM/c²b;
 the PSR-contraction curve with the exclusion radius. The .tex was
 switched from `svg` to `graphicx` (inkscape dependency removed) and a
@@ -58,3 +60,39 @@ the pass** (see `phenomena-GR-1b.md` and the sector file): the paper's
 open, both delivered since by GR-1c and GR-1f. No .tex change made —
 the correction is scoped to the founder as a proposed W-D pass across
 the legacy companions, not executed unilaterally inside a suite patch.
+
+---
+
+## V3.4 — 20 August 2026, Patch 3293 (Session 153) — **figures actually render**
+
+**The W-A2 figure work was incomplete, and this changelog mis-stated
+it.** Patch 3274 created the three figures the paper had always cited
+without possessing — but committed them **as SVG only**, while switching
+the .tex from the `svg` package to `graphicx`. `pdflatex` cannot read
+SVG. Compounding it, the `\includegraphics` calls name bare filenames
+(`fig1_lsp_metric.pdf`) while the assets live in `figures/`, and no
+`\graphicspath` was set.
+
+**Consequence: the paper has never rendered its figures.** It compiled
+with three `pdftex.def` "file not found" errors and three draft-mode
+placeholder boxes — including at the moment W-A2 recorded "compile:
+0 errors," which was measured before the graphics switch took effect or
+in a context where the errors were not surfaced.
+
+**Fix (this patch):** the three SVGs converted to PDF (cairosvg) and
+committed alongside them; `\graphicspath{{figures/}}` added after the
+`graphicx` load. Nothing else touched.
+
+**Verification:** compile gate run **before** the edit (3 errors,
+16 pages, 267 KB) and after (**0 errors**, 14 pages, 532 KB). The page
+count *dropping* while the file size doubles is the confirmation that
+matters — draft-mode placeholder boxes were larger than the real
+figures, so the count falling proves the images are now actually being
+included rather than stubbed. One `natbib` undefined-citation warning is
+**pre-existing** and unchanged by this patch (present in the baseline
+log); it is not addressed here and is recorded for a future pass.
+
+**Also corrected above:** this file's V3.3/W-A2 entry, written during the
+Patch-3283 suite pass, stated the figures were committed as PDF. That
+was a reconstruction error on my part — the repository contained only
+SVGs — and the sentence is amended in place rather than deleted.
