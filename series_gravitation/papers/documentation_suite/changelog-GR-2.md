@@ -90,3 +90,42 @@ Compile gate: pdflatex ×2, 0 errors, 0 undefined refs, 8 pages.
 Deposit posture unchanged: queue row fail-closed behind the founder
 APPROVED column + Isak's DOIs; publication held until the GR series
 completes.
+
+## V1.2 — 21 August 2026, Patch 3340 (Session 156) — Leg-C narrowing + two additions
+
+Basis: OPEN-GR-RCORE-3 Leg C (Patch 3339, verify 6/6, all-FAST).
+**CONV-035 is OWED** — the panel ratified (CONV-034) the
+generalization this version narrows; the narrowing is enacted on
+discovery because a known-over-broad claim in a shipped paper is a
+defect, and the direction is strictly weaker.
+
+NARROWING (anti-erasure — the superseded V1.1 wording is quoted in
+the .tex header changelog): the V1.1 remark asserted N_trapped = 0
+"for every exposed mode ... across χ ∈ [0.30, 0.98]" — a census
+computed over ℓ ≤ 3 and stated with no ℓ qualifier. The
+Bohr–Sommerfeld phase grows LINEARLY in ℓ without saturation
+(Φ/π ≈ 0.122 ℓ at χ = 0.68) and crosses the trapping threshold at
+ℓ_crit = 7 for χ ≥ 0.30 (ℓ ≈ 10 at χ = 0): trapped ladders DO exist
+at high multipole. §3's remark now states the swept range as part of
+the claim; records that the negligibility of ℓ ≳ 7 ringdown
+excitation is INHERITED from standard phenomenology and computed
+nowhere in this programme (OPEN-GR-RCORE-3(e), now load-bearing);
+and notes the consistency win — the geometric-optics comb is the
+ℓ → ∞ limit, recovered from below, so the ℓ = 2 single resonance and
+the eikonal comb are two ends of one ladder. Low-ℓ robustness
+quantified: the threshold is δ_w/2 + π/4 in the wall reflection
+phase, so N = 0 at ℓ = 2,3 needs δ_w > 0.235π (42.3°); the derived
+clamped-register δ_w = π clears it 4.3×.
+
+ADDITIONS: (iv) co-rotation is COUNT-NEUTRAL at Dirichlet grade —
+R(r;ω) depends only on (a,m,Q,ω), so a wall rotating at Ω_w leaves
+turning point and phase volume unchanged (RCORE-3 item (b)
+discharged for the count; line positions remain Teukolsky work);
+(v) across 112 modes through ℓ = 12 no mode is simultaneously
+exposed, trapped, and superradiant — burial and trapping occupy
+disjoint regions of the (ℓ,m) grid, so censorship protects the
+finite-ℓ sector by a mechanism the eikonal analysis could not see.
+
+Compile gate: pdflatex ×2, 0 errors, 0 undefined refs, 9 pages. No
+number in the template table changes; the GR-2 verify script is
+untouched at 9/9. Deposit posture unchanged (fail-closed).

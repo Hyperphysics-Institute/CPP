@@ -15,6 +15,24 @@
 %   adoption). Spin-saturation finding surfaced by the script's own
 %   first run: dDt/dchi = 0.299 GM/c^3 at the benchmark, so the
 %   +/-0.1 spin bar is +/-0.35% -- mass dominates ~20x.
+% V1.2 (Patch 3340, 21 Aug 2026): RCORE-3 Leg C (Patch 3339, verify
+%   6/6). NARROWING, anti-erasure: the V1.1 remark asserted
+%   N_trapped = 0 "for every exposed mode ... across chi in
+%   [0.30,0.98]" -- a census computed over ell <= 3 and stated with no
+%   ell qualifier. Phi grows LINEARLY in ell (0.122*ell at chi=0.68)
+%   and crosses the trapping threshold at ell_crit = 7 (ell ~ 10 at
+%   chi = 0): trapped ladders DO exist at high multipole. The remark
+%   now states the swept range AS PART OF THE CLAIM, records that the
+%   negligibility of high-ell excitation is INHERITED and not computed
+%   here (OPEN-GR-RCORE-3(e), load-bearing), and notes the consistency
+%   win -- the eikonal comb is the ell -> infinity limit, recovered
+%   FROM BELOW. Two ADDITIONS: co-rotation is count-neutral at
+%   Dirichlet grade (item (b) discharged for the count), and no mode
+%   through ell = 12 is simultaneously exposed, trapped, and
+%   superradiant (burial and trapping occupy disjoint regions of the
+%   (l,m) grid -- the strongest stability statement the sector has).
+%   Reflection-phase tolerance quantified: delta_w > 0.235 pi needed,
+%   derived pi clears it 4.3x. CONV-035 owed on the narrowing.
 % V1.1 (Patch 3338, 21 Aug 2026): the OPEN-GR-RCORE-3 Legs A+B
 %   amendment set, ADDITIVE under the existing eikonal scoping
 %   (CONV-034, 5/5, AMENDMENTS-CLEAR 4-1, founder-ratified "Ratify
@@ -78,7 +96,7 @@ CPP Compact Objects}\\[6pt]
 {\large Second series paper of the Conscious Point Physics
 gravitation series (parent: GR-1)}}
 \author{Thomas Lee Abshier, ND\\Hyperphysics Institute}
-\date{21 August 2026 --- Version~1.1}
+\date{21 August 2026 --- Version~1.2}
 
 \begin{document}
 \maketitle
@@ -281,14 +299,34 @@ stated grades (Patches 3333--3334; audited CONV-034, 5/5,
 AMENDMENTS-CLEAR 4--1; founder-ratified), and the result refines the
 phenomenology of this section \emph{without contradicting any claim
 scoped above}, exactly as the eikonal labelling anticipated.
-\emph{(i) The comb does not survive the finer calculation.} At
+\emph{(i) The comb does not survive the finer calculation
+\textbf{in the observationally dominant low multipoles}.} At
 $\ell = 2$, $\chi = 0$ the wall--barrier cavity ($\sim$$3.5M$)
 supports a single top-of-barrier resonance per parity, not a trapped
 ladder; and on Kerr the Bohr--Sommerfeld census gives
-$N_{\rm trapped} = 0$ for every exposed mode at $\chi = 0.68$ and
+$N_{\rm trapped} = 0$ for $\ell = 2, 3$ at $\chi = 0.68$ and
 across $\chi \in [0.30, 0.98]$ --- the lengthening retrograde cavity
 and the falling barrier top cancel (the integer census at
-eikonal-WKB grade).  \emph{(ii) What replaces it} is a mode-resolved
+eikonal-WKB grade).  \textbf{Scope, stated as part of the claim
+(V1.2 narrowing, Patch 3339):} that census was computed over
+$\ell \le 3$ and \emph{does not generalise in multipole}.  The phase
+volume grows linearly in $\ell$ without saturation
+($\Phi/\pi \approx 0.122\,\ell$ at $\chi = 0.68$) and crosses the
+trapping threshold at $\ell_{\rm crit} = 7$ for $\chi \ge 0.30$
+($\ell \approx 10$ at $\chi = 0$): trapped ladders \emph{do} exist
+at high multipole, where ringdown excitation is negligible --- and
+\emph{that negligibility is inherited from standard ringdown
+phenomenology, not computed in this programme}
+(OPEN-GR-RCORE-3(e), now load-bearing).  This is simultaneously the
+consistency check the eikonal picture required: the geometric-optics
+comb is the $\ell \to \infty$ limit and is recovered \emph{from
+below}, so the single $\ell = 2$ resonance and the eikonal comb are
+the two ends of one ladder.  Robustness of the low-$\ell$ result:
+the threshold is $\delta_w/2 + \pi/4$ in the wall reflection phase,
+so $N = 0$ at $\ell = 2,3$ requires $\delta_w > 0.235\pi$
+($42.3^\circ$); the \emph{derived} clamped-register value
+$\delta_w = \pi$ clears it by $4.3\times$ --- the result is a
+statement about the clamped wall, not about geometry alone.  \emph{(ii) What replaces it} is a mode-resolved
 \emph{line set} near the corresponding barrier-top frequencies,
 together with early broadband transients that still arrive at the
 Eq.~\eqref{eq:delay} delay --- so $\Delta t_{\rm ret}$ and its error
@@ -311,10 +349,21 @@ $0.026$ margin at $\chi = 0.68$ may lie inside the correspondence
 error.  The wave-side check (the forbidden region beginning at the
 wall for $(2,+2)$) corroborates this \emph{at the same grade} ---
 same fixed-$Q$ construction --- and does not independently eliminate
-the correspondence uncertainty.  \emph{(iv) Untested:} the static
-Dirichlet wall has not been tested against surface co-rotation for
-\emph{line structure}; the $N = 0$ phase-volume margin makes comb
-restoration by co-rotation implausible but uncomputed.
+the correspondence uncertainty.  \emph{(iv) Co-rotation (V1.2):} the wall's rotation is now
+tested and is \emph{count-neutral} at Dirichlet grade --- $R(r;\omega)$
+depends only on $(a, m, Q, \omega)$, so a wall rotating at
+$\Omega_w$ leaves the turning point and the phase volume identically
+unchanged (a node is a node in any frame); its effect on line
+\emph{positions} remains full-Teukolsky work.  \emph{(v) Stability
+(V1.2):} across $112$ modes through $\ell = 12$ at the benchmark spin,
+no mode is simultaneously exposed, trapped, and superradiant --- the
+ergoregion-instability recipe at finite multipole --- because trapped
+modes are extreme-retrograde (no superradiant window) while every mode
+with a window wide enough to reach trapping frequencies is corotating
+and therefore buried.  Burial and trapping occupy disjoint regions of
+the $(\ell,m)$ grid, so the censorship result of \S\ref{sec:inputs}
+protects the finite-$\ell$ sector by a mechanism the eikonal analysis
+could not see.
 \end{remark}
 
 %======================================================================
