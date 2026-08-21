@@ -755,3 +755,21 @@ its missing prerequisite.
   STANDING READING, founder physical-picture anchor registered ("a body
   with solid, irreducibly minimum inter-CP spacing / maximally compact
   body").**
+- **RATIFICATION EXECUTED (Patches 3301–3303):** GR-1c V2.3 (relabeling
+  corrigendum: dated Remark + table supersession note; no equation
+  changes; compile 0 errors); GR-1d V3 (112 ms Theorem superseded
+  anti-erasure; new §Amendment — surface at areal (9/8) r_S, |R|=1
+  DERIVED with the honest restatement, both delays with the dictionary
+  question INLINE, Level-A benchmark, 2.15 ± 0.14 ms / 0.91 ± 0.06 ms at
+  62 ± 4 M_⊙, amended table with f_echo IN the LIGO band — 465 Hz for
+  GW150914; V2 Open Problem 1 CLOSED; compile 0 errors); GR-1e V1.1
+  (horizonless reading applied interpretively; emission mechanism
+  honestly RE-OPENED for the hard-surfaced body — no silent
+  re-derivation; prop:stability UNAFFECTED and promoted as a pillar of
+  the |R|=1 derivation; remnant census logic stands; compile 0 errors).
+  **The HALT arc is CLOSED: finding (3297) → dispatch (3298) →
+  adjudication (3299) → ratification (3300) → enactment (3301–3303),
+  one session.** REMAINING FROM THE ROUND: the C* dated-notes pass on
+  GR-1f/g/h, now with the adopted execution plan (per-paper dependency
+  audit for hidden horizon/interior assumptions FIRST — CONV-030
+  adoption 4); OPEN-GR-RCORE-2 items i–x.
