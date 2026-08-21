@@ -74,6 +74,13 @@ for _v in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS',
            'NUMEXPR_NUM_THREADS'):
     os.environ.setdefault(_v, '1')
 import argparse, glob, json, sys, time
+# Patch 3175: on Windows, redirecting stdout to a file switches Python to the
+# legacy cp1252 codec, which cannot encode the Greek beta in the analyze
+# header -- --analyze crashed on its FIRST print line under `> out.txt`.
+# Force UTF-8 on both streams so file capture works without PYTHONIOENCODING.
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 import importlib.util
 from multiprocessing import Pool, cpu_count
 import numpy as np

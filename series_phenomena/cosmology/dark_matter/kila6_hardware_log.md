@@ -53,9 +53,49 @@ retained). Consequences:
 |---|---|---|---|
 | 2026-08-17 | BIOS → factory-optimized defaults | none | auto-OC enhancer off |
 | 2026-08-18 | MemTest86 free edition, USB boot — 4 passes, 0 errors | none | prereg §5.4 acceptance SATISFIED; no spontaneous reboot during the test |
+| 2026-08-18→21 | β-ladder campaign: ~60 h at 100% on all 32 threads | 1024 legs | ZERO unclean shutdowns; **Core Temp NOT running** |
 | | | | |
 
 **Recording rule:** append a row BEFORE making the change where possible, or
 immediately after. The β-ladder's duplicate-seed bit-identity gate (§5) is what
 makes mid-campaign hardware changes safe — a change that altered arithmetic
 would break bit-identity and VOID the campaign rather than silently corrupt it.
+
+
+## H-CORETEMP: the leading suspect for the shutdown fault (21 Aug 2026)
+
+**Founder observation, which prompted this entry:** every crashing period
+had Core Temp running; the uninterrupted 60-hour β-ladder campaign did
+not.
+
+**Why it fits the signature.** Core Temp reads CPU MSRs through a
+ring-0 kernel driver (ALSysIO64.sys class). A fault at that privilege
+level can halt the machine below the layer that records bugchecks —
+producing exactly this fault's otherwise-baffling profile: **no WHEA
+events, no minidumps, no bugcheck codes across all eight events**, which
+had been read as "consistent with power loss." A ring-0 driver fault is
+indistinguishable from power loss from the outside. It also explains
+crashes at idle AND under load alike (a polling driver runs the same
+either way) and why BIOS factory defaults did not resolve it.
+
+**Evidence for:** 60 h continuous at 100% on 32 threads — a harsher
+thermal and electrical stress, sustained longer, than any crashing
+period — with zero events and Core Temp absent.
+
+**CONFOUND, stated plainly so this is not later read as settled:** the
+auto-overclock enhancer was disabled earlier (which had already extended
+uptime ~8 h → ~36 h). Two changes overlap. H-CORETEMP is the LEADING
+hypothesis, not a demonstrated cause; the overclock enhancer remains an
+unexcluded partial contributor.
+
+**Test:** keep Core Temp uninstalled through the next multi-day campaign.
+Two independent clean long runs would make the case. For temperature
+monitoring without a third-party ring-0 driver on this board: the BIOS
+hardware monitor, or the ASUS BMC/IPMI via DM_LAN1 (out-of-band, no OS
+driver at all). HWiNFO64 is better-behaved than Core Temp but uses the
+same mechanism class and is not risk-free.
+
+**Status of the older reading:** the "power delivery" localization
+recorded at Patch 3173 is DEMOTED, not retired — CMOS battery voltage,
+the BMC event log, and the front-panel PWR_SW header remain unchecked and
+still explain a no-minidump shutdown equally well.
