@@ -873,6 +873,29 @@ its missing prerequisite.
   registered in the record §4, NOT executed — awaits CONV-034
   (RCORE-3 Legs A+B audit round, the natural next dispatch) +
   founder ratification, as does the GR-2 amendment set.**
+  **AUDITED AND RATIFIED (CONV-034, 5/5 same-session,
+  AMENDMENTS-CLEAR 4–1; founder "Ratify the bundle", Patch 3337):**
+  both instruments VALID-family 5–0; the single-resonance and
+  N_trapped = 0 findings CONFIRMED 5–0; retraction ADEQUATE 5–0.
+  Leg B's discharge carries the adopted grade label **"the integer
+  census at eikonal-WKB grade"** (not exact finite-ℓ Kerr
+  spectroscopy). Q5 FAITHFUL-AT-GRADE 4–1 — the binding rule did NOT
+  fire — and the OVERCLAIMS minority's revisions were ADOPTED anyway
+  (the rule is a floor, not a certification): the "~247–344 Hz" band
+  and the transported Q ≈ 5 are WITHDRAWN as registered quantities;
+  eikonal tops retained as orientation-scale; the +17% anchor
+  demoted to a one-point directional note; onset restated as "0.665
+  under the μ correspondence, finite-ℓ onset unquantified, the 0.026
+  margin may sit inside the correspondence error"; wave-side burial
+  graded corroborative-at-same-grade; co-rotation explicitly
+  UNTESTED for line structure. Enacted: PRED-O-39 amended (Patch
+  3337), GR-2 V1.0 → V1.1 (Patch 3338). **LEGS A AND B DISCHARGED at
+  those grade labels. REMAINING RCORE-3: (1) full-Teukolsky line
+  positions and widths — the computation that would convert the
+  orientation-scale tops into a registered band and give Kerr
+  mode-dependent Q; (2) the co-rotating wall BC; (3) Zel'dovich
+  growth-time bounds.** Adjudication:
+  `review/conv034_adjudication.md` v1.0.
 - **OPEN-GR-RCORE-4 (minted Patch 3325, from the CONV-032 GPT
   dissent): DERIVE THE ROTATIONAL CENSUS FUNCTIONAL FROM MICROSCOPIC
   REGISTER DYNAMICS.** Two conjuncts, both currently assumptions of
