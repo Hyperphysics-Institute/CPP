@@ -34,3 +34,25 @@ strong-field-interior treatment the programme has not attempted).
 NOTE-GR-CSTAR-STRONGFIELD, minted at CONV-027 and flagged explicitly for
 the GR-1d/GR-1e lane, has never been folded into this paper. No .tex
 change.
+
+## V1.1 — 20 August 2026 (Patch 3303) — Ratified amendment: horizonless reading
+
+**Review basis:** CONV-030 (AMEND 5–0; F-R1 CORRECT-family 5–0);
+founder-ratified 20 Aug 2026.
+
+**Changes (anti-erasure; no equations changed, no silent re-derivation):**
+- Amendment Notice added: (i) r_core is the isotropic radius, areal image
+  (9/8) r_S, outside the never-formed horizon; (ii) horizon-based
+  emission language superseded at the interpretive level — the emission
+  mechanism for the horizonless hard-surfaced body (surface temperature,
+  spectrum, termination argument in surface form) is RE-OPENED under
+  OPEN-GR-RCORE-2, not silently re-derived; (iii) Proposition
+  prop:stability UNAFFECTED and PROMOTED — load-bearing pillar of the
+  |R|=1 derivation (GR-1d V3); (iv) the remnant-endpoint census logic
+  stands.
+- Dated notes at the intro r_core mention and Open Problem 1 (inner
+  boundary now the derived-Dirichlet exclusion surface; problem widened
+  honestly).
+- Header amendment block; version line → 1.1.
+
+**Compile:** pdflatex ×2, 0 errors, no undefined refs, 9 pages.
