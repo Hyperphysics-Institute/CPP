@@ -7,6 +7,32 @@
 
 ## Quantum Mechanics (QM) — 7 problems (6 QM + 1 quantum-optics phenomena)
 
+### QM-3 modernization (Patch 3315, 20 Aug 2026 — founder query: "Have we properly written about and justified entanglement?")
+
+**Audit answer: YES at theorem level, with two modernization debts, both
+now being discharged.** QM-3 V3.2 carries the three deliverables a
+justification requires — non-separability (Thm nonsep), E = −cosθ ⇒
+CHSH = 2√2 exactly (Tsirelson, no super-quantum excess), no-signaling —
+plus two unusually honest records: the explicit retraction of the v1
+shared-bit-pool argument (an LHV, provably capped at |S| = 2), and the
+March-2026 ε-hierarchy reconciliation with the SD series (Nexus =
+global constraint; measurement-independence violation at O(ε) ~ 10⁻²⁶;
+operational QM exact at ε = 0). The re-grounding arc (CONV-014/015/016)
+subsequently re-founded the phase variable QM-3's helix encoding rests
+on. **Debts:** (1) NO verify script — predates the
+computation-before-claims standard (first QM script: 3001). DISCHARGED
+THIS PATCH: `code/3315_qm3_bell_verify.py`, 7/7 (exact-symbolic
+correlator/CHSH/marginals/SU(2)-invariance; numeric Tsirelson scan;
+exhaustive 16-strategy LHV bound = 2 — the retraction shown
+mathematically forced). (2) Review basis is PRE-CONV-ERA (internal +
+3-seat Opus/Grok/Copilot, March 2026) — never a modern five-seat round;
+same coverage-debt class GR-1c Thms 1–2 carried before CONV-030.
+DISCHARGE VEHICLE: CONV-031 (dispatched Patch 3316), covering the three
+theorems + the ε-hierarchy reconciliation + post-re-ground consistency,
+under the new OWN-RUN mandate. Substrate-level residue honestly held:
+the SD-series correlation machinery (K₀(λ), OPEN-SD-1..4) remains open
+— scope, not defect.
+
 ### OPEN-QM-1-REGROUND: Pattern-Level Re-Grounding of the QM-Series Phase
 **Status:** OPEN
 **Sector(s):** QM
