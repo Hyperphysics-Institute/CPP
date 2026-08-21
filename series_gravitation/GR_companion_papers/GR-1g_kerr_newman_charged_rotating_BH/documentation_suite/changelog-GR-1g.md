@@ -30,3 +30,16 @@ supplies the generalized threshold ω < mΩ₊ + qΦ₊ as a corollary, but the
 quantitative amplification the item asks for remains open (it is GR-1h's
 own open problem 1). The other three items are genuinely open. No .tex
 change; scoped to the proposed W-D pass.
+
+## V1.1 — 20 August 2026 (Patch 3307) — W-D status notes + F-R1/C* dependency audit
+
+Per the fixed W-D form and CONV-030 adoption 4. Audit note at the
+extremality remark (KN bound inherits GR-1f's two exposures: horizon
+evaluation + c-vs-c_* ceiling; horizon-merging language = would-be
+surfaces; exterior KN structure, RN limit, three-source pattern
+unaffected). W-D notes: OP-2 charged evaporation — baseline RE-OPENED
+(GR-1e V1.1), "still open, now two layers deep"; OP-3 KN echoes —
+baseline CHANGED (GR-1d V3), r_Q²/r_S² estimate unverified against
+amended baseline; OP-4 KN superradiance — uncharged mechanism DELIVERED
+by GR-1h, horizon-defined Ω_+/Φ_+ flagged. op:allorders untouched.
+Compile: 0 errors, 9pp.
