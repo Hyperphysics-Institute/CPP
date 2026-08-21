@@ -15,6 +15,17 @@
 %   solution). Panel CONV-027 APPROVE-EITHER 5/5; founder-ratified.
 %   Verification: series_gravitation/code/3259_fterm_reconciliation_verify.py
 %   (8/8, exact-symbolic; independently SCRIPT-EXECUTED by two panel seats).
+% CORRIGENDUM 2 (Patch 3301, 20 Aug 2026): Theorem thm:core RELABELED, no
+%   equation changes. The saturation radius r_core = GM/c^2 is the ISOTROPIC
+%   coordinate radius rbar = mu (this paper's own declared coordinates);
+%   numerically equal to r_S/2 but NOT the areal radius r_S/2. Its areal
+%   image is 9mu/4 = (9/8) r_S — OUTSIDE the would-be horizon, which never
+%   forms (the horizon's isotropic image mu/2 lies inside the excluded
+%   region). "Core of radius ~ l_P" corrected: l_P/2 is the saturated LOCAL
+%   PSR scale; the saturated region's coordinate extent is macroscopic.
+%   Panel CONV-030 Q5: Thm 1 SOUND 5-0; Thm 2 SOUND-WITH-RELABELING 5-0;
+%   founder-ratified (founders_voice/ ruling 2026-08-20). Verification:
+%   series_gravitation/code/3297_rcore_verify.py (9/9).
 % ==================================================================
 
 \documentclass[12pt]{article}
@@ -57,7 +68,7 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{17 March 2026 (corrigendum 20 August 2026) --- Version~2.2}
+\date{17 March 2026 (corrigenda 20 August 2026) --- Version~2.3}
 
 \begin{document}
 \maketitle
@@ -447,6 +458,41 @@ but prevented by the discrete lattice structure.  The censorship
 operates at the Planck scale, not the classical scale.
 \end{remark}
 
+\begin{remark}[Corrigendum: coordinate labels in Theorem~\ref{thm:core}
+--- Patch 3301, 20 August 2026]
+\label{rem:core_relabel}
+Two labels in Theorem~\ref{thm:core} and its proof are corrected here;
+\emph{no equation changes}.  (i)~The saturation radius in
+Eq.~\eqref{eq:r_core}, $r_{\rm core} = GM/c^2$, is the \emph{isotropic}
+coordinate radius $\riso = \mu \equiv GM/c^2$ --- the coordinate this
+paper declares throughout (Theorem~\ref{thm:schwarzschild}) and the
+ratified lattice~$\equiv$~isotropic identification (T-1 CHARTER,
+Patch~3262) makes mandatory.  It is \emph{numerically} equal to $r_S/2$,
+but the gloss ``$= r_S/2$'' invites reading it as the \emph{areal}
+radius $r_S/2$ (deep inside the horizon), which is incorrect: by this
+paper's own exact map (Eq.~\eqref{eq:iso_coord}), the areal image of
+$\riso = \mu$ is $r = \tfrac{9}{4}\mu = \tfrac{9}{8}\,r_S$ ---
+\emph{outside} the would-be horizon.  The horizon's isotropic image,
+$\riso = \mu/2$, lies inside the excluded region and never forms: on the
+whole exterior $\riso \geq \mu$ one has $k\,\Delta|\SSV| \in (0,1]$.
+The areal surface radius $9GM/(4c^2)$ is exactly the Buchdahl bound,
+with surface lapse $1/3$ and redshift $z = 2$ (machine-verified,
+\texttt{code/3297\_rcore\_verify.py}, 9/9).  (ii)~``Planck-density core
+of radius $\sim \lP$'' conflates two scales: $\lP/2$ is the saturated
+\emph{local} lattice spacing ($\PSR_{\rm eff}$ at the floor), while the
+saturated region's \emph{coordinate extent} ($\riso \leq \mu$) is
+macroscopic for astrophysical masses.  The correct statement: a
+maximally compact body whose interior sits at the Exclusion floor
+$\PSR_{\rm eff} = \lP/2$ throughout, with surface at $\riso = \mu$
+(areal $\tfrac{9}{8}r_S$).  Downstream consequence, adjudicated
+separately: the comparison table of
+Section~\ref{subsec:comparison} carries a dated supersession note.
+Panel record: CONV-030 Q5, Theorem~1 SOUND 5--0, Theorem~2
+SOUND-WITH-RELABELING 5--0; founder-ratified 20 August 2026.  This
+remark corrects the labels while preserving the original text above
+verbatim (anti-erasure).
+\end{remark}
+
 \subsection{Interior comparison: CPP vs.\ GR}
 \label{subsec:comparison}
 
@@ -468,6 +514,17 @@ The CPP and GR predictions are indistinguishable by any observation
 made in the exterior region.  They diverge only at and below $r = r_S/2$,
 deep inside the horizon, where no classical signal can escape to inform
 an external observer.
+
+\textbf{[Supersession note, Patch 3301, 20 August 2026:} the table and
+the paragraph above are preserved verbatim (anti-erasure) but are
+superseded by the corrigendum of Remark~\ref{rem:core_relabel} and the
+CONV-030 adjudication.  Under the ratified isotropic reading the
+exclusion surface sits at areal $\tfrac{9}{8}r_S$, \emph{outside} $r_S$:
+no horizon forms (the row ``At $r = r_S$ \ldots horizon'' describes a
+region that is never reached), and the divergence from GR begins at the
+surface, in the \emph{observable} exterior --- which is precisely what
+makes the echo prediction of companion GR-1d falsifiable.  See GR-1d
+(amended) and \texttt{frontier\_sectors/GR.md}, OPEN-GR-RCORE-1.\textbf{]}
 
 %======================================================================
 \section{The CPP Field Equation}

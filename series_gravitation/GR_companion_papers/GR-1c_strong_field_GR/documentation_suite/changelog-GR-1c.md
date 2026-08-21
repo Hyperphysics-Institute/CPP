@@ -74,3 +74,28 @@ created. **A staleness finding was registered** (see
 delivered or superseded since, and `op:24cell` additionally rests on a
 geometry the founder has since retired. No .tex change — the correction
 is scoped to the proposed W-D pass.
+
+## V2.3 — 20 August 2026 (Patch 3301) — Relabeling corrigendum (Theorem thm:core)
+
+**Review basis:** CONV-030 Q5 — Theorem 1 SOUND 5–0; Theorem 2
+SOUND-WITH-RELABELING 5–0 (the theorems' FIRST external review; the
+review-coverage map's oldest debt discharged). Founder-ratified 20 Aug
+2026 (`founders_voice/founder_ruling_conv030_rcore_ratification_2026-08-20.md`).
+
+**Changes (no equation changes; anti-erasure throughout):**
+- New Remark rem:core_relabel after the cosmic-censorship remark:
+  (i) r_core = GM/c² is the ISOTROPIC coordinate radius r̄ = μ —
+  numerically r_S/2 but not the areal r_S/2; its areal image is
+  9μ/4 = (9/8) r_S, OUTSIDE the would-be horizon, which never forms;
+  the areal surface radius is exactly the Buchdahl bound (lapse 1/3,
+  z = 2; machine record code/3297_rcore_verify.py 9/9).
+  (ii) "core of radius ~ l_P" corrected: l_P/2 is the saturated LOCAL
+  PSR scale; the saturated region's coordinate extent is macroscopic.
+- Dated supersession note on the §Interior-comparison table and its
+  closing paragraph (original text preserved verbatim): the "At r = r_S
+  ... horizon" row describes a region never reached; divergence from GR
+  begins at the observable surface — the basis of GR-1d's falsifiable
+  echo prediction.
+- Header comment corrigendum block; version line → 2.3.
+
+**Compile:** pdflatex ×2, 0 errors, no undefined refs, 15 pages.
