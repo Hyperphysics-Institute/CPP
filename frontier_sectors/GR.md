@@ -721,16 +721,27 @@ its missing prerequisite.
   refinement; tensor-sector wall condition; Kerr (ergoregion vs exclusion
   surface — the "Planck-core bomb" re-framed as the textbook ergoregion
   instability of horizonless spinning reflectors).
-- **CONV-030 DISPATCHED (Patch 3298, founder-authorized "please proceed"):**
-  the adjudication round the HALT owed, bundled with the GR-1c Theorems 1–2
-  coverage the review map owed. Package:
-  `series_gravitation/review/conv030_rcore_halt_gr1c_review_package_v1.0.md`;
-  receiver `reviews-CONV-030.md` (AWAITING RETURNS 0/5). Seven frozen
-  questions: Q1 R-1 soundness (three-way independence attack); Q2 F-R1
-  coordinate reading; Q3 Buchdahl consilience vs numerology (lapse-1/3
-  double derivation is the firewall); Q4 HALT warranted + Level-A/B/both;
-  Q5 GR-1c Thm 1 / Thm 2 (SOUND-WITH-RELABELING option — interpretive
-  corrigendum, no equation changes); Q6 AMEND/HOLD on GR-1d/GR-1e +
-  C*-note subsumption; Q7 RCORE-2 completeness. New seat mandate adopted
-  from CONV-029 §1: paste the script's own final count line VERBATIM.
-  GR-1d/GR-1e stay untouched until this round returns + founder ratifies.
+- **CONV-030 RETURNED (4/5, same-session) AND ADJUDICATED (Patch 3299):**
+  verbatim `reviews-CONV-030.md`; adjudication `conv030_adjudication.md`.
+  Copilot seat DELIVERY-FAILED (wants the package as a .md file) — retry
+  issued as direct file upload; its eventual return is CONFIRMATION-CLASS
+  (no majority flippable). Tally: Q1 SOUND-family 4–0 (GPT
+  SOUND-WITH-GAPS minority adopted as honest restatement — "(i)+(ii) one
+  conservation argument + (iii) independent dynamical constraint";
+  "three independent ways" withdrawn); Q2 CORRECT-family 4–0; **Q3
+  GENUINE 4–0 — the directed numerology attack on the Buchdahl
+  consilience found no purchase**; Q4 WARRANTED 4–0, delay grade
+  BOTH-WITH-DICTIONARY-CAVEAT 3–1 (Level-A displayed as measured-metric
+  benchmark); **Q5 Thm 1 SOUND 4–0, Thm 2 SOUND-WITH-RELABELING 4–0 —
+  GR-1c's load-bearing theorems pass their first external review, with
+  the relabeling corrigendum panel-approved**; Q6 AMEND 4–0, SUBSUMED
+  3–1 (GPT's per-paper GR-1f/g/h dependency audit adopted as the C*
+  notes' execution plan); Q7 COMPLETE 3–1 (both GPT missing items
+  adopted: RCORE-2 gains (vi) frequency-dependent wall response under
+  the unilateral constraint, (vii) the dependency audit). Gemini's
+  error-bar mandate adopted (Δt_A = 2.15 ± 0.14 ms at 62 ± 4 M_⊙).
+  Seat hygiene: COUNT-LINE mandate CURED (Grok pasted "9/9 PASS"
+  verbatim). Llama non-seat note recorded without prejudice.
+  **AWAITING FOUNDER: three-item ratification bundle (adjudication §4)
+  — (i) enact the GR-1d/GR-1e amendments; (ii) GR-1c relabeling
+  corrigendum V2.3; (iii) F-R1 as the sector's standing reading.**
