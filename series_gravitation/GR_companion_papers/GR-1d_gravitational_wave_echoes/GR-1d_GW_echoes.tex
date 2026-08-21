@@ -4,6 +4,21 @@
 % Companion 9 to "Mechanistic Derivation of Relativistic Effects
 % via Space Stress Vector (SSV) in the Dipole Sea" (Version 16)
 % Version 2 — 18 March 2026 - by Claude, in independent collaboration with Grok
+% AMENDMENT (Patch 3302, 20 Aug 2026 — Version 3): the V2 Theorem's delay
+%   Dt = (4GM/c^3) ln(2GM/c^2 l_P) (~112 ms for GW150914) is SUPERSEDED.
+%   Under the ratified lattice ≡ isotropic identification (T-1 CHARTER,
+%   Patch 3262) and the GR-1c V2.3 corrigendum, the reflecting surface is
+%   NOT at r_S + l_P: the exclusion surface sits at isotropic rbar = mu,
+%   areal 9mu/4 = (9/8) r_S — OUTSIDE the would-be horizon, which never
+%   forms. The near-horizon logarithm disappears. Corrected closed forms
+%   (Section: Amendment): Level-A Dt = (3/2 + 8 ln 2) GM/c^3 = 2.15 ± 0.14
+%   ms for GW150914 (62 ± 4 Msun); Level-B (lattice frame) Dt = (sqrt 3 +
+%   2 ln(1 + sqrt(3)/2)) GM/c^3 = 0.91 ± 0.06 ms. |R_core| = 1 now DERIVED
+%   (was assumed; V2 Open Problem 1 CLOSED). Panel CONV-030: HALT WARRANTED
+%   5-0, BOTH-WITH-DICTIONARY-CAVEAT 4-1; founder-ratified 20 Aug 2026.
+%   Original V2 text preserved verbatim with dated supersession notes
+%   (anti-erasure). Verification: series_gravitation/code/3297_rcore_verify.py
+%   (9/9; three panel seats SCRIPT-EXECUTED).
 % ==================================================================
 
 \documentclass[12pt]{article}
@@ -45,7 +60,7 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{18 March 2026 --- Version~2 (merged)}
+\date{18 March 2026 (amended 20 August 2026) --- Version~3}
 
 \begin{document}
 \maketitle
@@ -83,6 +98,19 @@ For a black hole remnant of 62 solar masses — similar to the GW150914 event
 
 This prediction is specific, quantitative, and in principle testable with
 existing LIGO data and near-certain with the Einstein Telescope.
+
+\textbf{[Amendment, 20 August 2026:} the summary above is the original
+Version-2 text, preserved verbatim.  Two things changed when the
+reflecting surface was located correctly.  First, in Conscious Point
+Physics the collapse never makes a horizon at all: the CP Exclusion Rule
+stops the compression at a solid surface sitting \emph{outside} where
+the horizon would have been --- a maximally compact body, not a black
+hole with an interior.  Second, with the surface there, the echo delay
+loses its huge logarithmic factor and shrinks from $\sim$112~ms to
+about \textbf{2~milliseconds} for a GW150914-class remnant --- a
+sharper prediction, sitting squarely inside the LIGO band, and now with
+\emph{no} adjustable reflectivity: the surface is a perfect mirror by
+derivation.  Details in the Amendment section.\textbf{]}
 
 %======================================================================
 \begin{abstract}
@@ -304,6 +332,21 @@ where the correction $-0.193 = 1 - \tfrac{3}{2} + \ln 2$ is negligible
 compared to $\ln(\rS/\lP) \approx 88$--$93$ for all astrophysical black holes.
 \end{theorem}
 
+\begin{remark}[Supersession --- Amendment, Patch 3302, 20 August 2026]
+\label{rem:thm_superseded}
+The Theorem above is preserved verbatim (anti-erasure) but is
+\textbf{superseded}.  Its premise --- a reflecting surface at
+$r_0 = \rS + \lP$, a proper Planck length outside a horizon --- rests
+on the areal reading of companion~8's core radius that the GR-1c V2.3
+corrigendum corrects: in the papers' own ratified coordinates the
+exclusion surface sits at isotropic $\bar r = \mu \equiv GM/c^2$,
+whose areal image is $\tfrac{9}{4}\mu = \tfrac{9}{8}\rS$ ---
+\emph{outside} the would-be horizon, which never forms.  The
+near-horizon logarithm $\ln(\rS/\lP)$ therefore does not arise.  The
+corrected delay is derived in Section~\ref{sec:amendment}.  Panel
+record: CONV-030, HALT WARRANTED 5--0; founder-ratified 20 August 2026.
+\end{remark}
+
 \begin{proof}
 The echo delay is the round-trip travel time in tortoise coordinates:
 \begin{align}
@@ -353,9 +396,149 @@ to the Planck mass — a pure dimensionless quantity with no free parameters.
 \end{remark}
 
 %======================================================================
+\section{Amendment (Patch 3302): Corrected Surface Location and Delay}
+\label{sec:amendment}
+%======================================================================
+
+\emph{This section is the ratified amendment (CONV-030; founder
+ratification 20 August 2026).  Everything in it is conditional on the
+PSR constitutive form at W2 viability strength and on the ratified
+lattice~$\equiv$~isotropic coordinate identification (T-1 CHARTER,
+Patch~3262) --- the same conditionality the whole gravitational arc
+carries.}
+
+\subsection{The corrected surface}
+\label{subsec:amend_surface}
+
+The saturation radius of companion~8's Planck-core theorem,
+$\rcore = GM/c^2 \equiv \mu$, is an \emph{isotropic} coordinate
+radius (GR-1c V2.3 corrigendum).  By the exact isotropic-to-areal map
+$r = \bar r(1 + \mu/2\bar r)^2$, the exclusion surface $\bar r = \mu$
+has areal image
+\begin{equation}
+  r_{\rm surf} \;=\; \frac{9}{4}\,\mu \;=\; \frac{9}{8}\,\rS ,
+  \label{eq:surf_areal}
+\end{equation}
+\emph{outside} the would-be horizon $r = 2\mu$, whose isotropic image
+$\bar r = \mu/2$ lies inside the excluded region and never forms.  The
+areal surface radius $9GM/(4c^2)$ is exactly the Buchdahl bound, with
+surface lapse $1/3$ and redshift $z = 2$.  The echo cavity is therefore
+bounded by the photon-sphere potential barrier and a wall in the
+\emph{observable exterior} --- not by a horizon-skimming quantum
+displacement.
+
+\subsection{Reflectivity: derived, not assumed}
+\label{subsec:amend_reflectivity}
+
+Version~2 assumed $|R_{\mathrm{core}}| = 1$ (Open Problem~1).  With the
+ratified T-1 field equation in hand, it is now \emph{derived}
+(OPEN-GR-RCORE-1, Patch 3297): one conservation/storage argument ---
+at the Exclusion floor $\PSR_{\mathrm{eff}} = \lP/2$ the displacement
+registers are saturated, so an incident perturbation cannot be stored,
+and DI-bit conservation (AP-4) forces what cannot be stored to return
+--- plus one independent dynamical constraint: the core's force balance
+is a stable fixed point (companion GR-1e), excluding secular energy
+absorption.  Hence $|R_{\mathrm{core}}| = 1$ exactly, with Dirichlet
+phase $\pi$ (the clamped register is a fixed end) as the leading
+idealization; the one-sided character of the Exclusion inequality and
+the frequency dependence of the effective wall response are registered
+residues (OPEN-GR-RCORE-2, items ii and vi).  The amplitude chain of
+Section~\ref{sec:amplitude} thus closes with \emph{no free
+reflectivity parameter}: the first echo is $|T_{\mathrm{bar}}|^2
+\approx 5\%$ of the ringdown.
+
+\subsection{Corrected delay: two frames, one dictionary question}
+\label{subsec:amend_delay}
+
+With the wall at areal $9\mu/4$ the delay is a pure closed form.  Two
+propagation pictures give two clocks, and the choice between them ---
+\textbf{stated here explicitly rather than deferred}: does the echo
+travel on the measured metric (the frame in which LIGO's clock ticks),
+or at the substrate wave speed $c_*(\bar r) = c/(1 + \mu/\bar r)$ of
+the T-1 lattice dynamics? --- is the open dictionary question
+OPEN-GR-RCORE-2(i), potential dispersion-falsifier territory.  Both
+forms are exact and parameter-free:
+
+\textbf{Level A (measured metric; the benchmark).}  Eikonal round trip
+between the wall and the photon-sphere barrier ($r = 3\mu$) in the
+tortoise coordinate:
+\begin{equation}
+  \boxed{\;\Delta t_A \;=\; \left(\frac{3}{2} + 8\ln 2\right)
+  \frac{GM}{c^3} \;\approx\; 7.045\,\frac{GM}{c^3}\;}
+  \label{eq:dtA}
+\end{equation}
+--- the surviving logarithm is $\ln 2$ from
+$r^*(3\mu) - r^*(9\mu/4)$; no $\ln(M/\mP)$ factor exists.  Level A is
+displayed as the benchmark because it propagates the perturbation in the
+same metric the observing clock uses.  Finite-$\ell$ honesty: the true
+$\ell = 2$ barrier peaks at $r \approx 3.28\,\mu$, giving a round trip
+of $8.60\,GM/c^3$; a time-domain evolution with the Dirichlet wall
+measures an echo gap of $8.20\,GM/c^3$ (within 10\%).
+
+\textbf{Level B (lattice frame).}  Propagation at $c_*(\bar r)$ over
+the isotropic interval $[\mu, (1 + \sqrt{3}/2)\mu]$ (the photon
+sphere's isotropic image):
+\begin{equation}
+  \Delta t_B \;=\; \left(\sqrt{3} + 2\ln\!\left(1 +
+  \frac{\sqrt{3}}{2}\right)\right)\frac{GM}{c^3}
+  \;\approx\; 2.980\,\frac{GM}{c^3}.
+  \label{eq:dtB}
+\end{equation}
+
+\textbf{GW150914 numbers, with error bars.}  Both delays are linear in
+$M$, so the remnant-mass uncertainty passes through directly.  For
+$M = 62 \pm 4\,M_\odot$:
+\begin{equation}
+  \Delta t_A \;=\; 2.15 \pm 0.14~\text{ms},
+  \qquad
+  \Delta t_B \;=\; 0.91 \pm 0.06~\text{ms}.
+  \label{eq:dt_numbers}
+\end{equation}
+
+\subsection{Corrected predictions table}
+\label{subsec:amend_table}
+
+Table~\ref{tab:echoes_amended} replaces Table~\ref{tab:echoes}
+(preserved above with its supersession note).  Echo repetition
+frequencies $f_{\mathrm{echo}} = 1/\Delta t_A$ now sit \emph{inside}
+the LIGO band for stellar-mass events --- the prediction is
+\emph{more} exposed than Version~2's, not less: ms-scale echoes at
+5\% of ringdown are constrainable with existing O1--O4 data, subject
+to the search-systematics caveat of OPEN-GR-RCORE-2(viii).
+
+\begin{table}[h]
+\centering
+\caption{Amended CPP echo delay predictions (Level-A benchmark,
+$\Delta t_A = 7.045\,GM/c^3$; Level-B values are
+$\Delta t_B = 0.423\,\Delta t_A$).  QNM frequency as in
+Table~\ref{tab:echoes}.}
+\label{tab:echoes_amended}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}lrrrc@{}}
+\toprule
+Black hole & $M/M_\odot$ & $\Delta t_A$ & $f_{\mathrm{echo}}$ (Hz)
+  & $f_{\mathrm{QNM}}$ (Hz) \\
+\midrule
+Stellar (1\,$M_\odot$)       &      1 &  34.7 $\mu$s &  28{,}800 & 6036 \\
+Stellar (10\,$M_\odot$)      &     10 &  0.347 ms    &   2{,}880 &  604 \\
+LIGO-range (30\,$M_\odot$)   &     30 &  1.04 ms     &      961  &  201 \\
+GW150914 ($62\,M_\odot$)     &     62 &  2.15 ms     &      465  &   97 \\
+GW190521 ($150\,M_\odot$)    &    150 &  5.20 ms     &      192  &   40 \\
+LISA band ($10^4\,M_\odot$)  & 10,000 &  0.347 s     &      2.9  &  0.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%======================================================================
 \section{Numerical Predictions}
 \label{sec:predictions}
 %======================================================================
+
+\textbf{[Supersession note, Patch 3302:} this section and
+Table~\ref{tab:echoes} are the original Version-2 predictions,
+preserved verbatim; they are superseded by
+Section~\ref{sec:amendment} and Table~\ref{tab:echoes_amended}.\textbf{]}
+
 
 Table~\ref{tab:echoes} gives the predicted echo delay $\Dt$ and echo
 frequency $f_{\mathrm{echo}} = 1/\Dt$ for a range of black hole masses,
@@ -415,7 +598,10 @@ $T_{\mathrm{bar}}$ is the barrier transmission coefficient.
 
 For a perfectly reflective Planck core ($|R_{\mathrm{core}}| = 1$) and
 the $\ell = 2$ barrier transmission $|T_{\mathrm{bar}}|^2 \approx 0.05$
-at the relevant frequencies~\cite{berti2009}:
+at the relevant frequencies~\cite{berti2009}
+\textbf{[Amendment note, Patch 3302: $|R_{\mathrm{core}}| = 1$ is now
+\emph{derived}, not assumed --- Section~\ref{subsec:amend_reflectivity};
+these amplitude ratios therefore carry no free parameter]}:
 \begin{align}
   |h_1|/|h_{\mathrm{ringdown}}| &\;\approx\; 0.05
   \quad (\text{first echo at 5\% of ringdown amplitude}), \notag\\
@@ -559,6 +745,10 @@ No new postulates beyond companion~8 are introduced.
     interior.  A quantitative model of $|R_{\mathrm{core}}|$ is the key
     input needed to convert the delay prediction into a strain amplitude
     prediction.
+    \textbf{[CLOSED, Patch 3302, 20 August 2026:} the ratified T-1 field
+    equation supplied exactly this input --- $|R_{\mathrm{core}}| = 1$
+    derived (Section~\ref{subsec:amend_reflectivity}); phase and
+    frequency-dependence refinements remain as OPEN-GR-RCORE-2(ii)/(vi).\textbf{]}
 
   \item \textbf{Kerr black hole echoes.}
     The present calculation uses the Schwarzschild potential barrier.
@@ -578,6 +768,10 @@ No new postulates beyond companion~8 are introduced.
     prediction for each event whose remnant mass is known from the inspiral.
     A systematic search of O1--O4 data with this template is deferred to
     a dedicated analysis.
+    \textbf{[Amended, Patch 3302:} the search template is now
+    $\Delta t_A(M) = (3/2 + 8\ln 2)\,GM/c^3$ (with $\Delta t_B$ as the
+    lattice-frame alternative), per Section~\ref{subsec:amend_delay};
+    search-systematics treatment registered as OPEN-GR-RCORE-2(viii).\textbf{]}
 \end{enumerate}
 
 %======================================================================
