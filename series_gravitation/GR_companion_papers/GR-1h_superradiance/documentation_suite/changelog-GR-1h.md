@@ -48,3 +48,23 @@ geometry. OP-4 untouched (genuinely open, outside the arc). One
 dependency-audit note at the threshold derivation (horizon-defined
 Ω_+; c-vs-c_*; exterior Teukolsky agreement fenced). Compile: 0
 errors, 10pp.
+
+## V1.2 — 21 August 2026, Patch 3328 (Session 156)
+
+Settled notes on founder-ratified CONV-032 (5/5). Two settled notes
+appended beside the V1.1 status notes (originals verbatim,
+anti-erasure): (1) the load-bearing ergoregion-instability item
+("Planck-core bomb") RESOLVED at derivation-conditional grade — the
+censorship theorem (Patch 3320) places the exclusion surface strictly
+outside the ergosphere at every spin, so the gain loop cannot be
+assembled at any spin or reflectivity, conditional on A1–A3; the
+falsifier-shaped tension with observed BH spins is discharged on this
+channel; the load moves to the conditionality itself (OPEN-GR-RCORE-4;
+the panel's weighted-norm counterexample recorded in the note);
+scalar/vector wall condition remains open (RCORE-2(iii)); Zel'dovich
+surface channel named as the survivor with growth-time bounds
+committed under amended RCORE-3. (2) Boson-cloud saturation — the
+spinning geometry input is delivered (the derived co-rotating
+saturation surface as inner boundary); the problem remains unposed,
+only its geometry is now available. Compile gate: pdflatex ×2,
+0 errors, 0 undefined refs, 11 pages.
