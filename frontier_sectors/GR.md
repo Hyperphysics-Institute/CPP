@@ -657,3 +657,67 @@ narrative.** Sentence amended in place, correction named.
 doubles is the proof: draft placeholder boxes ran taller than the real
 figures. One `natbib` undefined-citation warning is **pre-existing**,
 unchanged, flagged for a future pass rather than silently absorbed.
+
+---
+
+## OPEN-GR-RCORE-1 — Planck-core reflectivity: **DERIVED-PENDING-REVIEW**, with a HALT finding against shipped GR-1d (Patch 3297, Session 154)
+
+**Deliverable:** `series_gravitation/rcore_derivation/RCORE_derivation.md`;
+verify `code/3297_rcore_verify.py` **9/9 PASS**. Executed on the founder's
+Session-154 opening instruction (run the priority calculation), superseding
+the queued W-D rows for this session; W-D rows 2–4 carry forward unchanged.
+The two unacted threads from Session 153 (reflectivity bottleneck; the
+five-paper C* exposure) turned out to be ONE problem: NOTE-GR-CSTAR-
+STRONGFIELD's c_*(x) is the T-1 wave speed in exactly the region where the
+reflectivity was uncomputed, and the ratified T-1 IS the "full CPP field
+equation in the strong-field interior" that GR-1d Open Problem 1 named as
+its missing prerequisite.
+
+**Results (all machine-verified, zero free parameters):**
+
+- **R-1: |R_core| = 1 exactly** — absorption requires storage (forbidden:
+  Exclusion-floor register has no compression headroom), a sink (forbidden:
+  AP-4 conserves DI-bits), or secular transfer (forbidden: GR-1e fixed point
+  stable). GR-1d's amplitude problem closes at argument level: first echo at
+  |T_bar|² ≈ 5% of ringdown, no free reflectivity parameter.
+- **R-2: reflection phase π (Dirichlet)** at linear order — the clamped
+  register is a fixed end; confirms GR-1d's assumed pressure-node phase.
+  One-sided-constraint refinement registered, not hidden.
+- **F-R1 (the structural yield): the exclusion surface sits OUTSIDE the
+  would-be horizon.** The PSR formula's r is the lattice = ISOTROPIC radius
+  (GR-1c's own declaration; ratified at T-1). Saturation at r̄ = μ maps to
+  areal **9μ/4 = (9/8) r_S**; the horizon's image r̄ = μ/2 is inside the
+  excluded region; k·Δ|SSV| ∈ [0,1] on the whole exterior — the dictionary
+  singularity at k·Δ|SSV| = 2 is unreachable. **The Exclusion floor censors
+  the horizon: CPP black holes are horizonless, hard-surfaced objects.**
+  Surface lapse exactly 1/3 by two independent routes; z = 2;
+  c_*(surface) = c/2 under ratified R-CSTAR-MAP.
+- **C-R1 consilience: EXACT Buchdahl saturation.** GR's maximum-compactness
+  bound for static matter is R ≥ 9GM/4c², saturated by incompressible matter
+  at critical pressure with surface lapse 1/3. The CPP core — incompressible
+  BY the Exclusion floor — lands exactly there with exactly that lapse,
+  nothing tunable. Registered as consilience, unminted as prediction.
+- **HALT-GR-1D-DELAY:** GR-1d's shipped Theorem Δt = (4GM/c³)ln(2M/m_P)
+  (~112 ms, GW150914) rests on the areal reading + the r_S + l_P quantum-
+  displacement step; under the ratified identification neither survives. New
+  closed forms: **Level A (measured-metric, eikonal) Δt = (3/2 + 8 ln 2)
+  GM/c³ ≈ 7.05 GM/c³ → 2.15 ms for GW150914** (finite-ℓ barrier peak: 8.60;
+  time-domain evolution measures 8.20); Level B (T-1 lattice dynamics)
+  ≈ 2.98 GM/c³ → 0.91 ms. The ln(2M/m_P) factor is GONE; the prediction
+  becomes sharper and far more exposed (ms-scale 5% echoes on GW150914-class
+  remnants — constrainable with existing LIGO ringdown data; if excluded,
+  the falsifier machinery worked). **GR-1d and GR-1e NOT edited — HALT
+  discipline, FTERM precedent. Adjudication owed: founder ruling on the
+  coordinate reading's consequence for the shipped Theorem, then a CONV
+  round — natural anchor for the GR-1c Thm 1–2 round the review-coverage
+  map already owes.**
+- **C* note disposition:** the five-paper exposure is SUBSUMED under F-R1
+  (no horizon exists; GR-1f/g/h "near-horizon velocity" arguments re-read as
+  near-surface with c_* ≥ c/2; the note's ~0.29c figure diagnosed as the
+  pre-R-CSTAR-MAP shorthand, 1/(2√3) — updates to c/2). Per-paper dated
+  notes deferred until the adjudication settles what they should say.
+- **OPEN-GR-RCORE-2 (minted):** residue bundle — Level A/B dictionary
+  question (dispersion-falsifier territory); unilateral-constraint phase
+  refinement; tensor-sector wall condition; Kerr (ergoregion vs exclusion
+  surface — the "Planck-core bomb" re-framed as the textbook ergoregion
+  instability of horizonless spinning reflectors).
