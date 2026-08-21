@@ -33,7 +33,12 @@ template).
 3. **"Four Ways the Sky Said Yes"** (GR-1i) — the classical tests as
    four mini-stories (Mercury; starlight; radar; clocks), each with
    its mechanism reading; the constants-provenance honesty beat.
-   [TO WRITE]
+   **[WRITTEN — Patch 3313,
+   `chapters/GR-1i_four_ways_the_sky_said_yes.md`, ~2,400 words. The
+   honest frame leads (discriminates from Newton, not GR; zero
+   predictions minted); achromatic-lens delight beat; CHS ethical
+   core = constants provenance (the 42.99 → 42.98 dead-center
+   story); propagation exercise included.]**
 4. **"The Bestiary"** (GR-1f/1g/1h + 1d/1e) — rotation, charge,
    energy extraction, echoes, evaporation and the Planck remnant: what
    the formula says about real black holes. [TO WRITE]

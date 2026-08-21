@@ -132,3 +132,32 @@ theory to the executioner"). Exercise: the one-line dictionary algebra
 students can own. Discovery chronology: after
 `GR-1_the_one_formula.md`. Book-outline: gravitation part, second.
 Remaining planned: chapters 3–4.
+
+## GR-arc addendum 4 (Patch 3313, 20 Aug 2026)
+
+**New chapter:** `GR-1i_four_ways_the_sky_said_yes.md` — chapter 3 of
+the five-chapter plan (GR-1i, the classical tests). Opens with the
+honest frame in the paper's own spirit: the tests discriminate CPP
+from NEWTON, not from GR (values inherited by construction from the
+exactness theorem; zero predictions minted; "entry-criterion
+compliance"). Four mini-stories with mechanism readings: Mercury (the
+whisper — extra close-in steepening keeps the ellipse from closing;
+42.99 vs 42.98 ± 0.04, thirty-orbit numerical cross-check to four
+decimals), starlight (short, building on ch. 1's factor of two; NEW:
+the achromatic-lens beat — a graded-index lens with no rainbow,
+because the ruler changes, not a medium; logged unminted), radar
+(Shapiro's "locally always c, globally late" coordinate-speed
+reading; ~233 μs; Cassini compliance structural — PPN β = γ = 1
+identically), clocks (Pound–Rebka 2.46e-15; GPS +38.5 μs/day as
+infrastructure — "answered with a road trip and a navigation app").
+Dramatic/ethical centerpiece: the CONV-029 constants-provenance
+adoption told as "The decimal that taught a lesson" — the IAU solar
+mass moves 42.99 → 42.98, DEAD CENTER of observation; rule: "state
+your inputs and test your sensitivity; precision without provenance is
+decoration." Ethics sequence continues: ch. 1 honesty in
+construction, ch. 2 courage in correction, ch. 3 precision in
+claiming. Exercise: students propagate the 0.028% constant shift
+themselves + the two-sentence what-it-proves/what-it-doesn't drill.
+Discovery chronology: after
+`GR-1c_the_black_hole_that_was_already_there.md`. Book-outline:
+gravitation part, third. Remaining planned: chapter 4.
