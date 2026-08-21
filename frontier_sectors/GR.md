@@ -853,6 +853,26 @@ its missing prerequisite.
   PRED-O-39/predictions.md untouched pending Leg B; f₁=236 Hz
   registered unminted. GR-2 amendment queue (additive): Leg-A
   pointer, onset 0.665, thin-margin caution.
+  **LEG B DISCHARGED at eikonal-WKB grade (Patch 3334, Session 156,
+  verify 7/7, all-FAST):** THE COMB IS NOT RESTORED — the
+  Bohr–Sommerfeld census gives N_trapped = 0 for every exposed mode
+  at χ=0.68 (max Φ/π = 0.245 for (2,−2), threshold ¾) and for
+  (2,−2) across the ENTIRE spin scan χ∈[0.30,0.98] (max 0.247 at
+  0.52): lengthening cavity and falling barrier top (0.4425→0.3846)
+  cancel. Refined search target (eikonal-top, +17% Leg-A position
+  calibration, Q~5): a LINE SET at ~211/233/260/294 Hz
+  ((2,−2)/(2,−1)/(2,0)/(2,+1); ~247–344 Hz calibrated) + early
+  transients at the 2.624 ms retrograde delay; retrograde keying
+  survives as line ORDERING — the corotating (ℓ,ℓ) lines are absent
+  (wave-side burial: R<0 AT the wall at every ω with a forbidden
+  region). Instrument validated on the a→0 anchor (ω_top =
+  (ℓ+½)/√27 to <1%; N=0 = Leg A). Record:
+  `rcore_derivation/3334_rcore3_legB_kerr_census.md`. **REMAINING:**
+  full-Teukolsky line positions/widths; co-rotation BC (b);
+  Zel'dovich bounds (d). **PRED-O-39 PROVISIONAL refinement text
+  registered in the record §4, NOT executed — awaits CONV-034
+  (RCORE-3 Legs A+B audit round, the natural next dispatch) +
+  founder ratification, as does the GR-2 amendment set.**
 - **OPEN-GR-RCORE-4 (minted Patch 3325, from the CONV-032 GPT
   dissent): DERIVE THE ROTATIONAL CENSUS FUNCTIONAL FROM MICROSCOPIC
   REGISTER DYNAMICS.** Two conjuncts, both currently assumptions of
