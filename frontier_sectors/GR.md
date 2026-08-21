@@ -721,3 +721,16 @@ its missing prerequisite.
   refinement; tensor-sector wall condition; Kerr (ergoregion vs exclusion
   surface — the "Planck-core bomb" re-framed as the textbook ergoregion
   instability of horizonless spinning reflectors).
+- **CONV-030 DISPATCHED (Patch 3298, founder-authorized "please proceed"):**
+  the adjudication round the HALT owed, bundled with the GR-1c Theorems 1–2
+  coverage the review map owed. Package:
+  `series_gravitation/review/conv030_rcore_halt_gr1c_review_package_v1.0.md`;
+  receiver `reviews-CONV-030.md` (AWAITING RETURNS 0/5). Seven frozen
+  questions: Q1 R-1 soundness (three-way independence attack); Q2 F-R1
+  coordinate reading; Q3 Buchdahl consilience vs numerology (lapse-1/3
+  double derivation is the firewall); Q4 HALT warranted + Level-A/B/both;
+  Q5 GR-1c Thm 1 / Thm 2 (SOUND-WITH-RELABELING option — interpretive
+  corrigendum, no equation changes); Q6 AMEND/HOLD on GR-1d/GR-1e +
+  C*-note subsumption; Q7 RCORE-2 completeness. New seat mandate adopted
+  from CONV-029 §1: paste the script's own final count line VERBATIM.
+  GR-1d/GR-1e stay untouched until this round returns + founder ratifies.
