@@ -896,6 +896,40 @@ its missing prerequisite.
   mode-dependent Q; (2) the co-rotating wall BC; (3) Zel'dovich
   growth-time bounds.** Adjudication:
   `review/conv034_adjudication.md` v1.0.
+  **LEG C (Patch 3339, verify 6/6, all-FAST) — ITEM (b) DISCHARGED FOR
+  THE COUNT, AND A HALT-CLASS NARROWING OF LEGS A/B:** (1) co-rotation
+  is COUNT-NEUTRAL at Dirichlet grade — R(r;ω) depends only on
+  (a,m,Q,ω), so a wall rotating at Ω_w leaves the phase volume
+  invariant (verified to 1e-9); line-position effects remain
+  full-Teukolsky work. (2) **THE NARROWING:** Leg B computed ℓ ≤ 3
+  only; running the exposed extreme-retrograde branch to ℓ = 12 shows
+  Φ/π grows LINEARLY (≈ 0.122 ℓ at χ = 0.68, increments ±0.0002) and
+  crosses ¾ at **ℓ_crit = 7** for χ ≥ 0.30 (ℓ ≈ 10 at χ = 0) —
+  **trapped combs DO exist at high multipole**; "no comb at any spin"
+  is withdrawn and replaced by "no comb at ℓ = 2, 3 (every spin
+  tested), ladders from ℓ ≳ 7 where excitation is negligible."
+  (3) **CONSISTENCY WIN:** the eikonal comb is the ℓ → ∞ limit and is
+  recovered FROM BELOW — Leg A's single ℓ = 2 resonance and geometric
+  optics are two ends of one ladder; the eikonal picture was never
+  wrong. (4) **ROBUSTNESS ENVELOPE:** the ¾ threshold is
+  δ_w/2 + π/4, so the low-ℓ N = 0 needs δ_w > 0.235π = 42.3° — the
+  DERIVED clamped-register δ_w = π clears it 4.3× (a Neumann-like end
+  WOULD trap: the result is about the clamped wall, not geometry
+  alone). (5) **STRUCTURAL PROTECTION:** across 112 modes through
+  ℓ = 12, NO mode is simultaneously EXPOSED, TRAPPED, and
+  SUPERRADIANT — trapped modes are extreme-retrograde (no window),
+  superradiance-capable modes are corotating and BURIED; burial and
+  trapping select disjoint regions of the (ℓ,m) grid, so censorship
+  protects the finite-ℓ sector too, by a mechanism the eikonal
+  analysis could not see. Record:
+  `rcore_derivation/3339_rcore3_legC_corotation_multipole.md`.
+  **NEW: OPEN-GR-RCORE-3(e) — MULTIPOLE EXCITATION BUDGET.** The
+  negligibility of ℓ ≳ 7 excitation in comparable-mass ringdown is
+  INHERITED from standard phenomenology and computed NOWHERE in this
+  corpus; it is now load-bearing for the observable prediction and
+  must be discharged. **CONV-035 OWED:** the panel ratified
+  (CONV-034) the generalization Leg C narrows. Enacted: PRED-O-39
+  narrowed (3339), GR-2 V1.1 → V1.2 (3340).
 - **OPEN-GR-RCORE-4 (minted Patch 3325, from the CONV-032 GPT
   dissent): DERIVE THE ROTATIONAL CENSUS FUNCTIONAL FROM MICROSCOPIC
   REGISTER DYNAMICS.** Two conjuncts, both currently assumptions of
