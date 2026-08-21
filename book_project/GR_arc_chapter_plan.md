@@ -24,7 +24,12 @@ template).
 2. **"The Black Hole That Was Already There"** (GR-1c) — exact
    Schwarzschild from the same formula; rulers shrink, clocks slow,
    the lattice never bends; isotropic coordinates as the lattice's
-   own. [TO WRITE]
+   own. **[WRITTEN — Patch 3312,
+   `chapters/GR-1c_the_black_hole_that_was_already_there.md`, ~2,500
+   words. Post-RCORE, so the chapter ends on the horizonless
+   relocation + the Buchdahl handshake; the title pays out twice.
+   CHS ethical core: the correction that EXPOSED the theory (112 ms
+   safe → 2 ms in-band). One-line-of-algebra student exercise.]**
 3. **"Four Ways the Sky Said Yes"** (GR-1i) — the classical tests as
    four mini-stories (Mercury; starlight; radar; clocks), each with
    its mechanism reading; the constants-provenance honesty beat.

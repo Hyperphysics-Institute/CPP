@@ -109,3 +109,26 @@ embedded (concept load 4; ethical core = label your scaffolding;
 exercise included). Written Session 155-equivalent, after the RCORE
 arc closed, so the trailer honestly names the "strange solid-surfaced
 objects" ahead. Remaining planned: chapters 2–4.
+
+## GR-arc addendum 3 (Patch 3312, 20 Aug 2026)
+
+**New chapter:** `GR-1c_the_black_hole_that_was_already_there.md` —
+chapter 2 of the five-chapter plan (GR-1c). Act one: the untruncated
+formula yields exact isotropic Schwarzschild (machine-verified,
+3.3e-16), and the isotropic form is explained structurally — the
+lattice's addresses ARE the isotropic coordinates. The Exclusion floor
+as cosmic censor ("the address book is full"). Act two, five months
+later: the coordinate question the RCORE calculation forced — the
+"r_S/2" gloss run through the paper's own Theorem-1 dictionary lands
+the surface at (9/8) r_S, OUTSIDE the never-formed horizon; the
+founder's ratification quote ("the math was corrected TO the
+intuition"); the Buchdahl handshake (9/8 r_S, lapse exactly 1/3, two
+routes, nothing tunable — logged as consilience, declined as
+prediction). Dramatic centerpiece: the title paying out twice — the
+solution was in the formula all along, and the surface was outside the
+horizon all along. CHS ethical core: the correction that EXPOSED the
+theory (safe 112 ms → dangerous in-band 2 ms; "voting to hand its own
+theory to the executioner"). Exercise: the one-line dictionary algebra
+students can own. Discovery chronology: after
+`GR-1_the_one_formula.md`. Book-outline: gravitation part, second.
+Remaining planned: chapters 3–4.
