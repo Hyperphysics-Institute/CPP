@@ -161,3 +161,36 @@ themselves + the two-sentence what-it-proves/what-it-doesn't drill.
 Discovery chronology: after
 `GR-1c_the_black_hole_that_was_already_there.md`. Book-outline:
 gravitation part, third. Remaining planned: chapter 4.
+
+## GR-arc addendum 5 (Patch 3314, 20 Aug 2026) — W-C COMPLETE
+
+**New chapter:** `GR-1d-h_the_bestiary.md` — chapter 4 of the
+five-chapter plan (GR-1d/e/f/g/h). Field-guide framing with the
+post-RCORE twist stated up front: "the field trip re-identified the
+animal" — every creature re-catalogued as a horizonless solid. The
+spinner (stirred broadcast; Lense–Thirring/GP-B fenced-verified; the
+Kerr bound as a mail-speed limit WITH the dated horizon-evaluation
+caveat taught as audit honesty; charge folded in as a variation, not a
+species). The amplifier (the slow surfer shoved by the sweep; 29.3%
+bound; "file this creature — the cliffhanger is built out of it").
+The echoer (reflectivity DERIVED — full registers + stable balance;
+the corrected closed form 2.15 ± 0.14 ms at 5%, 465 Hz IN-band;
+"archived data can convict this theory"). The remnant (the entry left
+honestly blank: what survived — census logic, promoted stability
+theorem — vs the well-posed unknown of surface emission; "a field
+guide that admits 'diet: unknown' is worth more than one that invents
+a diet"). Cliffhanger: the ergoregion instability as the gain loop
+with no drain; the student-portable formulation "Can a spinning
+mirror the size of a city, compressed to the absolute limit of space
+itself, hold itself together?" CHS ethics movement 4: the discipline
+of the honest blank + file your dangers where critics look. Exercise:
+the 30 M_⊙ delay computation against the LIGO band + a field-guide
+entry in honest-blank style. Discovery chronology: after
+`GR-1i_four_ways_the_sky_said_yes.md`, before
+`GR-1j_the_ledger_and_the_law.md`.
+
+**W-C IS COMPLETE: all five GR-arc chapters written** (1: Patch 3311,
+2: 3312, 3: 3313, 4: 3314, 5: 3272). The anthology's gravitation part
+is whole, reads in plan order, and carries the five-movement ethics
+sequence: construction → correction → claiming → the honest blank →
+the ledger and the law.

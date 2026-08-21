@@ -41,7 +41,19 @@ template).
    story); propagation exercise included.]**
 4. **"The Bestiary"** (GR-1f/1g/1h + 1d/1e) — rotation, charge,
    energy extraction, echoes, evaporation and the Planck remnant: what
-   the formula says about real black holes. [TO WRITE]
+   the formula says about real black holes. **[WRITTEN — Patch 3314,
+   `chapters/GR-1d-h_the_bestiary.md`, ~2,500 words, post-RCORE
+   throughout ("the field trip re-identified the animal"). The echoer
+   carries the amended 2.15 ± 0.14 ms / 5% / 465 Hz in-band numbers;
+   the remnant entry teaches the honest blank (GR-1e V1.1 re-opening);
+   cliffhanger = the ergoregion / spinning-mirror question, formulated
+   for students in one sentence. CHS ethics movement 4: the discipline
+   of the honest blank + file your dangers where critics look.]**
+
+**W-C STATUS: ALL FIVE CHAPTERS WRITTEN (Patch 3314).** Reading order
+1 → 2 → 3 → 4 → 5 as planned; the ethics sequence across the arc is
+now complete: construction (1) → correction (2) → claiming (3) → the
+honest blank (4) → the ledger and the law as the capstone ethic (5).
 5. **"The Ledger and the Law"** (GR-1j + the FE-1 arc) — the field
    equations from bookkeeping; the HALT finding and the corrigendum;
    Birkhoff relocated to the conservation law. **[WRITTEN — Patch
