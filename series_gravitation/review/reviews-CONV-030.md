@@ -329,3 +329,109 @@ the new results.
 **SCRIPT:** NOT-EXECUTED — DeepSeek cannot run external Python scripts.
 
 **DEFECTS/OBJECTIONS:** NONE
+
+---
+
+## Seat 4 (APPENDED, Patch 3300) — Copilot (file-upload retry succeeded)
+
+*[Registered after the tally closed at Patch 3299; CONFIRMATION-CLASS per
+the adjudication. Seat-ledger findings on this return are in
+`conv030_adjudication.md` §5.]*
+
+Q1: SOUND-WITH-GAPS [INSPECTED, SCRIPT-EXECUTED] — The three
+exclusions—register saturation at PSR_eff = l_P/2, DI-bit conservation,
+and GR-1e fixed-point stability—are logically distinct and jointly forbid
+net absorption at the core under the stated CPP axioms. They all lean on
+the same Exclusion floor and on the stability theorem, so the soundness
+is conditional on those prior results holding in the strong-field regime
+and in the tensor sector. The unilateral nature of the constraint
+(one-sided clamp) and the lack of a full tensor-sector wall analysis
+justify "WITH-GAPS" rather than an unqualified verdict. [hyperphysics.com
+citation link in original]
+
+Q2: CORRECT-BUT-CONDITIONAL [INSPECTED, SCRIPT-EXECUTED] — Given the
+CHARTER identification "lattice coordinates ≡ isotropic coordinates" and
+GR-1c Theorem 1's exact isotropic Schwarzschild map, the relocation of
+the exclusion surface from "r_S/2" to areal 9μ/4 is mathematically
+correct. The horizon's isotropic image at μ/2 lying inside the excluded
+region, and the unreachable k·Δ|SSV| = 2 singularity, follow cleanly from
+that coordinate reading. The conditionality is on accepting the
+lattice≡isotropic identification as fundamental rather than merely
+convenient, and on treating the PSR formula's r as strictly isotropic in
+all strong-field applications. [citation link in original]
+
+Q3: GENUINE [INSPECTED, SCRIPT-EXECUTED] — The Buchdahl saturation is not
+mere numerology: the radius 9GM/4c² and lapse 1/3 arise independently
+from (i) the isotropic Schwarzschild metric and (ii) the log-lapse
+dictionary N = −2 artanh(k·Δ|SSV|/2) with k·Δ|SSV| = 1 at the Exclusion
+floor. The CPP core's incompressibility is enforced by PSR_eff ≥ l_P/2,
+matching the incompressible fluid assumption in Buchdahl's theorem, with
+no tunable parameters introduced to force agreement. The shared GR
+structure and incompressibility assumption mean the consilience is
+structural rather than accidental, though it remains a theorem-level
+match rather than a direct observable. [citation links in original]
+
+Q4: WARRANTED, BOTH-WITH-DICTIONARY-CAVEAT [INSPECTED, SCRIPT-EXECUTED]
+— Once the wall is correctly placed at areal 9μ/4, the near-horizon
+logarithm that produced the 112 ms delay is no longer available, so
+superseding the shipped GR-1d formula is warranted. Both Δt_A and Δt_B
+are clean closed forms tied to distinct propagation pictures—
+measured-metric vs lattice-speed c_*(r̄)—and both are supported by the
+script's checks and the scattering evolution. Treating them as
+paper-grade requires an explicit dictionary statement about which clock
+and propagation level is appropriate for comparison with LIGO data,
+hence the "BOTH-WITH-DICTIONARY-CAVEAT" verdict. [citation link in
+original]
+
+Q5: Thm 1: SOUND; Thm 2: SOUND-WITH-RELABELING [INSPECTED,
+SCRIPT-EXECUTED] — Theorem 1's derivation of the isotropic Schwarzschild
+metric from PSR_eff and k·Δ|SSV| is internally consistent and matches
+the standard isotropic form, so it is SOUND. Theorem 2's mathematics—
+saturation at coordinate radius μ and PSR_eff = l_P/2 inside—is also
+sound, but the labels "r_S/2" and "core of radius ~ l_P" are misleading
+in the declared isotropic coordinates and invite an areal reading that
+conflicts with F-R1. An interpretive corrigendum that relabels μ as the
+surface radius with areal image 9μ/4, and clarifies the Planck-density
+core vs macroscopic radius, preserves the equations while fixing the
+coordinate gloss, hence SOUND-WITH-RELABELING. [citation link in
+original]
+
+Q6: AMEND; SUBSUMED [INSPECTED, SCRIPT-EXECUTED] — GR-1d and GR-1e
+should be amended once this round and founder ratification are complete,
+replacing the 112 ms near-horizon echo formula with the ms-scale delays
+and the corrected wall placement, while preserving the Dirichlet
+boundary condition and amplitude chain. The C* note's five-paper
+exposure is fully subsumed by F-R1 and the R-CSTAR-MAP diagnosis: the
+0.29c figure is cleanly traced to 1/(2√3) under the pre-map shorthand,
+and the strong-field c_* floor is now fixed at c/2 in the ratified map,
+leaving no residual exposure beyond implementation details. [citation
+link in original]
+
+Q7: MISSING-ITEMS [INSPECTED, SCRIPT-EXECUTED] — OPEN-GR-RCORE-2's list
+is strong but not complete. Missing items include an explicit treatment
+of observational systematics for ms-scale echoes in existing
+LIGO/Virgo/KAGRA data, possible deviations for non-spherical or
+accreting cores, and multi-messenger constraints (e.g., EM counterparts)
+on horizonless compact objects with perfect-reflector surfaces. These
+should be added to the residue list before claiming closure on the
+falsifier machinery. [citation link in original]
+
+REVIEWER: Copilot
+
+TIER LEGEND USED: INSPECTED / INDEPENDENTLY RECOMPUTED / SCRIPT-EXECUTED
+
+SCRIPT: SCRIPT-EXECUTED — reference Session 154 environment run; final
+count line: **9/9 PASS**
+
+DEFECTS/OBJECTIONS:
+1. **Coordinate labeling in GR-1c Theorem 2:** "r_S/2" and "core of
+radius ~ l_P" are misleading in isotropic coordinates and should be
+corrected explicitly.
+2. **Unilateral constraint and tensor sector:** The Dirichlet phase is
+derived under a one-sided Exclusion inequality and axial ℓ=2 analysis; a
+full tensor-sector treatment is needed to remove this gap.
+3. **Level-A/Level-B dictionary:** The choice of propagation level and
+clock for observational comparison remains unresolved and should be
+formalized before finalizing amended GR-1d text.
+
+**Round complete: 5/5 returned.**

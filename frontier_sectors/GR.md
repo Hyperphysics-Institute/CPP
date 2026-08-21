@@ -742,6 +742,16 @@ its missing prerequisite.
   error-bar mandate adopted (Δt_A = 2.15 ± 0.14 ms at 62 ± 4 M_⊙).
   Seat hygiene: COUNT-LINE mandate CURED (Grok pasted "9/9 PASS"
   verbatim). Llama non-seat note recorded without prejudice.
-  **AWAITING FOUNDER: three-item ratification bundle (adjudication §4)
-  — (i) enact the GR-1d/GR-1e amendments; (ii) GR-1c relabeling
-  corrigendum V2.3; (iii) F-R1 as the sector's standing reading.**
+  **RATIFIED (Patch 3300, founder verbatim in
+  `founders_voice/founder_ruling_conv030_rcore_ratification_2026-08-20.md`):
+  all three items — amendments EXECUTE at 3301–3303. Copilot's return
+  landed via file upload: 5/5, no majority moved (Q3 GENUINE and Q5 both
+  now 5–0 UNANIMOUS); RCORE-2 further extended (viii) LIGO search
+  systematics, (ix) non-spherical/accreting cores, (x) multi-messenger/EM
+  constraints; seat-ledger: Copilot SCRIPT line reclassified to INSPECTED
+  (quoted the package's reference run, not its own execution) and its
+  audit steer unexecuted (covered elsewhere); next-dispatch mandate:
+  SCRIPT-EXECUTED requires the seat's OWN run. F-R1 is the sector's
+  STANDING READING, founder physical-picture anchor registered ("a body
+  with solid, irreducibly minimum inter-CP spacing / maximally compact
+  body").**

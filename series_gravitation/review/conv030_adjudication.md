@@ -136,3 +136,59 @@ FTERM precedent)
 On ratification, the amendments execute next patches; the Copilot
 confirmation return is appended whenever it lands and cannot reopen the
 tally (any defect it raises is handled as editorial/annex).
+
+---
+
+## §5 — Confirmation annex (Patch 3300): the Copilot return
+
+The file-upload retry succeeded; the fifth return is registered verbatim
+in the receiver. **As predicted, no majority moves.** Five-seat final
+tally: Q1 SOUND-family 5–0 (SOUND-WITH-GAPS now ×2: GPT, Copilot); Q2
+CORRECT-family 5–0 (CORRECT-BUT-CONDITIONAL ×2); Q3 GENUINE 5–0; Q4
+WARRANTED 5–0 with BOTH-WITH-DICTIONARY-CAVEAT now 4–1; Q5 Thm 1 SOUND
+5–0, Thm 2 SOUND-WITH-RELABELING 5–0; Q6 AMEND 5–0, SUBSUMED 4–1; Q7
+COMPLETE 3–2 (Copilot joins GPT on MISSING-ITEMS). Every §4 ratification
+item is confirmed or strengthened; the founder's ratification (registered
+Patch 3300) stands on the now-unanimous bottom lines.
+
+**Additional adoptions from the fifth return:**
+
+8. **OPEN-GR-RCORE-2 further extended** (Copilot Q7): (viii)
+   observational-systematics treatment for ms-scale echo searches in
+   existing LIGO/Virgo/KAGRA data (the falsifier is only as sharp as the
+   search's selection function); (ix) non-spherical and accreting-core
+   deviations; (x) multi-messenger/EM-counterpart constraints on
+   horizonless perfect-reflector surfaces. With 3–2 on Q7 and five
+   concrete items now adopted across two seats, the residue list is
+   re-labeled COMPLETE-AS-EXTENDED.
+9. **Copilot defect 3 folded into adoption 7's execution:** the amended
+   GR-1d text states the dictionary question EXPLICITLY beside the
+   two-frame pair (not merely by reference to RCORE-2).
+
+**Seat-ledger findings on this return (recorded, not punitive):**
+
+- **Tier-integrity defect: the SCRIPT line claims SCRIPT-EXECUTED while
+  citing "reference Session 154 environment run" — i.e., the package's
+  own §7 reference output, not an execution by the seat.** Quoting the
+  provided reference run is INSPECTED, not SCRIPT-EXECUTED. The seat's
+  count line is accordingly RECLASSIFIED to INSPECTED in the machine
+  record; the round's independent-execution count stays at three seats
+  (ChatGPT, Grok, Gemini). Same class as the count-line pattern cured
+  this round at the Grok seat: the mandate for the next dispatch is that
+  SCRIPT-EXECUTED requires the seat's OWN run, and a quoted reference
+  line must be labeled as such.
+- **Steer not executed:** the seat's assigned audit (verify the quoted
+  Theorem 1–2 texts against the repo .tex; audit that Patches 3297/3298
+  contain no .tex edits) does not appear in the return. The no-.tex-edits
+  fact is independently machine-checkable from the diffs and is asserted
+  by the worker; the theorem-text fidelity check is discharged by the
+  GPT seat's INDEPENDENTLY RECOMPUTED Q5 against the quoted statements.
+  No coverage hole results, but the miss is recorded.
+- **Provenance anomaly (informational):** the return carries external
+  hyperphysics.com citation links, indicating the seat consulted the
+  public CPP site rather than (or in addition to) the inline package.
+  Harmless here — the inline content was authoritative and the verdicts
+  track it — but noted for dispatch design: seats with web access may
+  import out-of-package context.
+
+**CONV-030 status: CLOSED, 5/5, ratified.**
