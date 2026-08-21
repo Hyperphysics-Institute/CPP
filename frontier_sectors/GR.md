@@ -831,6 +831,28 @@ its missing prerequisite.
   surface-superradiance channel (censorship of an exterior ergoregion
   does not dispose of rotating-boundary amplification — GPT closing
   caution, adopted verbatim).**
+  **LEG A DISCHARGED (Patch 3333, Session 156, verify 9/9, FAST
+  4/4):** at ℓ=2, χ=0 the eikonal comb does NOT survive — the
+  Buchdahl-wall cavity (~3.5M) supports a SINGLE top-of-barrier
+  resonance per parity (RW ω₁=0.4535 → **236 Hz @ 62 M_⊙**, τ=21.5
+  GM, Q=4.9; Zerilli 0.4513, 0.5% split; TD cross-validated −1.0%);
+  persistent signature = resonant reprocessing + early broadband
+  transients at the eikonal spacing. Kerr mode-fate recon (geodesic
+  grade, χ=0.68): the ENTIRE corotating (ℓ,ℓ) branch FULLY-BURIED
+  (μ_crit=0.774 vs μ(ℓ,ℓ)≥0.8) — burial sharpens — with thin (2,2)
+  margin (0.026) and mode-resolved onset χ=0.665 (vs eikonal 0.555).
+  A provisional "+1% comb correction" from a failed TD instrument
+  was RETRACTED (wall-shift test + no-wall control; five-dead-end
+  trail in the record §3). GR-2 V1.0 NOT contradicted — the CONV-033
+  eikonal scoping held. Record:
+  `rcore_derivation/3333_rcore3_legA_finite_ell.md`. **REMAINING =
+  LEG B, the lane's sharpest question: does the longer Kerr
+  retrograde cavity (wall 2.267M → retro ring 3.71M) restore a
+  multi-resonance comb? Decides PRED-O-39's refined search target.**
+  Plus items (b) co-rotation BC and (d) Zel'dovich bounds above.
+  PRED-O-39/predictions.md untouched pending Leg B; f₁=236 Hz
+  registered unminted. GR-2 amendment queue (additive): Leg-A
+  pointer, onset 0.665, thin-margin caution.
 - **OPEN-GR-RCORE-4 (minted Patch 3325, from the CONV-032 GPT
   dissent): DERIVE THE ROTATIONAL CENSUS FUNCTIONAL FROM MICROSCOPIC
   REGISTER DYNAMICS.** Two conjuncts, both currently assumptions of
