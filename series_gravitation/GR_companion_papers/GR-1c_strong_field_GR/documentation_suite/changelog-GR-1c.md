@@ -99,3 +99,16 @@ review-coverage map's oldest debt discharged). Founder-ratified 20 Aug
 - Header comment corrigendum block; version line → 2.3.
 
 **Compile:** pdflatex ×2, 0 errors, no undefined refs, 15 pages.
+
+## V2.3.1 — 20 August 2026 (Patch 3305) — W-D status notes (open-problem section)
+
+Dated status notes on 4 of 5 open-problem items per the fixed W-D form
+(reasoning/3294.md; original text verbatim, notes inline): op:kerr
+(delivered at consistency level by GR-1f/GR-1g; op:allorders open;
+RCORE-2(iv) Kerr caveat), op:24cell (RETIRED GEOMETRY — A1 ruling:
+regular dodecahedron; SPIN-3 supplies the spectrum; discrete-to-continuum
+proof remains open against T-1), op:hawking (partially delivered by
+GR-1e, then re-opened in surface form by V1.1/CONV-030), op:echoes
+(delivered by GR-1d, corrected by V3 — this item's own r_S/2 gloss was
+the corrected defect). op:einstein untouched (correct as amended at
+3262). Compile: 0 errors, 15pp.
