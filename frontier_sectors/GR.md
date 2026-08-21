@@ -773,3 +773,25 @@ its missing prerequisite.
   GR-1f/g/h, now with the adopted execution plan (per-paper dependency
   audit for hidden horizon/interior assumptions FIRST — CONV-030
   adoption 4); OPEN-GR-RCORE-2 items i–x.
+- **W-D COMPLETE (4/4) AND THE FIVE-PAPER C* PASS COMPLETE (Patches
+  3305–3309):** GR-1c V2.3.1 (notes on op:kerr / op:24cell /
+  op:hawking / op:echoes; op:einstein untouched — op:hawking honestly
+  partially-delivered-then-RE-OPENED, op:echoes
+  delivered-and-CORRECTED); GR-1f V1.1 + GR-1g V1.1 (W-D merged with
+  the dependency audit — thm:kerr_bound and the KN bound flagged twice
+  over: horizon evaluation + c-vs-c_* ceiling, with GP-B/LT and the
+  exterior KN/RN structure explicitly fenced unaffected; both
+  correction-order estimates declared unverified against the amended
+  baseline); GR-1h V1.1 (delivered-input-NOT-closed discipline on the
+  shared-bottleneck problems; the "Planck-core bomb" re-framed as the
+  ergoregion instability of a horizonless spinning perfect reflector,
+  flagged LOAD-BEARING for spinning-object viability); GR-1b V3.6
+  (addendum to the week-overtaken 3294 note, PLUS a defect: the 3293
+  figure repair never survived a clone — .gitignore's blanket *.pdf
+  silently excluded the figure PDFs; fixed with the principled
+  exception !**/figures/*.pdf and a clean corpus scan; new detection
+  rule: after committing generated assets, verify them in
+  git show --stat, not on disk). All five compile gates 0 errors.
+  ARC STATE: every gravitational paper post-RCORE consistent — three
+  amended (GR-1c/1d/1e), four noted (GR-1b/1f/1g/1h), three
+  untouched-by-design (GR-1a/1i/1j).
