@@ -7,6 +7,28 @@
 
 ## Quantum Mechanics (QM) — 7 problems (6 QM + 1 quantum-optics phenomena)
 
+### OPEN-QM-9: Singlet-State Preparation/Selection from Moment Dynamics (minted Patch 3317, CONV-031 adoption 1)
+
+Derive from CPP Moment dynamics that a total-spin-zero preparation
+necessarily instantiates the non-separable singlet amplitude structure
+— the gap between reproducing entanglement once |ψ−⟩ is supplied
+(QM-3's operational theorems, now 5-seat-confirmed) and deriving why
+the substrate generates |ψ−⟩. Distinct from the SD correlation-function
+items (K₀(λ), OPEN-SD-1..4): this is a PREPARATION question. Source:
+CONV-031 GPT seat (Q6 + defect 1). Dependencies: FI-QMRG-1 (ratified),
+AP-4 conservation; natural companions OPEN-SD-1, OPEN-QM-7.
+
+**Standing calibrations from CONV-031 (adoptions 2/3/5):** (a) the
+Nexus bearer label stays INTERPRETIVE in all prose until
+OPEN-SD-1..4/OPEN-QM-9 close — never presented as the mechanism
+derivation; (b) the ε-hierarchy may not be quoted as an independent
+derivation of Bell statistics pending K₀(λ), and the smallness of ε is
+itself underived; (c) "no super-quantum violations" is a prediction of
+the ratified OPERATIONAL sector, not a substrate-derived bound.
+**Residue extensions (adoption 4):** explicit ε falsifier statement
+(cross-filed SD); multipartite entanglement in the CPP ontology;
+contextuality/nonlocality literature bridge.
+
 ### QM-3 modernization (Patch 3315, 20 Aug 2026 — founder query: "Have we properly written about and justified entanglement?")
 
 **Audit answer: YES at theorem level, with two modernization debts, both
@@ -29,7 +51,17 @@ mathematically forced). (2) Review basis is PRE-CONV-ERA (internal +
 same coverage-debt class GR-1c Thms 1–2 carried before CONV-030.
 DISCHARGE VEHICLE: CONV-031 (dispatched Patch 3316), covering the three
 theorems + the ε-hierarchy reconciliation + post-re-ground consistency,
-under the new OWN-RUN mandate. Substrate-level residue honestly held:
+under the new OWN-RUN mandate. **DISCHARGED Patch 3317: 5/5
+same-session; T-A/T-B/T-C SOUND 5–0 each; Nexus framing
+ADEQUATE-AT-LEVEL 5–0; retraction ADEQUATE 5–0; ε-hierarchy COHERENT
+5–0 + sweeps CLEAN 5–0; the founder's question answered
+PROPER-WITH-NAMED-DEBTS 4–1 (minority: PROPER outright); coverage
+YES 5–0. OPEN-QM-9 minted; five calibrations registered; seat ledger:
+Grok exemplary own-run 7/7, Copilot CURED (honest INSPECTED), Gemini
+seat identity mislabel +1, GPT honest NOT-EXECUTED with the
+separate-.py dispatch-design note, DeepSeek credited for a visible
+self-caught recomputation error. No paper edits required — QM-3 V3.2
+stands. Records: `conv031_adjudication.md` + `reviews-CONV-031.md`.** Substrate-level residue honestly held:
 the SD-series correlation machinery (K₀(λ), OPEN-SD-1..4) remains open
 — scope, not defect.
 
