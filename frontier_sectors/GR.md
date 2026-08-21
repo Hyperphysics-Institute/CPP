@@ -585,3 +585,75 @@ derivation.
   the 3276 pattern. Scope is now known precisely from the W-B findings —
   **GR-1b, GR-1c, GR-1f, GR-1g only**; GR-1a, GR-1d, GR-1e, GR-1h need
   nothing. Bounded at four papers. Recommended before the Zenodo wave.
+
+---
+
+## OPEN-GR-PPP-1 W-D: **OPENED** (Patch 3294, Session 153) — 1 of 4 done
+
+**Executed under PD-006.** W-D was flagged to the founder at Patches 3283
+and 3285 and left with him both times; he replied "proceed" both times
+without addressing it. Process and sequencing are delegated, so
+continuing to ask would itself have been the violation. Executed before
+the deposit wave because the GR-1c `op:24cell` item states a **retired
+geometry** and Zenodo DOIs are permanent.
+
+**Form (fixed for all four rows).** These papers do **not** contradict
+themselves — they were accurate when written and were overtaken by later
+work. So nothing is rewritten: original item text retained **verbatim**,
+a dated bracketed note appended beside it. Precedent is GR-1b's own V3.3
+calibration label (Patch 3204), which sits inline in exactly this shape.
+
+**Three rules, held on every note:**
+1. **Name the delivering companion AND its limits.** A note reading only
+   "DELIVERED by GR-1c" would convert an honest open problem into an
+   unqualified claim — the failure W-D exists to prevent, not commit.
+2. **Never upgrade a still-open item.** GR-1b item (1) reads STILL OPEN
+   first, "substantially advanced" second.
+3. **Touch only what needs it.** Three of GR-1b's six items; the
+   cosmological-constant item was left alone because its V3.3
+   calibration label is better hedged than any note would be.
+
+**Row 1 — GR-1b V3.5 (Patch 3294): DONE.** Items (1) STILL OPEN /
+advanced (`op:einstein`); (2) DELIVERED by GR-1c Thms 1–2, **with the
+note recording that neither theorem has been externally reviewed**;
+(3) DELIVERED by GR-1f/GR-1g, carrying forward `op:allorders`.
+
+**Rows 2–4 REMAINING: GR-1c (do first — the retired-geometry item),
+GR-1f, GR-1g.** Patches 3295–3297. Design rationale in
+`reasoning/3294.md`; scope is fixed by the W-B findings — **no
+re-survey needed.**
+
+---
+
+## Separate finding, Session 153 — **GR-1b's figures had NEVER rendered** (Patch 3293)
+
+Found by the pre-edit baseline compile opening W-D. **Two compounding
+defects, both from W-A2 (Patch 3274):** the three figures exist **only
+as `.svg`** while the `.tex` was switched to `graphicx` (which
+`pdflatex` cannot read SVG with), **and** no `\graphicspath` was set
+while `\includegraphics` names bare filenames against assets in
+`figures/`. Either alone suffices. The paper had never rendered its
+figures — not before W-A2 (no files) nor after (wrong format, wrong
+path) — compiling with three `pdftex.def` errors and three draft-mode
+placeholder boxes.
+
+**W-A2 reported "compile: 0 errors" for this paper.** A gate reporting
+clean on a document rendering three empty boxes is itself worth
+examining, and is flagged here for the PPP program: **any paper claiming
+figures should have its RENDERING verified, not its `.tex` inspected.**
+
+**Worker error owned:** the Patch-3283 suite pass recorded the W-A2
+entry as "matplotlib → PDF, committed." The repository contained no
+PDFs. The detail was reconstructed from the W-A2 narrative rather than
+the file listing and stated as fact in a changelog whose purpose is to be
+the reliable record; the `STATUS: reconstructed` markers did not catch it
+because the error sat in a *confident* sentence. **Process finding: when
+reconstructing a patch's effect, check the ARTIFACTS, not the
+narrative.** Sentence amended in place, correction named.
+
+**Fixed:** SVGs converted to PDF (cairosvg), committed alongside;
+`\graphicspath{{figures/}}` added. Baseline 3 errors / 16 pp / 267 KB →
+**0 errors / 14 pp / 543 KB**. The page count *falling* while size
+doubles is the proof: draft placeholder boxes ran taller than the real
+figures. One `natbib` undefined-citation warning is **pre-existing**,
+unchanged, flagged for a future pass rather than silently absorbed.
