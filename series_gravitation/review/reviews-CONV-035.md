@@ -37,35 +37,21 @@ uncertainty language EARNED?"); Copilot is asked to return the
 skeleton without a chat wrapper and is reminded that review seats do
 not execute amendments.
 
-**Status (Patch 3343): 4/5 REGISTERED — EIGHT OF NINE QUESTIONS
-ADJUDICATED FINAL; Q6 HELD OPEN AT 2–2.**
+**Status (Patch 3344): 5/5 REGISTERED — ROUND COMPLETE AND
+ADJUDICATED FINAL.**
 
-Second pass delivered Copilot (Seat 4) and DeepSeek (Seat 5) clean.
-**The Seat 1 (GPT) slot delivered the SAME stale CONV-034 return a
-second time, byte-identical to the first.** Archived again, not
-counted. Two consecutive stale deliveries from one slot is a
-DELIVERY-CHANNEL anomaly, not a seat-behaviour one — the seat is
-almost certainly answering from a context still holding the previous
-round's package.
+The third delivery attempt to Seat 1 (GPT), from a fresh context,
+returned a genuine CONV-035 review. The delivery-channel diagnosis was
+correct: the cure was channel-side, and the seat's own work is
+unaffected — the return is the most consequential of the round.
 
-**Eight questions are FINAL on four returns** — Q1, Q2, Q3, Q4, Q5,
-Q7, Q8, Q9a, Q9b all stand at 4–0 in their verdict families, and no
-admissible fifth vote can flip a 4–0 (CONV-030 precedent).
-
-**Q6 is DEADLOCKED 2–2 and stays open:** Grok CORRECT, DeepSeek
-CORRECT, Gemini DEFENSIBLE-BUT-SHOULD-HAVE-WAITED, Copilot
-DEFENSIBLE-BUT-SHOULD-HAVE-WAITED. Q6 is the question whose binding
-rule would establish a standing constraint on the worker's own future
-practice, and the one seat still missing is the one steered hardest
-to rule against the worker. It is decided by GPT or not at all.
-
-**CONSEQUENCE ADOPTED IMMEDIATELY, WITHOUT WAITING FOR Q6:** with two
-seats holding that the worker should have waited for the round before
-enacting a correction, the worker is NOT enacting this round's adopted
-defects mid-round. The ℓ_crit ±1 edit and the complete-sweep item
-below are QUEUED, not executed, until Q6 closes. Enacting adopted
-edits while the panel is split on precisely that behaviour would
-answer the criticism by repeating it.
+It resolves Q6 **in the worker's favour, 3–2** — and simultaneously
+finds that **the worker committed the same quantifier defect a second
+time, inside the patch that diagnosed it** (check 6 described a
+selected-ℓ sweep as "the whole (ℓ,m) grid"). Both facts are recorded
+with equal prominence. Fixed at the computation, not the sentence: the
+sweep is now exhaustive over a declared domain (165 modes = all (ℓ,m)
+with ℓ = 2..12).
 
 Registered and counted: Grok (Seat 2), Gemini (Seat 3), Copilot
 (Seat 4), DeepSeek (Seat 5).
@@ -303,3 +289,47 @@ to answer the wrong questions twice; they are a context still holding
 the previous round's package, or a cached response. The cure is
 channel-side: a genuinely fresh context/session for that seat, with
 the CONV-035 package as the first content it sees.
+
+---
+
+## Seat 1 — ChatGPT (GPT-5.6 Sol) — REGISTERED, COUNTED (third delivery attempt)
+
+**Registration note (Patch 3344):** Delivered on the third attempt
+from a fresh context, confirming the delivery-channel diagnosis. The
+seat used its OWN tier legend rather than the package's — a deviation
+recorded without prejudice, since its tiers (analytic / executable /
+inherited / process) map cleanly and it own-ran the script with a
+verbatim count line.
+
+**The round's decisive return.** It rules Q6 **CORRECT** — resolving
+the 2–2 deadlock in the worker's favour, from the seat steered
+hardest to rule against the worker, which is the strongest form that
+verdict could have taken. It also rules **Q4 SUGGESTIVE-NOT-ESTABLISHED**
+(vindicating the adjudication's refusal to bank that unanimity),
+**Q5 ADEQUATE-BUT-INCOMPLETE**, and **Q8 ITEMS-FOUND with three
+items** — the first non-NONE-FOUND scope-audit verdict, and the one
+the worker registered at 3343 as the round's weakest unanimity.
+Its defect 1 is the sharpest finding of the session: the worker
+repeated the quantifier error inside the corrective patch.
+
+Also notable in the worker's disfavour-turned-favour: it explicitly
+records that its own CONV-034 low-ℓ objection **weakens** against this
+ladder result, because the fixed-Q correspondence is more credible at
+ℓ ≳ 7 than at ℓ = 2 — the seat conceding an argument that cuts toward
+the worker, unprompted.
+
+### Verbatim paste
+
+REVIEWER: GPT-5.6 Sol
+TIER LEGEND USED: Tier 1 = direct mathematical/analytic consequence; Tier 2 = independently executable numerical result within stated model; Tier 3 = model-dependent/inherited approximation or phenomenology; Tier 4 = reasoning/process judgment
+Q1: CONFIRMED-WITH-CAVEATS [Tier 2/3] — My own run reproduces the reported ladder and crossings: χ=0.68 gives Φ/π = 0.246→1.222 with increment 0.1220 ± 0.0002 and Dirichlet ℓ_crit=7, while χ≈0 gives ℓ_crit=10. But ℓ_crit=7 is not an invariant physical integer independent of boundary phase: at χ=0.68 ℓ=6 is already Φ/π=0.734, only 0.016π below the Dirichlet threshold, so modest phase/convention displacement can move the onset by one multipole. The record's explicit ±1 qualification is therefore necessary. The fixed-Q/eikonal correspondence is also materially more credible at ℓ≳7 than at ℓ=2, so my CONV-034 low-ℓ objection weakens rather than strengthens against this ladder result.
+Q2: SOUND [Tier 2/3] — The computed monotonic, nearly linear growth supplies the missing finite-ℓ→large-ℓ bridge and is qualitatively the behavior required for recovery of the eikonal comb; however, the script itself only computes finite ℓ through 10/12, so "ℓ→∞" is an asymptotic interpretation supported by the observed trend and underlying eikonal construction, not numerically demonstrated to infinity.
+Q3: SOUND-WITH-CAVEATS [Tier 1/2] — Given the stated radial equation and Dirichlet boundary grade, Ω_w does not enter R(r;ω), and the frame round-trip test is algebraically expected and numerically reproduced; thus count-neutrality follows at that grade. This does not establish rotation-neutral line positions or general reflection-phase neutrality, which the package correctly leaves open.
+Q4: SUGGESTIVE-NOT-ESTABLISHED [Tier 2/3] — The own-run 112-mode scan reproduces zero dangerous modes, but "across the whole (ℓ,m) grid" overstates what was actually swept: all m are scanned only for selected ℓ={2,3,4,6,7,8,10,12}, at χ=0.68, and only through ℓ=12. The empirical pattern is strong and mechanistically intelligible, but a structural exclusion requires either an analytic inequality proving the exposed/trapped/superradiant sets disjoint or a genuinely exhaustive declared domain scan.
+Q5: ADEQUATE-BUT-INCOMPLETE — The central correction is adequate: the all-ℓ generalization is withdrawn and low-ℓ scope restored. But the replacement sentence itself embeds "where ringdown excitation is negligible," which is explicitly uncomputed and load-bearing; that clause must be visibly qualified as inherited/pending OPEN-GR-RCORE-3(e), not read as another established result. Also, completeness cannot be established from the two enacted locations alone without the requested corpus-wide quantifier audit.
+Q6: CORRECT — I would not require a known false/over-broad statement to remain live merely because a panel previously ratified it. Immediate strictly weaker correction, preservation of the superseded wording, and a promptly owed retrospective audit is the safer governance rule; waiting would knowingly preserve misinformation rather than protect preregistration.
+Q7: CORRECTLY-SCOPED — Once high-ℓ trapped ladders exist, suppression of their observational excitation becomes load-bearing for the observable "no-comb" prediction; explicitly opening rather than assuming the excitation budget is exactly the correct disposition. It must remain an unresolved dependency until quantitatively discharged.
+Q8: ITEMS-FOUND — (1) Chain/script G says "across the whole (ℓ,m) grid" although the actual domain is selected ℓ values through 12 at χ=0.68; replace with that explicit computed domain unless analytically extended. (2) Chain D's "N_trapped grows without bound with ℓ" exceeds the finite numerical sweep unless explicitly tagged as the eikonal/asymptotic inference rather than a computational finding. (3) The narrowed prediction's "where ringdown excitation is negligible" needs the qualifier "inherited from standard phenomenology; OPEN-GR-RCORE-3(e), not yet computed here."
+Q9a: PROPER-WITH-REVISIONS  Q9b: RESTATE-REQUIRED — Leg C correctly discovers and repairs the principal quantifier error and materially improves the finite/eikonal picture, but G contains the same class of quantifier defect the round was convened to prevent, and the observational narrowing presently states its uncomputed excitation premise too declaratively.
+SCRIPT: SCRIPT-EXECUTED (own run) + verbatim count line: FAST: all checks are FAST; FAST: 6/6 PASS
+DEFECTS/OBJECTIONS: 1. Check 6 calls selected ℓ values "the whole (ell, m) grid"; the code actually loops ell in (2, 3, 4, 6, 7, 8, 10, 12), albeit all integer m for each selected ell. This is a concrete scope/quantifier defect and should be corrected. 2. Check 2's executable predicate establishes monotonic finite-sample growth, not mathematically "N_trapped grows without bound"; the latter requires the asymptotic/eikonal premise. 3. ℓ_crit=7 should never appear without the Dirichlet/phase qualification or the already acknowledged approximately ±1 convention sensitivity.

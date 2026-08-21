@@ -904,7 +904,9 @@ its missing prerequisite.
   full-Teukolsky work. (2) **THE NARROWING:** Leg B computed ℓ ≤ 3
   only; running the exposed extreme-retrograde branch to ℓ = 12 shows
   Φ/π grows LINEARLY (≈ 0.122 ℓ at χ = 0.68, increments ±0.0002) and
-  crosses ¾ at **ℓ_crit = 7** for χ ≥ 0.30 (ℓ ≈ 10 at χ = 0) —
+  crosses ¾ at **ℓ_crit = 7 ± 1** for χ ≥ 0.30 (ℓ ≈ 10 ± 1 at χ = 0;
+  the ±1 is phase-convention sensitivity, CONV-035 adopted — never
+  quote the bare integer) —
   **trapped combs DO exist at high multipole**; "no comb at any spin"
   is withdrawn and replaced by "no comb at ℓ = 2, 3 (every spin
   tested), ladders from ℓ ≳ 7 where excitation is negligible."
@@ -915,8 +917,10 @@ its missing prerequisite.
   δ_w/2 + π/4, so the low-ℓ N = 0 needs δ_w > 0.235π = 42.3° — the
   DERIVED clamped-register δ_w = π clears it 4.3× (a Neumann-like end
   WOULD trap: the result is about the clamped wall, not geometry
-  alone). (5) **STRUCTURAL PROTECTION:** across 112 modes through
-  ℓ = 12, NO mode is simultaneously EXPOSED, TRAPPED, and
+  alone). (5) **STRUCTURAL PROTECTION** (regraded CONV-035:
+  ESTABLISHED-OVER-A-DECLARED-EXHAUSTIVE-DOMAIN, reconnaissance —
+  a structural exclusion needs the analytic disjointness inequality,
+  registered as work): over 165 modes = ALL (ℓ,m) with ℓ = 2..12, NO mode is simultaneously EXPOSED, TRAPPED, and
   SUPERRADIANT — trapped modes are extreme-retrograde (no window),
   superradiance-capable modes are corotating and BURIED; burial and
   trapping select disjoint regions of the (ℓ,m) grid, so censorship
@@ -927,7 +931,13 @@ its missing prerequisite.
   negligibility of ℓ ≳ 7 excitation in comparable-mass ringdown is
   INHERITED from standard phenomenology and computed NOWHERE in this
   corpus; it is now load-bearing for the observable prediction and
-  must be discharged. **CONV-035 OWED:** the panel ratified
+  must be discharged. **CONV-035 CLOSED 5/5 (Patch 3344): Q9b CLEAR
+  4–1, Q6 (the process call) CORRECT 3–2 — enact-on-discovery stands,
+  no standing constraint imposed, the two dissenting seats' reasoning
+  recorded as the minority position. Five revisions adopted, all
+  enacted. NEW OWED WORK: the corpus-wide quantifier audit across the
+  eleven GR papers, before the next flagship prediction move.**
+  (Superseded note:) **CONV-035 OWED:** the panel ratified
   (CONV-034) the generalization Leg C narrows. Enacted: PRED-O-39
   narrowed (3339), GR-2 V1.1 → V1.2 (3340).
 - **OPEN-GR-RCORE-4 (minted Patch 3325, from the CONV-032 GPT

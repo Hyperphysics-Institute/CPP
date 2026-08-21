@@ -1,4 +1,8 @@
-# CONV-035 adjudication — PARTIAL-FINAL v1.0 (Patch 3343)
+# CONV-035 adjudication — FINAL v2.0 (Patch 3344)
+
+*(v1.0, Patch 3343, was PARTIAL-FINAL at 4/5 with Q6 held at
+2–2. Retained in full below the v2.0 §§ for anti-erasure; the
+v1.0 hedges on Q4 and Q8 were VINDICATED by the fifth return.)*
 
 **Round:** RCORE-3 Leg C, and the narrowing of a claim this panel
 ratified at CONV-034. Package
@@ -144,3 +148,122 @@ resolve in favour of the party who benefits from it.
 - v1.0 (Patch 3343, 21 Aug 2026): PARTIAL-FINAL at 4/5. Eight
   questions closed; Q6 held at 2–2; two defects adopted and queued;
   Q4 and Q8 unanimities recorded with their honest weightings.
+
+
+---
+---
+
+# v2.0 FINAL (Patch 3344) — the fifth return closes the round
+
+Seat 1 (GPT) delivered on the third attempt from a fresh context. Its
+return resolves the deadlock, flips no majority, and produces the
+round's sharpest finding.
+
+## §A Final tally, all nine questions
+
+| Q | Verdict | Final tally | Change from v1.0 |
+|---|---|---|---|
+| Q1 ℓ-ladder | **CONFIRMED-WITH-CAVEATS** | 5–0 family (4 with-caveats) | GPT's own run reproduces the ladder exactly; the ±1 caveat is now carried by FOUR seats. |
+| Q2 eikonal recovery | **SOUND** | 5–0 | GPT adds the correct qualification: unbounded growth is an ASYMPTOTIC INFERENCE, not a computational finding. Adopted. |
+| Q3 co-rotation | **SOUND** | 5–0 family | Unchanged. |
+| Q4 structural protection | **ESTABLISHED** | 4–1 | GPT dissents SUGGESTIVE-NOT-ESTABLISHED. **The v1.0 refusal to bank this unanimity is vindicated**: the seat that recomputed independently is the one that dissents. Revision adopted (§B). |
+| Q5 narrowing | **ADEQUATE-AND-COMPLETE** | 4–1 | GPT dissents ADEQUATE-BUT-INCOMPLETE. No binding rule fires (INADEQUATE did not reach majority). Revision adopted (§B). |
+| **Q6 process call** | **CORRECT, 3–2** | CORRECT 3 (Grok, DeepSeek, **GPT**) / SHOULD-HAVE-WAITED 2 (Gemini, Copilot) | **RESOLVED.** The IMPROPER binding rule does not fire. |
+| Q7 RCORE-3(e) | **CORRECTLY-SCOPED** | 5–0 | Unchanged. |
+| Q8 scope audit | **NONE-FOUND 4–1 by tally — but ITEMS-FOUND governs the work** | 4–1 | **The v1.0 characterisation of this as the round's weakest unanimity is vindicated.** Q8's frozen rule adopts items REGARDLESS of tally; GPT's three items are ADOPTED (§B). |
+| Q9a / Q9b | **PROPER / CLEAR** | 4–1 | GPT: PROPER-WITH-REVISIONS / RESTATE-REQUIRED. Majority governs; the revisions are the adopted set, executed at enactment. |
+
+## §B Adopted revisions — ALL ENACTED at Patches 3344–3345
+
+Q6 resolving CORRECT unblocks the two queued items; GPT's three Q8
+items and its Q2/Q4/Q5 revisions join them. Five enactments:
+
+1. **ℓ_crit ±1 with the number, never the bare integer** (Grok
+   defect 1; GPT defect 3; four seats). Enacted in the script's own
+   detail line, the Leg-C record, PRED-O-39, GR-2, and GR.md.
+2. **THE QUANTIFIER DEFECT, FIXED AT THE COMPUTATION** (GPT defect
+   1). Check 6 described a selected-ℓ sweep as "the whole (ℓ,m)
+   grid" — **the same defect class this patch was written to
+   diagnose, committed inside it.** Not repaired by editing the
+   sentence: the sweep is now EXHAUSTIVE over an explicitly declared
+   domain — **165 modes = all (ℓ,m) with ℓ = 2..12 at χ = 0.68**,
+   verified by an assertion on the mode count itself
+   (`checked == Σ(2ℓ+1)`), so the claim cannot drift from its domain
+   again without failing the check.
+3. **Q2 asymptotic tagging** (GPT defect 2). "N_trapped grows without
+   bound" is restated as monotone, near-linear growth over the
+   computed range ℓ = 2..10, with unbounded growth labelled an
+   asymptotic inference from that trend plus the eikonal
+   construction.
+4. **Q4 regrade** (GPT Q4). Recorded as
+   **ESTABLISHED-OVER-A-DECLARED-EXHAUSTIVE-DOMAIN (reconnaissance
+   grade)**. A *structural* exclusion still requires the analytic
+   disjointness inequality — registered as work under
+   OPEN-GR-RCORE-3, and the honest target: prove
+   trapped ⇒ m ≤ −(ℓ−1) and superradiance-capable ⇒ buried.
+5. **Q5 excitation qualifier** (GPT Q8 item 3). The clause "where
+   ringdown excitation is negligible" carries, inline at every
+   occurrence, "inherited from standard ringdown phenomenology;
+   OPEN-GR-RCORE-3(e), not computed in this programme."
+
+Also adopted from Q5: completeness of the narrowing **cannot** be
+established from the two enacted locations alone. The corpus-wide
+quantifier audit across the eleven GR papers, recommended in v1.0
+§4, is **upgraded from available work to OWED work** before the next
+flagship prediction move.
+
+## §C The finding that matters most
+
+GPT's defect 1 is the session's sharpest result and it is against the
+worker: **the quantifier error recurred inside the corrective patch.**
+Leg C exists because Leg B stated a conclusion beyond its swept range;
+Leg C's own check 6 then stated a conclusion beyond its swept range.
+The lesson from 3339 — "the scope of a scan is part of the claim" —
+was written by the worker in the same patch that violated it.
+
+The structural response, beyond the wording fix: **the declared domain
+is now asserted in code.** Check 6 fails unless the number of modes
+examined equals Σ(2ℓ+1) over the declared range. A claim that can
+drift from its domain silently will eventually do so; a claim whose
+domain is a test cannot.
+
+## §D Seat ledger — final
+
+- **GPT (Seat 1):** delivery-channel anomaly cured at the third
+  attempt. **Fourth consecutive round as the seat whose dissent is
+  adopted.** Ruled Q6 in the worker's favour while delivering the
+  round's most damaging technical finding — and volunteered that its
+  own CONV-034 objection *weakens* against this result, an argument
+  cutting toward the worker that no one asked it to make. Used its
+  own tier legend; recorded without prejudice.
+- **Grok:** the round's other independent recomputation; source of
+  two adopted defects.
+- **Gemini:** identity holds, 4th round; sharpened mandate visibly
+  changed its review; voted against the worker on Q6.
+- **Copilot:** both CONV-034 anomalies cured; reviewed a partial
+  package (no code portion) through no fault of its own; voted
+  against the worker on Q6.
+- **DeepSeek:** identity holds, 3rd round; credited for visibly
+  declining an own-run claim it could not support.
+- **Panel-wide:** 5/5 identity clean. Two seats voted against the
+  worker on the process question and the worker did not break the
+  tie — the fifth seat did.
+
+## §E Disposition — FINAL
+
+**Q9b CLEAR 4–1 with all revisions adopted.** Q6 CORRECT 3–2: the
+worker's enact-on-discovery practice stands, and no standing
+constraint is imposed — but the two dissenting seats' reasoning is
+recorded as the minority position for future rounds to revisit.
+Enactments execute at Patches 3344 (script, record, predictions.md,
+registry) and 3345 (GR-2 V1.2 → V1.3). The corpus-wide quantifier
+audit is OWED before the next flagship prediction move.
+
+## CHANGELOG
+
+- v2.0 (Patch 3344): FINAL at 5/5. Q6 resolved CORRECT 3–2; five
+  revisions adopted; the quantifier defect fixed at the computation
+  with the declared domain asserted in code; corpus-wide audit
+  upgraded to OWED.
+- v1.0 (Patch 3343): PARTIAL-FINAL at 4/5, Q6 held at 2–2. Its
+  hedges on Q4 and Q8 were vindicated by the fifth return.

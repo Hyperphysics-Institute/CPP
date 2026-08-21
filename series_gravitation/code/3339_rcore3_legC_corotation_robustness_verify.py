@@ -205,15 +205,22 @@ check("1. THE LEG-C FINDING (overturns a shipped generalization): Phi grows "
       crit68 == 7 and crit00 == 10 and np.std(incs) < 0.01,
       f"chi=0.68: Phi/pi = {phis68[0]:.3f} (l=2) -> {phis68[-1]:.3f} (l=10), "
       f"increments {incs.mean():.4f} +/- {np.std(incs):.4f} per unit ell "
-      f"(LINEAR); ell_crit = {crit68} at chi>=0.30, {crit00} at chi=0. "
+      f"(LINEAR); ell_crit = {crit68} +/- 1 at chi>=0.30, {crit00} +/- 1 at "
+      f"chi=0 (the +/-1 is the Dirichlet/phase-convention sensitivity: at "
+      f"chi=0.68 ell=6 sits at Phi/pi = {phis68[4]:.3f}, only "
+      f"{0.75-phis68[4]:.3f} pi below threshold — CONV-035 adopted, "
+      f"quote the +/-1 with the number, never the bare integer). "
       f"Leg B computed ell<=3 only — its 'no comb at any spin' does NOT "
       f"generalize in ell and is NARROWED by this patch")
 
-check("2. THE CONSISTENCY WIN neither Leg performed: the eikonal comb is "
-      "RECOVERED as ell -> infinity, approached FROM BELOW — geometric "
-      "optics is the large-multipole limit, exactly as it must be",
+check("2. THE CONSISTENCY WIN neither Leg performed: over the COMPUTED "
+      "range ell = 2..10 the phase volume grows monotonically and nearly "
+      "linearly, the finite-ell behaviour required for recovery of the "
+      "eikonal comb as ell -> infinity (the unbounded-growth statement is "
+      "an ASYMPTOTIC INFERENCE from this trend plus the eikonal "
+      "construction, NOT a computational finding — CONV-035 GPT defect 2)",
       phis68[-1] > phis68[0] and all(np.diff(phis68) > 0),
-      f"N_trapped grows without bound with ell (Phi/pi ~ {incs.mean():.3f}*ell); "
+      f"monotone and linear over the computed range (Phi/pi ~ {incs.mean():.3f}*ell); "
       f"the eikonal picture was never WRONG — the physical low-ell modes are "
       f"simply far from its limit, which is why Legs A/B found no comb there")
 
@@ -257,8 +264,16 @@ check("5. ROBUSTNESS ENVELOPE for the observable (low-ell) prediction: the "
       f"no-comb result is a statement about the CLAMPED wall, not geometry alone")
 
 # ===================== Zel'dovich: the dangerous combination =====================
+# CONV-035 GPT defect 1, ADOPTED AND FIXED AT THE COMPUTATION, NOT THE
+# SENTENCE: the V1 of this check swept selected ell {2,3,4,6,7,8,10,12}
+# and described its domain as "the whole (ell,m) grid" — the SAME
+# quantifier defect this patch was written to diagnose, committed inside
+# it. The sweep below is now EXHAUSTIVE over the declared domain
+# ell = 2..ELL_MAX, all integer m, at chi = 0.68, and the claim states
+# that domain explicitly rather than "the whole grid".
+ELL_MAX = 12
 danger, checked = [], 0
-for ell in (2, 3, 4, 6, 7, 8, 10, 12):
+for ell in range(2, ELL_MAX + 1):
     for m in range(-ell, ell + 1):
         buried = (m / (ell + 0.5)) > 0.774          # Leg-A mu criterion
         wt, ph, n = census_ell(A, m, ell, RW, nw=180)
@@ -273,12 +288,15 @@ for ell in (2, 3, 4, 6, 7, 8, 10, 12):
             if pp and pp / np.pi >= 0.75 and w < m * OM_W:
                 danger.append((ell, m, float(w), m * OM_W))
                 break
-check("6. STRUCTURAL PROTECTION — the dangerous combination does not occur: "
-      "across the whole (ell, m) grid there is NO mode that is simultaneously "
-      "EXPOSED, TRAPPED, and SUPERRADIANT (the ergoregion-instability recipe "
-      "at finite multipole)",
-      len(danger) == 0,
-      f"{checked} modes examined through ell = 12: every TRAPPED mode is "
+check("6. STRUCTURAL PROTECTION over an EXHAUSTIVE, EXPLICITLY DECLARED "
+      "domain (ell = 2..12, ALL integer m, chi = 0.68): NO mode in that "
+      "domain is simultaneously EXPOSED, TRAPPED, and SUPERRADIANT (the "
+      "ergoregion-instability recipe at finite multipole). Grade: "
+      "reconnaissance — a STRUCTURAL exclusion would need an analytic "
+      "disjointness inequality or an unbounded domain (CONV-035, adopted)",
+      len(danger) == 0 and checked == sum(2 * l + 1 for l in range(2, ELL_MAX + 1)),
+      f"{checked} modes = ALL (ell,m) with ell = 2..{ELL_MAX} (complete, "
+      f"not sampled): every TRAPPED mode is "
       f"extreme-retrograde (m <= -(ell-1)), which has NO superradiant window "
       f"(m*Omega_w < 0); every mode with a superradiant window large enough "
       f"to reach trapping frequencies is CORO+ROTATING and therefore BURIED. "

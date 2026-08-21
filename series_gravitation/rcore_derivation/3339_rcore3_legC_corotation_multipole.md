@@ -15,14 +15,14 @@ Bohr–Sommerfeld phase **grows linearly in ℓ with no saturation**
 (Φ/π ≈ 0.122 ℓ at χ = 0.68; increments 0.1220 ± 0.0002), crossing the
 ¾ trapping threshold at a finite critical multipole:
 
-| χ | Φ/π at ℓ=2 | ℓ=6 | ℓ=7 | ℓ=10 | **ℓ_crit** |
+| χ | Φ/π at ℓ=2 | ℓ=6 | ℓ=7 | ℓ=10 | **ℓ_crit ± 1** |
 |---|---|---|---|---|---|
-| 0.00 | 0.180 | 0.467 | 0.539 | 0.755 | **10** |
-| 0.30 | 0.240 | 0.667 | 0.774 | 1.094 | **7** |
-| 0.68 | 0.246 | 0.734 | 0.856 | 1.222 | **7** |
-| 0.95 | 0.232 | 0.729 | 0.854 | 1.228 | **7** |
+| 0.00 | 0.180 | 0.467 | 0.539 | 0.755 | **10 ± 1** |
+| 0.30 | 0.240 | 0.667 | 0.774 | 1.094 | **7 ± 1** |
+| 0.68 | 0.246 | 0.734 | 0.856 | 1.222 | **7 ± 1** |
+| 0.95 | 0.232 | 0.729 | 0.854 | 1.228 | **7 ± 1** |
 
-**Trapped resonances — a comb — DO exist, for ℓ ≳ 7.** The corpus
+**Trapped resonances — a comb — DO exist, for ℓ ≳ 7 ± 1.** The corpus
 statements enacted from Leg B two patches ago ("the comb is NOT
 restored, at χ = 0.68 or at ANY spin"; PRED-O-39's amended row; GR-2
 V1.1's `rem:rcore3`) are **OVER-BROAD in ℓ** and are narrowed at
@@ -30,15 +30,20 @@ Patches 3339–3340. The correct statement:
 
 > **No trapped comb exists in the observationally dominant low
 > multipoles (ℓ = 2, 3 — N = 0 at every spin tested, checks 3);
-> trapped ladders switch on at ℓ ≳ 7 (ℓ ≈ 10 at χ = 0), where
-> ringdown excitation is negligible.**
+> trapped ladders switch on at ℓ ≳ 7 ± 1 (ℓ ≈ 10 ± 1 at χ = 0),
+> where ringdown excitation is negligible — that negligibility being
+> INHERITED from standard ringdown phenomenology, OPEN-GR-RCORE-3(e),
+> and NOT computed in this programme.**
 
 ## §2 THE OTHER HALF: this is also the consistency check neither Leg performed — and it VALIDATES the framework
 
 The eikonal (geometric-optics) comb is the ℓ → ∞ limit. If the finite-ℓ
 census had found N = 0 at *every* multipole, the two pictures would
 have been irreconcilable and something would have been wrong. Instead
-N_trapped grows without bound with ℓ, **approached from below**: the
+N_trapped grows monotonically and near-linearly over the COMPUTED
+range ℓ = 2..10, **approached from below** — the unbounded-growth
+statement being an asymptotic inference from that trend plus the
+eikonal construction, not a computational finding (CONV-035 adopted): the
 eikonal picture was never wrong, and the physical low-ℓ modes are
 simply far from its limit — which is exactly why Legs A and B found no
 comb there. Leg A's single above-top resonance at ℓ = 2 and the
@@ -72,8 +77,18 @@ now carries a quantified tolerance instead of an implicit assumption.
 ## §5 STRUCTURAL PROTECTION: the dangerous combination does not occur
 
 The ergoregion-instability recipe at finite multipole is a mode that is
-simultaneously EXPOSED, TRAPPED, and SUPERRADIANT. Across 112 modes
-through ℓ = 12 at χ = 0.68: **none exists.** Every trapped mode is
+simultaneously EXPOSED, TRAPPED, and SUPERRADIANT. Over an EXHAUSTIVE,
+explicitly declared domain — **165 modes = all (ℓ,m) with ℓ = 2..12 at
+χ = 0.68** — **none exists.** (CONV-035 GPT defect 1, adopted and fixed
+AT THE COMPUTATION: the first version of this check swept selected ℓ and
+described its domain as "the whole (ℓ,m) grid" — the same quantifier
+defect this record was written to diagnose, committed inside it. The
+sweep is now complete over the declared range, and the mode count is
+ASSERTED in the check itself so the claim cannot drift from its domain
+again without failing.) Grade: **ESTABLISHED-OVER-A-DECLARED-EXHAUSTIVE-
+DOMAIN, reconnaissance** — a *structural* exclusion requires the analytic
+disjointness inequality (prove trapped ⇒ m ≤ −(ℓ−1) and
+superradiance-capable ⇒ buried), registered as work. Every trapped mode is
 extreme-retrograde (m ≤ −(ℓ−1)), which has no superradiant window at
 all (mΩ_w < 0); every mode whose superradiant window could reach
 trapping frequencies is corotating and therefore BURIED (μ > μ_crit).
