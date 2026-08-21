@@ -15,6 +15,28 @@
 %   adoption). Spin-saturation finding surfaced by the script's own
 %   first run: dDt/dchi = 0.299 GM/c^3 at the benchmark, so the
 %   +/-0.1 spin bar is +/-0.35% -- mass dominates ~20x.
+% V1.3 (Patch 3345, 21 Aug 2026): the five CONV-035 adopted revisions
+%   (round CLOSED 5/5; Q9b CLEAR 4-1; Q6 -- the process call on
+%   enact-on-discovery -- CORRECT 3-2, resolved by the dissent seat
+%   itself). (1) ell_crit now quoted 7 +/- 1 (10 +/- 1 at chi = 0)
+%   EVERYWHERE, never the bare integer: at chi = 0.68 ell = 6 already
+%   sits at Phi/pi = 0.734, 0.016 pi below the Dirichlet threshold.
+%   (2) The high-ell excitation clause carries its inherited/uncomputed
+%   qualifier inline and is explicitly barred from being read as an
+%   established result of this paper. (3) The eikonal-recovery claim is
+%   restated at its true grade: monotone near-linear growth is the
+%   COMPUTED content over ell = 2-10; unbounded growth is an ASYMPTOTIC
+%   INFERENCE. (4) The stability result is regraded
+%   ESTABLISHED-OVER-A-DECLARED-EXHAUSTIVE-DOMAIN (all 165 modes,
+%   ell = 2-12) and explicitly NOT a structural exclusion, which would
+%   need the analytic disjointness inequality -- registered as open
+%   work. (5) The underlying sweep itself was made exhaustive at the
+%   COMPUTATION (Patch 3344), not repaired in prose: the V1.2 text
+%   inherited a check that described a selected-ell sweep as "the whole
+%   (ell,m) grid" -- the same quantifier defect this remark exists to
+%   record, committed inside the corrective patch. The check now
+%   asserts its own mode count against the declared domain.
+%   No number in the template table changes; verify unchanged at 9/9.
 % V1.2 (Patch 3340, 21 Aug 2026): RCORE-3 Leg C (Patch 3339, verify
 %   6/6). NARROWING, anti-erasure: the V1.1 remark asserted
 %   N_trapped = 0 "for every exposed mode ... across chi in
@@ -96,7 +118,7 @@ CPP Compact Objects}\\[6pt]
 {\large Second series paper of the Conscious Point Physics
 gravitation series (parent: GR-1)}}
 \author{Thomas Lee Abshier, ND\\Hyperphysics Institute}
-\date{21 August 2026 --- Version~1.2}
+\date{21 August 2026 --- Version~1.3}
 
 \begin{document}
 \maketitle
@@ -312,16 +334,25 @@ eikonal-WKB grade).  \textbf{Scope, stated as part of the claim
 $\ell \le 3$ and \emph{does not generalise in multipole}.  The phase
 volume grows linearly in $\ell$ without saturation
 ($\Phi/\pi \approx 0.122\,\ell$ at $\chi = 0.68$) and crosses the
-trapping threshold at $\ell_{\rm crit} = 7$ for $\chi \ge 0.30$
-($\ell \approx 10$ at $\chi = 0$): trapped ladders \emph{do} exist
-at high multipole, where ringdown excitation is negligible --- and
-\emph{that negligibility is inherited from standard ringdown
-phenomenology, not computed in this programme}
-(OPEN-GR-RCORE-3(e), now load-bearing).  This is simultaneously the
+trapping threshold at $\ell_{\rm crit} = 7 \pm 1$ for
+$\chi \ge 0.30$ ($\ell \approx 10 \pm 1$ at $\chi = 0$; the $\pm 1$
+is the Dirichlet/phase-convention sensitivity and is quoted with the
+number everywhere --- at $\chi = 0.68$, $\ell = 6$ already sits at
+$\Phi/\pi = 0.734$, only $0.016\pi$ below threshold): trapped
+ladders \emph{do} exist at high multipole, where ringdown excitation
+is negligible --- and \emph{that negligibility is inherited from
+standard ringdown phenomenology, is not computed in this programme,
+and is registered as the undischarged, load-bearing
+OPEN-GR-RCORE-3(e)}; it must not be read as another established
+result of this paper.  This is simultaneously the
 consistency check the eikonal picture required: the geometric-optics
 comb is the $\ell \to \infty$ limit and is recovered \emph{from
 below}, so the single $\ell = 2$ resonance and the eikonal comb are
-the two ends of one ladder.  Robustness of the low-$\ell$ result:
+the two ends of one ladder.  Stated at its true grade (CONV-035): the
+\emph{computed} content is monotone, near-linear growth of the phase
+volume over $\ell = 2$--$10$; unbounded growth in $\ell$ is an
+asymptotic inference from that trend together with the eikonal
+construction, not a numerical finding.  Robustness of the low-$\ell$ result:
 the threshold is $\delta_w/2 + \pi/4$ in the wall reflection phase,
 so $N = 0$ at $\ell = 2,3$ requires $\delta_w > 0.235\pi$
 ($42.3^\circ$); the \emph{derived} clamped-register value
@@ -355,15 +386,22 @@ depends only on $(a, m, Q, \omega)$, so a wall rotating at
 $\Omega_w$ leaves the turning point and the phase volume identically
 unchanged (a node is a node in any frame); its effect on line
 \emph{positions} remains full-Teukolsky work.  \emph{(v) Stability
-(V1.2):} across $112$ modes through $\ell = 12$ at the benchmark spin,
-no mode is simultaneously exposed, trapped, and superradiant --- the
-ergoregion-instability recipe at finite multipole --- because trapped
-modes are extreme-retrograde (no superradiant window) while every mode
+(V1.2, regraded V1.3):} over an \emph{exhaustive, explicitly declared
+domain} --- all $165$ modes $(\ell,m)$ with $\ell = 2$--$12$ at the
+benchmark spin --- no mode is simultaneously exposed, trapped, and
+superradiant, the ergoregion-instability recipe at finite multipole.
+The mechanism: trapped modes are extreme-retrograde
+($m \le -(\ell-1)$) and have no superradiant window, while every mode
 with a window wide enough to reach trapping frequencies is corotating
-and therefore buried.  Burial and trapping occupy disjoint regions of
-the $(\ell,m)$ grid, so the censorship result of \S\ref{sec:inputs}
-protects the finite-$\ell$ sector by a mechanism the eikonal analysis
-could not see.
+and therefore buried, so burial and trapping occupy disjoint regions
+of the $(\ell,m)$ grid and the censorship result of
+\S\ref{sec:inputs} protects the finite-$\ell$ sector by a mechanism
+the eikonal analysis could not see.  \textbf{Grade, stated exactly
+(CONV-035 adoption):} this is \emph{established over a declared
+exhaustive domain at reconnaissance grade}, \emph{not} a structural
+exclusion --- the latter requires an analytic disjointness inequality
+(trapped $\Rightarrow m \le -(\ell-1)$; superradiance-capable
+$\Rightarrow$ buried), which is registered as open work.
 \end{remark}
 
 %======================================================================

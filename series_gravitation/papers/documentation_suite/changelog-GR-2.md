@@ -129,3 +129,44 @@ finite-ℓ sector by a mechanism the eikonal analysis could not see.
 Compile gate: pdflatex ×2, 0 errors, 0 undefined refs, 9 pages. No
 number in the template table changes; the GR-2 verify script is
 untouched at 9/9. Deposit posture unchanged (fail-closed).
+
+## V1.3 — 21 August 2026, Patch 3345 (Session 156) — CONV-035 adopted revisions
+
+Review basis: **CONV-035 CLOSED 5/5** (`review/conv035_adjudication.md`
+v2.0). Q9b CLEAR 4–1; Q6 — the process call on enacting corrections
+before their audit round — **CORRECT 3–2, resolved by the dissent
+seat itself**, so enact-on-discovery stands with no standing
+constraint; the Gemini/Copilot minority reasoning is recorded.
+
+Five adopted revisions, all folded here:
+1. **ℓ_crit quoted 7 ± 1** (10 ± 1 at χ = 0) everywhere, never the
+   bare integer — at χ = 0.68, ℓ = 6 already sits at Φ/π = 0.734,
+   only 0.016π below the Dirichlet threshold. Four seats carried this
+   caveat.
+2. **The high-ℓ excitation clause** carries its inherited/uncomputed
+   qualifier inline and is explicitly barred from being read as an
+   established result of this paper (OPEN-GR-RCORE-3(e),
+   undischarged, load-bearing).
+3. **The eikonal-recovery claim regraded**: monotone, near-linear
+   growth over ℓ = 2–10 is the COMPUTED content; unbounded growth in
+   ℓ is an ASYMPTOTIC INFERENCE from that trend plus the eikonal
+   construction, not a numerical finding.
+4. **The stability result regraded** to
+   ESTABLISHED-OVER-A-DECLARED-EXHAUSTIVE-DOMAIN (all 165 modes,
+   ℓ = 2–12) and explicitly **not** a structural exclusion — which
+   would require the analytic disjointness inequality
+   (trapped ⇒ m ≤ −(ℓ−1); superradiance-capable ⇒ buried), registered
+   as open work.
+5. **The underlying sweep was made exhaustive AT THE COMPUTATION**
+   (Patch 3344), not repaired in prose. V1.2 inherited a check that
+   described a selected-ℓ sweep as "the whole (ℓ,m) grid" — the same
+   quantifier defect this paper's remark exists to record, committed
+   inside the corrective patch. The check now asserts its own mode
+   count against the declared domain, so the claim cannot drift from
+   its domain again without failing.
+
+No number in the template table changes; the GR-2 verify script is
+untouched at 9/9. Compile gate: pdflatex ×2, 0 errors, 0 undefined
+refs, 9 pages. Deposit posture unchanged (fail-closed). **OWED before
+the next flagship prediction move: the corpus-wide quantifier audit
+across the eleven GR papers.**
