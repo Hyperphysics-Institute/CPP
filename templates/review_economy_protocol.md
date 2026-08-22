@@ -27,11 +27,26 @@ correctness is already determined. **Formality is not rigor.**
    review is what converts it into a corpus claim (a shipped paper, a
    promoted candidate, a closed falsifier campaign, an axiom-level
    change).
-2. **AN EXHAUSTED AVENUE.** The worker does not know what to do, and
-   further unilateral work would be guessing — including any case
-   where the honest next step is a CHOICE the worker cannot make
-   without contaminating a frozen result (estimator selection after
-   seeing disagreeing readings is the canonical instance).
+2. **AN EXHAUSTED AVENUE**, which has TWO DISTINCT SUB-TRIGGERS that
+   the original wording ran together. Naming them separately, because
+   the second was mistaken for the first at Patch 3189:
+   - **2a — EPISTEMIC EXHAUSTION.** The worker does not know what to
+     do, and further unilateral work would be guessing. (CONV-021's
+     estimator impasse: three defensible readings, no principled way
+     to choose.)
+   - **2b — DISQUALIFYING INTEREST.** The worker DOES know what to do,
+     and may not do it, because the action would alter a frozen result
+     in a direction favourable to the worker's own prior claim. Here
+     the obstacle is not ignorance but standing: **a party may not
+     rule on a correction from which it benefits**, however obviously
+     correct the correction is. (Patch 3188–3189: the worker's
+     direction-blind falsifier, whose corrected form would convert an
+     INADMISSIBLE result into a favourable ABOVE-BAND reading.)
+   **2b is the harder one to notice**, because everything feels
+   settled — the worker can see the right answer, which makes the
+   impulse to just apply it strong. The test: *would applying this
+   myself move a frozen number toward something I have been arguing
+   for?* If yes, it goes out, no matter how clear the mathematics.
 3. **A STANDING OBLIGATION** the panel itself imposed and that names
    the panel as its venue.
 
