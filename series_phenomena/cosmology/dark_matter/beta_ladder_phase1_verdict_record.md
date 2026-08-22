@@ -78,7 +78,22 @@ successor must freeze its endpoints before its own testing data exists.
 consequence in §4 does not fire. DISP-I3 stands; item 1B remains OPEN;
 the frozen tree is not re-run (prereg §4).
 
-## §4 — **COEFFICIENT-OVERPREDICTED** (fired)
+## §4 — **COEFFICIENT-OVERPREDICTED** (fired — then **SUSPENDED at Patch 3176**)
+
+> **SUSPENSION NOTICE (Patch 3176, 22 Aug 2026).** The band this section
+> compares against (`SUST_REF` = 0.026·β) has been traced to a
+> **polarization amplitude** (Sea-pair dipole moment `p = plus − minus`,
+> 2914 line 41) transplanted into a **force** band as though the
+> conversion factor were 1. The computed factor is |F_CONV| ≤ 0.008 for
+> a uniform profile and **exactly 0** for the odd profile the 2918
+> record reports. Against any corrected band the measured response is
+> 45×–340× ABOVE, not 3.5× below: **the finding below fails in magnitude
+> and inverts in direction.** Nothing in this section may be cited or
+> dispatched. No counter-claim is minted either — an invalidated
+> comparator supports no verdict in either direction. See
+> `band_provenance_audit_3176.md`; successor OPEN-BAND-CONV-1.
+> §1–§3 and §5 of this record are UNAFFECTED.
+
 
 **Every rung's 99% CI excludes 0.026·β.** Measured k clusters at
 7.19e-03 – 9.14e-03 (through-origin k_hat = 7.37e-03) against the 2918
