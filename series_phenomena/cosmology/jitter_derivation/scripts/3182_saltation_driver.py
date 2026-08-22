@@ -37,6 +37,27 @@ def synth(kind, seed=7):
     s[hit]*=8.0
     return s
 
+import sys
+if len(sys.argv)>1 and sys.argv[1]=="sweep":
+    # Patch 3183: the FROZEN falsifier of the masking hypothesis.
+    # Prediction (frozen before this runs): burst on |F|_nonpartner rises
+    # MONOTONICALLY as the drive amplitude falls to zero. A non-monotone or
+    # flat result REFUTES the masking account.
+    E=eng(); Nc=2*N**3
+    print("D-SALT-1 SWEEP -- masking falsifier (frozen: burst must rise monotonically as amp -> 0)")
+    print(f"  Gaussian-null burst reference: 0.00078")
+    prev=None; mono=True
+    for amp in (0.30, 0.20, 0.10, 0.05, 0.0):
+        rng=np.random.default_rng(11)
+        d=np.zeros((1024,Nc,3)) if amp==0 else rng.normal(0,amp,(1024,Nc,3))
+        z=E.run(DS,N,SEED,drive=d,fprobe=True)
+        st=stats(z["fp_np"])
+        if prev is not None and st[2] < prev - 1e-12: mono=False
+        prev=st[2]
+        print(f"  drive sigma={amp:.2f}: burst = {st[2]:.5f} +/- {st[3]:.5f}   gamma2 = {st[0]:+.4f} +/- {st[1]:.4f}")
+    print(f"  VERDICT (frozen): {'MONOTONE-RISE -> masking account SUPPORTED' if mono else 'NON-MONOTONE -> masking account REFUTED'}")
+    raise SystemExit(0)
+
 print("="*70)
 print("D-SALT-1  --  POWER GATE FIRST (prereg S3); no engine number before it passes")
 print("="*70)
