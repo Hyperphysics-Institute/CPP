@@ -42,6 +42,17 @@ correctness is already determined. **Formality is not rigor.**
      correct the correction is. (Patch 3188–3189: the worker's
      direction-blind falsifier, whose corrected form would convert an
      INADMISSIBLE result into a favourable ABOVE-BAND reading.)
+   **THE SELF-DENYING DEFAULT TEST (Patch 3191, founder challenge
+   sustained).** Before escalating under 2b, ask: *is there a branch I
+   can take unilaterally that runs AGAINST my interest?* If yes, TAKE
+   IT. **2b bars the favourable branch; it does not license
+   escalation.** Escalate only when (a) no self-denying option exists,
+   or (b) the self-denying option would destroy information
+   irrecoverably rather than merely delay a finding. Escalating where a
+   self-denying default exists is not impartiality — it is asking
+   permission, and it also invites a panel to generate alternatives the
+   physics never required.
+
    **2b is the harder one to notice**, because everything feels
    settled — the worker can see the right answer, which makes the
    impulse to just apply it strong. The test: *would applying this
