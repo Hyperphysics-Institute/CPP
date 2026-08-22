@@ -101,11 +101,21 @@ RHO, SPACING = (1.0, 8.0), 2.5
 JIT_LO, JIT_HI = -0.05, 0.05
 RUNGS = (0.05, 0.10, 0.15, 0.20)   # v2 (Patch 3174, prereg §8)
 N_PAIRS = 128
+# --- Phase 1B (Patch 3180, prereg beta_ladder_phase1b_prereg.md) ---------
+N_PAIRS_1B = 685          # required-N from Phase 1's measured scatter
+RUNG_1B = 0.05            # the underpowered rung; NO other rung is extended
+DUP_PAIRS_1B = (128, 684) # frozen duplicate membership for Phase 1B
+BAND_VOID = True          # 3176: SUST_REF comparator VOID pending OPEN-BAND-CONV-1
 NBOOT, BOOT_SEED = 10000, 30530811
 PRE = slice(12, 24)                       # Route B PRE_W, verbatim (3164)
 K_PRED = 0.026                            # the 2918 prediction, s = K*beta
 DUP_PAIRS = (0, 127)                      # D-3
-SEEDS = np.random.default_rng(SEED_GEN).integers(10**6, 10**7, size=N_PAIRS)
+# Drawn at size=N_PAIRS_1B: numpy draws sequentially, so SEEDS[:128] is
+# BIT-IDENTICAL to the Phase 1 size=128 table (verified before freezing).
+# Phase 1 legs therefore remain valid members of the extended ensemble.
+SEEDS = np.random.default_rng(SEED_GEN).integers(10**6, 10**7,
+                                                 size=N_PAIRS_1B)
+assert len(SEEDS) == N_PAIRS_1B and len(set(SEEDS.tolist())) == N_PAIRS_1B
 
 
 def rtag(beta):
@@ -398,6 +408,225 @@ def analyze():
     print("=" * 78)
 
 
+# =====================  PHASE 1B  (Patch 3180)  =========================
+DATA_1B = os.path.normpath(os.path.join(HERE, '../data/beta_ladder_1b'))
+DUP_1B = os.path.join(DATA_1B, 'dup')
+
+
+def leg_path_1b(pair, branch, dup=False):
+    """Phase 1 pairs (<128) live in the Phase 1 tree and are REUSED
+    byte-for-byte; only the new pairs are written under DATA_1B."""
+    if pair < N_PAIRS and not dup:
+        return leg_path(pair, branch, RUNG_1B, dup=False)
+    return os.path.join(DUP_1B if dup else DATA_1B,
+                        f'leg_{pair:04d}_{branch}_{rtag(RUNG_1B)}.json')
+
+
+def _tasks_1b(duplicates=False):
+    if duplicates:
+        return [(p, br, RUNG_1B, 'dup1b') for p in DUP_PAIRS_1B
+                for br in ('step', 'ctrl')]
+    return [(p, br, RUNG_1B, '1b') for p in range(N_PAIRS, N_PAIRS_1B)
+            for br in ('step', 'ctrl')]
+
+
+def run_leg_1b(task):
+    pair, branch, beta_f, mode = task
+    out = leg_path_1b(pair, branch, dup=(mode == 'dup1b'))
+    if os.path.exists(out):
+        return (out, 'skip', 0.0)
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    # identical engine path to run_leg; only the destination differs
+    saved = (DATA, DUP)
+    try:
+        return _run_leg_to(task, out)
+    finally:
+        del saved
+
+
+def _run_leg_to(task, out):
+    pair, branch, beta_f, _mode = task
+    eng = _eng()
+    sea, qs = build_sea_jittered(eng, int(SEEDS[pair]), X_HALF)
+    pos = np.concatenate([[[X_SRC0, 0.0, 0.0]], sea])
+    q = np.concatenate([[1.0], qs])
+    T_max = np.sqrt((2 * X_HALF + 20) ** 2 + (2 * RHO[1]) ** 2) + 5
+    hist = eng.History(pos, 0.0, int(np.ceil(T_max)) + 2, T_END)
+    F, AB, tr = [], [], None
+    t0 = time.time()
+    for t in range(T_END):
+        beta = beta_f if (branch == 'step' and t >= T_STEP) else 0.0
+        pos, src_net, src_ab, tr = eng.moment_step(
+            pos, q, hist, t, T_max, beta, mobile_sea=True, tr_guess=tr)
+        hist.append(pos)
+        F.append(float(src_net[0])); AB.append(float(src_ab))
+    rec = {'pair': int(pair), 'seed': int(SEEDS[pair]), 'branch': branch,
+           'beta_f': beta_f, 'x_half': X_HALF, 'x_src0': X_SRC0,
+           't_step': T_STEP, 'T_END': T_END, 'phase': '1B',
+           'N_cp': int(len(pos)), 'F': F, 'AB': AB,
+           'wall_s': round(time.time() - t0, 1)}
+    tmp = out + '.tmp'
+    with open(tmp, 'w') as fh:
+        json.dump(rec, fh)
+    os.replace(tmp, out)
+    return (out, 'done', rec['wall_s'])
+
+
+def calibrate_1b():
+    n_new = (N_PAIRS_1B - N_PAIRS) * 2
+    print(f"PHASE 1B — beta = {RUNG_1B} only, N: {N_PAIRS} -> {N_PAIRS_1B}")
+    print(f"  new evidentiary legs : {n_new}")
+    print(f"  reused Phase 1 legs  : {N_PAIRS * 2} (byte-for-byte, not recomputed)")
+    print(f"  duplicate set        : pairs {DUP_PAIRS_1B} x (step, ctrl) = 4")
+    print(f"  seed prefix identical to Phase 1: "
+          f"{np.array_equal(SEEDS[:N_PAIRS], np.random.default_rng(SEED_GEN).integers(10**6, 10**7, size=N_PAIRS))}")
+    print(f"  est. wall @32 workers: {n_new * 7700 / 32 / 3600:.1f} h")
+    print(f"  kinematics unchanged : L = {RUNG_1B * (T_END - T_STEP):.1f}, "
+          f"x_end = {X_SRC0 + RUNG_1B * (T_END - T_STEP):+.1f} (inside Sea)")
+    print("  ratio endpoints FROZEN at s(0.20)/s(0.05); re-siting forbidden.")
+    print("  COEFFICIENT READING SUSPENDED (3176: comparator VOID).")
+    print("No engine runs.")
+
+
+def run_1b(workers, duplicates=False):
+    tasks = _tasks_1b(duplicates)
+    if duplicates:
+        print(f"PHASE 1B DUPLICATE PASS: {len(tasks)} legs -> {DUP_1B}")
+        print("(prereg §3: must be separated from --run-1b by a restart)")
+    else:
+        print(f"PHASE 1B: {len(tasks)} new legs at beta = {RUNG_1B}")
+    done, t0 = 0, time.time()
+    with Pool(workers) as pool:
+        for out, st, w in pool.imap_unordered(run_leg_1b, tasks):
+            if st == 'done':
+                done += 1
+                print(f"  done {os.path.basename(out)} ({w:.0f}s) "
+                      f"[{done} new; {(time.time() - t0) / 3600:.1f} h]",
+                      flush=True)
+    print("PHASE 1B DUPLICATES COMPLETE" if duplicates
+          else "PHASE 1B CAMPAIGN COMPLETE")
+
+
+def verify_duplicates_1b():
+    results, all_ok, missing = [], True, 0
+    for (p, br, _b, _m) in _tasks_1b(duplicates=True):
+        a_p, b_p = leg_path_1b(p, br), leg_path_1b(p, br, dup=True)
+        if not (os.path.exists(a_p) and os.path.exists(b_p)):
+            missing += 1
+            results.append((os.path.basename(a_p), 'MISSING')); continue
+        A, B = json.load(open(a_p)), json.load(open(b_p))
+        ok = bool(np.array_equal(np.array(A['F']), np.array(B['F']))
+                  and np.array_equal(np.array(A['AB']), np.array(B['AB'])))
+        all_ok &= ok
+        results.append((os.path.basename(a_p),
+                        'BIT-IDENTICAL' if ok else 'MISMATCH'))
+    for n, st in results:
+        print(f"  {st:14s} {n}")
+    status = ('INCOMPLETE' if missing else 'PASS' if all_ok else 'VOID')
+    print({'PASS': "GATE PASS: all 4 Phase 1B duplicate pairs bit-identical "
+                   "across a machine restart.",
+           'VOID': "*** GATE FAIL: PHASE 1B IS VOID (prereg §3). Phase 1's "
+                   "own gate is undisturbed. ***",
+           'INCOMPLETE': f"GATE INCOMPLETE: {missing} pair(s) missing."}[status])
+    os.makedirs(DATA_1B, exist_ok=True)
+    with open(os.path.join(DATA_1B, 'duplicates_1b_verified.json'), 'w') as fh:
+        json.dump({'status': status,
+                   'results': [{'leg': n, 'state': s} for n, s in results]},
+                  fh, indent=1)
+    return status
+
+
+def analyze_1b():
+    gate_p = os.path.join(DATA_1B, 'duplicates_1b_verified.json')
+    if not os.path.exists(gate_p) or json.load(open(gate_p))['status'] != 'PASS':
+        print("REFUSING TO ANALYZE: Phase 1B duplicate gate not PASS "
+              "(prereg §3). Run --verify-duplicates-1b first.")
+        return
+    missing = [p for p in range(N_PAIRS_1B) for br in ('step', 'ctrl')
+               if not os.path.exists(leg_path_1b(p, br))]
+    if missing:
+        print(f"REFUSING TO ANALYZE: {len(missing)} beta={RUNG_1B} leg(s) "
+              f"missing. Prereg §6 forbids analysis on partial data.")
+        return
+    t_post, base = windows(X_HALF, T_END)
+    LATE = slice(T_END - base, T_END)
+    rng = np.random.default_rng(BOOT_SEED)
+    print("=" * 78)
+    print("PHASE 1B — sust_B = D[LATE] - D[PRE(12:24)], SIGNED "
+          "(3164 recipe verbatim); ratio endpoints FROZEN s(0.20)/s(0.05)")
+    print("COEFFICIENT READING SUSPENDED — SUST_REF comparator VOID per "
+          "Patch 3176, pending OPEN-BAND-CONV-1")
+    print("=" * 78)
+    per = {}
+    for b in RUNGS:
+        S, C = [], []
+        n = N_PAIRS_1B if b == RUNG_1B else N_PAIRS
+        for p in range(n):
+            ps = (leg_path_1b(p, 'step') if b == RUNG_1B
+                  else leg_path(p, 'step', b))
+            pc = (leg_path_1b(p, 'ctrl') if b == RUNG_1B
+                  else leg_path(p, 'ctrl', b))
+            if not (os.path.exists(ps) and os.path.exists(pc)):
+                continue
+            S.append(np.array(json.load(open(ps))['F']))
+            C.append(np.array(json.load(open(pc))['F']))
+        D = np.stack(S) - np.stack(C); m = D.shape[0]
+        pp = D[:, LATE].mean(axis=1) - D[:, PRE].mean(axis=1)
+        boots = np.array([pp[rng.integers(0, m, m)].mean()
+                          for _ in range(NBOOT)])
+        per[b] = dict(pp=pp, s=float(pp.mean()), m=m, boots=boots,
+                      lo=float(np.percentile(boots, 0.5)),
+                      hi=float(np.percentile(boots, 99.5)))
+    print(f"{'beta':>5} {'m':>5} {'sust_B':>12} {'99% CI':>26} "
+          f"{'k=s/beta (VOID cmp)':>20}")
+    for b in RUNGS:
+        d = per[b]
+        print(f"{b:5.2f} {d['m']:5d} {d['s']:12.4e} "
+              f"[{d['lo']:.3e},{d['hi']:.3e}] {d['s'] / b:20.4e}")
+    rr = np.random.default_rng(BOOT_SEED + 1)
+    p_lo, p_hi = per[RUNGS[0]]['pp'], per[RUNGS[-1]]['pp']
+    ratios = np.array([p_hi[rr.integers(0, len(p_hi), len(p_hi))].mean()
+                       / p_lo[rr.integers(0, len(p_lo), len(p_lo))].mean()
+                       for _ in range(NBOOT)])
+    r_lo, r_hi = (float(np.percentile(ratios, 0.5)),
+                  float(np.percentile(ratios, 99.5)))
+    R_PROP = RUNGS[-1] / RUNGS[0]
+    print(f"\nratio s({RUNGS[-1]})/s({RUNGS[0]}) = "
+          f"{per[RUNGS[-1]]['s'] / per[RUNGS[0]]['s']:.3f}  99% CI "
+          f"[{r_lo:.3f}, {r_hi:.3f}]  (contains 1.0: {r_lo <= 1.0 <= r_hi}; "
+          f"contains {R_PROP}: {r_lo <= R_PROP <= r_hi})")
+    betas = np.array(RUNGS)
+    svals = np.array([per[b]['s'] for b in RUNGS])
+    ses = np.array([per[b]['boots'].std() for b in RUNGS])
+    w = 1.0 / ses ** 2
+    k_hat = float((w * betas * svals).sum() / (w * betas ** 2).sum())
+    inband = [per[b]['lo'] <= k_hat * b <= per[b]['hi'] for b in RUNGS]
+    print(f"through-origin fit: k_hat = {k_hat:.4e}; every rung's 99% CI "
+          f"contains k_hat*beta: {all(inband)} {list(zip(RUNGS, inband))}")
+    has1, hasP = r_lo <= 1.0 <= r_hi, r_lo <= R_PROP <= r_hi
+    if all(inband) and hasP and not has1:
+        reading = 'BETA-LINEAR'
+    elif has1 and not hasP:
+        reading = 'BETA-FLAT'
+    elif not has1 and not hasP:
+        reading = 'BETA-SUBLINEAR'
+        print(f"  exponent (log-log): "
+              f"{float(np.polyfit(np.log(betas), np.log(np.abs(svals)), 1)[0]):.3f}"
+              f" — reported, no band re-sited")
+    else:
+        reading = 'BETA-UNRESOLVED'
+        need = int(np.ceil(N_PAIRS_1B * (max(ses) * 3
+                   / max(abs(per[RUNGS[0]]['s']), 1e-30)) ** 2))
+        print(f"  required N estimate: ~{need} pairs/rung. **STOP** — "
+              f"prereg §4 forbids further extension without a fresh prereg "
+              f"(no optional stopping).")
+    print(f"\n>>> FROZEN READING: {reading}")
+    print("Pre-declared expectation was BETA-LINEAR (a recorded REVERSAL of "
+          "Phase 1's BETA-FLAT/SUBLINEAR call).")
+    print("No coefficient claim. No tree movement. DISP-I3 stands.")
+    print("=" * 78)
+
+
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('--calibrate', action='store_true')
@@ -406,6 +635,11 @@ if __name__ == '__main__':
     ap.add_argument('--verify-duplicates', action='store_true')
     ap.add_argument('--analyze', action='store_true')
     ap.add_argument('--workers', type=int, default=min(32, cpu_count()))
+    ap.add_argument('--calibrate-1b', dest='calibrate_1b', action='store_true')
+    ap.add_argument('--run-1b', dest='run_1b', action='store_true')
+    ap.add_argument('--run-duplicates-1b', dest='run_dup_1b', action='store_true')
+    ap.add_argument('--verify-duplicates-1b', dest='verify_1b', action='store_true')
+    ap.add_argument('--analyze-1b', dest='analyze_1b', action='store_true')
     ap.add_argument('--smoke', action='store_true')
     a = ap.parse_args()
     if a.smoke:
@@ -422,6 +656,16 @@ if __name__ == '__main__':
                                               0.0, True, tr)
             hist.append(pos)
         print(f"smoke OK: N_cp={len(pos)}, F0={sn[0]:+.3e}")
+    elif a.calibrate_1b:
+        calibrate_1b()
+    elif a.run_1b:
+        run_1b(a.workers, duplicates=False)
+    elif a.run_dup_1b:
+        run_1b(a.workers, duplicates=True)
+    elif a.verify_1b:
+        verify_duplicates_1b()
+    elif a.analyze_1b:
+        analyze_1b()
     elif a.calibrate:
         calibrate()
     elif a.run:
