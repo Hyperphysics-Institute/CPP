@@ -22,7 +22,7 @@ T = 3000
 STATE = "/tmp/3121_state.json"  # v2 state; v1 retained at /tmp/3120_state.json
 
 
-def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False):
+def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False, fprobe=False):
     rng = np.random.default_rng(seed)
     Np = n_side**3; Nc = 2*Np
     L = n_side*ds
@@ -44,6 +44,7 @@ def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False):
     snaps = []
     th = (T-1)//3
     _amb = []
+    _fp_tot = []; _fp_np = []
     for t in range(1, T):
         D = X[:, None, :] - X[None, :, :]; D -= L*np.round(D/L)
         r = np.sqrt(np.einsum('ijk,ijk->ij', D, D)); np.fill_diagonal(r, 1.0)
@@ -111,6 +112,13 @@ def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False):
             if i < partner[i]:
                 fld[partner[i]] = fld[i]
         F = F + q[:, None]*fld
+        # Patch 3182: per-CP experienced-force probe (saltation lives HERE).
+        # Records total force and the non-partner (encounter) component every
+        # Moment in the final third. No RNG, no dynamics touched.
+        if fprobe and t >= 2*th:
+            _fp_tot.append(np.sqrt(np.einsum('ij,ij->i', F, F)).copy())
+            Fnp = F - coef[:, None]*w
+            _fp_np.append(np.sqrt(np.einsum('ij,ij->i', Fnp, Fnp)).copy())
         Disp = F.copy()
         X = (X + F) % L
         Hist[t] = X
@@ -151,6 +159,10 @@ def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False):
     # ---- order parameters (stationary window = final third) ---------
     W = dp_hist[2*th:]
     Wmid = dp_hist[th:2*th]
+    if fprobe and _fp_tot:
+        fp_tot = np.array(_fp_tot); fp_np = np.array(_fp_np)
+    else:
+        fp_tot = fp_np = None
     if probe and _amb:
         _A = np.concatenate(_amb, 0)
         sig_amb = float(_A.std(axis=0).mean())
@@ -203,7 +215,8 @@ def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False):
     binder = float(1.0 - m4/(3.0*m2**2)) if m2 > 1e-15 else None
     return dict(f_b=f_b, rho_swap=rho_swap, f_dwell=f_dwell,
                 xi_state=xi_state, r=1.0-f_b, phase=phase, stat=stat,
-                m2=m2, m4=m4, binder=binder, sig_amb=sig_amb)
+                m2=m2, m4=m4, binder=binder, sig_amb=sig_amb,
+                fp_tot=fp_tot, fp_np=fp_np)
 
 
 def peak(dss, vals):
