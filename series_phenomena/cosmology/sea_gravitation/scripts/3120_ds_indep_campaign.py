@@ -22,7 +22,7 @@ T = 3000
 STATE = "/tmp/3121_state.json"  # v2 state; v1 retained at /tmp/3120_state.json
 
 
-def run(ds, n_side, seed, r_soft=1.0):
+def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False):
     rng = np.random.default_rng(seed)
     Np = n_side**3; Nc = 2*Np
     L = n_side*ds
@@ -43,6 +43,7 @@ def run(ds, n_side, seed, r_soft=1.0):
     swap_ops = np.zeros(T-1, dtype=int)
     snaps = []
     th = (T-1)//3
+    _amb = []
     for t in range(1, T):
         D = X[:, None, :] - X[None, :, :]; D -= L*np.round(D/L)
         r = np.sqrt(np.einsum('ijk,ijk->ij', D, D)); np.fill_diagonal(r, 1.0)
@@ -98,7 +99,13 @@ def run(ds, n_side, seed, r_soft=1.0):
         good = use & (s > 1e-9)
         coef = np.where(good, Gcp*qp/(np.maximum(s, 1.0)**2 * np.where(s > 1e-9, s, 1.0)), 0.0)
         F += coef[:, None] * w
-        fld = rng.normal(0, SIG_N, (Nc, 3))
+        # Patch 3179 (Phase B): 'drive' replaces the Gaussian surrogate with
+        # the computed arrival samples when provided; DEFAULT None leaves this
+        # line byte-identical (same RNG draw) -- B-1 gate verifies.
+        if drive is None:
+            fld = rng.normal(0, SIG_N, (Nc, 3))
+        else:
+            fld = drive[t % len(drive)]
         near = r[idx, partner] < 1.0
         for i in np.where(near)[0]:
             if i < partner[i]:
@@ -107,6 +114,15 @@ def run(ds, n_side, seed, r_soft=1.0):
         Disp = F.copy()
         X = (X + F) % L
         Hist[t] = X
+        # Patch 3179: diagnostic probe -- the ambient NON-PARTNER Coulomb
+        # field (the 3138 sigma_ambient statistic), sampled sparsely in the
+        # final third; no RNG, no dynamics touched.
+        if probe and t >= 2*th and (t % 10) == 0:
+            wp = X[:,None,:]-X[None,:,:]; wp -= L*np.round(wp/L)
+            sp = np.sqrt(np.einsum('ijk,ijk->ij', wp, wp)); np.fill_diagonal(sp, np.inf)
+            for _i in range(Nc): sp[_i, partner[_i]] = np.inf
+            cf = qq/(np.maximum(sp,1.0)**2*np.where(sp>1e-9,sp,1.0))
+            _amb.append((cf[:,:,None]*wp).sum(1))
         ro = np.where(opp & ~eye, r, np.inf)
         for i in range(Nc):
             ro[i, partner[i]] = np.inf
@@ -135,6 +151,11 @@ def run(ds, n_side, seed, r_soft=1.0):
     # ---- order parameters (stationary window = final third) ---------
     W = dp_hist[2*th:]
     Wmid = dp_hist[th:2*th]
+    if probe and _amb:
+        _A = np.concatenate(_amb, 0)
+        sig_amb = float(_A.std(axis=0).mean())
+    else:
+        sig_amb = None
     f_b = float((W <= ds/2.0).mean())
     rho_swap = float(2.0*swap_ops[2*th:].sum()/(Np*(T-1-2*th)))
     f_dwell = float((W < 1.0).mean())
@@ -182,7 +203,7 @@ def run(ds, n_side, seed, r_soft=1.0):
     binder = float(1.0 - m4/(3.0*m2**2)) if m2 > 1e-15 else None
     return dict(f_b=f_b, rho_swap=rho_swap, f_dwell=f_dwell,
                 xi_state=xi_state, r=1.0-f_b, phase=phase, stat=stat,
-                m2=m2, m4=m4, binder=binder)
+                m2=m2, m4=m4, binder=binder, sig_amb=sig_amb)
 
 
 def peak(dss, vals):
