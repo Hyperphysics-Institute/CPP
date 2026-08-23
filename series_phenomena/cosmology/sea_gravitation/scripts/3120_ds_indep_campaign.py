@@ -22,7 +22,7 @@ T = 3000
 STATE = "/tmp/3121_state.json"  # v2 state; v1 retained at /tmp/3120_state.json
 
 
-def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False, fprobe=False, contact=False):
+def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False, fprobe=False, contact=False, cluster=False):
     rng = np.random.default_rng(seed)
     Np = n_side**3; Nc = 2*Np
     L = n_side*ds
@@ -46,6 +46,7 @@ def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False, fprobe=False, con
     _amb = []
     _fp_tot = []; _fp_np = []
     _ct = []
+    _cl = [[],[],[]]
     for t in range(1, T):
         D = X[:, None, :] - X[None, :, :]; D -= L*np.round(D/L)
         r = np.sqrt(np.einsum('ijk,ijk->ij', D, D)); np.fill_diagonal(r, 1.0)
@@ -128,6 +129,30 @@ def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False, fprobe=False, con
             np.fill_diagonal(sc, np.inf)
             for _i in range(Nc): sc[_i, partner[_i]] = np.inf
             _ct.append(int((sc < 1.0).sum())//2)
+        # Patch 3417 (D-ENTITY-1): entity DETECTION in the certified dynamics.
+        # DP centres -> connected components at three frozen thresholds.
+        # No new physics, no RNG draw, no dynamics touched.
+        if cluster and t >= 2*th and (t % 50) == 0:
+            a = np.arange(0, Nc, 2); b = partner[a]
+            dab = X[b]-X[a]; dab -= L*np.round(dab/L)
+            cen = (X[a] + 0.5*dab) % L
+            dd = cen[:,None,:]-cen[None,:,:]; dd -= L*np.round(dd/L)
+            sdm = np.sqrt(np.einsum('ijk,ijk->ij', dd, dd)); np.fill_diagonal(sdm, np.inf)
+            for ri, rc in enumerate((1.2*ds, 1.5*ds, 2.0*ds)):
+                adj = sdm < rc; nn = len(cen)
+                seen = np.zeros(nn, bool); sizes = []
+                for i0 in range(nn):
+                    if seen[i0]: continue
+                    stack=[i0]; seen[i0]=True; c=0
+                    while stack:
+                        u=stack.pop(); c+=1
+                        for v in np.nonzero(adj[u])[0]:
+                            if not seen[v]: seen[v]=True; stack.append(v)
+                    sizes.append(c)
+                sz=np.array(sizes)
+                _cl[ri].append((int((sz>=2).sum()),
+                                float(sz[sz>=2].mean()) if (sz>=2).any() else 0.0,
+                                int((sz==1).sum())))
         Disp = F.copy()
         X = (X + F) % L
         Hist[t] = X
@@ -168,6 +193,12 @@ def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False, fprobe=False, con
     # ---- order parameters (stationary window = final third) ---------
     W = dp_hist[2*th:]
     Wmid = dp_hist[th:2*th]
+    if cluster and _cl[0]:
+        clus = [dict(N=float(np.mean([x[0] for x in c])),
+                     k=float(np.mean([x[1] for x in c])),
+                     single=float(np.mean([x[2] for x in c]))) for c in _cl]
+    else:
+        clus = None
     if contact and _ct:
         _c = np.array(_ct, float)
         R_c = float(_c.mean()/Nc); CV = float(_c.std()/max(_c.mean(),1e-12))
@@ -230,7 +261,7 @@ def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False, fprobe=False, con
     return dict(f_b=f_b, rho_swap=rho_swap, f_dwell=f_dwell,
                 xi_state=xi_state, r=1.0-f_b, phase=phase, stat=stat,
                 m2=m2, m4=m4, binder=binder, sig_amb=sig_amb,
-                fp_tot=fp_tot, fp_np=fp_np, R_c=R_c, CV=CV)
+                fp_tot=fp_tot, fp_np=fp_np, R_c=R_c, CV=CV, clus=clus)
 
 
 def peak(dss, vals):
