@@ -112,4 +112,37 @@ the universe moves along the map. **HIGHEST-VALUE STATEMENT AVAILABLE
 IN THIS LANE: a ruling on CP creation settles Branch B in one
 sentence.**
 
-**Next patch (DM/DE): 3404.**
+### 3404 — the reservoir mechanism closes the fork; worker error corrected
+
+**3403 §3's claim that Branch B "requires CP CREATION" is WITHDRAWN —
+it assumed entities have fixed size.** Founder's mechanism: entities
+are CP RESERVOIRS of variable content; large aggregates evaporate CPs
+which condense into new entities in the inter-entity space, so
+**entity COUNT grows while CP COUNT stays fixed because entities
+SHRINK.** Conservation by REDISTRIBUTION, no creation. Bookkeeping:
+N_entity ∝ V and ⟨CPs/entity⟩ ∝ 1/V — since recombination, mean entity
+content has fallen by the same 10⁹ the volume grew. **d_s stays fixed,
+ρ_Λ constant, w = −1: Branch B is observationally safe AND
+conservation-respecting.**
+
+**THE PREDICTION IT CARRIES (not automatic): THE RESERVOIR IS FINITE.**
+A minimal DP entity is ~4 CPs and entities cannot evaporate below the
+floor ⇒ **the constant-Λ regime MUST END**, with remaining headroom set
+by today's mean content (4 CPs ⇒ ends now; 40 ⇒ 2.15× more expansion;
+4×10³ ⇒ 10×; 4×10⁶ ⇒ 100×). **CPP thus predicts dark energy's
+constancy is TEMPORARY with a computable endpoint.**
+
+**UNANTICIPATED CONNECTION (candidate, NOT a derivation): F-W-1's
+w = −1.023 ≠ −1 is exactly what a reservoir approaching but not at
+exhaustion would produce** — as entities near the floor, supply
+falters and the Sea begins to dilute. F-W-1 came from a different
+route (comoving-branch exclusion) with no reservoir content, **so
+agreement would be a genuine internal convergence and disagreement a
+second internal tension. Checkable either way.**
+
+**NEEDED FROM THE THEORY:** mean CP content of a present-day DP entity
+(sets the endpoint; should be computed, not fitted) · the evaporation
+rate's dependence on entity content (smooth drift vs abrupt) · whether
+depletion reproduces −1.023.
+
+**Next patch (DM/DE): 3405.**
