@@ -85,4 +85,31 @@ an algebra audit of the calibration relation's actual d_s dependence.
 If it is not near-flat, CPP contradicts its own live prediction —
 an INTERNAL contradiction findable by algebra, not observation.**
 
-**Next patch (DM/DE): 3403.**
+### 3403 — the algebra audit RESOLVES: an internal fork
+
+**The corpus's own relation is `c_Li = √((4/3)·25.338·a·α·Φ)/d_s` with
+Φ plateauing ⇒ measured `d(log c_Li)/d(log d_s) = −1.037` (c_Li·d_s
+constant to 1.5% across the frozen grid) — versus the **+0.069**
+F-W-1's w = −1.023 requires.** Robust to whether c_Li is Λ or √Λ:
+implied **w = −0.654 or −0.309**, both excluded by observation and
+both contradicting the corpus's live prediction.
+
+**THE FORK, and both branches cost something:**
+- **A — the Sea dilutes:** the universe travels along the calibration
+  curve ⇒ w ≈ −0.65/−0.31. **Excluded; F-W-1 contradicted by CPP's own
+  calibration.**
+- **B — the Sea does not dilute** (founder, 23 Aug): d_s fixed, ρ_Λ
+  constant, **w = −1, observationally safe** — but constant density
+  with growing volume grows the CP inventory as a³, **requiring CP
+  CREATION and contradicting "the number of CPs is constant"**; and
+  F-W-1's −1.023 must then come ENTIRELY from its comoving-branch
+  derivation with no spacing contribution.
+
+**Not a worker call: the branch is a founder ruling on physics.** The
+audit shows only that the map's slope and the prediction's slope
+disagree by an order of magnitude, reconcilable only by denying that
+the universe moves along the map. **HIGHEST-VALUE STATEMENT AVAILABLE
+IN THIS LANE: a ruling on CP creation settles Branch B in one
+sentence.**
+
+**Next patch (DM/DE): 3404.**
