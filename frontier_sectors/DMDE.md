@@ -145,4 +145,39 @@ second internal tension. Checkable either way.**
 rate's dependence on entity content (smooth drift vs abrupt) · whether
 depletion reproduces −1.023.
 
-**Next patch (DM/DE): 3405.**
+### 3405 — ZBW ruling registered; the two rates mapped; "produce 1.023" declined with a result
+
+**FOUNDER RULING: ZBW is NOT sub-Moment.** Every CP moves once per
+Moment via SSV_net in the PCD cycle; sub-Moment structure is only
+POSITIONING (DI-bit GP_origin→GP_PSR transit; CP displacement
+GP_origin→GP_SSV_net, edge to edge). **This CLOSES `phaseD_saltation_prereg.md`
+§6's first alternative ("sub-Moment saltation, invisible at this
+sampling") — the Moment cadence is the substrate's own cadence, so
+D-SALT-1's INTERMITTENT result is STRONGER than when issued.**
+
+**THE FOUNDER'S TWO RATES ARE ALREADY INSTRUMENTED:** (1) entity-to-entity
+ZBW interaction = **R_c = 0.0332–0.0360 per CP per Moment** (3198,
+and shown there to CONTROL the free population); (2) partner switching
+= **ρ_swap = 0.4806–0.4939 per Moment**. **MISSING: the third rate —
+free-DP AGGREGATION into entities** — measurable with the same
+instrument family.
+
+**"PRODUCE THE 1.023" DECLINED, and the refusal yields a result.** The
+target is known, so any relation constructed now is unfalsifiable by
+construction. **But signs need no fitting: reservoir DEPLETION makes
+ρ_Λ FALL ⇒ w > −1 (quintessence), while F-W-1's −1.023 makes ρ_Λ RISE
+as a^(+0.069) ⇒ phantom. THE TWO MECHANISMS PUSH w IN OPPOSITE
+DIRECTIONS** ⇒ **3404 §4's "depletion may be the source of −1.023" is
+WITHDRAWN one patch after being proposed.** Three readings, none
+adopted: depletion negligible today (⇒ reservoir gives exactly −1, all
+of the −0.023 from the horizon route — cleanest, consistent with
+3404's headroom table) · depletion active (⇒ it opposes F-W-1, so the
+horizon route must overshoot — a quantitative link between them) ·
+F-W-1's phantom sign is itself worth auditing against its own ±0.003
+tolerance.
+
+**LEGITIMATE ROUTE TO A NUMBER (blind):** derive w from R_c, ρ_swap,
+the aggregation rate, and mean entity CP content **with no reference
+to 1.023**, freeze, then compare.
+
+**Next patch (DM/DE): 3406.**
