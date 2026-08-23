@@ -215,4 +215,45 @@ CPP clothing, and the record should say so plainly.**
 
 Worker's pre-declaration CORRECT — **two of eight.**
 
-**Next patch (DM/DE): 3408.**
+### 3408 — the F-W-1 provenance audit: the IR scale IS A FIT
+
+**The corpus answered this honestly at Patch 1162 and nothing since
+has closed it.** In its own words, `R_h` is *"dynamically correct
+(Li-2004, w_now ≈ −1.02) but **selected by requiring the right
+dynamics, not derived**"*, and *"the event horizon is presently a fit.
+Worse: CPP's only substrate argument (Step C) points to the WRONG
+scale."* The Step-C scale `R_H` has the genuine CPP argument
+(PSR-at-c, Hubble-time equilibration) and is **ruled out** by
+Hsu-2004; the scale that works has **no derivation.**
+
+**Not closed since:** 1162's candidate route (A4 Nexus severance
+boundary rather than A3′ retarded propagation — attractive, and it
+makes HDE's future-dependence natural) records **"No verdict moved,"**
+and the 3058 follow-up still reads *"conditionally supported pending
+the panel"* with the coordinable-region principle *"open as a possible
+sharpening."*
+
+**WHAT F-W-1 IS, PRECISELY:** imported functional form (Li-2004 HDE,
+self-consistent ODE, c = 1 — the −1.02x output is the standard Li
+result at Ω_Λ ≈ 0.7, not a novel number) · **fitted cutoff** · CPP's
+genuine contribution is the **candidate argument** for that cutoff,
+unfinished · **the +2/3 branch displacement IS derived and stands.**
+⇒ **Honest label: a CPP-MOTIVATED HOLOGRAPHIC PREDICTION, not a
+zero-parameter CPP derivation.** Falsifiable and real; its
+distinctiveness is the motivation, which is not yet established.
+
+**WORKER CORRECTION:** earlier this session the worker called F-W-1
+"the strongest publishable piece… doesn't require the reader to accept
+the whole framework." **Wrong in its load-bearing clause** — a referee
+checking provenance finds the Li form and a fitted cutoff, and the
+claim collapses to *"CPP offers a novel motivation for the
+event-horizon cutoff of HDE"*: publishable and interesting, but a
+different and much weaker paper. **The assessment was issued without
+auditing provenance and the founder acted on it in good faith.**
+
+**TO MAKE IT A CPP PREDICTION:** close 1162's condition — derive `R_h`
+from A4 and supersede the Step-C argument. Until then, quote F-W-1
+with the label above. **Not a demotion of the work: the removal of a
+claim the work never made and only the worker's summary attached.**
+
+**Next patch (DM/DE): 3409.**
