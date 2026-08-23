@@ -341,4 +341,43 @@ fully compatible with the cancellation-completion route and NOT with
 an instantaneous-coordination reading** — an independent indication
 the attribution was wrong.
 
-**Next patch (DM/DE): 3411.**
+### 3411 — the A3′ route is REFUTED; both horns of the fork now closed
+
+**FOUNDER CORRECTION SUSTAINED:** *"DI bits don't cancel, except to add
+to a total in the Compute phase."* ⇒ 3409 §2's steps 1–3 required
+cancellation to be a two-way process requiring sustained exchange;
+**it is not a process at all but a per-Moment sum, so nothing is left
+"incomplete" for a horizon to prevent.** **AND THE CORPUS SAID SO
+ALREADY:** `condition2_2i_coherence_vs_equilibration.md` — *"1107–1108…
+is LOCAL and retarded — A4 plays no role… the shell-sum annihilates
+the absolute-|SSV| monopole (Σv̂ = 0 by icosahedral symmetry)… a
+local-geometric fact… **it says nothing about the residual IR
+scale**."* **The worker proposed a route resting on that being a
+two-way temporal process, in ignorance of the file whose subject is
+exactly this fork.** §3.1 discharged: **NO.**
+
+**BOTH HORNS CLOSED:** A4 **STRUCK** (3410, category mismatch); A3′
+**INSUFFICIENT** (local-geometric, silent on the IR scale) ⇒ **the
+event-horizon cutoff has NO remaining candidate route in the corpus,
+and 3408's label on F-W-1 is HARDER to remove than when written.**
+
+**DEEPER READING (offered, not adopted):** the founder's own mechanism
+— formation/evaporation equilibrium with a slight evaporation
+advantage for old entities, letting new entities fill new volume — is
+a **substance-density** mechanism with **no IR cutoff in it.** An IR
+cutoff is *constitutive* of HDE (ρ_Λ = 3c²M_p²/L²) but **absent from
+CPP's native quantity**, since the calibration already computes Λ from
+d_s directly (c_Li = √(…Φ)/d_s). **If CPP's vacuum energy is a
+substance density it needs no L, the entire condition-2 arc answers a
+question CPP never had to ask, and the native prediction is 3407's
+blind result: constant density ⇒ w = −1 EXACTLY, with the −1.023 an
+artifact of the imported framework and its fitted cutoff.** Retiring
+the HDE overlay touches a shipped arc — **a founder decision, but it
+belongs on the table now that both justifying routes are closed.**
+
+**Worker accounting this session:** A4 dilemma (too generous,
+corrected 3410) · cancellation route (refuted here by a document it
+should have read first) · F-W-1 publishability assessment (corrected
+3408). **The record of routes closed is the useful part.**
+
+**Next patch (DM/DE): 3412.**
