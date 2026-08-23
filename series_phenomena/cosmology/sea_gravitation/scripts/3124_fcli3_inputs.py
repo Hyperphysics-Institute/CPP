@@ -6,7 +6,7 @@ lagged arc scheme = the campaign scheme), 3104 S3 read-outs."""
 import sys, json, os
 import numpy as np
 
-def run_cell(ds, n_side, seed, T=3000, sig_n=0.30):
+def run_cell(ds, n_side, seed, T=3000, sig_n=0.30, tail=None):
     rng = np.random.default_rng(seed)
     Np = n_side**3; Nc = 2*Np; L = n_side*ds
     grid = np.array([[i,j,kk] for i in range(n_side) for j in range(n_side)
@@ -49,7 +49,15 @@ def run_cell(ds, n_side, seed, T=3000, sig_n=0.30):
         s = np.sqrt(np.einsum('ij,ij->i',w,w))
         good = use & (s>1e-9)
         Fc += np.where(good, Gcp*qp/(np.maximum(s,1.0)**2*np.where(s>1e-9,s,1.0)), 0.0)[:,None]*w
-        fld = rng.normal(0,sig_n,(Nc,3))
+        # Patch 3195 (D-TAIL-2): matched-variance tail variants. tail=None
+        # leaves this line and its RNG draw byte-identical -- verified.
+        if tail is None:
+            fld = rng.normal(0,sig_n,(Nc,3))
+        else:
+            p_b = tail
+            amp = sig_n/np.sqrt(p_b)
+            hit = rng.random((Nc,3)) < p_b
+            fld = np.where(hit, rng.normal(0,amp,(Nc,3)), 0.0)
         near = r[idx,partner]<1.0
         for i in np.where(near)[0]:
             if i<partner[i]: fld[partner[i]]=fld[i]
