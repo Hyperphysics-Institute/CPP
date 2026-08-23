@@ -415,4 +415,43 @@ justification route (3410/3411), sign disagreement with current data
 HDE calculation the programme once adopted": **a lost headline, and an
 increase in honesty.**
 
-**Next patch (DM/DE): 3413.**
+### 3413 — the founder's mechanism reduces to ONE measurable exponent
+
+**Write p ≡ d ln n_eq / d ln T. With T ∝ 1/a and ρ_Λ ∝ n_eq:
+w = −1 + p/3.** The founder's stated sign (hotter ⇒ denser ⇒ p > 0)
+gives **w > −1 — the DESI-preferred direction, and the FIRST CPP route
+in this arc to point the correct way** (the HDE overlay points the
+opposite way, 3412).
+
+**Required magnitudes:** w₀ = −0.90 needs **p = +0.300**; −0.95 needs
++0.150; −0.99 needs +0.030.
+
+**WHAT THE CORPUS ALREADY BOUNDS:** 3131/3129 INV-SENS — d_s^emp moves
+**≤ 0.021 across σ_n ∈ [0.05, 0.45]** (9×) ⇒ |d ln d_s/d ln σ| ≤
+0.00206; with σ ~ √T and n ∝ d_s⁻³ ⇒ **|p| ≤ 0.0031 ⇒ w = −1.000 ±
+0.001 — ninety-seven times too small for w₀ = −0.90.**
+
+**THE ESCAPE, AND IT IS REAL: σ_n is probably NOT a temperature
+proxy** — 3181 found the ambient field **self-generates at σ ≈ 0.27
+with the drive set to ZERO**, flat across a 16× range, and **a
+quantity the Sea ignores cannot be its temperature.** The substrate's
+thermal scale is the CP kinetic-energy distribution: **emergent, never
+controlled, never measured.** So §3's bound constrains drive
+sensitivity, not temperature sensitivity.
+
+**THE EXPERIMENT THIS DEFINES — the lane's best remaining target:**
+give the instrument a **genuine temperature knob** (set the CP
+kinetic-energy scale, not the injected field), measure **p** over the
+widest sustainable T range, and then **w₀ = −1 + p/3 is a
+ZERO-PARAMETER CPP PREDICTION directly comparable to DESI's w₀ — and
+it CAN FAIL, because p is measured before w is quoted.** **Unlike
+w = −1 (ΛCDM's value, distinguishes CPP from nothing) and unlike
+F-W-1 (imported, fitted, wrong sign), p is a substrate quantity CPP
+alone predicts.** Freeze required first: temperature definition, T
+range, relaxation criterion, reading thresholds. **Not begun.**
+
+**Status: direction CORRECT (first in the arc) · magnitude UNMEASURED,
+with the only existing proxy ~100× too small · decisive test DEFINED,
+cheap, unrun.**
+
+**Next patch (DM/DE): 3414.**
