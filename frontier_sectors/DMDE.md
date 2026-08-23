@@ -295,4 +295,50 @@ are discharged. Anti-extraction note recorded: the target was known
 before the route was written, so the route cannot be scored as a
 prediction; its value is structural and (1) decides it independently.
 
-**Next patch (DM/DE): 3410.**
+### 3410 — AXIM-4 was MISCHARACTERIZED; the A4 route is STRUCK
+
+**FOUNDER CHALLENGE SUSTAINED.** Registry: `AXIM-4 | A4 (approx.) |
+SSV interaction / Nexus`. c01 defines the tick: *"the Nexus is outside
+spacetime… its enforcement of DI-bit conservation doesn't propagate
+through spacetime at finite speed… the tick is instantaneous and
+universal — **not a signal, but a constraint**."* ⇒ **AXIM-4 is a
+global CONSERVATION constraint; "instantaneous and universal"
+describes the SIMULTANEITY OF THE UPDATE, not long-range influence.
+Nothing in it coordinates separated regions.**
+
+**1162 called it "the Bell-violation mechanism" and built the `R_h`
+route on "regions beyond R_h can never again be Nexus-coordinated."
+Both fail:** the Bell/EPR work lives in the **superdeterminism**
+series (SD-3/SD-4 carry the heaviest Nexus usage, as a constraint on
+shared history), and **the founder's QM-series audit found no
+instantaneous coordination in entanglement or QM — exactly what the
+definition predicts**; and "Nexus-coordinated" is not a property the
+axiom confers, so **the premise has no referent.**
+
+**⇒ 3409 §1's "dilemma" was TOO GENEROUS. The correct diagnosis is a
+CATEGORY MISMATCH** — AXIM-4 governs conservation bookkeeping while
+the question is which vacuum MODES fail to cancel. **The A4 route to
+R_h is STRUCK**; no sharpening of "coordinable = ever-reachable"
+(1164/3058) can repair it.
+
+**SURVIVES UNALTERED: the A3′ CANCELLATION-COMPLETION route** — and
+**never using A4 is now its principal advantage.** Debts unchanged;
+**§3.1 (verify two-wayness in the 1107–1108 shell-sum work) remains
+the decisive, cheap next check.**
+
+**CORPUS DEFECT NAMED:** a registry SHORTHAND ("SSV interaction /
+Nexus") was expanded in another sector into a physical claim the
+axiom's own defining document contradicts, and stood for months.
+Damage contained (1162 recorded "No verdict moved"). **Discipline
+offered, not imposed: when an argument in sector X leans on an axiom
+developed in sector Y, quote the DEFINING DOCUMENT, not the registry
+line.**
+
+**FOUNDER'S SSV_net POINT:** displacement sums exceeding PSR give
+tunneling/Schrödinger while the bulk average stays Newtonian and
+relativistic — **a THRESHOLD mechanism inside A3′-causal propagation,
+fully compatible with the cancellation-completion route and NOT with
+an instantaneous-coordination reading** — an independent indication
+the attribution was wrong.
+
+**Next patch (DM/DE): 3411.**
