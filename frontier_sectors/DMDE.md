@@ -55,4 +55,34 @@ tail findings do not transfer to it.**
 **Machines:** Kila6 β-ladder Phase 1B steady, ~2–3 days — **outranks
 everything, own round on arrival.** VideoCPU free.
 
-**Next patch (DM/DE): 3402.**
+### 3402 — the founder's temperature argument analysed
+
+**RIGHT IN KIND, and it lands in exit (2): the Sea DILUTES.** Founder:
+CP number fixed, but the equilibrium DP-entity concentration is
+TEMPERATURE-DEPENDENT (thermal velocities set the fraction of time
+entities spend within reactive-contact distance), so density falls as
+the universe cools — the early universe held far more entities per
+volume. **This removes 3401 §3's bookkeeping objection entirely (it
+assumed constant density) and DISCHARGES the free-fraction tension by
+removing the branch that required it.** Consistency note so the
+argument is not over-credited: with T ∝ 1/a, tracking needs
+n_eq ∝ T³, which conservation already delivers — the
+temperature-dependence is consistent with the dilution, not
+additional to it, and does not by itself predict the rate.
+
+**THE CONSTRAINT IT CREATES (ρ_Λ ∝ n^γ ⇒ γ = 1 + w):**
+| ρ_Λ ∝ | γ | w | verdict |
+|---|---|---|---|
+| n¹ (entity number density) | 1 | **0** | **matter-like — EXCLUDED** |
+| constant | 0 | −1 | pure Λ |
+| **F-W-1** | **−0.023** | **−1.023** | the live claim |
+
+⇒ **ρ_Λ ∝ d_s^(+0.069): the vacuum energy must be ALMOST INDEPENDENT
+of the Sea's spacing — +4.9% when the spacing DOUBLES.** Natural-looking
+candidates are all excluded: d_s^(−4) ⇒ w = +1/3, d_s^(−3) ⇒ w = 0,
+d_s^(−1) ⇒ w = −2/3. **NEXT MOVE, ZERO COMPUTE, POTENTIALLY DECISIVE:
+an algebra audit of the calibration relation's actual d_s dependence.
+If it is not near-flat, CPP contradicts its own live prediction —
+an INTERNAL contradiction findable by algebra, not observation.**
+
+**Next patch (DM/DE): 3403.**
