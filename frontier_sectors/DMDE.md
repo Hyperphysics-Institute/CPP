@@ -454,4 +454,44 @@ range, relaxation criterion, reading thresholds. **Not begun.**
 with the only existing proxy ~100× too small · decisive test DEFINED,
 cheap, unrun.**
 
-**Next patch (DM/DE): 3414.**
+### 3414–3415 — D-TEMP-1: the knob works, and the answer is EXCLUDED
+
+**THE TEMPERATURE KNOB IS REAL:** the instrument is overdamped
+(X ← X + F, no velocity state) so T ∝ σ_n²; **INV-SENS's null was a
+RANGE defect** — 3181's self-generated floor (σ_amb ≈ 0.27) dominated
+its whole [0.05, 0.45] window, so the Sea was never heated. Across
+**64× in T** the bound fraction falls **0.47026 → 0.30334 (−36%)**
+versus ≤ 0.5% before.
+
+**p = −0.430 (four points) / −0.553 (upper three), linearity gap
+0.123 ⇒ w = −1.143 / −1.184: PHANTOM** in the frozen words.
+
+**THREE FINDINGS:** (1) **the founder's stated sign is WRONG at the
+pair level** — hotter gives FEWER bound pairs (heat unbinds), so
+3413's directional advantage is **not delivered by this proxy**, which
+points back onto the retired overlay's side; (2) **the worker's
+disclosed two-point extrapolation (p ≈ −0.11) was 4–5× too small** —
+right in sign, wrong in magnitude, and **that was precisely what 3414
+§4.2 said the run would test**; (3) **the result is EXCLUDED BY
+OBSERVATION** — w ≈ −1.14 is ~4σ outside w = −1.03 ± 0.03.
+
+**THE DELIVERABLE: the identification ρ_Λ ∝ f_b(T) at fixed spacing is
+ELIMINATED BY DATA** — the lane's first elimination performed by
+measurement against a quantitative prediction, rather than by
+argument.
+
+**AND THE PROXY CAVEAT IS NOW LOAD-BEARING:** f_b is the **PARTITION**
+response (what fraction of a FIXED pair count is bound) while the
+founder's n_eq is the **CONCENTRATION** response (how many entities
+exist per volume, free to change by drawing on the reservoir). **The
+instrument cannot create entities, so it cannot measure the founder's
+p at all.** ⇒ **The mechanism is NOT refuted; the substitution of the
+proxy for it is.**
+
+**CONSEQUENCE: measuring the founder's p requires an OPEN/COMOVING
+instrument that can create and destroy entities — now needed at three
+separate points (3400 §3.3, 3411, here). That build is the lane's ONLY
+remaining route to a distinguishing DE prediction; everything cheaper
+has been tried and has failed or proved inapplicable.**
+
+**Next patch (DM/DE): 3416.**
