@@ -180,4 +180,39 @@ tolerance.
 the aggregation rate, and mean entity CP content **with no reference
 to 1.023**, freeze, then compare.
 
-**Next patch (DM/DE): 3406.**
+### 3406–3407 — RES-W-1: the reservoir's BLIND prediction for w
+
+**RESERVOIR-NEUTRAL. 1 + w = −8.32e−61** — the reservoir mechanism
+predicts w = −1 to sixty decimal places and **CANNOT be the source of
+the −0.023**, which is larger by **2.8 × 10⁵⁸**. Route and thresholds
+frozen at 3406 before the number was quoted; inputs are the MEASURED
+R_c (τ = 15.08 Moments), H₀ and Ω_m — **no dark-energy observable
+enters.** Frozen relation: 1 + w = −(3/2)·Ω_m·H·τ.
+
+**Genuinely learned:** (a) **the LAG channel has the RIGHT SIGN** —
+H falls, the tracking deficit shrinks, ρ_Λ rises ⇒ **phantom**, the
+same side as F-W-1 and opposite to depletion, so **3405's sign
+analysis was INCOMPLETE (it considered depletion, not lag)**; (b) the
+magnitude gap is STRUCTURAL — τ is substrate-scale (10⁻⁴² s), H⁻¹
+cosmological (10¹⁷ s), and **any deviation scaling as H·τ is dead by
+~60 orders; no refinement of R_c, the aggregation rate, or entity
+content can change it**; (c) depletion is negligible unless within
+~1× of exhaustion.
+
+**CONSEQUENCE: the reservoir mechanism is cosmologically INERT for w.**
+Coherent, conservation-respecting, keeps ρ_Λ constant, predicts an
+eventual end to constancy — **but explains nothing about −0.023 and
+cannot be made to.** 3404 §4 proposed the connection, 3405 withdrew it
+on sign, **3407 closes it on magnitude, blind.** The founder's
+"produce the 1.023" is answered: **not from this mechanism, and now
+demonstrably rather than by refusal.**
+
+**SUCCESSOR (pure algebra, no machine): audit F-W-1 itself** — is
+−1.023 robustly below −1 within its own ±0.003, and are the Li-form
+derivation's inputs CPP quantities or imported cosmology? **If
+imported, the flagship DE prediction is a holographic result wearing
+CPP clothing, and the record should say so plainly.**
+
+Worker's pre-declaration CORRECT — **two of eight.**
+
+**Next patch (DM/DE): 3408.**
