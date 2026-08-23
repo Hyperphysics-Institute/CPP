@@ -256,4 +256,43 @@ from A4 and supersede the Step-C argument. Until then, quote F-W-1
 with the label above. **Not a demotion of the work: the removal of a
 claim the work never made and only the worker's summary attached.**
 
-**Next patch (DM/DE): 3409.**
+### 3409 — attempting 1162's condition: the A4 dilemma, and an A3′ route
+
+**THE A4 ROUTE HAS A DILEMMA AT ITS CENTRE.** Its load-bearing step —
+*"a region beyond R_h can never again be Nexus-coordinated"* — is a
+CAUSAL premise imposed on an explicitly A-CAUSAL axiom. **If A4 is
+genuinely instantaneous and non-local, no horizon limits it and the
+cutoff should be the lattice itself; if A4 needs eventual causal
+contact, it is not a-causal — and that is the very property A4 exists
+to supply (Bell violation), with costs in QM/SD where A4 is used.**
+The corpus exposed this without naming it: 1164 left *"coordinable =
+ever-reachable"* standing as a physical principle and 3058 still calls
+it *"open as a possible sharpening"* — **that principle is the extra
+premise doing the work, and it is asserted, not derived.**
+
+**OFFERED INSTEAD — THE CANCELLATION-COMPLETION ROUTE (A3′ only):**
+bulk cancellation is local shell-sum monopole annihilation (1107–1108),
+a **two-way** process requiring DI-bit exchange, hence light-cone
+causal; a comoving mode cancels only if its parts retain **future
+mutual contact**; regions beyond `R_h` never again exchange signals;
+⇒ **modes with λ ≳ R_h can NEVER complete cancellation and the
+residual is set by R_h.** **This supersedes Step C with a category
+diagnosis: `R_H` is the RATE scale ("how fast does cancellation
+proceed now?") while the residual is fixed by the COMPLETION scale
+("which modes can ever finish?") — Step C's error was category, not
+arithmetic.** Future-dependence becomes *earned* rather than awkward.
+
+**WHAT THE ROUTE OWES (named):** (1) **two-wayness must be VERIFIED**
+against the existing shell-sum work — if cancellation is one-way or
+purely local the route collapses; **decisive, cheap, no machine**;
+(2) "never completes ⇒ survives at full amplitude" needs justification
+(partial cancellation would change the coefficient); (3) **c = 1 is
+NOT derived** — the route fixes the SCALE, not the normalization, and
+w_now is sensitive to c.
+
+**NOT a closure. 3408's label on F-W-1 stands unaltered** until (1)–(3)
+are discharged. Anti-extraction note recorded: the target was known
+before the route was written, so the route cannot be scored as a
+prediction; its value is structural and (1) decides it independently.
+
+**Next patch (DM/DE): 3410.**
