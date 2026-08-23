@@ -380,4 +380,39 @@ corrected 3410) · cancellation route (refuted here by a document it
 should have read first) · F-W-1 publishability assessment (corrected
 3408). **The record of routes closed is the useful part.**
 
-**Next patch (DM/DE): 3412.**
+### 3412 — the EMPIRICAL check: the native prediction wins on SIGN
+
+**Current data (DESI DR2, 2025) prefer w₀ > −1 TODAY with w < −1 in
+the PAST, crossing near z ≈ 0.5** (collaboration quotes up to 4.2σ for
+w₀wₐCDM on BAO+Planck+DES-SN5YR). **Robustness contested:** Bayesian
+nested sampling on DESI DR2 BAO + Planck **modestly favours ΛCDM**
+(ln B = −0.57 ± 0.26), tracing the three-probe preference to a ~2.95σ
+DESI-vs-DES-SN5YR tension **present only within ΛCDM**, which
+**vanishes** on a recalibrated SNe compilation (ln B = −0.30 ± 0.19).
+
+| prediction | today | vs best fit |
+|---|---|---|
+| **F-W-1** (imported HDE, fitted cutoff) | −1.023, **phantom** | **WRONG SIDE** — data's w₀ is ABOVE −1 now, and the phantom phase sits in the PAST |
+| **CPP-native** (constant density, 3407/3411) | **−1 exactly** | the ΛCDM value under test; **viable**, and Bayes-favoured on BAO+CMB |
+
+**First time in this arc the two candidates are distinguished by DATA
+rather than internal argument — and the native one wins on sign.**
+
+**CAUTION, both ways:** this does NOT falsify F-W-1 (the evolving-DE
+signal is contested); and it does NOT vindicate CPP, since **w = −1 is
+ΛCDM's value and predicting it distinguishes CPP from nothing** — the
+native prediction's virtue is being a genuine consequence of the
+substrate rather than an overlay. **HIGHEST-VALUE TARGET LEFT: predict
+the CROSSING.** The data's distinctive feature is w < −1 then, > −1
+now; **a substrate exactly constant now but temperature-dependent in
+hotter epochs (the founder's own 3402 qualification) has in principle
+the structure to produce redshift-dependent w.** Not attempted.
+
+**RECOMMENDATION (decision, not ruling): three independent reasons now
+support retiring the HDE overlay** — provenance (3408), no surviving
+justification route (3410/3411), sign disagreement with current data
+(here). Retiring it demotes F-W-1 from "CPP's DE prediction" to "an
+HDE calculation the programme once adopted": **a lost headline, and an
+increase in honesty.**
+
+**Next patch (DM/DE): 3413.**
