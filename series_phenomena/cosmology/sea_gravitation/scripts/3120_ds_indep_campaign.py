@@ -138,7 +138,7 @@ def run(ds, n_side, seed, r_soft=1.0, drive=None, probe=False, fprobe=False, con
             cen = (X[a] + 0.5*dab) % L
             dd = cen[:,None,:]-cen[None,:,:]; dd -= L*np.round(dd/L)
             sdm = np.sqrt(np.einsum('ijk,ijk->ij', dd, dd)); np.fill_diagonal(sdm, np.inf)
-            for ri, rc in enumerate((1.2*ds, 1.5*ds, 2.0*ds)):
+            for ri, rc in enumerate((0.5*ds, 0.7*ds, 0.9*ds)):
                 adj = sdm < rc; nn = len(cen)
                 seen = np.zeros(nn, bool); sizes = []
                 for i0 in range(nn):

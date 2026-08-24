@@ -13,8 +13,8 @@ SG=os.path.normpath(os.path.join(HERE,"..","scripts"))
 sp=importlib.util.spec_from_file_location("m",os.path.join(SG,"3120_ds_indep_campaign.py"))
 E=importlib.util.module_from_spec(sp); sp.loader.exec_module(E)
 DS,N,T=4.636,5,1024; Nc=2*N**3
-SIGS=(0.15,0.30,0.60,1.20); SEEDS=(5,11); RLAB=("1.2ds","1.5ds","2.0ds")
-ST=os.path.join(HERE,"3417_entity_state.json")
+SIGS=(0.15,0.30,0.60,1.20); SEEDS=(5,11); RLAB=("0.5ds","0.7ds","0.9ds")
+ST=os.path.join(HERE,"3418_entity_state.json")
 
 def cmd_run():
     for sig in SIGS:
@@ -51,8 +51,14 @@ def cmd_analyze():
         if (y<=0).any(): print(f"  {r}: degenerate (zero clusters)"); ps.append(None); continue
         p=2*np.polyfit(np.log(SIGS),np.log(y),1)[0]; ps.append(p)
         print(f"  r_clus={r}: p = {p:+.4f}  -> w = {-1+p/3:+.4f}")
+    # Patch 3418 PERCOLATION GUARD (frozen): a threshold whose mean aggregate
+    # spans >50% of all DPs is measuring the lattice, not clumping.
+    NDP=125
+    perc=[ri for ri in range(3) if tab[SIGS[0]][ri][1] > 0.5*NDP]
+    for ri in perc: print(f"  r_clus={RLAB[ri]}: PERCOLATED (<k> > 50% of DPs) -> voided")
+    ps=[None if ri in perc else ps[ri] for ri in range(3)]
     good=[p for p in ps if p is not None]
-    if len(good)<3: print("\nVERDICT: THRESHOLD-ARTEFACT (degenerate threshold) -- no reading")
+    if len(good)<3: print("\nVERDICT: DEGENERATE/PERCOLATED -- no reading (prereg S3 + 3418 guard)")
     elif all(p>0 for p in good): print(f"\nVERDICT (frozen): QUINTESSENCE-SIDE  w = {-1+np.mean(good)/3:+.4f}")
     elif all(p<0 for p in good): print(f"\nVERDICT (frozen): PHANTOM-SIDE  w = {-1+np.mean(good)/3:+.4f}")
     else: print("\nVERDICT (frozen): THRESHOLD-ARTEFACT -- sign differs across thresholds, no reading")
