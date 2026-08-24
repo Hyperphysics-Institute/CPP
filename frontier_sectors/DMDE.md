@@ -494,4 +494,42 @@ separate points (3400 §3.3, 3411, here). That build is the lane's ONLY
 remaining route to a distinguishing DE prediction; everything cheaper
 has been tried and has failed or proved inapplicable.**
 
-**Next patch (DM/DE): 3416.**
+### 3416–3419 — D-ENTITY-1: artefact verdict, but a decisive BOUND
+
+**3416 froze the entity-COUNT observable (not the pair partition) as a
+new observable on CERTIFIED dynamics — the worker declined a
+reaction-kinetics build because its n_eq(T) would be whatever binding
+energies the worker chose.** 3418 corrected a worker design error
+caught by the data: the first thresholds (1.2–2.0 × d_s) sat ABOVE the
+lattice spacing, so the graph percolated and N_clus = 1 identically —
+**the observable measured the lattice**; corrected to sub-lattice
+(0.5/0.7/0.9 × d_s) with a **percolation guard** added.
+
+**3419 RESULT: p = +0.0593 / −0.0024 / −0.0314 ⇒ signs disagree ⇒
+THRESHOLD-ARTEFACT, no reading** (the guard did its job). **BUT THE
+SIGN-INDEPENDENT BOUND SURVIVES: |p| ≤ 0.059 at every threshold ⇒
+|w + 1| ≤ 0.020, w ∈ [−1.020, −0.980].** w₀ = −0.90 needs p = 0.300 —
+**5.1× the largest |p| observed**; F-W-1's −1.023 needs p = −0.069,
+above two thresholds and wrong-signed at the third. **The mechanism
+cannot deliver either candidate.**
+
+**STRUCTURAL FINDING:** across 64× in T the entity **COUNT** moves
+**+0.9%** while the bound **FRACTION** falls **−35.5%**, with mean
+aggregate size near-constant ⇒ **aggregates persist in NUMBER; heating
+acts on the binding WITHIN them, not by shattering them into more
+entities.** That contradicts the worker's 3416 §5 physical premise;
+**QUINTESSENCE-SIDE NOT SCORED (no reading) but its premise is
+refuted.** Eight pre-declarations: two correct, five wrong/not
+confirmed, one unscorable.
+
+**LANE-LEVEL CONCLUSION — THE CHEAP ROUTES ARE EXHAUSTED:** reservoir
+lag/depletion (3407) |w+1| ~ 10⁻⁶¹, **inert** · pair partition (3415)
+w ≈ −1.14, **excluded by observation** · entity concentration (3419)
+**|w+1| ≤ 0.020, Λ-like.** ⇒ **CPP's substrate predicts w = −1.00 ±
+0.02: it does NOT currently predict dynamical dark energy. If DESI's
+evolving-w consolidates, CPP has a problem; if it dissolves, CPP
+agrees with ΛCDM and distinguishes itself from nothing.** What remains
+is the **open/comoving instrument** — a build, not a run, now required
+at four separate points.
+
+**Next patch (DM/DE): 3420.**
