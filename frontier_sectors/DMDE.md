@@ -532,4 +532,17 @@ agrees with ΛCDM and distinguishes itself from nothing.** What remains
 is the **open/comoving instrument** — a build, not a run, now required
 at four separate points.
 
-**Next patch (DM/DE): 3420.**
+### 3420 — SESSION HANDOVER WRITTEN
+
+`handovers/2026-08-23_session_157_dmde_cheap_routes_exhausted.md` —
+kickoff-line mirror, Orientation-first, convention filename. Carries:
+the block/lane-isolation rules · the founder's five vindicated results
+· the three routes killed and how · the F-W-1 audit and the
+undecided overlay question · the five additive instrument changes ·
+the frozen conclusions that must not be re-litigated · **and the
+worker's error record (eight withdrawals/corrections; two of eight
+pre-declarations correct), with the instruction that the next window
+read `condition2_*` and `reasoning/` BEFORE proposing routes, since
+two refutations came from documents already in the repo.**
+
+**Next patch (DM/DE): 3421.**
