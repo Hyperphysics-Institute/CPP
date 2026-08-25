@@ -581,3 +581,29 @@ Phase-7B-style pass (lane-isolation practice). Reopeners listed in
 the record's §3.
 
 **Next patch (DM/DE): 3423.**
+
+### 3423 — FOUNDER RULING: THE OPTICAL CHANNEL IS THE LENSING CHANNEL
+
+`founder_ssvabs_lensing_channel_ruling.md` — the §4.6 question is
+ANSWERED: SSV_abs is a local long-range field (two-box answer:
+multiple photon speeds near a glueball); the cosmological driver is
+ABSOLUTE heavy-CP density decline, not fixed-count redistribution;
+and the mechanism is identified with DM-halo lensing ("light goes
+slower through space with a higher concentration of heavy objects").
+**Three yields: F1's substrate half settled (far field unscreened —
+coat screening would kill observed lensing; c rises as the reservoir
+empties); the free coupling ELIMINATED (lensing calibrates the
+SSV_abs → c response ⇒ cosmological Δc/c is zero-free-parameter,
+sharpening F2); and the 0739 composition-channel μ↔ε symmetry
+question receives a mechanism-level answer (composition acts THROUGH
+the gravity channel), flagged as a candidate closure for the SR lane
+— not closed here.** One risk registered before derivation: a
+metric-absorbable c-variation is gravity re-labelled (0737/0739), so
+VARC-1 is sharpened to compute the DIVERGENCE of coasting+c(t) from
+constant-c FRW across SNe + BAO + CMB jointly; agreement everywhere
+kills the route. F1's observational half (does rising c on coasting
+mimic acceleration in d_L(z)) remains uncomputed, no pre-declaration.
+VARC-1: UNBLOCKED. §1b floor question still open, magnitude-order
+only.
+
+**Next patch (DM/DE): 3424.**

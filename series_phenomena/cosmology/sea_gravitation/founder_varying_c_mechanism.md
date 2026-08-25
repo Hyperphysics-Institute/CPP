@@ -191,8 +191,12 @@ rather than embarrass.
    overlay ruling (handover §3, still open) now has a fourth
    consideration bearing on it.
 
-6. **The SSV_abs composition-dependence question (founder question
-   pending, registered 24 Aug):** does the SSV_abs a transiting photon
+6. **The SSV_abs composition-dependence question — ANSWERED by
+   founder ruling, 24 Aug (see
+   `founder_ssvabs_lensing_channel_ruling.md`, Patch 3423): SSV_abs is
+   a local long-range field, the far field is unscreened (established
+   by the lensing identification), and the substrate sign stands.**
+   Original registration follows for the record: does the SSV_abs a transiting photon
    experiences depend only on the total CP count per volume, or on how
    those CPs are ORGANIZED (locked in one dense coated glueball vs
    dispersed as 2DPs through the same volume)? §1's optical chain
