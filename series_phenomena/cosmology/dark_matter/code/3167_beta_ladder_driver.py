@@ -503,8 +503,24 @@ def run_1b(workers, duplicates=False):
                 print(f"  done {os.path.basename(out)} ({w:.0f}s) "
                       f"[{done} new; {(time.time() - t0) / 3600:.1f} h]",
                       flush=True)
-    print("PHASE 1B DUPLICATES COMPLETE" if duplicates
-          else "PHASE 1B CAMPAIGN COMPLETE")
+    # Patch 3199: count files before declaring, as Phase 1's run_all does.
+    # The 3180 version printed COMPLETE unconditionally at the end of the
+    # task loop, so a fully-skipped invocation announced success without
+    # evidence. Caught on 25 Aug when a post-crash relaunch printed
+    # COMPLETE instantly; completeness had to be verified by hand.
+    if duplicates:
+        have = len(glob.glob(os.path.join(DUP_1B, 'leg_*.json')))
+        want = len(_tasks_1b(True))
+        print("PHASE 1B DUPLICATES COMPLETE" if have >= want
+              else f"PHASE 1B DUPLICATES INCOMPLETE: {have}/{want}")
+        return
+    have = sum(os.path.exists(leg_path_1b(p_, br))
+               for p_ in range(N_PAIRS_1B) for br in ('step', 'ctrl'))
+    want = N_PAIRS_1B * 2
+    print(f"PHASE 1B CAMPAIGN COMPLETE ({have}/{want} legs present)"
+          if have >= want
+          else f"PHASE 1B INCOMPLETE: {have}/{want} legs present — "
+               f"re-run --run-1b")
 
 
 def verify_duplicates_1b():

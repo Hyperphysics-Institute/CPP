@@ -99,3 +99,84 @@ same mechanism class and is not risk-free.
 recorded at Patch 3173 is DEMOTED, not retired — CMOS battery voltage,
 the BMC event log, and the front-panel PWR_SW header remain unchecked and
 still explain a no-minidump shutdown equally well.
+
+
+## H-CORETEMP **REFUTED** — and the fault is LOAD-INDEPENDENT (25 Aug 2026)
+
+**The hypothesis is dead in its strong form.** Kila6 rebooted uncleanly
+on 25 Aug at 11:41:28 with **Core Temp not installed and not running**,
+after two consecutive multi-day campaigns without it. The ring-0 driver
+mechanism was sound as a mechanism and wrong as the explanation. Recorded
+as a worker error: it accounted for the missing crash evidence too neatly,
+and that elegance was given more weight than it had earned.
+
+**LOAD-INDEPENDENCE — the new, load-bearing finding.** File mtimes place
+the last Phase 1B leg at **10:11:24**; the crash was **11:41:28**. The
+campaign had finished and Python had exited **90 minutes earlier**. The
+machine died **at idle**, after ~75 h at 100% on 32 threads.
+
+Consequence: explanations requiring current draw, thermal stress, or
+transient load demand are **eliminated or badly damaged** — VRM stress
+under load, PSU sag under load, inadequate cooling. Whatever this is does
+not care what the CPU is doing. (Note the earlier reading was backwards:
+the clean long runs were taken as evidence that load was safe, when the
+machine simply spends most wall-clock time idle.)
+
+### Event history (Windows System log, Ids 41 / 6008 / 1001)
+
+| Date | Events | Note |
+|---|---|---|
+| 17 Aug | 4 (07:22, 12:43, ~13:29, 17:29) | pre-BIOS-reset rate: hours |
+| 18 Aug | 1 (20:56) | |
+| 19–24 Aug | **0** | ~135 h near-continuous 100% load, 2 campaigns |
+| 25 Aug | 1 (11:41:28) | **at idle**, 90 min after load ended |
+
+**ZERO Event 1001 across all eight events.** Every one is a bare 41/6008
+pair — no bugcheck, no minidump, no software crash path entered. Windows
+never got the chance to record anything: the signature of power being cut,
+not of an OS or driver fault. This survives H-CORETEMP's death.
+
+**The BIOS factory-default reset (17 Aug) did not cure the fault but
+changed its rate by ~2 orders of magnitude** — from every few hours to
+roughly weekly. Real effect; not a fix. Recorded as such.
+
+**Discounted, deliberately:** the 6008 seconds fields cluster (:27, :27,
+:28, :29). This is an artifact — 6008 reports Windows' last periodic
+"alive" write, quantized near one-minute intervals, not the true crash
+instant. Noted so a later reader does not mistake it for a signature.
+
+## H-USB-RAIL: a second symptom on a different subsystem (25 Aug 2026)
+
+**Founder observation:** a Bluetooth dongle repeatedly stops working and
+does not recover; moving it between **front-panel and rear-panel** USB
+ports does not fix it — it fails again by next use.
+
+Failure across **both** front and rear ports exonerates any single port
+and most likely the dongle. What front and rear share is the USB
+controller and the **+5V / +5VSB rails**.
+
+**Why this matters for the shutdown fault:** two independent faults would
+be a coincidence; **one upstream power-delivery problem producing both is
+simpler**, and it fits a load-independent, instant, logless shutdown. This
+**raises PSU / power-rail health above the front-panel PWR_SW header** in
+the suspect ordering — a marginal power switch would not affect USB at all.
+
+### Suspect list, re-ranked on the 25 Aug evidence
+
+1. **PSU or power-rail fault** (raised) — explains both symptoms; consistent
+   with load-independence and with the absent bugcheck.
+2. **Front-panel PWR_SW header** (still live, now second) — explains the
+   shutdowns but not the USB symptom. **Free test:** unplug PWR_SW from
+   the board entirely, start by briefly bridging the pins with a
+   screwdriver; if shutdowns stop over a week, it is the switch.
+3. **CMOS battery voltage** — unmeasured.
+
+### Owed diagnostics (none yet performed)
+
+- **BMC System Event Log via the DM_LAN1 management port.** Now the
+  highest-value read on the list: the BMC runs on its own power rail and
+  records **rail voltage faults, power-good failures and thermal trips
+  the host can never log.** Outstanding since Patch 3173, still unread.
+- +5V / +5VSB readings in BIOS or via the BMC.
+- Whether the dongle fails specifically during idle/sleep periods
+  (matching the crash timing).
