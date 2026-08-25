@@ -42,3 +42,17 @@ desktop.ini
 # that generated them)
 !**/figures/*.pdf
 anaconda_projects/
+
+# Patch 3424: generated gate certificates and evidentiary legs for the
+# beta-ladder. Patch 3180 accidentally committed a duplicates_1b_verified.json
+# STUB carrying status INCOMPLETE -- an artifact of exercising the refusal
+# guard in a container with no data. A gate-result file in the repo reading
+# INCOMPLETE is worse than no file: it is a false certificate that a later
+# reader could mistake for a real result. Gate status lives in the verdict
+# records, which are prose and reviewed; these files are regenerable from
+# the legs and are not tracked.
+series_phenomena/cosmology/dark_matter/data/beta_ladder/
+series_phenomena/cosmology/dark_matter/data/beta_ladder_1b/
+series_phenomena/cosmology/dark_matter/data/beta_ladder_void_3173/
+series_phenomena/cosmology/dark_matter/analyze_out.txt
+series_phenomena/cosmology/dark_matter/verify_out.txt
