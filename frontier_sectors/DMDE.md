@@ -546,3 +546,38 @@ read `condition2_*` and `reasoning/` BEFORE proposing routes, since
 two refutations came from documents already in the repo.**
 
 **Next patch (DM/DE): 3421.**
+
+### 3421 — FOUNDER'S VARYING-c DE MECHANISM RECORDED; VARC-1 CHARTERED
+
+`founder_varying_c_mechanism.md` — DE as an APPEARANCE of
+acceleration: kinetically-coasting expansion, c rising over cosmic
+time as the heavy-entity reservoir (defined by NON-PRODUCTION in this
+temperature epoch — relic glueballs and DM rings, §1b) depletes and
+mean entity mass falls ⇒ SSV_abs ↓ ⇒ μ, ε ↓ ⇒ c ↑. **Passes the
+dimensionless-configurational filter that killed all four
+energy-density routes, and recasts the lane's w = −1.00 ± 0.02 null
+as a corroboration** (no energy-density DE exists to find).
+Cross-lane: inherits the relativity lane's Q2 (0737) kinematics and
+the Δc/LPI conditional-PASS (0739, R2/2041) — viable iff the
+composition channel moves μ, ε symmetrically (OPEN-SR-9). **VARC-1
+chartered, analytic, zero machine time, falsifiers F1 (sign), F2
+(magnitude/LPI), F3 (early universe) frozen before any number; no
+worker pre-declaration issued.** Open: §4.6, whether SSV_abs depends
+on CP count only or on organization (coat screening) — the substrate
+form of F1, a founder question pending.
+
+### 3422 — F-W-1 OVERLAY DISPOSITION: DEMOTED FROM FLAGSHIP, NOT RETIRED
+
+`fw1_overlay_disposition.md` — the founder, asked to rule, stated he
+did not invent the holographic mechanism and cannot comment; under
+PD-006 the positioning question therefore reverts to the worker.
+**Disposition: F-W-1 keeps the honest 3408 label ("CPP-motivated
+holographic prediction"), loses flagship status, is NOT retired; the
+A4-completion push is NOT chartered; the flagship DE slot is VACANT
+pending VARC-1.** Four reasons on record: provenance (3408), no
+justification route (3410/3411), sign vs data (3412), and mutual
+exclusivity with 3421. Shared-registry propagation deferred to a
+Phase-7B-style pass (lane-isolation practice). Reopeners listed in
+the record's §3.
+
+**Next patch (DM/DE): 3423.**
