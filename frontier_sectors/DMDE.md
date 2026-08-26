@@ -704,5 +704,19 @@ dynamical mechanism; only the open/comoving build remains chartered.**
 Steps 2–3 not reached per frozen order. §1b floor question moot for
 VARC-1, open as Sea physics.
 
-**Next patch (DE): 3431.**
+### 3431 (DE) — EXTERNAL CONTEXT RECORDED: ISICHEI–MAGUEIJO OTTO-CYCLE GRAVITY (PRL 2026)
+
+`external_context_thermodynamic_gravity_2026.md` — at founder
+request. Jacobson-lineage emergent gravity with WORK legs added:
+controlled Lorentz + energy–momentum non-conservation ⇒ matter
+creation ⇒ late-time acceleration without Λ. Recorded because it
+mirrors the lane's closure: acceleration bought with the
+non-conservation AXIM-4 forbids; their η ∝ ℓ/L₂ suppression is the
+lane's H·τ filter with a CHOSEN scale where CPP's was MEASURED
+(~10⁻⁶⁰). Clean discriminators: Lorentz/EP violation + evolving w
+(them) vs exact conservation + w = −1.00 ± 0.02 (CPP, 3419).
+Jacobson-anchor idea flagged to the GR lane, not actioned. No route
+chartered or closed.
+
+**Next patch (DE): 3432.**
 **Next patch (DM): 3501.**
