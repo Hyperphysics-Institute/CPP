@@ -1,0 +1,14 @@
+exact Gauss flux        : -12.566371
+uniform arrangement     : -12.567659   (rel dev 1.03e-04)
+clumped arrangement     : -12.547109   (rel dev 1.53e-03)
+arrangement difference  : 1.64e-03  (MC error on difference 1.74e-03)
+local surface-g stddev  : uniform 0.0346   clumped 0.3466   ratio 10.0x
+
+G1: arrangement effect on mean source beyond MC error? NO — invariant (Gauss), field variance changed 10x while mean did not
+F-G1 frozen reading: ROUTE DEAD at Step-A level (subject to G2 corpus audit)
+F-G1 frozen reading: ROUTE DEAD at Step-A level (subject to G2 corpus audit)
+
+multi-seed campaign (8 seeds): standardized (clumped-uniform) flux differences
+z-scores: [ 0.21  0.33 -0.88  0.53 -1.16  0.34  0.42 -0.81]
+mean z = -0.13 +/- 0.24   (bias test)
+systematic arrangement effect detected? NO — consistent with exact Gauss invariance

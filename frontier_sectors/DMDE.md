@@ -718,5 +718,26 @@ lane's H·τ filter with a CHOSEN scale where CPP's was MEASURED
 Jacobson-anchor idea flagged to the GR lane, not actioned. No route
 chartered or closed.
 
-**Next patch (DE): 3432.**
+### 3432–3433 (DE) — GRADIENT-1 PREREGISTERED, EXECUTED, DEAD
+
+`gradient1_prereg.md` (falsifier F-G1 frozen with the route author's
+own kill-expectation on record) + `gradient1_execution.md` +
+verify script/output. **G1: eight-seed Monte Carlo — clumping moves
+the local field variance 10× and the surface-averaged expansion
+source not at all (mean z = −0.13 ± 0.24): Gauss/M_enc invariance,
+exact.** The first verify run's false SURVIVAL (mis-scaled MC error)
+and a refuted leakage hypothesis are recorded — error bars can
+falsely spare a route as easily as kill one. **G2: no derived
+invariance-breaker** (weak-field map linear, 𝓕 → 0; strong-field
+nonlinearity volume-negligible; ground-state-reference dynamics
+3125-blocked). **DEAD at F-G1.** Diagnosis: the pitch conflated
+field-level gradients with mean-level sourcing; Step A had already
+fixed the mean. 3430 killed the founder's route by his own
+postulates; 3433 kills the worker's by his own execution. **Lane
+remainder: the open/comoving build only — a
+confirm-or-refute instrument for the standing Λ-like conclusion;
+spec chartered as next DE work item, compute decision with the
+spec.**
+
+**Next patch (DE): 3434.**
 **Next patch (DM): 3501.**
