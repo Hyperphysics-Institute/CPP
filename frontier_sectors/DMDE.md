@@ -651,5 +651,30 @@ own pointer.** Canonical block table and rules:
 `id_block_registry.md`. Mechanical check before claiming any ID:
 `python code/next_id.py <lane>`.
 
-**Next patch (DE): 3427.**
+### 3429 (DE) — VARC-1 PREREG RE-ISSUED + THE 26 AUG RESOLUTION: FREQUENCY LEG CLOSED AS A DERIVED NULL; ROUTE NARROWED TO THE DISTANCE MAPPING
+
+`varc1_prereg.md` re-issued under a clean ID (the 24 Aug "3424"
+delivery was never applied; number consumed in the collision; founder
+instructed to delete the void patch file). §6 addendum records the
+founder's 26 Aug resolution, verbatim in `founders_voice/`: the
+C2×C3 cancellation CONFIRMED by his independent examination
+(shell-drop quantum invariant across SSV_abs environments ⟺ clock
+rate scaling exactly with local c — recorded as founder postulate,
+derivation target named); the Doppler/SSV_abs frame question RESOLVED
+by the comoving-Sea principle (each galaxy at rest in its local Sea;
+redshift decomposes into relative-kinematic Doppler + absolute
+epochal part that cancels identically; (1+z) stretching automatic;
+Sea rest frame ≡ CMB rest frame, dipole = our motion through the
+local Sea). **Step 0 SATISFIED STRUCTURALLY; the founder's "this
+kills my speed-of-light basis" is recorded and SCOPED: the FREQUENCY
+reading is dead — booked as a derived null with content (CPP predicts
+no spectroscopic memory of the c-history, as observed) — while C7,
+the travel-time/distance leg carrying the founder's ORIGINAL 3421
+formulation, remains. Worker ruling under PD-006: VARC-1 continues,
+narrowed to Step 1 (d_L(z) under coasting + c(t), F1 on q₀_app),
+founder veto available. No pre-declaration on Step 1's sign.**
+Kila6 standing-priority clause discharged (Phase 1B reported; DM lane
+coordinates follow-ons).
+
+**Next patch (DE): 3430.**
 **Next patch (DM): 3501.**
