@@ -635,5 +635,21 @@ load; zero Event 1001 across eight events); H-CORETEMP refuted;
 H-USB-RAIL raises PSU/rail health above the PWR_SW header; the BMC log
 via DM_LAN1 remains unread and is the highest-value diagnostic.
 
-**Next patch (DM/DE): 3425** (3424 was claimed twice this session — grep
-the registry before claiming an ID).
+---
+
+## LANE NUMBERING SPLIT (founder ruling, 25 Aug 2026, Patch 3500)
+
+DM and DE shared the 3400-3499 block and a single `Next patch (DM/DE)`
+pointer while running in parallel context windows. On 25 Aug the DM
+window consumed **3424 and 3425** while this file's pointer had reserved
+3424 for the DM/DE sequence, and advanced the shared pointer on the DE
+lane's behalf. Nothing was lost, but two lanes writing one number space
+through one pointer cannot be made safe by care alone.
+
+**DM moves to 3500-3599. DE keeps 3400-3499. Each lane advances only its
+own pointer.** Canonical block table and rules:
+`id_block_registry.md`. Mechanical check before claiming any ID:
+`python code/next_id.py <lane>`.
+
+**Next patch (DE): 3427.**
+**Next patch (DM): 3501.**
