@@ -739,5 +739,16 @@ confirm-or-refute instrument for the standing Λ-like conclusion;
 spec chartered as next DE work item, compute decision with the
 spec.**
 
-**Next patch (DE): 3434.**
+### 3434 (DE) — SESSION 159 HANDOVER WRITTEN
+
+`handovers/2026-08-26_session_159_de_lane_reduced_to_comoving_build.md`
+— the canonical what's-next pointer. Lane reduced to one instrument:
+the open/comoving build, assigned to VideoCPU (32 GB, 16c/24t),
+error budget frozen before sizing, confirm-or-refute for
+w = −1.00 ± 0.02; Kila6 stays DM; staged escalation only on pilot
+anomaly. Scoreboard, governance state, and calibration notes
+(false-kill AND false-survival both caught by verify discipline this
+session) recorded in the handover.
+
+**Next patch (DE): 3435.**
 **Next patch (DM): 3501.**
