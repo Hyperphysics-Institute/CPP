@@ -19,6 +19,8 @@ A "Next patch (X): NNNN" pointer counts as TAKEN. A pointer is a
 reservation, not a suggestion (id_block_registry.md rule 3).
 """
 import argparse, glob, os, re, subprocess, sys
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
@@ -33,10 +35,20 @@ BLOCKS = {                       # keep in sync with id_block_registry.md
 
 def _texts():
     out = []
+    # Patch 3501: decode git output as UTF-8 EXPLICITLY. Without this,
+    # Python on Windows decodes subprocess output with the locale codec
+    # (cp1252), and this corpus's commit messages are full of non-cp1252
+    # characters (beta, arrows, em-dashes). The reader thread then dies,
+    # .stdout comes back None, and the gate crashes on the one machine
+    # that matters. Second occurrence of this defect class -- the first
+    # was --analyze crashing under redirection, fixed at 3175. errors=
+    # 'replace' because a mangled character must never stop the check:
+    # an unreadable byte is not a reason to leave an ID unverified.
     try:
-        out.append(subprocess.run(
+        r = subprocess.run(
             ['git', '-C', ROOT, 'log', '--all', '--format=%s%n%b'],
-            capture_output=True, text=True, timeout=120).stdout)
+            capture_output=True, timeout=120)
+        out.append((r.stdout or b'').decode('utf-8', errors='replace'))
     except Exception as e:
         print(f"WARNING: could not read git log ({e}); "
               f"result is NOT authoritative.", file=sys.stderr)
@@ -47,7 +59,7 @@ def _texts():
                 out.append(open(f, encoding='utf-8', errors='replace').read())
             except OSError:
                 pass
-    return '\n'.join(out)
+    return '\n'.join(t for t in out if isinstance(t, str))
 
 
 def taken(lo, hi, blob):
