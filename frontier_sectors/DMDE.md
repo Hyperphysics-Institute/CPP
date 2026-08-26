@@ -676,5 +676,33 @@ founder veto available. No pre-declaration on Step 1's sign.**
 Kila6 standing-priority clause discharged (Phase 1B reported; DM lane
 coordinates follow-ons).
 
-**Next patch (DE): 3430.**
+### 3430 (DE) — VARC-1 STEP 1 EXECUTED: F1 FAILED — THE VARYING-c ROUTE IS DEAD
+
+`varc1_step1_execution.md` + `verify_3430_varc1_step1.py` +
+`verify_3430_output.txt` — the full derivation on frozen inputs.
+**R1 (theorem): spectrograph redshift = t₀/t_e exactly, independent
+of c(t)** — the founder-confirmed cancellation emerging from the full
+wave-crest calculation, with a precision forced by a FAILED first
+verify run (two bookkeeping errors caught and recorded; ruler-
+invariance corollary surfaced: local light-second epoch-invariant).
+So the entire c-history lives in the photon-sphere radius, and
+**slower past light SPREADS LESS: d_L^varc < d_L^const at every z
+(exact, any rising history), q₀_app = +t₀ċ(t₀)/c(t₀) ≥ 0 —
+DECELERATION-mimicking, against observed q₀ ≈ −0.55. F1 (frozen:
+q₀_app ≥ 0 ⇒ dead) FAILS. No rescue: acceleration-mimicry needs
+falling c ⇒ heavy-species production now ⇒ excluded by the
+mechanism's own relic definition and the lensing sign.** Verified to
+10⁻⁸ across six histories with a clean constant-c null control.
+Diagnosis: travel time ≠ apparent distance — the founding intuition's
+final step. Salvage substantial: the spectroscopic null (no epoch
+drift, as observed), (1+z) light-curve stretching derived, the
+comoving-Sea/CMB-frame identification, ruler invariance, the lensing
+calibration. **Lane position: energy-density channels Λ-like
+(w = −1.00 ± 0.02, 3419); optical channel F1-dead (3430). CPP's
+honest DE position: Λ-like, Λ from calibration, no distinguishing
+dynamical mechanism; only the open/comoving build remains chartered.**
+Steps 2–3 not reached per frozen order. §1b floor question moot for
+VARC-1, open as Sea physics.
+
+**Next patch (DE): 3431.**
 **Next patch (DM): 3501.**

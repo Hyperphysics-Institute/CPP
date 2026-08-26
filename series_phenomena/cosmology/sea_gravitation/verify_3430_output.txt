@@ -1,0 +1,10 @@
+form      A  lam  eps=t0 c./c  q0_app(fit)  q0 null R1 max err min ratio max ratio S1(<1,mono)
+exp    0.05  1.0       0.0526       0.0551   0.0023   1.02e-08    0.9733    0.9997        True
+exp    0.10  1.0       0.1111       0.1137   0.0023   2.38e-08    0.9435    0.9994        True
+exp    0.10  2.0       0.2222       0.2256   0.0023   4.79e-09    0.8766    0.9989        True
+pow    0.05  1.0       0.0526       0.0551   0.0023   3.86e-09    0.9568    0.9997        True
+pow    0.10  1.0       0.1111       0.1137   0.0023   2.68e-08    0.9088    0.9994        True
+pow    0.30  0.5       0.2143       0.2170   0.0023   6.08e-09    0.9164    0.9989        True
+
+R1 (spectrograph z-map c-independent), S1 (brighter at all z, monotone), Q1 (q0_app > 0, = eps at small A; null control ~ 0): ALL CONFIRMED
+F1 frozen reading: q0_app >= 0 => DEAD. Every tested history gives q0_app > 0.
