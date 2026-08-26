@@ -606,4 +606,34 @@ mimic acceleration in d_L(z)) remains uncomputed, no pre-declaration.
 VARC-1: UNBLOCKED. §1b floor question still open, magnitude-order
 only.
 
-**Next patch (DM/DE): 3424.**
+### DM lane — β-ladder closed (Session 158, Patches 3173–3199, 3424)
+
+**BETA-LINEAR.** Phase 1B (N = 685 at β = 0.05) cured the underpower:
+ratio s(0.20)/s(0.05) = 5.839, 99% CI [3.137, 18.883] — excludes 1.0,
+contains 4.0; through-origin k_hat = 7.1007e-03 holds all four rungs.
+Duplicate gate PASSED on legs computed AFTER a host crash.
+
+**Bounded:** "scales with β" ESTABLISHED; "scales PROPORTIONALLY"
+consistent but NOT pinned (interval admits 3.1–18.9). With SUST_REF void
+(3176) this is an INSTRUMENT property, not a physics verdict — magnitude
+waits on OPEN-BAND-CONV-1. The 3175 COEFFICIENT-OVERPREDICTED finding is
+RETRACTED and is not revived by more data.
+
+**Does NOT rescue Candidate (B):** BETA-FLAT would have given AK's null a
+benign β-scaling account; BETA-LINEAR removes that escape. DISP-I3 stands;
+six of seven; item 1B OPEN; 79.5%.
+
+**Founder rulings registered:** R-INSIDE-SEA (3174, no rung may measure
+outside the built Sea; split design selected over the ~3-week build) and
+the DP-Entity Sea picture + expansion addendum, verbatim in founders_voice/
+— its kinetics is the blinded D-EQUIL-KINETICS reserved for the founder,
+so capture stopped at registration.
+
+**Kila6 FREE and deliberately idle until S1 returns.** Hardware fault
+unresolved and load-independent (died at idle 90 min after ~75 h at full
+load; zero Event 1001 across eight events); H-CORETEMP refuted;
+H-USB-RAIL raises PSU/rail health above the PWR_SW header; the BMC log
+via DM_LAN1 remains unread and is the highest-value diagnostic.
+
+**Next patch (DM/DE): 3425** (3424 was claimed twice this session — grep
+the registry before claiming an ID).
