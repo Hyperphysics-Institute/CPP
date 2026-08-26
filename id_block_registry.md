@@ -39,8 +39,11 @@ with one pointer, which cannot be made safe by care alone.
 
 1. **One block per lane. Never claim outside your block**, even if the
    number looks free.
-2. **Run `next_id.py` before claiming.** Grepping by eye misses IDs that
-   appear only in a sector file or only in a commit body.
+2. **Run `next_id.py` before claiming — against freshly-fetched origin**
+   (`git fetch origin && git reset --hard origin/main` first). Grepping by
+   eye misses IDs that appear only in a sector file or only in a commit
+   body, and the gate run against a stale clone validates against a stale
+   number space (this is how 3426 happened — see Anomalies).
 3. **A pointer line is a reservation, not a suggestion.** If a sector
    file says `Next patch (X): NNNN`, that ID belongs to lane X even if no
    commit has used it yet.
@@ -58,3 +61,14 @@ with `Earlier `**. Every correct patch shows exactly `2 insertions,
 edit an existing header line.** If a diff on `research_frontier.md` shows
 more than one deleted line, the write is wrong — stop and re-derive it.
 Verified across 3189–3199: all show 2/1.
+
+## Anomalies (recorded, not precedents)
+
+- **3426 — DM-lane content in DE's block.** Founder registration
+  (ring 16-planes convention + memoryless-substrate/KE statement,
+  `founders_voice/`). Claimed 25–26 Aug by a DM-lane window whose clone
+  predated the Patch 3500 lane split, under the pre-split "cosmology
+  3400–3499" guidance; verified free by grep against that stale clone.
+  No collision resulted; DE's sequence continues past it. Stays where it
+  is — renumbering pushed history is forbidden. Registered so block
+  audits don't read it as a live collision. (Patch 3503.)
