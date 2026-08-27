@@ -1,7 +1,11 @@
 # ANA-MEM-1 — analytic closure route for OPEN-K1-MEMORY-1B
 
 **Registered Patch 3504, 26 August 2026. Status: CHARTER + Level-1
-structure, DRAFT-FOR-PANEL. No ledger movement: six of seven; 1B OPEN;
+structure — ADJUDICATED at 3506: §1 and the residual framing CONFIRMED
+4–0; §2's K̄↔SF-6 identification CORRECTED (category error — κ is a
+MASS and identifies with the kernel's FIRST moment; K̄ = 0 by fore/aft
+cancellation). The moment decomposition in
+conv001_2026-08_ana_mem_1_adjudication.md §Q2 supersedes §2 below. No ledger movement: six of seven; 1B OPEN;
 79.5%.** Founder directed "please proceed" (26 Aug) on the residual
 framing registered at 3426 §3. This document executes K5's Level 1
 (analytic reduced-dynamics) to the point where the remaining unknowns
