@@ -321,3 +321,84 @@ Nothing here alters Λ, d_s^emp = 4.636, w = −1.00 ± 0.02, the
 any ruling. §§1–4 and §6–§9 of 3435 stand as written; §5's F-C1 and
 F-C3 are superseded above. The DM lane is untouched. Next patch (DE):
 3437.
+
+---
+
+# AMENDMENT — Patch 3438 (26 Aug 2026): the estimator's observable is defined by founder ruling, and one fork remains
+
+**Founder ruling captured verbatim at
+`founders_voice/founder_ruling_dp_entity_individuation_2026-08-26.md`.
+Next patch (DE): 3439.**
+
+## §16 — The observable
+
+The engine returns no ρ_Sea, and cannot: `L = n_side * ds`, so CP
+number density is ∝ ds⁻³ by construction. Using it as ρ_Sea would have
+returned 1 + w = 1 (w = 0, matter) as a definitional artefact of the
+box, not a measurement. **This was found by reading the engine before
+speccing the pilot, and it would have invalidated the instrument
+silently.**
+
+Substituting the corpus chain ρ_Λ ∝ n_eq = N_ent/V into
+`1 + w = −∂ln ρ_Sea/∂ln V` gives the estimator in engine terms:
+
+> **w = − ∂ ln N_ent / ∂ ln V**
+
+**w = −1 exactly when entity number grows in step with volume.** Any
+departure from −1 measures the lag in that tracking — which is
+precisely the driven-steady-state lag ruled at 3436, now expressed as
+the quantity the instrument reads. The fixed-box shadow of the same
+structure is visible at 3419: entity COUNT near-invariant across 64×
+in temperature while binding WITHIN entities moved 35%.
+
+## §17 — Entity individuation (founder-ruled)
+
+Two rules, from the ruling captured this patch:
+
+1. **Minimum size: at least 2 qDPs** in aggregate. A lone qDP is not
+   an entity. Hard floor, not a threshold.
+2. **Individuation by collisional separation:** aggregates are
+   distinct entities when the gap between them admits thermal
+   agitation and collision.
+
+The cut is therefore **derived from the dynamics** (thermal excursion
+amplitude, already instrumented via R_c and the pair-separation series
+W) rather than **chosen against the lattice** (3417's fixed 0.5/0.7/0.9
+d_s fractions, whose three choices disagreed in sign). The
+estimator-definition allocation of 0.001 in §12 was written when this
+looked like a rounding term; it is the crux of the instrument, and the
+allocation is **provisional pending the pilot's measurement of how
+sharply N_ent depends on the derived cut.**
+
+## §18 — The remaining fork (blocking the pilot)
+
+Held open, not decided: **does the thermal agitation scale stay fixed
+while the Sea dilutes, or does it weaken in step with the spacing?**
+
+| branch | entity number under expansion | consequence |
+|---|---|---|
+| scale fixed, gaps widen | N_ent rises with V | Λ can hold constant; w → −1 available |
+| ratio preserved | N_ent volume-invariant | ρ_Λ ∝ 1/V; w → 0 |
+
+**These are opposite instruments**, so the question is asked before
+the pilot rather than after. The worker's reading is the first branch
+— dilution genuinely separating aggregates *is* the founder's
+entity-production mechanism — but the reading is not a ruling and is
+recorded here as the worker's, clearly marked, per the lane's
+no-pre-declaration discipline.
+
+## §19 — Not authorised here
+
+Re-cutting `3418_entity_state.json` at a thermally-scaled criterion
+would test whether the 3419 sign disagreement collapses. The data
+exists and CONV-036 commits it, so the test is cheap. **It is not
+authorised by this patch.** Re-opening a frozen conclusion requires
+its own preregistration, and re-cutting data until signs agree is
+exactly what preregistration exists to restrain.
+
+## §20 — Fence
+
+Nothing here alters Λ, d_s^emp = 4.636, w = −1.00 ± 0.02, the
+3400–3419 frozen conclusions, or 3422–3437. §§1–15 stand; §12's
+estimator-definition allocation is marked provisional. The DM lane is
+untouched. Next patch (DE): 3439.
