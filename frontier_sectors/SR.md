@@ -317,3 +317,18 @@ decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_l
 **Blast-radius context:** registered during the Patch-2480 sweep of the 14 SR-1 k/PSR inheritors. All product-only inheritors (c03, c05, c08, c14) verified convention-safe; c01/c07 carried value-billing only (corrected in place); c02 is the sole live physics question.
 **Paper(s):** c02_dipole_stiffness_C.tex
 **Last updated:** 15 July 2026
+
+---
+
+### OPEN-SR-UNIV-1: Gearing Universality — SSV_abs Couples Through the PSR Alone
+**Status:** OPEN — chartered by the founder 26 Aug 2026 ("Please pursue that target"), registered Patch 3441.
+**Sector(s):** SR (cross-sector: cosmology/DE via TIMEDIL-1 salvage)
+**Priority:** MEDIUM-HIGH — gates the observational admissibility of any "(1+z) as ancient-clocks-slower" reading (Patch 3440 §5.4), and its S1 inventory feeds OPEN-SR-9's channel-identity fork from the process side.
+**One-line statement:** Prove that SSV_abs enters dynamics ONLY through the PSR (SR-1), so every process rate scales by the one common factor and all dimensionless gearings (α, μ, g-factors) are exactly epoch-invariant — CPP's equivalence principle for rates; OR exhibit the second channel / Moment-fixed primitive and confront Δα/α at ppm.
+**Founder premise (verbatim, 26 Aug):** "SSV_abs and PSR should track exactly, since they're related by definition." Covers the link; exclusivity (no second SSV channel, e.g. stiffness C — the SR-9 overlap) and completeness (no Moment-fixed rate primitives) remain to be established.
+**Kill condition:** any rate-setting primitive that is Moment-fixed (or SSV-coupled other than via PSR) with budget share ε > ~10⁻⁶ in any atomic process pair, given O(1) SSV_abs change over cosmic history — Δα/α ~ ε(1−1/λ) against the ESPRESSO/Oklo/μ nulls (Patch 3440 §5.2).
+**Dependencies:** SR-1 (PSR(SSV_abs) formula); the kernel/PSR re-radiation picture (founders_voice 2026-07-20); SU3 colour-switching and magnetism/chirality mechanism docs (S1 inputs); Patches 3439–3440 (cosmological SSV history and the observational anchors).
+**Cross-sector connections:** OPEN-SR-8 (same principle, energy face); OPEN-SR-9/R2 (same principle, photon-speed face; shared V1 fork on the C channel); TIMEDIL-1 (CLOSED — this target is its salvage); DE lane 3439 mass/number split (sets λ).
+**Working home / charter:** `series_relativity/development/UNIV-1_gearing_universality_charter.md`
+**Paper(s):** SR-1; prospective GR companion.
+**Registered:** 26 Aug 2026 (Patch 3441)
