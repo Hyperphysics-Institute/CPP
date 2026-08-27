@@ -201,8 +201,123 @@ anomaly near resolution, via DM-lane queue coordination.
   consolidation pass, registered here as owed rather than settled
   silently in either direction.
 
-## §9 — Fence
+---
+
+# AMENDMENT — Patch 3436 (26 Aug 2026): the founder's Picture-B ruling promotes F-C1 from guard to estimator
+
+**Verify: `code/3436_rate_extrapolation.py`. Next patch (DE): 3437.**
+
+## §10 — The ruling
+
+Asked whether the Sea settles as quickly while the box grows, the
+founder ruled **Picture B**, with the mechanism stated directly:
+
+> Space expands, and the DP-entities evaporate CPs and bind with other
+> CPs, which then form DPs; those DPs bond and form new DP entities.
+
+This is a **cycle with throughput** — entity → evaporated CP → DP →
+new entity. At zero drive the cycle runs with zero net (detailed
+balance). Under expansion it carries a net, and **that net is the
+lag**. The Sea under expansion therefore occupies a *driven steady
+state*, not equilibrium, and ρ_Sea carries a rate-dependent offset at
+every finite expansion rate.
+
+**This is internally consistent with the corpus**, which matters: it
+is 3401's Le Chatelier resolution applied to the instrument. The net
+formation rate was already established there as a restoring *response*
+tracking expansion rather than an independent constant. Picture B is
+that same statement seen from the measurement side, and 3419's
+structural finding fits it too — entity COUNT nearly invariant while
+binding WITHIN entities moves is what a throughput cycle with a
+robust population looks like.
+
+## §11 — Consequence: F-C1 is retired as a guard
+
+§5's F-C1 required |w(fast) − w(slow)| ≤ 0.015. Under Picture B that
+requirement is **wrong**, and would fail a correctly functioning
+instrument. Rate dependence is now expected physics, not
+contamination.
+
+**F-C1 is therefore promoted from a guard into an estimator.** Measure
+w at a ladder of expansion rates and fit
+
+> **w(ṙ) = b₀ + b₁ṙ + b₂ṙ²**, reading **b₀** as the answer.
+
+The physical universe expands at H·τ ~ 10⁻⁶⁰. **The intercept is the
+physical answer** — not an idealisation of it. b₁ is reported as a
+measured property of the driven Sea, explicitly *not* as a reading on
+dark energy.
+
+**Direction of extrapolation is the favourable one.** We are not
+interpolating toward the physical rate, which sits ~59 orders below
+anything simulable. We are extrapolating to zero, and linear response
+holds *better* as drive weakens. The hazard is the reverse case: the
+entire accessible ladder sitting in the nonlinear regime with the
+linear regime beneath it. That is what the new guard tests.
+
+## §12 — Amended design and budget
+
+**Quadrature allocation — magnitudes unchanged, one term's meaning
+changed:**
+
+| term | allocation | change |
+|---|---|---|
+| intercept (rate-extrapolated statistical) | 0.0030 | was single-rate statistical |
+| finite-size extrapolation | 0.0030 | unchanged |
+| **residual nonlinearity in ṙ** | 0.0020 | **was adiabaticity guard slack** |
+| estimator definition | 0.0010 | unchanged |
+| **quadrature total** | **0.0048** | **σ_total ≤ 0.005 preserved** |
+
+**Rate ladder selected: K = 4, span 8× (ṙ ∈ {1, 2, 4, 8} × ṙ_slow).**
+
+| ladder | intercept inflation | total runs | wall-clock |
+|---|---|---|---|
+| K=3, span 4× | 1.225× | 576 (4.5×) | 10.5× |
+| **K=4, span 8×** | **0.860×** | **378 (3.0×)** | **11.1×** |
+| K=4, span 27× | 0.699× | 250 (2.0×) | 19.5× |
+| K=5, span 16× | 0.677× | 293 (2.3×) | 14.2× |
+
+Four points beat one even after extrapolating — the inflation factor
+is **below unity**, so the ladder costs 3× the runs but returns a
+*better* intercept than a single rate would have returned a slope.
+The 27× span is rejected not on run count but on wall-clock: its slow
+rung runs 27× long, and wall-clock is dominated by the slowest rung in
+every ladder.
+
+**Per-rate design at σ_per_point = 0.0035:** M=8, S=16 (128 runs)
+tolerates s_within = 0.0237; M=8, S=24 or M=12, S=16 (192 runs)
+tolerates 0.0290.
+
+## §13 — Amended guards
+
+- **F-C1 — RETIRED** as a guard (superseded by the estimator above).
+- **F-C1′ — LINEARITY (new).** Require **|b₂| · ṙ_max² ≤ 0.0020**. If
+  curvature exceeds the nonlinearity allocation, the ladder sits in
+  the nonlinear regime → **INDECISIVE**, and the report must state
+  whether a slower rung is reachable inside the envelope.
+- **F-C2 — unchanged.**
+- **F-C3 — AMENDED.** At ṙ = 0 there is no trajectory and no slope, so
+  the old formulation (reproduce the fixed-box result at L = 0) no
+  longer describes a null mode. It now checks that **the cycle runs
+  with zero net at zero drive** — the founder's mechanism at its own
+  fixed point. An engine that shows a net at zero drive is broken in a
+  way that would masquerade as dark energy.
+
+**Reading rules (§6) unchanged in form**, applied to **b₀** rather
+than to a single-rate slope.
+
+## §14 — Pilot, amended
+
+A fourth deliverable is added ahead of the production ladder:
+**measure the lag response at two rates** and confirm the rate
+dependence is visible and orderly at accessible rates. If it is not
+visible, the ladder's lever arm is wasted and the design needs
+rethinking before 378 runs are committed rather than after.
+
+## §15 — Fence
 
 Nothing here alters Λ, d_s^emp = 4.636, w = −1.00 ± 0.02, the
 3400–3419 frozen conclusions, 3422, 3423, 3429, 3430, 3431, 3433, or
-any ruling. The DM lane is untouched. Next patch (DE): 3436.
+any ruling. §§1–4 and §6–§9 of 3435 stand as written; §5's F-C1 and
+F-C3 are superseded above. The DM lane is untouched. Next patch (DE):
+3437.
