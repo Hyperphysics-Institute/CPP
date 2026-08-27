@@ -100,3 +100,81 @@ blocks the other. Founder may resequence.
 Nothing here alters SR-1, SR-8, SR-9/R2's conditional-PASS status,
 the 3435–3440 record, or any ruling. This charter creates a
 derivation target; it asserts no result.
+
+---
+
+# AMENDMENT — Patch 3442 (26 Aug 2026): the averaging clause and the third violation channel
+
+**Founder category ruling captured verbatim at
+`founders_voice/founder_ruling_subquantum_category_2026-08-26.md`.**
+
+## §7 — The averaging clause (founder-ruled)
+
+PSR and SSV_abs are **Moment-level, subquantum quantities**. They are
+not primary observables at any accessible level; their existence is
+triangulated, and every quantum-level measurement touching them is
+necessarily an average. Within a Moment, SSV_net (related to SSV_abs
+by the Lorentz factor) can be wildly anomalous — the stated substrate
+face of tunneling and of the electron's Schrödinger distribution —
+and the DI-bit landing pattern is itself discrete (GPs at ~10% of the
+PSR radius, nothing between, until re-radiation fills the volume).
+
+**Consequence for the lemma — restatement, not weakening.** The
+observational anchors (§1; Patch 3440 §5.2) are themselves averages:
+an absorption-line frequency integrates ~10¹⁵ cycles across a gas
+cloud; a decay rate integrates geological time. The test never needed
+Moment-level access. The lemma is therefore restated at the level
+where both the theory's determinism and the data live:
+
+> **⟨rate⟩ of every physical process scales by the one common factor
+> under a change of SSV_abs.**
+
+Moment-level anomalies are compatible with exact averaged
+universality **provided they are species-blind in their statistics** —
+which is precisely what the third channel below interrogates.
+
+## §8 — Violation channel V3: distribution-shape coupling
+
+The founder's own examples expose it. Tunneling-dominated observables
+sample the **tails** of the Moment-level SSV_net distribution;
+classical-transit-dominated observables sample its **mean**. If a
+change in SSV_abs rescales the entire SSV_net distribution uniformly
+— mean and fluctuations by the same factor — then tail-samplers and
+mean-samplers slow together and stay in ratio. If instead SSV_abs
+changes the distribution's **shape** (tail weight relative to mean),
+the two classes drift apart: species-dependent gearing, observable at
+the averaged level even though the anomalies themselves are not.
+
+**The caution is therefore a falsifier, not a shield.** Subquantum
+anomalousness does not remove the theory from the reach of the α/μ
+nulls; it specifies *which* averaged observables carry the
+subquantum statistics upward. Tunneling observables are windows on
+the tails.
+
+**And the existing triangulation already spans both classes** — a
+fortunate fact now on record: the atomic absorption lines (ESPRESSO,
+ppm) are mean-samplers; α-decay in meteoritic isotopes is tunneling
+outright, and the Oklo bound rides a ~0.1 eV neutron-capture
+resonance whose position is exquisitely tail-sensitive. The joint
+null across both classes (3440 §5.2) therefore already bounds V3
+empirically: whatever SSV_abs did over cosmic history, it did not
+detectably change the shape of the Moment-level distribution as
+sampled by tunneling versus transit. The lemma's task is to show CPP
+predicts exactly that — uniform rescaling, shape preserved.
+
+## §9 — Execution consequences
+
+- **S1 gains a column:** for each rate-setting primitive and each
+  anchor observable, record *what it samples* — mean, tails, or mixed
+  — alongside propagation-paced / Moment-fixed / unstated.
+- **S3 splits:** S3a proves (or refutes) common-factor scaling of the
+  mean; S3b proves (or refutes) shape preservation of the SSV_net
+  distribution under SSV_abs rescaling. Exact universality needs
+  both.
+- **S4 unchanged.**
+
+## §10 — Fence
+
+§§1–6 stand; §1's lemma is restated at the averaged level by §7
+without change of content at that level. SR-1, SR-8, SR-9/R2,
+3435–3441, and all rulings untouched. Next patch (DE): 3443.
