@@ -97,7 +97,45 @@ and the remaining exposure is the SR-9 C-channel alone.** Any other
 answer pattern produces an explicit drift formula and a confrontation
 with the 3440 §5.2 numbers.
 
-## §4 — Fence
+## §4 — Q1 refined (Patch 3444, after the PSR-computation ruling)
 
-Inventory and questions only; no result asserted, no ruling touched.
-SR-1, SR-8, SR-9/R2, 3435–3442 untouched. Next patch (DE): 3444.
+The founder's PSR ruling (verbatim at
+`founders_voice/founder_ruling_psr_gp_count_2026-08-26.md`) fixes the
+A-side: SSV_abs → an absolute GP count = the PSR, computed per-GP
+with memory of past Moments, absolute scale to be calibrated at STP.
+The lemma needs no absolute value — only the scaling — so
+calibration-owed is no obstacle. **The B-side remains the hinge**,
+now poseable in the ruling's own currency:
+
+> **Q1 (refined).** The GP computes SSV_net and presents it; the CP
+> Displaces some number of GPs. In a region of high ambient SSV_abs —
+> where the PSR is a *smaller* number of GPs — does the CP's move for
+> the *same* computed SSV_net also become a smaller number of GPs, in
+> the same proportion? Or is the SSV_net → GP-count conversion fixed,
+> independent of the ambient SSV_abs?
+
+**Candidate conversion rule, offered for confirmation or correction
+(not asserted):**
+
+> **Displace(GPs per Moment) = PSR(SSV_abs) × SSV_net / SSV_abs**
+
+Three things recommend it as the founder's picture rather than the
+worker's invention. It makes matter velocity v = c_local ×
+(SSV_net/SSV_abs), so **no CP can outrun the local PSR** — the speed
+limit is structural, not imposed. It gives the earlier ruling
+"SSV_net relates to SSV_abs by the Lorentz factor" (3442) a concrete
+home: the ratio SSV_net/SSV_abs is exactly the v/c of the moving
+system. And it resolves Q1 as PSR-scaled *by construction*: matter
+and light share the one factor, S3a follows, and the exposure
+narrows to Q2 (any separate stiffness entry) and Q3 (landing-pattern
+proportionality). If instead the conversion is fixed/absolute, matter
+fails to slow where light slows — the maximal V1 violation, dead at
+α(z) ppm.
+
+Q2 and Q3 stand as posed in §3.
+
+## §5 — Fence
+
+Inventory, questions, and one candidate rule explicitly offered for
+founder confirmation; no result asserted, no ruling touched. SR-1,
+SR-8, SR-9/R2, 3435–3443 untouched. Next patch (DE): 3445.
