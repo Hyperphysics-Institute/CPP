@@ -128,3 +128,38 @@ across 13 Gyr.** Universal coupling derived from the mechanism would
 be a point in the theory's favor; any predicted species dependence is
 falsified by α(z) at ppm. This is a derivation target, not a route,
 and is not chartered here.
+
+## §6 — Coherence note (Patch 3448): permanent gravitational redshift does not reopen this route
+
+Prompted by a founder question (26 Aug): solar spectral lines ARE
+permanently gravitationally redshifted (~2.1×10⁻⁶, ≈636 m/s
+equivalent) — does that contradict this closure, or the founder's
+earlier withdrawal of well-redshift for the early universe? **No, on
+both counts**, and the resolution is a two-way distinction:
+
+- **Spatial well (withdrawn, stays withdrawn).** Spatial
+  gravitational redshift needs a potential *difference* between
+  emitter and receiver. A homogeneous dense universe offers none —
+  every point of an epoch sits at the same potential — so "climbing
+  out of the early universe's well" fails on homogeneity, at any
+  density. The Sun works precisely because its well is local.
+- **Temporal epoch-ratio (the §3/§5.4 surviving corner, unchanged).**
+  Higher SSV_abs at the emission *epoch* → received frequency lowered
+  by the ratio of epoch clock rates — structurally gravitational
+  redshift with "then" as "deep." Permanent for the same reason the
+  solar shift is: the shift IS a clock-rate ratio, not an en-route
+  interaction that could snap back. Predicts b = 1 automatically
+  (matching dilation is part of the package), so it is consistent
+  with the DES stretch data — and it explains redshift, never the
+  acceleration residual. TIMEDIL-1's closure is untouched.
+
+**Link registered (not chartered):** if the temporal reading were
+ever adopted, the m̄(a) exponent left open at 3439 ceases to be free —
+SSV_abs(m̄(a)) must reproduce 1+z = 1/a exactly, fixing m̄(a) from the
+redshift identity.
+
+**Observation for S3a-α:** the solar redshift is species-universal
+(H, Fe, Na shift identically) — the common-factor slowing of all
+atomic clocks under higher ambient SSV_abs, i.e., a k_α-adjacent
+null 8 light-minutes away, consistent with the universality the
+derivation must produce.
