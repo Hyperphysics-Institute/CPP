@@ -163,3 +163,17 @@ redshift identity.
 atomic clocks under higher ambient SSV_abs, i.e., a k_α-adjacent
 null 8 light-minutes away, consistent with the universality the
 derivation must produce.
+
+**§6 addendum (Patch 3449) — regions, not epochs.** A denser *region*
+of any epoch DOES gravitationally redshift its light (potential
+contrast with surroundings; permanent, same as solar). Measured twice:
+the Sachs–Wolfe effect (CMB large-angle anisotropy = photons climbing
+out of overdense patches at last scattering, ΔT/T ~ 10⁻⁵) and stacked
+cluster-galaxy redshifts (~10 km/s scale). Caution: contrast × scale²
+digs the well, not mean density — the denser early universe was
+*smoother* (δρ/ρ ~ 10⁻⁵ at recombination), so early-region shifts
+were small and grew as structure collapsed. CPP mapping: spatial
+SSV_abs contrast (region) and temporal SSV_abs contrast (epoch, the
+§5.4 corner) are ONE mechanism — every redshift a clock-rate ratio —
+where GR uses two; the observed compositional structure
+(epoch ratio × local contrast × Doppler) comes out for free.
