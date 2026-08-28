@@ -139,3 +139,53 @@ Q2 and Q3 stand as posed in §3.
 Inventory, questions, and one candidate rule explicitly offered for
 founder confirmation; no result asserted, no ruling touched. SR-1,
 SR-8, SR-9/R2, 3435–3443 untouched. Next patch (DE): 3445.
+
+---
+
+## §6 — Q1 CONFIRMED (Patch 3445), and the one subtlety it exposes
+
+**Founder, verbatim (CONV-009):**
+
+> I believe that formula is the formula we have used to derive the
+> Lorentz relationship in SR-1. And the answer is yes: mass and
+> matter are both subject to the same formula, with the mass (CP
+> transit) being subject to the SSV_net and the light being subject
+> to the SSV_abs.
+
+**Corpus corroboration (verified before recording):** SR-1's stated
+mechanism — kinetic energy stored as excess SSV shrinks the PSR "and
+limit[s] displacement per Absolute Moment" (README-series_relativity)
+— and the registered boost-law structure **PSR_eff = PSR_base/(1 +
+α·SSV_abs)** with displacement SSV_net-driven and PSR-capped
+(development/reasoning/0746). The candidate rule of §4 is the SR-1
+structure. **Q1 closes: the Displace conversion is PSR-scaled.
+Matter and light share the factor. S3a's common-factor argument is
+live.**
+
+**Q1b — the residual fork Q1's closure exposes (the S3a crux).** The
+GP computes SSV_abs as the total at its location — ambient
+contributions included (glossary AP-4: receiver-side summation). In
+the ratio SSV_net/SSV_abs that sets matter's step, which SSV_abs is
+in the denominator?
+
+- If ambient SSV enters **only through PSR_eff** (the common cap,
+  shared with light) and the ratio's denominator is the *system's
+  own* (kinetic) SSV_abs, then a bound system in a dense region keeps
+  its internal v/c: α is ambient-invariant, all rates share the one
+  PSR factor, universality holds.
+- If the denominator is the **total** SSV_abs (ambient included),
+  then raising ambient SSV lowers a bound system's internal v/c while
+  light feels only the PSR factor: matter-paced and photon-paced
+  clocks shear, and the internal v/c of hydrogen — which *is* α —
+  drifts with ambient density.
+
+The second branch is testable well before cosmology: atomic clocks of
+different species riding Earth's annually-varying solar potential
+constrain any potential-dependence of α at the ~10⁻⁷ level per unit
+potential, on top of α(z) at ppm over cosmic history. **Q1b to the
+founder:** in the SR-1 Lorentz derivation, is the SSV_abs in matter's
+displacement ratio the *boost-attributed* SSV of the moving system,
+with ambient/gravitational SSV entering only through the shared
+PSR_eff cap — or the total at the GP?
+
+Q2 and Q3 stand as posed (§3).

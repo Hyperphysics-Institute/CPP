@@ -21,9 +21,21 @@ and its calibration status.**
 1. **The PSR is an absolute GP count**, determined per-GP by
    computation: DI-bit summation → SSV_abs → the number of GPs the
    next propagation step reaches.
-2. **The summation has memory**: contributions from the current *and
-   past* Moments enter — the PSR computation is history-dependent,
-   not instantaneous.
+2. **The summation has memory — QUALIFIED by the founder, Patch 3445,
+   verbatim:** "the memory of past Moments is not carried as a
+   coherent memory. There is only the summation of every Moment's
+   DI-bits from the GP_origin broadcasting to the GP_PSR and its
+   rebroadcasting as the GP_origin to its PSR, etc., until a tiny,
+   mixed/amalgamated portion of the original broadcast shows up as
+   the 'memory' of the original GP_origin DI-bit broadcast." So:
+   history enters only through **relay recursion** — each Moment's
+   summation is of freshly arriving DI-bits, some of which are
+   re-broadcast descendants of older broadcasts, amalgamated and
+   attenuated. No register carries the past; the past persists only
+   as its diluted echo in the present arrival stream. *(Anti-erasure:
+   the original line above read "history-dependent, not
+   instantaneous" — a shorthand the founder would not leave
+   unqualified; superseded as stated.)*
 3. **Calibration status**: no computed or predicted value exists; the
    PSR's absolute scale is to be calibrated empirically at STP (or
    another accessible condition) and thereafter used as a metric.
