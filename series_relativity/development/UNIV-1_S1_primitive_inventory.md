@@ -189,3 +189,55 @@ with ambient/gravitational SSV entering only through the shared
 PSR_eff cap — or the total at the GP?
 
 Q2 and Q3 stand as posed (§3).
+
+---
+
+## §7 — Q1b RULED: total denominator, no self-knowledge (Patch 3446) — and S3a becomes S3a-α, the k_α derivation with a 3-parts-per-billion gate
+
+**Founder ruling verbatim at
+`founders_voice/founder_ruling_no_self_knowledge_2026-08-26.md`.**
+The substrate computes without attribution: no GP can distinguish the
+system's own DI-bits from ambient ones, so the SSV_abs in matter's
+displacement ratio is the **total** at the GP. Q1b's first branch was
+architecturally unavailable — a local automaton cannot do
+attribution — and the worker withdraws it as mis-posed. CPP is
+committed to the total denominator, and the founder's conjecture
+(recorded as such) is that observable consistency falls out of
+**proportional re-equilibration**, not isolation.
+
+**The naive estimate, and why it is not the verdict.** Without
+re-equilibration: for a bound system, ambient (isotropic) DI-bits
+cancel in the vector SSV_net but add to the scalar total S, so v/c =
+SSV_net/S falls one-for-one with the fractional rise of S — giving
+δα/α ≈ −δΦ/c², i.e. **|k_α| ≈ 1**. Against the current measurement —
+Yb⁺ E3/E2 over six years: (c²/α)(dα/dΦ) = −2.4 ± 3.0 × 10⁻⁹ — that
+naive value is excluded by ~8–9 orders. But the naive estimate holds
+the bound state rigid: it ignores exactly what the founder's
+conjecture asserts, that the orbit re-equilibrates (electron slows →
+binds tighter → internal SSV_net rises at the new radius → ratio
+restored). Le Chatelier again — structurally the same restoring
+response the founder gave the DE lane at 3436.
+
+**S3a-α (registered here): derive k_α from the PCD rules.** The
+bound-state re-equilibration calculation under an ambient SSV_abs
+increment, using the confirmed displacement law (Q1, §6) and the
+attribution-free total (Q1b). The gate is **|k_α| ≤ 3 × 10⁻⁹**. And
+the shape of a passing answer is constrained in advance: a suppression
+of eight to nine orders "by accident" is not credible — a pass must
+exhibit an **exact invariant** of the PCD dynamics that pins the
+equilibrium ratio (the substrate analogue of action quantisation
+pinning ħ), making k_α = 0 identically, with the measured bound then
+satisfied with unbounded margin. Anything short of an exact invariant
+is a fail dressed up. Binary, as the charter demands.
+
+Q2 (separate stiffness entry in the ZBW period) and Q3
+(landing-pattern proportionality) stand — and Q3 now doubles as an
+input to the invariant hunt, since the re-equilibrated ratio depends
+on the fluctuation statistics the landing pattern generates.
+
+## §8 — Fence
+
+Ruling captured; S3a-α registered with its gate; no result asserted.
+The naive |k_α| ≈ 1 estimate is explicitly NOT a verdict on CPP — it
+is the rigid-state strawman the derivation must improve upon. SR-1,
+SR-8, SR-9/R2, 3435–3445 untouched. Next patch (DE): 3447.
