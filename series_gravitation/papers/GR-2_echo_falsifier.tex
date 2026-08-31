@@ -15,6 +15,21 @@
 %   adoption). Spin-saturation finding surfaced by the script's own
 %   first run: dDt/dchi = 0.299 GM/c^3 at the benchmark, so the
 %   +/-0.1 spin bar is +/-0.35% -- mass dominates ~20x.
+% V1.6 (Patch 3363, 31 Aug 2026): THE FLAGSHIP LINE AT GRAVITATIONAL
+%   GRADE, on founder-ratified CONV-037 (5/5; AMENDMENTS-CLEAR 3-2; all
+%   seats' revisions adopted). The Teukolsky ladder (3353-3361) replaces
+%   V1.5's "not yet quantitatively predicted" clause and its one-point
+%   "+17%, Q~5" anchor with exact s = -2 Kerr wall resonances:
+%   (2,-2) 188-194 Hz (191.2 at chi = 0.68), Q ~ 2.1; (3,-3) 284-292
+%   Hz, Q ~ 4.2. BELOW every prior estimate (eikonal top 211, withdrawn
+%   transport 247, scalar-exact 251) because the s = -2 potential sits
+%   lower; the "+17% above the top" was wrong-SIGNED for GWs. THE
+%   ASSUMPTION STATED IN THE PAPER: X = 0 is assumed, not derived, for
+%   a rotating surface. (2,+1) NOT LOCATED; ordering at eikonal-WKB
+%   grade only. Provenance ledger extended to TEN scripts (3356 8/8,
+%   3358 9/9, 3359 9/9, 3361 3/3); the 3348 checker's ledger extended
+%   with it and passes 7/7 with the scope-creep detector satisfied.
+%   No template-table number changed.
 % V1.5 (Patch 3351, 30 Aug 2026): OPEN-GR-RCORE-3(e) CLOSED, and the
 %   paper's own claim about it corrected. V1.4's remark called the
 %   negligibility of high-ell excitation "inherited from standard
@@ -155,7 +170,7 @@ CPP Compact Objects}\\[6pt]
 {\large Second series paper of the Conscious Point Physics
 gravitation series (parent: GR-1)}}
 \author{Thomas Lee Abshier, ND\\Hyperphysics Institute}
-\date{21 August 2026 --- Version~1.5 (30 August 2026)}
+\date{21 August 2026 --- Version~1.6 (31 August 2026)}
 
 \begin{document}
 \maketitle
@@ -250,6 +265,17 @@ $602$--$986$~Hz high-$\ell$ band\\
 \texttt{code/3350\_rcore3e\_\allowbreak source\_\allowbreak excitation\_verify.py} & 9/9 &
 the $\ell = 7,8$ source-side budget; $v_{\rm ISCO} = 0.536$ and the
 $v = 0.589$ break point\\
+\texttt{code/3356\_teukolsky\_\allowbreak ladder\_rungs12\_verify.py} & 8/8 &
+Leaver Schwarzschild validation; the exact $\chi = 0$ wall resonance
+$0.44859 - 0.11749i$, $Q = 1.91$\\
+\texttt{code/3358\_kerr\_wall\_\allowbreak modes\_verify.py} & 9/9 &
+Leaver Kerr validation against tabulated QNMs; scalar-sector Kerr wall
+modes\\
+\texttt{code/3359\_sn\_gravitational\_\allowbreak wall\_modes\_verify.py} & 9/9 &
+Sasaki--Nakamura validation; the gravitational $(2,-2)$ and $(3,-3)$
+Kerr wall modes at $\chi = 0.68$\\
+\texttt{code/3361\_conv037\_\allowbreak gaps\_verify.py} & 3/3 &
+the Kerr-interior SN benchmark; the spin band\\
 \hline
 \multicolumn{3}{@{}p{0.95\linewidth}@{}}{\textbf{NOT script-verified
 in this paper:} the $\sim$5\% first-echo amplitude.  The wall
@@ -474,15 +500,38 @@ statement about the clamped wall, not about geometry alone.  \emph{(ii) What rep
 \emph{line set} near the corresponding barrier-top frequencies,
 together with early broadband transients that still arrive at the
 Eq.~\eqref{eq:delay} delay --- so $\Delta t_{\rm ret}$ and its error
-budget stand.  Line positions and widths are \emph{not} yet
-quantitatively predicted; the equatorial eikonal tops
-($211/233/260/294$~Hz at the benchmark for
-$(2,-2)/(2,-1)/(2,0)/(2,+1)$) are orientation-scale only, and the
-single computed anchor ($\chi = 0$, $\ell = 2$: true position
-$\sim$$17\%$ above its eikonal top, $Q \approx 5$) gives the
-direction and rough scale of the above-top shift, \emph{not} an
-error model.  Full-Teukolsky positions and widths are the remaining
-RCORE-3 computation.  \emph{(iii) Burial sharpens but reprices}: the
+budget stand.  \textbf{Line positions and widths at gravitational grade (V1.6;
+Patches 3353--3361; CONV-037, 5/5, AMENDMENTS-CLEAR 4--1 on the
+text).}  The full Teukolsky solver was built in validated rungs ---
+Leaver's Schwarzschild continued fraction against published QNMs
+($7.5\times10^{-6}$), Leaver's Kerr fractions against tabulated QNMs
+at four spins ($\le 1.2\times10^{-4}$), and the Sasaki--Nakamura
+transformation reducing to Regge--Wheeler at $a = 0$ pointwise
+($1.6\times10^{-9}$), reproducing the independent $\chi = 0$ wall
+mode to $2.7\times10^{-6}$, and locating a tabulated Kerr QNM from the
+horizon side to $2.2\times10^{-3}$.  Its result for a GW150914-class
+remnant ($\chi_f \in [0.62, 0.74]$): \textbf{the retrograde-keyed
+$(2,-2)$ line lies at $188$--$194$~Hz across the spin window ($191.2$~Hz
+at $\chi = 0.68$; $\omega = 0.3669 - 0.0878i$), $Q \approx 2.1$} ---
+a single broad top-of-barrier feature; \textbf{$(3,-3)$ at
+$284$--$292$~Hz, $Q \approx 4.2$}, the sharper of the two
+\emph{located} retrograde modes.  Mass scaling adds $\pm 6.5\%$; spin
+$\pm 1.5\%$.  These are exact numerical solutions of the
+Sasaki--Nakamura / $X$-Dirichlet wall model at the derived surface,
+and \textbf{the wall condition $X = 0$ is the Regge--Wheeler analogue
+of the clamped-register node, \emph{assumed} rather than derived for a
+rotating surface; the spectrum is conditional on it.}  The prograde
+comparator $(2,+1)$ is \emph{not located} --- the instrument cannot
+determine its frequency or $Q$ --- so the ordering discriminator of
+\S\ref{sec:discriminator} stands at eikonal-WKB grade only.
+``Dominant'' for $(2,-2)$ is conditional on the inherited source-side
+excitation model of Patches 3349--3350; the ladder computed no
+amplitudes.  \emph{Superseded, retained:} the orientation-scale
+eikonal tops ($211/233/260/294$~Hz) and the one-point ``$+17\%$,
+$Q \approx 5$'' anchor of V1.5 --- the exact $\chi = 0$ width is
+$Q = 1.91$ (Leg A's Wigner-delay $Q$ was $2.5\times$ too narrow), and
+the gravitational line sits \emph{below} the geodesic top, not above
+it.  \emph{(iii) Burial sharpens but reprices}: the
 entire corotating $(\ell,\ell)$ branch is buried at $\chi = 0.68$
 ($\mu_{\rm crit} = 0.774$ against $\mu(\ell,\ell) \ge 0.8$), so the
 discriminator of \S\ref{sec:discriminator} survives as the

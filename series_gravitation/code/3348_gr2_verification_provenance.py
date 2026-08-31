@@ -68,6 +68,17 @@ LEDGER = [
     ("3350_rcore3e_source_excitation_verify.py", 9,
      "the ell=7,8 source-side budget; v_ISCO = 0.536 and the v = 0.589 "
      "break point (Patch 3351 addition)"),
+    ("3356_teukolsky_ladder_rungs12_verify.py", 8,
+     "Leaver Schwarzschild validation; the exact chi=0 wall resonance "
+     "0.44859-0.11749i, Q = 1.91 (Patch 3363 addition)"),
+    ("3358_kerr_wall_modes_verify.py", 9,
+     "Leaver Kerr validation vs tables; scalar Kerr wall modes (Patch 3363)"),
+    ("3359_sn_gravitational_wall_modes_verify.py", 9,
+     "Sasaki-Nakamura validation; the gravitational (2,-2) and (3,-3) "
+     "Kerr wall modes at chi = 0.68 (Patch 3363)"),
+    ("3361_conv037_gaps_verify.py", 3,
+     "the Kerr-interior SN benchmark (locates the tabulated Kerr QNM to "
+     "2.2e-3); the spin band 188-194 / 284-292 Hz (Patch 3363)"),
 ]
 
 missing = [s for s, _, _ in LEDGER if not os.path.isfile(os.path.join(CODE, s))]

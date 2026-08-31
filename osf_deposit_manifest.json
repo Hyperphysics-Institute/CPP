@@ -1602,7 +1602,7 @@
     {
       "rel": "series_gravitation/papers/GR-2_echo_falsifier.tex",
       "title": "The Echo Falsifier:",
-      "ver": "1.5",
+      "ver": "1.6",
       "changed": "2026-08-31",
       "cls": "Series paper",
       "withheld": "",
@@ -1623,7 +1623,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.5",
+        "version": "1.6",
         "description": "Conscious Point Physics predicts that black-hole merger remnants are horizonless, hard-surfaced, maximally compact bodies whose surface sits at exactly the Buchdahl radius (areal $ 98r_S$; sector standing reading F-R1, founder-ratified CONV-030), with gravitational-sector reflectivity $|R| = 1$ derived with zero free parameters (GR-1d~V3). Such objects must echo. This paper assembles the complete falsifier: the echo-delay template $ t(M, )$ at eikonal grade, keyed --- distinctively --- to the retrograde photon ring, because the derived Kerr exclusion surface buries the prograde ring for remnant spins $ 0.55$; the first-echo amplitude ($ $5\\% of ringdown --- the wall reflectivity $|R| = 1$ is exact and parameter-free, while the barrier-transmission fraction behind the 5\\% figure is an argument-level estimate inherited from GR-1d); the observational discriminators separating CPP from horizon-anchored exotic-compact-object templates; and the explicit kill conditions. Benchmark: for GW150914 ($M = 62 4\\, $, $ = 0.68$), $ t_ ret = 8.59\\,GM/c^3 = 2.62$~ms $ \\,6.5\\%$~(mass)~$ \\,0.35\\%$~(spin)~$ $~eikonal-grade systematic --- and the unquantified eikonal systematic is the DOMINANT formal uncertainty, to be discharged (OPEN-GR-RCORE-3) before any matched-filter search template is built from this paper --- echo-comb spacing $f 381$~Hz --- in the LIGO band, in a delay range not covered by the published echo searches surveyed here (which target $ $$0.1$--$0.3$~s delays~ abedi2017,westerweck2018,tsang2020). A supporting result of the same construction, the ergoregion-censorship theorem, removes the ergoregion-instability objection to rapidly spinning horizonless reflectors at every spin and reflectivity. Conditionality stated first: the spin sector of the template and the censorship theorem are derivation-conditional on three stated census assumptions A1--A3 (OPEN-GR-RCORE-4 carries their substrate derivation); the delay is eikonal-grade pending finite-$ $ wall spectroscopy (OPEN-GR-RCORE-3); and the whole chain inherits the W2/PSR conditionality of the parent series. Registered prediction: PRED-O-39.",
         "description_ok": true,
         "description_source": "abstract environment"

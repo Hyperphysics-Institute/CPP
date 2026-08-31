@@ -419,6 +419,26 @@
 > map (0.12 < |Im ω| < 0.3); s = −2 excitation amplitudes.
 > **NEXT: 3363 = GR-2 V1.6.**
 >
+> **UPDATE — 3363: GR-2 V1.6 SHIPPED — the flagship line at
+> gravitational grade, and the paper carries the assumption it rests
+> on.** V1.5's "not yet quantitatively predicted" + one-point "+17%,
+> Q ≈ 5" anchor → exact s = −2 Kerr wall resonances: **(2,−2) 188–194 Hz,
+> Q ≈ 2.1; (3,−3) 284–292 Hz, Q ≈ 4.2**, each below every prior estimate.
+> **In the paper text: X = 0 is ASSUMED, not derived, for a rotating
+> surface** — the first time GR-2 states that its headline rests on an
+> undischarged modelling choice beyond A1–A3. V1.5's anchor was wrong
+> in direction and 2.5× too narrow in Q — yet V1.5 survives with a
+> remark, not a retraction, because it labelled the anchor as
+> direction-and-scale. Six versions in: every correctly-scoped claim
+> survived the finer calculation; every claim that outran its scope
+> needed correction. Provenance ledger 6 → 10 scripts, forced by the
+> 3348 scope-creep detector (would have failed check 6 otherwise);
+> checker 7/7. Compile clean, 11pp; no template number moved; Step E
+> re-run. **THE ENACTMENT WAVE IS COMPLETE.** The GR lane's open work:
+> derive X = 0 from the rotating clamped register (the new load-bearing
+> item); very-broad-mode instrument; grey-zone map; s = −2 excitation;
+> OPEN-GR-RCORE-4 (A1–A3); GR-1i still V0.1.
+>
 > **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and

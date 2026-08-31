@@ -250,3 +250,31 @@ unledgered citation is caught.
 
 No physics changed. Compile gate: pdflatex ×2, 0 errors, 0 undefined
 refs, 10 pages. Deposit posture unchanged (fail-closed).
+
+## V1.6 — 31 August 2026, Patch 3363 (Session 157) — the flagship line at gravitational grade
+
+Basis: **CONV-037 CLOSED 5/5** (`review/conv037_adjudication.md`;
+AMENDMENTS-CLEAR 3–2; every seat's revisions adopted; two panel-named
+gaps computed before ruling), **founder-ratified 31 Aug** ("please
+ratify the bundle").
+
+The Teukolsky ladder (Patches 3353–3361) replaces V1.5's "line
+positions and widths not yet quantitatively predicted" and its
+one-point "+17%, Q ≈ 5" anchor with exact s = −2 Kerr wall
+resonances: **(2,−2) at 188–194 Hz across χ ∈ [0.62, 0.74] (191.2 Hz at
+0.68), Q ≈ 2.1; (3,−3) at 284–292 Hz, Q ≈ 4.2.** Below every prior
+estimate — the s = −2 potential sits lower than the scalar/eikonal one;
+the "+17% above the top" was wrong-signed for gravitational waves.
+
+**The assumption is stated in the paper:** X = 0 is the Regge–Wheeler
+analogue of the clamped-register node, *assumed* rather than derived
+for a rotating surface; the spectrum is conditional on it. (2,+1) NOT
+LOCATED; the ordering discriminator stands at eikonal-WKB grade only;
+"dominant" conditioned on the inherited excitation model; superseded
+tops and the V1.5 anchor retained per anti-erasure.
+
+Provenance ledger extended to **ten** scripts (3356 8/8, 3358 9/9,
+3359 9/9, 3361 3/3); the 3348 checker's ledger extended with it and
+passes 7/7 with its scope-creep detector satisfied. No template-table
+number changed. Compile gate: pdflatex ×2, 0 errors, 0 undefined,
+11 pages. Deposit posture unchanged (fail-closed).
