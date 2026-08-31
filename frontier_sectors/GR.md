@@ -370,6 +370,29 @@
 > execution seats also get the 3356/3358/3359 .py files); return five
 > responses verbatim inline.** Nothing enacted until the round closes.
 >
+> **UPDATE — 3361: CONV-037 CLOSED 5/5 (Seat 4 provisional on
+> identity) — AMENDMENTS-CLEAR 3–2, no binding rule fires, every
+> seat's revisions adopted, and the two panel-named gaps COMPUTED
+> BEFORE RULING.** Tally: Q1 SOUND-WITH-GAPS 4–1; Q2 VALID-WITH-CAVEATS
+> 5–0 (unanimous on *which* caveat: X = 0 assumed, not derived); Q3
+> confirmed-with-caveats; Q4 ADEQUATE 5–0; Q6 FAITHFUL 4–1 — **GPT's
+> OVERCLAIMS caught a genuine ERROR: the text assigned "Q ≲ 1.5" to a
+> mode the record marks NOT LOCATED; fixed regardless of the rule**;
+> Q7 17 items → 9 consolidated, all adopted; Q8b CLEAR 3 / RESTATE 1 /
+> BLOCK 1. **G1: the SN stack LOCATES the tabulated Kerr (2,2) QNM at
+> a/M = 0.7 to 2.2e−3** (|A_out/A_in| 4.5e−2 → 1.3e−4 at the root) —
+> the Kerr-interior blind spot four seats named is closed. **G2: spin
+> band 188.5–194.1 Hz for (2,−2), 284.5–292.5 Hz for (3,−3) over
+> χ ∈ [0.62, 0.74]; ±1.5% vs the ±6.5% mass band** — panel-requested,
+> so not a worker strengthening. **IDENTITY ANOMALY, new class: the
+> Copilot slot self-labels "Gemini" — counted on the founder's slot
+> label, confirmation requested; changes no majority either way.**
+> GPT: fifth consecutive round with grade objections adopted.
+> **RATIFICATION BUNDLE in `review/conv037_adjudication.md` §4:** the
+> revised PRED-O-39 text (191 Hz band, assumption clause, NOT LOCATED,
+> grade-split no-comb, conditioned "dominant") → predictions.md +
+> GR-2 V1.6 + registry re-label + 3359 K3 fix, on the founder's word.
+>
 > **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
