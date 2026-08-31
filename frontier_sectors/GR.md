@@ -265,6 +265,33 @@
 > and now starts from an instrument proven on a known case.** Record:
 > `rcore_derivation/3356_teukolsky_ladder_rungs12.md`.
 >
+> **UPDATE — 3357: RUNG 3a, the GRAVITATIONAL (s = −2) angular sector
+> (6/6) — validated two independent ways, and 3353's fence is PRICED.**
+> K1: c→0 gives ℓ(ℓ+1) − 2 to 1e−7 (ℓ = 4–12). K2: the first-order
+> slope dA/dc matches the known −2ms²/(ℓ(ℓ+1)) to 5e−4 — sign-sensitive,
+> the check that catches a wrong 2csx term. Endpoint rule applied
+> BEFORE running: ℓ ≥ 4 machine-precision; **ℓ = 3 converges at FIRST
+> order** (exponent ½, observed order 0.99) — reported with Richardson
+> extrapolation and a stated ±9e−4; **ℓ = 2 EXCLUDED** (exponent zero
+> at one pole; needs the endpoint-regularised method — and it is the
+> observable line, so the fence is up front). **THE HYPOTHESIS THAT
+> FAILED:** I expected the s = −2 residual beyond the −s(s+1) offset to
+> SHRINK with ℓ; it sits at ~+0.73 and grows slightly. The number was
+> right, the expectation wrong: the residual IS the first-order
+> spin-weight term +8c/(ℓ+1), and c grows with ℓ while the coefficient
+> falls, so the product is constant — matched to the analytic
+> prediction at every ℓ. Relative to A ~ ℓ² it shrinks: **6.6% at ℓ=3,
+> 1.3% at ℓ_crit, 0.5% at ℓ=12** — same order as the eikonal error
+> 3354 showed cancels in Φ. **NOT asserted: that it cancels for s = −2.**
+> The s = −2 census is not a drop-in Q swap — the radial operator
+> carries extra −2is(r−M)K/Δ + 4isωr terms — so that is rung 3b's
+> problem, said in the check rather than letting "small" slide into
+> "unaffected". Record: `rcore_derivation/3357_teukolsky_angular_s2.md`.
+> **THE LANE HAS NO CHEAP ITEMS LEFT. REMAINING: rung 3b (radial Kerr
+> Teukolsky / Sasaki–Nakamura) and the ℓ = 2 angular endpoint
+> regularisation — both method work for the higher tier, both starting
+> from instruments that have each passed a known case.**
+>
 > **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
