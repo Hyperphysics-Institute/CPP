@@ -292,6 +292,32 @@
 > regularisation — both method work for the higher tier, both starting
 > from instruments that have each passed a known case.**
 >
+> **UPDATE — 3358 (on Fable): RUNG 3b (9/9) — Leaver Kerr validated
+> against TABLES; the ℓ = 2 gravitational angular gap CLOSED; and the
+> lane's FIRST EXACT KERR WALL SPECTRUM (scalar sector).** Part A: both
+> Leaver Kerr CFs (angular + radial, s = −2, written from memory)
+> reproduce tabulated (2,2) QNMs at a/M = 0/0.5/0.7/0.9 to ≤ 1.2e−4 —
+> validating the s = −2 angular sector for ALL (ℓ,m), including the
+> ℓ = 2 case 3357 had to fence (Leaver's prefactor absorbs the pole
+> exponent): A(2,−2; s=−2) = 4.665, residual +0.68 matching 3357's
+> +0.72 first-order prediction. Cross-instrument: Leaver s = 0 vs
+> 3353's FD to 1e−6. **Part B: exact SCALAR Kerr wall modes at χ =
+> 0.68** — validated by the a = 0 limit against an independent code to
+> five decimals, r₀-independence to 2e−8, sharpness 5e−8 —
+> **(2,−2): 0.48085 − 0.11668i = 250.6 Hz @62, Q = 2.06, +21.6% above
+> the eikonal top; (3,−3): 327.4 Hz, Q = 4.00; (2,+1): 332.9 Hz,
+> Q = 1.06.** No trapped comb at ℓ = 2, now exactly; retrograde-keyed
+> ORDERING survives at exact grade ((2,−2) below (2,+1)); (3,−3) is
+> the sharpest line. The band CONV-034 withdrew (~247–344 Hz) sat near
+> the scalar-exact answer — withdrawn correctly anyway, because
+> "roughly right by luck" is not a grade. **JUDGMENT: scalar first
+> because R = 0 is its natural Dirichlet condition; the s = −2 wall
+> needs the Sasaki–Nakamura variable, whose functions must be validated
+> by reduction to RW at a = 0 — RUNG 3c, THE LAST ITEM.** NOT enacted
+> into GR-2/PRED-O-39: scalar numbers for a gravitational prediction;
+> the flagship gets exact frequencies when s = −2 lands, via CONV-036.
+> Record: `rcore_derivation/3358_kerr_wall_modes.md`.
+>
 > **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
