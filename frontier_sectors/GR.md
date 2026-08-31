@@ -1,8 +1,14 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (Patch 3348, 30 Aug 2026).** Block discipline:
-> **GR owns 3300–3399** (highest used: 3348); DE owns 3400s (at 3449);
-> DM owns 3500s (at 3505). **The GR lane writes status HERE, not to
+> **GR-LANE STATUS (header re-asserted Patch 3365, 31 Aug 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3364**; next free:
+> **3365**); DE owns 3400s (at 3449); DM owns 3500s (at 3505). *This
+> header line is a claim about repository state and rots like any other
+> — re-read and re-assert it at every session close, per the Session 160
+> standing caution. It sat at "3348" through sixteen further GR patches
+> (3349–3364) while the body of this file was kept current, which is the
+> exact failure mode the caution names: a sentence true when written and
+> falsified by later work in the same file.* **The GR lane writes status HERE, not to
 > `research_frontier.md`** — the lane-isolation protocol (Patch 3346)
 > was lost in the origin rewind and never restored, so the shared
 > dashboard is back to the single-`Last updated:` format where two
