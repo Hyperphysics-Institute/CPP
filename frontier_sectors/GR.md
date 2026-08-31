@@ -186,6 +186,36 @@
 > cheap, and owed before any GR-2 amendment quoting ℓ_crit tighter than
 > ±1.**
 >
+> **UPDATE — 3354: THE CENSUS WITH EXACT Q (7/7) — ℓ_crit DOES NOT
+> MOVE, and 3353's direction call is CORRECTED.** Re-run with the
+> self-consistent Q(ω) = A_{ℓm}(aω) − m² in place of the eikonal
+> constant: **ℓ_crit = 7 at χ = 0.30, 0.68, 0.95, unchanged**; the ℓ=6
+> miss stays at +0.0164 below threshold; N = 0 at ℓ = 2,3 stands; the
+> reflection-phase envelope unchanged to four figures. **3353 was
+> WRONG about direction:** it argued from the fixed-ω effect alone
+> (smaller Q → larger R → larger Φ), but the exact Q ALSO lowers the
+> barrier top so Φ_max is taken at a lower ω, and the two cancel to
+> better than 1e−3 with a tiny NET NEGATIVE residue — opposite sign to
+> the one flagged. The check built on that prediction failed first run
+> and was rewritten to record the corrected physics, not smoothed into
+> agreement. **Lesson, new to this session: being conscientious about
+> stating a correction's direction is not the same as being right about
+> it — 3353 stated it from half the physics.** OUTCOME: **the eikonal
+> census is ROBUST to the correction its critics asked for — a 4.4%
+> error in Q at ℓ=2 becomes a 0.03% error in Φ**, which is a better
+> answer than "the error is small": it is "the error is 4%, and here is
+> the mechanism by which it doesn't matter." GR-2's ℓ_crit = 7 ± 1
+> stands as written; the queued amendment now CONFIRMS that line rather
+> than revising it. **THE HEAVY BUILD WAS NOT STARTED, deliberately and
+> with the reasoning owed:** the radial Teukolsky solver is a multi-day
+> construction (Sasaki–Nakamura, complex root-finding, a validation
+> ladder against known Kerr QNMs before the wall is introduced), and
+> starting it in one turn on this tier means shipping a solver that
+> cannot be validated — the thing nine patches have been about not
+> doing. The self-consistent Q(ω) here is its first genuine component
+> (angular input, s = 0 sector); when the tier switches, the build
+> starts from here. Record: `rcore_derivation/3354_census_exact_Q.md`.
+>
 > **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
