@@ -237,6 +237,34 @@
 > Teukolsky build. NOTHING ELSE.** Record:
 > `rcore_derivation/3355_zeldovich_corollary.md`.
 >
+> **UPDATE — 3356: TEUKOLSKY LADDER RUNGS 1–2 (8/8) — the radial build
+> begins on validated ground, and the lane's FIRST EXACT COMPLEX
+> RESONANCE corrects Leg A's width by 2.5×.** RUNG 1: Leaver's
+> continued fraction, recurrence written from memory (the step wrong
+> twice this session — which is WHY known answers are the test),
+> reproduces published Schwarzschild QNMs at ℓ = 2, 3, 4 to 7.5e−6.
+> RUNG 2: direct inward integration (outgoing series fitted
+> NUMERICALLY to the ODE residual, not recalled) with the wall at
+> 9M/4, χ = 0, ℓ = 2 — **RW ω = 0.44859 − 0.11749i (233.8 Hz @62,
+> Q = 1.91); Zerilli 0.44506 − 0.13442i (Q = 1.66).** Instrument
+> validation ASSERTED: root independent of r₀ = 40/60/80 to 2.5e−8
+> (the instability test for Im ω < 0), zero SHARP (6e−8 contrast).
+> **AGAINST LEG A: position right, width wrong.** Exact Re ω agrees
+> with Leg A's TD peak to −0.05% (its TD instrument was the better
+> one); but Leg A's Q ≈ 4.9 from the Wigner delay is **2.5× too
+> narrow — exact Q = 1.91.** The Wigner-delay-to-lifetime mapping fails
+> for a resonance on the barrier top; that Q ≈ 5 rode through
+> 3334/3349 into GR-2 as a "directional note" after CONV-034 demoted
+> it — the panel's demotion was right and should have gone further.
+> Anchor re-measured: +15.3% above the top (was +17%). **GR-2 amendment
+> QUEUED: "Q ≈ 5" → "Q ≈ 1.9 at χ = 0, ℓ = 2 (exact); Kerr widths not
+> yet computed" — the line is BROADER than the paper implies.** Method
+> boundary recorded: beyond r₀ ≈ 120 the direct integration's contrast
+> degrades and it should not be trusted. **RUNG 3 — Kerr, s = −2,
+> Sasaki–Nakamura — is the remaining heavy build, NOT started here,
+> and now starts from an instrument proven on a known case.** Record:
+> `rcore_derivation/3356_teukolsky_ladder_rungs12.md`.
+>
 > **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
