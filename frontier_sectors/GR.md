@@ -149,6 +149,43 @@
 > "requires an analytic disjointness inequality, registered as open
 > work" — it now exists.**
 >
+> **UPDATE — 3353: TEUKOLSKY LEG 1 (angular sector, 9/9) — the eikonal
+> Carter constant's error FINALLY COMPUTED, and it cuts against us.**
+> Every result since 3334 rests on Q_eik = (ℓ+½)² − m²; GPT objected at
+> CONV-034 and again at CONV-035 and nobody had ever measured it.
+> Matching the radial equations gives Q_exact = A_{ℓm}(aω) − m², so the
+> approximation IS the claim A ≈ (ℓ+½)². **MEASURED: +4.36% at (2,−2),
+> +4.64% at (2,+2), +2.22% at (3,−3), +0.51% at (7,−7), +0.32% at
+> (9,−9), +0.19% at (12,−12)** — worst low-ℓ vs worst high-ℓ is a
+> factor of NINE, exactly the asymmetry the dissent seat argued. It
+> also degrades monotonically with aω (+4.2% at aω=0 → +10.3% at
+> aω=1.5), so the error is largest where this lane works. **DIRECTION
+> IS UNFAVOURABLE AND IS STATED FIRST: the eikonal OVERSHOOTS, Q enters
+> R with a MINUS sign, so exact Q RAISES the phase volume — trapping is
+> slightly EASIER than the census assumed and ℓ_crit could move DOWN,
+> not up** (shift well inside the ±1 already carried, but a reader
+> shouldn't have to derive it). **ACCIDENTAL ROBUSTNESS: the 3352
+> theorem is UNTOUCHED** — its Step 3 used only Q > 0, never Q's value,
+> so the lane's strongest claim is insensitive to its most-criticised
+> approximation. Not designed; it fell out of proving at the wall.
+> **THE CHECK FAILED THREE TIMES, each failure kept in the code:** m=0
+> needs a Neumann endpoint (fenced, no reported mode uses it);
+> intermediate |m|<ℓ resolves the weak pole behaviour badly on a
+> uniform grid (fenced, error 1.8e−1); and the TOLERANCE WAS THE WRONG
+> METRIC — an absolute bar silently tightens as eigenvalues scale like
+> ℓ(ℓ+1), so it was replaced by a RELATIVE bar benchmarked against the
+> smallest claimed effect (error 1.6e−7, a factor **11,690** below the
+> +0.19%, so the measurement is not reporting its own grid). |m| = ℓ —
+> the sector every reported mode lives in — is machine-precision at
+> N = 800→6400, and an assert enforces that every reported mode has
+> |m| = ℓ, because fencing without an assert is just a comment.
+> **SCOPE, stated three times: this is the SCALAR s = 0 sector, NOT the
+> gravitational separation constant, and the radial half is untouched.**
+> Record: `rcore_derivation/3353_teukolsky_angular.md`.
+> **QUEUED: a census re-run with exact Q to see whether ℓ_crit moves —
+> cheap, and owed before any GR-2 amendment quoting ℓ_crit tighter than
+> ±1.**
+>
 > **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
