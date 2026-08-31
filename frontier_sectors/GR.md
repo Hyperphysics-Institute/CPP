@@ -28,10 +28,40 @@
 > removing it restores 6/6. No physics changed; no template number
 > moved; the four underlying scripts untouched.
 >
-> **NEXT IN THIS LANE, ranked: (1) OPEN-GR-RCORE-3(e), the multipole
-> excitation budget** — "ℓ ≳ 7 excitation is negligible" is inherited
-> phenomenology, never computed here, and it is the load-bearing joint
-> under the observable prediction after Leg C; cheap. **(2) the
+> **UPDATE — 3349: OPEN-GR-RCORE-3(e) PARTIALLY DISCHARGED (8/8,
+> all-FAST).** Route: a trapped mode sits BELOW its barrier top, so
+> exciting it and seeing it each cost the tunnelling factor
+> Γ = ∫|k|dr; the observable factor is e^(−4Γ), computable with the
+> Leg-B/C instrument. **The hypothesis FAILED at ℓ_crit and the record
+> says so:** at ℓ = 7, ω₁ = 1.1552 sits only 0.024 below ω_top, so the
+> forbidden region is THIN — Γ = 0.404, e^(−4Γ) = 0.20, a factor of
+> five, NOT negligible. ℓ_crit is where trapping just begins and
+> therefore where it is weakest. Threshold e^(−4Γ) < 1e−3 was declared
+> BEFORE the numbers were read; it is first met at **ℓ = 9** (7.1e−4),
+> falling ~3.2e−2 per further multipole (Γ ≈ 0.858ℓ − 5.82, fitted).
+> **So: DERIVED for ℓ ≥ 9; STILL INHERITED at ℓ = 7–8 — two named
+> multipoles instead of an open-ended tail. The item stays OPEN at
+> reduced scope; a source-side excitation computation closes it.**
+> **UNSOUGHT SECOND FINDING, and the better half:** the trapped high-ℓ
+> combs span **602–986 Hz** while the predicted line set is
+> **211–294 Hz** — a factor 2.0 clear, so the ladder is SPECTRALLY
+> SEPARATED and cannot contaminate a search in the predicted band at
+> ANY ℓ, independent of the remaining gap. Three shields now stand
+> between the ladder and the prediction (barrier ℓ ≥ 9, band
+> separation all ℓ, inherited hierarchy) and the borrowed one is now
+> the weakest — where a borrowed assumption belongs. Consistency: ℓ = 6
+> carries no trapped mode to suppress, meeting Leg C exactly. Method
+> caveat recorded: first-order WKB lacks the Miller–Good correction
+> near the top, exactly where ℓ = 7 sits, so its Γ is the least
+> reliable entry — and the one the conclusion leans on least, since it
+> is reported as a FAILURE to discharge. **GR-2 amendment QUEUED (not
+> enacted): V1.4's "inherited... not computed in this programme" is now
+> half wrong and should read derived for ℓ ≥ 9 and for all ℓ in the
+> search band, inherited only for ℓ = 7–8.** Record:
+> `rcore_derivation/3349_rcore3e_multipole_excitation.md`.
+>
+> **NEXT IN THIS LANE, ranked: (1) the source-side excitation
+> computation for ℓ = 7–8** — all that remains of 3(e). **(2) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
 > superradiance-capable ⇒ buried). **(3) full-Teukolsky line positions
