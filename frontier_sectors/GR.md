@@ -88,8 +88,33 @@
 > computed in this programme" is simply wrong and should read derived
 > + closed within the physical range, thin supra-ISCO margin noted.**
 >
-> **NEXT IN THIS LANE, ranked: (1) the queued GR-2 amendment** (folds
-> 3349+3350; strengthens, so owes no round first). **(2) the
+> **UPDATE — 3351: GR-2 V1.5 SHIPPED, the queued amendment folded.**
+> V1.4's "inherited… not computed in this programme… undischarged,
+> load-bearing" was true when written and made FALSE by 3349–3350.
+> Replaced by three COMPUTED arguments **ordered by margin, not by
+> discovery**: band separation first (602–986 Hz vs 211–294 Hz, factor
+> 2.0, holds at every ℓ, independent of excitation — the one with
+> room), barrier penetration second (7e−4 at ℓ=9; explicitly NOT
+> decisive at ℓ=7), source-side budget third (1.9e−4 / 3.6e−6 at worst
+> case), **with the thin margin stated IN THE PAPER** (ℓ=7 crosses
+> 1e−3 at v=0.589, only 0.053 above v_ISCO=0.536). Provenance table →
+> six scripts. **THE PATCH'S REAL CONTENT: the checker had a blind
+> spot.** V1.4's version validated ledger→paper but never
+> paper→ledger, so numbers from 3349/3350 entered with NO objection —
+> the exact mechanism that grew the V1.0–V1.3 defect. Found by asking
+> before editing, "will the checker catch this?" (it would not).
+> **SCOPE-CREEP DETECTOR added; checker now 7/7.** It then failed
+> twice on its way in, both recorded in the code: it first passed
+> VACUOUSLY (matched raw LaTeX, found one citation, reported all-clear
+> — the same fail-open mode the 3347 audit condemned, second
+> occurrence this session), so it now runs on normalized text and
+> FAILS CLOSED on its own reach; and its exclusions are NAMED WITH
+> REASONS, since silent exemptions are how ledgers rot. Adversarially
+> tested with a bogus citation. **Habit worth keeping: the question to
+> ask of a new guard is not "does it pass?" but "what would it fail to
+> notice?"**
+>
+> **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
 > superradiance-capable ⇒ buried). **(3) full-Teukolsky line positions

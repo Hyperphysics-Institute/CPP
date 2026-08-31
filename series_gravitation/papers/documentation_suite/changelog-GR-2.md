@@ -208,3 +208,45 @@ No physics changed. No number in the template table moved. The four
 underlying verify scripts are untouched. Compile gate: pdflatex ×2,
 0 errors, 0 undefined refs, 9 pages. Deposit posture unchanged
 (fail-closed behind the founder APPROVED column + Isak's DOIs).
+
+## V1.5 — 30 August 2026, Patch 3351 (Session 157) — RCORE-3(e) closed; the paper's claim about it corrected
+
+V1.4's remark called the negligibility of high-ℓ excitation
+"inherited from standard ringdown phenomenology, not computed in this
+programme… undischarged, load-bearing." **True when written, and made
+false by Patches 3349–3350.** V1.5 replaces it with three *computed*
+arguments, ordered by margin:
+
+1. **Band separation** (widest margin) — the trapped ladder lies at
+   602–986 Hz, the predicted line set at 211–294 Hz, a factor 2.0
+   clear. Holds at every ℓ, independent of excitation, so a search in
+   the predicted band cannot be contaminated at all.
+2. **Barrier penetration** — e^(−4Γ) = 7e−4 at ℓ = 9, falling ~3e−2
+   per multipole; explicitly **not** decisive at ℓ = 7 (0.20), because
+   ℓ_crit is where trapping just begins and the barrier is thinnest.
+3. **Source-side budget** for ℓ = 7–8 — 1.9e−4 and 3.6e−6 at the worst
+   case of a velocity scan bounded by v_ISCO = 0.536, with the
+   counter-rotation mismatch bounded conservatively at unity.
+
+**The thin margin on (3) is stated in the paper text**: the ℓ = 7
+budget crosses 10⁻³ at v = 0.589, only 0.053 above v_ISCO — closed
+within the derived physical range, marginal just outside it. Argument
+(1) carries no such sensitivity.
+
+Provenance table extended to **six** scripts (3349 → 8/8, 3350 → 9/9).
+
+**The provenance checker gained a SCOPE-CREEP DETECTOR (now 7/7).**
+V1.4's version validated ledger → paper but never paper → ledger, so
+numbers arriving from an unlisted script could enter silently — *the
+very mechanism that grew the V1.0–V1.3 defect*. It failed correctly
+while this edit was in progress, which is how the edit got made. Two
+further self-corrections during the patch, both recorded in the code:
+the detector first passed **vacuously** (it matched raw LaTeX, found
+one citation, and reported "all in the ledger"), so it now runs on
+normalized text and **fails closed on its own reach**; and its
+exclusions (this script itself, `build_osf_queue.py`) are **named with
+reasons** rather than silently exempted. Adversarially tested: a bogus
+unledgered citation is caught.
+
+No physics changed. Compile gate: pdflatex ×2, 0 errors, 0 undefined
+refs, 10 pages. Deposit posture unchanged (fail-closed).

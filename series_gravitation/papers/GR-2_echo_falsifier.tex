@@ -15,6 +15,26 @@
 %   adoption). Spin-saturation finding surfaced by the script's own
 %   first run: dDt/dchi = 0.299 GM/c^3 at the benchmark, so the
 %   +/-0.1 spin bar is +/-0.35% -- mass dominates ~20x.
+% V1.5 (Patch 3351, 30 Aug 2026): OPEN-GR-RCORE-3(e) CLOSED, and the
+%   paper's own claim about it corrected. V1.4's remark called the
+%   negligibility of high-ell excitation "inherited from standard
+%   ringdown phenomenology, not computed in this programme, ...
+%   undischarged, load-bearing" -- true when written, and made FALSE by
+%   Patches 3349-3350. It now rests on three COMPUTED arguments,
+%   ordered by margin: band separation (602-986 Hz vs the 211-294 Hz
+%   search band, a factor 2.0, independent of excitation, holding at
+%   every ell -- the widest margin); barrier penetration (7e-4 at
+%   ell=9, NOT decisive at ell=7 where the barrier is thinnest); and
+%   the ell=7,8 source-side budget (1.9e-4 and 3.6e-6, worst case over
+%   a velocity scan bounded by v_ISCO = 0.536). The THIN margin on the
+%   third is stated in the text: it crosses 1e-3 at v = 0.589, only
+%   0.053 above v_ISCO. Provenance table extended to SIX scripts
+%   (3349 8/8, 3350 9/9). The provenance checker gained a SCOPE-CREEP
+%   detector: V1.4's version validated ledger->paper but never
+%   paper->ledger, so numbers from an unlisted script could enter
+%   silently -- the very mechanism that grew the V1.0-V1.3 defect. It
+%   is now 7/7 and it FAILED correctly while this edit was in progress,
+%   which is how the edit got made. No physics changed.
 % V1.4 (Patch 3348, 30 Aug 2026): THE VERIFICATION CLAIM CORRECTED,
 %   and made self-testing. The corpus-wide quantifier audit (Patch
 %   3347) found section 2's "every number is reproduced by the paper's
@@ -135,7 +155,7 @@ CPP Compact Objects}\\[6pt]
 {\large Second series paper of the Conscious Point Physics
 gravitation series (parent: GR-1)}}
 \author{Thomas Lee Abshier, ND\\Hyperphysics Institute}
-\date{21 August 2026 --- Version~1.4 (30 August 2026)}
+\date{21 August 2026 --- Version~1.5 (30 August 2026)}
 
 \begin{document}
 \maketitle
@@ -224,6 +244,12 @@ frequencies\\
 \texttt{code/3339\_rcore3\_\allowbreak legC\_corotation\_\allowbreak robustness\_verify.py} & 6/6 &
 the $\ell$-ladder and $\ell_{\rm crit} = 7 \pm 1$; co-rotation
 count-neutrality; the $\delta_w$ envelope; the 165-mode domain\\
+\texttt{code/3349\_rcore3e\_\allowbreak multipole\_\allowbreak excitation\_verify.py} & 8/8 &
+barrier penetration $\Gamma(\ell)$ and $e^{-4\Gamma}$; the
+$602$--$986$~Hz high-$\ell$ band\\
+\texttt{code/3350\_rcore3e\_\allowbreak source\_\allowbreak excitation\_verify.py} & 9/9 &
+the $\ell = 7,8$ source-side budget; $v_{\rm ISCO} = 0.536$ and the
+$v = 0.589$ break point\\
 \hline
 \multicolumn{3}{@{}p{0.95\linewidth}@{}}{\textbf{NOT script-verified
 in this paper:} the $\sim$5\% first-echo amplitude.  The wall
@@ -236,7 +262,7 @@ reproduced by no script cited here.}\\
 \end{center}
 
 \noindent This table is itself checked:
-\texttt{code/3348\_gr2\_verification\_provenance.py} (5/5~PASS)
+\texttt{code/3348\_gr2\_verification\_provenance.py} (7/7~PASS)
 verifies that each cited script exists, that each quoted count equals
 that script's actual number of checks, that the inherited quantity is
 still declared, and that the old blanket phrasing has not returned ---
@@ -395,11 +421,43 @@ is the Dirichlet/phase-convention sensitivity and is quoted with the
 number everywhere --- at $\chi = 0.68$, $\ell = 6$ already sits at
 $\Phi/\pi = 0.734$, only $0.016\pi$ below threshold): trapped
 ladders \emph{do} exist at high multipole, where ringdown excitation
-is negligible --- and \emph{that negligibility is inherited from
-standard ringdown phenomenology, is not computed in this programme,
-and is registered as the undischarged, load-bearing
-OPEN-GR-RCORE-3(e)}; it must not be read as another established
-result of this paper.  This is simultaneously the
+is negligible.  \textbf{That negligibility is no longer inherited}
+(V1.5; OPEN-GR-RCORE-3(e) closed, Patches 3349--3350).  It now rests
+on three computed arguments, of which the first carries the widest
+margin:
+
+\begin{enumerate}
+\item \emph{Band separation.} The trapped high-$\ell$ ladder lies at
+  $602$--$986$~Hz at the benchmark, entirely above this paper's
+  predicted line set at $211$--$294$~Hz --- a factor $2.0$ clear of
+  its top.  This holds at \emph{every} $\ell$ and is independent of
+  how strongly the modes are excited, so a search conducted in the
+  predicted band cannot be contaminated by the ladder at all.
+\item \emph{Barrier penetration.} A trapped mode sits below its
+  barrier top, so exciting it requires tunnelling in and observing it
+  requires tunnelling out: the observable factor is $e^{-4\Gamma}$,
+  which is $7\times10^{-4}$ at $\ell = 9$ and falls by a further
+  $\sim$$3\times10^{-2}$ per multipole.  It is \emph{not} decisive at
+  $\ell = 7$ ($0.20$), because $\ell_{\rm crit}$ is where trapping
+  just begins and the barrier there is thinnest.
+\item \emph{Source-side budget} for the two multipoles the barrier
+  does not cover.  With the multipole scaling
+  $P_\ell/P_2 \sim v^{2(\ell-2)}$ and the counter-rotation mismatch
+  bounded conservatively at unity (the trapped modes are extreme
+  retrograde while the remnant forms from a prograde inspiral, so the
+  true factor is smaller and the budget therefore \emph{under}-counts
+  the suppression), the combined budget is $1.9\times10^{-4}$ at
+  $\ell = 7$ and $3.6\times10^{-6}$ at $\ell = 8$, taken at the worst
+  case of a velocity scan bounded by the remnant's ISCO
+  ($v_{\rm ISCO} = 0.536$).
+\end{enumerate}
+
+\noindent \textbf{The margin on (3) is thin and is stated as such:}
+the $\ell = 7$ budget crosses the $10^{-3}$ level at $v = 0.589$, only
+$0.053$ above $v_{\rm ISCO}$, so (3) is closed \emph{within} the
+derived physical range and marginal just outside it.  Argument (1)
+carries no such sensitivity, and the conclusion does not rest on (3)
+alone.  This is simultaneously the
 consistency check the eikonal picture required: the geometric-optics
 comb is the $\ell \to \infty$ limit and is recovered \emph{from
 below}, so the single $\ell = 2$ resonance and the eikonal comb are
