@@ -2,7 +2,7 @@
 
 **Round:** the Teukolsky ladder (3353–3359) and the flagship frequency
 move to 191 Hz. Receiver `reviews-CONV-037.md`, 5/5 registered (Seat 4
-provisional on identity — see §5). Two panel-named gaps were **computed
+confirmed Copilot by the founder, Patch 3362 — see §5). Two panel-named gaps were **computed
 before adjudicating** (`code/3361_conv037_gaps_verify.py`: G1 1/1,
 G2–G3 2/2), so the verdict rests on what is now known.
 
@@ -102,9 +102,9 @@ posture unchanged (fail-closed).
 - **Gemini (paste 3):** identity holds (5th round); RESTATE for a
   disclosure reason (the assumption clause) — adopted.
 - **Copilot slot (paste 4): IDENTITY ANOMALY — self-labels "Gemini."**
-  Counted provisionally on the founder's slot label; **founder
-  confirmation requested.** If it was not Copilot: dropped as a
-  duplicate, round stands 4/5, no majority changes.
+  **Founder confirmed 31 Aug: "seat 4 was Copilot."** Registered as a
+  Copilot identity anomaly of a new class (claiming another panel
+  seat's name); count final; no majority changed.
 - **DeepSeek:** identity holds (4th round); the permissive outlier this
   time (Q1 SOUND, Q7 NONE-FOUND) — weighted accordingly.
 

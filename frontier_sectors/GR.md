@@ -393,6 +393,32 @@
 > grade-split no-comb, conditioned "dominant") → predictions.md +
 > GR-2 V1.6 + registry re-label + 3359 K3 fix, on the founder's word.
 >
+> **UPDATE — 3362: FOUNDER RATIFIED CONV-037 ("please ratify the
+> bundle"; "seat 4 was Copilot") — THE FLAGSHIP LINE MOVES TO
+> GRAVITATIONAL GRADE.** Enacted in this patch: **PRED-O-39 refined** —
+> (2,−2) at **188–194 Hz** across χ ∈ [0.62, 0.74] (191.2 Hz at 0.68),
+> Q ≈ 2.1; (3,−3) 284–292 Hz, Q ≈ 4.2; **the X = 0 wall condition
+> stated in the row as ASSUMED, not derived**; (2,+1) NOT LOCATED;
+> no-comb split by grade; "dominant" conditioned on the inherited
+> excitation model; anti-erasure note quoting the superseded 3337 tops
+> and naming everything withdrawn en route (Leg A's Q ≈ 5; 3358's
+> (2,+1); the exact-grade ordering claim); swarm UNCHANGED. Seat 4
+> identity CONFIRMED Copilot (a new anomaly class — claiming another
+> panel seat's name — registered). 3359 K3 text fixed (revision 8).
+> **OPEN-GR-RCORE-3 RE-LABELLED PER ITEM BY GRADE (revision 7):**
+> Leg A finite-ℓ χ=0 — exact (FD) + corrected width (3356 exact
+> complex root); Leg B census — eikonal-WKB, robust to exact Q (3354);
+> Leg C ladder/ℓ_crit — eikonal-WKB, ±1; (b) co-rotation —
+> count-neutral at Dirichlet grade; (e) excitation — derived ℓ ≥ 9,
+> source-side ℓ = 7–8 with counter-rotation BOUNDED and the hierarchy
+> INHERITED; (d) Zel'dovich — corollary of 3352 at eikonal-WKB grade;
+> angular s = −2 — Leaver-validated all ℓ; radial — exact numerical
+> solution of the SN/X-Dirichlet model at χ = 0.62–0.74, two modes
+> located. **NEW OPEN:** derive X = 0 from the rotating clamped
+> register; very-broad-mode instrument (Q ≲ 1.5); grey-zone stability
+> map (0.12 < |Im ω| < 0.3); s = −2 excitation amplitudes.
+> **NEXT: 3363 = GR-2 V1.6.**
+>
 > **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and

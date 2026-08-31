@@ -285,8 +285,9 @@ SCALAR = {(2, -2): 0.48085 - 0.11668j, (3, -3): 0.62812 - 0.07843j}
 ratios = {k: res[k].real / SCALAR[k].real for k in res if k in SCALAR}
 check("K3. THE HYPOTHESIS FAILED AND IS CORRECTED: the gravitational lines "
       "sit 12-24% BELOW the scalar-sector lines (3358). The scalar census "
-      "was a faithful proxy for STRUCTURE (no comb, broad ell=2, ordering) "
-      "but NOT for line POSITIONS — and the a = 0 ratio (RW/scalar = 0.794) "
+      "was a faithful proxy for STRUCTURE (no comb, broad ell=2) but NOT "
+      "for line POSITIONS, and NOT for the ordering test (its comparator was "
+      "withdrawn; CONV-037 revision 8) — the a = 0 ratio (RW/scalar = 0.794) "
       "already said so",
       all(0.70 < r < 0.95 for r in ratios.values()),
       "; ".join(f"({k[0]},{k[1]:+d}): grav {res[k].real:.4f} / scalar "

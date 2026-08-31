@@ -167,7 +167,7 @@ DEFECTS/OBJECTIONS:
 
 ---
 
-## Seat 4 — Copilot slot (founder's paste 4) — REGISTERED, COUNTED, IDENTITY ANOMALY FLAGGED
+## Seat 4 — Copilot slot (founder's paste 4) — REGISTERED, COUNTED — IDENTITY CONFIRMED BY FOUNDER (Patch 3362): Copilot
 
 **Registration note (Patch 3361):** **the return self-labels
 "REVIEWER: Gemini."** The founder's slot label (Copilot, paste 4) is
@@ -175,8 +175,7 @@ the provenance record and governs registration; the self-label is a
 NEW anomaly class (a seat claiming a *different panel seat's*
 identity, rather than ChatGPT). Stylistic evidence supports the slot
 label — bold tier tags unlike the paste-3 Gemini return — but this is
-not proof. **Founder confirmation requested.** Counted provisionally
-as Seat 4; if the founder reports it did NOT come from Copilot, it is
+not proof. **Founder confirmation requested.** Counted as Seat 4 (founder confirmed 31 Aug: "seat 4 was Copilot"); if the founder reports it did NOT come from Copilot, it is
 reclassified as a duplicate Gemini return, NOT counted, and the round
 stands at 4/5 (which changes no majority below). Content: honest
 INSPECTED, Q8b AMENDMENTS-CLEAR, five Q7 items including the
