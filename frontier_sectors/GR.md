@@ -60,8 +60,36 @@
 > search band, inherited only for ℓ = 7–8.** Record:
 > `rcore_derivation/3349_rcore3e_multipole_excitation.md`.
 >
-> **NEXT IN THIS LANE, ranked: (1) the source-side excitation
-> computation for ℓ = 7–8** — all that remains of 3(e). **(2) the
+> **UPDATE — 3350: OPEN-GR-RCORE-3(e) CLOSED (9/9, all-FAST).** The
+> ℓ = 7–8 source-side budget: multipole scaling P_ℓ/P₂ ~ v^(2(ℓ−2))
+> (derived here from the moment expansion), counter-rotation mismatch
+> (**bounded at 1.0, deliberately under-counted** — trapped modes are
+> extreme retrograde while the remnant forms from a PROGRADE inspiral,
+> so the true factor is < 1 and a real waveform can only push the
+> numbers DOWN), and 3349's barrier factor. Worst case over the
+> physical range: **ℓ=7 1.94e−4, ℓ=8 3.56e−6**, both under the
+> pre-declared 1e−3 bar. **PHYSICAL RANGE DERIVED, NOT ASSUMED:**
+> r_ISCO = 3.484 M at χ = 0.68 ⇒ **v_ISCO = 0.536**, and the scan runs
+> PAST it on purpose so the break point is found rather than avoided.
+> **THE EDGE, STATED: the margin is THIN** — ℓ=7 crosses 1e−3 at
+> v = 0.589, only +0.053 beyond v_ISCO; at the unphysical v = 0.60 the
+> budget is 1.20e−3, above the bar. First run FAILED there, and the
+> response was to compute the physical range rather than trim the scan
+> or move the bar. Verdict: **closed inside the physical range,
+> marginal just outside it.** **FOUR SHIELDS now stand, three derived
+> here: multipole scaling, barrier penetration (ℓ ≥ 9 decisive), band
+> separation (602–986 Hz vs 211–294 Hz — a factor 2.0, independent of
+> excitation, holding at EVERY ℓ, and the one with real margin), and
+> the inherited hierarchy, now redundant rather than load-bearing.**
+> Honest note: this closure is the third-best of the three derived
+> arguments and the prediction does not lean on it alone. Record:
+> `rcore_derivation/3350_rcore3e_source_excitation.md`.
+> **GR-2 amendment QUEUED and now larger: V1.4's "inherited... not
+> computed in this programme" is simply wrong and should read derived
+> + closed within the physical range, thin supra-ISCO margin noted.**
+>
+> **NEXT IN THIS LANE, ranked: (1) the queued GR-2 amendment** (folds
+> 3349+3350; strengthens, so owes no round first). **(2) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
 > superradiance-capable ⇒ buried). **(3) full-Teukolsky line positions
