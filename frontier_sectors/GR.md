@@ -439,6 +439,13 @@
 > item); very-broad-mode instrument; grey-zone map; s = −2 excitation;
 > OPEN-GR-RCORE-4 (A1–A3); GR-1i still V0.1.
 >
+> **SESSION 160 CLOSED (Patch 3364): handover at
+> `handovers/2026-08-31_session_160_gr2_v1.6_gravitational_grade_conv037_enacted.md`.**
+> No live wounds; CONV-037 closed, ratified and fully enacted. Next
+> patch: 3365. Load-bearing next item: **derive X = 0 from the rotating
+> clamped register** — both PRED-O-39 and GR-2 V1.6 now state in their
+> own text that the 191 Hz spectrum is conditional on it.
+>
 > **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
