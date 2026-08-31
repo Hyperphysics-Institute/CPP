@@ -350,6 +350,26 @@
 > 211–251 → 191 Hz, Q ≈ 2.1 — via CONV-036.** Record:
 > `rcore_derivation/3359_sn_gravitational_wall_modes.md`.
 >
+> **UPDATE — 3360: CONV-037 DISPATCHED (founder-initiated) — the
+> Teukolsky-ladder round, gating the flagship frequency move to
+> 191 Hz.** Package
+> `review/conv037_teukolsky_ladder_review_package_v1.0.md` (six records
+> + the 3359 script inlined); receiver `reviews-CONV-037.md` (0/5).
+> **ID NOTE: CONV-036 SKIPPED** — two DE-lane docs (26 Aug) reference
+> it; unverifiable from here; gaps are cheap, collisions are not.
+> Under review: the seven-rung ladder; SN recall and the X = 0
+> boundary-condition choice (T-1: derived or assumed? — GPT's steer);
+> the gravitational spectrum; three self-corrections + the 3358
+> withdrawal; the method limit and ordering-test downgrade; the
+> PROPOSED amendment text, written to carry its weakest joint visibly
+> ("spin dependence computed at one spin only, not yet a band" —
+> Gemini's steer: is 191 Hz EARNED?). Binding: majority OVERCLAIMS on
+> Q6 blocks predictions.md; majority INVALID on Q2 leaves the spectrum
+> unregistered. **FOUNDER ACTIONS: apply/push 3360; paste the package
+> to five seats (one identical paste each; Copilot may need upload;
+> execution seats also get the 3356/3358/3359 .py files); return five
+> responses verbatim inline.** Nothing enacted until the round closes.
+>
 > **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
