@@ -216,6 +216,27 @@
 > (angular input, s = 0 sector); when the tier switches, the build
 > starts from here. Record: `rcore_derivation/3354_census_exact_Q.md`.
 >
+> **UPDATE — 3355: ZEL'DOVICH BOUND, item (d), CLOSED as a corollary
+> of 3352 (4/4) — and stronger than intended.** A runaway needs
+> superradiance AND a cavity to compound it; 3352 proved
+> {superradiant} ∩ {trapped} = ∅, so the growth rate is ZERO and the
+> growth time unbounded without any rate being computed. **The
+> unexpected part: the same inequality means superradiant waves never
+> REACH the wall** — R(r_w) < 0 in the window puts the surface in the
+> forbidden region for that wave, so it turns around at the barrier's
+> outer face and is never amplified at all, not merely un-trapped. The
+> inequality does double duty: no cavity, no contact. Confirmed from
+> the other side: every trapped mode ever found (ℓ ≥ 7, m < 0) has no
+> window. What would reopen it: an s = −2 correction flipping the sign
+> of R(r_w) in the window (needs ~40% against the 0.283 margin, vs the
+> +4.6% angular correction measured at 3353), or a breakdown of the
+> A1–A3 surface (RCORE-4). GR-1h's "Planck-core bomb" worry, carried
+> since March: closed at the eikonal level (3339), structurally (3352),
+> and now with the growth rate itself shown to vanish (3355).
+> **RCORE-3 REMAINING: the s = −2 angular sector and the radial
+> Teukolsky build. NOTHING ELSE.** Record:
+> `rcore_derivation/3355_zeldovich_corollary.md`.
+>
 > **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
