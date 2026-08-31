@@ -114,6 +114,41 @@
 > ask of a new guard is not "does it pass?" but "what would it fail to
 > notice?"**
 >
+> **UPDATE — 3352: THE DISJOINTNESS THEOREM (8/8, all-FAST) — the
+> stability result upgraded from a 165-mode SCAN to a STRUCTURAL
+> EXCLUSION over an unbounded domain.** CONV-035 Q4 named the price
+> ("an analytic inequality proving the exposed/trapped/superradiant
+> sets disjoint"); this pays it. **THEOREM: a superradiant mode has no
+> propagating region AT THE WALL, hence cannot be trapped** — every ℓ,
+> every m, every frequency in the window, every spin to χ = 0.99. The
+> move is one line: evaluate R at the WALL instead of hunting turning
+> points. In the window ωS − am is strictly negative, so the positive
+> term is bounded by its ω = 0 value while the negative term is bounded
+> below via (m − aω) > m(1 − aΩ_w) and Q > 0 — **and what survives has
+> no ℓ, no m and no ω in it: a < √Δ_w(1 − aΩ_w). The mode indices
+> divide out**, which is why the theorem has no cutoff where the scan
+> needed one. Margin: 0.750 (χ=0) → **0.283 (χ=0.68)** → 0.104
+> (χ=0.99) — narrowing monotonically, never closing; table in the
+> record so a reader can see where it heads rather than trust "holds
+> at every spin". Worst case on Ω_w is the ZAMO bracket, which is what
+> is tested. Direct confirmation against the definition at **1,736
+> samples out to ℓ = 500**; least-negative R = −3.56, nothing near a
+> knife edge. **SIMPLIFICATION, unexpected: BURIAL IS IRRELEVANT to
+> stability.** The scan's account was two-branch; the algebra kills the
+> second. The instability recipe needs trapped AND superradiant, and
+> those sets are disjoint on their own, so exposure never enters —
+> meaning **the stability conclusion no longer inherits the thin
+> (2,+2) margin or the μ-correspondence grading GPT attacked at
+> CONV-034.** Honest asymmetry flagged: the eikonal Q correspondence is
+> weakest at low ℓ (where that objection bit) and strongest at large ℓ
+> (where this theorem works) — the upgrade lands where the method is
+> most trustworthy, which cuts in the worker's favour and is said
+> rather than left unremarked. **CONV-035 §B item (2) DISCHARGED.**
+> Record: `rcore_derivation/3352_disjointness_theorem.md`.
+> **GR-2 amendment QUEUED: V1.5 still says a structural exclusion
+> "requires an analytic disjointness inequality, registered as open
+> work" — it now exists.**
+>
 > **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
