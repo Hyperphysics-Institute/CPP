@@ -1,5 +1,54 @@
 # Frontier sector: GR (local gravitation series)
 
+> **GR-LANE STATUS (Patch 3348, 30 Aug 2026).** Block discipline:
+> **GR owns 3300–3399** (highest used: 3348); DE owns 3400s (at 3449);
+> DM owns 3500s (at 3505). **The GR lane writes status HERE, not to
+> `research_frontier.md`** — the lane-isolation protocol (Patch 3346)
+> was lost in the origin rewind and never restored, so the shared
+> dashboard is back to the single-`Last updated:` format where two
+> lanes collide on one line. Founder-endorsed 30 Aug: "a frontier
+> specific for GR... that seems to be the place where the collision
+> happens."
+>
+> **JUST DONE — 3348: GR-2 V1.4, the verification claim corrected and
+> made SELF-TESTING.** §2's "every number is reproduced by the paper's
+> verify script (3329, 9/9)" was FALSE and worsening — the ~5%
+> amplitude was inherited from GR-1d V3 and never in 3329 (false since
+> V1.0), and V1.1–V1.3 added ℓ_crit = 7±1, the 0.122 slope, the
+> 165-mode domain, 236 Hz, the four eikonal tops and the δ_w envelope,
+> all from 3333/3334/3339. **Timing mattered: DOIs are being prepared,
+> and no DOI should carry a false verification claim.** Replaced by an
+> explicit provenance table (3329→9/9, 3333→9/9, 3334→7/7, 3339→6/6)
+> with the ONE non-script-verified quantity declared, and the table is
+> asserted in code by `3348_gr2_verification_provenance.py` (6/6,
+> fail-closed, directory-independent): scripts exist, counts equal
+> actual `check()` totals, the exception stays declared, the old
+> phrasing cannot return. **Rot-detector adversarially tested** —
+> reinstating the V1.3 sentence drops it to 5/6 with "REGRESSION",
+> removing it restores 6/6. No physics changed; no template number
+> moved; the four underlying scripts untouched.
+>
+> **NEXT IN THIS LANE, ranked: (1) OPEN-GR-RCORE-3(e), the multipole
+> excitation budget** — "ℓ ≳ 7 excitation is negligible" is inherited
+> phenomenology, never computed here, and it is the load-bearing joint
+> under the observable prediction after Leg C; cheap. **(2) the
+> analytic disjointness inequality** (upgrades the 165-mode stability
+> scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and
+> superradiance-capable ⇒ buried). **(3) full-Teukolsky line positions
+> and widths** (converts orientation-scale tops into a registered
+> band; the expensive one). **(4) OPEN-GR-RCORE-4**, the substrate
+> census functional — discharges the A1–A3 conditionality the entire
+> spin sector inherits. **(5) GR-1i is still V0.1**, the only GR paper
+> not at shipped grade.
+>
+> **DEPOSIT FLAG (founder's domain, not the worker's):** the queue
+> holds 123 papers with 120 still `not approved`. If Isak's DOIs now
+> cover the corpus, the queue's APPROVED column has diverged from
+> reality and is worth reconciling before any deposit wave. The gate
+> stays fail-closed regardless.
+
+
+
 **Location:** `/CPP/frontier_sectors/GR.md`
 **Created:** 19 Aug 2026, Patch 3229 (Session 149), concurrent with the GR-1
 V0 assembly (Patch 3228). Series home: `series_gravitation/`.

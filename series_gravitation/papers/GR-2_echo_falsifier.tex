@@ -15,6 +15,23 @@
 %   adoption). Spin-saturation finding surfaced by the script's own
 %   first run: dDt/dchi = 0.299 GM/c^3 at the benchmark, so the
 %   +/-0.1 spin bar is +/-0.35% -- mass dominates ~20x.
+% V1.4 (Patch 3348, 30 Aug 2026): THE VERIFICATION CLAIM CORRECTED,
+%   and made self-testing. The corpus-wide quantifier audit (Patch
+%   3347) found section 2's "every number is reproduced by the paper's
+%   verify script (3329, 9/9 PASS)" to be FALSE -- and false in a way
+%   that WORSENED with every version bump: the ~5% first-echo
+%   amplitude was inherited from GR-1d V3 and never lived in 3329
+%   (false since V1.0), while V1.1-V1.3 added ell_crit, the 0.122
+%   slope, the 165-mode domain, 236 Hz, the four eikonal tops and the
+%   delta_w envelope, all computed by 3333/3334/3339. The blanket
+%   sentence is REPLACED by an explicit provenance table naming four
+%   scripts with their counts (9/9, 9/9, 7/7, 6/6) and declaring the
+%   one quantity that is NOT script-verified at all. Per the standing
+%   practice minted at 3347 ("assert in code where practical"), the
+%   table is itself checked by 3348_gr2_verification_provenance.py
+%   (5/5): scripts exist, counts match actual check() totals, the
+%   inherited quantity stays declared, and the old phrasing cannot
+%   return. No physics changed; no number in the template table moved.
 % V1.3 (Patch 3345, 21 Aug 2026): the five CONV-035 adopted revisions
 %   (round CLOSED 5/5; Q9b CLEAR 4-1; Q6 -- the process call on
 %   enact-on-discovery -- CORRECT 3-2, resolved by the dissent seat
@@ -118,7 +135,7 @@ CPP Compact Objects}\\[6pt]
 {\large Second series paper of the Conscious Point Physics
 gravitation series (parent: GR-1)}}
 \author{Thomas Lee Abshier, ND\\Hyperphysics Institute}
-\date{21 August 2026 --- Version~1.3}
+\date{21 August 2026 --- Version~1.4 (30 August 2026)}
 
 \begin{document}
 \maketitle
@@ -181,11 +198,49 @@ paper's central new content --- a specific \emph{keying} to the
 retrograde photon ring.
 
 This paper is the falsifier's handbook.  It contains no new
-derivations; every input is inherited from a reviewed source, cited
-at its ratified strength, and every number is reproduced by the
-paper's verify script
-(\texttt{code/3329\_gr2\_template\_verify.py}, 9/9~PASS; a FAST
-subset of four core checks runs in seconds).  What is new is the
+derivations; every input is inherited from a reviewed source and
+cited at its ratified strength.  Its numbers come from \emph{four}
+verify scripts, not one, and one quoted quantity is not
+script-verified at all --- stated exactly, because a blanket
+verification claim in earlier versions of this paper was false and
+grew more so with each version bump (Patch~3347 audit; V1.4
+correction):
+
+\begin{center}
+\small
+\begin{tabular}{@{}p{0.30\linewidth}p{0.10\linewidth}p{0.52\linewidth}@{}}
+\hline
+\textbf{script} & \textbf{count} & \textbf{what it reproduces here}\\
+\hline
+\texttt{code/3329\_gr2\_\allowbreak template\_verify.py} & 9/9 &
+Eq.~\eqref{eq:delay}, the template table, the mass/spin error budget,
+the equatorial burial onset, $f_{\rm echo}$, the discriminator\\
+\texttt{code/3333\_rcore3\_\allowbreak legA\_finite\_ell\_verify.py} & 9/9 &
+the $\ell = 2$, $\chi = 0$ single top-of-barrier resonance
+($236$~Hz, $Q \approx 5$); the Kerr mode-fate reconnaissance\\
+\texttt{code/3334\_rcore3\_\allowbreak legB\_kerr\_wkb\_verify.py} & 7/7 &
+the Bohr--Sommerfeld census ($N_{\rm trapped}$) and the barrier-top
+frequencies\\
+\texttt{code/3339\_rcore3\_\allowbreak legC\_corotation\_\allowbreak robustness\_verify.py} & 6/6 &
+the $\ell$-ladder and $\ell_{\rm crit} = 7 \pm 1$; co-rotation
+count-neutrality; the $\delta_w$ envelope; the 165-mode domain\\
+\hline
+\multicolumn{3}{@{}p{0.95\linewidth}@{}}{\textbf{NOT script-verified
+in this paper:} the $\sim$5\% first-echo amplitude.  The wall
+reflectivity $|R| = 1$ is exact and derived, but the
+barrier-transmission fraction behind the $5\%$ figure is an
+\emph{argument-level estimate inherited from GR-1d~V3} and is
+reproduced by no script cited here.}\\
+\hline
+\end{tabular}
+\end{center}
+
+\noindent This table is itself checked:
+\texttt{code/3348\_gr2\_verification\_provenance.py} (5/5~PASS)
+verifies that each cited script exists, that each quoted count equals
+that script's actual number of checks, that the inherited quantity is
+still declared, and that the old blanket phrasing has not returned ---
+so the claim fails a test rather than quietly becoming false.  What is new is the
 assembly: the template, the error budget, the discriminators, and
 the kill conditions in one citable place, aimed at archived
 LIGO/Virgo/KAGRA data.

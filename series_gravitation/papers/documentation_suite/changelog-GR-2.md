@@ -170,3 +170,41 @@ untouched at 9/9. Compile gate: pdflatex ×2, 0 errors, 0 undefined
 refs, 9 pages. Deposit posture unchanged (fail-closed). **OWED before
 the next flagship prediction move: the corpus-wide quantifier audit
 across the eleven GR papers.**
+
+## V1.4 — 30 August 2026, Patch 3348 (Session 157) — the verification claim corrected, and made self-testing
+
+Basis: the corpus-wide quantifier audit (Patch 3347), which found §2's
+"every number is reproduced by the paper's verify script
+(`3329_gr2_template_verify.py`, 9/9 PASS)" to be **false** — and false
+in a way that worsened with every version bump. The ~5% first-echo
+amplitude was inherited from GR-1d V3 and never lived in 3329 (false
+since V1.0); V1.1–V1.3 then added ℓ_crit = 7 ± 1, the Φ/π ≈ 0.122 ℓ
+slope, the 165-mode domain, the 236 Hz χ = 0 resonance, the four
+eikonal tops and the δ_w > 0.235π envelope, every one computed by
+3333, 3334 or 3339. **No DOI should carry that sentence.**
+
+THE FIX, structural rather than editorial. The blanket claim is
+replaced by an explicit **provenance table** naming four scripts with
+their counts (3329 → 9/9; 3333 → 9/9; 3334 → 7/7; 3339 → 6/6) and what
+each reproduces, plus a declared exception: **the ~5% amplitude is not
+script-verified in this paper at all** — |R| = 1 is exact and derived,
+but the barrier-transmission fraction is an argument-level estimate
+inherited from GR-1d V3.
+
+Per the standing practice minted at 3347 ("any sentence asserting what
+a script covers is re-read at every version bump, **and asserted in
+code where practical**"), the table is itself checked by
+`code/3348_gr2_verification_provenance.py` (**6/6 PASS**, all FAST,
+fail-closed and directory-independent): every cited script exists at
+its cited path; every quoted count equals that script's actual
+`check()` total (the rot-detector — change a script and the paper's
+claim FAILS a test rather than quietly becoming false); the inherited
+quantity is still declared; and the defective phrasing cannot return.
+The regression arm was **adversarially tested**: reinstating the V1.3
+sentence drops the checker to 5/6 with "REGRESSION: the V1.3 sentence
+is back", and removing it restores 6/6.
+
+No physics changed. No number in the template table moved. The four
+underlying verify scripts are untouched. Compile gate: pdflatex ×2,
+0 errors, 0 undefined refs, 9 pages. Deposit posture unchanged
+(fail-closed behind the founder APPROVED column + Isak's DOIs).
