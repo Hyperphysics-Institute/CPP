@@ -318,6 +318,38 @@
 > the flagship gets exact frequencies when s = −2 lands, via CONV-036.
 > Record: `rcore_derivation/3358_kerr_wall_modes.md`.
 >
+> **UPDATE — 3359 (Fable): RUNG 3c, THE LAST ITEM (9/9) — the
+> GRAVITATIONAL (s = −2) Kerr wall spectrum via Sasaki–Nakamura, and IT
+> MOVES THE FLAGSHIP LINE.** Recall risk discharged by three tests
+> before any Kerr number: SN collapses to Regge–Wheeler at a = 0
+> pointwise (1.6e−9, F ≡ 0); short-range in Kerr; and decisively, the
+> a = 0 wall mode matches 3356's independent RW code to 2.7e−6.
+> **RESULT at χ = 0.68: (2,−2) = 0.36694 − 0.08782i → 191.2 Hz @62,
+> Q = 2.09; (3,−3) = 0.55333 − 0.06522i → 288.4 Hz, Q = 4.24** — each
+> individually r₀-independent (3e−9) and sharp (6e−9). **The
+> gravitational (2,−2) line is BELOW every prior estimate** — eikonal
+> top 211, withdrawn transport 247, exact scalar 251 — by 12–24%, and
+> the a = 0 ratio RW/scalar = 0.794 had already said so. **3358's
+> "scalar = the exact version of the lane's grade" was right for
+> STRUCTURE, wrong for POSITIONS — corrected.** The withdrawn "+17%
+> above the top" was wrong-SIGNED for GWs (line sits 7% BELOW the
+> geodesic top); CONV-034's withdrawal was more right than anyone knew.
+> **TWO NEAR-MISSES CAUGHT BY PER-MODE ASSERTS:** (2,+1) returned its
+> own guess to the last digit (contrast 0.75) — NOT LOCATED, said in
+> the table; and **3358's scalar (2,+1) is WITHDRAWN** — it had passed
+> no test but "fsolve returned," and at Q ~ 1 the inward instability
+> is e^27, beyond the method. 3358's record corrected in place with
+> strikethrough; **the "ordering survives at exact grade" claim is
+> withdrawn with it — the retrograde-keyed ordering is back at
+> eikonal-WKB grade** until a very-broad-mode instrument exists. Fourth
+> instance this session of the lesson: a validation applied to the
+> first result and assumed for the rest is not a validation of the
+> rest. **OPEN-GR-RCORE-3: ALL CHARTERED ITEMS DISCHARGED at stated
+> grades. NEW OPEN: very-broad-mode instrument (Q ≲ 1.5). OWED, NOT
+> ENACTED: PRED-O-39/GR-2 amendment — flagship (2,−2) frequency
+> 211–251 → 191 Hz, Q ≈ 2.1 — via CONV-036.** Record:
+> `rcore_derivation/3359_sn_gravitational_wall_modes.md`.
+>
 > **NEXT IN THIS LANE, ranked: (1) the
 > analytic disjointness inequality** (upgrades the 165-mode stability
 > scan from evidence to theorem: prove trapped ⇒ m ≤ −(ℓ−1) and

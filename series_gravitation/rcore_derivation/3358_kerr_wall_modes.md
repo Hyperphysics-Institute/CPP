@@ -31,7 +31,16 @@ two codes, one number); (B2) root independent of r₀ = 30/40/50 to
 |---|---|---|---|---|---|
 | **(2,−2)** | **0.48085 − 0.11668i** | **250.6 Hz** | **2.06** | 0.3953 | **+21.6%** |
 | (3,−3) | 0.62812 − 0.07843i | 327.4 Hz | 4.00 | 0.5528 | +13.6% |
-| (2,+1) | 0.63877 − 0.30216i | 332.9 Hz | 1.06 | 0.5643 | +13.2% |
+| (2,+1) | ~~0.63877 − 0.30216i~~ **WITHDRAWN (Patch 3359)** | — | — | 0.5643 | — |
+
+**CORRECTION (Patch 3359, anti-erasure):** the (2,+1) entry above is
+**WITHDRAWN**. It never received the r₀-independence and sharpness
+tests that (2,−2) did, and 3359 found that direct inward integration
+cannot locate Q ~ 1 modes at all (|Im ω| ≈ 0.3 → e^27 instability
+growth; the root-finder returns its own guess). The value was a
+non-converged guess, not a root. Every claim below that leaned on
+(2,+1) — the exact-grade ordering test B6 — is downgraded accordingly.
+The (2,−2) and (3,−3) entries stand (both fully validated).
 
 ## §3 What this says about the shipped prediction
 
@@ -43,8 +52,9 @@ two codes, one number); (B2) root independent of r₀ = 30/40/50 to
   χ = 0 anchor. The band CONV-034 withdrew (~247–344 Hz) sat close to
   the scalar-exact answer — it was withdrawn correctly anyway, because
   it was *unearned*; now the number is computed.
-- **GR-2's retrograde-keyed ordering survives at exact grade**: (2,−2)
-  at 251 Hz lies below the exposed prograde (2,+1) at 333 Hz.
+- ~~GR-2's retrograde-keyed ordering survives at exact grade~~ **WITHDRAWN
+  (3359)**: the (2,+1) comparator was unvalidated; the ordering test
+  remains at eikonal-WKB grade.
 - **(3,−3) at Q = 4 is the sharpest line** — a spectroscopically
   better target than the dominant (2,−2), though weaker-excited.
 
