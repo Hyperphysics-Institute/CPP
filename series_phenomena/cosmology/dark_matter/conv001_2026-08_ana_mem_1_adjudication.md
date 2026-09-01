@@ -1,9 +1,9 @@
 # CONV-001 ADJUDICATION — ANA-MEM-1 PANEL (brief at 3505)
 
-**Registered Patch 3506, 26 August 2026.** Seats: S1 GPT — **NO
-RETURN** (slot empty at paste; adjudication amendable on receipt);
-S2 Grok; S3 Gemini; S4 Copilot; S5 DeepSeek. **EK-1: all four returned
-strings hash-match the sealed value — four of four execution-verified.
+**Registered Patch 3506, 26 August 2026.** Seats: S1 GPT — returned 1 Sep,
+adjudicated in the §Amendment below (Patch 3507);
+S2 Grok; S3 Gemini; S4 Copilot; S5 DeepSeek. **EK-1: all FIVE returned
+strings hash-match the sealed value — five of five execution-verified.
 The 2813/2838 defect class is closed in practice, not just in design.**
 Adjudication is by argument, not vote count (precedent: the K1 panel,
 where one seat alone was right, twice).
@@ -104,3 +104,54 @@ decomposition above). Ledger untouched: six of seven; 1B OPEN; 79.5%.
 Open items: founder Q4 answer; S1 return (if any); LEG A timing leg
 (engine, queued behind the BMC log read); FM register dispositions;
 frequency-band fix at prereg.
+
+---
+
+## AMENDMENT — S1 (GPT) return received 1 Sep 2026 (Patch 3507)
+
+**EK-1 hash-match: yes. Panel is now five of five execution-verified.**
+
+**Q1 → 5–0 CONFIRM.** S1 adds a realization rule adopted here: the
+subtraction is performed at the **channel level** (F_res =
+F_projected-Sea − F_SF6,modeled as operators on v(t)), not by
+subtracting a coefficient — and S1 independently flags, before seeing
+Q2, that the packet never justified mapping SF-6 onto the δ-function
+piece. Consonant with the Q2 correction.
+
+**Q2 → correction now carried by TWO seats independently on identical
+grounds.** S1: K̄ has units M/T (force per velocity); κ_q, κ_e are
+masses; the natural comparand is the FIRST temporal moment
+κ_eff ≡ −∫τ K_res(τ) dτ. Same argument as S2, reached separately. The
+moment decomposition stands with strengthened warrant.
+
+**T1/T2 unified — S1's spec ADOPTED as the canonical realization.**
+Drive a single q or e channel with a small sinusoidal velocity over a
+low-frequency ladder within the promotion band; measure the complex
+response Γ(ω) = F_Sea(ω)/v(ω); fit Γ(ω) = K̄ + iω κ_eff + O(ω²) (sign
+per Fourier convention). One measurement yields both: **the intercept
+K̄ must be consistent with zero (T1, the no-aether-drag null) and the
+slope κ_eff must match the pinned κ_q/κ_e within a tolerance frozen
+BEFORE the result — 5% absent a registered promotion-computation
+uncertainty (S1's prospective-tolerance rule adopted).** Several
+amplitudes to verify linearity (guards FM-5).
+
+**Q3 → 5–0 not-the-only-failure-mode. Register extended:**
+- FM-8 spatial inhomogeneity / boundaries — the charge enters a
+  different Sea state than it leaves [S1, new]
+- FM-9 nonzero residual zeroth moment from an INCOMPLETE or
+  mis-mapped SF-6 subtraction [S1, new] — a bookkeeping failure, not a
+  physics one; guarded directly by the Γ(ω) intercept test
+- FM-4 extended: nonstationary (not only anisotropic) ambient Sea [S1]
+S1's remaining modes coincide with FM-5, FM-6, FM-7.
+
+**Q4 → tally (a) internal ×3 [S1, S3, S4]; (c) ambient ×1 [S5];
+partition-to-founder ×1 [S2].** S1's scope qualification is adopted
+as the reporting rule regardless of the founder's answer: **the final
+1B calculation states the internal velocity/frequency envelope and
+the CM drift contribution SEPARATELY**, with (a)'s speeds read out
+from the pinned promotion dynamics, never retuned. (b) struck 5–0.
+**The founder question remains open** — the picture (travel wake vs
+dance wake, or both) — and the worse-of-both interim rule stands until
+he rules.
+
+Ledger untouched: six of seven; 1B OPEN; 79.5%.
