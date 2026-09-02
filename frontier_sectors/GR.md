@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3367, 1 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3367**; next free:
-> **3368**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3368, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3368**; next free:
+> **3369**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -15,6 +15,20 @@
 > lanes collide on one line. Founder-endorsed 30 Aug: "a frontier
 > specific for GR... that seems to be the place where the collision
 > happens."
+>
+> **3368 — CONV-038 DISPATCHED (2 Sep 2026).** Package
+> `review/conv038_retired_rule_floor_rederived_review_package_v1.0.md`;
+> receiver `review/reviews-CONV-038.md` (0/5). Gates the standing of the
+> l_P/2 floor after R-EXCL-RETIRED; audits Route A (Q2/Q3), the mirror
+> under a one-Moment-delay compliant wall (Q4), the corrigenda (Q6).
+> **FINDING AT ASSEMBLY (Q5): the "missing second leg" already exists —
+> SR-1 App. A.5's register cap SSV_crit = E_P/l_P³ — and in the u
+> variable it gives u_max = α_geom (0.56 or 0.24, unit-dependent) or a
+> collapse to PSR → 0, NOT obviously u = 1.** Three floors in the corpus
+> (0, l_P/(1+α), l_P/2). Unresolved by the worker; majority CONTRADICTION
+> on Q5 escalates to the founder and blocks disposition. First GR-lane
+> use of the sealed execution key EK-1. HALT-GR-1C-FLOOR stands; no .tex
+> touched. Next patch (GR): 3369 = adjudication on returns.
 >
 > **SESSION 161 (1 Sep 2026, Patches 3365–3367) — THE FOUNDATION OF THE
 > R-CORE ARC WAS A RETIRED RULE, AND THE FLOOR IS RE-DERIVED.** The
