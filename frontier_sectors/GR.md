@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3373, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3373**; next free:
-> **3374**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3374, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3374**; next free:
+> **3375**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,26 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3374 — OPEN-GR-ROT-1 RUNG 1: THERE IS NO WALL.** Under the
+> ratified dictionary c_* = c/(1+u) with u continuous across the
+> surface, the census speed does not jump there: a linear medium
+> reflects NOTHING at the surface. The 3297 mirror was entirely the
+> Dirichlet assumption. 1D time-domain, three laws, one zero-mean
+> wavelet (verify 16/16): **(C) old mirror** 100% prompt at π; **(A)
+> linear slab** (register below cap — attainment fails) 0% prompt,
+> 100% after the core round trip, sign from the CENTRE; **(B)
+> one-sided slab** (register at cap — attainment holds) 33% prompt at
+> π / 67% delayed + harmonics + a zero-energy static offset (memory).
+> All lossless. **FLOOR-1(a) attainment now chooses the echo
+> morphology (A vs B) — physically load-bearing, next.** Round trip
+> BRACKETED, not claimed: 4 / 9 / 13.5 μ/c (1.2 / 2.75 / 4.1 ms at
+> 62 M_⊙) by the c_* → observer-time map, which is the unminted
+> **NOTE-GR-CSTAR-STRONGFIELD** — all comparable to the 2.15 ms
+> cavity: **two echo timescales, not one.** GR-2 V2.0 waits on (1) the
+> map, (2) attainment, (3) the spherical ℓ = 2 rung with RW potential
+> and lapse, (4) rotation. Record `rcore_derivation/3374_rcore_slab_rung1.md`.
+> Ledger: no paper touched. Next patch (GR): 3375.
 >
 > **3373 — R-COOCCUPATION-FORCED (founder: same-polarity CPs CAN land
 > on the same GP; THEO-1's same-polarity clause described ZBW cycling,
