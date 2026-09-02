@@ -278,3 +278,11 @@ Provenance ledger extended to **ten** scripts (3356 8/8, 3358 9/9,
 passes 7/7 with its scope-creep detector satisfied. No template-table
 number changed. Compile gate: pdflatex ×2, 0 errors, 0 undefined,
 11 pages. Deposit posture unchanged (fail-closed).
+
+## V1.7 — 2 September 2026, Patch 3371 (Session 161) — two caveats on the flagship line (CONV-038, 5/5)
+
+**Trigger.** The founder asked what a "clamped register" is. The term (Opus coinage, 3297) traced to the CP Exclusion Rule, which the founder ruled RETIRED (R-EXCL-RETIRED; never in its cited source c01). The floor l_P/2 under the whole R-core arc lost its only derivation; re-derived at 3367 as a Buchdahl bound; CONV-038 (5/5, EK-1 two seats execution-verified) ruled attainment unproved, phase π not derived, caveat obliged 5–0. Founder R-FLOOR-FINITE / R-CELL-SIZE-OPEN (2 Sep). Sensitivity 3370: the admissible window 0.536 < u_max ≤ 1 runs the cavity 2.15 ms → 0.14 ms.
+
+**Edits (text only; no number changed; no template moved).** In the V1.6 gravitational-grade paragraph, after the standing "X = 0 assumed" sentence, a V1.7 block: (a) boundary phase — the replacement boundary is a one-Moment-delay compliant surface of which X = 0 is the zero-compliance limit; |R| = 1 survives with caveats, phase π does not; the boundary-phase shift is uncomputed and the 188–194 Hz band excludes it; (b) floor value — every number computed at u = 1, a conditional bound, not a derived floor; window 0.536 < u_max ≤ 1; the line set is not robust to the floor value. `\date` → Version 1.7 (2 September 2026). Header changelog entry. Compile gate: pdflatex ×2, 0 errors, 0 undefined, 11 pp.
+
+**Standing banner inherited from GR-1c Corrigendum 3:** *floor undetermined within a derived window; Buchdahl conditional bound PSR ≥ l_P/2.* "Clamped register" remains in the text as a named misnomer pending the wall-impedance computation (OPEN-GR-ROT-1).

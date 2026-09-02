@@ -15,6 +15,18 @@
 %   adoption). Spin-saturation finding surfaced by the script's own
 %   first run: dDt/dchi = 0.299 GM/c^3 at the benchmark, so the
 %   +/-0.1 spin bar is +/-0.35% -- mass dominates ~20x.
+% V1.7 (Patch 3371, 2 Sep 2026): TWO CAVEATS ON THE FLAGSHIP LINE, on
+%   CONV-038 (5/5; Q4(iii) YES 5-0; floor sensitivity Patch 3370). (a)
+%   The "clamped register" premise traced to the RETIRED CP Exclusion
+%   Rule (founder R-EXCL-RETIRED); the replacement boundary is a one-
+%   Moment-delay compliant surface of which X = 0 is the zero-compliance
+%   limit; |R| = 1 survives with caveats, phase pi does NOT; boundary-
+%   phase shift UNCOMPUTED, the 188-194 Hz band excludes it. (b) Every
+%   number was computed at u = 1, which is a conditional BOUND (GR-1c
+%   Corrigendum 3), not a derived floor; admissible window
+%   0.536 < u_max <= 1, across which the cavity runs 2.15 ms -> 0.14 ms;
+%   the line set is NOT robust to the floor value. Text added to the V1.6
+%   gravitational-grade paragraph; no number changed; no template moved.
 % V1.6 (Patch 3363, 31 Aug 2026): THE FLAGSHIP LINE AT GRAVITATIONAL
 %   GRADE, on founder-ratified CONV-037 (5/5; AMENDMENTS-CLEAR 3-2; all
 %   seats' revisions adopted). The Teukolsky ladder (3353-3361) replaces
@@ -170,7 +182,7 @@ CPP Compact Objects}\\[6pt]
 {\large Second series paper of the Conscious Point Physics
 gravitation series (parent: GR-1)}}
 \author{Thomas Lee Abshier, ND\\Hyperphysics Institute}
-\date{21 August 2026 --- Version~1.6 (31 August 2026)}
+\date{21 August 2026 --- Version~1.7 (2 September 2026)}
 
 \begin{document}
 \maketitle
@@ -520,7 +532,25 @@ $\pm 1.5\%$.  These are exact numerical solutions of the
 Sasaki--Nakamura / $X$-Dirichlet wall model at the derived surface,
 and \textbf{the wall condition $X = 0$ is the Regge--Wheeler analogue
 of the clamped-register node, \emph{assumed} rather than derived for a
-rotating surface; the spectrum is conditional on it.}  The prograde
+rotating surface; the spectrum is conditional on it.}
+\textbf{(V1.7, CONV-038 5--0 on both points.)}  \emph{(a)~Boundary
+phase:} the ``clamped register'' is a misnomer --- the founder's
+replacement boundary is a one-sided, one-Moment-delay compliant
+surface (superimpose one Moment, displace per $\SSV_{\rm net}$ the
+next), of which $X = 0$ is the zero-compliance \emph{limit}; the
+reflection magnitude $|R| = 1$ survives in the channel computed at
+Patch~3297 (mode conversion and intra-Moment absorption are not
+excluded), but the phase $\pi$ does not, and \textbf{the boundary-phase
+shift is uncomputed; the 188--194~Hz band does not include it.}
+\emph{(b)~Floor value:} every number here was computed with the
+saturation surface at $u = 1$ (Buchdahl attainment).  That value is a
+conditional \emph{bound}, not a derived floor (GR-1c Corrigendum~3);
+the admissible window is $0.536 < u_{\rm max} \leq 1$, across which
+the wall moves from $1.125\,r_S$ to $1.46\,r_S$ and the Level-A cavity
+from 2.15~ms to 0.14~ms
+(\texttt{rcore\_derivation/3370\_floor\_window\_from\_buchdahl\_and\_light\_ring.md}).
+\textbf{The line set is not robust to the floor value and must be
+recomputed if the register caps below $u = 1$.}  The prograde
 comparator $(2,+1)$ is \emph{not located} --- the instrument cannot
 determine its frequency or $Q$ --- so the ordering discriminator of
 \S\ref{sec:discriminator} stands at eikonal-WKB grade only.

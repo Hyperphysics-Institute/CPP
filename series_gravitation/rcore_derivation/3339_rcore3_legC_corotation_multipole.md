@@ -1,5 +1,7 @@
 # OPEN-GR-RCORE-3 — Leg C: Co-rotation, Reflection-Phase Robustness, and the Multipole Ladder — **a shipped generalization is narrowed**
 
+> **DATED NOTE (CONV-038, Patches 3366–3371, 2 Sep 2026):** "clamped register" in this file is a misnomer for a one-sided, one-Moment-delay compliant surface (the CP Exclusion Rule it rested on is RETIRED, founder R-EXCL-RETIRED); X = 0 / Dirichlet is its zero-compliance *limit*, phase π is not derived; the floor l_P/2 is a conditional Buchdahl BOUND (window 0.536 < u_max ≤ 1). See `frontier_sectors/GR.md` and `review/conv038_adjudication.md`.
+
 **Patch 3339, 21 Aug 2026 — Session 156.** Verify:
 `code/3339_rcore3_legC_corotation_robustness_verify.py`, **6/6 PASS**
 (all-FAST). Charter: RCORE-3 item (b), the co-rotating wall — which

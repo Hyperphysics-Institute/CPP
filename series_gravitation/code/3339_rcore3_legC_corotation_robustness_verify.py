@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# DATED NOTE (CONV-038, Patches 3366-3371, 2 Sep 2026): 'clamped register' in this file is a misnomer
+# for a one-sided, one-Moment-delay compliant surface; X = 0 / Dirichlet is its zero-compliance LIMIT.
+# The floor l_P/2 is a conditional Buchdahl BOUND (window 0.536 < u_max <= 1). See frontier_sectors/GR.md.
 """3339_rcore3_legC_corotation_robustness_verify.py — OPEN-GR-RCORE-3 (b).
 
 THE LEG-C QUESTIONS (GR-2 V1.1 rem:rcore3 names (b) UNTESTED):

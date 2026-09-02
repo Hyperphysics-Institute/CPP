@@ -15,6 +15,13 @@
 %   solution). Panel CONV-027 APPROVE-EITHER 5/5; founder-ratified.
 %   Verification: series_gravitation/code/3259_fterm_reconciliation_verify.py
 %   (8/8, exact-symbolic; independently SCRIPT-EXECUTED by two panel seats).
+% CORRIGENDUM 3 (Patches 3366-3371, 1-2 Sep 2026, CONV-038 5/5): the CP
+%   Exclusion Rule invoked by the proof of thm:core is RETIRED (founder
+%   R-EXCL-RETIRED; never in c01). Bound PSR >= l_P/2 RETAINED with a
+%   replaced derivation (Buchdahl + exact exterior; conditional on
+%   RCORE-4); ATTAINMENT is an extremality assumption, not derived.
+%   Admissible window 0.536 < u_max <= 1. New remark
+%   rem:core_floor_corrigendum. No equation changes.
 % CORRIGENDUM 2 (Patch 3301, 20 Aug 2026): Theorem thm:core RELABELED, no
 %   equation changes. The saturation radius r_core = GM/c^2 is the ISOTROPIC
 %   coordinate radius rbar = mu (this paper's own declared coordinates);
@@ -491,6 +498,44 @@ Panel record: CONV-030 Q5, Theorem~1 SOUND 5--0, Theorem~2
 SOUND-WITH-RELABELING 5--0; founder-ratified 20 August 2026.  This
 remark corrects the labels while preserving the original text above
 verbatim (anti-erasure).
+\end{remark}
+
+\begin{remark}[Corrigendum 3: the premise of Theorem~\ref{thm:core} is
+retired; the bound is retained with a replaced derivation --- CONV-038,
+Patches 3366--3371, 1--2 September 2026]
+\label{rem:core_floor_corrigendum}
+The proof of Theorem~\ref{thm:core} invokes the \emph{CP Exclusion
+Rule} (``no two Conscious Points may simultaneously occupy the same
+Grid Point'').  That rule was retired by the founder before this
+paper's repository version (ruling R-EXCL-RETIRED, 31~August--1
+September 2026; \texttt{axiom-registry.md} \S``Retired rules''); its
+cited source, the Absolute Moment companion~\cite{c1}, has never
+contained it in any repository version.  The proof's reading of $\lP$
+as the lattice spacing is also withdrawn (Patch~0733: $\lP$ is the
+baseline PSR, enclosing ${\sim}10^{30}$ sub-Planck grid points).
+\textbf{The bound $\PSR_{\rm eff} \geq \lP/2$ is retained as a
+conditional lower bound with a replaced derivation.}  If the saturated
+body is static and Einstein's equations hold in its interior
+(OPEN-GR-RCORE-4), Buchdahl's theorem in the surface saturation
+variable $u \equiv k\,\Delta|\SSV|$ reads $u^2 - 5u + 4 \geq 0$; the
+root $u = 4$ lies inside the censored region, so the exterior branch
+gives $u_{\rm surface} \leq 1$, hence $\PSR_{\rm surface} \geq \lP/2$
+(\texttt{rcore\_derivation/3367\_psr\_floor\_from\_buchdahl.md};
+verify 25/25; CONV-038, 5/5).  \textbf{Whether the register attains
+this bound ($\PSR = \lP/2$ exactly) is an extremality assumption, not
+a derived result.}  The founder has ruled the floor \emph{finite}
+(R-FLOOR-FINITE) and has \emph{no argument for its magnitude}
+(R-CELL-SIZE-OPEN, 2~September 2026); the relation to SR-1's register
+cap $\text{SSV}_{\rm crit} = E_P/\lP^3$ is unresolved
+(OPEN-GR-FLOOR-1).  The admissible window from observation (a
+GW150914-class ringdown requires a light ring, so the saturation
+surface lies inside areal $3\mu$) is $0.536 < u_{\rm max} \leq 1$,
+i.e.\ $\lP/2 \leq \PSR_{\rm floor} < 0.651\,\lP$
+(\texttt{rcore\_derivation/3370\_floor\_window\_from\_buchdahl\_and\_light\_ring.md}).
+Every result of this series downstream of the floor carries the
+standing banner: \emph{floor undetermined within a derived window;
+Buchdahl conditional bound $\PSR \geq \lP/2$.}  The theorem statement
+and its equations above are preserved verbatim (anti-erasure).
 \end{remark}
 
 \subsection{Interior comparison: CPP vs.\ GR}

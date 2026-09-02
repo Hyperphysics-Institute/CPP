@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3370, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3370**; next free:
-> **3371**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3371, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3371**; next free:
+> **3372**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,25 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3371 — CONV-038 ENACTED (founder's 2 Sep rulings read as
+> ratification; PD-006 sequencing).** GR-1c Corrigendum 3
+> (`rem:core_floor_corrigendum`: premise retired, bound retained,
+> attainment an assumption, window stated); GR-1b v3.3
+> (`rem:exclusion_corrigendum`: rule retired, deflection sentence
+> superseded by the founder's superimpose-then-displace mechanism,
+> horizon identification superseded); **GR-2 V1.7** — two caveats in
+> the gravitational-grade paragraph (boundary phase uncomputed; line
+> set not robust to the floor value), no number changed; PRED-O-39 row
+> + Last-updated; RCORE §3 and W-C ch. 2 dated notes; pointers at every
+> live "clamped register" site (GR-1d, 3339/3359 scripts, 3339 record,
+> changelog-GR-2); archival transcripts left as records;
+> `research_frontier.md` deliberately NOT touched (collision surface).
+> Compile gate: GR-1b 16pp, GR-1c 16pp, GR-1d, GR-2 11pp — 0 errors,
+> 0 undefined. Step E re-run: row 32 → **1.7**, only row moved. PDFs not
+> committed (founder recompiles). SR-1 corrigendum registered as OWED in
+> SR.md, not enacted. HALT-GR-1C-FLOOR CLEARED (the proof text now
+> carries its corrigendum). Next patch (GR): 3372.
 >
 > **3370 — CONV-038 AMENDED TO 5/5 (Grok received, EK-1 hash-match —
 > two of five execution-verified); FOUNDER RULINGS R-FLOOR-FINITE /

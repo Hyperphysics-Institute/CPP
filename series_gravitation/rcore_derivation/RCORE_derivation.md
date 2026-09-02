@@ -69,6 +69,8 @@ number GR-1d computed under its |R| = 1 assumption — now derived, not assumed
 
 ## §3 Result R-2 — reflection phase π (Dirichlet), linear order
 
+> **DATED NOTE — CONV-038 (5/5), Patches 3366–3371, 1–2 Sep 2026.** The "Exclusion floor" and "clamped register" below rest on the CP Exclusion Rule, which the founder has ruled RETIRED (R-EXCL-RETIRED). The replacement boundary is a one-sided, one-Moment-delay compliant surface (superimpose one Moment, displace per SSV_net the next); "clamped" is a misnomer. **|R| = 1 survives** (with caveats: mode conversion, intra-Moment absorption not excluded); **the phase π does not** — Dirichlet is the zero-compliance limit of that surface and the shift is uncomputed. The floor l_P/2 is a conditional Buchdahl BOUND (GR-1c Corrigendum 3), not a derived value; window 0.536 < u_max ≤ 1. Text below preserved verbatim (anti-erasure).
+
 The Exclusion floor clamps the register at the surface: δu → 0 there in the
 linear regime (a positive δu would violate PSR ≥ l_P/2; the clamped register
 is a fixed end). Dirichlet boundary ⇒ reflection coefficient −1 ⇒ **phase π**

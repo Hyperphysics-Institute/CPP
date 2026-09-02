@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# DATED NOTE (CONV-038, Patches 3366-3371, 2 Sep 2026): 'clamped register' in this file is a misnomer
+# for a one-sided, one-Moment-delay compliant surface; X = 0 / Dirichlet is its zero-compliance LIMIT.
+# The floor l_P/2 is a conditional Buchdahl BOUND (window 0.536 < u_max <= 1). See frontier_sectors/GR.md.
 """3359_sn_gravitational_wall_modes_verify.py — TEUKOLSKY LADDER RUNG 3c,
 THE LAST ITEM: gravitational (s = -2) Kerr wall resonances via the
 Sasaki-Nakamura (SN) transformation.

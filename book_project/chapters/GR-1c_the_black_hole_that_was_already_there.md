@@ -1,5 +1,8 @@
 # The Black Hole That Was Already There
 
+> **DATED NOTE — CONV-038, Patches 3366–3371, 1–2 Sep 2026.** This chapter's "Exclusion floor" is the CP Exclusion Rule, which the founder has ruled RETIRED (R-EXCL-RETIRED, `axiom-registry.md` §"Retired rules"). The Planck-core bound survives as a *conditional bound* from Buchdahl's theorem (GR-1c Corrigendum 3), and the founder has ruled the floor finite with no argument for its magnitude; the "full address book" image should be read as a register that is full, not a lattice that is packed. Narrative preserved verbatim (anti-erasure); the physics it dramatises has moved.
+
+
 *An anthology chapter on GR-1c — the exact strong-field solution — and the August morning, five months after the paper shipped, when reading its own coordinates correctly moved the surface of every black hole in the theory to the outside of its horizon. Chapter 2 of the gravitational arc.*
 
 ---
