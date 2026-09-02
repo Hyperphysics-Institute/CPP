@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3369, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3369**; next free:
-> **3370**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3370, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3370**; next free:
+> **3371**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -16,13 +16,30 @@
 > specific for GR... that seems to be the place where the collision
 > happens."
 >
-> **R-CORE ARC BANNER (CONV-038, Patch 3369): FLOOR UNDETERMINED;
-> BUCHDAHL CONDITIONAL BOUND PSR ≥ l_P/2.** Attainment (PSR = l_P/2
-> exactly) is an extremality assumption, not a derivation; the relation
-> to SR-1's register cap SSV_crit is unresolved pending founder ruling.
+> **R-CORE ARC BANNER (CONV-038, Patch 3369; amended 3370): FLOOR
+> UNDETERMINED WITHIN A DERIVED WINDOW — 0.536 < u_max ≤ 1, i.e.
+> l_P/2 ≤ PSR_floor < 0.651 l_P** (Buchdahl above, light ring below;
+> founder R-FLOOR-FINITE: not zero; R-CELL-SIZE-OPEN: no argument for the
+> value). Attainment at u = 1 is an extremality assumption. **The arc is
+> NOT robust inside the window** (cavity 2.15 ms → 0.14 ms across it).
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3370 — CONV-038 AMENDED TO 5/5 (Grok received, EK-1 hash-match —
+> two of five execution-verified); FOUNDER RULINGS R-FLOOR-FINITE /
+> R-CELL-SIZE-OPEN; THE CAP BOXED.** Zero floor CLOSED (SR-1 corrigendum
+> owed, SR lane). Value OPEN — the founder has no picture for it. Both
+> SR-1 candidates satisfy Buchdahl: **SR-1 vs GR-1c was never a
+> contradiction, only a dispute about attainment.** Light-ring
+> requirement (GW150914 ringdown = Kerr QNMs ⇒ surface inside 3μ) gives
+> u > 4 − √12 = 0.536: SR-1's insphere 0.2444 EMPIRICALLY EXCLUDED;
+> circumradius 0.5594 clears by 4% and shrinks the echo cavity to
+> 0.14 ms. Tombstone corrected (Grok item 1: the 3366 row had pre-judged
+> u = 1). Record `rcore_derivation/3370_floor_window_from_buchdahl_and_light_ring.md`;
+> verify 26/26. **PRED-O-39 owes TWO caveats at enactment: boundary
+> phase (Q4(iii) 5-0) and floor value (this patch).** Next patch (GR):
+> 3371 = enactment (.tex corrigenda, GR-2 V1.7, PRED-O-39, pointers).
 >
 > **3369 — CONV-038 ADJUDICATED, 4/5 (Seat 2 Grok EMPTY-AT-PASTE:
 > duplicate of Seat 1; amendable).** Verify 24/24. **EK-1 first GR-lane

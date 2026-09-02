@@ -7,6 +7,20 @@
 
 ## Special Relativity / Gravity (SR) — 11 problems
 
+> **CROSS-LANE NOTE FROM THE GR LANE (Patch 3370, 2 Sep 2026) — SR-1 CORRIGENDUM OWED; not enacted here.**
+> CONV-038 (GR lane, 5/5) found that SR-1 Appendix A.5 Step 2 and App. D.4 state the Voronoi cell
+> "collapses (r_eff → 0)" at SSV_crit, while the same appendix's Padé working form gives a finite
+> floor l_P/(1+α). Founder ruling **R-FLOOR-FINITE** (2 Sep 2026, verbatim in
+> `founders_voice/founder_ruling_floor_finite_cell_size_open_2026-09-02.md`): *"When the cell is full,
+> it shrinks to a minimum size, as this is required to meet the criteria of reality."* The collapse
+> statement is therefore superseded as physics; the Padé form is the live SR-1 claim. **Owed by the SR
+> lane:** a dated corrigendum note at both sites. Also registered: **R-CELL-SIZE-OPEN** — the founder has
+> no argument for the magnitude of the cap ("one Planck energy per Voronoi cell"); the map from SSV_crit
+> to the GR-lane saturation variable u = kΔ|SSV| is OPEN-GR-FLOOR-1(c), and the cap is empirically boxed
+> 0.536 < u_max ≤ 1 (light ring below, Buchdahl above; `series_gravitation/rcore_derivation/3370_*.md`).
+> SR-1's α_geom in unit-insphere coordinates (0.2444) is outside that window as a physical cap.
+
+
 ### OPEN-SR-1: PSR Reduction Formula from 600-Cell Geometry
 **Status:** OPEN
 **Sector(s):** SR

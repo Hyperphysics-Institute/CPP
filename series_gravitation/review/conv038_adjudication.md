@@ -93,3 +93,17 @@ Patch 3367 claimed to re-derive the floor. It re-derived a *bound*. The half sur
 - Retirement dependency sweep, SR + cosmology.
 - The wall impedance (with OPEN-GR-ROT-1): |R| channels and the phase.
 - Enactment patch on ratification: corrigenda v1.1 into GR-1b/GR-1c/RCORE/W-C; GR-2 V1.7 + PRED-O-39 caveat; 40-site pointers; tombstone provenance note.
+
+---
+
+## AMENDMENT — Patch 3370 (2 Sep 2026): Seat 2 (Grok) RECEIVED; panel 5/5; EK-1 two of five
+
+Grok's return arrived after 3369 and **hash-matches EK-1** (`pc=7.6533`) — the second execution-verified seat. Verbatim in `reviews-CONV-038.md` Seat 2. Verify `code/3370_floor_sensitivity_conv038_amend_verify.py` (26/26).
+
+**Tallies on five seats:** Q1 ESTABLISHED-WITH-GAPS **3–2** (now a majority; the SR/cosmology dependency sweep is owed by rule, not only by adoption). Q2 SOUND-WITH-CAVEATS 4–1. Q3 CORRECTLY-SCOPED 3 by count — but Grok's own Q2 (*"Route A therefore stands as a surface-compactness bound … not as a constructed interior solution"*) and Q7(2) (*"several sentences treat P4 equality as forced"*) endorse the substance of the BOUND relabel, which is strictly weaker and stands as enacted. Q4(ii) DOES-NOT-SURVIVE **5–0**; Q4(iii) YES **5–0**. Q5 UNDERDETERMINED **5–0**. Q6 FAITHFUL 4–1. Q7 ITEMS-FOUND 3–2. Q8b CLEAR 2 / RESTATE 2 / BLOCK 1 — still no majority; Grok's CLEAR is "clear with Q7 (1)–(3) folded at enactment," which is what the 3369 disposition already does. **Disposition unchanged.**
+
+**Grok items adopted:** (1) the axiom-registry replacement row wrote "SSV_abs at k·u = 1," pre-judging Q5 — **corrected at 3370** (value no longer stated in the tombstone; bounds stated instead). (2)/(3) folded into the BOUND relabel. (4) §0's "no derivation" narrowed: SR-1 App. A.5 is a second cap, at a different number.
+
+**Founder rulings on the §4 escalation (verbatim `founders_voice/founder_ruling_floor_finite_cell_size_open_2026-09-02.md`):** **R-FLOOR-FINITE** — the floor is finite; SR-1's `r_eff → 0` is superseded as physics (SR-1 corrigendum owed, SR lane). **R-CELL-SIZE-OPEN** — the founder has no argument for the cap's magnitude; neither `u = 1` nor `α_geom` has priority by authority.
+
+**What the sensitivity shows (3370 verify):** both SR-1 candidates satisfy Buchdahl (`u ≤ 1`) — the two papers are *consistent* as bound-plus-candidate; only attainment was ever in dispute. But the flagship arc is **not robust to the value**: at `u = 0.5594` the wall moves out to 1.46 r_S and the Level-A cavity shrinks from 2.15 ms to 0.14 ms; at `u = 0.2444` the wall sits at 2.58 r_S, *outside the photon sphere* — no light ring, no Kerr-like ringdown, which GW150914 has. So reality bounds the cap from below: `R(u) < 3μ ⇔ u > 4 − √12 = 0.536`. **The cap is boxed: 0.536 < u_max ≤ 1, i.e. l_P/2 ≤ PSR_floor < 0.651 l_P.** The insphere reading of SR-1 is empirically dead; the circumradius reading survives by 4% and would kill the echo. PRED-O-39 carries a floor-value caveat in addition to the phase caveat.
