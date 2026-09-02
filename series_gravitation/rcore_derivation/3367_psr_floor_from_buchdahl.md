@@ -2,7 +2,7 @@
 
 **Patch 3367, Session 161, 1 Sep 2026.** Verify: `code/3367_psr_floor_from_buchdahl_verify.py` (25/25). Reasoning: `reasoning/3367.md`. Founder rulings: `founders_voice/founder_ruling_exclusion_retired_register_floor_2026-09-01.md`.
 
-**Standing:** DERIVED-CONDITIONAL on P3 (Einstein's equations holding in the saturated interior = OPEN-GR-FE-1 at saturation = **OPEN-GR-RCORE-4**). CONV-038 owed. HALT-GR-1C-FLOOR fired against the *proof text* of GR-1c Thm 2 (value preserved; premise void); no `.tex` touched.
+**Standing (as adjudicated CONV-038, Patch 3369):** CONDITIONAL BOUND `PSR_surface ≥ l_P/2`; attainment open. *(Original 3367 standing, superseded: DERIVED-CONDITIONAL on P3 (Einstein's equations holding in the saturated interior = OPEN-GR-FE-1 at saturation = **OPEN-GR-RCORE-4**). CONV-038 owed.)* HALT-GR-1C-FLOOR fired against the *proof text* of GR-1c Thm 2 (value preserved; premise void); no `.tex` touched.
 
 ---
 
@@ -58,6 +58,8 @@ The surface then sits at areal `9μ/4`, lapse `1/3`, redshift `z = 2`, `c_*(surf
 ## §5 What this does and does not establish
 
 **Establishes.** Given a register that saturates and an exterior that is exactly Schwarzschild, the saturation value is forced to `u_max = 1` by the requirement that a static body exist at all. The `1/2` is not free and not postulated; it is the smaller root of a quadratic whose larger root is behind the horizon.
+
+> **WITHDRAWN IN PART — CONV-038 adjudication, Patch 3369 (2 Sep 2026), anti-erasure by quotation.** The sentence above overclaims. Buchdahl *bounds*: `u_surface ≤ 1`, hence `PSR_surface ≥ l_P/2`, conditional on RCORE-4. It does not select `u = 1`; attainment is the P4 extremality assumption. The panel (GPT, Q2) further found that P2 ("`u` constant through the interior") and P3 ("Einstein's equations hold in the interior") are equivocal — an Einstein uniform-density interior does not have a flat potential — so the bound is a statement *at the surface* and no claim about `u` inside is made here (OPEN-GR-FLOOR-1(b)). Standing: **CONDITIONAL BOUND**, not DERIVED-CONDITIONAL floor. The word "recovered" in the title-level framing is withdrawn to the same extent.
 
 **Does not establish.** (i) *Why* the register saturates — what in the substrate caps SSV_abs. That is the substrate-internal derivation, and it is the open half of FLOOR-1. (ii) The extremality step P4 is asserted; a derivation would show the register cannot stop *below* the admissible maximum. (iii) P3 is conditional on RCORE-4.
 

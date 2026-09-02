@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3368, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3368**; next free:
-> **3369**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3369, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3369**; next free:
+> **3370**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -15,6 +15,33 @@
 > lanes collide on one line. Founder-endorsed 30 Aug: "a frontier
 > specific for GR... that seems to be the place where the collision
 > happens."
+>
+> **R-CORE ARC BANNER (CONV-038, Patch 3369): FLOOR UNDETERMINED;
+> BUCHDAHL CONDITIONAL BOUND PSR ≥ l_P/2.** Attainment (PSR = l_P/2
+> exactly) is an extremality assumption, not a derivation; the relation
+> to SR-1's register cap SSV_crit is unresolved pending founder ruling.
+> Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
+> relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
+> PRED-O-39 — inherits this banner until it clears.
+>
+> **3369 — CONV-038 ADJUDICATED, 4/5 (Seat 2 Grok EMPTY-AT-PASTE:
+> duplicate of Seat 1; amendable).** Verify 24/24. **EK-1 first GR-lane
+> use: 1 of 4 hash-matched (GPT); the three misses were near-miss
+> estimates, graded INSPECTED.** Rulings: Q1 ESTABLISHED-WITH-GAPS
+> (dependency sweep SR/cosmology owed; tombstone provenance note); **Q2
+> by argument against the worker — Route A proves a conditional BOUND
+> u_surface ≤ 1, not attainment; the constant-u-inside vs Einstein-
+> interior equivocation (GPT) registered as FLOOR-1(b)**; Q3 OVER-SCOPED,
+> relabelled; **Q4 |R| = 1 SURVIVES-WITH-CAVEATS 3-1, phase π DOES-NOT-
+> SURVIVE 4-0, caveat OBLIGED 4-0 (binding)**; **Q5 UNDERDETERMINED 4-0
+> — α ≡ 1 "by normalisation" rejected (a dimensionless prediction cannot
+> depend on the unit convention); ESCALATED TO THE FOUNDER by
+> adjudication: (1) does the cell collapse to zero or a finite floor at
+> SSV_crit, (2) is the cell an invariant physical object or a
+> convention**; Q6 restated (corrigenda v1.1); Q7 twelve items adopted;
+> Q8b RESTATE-REQUIRED by argument (BLOCK seat's conditions met). No .tex
+> touched; enactment on founder ratification (3362 precedent). Record:
+> `review/conv038_adjudication.md`. Next patch (GR): 3370 = enactment.
 >
 > **3368 — CONV-038 DISPATCHED (2 Sep 2026).** Package
 > `review/conv038_retired_rule_floor_rederived_review_package_v1.0.md`;
