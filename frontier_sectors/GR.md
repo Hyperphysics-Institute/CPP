@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3384, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3384**; next free:
-> **3385**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3385, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3385**; next free:
+> **3386**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,28 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3385 — THE SHAPIRO LEG: the pure GP-hop map (J = 2) is EXCLUDED by
+> the measured Shapiro coefficient (Cassini: 1 − 2u; map A gives 1 − u);
+> the hop is GP-counted AND lapse-slowed; with the ratified log-lapse
+> J = 6 at the wall (GR: 6.75; lapse 1/(1+u): 4). CPP's strong-field
+> departure from GR is now a number: census speed at the Buchdahl wall
+> = (1+u/2)²/(1+u) = 1.125× GR.** (verify 7/7; 3384's "J = 2 vs 6.75"
+> bracket superseded.) Axial ℓ=2 line across admissible J: −1.0% (4),
+> **−3.7% (6, CPP-native; 225 Hz, Q 4.4)**, −5.2% (6.75); **the interior
+> echo family is IN BAND for all — a prediction — with spacing π/(Jμ) =
+> 0.785 / 0.524 / 0.465 (411 / 274 / 243 Hz at 62 M_⊙), a direct
+> measurement of the strong-field lapse dictionary.** Founder's question
+> answered: yes, the echo is a triangulation leg — Shapiro (measured) +
+> the saltatory precedent (founder) + the second-family spacing
+> (predicted) = a measurement of how many Moments a loaded GP takes to
+> cycle. Q-PSR-COUNT-OPEN registered with P-SALTATORY-HOPS; **F-3 to the
+> founder: is "a loaded GP takes more Moments to re-emit" the mechanism
+> of the lapse?** On yes: mint NOTE-GR-CSTAR-STRONGFIELD as c_* =
+> cN/(1+u). Core round trip at J = 6: 12 μ/c = 3.7 ms. Record
+> `rcore_derivation/3385_shapiro_leg_J_sweep.md`. GR-2 owes one
+> paragraph (3383–3385). Next patch (GR): on F-3 — mint the map and
+> enact the paragraph.
 >
 > **3384 — OPEN-GR-ODDWALL-1 COMPUTED under both c_* brackets (verify
 > 14/14; Dirichlet reference = 3356's 0.44859 − 0.11749i to 1e-4).** The
