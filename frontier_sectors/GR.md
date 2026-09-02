@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3381, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3381**; next free:
-> **3382**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3382, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3382**; next free:
+> **3383**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,28 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3382 — FOUNDER RULINGS R-SIMULTANEITY-UNIVERSAL / R-SHEAR-MUST-BE-
+> REGISTERED; CONV-039 ENACTED: GR-2 V1.8.** F-1: simultaneity is
+> substrate-set, a wave delays the news but does not tilt the now → the
+> register's slice is the unperturbed absolute-time slice; candidates
+> differ by ξ_t, under which H₂, K are invariant (3378 L3) → **the trace
+> condition is slicing-robust; the panel's 5–0 caveat discharged.** F-2:
+> "if a register doesn't see a wave, how could it interact?" → a shear
+> that arrives by DI-bits IS registered — in the uncapped **SSV_net** —
+> so the surface has no refusal mechanism for it: **the axial wave
+> enters the core and returns from the centre (3374 law (A), alive for
+> the odd sector).** This is the Q4 vector-sector rule; checked against
+> the panel's eight constraints. **OPEN-GR-ODDWALL-1 minted**: interior
+> regular solution matched to the exterior RW function, BLOCKED at the
+> interface by the strong-field c_* map (dr*/dr̄ = 2 CPP vs 6.75
+> Schwarzschild at the surface) — **NOTE-GR-CSTAR-STRONGFIELD now blocks
+> two computations; mint it.** **OPEN-GR-KERRWALL-1 minted** with the
+> panel's route as charter. GR-2 V1.8 (12 pp, compile clean): the wall
+> law restated; "**no Kerr echo frequency is yet derived; 188–194 Hz
+> retained as the Dirichlet-axial reference only.**" predictions.md,
+> ledger (A1 → 1.8), changelog, Step E (row 32 → 1.8). Next patch (GR):
+> 3383 = complex poles of Zerilli + Robin(ω) at a = 0.
 >
 > **3381 — CONV-039 ADJUDICATED 5/5 (verify 12/12). EK-1: GPT and Grok
 > matched; the three misses all returned the ROUNDED-coefficient values
