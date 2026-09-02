@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3383, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3383**; next free:
-> **3384**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3384, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3384**; next free:
+> **3385**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,27 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3384 — OPEN-GR-ODDWALL-1 COMPUTED under both c_* brackets (verify
+> 14/14; Dirichlet reference = 3356's 0.44859 − 0.11749i to 1e-4).** The
+> founder's rule (shear registered in uncapped SSV_net → transmit →
+> interior regularity) is the Robin law (dψ/dr*)/ψ = (1/J)·k·g(kμ),
+> g = (xj_ℓ)′/(xj_ℓ), k = Jω, real (|R| = 1), → (ℓ+1)/J at low ω; the
+> whole odd wall depends on ONE number J = dr*/dr̄|_wall: **J = 2 (CPP
+> c_* = c/(1+u)) vs J = 6.75 (Schwarzschild N/ψ²).** ℓ=2 poles: **J = 2:
+> 0.4490 − 0.0950i — the shipped axial line SURVIVES to +0.1% (a 1.5/M
+> Robin acts like Dirichlet at the barrier top), Q 1.9 → 2.4; J = 6.75:
+> 0.4251 − 0.0402i, −5.2%, Q 5.3, plus an interior-cavity family IN BAND
+> (0.83, 1.35; spacing π/Jμ = 0.47) — the 3374 second timescale.** The
+> unminted c_* map now decides three things (axial shift 0 vs 5%; a
+> second echo family; the core round trip 1.2 vs 4.1 ms) — **MINT IT**
+> (T-1 scalar-dictionary question; founder picture likely: does a DI-bit
+> hop one PSR per Moment in lattice or in proper distance?). Sectors
+> side by side at a = 0: even Q 25 (sharp), odd Q 2–5 (broad) — two
+> registers, two surfaces. Record
+> `rcore_derivation/3384_odd_sector_registered_shear.md`. GR-2 owes one
+> paragraph (3383 + 3384) at the next version; not enacted. Next patch
+> (GR): the c_* map — founder question first.
 >
 > **3383 — THE POLES DECIDE IT (verify 14/14; 3356 machinery; Dirichlet
 > ℓ=2 reproduces 3356's Zerilli root 0.44506 − 0.13442i exactly).**
