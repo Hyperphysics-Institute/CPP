@@ -127,6 +127,19 @@ At the 600-cell cage scale, the dimensionality of lattice walks determines gauge
 
 ---
 
+## Retired rules (anti-erasure ledger)
+
+*Rules that once operated in the programme and were withdrawn. Entered here so a
+retirement cannot be silently reversed by a lane that never learned of it. A rule
+listed here is NOT available as a premise; a shipped derivation that invokes one
+owes a corrigendum.*
+
+| Rule (as last stated) | Where it survives in shipped text | Retired by | Replacement | Status of dependants |
+|---|---|---|---|---|
+| **CP Exclusion Rule** — "no two CPs of the same type and polarity may occupy the same GP at the same Absolute Moment" (GR-1b definitions); read in GR-1c Thm 2 as "one CP per GP ⇒ PSR_eff ≥ l_P/2." | GR-1b (definitions, §"Effective Horizon and the GP Exclusion Rule"); GR-1c Thm 2 proof; narrative W-C ch. 2 ("the Exclusion floor," Patch 3312); RCORE_derivation.md §3 ("the Exclusion floor clamps the register"). | **Founder, R-EXCL-RETIRED** (31 Aug–1 Sep 2026, registered Patch 3366; verbatim `founders_voice/founder_ruling_exclusion_retired_register_floor_2026-09-01.md`). The founder states the rule was eliminated earlier as unnecessary; **no prior patch recorded the retirement** — this row is the tombstone. | ZBW + next-Moment SSV_net displacement: a CP displaced onto an occupied GP superimposes for one Moment and is moved per the local SSV_net the next (dynamical, not kinematic). Founder ruling R-FLOOR-REGISTER: the PSR floor is a **register-saturation** limit (SSV_abs at k·u = 1), not a packing limit; one-CP-per-GP "inconsistent with reality." | **PSR floor l_P/2:** orphaned at 3366; re-derived Patch 3367 (Route A, Buchdahl + exact exterior + incompressibility, conditional on FE-1 at saturation / RCORE-4). **GR-1b, GR-1c Thm 2 proof, W-C ch. 2, RCORE §3:** corrigenda OWED under CONV-038 (value preserved; premise replaced). Axiom count unchanged (the rule was never a registered row). |
+
+---
+
 ## Prediction Ledger
 
 ### Quantitative predictions
