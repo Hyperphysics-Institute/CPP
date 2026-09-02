@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3365, 31 Aug 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3364**; next free:
-> **3365**); DE owns 3400s (at 3449); DM owns 3500s (at 3505). *This
+> **GR-LANE STATUS (header re-asserted Patch 3367, 1 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3367**; next free:
+> **3368**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -15,6 +15,66 @@
 > lanes collide on one line. Founder-endorsed 30 Aug: "a frontier
 > specific for GR... that seems to be the place where the collision
 > happens."
+>
+> **SESSION 161 (1 Sep 2026, Patches 3365–3367) — THE FOUNDATION OF THE
+> R-CORE ARC WAS A RETIRED RULE, AND THE FLOOR IS RE-DERIVED.** The
+> founder asked what a "clamped register" is. The term is an Opus
+> coinage (3297; 40 sites, 19 files, no glossary entry). Its physics
+> traced to the **CP Exclusion Rule** — invoked live in GR-1b and in
+> GR-1c Thm 2's proof, absent from `axiom-registry.md`, and, per founder
+> ruling **R-EXCL-RETIRED**, *eliminated earlier as unnecessary* (ZBW +
+> next-Moment SSV_net displacement replaced it) with no retirement ever
+> recorded. Tombstone entered: `axiom-registry.md` §"Retired rules."
+> Founder rulings **R-FLOOR-REGISTER** (the l_P/2 floor is a
+> register-saturation limit; one-CP-per-GP "inconsistent with reality")
+> and **R-MIRROR-KEPT** (|R| = 1 by reflection, not surface strata).
+> Verbatim: `founders_voice/founder_ruling_exclusion_retired_register_floor_2026-09-01.md`.
+>
+> **3367 — OPEN-GR-FLOOR-1: the PSR floor l_P/2, orphaned at 3366, is
+> RE-DERIVED (Route A) — DERIVED-CONDITIONAL.** Premises: exact exterior
+> (GR-1c Thm 1) + incompressible saturated interior (R-FLOOR-REGISTER) +
+> Buchdahl (derived in-script from the Schwarzschild interior solution,
+> not cited) + extremality. In the saturation variable u = k·Δ|SSV|, the
+> Buchdahl inequality is **u² − 5u + 4 ≥ 0**, roots {1, 4}; u = 4 is
+> behind the horizon (censored); the exterior branch gives **u_max ≤ 1**,
+> extremality gives u_max = 1, **PSR_floor = l_P/2.** The 3297 surface
+> numbers (9μ/4, lapse 1/3, z = 2, c_*/c = 1/2) are now CONSEQUENCES.
+> Conditional on FE-1 holding at saturation (**OPEN-GR-RCORE-4**, the
+> A1–A3 conditionality the spin sector already carries). **Route B
+> (census-reach fixed point, proposed 31 Aug) DOES NOT CLOSE** — AP-4's
+> relay carries DI-bits beyond one PSR, so a smaller PSR slows the
+> census but does not truncate it; asserted in code. Verify
+> `code/3367_psr_floor_from_buchdahl_verify.py` **25/25**; record
+> `rcore_derivation/3367_psr_floor_from_buchdahl.md`; reasoning
+> `reasoning/3367.md`. **NOT a triangulation yet:** one derivation
+> stands; the substrate-internal derivation (why the register saturates
+> at all, without FE-1 inside) remains the open half of FLOOR-1.
+>
+> **HALT-GR-1C-FLOOR (fired 3367, .tex UNTOUCHED per HALT discipline):**
+> GR-1c Thm 2's proof text invokes the retired rule; GR-1b's definitions
+> and §"Effective Horizon and the GP Exclusion Rule" carry it; W-C ch. 2
+> and RCORE_derivation §3 lean on "the Exclusion floor." Value preserved,
+> premise void. **CONV-038 OWED** before edits: the panel is to audit
+> (Q1) Route A's premise chain, (Q2) the P4 extremality step, (Q3) the
+> FE-1-at-saturation conditionality, (Q4) whether the 3297 mirror
+> survives a compliant one-Moment-delay wall, (Q5) the corrigenda scope.
+>
+> **OPEN-GR-ROT-1 (minted 3366):** rotation of a saturated core has never
+> been derived. 3339 (co-rotation count-neutrality) and 3359 (Kerr wall
+> modes) ASSUMED a wall at Ω_w. Under R-EXCL-RETIRED, translation of a
+> saturated block is synchronous lockstep (A4); rotation is a
+> non-lattice-exact permutation and must carry a surface churn — which is
+> the founder's "ongoing movement of CPs internal to the BH" from the
+> opposite direction. Supersedes queue item 1 as the load-bearing GR
+> physics: the wall condition is now **the register's one-Moment-delay
+> response to an SSV_net rotation at saturation** (founder picture, ruling
+> file §4), a computation, not "X = 0 from a clamped register."
+>
+> **"Clamped register" — glossary entry HELD.** Wrong name (a clamp is
+> two-sided; the constraint is one-sided) for an object whose response is
+> now to be computed. Corpus sweep of the 40 sites deferred to the
+> computation that replaces it; anti-erasure by dated note at each site
+> when swept.
 >
 > **JUST DONE — 3348: GR-2 V1.4, the verification claim corrected and
 > made SELF-TESTING.** §2's "every number is reproduced by the paper's
