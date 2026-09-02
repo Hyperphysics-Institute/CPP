@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3382, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3382**; next free:
-> **3383**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3383, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3383**; next free:
+> **3384**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,25 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3383 — THE POLES DECIDE IT (verify 14/14; 3356 machinery; Dirichlet
+> ℓ=2 reproduces 3356's Zerilli root 0.44506 − 0.13442i exactly).**
+> Even sector, a = 0, r_w = 9M/4: **ℓ=2 Dirichlet 0.4451 − 0.1344i (Q 1.7)
+> → Robin β₂(ω) 0.4116 − 0.0082i (215 Hz, Q 25); ℓ=3 0.6758 − 0.1048i
+> (Q 3.2) → 0.6037 − 0.0033i (315 Hz, Q 92).** **The −13.4% was a locator
+> artifact on the DIRICHLET side** (Grok sustained): true displacements
+> **−7.5% (ℓ=2), −10.7% (ℓ=3)**, negative, not identical; the 3379
+> centroids WERE the Robin pole real parts. **"Near-trapped" EARNED**
+> (GPT answered): Q 25 / 92. Q6(α): crossing/barrier-top ratio 1.07 /
+> 0.995 / 0.97 (ℓ=2,3,4) at Buchdahl, 1.2–1.4 at r_w = 2.5M, 3M —
+> **structural and specific to the Buchdahl wall**, unexplained. b₀, b₂
+> flip sign together beyond ~2.4M; **β_ℓ diverges at r_w = 2.38M — there
+> the trace condition IS Dirichlet on Z⁺** (the old X = 0 would have been
+> the derived even wall for a surface 6% further out). GR-2 owes one line
+> at the next version (−7.5/−10.7%, Q 25/92); not enacted; ledger
+> unchanged. Record `rcore_derivation/3383_even_sector_poles.md`. Next
+> patch (GR): 3384 = the odd sector under both c_* brackets
+> (OPEN-GR-ODDWALL-1).
 >
 > **3382 — FOUNDER RULINGS R-SIMULTANEITY-UNIVERSAL / R-SHEAR-MUST-BE-
 > REGISTERED; CONV-039 ENACTED: GR-2 V1.8.** F-1: simultaneity is
