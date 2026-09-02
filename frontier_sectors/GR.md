@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3375, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3375**; next free:
-> **3376**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3376, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3376**; next free:
+> **3377**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,27 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3376 — ROT-1 RUNG 3 NEGATIVE, recorded in code (12/12 asserting the
+> failures).** Model F (excess as body force + ceiling spring) CREATES
+> energy (flux 1.18 at kd = 0.03): the register has no inertia. Model T
+> (threshold projection, w = min(v + e, 0) per step) is lossless and
+> kd-BLIND (phase 177.76° at kd = 0.03, 0.3, 1 identically): its
+> recovery scales as e/dt, and physically e per Moment — so the register
+> is **SLAVED** to the demand, w = min(e(x) + δD, 0) each Moment; the
+> pinned region is opaque, the skin is a refusing attenuator. **3375's
+> "pressed against a ceiling" language WITHDRAWN**; both 3375 limits and
+> the mirror-as-linear-limit STAND. Rung 3 is a static-nonlinear
+> boundary condition (per half-cycle scattering off a thin, linearly-
+> rising refusal layer), not a leapfrog problem. **Sequencing (PD-006):
+> no fourth scheme; formulation to the panel as CONV-039 bundled with
+> the ℓ = 2 spherical rung (which sits at the Dirichlet limit and does
+> not need the O(kd) term).** No value claimed; GR-2 caveat (a) stays
+> "bounded, uncomputed." Record
+> `rcore_derivation/3376_rung3_negative_slaved_register.md`. No paper
+> touched. Next patch (GR): 3377 = ℓ = 2 spherical rung (RW potential
+> + lapse, regular at the origin, Dirichlet at r̄ = μ) — the Teukolsky
+> ladder's X = 0 re-derived in the spherical limit, then CONV-039.
 >
 > **3375 — FLOOR-1(a) INTERIOR ATTAINMENT IS A THEOREM; LAW (D), THE
 > OVER-DEMANDED CORE; THE 3297 MIRROR RECOVERED AS ITS LINEAR LIMIT.**
