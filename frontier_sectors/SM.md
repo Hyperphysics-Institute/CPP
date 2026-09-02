@@ -7,6 +7,14 @@
 
 ## Standard Model Emergence (SM) — 11 problems
 
+> **CROSS-LANE NOTE FROM THE GR LANE (Patch 3372, 2 Sep 2026) — SM-11 (line ~568) and SM-12 (line ~986) attribute
+> `PSR_eff ≥ l_P/2` to "the CP Exclusion Rule (companion 1)".** That rule is THEO-1 (demoted postulate; constrains
+> co-occupation, not the PSR) and c01 never contained it. The `l_P/2` floor is now a **conditional Buchdahl BOUND with an
+> open value**, window 0.536 < u_max ≤ 1 (GR-1c Corrigendum 3; CONV-038 5/5; founder R-FLOOR-FINITE / R-CELL-SIZE-OPEN).
+> **Owed (SM lane):** dated notes at both sites; and an SM-lane answer to whether asymptotic-freedom attenuation (SM-11)
+> and the ĥDP vertex-separation scale (SM-12) are SENSITIVE to the floor value across the window. Sweep:
+> `series_gravitation/rcore_derivation/3372_exclusion_dependency_sweep.md`.
+
 ### OPEN-SM-3: Derive ε = −0.145 from Lattice Geometry
 **Status:** OPEN
 **Sector(s):** SM

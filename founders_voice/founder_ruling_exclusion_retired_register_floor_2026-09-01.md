@@ -24,8 +24,8 @@ from `axiom-registry.md`. The founder then ruled as follows.
 > looking at the environment and moving in the direction of the SSV_net the
 > next Moment."
 
-*Opus note:* no patch, glossary line, or registry entry records this
-retirement. GR-1b (shipped) and GR-1c Thm 2 (shipped, CONV-030 5–0) invoke the
+*Opus note (as written 3366):* no patch, glossary line, or registry entry records this
+retirement. **[CORRECTED Patch 3372: false — `theorem-registry.md` THEO-1 (13 Apr 2026) records it: the Postulate was demoted to a theorem. See `rcore_derivation/3372_exclusion_dependency_sweep.md`.]** GR-1b (shipped) and GR-1c Thm 2 (shipped, CONV-030 5–0) invoke the
 rule as live. This is a **retirement without a tombstone**; the tombstone is
 now `axiom-registry.md` §"Retired rules (anti-erasure ledger)", Patch 3366.
 

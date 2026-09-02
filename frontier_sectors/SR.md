@@ -7,6 +7,13 @@
 
 ## Special Relativity / Gravity (SR) — 11 problems
 
+> **CROSS-LANE NOTE FROM THE GR LANE (Patch 3372, 2 Sep 2026) — citation corrigenda OWED in c02, c03, c04, c06.**
+> These papers invoke "the CP Exclusion Rule" citing the Absolute Moment companion (c01) §2, which has never
+> contained it. Their CONTENT is `theorem-registry.md` **THEO-1** (CP Non-Persistent Co-Occupation: same-polarity
+> CPs never superimpose; opposite-polarity co-occupation lasts one Moment — CORL-1a ZBW turning point). Owed: cite
+> THEO-1, not c01; re-word c04 line 178's kinematic "no second CP can occupy" to THEO-1's dynamical statement. No
+> physics changes. Sweep: `series_gravitation/rcore_derivation/3372_exclusion_dependency_sweep.md`.
+
 > **CROSS-LANE NOTE FROM THE GR LANE (Patch 3370, 2 Sep 2026) — SR-1 CORRIGENDUM OWED; not enacted here.**
 > CONV-038 (GR lane, 5/5) found that SR-1 Appendix A.5 Step 2 and App. D.4 state the Voronoi cell
 > "collapses (r_eff → 0)" at SSV_crit, while the same appendix's Padé working form gives a finite

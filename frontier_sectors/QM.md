@@ -7,6 +7,11 @@
 
 ## Quantum Mechanics (QM) — 7 problems (6 QM + 1 quantum-optics phenomena)
 
+> **CROSS-LANE NOTE FROM THE GR LANE (Patch 3372, 2 Sep 2026) — citation corrigendum OWED in SPIN-1 (line ~460):**
+> "the CP Exclusion Rule (Absolute Moment companion) provides the inner boundary node at r = 0" — the referent is
+> `theorem-registry.md` **THEO-1 / CORL-1a**, not c01 (which never contained the rule). No physics change. Sweep:
+> `series_gravitation/rcore_derivation/3372_exclusion_dependency_sweep.md`.
+
 ### OPEN-QM-9: Singlet-State Preparation/Selection from Moment Dynamics (minted Patch 3317, CONV-031 adoption 1)
 
 Derive from CPP Moment dynamics that a total-spin-zero preparation

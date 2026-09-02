@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3371, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3371**; next free:
-> **3372**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3372, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3372**; next free:
+> **3373**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,26 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3372 — THE DEPENDENCY SWEEP (CONV-038 Q1, owed 3–2) — AND THE
+> 3366 TOMBSTONE WAS WRONG: the rule was not retired, it was DEMOTED
+> TO A THEOREM, on record since 13 Apr 2026 as `theorem-registry.md`
+> THEO-1 (CP Non-Persistent Co-Occupation; CORL-1a = the ZBW turning
+> point the founder named).** The worker grepped the axiom registry for
+> a retired axiom and missed the theorem registry. Corrected by dated
+> note in `axiom-registry.md` and the 3366 ruling file. THEO-1
+> constrains co-occupation, not the PSR — **FLOOR-1 unchanged.** Sweep
+> (93 files): c02/c03/c04/c06/SPIN-1 use THEO-1's content under the old
+> name citing c01 (never contained it) — citation corrigenda owed, SR/QM
+> lanes; SM-11/SM-12/GR-1/GR-1d–g attribute l_P/2 to it — inherit
+> FLOOR-1 (SM-lane sensitivity question registered in SM.md). The
+> panel's two "jobs": identity conservation = A1′/A4 (not Exclusion);
+> initial expansion = THEO-1 repulsion + Axiom H. Glossary entry for
+> THEO-1 owed. **Physics question to the founder before the wall
+> computation:** THEO-1's proof is for an isolated pair — can an external
+> SSV_net (an impact) FORCE same-polarity co-occupation for one Moment?
+> Record `rcore_derivation/3372_exclusion_dependency_sweep.md`. Next
+> patch (GR): 3373.
 >
 > **3371 — CONV-038 ENACTED (founder's 2 Sep rulings read as
 > ratification; PD-006 sequencing).** GR-1c Corrigendum 3
