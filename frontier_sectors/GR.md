@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3377, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3377**; next free:
-> **3378**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3378, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3378**; next free:
+> **3379**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,32 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3378 — THE PARITY MAP: THE REGISTER PINS THE SPATIAL TRACE → A
+> FREQUENCY-DEPENDENT ROBIN WALL ON THE ZERILLI FUNCTION; A CONFORMAL
+> SLICE CANNOT CARRY AN EVEN-PARITY WAVE; THE ODD SECTOR IS OPEN; THE
+> a = 0 LINE MOVES.** Symbolic: two independently recalled Zerilli
+> reconstructions agree identically; for a mode H₂ − K = c₁Z + c₂Z′ ≠ 0;
+> with G = h₁ = 0 the residual gauge leaves H₂, K invariant → **H₂ = K
+> (CPP's ψ⁴δ_ij) is a physical restriction, not a gauge: the register
+> is NOT the even-parity GW** (CONV-028's rank-2 flag, with a theorem).
+> "Register pinned" = trace pinned, H₂ + 2K = 0 at r_w → **(dZ⁺/dr*)/Z⁺
+> = β(ω) = [2.496 − 14.46 (Mω)²]/M**, Neumann at Mω₀ = 0.415; flagship
+> Mω = 0.366 → β = +0.56/M. **3377's Dirichlet-on-Z⁺ branch and its 20°
+> WITHDRAWN.** Wigner scan (even sector, 3297 method, |R| = 1): lowest
+> resonance Dirichlet Mω 0.457 (broad, 238 Hz at 62 M_⊙, a = 0) →
+> derived wall **0.412 (215 Hz), −5 to −10%, narrower**; Neumann alone
+> gives a near-trapped mode at the barrier top (delay 88 vs 20). The
+> dispersive-wall delay spike includes the boundary's own dφ/dω — **width
+> NOT claimed.** Odd sector: no rank-2 dictionary → wall law OPEN; **the
+> shipped ladder (RW axial / Teukolsky, X = 0) was on the sector CPP does
+> not constrain, with an underived wall.** The CPP prediction at a = 0 is
+> the even sector under β(ω). Verify 17/17. Record
+> `rcore_derivation/3378_parity_map_trace_robin.md`. Economy protocol
+> applied (founder, this session): NOT the win yet — the Kerr flagship
+> is not recomputed. **The CONV-039 pointer at 3376/3377 is WITHDRAWN.**
+> Next patch (GR): 3379 = the Kerr recompute of the even sector under
+> the derived wall (GR-2 V2.0 candidate), then the skin term.
 >
 > **3377 — THE ℓ = 2 SPHERICAL RUNG: THE MIRROR IS EVEN-PARITY; THE
 > LADDER IS ODD-PARITY; A SCALAR MIRROR FORCES A ROBIN WALL ON THE
