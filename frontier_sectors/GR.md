@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3378, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3378**; next free:
-> **3379**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3379, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3379**; next free:
+> **3380**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,33 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3379 — THE a = 0 EVEN-SECTOR LINE SET (ℓ = 2, 3) UNDER THE DERIVED
+> WALL; 3378's EXTRACTION CORRECTED; THE KERR RECOMPUTE BLOCKED —
+> TRIGGER 2a ASSESSED, NOT DISPATCHED.** β₃ = 6.155 − 16.73(Mω)²,
+> Neumann at 0.607 (barrier top 0.610); β₂'s crossing 0.415 (top 0.389).
+> The derived-wall delay peak sits AT the Neumann crossing for both ℓ:
+> the wall's own dispersion (4b₂ = 58/67) is the artifact 3378 half-saw
+> — but after removing it a cavity delay of **202 (ℓ=2) / 509 (ℓ=3)**
+> remains, 10–20× the Dirichlet peaks: a real near-trapped mode enabled
+> by the Neumann-like wall at the barrier top. **Even-sector feature:
+> ℓ=2 Mω 0.475 → 0.412 (248 → 214 Hz, a=0); ℓ=3 0.697 → 0.604 (363 →
+> 315 Hz); shift −13.4% for BOTH ℓ to three figures — structural,
+> UNEXPLAINED, recorded; crossing ≈ barrier top for both — UNEXPLAINED,
+> recorded.** 3378 §3 superseded. **Kerr flagship: ESTIMATE only —
+> (2,−2) ~166 Hz, (3,−3) ~250 Hz — a scaled guess, on file, not a
+> prediction.** BLOCKER: imposing the trace condition on the Kerr
+> master function needs metric reconstruction (Hertz/CCK, radiation
+> gauge) — literature-level; slow rotation uncontrolled at χ = 0.68;
+> further unilateral work would be guessing. **Economy assessment (for
+> the founder): win PARTIAL (parity theorem, trace wall, a=0 lines);
+> 2a MET on the Kerr wall map; 2b n/a (the self-denying branch was
+> taken). CONV-039 contents if dispatched: Q1 parity+wall audit, Q2 a=0
+> extraction audit, Q3 the Kerr wall-map METHOD question, Q4 the
+> odd-sector rule → founder.** Verify 12/12. Record
+> `rcore_derivation/3379_a0_even_lines_kerr_estimate.md`. GR-2 caveat
+> (a) owes a rewrite; not enacted; ledger unchanged. Next: founder's
+> ruling on dispatch; otherwise 3380 = the O(kd) skin term.
 >
 > **3378 — THE PARITY MAP: THE REGISTER PINS THE SPATIAL TRACE → A
 > FREQUENCY-DEPENDENT ROBIN WALL ON THE ZERILLI FUNCTION; A CONFORMAL
