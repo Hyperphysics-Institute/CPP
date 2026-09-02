@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3380, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3380**; next free:
-> **3381**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3381, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3381**; next free:
+> **3382**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,32 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3381 — CONV-039 ADJUDICATED 5/5 (verify 12/12). EK-1: GPT and Grok
+> matched; the three misses all returned the ROUNDED-coefficient values
+> (b2 1.5922–3, b3 1.9725) — the key separated "computed" from "read
+> off the page."** Q1(i) SWC 4–1 — Grok opened Lousto–Price/Moncrief:
+> the theorem is theirs + residual gauge, no longer two memories;
+> scope narrowed (GPT): **the conformal register is not the wave; H₂−K
+> is; extrinsic-curvature data not excluded.** Q1(ii) SWC 5–0 — the
+> slicing identification (CPP absolute-time slice = Schwarzschild
+> t = const at linear order?) **→ founder F-1.** Q1(iii) CWC 3–2 (r_w
+> is the extremal edge of the window; named). Q2 SWC 5–0; **the −13.4%
+> UNDETERMINED by argument** (the two execution-verified seats: no
+> unique wall/cavity decomposition; the Dirichlet locator drifted
+> 0.436→0.457→0.475) — **complex poles owed, next patch.** Q3
+> RECONSTRUCTION-REQUIRED 5–0, LITERATURE-PROJECT 4–1 → **OPEN-GR-
+> KERRWALL-1 minted** (Hertz/CCK → surface-adapted gauge → trace on the
+> wall worldtube → Teukolsky boundary operator; spin-mixing; no
+> even/odd split at generic a); GR-2 carries a = 0 only. **Q4 VECTOR-
+> SECTOR-RULE-NEEDED 5–0 → founder F-2** with eight constraints.
+> **Q5 UNDERIVED-BOTH-SECTORS 4–1 → the sentence enters GR-2 V1.8:
+> "…no Kerr echo frequency is yet derived."** Q6 UNDETERMINED 4–1
+> (β_ℓ root vs barrier top in closed form; vary r_w; ℓ=4; poles). Q7
+> eleven items adopted. **Q8b ENACT 3–2 with the RESTATE conditions
+> folded → GR-2 V1.8 on founder ratification** (text in the
+> adjudication §2). Record `review/conv039_adjudication.md`. Next
+> patch (GR): 3382 = enactment on ratification; then poles.
 >
 > **3380 — CONV-039 DISPATCHED on the founder's instruction (economy
 > protocol: 2a on the Kerr wall map + partial win).** Package
