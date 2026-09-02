@@ -1172,8 +1172,8 @@
     {
       "rel": "series_gravitation/GR_companion_papers/GR-1b_weak_field_GR/GR-1b_weak_field_GR.tex",
       "title": "Weak-Field General Relativity",
-      "ver": "3.6",
-      "changed": "2026-08-21",
+      "ver": "3.7",
+      "changed": "2026-09-02",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1186,14 +1186,14 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-21",
+        "publication_date": "2026-09-02",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
         "subjects": [
           "Physics"
         ],
-        "version": "3.6",
+        "version": "3.7",
         "description": "We derive the weak-field limit of general relativity in Conscious Point Physics by extending the DI-bit broadcast to include the net SSV vector $ _ net$ alongside the absolute SSV scalar $| |_ abs$. The Lattice State Packet (LSP) is explicitly constructed from the compressive polarization energy $E_ pol = mc^2$ of the eDP cloud abshier2026mass: $| |_ abs = E_ pol/V_0$ sources $g_tt$ (time curvature) and $ _ net$ sources $g_ij$ (spatial curvature). Together they reproduce the weak-field isotropic Schwarzschild metric with no free parameters. The famous factor-of-two between the Newtonian and GR gravitational lensing deflection angles (0.875 vs.\\ 1.75~arcsec) is explained as equal contributions from temporal and spatial curvature --- a retroactive prediction of the two-component LSP structure that independently confirms the classical measurement of eddington1920. Geodesic motion follows from the 12-edge maximum-gradient selection rule in the continuum limit abshier2026am. The impedance of free space $Z_0 = _0/ _0$ is derived from lattice parameters, closing an open problem from the ZDC Chaining companion abshier2026zdc. Gravitational waves arise as lattice perturbations propagating at $c$, consistent with abbott2016. No new postulates beyond the LSP are introduced.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -1216,7 +1216,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/GR-1c_strong_field_GR.tex",
       "title": "Strong-Field General Relativity and the CPP Field Equation",
       "ver": "2.3",
-      "changed": "2026-08-21",
+      "changed": "2026-09-02",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1229,7 +1229,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-21",
+        "publication_date": "2026-09-02",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1259,7 +1259,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1d_gravitational_wave_echoes/GR-1d_GW_echoes.tex",
       "title": "Gravitational Wave Echoes from the Planck Core",
       "ver": "3",
-      "changed": "2026-08-21",
+      "changed": "2026-09-02",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1272,7 +1272,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-21",
+        "publication_date": "2026-09-02",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1603,7 +1603,7 @@
       "rel": "series_gravitation/papers/GR-2_echo_falsifier.tex",
       "title": "The Echo Falsifier:",
       "ver": "1.7",
-      "changed": "2026-08-31",
+      "changed": "2026-09-02",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1616,7 +1616,7 @@
         "creators": [
           "Thomas Lee Abshier, NDInstitute"
         ],
-        "publication_date": "2026-08-31",
+        "publication_date": "2026-09-02",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",

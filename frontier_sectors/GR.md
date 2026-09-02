@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3372, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3372**; next free:
-> **3373**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3373, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3373**; next free:
+> **3374**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,22 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3373 — R-COOCCUPATION-FORCED (founder: same-polarity CPs CAN land
+> on the same GP; THEO-1's same-polarity clause described ZBW cycling,
+> not an exclusion) — THEO-1 amended by dated note. THE REGENERATION
+> LEDGER opened at the founder's request:** `paper_regeneration_ledger.md`
+> (root; hand-maintained; one row per paper; 4 MODIFIED — GR-2 V1.7,
+> GR-1c Corr. 3, GR-1b **v3.7** (a version collision at 3371, 3.3 was
+> taken — fixed), GR-1d (comment) — and 11 OWED across SR/QM/SM/GR;
+> Zenodo facts for the founder in §D). Corrigenda wording in GR-1b/GR-1c
+> aligned to the THEO-1 finding. Compile clean. Step E re-run.
+> **Wall physics shape (next):** the surface is generally compliant;
+> for ℓ ≥ 2 the incompressible core is a SLAB at c_* = c/2, not a wall
+> — |R| = 1 is losslessness, the phase is the slab's round trip
+> (proper radius 2.25μ at c/2 → 9μ/c → 2.75 ms at 62 M_⊙: a second
+> echo spacing, not a phase correction). Rung 1 = 1D lossless slab.
+> Next patch (GR): 3374.
 >
 > **3372 — THE DEPENDENCY SWEEP (CONV-038 Q1, owed 3–2) — AND THE
 > 3366 TOMBSTONE WAS WRONG: the rule was not retired, it was DEMOTED

@@ -274,7 +274,7 @@ Source: CPP propositions session, 30 March 2026.
 
 | ID | Name | Result | Axioms Used | Source |
 |----|------|--------|-------------|--------|
-| **THEO-1** | CP Non-Persistent Co-Occupation | Two CPs cannot persistently occupy the same Grid Point. Same-polarity: repulsive SSV prevents approach. Opposite-polarity: superimposition lasts exactly one Absolute Moment (bulk SSV drives separation). **CP Exclusion Postulate is redundant — it's a theorem.** Axiom count reduced from 7 to 6. | AXIM-1, AXIM-2, AXIM-4 | propositions.md §1 |
+| **THEO-1** | CP Non-Persistent Co-Occupation | Two CPs cannot persistently occupy the same Grid Point. Same-polarity: repulsive SSV prevents approach. Opposite-polarity: superimposition lasts exactly one Absolute Moment (bulk SSV drives separation). **CP Exclusion Postulate is redundant — it's a theorem.** Axiom count reduced from 7 to 6. | AXIM-1, AXIM-2, AXIM-4 | propositions.md §1 **[Amendment note, Patch 3373, 2 Sep 2026 — founder R-COOCCUPATION-FORCED (verbatim `founders_voice/founder_ruling_cooccupation_forced_2026-09-02.md`):** the same-polarity clause is a *description of the isolated-pair/ZBW case, not an exclusion*: "same-polarity CPs can land on the same GP" under an external SSV_net, and the co-occupation resolves the next Moment per the local SSV_net. Proof unchanged (isolated pair). THEO-1 constrains co-occupation, not the PSR: it delivers NO floor on PSR_eff — the GR lane's pre-Sep-2026 use of the pre-demotion *postulate* as a packing floor (`PSR ≥ l_P/2`) is void; see `axiom-registry.md` §"Retired rules" and OPEN-GR-FLOOR-1. Sweep of dependants: `series_gravitation/rcore_derivation/3372_exclusion_dependency_sweep.md`.] |
 
 ---
 
