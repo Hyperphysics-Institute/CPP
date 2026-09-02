@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3376, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3376**; next free:
-> **3377**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3377, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3377**; next free:
+> **3378**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,28 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3377 — THE ℓ = 2 SPHERICAL RUNG: THE MIRROR IS EVEN-PARITY; THE
+> LADDER IS ODD-PARITY; A SCALAR MIRROR FORCES A ROBIN WALL ON THE
+> REGGE–WHEELER FUNCTION, NOT X = 0.** Unconditional: the register is a
+> scalar (conformal factor ψ⁴δ_ij) → even parity; an axial perturbation
+> has no conformal component; GR-2/3297 Check 7 solved the RW AXIAL
+> equation with X = 0 — the parity the mirror does not constrain, never
+> derived for it. Chandrasekhar transformation VERIFIED numerically
+> (residual 6e-8; sign chosen by the test; inverse established the same
+> way). Conditional on register-Dirichlet ⟺ Zerilli-Dirichlet at the
+> wall: **dZ⁻/dr* = −(W/12M) Z⁻, W(9M/4)/12M = 2.020/M (ℓ = 2)**;
+> constructive check 1e-16; |R| = 1, |arg R − π| = 2 arctan(ω/|a|).
+> **(2,−2) at 191 Hz: Mω = 0.366 → 20.6° off π; (3,−3): ~30°. Not a
+> small correction.** Unconditional: Z⁺ = Z⁻ = 0 at one wall forces the
+> trivial solution — X = 0 is NOT the odd image of any scalar mirror.
+> Three branches for CONV-039 (map Dirichlet→Dirichlet: recompute the
+> ladder with the Robin wall; map Robin: derive; odd sector governed by
+> the SSV_net VECTOR sector, which has no wall ruling — X = 0 a separate
+> assumption, or the echo is even-parity only). Verify 16/16. Record
+> `rcore_derivation/3377_l2_spherical_parity_robin.md`. GR-2 caveat (a)
+> wording to change at V1.8/V2.0; not enacted; ledger unchanged. Next
+> patch (GR): 3378 = CONV-039 package (Q-numerical, Q-parity, Q-recompute).
 >
 > **3376 — ROT-1 RUNG 3 NEGATIVE, recorded in code (12/12 asserting the
 > failures).** Model F (excess as body force + ceiling spring) CREATES
