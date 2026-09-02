@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3379, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3379**; next free:
-> **3380**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3380, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3380**; next free:
+> **3381**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,18 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3380 — CONV-039 DISPATCHED on the founder's instruction (economy
+> protocol: 2a on the Kerr wall map + partial win).** Package
+> `review/conv039_parity_trace_wall_kerr_map_review_package_v1.0.md`;
+> receiver `review/reviews-CONV-039.md` (0/5). Q1 parity theorem + trace
+> identification + β_ℓ(ω); Q2 the a = 0 extraction and the −13.4%; **Q3
+> the Kerr wall-map METHOD (route + cost)**; Q4 the odd-sector rule
+> (VECTOR-SECTOR-RULE-NEEDED routes to the founder); Q5 GR-2's standing +
+> the V1.8 sentence; Q6 the two regularities; Q7 scope; Q8 disposition.
+> EK-1 sealed (β₂(0.25), β₃(0.5), W₃(9/4)/12). Fenced: CONV-038 rulings,
+> 3375 theorem, 3376 skin term, the SN numerics. Next patch (GR): 3381 =
+> adjudication on returns.
 >
 > **3379 — THE a = 0 EVEN-SECTOR LINE SET (ℓ = 2, 3) UNDER THE DERIVED
 > WALL; 3378's EXTRACTION CORRECTED; THE KERR RECOMPUTE BLOCKED —
