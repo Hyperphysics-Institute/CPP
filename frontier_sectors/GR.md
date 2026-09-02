@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3374, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3374**; next free:
-> **3375**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3375, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3375**; next free:
+> **3376**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,30 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3375 — FLOOR-1(a) INTERIOR ATTAINMENT IS A THEOREM; LAW (D), THE
+> OVER-DEMANDED CORE; THE 3297 MIRROR RECOVERED AS ITS LINEAR LIMIT.**
+> "Attainment" was two questions: the VALUE (u_max = 1?) stays OPEN
+> (merged into FLOOR-1(c)); the INTERIOR (register at cap?) CLOSES —
+> the register records min(demand, cap), demand is a 1/r census of
+> non-negative sources and is monotone inward (d|φ|/dr = −M/r² ≤ 0),
+> the surface is where demand = cap, so demand > cap everywhere inside:
+> pinned, with excess e(r) growing to u_max/2 at the centre. 3374's
+> (A) needs an unsaturated body, (B) needs no interior source — the
+> R-core obeys **(D)**: compression → exact Dirichlet at the surface
+> (phase π); rarefaction of amplitude δ peels a SKIN of depth
+> d = R·δ/u_max off the cap; reflection bracketed between Dirichlet at
+> the surface (delay 0) and at the skin floor (delay 2d/c_*), phase π
+> at both limits. **δ → 0: X = 0, |R| = 1, phase π — 3297's mirror is
+> the small-amplitude limit; right limit, wrong reason. GR-2's line is
+> now the linear-response prediction WITH a derivation.** Correction:
+> one-sided, amplitude-dependent, ≤ 0.13–0.43 ms at δ/u ~ 0.1 (clock
+> map unminted), gone by the third echo. **3374's two-timescale train
+> downgraded to the (A)/(B) cases — not generic.** Verify 22/22
+> (a sign-clamp skin model tried and REJECTED in code — it is the peel
+> done wrongly). Rung 3 owed: the peeling-contact reflection R(ω, δ).
+> Record `rcore_derivation/3375_attainment_overdemand_lawD.md`. No
+> paper touched. Next patch (GR): 3376.
 >
 > **3374 — OPEN-GR-ROT-1 RUNG 1: THERE IS NO WALL.** Under the
 > ratified dictionary c_* = c/(1+u) with u continuous across the
