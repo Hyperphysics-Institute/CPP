@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3392, 3 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3392**; next free:
-> **3393**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3393, 3 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3393**; next free:
+> **3394**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,20 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3393 — CONV-040 DISPATCHED (founder-initiated; economy trigger 1,
+> WIN-CHECK).** Package `review/conv040_win_check_free_surface_lines_
+> review_package_v1.0.md`; receiver `review/reviews-CONV-040.md` (0/5).
+> The chain L1–L6 (founder's clock → Mercury fixes β_SR1 = ½ → surface at
+> lapse ½ → free-surface wall → a = 0 poles 195/292/208 → indicative Kerr
+> 193/291) vs the shipped 191.3/288.5. Q1 second-order test; Q2 surface +
+> wall law; Q3 poles; **Q4 the two Kerr ansätze and their error; Q5
+> STRUCTURE / COINCIDENCE / UNDETERMINED with the decider**; Q6 spin-
+> insensitivity; Q7 scope; Q8 GR-2 V1.9 disposition. Eight triage
+> points (ansatz-B error unboundable; ξ eliminated not evolved; the 3383
+> regularity now load-bearing; a THIRD line at 208 Hz). EK-1 requires
+> running 3359's surface criterion. V1.9 text drafted with the verb left
+> to Q5. Next patch (GR): 3394 = adjudication.
 >
 > **3392 — THE KERR TEST, INDICATIVE (founder: "run it before we write"):
 > the free-surface lines at χ = 0.68 are 193 Hz and 291 Hz — within 1%
