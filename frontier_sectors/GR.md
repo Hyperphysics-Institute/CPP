@@ -1,10 +1,10 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3398, 3 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3398**; next free:
-> **3399 — the GR block has ONE number left; the next lane allocation is
-> a governance item for the founder/PD-006 before 3400 (DE's block)**);
-> DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3600, 3 Sep 2026).** Block
+> discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
+> as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
+> founder, 3 Sep; highest used: 3600; next free: 3601)**; DE owns 3400s
+> (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -31,6 +31,26 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3600 — GR BLOCK 3600–3699 ALLOCATED (founder); R-TRANSVERSE-IS-DP-
+> POLARIZATION.** The founder's transverse dictionary — E (DP
+> separation) / B (DP arc) polarizations of the DP Sea, built from
+> DI-bit summations — IS the E/B decomposition of vector harmonics from
+> the substrate side: **E-type ↔ the even vector harmonic (the shift
+> h_tr); B-type ↔ the odd sector; both SSV_net** (refines R-SHEAR-MUST-
+> BE-REGISTERED). The junction (3396–3398) is now short exactly ONE
+> coefficient κ: how a unit of E-polarization reads in the metric —
+> the rank-2 dictionary CONV-039 found absent, narrowed to a number
+> and still absent. Not fixed by choice (C-NO-SPECIAL-RULE), not by
+> energy conservation alone (interior flux normalisation is a second
+> unknown), not by the exterior (reproduced via scalar dictionaries;
+> the 3378 theorem from the other side). κ = 0 is V1.9's closed-channel
+> model — unchanged, correctly labelled; κ ≠ 0 broadens the even poles
+> by an uncomputed amount. **OPEN-GR-SHIFT-DICT-1 re-scoped to κ; a
+> question for the THEORY (the DP Sea's transverse dynamics, deferred
+> since CONV-028) before it is a question for a panel. F-7 to the
+> founder: does the register respond to a pure E-polarization at all?**
+> Record `rcore_derivation/3600_transverse_dictionary_and_the_last_coefficient.md`.
 >
 > **3398 — THE SHIFT RECONSTRUCTION DERIVED FROM EINSTEIN'S EQUATIONS
 > (verify 8/8).** No network path to the literature → derived instead:
