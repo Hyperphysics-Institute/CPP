@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3395, 3 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3395**; next free:
-> **3396**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3396, 3 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3396**; next free:
+> **3397**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -29,6 +29,27 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3396 — SURFACE-DYNAMICS-1 CLOSED: no surface EOM.** The surface is
+> the LEVEL SET of the register (ξ = −δv/v′, a definition); an EOM would
+> be a new rule (C-NO-SPECIAL-RULE) and a third condition on a second-
+> order problem (Grok) — excluded, not missing. The kinematic law is
+> complete for the REGISTER channel. **What the caveat pointed at:
+> OPEN-GR-JUNCTION-1.** The even mode presents K, H₂ AND the shift H₁ at
+> the wall; H₁ ~ ωr·Z is ORDER UNITY there (ωr ≈ 1); under R-SHEAR-MUST-
+> BE-REGISTERED that vector content transmits (as the odd sector does):
+> the 3391 wall is the closed-vector-channel (T = 0) limit. Two channels,
+> two unknowns, two conditions — well-posed — but the level set alone
+> gives |R| = 1 while T ≠ 0 carries energy in: consistency needs the
+> interior wave's BACK-REACTION on the level set (the interior-side
+> dictionary; RCORE-4 physics not in the corpus). If open: |R| < 1 on
+> the even sector, a core round-trip family, the 195/292 lines broaden
+> and shift — the 1% may go; V1.9's "kinematic wall model" already
+> carries this. Plan: source-check H₁ (a recalled check did not close —
+> no formula claimed); compute the vector fraction; interior dictionary
+> (founder F-5: do DI-bits arriving from INSIDE count in the surface
+> register's demand?); rerun. Verify 5/5. Record
+> `rcore_derivation/3396_surface_dynamics.md`. Next: F-5.
 >
 > **3395 — CONV-040 ENACTED (founder's word).** GR-2 **V1.9** (12 pp,
 > compile clean; changelog): the adjudication §2 paragraph — a = 0
