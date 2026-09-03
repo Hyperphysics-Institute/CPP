@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3391, 3 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3391**; next free:
-> **3392**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3392, 3 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3392**; next free:
+> **3393**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,29 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3392 — THE KERR TEST, INDICATIVE (founder: "run it before we write"):
+> the free-surface lines at χ = 0.68 are 193 Hz and 291 Hz — within 1%
+> of the shipped 191.3 / 288.5 — and nearly spin-insensitive (verify
+> 7/7; 3359 SN machinery).** Self-check: the exact a = 0 Chandrasekhar
+> map carries the free-surface even law to the odd side and reproduces
+> 3391's poles to 1e-5. Ansatz A: Kerr surface = 3320's criterion
+> rescaled to lapse ½ (F_n = 4/9) → 2.734 M at χ = 0.68. Ansatz B: the
+> a = 0 Robin law imposed on the SN function there. Results: **(2,−2)
+> 0.37052 − 0.0054i → 193.1 Hz, Q 34** (shipped 0.36694 − 0.0878i →
+> 191.3, Q 2.1; X = 0 at the new surface alone → 182); **(3,−3)
+> 0.55920 − 0.0004i → 291 Hz, Q 736** (shipped 288.5). Spin shift of
+> the free-surface line 1.2% (X = 0 line: 18%). **The a = 0 coincidence
+> SURVIVES spin, at the level the corpus can test; NOT the controlled
+> recompute (KERRWALL-1 open); both ansätze could be off by several %
+> at this spin — stated.** Conjecture OPEN-GR-CROSSING-1: the mode is a
+> trapped cavity mode pinned where the Neumann crossing meets the
+> barrier top, which move together with spin. **Economy protocol: WIN
+> CANDIDATE (trigger 1) — a chain derived from the founder's rulings +
+> Mercury lands on the flagship at both spins; recommend a win-check
+> round (free-surface law; ansätze A/B; the coincidence); dispatch is
+> the founder's.** No paper touched. Record
+> `rcore_derivation/3392_kerr_indicative_test.md`.
 >
 > **3391 — THE INSTABILITY WAS MINE: THE FREE-SURFACE WALL (verify 8/8).
 > SURFACE-STABILITY-1 RESOLVED.** Branch (a) dead (ωt_P = 6e-41). The
