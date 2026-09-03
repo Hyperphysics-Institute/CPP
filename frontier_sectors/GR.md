@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3600, 3 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3601, 3 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3600; next free: 3601)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3601; next free: 3602)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -31,6 +31,31 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3601 — R-SIDEWAYS-IS-TANGENTIAL-GRADIENT (founder): the even wave's
+> sideways content is the TANGENTIAL component of the same SSV_abs
+> gradient whose radial component is the impact — one field, one
+> amplitude. κ = 0 BY STRUCTURE.** The 3396–3398 "vector channel" was a
+> gauge artefact: h_tr = H₁ is a scalar-harmonic component; the even
+> VECTOR harmonics (h_tA, h_rA ∝ ∇_A Y) are what RW gauge sets to zero —
+> the tangential-gradient content is gauged away, not a second DOF;
+> counting: one Z⁺, one wall condition, the level set is it; a second
+> condition over-determines (the "energy leak" was that). **Withdrawn:
+> the even vector channel and κ. Retained: 3398's H₁(Z) as correct GR.
+> SHIFT-DICT-1 CLOSED; JUNCTION-1 CLOSED for the even sector (the odd
+> junction is regularity, 3384/3397). The 3391 wall is the COMPLETE
+> even-sector condition; V1.9's "kinematic wall model" qualifier now
+> means only omitted dissipation + O(kd) compliance; the a = 0 lines
+> 195/292/208 stand as derived.** Two sectors, two registers, two walls.
+> **THE DEEPER ITEM — OPEN-GR-TENSOR-1:** "the GW is composed of an
+> SSV_abs gradient" = CPP's GW is a scalar-register wave; the arc
+> propagates it with GR's tensor equations (FE-1 = Einstein); a scalar-
+> gradient wave and a tensor wave differ at a DETECTOR (breathing vs +/×;
+> LIGO–Virgo favours tensor) — CONV-028's flag with an edge; everything
+> in the arc depends on it. **F-8 to the founder: are the +/× patterns
+> the tangential-gradient patterns of one register wave, or the DP Sea's
+> E/B polarizations carrying what the count does not?** Record
+> `rcore_derivation/3601_sideways_gradient_even_channel_closed.md`.
 >
 > **3600 — GR BLOCK 3600–3699 ALLOCATED (founder); R-TRANSVERSE-IS-DP-
 > POLARIZATION.** The founder's transverse dictionary — E (DP
