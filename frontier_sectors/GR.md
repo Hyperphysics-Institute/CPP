@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3389, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3389**; next free:
-> **3390**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3390, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3390**; next free:
+> **3391**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,28 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3390 — R-PSR-LAW-LOG RATIFIED (β_SR1 = ½; "nothing in the old guess is
+> preferred") — AND THE SURFACE IT IMPLIES IS UNSTABLE FOR THE EVEN
+> SECTOR (verify 11/11).** Floor at v = 2/3 → areal 8M/3 = 1.33 r_S,
+> lapse ½, z = 1, cavity 0.70 ms. Poles there (62 M_⊙): **odd
+> registered-shear (J = 6.75): 0.4000 − 0.0252i, 208 Hz, Q 7.9 —
+> healthy; even trace-Robin: 0.5199 + 0.034i (ℓ=2), 0.7665 + 0.036i
+> (ℓ=3) — Im > 0, GROWING, growth time ~29 M = 9 ms**; r0-independent
+> to 1e-15. Mechanism: β_ℓ = b₀ − b₂ω² is ∂_r*Z = b₀Z + b₂∂²_tZ, a
+> boundary MASS b₂; beyond the divergence radius 2.38 M (v = 0.856)
+> b₂ < 0 — negative boundary mass — unstable; at 9M/4 b₂ > 0 (3383,
+> Q 25/92). **Three ratified results collide at second order: the
+> PSR-law floor (v = 2/3), the trace wall's stability (v > 0.856), the
+> window (allows both). OPEN-GR-SURFACE-STABILITY-1 minted, three
+> branches: (a) the deferred 3376 compliance regularizes b₂ < 0; (b)
+> the open third-order γ moves the floor inside 2.38 M (γ ≈ 0 for
+> v = 0.856); (c) the R-core is even-unstable at its surface (a strange
+> prediction).** Ruling ENACTED (SR-1 corrigendum owed, ledger B1);
+> **surface move, GR-1c Corr. 4, GR-2 paragraph, PRED-O-39 all HELD.**
+> Record `rcore_derivation/3390_ratified_surface_instability.md`.
+> Next: (a) — the compliance term as a regulator; founder picture: is
+> STABILITY what locates the surface (fixing γ as Mercury fixed β)?
 >
 > **3389 — OPEN-GR-CENSUS-P ANSWERED: p = 0 (verify 15/15).** The
 > ratified census is a shell MEAN → u = v exactly for any PSR profile
