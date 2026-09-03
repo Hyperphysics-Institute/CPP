@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3393, 3 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3393**; next free:
-> **3394**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3394, 3 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3394**; next free:
+> **3395**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,31 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3394 — CONV-040 ADJUDICATED 5/5 (verify 11/11).** EK-1: GPT, Grok
+> matched; **Gemini computed all three and missed on a ROUNDING TIE in
+> the worker's key (W/12 = 2.03375 exactly) — graded execution-verified,
+> key defect the worker's**; Copilot, DeepSeek read rw off the page —
+> INSPECTED. **Q1 SWC 3–2** (Mercury CALIBRATES an open coefficient — "no
+> free parameter" withdrawn; quadratic only; the all-orders log form is
+> the founder's ratified completion). **Q2(i) SWC 3–2; Q2(ii) SWC 4–1**
+> (T-2 answered by Gemini: N(v) is purely register; T-3 universal: ξ
+> eliminated, not evolved — a KINEMATIC relation; Grok: a surface EOM
+> would over-determine → OPEN-GR-SURFACE-DYNAMICS-1). **Q3 RWC 3–2**
+> (Q ≈ 3500/736 are model poles, not linewidths). **Q4 (A) 3–2, (B) 4–1
+> ACCEPTABLE-AS-INDICATOR; error UNBOUNDABLE 4–1** (GPT: the script's
+> windows were 10% not 1%; roots sought in the known region; frozen
+> a = 0 coefficients can MANUFACTURE spin-insensitivity). **Q5
+> UNDETERMINED 5–0 — "reproduces" FORBIDDEN; "lands within 1%
+> (indicative)" permitted; decider (preregistered gauge-controlled
+> reconstruction, no target-directed root selection, several spins,
+> slow-rotation cross-check) into KERRWALL-1.** Grok: Q 34 vs shipped
+> Q 2 is not a spectral match. Q6 UNDETERMINED 5–0. Q7 twenty-odd items
+> adopted (third line at 208 Hz NAMED; OPEN-GR-EXCITATION-1). **Q8b
+> ENACT-V1.9-A0-DERIVED-KERR-INDICATIVE 3–2, A0-ONLY's conditions
+> folded** — V1.9 text in the adjudication §2. Enactment on the
+> founder's word: GR-2 V1.9, GR-1c Corr. 4, PRED-O-39, ledger. Record
+> `review/conv040_adjudication.md`.
 >
 > **3393 — CONV-040 DISPATCHED (founder-initiated; economy trigger 1,
 > WIN-CHECK).** Package `review/conv040_win_check_free_surface_lines_
