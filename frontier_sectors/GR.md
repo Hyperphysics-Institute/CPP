@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3396, 3 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3396**; next free:
-> **3397**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3397, 3 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3397**; next free:
+> **3398**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -29,6 +29,25 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3397 — R-REGISTER-COUNTS-BOTH-SIDES (founder: every DI-bit reaching
+> the surface counts, from inside or outside) — the junction is
+> energetically CLOSED: the returning interior vector wave loads the
+> surface register (AP-4 count rule), the level set moves with both
+> waves, the two even-sector channels couple through one register —
+> well-posed, no leak. AND the founder's question "why would a wave
+> bounce off the centre?" — it doesn't:** the ℓ = 2 interior wave turns
+> at the centrifugal radius r_t = √(ℓ(ℓ+1))/k = 0.98 M (65% of the core
+> radius), amplitude at r = 0 ~1e-15 of peak; regularity, not
+> reflection; AP-4 no-sink → what goes in comes out. "Reflects at the
+> centre" (3374–3396) WITHDRAWN from the lane's language. At the line
+> frequency kR_core = 3.75 < 5.76: the core is a single turn-around,
+> not a cavity; the interior standing-wave family starts at Mω ≈ 0.57
+> (~296 Hz). **Owed (worker): a SOURCED H₁ reconstruction; the interior
+> vector wave's register load; the coupled root-find; the a = 0 even
+> poles with the channel open** (expectation: |R| < 1, the 195/292
+> model poles broaden, a delayed component not a second line). Record
+> `rcore_derivation/3397_centre_turnaround_junction.md`. Next: source H₁.
 >
 > **3396 — SURFACE-DYNAMICS-1 CLOSED: no surface EOM.** The surface is
 > the LEVEL SET of the register (ξ = −δv/v′, a definition); an EOM would
