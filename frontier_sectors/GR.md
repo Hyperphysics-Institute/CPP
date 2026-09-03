@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3601, 3 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3602, 3 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3601; next free: 3602)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3602; next free: 3603)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -31,6 +31,33 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3602 — P-GW-LONGITUDINAL (founder's F-8 picture: the GW is a
+> longitudinal SSV_abs density wave, homogeneous transversely; the
+> Michelson signal = homogeneous vs heterogeneous immersion) COMPUTED
+> (verify 5/5), NOT minted as a ruling:** differential strain
+> = h_s[1 − sin kL/kL] ≈ h_s (kL)²/6 = **1.2e-5 h_s** at 100 Hz for 4-km
+> arms; **zero for a source overhead** (GR: maximum); needs **h_s ~ 1e-16**
+> to produce the observed 1e-21; scalar polarization content (LIGO–Virgo
+> multi-detector tests favour tensor — direction from recollection,
+> magnitudes not quoted). **Not fatal: the founder's 3600 statement
+> supplies the other half** — the DP Sea's E/B TRANSVERSE polarizations
+> are what can carry a TT (+/×) strain with NO count modulation, and a
+> vacuum GW in GR is TRACELESS: far from mass the CPP GW must be the
+> sea's transverse polarization with the count untouched; the density
+> wave is a breathing mode GR forbids in vacuum and detectors do not
+> see. Consistent with the arc: near the surface the register sees the
+> mode's TRACE part (near-zone, gauge-dependent) — the level set; far
+> away the wave is TT and the register is blind (the 3378 theorem).
+> **OPEN-GR-TENSOR-1 sharpened: the rank-2 dictionary (E/B wave
+> equation → GR's tensor wave in vacuum; +/× at the detector; no
+> SSV_abs modulation) — deferred since CONV-028; until written, the
+> arc's exterior equations are borrowed from GR on FE-1.** **F-9: does
+> a vacuum GW in CPP modulate the count at all?** No → 3602's picture
+> withdrawn for the observed GW and the exterior equations are CPP's;
+> yes → a breathing mode the detectors should have seen — a
+> falsification exposure the record must carry. Record
+> `rcore_derivation/3602_longitudinal_gw_at_the_detector.md`.
 >
 > **3601 — R-SIDEWAYS-IS-TANGENTIAL-GRADIENT (founder): the even wave's
 > sideways content is the TANGENTIAL component of the same SSV_abs
