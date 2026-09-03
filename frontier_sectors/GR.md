@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3385, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3385**; next free:
-> **3386**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3386, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3386**; next free:
+> **3387**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,27 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3386 — R-NO-LOAD-DELAY (founder: no mechanism delays DI-bits by
+> register load; that would be a new axiom) — 3385's F-3 mechanism
+> WITHDRAWN. The map with NO new axiom:** PSR_eff is a proper length
+> (the register's ruler); one PSR per Moment along edges (P-SALTATORY-
+> HOPS); the lattice step's proper length is the ratified ψ² l_P →
+> lattice hop per Moment = 1/((1+u)ψ²) → weak field **1 − 2u = Shapiro,
+> from three registered facts.** Transit GP-counted, budget proper.
+> **J = 4.5** at the wall (admissible set now {4.5 CPP-no-axiom, 6.75
+> GR}); axial ℓ=2 line 0.4418 − 0.0663i (230 Hz, −1.5%, Q 3.3);
+> interior family spacing **π/4.5 = 0.698 (364 Hz) vs GR 0.465 (243 Hz)
+> — 50% apart, the observable**; core round trip 9 μ/c = 2.75 ms (the
+> 3297 usage was this map). **The cost: local c by local clocks requires
+> N = 1/(1+u) = 1/2 at the wall, NOT the ratified log-lapse's 1/3** —
+> CPP's mechanism reproduces Schwarzschild's SPACE and a different
+> strong-field TIME (1.5× GR's coordinate light speed at the wall):
+> either the CONV-027 departure with a derivation, or the census map
+> is missing something — founder question (is local light speed c by
+> local ZBW clocks everywhere?) + the echo spacing decides. Not minted.
+> Record `rcore_derivation/3386_proper_psr_map.md`. GR-2 owes one
+> paragraph (3383–3386). Next: founder's reading of PSR_eff.
 >
 > **3385 — THE SHAPIRO LEG: the pure GP-hop map (J = 2) is EXCLUDED by
 > the measured Shapiro coefficient (Cassini: 1 − 2u; map A gives 1 − u);
