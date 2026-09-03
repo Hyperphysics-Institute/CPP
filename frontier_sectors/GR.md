@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3386, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3386**; next free:
-> **3387**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3387, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3387**; next free:
+> **3388**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,29 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3387 — R-CLOCK-RATE-IS-DISPLACEMENT (founder: clocks advance by the
+> displacement per Moment = the PSR) TESTED AT SECOND ORDER (verify
+> 14/14, symbolic).** (A) local c by local clocks follows with no
+> assumption. (B) **with the ratified LINEAR register u = μ/r̄, N =
+> 1/(1+u) gives PPN β = 3/2 → 5/6 of Mercury's perihelion (35.8″ vs
+> 42.98″) — EXCLUDED.** The founder's mechanism and the ratified
+> register cannot both be exact. (C) **the rescue with no new axiom: a
+> SELF-SOURCING register u_reg = v/(1 − v/2) = v + v²/2 + … makes
+> N = 1/(1 + u_reg) EXACTLY the ratified log-lapse — the log-lapse
+> becomes DERIVED (founder clock + Mercury); coefficient ½ fixed.** (D)
+> under (C): J = 6.75 = GR (the 3385/3386 strong-field departure
+> CLOSES); **the register saturates at N = 1/2, v = 2/3 — surface at
+> areal 8μ/3 = 1.33 r_S, not Buchdahl's 1.125; z = 1; cavity 0.70 ms
+> (was 2.15); floor l_P/2 unchanged; the 3370 window survives
+> re-labelled (u_reg ∈ (0.73, 2], saturation INSIDE it — 3367's
+> extremality problem dissolves); every wall computation since 3297
+> would be redone at r_w = 8M/3, where β_ℓ has flipped sign.** NOT
+> ENACTED. **F-4 to the founder: does the DI-bit census self-source —
+> does a GP with a larger register broadcast a larger census ("does
+> gravity gravitate in CPP")?** Record
+> `rcore_derivation/3387_clock_mechanism_second_order.md`. GR-2 owes
+> one paragraph (3383–3387); held for F-4. Next: F-4.
 >
 > **3386 — R-NO-LOAD-DELAY (founder: no mechanism delays DI-bits by
 > register load; that would be a new axiom) — 3385's F-3 mechanism
