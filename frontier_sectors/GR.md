@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3394, 3 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3394**; next free:
-> **3395**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3395, 3 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3395**; next free:
+> **3396**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -16,15 +16,35 @@
 > specific for GR... that seems to be the place where the collision
 > happens."
 >
-> **R-CORE ARC BANNER (CONV-038, Patch 3369; amended 3370): FLOOR
-> UNDETERMINED WITHIN A DERIVED WINDOW — 0.536 < u_max ≤ 1, i.e.
-> l_P/2 ≤ PSR_floor < 0.651 l_P** (Buchdahl above, light ring below;
-> founder R-FLOOR-FINITE: not zero; R-CELL-SIZE-OPEN: no argument for the
-> value). Attainment at u = 1 is an extremality assumption. **The arc is
-> NOT robust inside the window** (cavity 2.15 ms → 0.14 ms across it).
+> **R-CORE ARC BANNER (amended Patch 3395, CONV-040): the floor l_P/2
+> is reached at lapse ½ under the founder-ratified log PSR law (second
+> order calibrated by Mercury, higher orders open) — surface at areal
+> 8M/3 = 1.33 r_S, inside the CONV-038 window; the even wall is the
+> kinematic free-surface law (4 − 3v/2)H₂ + 2K = 0; the axial sector
+> transmits. a = 0 model poles 195 / 292 (even), 208 Hz (axial). Kerr:
+> indicative only (193 / 291, within 1% of V1.6), structure UNDETERMINED
+> — controlled reconstruction OPEN-GR-KERRWALL-1 with the CONV-040
+> decider as charter. Surface dynamics, excitation, the crossing
+> regularity: OPEN.**
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3395 — CONV-040 ENACTED (founder's word).** GR-2 **V1.9** (12 pp,
+> compile clean; changelog): the adjudication §2 paragraph — a = 0
+> model poles 195/292/208, three lines; Q model quantities; Kerr
+> 193/291 "lands within 1% (indicative)"; structure undetermined; V1.6
+> retained as reference. **GR-1c Corrigendum 4** (`rem:core_surface_
+> corrigendum`): surface at areal 8μ/3 under the ratified law;
+> Corrigendum 3's extremality assumption moot. PRED-O-39 + Last-updated
+> (the 193/291 pair NOT in the table). Ledger A1 → 1.9, A2 → Corr. 4.
+> Step E: row 32 → 1.9. Open items: **OPEN-GR-KERRWALL-1** (charter = the
+> CONV-040 decider), **OPEN-GR-SURFACE-DYNAMICS-1**, **OPEN-GR-EXCITATION-1**,
+> **OPEN-GR-CROSSING-1**. SR-1 corrigendum stays with the SR lane (ledger
+> B1). Banner amended. Next: the founder's direction — KERRWALL-1 is a
+> literature project; the unilateral items are SURFACE-DYNAMICS-1
+> (does a surface EOM over-determine?), EXCITATION-1 (relative
+> excitation of the three lines), and the O(kd) skin term.
 >
 > **3394 — CONV-040 ADJUDICATED 5/5 (verify 11/11).** EK-1: GPT, Grok
 > matched; **Gemini computed all three and missed on a ROUNDING TIE in

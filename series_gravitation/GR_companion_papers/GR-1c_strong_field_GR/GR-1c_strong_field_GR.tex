@@ -15,6 +15,12 @@
 %   solution). Panel CONV-027 APPROVE-EITHER 5/5; founder-ratified.
 %   Verification: series_gravitation/code/3259_fterm_reconciliation_verify.py
 %   (8/8, exact-symbolic; independently SCRIPT-EXECUTED by two panel seats).
+% CORRIGENDUM 4 (Patches 3389-3395, 2-3 Sep 2026, CONV-040 5/5): under the
+%   founder-ratified log PSR law (second order calibrated by Mercury) the
+%   floor l_P/2 is reached at lapse 1/2, u = 2/3: the saturation surface is
+%   at areal 8mu/3 = 4/3 r_S, not the Buchdahl 9mu/4; Corrigendum 3's
+%   extremality assumption is moot. New remark rem:core_surface_corrigendum.
+%   No equation changes.
 % CORRIGENDUM 3 (Patches 3366-3371, 1-2 Sep 2026, CONV-038 5/5): the CP
 %   Exclusion Rule invoked by the proof of thm:core is RETIRED (founder
 %   R-EXCL-RETIRED; never in c01). Bound PSR >= l_P/2 RETAINED with a
@@ -541,6 +547,30 @@ Every result of this series downstream of the floor carries the
 standing banner: \emph{floor undetermined within a derived window;
 Buchdahl conditional bound $\PSR \geq \lP/2$.}  The theorem statement
 and its equations above are preserved verbatim (anti-erasure).
+\end{remark}
+
+\begin{remark}[Corrigendum 4: the saturation surface under the ratified
+PSR law --- CONV-040, Patches 3389--3395, 2--3 September 2026]
+\label{rem:core_surface_corrigendum}
+The founder's clock mechanism (the lapse is the PSR shrink,
+R-CLOCK-RATE-IS-DISPLACEMENT), tested at second order in the isotropic
+PPN reading, fails Mercury's perihelion with the Pad\'e PSR law
+$\lP/(1+u)$ ($\beta = 3/2$) and passes when the law's open
+second-order coefficient is $\tfrac12$ --- Mercury \emph{calibrates}
+it, and the founder has ratified the all-orders log form
+$\PSR_{\rm eff}/\lP = (1 - u/2)/(1 + u/2)$ (R-PSR-LAW-LOG), whose cubic
+and higher coefficients remain open.  Under that law the floor
+$\PSR = \lP/2$ is reached at lapse $\tfrac12$, $u = 2/3$: the
+saturation surface sits at isotropic $\bar r = 3\mu/2$, \textbf{areal
+$8\mu/3 = \tfrac43\,r_S$}, redshift $z = 1$, inside the CONV-038
+window and \emph{not} at the Buchdahl radius $9\mu/4$ used in
+Corrigendum~2 and Patch~3297.  The extremality assumption of
+Corrigendum~3 is thereby moot: saturation occurs inside the window, not
+at its edge.  The surface is a free boundary (its even-sector wall law
+is CONV-040's kinematic relation $(4 - 3u/2)H_2 + 2K = 0$).  Conditional
+on the ratified completion of the PSR law; the census itself is
+unchanged (Patch~3389: the shell-mean census gives $u = \mu/\bar r$
+exactly).  Original text preserved verbatim (anti-erasure).
 \end{remark}
 
 \subsection{Interior comparison: CPP vs.\ GR}

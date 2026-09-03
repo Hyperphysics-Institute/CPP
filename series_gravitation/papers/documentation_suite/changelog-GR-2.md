@@ -294,3 +294,11 @@ number changed. Compile gate: pdflatex ×2, 0 errors, 0 undefined,
 **Edit (text only; no number changed; no template moved).** A V1.8 block after the V1.7 caveats in the gravitational-grade paragraph, ending in the CONV-039 Q5 sentence: *no Kerr echo frequency is yet derived; 188–194 Hz retained as the Dirichlet-axial reference value only.* `\date` → V1.8. Compile gate: pdflatex ×2.
 
 **Open items minted:** OPEN-GR-KERRWALL-1 (Hertz/CCK reconstruction to a surface-adapted gauge; literature-scale; the panel's route is its charter); OPEN-GR-ODDWALL-1 (interior regular solution matched to the exterior RW function; blocked on the strong-field `c_*` map: `dr*/dr̄` = 2 (CPP) vs 6.75 (Schwarzschild) at the surface). **Owed next:** complex poles of the Zerilli + Robin(ω) problem at a = 0 (certifies or retires the −13.4%).
+
+## V1.9 — 3 September 2026, Patch 3395 (Session 161) — the line set re-derived (CONV-040, 5/5; ENACT 3–2 with the a0-only conditions folded)
+
+**Trigger.** Patches 3385–3392: the founder's clock mechanism tested at second order fails Mercury with the Padé PSR law and passes when the law's open second-order coefficient is ½ (Mercury calibrates it; founder-ratified log completion); the surface moves to lapse ½ = areal 8M/3; the even wall is the free-surface kinematic relation `(4 − 3v/2)H₂ + 2K = 0` (the fixed-surface trace law was unstable there); a = 0 model poles 195/292 (even) and 208 Hz (axial); an indicative Kerr extension (two ansätze) gives 193/291 Hz at χ = 0.68.
+
+**Edit (text only; no number in the V1.6 set changed; no template moved).** A V1.9 block after the V1.8 block, in the adjudication's §2 wording: three a = 0 lines as poles of the kinematic wall model; Q as model quantities; Kerr "lands within 1% (indicative)"; structure undetermined; V1.6 retained as reference. `\date` → V1.9. Compile gate: pdflatex ×2.
+
+**Open items carried:** OPEN-GR-KERRWALL-1 (charter now the CONV-040 decider: preregistered gauge-controlled reconstruction, no target-directed root selection, several spins, slow-rotation cross-check); OPEN-GR-SURFACE-DYNAMICS-1; OPEN-GR-EXCITATION-1; OPEN-GR-CROSSING-1.
