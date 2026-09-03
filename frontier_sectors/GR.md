@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3387, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3387**; next free:
-> **3388**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3388, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3388**; next free:
+> **3389**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,25 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3388 — C-NO-SPECIAL-RULE (founder): "heavier messages" WITHDRAWN as
+> an AP-4 change (payload is a fixed snapshot; register count-like; T-1
+> C-i linear at messenger level).** What the BARE theory contains at
+> second order with nothing added: one PSR per Moment + PSR shorter
+> where the register is larger ⇒ a conserved DI-bit flux is deposited
+> more densely there ⇒ **the census self-enhances through its own hop
+> length**, u = v(1+u)^p. Symbolic: **β = 3/2 − p.** p = 0 (the corpus's
+> linear register) → 5/6 Mercury, fails; p = 1 (naive deposit count) →
+> 7/6, fails; **p = ½ → Mercury exactly, AND N = 1/(1+u) = the ratified
+> log-lapse exactly.** "Mercury from the bare theory" is now ONE number:
+> **OPEN-GR-CENSUS-P — the second-order coefficient of the T-1 relay
+> recursion with PSR-dependent hop — must return ½.** If ½: the
+> log-lapse, Mercury, the clock mechanism and the 1.33 r_S surface all
+> follow from AP-4 + PSR law + founder clock; if not, the bare theory
+> fails Mercury at second order. Near/far-side of Mercury: tides ~1e-9,
+> J₂ ~0.03″ — not it; the differential effect is in the MESSENGERS
+> crossing the orbit. Record `rcore_derivation/3388_bare_theory_second_order.md`.
+> Next patch (GR): 3389 = OPEN-GR-CENSUS-P, the relay coefficient.
 >
 > **3387 — R-CLOCK-RATE-IS-DISPLACEMENT (founder: clocks advance by the
 > displacement per Moment = the PSR) TESTED AT SECOND ORDER (verify
