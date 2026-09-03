@@ -1,8 +1,10 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3397, 3 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3397**; next free:
-> **3398**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3398, 3 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3398**; next free:
+> **3399 — the GR block has ONE number left; the next lane allocation is
+> a governance item for the founder/PD-006 before 3400 (DE's block)**);
+> DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -29,6 +31,27 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3398 — THE SHIFT RECONSTRUCTION DERIVED FROM EINSTEIN'S EQUATIONS
+> (verify 8/8).** No network path to the literature → derived instead:
+> even-parity ℓ = 2 RW-gauge perturbation, linearized Ricci via δΓ
+> (time dependence by rule; no simplify), separated equations (t,θ),
+> (r,θ), (t,r); (r,θ) gives **H₁ = −iω[(2r² − 6Mr − 3M²)/((r−2M)(2r+3M))
+> Z + rZ′]**, which with K(Z), H₂(Z) satisfies (t,θ) and (t,r)
+> identically under Zerilli — **all three reconstructions now derived in
+> the record** (the 3396 recall was right; the recalled CHECK was
+> wrong). **Vector fraction at the ratified wall for the free-surface
+> mode: |H₁|²/(|K|²+|H₂|²+|H₁|²) = 0.34 — a third of the mode is
+> shift.** The junction is fully posed (exterior components derived;
+> interior vector wave, 3384; register counts both sides, 3397) EXCEPT
+> for one dictionary: **shift h_tr ↔ δSSV_net — OPEN-GR-SHIFT-DICT-1**;
+> candidate (stated as candidate): the shift is the census's net
+> direction = SSV_net by AP-4's definition. No coupling guessed; no
+> corrected pole claimed. **F-6 to the founder: is "a tilt in the
+> direction of arriving DI-bits, without change in their number" the
+> whole of what the metric's shift is in CPP?** Record
+> `rcore_derivation/3398_H1_derived_vector_fraction.md`. Next: F-6, then
+> the coupled root-find.
 >
 > **3397 — R-REGISTER-COUNTS-BOTH-SIDES (founder: every DI-bit reaching
 > the surface counts, from inside or outside) — the junction is
