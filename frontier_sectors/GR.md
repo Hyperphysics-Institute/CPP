@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3603, 3 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3604, 3 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3603; next free: 3604)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3604; next free: 3605)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -50,6 +50,31 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3604 — HOW THE GW IS MADE (verify 5/5, order of magnitude).**
+> Founder: "I had never considered that the GW was anything other than
+> a pressure wave … it seems likely that the GW is simply an expression
+> of EM waves." **Not an EM wave — six observational discriminators**
+> (couples to mass not charge; GW150914 no EM; GW170817's 1.7 s; passes
+> through rock; spin-2 90° symmetry; quadrupole floor). **But the right
+> structural instinct:** both are transverse polarizations of the Sea
+> by DI-bit summations — EM spin-1 sourced by charge, GW spin-2 sourced
+> by mass-energy; the channel is IN the axioms (DI-bit vector payload;
+> A3′ Q_ij = op:einstein) and undone. GR's mechanism: the pair's
+> changing mass quadrupole shears the field; h^TT = (2G/c⁴r) Q̈^TT;
+> L = (G/5c⁵)⟨Q⃛Q⃛⟩, Hulse–Taylor to 0.2% — **the target the Q_ij
+> derivation must hit.** THE SCALAR WAVE, bounded: naive scalar/tensor
+> amplitude ~ ¼ (same G Q̈/c⁴r scaling; T-1 supplies no suppression);
+> **interferometers nearly BLIND to an isotropic PSR modulation
+> ((kL)²/6 — the polarization tests do not bound it by amplitude); but
+> ENERGY LOSS does: Hulse–Taylor ⇒ ε_L < 2e-3 ⇒ ε_amp < ~0.045 — the
+> T-1 scalar wave must radiate ≥ 5× below its naive amplitude or CPP
+> fails the binary pulsar.** Whether T-1 + T-3 supply the suppression
+> (as they kill the monopole, T2-2) is a COMPUTATION nobody has done:
+> **OPEN-GR-SCALAR-RADIATION-1** minted beside TENSOR-1. F-11: does the
+> Sea respond to a rotating incoming vector pattern by deforming
+> quadrupolarly (the Q_ij channel), as it polarizes dipolarly to a
+> rotating field? Record `rcore_derivation/3604_how_the_gw_is_made.md`.
 >
 > **3603 — R-GW-IS-RECEIVED-SSV-ABS-WAVE (founder: emission fixed;
 > received SSV_abs compressed/rarefied; PSR varies as the wave passes)
