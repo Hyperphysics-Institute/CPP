@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3602, 3 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3603, 3 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3602; next free: 3603)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3603; next free: 3604)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -18,6 +18,25 @@
 > specific for GR... that seems to be the place where the collision
 > happens."
 >
+> **LANE BANNER (Patch 3603): THE GW SECTOR OF CPP, AS RATIFIED (T-1 =
+> scalar channel; A3′ Q_ij tensor channel = op:einstein, OPEN) AND AS
+> THE FOUNDER NOW DESCRIBES IT (R-GW-IS-RECEIVED-SSV-ABS-WAVE: a
+> compression/rarefaction of the received SSV_abs, PSR varying), IS
+> SCALAR. THE DETECTORS SEE TENSOR (3602: a scalar wave gives a Michelson
+> differential suppressed by (kL)²/6 ~ 1e-5, zero overhead, wrong
+> polarization). A theory whose only gravitational radiation is the
+> census wave does not reproduce the GW observations. The theory's own
+> door out: the DP Sea's E/B transverse polarizations (founder 3600) as
+> the tensor channel → CPP is SCALAR–TENSOR, and the scalar admixture
+> ε = h_s/h from a binary is a PREDICTION that must be small (polarization
+> tests; pulsar timing; GR150914-class tests). ε has never been computed.
+> OPEN-GR-TENSOR-1 = op:einstein / A3′ Q_ij is the lane's #1 item —
+> charter-level. THE R-CORE REFINEMENTS ARE PAUSED (their exterior
+> equation is GR's tensor equation, legitimate only under scalar–tensor;
+> the scalar channel at the surface has never been asked). F-10 to the
+> founder: does a passing GW do TWO things to the Sea (compress the
+> count AND polarize it transversely) or one?**
+>
 > **R-CORE ARC BANNER (amended Patch 3395, CONV-040): the floor l_P/2
 > is reached at lapse ½ under the founder-ratified log PSR law (second
 > order calibrated by Mercury, higher orders open) — surface at areal
@@ -31,6 +50,16 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3603 — R-GW-IS-RECEIVED-SSV-ABS-WAVE (founder: emission fixed;
+> received SSV_abs compressed/rarefied; PSR varies as the wave passes)
+> = the T-1 SCALAR census wave; the corpus knew (T2/T3 "Scope honesty";
+> T2-2 monopole radiation). Exposure stated in the record: scalar-only
+> does not reproduce the detectors (3602); scalar–tensor via the Sea's
+> E/B polarizations (A3′ Q_ij) is the door, with ε = h_s/h a computable,
+> constrained prediction never computed. **R-core refinements PAUSED;
+> OPEN-GR-TENSOR-1 = op:einstein elevated to #1.** F-10 to the founder.
+> Record `rcore_derivation/3603_gw_sector_exposure.md`.
 >
 > **3602 — P-GW-LONGITUDINAL (founder's F-8 picture: the GW is a
 > longitudinal SSV_abs density wave, homogeneous transversely; the
