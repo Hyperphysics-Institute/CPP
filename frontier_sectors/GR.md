@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3388, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3388**; next free:
-> **3389**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3389, 2 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3389**; next free:
+> **3390**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,27 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3389 — OPEN-GR-CENSUS-P ANSWERED: p = 0 (verify 15/15).** The
+> ratified census is a shell MEAN → u = v exactly for any PSR profile
+> (mean-value property, checked with position-dependent radii). 3388's
+> "deposits ∝ 1/PSR" WITHDRAWN: the relay re-emits a fixed N₀ at every
+> GP, so arrivals are N₀ everywhere up to O(h′²) — Planck-suppressed.
+> C-NO-SPECIAL-RULE holds with no exception. **THE SECOND-ORDER TERM IS
+> SR-1's OWN OPEN COEFFICIENT:** SR-1 states s(ε) = 1 − ε + βε² + … with
+> β unspecified ("exact to first order"; the Padé 1/(1+ε), β = 1, a
+> working choice). With the founder's clock N = PSR/l_P and u = v:
+> **β_PPN = ½ + β_SR1. Mercury (β_PPN = 1) FIXES β_SR1 = ½ — and the
+> law with β = ½ is (1 − v/2)/(1 + v/2), EXACTLY the ratified log-lapse.**
+> No axiom; one blank the bare theory had left, filled by its oldest
+> test; the founder's clock then reproduces GR's time dilation
+> identically. Consequences (as 3387 D, mechanism now located; NOT
+> enacted): J = 6.75 = GR (departure closes); floor l_P/2 at N = ½,
+> v = 2/3 → **surface at areal 8μ/3 = 1.33 r_S**, z = 1, cavity 0.70 ms;
+> 3378/3383/3384 to be redone at r_w = 8/3; SR-1 corrigendum owed (ledger
+> B1). **To the founder: (i) ratify β_SR1 = ½; (ii) does anything in the
+> substrate prefer the Padé's second order over the log's?** Record
+> `rcore_derivation/3389_census_p_and_sr1_beta.md`. Next: on (i)/(ii).
 >
 > **3388 — C-NO-SPECIAL-RULE (founder): "heavier messages" WITHDRAWN as
 > an AP-4 change (payload is a fixed snapshot; register count-like; T-1
