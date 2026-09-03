@@ -1,8 +1,8 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3390, 2 Sep 2026).** Block
-> discipline: **GR owns 3300–3399** (highest used: **3390**; next free:
-> **3391**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
+> **GR-LANE STATUS (header re-asserted Patch 3391, 3 Sep 2026).** Block
+> discipline: **GR owns 3300–3399** (highest used: **3391**; next free:
+> **3392**); DE owns 3400s (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
 > standing caution. It sat at "3348" through sixteen further GR patches
@@ -25,6 +25,29 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3391 — THE INSTABILITY WAS MINE: THE FREE-SURFACE WALL (verify 8/8).
+> SURFACE-STABILITY-1 RESOLVED.** Branch (a) dead (ωt_P = 6e-41). The
+> counting error at 3378: the register sets TWO dictionaries (ψ(v) and,
+> since R-PSR-LAW-LOG + the founder's clock, N(v)); δv appears in the
+> even sector twice (trace and H₀ = H₂); pinning it at a FIXED radius is
+> two conditions → the even sector is excluded; imposing only the trace
+> gave the negative boundary mass. **A saturated surface is FREE: pin
+> the register on the MOVING surface (δv + ξv′ = 0 in both dictionaries),
+> eliminate ξ → ONE law: (4 − 3v/2)·H₂ + 2K = 0** (at v = 2/3: 3H₂ + 2K;
+> at v = 1: 2.5H₂ + 2K — 3378/3383's trace law was the fixed-surface
+> limit, superseded; CONV-039 audited that limit — disclosed). At the
+> ratified surface 8M/3: β₂ = 7.64 − 55.2ω², β₃ = 196 − 627ω², b₂ > 0,
+> STABLE. **Poles (62 M_⊙): ℓ=2 0.37487 − 0.00190i → 195 Hz, Q 99;
+> ℓ=3 0.55964 − 0.00008i → 292 Hz, Q ~3500 (trapped, below the barrier
+> top).** Odd sector (3390): 208 Hz, Q 7.9. **Within 2% of GR-2's
+> shipped 191 / 288 Hz (Kerr χ=0.68, odd, X=0, 9M/4) — a different
+> chain; COINCIDENCE-TO-BE-TESTED, not a confirmation; the test is the
+> Kerr recompute of THIS wall.** Founder's asphericity ideas registered
+> as OPEN-GR-SEEDS (sources, not the amplifier). **The surface at
+> 1.33 r_S is no longer held.** Enactment owed on the founder's word:
+> GR-1c Corr. 4, GR-2 V1.9 (a = 0 line set), PRED-O-39, ledger.
+> Record `rcore_derivation/3391_free_surface_wall.md`. Next: enactment.
 >
 > **3390 — R-PSR-LAW-LOG RATIFIED (β_SR1 = ½; "nothing in the old guess is
 > preferred") — AND THE SURFACE IT IMPLIES IS UNSTABLE FOR THE EVEN
