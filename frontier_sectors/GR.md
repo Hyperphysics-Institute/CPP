@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3609, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3610, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3609; next free: 3610)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3610; next free: 3611)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -36,8 +36,7 @@
 > A3′ the R-core register is (Φ, V_i, Q_ij) with the cap on Φ only: the
 > even mode's traceless part is Q_ij content and relays into the core —
 > **JUNCTION-1 REINSTATED with its coefficient FIXED by A3′'s metric map;
-> the next R-core computation.** Governance owed: AP-4 {address, E, S}
-> ↔ A3′ (Φ, V_i, Q_ij) harmonisation note.**
+> the next R-core computation.** Governance: AP-4 ↔ A3′ harmonisation note ENACTED (3610).**
 >
 > **R-CORE ARC BANNER (amended Patch 3395, CONV-040): the floor l_P/2
 > is reached at lapse ½ under the founder-ratified log PSR law (second
@@ -52,6 +51,23 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3610 — GOVERNANCE ENACTED: the AP-4 ↔ A3′ harmonisation note in
+> `axiom-registry.md` (one packet {address; Φ, V_i as (E, S), Q_ij};
+> AP-4d extends to rank 2; no count change). PHYSICS FORMULATED, NOT
+> COMPUTED: the even-sector junction under A3′ — trace pinned on the
+> level set (Φ capped; 3391 unchanged), traceless part = Q_ij content
+> (uncapped) continuous into the core; coupling fixed by C5 (h̄_ij ←
+> Q_ij + ⅓δτ, harmonic pattern); gauge plan: RW → harmonic map of the
+> Zerilli mode at the wall, to be DERIVED and double-checked (the 3398
+> method); interior even tensor wave regular at the origin, J = 6.75.
+> **JUNCTION-1's charter: close the C5 energy ledger at the wall** (the
+> Operational-Energy Lemma, 1127: absorption TT-only) — whichever of
+> "|R| = 1 with a decoupled interior" or "|R| < 1 coupled" closes it is
+> the answer; not chosen by argument. Order: gauge map → interior wave
+> → junction + ledger → a = 0 even poles with both channels → V2.0
+> candidate → Kerr. Record
+> `rcore_derivation/3610_A3prime_junction_formulation.md`.
 >
 > **3609 — R-RANK-2-REAFFIRMED; A3′ WAS ALREADY THERE.** Founder: approve
 > the rank-2 register if thrifty, elegant, important, minimalist, multi-
