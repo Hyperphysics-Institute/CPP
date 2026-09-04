@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3627, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3628, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3627; next free: 3628)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3628; next free: 3629)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,21 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3628 — CONV-041 DISPATCHED (founder: "do the review protocol if you
+> think it will help with the next derivations" — it does: the
+> compactness claim, the spinning Love numbers and the core's conversion
+> all rest on the static picture audited here).** Package
+> `review/conv041_static_rcore_love_numbers_review_package_v1.0.md`;
+> receiver `review/reviews-CONV-041.md` (0/5). Q1 static equations; **Q2
+> K(R) = 0 and whether the dropped junction condition hides a
+> parameter**; Q3 the rigid-interior sign argument vs the founder's
+> tide; Q4 magnetic matching + convention; Q5 the thin-shell mass vs
+> the corpus's bookkeeping; **Q6 C = 0.375 for every R-core — sound?
+> viable against NS data?**; Q7 detectability; Q8 scope; Q9 V2.1 stands?
+> Binding: UNSOUND on Q2 voids the Love numbers; EXCLUDED-BY-NS-DATA on
+> Q6 obliges a corrigendum. EK-1 sealed (no ties). Next patch (GR):
+> 3629 = adjudication.
 >
 > **3627 — GR-2 V2.1 ENACTED (founder: "proceed"; 13 pp, compile clean):
 > the static tidal signature — k₂ = −0.080 (Λ ≈ −7) at a = 0, −0.087
