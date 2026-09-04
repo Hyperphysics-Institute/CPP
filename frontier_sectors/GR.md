@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3607, 3 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3608, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3607; next free: 3608)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3608; next free: 3609)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -50,6 +50,31 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3608 — P-DIRECTION-VIA-ADDRESSES (founder: reincorporate r, θ, φ
+> through the DI-bits; SSV_net's direction/magnitude embed θ, φ;
+> compare SSV_net to SSV_abs along its direction) — "will this work?"
+> (verify 5/5).** AS STATED, NO: a vector sum is BLIND to a census
+> arriving equally from +x and −x (net = 0, same as isotropic) — and
+> that zero-net "more along one axis than across it" pattern IS a GW at
+> a GP; rank 1 again. **WITH ONE ADDITION, IT CAN: keep the SECOND
+> moment of the same addresses, Q_ij = Σ|E|(n_i n_j − δ_ij/3)** — for the
+> ±x census diag(2/3, −1/3, −1/3): symmetric, traceless (no count),
+> rank 2; PSR_ij = l_P[(1 − kΔ)δ_ij − k₂Q_ij] shrinks most along the
+> axis the excess census came from — the founder's original anisotropic
+> sphere DERIVED from the DI-bits. STATICS cannot object: Schwarzschild
+> needs (kΔ, k₂Δ) = (u/3, u) in areal coordinates, (u, 0) in isotropic
+> — a one-parameter family = the lattice coordinatization; k₂ is fixed
+> by the WAVE. Charter in order: (1) Q_ij relayed by the T-1 shell mean
+> → tensor wave at c_*, spin-2 exists; (2) source = the near-zone tide
+> (~(d/r)² × count = 1/r³) which the relay radiates at 1/r; (3) k₂ from
+> the amplitude (2G/c⁴r)Q̈^TT and luminosity to 0.2% — or failure; (4)
+> the count's own radiation < 0.2%; (5) statics re-check in the
+> coordinatization k₂ picks. **F-15 (a RULING, not a picture): may the
+> GP register keep Q_ij and the payload carry it — AP-4's computed
+> registers rank 0, 1 → 0, 1, 2?** If yes, TENSOR-1 is a T-1-shaped
+> derivation and the lane starts it. Record
+> `rcore_derivation/3608_will_this_work.md`.
 >
 > **3607 — P-ORIGINAL-DIRECTIONAL-PSR (founder): the PSR's θ,φ
 > dependence was his ORIGINAL conception, replaced by the isotropic
