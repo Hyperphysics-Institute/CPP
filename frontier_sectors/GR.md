@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3608, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3609, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3608; next free: 3609)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3609; next free: 3610)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -18,24 +18,26 @@
 > specific for GR... that seems to be the place where the collision
 > happens."
 >
-> **LANE BANNER (Patch 3603): THE GW SECTOR OF CPP, AS RATIFIED (T-1 =
-> scalar channel; A3′ Q_ij tensor channel = op:einstein, OPEN) AND AS
-> THE FOUNDER NOW DESCRIBES IT (R-GW-IS-RECEIVED-SSV-ABS-WAVE: a
-> compression/rarefaction of the received SSV_abs, PSR varying), IS
-> SCALAR. THE DETECTORS SEE TENSOR (3602: a scalar wave gives a Michelson
-> differential suppressed by (kL)²/6 ~ 1e-5, zero overhead, wrong
-> polarization). A theory whose only gravitational radiation is the
-> census wave does not reproduce the GW observations. The theory's own
-> door out: the DP Sea's E/B transverse polarizations (founder 3600) as
-> the tensor channel → CPP is SCALAR–TENSOR, and the scalar admixture
-> ε = h_s/h from a binary is a PREDICTION that must be small (polarization
-> tests; pulsar timing; GR150914-class tests). ε has never been computed.
-> OPEN-GR-TENSOR-1 = op:einstein / A3′ Q_ij is the lane's #1 item —
-> charter-level. THE R-CORE REFINEMENTS ARE PAUSED (their exterior
-> equation is GR's tensor equation, legitimate only under scalar–tensor;
-> the scalar channel at the surface has never been asked). F-10 to the
-> founder: does a passing GW do TWO things to the Sea (compress the
-> count AND polarize it transversely) or one?**
+> **LANE BANNER (Patch 3609, superseding 3603): THE TENSOR SECTOR WAS
+> ALREADY IN THE THEORY — axiom A3′ (founder-ratified 12 June 2026,
+> Patch 1129, SR lane `op_einstein_closure/spin2_construction/`): the
+> broadcast carries (Φ, V_i, Q_ij) = the COMPLETE irreps A ⊕ T₁ ⊕ H
+> (1+3+5) with a completion theorem (no fourth rung); □Q_ij =
+> −(16πG/c⁴)T_ij^TF; the Einstein quadrupole formula DERIVED with zero
+> new parameters; luminosity inherited (Hulse–Taylor); the CANCELLATION
+> THEOREM: breathing/longitudinal/vector responses vanish (Eardley N₂ —
+> pure tensor); falsifier F1 armed both ways. **TENSOR-1 and SCALAR-
+> RADIATION-1 CLOSED by reference. The 3603 pause is LIFTED: the arc's
+> exterior tensor equations are CPP's own.** The week's picture-driven
+> derivation (3602–3608) converged on the same object — triangulation
+> across two lanes and three months — and the worker's failure to check
+> the registry before declaring the sector absent is OWNED (3609 §3).
+> **R-RANK-2-REAFFIRMED (founder, 4 Sep, on his own criteria).** Under
+> A3′ the R-core register is (Φ, V_i, Q_ij) with the cap on Φ only: the
+> even mode's traceless part is Q_ij content and relays into the core —
+> **JUNCTION-1 REINSTATED with its coefficient FIXED by A3′'s metric map;
+> the next R-core computation.** Governance owed: AP-4 {address, E, S}
+> ↔ A3′ (Φ, V_i, Q_ij) harmonisation note.**
 >
 > **R-CORE ARC BANNER (amended Patch 3395, CONV-040): the floor l_P/2
 > is reached at lapse ½ under the founder-ratified log PSR law (second
@@ -50,6 +52,19 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3609 — R-RANK-2-REAFFIRMED; A3′ WAS ALREADY THERE.** Founder: approve
+> the rank-2 register if thrifty, elegant, important, minimalist, multi-
+> use. Answer: yes on all four, by A3′'s completion theorem — rank 2 is
+> the LAST rung of the census's moment expansion, not a single-use fix;
+> ratified by the founder in June; re-ratified today on his own
+> criteria. TENSOR-1 CLOSED (A3′/SR-2); SCALAR-RADIATION-1 CLOSED (the
+> cancellation theorem, 1125); pause lifted; the worker's registry
+> failure owned (corollary to 3389's lesson: look in the registry before
+> declaring a blank). JUNCTION-1 reinstated, coefficient fixed. Record
+> `rcore_derivation/3609_A3prime_already_there.md`. Next patch (GR):
+> the even-sector junction under A3′ (Q_ij continuity into the core with
+> the Task-4 metric map), then the a = 0 line set with both channels.
 >
 > **3608 — P-DIRECTION-VIA-ADDRESSES (founder: reincorporate r, θ, φ
 > through the DI-bits; SSV_net's direction/magnitude embed θ, φ;
