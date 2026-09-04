@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3624, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3625, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3624; next free: 3625)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3625; next free: 3626)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,23 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3625 — THE SIGN IS THE THEORY'S; THE MAGNETIC LOVE NUMBER (verify
+> 6/6).** (A) Under A3′ the interior's static traceless solutions are
+> a uniform strain (linearized Riemann = 0: PURE GAUGE = the moving
+> level-set surface already used) and a quadratic solution that
+> carries curvature and needs interior stress a capped core lacks →
+> the static A3′ interior is rigid; **k₂ = −0.080 (Λ ≈ −7) stands,
+> sign included** (the bulge is where the register is fed; its field
+> opposes the tide — thin-shell-ECO-like). (B) The static axial ℓ = 2
+> equation derived from δR_tφ (standard form recovered); surface: V_i
+> continuous into the flat core (h₀ ∝ r³ inside; g_tt continuous at
+> the level set) → R h₀′/h₀ = 3; BH-subtracted asymptotic tail:
+> **k₂^B ≈ +0.030** (normalization flagged). **The R-core's static
+> signature is complete at a = 0: k₂ = −0.080, k₂^B ≈ +0.03; a horizon
+> has 0, 0; ET/CE reach; zero parameters.** Owed: spin dependence; the
+> axial convention (derivable from the asymptotic metric); the 5PN
+> phasing coefficient. Record `rcore_derivation/3625_interior_tide_and_magnetic_love.md`.
 >
 > **3624 — THE TIDAL LOVE NUMBER (verify 9/9).** Static ℓ = 2 equations
 > DERIVED from the linearized Ricci at ω = 0 (Hinderer's vacuum ODE
