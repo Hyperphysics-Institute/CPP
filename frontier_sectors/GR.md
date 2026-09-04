@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3622, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3623, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3622; next free: 3623)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3623; next free: 3624)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,24 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3623 — R-CORE-STORES-AS-CP-VIBRATION (founder: absorbed wave energy
+> is stored as a dynamic organizational pattern of CP vibration,
+> repositioned each Moment, transmitted through the core at c/2;
+> information not lost) = MODE CONVERSION WITH COHERENT STORAGE.** The
+> ringdown (3621) requires no tensor re-coupling within a crossing;
+> the INFRARED requires no thermal emission: a thermalised surface at
+> z = 1 re-radiating Sgr A*'s ~1e36 erg/s would be a ~2400 K blackbody
+> at ~2.5e35 erg/s, 10–100× the observed quiescent NIR (recollection) —
+> EXCLUDED (Broderick–Narayan). So the founder's picture is required in
+> its strong form: coherent, non-thermal storage (vibration, not heat;
+> Kirchhoff binds thermal states only). **Zero-parameter prediction:
+> the R-core surface is DARK — no thermal emission at any accretion
+> rate; any detected thermal surface emission falsifies CPP's black
+> hole.** CORE-DISSIPATION-1 → **OPEN-GR-CORE-CONVERSION-1** (mechanism
+> and rate; closure of the return channel; mass gained = E/c²?).
+> Record `rcore_derivation/3623_absorbed_energy_and_the_dark_surface.md`.
+> Next patch (GR): the tidal Love number.
 >
 > **3622 — GR-2 V2.0 ENACTED (founder: "accept recommendation"; 13 pp,
 > compile clean): the V2.0 block (the map; the ringdown-fixed real
