@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3623, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3624, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3623; next free: 3624)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3624; next free: 3625)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,21 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3624 — THE TIDAL LOVE NUMBER (verify 9/9).** Static ℓ = 2 equations
+> DERIVED from the linearized Ricci at ω = 0 (Hinderer's vacuum ODE
+> recovered; K algebraic from (θ,θ)). Surface condition from the
+> corpus's static picture: rigid interior at cap + level-set surface ⇒
+> **K(R) = 0**. Result: **k₂ = −0.080, Λ ≈ −7** at C = 0.375 (Dirichlet
+> −0.018, Neumann +0.014, black hole 0; the level-set value is outside
+> the D/N pair). |Λ| ~ 7: below present LVK BBH bounds (O(1e2–1e3)),
+> within ET/CE reach (O(1–10)) — **the R-core's first zero-parameter
+> static departure from GR.** GR bookkeeping recorded: the R-core is a
+> thin shell (rest mass 4M/3, binding −M/3). SCOPE: register-only
+> surface; the A3′ Q_ij-responsive interior (a G-type perturbation;
+> RW-gauge exterior must be transformed) is OWED before the SIGN is
+> claimed; the magnitude is robust. Also owed: the magnetic Love
+> number; spin. Record `rcore_derivation/3624_tidal_love_number.md`.
 >
 > **3623 — R-CORE-STORES-AS-CP-VIBRATION (founder: absorbed wave energy
 > is stored as a dynamic organizational pattern of CP vibration,
