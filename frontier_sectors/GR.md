@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3604, 3 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3605, 3 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3604; next free: 3605)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3605; next free: 3606)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -50,6 +50,31 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3605 — P-GW-SUPERPOSED-GRADIENTS (founder: the GW is the time-varying
+> superposition of two orbiting bodies' inverse-square SSV_abs gradients,
+> at 2Ω, energy from the orbit) — ADOPTED AS THE SOURCE MECHANISM, NOT
+> THE PROPAGATION (verify 5/5, symbolic).** Right: 2Ω (half-orbit period
+> of the quadrupole); the near-zone tidal tensor E_ij = ∂_i∂_j u of the
+> superposed fields IS a rotating stretch/squeeze of the Sea = the
+> near-zone limit of GR's wave; the energy is the orbit's (Hulse–Taylor).
+> **Cannot by itself reach a detector: for a propagating scalar wave
+> u = f(t − r/c)/r, ∂_i∂_j u = n_i n_j f″/(c²r) + O(1/r²) — purely
+> LONGITUDINAL at 1/r; the transverse projection has no 1/r term
+> (proven); the tide dies as 1/r³.** GR's h^TT keeps the pattern at 1/r.
+> Same object in the near zone, different objects in the wave zone; the
+> difference is the RANK of what propagates. Completion in the founder's
+> terms: the near-zone Sea deformation propagates as a transverse
+> polarization (as a dipole's near field becomes light), crossover at
+> λ/2π; DI-bits carry the deformation, the count carries only the
+> breathing part (< 5%, 3604). **OPEN-GR-TENSOR-1 charter written: the
+> relay law for a quadrupolar transverse Sea deformation (spin-2 T-1)
+> with (i) speed c, (ii) near-zone limit = the tide, (iii) 1/r amplitude
+> (2G/c⁴r)Q̈^TT, (iv) luminosity (G/5c⁵)⟨Q⃛Q⃛⟩ to 0.2%.** F-12: when DI-bits
+> from a deformed region arrive one PSR out carrying a quadrupolar vector
+> pattern, does the receiving DP take on the deformation (relay → the GW
+> exists) or only the count (dies at 1/r³)? Record
+> `rcore_derivation/3605_source_mechanism_and_the_wave_zone.md`.
 >
 > **3604 — HOW THE GW IS MADE (verify 5/5, order of magnitude).**
 > Founder: "I had never considered that the GW was anything other than
