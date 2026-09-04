@@ -302,3 +302,11 @@ number changed. Compile gate: pdflatex ×2, 0 errors, 0 undefined,
 **Edit (text only; no number in the V1.6 set changed; no template moved).** A V1.9 block after the V1.8 block, in the adjudication's §2 wording: three a = 0 lines as poles of the kinematic wall model; Q as model quantities; Kerr "lands within 1% (indicative)"; structure undetermined; V1.6 retained as reference. `\date` → V1.9. Compile gate: pdflatex ×2.
 
 **Open items carried:** OPEN-GR-KERRWALL-1 (charter now the CONV-040 decider: preregistered gauge-controlled reconstruction, no target-directed root selection, several spins, slow-rotation cross-check); OPEN-GR-SURFACE-DYNAMICS-1; OPEN-GR-EXCITATION-1; OPEN-GR-CROSSING-1.
+
+## V2.0 — 4 September 2026, Patch 3622 (Session 161) — the line set as a map (Patches 3612–3621; founder: "accept recommendation")
+
+**Trigger.** The gauge dependence of the register content at the wall (3611) made the RW-gauge wall laws one gauge's model; the wall was re-expressed as the gauge-free impedance β(ω) (3613); the ringdown fixed the exterior dynamics (3612) and the wall's real impedance (3615–3616), which turned out to be the horizon's own (3619); the echo searches were shown not to test a 0.7 ms cavity (3615–3616); the bracket from lossless to horizon was computed (3620); the lossless-core model was excluded by the ringdown, forcing interior dissipation (3621).
+
+**Edit (text only; earlier blocks preserved).** A V2.0 block after the V1.9 block with the map's content; `\date` → V2.0; header changelog. Compile gate: pdflatex ×2.
+
+**Open items carried:** OPEN-GR-CORE-DISSIPATION-1 (the interior's absorption of tensor content; the fate of the absorbed energy); OPEN-GR-EXCITATION-1 (retrograde excitation, reduced stake); OPEN-GR-LATTICE-FRAME-1 (target Re β ≈ −0.03/M); OPEN-GR-KERRWALL-1 (ansatz A: the Kerr surface radius); the exact pSEOB box.

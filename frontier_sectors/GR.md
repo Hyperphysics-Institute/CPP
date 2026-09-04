@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3621, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3622, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3621; next free: 3622)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3622; next free: 3623)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -38,21 +38,39 @@
 > **JUNCTION-1 REINSTATED with its coefficient FIXED by A3′'s metric map;
 > the next R-core computation.** Governance: AP-4 ↔ A3′ harmonisation note ENACTED (3610).**
 >
-> **R-CORE ARC BANNER (amended Patch 3611): THE WALL LAWS OF 3378–3391 AND
-> THE a = 0 LINE SET (195/292/208; indicative Kerr 193/291) ARE RW-GAUGE
-> REGISTER-MODEL RESULTS, NOT LATTICE-FRAME PHYSICS.** The gauge map
-> (derived, solved: box ξ = −D, ξ = 0 at the wall, outgoing) shows the
-> same mode's register content at the wall differs at O(1) between RW
-> and the lattice-frame (harmonic-pattern, A3′ C5) gauge — the trace
-> part flips sign and triples. And C5 maps the count Φ to h̄₀₀ (the
-> lapse), not the spatial trace (a conservation completion; the
-> conformal-factor dictionary is the static τ = 0 case). Gauge-invariant
-> results stand (parity theorem, shift reconstruction, pole machinery,
-> the surface at 8M/3, the odd-sector transmit picture). **The even wall
-> under C5 — level set on h̄₀₀, Q_ij continuity, τ completion, interior
-> tensor wave, C5 energy ledger — is the next computation; F-16 (the
-> residual at the wall) to the founder. GR-2 owes a V1.10 caveat
-> (ledger A1). CONV-039/040's T-2 caveats were right.**
+> **R-CORE ARC BANNER (Patch 3622, GR-2 V2.0 ENACTED): THE LINE SET IS A
+> MAP.** Exterior = Einstein's by the ringdown frequency; surface 8M/3 =
+> 1.33 r_S (R-PSR-LAW-LOG, founder's clock, Mercury); the wall's real
+> impedance = the horizon's own (β_Kerr = −0.032 + 0.039i), fixed by
+> GW150914's ringdown; hard walls (V1.6's X = 0) and soft walls
+> EXCLUDED; echo searches (windows after the ringdown) do not test a
+> 0.7 ms cavity; the spectrum is Kerr's with lifetimes between Kerr's
+> and 2–3× (retrograde) / 18% shorter (prograde); the ringdown requires
+> the core to DISSIPATE what it admits → near the black-hole end. **The
+> R-core rings like a Kerr black hole to present precision; its
+> observable difference lies in what it is made of: tidal Love number
+> (k₂ ≠ 0; FIRST COMPUTATION), fixed compactness 0.375 for every mass,
+> the fate of absorbed energy (EHT surface-luminosity limits: founder's
+> picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
+> LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3622 — GR-2 V2.0 ENACTED (founder: "accept recommendation"; 13 pp,
+> compile clean): the V2.0 block (the map; the ringdown-fixed real
+> impedance = the horizon's; hard/soft walls excluded; echo searches
+> inapplicable; the Kerr-frequency spectrum with the lifetime bracket;
+> the core must dissipate; falsifiers; signature); PRED-O-39 rewritten;
+> ledger A1 → 2.0; changelog; Step E. "WHAT NOW" ANSWERED: the
+> distinction of an absorbing, non-singular R-core from a GR black hole
+> is bounded in the ringdown and found elsewhere — ranked: (1) tidal
+> Love number k₂ (GR: 0; R-core: finite; static, gauge-invariant,
+> computable now; ET/CE/LISA reach) — FIRST; (2) tidal heating at
+> fraction s; (3) retrograde lifetimes (bound); (4) no thermal surface
+> emission — EHT limits, hinging on the fate of absorbed energy
+> (founder's picture asked); (5) shadow = GR's (photon sphere outside
+> the surface) — a pass; (6) compactness 0.375 for EVERY R-core — a
+> zero-parameter mass–radius prediction; (7) the merger itself. Record
+> `rcore_derivation/3622_what_now_distinguishing_observables.md`.
+> Next patch (GR): the R-core's tidal Love number.
 >
 > **3621 — THE POINT vs THE BRACKET (founder: "compute the point"; verify
 > 4/4).** The theory's wall as modelled (count reflects at the level
