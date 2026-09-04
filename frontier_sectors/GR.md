@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3625, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3626, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3625; next free: 3626)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3626; next free: 3627)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,21 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3626 — THE THREE OWED ITEMS (verify 3/3).** Axial convention:
+> structural k = (b/a)/(2R⁵) for both sectors; the electric structural
+> value agrees with Hinderer's closed form to 13% → **k₂^B = 0.026–0.030**
+> with that stated uncertainty. Spin (ansatz A surface 2.734 M):
+> **k₂ = −0.087, Λ ≈ −9** (+9%; Kerr O(χ²) couplings flagged). 5PN
+> phasing (Flanagan–Hinderer, equal masses): **+0.13 rad by v = 0.4**
+> (~67 Hz at 62 M_⊙) — below LVK at SNR ~25, within ET/CE at SNR of
+> several hundred. **The R-core's static signature: k₂ = −0.080 (−0.087
+> at χ = 0.68), Λ ≈ −7 to −9, k₂^B ≈ +0.03; black hole 0, 0, 0; zero
+> parameters.** ECONOMY: WIN CANDIDATE (trigger 1) — a win-check round
+> (Q1 static derivation; Q2 the K(R) = 0 condition and its thin-shell
+> reading; Q3 the rigid-interior sign argument; Q4 the axial convention;
+> Q5 detectability) recommended, NOT dispatched; the founder's call.
+> Record `rcore_derivation/3626_love_owed_items.md`.
 >
 > **3625 — THE SIGN IS THE THEORY'S; THE MAGNETIC LOVE NUMBER (verify
 > 6/6).** (A) Under A3′ the interior's static traceless solutions are
