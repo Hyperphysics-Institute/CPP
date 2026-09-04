@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3617, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3618, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3617; next free: 3618)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3618; next free: 3619)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,21 @@
 > tensor wave, C5 energy ledger — is the next computation; F-16 (the
 > residual at the wall) to the founder. GR-2 owes a V1.10 caveat
 > (ledger A1). CONV-039/040's T-2 caveats were right.**
+>
+> **3618 — THE CALIBRATED PREDICTIONS (verify 5/5).** β = −0.025 ± 0.005
+> (GW150914's ringdown, 3616), surface 8M/3 / 2.734 M, exterior GR's:
+> **χ = 0.68: (2,−2) 159 Hz (Q 3.6), (3,−3) 255 Hz (Q 7.1); prograde
+> (2,+2) 265 Hz, Q 2.5 — inside the box (δf −3.8%, δτ −18.5%)**; a = 0:
+> ℓ = 2 200/201 Hz (even/odd), ℓ = 3 319/319 Hz. Band width ±1 Hz;
+> systematics = the Kerr surface radius (ansatz A) and constant β
+> across the band (what an echo would supply). vs V1.6's 191/288 (hard
+> wall, excluded): −17%/−11%. **(3,−3) at 255 Hz sits at the observed
+> ringdown frequency — EXCITATION-1 has a stake.** THE RESIDUAL THE
+> CALIBRATION PREDICTS: **τ₂₂₀ ~18% shorter than Kerr's** — a falsifier
+> with the next loud events (τ at Kerr ±10% kills the 1.33 r_S surface
+> with constant impedance). V2.0 paragraph drafted in the record; the
+> paper on the founder's word. Record
+> `rcore_derivation/3618_calibrated_predictions.md`.
 >
 > **3617 — GWTC-1 IMR CONSISTENCY TEST (founder's paste) — an
 > INDEPENDENT confirmation that the post-inspiral is Kerr-like:
