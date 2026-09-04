@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3620, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3621, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3620; next free: 3621)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3621; next free: 3622)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,26 @@
 > tensor wave, C5 energy ledger — is the next computation; F-16 (the
 > residual at the wall) to the founder. GR-2 owes a V1.10 caveat
 > (ledger A1). CONV-039/040's T-2 caveats were right.**
+>
+> **3621 — THE POINT vs THE BRACKET (founder: "compute the point"; verify
+> 4/4).** The theory's wall as modelled (count reflects at the level
+> set — energetically inert under C5's lemma; ALL energy in Q_ij,
+> continuous into a flat LOSSLESS core at J = 6.75, μ = 1.58 M for the
+> Kerr surface): the core's first standing-wave resonance sits at
+> **Mω = 0.542 — at the Kerr ringdown frequency (0.528)**; the impedance
+> swings −0.1 → −2.2 → +6.3 across the band; the prograde (2,+2) SPLITS
+> (222 Hz Q 45; 359 Hz) — **a lossless core is EXCLUDED by the
+> ringdown.** Forced: the core must DISSIPATE the transmitted Q_ij
+> energy within ~one crossing → the surface is a near-perfect absorber
+> at the horizon's real impedance → **the theory's point lies near the
+> horizon end (s → 1) of the 3620 bracket; an R-core rings like a Kerr
+> black hole to present precision; the retrograde-lifetime signature
+> survives as an upper bound.** The corpus cannot derive the core's
+> dissipation (Q_ij dynamics in a saturated medium; where the energy
+> goes): **OPEN-GR-CORE-DISSIPATION-1** replaces JUNCTION-1 as the item
+> that fixes the point. V2.0 carries the bracket + one sentence: "the
+> observed ringdown requires the core to absorb what the surface
+> admits." Record `rcore_derivation/3621_point_vs_bracket.md`.
 >
 > **3620 — THE BRACKET (verify 4/4): along the path lossless-calibrated →
 > horizon (χ = 0.68, 2.734 M, 62 M_⊙): (2,−2) 159 Hz Q 3.6 → 161/2.2 →
