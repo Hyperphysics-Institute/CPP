@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3606, 3 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3607, 3 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3606; next free: 3607)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3607; next free: 3608)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -50,6 +50,26 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3607 — P-ORIGINAL-DIRECTIONAL-PSR (founder): the PSR's θ,φ
+> dependence was his ORIGINAL conception, replaced by the isotropic
+> single-radius PSR in the AI rewrite (Sonnet → Opus); GR-1 and the
+> companions were built on the simplification. → 3606's PSR_ij is a
+> RESTORATION, not a new rule; the original formulation is NOT in the
+> retained corpus (Grok-era notes: isotropic law + vector cross term
+> only) — F-14 asks the founder to restate it.** Why the simplification
+> was harmless: for a static mass a radially-anisotropic PSR vs an
+> isotropic one is Schwarzschild vs isotropic COORDINATES — same
+> geometry; statics cannot distinguish; they part only when the
+> anisotropy has dynamics = the GW. **The founder's second-order hope
+> (retarded superposition of two moving scalar sources → tensor effect)
+> COMPUTED (verify 5/5): TT/longitudinal Hessian ratio 1.0e-4, 1.9e-5,
+> 2.4e-6 at 10/30/100 λ, tracking (λ/2πr)² — 1e-34 at a detector;
+> frequency 2Ω (founder right); nonlinearity 1e-42; complexity does not
+> change rank. Second discriminator: the scalar radiates NOTHING face-on
+> (∝ sin²θ), where GR's +/× are maximal (edge/face > 30).** TENSOR-1's
+> charter gains (ii) statics = Schwarzschild in some lattice
+> coordinatization. Record `rcore_derivation/3607_original_psr_and_the_rank_theorem.md`.
 >
 > **3606 — R-REGISTER-RELAYS-NOT-DI-BITS (founder: DI-bits are transient
 > one-hop messengers; the GP register relays; the medium sets the
