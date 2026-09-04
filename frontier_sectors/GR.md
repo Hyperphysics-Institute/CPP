@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3610, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3611, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3610; next free: 3611)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3611; next free: 3612)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -38,19 +38,39 @@
 > **JUNCTION-1 REINSTATED with its coefficient FIXED by A3′'s metric map;
 > the next R-core computation.** Governance: AP-4 ↔ A3′ harmonisation note ENACTED (3610).**
 >
-> **R-CORE ARC BANNER (amended Patch 3395, CONV-040): the floor l_P/2
-> is reached at lapse ½ under the founder-ratified log PSR law (second
-> order calibrated by Mercury, higher orders open) — surface at areal
-> 8M/3 = 1.33 r_S, inside the CONV-038 window; the even wall is the
-> kinematic free-surface law (4 − 3v/2)H₂ + 2K = 0; the axial sector
-> transmits. a = 0 model poles 195 / 292 (even), 208 Hz (axial). Kerr:
-> indicative only (193 / 291, within 1% of V1.6), structure UNDETERMINED
-> — controlled reconstruction OPEN-GR-KERRWALL-1 with the CONV-040
-> decider as charter. Surface dynamics, excitation, the crossing
-> regularity: OPEN.**
-> Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
-> relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
-> PRED-O-39 — inherits this banner until it clears.
+> **R-CORE ARC BANNER (amended Patch 3611): THE WALL LAWS OF 3378–3391 AND
+> THE a = 0 LINE SET (195/292/208; indicative Kerr 193/291) ARE RW-GAUGE
+> REGISTER-MODEL RESULTS, NOT LATTICE-FRAME PHYSICS.** The gauge map
+> (derived, solved: box ξ = −D, ξ = 0 at the wall, outgoing) shows the
+> same mode's register content at the wall differs at O(1) between RW
+> and the lattice-frame (harmonic-pattern, A3′ C5) gauge — the trace
+> part flips sign and triples. And C5 maps the count Φ to h̄₀₀ (the
+> lapse), not the spatial trace (a conservation completion; the
+> conformal-factor dictionary is the static τ = 0 case). Gauge-invariant
+> results stand (parity theorem, shift reconstruction, pole machinery,
+> the surface at 8M/3, the odd-sector transmit picture). **The even wall
+> under C5 — level set on h̄₀₀, Q_ij continuity, τ completion, interior
+> tensor wave, C5 energy ledger — is the next computation; F-16 (the
+> residual at the wall) to the founder. GR-2 owes a V1.10 caveat
+> (ledger A1). CONV-039/040's T-2 caveats were right.**
+>
+> **3611 — THE GAUGE MAP, DERIVED AND SOLVED (verify 5/5) — AND IT TAKES
+> THE WALL OUT FROM UNDER THE RW-GAUGE NUMBERS.** D_μ = ∇^ν h̄_μν of the
+> RW mode and (□ξ)_μ on Schwarzschild derived (3398 method; θ-independent
+> after the harmonic identity); BVP □ξ = −D with ξ(wall) = 0 (lattice
+> frame + universal time) and outgoing at 60 M converged at the
+> free-surface pole. At the wall: trace part RW 1.30 + 0.10i → harmonic
+> −4.23 − 3.16i; anisotropy −1.63 → −7.16; an r–A component c′ = −5.65
+> appears. **RW gauge is not the lattice frame** (CONV-039/040 T-2 were
+> right). **And A3′ C5: Φ ↔ h̄₀₀ (the lapse), the spatial trace is a
+> completion — the two-dictionary level set of 3391 collapses to one
+> condition on h̄₀₀ in the harmonic frame.** Superseded as lattice-frame
+> physics: 3378/3391 wall laws, the 3383/3390/3391 poles, V1.9's a = 0
+> set, the indicative Kerr numbers. Standing: gauge-invariant results.
+> GR-2 owes a V1.10 caveat (ledger). **F-16: does "GPs do not move" fix
+> the residual (ξ = 0 at the wall) or is the lattice frame the retarded
+> harmonic solution with no wall-added pattern?** Record
+> `rcore_derivation/3611_gauge_map_and_C5.md`. Next: the wall under C5.
 >
 > **3610 — GOVERNANCE ENACTED: the AP-4 ↔ A3′ harmonisation note in
 > `axiom-registry.md` (one packet {address; Φ, V_i as (E, S), Q_ij};
