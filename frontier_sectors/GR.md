@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3612, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3613, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3612; next free: 3613)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3613; next free: 3614)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,24 @@
 > tensor wave, C5 energy ledger — is the next computation; F-16 (the
 > residual at the wall) to the founder. GR-2 owes a V1.10 caveat
 > (ledger A1). CONV-039/040's T-2 caveats were right.**
+>
+> **3613 — THE FAMILY, GAUGE-FREE (verify 5/5): the echo line as a
+> function of the wall IMPEDANCE β(ω) = (dZ/dr*)/Z at r_w = 8M/3 —
+> every gauge/dictionary/residual choice is a point on this map, so β(ω)
+> replaces ρ_w as the calibration object.** ℓ = 2, a = 0, 62 M_⊙:
+> Dirichlet 201/239 Hz (Q 0.9/1.2); β = +0.5: 224/228; +0.2: 220/222;
+> **Neumann 204/205 (Q 3.3/3.7)**; −0.1: 187/188; −0.2: 161/162 (Q 9/11);
+> −0.3: **117/116 (Q 31/43, trapped)**. Q rises MONOTONICALLY as β
+> decreases (softer → lower, sharper). **Envelope: even 117–224 Hz, odd
+> 116–239 — tens of percent up to ×2, not orders of magnitude**; the two
+> sectors track row for row. The week's laws are points (free-surface
+> near −0.1 but far sharper via its positive boundary mass; the odd
+> transmit law near +0.2…+0.5). Empirics: the echo null results bite
+> hardest at the trapped high-Q low corner if |R| ≈ 1 there. Next:
+> |R(ω)| across the map → the excluded region; the C5-frame point;
+> the same map at χ = 0.68 (3392 machinery takes any β) — the Kerr
+> numbers as a family, not an ansatz; GR-2 V2.0 = the map. Record
+> `rcore_derivation/3613_pole_family_over_impedance.md`.
 >
 > **3612 — S-EMPIRICS-ARBITER (founder: choose what the empirics support;
 > calibrate only if unavoidable) APPLIED (verify 3/3).** THE EXTERIOR IS
