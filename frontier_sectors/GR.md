@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3615, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3616, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3615; next free: 3616)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3616; next free: 3617)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,25 @@
 > tensor wave, C5 energy ledger — is the next computation; F-16 (the
 > residual at the wall) to the founder. GR-2 owes a V1.10 caveat
 > (ledger A1). CONV-039/040's T-2 caveats were right.**
+>
+> **3616 — GWTC-3 IN HAND (founder's paste; verify 4/4).** The echo
+> search (BayesWave, morphology-independent, Δt ∈ [0, 0.7] s) analyses
+> data from **t_event + 3τ₂₂₀** — explicitly after the ringdown — so the
+> CPP 0.7 ms cavity is outside it BY CONSTRUCTION (the paper's own
+> words). **Table XIII, GW150914: f₂₂₀ = 254.6 +16.1/−12.2 Hz
+> ([−4.8%, +6.3%]), τ₂₂₀ = 4.51 +1.10/−0.99 ms ([−22%, +24%]).** Against
+> the 3615 wall poles: Neumann δf −2%, δτ −27% (marginal); **β = −0.02:
+> −3.5%/−20% INSIDE; −0.03: −4.2%/−16.5% INSIDE**; −0.04: f just out;
+> −0.05 and beyond, +0.05 and beyond, and the shipped hard wall (~+45%)
+> OUT. **The wall impedance is pinned by GW150914's ringdown to a sliver
+> just softer than Neumann, β ≈ −0.02 … −0.03 (1/M) at the ringdown
+> frequency** — edges provisional (Kerr reference at a ≈ 0.7; the pSEOB
+> δf̂/δτ̂ box requested), conclusion firm. S-EMPIRICS-ARBITER fulfilled
+> without an echo; OPEN-GR-LATTICE-FRAME-1 now has a numerical TARGET
+> and a FALSIFIER (β outside [−0.05, +0.05] ⇒ the 1.33 r_S surface is
+> ruled out by existing data); the 3383 "Neumann crossing at the
+> barrier top" is the requirement. GR-2 V2.0 in shape. Record
+> `rcore_derivation/3616_ringdown_band_gwtc3.md`.
 >
 > **3615 — THE RINGDOWN CONSTRAINS THE WALL (verify 4/4). GWTC-2 TGR
 > §VII.B (founder's paste): template-based echo search, five echo
