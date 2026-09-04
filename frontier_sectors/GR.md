@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3619, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3620, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3619; next free: 3620)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3620; next free: 3621)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,20 @@
 > tensor wave, C5 energy ledger — is the next computation; F-16 (the
 > residual at the wall) to the founder. GR-2 owes a V1.10 caveat
 > (ledger A1). CONV-039/040's T-2 caveats were right.**
+>
+> **3620 — THE BRACKET (verify 4/4): along the path lossless-calibrated →
+> horizon (χ = 0.68, 2.734 M, 62 M_⊙): (2,−2) 159 Hz Q 3.6 → 161/2.2 →
+> 162/1.8; (3,−3) 255/7.1 → 257/3.5 → 259/2.7; (2,+2) 265/2.5 → 272/3.0
+> → 273/3.2 (= Kerr). FREQUENCIES move 2%; LIFETIMES by ×2–3. **The
+> R-core has the black hole's lines, longer-lived (retrograde) or
+> slightly shorter-lived (prograde), by a factor set by its absorption
+> — the "echo" is an excess in the ringdown's lifetime, not a separate
+> line or pulse train.** Signature no horizon can produce: retrograde
+> (2,−2)/(3,−3) up to 2–3× longer-lived; falsifier: τ₂₂₀ longer than
+> Kerr's. EXCITATION-1 (are the retrograde modes excited?) and
+> JUNCTION-1 (the absorption fraction) are now THE two items. V2.0
+> paragraph in final form in the record. Record
+> `rcore_derivation/3620_bracket_lines.md`.
 >
 > **3619 — IS THE 18% ROBUST? NO — AND THE REASON IS BETTER THAN THE
 > NUMBER (verify 5/5).** The Kerr limit done properly: the horizon as a
