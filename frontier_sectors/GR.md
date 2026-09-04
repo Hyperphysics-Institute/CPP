@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3618, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3619, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3618; next free: 3619)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3619; next free: 3620)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,26 @@
 > tensor wave, C5 energy ledger — is the next computation; F-16 (the
 > residual at the wall) to the founder. GR-2 owes a V1.10 caveat
 > (ledger A1). CONV-039/040's T-2 caveats were right.**
+>
+> **3619 — IS THE 18% ROBUST? NO — AND THE REASON IS BETTER THAN THE
+> NUMBER (verify 5/5).** The Kerr limit done properly: the horizon as a
+> wall law (ingoing-at-horizon solution's log-derivative at 2.734 M)
+> reproduces the Kerr (2,2) QNM to −0.7%/+1.3% — machinery VALIDATED
+> against GR ("ingoing at the wall" was wrong by 21%/65%; corrected).
+> **β_Kerr(ω_QNM) = −0.032 + 0.039i: its REAL part is the ringdown-
+> calibrated impedance (−0.025 ± 0.005) — the calibration recovered the
+> horizon's real impedance unprompted; its IMAGINARY part is absorption,
+> which the lossless family lacks.** Path from the lossless calibrated
+> wall to the horizon: δτ −18.5% → −11% → −5% → −1.3% → +1.3% (s = 0 …
+> 1), all inside GW150914's box. **The 18% is the lossless extreme; the
+> robust prediction: τ₂₂₀ shorter than Kerr's by 0–18%, set by the
+> surface's absorption (Q_ij transmission into the core, JUNCTION-1)
+> relative to a horizon; a fully absorbing surface is INDISTINGUISHABLE
+> from a black hole in the ringdown; the theory's wall (A3′) is lossy
+> and sits on the path.** Falsifiers: τ LONGER than Kerr's, or Re β away
+> from −0.03. 3618 §4 restated; V2.0 carries the bracket (lossless and
+> horizon-equivalent ends of the line set — next). Record
+> `rcore_derivation/3619_is_the_18_percent_robust.md`.
 >
 > **3618 — THE CALIBRATED PREDICTIONS (verify 5/5).** β = −0.025 ± 0.005
 > (GW150914's ringdown, 3616), surface 8M/3 / 2.734 M, exterior GR's:
