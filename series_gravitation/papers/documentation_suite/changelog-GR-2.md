@@ -310,3 +310,11 @@ number changed. Compile gate: pdflatex ×2, 0 errors, 0 undefined,
 **Edit (text only; earlier blocks preserved).** A V2.0 block after the V1.9 block with the map's content; `\date` → V2.0; header changelog. Compile gate: pdflatex ×2.
 
 **Open items carried:** OPEN-GR-CORE-DISSIPATION-1 (the interior's absorption of tensor content; the fate of the absorbed energy); OPEN-GR-EXCITATION-1 (retrograde excitation, reduced stake); OPEN-GR-LATTICE-FRAME-1 (target Re β ≈ −0.03/M); OPEN-GR-KERRWALL-1 (ansatz A: the Kerr surface radius); the exact pSEOB box.
+
+## V2.1 — 4 September 2026, Patch 3627 (Session 161) — beyond the ringdown: the R-core's static tidal signature (Patches 3624–3626)
+
+**Trigger.** With the ringdown shown to *bound* rather than *find* the distinction between the R-core and a black hole (V2.0), the static tidal response was computed: the static even-parity equations derived from the linearized field equations; the surface condition `K(R) = 0` from the corpus's static picture (rigid interior at cap, level-set surface); the interior shown to add no static degree of freedom under A3′ (a uniform strain is pure gauge; curved solutions need stress a capped core lacks); the axial sector with the odd channel continuous into the core.
+
+**Edit (text only; earlier blocks preserved).** A V2.1 block after V2.0: `k₂ = −0.080` (Λ ≈ −7) at a = 0, −0.087 (Λ ≈ −9) at the χ = 0.68 surface radius with the O(χ²) Kerr couplings flagged; `k₂^B ≈ +0.03` (±13%); the 5PN phase (0.13 rad by v = 0.4; ET/CE reach); the thin-shell reading. `\date` → V2.1. Compile gate: pdflatex ×2.
+
+**Open items carried:** the O(χ²) Kerr couplings on the Love numbers (OPEN-GR-LOVE-SPIN-1); the axial convention against a literature normalization; OPEN-GR-CORE-CONVERSION-1; OPEN-GR-EXCITATION-1; OPEN-GR-LATTICE-FRAME-1; OPEN-GR-KERRWALL-1. A win-check round on the tidal signature is recommended (3626), not dispatched.

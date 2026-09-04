@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3626, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3627, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3626; next free: 3627)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3627; next free: 3628)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,19 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3627 — GR-2 V2.1 ENACTED (founder: "proceed"; 13 pp, compile clean):
+> the static tidal signature — k₂ = −0.080 (Λ ≈ −7) at a = 0, −0.087
+> (Λ ≈ −9) at the χ = 0.68 surface radius with the O(χ²) Kerr couplings
+> flagged (order-unity uncertainty on the spinning value; OPEN-GR-LOVE-
+> SPIN-1, scoped not computed); the sign the theory's; k₂^B ≈ +0.03
+> (±13%); 5PN phase 0.13 rad by v = 0.4; the thin-shell reading; zero
+> parameters; a horizon 0, 0. **PRED-O-40 minted** (falsifier: BBH Λ
+> consistent with 0 at ±3, or a positive k₂; reach ET/CE). Ledger A1 →
+> 2.1; changelog; Step E. Win-check round on the tidal signature
+> remains recommended (3626). Next zero-parameter observable: the
+> compactness-0.375 mass–radius relation against neutron-star data and
+> the mass gap. Record `rcore_derivation/3627_v21_and_love_spin_scope.md`.
 >
 > **3626 — THE THREE OWED ITEMS (verify 3/3).** Axial convention:
 > structural k = (b/a)/(2R⁵) for both sectors; the electric structural
