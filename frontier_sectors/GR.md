@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3611, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3612, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3611; next free: 3612)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3612; next free: 3613)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,26 @@
 > tensor wave, C5 energy ledger — is the next computation; F-16 (the
 > residual at the wall) to the founder. GR-2 owes a V1.10 caveat
 > (ledger A1). CONV-039/040's T-2 caveats were right.**
+>
+> **3612 — S-EMPIRICS-ARBITER (founder: choose what the empirics support;
+> calibrate only if unavoidable) APPLIED (verify 3/3).** THE EXTERIOR IS
+> DECIDED BY THE RINGDOWN: a component-wise scalar relay of the packet
+> would put the fundamental ℓ = 2 mode ~29% above GR's (0.484 vs 0.374);
+> observed ringdowns match the Kerr gravitational QNM to ~10% → the
+> exterior perturbation dynamics is GR's tensor equations — what the
+> arc has used since 3297, now on empirical ground. **THE WALL'S
+> RESIDUAL GAUGE IS NOT DECIDED BY ANY OBSERVATION YET** (no echo
+> detected; LVK searches give amplitude upper limits) → designated the
+> arc's one calibration parameter **ρ_w** (the homogeneous harmonic
+> pattern at the wall), bounded by the null results, fixed by the first
+> detection — sensitivity is O(1) (3611), so insensitivity will not
+> rescue it. "Avoid if you can": **OPEN-GR-LATTICE-FRAME-1** — derive
+> the packet relay at the wall (gauge-invariant content = GR's, gauge
+> content = CPP's); if it lands in the family, ρ_w retires. Plan: the
+> C5-frame wall with ρ_w explicit → the a = 0 pole FAMILY over ρ_w and
+> its echo-limit-compatible sub-family → V2.0 as a family. V1.9's
+> numbers = one member (ρ_w = "RW gauge"). Record
+> `rcore_derivation/3612_empirics_decision.md`.
 >
 > **3611 — THE GAUGE MAP, DERIVED AND SOLVED (verify 5/5) — AND IT TAKES
 > THE WALL OUT FROM UNDER THE RW-GAUGE NUMBERS.** D_μ = ∇^ν h̄_μν of the
