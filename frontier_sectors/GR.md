@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3629, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3629; next free: 3630)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3630; next free: 3631)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,14 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3630 — SESSION 161 HANDOVER WRITTEN** (`handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`):
+> the standing rules that bit (registry before declaring a blank; gauge;
+> the execution key; ill-conditioned extractions; block allocation);
+> the single next act in order (SHELL-DATUM-1 → SATURATION-THRESHOLD-1
+> → the ranked list); the paper's state (GR-2 V2.2; PRED-O-39/40; GR-1c
+> Corr. 4); the founder's rulings; the three panels; the superseded
+> statements; the boot checklist. Next free patch 3631.
 >
 > **3629 — CONV-041 ADJUDICATED (5/5) → GR-2 V2.2 ENACTED (14 pp, clean).**
 > Q1 SOUND 3–2 (the vacuous check replaced; **y = −31/3 exactly**,
