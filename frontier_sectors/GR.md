@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3614, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3615, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3614; next free: 3615)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3615; next free: 3616)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,25 @@
 > tensor wave, C5 energy ledger — is the next computation; F-16 (the
 > residual at the wall) to the founder. GR-2 owes a V1.10 caveat
 > (ledger A1). CONV-039/040's T-2 caveats were right.**
+>
+> **3615 — THE RINGDOWN CONSTRAINS THE WALL (verify 4/4). GWTC-2 TGR
+> §VII.B (founder's paste): template-based echo search, five echo
+> parameters, uniform priors, 31 events, NO significant evidence (max
+> log₁₀B 0.17; GW150914 −0.57), "posteriors mostly recover the priors"
+> → NO amplitude limit; the template's delays are Planck-wall delays
+> (~0.1 s) vs the CPP cavity's 0.7 ms — the echo searches do NOT probe
+> the CPP wall (3614 §A's "if limits < 0.4" withdrawn). THE RINGDOWN
+> DOES: the (2,2) PROGRADE mode at χ = 0.68 with a wall at 2.734 M —
+> β = +0.10: δf +4.7%, δτ −51%; **Neumann: δf −2%, δτ −27%; β = −0.05:
+> δf −6%, δτ −8%**; −0.10: −10%/+24%; −0.15: −15%/+89%; −0.20:
+> −21%/+300%; Dirichlet ~+45%. Observed ringdowns are Kerr to a few %
+> in f, tens of % in τ → **the wall is calibrated to β ≈ −0.07 … +0.05
+> at the ringdown frequency by an EXISTING observation**; soft and hard
+> walls (incl. the shipped X = 0) EXCLUDED. The "Neumann crossing at
+> the barrier top" regularity (3383) is the property a 1.33 r_S surface
+> must have to look like Kerr. Requests: δf̂₂₂₀/δτ̂₂₂₀ intervals
+> (GWTC-2/3 TGR ringdown section); Lo et al.'s delay prior. Record
+> `rcore_derivation/3615_ringdown_constrains_the_wall.md`.
 >
 > **3614 — (A) WHAT THE NULL RESULTS TEST + (B) THE KERR FAMILY (verify
 > 6/6).** (A) For ANY lossless wall the first echo is the barrier's
