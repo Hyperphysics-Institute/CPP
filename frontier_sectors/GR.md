@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3605, 3 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3606, 3 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3605; next free: 3606)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3606; next free: 3607)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -50,6 +50,26 @@
 > Everything downstream of the floor — 3297 |R| = 1, the Buchdahl
 > relocation, 3320 Kerr surface, 3339/3359 wall modes, GR-2 V1.6,
 > PRED-O-39 — inherits this banner until it clears.
+>
+> **3606 — R-REGISTER-RELAYS-NOT-DI-BITS (founder: DI-bits are transient
+> one-hop messengers; the GP register relays; the medium sets the
+> speed) — ADOPTED; it is AP-4 / T-1 C-i, and 3605's "DI-bits carry the
+> deformation" was loose. It SHARPENS the problem: the ratified register
+> has rank 0 (count → the breathing wave) and rank 1 (vector sum →
+> spin-1, the EM sector) and NO rank 2; a GW is rank 2. PROVEN (verify
+> 5/5): any transverse plane vector wave has e_xx − e_yy ≡ 0, e_xy ≡ 0 —
+> no +, no ×; the + pattern is a displacement growing with position, a
+> FIELD, not a bounded relayed displacement. **Under the ratified
+> register CPP has no gravitational wave a detector could see — the
+> rank of what relays, not a failure of the relay.** CPP-native rank-2
+> candidate: an ANISOTROPIC PSR — the perception sphere as an ellipsoid
+> PSR_ij, the census's second moment kept (it already keeps the zeroth
+> and first); a wave in PSR_xx − PSR_yy IS +, in PSR_xy IS ×; PSR_ij =
+> the spatial metric g_ij, of which ψ⁴δ_ij (3378) is the rank-0 part.
+> **OPEN-GR-TENSOR-1: the object is PSR_ij; charter (i)–(iv) unchanged.**
+> F-13: is the perception sphere always a sphere, or does a census
+> arriving preferentially along an axis shrink it more along that axis?
+> Record `rcore_derivation/3606_rank_of_the_register.md`.
 >
 > **3605 — P-GW-SUPERPOSED-GRADIENTS (founder: the GW is the time-varying
 > superposition of two orbiting bodies' inverse-square SSV_abs gradients,
