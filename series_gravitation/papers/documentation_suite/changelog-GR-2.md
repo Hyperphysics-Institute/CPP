@@ -318,3 +318,11 @@ number changed. Compile gate: pdflatex ×2, 0 errors, 0 undefined,
 **Edit (text only; earlier blocks preserved).** A V2.1 block after V2.0: `k₂ = −0.080` (Λ ≈ −7) at a = 0, −0.087 (Λ ≈ −9) at the χ = 0.68 surface radius with the O(χ²) Kerr couplings flagged; `k₂^B ≈ +0.03` (±13%); the 5PN phase (0.13 rad by v = 0.4; ET/CE reach); the thin-shell reading. `\date` → V2.1. Compile gate: pdflatex ×2.
 
 **Open items carried:** the O(χ²) Kerr couplings on the Love numbers (OPEN-GR-LOVE-SPIN-1); the axial convention against a literature normalization; OPEN-GR-CORE-CONVERSION-1; OPEN-GR-EXCITATION-1; OPEN-GR-LATTICE-FRAME-1; OPEN-GR-KERRWALL-1. A win-check round on the tidal signature is recommended (3626), not dispatched.
+
+## V2.2 — 4 September 2026, Patch 3629 (Session 161) — CONV-041 (5/5) restatement of the tidal block
+
+**Trigger.** CONV-041 adjudication: Q2 hidden parameter YES 4–1 (the second junction datum), Q4 SWC (the magnetic extraction ill-conditioned — GPT), Q6 standing decided by the saturation-threshold computation, Q7 detectability wording, Q9b RESTATE-REQUIRED 3–2.
+
+**Edit (text only).** A V2.2 block after V2.1 with four qualifications and the compactness statement; `\date` → V2.2. Compile gate: pdflatex ×2.
+
+**Open items:** OPEN-GR-SHELL-DATUM-1 (the second junction condition from the register); OPEN-GR-SATURATION-THRESHOLD-1 (the relativistic threshold); the axial convention against a named normalization; the shell's axial current; OPEN-GR-LOVE-SPIN-1; the PE study.

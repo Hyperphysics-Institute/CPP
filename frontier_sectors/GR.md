@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3628, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3629, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3628; next free: 3629)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3629; next free: 3630)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,29 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3629 — CONV-041 ADJUDICATED (5/5) → GR-2 V2.2 ENACTED (14 pp, clean).**
+> Q1 SOUND 3–2 (the vacuous check replaced; **y = −31/3 exactly**,
+> Grok). **Q2 SWC 4–1; hidden parameter YES 4–1 → the shell's second
+> junction datum is OPEN (OPEN-GR-SHELL-DATUM-1); the Love numbers are
+> the K(R) = 0 member of a family, magnitude robust.** Q3 SWC 4–1 —
+> GPT's "vacuum tidal curvature needs no matter" answered by
+> computation: the vacuum tide inside is lapse + conformal (both
+> pinned); the traceless tensor has nonzero Ricci (10B/3 δ) and needs
+> stress; rigid interior stands. Q4 SWC 4–1 — GPT's ill-conditioning
+> objection UPHELD (the 3625 extraction subtracted ~1e9 quantities, did
+> not converge); RE-DONE with the exact horizon-regular solution h₀ =
+> r²(r − 2M) (BH k₂^B = 0 exactly) + reduction of order: **k₂^B =
+> +0.0277**. Q5 CONSISTENT 3–2 (bridge sentence). **Q6 SWC; standing
+> UNDETERMINED 4–1 → DECIDED by the saturation computation: a uniform-
+> density body reaches the cap at its centre only for M/R ≳ 0.44 = the
+> Buchdahl bound; NEUTRON STARS DO NOT SATURATE; C = 0.375 is for
+> collapsed objects; NS data do not test it** (OPEN-GR-SATURATION-
+> THRESHOLD-1 for the relativistic version; new sentence: in CPP,
+> collapse past Buchdahl IS register saturation). Q7 FAIR 3–2 (ET/CE
+> "target pending PE study"). Q9b RESTATE 3–2 → V2.2. EK-1: 4 matched;
+> DeepSeek read the key from a 2-decimal print — caught. Record
+> `rcore_derivation/3629_conv041_adjudication.md`.
 >
 > **3628 — CONV-041 DISPATCHED (founder: "do the review protocol if you
 > think it will help with the next derivations" — it does: the
