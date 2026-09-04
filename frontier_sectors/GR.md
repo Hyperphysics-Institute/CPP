@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3616, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3617, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3616; next free: 3617)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3617; next free: 3618)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,23 @@
 > tensor wave, C5 energy ledger — is the next computation; F-16 (the
 > residual at the wall) to the founder. GR-2 owes a V1.10 caveat
 > (ledger A1). CONV-039/040's T-2 caveats were right.**
+>
+> **3617 — GWTC-1 IMR CONSISTENCY TEST (founder's paste) — an
+> INDEPENDENT confirmation that the post-inspiral is Kerr-like:
+> inspiral vs post-inspiral (M_f, a_f) agree (GW150914 GR quantile
+> 55.5%; ρ_post-insp = 16.1; all seven events consistent); a wall that
+> altered the post-inspiral would bias it — it does not; closes the
+> loophole that a wall's effect might hide in a shifted (M_f, χ_f)
+> (noted: ringdown-only χ_f = 0.76 vs IMR ≈ 0.68, mild). Does not
+> sharpen the 3616 band; makes its conclusion robust. **The empirical
+> picture is complete enough to write: GR-2 V2.0 OUTLINED** (surface
+> from Mercury + the founder's clock; the a = 0 and χ = 0.68 impedance
+> maps; |T|²; the ringdown band; the IMR test; the calibrated-β
+> predictions — (2,−2) and ℓ = 3 at β ≈ −0.025, both spins, TO BE
+> COMPUTED; standing statements: RW-gauge laws = one gauge's model;
+> LATTICE-FRAME-1 target + falsifier; ansatz A carried; A3′ junction
+> OPEN). Draft on the founder's word. Record
+> `rcore_derivation/3617_imr_consistency_and_v2_outline.md`.
 >
 > **3616 — GWTC-3 IN HAND (founder's paste; verify 4/4).** The echo
 > search (BayesWave, morphology-independent, Δt ∈ [0, 0.7] s) analyses
