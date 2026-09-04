@@ -1,9 +1,9 @@
 # Frontier sector: GR (local gravitation series)
 
-> **GR-LANE STATUS (header re-asserted Patch 3613, 4 Sep 2026).** Block
+> **GR-LANE STATUS (header re-asserted Patch 3614, 4 Sep 2026).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3613; next free: 3614)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3614; next free: 3615)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,26 @@
 > tensor wave, C5 energy ledger — is the next computation; F-16 (the
 > residual at the wall) to the founder. GR-2 owes a V1.10 caveat
 > (ledger A1). CONV-039/040's T-2 caveats were right.**
+>
+> **3614 — (A) WHAT THE NULL RESULTS TEST + (B) THE KERR FAMILY (verify
+> 6/6).** (A) For ANY lossless wall the first echo is the barrier's
+> |T|²: 0.27 at 182 Hz, **0.44 at the ringdown frequency (193 Hz)**,
+> 0.69 at 208 — independent of β; β sets position and Q only. So the
+> echo null results test the surface's EXISTENCE; if the published
+> amplitude limits at the loudest events are below ~0.4, EVERY lossless
+> wall (shipped X = 0, the RW-gauge laws) is disfavoured there and the
+> CPP wall must be LOSSY — which the A3′ two-channel wall (Q_ij into the
+> core) supplies by construction: the empirics favour the theory's own
+> wall over the lossless family. **Limit values needed from the papers
+> (no literature fetch here) — requested.** (B) Kerr (2,−2) at χ = 0.68,
+> SN ladder, ratified surface 2.734 M, constant β: Dirichlet 182 Hz;
+> +0.5: 188; +0.2: 180; **Neumann 162**; −0.1: 147; −0.2: 122 — envelope
+> **122–188 Hz**; the shipped 191 (Dirichlet, old surface) at the top
+> edge; the 3392 "193" was a dispersive law, not on the constant map.
+> **The Kerr numbers are a FAMILY, not an ansatz.** GR-2 V2.0 = the two
+> maps + |T|² + β(ω) as the calibration + "a lossless surface predicts
+> A₁ ≈ 0.44; the theory's surface is not lossless." Record
+> `rcore_derivation/3614_reflectivity_and_kerr_family.md`.
 >
 > **3613 — THE FAMILY, GAUGE-FREE (verify 5/5): the echo line as a
 > function of the wall IMPEDANCE β(ω) = (dZ/dr*)/Z at r_w = 8M/3 —
