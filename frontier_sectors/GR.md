@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3631; next free: 3632; Session 162 OPEN, 5 Sep)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3632; next free: 3633; Session 162 OPEN, 5 Sep)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,30 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3632 — OPEN-GR-SHELL-DATUM-1 RUNG 2: THE CENSUS CLOSURE MADE
+> RELATIVISTIC, AND WHERE IT STOPS (verify 8/8). Founder: no opinion on
+> the count picture → P-COUNT-UNIFORM-TO-LEVEL-SET registered as a
+> WORKING POSTULATE, not a ruling.** Convention corrected: Hinderer's
+> k₂ = λ/(2R⁵) exactly; Newtonian limit (2−y)/(2(y+3)); Kelvin's
+> homogeneous body is **3/4** in the corpus's convention (3631 §5's 3/2
+> was Love's). The closure in one line: **λ = −(6/5) M R̄ δ̄** (far-field
+> census of the uniform-count region vs the exterior's induced
+> coefficient; returns 3/4 with the Newtonian level set). **δ̄ is the
+> level set's displacement in the LATTICE FRAME** = (9/8)ξ_RW − ζ^r(R),
+> ζ the static RW→harmonic-pattern gauge vector (3611) with F-16's
+> residual at the wall open. Brackets: (A) ζ^r(R) = 0 → **k₂ = +0.033**
+> (Λ +3); (B) areal radius of the level-set sphere → **−0.22** (Λ −20);
+> k₂ = 0.033 + 0.021 ζ^r, zero at the lattice-frame-immobile level set
+> (the black hole). **The sign of the theory's Love number is now one
+> gauge vector at the wall — OPEN-GR-LATTICE-FRAME-1's static face —
+> not the shell.** Owed (next rung, mine): the static ℓ = 2 vacuum
+> perturbation in the harmonic-pattern frame (C5: h̄₀₀ ↔ count, τ = 0,
+> remainder = Q_ij), F-16 both ways, plus the census's own test —
+> is δv harmonic in lattice coordinates (p = 0) compatible with the
+> Einstein exterior at O(M·tide)? V2.2 HELD; PRED-O-40's falsifier on
+> notice. Record `rcore_derivation/3632_relativistic_census_closure.md`.
+> No paper touched.
 >
 > **3631 — OPEN-GR-SHELL-DATUM-1 RUNG 1: THE SECOND JUNCTION WRITTEN
 > OUT (verify 24/24, every field equation and both junctions derived
