@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3633; next free: 3634; Session 162 OPEN, 5 Sep)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3634; next free: 3635; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,28 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3634 — OPEN-GR-SATURATION-THRESHOLD-1 CLOSED (verify 8/8): THE
+> THRESHOLD IS CENTRAL LAPSE ½, NOT BUCHDAHL.** Under R-CLOCK-RATE-IS-
+> DISPLACEMENT the register is the lapse exactly (as the exterior v =
+> M/r̄ is), so a body saturates when N_c = ½. Uniform density: **C = 5/18
+> = 0.278** (Buchdahl 4/9 is N_c = 0); 3629 quoted the isotropic ratio
+> 4/9 as a compactness — mapped, it is 36/121 = 0.298. **TOV polytropes
+> Γ = 2 / 2.5 / 3 all reach N_c = ½ ON THE STABLE BRANCH at C = 0.204 /
+> 0.230 / 0.242**, before their maxima (0.213 / 0.281 / 0.316). The
+> heaviest measured pulsars (2.08 M_⊙, 12.4 km: C = 0.248, central
+> redshift ~1) sit at or past it. **"Neutron stars do not saturate"
+> (3629 Q6) is wrong for the most massive ones; "collapse past Buchdahl
+> is register saturation" → "central lapse ½ is register saturation."
+> A third class exists and is populated: saturated core, unsaturated
+> envelope.** OPEN-GR-SATURATED-CORE-1 minted (what a pinned register
+> does to the matter: support, EOS, maximum mass, cooling, the heaviest
+> stars' Λ). Founder picture asked: does the pinned register change how
+> the core supports itself (lattice-read weight stops growing → a
+> maximum-mass prediction against existing data), or only the clocks?
+> GR-2 V2.2's compactness paragraph exposed; correction to ride with
+> V2.3 (held). CONV-042 HELD by the founder (5 Sep). Record
+> `rcore_derivation/3634_saturation_threshold.md`. No paper touched.
 >
 > **3633 — THE STATIC LATTICE FRAME, BOTH CANDIDATES (verify 15/15;
 > harmonic condition derived on Schwarzschild). THREE READINGS, ONE
