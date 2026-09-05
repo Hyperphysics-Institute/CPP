@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3634; next free: 3635; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3635; next free: 3636; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,26 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3635 — OPEN-GR-SATURATED-CORE-1 RUNG 1 (verify 6/6): STARS WITH A
+> SATURATED CORE, under Claude's working postulate P-PINNED-CORE-IS-FLAT
+> (3375 inside a star; founder picture from 3634 still owed).** Model:
+> flat core at lapse ½, uniform p and ε at boundary values, count
+> M_c = ε_c(4π/3)r_c³ seen as m(r_c) (the 3624 shell bookkeeping), TOV
+> envelope, core radius from N(r_c) = ½. **Result 1: N(r_c) decreases
+> with r_c, so no flat-core equilibrium exists above the TOV threshold —
+> the ordinary branch ENDS at central lapse ½; its maximum mass is the
+> threshold mass: 0.995 / 0.923 / 0.852 of GR's TOV maximum for Γ = 2 /
+> 2.5 / 3 (10–15 % below GR for stiff EOS; a test against the heaviest
+> pulsars).** **Result 2: a DISCONNECTED flat-core branch at core
+> pressures below the threshold — mostly core, C up to 0.34, mass up to
+> 2.4× / 1.6× / 1.2× GR's maximum — the road from neutron star to
+> R-core; stability NOT established.** Reading (b) (clock-only cap) is
+> GR unchanged. Either founder answer is confrontable with existing
+> data. Owed if (a): radial stability of the branch; realistic EOS to
+> put M_thr in M_⊙ against J0740/J0952. All numbers carry the postulate
+> label; no corpus claim; no paper touched. Record
+> `rcore_derivation/3635_saturated_core_stars.md`.
 >
 > **3634 — OPEN-GR-SATURATION-THRESHOLD-1 CLOSED (verify 8/8): THE
 > THRESHOLD IS CENTRAL LAPSE ½, NOT BUCHDAHL.** Under R-CLOCK-RATE-IS-
