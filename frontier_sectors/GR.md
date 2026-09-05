@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3630; next free: 3631)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3631; next free: 3632; Session 162 OPEN, 5 Sep)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,32 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3631 — OPEN-GR-SHELL-DATUM-1 RUNG 1: THE SECOND JUNCTION WRITTEN
+> OUT (verify 24/24, every field equation and both junctions derived
+> symbolically; the decaying solution in closed form).** The first
+> junction never fixed K(R): g_tt continuity is the lapse pin (fixes ξ);
+> g_θθ continuity DEFINES ξ_in = ξ − RK/2 and leaves K(R) free — **3624's
+> K(R) = 0 was the assumption ξ_in = ξ**, the hidden datum CONV-041 named,
+> now located. Second junction: (δσ, δP, Π) affine in the decaying
+> amplitude λ; shell conservation with the lapse pinned gives δP = 2Π/R²
+> (Bianchi); **Π and δP are set by the tide (λ-slopes < 1e-3) — the whole
+> datum is ONE number, δσ**, λ = 3.25 − 210 δσ; a no-shear (fluid) shell
+> cannot sit in the tide — the surface must carry shear. **The family:
+> K(R) = 0 → k₂ = −0.080 (y = −31/3); rigid surface (δr_areal = 0) →
+> −0.049 (y = −125/9); fixed count density (δσ = 0) → +0.012 (y = 1/3).
+> Magnitude robust, SIGN NOT** — 3626's "the sign is the theory's" was the
+> K(R) = 0 closure's; V2.2's sign statement HELD, not corrected. **The
+> register's own closure is not a stress law but the CENSUS** (M = the
+> count at cap; v = M/r_iso; level set v = 2/3; interior uniform at cap):
+> the induced field is the census of the uniform-count region bounded
+> by the moved level set; Newtonian limit = Kelvin's homogeneous body,
+> **k₂ = 3/2**, positive, O(1). Owed (one patch, the next act): the
+> RELATIVISTIC census at C = 0.375 → the theory's own k₂, sign included;
+> if positive, V2.3 + PRED-O-40's falsifier re-cut. Founder picture
+> asked: under the tide, is the count still uniform at cap out to the
+> moved level set (3375), or does it pile up on the bulge? Record
+> `rcore_derivation/3631_shell_datum_junction.md`. No paper touched.
 >
 > **3630 — SESSION 161 HANDOVER WRITTEN** (`handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`):
 > the standing rules that bit (registry before declaring a blank; gauge;
