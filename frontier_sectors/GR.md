@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3636; next free: 3637; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3637; next free: 3638; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,28 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3637 — OPEN-GR-SATURATED-CORE-1 RUNG 3 (verify 6/6): FLAT-CORE
+> STABILITY BY STATICS.** The combined SLy sequence (TOV → threshold
+> 1.78 M_⊙ → flat core growing) has M(N_b) monotone, no cusp, to the
+> branch maximum (~2.8–2.9 M_⊙); stars bound; **radius has a minimum
+> (11.1 km near 1.9 M_⊙) and RISES with mass above it — the opposite of
+> GR.** Variational test: at fixed baryon mass M is NOT stationary at
+> the register radius — dM/dr_c > 0 for every member (+0.01, +0.08,
+> +0.17 in M/r_c units): the star would shrink its core through
+> register-forbidden states; **the flat-core star is a CONSTRAINED
+> equilibrium held by the cap, ~0.05 M_⊙ above the GR configuration of
+> the same N_b at 2.08 M_⊙.** Stability = rigidity of the cap:
+> **R-FLOOR-REGISTER (saturation limit, 1 Sep) makes it rigid ⇒ on the
+> constraint manifold the sequence has no cusp ⇒ the branch inherits
+> the TOV branch's stability to ~2.9 M_⊙ ⇒ CPP PASSES J0740 with a
+> flat-core star of R ≈ 11.2 km (NICER 12.4 ± 1).** Soft cap ⇒
+> contradicted at 4σ. Founder confirmation asked in one line: does
+> excess demand ever move a saturated register? Signature: the 1.78
+> M_⊙ knee with radii rising above it (2.5 M_⊙ at ~12 km discriminates
+> from every GR EOS). Owed: dynamical radial modes; published EOS
+> tables; APR4/stiff for the knee. Record
+> `rcore_derivation/3637_flat_core_stability.md`. No paper touched.
 >
 > **3636 — OPEN-GR-SATURATED-CORE-1 RUNG 2 (verify 6/6): THE READING IS
 > DERIVED, AND IT IS IN SOLAR MASSES.** THEO-PINNED-CORE-FLAT: P1
