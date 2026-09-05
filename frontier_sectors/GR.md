@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3637; next free: 3638; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3638; next free: 3639; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,29 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3638 — FOUNDER RULING R-CAP-YIELDS-UNDER-LOAD (5 Sep): "The
+> saturated register yielding under load is the only way I can model
+> reality the way we have constructed it." The cap is NOT rigid;
+> 3637's fork closes SOFT.** Law-independent consequences (verify 5/5):
+> the flat-core branch, the 1.78 M_⊙ knee, rising radii, the ~2.9 M_⊙
+> maximum and "pulsars above 1.78 are flat-core" are WITHDRAWN as
+> statics; **the 4σ J0740 tension goes with them** (a full yield
+> returns GR's TOV star); 3634's threshold stands; THEO-PINNED-CORE-FLAT
+> is the unloaded limit only. **The same ruling loads the R-CORE: its
+> ratified surface must hold P = σ/4 (25 % of its surface energy
+> density) to be static — 3390's b₂ < 0 exposure, branch (a)
+> compliance now CHOSEN by the founder.** Two loads, one law: star's
+> cap at 2.08 M_⊙ holds 43 % of the core pressure; R-core's holds σ/4.
+> **The yield law is the arc's single gate:** elastic (settles
+> displaced — static R-core, Love numbers as computed, heavy stars
+> near GR), creep (nothing static under load — no R-core), or
+> two-floor. Founder picture asked (one): does a loaded saturated
+> register SETTLE or KEEP MOVING? Owed on the answer: the stiffness
+> window bounded by the R-core's staticity (ringdown-fixed surface)
+> and J0740's radius. SATURATED-CORE-1 reopened at the yield law;
+> SURFACE-STABILITY-1 branch (a). Record
+> `rcore_derivation/3638_cap_yields_consequences.md`. No paper touched.
 >
 > **3637 — OPEN-GR-SATURATED-CORE-1 RUNG 3 (verify 6/6): FLAT-CORE
 > STABILITY BY STATICS.** The combined SLy sequence (TOV → threshold
