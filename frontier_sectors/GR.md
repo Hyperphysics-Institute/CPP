@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3632; next free: 3633; Session 162 OPEN, 5 Sep)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3633; next free: 3634; Session 162 OPEN, 5 Sep)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,37 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3633 — THE STATIC LATTICE FRAME, BOTH CANDIDATES (verify 15/15;
+> harmonic condition derived on Schwarzschild). THREE READINGS, ONE
+> SIGN: k₂ = +0.033 (harmonic frame, register = lapse, F-16 opt. 1),
+> +0.088 (harmonic frame, register = h̄₀₀ per C5), +0.042 (census
+> frame, = (3/4)(R̄/R)⁵ exactly). Under P-COUNT-UNIFORM-TO-LEVEL-SET
+> THE R-CORE'S LOVE NUMBER IS POSITIVE; magnitude frame-dependent ×3.**
+> Facts: the RW tide is not harmonic beyond first order (divergence
+> 4(1−M/r)); exponents 3, 1, −2, −4; the tide's gauge vector carries
+> the harmonic-coordinate log (frame at infinity a convention, not
+> reaching the wall under opt. 1). **Two corpus statements are
+> weak-field only:** C5's "statics: τ = 0" (τ = 0.69 at the wall; the
+> linearised c07 lock is −3(1 − v/2) = −2 there, not −3 — c07 and C5
+> disagree at O(v)); and the p = 0 census's agreement with the
+> harmonic-pattern frame (residual −1.2 at 2.7M; one frame at first
+> order, two at O(M·tide)). The 3632 "census test" was, as posed, a
+> frame question, not an exterior test (a gauge vector can make any one
+> scalar harmonic) — the census FRAME built instead: δv harmonic + c07
+> lock, b and c algebraic, always exists, no residual. **3632's negative
+> bracket (B) is no frame of the corpus. PRED-O-40's falsifier ("a
+> positive k₂") is INVERTED → GR-2 owes V2.3 (sign; magnitude as a
+> range; falsifier re-cut to "a negative k₂"). REVIEW-ECONOMY WIN-CHECK
+> TRIGGER MET (a minted prediction changes sign): CONV-042 to be
+> DISPATCHED at 3634 under PD-006 (Q1 the harmonic-frame derivation;
+> Q2 F-16 opt. 1 as the static residual; Q3 the c07/C5 O(v)
+> discrepancy; Q4 is "δv harmonic" a frame or physics; Q5 the closure;
+> Q6 the postulate's standing; Q7 V2.3 warranted?).** SHELL-DATUM-1:
+> sign-determined, magnitude frame-dependent; LATTICE-FRAME-1 gains the
+> static question (lapse vs h̄₀₀; harmonic vs census). Superseded:
+> 3624/3626/3627's negative sign. Record
+> `rcore_derivation/3633_lattice_frame_static.md`. No paper touched.
 >
 > **3632 — OPEN-GR-SHELL-DATUM-1 RUNG 2: THE CENSUS CLOSURE MADE
 > RELATIVISTIC, AND WHERE IT STOPS (verify 8/8). Founder: no opinion on
