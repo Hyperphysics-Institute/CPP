@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3635; next free: 3636; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3636; next free: 3637; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,31 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3636 — OPEN-GR-SATURATED-CORE-1 RUNG 2 (verify 6/6): THE READING IS
+> DERIVED, AND IT IS IN SOLAR MASSES.** THEO-PINNED-CORE-FLAT: P1
+> (register = lapse, cap = lapse ½ — R-CLOCK-RATE-IS-DISPLACEMENT,
+> R-PSR-LAW-LOG, R-FLOOR-REGISTER) + P2 (Einstein's static limit,
+> dp/dr = −(ε+p) d ln N/dr) ⇒ a pinned register is a uniform lapse ⇒
+> dp/dr = 0: the saturated core is at uniform pressure, the lattice
+> flat, its count bookkept at the boundary. Reading (b) has no force to
+> offer; 3635's postulate retires into the theorem. **Realistic EOS
+> (SLy, APR4 piecewise polytropes, recalled coefficients, maxima 2.05 /
+> 2.19 M_⊙ reproduced): the threshold star is M_thr = 1.78 M_⊙ for BOTH
+> — the lapse sets it, not the EOS — 4σ below PSR J0740 (2.08 ± 0.07).
+> The flat-core branch CONNECTS at the threshold (3635's "disconnected"
+> was the coarse scan) and continues with a growing core to 2.8–3.0
+> M_⊙ at R ≈ 13 km; a 2.08 M_⊙ flat-core star has R ≈ 11.2 km (NICER
+> 12.4 ± 1, 1.1σ).** Under P1 + P2 every pulsar above 1.78 M_⊙ is a
+> flat-core star; GW190814's 2.6 M_⊙ secondary would be one. **All of
+> it hangs on the radial stability of the flat-core branch (dM/dp_core
+> < 0 there — the TOV criterion does not transfer): unstable ⇒ CPP as
+> ruled is contradicted by J0740 at 4σ; stable ⇒ CPP predicts a 1.78
+> M_⊙ knee, ~11 km radii above it, a ~2.9 M_⊙ maximum.** Next rung: the
+> radial modes. Owed: published EOS tables for the recalled
+> coefficients. No paper; no corpus claim; premises named so a picture
+> can strike one. Record
+> `rcore_derivation/3636_saturated_core_realistic_eos.md`.
 >
 > **3635 — OPEN-GR-SATURATED-CORE-1 RUNG 1 (verify 6/6): STARS WITH A
 > SATURATED CORE, under Claude's working postulate P-PINNED-CORE-IS-FLAT
