@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3638; next free: 3639; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3639; next free: 3640; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,30 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3639 — FOUNDER PICTURE R-CAP-SPRING (5 Sep): "The surface feels like
+> a spring, not putty… every GP occupied by a CP at its PSR… anchored at
+> its PSR position… collision ringing transmits internally, but with a
+> stiffness that prevents full PSR displacement." ELASTIC. The arc is
+> static again with ONE number, the stiffness, as the minimal law
+> register = cap + χ(demand − cap), 0 < χ < 1.** The corpus's PSR law
+> is isotropic Schwarzschild's lapse and continues smoothly past v =
+> 2/3 (to N = 0 at v = 2): the floor was an added clamp — χ = 1
+> unclamped, χ = 0 clamp, the spring between = 3390's open third-order
+> coefficient, now physical. **Rung 1 (verify 8/8): the R-core surface
+> stays at 8M/3 for every χ (exterior demand unchanged); interior
+> central lapse ½ → ⅓ (χ 0 → 1), no horizon; echo cavity T(χ)/T(0) =
+> 1.04 / 1.11 / 1.24 / 1.56 at χ = 0.1 / 0.25 / 0.5 / 1 — PRED-O-39
+> becomes 0.70 ms × T(χ)/T(0): AN ECHO DELAY MEASURES χ; the surface
+> shell's share of M falls 1 → 0.69 → 0.42 → 0 — the spring absorbs the
+> load 3638 exposed.** Every either/or of 3636–3638 is now an
+> interpolation: heavy NS between flat-core (11.2 km at 2.08 M_⊙) and
+> GR (9.9 km), NICER mildly favouring the stiff end. Owed: R(2.08; χ)
+> and M_max(χ); reflectivity/impedance χ-dependence; 3390's b₂ with the
+> χ-interior; V2.3 carries the χ-window; **derivation target: χ from
+> the PCD anchoring (not a datum)**. Records
+> `rcore_derivation/3639_spring_law_chi_family.md`,
+> `founders_voice/founder_picture_cap_is_a_spring_2026-09-05.md`.
 >
 > **3638 — FOUNDER RULING R-CAP-YIELDS-UNDER-LOAD (5 Sep): "The
 > saturated register yielding under load is the only way I can model
