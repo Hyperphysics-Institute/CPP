@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3644; next free: 3645; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3645; next free: 3646; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,23 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3645 — FOUNDER (6 Sep): "asking me if it's ok to adopt a calibration number is still exactly
+> the problem I was trying to solve with PD-007." ACCEPTED IN FULL. 3644's pin request WITHDRAWN;
+> 3641 §2 rule 5 amended (the "founder pins" clause struck: a failed row is never rescued by a
+> constant; constants enter only as labeled `UNEXPLAINED` derivation targets with a swarm test
+> defined first); s = 3.22 NOT adopted, recorded as the size of the discrepancy, bracket [2.5, 5].
+> Row 7 stands as FAILS (wave sector) with its REQUIREMENT recorded: the saturated register must
+> present the wave with admittance ≈ 0.31 (|R| ≈ 0.55 at the QNM frequency). **OPEN-GR-SURFACE-
+> IMPEDANCE-1 registered** (derive that impedance from the PCD cycle). Attempt 1 — the K/D
+> response scaling in the interior wave equation, two readings (u = χΦ; impedance 1/χ) — FAILS:
+> lossless df +19/+23%, and with an absorber at any depth dτ stays −27..−38% (verify 5/5). A
+> gradient cannot do what the ringdown asks; it asks for a coherent step. Attempt 2 named: A3′'s
+> count/tensor split with the even mode a fixed mixture — the reflected fraction would be
+> derived from the mixture with no constant (JUNCTION-1 with a target number). Founder text filed
+> verbatim `founders_voice/founder_policy_pd007_clarified_2026-09-06.md`. Record
+> `rcore_derivation/3645_pin_withdrawn_surface_impedance_target.md`. Row 6 proceeds as a family
+> over the surface stiffness, reported as a bracket. CONV-042 held (open wave sector).
 >
 > **3644 — LEDGER ROW 7 FAILS FOR THE EXTENSION AS WRITTEN [PCD-EXT]; the failure located;
 > ONE calibration named; FOUNDER'S PIN PENDING (3641 §2 rule 5).** The returned-bit fraction
