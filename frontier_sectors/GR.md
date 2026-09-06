@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3643; next free: 3644; SESSION 163 OPEN 5 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3644; next free: 3645; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,27 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3644 — LEDGER ROW 7 FAILS FOR THE EXTENSION AS WRITTEN [PCD-EXT]; the failure located;
+> ONE calibration named; FOUNDER'S PIN PENDING (3641 §2 rule 5).** The returned-bit fraction
+> 1 − cap/v is 0 at the surface: the budget law makes the surface transparent, and every
+> transparent reading of the wave (lossless transmit, absorb at the surface, absorb at any
+> depth) fails the ringdown — frequencies match (absorb at 20% depth: δf +1.4%) but the
+> damping is ~30% too fast, at a = 0 and at Kerr. Cause: the horizon-equivalent wall at 8M/3
+> has admittance 0.31 — **the black hole, seen from the surface, reflects |R| = 0.55
+> coherently.** That is R-CAP-SPRING's stiffness (3639 §4 "χ < 1 strictly"), which
+> χ = cap/v → 1 dropped. Reading D: interior wave impedance s× the exterior's, β = −iω/s;
+> **s = 3.22 pinned once** by the a = 0 ℓ = 2 horizon point (line −2.2%/+4.9%); **ℓ = 3
+> test PASSED without refit (−1.4%/−1.3%)**; s ∈ [2.5, 5] all in-box (not knife-edge);
+> Kerr test OWED to KERRWALL-1 (the SN function is not locally plane-wave at the wall:
+> Re β_hor = +0.063 at real ω on SN vs +0.008 on Zerilli; 3619's code used Ω_H where its
+> text says Ω_wall). **PRED-O-39 re-cut:** no reading gives both a black-hole ringdown and a
+> coherent 0.95 ms echo at 0.44 — amplitude ≤ 0.3 × f_core, ≈ 0 if the core dissipates; the
+> delay stands. Machinery validated: horizon-equivalent wall reproduces Schwarzschild ℓ = 2
+> and ℓ = 3 QNMs to 0.04%. Record `rcore_derivation/3644_ledger_row7_reflectivity_returned_bits.md`;
+> verify `code/3644_*` (16/16, run from repo root). **Founder: pin s (amend the working
+> extension to budget + surface stiffness) or let row 7 stand as the extension's failure.**
+> Row 6 waits on the pin (same stiffness, static limit).
 >
 > **3643 — LEDGER ROW 8 PASSES [PCD-EXT]: 3390's even-sector instability was the clamp's.**
 > Under THEO-PCD-BUDGET the register is not pinned; the even wave transmits inward through
