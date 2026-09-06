@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3640; next free: 3641; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3641; next free: 3642; Session 162 OPEN, 5 Sep; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,28 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3641 — FOUNDER POLICY PD-007 (R-CALIBRATION-POLICY, 5 Sep): the
+> saturation regime is a CALIBRATION EXERCISE — derive from the nine
+> Axioms/PCD cycle, calibrate against empirics, validate by
+> triangulation across empirics and swarm/inductive proof across
+> reviewers; the founder declines PCD-level detail by picture.**
+> Enacted with the discipline that keeps calibration from absorbing
+> failure: pin once, never refit; `[PCD-EXT]` label on every result in
+> the regime until the ledger closes; quantifier discipline; one CONV
+> round per ledger closure (review economy); a failed row is a failed
+> extension. **Working extension adopted (Claude's call under PD-006):
+> THEO-PCD-BUDGET (3640), DERIVED-PENDING-TRIANGULATION — no free
+> element.** Ledger (`rcore_derivation/3641_triangulation_ledger.md`):
+> ringdown (passes, 3612); PPN/Shapiro (passes by construction); heavy
+> pulsar masses (pass: GR's TOV star with a clock floor; the flat-core
+> sequence 3635–3637 withdrawn); NICER radii (EOS question, not
+> discriminating); **echo delay 0.95 ms at 62 M_⊙ parameter-free — the
+> decisive row**; Love number (owed as a spring deflection);
+> reflectivity from the returned-bit fraction (owed); 3390's b₂ with
+> the C¹ interior (owed — a fail here fails the extension); NS
+> threshold (stands). Order: b₂ → reflectivity → Love → V2.3 with the
+> label → CONV-042 re-cut as the extension round.
 >
 > **3640 — FOUNDER QUESTION (5 Sep): does the saturated register follow
 > from the PCD/DI-bit/CP/GP story or is it a new postulate ("the rules
