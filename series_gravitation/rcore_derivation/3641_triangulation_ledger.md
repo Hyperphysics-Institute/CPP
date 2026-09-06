@@ -25,8 +25,8 @@ The founder cannot adjudicate PCD-level detail by picture, and says so. The corp
 | 5 | Post-ringdown echo delay (PRED-O-39) | not yet detected; LVK data exist | **0.95 ms at 62 M☉** (0.70 × 1.363), parameter-free | **the decisive row** — a detection at 0.95 confirms the extension; at 0.70 favours the clamp; none at either constrains reflectivity |
 | 6 | Tidal Love number of a BBH component (PRED-O-40) | ET/CE era | positive, k₂ ≈ +0.03…+0.09 (3633) — to be recomputed under the budget interior | **owed** (the level-set displacement is now a spring deflection with χ = cap/v) |
 | 7 | Wall reflectivity / echo amplitude | LVK upper limits | |R| from the returned-bit fraction (D−K)/D at the surface — profile owed | **owed** |
-| 8 | Even-sector surface stability (3390's b₂ < 0) | internal consistency | re-run with the C¹ interior (no shell) | **owed** — a fail here is a fail of the extension |
+| 8 | Even-sector surface stability (3390's b₂ < 0) | internal consistency | re-run with the C¹ interior (no shell): b₂ > 0 (the core's inertia), ℓ = 2, 3 poles damped (0.4586 − 0.1315 i, 0.6882 − 0.1027 i), upper half-plane empty by argument principle (3643) | **passes** (3643) — the instability was the clamp's; SURFACE-STABILITY-1 closed on branch (a) [PCD-EXT] |
 | 9 | Neutron-star saturation threshold (3634: central lapse ½ at C ≈ 0.20–0.25) | derived | unchanged (the cap's location is the census's) | stands |
 
 ## §5 Order of work under PD-007
-8 → 7 → 6 → 5's write-up (V2.3 with the extension label), then one CONV round (the swarm proof) on the extension as a whole — CONV-042's held package is re-cut to that purpose. The founder's mechanical part stays the same: apply patches, paste one package when the round is called.
+~~8~~ (passed, 3643) → 7 → 6 → 5's write-up (V2.3 with the extension label), then one CONV round (the swarm proof) on the extension as a whole — CONV-042's held package is re-cut to that purpose. The founder's mechanical part stays the same: apply patches, paste one package when the round is called.

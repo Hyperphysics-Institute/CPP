@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3642; next free: 3643; SESSION 162 CLOSED 5 Sep — handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3643; next free: 3644; SESSION 163 OPEN 5 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,22 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3643 — LEDGER ROW 8 PASSES [PCD-EXT]: 3390's even-sector instability was the clamp's.**
+> Under THEO-PCD-BUDGET the register is not pinned; the even wave transmits inward through
+> the C¹ metric with speed N/ψ² (graded 0.28 → 0.18); the even wall's boundary mass is the
+> core's inertia, b₂ > 0 (ℓ = 2: β = +0.550 − 0.967 ω²). Poles at 8M/3: ℓ = 2 **0.4586 −
+> 0.1315 i** (239 Hz, Q 1.7), ℓ = 3 **0.6882 − 0.1027 i** (359 Hz, Q 3.4) — damped;
+> argument-principle count in the upper half-plane 0 (budget) vs 1 (trace wall, the growing
+> mode) for both ℓ. **OPEN-GR-SURFACE-STABILITY-1 CLOSED on branch (a)** — the regulator is
+> the removal of the clamp. The clamp's sharp even lines (3383 Q 25/92; 3390) are withdrawn
+> with it: the even sector is broad and Dirichlet-like; GR-2 V2.3 inherits this. Interior
+> optical depth 1.363× flat = 3640's cavity ratio; first interior standing wave at Mω ≈ 0.79,
+> above the line. **Convention error found: 3390's odd-sector line at 8M/3 used J = 6.75 (the
+> 9M/4 value); the dictionary gives 32/9 there — odd-sector re-run OWED (with row 7).**
+> Record `rcore_derivation/3643_ledger_row8_even_stability_budget_interior.md`; verify
+> `code/3643_*` (24/24). Next: ledger row 7 (reflectivity from the returned-bit fraction,
+> both sectors' wall laws at J = 32/9) → row 6 → V2.3 → CONV-042.
 >
 > **3642 — SESSION 162 HANDOVER WRITTEN** (`handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`).
 > Next free patch 3643. Single next act: ledger row 8 (3390's b₂ with the THEO-PCD-BUDGET
