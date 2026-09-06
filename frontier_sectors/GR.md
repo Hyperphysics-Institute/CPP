@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3645; next free: 3646; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3646; next free: 3647; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,20 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3646 — FOUNDER'S METHOD ENACTED AS RULE 6** (derive → statistics-level hypothesis → group →
+> reconnect; text filed verbatim `founders_voice/founder_method_derive_then_hypothesis_2026-09-06.md`).
+> SURFACE-IMPEDANCE-1 attempt 2a (two-channel wall as an admittance sum: 3390 trace element +
+> local absorber) FAILS — the trace element's real part (≈ −1.3) has no counterpart in the horizon
+> point (≈ 0); the channels must couple through A3′'s map, not add (attempt 2b = JUNCTION-1 with a
+> target number). **HYPOTHESIS H-SURFACE-IMPEDANCE (3.22×, unchanged) carried to the ℓ = 4
+> fundamental: 0.8010 − 0.0992 i vs GR 0.8092 − 0.0942 i, −1.0% / −5.1% — descriptive.** Group: 3/3
+> computed (ℓ = 2 pin, ℓ = 3, ℓ = 4; frequency residuals −2.2, −1.4, −1.0%); overtone NOT computed
+> (direct integration stalls at Im ω ≈ −0.27 — a stalled fsolve was caught returning its guess and is
+> recorded as such); Kerr owed (dictionary). Machinery: horizon-equivalent wall reproduces the ℓ = 4
+> GR mode to 0.01%. Status: hypothesis, not result; s `UNEXPLAINED`. Record
+> `rcore_derivation/3646_surface_impedance_hypothesis_group.md`; verify `code/3646_*` (4/4). Next:
+> row 6 (Love number, budget interior, surface stiffness as a family) and attempt 2b in parallel.
 >
 > **3645 — FOUNDER (6 Sep): "asking me if it's ok to adopt a calibration number is still exactly
 > the problem I was trying to solve with PD-007." ACCEPTED IN FULL. 3644's pin request WITHDRAWN;
