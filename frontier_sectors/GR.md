@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3641; next free: 3642; Session 162 OPEN, 5 Sep; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3642; next free: 3643; SESSION 162 CLOSED 5 Sep — handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,12 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3642 — SESSION 162 HANDOVER WRITTEN** (`handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`).
+> Next free patch 3643. Single next act: ledger row 8 (3390's b₂ with the THEO-PCD-BUDGET
+> interior) → row 7 (reflectivity) → row 6 (Love as spring deflection) → GR-2 V2.3 with the
+> `[PCD-EXT]` label → CONV-042 re-cut as the PD-007 extension round. Founder (5 Sep):
+> PD-007 "takes a lot of pressure off"; to be applied in the DE and DM lanes as well.
 >
 > **3641 — FOUNDER POLICY PD-007 (R-CALIBRATION-POLICY, 5 Sep): the
 > saturation regime is a CALIBRATION EXERCISE — derive from the nine
