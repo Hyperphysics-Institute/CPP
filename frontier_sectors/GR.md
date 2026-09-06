@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3639; next free: 3640; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3640; next free: 3641; Session 162 OPEN, 5 Sep; CONV-042 HELD by the founder)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -53,6 +53,31 @@
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+>
+> **3640 — FOUNDER QUESTION (5 Sep): does the saturated register follow
+> from the PCD/DI-bit/CP/GP story or is it a new postulate ("the rules
+> change inside the black hole… minimum PSR and c/2")? PROPOSAL
+> registered, NOT enacted (verify 8/8): saturation as a finite
+> per-Moment DI-bit budget K (discreteness of the Moment — no new
+> constant; the PSR floor l_P/2 is the same fact), with the
+> least-assumption truncation (take K bits without preference): the
+> absolute count (clock) is capped, the net vector is scaled by K/D,
+> the bits not taken return to the sea (reflection, momentum
+> conservation) — cap, spring and mirror from one sentence. On the
+> register: v_eff = 2·cap − cap²/v, χ(v) = cap/v (1 at the surface,
+> 2/3 at the centre).** Consequences: **C¹ join at the surface ⇒ σ = P
+> = 0 — NO shell, the 3638 load was the clamp's artefact; interior not
+> flat, lapse ½ → 5/13; no horizon; echo cavity T/T(0) = 1.363
+> parameter-free ⇒ PRED-O-39 0.70 → 0.95 ms at 62 M_⊙.** GR/SR untouched
+> (below the cap the census is unmodified). Not settled: whether the
+> scalar cap and the vector scaling act together — if yes, heavy
+> neutron stars are GR's with a clock floor (SATURATED-CORE-1 closes
+> "clock only") and the R-core's interior statics need a holder (c/2 or
+> the lattice at the centre). **Founder asked one question: is a CP's
+> displacement computed from all arriving bits or from the K it can
+> process?** Records
+> `rcore_derivation/3640_budget_law_proposal.md`,
+> `founders_voice/founder_question_saturation_mechanism_2026-09-05.md`.
 >
 > **3639 — FOUNDER PICTURE R-CAP-SPRING (5 Sep): "The surface feels like
 > a spring, not putty… every GP occupied by a CP at its PSR… anchored at
