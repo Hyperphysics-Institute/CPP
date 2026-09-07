@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3650; next free: 3651; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3651; next free: 3652; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,18 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
 >
+> **3651 — COLD TEST: PRED-O-40 vs GW250114 — THE CLOSURE'S CENTRAL VALUE IS EXCLUDED**. arXiv:2512.01918
+> (Dec 2025): Λ̃ < 34.8 at 90% (log-uniform; 155 uniform), Λ₁ < 28.2; near-equal masses so Λ̃ = Λ;
+> convention = the corpus's. The register closure's one-gauge junction (3650, K/H = 2/3) gives Λ = +714:
+> excluded 20× (4.6× at the conservative bound). Survival window: wall ratio q ≥ 0.762 (+14%; +18% for
+> the component bound), or the negative side (unsampled, no published bound). The +14% is inside the
+> corpus's ~30% C5/c07 dictionary discrepancy at the wall: on notice, not dead — OPEN-GR-LATTICE-FRAME-1's
+> static face is now a SURVIVAL requirement with a direction. Every pre-3650 value (|Λ| ≤ 8) is inside
+> the bound: the data test the junction, not the R-core. Adiabatic caveat (near zero mode) does not
+> rescue it. V2.3 must carry this; CONV-042 has a live stake. Verify 9/9.
+> `rcore_derivation/3651_pred_o40_cold_test_gw250114.md`; `reasoning/3651.md`;
+> `code/3651_pred_o40_cold_test_gw250114_verify.py`.
+
 > **3650 — ATTEMPT 3b STATIC: ROW 6 RE-OPENED, SHARPENED**. Register closure joined to vacuum in one
 > gauge (lattice r̄, isotropic RW form; perturbed extrinsic curvature derived). The closure forces the
 > wall law K/H = 2/3 exactly (χ and the count law cancel), 0.8% from the exterior's static ℓ = 2 zero
