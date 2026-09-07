@@ -7,7 +7,7 @@ and 3644's a = 0 Zerilli machinery the way 3619/3644/3646 do).
 THE DICTIONARY (derived, not fitted). The SN equation is  X'' - F X' - U X = 0  (' = d/dr*). The first-derivative
 term is why X is not locally plane-wave at the wall and why a pure-imaginary law on X is not a local absorber
 (3644 §3). Because  F dr* = (eta'/eta) dr  EXACTLY (F = eta' Delta / (eta (r^2+a^2)), dr*/dr = (r^2+a^2)/Delta), the
-substitution  Y = X / sqrt(eta)  removes it:  Y'' = W Y,  W = U + F^2/4 + F'/2.  Y is the local wave; the wall law
+substitution  Y = X / sqrt(eta)  removes it:  Y'' = W Y,  W = U + F^2/4 - F'/2  (sign corrected at 3665, CONV-042; transport unaffected).  Y is the local wave; the wall law
 transports as  beta_X = beta_Y + F(r_w)/2.  At a = 0, eta = c0 = const, F = 0, Y = X = Regge-Wheeler: the dictionary
 is the identity. eta, F are 3359's own (validated: T1 a = 0 reduction, T3 wall mode, 3619 Kerr QNM to 0.7%/1.3%).
 

@@ -15,6 +15,19 @@
 %   adoption). Spin-saturation finding surfaced by the script's own
 %   first run: dDt/dchi = 0.299 GM/c^3 at the benchmark, so the
 %   +/-0.1 spin bar is +/-0.35% -- mass dominates ~20x.
+% V2.4 (Patch 3665, 7 Sep 2026): CONV-042 RESTATEMENT (3/4 RESTATE-REQUIRED; 4 admissible
+%   seats). Bound: the extension EXCLUDED 4/4 (on its derived positive branch;
+%   GW250114's positive-prior bound does not constrain a negative branch);
+%   "every transparent REALIZATION TESTED fails the damping" (theorem-of-the-
+%   exterior 3/4, quantifier over the catalogue computed); the hypothesis's
+%   count restated -- 1 calibration (l = 2 pin), 4 independent tests
+%   (l = 3, 4 even; l = 2, 3 odd), 2 non-exclusions (static Lambda under a
+%   one-sided bound; the overtone inside a +/-30% box), 1 failure ON THE SN
+%   LOCAL-WAVE REALIZATION at Kerr (even-type Chandrasekhar-Detweiler variable
+%   untested); the horizon's reflection seen from 8M/3 is basis-, frame- and
+%   frequency-dependent, not a universal surface property; the amplitude
+%   "~0 if the core dissipates" is a bound with an unmodelled f_core. The V2.3
+%   block is restated in place (the shipped V2.3 wording is in git at 3662).
 % V2.3 (Patch 3662, 7 Sep 2026): THE EXTENSION EXCLUDED; WHAT SURVIVES (Patches
 %   3643-3661, PD-007 discipline). The working extension THEO-PCD-BUDGET, taken
 %   to its own static junction, gives Lambda = +714 and is EXCLUDED by GW250114
@@ -253,7 +266,7 @@ CPP Compact Objects}\\[6pt]
 {\large Second series paper of the Conscious Point Physics
 gravitation series (parent: GR-1)}}
 \author{Thomas Lee Abshier, ND\\Hyperphysics Institute}
-\date{21 August 2026 --- Version~2.3 (7 September 2026)}
+\date{21 August 2026 --- Version~2.4 (7 September 2026)}
 
 \begin{document}
 \maketitle
@@ -779,49 +792,64 @@ $M/R \gtrsim 0.44$ --- the Buchdahl bound --- far above any neutron
 star ($0.15$--$0.30$).  Neutron stars do not saturate; the fixed
 compactness applies to collapsed objects, and the neutron-star
 mass--radius data do not test it.
-\textbf{(V2.3, Patches 3643--3661 --- the extension excluded; what
-survives.)}  The second junction datum of V2.2 was derived, and the
+\textbf{(V2.3, Patches 3643--3661, restated at V2.4 under CONV-042
+--- the extension excluded; what survives.)}  The second junction datum of V2.2 was derived, and the
 derivation failed its first cold test.  Under the corpus's working
 extension (a capped per-Moment bit budget, no new axiom) the static
 junction at $8M/3$ lands $0.8\%$ from the exterior's $\ell = 2$ zero
 mode and gives $\Lambda = +714$; GW250114's inspiral bounds a BBH
 component's deformability to $\tilde\Lambda < 34.8$ (90\%), so the
-extension \emph{as derived} is excluded, and by the standing discipline
-a failed extension is not a datum to refit.  The V2.1--V2.2 value
+extension \emph{as derived} --- on its positive branch, the one the
+derivation gives; the bound's positive priors do not constrain a
+negative branch --- is excluded, and by the standing discipline a
+failed extension is not a datum to refit.  The value is pole-adjacent
+(its sign is unstable under the next-order layer; its magnitude is
+not), and no next-order term of the excluded closure supplies the
+factor $\sim 20$.  The V2.1--V2.2 value
 $k_2 = -0.080$ ($\Lambda \simeq -7$), the $K(R) = 0$ member of the
 family, remains inside the bound but is not the theory's; \emph{no
 derived static junction now exists}, and the sign of $k_2$ is open.
 What the ringdown then says about the surface is sharper than V2.0's
-band.  Every \emph{transparent} wall --- the register's own
-lossless-transmit reading, the flat-core junction of V1.9, each
+band.  Every \emph{transparent} realization tested --- the register's
+own lossless-transmit reading, the flat-core junction of V1.9, each
 stability-passing interior --- damps the $\ell = 2$ fundamental about
-$30\%$ too fast: a lossless surface returns nothing and the exterior
+$30\%$ too fast (a statement over the catalogue computed, not a
+passivity theorem over every causal interior): a lossless surface returns nothing and the exterior
 then radiates as if the surface were a sink.  The observed ringdown
 requires a \emph{coherent partial reflection}, $|R| \simeq 0.53$ with
 near-zero phase in the local plane-wave basis at $8M/3$ --- which is
 exactly the Schwarzschild horizon's own reflection seen from that
-radius ($0.53$ at $-3^\circ$).  Read as a surface property this is an
+radius ($0.53$ at $-3^\circ$; a reflection so defined is basis-,
+frame- and frequency-dependent --- a number of the exterior at that
+radius, not by itself a universal surface property).  Read as a surface property this is an
 impedance about $3.2\times$ the exterior's ($\beta = -i\omega/s$,
 $s = 3.22$, pinned once on the $\ell = 2$ fundamental at $a = 0$).
 That reading is a \emph{hypothesis} --- never adopted, its number
-unexplained --- and it has been applied unchanged across a group: it
-describes the $a = 0$ fundamentals $\ell = 2, 3, 4$ at the percent
-level on both parities ($-2.2/+4.9\%$, $-1.4/-1.3\%$, $-1.0/-5.1\%$
-on Zerilli; $-0.8/+12\%$, $-1.2/+0.5\%$ on Regge--Wheeler), gives a
-static Love number $\Lambda = +3.0$ (inside GW250114 by $10\times$),
-and puts the $\ell = 2$ overtone inside GW250114's overtone test
-($\delta f_{221} = 0.1 \pm 0.3$, damping unconstrained) while sitting
-$-12\%/-25\%$ from the Kerr overtone --- the group's weakest member.
-\emph{It fails at Kerr.}  With the Sasaki--Nakamura local wave
+unexplained --- and it has been applied unchanged across a group,
+counted as CONV-042 requires.  The $\ell = 2$ Zerilli fundamental is
+the \emph{calibration} ($-2.2/+4.9\%$).  The four independent tests
+are the unrefitted fundamentals $\ell = 3, 4$ on Zerilli
+($-1.4/-1.3\%$, $-1.0/-5.1\%$) and $\ell = 2, 3$ on Regge--Wheeler
+($-0.8/+12\%$, $-1.2/+0.5\%$).  Two further members are
+\emph{non-exclusions}, not tests: the static Love number
+$\Lambda = +3.0$ survives a one-sided bound, and the $\ell = 2$
+overtone sits inside GW250114's overtone test
+($\delta f_{221} = 0.1 \pm 0.3$, damping unconstrained) only because
+that interval is $\pm 30\%$, while lying $-12\%/-25\%$ from the Kerr
+overtone.  \emph{It fails at Kerr on the Sasaki--Nakamura local-wave
+realization.}  With the Sasaki--Nakamura local wave
 identified exactly ($Y = X/\sqrt{\eta}$; the SN first-derivative term
 is a pure gauge factor), the $(2,2)$ line at $\chi = 0.68$ lies outside
 the ringdown box in every frame and for every $s \in [1.5, 40]$: the
 failure is the form.  Seen from $8M/3$ in the surface's frame the Kerr
 horizon reflects the local wave with $|R| = 0.71$ at $-17^\circ$ --- a
 \emph{complex} impedance, a lossy spring --- where the hypothesis is a
-real one.  That is the Kerr requirement any surface law must now meet;
-the even-type Kerr variable (Chandrasekhar--Detweiler) is the one
-untested reading and is registered.  Two instruments are new: the SN
+real one.  That is the Kerr requirement any surface law on this
+realization must meet, in a surface frame that is itself a chosen
+prescription; the even-type Kerr variable (Chandrasekhar--Detweiler),
+on which the hypothesis was pinned at $a = 0$, is untested and
+registered (OPEN-GR-KERRWALL-1b) --- until it is run the failure is
+the SN realization's, not the hypothesis's at Kerr outright.  Two instruments are new: the SN
 local-wave dictionary above, and a complex-ray integration
 ($r_* = r_{*w} + t\,e^{i\theta}$, $\theta > \arctan|\omega_I/\omega_R|$)
 that reaches the overtone --- Leaver's Schwarzschild $n = 1$ mode to
@@ -837,10 +865,10 @@ is re-cut to GW250114 ($f_{220} = 247 \pm 6$~Hz, $\gamma_{220} =
 fundamental box is now $\pm 2.4\%$ in frequency and $(-15, +17)\%$ in
 damping time.  The echo prediction (V2.0) is re-cut with the wall:
 the delay $0.95$~ms at $62\,M_\odot$ stands; the amplitude is bounded,
-$(1 - |R|^2) \times 0.44 \times f_{\rm core} \le 0.3$, and is
-expected near zero if the core dissipates --- a detection at that
-delay would measure the core's returned fraction; a null result is the
-expectation.  What the theory owes is unchanged in kind and sharpened
+$(1 - |R|^2) \times 0.44 \times f_{\rm core} \le 0.3$, with
+$f_{\rm core}$ unmodelled --- a bound, not a separate prediction; a
+detection at that delay would measure the core's returned fraction,
+and a null result is consistent with it.  What the theory owes is unchanged in kind and sharpened
 in target: a surface law derived from the cycle that gives the $a = 0$
 real impedance step \emph{and} the Kerr complex reflection.  The
 prograde comparator $(2,+1)$ is \emph{not located} --- the instrument cannot

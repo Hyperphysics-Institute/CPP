@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3664 (CONV-042 trigger named); next free: 3665; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; **CONV-042 DISPATCHED at 3663** — the extension's verdict + the surface impedance, returns pending)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3665 (CONV-042 adjudicated); next free: 3666; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; **CONV-042 ADJUDICATED at 3665** — extension EXCLUDED 4/4, GR-2 → V2.4)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,23 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1b (even-type Kerr variable, literature-bound; KERRWALL-1's SN dictionary DONE at 3657, Kerr member of H-SURFACE-IMPEDANCE FAILS).**
 >
+> **3665 — CONV-042 ADJUDICATED (4 admissible seats: GPT-5.6 [scripts own-run 7/7, 5/5, 16/16, 13/13; EK-1 ✓],
+> Grok [harness on L5, T-2; EK-1 ✓], Gemini [inspection; EK-1 ✗ — inferred the horizon QNM], DeepSeek [inspection;
+> scripts not supplied]; Copilot OFF-PACKAGE, 0/1).** Q1 SOUND-WITH-CAVEATS 3/4 (Λ = +714 pole-adjacent; sign
+> unstable, magnitude not). **Q2 EXCLUDED 4/4 — THEO-PCD-BUDGET's exclusion is now the corpus's verdict** (on its
+> derived positive branch; the "sign-flipped" clause withdrawn — GW250114's priors are positive). Q3
+> THEOREM-OF-THE-EXTERIOR 3/4, quantifier narrowed to "every transparent realization tested". Q4 SPLIT 2–2,
+> resolved by adopted Q8 items: count RESTATED — 1 calibration (ℓ = 2 pin), 4 tests (ℓ = 3, 4 even; ℓ = 2, 3
+> odd), 2 non-exclusions (static Λ; overtone), 1 failure; "5/6" withdrawn. Q5 dictionary SOUND 4/4 (W's F′/2
+> sign corrected in 3657 — transport and numbers unaffected); Kerr verdict SPLIT 2–2 → not blocking by rule,
+> wording fixed by all four seats: **"fails on the SN local-wave realization; Z⁺ untested (KERRWALL-1b)"** —
+> "fails at Kerr" unqualified barred. Q6 CORRECT 4/4. Q7 PROPER 4/4. Q8: 17 items adopted (horizon reflection
+> from 8M/3 is basis/frame/frequency-dependent; surface frame a chosen prescription; amplitude a bound with
+> unmodelled f_core; K/H ≈ 1.46 needs a new extension not a refit; K(R) = 0 must not drift back). Q9b
+> RESTATE-REQUIRED 3/4 → **GR-2 V2.4** (block restated in place; V2.3 wording in git at 3662; compiles).
+> predictions.md PRED-O-39 amended; ledger row 7 + §5. Returns verbatim + table in `review/reviews-CONV-042.md`.
+> Next: KERRWALL-1b; attempt 4 on OPEN-GR-SURFACE-IMPEDANCE-1; Session 164 handover.
+
 > **3664 — CONV-042's dispatch basis corrected on the founder's check against the review economy protocol.**
 > v1.0's "trigger 2 — a verdict on an adopted structure" was not a protocol trigger. Named exactly: trigger 1's
 > axiom-level-change clause (the exclusion of the adopted extension, built on by V2.3 — cannot wait) batched
