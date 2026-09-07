@@ -208,7 +208,7 @@
 | GR-1i: The Classical Tests of Gravitation — Perihelion precession, light deflection, Shapiro delay, and gravitational redshift as geodesic consequences of the CPP shell-broadcast metric — Companion i to GR-1 --- Conscious Point Physics gravitation series --- | 0.1 | `series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex` | 2026-08-20 | 3269 |
 | GR-1j: The CPP Field Equations from the Messenger Census — T-1 (the general equation), T-2 (Birkhoff-type uniqueness), and T-3 (the conserved source current), derived from the three-type conscious-point automaton — Companion j to GR-1 --- Conscious Point Physics gravitation series --- | 1.0 | `series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex` | 2026-08-20 | 3270 |
 | GR-1: Local Gravitation from SSV Shell Broadcast — One nonlinear substrate response from Coulomb's law to the exact Schwarzschild, Kerr, and Kerr--Newman metrics — | 1.0.2 | `series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex` | 2026-08-20 | 3276 |
-| The Echo Falsifier: — Millisecond Gravitational-Wave Echoes from Horizonless — CPP Compact Objects — Second series paper of the Conscious Point Physics gravitation series (parent: GR-1) | 2.5 | `series_gravitation/papers/GR-2_echo_falsifier.tex` | 2026-09-07 | 3665 |
+| The Echo Falsifier: — Millisecond Gravitational-Wave Echoes from Horizonless — CPP Compact Objects — Second series paper of the Conscious Point Physics gravitation series (parent: GR-1) | 2.6 | `series_gravitation/papers/GR-2_echo_falsifier.tex` | 2026-09-07 | 3669 |
 
 ## DEFECT — title-page version disagrees with the CHANGELOG
 
