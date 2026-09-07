@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3652; next free: 3653; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3653; next free: 3654; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,18 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
 >
+> **3653 — VERDICT: [PCD-EXT] AS DERIVED IS EXCLUDED (rule 5); H-WALL-LOCK-C5 NAMED (rule 6)**. Founder
+> declined to pin the displacement mechanism ("I don't know anything about this mechanism. See
+> PD-007"; filed verbatim). The cycle as stated decides it: Displace acts on the K-of-D sample, so
+> χ_ψ = χ_N = cap/v, q = 2/3, Λ = +714 — excluded by GW250114. Failed extension, no refit. The
+> compliance-ratio rescue is closed (needs the clock clamped harder than the law derives, χ_N ≤ 0.875
+> at the level set). Surviving as HYPOTHESIS (never adopted): H-WALL-LOCK-C5 — the linear trace lock
+> −3 at the level set (3633 §2's other dictionary): q = 1, k₂ = +0.102, Λ = +9.2, member 1 descriptive;
+> member 2 (dynamical closure's ringdown, same lock, no refit) and 3 (3633 readings) owed. Verify 7/7.
+> `rcore_derivation/3653_extension_verdict_gw250114.md`; `reasoning/3653.md`;
+> `founders_voice/founder_response_displacement_saturation_2026-09-06.md`;
+> `code/3653_extension_verdict_gw250114_verify.py`.
+
 > **3652 — SURVIVAL CONDITION IN DICTIONARY TERMS; FOUNDER'S QUESTION**. The closure's wall ratio is
 > q = 1 − v/2 exactly under c07 = the c07 trace lock −3(1 − v/2) = −2 at the wall (3633 §2). Survival
 > (q ≥ 0.762) ⟺ lock ≤ −2.29: c07's −2 fails (Λ = +714), C5's linear −3 passes (q = 1, k₂ = +0.102,
