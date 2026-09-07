@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3667 (handover compliance); next free: 3668; SESSION 164 CLOSED 7 Sep at handover `handovers/2026-09-07_session_164_kerrwall1_overtone_conv042_gr2_v2.4.md`; CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.4; next act OPEN-GR-KERRWALL-1b)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3668 (KERRWALL-1b closed); next free: 3669; SESSION 165 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_164_kerrwall1_overtone_conv042_gr2_v2.4.md`); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.4 (V2.5 restatement pending 3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); next act: attempt 4 on OPEN-GR-SURFACE-IMPEDANCE-1)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -52,8 +52,39 @@
 > (k₂ ≠ 0; FIRST COMPUTATION), fixed compactness 0.375 for every mass,
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
-> LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1b (even-type Kerr variable, literature-bound; KERRWALL-1's SN dictionary DONE at 3657, Kerr member of H-SURFACE-IMPEDANCE FAILS).**
+> LATTICE-FRAME-1 (target Re β ≈ −0.03), SURFACE-IMPEDANCE-1 (two-datum target, now bracketed across two Kerr realizations). KERRWALL-1 DONE at 3657 (SN dictionary) and **KERRWALL-1b CLOSED at 3668** (Chandrasekhar–Detweiler Z⁺, literature-bound, validated to 3e−5 against Leaver): the Kerr member of H-SURFACE-IMPEDANCE FAILS on both realizations tested.**
 >
+> **3668 — OPEN-GR-KERRWALL-1b CLOSED: THE EVEN-TYPE KERR VARIABLE (CHANDRASEKHAR–DETWEILER Z⁺) DOES NOT
+> RESCUE THE KERR MEMBER.** Literature-bound as required: the CD potential transcribed from Hatsuda & Kimura
+> (arXiv:2006.15496, eqs. 12–17; their λ = 3359's `lam`, same ω conventions), nothing from memory. Validated
+> BEFORE any Kerr number: a = 0 pointwise reduction to Zerilli (κ₂ > 0) and Regge–Wheeler (κ₂ < 0) to 1e−16;
+> both parities' horizon poles at 8M/3 = Leaver's Schwarzschild QNM to 2e−5 (Chandrasekhar's parity map);
+> at χ = 0.68 the b₂ = −3α² potentials, both κ₂ signs, reproduce Leaver's radial-CF (2,2) QNM (3358)
+> 0.52398 − 0.08151i to **3e−5 / 6e−5** — the b₂ = +3α² combinations are NOT isospectral (3.6e−3, 4e−2,
+> non-convergent) and are excluded: **Z⁺ = (κ₂ > 0, b₂ = −3α²)**, not the both-plus literal reading of the
+> source's footnote. Numerical caution: at complex ω the horizon start must be r₊ + 1e−6 (1e−3, as 3657
+> used, leaves 0.2–0.4% in the poles). **THE TEST:** β_Z⁺ = −i(ω − mΩ)/s, s = 3.218 unchanged, applied
+> directly (Z⁺ is Schrödinger-form): Ω_w −27.2% / −32.5%, Ω_H −22.7% / −19.9%, Ω = 0 −28.8% / −36.9% vs the
+> Z⁺ horizon pole (= Leaver), out of the GW250114 box and the GW150914 box; s-scan 1.5–40 never enters —
+> **the failure is the FORM on this realization too** (frequency miss larger than SN's, damping miss smaller;
+> neither near). The horizon from 8M/3 in the surface frame reflects Z⁺ at **|R| = 0.77, −13°** (SN Y: 0.71,
+> −17°): a complex impedance in the even variable too — the Kerr requirement is basis-robust in kind, basis-
+> dependent in number (CONV-042 GPT 5); s_Kerr re-read 7.6 / 2.5 / 9.8, not universal. **RECORD CORRECTION
+> (3657 (1b) withdrawn):** 3644's Zerilli point +0.008 − 0.116i was evaluated at the COMPLEX QNM frequency
+> (`beta_horizon(wGR)`); 3657 compared Regge–Wheeler at REAL ω against it. At matched ω the parities are
+> alike — pole: Z⁺ +0.0086 − 0.1155i, Z⁻ −0.0020 − 0.1487i; real ω: Z⁺ +0.116 − 0.185i, Z⁻ +0.105 − 0.206i
+> — "the near-pure-imaginary horizon is an even-variable property" is withdrawn; the premise that the
+> hypothesis "lives naturally on the even variable" had no a = 0 support. Pin's defining number with the
+> converged start: 3.235 (pin frozen at 3.218; not refit, rule 1). **Standing:** H-SURFACE-IMPEDANCE count
+> unchanged 1/4/2/1; the failure reads "fails at Kerr on both realizations tested (SN local wave 3657; CD
+> Z⁺ 3668), every frame, every s" — "fails at Kerr" admissible with that qualifier, "every Kerr realization"
+> not. OPEN-GR-SURFACE-IMPEDANCE-1's target: the a = 0 real step 0.53 at −3° AND a Kerr complex reflection
+> |R| ≈ 0.7–0.8 at −(13–17)°. CD Z⁺ instrument reusable (closed-form potential; candidate methods entry at
+> the next Step-E audit; the better carrier for the complex ray on the (2,+1) comparator). GR-2 V2.4's
+> "until it is run…" superseded → V2.5 (3669). No panel (review economy: neither a win nor a stuck point).
+> Verify 14/14 (~6 min). Ledger row 7 + §5 updated. `rcore_derivation/3668_kerrwall1b_cd_zplus_even_kerr.md`;
+> `reasoning/3668.md`; `code/3668_kerrwall1b_cd_zplus_even_kerr_verify.py`.
+
 > **3667 — Handover protocol compliance, on the founder's check.** The 3666 draft audit had bundled five Step-E registries
 > as N/A without looking and omitted the chat-echo. Done: methods catalogue METH-L1-015 (complex ray) and METH-L1-016
 > (SN gauge removal); `future_projects.md` Session-164 queue; `organizational_frontier.md` OPEN-ORG-024 (seat feeding
