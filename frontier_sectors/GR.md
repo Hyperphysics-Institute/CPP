@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3671 (GR-2 V2.6); next free: 3672; SESSION 165 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_164_kerrwall1_overtone_conv042_gr2_v2.4.md`); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.5 (3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); OPEN-GR-SURFACE-IMPEDANCE-1 RE-CUT at 3670 (no passive-surface solution; s = 3.22 identified as GR's ℓ = 2 pole admittance); GR-2 at V2.6 (3671); next act: the complex ray for (2,+1) on the CD Z⁺ instrument, then the re-cut derivation question with CORE-DISSIPATION-1)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3672 ((2,+1) located); next free: 3673; SESSION 165 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_164_kerrwall1_overtone_conv042_gr2_v2.4.md`); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.5 (3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); OPEN-GR-SURFACE-IMPEDANCE-1 RE-CUT at 3670 (no passive-surface solution; s = 3.22 identified as GR's ℓ = 2 pole admittance); GR-2 at V2.6 (3671); (2,+1) LOCATED at 3672 (complex ray on CD Z⁺; ordering at exact grade on model walls); next act: GR-2 V2.7 (3673), then the re-cut derivation question with CORE-DISSIPATION-1)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,24 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), SURFACE-IMPEDANCE-1 RE-CUT at 3670 (its target is GR's complex pole admittance β_hor(ω, ℓ, m, χ), not a constant; no passive surface meets it; the same question as CORE-DISSIPATION-1). KERRWALL-1 DONE at 3657 (SN dictionary) and **KERRWALL-1b CLOSED at 3668** (Chandrasekhar–Detweiler Z⁺, literature-bound, validated to 3e−5 against Leaver): the Kerr member of H-SURFACE-IMPEDANCE FAILS on both realizations tested.**
 >
+> **3672 — THE COMPLEX RAY AT KERR ON THE CD Z⁺ INSTRUMENT; (2,+1) LOCATED; THE ORDERING AT EXACT GRADE (MODEL
+> WALLS).** METH-L1-015 (3659) carried onto 3668's closed-form CD Z⁺ potential (SN's numerically-differentiated U is
+> not fit for a complex path): r as a complex state with dr/dr* = Δ/(r²+a²), λ at complex ω from Leaver's angular
+> CF, the outgoing series on the ray, the horizon side on the reflected ray. **Validated:** ray closes on the wall
+> (4e−13/3e−10); (2,2) fundamental = Leaver 1e−7; **(2,2) first overtone 0.51194 − 0.24653i = Leaver's n = 1 to
+> 5e−5** (Im ≈ −0.25, where direct integration stalls — 3359 §4's limit discharged at Kerr); (2,±1/−2)
+> fundamentals 1e−11; θ/T independence 8e−5. **Model walls on Z⁺ at 2.7344 M** (Dirichlet Z⁺ = 0, the even-variable
+> node — NOT 3359's X = 0 on SN; Neumann dZ⁺/dr* = 0): (2,+1) **Dirichlet 0.34494 − 0.25415i, 177.8 Hz, Q 0.68;
+> Neumann 0.40948 − 0.09537i, 211.0 Hz, Q 2.15** — LOCATED. Full family: Dirichlet Q(+2/+1/0/−2) = 0.60/0.68/0.81/
+> 1.02 (166/178/195/165 Hz); Neumann 1.86/2.15/2.63/3.52 (214/211/208/161 Hz). **Ordering (PRED-O-39 (e)): under
+> either wall Q rises monotonically prograde → retrograde — the retrograde line is the sharpest, the prograde
+> comparator broader — at exact grade for the model walls** (the Kerr QNMs order the other way: 3.21 → 1.75).
+> Values conditional on the wall law (the two walls differ 3–5× in Q); no amplitudes (PRED-O-39 (d) unchanged);
+> Neumann (2,−2) 160.9 Hz sits at V2.0's 159→162 Hz line. 3358's withdrawn scalar (2,+1) stays withdrawn. Verify
+> 9/9 (~8 min). Ledger §5 (2,+1) item struck. GR-2 → V2.7 at 3673 (with METH-L1-015 reuse line and the CD Z⁺
+> instrument registered). `rcore_derivation/3672_complex_ray_kerr_cd_zplus_21_comparator.md`; `reasoning/3672.md`;
+> `code/3672_complex_ray_kerr_cd_zplus_21_comparator_verify.py`.
+
 > **3671 — GR-2 → V2.6 (restatement in place).** "|R| ≃ 0.53 = the Schwarzschild horizon's own reflection seen
 > from 8M/3" (V2.3–V2.5) corrected to the step's own reflectivity, with the real-frequency horizon reading (0.39,
 > −43°) and the pole explanation; the V2.5 "Kerr requirement" sentences restated at the poles (Im β_hor > 0 in the
