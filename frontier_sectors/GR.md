@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3669 (GR-2 V2.5); next free: 3670; SESSION 165 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_164_kerrwall1_overtone_conv042_gr2_v2.4.md`); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.5 (3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); next act: attempt 4 on OPEN-GR-SURFACE-IMPEDANCE-1)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3670 (SURFACE-IMPEDANCE-1 re-cut); next free: 3671; SESSION 165 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_164_kerrwall1_overtone_conv042_gr2_v2.4.md`); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.5 (3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); OPEN-GR-SURFACE-IMPEDANCE-1 RE-CUT at 3670 (no passive-surface solution; s = 3.22 identified as GR's ℓ = 2 pole admittance); next act: GR-2 V2.6 restatement (3671), then the complex ray for (2,+1) on the CD Z⁺ instrument)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -52,8 +52,34 @@
 > (k₂ ≠ 0; FIRST COMPUTATION), fixed compactness 0.375 for every mass,
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
-> LATTICE-FRAME-1 (target Re β ≈ −0.03), SURFACE-IMPEDANCE-1 (two-datum target, now bracketed across two Kerr realizations). KERRWALL-1 DONE at 3657 (SN dictionary) and **KERRWALL-1b CLOSED at 3668** (Chandrasekhar–Detweiler Z⁺, literature-bound, validated to 3e−5 against Leaver): the Kerr member of H-SURFACE-IMPEDANCE FAILS on both realizations tested.**
+> LATTICE-FRAME-1 (target Re β ≈ −0.03), SURFACE-IMPEDANCE-1 RE-CUT at 3670 (its target is GR's complex pole admittance β_hor(ω, ℓ, m, χ), not a constant; no passive surface meets it; the same question as CORE-DISSIPATION-1). KERRWALL-1 DONE at 3657 (SN dictionary) and **KERRWALL-1b CLOSED at 3668** (Chandrasekhar–Detweiler Z⁺, literature-bound, validated to 3e−5 against Leaver): the Kerr member of H-SURFACE-IMPEDANCE FAILS on both realizations tested.**
 >
+> **3670 — OPEN-GR-SURFACE-IMPEDANCE-1 ATTEMPT 4 STEP 2: THE TARGET AS A FUNCTION; THE PROBLEM RE-CUT; A
+> THIRD RECORD CORRECTION.** With the CD Z⁺ instrument (r_w(χ) from F_n = 4/9; Leaver poles), the requirement
+> was computed vs spin and vs ℓ, at real ω and at the complex poles. **Record correction (extends 3668 §2):**
+> 3657 §4's "a = 0 real step |R| = 0.53 at −3°" was β at the COMPLEX pole read with k REAL; at real ω the
+> a = 0 horizon from 8M/3 reflects Z⁺ at **0.39, −43°** (ℓ = 3: 0.44, −33°; ℓ = 4: 0.47, −28°); 0.53 is the
+> step's own reflectivity, and "= the horizon's own from that radius" (row 7, GR-2 V2.3–V2.5, PRED-O-39) is
+> withdrawn. Across spin at real ω: |R| 0.39 → 0.80, phase −43° → +99° (zero near χ ≈ 0.72) — no spin gives
+> a real step. **At the poles (where the pole is decided):** a = 0 the hypothesis's law sits 0.036 / 0.043 /
+> 0.058 from the horizon's admittance at ℓ = 2, 3, 4 — that is the group's descriptiveness (the box tolerates
+> ~0.05 in β), while Re ω/|Im β| rises 3.24 → 3.90 (not ℓ-flat); **at Kerr from χ ≈ 0.4 Im β_hor at the pole
+> is POSITIVE in the even variable** (+0.224i at 0.68 vs the hypothesis's −0.126i) — not absorbing at all;
+> mismatch 0.35 at 0.68, 0.60 at 0.9. **Mechanisms, parameter-free, against both pole data:** real step
+> (H-SURFACE-IMPEDANCE, CANDIDATE-S-AREA) FAILS (opposite Im sign at Kerr); delayed compliant surface FAILS
+> (a phase cannot flip Im β; the Kerr-fitted delay predicts −12° at a = 0 vs −43°; a one-Moment/Planck delay
+> is 8e−39 degrees — 3375/3376's compliance is a phase-zero surface at ringdown frequencies); co-rotating
+> step = (i) in the surface frame, FAILS (3657/3668); only GR's excised region itself meets both. **RE-CUT:**
+> the problem "derive s from the cycle" has no passive-surface solution — s = 3.22 is the ℓ = 2, a = 0 pole
+> value of GR's own admittance from 8M/3, not a CPP constant; the target is β_hor(ω, ℓ, m, χ) at the poles,
+> met by a saturated register only if it propagates the exterior's wave equation below the cap (the
+> black-hole end of V2.0's map) = the CORE-DISSIPATION-1 question. **CANDIDATE-S-AREA withdrawn** (no object).
+> H-SURFACE-IMPEDANCE count unchanged 1/4/2/1; label UNEXPLAINED → IDENTIFIED (GR pole value). (2,0) and
+> (2,−2) at 0.68 recorded (real-ω 0.52 at −37°; 0.36 at −31°). No panel. Verify 13/13 (~5 min). Ledger row 7
+> + §5 updated; 3657/3668 notes carry dated corrections; GR-2 → V2.6 at 3671.
+> `rcore_derivation/3670_surface_impedance_attempt4_target_as_function.md`; `reasoning/3670.md`;
+> `code/3670_surface_impedance_attempt4_target_as_function_verify.py`.
+
 > **3669 — GR-2 → V2.5 (restatement in place).** The Kerr failure of H-SURFACE-IMPEDANCE now reads "fails at Kerr on
 > both realizations tested" (SN local wave 3657; CD Z⁺ 3668); V2.4's "until it is run the failure is the SN
 > realization's" superseded; the Kerr requirement bracketed (|R| ≈ 0.7–0.8 at −(13–17)°); the a = 0 record
