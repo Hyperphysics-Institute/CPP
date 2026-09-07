@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3659 (overtone / complex ray); next free: 3660; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3660 (odd-sector J correction); next free: 3661; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,15 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1b (even-type Kerr variable, literature-bound; KERRWALL-1's SN dictionary DONE at 3657, Kerr member of H-SURFACE-IMPEDANCE FAILS).**
 >
+> **3660 — RECORD CORRECTION: 3390's odd-sector "208 Hz, Q 7.9" line at 8M/3 used J = 6.75 (the 9M/4
+> slowness); with J = 32/9 the same wall gives 0.4501 − 0.1246 i, 235 Hz, Q 1.8** — broad, Dirichlet-like,
+> +20.5% / −28.6% from Schwarzschild, outside the box like every lossless-transmit wall (3644); the odd/even
+> "healthy vs unstable" contrast of 3390 was the slowness. Branch tracked 6.75 → 32/9; r₀-spread 4e−8. Not
+> a live line (the flat-core transmit is the excluded extension's); PRED-O-39's V1.9 "208 Hz (axial)" model
+> pole owed the correction at V2.3. Handover item 4 discharged. Verify 5/5.
+> `rcore_derivation/3660_odd_sector_8M3_J32_9_rerun.md`; `reasoning/3660.md`;
+> `code/3660_odd_sector_8M3_J32_9_rerun_verify.py`.
+
 > **3659 — THE OVERTONE VIA A COMPLEX-RAY INSTRUMENT (Leaver's 0.34671 − 0.27391 i to five figures);
 > H-SURFACE-IMPEDANCE MEMBER 6 INSIDE GW250114's BOX, FAR FROM GR; RINGDOWN BOX RE-CUT**. Direct
 > integration stalls at Im ω ≈ −0.27 because the contaminant grows e^{2|ω_I|Δr*}; along r* = r*_w + t e^{iθ}
