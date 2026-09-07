@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3647; next free: 3648; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3648; next free: 3649; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,21 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
 >
+> **3648 — OPEN-GR-SURFACE-IMPEDANCE-1 ATTEMPT 2b FAILS (JUNCTION-1 proper)**. Count law on the
+> trace H₂+2K and absorber on the traceless H₂−K, each mapped to a Robin law on Z through 3378's
+> reconstruction: at ω_QNM they demand Z′/Z = +0.405+0.137i and −0.086−0.638i (target +0.008−0.116i);
+> no compatibility point near the ringdown; each alone outside the box. Structural: one mode, one wall
+> value, two channel laws — a sharp wall cannot carry two independent channel laws. The interior must
+> supply ONE even-parity law for (H₂, K): **attempt 3 named** — the budget medium's effective (ρ, P)
+> from its metric, perturbed with the stellar even-parity equations, matched C¹. Notes: the count
+> channel is not where the target's structure lives; the tensor channel absorbed at the exterior's
+> rate over-absorbs 5.5× (the hypothesis's direction, not its derivation). Static by-product: the
+> wall-law route at ω = 0 gives y = +28 (count) / −9.2 (tensor) vs 3647's level-set −3.22 —
+> OPEN-GR-LATTICE-FRAME-1's static face with numbers; row 6 carries the caveat, attempt 3 arbitrates.
+> 3647 §4 corrected (k₂ > 0 band is y* < y < 5). Verify 10/10.
+> `rcore_derivation/3648_junction1_two_channel_metric_map.md`; `reasoning/3648.md`;
+> `code/3648_junction1_two_channel_metric_map_verify.py`.
+
 > **3647 — LEDGER ROW 6 PASSES [PCD-EXT]: k₂ = +0.042 (FREE branch)**. Budget interior's
 > level-set surface has χ_eff = 1 (budget law: χ_eff = cap/v = 1 at v = cap): the tidal
 > displacement is identical to the census-frame case (3633). k₂ = +0.042, Λ = +3.8,

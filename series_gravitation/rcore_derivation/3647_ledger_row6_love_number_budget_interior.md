@@ -69,7 +69,7 @@ This divides the spring family into two branches:
 | branch | y_R range | k₂ sign | example |
 |---|---|---|---|
 | RIGID | y < y* (= −6.81) | negative | y = −10.33 → k₂ = −0.080 (rigid cap, 3624) |
-| FREE | y > y* | positive | y = −3.22 → k₂ = +0.042 (census frame, 3633) |
+| FREE | y* < y < 5 (numerator zero at 5; corrected 3648) | positive | y = −3.22 → k₂ = +0.042 (census frame, 3633) |
 
 The budget interior's surface at chi_eff = 1 gives y_R = −3.22 (FREE branch). k₂ = +0.042, Λ = +3.80.
 
