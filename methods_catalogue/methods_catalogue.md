@@ -242,6 +242,27 @@ is a lattice cell (any Voronoi-cell mode problem; GR-lane cavity analogues).
 
 ---
 
+### METH-L1-015 — Complex-ray integration for broad quasinormal modes (contour-rotated shooting)
+**Layer 1 (mathematical technique). Registered Session 164, Patch 3667 (first use Patch 3659). NEW METHOD.**
+For a Schrödinger-form radial equation ψ'' = (V − ω²)ψ with an outgoing condition at infinity and a wall or horizon
+condition at finite r*, real-axis shooting fails once Im ω is large (|ω_I| ≳ 0.3 ω_R): the unwanted solution grows by
+e^{2|ω_I|Δr*} over the integration. Integrate instead along the ray r* = r*_w + t e^{iθ} with θ > arctan(|ω_I|/ω_R):
+the desired solution then grows toward the endpoint and the contaminant decays, so inward integration is stable. The
+horizon side uses the reflected ray (Re r* → −∞). The radial coordinate is carried as a complex state (dr/dr* = f(r));
+the outgoing series is fitted at complex points on the ray; the path avoids the equation's singular points. Validate
+by θ- and far-end-independence and against a known mode. Instrument: `series_gravitation/code/3659_*` (`wall_values_ray`,
+`beta_horizon_ray`); validated on Leaver's Schwarzschild n = 1 mode to five figures. Applies unchanged to the
+Sasaki–Nakamura equation (F, U analytic). Supersedes the "very-broad-mode instrument" gap of 3359 §5 at a = 0.
+
+### METH-L1-016 — First-derivative gauge removal in the Sasaki–Nakamura equation (local-wave variable)
+**Layer 1 (mathematical technique). Registered Session 164, Patch 3667 (first use Patch 3657). NEW METHOD.**
+The SN equation X'' − F X' − U X = 0 has F dr* = d ln η exactly (F = η'Δ/(η(r²+a²)), dr*/dr = (r²+a²)/Δ), so
+Y = X/√η satisfies the Schrödinger form Y'' = W Y with W = U + F²/4 − F'/2. Any wall law on the local wave transports
+to X as β_X = β_Y + F(r_w)/2; the map is the identity at a = 0. Use it whenever a boundary condition is stated
+physically (impedance, reflectivity) and must be imposed on the SN variable. Caution (CONV-042): the gauge term is
+imaginary-dominated at 8M/3; it does not by itself account for the Kerr horizon law's real part. Instrument:
+`series_gravitation/code/3657_*`.
+
 ## Layer 3 — Heuristic strategies
 
 ### METH-L2-014: External-data authentication battery (independent anchors + provenance factors + block-scoped parse)

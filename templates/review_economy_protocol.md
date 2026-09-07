@@ -120,6 +120,7 @@ non-blocking item is a workflow error.
 | Three defensible readings of a converged sequence disagreed; selecting one after seeing them would contaminate a frozen result | **ROUND** (CONV-021) — a genuine §2.2 exhausted avenue | Panel supplied the mandated instrument suite and unanimously required larger sizes |
 | Seven CONV-020 obligations discharged | **NO ROUND** — certification rides in the next bundle | — |
 | Worker's ID collision caught by the CLONE-FIRST grep | **NO ROUND** — fixed and recorded | — |
+| Worker excluded the corpus's adopted extension on its own derivation and shipped V2.3 on it; also counted members of its own hypothesis (CONV-042, Patches 3663–3665) | **ROUND** — trigger 1's axiom-level-change clause (the exclusion is being built on) batched with a 2b interest item (the count). The package first named a non-existent "trigger 2 — verdict"; the founder caught it (3664). **Name the §2 trigger by its number and clause, never by a paraphrase.** | Panel 4/4 EXCLUDED; count restated by adopted Q8 items |
 
 ## §8 — Cross-references
 

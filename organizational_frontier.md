@@ -944,6 +944,16 @@ pattern holds. Cross-reference: CONV-008 (roster byte-identity), CONV-011 (branc
 review timing), QWEN-FAB-1 / LLAMA-EXEC-FAB-1 precedents.
 
 
+### OPEN-ORG-024 — Panel-seat feeding discipline: two of five CONV-042 seats were mis-fed (registered Patch 3667, register-and-defer)
+
+**Surfaced:** Session 164, CONV-042 adjudication (Patch 3665). Copilot returned answers to an earlier package (CP-Exclusion/Buchdahl/SR-1 vocabulary; EK-1 in the wrong variables); DeepSeek's trace shows the CONV-041 package pasted alongside CONV-042 and no scripts supplied. Both were caught — the off-package vocabulary and the sealed EK-1 — so no wrong verdict entered the record, but the round ran on 4 admissible seats of 5 and one execution seat did not execute.
+
+**Proposed discipline (to be codified in `templates/review_dispatch_protocol.md` at the next dispatch, not before):** (1) the dispatch block opens with a one-line seat check the seat must echo ("CONV-NNN, package vN.N, HEAD = Patch NNNN") before answering, so an off-package paste fails visibly at the first line; (2) execution seats receive the scripts as attachments in the same paste, listed by filename, and confirm receipt in the SCRIPT line; (3) the worker's adjudication marks any seat lacking the echo or the receipt line INADMISSIBLE before reading its answers.
+
+**Status:** OPEN — register-and-defer; evaluate at CONV-043's dispatch.
+
+**Cross-references:** OPEN-ORG-022 (execution-fingerprint discipline; EK-1 is its instrument and worked here); `series_gravitation/review/reviews-CONV-042.md` §8–§9.
+
 ### OPEN-ORG-023 — GR-series re-identification, wave-1 deposit hold, and the c14/c15 refiling ruling (registered Patch 3229)
 
 **Surfaced:** Session 148 GR-1 scoping (Patch 3225 §8 + handover §5 "Deposit consequence"); registered concurrently with the GR-1 V0 assembly (Patch 3228).
