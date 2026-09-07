@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3654; next free: 3655; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3655; next free: 3656; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,15 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
 >
+> **3655 — ATTEMPT 4 STEP 1: CANDIDATE-S-AREA (s = ψ⁴|cap = 3.160), NOT DISCRIMINATED**. The three cap
+> constants of the right size — ψ⁴ = 256/81 (areal/lattice area ratio), J = 32/9, 1/N² = 4 — all sit in
+> the GW150914 box on ℓ = 2, 3, 4; ψ⁴ is closest to the 3644 pin (1.9%) with a mechanism (waveguide-area
+> junction, R = 0.52 vs the 0.55 requirement) but the box is too wide to choose; the damping spread
+> (+4/+8/+11%) against GW250114's ringdown would — needs KERRWALL-1. Static near-coincidence with 3633's
+> lapse reading quantified: 3%, not an identity. Verify 8/8. Session 163: 3643–3655; handover due before
+> KERRWALL-1. `rcore_derivation/3655_impedance_area_junction_candidate.md`; `reasoning/3655.md`;
+> `code/3655_impedance_area_junction_candidate_verify.py`.
+
 > **3654 — H-WALL-LOCK-C5 MEMBER 2 FAILS; H-SURFACE-IMPEDANCE 4/4**. The closure's wall ratio is local,
 > so the dynamical junction is K − qH₂ = 0 at 8M/3: a real (lossless) Robin law on Z whose ω → 0 limit
 > reproduces 3650 exactly. Under either lock the ℓ = 2 spectrum has NO pole near GR's ringdown, only a
