@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3657 (KERRWALL-1); next free: 3658; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3659 (overtone / complex ray); next free: 3660; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,23 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1b (even-type Kerr variable, literature-bound; KERRWALL-1's SN dictionary DONE at 3657, Kerr member of H-SURFACE-IMPEDANCE FAILS).**
 >
+> **3659 — THE OVERTONE VIA A COMPLEX-RAY INSTRUMENT (Leaver's 0.34671 − 0.27391 i to five figures);
+> H-SURFACE-IMPEDANCE MEMBER 6 INSIDE GW250114's BOX, FAR FROM GR; RINGDOWN BOX RE-CUT**. Direct
+> integration stalls at Im ω ≈ −0.27 because the contaminant grows e^{2|ω_I|Δr*}; along r* = r*_w + t e^{iθ}
+> with θ > arctan(|ω_I|/ω_R) the roles reverse and inward integration is stable (horizon side reflected; r
+> carried as a complex state). Validated: fundamental = 3644's real-axis poles; overtone horizon law =
+> Leaver to 5 figures; θ/far-end spread 1e−11. **3359 §5's "very-broad-mode instrument" DISCHARGED at
+> a = 0**; next use: the Kerr (2,+1) comparator on SN. Member 6, s = 3.218 unchanged: 0.3055 − 0.3659 i,
+> **δf −11.9% / δτ −25.2% vs GR**; GW250114's overtone test (PRL 135, 111403: δf₂₂₁ = 0.1 ± 0.3 log,
+> δγ₂₂₁ uninformative) is a (−18, +49)% frequency box with no damping box → **inside; descriptive at the
+> data's precision only** — the group's weakest; δτ is −25% for every s (not the number); the horizon's
+> overtone law −0.42 + 0.31 i is no admittance. **Box re-cut:** f₂₂₀ = 247 ± 6 Hz, γ₂₂₀ = 221 +39/−32 Hz
+> at 10.5 t_M (χ_f = 0.68 ± 0.01, M_f = 62.7) → δf ± 2.4%, δτ (−15, +17)% replaces 3616's GW150914 box;
+> all five a = 0 fundamentals sit inside a box of that shape (scale only — no Kerr member exists).
+> Hypothesis 5/6. PRED-O-39 box amendment owed at V2.3. Verify 7/7.
+> `rcore_derivation/3659_overtone_complex_ray_member6.md`; `reasoning/3659.md`;
+> `code/3659_overtone_complex_ray_member6_verify.py`.
+
 > **3657 — KERRWALL-1: THE SN ↔ LOCAL-WAVE DICTIONARY IS EXACT (Y = X/√η, β_X = β_Y + F/2) AND
 > DOES NOT RESCUE THE KERR MEMBER; H-SURFACE-IMPEDANCE 4/5 — (2,2) AT χ = 0.68 FAILS**. F dr* = d ln η
 > pointwise (8e−11), so the SN family's local wave is Y = X/√η; at a = 0 the map is the identity. Against
