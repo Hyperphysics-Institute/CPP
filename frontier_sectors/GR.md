@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3648; next free: 3649; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3649; next free: 3650; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,18 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
 >
+> **3649 — ATTEMPT 3 FAILS; 3640 §4 ANSWERED**. The budget interior's effective stress-energy
+> from G_μν: ρ rises outward 0.005 → 0.028, m(R) = M, p_r(R) = 0 (the C¹ join), ANISOTROPIC with
+> p_t(R⁻) = 0.0070 — the interior is held static by tangential stress (3638's load smeared inward).
+> p_r has an interior maximum (r̄ = 0.86), so dp_r/dρ < 0 outside it. The static ℓ = 2 even master
+> equation for an anisotropic star derived (isotropic limit = Hinderer exactly; incompressible star
+> → k₂ = 3/4 validated); on the budget background its (ρ+p_r)/c_s² coefficient diverges at the p_r
+> maximum: GR's fluid closure cannot be perturbed — the medium is not a barotropic fluid. The one
+> interior even-parity law must be the register closure (δg through δv, non-fluid, no c_s²):
+> **attempt 3b named**, static run = arbiter of row 6's 3648 caveat. Verify 16/16.
+> `rcore_derivation/3649_budget_effective_fluid_attempt3.md`; `reasoning/3649.md`;
+> `code/3649_budget_effective_fluid_attempt3_verify.py`.
+
 > **3648 — OPEN-GR-SURFACE-IMPEDANCE-1 ATTEMPT 2b FAILS (JUNCTION-1 proper)**. Count law on the
 > trace H₂+2K and absorber on the traceless H₂−K, each mapped to a Robin law on Z through 3378's
 > reconstruction: at ω_QNM they demand Z′/Z = +0.405+0.137i and −0.086−0.638i (target +0.008−0.116i);
