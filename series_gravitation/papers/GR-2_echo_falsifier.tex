@@ -15,6 +15,15 @@
 %   adoption). Spin-saturation finding surfaced by the script's own
 %   first run: dDt/dchi = 0.299 GM/c^3 at the benchmark, so the
 %   +/-0.1 spin bar is +/-0.35% -- mass dominates ~20x.
+% V2.7 (Patch 3673, 7 Sep 2026): THE (2,+1) COMPARATOR LOCATED (Patch 3672). The
+%   complex-ray instrument (3659) carried onto the Chandrasekhar-Detweiler
+%   Z+ potential at Kerr, validated on Leaver's (2,2) first overtone at
+%   chi = 0.68 to 5e-5. On the two model walls at 8M/3 (Z+ = 0; dZ+/dr* = 0)
+%   the prograde comparator is 178 Hz, Q 0.68 and 211 Hz, Q 2.15; under
+%   either wall Q rises monotonically prograde -> retrograde, so the ordering
+%   discriminator stands at exact grade for the model walls (values
+%   wall-conditional; no amplitudes). The "what the theory owes" sentence of
+%   the V2.3 block, missed at V2.6, restated to the re-cut. Restated in place.
 % V2.6 (Patch 3671, 7 Sep 2026): THE IMPEDANCE TARGET RE-CUT (Patch 3670).
 %   Record correction: "|R| ~ 0.53 = the horizon's own reflection from 8M/3"
 %   (V2.3-V2.5) withdrawn -- that number was the horizon's admittance at the
@@ -153,7 +162,7 @@
 %   transport 247, scalar-exact 251) because the s = -2 potential sits
 %   lower; the "+17% above the top" was wrong-SIGNED for GWs. THE
 %   ASSUMPTION STATED IN THE PAPER: X = 0 is assumed, not derived, for
-%   a rotating surface. (2,+1) NOT LOCATED; ordering at eikonal-WKB
+%   a rotating surface. (2,+1) NOT LOCATED [located at V2.7, Patch 3672]; ordering at eikonal-WKB
 %   grade only. Provenance ledger extended to TEN scripts (3356 8/8,
 %   3358 9/9, 3359 9/9, 3361 3/3); the 3348 checker's ledger extended
 %   with it and passes 7/7 with the scope-creep detector satisfied.
@@ -298,7 +307,7 @@ CPP Compact Objects}\\[6pt]
 {\large Second series paper of the Conscious Point Physics
 gravitation series (parent: GR-1)}}
 \author{Thomas Lee Abshier, ND\\Hyperphysics Institute}
-\date{21 August 2026 --- Version~2.6 (7 September 2026)}
+\date{21 August 2026 --- Version~2.7 (7 September 2026)}
 
 \begin{document}
 \maketitle
@@ -928,12 +937,26 @@ the delay $0.95$~ms at $62\,M_\odot$ stands; the amplitude is bounded,
 $(1 - |R|^2) \times 0.44 \times f_{\rm core} \le 0.3$, with
 $f_{\rm core}$ unmodelled --- a bound, not a separate prediction; a
 detection at that delay would measure the core's returned fraction,
-and a null result is consistent with it.  What the theory owes is unchanged in kind and sharpened
-in target: a surface law derived from the cycle that gives the $a = 0$
-real impedance step \emph{and} the Kerr complex reflection.  The
-prograde comparator $(2,+1)$ is \emph{not located} --- the instrument cannot
-determine its frequency or $Q$ --- so the ordering discriminator of
-\S\ref{sec:discriminator} stands at eikonal-WKB grade only.
+and a null result is consistent with it.  What the theory owes is
+re-cut (V2.6, Patch 3670): not a surface law with a number, but whether
+the saturated register propagates the exterior's wave equation below
+the cap with horizon-like absorption behind it --- the admittance the
+exterior needs at its poles is the region's own, and no passive surface
+supplies it at Kerr.  The prograde comparator $(2,+1)$, unlocated since
+Patch 3359 because direct integration cannot reach $Q \sim 1$, is now
+\emph{located} (V2.7, Patch 3672) with the complex-ray instrument
+carried on the Chandrasekhar--Detweiler variable, validated on
+Leaver's Kerr first overtone at $\chi = 0.68$ to $5 \times 10^{-5}$:
+on the two model walls at $8M/3$ (a node, $Z^+ = 0$, and a free end,
+$dZ^+/dr_* = 0$) it is at $178$~Hz, $Q = 0.68$ and $211$~Hz, $Q = 2.15$
+respectively, and under either wall $Q$ rises monotonically from
+prograde to retrograde ($0.60 < 0.68 < 0.81 < 1.02$; $1.86 < 2.15 <
+2.63 < 3.52$ for $m = +2, +1, 0, -2$) while the Kerr modes themselves
+order the other way.  The ordering discriminator of
+\S\ref{sec:discriminator} therefore stands at exact grade for the
+model walls; its \emph{values} remain conditional on the wall law
+(the two walls differ by a factor $3$--$5$ in $Q$), and no amplitudes
+are computed.
 ``Dominant'' for $(2,-2)$ is conditional on the inherited source-side
 excitation model of Patches 3349--3350; the ladder computed no
 amplitudes.  \emph{Superseded, retained:} the orientation-scale
@@ -1194,7 +1217,8 @@ test, 13/13), \texttt{3659} (complex-ray overtone, 7/7),
 \texttt{3660} (axial $J$ correction, 5/5), \texttt{3661}
 (closure stability record, 7/7), \texttt{3668} (Chandrasekhar--Detweiler
 $Z^+$ at Kerr, KERRWALL-1b, 14/14), \texttt{3670} (the impedance
-target as a function; the re-cut, 13/13) --- all
+target as a function; the re-cut, 13/13), \texttt{3672} (the complex
+ray at Kerr; $(2,+1)$ located, 9/9) --- all
 \texttt{series\_gravitation/code/NNNN\_*\_verify.py}, run from the
 repository root.
 

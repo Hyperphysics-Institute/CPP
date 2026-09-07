@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3672 ((2,+1) located); next free: 3673; SESSION 165 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_164_kerrwall1_overtone_conv042_gr2_v2.4.md`); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.5 (3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); OPEN-GR-SURFACE-IMPEDANCE-1 RE-CUT at 3670 (no passive-surface solution; s = 3.22 identified as GR's ℓ = 2 pole admittance); GR-2 at V2.6 (3671); (2,+1) LOCATED at 3672 (complex ray on CD Z⁺; ordering at exact grade on model walls); next act: GR-2 V2.7 (3673), then the re-cut derivation question with CORE-DISSIPATION-1)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3673 (GR-2 V2.7); next free: 3674; SESSION 165 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_164_kerrwall1_overtone_conv042_gr2_v2.4.md`); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.5 (3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); OPEN-GR-SURFACE-IMPEDANCE-1 RE-CUT at 3670 (no passive-surface solution; s = 3.22 identified as GR's ℓ = 2 pole admittance); GR-2 at V2.6 (3671); (2,+1) LOCATED at 3672 (complex ray on CD Z⁺; ordering at exact grade on model walls); GR-2 at V2.7 (3673); next act: the re-cut derivation question with CORE-DISSIPATION-1, or the Session-165 handover at the founder's call)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,14 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), SURFACE-IMPEDANCE-1 RE-CUT at 3670 (its target is GR's complex pole admittance β_hor(ω, ℓ, m, χ), not a constant; no passive surface meets it; the same question as CORE-DISSIPATION-1). KERRWALL-1 DONE at 3657 (SN dictionary) and **KERRWALL-1b CLOSED at 3668** (Chandrasekhar–Detweiler Z⁺, literature-bound, validated to 3e−5 against Leaver): the Kerr member of H-SURFACE-IMPEDANCE FAILS on both realizations tested.**
 >
+> **3673 — GR-2 → V2.7 (restatement in place); METH-L1-017 registered.** The V2.3 block's "(2,+1) is not located …
+> eikonal-WKB grade only" restated to located / exact grade on the model walls (values wall-conditional; no
+> amplitudes); the same block's "what the theory owes … the a = 0 real impedance step and the Kerr complex
+> reflection" (missed at V2.6) restated to the 3670 re-cut. Step-E: `paper_catalog.md` (GR-2 2.7), OSF queue +
+> manifest, `predictions.md` PRED-O-39 (e) restated + header, `methods_catalogue/methods_catalogue.md` (METH-L1-015
+> reuse line; **METH-L1-017 — the CD Z⁺ Kerr wall instrument**, with its validation protocol, the b₂-sign finding
+> and the horizon-start caution), `paper_regeneration_ledger.md` GR-2 → 2.7, `future_projects.md` queue, Tier-1 log.
+
 > **3672 — THE COMPLEX RAY AT KERR ON THE CD Z⁺ INSTRUMENT; (2,+1) LOCATED; THE ORDERING AT EXACT GRADE (MODEL
 > WALLS).** METH-L1-015 (3659) carried onto 3668's closed-form CD Z⁺ potential (SN's numerically-differentiated U is
 > not fit for a complex path): r as a complex state with dr/dr* = Δ/(r²+a²), λ at complex ω from Leaver's angular

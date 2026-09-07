@@ -253,6 +253,7 @@ the outgoing series is fitted at complex points on the ray; the path avoids the 
 by θ- and far-end-independence and against a known mode. Instrument: `series_gravitation/code/3659_*` (`wall_values_ray`,
 `beta_horizon_ray`); validated on Leaver's Schwarzschild n = 1 mode to five figures. Applies unchanged to the
 Sasaki–Nakamura equation (F, U analytic). Supersedes the "very-broad-mode instrument" gap of 3359 §5 at a = 0.
+**Reuse (Patch 3672):** carried to Kerr on the Chandrasekhar–Detweiler Z⁺ potential (METH-L1-017), r as a complex state with dr/dr* = Δ/(r²+a²), λ at complex ω from Leaver's angular CF; validated on Leaver's Kerr (2,2) n = 1 mode at χ = 0.68 to 5e−5; located the (2,+1) comparator (3359 §4's limit discharged). Prefer a closed-form potential for the ray — SN's numerically-differentiated U is not fit for a complex path. Instrument: `series_gravitation/code/3672_*`.
 
 ### METH-L1-016 — First-derivative gauge removal in the Sasaki–Nakamura equation (local-wave variable)
 **Layer 1 (mathematical technique). Registered Session 164, Patch 3667 (first use Patch 3657). NEW METHOD.**
@@ -262,6 +263,20 @@ to X as β_X = β_Y + F(r_w)/2; the map is the identity at a = 0. Use it wheneve
 physically (impedance, reflectivity) and must be imposed on the SN variable. Caution (CONV-042): the gauge term is
 imaginary-dominated at 8M/3; it does not by itself account for the Kerr horizon law's real part. Instrument:
 `series_gravitation/code/3657_*`.
+
+### METH-L1-017 — Chandrasekhar–Detweiler master variable as the Kerr wall instrument (literature-bound, isospectrality-validated)
+**Layer 1 (mathematical technique). Registered Session 165, Patch 3673 (first use Patch 3668). NEW INSTRUMENT.**
+For wall laws at Kerr use the Chandrasekhar–Detweiler equation X'' + (ω² − V_CD)X = 0 (Hatsuda & Kimura,
+arXiv:2006.15496, eqs. 12–17; Chandrasekhar & Detweiler 1976; Detweiler 1977) rather than Sasaki–Nakamura: it is
+already Schrödinger-form (no first-derivative term, so a physical law applies directly), the potential is closed-form
+(no numerical derivative; analytic in r, hence usable on a complex ray), and it selects parity by the sign of κ₂
+(κ₂ > 0 → Zerilli at a = 0; κ₂ < 0 → Regge–Wheeler). Transcribe from a source, never memory. **Validation protocol
+(mandatory, 3668):** a = 0 pointwise reduction to Zerilli/RW; both parities' horizon poles = Leaver's Schwarzschild
+QNM; at Kerr the horizon pole = Leaver's radial CF (3358) — this catches a wrong am/σ sign, κ₂ or term. **Finding:**
+only b₂ = −3α² is isospectral with Teukolsky (b₂ = +3α² is not, both κ₂ signs); the even-type variable is
+Z⁺ = (κ₂ > 0, b₂ = −3α²). **Numerical caution:** at complex ω start the horizon integration at r₊ + 1e−6 (1e−3 leaves
+0.2–0.4% in the poles); real-ω laws are insensitive. Carries r_w(χ) from F_n = 4/9 (3670). Instruments:
+`series_gravitation/code/3668_*` (potential, wall solver, horizon law), `3670_*` (spin curve), `3672_*` (complex ray).
 
 ## Layer 3 — Heuristic strategies
 
