@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3646; next free: 3647; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3647; next free: 3648; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,17 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
 >
+> **3647 — LEDGER ROW 6 PASSES [PCD-EXT]: k₂ = +0.042 (FREE branch)**. Budget interior's
+> level-set surface has χ_eff = 1 (budget law: χ_eff = cap/v = 1 at v = cap): the tidal
+> displacement is identical to the census-frame case (3633). k₂ = +0.042, Λ = +3.8,
+> y_R = −3.22, FREE branch (Hinderer pole y* = −6.81; rigid cap was y_R = −10.33, RIGID
+> branch). Spring family bracket k₂ ∈ [−0.080, +0.042]; budget surface at the free end.
+> χ* = 0.49 crossover: if H-SURFACE-IMPEDANCE's static χ_s < 0.49, k₂ flips negative —
+> observable discriminant for ET/CE. PRED-O-40 strengthened. H-SURFACE-IMPEDANCE static
+> sector OWED (fifth group member, pending JUNCTION-1 at ω = 0). Verify 22/22.
+> `rcore_derivation/3647_ledger_row6_love_number_budget_interior.md`; `reasoning/3647.md`;
+> `code/3647_ledger_row6_love_number_budget_interior_verify.py` (22/22).
+
 > **3646 — FOUNDER'S METHOD ENACTED AS RULE 6** (derive → statistics-level hypothesis → group →
 > reconnect; text filed verbatim `founders_voice/founder_method_derive_then_hypothesis_2026-09-06.md`).
 > SURFACE-IMPEDANCE-1 attempt 2a (two-channel wall as an admittance sum: 3390 trace element +
