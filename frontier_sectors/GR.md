@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3660 (odd-sector J correction); next free: 3661; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3661 (closure stability record); next free: 3662; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,18 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1b (even-type Kerr variable, literature-bound; KERRWALL-1's SN dictionary DONE at 3657, Kerr member of H-SURFACE-IMPEDANCE FAILS).**
 >
+> **3661 — THE REGISTER CLOSURE'S EVEN-SECTOR STABILITY, RECORDED (item 5): STABLE; c07's trapped mode is
+> MARGINAL**. Argument principle on K − qH₂ = 0 in the pole-free form (c_a Z + c_b Z′; |c_b| ≥ 0.47), contour
+> Re ω ∈ [0.005, 1.2], Im ω ∈ [5e−4, 0.4] — reaching the static corner 3643's count stopped short of — with the
+> bottom edge refined at the trapped poles and the vertical edges refined near the real axis (where the phase
+> turns fastest; the first runs' 2.1-rad steps were there): winding 0 for C5, c07, and the horizon-equivalent
+> control; max steps 0.51/0.67/0.39 rad. Trapped modes resolved to 3e−14: C5 0.16476 − 1.69e−4 i (Q 489,
+> 86 Hz, τ 1.8 s) damped; **c07 0.02440 − 3.56e−8 i (Q 3×10⁵, 12.7 Hz, τ 2.4 h) — marginal; 3654's "≈ −0.003"
+> superseded** (0.8% from 3650's static zero mode). Neither lock is live; stability certified, not
+> phenomenology. Row 8 now covers both interiors. Checkpoint `session_logs/2026-09-07_session_164_checkpoint.md`
+> (§15.14). Verify 7/7. `rcore_derivation/3661_closure_lock_stability_record.md`; `reasoning/3661.md`;
+> `code/3661_closure_lock_stability_record_verify.py`.
+
 > **3660 — RECORD CORRECTION: 3390's odd-sector "208 Hz, Q 7.9" line at 8M/3 used J = 6.75 (the 9M/4
 > slowness); with J = 32/9 the same wall gives 0.4501 − 0.1246 i, 235 Hz, Q 1.8** — broad, Dirichlet-like,
 > +20.5% / −28.6% from Schwarzschild, outside the box like every lossless-transmit wall (3644); the odd/even
