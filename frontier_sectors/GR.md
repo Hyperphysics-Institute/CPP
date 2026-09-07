@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3663 (CONV-042 package); next free: 3664; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; **CONV-042 DISPATCHED at 3663** — the extension's verdict + the surface impedance, returns pending)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3664 (CONV-042 trigger named); next free: 3665; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; **CONV-042 DISPATCHED at 3663** — the extension's verdict + the surface impedance, returns pending)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,13 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1b (even-type Kerr variable, literature-bound; KERRWALL-1's SN dictionary DONE at 3657, Kerr member of H-SURFACE-IMPEDANCE FAILS).**
 >
+> **3664 — CONV-042's dispatch basis corrected on the founder's check against the review economy protocol.**
+> v1.0's "trigger 2 — a verdict on an adopted structure" was not a protocol trigger. Named exactly: trigger 1's
+> axiom-level-change clause (the exclusion of the adopted extension, built on by V2.3 — cannot wait) batched
+> with a trigger-2b item (the worker counted its own hypothesis's members; self-denying default taken where it
+> existed). Neither a win-check nor a help request; not 2a. Questions, binding rules and EK-1 unchanged.
+> `review/conv042_…_v1.0.md` (§ Dispatch basis); `review/reviews-CONV-042.md`.
+
 > **3663 — CONV-042 DISPATCHED: the extension's verdict and the surface as an impedance (one round on the
 > whole, as held since Session 161).** Package `review/conv042_extension_verdict_surface_impedance_review_package_v1.0.md`;
 > receiver `review/reviews-CONV-042.md`. Nine frozen questions: the closure junction and the exclusion of
