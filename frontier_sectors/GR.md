@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3665 (CONV-042 adjudicated); next free: 3666; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; **CONV-042 ADJUDICATED at 3665** — extension EXCLUDED 4/4, GR-2 → V2.4)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3667 (handover compliance); next free: 3668; SESSION 164 CLOSED 7 Sep at handover `handovers/2026-09-07_session_164_kerrwall1_overtone_conv042_gr2_v2.4.md`; CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.4; next act OPEN-GR-KERRWALL-1b)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,17 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1b (even-type Kerr variable, literature-bound; KERRWALL-1's SN dictionary DONE at 3657, Kerr member of H-SURFACE-IMPEDANCE FAILS).**
 >
+> **3667 — Handover protocol compliance, on the founder's check.** The 3666 draft audit had bundled five Step-E registries
+> as N/A without looking and omitted the chat-echo. Done: methods catalogue METH-L1-015 (complex ray) and METH-L1-016
+> (SN gauge removal); `future_projects.md` Session-164 queue; `organizational_frontier.md` OPEN-ORG-024 (seat feeding
+> discipline); `paper_catalog.md` regenerated (128 papers, GR-2 at V2.4); OSF queue + manifest regenerated after the
+> `.tex` changes; `templates/review_economy_protocol.md` §7 precedent row; handover audit completed per registry, with
+> anti-priorities; kickoff line + orienting block echoed in chat.
+
+> **3666 — Session 164 handover** (`handovers/2026-09-07_session_164_kerrwall1_overtone_conv042_gr2_v2.4.md`;
+> Tier-1 log `session_logs/2026-09-07_session_164_log.md`). Next act: OPEN-GR-KERRWALL-1b (Z⁺, literature-bound),
+> then attempt 4 on OPEN-GR-SURFACE-IMPEDANCE-1 with the two-datum target, then the complex ray on SN for (2,+1).
+
 > **3665 — CONV-042 ADJUDICATED (4 admissible seats: GPT-5.6 [scripts own-run 7/7, 5/5, 16/16, 13/13; EK-1 ✓],
 > Grok [harness on L5, T-2; EK-1 ✓], Gemini [inspection; EK-1 ✗ — inferred the horizon QNM], DeepSeek [inspection;
 > scripts not supplied]; Copilot OFF-PACKAGE, 0/1).** Q1 SOUND-WITH-CAVEATS 3/4 (Λ = +714 pole-adjacent; sign
