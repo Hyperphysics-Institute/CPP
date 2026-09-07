@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3661 (closure stability record); next free: 3662; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3662 (GR-2 V2.3); next free: 3663; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,19 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1b (even-type Kerr variable, literature-bound; KERRWALL-1's SN dictionary DONE at 3657, Kerr member of H-SURFACE-IMPEDANCE FAILS).**
 >
+> **3662 — GR-2 → V2.3: THE EXTENSION EXCLUDED; WHAT SURVIVES (Patches 3643–3661 written up).** One
+> paragraph after the V2.2 block, in the paper's voice: the second junction datum derived → Λ = +714 → excluded
+> by GW250114 (a failed extension, not a datum to refit); no derived static junction exists, k₂'s sign open;
+> every transparent wall damps ~30% too fast; the ringdown requires |R| ≈ 0.53 at 8M/3 (the horizon's own) =
+> an impedance ~3.2× (hypothesis, never adopted): a = 0 fundamentals ℓ = 2–4 both parities, static Λ = +3.0,
+> overtone (weakly) — FAILS at Kerr (form; |R| = 0.71 at −17° required; even-type variable untested); the two
+> instruments; the two record corrections (axial 235 Hz Q 1.8; closure interiors stable but with unseen
+> trapped modes); the empiric re-cut to GW250114; the echo amplitude re-cut; the owed law sharpened to two
+> data. Changelog, date, Verification section updated; compiles (pdflatex, 0 errors) — founder recompiles the
+> PDF. predictions.md: PRED-O-39 V2.3 bracket, PRED-O-40 carried, header prepended. Ledger §5 struck. No
+> number computed. Founder's part: apply, recompile PDF, OSF when the CONV-042 round returns.
+> `papers/GR-2_echo_falsifier.tex` (V2.3); `predictions.md`.
+
 > **3661 — THE REGISTER CLOSURE'S EVEN-SECTOR STABILITY, RECORDED (item 5): STABLE; c07's trapped mode is
 > MARGINAL**. Argument principle on K − qH₂ = 0 in the pole-free form (c_a Z + c_b Z′; |c_b| ≥ 0.47), contour
 > Re ω ∈ [0.005, 1.2], Im ω ∈ [5e−4, 0.4] — reaching the static corner 3643's count stopped short of — with the
