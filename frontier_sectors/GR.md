@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3653; next free: 3654; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3654; next free: 3655; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,19 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
 >
+> **3654 — H-WALL-LOCK-C5 MEMBER 2 FAILS; H-SURFACE-IMPEDANCE 4/4**. The closure's wall ratio is local,
+> so the dynamical junction is K − qH₂ = 0 at 8M/3: a real (lossless) Robin law on Z whose ω → 0 limit
+> reproduces 3650 exactly. Under either lock the ℓ = 2 spectrum has NO pole near GR's ringdown, only a
+> long-lived trapped mode: C5 0.1648 − 0.0002i (Q ≈ 500, 86 Hz @62 M☉); c07 ≈ 0.024 (3650's near-zero
+> mode, ~23 Hz at GW250114's masses, in band). Member 2 fails; hypothesis 1/2, not carried. The
+> impedance hypothesis's static limit (β → 0) gives k₂ = +0.033, Λ = +3.0 — inside GW250114 ×10, and
+> equal to 3633's harmonic-pattern lapse reading: 4/4 descriptive, one number, static member free.
+> At ω = 0 the closure demands K/H ∈ {2/3, 1}, the data-descriptive law 1.46: the count→metric closure
+> at the surface is NOT a fixed local ratio — the surface is an impedance, not a dictionary. Rule 6's
+> threshold met: attempt 4 on OPEN-GR-SURFACE-IMPEDANCE-1 admissible, static face first. Verify 12/12.
+> `rcore_derivation/3654_wall_lock_c5_dynamical.md`; `reasoning/3654.md`;
+> `code/3654_wall_lock_c5_dynamical_verify.py`.
+
 > **3653 — VERDICT: [PCD-EXT] AS DERIVED IS EXCLUDED (rule 5); H-WALL-LOCK-C5 NAMED (rule 6)**. Founder
 > declined to pin the displacement mechanism ("I don't know anything about this mechanism. See
 > PD-007"; filed verbatim). The cycle as stated decides it: Displace acts on the K-of-D sample, so
