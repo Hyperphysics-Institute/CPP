@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3662 (GR-2 V2.3); next free: 3663; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3663 (CONV-042 package); next free: 3664; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; **CONV-042 DISPATCHED at 3663** — the extension's verdict + the surface impedance, returns pending)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,16 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1b (even-type Kerr variable, literature-bound; KERRWALL-1's SN dictionary DONE at 3657, Kerr member of H-SURFACE-IMPEDANCE FAILS).**
 >
+> **3663 — CONV-042 DISPATCHED: the extension's verdict and the surface as an impedance (one round on the
+> whole, as held since Session 161).** Package `review/conv042_extension_verdict_surface_impedance_review_package_v1.0.md`;
+> receiver `review/reviews-CONV-042.md`. Nine frozen questions: the closure junction and the exclusion of
+> THEO-PCD-BUDGET (Q1–2; NOT-EXCLUDED reopens row 6 with a named next-order term, no refit); transparency
+> theorem vs reconstruction artefact (Q3; ARTEFACT voids row 7's requirement and the pin); the hypothesis's
+> 5/6 scoring (Q4) and its Kerr failure through the SN dictionary (Q5; NOT-YET-TESTED makes KERRWALL-1b
+> blocking); the record corrections (Q6); the GW250114 re-cut (Q7); scope (Q8); V2.3 (Q9). EK-1 sealed
+> (SHA-256 f4ef3ffc…) on the ℓ = 2 impedance pole and the J = 32/9 axial pole. Founder's mechanical part:
+> push, then one identical paste per seat; returns inline to the receiver.
+
 > **3662 — GR-2 → V2.3: THE EXTENSION EXCLUDED; WHAT SURVIVES (Patches 3643–3661 written up).** One
 > paragraph after the V2.2 block, in the paper's voice: the second junction datum derived → Λ = +714 → excluded
 > by GW250114 (a failed extension, not a datum to refit); no derived static junction exists, k₂'s sign open;
