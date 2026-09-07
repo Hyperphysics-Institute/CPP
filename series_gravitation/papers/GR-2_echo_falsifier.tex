@@ -15,6 +15,21 @@
 %   adoption). Spin-saturation finding surfaced by the script's own
 %   first run: dDt/dchi = 0.299 GM/c^3 at the benchmark, so the
 %   +/-0.1 spin bar is +/-0.35% -- mass dominates ~20x.
+% V2.5 (Patch 3669, 7 Sep 2026): KERRWALL-1b CLOSED (Patch 3668). The even-type
+%   Kerr master variable (Chandrasekhar-Detweiler Z+), transcribed from Hatsuda &
+%   Kimura arXiv:2006.15496 (not memory) and validated at a = 0 (Zerilli/RW
+%   pointwise; both parities' poles = Leaver Schwarzschild to 2e-5) and at
+%   chi = 0.68 (poles = Leaver radial CF to 3e-5; the b2 = +3 alpha^2 sign
+%   combinations found non-isospectral and excluded), does NOT rescue the Kerr
+%   member: -27%/-32% in the surface frame, no frame and no s in [1.5, 40] in
+%   the box. The horizon from 8M/3 reflects Z+ at |R| = 0.77, -13 deg (SN local
+%   wave: 0.71, -17 deg): a complex impedance in the even variable too. The
+%   Kerr failure now reads "on both realizations tested" (the V2.4 "until it is
+%   run" clause is superseded). Record correction folded in: the a = 0 Zerilli
+%   horizon point of Patch 3644 is a complex-frequency number; Patch 3657's
+%   a = 0 parity contrast compared the parities at mismatched frequency and is
+%   withdrawn (the a = 0 group's parity-robustness stands). Count unchanged:
+%   1 calibration / 4 tests / 2 non-exclusions / 1 failure. Restated in place.
 % V2.4 (Patch 3665, 7 Sep 2026): CONV-042 RESTATEMENT (3/4 RESTATE-REQUIRED; 4 admissible
 %   seats). Bound: the extension EXCLUDED 4/4 (on its derived positive branch;
 %   GW250114's positive-prior bound does not constrain a negative branch);
@@ -266,7 +281,7 @@ CPP Compact Objects}\\[6pt]
 {\large Second series paper of the Conscious Point Physics
 gravitation series (parent: GR-1)}}
 \author{Thomas Lee Abshier, ND\\Hyperphysics Institute}
-\date{21 August 2026 --- Version~2.4 (7 September 2026)}
+\date{21 August 2026 --- Version~2.5 (7 September 2026)}
 
 \begin{document}
 \maketitle
@@ -793,6 +808,7 @@ star ($0.15$--$0.30$).  Neutron stars do not saturate; the fixed
 compactness applies to collapsed objects, and the neutron-star
 mass--radius data do not test it.
 \textbf{(V2.3, Patches 3643--3661, restated at V2.4 under CONV-042
+and at V2.5 with KERRWALL-1b closed, Patch 3668
 --- the extension excluded; what survives.)}  The second junction datum of V2.2 was derived, and the
 derivation failed its first cold test.  Under the corpus's working
 extension (a capped per-Moment bit budget, no new axiom) the static
@@ -836,20 +852,29 @@ $\Lambda = +3.0$ survives a one-sided bound, and the $\ell = 2$
 overtone sits inside GW250114's overtone test
 ($\delta f_{221} = 0.1 \pm 0.3$, damping unconstrained) only because
 that interval is $\pm 30\%$, while lying $-12\%/-25\%$ from the Kerr
-overtone.  \emph{It fails at Kerr on the Sasaki--Nakamura local-wave
-realization.}  With the Sasaki--Nakamura local wave
-identified exactly ($Y = X/\sqrt{\eta}$; the SN first-derivative term
-is a pure gauge factor), the $(2,2)$ line at $\chi = 0.68$ lies outside
-the ringdown box in every frame and for every $s \in [1.5, 40]$: the
-failure is the form.  Seen from $8M/3$ in the surface's frame the Kerr
-horizon reflects the local wave with $|R| = 0.71$ at $-17^\circ$ --- a
-\emph{complex} impedance, a lossy spring --- where the hypothesis is a
-real one.  That is the Kerr requirement any surface law on this
-realization must meet, in a surface frame that is itself a chosen
-prescription; the even-type Kerr variable (Chandrasekhar--Detweiler),
-on which the hypothesis was pinned at $a = 0$, is untested and
-registered (OPEN-GR-KERRWALL-1b) --- until it is run the failure is
-the SN realization's, not the hypothesis's at Kerr outright.  Two instruments are new: the SN
+overtone.  \emph{It fails at Kerr on both realizations tested.}  On the
+Sasaki--Nakamura local wave, identified exactly ($Y = X/\sqrt{\eta}$;
+the SN first-derivative term is a pure gauge factor), the $(2,2)$ line
+at $\chi = 0.68$ lies outside the ringdown box in every frame and for
+every $s \in [1.5, 40]$; on the even-type Kerr master variable
+(Chandrasekhar--Detweiler $Z^+$, the variable the hypothesis was pinned
+on at $a = 0$; transcribed from Hatsuda \& Kimura \cite{hatsuda2020}
+and validated against Leaver's Kerr quasinormal frequency to $3 \times
+10^{-5}$ before any wall number, Patch 3668) it lies outside by
+$-27\%/-32\%$ in the surface frame, again for every frame and every
+$s$: the failure is the form.  Seen from $8M/3$ in the surface's frame
+the Kerr horizon reflects the SN local wave with $|R| = 0.71$ at
+$-17^\circ$ and $Z^+$ with $|R| = 0.77$ at $-13^\circ$ --- a
+\emph{complex} impedance, a lossy spring, in either variable --- where
+the hypothesis is a real one.  That is the Kerr requirement any surface
+law must meet, basis-robust in kind and basis-dependent in number
+($|R| \approx 0.7$--$0.8$ at $-13^\circ$ to $-17^\circ$), in a
+surface frame that is itself a chosen prescription.  (A record
+correction: the $a = 0$ horizon point on which $s$ was pinned is a
+complex-frequency number; at matched frequency the two parities'
+horizon laws at $8M/3$ are alike, so there was never an $a = 0$ reason
+to expect the even variable to differ --- consistent with the $a = 0$
+group's parity-robustness above.)  Two instruments are new: the SN
 local-wave dictionary above, and a complex-ray integration
 ($r_* = r_{*w} + t\,e^{i\theta}$, $\theta > \arctan|\omega_I/\omega_R|$)
 that reaches the overtone --- Leaver's Schwarzschild $n = 1$ mode to
@@ -1132,7 +1157,8 @@ computation-before-claims.
 dynamical locks), \texttt{3657} (SN local-wave dictionary and the Kerr
 test, 13/13), \texttt{3659} (complex-ray overtone, 7/7),
 \texttt{3660} (axial $J$ correction, 5/5), \texttt{3661}
-(closure stability record, 7/7) --- all
+(closure stability record, 7/7), \texttt{3668} (Chandrasekhar--Detweiler
+$Z^+$ at Kerr, KERRWALL-1b, 14/14) --- all
 \texttt{series\_gravitation/code/NNNN\_*\_verify.py}, run from the
 repository root.
 
@@ -1165,6 +1191,12 @@ Phys.\ Rev.\ D \textbf{97}, 124037 (2018).
 search for gravitational wave echoes in data from the first and
 second observing runs of Advanced LIGO and Advanced Virgo,''
 Phys.\ Rev.\ D \textbf{101}, 064012 (2020).
+\bibitem{hatsuda2020} Y.~Hatsuda and M.~Kimura, ``Semi-analytic
+expressions for quasinormal modes of slowly rotating Kerr black holes,''
+Phys.\ Rev.\ D \textbf{102}, 044032 (2020), arXiv:2006.15496; the
+Chandrasekhar--Detweiler potential after S.~Chandrasekhar and
+S.~Detweiler, Proc.\ R.\ Soc.\ A \textbf{350}, 165 (1976) and
+S.~Detweiler, Proc.\ R.\ Soc.\ A \textbf{352}, 381 (1977).
 \end{thebibliography}
 
 \end{document}

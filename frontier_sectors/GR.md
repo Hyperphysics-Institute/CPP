@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3668 (KERRWALL-1b closed); next free: 3669; SESSION 165 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_164_kerrwall1_overtone_conv042_gr2_v2.4.md`); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.4 (V2.5 restatement pending 3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); next act: attempt 4 on OPEN-GR-SURFACE-IMPEDANCE-1)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3669 (GR-2 V2.5); next free: 3670; SESSION 165 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_164_kerrwall1_overtone_conv042_gr2_v2.4.md`); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.5 (3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); next act: attempt 4 on OPEN-GR-SURFACE-IMPEDANCE-1)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,15 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), SURFACE-IMPEDANCE-1 (two-datum target, now bracketed across two Kerr realizations). KERRWALL-1 DONE at 3657 (SN dictionary) and **KERRWALL-1b CLOSED at 3668** (Chandrasekhar–Detweiler Z⁺, literature-bound, validated to 3e−5 against Leaver): the Kerr member of H-SURFACE-IMPEDANCE FAILS on both realizations tested.**
 >
+> **3669 — GR-2 → V2.5 (restatement in place).** The Kerr failure of H-SURFACE-IMPEDANCE now reads "fails at Kerr on
+> both realizations tested" (SN local wave 3657; CD Z⁺ 3668); V2.4's "until it is run the failure is the SN
+> realization's" superseded; the Kerr requirement bracketed (|R| ≈ 0.7–0.8 at −(13–17)°); the a = 0 record
+> correction folded in as a parenthesis; Hatsuda & Kimura added to the bibliography; 3668 in the verify list.
+> Step-E items done per registry: `paper_catalog.md` regenerated (GR-2 row 2.5); OSF queue + manifest
+> regenerated after the `.tex` change; `predictions.md` PRED-O-39 bracket + header; `paper_regeneration_ledger.md`
+> GR-2 row brought from a stale 2.2 to 2.5; `future_projects.md` Session-165 queue (P1 = attempt 4 on
+> OPEN-GR-SURFACE-IMPEDANCE-1; P2 = complex ray on the CD Z⁺ instrument for (2,+1)); Tier-1 log. No panel.
+
 > **3668 — OPEN-GR-KERRWALL-1b CLOSED: THE EVEN-TYPE KERR VARIABLE (CHANDRASEKHAR–DETWEILER Z⁺) DOES NOT
 > RESCUE THE KERR MEMBER.** Literature-bound as required: the CD potential transcribed from Hatsuda & Kimura
 > (arXiv:2006.15496, eqs. 12–17; their λ = 3359's `lam`, same ω conventions), nothing from memory. Validated
