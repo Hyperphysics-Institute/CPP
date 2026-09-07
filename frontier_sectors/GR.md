@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3656 (handover); next free: 3657; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3657 (KERRWALL-1); next free: 3658; SESSION 164 OPEN 7 Sep, continuing from handover `handovers/2026-09-07_session_163_pcd_ext_excluded_gw250114_surface_impedance.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -52,8 +52,29 @@
 > (k₂ ≠ 0; FIRST COMPUTATION), fixed compactness 0.375 for every mass,
 > the fate of absorbed energy (EHT surface-luminosity limits: founder's
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
-> LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
+> LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1b (even-type Kerr variable, literature-bound; KERRWALL-1's SN dictionary DONE at 3657, Kerr member of H-SURFACE-IMPEDANCE FAILS).**
 >
+> **3657 — KERRWALL-1: THE SN ↔ LOCAL-WAVE DICTIONARY IS EXACT (Y = X/√η, β_X = β_Y + F/2) AND
+> DOES NOT RESCUE THE KERR MEMBER; H-SURFACE-IMPEDANCE 4/5 — (2,2) AT χ = 0.68 FAILS**. F dr* = d ln η
+> pointwise (8e−11), so the SN family's local wave is Y = X/√η; at a = 0 the map is the identity. Against
+> the expectation: F(r_w)/2 = +0.011 − 0.084 i is imaginary-dominated — 3644's "+0.063" real part is in
+> the local wave, not the gauge factor (3644 §3's attribution superseded). Kerr test, s = 3.218
+> unchanged, frames Ω_w / Ω_H / 0: −18.9/−47.4%, −14.3/−38.2%, −20.5/−50.5% — all out, worse than
+> 3644's undictionaried form; **s-scan 1.5–40, both frames: nothing enters the box — the failure is the
+> FORM.** The Kerr requirement recorded: seen from 8M/3 in the surface's frame the horizon reflects the
+> local wave with |R| = 0.71 at −17° (a = 0 Zerilli: 0.53 at −3°; the hypothesis: 0.53 at 0°) — a
+> complex impedance, a lossy spring; s_Kerr re-read = 5.7 (Ω_w), not universal. a = 0 side: the
+> horizon law on Regge–Wheeler at real ω is +0.105 − 0.206 i (Zerilli +0.008 − 0.116 i) — the
+> near-pure-imaginary horizon is an even-variable property — yet the hypothesis on RW with the
+> Zerilli-pinned s lands ℓ = 2 (−0.8/+12.0%) and ℓ = 3 (−1.2/+0.5%) in the box: the a = 0 group is
+> parity-robust. Untested door: the even-type Kerr variable (Chandrasekhar–Detweiler Z⁺), literature
+> object with 3359 §1's recall risk — **OPEN-GR-KERRWALL-1b** registered (owed; validate at a = 0
+> against Chandrasekhar's parity map first). CANDIDATE-S-AREA not discriminated (no Kerr member);
+> GW250114 ringdown box moot for this hypothesis; OPEN-GR-SURFACE-IMPEDANCE-1's target is now two
+> data (a = 0 real step AND Kerr complex reflection). Verify 13/13. Ledger row 7 + §5 updated.
+> `rcore_derivation/3657_kerrwall1_sn_local_wave_dictionary.md`; `reasoning/3657.md`;
+> `code/3657_kerrwall1_sn_local_wave_dictionary_verify.py`.
+
 > **3655 — ATTEMPT 4 STEP 1: CANDIDATE-S-AREA (s = ψ⁴|cap = 3.160), NOT DISCRIMINATED**. The three cap
 > constants of the right size — ψ⁴ = 256/81 (areal/lattice area ratio), J = 32/9, 1/N² = 4 — all sit in
 > the GW150914 box on ℓ = 2, 3, 4; ψ⁴ is closest to the 3644 pin (1.9%) with a mechanism (waveguide-area
