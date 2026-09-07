@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3651; next free: 3652; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3652; next free: 3653; SESSION 163 OPEN 5–6 Sep, continuing from handover `handovers/2026-09-05_session_162_shell_datum_saturation_pd007_ledger.md`; CONV-042 HELD, to be re-cut as the PD-007 extension round)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -54,6 +54,16 @@
 > picture asked). Open: CORE-DISSIPATION-1, EXCITATION-1 (reduced),
 > LATTICE-FRAME-1 (target Re β ≈ −0.03), KERRWALL-1 (ansatz A).**
 >
+> **3652 — SURVIVAL CONDITION IN DICTIONARY TERMS; FOUNDER'S QUESTION**. The closure's wall ratio is
+> q = 1 − v/2 exactly under c07 = the c07 trace lock −3(1 − v/2) = −2 at the wall (3633 §2). Survival
+> (q ≥ 0.762) ⟺ lock ≤ −2.29: c07's −2 fails (Λ = +714), C5's linear −3 passes (q = 1, k₂ = +0.102,
+> Λ = +9.2, ×4 inside GW250114). Two-channel reading: q = (2/3)χ_ψ/χ_N; survival needs the lattice-
+> spacing channel to saturate ≥ 14% LESS than the clock-rate channel. 3640 §4's question with a number:
+> does the neighbours' displacement saturate by the same K/D as the count? Put to the founder (PD-006).
+> If χ_ψ ≠ χ_N the whole extension (3640–3646, 3649) is rerun once. Verify 7/7.
+> `rcore_derivation/3652_survival_condition_trace_lock.md`; `reasoning/3652.md`;
+> `code/3652_survival_condition_trace_lock_verify.py`.
+
 > **3651 — COLD TEST: PRED-O-40 vs GW250114 — THE CLOSURE'S CENTRAL VALUE IS EXCLUDED**. arXiv:2512.01918
 > (Dec 2025): Λ̃ < 34.8 at 90% (log-uniform; 155 uniform), Λ₁ < 28.2; near-equal masses so Λ̃ = Λ;
 > convention = the corpus's. The register closure's one-gauge junction (3650, K/H = 2/3) gives Λ = +714:
