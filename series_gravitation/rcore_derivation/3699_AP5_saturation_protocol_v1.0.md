@@ -43,7 +43,9 @@ Depth arithmetic, the conservation theorem, the two local stiffness facts, the d
 5. PRED-O-41: the transient release burst at a merger — magnitude and timescale.
 6. The (l_P/λ)² inter-layer EM coupling, derived.
 7. OPEN-GR-RCORE-ALBEDO-1: the surface's coherent EM re-radiation under driven, bounded DP motion (3701 §3).
-8. **The saturated-core neutron star under DRAIN** (gravity × K/D in the core, not zero): re-derive the flat-core branch (3634–3637) and re-score NS.2–NS.5 and GR-2 §(iv). Most consequential open item.
+8. ~~DRAIN neutron stars~~ — DONE (3704): core keeps χ ≈ 0.78 of GR's gradient; M_max ×1.3 at fixed EOS; radii GR's; knee withdrawn; stability ordinary.
+9. The DRAIN core's k₂ (3685 machinery with χ) — low stakes.
+10. GR-2 V2.9: restate §(iv) (no rising radii; M_max boost, EOS-degenerate) and PRED-O-40's withdrawal (3703).
 
 ## §5 Enacted on ratification (Patch 3699)
 THEO-PCD-SEA retired into D3; GR-2 → V2.8 (next patch) (AP-5 as the working amendment; rows 5/6/7 restated; the GW250114 run-3 result; H-SURFACE-IMPEDANCE retired; the CONV-043 and CONV-044 standing objections verbatim); `predictions.md`: PRED-O-39 → null, PRED-O-40 → 0 < Λ̃ ≲ 1.7, PRED-O-41 candidate; `axiom-registry.md`: AP-5 entered under A3′ with its anchors.
