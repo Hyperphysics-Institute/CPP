@@ -37,8 +37,8 @@ Depth arithmetic, the conservation theorem, the two local stiffness facts, the d
 
 ## §4 Owed after ratification (in order)
 1. ~~Lockstep inheritance~~ — DONE (3701) for V_i = 0; EM case → item 7.
-2. The object's Λ̃: the visible shell with the sea's inner boundary at v = 2 and c_s ≤ c/2.
-3. The layer-1/layer-2 clock law (the lapse floor and interior clock re-derived from D1 + D2; the 4/3 = 2·cap coincidence tested there).
+2. The object's Λ̃ — BOUNDED at 3702 from the ringdown: shell mass μ ≲ 0.10 (GW150914) → 0 < Λ̃ ≲ 0.2; the number depends on the interior profile (item 3).
+3. The layer-1/layer-2 clock law (the lapse floor and interior clock re-derived from D1 + D2; the 4/3 = 2·cap coincidence tested there) — NOW CONSTRAINED (3702): for black holes ≳ 90 % of M inside the wave horizon 2M; for neutron stars the flat core (3634–3637) stands.
 4. The D1 clip embedded in EU-1's H_eff chain; f ↔ D/K map.
 5. PRED-O-41: the transient release burst at a merger — magnitude and timescale.
 6. The (l_P/λ)² inter-layer EM coupling, derived.
