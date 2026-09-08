@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3677 (3676 score corrected); next free: 3678; SESSION 166 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_165_gr_lane_kerrwall_recut_impedance.md`; header rot repaired at 3675 — 3674 was the Session-165 handover patch); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.5 (3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); OPEN-GR-SURFACE-IMPEDANCE-1 RE-CUT at 3670 (no passive-surface solution; s = 3.22 identified as GR's ℓ = 2 pole admittance); GR-2 at V2.6 (3671); (2,+1) LOCATED at 3672 (complex ray on CD Z⁺; ordering at exact grade on model walls); GR-2 at V2.7 (3673); re-cut derivation question ANSWERED BY PARTITION at 3675 (THEO-PCD-SEA: the cap acts on what the GP acts on, not on what it relays; wave on the sea = GR's excised region; rows 6/7 pass, row 5 null, s = 3.22 derived and retired; SURFACE-IMPEDANCE-1 and CORE-DISSIPATION-1 ANSWERED [PCD-EXT] pending triangulation); 3676's falsifier score CORRECTED at 3677 (scale error: 0.29 of the ringdown = ~10 % of the merger, below the O3 injections and the GW150914 bound; seat (3) OPEN); the decisive test is a GW250114 first-echo search at t_d = 0.27 s — SNR ≈ 8 under the coherent-return alternative, 0 under SEA; review economy: no panel yet, hold for the bundle; next act: the GW250114 test, then the register-sector statement, then bundle → CONV-043)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3678 (GW250114 test built); next free: 3679; SESSION 166 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_165_gr_lane_kerrwall_recut_impedance.md`; header rot repaired at 3675 — 3674 was the Session-165 handover patch); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.5 (3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); OPEN-GR-SURFACE-IMPEDANCE-1 RE-CUT at 3670 (no passive-surface solution; s = 3.22 identified as GR's ℓ = 2 pole admittance); GR-2 at V2.6 (3671); (2,+1) LOCATED at 3672 (complex ray on CD Z⁺; ordering at exact grade on model walls); GR-2 at V2.7 (3673); re-cut derivation question ANSWERED BY PARTITION at 3675 (THEO-PCD-SEA: the cap acts on what the GP acts on, not on what it relays; wave on the sea = GR's excised region; rows 6/7 pass, row 5 null, s = 3.22 derived and retired; SURFACE-IMPEDANCE-1 and CORE-DISSIPATION-1 ANSWERED [PCD-EXT] pending triangulation); 3676's falsifier score CORRECTED at 3677 (scale error: 0.29 of the ringdown = ~10 % of the merger, below the O3 injections and the GW150914 bound; seat (3) OPEN); the decisive test is a GW250114 first-echo search at t_d = 0.27 s — SNR ≈ 8 under the coherent-return alternative, 0 under SEA; review economy: no panel yet, hold for the bundle; GW250114 first-echo test BUILT and self-test-validated at 3678 (null 5.1 ± 0.3, injected 8.7 → 9.2 ± 1.0; verdict rule frozen) — RUN owed to Kila6/VideoCPU (GWOSC blocked in the container); next act: the register-sector statement, then bundle → CONV-043)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -89,6 +89,16 @@
 > `paper_regeneration_ledger.md` GR-2 → 2.6; `future_projects.md` Session-165 queue superseded (P1 = the re-cut
 > derivation question with CORE-DISSIPATION-1; anti-priority: no attempt 5 on a surface); Tier-1 log.
 
+> **3678 — GW250114 FIRST-ECHO TEST BUILT AND VALIDATED, RUN OWED (Session 166).** Matched-filter search with the
+> BHP echo template (2309.01894 eqs. 4–5) for a partial surface R_surf = ⅔, (2,2,0)+(2,2,1) ringdown from the PRL's
+> f/γ, cos/sin quadratures, φ on a 4-grid, t_d ∈ [0.24, 0.31] s, Welch PSD from off-source data, BG2-style p-value.
+> Self-test on synthetic aLIGO-like noise: PSD ratio 1.01; null peak 5.06 ± 0.25; injected SNR 8.7 → 9.22 ± 0.99
+> (two normalization defects found against the null and fixed). Verdict rule FROZEN before the data: ≥ 7 & p < 0.01
+> → SEA falsified; background-consistent (p > 0.1) → alternative excluded, seat (3) closes; exhaustion trigger if the
+> background max > 7. GWOSC/Zenodo are host_not_allowed in the container: **run on Kila6/VideoCPU** (`pip install
+> gwpy gwosc --break-system-packages && python3 series_gravitation/code/3678_gw250114_first_echo_search.py --run`) or
+> allowlist gwosc.org. Record `rcore_derivation/3678_gw250114_first_echo_test_built.md`; reasoning `reasoning/3678.md`.
+>
 > **3677 — CORRECTION OF 3676 (verify 5/5; Session 166).** 3676 compared a fraction of the ringdown (0.29) to
 > the searches' fractions of the merger (30 % injected, 15 % bounded). GW250114's ringdown/merger SNR is 26/80
 > (PRL 135, 111403), so the coherent-return alternative is ~10 % of the merger: the O1–O3 population null did

@@ -1,0 +1,158 @@
+#!/usr/bin/env python3
+"""
+Patch 3678 — THE GW250114 FIRST-ECHO TEST OF THEO-PCD-SEA'S FALSIFIER (3677 §2).
+Two modes:
+  --selftest   : synthetic aLIGO-like noise (analytic PSD), inject the alternative's echo train at network SNR 8.7
+                 at t_d = 0.27 s, and recover it with the same pipeline; also a null run (no injection). RUNS HERE.
+  --run        : fetch 64 s of H1/L1 open data around GW250114 from GWOSC (gwpy.fetch_open_data), whiten with a
+                 Welch PSD from off-source data, search the on-source window t_peak + t_d, t_d in [0.24, 0.31] s,
+                 marginalize the reflection phase (two quadratures), report the peak network SNR and a p-value
+                 against 1000 off-source background slots. NEEDS network access to gwosc.org — BLOCKED in the
+                 Claude container (x-deny-reason: host_not_allowed, 7 Sep 2026); run on Kila6/VideoCPU:
+                   pip install gwpy gwosc --break-system-packages && python3 3678_gw250114_first_echo_search.py --run
+
+TEMPLATE (Uchikata et al. 2023, arXiv:2309.01894 eqs. 4–5, BHP model) with a PARTIAL surface R_surf = 2/3
+(THEO-PCD-SEA's untaken fraction at the wave horizon, 3675 T2):
+    h_echo(f) = R_surf * sqrt(1 - R(f)^2) * h0(f) * sum_{n=1}^{N} [R_surf R(f)]^{n-1} exp(-i (2 pi f t_d + phi)(n-1))
+    R(f)      = their eq. (5) fit for 0.6 <= chi <= 0.8, chi = 0.68, detector-frame M = t_Mf / 4.925e-6 s = 68.4 Msun
+    h0(t)     = the (2,2,0) ringdown: f220 = 247 Hz, gamma220 = 221 Hz (LVK PRL 135, 111403), plus the overtone
+                f221 = 249 Hz, gamma221 = 708 Hz at the PRL's amplitude ratio (A221/A220 ~ 1 at 6 t_Mf — free here),
+                started at t_peak + 6 t_Mf.
+The overall amplitude is free (matched filter), so the OUTPUT is the recovered SNR; the PREDICTION under the
+alternative is SNR ~ 7.5 (first echo) to 8.7 (train); under SEA, 0 (background only, expected peak ~ 3–4).
+
+Verdict rule, FROZEN 7 Sep 2026 before any real data is seen (review economy §4). Self-test (synthetic aLIGO-like
+noise, this file --selftest): null search peak 5.1 ± 0.3; injected train at SNR 8.7 recovered at 9.2 ± 1.0.
+  DETECTED / SEA FALSIFIED : network peak SNR >= 7 AND p < 0.01 against >= 500 off-source background slots.
+  EXCLUDED / seat (3) CLOSES: network peak SNR consistent with the background (p > 0.1) — the injection study shows
+                             the predicted 7.5–8.7 would sit ~4 sigma above the null distribution, so a background-
+                             consistent result excludes the coherent-return alternative at that level on this event.
+  INCONCLUSIVE             : anything else; seat (3) stays open.
+No refit of R_surf, t_d, the phase grid, or the template after seeing the data. Exhaustion trigger (§4.5): if the
+GW250114 off-source data are non-Gaussian enough that the background max exceeds 7, this instrument cannot decide
+and the matter goes to the bundle as an owed empiric, not to a retune.
+"""
+import argparse, numpy as np
+from scipy.signal import welch
+from scipy.fft import rfft, irfft, rfftfreq
+
+# ---------------- event constants (LVK PRL 135, 111403) ----------------
+GPS_PEAK = 1420878141.0      # 2025-01-14 08:22:03 UTC ~ GPS 1420878141; refined from the GWOSC event JSON in --run
+T_MF = 0.337e-3; M_DET = T_MF / 4.925e-6; CHI = 0.68
+F220, G220 = 247.0, 221.0; F221, G221 = 249.0, 708.0
+R_SURF = 2.0 / 3.0; TD_PRED = 0.270; TD_LO, TD_HI = 0.24, 0.31
+FS = 4096; FMIN, FMAX = 20.0, 1024.0
+
+def R_barrier(f, chi=CHI, M=M_DET):
+    x = 2 * np.pi * M * 4.925e-6 * f
+    e1 = np.exp(-300 * (x + 0.27 - chi)); e2 = np.exp(-28 * (x - 0.125 - 0.6 * chi)); e3 = np.exp(19 * (x - 0.3 - 0.35 * chi))
+    return (1 + e1 + e2) / (1 + e1 + e2 + e3)
+
+def ringdown(t, a221=1.0, quad=0):
+    """h0(t): two-mode ringdown starting at t = 0 (t_peak + 6 t_Mf), unit A220; quad=0 cosine, quad=1 sine (the two quadratures)."""
+    h = np.zeros_like(t); m = t >= 0; osc = np.cos if quad == 0 else np.sin
+    h[m] = np.exp(-G220 * t[m]) * osc(2 * np.pi * F220 * t[m]) + a221 * np.exp(-G221 * t[m]) * osc(2 * np.pi * F221 * t[m])
+    return h
+
+def echo_template(N, fs, td, phi, n_echo=20, a221=1.0):
+    """Frequency-domain echo train (BHP model with partial surface) for inter-echo phase phi.
+    Returns the two OVERALL-phase quadratures (cosine / sine ringdown) — these are near-orthogonal; phi is searched on a grid."""
+    t = np.arange(N) / fs; f = rfftfreq(N, 1 / fs)
+    R = R_barrier(f); Reff = R_SURF * R
+    S = sum((Reff ** (n - 1)) * np.exp(-1j * (2 * np.pi * f * td + phi) * (n - 1)) for n in range(1, n_echo + 1))
+    pref = R_SURF * np.sqrt(np.clip(1 - R ** 2, 0, 1)) * S * np.exp(-2j * np.pi * f * td)
+    out = [pref * (rfft(ringdown(t, a221, q)) / fs) for q in (0, 1)]
+    return out, f
+
+PHI_GRID = (0.0, np.pi / 2, np.pi, 3 * np.pi / 2)
+
+def matched_filter_snr(D, Hs, psd, f, fs, N):
+    """Phase-marginalized SNR time series. Conventions: D, H are rfft/fs (continuous-FT scale), one-sided PSD psd(f).
+    <a|b> = 4 Re int a* b / S df ;  z(tau) = 4 Re int_0^inf D* H e^{2 pi i f tau}/S df = 2 fs irfft(conj(D) H / S) (irfft folds the negative frequencies)  ;  sigma^2 = <h|h>."""
+    df = f[1] - f[0]
+    band = (f >= FMIN) & (f <= FMAX)
+    w = np.where(band, 1.0 / psd, 0.0)
+    out = []
+    for H in Hs:
+        sigma2 = float(4 * np.sum(np.abs(H) ** 2 * w) * df)
+        z = 2 * fs * irfft(np.conj(D) * H * w, n=N)
+        out.append(z / np.sqrt(sigma2))
+    a, b = out
+    return np.sqrt(a ** 2 + b ** 2)
+
+def analytic_psd(f):
+    """Rough aLIGO O4 design-like PSD (for the self-test only)."""
+    fk = np.maximum(f, 5.0) / 215.0
+    return 1e-49 * (fk ** -4.14 - 5 * fk ** -2 + 111 * (1 - fk ** 2 + 0.5 * fk ** 4) / (1 + 0.5 * fk ** 2)) + 1e-52
+
+def whiten_search(d, fs, psd_of_f, N, td_grid):
+    f = rfftfreq(N, 1 / fs); D = rfft(d) / fs; psd = psd_of_f(f)
+    best = (0, None)
+    for td in td_grid:
+        for phi in PHI_GRID:
+            Hs, _ = echo_template(N, fs, td, phi)
+            rho = matched_filter_snr(D, Hs, psd, f, fs, N)
+            i = int(np.argmax(rho)); best = max(best, (rho[i], (td, i / fs)))
+    return best
+
+def selftest(seed=7):
+    rng = np.random.default_rng(seed); N = 8 * FS
+    f = rfftfreq(N, 1 / FS); psd = analytic_psd(f); df = f[1] - f[0]
+    def noise():
+        # one-sided PSD S: E|x_rfft|^2 = S * FS * N / 2  (so that Welch recovers S)
+        amp = np.sqrt(psd * FS * N / 2); ph = rng.uniform(0, 2 * np.pi, f.size)
+        x = irfft(amp * np.exp(1j * ph), n=N); return x
+    # PSD sanity: Welch of the synthetic noise vs the analytic PSD in band
+    fw, pw = welch(noise(), fs=FS, nperseg=FS)
+    m = (fw > 50) & (fw < 500); ratio = np.median(pw[m] / analytic_psd(fw[m]))
+    print(f"  PSD sanity: Welch/analytic median ratio in 50–500 Hz = {ratio:.2f} (expect ~1)")
+    td_grid = np.arange(TD_LO, TD_HI + 1e-9, 0.005)
+    Hs, _ = echo_template(N, FS, TD_PRED, np.pi / 2); h = irfft(Hs[0] * FS, n=N)
+    H = Hs[0]; band = (f >= FMIN) & (f <= FMAX)
+    sig = np.sqrt(4 * np.sum((np.abs(H) ** 2 / psd)[band]) * df)
+    results = {}
+    for label, target in (("null", 0.0), ("inject_SNR8.7", 8.7)):
+        vals = []
+        for k in range(12):
+            d = noise() + ((target / sig) * np.roll(h, 2 * FS) if target > 0 else 0.0)
+            rho, (td, tau) = whiten_search(d, FS, analytic_psd, N, td_grid)
+            vals.append(rho)
+        results[label] = (np.mean(vals), np.std(vals), np.max(vals))
+        print(f"  {label:14s}: recovered peak SNR mean {np.mean(vals):.2f} ± {np.std(vals):.2f} (max {np.max(vals):.2f}) over 12 noise draws")
+    ok = 0.7 < ratio < 1.4 and results["null"][0] < 5.5 and results["inject_SNR8.7"][0] > 7.0
+    print(f"  [{'PASS' if ok else 'FAIL'}] self-test: PSD ~1, null peak < 5.5, injected 8.7 recovered > 7")
+    return ok
+
+def run():
+    from gwpy.timeseries import TimeSeries
+    from gwosc.datasets import event_gps
+    gps = event_gps("GW250114")            # refines GPS_PEAK
+    print(f"GW250114 GPS from GWOSC: {gps}")
+    seg = (gps - 40, gps + 24); N = int(64 * FS)
+    peak = None
+    rhos = {}
+    for det in ("H1", "L1"):
+        ts = TimeSeries.fetch_open_data(det, *seg, sample_rate=FS, cache=True).value
+        off = ts[: int(30 * FS)]                                # off-source: 30 s before the signal
+        fw, pw = welch(off, fs=FS, nperseg=4 * FS)
+        psd_of_f = lambda f, fw=fw, pw=pw: np.interp(f, fw, pw)
+        on = ts[int(38 * FS): int(38 * FS) + 8 * FS]           # on-source: t_peak - 2 s .. + 6 s
+        td_grid = np.arange(TD_LO, TD_HI + 1e-9, 0.001)
+        rho, (td, tau) = whiten_search(on, FS, psd_of_f, 8 * FS, td_grid)
+        # background: 1000 slots of the same 8 s search on off-source data shifted by 0.02*t_d
+        bg = []
+        for k in range(1000):
+            s0 = int((0.5 + 0.0054 * k) * FS)
+            if s0 + 8 * FS > off.size: break
+            r, _ = whiten_search(off[s0: s0 + 8 * FS], FS, psd_of_f, 8 * FS, td_grid[::5]); bg.append(r)
+        p = np.mean(np.array(bg) >= rho)
+        rhos[det] = (rho, td, tau, p)
+        print(f"  {det}: peak SNR {rho:.2f} at t_d = {td:.3f} s, tau = {tau:.3f} s;  p = {p:.3f} ({len(bg)} background slots)")
+    net = np.sqrt(sum(v[0] ** 2 for v in rhos.values()))
+    print(f"NETWORK peak SNR {net:.2f}  — verdict rule (frozen): >= 7 & p < 0.01 -> alternative DETECTED / SEA falsified; < 5 & p > 0.1 -> alternative EXCLUDED / seat (3) closes; else inconclusive")
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(); ap.add_argument("--selftest", action="store_true"); ap.add_argument("--run", action="store_true")
+    a = ap.parse_args()
+    if a.selftest or not a.run: selftest()
+    if a.run: run()
