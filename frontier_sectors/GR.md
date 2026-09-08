@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3673 (GR-2 V2.7); next free: 3674; SESSION 165 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_164_kerrwall1_overtone_conv042_gr2_v2.4.md`); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.5 (3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); OPEN-GR-SURFACE-IMPEDANCE-1 RE-CUT at 3670 (no passive-surface solution; s = 3.22 identified as GR's ℓ = 2 pole admittance); GR-2 at V2.6 (3671); (2,+1) LOCATED at 3672 (complex ray on CD Z⁺; ordering at exact grade on model walls); GR-2 at V2.7 (3673); next act: the re-cut derivation question with CORE-DISSIPATION-1, or the Session-165 handover at the founder's call)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3675 (THEO-PCD-SEA proposed); next free: 3676; SESSION 166 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_165_gr_lane_kerrwall_recut_impedance.md`; header rot repaired at 3675 — 3674 was the Session-165 handover patch); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.5 (3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); OPEN-GR-SURFACE-IMPEDANCE-1 RE-CUT at 3670 (no passive-surface solution; s = 3.22 identified as GR's ℓ = 2 pole admittance); GR-2 at V2.6 (3671); (2,+1) LOCATED at 3672 (complex ray on CD Z⁺; ordering at exact grade on model walls); GR-2 at V2.7 (3673); re-cut derivation question ANSWERED BY PARTITION at 3675 (THEO-PCD-SEA: the cap acts on what the GP acts on, not on what it relays; wave on the sea = GR's excised region; rows 6/7 pass, row 5 null, s = 3.22 derived and retired; SURFACE-IMPEDANCE-1 and CORE-DISSIPATION-1 ANSWERED [PCD-EXT] pending triangulation); next act: score SEA's falsifier (coherent ~0.23 s Planckian return) against the LVK echo bounds, then Kerr on CD Z⁺)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -89,6 +89,26 @@
 > `paper_regeneration_ledger.md` GR-2 → 2.6; `future_projects.md` Session-165 queue superseded (P1 = the re-cut
 > derivation question with CORE-DISSIPATION-1; anti-priority: no attempt 5 on a surface); Tier-1 log.
 
+> **3675 — THE RE-CUT DERIVATION QUESTION ANSWERED BY A PARTITION, NOT A LAW (verify 9/9; Session 166).**
+> Every reading of the K-of-D census as a wave law was already scored and out (3644 A1/A2/B/C); the only
+> zero-parameter structure meeting both pole data is GR's wave equation continued below the cap (3670 §5 iv).
+> So the question is which quantities the cap acts on. **THEO-PCD-SEA (PROPOSED, [PCD-EXT]):** the census
+> truncation binds what the GP *acts on* (count → clock floor; net → displacement, the static core), not what
+> it *relays* (the full shell-sum, A3′). The wave propagates on the sea's demand field v = M/r̄ continued to
+> v = 2 — the excised region — and the surface presents GR's own admittance β_hor(ω, ℓ, m, χ) at every
+> frequency with no constant. **Row 7 PASSES** (all spins; the horizon-equivalent wall; independent
+> implementation reproduces Leaver's ℓ = 2, 3 poles to 0.003 % and returns 3644's s = 3.22 as 3.237 — the
+> calibration is derived and retired). **Row 6 PASSES** (static tide on the sea → k₂ = 0 → Λ̃ = 0 < 34.8).
+> **Row 5 → NULL** (no wave cavity; PRED-O-39's 0.95 ms echo has no object). Falsifier priced: a coherent
+> return from one PSR floor above v = 2 arrives after 745.9 M = **0.23 s at 62 M☉** (the Planckian echo);
+> the extension forbids it; the LVK echo bounds are its first cold test (owed, next). Bimetric inside the
+> cap: matter on the register, waves on the sea — what the data have asked for since 3612/3621/3653/3670.
+> Not a derivation from the nine axioms (A3′'s shell-sum vs AP-4d's computed-state wording is the gap);
+> not a refit of BUDGET; no register law adopted; no panel (review economy). SURFACE-IMPEDANCE-1 (re-cut)
+> and CORE-DISSIPATION-1 ANSWERED under SEA, standing with the ledger. Record
+> `rcore_derivation/3675_sea_carries_the_wave.md`; reasoning `reasoning/3675.md`;
+> `code/3675_sea_carries_the_wave_verify.py`. Header rot repaired (3674 = Session-165 handover).
+>
 > **3670 — OPEN-GR-SURFACE-IMPEDANCE-1 ATTEMPT 4 STEP 2: THE TARGET AS A FUNCTION; THE PROBLEM RE-CUT; A
 > THIRD RECORD CORRECTION.** With the CD Z⁺ instrument (r_w(χ) from F_n = 4/9; Leaver poles), the requirement
 > was computed vs spin and vs ℓ, at real ω and at the complex poles. **Record correction (extends 3668 §2):**
