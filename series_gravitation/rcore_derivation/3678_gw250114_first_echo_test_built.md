@@ -33,3 +33,17 @@ The two ~120 MB strain files download once into the repo root (add them to `.git
 
 ## §7 Amendment (Patch 3680) — event name
 GWOSC's v2 API resolves `GW250114_082203`, not `GW250114`; fixed. If `event_gps` fails the script uses the computed peak GPS 1420878141; if `get_event_urls` fails, set `GWOSC_H1_URL` and `GWOSC_L1_URL` to the 4096 s HDF5 links from the event's GWOSC page and rerun.
+
+## §8 Run 1 on Kila6 (7 Sep 2026) — EXHAUSTION TRIGGER FIRED; instrument defect diagnosed, repaired by principle (Patch 3681)
+**Verbatim output (review economy §4.6):**
+```
+GW250114_082203 GPS from GWOSC: 1420878141.2
+  downloading https://gwosc.org/archive/data/O4b_4KHZ_R1/1420820480/H-H1_GWOSC_O4b_4KHZ_R1-1420877824-4096.hdf5
+  H1: peak SNR 3816.66 at t_d = 0.240 s, tau = 0.240 s after t_peak-2s;  p = 0.896 (1000 background slots, background max 80733.18)
+  downloading https://gwosc.org/archive/data/O4b_4KHZ_R1/1420820480/L-L1_GWOSC_O4b_4KHZ_R1-1420877824-4096.hdf5
+  L1: peak SNR 15292.63 at t_d = 0.281 s, tau = 0.281 s after t_peak-2s;  p = 0.503 (1000 background slots, background max 52282.17)
+NETWORK peak SNR 15761.71
+```
+**Diagnosis (recorded before the fix):** background maxima of 10⁴–10⁵ and peaks locked at τ = t_d on both detectors are the signature of spectral leakage from unconditioned data: real strain carries ~10⁻¹⁷ content below 10 Hz, and an 8 s rectangular cut leaks it across the band via sidelobes, swamping the ~10⁻²³ in-band noise; the "peak" is the template aligning with the segment-edge transient. The synthetic self-test had no such low-frequency content, so it could not catch this. **Reproduced:** the same synthetic noise plus a 10⁻¹⁷ × sin(2π·0.7 Hz) drift, run without high-pass or taper, gives SNR 1.2×10⁵ at t_d = 0.240, τ ≈ t_d.
+**Repair by principle (the property that failed: out-of-band leakage):** (i) 4th-order Butterworth high-pass at 15 Hz, zero-phase, applied to the whole series before slicing; (ii) Tukey (α = 0.1) taper on every 8 s segment before the FFT — for on-source and background alike; (iii) NaN guards: the on-source window must be NaN-free (else exhaustion), off-source is the longest NaN-free stretch (≥ 60 s, ≤ 300 s) ending ≥ 40 s before the peak. **Nothing else changed:** template, phase grid, t_d range, thresholds, verdict rule as frozen at 3678 §3. Self-test re-run with the realistic low-frequency content included: null 4.97 ± 0.30, injected 8.7 → 9.41 ± 0.98, PASS.
+**This is not a retune:** no signal number existed to steer toward; the run never reached the decision stage. Run 2 command unchanged: `python series_gravitation/code/3678_gw250114_first_echo_search.py --run` (the HDF5 files are cached; no re-download).

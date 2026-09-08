@@ -88,8 +88,20 @@ def analytic_psd(f):
     fk = np.maximum(f, 5.0) / 215.0
     return 1e-49 * (fk ** -4.14 - 5 * fk ** -2 + 111 * (1 - fk ** 2 + 0.5 * fk ** 4) / (1 + 0.5 * fk ** 2)) + 1e-52
 
+def condition(x, fs, f_hp=15.0):
+    """Data conditioning (standard): 4th-order Butterworth high-pass at f_hp, zero-phase. Real strain carries ~1e-17
+    content below 10 Hz; without this an 8 s rectangular cut leaks it across the band by sidelobes (Kila6 run 1,
+    7 Sep 2026: SNR ~1e4, background max ~1e5, peaks locked at tau = t_d, i.e. on the segment edge)."""
+    from scipy.signal import butter, sosfiltfilt
+    sos = butter(4, f_hp, btype="highpass", fs=fs, output="sos")
+    return sosfiltfilt(sos, x)
+
+def taper(N, alpha=0.1):
+    from scipy.signal.windows import tukey
+    return tukey(N, alpha)
+
 def whiten_search(d, fs, psd_of_f, N, td_grid):
-    f = rfftfreq(N, 1 / fs); D = rfft(d) / fs; psd = psd_of_f(f)
+    f = rfftfreq(N, 1 / fs); D = rfft(d * taper(N)) / fs; psd = psd_of_f(f)
     best = (0, None)
     for td in td_grid:
         for phi in PHI_GRID:
@@ -104,7 +116,10 @@ def selftest(seed=7):
     def noise():
         # one-sided PSD S: E|x_rfft|^2 = S * FS * N / 2  (so that Welch recovers S)
         amp = np.sqrt(psd * FS * N / 2); ph = rng.uniform(0, 2 * np.pi, f.size)
-        x = irfft(amp * np.exp(1j * ph), n=N); return x
+        x = irfft(amp * np.exp(1j * ph), n=N)
+        tt = np.arange(N) / FS
+        x += 1e-17 * np.sin(2 * np.pi * 0.7 * tt + rng.uniform(0, 6)) + 3e-18 * np.sin(2 * np.pi * 3.1 * tt)   # realistic sub-10 Hz content
+        return condition(x, FS)
     # PSD sanity: Welch of the synthetic noise vs the analytic PSD in band
     fw, pw = welch(noise(), fs=FS, nperseg=FS)
     m = (fw > 50) & (fw < 500); ratio = np.median(pw[m] / analytic_psd(fw[m]))
@@ -157,10 +172,17 @@ def run():
     for det in ("H1", "L1"):
         t0, dt, x = _fetch_strain(det, gps)
         fs_file = int(round(1 / dt)); assert fs_file == FS, f"file sample rate {fs_file} != {FS}"
-        x = np.nan_to_num(x)
         i_peak = int(round((gps - t0) * FS))
-        off = x[max(0, i_peak - 340 * FS): i_peak - 40 * FS]        # off-source: 300 s ending 40 s before the peak
-        if off.size < 100 * FS: off = x[: max(0, i_peak - 40 * FS)]
+        nan = np.isnan(x); print(f"  {det}: {nan.sum()} NaN samples in file ({100*nan.mean():.2f} %)")
+        if nan[i_peak - 2 * FS: i_peak + 6 * FS].any(): raise RuntimeError(f"{det}: NaN inside the on-source window — instrument cannot decide (exhaustion trigger)")
+        # off-source: the longest NaN-free stretch ending >= 40 s before the peak, capped at 300 s
+        good = ~nan[: i_peak - 40 * FS]; end = good.size
+        while end > 0 and not good[end - 1]: end -= 1
+        start = end
+        while start > 0 and good[start - 1] and end - start < 300 * FS: start -= 1
+        x = condition(np.nan_to_num(x), FS)
+        off = x[start:end]; print(f"  {det}: off-source = {off.size/FS:.0f} s ending {(i_peak - end)/FS:.0f} s before the peak")
+        if off.size < 60 * FS: raise RuntimeError(f"{det}: < 60 s of clean off-source data — exhaustion trigger")
         fw, pw = welch(off, fs=FS, nperseg=4 * FS)
         psd_of_f = lambda f, fw=fw, pw=pw: np.interp(f, fw, pw)
         on = x[i_peak - 2 * FS: i_peak + 6 * FS]                     # on-source: t_peak - 2 s .. + 6 s
