@@ -3,7 +3,7 @@
 > **GR-LANE STATUS (header re-asserted Patch 3630, 4 Sep 2026 — SESSION 161 CLOSED; handover `handovers/2026-09-04_session_161_gr2_v2.2_map_love_numbers_conv041.md`).** Block
 > discipline: **GR owned 3300–3399 (highest used 3398; 3399 left UNUSED
 > as the block's terminal) and now owns 3600–3699 (G-GR-BLOCK-3600,
-> founder, 3 Sep; highest used: 3675 (THEO-PCD-SEA proposed); next free: 3676; SESSION 166 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_165_gr_lane_kerrwall_recut_impedance.md`; header rot repaired at 3675 — 3674 was the Session-165 handover patch); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.5 (3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); OPEN-GR-SURFACE-IMPEDANCE-1 RE-CUT at 3670 (no passive-surface solution; s = 3.22 identified as GR's ℓ = 2 pole admittance); GR-2 at V2.6 (3671); (2,+1) LOCATED at 3672 (complex ray on CD Z⁺; ordering at exact grade on model walls); GR-2 at V2.7 (3673); re-cut derivation question ANSWERED BY PARTITION at 3675 (THEO-PCD-SEA: the cap acts on what the GP acts on, not on what it relays; wave on the sea = GR's excised region; rows 6/7 pass, row 5 null, s = 3.22 derived and retired; SURFACE-IMPEDANCE-1 and CORE-DISSIPATION-1 ANSWERED [PCD-EXT] pending triangulation); next act: score SEA's falsifier (coherent ~0.23 s Planckian return) against the LVK echo bounds, then Kerr on CD Z⁺)**; DE owns 3400s
+> founder, 3 Sep; highest used: 3676 (SEA falsifier scored); next free: 3677; SESSION 166 OPEN 7 Sep (GR lane; last handover `handovers/2026-09-07_session_165_gr_lane_kerrwall_recut_impedance.md`; header rot repaired at 3675 — 3674 was the Session-165 handover patch); CONV-042 ADJUDICATED at 3665 — extension EXCLUDED 4/4, GR-2 at V2.5 (3669); OPEN-GR-KERRWALL-1b CLOSED at 3668 (Kerr member FAILS on Z⁺ too); OPEN-GR-SURFACE-IMPEDANCE-1 RE-CUT at 3670 (no passive-surface solution; s = 3.22 identified as GR's ℓ = 2 pole admittance); GR-2 at V2.6 (3671); (2,+1) LOCATED at 3672 (complex ray on CD Z⁺; ordering at exact grade on model walls); GR-2 at V2.7 (3673); re-cut derivation question ANSWERED BY PARTITION at 3675 (THEO-PCD-SEA: the cap acts on what the GP acts on, not on what it relays; wave on the sea = GR's excised region; rows 6/7 pass, row 5 null, s = 3.22 derived and retired; SURFACE-IMPEDANCE-1 and CORE-DISSIPATION-1 ANSWERED [PCD-EXT] pending triangulation); SEA falsifier SCORED at 3676 (O3 population null covers the 0.23–0.27 s window; SEA consistent, coherent-return alternative disfavored; Kerr seat = 3668 T3); three of four seats in; next act: five-seat panel CONV-043 on the partition question — open or forced by the axioms?)**; DE owns 3400s
 > (at 3449); DM owns 3500s (at 3507). *This
 > header line is a claim about repository state and rots like any other
 > — re-read and re-assert it at every session close, per the Session 160
@@ -89,6 +89,19 @@
 > `paper_regeneration_ledger.md` GR-2 → 2.6; `future_projects.md` Session-165 queue superseded (P1 = the re-cut
 > derivation question with CORE-DISSIPATION-1; anti-priority: no attempt 5 on a surface); Tier-1 log.
 
+> **3676 — THEO-PCD-SEA'S FALSIFIER SCORED (verify 7/7; Session 166).** The coherent Planckian return the
+> extension forbids: delay 745.9 M (3675) cross-checked against the field's formula (2512.24730 eq. 1) at 0.4 %;
+> 0.23 s (a = 0) – 0.27 s (χ = 0.68) at 62 M☉; first-echo amplitude under the alternative ≈ R_ret × |T_barrier|²
+> = 0.667 × 0.44 = 0.29 of the ringdown. Empiric: Uchikata et al. 2023 (arXiv:2309.01894), 34 O3 BBH events,
+> two templates, windows 0.06–1.40 s (same-mass events 0.22–0.36 s), p-values noise-consistent, 30 %-SNR
+> injections recovered at KS p ~ 10⁻⁶; GW150914 < 15 % of merger (Nielsen et al. 2019). **SEA's null: CONSISTENT.
+> The coherent-return alternative: DISFAVORED at the population level** (per-event exclusion owed —
+> ringdown/merger SNR ratio, GW250114 first). Kerr seat = 3668 T3 (horizon-equivalent poles on CD Z⁺ at χ = 0.68
+> = Leaver's to 6e−5): pointer, no re-run. Three of four triangulation seats scored; the five-seat panel
+> (CONV-043) on the one question — is the relay/register partition open or forced by the nine axioms? — is the
+> next act. Record `rcore_derivation/3676_sea_falsifier_scored.md`; reasoning `reasoning/3676.md`;
+> `code/3676_sea_falsifier_scored_verify.py`.
+>
 > **3675 — THE RE-CUT DERIVATION QUESTION ANSWERED BY A PARTITION, NOT A LAW (verify 9/9; Session 166).**
 > Every reading of the K-of-D census as a wave law was already scored and out (3644 A1/A2/B/C); the only
 > zero-parameter structure meeting both pole data is GR's wave equation continued below the cap (3670 §5 iv).
