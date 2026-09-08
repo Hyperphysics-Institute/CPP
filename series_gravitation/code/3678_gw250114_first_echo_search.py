@@ -4,12 +4,14 @@ Patch 3678 — THE GW250114 FIRST-ECHO TEST OF THEO-PCD-SEA'S FALSIFIER (3677 §
 Two modes:
   --selftest   : synthetic aLIGO-like noise (analytic PSD), inject the alternative's echo train at network SNR 8.7
                  at t_d = 0.27 s, and recover it with the same pipeline; also a null run (no injection). RUNS HERE.
-  --run        : fetch 64 s of H1/L1 open data around GW250114 from GWOSC (gwpy.fetch_open_data), whiten with a
-                 Welch PSD from off-source data, search the on-source window t_peak + t_d, t_d in [0.24, 0.31] s,
-                 marginalize the reflection phase (two quadratures), report the peak network SNR and a p-value
-                 against 1000 off-source background slots. NEEDS network access to gwosc.org — BLOCKED in the
-                 Claude container (x-deny-reason: host_not_allowed, 7 Sep 2026); run on Kila6/VideoCPU:
-                   pip install gwpy gwosc --break-system-packages && python3 3678_gw250114_first_echo_search.py --run
+  --run        : fetch the 4096 s H1/L1 open-data HDF5 files for GW250114 from GWOSC (pure Python: gwosc + requests +
+                 h5py — NOT gwpy, whose igwn-segments dependency needs MSVC on Windows), whiten with a Welch PSD from
+                 300 s of off-source data, search the on-source window t_peak + t_d, t_d in [0.24, 0.31] s, two
+                 orthogonal quadratures x 4-point phase grid, report the peak network SNR and a p-value against up to
+                 1000 off-source background slots. NEEDS network access to gwosc.org — BLOCKED in the Claude container
+                 (x-deny-reason: host_not_allowed, 7 Sep 2026); run on Kila6/VideoCPU from the repo root:
+                   pip install gwosc requests h5py scipy numpy --break-system-packages
+                   python3 series_gravitation/code/3678_gw250114_first_echo_search.py --run
 
 TEMPLATE (Uchikata et al. 2023, arXiv:2309.01894 eqs. 4–5, BHP model) with a PARTIAL surface R_surf = 2/3
 (THEO-PCD-SEA's untaken fraction at the wave horizon, 3675 T2):
@@ -123,33 +125,50 @@ def selftest(seed=7):
     print(f"  [{'PASS' if ok else 'FAIL'}] self-test: PSD ~1, null peak < 5.5, injected 8.7 recovered > 7")
     return ok
 
+def _fetch_strain(det, gps, duration=4096, cache_dir="."):
+    """Pure-Python GWOSC fetch (no gwpy: its igwn-segments dependency needs MSVC on Windows). Returns (t0, dt, strain)."""
+    import os, requests, h5py
+    from gwosc.locate import get_event_urls
+    allu = get_event_urls("GW250114", detector=det, format="hdf5", sample_rate=FS)
+    urls = [u for u in allu if f"-{duration}." in u] or [u for u in allu if "4096" in u] or allu
+    if not urls:
+        raise RuntimeError(f"no hdf5 strain URL for {det} from get_event_urls: {allu}")
+    url = urls[0]; fn = os.path.join(cache_dir, os.path.basename(url))
+    if not os.path.exists(fn):
+        print(f"  downloading {url}"); r = requests.get(url, stream=True, timeout=600); r.raise_for_status()
+        with open(fn, "wb") as fh:
+            for chunk in r.iter_content(1 << 20): fh.write(chunk)
+    with h5py.File(fn, "r") as h:
+        x = h["strain/Strain"][:]; t0 = float(h["meta/GPSstart"][()]); dt = float(h["strain/Strain"].attrs["Xspacing"])
+    return t0, dt, x
+
 def run():
-    from gwpy.timeseries import TimeSeries
     from gwosc.datasets import event_gps
     gps = event_gps("GW250114")            # refines GPS_PEAK
     print(f"GW250114 GPS from GWOSC: {gps}")
-    seg = (gps - 40, gps + 24); N = int(64 * FS)
-    peak = None
     rhos = {}
     for det in ("H1", "L1"):
-        ts = TimeSeries.fetch_open_data(det, *seg, sample_rate=FS, cache=True).value
-        off = ts[: int(30 * FS)]                                # off-source: 30 s before the signal
+        t0, dt, x = _fetch_strain(det, gps)
+        fs_file = int(round(1 / dt)); assert fs_file == FS, f"file sample rate {fs_file} != {FS}"
+        x = np.nan_to_num(x)
+        i_peak = int(round((gps - t0) * FS))
+        off = x[max(0, i_peak - 340 * FS): i_peak - 40 * FS]        # off-source: 300 s ending 40 s before the peak
+        if off.size < 100 * FS: off = x[: max(0, i_peak - 40 * FS)]
         fw, pw = welch(off, fs=FS, nperseg=4 * FS)
         psd_of_f = lambda f, fw=fw, pw=pw: np.interp(f, fw, pw)
-        on = ts[int(38 * FS): int(38 * FS) + 8 * FS]           # on-source: t_peak - 2 s .. + 6 s
+        on = x[i_peak - 2 * FS: i_peak + 6 * FS]                     # on-source: t_peak - 2 s .. + 6 s
         td_grid = np.arange(TD_LO, TD_HI + 1e-9, 0.001)
         rho, (td, tau) = whiten_search(on, FS, psd_of_f, 8 * FS, td_grid)
-        # background: 1000 slots of the same 8 s search on off-source data shifted by 0.02*t_d
         bg = []
-        for k in range(1000):
+        for k in range(1000):                                        # background: 8 s slots stepping 0.0054 s (0.02 t_d) through off-source
             s0 = int((0.5 + 0.0054 * k) * FS)
             if s0 + 8 * FS > off.size: break
             r, _ = whiten_search(off[s0: s0 + 8 * FS], FS, psd_of_f, 8 * FS, td_grid[::5]); bg.append(r)
-        p = np.mean(np.array(bg) >= rho)
-        rhos[det] = (rho, td, tau, p)
-        print(f"  {det}: peak SNR {rho:.2f} at t_d = {td:.3f} s, tau = {tau:.3f} s;  p = {p:.3f} ({len(bg)} background slots)")
+        bg = np.array(bg); p = float(np.mean(bg >= rho)) if bg.size else float("nan")
+        rhos[det] = (rho, td, tau, p, bg.max() if bg.size else float("nan"))
+        print(f"  {det}: peak SNR {rho:.2f} at t_d = {td:.3f} s, tau = {tau:.3f} s after t_peak-2s;  p = {p:.3f} ({bg.size} background slots, background max {rhos[det][4]:.2f})")
     net = np.sqrt(sum(v[0] ** 2 for v in rhos.values()))
-    print(f"NETWORK peak SNR {net:.2f}  — verdict rule (frozen): >= 7 & p < 0.01 -> alternative DETECTED / SEA falsified; < 5 & p > 0.1 -> alternative EXCLUDED / seat (3) closes; else inconclusive")
+    print(f"NETWORK peak SNR {net:.2f}  — verdict rule (frozen, see header): >= 7 & p < 0.01 -> alternative DETECTED / SEA falsified; background-consistent (p > 0.1) -> alternative EXCLUDED / seat (3) closes; else inconclusive; background max > 7 -> exhaustion trigger")
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("--selftest", action="store_true"); ap.add_argument("--run", action="store_true")

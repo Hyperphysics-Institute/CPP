@@ -21,3 +21,12 @@ Paste the printed block (per-detector peak SNR, t_d, p; network SNR; the rule's 
 
 ## §5 Standing
 Seat (3) OPEN, instrument ready. Next act: the register-sector statement (what SEA leaves to the matter metric), then the bundle. GR-2 V2.8 after the panel.
+
+## §6 Amendment (Patch 3679, same session) — Windows run failed on gwpy's build chain, not on physics
+Kila6 (Python 3.12, no MSVC) could not build `igwn-segments`, a gwpy dependency. gwpy removed: `--run` now fetches the 4096 s GWOSC HDF5 files with `gwosc` + `requests` + `h5py` (all prebuilt wheels on Windows) and reads `strain/Strain` directly; off-source = 300 s ending 40 s before the peak; on-source and background unchanged. Self-test re-run: PASS (identical numbers). Command, **from the repo root** (the earlier attempt ran from `/`):
+```
+cd ~/Documents/GitHub/CPP && \
+pip install gwosc requests h5py scipy numpy --break-system-packages && \
+python3 series_gravitation/code/3678_gw250114_first_echo_search.py --run
+```
+The two ~120 MB strain files download once into the repo root (add them to `.gitignore` if git status complains — they must not be committed).

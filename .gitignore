@@ -56,3 +56,6 @@ series_phenomena/cosmology/dark_matter/data/beta_ladder_1b/
 series_phenomena/cosmology/dark_matter/data/beta_ladder_void_3173/
 series_phenomena/cosmology/dark_matter/analyze_out.txt
 series_phenomena/cosmology/dark_matter/verify_out.txt
+
+# GWOSC strain files fetched by code/3678 (never commit)
+*.hdf5
