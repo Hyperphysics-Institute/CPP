@@ -29,6 +29,9 @@ The founder cannot adjudicate PCD-level detail by picture, and says so. The corp
 | 8 | Even-sector surface stability (3390's b₂ < 0) | internal consistency | re-run with the C¹ interior (no shell): b₂ > 0 (the core's inertia), ℓ = 2, 3 poles damped (0.4586 − 0.1315 i, 0.6882 − 0.1027 i), upper half-plane empty by argument principle (3643) | **passes** (3643) — the instability was the clamp's; SURFACE-STABILITY-1 closed on branch (a) [PCD-EXT] |
 | 9 | Neutron-star saturation threshold (3634: central lapse ½ at C ≈ 0.20–0.25) | derived | unchanged (the cap's location is the census's) | stands |
 
+## §0 Extension status (3695 — AP-5 v0.4, owed list empty)
+**Item 4 done (3695): n_s survives** — saturation ends 0.135 e-folds after the near-100 % start (f ∝ a⁻³); the n_s epoch (κ ≳ 1.6×10⁻⁴, f ~ κ³ ~ 10⁻¹²) is unsaturated by ~10 orders; a saturated era would clip the driver (n_s → 1, excluded 8σ) — AP-5's cosmological constraint κ < κ_cap ≈ 0.9, satisfied; reheating = the uniform, complete exit. **AP-5 discharges the whole 3690 sheet by definition or derivation** (two numerical sharpenings remain); theorem (no shrinking capacities); constraint (κ < κ_cap); prediction (Λ̃ ≈ 1.7). **Next: CONV-044, the AP-5 panel.** Record `rcore_derivation/3695_ns_under_deep_nesting.md`.
+
 ## §0 Extension status (3694 — AP-5 v0.3)
 **Owed item 3 done (3694): the dark surface discharged by structure** — no release channel (D1), charge-blind lockstep overflow (D2 + 3374: no dipole), no phonon spectrum between the Moment cadence and the NIR; leakage (l_P/λ)² ~ 10⁻⁸³–10⁻⁹³ at the pattern's frequency; EHT/NIR bound f < 0.04 met with f = 0. OPEN-GR-SEA-SHELL-EMISSION-1 CLOSED under AP-5; 3623's zero-parameter dark-surface prediction stands with a mechanism. Remaining before CONV-044: item 4 (n_s under deep nesting). Record `rcore_derivation/3694_dark_surface_under_ap5.md`.
 
