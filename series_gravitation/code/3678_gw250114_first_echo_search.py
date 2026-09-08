@@ -71,14 +71,14 @@ PHI_GRID = (0.0, np.pi / 2, np.pi, 3 * np.pi / 2)
 
 def matched_filter_snr(D, Hs, psd, f, fs, N):
     """Phase-marginalized SNR time series. Conventions: D, H are rfft/fs (continuous-FT scale), one-sided PSD psd(f).
-    <a|b> = 4 Re int a* b / S df ;  z(tau) = 4 Re int_0^inf D* H e^{2 pi i f tau}/S df = 2 fs irfft(conj(D) H / S) (irfft folds the negative frequencies)  ;  sigma^2 = <h|h>."""
+    <a|b> = 4 Re int a* b / S df ;  z(tau) = 4 Re int_0^inf D H* e^{2 pi i f tau}/S df = 2 fs irfft(D conj(H) / S): z[j] is the overlap with the template delayed by j/fs (irfft folds the negative frequencies)  ;  sigma^2 = <h|h>."""
     df = f[1] - f[0]
     band = (f >= FMIN) & (f <= FMAX)
     w = np.where(band, 1.0 / psd, 0.0)
     out = []
     for H in Hs:
         sigma2 = float(4 * np.sum(np.abs(H) ** 2 * w) * df)
-        z = 2 * fs * irfft(np.conj(D) * H * w, n=N)
+        z = 2 * fs * irfft(D * np.conj(H) * w, n=N)   # z[j] = <d | h delayed by j/fs>
         out.append(z / np.sqrt(sigma2))
     a, b = out
     return np.sqrt(a ** 2 + b ** 2)
@@ -100,14 +100,25 @@ def taper(N, alpha=0.1):
     from scipy.signal.windows import tukey
     return tukey(N, alpha)
 
-def whiten_search(d, fs, psd_of_f, N, td_grid):
+T_RD_START = 2.0 + 6 * T_MF          # ringdown start in the 8 s on-source window: t_peak - 2 s + 6 t_Mf
+TAU_HALF = 2.0e-3                    # +/- 2 ms: PRL's t_peak precision (0.4 t_Mf = 0.13 ms) plus the one-/two-mode
+                                     # start ambiguity (6 to 10.5 t_Mf = 1.5 ms). FROZEN 8 Sep 2026 before run 3.
+
+def whiten_search(d, fs, psd_of_f, N, td_grid, tau_lock=True):
+    """Search over t_d (and the phi grid). If tau_lock, the template's ringdown start is held at T_RD_START +/- TAU_HALF
+    (the frozen spec: the echo is time-locked to the known peak). tau_lock=False is the free-start DIAGNOSTIC only
+    (Kila6 run 2 showed it behaves as a generic burst search: hits at +4.25 s after the peak, H-L offset 29 ms)."""
     f = rfftfreq(N, 1 / fs); D = rfft(d * taper(N)) / fs; psd = psd_of_f(f)
+    i0 = int((T_RD_START - TAU_HALF) * fs); i1 = int((T_RD_START + TAU_HALF) * fs) + 1
     best = (0, None)
     for td in td_grid:
         for phi in PHI_GRID:
             Hs, _ = echo_template(N, fs, td, phi)
             rho = matched_filter_snr(D, Hs, psd, f, fs, N)
-            i = int(np.argmax(rho)); best = max(best, (rho[i], (td, i / fs)))
+            if tau_lock:
+                j = i0 + int(np.argmax(rho[i0:i1])); best = max(best, (rho[j], (td, j / fs)))
+            else:
+                i = int(np.argmax(rho)); best = max(best, (rho[i], (td, i / fs)))
     return best
 
 def selftest(seed=7):
@@ -132,12 +143,14 @@ def selftest(seed=7):
     for label, target in (("null", 0.0), ("inject_SNR8.7", 8.7)):
         vals = []
         for k in range(12):
-            d = noise() + ((target / sig) * np.roll(h, 2 * FS) if target > 0 else 0.0)
+            d = noise() + ((target / sig) * np.roll(h, int(T_RD_START * FS)) if target > 0 else 0.0)
             rho, (td, tau) = whiten_search(d, FS, analytic_psd, N, td_grid)
             vals.append(rho)
         results[label] = (np.mean(vals), np.std(vals), np.max(vals))
         print(f"  {label:14s}: recovered peak SNR mean {np.mean(vals):.2f} ± {np.std(vals):.2f} (max {np.max(vals):.2f}) over 12 noise draws")
     ok = 0.7 < ratio < 1.4 and results["null"][0] < 5.5 and results["inject_SNR8.7"][0] > 7.0
+    rho_free, _ = whiten_search(noise(), FS, analytic_psd, N, td_grid, tau_lock=False)
+    print(f"  free-start diagnostic on one null draw (NOT the statistic): {rho_free:.2f}")
     print(f"  [{'PASS' if ok else 'FAIL'}] self-test: PSD ~1, null peak < 5.5, injected 8.7 recovered > 7")
     return ok
 
@@ -187,7 +200,9 @@ def run():
         psd_of_f = lambda f, fw=fw, pw=pw: np.interp(f, fw, pw)
         on = x[i_peak - 2 * FS: i_peak + 6 * FS]                     # on-source: t_peak - 2 s .. + 6 s
         td_grid = np.arange(TD_LO, TD_HI + 1e-9, 0.001)
-        rho, (td, tau) = whiten_search(on, FS, psd_of_f, 8 * FS, td_grid)
+        rho, (td, tau) = whiten_search(on, FS, psd_of_f, 8 * FS, td_grid)                 # FROZEN statistic (tau locked)
+        rho_free, (td_f, tau_f) = whiten_search(on, FS, psd_of_f, 8 * FS, td_grid[::5], tau_lock=False)
+        print(f"  {det}: [diagnostic, not the statistic] free-start peak {rho_free:.2f} at t_d = {td_f:.3f}, ringdown start {tau_f - 2.0:+.3f} s from t_peak (GPS {gps + tau_f - 2.0:.3f})")
         bg = []
         for k in range(1000):                                        # background: 8 s slots stepping 0.0054 s (0.02 t_d) through off-source
             s0 = int((0.5 + 0.0054 * k) * FS)
@@ -195,7 +210,7 @@ def run():
             r, _ = whiten_search(off[s0: s0 + 8 * FS], FS, psd_of_f, 8 * FS, td_grid[::5]); bg.append(r)
         bg = np.array(bg); p = float(np.mean(bg >= rho)) if bg.size else float("nan")
         rhos[det] = (rho, td, tau, p, bg.max() if bg.size else float("nan"))
-        print(f"  {det}: peak SNR {rho:.2f} at t_d = {td:.3f} s, tau = {tau:.3f} s after t_peak-2s;  p = {p:.3f} ({bg.size} background slots, background max {rhos[det][4]:.2f})")
+        print(f"  {det}: LOCKED peak SNR {rho:.2f} at t_d = {td:.3f} s (ringdown start {tau - 2.0:+.4f} s from t_peak);  p = {p:.3f} ({bg.size} background slots, background max {rhos[det][4]:.2f})")
     net = np.sqrt(sum(v[0] ** 2 for v in rhos.values()))
     print(f"NETWORK peak SNR {net:.2f}  — verdict rule (frozen, see header): >= 7 & p < 0.01 -> alternative DETECTED / SEA falsified; background-consistent (p > 0.1) -> alternative EXCLUDED / seat (3) closes; else inconclusive; background max > 7 -> exhaustion trigger")
 
