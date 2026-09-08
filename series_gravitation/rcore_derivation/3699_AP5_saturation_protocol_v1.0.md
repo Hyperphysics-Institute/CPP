@@ -38,11 +38,12 @@ Depth arithmetic, the conservation theorem, the two local stiffness facts, the d
 ## §4 Owed after ratification (in order)
 1. ~~Lockstep inheritance~~ — DONE (3701) for V_i = 0; EM case → item 7.
 2. The object's Λ̃ — BOUNDED at 3702 from the ringdown: shell mass μ ≲ 0.10 (GW150914) → 0 < Λ̃ ≲ 0.2; the number depends on the interior profile (item 3).
-3. The layer-1/layer-2 clock law (the lapse floor and interior clock re-derived from D1 + D2; the 4/3 = 2·cap coincidence tested there) — NOW CONSTRAINED (3702): for black holes ≳ 90 % of M inside the wave horizon 2M; for neutron stars the flat core (3634–3637) stands.
+3. ~~Clock law~~ — DONE (3703): matter lapse flat at ½, sea lapse → 0 (bimetric derived); force reading DRAIN selected by the ringdown; T-7 numerology. Item 2 resolved by consequence: Λ̃ ≈ 0 (transit level).
 4. The D1 clip embedded in EU-1's H_eff chain; f ↔ D/K map.
 5. PRED-O-41: the transient release burst at a merger — magnitude and timescale.
 6. The (l_P/λ)² inter-layer EM coupling, derived.
 7. OPEN-GR-RCORE-ALBEDO-1: the surface's coherent EM re-radiation under driven, bounded DP motion (3701 §3).
+8. **The saturated-core neutron star under DRAIN** (gravity × K/D in the core, not zero): re-derive the flat-core branch (3634–3637) and re-score NS.2–NS.5 and GR-2 §(iv). Most consequential open item.
 
 ## §5 Enacted on ratification (Patch 3699)
 THEO-PCD-SEA retired into D3; GR-2 → V2.8 (next patch) (AP-5 as the working amendment; rows 5/6/7 restated; the GW250114 run-3 result; H-SURFACE-IMPEDANCE retired; the CONV-043 and CONV-044 standing objections verbatim); `predictions.md`: PRED-O-39 → null, PRED-O-40 → 0 < Λ̃ ≲ 1.7, PRED-O-41 candidate; `axiom-registry.md`: AP-5 entered under A3′ with its anchors.
