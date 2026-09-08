@@ -24,10 +24,11 @@ consumed while `DMDE.md` had reserved 3424 for DM/DE).
 |---|---|---|---|
 | **DM** (dark matter) | **3500–3599** | **ACTIVE** — opened at 3500 | `frontier_sectors/DMDE.md` (DM section) |
 | **DE** (dark energy) | **3400–3499** | ACTIVE — in use to 3425 | `frontier_sectors/DMDE.md` (DE section) |
-| **GR** (relativity) | **3600–3699** | **ACTIVE** — opened at 3600 (G-GR-BLOCK-3600, founder, 3 Sep 2026); in use to 3658 | `frontier_sectors/GR.md` |
+| **GR** (relativity) | **3600–3699** | **EXHAUSTED at 3699** (G-GR-BLOCK-3600, founder, 3 Sep 2026) | `frontier_sectors/GR.md` |
+| **GR** (relativity) | **3700–3799** | **ACTIVE** — opened at 3700 (**G-GR-BLOCK-3700**, founder ruling 8 Sep 2026: "3700-3799 series open, I think. If it is, then dedicate to GR lane"); first use Patch 3700 (GR-2 V2.8) | `frontier_sectors/GR.md` |
 | GR (first block) | 3300–3399 | **CONSUMED** — highest used 3398; 3399 left UNUSED as the block's terminal | `frontier_sectors/GR.md` |
 | cosmology (legacy) | 3100–3199 | **CONSUMED** — closed at 3199 | — |
-| unallocated | 3700–3999 | reserved, unassigned | — |
+| unallocated | 3800–3999 | reserved, unassigned | — |
 
 **DM moved out of 3400–3499 by founder ruling (25 Aug 2026).** The DM and
 DE lanes had shared a block and a pointer line while running in parallel

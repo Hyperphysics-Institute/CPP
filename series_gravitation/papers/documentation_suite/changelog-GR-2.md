@@ -326,3 +326,11 @@ number changed. Compile gate: pdflatex ×2, 0 errors, 0 undefined,
 **Edit (text only).** A V2.2 block after V2.1 with four qualifications and the compactness statement; `\date` → V2.2. Compile gate: pdflatex ×2.
 
 **Open items:** OPEN-GR-SHELL-DATUM-1 (the second junction condition from the register); OPEN-GR-SATURATION-THRESHOLD-1 (the relativistic threshold); the axial convention against a named normalization; the shell's axial current; OPEN-GR-LOVE-SPIN-1; the PE study.
+
+## V2.8 — 8 September 2026, Patch 3700 (Session 166) — the saturation protocol ratified (AP-5); the echo prediction becomes a null; the paper's new predictions
+
+**Trigger.** The V2.6 re-cut question was answered by a partition (THEO-PCD-SEA, 3675), reviewed at CONV-043 (OPEN 4–1) whose dissent the founder confirmed ("this amends my vision"); the founder supplied the mechanism (3688–3692); AP-5 drafted (3692), its owed items derived (3693–3695), reviewed at CONV-044 (ADMISSIBLE 5–0), ratified 8 Sep (3699). GW250114 first-echo search run on GWOSC data with a frozen verdict rule (3678–3683).
+
+**Edit (text only; earlier blocks preserved as record).** `\date` → V2.8; header changelog; a V2.8 block after V2.7 (partition; governance; the ringdown as GR's and PRED-O-39 as a null with the GW250114 result; the four new predictions — 0 < Λ̃ ≲ 1.7, the dark surface, PRED-O-41 candidate, the neutron-star fingerprints; both standing objections verbatim; the owed list); Verification gains the V2.8 scripts. Compile gate: pdflatex ×2 (Isak). The model-wall line sets of V1.x–V2.7 are superseded as physics and kept.
+
+**Open items carried:** lockstep inheritance (derivation); the object's Λ̃; the layer-1/2 clock law; EU-1 embedding of the clip; PRED-O-41; the (l_P/λ)² coupling. Retired: H-SURFACE-IMPEDANCE; OPEN-GR-SURFACE-IMPEDANCE-1; OPEN-GR-CORE-DISSIPATION-1's mechanism (answered under AP-5; energy residence = layer registers); OPEN-GR-SEA-SHELL-EMISSION-1 (closed conditional on D2).
