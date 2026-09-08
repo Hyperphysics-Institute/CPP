@@ -67,3 +67,26 @@ NETWORK peak SNR 18.29
 **Self-test under the lock (realistic low-frequency content, conditioned):** null 3.58 ± 0.55 (fewer trials than the free search, as expected); injected 8.7 → 9.21 ± 1.03; free-start diagnostic on a null draw 5.66. **Thresholds unchanged and now conservative:** ≥ 7 & p < 0.01 → detected; background-consistent (p > 0.1) → excluded; exhaustion if background max > 7.
 **Data-quality note for the record:** 68.6 % / 68.9 % of the 4096 s files are NaN (detector out of observing mode for most of the hour); 277 s of clean off-source data were found ending 40 s before the peak; the on-source window is NaN-free. Not a defect; recorded so the p-value's 1000 slots are understood to come from a 277 s stretch (slots overlap; effective independent count ≈ 277/8 ≈ 35 — the background *max* is the robust quantity, and it was 6.96 / 5.15 under the free search).
 Run 3 command unchanged: `python series_gravitation/code/3678_gw250114_first_echo_search.py --run`.
+
+## §10 Run 3 on Kila6 (8 Sep 2026) — THE FROZEN STATISTIC, SCORED (Patch 3683)
+**Verbatim output:**
+```
+GW250114_082203 GPS from GWOSC: 1420878141.2
+  H1: 11513856 NaN samples in file (68.63 %)
+  H1: off-source = 277 s ending 40 s before the peak
+  H1: [diagnostic, not the statistic] free-start peak 12.99 at t_d = 0.300, ringdown start -0.278 s from t_peak (GPS 1420878140.922)
+  H1: LOCKED peak SNR 3.69 at t_d = 0.247 s (ringdown start +0.0012 s from t_peak);  p = 0.152 (1000 background slots, background max 4.56)
+  L1: 11554816 NaN samples in file (68.87 %)
+  L1: off-source = 277 s ending 40 s before the peak
+  L1: [diagnostic, not the statistic] free-start peak 12.86 at t_d = 0.265, ringdown start -0.248 s from t_peak (GPS 1420878140.952)
+  L1: LOCKED peak SNR 3.76 at t_d = 0.276 s (ringdown start +0.0020 s from t_peak);  p = 0.081 (1000 background slots, background max 4.29)
+NETWORK peak SNR 5.27
+```
+**Diagnostic confirms the run-2 decode:** the free-start peaks are the merger itself (ringdown start −0.278 s / −0.248 s from t_peak with the template's echo copy on the real ringdown).
+**Verdict by the frozen rule (3678 §3 / script header), applied as written:**
+- *Detected (≥ 7 and p < 0.01)?* **No.** Locked 3.69 / 3.76, network 5.27, against the alternative's predicted 7.5 (first echo) – 8.7 (train). The network value equals the null expectation (√2 × 3.58 ≈ 5.1 from the self-test).
+- *Excluded (background-consistent, p > 0.1)?* **H1 yes (p = 0.152); L1 no (p = 0.081).** The frozen rule names no combined-network p, and none is defined after the fact.
+- **Formal outcome: INCONCLUSIVE by the letter — one detector short of the exclusion criterion.** Exhaustion trigger not fired (background maxima 4.56 / 4.29 < 7).
+**Substantive reading (stated, not scored):** the observed amplitude is 3.4σ below the alternative's train prediction (8.7, σ ≈ 1.0 from the self-test) and 1.7σ below its conservative first-echo prediction (7.0). The two detectors' best-fit delays (0.247 s, 0.276 s) differ by 29 ms; a common echo would agree to a few ms. **THEO-PCD-SEA's null is consistent with the data; the coherent-return alternative is DISFAVORED at the 2–3σ level on GW250114 and not excluded.** Quantifier discipline: "disfavored on GW250114", not "excluded".
+**Seat (3) of the triangulation:** moves from OPEN to **SCORED: consistent (SEA); alternative disfavored 2–3σ**. What would close it: (a) a pre-registered combined-network statistic (Fisher or coherent) frozen before use — owed, for a future event or a re-run with a new frozen header, not for this data; (b) the LVK's own O4 echo analysis of GW250114 when published.
+**No retune:** R_surf, t_d range, phase grid, lock width, thresholds, and template are as frozen at 3678 §3 and 3682 §9.
