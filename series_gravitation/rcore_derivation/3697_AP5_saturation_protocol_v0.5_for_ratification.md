@@ -10,6 +10,15 @@
 - **D3 — Relay is whole.** The imprint a GP stamps on its outgoing DI-bits is the full received content at every active layer, never the acted-on fraction. Truncation binds what a GP does at each layer, not what it relays. (THEO-PCD-SEA, CONV-043, retired into this definition.)
 - **D4 — Storage and conservation.** What layer n cannot act on is held in layer n + 1's registers, never in the messenger (AP-4). Nothing is discarded at any depth; the hierarchy conserves the energy of the initial configuration. The stored pattern is the CPs' bounded, lockstep motion within their cells, repositioned each Moment (R-CORE-STORES-AS-CP-VIBRATION).
 
+## §1a Alignment with the ratified text (Copilot's D-5, delivered)
+| definition | ratified text it sits under | status |
+|---|---|---|
+| D1 activation | A3′ definitional clause AP-3 (the GP protocol: "compute/hold/per-Moment refresh of SSV_abs and SSV_net from Perceive-stage arrivals"); the cap = lapse ½ via the ratified PSR law N = (1 − v/2)/(1 + v/2) (3634, R-CLOCK-RATE-IS-DISPLACEMENT, R-PSR-LAW-LOG) — not a new constant | **definitional**: AP-3 says what the GP does with its arrivals and is silent on excess; D1 supplies the excess rule |
+| D2 displaced coordinate + lockstep | A3′ C5 ("the GP→CP displacement instruction follows geodesics of the unique … assembled metric") — layer 1; D2 adds the within-cell coordinate for layers ≥ 2 and states lockstep (layer-1 lockstep: 3374) | **definitional** (coordinate); **stipulated pending derivation** (lockstep inheritance) |
+| D3 relay whole | A3′ C3 ("the Compute step applies the same icosahedral PSR shell-sum to all packet components") and AP-4 (the imprint is a snapshot of the GP's computed registers) — the two readings CONV-043 found underdetermined; D3 fixes which | **definitional** (resolves an underdetermination; founder-confirmed as an amendment, 3688) |
+| D4 storage/conservation | AP-4 ("static snapshot … reset per hop", no evolving DOF in the messenger) fixes where storage cannot be; D4 fixes where it is and that nothing is discarded | **definitional** (AP-4 + D1 do not entail it; CONV-044 T-6, 4–0) |
+Depth arithmetic, the conservation theorem, the two local stiffness facts, the dark-surface structure, and the n_s clip are **derived** from D1–D4 (3693–3695) at the grades of §2; nothing else in AP-5 is asserted.
+
 ## §2 What the clause is recorded as having established (post-CONV-044 grading)
 | item | status after the panel |
 |---|---|
