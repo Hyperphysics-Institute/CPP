@@ -1,0 +1,23 @@
+# AP-5 owed item 1: lockstep inheritance at layer n + 1, DERIVED per channel — a theorem with a stated boundary. For every census with vanishing vector channel (V_i = 0: a gravitational wave, the static demand of a neutral medium) the copy repositions both CPs of a DP identically, because the only irrep that distinguishes charge is the first moment, and a tensor pattern exerts no net force on the icosahedral shell at all (it updates the Q register only). For V_i ≠ 0 — light — the copy separates the pair by construction: that is how the surface absorbs EM into DP internal motion. So D2's lockstep clause becomes a theorem for the content the dark-surface argument needs (GW storage, the static state), and the EM case yields a new, sharper question — not thermal emission but coherent re-radiation: OPEN-GR-RCORE-ALBEDO-1
+
+**Patch 3701, Session 166, 8 Sep 2026 (block 3700–3799).** Verify `code/3701_lockstep_inheritance_verify.py` (6/6). Reasoning `reasoning/3701.md`. Discharges CONV-044's D2 revision (GPT, Grok, Gemini) at the level of derivation; the ratification rider's "black-surface f = 0 not derived" is now derived for GW-stored energy and the static state.
+
+## §1 The setting
+The layer-(n+1) copy runs the PCD cycle on the overflow census arriving from the 12 PSR neighbours, each bit carrying {count, E} (AP-4). PCD's displacement rule uses the *first moments*: d(q) = a_c Σ c_i r̂_i + a_E q Σ E_i for a CP of charge q; its register update uses the *second moment* Q_ij = (Σ E Eᵀ)^TF (AP-4d). A3′ decomposes the census into Φ = Σ c, V = Σ E, Q. The two CPs of a DP share one layer-1 cell (the DP is the sea's constituent; at the floor everything is packed at l_P/2) and therefore share the census.
+
+## §2 The theorem (T1–T2)
+- **A tensor pattern exerts no net force on the shell.** For any traceless symmetric Q and a count modulation c_i = c₀(1 + ε r̂ᵢᵀ Q r̂ᵢ), Σ c_i r̂_i = 0 exactly on the icosahedron: the ℓ = 1 projection of an ℓ = 2 pattern vanishes (odd moment of an even pattern). A GW-loaded census moves *neither* CP; it updates the Q register (which is the wave being registered, relayed by D3, stored by D4).
+- **Charge enters only through V.** For E-content with vanishing first moment (E_i = Q r̂_i has Σ E_i = Q Σ r̂_i = 0), the E-force on + and − is identically zero and the count-force is common: **d(+) = d(−)**.
+- Hence: **lockstep at layer n + 1 holds for every census with V_i = 0** — every gravitational wave (a pure tensor irrep by A3′) and the static demand of a neutral medium — as a consequence of A3′'s irrep decomposition plus co-location. D2's clause is a theorem on that domain.
+
+## §3 The boundary (T3) and what it opens
+For V_i ≠ 0 — an EM wave — d(+) − d(−) = 2a_E V ≠ 0: the copy separates the pair **by construction**. This is not a failure; it is the founder's 4 Sep picture of where EM energy lives ("DP arcs and separation") realised at layer 2: the surface absorbs light into bounded DP internal motion within the cell. What it changes in 3694's dark-surface argument: for GW-stored energy and for the static state the argument is now **unconditional** (no dipole, by theorem). For EM-loaded content, thermal emission remains excluded (no cascade spectrum, 3694 T4; no release, T2) — but a *driven*, bounded DP dipole at the incident frequency can re-radiate coherently at that frequency. That is an **albedo**, not a temperature. Registered: **OPEN-GR-RCORE-ALBEDO-1** — the R-core surface's EM reflectivity as a function of frequency under D2/D4 (does the driven cell motion store, or re-emit, or both?); the empiric is imaging/polarimetry of accretion flows, not the thermal NIR bound.
+
+## §4 Between cells (T4)
+Two cells seeing the same local Q feel the same (zero) force; a tensor pattern's displacement field is a strain — the difference between cells across the wavelength — never a within-cell dipole. That is the tidal field, and it is what the shell's k₂ (3685, bound) responds to.
+
+## §5 Standing
+- **D2 lockstep: derived for V_i = 0 content; stipulated-and-bounded for V_i ≠ 0.** AP-5 v1.0 text unchanged; the registry's "stipulated pending derivation" becomes "derived (V = 0); EM case → ALBEDO-1."
+- **Dark surface (3694): unconditional for GW storage and the static state.** PRED-O-39's null and PRED-O-41's candidate are unaffected.
+- **New open problem:** OPEN-GR-RCORE-ALBEDO-1. Its first computation: the driven response of a bounded, quintic-restoring cell dipole (3692) to an incident E at frequency ω — the ratio of re-radiated to stored power — and whether any of the corpus's rulings (D4: nothing discarded) forbids the re-radiation.
+- Owed list now: 2 the object's Λ̃; 3 the clock law; 4 EU-1 embedding; 5 PRED-O-41; 6 the (l_P/λ)² coupling; **7 ALBEDO-1.**
