@@ -1,0 +1,18 @@
+# Row 6 under THEO-PCD-SEA closed by a bound, not a register law: the visible shell's tidal k₂ cannot exceed the incompressible-fluid Love number at the R-core's compactness, and k₂_incomp(C = 3/8) = 0.019 — twenty times under the 0.387 condition (Λ = 1.7 vs GW250114's 34.8). Any register response with at least a fluid's restoring force passes; only a register softer than any fluid fails, which is what the budget law was (k₂ = 7.9) and what R-CAP-SPRING already excludes. Row 6: CONDITIONAL → PASSES for the admitted class
+
+**Patch 3685, Session 166, 8 Sep 2026.** Verify `code/3685_shell_k2_bound_verify.py` (6/6). Reasoning `reasoning/3685.md`. Ledger §0 / row 6 updated. No paper touched. No panel yet.
+
+## §1 Why a bound is the right instrument
+3684 §3 made row 6 conditional on the visible shell's tidal k₂ < 0.387, and noted the register's static stiffness is unwritten (3621 §2). It need not be written to settle the row. At fixed compactness, the Love number is largest for the most deformable body with a restoring force, and among fluids the incompressible one has the largest k₂ (softer equations of state give smaller k₂ at the same C). So for any register response that pushes back at least as hard as a fluid's pressure, k₂(shell) ≤ k₂_incomp(C). The founder's ruling R-CAP-SPRING ("a spring, not putty") places the register in that class; the failing class is the one with *less* restoring force than a fluid — putty — which is exactly the budget register's trace lock (3650, Λ = +714, k₂ = 7.9, unphysical for any material, 3684 T3).
+
+## §2 The number (T1–T3)
+Standard relativistic machinery (Hinderer 2008; Damour & Nagar 2009): the static ℓ = 2 perturbation y(r) integrated through the exact Schwarzschild constant-density interior, the surface density-jump correction y → y − 3, and the closed-form k₂(C, y). Check: k₂ → 3/4 as C → 0 (0.7475 at C = 0.001; the first-order GR correction is ≈ −5.6 C). **At C = 3/8: k₂_incomp = 0.0188, Λ = (2/3) k₂ C⁻⁵ = 1.69.** The bound 0.387 is exceeded only for C < 0.11 — nowhere near the R-core. Sweep: 0.556 (C = 0.05), 0.183 (0.20), 0.063 (0.30), 0.030 (0.35), 0.010 (0.40), monotone.
+
+## §3 Standing
+- **Row 6 under SEA: PASSES for every register response at least as stiff as a fluid** (k₂ ≤ 0.019, Λ ≤ 1.7 < 34.8), with a twenty-fold margin. The condition of 3684 is discharged by the bound. The visible-shell/dark-interior structure (3684 §2) does not weaken this: the shell is *less* than the whole star, so its k₂ is smaller still; the incompressible full-star value is an upper bound on it.
+- **Residual falsifier (the register sector's own):** a register with less restoring force than a fluid. That is the class R-CAP-SPRING excludes and the class CONV-042 already excluded empirically. It is also the one thing a future register law must not be.
+- The register law remains unchosen and, after this bound, is load-bearing for **no** row of the wave-sector ledger. It is needed for the interior's own statics (rows 3, 9, the core profile), not for anything the exterior sees.
+- **Bundle for CONV-043: complete and stronger than at 3684.** Self-attacks handed over, updated: (i) row 6 rests on a bound over a class, not a computed register k₂; (ii) the GW250114 echo test is inconclusive by its own letter (L1 p = 0.081), alternative disfavored 2–3σ; (iii) bimetric inside the cap; (iv) no register law chosen. Trigger unchanged: review economy §2.1, axiom-level-change clause.
+
+## §4 Next act
+Assemble the CONV-043 package (CONV-001 single block; one question: is the relay/register partition open under the nine axioms and the ratified A3′/AP-4 wording, or forced?). Dispatch is the founder's paste; nothing ships on SEA before the adjudication.
