@@ -39,7 +39,8 @@ from scipy.signal import welch
 from scipy.fft import rfft, irfft, rfftfreq
 
 # ---------------- event constants (LVK PRL 135, 111403) ----------------
-GPS_PEAK = 1420878141.0      # 2025-01-14 08:22:03 UTC ~ GPS 1420878141; refined from the GWOSC event JSON in --run
+EVENT = "GW250114_082203"    # GWOSC full event name (the short form "GW250114" 404s on api/v2)
+GPS_PEAK = 1420878141.0      # 2025-01-14 08:22:03 UTC = GPS 1420878141 (18 leap s); refined from GWOSC if the API answers
 T_MF = 0.337e-3; M_DET = T_MF / 4.925e-6; CHI = 0.68
 F220, G220 = 247.0, 221.0; F221, G221 = 249.0, 708.0
 R_SURF = 2.0 / 3.0; TD_PRED = 0.270; TD_LO, TD_HI = 0.24, 0.31
@@ -129,7 +130,11 @@ def _fetch_strain(det, gps, duration=4096, cache_dir="."):
     """Pure-Python GWOSC fetch (no gwpy: its igwn-segments dependency needs MSVC on Windows). Returns (t0, dt, strain)."""
     import os, requests, h5py
     from gwosc.locate import get_event_urls
-    allu = get_event_urls("GW250114", detector=det, format="hdf5", sample_rate=FS)
+    import os
+    if os.environ.get(f"GWOSC_{det}_URL"):
+        allu = [os.environ[f"GWOSC_{det}_URL"]]
+    else:
+        allu = get_event_urls(EVENT, detector=det, format="hdf5", sample_rate=FS)
     urls = [u for u in allu if f"-{duration}." in u] or [u for u in allu if "4096" in u] or allu
     if not urls:
         raise RuntimeError(f"no hdf5 strain URL for {det} from get_event_urls: {allu}")
@@ -144,8 +149,10 @@ def _fetch_strain(det, gps, duration=4096, cache_dir="."):
 
 def run():
     from gwosc.datasets import event_gps
-    gps = event_gps("GW250114")            # refines GPS_PEAK
-    print(f"GW250114 GPS from GWOSC: {gps}")
+    try:
+        gps = float(event_gps(EVENT)); print(f"{EVENT} GPS from GWOSC: {gps}")
+    except Exception as e:
+        gps = GPS_PEAK; print(f"GWOSC event_gps failed ({e}); using GPS_PEAK = {gps}")
     rhos = {}
     for det in ("H1", "L1"):
         t0, dt, x = _fetch_strain(det, gps)

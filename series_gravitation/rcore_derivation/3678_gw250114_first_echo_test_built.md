@@ -30,3 +30,6 @@ pip install gwosc requests h5py scipy numpy --break-system-packages && \
 python3 series_gravitation/code/3678_gw250114_first_echo_search.py --run
 ```
 The two ~120 MB strain files download once into the repo root (add them to `.gitignore` if git status complains — they must not be committed).
+
+## §7 Amendment (Patch 3680) — event name
+GWOSC's v2 API resolves `GW250114_082203`, not `GW250114`; fixed. If `event_gps` fails the script uses the computed peak GPS 1420878141; if `get_event_urls` fails, set `GWOSC_H1_URL` and `GWOSC_L1_URL` to the 4096 s HDF5 links from the event's GWOSC page and rerun.
