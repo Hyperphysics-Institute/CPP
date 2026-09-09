@@ -136,7 +136,7 @@
 |---|---|---|---|---|---|
 | DM-1: A Velocity-Independent Self-Interacting Dark-Matter Candidate from Charge-Neutral qDP/... | 1.8 | `series_phenomena/cosmology/dark_matter/DM-1/DM-1_substrate_dark_matter_candidate.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | DM-3: The Discriminating Predictions — Nine observational protocols for the Cross-Rod dark-m... | 1.2 | `series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| EU-1: The Primordial Scalar Spectral Index from Substrate Inflation — A Zero-New-Axiom Deriv... | 1.3 | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
+| EU-1: The Primordial Scalar Spectral Index from Substrate Inflation — A Zero-New-Axiom Deriv... | 1.4 | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | 2026-09-09 | 3809 | **UNKNOWN — not in prior catalog** |
 | DM-2: Sea Gravitation and the Dark Sector — One sourcing rule for matter, dark matter, and -... | 1.0 | `series_phenomena/cosmology/sea_gravitation/DM-2/DM-2_sea_gravitation_dark_sector.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
 | TP-1: The Truncated Photon and the Lattice Regularization of Shutter-Induced Photon Creation... | 1.4 | `series_phenomena/quantum_optics/photon_truncation/TP-1/TP-1_truncated_photon.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 
@@ -208,7 +208,7 @@
 | GR-1i: The Classical Tests of Gravitation — Perihelion precession, light deflection, Shapiro delay, and gravitational redshift as geodesic consequences of the CPP shell-broadcast metric — Companion i to GR-1 --- Conscious Point Physics gravitation series --- | 0.1 | `series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex` | 2026-08-20 | 3269 |
 | GR-1j: The CPP Field Equations from the Messenger Census — T-1 (the general equation), T-2 (Birkhoff-type uniqueness), and T-3 (the conserved source current), derived from the three-type conscious-point automaton — Companion j to GR-1 --- Conscious Point Physics gravitation series --- | 1.0 | `series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex` | 2026-08-20 | 3270 |
 | GR-1: Local Gravitation from SSV Shell Broadcast — One nonlinear substrate response from Coulomb's law to the exact Schwarzschild, Kerr, and Kerr--Newman metrics — | 1.0.2 | `series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex` | 2026-08-20 | 3276 |
-| The Echo Falsifier: — Millisecond Gravitational-Wave Echoes from Horizonless — CPP Compact Objects — Second series paper of the Conscious Point Physics gravitation series (parent: GR-1) | 2.7 | `series_gravitation/papers/GR-2_echo_falsifier.tex` | 2026-09-07 | 3671 |
+| The Echo Falsifier: — Millisecond Gravitational-Wave Echoes from Horizonless — CPP Compact Objects — Second series paper of the Conscious Point Physics gravitation series (parent: GR-1) | 2.10 | `series_gravitation/papers/GR-2_echo_falsifier.tex` | 2026-09-09 | 3712 |
 
 ## DEFECT — title-page version disagrees with the CHANGELOG
 
