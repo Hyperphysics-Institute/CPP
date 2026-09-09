@@ -334,6 +334,8 @@ The total lattice mode capacity — a topological invariant. This is the denomin
 
 **Pine tree model** — Physical picture where each radial chain is a trunk with tangential branches arching outward, creating a fractal volume-filling network. Three bonding regions: near-center cross-linking, mid-cage web mesh, near-surface convergence. [First appeared: SM-9 v2.2]
 
+**S-HENGINE-HELD** (EU lane, Patch 3804, CONV-045 ADMISSIBLE 5–0). The early-universe expansion driver (the H-engine, PSR_base → PSR_base(n̄)) reads what a grid point *holds* — the Gibbs entropy of its superposed stack, μ = kT ln n̄, conserved by AP-5 D4 and relayed whole by D3 — and nothing the point *acts on* per Moment (the displacement D1 clips at saturation). Recorded as a bridge statement: the unique consistent identification of 0746 fork (i) (count-driven, not SSV-stress-driven) with AP-5's held sector, not an entailment of the prior corpus. Consequence: PRED-C-96 (n_s = 1 − 2/N_*) stands under R-STACK-SENDS-EACH; the 3695 requirement of an unsaturated n_s epoch (κ < κ_cap) is void. Source: `series_phenomena/cosmology/early_universe/hengine_driver_statement.md`.
+
 **Shell 3 gap** — The structural absence of lattice edges at Shell 3 (d≈1.176, V=12, E=0). Forces coordination tunneling for the top quark. [First appeared: SM-8 v4.1]
 
 **Shell 3 relay mechanism** — Thomas's proposed mechanism for the top quark's ×16 enhancement: DPs dissociate to occupy Shell 3 positions, forming a synthetic icosahedral cage. Each of 12 relay stations radiates to Shell 4, creating a criss-cross web that multiplies the organised DP count. [First appeared: SM-10 v0.1]

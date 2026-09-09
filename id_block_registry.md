@@ -54,6 +54,11 @@ with one pointer, which cannot be made safe by care alone.
    lane's `Next patch` line, even while updating a shared file.
 5. **When a block is exhausted**, record it here as CONSUMED and open the
    next block by founder ruling, not unilaterally.
+6. **A block-opening patch updates `code/next_id.py`'s `BLOCKS` table in
+   the same commit** (added Patch 3807). Between 3700 and 3800 the gate
+   lagged this registry by one block and reported GR 3600–3699 EXHAUSTED
+   on a fresh clone; a gate that disagrees with the registry is worse
+   than no gate, because it is trusted.
 
 ## The frontier-write rule (why nothing has been lost so far)
 

@@ -34,6 +34,19 @@ Tier-3 narrative texture is in `development-EU-1.md`; per-patch Tier-4 reasoning
 | 0787 | 6 Jun | Finding-B reconciliation (reading (i)): tier table 104→108; SS-8 ID-range cascade error corrected | `predictions.md` |
 | 0789 | 6 Jun | Phase 7A-ii — doc-suite narrative files (this file, development, reviews, keywords; then mechanism/phenomena/philosophy/glossary + notebook + OSF) | `documentation_suite/` |
 
+## Arc — the AP-5 hand-off (Session 167, Patches 3800–3807, 8–9 Sep 2026)
+
+| Patch | Date | Transaction | Pointer |
+|---|---|---|---|
+| 3800 | 8 Sep | EU lane opened at 3800–3899 (G-EU-BLOCK-3800); gate tool taught the GR 3700 and EU 3800 blocks | `id_block_registry.md`; `founders_voice/founder_ruling_eu_block_3800_2026-09-08.md` |
+| 3801 | 8 Sep | S-HENGINE-HELD v0.1 — the H-engine reads the held sector (μ = kT ln n̄), not the D1-clipped displacement; κ < κ_cap void | `../hengine_driver_statement.md`; `../scripts/3801_hengine_driver_verify.py`; `../reasoning/3801_hengine_driver_statement.md` |
+| 3802 | 8 Sep | CONV-045 review package v1.0 | `../review/conv045_hengine_driver_review_package_v1.0.md` |
+| 3803 | 9 Sep | CONV-045 adjudicated ADMISSIBLE 5–0; STIPULATED minority adopted (bridge statement); v1.0 amendments; five reviews verbatim | `../review/reviews-CONV-045.md`; `../reasoning/3803_conv045_adjudication.md` |
+| 3804 | 9 Sep | S-HENGINE-HELD enacted: PRED-C-96 compatible with AP-5 under Reading S; AP-5 owed item 4 closed; OPEN-EU-BATH-DEPTH-1 registered | `predictions.md`; `axiom-registry.md`; `research_frontier.md` |
+| 3805 | 9 Sep | OPEN-EU-IGNITION-HANDOFF-1 CLOSED-COMPUTED: 924-assignment twelve-stack instrument; the push pairs (≤ 15 Moments) and does not inflate (\|ΔN\| ≤ 0.45) | `../ignition_handoff_bonding_time.md`; `../scripts/3805_ignition_handoff_bonding_time.py`; `../reasoning/3805_ignition_handoff.md` |
+| 3806 | 9 Sep | OPEN-EU-BATH-DEPTH-1 CLOSED-BOUNDED: parallel depth, lapse ½ → τ_eq ≤ 2×, Δn_s = 2R/N_*² ≤ 1.4×10⁻⁷ | `../bath_depth_lag_bound.md`; `../scripts/3806_bath_depth_lag_bound.py`; `../reasoning/3806_bath_depth.md` |
+| 3807 | 9 Sep | Session-167 close (§15 A–H); OPEN-EU-REHEAT-BUDGET-1 registered | `session_logs/2026-09-08_session_167_log.md`; `handovers/2026-09-09_session_167_eu_lane_gr_handoff_closed.md` |
+
 ## Verification artifacts
 - `../scripts/0781_eu1_numerics.py` — stdlib-only; ALL PASS (n_s, α_s, N_* bookkeeping, ideal-ZRP slope→p=2, O(α) correction table, Debye Γ-reframing).
 
