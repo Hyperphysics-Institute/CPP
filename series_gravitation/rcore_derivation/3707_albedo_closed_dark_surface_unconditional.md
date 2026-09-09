@@ -1,0 +1,18 @@
+# AP-5 owed items 7 and 6: OPEN-GR-RCORE-ALBEDO-1 CLOSED (A ≈ 0) and the (l_P/λ)² inter-layer coupling MOOT — both by DRAIN. The visible shell 2M → 8M/3 holds only transit matter (~10⁻¹⁸ M at Eddington, < 10⁻¹² even at 10³ Eddington); the 8M/3 "surface" is a saturation contour of the field, not a material boundary. Light is messenger content, relayed whole (D3) through saturated GPs on the sea metric — Schwarzschild(M) through the empty shell — down to the wave horizon at 2M, where it is absorbed as in GR; the photon sphere at 3M lies outside 8M/3, so the capture cross-section is GR's untouched. Nothing to reflect from, nothing to thermalise. **The dark surface is now unconditional for every channel: stored waves (3701), the static state (3694), and light (this).** The accretion flow above 8M/3 radiates as in GR — what EHT images
+
+**Patch 3707, Session 166, 8 Sep 2026.** Verify `code/3707_albedo_and_em_coupling_verify.py` (5/5). Reasoning `reasoning/3707.md`.
+
+## §1 What changed the question
+3701 opened ALBEDO-1 on the picture of a *material* surface at 8M/3 whose DP dipoles incident light would drive (the copy separates ± CPs for V_i ≠ 0 content). 3703's DRAIN reading removed the material surface: the matter sinks through the shell in ~1.6 ms into a Planck-density core 10⁻²⁷ of 2M across, and what remains between 2M and 8M/3 is the accretion stream in transit — a mass fraction ~Ṁ t_cross/M ≈ 10⁻¹⁸ at Eddington for 62 M☉, still < 10⁻¹² at a thousand times Eddington (T1). The 8M/3 surface is where the *field's* register saturates (v = ⅔), not where anything stops.
+
+## §2 Light through the shell (T2–T3)
+Under D3 the imprint a GP stamps outward is the full received content whether or not its registers are saturated, so an EM wave crosses saturated GPs as it crosses any others — on the sea metric, which through the empty shell is Schwarzschild(M) to within the transit fraction (3702). The photon sphere at 3M is outside the saturation contour, so the capture cross-section (b_crit = 3√3 M) and the shadow are GR's; a photon crossing 8M/3 inward continues to the wave horizon at 2M and is absorbed there as in GR (no return from v ≥ 2). The only reflector is the transit matter's driven dipoles: even at unit reflectivity per unit mass fraction, **A ≤ 10⁻¹⁸. ALBEDO-1 closed: the R-core reflects light as a GR black hole does — not at all.**
+
+## §3 Item 6 (T4)
+3694 T3's (l_P/λ)² inter-layer coupling presupposed DP matter in the shell for the stored pattern to drive; with the shell empty there is no carrier, and inside the wave horizon nothing escapes. Moot under DRAIN; 3694's number stands as an upper bound for the transit matter.
+
+## §4 The dark surface, unconditional (T5)
+3694 gave three structural facts; 3701 made the no-dipole argument a theorem for stored waves and the static state; DRAIN closes the last channel — absorbed light — by removing the matter that could thermalise or reflect it. **No thermal emission, no reflection, no re-emission of stored energy, in any channel, at any accretion rate.** What EHT images is the accretion flow above 8M/3 — ordinary layer-1 matter radiating as in GR — and the shadow of a GR capture cross-section. 3623's zero-parameter prediction is complete: any detection of a surface component (thermal, reflected, or delayed) falsifies AP-5's black hole.
+
+## §5 Standing
+Owed items done: 1, 2, 3, 5, 6, 7, 8. Remaining: **4** (the saturation clip embedded in EU-1's tilt chain — the last physics item) and **9** (the DRAIN core's k₂, low stakes). Then GR-2 V2.10 (dark surface unconditional; ALBEDO-1 closed; PRED-O-41 withdrawn; the amendment's discriminating content stated in final form).

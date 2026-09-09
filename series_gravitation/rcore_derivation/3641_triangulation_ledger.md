@@ -29,6 +29,9 @@ The founder cannot adjudicate PCD-level detail by picture, and says so. The corp
 | 8 | Even-sector surface stability (3390's b₂ < 0) | internal consistency | re-run with the C¹ interior (no shell): b₂ > 0 (the core's inertia), ℓ = 2, 3 poles damped (0.4586 − 0.1315 i, 0.6882 − 0.1027 i), upper half-plane empty by argument principle (3643) | **passes** (3643) — the instability was the clamp's; SURFACE-STABILITY-1 closed on branch (a) [PCD-EXT] |
 | 9 | Neutron-star saturation threshold (3634: central lapse ½ at C ≈ 0.20–0.25) | derived | unchanged (the cap's location is the census's) | stands |
 
+## §0 Extension status (3707 — ALBEDO-1 closed; dark surface unconditional)
+**Items 7 and 6 done (3707):** under DRAIN the shell is empty (transit ~10⁻¹⁸ M); light is relayed whole on Schwarzschild(M) to the wave horizon and absorbed as in GR; photon sphere outside 8M/3 → capture cross-section GR's; A ≤ 10⁻¹⁸ — ALBEDO-1 CLOSED; the (l_P/λ)² coupling moot. **The dark surface is unconditional for all channels.** Remaining owed: 4 (EU-1 embedding), 9 (DRAIN core k₂). Then GR-2 V2.10. Record `rcore_derivation/3707_albedo_closed_dark_surface_unconditional.md`.
+
 ## §0 Extension status (3706 — PRED-O-41 withdrawn)
 **Item 5 done (3706): de-saturation is continuous at the trailing edge of any moving R-core (the additivity claim corrected), but a de-saturating GP holds only static overflow count — energy-free; stored energy (v ≥ 2; Planck core) reaches the cap only for a 67 % mass loss. PRED-O-41 WITHDRAWN. The amendment's GW sector is GR's exactly to observable precision. Discriminating content left: the dark surface (ALBEDO-1 open for light) and the NS M_max boost (EOS-degenerate).** Remaining owed: 4, 6, 7, 9. Record `rcore_derivation/3706_pred_o41_resolved_withdrawn.md`.
 

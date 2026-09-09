@@ -41,8 +41,8 @@ Depth arithmetic, the conservation theorem, the two local stiffness facts, the d
 3. ~~Clock law~~ — DONE (3703): matter lapse flat at ½, sea lapse → 0 (bimetric derived); force reading DRAIN selected by the ringdown; T-7 numerology. Item 2 resolved by consequence: Λ̃ ≈ 0 (transit level).
 4. The D1 clip embedded in EU-1's H_eff chain; f ↔ D/K map.
 5. ~~PRED-O-41~~ — RESOLVED and WITHDRAWN (3706): de-saturation is continuous but releases only energy-free static count; D4 clarified (energy flux, not static overflow).
-6. The (l_P/λ)² inter-layer EM coupling, derived.
-7. OPEN-GR-RCORE-ALBEDO-1: the surface's coherent EM re-radiation under driven, bounded DP motion (3701 §3).
+6. ~~(l_P/λ)² coupling~~ — MOOT under DRAIN (3707): no DP carrier in the empty shell.
+7. ~~ALBEDO-1~~ — CLOSED (3707): A ≤ 10⁻¹⁸; light absorbed at 2M on the sea as in GR; dark surface unconditional for all channels.
 8. ~~DRAIN neutron stars~~ — DONE (3704): core keeps χ ≈ 0.78 of GR's gradient; M_max ×1.3 at fixed EOS; radii GR's; knee withdrawn; stability ordinary.
 9. The DRAIN core's k₂ (3685 machinery with χ) — low stakes.
 10. GR-2 V2.9: restate §(iv) (no rising radii; M_max boost, EOS-degenerate) and PRED-O-40's withdrawal (3703).
