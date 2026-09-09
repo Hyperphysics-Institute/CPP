@@ -47,6 +47,20 @@ Tier-3 narrative texture is in `development-EU-1.md`; per-patch Tier-4 reasoning
 | 3806 | 9 Sep | OPEN-EU-BATH-DEPTH-1 CLOSED-BOUNDED: parallel depth, lapse ½ → τ_eq ≤ 2×, Δn_s = 2R/N_*² ≤ 1.4×10⁻⁷ | `../bath_depth_lag_bound.md`; `../scripts/3806_bath_depth_lag_bound.py`; `../reasoning/3806_bath_depth.md` |
 | 3807 | 9 Sep | Session-167 close (§15 A–H); OPEN-EU-REHEAT-BUDGET-1 registered | `session_logs/2026-09-08_session_167_log.md`; `handovers/2026-09-09_session_167_eu_lane_gr_handoff_closed.md` |
 
+## Arc — the amplitude question and the occupancy fork (Session 168, Patches 3808–3815 + 3714, 9 Sep 2026)
+
+| Patch | Date | Transaction | Pointer |
+|---|---|---|---|
+| 3808 | 9 Sep | OPEN-EU-REHEAT-BUDGET-1 RE-CUT: static overflow is a count (3706 D4); pairing cancels the self-energy (U = −uN); naive budget 85 orders unphysical; surviving target = D1-clipped flux; release-law form [PCD-EXT] | `../reheat_budget_recut.md`; `../scripts/3808_reheat_budget_recut.py` (6/6) |
+| 3809 | 9 Sep | EU-1 → V1.4: the saturation-protocol note (ledger B12 → A5); title block 1.0 → 1.4 | `EU-1_primordial_spectral_index.tex` §Problem Status; `changelog-EU-1.md` |
+| 3810 | 9 Sep | OPEN-EU-TENSOR-1 registered: r not fixed by the tilt; with GR's tensor sector r < 0.036 ⇔ H_pivot ≤ 4.7×10¹³ GeV; 10⁷⁴ → 10⁷⁹ correction | `../tensor_exposure_registration.md`; `../scripts/3810_tensor_exposure_registration.py` (6/6) |
+| 3714 | 9 Sep | GR-2 → V2.11 (GR lane, cross-lane): EU conditionality of claim (iv) discharged | `series_gravitation/papers/GR-2_echo_falsifier.tex`; ledger A1 |
+| 3811 | 9 Sep | OPEN-EU-1 chartered: T-1/T-2/T-3; pass line S ≥ 220; single-field calibration fails by 2×; W-1 founder questions | `../eu1_derivation/OPEN-EU-1_derivation_charter.md`; `../scripts/3811_eu1_charter_pass_lines.py` (4/4) |
+| 3812 | 9 Sep | W-2 first pass NEGATIVE: the tilt presupposes a source ∝ H_eff; spring heavy, count conserved, pairing frozen; T-3 → T-3a/T-3b | `../eu1_derivation/w2_light_mode_requirement.md`; `../scripts/3812_w2_light_mode_requirement.py` (4/4) |
+| 3813 | 9 Sep | Founder picture (kinetic bulk / packed sphere) registered and assessed; T-3a candidate C-1 (bath-energy mode); REHEAT-BUDGET-1 ↔ bath clause unified | `founders_voice/founder_picture_kinetic_bulk_packed_sphere_2026-09-09.md`; `../eu1_derivation/founder_kinetic_picture_assessment.md` (4/4) |
+| 3814 | 9 Sep | FORK-EU-OCCUPANCY-1 (per GP vs per PSR); twelve per GP; the stack disowned; PSR = Planck Sphere Radius | `founders_voice/founder_picture_twelve_per_gp_and_count_2026-09-09.md`; `../eu1_derivation/occupancy_fork.md` (5/5) |
+| 3815 | 9 Sep | Session-168 close (§15 A–H) | `session_logs/2026-09-09_session_168_log.md`; `handovers/2026-09-09_session_168_eu_lane_occupancy_fork.md` |
+
 ## Verification artifacts
 - `../scripts/0781_eu1_numerics.py` — stdlib-only; ALL PASS (n_s, α_s, N_* bookkeeping, ideal-ZRP slope→p=2, O(α) correction table, Debye Γ-reframing).
 
