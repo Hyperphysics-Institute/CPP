@@ -334,3 +334,11 @@ number changed. Compile gate: pdflatex ×2, 0 errors, 0 undefined,
 **Edit (text only; earlier blocks preserved as record).** `\date` → V2.8; header changelog; a V2.8 block after V2.7 (partition; governance; the ringdown as GR's and PRED-O-39 as a null with the GW250114 result; the four new predictions — 0 < Λ̃ ≲ 1.7, the dark surface, PRED-O-41 candidate, the neutron-star fingerprints; both standing objections verbatim; the owed list); Verification gains the V2.8 scripts. Compile gate: pdflatex ×2 (Isak). The model-wall line sets of V1.x–V2.7 are superseded as physics and kept.
 
 **Open items carried:** lockstep inheritance (derivation); the object's Λ̃; the layer-1/2 clock law; EU-1 embedding of the clip; PRED-O-41; the (l_P/λ)² coupling. Retired: H-SURFACE-IMPEDANCE; OPEN-GR-SURFACE-IMPEDANCE-1; OPEN-GR-CORE-DISSIPATION-1's mechanism (answered under AP-5; energy residence = layer registers); OPEN-GR-SEA-SHELL-EMISSION-1 (closed conditional on D2).
+
+## V2.9 — 8 September 2026, Patch 3705 (Session 166) — the clock law and the DRAIN reading; two withdrawals
+
+**Trigger.** Computing V2.8's tidal number exposed the consistency condition that the wave-sector result needs the enclosed demand ≈ M through the visible shell; the ringdown bounds the shell mass (3702, μ ≲ 0.10); the clock law under D1 (3703) derives the bimetric interior and the ringdown selects the DRAIN reading over STOP; neutron stars re-derived under DRAIN (3704).
+
+**Edit (text only; V2.8 block kept, corrected by V2.9).** `\date` → V2.9; header changelog; a V2.9 block after V2.8: the bound, the clock and force, **PRED-O-40 withdrawn as discriminating** (Λ̃ ≈ 0), **V2.8 (iv)'s rising-radius knee withdrawn**, the M_max boost (×1.3 at fixed EOS, EOS-degenerate) as the surviving NS fingerprint, what the paper now claims and owes. Verification gains the V2.9 scripts. Compile gate: pdflatex ×2 (Isak).
+
+**Carried:** dark surface (unconditional for GW storage, 3701); PRED-O-39 null; PRED-O-41 candidate; ALBEDO-1 open. Superseded: 3635–3637 (STOP record); 3685/3702's non-zero Λ̃ values.
