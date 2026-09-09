@@ -32,6 +32,7 @@
 | B9 | GR-1 (umbrella) | `series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex` | 1.0.2 | Dated pointer at line ~364 ("The CP Exclusion Rule imposes … the Planck core") to GR-1c Corr. 3. | 3372 §1b. | GR | after edit |
 | B10 | GR-1e, GR-1f, GR-1g | `series_gravitation/GR_companion_papers/GR-1{e,f,g}_*/…tex` | 1.1 / 1.2 / 1.1 | Dated pointers at their "Exclusion Rule / Exclusion floor" sites to GR-1c Corr. 3. | 3372 §1b. | GR | after edit |
 | B11 | c01 | `series_relativity/SR_companion_papers/c01_absolute_moment_postulate/absolute_moment_postulate.tex` | 3.2 | Nothing wrong *in* c01 — but six papers cite its §2 for a rule it never contained. Optional: a one-line note in c01 §2 saying "the CP Exclusion Postulate formerly stated here was demoted to THEO-1 (13 Apr 2026)" so the dangling citations resolve. | 3372 §0. | SR | if edited |
+| B12 | **EU-1** | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | 1.0 | One-paragraph dated note (V1.1): under the ratified saturation protocol AP-5 and R-STACK-SENDS-EACH the n_s epoch is saturated; the tilt survives via S-HENGINE-HELD (the H-engine reads the held stack entropy, not the clipped acted-on displacement); the count-driven leg restated as S-HENGINE-HELD; residual OPEN-EU-BATH-DEPTH-1 named. **No number changes.** | CONV-045 (3803/3804) | EU | after the note lands |
 
 ## C. Registries and non-paper artifacts changed this arc (no regeneration; listed so nothing is lost)
 
