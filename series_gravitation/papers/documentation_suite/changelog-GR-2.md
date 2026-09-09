@@ -348,3 +348,12 @@ number changed. Compile gate: pdflatex ×2, 0 errors, 0 undefined,
 **Trigger.** Owed items 1–9 closed in the GR lane (3701–3711); item 4 handed to the EU lane (founder rulings R-STACK-SENDS-EACH, R-IGNITION-HANDOFF).
 
 **Edit (text only; V2.8/V2.9 kept).** `\date` → V2.10; header changelog; a V2.10 block after V2.9: lockstep derived; light and the albedo (dark surface unconditional in every channel); PRED-O-41 withdrawn; NS tides GR-like; the early-universe correction and its handoff to the EU lane; **what the paper claims in final form** (GW sector GR's exactly; dark surface by mechanism; NS threshold and M_max boost; EU conditional) and what was withdrawn. Verification gains the V2.10 scripts. Compile gate: pdflatex ×2 (Isak).
+
+## V2.11 — 9 September 2026, Patch 3714 (Session 168, cross-lane from EU) — the EU conditionality discharged
+
+**Trigger.** The two EU-lane items V2.10 claim (iv) was conditional on closed at Session 167: S-HENGINE-HELD v1.0 (CONV-045 ADMISSIBLE 5–0, 3804), the ignition hand-off (3805, |ΔN| ≤ 0.45), plus the bath-lag bound (3806, Δn_s ≤ 1.4×10⁻⁷). Ledger A1's owed note.
+
+**Edit (text only; V2.10 kept).** `\date` → V2.11; header changelog; a V2.11 block after V2.10: the statement, the hand-off, the lag; claim (iv) unconditional as to those items; the EU lane's own remaining debts named (OPEN-EU-1, OPEN-EU-TENSOR-1); the 10⁷⁴ → 10⁷⁹ initial-stack correction (3810). No number changes. Compile gate: pdflatex ×2. Isak recompiles.
+
+**Carried:** dark surface unconditional in every channel; GW sector GR's exactly; NS M_thr 1.78 / M_max ×1.3.
+
