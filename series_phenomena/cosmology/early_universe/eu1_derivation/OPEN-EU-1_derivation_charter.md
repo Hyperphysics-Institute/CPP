@@ -1,0 +1,40 @@
+# OPEN-EU-1 DERIVATION CHARTER — HOMOGENEITY, THE ZRP CORRECTION, AND THE AMPLITUDE LAYER
+
+**Patch 3811, Session 168, 9 Sep 2026. Lane: EU (block 3800–3899).** Chartered under PD-006 per the Session-167 handover ("OPEN-EU-1: multi-session; open a new arc only with a plan"). Verify `scripts/3811_eu1_charter_pass_lines.py` (4/4 — the pass lines are arithmetic on inputs the corpus already carries; nothing is derived in this patch). Reasoning `reasoning/3811_eu1_charter.md`. Pattern: `series_gravitation/OPEN-GR-FE-1_derivation_charter.md` (charter → founder picture → derive).
+
+## §1 The problem (registered scope, Patch 0778, `frontier_sectors/SR.md`)
+A1–A11 derivation of (i) FRW/VSL inflationary homogeneity/isotropy and (ii) the exact PCD→ZRP correction structure (the O(α) SSV occupation-dependence coefficient). Closing both converts PRED-C-96 from "leading-order derived, framework-conditional" to derived from primitives. Does not block the count.
+
+**What this charter adds to the registered scope.** Two items that the Session-167/168 work made load-bearing and that sit in the same derivation layer:
+- (iii) **the amplitude layer** — the boost coupling κ / the engine rate H_pivot (AS-NORMALIZATION, KAPPA-DERIVATION: "deriving A_s ≡ deriving κ"; κ does not derive from the shape; carried as a posited axiom-level constant), **now carrying the tensor pass line** from OPEN-EU-TENSOR-1 (3810): if the early-universe tensor sector is GR's, r < 0.036 ⇔ H_pivot ≤ 4.7×10¹³ GeV.
+- The `SR.md` owed sub-item "EU-1 tensor ratio r (spectator-sector, low priority)" is **absorbed into OPEN-EU-TENSOR-1**, which supersedes it with the pass line.
+
+## §2 Targets (frozen)
+- **T-1 Homogeneity.** From the twelve-stack ignition (3710/3805) and the founder's "large early PSR puts the whole patch in causal contact": derive, or state and instrument, that the DP-sea dilution is homogeneous and isotropic at the causal-patch scale by the time the observable window opens (N_rem ≈ 57–60), and quantify the residual anisotropy the icosahedral start could imprint. Deliverable: a statement at the S-HENGINE-HELD grade (bridge or entailment, stated which) plus an instrument.
+- **T-2 The ZRP correction coefficient.** The O(α) occupation-dependence coefficient in the PCD→ZRP reduction (0774/0775), currently bounded by the paper's 0.1α–10α table (Δn_s from 5×10⁻⁵ to 4×10⁻³). Deliverable: the coefficient, or a derived bound tighter than 10α.
+- **T-3 The amplitude mode structure and the tensor pass line.** Identify the fluctuating variable that sources ζ = δN in the crowding engine and compute the dimensionless δN sensitivity S in P_ζ = (H/2πM_Pl)² S. **Frozen pass line: S ≥ 220** (equivalently H_pivot ≤ 4.7×10¹³ GeV at the observed A_s; verify T2/T3). The corpus's provisional single-field calibration (S = N_* = 57, H_* ≈ 9×10¹³ GeV) **fails this line by 2× in H, r ≈ 0.14** (verify T1) — so T-3 is not optional: the spectator mode structure the paper asserts must deliver ≥ 3.9× the single-field sensitivity, or the engine is in tension with BICEP/Keck. A derived S with H then fixes κ = H/(kT ln n̄) as an *output*, never an input.
+
+## §3 Inputs, inheritance, and bars
+Inputs at ratified strength: A1 counting → μ = kT ln n̄ (0749); LEMMA-NS-HTHEOREM / -ZRP-DERIVE / -BATH; S-HENGINE-HELD v1.0 (CONV-045); AP-5 D1–D4 incl. 3706's D4 clarification and R-CAP-SPRING; the 3805 pairing instrument; 3806's parallel-hierarchy result; OPEN-EU-TENSOR-1's conditional (tensor sector GR's).
+Bars: (1) no working backward from A_s, r, or Planck's n_s to a constant — PD-007: κ is an output or it is nothing; (2) no r claimed at any grade until S is derived; (3) the shot-noise route is excluded by 67 orders (AS-NORMALIZATION §2, verify T4) and is not revisited; (4) LOCAL to the EU lane — GR-lane objects untouched; (5) no panel round until a win (review economy §2): T-3's S, or T-1's statement, is the natural CONV-046 candidate; (6) the founder is not asked to adjudicate PCD-level detail (PD-007); picture questions only (§6).
+
+## §4 Order of work (frozen)
+- **W-1** Founder physical-picture session on §6 (register verbatim in `founders_voice/`; worker expectations §5 are on record first).
+- **W-2 = T-3 first.** Cheapest and sharpest: the pass line is one number, the δN chain is the paper's own, and the answer is decisive either way (S ≥ 220 discharges TENSOR-1 conditionally; S < 220 is a real tension to register, not hide). One session.
+- **W-3 = T-1.** The homogeneity instrument: the 3805 twelve-stack engine extended past pairing into dilution, with a demand-magnitude leg only if W-2 shows it is needed and PD-007 permits a labelled [PCD-EXT] extension. Multi-session.
+- **W-4 = T-2.** The coefficient, from the 0774/0775 reduction with the SSV correction kept to first order. One or two sessions.
+- HALT rule: if W-2 returns S < 220 under a mode structure the founder's picture supports, register the tension against PRED-C-96's companion amplitude (not against the tilt), stop, and dispatch — that is a "stuck" trigger.
+
+## §5 Worker pre-picture expectations (on record before the founder answers)
+- E-1 (T-3): I do not know what fluctuates. The paper says "the boost field," but the collective mode's fluctuating variable is unnamed. My candidate, not adopted: **AP-5's register spring** (R-CAP-SPRING) — a saturated register that yields under load and settles elastically is a Planck-scale oscillator at every GP, the one dynamical degree of freedom the saturation protocol added that the V1.0 paper did not have; its per-Moment settling could be the collective mode. If so S is set by how the settling couples to ln n̄ — and there is no reason it should equal the single-field 57. I expect the answer to be *computable* once the variable is named, and I expect the picture to name it.
+- E-2 (T-1): I expect homogeneity to come from the pairing, not the expansion: 3805 showed every start pairs into a neutral sea within 15 Moments, before any e-fold of dilution; a neutral sea diluting on a fixed lattice is homogeneous by construction except for the icosahedral axes of the start. The residual is a quadrupole-scale anisotropy set by twelve directions — small, but the corpus should say how small, because a large-angle CMB anomaly aligned to twelve axes would be a fingerprint.
+- E-3 (T-2): the coefficient is order-one times α; the table's 0.1α–10α bracket will narrow to ~[0.5α, 2α] without changing the count.
+
+## §6 Questions for the founder's physical-picture session (pictures only; each has a default if unanswered)
+- **Q1 (blocks W-2).** In the crowd at one address, what *wavers* from Moment to Moment? Is it the count of points at the address, the squeeze of the register holding them (the spring), or the pattern in which they paired? Default if unanswered: the register spring (E-1), labelled [PCD-EXT].
+- **Q2 (blocks W-3).** How does the twelve-stack start become the same everywhere? Is the "large early PSR" a rule that every address sees the whole patch each Moment, so the sea is stirred to uniformity before it spreads — or does uniformity come only from spreading? Default: stirred by pairing (E-2).
+- **Q3.** Does the crowd's unstacking keep the twelve directions of the icosahedron as it spreads, or forget them at once? Default: keeps them at the quadrupole level (E-2 residual).
+- **Q4 (conditions TENSOR-1).** When a shear pattern (a gravitational wave) passes through the saturated, uniform crowd, is it relayed whole as it is at a black hole's surface, or does the crowd respond to it? Default: relayed whole (3706 D3; the conditional stands as stated).
+
+## §7 Ledger
+Chartered 3811. Status: W-1 pending (questions posed); nothing derived; no count, prediction, or theorem moved; PRED-C-96 unaffected. Successors: OPEN-EU-TENSOR-1 (blocked on W-2), OPEN-EU-REHEAT-BUDGET-1 (low, unrelated). Next EU action: W-1 at the founder's convenience, then W-2 in its own session.
