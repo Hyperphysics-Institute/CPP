@@ -1,0 +1,20 @@
+# Reasoning capture — Patch 3805: the ignition handoff computed
+
+*Session 167, 9 Sep 2026, EU lane. Verbatim at-patch capture. Finding: `ignition_handoff_bonding_time.md`. Instrument: `scripts/3805_ignition_handoff_bonding_time.py` (6/6).*
+
+## Why a simulation and not an estimate
+3711 estimated the handoff as "2 Moments to cross an edge at c/2, times H t_P ~ 1 per Moment, so ΔN ~ 2, marginal against 4." I did not want to sharpen that by refining the same arithmetic, because the arithmetic hides the physics in two places: how many Moments the *whole* charge sector takes to neutralise (not one edge), and whether the push actually expands anything while it lasts. Under AP-5 there is a clean way to compute both: D1 makes the acted-on step a fixed length, so the field's magnitude drops out and each stack simply moves l_P/2 per Moment along its net-field direction; D2 lockstep makes each vertex one object; THEO-1 makes pairing a floor-cell coincidence. Twelve objects, direction-only dynamics, a pairing rule. That is a one-page instrument, and the founder's picture leaves one thing unspecified — which six vertices are which — so I ran all 924.
+
+## The first surprise: a frustrated family
+The first run reported ten assignments that never pair and ten that pair at Moment 59. Tracing them showed a period-2 jitter: the antipodes-same assignments are inversion-symmetric, the net field at each stack nearly balances, the fixed step overshoots, and the twelve stacks bounce at ~0.8 l_P separation forever. I recognised it as the spring the founder described for the cap (R-CAP-SPRING) rather than a breakout, and asked whether it is physical. It is a measure-zero symmetric state: an l_P/20 displacement of the start breaks it and every assignment then pairs within 15 Moments. The founder's own words — "after the first Moment, the mixing" — are the asymmetry. I kept the exact-start result in the table (81 % within 4 Moments) and the perturbed result beside it (worst 15), rather than quoting only the flattering one.
+
+## The second surprise, which changed the question
+I then measured what the push does to the configuration's size and found it *shrinks*: first-Moment radial displacement between −0.25 and +0.07 l_P for every assignment; the mean radius falls to 0.8 l_P; nothing gets past 1.5 l_P. A 6/6 arrangement on a five-neighbour polyhedron is attraction-dominated in every direction. The like-sign control expands at ln 1.5 per Moment, so the instrument would have seen a push. This dissolves the e-fold worry from the other side: the Moments count does not matter because the push does not inflate — |ΔN| ≤ 0.45 over the whole event, median 0.09. So R-IGNITION-HANDOFF is confirmed by a route 3711 did not have: the handoff is immediate in e-folds because the charge sector never drives expansion in acted-on motion.
+
+## Where the founder's pressure went
+This is the piece I want him to read. His "large inflationary pressure by electrostatic repulsion" is real, and it is intra-stack: 10⁷⁴ like charges on one vertex. Under D2 they move in lockstep, so the self-repulsion has no net direction; under D4 it is stored in the deep hierarchy. That is exactly the reheating budget 3710 (iii) named, now with a reason it is a budget and not a push. I did not compute its magnitude — that needs the D4 release law, which the GR lane has only under DRAIN — and I proposed but did not register OPEN-EU-REHEAT-BUDGET-1 so as not to mint an ID for a computation no one has asked for.
+
+## What I chose not to do
+- No panel round. This closes an open item with a computation; the claim it would convert is "the ignition does not inflate," which is a picture-level statement for the founder before it is a corpus claim. Review economy: dispatch on a win worth converting; I am reporting it to him first.
+- No founder question. PD-006/PD-007: the model choices (weighting, pairing radius) are mine and are listed in §4 for attack; the picture-level revision is offered, not asked.
+- Not derived from A1–A11: instrument grade, assumptions listed. Not a THEO.
