@@ -1,0 +1,29 @@
+# Session 166 handover — 7–8 Sep 2026 — AP-5 (the saturation protocol) proposed, reviewed, ratified, and its owed list closed in the GR lane; GR-2 at V2.10
+
+**Lane:** GR (block 3700–3799 opened to GR by founder ruling G-GR-BLOCK-3700 at 3700; 3600–3699 exhausted at 3699). **Patches this session:** 3675–3712. **Head:** 3712 (GR-2 V2.10). **Next free: 3713.** **Worker:** Opus. **Founder present throughout.**
+
+## What happened, in order
+1. **3675** — the re-cut question (does the cycle above the cap propagate the tensor wave as Einstein's equations do?) answered by a *partition*: the cap binds what a GP acts on, not what it relays (THEO-PCD-SEA); rows 6/7 pass; s = 3.22 derived (GR's pole admittance) and retired.
+2. **3676–3683** — the falsifier (a coherent Planckian return, 0.23–0.27 s at 62 M☉) scored: population null insufficient (3677 correction); the GW250114 first-echo instrument built (3678), run three times on Kila6 (3679–3682: gwpy replaced; leakage; free-start caught the merger itself), frozen statistic scored at 3683: H1 3.69 (p 0.152), L1 3.76 (p 0.081), network 5.27 = null vs 7.5–8.7 predicted — inconclusive by the letter, alternative disfavored 2–3σ.
+3. **3684–3685** — register sector stated; row 6 made conditional, then closed by the incompressible bound (k₂ ≤ 0.019).
+4. **3686–3687** — CONV-043 (OPEN 4–1; GPT FORCED minority). **3688** — the founder: "this amends my vision" — the minority confirmed; SEA → working extension pending amendment. **3689–3692** — the founder's picture (lazy layer hierarchy; the copy repositions the CP within its cell) registered; AP-5 v0.1 drafted; the "free spring" corrected (quintic). **3693–3695** — depth arithmetic + conservation theorem; stiffness at linear order; dark surface; n_s (later corrected).
+5. **3696–3698** — CONV-044 (ADMISSIBLE 5–0; D2 lockstep clause; equality → bound; Copilot late). **3699** — **AP-5 v1.0 RATIFIED** by the founder; axiom registry; SEA retired into D3; predictions.md.
+6. **3700** — GR-2 V2.8. **3701** — lockstep derived per channel (theorem for V_i = 0). **3702** — the ringdown bounds the shell mass (μ ≲ 0.10). **3703** — clock law: matter lapse flat ½, sea lapse → 0 (bimetric derived); **DRAIN** selected over STOP; Λ̃ → 0 (PRED-O-40 withdrawn as discriminating). **3704** — neutron stars under DRAIN: M_max ×1.3 at fixed EOS, radii GR's, rising-radius knee withdrawn. **3705** — GR-2 V2.9. **3706** — PRED-O-41 withdrawn (de-saturation continuous but energy-free). **3707** — ALBEDO-1 closed; dark surface unconditional in every channel. **3708** — item 4: 3695's occupancy wrong (EU-1's n̄ ≈ 10⁷⁴ superposed stack); founder question. **3709** — DRAIN core k₂ (−3 %). **3710–3711** — founder pictures/rulings: charge-separated ignition; **R-STACK-SENDS-EACH**; **R-IGNITION-HANDOFF**; item 4 handed to the EU lane. **3712** — GR-2 V2.10, final restatement.
+
+## Where the theory stands (GR lane)
+- **AP-5 v1.0 (ratified):** D1 demand-activated layers at ⅔ per layer, capacities non-decreasing; D2 the copy repositions the CP within its cell, inheriting lockstep (derived for V_i = 0); D3 relay whole; D4 storage in registers (energy flux; static count is energy-free, 3706).
+- **Black holes:** the GW sector is GR's exactly to observable precision (ringdown at every spin/multipole; no echo; no burst; no tidal signature). Matter drains to a Planck-density core 10⁻²⁷ of 2M; the 8M/3 surface is a field contour; the shell is empty. **The surface is dark by mechanism in every channel** — the one place the theory says *why*. Falsifier: any detected surface component.
+- **Neutron stars:** M_thr = 1.78 M☉ (ordinary branch ends at central lapse ½); above it a TOV-like branch with the core at ~78 % gravity; **M_max ×1.27–1.31 at fixed EOS** (SLy 2.61, APR4 2.87) — EOS-degenerate today; radii GR's; no tidal signature.
+- **Early universe:** conditional on two EU-lane items (below).
+- **Retired/withdrawn this session:** H-SURFACE-IMPEDANCE; SURFACE-IMPEDANCE-1; CORE-DISSIPATION-1 (mechanism answered); SHELL-EMISSION-1; ALBEDO-1; PRED-O-39 → null; PRED-O-40; PRED-O-41; the rising-radius knee; 3635–3637 (STOP record).
+
+## What's next — canonical pointer
+**Priority 1 (EU lane, handed from GR — `research_frontier.md`):** **OPEN-EU-HENGINE-DRIVER-1** — write, review (CONV-045), and ratify the statement that the H-engine is driven by the held stack entropy μ (LEMMA-NS-BATH's quantity), not the acted-on displacement; without it PRED-C-96 falls to n_s = 1 under R-STACK-SENDS-EACH. **OPEN-EU-IGNITION-HANDOFF-1** — compute the ± bonding time of the founder's charge-separated ignition (3710) in Moments under the floor cap and convert to e-folds at Planck-era H; must be < ~4 (estimate ΔN ~ 2).
+**Priority 2 (GR):** Isak's recompile of GR-2 V2.10 (`paper_regeneration_ledger.md`); a Kerr re-run of the CD Z⁺ instrument under DRAIN is not needed (3668 T3 stands).
+**Priority 3 (GR, low):** a pre-registered network statistic for any future first-echo run (3683 §10); the NS M_max fingerprint's observational prospects (radius precision needed to pin the EOS).
+**Anti-priorities:** no retune of the GW250114 instrument after the fact; no re-opening of STOP; no register law beyond DRAIN without a new founder picture.
+
+## Governance notes for the next worker
+- Review economy: CONV-043 (OPEN 4–1) and CONV-044 (ADMISSIBLE 5–0) adjudicated; DeepSeek twice self-mislabelled and once falsely claimed a hash match; Copilot once off-package, once a partial read. Attribute by founder receipt.
+- Founder rulings this session (founders_voice/): 3688 statement; 3689 thinking; 3691 picture; 3692 R-LAYER-REPOSITIONING-IN-CELL; 3699 ratification; 3710 picture; 3711 R-STACK-SENDS-EACH, R-IGNITION-HANDOFF.
+- Kila6: `python` not `python3`; no MSVC (pure wheels only); GWOSC strain files cached in the repo root (gitignored).
