@@ -17,6 +17,8 @@ Recorded so no reader quotes the naive number as a budget:
 - The released pair-binding, 6NαE_Pl ~ 10⁷³ E_Pl: **11 orders too large** to be heat. It is the formation energy of the DP sea.
 - Whatever the D4-held residual is, the swarm bounds it: 12N ε ≤ E_univ ⇒ **ε ≲ 10⁻¹³ E_Pl ~ 10⁶ GeV per CP**, eleven orders below αE_Pl. This is not a derivation; it is what any reheating budget has to respect, and it says the per-CP release is a small fraction of a floor step's worth of Coulomb work.
 
+*Correction, 9 Sep 2026 (Patch 3810):* N ~ 10⁷⁴ per stack is the observable-epoch n̄; the initial stacks are ~10⁷⁹ (EU-1 eq. Nstar). Under 10⁷⁹ the three bounds above read +94 orders, +15 orders, and ε ≲ 10⁻¹⁸ E_Pl ≈ 20 GeV per CP (verify 3810 T5b); every conclusion of this finding is unchanged or strengthened.
+
 ## §3 What the D4-eligible candidate actually is (T4)
 3706's rule leaves exactly one place for held energy in the ignition: the **flux that arrived during the pairing motion and could not be acted on.** For ≤ 15 Moments each stack's demand exceeds the cap; D1 clips the acted-on displacement to the floor; D2/D4 hold the excess. That is a flux, and it is D4-held. Its magnitude is Σ_Moments (demand − cap) per stack, in the substrate's own units. **The 3805 instrument cannot compute it**: it is direction-only by design (FLOOR = 0.5, BOND = 0.5, no force or energy scale — T4), because the bonding-time question needed only the sign of the SSV sum. A demand-magnitude instrument would have to choose a force law for 10⁷⁴ co-located CPs inside a floor cell — the PCD-level detail PD-007 says not to settle by picture, and the place a constant would get minted to make the number come out. Not done here; not owed to any prediction.
 

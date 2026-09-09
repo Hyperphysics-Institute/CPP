@@ -32,5 +32,7 @@ Twelve icosahedral vertices at one PSR (l_P) from an empty centre; each a lockst
 - The 13th central GP is empty and stays empty in every run (no stack passes through the centre before pairing).
 - Greedy nearest-opposite pairing within a cell; a stack pairs whole (lockstep), so partial pairing is not modelled.
 
+- *Correction, 9 Sep 2026 (Patch 3810):* the "~10⁷⁴ CPs per stack" is n̄ at the observable epoch (3708); EU-1's own count gives the initial occupation ~10⁸⁰/13 ≈ 10⁷⁹ per GP. The instrument is direction-only and no result here depends on the magnitude.
+
 ## §5 Standing
 OPEN-EU-IGNITION-HANDOFF-1 → **CLOSED-COMPUTED** (instrument grade; assumptions §4). PRED-C-96's early-universe conditionality in GR-2 V2.10 ("conditional on OPEN-EU-HENGINE-DRIVER-1 and IGNITION-HANDOFF-1") is now discharged on both items — a GR-2 V2.11 text-only note is owed to the ledger (A1). Next in the lane: OPEN-EU-BATH-DEPTH-1 (Priority 3, from CONV-045). Founder pointer: the picture-level revision in §3.2 (pressure stored, not pushed) is offered for his reading; it does not need a ruling.
