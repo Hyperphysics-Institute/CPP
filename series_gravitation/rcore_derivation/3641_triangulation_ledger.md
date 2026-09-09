@@ -29,6 +29,9 @@ The founder cannot adjudicate PCD-level detail by picture, and says so. The corp
 | 8 | Even-sector surface stability (3390's b₂ < 0) | internal consistency | re-run with the C¹ interior (no shell): b₂ > 0 (the core's inertia), ℓ = 2, 3 poles damped (0.4586 − 0.1315 i, 0.6882 − 0.1027 i), upper half-plane empty by argument principle (3643) | **passes** (3643) — the instability was the clamp's; SURFACE-STABILITY-1 closed on branch (a) [PCD-EXT] |
 | 9 | Neutron-star saturation threshold (3634: central lapse ½ at C ≈ 0.20–0.25) | derived | unchanged (the cap's location is the census's) | stands |
 
+## §0 Extension status (3711 — item 4 decided; owed list closed in the GR lane)
+**Founder rulings R-STACK-SENDS-EACH and R-IGNITION-HANDOFF (3711).** Reading S: the census sees the stack; inflation is saturated throughout; the tilt must be driven by the held μ → handed to the EU lane as OPEN-EU-HENGINE-DRIVER-1 (statement) and OPEN-EU-IGNITION-HANDOFF-1 (bonding time in Moments < 4 e-folds). 3695's κ constraint void. GR-lane results unchanged. **AP-5 owed list CLOSED in the GR lane.** Next: GR-2 V2.10. Record `rcore_derivation/3711_item4_decided_handed_to_eu_lane.md`.
+
 ## §0 Extension status (3709 — item 9 done)
 **DRAIN core k₂ (3709):** 1.4 M☉ = GR exactly; 2.08 M☉ APR4 Λ 9.5 → 9.2 (−3 %). No NS tidal signature; NS.7 closed GR-like. Owed list complete except item 4 (founder question pending). Next: GR-2 V2.10. Record `rcore_derivation/3709_drain_core_k2.md`.
 

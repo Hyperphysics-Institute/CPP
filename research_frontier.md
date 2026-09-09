@@ -467,3 +467,10 @@ The following issues were identified during the consolidation from `open_problem
 
 *Created 12 April 2026 during Phase 1 of the Research Frontier Architecture implementation.*
 *Authors: Thomas Lee Abshier ND and Claude Opus (Anthropic).*
+
+
+## OPEN-EU-HENGINE-DRIVER-1 — handed from the GR lane, 8 Sep 2026 (Patch 3711)
+Under the ratified AP-5 (saturation protocol) and the founder's ruling R-STACK-SENDS-EACH (every superposed CP sends its own messengers), every GP is saturated throughout inflation (n̄ ~ 10⁷⁴ at the observable epoch). D1 clips the acted-on displacement, so the EU-1 tilt chain (H_eff ∝ μ = kT ln n̄; PRED-C-96) survives only if the H-engine is driven by what a GP *holds* (the stack's Gibbs entropy, LEMMA-NS-BATH's μ) and not by what it *acts on*. Statement to write, review (CONV), and ratify in the EU lane; until then PRED-C-96's compatibility with AP-5 is conditional. Refs: 3695 (superseded), 3708, 3711.
+
+## OPEN-EU-IGNITION-HANDOFF-1 — handed from the GR lane, 8 Sep 2026 (Patch 3711)
+The founder's charge-separated ignition (3710: 12 vertices, 6 +/6 −, ~10⁷⁴ each) is a power-law driver, excluded by Planck's tilt for the observable window (0745/0746); R-IGNITION-HANDOFF says it hands off quickly to the entropic driver. Compute the ± bonding time in Moments under the floor cap (c/2 per Moment across an edge ~ 2 Moments) and convert to e-folds at Planck-era H (~1 per Moment): must be < ~4 unobserved e-folds. Estimate ΔN ~ 2 (3711 verify), marginal. Also: the stored repulsive energy as the reheating budget (BB.2).

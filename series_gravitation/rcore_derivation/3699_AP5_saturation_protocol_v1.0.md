@@ -39,7 +39,7 @@ Depth arithmetic, the conservation theorem, the two local stiffness facts, the d
 1. ~~Lockstep inheritance~~ — DONE (3701) for V_i = 0; EM case → item 7.
 2. The object's Λ̃ — BOUNDED at 3702 from the ringdown: shell mass μ ≲ 0.10 (GW150914) → 0 < Λ̃ ≲ 0.2; the number depends on the interior profile (item 3).
 3. ~~Clock law~~ — DONE (3703): matter lapse flat at ½, sea lapse → 0 (bimetric derived); force reading DRAIN selected by the ringdown; T-7 numerology. Item 2 resolved by consequence: Λ̃ ≈ 0 (transit level).
-4. The D1 clip embedded in EU-1's H_eff chain — OPEN, founder question pending (3708): does a superposed stack send one census or n̄? 3695 CONDITIONAL on the physical-occupancy reading.
+4. ~~EU-1 embedding~~ — DECIDED (3711, R-STACK-SENDS-EACH): the stack sends each; inflation saturated throughout; handed to the EU lane as OPEN-EU-HENGINE-DRIVER-1 and OPEN-EU-IGNITION-HANDOFF-1.
 5. ~~PRED-O-41~~ — RESOLVED and WITHDRAWN (3706): de-saturation is continuous but releases only energy-free static count; D4 clarified (energy flux, not static overflow).
 6. ~~(l_P/λ)² coupling~~ — MOOT under DRAIN (3707): no DP carrier in the empty shell.
 7. ~~ALBEDO-1~~ — CLOSED (3707): A ≤ 10⁻¹⁸; light absorbed at 2M on the sea as in GR; dark surface unconditional for all channels.
