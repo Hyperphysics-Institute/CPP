@@ -1,0 +1,11 @@
+# Reasoning capture — Patch 3812: W-2 first pass, the light-mode requirement
+
+*Session 168, 9 Sep 2026, EU lane. Verbatim at-patch capture. Finding: `eu1_derivation/w2_light_mode_requirement.md`. Verify: `scripts/3812_w2_light_mode_requirement.py` (4/4).*
+
+The founder quoted Q1 back to me and said proceed without answering it. The charter's default was my own candidate, the register spring, so I started W-2 under it — and the first thing the δN machinery asks of any source is whether it is light. It is not. The spring settles within a Moment; R-CAP-SPRING and the lapse-½ hop rate put its frequency at Planck scale, five orders above H at the tensor line. A heavy mode does not freeze at horizon crossing. My candidate is withdrawn by the first check I ran on it, which is the right way for a default to die.
+
+That made me go back to what EU-1's tilt derivation actually uses, and the answer is a single asserted line: P_ζ ∝ H_eff². The whole tilt is 2 d ln H/dN; it is right only if the source amplitude tracks H. I checked the alternative — a scale-independent classical variance, which is what a conserved count or a frozen pairing pattern would give — and it returns n_s = 1, the 0741 cliff, 8σ out. So the light-mode requirement is not something I imposed this session; the paper imposed it in June without naming the mode. That is the exposure I want on the record, and it is sharper than the tensor one, because the tensor one only bounds H while this one asks for the mechanism the tilt is already standing on.
+
+I ran the other two Q1 candidates through the same requirement and both fail for the same reason (no H-tracking), the count failing twice over (Poisson is 67 orders short, and a Hubble patch has 2×10¹⁶ addresses, which makes it worse). I did not reach for a fourth candidate to make the pass come out positive. The one place left that is collective and ∝ ln n̄ is the unstacking rate itself, which is circular unless the substrate has a mechanism for that rate to waver at horizon scale; I wrote that as where to look, not as an answer.
+
+The question to the founder is re-cut in plain words: what in the crowd changes slowly and more when the crowd is denser. If he does not answer, T-3a stays open and I do not compute S on a guessed variable — that is exactly the PD-007 line.
