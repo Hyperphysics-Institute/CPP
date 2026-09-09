@@ -1,0 +1,11 @@
+# Reasoning capture — Patch 3803: CONV-045 adjudication and S-HENGINE-HELD v1.0
+
+*Session 167, 9 Sep 2026, EU lane. Verbatim at-patch capture.*
+
+The count was 3–2 ENTAILED and 3–2 ADMISSIBLE-unconditional, and my first instinct was to book the majority. I did not, for the reason the tally itself supplies: the two minority seats named a specific gap — 0746 chose count over stress, AP-5 later split held from acted-on, and "count" does not automatically mean "D4-held" — while the three majority seats restated the premises and called the conclusion entailed. A vote that does not engage the objection is not a vote against it. Reading my own v0.1 §2 heading again ("the corpus's own statement, not a new choice") I had overclaimed; the honest label is Grok's: the unique consistent identification, stated because 3711 required it. Adopting the minority costs nothing physically — the statement, its consequences and the void of κ < κ_cap are untouched — and it keeps the record from saying the corpus had already decided something it had not. It is also the third round running in which GPT's minority on logical status was the better-founded one, which is a reason to weigh its Q5 NO seriously rather than outvote it.
+
+On Q5 I split GPT's objection into two parts. The part about content is simply correct: I asserted that a slow bath produces only O(α) corrections inside the theory error, and I had not derived that; withdrawn. The part about status — blocking or not — I decided against GPT on Grok's argument: PRED-C-96 already conditions on the bath clause; a bath that does not thermalise the stack is a failure of that leg, not a new one; so BATH-DEPTH-1 is the saturated-regime sub-condition of a leg already carried, and the sector statement does not wait on it. What is owed is the rate bound, which I moved to Priority 3 of the lane.
+
+Q4 was three positions that were each right about something. I reconciled rather than counted: legs unchanged in number, third leg restated with sharper content, operational gate removed.
+
+Enactment under PD-006: this is a lane-level statement closing a founder-ratified amendment's owed item, not an axiom-level change; ratification of AP-5 already carried the item. I enact on admissibility and say so in the reviews file; the founder can veto.
