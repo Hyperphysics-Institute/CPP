@@ -342,3 +342,9 @@ number changed. Compile gate: pdflatex ×2, 0 errors, 0 undefined,
 **Edit (text only; V2.8 block kept, corrected by V2.9).** `\date` → V2.9; header changelog; a V2.9 block after V2.8: the bound, the clock and force, **PRED-O-40 withdrawn as discriminating** (Λ̃ ≈ 0), **V2.8 (iv)'s rising-radius knee withdrawn**, the M_max boost (×1.3 at fixed EOS, EOS-degenerate) as the surviving NS fingerprint, what the paper now claims and owes. Verification gains the V2.9 scripts. Compile gate: pdflatex ×2 (Isak).
 
 **Carried:** dark surface (unconditional for GW storage, 3701); PRED-O-39 null; PRED-O-41 candidate; ALBEDO-1 open. Superseded: 3635–3637 (STOP record); 3685/3702's non-zero Λ̃ values.
+
+## V2.10 — 8 September 2026, Patch 3712 (Session 166) — final restatement after the AP-5 owed list
+
+**Trigger.** Owed items 1–9 closed in the GR lane (3701–3711); item 4 handed to the EU lane (founder rulings R-STACK-SENDS-EACH, R-IGNITION-HANDOFF).
+
+**Edit (text only; V2.8/V2.9 kept).** `\date` → V2.10; header changelog; a V2.10 block after V2.9: lockstep derived; light and the albedo (dark surface unconditional in every channel); PRED-O-41 withdrawn; NS tides GR-like; the early-universe correction and its handoff to the EU lane; **what the paper claims in final form** (GW sector GR's exactly; dark surface by mechanism; NS threshold and M_max boost; EU conditional) and what was withdrawn. Verification gains the V2.10 scripts. Compile gate: pdflatex ×2 (Isak).
