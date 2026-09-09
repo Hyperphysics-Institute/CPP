@@ -44,7 +44,7 @@ Depth arithmetic, the conservation theorem, the two local stiffness facts, the d
 6. ~~(l_P/λ)² coupling~~ — MOOT under DRAIN (3707): no DP carrier in the empty shell.
 7. ~~ALBEDO-1~~ — CLOSED (3707): A ≤ 10⁻¹⁸; light absorbed at 2M on the sea as in GR; dark surface unconditional for all channels.
 8. ~~DRAIN neutron stars~~ — DONE (3704): core keeps χ ≈ 0.78 of GR's gradient; M_max ×1.3 at fixed EOS; radii GR's; knee withdrawn; stability ordinary.
-9. The DRAIN core's k₂ (3685 machinery with χ) — low stakes.
+9. ~~DRAIN core k₂~~ — DONE (3709): −3 % at 2.08 M☉; no NS tidal signature.
 10. GR-2 V2.9: restate §(iv) (no rising radii; M_max boost, EOS-degenerate) and PRED-O-40's withdrawal (3703).
 
 ## §5 Enacted on ratification (Patch 3699)

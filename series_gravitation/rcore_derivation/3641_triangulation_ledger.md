@@ -29,6 +29,9 @@ The founder cannot adjudicate PCD-level detail by picture, and says so. The corp
 | 8 | Even-sector surface stability (3390's b₂ < 0) | internal consistency | re-run with the C¹ interior (no shell): b₂ > 0 (the core's inertia), ℓ = 2, 3 poles damped (0.4586 − 0.1315 i, 0.6882 − 0.1027 i), upper half-plane empty by argument principle (3643) | **passes** (3643) — the instability was the clamp's; SURFACE-STABILITY-1 closed on branch (a) [PCD-EXT] |
 | 9 | Neutron-star saturation threshold (3634: central lapse ½ at C ≈ 0.20–0.25) | derived | unchanged (the cap's location is the census's) | stands |
 
+## §0 Extension status (3709 — item 9 done)
+**DRAIN core k₂ (3709):** 1.4 M☉ = GR exactly; 2.08 M☉ APR4 Λ 9.5 → 9.2 (−3 %). No NS tidal signature; NS.7 closed GR-like. Owed list complete except item 4 (founder question pending). Next: GR-2 V2.10. Record `rcore_derivation/3709_drain_core_k2.md`.
+
 ## §0 Extension status (3708 — item 4 not closed; 3695 corrected)
 **3695 corrected:** EU-1's n̄ is the superposed-stack occupation (ln n̄ = 3 N_rem → ~10⁷⁴ at the observable epoch), not the physical bath occupancy 3695 used. Whether the census cap sees the stack (saturated by 74 orders → clip → n_s = 1 unless the H-engine is driven by the unclipped μ) or the physical occupancy (unsaturated → 3695 stands) is a founder picture question on superposition — asked (3708 §3). **n_s compatibility CONDITIONAL; CONV-044 Q6 re-scored CONDITIONAL (GPT's FALLS was better-founded).** Item 4 OPEN pending the founder. Record `rcore_derivation/3708_ns_embedding_correction_and_founder_question.md`.
 
