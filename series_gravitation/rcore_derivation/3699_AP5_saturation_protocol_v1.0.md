@@ -40,7 +40,7 @@ Depth arithmetic, the conservation theorem, the two local stiffness facts, the d
 2. The object's Λ̃ — BOUNDED at 3702 from the ringdown: shell mass μ ≲ 0.10 (GW150914) → 0 < Λ̃ ≲ 0.2; the number depends on the interior profile (item 3).
 3. ~~Clock law~~ — DONE (3703): matter lapse flat at ½, sea lapse → 0 (bimetric derived); force reading DRAIN selected by the ringdown; T-7 numerology. Item 2 resolved by consequence: Λ̃ ≈ 0 (transit level).
 4. The D1 clip embedded in EU-1's H_eff chain; f ↔ D/K map.
-5. PRED-O-41: the transient release burst at a merger — magnitude and timescale.
+5. ~~PRED-O-41~~ — RESOLVED and WITHDRAWN (3706): de-saturation is continuous but releases only energy-free static count; D4 clarified (energy flux, not static overflow).
 6. The (l_P/λ)² inter-layer EM coupling, derived.
 7. OPEN-GR-RCORE-ALBEDO-1: the surface's coherent EM re-radiation under driven, bounded DP motion (3701 §3).
 8. ~~DRAIN neutron stars~~ — DONE (3704): core keeps χ ≈ 0.78 of GR's gradient; M_max ×1.3 at fixed EOS; radii GR's; knee withdrawn; stability ordinary.
