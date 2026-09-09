@@ -28,7 +28,9 @@ ROOT = os.path.normpath(os.path.join(HERE, '..'))
 BLOCKS = {                       # keep in sync with id_block_registry.md
     'dm': (3500, 3599),
     'de': (3400, 3499),
-    'gr': (3600, 3699),            # G-GR-BLOCK-3600, founder, 3 Sep 2026 (3300-3399 consumed; 3399 left unused as terminal)
+    'gr': (3700, 3799),            # G-GR-BLOCK-3700, founder, 8 Sep 2026 (taught to the gate at Patch 3800; the gate had still reported 3600-3699 EXHAUSTED)
+    'eu': (3800, 3899),            # G-EU-BLOCK-3800, founder, 8 Sep 2026 ("use the 3800 series for EU")
+    'gr-3600': (3600, 3699),       # EXHAUSTED at 3699 (G-GR-BLOCK-3600, 3 Sep 2026) — kept for --check history questions
     'gr-3300': (3300, 3399),       # CONSUMED — kept so --check answers history questions
     'legacy-cosmology': (3100, 3199),
 }
