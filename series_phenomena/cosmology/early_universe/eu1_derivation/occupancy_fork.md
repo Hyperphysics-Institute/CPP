@@ -21,7 +21,7 @@ So: yes under either branch, and under P overwhelmingly — but the *kind* of sa
 *At the first Moment, how far does a CP perceive — its twelve neighbours, or the whole sphere? If the whole sphere: does the sphere's spreading make each CP's reach shrink, so that the number it perceives thins as the universe expands?* Default if unanswered: Branch P, labelled [PCD-EXT], because it is the only branch under which the paper's count and the founder's picture are both true.
 
 ## §5 Standing
-- **FORK-EU-OCCUPANCY-1 OPEN.** Successor to 3813 §4. Blocks: OPEN-EU-1 T-1/T-3 (the crowd variable must be the same object in both), OPEN-EU-TENSOR-1 (H_eff's scale), and the wording of S-HENGINE-HELD (mechanism unaffected).
+- **FORK-EU-OCCUPANCY-1 RESOLVED → Branch P (small-ball reading), Patch 3816, by founder ruling R-IGNITION-BALL-IN-ONE-PSR** (`founders_voice/founder_ruling_ignition_ball_one_psr_2026-09-09.md`; derivation `occupancy_regrounding.md`). The "large early PSR" of this file's Branch P is withdrawn as a description: the reach is the ordinary l_P ceiling, the ball is one Planck sphere across, every register is empty at Moment 1. *Original standing at 3814 follows.* Successor to 3813 §4. Blocks: OPEN-EU-1 T-1/T-3 (the crowd variable must be the same object in both), OPEN-EU-TENSOR-1 (H_eff's scale), and the wording of S-HENGINE-HELD (mechanism unaffected).
 - EU-1: no edit; an honesty note at the next V1.x that the occupancy's referent (GP vs PSR) is under founder review.
 - 3710: superseded as the founder's statement of the start by his own words here; retirement is his ruling.
 - 10⁸⁴ vs 10⁸⁰: recorded; moves the total ~61 → 64.5; no other effect.

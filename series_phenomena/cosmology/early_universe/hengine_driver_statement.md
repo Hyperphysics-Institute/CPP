@@ -40,3 +40,7 @@ Verdict: ADMISSIBLE / ADMISSIBLE-WITH-AMENDMENTS (list) / NOT ADMISSIBLE.
 
 ## §6 On ratification (to enact)
 `axiom-registry.md` A3′/AP-5 row: note S-HENGINE-HELD as the EU-lane reading of D1 (owed item 4 closed). `predictions.md` PRED-C-96: "compatible with AP-5 under Reading S (S-HENGINE-HELD, CONV-045)"; strike the κ < κ_cap note. `research_frontier.md`: OPEN-EU-HENGINE-DRIVER-1 → CLOSED; OPEN-EU-BATH-DEPTH-1 registered. `paper_regeneration_ledger.md`: EU-1 owes a one-paragraph V1.x note (no number changes). Swarm count UNCHANGED (108).
+
+---
+
+**Re-grounding note (Patch 3816, Session 169 — filed beside the ratified text, which is not edited).** Under FORK-EU-OCCUPANCY-1's resolution to Branch P (founder ruling R-IGNITION-BALL-IN-ONE-PSR; `eu1_derivation/occupancy_regrounding.md`), the statement's mechanism is unchanged — the icosahedral census sums to zero in a homogeneous state, expansion is a held-sector process, no GP is created or moved — and two phrases acquire a named referent: "n̄ per GP" reads as *n̄ per rest-frame Planck sphere* (CPs within (4π/3) l_P³), and "the causal reach grows" is the PSR's recovery toward its l_P ceiling as SSV_abs falls from its Moment-2 maximum. Whether the engine's n̄ is the D4-held count or the per-Moment perceived count under a contracted PSR is OPEN-EU-PSR-EARLY-1. Wording revision is part of the CONV-046 candidate package; not enacted here.
