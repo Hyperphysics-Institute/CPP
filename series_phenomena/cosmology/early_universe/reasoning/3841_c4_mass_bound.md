@@ -1,0 +1,21 @@
+# Reasoning capture — Patch 3841: C-4's mass bound
+
+*Session 180, 9 Sep 2026, EU lane. Verbatim at-patch capture. Finding: `eu1_derivation/c4_mass_bound.md`. Verify 8/8.*
+
+The handover called this "the whole question," so I did it first and did not touch C-4's other three debts.
+
+The first thing that mattered was noticing a way the previous patch could be misread, including by me. 3839 §5 says the leading symmetry-breaking term is ℓ = 6 and treats that as the reason the mode can be light. But writing out the continuum mapping shows the ℓ = 6 harmonic contributes its own curvature, 6² = 36, which is an *enhancement*. T-1's result suppresses how many invariants survive, not how sharply the surviving one curves. So the lightness cannot come from the multipole index; it has to live in the anisotropy coefficient. I wrote that into the finding explicitly because the softer reading is available in 3839's text and would quietly do damage.
+
+With that fixed, the mapping is clean: stiffness goes as J/R, anisotropy as λJ/R³, and the mass is 6√λ/R. The decay constant cancels, the bath temperature never enters, and the mass is set by the inverse interaction range and nothing else. Which turns the whole question into: what is R?
+
+That is where the session's result is, because the two candidate answers differ by thirty-two orders of magnitude. If the orientational coupling acts at the GP spacing — which the e-fold budget has driven down to 10⁻³² l_P — then C-4 needs λ below 10⁻⁷⁵ and is dead on the spot, with no suppression mechanism in the corpus within fifty orders of that. If it acts at the Planck sphere, C-4 needs λ below 10⁻¹¹, which is demanding but is the kind of number real mechanisms produce.
+
+AP-4 answers it, and I was glad not to have to argue the point: the DI-bit's imprint is invariant in transit, deposit occurs exactly once at the PSR shell, and the near field is carried by the relay recursion. The bits do not couple site-to-site at the grid spacing. So the range is the Planck sphere. C-4 survives on a ratified protocol clause rather than on anything convenient, which is the right way for a candidate to survive.
+
+I then made myself calibrate against the failure mode rather than presenting the surviving branch as good news. A coherent order-one crystal anisotropy gives m/H = 1.2×10⁵, which is the register spring's number to within a factor. So C-4 is not structurally safer than the candidate that died at 3812; it is eleven orders away from that same wall, and if λ turns out to be order one it dies identically. Saying that plainly seemed more useful than reporting that the bound is "reachable."
+
+What makes eleven orders plausible rather than wishful is that the leading term genuinely vanishes, and I checked this rather than assuming it. SSV_abs sums magnitudes, and the arriving magnitude depends on the scalar orientational correlation — a rotational invariant. Rotating the entire sea rigidly changes nothing at that order, so λ is zero at leading order and the anisotropy enters only where displacement is constrained to the twelve lattice directions. That is a real subleading effect and it is not calculated here. So the honest position is that the mass bound is not cleared; it has been converted from a verdict awaiting a modelling choice into one computable number with its leading term known to vanish and its target known.
+
+The last piece I nearly did not write up. Had the range been the grid spacing, the mass would have scaled as e^N, because the budget fixes the spacing through N = ln(l_P/s). More e-folds would have meant exponentially heavier modes, so the e-fold shortfall and the amplitude would have been locked in direct conflict with no move improving both. The shell clause decouples them completely. I recorded it because it is the kind of structural near-miss that becomes invisible once averted, and because any future revision of the interaction range would reinstate it silently.
+
+One consequence worth flagging for whoever plans the next arc: AP-4's shell clause is now load-bearing in two independent places — the Moment-1 count and the amplitude's mass scale — and its own derivation is still owed. That owed item has quietly become more valuable than either of the problems it supports.
