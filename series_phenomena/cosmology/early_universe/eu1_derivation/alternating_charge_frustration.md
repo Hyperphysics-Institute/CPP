@@ -45,6 +45,10 @@ Geometric frustration is the one structure the amplitude search has been missing
 
 C-2 (the edge) and C-3 (frustration) are compatible and may be the same story: a frustrated bulk with domain structure, bounded by an edge that breaks the cancellation. Neither is adopted.
 
+## §5b OUTCOME (Patch 3829) — C-3's spectrum debt is NOT discharged
+
+§5 registered C-3 on the strength of slowness and collectivity. The first real test (3829) returns: the wall field's structure factor is **peaked at finite k**, not a power law — one characteristic length, which seeds a feature rather than the observed near-scale-invariant P_ζ. **C-3 does not solve the amplitude problem as it stands.** Two hazards are also inherited by joining the topological-defect class: domain-wall overclosure, and the exclusion of active/incoherent defect seeds by the CMB acoustic peaks. And CPP's own 3805 (every start pairs into a neutral sea within 15 Moments) sets up the dilemma: **if the walls survive they inherit the defect exclusion; if they pair away they seed nothing.** C-3's prospects are materially worse than this section's registration suggested. See `frustration_patch_dynamics.md` §3–§5. Settle survival-vs-pairing before further C-3 work.
+
 ## §6 What this does not disturb
 - **T-1's isotropy result stands.** The ℓ ≤ 5 vanishing is about the twelve *directions* and is indifferent to what charge occupies them.
 - **The e-fold budget is unchanged.** Frustration is about arrangement; the budget constrains the total count (§1).
