@@ -27,9 +27,11 @@ The orientational interaction is carried by DI-bits, and **AP-4 fixes where they
 
 This is the same AP-4 clause flagged at 3816 §6 and re-pointed at 3820 §5 as load-bearing for the count. It is now load-bearing for the amplitude as well, and its two roles are independent.
 
-## §3b NOTE (Patch 3860) — the clause used here has now been derived, with a caveat
+## §3b NOTE (Patch 3860, AMENDED 3862) — the clause used here is derived, and the caveat is withdrawn
 
 §3 used AP-4c to fix the orientational interaction range at the PSR shell. **That use survives**: 3860 derives the shell locus and shows "deposit exactly once" is forced by emission-budget conservation. What 3860 also shows is that the clause's **near-field** half does not operate at Moment 1 — which bears on the Moment-1 count (3816), not on the interaction range used here, since C-4's mass concerns a running universe where the relay has content to relay. Recorded so the two uses are not conflated.
+
+**Amendment (3862):** 3860 also reported that the clause's **near-field** half does not operate at Moment 1. **That report is RETRACTED at 3862** — the relay is a **within-Moment hop cascade** (R-OUTWARD-FANOUT, founder Patch 3135), computed at D-SUBPSR-FIELD pass 3 (6–22 hops origin→PSR; profile *maximizes inward, 1/s²-class*). So there is no caveat to carry: **both halves of the clause hold**, and §3's use of the shell locus to fix the interaction range at l_P is unaffected either way.
 
 ## §4 The bound, and why it is not absurd (verify T6, T7)
 > **C-4 is light iff λ ≤ 1.0×10⁻¹¹.**
