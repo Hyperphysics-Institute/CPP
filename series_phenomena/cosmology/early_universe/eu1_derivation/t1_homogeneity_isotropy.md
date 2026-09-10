@@ -44,6 +44,12 @@ Charter §5 E-2 (on record before the founder's pictures): *"a neutral sea dilut
 
 What *does* require the near-field relay to deliver is the **count** n̄ ≈ 10⁸⁴ within the PSR at Moment 1 — Branch P's occupancy, and hence the e-fold total. So the AP-4c question is load-bearing for the **count law (3816 §3) and OPEN-EU-PSR-EARLY-1**, not for homogeneity. 3816 §6's flag is hereby **re-pointed** to that item; it is not discharged, and it is not T-1's blocker.
 
+## §5b AMENDMENT (Patch 3822) — the homogeneity clause presumed species-uniformity
+
+§1(a) reads homogeneity from the initial condition assigning "the same twelve-vertex configuration to every address." That presumed uniformity of **species** as well as of **geometry**, and the presumption was not stated. The founder's picture (3822) denies it: with three interaction classes (eCP–eCP, eCP–qCP, qCP–qCP), no assignment of species and sign makes every local environment equivalent, so a perfectly homogeneous simultaneously-strong-and-electric-neutral mix is not constructible.
+
+**Effect on this document:** §1(b) — the isotropy result, exact through ℓ = 5 — is purely geometric and is **unaffected**: it depends on the twelve icosahedral directions, not on what occupies them. §1(a) — homogeneity across grid points — is **conditional on species-uniformity** and, under the founder's picture, holds for the geometry while failing for the charge/species content. The residual inhomogeneity from that source is assessed at `charge_mix_and_edge_assessment.md` §1: real, but not a ζ source (frozen, white, and blind to the species-free end condition).
+
 ## §6 Standing
 
 - **T-1 DELIVERED** at ENTAILMENT grade: S-IGNITION-ISOTROPIC (§1), instrument `scripts/3820_t1_icosahedral_isotropy.py`.
