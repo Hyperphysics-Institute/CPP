@@ -50,6 +50,10 @@ What *does* require the near-field relay to deliver is the **count** n̄ ≈ 10�
 
 **Effect on this document:** §1(b) — the isotropy result, exact through ℓ = 5 — is purely geometric and is **unaffected**: it depends on the twelve icosahedral directions, not on what occupies them. §1(a) — homogeneity across grid points — is **conditional on species-uniformity** and, under the founder's picture, holds for the geometry while failing for the charge/species content. The residual inhomogeneity from that source is assessed at `charge_mix_and_edge_assessment.md` §1: real, but not a ζ source (frozen, white, and blind to the species-free end condition).
 
+## §5c RE-GRADE (Patch 3839) — the ℓ ≤ 5 vanishing is LOAD-BEARING for the amplitude
+
+§4 of this document states that no observable fingerprint is claimed from the ℓ = 6 residual, and **that refusal stands**. But the ℓ ≤ 5 vanishing has acquired a consequence elsewhere. C-4, the orientational pseudo-Goldstone and the only surviving ζ candidate (3839), takes its mass from the residual lattice anisotropy — normally O(1), which would make it heavy and kill it exactly as the register spring died (3812). Because the icosahedral anisotropy vanishes identically through ℓ = 5 and first appears at ℓ = 6, that mass term is sixth-order and strongly suppressed. **The lattice's exceptional isotropy is why the only viable ζ candidate can be light at all.** This is a consequence for the mode's *mass*, not for the sky — §4 is unaffected. See `c4_coupling.md` §5; the quantitative bound (ω/H ≲ 1) is owed there.
+
 ## §6 Standing
 
 - **T-1 DELIVERED** at ENTAILMENT grade: S-IGNITION-ISOTROPIC (§1), instrument `scripts/3820_t1_icosahedral_isotropy.py`.
