@@ -1,0 +1,21 @@
+# Reasoning capture — Patch 3847: the sanctioned CHIR excursion, and C-4's withdrawal
+
+*Session 183, 9 Sep 2026, EU lane with a founder-sanctioned read-only excursion into Capotauro/CHIR. Finding: `eu1_derivation/chir_excursion_c4_withdrawn.md`. Verify 8/8.*
+
+The excursion was granted and took about ten minutes, which is worth noting because I had spent a patch declining to take it. The value is in `programme_orientation.md` Chapter 41.5 and in the Reading C closure summary: the perturbative-distance-ratio constraint of the Capotauro sketch §2.4 selects ε = φ⁻³, and the substrate chirality magnitude is identified directly with it, χ ≡ ε, derived at full Layer 3 via THEO-SD-CHIR-1.
+
+φ⁻³ is 0.236. It is an order-unity number. C-4's entire viability rested on it being one part in 10⁵ or smaller.
+
+I checked the most generous reading available before concluding, because a decisive negative deserves the same care as a positive. The corpus does carry a real suppression here — the local-I_h-preservation theorem, Finding C-W39, which establishes that all first-shell-to-first-shell edges are tangent to n̂ in 4D at first order in ε, so the substrate's chirality bias does not enter the local edge structure directly. That is a genuine structural protection and it pushes the symmetry breaking to second order. Taking the energy quadratic in that already-second-order distortion gives ε⁴, which is the most favourable thing I can justify, and it leaves m/H at 3.9×10³. Going to ε⁶, which nothing supports, still leaves 9.3×10². The requirement is ε to the fifteenth. It is not close and no amount of care about the exponent changes that.
+
+So C-4 fails by about three and a half orders and is withdrawn. It dies the same death as the register spring, by a smaller margin — 10³ rather than 10⁵ — which is the shape of this whole arc in miniature: each candidate has failed closer to the line than the last, and none has crossed it.
+
+There is an irony I put in the finding because it seems like the kind of thing worth seeing. The primitive direction that gave C-4 its field is the same direction whose coupling to the lattice this programme has already measured, at full Layer 3, as a headline result. C-4 needed n̂ to be nearly decoupled from the geometry. The chirality sector's entire achievement is the demonstration that it is not. The corpus contained the refutation of C-4 before C-4 was proposed, which is an argument for locating an object in the corpus before building four patches on it — the same lesson 3845 taught, arriving again by a different route.
+
+That leaves the sector empty, and I wrote the inventory out as a table rather than in prose because a reader deserves to see all seven candidates and their fates at once. The 3835 no-go said no light mode can source ζ while the end condition is a fixed geometric threshold. 3837 found the single escape: a spectator that modulates the end condition rather than the rate. C-4 was that spectator. It is now closed, and with it the escape.
+
+I was careful about what this does not say. PRED-C-96 is untouched and has been untouched throughout — the tilt reads the adopted pivot and nothing in fifteen patches has moved it. This is not a refutation of n_s and must not be reported as one. The e-fold budget remains a separate open problem, still about ten e-folds short, with the VSL computation still owed.
+
+The programme-level statement was the hardest paragraph to write and I think it is the most important. EU-1 predicts a tilt matching Planck to four digits and has no identified mechanism for the amplitude that accompanies it. That is not a contradiction — getting a shape right and a normalisation wrong is a perfectly coherent state for a theory to be in — but it is a real gap, now well characterised, and it should be carried as a characterised gap rather than as a question awaiting the next idea. I listed three exits and made a point that none of them is a candidate search, because the reflex after seven failures is to look for an eighth, and the no-go says that reflex is wrong.
+
+My recommendation is that this goes to the panel. A complete self-consistent negative result with its own falsifier structure is a more useful thing to review than a live candidate would have been, and the corpus has not had a negative of this size reviewed before.
