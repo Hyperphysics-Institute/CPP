@@ -17,6 +17,12 @@ The founder's initial condition already carries a "Big Bang Point" with twelve C
 
 §2 concludes that the hierarchy requirement is "a consistency condition, not an input to any prediction," and that 0736's rule survives. **Both claims are withdrawn.** Under packing closure (N_CP = 12·(4π/3)(R_init/s)³) the count law collapses to **N = ln(l_P/s) + 1.31**: R_init and N_CP drop out and the sub-Planck GP resolution is the *only* quantity setting the e-fold total — which is the window the pivot N_rem = 57 must sit inside. Further, the bound computed in §2 (≳ 3×10²⁷ GPs per l_P, to *hold* the CPs) is not the binding one; the e-fold budget needs ≳ 10³² per l_P, about five orders finer, and the unverified 10³⁰ estimate falls short of it. See `efold_budget_audit.md` (3823) and OPEN-EU-EFOLD-BUDGET-1.
 
+## §2c OUTCOME OF THE §6 CHECK (Patch 3860) — IT RETURNS NEGATIVE
+
+§6 flagged the AP-4c near-field relay clause as load-bearing and asked that it not be assumed silently. Worked at 3860: **it does not deliver.** The relay requires prior-Moment content (AP-3 computes from the previous Moment's arrivals), and at Moment 1 every register is empty — which is **this document's own §1 premise**. The premise that opens the reach also empties the relay; and the shell lies outside a sub-PSR ball, so the direct channel deposits beyond the pre-ignition region. **At Moment 1 an interior GP receives nothing.** The sub-Moment escape is closed by a founder ruling (ZBW is not sub-Moment).
+
+**Effect on this document: §1's "derived, not assumed" language does not survive as written, and §3's n̄_init = N_CP is a posit pending repair.** Not rewritten here — the repair or downgrade is owed and needs a founder answer (3860 §6). PRED-C-96's tilt is unaffected (it reads the adopted pivot).
+
 ## §3 The count law re-read (the definitional change; verify T1, T3, T6)
 EU-1 eq. Nstar reads N_* = ⅓ ln(N_CP/N_GP) with n̄ "the mean occupation of a GP" and N_GP ~ 13 seed grid points. The re-grounding replaces the referent, not the form:
 
