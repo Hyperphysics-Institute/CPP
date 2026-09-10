@@ -68,3 +68,7 @@ Tier-3 narrative texture is in `development-EU-1.md`; per-patch Tier-4 reasoning
 - Predictions: **PRED-C-96** ($n_s$, §1 Confirmed), **PRED-O-34** ($\alpha_s$, §2). No THEO.
 - Lemmas (finding-level): LEMMA-NS-HTHEOREM, LEMMA-NS-ZRP-DERIVE, LEMMA-NS-BATH.
 - Open: **OPEN-EU-1** (A1–A11 homogeneity + ZRP-correction). Frontier home: `frontier_sectors/SR.md`.
+
+| 3816 | 9 Sep | FORK-EU-OCCUPANCY-1 RESOLVED → Branch P (small-ball ruling R-IGNITION-BALL-IN-ONE-PSR); occupancy re-grounded; OPEN-EU-PSR-EARLY-1 registered | `founders_voice/founder_ruling_ignition_ball_one_psr_2026-09-09.md`; `../eu1_derivation/occupancy_regrounding.md` (6/6) |
+| 3817 | 9 Sep | EU-1 → V1.5: honesty note on the occupancy re-grounding; thirteen-GP seed superseded; large-early-PSR sentence re-grounded | `EU-1_primordial_spectral_index.tex` §Problem Status; `changelog-EU-1.md` |
+| 3818 | 9 Sep | T-3b HALT: δkT → ζ = 0, S = 0 under geometric end condition; C-1 fails; OPEN-EU-AMPLITUDE-1 registered; tilt PRED-C-96 unaffected | `../eu1_derivation/t3b_delta_kT_computation.md`; `../scripts/3818_t3b_delta_kT_checks.py` (4/4) |
