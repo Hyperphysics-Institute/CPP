@@ -136,7 +136,7 @@
 |---|---|---|---|---|---|
 | DM-1: A Velocity-Independent Self-Interacting Dark-Matter Candidate from Charge-Neutral qDP/... | 1.8 | `series_phenomena/cosmology/dark_matter/DM-1/DM-1_substrate_dark_matter_candidate.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | DM-3: The Discriminating Predictions — Nine observational protocols for the Cross-Rod dark-m... | 1.2 | `series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| EU-1: The Primordial Scalar Spectral Index from Substrate Inflation — A Zero-New-Axiom Deriv... | 1.5 | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | 2026-09-09 | 3809 | **UNKNOWN — not in prior catalog** |
+| EU-1: The Primordial Scalar Spectral Index from Substrate Inflation — A Zero-New-Axiom Deriv... | 1.6 | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | 2026-09-09 | 3809 | **UNKNOWN — not in prior catalog** |
 | DM-2: Sea Gravitation and the Dark Sector — One sourcing rule for matter, dark matter, and -... | 1.0 | `series_phenomena/cosmology/sea_gravitation/DM-2/DM-2_sea_gravitation_dark_sector.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
 | TP-1: The Truncated Photon and the Lattice Regularization of Shutter-Induced Photon Creation... | 1.4 | `series_phenomena/quantum_optics/photon_truncation/TP-1/TP-1_truncated_photon.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 

@@ -4,6 +4,15 @@
 % Conscious Point Physics --- Early-Universe / Cosmology Series
 % Version history: documentation_suite/changelog-EU-1.md (created Patch 0784; maintained there)
 % ============================================================
+% Version 1.6 --- 9 September 2026 (Patch 3852):
+%   SUBSTANTIVE. Two changes. (a) The O(alpha) correction is a ONE-SIDED SYSTEMATIC
+%   SHIFT, not a symmetric theory uncertainty: T-2 (Patch 3850) closes the coefficient
+%   as lambda = alpha/kappa exactly, kappa = kT_bath/E_Pl, and at the bath clause
+%   (kappa = 1) lambda = alpha and Delta n_s = +5.0e-4. The quoted value therefore
+%   moves from 0.9649 +/- 5e-4 to 0.9654 (0.12 sigma from the Planck central value).
+%   (b) A dated note recording the amplitude closure (Patch 3847): the spectator
+%   prescription asserted in the amplitude discussion has no identified mechanism.
+%   The TILT is unaffected; only the amplitude companion is at issue.
 % Version 1.5 --- 9 September 2026 (Patch 3817):
 %   one dated note (Sec. Problem Status) recording the re-grounding of the
 %   occupancy at Session 169 (Patch 3816; founder ruling R-IGNITION-BALL-
@@ -94,7 +103,7 @@
 \title{\textbf{EU-1: The Primordial Scalar Spectral Index from Substrate Inflation}\\[6pt]
 {\large A Zero-New-Axiom Derivation of $\ns = 1 - 2/\nstar \approx 0.9649$ from A1 Indistinguishability and Zitterbewegung Bath Thermalization}\\[4pt]
 {\large \textbf{Conscious Point Physics --- Early-Universe / Cosmology Series}}\\[4pt]
-{\Large \textbf{Version 1.5 --- 9 September 2026 (Version 1.0 SHIPPED 6 June 2026)}}}
+{\Large \textbf{Version 1.6 --- 9 September 2026 (Version 1.0 SHIPPED 6 June 2026)}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -106,7 +115,8 @@
 {\small Version~1.2 --- 17 August 2026 (Patch 3213: extended the generated identifier appendix to all five identifier families (THEO-, FI-, PRED-, CONJ-, PH- as well as OPEN-), and replaced review-convergence scores with AI review panel wording where present. No claim, equation, number or section changed.)}\\[2pt]
 {\small Version~1.3 --- 17 August 2026 (Patch 3214: added a How-we-review methodology note stating plainly that AI panel review is a self-applied verification method and not journal peer review; twelve chirality papers retitled so the descriptive title leads and the identifier is demoted to a subtitle. No claim, equation, number or section changed.)}\\[2pt]
 {\small Version~1.4 --- 9 September 2026 (Patch 3809: dated note in the Problem Status section recording the saturation-protocol consequences established at Session 167 --- S-HENGINE-HELD, the ignition hand-off, the saturated-bath lag bound; title-block version reconciled with the catalog. No claim, equation, number or section changed.)}\\[2pt]
-{\small Version~1.5 --- 9 September 2026 (Patch 3817: dated note in the Problem Status section recording the re-grounding of the occupancy at Session 169 --- the referent of ``one address'' in Eq.~Nstar is one rest-frame Planck sphere; the thirteen-GP seed reading superseded; the causal-contact sentence re-grounded as the empty-register first Moment; OPEN-EU-PSR-EARLY-1. No equation, result, or section changed.)}}
+{\small Version~1.5 --- 9 September 2026 (Patch 3817: dated note in the Problem Status section recording the re-grounding of the occupancy at Session 169 --- the referent of ``one address'' in Eq.~Nstar is one rest-frame Planck sphere; the thirteen-GP seed reading superseded; the causal-contact sentence re-grounded as the empty-register first Moment; OPEN-EU-PSR-EARLY-1. No equation, result, or section changed.)}\\[2pt]
+{\small Version~1.6 --- 9 September 2026 (Patch 3852: SUBSTANTIVE. The $O(\alpha)$ correction is re-characterised as a one-sided systematic shift rather than a symmetric theory uncertainty, per T-2 (Patch 3850): the coefficient closes as $\lambda = \alpha/\kappa$ with $\kappa = kT_{\mathrm{bath}}/E_{\mathrm{Pl}}$, and at the bath clause $\kappa = 1$ gives $\lambda = \alpha$ and $\Delta\ns = +5.0\times10^{-4}$. The quoted value moves from $0.9649 \pm 5\times10^{-4}$ to $\mathbf{0.9654}$ ($0.12\,\sigma_{\mathrm{Planck}}$). A second dated note records the amplitude closure (Patch 3847). The tilt derivation is unchanged.)}}
 
 \begin{document}
 \maketitle
@@ -142,8 +152,12 @@ the hot substrate bath (LEMMA-NS-BATH). The honest status is therefore: \emph{le
 and consistent with Planck, zero-new-axiom, conditional on standing CPP cosmology-sector commitments
 (FRW/VSL homogeneity, DP-Sea neutrality, small-$\alpha$ SSV corrections) --- not yet fully derived
 from the primitive axioms
-A1--A11.} Residual SSV corrections enter at $O(\alpha)$, giving a theory uncertainty
-$\Delta\ns \sim 5\times 10^{-4}$ ($\approx 0.12\,\sigma_{\mathrm{Planck}}$). The companion running
+A1--A11.} Residual SSV corrections enter at $O(\alpha)$. These are \emph{not} a symmetric theory
+uncertainty: the correction coefficient closes as $\lambda = \alpha/\kappa$ with
+$\kappa \equiv kT_{\mathrm{bath}}/E_{\mathrm{Pl}}$, and because the substrate bath cannot exceed the
+substrate scale ($\kappa \le 1$) the induced shift is one-sided and positive. At the bath clause
+($\kappa = 1$, $\lambda = \alpha$) it is $\Delta\ns = +5.0\times 10^{-4}$, so the predicted value is
+$\ns = 0.9654$, lying $0.12\,\sigma_{\mathrm{Planck}}$ from the measured central value. The companion running
 $\alphas \approx -0.0006$ is a falsifiable prediction.
 \end{abstract}
 
@@ -691,6 +705,42 @@ $5\times10^{-4}$ theory error quoted above. No number in this paper changes. Rec
 \texttt{hengine\_driver\_statement.md}, \texttt{ignition\_handoff\_bonding\_time.md},
 \texttt{bath\_depth\_lag\_bound.md}, and \texttt{review/reviews-CONV-045.md} in this paper's series
 folder.
+
+\paragraph*{Note added at Version 1.6 (9 September 2026; Patches 3847 and 3850).}
+Two results from the OPEN-EU-1 derivation charter land here. They pull in opposite directions and both
+are recorded.
+
+\emph{(a) The $O(\alpha)$ correction is a shift, not an error bar (T-2, Patch 3850).} The charter's
+target T-2 --- the $O(\alpha)$ occupation-dependence coefficient in the PCD$\to$ZRP reduction, previously
+bracketed at $0.1\alpha$--$10\alpha$ --- closes by combining two existing results. The deformed rate
+$g(n) = n\,(1+\lambda(n-1))$ carries $\lambda \sim \Gamma$, and $\Gamma = \alpha/\kappa$ \emph{exactly}
+with $\kappa \equiv kT_{\mathrm{bath}}/E_{\mathrm{Pl}}$, since the grid spacing is $\ell_P$ and hence
+$\Gamma = q^2/(\ell_P\,kT) = q^2/(\hbar c) = \alpha$ at $kT = E_{\mathrm{Pl}}$. So
+$\lambda = \alpha/\kappa$: the old bracket was a bracket on $\kappa$ alone. Because the bath is the
+ZBW/substrate bath running on the substrate clock, $kT \le E_{\mathrm{Pl}}$ and $\kappa \le 1$, so
+$\lambda \ge \alpha$ and the bracket's lower half is excluded. At the bath clause ($\kappa = 1$)
+$\lambda = \alpha$ exactly, $\eta = 1.43\times10^{-2}$, and $\Delta\ns = +5.0\times10^{-4}$. Since
+$\eta > 0$ this is a one-sided systematic shift, so the value quoted at Versions~1.0--1.5 as
+$0.9649 \pm 5\times10^{-4}$ is properly $\ns = 0.9654$, at $0.12\,\sigma_{\mathrm{Planck}}$. Two
+consequences: running the relation backwards, agreement with Planck at $1\sigma$ requires
+$\lambda \lesssim 9.7\alpha$, i.e.\ $kT_{\mathrm{bath}} \gtrsim 0.1\,E_{\mathrm{Pl}}$ --- an empirical
+lower bound on the substrate bath temperature; and the residual uncertainty is $\kappa$, which is
+already a named conditionality leg of this prediction (the bath clause), so no new theory error is
+added and the framework legs remain three.
+
+\emph{(b) The amplitude companion has no identified mechanism (Patch 3847).} The spectator prescription
+invoked in the amplitude discussion --- that some light mode supplies $P_\zeta \propto H_{\mathrm{eff}}^2$
+--- was never given a mechanism, and a ten-session search has closed every candidate the framework
+admits (the AP-5 register spring; the conserved count; the bath energy $\delta kT$; compositional
+disorder; frustration-domain modes; boundary-reflection modes; and the orientational pseudo-Goldstone
+built on the substrate-orientation field). The structural obstruction is registered: while inflation
+ends at a fixed geometric threshold, only the conserved count enters $\delta N$, and a conserved
+density carries a blue spectrum. \textbf{This does not touch the tilt}, which reads the adopted pivot
+and is unchanged throughout; it is a gap in the amplitude companion $A_s$, now characterised rather
+than open-ended. Three exits remain, none of them a further candidate search: the engine's assumed
+form $H_{\mathrm{eff}} \propto \ln\bar n$ may be incomplete; a spectator from outside the
+substrate-orientation sector would have to arrive on independent grounds; or $A_s$ is accepted as a
+calibration, which costs the zero-parameter claim for the amplitude while leaving the tilt intact.
 
 \paragraph*{Note added at Version 1.5 (9 September 2026; Patch 3816, founder ruling R-IGNITION-BALL-IN-ONE-PSR).}
 The founder has stated the initial configuration as twelve CPs per grid point, one to each icosahedral

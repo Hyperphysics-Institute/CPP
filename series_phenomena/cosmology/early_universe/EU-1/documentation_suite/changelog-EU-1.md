@@ -47,6 +47,16 @@ Debye Γ-reframing; ALL PASS).
 
 - **0789 (Phase 7A-ii)** — full narrative documentation suite shipped: development, reviews, keywords, transcript (Pass 1) + mechanism, phenomena, philosophy, glossary, verification, osf-deposit (Pass 2); master_glossary EU-1 terms added (deferred 7B C4). 10 companion files in `documentation_suite/`.
 
+## V1.6 (9 September 2026, Patch 3852) — SUBSTANTIVE: the quoted value moves
+
+**First version in this arc to change the paper's headline number rather than its scaffolding.**
+
+- **(a) T-2 delivered (Patch 3850).** The $O(\alpha)$ correction coefficient closes as **λ = α/κ** exactly (κ ≡ kT_bath/E_Pl), because a = l_P makes Γ = q²/(ℏc) = α at kT = E_Pl. The old 0.1α–10α bracket was a bracket on κ alone. Since the substrate bath cannot exceed the substrate scale, **κ ≤ 1 ⇒ λ ≥ α** and the bracket's lower half is excluded. At the bath clause (κ = 1): λ = α exactly, η = 1.43×10⁻², **Δn_s = +5.0×10⁻⁴**, and η > 0 — a **one-sided systematic shift, not a symmetric uncertainty**.
+  - **Quoted value: 0.9649 ± 5×10⁻⁴ → n_s = 0.9654** (0.12σ_Planck). Abstract and title-block updated.
+  - Two consequences recorded in the §Problem Status note: the relation run backwards gives an empirical bound **kT_bath ≳ 0.1 E_Pl**; and the residual uncertainty is κ, already a named conditionality leg (the bath clause), so **no new theory error is added** and the framework legs remain three.
+- **(b) Amplitude closure (Patch 3847).** A dated note records that the asserted spectator prescription has no identified mechanism; all seven candidates closed; the structural obstruction registered. **The tilt is untouched** — this concerns the amplitude companion A_s only. Three exits recorded, none a further candidate search.
+- **Unchanged:** the tilt derivation, Eq. Nstar, the count law, every section structure. Compiles clean in-container (pdflatex ×2, 16 pp, 0 errors, 0 undefined). **RECOMPILE OWED — Isak.**
+
 ### Pending (Phase 7 remainder)
 - 7A-ii: DONE (Patch 0789).
 - OSF deposit: metadata prepared (`documentation_suite/osf-deposit-EU-1.md`); awaiting Thomas's upload + DOI mint-back.
