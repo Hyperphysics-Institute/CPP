@@ -45,6 +45,7 @@ If `git clone` fails (no bash tool, network restriction, github.com unreachable)
 | Priority | File | What it gives you | Time | Don't skip |
 |----------|------|-------------------|------|-----------|
 | 1 | `bootup.md` | THIS FILE — orientation, structure, conventions | 5 min | **§3** — patch generation and commit flow. If you generate `.patch` files this session, the canonical apply macro is in §3. Do NOT reconstruct from `conversation_search`. |
+| 1.5 | `bootup.md` **§0.5** | **STANDING WORKER DISCIPLINE** — six process rules, each with its recorded cost. Read before doing any work. | 3 min | **All of it.** Handovers are superseded every session; durable process rules live HERE, not in a handover. |
 | 2 | `programme_orientation.md` | **THE THEORY** — complete narrative from first principles through all results | 15 min | — |
 | 3 | `theory-overview.md` | Reference card — formulas, scorecard, key numbers | 5 min | — |
 | 4 | `founders_vision.md` | Thomas's physical intuition — the WHY behind every equation | 10 min | — |
@@ -81,6 +82,40 @@ If `todolist.md` P1 has items, the queued work in the handover may be the work t
 ### If resuming after buffer overflow:
 
 Read the compacted summary at the top of the conversation, then the transcript file referenced there.
+
+---
+
+## 0.5 STANDING WORKER DISCIPLINE — read every session, before doing any work
+
+**Why this section exists.** These are not general advice. Each is a rule learned at a
+recorded cost during the EU-lane arc of 8–9 Sep 2026 (Patches 3816–3863), and each was
+first written only into a session handover — which does **not** survive, because Step 2
+reads only the **most recent** handover and every session supersedes the last. A durable
+process rule written into a handover falls out of the read path within one session. That
+is itself the first lesson, and it is why this section lives here.
+
+**The corpus is large and old, and you are new to it every session.** Almost every failure
+below has the same shape: the answer was already on file, and the worker reasoned forward
+instead of searching.
+
+| # | Rule | What it cost |
+|---|---|---|
+| **D-1** | **Before declaring that a protocol, axiom or clause FAILS, search the corpus for the mechanism the clause names.** Not the item's history — the *mechanism*. | Patch 3860 declared AP-4c's near-field relay unable to operate at Moment 1, wrote a consequence chain undermining the base of the arc, and annotated two documents. The mechanism (R-OUTWARD-FANOUT; D-SUBPSR-FIELD pass 3, with a verify script) had been on file for a month. AP-4c names "the relay recursion"; one search on that phrase would have found it. **Retracted at 3862** — a false negative against sound work. |
+| **D-2** | **Before working any item carried over from more than two sessions back, re-read the patch that registered it and check its premise against what has landed since.** | Patch 3823 named VSL as the e-fold budget's "most promising escape" **seven patches after its premise had been withdrawn** (3816) and six after both its branches were closed (3837). It was then carried as owed in five successive handovers. **Closed at 3854** — one session spent discovering it had never been alive. |
+| **D-3** | **Locate an object in the corpus BEFORE building on it.** | Four patches (3839–3843) developed C-4's coupling, mass scale and anisotropy on an order parameter nobody had confirmed existed. It did (FI-C-RC-1) — but the same chirality sector that supplied it **had already refuted C-4 before C-4 was proposed** (3847). |
+| **D-4** | **A flagged check is not a performed check.** If a check is load-bearing, do it in the patch that flags it — or state plainly that the patch's result is conditional on an unperformed check. | 3816 §6 flagged the AP-4c check precisely so it "would not be assumed silently." 3820 §5 re-pointed it. 3841 §3 used the clause. **None performed it.** Flagging created the appearance of diligence without the substance. |
+| **D-5** | **Check `git log` and the id-block counter against `origin/main` BEFORE starting.** Patches you generated but Thomas has not yet pushed are not in the repo. | Twice work was silently duplicated (3816/3817, then 3839/3840 redone worse and discarded). Twice new work was nearly built on an unpushed base (3818 failed to apply for exactly this reason; 3858 was caught only because the container had reset). |
+| **D-6** | **Check whether a lane is COMPLETE before escalating against its numbers.** Working values are not determinations. | Patch 3856 built an 86-order cross-sector confrontation on the DE lane's calibrated spacing and escalated it. The founder's reply: the DE lane is not complete. Amended at 3858. |
+
+**The common remedy.** Before reasoning forward from a clause, an item, or another lane's
+number, spend one `grep` on the thing it names. Six failures above, and in every case a
+single search would have prevented it.
+
+**One physics-side rule earned the same way.** A **derived shift is not an error bar**
+(Patch 3850): the O(α) correction had been carried for five paper versions as a symmetric
+±5×10⁻⁴ theory uncertainty when the derivation gives a one-sided systematic shift. It
+changed the paper's printed headline. When a result touches a number in print, say so
+loudly and change it in print.
 
 ---
 
