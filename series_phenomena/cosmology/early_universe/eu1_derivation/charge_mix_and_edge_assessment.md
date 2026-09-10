@@ -16,6 +16,10 @@ The founder's point stands on its own terms: with three interaction classes (eCP
 
 **Verdict on (1): correct physics, real amendment to T-1's homogeneity clause, not a ζ source.** Registered, not adopted.
 
+## §1b CORRECTION (Patch 3831) — "three-for-three" was wrong about the count
+
+§1 records the end-condition wall as having taken δkT, the count and composition. **The count does not belong on that list.** The count *is* n̄, so it enters δN directly (ζ = ⅓ δρ/ρ, 3831 §1); it was rejected at 3812 on **amplitude** (Poisson, astronomically short) and **whiteness** (n_s = 1), not on the end condition. The wall is **two-for-three** — δkT and composition. This matters because it places C-2 in the count's own class (initial-slice density perturbations), so C-2 must beat it on amplitude and spectrum. See `c2_end_condition_bridge.md` §2.
+
 ## §2 Claim (2), the edge — the strongest candidate yet, and honestly so
 
 The founder is right that this is the most obvious asymmetry, and it is qualitatively different from everything the corpus has tested. The interior of the ball cancels: twelve neighbours, momenta summing to zero (3820, exact through ℓ = 5). The boundary layer does not — a CP at the edge has neighbours on the inward side and vacancy outward, so the icosahedral cancellation that makes the interior isotropic *fails precisely and only there*. This is not a perturbation of the cancellation; it is its absence. Inward-propagating disturbance follows, through exactly the chain the founder names (CP → DP → mass entities).
