@@ -40,6 +40,10 @@ Routes, in order of how much they cost:
 3. **A non-standard thermal history.** Lower reheating makes it worse (T5); only an exotic history helps, and none is on file.
 4. **The ball is not the whole universe.** Would dissolve the problem and the founder's edge with it. Not the founder's picture; recorded for completeness only.
 
+## §4b GENERALISATION (Patch 3825) — §2's identity held k = 12 tacitly
+
+§2's N = ln(l_P/s) + 1.31 assumed the founder's twelve CPs per grid point. For an arbitrary ignition occupancy k, **N = ln(l_P/s) + ⅓ln k + ⅓ln(4π/3)**, so occupancy is a genuine knob independent of the lattice spacing (the budget closes at k ≈ 5.8×10¹⁴ per GP at fixed s). But both knobs enter only through the total count in the master relation N = ⅓ln N_CP − ln(R_init/l_P), and both routes converge on **N_CP ≈ 5×10⁹⁷** — so §4 route 1 ("a finer hierarchy") and the occupancy route are one constraint on the total CP count, not two. See `stacking_knob_assessment.md`. Route 1 is restated accordingly: *supply N_CP ≈ 5×10⁹⁷ by any arrangement*, with the DP-sea density as the independent pin (n_CP today ≈ 1.4×10¹⁷ m⁻³).
+
 ## §5 Honest scope
 - **The tilt is untouched.** n_s = 1 − 2/N_rem depends on the pivot's *remaining* e-folds, adopted at 57. Nothing here changes the shape of the count law. PRED-C-96 stands exactly as it did.
 - **What is in tension is the count's total**, and therefore whether N_rem = 57 sits inside a window that also reaches the observable universe. At N = 64.5 the pivot fits the window but the window does not fit the sky.
