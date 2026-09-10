@@ -33,7 +33,7 @@ At the low end the correction is invisible. **At the high end it is nearly a ful
 - **0772** — `scripts/0772_zrp_htheorem.py`, LEMMA-NS-ZRP-DERIVE / LEMMA-NS-HTHEOREM.
 - **0749** — the A1 counting result μ = kT ln n̄.
 - The paper's own table (EU-1 §, the 0.1α–10α bracket).
-- α as it enters here is the SSV occupation-dependence parameter of the reduction, **not** the fine-structure constant. Worth stating explicitly, because the notation invites the confusion.
+- ~~α as it enters here is the SSV occupation-dependence parameter of the reduction, **not** the fine-structure constant.~~ **CORRECTED at 3850:** α here **is** the fine-structure constant, and exactly so — 0766 gives Γ = q²/(a·kT) with a = l_P, so at kT = E_Pl, Γ = q²/(ℏc) = α. The warning above pointed the wrong way and is withdrawn.
 
 ## §5 Worker expectation on record (charter §5 E-3, unchanged)
 > "the coefficient is order-one times α; the table's 0.1α–10α bracket will narrow to ~[0.5α, 2α] without changing the count."
