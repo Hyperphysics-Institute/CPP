@@ -28,7 +28,7 @@ consumed while `DMDE.md` had reserved 3424 for DM/DE).
 | **GR** (relativity) | **3700–3799** | **ACTIVE** — opened at 3700 (**G-GR-BLOCK-3700**, founder ruling 8 Sep 2026: "3700-3799 series open, I think. If it is, then dedicate to GR lane"); first use Patch 3700 (GR-2 V2.8); `next_id.py` taught the block at Patch 3800 (it had still reported 3600–3699 EXHAUSTED) | `frontier_sectors/GR.md` |
 | GR (first block) | 3300–3399 | **CONSUMED** — highest used 3398; 3399 left UNUSED as the block's terminal | `frontier_sectors/GR.md` |
 | cosmology (legacy) | 3100–3199 | **CONSUMED** — closed at 3199 | — |
-| **EU** (early universe / cosmology) | **3800–3899** | **ACTIVE** — opened at 3800 (**G-EU-BLOCK-3800**, founder ruling 8 Sep 2026: "Please use the 3800 series for EU"); first use Patch 3800 (this registration). The DE (3400s) and DM (3500s) blocks remain active and separate (founder, same ruling). Sector file: EU items live in `research_frontier.md` (OPEN-EU-*) until an `EU.md` sector file is warranted. **Session 170 (9 Sep): highest used 3821; next free 3822.** | `research_frontier.md` (OPEN-EU-*) |
+| **EU** (early universe / cosmology) | **3800–3899** | **ACTIVE** — opened at 3800 (**G-EU-BLOCK-3800**, founder ruling 8 Sep 2026: "Please use the 3800 series for EU"); first use Patch 3800 (this registration). The DE (3400s) and DM (3500s) blocks remain active and separate (founder, same ruling). Sector file: EU items live in `research_frontier.md` (OPEN-EU-*) until an `EU.md` sector file is warranted. **Session 171 (9 Sep): highest used 3824; next free 3825.** | `research_frontier.md` (OPEN-EU-*) |
 | unallocated | 3900–3999 | reserved, unassigned | — |
 
 **DM moved out of 3400–3499 by founder ruling (25 Aug 2026).** The DM and

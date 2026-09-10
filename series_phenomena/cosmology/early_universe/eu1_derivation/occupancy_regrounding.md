@@ -13,6 +13,10 @@ The founder's black-hole question (3814 §3) is answered by *time* rather than b
 ## §2 The ball (initial-condition clause; verify T2, T5)
 The founder's initial condition already carries a "Big Bang Point" with twelve CPs per GP; the ruling makes its radius explicit: **R_init ≤ l_P** (one rest-frame Planck sphere). Holding ~10⁸³ addresses inside it requires a GP spacing ≲ l_P·(4π/3 · 10⁻⁸³)^{1/3} ≈ 3.5×10⁻²⁸ l_P. The glossary's nested-600-cell hierarchy already places GPs at sub-Planck spacing and records "~10³⁰ GPs per l_P" as an unverified early estimate: read as *linear* density that spacing (10⁻³⁰ l_P) is sufficient by ~3×10²; read as *volumetric* (10³⁰ per l_P³, spacing 10⁻¹⁰ l_P) it is short by ~10⁵³. So the small-ball reading turns the unverified estimate into a **requirement on the hierarchy** — at least ~3×10²⁷ GPs per l_P linearly — which is a consistency condition, not an input to any prediction (0736's "the resolution enters no prediction formula" survives: the e-fold total depends on R_init/l_P and N_CP only, §3).
 
+## §2b CORRECTION (Patch 3823) — the resolution IS an input, and the bound checked here was the wrong one
+
+§2 concludes that the hierarchy requirement is "a consistency condition, not an input to any prediction," and that 0736's rule survives. **Both claims are withdrawn.** Under packing closure (N_CP = 12·(4π/3)(R_init/s)³) the count law collapses to **N = ln(l_P/s) + 1.31**: R_init and N_CP drop out and the sub-Planck GP resolution is the *only* quantity setting the e-fold total — which is the window the pivot N_rem = 57 must sit inside. Further, the bound computed in §2 (≳ 3×10²⁷ GPs per l_P, to *hold* the CPs) is not the binding one; the e-fold budget needs ≳ 10³² per l_P, about five orders finer, and the unverified 10³⁰ estimate falls short of it. See `efold_budget_audit.md` (3823) and OPEN-EU-EFOLD-BUDGET-1.
+
 ## §3 The count law re-read (the definitional change; verify T1, T3, T6)
 EU-1 eq. Nstar reads N_* = ⅓ ln(N_CP/N_GP) with n̄ "the mean occupation of a GP" and N_GP ~ 13 seed grid points. The re-grounding replaces the referent, not the form:
 
