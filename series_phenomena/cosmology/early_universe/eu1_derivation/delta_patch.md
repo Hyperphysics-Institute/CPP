@@ -55,6 +55,12 @@ Combining the **independently derived** brake with the **observed** amplitude:
 
 **What would make it a fit** is computing the affinities *after* seeing 2.8 and arranging them to land there. **The affinities must be derived from the SCP composition dynamics and then compared** — and whoever does it should note that they are reading this file first, which is itself a hazard.
 
+## §5b THE PREDICTION TESTED (Patch 3902) — inside the band, but the amplitude is NOT derived
+
+§4 predicted **f_E/f_Q ≈ 2.8, band [1.7, 6.5]**. Tested at 3902 under the hazard discipline (structure and couplings written down **first**): the strong channel needs **both** partners to carry strong charge, so **Q-Q → α_s** while **Q-E and E-E → α** — which **derives the founder's asymmetry from charge content**. With α_s(M_Pl) = 0.01970 from standard running, **f_E/f_Q = α_s/α = 2.70 — 2.2% from centre, inside the band.**
+
+**But the circularity check matters more:** **H is A_s-normalised**, so an end-to-end ζ computation is **circular** and is not claimed. What survives is **ℓ_req = 139.0 vs ℓ_sat = 137.0 (1.4%)**, with the observation entering at the **sixth power**. **Consistency check, not derivation** — and the **third chained near-miss in three sessions, to be weighed as one result.** See `affinity_ratio.md`.
+
 ## §6 Standing
 - **First patch in the new EU block 3900–3999.**
 - **The seed is irrelevant** — Poisson in n₀, minute. δ_patch is not seed-set.
