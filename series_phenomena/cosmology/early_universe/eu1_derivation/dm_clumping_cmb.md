@@ -10,6 +10,10 @@ The seven candidates closed at 3847 were the register spring, the conserved coun
 
 The question is the one this arc keeps returning to: does it **make** the pattern, or **carry** it?
 
+## §2b RETRACTED at 3884 — the amplitude result below used an INVENTED mass
+
+**§3's "within a factor of two" is WITHDRAWN.** It assumed 10⁶ M☉ aggregates, a mass the worker chose because it landed on the observed contrast. The founder corrected the particle identity at 3884: CPP's DM is the **16-plane ring at 11.26 GeV** (registration Patch 3426, 25 Aug 2026), and this document quoted a `DM_project_map.md` that was **two and a half months stale** on that point. **At the corpus mass the Poisson contrast is 5.6×10⁻³⁷ against a required 10⁻⁵ — 31 orders short.** DM clumping fails on amplitude like every other candidate, and **§5's "first candidate to come close on amplitude" is withdrawn with it**. The three exclusions below stand and a fourth (amplitude) joins them. See `dm_ring_retraction.md`.
+
 ## §3 Amplitude — and here it does something no previous candidate did (verify T3, T4)
 CPP's DM is **charge-neutral qDP/hTetra aggregates** (CONJ-COSMO-1). Aggregation from a random start is **Poisson-seeded**, and Poisson noise is large when the objects are massive and therefore few:
 

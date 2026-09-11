@@ -1,0 +1,21 @@
+# Reasoning capture — Patch 3884: the DM ring, and retracting my amplitude near-miss
+
+*Session 201, 9 Sep 2026, EU lane. Founder text: `founders_voice/founder_correction_dm_rings_2026-09-09.md`. Finding: `eu1_derivation/dm_ring_retraction.md`. Verify 10/10.*
+
+The founder corrected my description of his dark matter and told me to read the lane again. He was right on both counts and the second stings more than the first.
+
+I had described the dark matter as charge-neutral aggregates, which is what the project map says. The project map's own header says it was last updated on the tenth of June. The ring was registered on the twenty-fifth of August. So I read a summary that was two and a half months stale on the identity of the object it summarises, and I did it one session after writing a rule that says to locate the object rather than a description of it. A project map is a summary and summaries age; the lane files and the founders' voice record do not age in the same way, and that distinction is what D-3 is actually about.
+
+The real object is the ring: sixteen planes organised as eight two-plane elements, eleven and a quarter GeV, formed when extreme turbulence bends a straight sixteen-plane rod closed. That last detail is the founder's and it is not in the map at all.
+
+Then the part I have to retract. Last session I reported that dark-matter clumping came within a factor of two on amplitude — the first candidate in the whole arc to get close. That number came from assuming aggregates of a million solar masses, which I chose because it landed on the observed contrast. I did flag it as a fit at the time and I tabulated the alternatives, which was right as far as it went. But the corpus contains the actual mass, and reporting a near-miss built on a number the corpus does not contain, while the number it does contain sits in a file I did not open, is not a defensible way to have run that session.
+
+With the ring's real mass the arithmetic is not close. The number density is about a tenth per cubic metre, which puts three times ten to the seventy-two rings in a hundred-megaparsec box, and the Poisson contrast is five parts in ten to the thirty-seven against a required ten to the minus five. Thirty-one orders short. So dark-matter clumping fails on amplitude exactly like the register spring, the conserved count, composition and the edge, and the claim that no candidate in this arc has come close is now true without exception.
+
+His actual question was about aggregation to fractal levels, and I worked it as asked rather than treating the retraction as the whole answer. Reaching the observed contrast at a hundred megaparsecs needs about ten billion objects in that volume, which is three million solar masses per clump, around ten to the sixty-two rings each. So aggregation can reach the amplitude in the sense that some level of clumping produces it — but only by choosing the level, which is the same calibration move dressed differently.
+
+The decisive point is that it fails on shape at every clump mass, and I wanted that stated independently of the amplitude because it cannot be dodged by re-arranging the hierarchy. Poisson seeding is white, so the contrast falls as the three-halves power of scale: matching at a hundred megaparsecs leaves ten megaparsecs too lumpy by one and a half decades and a thousand megaparsecs too smooth by the same. The observed spectrum is nearly flat across that range. Choosing the clump mass slides the entire curve vertically and never tilts it. Aggregation changes amplitude and never shape, so no arrangement of fractal levels can help.
+
+What I was careful to preserve is that the founder's correction strengthens the verdict rather than weakening it — the candidate now fails on four independent grounds where it failed on three — and that last session's lesson survives. Massiveness does buy noise; that is exactly why the heavy mass I invented looked promising and why the real light one does not. The lesson was sound and my application of it was wrong, because I supplied the mass instead of reading it, which is the same error in a different costume.
+
+I flagged the project map as stale but did not edit it. It is a DM-lane file and I have no sanction.
