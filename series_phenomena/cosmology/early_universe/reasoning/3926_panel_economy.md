@@ -1,0 +1,17 @@
+# Reasoning capture — Patch 3926: was the panel worth it?
+
+*Session 222, 11 Sep 2026, EU lane. Finding: `eu1_derivation/panel_economy.md`. Verify 10/10.*
+
+The founder asked whether we have a win or a stuck spot, and whether the panel recommendation was a symptom of the latter. It is a governance question with a sharp edge on it and the honest answer is mixed, so I sorted the returns by kind before answering rather than defending the recommendation.
+
+The first half is straightforward. It is a win. Two charter targets delivered, one of which moved the paper's headline number; a negative that survived a proper audit in which the single available reversal was tested at full strength and failed for a stated reason; and one live candidate with a derived microphysics. None of that was contingent on the panel, and none of it was a rescue attempt.
+
+And the panel's purpose was ratification, not rescue. The reason I gave at 3847 still holds: a negative that is not ratified gets re-worked by whoever comes next, and the amplitude sector has a structural obstruction that would otherwise attract an eighth and ninth candidate hunt. Four of the five questions came back unanimous, including that one. So the exercise returned what it was sent for.
+
+The second half is where it turns against me, and I sorted the corrections to make sure I was not softening it. The panel returned five corrections and every one was to my wording. The worst — "permanently foreclosed" — was an internal contradiction in my own document, since I had listed an exit as live in one section and declared foreclosure permanent in another. The other four were an unscoped closure, a cleared-test table with an unmet condition sitting in it, one theorem counted four times in an evidence ledger, and two percentages quoted away from the chain that produced them.
+
+Physics errors caught by the panel: none. And the two real physics errors in this stretch were caught elsewhere — the eighty-three-order vacuum claim by the founder in a single question, and the horizon misreading in-lane the following session by looking at a symbol. Neither needed a panel and a panel found neither.
+
+So the finding I actually want on the record is that panels ratify and catch overclaim, and they do not debug. That makes the recommendation sound rather than misguided, because I sent it to ratify a closed sector. But it also means I should not reach for one when a lane is stuck, and I should not have needed five reviewers to tell me that a document contradicted itself. Five presentation faults are cheap to find and were expensive to route. The instrument for those is the wording rules, of which there are now seven, all written after the fact.
+
+The last thing is the part I nearly did not write. I have been saying for three sessions that no in-lane item remains, and treating that as a result rather than an omission. It is true that both live items are outside this lane. But framing them so the receiving lane can act without first translating them is in-lane work, and I have not done it. The particle-sector question is still phrased in this lane's vocabulary, and the remaining exit has no statement of what a derivation would have to reproduce in order to count. A genuine terminus and a comfortable stopping point look the same from the inside, and the distinguishing test is whether the handover is usable by whoever receives it. On that test I have not finished.
