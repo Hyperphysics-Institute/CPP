@@ -68,6 +68,10 @@ The founder's parallel — superimposed CPs during inflation playing the role DP
 3. **A corpus home for the superposition reservoir.** It is the founder's picture; it is not yet a registered object with a stated capacity, evaporation law, or depletion behaviour.
 4. **Adiabaticity** against Planck's isocurvature bound — the test that killed composition (3822) and DM clumping (3884).
 
+## §6b C-5's CLAIM NARROWED (Patch 3904) — source-and-shape, not normalisation
+
+The amplitude question is **two** questions, and this document conflated them. **(1) Is there a source with the right spectrum?** — **C-5's, and answered**: Gaussianity cleared (3896), shape from H_eff-tracking (3888), affinity ratio inside band (3902). **(2) What sets the normalisation?** — **κ\***'s, and **open since 0746**. The circularity found at 3902 reduces **entirely** to κ₀ = (H/E_Pl)/ln n̄ = 1.13×10⁻⁷, which the corpus already carries as **κ\* ~ 2×10⁻⁷** and already names as the gate (*"derive the boost coupling and A_s becomes predictable"*). **It may be axiom-level** — in which case **C-5's amplitude is permanently a consistency check.** **The normalisation was κ\*-gated before C-5 and was never C-5's gate to remove.** See `kappa_star_gate.md`.
+
 ## §7 Scope, stated plainly (verify T10)
 **Nothing is adopted. C-5 is not reported as working.** What is established is narrower and still substantial:
 
