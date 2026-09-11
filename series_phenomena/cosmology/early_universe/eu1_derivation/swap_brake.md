@@ -55,6 +55,12 @@ If δ_patch comes out 1 **for a reason** — from the affinity's strength and th
 
 **And C-5 still owes adiabaticity** (Planck's isocurvature bound), untouched here.
 
+## §6b THE GATE, HALF CLOSED (Patch 3900)
+
+§6 made the gate *"compute δ_patch from the dynamics — if it comes out 1 for a reason."* **The reason is found: SATURATION.** ℓ_corr is by definition the range over which the sorting is coherent, so within one correlation volume preferential attachment has **run to completion** and each patch is **wholesale** Q- or E-dominant, whatever its seed. **So δ_patch = |ln(f_E/f_Q)|, a log-ratio of two saturated outcomes — O(1) by construction.** *(The seed is irrelevant: Poisson in n₀, ≤10⁻³.)*
+
+**The qualitative half is discharged.** The **number** still needs the affinity strengths, which are **not on file**, so C-5 now makes a **falsifiable prediction** instead: **f_E/f_Q ≈ 2.8, band [1.7, 6.5]** — E-dominant patches unstack ~2.8× further than Q-dominant ones. See `delta_patch.md`.
+
 ## §8 Standing
 - **The eDP swap rate is NOT on file** — derived, not read.
 - **Derivation: Γ_swap ~ α (EM process) + build at 1 PSR/Moment (protocol) ⇒ ℓ_sat = 1/α = 137.0 PSR.**

@@ -1,0 +1,19 @@
+# Reasoning capture — Patch 3900: δ_patch, and a prediction instead of a number
+
+*Session 209, 11 Sep 2026, EU lane, first patch in the new block 3900–3999. Finding: `eu1_derivation/delta_patch.md`. Verify 10/10.*
+
+I went in expecting to compute a number and came out with a prediction, which I think is the better outcome but took some discipline to accept.
+
+The first thing was to check whether the seed scatter could be the source, and it cannot, by a wide margin. If compositions are laid down randomly then the per-stack spread is Poisson in the stack number, which is one part in a thousand at best and one part in a trillion at the larger end. Had the patch-scale fluctuation traced that, the candidate would already be dead by many orders. So the seed is not what makes the quantity order unity, and establishing that was worth the session on its own because it rules out the reading under which the gate is trivially failed.
+
+What sets it is saturation, and the argument is short enough that I distrusted it until I wrote it out. The correlation length is by definition the range over which the sorting is coherent. So inside one correlation volume the preferential attachment has run to completion — the patch is wholesale one thing or wholesale the other, whatever seed it started from. The amplification is the mechanism and the seed only decides which way a patch falls. The patch-scale fluctuation is therefore the log-ratio of two saturated unstacking fractions, and a log-ratio of two saturated dynamical outcomes is order unity by construction. It could not have been a millionth and it could not have been a million.
+
+That discharges the qualitative half of what 3898 asked. The gate was whether the quantity is one for a reason rather than by assumption, and the reason is saturation. I was careful to say the qualitative half, because knowing it is order unity is not knowing it is 1.02.
+
+For the number I needed the two affinity strengths, and a search found none — the corpus fixes the affinities qualitatively only, in the founder's walk-and-talk. So I did not compute it and did not supply it. That is the fourth session running in which a parameter the corpus lacks has been carried rather than chosen, and I note it because the first time I failed that test it cost a retraction.
+
+Then the part I had to think about. Combining the brake derived last session from the electromagnetic coupling with the requirement derived two sessions ago from the observed amplitude pins the patch fluctuation at 1.015, which is a ratio of unstacking fractions of about 2.8. My first instinct was that this is circular — I am using the observation to fix a quantity and then claiming agreement. It is not circular provided I present it as what it is: a prediction with an independent route to testing it. The brake came from α by an argument that never referred to the target. The requirement came from the sky. Their agreement demands a specific value of a third quantity, and that quantity can be computed from the affinities without reference to either. That is the same structure as the bath-temperature bound at 3850, which was accepted, and the logic has not changed.
+
+So I wrote it as a prediction and gave it a band. Allowing the brake to be wrong by half an order in either direction puts the ratio between about 1.7 and 6.5, which is narrow enough that a computed value of 1.1 or 20 would kill the candidate outright. I also checked the direction makes physical sense, and it does: strongly self-attracting patches re-superimpose more readily and so unstack less, which is the sign the prediction requires.
+
+The hazard I named explicitly in the finding is that whoever computes the affinities will have read this file first and will know the target is 2.8. That is unavoidable now and the only defence is to have said so. I would rather the record carry the warning than pretend the next worker approaches it clean.
