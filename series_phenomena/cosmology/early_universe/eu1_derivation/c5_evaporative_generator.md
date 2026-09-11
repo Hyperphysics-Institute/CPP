@@ -54,6 +54,14 @@ The founder's parallel — superimposed CPs during inflation playing the role DP
 
 **This is a founder picture question and it gates everything else about C-5.**
 
+## §5b RESOLVED at 3890 — the reading favours C-5, and the gate MOVES to debt (3)
+
+§5 called the referent a **tension between two settled results**. **That framing was wrong** and 3890 corrects it: there is **one referent — occupancy** — whose **generic value equals the CP count**, because the ignition lattice is ~10¹³ times emptier than one CP per GP (occupancy 2.3×10⁻¹³; P(≥2 per GP) ~ 3×10⁻²⁶). **Both readings are right in their domains; there was never an inconsistency.**
+
+**The dynamical n̄ is the occupied-GP count**, from the founder's own Patch 3426 (*"CPs respond only to the DI-bits that arrive"*) plus AP-4's per-GP emission. **So C-5 survives: evaporation genuinely raises n̄ without changing the conserved count, and the no-go's premise genuinely fails for it.**
+
+**But superposition is NOT generic** — it needs a mechanism forcing CPs together against a lattice with overwhelming room. **Debt (3) below (a corpus home for the reservoir) is therefore now the GATING debt, displacing debt (1), which is discharged.** See `referent_resolved.md`.
+
 ## §6 What C-5 owes, in order (verify T9)
 1. **Settle §5's referent.** Gates the rest.
 2. **The amplitude.** Not computed here, and **PD-007 bars calibrating it against A_s** — it must come out, or C-5 joins the seven.
