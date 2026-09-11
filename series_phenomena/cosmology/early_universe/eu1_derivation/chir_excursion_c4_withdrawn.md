@@ -43,6 +43,10 @@ The amplitude sector's full inventory, and its state:
 
 > **The amplitude sector has no surviving candidate.** The 3835 no-go said no light mode can source ζ while the end condition is a fixed geometric threshold; 3837 found the only escape (a spectator modulating the end condition); C-4 was that spectator; it is now closed.
 
+## §4b C-5 REGISTERED (Patch 3888) — the sector is no longer empty
+
+§4 recorded that the amplitude sector had **no surviving candidate**. That stood for 41 patches. **C-5, the founder's evaporative generator (3888), is now registered as live.** It is structurally unlike all seven above: it runs **during inflation** and generates **continuously**, and it can break the 3835 no-go on a corpus fact — **AP-4 emits per GP, not per CP**, so evaporation from superposition raises the *perceived* count without changing the *conserved* one, making the source a **rate**. **Not adopted and not reported as working**; its viability gates on whether n̄ counts CPs or occupied GPs. See `c5_evaporative_generator.md`.
+
 ## §5 What this does NOT touch (verify T8)
 - **PRED-C-96 stands.** The tilt reads the adopted pivot N_rem = 57 and has been untouched through this entire arc. Nothing here is a refutation of n_s, and it must not be reported as one.
 - **The e-fold budget is a separate, still-open problem** (~10.5 short, 3823; the VSL horizon computation is still owed).
