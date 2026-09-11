@@ -63,6 +63,10 @@ Re-stacking opposes unstacking; in the **re-stacking-dominated limit** f ~ 1/A, 
 2. **The ratio α_s/α = 2.70 sits inside the predicted band** — a consistency check with weak observation-dependence.
 3. **The end-to-end amplitude claim is refuted before it was made** (§4), which is the patch's most important content.
 
+## §6b THE MODEL CAVEAT CLOSED (Patch 3910)
+
+§6 warned that **f ~ 1/A is the re-stacking-dominated limit** and that **in the opposite limit f_E/f_Q → 1 and the chain fails**. **Settled at 3910, by f itself:** f(start) = 1/n₀ and ln f is linear in N_rem (3892), so **ln f(pivot) = −0.884 ln n₀** ⇒ **f(pivot) = 5×10⁻⁶ to 6×10⁻²²** across plausible n₀ — **deeply re-stacking-dominated, so f ~ 1/A HOLDS, independent of the stack number.** The crossover to the failing limit sits at **N_rem ≈ 0.8–3.2**, the last one to three e-folds, while observed modes exit at **N_rem ≈ 50–60**. **Both limits are traversed, as the count law requires — the transition is what ends the unstacking.** See `f_model_limit.md`.
+
 ## §7 Standing
 - **Structure derived:** Q-Q → α_s; Q-E, E-E → α. **Reproduces the founder's asymmetry from charge content.**
 - **Couplings fixed before the ratio** (3901 discipline honoured): α = 0.007297; α_s(M_Pl) = 0.01970 from standard running.
