@@ -242,6 +242,8 @@ The Session 36 P1 audit found that all originally-P1 items except TODO-002 were 
 - the §Background **VSL clarification** (3854);
 - the physical reading of eq. Nstar (3876 §5) **as qualified by 3878**.
 
+**Cadence (Patch 3932):** the **§15 session close fires at CONTEXT-WINDOW turnover or on the founder's call — not every turn** (D-8). Across Sessions 169–224 it fired per turn; **~half the lane's patch output was turnover bookkeeping for turnovers that did not happen.**
+
 **Open, non-blocking:** OPEN-EU-LATTICE-EXTENT-1 (3878) — the lattice's extent is unspecified in the corpus; possibly a foundations question.
 
 **NOT owed, and recorded so it is not re-opened:** the **cosmological-constant residual** belongs to the **CC lane**, where **F-CLI-1 is already FIRING-PENDING-SCRUTINY**. The EU lane touched it only through an error (3906) and a retracted patch (3920, retracted 3922). **There is no EU-lane CC work item.**

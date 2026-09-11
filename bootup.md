@@ -45,7 +45,7 @@ If `git clone` fails (no bash tool, network restriction, github.com unreachable)
 | Priority | File | What it gives you | Time | Don't skip |
 |----------|------|-------------------|------|-----------|
 | 1 | `bootup.md` | THIS FILE — orientation, structure, conventions | 5 min | **§3** — patch generation and commit flow. If you generate `.patch` files this session, the canonical apply macro is in §3. Do NOT reconstruct from `conversation_search`. |
-| 1.5 | `bootup.md` **§0.5** | **STANDING WORKER DISCIPLINE** — seven process rules, each with its recorded cost. Read before doing any work. | 3 min | **All of it.** Handovers are superseded every session; durable process rules live HERE, not in a handover. |
+| 1.5 | `bootup.md` **§0.5** | **STANDING WORKER DISCIPLINE** — eight process rules, each with its recorded cost. Read before doing any work. | 3 min | **All of it.** Handovers are superseded every session; durable process rules live HERE, not in a handover. |
 | 2 | `programme_orientation.md` | **THE THEORY** — complete narrative from first principles through all results | 15 min | — |
 | 3 | `theory-overview.md` | Reference card — formulas, scorecard, key numbers | 5 min | — |
 | 4 | `founders_vision.md` | Thomas's physical intuition — the WHY behind every equation | 10 min | — |
@@ -111,6 +111,17 @@ instead of searching.
 **The common remedy.** Before reasoning forward from a clause, an item, or another lane's
 number, spend one `grep` on the thing it names. Seven failures above, and in every case a
 single search would have prevented it.
+
+**D-8 — the §15 session close fires at CONTEXT-WINDOW turnover, or when the founder calls
+for it. NOT every turn.** A *session* is a window, not a turn: the corpus defines the handover
+as *"the one piece of handover output that belongs in chat, since Thomas pastes it into the
+next window."* On an ordinary turn, deliver the work patch and update `research_frontier.md`
+and `id_block_registry.md` only. **What it cost:** across Sessions 169–224 the close fired
+every turn — in one window, ~23 of ~46 patches were session-closes, so **half the lane's
+output was turnover bookkeeping for turnovers that did not happen**, each one writing a
+session log, a transcript row, a development vignette, a registry pass and a handover file
+addressed to a reader who never arrived. **The founder noticed the cadence change; the lane
+did not.**
 
 **D-7 is aimed at a different object from D-1…D-6, and that is why it was needed.** The first
 six say *search the topic*. D-7 says *resolve the symbol*. The four failures it records were all
