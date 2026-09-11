@@ -222,6 +222,30 @@ The Session 36 P1 audit found that all originally-P1 items except TODO-002 were 
 
 ## P2 — At Thomas's discretion (not blocking next paper)
 
+### TODO-3930-EU — EU-lane owed items, Sessions 169–223 (registered Patch 3930)
+
+**Registered late, and that is the point of the entry.** This arc ran 55 sessions and put **nothing** in this file; every owed item lived in handovers, which are **superseded every session**. The founder asked where these were tracked. **They were not.**
+
+**Owed to other lanes (maintainer routing required — cross-lane sanction is not a worker act):**
+- **FP lane — the existential gate on C-5.** *Does a local enrichment in Q-dominant SCPs shift η_B or the lepton asymmetry, or is the Q:E composition orthogonal to the leptogenesis sector?* **Framed in FP's terms at `series_phenomena/cosmology/early_universe/review/eu_outbound_questions.md` §1.** If it carries net B or L, **C-5 dies by ~30×**.
+- **CONV-046 dispatch** — package **v1.1** (amended after the panel return), economy audited at 3926. `.../early_universe/review/conv046_eu_amplitude_arc_review_package_v1.1.md`.
+- **The amended DE escalation** (3858) — the counting bound, re-pointed at DE-lane completion.
+- **`cosmic_web_generation_constraints.md` owed piece 1** (3833).
+- **`DM_project_map.md` is STALE** on the DM particle's identity (3884) — cross-lane, never edited.
+
+**Owed by Isak (mechanical):**
+- **Recompile EU-1 at V1.6** — **two versions behind**; and GR-2 at V2.11.
+
+**Owed into EU-1 V1.7 (bundle when the recompile happens):**
+- the **amended κ\* wording** — *A_s foreclosed **given the present assignment** H ∝ μ*, **never "permanently"** (3906 as corrected by the CONV-046 return at 3914);
+- **the "83 orders" must not appear anywhere** (retracted 3918 — it used the bare inventory);
+- the §Background **VSL clarification** (3854);
+- the physical reading of eq. Nstar (3876 §5) **as qualified by 3878**.
+
+**Open, non-blocking:** OPEN-EU-LATTICE-EXTENT-1 (3878) — the lattice's extent is unspecified in the corpus; possibly a foundations question.
+
+**NOT owed, and recorded so it is not re-opened:** the **cosmological-constant residual** belongs to the **CC lane**, where **F-CLI-1 is already FIRING-PENDING-SCRUTINY**. The EU lane touched it only through an error (3906) and a retracted patch (3920, retracted 3922). **There is no EU-lane CC work item.**
+
 ### TODO-2957-A — Correct master-glossary DI-bit entry per founder phase ruling (P1) — EXECUTED Patch 2989
 
 Founder ruling 2 Aug 2026 (Patch 2957 P-1): DI-bits carry {charge, type, origin address}, count-like
