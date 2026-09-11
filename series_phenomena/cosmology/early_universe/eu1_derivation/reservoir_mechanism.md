@@ -54,6 +54,12 @@ The question is no longer vague. It is a definite question about a definite quan
 
 **That is the next test, and it is not pre-judged here.** What would save it is some correlation in the unstacking — a dependence of the local rate on the local H_eff, which would make f self-regulating rather than Poisson. **The founder's charge rule (§5) is the first place to look**, since it distinguishes outcomes rather than treating all landings alike.
 
+## §6b THE WARNING IS ANSWERED (Patch 3894) — and replaced by a sharper question
+
+§6 warned that a **Poisson** unstacking would make δ ln f **white** and sink C-5. **The founder answered it with a mechanism** (walk-and-talk, 11 Sep): SCPs carry a **composition**, sorting into **Q-dominant** and **E-dominant** classes, and **Q-dominant SCPs discriminate (attracting each other strongly) while E-dominant SCPs are indifferent** — *"the Q-dominant SCP is the asymmetric attractor."* **That is preferential attachment: correlated by construction, and generically scale-free.** **The Poisson default is displaced.**
+
+**But the same property threatens Gaussianity (the 0730 wall)**, and the escape is multiplicity: **≥10⁶⁴ SCPs per observable mode**, so CLT Gaussianises **unless correlations are long-range**. **Debt (2) is therefore re-posed as a correlation-LENGTH question.** See `scp_differential_affinity.md`.
+
 ## §7 Standing
 - **Debt (3) DISCHARGED.** The reservoir is ordinary A1′/AP-3 displacement plus the founder's initial condition; **no new mechanism, no new axiom.**
 - **3890's sparsity argument OVERTURNED** — the worker supplied an arrangement; the founder's initial condition supplies stacking. Same error class as 3882.
