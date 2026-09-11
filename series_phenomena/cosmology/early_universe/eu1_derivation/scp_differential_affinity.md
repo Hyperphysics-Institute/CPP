@@ -54,6 +54,10 @@ The rescue, if there is one, is sheer multiplicity. At the pivot:
 
 **That is the computation C-5's amplitude debt now needs**, and it is sharper than what it replaced: the question has moved from *"is the unstacking random?"* — which the founder has answered — to *"over what range is it correlated?"*
 
+## §5b COMPUTED at 3896 — Gaussianity clears; the target is ℓ_corr ≈ 138 PSR; the question becomes saturation
+
+§5 posed the deciding quantity as the **correlation length**. Computed: the affinity is DI-bit mediated, so its **bare range is 1 PSR** (AP-4/AP-4c — a protocol fact). **GAUSSIANITY CLEARS by eleven orders** (mode kurtosis 7.2×10⁻¹² at the bare range) — **0730's wall does not apply**, the first test in this arc a candidate has *passed* that killed a predecessor. **Amplitude at the bare range fails by ~1600×** (3 orders, not 40), and inverting gives the target **ℓ_corr ≈ 138 PSR**, sharp to ~×2 since **ζ ∝ ℓ^{3/2}** — and **Gaussianity is still safe there**. **Reachability is trivial** (0.0027 e-folds), so **the open question is SATURATION: what arrests the correlation at ~138 PSR?** The **eDP pair-swapping channel of §1** is the first place to look, being a natural competing rate from the founder's own mechanism. See `correlation_length.md`.
+
 ## §6 Standing
 - **The walk-and-talk is converted and registered** as the SCP differential-affinity mechanism (founders_voice, 11 Sep).
 - **The 3892 Poisson warning is BROKEN by a stated mechanism** — differential affinity is preferential attachment, correlated by construction, and generically **scale-free**.
