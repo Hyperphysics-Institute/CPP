@@ -49,6 +49,10 @@ The obvious next move is to look for a formula yielding ~10⁻⁷. **α³ = 3.9�
 
 **What a legitimate derivation would look like:** κ\* is dimensionless — the coupling between a chemical potential (an energy) and an expansion rate (an inverse time). A derivation must come from **the substrate dynamics — how much expansion one unit of entropic drive buys** — and must be **written down before κ\* is computed from it.** The test is the same one applied at 3902 and honoured: mechanism first, number second.
 
+## §5b RULED at 3906 — κ\* IS effectively axiom-level, and for a sharper reason
+
+§3 asked whether κ\* is axiom-level. **It is.** And the reason is stronger than "uncalibrated": **the relation it coefficients is itself an ASSIGNMENT** — the corpus records the conditionality as the *"H_eff ∝ μ coupling + spectator assignment."* **So deriving κ\* requires first deriving why H ∝ μ at all.** And **H ∝ μ is not Friedmann**: the field equation demands ρ/M_Pl⁴ = 1.12×10⁻⁹ while the substrate carries 1.8×10⁷⁴ — **83 orders**, the vacuum catastrophe — so the assignment is a **deliberate departure** and **κ₀ carries it**. Its smallness is **the price of not being Friedmann**, which is also why **§5's refusal was right**: κ₀ is not a coupling constant and no power of α should reach it. **C-5's amplitude is PERMANENTLY a consistency check — foreclosed, not pending.** See `kappa_axiom_level.md`.
+
 ## §6 Standing
 - **The circularity reduces entirely to κ\***, with kT ~ E_Pl and ln n̄ = 171 both fixed.
 - **κ₀ = 1.13×10⁻⁷**, inside the corpus's own band (κ\* ~ 2×10⁻⁷, uncertainty 10⁻⁷–10⁻⁶) — **an unarranged consistency check.**

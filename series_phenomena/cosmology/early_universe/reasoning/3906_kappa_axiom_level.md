@@ -1,0 +1,17 @@
+# Reasoning capture — Patch 3906: κ\* ruled axiom-level
+
+*Session 212, 11 Sep 2026, EU lane. Finding: `eu1_derivation/kappa_axiom_level.md`. Verify 10/10.*
+
+I set out to derive the boost coupling from the substrate dynamics, following the discipline I had written for myself: find the mechanism first, and only then compute. The search found that there is no mechanism, and the corpus says so in its own words — the conditionality is recorded as the H-proportional-to-mu coupling plus the spectator assignment. The word is assignment. So the coupling is not an undetermined constant sitting inside a derived relation; it is the coefficient of an asserted one.
+
+That is a sharper statement than saying it is uncalibrated, and it changes what a derivation would have to accomplish. To derive the coefficient you would first have to derive why the expansion rate goes as the chemical potential at all, and that question sits upstream of everything the candidate does.
+
+Then the check that made the ruling firm rather than merely cautious. I asked whether the assignment is just Friedmann in different clothing, and it is not. Friedmann with the observed expansion rate demands an energy density of about one part in a billion in Planck units, while the substrate at the pivot carries some ten to the seventy-fourth points per Planck sphere at Planck energy each. Eighty-three orders apart — the vacuum catastrophe in its usual form. So the proportionality to the chemical potential is a deliberate departure from the field equation, and the coefficient is what carries the departure. Its smallness is not an accident of units; it is the price of not being Friedmann.
+
+Which retrospectively justifies what I refused two sessions ago, and I was glad to find a reason rather than leaving it as caution. Scanning powers of the fine-structure constant for ten to the minus seven presumes the object is a coupling constant. It is not. It is the coefficient of a departure from a field equation, and there is no reason such a thing should be a power of alpha. The cube of alpha was never a lead, and now I can say why rather than merely saying I declined it.
+
+The ruling follows. The coupling is effectively axiom-level as things stand — not because computing it is hard, but because the relation it coefficients is itself an assignment. Last session I said either outcome would be a result, deriving it or establishing it as axiomatic, and the second obtains. So the candidate's amplitude is permanently a consistency check unless the upstream assignment is itself derived, and I wrote that as foreclosed rather than pending, because those read very differently to anyone planning work.
+
+I listed four sentences owed to the paper, because the paper currently implies none of them and a reader will assume a normalisation still in progress. And I noted in the finding that the alternative was available: having established that the coefficient carries a departure from Friedmann, it would have been easy to construct a story in which the departure factor is some ratio of substrate scales and arrange it to land on the right order. I did not, and the reason is the same one that justifies the earlier refusal — the object is not the kind of thing a formula-scan reaches.
+
+The thing I want the record to show is that the mechanism-first discipline produced a negative here, which is what it is for. Four sessions ago it would have produced a number, and the number would have been wrong in a way nobody could have detected from the inside.
