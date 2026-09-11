@@ -57,6 +57,10 @@ There was never an inconsistency in the corpus. I framed it at 3888 as a tension
 
 **And the requirement is sharp.** The reservoir must hold enough CPs, and release them at a rate tracking H_eff, to move ln n̄ by the required δN. **That is debt (2), the amplitude, and PD-007 still bars calibrating it against A_s.** Nothing here computes it.
 
+## §5b SUPERSEDED at 3892 — the sparsity argument assumed an arrangement the corpus does not have
+
+§5 concluded that superposition is **not generic** and needs a mechanism, from an ignition occupancy of 2.3×10⁻¹³ CPs per GP. **That calculation assumed the CPs were SPREAD over a Planck sphere's 4.3×10⁹⁶ GPs.** The founder's initial condition (3892) has them **STACKED** — *"a large number of CPs on every GP"* — on far fewer sites. **The number is correct; treating it as a description of the starting state was not.** **C-5's debt (3) is discharged**, and the stacking mechanism turns out to be ordinary A1′/AP-3 displacement. §§1–4 (the referent itself) stand unchanged. See `reservoir_mechanism.md`.
+
 ## §6 Standing
 - **The referent is RESOLVED:** **the dynamical n̄ is the occupied-GP count**, from the founder's own 3426 statement plus AP-4's per-GP emission. A CP cannot respond to what it does not perceive.
 - **The count law is SAFE:** ignition occupancy is 2.3×10⁻¹³ per GP, so superposition is negligible generically and the two readings coincide. **N = ⅓ ln N_CP untouched.**
