@@ -242,6 +242,8 @@ The Session 36 P1 audit found that all originally-P1 items except TODO-002 were 
 - the §Background **VSL clarification** (3854);
 - the physical reading of eq. Nstar (3876 §5) **as qualified by 3878**.
 
+**Master handover (Patch 3933):** `handovers/2026-09-11_EU_ARC_MASTER_HANDOVER_3816-3932.md` supersedes every individual EU handover of this arc. **Read its §0 before anything else.**
+
 **Cadence (Patch 3932):** the **§15 session close fires at CONTEXT-WINDOW turnover or on the founder's call — not every turn** (D-8). Across Sessions 169–224 it fired per turn; **~half the lane's patch output was turnover bookkeeping for turnovers that did not happen.**
 
 **Open, non-blocking:** OPEN-EU-LATTICE-EXTENT-1 (3878) — the lattice's extent is unspecified in the corpus; possibly a foundations question.
