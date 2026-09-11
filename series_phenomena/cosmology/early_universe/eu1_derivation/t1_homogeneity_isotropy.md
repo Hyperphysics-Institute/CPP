@@ -60,6 +60,16 @@ What *does* require the near-field relay to deliver is the **count** n̄ ≈ 10�
 
 **T-1 is now load-bearing in four independent places:** homogeneity/isotropy (here), the C-4 mass suppression (3839 §5), the idle-breaking argument (3843 §2), and non-collapse (3880). A result that keeps proving structural in unrelated places deserves the panel's attention — flagged with the CONV-046 package.
 
+## §5d PANEL RULING ON REUSE (CONV-046, Patch 3914) — deep, but count it ONCE
+
+**All five returns ruled T-1 structurally deep. Three flagged over-extension.** The ruling:
+
+> **T-1 is ONE result with a reuse log, and is counted ONCE in any evidence ledger — never four times.**
+
+> **The angular identity proves the multipole cancellation and nothing more. Each dynamical application must SEPARATELY establish that the relevant observable depends only on the cancelled moments.** Mass suppression (3839), idle-breaking (3843) and non-collapse (3880) each require that lemma; "by T-1" is not a substitute for showing it.
+
+**Reuse is not penalised** — one return noted a symmetry this sharp *should* recur wherever the ignition angular structure enters. **Over-use begins when a later patch cites T-1 instead of demonstrating the dependence.** See `review/reviews-CONV-046.md` §3.
+
 ## §6 Standing
 
 - **T-1 DELIVERED** at ENTAILMENT grade: S-IGNITION-ISOTROPIC (§1), instrument `scripts/3820_t1_icosahedral_isotropy.py`.

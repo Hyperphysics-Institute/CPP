@@ -58,6 +58,14 @@ Composition (3822) and DM clumping (3884) *happened* to fail the isocurvature bo
 
 **Both halves travel together or neither is honest.**
 
+## §5b PANEL RULING (CONV-046, Patch 3914) — this is NOT a cleared test
+
+One return objected that C-5's clearance table read as *"eleven greens and one footnote."* **Sustained.**
+
+> **Adiabaticity is NOT cleared. It is an UNMET cross-lane condition with a ~30× failure behind it.** The qDP-as-opposite-charge-pair thermalisation argument is **a claim, not a sanction.** **If the SM-sector check fails, C-5 dies.**
+
+**Amended presentation:** adiabaticity is removed from C-5's cleared-test table and carried in its own **unmet-condition block**. See `review/reviews-CONV-046.md` §3.
+
 ## §6 Standing
 - **C-5 exposed to the isocurvature test by construction**; saturation amplifies the exposure.
 - **Would fail by ~30× (β ≈ 90%) if the compositional mode survived.**

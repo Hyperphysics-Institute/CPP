@@ -54,6 +54,16 @@ That distinction is what EU-1 currently leaves implicit, and a reader will get i
 
 **That is worth noting because the alternative was available.** Having established that κ₀ carries a departure from Friedmann, one could construct a story in which the departure factor is some ratio of substrate scales and land on 10⁻⁷. **I did not, and the reason is §3: the object is not the kind of thing a formula-scan reaches.**
 
+## §6b AMENDED BY PANEL (CONV-046, Patch 3914) — "permanently" STRUCK
+
+**Two of five returns rejected this document's strongest sentence**, on grounds the three affirming returns did not address: *"we have not derived X" is not "X is underivable"*; and **"permanently foreclosed" contradicts the package's own Exit 1** (*the engine's form may be incomplete*) — **both cannot be true.** The document was **internally inconsistent**, and **a 3–2 majority cannot make a contradiction consistent.** **The minority is adopted on logic, not on count.**
+
+**AMENDED TEXT, replacing §4's ruling:**
+
+> **A_s is foreclosed GIVEN THE PRESENT ASSIGNMENT H ∝ μ. It becomes pending if that assignment is derived or replaced. κ\* is an asserted, calibration-level coupling — NOT minted as an axiom in this round.**
+
+**What is NOT struck:** that κ\* cannot be derived without first deriving H ∝ μ; that H ∝ μ is a deliberate departure from Friedmann carrying an 83-order mismatch; and that **A_s is not predicted as the framework stands.** Those were never in dispute and all five returns accepted them. **What is struck is the modal claim about the future**, which no return established. **`axiom-registry.md` remains untouched.** See `review/reviews-CONV-046.md` §2.
+
 ## §7 Standing
 - **κ\* RULED EFFECTIVELY AXIOM-LEVEL** — the relation it coefficients (H ∝ μ) is **an assignment**, per the corpus's own wording.
 - **H ∝ μ is NOT Friedmann**: Friedmann demands ρ/M_Pl⁴ = 1.12×10⁻⁹; the substrate carries 1.8×10⁷⁴ — **83 orders**. **κ₀ carries the departure.**

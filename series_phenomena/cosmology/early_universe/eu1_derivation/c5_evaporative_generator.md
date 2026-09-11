@@ -87,6 +87,16 @@ All six of C-5's own debts are engaged: **referent** (3890), **reservoir** (3892
 
 > **HONEST FINAL POSITION — both halves or neither:** *there is now a source with the right spectrum — Gaussian, scale-free, conditionally adiabatic, with a derived microphysics — **and** the normalisation is not derivable as the framework stands.* See `adiabaticity.md`.
 
+## §7c PANEL AMENDMENTS (CONV-046, Patch 3914)
+
+**Accepted 5/5 as a live candidate for source and spectrum.** Three amendments bind:
+
+1. **Adiabaticity is NOT a cleared test.** It leaves the clearance table and becomes an **unmet cross-lane condition** with a ~30× failure behind it. **If the SM-sector check fails, C-5 dies.**
+2. **The near-miss figures (1.0% at 3898, 2.2% at 3902) must NOT be quoted separately** — in EU-1, the registry, or any founder-facing summary. **One correlated chain; hypothesis-generating, not confirmatory.**
+3. **C-5 is a different CLASS from the seven closed candidates** (a rate, not a conserved density), so its liveness is **compatible with the 3847 closure and is not a reopening of it.**
+
+**Unchallenged by any return:** C-5's structural escape from the no-go. What was challenged was the rhetoric around it. See `review/reviews-CONV-046.md`.
+
 ## §8 Standing
 - **C-5 REGISTERED as a live candidate** — the first since C-4 was withdrawn at 3847.
 - **It can break the 3835 no-go**, on the corpus fact that AP-4 emits **per GP, not per CP**.

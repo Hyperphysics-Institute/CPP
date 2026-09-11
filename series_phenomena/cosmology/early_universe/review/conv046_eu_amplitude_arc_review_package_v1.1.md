@@ -1,4 +1,8 @@
-# CONV-046 — Review Package v1.0
+# CONV-046 — Review Package v1.1 (amended after panel return, Patch 3914)
+
+> **v1.1 changes, all from the returns:** the 3847 closure is **scoped to a class**; **"permanently foreclosed" is STRUCK** and κ\* is **not minted as an axiom**; **adiabaticity leaves the cleared-test table**; **T-1 counts once**; the **near-miss percentages must not be quoted separately**. Adjudication: `reviews-CONV-046.md`.
+
+# CONV-046 — Review Package v1.0 (superseded text below)
 ## The EU amplitude arc: a closed negative, two delivered targets, a changed headline, and one live candidate whose normalisation is foreclosed
 
 **Prepared: 11 September 2026. Lane: EU. Covers Patches 3816–3911 (Sessions 169–214).**
@@ -98,7 +102,7 @@ Every closed candidate failed on one of exactly two things — **initial-slice p
 | **affinity asymmetry** | **DERIVED from charge content** — the strong channel needs both partners, so E-dominant is indifferent and Q-dominant discriminates | 3902 |
 | **f_E/f_Q** | **α_s/α = 2.70** vs a predicted **2.76**, band [1.7, 6.5] — inside | 3902 |
 | **model limit** | **re-stacking-dominated holds at the pivot** (f(pivot) ≤ 5×10⁻⁶ for any n₀); crossover in the last 1–3 e-folds | 3910 |
-| **adiabaticity** | **CONDITIONAL PASS** — would fail by **~30×** (β ≈ 90%), but a qDP is **two qCPs of opposite charge**, so the variation is **net-neutral vacuum structure** and **thermalises away** | 3908 |
+| ~~adiabaticity~~ | **REMOVED FROM THIS TABLE (v1.1).** **NOT a cleared test** — an **unmet cross-lane condition** with a ~30× failure behind it. The thermalisation argument is a claim, not a sanction. **If the SM-sector check fails, C-5 dies.** | 3908 |
 
 ### §4.4 What C-5 does not clear, and its one condition
 > **Condition (cross-lane, unmet):** does the sea's q:e composition carry **any net conserved quantum number**? **If it shifts baryon or lepton number, the ~30× isocurvature failure stands and C-5 dies.** SM-sector question; needs sanction.
@@ -117,7 +121,9 @@ Every closed candidate failed on one of exactly two things — **initial-slice p
 
 **And H ∝ μ is not Friedmann.** The field equation with the observed H demands ρ/M_Pl⁴ = 1.12×10⁻⁹; the substrate carries **1.8×10⁷⁴**. **An 83-order mismatch — the vacuum catastrophe.** **The assignment is a deliberate departure, and κ₀ carries it. Its smallness is the price of not being Friedmann.**
 
-> ### **Therefore: A_s is not predicted by the framework as it stands, and C-5's amplitude is permanently a consistency check — foreclosed, not pending.**
+> ### **AMENDED (v1.1): A_s is not predicted by the framework as it stands. It is foreclosed GIVEN THE PRESENT ASSIGNMENT H ∝ μ, and becomes pending if that assignment is derived or replaced. κ\* is an asserted, calibration-level coupling — NOT minted as an axiom in this round.**
+>
+> *The original sentence read "permanently a consistency check — foreclosed, not pending." Two returns showed it contradicts Exit 1 of §7.1, which the same package lists as live. Both cannot be true; the modal claim is struck. See `reviews-CONV-046.md` §2.*
 
 **This is a panel question:** the corpus discusses κ\*'s *"status as an axiom-level constant."* **Formally elevating it is a maintainer/panel act, not a worker's**, and this lane has ruled it *effectively* axiom-level without touching `axiom-registry.md`.
 

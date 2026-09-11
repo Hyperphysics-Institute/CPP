@@ -47,6 +47,14 @@ The amplitude sector's full inventory, and its state:
 
 §4 recorded that the amplitude sector had **no surviving candidate**. That stood for 41 patches. **C-5, the founder's evaporative generator (3888), is now registered as live.** It is structurally unlike all seven above: it runs **during inflation** and generates **continuously**, and it can break the 3835 no-go on a corpus fact — **AP-4 emits per GP, not per CP**, so evaporation from superposition raises the *perceived* count without changing the *conserved* one, making the source a **rate**. **Not adopted and not reported as working**; its viability gates on whether n̄ counts CPs or occupied GPs. See `c5_evaporative_generator.md`.
 
+## §4c SCOPE RESTRICTED BY PANEL (CONV-046, Patch 3914)
+
+Two returns required the closure be **scoped to a class** rather than stated flat. **Amended reading:**
+
+> **No viable amplitude from conserved-count, initial-slice, or post-inflation active sources in the substrate-orientation sector. The obstruction is structural FOR THAT CLASS.**
+
+**Do not write "the amplitude problem is closed" without the class clause.** **C-5 is a different class (a rate, not a conserved density); its liveness is COMPATIBLE with this closure and is not a silent reopening of it.** The three exits of §6 stay listed. See `review/reviews-CONV-046.md` §3.
+
 ## §5 What this does NOT touch (verify T8)
 - **PRED-C-96 stands.** The tilt reads the adopted pivot N_rem = 57 and has been untouched through this entire arc. Nothing here is a refutation of n_s, and it must not be reported as one.
 - **The e-fold budget is a separate, still-open problem** (~10.5 short, 3823; the VSL horizon computation is still owed).
