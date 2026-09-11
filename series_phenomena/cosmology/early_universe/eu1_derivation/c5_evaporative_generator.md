@@ -79,6 +79,14 @@ The amplitude question is **two** questions, and this document conflated them. *
 
 That is a materially better position than any of the seven ever reached. It is not a solution.
 
+## §7b C-5's LEDGER CLOSED (Patch 3908)
+
+All six of C-5's own debts are engaged: **referent** (3890), **reservoir** (3892), **correlation length + Gaussianity** (3896 — cleared by 11 orders), **saturation brake** (3898 — consistent), **δ_patch** (3900 predicted, 3902 tested, inside band), **adiabaticity** (3908 — **conditional pass**: qDPs are opposite-charge pairs, so the compositional variation is **net-neutral vacuum structure** and **thermalises away**; it would have failed by **~30×** had it survived). **The normalisation was never C-5's** — κ\* ruled axiom-level (3904/3906).
+
+**One condition outstanding, cross-lane:** SM-sector confirmation that the sea's q:e composition carries **no net conserved quantum number**. **If it shifts baryon or lepton number, C-5 dies.**
+
+> **HONEST FINAL POSITION — both halves or neither:** *there is now a source with the right spectrum — Gaussian, scale-free, conditionally adiabatic, with a derived microphysics — **and** the normalisation is not derivable as the framework stands.* See `adiabaticity.md`.
+
 ## §8 Standing
 - **C-5 REGISTERED as a live candidate** — the first since C-4 was withdrawn at 3847.
 - **It can break the 3835 no-go**, on the corpus fact that AP-4 emits **per GP, not per CP**.

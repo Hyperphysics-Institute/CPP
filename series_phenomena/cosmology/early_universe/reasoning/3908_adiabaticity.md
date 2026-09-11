@@ -1,0 +1,17 @@
+# Reasoning capture — Patch 3908: adiabaticity, and a pass that is not mine
+
+*Session 213, 11 Sep 2026, EU lane. Finding: `eu1_derivation/adiabaticity.md`. Verify 10/10.*
+
+This was the test I expected the candidate to fail, and I set it up that way deliberately — working out the failure magnitude before looking for an escape, so that the escape would have to be worth something.
+
+The exposure is structural rather than incidental, which is what makes the test sharp here. Composition and dark-matter clumping merely happened to run afoul of the isocurvature bound; this candidate requires compositional distinctness between patches in order to work at all, so a spatial variation in the species ratio is built into it. And the saturation argument that rescued the patch fluctuation two sessions ago makes the exposure worse rather than better: if the sorting runs to completion inside a correlation volume, then the composition varies wholesale just as the unstacking fraction does, and the two coarse-grain identically.
+
+The magnitude came out at three times the curvature perturbation, which is an isocurvature fraction near ninety per cent against an observational bound of a few. A thirty-fold failure. I wrote that down before going any further, because a candidate this far along is exactly the one I would be tempted to rescue first and quantify afterwards.
+
+The escape is real and it is not mine. A strong-dominant patch produces more strong-species pairs, and a pair is two constituents of opposite charge oscillating together — net-neutral. So a strong-rich patch has more pairs, not more net charge, and the variation is in vacuum structure rather than in any conserved quantity. That distinction is the whole of it: isocurvature in a conserved charge survives thermalisation and is tightly bounded, while isocurvature in vacuum composition equilibrates away at reheating and leaves only the adiabatic component by recombination.
+
+What I like about this is that the rescue is not bolted on. Pair-neutrality is not an extra assumption introduced to save the candidate; it is what the founder's own definition of the pair says. I checked the wording rather than relying on memory, and it is explicit — opposite charge, landing together, oscillating. So the candidate passes the test that killed two of its predecessors, and passes for a reason internal to the mechanism.
+
+I stopped short of calling it a pass. There is one thing I cannot establish from this lane: whether the sea's species composition carries any net conserved quantum number. If a strong-dominant patch shifts baryon or lepton number rather than merely holding more neutral pairs, the thirty-fold failure stands and the candidate dies here. That is a Standard-Model-sector question and I have no sanction for it, so I wrote the result as a conditional pass with the condition stated in the sentence rather than in a footnote.
+
+With that, the candidate's own ledger is closed — six debts engaged, every one of them worked, and the seventh turning out two sessions ago never to have been its own. So I wrote the final position out in the form I want it carried: there is now a source with the right spectrum, Gaussian and scale-free and conditionally adiabatic with a derived microphysics; and the normalisation is not derivable as the framework stands. Both halves or neither. A reader who takes only the first will overstate it, and a reader who takes only the second will miss that the sector went from having no source at all to having one.
