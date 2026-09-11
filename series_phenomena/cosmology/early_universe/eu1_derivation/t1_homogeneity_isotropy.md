@@ -54,6 +54,12 @@ What *does* require the near-field relay to deliver is the **count** n̄ ≈ 10�
 
 §4 of this document states that no observable fingerprint is claimed from the ℓ = 6 residual, and **that refusal stands**. But the ℓ ≤ 5 vanishing has acquired a consequence elsewhere. C-4, the orientational pseudo-Goldstone and the only surviving ζ candidate (3839), takes its mass from the residual lattice anisotropy — normally O(1), which would make it heavy and kill it exactly as the register spring died (3812). Because the icosahedral anisotropy vanishes identically through ℓ = 5 and first appears at ℓ = 6, that mass term is sixth-order and strongly suppressed. **The lattice's exceptional isotropy is why the only viable ζ candidate can be light at all.** This is a consequence for the mode's *mass*, not for the sky — §4 is unaffected. See `c4_coupling.md` §5; the quantitative bound (ω/H ≲ 1) is owed there.
 
+## §5c FOURTH LOAD-BEARING ROLE (Patch 3880) — why the ignition does not collapse
+
+§1's exact ℓ = 1 cancellation answers a question it was not written for. The ignition state is **saturated** on CPP's own black-hole criterion (*"a black hole is the gravity at which SSV_abs saturates"*) and sits ~84 orders inside its Schwarzschild radius on GR's. It does not collapse because **motion is driven by SSV_net, not SSV_abs**: saturated SSV_abs is **time dilation, not infall**, and collapse requires a **gradient**. §1 gives **SSV_net = 0 exactly** in a homogeneous state. So **a black hole is saturated AND gradient-bearing, while the ignition is saturated and GRADIENT-FREE** — nothing pulls inward at any depth. See `escape_and_cmb.md` §2.
+
+**T-1 is now load-bearing in four independent places:** homogeneity/isotropy (here), the C-4 mass suppression (3839 §5), the idle-breaking argument (3843 §2), and non-collapse (3880). A result that keeps proving structural in unrelated places deserves the panel's attention — flagged with the CONV-046 package.
+
 ## §6 Standing
 
 - **T-1 DELIVERED** at ENTAILMENT grade: S-IGNITION-ISOTROPIC (§1), instrument `scripts/3820_t1_icosahedral_isotropy.py`.
