@@ -64,6 +64,12 @@ That distinction is what EU-1 currently leaves implicit, and a reader will get i
 
 **What is NOT struck:** that κ\* cannot be derived without first deriving H ∝ μ; that H ∝ μ is a deliberate departure from Friedmann carrying an 83-order mismatch; and that **A_s is not predicted as the framework stands.** Those were never in dispute and all five returns accepted them. **What is struck is the modal claim about the future**, which no return established. **`axiom-registry.md` remains untouched.** See `review/reviews-CONV-046.md` §2.
 
+## §6c §2 RETRACTED at 3918 — the 83 orders used the BARE inventory
+
+**§2 argued that H ∝ μ is a deliberate departure from Friedmann carrying an 83-order mismatch, and that κ₀'s smallness is "the price of not being Friedmann." RETRACTED.** The corpus has an **OBL-CC-2 derived gravitating density** (Patch 3068) — ρ_Λ = (C₄·α·η_z/2π)·ħc/(l_P²R_h²) — which **closes ~122 of the 123 orders from α and lattice geometry alone**. **§2 compared Friedmann against the BARE inventory, which is the pre-suppression number the mechanism exists to reduce.** The true residual is **O(1)–O(100) and EPOCH-INDEPENDENT** (both sides ∝ 1/R_h²), and is already the CC lane's firing falsifier **F-CLI-1**.
+
+**§4's ruling survives** — it rests on the corpus's word *"assignment"*, not on the 83 orders — as does the panel's amendment. **Only the justification falls.** See `vacuum_retraction.md`.
+
 ## §7 Standing
 - **κ\* RULED EFFECTIVELY AXIOM-LEVEL** — the relation it coefficients (H ∝ μ) is **an assignment**, per the corpus's own wording.
 - **H ∝ μ is NOT Friedmann**: Friedmann demands ρ/M_Pl⁴ = 1.12×10⁻⁹; the substrate carries 1.8×10⁷⁴ — **83 orders**. **κ₀ carries the departure.**

@@ -50,6 +50,12 @@ The engine **H_eff = κ₀·kT·ln n̄ sidesteps Friedmann**, and **κ₀ = 1.13
 
 **That is exactly why Exit 1 (derive H ∝ μ) is now the only path to a predictive A_s**, and why the panel was right to insist it stay open.
 
+## §6b THE 83-ORDER FIGURE ITSELF RETRACTED at 3918
+
+This document correctly separated the **ripple size** from the **density gap**. **But the density gap is not 83 orders.** That figure used the **bare substrate inventory**; the corpus has a **derived gravitating density** (OBL-CC-2, Patch 3068) closing **~122 of the 123 orders** from α and lattice geometry alone. **The residual is O(1)–O(100), epoch-independent, and already a firing falsifier (F-CLI-1).**
+
+**§§1–5's distinction stands** — the ripple size is still one number with no range, the density gap is still a different kind of quantity, and they still connect only through κ₀. **Only the SIZE of the gap is corrected.** See `vacuum_retraction.md`.
+
 ## §7 Standing
 - **The ripple size is 4.6×10⁻⁵, one number, no dynamic range.** The 83-order reading is **withdrawn as a misstatement of what the gap is.**
 - **The 83 orders is a ρ mismatch** — Friedmann's 1.12×10⁻⁹ against the substrate's 1.8×10⁷⁴. **The vacuum catastrophe in CPP variables; not unique to CPP.**
