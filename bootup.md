@@ -45,7 +45,7 @@ If `git clone` fails (no bash tool, network restriction, github.com unreachable)
 | Priority | File | What it gives you | Time | Don't skip |
 |----------|------|-------------------|------|-----------|
 | 1 | `bootup.md` | THIS FILE — orientation, structure, conventions | 5 min | **§3** — patch generation and commit flow. If you generate `.patch` files this session, the canonical apply macro is in §3. Do NOT reconstruct from `conversation_search`. |
-| 1.5 | `bootup.md` **§0.5** | **STANDING WORKER DISCIPLINE** — six process rules, each with its recorded cost. Read before doing any work. | 3 min | **All of it.** Handovers are superseded every session; durable process rules live HERE, not in a handover. |
+| 1.5 | `bootup.md` **§0.5** | **STANDING WORKER DISCIPLINE** — seven process rules, each with its recorded cost. Read before doing any work. | 3 min | **All of it.** Handovers are superseded every session; durable process rules live HERE, not in a handover. |
 | 2 | `programme_orientation.md` | **THE THEORY** — complete narrative from first principles through all results | 15 min | — |
 | 3 | `theory-overview.md` | Reference card — formulas, scorecard, key numbers | 5 min | — |
 | 4 | `founders_vision.md` | Thomas's physical intuition — the WHY behind every equation | 10 min | — |
@@ -106,10 +106,17 @@ instead of searching.
 | **D-4** | **A flagged check is not a performed check.** If a check is load-bearing, do it in the patch that flags it — or state plainly that the patch's result is conditional on an unperformed check. | 3816 §6 flagged the AP-4c check precisely so it "would not be assumed silently." 3820 §5 re-pointed it. 3841 §3 used the clause. **None performed it.** Flagging created the appearance of diligence without the substance. |
 | **D-5** | **Check `git log` and the id-block counter against `origin/main` BEFORE starting.** Patches you generated but Thomas has not yet pushed are not in the repo. | Twice work was silently duplicated (3816/3817, then 3839/3840 redone worse and discarded). Twice new work was nearly built on an unpushed base (3818 failed to apply for exactly this reason; 3858 was caught only because the container had reset). |
 | **D-6** | **Check whether a lane is COMPLETE before escalating against its numbers.** Working values are not determinations. | Patch 3856 built an 86-order cross-sector confrontation on the DE lane's calibrated spacing and escalated it. The founder's reply: the DE lane is not complete. Amended at 3858. |
+| **D-7** | **Resolve EVERY SYMBOL in a borrowed formula against the lane that wrote it, BEFORE using the formula for anything.** Definitions do not travel with a formula. A plausible textbook meaning is not the corpus meaning. | **Four times in one arc.** Patch 3882 invented a DM aggregate mass where a registered ring mass existed (retracted 3884, near-miss withdrawn). Patch 3890 assumed CPs were spread where the founder had stated a stacked initial condition (superseded 3892). Patch 3906 used the BARE substrate inventory where a derived gravitating density existed, reporting an 83-order vacuum gap that is really O(1)–O(100) — **the founder caught this one** (retracted 3918). Patch 3920 read R_h as 1/H where the corpus specifies a Li-analog future event horizon, and built a degeneracy, a "k = 3" requirement and a tracking-dark-energy claim on it — **retracted in full at 3922**. Three of the four fell within twenty patches. |
 
 **The common remedy.** Before reasoning forward from a clause, an item, or another lane's
-number, spend one `grep` on the thing it names. Six failures above, and in every case a
+number, spend one `grep` on the thing it names. Seven failures above, and in every case a
 single search would have prevented it.
+
+**D-7 is aimed at a different object from D-1…D-6, and that is why it was needed.** The first
+six say *search the topic*. D-7 says *resolve the symbol*. The four failures it records were all
+committed **while topics were being searched** — the search returned the right document and the
+worker still supplied a textbook meaning for a term the document defined. **When the same error
+recurs under an existing rule, the rule is aimed at the wrong object.**
 
 **One physics-side rule earned the same way.** A **derived shift is not an error bar**
 (Patch 3850): the O(α) correction had been carried for five paper versions as a symmetric
