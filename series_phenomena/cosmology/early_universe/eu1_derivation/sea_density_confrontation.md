@@ -33,6 +33,10 @@ Cross-checked a second way, independent of the density arithmetic: EU-1's diluti
 
 **But the corpus does not settle it**, and the ambiguity is not confined to this check. EU-1 says the universe "expands by **dilution of DP-Sea occupancy** on a fixed lattice scaffold" — and *occupancy* is precisely ambiguous between the sea itself and the excess above it. **The referent question is load-bearing for EU-1's own dilution law**, which is the paper's central mechanism, not merely for the budget.
 
+## §4b WITHDRAWN at 3876 — the "excess above a sea" framing was the worker's, and the theory has one population
+
+§4's reading (B) posited a **non-diluting vacuum sea** with a **diluting excess riding on it**. That was introduced here to explain a numerical clash and **is withdrawn**: the theory has **one CP population spreading over a fixed lattice**, and "the sea" is what that population **is** locally once paired — not a separate reservoir. Reading (A) is independently **excluded** by the founder's own cascade (a constant-occupancy n̄ gives ln n̄ = const ⇒ n_s = 1 at 8.4σ, and the exit never arrives). **OPEN-EU-SEA-REFERENT-1 is RESOLVED at 3876**; what survives from this document is the **counting bound** (§3), restated there. See `nbar_referent_explained.md`.
+
 ## §5 Verdict (verify T8)
 > **Route 2's check is INCONCLUSIVE, and the blocker is definitional rather than numerical.** No independent pin on N_CP exists until the referent of "the sea" is fixed.
 
