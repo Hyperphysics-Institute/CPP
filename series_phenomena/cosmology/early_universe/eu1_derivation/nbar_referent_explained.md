@@ -49,6 +49,8 @@ He offers, tentatively: *"Perhaps the non-diluting n is all GPs, the entirety of
 - Then n̄ = CPs per Planck sphere **dilutes as a⁻³** — the right shape, with no "sea plus excess" needed.
 - And his phrase *"the entirety that will ever be populated"* **is the end condition**: n̄ = 1 means the CPs have spread until every Planck sphere they will ever occupy holds exactly one.
 
+**CORRECTION (Patch 3878) — the phrase below is qualified.** Saying his phrase *"is the end condition"* invited a **boundary** reading, which the physics does not have. The end condition is a **density** threshold (n̄ = 1 CP per Planck sphere): intensive, local, and saying nothing about where anything ends. It also conflates two lattice scales — one CP per **Planck sphere** is not one CP per **GP**; a Planck sphere holds ~4.3×10⁹⁶ GPs, so the CPs occupy **one GP in 10⁹⁷** at the end of inflation and one in 10¹⁸³ today. **Nothing fills up and nothing is squashed.** What survives below is the *arithmetic*, which is correct. See `no_edge_correction.md`.
+
 **It reproduces the count law exactly.** Initial volume 1 Planck sphere (the small-ball ruling, 3816); final volume N_CP Planck spheres; so the linear expansion is N_CP^{1/3} = 10²⁸ and
 
 > **N = ln(N_CP^{1/3}) = ⅓ ln N_CP = 64.5.**
