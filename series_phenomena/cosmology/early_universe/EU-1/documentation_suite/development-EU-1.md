@@ -531,3 +531,15 @@ It does not, and the reason belongs to the founder rather than to the analysis. 
 The result was nonetheless recorded as conditional, with the condition stated in the sentence rather than relegated to a footnote: confirmation is required from the particle sector that the sea's species composition carries no net conserved quantum number, since a patch that shifted baryon or lepton number would reinstate the thirtyfold failure. That lies outside this lane.
 
 With this the candidate's own ledger closes, all six of its obligations having been worked and the seventh having proved, two sessions earlier, never to have belonged to it. The position was accordingly written in the form intended to be carried forward: there is now a source with the right spectrum, and the normalisation is not derivable as the framework stands — both halves together, since either alone misleads.
+
+## Session 214 (11 Sep 2026, Patch 3910) — which limit, and the end of the lane's work
+
+The final item the lane could address without leaving it was the model caveat recorded two sessions earlier: the relation between the unstacking fraction and the affinity holds only where re-stacking dominates, and in the opposite regime the fraction saturates regardless of affinity, the ratio between patch types collapses to unity, and the amplitude chain fails with it. Which regime obtains was untested and decisive.
+
+It proved to be settled by the fraction itself, which had already been derived for another purpose. At the outset a single site is occupied per stack, so the fraction begins as the reciprocal of the stack number, and its logarithm runs linearly in the remaining e-folds. At the observational pivot, therefore, the fraction lies somewhere between a millionth and ten to the minus twenty-second depending on the stack size — vanishingly small in every case, placing the system deep in the regime where the relation holds. The conclusion is independent of the stack number, which remains the quantity the founder does not recall and which has now been carried rather than chosen for a fifth consecutive session.
+
+The boundary was then located, since a result holding only marginally would be worth little. Setting the fraction to a half places the transition within the final one to three e-folds, while every observable mode departs the horizon at fifty to sixty — more than an order of magnitude of separation.
+
+The system does traverse both regimes, and must: the count law closes only if the fraction reaches unity by the end. The initial instinct was to regard that as a defect, since one regime is fatal to the mechanism, but it is nothing of the sort. The transition is precisely what terminates the unstacking, and it arrives long after the observable window has been laid down.
+
+What this closes is a caveat rather than an obligation, and the distinction was preserved. The lane's own work on the candidate is now complete, both outstanding items lying elsewhere — a particle-sector question that gates the adiabaticity result, and the assignment that renders the normalisation axiom-gated. The two-sided headline accordingly stands unchanged.
