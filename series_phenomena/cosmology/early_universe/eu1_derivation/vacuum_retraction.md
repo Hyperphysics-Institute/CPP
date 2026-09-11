@@ -59,6 +59,12 @@ This is the session's real content.
 
 **That is a tractable cross-lane problem with a stated target, not a mystery.** The two objects are far closer than 3906 implied, they have the same R_h dependence, and the residual between them is the CC lane's own open falsifier. **The only path to a predictive A_s just acquired a concrete shape.**
 
+## §6b §6 CORRECTED at 3920 — ρ_Λ cannot supply κ₀
+
+§6 called Exit 1 *"a tractable cross-lane problem with a stated target: reconcile the engine with the CC lane's derived ρ_Λ."* **Too optimistic.** Tested at 3920: putting ρ_Λ into Friedmann gives **1 = k/3** with **R_h cancelling exactly** — **the equation is DEGENERATE and determines no scale.** So **ρ_Λ cannot supply κ₀**, and the engine does a job ρ_Λ cannot do. **They are not competitors.**
+
+**But the degeneracy is a stronger result than the reconciliation would have been:** CPP's vacuum density is **automatically self-consistent Friedmann form at every epoch**, so **the whole vacuum problem is ONE dimensionless number** (k = 3 required, 0.0288 derived) — and **ρ_Λ ∝ H² means dark energy TRACKS, w ≠ −1, testable now.** See `degeneracy.md`.
+
 ## §7 Standing
 - **3906's 83-order claim RETRACTED.** It used the **bare inventory**; the corpus has a **derived gravitating density** closing ~122 of 123 orders.
 - **The residual is O(1)–O(100) and EPOCH-INDEPENDENT** (both sides ∝ 1/R_h²).
