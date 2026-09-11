@@ -63,6 +63,10 @@ and the observed amplitude requires
 - The **eDP pair-swapping** channel (3894), which destroys correlation as fast as the q-channel builds it — a natural competing rate.
 - **Horizon exit itself**, if the affinity's build-up is slower than 1 PSR per Moment.
 
+## §5b THE BRAKE DERIVED at 3898 — consistent, not confirmed
+
+§5 named the **eDP pair-swapping channel** as the first place to look. Worked at 3898: the corpus fixes no swap rate, so it was **derived** — the swap is **electromagnetic**, so **Γ_swap ~ α**, and ballistic growth at **1 PSR/Moment** (protocol, 3862) against a constant decay saturates at **ℓ = 1/Γ = 1/α = 137.0 PSR** against this document's requirement of **138.4**. **Agreement 1.0% — but the requirement carries δ_patch = O(1) and spans 87–220, so 1/α merely sits inside the band. CONSISTENT, NOT CONFIRMED**, and the worker noticed the coincidence **before** finding the reason (disclosed at 3898 §5). **The gate is now: compute δ_patch from the dynamics.** See `swap_brake.md`.
+
 ## §6 Standing
 - **The bare correlation length is 1 PSR** — fixed by AP-4/AP-4c, not estimated.
 - **GAUSSIANITY CLEARS** at any relevant range: mode kurtosis 7×10⁻¹² at the bare range, 1.9×10⁻⁵ at the target. **0730's wall does not apply.** **First test in this arc a candidate has passed that killed a predecessor.**
