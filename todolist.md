@@ -230,8 +230,8 @@ The Session 36 P1 audit found that all originally-P1 items except TODO-002 were 
 - ~~**FP lane — the existential gate on C-5.**~~ **CLOSED AS REFRAMED, Patch 3934** — the question was ill-posed (B and L are not fundamental in CPP, SF-2) and the freeze-out kinetics it needs are not on file in the FP/DM lane either (S3a Route α blocked); condition restated as a photon-genesis question, **OPEN-EU-PHOTON-GENESIS-1** (non-blocking, search mode), founder's candidate mechanism registered. No FP-lane action required. *Original text:* *Does a local enrichment in Q-dominant SCPs shift η_B or the lepton asymmetry, or is the Q:E composition orthogonal to the leptogenesis sector?* **Framed in FP's terms at `series_phenomena/cosmology/early_universe/review/eu_outbound_questions.md` §1.** If it carries net B or L, **C-5 dies by ~30×**.
 - **CONV-046 dispatch** — package **v1.1** (amended after the panel return), economy audited at 3926. `.../early_universe/review/conv046_eu_amplitude_arc_review_package_v1.1.md`.
 - **The amended DE escalation** (3858) — the counting bound, re-pointed at DE-lane completion.
-- **`cosmic_web_generation_constraints.md` owed piece 1** (3833).
-- **`DM_project_map.md` is STALE** on the DM particle's identity (3884) — cross-lane, never edited.
+- ~~**`cosmic_web_generation_constraints.md` owed piece 1** (3833).~~ **DONE Patch 3935** — annotated: piece 1 discharged as blocker (0729 citation expired at 0778); piece 2 → OPEN-EU-PHOTON-GENESIS-1.
+- ~~**`DM_project_map.md` is STALE** on the DM particle's identity (3884) — cross-lane, never edited.~~ **DONE Patch 3935** — staleness banner added naming the 3426 ring identity; body left for the DM lane.
 
 **Owed by Isak (mechanical):**
 - **Recompile EU-1 at V1.6** — **two versions behind**; and GR-2 at V2.11.

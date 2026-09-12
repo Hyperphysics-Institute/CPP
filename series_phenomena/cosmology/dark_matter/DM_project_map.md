@@ -1,6 +1,8 @@
 # DM Project Map — arc state, conditionals, and cross-window dependencies
 
 **Maintained in:** `series_phenomena/cosmology/dark_matter/` (DM lane). **Last updated:** Session 156, 10 June 2026 (Patch 0845).
+
+> **STALENESS BANNER, Patch 3935 (11 Sep 2026) — read before citing this map.** This file has not been updated since Patch 0845 (10 Jun 2026) and is **stale on the DM particle's identity**: CPP's DM candidate is the **16-plane ring at 11.26 GeV**, founder-registered 25 Aug 2026 at Patch 3426 (`founders_voice/founder_registration_ring_16planes_and_memoryless_substrate_2026-08-25.md`, repo root), with DM-1 at v1.8, DM-2 at v1.0 and DM-3 at v1.2 per `paper_catalog.md`. An EU-lane document (dm_clumping_cmb.md, Patch 3882) quoted this map's aggregate-mass framing and had to be retracted at Patch 3884 as a result. **For current DM-lane state use `frontier_sectors/DM.md` (if present), `paper_catalog.md`, and the DM-lane handovers (`ls handovers/ | grep dm`); treat every section below as a June-2026 snapshot.** Banner added under PD-006 as the cross-lane maintainer act flagged at 3884; body deliberately not rewritten (that is the DM lane's to do).
 **Purpose:** one place to see where the DM identification program stands, what DM-1 is conditional on, and which parallel window (900 chirality / 1000 Project C / 1100 cosmological constant) bears on each dependency. Inferred from corpus structure; confirm against the live windows.
 
 ---

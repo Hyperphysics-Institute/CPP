@@ -71,6 +71,12 @@ the viscosity ordering must be checked against this (high-viscosity in the early
 halo densities — the §6c Gate-1 consistency caveat).
 
 ## The owed pieces (CONJ-COSMO-3 falsification/derivation path), in leverage order
+
+> **ANNOTATION, Patch 3935 (11 Sep 2026) — status of the three pieces against what has landed since Session 153.** Enacted under PD-006 as the maintainer correction that Patch 3833 flagged but did not perform (cross-lane, charter bar 4). Text below preserved unaltered (anti-erasure).
+> - **Piece 1 is DISCHARGED as a blocker.** The citation "Patch 0729 currently forecloses it" expired four days after this file was written: Patch 0778 (6 Jun 2026) promoted EU-1, whose engine is a quasi-de Sitter phase (H_eff ∝ N_rem ⇒ ε = 1/N_rem = 0.0175, w = −0.988; PRED-C-96 is its tilt). 0729's no-go stands in its own scope (the ZBW/GP-packing fluid, w ∈ [0, ⅓]) and does not cover the count-driven boost. See `research_frontier.md` at Patch 3833 and `eu1_derivation/during_inflation_generator.md`. What remains missing for generation is not the background but a light field (T-3a) — subsequently characterised at Patches 3816–3932 as a class-scoped negative with one live candidate, C-5 (`../../../handovers/2026-09-11_EU_ARC_MASTER_HANDOVER_3816-3932.md` §3–§4).
+> - **Piece 2 is now the same question as OPEN-EU-PHOTON-GENESIS-1** (Patch 3934, `eu1_derivation/photon_genesis_condition.md` §2): whether a q:e compositional perturbation modulates total ρ (adiabatic) or the species ratio (isocurvature) reduces to whether energy release and baryon yield scale identically with local composition. The founder's photon-genesis picture (founders_voice/3934) is the registered candidate. Not discharged; owned there, not here.
+> - **Piece 3 unchanged** — the 0730 toy stands; the species-ladder/fractal-cascade proposals were re-tested at 3886 and remain processing, not generation (non-Gaussian by 10²–10³ in excess kurtosis).
+> **Net:** CONJ-COSMO-3's path is no longer walled off at piece 1; it is gated at piece 2 (photon genesis) and piece 3 (Gaussianity of a CPP-specific cascade).
 1. **A near-constant-H epoch** — the blocker; everything downstream presupposes it; Patch 0729 currently forecloses it.
    Attacking this is Gate-1-adjacent (the c08 closed field equation) and is the only thing that can reopen generation.
 2. **Species-agnostic total-density modulation** — show the qCP-bonding perturbation perturbs total ρ, not the species
