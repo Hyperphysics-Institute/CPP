@@ -47,3 +47,5 @@ Answers set the transition graph. Rates are written only after that.
 
 ---
 **Status update, Patch 3509:** Q1 and the landing-bias follow-up answered (`founders_voice/3509_kinetics_charter_answers_part1.md`); Q2 truncated in transmission, to be completed; Q3, Q4 outstanding. Transition rule for step (a) fixed in words: per-Moment random hop with affinity-biased landing (strong channel, polarity-blind), no cohesion, release unmetered. H1 removed from step (a). C-5 debt 3 (3892) specified at the founder's channel; functional forms still this project's content.
+
+**Status update, Patch 3510:** all four §7 questions answered (`founders_voice/3510_…part2.md`). Transition graph fixed in words: `kinetics1_transition_graph.md`. (a)–(c) one Planck-epoch process with pairing cut off by dilution; (d) later, low occupancy, where H1 applies. Fork §2 registered (residue vs excess). **Next: the first computation (graph §3) — residue fraction vs local occupancy under the count-law dilution — read against D1.**
