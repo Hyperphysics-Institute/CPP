@@ -33,3 +33,13 @@ Composition drives energy, so it is itself a curvature source: ζ_comp = ¼c_E·
 
 ## §6 Standing
 OPEN-EU-PHOTON-GENESIS-1 → **OPEN, sharpened**: closure = an independent value of p (requires the pairing-kinetics framework NB-S3a-1 names, a registered project in its own right, DM/FP lane) *or* an independent value of ε from a collision-channel model, checked against the band. Non-blocking. **Founder question standing (physical picture, no computation asked):** when unpaired +qCPs freeze out of pairing, does doubling the local qCP density roughly double the survivors, leave them unchanged, or something in between?
+
+---
+## §7 Addendum, Patch 3937 — the founder's chain selects the linear model, and the collision-rate shape drops out
+The founder's clarification (founders_voice/3934 §4) does two things to §1–§3.
+
+**(a) The release model is now selected, not bracketed.** Photons are produced by *kinetic collisions* of qDP-entities. Under complete thermalisation (agreed this session), collisions are the mechanism that transfers energy to the sea, not the source of it: they fix the *rate* of thermalisation, not the *total*. The total a region can thermalise is its entities' kinetic-energy reservoir, linear in their number whatever the collision rate's dependence on density — so the founder's stated uncertainty about "the shape of the proportionality" does not enter. The reservoir per side is what the binding release put into motion, i.e. the α_s-vs-α structure 3902 derived: **ε = 2.70 and the linear model apply; the band is p ∈ [0.21, 0.48].** The pair-statistics bracket survives only for incomplete thermalisation, set aside.
+
+**(b) p acquires a qualitative expectation from the chain's own structure.** The baryon precursors are escapees that have not paired by the time aggregation locks. Doubling local qCP density doubles the escapees (linear) and speeds their pairing (quadratic in density), so the unpartnered residue should grow **sub-linearly and non-zero** — the shape the band requires. **Expectation, not result**: no rate model is built (NB-S3a-1 stands), and whether the exponent lands inside [0.21, 0.48] rather than merely below 1 is exactly what a registered pairing-kinetics framework must decide.
+
+Standing unchanged: OPEN-EU-PHOTON-GENESIS-1 open, sharpened; C-5 conditional pass; nothing reported as working.
