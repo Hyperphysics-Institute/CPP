@@ -38,3 +38,5 @@ The founder's 11 Sep picture (founders_voice/3934) puts photon energy release on
 - TODO-3930-EU "route the FP question": **closed — reframed**, no FP-lane action required. `eu_outbound_questions.md` §1 annotated, not rewritten (anti-erasure).
 - 3928 §1.1 wording "owns η_B ... at zero free parameters": **corrected** by annotation.
 - Wording rules: all nine of the master handover honoured; no number retracted here; 3920 not cited; "83 orders" absent.
+
+**Worked at Patch 3936:** see `photon_genesis_passband.md` — the condition reduces to a pass-band in the inventory exponent p at the corpus-anchored release ratio ε = 2.70; both naive endpoints fail by 3–5×, not 30×; p not computed (NB-S3a-1).
