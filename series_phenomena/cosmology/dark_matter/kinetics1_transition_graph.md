@@ -19,7 +19,7 @@
 2. **Excess reading:** if pairing ran to completion, the leftover would be the + over − *excess*; with the χ handle a uniform substrate constant, n_B ∝ n_q, p = 1, and C-5 fails by ~5×.
 **Rule for the framework:** compute the *residue*; the chirality tilt acts on what the residue *becomes* (which sign's leftovers are consumed), not on the residue's size. Any worker who finds p → 1 must first check they have not slid to reading 2.
 
-## §3 The first computation, now specifiable (not performed here)
+## §3 The first computation, now specifiable — **PERFORMED at Patch 3512:** `kinetics1_residue_computation.md` (D1′ read; D1 reduced to the terminal dilution condition; C-5 conditional)
 Residue fraction of one species under affinity-biased Poisson landing, with occupancy falling by the count law. Inputs, all registered: occupancy n̄ and its dilution (3890, the count law); per-GP emission (AP-4); the Q–Q vs Q–E/E–E landing asymmetry (3902, α_s vs α); the Moment as the step. Output: U_q(n_q) and its local exponent p, read against [0.21, 0.48] per charter D1. **No cross-section is invented; there is no σv** — the founder's picture replaces σv with a landing probability, which is what makes this tractable under PD-007. The expansion rate entering the dilution must be the engine's H ∝ N_rem form, not A_s-normalised (charter §6).
 
 Second computation, after the first: the qDP population at cutoff (feeds the dial x, D3) — the same calculation read for the paired rather than the unpaired species.
