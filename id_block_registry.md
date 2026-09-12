@@ -22,7 +22,7 @@ consumed while `DMDE.md` had reserved 3424 for DM/DE).
 
 | Lane | Block | Status | Sector file |
 |---|---|---|---|
-| **DM** (dark matter) | **3500–3599** | **ACTIVE** — opened at 3500; highest used 3510 (11 Sep 2026, OPEN-DM-PAIRING-KINETICS-1: charter 3508, founder answers 3509–3510, transition graph 3510, **all written from an EU-lane window under PD-006** — recorded per the 3426 precedent; next free 3511) | `frontier_sectors/DMDE.md` (DM section) |
+| **DM** (dark matter) | **3500–3599** | **ACTIVE** — opened at 3500; highest used 3511 (11 Sep 2026, OPEN-DM-PAIRING-KINETICS-1: charter 3508, founder answers 3509–3511, transition graph 3510, fork ruling 3511, **all written from an EU-lane window under PD-006** — recorded per the 3426 precedent; next free 3512) | `frontier_sectors/DMDE.md` (DM section) |
 | **DE** (dark energy) | **3400–3499** | ACTIVE — in use to 3425 | `frontier_sectors/DMDE.md` (DE section) |
 | **GR** (relativity) | **3600–3699** | **EXHAUSTED at 3699** (G-GR-BLOCK-3600, founder, 3 Sep 2026) | `frontier_sectors/GR.md` |
 | **GR** (relativity) | **3700–3799** | **ACTIVE** — opened at 3700 (**G-GR-BLOCK-3700**, founder ruling 8 Sep 2026: "3700-3799 series open, I think. If it is, then dedicate to GR lane"); first use Patch 3700 (GR-2 V2.8); `next_id.py` taught the block at Patch 3800 (it had still reported 3600–3699 EXHAUSTED) | `frontier_sectors/GR.md` |

@@ -32,6 +32,8 @@ could not give: **U_q(consumed) = 3n_b and U_e(consumed) = 2n_b**, i.e., the fou
 availability limits baryons" is not only consistent with the ledger, it is the ledger's mechanistic completion.
 The matter-only tilt itself remains the chirality-arc input (registered strength), as before.
 
+> **ANNOTATION, Patch 3511 (11 Sep 2026):** the "no antibaryon channel" clause and the matter-only tilt above are **superseded at the founder's channel** — −qCP residue forms anti-up quarks symmetrically, annihilation follows, n_b is the post-annihilation excess (`founders_voice/3510_kinetics_charter_answers_part2.md`, fork ruling). The retro-predictions in this paragraph were derived under the withdrawn clause and are **to be re-derived** (OPEN-DM-PAIRING-KINETICS-1 charter D4). Text preserved unaltered (anti-erasure).
+
 ## 3. Pre-registered readings (mapped to the frozen charter branches; committed now)
 
 The S3 computation, when run, produces n_ring/n_b = 3·n_ring/U_q with a propagated uncertainty band (E_qq
