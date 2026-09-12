@@ -73,3 +73,7 @@ One return objected that C-5's clearance table read as *"eleven greens and one f
 - **Conditional pass.** **Condition: SM-sector confirmation that the sea's q:e composition carries no conserved quantum number.** Cross-lane; needs sanction.
 - **C-5's own ledger is CLOSED.** All six of its debts engaged; the seventh was never its own.
 - PRED-C-96, T-1, T-2, the count law: unaffected.
+
+
+---
+**Addendum, Patch 3934 (11 Sep 2026):** the condition named above ("no net conserved quantum number ... if it shifts baryon or lepton number") is **superseded**: B and L are not fundamental in CPP (SF-2), and the species ratio does not thermalise away (only the pairing state does). The condition is restated as a photon-genesis proportionality at `photon_genesis_condition.md` §2, owned by OPEN-EU-PHOTON-GENESIS-1. Status unchanged: **conditional pass**.

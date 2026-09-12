@@ -8,6 +8,8 @@
 
 ## §1 TO THE FP LANE — does the Q:E composition touch the leptogenesis sector?
 
+> **ANNOTATION, Patch 3934 (11 Sep 2026): §1 is SUPERSEDED — closed as reframed, not answered.** The question had no object (B and L are not fundamental in CPP, SF-2 v1.0); the paired-qDP inference below is the founder's own ruling S3-M1 (2520); and §1.1's claim that the FP lane "owns η_B via leptogenesis at zero free parameters" overstates `predictions.md` — η_B is the empirical *anchor* for Δp_LR = χ/6, not an FP-lane derivation. The correctly stated condition and its open item are at `../eu1_derivation/photon_genesis_condition.md` (OPEN-EU-PHOTON-GENESIS-1). §2 (Exit 1 criteria) is unaffected. Text below preserved unaltered (anti-erasure).
+
 ### §1.1 What is already on file, so this is not asked blind
 **D-7 applied before drafting, and it removed half the question.** The corpus states the sea is **net-neutral and colour-neutral** — *"there is no charge obstruction to a muon neutrino being a qDP."*
 
