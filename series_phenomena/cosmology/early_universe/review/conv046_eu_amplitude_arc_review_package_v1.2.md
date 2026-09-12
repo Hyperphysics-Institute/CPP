@@ -1,4 +1,6 @@
-# CONV-046 — Review Package v1.1 (amended after panel return, Patch 3914) — **SUPERSEDED by v1.2 (Patch 3939) before dispatch; do not dispatch this file.**
+# CONV-046 — Review Package v1.2 (v1.1 amended after panel return, Patch 3914; v1.2 amended before dispatch, Patch 3939)
+
+> **v1.2 change (one item, Patch 3939):** the adiabaticity condition on C-5 is **restated**. v1.1 asked the SM sector whether the sea's q:e composition "carries any net conserved quantum number." That question was found ill-posed at Patch 3934 — B and L are not fundamental conserved quantities in CPP (SF-2 v1.0), and the species ratio does not thermalise away. The condition is now a photon-genesis proportionality (3934–3937): see §C-5 ledger and Question 3. **Nothing else in the package changed; the panel questions are otherwise verbatim v1.1.**
 
 > **v1.1 changes, all from the returns:** the 3847 closure is **scoped to a class**; **"permanently foreclosed" is STRUCK** and κ\* is **not minted as an axiom**; **adiabaticity leaves the cleared-test table**; **T-1 counts once**; the **near-miss percentages must not be quoted separately**. Adjudication: `reviews-CONV-046.md`.
 
@@ -102,10 +104,10 @@ Every closed candidate failed on one of exactly two things — **initial-slice p
 | **affinity asymmetry** | **DERIVED from charge content** — the strong channel needs both partners, so E-dominant is indifferent and Q-dominant discriminates | 3902 |
 | **f_E/f_Q** | **α_s/α = 2.70** vs a predicted **2.76**, band [1.7, 6.5] — inside | 3902 |
 | **model limit** | **re-stacking-dominated holds at the pivot** (f(pivot) ≤ 5×10⁻⁶ for any n₀); crossover in the last 1–3 e-folds | 3910 |
-| ~~adiabaticity~~ | **REMOVED FROM THIS TABLE (v1.1).** **NOT a cleared test** — an **unmet cross-lane condition** with a ~30× failure behind it. The thermalisation argument is a claim, not a sanction. **If the SM-sector check fails, C-5 dies.** | 3908 |
+| ~~adiabaticity~~ | **REMOVED FROM THIS TABLE (v1.1).** **NOT a cleared test** — an **unmet condition**. **v1.2 (3934–3937):** the condition is that the energy a region releases into the radiation bath and the baryons it retains (unpaired +qCPs, S3-M1) scale identically with local q:e composition. With the release ratio anchored at α_s/α = 2.70 (3902) and the founder's photon-genesis chain selecting the linear release model, C-5 passes iff the unpaired-inventory exponent p (n_B ∝ n_q^p) lies in **[0.21, 0.48]**; the naive endpoints p = 0 and p = 1 fail by ~3× and ~5× on S_B/ζ (not the 30× of 3908). p is not computable until the pairing-kinetics framework exists (OPEN-DM-PAIRING-KINETICS-1, registered 3938). **If p lands outside the band, C-5 dies.** | 3908; 3934–3938 |
 
 ### §4.4 What C-5 does not clear, and its one condition
-> **Condition (cross-lane, unmet):** does the sea's q:e composition carry **any net conserved quantum number**? **If it shifts baryon or lepton number, the ~30× isocurvature failure stands and C-5 dies.** SM-sector question; needs sanction.
+> **Condition (unmet; v1.2 wording, supersedes v1.1):** C-5's adiabaticity requires the unpaired-+qCP inventory to scale with local qCP density as n_q^p with **p ∈ [0.21, 0.48]** (linear release at ε = α_s/α = 2.70; `eu1_derivation/photon_genesis_passband.md`). The founder's chain (escapees grow linearly with density, their pairing quadratically) predicts sub-linear, non-zero p — an expectation, not a result. Owned by OPEN-DM-PAIRING-KINETICS-1 (DM lane). *v1.1 asked instead whether the composition carries a conserved quantum number; withdrawn at 3934 as ill-posed (B, L not fundamental in CPP; the species ratio is conserved and does not thermalise).*
 
 > **And the normalisation is not C-5's** — see §5.
 
@@ -155,7 +157,7 @@ Every closed candidate failed on one of exactly two things — **initial-slice p
 
 1. **Accept the amplitude closure (3847) as a characterised gap** rather than an open question — noting that **three exits remain and none is a candidate search** (the engine's form may be incomplete; a spectator from outside the substrate-orientation sector would have to arrive on independent merits; or A_s is accepted as a calibration).
 2. **Rule on κ\*'s formal status.** Axiom-level, or a derivable quantity awaiting work? **This determines whether A_s is foreclosed or pending**, and EU-1 must say which.
-3. **Accept C-5 as a live candidate for the source and spectrum**, with its normalisation κ\*-gated and its adiabaticity conditional on the SM-sector check.
+3. **Accept C-5 as a live candidate for the source and spectrum**, with its normalisation κ\*-gated and its adiabaticity conditional on the pairing-kinetics exponent landing in p ∈ [0.21, 0.48] (v1.2; the v1.1 "SM-sector check" is withdrawn as ill-posed). **Panel is also asked:** is the reduction of the adiabaticity condition to that band (3936 §1–§2, four named model assumptions) sound as a *statement of the condition*? The panel is not asked to supply p.
 4. **Rule on T-1's four-fold load-bearing role** (§3.1) — deep, or over-used?
 5. **Note the meta-warning** (§6) and weigh §4 accordingly.
 
