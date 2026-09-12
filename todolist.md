@@ -222,6 +222,18 @@ The Session 36 P1 audit found that all originally-P1 items except TODO-002 were 
 
 ## P2 — At Thomas's discretion (not blocking next paper)
 
+### TODO-3938-DM — Register and build the CPP pairing/condensation kinetics framework (NB-S3a-1) — the one unknown two lanes now wait on (registered Patch 3938, EU lane, under PD-006)
+
+**Why this entry exists:** the founder asked (11 Sep) whether this project was recorded anywhere actionable. It was not. NB-S3a-1 was named on 17 Jul 2026 (S3a, `series_phenomena/cosmology/dark_matter/relic1_s3a_uq_from_registered_anchors.md` §1: *"the CPP pairing/condensation kinetic framework (σv, rate equations vs expansion) is unregistered... Route α is closed for this campaign until that framework exists as its own registered project"*) and then lived only in eight July DM-lane handovers. Same failure shape as TODO-3930-EU. Registered here, in `frontier_sectors/DMDE.md` (OPEN-DM-PAIRING-KINETICS-1) and in `future_projects.md` (Project 00d) at the moment the second consumer appeared.
+
+**What it is:** a registered rate framework for CP pairing and DP-entity condensation against expansion — cross-sections/rates for the evaporation → re-stack-or-escape → pair → aggregate chain (founder, founders_voice/3934 §4), so that populations at lock-in are *computed* rather than back-solved. Lane: DM (3500s block) with FP input; PD-007-sensitive (rates are new constants unless derived).
+
+**Two consumers, stated so the project is not built blind:**
+1. **S3a Route α** (DM lane): derive U_q from kinetics instead of back-solving it from η_B (Route β). The retro-prediction structure of S3-M1 (2520) is the target the result must reproduce.
+2. **OPEN-EU-PHOTON-GENESIS-1** (EU lane, 3936–3937): C-5's adiabaticity passes iff the unpaired-+qCP inventory scales with local qCP density as n_q^p with **p ∈ [0.21, 0.48]** (linear release at ε = α_s/α = 2.70). The chain's structure predicts sub-linear, non-zero p; the framework decides whether it lands in the band. This is the only remaining condition on the EU lane's live amplitude candidate.
+
+**Not P1:** blocks no paper's v1.0. **Discretion item:** multi-session; the founder decides when to open it. Trigger to open: any session in the DM lane with capacity after the current DM-3 protocols, or a founder call.
+
 ### TODO-3930-EU — EU-lane owed items, Sessions 169–223 (registered Patch 3930)
 
 **Registered late, and that is the point of the entry.** This arc ran 55 sessions and put **nothing** in this file; every owed item lived in handovers, which are **superseded every session**. The founder asked where these were tracked. **They were not.**
