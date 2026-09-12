@@ -232,7 +232,7 @@ The Session 36 P1 audit found that all originally-P1 items except TODO-002 were 
 1. **S3a Route α** (DM lane): derive U_q from kinetics instead of back-solving it from η_B (Route β). The retro-prediction structure of S3-M1 (2520) is the target the result must reproduce.
 2. **OPEN-EU-PHOTON-GENESIS-1** (EU lane, 3936–3937): C-5's adiabaticity passes iff the unpaired-+qCP inventory scales with local qCP density as n_q^p with **p ∈ [0.21, 0.48]** (linear release at ε = α_s/α = 2.70). The chain's structure predicts sub-linear, non-zero p; the framework decides whether it lands in the band. This is the only remaining condition on the EU lane's live amplitude candidate.
 
-**OPENED 11 Sep 2026 on the founder's call — charter Patch 3508** (`OPEN-DM-PAIRING-KINETICS-1_charter.md`). Third consumer: the OPEN-DM-RELIC-1 reopening contract (dial x). **Next action: the founder answers charter §7 Q1–Q4 (escape vs re-stack; epoch; who pairs with whom; why a quark stays bare); then the transition graph; then rates.** Multi-session.
+**OPENED 11 Sep 2026 on the founder's call — charter Patch 3508** (`OPEN-DM-PAIRING-KINETICS-1_charter.md`). Third consumer: the OPEN-DM-RELIC-1 reopening contract (dial x). **Q1 + landing-bias follow-up answered (3509). Next action: the founder completes Q2 (epoch — his answer was cut off at "It has no cohesion. It-") and answers Q3–Q4; then the transition graph; then rates.** Multi-session.
 
 ### TODO-3930-EU — EU-lane owed items, Sessions 169–223 (registered Patch 3930)
 

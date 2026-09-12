@@ -44,3 +44,6 @@ NB-S3a-1 was named at S3a (17 Jul 2026, `relic1_s3a_uq_from_registered_anchors.m
 4. **Why a quark stays bare.** In S3-M1 a baryon takes three unpaired +qCPs. What keeps a +qCP unpaired long enough — does the hTetra scaffold capture it before a partner arrives, or does something in the stack's signal hold it?
 
 Answers set the transition graph. Rates are written only after that.
+
+---
+**Status update, Patch 3509:** Q1 and the landing-bias follow-up answered (`founders_voice/3509_kinetics_charter_answers_part1.md`); Q2 truncated in transmission, to be completed; Q3, Q4 outstanding. Transition rule for step (a) fixed in words: per-Moment random hop with affinity-biased landing (strong channel, polarity-blind), no cohesion, release unmetered. H1 removed from step (a). C-5 debt 3 (3892) specified at the founder's channel; functional forms still this project's content.
