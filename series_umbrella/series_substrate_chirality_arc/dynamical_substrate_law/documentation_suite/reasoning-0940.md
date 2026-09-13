@@ -1,0 +1,15 @@
+# reasoning-0940 (verbatim, at-patch) — L4-B vertex-uniformity
+
+**Lane:** chirality (09xx), Patch 0940, 13 Sep 2026. **Artifact:** `l4b_vertex_uniformity.md`. **Verify:** `code/0940_l4b_vertex_uniformity.py` (7/7).
+
+Came to L4-B after a D-2 check killed the item I had named. I had said "start L4-D next" from the 0933 flagship scope and the 0936 review, both of which read "L4-D carved as the first sub-target, UNEXECUTED." Both predate Patch 0647: MERGE-2 resolved L4-D's chirality half (δ is P-even/T-odd — the arrow — so the MERGE-1 route was a parity category-mismatch; verdict M1-χ), and 0661 answered the residual OPEN-CHIR-2a at W3 with its upgrade pinned to the capacity engine. Nothing in L4-D is workable without F.2. FP.md names L4-B the cleanest F.2-free target; took that.
+
+First instinct was the wrong proof: "A11 gives vertex-transitivity, so no vertex can be distinguished, so r0 and δ are constants." Built the isometry group to check it (order 14400, single orbit, stabiliser 120 — T2, T3) and then realised the argument is about the wrong object. Mechanism A lives in (substrate, n̂), and n̂ is a fixed global direction: the moment you fix it, transitivity is gone — nine shells by v·n̂, populations 1/12/20/12/30/12/20/12/1 (T4). A vertex-transitivity argument applied to the pair is simply false.
+
+What saves it is finer: Stab(n̂) = I_h is transitive on each shell (T5). So the residual group's orbits ARE the level sets of v·n̂, and every invariant function of a vertex is a function of that one number — there is no finer invariant available to carry a vertex label on r0 or δ. And v·n̂ is not a smuggled channel: it is what MA.1's ê·n̂ already is. So the parameters are constants because the only thing that could vary them is the thing the law already states explicitly.
+
+Checked the corollary rather than asserting it (D-4): first-shell {ê·n̂} multiset constant within a shell, distinct across all nine (T6); MA.2's Σ ê(ê·n̂) at any v is the group image of its shell representative's (T7). That also surfaced a wording problem in F.1 §4.3 — "vertex-independence for any host vertex" reads as though the current is the same everywhere, which is false; the construction is the same, the value tracks the shell. Flagged as a paper wording correction, not a number.
+
+Did not claim more than landed: L4-A (the form), L4-C (the antisymmetric construction) and L4-E (magnitude) are untouched, so Mechanism A is not discharged and V3/W3 stay conditional. Deliberately did not register a theorem — the natural registry unit is L4-A+L4-B+L4-C together.
+
+One script bug worth recording: the first run failed T2/T3/T5/T7 because the reference frame was built from the host plus three linearly-independent vertices chosen by rank over the whole vertex list, while every target frame was built from a vertex plus three of its own neighbours; the Gram matrices then never matched and no isometry was ever found. Fixed by building the reference frame from the host's own neighbours. Worth noting because a "0 isometries found" result reads like a physics finding and is a coding error.
