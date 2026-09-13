@@ -8,7 +8,7 @@
   Master dashboard: research_frontier.md
 -->
 
-## Substrate Chirality Arc (CHIR) — 6 problems (1 partially resolved) + 2 resolved
+## Substrate Chirality Arc (CHIR) — 5 problems (1 partially resolved) + 3 resolved
 
 The CHIR sector tracks the chirality programme of the Substrate Chirality Arc
 (`series_umbrella/series_substrate_chirality_arc/`). It sits downstream of the
@@ -238,7 +238,7 @@ OPEN-CHIR-2a / F.2; the δ–ε magnitude to OPEN-FP-F1-2 sub-target L4-E.
 
 ### OPEN-CHIR-QDP-4STATE-1: the four-state extension of Finding C-W46 (THEO-SD-CHIR-2) — cross-lane item from OPEN-DM-SIGN-SELECTION-1 reading E1
 
-**Status:** OPEN (registered 13 Sep 2026, Patch 0936, chirality lane). **Owner for closure:** SD lane (Capotauro / THEO-SD-CHIR-2). **Consumer:** DM lane (E1 of `OPEN-DM-SIGN-SELECTION-1`; the SM-2 §10 corrigendum owed by 3531 carries the same sign).
+**Status:** **RESOLVED** (13 Sep 2026, Patch 0937, chirality lane under PD-006; Layer 2/3 bookkeeping, single pass) — `chirality_derivations/review/0937_c_w46_flags_f1_f3_closure.md`, verify `code/0937_d5d_extended_group_bookkeeping.py` (14/14). **F1:** the inversion is the local point group's — p ↦ φn̂ − p on the first shell (R1), fixing n̂; Def. 20.2's "n̂ ↦ −n̂" is the substrate mirror (sign of χ), not a group element. **F2:** A_u(I_h) ↓ D₅d = A₁u and the antipodal-pair space carries **no** A₁u operator, so a geometric pseudoscalar vanishes there; the doublet element is nonzero only for A₁g⁻ (the charge sign ŝ) or A₂u⁺ (v-vs-v′, unsupplied by the O(ε)-preserved I_h); hence Ĉ^qDP = χ·(1/6)·ŝ ∈ A₁g(D₅d) ⊗ (C-odd), ζ-odd — §20.5's A₂u was a polar label. **F3:** diagonal split, no mixing. **E1 = case (c), S = +qCP, no longer conditional on a reading.** Magnitude χ/6 unchanged; paste-ready corrigendum for §20.1/§20.2/§20.5/§20.6 in the review, owed into `capotauro.tex` at the next SD-lane recompile. Registered OPEN 13 Sep 2026 (Patch 0936). **Consumer:** DM lane (E1 of `OPEN-DM-SIGN-SELECTION-1`; the SM-2 §10 corrigendum owed by 3531 carries the same sign).
 
 **The question.** DM Patches 3532/3533 asked this lane whether a polarised DP on a ± host in the Reading C substrate has a first-order chiral energy that couples to its dipole *orientation* (case c, C-odd) or to its *placement* only (case b, C-even), and for the sign of the |+, −v⟩ class that C-W46 leaves unstated.
 
@@ -248,7 +248,7 @@ OPEN-CHIR-2a / F.2; the δ–ε magnitude to OPEN-FP-F1-2 sub-target L4-E.
 
 **Falsifier / closure:** closed by an SD-lane patch amending C-W46 §20.2/§20.5 with the three statements; if the SD lane confirms R2, E1 flips to case (b) (no dressing selectivity) and the DM lane's 3527 picture loses its mechanism.
 
-**Last updated:** 13 Sep 2026 (Patch 0936 — registered.)
+**Last updated:** 13 Sep 2026 (Patch 0937 — RESOLVED; Patch 0936 — registered.)
 
 ---
 

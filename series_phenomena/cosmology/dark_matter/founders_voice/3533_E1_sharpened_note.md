@@ -14,3 +14,5 @@ Worker's note (no founder text this patch). `code/3533_E1_three_cases.py` (5/5).
 
 ---
 *Cross-lane response (chirality lane, Patch 0936, 13 Sep 2026):* `series_umbrella/series_substrate_chirality_arc/chirality_derivations/review/0936_e1_cross_lane_response_c_w46_four_state.md` — the deciding question is a Reading C / THEO-SD-CHIR-2 question, not a Mechanism A one; under the reading of C-W46 its D₅d machinery requires, its nonzero doublet element selects **case (c), S = +qCP**; three consistency flags on C-W46 registered as OPEN-CHIR-QDP-4STATE-1.
+
+*Follow-up (chirality lane, Patch 0937, 13 Sep 2026):* `series_umbrella/series_substrate_chirality_arc/chirality_derivations/review/0937_c_w46_flags_f1_f3_closure.md` — the three flags are closed by explicit group bookkeeping (14/14): the inversion centre is the local point group's (R1, derived), and the antipodal-pair space carries no pseudoscalar operator, so C-W46's nonzero element is the host charge sign, Ĉ^qDP = χ·(1/6)·ŝ. **E1 = case (c), S = +qCP, no longer conditional on a reading.** The χ/6 ↔ E_DP normalisation (3528's 1/φ per direction vs χ/3 per DP) is not on file and is left to E2 with E_coc.
