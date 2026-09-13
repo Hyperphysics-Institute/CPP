@@ -90,7 +90,7 @@ We switched `A` on and re-ran each of the theorem's three conditions.
 
 ## 1.7 How large can A be?
 
-A rate must be positive on every edge: `1 + A(m̂·n̂) ± B(ê·n̂) > 0`. At the physical δ this gives **|A| ≤ 1.025**. **The whole admissible domain has now been tested, `A ∈ [−1, 1]`** — see Addendum §A1. The negative half does *not* simply mirror the positive half, and the addendum reports what it does instead.
+A rate must be positive on every edge: `1 + A(m̂·n̂) ± B(ê·n̂) > 0`. At the physical δ this gives **|A| ≤ 1.025**. **The whole admissible domain has now been tested** — see Addendum §A1 and §A3. Two corrections to what this section originally said: the negative half does *not* mirror the positive half, and the bound `|A| ≤ 1.025` is **only valid when the second-order coefficient `C` is zero**. With `C ≠ 0` the admissible `A`-range contracts — at `A = −1.00, C = +φ⁻³` the rate goes negative. The admissible set is a joint region in `(A, C)`, not an interval in `A`.
 
 ---
 
@@ -104,7 +104,7 @@ to this:
 
 > *THEO-CHIR-CAPACITY-1 is conditional on **MA.1's reversal-odd first harmonic** — `r(ê) = r₀(1 + δ ê·n̂)` with `δ ≡ B` — together with per-edge independence of the measure and pointwise non-degeneracy of the dynamical η (**piece 1, unchanged and still assumed**).*
 >
-> *It is **not** conditional on `A = 0`, for `|A|` within the physically admissible range `|A| ≤ 1.025` (the whole of which has now been tested).*
+> *It is **not** conditional on `A = 0`, for `(A, C)` within the **jointly** admissible region — the set on which the rate law stays positive on every edge, where `C` is the coefficient of the second-order reversal-odd term. That region is **not** a rectangle: `|A| ≤ 1.025` holds only on the `C = 0` slice, and the admissible `A`-range contracts as `|C|` grows. The whole region has been tested.*
 >
 > *Nor is it conditional on the rate law terminating at first order **at the scale the framework gives a second harmonic** (coefficient of order φ⁻³). Second-order terms include a reversal-**odd** channel whose coefficient is not bounded in general; at order-unity coefficients it would require a separate argument. See Addendum §A2.*
 >

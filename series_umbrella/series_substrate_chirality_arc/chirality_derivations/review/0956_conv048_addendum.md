@@ -49,3 +49,28 @@ Tested at the coefficient scale the framework would naturally give a second harm
 - **Q6** — is our treatment of the odd second-order channel right? Specifically: is "harmless at the framework's scale, named as open beyond it" the correct disposition, or should the proposal decline to mention second order at all until the channel is bounded?
 
 **If you have already returned on the earlier package**, you need only tell us whether A1 or A2 changes any answer you gave. Nothing else needs repeating.
+
+---
+
+## A3. The joint corner — added after the addendum returns came in
+
+Two reviewers refused §A1 and §A2 as a safety argument on the grounds that we had run the two effects **separately and never together**. One wrote: *"What concerns me is not the separate clearances. It is stacking them… Multiplicative-on-the-slow-edges they are unshown."* Another required a single explicit combined bound.
+
+**They were right that it was untested, and both of us were wrong about what it would show.**
+
+**(i) The admissible region is not a rectangle.** We published `|A| ≤ 1.025`. That was computed at `C = 0`. With the odd quadratic switched on, rate positivity fails earlier — at `A = −1.00, C = +φ⁻³` the minimum rate is **−0.0434**. The sentence stating the A-bound was therefore **false as written**, and Part 2 has been corrected to state the admissible set jointly in `(A, C)`.
+
+**(ii) Stacking is superadditive, not additive.** At the worst admissible joint point the current is `9.6 × 10⁻⁴`, against `2.6 × 10⁻⁴` for negative `A` alone and `4.0 × 10⁻⁴` for the odd quadratic alone. In squared terms the joint value is **4.0× the sum** of the separate squared values — the amplitudes roughly double rather than adding in quadrature. One reviewer predicted additive; we asserted additive in our first draft of the test; the test refused both.
+
+**(iii) The combined bound, by scale.** A single number would hide the scale dependence the disposition rests on, so here are two, each a maximum over the entire jointly admissible region at `δ = φ⁻³`:
+
+| coefficient range | max `J²` |
+|---|---|
+| framework scale, `\|C\| ≤ φ⁻³` | **1.3 × 10⁻⁸** |
+| extended scan, `\|C\| ≤ 0.6` | **9.3 × 10⁻⁷** |
+
+C3 is untouched throughout: worst K_lift over the joint region including the κ scan is **0.0526** (ratio 0.63 against the uniform threshold).
+
+**(iv) A margin claim we were overstating.** "Five or more orders below" — used in this addendum's first version and repeated in several returns — is accurate **only at framework scale**. Over the extended scan the margin against the coupling threshold is roughly **two orders**, not five. Everything still clears; the margin is smaller than we were saying in one regime, and we are not going to keep quoting the larger figure.
+
+**What this does and does not change.** Every condition still clears at the framework coefficient scale, which is what Part 2 claims. What changed is that two of our published numbers were wrong and our silence on stacking amounted to assuming the residuals are independent — which one reviewer had explicitly named as the thing that would concern him. They are not independent.
