@@ -23,6 +23,7 @@
 | Standard-Model series | 1152 | 2026-06-13 | 1152 OPEN-WORKFLOW-1: make SM-6 reproducible from clean clone |
 | op:einstein / SR-2 (spin-2 graviton) | 1142 | 2026-06-13 | 1142 SR-2 Phase 7C CLEARED (draft v0.6 RC): panel 3/3 CONFIRM. ChatGPT |
 | CC umbrella (cosmological constant) | 1105 | 2026-06-11 | 1105 CC-U/5 R2 reframe draft (DM-lane handoff) + CC-U/4 c08 scoping (f |
+| Chirality arc | 0941 | 2026-09-13 | 0941 L4-C DISCHARGED — MA.2's antisymmetric current derived from the PCD cycle + L4-B (chirality lane) — |
 | Chirality arc | 0940 | 2026-09-13 | 0940 L4-B DISCHARGED — Mechanism A's vertex-uniformity derived from A11 (chirality lane) — |
 | Chirality arc | 0939 | 2026-09-13 | 0939 GOVERNANCE — deferral gate (code/deferral_gate.py) + bootup D-9 + DEFERRAL RIDER; a deferral is a same-commit todolist.md write (chirality lane) — |
 
