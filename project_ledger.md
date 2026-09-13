@@ -23,6 +23,7 @@
 | Standard-Model series | 1152 | 2026-06-13 | 1152 OPEN-WORKFLOW-1: make SM-6 reproducible from clean clone |
 | op:einstein / SR-2 (spin-2 graviton) | 1142 | 2026-06-13 | 1142 SR-2 Phase 7C CLEARED (draft v0.6 RC): panel 3/3 CONFIRM. ChatGPT |
 | CC umbrella (cosmological constant) | 1105 | 2026-06-11 | 1105 CC-U/5 R2 reframe draft (DM-lane handoff) + CC-U/4 c08 scoping (f |
+| Chirality arc | 0944 | 2026-09-13 | 0944 W ring harmonisation vs Weak Sector lane — ring confirmed, composition query back to founder (chirality lane) — |
 | Chirality arc | 0943 | 2026-09-13 | 0943 SM-2 full charge audit — s/b extension on founder ruling; W boson residual found (chirality lane) — |
 | Chirality arc | 0942 | 2026-09-13 | 0942 SM-2 composition corrigendum written (cross-lane, CONV-038) — charge arithmetic finding + s/b escalation (chirality lane) — |
 | Chirality arc | 0941 | 2026-09-13 | 0941 L4-C DISCHARGED — MA.2's antisymmetric current derived from the PCD cycle + L4-B (chirality lane) — |
