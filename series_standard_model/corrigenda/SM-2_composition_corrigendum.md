@@ -1,6 +1,6 @@
-# SM-2 composition-level corrigendum — paste-ready (Patch 0942, CONV-038)
+# SM-2 composition-level corrigendum — paste-ready (Patches 0942 + 0943, CONV-038)
 
-**Owed since:** Patch 3531 (12 Sep 2026, FORK-DM-COMPOSITION-1 resolved on the founder's ruling). **Prepared:** 13 Sep 2026, Patch 0942, from the chirality window under PD-006 — the SM lane holds no active ID block, so this artifact is filed in the 09xx block as a cross-lane deliverable (same precedent as 0936). **Verify:** `corrigenda/code/0942_down_charge_arithmetic.py` (5/5). **Target:** `series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex` — **shipped; not edited here.** Application is the founder's recompile.
+**Owed since:** Patch 3531 (12 Sep 2026, FORK-DM-COMPOSITION-1 resolved on the founder's ruling). **Prepared:** 13 Sep 2026, Patch 0942, from the chirality window under PD-006 — the SM lane holds no active ID block, so this artifact is filed in the 09xx block as a cross-lane deliverable (same precedent as 0936). **Extended 13 Sep 2026, Patch 0943,** on the founder's instruction to fix the other SM particles carrying the wrong charge. **Verify:** `corrigenda/code/0942_down_charge_arithmetic.py` (5/5) and `corrigenda/code/0943_sm2_charge_audit.py` (6/6 — a full audit of every cage entry against SM-2's own charge rules). **Target:** `series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex` — **shipped; not edited here.** Application is the founder's recompile.
 
 **Founder ruling (3531, verbatim):** "the down quark is +qCP with a linearly oscillating -eCP, an orbital eDP, and a cloud of polarized CPs."
 
@@ -56,14 +56,46 @@ The down row of the Mass Contribution Breakdown (2.4 / 0.8 / 0.0 / 0.24 / 0.96 /
 
 **Open question (physics; founder's, not mine).** Whether the linear −eCP contributes a rest-mass term of its own that the current breakdown folds into the N_k = 2.5 assignment, or whether it is already accounted there. If it is a separate contribution, the down fit moves and the N_k calibration needs revisiting. I have not assumed either way.
 
-## 4. Escalation — the question this corrigendum cannot settle
+## 4. Extension to strange and bottom (founder ruling, 13 Sep 2026)
 
-The cage list also assigns **Strange: Central −qCP** and **Bottom: Central −qCP**. These are down-type quarks carrying the same −1/3, and T5 confirms the −1 gap is identical for d, s and b and independent of cage occupancy. So the same charged linear extra is required for all three, and the same centre-sign question arises for all three.
+The founder has ruled that the fix extends. The full audit (`0943_sm2_charge_audit.py`, 6/6) confirms the defect is exactly the down-type family and nothing else among the fermions: **down, strange and bottom are each written with a central −qCP, which screens to −2/3 against a required −1/3**, and no neutral DP species rescues any of them (T3). The required gap is −1 for all three despite cage occupancies of N_k = 2.5, 30 and 3000 — **cage-independent, so the repair generalises exactly** (T4). Up-type (u, c, t) at +2/3, the charged leptons at −1 as unscreened eCP centres, and the neutrals (ν's, Z, Higgs) are all correct as written and owe no correction (T1, T2).
 
-**The 3531 ruling names only the down quark.** Whether it extends to strange and bottom — i.e. whether all down-type centres are +qCP with a linear −eCP, or whether the down is special — is a question in a physical picture and is escalated to the founder under PD-006(a). **It is not derived here and the s/b entries are left untouched.** If the answer is "all down-type", edits (a)–(c) generalise and two further cage entries change; if the down is special, the charge arithmetic for s and b needs its own account, since as written they inherit the same −2/3 problem as T2.
+### (d) Particle Cage Assignments — strange
+
+Replace:
+
+> \item Strange: Central $-$qCP, tetrahedral cage ($N_k = 30$ eff.)
+
+with:
+
+> \item Strange: Central $+$qCP, linearly oscillating $-$eCP extra, orbital eDP, polarised CP cloud, tetrahedral cage ($N_k = 30$ eff.)
+
+### (e) Particle Cage Assignments — bottom
+
+Replace:
+
+> \item Bottom: Central $-$qCP, tetrahedral+icosahedral+dodecahedral ($N_k = 3000$ eff.)
+
+with:
+
+> \item Bottom: Central $+$qCP, linearly oscillating $-$eCP extra, orbital eDP, polarised CP cloud, tetrahedral+icosahedral+dodecahedral ($N_k = 3000$ eff.)
+
+Edits (b) and (c) of §1 already read "down-type" and therefore cover s and b without further change. Add to the corrigendum note: *"The central-charge and linear-extra assignments for all three down-type quarks are corrected together; the −1/3 charge is cage-independent, so no cage-size argument distinguishes them (Patch 0943)."*
+
+**Mass fits for s and b are label-level exactly as for the down** — N_k = 30 and N_k = 3000 are unmoved, so no published number changes. The same open question carries across all three: whether the linear −eCP contributes a rest-mass term of its own or is already folded into N_k.
+
+## 4b. A third defect, found by the audit: the W boson
+
+Not previously flagged, and **not covered by the founder's down-type ruling.**
+
+The cage list assigns **"W: Linear hDP chain"**, and the mass table row reads "Linear 6-hDP chain". An hDP chain is a chain of *bound neutral pairs* and therefore carries charge **0** — so the assignment describes a neutral object, while W^± carries ±1 (T5). The Z (icosahedral cage) and the Higgs (dodecahedral cage) are genuinely neutral and are unaffected: **the defect is specific to the charged member of the weak triplet.** After the d/s/b repair, W is the **single residual entry** in SM-2 that cannot reproduce its own charge (T6).
+
+**This one is not closable by arithmetic.** The audit says the chain needs a net ±1 from somewhere — a charged constituent, or an asymmetric termination of the chain — but which is a composition question, and the founder has ruled only on the down quark. **No edit is proposed here and the W entries are left untouched.**
+
+*Pointer, offered for the founder's consideration and explicitly not a derivation:* CPP already carries a structure of exactly this shape elsewhere — the "odd man out" / partnerless third of Patch 3513 (a bare qCP attached to a DP entity), which is the W/W′ channel the DM lane's E3 count uses (3531). A linear hDP chain carrying a partnerless bare CP would supply the ±1 and would reuse an existing mechanism rather than introduce one. Whether that is the right picture for the W is the founder's call.
 
 ## 5. Sequencing
 
 The Capotauro corrigendum from Patch 0937 (`capotauro.tex` §20.1/§20.2/§20.5/§20.6 + theorem step (iv)) should land **with or before** this one, so that SM-2's Capotauro section and Finding C-W46 quote the same operator. Both are paste-ready; both are founder recompiles. `chirality_continuum.tex` carries the same A₂u label at four places and bundles with them.
 
-**No verdict moves. No number in SM-2 changes. No CPP paper is edited by this patch.**
+**No verdict moves. No number in SM-2 changes. No CPP paper is edited by these patches.** Residual after application: the W entry only (§4b), pending a founder composition ruling.
