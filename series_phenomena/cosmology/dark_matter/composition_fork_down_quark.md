@@ -1,4 +1,4 @@
-# FORK-DM-COMPOSITION-1 — the down quark's centre: SM-2 (shipped, Mar 2026) says −qCP; the founder's registered picture (Jun–Sep 2026) says +qCP core + radial −eCP. **Registered, not resolved; it decides the asymmetry picture and the scope of the SM-2 corrigendum.**
+# FORK-DM-COMPOSITION-1 — the down quark's centre: SM-2 (shipped, Mar 2026) says −qCP; the founder's registered picture (Jun–Sep 2026) says +qCP core + radial −eCP. **RESOLVED at Patch 3531 by the founder: the down quark is +qCP + linearly oscillating −eCP + orbital eDP + polarised cloud; SM-2's assignment is the error (already confronted once, session 16x); composition-level corrigendum owed to the SM lane.**
 
 **Patch 3530, 12 Sep 2026. DM block, from this window under PD-006.** Found during the D-7 pass for OPEN-DM-SIGN-SELECTION-1 E2 (the cocoon energy). Nothing minted; no composition chosen; the fork is stated with its two branches and their consequences, and the ruling is the founder's.
 

@@ -55,6 +55,9 @@ E1 is the quark-sector sign only (3528); the lepton sector carries no required c
 ## §6d FORK registered, Patch 3530 (`composition_fork_down_quark.md`)
 SM-2's shipped cage assignment has the down quark as a **−qCP centre + linear extra** (and its §10 is consistent with that); the founder's registered picture (session 16x notes, 3513, 3524) has the down as a **+qCP core + radial −eCP**. The charter presupposes the founder's composition (under SM-2's, dressing selectivity would remove the downs). **Founder to confirm SM-2's assignment is superseded**; the SM corrigendum is then composition-level. Derived count for E3 under the founder's composition: **R_e⁻/R_q⁺ = 2/3 exactly**, neutron-fraction independent. E2 blocked on the fork (what E_coc is).
 
+## §6e FORK RESOLVED and E3 structured, Patch 3531
+Founder reconfirms the composition (down = +qCP + linear −eCP + orbital eDP + cloud); SM-2's assignment is the error; composition-level corrigendum owed (SM lane). **E3 bookkeeping (`code/3531_E3_count_bookkeeping.py`):** hDP-A/hDP-B formation plus symmetric sinks force surviving +qCP = −eCP, so the 2/3 ratio REQUIRES the partnerless-third channel with net **W − W′ = n_p + n_n** (one bare −qCP per baryon into the DP-entity sector); N_e drops out (excess leptons annihilate symmetrically); N_q = 3B + X_A + Y + W′. Fail conditions (i)–(iii) pre-registered.
+
 ## §7 Owed to other lanes
 - **SM lane:** corrigendum to SM-2 §10 and the chirality-continuum Sector B sketch §15 — the "−qCP centres" sentence describes the anti-down (3524). CONV-038 path.
 - **EU lane:** unchanged (TODO-3930-EU); the reheating release (3516) is still the post-count-law dilution's owner.
