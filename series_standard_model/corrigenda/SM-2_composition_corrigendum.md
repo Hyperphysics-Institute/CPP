@@ -100,9 +100,9 @@ Replace:
 
 with:
 
-> \item $W^0$: neutral 12-member ring --- three qDPs and three eDPs, one per vertex of the Petrie hexagon of the first-shell icosahedron (the W-bracelet, SF-2 v1.0 Thm~4.2); $W^\pm$: a $W^0$ carrying a $\pm$eCP on the enzymatic structure, the charge residing on the unpaired CP; Z: icosahedral cage; Higgs: dodecahedral cage
+> \item $W^0$: neutral 12-member ring --- three qDPs and three eDPs alternating (qDP--eDP--qDP--eDP--qDP--eDP), one per vertex of the Petrie hexagon of the first-shell icosahedron (the W-bracelet, SF-2 v1.0 Thm~4.2); the alternating order is a structural assignment pending an observable, on the same footing as the $N_k$ values (Patch 0948); $W^\pm$: a $W^0$ carrying a $\pm$eCP on the enzymatic structure, the charge residing on the unpaired CP; Z: icosahedral cage; Higgs: dodecahedral cage
 
-Add to the corrigendum note: *"The W entry is corrected in topology and species, not member count: the former 'linear hDP chain' and the W⁰ ring are both 12 CPs. The ring is the Weak Sector lane's W-bracelet, so the correction brings SM-2 into agreement with SF-2 and with the EW sector's geometric object rather than away from them. The W^± construction is the partnerless-third structure of Patch 3513 (Patches 0944, 0945)."*
+Add to the corrigendum note: *"The W entry is corrected in topology and species, not member count: the former 'linear hDP chain' and the W⁰ ring are both 12 CPs. The ring is the Weak Sector lane's W-bracelet, so the correction brings SM-2 into agreement with SF-2 and with the EW sector's geometric object rather than away from them. The W^± construction is the partnerless-third structure of Patch 3513 (Patches 0944, 0945). The ring order must be achiral: with the substrate pseudoscalar χ ≠ 0 the lattice reflections are not symmetries of the physical substrate, and a chiral order would split into two inequivalent neutral ring states against the Standard Model's single W³ (Patch 0947). Of the two achiral orders, alternating is adopted as a structural assignment because it alone retains the C₃ rotation and the largest D₆ subgroup (order 6); no observable yet selects it over the blocked order (Patch 0948)."*
 
 ### (g) Mass Contribution Breakdown — the W row label
 

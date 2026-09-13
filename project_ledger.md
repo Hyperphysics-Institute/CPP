@@ -23,6 +23,7 @@
 | Standard-Model series | 1152 | 2026-06-13 | 1152 OPEN-WORKFLOW-1: make SM-6 reproducible from clean clone |
 | op:einstein / SR-2 (spin-2 graviton) | 1142 | 2026-06-13 | 1142 SR-2 Phase 7C CLEARED (draft v0.6 RC): panel 3/3 CONFIRM. ChatGPT |
 | CC umbrella (cosmological constant) | 1105 | 2026-06-11 | 1105 CC-U/5 R2 reframe draft (DM-lane handoff) + CC-U/4 c08 scoping (f |
+| Chirality arc | 0948 | 2026-09-13 | 0948 W⁰ alternating order adopted as structural assignment (founder's choice) — corrigendum edit (f) (chirality lane) — |
 | Chirality arc | 0947 | 2026-09-13 | 0947 W⁰ ring order — empirics selects an achiral order; chiral pair excluded by state counting (chirality lane) — |
 | Chirality arc | 0946 | 2026-09-13 | 0946 W⁰ chirality question answered — asymmetry is P-even, not a handedness; ring arrangement raised (chirality lane) — |
 | Chirality arc | 0945 | 2026-09-13 | 0945 SM-2 charge defect CLOSED — W⁰ ring written in, zero residuals; OPEN-EW-5 registered (chirality lane) — |
