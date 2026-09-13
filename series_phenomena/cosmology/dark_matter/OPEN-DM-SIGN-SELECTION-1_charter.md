@@ -49,6 +49,9 @@ The universe's matter dominance is a **state asymmetry**, not a count asymmetry:
 ## §6b Status, Patch 3528 — E1 computed (`sign_selection_E1_dressing_sign.md`, verify 7/7)
 Quark sector: **S = +qCP, PASS conditional** on the C-W46 orientation convention (stated once, flagged); one sign serves both the down quark's extra (SM-2 §10 corrected) and the dressing selectivity — the 3524 dilemma dissolves. Lepton sector: **NOT PASSED** under a purely electric-polarity rule (the electron comes out destabilised); the composition requires a species-dependent chiral sign — now the charter's load-bearing check, owed to the SD/chirality lane (joint qDP/eDP theorem). E2/E3 need E_coc.
 
+## §6c Amendment, Patch 3529 — the lepton asymmetry is INDUCED (founder's rules, `founders_voice/3529_induced_lepton_asymmetry_rules.md`)
+E1 is the quark-sector sign only (3528); the lepton sector carries no required chiral sign. The asymmetry propagates to leptons through **bare −qCP + dressed +eCP → hDP-B + γ + ν** (removes antimatter of both species), against its mirror **bare −eCP + dressed +qCP → hDP-A + γ + ν**; B/A = exp[ΔF_q/kT] (lepton dressing sign-symmetric) or exp[(ΔF_q − ΔF_e)/kT] (electric rule on both) — B wins in both cases since E_qDP = 3E_eDP (`code/3529_induced_lepton_asymmetry_check.py`). **E2** := the two-channel net rate. **E3** += charge-neutrality count (n_e⁻ = n_p, three +qCP per baryon) from the freeze populations and channel rates — a mismatch fails the picture. **E4** += one γ + one ν per removed antilepton as the signature.
+
 ## §7 Owed to other lanes
 - **SM lane:** corrigendum to SM-2 §10 and the chirality-continuum Sector B sketch §15 — the "−qCP centres" sentence describes the anti-down (3524). CONV-038 path.
 - **EU lane:** unchanged (TODO-3930-EU); the reheating release (3516) is still the post-count-law dilution's owner.
