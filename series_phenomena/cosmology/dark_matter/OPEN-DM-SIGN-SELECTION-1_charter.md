@@ -46,6 +46,9 @@ The universe's matter dominance is a **state asymmetry**, not a count asymmetry:
 ## §6 The first computation (next patch)
 ΔF_dress for a radially polarised shell of sea DPs on a ± centre in the 600-cell of stated handedness: build the shell from the corpus's vertex-aligned Reading C (PRED-O-28 geometry, F.1 Dynamical Substrate Law), compute the chiral stabilisation term with THEO-SD-CHIR-2's matrix element, and read the sign (E1). Report E_coc's scale with its uncertainty. Everything else in §3 follows from that number.
 
+## §6b Status, Patch 3528 — E1 computed (`sign_selection_E1_dressing_sign.md`, verify 7/7)
+Quark sector: **S = +qCP, PASS conditional** on the C-W46 orientation convention (stated once, flagged); one sign serves both the down quark's extra (SM-2 §10 corrected) and the dressing selectivity — the 3524 dilemma dissolves. Lepton sector: **NOT PASSED** under a purely electric-polarity rule (the electron comes out destabilised); the composition requires a species-dependent chiral sign — now the charter's load-bearing check, owed to the SD/chirality lane (joint qDP/eDP theorem). E2/E3 need E_coc.
+
 ## §7 Owed to other lanes
 - **SM lane:** corrigendum to SM-2 §10 and the chirality-continuum Sector B sketch §15 — the "−qCP centres" sentence describes the anti-down (3524). CONV-038 path.
 - **EU lane:** unchanged (TODO-3930-EU); the reheating release (3516) is still the post-count-law dilution's owner.
