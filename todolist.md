@@ -4,6 +4,8 @@
 
 **Purpose**: Track small carried-over items, deferred protocol steps, and hygiene gaps that don't warrant full `future_projects.md` entries but must be cleared before the next paper begins. The "easy to lose" things — things that compound if not externalized.
 
+**Write rule (Patch 0939; bootup §0.5 D-9)**: an item enters this file **in the same commit that defers it**, under the lane that acts, checked by `python3 code/deferral_gate.py` before every `format-patch`. Nothing is "put aside for later" anywhere else — not in a review file, a sector status line, a registry bullet or a handover; those are records, this is the queue. Three arcs lost their owed items before this rule (TODO-3930-EU, TODO-3938-DM, TODO-0937-CHIR).
+
 **Discipline (introduced 7 May 2026 Session 33 close)**: A new paper does not start until this file's **P1 — Must clear before next paper** section is empty. Items move to **Cleared items (history)** at the bottom when completed (with date and patch number for audit). Items can also be reclassified to `future_projects.md` if they grow into multi-session projects, or deleted as no-longer-applicable with a note.
 
 ## How this file relates to other tracking files
