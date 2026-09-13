@@ -1,6 +1,6 @@
-# SM-2 composition-level corrigendum — paste-ready (Patches 0942 + 0943, CONV-038)
+# SM-2 composition-level corrigendum — paste-ready (Patches 0942 + 0943 + 0945, CONV-038)
 
-**Owed since:** Patch 3531 (12 Sep 2026, FORK-DM-COMPOSITION-1 resolved on the founder's ruling). **Prepared:** 13 Sep 2026, Patch 0942, from the chirality window under PD-006 — the SM lane holds no active ID block, so this artifact is filed in the 09xx block as a cross-lane deliverable (same precedent as 0936). **Extended 13 Sep 2026, Patch 0943,** on the founder's instruction to fix the other SM particles carrying the wrong charge. **Verify:** `corrigenda/code/0942_down_charge_arithmetic.py` (5/5) and `corrigenda/code/0943_sm2_charge_audit.py` (6/6 — a full audit of every cage entry against SM-2's own charge rules). **Target:** `series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex` — **shipped; not edited here.** Application is the founder's recompile.
+**Owed since:** Patch 3531 (12 Sep 2026, FORK-DM-COMPOSITION-1 resolved on the founder's ruling). **Prepared:** 13 Sep 2026, Patch 0942, from the chirality window under PD-006 — the SM lane holds no active ID block, so this artifact is filed in the 09xx block as a cross-lane deliverable (same precedent as 0936). **Extended 13 Sep 2026, Patch 0943,** on the founder's instruction to fix the other SM particles carrying the wrong charge. **Verify:** `corrigenda/code/0942_down_charge_arithmetic.py` (5/5) `corrigenda/code/0943_sm2_charge_audit.py` (6/6 — a full audit of every cage entry against SM-2's own charge rules), and `corrigenda/code/0945_sm2_charge_audit_closure.py` (6/6 — the closing audit with the W ruled: **zero residual charge defects across all 17 entries**). **Target:** `series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex` — **shipped; not edited here.** Application is the founder's recompile.
 
 **Founder ruling (3531, verbatim):** "the down quark is +qCP with a linearly oscillating -eCP, an orbital eDP, and a cloud of polarized CPs."
 
@@ -84,18 +84,42 @@ Edits (b) and (c) of §1 already read "down-type" and therefore cover s and b wi
 
 **Mass fits for s and b are label-level exactly as for the down** — N_k = 30 and N_k = 3000 are unmoved, so no published number changes. The same open question carries across all three: whether the linear −eCP contributes a rest-mass term of its own or is already folded into N_k.
 
-## 4b. A third defect, found by the audit: the W boson
+## 4b. The W boson (founder ruling 13 Sep 2026; harmonised at Patch 0944)
 
-Not previously flagged, and **not covered by the founder's down-type ruling.**
+The audit found a third defect, outside the down-type family: the cage list assigned **"W: Linear hDP chain"** (mass table: "Linear 6-hDP chain"). An hDP chain is a chain of bound *neutral* pairs and carries charge **0**, while W^± carries ±1. The Z and Higgs are genuinely neutral and unaffected — the defect was specific to the charged member of the weak triplet.
 
-The cage list assigns **"W: Linear hDP chain"**, and the mass table row reads "Linear 6-hDP chain". An hDP chain is a chain of *bound neutral pairs* and therefore carries charge **0** — so the assignment describes a neutral object, while W^± carries ±1 (T5). The Z (icosahedral cage) and the Higgs (dodecahedral cage) are genuinely neutral and are unaffected: **the defect is specific to the charged member of the weak triplet.** After the d/s/b repair, W is the **single residual entry** in SM-2 that cannot reproduce its own charge (T6).
+**Founder ruling, 13 Sep 2026** (with "eCPs" corrected to "eDPs" the same day, after the Patch 0944 harmonisation query): the **W⁰ is neutral and is a 12-member ring of three qDPs and three eDPs**; the **W^± is a W⁰ carrying a + or − eCP on the W⁰ enzymatic structure.**
 
-**This one is not closable by arithmetic.** The audit says the chain needs a net ±1 from somewhere — a charged constituent, or an asymmetric termination of the chain — but which is a composition question, and the founder has ruled only on the down quark. **No edit is proposed here and the W entries are left untouched.**
+**Harmonised with the Weak Sector lane (Patch 0944).** Per SF-2 v1.0 Theorem 4.2, carried into `capotauro.tex`, the W-bracelet is a **Petrie hexagon of the first-shell icosahedron** — six vertices, being 6 of the 12 first-shell vertices, stabiliser D₆ of order 12. The ruled composition seats **one DP object per Petrie vertex** (6 objects, 12 CPs), is neutral because every constituent is a bound pair, and **preserves SM-2's existing member count**, since "Linear 6-hDP chain" is likewise 12 CPs. The correction therefore changes **topology** (chain → ring) and **species** (6 hDP → 3 qDP + 3 eDP), and leaves the count alone. Verified at 0945 (T1–T4).
 
-*Pointer, offered for the founder's consideration and explicitly not a derivation:* CPP already carries a structure of exactly this shape elsewhere — the "odd man out" / partnerless third of Patch 3513 (a bare qCP attached to a DP entity), which is the W/W′ channel the DM lane's E3 count uses (3531). A linear hDP chain carrying a partnerless bare CP would supply the ±1 and would reuse an existing mechanism rather than introduce one. Whether that is the right picture for the W is the founder's call.
+### (f) Particle Cage Assignments — the W entry
+
+Replace:
+
+> \item W: Linear hDP chain; Z: icosahedral cage; Higgs: dodecahedral cage
+
+with:
+
+> \item $W^0$: neutral 12-member ring --- three qDPs and three eDPs, one per vertex of the Petrie hexagon of the first-shell icosahedron (the W-bracelet, SF-2 v1.0 Thm~4.2); $W^\pm$: a $W^0$ carrying a $\pm$eCP on the enzymatic structure, the charge residing on the unpaired CP; Z: icosahedral cage; Higgs: dodecahedral cage
+
+Add to the corrigendum note: *"The W entry is corrected in topology and species, not member count: the former 'linear hDP chain' and the W⁰ ring are both 12 CPs. The ring is the Weak Sector lane's W-bracelet, so the correction brings SM-2 into agreement with SF-2 and with the EW sector's geometric object rather than away from them. The W^± construction is the partnerless-third structure of Patch 3513 (Patches 0944, 0945)."*
+
+### (g) Mass Contribution Breakdown — the W row label
+
+The row reads `W & Linear 6-hDP chain & 40190 & 13397 & 0.0 & 4019 & 0.0 & 22774 & 80380`.
+
+**The label is wrong and the numbers are open.** The structural descriptor must become the W⁰ ring (3 qDP + 3 eDP, 12 CPs). Whether the *numbers* survive is **not settled here** and is registered with the EW lane as `OPEN-EW-5` (§5b below): the member count is unchanged at 12 CPs, so if the breakdown is count-driven and species-blind the row survives as a pure relabel; if the hDP species enters the energy terms, the W mass fit needs recomputation. **Do not apply edit (g) until OPEN-EW-5 returns.** Edits (a)–(f) are independent of it and can be applied now.
+
+## 4c. Closure
+
+With the down-type repair (0942, 0943) and the W composition above, **every entry in SM-2's Particle Cage Assignments reproduces its Standard Model charge — zero residuals across all 17 entries** (0945 T5), with no regression to up-type, charged leptons, neutrinos, Z or Higgs (T6). The charge-consistency defect in SM-2 is closed at composition level, with only the W mass *numbers* outstanding.
+
+## 5b. Registered with the EW lane
+
+`OPEN-EW-5: W mass-breakdown species dependence` — see `frontier_sectors/EW.md`. Consumers: this corrigendum's edit (g); `OPEN-EW-2` (unified boson mass formula) and `OPEN-EW-3` (the bracelet's 4D→3D projection factor, currently calibrated rather than derived), both of which already take the bracelet as their geometric object.
 
 ## 5. Sequencing
 
 The Capotauro corrigendum from Patch 0937 (`capotauro.tex` §20.1/§20.2/§20.5/§20.6 + theorem step (iv)) should land **with or before** this one, so that SM-2's Capotauro section and Finding C-W46 quote the same operator. Both are paste-ready; both are founder recompiles. `chirality_continuum.tex` carries the same A₂u label at four places and bundles with them.
 
-**No verdict moves. No number in SM-2 changes. No CPP paper is edited by these patches.** Residual after application: the W entry only (§4b), pending a founder composition ruling.
+**No verdict moves. No number in SM-2 changes. No CPP paper is edited by these patches.** Residual after application: none at composition level (§4c). The W mass-row **numbers** remain open as `OPEN-EW-5`; edit (g) waits on it, edits (a)–(f) do not.

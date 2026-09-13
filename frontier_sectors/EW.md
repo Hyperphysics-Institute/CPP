@@ -17,7 +17,22 @@
 **Cross-sector connections:** OPEN-G-2
 **Current best lead:** None strong. "Requires new scaling argument."
 **Paper(s):** EW-2
-**Last updated:** 23 March 2026
+**Last updated:** 13 Sep 2026 (Patch 0945 — OPEN-EW-5 registered: W mass-breakdown species dependence, from the founder's W⁰ ring ruling and the Patch 0944 bracelet harmonisation.) Earlier 23 March 2026
+
+---
+
+### OPEN-EW-5: W Mass-Breakdown Species Dependence
+**Status:** OPEN — **registered 13 Sep 2026, Patch 0945** (chirality lane, cross-lane; SM holds no active ID block)
+**Sector(s):** EW, SM
+**Priority:** MEDIUM — blocks one edit of a shipped-paper corrigendum, nothing else
+**One-line statement:** Does SM-2's W mass breakdown depend on the *species* of the 12 CPs in the W, or only on their count?
+**Why it is open now.** The founder ruled (13 Sep 2026) that the W⁰ is a neutral 12-member ring of three qDPs and three eDPs, with W^± a W⁰ carrying a ±eCP; harmonised at Patch 0944 against this lane's W-bracelet (SF-2 v1.0 Thm 4.2 — Petrie hexagon of the first-shell icosahedron, six vertices, D₆ of order 12). SM-2's Mass Contribution Breakdown row currently reads `W & Linear 6-hDP chain & 40190 & 13397 & 0.0 & 4019 & 0.0 & 22774 & 80380`. **The member count is unchanged** — a 6-hDP chain and the W⁰ ring are both 12 CPs — so the question is whether the terms are count-driven or species-sensitive.
+**What a resolution looks like:** either (i) the breakdown is species-blind and count-driven, in which case the row survives as a pure relabel and corrigendum edit (g) applies unchanged; or (ii) the hDP species enters the ZBW / inter-layer bonding / DP-cloud terms, in which case the W mass fit needs recomputation against 3 qDP + 3 eDP and the 80380 MeV total must be re-derived.
+**Dependencies:** none blocking.
+**Cross-sector connections:** `OPEN-EW-2` (unified boson mass formula) and `OPEN-EW-3` (the bracelet's 4D→3D projection factor, currently calibrated rather than derived) both take the bracelet as their geometric object, so a species sensitivity here would touch f_geom. The topology correction (linear chain → ring) moves SM-2 *toward* this lane's object, not away.
+**Consumer:** `series_standard_model/corrigenda/SM-2_composition_corrigendum.md` edit (g), which is held pending this answer; edits (a)–(f) are independent and can be applied now.
+**Paper(s):** SM-2, EW-2
+**Last updated:** 13 Sep 2026
 
 ---
 
