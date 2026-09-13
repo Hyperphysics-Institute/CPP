@@ -1,3 +1,5 @@
+**[SUPERSEDED IN PART at Patch 3532 (`sign_selection_E1_downgrade.md`): the §1 'convention' is an extrapolation beyond C-W46's stated doublet; E1 is OPEN, not conditional-pass. The geometry (T1–T5) stands.]**
+
 # OPEN-DM-SIGN-SELECTION-1 — reading E1 (the sign of dressing selectivity), first computation — **quark sector: S = +qCP, PASS conditional on one on-file convention; lepton sector: NOT PASSED under the same rule — the composition (+qCP, −eCP) requires a species-dependent chiral sign.**
 
 **Patch 3528, 12 Sep 2026. DM block, from this window under PD-006.** Charter §6. Verify `code/3528_dressing_sign_E1.py` (7/7; builds the 600-cell, reproduces F.1 Theorem 5.1, computes the sign). Reasoning `reasoning/3528.md`. Nothing minted; the handedness is the registered one (n̂ = +v_host); no number chosen.

@@ -58,6 +58,9 @@ SM-2's shipped cage assignment has the down quark as a **−qCP centre + linear 
 ## §6e FORK RESOLVED and E3 structured, Patch 3531
 Founder reconfirms the composition (down = +qCP + linear −eCP + orbital eDP + cloud); SM-2's assignment is the error; composition-level corrigendum owed (SM lane). **E3 bookkeeping (`code/3531_E3_count_bookkeeping.py`):** hDP-A/hDP-B formation plus symmetric sinks force surviving +qCP = −eCP, so the 2/3 ratio REQUIRES the partnerless-third channel with net **W − W′ = n_p + n_n** (one bare −qCP per baryon into the DP-entity sector); N_e drops out (excess leptons annihilate symmetrically); N_q = 3B + X_A + Y + W′. Fail conditions (i)–(iii) pre-registered.
 
+## §6f E1 DOWNGRADED, Patch 3532 (`sign_selection_E1_downgrade.md`)
+C-W46 states the chiral split for the doublet {+ host with extra on the +n̂ side, − host with extra on the −n̂ side} only; a dressed centre's cocoon is inward (−n̂ side) for either sign, so the + host's cocoon lies in the complementary 2D subspace whose split is not on file. 3528's per-DP rule was an extrapolation; three cases (a) S = −qCP, (b) no selectivity, (c) S = +qCP. **E1: OPEN.** Owner: the SD/chirality lane — extend C-W46 to the 4-state representation and state the sign of the |+, −v⟩ class; this is the same sign the SM-2 corrigendum must carry (the corrected down quark is that class).
+
 ## §7 Owed to other lanes
 - **SM lane:** corrigendum to SM-2 §10 and the chirality-continuum Sector B sketch §15 — the "−qCP centres" sentence describes the anti-down (3524). CONV-038 path.
 - **EU lane:** unchanged (TODO-3930-EU); the reheating release (3516) is still the post-count-law dilution's owner.
