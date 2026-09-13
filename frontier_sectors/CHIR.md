@@ -8,7 +8,7 @@
   Master dashboard: research_frontier.md
 -->
 
-## Substrate Chirality Arc (CHIR) — 5 problems (1 partially resolved) + 2 resolved
+## Substrate Chirality Arc (CHIR) — 6 problems (1 partially resolved) + 2 resolved
 
 The CHIR sector tracks the chirality programme of the Substrate Chirality Arc
 (`series_umbrella/series_substrate_chirality_arc/`). It sits downstream of the
@@ -233,6 +233,22 @@ substrate-Wigner-Eckart datum (Capotauro v2.0 §20); the chirality continuum arc
 (Patch 0647). Chirality-count half resolved (M1-χ); the T-arrow `sign(δ)` (full M1) deferred to
 OPEN-CHIR-2a / F.2; the δ–ε magnitude to OPEN-FP-F1-2 sub-target L4-E.
 **Last updated:** 29 May 2026 (Patch 0651 — MERGE-2 review cycle **CLOSED 3/3, no falsifier**: ChatGPT CONFIRMED at v1.1 re-review ("M1-χ, conditional on MERGE-α"); v1.2 applied two ChatGPT wording residuals (δ T-oddness stated as inherited from MERGE-α; count reworded "one *currently-identified* chirality primitive", future-proofed against G6). No verdict change. Earlier: 0650 re-review request; 0649 review integration v1.1; 0647 M3→M1-χ.)
+
+---
+
+### OPEN-CHIR-QDP-4STATE-1: the four-state extension of Finding C-W46 (THEO-SD-CHIR-2) — cross-lane item from OPEN-DM-SIGN-SELECTION-1 reading E1
+
+**Status:** OPEN (registered 13 Sep 2026, Patch 0936, chirality lane). **Owner for closure:** SD lane (Capotauro / THEO-SD-CHIR-2). **Consumer:** DM lane (E1 of `OPEN-DM-SIGN-SELECTION-1`; the SM-2 §10 corrigendum owed by 3531 carries the same sign).
+
+**The question.** DM Patches 3532/3533 asked this lane whether a polarised DP on a ± host in the Reading C substrate has a first-order chiral energy that couples to its dipole *orientation* (case c, C-odd) or to its *placement* only (case b, C-even), and for the sign of the |+, −v⟩ class that C-W46 leaves unstated.
+
+**Answer at 0936 (Layer 2, single pass):** `chirality_derivations/review/0936_e1_cross_lane_response_c_w46_four_state.md` (verify `code/0936_first_shell_antipode_check.py`, 5/5). (i) The question names Mechanism A (δ, P-even/T-odd per MERGE-2 — the arrow) but the operative primitive is Reading C's χ ≡ ε (P-odd, T-even); the answer lives in THEO-SD-CHIR-2, not F.1. (ii) Every first-shell direction sits at û·n̂ = −1/(2φ); the icosahedral antipode φn̂ − v is first-shell at the same projection, the host-centred inversion 2v_host − v is not a vertex. (iii) C-W46's "−v" is ambiguous — §20.2's wording says host-centred (R2), the D_{5d} antipodal-pair machinery and the ζ^W precedent require icosahedral (R1) — and the four-state table shows C-W46's nonzero doublet element **selects case (c) under R1 and case (b) under R2**. Under R1 (the reading the machinery requires): case (c), the + host lowered in every pair, |+, −v⟩ lowered by the same 1/φ·M that |−, −v⟩ is raised, **S = +qCP**, absolute sign = FI-C-9 convention fixed by the corrected SM-2 §10. **No chirality-arc verdict moves.**
+
+**What closes it (owed to the SD lane, three flags):** F1 — state which inversion ζ^qDP is (the icosahedral-centre inversion p ↦ φn̂ − p resolves 3533 §2 in C-W46's favour); F2 — Ĉ^qDP ∈ A_{2u}(D_{5d}) (§20.5) is odd under the C₂ dihedrals, but under R1 a diagonal first-order energy is C₂-even and a pseudoscalar branches A_u(I_h) → A_{1u}; reconcile the irrep with the A_{1g} ⊕ A_{2u} doublet labels and the §20.6 Wigner–Eckart product; F3 — state Ĉ^qDP's configuration-basis form (diagonal split, as both lanes have read it, or a |+, v⟩ ↔ |−, v′⟩ mixing, in which case 3528's ΔF_dress has no source in THEO-SD-CHIR-2). D-1 note: none of F1–F3 is a claim that THEO-SD-CHIR-2 fails — the χ/6 magnitude is reproduced independently in the K3 and W sectors; the qDP bookkeeping is owed one pass.
+
+**Falsifier / closure:** closed by an SD-lane patch amending C-W46 §20.2/§20.5 with the three statements; if the SD lane confirms R2, E1 flips to case (b) (no dressing selectivity) and the DM lane's 3527 picture loses its mechanism.
+
+**Last updated:** 13 Sep 2026 (Patch 0936 — registered.)
 
 ---
 

@@ -30,6 +30,7 @@ BLOCKS = {                       # keep in sync with id_block_registry.md
     'de': (3400, 3499),
     'gr': (3700, 3799),            # G-GR-BLOCK-3700, founder, 8 Sep 2026 (taught to the gate at Patch 3800; the gate had still reported 3600-3699 EXHAUSTED)
     'eu': (3800, 3899),            # G-EU-BLOCK-3800, founder, 8 Sep 2026 ("use the 3800 series for EU")
+    'chir': (900, 999),            # substrate chirality arc lane (09xx); entered in the registry at 0936, 13 Sep 2026
     'gr-3600': (3600, 3699),       # EXHAUSTED at 3699 (G-GR-BLOCK-3600, 3 Sep 2026) — kept for --check history questions
     'gr-3300': (3300, 3399),       # CONSUMED — kept so --check answers history questions
     'legacy-cosmology': (3100, 3199),
@@ -67,13 +68,19 @@ def _texts():
 
 def taken(lo, hi, blob):
     """An id counts as taken if it appears as 'Patch NNNN', as a
-    'Next patch...: NNNN' reservation, or as a reasoning/<NNNN>.md path."""
+    'Next patch...: NNNN' reservation, as a reasoning/<NNNN>.md path, or
+    as a leading-zero bare number opening a commit subject ('0935 EVAL …')."""
     hits = set()
     for m in re.finditer(r'Patch(?:es)?\s+(\d{4})', blob):
         hits.add(int(m.group(1)))
     for m in re.finditer(r'Next patch[^:\n]*:\s*(\d{4})', blob):
         hits.add(int(m.group(1)))
     for m in re.finditer(r'reasoning/(\d{4})\.md', blob):
+        hits.add(int(m.group(1)))
+    # 0936: lanes whose commit subjects are bare-numbered with a leading zero
+    # ('0935 EVAL ...', chirality 09xx) — years never start with 0, so this
+    # pattern cannot mistake a date for an id.
+    for m in re.finditer(r'(?m)^(0\d{3})\s+\S', blob):
         hits.add(int(m.group(1)))
     return sorted(i for i in hits if lo <= i <= hi)
 
