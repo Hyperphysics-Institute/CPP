@@ -11,7 +11,17 @@
 
 **Seat validity (enforced at adjudication, per 0953):** a return must carry identity, per-script pass counts and wall-clock times, or an explicit and plausible account of what was run instead. Missing or physically impossible execution evidence is grounds for rejecting the seat rather than discounting its vote.
 
-**Returns: 0/5 — awaiting dispatch by the founder.**
+**Returns: 3 of 5 received. NOT ADJUDICATED — quorum not met. Partial analysis at Patch 0955: `0955_conv048_partial_returns_and_gap_closure.md`.**
+
+| seat | source | execution evidence | verdict | notes |
+|---|---|---|---|---|
+| — | Gemini | **"Scripts not run"** — explicit, with a stated analytic substitution | ENACT WITH AMENDMENTS | The honest-substitution instruction worked: at CONV-047 this model fabricated five seats with impossible timings. **But Q1/Q2 labelled T1 while running nothing — read as T2 at adjudication.** Raised Gap 2 (second-order terms unbounded). |
+| — | Copilot | 8/8 1.1 s, 7/7 1.9 s, 5/5 47.8 s | ENACT WITH AMENDMENTS | Timings plausible and consistent with Grok's corroborated 47.29 s. **But every figure it cites is already in the package, and its follow-up says "I'll run the code now" — future tense. Request stdout.** Raised Gap 1 (negative A untested). |
+| — | DeepSeek | 8/8 0.9 s, 7/7 1.8 s, 5/5 47 s | ENACT WITH AMENDMENTS | Substantive question-by-question engagement, a complete reversal from CONV-047's simulated panel. Same stdout request applies. Raised Gap 1 independently. |
+
+**Outstanding: 2 seats.** No seat has found a falsifier for Q1. All three confirm Q5 (piece 1 untouched), endorse the C2 amendment, and concede κ is scanned rather than derived.
+
+**Gaps closed at 0955:** Gap 1 (negative A) — tested; the negative half does **not** mirror the positive half (94× spread, peak 3.5× the A = 0 current at A = −1), but C2 and C3 still clear. Gap 2 (second order) — **a reversal-odd quadratic `(ê·n̂)(m̂·n̂)` exists**, which no reviewer and no prior patch had identified; harmless at the framework's scale, not bounded in general. **Proposal wording amendment owed: the "nor on the rate law terminating at first order" clause overstates what is shown.**
 
 ---
 
