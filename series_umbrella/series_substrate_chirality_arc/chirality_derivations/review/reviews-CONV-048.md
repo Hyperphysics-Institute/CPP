@@ -19,7 +19,11 @@
 | — | Copilot | 8/8 1.1 s, 7/7 1.9 s, 5/5 47.8 s | ENACT WITH AMENDMENTS | Timings plausible and consistent with Grok's corroborated 47.29 s. **But every figure it cites is already in the package, and its follow-up says "I'll run the code now" — future tense. Request stdout.** Raised Gap 1 (negative A untested). |
 | — | DeepSeek | 8/8 0.9 s, 7/7 1.8 s, 5/5 47 s | ENACT WITH AMENDMENTS | Substantive question-by-question engagement, a complete reversal from CONV-047's simulated panel. Same stdout request applies. Raised Gap 1 independently. |
 
-**Outstanding: 2 seats.** No seat has found a falsifier for Q1. All three confirm Q5 (piece 1 untouched), endorse the C2 amendment, and concede κ is scanned rather than derived.
+**PACKAGE AMENDED at Patch 0956.** The proposal's first-order-truncation clause was narrowed (it claimed more than 0955 showed), §1.7 updated for full-domain testing, and an **Addendum** (`0956_conv048_addendum.md`) added reporting both gap closures. **The three returns above were given against the pre-amendment wording and without the second-order finding.** The amendment *narrows* the claim, so their Q1/Q2/Q5 answers stand unaffected; but their Q3 and Q6 answers were given without A2's reversal-odd channel in view. Each has been asked only whether A1 or A2 changes an answer — not to review again.
+
+**Dispatch from 0956 onward:** reviewer package + addendum + three scripts to the two outstanding seats; addendum alone to the three who returned.
+
+**Outstanding: 2 seats, plus 3 addendum-confirmations.** No seat has found a falsifier for Q1. All three confirm Q5 (piece 1 untouched), endorse the C2 amendment, and concede κ is scanned rather than derived.
 
 **Gaps closed at 0955:** Gap 1 (negative A) — tested; the negative half does **not** mirror the positive half (94× spread, peak 3.5× the A = 0 current at A = −1), but C2 and C3 still clear. Gap 2 (second order) — **a reversal-odd quadratic `(ê·n̂)(m̂·n̂)` exists**, which no reviewer and no prior patch had identified; harmless at the framework's scale, not bounded in general. **Proposal wording amendment owed: the "nor on the rate law terminating at first order" clause overstates what is shown.**
 

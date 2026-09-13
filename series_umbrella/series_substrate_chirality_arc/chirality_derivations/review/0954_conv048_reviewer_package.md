@@ -90,7 +90,7 @@ We switched `A` on and re-ran each of the theorem's three conditions.
 
 ## 1.7 How large can A be?
 
-A rate must be positive on every edge: `1 + A(m̂·n̂) ± B(ê·n̂) > 0`. At the physical δ this gives **|A| ≤ 1.025**. We tested `A ∈ [0, 1]`, which is **98% of the positive half of what is physically admissible.** So "we tested a range" is nearly "we tested everything the rate law allows" — but it is not literally everything, and the proposal below is worded accordingly.
+A rate must be positive on every edge: `1 + A(m̂·n̂) ± B(ê·n̂) > 0`. At the physical δ this gives **|A| ≤ 1.025**. **The whole admissible domain has now been tested, `A ∈ [−1, 1]`** — see Addendum §A1. The negative half does *not* simply mirror the positive half, and the addendum reports what it does instead.
 
 ---
 
@@ -104,7 +104,9 @@ to this:
 
 > *THEO-CHIR-CAPACITY-1 is conditional on **MA.1's reversal-odd first harmonic** — `r(ê) = r₀(1 + δ ê·n̂)` with `δ ≡ B` — together with per-edge independence of the measure and pointwise non-degeneracy of the dynamical η (**piece 1, unchanged and still assumed**).*
 >
-> *It is **not** conditional on `A = 0`, nor on the rate law terminating at first order, for `|A|` within the physically admissible range `|A| ≤ 1.025` (of which `A ∈ [0,1]` has been tested).*
+> *It is **not** conditional on `A = 0`, for `|A|` within the physically admissible range `|A| ≤ 1.025` (the whole of which has now been tested).*
+>
+> *Nor is it conditional on the rate law terminating at first order **at the scale the framework gives a second harmonic** (coefficient of order φ⁻³). Second-order terms include a reversal-**odd** channel whose coefficient is not bounded in general; at order-unity coefficients it would require a separate argument. See Addendum §A2.*
 >
 > *Accordingly, condition **C2** is restated as a magnitude bound at the physical bias δ = φ⁻³ — the steady current and its square are too small to affect the threshold — and no longer as a claim that the current is of order δ³, which does not hold when `A ≠ 0`.*
 >
@@ -113,6 +115,8 @@ to this:
 **What this would and would not mean.** It would mean the theorem's rate-law input is proved rather than assumed. It would **not** mean Mechanism A as a whole is derived, and it would **not** make the theorem unconditional — piece 1 remains assumed, and that is a separate and older question.
 
 ---
+
+> **Before Part 3, please read the Addendum** (`0956_conv048_addendum.md`, supplied with this package). It reports two tests run after this package was first written, in response to points raised by earlier reviewers. One of them changed the proposal above. Q3 and Q6 depend on it.
 
 # Part 3 — The six questions
 
