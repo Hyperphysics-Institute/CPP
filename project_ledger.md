@@ -23,6 +23,7 @@
 | Standard-Model series | 1152 | 2026-06-13 | 1152 OPEN-WORKFLOW-1: make SM-6 reproducible from clean clone |
 | op:einstein / SR-2 (spin-2 graviton) | 1142 | 2026-06-13 | 1142 SR-2 Phase 7C CLEARED (draft v0.6 RC): panel 3/3 CONFIRM. ChatGPT |
 | CC umbrella (cosmological constant) | 1105 | 2026-06-11 | 1105 CC-U/5 R2 reframe draft (DM-lane handoff) + CC-U/4 c08 scoping (f |
+| Chirality arc | 0952 | 2026-09-13 | 0952 CONV-047 dispatch — five-slot panel for the CAPACITY-1 conditionality restatement (chirality lane) — |
 | Chirality arc | 0951 | 2026-09-13 | 0951 C3 K_lift recompute with the residual — clears both channels; CAPACITY-1 computationally robust, restatement needs a panel (chirality lane) — |
 | Chirality arc | 0950 | 2026-09-13 | 0950 V3 re-read vs the L4-A residual — C1 and C2 robust, C3 K_lift recompute owed (chirality lane) — |
 | Chirality arc | 0949 | 2026-09-13 | 0949 L4-A — MA.1's form: reversal-odd first harmonic forced and unique; residual (A = 0, linear-exact) named, consumed only by NESS results (chirality lane, Fable) — |
