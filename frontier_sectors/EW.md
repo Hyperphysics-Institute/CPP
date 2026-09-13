@@ -17,6 +17,8 @@
 **Cross-sector connections:** OPEN-G-2
 **Current best lead:** None strong. "Requires new scaling argument."
 **Paper(s):** EW-2
+**Note added Patch 0946 (chirality lane):** D₆ of order 12 is the stabiliser of the *bare* Petrie hexagon. Decorating it with the ruled 3 qDP + 3 eDP drops the stabiliser to order 6 (alternating), 2 (blocked) or 1 (the chiral pair) — verify `series_umbrella/series_substrate_chirality_arc/chirality_derivations/code/0946_w0_chirality_source.py` T7. The lane's D₆ statement is correct as written; any downstream argument applying D₆ to the *decorated* W⁰ needs the surviving subgroup, which depends on an arrangement the founder has not yet fixed.
+
 **Last updated:** 13 Sep 2026 (Patch 0945 — OPEN-EW-5 registered: W mass-breakdown species dependence, from the founder's W⁰ ring ruling and the Patch 0944 bracelet harmonisation.) Earlier 23 March 2026
 
 ---

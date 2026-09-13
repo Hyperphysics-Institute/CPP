@@ -248,7 +248,7 @@ OPEN-CHIR-2a / F.2; the δ–ε magnitude to OPEN-FP-F1-2 sub-target L4-E.
 
 **Falsifier / closure:** closed by an SD-lane patch amending C-W46 §20.2/§20.5 with the three statements; if the SD lane confirms R2, E1 flips to case (b) (no dressing selectivity) and the DM lane's 3527 picture loses its mechanism.
 
-**Last updated:** 13 Sep 2026 (Patch 0937 — RESOLVED; Patch 0936 — registered.)
+**Last updated:** 13 Sep 2026 (Patch 0946 — founder's W⁰ chirality question answered: the travel-distance asymmetry is P-even and cannot supply chirality; THEO-CHIR-MERGE-2 re-confirmed, no verdict moved; `chirality_derivations/review/0946_w0_chirality_source.md`. Patch 0937 — RESOLVED; Patch 0936 — registered.)
 
 ---
 
