@@ -61,6 +61,9 @@ Founder reconfirms the composition (down = +qCP + linear −eCP + orbital eDP + 
 ## §6f E1 DOWNGRADED, Patch 3532 (`sign_selection_E1_downgrade.md`)
 C-W46 states the chiral split for the doublet {+ host with extra on the +n̂ side, − host with extra on the −n̂ side} only; a dressed centre's cocoon is inward (−n̂ side) for either sign, so the + host's cocoon lies in the complementary 2D subspace whose split is not on file. 3528's per-DP rule was an extrapolation; three cases (a) S = −qCP, (b) no selectivity, (c) S = +qCP. **E1: OPEN.** Owner: the SD/chirality lane — extend C-W46 to the 4-state representation and state the sign of the |+, −v⟩ class; this is the same sign the SM-2 corrigendum must carry (the corrected down quark is that class).
 
+## §6g E1 sharpened, Patch 3533 (`founders_voice/3533_E1_sharpened_note.md`, `code/3533_E1_three_cases.py`)
+Any first-order chiral energy α·s·M + (1−α)·M·(d̂·n̂) reproduces the C-W46 doublet, so the doublet cannot decide; every physical extra/cocoon is inward (Theorem 5.1), and C-W46's |+, v⟩ is not a first-shell configuration (consistency note, SD lane). **Case (a) (sign-only) EXCLUDED** by the corrected §10 phenomenology (the matter down = + host with inward extra is stabilised). **E1 open between (b) placement-only (no selectivity) and (c) dipole-orientation (S = +qCP).** The deciding question, for the SD lane: does a DP in the n̂-asymmetric substrate (Mechanism A) have an energy depending on which way its dipole points along n̂?
+
 ## §7 Owed to other lanes
 - **SM lane:** corrigendum to SM-2 §10 and the chirality-continuum Sector B sketch §15 — the "−qCP centres" sentence describes the anti-down (3524). CONV-038 path.
 - **EU lane:** unchanged (TODO-3930-EU); the reheating release (3516) is still the post-count-law dilution's owner.
