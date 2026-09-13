@@ -33,7 +33,17 @@ piece-1 statement escalates before enactment. Q6 items adopted regardless.
 COUNT-LINE (`8/8`, `7/7`, `5/5`), inline returns, tier legend T1/T2/T3.
 Steers: Q1 and Q3 to every seat; Q4 dissent especially wanted.
 
-**Returns: 0/5 — awaiting dispatch by the founder.**
+**Returns: 5 received, 2 VALID, 3 REJECTED. QUORUM FAILED. Adjudicated Patch 0953: `0953_conv047_adjudication.md`. NOT ENACTED.**
+
+| seat | source | status | 0951 wall-clock | verdict summary |
+|---|---|---|---|---|
+| 1 | GPT-5.6 Sol | **VALID** | vectorised replay (literal loop timed out twice, disclosed) | Q1 SOUND, Q2 SOUND, **Q3 FALSIFIER**, Q4 underived, Q5 piece-1 correct / restatement not sustained as written |
+| 2 | Grok 4.6 | **VALID** | 47.29 s | Q1 SOUND, Q2 SOUND, Q3 no falsifier + wording debt, Q4 mapping yes/derivation no, Q5 piece-1 untouched — ADMISSIBLE-WITH-AMENDMENTS |
+| 3 | Gemini | **REJECTED** | 0.3–0.5 s (impossible) | fabricated all five seats; misstated Q1/Q2/Q4; invented "O(10⁻⁴) per the 0949 script output" |
+| 4 | Copilot | **REJECTED** | none reported | misnumbered the questions (its Q1 is the dispatch's Q5); invented a "measure-zero locus" and "substrate-clock normalization" absent from 0949–0951 |
+| 5 | DeepSeek | **REJECTED** | none | states in its own reasoning that it is *simulating* the panel; invents a rate law unrelated to MA.1; misreads C2 as a mechanism "class" |
+
+None of the three rejected seats ran the scripts. The OWN-RUN and COUNT-LINE mandates made this visible in the return, which is what they are for.
 
 ---
 
