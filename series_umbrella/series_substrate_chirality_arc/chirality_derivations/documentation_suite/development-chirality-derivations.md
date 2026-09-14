@@ -306,3 +306,38 @@ pointwise non-degeneracy at 0968. The status line was stale in two places and wa
 lane's own earlier framing of 1d-β as "derive FI-C-9 itself" was **wrong**; that is OPEN-SM-4(b), a
 flagship programme, cross-sector, gated on EW development, and it was scoped and declined twice
 rather than opened from inside this lane.
+
+---
+
+# Session 229 — Patch 0976 (14 Sep 2026): the ruling executed and the corrigenda applied
+
+*Tier-3 vignette, written at Patch 0981 in the window that produced the work. The rest of Session 229 was
+governance and documentation with no paper scope; its record is `session_logs/2026-09-14_session_229_log.md`
+and the Tier-4 fragments at `reasoning/0975.md`, `0976.md`, `0977.md`, `0979.md`.*
+
+The founder ruled on the question 0972/0973 had put under PD-006(a): **relabel accepted.** Reading C's `ℓ`
+is a directed traversal cost — equivalently a hop time — and not a metric edge length. The equation is
+unchanged; only its description was wrong. The ruling adds nothing to the ontology, and that is the part
+worth carrying forward: the 1-form permitting a directed cost is a Randers/Finsler `β = ε n̂` built from `n̂`,
+already a substrate primitive, and with THEO-CHIR-MERGE-2 the non-reciprocity **is** the T-arrow the arc
+already carries as W3. The substrate's geometry stays reciprocal; its dynamics do not, which is what an arrow
+of time means.
+
+With the ruling in hand the arc's five paste-ready corrigenda — carried since 0937, 0942, 0971 and 0972 —
+were written into source: Capotauro §20 and the relabel footnote, `chirality_continuum.tex`, SM-2 edits
+(a)–(f), the TARROW-2 claim (i) scope remark, and the F.1 wording bundle (MA.2 vertex-independence, the
+`r(−ê;v)` referent, exclusion class E1 narrowed, `δ = −ε` pinned, and the relabel).
+
+**One instruction was wrong as written, and this is the vignette's finding.** The corrigendum directed that
+`chirality_continuum.tex` *"cites the A₂u label at four places (grep `A_{2u}`) — same correction."* It is not
+the same correction at all of them. Three occurrences are the matter-doublet **state space**, the 2D subspace
+of `A₁g ⊕ A₂u`, which 0937 never touched and which are correct as written; 0937 changed the **operator**
+assignment. A grep-and-substitute would have fixed two statements and corrupted three. This is D-7 in its
+exact shape — one symbol naming two objects in one file — and it is recorded because the instruction will be
+read again at the recompile by someone who may not re-derive the distinction.
+
+**SM-2 edit (g) was held deliberately.** The Mass Contribution Breakdown W row still reads `Linear 6-hDP
+chain` on purpose, gated on `OPEN-EW-5`: it is the only place a published SM-2 number can still move, and
+applying it now would assert a pure relabel that may be false. Edits (a)–(f) are independent of it.
+
+**PDF recompiles remain owed** (`TODO-0976-RECOMPILE`), founder-mechanical.

@@ -23,3 +23,9 @@ Created at Patch 0974a (Step B of the Session 228 close). **Its absence until th
 - `015` 2026-09-13 Session 228 L4-E — δ = −ε pinned; Reading C's ℓ is a directed traversal cost → `.../dynamical_substrate_law/l4e_delta_epsilon.md`
 - `016` 2026-09-13 Session 228 founder question — the non-reciprocity is the T-arrow, not a new field → `.../dynamical_substrate_law/nonreciprocity_is_the_arrow.md`
 - `017` 2026-09-13 Session 228 Step F — fifteen reviewer returns committed verbatim, previously uncaptured → `.../chirality_derivations/reviews/verbatim/`
+- `018` 2026-09-14 Session 229 deferral gate — a mention of the override token was read as an assertion → `.../chirality_derivations/reasoning/0975.md`
+- `019` 2026-09-14 Session 229 founder ruling — relabel accepted; Reading C's ℓ is a directed traversal cost → `.../series_substrate_chirality_arc/founders_voice/0976_ruling_directed_traversal_cost.md`
+- `020` 2026-09-14 Session 229 corrigenda applied to source; the "four A₂u labels" instruction corrected → `.../chirality_derivations/reasoning/0976.md`
+- `021` 2026-09-14 Session 229 Session 228 Step C — vignettes filed by subject, not by session → `.../chirality_derivations/documentation_suite/development-chirality-derivations.md`
+- `022` 2026-09-14 Session 229 Step D declared unrecoverable, then superseded by 0975b's in-window capture → `.../chirality_derivations/reasoning/0977.md`
+- `023` 2026-09-14 Session 229 0975b's counts corrected; 0974a's exemption overturned → `.../chirality_derivations/reasoning/0979.md`
