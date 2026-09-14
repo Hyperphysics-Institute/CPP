@@ -1,5 +1,7 @@
 # Final confirmation round — CONV-048
 
+**Sent to two seats only (GPT-5.6 Sol and Grok 4.6), per Patch 0959.** The other three seats are not being re-asked: their stated conditions are met verbatim by the corrections below. These two are asked because their reasoning leaned on a margin figure that the joint corner changed, and because they are the two who demanded that corner.
+
 **This is a short round with a hard stop.** You have already reviewed this proposal. Since then we have corrected three things in our own documents. **We are not asking you to review again.** We are asking one question: *does the corrected text still carry the verdict you gave?*
 
 ## What changed since your return
