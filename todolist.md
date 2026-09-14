@@ -918,3 +918,22 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **Also at 4002:** `E_cloud`/Total is **not** uniform across the table (0.10 electron, 0.02 muon/tau,
   0.06 up, 0.05 everything else) with no rule given. Pre-existing, unrelated to the W, found while
   testing a first formulation that this falsified. Not acted on. **Lane: SM.**
+
+---
+
+### TODO-4011-EW — the multi-hop chirality question, answered; and one unregistered quantity
+
+- **ANSWERED at Patch 4011 (founder question, filed verbatim).** Multi-hop DI-bit path disparity is **real**
+  (hop count and physical distance separate from the 2nd re-radiation on) but **cannot produce chirality**:
+  2 hops carry no 4D pseudoscalar at all; 3/4/5 hops cancel to machine precision over 2.1M paths at every
+  tilt tested; and the cause is that H₄ contains reflections, so the result holds at **every** hop count.
+  **Confirms FI-C-9 = V3 independently of the susceptibility line.**
+- **OPEN — an unregistered quantity in the founder's picture. Lane: founder.** *"DI Bits to a PSR shell to
+  GPs that are 10% of the radius of the PSR"* — the **10%** figure appears **nowhere in the corpus**
+  (grepped). If it is a real substrate quantity it needs registering with its derivation; if it is a working
+  estimate it should be labelled one. **4011's result does not depend on it** (the cancellation is a
+  symmetry argument, independent of shell radius), so nothing is blocked — but it should not sit
+  unregistered in a picture that is being reasoned from.
+- **NOT superseded by 4011:** the lateral-lattice blocker (4010) and the strict-vs-weak reading of *every GP
+  is the centre of its own 600-cell*. 4011 answers a different question and leaves both open. **Lane: EW /
+  founder.**
