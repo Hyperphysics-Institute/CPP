@@ -36,7 +36,12 @@ import re, subprocess, sys
 commit = sys.argv[1] if len(sys.argv) > 1 else "HEAD"
 
 def git(*a):
-    return subprocess.run(["git", *a], capture_output=True, text=True, check=True).stdout
+    # errors="replace": a single undecodable byte anywhere in the diff used to raise
+    # UnicodeDecodeError here and take the whole gate down. A gate that CRASHES on bad
+    # input is a gate that is not run. Corruption is now REPORTED by encoding_gate.py
+    # instead (added Patch 4014, after this crash surfaced two corrupt files).
+    return subprocess.run(["git", *a], capture_output=True, text=True,
+                          errors="replace", check=True).stdout
 
 msg = git("log", "-1", "--format=%B", commit)
 files = git("show", "--name-only", "--format=", commit).split()

@@ -938,6 +938,25 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4014-EW — corpus hygiene: two corrupt files repaired, and a third gate
+
+- **Found by a gate CRASHING, not by review.** `code/deferral_gate.py` died with
+  `UnicodeDecodeError` reading the 4013 diff. Cause: a heredoc mangled `E₈` into the bytes
+  `E 0x82 0x88` — ASCII `E` plus the tail of U+2088 with its lead byte lost. **Invisible in every
+  rendered view and in `git show`.** Repaired in `series_standard_model/reasoning/4013.md`.
+- **The same sweep found an OLDER one, not mine:** `Eötvös` stored as `E\xb6tv\xc3\xb6s` in
+  `series_phenomena/cosmology/dark_matter/relic1_qm2_gate_smA_fails.md`. Repaired. **Lane: DM —
+  noted, since it means a DM-lane file was written with a broken byte and nothing caught it.**
+- **`code/deferral_gate.py` hardened**: decodes with `errors="replace"`. A gate that crashes on bad
+  input is a gate that is not run.
+- **`code/encoding_gate.py` added**: refuses a patch introducing invalid UTF-8 into a text file;
+  `--all` sweeps every tracked file. Currently **0 of 7908**.
+- **Standing:** silent mojibake is the worst class of corpus error — it does not fail, does not
+  render wrong enough to notice, and survives review. Three gates now: deferrals, absences,
+  encoding. **Lane: EW (done).**
+
+---
+
 ### TODO-4011-EW — the multi-hop chirality question, answered; and one unregistered quantity
 
 - **ANSWERED at Patch 4011 (founder question, filed verbatim).** Multi-hop DI-bit path disparity is **real**

@@ -23,7 +23,7 @@ TOP (170 MeV/qCP) gives **k_max ≈ 313**; then a ×1000 grace factor was grante
 
 The trap could only have worked if fm-scale charge clusters dilated clocks enormously more than their
 mass-energy warrants — and a theory in which they did would NOT reproduce general relativity or survive
-E�tvös-class tests. SM-A dies precisely because CPP's gravity sector is consistent. The mechanism remains
+Eötvös-class tests. SM-A dies precisely because CPP's gravity sector is consistent. The mechanism remains
 registered (FI-RELIC-3) as an elegant composition; its quantitative gate simply closes at registered
 magnitudes. The narrowed-collision-energy kinetics the founder identified is sound physics wherever a
 slow-down EXISTS — the gate finding is that a charge shell's SSV interior is not a place where one does.
