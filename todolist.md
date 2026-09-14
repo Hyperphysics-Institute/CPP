@@ -222,7 +222,7 @@ The Session 36 P1 audit found that all originally-P1 items except TODO-002 were 
 
 ---
 
-## P2 — session-close capture owed (Session 228)
+## P2 — At Thomas's discretion (not blocking next paper)
 
 ### TODO-0974a-CAPTURE — Steps C and D of the Session 228 close
 
@@ -237,8 +237,6 @@ The Session 36 P1 audit found that all originally-P1 items except TODO-002 were 
 - Session log: `session_logs/2026-09-13_session_228_log.md`; pointer-map: `session_logs/transcript-cross-paper.md`.
 
 **Scope note:** most of this session's work is arc-scoped rather than paper-scoped, so Step C's "paper-scoped" trigger applies chiefly to the F.1 / Capotauro / SM-2 material. A future window should decide whether the vignette belongs to `dynamical_substrate_law/documentation_suite/` or to a cross-paper file, and record that choice.
-
-## P2 — At Thomas's discretion (not blocking next paper)
 
 ### TODO-0937-CHIR — Owed items from the C-W46 four-state closure (registered Patch 0938, chirality lane, under PD-006)
 
