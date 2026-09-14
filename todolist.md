@@ -954,9 +954,11 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   (4005–4009) remains blocked on the founder's reading and the lateral construction; the **path**
   route reaches the same conclusion and depends on neither.
 - **A SECOND failure of the cut-and-project class, found in passing.** Edge coordination on the
-  extended patch runs **{12, 13, 14, 18, 19, 26}** — only **120 of 4321** points have z = 12, and
-  **SF-4 requires z = 12**. Independent of 4013's window-boundary argument and pointing the same
-  way: this class is not the substrate's lateral construction. **Lane: EW.**
+  extended patch runs **{12, 13, 14, 18, 19, 26}** — only **120 of 4321** points have z = 12.
+  Independent of 4013's window-boundary argument and pointing the same way: this class is not the
+  substrate's lateral construction. **Wording corrected at 4016:** 4015 put this next to *"SF-4
+  requires z = 12"*, which reads as SF-4 being contradicted. **It is not** — a construction already
+  known to be wrong giving a wrong z says nothing about SF-4. **Lane: EW.**
 - **STILL UNANSWERED and still the deciding question (founder, PD-006(a)):** the strict reading is
   impossible (4013) — is the **weak** reading what is meant, or is the substrate built some other
   way entirely? **Lane: founder.**
@@ -1005,3 +1007,27 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **NOT superseded by 4011:** the lateral-lattice blocker (4010) and the strict-vs-weak reading of *every GP
   is the centre of its own 600-cell*. 4011 answers a different question and leaves both open. **Lane: EW /
   founder.**
+
+---
+
+### TODO-4016-EW — SF-4's z = 12: not revised, but carrying an unchecked inheritance
+
+- **Founder asked (14 Sep) whether the neutrino result needs revising against the lattice. It does
+  not**, and 4015's wording invited the worry — corrected at 4016.
+- **What SF-4 claims, read from `sf-4_neutrinos.tex` rather than from a citation:** `z = 12 as
+  600-cell coordination number — THEOREM (inherited from SS-1, SM-1)`, glossed as *each vertex has
+  12 nearest neighbors arranged icosahedrally*. **True of the polytope, verified: all 120 vertices
+  have exactly 12.**
+- **THE UNCHECKED STEP, and it is real.** That theorem is about **one** 600-cell. SF-4 uses z as a
+  **per-GP property of the substrate** (*every Grid Point emits its fixed DI-bit complement toward
+  one of its z = 12*). The founder ruled at 4009 that space is **innumerable** 600-cells. **Whether
+  every GP of the extended substrate has exactly 12 nearest neighbours has never been shown — it is
+  inherited.** Same gap as the missing lateral construction. **Lane: EW / SF.**
+- **AND THE EXPOSURE IS STEEP.** SF-4 depends on z twice: `M₀ = m_e·z/φ` (linear) and
+  `σ_ν = z^(−2d_eff) = z^(−10)`, so **Σm_ν ∝ z^(−9)**. Reproduced: **64.9 meV at z = 12** (paper's
+  number). **z = 13 → 31.6 meV (half). z = 14 → 16.2 meV.** z is an **integer**, so there is no small
+  perturbation available — the nearest alternative is a factor-2 move on a cosmologically
+  constrained prediction. **Not a reason to doubt z = 12; a reason the inheritance deserves an
+  actual check.**
+- **CONSEQUENCE FOR PRIORITY:** the founder's outstanding lateral-construction question now carries
+  **SF-4's absolute neutrino mass scale** as well as the chirality route. **Lane: founder.**
