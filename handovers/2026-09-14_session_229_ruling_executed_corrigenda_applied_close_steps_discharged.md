@@ -69,7 +69,7 @@ class (0980). A content test is harder than the mention-versus-assertion one and
 | **B** — transcript pointer-map | **DONE at 0981** → entries `018`–`023` |
 | **C** — development vignettes | **DONE at 0981** → the 0976 vignette in `development-chirality-derivations.md`. The rest of the window was governance with no paper scope; its record is the session log and the Tier-4 fragments. |
 | **D** — verbatim reasoning | **DONE at 0980**, in-window → `reasoning/0975.md`, `0976.md`, `0977.md`, `0979.md` |
-| **E** — registries | **DONE per patch.** No new axioms, no new theorems, **count unchanged**. No verdict moved. |
+| **E** — registries | **REPORTED DONE AT 0981 AND WAS NOT — COMPLETED AT 0982.** `research_frontier.md`, `id_block_registry.md` and `todolist.md` were current per patch, but **`project_ledger.md` had no row for any of 0975–0981** and **`paper_regeneration_ledger.md` had no entry for the five papers 0976 modified.** Found only when the founder asked whether every step had run — the same question, and the same failure shape, as Session 228. Filled at 0982. No new axioms, no new theorems, **count unchanged**, no verdict moved. |
 | **E′** — reasoning-capture audit | **DONE at 0980.** Per-patch captured/exempt table in the reasoning index. **No gaps.** `0980` and `0981` recorded EXEMPT rather than assumed. |
 | **F** — reviewer artifacts verbatim | **N/A — no panel was dispatched this window.** Recorded explicitly rather than omitted. |
 | **G** — protocol / OS updates | **DONE at 0981.** `bootup.md` D-9 and the deferral rider both described the pre-0975 override semantics; corrected in both places. No other OS change: 0975b's scope test and Step E′ were enacted by the window with standing, and this lane did not touch them. |
