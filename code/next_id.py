@@ -29,7 +29,9 @@ BLOCKS = {                       # keep in sync with id_block_registry.md
     'dm': (3500, 3599),
     'de': (3400, 3499),
     'gr': (3700, 3799),            # G-GR-BLOCK-3700, founder, 8 Sep 2026 (taught to the gate at Patch 3800; the gate had still reported 3600-3699 EXHAUSTED)
-    'eu': (3800, 3899),            # G-EU-BLOCK-3800, founder, 8 Sep 2026 ("use the 3800 series for EU")
+    'eu': (3900, 3999),            # EU second block, founder, 11 Sep 2026 (taught to the gate at Patch 4000; the gate had still reported EU EXHAUSTED at 3899 while 41 commits sat in 39xx)
+    'ew': (4000, 4099),            # G-EW-BLOCK-4000, founder, 14 Sep 2026 ("a new EW series ... next series block available")
+    'eu-3800': (3800, 3899),       # EXHAUSTED at 3899 (G-EU-BLOCK-3800, 8 Sep 2026) — kept for --check history questions
     'chir': (900, 999),            # substrate chirality arc lane (09xx); entered in the registry at 0936, 13 Sep 2026
     'gr-3600': (3600, 3699),       # EXHAUSTED at 3699 (G-GR-BLOCK-3600, 3 Sep 2026) — kept for --check history questions
     'gr-3300': (3300, 3399),       # CONSUMED — kept so --check answers history questions

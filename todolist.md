@@ -782,3 +782,25 @@ If this file's P1 section grows large (more than ~10 items), reconsider whether 
 If a P1 item turns out not to actually block the next paper on reflection, demote it to P2 with a note explaining why. The discipline is "P1 must be empty before SS-10," not "every deferred item is P1."
 
 - **2026-07-15 (Patch 2502):** OPEN-SR-EPSILON RESOLVED-α (founder-ruled; W2 strength, caveats inherited); OPEN-SR-SF6-RECON-1 RESOLVED; geometric ε-route dead (round-2 unanimous). SR-1 rewrite opened, warm keyword SR1-WARM-2502. Panel next sees SR-1 when the rewrite is a shippable win.
+
+---
+
+### TODO-4000-EW — EW lane opened (block 4000–4099); its queue (registered Patch 4000, EW lane, under PD-006)
+
+**Why this entry exists:** the EW lane is opened on the founder's 14 Sep ruling with two named consumers
+already waiting on it. Both were previously carried only in a paper ledger, a corrigendum and a handover —
+records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the moment the lane opens.
+
+- **`OPEN-EW-7` (renumbered from the colliding `OPEN-EW-5` at Patch 4001) — W mass-breakdown species
+  dependence.** Does SM-2's W mass breakdown depend on the *species* of the W's 12 CPs, or only on their
+  count? **Lane: EW.** Consumer: `SM-2_composition_corrigendum.md` edit (g), the only place a published
+  SM-2 number can still move. Resolution (i) species-blind ⇒ edit (g) is a pure relabel; (ii) species-
+  sensitive ⇒ the 80380 MeV total needs re-derivation.
+- **`OPEN-SM-4` sub-claims (a) and (b) — the Capotauro mechanism.** Its `Dependencies` line has read
+  *"requires EW development"* since 16 May 2026; that is the condition this block exists to supply.
+  **Lane: EW (with SM/SR).** Flagship scale — scoped and declined three times from the chirality lane,
+  correctly, for want of exactly this.
+- **`TODO-0976-RECOMPILE` interaction — do NOT recompile SM-2 yet.** SM-2's `.tex` carries edits (a)–(f)
+  and is owed a PDF, but edit (g) is held on `OPEN-EW-7`. Recompiling now buys a second recompile later.
+  **The other four papers in that entry (Capotauro, chirality_continuum, TARROW-2, F.1) owe nothing and
+  are ready for Isak now.** Lane: EW holds SM-2's release; CHIR holds the other four.
