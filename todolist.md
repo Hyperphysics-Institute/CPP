@@ -820,13 +820,22 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
     correlation is real (+0.133 ± 0.003 at k = 0.30 vs −0.034 ± 0.002 at k = 0), d ≥ 2 at noise over
     the sampled range; growth **shape not asserted**. **NOT CLOSED.**
   - **FOUNDER QUESTION (PD-006(a)) — the deciding variable, and it is a picture not a computation.**
-    When a CP computes its Displace step from its GP's SSV_net, is the PSR suppression set by what sits
-    at **that GP alone**, or by the field **sourced by CPs at a distance**? A1′ gives the first reading,
-    the SSV_net definition gives the second, and the corpus states both. **Zero-range ⇒ the whole route
-    closes; field-range ⇒ the finite-size-scaling study below is required.** **Lane: founder.**
-  - **Finite-size scaling on nested lattices — required only if the answer is field-range.** 4006 ran on
-    120 sites of diameter 5, which cannot resolve ξ > ~2; a critical point can be neither established
-    nor excluded there. **NOT DONE. Lane: EW.**
+    **ANSWERED 14 Sep 2026 (founder, PD-006(a)): "the GPs speak to the CPs, and the CPs move as
+    instructed by the GPs."** Agency is GP-side. Resolved against **A3′** at Patch 4007 — each GP
+    *broadcasts to its PSR shell* and the receiver *computes the moments of the census it receives*, so
+    the GP's state is built from packets arriving from its **first shell**. ⇒ **FIELD-RANGE AT ONE SHELL.**
+    The zero-range closure does **not** apply; 4006's d = 1 correlation is real physics.
+    *(The question as put used "PSR suppression", a term I coined — the founder had to ask what it meant.
+    Corpus phrasing: SSV_abs increases ⇒ PSR is reduced. Coinage retired at 4007.)*
+  - **FINITE-SIZE SCALING — NOW REQUIRED (the answer was field-range), AND RESPECIFIED AT 4007.**
+    4006 said the problem was that 120 sites of diameter 5 cannot resolve ξ > ~2. **The sharper
+    statement: ξ is not defined on that object at all.** A2 says the substrate is a **tessellated**
+    600-cell and `programme_orientation.md` §177 says every GP is the centre of its own 600-cell
+    (shell 7 of A is shell 1 of B) — so a single 600-cell is the **first shell around one host
+    vertex**, not the substrate. **Every computation in this route — 0694, 0813, 1100, 4005, 4006 —
+    ran on the single cell.** Fine for a local observable like η_v; **the wrong object for a
+    correlation length.** The study must be run on a **tessellated patch**, not a bigger polytope.
+    **NOT DONE. Lane: EW.**
   - **Recorded at 4006, not acted on:** ZRP condensation in the zero-range sweep (on-site variance
     2.90 → 10.54). A marginal effect, not a correlation length — but it is a real feature of the
     occupancy distribution and nothing in this lane has costed it. **Lane: EW.**
