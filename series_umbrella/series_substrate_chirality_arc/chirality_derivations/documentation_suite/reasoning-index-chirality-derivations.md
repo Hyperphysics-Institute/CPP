@@ -64,3 +64,61 @@ reasoning-capture rider (bootup §3) at each of Patches 0635–0669.
 *This index was backfilled for Patches 0643–0669 at Patch 0675 (Session 152) — index/synthesis
 hygiene only; the per-patch fragments themselves were captured verbatim at their own patch-times
 across Sessions 148–151 and are unchanged.*
+
+---
+
+## Session 228 — Patches 0936–0974 (13 Sep 2026): the capture gap, stated plainly
+
+*Added at Patch 0977 as Step D of the deferred §15 close (TODO-0974a-CAPTURE).*
+
+**Tier-4 verbatim exists for 5 of this session's 39 patches. For the other 34 it does not, and it
+cannot now be created.** Tier 4 is defined as Opus's substantive reasoning *preserved verbatim*, and
+the window that held it is gone. Writing prose into a `reasoning-<patch>.md` file today would not be
+recovery; it would be a fresh narration wearing the name of the canonical record — the one failure
+the four-tier discipline exists to prevent, since every other tier is defined as *derived from* Tier 4.
+So no such files are written. What follows is the honest substitute: a pointer-map to where each
+patch's substance actually lives, all of it committed at patch time.
+
+### Patches with patch-time verbatim capture
+
+| Patch | Fragment | Load-bearing reasoning it holds |
+|---|---|---|
+| 0936 | `reasoning/0936.md` | The cross-lane E1 response to the DM lane; why the four-state question was answerable from the qDP sector. |
+| 0937 | `reasoning/0937.md` | C-W46 flags F1–F3: why no pseudoscalar operator exists on the antipodal pair; the `A_u(I_h) ↓ A₁u` restriction; the inversion-referent correction. |
+| 0940 | `../../dynamical_substrate_law/documentation_suite/reasoning-0940.md` | L4-B: why vertex-transitivity is invalid once `n̂` is fixed (nine shells) and `Stab(n̂)`-per-shell transitivity is the valid route. |
+| 0941 | `../../dynamical_substrate_law/documentation_suite/reasoning-0941.md` | L4-C: the A6′ Perceive/Displace forcing; why `r(−ê;v)` is the reverse traversal and not a missing edge. |
+| 0949 | `../../dynamical_substrate_law/documentation_suite/reasoning-0949.md` | L4-A (Fable): the reversal-odd uniqueness proof; why `A = 0` and truncation are *not* forced. |
+
+### Patches without verbatim capture — where the substance is instead
+
+These artifacts are finished prose, not raw reasoning, and most carry a verify script. They are
+Tier-3-grade material sitting at Tier-4 addresses; the distinction matters when a later window asks
+"what did the lane actually consider and reject," because these files record conclusions and
+generally not the discarded alternatives.
+
+| Patches | Substance lives in |
+|---|---|
+| 0938, 0939 | `todolist.md` (TODO-0937-CHIR); `code/deferral_gate.py` docstring; commit messages. |
+| 0942–0945 | `series_standard_model/corrigenda/SM-2_composition_corrigendum.md` + `corrigenda/code/0943_…py`, `0945_…py`; `corrigenda/W_ring_harmonization_query.md`. |
+| 0946–0948 | `review/0946_w0_chirality_source.md`; `review/0947_w0_ring_order.md` (6/6). |
+| 0950, 0951 | `review/0950_capacity1_residual_consumption.md` (7/7); `review/0951_c3_klift_recompute.md` (5/5). |
+| 0952–0960 | `review/0952_…package.md`, `0953_conv047_adjudication.md`, `0954_…package.md` + `…wrapper.md`, `0955_…`, `0956_…addendum.md`, `0957_…`, `0958_…final_round.md`, `0959_round_economy_resolution.md`, `0960_conv048_adjudication_and_enactment.md`; **reviewer returns verbatim** at `reviews/verbatim/` (committed at 0974a, Step F). |
+| 0961–0968 | `sketches/0961_piece1_scoping.md`, `0963_piece1_route_a_first_step.md`, `0964_piece1_hostile_pass.md`; `0965_piece1_assembly.md`, `0966_piece1_physical_delta.md`; `review/0967_conv049_reviewer_package.md`, `0968_conv049_adjudication.md`; `code/0968_three_plane_lemma.py` (5/5). |
+| 0969–0971 | `review/0971_tarrow2_reread.md` (6/6); 0969's content is its commit message and the `reviews-CONV-049.md` annotations. |
+| 0970 | `sketches/0970_1dbeta_scoping.md`; `problem_histories/PH-OPEN-CHIR-1d-beta.md`. |
+| 0972–0974 | `../../dynamical_substrate_law/l4e_delta_epsilon.md` (5/5); `…/nonreciprocity_is_the_arrow.md` (6/6); `handovers/2026-09-13_session_228_…md`. |
+
+### Why the gap happened, and what changed because of it
+
+The capture rider (bootup §3) binds Tier-4 capture to the patch-presentation contract precisely
+because that contract is the one habit honoured unasked. It held for 0936, 0937, 0940, 0941 and 0949
+— **and those five are the session's derivations.** It lapsed across the panel, corrigendum and
+scoping patches, which were not felt to be "physics/derivation" patches. That intuition was wrong in
+at least three places: CONV-048's joint-corner finding, CONV-049's 3-plane lemma and 0966's
+proxy-sensitivity bound were all substantive reasoning, and two of the three came from reviewers
+rather than from the lane.
+
+Nothing in this note is a rule change; the lane does not amend the operating system from a
+documentation patch. It is a recorded observation for whoever next revisits the rider: **the
+"pure-bookkeeping/organizational" exemption is doing more work than it was designed for, and a panel
+adjudication is not bookkeeping.**

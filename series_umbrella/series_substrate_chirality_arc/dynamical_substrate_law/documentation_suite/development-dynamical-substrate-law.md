@@ -1444,3 +1444,111 @@ and must be checked, not inherited. The structural reason the edge case can
 differ is already on record in the scoping doc: the first-shell-to-first-shell
 (B.2) class, which vanishes by perpendicularity at vertex-aligned, does NOT
 vanish at edge-aligned.
+
+---
+
+# Session 228 — the F.1 half (Patches 0940, 0941, 0949, 0972, 0973)
+
+*Tier-3 vignettes, written at Patch 0977 (14 Sep 2026), one window after the work. Step C of the
+§15 close was deferred at 0974 and filed as TODO-0974a-CAPTURE. The arc-level half of the session —
+C-W46, piece 1, the CONV panels, TARROW-2 — is filed in
+`chirality_derivations/documentation_suite/development-chirality-derivations.md`; a session is not a
+subject, so the session was split by subject rather than kept together.*
+
+**Patch-time verbatim exists for all three derivations in this vignette set** —
+`reasoning-0940.md`, `reasoning-0941.md`, `reasoning-0949.md` — which is why the F.1 half of the
+session is the better-documented half. 0972 and 0973 have no fragment; their substance is in
+`l4e_delta_epsilon.md` and `nonreciprocity_is_the_arrow.md`.
+
+## Patch 0940 — L4-B: vertex-uniformity derived, but not by the obvious route
+
+MA.1 asserts the DI-bit propagation rate is independent of the vertex it originates at. The natural
+derivation is vertex-transitivity of the 600-cell, and **that derivation is invalid**: once `n̂` is
+fixed, the vertices are not equivalent — they fall into nine shells graded by `v·n̂`. What does the
+work is narrower and correct: `Stab(n̂)` is transitive on each shell. Vertex-uniformity follows from
+A11 by that route.
+
+The same distinction forced a wording correction in the paper. §4.3 read as though the *current* were
+the same at every vertex; it is not. The **construction** is vertex-independent; the **value** tracks
+the shell. That sentence had been carrying an ambiguity that the invalid derivation would have
+papered over.
+
+## Patch 0941 — L4-C: the antisymmetric current forced, and an equation with no referent
+
+MA.2's antisymmetric current is forced by A6′'s Perceive/Displace split together with L4-B, and
+recovers `α₁ = 6/φ²` as an independent check. It **consumes** L4-B rather than running parallel to
+it, correcting how 0646 had the dependency.
+
+The derivation exposed a small but real defect in the paper's own equation. MA.2 sums
+`[r(ê; v) − r(−ê; v)]` over first-shell directions — but `−ê` **is not an edge direction at `v`**,
+because the first-shell edge set is not centrally symmetric. The literal reading has no referent.
+What the construction requires is the *reverse traversal* of the same edge, governed by the rate law
+at the far end — which is exactly why vertex-uniformity has to be in hand first. This is the kind of
+thing that survives many readings precisely because a reader supplies the sensible meaning without
+noticing the text does not state it.
+
+## Patch 0949 — L4-A: the rate law's form derived at one harmonic, and the residual named honestly
+
+Run by Fable. Forced: `r₀` isotropy by arc-transitivity; and the reversal-odd first harmonic is
+**unique up to scale**, equal to MA.1's form. That is the result the arc most wanted, and it is
+theorem-grade on its own.
+
+Not forced, and this is the part that had to be stated rather than glossed: the first-harmonic family
+is **two**-parameter, `A(m̂·n̂) + B(ê·n̂)`. Neither `A = 0` nor truncation at first harmonic is forced.
+The `A`-term cancels identically in the antisymmetric current, so every `O(δ¹)` result sees only `B`
+and is untouched — but the NESS and `O(δ³)` results consume `A = 0` and must say so. The honest
+statement of the outcome is that V3/W3's conditionality is **narrowed** to "MA.1 beyond its
+reversal-odd first harmonic," **not lifted**. Exclusion class E1 was narrowed accordingly.
+
+## Patch 0972 — L4-E: the δ–ε relation is pinned, and pinning it exposes a commitment
+
+Constant-speed traversal of a perturbed edge gives `δ = −ε` at first order. The relation is pinned;
+`δ` and `ε` are not independent framework inputs, as the paper had said.
+
+The finding that mattered was not the relation but what deriving it uncovered. Reading C writes
+`ℓ(ê) = ℓ₀(1 + ε ê·n̂)` and calls it an effective length — but `ê·n̂` is reversal-**odd**, so the same
+edge acquires two different values by traversal direction (0.999691 versus 1.000309 at the physical
+bias). **A metric length cannot do that.** Reading C's `ℓ` is a directed traversal cost, and the
+substrate it describes is non-reciprocal — a physical commitment the equation had always made and the
+prose had never stated.
+
+The counterfactual is the real content: were `ℓ` a genuine reversal-even length depending on the
+midpoint `m̂·n̂`, then `r = c/ℓ` is reversal-even and generates **the `A`-term, not `δ`** — measured
+`A = −ε`, `δ = 0` exactly. So **MA.1's reversal-odd first harmonic cannot come from a metric length
+perturbation at all; its form requires non-reciprocity.** A bonus fell out against CAPACITY-1's
+residual: the same expansion fixes the second-order coefficient at `+ε²(ê·n̂)²`, reversal-even, so the
+reversal-**odd** quadratic — the superadditive channel of 0955/0957 — has coefficient **zero** in the
+Reading-C realisation. That is the first positive statement about that channel rather than a bound,
+though absent-in-this-realisation is not absent-in-all.
+
+## Patch 0973 — the non-reciprocity is the T-arrow, not a new field
+
+The founder's response to 0972's escalation was that a field seemed to be present, costing more one
+way than the other, but that we are only looking at a lattice — so surely this is just geometry.
+**He was right, and that is precisely why the asymmetry cannot be geometric.** A metric is a
+symmetric bilinear form, so every length built from an inner product is reversal-even on any lattice
+whatever; checked over 200 arbitrary positive-definite metrics, forward and backward differ by
+exactly 0.0. The structure that permits a directed length is a Randers/Finsler 1-form `β = ε n̂` —
+mathematically real, **but not a new field**, since `n̂` is already a substrate primitive. What
+changes is whether `n̂` enters as a direction, giving even structure only, or as a 1-form, which makes
+odd structure available.
+
+The decisive test settled the physical identification. Detailed-balance violation comes **entirely**
+from the reversal-odd part: the even term `A(m̂·n̂)` gives maximum cycle affinity exactly 0.0 at
+`A = 0.3`, `0.5` and `1.0`, violating 0 of 1200 faces, while the odd term violates 420. So *costs
+more one way* ⟺ *detailed balance violated* ⟺ *not time-reversible* — and with THEO-CHIR-MERGE-2
+(`sign(δ)` is P-even and T-**odd**, an arrow and not a chirality), **the non-reciprocity is the
+T-arrow the arc already carries as W3.** The substrate is not non-reciprocal in space; its geometry
+is reciprocal. Its *dynamics* are non-reciprocal *in time*, which is what an arrow of time means.
+The closest physical analogy is light in a flowing medium: the distance is identical both ways, the
+traversal time is not, because the medium moves — and the substrate's "flow" is its advance through
+Absolute Moments, which is exactly what the T-arrow names.
+
+Recorded at the time, and worth repeating: the identification reversal-odd ⟺ T-odd ⟺
+detailed-balance violation was verified here and had **not previously been stated in one place**,
+though MERGE-2 and TARROW-2 each held half of it.
+
+**Sequel (Patch 0976, 14 Sep 2026).** The founder ruled: relabel accepted. `ℓ` is a directed
+traversal cost; the equation stands and only its description was wrong. Written into `capotauro.tex`
+and `dynamical_substrate_law.tex` at 0976; ruling recorded at
+`founders_voice/0976_ruling_directed_traversal_cost.md`.

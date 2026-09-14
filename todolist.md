@@ -250,7 +250,15 @@ regenerated (founder / Isak, per the Binary Artifact Workflow) before any Zenodo
 - **An observable selecting the alternating W⁰ ring order over the blocked order.** None on file; carried with
   `OPEN-EW-5`. Lane: EW.
 
-### TODO-0974a-CAPTURE — Steps C and D of the Session 228 close
+### TODO-0974a-CAPTURE — Steps C and D of the Session 228 close — **CLEARED at Patch 0977 (14 Sep 2026), with one part declared unrecoverable**
+
+**Step C (Tier-3 vignettes): DONE.** Written by subject, not by session — the F.1 derivations (L4-A/B/C/E, `δ = −ε`, the non-reciprocity result) into `dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`; the arc-level work (C-W46, SM-2/W, piece 1, CONV-047/048/049, the V3 and TARROW-2 re-reads, 1d-β, R-1/R-2) into `chirality_derivations/documentation_suite/development-chirality-derivations.md`. **That is the placement choice this entry asked a later window to make and record: a session is not a subject, so no cross-paper vignette file was created.**
+
+**Step D (Tier-4 verbatim): NOT DONE, AND NOT DOABLE — 34 of the session's 39 patches have no fragment, and the window that held the reasoning is gone.** Tier 4 is defined as reasoning *preserved verbatim*, and every other tier is defined as derived from it; writing fresh prose into a `reasoning-<patch>.md` file today would put a narration under the name of the canonical record, which is the specific failure the discipline exists to prevent. **No such files were written.** What was written instead is an honest pointer-map at `chirality_derivations/documentation_suite/reasoning-index-chirality-derivations.md`, listing the five patches that do have patch-time verbatim (0936, 0937, 0940, 0941, 0949 — the session's derivations) and, for the other 34, where the substance actually sits. Every pointer was checked to resolve. **This item is closed as far as it can be closed; the verbatim record for those 34 patches is a permanent loss, recorded rather than papered over.**
+
+**Observation carried forward, not enacted (the lane does not amend the OS from a documentation patch):** capture held for all five derivation patches and lapsed across the panel, corrigendum and scoping patches, which were not felt to be "physics/derivation" patches. That intuition was wrong in at least three places — CONV-048's joint-corner finding, CONV-049's 3-plane lemma and 0966's proxy-sensitivity bound were all substantive reasoning, and two of the three came from reviewers. Whoever next revisits the reasoning-capture rider should know that **the pure-bookkeeping exemption is doing more work than it was designed for, and a panel adjudication is not bookkeeping.** Lane: governance.
+
+*Original entry, for the record:*
 
 **Owed:** Tier-3 development vignettes (Step C) and the Tier-4 verbatim reasoning narrative (Step D) for Session 228, patches 0936–0974a.
 

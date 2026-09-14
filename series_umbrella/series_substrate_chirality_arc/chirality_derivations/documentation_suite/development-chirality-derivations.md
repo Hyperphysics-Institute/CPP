@@ -119,3 +119,190 @@ review-closed BRIDGE-1 theorem was left untouched.
 
 With these, the bridge's three reachable faces are mapped (B-i closed, B-ii and B-iii scoped), and the
 only verdict-moving work left lives behind the §14.17 viability ceiling.
+
+---
+
+# Session 228 — Patches 0936–0974 (13 Sep 2026)
+
+*Tier-3 vignettes, written at Patch 0977 (14 Sep 2026), one window after the work. Step C of the
+§15 close was deferred at 0974 for context budget and filed as TODO-0974a-CAPTURE.*
+
+**Placement decision (the choice TODO-0974a-CAPTURE asked a later window to make and record).**
+Session 228's work splits cleanly by subject, not by session, so it is filed by subject rather than
+into one cross-paper file. The rate-law derivations (L4-A/B/C/E), the `δ = −ε` pinning and the
+non-reciprocity result are F.1's and are filed in
+`dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`. The arc-level
+work — C-W46, piece 1, the CONV panels, the CAPACITY-1 and TARROW-2 re-bases, 1d-β — is filed here.
+The SM-2 and Capotauro corrigenda were produced cross-lane by this lane and are recorded here in
+summary, with their substance in `series_standard_model/corrigenda/SM-2_composition_corrigendum.md`
+and the 0937 review file. No cross-paper vignette file is created; a session is not a subject.
+
+## Patches 0936–0937 — C-W46's flags closed; the qDP chirality operator is the charge sign
+
+The session opened on a cross-lane question from the DM lane and closed three flags (F1–F3) left on
+Finding C-W46. The result is a genuine correction, not a confirmation: **the antipodal-pair
+configuration space carries no pseudoscalar operator at all.** `A_u(I_h)` restricts to `A₁u(D₅d)`,
+which has no support on the pair, so a purely geometric pseudoscalar has vanishing matrix element
+there. What is actually nonzero is the **charge sign**: `Ĉ^qDP = χ·(1/6)·ŝ`, geometrically trivial,
+sitting in `A₁g(D₅d) ⊗ C-odd` under the extended group `D₅d × Z₂^C`. The pseudoscalar content is
+carried by the coefficient `χ`, not by a `D₅d` irrep. The previously printed `A₂u` assignment had
+described a polar axial coordinate.
+
+The consequence for the DM lane was decisive and was the reason the question came: reading E1 is
+case (c), `S = +qCP`, **unconditional on a reading** rather than contingent on one. The inversion
+referent was also pinned — `v ↦ −v` is the local point group's `p ↦ φn̂ − p`, while `n̂ ↦ −n̂` is
+the substrate mirror and not a group element at all, a distinction the prose had been eliding.
+Verified at `code/0937_d5d_extended_group_bookkeeping.py`, 14/14.
+
+## Patch 0938 — the owed items filed, because a review file is not a queue
+
+The founder asked whether 0936/0937's corrections and flags were recorded anywhere retrievable and
+actionable. They were in the review file, in `frontier_sectors/CHIR.md`'s resolved entry, and in a
+dated `theorem-registry.md` bullet — three records, no queue. `TODO-0937-CHIR` was registered in
+`todolist.md`. This was the third arc in a row to lose owed items the same way (after TODO-3930-EU
+and TODO-3938-DM), which is what produced the next patch.
+
+## Patch 0939 — the deferral gate (D-9)
+
+The rule was generalised and made mechanical: a deferral is a write, in the same commit, gated.
+Any patch whose text puts something aside files it in `todolist.md` in the same `git am`, checked by
+`code/deferral_gate.py` before `git format-patch`. The insight behind the rule is that the moment of
+a deferral is the **patch**, not the session close — the operating system had already said a session
+identifying a deferral adds it to the queue, but that rule was audited at a session close that,
+under D-8, rarely fires.
+
+## Patches 0942–0948 — SM-2's charge defect, found, extended, and closed
+
+Writing the Capotauro corrigendum surfaced something larger: **SM-2's as-written cage list
+contradicts SM-2's own charge section.** A central `−qCP` with a neutral extra DP screens to −2/3
+where −1/3 is required. The founder ruled the fix extends, and a full audit
+(`0943_sm2_charge_audit.py`, 6/6) showed the defect is exactly the down-type family — down, strange
+and bottom — and nothing else among the fermions; up-type at +2/3, charged leptons at −1 and the
+neutrals are all correct as written. The gap is −1 for all three despite cage occupancies of
+N_k = 2.5, 30 and 3000, so it is cage-independent and the repair generalises exactly. Mass fits are
+label-level; no published number moves.
+
+The same audit then found a defect **outside** the down-type family that the ruling did not cover:
+the W. The cage list read "Linear hDP chain", but an hDP chain is a chain of bound neutral pairs and
+carries charge 0, while W^± carries ±1 — the single residual entry in SM-2 that could not reproduce
+its own charge. It was not closable by arithmetic. The founder ruled the W⁰ neutral, a ring of three
+qDPs and three eDPs; harmonising that against the Weak Sector lane (SF-2 v1.0 Thm 4.2, via
+`capotauro.tex`) identified the ring as the **Petrie hexagon of the first-shell icosahedron**, six
+vertices, one DP object per site, 12 CPs — preserving SM-2's existing member count while correcting
+both topology and species. The closing audit (`0945_sm2_charge_audit_closure.py`, 6/6) shows zero
+residual charge defects across all 17 cage entries.
+
+The ring's *order* remained. Applying the founder's empirics criterion honestly **excluded** the
+chiral arrangement: `χ` is odd under all 60 orientation-reversing lattice elements, so with `χ ≠ 0`
+the reflections are not symmetries of the physical substrate, under which a chiral order splits into
+two inequivalent neutral ring states — against the Standard Model's single W³. Of the two achiral
+orders the founder chose alternating, on symmetry economy, recorded explicitly as a structural
+assignment pending an observable, on the same epistemic footing as SM-2's N_k values. No observable
+yet selects it; that falls to the EW lane with `OPEN-EW-5`.
+
+## Patches 0950–0951 — the V3 re-read: all three CAPACITY-1 conditions survive
+
+With L4-A's residual named (see the F.1 vignettes), the question was whether CAPACITY-1's three
+conditions still hold. **C1 robust**: both residual terms are per-edge functions, so no
+distinct-edge coupling is introduced, and the 0828 spectral bound never references the rate law at
+all. **C2 robust where it claims**: a constant `A` promotes the steady current from `δ³` to `~A²δ`,
+two orders, but C2 is stated at the physical bias, where the current spread across `A ∈ [0,1]` is a
+factor of 2 with `O(J²) ≤ 1.1e-9`. **C3 clears**: `K_lift` is 0.0526–0.0532 across the scanned
+domain against thresholds giving 36–80% margin. The structural reason C3 barely moves is worth
+keeping: **η is a sign**, so a reversal-even per-edge scale reaches the correlator only through
+relative within-vertex weighting, second order on ρ. This also corrected 0950, which had over-weighted
+a 10.9% measure shift that does not transfer to `K_lift` at all.
+
+## Patches 0952–0960 — CONV-047 fails quorum, CONV-048 costs nine turns and is enacted
+
+CONV-047 was dispatched to five seats and **failed quorum: 2 valid returns, 3 rejected.** One seat
+stated in its own reasoning that it was simulating the whole panel; one reported sub-second timings
+for a 47-second script. A five-slot win cannot be carried on two seats, so the registered wording
+stood. The two valid seats nonetheless established the result that mattered — the reversal-odd
+uniqueness survives independent audit — and both independently demanded the admissible `A`-domain,
+which was computed and adopted.
+
+The re-dispatch as CONV-048 was **reformatted on the founder's report that the package was confusing
+to read**, and the diagnosis is worth preserving: the package asked questions *about* C1/C2/C3 while
+never defining them, which is exactly how one rejected seat invented a "C2 class" and another
+misnumbered every question. Adding a glossary, moving internal bookkeeping to a wrapper, putting
+questions last and telling reviewers that honest failure beats invention fixed most of it — Gemini,
+which had fabricated five seats at CONV-047, disclosed honestly that it could not run the scripts.
+
+CONV-048 then ran five more turns. Grok and Copilot independently demanded the **joint corner**
+(negative `A` × odd quadratic); it was untested, and running it found two things the lane had not
+known: the admissible domain is **not a rectangle** (the published `|A| ≤ 1.025` is a `C = 0` slice;
+at `A = −1, C = +φ⁻³` the rate goes negative), and stacking is **superadditive** — the joint `J²` is
+4.0× the sum of separates. Enacted at 0960 with five named residuals, the binding one being that
+**residuals are coupled, so no general compositional-robustness principle may be inferred and any new
+residual must be assessed jointly.**
+
+## Patch 0959 — R-1 and R-2, enacted at the founder's cost, not the lane's
+
+The founder's report on CONV-048 was "nine turns is a lot of effort for me," and the cause recorded
+against the lane is exact: the panel produced three of four substantive findings, but **every
+correction to the lane's own text came from the lane, after dispatch** — the founder's dispatch
+cycles had been used as a debugging loop, and all four hostile tests were cheap and runnable
+beforehand. **R-1**: run the hostile pass before dispatch, testing parameters *jointly*, the full
+admissibility domain rather than one slice, and the next order of any expansion proposed for
+truncation. **R-2**: two full dispatches per claim, then enact on reviewers' stated conditions or
+abandon and bank what stands alone. An extra round costs the lane minutes and the founder a full
+manual five-seat dispatch.
+
+## Patches 0961–0968 — piece 1: symmetry route closed, then discharged in the dissent's form
+
+Scoping (0961) closed the obvious route: four of nine shells have edge orbits `[1,1,5,5]` under
+`Stab_v`, so a covariant observable may put all weight on a singleton and reach `p = 1`. **Symmetry
+permits exactly the collapse piece 1 must exclude** — Route B eliminated, not untried. That
+reframed the problem as the **η-identity** question: not "is some observable non-degenerate" but
+"which observable does the dynamics single out, and what are its weights?"
+
+Route A found the corpus already pinned them: every η construction (0819, 0820, 0821) builds the
+per-edge weight as `sign det[·]`, unit magnitude; for unit weights participation equals support; and
+the 4-D orientation floor argument was already on file. The hostile pass (0964, R-1's first use)
+cleared all three checks and found the reviewer trap in our own corpus — 0820 §(2)'s superseded
+"4-edge det reads only 4 (⇒ emergent)", two paragraphs from the uniform-weight claim, which reads
+cold as our corpus contradicting our floor.
+
+Two rounds of pre-dispatch returns were unanimous HOLD and produced four corrections, of which two
+should be kept in mind permanently. Grok's: *the MC freezes the weights and moves only edge means,
+so it cannot show the substrate is incapable of deforming them* — adopted verbatim as a named limit.
+GPT's: *four vectors to define chirality does not imply four coefficients to read it* — correct, and
+it withdrew link (c)'s universal form. The headline was withdrawn on both seats' independent ruling:
+not "V3 unconditional on the axioms" but the floor **replaced** by a structural identification,
+GPT's formulation being that this prevents the last assumption disappearing by renaming rather than
+deriving it.
+
+CONV-049 was then dispatched **with its effort bound written at dispatch** — the CONV-047/048 miss
+not repeated — and closed in one round. The adjudication is the part worth preserving: A was 5/5 YES
+and B was 3 YES / 2 NO, so the rule's condition was met, **but it was enacted in the dissent's
+form.** The two NO seats were right and the three YES seats did not defend their inference: "whole
+vertex figure" names the *index set* of a sum and does not force nonzero terms, which is the exact
+smuggling question B was written to prevent; one YES was itself reasoned from the dissent's geometry.
+Link (c) became Grok's **3-plane lemma** — at most 5 of the 12 first-shell directions lie in any
+admissible `span{n̂,r̂₁,r̂₂}`, so support ≥ 7 everywhere and `p ≥ 7 > 4`, stronger than required, and
+it explains 0964's hostile minimum of exactly 7, which had been measuring this lemma without naming
+it. CAPACITY-1 now carries the axioms, the derived first harmonic, and an explicit structural
+premise — **not unconditional, and never to be described as such.**
+
+## Patches 0969–0971 — dissents recorded as satisfied; TARROW-2 re-read
+
+0969 recorded that both CONV-049 dissents were **satisfied, not overridden** — a distinction that
+decays fast if not written down, since the vote tally alone would suggest otherwise. 0971 then
+tested the 1d-β problem history's prediction that discharging Mechanism A would unconditionalize the
+temporal verdict as well. **Half right, and the half that matters is right.** Reproduced at `A = 0`:
+1200 faces, `a+b+c = 0` to 2e-16, exactly 420 with nonzero `abc`, slope 3.00. With a constant
+`A = 0.3` the slope drops to 0.99, because the effective tilt becomes position-dependent and the
+per-face `O(δ¹)` cancellation fails — so TARROW-2's order-counting **consumes** `A = 0`. But the same
+420 faces violate detailed balance at every `A` tested: the residual changes the **order** of
+failure, not **whether** it fails, and it fails **earlier**. Structurally identical to CONV-048's C2
+finding, and the same repair applies — a scope clause, not a re-derivation and not a panel.
+
+## Patch 0970 — 1d-β scoped, and a correction to the lane's own framing
+
+1d-β asks whether FI-C-9 is primitive or emergent, **not** to derive it. Its problem history names
+two closure routes, and both arms of the first were discharged the same day — Mechanism A at 0960,
+pointwise non-degeneracy at 0968. The status line was stale in two places and was corrected. The
+lane's own earlier framing of 1d-β as "derive FI-C-9 itself" was **wrong**; that is OPEN-SM-4(b), a
+flagship programme, cross-sector, gated on EW development, and it was scoped and declined twice
+rather than opened from inside this lane.
