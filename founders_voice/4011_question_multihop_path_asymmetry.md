@@ -55,7 +55,8 @@ re-radiations are chained. This **confirms FI-C-9 = V3** (chirality primitive, n
 independent of the susceptibility line — and it is the same fact as Patch 0973's *sign(δ) is P-even,
 T-odd*, reached from path geometry rather than cycle affinity.
 
-**Not resolved:** the *"10% of the radius of the PSR"* shell. That figure appears **nowhere in the corpus**
-(grepped). It is not adopted and not guessed. If it is a real quantity it needs registering; if it is a
-working estimate it needs saying so. The 4011 result does not depend on it — the cancellation is a
-symmetry argument and is independent of the shell radius.
+**~~Not resolved~~ — RETRACTED AT PATCH 4012.** 4011 wrote that the *"10% of the radius of the PSR"* shell *appears nowhere in the corpus*. **It is false.** The quantity is the **PSR shell radial thickness**, **σ_r/⟨r⟩ ≈ 0.096 — finding F-E2-3** — recomputed at **D-SUBPSR-FIELD pass 3** under **R-OUTWARD-FANOUT** (Patch 3135, 14 Aug 2026) as **σ_r/⟨r⟩ = 0.093–0.076 over N = 6–22 hops**, with **D-ARC-GAMMA** minted as the retention geometry on it, and carried in several `founders_voice/` files. It is **derived, not an estimate.** My 4011 grep covered four paths and searched one string, `10% of`, and missed every one of those names. **Third scoped-grep-generalised error in nine patches** (4003, 4007, 4011); mechanized at 4012 as `code/absence_gate.py`.
+
+**And the question above was already registered, in the founder's own words, a month earlier.** `founder_clarification_outward_fanout_2026-08-14.md`: *"I think this will produce a PSR shell thickness (10% before), as you calculated earlier, **because the total DI-bit hop count varies when it's specified as the path from GP_origin to GP_PSR**."* So 4011's claim (A) was not a finding — the measurement stands, the framing overstated it.
+
+**Answer (B) is unaffected and is now stronger.** 4011 summed over all non-backtracking paths; 4012 re-ran it on the **R-OUTWARD-FANOUT** path set the corpus actually registers (anti-radial excluded) — chirality sum still zero to machine precision at K = 3, 4, 5 and δ = 0, 0.35, and the mirror map was verified to preserve the outward-radial test `x·d` itself. The cancellation survives contact with the real propagation rule.

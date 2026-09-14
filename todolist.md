@@ -928,12 +928,19 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   2 hops carry no 4D pseudoscalar at all; 3/4/5 hops cancel to machine precision over 2.1M paths at every
   tilt tested; and the cause is that H₄ contains reflections, so the result holds at **every** hop count.
   **Confirms FI-C-9 = V3 independently of the susceptibility line.**
-- **OPEN — an unregistered quantity in the founder's picture. Lane: founder.** *"DI Bits to a PSR shell to
-  GPs that are 10% of the radius of the PSR"* — the **10%** figure appears **nowhere in the corpus**
-  (grepped). If it is a real substrate quantity it needs registering with its derivation; if it is a working
-  estimate it should be labelled one. **4011's result does not depend on it** (the cancellation is a
-  symmetry argument, independent of shell radius), so nothing is blocked — but it should not sit
-  unregistered in a picture that is being reasoned from.
+- **~~OPEN — an unregistered quantity~~ — RETRACTED AT 4012, THE CLAIM WAS FALSE.** The 10% shell is the
+  **PSR shell radial thickness σ_r/⟨r⟩ ≈ 0.096 (F-E2-3)**, recomputed at **D-SUBPSR-FIELD pass 3** under
+  **R-OUTWARD-FANOUT** (Patch 3135) as **0.093–0.076 over N = 6–22 hops**, with **D-ARC-GAMMA** minted on
+  it. **Derived, not an estimate; registered, not missing.** Nothing owed to the founder here.
+- **NEW at 4012, and it is a real flag: the 10%-band derivation runs on an FCC PROXY.**
+  `series_phenomena/cosmology/sea_gravitation/scripts/3133_subpsr_cascade.py` builds an **FCC lattice**
+  (integer triples, even coordinate sum, 12 neighbours) — z = 12 matches the icosahedral coordination, but
+  it is **3D and periodic** where the substrate is 4D and aperiodic. For a shell-*thickness* number the
+  proxy may well be adequate; **that is not the EW lane's call to make.** Does **not** unblock 4010.
+  **Lane: EU / SEA-GRAV.**
+- **Recorded at 4012:** the single 600-cell **saturates by 5 hops** and has **zero** 6-hop outward-fanout
+  paths, so the corpus's N = 6–22 hop regime cannot live on one cell — independent agreement with the
+  founder's 4009 extended-lattice ruling. **Lane: EW.**
 - **NOT superseded by 4011:** the lateral-lattice blocker (4010) and the strict-vs-weak reading of *every GP
   is the centre of its own 600-cell*. 4011 answers a different question and leaves both open. **Lane: EW /
   founder.**
