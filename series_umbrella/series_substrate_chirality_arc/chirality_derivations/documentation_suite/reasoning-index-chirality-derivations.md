@@ -122,3 +122,29 @@ Nothing in this note is a rule change; the lane does not amend the operating sys
 documentation patch. It is a recorded observation for whoever next revisits the rider: **the
 "pure-bookkeeping/organizational" exemption is doing more work than it was designed for, and a panel
 adjudication is not bookkeeping.**
+
+---
+
+## Session 229 — Patches 0975–0979 (14 Sep 2026): Step E′ audit and Step D capture
+
+*Written at Patch 0980, in the window that produced the patches — capture, not reconstruction.*
+
+**Step E′ audit (the per-patch captured/exempt list the new §15 step requires), scope test applied by
+content rather than wrapper:**
+
+| patch | ships | finding? | verdict |
+|---|---|---|---|
+| **0975** | `code/deferral_gate.py` | yes — the override token's bare substring test read a *mention* as an *assertion* | **CAPTURED** → `reasoning/0975.md` |
+| **0976** | five `.tex` sources | yes — the corrigendum's "four A₂u labels" instruction conflates the operator with the state space; blind substitution would corrupt three correct statements | **CAPTURED** → `reasoning/0976.md` |
+| **0977** | — | yes — the capture gap's root cause (exemption applied by wrapper), which 0975b then enacted as the scope test | **CAPTURED** → `reasoning/0977.md` |
+| 0978 | — | — | **never applied**; superseded before push, no commit exists, nothing to capture |
+| **0979** | — | yes — 0975b's two count errors; `0974a`'s exemption overturned under 0975b's own test | **CAPTURED** → `reasoning/0979.md` |
+| **0980** | — | no derivation, no computation, no finding — it files these four fragments and this table | **EXEMPT**, recorded rather than assumed |
+
+**No gaps.** Every patch in this window that shipped a script or recorded a finding has a fragment.
+
+**Note on applying the new test to oneself.** Three of this window's four patches would have failed the old
+wrapper heuristic: 0976 looks like transcription, 0977 like documentation, 0979 like bookkeeping. Each
+contained a finding. That the misclassification is easy to make from inside is the reason Step E′ demands an
+explicit per-patch list rather than a judgement.
+
