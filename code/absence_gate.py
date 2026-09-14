@@ -45,8 +45,15 @@ def main():
                          capture_output=True,text=True,errors="replace").stdout
     diff = subprocess.run(["git","show","--format=","--unified=0",ref],
                           capture_output=True,text=True,errors="replace").stdout
+    # research_frontier.md's prepend convention re-adds the PREVIOUS header line as an
+    # "Earlier **Last updated:**" line on every patch, so historical claims quoted there
+    # fire as if they were new. Skip those: they are records, not claims being made now.
+    # (Added at 4017, after this gate produced exactly that false positive on itself. A
+    # gate with systematic false positives gets ignored, which is the failure mode it
+    # was built against.)
     added = "\n".join(l[1:] for l in diff.splitlines()
-                      if l.startswith("+") and not l.startswith("+++"))
+                      if l.startswith("+") and not l.startswith("+++")
+                      and not l[1:].lstrip().startswith("Earlier **Last updated:"))
     body = msg + "\n" + added
 
     hits = []

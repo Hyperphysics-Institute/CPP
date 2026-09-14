@@ -1031,3 +1031,27 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   actual check.**
 - **CONSEQUENCE FOR PRIORITY:** the founder's outstanding lateral-construction question now carries
   **SF-4's absolute neutrino mass scale** as well as the chirality route. **Lane: founder.**
+
+---
+
+### TODO-4017-EW — the 600-cell honeycomb is hyperbolic, and that closes the strict reading
+
+- **Computed at 4017 (Coxeter Gram signatures, method first checked against five known cases):**
+  the **Euclidean** regular honeycombs of 4-space are exactly **{3,3,4,3}, {4,3,3,4}, {3,4,3,3}** —
+  **none a 600-cell honeycomb**, confirming 4009's dihedral-angle result by an unrelated route.
+- **BUT {3,3,5,3} EXISTS AND IS HYPERBOLIC.** So the strict reading — innumerable 600-cells, every
+  GP identical — **is realizable, regular and vertex-transitive, in H⁴.** **4013's presentation
+  over-reached**: its proof stands exactly as proved, but *"the class is forced"* silently assumed a
+  Euclidean embedding.
+- **THE PRICE, AND THE PROGRAMME CANNOT PAY IT.** The vertex figure of {3,3,5,3} is **{3,5,3}, itself
+  hyperbolic** — an infinite honeycomb — so **z = ∞**. (The single 600-cell's vertex figure is {3,5},
+  the icosahedron: spherical, z = 12.) **z = 12 is load-bearing in SS-1, SM-1, SM-7, SM-8, SM-9 and
+  SF-4**, with Σm_ν ∝ z⁻⁹ (4016). **⇒ strict reading CLOSED — impossible flat, and curved costs z.**
+- **BOUND ON THE NEGATIVE:** this classifies **regular** honeycombs only. **Uniform-but-not-regular
+  is not ruled out.** Searched unscoped: the corpus uses *vertex-transitive* only of the **single**
+  600-cell under H₄ (SF-2 §§463/580/701; FP.md L4-B), never of an extended non-regular structure.
+  **Lane: EW.**
+- **Three classes now closed by three unrelated arguments:** periodic Euclidean (4009, dihedral
+  angle), bounded-window cut-and-project (4013, window boundary), regular at any curvature (4017).
+  **The weak reading is the only survivor in play — still the founder's to rule, but the option space
+  is now exhausted rather than sampled. Lane: founder.**
