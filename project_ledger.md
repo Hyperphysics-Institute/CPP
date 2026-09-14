@@ -23,6 +23,7 @@
 | Standard-Model series | 1152 | 2026-06-13 | 1152 OPEN-WORKFLOW-1: make SM-6 reproducible from clean clone |
 | op:einstein / SR-2 (spin-2 graviton) | 1142 | 2026-06-13 | 1142 SR-2 Phase 7C CLEARED (draft v0.6 RC): panel 3/3 CONFIRM. ChatGPT |
 | CC umbrella (cosmological constant) | 1105 | 2026-06-11 | 1105 CC-U/5 R2 reframe draft (DM-lane handoff) + CC-U/4 c08 scoping (f |
+| Chirality arc | 0972 | 2026-09-13 | 0972 L4-E — δ = −ε pinned; Reading C's ℓ is a directed traversal cost not a length, so MA.1's form requires non-reciprocity; odd 2nd harmonic zero in this realisation (chirality lane) — |
 | Chirality arc | 0971 | 2026-09-13 | 0971 TARROW-2 re-read vs 0960 — conclusion robust and strengthened by the residual, order-counting claim (i) consumes A = 0 (chirality lane) — |
 | Chirality arc | 0970 | 2026-09-13 | 0970 1d-β scoped — core question already answered, both unconditionalize arms discharged today; TARROW-2 re-read filed as next; SM-4(b) is flagship-scale (chirality lane) — |
 | Chirality arc | 0969 | 2026-09-13 | 0969 record that both CONV-049 dissents' own resolution conditions are met by the enacted lemma — satisfied, not overridden (chirality lane) — |
