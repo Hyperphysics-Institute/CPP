@@ -1,7 +1,7 @@
 # Problem History: OPEN-CHIR-1d-β — the spatial chirality capacity question (THEO-CHIR-CAPACITY-1)
 
 **Created:** 9 June 2026 (Session 157-close / 158, chirality lane; PH created Patch 0932).
-**Status:** **Capacity half (1d-β-ii) RESOLVED** — V1 (emergence-by-condensation) excluded / V3 (primitive) confirmed, conditional on Mechanism A, by **THEO-CHIR-CAPACITY-1** (enacted Patch 0927; 3/3 review-closed). **OPEN-CHIR-1d-β remains OPEN** for the V2 reopener (cross-sector OPEN-SM-4) and the located residual (derive pointwise non-degeneracy of the dynamical η).
+**Status (updated 13 Sep 2026, Patch 0970):** **Capacity half (1d-β-ii) RESOLVED, and BOTH ARMS OF THE UNCONDITIONALIZE PATH NOW DISCHARGED** — Mechanism A narrowed to its *derived* reversal-odd first harmonic at **Patch 0960** (CONV-048), and pointwise non-degeneracy discharged at **Patch 0968** (CONV-049), replaced by the explicit structural premise that the dynamical η is the undeformed det-coset sign-reading plus the 3-plane lemma (`p ≥ 7`). CAPACITY-1 is **not** unconditional: it carries the axioms, the derived first harmonic, and that structural premise. **The remaining content of 1d-β is the V2 reopener, i.e. `OPEN-SM-4`.** Prior status line: **Capacity half (1d-β-ii) RESOLVED** — V1 (emergence-by-condensation) excluded / V3 (primitive) confirmed, conditional on Mechanism A, by **THEO-CHIR-CAPACITY-1** (enacted Patch 0927; 3/3 review-closed). **OPEN-CHIR-1d-β remains OPEN** for the V2 reopener (cross-sector OPEN-SM-4) and the located residual (derive pointwise non-degeneracy of the dynamical η).
 **Frontier entries:** OPEN-CHIR-1d-β (sector home `frontier_sectors/CHIR.md`); V2-reopener co-owned with OPEN-SM-4 (`frontier_sectors/SM.md`).
 **Sector record:** `frontier_sectors/CHIR.md` (CAPACITY-1 enacted changelog-style — no theorem-registry body-row, per CHIR precedent).
 **Why this PH exists:** this one question was developed across **two patch-bands by two windows** — the **08xx** band (F.1/DSL window: the C1 closure computation) and the **09xx** band (chirality lane: swarm review, adjudication, enactment). Patch numbers alone do not reveal that they are one development; this file is the problem-keyed trail that crosses the band boundary.
@@ -48,7 +48,7 @@ Pointer-map only: patch · band · one-line · path. The canonical content lives
 
 ## Closure path (for the parts still open)
 
-- **Unconditionalize:** discharge Mechanism A (OPEN-FP-F1-2 / F.1 §14.17, F.1/DM window) — would unconditionalize BOTH CAPACITY-1 (spatial) and TARROW-2 (temporal). And/or derive the residual (pointwise non-degeneracy) from the PCD layer (the per-vertex 4-D Perceive/Compute is the natural candidate).
+- **Unconditionalize:** ~~discharge Mechanism A~~ **DONE, Patch 0960** (narrowed to the derived reversal-odd first harmonic; residual named). ~~And/or derive the residual (pointwise non-degeneracy) from the PCD layer~~ **DONE, Patch 0968** (discharged and replaced by a structural premise + the 3-plane lemma). **OWED AND UNTESTED:** this path was stated to unconditionalize **BOTH** CAPACITY-1 (spatial) **and TARROW-2** (temporal). **TARROW-2 has not been re-read against 0960.** Bounded, one session, same shape as the 0950 V3 re-read — see `chirality_derivations/sketches/0970_1dbeta_scoping.md`.
 - **V2 reopener:** the cross-sector SM CP/T phase, OPEN-SM-4 (CPT-linked, BRIDGE-1/TARROW-1). The only door to V2.
 
 ## Pointers
