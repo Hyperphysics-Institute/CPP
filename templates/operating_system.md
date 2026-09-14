@@ -1823,6 +1823,16 @@ prefer — **in either direction, including the self-punishing one** — run an 
 search before reporting. The self-punishing direction is not safer; it is motivated in a
 direction that is harder to see.
 
+#### Step F′ — Pre-dispatch and effort-bound discipline (R-1, R-2; adopted Patch 0959, folded into the OS at Patch 0974a)
+
+**R-1 — the hostile pass runs BEFORE dispatch.** Before any CONV-001 dispatch, the originating lane runs the tests it would expect an adversarial reviewer to demand: boundary and **sign-flipped** cases of every free parameter; every parameter **jointly** rather than one at a time; the admissibility domain of the **full** parameter set rather than one slice; and the **next order** of any expansion it proposes to truncate. *What it cost:* CONV-048 ran nine founder-facing turns because each round produced a lane-side correction that triggered the next — the negative-A sweep, the second-order parity check, the joint corner and the positivity recomputation were all cheap and all runnable beforehand. **An extra round costs the lane minutes of compute and costs the founder a full manual dispatch. Treating rigour as free is only possible for the party that is not paying.**
+
+**R-2 — two dispatches per claim, then a decision.** A claim gets at most **two** full dispatch cycles. If it is not adjudicable after the second, the lane either enacts on the reviewers' stated conditions where the text demonstrably meets them, or abandons the claim and banks whatever stands alone. A third full dispatch requires an explicit founder decision made **knowing it is a third**. Targeted confirmation rounds aimed at named seats whose specific reasoning has been disturbed are **not** full dispatches and do not count against the two.
+
+**Effort bound at dispatch (clause 3(i), enforced).** The bound is written **into the reviewer package** at dispatch, not into a wrapper afterwards, and reviewers are told it — including that a note will be recorded as a named residual rather than treated as a veto, so that a reviewer who means to block says so outright. *What it cost:* the CONV-047/048 campaign had no bound; CONV-049 had one and closed in a single dispatch.
+
+**Attachment confirmation.** Confirm that every seat received the executable artifacts. A reviewer who cannot run the code can only audit the prose, and at CONV-049 one seat did not receive the scripts and honestly said so.
+
 #### Step F — Reviewer Response Artifacts
 
 If the session generated review content (reviewer letters received, correction letters issued, synthesis letters to reviewers, multi-AI exchange transcripts), commit these in full verbatim form to the paper's `letters/` and/or `reviews/` folders. Summaries of reviewer content are particularly lossy because specific language and line-citations are the review's substance, not decoration.

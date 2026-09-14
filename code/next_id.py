@@ -80,7 +80,12 @@ def taken(lo, hi, blob):
     # 0936: lanes whose commit subjects are bare-numbered with a leading zero
     # ('0935 EVAL ...', chirality 09xx) — years never start with 0, so this
     # pattern cannot mistake a date for an id.
-    for m in re.finditer(r'(?m)^(0\d{3})\s+\S', blob):
+    # Suffixed IDs (e.g. 0974a) are minted only to resolve a collision after a
+    # number has been consumed elsewhere. They must still be VISIBLE here: a
+    # bare ^(0\d{3})\s+ misses them entirely, because a letter sits where the
+    # whitespace is expected, and an ID the gate cannot see is an ID the gate
+    # cannot protect. (First minted 0974a, Patch 0974a; parser taught same patch.)
+    for m in re.finditer(r'(?m)^(0\d{3})[a-z]?\s+\S', blob):
         hits.add(int(m.group(1)))
     return sorted(i for i in hits if lo <= i <= hi)
 

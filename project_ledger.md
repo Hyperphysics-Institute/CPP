@@ -23,6 +23,7 @@
 | Standard-Model series | 1152 | 2026-06-13 | 1152 OPEN-WORKFLOW-1: make SM-6 reproducible from clean clone |
 | op:einstein / SR-2 (spin-2 graviton) | 1142 | 2026-06-13 | 1142 SR-2 Phase 7C CLEARED (draft v0.6 RC): panel 3/3 CONFIRM. ChatGPT |
 | CC umbrella (cosmological constant) | 1105 | 2026-06-11 | 1105 CC-U/5 R2 reframe draft (DM-lane handoff) + CC-U/4 c08 scoping (f |
+| Chirality arc | 0974a | 2026-09-13 | 0974a session-close remediation — Steps A/B/F run, G completed, handover's false step-audit corrected (chirality lane) — |
 | Chirality arc | 0974 | 2026-09-13 | 0974 SESSION 228 CLOSE — handover for patches 0936–0974 (chirality lane) — |
 | Chirality arc | 0973 | 2026-09-13 | 0973 answer to the founder — the non-reciprocity is the T-arrow, not a new field; geometry stays reciprocal, dynamics do not (chirality lane) — |
 | Chirality arc | 0972 | 2026-09-13 | 0972 L4-E — δ = −ε pinned; Reading C's ℓ is a directed traversal cost not a length, so MA.1's form requires non-reciprocity; odd 2nd harmonic zero in this realisation (chirality lane) — |

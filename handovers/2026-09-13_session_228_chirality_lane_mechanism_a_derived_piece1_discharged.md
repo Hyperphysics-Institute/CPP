@@ -1,6 +1,6 @@
 # Session 228 — chirality lane (09xx): Mechanism A derived at first harmonic, piece 1 discharged, both arc verdicts re-based
 
-**Window:** 13 Sep 2026. **Patches 0936–0974** (39). **Lane:** chirality, 09xx block. **Next free: 0975.**
+**Window:** 13 Sep 2026. **Patches 0936–0974a** (40). **Lane:** chirality, 09xx block. **Next free: 0976** (0975 consumed by the next window).
 
 ---
 
@@ -53,8 +53,21 @@ Capotauro §20 (0937) · `chirality_continuum.tex` four A₂u labels (0937) · S
 
 **Panel quality varies sharply.** At CONV-047 three of five returns were not reviews (one simulated the whole panel; one reported sub-second timings for a 47-second script). Making the package self-contained and telling reviewers that honest failure beats invention fixed most of it. **Confirm attachments reach every seat** — GPT never received the scripts at CONV-049 and said so.
 
-## Step audit
+## Step audit — **corrected at Patch 0974a**
 
-- **Step E registries:** `research_frontier.md`, `id_block_registry.md`, `project_ledger.md`, `todolist.md`, `theorem-registry.md`, `frontier_sectors/{CHIR,FP,EW}.md`, `PH-OPEN-CHIR-1d-beta.md` — all updated per patch. `axiom-registry.md` N/A (no new axioms). **Theorem count unchanged** — nothing new registered; two conditionality amendments only.
-- **Deferral gate:** run on every patch; all PASS or `NOTHING-DEFERRED` asserted in the log.
-- **Steps C/D (vignettes, verbatim narrative):** **OWED** — deferred for context budget. Source material is the per-patch reasoning fragments (`reasoning-0940/0941/0949`) and the review suite. Recorded here as the explicit TODO Step H requires.
+**The audit first written here was wrong.** It reported Step E and Step H and deferred C/D, and thereby implied the close was complete. **Steps A, B and F had not been run at all, and Step G was half-finished.** The founder caught it by asking whether the full protocol had been executed. Corrected state:
+
+| step | status |
+|---|---|
+| **A** — session log | **DONE at 0974a** → `session_logs/2026-09-13_session_228_log.md` (seven phases). *Was missed.* |
+| **B** — transcript pointer-map | **DONE at 0974a** → `session_logs/transcript-cross-paper.md`, created (it did not exist); 17 entries. *Was missed.* |
+| **C** — development vignettes | **OWED**, deferred for context budget. Source: `reasoning-0940/0941/0949`, the review suite. Explicit TODO per Step H's deferral discipline. |
+| **D** — verbatim reasoning narrative | **OWED**, same rationale and source. |
+| **E** — registries | DONE per patch. `axiom-registry.md` N/A (no new axioms). **Theorem count unchanged** — two conditionality amendments only. |
+| **F** — reviewer artifacts **verbatim** | **DONE at 0974a** → `chirality_derivations/reviews/verbatim/` (4 files, ~15 returns). ***Was missed, and was the serious one:*** three CONV rounds plus two pre-dispatch rounds existed **only in the founder's chat**. The OS warns that summaries of reviewer content are "particularly lossy", and three of the session's substantive findings arrived inside reviewer text. |
+| **G** — protocol / OS updates | **COMPLETED at 0974a.** D-9, the apply-macro fix and OS §3 were written during the session, but **R-1 and R-2 were enacted only as lane discipline in a review document.** Now folded into `templates/operating_system.md` as Step F′, with the attachment-confirmation rule. |
+| **H** — handover | DONE at 0974; this audit corrected at 0974a. |
+
+**Deferral gate:** run on every patch; all PASS or `NOTHING-DEFERRED` asserted in the log.
+
+**Lesson for the next close:** a step-audit that lists only the steps performed reads as completeness. **List all eight, every time, with an explicit status on each** — including the ones not done.
