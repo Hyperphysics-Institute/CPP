@@ -108,7 +108,7 @@ Add to the corrigendum note: *"The W entry is corrected in topology and species,
 
 The row reads `W & Linear 6-hDP chain & 40190 & 13397 & 0.0 & 4019 & 0.0 & 22774 & 80380`.
 
-**The label is wrong and the numbers are open.** The structural descriptor must become the W⁰ ring (3 qDP + 3 eDP, 12 CPs). Whether the *numbers* survive is **not settled here** and is registered with the EW lane as `OPEN-EW-5` (§5b below): the member count is unchanged at 12 CPs, so if the breakdown is count-driven and species-blind the row survives as a pure relabel; if the hDP species enters the energy terms, the W mass fit needs recomputation. **Do not apply edit (g) until OPEN-EW-5 returns.** Edits (a)–(f) are independent of it and can be applied now.
+**The label is wrong and the numbers are open.** The structural descriptor must become the W⁰ ring (3 qDP + 3 eDP, 12 CPs). Whether the *numbers* survive is **not settled here** and is registered with the EW lane as `OPEN-EW-7` (§5b below; registered at 0945 as `OPEN-EW-5`, renumbered at Patch 4001 for an ID collision): the member count is unchanged at 12 CPs, so if the breakdown is count-driven and species-blind the row survives as a pure relabel; if the hDP species enters the energy terms, the W mass fit needs recomputation. **Do not apply edit (g) until OPEN-EW-7 returns.** Edits (a)–(f) are independent of it and can be applied now.
 
 ## 4c. Closure
 
@@ -116,10 +116,10 @@ With the down-type repair (0942, 0943) and the W composition above, **every entr
 
 ## 5b. Registered with the EW lane
 
-`OPEN-EW-5: W mass-breakdown species dependence` — see `frontier_sectors/EW.md`. Consumers: this corrigendum's edit (g); `OPEN-EW-2` (unified boson mass formula) and `OPEN-EW-3` (the bracelet's 4D→3D projection factor, currently calibrated rather than derived), both of which already take the bracelet as their geometric object.
+`OPEN-EW-7: W mass-breakdown species dependence` — see `frontier_sectors/EW.md`. (Registered at Patch 0945 as `OPEN-EW-5`; renumbered at Patch 4001 — that number was already held, since 23 March 2026, by the W⁰ virtual-particle problem.) Consumers: this corrigendum's edit (g); `OPEN-EW-2` (unified boson mass formula) and `OPEN-EW-3` (the bracelet's 4D→3D projection factor, currently calibrated rather than derived), both of which already take the bracelet as their geometric object.
 
 ## 5. Sequencing
 
 The Capotauro corrigendum from Patch 0937 (`capotauro.tex` §20.1/§20.2/§20.5/§20.6 + theorem step (iv)) should land **with or before** this one, so that SM-2's Capotauro section and Finding C-W46 quote the same operator. Both are paste-ready; both are founder recompiles. `chirality_continuum.tex` carries the same A₂u label at four places and bundles with them.
 
-**No verdict moves. No number in SM-2 changes. No CPP paper is edited by these patches.** Residual after application: none at composition level (§4c). The W mass-row **numbers** remain open as `OPEN-EW-5`; edit (g) waits on it, edits (a)–(f) do not.
+**No verdict moves. No number in SM-2 changes. No CPP paper is edited by these patches.** Residual after application: none at composition level (§4c). The W mass-row **numbers** remain open as `OPEN-EW-7`; edit (g) waits on it, edits (a)–(f) do not.

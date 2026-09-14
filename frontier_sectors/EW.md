@@ -5,7 +5,7 @@
   Master dashboard: Research_Frontier.md
 -->
 
-## Electroweak Sector (EW) — 8 problems
+## Electroweak Sector (EW) — 9 problems
 
 ### OPEN-EW-1: Derive η ~ 10⁻¹⁷ (Planck-to-Weak Scale Ratio)
 **Status:** OPEN
@@ -19,12 +19,12 @@
 **Paper(s):** EW-2
 **Note added Patch 0946 (chirality lane):** D₆ of order 12 is the stabiliser of the *bare* Petrie hexagon. Decorating it with the ruled 3 qDP + 3 eDP drops the stabiliser to order 6 (alternating), 2 (blocked) or 1 (the chiral pair) — verify `series_umbrella/series_substrate_chirality_arc/chirality_derivations/code/0946_w0_chirality_source.py` T7. The lane's D₆ statement is correct as written; any downstream argument applying D₆ to the *decorated* W⁰ needs the surviving subgroup, which depends on an arrangement the founder has not yet fixed.
 
-**Last updated:** 13 Sep 2026 (Patch 0945 — OPEN-EW-5 registered: W mass-breakdown species dependence, from the founder's W⁰ ring ruling and the Patch 0944 bracelet harmonisation.) Earlier 23 March 2026
+**Last updated:** 14 Sep 2026 (Patch 4001 — the 0945 registration renumbered `OPEN-EW-5` → `OPEN-EW-7`: it collided with the 23 March `OPEN-EW-5` in this same file. EW lane opened, block 4000–4099, G-EW-BLOCK-4000.) Earlier 13 Sep 2026 (Patch 0945 — the W mass-breakdown problem registered, from the founder's W⁰ ring ruling and the Patch 0944 bracelet harmonisation.) Earlier 23 March 2026
 
 ---
 
-### OPEN-EW-5: W Mass-Breakdown Species Dependence
-**Status:** OPEN — **registered 13 Sep 2026, Patch 0945** (chirality lane, cross-lane; SM holds no active ID block)
+### OPEN-EW-7: W Mass-Breakdown Species Dependence
+**Status:** OPEN — **registered 13 Sep 2026, Patch 0945** (chirality lane, cross-lane; SM held no active ID block). **RENUMBERED FROM `OPEN-EW-5` AT PATCH 4001 (EW lane):** 0945 minted an ID that had been in continuous use in this same file since 23 March 2026 (`OPEN-EW-5: W⁰ Virtual Particle — Quantitative Properties`, below). The March entry has precedence and keeps the number; this one moves to the next free EW id. **Cite `OPEN-EW-7` from here on; `OPEN-EW-5` between 13 and 14 Sep 2026 means this problem in records written in that window.**
 **Sector(s):** EW, SM
 **Priority:** MEDIUM — blocks one edit of a shipped-paper corrigendum, nothing else
 **One-line statement:** Does SM-2's W mass breakdown depend on the *species* of the 12 CPs in the W, or only on their count?
@@ -79,7 +79,7 @@
 ---
 
 ### OPEN-EW-5: W⁰ Virtual Particle — Quantitative Properties
-**Status:** OPEN
+**Status:** OPEN — **this is the original OPEN-EW-5, in this file since 23 March 2026.** Patch 0945 (13 Sep) duplicated the number on a different problem; that one was renumbered `OPEN-EW-7` at Patch 4001 and this entry is unchanged.
 **Sector(s):** EW
 **Priority:** MEDIUM
 **One-line statement:** Derive mass, width, and coupling of CPP W⁰ before Weinberg mixing.
