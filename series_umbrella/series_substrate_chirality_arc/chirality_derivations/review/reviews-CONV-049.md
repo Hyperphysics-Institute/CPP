@@ -19,7 +19,21 @@
 
 **What must not reappear in any cover note:** the claim that this makes V3 "unconditional on anything but the axioms." It does not. The quantitative assumption is **replaced**, not eliminated.
 
-**Returns: 0/5 — awaiting dispatch by the founder.**
+**Returns: 5/5. ADJUDICATED AND ENACTED at Patch 0968 — but in the DISSENT's form.** `0968_conv049_adjudication.md`.
+
+| seat | A | B | execution |
+|---|---|---|---|
+| GPT-5.6 Sol | **YES** | **NO** | scripts not received — declined to claim counts (honest; a delivery failure on our side) |
+| Grok 4.6 | **YES** | **NO** | 6/6 3.75 s, 6/6 26.94 s |
+| Gemini | YES | YES (reasoned from the *geometry*, "a minimum of 7 edges" — i.e. the dissent's lemma) | could not execute; honest substitution |
+| Copilot | YES | YES (partly revives the dimensional argument withdrawn at 0966) | 6/6 3.9 s, 6/6 31.2 s |
+| DeepSeek | YES | YES ("the definition includes all edges") | 6/6 ~4 s, 6/6 ~30 s |
+
+**A = 5/5 YES. B = 3 YES / 2 NO.** The rule's condition (majority YES on both) is met — but **the two NO votes were right and the three YES votes did not defend the definitional inference.** "Whole vertex figure" names the *index set* of the sum; a term may vanish when `d̂_e ∈ span{n̂, r̂₁, r̂₂}`. Inferring the floor from the label is the exact move Question B was written to prevent.
+
+**Enacted instead: the 3-plane lemma** (Grok's repair, verified independently at 0968, 5/5) — at most 5 of the 12 first-shell directions lie in any admissible 3-space, so **support ≥ 7** at every vertex, `p ≥ 7 > 4`. The floor is lattice geometry, not a name, and it is stronger than required. This also explains 0964's hostile-pass minimum of exactly 7.
+
+**CONV-049 CLOSED at one dispatch; the effort bound held.**
 
 ---
 

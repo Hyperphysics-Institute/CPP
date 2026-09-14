@@ -114,9 +114,11 @@ def can_orient(dirs):
 D = np.array([(V[w]-V[0])/np.linalg.norm(V[w]-V[0]) for w in nbr[0]])
 rank_lt4 = np.linalg.matrix_rank(np.array([D[0], nhat]), tol=1e-8)
 ok("T2", rank_lt4 < 4,
-   f"LINK (c), PROVED (dimensional): an orientation in 4-D is the sign of a 4x4 determinant and needs "
-   f"4 independent directions; a single-edge reading spans rank {rank_lt4} < 4 with n, so it resolves "
-   "no orientation and is not a handedness observable at all (lcapa SS5)")
+   f"LINK (c) — SUPERSEDED AT 0968, retained only so this script does not disagree with the live text. "
+   f"The dimensional argument (4-D orientation needs 4 independent directions) was WITHDRAWN at 0966: "
+   f"only one of {{d, n, r1, r2}} is an edge direction, so it never implied 4 EDGES. The live link (c) "
+   "is the 3-plane lemma of 0968: at most 5 of the 12 first-shell directions lie in any admissible "
+   "3-space, hence support >= 7. See 0968_three_plane_lemma.py")
 
 # ---- T3 / T4  link (a2) tested directly
 def weights(v, r1, r2):
