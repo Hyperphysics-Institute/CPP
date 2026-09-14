@@ -800,7 +800,24 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   count? **Lane: EW.** Consumer: `SM-2_composition_corrigendum.md` edit (g), the only place a published
   SM-2 number can still move. Resolution (i) species-blind ⇒ edit (g) is a pure relabel; (ii) species-
   sensitive ⇒ the 80380 MeV total needs re-derivation.
-- **`OPEN-SM-4` sub-claims (a) and (b) — the Capotauro mechanism.** Its `Dependencies` line has read
+- **`OPEN-SM-4` sub-claims (a) and (b) — the Capotauro mechanism. RESTATED at Patch 4003 after a D-2
+  premise audit; the work below is NOT what the 16 May entry said it was.** (a)/(b) **are** `B-iii` of the
+  CHIR↔EW bridge, twice reduced: capacity ⟺ sign(μ²) (0668), then sign(μ²) = sign(m²) (1100). `derive
+  χ = φ⁻³` is already discharged (Capotauro v2.0 / CHI-1). Two residuals, both **idle since 8 June 2026**:
+  - **(H1) — is the DSL measure reflection-positive?** THEO-CHIR-VW-1's sole open residual. If yes,
+    μ² > 0 within the substrate axioms and FI-C-9 ≠ 0 must be bridge-sourced. **Lane: EW.**
+  - **(H-NESS) — does the single-walker π's η-susceptibility track the η-field potential curvature
+    sign, and what supplies m² from π?** The named lift gap from 0694/1100. **Lane: EW.**
+  - **The μ²-sign computation these gate was CLEARED at 0692 and has not been run in three months.**
+    THEO-CHIR-CAPACITY-1 was reserved then and was ENACTED at 0960; Mechanism A and pointwise
+    non-degeneracy discharged at 0960/0968. **This is the next physics action in the lane. Lane: EW.**
+  - **NOT PERFORMED, named as a candidate lead only (D-4):** Patches 0965/0968 established a per-vertex
+    participation floor p(v) ≥ 4 for the *dynamical* η — a statement about the η-field rather than the
+    single walker, which is the half of (H-NESS) that 1100 called *"lift π to the η-field measure."*
+    Whether it bears on the lift **has not been checked**. Do not cite it as progress until it is.
+    **Lane: EW.**
+  ~~Its `Dependencies` line has read *"requires EW development"* since 16 May 2026; that is the condition
+  this block exists to supply — now MET.~~ Original entry: Its `Dependencies` line has read
   *"requires EW development"* since 16 May 2026; that is the condition this block exists to supply.
   **Lane: EW (with SM/SR).** Flagship scale — scoped and declined three times from the chirality lane,
   correctly, for want of exactly this.
