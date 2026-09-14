@@ -832,7 +832,22 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
     `founders_voice/4009_ruling_space_is_innumerable_600_cells.md`. **4006's d ≥ 2 result is therefore
     truncated, not complete** — on one closed cell the graph shells are 1, 12, 32, 42, 32, 1, so d ≤ 2
     covers 37.5% of the graph and there is no far region to decay into. **4006's d = 1 result stands.**
-  - **BLOCKER ON THE STUDY: the lateral lattice is not constructed anywhere in the corpus.** The φ-nested
+  - **BLOCKER ON THE STUDY — ATTEMPTED AT 4010, AND IT HIT AN OBSTRUCTION.** The icosian
+    cut-and-project was built and measured. **The unwindowed icosian ring is DENSE** (φ⁻ⁿ ∈ ℤ[φ] for
+    every n, verified), so a selection rule is **mandatory** — and a ball window gives shells of
+    30 / 45 / 46 / 141 / 165 / 173 points, never 120, at every window and radius tested. **Only the
+    origin ever has a 120-shell, an artifact of where the window is centred.** Bounded negative: the
+    correct Elser–Sloane window is the projection of the **E₈ Voronoi cell**, not a ball, and that is
+    **untested**. **Lane: EW.**
+  - **FOUNDER QUESTION (PD-006(a)) — and it may be structural, not a construction failure.**
+    Aperiodicity is *forced* (Coxeter, 4009). A quasicrystal evades the crystallographic restriction
+    **precisely by having finitely many different local environments.** So *"every GP is the centre of
+    its own 600-cell"* read **strictly** — one identical environment everywhere — **is the crystal
+    condition Coxeter excludes.** Read **weakly** — every GP has *a* 600-cell of GPs about it while the
+    rest of its surroundings differ — it may be satisfiable, and that is what a construction should
+    target. **Which is meant? Not decided here: adopting the weak reading unilaterally would quietly
+    weaken an axiom-level statement to make a computation possible. Lane: founder.**
+    ~~The lateral lattice is not constructed anywhere in the corpus.~~ The φ-nested
     hierarchy is **not** it — 0736 puts that nesting **inward**, to ~l_P/10³⁰. Named candidate: the
     **icosian registration** (DM `reasoning/2665.md`). Verified at 4009 that the 120 vertices are unit
     quaternions closed under quaternion product = the binary icosahedral group 2I, so the icosian ring
