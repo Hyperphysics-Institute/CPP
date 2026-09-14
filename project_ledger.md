@@ -23,6 +23,7 @@
 | Standard-Model series | 1152 | 2026-06-13 | 1152 OPEN-WORKFLOW-1: make SM-6 reproducible from clean clone |
 | op:einstein / SR-2 (spin-2 graviton) | 1142 | 2026-06-13 | 1142 SR-2 Phase 7C CLEARED (draft v0.6 RC): panel 3/3 CONFIRM. ChatGPT |
 | CC umbrella (cosmological constant) | 1105 | 2026-06-11 | 1105 CC-U/5 R2 reframe draft (DM-lane handoff) + CC-U/4 c08 scoping (f |
+| Chirality arc | 0960 | 2026-09-13 | 0960 CONV-048 ADJUDICATED AND ENACTED — CAPACITY-1's Mechanism-A conditionality narrowed to derived content; five residuals named (chirality lane) — |
 | Chirality arc | 0959 | 2026-09-13 | 0959 review-turn economy resolved — final round cut 5 seats to 2; R-1 hostile-pass-before-dispatch and R-2 two-dispatch bound enacted (chirality lane) — |
 | Chirality arc | 0958 | 2026-09-13 | 0958 CONV-048 three corrections applied + final round dispatched with a pre-committed stop rule (chirality lane) — |
 | Chirality arc | 0957 | 2026-09-13 | 0957 CONV-048 addendum returns 5/5; joint corner run on two reviewers' demand — superadditive stacking, admissible domain not a rectangle (chirality lane) — |
