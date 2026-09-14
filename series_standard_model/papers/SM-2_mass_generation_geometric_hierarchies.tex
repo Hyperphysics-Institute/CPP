@@ -312,6 +312,24 @@ are determined by cage geometry and uniform rules.
 
 \subsection{Mass Contribution Breakdown}
 
+\emph{W row amended, Patch 4002 (EW lane, \texttt{OPEN-EW-7}).}  The cage
+hypothesis is corrected from ``Linear 6-hDP chain'' to the $W^0$ ring per
+Patches 0944--0948, and two cells move with it: $E_{\text{inter}}$ from
+$0$ to $8038$ and the residual from $22774$ to $14736$.  \textbf{The
+$80380$~MeV total is unchanged, and no other row is touched.}  Reason:
+across all twelve rows of this table $E_{\text{inter}}$ is either exactly
+$0.10$ of the total or exactly zero, and the switch is set, $12/12$, by
+whether the object has a closed polyhedral cage --- it is zero for the
+electron, the up, the down and (formerly) the linear-chain W, and $0.10$
+for every tetrahedral, icosahedral and dodecahedral object.  The ring
+sits on the first-shell icosahedron (the Z's own cage; SF-2 v1.0
+Thm~4.2), so the correction moves the W across that switch.  The W row is
+now term-for-term identical to the Z and Higgs rows.  \emph{The switch
+rule is read off this table's own consistency, not stated in prose
+elsewhere in this paper; verify script
+\texttt{series\_standard\_model/code/4002\_ew7\_w\_breakdown.py}.}
+
+
 \begin{landscape}
 \begin{longtable}{l p{4.2cm} c c c c c c c}
 \caption{Mass contribution breakdown for SM particles (MeV).
@@ -334,7 +352,7 @@ Top & +30-vertex shell ($N_k=30000$ eff.) & 86345 & 28782 & 17269 & 8635 & 17269
 $\nu_e$ & Unbound eDP, $\sigma=120^{-3}$ & $2.9\!\times\!10^{-10}$ & --- & --- & --- & --- & --- & ${\sim}0.001$ eV \\
 $\nu_\mu$ & Unbound qDP, $\sigma=120^{-3}$ & $1.2\!\times\!10^{-9}$ & --- & --- & --- & --- & --- & ${\sim}0.004$ eV \\
 $\nu_\tau$ & Unbound hDP tetra, $\sigma=120^{-3}$ & $3.5\!\times\!10^{-9}$ & --- & --- & --- & --- & --- & ${\sim}0.012$ eV \\
-W & Linear 6-hDP chain & 40190 & 13397 & 0.0 & 4019 & 0.0 & 22774 & 80380 \\
+W & $W^0$ ring: 3 qDP $+$ 3 eDP on the Petrie hexagon of the first-shell icosahedron & 40190 & 13397 & 8038 & 4019 & 0.0 & 14736 & 80380 \\
 Z & Icosa cage & 45595 & 15198 & 9119 & 4560 & 0.0 & 16718 & 91190 \\
 Higgs & Dodeca cage & 62500 & 20833 & 12500 & 6250 & 0.0 & 22917 & 125000 \\
 \bottomrule

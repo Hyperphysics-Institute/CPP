@@ -242,7 +242,7 @@ regenerated (founder / Isak, per the Binary Artifact Workflow) before any Zenodo
   narrowing, `δ = −ε` pinned, and the relabel.
 
 **Still owed, and not applied:**
-- **SM-2 edit (g)** — the Mass Contribution Breakdown W row label. **Deliberately held** pending `OPEN-EW-7` (renumbered from `OPEN-EW-5` at 4001)
+- **SM-2 edit (g)** — **APPLIED at Patch 4002**, `OPEN-EW-7` resolved; no longer held. ~~Deliberately held pending `OPEN-EW-7`~~
   (does the W mass breakdown depend on species or only on count?). This is the only place a published SM-2
   number can still move; relabelling the row before the answer would assert a pure relabel that may be false.
   Lane: EW. The row still reads `Linear 6-hDP chain` on purpose.
@@ -791,8 +791,12 @@ If a P1 item turns out not to actually block the next paper on reflection, demot
 already waiting on it. Both were previously carried only in a paper ledger, a corrigendum and a handover —
 records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the moment the lane opens.
 
-- **`OPEN-EW-7` (renumbered from the colliding `OPEN-EW-5` at Patch 4001) — W mass-breakdown species
-  dependence.** Does SM-2's W mass breakdown depend on the *species* of the W's 12 CPs, or only on their
+- **`OPEN-EW-7` — W mass-breakdown species dependence. CLEARED at Patch 4002** (EW lane). Resolved to
+  neither pre-registered branch: the row is a fixed-fraction partition of the calibrated total, so it is
+  species-blind *and* count-blind; but the relabel crosses the `E_inter` cage switch, moving two cells
+  (0 → 8038, 22774 → 14736) with the 80380 MeV total unchanged. Edit (g) applied in print; **SM-2 free to
+  recompile.** Original entry below, for the record. ~~W mass-breakdown species
+  dependence.~~ Does SM-2's W mass breakdown depend on the *species* of the W's 12 CPs, or only on their
   count? **Lane: EW.** Consumer: `SM-2_composition_corrigendum.md` edit (g), the only place a published
   SM-2 number can still move. Resolution (i) species-blind ⇒ edit (g) is a pure relabel; (ii) species-
   sensitive ⇒ the 80380 MeV total needs re-derivation.
@@ -800,7 +804,17 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   *"requires EW development"* since 16 May 2026; that is the condition this block exists to supply.
   **Lane: EW (with SM/SR).** Flagship scale — scoped and declined three times from the chirality lane,
   correctly, for want of exactly this.
-- **`TODO-0976-RECOMPILE` interaction — do NOT recompile SM-2 yet.** SM-2's `.tex` carries edits (a)–(f)
+- **`TODO-0976-RECOMPILE` — SM-2's hold is LIFTED at Patch 4002; all five are now ready for Isak.**
+  ~~do NOT recompile SM-2 yet~~ — SM-2's `.tex` carries edits (a)–(f)
   and is owed a PDF, but edit (g) is held on `OPEN-EW-7`. Recompiling now buys a second recompile later.
   **The other four papers in that entry (Capotauro, chirality_continuum, TARROW-2, F.1) owe nothing and
   are ready for Isak now.** Lane: EW holds SM-2's release; CHIR holds the other four.
+
+- **Added at Patch 4002 (EW lane), carried forward under `TODO-4000-EW`:** SM-2's `E_inter` switch rule —
+  *on iff the object has a closed polyhedral cage* — is an empirical read of the table's own 12/12
+  consistency and is **not stated in prose anywhere in SM-2**. A printed number now rests on it. Owed:
+  either derive the rule from the mass formula or state it explicitly in SM-2's Universal Refinements
+  section at the next revision. **Lane: EW.**
+- **Also at 4002:** `E_cloud`/Total is **not** uniform across the table (0.10 electron, 0.02 muon/tau,
+  0.06 up, 0.05 everything else) with no rule given. Pre-existing, unrelated to the W, found while
+  testing a first formulation that this falsified. Not acted on. **Lane: SM.**
