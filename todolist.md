@@ -827,7 +827,22 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
     The zero-range closure does **not** apply; 4006's d = 1 correlation is real physics.
     *(The question as put used "PSR suppression", a term I coined — the founder had to ask what it meant.
     Corpus phrasing: SSV_abs increases ⇒ PSR is reduced. Coinage retired at 4007.)*
-  - **FINITE-SIZE SCALING — SUSPENDED AT 4008 PENDING A FOUNDER RULING, AND 4007's PREMISE WITHDRAWN.**
+  - **FINITE-SIZE SCALING — REQUIRED. Founder ruled 14 Sep (PD-006(a)): *"Space is composed of
+    innumerable 600-cells. I think every GP is the center of its own 600-cell."*** Filed verbatim at
+    `founders_voice/4009_ruling_space_is_innumerable_600_cells.md`. **4006's d ≥ 2 result is therefore
+    truncated, not complete** — on one closed cell the graph shells are 1, 12, 32, 42, 32, 1, so d ≤ 2
+    covers 37.5% of the graph and there is no far region to decay into. **4006's d = 1 result stands.**
+  - **BLOCKER ON THE STUDY: the lateral lattice is not constructed anywhere in the corpus.** The φ-nested
+    hierarchy is **not** it — 0736 puts that nesting **inward**, to ~l_P/10³⁰. Named candidate: the
+    **icosian registration** (DM `reasoning/2665.md`). Verified at 4009 that the 120 vertices are unit
+    quaternions closed under quaternion product = the binary icosahedral group 2I, so the icosian ring
+    is the natural generator with z = 12 preserved. **Build the construction first; do not guess a
+    lattice and measure ξ on it. Lane: EW.**
+  - **Consequence recorded at 4009:** the substrate is necessarily **aperiodic** — the 600-cell's
+    dihedral angle 164.4775° does not divide 360° (verified), reproducing the Coxeter result SR.md R4
+    carries panel-closed. So the extended lattice is an **icosahedral quasicrystal**, the same object
+    R4/R5 built the Lorentz W2 world-call on. **Lane: EW / SR.**
+    ~~Suspended at 4008 pending a founder ruling.~~
     4007 said this study was needed because the route had run on the wrong object. **That is withdrawn:**
     §177's "neighbouring vertex B" is misstated — shell 7 of A is shell 1 of A's **antipode**, a fact
     about **one closed 600-cell** (verified, `4008_a2_lattice_reading.py`), and the shells sum to 120.
