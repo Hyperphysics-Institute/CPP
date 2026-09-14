@@ -202,14 +202,19 @@ Claude produces git mailbox-format patch files (numbered `00NN-description.patch
 For multi-patch sessions (this is the typical case — a session typically produces 4–10 patches), use the chained `&&` form so a failed `git am` aborts the chain before pushing partial state:
 
 ```bash
-cd ~/Documents/GitHub/CPP && git pull origin main && \
+cd ~/Documents/GitHub/CPP && git am --abort 2>/dev/null; git pull origin main && \
   git am ~/Downloads/0NNN-first-patch.patch && \
   git am ~/Downloads/0NNN-second-patch.patch && \
   git am ~/Downloads/0NNN-third-patch.patch && \
   git push origin main
 ```
 
-Three pieces in order:
+**The leading `git am --abort 2>/dev/null;` is mandatory (added Patch 0962).** Git refuses to start a new `git am` while a previous one is still pending, failing with *"fatal: previous rebase directory .git/rebase-apply still exists but mbox given"* — **before touching anything**, so nothing is broken, but the whole macro is dead until the leftover is cleared. **This cost Thomas three separate turns on 13 Sep 2026**, each spent reporting the error and being told the remedy. The `;` rather than `&&` is deliberate: with no `am` in progress the abort exits non-zero and the chain must continue regardless.
+
+**Caveat, stated once:** the abort discards any in-progress `am`. That is the right behaviour when the leftover is stale state from an earlier attempt, which is the case that actually occurs. If Thomas is ever deliberately mid-conflict-resolution on an `am`, he should run the macro without that leading clause.
+
+Four pieces in order:
+0. **`git am --abort 2>/dev/null;`** — clear any leftover `am` from a previous attempt (see above).
 1. **`cd ~/Documents/GitHub/CPP`** — switch to Thomas's local working clone (must always be the first step).
 2. **`git pull origin main`** — cheap insurance; should be a no-op if Claude generated the patches against the current `main` HEAD, but catches the rare race where Thomas pushed unrelated work between Claude's last sync and patch generation.
 3. **`git am ~/Downloads/0NNN-*.patch`** — one line per patch, in numerical order. Order matters because later patches frequently reference content added by earlier patches; out-of-order application causes `git am` to fail with hash-mismatch errors.
@@ -222,7 +227,7 @@ If any `git am` fails, the chain stops there. Thomas can run `git am --abort` to
 For a single-patch session:
 
 ```bash
-cd ~/Documents/GitHub/CPP && git pull origin main && \
+cd ~/Documents/GitHub/CPP && git am --abort 2>/dev/null; git pull origin main && \
   git am ~/Downloads/0NNN-description.patch && \
   git push origin main
 ```
