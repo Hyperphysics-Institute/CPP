@@ -244,7 +244,7 @@ with $\sigma = 120^{-d}$ where $d$ is the number of unbound dimensions
 
 \begin{itemize}
 \item Orbital eDP ZBW for fermion spin ($d=0$, $\sigma=1$)
-\item Linear qDP/hDP ZBW extra for down-type quarks ($d=1$,
+\item Linear $-$eCP ZBW extra for down-type quarks ($d=1$,
   $\sigma \approx 8.3 \times 10^{-3}$)
 \item Unbound orbital ZBW for neutrinos ($d=3$, $\sigma \approx 5.8 \times 10^{-7}$)
 \item SSV gradient, inter-layer bonding, DP cloud: uniform rules applied
@@ -274,14 +274,28 @@ their geometric basis using the 30-vertex shell is an open problem.
 \item Muon: Central eCP, tetrahedral cage (4 vertices), equal 25\% DP mix
 \item Tau: Central eCP, icosahedral cage (12 vertices), equal 25\% DP mix
 \item Up: Central $+$qCP, bare (1 vertex), radial qDP-favoured mix
-\item Down: Central $-$qCP, $+$extra DP (2.5 eff.\ occupancy)
-\item Strange: Central $-$qCP, tetrahedral cage ($N_k = 30$ eff.)
+\item Down: Central $+$qCP, linearly oscillating $-$eCP extra, orbital eDP, polarised CP cloud ($N_k = 2.5$ eff.\ occupancy). \emph{(Composition corrected per FORK-DM-COMPOSITION-1, founder ruling 12 Sep 2026, extended to all three down-type quarks 13 Sep 2026; the earlier entries' central $-$qCP with a neutral extra DP is inconsistent with the charge arithmetic of \S``Charge Quantisation''. The $-1/3$ charge is cage-independent, so no cage-size argument distinguishes $d$, $s$ and $b$ --- Patches 0942, 0943.)}
+\item Strange: Central $+$qCP, linearly oscillating $-$eCP extra, orbital eDP, polarised CP cloud, tetrahedral cage ($N_k = 30$ eff.)
 \item Charm: Central $+$qCP, tetrahedral+icosahedral ($N_k = 180$ eff.)
-\item Bottom: Central $-$qCP, tetrahedral+icosahedral+dodecahedral ($N_k = 3000$ eff.)
+\item Bottom: Central $+$qCP, linearly oscillating $-$eCP extra, orbital eDP, polarised CP cloud, tetrahedral+icosahedral+dodecahedral ($N_k = 3000$ eff.)
 \item Top: Central $+$qCP, three inner cages + 30-vertex shell candidate
   ($N_k = 30000$ eff.; mass formula using this shell is open)
 \item $\nu_e, \nu_\mu, \nu_\tau$: Unbound orbital ZBW with $\sigma = 120^{-3}$
-\item W: Linear hDP chain; Z: icosahedral cage; Higgs: dodecahedral cage
+\item $W^0$: neutral 12-member ring --- three qDPs and three eDPs alternating
+  (qDP--eDP--qDP--eDP--qDP--eDP), one per vertex of the Petrie hexagon of the
+  first-shell icosahedron (the W-bracelet, SF-2 v1.0 Thm~4.2); the alternating
+  order is a structural assignment pending an observable, on the same footing as
+  the $N_k$ values (Patch 0948); $W^\pm$: a $W^0$ carrying a $\pm$eCP on the
+  enzymatic structure, the charge residing on the unpaired CP; Z: icosahedral
+  cage; Higgs: dodecahedral cage. \emph{(Corrected in topology and species, not
+  member count: the former ``linear hDP chain'' and the $W^0$ ring are both 12
+  CPs. The ring is the Weak Sector lane's W-bracelet, so the correction brings
+  SM-2 into agreement with SF-2 rather than away from it; the $W^\pm$
+  construction is the partnerless-third structure of Patch 3513. The order must
+  be achiral: with $\chi \ne 0$ the lattice reflections are not symmetries of the
+  physical substrate, and a chiral order would split into two inequivalent
+  neutral ring states against the Standard Model's single $W^3$ --- Patches
+  0944, 0945, 0947, 0948.)}
 \end{itemize}
 
 %=====================================================================
@@ -455,11 +469,15 @@ The exact statement is that $\delta = 1/3$ exactly
 
 \section{Quark Charge Asymmetry and Capotauro}
 
-Down-type quarks carry a linear ZBW extra DP (qDP/hDP) that
+Down-type quarks carry a linear $-$eCP ZBW extra that
 up-type quarks do not.  The CPP mechanism is the Capotauro
 chiral-polarity bias: the 600-cell's intrinsic chirality (activated
 during the Capotauro symmetry-breaking event) preferentially
-stabilises linear ZBW extras on negative ($-$qCP) centres.
+stabilises linear ZBW extras on \textbf{positive} ($+$qCP) centres.
+\emph{(Sign corrected: the earlier statement is the anti-quark's, identified at Patch 3524. The bias
+operator is now derived rather than asserted --- $\hat{C}^{qDP} = \chi\,(1/6)\,\hat{s}$, coupling to
+the sign of the central charge, Finding C-W46 as corrected at Patch 0937; the substrate's handedness
+supplies no preference among first-shell placements, only among centre signs.)}
 
 This gives the charge asymmetry:
 \begin{itemize}
@@ -553,7 +571,10 @@ first-principles derivation.
   the 30-vertex shell candidate (fourth cage); largest mass.
 \item \textbf{Neutrinos}: Unbound ZBW with $\sigma = 120^{-3}$ suppression;
   nearly massless.
-\item \textbf{W boson}: Linear hDP chain; Z: icosahedral cage;
+\item \textbf{W boson}: $W^0$ neutral 12-member ring of three qDPs and three
+  eDPs alternating on the Petrie hexagon of the first-shell icosahedron, with
+  $W^\pm$ carrying a $\pm$eCP on the enzymatic structure (Patches 0944--0948);
+  Z: icosahedral cage;
   Higgs: dodecahedral cage.
 \end{itemize}
 

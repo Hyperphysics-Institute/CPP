@@ -230,6 +230,25 @@ Kolmogorov cycle condition at $\bigO{\delta^3}$: the per-face content $2\delta^3
 $420$ of the $1200$ triangular faces (with $|abc|\in\{1/8,1/4\}$), all of which touch the second shell.
 The process is therefore non-reversible; it carries a nonzero steady-state probability current.
 \end{theorem}
+
+\begin{remark}[Scope of the order-counting --- added Patch 0979 on the Patch 0971 re-read]\label{rem:order_scope}
+The $\bigO{\delta^3}$ \emph{order} in Theorem~\ref{thm:main} is stated for the pure reversal-odd first
+harmonic of the Mechanism-A rate law, i.e.\ for $A = 0$ in the two-parameter first-harmonic family
+$A(\hat{m}\cdot\nhat) + B(\ehat\cdot\nhat)$ established at Patch 0949. With a constant reversal-even
+$A \ne 0$ the per-face $\bigO{\delta^1}$ cancellation of Lemma~\ref{lem:perface} fails, because the
+effective tilt becomes $B/(1 + A\,\hat{m}\cdot\nhat)$ and is therefore position-dependent, so the face
+sum is no longer proportional to $a+b+c = 0$; the measured log-log slope drops from $3.00$ to $0.99$
+at $A = 0.3$. \textbf{The conclusion is unaffected and is strengthened.} The \emph{same} 420 faces
+violate detailed balance at every $A$ tested ($0$, $\pm 0.3$, $1.0$): the residual changes the
+\emph{order} at which detailed balance fails, not \emph{whether} it fails, and it fails \emph{earlier}.
+Claim~(i) of this theorem should accordingly be read as: \emph{detailed balance is violated on 420 of
+the 1200 triangular faces, at $\bigO{\delta^3}$ for the pure reversal-odd first harmonic and at lower
+order otherwise}. At the physical bias the maximum cycle affinity is $6.9\times10^{-3}$ at $A=0$ and
+$5.8\times10^{-3}$ at $A=0.3$, so nothing here is a small-$\delta$ artefact. Any downstream argument
+that leans on the $\delta^3$ \emph{exponent} rather than on the magnitude at the physical bias must
+carry $A = 0$ explicitly. The $\mathcal{C}_T = \text{Yes}$ verdict, the non-reversibility and the
+$\textbf{W3}\to\textbf{W1}$ candidacy all survive unchanged (Patch 0971 re-read, verify 6/6).
+\end{remark}
 \begin{proof}[Computation]
 The verification script \texttt{code/verify\_odelta3\_kolmogorov\_curl.py} constructs the 600-cell ($120$
 vertices, $720$ edges, $1200$ triangular $3$-cliques, uniform degree $12$ --- CHECK~1), confirms

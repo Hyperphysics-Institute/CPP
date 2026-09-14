@@ -224,6 +224,32 @@ The Session 36 P1 audit found that all originally-P1 items except TODO-002 were 
 
 ## P2 — At Thomas's discretion (not blocking next paper)
 
+### TODO-0976-RECOMPILE — Corrigenda APPLIED to source; PDF recompiles now owed (registered Patch 0976, chirality lane)
+
+**Status change:** the five paste-ready corrigenda carried in TODO-0937-CHIR and the F.1/TARROW-2 wording
+items are **written into the `.tex` sources at Patch 0976**. What remains is mechanical: the PDFs must be
+regenerated (founder / Isak, per the Binary Artifact Workflow) before any Zenodo or OSF deposit quotes them.
+
+**Applied at 0976:**
+- `capotauro.tex` — §20.1 vanishing clause, §20.2 Definition 20.2 inversion referent, §20.5 operator
+  `Ĉ^qDP = χ(1/6)ŝ ∈ A₁g ⊗ C-odd` (replacing the A₂u assignment), §20.6 extended-group Wigner–Eckart,
+  Theorem `thm:theo_sd_chir_2` step (iv); plus the relabel footnote at the Reading C edge-perturbation equation.
+- `chirality_continuum.tex` — the three **operator** labels. *The three remaining `A_{1g} ⊕ A_{2u}` occurrences
+  are the matter-doublet state-space decomposition, which 0937 did not change and which are correct as written.*
+- `SM-2_mass_generation_geometric_hierarchies.tex` — edits (a)–(f), both W entries, and the down-type prose.
+- `theo_chir_tarrow_2.tex` — the claim (i) scope remark.
+- `dynamical_substrate_law.tex` — MA.2 vertex-independence, the `r(−ê;v)` referent, exclusion-class E1
+  narrowing, `δ = −ε` pinned, and the relabel.
+
+**Still owed, and not applied:**
+- **SM-2 edit (g)** — the Mass Contribution Breakdown W row label. **Deliberately held** pending `OPEN-EW-5`
+  (does the W mass breakdown depend on species or only on count?). This is the only place a published SM-2
+  number can still move; relabelling the row before the answer would assert a pure relabel that may be false.
+  Lane: EW. The row still reads `Linear 6-hDP chain` on purpose.
+- **The PDF recompiles themselves** — founder mechanical, five documents.
+- **An observable selecting the alternating W⁰ ring order over the blocked order.** None on file; carried with
+  `OPEN-EW-5`. Lane: EW.
+
 ### TODO-0974a-CAPTURE — Steps C and D of the Session 228 close
 
 **Owed:** Tier-3 development vignettes (Step C) and the Tier-4 verbatim reasoning narrative (Step D) for Session 228, patches 0936–0974a.
