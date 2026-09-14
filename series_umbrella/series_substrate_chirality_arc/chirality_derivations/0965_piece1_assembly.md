@@ -6,9 +6,13 @@
 
 ## The claim
 
-> **`p(v) = 1/Σ_e (c^v_e)⁴ ≥ 4` at every vertex, for the dynamical η.**
+> **`p(v) = 1/Σ_e (c^v_e)⁴ ≥ 4` at every vertex, for the dynamical η, scoped to the det-coset whole-vertex-figure reading.**
 
-If it holds, CAPACITY-1's piece-1 conditionality discharges and **V3 becomes unconditional on anything but the axioms** — the last standing assumption under the spatial chirality verdict.
+**HEADLINE CORRECTED AT PATCH 0966** — the original sentence here claimed that if this holds, "V3 becomes unconditional on anything but the axioms." Two pre-dispatch reviewers independently ruled that it must not ship, and they were right: it contradicts this document's own epistemic accounting, since (a2) is evidenced rather than proved. The accurate statement:
+
+> *If sustained, the independent quantitative piece-1 assumption `p(v) ≥ 4` is discharged and **replaced** by the structural identification that the dynamical η remains the undeformed det-coset sign-reading. CAPACITY-1 then carries no independent numerical participation-floor assumption; the structural identification remains explicit unless separately derived from the axioms. V3 would then rest on the axioms, the derived MA.1 reversal-odd first harmonic, **and that structural reading**.*
+
+As one reviewer put it: this prevents the last assumption from disappearing by **renaming it rather than deriving it**.
 
 ## The chain, with its weakest link named first
 
@@ -19,7 +23,7 @@ Three links. **Two are proved. One is not.** Stating that up front because the p
 | **(a1)** | The det-coset ℤ₂ order parameter **is** a sign structure: the canonical local enantiomorph is the orientation of the whole vertex figure, read as `sign det[d̂, n̂, r̂₁, r̂₂]` on each incident edge. All three corpus constructions (0819, 0820, 0821) build it this way. **Weights are unit magnitude by construction.** | **definitional** |
 | **(a2)** | **The substrate's dynamics does not deform those weights.** | **EVIDENCED, NOT PROVED — the load-bearing link** |
 | **(b)** | For unit-magnitude weights, participation = support, exactly. | **proved** (arithmetic, T1) |
-| **(c)** | A handedness observable in 4-D must resolve an orientation — the sign of a 4×4 determinant — needing ≥ 4 independent directions. So support ≥ 4. | **proved** (dimensional, T2; `lcapa_axis2_signcorr_closure.md` §5) |
+| **(c)** | **RESCOPED AT 0966.** Within the det-coset whole-vertex-figure scope, a reading whose support collapses is no longer that observable — a single-edge determinant is *frame-dependent* (its sign flips under 98/200 admissible frames) and so is not an invariant handedness reading. | **proved within scope** (0966 T6). The earlier universal form — "any sub-4-support functional is not a handedness observable" — **assumed the conclusion and is withdrawn**; 0965's T2 was too weak to carry it (rank{d̂, n̂} = 2 is trivial, and only one of {d̂, n̂, r̂₁, r̂₂} is an edge direction). |
 
 **(a1) + (a2) + (b) + (c) ⇒ p(v) ≥ 4.**
 
@@ -56,5 +60,5 @@ Named so the dispatch does not have to discover them:
 ## Disposition
 
 - **DRAFT.** No claim registered, no verdict moved, CAPACITY-1 untouched, piece 1 still formally open.
-- **Owed before dispatch:** T4 repeated at `δ = φ⁻³`; then a panel under R-2 as a fresh campaign with its effort bound written at dispatch.
-- **If the panel sustains:** piece 1 discharges, CAPACITY-1 loses its last named conditionality, and V3 rests on the axioms plus the derived Mechanism-A first harmonic alone.
+- **Owed item DISCHARGED at Patch 0966:** T4 repeated at `δ = φ⁻³` with a six-point scan and error bars; `p_eff` reported directly rather than `C_nn` alone. Result: `p_eff = 12.24` at the physical bias, trend *upward* in δ. Then a panel under R-2 as a fresh campaign with its effort bound written at dispatch.
+- **If the panel sustains:** see the corrected statement at the head of this document. The quantitative floor is discharged; the structural identification of η replaces it and remains explicit.
