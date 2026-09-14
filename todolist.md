@@ -809,7 +809,17 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   - **(H-NESS) — CLOSED AS ILL-POSED at Patch 4004, branch (ii).** Not unjustified — ill-posed: a
     susceptibility is a number-fluctuation and Var(N_tot) ≡ 0 for a single walker, so χ = 0 and
     m² = ∞ identically. There was never a single-site reduction to find. Superseded by the item below.
-  - **RECOMPUTE χ_η ON THE REAL MECHANISM-A MEASURE — 0905's parked item, now the live one.**
+  - **RECOMPUTE χ_η ON THE REAL MECHANISM-A MEASURE — RUN AT PATCH 4005, RESULT FINITE.** χ_η = +0.989 (δ=0),
+    +0.788 (δ=0.10), product-base control +0.839 reproducing 0813's 0.87–1.01; d ≥ 1 correlations ~10⁻³.
+    0814's O(δ) departure identified as a **single-site skew (+0.2427) carrying no correlation length**.
+    ⇒ μ² > 0, unbroken branch, V3 confirmed. **`[PCD-EXT]`, conditional on NON-INTERACTING walkers.**
+  - **NEXT, and the sharp one: does the SSV coupling between CPs generate a correlation length?**
+    CPs are not non-interacting; 4005 does not model the coupling. This replaces §14.17's *derive the
+    whole effective action* with one question. **Lane: EW.**
+  - **Carried unchanged from 0904:** condition (1) the real η (H₄/H₄⁺ coset field) must be confirmed
+    **local** — 0813's η is a defensible proxy; condition (3) Mechanism A (`OPEN-FP-F1-2`) sits under the
+    whole route. **Lane: EW / CHIR.**
+  ~~0905's parked item, now the live one.~~
     0813 got χ_η = 0.87–1.01 (finite, positive ⇒ μ² > 0, V3 confirmed, V1-by-condensation foreclosed
     on that branch — framing corrected at 0904). But that sits on an **assumed product (ZRP-template)
     base**, and 0814 found the real NESS **departs from it, skewed at O(δ)**. 0905: *departs from
