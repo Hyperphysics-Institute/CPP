@@ -58,6 +58,20 @@ Enacting a weaker and unsound form, when a stronger and sound one is in hand at 
 
 **GPT did not receive the scripts.** Its return states plainly: *"the two referenced `.py` scripts are not attached as executable files here… I therefore did not claim 6/6 from the package's reported results as my own execution."* That is exactly the honesty the return format asks for, and it is also a delivery failure on our side — the scripts were exported but did not reach that seat. **Any future dispatch must confirm the attachments reached every seat**, since a reviewer who cannot run the code can only audit the prose.
 
+## 6b. The dissent's own resolution condition — met, and recorded as met
+
+A dissent that is overridden and a dissent that is satisfied look the same in a tally. This one was satisfied, and the record should show which.
+
+**GPT named exactly what would resolve B:**
+
+> *"Does canonical η, by definition or invariance, require the twelve unit-sign edge contributions appearing in §1.2 — **or, failing that, can every invariant proper-subset realization be shown to require at least four nonzero edges?**"*
+
+**The enacted lemma answers the second disjunct, unconditionally and with margin: every admissible realization has at least seven nonzero edges.** Not four, and not by definition — by the geometry of the lattice, over every admissible frame, at every vertex.
+
+**Grok pre-committed to the same resolution** in his return: *"state the 3-plane lemma as link (c), with the frame scans as its check, and retire 'whole vertex figure ⇒ support ≥ 4'."* That is precisely what was enacted.
+
+**So neither NO vote was overridden.** Both named a condition; the enacted form meets both. **No further dispatch is owed to close this, and none is being withheld.**
+
 ## 7. Disposition
 
 - **ENACTED** in `theorem-registry.md` and `frontier_sectors/CHIR.md`. **CONV-049 CLOSED** at one dispatch — the bound held.
