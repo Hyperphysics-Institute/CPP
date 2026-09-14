@@ -1823,6 +1823,14 @@ prefer — **in either direction, including the self-punishing one** — run an 
 search before reporting. The self-punishing direction is not safer; it is motivated in a
 direction that is harder to see.
 
+#### Step E′ — Reasoning-capture audit (added Patch 0975b)
+
+Before writing the handover, **list every patch in the session and mark each captured or exempt**, applying the §0.5 scope test — content, not wrapper; a verify script disqualifies the exemption. **Any patch that shipped a script or recorded a finding and has no fragment is a gap, and the handover must name it.**
+
+*What it cost:* Session 228's close reported Step E complete while **~21 of its 39 patches had no reasoning fragment**, because the audit checked registries and never checked capture. The gap surfaced only when the founder asked. An uncaptured finding is unrecoverable once the window turns over — **and the window that produced it is the only one that can capture it, which is why this audit belongs before the handover and not after.**
+
+Completion criterion: a per-patch captured/exempt list exists; every gap is either filled or named in Step H.
+
 #### Step F′ — Pre-dispatch and effort-bound discipline (R-1, R-2; adopted Patch 0959, folded into the OS at Patch 0974a)
 
 **R-1 — the hostile pass runs BEFORE dispatch.** Before any CONV-001 dispatch, the originating lane runs the tests it would expect an adversarial reviewer to demand: boundary and **sign-flipped** cases of every free parameter; every parameter **jointly** rather than one at a time; the admissibility domain of the **full** parameter set rather than one slice; and the **next order** of any expansion it proposes to truncate. *What it cost:* CONV-048 ran nine founder-facing turns because each round produced a lane-side correction that triggered the next — the negative-A sweep, the second-order parity check, the joint corner and the positivity recomputation were all cheap and all runnable beforehand. **An extra round costs the lane minutes of compute and costs the founder a full manual dispatch. Treating rigour as free is only possible for the party that is not paying.**

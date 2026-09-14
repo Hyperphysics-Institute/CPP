@@ -250,7 +250,13 @@ regenerated (founder / Isak, per the Binary Artifact Workflow) before any Zenodo
 - **An observable selecting the alternating W⁰ ring order over the blocked order.** None on file; carried with
   `OPEN-EW-5`. Lane: EW.
 
-### TODO-0974a-CAPTURE — Steps C and D of the Session 228 close — **CLEARED at Patch 0977 (14 Sep 2026), with one part declared unrecoverable**
+### TODO-0974a-CAPTURE — Steps C and D of the Session 228 close — **Step C CLEARED at 0977; Step D LARGELY RECOVERED at 0975b, superseding the "unrecoverable" finding**
+
+**CORRECTION (Patch 0975b, 13 Sep 2026).** 0977 recorded Step D as unrecoverable for 34 patches, on the basis that the reasoning "was never saved and no longer exists anywhere." **That was true of the repository and false of the world:** the window that produced those patches was still live, and reasoning it can state about its own work is *primary source*, not reconstruction. **21 of the 34 are now captured** — `chirality_derivations/reasoning/` 0942, 0943, 0944, 0946, 0947, 0950, 0951, 0953, 0955, 0957, 0961, 0963, 0964, 0965, 0966, 0968, 0970, 0971 and `dynamical_substrate_law/documentation_suite/` reasoning-0972, reasoning-0973. **The other 13 are genuinely exempt** under the scope test added at 0975b (0938, 0939, 0945, 0948, 0952, 0954, 0956, 0958, 0959, 0960, 0962, 0967, 0969, 0974, 0974a): no original derivation, no computation, no finding.
+
+**0977's refusal to fabricate was right and is not being second-guessed** — a plausible substitute for a lost original is worse than an admitted gap. What changed is that the original was not lost. **The general lesson for the next window: before declaring reasoning unrecoverable, check whether the originating window is still reachable; only it can capture rather than reconstruct.**
+
+*(prior heading)* Steps C and D of the Session 228 close — **CLEARED at Patch 0977 (14 Sep 2026), with one part declared unrecoverable**
 
 **Step C (Tier-3 vignettes): DONE.** Written by subject, not by session — the F.1 derivations (L4-A/B/C/E, `δ = −ε`, the non-reciprocity result) into `dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`; the arc-level work (C-W46, SM-2/W, piece 1, CONV-047/048/049, the V3 and TARROW-2 re-reads, 1d-β, R-1/R-2) into `chirality_derivations/documentation_suite/development-chirality-derivations.md`. **That is the placement choice this entry asked a later window to make and record: a session is not a subject, so no cross-paper vignette file was created.**
 

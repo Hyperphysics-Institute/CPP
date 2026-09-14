@@ -1,3 +1,5 @@
+> **SCOPE TEST (Patch 0975b).** "Pure-bookkeeping/organizational" is decided by **content, not wrapper**. No original derivation, no computation, no finding — otherwise capture. **Shipping a verify script disqualifies the exemption.** A review adjudication, a scoping session, a hostile pass, or an answer to a founder question is *not* bookkeeping when it contains analysis. Session 228 misapplied this to ~21 of 39 patches; three of its substantive findings were in the patches it exempted. When uncertain, capture.
+
 # Reasoning-Capture Protocol
 
 **Status:** authoritative governance document (peer of `operating_system.md`,
