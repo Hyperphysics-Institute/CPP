@@ -827,7 +827,16 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
     The zero-range closure does **not** apply; 4006's d = 1 correlation is real physics.
     *(The question as put used "PSR suppression", a term I coined — the founder had to ask what it meant.
     Corpus phrasing: SSV_abs increases ⇒ PSR is reduced. Coinage retired at 4007.)*
-  - **FINITE-SIZE SCALING — NOW REQUIRED (the answer was field-range), AND RESPECIFIED AT 4007.**
+  - **FINITE-SIZE SCALING — SUSPENDED AT 4008 PENDING A FOUNDER RULING, AND 4007's PREMISE WITHDRAWN.**
+    4007 said this study was needed because the route had run on the wrong object. **That is withdrawn:**
+    §177's "neighbouring vertex B" is misstated — shell 7 of A is shell 1 of A's **antipode**, a fact
+    about **one closed 600-cell** (verified, `4008_a2_lattice_reading.py`), and the shells sum to 120.
+    **FOUNDER QUESTION (PD-006(a)):** is A2's substrate the **closed 120-vertex S³ tessellation** (EU lane
+    Patch 1300's reading, χ(S³) = 0), or is it **extended** — as "600-cell host vertex" language
+    (FI-C-RC-2; 1200 W-bracelets = 10 × 120 host vertices) suggests? **Closed ⇒ no thermodynamic limit,
+    ξ not well-posed, 4006's measurement is the complete answer and the route CLOSES. Extended ⇒ the
+    study is required.** **Lane: founder.** Superseded text below.
+    ~~NOW REQUIRED (the answer was field-range), AND RESPECIFIED AT 4007.~~
     4006 said the problem was that 120 sites of diameter 5 cannot resolve ξ > ~2. **The sharper
     statement: ξ is not defined on that object at all.** A2 says the substrate is a **tessellated**
     600-cell and `programme_orientation.md` §177 says every GP is the centre of its own 600-cell

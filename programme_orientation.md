@@ -174,7 +174,7 @@ The distance shells of the 600-cell are a palindrome:
 - Shell 3 (gap, 12V) ↔ Shell 5 (gap, 12V)
 - Shell 4 (icosidodeca, 30V) = midpoint
 
-In the tessellated lattice, every Grid Point is the centre of its own 600-cell. Shell 7 of vertex A is Shell 1 of neighbouring vertex B. Any cage forming at Shell 7 is a charm cage — not a new species, just the charm cage of the next 600-cell over.
+In the tessellated lattice, every Grid Point is the centre of its own 600-cell. Shell 7 of vertex A is Shell 1 of vertex A's **antipode**. *(Relation corrected at Patch 4008, EW lane: the set identity is exact and was verified — shell 7 of vertex A is precisely shell 1 of the unique vertex at r = 2, which is −A — but the original text said "neighbouring vertex B", and **no neighbour of A has this property**. The distinction matters: as written it reads as evidence for an extended lattice of many 600-cells, whereas the corrected statement is a fact about **one closed 600-cell** and is evidence for the S³ reading of A2 (EU lane Patch 1300; f-vector V−E+F−C = 0 = χ(S³)). Verify `series_standard_model/code/4008_a2_lattice_reading.py`.)* Any cage forming at Shell 7 is a charm cage — not a new species, just the charm cage of the next 600-cell over.
 
 Therefore: **the 600-cell supports exactly 4 independent cage types**, producing exactly 3 quark generations. No 4th generation can exist because the lattice wraps around — the outer shells are the inner shells of neighbours. This is a structural prediction, falsifiable by the discovery of any 4th-generation quark at any mass. [SM-8, Theorem 9.1]
 
