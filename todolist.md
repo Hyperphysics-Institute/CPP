@@ -938,6 +938,31 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4015-EW — the chirality result extends; and what is and is not blocked
+
+- **4011/4012's chirality answer SURVIVES the extended lattice — verified at 4015, not assumed.**
+  The obvious worry after 4009 was that 4011 was truncated by the single 600-cell the same way
+  4006's correlation measurement was. It is not. On a **4321-point extended patch**: **96 improper
+  signed-permutation symmetries** at every window tested (1.2, 1.4, 1.5), including the same
+  `R = diag(1,1,1,−1)`; and the direct 3-hop sum over **153,576 paths** is **zero** at δ = 0 and
+  machine-zero at δ = 0.35.
+- **Why it survives and 4006 did not — worth keeping, it decides what else is safe:** a correlation
+  length is a property of the **whole structure**, which a diameter-5 graph cannot express. A mirror
+  pairing is a property of the **generators** — every path is built from the same 120 step vectors,
+  and those admit an improper symmetry fixing n̂. Extending adds paths; it adds no unpaired step.
+- **CONSEQUENCE: FI-C-9 = V3 does not depend on any of the blocked work.** The susceptibility route
+  (4005–4009) remains blocked on the founder's reading and the lateral construction; the **path**
+  route reaches the same conclusion and depends on neither.
+- **A SECOND failure of the cut-and-project class, found in passing.** Edge coordination on the
+  extended patch runs **{12, 13, 14, 18, 19, 26}** — only **120 of 4321** points have z = 12, and
+  **SF-4 requires z = 12**. Independent of 4013's window-boundary argument and pointing the same
+  way: this class is not the substrate's lateral construction. **Lane: EW.**
+- **STILL UNANSWERED and still the deciding question (founder, PD-006(a)):** the strict reading is
+  impossible (4013) — is the **weak** reading what is meant, or is the substrate built some other
+  way entirely? **Lane: founder.**
+
+---
+
 ### TODO-4014-EW — corpus hygiene: two corrupt files repaired, and a third gate
 
 - **Found by a gate CRASHING, not by review.** `code/deferral_gate.py` died with
