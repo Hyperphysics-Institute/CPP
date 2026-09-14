@@ -813,9 +813,23 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
     +0.788 (δ=0.10), product-base control +0.839 reproducing 0813's 0.87–1.01; d ≥ 1 correlations ~10⁻³.
     0814's O(δ) departure identified as a **single-site skew (+0.2427) carrying no correlation length**.
     ⇒ μ² > 0, unbroken branch, V3 confirmed. **`[PCD-EXT]`, conditional on NON-INTERACTING walkers.**
-  - **NEXT, and the sharp one: does the SSV coupling between CPs generate a correlation length?**
-    CPs are not non-interacting; 4005 does not model the coupling. This replaces §14.17's *derive the
-    whole effective action* with one question. **Lane: EW.**
+  - **SSV-coupling correlation length — SPLIT BY RANGE AT PATCH 4006; one half CLOSED.**
+    **Zero-range** (rate set by the CP's own GP occupancy) = a ZRP ⇒ stationary measure **exactly
+    product** for any rate function and any coupling; verified k = 0…0.9. χ_η finite at any coupling,
+    no critical point. **CLOSED.** **Field-range** (rate set by SSV_net sourced at a distance): d = 1
+    correlation is real (+0.133 ± 0.003 at k = 0.30 vs −0.034 ± 0.002 at k = 0), d ≥ 2 at noise over
+    the sampled range; growth **shape not asserted**. **NOT CLOSED.**
+  - **FOUNDER QUESTION (PD-006(a)) — the deciding variable, and it is a picture not a computation.**
+    When a CP computes its Displace step from its GP's SSV_net, is the PSR suppression set by what sits
+    at **that GP alone**, or by the field **sourced by CPs at a distance**? A1′ gives the first reading,
+    the SSV_net definition gives the second, and the corpus states both. **Zero-range ⇒ the whole route
+    closes; field-range ⇒ the finite-size-scaling study below is required.** **Lane: founder.**
+  - **Finite-size scaling on nested lattices — required only if the answer is field-range.** 4006 ran on
+    120 sites of diameter 5, which cannot resolve ξ > ~2; a critical point can be neither established
+    nor excluded there. **NOT DONE. Lane: EW.**
+  - **Recorded at 4006, not acted on:** ZRP condensation in the zero-range sweep (on-site variance
+    2.90 → 10.54). A marginal effect, not a correlation length — but it is a real feature of the
+    occupancy distribution and nothing in this lane has costed it. **Lane: EW.**
   - **Carried unchanged from 0904:** condition (1) the real η (H₄/H₄⁺ coset field) must be confirmed
     **local** — 0813's η is a defensible proxy; condition (3) Mechanism A (`OPEN-FP-F1-2`) sits under the
     whole route. **Lane: EW / CHIR.**
