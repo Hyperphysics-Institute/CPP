@@ -806,9 +806,20 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   χ = φ⁻³` is already discharged (Capotauro v2.0 / CHI-1). Two residuals, both **idle since 8 June 2026**:
   - **(H1) — is the DSL measure reflection-positive?** THEO-CHIR-VW-1's sole open residual. If yes,
     μ² > 0 within the substrate axioms and FI-C-9 ≠ 0 must be bridge-sourced. **Lane: EW.**
-  - **(H-NESS) — does the single-walker π's η-susceptibility track the η-field potential curvature
-    sign, and what supplies m² from π?** The named lift gap from 0694/1100. **Lane: EW.**
-  - **The μ²-sign computation these gate was CLEARED at 0692 and has not been run in three months.**
+  - **(H-NESS) — CLOSED AS ILL-POSED at Patch 4004, branch (ii).** Not unjustified — ill-posed: a
+    susceptibility is a number-fluctuation and Var(N_tot) ≡ 0 for a single walker, so χ = 0 and
+    m² = ∞ identically. There was never a single-site reduction to find. Superseded by the item below.
+  - **RECOMPUTE χ_η ON THE REAL MECHANISM-A MEASURE — 0905's parked item, now the live one.**
+    0813 got χ_η = 0.87–1.01 (finite, positive ⇒ μ² > 0, V3 confirmed, V1-by-condensation foreclosed
+    on that branch — framing corrected at 0904). But that sits on an **assumed product (ZRP-template)
+    base**, and 0814 found the real NESS **departs from it, skewed at O(δ)**. 0905: *departs from
+    product is NOT critical* — the recomputed χ could be finite-but-non-product or could reveal
+    correlations; **unknown until run**. Well-posed definition supplied at 4004: a proper subvolume,
+    Var(n_S) = K p_S(1−p_S) > 0. **NOT performed at 4004. Lane: EW.**
+  - **`[PCD-EXT]` label (PD-007):** the occupation generator on a proper subvolume is the adopted
+    working PCD extension for this route; every result on it carries `[PCD-EXT]` until the
+    triangulation ledger closes. **Lane: EW.**
+  - **CORRECTED at 4004: not "three months idle".** The lift ran at 0812/0813, was corrected at 0814/0815 and assessed at 0904/0905; 4003's claim rested on a grep scoped to two paths and generalised. What survives: no queue entry carried it. ~~cleared at 0692 and not run in three months~~
     THEO-CHIR-CAPACITY-1 was reserved then and was ENACTED at 0960; Mechanism A and pointwise
     non-degeneracy discharged at 0960/0968. **This is the next physics action in the lane. Lane: EW.**
   - **NOT PERFORMED, named as a candidate lead only (D-4):** Patches 0965/0968 established a per-vertex
