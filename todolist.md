@@ -1055,3 +1055,27 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   angle), bounded-window cut-and-project (4013, window boundary), regular at any curvature (4017).
   **The weak reading is the only survivor in play — still the founder's to rule, but the option space
   is now exhausted rather than sampled. Lane: founder.**
+
+---
+
+### TODO-4018-EW — two more construction classes closed; three arguments, none related
+
+- **Bravais lattices, ANY dimension — CLOSED.** The 600-cell's 12 nearest neighbours all share the
+  same inner product with the vertex (−0.190983), lie in one 3-flat, and sit **strictly on one side**;
+  their offsets sum to **2.291796**, not zero, and {2v₀ − wᵢ} ≠ {wᵢ}. A Bravais lattice has inversion
+  symmetry at every point, so its nearest-neighbour set is **always** centrally symmetric about that
+  point. **The 600-cell's is not.**
+- **Any periodic structure with full H₄ site symmetry — CLOSED.** H₄ contains isoclinic rotations of
+  trace **±2/φ and ±2φ — irrational**. Trace is basis-independent, so no conjugate of H₄ lies in
+  GL(4,ℤ): **H₄ has no faithful integral representation and is not crystallographic in 4D.**
+- **AN IDENTITY, recorded and explicitly NOT a mechanism.** |Σ(wᵢ − v₀)| = **2.291796068** — which is
+  **exactly Patch 1100's graph-Laplacian spectral gap λ₁**, and both equal **12(1 − φ/2)**. The vertex
+  figure's central *asymmetry* and 1100's spectral gap are one quantity seen twice. Worth someone's
+  attention; no story attached here. **Lane: CHIR / EW.**
+- **FIVE classes now closed by five unrelated arguments:** periodic Euclidean (4009, dihedral angle);
+  cut-and-project (4013, window boundary); regular honeycomb at any curvature (4017, Gram signature);
+  Bravais (4018, central asymmetry); full-H₄ periodic (4018, irrational trace).
+- **NOT CLOSED, stated so it is not mistaken for closed:** periodic vertex-transitive structures whose
+  site symmetry is a **proper subgroup** of H₄ but whose 12 nearest neighbours still form a regular
+  icosahedron; and **aperiodic** uniform structures outside the cut-and-project class. **Five closed
+  classes is not a proof that nothing works. Lane: EW / founder.**

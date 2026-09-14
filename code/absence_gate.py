@@ -51,9 +51,19 @@ def main():
     # (Added at 4017, after this gate produced exactly that false positive on itself. A
     # gate with systematic false positives gets ignored, which is the failure mode it
     # was built against.)
-    added = "\n".join(l[1:] for l in diff.splitlines()
-                      if l.startswith("+") and not l.startswith("+++")
-                      and not l[1:].lstrip().startswith("Earlier **Last updated:"))
+    # research_frontier.md and the sector files prepend a new header and push the old
+    # one onto the SAME line after "Earlier **Last updated:", so a single added line
+    # carries the entire history of that file -- every retracted claim ever quoted
+    # there fires as if it were new. Truncate each added line at the first such marker
+    # and keep only the part being written NOW.
+    # (4017 skipped lines STARTING with the marker, which missed the sector files,
+    # where it appears mid-line. A gate with systematic false positives gets ignored,
+    # which is the failure mode it was built against; fixed properly here at 4018.)
+    def _now(l):
+        i = l.find("Earlier **Last updated:")
+        return l if i < 0 else l[:i]
+    added = "\n".join(_now(l[1:]) for l in diff.splitlines()
+                      if l.startswith("+") and not l.startswith("+++"))
     body = msg + "\n" + added
 
     hits = []
