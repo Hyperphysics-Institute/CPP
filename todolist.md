@@ -839,7 +839,24 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
     origin ever has a 120-shell, an artifact of where the window is centred.** Bounded negative: the
     correct Elser–Sloane window is the projection of the **E₈ Voronoi cell**, not a ball, and that is
     **untested**. **Lane: EW.**
-  - **FOUNDER QUESTION (PD-006(a)) — and it may be structural, not a construction failure.**
+  - **FOUNDER QUESTION — SETTLED MATHEMATICALLY AT 4013: THE STRICT READING IS IMPOSSIBLE, not merely
+    unachieved.** In any cut-and-project set a point with perp-coordinate y gets its full 600-cell shell
+    iff y + g* ∈ W for all 120 generators. Every conjugate g* is a **unit vector** (verified), and W must
+    be **bounded** (the unwindowed ring is dense, 4010). So the point of W extremal in *any* direction is
+    always coordination-deficient — measured at **33/120 or 45/120** across W = 1.0, 1.5, 2.0, 3.0, 5.0.
+    **The window's boundary always produces deficient points, for a window of any shape.** The nine-window
+    lattice scan agrees: shell counts 46 → {58,88} → {58,100} → {109,128,140} → {141,165,173} → six
+    distinct values, **never uniform, and more inhomogeneous as W grows.** **So the choice is not between
+    two readings — the strict one is unavailable in this construction class, and the class is forced.**
+    What remains for the founder is whether the weak reading is what he means, or whether the substrate is
+    built some other way entirely. **Lane: founder.** Original framing below.
+  - **Recorded at 4013, flagged and explicitly NOT a mechanism:** 2I is **not** closed under Galois
+    conjugation, and the conjugate set maps into 2I by an **improper** transformation (det = −1) — so
+    **perpendicular space carries the mirror of physical space's 600-cell.** A left/right distinction sits
+    inside the construction. It is **not** offered as a chirality mechanism: physical space's own copy is
+    achiral (4011), and a mirror relation *between* two spaces is not a handedness *in* one of them.
+    Recorded for whoever wants it. **Lane: CHIR / EW.**
+  - ~~(PD-006(a)) — and it may be structural, not a construction failure.~~
     Aperiodicity is *forced* (Coxeter, 4009). A quasicrystal evades the crystallographic restriction
     **precisely by having finitely many different local environments.** So *"every GP is the centre of
     its own 600-cell"* read **strictly** — one identical environment everywhere — **is the crystal
