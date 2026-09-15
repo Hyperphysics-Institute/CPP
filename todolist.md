@@ -1560,3 +1560,26 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   unspecified family 4033 found. **Lane: EW — build it.**
 - **FI-C-9 = V3 still stands.** Nothing here generates chirality yet; it removes the obstruction that
   forbade it.
+
+---
+
+### TODO-4039-EW — fourth attempt at the chiral target: fails, with a diagnosis that sharpens it
+
+- **ATTEMPT:** decorate each of the 600 tetrahedral cells with a signed radial offset, the sign from the
+  cell's vertex determinant. **Keep the rotations, break the mirrors.**
+- **IT KILLS THE MIRRORS — improper symmetries go 96 → 0** at every ε. **AND THE ROTATIONS WITH THEM:
+  proper go 96 → 1.** The decoration is not rotation-equivariant, so it realises **neither** I_h nor I.
+- **AND THE CHIRALITY IS NOT SYSTEMATIC, which confirms it.** Sums at ε = −0.10, −0.05, +0.05, +0.10 are
+  **+8, +35, +5, +8** — **the sign does not flip with ε.** A genuine chiral decoration is its own mirror
+  image under ε → −ε, so the sum **must** flip. It does not: what is measured is the arbitrariness of the
+  decoration, not a handedness.
+- **THE DIAGNOSIS:** the per-cell sign used `det[V_i, V_a, V_b, V_c]` in **index order**, which is not a
+  geometric property of the cell — a rotation permutes cells without carrying the labelling, so the sign
+  is assigned inconsistently. **And no better ordering fixes it, because A REGULAR TETRAHEDRON IS
+  ACHIRAL** (12 improper symmetries of its own, verified). **There is no per-cell handedness to decorate
+  with.**
+- **SO THE TARGET IS SHARPER: the decoration must be built on a motif that is ITSELF handed.** Natural
+  candidate in the 600-cell: **the ring of FIVE tetrahedra around an edge** — five is odd, a cyclic ring
+  of five admits two traversal senses, and it is the same five whose 352.644° leaves the **7.356° deficit**
+  (4019). **NOT tested. Lane: EW.**
+- **Fourth failed attempt at 4038's target — and the first with a diagnosis rather than a shrug.**
