@@ -2147,3 +2147,29 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   2026. **Nothing in the workflow would surface that on its own.** Less urgent, more durable.
 - **NOT this lane's to revise.** SF-2's campaign plan belongs to SF-2; what this lane owes is the notice,
   now on record with **both** contingencies traced. **Lane: SF-2 / founder.**
+
+---
+
+### TODO-4060-EW — H1's exposure swept: 40 live files, not two. Plus a correction I repeated for eight patches.
+
+- **CORRECTION, REPEATED SINCE 4022: VW-1 HAS THREE HYPOTHESES, NOT ONE.** CHIR.md states it as a
+  conjunction — *"if the DSL measure is reflection-positive **[H1]** + the det-coset ℤ₂ is
+  vectorial-not-axial **[H2]** + no θ-term **[H3]**"*. **I have been calling H1 "VW-1's sole residual"
+  since 4022** — that phrasing came from 4003, which said B-iii's residuals were (H1) and (H-NESS), a
+  statement about **OPEN-SM-4's sub-claim**, not about VW-1's hypothesis list. **The conclusion is
+  unaffected** (a conjunction fails if one conjunct fails), but the description made VW-1 look more
+  fragile than it is and H1 more central. **And if anyone repairs H1, H2 and H3 become live again and are
+  NOT discharged.**
+- **A MAP THE CORPUS ALREADY HAS AND I WAS WORKING WITHOUT.** CHIR.md's *P-face / T-face map
+  (CPT-unified, from TARROW-1)*: **sign(n̂) = FI-C-9, P-ODD ↔ electroweak PARITY VIOLATION (V−A), E26**;
+  **sign(δ), T-ODD ↔ SM CP-VIOLATION (δ_CP)**. **⇒ the chiral-lattice arc (4038–4048) bears on V−A; the
+  H1 arc (4022–4059) bears on δ_CP.** Two different faces. It would not have changed a computation — it
+  would have changed how I described where each result lands.
+- **THE SWEEP, AND MY DRAFT ASSERTED THE ANSWER BEFORE RUNNING IT.** Draft: *"the live dependency set is
+  SMALL and already known"* — **FAILED. It is 40 live files.** Among them **3 theorem sources**
+  (`theo_chir_vw_1.tex`, **`theo_chir_vw_2.tex`**, **`theo_chir_tarrow_2.tex`** — the last two I did not
+  know about), **9 scoping / GO-NO-GO documents** including a dedicated **H1 attack-scoping** doc and a
+  dedicated **OS-positivity probe scoping**, and **`flagship_assembly_scope.md`**.
+- **⇒ 4058 AND 4059 DID NOT COVER THE EXPOSURE.** They found two consumers; there are more. **Which are
+  load-bearing is a CHIR-lane audit, not an EW-lane grep.** This patch delivers the **list** and the
+  **correction**, not the audit. **Lane: CHIR — audit owed.**
