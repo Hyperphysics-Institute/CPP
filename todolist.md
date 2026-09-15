@@ -1473,3 +1473,31 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **(C)'s COST IS THE ADJECTIVE.** SF-4, SM-1 and SS-1 all say **icosahedral**. **Whether the mass ladder
   needs the ARRANGEMENT or only the COUNT is a question about the SM papers' derivations — 4016 showed
   only the COUNT enters Σm_ν ∝ z⁻⁹. NOT decided here. Lane: SM / SF / founder.**
+
+---
+
+### TODO-4036-EW — I priced horn (C) and had it backwards; all three horns are expensive
+
+- **4035 said "(C) costs a word." WITHDRAWN.** It was the cheapest-looking horn precisely because I had
+  not priced it.
+- **SM's particle cages are the taxonomy, not decoration.** SM-2's mass breakdown distinguishes particles
+  **by cage** (tetra / icosa / dodeca), and Capotauro puts the W⁰ ring on the Petrie hexagon of the
+  first-shell **icosahedron**. If the substrate is FCC, the cages must still be exact lattice
+  configurations — or the taxonomy that assigns masses has no exact referent.
+- **AND THEY CANNOT BE. The icosahedral group is not crystallographic.** A 5-fold rotation has trace
+  1 + 2cos 72° = **φ — irrational**; trace is basis-independent, so no 5-fold rotation lies in GL(3,ℤ).
+  **No lattice — FCC, HCP or any other — carries a regular icosahedron as an exact vertex configuration.**
+  *(Same argument shape as 4018's H₄-is-not-crystallographic, one dimension down.)*
+- **MEASURED, not asserted:** best regular icosahedron on FCC sites over **3000 orientations × 40 scales**
+  gives RMS vertex error **0.327** against an FCC nn of 1.414 — **23% of the nearest-neighbour distance.**
+  *(A sampling bound, not a proven optimum; the true best could be lower.)*
+- **AND THAT EXCEEDS THE FOUNDER'S 4020 RULING.** He allowed the cage to be *"slightly distorted, just
+  like materials with icosahedral packing"* — real icosahedral matter distorts by a **few percent**. This
+  is ~23%, an order of magnitude more. **(C) would need a new and much larger ruling. Lane: founder.**
+- **THE THREE HORNS, PRICED:** **(A)** holes, or curvature — and curvature costs **z = ∞** (4017), against
+  SR-1's own wording. **(B)** z spreads to 13/18/19/26; SF-4's Σm_ν ∝ z⁻⁹ has no integer to stand on
+  (4016). **(C)** the cages go ~23% distorted; SM-2's taxonomy loses its exact referent.
+  **ALL THREE ARE EXPENSIVE — there is no free choice, and the decision is a physics one. Lane: founder.**
+- **AND THE DM PROXIES ARE NOT THEREBY VINDICATED AS THE SUBSTRATE.** 4035 said they *sit on the
+  survivable horn*; they survive the **coordination** constraint and pay on the **cage** one. They remain
+  what their author called them: **proxies**. **Lane: DM — noted, nothing owed.**
