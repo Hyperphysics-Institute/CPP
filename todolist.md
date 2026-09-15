@@ -845,8 +845,18 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
       *(An ensemble statement: single realisations span ±0.18 and are not zero — 4020's finding, exactly.
       A draft of this check asserted per-realisation vanishing and FAILED; corrected.)*
     - **Extended lattice — weaker.** VW-1 is **genuinely weakened**, not merely incomplete: RP-based
-      control exists transversally and the reflection group **cannot reach along n̂**. **This is the live
-      gap. Lane: EW / CHIR.**
+      control exists transversally and the reflection group **cannot reach along n̂**.
+  - **THE GAP ATTACKED BY DIRECT MEASUREMENT AT 4025 (PD-008): BOUNDED, NOT CLOSED.** ⟨ηη⟩_c measured on
+    an extended 4D patch (4321 points, 960 usable interior, 260 realisations) sits at **0.13–0.49% of the
+    on-site variance and within ~2 sem of zero, along n̂, out to 3 edge lengths**. Transverse, for
+    contrast: 0.02–0.06%. **Evidence against long-range order along the drive — not proof. VW-1's
+    CONCLUSION survives; VW-1's ARGUMENT still cannot reach there.**
+  - **THE UNCOMFORTABLE COINCIDENCE, stated because it is convenient to me:** the along-n̂ bound rests on
+    **1518 pairs** against **183,146** transverse — the patch is isotropic, so *along n̂ with small
+    transverse offset* is a thin tube. **The direction where the theory has no control is also where this
+    measurement has least power.** **Attack here first. Lane: next window / EW.**
+  - **Two further limits:** the patch reaches ~3 edge lengths, so ξ ≥ 5 would not show; and the icosian
+    cut-and-project is a **proxy** (4013/4015 established it is not the substrate). **Lane: EW.**
   - **STILL SUBMITTED FOR CRITIQUE per PD-008** — now a completed argument with one attack landed and one
     repelled, rather than a flagged worry. **Lane: next window.**
   - **DEFECT FOUND IN PASSING, in the corpus's own order parameter.** 0813's η is *sign det of the 4
