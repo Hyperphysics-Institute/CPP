@@ -804,8 +804,24 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   premise audit; the work below is NOT what the 16 May entry said it was.** (a)/(b) **are** `B-iii` of the
   CHIR↔EW bridge, twice reduced: capacity ⟺ sign(μ²) (0668), then sign(μ²) = sign(m²) (1100). `derive
   χ = φ⁻³` is already discharged (Capotauro v2.0 / CHI-1). Two residuals, both **idle since 8 June 2026**:
-  - **(H1) — is the DSL measure reflection-positive?** THEO-CHIR-VW-1's sole open residual. If yes,
-    μ² > 0 within the substrate axioms and FI-C-9 ≠ 0 must be bridge-sourced. **Lane: EW.**
+  - **(H1) — is the DSL measure reflection-positive? WORKED AT 4022, AND THE ANSWER IS NEITHER YES NOR NO:
+    IT IS n̂-CONDITIONAL.** For reflections that **fix n̂**, π is Θ-invariant to 1e-17, the Gram matrix is
+    symmetric to 1e-15 and PSD at δ = 0, 0.10, 0.35 — **RP holds**. For reflections that **flip or tilt n̂**,
+    π is not Θ-invariant, the Gram matrix is **not even symmetric** (asym 1.2–4.9) and carries a strongly
+    negative eigenvalue (−0.497 at δ = 0.10, −4.79 at δ = 0.35) — **RP FAILS, at O(δ)**.
+  - **The asymmetry matters: the FAILURE is a proof, the SUCCESS is not.** One negative eigenvalue on any
+    test class refutes RP, so the n̂-flipping case is settled by witness. Passing on single-site
+    occupations is a **necessary condition only**. **Extending the positive case to a richer test class
+    is owed. Lane: EW.**
+  - **AND THE CHIRALITY ARGUMENT NEEDS EXACTLY THE SECTOR WHERE RP HOLDS.** `R = diag(1,1,1,−1)` with
+    n̂ = e₁ is the map 4011, 4012, 4015 and 4020 all used, and 0973 puts sign(δ) as **P-even** — the P-face
+    lives in the n̂-preserving sector.
+  - **OWED, AND NOT MINE TO DECIDE: does VW-1's argument run on RESTRICTED RP?** Whether a
+    transfer-matrix/OS construction works with RP holding only on the n̂-preserving subgroup is a technical
+    question about VW-1 itself. **Lane: CHIR (VW-1's holder).**
+  - **Structural echo, recorded without a story:** RP fails precisely for the reflections that **flip n̂** —
+    and 0973 located the **T-arrow** in that same direction (sign(δ) P-even, **T-odd**). Same place.
+    **Lane: CHIR.**
   - **(H-NESS) — CLOSED AS ILL-POSED at Patch 4004, branch (ii).** Not unjustified — ill-posed: a
     susceptibility is a number-fluctuation and Var(N_tot) ≡ 0 for a single walker, so χ = 0 and
     m² = ∞ identically. There was never a single-site reduction to find. Superseded by the item below.
