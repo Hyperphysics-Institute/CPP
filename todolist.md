@@ -2056,3 +2056,31 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **NOT CLAIMED: that the DSL measure fails RP.** `[PCD-EXT]` is 4004's **working extension**, and every RP
   result in this arc is about it. **What is established: the working extension does not satisfy H1, so it
   cannot be used to discharge it. Lane: EW / CHIR — VW-1's holder should see this.**
+
+---
+
+### TODO-4057-EW — WHY H1 fails: CP conservation. The fix exists and the founder's ruling forbids it.
+
+- **THE CAUSE.** 4056's indefiniteness was **p-independent**, so it lives in the **multinomial**, not the
+  physics. A multinomial has a **fixed total K** — a **non-local constraint**, the classic way to break
+  reflection positivity. **Tested the grand-canonical version (independent Poisson):** in the n̂-**fixing**
+  sector Poisson is **PSD at every δ** (−2.2e-13, −5.8e-13) against multinomial's **−5.44e-03, −4.74e-02**.
+  **So the n̂-fixing failure IS caused by the fixed total.**
+- **But the n̂-FLIPPING failure SURVIVES the change** (Poisson −9.32, −85.2): that one is a **genuine
+  Θ-asymmetry of the measure**, not a constraint artifact.
+- **AND THE FIX IS RULED OUT BY THE FOUNDER'S OWN REGISTERED RULING.** GR-FE-1 (19 Aug 2026): *"The GPs,
+  the CPs, and DI-bits are all conserved"*; `T2_T3_uniqueness_and_source.md` records it as the registered
+  picture, **"CPs are conserved"**. **So the fixed total is PHYSICAL.** The Poisson measure is not a better
+  model of the same physics — **it is a model of different physics.**
+- **⇒ H1's FAILURE IS REAL, NOT AN ARTIFACT.** 4056 stands; **4023 stays undermined; 4024 stays standing**
+  (its argument never used RP).
+- **THE SHAPE OF THIS IS ON RECORD.** The convenient answer was **available and correct-looking** — Poisson
+  restores RP exactly where it was needed — and I could have written *"the failure is a modelling artifact,
+  replace [PCD-EXT]"* without checking admissibility. **The check that killed it was a corpus search, not a
+  computation: the computation SUPPORTED the convenient reading.**
+- **FOR VW-1's HOLDER, and it is worse news than 4056's:** RP on the physical measure fails in **both**
+  sectors for δ > 0; the n̂-flipping failure is intrinsic and the n̂-fixing one is **caused by CP
+  conservation, which is axiom-level and cannot be traded away for RP.** **H1 is not merely unproven — on
+  the physical measure it is FALSE, and no occupation model respecting CP conservation will do better.**
+  **NOT claimed:** that no positivity condition survives — only that **reflection** positivity, on the
+  squared class, does not. **Lane: CHIR (VW-1's holder).**
