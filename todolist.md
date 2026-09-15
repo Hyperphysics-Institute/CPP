@@ -1610,3 +1610,32 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **Five attempts at 4038's target now:** close-packings (achiral), golden screw (loses z = 12),
   snub-24 attempt (z = 9), cell decoration (kills the rotations), edge-ring (no invariant). **The last two
   fail for one reason, now named.**
+
+---
+
+### TODO-4041-EW — a BORN-CHIRAL cluster, built and proved; and two failed measurements
+
+- **THE IDEA:** a regular icosahedron is **achiral** (60 improper symmetries of its own), so **z = 12
+  icosahedral forces an achiral first shell** whatever the rest does. **Chirality must live in the second
+  shell** — and a **generic** point has a **60**-point orbit under I where it would have **120** under I_h,
+  so a 60-point orbit **cannot** be closed under any improper operation.
+- **BUILT: icosahedron (12) + generic I-orbit (60) = 72 points. Proper symmetries 60, IMPROPER 0.** Every
+  control gives 60 improper (12 + 5-fold orbit, 12 + 3-fold orbit, icosahedron alone). **This is 4038's
+  target realised at cluster scale — the first object in this arc that is actually chiral with the right
+  rotation group.**
+- **SCOPE OF THE PROOF, stated:** the search covers I_h's improper coset {−R : R ∈ I}. **Sufficient** — a
+  point group containing I plus any improper element has order ≥ 120, and the only finite point group
+  containing I at index 2 is I_h. **Zero here means genuinely no improper symmetry.**
+- **TWO ATTEMPTS TO MEASURE *how* chiral, both FAILED, both reported.** (i) The 3-hop path estimator that
+  worked on the 600-cell has only **~240 paths** here — nn = 0.638 with shell 2 at 1.9 makes the
+  nearest-neighbour graph too sparse. **It returned 0 for lack of paths, not lack of chirality.** (ii) A
+  continuous chirality measure by random rotation search **floors at ~0.03 for the chiral cluster AND for
+  the exactly-achiral control** — sampling-limited, not measuring. **It needs local optimisation seeded
+  from the group elements. NOT DONE.**
+- **NOT ACHIEVED: a lattice.** This is a 72-point **cluster**. Extending it to a space-filling structure
+  while keeping z = 12 at every point is the remaining work, **and 4034's trichotomy says that step is
+  where the difficulty lives.** **Lane: EW.**
+- **NOT ACHIEVED: a quantified chirality.** The group count proves chirality; it does not say **how much**,
+  and "how much" is what a physical prediction would need. **Lane: EW.**
+- **FI-C-9 = V3 STANDS.** This removes an obstruction and builds a candidate; **it does not derive a
+  handedness.**
