@@ -1697,3 +1697,31 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   observable, not a parameter.** If the chirality strength sets its size, it is calibratable once and
   predictive thereafter. **That is the test of whether the reframe is explanatory or merely consistent.
   NOT COMPUTED. Lane: EW / SR — next.**
+
+---
+
+### TODO-4044-EW — the parity-odd term computed: real, O(k¹⁵), and it calibrates nothing
+
+- **THE MECHANISM:** the icosahedron and dodecahedron are **centrally symmetric**, so
+  Im[Σ_v e^{ik·v}] = Σ_v sin(k·v) vanishes **identically** for both. **The chiral 60-shell is not**, so it
+  need not vanish. **That is the parity-odd channel.**
+- **AND IT IS REAL.** Against two achiral controls that stay at **~1e-16** at every k, the chiral shell's
+  |Im| rises to **7.86e-06 at k = 6**. The channel is open.
+- **ITS ORDER IS k¹⁵, AND THAT WAS PREDICTED BEFORE MEASURING.** Icosahedral invariant degrees are
+  **2, 6, 10, 15**, and the degree-15 invariant is the **pseudo**-invariant — even under the rotation
+  group I, **odd** under reflection. Measured log-log slopes: **14.53, 14.84, 14.77, 14.63, 14.38, 14.06**,
+  trending monotonically to 15 as k falls; the shortfall at large k is higher-order sine terms.
+- **AT k ~ 1 THE TERM IS BELOW DOUBLE PRECISION.** An earlier run at k = 0.4–0.9 gave ~3e-15 scaling as
+  **k¹** — float noise, not signal. Recorded because reading that as a measurement would have been the
+  error this session has spent all day cataloguing.
+- **WHAT IT MEANS. A chiral substrate DOES make the vacuum optically active** — the prediction is definite
+  in form. **But it enters at (k·a)¹⁵**, so at any accessible k it is suppressed beyond conceivable
+  measurement, far worse even than SR's l = 6 floor at ~l_P/10³⁰.
+- **RISK RETIRED:** the chiral substrate is **not excluded** by the absence of observed vacuum optical
+  activity. That was a live risk when 4043 proposed the test — a chiral vacuum could have been ruled out on
+  the spot. It is not.
+- **BUT 4043's CALIBRATION HOPE FAILS.** 4043 hoped the chirality strength would set the size of an
+  **observable** and so become calibratable. **The observable is unobservable, so it calibrates nothing.**
+  4042's free magnitude remains free, chirality is still a **structural parameter rather than a
+  prediction**, and **the route 4043 proposed to promote it is now closed. A different observable would be
+  needed and none is named. Lane: EW / SR.**
