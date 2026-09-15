@@ -1916,3 +1916,27 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   land. **4050's mechanism sketch stands in FORM** — two P-odd binary states, exactly degenerate,
   degeneracy removable by a chiral substrate — **and its MAGNITUDE is not accessible by the means available
   here. Lane: EW / CHIR — needs a different instrument, not more of this one.**
+
+---
+
+### TODO-4052-EW — 4051's hypothesis TESTED and REFUTED; the real reason is a fact about four dimensions
+
+- **4051 guessed the splitting was suppressed by the degree-15 pseudo-invariant, as at 4044.** Prediction:
+  Σ_s (s·k)^m vanishes for odd m < 15 and turns on at 15. **Tested: EVERY odd moment is at machine zero,
+  m = 15 included.** Nothing turns on anywhere. **The hypothesis is refuted.**
+- **THE REAL REASON.** The quaternion **−1 lies in 2I**, so left-multiplication by it is **L₍₋₁₎ = −I**,
+  the inversion x → −x. **So the shell is CENTRALLY SYMMETRIC — and central symmetry kills every odd
+  moment identically, at every order.**
+- **AND YET THE SHELL IS STILL CHIRAL**, because **in four dimensions inversion is PROPER: det(−I₄) = +1**
+  (against det(−I₃) = −1). **Central symmetry and chirality COEXIST in 4D, which they cannot in 3D.**
+- **SO 4051's FUNCTIONALS WERE PROBING AN EMPTY CHANNEL.** Both reduce to **odd moments** of the shell —
+  sums of f(s) with f odd under s → −s — which central symmetry annihilates whatever the chirality. **The
+  failures were not suppression; they were a probe aimed at a channel that is identically zero.** This
+  diagnosis **replaces** 4051's.
+- **AND IT SPECIFIES THE NEXT FUNCTIONAL.** A P-odd scalar in 4D needs the **Levi-Civita contracted with
+  four independent vectors**. **An odd moment of one vector cannot be P-odd in 4D at all** — that is a 3D
+  intuition carried across, and it is where both of 4051's functionals came from. **4050's ring helicity
+  ε(L, c, n̂) already has the right shape** — the bivector supplies two of the four slots — and is the one
+  P-odd quantity in this arc that has worked in 4D. **A splitting functional needs the same form with the
+  shell entering through a slot the inversion cannot cancel. NOT built here — the diagnosis is the
+  deliverable, and the next step now has a specification instead of a guess. Lane: EW.**
