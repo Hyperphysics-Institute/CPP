@@ -1940,3 +1940,33 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   P-odd quantity in this arc that has worked in 4D. **A splitting functional needs the same form with the
   shell entering through a slot the inversion cannot cancel. NOT built here — the diagnosis is the
   deliverable, and the next step now has a specification instead of a guess. Lane: EW.**
+
+---
+
+### TODO-4053-EW — RETRACTION: 4051's "chiral 4D shell" was never chiral
+
+- **THE INSTRUMENT 4052 SPECIFIED, BUILT.** 4D graph helicity — Σ sign det[u₁,u₂,u₃,u₄] over 4-hop paths;
+  survives central symmetry ((−1)⁴ = +1), P-odd under reflection. **It returns exactly zero on 4051's
+  "chiral" shell — and on the 600-cell — with IDENTICAL path counts (1,916,640). Identical path counts for
+  two supposedly different objects is the tell.**
+- **BECAUSE THEY ARE THE SAME OBJECT.** `L_q` applied to (1,0,0,0) returns the first **column** of `L_q`,
+  which is **q itself** — so that orbit **is** the 120 icosians, i.e. the 600-cell. And left multiplication
+  is an **isometry**, so **every** left-icosian orbit is a **congruent copy of the 600-cell** (distance
+  spectra match exactly). **The 600-cell is achiral: H₄ contains reflections.**
+- **4051's test was misread.** *"Θ does not map it to itself"* only showed the copy was **misaligned** with
+  that particular reflection. **Misaligned is not chiral, and I read it as chiral.**
+- **WITHDRAWN:** 4051's chiral 4D shell; 4051's splitting attempt (it was never probing a chiral
+  environment, so its two failures say **nothing** about splitting); and 4052's central-symmetry diagnosis
+  as *the reason the attempt failed* — **the attempt failed because there was no chirality present.**
+- **4052's POSITIVE CONTENT SURVIVES:** inversion is proper in 4D (det(−I₄) = +1); central symmetry and
+  chirality can coexist in 4D; a P-odd 4D scalar needs four Levi-Civita slots. **All true, all independent
+  of the retracted object — and the instrument built from it works.**
+- **THE REAL STATE, WORSE THAN I HAVE BEEN REPORTING: NO CHIRAL 4D STRUCTURE HAS EVER BEEN BUILT IN THIS
+  ARC.** 4041's chiral cluster is **three**-dimensional, verified against 3D controls. The 4D analogue was
+  attempted only at 4051 and is now retracted. **The bracelet, n̂ and the 600-cell all live in 4D.**
+- **So 4050's mechanism sketch has no 4D chiral substrate to run on.** The two helicity states are real and
+  exactly degenerate (4050 stands); **what would split them has not been constructed in the right
+  dimension.**
+- **THE REMAINING WORK, stated honestly:** build a **chiral 4D point set** — an orbit of a subgroup of
+  H₄'s **rotation** half that is **not** an orbit of H₄ itself. **The left-icosian group is the wrong
+  choice, because its orbits are congruent to the 600-cell. NOT attempted. Lane: EW.**
