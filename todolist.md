@@ -1861,3 +1861,31 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   all-or-nothing, which is exactly the maximality V−A wants, and exactly what a 2% substrate sign could
   select between. **Not present in the current description. A specific, nameable gap on SF-2's side — far
   more actionable than "derive V−A". Lane: SF-2 / CHIR. NOT this lane's to fill.**
+
+---
+
+### TODO-4050-EW — 4049's request was mis-specified; the right object already exists in the corpus
+
+- **4049 ASKED FOR THE WRONG THING, one patch old.** It requested *a binary, P-odd, two-state degree of
+  freedom **on the ring***, and suggested a circulation. **A circulation is P-EVEN** — an axial vector,
+  like a magnetic moment; parity leaves it alone. **It cannot be what a P-odd substrate sign selects.**
+- **THE RIGHT OBJECT IS THE RING TOGETHER WITH n̂, AND BOTH ALREADY EXIST.** (axial)·(polar) =
+  **pseudoscalar**. The ring supplies an oriented area bivector L; **n̂ is CPP's primitive 4D direction
+  (FI-C-RC-1)**. Contract with the 4D Levi-Civita and the result is **P-odd by construction**.
+- **COMPUTED:** all **63** induced 6-cycles through one vertex carry a **nonzero** helicity, magnitude
+  **1/(2φ) = 0.309017** — φ-valued, like everything else here.
+- **AND THE TWO STATES ARE EXCHANGED BY AN EXACT SYMMETRY OF THE PRESENT SETUP.** Under
+  **Θ = diag(1,1,1,−1)**, which fixes n̂ and preserves the 600-cell, the helicity **flips for all 63 rings
+  and is unchanged for none.** **⇒ the two states are EXACTLY DEGENERATE and nothing in the present setup
+  prefers one.**
+- **WHICH COMPLETES THE MECHANISM SKETCH, IN FORM:** achiral substrate → Θ exists → degenerate; **chiral
+  substrate → no Θ → degeneracy broken**; and the variable is **binary** — sign(helicity) = ±1,
+  all-or-nothing, **which is the maximality V−A wants and which a 2% bias can select between.**
+- **4049's NEGATIVE BECOMES THE REQUIREMENT.** The bracelet's achirality is what **guarantees** exactly two
+  degenerate states; a chiral bracelet would have split them geometrically, leaving nothing for the
+  substrate to do.
+- **NOT DONE — THE SPLITTING IS NOT COMPUTED.** This shows the two states exist, are P-odd, binary, and
+  degenerate now. It does **not** show a chiral substrate splits them, nor by how much, nor with which
+  sign. **Needs the bracelet embedded in the chiral environment. Lane: EW — next.**
+- **And not claimed that this is how SF-2's bracelet works** — SF-2 describes a catalyst at a D₆-symmetric
+  centroid, not a helicity state. **Whether the W state carries this variable is SF-2's to say.**
