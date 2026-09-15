@@ -1501,3 +1501,34 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **AND THE DM PROXIES ARE NOT THEREBY VINDICATED AS THE SUBSTRATE.** 4035 said they *sit on the
   survivable horn*; they survive the **coordination** constraint and pay on the **cage** one. They remain
   what their author called them: **proxies**. **Lane: DM — noted, nothing owed.**
+
+---
+
+### TODO-4037-EW — the founder's question: what is most likely wrong? An audit, not an opinion
+
+- **HIS ARGUMENT:** the masses predict accurately, so they are probably right, and the wrong thing is
+  elsewhere. **I agree the masses are probably right. But the inference "masses work ⇒ the geometry is
+  right" does not go through, and the reason is measurable.**
+- **THE STRONGEST MASS PREDICTION USES NO ICOSAHEDRAL GEOMETRY.** *"icosahedr"* appears **0 times in
+  SF-1**, 2 in SF-3, 22 in SF-4, 12 in SM-2. **SF-1 is the cleanest prediction the programme has** —
+  Koide K = 2/3, θ = 132.731°, m_μ and m_τ, from **one calibration (m_e) and zero shape parameters** — and
+  its geometry is a **three-vertex colour triangle**, with the leptons as *"stationary occupation patterns
+  of a single three-vertex colour cage."* **A triangle embeds in any lattice; 4036's crystallographic
+  obstruction does not touch it.**
+- **AND THE TABLE THAT DOES USE THE CAGES COMPUTES NOTHING.** 4002: SM-2's Mass Contribution Breakdown is
+  a **fixed-fraction partition of the calibrated PDG total** with a residual closing the sum — all twelve
+  rows. **The cage column labels rows; it does not generate numbers. So SM-2's table cannot be evidence
+  for the cage taxonomy.**
+- **⇒ THE MASS SUCCESSES AND THE ICOSAHEDRAL COMMITMENT ARE LARGELY DISJOINT.** SF-4 does use z, but 4016
+  showed **only the COUNT enters** (M₀ ∝ z, σ_ν ∝ z⁻¹⁰), not the arrangement.
+- **WHAT I THINK IS MOST LIKELY WRONG — a hypothesis, not a finding:** not the masses, not the axioms,
+  **the GLOBAL LATTICE CONSTRUCTION — and it is most likely wrong because nothing in the mass sector ever
+  needed it.** Everything load-bearing in SM is **local**: a three-vertex triangle (SF-1), a count of
+  twelve (SF-4), a first-shell distance ratio (Capotauro/CHI-1). **None requires a global 600-cell tiling
+  of flat ℝ⁴.** That is also why 4033 found it unspecified: **an unused commitment never gets pinned
+  down.**
+- **MEANWHILE SR-1 DOES need the global structure** — its W2 world-call rests on the substrate's symmetry
+  **class**. **So the conflict this arc has chased is between SR's GLOBAL commitment and SM's LOCAL ones,
+  and the local ones are satisfiable in many global structures.**
+- **CHECKABLE PREDICTION, NOT YET TESTED:** no SM result changes if the global tiling is replaced,
+  provided the local structures survive. **Lane: EW — test it.**
