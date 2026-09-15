@@ -33,6 +33,11 @@ ABSENCE = [
     r"\bI\s+(?:can|could)\s+not\s+find\b", r"\banywhere\s+I\s+can\s+find\b",
 ]
 # Evidence that the search was actually unscoped.
+# Searched paths that are easy to miss. If a patch makes an absence claim and has NOT
+# named one of these, the evidence is probably still scoped. Added at 4031, after the
+# EW lane spent 4008-4030 re-deriving results that sat in Development/transcripts/ --
+# a directory none of its greps had ever touched.
+EASY_TO_MISS = ["Development/transcripts", "archive/", "founders_voice", "Development/"]
 EVIDENCE = [
     r"SEARCHED-UNSCOPED", r"grep\s+-r\w*\s+[^\n]*\s\.\s*$", r"grep\s+-r\w*\b[^\n]*--include",
     r"git\s+grep", r"unscoped", r"across the (?:full |whole )?(?:tree|repo|corpus)",
@@ -79,6 +84,11 @@ def main():
           f"evidence of unscoped search: {ev if ev else 'NONE'}")
     for w,s in hits[:8]:
         print(f"  «{w}»  {s[:150]}")
+    missed=[d for d in EASY_TO_MISS if d not in body]
+    if ev and missed:
+        print(f"\nEvidence present, but these easy-to-miss paths are unnamed: {missed}")
+        print("Not a failure -- but 4008-4030 re-derived three months of work that sat in")
+        print("Development/transcripts/, and no grep in that arc ever touched it.")
     if ev:
         print("\nEvidence present. PASS — but the claim is only as good as the pattern searched:")
         print("an unscoped grep for the WRONG STRING is still a scoped grep. 4011 searched")

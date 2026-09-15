@@ -1319,3 +1319,33 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   as the reference*. Knowing to centre comes from **4018's** finding that the neighbour icosahedron is not
   centred on its vertex — an earlier result in this same session was needed to make this measurement mean
   anything. **Lane: EW.**
+
+---
+
+### TODO-4031-EW — prior art I missed for an entire arc, and the cross-sector tension it exposes
+
+- **A DIRECTORY I NEVER SEARCHED: `Development/transcripts/`.** Across 4008–4030 my greps covered
+  `frontier_sectors/`, `todolist.md`, the registry, `series_*/` and `founders_voice/` — **never this.**
+- **A transcript dated 23 June 2026 already states**: the 600-cell **cannot tessellate flat 4D Euclidean
+  space**; **only the tesseract, 16-cell and 24-cell** tile 4-space; it **tiles S³ and hyperbolic space**;
+  and — decisively — *"the corpus's tessellated 600-cell lattice"* is **under-determined**, branching into
+  **two readings**. **That is 4008's finding, three months early, and 4017's Euclidean result in prose.**
+- **WHAT WAS NOT DUPLICATED, in fairness:** 4009 cited SR.md R4 for Coxeter at the time — that part was
+  done properly. And the arc added: **4017's pricing of the hyperbolic branch (vertex figure {3,5,3} is
+  itself hyperbolic ⇒ z = ∞ — the transcript names hyperbolic as live and never prices it, and the price
+  is what closes it)**; 4019's 7.356°/edge single cause; 4018's Bravais and H₄ closures; the quasicrystal
+  branch **tested** and failed three ways (4013/4015/4030); two founder rulings.
+- **`code/absence_gate.py` extended:** it now names the easy-to-miss paths (`Development/transcripts/`,
+  `archive/`, `founders_voice/`) when an absence claim's evidence does not mention them. **Lane: EW —
+  done.**
+- **THE CROSS-SECTOR TENSION, AND IT IS THE POINT.** `SR.md` R4/R5 is **panel-closed** on the substrate
+  being an icosahedral **quasicrystal**, and the terminal **W2** world-call rests on it. **4030 showed the
+  icosian cut-and-project quasicrystal fails the SM-side requirement** — nearest shell of 13/18/19/26
+  equidistant points, not exactly 12, and the chosen twelve not spanning a 3-flat, which SS-1, SM-1, SM-7,
+  SM-8, SM-9 and SF-4 all need. **Either the substrate quasicrystal is a different object from the icosian
+  cut-and-project, or SR's structural commitment and SM's coordination requirement conflict.** Both are
+  load-bearing; neither lane has looked at the other on this point. **NOT resolved here — SR's R4/R5 is
+  panel-closed and belongs to that lane. Lane: SR / SM / founder.**
+- **AND THE 4009 TENSION IS STILL OPEN:** SR.md treats SR-1's φ-self-similar **nested**-600-cell hierarchy
+  *as* the substrate quasicrystal, but **0736 puts that nesting inward**, to ~l_P/10³⁰. If the nesting is
+  the fine scale, SR.md's identification needs a **lateral** structure it does not name. **Lane: SR / EW.**
