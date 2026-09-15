@@ -858,11 +858,23 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
     by 1.8** — every band from 1.0 out to 9 is within 2.5 sem of zero and under 0.3% of on-site. **⇒ ξ ≲ 1
     edge length: FINITE correlation length, NO long-range order.** 4025's specific worry — that ξ ≥ 5
     would not show — is discharged: this reaches past 6 and sees nothing.
-  - **A draft of the 4026 check asserted "no band exceeds 1% of on-site" and FAILED on the nearest band.**
-    The draft was wrong and usefully so — a finite ξ *should* show at one edge length, and a flat zero
-    everywhere would have been the suspicious result. Restated to test what the physics predicts.
-  - **Measured, no story attached:** the short-range structure is **stronger along n̂ (−0.0123) than
-    transverse (−0.0025 ± 0.0007) on the same patch**. **Lane: CHIR / EW.**
+  - **RETRACTED AT 4027: 4026's "real short-range anticorrelation, 3.4 sem" IS NOT REAL.** At 10× the
+    realisations the band value **drops 7× (−0.01234 → −0.00171)** and the significance collapses to
+    **1.3 sem**. A real correlation does not shrink with more sampling; a fluctuation does. **With it,
+    4026's claim that 4025's null was "partly a power problem" is withdrawn — 4025's null was correct.**
+  - **ROOT CAUSE, and it affects BOTH 4025 and 4026: the error bars were understated.** Both quoted the
+    **sem over PAIRS** in a distance band, but pairs in a band **share sites** and are not independent.
+    Bootstrap over realisations gives **1.57× larger** bars — so 4026's 3.4 sem was really ~2.2 sem
+    *before* the value collapsed. **Two compounding errors.**
+  - **RULE ENACTED at 4027:** bootstrap over **realisations**, never sem over pair-bins; and check
+    **value-stability against reps** before quoting any significance. **Enabling fix shipped: a vectorised
+    η** (`4027_retraction_error_bars.py`) — 4026 used 400 reps because the per-site loop was slow, and
+    4000 now costs little. **Lane: EW.**
+  - **WHAT SURVIVES:** 4026's **geometry** (reach 12.7 edge lengths vs ~3) and the conclusion, now more
+    cleanly — with bootstrap-corrected bars, **nothing is resolvable at ANY separation**, 0.2–0.7 sem
+    across every band out to 9. **No long-range order along n̂.** And the n̂-vs-transverse **anisotropy is
+    also not established**: rotating η's selection axis at 1500 reps gives diagonal − off-diagonal =
+    **−0.0009 ± 0.0012 (0.7 sem)**. **Lane: EW.**
   - **Two further limits:** the patch reaches ~3 edge lengths, so ξ ≥ 5 would not show; and the icosian
     cut-and-project is a **proxy** (4013/4015 established it is not the substrate). **Lane: EW.**
   - **STILL SUBMITTED FOR CRITIQUE per PD-008** — now a completed argument with one attack landed and one
