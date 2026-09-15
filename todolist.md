@@ -2252,5 +2252,21 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **(3) Exact-rate Θ_OS probe** at δ = 0.35, t = 1 (30+ digits from φ-exact rates) to settle whether the
   −3.5e−15 is a signal or float input. If negative and confirmed: a necessary condition for VW-a-4 fails on
   the single-walker [PCD-EXT] toy — a toy result, not H1. **Lane: CHIR.**
+- **(2) CLEARED at 0984** — answered: Thm 6.1 (ii) consumes neither reflection; see TODO-0984-CHIR.
 - **(4) Cross-lane notice (EW):** 4022's reasoning fragment should carry a one-line erratum pointing at 0983.
   Not done here (EW-lane file). **Lane: EW.**
+
+### TODO-0984-CHIR — VW-1 Thm 6.1 (ii) needs an unstated phase-source hypothesis (registered Patch 0984, chirality lane)
+
+- **(1) PD-008 attack on 0984 (next CHIR window, first):** is there any reading of CONT-1's Φ-continuum under which
+  η's source is a phase — i.e. a Euclidean rotation group mixing the Moment index with R⁴ under which η is a
+  full pseudoscalar? If yes, H1′ may hold in the continuum and the route survives there. **Lane: CHIR.**
+- **(2) VW-1 v1.2 corrigendum** — after (1): add H1′ to Thm 6.1 (ii) and the unification remark; Def. 2.1's
+  *no sign problem* clause marked as automatic for a stochastic substrate. Panel only if (1) makes it a win or a
+  stall (review economy). Then `paper_regeneration_ledger.md`. **Lane: CHIR.**
+- **(3) SF-2 notice:** δ_CP long-horizon contingencies (4059) reduce to the VW capacity bit; that bit must
+  re-route via CAPACITY-1 / SUSC. Notice only; SF-2 is parked. **Lane: SF-2.**
+- **(4) Candidate escape, NOT built (D-3):** a P-odd AND Moment-odd order parameter (η × TARROW-2's O(δ³)
+  current) would carry the time index VW needs. T-face. Scope before building. **Lane: CHIR.**
+- **(5) Exact-rate Θ_OS probe** (carried from TODO-0983-CHIR (3)); unfinished at 0984 — container time limits.
+  **Lane: CHIR.**

@@ -8,6 +8,9 @@
   Master dashboard: research_frontier.md
 -->
 
+> **NOTICE (Patches 0983/0984, 15 Sep 2026).** H1 (VW-1) is **OPEN ⟺ VW-a-4**, not refuted (the 4022–4062 EW arc tested the spatial parity, not VW-2's Θ_OS). **And the VW route H1 ⇒ μ² > 0 needs an unstated hypothesis H1′ (η's Euclidean source is a phase) that FAILS for a real equal-time pseudoscalar of a classical Markov measure** — Jensen reverses the Vafa–Witten inequality. V3 / V1 rest on CAPACITY-1 and are unmoved. VW-1 v1.2 corrigendum owed (TODO-0984-CHIR). Read `chirality_derivations/reasoning/0983.md` and `0984.md` before citing VW-1 Thm 6.1 (ii) for capacity.
+
+
 ## Substrate Chirality Arc (CHIR) — 5 problems (1 partially resolved) + 3 resolved
 
 The CHIR sector tracks the chirality programme of the Substrate Chirality Arc
