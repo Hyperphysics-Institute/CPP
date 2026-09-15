@@ -1374,3 +1374,42 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **NOT a claim that they are inconsistent.** An approximation and an exact use of the same object are
   not a contradiction **until someone bounds the error. Nobody has. That is the item.**
   **Lane: SR / SM / founder.**
+
+---
+
+### TODO-4033-EW — the error cannot be bounded because the construction was never specified
+
+- **I HAD NEVER BUILT WHAT SR-1 ACTUALLY NAMES.** Its construction is *"modular repetition of 600-cell
+  motifs with overlapping Voronoi cells"* — **not cut-and-project**, which is what 4010–4030 all tested.
+  Different constructions. **Seventh instance today of building on my own reading instead of the
+  corpus's.**
+- **SO I BUILT IT, on the most literal reading (mine, labelled): translate the 120-vertex motif by t·u
+  for u in the motif, union.** No t gives anything like uniform z = 12 (**best 2.7%**), and **at several
+  t the nearest-neighbour distance is 0.0000 — coincident points.** A point set with coincident points is
+  not a lattice, so **the reading is wrong** — and that, not the failure, is the finding.
+- **THE ACTUAL FINDING: SR-1's approximation is not specified to a level that can be checked.** The
+  phrase names a **family**, not a recipe: it fixes neither the translation set, nor the overlap rule, nor
+  what happens where motifs collide. **⇒ 4032's error term CANNOT be bounded until the construction is
+  specified** — you cannot measure the deviation of an unbuilt object from an exact requirement.
+- **AND THIS IS THE ROOT CAUSE OF THE WHOLE 4009–4032 ARC.** Every lattice built — icosian
+  cut-and-project (4010/4013/4015/4030), the anisotropic patch (4026), this one — was **my guess at what
+  the corpus means. The lateral lattice was never unbuilt because it is hard; it was unbuilt because it
+  was never specified.**
+- **RESOLVING IT NEEDS ONE OF TWO THINGS, and neither is this lane's:**
+  **(i)** SR-1's construction written out to build level — translation set, overlap rule, collision
+  handling; or **(ii)** a **founder ruling** that some named standard construction *is* the intended one,
+  after which it can be built and measured in an afternoon. **Lane: SR / founder.**
+- **SEARCHED UNSCOPED BEFORE CLAIMING IT** — `absence_gate.py` failed a draft of this, correctly. Outside
+  my own files the phrase occurs only in **SR-1**, its **revision chain** (a *different* use — ΔSSV
+  geometry inside cells, not lattice construction), and **two copies of one figure**. **The figure's own
+  title says "Schematic"** — *600-Cell Quasicrystalline Lattice (Schematic 3D Projection)*. **The paper
+  does not claim to give a construction.**
+- **AND THE SECOND COPY IS SM-1's** — `series_standard_model/figures/figures-SM-1/` carries the **same**
+  schematic. **So the SM sector adopted the same unspecified construction rather than supplying one of
+  its own** — which is why the gap has never surfaced from either side.
+- **ONE CONSTRAINT GAINED from the figure, worth having:** *"Grid Points at **all vertices**"* — every
+  motif vertex is a GP, which **rules out** any reading where overlap merges or discards vertices.
+  **Lane: EW — carry into the build once the construction is specified.**
+- **NOT claimed:** that the approximation is bad. **Unbuilt is not wrong**, and there is no measurement
+  either way. The literal reading is filed as **refuted**, which is evidence about the sentence's
+  ambiguity and nothing more.
