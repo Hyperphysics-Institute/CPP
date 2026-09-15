@@ -2251,7 +2251,7 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   narrowed conditionality). Not physics. **Lane: CHIR.**
 - **(2) PD-008 attack on 0983** — is Θ_OS positivity the only positivity VW-1 Thm 6.1 consumes? Read Thm 6.1's
   proof, not VW-2's bridge remark about it. **Lane: CHIR.**
-- **(3) Exact-rate Θ_OS probe** at δ = 0.35, t = 1 (30+ digits from φ-exact rates) to settle whether the
+- **(3) MOVED to TODO-0988-CHIR** (the script is now in the repo; this entry had no executable form). Original: Exact-rate Θ_OS probe at δ = 0.35, t = 1 (30+ digits from φ-exact rates) to settle whether the
   −3.5e−15 is a signal or float input. If negative and confirmed: a necessary condition for VW-a-4 fails on
   the single-walker [PCD-EXT] toy — a toy result, not H1. **Lane: CHIR.**
 - **(2) CLEARED at 0984** — answered: Thm 6.1 (ii) consumes neither reflection; see TODO-0984-CHIR.
@@ -2270,5 +2270,20 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **(3) CLEARED at 0987** — notice written at the head of TODO-4059-EW: the contingency is CAPACITY-1's conditions, not H1.
 - **(4) Candidate escape, NOT built (D-3):** a P-odd AND Moment-odd order parameter (η × TARROW-2's O(δ³)
   current) would carry the time index VW needs. T-face. Scope before building. **Lane: CHIR.**
-- **(5) Exact-rate Θ_OS probe** (carried from TODO-0983-CHIR (3)); unfinished at 0984 — container time limits.
-  **Lane: CHIR.**
+- **(5) MOVED to TODO-0988-CHIR.**
+
+### TODO-0988-CHIR — Exact-rate Θ_OS probe: a Kila6 job (registered Patch 0988, chirality lane)
+
+- **What.** `chirality_derivations/code/0988_theta_os_exact_probe.py` — the OS time-reflection pairing on 4022's
+  single-walker [PCD-EXT] toy measure, with rates built exactly in Q[φ] at 30 and 45 digits. Settles whether
+  0983's −3.5×10⁻¹⁵ (δ = 0.35, t = 1, float-precision rates) is a signal or float input. **Decision rule is
+  pre-committed in the script's docstring**; construction stage tested exactly in-container (0988), the
+  expm/eigsy stage not runnable here (5-minute cap).
+- **Who / where.** Founder, mechanical: on **Kila6** (`python`, not `python3`; deps numpy + mpmath, pure wheels):
+  `cd ~/Documents/GitHub/CPP/series_umbrella/series_substrate_chirality_arc/chirality_derivations/code && python 0988_theta_os_exact_probe.py`
+  — ~10–20 min per case, seven cases, results appended to `0988_results.txt` in that folder. Paste the file
+  (or the lines) into a CHIR window; Claude files the outcome.
+- **Stakes, stated so the job is sized right.** Either outcome is a toy result on [PCD-EXT]: ZERO strengthens
+  the single-time necessary condition for VW-a-4; NEGATIVE is a failure of that necessary condition on the
+  single-walker toy only. Neither touches H1 on the DSL measure or any verdict. Low priority; run when Kila6 is
+  idle between DM campaign phases. **Lane: CHIR.**
