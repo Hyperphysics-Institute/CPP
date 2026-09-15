@@ -49,6 +49,8 @@ This registry tracks both sides of that ledger.
 |---|---|---|---|---|
 | **A5** | Propagation efficiency | The cage-scale propagation efficiency is η = l_edge/R_circ = 1/φ, where φ = (1+√5)/2 | SR-1 | SM-6,7; SR-1 |
 
+**A2 NOTE — cage regularity (founder ruling, 14 September 2026; EW lane Patch 4061).** **The 600-cell cage is NOT required to be exactly regular.** Five regular tetrahedra about an edge cover 5 × arccos(1/3) = 352.644°, not 360°, so a flat substrate carries an **angular deficit of 7.356° per edge**; the founder's ruling is that this **is carried as strain**, *"just like materials with icosahedral packing"* — which is what real icosahedral quasicrystals and metallic glasses do. **This is a clarification, not an amendment: A2 never asserted regularity.** Ruling filed verbatim at `founders_voice/4020_ruling_distorted_cage.md`; deficit derived at `series_standard_model/code/4019_angular_deficit.py`. **Two things a reader should know before building on this.** **(i)** The 7.356° is **derived, not chosen** — given icosahedral local structure and flat space it is forced arithmetic, so the note licenses a *specific* strain and not irregularity in general. **(ii)** **z = 12 is inside A2**, so giving up *exactly twelve* would be a genuine amendment; giving up exact regularity (this note) or the icosahedral arrangement would not. **Open and unresolved:** A2's parenthetical is the f-vector of a **single** 600-cell while its verb is *tessellated*, and no construction meeting "tessellated" has been exhibited — see EW Patches 4009–4034.
+
 **Notes:** A5 may be derivable from A2 — the ratio l_edge/R_circ = 1/φ is a geometric property of the 600-cell. If proved, A5 collapses into A2.
 
 ---

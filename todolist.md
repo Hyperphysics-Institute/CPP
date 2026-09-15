@@ -2173,3 +2173,25 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **⇒ 4058 AND 4059 DID NOT COVER THE EXPOSURE.** They found two consumers; there are more. **Which are
   load-bearing is a CHIR-lane audit, not an EW-lane grep.** This patch delivers the **list** and the
   **correction**, not the audit. **Lane: CHIR — audit owed.**
+
+---
+
+### TODO-4061-EW — A2 note added; session handover written; lane closed at 4061
+
+- **A2 NOTE ADDED** to `axiom-registry.md`, below the axiom table (a paragraph inside a markdown table
+  splits it in two; the first draft did that and was moved). **The cage is not required to be exactly
+  regular; the 7.356°/edge frustration is carried as strain.** Points at
+  `founders_voice/4020_ruling_distorted_cage.md` and `4019_angular_deficit.py`.
+- **Three guards written into the note:** the 7.356° is **derived, not chosen** (so it licenses a *specific*
+  strain, not irregularity in general); **z = 12 is inside A2**, so giving up exactly-twelve *would* be an
+  amendment while this is not; and A2's **f-vector-vs-"tessellated" tension is flagged as open**, pointing
+  at 4009–4034.
+- **NOT an axiom change.** A2's text is untouched.
+- **HANDOVER WRITTEN:** `handovers/2026-09-15_session_230_ew_lane_4000_4061.md` — orienting paragraph,
+  what was established, **eight traps**, what is owed and to whom, next-session items, governance enacted.
+- **LANE CLOSED AT 4061.** Nothing in it is bounded and unblocked. **Next free: 4062.**
+- *(A draft of the handover asserted that H1's 40 dependents had never been audited. `absence_gate.py`
+  caught the assertion and it is **withdrawn rather than evidenced**: the supportable statement is that
+  **4060 produced the list and did not characterise it**, and the files belong to CHIR rather than this
+  lane. Seventh time this session a gate or a control corrected a claim — the last one landing on the
+  handover itself.)*
