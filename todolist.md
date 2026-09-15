@@ -2124,6 +2124,8 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ### TODO-4059-EW — ["both contingencies refuted" WITHDRAWN AT 4062: they are OPEN] 4058 overstated it; the accurate consequence is sharper. BOTH δ_CP contingencies reduce to H1.
 
+> **SF-2 NOTICE (Patch 0987, CHIR lane; closes TODO-0984-CHIR (3)).** The δ_CP long-horizon contingency was written (June 2026) as *H1 reflection-positivity*, i.e. the **VW route** to the capacity bit sign(μ²). Two things have happened since. (i) **THEO-CHIR-CAPACITY-1** (0927, 3/3; narrowed 0960) closed that same bit by a different route — *no det-coset condensation ⇒ μ² > 0* — conditional on MA.1's first harmonic, per-edge independence, and η non-degeneracy on perturbed configurations (0986). (ii) The VW route is **inapplicable as posed** (0984/0985; VW-1 v1.5). **So δ_CP's contingency should no longer be stated as "H1"; the capacity bit is CAPACITY-1's, under CAPACITY-1's conditions**, and H1's status (OPEN ⟺ VW-a-4) is irrelevant to it. The 2028+ plan is parked; this notice changes what it is contingent on, not whether it is parked. **Lane: SF-2, at un-parking.** Everything below is the 4059/4062-era text, retained.
+
 - **4058 SAID 4057 "settles a go/no-go question that was left open". WITHDRAWN.** The adjudication says
   otherwise in its own words: **"Adopted verdict: RESTATEMENT-NEEDED"**, *"Grok's framing is adopted as the
   more accurate one"*, and the SQ1 probability already judged **"near zero"**. **The decision was made
@@ -2253,8 +2255,7 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   −3.5e−15 is a signal or float input. If negative and confirmed: a necessary condition for VW-a-4 fails on
   the single-walker [PCD-EXT] toy — a toy result, not H1. **Lane: CHIR.**
 - **(2) CLEARED at 0984** — answered: Thm 6.1 (ii) consumes neither reflection; see TODO-0984-CHIR.
-- **(4) Cross-lane notice (EW):** 4022's reasoning fragment should carry a one-line erratum pointing at 0983.
-  Not done here (EW-lane file). **Lane: EW.**
+- **(4) CLEARED at 0987** — erratum line added at the head of `series_standard_model/reasoning/4022.md` (EW lane is closed at 4061; done from CHIR under PD-006, fragment otherwise verbatim).
 
 ### TODO-0984-CHIR — VW-1 Thm 6.1 (ii) needs an unstated phase-source hypothesis (registered Patch 0984, chirality lane)
 
@@ -2266,8 +2267,7 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **(2) VW-1 v1.2 corrigendum** — after (1): add H1′ to Thm 6.1 (ii) and the unification remark; Def. 2.1's
   *no sign problem* clause marked as automatic for a stochastic substrate. Panel only if (1) makes it a win or a
   stall (review economy). Then `paper_regeneration_ledger.md`. **Lane: CHIR.**
-- **(3) SF-2 notice:** δ_CP long-horizon contingencies (4059) reduce to the VW capacity bit; that bit must
-  re-route via CAPACITY-1 / SUSC. Notice only; SF-2 is parked. **Lane: SF-2.**
+- **(3) CLEARED at 0987** — notice written at the head of TODO-4059-EW: the contingency is CAPACITY-1's conditions, not H1.
 - **(4) Candidate escape, NOT built (D-3):** a P-odd AND Moment-odd order parameter (η × TARROW-2's O(δ³)
   current) would carry the time index VW needs. T-face. Scope before building. **Lane: CHIR.**
 - **(5) Exact-rate Θ_OS probe** (carried from TODO-0983-CHIR (3)); unfinished at 0984 — container time limits.
