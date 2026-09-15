@@ -2031,7 +2031,7 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
-### TODO-4056-EW — H1 FAILS. The counterexample 4055 predicted, found where it predicted.
+### TODO-4056-EW — [DOWNGRADED AT 4062: fails on an ISOLATED 600-cell by O(1/K) only; "δ = 0 untouched" withdrawn] H1 FAILS. The counterexample 4055 predicted, found where it predicted.
 
 - **4055 named the non-product class as the only place a counterexample could live. Looked there. FOUND
   ONE.**
@@ -2059,7 +2059,7 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
-### TODO-4057-EW — WHY H1 fails: CP conservation. The fix exists and the founder's ruling forbids it.
+### TODO-4057-EW — [CONCLUSION WITHDRAWN AT 4062: H1 is OPEN, not false] WHY H1 fails: CP conservation. The fix exists and the founder's ruling forbids it.
 
 - **THE CAUSE.** 4056's indefiniteness was **p-independent**, so it lives in the **multinomial**, not the
   physics. A multinomial has a **fixed total K** — a **non-local constraint**, the classic way to break
@@ -2122,7 +2122,7 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
-### TODO-4059-EW — 4058 overstated it; the accurate consequence is sharper. BOTH δ_CP contingencies reduce to H1.
+### TODO-4059-EW — ["both contingencies refuted" WITHDRAWN AT 4062: they are OPEN] 4058 overstated it; the accurate consequence is sharper. BOTH δ_CP contingencies reduce to H1.
 
 - **4058 SAID 4057 "settles a go/no-go question that was left open". WITHDRAWN.** The adjudication says
   otherwise in its own words: **"Adopted verdict: RESTATEMENT-NEEDED"**, *"Grok's framing is adopted as the
@@ -2195,3 +2195,28 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   **4060 produced the list and did not characterise it**, and the files belong to CHIR rather than this
   lane. Seventh time this session a gate or a control corrected a claim — the last one landing on the
   handover itself.)*
+
+---
+
+### TODO-4062-EW — PD-008 critique of 4056/4057: H1 REFUTED → OPEN (conditional). Convenient branch, submitted.
+
+- **RESULT.** 4057 step (3) read *CPs are conserved* (GR-FE-1) as *the total on one 600-cell is fixed*. The
+  source states **continuity with flux**, constancy only for an **isolated system**; A2's substrate is
+  **tessellated**. The fixing-sector violation is **−1/K_tot exactly** and vanishes in the limit; the
+  independent-Poisson measure 4057 called inadmissible **is that limit**. VW-1 locates RP in CONT-1, where a
+  finite polytope *does not literally possess* it. **H1 (n̂-fixing) is OPEN**, conditional on (a)
+  non-interacting walkers and (b) Θ-symmetry of the tessellated substrate's generator.
+- **ALSO WITHDRAWN:** 4056's "δ = 0 is untouched" (F = n_a/(K p_a) − 1 violates at δ = 0 on a finite total).
+- **QUANTIFIER:** H1 is NOT claimed on any finite window. It is false there.
+- **OWED — attack this result first (next EW/CHIR window, PD-008):** (i) does any H1 consumer need RP on a
+  finite window rather than the limit state? (ii) condition (b) on the aperiodic tessellation (4009);
+  (iii) not re-examined: whether 4022's static spatial-reflection reading of H1 is VW-1's
+  Osterwalder–Schrader sense. **Lane: CHIR (VW-1's holder), with EW.**
+- **OWED — SF-2 / founder notice CORRECTED:** 4059's notice said δ_CP's 2028+ contingencies are refuted.
+  **They are OPEN**, both still reducing to H1, now conditional on (a) and (b). The notice stands; its
+  verdict changes. **Lane: SF-2.**
+- **OWED — 4060's CHIR audit RE-SCOPED:** from *which of the 40 files fall* to *which of the 40 state H1
+  without its conditions*. None of the 40 was annotated as refuted by 4056–4061 (only SM.md, the frontier
+  header, the registry and this file carried it, all corrected here). **Lane: CHIR.**
+- **The session-230 handover** carries "H1 REFUTED"; an erratum line is added at its head so the next
+  window's first read does not inherit it.
