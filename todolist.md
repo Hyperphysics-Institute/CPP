@@ -1725,3 +1725,29 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   4042's free magnitude remains free, chirality is still a **structural parameter rather than a
   prediction**, and **the route 4043 proposed to promote it is now closed. A different observable would be
   needed and none is named. Lane: EW / SR.**
+
+---
+
+### TODO-4045-EW — the escape route from k¹⁵ tested and CLOSED; 4044 hardened
+
+- **THE HYPOTHESIS, and it was a good one.** 4044's O(k¹⁵) assumed **full** icosahedral symmetry. CPP's
+  substrate has a preferred direction **n̂** (Mechanism A's drive), which reduces I to the stabiliser of n̂
+  — **and lower symmetry permits lower-degree invariants.** If so, the parity-odd term is lifted out of its
+  k¹⁵ grave.
+- **AND IT IS LIFTED — BY FOURTEEN ORDERS.** With δ ≠ 0 the parity-odd term is **O(k¹)**, measured slope
+  1.00 across k = 0.05–0.40.
+- **BUT IT IS NOT THE CHIRALITY.** Per-point parity-odd amplitude at k = 0.05, δ = 0.10:
+  **chiral 60-shell 8.847293e-04, icosahedron 8.847293e-04, dodecahedron 8.847293e-04 — identical to
+  seven significant figures.** The chiral shell's larger total is **entirely its larger point count.**
+  **The term is the DRIVE's asymmetry, not the shell's handedness** — the weight (1 + δ·v̂·n̂) is itself not
+  centrally symmetric, and that is all this measures.
+- **And at δ = 0 the chiral shell returns to machine noise** (2.4e-16 rising as k¹ — float noise, exactly
+  as 4044 found). **The chirality's own term is still at k¹⁵.**
+- **SO THE ROUTE IS CLOSED AND 4044 IS HARDENED, NOT WEAKENED.** Any observable built on the tilted
+  dispersion measures **δ**, not chirality. Isolating the chirality means subtracting the achiral
+  contribution exactly — and once subtracted, what remains is back at O(k¹⁵). **The k¹⁵ suppression is
+  robust against the substrate's own preferred direction**, which was the most plausible escape available
+  and the one I would have reached for next.
+- **NOT claimed: that no observable exists.** One route tested and closed; the space is not enumerated.
+  **Chirality remains a structural parameter, with one candidate now eliminated rather than merely
+  unexplored. Lane: EW / SR.**
