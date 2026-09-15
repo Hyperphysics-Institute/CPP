@@ -74,6 +74,24 @@
 %     "conditional on H1, within the bare substrate axioms". Reviews + synthesis
 %     + triage: review/reviews-CHIR-VW.md. NO verdict move; V3/W3 stand.
 % ============================================================
+% Version 1.5 --- 15 September 2026 (Patch 0985, chirality lane) -- CORRIGENDUM:
+%   Theorem 6.1 (ii) [thm:unif] and the verdict map consume, beyond H1, an
+%   UNSTATED hypothesis H1' (the parity-odd source enters the Euclidean weight
+%   as a PHASE). Vafa-Witten's bound F(lambda) >= F(0) is |int dmu e^{i lambda
+%   O}| <= int dmu; the i comes from a Lorentz-invariant pseudoscalar carrying
+%   eps_{mu nu rho sigma} with a time index. On the substrate, Euclidean time is
+%   the Moment index and eta is a real equal-time pseudoscalar of the 4D
+%   ambient space (glossary: zeta^W, zeta^qDP; VW-2 Thm A), so its source is
+%   real and Jensen gives Z(lambda) >= Z(0) -- the OPPOSITE inequality. The
+%   route H1 => mu^2 > 0 is therefore INAPPLICABLE AS POSED, independent of
+%   H1's truth value; H1 itself is untouched (OPEN, <=> VW-a-4, VW-2). No
+%   verdict moved: V3 confirmed / V1 excluded rest on THEO-CHIR-CAPACITY-1.
+%   Hypothesis H1' added to Thm 6.1 (ii), Thm 7.1, the Remark after 6.1, and
+%   the Established / Not established lists; Definition 2.1's 'no sign
+%   problem' clause annotated as automatic for a stochastic substrate. Panel
+%   review of this corrigendum NOT yet held (PD-008 critique at 0985 only).
+%   Reasoning: reasoning/0984.md, reasoning/0985.md; verify:
+%   code/0984_vw_source_is_real.py.
 % Version 1.4 --- 17 August 2026 (Patch 3214):
 %   added a How-we-review methodology note stating plainly that AI panel
 %   review is a self-applied verification method and not journal peer
@@ -126,7 +144,8 @@ Unifying the V2-Exclusion with a Vafa--Witten No-Go}\\[6pt]
 \date{Version 1.1 --- Patch 0682, Session 152 --- 30 May 2026 \\[2pt]\small(AI review panel cycle closed with all members confirming, no falsifier; ChatGPT + Copilot + Grok all CONFIRM at Layer-2.5 conditional scope; five convergent wording calibrations, no verdict change --- V3/W3 stand)\\[2pt]
 {\small Version~1.2 --- 17 August 2026 (Patch 3212: added the generated plain-language appendix glossing the internal programme identifiers used in this paper (founder jargon ruling, 16 Aug 2026). No claim, equation, number or section changed.)}\\[2pt]
 {\small Version~1.3 --- 17 August 2026 (Patch 3213: extended the generated identifier appendix to all five identifier families (THEO-, FI-, PRED-, CONJ-, PH- as well as OPEN-), and replaced review-convergence scores with AI review panel wording where present. No claim, equation, number or section changed.)}\\[2pt]
-{\small Version~1.4 --- 17 August 2026 (Patch 3214: added a How-we-review methodology note stating plainly that AI panel review is a self-applied verification method and not journal peer review; twelve chirality papers retitled so the descriptive title leads and the identifier is demoted to a subtitle. No claim, equation, number or section changed.)}}
+{\small Version~1.4 --- 17 August 2026 (Patch 3214: added a How-we-review methodology note stating plainly that AI panel review is a self-applied verification method and not journal peer review; twelve chirality papers retitled so the descriptive title leads and the identifier is demoted to a subtitle. No claim, equation, number or section changed.)}\\[2pt]
+{\small \textbf{Version~1.5 --- 15 September 2026 (Patch 0985, CORRIGENDUM):} Theorem~6.1~(ii) and the verdict map consume an unstated hypothesis H1$'$ (the parity-odd source is a phase) which fails for a real equal-time pseudoscalar of a classical stochastic measure; the route H1 $\Rightarrow\mu^2>0$ is inapplicable as posed. H1 itself untouched. No verdict moved (V3/V1 rest on CAPACITY-1). Not yet panel-reviewed.}}
 
 \begin{document}
 \maketitle
@@ -211,7 +230,9 @@ A Euclidean theory is \emph{reflection-positive} if its path-integral measure $e
 positive and satisfies the Osterwalder--Schrader reflection condition --- the Euclidean encoding of a
 positive transfer matrix / unitary continuation. Operationally: the Boltzmann weight is real and
 positive (no ``sign problem''), so expectation values of reflection-symmetric observables obey
-positivity bounds.
+positivity bounds. \textbf{[v1.5]} For a classical stochastic substrate the ``no sign problem'' clause is
+automatic --- a stationary law is a probability --- and carries no information about $\sgn(\mu^2)$; the
+Osterwalder--Schrader clause is the content (VW-2: for the Euclidean \emph{time}-reflection $\Theta_{\rm OS}$).
 \end{definition}
 
 \begin{theorem}[Vafa--Witten, 1984; as used here]\label{thm:vw}
@@ -305,8 +326,9 @@ A symmetry can break in exactly two ways: \emph{explicitly} (a symmetry-odd term
 \item \textbf{No explicit breaking (value side) --- established.} The action is parity-\emph{even}: by
 STATUS-2's axiom-level V2-exclusion there is no $\Po$-odd pseudoscalar source, hence no $\eta$-linear
 (or any odd) term in $V(\eta)$, hence nothing internal to \emph{select} a handed vacuum.
-\item \textbf{No spontaneous breaking (capacity side) --- conditional on H1.} If the measure is
-reflection-positive (H1) --- the det-coset $\Ztwo$ being vectorial (VW-b) and the action $\theta$-free
+\item \textbf{No spontaneous breaking (capacity side) --- conditional on H1 \emph{and} H1$'$ [v1.5].} If the measure is
+reflection-positive (H1) \emph{and the $\eta$-source enters the Euclidean weight as a phase} (H1$'$, see
+Rmk.~\ref{rmk:phase}) --- the det-coset $\Ztwo$ being vectorial (VW-b) and the action $\theta$-free
 (VW-c) --- then by Vafa--Witten $\mu^2>0$, hence the symmetric vacuum $\eta=0$ is stable and nothing
 \emph{spontaneously} forms a handed vacuum.
 \end{enumerate}
@@ -328,6 +350,28 @@ the two faces of substrate reflection-positivity. \emph{Distinctness preserved:}
 ($\sgn(\mu^2)$) and value (sign-selection) remain \emph{distinct bits} (DG-4); the theorem shows they
 share a root cause, it does not conflate them.
 \end{proof}
+
+\begin{remark}[v1.5 corrigendum --- the phase-source hypothesis H1$'$ (Patch 0985)]\label{rmk:phase}
+The Vafa--Witten bound $F(\lambda)\ge F(0)$ is $|\int d\mu\,e^{i\lambda O}|\le\int d\mu$. It needs \emph{two}
+things: a real non-negative weight (the ``no sign problem'' half of Definition~2.1) \emph{and} a source that
+is a \emph{phase}. In Vafa--Witten's setting the phase is automatic: a Lorentz-invariant pseudoscalar contains
+$\varepsilon_{\mu\nu\rho\sigma}$, one index is time, and Wick rotation supplies the $i$. Neither of the
+v1.0--v1.4 texts stated this second half; the v1.1 review folded it, unnamed, into ``the measure-class
+transposition within H1's scope.'' Isolated (Patch 0984), it is \textbf{not} a positivity property and it
+\textbf{fails as posed}: the substrate's Euclidean time is the Moment index (VW-2, Theorem~A), $\eta$ is odd
+under a reflection of the 4D \emph{ambient space} at fixed Moment (a real equal-time pseudoscalar; cf.\ the
+glossary entries $\zeta^W$, $\zeta^{qDP}$), so its source is $e^{\lambda\eta}$ and Jensen gives
+$Z(\lambda)\ge e^{\lambda\langle\eta\rangle}=Z(0)$ --- the \emph{opposite} inequality; the symmetric point
+\emph{maximises} $Z$. (Exact on the [PCD-EXT] single-walker measure: $Z(1)=1.45$ against $|Z_{\rm
+phase}(1)|=0.65$, at $\delta=0$ and $0.35$ alike; \texttt{code/0984\_vw\_source\_is\_real.py}.)
+\textbf{Consequences.} (a) H1 is untouched: OPEN, equivalent to VW-a-4 (VW-2). (b) The inference
+H1$\Rightarrow\mu^2>0$ of (ii) and of Theorem~\ref{thm:vwd} is \emph{inapplicable as posed}, whatever H1's
+truth value. (c) No verdict moves: V3 confirmed / V1 excluded rest on THEO-CHIR-CAPACITY-1, whose
+conditionality names no positivity. (d) The one route to H1$'$ that has been named and \emph{not} built: an
+order parameter odd under parity \emph{and} under Moment-reversal ($\eta$ times TARROW-2's $O(\delta^3)$
+current) would carry the ``time index'' VW needs --- the T-face, a different theorem. This corrigendum has
+been critiqued in-lane (0985) and \emph{not yet} by the review panel.
+\end{remark}
 
 \begin{remark}[Why this sharpens, not stalls]
 The unification turns ``does chirality emerge?'' into a single sharp question. Explicit breaking is
@@ -359,7 +403,7 @@ the unification) or moves the verdict: V3/W3 stand.
 \section{VW-d: the conditional verdict map}
 
 \begin{theorem}[Conditional verdict map]\label{thm:vwd}
-Assume H1 (reflection positivity). Then by Thm.~\ref{thm:unif} the substrate parity $\Ztwo$ is unbroken
+Assume H1 (reflection positivity) \emph{and} H1$'$ (phase source; Rmk.~\ref{rmk:phase}, v1.5). Then by Thm.~\ref{thm:unif} the substrate parity $\Ztwo$ is unbroken
 within the substrate axioms: $\mu^2>0$ and $\eta=0$. Since the realized handedness FI-C-9 is nonzero (it
 is \emph{used}, via CHI-1/CAP-1), it cannot arise from the substrate axioms alone. Hence, conditional on
 H1, exactly one of:
@@ -405,12 +449,15 @@ conditional on H1) are the two faces of substrate reflection-positivity, closing
 \item The conditional verdict map: $\textrm{H1}\Rightarrow$ (V3-by-principle $\vee$ bridge-sourced)
 (Theorem~\ref{thm:vwd}).
 \item The reduction: the verdict-moving capacity question $=$ ``is the DSL measure reflection-positive?''
+\textbf{[v1.5: withdrawn as stated --- the VW route needs H1$'$ as well, and H1$'$ fails as posed; Rmk.~\ref{rmk:phase}.]}
 \end{itemize}
 
 \noindent\textbf{Not established (open / out of scope):}
 \begin{itemize}[leftmargin=1.5em]
 \item H1 (reflection positivity) is \emph{not} proved --- criteria $+$ first-pass only
 (Prop.~\ref{prop:vwa}); a full OS proof may need the \S14.17 DSL action.
+\item \textbf{[v1.5]} H1$'$ (phase source) is \emph{false} for a real equal-time pseudoscalar of a classical stochastic measure; the VW route
+to $\sgn(\mu^2)$ is inapplicable as posed (Rmk.~\ref{rmk:phase}).
 \item No $\sgn(\mu^2)$ is computed; no positivity is proved; no chiral vacuum is shown to form or not
 form unconditionally.
 \item \textbf{No verdict move:} chirality stays V3 (spatial) / W3 (temporal). Branch (A) vs (B) of

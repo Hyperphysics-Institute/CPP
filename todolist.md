@@ -2258,7 +2258,9 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ### TODO-0984-CHIR — VW-1 Thm 6.1 (ii) needs an unstated phase-source hypothesis (registered Patch 0984, chirality lane)
 
-- **(1) PD-008 attack on 0984 (next CHIR window, first):** is there any reading of CONT-1's Φ-continuum under which
+- **(1) CLEARED at 0985** — corpus reads R⁴ as space, Moment as time (glossary ζ^W/ζ^qDP/Moment; VW-2 Thm A); no continuum reading gives η a time index. 0984 stands.
+- **(2) CLEARED at 0985** — VW-1 v1.5 corrigendum applied; recompile owed (ledger A11); panel not held.
+- (original text of (1) retained:) **PD-008 attack on 0984:** is there any reading of CONT-1's Φ-continuum under which
   η's source is a phase — i.e. a Euclidean rotation group mixing the Moment index with R⁴ under which η is a
   full pseudoscalar? If yes, H1′ may hold in the continuum and the route survives there. **Lane: CHIR.**
 - **(2) VW-1 v1.2 corrigendum** — after (1): add H1′ to Thm 6.1 (ii) and the unification remark; Def. 2.1's
