@@ -1667,3 +1667,33 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   **Lane: founder.**
 - **FI-C-9 = V3 STILL STANDS.** A substrate that permits any handedness equally does not predict a definite
   δ_CP — the same objection 4020 raised against random strain.
+
+---
+
+### TODO-4043-EW — can the rest of CPP be derived from the chiral lattice? A qualified YES
+
+- **THE AUDIT FIRST.** Dodecahedral-shell mentions: **SF-4 20, SF-3 5, SM-2 5, SR-1 4, SF-1 ZERO.**
+  **SF-1 — the cleanest prediction in the programme — reaches no further than shell 1.** A lattice that
+  destroyed the dodecahedral shell would cost the **neutrino sector** most.
+  *(A draft of this check asserted "SF-4 and SR-1 both use the second shell heavily" and FAILED on SR-1 —
+  the claim came from my own misread of my own column headers in an exploratory grep; SR-1 mentions the
+  second shell **zero** times.)*
+- **AND IT NEED NOT COST THEM. SHELLS AT DIFFERENT RADII ARE INDEPENDENT.** Built: shell 1 icosahedron
+  (12, r = 1.00), shell 2 dodecahedron (20, r = 1.62), shell 3 generic I-orbit (60, r = 2.40).
+  **S1 alone: improper 60, CCM 0. S1+S2: improper 60, CCM 0. S1+S2+S3: improper 0, CCM 0.0112.**
+  **⇒ the icosahedral and dodecahedral shells survive intact and the chirality is carried by a THIRD shell
+  that no CPP derivation references.**
+- **THREE QUALIFICATIONS, none of them small.** **(1)** Still a **cluster**, not a lattice — 4034's
+  trichotomy is untouched and the extension problem is exactly where it was. **(2)** The third shell is a
+  **new postulate**, not a free consequence: the claim is that the change is **additive** — nothing
+  existing breaks — not that nothing is added. **(3)** The magnitude is **still free** (4042: 0.012–0.187).
+  Chirality becomes a **structural parameter** rather than an unexplained sign, which is progress — **but a
+  parameter is not a prediction until one calibration buys more than one number**, the standard SF-1
+  already meets.
+- **AND WHERE IT WOULD BECOME PHYSICS.** SR-1's dispersion machinery **sums over shells** (R4: *finite
+  shells suppress the icosahedral anisotropy tower one harmonic at a time but never zero it*). **A chiral
+  shell contributes PARITY-ODD terms to those sums**, where every shell CPP currently has contributes only
+  parity-even ones. **A parity-odd term in the vacuum dispersion is optical activity of the vacuum — an
+  observable, not a parameter.** If the chirality strength sets its size, it is calibratable once and
+  predictive thereafter. **That is the test of whether the reframe is explanatory or merely consistent.
+  NOT COMPUTED. Lane: EW / SR — next.**
