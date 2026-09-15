@@ -1269,3 +1269,28 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   `git reset --hard origin/main` at bootup had already discarded it once. **4028 will not apply to an
   origin lacking 4027 — apply 4027 first.** **A patch that silently fails to apply is the one failure
   mode this workflow has no gate for.** **Lane: founder / EW.**
+
+---
+
+### TODO-4029-EW — the missing-patch gate built; and a real defect found in `next_id.py`
+
+- **`code/continuity_gate.py` SHIPPED.** Compares local vs origin **by patch number, not by SHA** —
+  `git am` on the founder's machine rewrites SHAs, so a SHA comparison reports every applied patch as
+  missing (that false positive was hit and fixed while building it). Reports per-lane gaps in the
+  committed run. **Gaps are reported, not failed:** a gap may be an unparsed reservation and nothing
+  inside the repo distinguishes them; failing on them would make the gate noise, which is how gates die.
+- **STATED LIMIT:** a cleanly-missing **tail** patch is not detectable from inside — the missing patch
+  is also the one that would have updated the registry and the frontier header, so what remains is
+  self-consistent at N−1. **That half is procedural and belongs in the apply macro.**
+- **AND THE SCAN FOUND A REAL DEFECT IN `next_id.py`, the canonical ID gate.** It matched
+  `Patch(?:es)?\s+(\d{4})` — capturing the **first** id and stopping. So a commit titled *"Patches
+  3406/3407"* registered 3406 and left **3407 reading as FREE**. **21 ids were invisible** to the old
+  pattern, from forms like *"Patches 0359, 0360, 0361, 0363"* and *"Patches 0314 / 0344"*. **Fixed:
+  every id in a multi-id reference is now taken.**
+- **NOT OVERSOLD: no lane's NEXT FREE changed.** DE rises 49 → 51 used, legacy-cosmology 99 → 100.
+  **The defect was real and had not yet bitten** — a hardening, not an averted disaster. But the
+  collision it could have caused is the exact shape the registry's Anomalies section records three times.
+- **GAPS LEFT STANDING, HANDED TO THEIR LANES WITH THE EVIDENCE, NOT INVESTIGATED HERE:** **chir 0901,
+  0934** (0978 is documented — superseded before push); **de 3427, 3428, 3437, 3447**; **dm 3502**.
+  3406/3407 are explained by the fix above. **Not called losses** — this lane does not own those blocks.
+  **Lane: CHIR / DE / DM.**

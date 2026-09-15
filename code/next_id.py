@@ -73,8 +73,14 @@ def taken(lo, hi, blob):
     'Next patch...: NNNN' reservation, as a reasoning/<NNNN>.md path, or
     as a leading-zero bare number opening a commit subject ('0935 EVAL …')."""
     hits = set()
-    for m in re.finditer(r'Patch(?:es)?\s+(\d{4})', blob):
-        hits.add(int(m.group(1)))
+    # 'Patches 3406/3407' used to register ONLY 3406: the pattern captured the first
+    # id and stopped, so 3407 looked FREE while being in use. That is the collision
+    # shape this file exists to prevent, and it was found at Patch 4029 by a continuity
+    # scan that flagged 3406 and 3407 as gaps. Now every id in a multi-id reference is
+    # taken, across the separators the corpus actually uses (/ , & + and -).
+    for m in re.finditer(r'Patch(?:es)?\s+(\d{4}(?:\s*(?:[/,&+]|and|-)\s*\d{4})*)', blob):
+        for g in re.findall(r'\d{4}', m.group(1)):
+            hits.add(int(g))
     for m in re.finditer(r'Next patch[^:\n]*:\s*(\d{4})', blob):
         hits.add(int(m.group(1)))
     for m in re.finditer(r'reasoning/(\d{4})\.md', blob):
