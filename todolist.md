@@ -1751,3 +1751,32 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **NOT claimed: that no observable exists.** One route tested and closed; the space is not enumerated.
   **Chirality remains a structural parameter, with one candidate now eliminated rather than merely
   unexplored. Lane: EW / SR.**
+
+---
+
+### TODO-4046-EW — the arc lands on a NAMED SHIPPED open problem, whose leading candidate is refuted
+
+- **SEARCHED UNSCOPED.** SF-6 (shipped flagship, electromagnetism) carries **`OPEN-SD-CHIR-PRIMITIVE`**:
+  *"Derive the universe's primitive chirality bias from a single substrate-level mechanism"* — **and names
+  its current leading candidate: a primitive 4D direction n̂ aligned with a 600-cell HOST VERTEX.**
+- **THE TARGET IS PARITY VIOLATION, WHICH IS P-ODD — AND GEOMETRIC CHIRALITY IS P-ODD. The kinds match.**
+  SF-6's companion `OPEN-FP-6-EMHAND` is *the entry of substrate chirality into electromagnetic
+  phenomenology*; SF-2's `OPEN-FP-SF-2-CHIR` is *chirality emergence in W bracelet structure (V−A
+  coupling)*. A P-odd target needs a P-odd source.
+- **BUT THE LEADING CANDIDATE CANNOT WORK, AND THIS SESSION PROVED IT FIVE TIMES WITHOUT SAYING SO.**
+  **A vector is not a chirality**: n̂ is P-odd, but reflection in any plane **containing** n̂ leaves it
+  invariant. Verified — **Θ = diag(1,1,1,−1) maps the 600-cell to itself with det = −1 and fixes n̂
+  exactly (|Θn − n| = 0.0)**, so the pair (600-cell, n̂) is invariant under an improper isometry and **the
+  configuration is achiral.** That Θ **is** the map 4011, 4012, 4015, 4020 and 4024 all used. **Those five
+  patches are not five confirmations of V3 — they are five demonstrations that SF-6's leading candidate
+  supplies no chirality.**
+- **AND THE CHIRAL LATTICE IS EXACTLY THE REPLACEMENT.** 4041's cluster has **no improper symmetry at
+  all** — there is no Θ to fix n̂ because there is no Θ. **The construction removes precisely what the
+  leading candidate leaves intact.** **The arc 4038–4045 is a candidate answer to a named, shipped open
+  problem — it was not looking for it; it walked into it.**
+- **STILL OWED, unchanged by the renaming:** a **lattice** rather than a 72-point cluster (4034's
+  trichotomy untouched); a **magnitude** (4042: free, 0.012–0.187); an **observable** that fixes it (k¹⁵
+  route closed at 4044, n̂-tilt route closed at 4045); and a **derivation of V−A** from the handedness,
+  which is SF-2's `OPEN-FP-SF-2-CHIR` and is untouched here. **Lane: CHIR / EW.**
+- **NOT CLAIMED: that the chiral lattice SOLVES OPEN-SD-CHIR-PRIMITIVE.** It is a candidate that survives
+  the tests the previous candidate fails. **A real change of status, and not a closure.**
