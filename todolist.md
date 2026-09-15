@@ -816,9 +816,27 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   - **AND THE CHIRALITY ARGUMENT NEEDS EXACTLY THE SECTOR WHERE RP HOLDS.** `R = diag(1,1,1,−1)` with
     n̂ = e₁ is the map 4011, 4012, 4015 and 4020 all used, and 0973 puts sign(δ) as **P-even** — the P-face
     lives in the n̂-preserving sector.
-  - **OWED, AND NOT MINE TO DECIDE: does VW-1's argument run on RESTRICTED RP?** Whether a
-    transfer-matrix/OS construction works with RP holding only on the n̂-preserving subgroup is a technical
-    question about VW-1 itself. **Lane: CHIR (VW-1's holder).**
+  - **~~NOT MINE TO DECIDE~~ — TAKEN TO THE END AT 4023 under PD-008. VW-1's CONCLUSION SURVIVES
+    RESTRICTED RP, for the P-sector.** A transfer matrix along direction *d* is built from reflection in a
+    hyperplane ⊥ *d*, which **flips** *d* — so the TM exists **transverse** to n̂ (RP holds) and **not
+    along** it (RP fails). And the ℤ₂ VW-1 forbids breaking is a **parity**, implemented by the
+    n̂-**fixing** Θ = diag(1,1,1,−1): verified **η(ΘX) = −η(X) exactly, 6/6 seeds at ε = 0.02/0.05/0.10**.
+    Operational RP confirmed by the Schwarz bound: **0/4000 violations** n̂-fixing at δ = 0.10 and 0.35;
+    **2039/4000 and 2379/4000** n̂-flipping. **The reflections where RP fails generate the T-face, not the
+    P-face — so the failure is OUTSIDE VW-1's scope, not inside it.**
+  - **THE ONE STEP NOT CLOSED, named precisely:** VW-1's chain needs the **infinite-volume** limit. The TM
+    transverse to n̂ controls **transverse** clustering; **clustering ALONG n̂ is not controlled by this
+    argument.** On the **finite** substrate ⟨η⟩ = 0 exactly and no limit is needed — VW-1 holds outright.
+    On the **extended** lattice (founder, 4009) the along-n̂ step is open. **Lane: EW / CHIR.**
+  - **SUBMITTED FOR CRITIQUE per PD-008:** the next window should attack this conclusion with fresh eyes,
+    starting with the convenient branch — that the failure sector is "outside VW-1's scope". **Lane: next
+    window.**
+  - **DEFECT FOUND IN PASSING, in the corpus's own order parameter.** 0813's η is *sign det of the 4
+    highest-n̂-projection neighbours* — and on the **unperturbed** lattice the 4th and 5th projections tie
+    at **120/120** vertices, so "top 4" is arbitrary and swapping two tied rows flips the determinant.
+    **η is ill-defined there.** 0813 and 4005 both evaluate η on **perturbed** configurations where the tie
+    is broken, so **no result is invalidated** — the gap is in the definition's *statement*, which never
+    says a perturbation is required. **Lane: CHIR — fix in the text.**
   - **Structural echo, recorded without a story:** RP fails precisely for the reflections that **flip n̂** —
     and 0973 located the **T-arrow** in that same direction (sign(δ) P-even, **T-odd**). Same place.
     **Lane: CHIR.**
