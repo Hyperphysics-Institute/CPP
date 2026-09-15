@@ -2084,3 +2084,38 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   the physical measure it is FALSE, and no occupation model respecting CP conservation will do better.**
   **NOT claimed:** that no positivity condition survives — only that **reflection** positivity, on the
   squared class, does not. **Lane: CHIR (VW-1's holder).**
+
+---
+
+### TODO-4058-EW — H1's refutation does NOT reopen V1; and 4023's η defect lands on CAPACITY-1's piece 1
+
+- **THE WORRY, CHECKED.** After refuting a theorem's sole residual, the natural question is what falls with
+  it. **CAPACITY-1's conditionality, narrowed at 0960, names three things:** MA.1's reversal-odd first
+  harmonic (derived and unique up to scale, 0949); **per-edge independence**; and **pointwise
+  non-degeneracy of the dynamical η** (piece 1, still assumed). **None of them is reflection positivity.**
+- **⇒ 4057 DOES NOT REOPEN V1.** H1 was **VW-1's** residual; VW-1 and CAPACITY-1 are **different theorems
+  reaching a compatible conclusion by different routes**. Refuting H1 removes VW-1's support and leaves
+  CAPACITY-1 untouched. **V1 stays EXCLUDED; V3 stays CONFIRMED.** And 4005's direct measurement — χ_η
+  finite, d ≥ 1 correlations ~1e-3 — is a **third leg**, independent of both theorems.
+- **BUT CAPACITY-1's THIRD CONDITION IS THE ONE 4023 FOUND DEFECTIVE.** *Pointwise non-degeneracy of the
+  dynamical η* — and 4023 established that η's 4th/5th projections **tie at 120/120 vertices on the
+  unperturbed lattice** (re-verified here), so η is **pointwise degenerate** there.
+- **The condition HOLDS where CAPACITY-1 uses it** — perturbation breaks the ties at all three amplitudes
+  tested, and 0813 and 4005 both evaluate η on perturbed configurations. **No result is invalidated.**
+- **But the statement carries no "on perturbed configurations" qualifier.** 4023 found that defect **without
+  knowing it landed on a named conditionality of a 3/3 review-closed theorem.** More consequential than
+  4023 reported — not because anything is wrong, but because **the assumption is now known to be FALSE in
+  the unperturbed limit and the theorem does not say so.**
+- **Filed for the CHIR lane as a TEXT fix, not a physics one:** add the qualifier to piece 1. **NOT this
+  lane's to edit — CAPACITY-1 is review-closed. Lane: CHIR.**
+- **AND THE ABSENCE GATE FORCED A SEARCH THAT FOUND SOMETHING LARGER.** The draft said *"VW-1 and H1
+  appear nowhere in it"* — true of CAPACITY-1's conditionality, but the gate required it **unscoped**, and
+  **H1 turns out to be load-bearing where I had not looked.** `reviews-SF2-DELTACP-SCOPING.md` records
+  Copilot's verdict: ***"CONDITIONAL-GO — viable only if SQ1 salvage or H1 closes within ~10 sessions"***,
+  and the adjudication judges the **other** contingency *"near zero"*. **So H1 was effectively the
+  surviving contingency for proceeding on δ_CP. 4057 closes it NEGATIVELY** — H1 does not close; on the
+  physical measure it is **false**. **That is a decision input SF-2's lane should have. NOT this lane's
+  decision to revise. Lane: SF-2 / founder.**
+- **The gate is why this was found.** The computation and the CHIR.md reading were both correct and both
+  scoped; only the unscoped search reached the review package. **Third time today a gate or control
+  produced the patch's most consequential line.**
