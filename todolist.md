@@ -1246,3 +1246,26 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **NOT CLAIMED:** that no relaxation mechanism exists. Only that a **distance-based** strain
   functional cannot supply one. **The disclination-NETWORK question is untouched at the network
   level** — 4021 treats the energetics, not the topology. **Lane: CHIR / EW.**
+
+---
+
+### TODO-4028-EW — 4027's rule applied backward: 4006 audited and SURVIVES
+
+- **The exposed candidate was 4006**, because everything from 4007 onward — the founder's range
+  question, the extended-lattice ruling, the whole 4009–4027 arc — sits downstream of it, **and it
+  quoted a sem over three seeds.**
+- **RE-RUN AT 16 SEEDS: 4006's headline reproduces almost exactly.** Reported −0.034 → +0.133; measured
+  **−0.0322 ± 0.0011 → +0.1323 ± 0.0037**. The sign flip is a **42-sem effect. 4006 stands.**
+- **THE DIAGNOSIS IS CONFIRMED BY A CASE WHERE IT PREDICTS SURVIVAL.** 4006 averaged over **independent
+  runs**; 4026 over **pairs within a band**. The first is the right structure with too few samples; the
+  second is the **wrong structure**, which no sampling fixes. *A rule that only ever condemns is not a
+  rule.*
+- **SCOPE, checked across every 40xx script rather than asserted:** only **4025 and 4026** used
+  sem-over-pairs, both corrected at 4027. **Nothing else needs revisiting. Lane: EW — closed.**
+- **4006's refusal to assert the growth SHAPE is vindicated:** at 16 seeds k = 0.60 still gives
+  **+0.612 ± 0.092**. The non-monotonicity is real and its form unresolved. **Lane: EW.**
+- **OPERATIONAL, AND IT NEEDS THE FOUNDER'S EYES: Patch 4027 was NOT on origin.** `origin/main` sat at
+  4026 though 4027 had been reported applied; recovered from the local reflog, and a routine
+  `git reset --hard origin/main` at bootup had already discarded it once. **4028 will not apply to an
+  origin lacking 4027 — apply 4027 first.** **A patch that silently fails to apply is the one failure
+  mode this workflow has no gate for.** **Lane: founder / EW.**
