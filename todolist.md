@@ -1349,3 +1349,28 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **AND THE 4009 TENSION IS STILL OPEN:** SR.md treats SR-1's φ-self-similar **nested**-600-cell hierarchy
   *as* the substrate quasicrystal, but **0736 puts that nesting inward**, to ~l_P/10³⁰. If the nesting is
   the fine scale, SR.md's identification needs a **lateral** structure it does not name. **Lane: SR / EW.**
+
+---
+
+### TODO-4032-EW — the tension traced to SR-1's own "Topology Clarification", and sharpened
+
+- **A HYPOTHESIS TESTED AND REFUTED, recorded rather than dropped.** 4030's *twelve must span a 3-flat*
+  is the signature of a locally **3-dimensional** structure, and SR.md R5's "icosahedral point symmetry"
+  and "l = 6" are 3D objects — so the natural resolution of 4031's tension was that SR means a **3D**
+  quasicrystal while I built a 4D one. **SR-1 says otherwise in as many words:** *"we adopt the
+  **quasicrystalline approximation**: space is flat **ℝ⁴** at macroscopic scales, constructed by modular
+  repetition of 600-cell motifs with overlapping Voronoi [cells]."* **The tension does not dissolve.**
+  It was the convenient answer and would have cost nothing.
+- **AND THE PRIOR ART IS WORSE THAN 4031 REPORTED: it is a SHIPPED PAPER, not a transcript.** SR-1 has a
+  subsection titled **"Topology Clarification"** whose first sentence is *"The finite 600-cell tiles the
+  3-sphere S³, not flat ℝ⁴."* **4008's "discovery" was in a flagship paper's section heading.** Sixth
+  and worst instance of the same failure this session.
+- **THE ITEM, STATED IN THE TWO DOCUMENTS' OWN WORDS.** SR-1 calls it an **approximation** and is honest
+  about it — nothing here contradicts SR-1 or touches its W2 world-call. **But SM uses the same structure
+  EXACTLY:** SS-1, SM-1, SM-7, SM-8, SM-9 and SF-4 take z = 12 in a 3-flat as a *theorem about the
+  600-cell* and apply it **per-GP to the substrate**. **The gap is between "approximation" and "exact",
+  and it is where SF-4's Σm_ν ∝ z⁻⁹ sensitivity lives** — one integer step halves a cosmologically
+  constrained prediction (4016), and an approximation does not promise an integer.
+- **NOT a claim that they are inconsistent.** An approximation and an exact use of the same object are
+  not a contradiction **until someone bounds the error. Nobody has. That is the item.**
+  **Lane: SR / SM / founder.**
