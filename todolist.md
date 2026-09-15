@@ -1583,3 +1583,30 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   of five admits two traversal senses, and it is the same five whose 352.644° leaves the **7.356° deficit**
   (4019). **NOT tested. Lane: EW.**
 - **Fourth failed attempt at 4038's target — and the first with a diagnosis rather than a shrug.**
+
+---
+
+### TODO-4040-EW — 4039's edge-ring tested; and the whole DECORATION method closes
+
+- **THE RING IS REAL:** five cells around each edge, centroids forming a regular pentagon (radii equal to
+  1e-9). 4039's expectation was right about the geometry.
+- **BUT ITS TRAVERSAL SENSE IS NOT A PER-EDGE INVARIANT.** Computed by a nearest-neighbour walk it splits
+  **358 / 362** across the 720 edges — an almost even split, which is **the signature of an arbitrary
+  tie-break**: from any pentagon vertex **two** neighbours are equidistant and the walk broke the tie by
+  index. **Fifth instance today of: a quantity defined by an arbitrary choice among equals is not a
+  quantity.** Done properly — orient the ring's 2-plane from (d, m) and the ambient ℝ⁴ orientation and read
+  the cyclic order off *that* — the sense is **fixed by construction**, hence constant, hence carries **no
+  per-edge information**. Either way the ring supplies nothing to decorate with.
+- **AND THE REASON GENERALISES — THE WHOLE DECORATION APPROACH CLOSES.** The 600-cell is **regular**, so
+  its symmetry group is transitive on flags and therefore on vertices, edges, faces and cells separately
+  (verified: all 120 vertices at one radius, all 720 edge midpoints at one radius). **A rotation-equivariant
+  assignment is therefore CONSTANT across each orbit — and a constant carries no handedness.**
+  **⇒ no local decoration of the 600-cell can be chiral.** 4039 failed on cells, 4040 on edges, and
+  vertex-transitivity closes the third. **Not three unlucky attempts — regularity.**
+- **SO THE CHIRALITY MUST BREAK THE TRANSITIVITY.** 4038's target stands, but **it cannot be reached by
+  decorating the 600-cell.** The structure must have symmetry **I from the start**, not H₄ with something
+  added. In 3D that is a **chiral icosahedral quasicrystal**, which exists; the 4D analogue is what would
+  have to be built. **Lane: EW.**
+- **Five attempts at 4038's target now:** close-packings (achiral), golden screw (loses z = 12),
+  snub-24 attempt (z = 9), cell decoration (kills the rotations), edge-ring (no invariant). **The last two
+  fail for one reason, now named.**
