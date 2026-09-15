@@ -1780,3 +1780,28 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   which is SF-2's `OPEN-FP-SF-2-CHIR` and is untouched here. **Lane: CHIR / EW.**
 - **NOT CLAIMED: that the chiral lattice SOLVES OPEN-SD-CHIR-PRIMITIVE.** It is a candidate that survives
   the tests the previous candidate fails. **A real change of status, and not a closure.**
+
+---
+
+### TODO-4047-EW — the first nonzero path-chirality in the arc, and the first chiral LAW
+
+- **GRAPH HELICITY:** Σ sign det[u₁,u₂,u₃] over 3-hop nearest-neighbour paths. On an achiral set every
+  path has an exact mirror partner, so it is identically zero.
+  **ACHIRAL S1+S2: exactly 0 at every cutoff (1.15, 1.30, 1.50).**
+  **CHIRAL S1+S2+S3: −60 at cut 1.30 (19,740 paths), −120 at cut 1.50 (136,680 paths).**
+- **The first nonzero path-chirality in this arc.** 4011, 4012, 4015 and 4041 all returned exact zeros —
+  and 4041's was zero **for lack of paths**. **Magnitudes are multiples of 60 = |I|**: one group orbit's
+  worth of net handedness.
+- **VALIDATED: the mirror gives the exact opposite** — +60 and +120, sums **exactly zero** at both cutoffs.
+- **AND THIS IS THE DIFFERENCE FROM 4020, WHICH IS THE WHOLE POINT.** 4020 strained the 600-cell and found
+  every realisation chiral and the **ensemble** not — a chiral *object*, not a chiral *law*, which is why
+  it supplied no mechanism. **Here the handedness is a FIXED PROPERTY OF THE STRUCTURE**: the same value
+  every time, flipping only under reflection. **The first thing in this arc to clear the bar 4020 set and
+  4021 restated.**
+- **WHAT IT IS NOT.** The sign **and** magnitude depend on the seed (**+600, −360, −120**), consistent with
+  4042 — the handedness remains a **free structural parameter**; nature picks one, the theory does not yet
+  say which. **And it is NOT a derivation of V−A:** it shows the substrate has a definite handedness that
+  **propagating paths can see** — the structural ingredient spin-momentum locking needs. **Connecting it
+  to the weak coupling is SF-2's `OPEN-FP-SF-2-CHIR` and is untouched. Lane: CHIR / SF-2.**
+- **It also discharges 4041's failed path measurement a second way** — 4042 fixed the chirality measure,
+  this supplies the path graph 4041 lacked. **Both now agree the cluster is chiral.**
