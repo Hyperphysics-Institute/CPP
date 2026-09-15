@@ -1120,7 +1120,15 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   its **sign wanders with the seed**, mean well inside one sd of zero (|mean|/sd = 0.16, 0.01, 0.15).
   **Each strained cage is chiral; the ensemble is not.** **FI-C-9 = V3 survives a fourth independent
   test** (4011 single cell, 4012 fan-out rule, 4015 extended lattice, 4020 distorted cage).
-- **NEW OPEN PROBLEM, and it is the arc's best-posed one: is the FRUSTRATION RELAXATION handed?**
+- **~~NEW OPEN PROBLEM~~ — NOT NEW. CLOSED-BY-REDUCTION AT 4021: it is THEO-CHIR-VW-1's question in
+  different clothing.** A strain functional built from pairwise **distances** is invariant under every
+  isometry, proper or improper (verified), so the relaxation landscape is **mirror-symmetric by
+  construction**: mirror-image starts relax to mirror-image ends of **identical energy and exactly
+  opposite handedness** (±8, ±17, ±3 over three seeds). **No gradient flow on an achiral functional can
+  bias the sign.** So any handedness must be **spontaneous** — two exactly degenerate minima, one picked
+  per domain — which is a ℤ₂ SSB on the substrate, **exactly VW-1's subject**, whose sole residual **(H1)**
+  is already on this queue. Registering it as new would have split one problem into two. **Lane: EW.**
+  ~~is the FRUSTRATION RELAXATION handed?~~
   Random strain is not the physical strain; the physical distortion is the structured relaxation of
   7.356°/edge, which in 3D icosahedral matter organises into **disclination networks**. Whether such a
   network carries handedness is a real condensed-matter question. **NOT investigated at 4020 — random
@@ -1137,3 +1145,22 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   near-miss this session, and the SECOND time the DM/sea-grav lane's proxy work has surfaced in this
   lane's blockers (4012 found their FCC sub-PSR cascade). That lane has been solving extended-z = 12
   with 3D proxies for months and this lane did not know. Lane: EW / DM — worth a look before building.**
+
+---
+
+### TODO-4021-EW — the relaxation question reduces to VW-1; and what a mechanism would actually need
+
+- **Prior art read before building, per the note 4020 filed.** DM Patch 2685's four arenas
+  (`fcc_ball`, `layered_ball`/HCP, `barlow_seq`, `fcc_rot_cube`) are real extended z = 12
+  constructions, sanity-checked for coordination 12 and min-chord — but **3D close-packings with
+  cuboctahedral order**, labelled proxies. Precedent, not lattice.
+- **A chirality mechanism in the relaxation would need ONE of:**
+  - **(i) an achirality-breaking term in the substrate dynamics** — i.e. an energy functional that is
+    **not** a function of distances alone. **Nothing in the axioms supplies one**: A1′/A3′ are
+    distance-and-census based. Changing that is an axiom change. **Lane: founder.**
+  - **(ii) an external bias selecting between the degenerate minima** — which *is* a primitive
+    handedness. **FI-C-9 = V3 restated, not derived.**
+  **Both branches lead back to V3 or to H1 — the fifth independent route to the same place today.**
+- **NOT CLAIMED:** that no relaxation mechanism exists. Only that a **distance-based** strain
+  functional cannot supply one. **The disclination-NETWORK question is untouched at the network
+  level** — 4021 treats the energetics, not the topology. **Lane: CHIR / EW.**
