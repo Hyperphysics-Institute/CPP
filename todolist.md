@@ -2119,3 +2119,31 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **The gate is why this was found.** The computation and the CHIR.md reading were both correct and both
   scoped; only the unscoped search reached the review package. **Third time today a gate or control
   produced the patch's most consequential line.**
+
+---
+
+### TODO-4059-EW — 4058 overstated it; the accurate consequence is sharper. BOTH δ_CP contingencies reduce to H1.
+
+- **4058 SAID 4057 "settles a go/no-go question that was left open". WITHDRAWN.** The adjudication says
+  otherwise in its own words: **"Adopted verdict: RESTATEMENT-NEEDED"**, *"Grok's framing is adopted as the
+  more accurate one"*, and the SQ1 probability already judged **"near zero"**. **The decision was made
+  before this session started.** I read a reviewer's verdict line and not the adjudication three lines
+  below it — the same shape as 4049, where I read SF-2's theorem statement twice without registering what
+  D₆ meant. **Reading the right document is not the same as reading enough of it.**
+- **BUT THE ACCURATE CONSEQUENCE IS SHARPER, NOT SMALLER.** δ_CP was **retained as a long-horizon target**:
+  *"δ_CP becomes a LONG-HORIZON TARGET (2028+, contingent on **H1 reflection-positivity + OPEN-SM-4
+  sub-claim (a)/(b) closure**)"*.
+  - **Contingency 1 — H1 reflection-positivity: REFUTED at 4057**, with the cause (CP conservation) being
+    axiom-level.
+  - **Contingency 2 — OPEN-SM-4 sub-claim (a)/(b): reduces to H1 TOO.** 4003: B-iii reduced twice —
+    capacity ⟺ sign(μ²) at 0668, then sign(μ²) = sign(m²) at 1100 — leaving **exactly two residuals, (H1)
+    and (H-NESS)**; and **4004 closed (H-NESS) as ill-posed**. **So (a)/(b)'s only surviving residual IS
+    H1.**
+- **⇒ BOTH of δ_CP's 2028+ contingencies reduce to H1, AND H1 IS REFUTED. The long-horizon target has no
+  surviving route as stated.**
+- **AND THAT IS MORE CONSEQUENTIAL THAN A GO/NO-GO, FOR A DIFFERENT REASON.** A go/no-go gets revisited
+  when new information arrives. **A long-horizon plan contingent on a named condition is not revisited at
+  all** — it sits until someone tries to execute it in 2028 and discovers the condition was refuted in
+  2026. **Nothing in the workflow would surface that on its own.** Less urgent, more durable.
+- **NOT this lane's to revise.** SF-2's campaign plan belongs to SF-2; what this lane owes is the notice,
+  now on record with **both** contingencies traced. **Lane: SF-2 / founder.**
