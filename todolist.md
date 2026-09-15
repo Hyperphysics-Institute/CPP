@@ -2028,3 +2028,31 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   to RP would have to live. Lane: EW.**
 - **Nothing downstream changes:** 4023 and 4024 rest on RP holding in the n̂-preserving sector, now
   established on a **strictly larger class** than before.
+
+---
+
+### TODO-4056-EW — H1 FAILS. The counterexample 4055 predicted, found where it predicted.
+
+- **4055 named the non-product class as the only place a counterexample could live. Looked there. FOUND
+  ONE.**
+- **THE ALGEBRA.** n_i² = (n_i)₂ + n_i, so for i ≠ j:
+  E[n_i²n_j²] = K⁽⁴⁾p_i²p_j² + K⁽³⁾(p_i²p_j + p_ip_j²) + K⁽²⁾p_ip_j. For F = Σ w_a n_a² on the + side,
+  ⟨Θ(F)F⟩ = K⁽⁴⁾s² + 2K⁽³⁾st + K⁽²⁾t², **PSD iff K⁽⁴⁾K⁽²⁾ − (K⁽³⁾)² ≥ 0.**
+  **That equals −K²(K−1)²(K−2) — negative for every K ≥ 3, and INDEPENDENT of p.** The indefiniteness is
+  in the **multinomial itself**, not in the measure.
+- **AND ON THE REAL MEASURE, IN THE n̂-FIXING SECTOR, IT BITES.** Gram minimum eigenvalue: **δ = 0 → PSD**
+  (the measure is uniform, p² ∥ p, the indefinite form is never probed); **δ = 0.10 → −5.44e-03;
+  δ = 0.35 → −4.74e-02.** **Explicit witness:** a single F gives **⟨Θ(F)F⟩ = −2.02e+02**. One F suffices.
+- **⇒ H1 IS FALSE ON [PCD-EXT] FOR δ > 0, IN BOTH SECTORS.** 4022 found failure for n̂-**flipping**
+  reflections; it fails for n̂-**fixing** ones too, on the class 4022 did not test and 4055 explicitly
+  named as untested.
+- **WHAT IT COSTS.** **4055's strengthening stands but is the smaller half** — "necessary and sufficient
+  within all *product* observables" is still true; the product hierarchy was simply the wrong place.
+  **4023 is UNDERMINED**: its *VW-1's conclusion survives restricted RP* has no RP left to be restricted
+  to. **4024's finite-substrate strengthening SURVIVES** — E[⟨η⟩] = 0 by exact symmetry of the generator,
+  and **that argument never used RP.**
+- **δ = 0 is untouched:** RP holds there in both sectors. **The failure is entirely a NESS effect** — the
+  same place 4022 found the flipping-sector failure.
+- **NOT CLAIMED: that the DSL measure fails RP.** `[PCD-EXT]` is 4004's **working extension**, and every RP
+  result in this arc is about it. **What is established: the working extension does not satisfy H1, so it
+  cannot be used to discharge it. Lane: EW / CHIR — VW-1's holder should see this.**
