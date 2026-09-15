@@ -828,9 +828,27 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
     transverse to n̂ controls **transverse** clustering; **clustering ALONG n̂ is not controlled by this
     argument.** On the **finite** substrate ⟨η⟩ = 0 exactly and no limit is needed — VW-1 holds outright.
     On the **extended** lattice (founder, 4009) the along-n̂ step is open. **Lane: EW / CHIR.**
-  - **SUBMITTED FOR CRITIQUE per PD-008:** the next window should attack this conclusion with fresh eyes,
-    starting with the convenient branch — that the failure sector is "outside VW-1's scope". **Lane: next
-    window.**
+  - **I RAN BOTH ATTACKS MYSELF AT 4024, per PD-008. ONE LANDS.**
+    - **(b) P/T separability — DOES NOT LAND.** Θ = diag(1,1,1,−1) **commutes with the NESS generator
+      exactly**: |ΘQΘ⁻¹ − Q| = 1.8e-15, and it is **not** time reversal (|ΘQΘ⁻¹ − Qᵀ| = 0.2 at δ = 0.10,
+      0.7 at δ = 0.35, growing with δ). A pure P operation on the **dynamics**, not merely on the measure.
+      0973's split holds; 4023 Step 2 stands.
+    - **(a) generating set — LANDS. 4023's "outside VW-1's scope" is WITHDRAWN.** The n̂-fixing
+      reflections generate a group of **8 elements, none of which moves n̂** (displacement 0.000). An
+      OS/chessboard estimate is built by tiling with reflections, so the ones where RP holds generate
+      **only transverse motion** and have **no traction along n̂ at all**. No-SSB is a statement about the
+      whole system: a direction the argument cannot reach is a gap **inside** the scope, not a region
+      outside it. **That was the convenient reading and it was wrong.**
+  - **NET: the result is STRONGER in one place and WEAKER in the other.**
+    - **Finite substrate — stronger.** Θ commutes with Q, so π is exactly Θ-invariant and **E[⟨η⟩] = 0 by
+      symmetry alone, with NO RP anywhere.** 4023 presented this as RP-dependent; it is not.
+      *(An ensemble statement: single realisations span ±0.18 and are not zero — 4020's finding, exactly.
+      A draft of this check asserted per-realisation vanishing and FAILED; corrected.)*
+    - **Extended lattice — weaker.** VW-1 is **genuinely weakened**, not merely incomplete: RP-based
+      control exists transversally and the reflection group **cannot reach along n̂**. **This is the live
+      gap. Lane: EW / CHIR.**
+  - **STILL SUBMITTED FOR CRITIQUE per PD-008** — now a completed argument with one attack landed and one
+    repelled, rather than a flagged worry. **Lane: next window.**
   - **DEFECT FOUND IN PASSING, in the corpus's own order parameter.** 0813's η is *sign det of the 4
     highest-n̂-projection neighbours* — and on the **unperturbed** lattice the 4th and 5th projections tie
     at **120/120** vertices, so "top 4" is arbitrary and swapping two tied rows flips the determinant.
