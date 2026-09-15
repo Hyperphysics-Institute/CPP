@@ -2198,6 +2198,25 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4062-EW — SUPERSEDED at 0983 (chirality lane): the object 4056–4062 tested is not H1
+
+- **0983 finding.** H1 per `theo_chir_vw_2.tex` v1.1 is Θ_OS (Euclidean time-reflection) positivity, ⟺ VW-a-4; the
+  spatial parity is the *tested symmetry*, a reading VW-2 v1.1 itself withdrew. 4022–4062 tested the spatial
+  parity on the occupation law throughout. **H1 is OPEN exactly as before 4022** — not refuted (4056/4057), not
+  conditionally restored (4062). Items (i)–(iii) below are moot as H1 items; (i) and (iii) are answered
+  (a finite window is irrelevant to VW-a-4 as posed; 4022's reading is NOT VW-1's OS sense).
+- **CLEARED:** SF-2 notice — δ_CP contingencies OPEN on H1 as defined (SF-2 lane need not act; 4059's notice
+  stands with verdict OPEN). CHIR audit — DONE at 0983: none of the 40 absorbed the spatial reading.
+- **STILL OWED (CHIR, from 4060, unrelated to H1):** CAPACITY-1 piece 1 text fix, add "on perturbed
+  configurations" (η pointwise degenerate on the unperturbed lattice, 4023/4058). Text fix. → TODO-0983-CHIR.
+- **OWED (CHIR, PD-008 attack on 0983):** (a) does VW-1 Thm 6.1 consume Θ_OS positivity alone, or also
+  spatial-parity positivity? (VW-2 review Q2: "H1 ⟺ VW-a-4" is *too sharp* unless VW-a-1/2/3 carry the
+  distinction.) If the latter, 4056/4062's object is relevant after all. (b) Finish the exact-rate Θ_OS run at
+  δ = 0.35, t = 1 (float-rate result −3.5e−15, unclaimed). → TODO-0983-CHIR.
+- Original 4062 text retained below for provenance.
+
+<details><summary>4062 text (superseded)</summary>
+
 ### TODO-4062-EW — PD-008 critique of 4056/4057: H1 REFUTED → OPEN (conditional). Convenient branch, submitted.
 
 - **RESULT.** 4057 step (3) read *CPs are conserved* (GR-FE-1) as *the total on one 600-cell is fixed*. The
@@ -2220,3 +2239,18 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   header, the registry and this file carried it, all corrected here). **Lane: CHIR.**
 - **The session-230 handover** carries "H1 REFUTED"; an erratum line is added at its head so the next
   window's first read does not inherit it.
+
+</details>
+
+### TODO-0983-CHIR — Owed from the H1 audit (registered Patch 0983, chirality lane)
+
+- **(1) CAPACITY-1 piece 1 text fix** — add "on perturbed configurations" to the η non-degeneracy condition
+  (4023: η is pointwise degenerate on the unperturbed lattice, 120/120 vertices; 4058 located it on CAPACITY-1's
+  narrowed conditionality). Not physics. **Lane: CHIR.**
+- **(2) PD-008 attack on 0983** — is Θ_OS positivity the only positivity VW-1 Thm 6.1 consumes? Read Thm 6.1's
+  proof, not VW-2's bridge remark about it. **Lane: CHIR.**
+- **(3) Exact-rate Θ_OS probe** at δ = 0.35, t = 1 (30+ digits from φ-exact rates) to settle whether the
+  −3.5e−15 is a signal or float input. If negative and confirmed: a necessary condition for VW-a-4 fails on
+  the single-walker [PCD-EXT] toy — a toy result, not H1. **Lane: CHIR.**
+- **(4) Cross-lane notice (EW):** 4022's reasoning fragment should carry a one-line erratum pointing at 0983.
+  Not done here (EW-lane file). **Lane: EW.**
