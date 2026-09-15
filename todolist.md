@@ -1805,3 +1805,30 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   to the weak coupling is SF-2's `OPEN-FP-SF-2-CHIR` and is untouched. Lane: CHIR / SF-2.**
 - **It also discharges 4041's failed path measurement a second way** — 4042 fixed the chirality measure,
   this supplies the path graph 4041 lacked. **Both now agree the cluster is chiral.**
+
+---
+
+### TODO-4048-EW — a structural helicity bias cannot deliver V−A, and where the labour probably divides
+
+- **WHAT V−A DEMANDS:** *maximal* parity violation — the right-handed coupling is **exactly zero**, not
+  merely smaller. A structural helicity bias gives a **fraction** of paths curling one way.
+- **MEASURED OVER 24 CONFIGURATIONS** (6 seeds × 2 radii × 2 cutoffs): **largest fractional helicity
+  2.069%.** V−A requires **100%**. A factor of ~50 short, **and it does not trend toward 1 in any
+  direction tried.**
+- **AND THE REASON IS STRUCTURAL, NOT A MATTER OF SEARCHING HARDER.** The inner two shells contribute
+  **exactly zero** (+0 over 10,320 paths) — because **4041: the icosahedron is achiral and z = 12
+  icosahedral FORCES it to be**, so every short path cancels exactly. The helicity can live only in the
+  **longer** paths reaching the outer shell, a small minority of the count. **The 2% is the ratio of chiral
+  to total paths in a structure whose core is forced achiral.**
+- **⇒ A STRUCTURAL HELICITY BIAS OF THIS KIND CANNOT DELIVER V−A.** A real negative on the most direct
+  route from the chiral lattice to the weak coupling.
+- **BUT IT MAY BE THE RIGHT DIVISION OF LABOUR.** In the Standard Model, V−A's **maximality does not come
+  from a statistical bias either** — it comes from the **gauge structure**, SU(2)_L acting on left doublets
+  and not right singlets, by construction. Nothing counts paths. **So the substrate would supply the SIGN
+  — which handedness — and the W bracelet the MAXIMALITY.** That matches SF-2's own framing: its open
+  problem is *chirality emergence in the W bracelet structure*, not *chirality from the substrate alone*.
+  And 4047 showed the chiral lattice is well-suited to supplying a sign — a fixed property of the
+  structure, flipping only under reflection.
+- **NOT CLAIMED: that the division works.** A hypothesis about where the labour divides; **SF-2 owns the
+  bracelet side and nothing here touches it.** What **is** established: **the substrate side cannot carry
+  the maximality, so if the division fails, the route fails. Lane: CHIR / SF-2.**
