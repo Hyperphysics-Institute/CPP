@@ -1639,3 +1639,31 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   and "how much" is what a physical prediction would need. **Lane: EW.**
 - **FI-C-9 = V3 STANDS.** This removes an obstruction and builds a candidate; **it does not derive a
   handedness.**
+
+---
+
+### TODO-4042-EW — 4041's owed measurement discharged, and it closes a loop back to 4021
+
+- **THE FIX, one line of reasoning:** 4041 sampled 4000 **random** rotations and floored at ~0.03 for
+  everything, including exactly-achiral sets. But an achiral set's improper symmetry **is** −R for some
+  R ∈ I — so **seed the search from the 60 group elements** and it lands on it exactly instead of near it.
+  Then refine locally.
+- **RESULT: all three achiral controls score EXACTLY 0.00000000**; the chiral cluster scores **0.01173**.
+  **4041's owed measurement is discharged.**
+- **VALIDATED:** CCM → 0 **linearly** as the seed approaches a 5-fold axis — CCM/offset converges to
+  **0.5012** (0.414, 0.491, 0.499, 0.5009, 0.5012, 0.5012) — and is **exactly 0** at the axis, where the
+  orbit collapses from 60 points to 12. *(A draft check tested consecutive ratios for a factor of 2 and
+  FAILED, because the offsets do not all halve. The data was linear; the check was mis-specified.)*
+- **AND THE ANSWER IS A RANGE, NOT A NUMBER: the chirality is TUNABLE over 0.012–0.187** across generic
+  seeds. The second shell's position is a **continuous** parameter, so the structure admits a continuum of
+  chirality strengths. **⇒ SYMMETRY PERMITS CHIRALITY; IT DOES NOT DETERMINE THE MAGNITUDE — and a
+  magnitude is what any physical prediction would need.**
+- **WHICH CLOSES A LOOP BACK TO 4021.** 4021 showed a strain functional built from **distances** cannot
+  prefer a handedness, and that a mechanism needs **(i)** an achirality-breaking term in the dynamics or
+  **(ii)** an external bias. **4042 now shows the geometry supplies a continuum of handedness strengths
+  with no preference among them — so what would select one is exactly what 4021 named.** Twenty-one
+  patches apart, from opposite directions: 4021 from the energetics, 4042 from the geometry. **Not a new
+  result — a convergence, and it says the remaining gap is an AXIOM question, not a construction one.**
+  **Lane: founder.**
+- **FI-C-9 = V3 STILL STANDS.** A substrate that permits any handedness equally does not predict a definite
+  δ_CP — the same objection 4020 raised against random strain.
