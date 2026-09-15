@@ -1413,3 +1413,34 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **NOT claimed:** that the approximation is bad. **Unbuilt is not wrong**, and there is no measurement
   either way. The literal reading is filed as **refuted**, which is evidence about the sentence's
   ambiguity and nothing more.
+
+---
+
+### TODO-4034-EW — the specification is not free: tiling and exactly-twelve pull against each other
+
+- **4033 asked the founder to specify the construction. Under PD-008 I narrowed it first** — tested the
+  candidates before handing over. **Four more fail:** φ-inflation shells, and motif-at-each-vertex at
+  t = 1, φ, 2. All at z = 12 fraction **0.000**.
+- **AND THE REASON IS A TRICHOTOMY IN THE TRANSLATION SCALE** (motif edge 0.618034, diameter 2.0):
+
+  | t | nn distance | z = 12 fraction | max hole |
+  |---|---|---|---|
+  | φ (overlapping) | 0.381966 | 0.000 | 0.363 |
+  | φ² (just touching) | 0.618034 | 0.000 | 0.588 |
+  | 2φ (separated) | 0.381966 | 0.000 | 0.853 |
+  | 4.0 (well separated) | 0.618034 | **0.741** | **1.280** |
+
+  **Dense enough to tile ⇒ vertices land closer than the motif edge ⇒ the nearest shell is no longer the
+  motif's twelve. Sparse enough to preserve z = 12 ⇒ holes twice the edge length ⇒ it does not tile.**
+- **⇒ For translation sets drawn from the motif's own vertex directions, NO scale both tiles and
+  preserves z = 12.** SR-1's *"overlapping … tile flat ℝ⁴"* and SM's *exactly twelve at the edge
+  distance* pull against each other, **and the pull is geometric, not a matter of choosing well.**
+- **SCOPED, not overclaimed:** only translation sets from the motif's own vertex directions were tested.
+  A general translation set could differ and nothing here rules one out. **Lane: EW.**
+- **ONE VALUE RECORDED:** at **t = φ²** a single translated pair touches **exactly** at the edge —
+  0.618033989 vs 0.618033989. The full union still coincides (pairs *between* different translates do not
+  respect the single-pair condition), but the value is exact. **Lane: EW / SR.**
+- **SO THE FOUNDER QUESTION IS SHARPER THAN 4033's: not "specify the construction" but WHICH DOES THE
+  SUBSTRATE GIVE UP — overlap/tiling, or exactly-twelve?** Both load-bearing: *overlapping … tile flat
+  ℝ⁴* is SR-1's wording and its figure's caption; z = 12 is SS-1/SM-1/SM-7/SM-8/SM-9/SF-4, with SF-4
+  carrying Σm_ν ∝ z⁻⁹. **Lane: founder / SR / SM.**
