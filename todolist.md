@@ -1104,3 +1104,36 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **NOT CLAIMED:** the deficit forbids **exact** regularity in flat space and says nothing against a
   distorted cage — real icosahedral quasicrystals are the existence proof that the distorted version
   is constructible. The two classes 4018 left open remain open. **Lane: EW.**
+
+---
+
+### TODO-4020-EW — the distorted-cage ruling: what it costs, what it does not give, what it opens
+
+- **FOUNDER RULED (A) 14 Sep, verbatim at `founders_voice/4020_ruling_distorted_cage.md`:** *"I think
+  the 600-cell space is allowed to be slightly distorted, just like materials with icosahedral
+  packing."* **The six-patch strict-vs-weak referral is closed by a ruling on a different axis.**
+- **z = 12 SURVIVES.** Distortion does not change *who* a vertex's neighbours are at any amplitude
+  tested — what SS-1, SM-1, SM-7, SM-8, SM-9 and SF-4 all require.
+- **IT DOES NOT SUPPLY A CHIRALITY MECHANISM — tested immediately, because it might have.** The V3
+  defence rests on `R = diag(1,1,1,−1)` being *exact*, and a distorted cage does not have it exactly.
+  12 realisations at each of ε = 0.01/0.03/0.08: the 3-hop sum is nonzero in **every** realisation but
+  its **sign wanders with the seed**, mean well inside one sd of zero (|mean|/sd = 0.16, 0.01, 0.15).
+  **Each strained cage is chiral; the ensemble is not.** **FI-C-9 = V3 survives a fourth independent
+  test** (4011 single cell, 4012 fan-out rule, 4015 extended lattice, 4020 distorted cage).
+- **NEW OPEN PROBLEM, and it is the arc's best-posed one: is the FRUSTRATION RELAXATION handed?**
+  Random strain is not the physical strain; the physical distortion is the structured relaxation of
+  7.356°/edge, which in 3D icosahedral matter organises into **disclination networks**. Whether such a
+  network carries handedness is a real condensed-matter question. **NOT investigated at 4020 — random
+  perturbation cannot settle it either way. Lane: CHIR / EW.**
+- **SF-4's z = 12 inheritance (4016): now PHYSICALLY MOTIVATED, still NOT SHOWN.** Uniform z = 12 with
+  distorted icosahedra is what real icosahedral matter does. Plausible is not shown. **Lane: EW / SF.**
+- **LATERAL-CONSTRUCTION TARGET, well-defined for the first time:** flat 4D, uniform z = 12,
+  near-icosahedral order with 7.356°/edge carried as strain. Cut-and-project remains wrong (4015).
+- **CORRECTION, caught by `absence_gate.py` inside this very commit: "nobody has built it" is FALSE.**
+  Searched unscoped — **Patch 2685 (DM lane, `code/2685_r1_l1_arenas.py`) builds FOUR extended
+  z = 12 arenas**: FCC ball, HCP ball, random-stacking Barlow ball, FCC-cubic, each *"z = 12-equivalent"*
+  with coordination checked before use. They are **3D close-packings (cuboctahedral), labelled proxies**,
+  so they do not hit the 4D near-icosahedral target — but they are real prior art. **Fifth scoped-grep
+  near-miss this session, and the SECOND time the DM/sea-grav lane's proxy work has surfaced in this
+  lane's blockers (4012 found their FCC sub-PSR cascade). That lane has been solving extended-z = 12
+  with 3D proxies for months and this lane did not know. Lane: EW / DM — worth a look before building.**
