@@ -1970,3 +1970,35 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **THE REMAINING WORK, stated honestly:** build a **chiral 4D point set** — an orbit of a subgroup of
   H₄'s **rotation** half that is **not** an orbit of H₄ itself. **The left-icosian group is the wrong
   choice, because its orbits are congruent to the 600-cell. NOT attempted. Lane: EW.**
+
+---
+
+### TODO-4054-EW — a third consecutive non-landing, and a stop
+
+- **THE ATTEMPT:** lift 4041's verified 3D chiral orbit into 4D by **conjugation** (x → q x q̄), which fixes
+  the real part and acts as SO(3) on the imaginary part.
+- **IT DOES NOT LAND, twice over.** (i) The supposed **5-fold-axis seed also gives a 60-point orbit** where
+  3D gives 12 — **my special positions are not where I think they are in the conjugation frame**, so there
+  is no working 3D → 4D lift yet, only an unaligned map. (ii) The resulting 60-point shell has only
+  **~120 4-hop paths** — **4041's failure repeated exactly: a zero that means "I cannot see", not "there is
+  nothing there".** I recognised that trap at 4041, wrote it up, **and built it again.**
+- **THIS IS A THIRD CONSECUTIVE NON-LANDING, AND THAT IS THE SIGNAL.** 4051 both functionals wrong →
+  retracted at 4053; 4052 diagnosis partly true but the wrong reason; 4053 retraction; 4054 this.
+  **The last four patches have produced one retraction and no result. The lane should stop here rather
+  than produce a fourth — continuing past this point is how a second retraction gets made.**
+- **WHAT IS ACTUALLY ESTABLISHED, for whoever picks this up:**
+  - SF-6's `OPEN-SD-CHIR-PRIMITIVE` names **n̂-on-a-host-vertex** as leading candidate; **it cannot work** —
+    Θ fixes n̂ and preserves the 600-cell (4046).
+  - A chiral cluster with icosahedral **rotation** symmetry and an achiral z = 12 first shell **exists and
+    is measured — in THREE dimensions** (4041, 4042, 4047), and it **preserves the icosahedral and
+    dodecahedral shells CPP uses** (4043).
+  - Its parity-odd dispersion enters at **O(k¹⁵)** — not excluded by the absence of vacuum optical
+    activity, and **not calibratable** by it (4044, 4045).
+  - A structural helicity bias **caps at ~2%**, so it **cannot supply V−A's maximality** (4048).
+  - The **W bracelet is achiral**, by the corpus's own Theorem 4.2 and independently (4049).
+  - **Ring-bivector ∧ n̂ IS the P-odd binary variable**, and its two states are **exactly degenerate** under
+    the present symmetry (4050).
+  - **NO CHIRAL 4D STRUCTURE HAS BEEN BUILT.** Everything chiral here is 3D (4053, 4054).
+- **THE GAP IS DIMENSIONAL AND IT IS THE WHOLE REMAINING PROBLEM:** a chiral 4D point set with icosahedral
+  rotation symmetry, **tested with the 4D graph helicity on a graph dense enough to resolve it.** Both
+  halves are requirements; **this patch met neither. Lane: EW.**
