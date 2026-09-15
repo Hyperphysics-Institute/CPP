@@ -2244,7 +2244,7 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ### TODO-0983-CHIR — Owed from the H1 audit (registered Patch 0983, chirality lane)
 
-- **(1) CAPACITY-1 piece 1 text fix** — add "on perturbed configurations" to the η non-degeneracy condition
+- **(1) CLEARED at 0986** — qualifier added in `frontier_sectors/CHIR.md` (two places) and `theorem-registry.md`; CAPACITY-1 has no .tex yet (flagship assembly scope), so the .tex inherits it at drafting. Original: **CAPACITY-1 piece 1 text fix** — add "on perturbed configurations" to the η non-degeneracy condition
   (4023: η is pointwise degenerate on the unperturbed lattice, 120/120 vertices; 4058 located it on CAPACITY-1's
   narrowed conditionality). Not physics. **Lane: CHIR.**
 - **(2) PD-008 attack on 0983** — is Θ_OS positivity the only positivity VW-1 Thm 6.1 consumes? Read Thm 6.1's
