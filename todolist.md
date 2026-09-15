@@ -1889,3 +1889,30 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   sign. **Needs the bracelet embedded in the chiral environment. Lane: EW — next.**
 - **And not claimed that this is how SF-2's bracelet works** — SF-2 describes a catalyst at a D₆-symmetric
   centroid, not a helicity state. **Whether the W state carries this variable is SF-2's to say.**
+
+---
+
+### TODO-4051-EW — the splitting is NOT computed; two functionals, two failures, both caught by controls
+
+- **BUILT AND VERIFIED: a chiral 4D shell.** Left-icosian orbit of a generic 4D point, **120 points**,
+  **Θ does not map it to itself** — chiral. Special-position control: 120 points, **Θ-invariant**. The two
+  shells differ in exactly the property under test.
+- **FUNCTIONAL 1 FAILS.** ⟨sign(h)·E⟩ = **−6.290156** on the chiral shell and **−6.290201** on the
+  **achiral control** — the same to five digits. **The functional is not measuring the shell at all**; it
+  is dominated by the ring's own helicity, since d = s − c carries a term ∝ −helicity. **The control
+  caught it.**
+- **FUNCTIONAL 2 FAILS TOO.** Differencing out the control leaves **+4.482936e-05** for the chiral shell
+  and **+4.444575e-05** for the **mirrored** chiral shell — **the same sign, not the opposite.** A residual
+  that is the shell's chirality must flip under mirroring. **It is a P-even difference between a
+  generic-position and a special-position orbit, not the quantity wanted. The mirror caught it.**
+- **SO THE SPLITTING IS NOT COMPUTED.** Two functionals, two failures, **both caught by controls rather
+  than by inspection** — third and fourth time today. **The controls are doing more work than the
+  measurements.**
+- **LIKELY REASON, offered as a hypothesis with its evidence, NOT a finding:** summing a P-odd quantity
+  over a **group orbit** gives a group invariant, and for icosahedral symmetry the first **odd** invariant
+  is **degree 15** (4044). **The splitting may be suppressed for exactly the reason the parity-odd
+  dispersion was** — and if so, **no low-order functional of this shape will ever see it. NOT TESTED.**
+- **AND THIS IS WHERE THE LANE'S TOOLS STOP REACHING.** Two consecutive patches whose computation did not
+  land. **4050's mechanism sketch stands in FORM** — two P-odd binary states, exactly degenerate,
+  degeneracy removable by a chiral substrate — **and its MAGNITUDE is not accessible by the means available
+  here. Lane: EW / CHIR — needs a different instrument, not more of this one.**
