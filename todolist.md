@@ -1832,3 +1832,32 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **NOT CLAIMED: that the division works.** A hypothesis about where the labour divides; **SF-2 owns the
   bracelet side and nothing here touches it.** What **is** established: **the substrate side cannot carry
   the maximality, so if the division fails, the route fails. Lane: CHIR / SF-2.**
+
+---
+
+### TODO-4049-EW — my own division of labour, one patch old, fails on the bracelet side
+
+- **THE CORPUS'S OWN THEOREM ALREADY SAID IT.** SF-2 Theorem 4.2: *the 4800 induced 6-cycles partition
+  into exactly 2 H₄-orbits; one orbit (size 1200, **stabilizer D₆ of order 12**) is the W bracelet.*
+  **D₆ of order 12 is the dihedral group — 6 rotations AND 6 reflections. A stabilizer containing
+  reflections means the object is ACHIRAL.** The corpus says so in its own theorem and I had not read it
+  that way.
+- **AND AN INDEPENDENT COMPUTATION AGREES.** 63 induced 6-cycles through one vertex; a skew hexagon is a
+  helix (chiral) only if all six torsion signs agree. **No cycle is a helix; every pattern is
+  reversal-negation symmetric** — (1,0,−1,1,0,−1), (−1,1,−1,1,−1,1), and so on. **The scaffold offers no
+  two handedness states to select between: there are not two mirror-image bracelets, there is one and it
+  is its own mirror image.**
+- **METHOD NOTE: my first test said the opposite.** Searching the signed-permutation subgroup found **0
+  improper symmetries** and would have read as CHIRAL — but that subgroup is 192 of H₄'s 14400, and it
+  also found only **1 proper** symmetry, which should have been the tell. **The torsion pattern is the
+  right instrument for a skew polygon.** Sixth time today an instrument returned a confidently wrong
+  answer, and the second time the giveaway was a **control** coming out wrong rather than the result.
+- **SO 4048's DIVISION OF LABOUR FAILS ON THE BRACELET SIDE AS CURRENTLY DESCRIBED.** I proposed it one
+  patch ago as the constructive reading of a negative; **it does not survive its own test.** And the
+  corpus's W *state* supplies nothing either — the bracelet is a **catalyst**, activated by charge capture
+  at its **D₆-symmetric centroid**, which is achiral too.
+- **WHAT THE BRACELET WOULD NEED — the actionable residue:** a **binary, P-odd, two-state degree of
+  freedom on the ring** — a **circulation**, a **winding**, or a **traversal orientation**. Such a thing is
+  all-or-nothing, which is exactly the maximality V−A wants, and exactly what a 2% substrate sign could
+  select between. **Not present in the current description. A specific, nameable gap on SF-2's side — far
+  more actionable than "derive V−A". Lane: SF-2 / CHIR. NOT this lane's to fill.**
