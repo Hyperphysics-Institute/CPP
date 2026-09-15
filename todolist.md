@@ -851,10 +851,18 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
     on-site variance and within ~2 sem of zero, along n̂, out to 3 edge lengths**. Transverse, for
     contrast: 0.02–0.06%. **Evidence against long-range order along the drive — not proof. VW-1's
     CONCLUSION survives; VW-1's ARGUMENT still cannot reach there.**
-  - **THE UNCOMFORTABLE COINCIDENCE, stated because it is convenient to me:** the along-n̂ bound rests on
-    **1518 pairs** against **183,146** transverse — the patch is isotropic, so *along n̂ with small
-    transverse offset* is a thin tube. **The direction where the theory has no control is also where this
-    measurement has least power.** **Attack here first. Lane: next window / EW.**
+  - **THE UNCOMFORTABLE COINCIDENCE 4025 FLAGGED IS DISCHARGED AT 4026, BY BUILDING THE FIX I NAMED.**
+    Anisotropic patch elongated along n̂ (R∥ = 8.0, R⊥ = 1.3): **3,006 along-n̂ pairs against 1,518, and
+    reach 12.7 edge lengths against ~3**. **And the better measurement found STRUCTURE, not a flat null:**
+    a real short-range **anticorrelation** at ≈1 edge length, **−0.0123 ± 0.0036 (3.4 sem)**, which **dies
+    by 1.8** — every band from 1.0 out to 9 is within 2.5 sem of zero and under 0.3% of on-site. **⇒ ξ ≲ 1
+    edge length: FINITE correlation length, NO long-range order.** 4025's specific worry — that ξ ≥ 5
+    would not show — is discharged: this reaches past 6 and sees nothing.
+  - **A draft of the 4026 check asserted "no band exceeds 1% of on-site" and FAILED on the nearest band.**
+    The draft was wrong and usefully so — a finite ξ *should* show at one edge length, and a flat zero
+    everywhere would have been the suspicious result. Restated to test what the physics predicts.
+  - **Measured, no story attached:** the short-range structure is **stronger along n̂ (−0.0123) than
+    transverse (−0.0025 ± 0.0007) on the same patch**. **Lane: CHIR / EW.**
   - **Two further limits:** the patch reaches ~3 edge lengths, so ξ ≥ 5 would not show; and the icosian
     cut-and-project is a **proxy** (4013/4015 established it is not the substrate). **Lane: EW.**
   - **STILL SUBMITTED FOR CRITIQUE per PD-008** — now a completed argument with one attack landed and one
