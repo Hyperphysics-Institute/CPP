@@ -1444,3 +1444,32 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   SUBSTRATE GIVE UP — overlap/tiling, or exactly-twelve?** Both load-bearing: *overlapping … tile flat
   ℝ⁴* is SR-1's wording and its figure's caption; z = 12 is SS-1/SM-1/SM-7/SM-8/SM-9/SF-4, with SF-4
   carrying Σm_ν ∝ z⁻⁹. **Lane: founder / SR / SM.**
+
+---
+
+### TODO-4035-EW — 4034's caveat closed, and the dilemma has a THIRD horn the DM lane already uses
+
+- **4034's CAVEAT IS CLOSED.** For z = 12 *exactly* at a vertex, no other copy's vertex may lie within e
+  — its own motif already supplies twelve. **So copies cannot interpenetrate at the edge scale whatever
+  the translation set, and the translation set drops out of the problem.**
+- **AND MY DRAFT OF THE NEXT STEP WAS WRONG.** Draft: *so it reproduces the 600-cell's local structure,
+  which carries the 7.356° deficit, so flat space forbids it.* **False — FCC is the counterexample:**
+  z = 12 exactly at every interior site, largest hole 0.961 against nn 1.414, **it tiles.** Caught by
+  asking for a counterexample before asserting.
+- **THE OBSTRUCTION IS "ICOSAHEDRALLY", NOT "TWELVE".** FCC shares **six** neighbours per edge — 4
+  tetrahedra + 4 octahedra, closing 360° exactly — where the 600-cell shares **five**, giving 352.644°
+  and the 7.356° deficit. FCC's coordination is **cuboctahedral** (cos-angles −1, −0.5, 0, +0.5) against
+  the icosahedron's (−1, −0.4472, +0.4472). **SF-4's own words are "12 nearest neighbors arranged
+  icosahedrally" — that adjective is doing all the work.**
+- **SO THE DILEMMA IS THREE-WAY, NOT TWO:**
+  **(A)** give up **tiling** — keep icosahedral z = 12, accept holes or curvature.
+  **(B)** give up **exactly-twelve** — accept the quasicrystal's 13/18/19/26 spread.
+  **(C)** give up **icosahedral** — keep twelve **and** tiling. **That is FCC/HCP.**
+- **(C) IS NOT HYPOTHETICAL — IT IS WHAT THE DM LANE ALREADY RUNS ON.** Patch 2685's four z = 12 arenas
+  are FCC ball, HCP ball, random-stacking Barlow ball and FCC-cubic; Patch 3133's sub-PSR cascade is an
+  FCC lattice. Both were labelled **proxies** (found at 4012 and 4020 and filed as precedent). **(C)
+  explains why those proxies worked: they satisfy the constraint that is actually satisfiable in flat
+  space.**
+- **(C)'s COST IS THE ADJECTIVE.** SF-4, SM-1 and SS-1 all say **icosahedral**. **Whether the mass ladder
+  needs the ARRANGEMENT or only the COUNT is a question about the SM papers' derivations — 4016 showed
+  only the COUNT enters Σm_ν ∝ z⁻⁹. NOT decided here. Lane: SM / SF / founder.**
