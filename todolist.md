@@ -1532,3 +1532,31 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   and the local ones are satisfiable in many global structures.**
 - **CHECKABLE PREDICTION, NOT YET TESTED:** no SM result changes if the global tiling is replaced,
   provided the local structures survive. **Lane: EW — test it.**
+
+---
+
+### TODO-4038-EW — the alternative is not a different lattice: it is icosahedral symmetry with the reflections dropped
+
+- **A NEW COST ON HORN (C), which 4036 did not price: FCC/HCP cannot replace the 600-cell for SR.**
+  Independent elastic constants: **cubic 3, icosahedral 2.** Isotropy has two. **A cubic substrate is
+  anisotropic at rank 4 and loses SR's W2 world-call.**
+- **AND THE ANSWER: drop the improper operations, keep the rotations — point group I (532), not I_h.**
+  **I (order 60, chiral) and I_h (order 120) give the SAME elastic count — 2 and 2** — because elasticity
+  is a rank-4 **even** tensor property and improper operations contribute nothing to it. **SR loses
+  exactly nothing.** The same holds for the **l = 6 anisotropy floor**, also even-rank.
+- **AND I HAS NO IMPROPER OPERATIONS — which is precisely what the cancellation needs.** 4011, 4012,
+  4015, 4020 and 4024 all rest on one thing: an improper symmetry fixing n̂, so every path has an exact
+  mirror partner. **In point group I there is no such operation and the cancellation is no longer forced.**
+- **AND SM KEEPS EVERYTHING IT USES:** z = 12, the three-vertex triangle, the first-shell ratio — all
+  rotation-invariant (4037). **Dropping reflections costs the mass sector nothing.**
+- **NOT BUILT. Three attempts recorded rather than hidden:** close-packed polytypes (ABC, AB, ABAC,
+  ABCACB, ABCB, ABCBAC, ABCACBACB) — **z = 12 exactly and chirality sum exactly 0 in every one**, so
+  swapping inside the z = 12 close-packing family does not buy chirality; a **golden-angle screw** — chiral
+  but **z falls to 6–10**; the **snub-24-cell attempt** (96 non-24-cell vertices) — **z = 9 and still 96
+  improper signed-permutation symmetries.**
+- **THE TARGET, stated:** a point set in flat space with icosahedral **rotation** symmetry I (532), **no**
+  improper operations, and a nearest-neighbour shell of **exactly twelve**. **Chiral icosahedral
+  quasicrystals occur in nature** — a known structure class, which is a better place to be than the
+  unspecified family 4033 found. **Lane: EW — build it.**
+- **FI-C-9 = V3 still stands.** Nothing here generates chirality yet; it removes the obstruction that
+  forbade it.
