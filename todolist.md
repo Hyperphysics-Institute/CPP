@@ -810,9 +810,19 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
     π is not Θ-invariant, the Gram matrix is **not even symmetric** (asym 1.2–4.9) and carries a strongly
     negative eigenvalue (−0.497 at δ = 0.10, −4.79 at δ = 0.35) — **RP FAILS, at O(δ)**.
   - **The asymmetry matters: the FAILURE is a proof, the SUCCESS is not.** One negative eigenvalue on any
-    test class refutes RP, so the n̂-flipping case is settled by witness. Passing on single-site
-    occupations is a **necessary condition only**. **Extending the positive case to a richer test class
-    is owed. Lane: EW.**
+    test class refutes RP, so the n̂-flipping case is settled by witness.
+  - **~~EXTENSION OWED~~ — DISCHARGED AT 4055 FOR THE WHOLE PRODUCT HIERARCHY.** For multinomial(K, p)
+    with all indices distinct, E[∏n] = K(K−1)…(K−2m+1)·∏p **exactly** — and since Θ maps the + side to
+    the − side, **no coincidence term ever enters**. So the Gram matrix is **exactly G = K^(2m)·u⊗v,
+    RANK ONE at every m**, symmetric iff π is Θ-invariant. **Measured at m = 2 and m = 3: n̂-fixing gives
+    symmetric, PSD (asym ~1e-13, min eig ~−5e-13) at δ = 0, 0.10, 0.35; n̂-flipping gives min eig −8.21,
+    −61.3, −5.63, −29.7.** **Identical verdict to single sites, and the structure is m-INDEPENDENT —
+    there is no m at which a product observable could answer differently.** **4022's "necessary only"
+    becomes "necessary AND sufficient within all product observables".**
+  - **STILL NOT COVERED, and it is a real class: NON-PRODUCT observables** — a repeated index (n_a²) or
+    any function of a sum. Those bring in the multinomial's **coincidence terms** (the +K·p_a that 4022's
+    single-site Gram already carried) and the clean rank-one form breaks. **That is where a counterexample
+    to RP would have to live if one exists. Lane: EW.**
   - **AND THE CHIRALITY ARGUMENT NEEDS EXACTLY THE SECTOR WHERE RP HOLDS.** `R = diag(1,1,1,−1)` with
     n̂ = e₁ is the map 4011, 4012, 4015 and 4020 all used, and 0973 puts sign(δ) as **P-even** — the P-face
     lives in the n̂-preserving sector.
@@ -2002,3 +2012,19 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **THE GAP IS DIMENSIONAL AND IT IS THE WHOLE REMAINING PROBLEM:** a chiral 4D point set with icosahedral
   rotation symmetry, **tested with the 4D graph helicity on a graph dense enough to resolve it.** Both
   halves are requirements; **this patch met neither. Lane: EW.**
+
+---
+
+### TODO-4055-EW — 4022's owed extension discharged; first debt cleared since the chirality line stopped
+
+- **A DIFFERENT ITEM FROM THE QUEUE.** The chirality-construction line stopped at 4054; this is an
+  unrelated debt from 4022.
+- **RESULT:** RP's verdict is **identical at m = 1, 2 and 3**, and the Gram structure is **m-independent** —
+  rank one at every m, symmetric exactly when π is Θ-invariant. **4022's "necessary only" becomes
+  "necessary and sufficient within all product observables".**
+- **WHY IT IS CLOSED-FORM AND NOT SAMPLED:** Θ maps the + side to the − side, so every index in
+  ⟨(ΘF)(F)⟩ is **distinct** and the multinomial's coincidence terms **never enter**. The moment is exact.
+- **STILL OPEN: the non-product classes** — repeated indices, functions of sums. **Where a counterexample
+  to RP would have to live. Lane: EW.**
+- **Nothing downstream changes:** 4023 and 4024 rest on RP holding in the n̂-preserving sector, now
+  established on a **strictly larger class** than before.
