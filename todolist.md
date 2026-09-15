@@ -1217,8 +1217,11 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   perturbation cannot settle it either way. Lane: CHIR / EW.**
 - **SF-4's z = 12 inheritance (4016): now PHYSICALLY MOTIVATED, still NOT SHOWN.** Uniform z = 12 with
   distorted icosahedra is what real icosahedral matter does. Plausible is not shown. **Lane: EW / SF.**
-- **LATERAL-CONSTRUCTION TARGET, well-defined for the first time:** flat 4D, uniform z = 12,
-  near-icosahedral order with 7.356°/edge carried as strain. Cut-and-project remains wrong (4015).
+- **LATERAL-CONSTRUCTION TARGET — RESTATED AT FULL STRENGTH AT 4030. "Uniform z = 12" was too weak.**
+  The requirement is that the nearest-neighbour shell contain **EXACTLY twelve points** — not twelve on
+  average, not twelve *chosen from* a larger equidistant set — **and that those twelve span a 3-flat**.
+  Both hold in the 600-cell by construction. Plus flat 4D and the 7.356°/edge carried as strain.
+  Cut-and-project remains wrong (4015, and now 4030 for a third reason).
 - **CORRECTION, caught by `absence_gate.py` inside this very commit: "nobody has built it" is FALSE.**
   Searched unscoped — **Patch 2685 (DM lane, `code/2685_r1_l1_arenas.py`) builds FOUR extended
   z = 12 arenas**: FCC ball, HCP ball, random-stacking Barlow ball, FCC-cubic, each *"z = 12-equivalent"*
@@ -1294,3 +1297,25 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   0934** (0978 is documented — superseded before push); **de 3427, 3428, 3437, 3447**; **dm 3502**.
   3406/3407 are explained by the fix above. **Not called losses** — this lane does not own those blocks.
   **Lane: CHIR / DE / DM.**
+
+---
+
+### TODO-4030-EW — the rank-based rescue for the cut-and-project, tested and killed
+
+- **THE RESCUE:** 4015 measured z ∈ {12,…,26} with a **distance threshold**. In real quasicrystals and
+  glasses coordination is **rank-based** — the 12 *nearest* — under which z = 12 holds by construction,
+  and the class might have met 4020's target after all. **Tested. It does not.**
+- **AND THE REASON IS NEW.** The coordination shell is **over-populated**: **13, 18, 19 or 26 points sit
+  at the nearest distance** where the 600-cell has **exactly 12**. So "the 12 nearest" is a **choice among
+  equals**, not a determination — the same degeneracy failure 4023 found in η, in a different object.
+  **And the chosen twelve do not lie in a 3-flat** (s₄/s₁ = 0.52 against the 600-cell's 1e-16), so they
+  are not a strained icosahedron but structurally a different object, and no choice among the equidistant
+  points fixes it.
+- **THIRD independent failure of the icosian cut-and-project**: 4013 window boundary; 4015 z-spread under
+  a threshold; 4030 over-populated shell + loss of the 3-flat under a rank definition. **And 4015 is not
+  merely confirmed but explained** — the spread was never a threshold artifact.
+- **METHOD NOTE worth keeping:** the test only works because the offsets are **centred before the SVD**.
+  An uncentred SVD gives **0.56 for the 600-cell itself**, which would have read as *the patch is as good
+  as the reference*. Knowing to centre comes from **4018's** finding that the neighbour icosahedron is not
+  centred on its vertex — an earlier result in this same session was needed to make this measurement mean
+  anything. **Lane: EW.**
