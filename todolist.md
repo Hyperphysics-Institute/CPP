@@ -1079,3 +1079,28 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   site symmetry is a **proper subgroup** of H₄ but whose 12 nearest neighbours still form a regular
   icosahedron; and **aperiodic** uniform structures outside the cut-and-project class. **Five closed
   classes is not a proof that nothing works. Lane: EW / founder.**
+
+---
+
+### TODO-4019-EW — one fact underneath all five closures, and the question restated
+
+- **The 600-cell carries a 7.356° ANGULAR DEFICIT PER EDGE.** Counted, not quoted: f-vector
+  (120, 720, 1200, 600); **5 tetrahedra per edge**; regular-tetrahedron dihedral = arccos(1/3) =
+  70.5288°; **5 × 70.5288° = 352.644°** against the **360°** a flat structure needs. 360/θ = 5.1043,
+  not an integer. **Positive deficit is positive curvature — the 600-cell is intrinsically spherical.**
+- **That single fact is underneath all five closures** (4009 dihedral angle, 4013 window boundary,
+  4017 Gram signature, 4018 central asymmetry, 4018 irrational trace). Each fails in its own
+  vocabulary; all are symptoms of one frustration. It is the **4D form of the classic icosahedral
+  frustration, and the same number** — which is why icosahedral short-range order is everywhere in
+  real matter and icosahedral crystals do not exist.
+- **THE QUESTION IS RESTATED, AND I HAD BEEN ASKING THE WRONG ONE.** Not strict-vs-weak reading:
+  - **(A) FLAT space, DISTORTED cage** — keep z = 12 and near-icosahedral order, give up the
+    icosahedron being *exactly* regular; the 7.356° absorbs as strain, which is what real icosahedral
+    matter does. **OPEN, and the survivor.**
+  - **(B) EXACT cage, CURVED space** — keep the regular 600-cell, pay curvature. **Priced and CLOSED
+    at 4017**: the only regular honeycomb of 600-cells is hyperbolic and costs z = ∞.
+  **(A) is a different question from the weak reading** — weak reading was *which GPs have a
+  600-cell*; this is *whether the 600-cell is regular*. I had not separated them. **Lane: founder.**
+- **NOT CLAIMED:** the deficit forbids **exact** regularity in flat space and says nothing against a
+  distorted cage — real icosahedral quasicrystals are the existence proof that the distorted version
+  is constructible. The two classes 4018 left open remain open. **Lane: EW.**
