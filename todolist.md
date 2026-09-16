@@ -1984,6 +1984,16 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4066-EW — the W⁰ handedness splitting: the live chirality mechanism question (registered Patch 4066, EW lane)
+
+- **CONTEXT / ERRATUM.** My chat summary at 4064 said the corpus "already carries handedness through the CPs' own orientation." **Wrong** — 4046: Θ fixes n̂, so (600-cell, n̂) is achiral; a vector is not a chirality. FI-C-9 = sign(n̂) is at **V3 = not yet derived**, a registered gap, not a working mechanism. Founder caught this. The *status* question is closed (V3/W3, CAPACITY-1); the **mechanism** question — what carries handedness into observable physics — is **OPEN and lives in EW**.
+- **(1) SPLIT THE DEGENERATE PAIR** (Claude, bounded, next EW computation): 4050 showed the W bracelet's two helicity states (ring bivector ∧ centroid ∧ n̂, |helicity| = 1/(2φ)) are **P-odd and exactly degenerate** under Θ, and that **the splitting is not computed** — "nor by how much, nor with which sign." Embed the bracelet in a Mechanism-A environment (Q = L + δC, δ = φ⁻³) and compute the induced difference between the two states: sign, magnitude, and δ-scaling (δ or δ³). No new GPs needed. **If it splits:** substrate δ → bracelet helicity → V−A sign; a win, CONV round warranted (maximality still owed to the gauge-structural argument, 4048). **If not:** Mechanism A is insufficient and U returns at its known price (4064). **Lane: EW.**
+- **(2) Does the W state carry this variable at all?** 4050 flags that SF-2 describes the W⁰ as a catalyst activated at a D₆-symmetric centroid, **not** as a helicity state. Whether SF-2's catalysis uses the split variable is SF-2's to say. Second unclosed link, distinct from (1). **Lane: SM/SF-2.**
+- **(3) Not closed by (1) or (2):** the *status* question — why sign(n̂) has the sign it has — stays OPEN-CHIR-1d-β (deep, deferred). Settling W⁰ handedness closes the mechanism chain, not the origin of the primitive. **Lane: CHIR (pointer only).**
+- **(4) 4064 reason #1 CORRECTED:** "not needed — the corpus already has a reviewed route" → "the corpus has a **cheaper candidate** route (dynamical P-odd δ-term vs 7,200 GPs) **whose decisive step is unexecuted**." 4064's recommendation (do not promote U) stands on reasons #2 (61× sites, second length scale) and #3 (geometry gives a sign, not maximality). **Lane: EW.**
+
+---
+
 ### TODO-4063-EW — after the chiral 4D cluster: helicity measurement, and whether U is a physical candidate (registered Patch 4063, EW lane)
 
 - **(1) 4D graph helicity on U** (Claude, bounded): repeat 4047's path-chirality measurement on U's decoration graph (7,200 points, ~10⁵ short paths — 4054's density requirement is met). Report sign, magnitude, mirror-flip, and the structural bias fraction against 4048's 3D cap of ~2%. **Lane: EW.**
