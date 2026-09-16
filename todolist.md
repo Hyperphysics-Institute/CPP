@@ -1984,6 +1984,16 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4068-EW — the chirality mechanism has lost its candidate: what in CPP is P-odd at all? (registered Patch 4068, EW lane)
+
+- **SETTLED at 4068:** Mechanism A **cannot** split the W bracelet. Θ = diag(1,1,1,−1) is an exact improper symmetry of the whole dynamics (Q Θ-equivariant to 1.8e-15, π Θ-invariant to 2.5e-17, every δ incl. φ⁻³), because the rates depend on geometry only through e·n̂ and Θ fixes both. The helicity is Θ-odd ⇒ splitting identically zero (max|Δ| = 1.5e-17 vs circulations 1.0e-5). **δ breaks T, not P.** `code/4068_mechanism_a_cannot_split_the_bracelet.py`, `reasoning/4068.md`.
+- **(1) FOUNDER PHYSICS QUESTION (picture form) — the live one:** a P-odd source must distinguish a configuration from its mirror image. Mechanism A's tilt along n̂ is P-even. **Is there anything in the CPP axioms that is P-odd?** Three candidate directions, none assessed: **(a)** a rate law coupling to an oriented *volume* — a triple product of edge vectors with n̂ — which is Θ-odd, unlike e·n̂ (an axiom-level change to Mechanism A, founder's call); **(b)** the DP/CP internal structure: do CPs carry an orientation beyond n̂ that a mirror would flip (SF-6 `OPEN-SD-CHIR-PRIMITIVE`)? **(c)** a chiral GP arrangement — U (4063), costed at 61× sites. **Lane: EW (founder).**
+- **(2) 4066's "cheaper candidate route" is REFUTED.** 4064 reason #1 is gone; the case against promoting U now rests only on reasons #2 (61× sites, second length scale) and #3 (geometry supplies a sign, not V−A maximality). If (1)(a) and (1)(b) both fail, U returns as the only identified P-odd source and should be re-weighed at that known price. **Lane: EW.**
+- **(3) ERRATUM to 4050 (filed at 4068):** 4050 states all 63 rings through a host vertex carry |h| = 1/(2φ). **False** — |h| = 1/(2φ) on 21 of 63, and 0.269672 on the other 42; the magnitude was read off one ring and generalised. P-oddness and the Θ-flip (what the argument needs) are unaffected. SF-2 unrevised; no verdict moved. **Lane: EW (recorded, no action).**
+- **(4) Unaffected:** the *status* question (FI-C-9 = V3; why sign(n̂) has its sign) stays OPEN-CHIR-1d-β, deep and deferred. TARROW-1/2 stand — this patch confirms the T-arrow, it only denies it is also a P-source. **Lane: CHIR (pointer only).**
+
+---
+
 ### TODO-4066-EW — the W⁰ handedness splitting: the live chirality mechanism question (registered Patch 4066, EW lane)
 
 - **CONTEXT / ERRATUM.** My chat summary at 4064 said the corpus "already carries handedness through the CPs' own orientation." **Wrong** — 4046: Θ fixes n̂, so (600-cell, n̂) is achiral; a vector is not a chirality. FI-C-9 = sign(n̂) is at **V3 = not yet derived**, a registered gap, not a working mechanism. Founder caught this. The *status* question is closed (V3/W3, CAPACITY-1); the **mechanism** question — what carries handedness into observable physics — is **OPEN and lives in EW**.
