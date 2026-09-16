@@ -1984,7 +1984,13 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
-### TODO-4054-EW — a third consecutive non-landing, and a stop
+### TODO-4063-EW — after the chiral 4D cluster: helicity measurement, and whether U is a physical candidate (registered Patch 4063, EW lane)
+
+- **(1) 4D graph helicity on U** (Claude, bounded): repeat 4047's path-chirality measurement on U's decoration graph (7,200 points, ~10⁵ short paths — 4054's density requirement is met). Report sign, magnitude, mirror-flip, and the structural bias fraction against 4048's 3D cap of ~2%. **Lane: EW.**
+- **(2) Founder physics question, in picture form:** U needs a 7,200-point decoration per 600-cell, on no mirror of the cell. Can the substrate's constituents (CPs/DPs per GP) supply that many distinct positions, or is the handedness carried some other way (e.g. by n̂ + sign(δ) alone, per CAPACITY-1/TARROW-1)? If U-like, a CONV round promotes U to a corpus object; if not, U is a mathematical existence result only. **Lane: EW (founder).**
+- **(3) The global lattice** stays where 4019/4030/4034/4037 left it: no flat-R⁴ tiling of 600-cells with z = 12; the 7.356° deficit is the cause. Chirality no longer blocks it; tiling does. Not an EW item — SR/SM. **Lane: SR (pointer only).**
+
+### TODO-4054-EW — a third consecutive non-landing, and a stop (**CLEARED at 4063**)
 
 - **THE ATTEMPT:** lift 4041's verified 3D chiral orbit into 4D by **conjugation** (x → q x q̄), which fixes
   the real part and acts as SO(3) on the imaginary part.
@@ -2010,7 +2016,8 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   - **Ring-bivector ∧ n̂ IS the P-odd binary variable**, and its two states are **exactly degenerate** under
     the present symmetry (4050).
   - **NO CHIRAL 4D STRUCTURE HAS BEEN BUILT.** Everything chiral here is 3D (4053, 4054).
-- **THE GAP IS DIMENSIONAL AND IT IS THE WHOLE REMAINING PROBLEM:** a chiral 4D point set with icosahedral
+- **CLEARED at 4063 — TARGET MET.** U = 600-cell ∪ generic H4⁺-orbit (7,200 pts, radius 1.7): symmetry group exactly H4⁺ by exhaustive count over all 7,200 improper elements; z = 12 on every core vertex; pseudoscalar ±43.04, flips exactly, control 0. Steinberg: every H4⁺-orbit of a mirror point is achiral, which is why 4051–4054 could not land; 7,200 per shell is the minimum. `series_standard_model/code/4063_chiral_4d_cluster_z12.py`, `reasoning/4063.md`.
+- (original text retained:) **THE GAP IS DIMENSIONAL AND IT IS THE WHOLE REMAINING PROBLEM:** a chiral 4D point set with icosahedral
   rotation symmetry, **tested with the 4D graph helicity on a graph dense enough to resolve it.** Both
   halves are requirements; **this patch met neither. Lane: EW.**
 

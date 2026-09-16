@@ -19,6 +19,8 @@
 **Paper(s):** EW-2
 **Note added Patch 0946 (chirality lane):** D₆ of order 12 is the stabiliser of the *bare* Petrie hexagon. Decorating it with the ruled 3 qDP + 3 eDP drops the stabiliser to order 6 (alternating), 2 (blocked) or 1 (the chiral pair) — verify `series_umbrella/series_substrate_chirality_arc/chirality_derivations/code/0946_w0_chirality_source.py` T7. The lane's D₆ statement is correct as written; any downstream argument applying D₆ to the *decorated* W⁰ needs the surviving subgroup, which depends on an arrangement the founder has not yet fixed.
 
+> **NOTICE (Patch 4063, 16 Sep 2026).** The chiral-lattice arc (4009–4054) ended with "no chiral 4D structure has been built; the gap is dimensional." **That gap is closed at cluster scale:** U = 600-cell ∪ generic H4⁺-orbit is chiral (symmetry group exactly H4⁺, exhaustive), with z = 12 on every core vertex. The earlier failures were forced by Steinberg's theorem (mirror-point orbits are achiral). The **tiling** obstruction (4019) stands and is the real foundation question; the **V−A maximality** question (4048) is now measurable on a dense 4D graph (TODO-4063-EW (1)). Read `series_standard_model/reasoning/4063.md`.
+>
 **Last updated:** 14 Sep 2026 (Patch 4001 — the 0945 registration renumbered `OPEN-EW-5` → `OPEN-EW-7`: it collided with the 23 March `OPEN-EW-5` in this same file. EW lane opened, block 4000–4099, G-EW-BLOCK-4000.) Earlier 13 Sep 2026 (Patch 0945 — the W mass-breakdown problem registered, from the founder's W⁰ ring ruling and the Patch 0944 bracelet harmonisation.) Earlier 23 March 2026
 
 ---
