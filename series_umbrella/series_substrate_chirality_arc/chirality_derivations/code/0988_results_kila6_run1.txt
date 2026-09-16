@@ -1,0 +1,9 @@
+# 0988 run 1 -- Kila6, 15 Sep 2026, script as committed at 0988 (delta passed as Python float; see 0989)
+delta=0.35 t=1.0 dps=30  min eig=-3.5216646e-15  2nd=2.5873382e-17  max=0.011059135  min p=0.00223809  secs=1096
+delta=0.35 t=1.0 dps=45  min eig=-3.5216646e-15  2nd=2.5873382e-17  max=0.011059135  min p=0.00223809  secs=1212
+delta=0.0 t=1.0 dps=30  min eig=1.8916735e-16  2nd=1.8916735e-16  max=0.0083333333  min p=0.00833333  secs=1124
+delta=0.1 t=1.0 dps=30  min eig=1.558124e-16  2nd=1.5584938e-16  max=0.008553908  min p=0.00594839  secs=1114
+delta=0.35 t=2.0 dps=30  min eig=-1.6433088e-15  2nd=-1.2294119e-15  max=0.011042717  min p=0.00223809  secs=1073
+delta=0.35 t=0.5 dps=30  min eig=3.1689435e-10  2nd=3.3966442e-10  max=0.011239998  min p=0.00223809  secs=1204
+delta=0.2 t=1.0 dps=30  min eig=9.4961178e-17  2nd=9.6175986e-17  max=0.0092175621  min p=0.00412456  secs=1120
+# VERDICT under the 0988 pre-committed rule: neither ZERO (|min| < 1e-24) nor NEGATIVE (min < -1e-12) -> "report, claim nothing".

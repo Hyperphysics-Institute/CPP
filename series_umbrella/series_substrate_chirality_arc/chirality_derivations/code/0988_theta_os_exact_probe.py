@@ -1,5 +1,26 @@
 #!/usr/bin/env python3
-"""0988 (chirality lane) -- EXACT-RATE Theta_OS PROBE on 4022's toy measure. TODO-0988-CHIR.
+"""0988/0989 (chirality lane) -- EXACT-RATE Theta_OS PROBE on 4022's toy measure. TODO-0988-CHIR.
+
+0989 REVISION (after run 1 on Kila6, results in 0988_results_kila6_run1.txt):
+  * delta and t are now parsed from STRINGS (mp.mpf("0.35") = 7/20 exactly). Run 1 passed Python
+    floats, so delta carried the binary value 0.35 - 2.2e-17. Hygiene, NOT the cause of run 1's
+    -3.5e-15: |d lambda_min / d delta| <= ||Pi|| 2t ||dQ/d delta|| ~ 0.25, so that input error moves
+    lambda_min by < 1e-17. The dps-30/45 invariance means the value was EXACTLY RESOLVED.
+  * Run 1 showed the 0988 thresholds were mis-sized: the spectrum's genuine tail is
+    ~ p_min * exp(-2 t lambda_max(Q)) ~ 1e-16 at t=1 (delta=0 returns exactly that), so a ZERO
+    criterion of 1e-24 and a NEGATIVE criterion of 1e-12 were both unreachable. Run 1 therefore
+    adjudicates as "report, claim nothing" under the 0988 rule, and that verdict STANDS for run 1.
+  * The script now prints the ARITHMETIC FLOOR per case: floor = max_eig * 10^(2 - dps).
+  * NEW PRE-COMMITTED RULE (0989, fixed before run 2):
+      NEGATIVE : lambda_min < -1e6 * floor at dps 30, AND lambda_min agrees to 6 significant digits
+                 across dps 30 / 45 / 60.
+      ZERO     : |lambda_min| < 1e3 * floor at every dps run.
+      else     : report, claim nothing.
+    Run 2 cases: (0.35, 1), (0.35, 2), (0.35, 0.75) at dps 30, 45, 60. Nine runs, ~20-40 min each.
+    A NEGATIVE verdict is a TOY result: the single-time OS pairing of the single-walker [PCD-EXT]
+    measure goes negative at large tilt and longer separation. It says nothing about H1 on the DSL
+    measure (VW-2 Thm A already needs detailed balance at delta=0) and moves no verdict.
+
 
 Question. 0983 computed the OS time-reflection pairing  S(t) = sym( Pi * exp(2 t Q) )  for the
 single-walker [PCD-EXT] generator on the 600-cell and found min eig S = -3.5e-15 at delta = 0.35,
@@ -56,7 +77,9 @@ def run(delta, t, dps):
         s = -1 if x < 0 else 1; a = abs(x)
         c = min(cands, key=lambda z: abs(float(z) - a)); assert abs(float(c) - a) < 1e-9; return s * c
     Vm = [[snap(x) for x in v] for v in V]
-    d = mp.mpf(delta); tt = mp.mpf(t)
+    d = mp.mpf(str(delta)); tt = mp.mpf(str(t))          # 0989: exact decimal, never a Python float
+    if str(delta) == "0.35": assert d == mp.mpf(7) / 20
+    if str(delta) == "0.75": assert d == mp.mpf(3) / 4
     Q = mp.zeros(N, N)
     for i, j in E:                       # n-hat = (1,0,0,0): the n-hat-FIXING sector of Theta = diag(1,1,1,-1)
         c = (Vm[j][0] - Vm[i][0]) / em
@@ -71,17 +94,20 @@ def run(delta, t, dps):
         for j in range(N): M[i, j] *= p[i]
     S = (M + M.T) / 2
     ev = sorted(mp.eigsy(S)[0][i] for i in range(N))
+    floor = ev[-1] * mp.mpf(10) ** (2 - dps)
     line = (f"delta={delta} t={t} dps={dps}  min eig={mp.nstr(ev[0], 8)}  2nd={mp.nstr(ev[1], 8)}  "
-            f"max={mp.nstr(ev[-1], 8)}  min p={mp.nstr(min(p), 6)}  secs={time.time() - t0:.0f}")
+            f"max={mp.nstr(ev[-1], 8)}  floor={mp.nstr(floor, 3)}  min/floor={mp.nstr(ev[0] / floor, 4)}  "
+            f"min p={mp.nstr(min(p), 6)}  secs={time.time() - t0:.0f}")
     print(line, flush=True)
     return line
 
 if __name__ == "__main__":
     if len(sys.argv) == 4:
-        run(float(sys.argv[1]), float(sys.argv[2]), int(sys.argv[3]))
+        run(sys.argv[1], sys.argv[2], int(sys.argv[3]))
     else:
-        cases = [(0.35, 1.0, 30), (0.35, 1.0, 45), (0.0, 1.0, 30), (0.10, 1.0, 30),
-                 (0.35, 2.0, 30), (0.35, 0.5, 30), (0.20, 1.0, 30)]
-        with open("0988_results.txt", "a") as f:
+        cases = [("0.35", "1", 30), ("0.35", "1", 45), ("0.35", "1", 60),
+                 ("0.35", "2", 30), ("0.35", "2", 45), ("0.35", "2", 60),
+                 ("0.35", "0.75", 30), ("0.35", "0.75", 45), ("0.35", "0.75", 60)]
+        with open("0989_results.txt", "a") as f:
             for c in cases:
                 f.write(run(*c) + "\n"); f.flush()

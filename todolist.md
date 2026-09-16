@@ -2272,7 +2272,9 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   current) would carry the time index VW needs. T-face. Scope before building. **Lane: CHIR.**
 - **(5) MOVED to TODO-0988-CHIR.**
 
-### TODO-0988-CHIR — Exact-rate Θ_OS probe: a Kila6 job (registered Patch 0988, chirality lane)
+### TODO-0988-CHIR — Exact-rate Θ_OS probe: a Kila6 job (registered Patch 0988, chirality lane; RUN 1 DONE, RUN 2 OWED at 0989)
+
+> **0989 status.** Run 1 (seven cases, Kila6, 15 Sep) filed in `code/0988_results_kila6_run1.txt`; verdict under the 0988 rule: **claim nothing** (thresholds were mis-sized against the spectrum's ~10⁻¹⁶ tail — my error). Value at (0.35, 1): −3.52×10⁻¹⁵, identical at dps 30/45, i.e. exactly resolved; the float-input error in δ (2×10⁻¹⁷) cannot account for it (slope bound ≈ 0.25). **RUN 2 OWED (founder, mechanical, Kila6):** script revised (string inputs, exact-δ assert, floor printed) and a corrected rule pre-committed in its docstring — NEGATIVE if λ_min < −10⁶·floor and 6-digit-stable across dps 30/45/60; ZERO if |λ_min| < 10³·floor. Nine cases, ~20–40 min each: `cd ~/Documents/GitHub/CPP/series_umbrella/series_substrate_chirality_arc/chirality_derivations/code && python 0988_theta_os_exact_probe.py` → `0989_results.txt`. Paste into a CHIR window. Either outcome is a toy result and moves no verdict. **Lane: CHIR.**
 
 - **What.** `chirality_derivations/code/0988_theta_os_exact_probe.py` — the OS time-reflection pairing on 4022's
   single-walker [PCD-EXT] toy measure, with rates built exactly in Q[φ] at 30 and 45 digits. Settles whether
