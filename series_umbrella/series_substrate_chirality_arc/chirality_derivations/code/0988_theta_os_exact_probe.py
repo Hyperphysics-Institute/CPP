@@ -17,6 +17,10 @@
       ZERO     : |lambda_min| < 1e3 * floor at every dps run.
       else     : report, claim nothing.
     Run 2 cases: (0.35, 1), (0.35, 2), (0.35, 0.75) at dps 30, 45, 60. Nine runs, ~20-40 min each.
+  * RUN 2 RESULT (0991): NEGATIVE at (0.35,1) and (0.35,2), 8-digit stable across 30/45/60 digits,
+    |min/floor| ~ 1e15; resolved POSITIVE at (0.35, 0.75). See 0989_results_kila6_run2.txt. (Filed at 0991, the slot reserved for it.)
+  * RUN 3 (0991, rule unchanged): delta = phi^-3 (the physical bias, 0966) at t = 1, 2, 4; plus 0.25
+    and 0.30 at t = 1 to bracket the sign change. Token "phi-3" is exact in Q[phi]. Eight runs.
     A NEGATIVE verdict is a TOY result: the single-time OS pairing of the single-walker [PCD-EXT]
     measure goes negative at large tilt and longer separation. It says nothing about H1 on the DSL
     measure (VW-2 Thm A already needs detailed balance at delta=0) and moves no verdict.
@@ -77,7 +81,8 @@ def run(delta, t, dps):
         s = -1 if x < 0 else 1; a = abs(x)
         c = min(cands, key=lambda z: abs(float(z) - a)); assert abs(float(c) - a) < 1e-9; return s * c
     Vm = [[snap(x) for x in v] for v in V]
-    d = mp.mpf(str(delta)); tt = mp.mpf(str(t))          # 0989: exact decimal, never a Python float
+    # 0991: delta may be the token 'phi-3' = phi^-3 (the registered physical bias, 0966) -- exact in Q[phi]
+    d = (1 / ph) ** 3 if str(delta) == 'phi-3' else mp.mpf(str(delta)); tt = mp.mpf(str(t))
     if str(delta) == "0.35": assert d == mp.mpf(7) / 20
     if str(delta) == "0.75": assert d == mp.mpf(3) / 4
     Q = mp.zeros(N, N)
@@ -105,9 +110,10 @@ if __name__ == "__main__":
     if len(sys.argv) == 4:
         run(sys.argv[1], sys.argv[2], int(sys.argv[3]))
     else:
-        cases = [("0.35", "1", 30), ("0.35", "1", 45), ("0.35", "1", 60),
-                 ("0.35", "2", 30), ("0.35", "2", 45), ("0.35", "2", 60),
-                 ("0.35", "0.75", 30), ("0.35", "0.75", 45), ("0.35", "0.75", 60)]
-        with open("0989_results.txt", "a") as f:
+        # 0991 RUN 3 (rule unchanged from 0989): the PHYSICAL bias delta = phi^-3 ~ 0.236, which sits between
+        # run 1's positive delta=0.2 and negative delta=0.35 at t=1. Results to 0991_results.txt.
+        cases = [("phi-3", "1", 30), ("phi-3", "1", 45), ("phi-3", "2", 30), ("phi-3", "2", 45),
+                 ("phi-3", "4", 30), ("phi-3", "4", 45), ("0.25", "1", 30), ("0.30", "1", 30)]
+        with open("0991_results.txt", "a") as f:
             for c in cases:
                 f.write(run(*c) + "\n"); f.flush()

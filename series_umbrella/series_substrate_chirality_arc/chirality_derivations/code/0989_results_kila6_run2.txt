@@ -1,0 +1,15 @@
+# 0989 run 2 -- Kila6, 15-16 Sep 2026, script as revised at 0989 (delta exact = 7/20; floor = max*10^(2-dps))
+delta=0.35 t=1 dps=30  min eig=-3.5216646e-15  2nd=2.5873382e-17  max=0.011059135  floor=1.11e-30  min/floor=-3.184e+15  min p=0.00223809  secs=1084
+delta=0.35 t=1 dps=45  min eig=-3.5216646e-15  2nd=2.5873382e-17  max=0.011059135  floor=1.11e-45  min/floor=-3.184e+30  min p=0.00223809  secs=1199
+delta=0.35 t=1 dps=60  min eig=-3.5216646e-15  2nd=2.5873382e-17  max=0.011059135  floor=1.11e-60  min/floor=-3.184e+45  min p=0.00223809  secs=1228
+delta=0.35 t=2 dps=30  min eig=-1.6433088e-15  2nd=-1.2294119e-15  max=0.011042717  floor=1.1e-30  min/floor=-1.488e+15  min p=0.00223809  secs=1055
+delta=0.35 t=2 dps=45  min eig=-1.6433088e-15  2nd=-1.2294119e-15  max=0.011042717  floor=1.1e-45  min/floor=-1.488e+30  min p=0.00223809  secs=1118
+delta=0.35 t=2 dps=60  min eig=-1.6433088e-15  2nd=-1.2294119e-15  max=0.011042717  floor=1.1e-60  min/floor=-1.488e+45  min p=0.00223809  secs=1162
+delta=0.35 t=0.75 dps=30  min eig=1.0250093e-13  2nd=1.0935416e-13  max=0.011098856  floor=1.11e-30  min/floor=9.235e+16  min p=0.00223809  secs=1144
+delta=0.35 t=0.75 dps=45  min eig=1.0250093e-13  2nd=1.0935416e-13  max=0.011098856  floor=1.11e-45  min/floor=9.235e+31  min p=0.00223809  secs=1252
+delta=0.35 t=0.75 dps=60  min eig=1.0250093e-13  2nd=1.0935416e-13  max=0.011098856  floor=1.11e-60  min/floor=9.235e+46  min p=0.00223809  secs=1277
+# VERDICT under the 0989 pre-committed rule:
+#   (0.35, 1): NEGATIVE  (min/floor = -3.2e15 < -1e6; 8-digit stable across dps 30/45/60)
+#   (0.35, 2): NEGATIVE  (min/floor = -1.5e15 < -1e6; 8-digit stable; two negative directions)
+#   (0.35, 0.75): resolved POSITIVE (min/floor = +9.2e16; not ZERO, not NEGATIVE)
+# Exact delta = 7/20 reproduces the float-delta run 1 to all 8 printed digits: the 0989 slope-bound refutation of the contamination reading is confirmed empirically.
