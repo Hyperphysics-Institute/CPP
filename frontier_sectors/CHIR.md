@@ -8,6 +8,8 @@
   Master dashboard: research_frontier.md
 -->
 
+> **NOTICE (Patch 0993, 16 Sep 2026).** **VW-a-4 REFUTED on the single-walker Mechanism-A measure ([PCD-EXT], 4022/0694)** at every tested δ ≠ 0 (0.05, 0.1, φ⁻³, 0.35): VW-2's OS pairing is Hermitian (⟨Θ_OS(Ā)A⟩ = ⟨A,TA⟩_π), non-reversibility makes it non-real, and an exhaustive search over H4 finds no internal involution that restores it. So "RP ≠ T-symmetry" (0685/0983) is discharged *empty* on this measure. **H1 on the full DSL measure stays OPEN ⟺ VW-a-4**, now requiring an internal involution that reverses TARROW-2's current while preserving the measure — none on file. 0991's NEGATIVE stands under its rule; its object (real-symmetric part) was a weaker necessary condition. Run 3 withdrawn. **No verdict moved** (V3/V1 rest on CAPACITY-1). Read `chirality_derivations/reasoning/0993.md`.
+>
 > **NOTICE (Patches 0983/0984, 15 Sep 2026).** H1 (VW-1) is **OPEN ⟺ VW-a-4**, not refuted (the 4022–4062 EW arc tested the spatial parity, not VW-2's Θ_OS). **And the VW route H1 ⇒ μ² > 0 needs an unstated hypothesis H1′ (η's Euclidean source is a phase) that FAILS for a real equal-time pseudoscalar of a classical Markov measure** — Jensen reverses the Vafa–Witten inequality. V3 / V1 rest on CAPACITY-1 and are unmoved. VW-1 v1.2 corrigendum owed (TODO-0984-CHIR). Read `chirality_derivations/reasoning/0983.md` and `0984.md` before citing VW-1 Thm 6.1 (ii) for capacity.
 
 

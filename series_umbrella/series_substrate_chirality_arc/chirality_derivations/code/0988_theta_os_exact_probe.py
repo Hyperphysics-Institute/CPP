@@ -19,6 +19,9 @@
     Run 2 cases: (0.35, 1), (0.35, 2), (0.35, 0.75) at dps 30, 45, 60. Nine runs, ~20-40 min each.
   * RUN 2 RESULT (0991): NEGATIVE at (0.35,1) and (0.35,2), 8-digit stable across 30/45/60 digits,
     |min/floor| ~ 1e15; resolved POSITIVE at (0.35, 0.75). See 0989_results_kila6_run2.txt. (Filed at 0991, the slot reserved for it.)
+  * RUN 3 WITHDRAWN AT 0993 -- DO NOT RUN. VW-a-4 at the physical bias is decided without it: the Hermitian
+    OS pairing fails at every tested delta != 0 and no H4 involution rescues it (code/0993_theta_os_hermitian_exhaustive.py).
+    The real-symmetric sign this script computes is consumed by no theorem. Original run-3 text follows.
   * RUN 3 (0991, rule unchanged): delta = phi^-3 (the physical bias, 0966) at t = 1, 2, 4; plus 0.25
     and 0.30 at t = 1 to bracket the sign change. Token "phi-3" is exact in Q[phi]. Eight runs.
     A NEGATIVE verdict is a TOY result: the single-time OS pairing of the single-walker [PCD-EXT]
