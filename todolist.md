@@ -2268,7 +2268,8 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
   *no sign problem* clause marked as automatic for a stochastic substrate. Panel only if (1) makes it a win or a
   stall (review economy). Then `paper_regeneration_ledger.md`. **Lane: CHIR.**
 - **(3) CLEARED at 0987** — notice written at the head of TODO-4059-EW: the contingency is CAPACITY-1's conditions, not H1.
-- **(4) Candidate escape, NOT built (D-3):** a P-odd AND Moment-odd order parameter (η × TARROW-2's O(δ³)
+- **(4) CLEARED at 0992** — escape is not a route: the VW positivity bound is free for any classical measure (C1); a Moment-odd composite acquires a phase only via OS reconstruction, which needs detailed balance, under which ⟨K⟩ = 0 exactly (C3); at δ ≠ 0 the composite is explicitly sourced and Thm A is gone; and a bound on K does not reach sign(μ²) of η (1100). 0985 and VW-1 v1.5 stand; no CONV round (review economy). Convenient branch, marked in `reasoning/0992.md`.
+- (original text of (4) retained:) **Candidate escape, NOT built (D-3):** a P-odd AND Moment-odd order parameter (η × TARROW-2's O(δ³)
   current) would carry the time index VW needs. T-face. Scope before building. **Lane: CHIR.**
 - **(5) MOVED to TODO-0988-CHIR.**
 
