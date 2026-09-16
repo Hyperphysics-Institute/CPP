@@ -1984,6 +1984,18 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4073-EW — axiom maturation step 2: founder answers in; three locations for the axiom (registered Patch 4073, EW lane)
+
+- **FILED:** founder answers to Q1–Q3 (verbatim, maturation doc §2c). **F9 RESOLVED** (antiparticle = opposite polarity, nothing else reverses). **Q1/Q2 RESOLVED negative** (no second plane; any spin pole or second plane is an axiomatic addition).
+- **CORRECTION:** 4072 said χ "adds no attribute"; **wrong** — it adds a variable. Corrected in the doc.
+- **ESTABLISHED:** S1 composites confined to 3-space are never handed (B∧B ≡ 0 for any sum; **conditional on F1a**). S2 handedness = B∧B = 2 e·ω, a helicity-shaped rotation into the 4th axis (3.6e-15). S3 H4⁺ already split into left/right isoclinic factors (±0.789568, swapped by conjugation). `code/4073_composites_substrate_split_axiom_locations.py`, `reasoning/4073.md`.
+- **THE DECISION RESTRUCTURED — three locations (doc §2e):** L1 new chirality label; L2 rotation into the 4th axis (founder's "spin pole"); **L3 a rule selecting one of H4⁺'s existing factors — no new variable**. Claude's ranking L3 → L2 → L1, with L3's failure mode (single-use) attached.
+- **(1) NEXT, Claude — F1a:** resolve from the corpus how n̂ relates to physical 3-space. Decides S1 and every parity claim in the arc. **Lane: EW.**
+- **(2) Claude — F8 for L3:** can a left-factor rule be stated once and reach K3 Δp_LR and baryogenesis, or does it need a separate rule per sector? Decides L3 vs L2. **Lane: EW/SM.**
+- **(3) Founder, later:** choose L1/L2/L3 once (1) and (2) are done. Not asked yet. **Lane: EW (founder).**
+
+---
+
 ### TODO-4072-EW — chirality axiom maturation (registered Patch 4072, EW lane; living document)
 
 - **WORKING OBJECT:** `series_standard_model/axiom_maturation/chirality_axiom_maturation.md`. Founder direction: mature the axiom fully *before* any panel. Its §6 readiness criteria are the gate. No AP number minted. **Lane: EW.**

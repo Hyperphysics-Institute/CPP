@@ -39,6 +39,48 @@ B∧B (the Pfaffian):
 B∧B is invariant under every proper rotation (1.4×10⁻¹⁴) and flips exactly under every reflection. **A single
 double rotation is a genuine P-odd object**, native to a theory whose CPs already rotate (the ZBW).
 
+## 2c. Founder answers (16 Sep 2026, verbatim, filed at 4073)
+
+> *"I don't know the answer to 1 and 2. That would be an axiomatic declaration.*
+> *3) the CP antiparticles have been defined exactly as you describe. If there is an additional reversal, such as a spin, that would be axiomatic, and is not defined by CPP.*
+> *1) there is no second parameter to be turning other than if it had a spin direction/pole, which would be an axiomatic addition.*
+> *2) There is no known second plane of rotation, and no second parameter to be rotating in. This is an axiomatic addition to add an additional variable, such as spin."*
+
+**Consequences.** **F9 RESOLVED** — a CPP antiparticle is the same CP with opposite polarity, and nothing else
+reverses. **Q1/Q2 RESOLVED** — a CP has no second plane or second rotating parameter; any such thing is an
+axiomatic addition.
+
+**CORRECTION to §3 as drafted at 4072.** χ was described as "adds no attribute; specifies the existing ZBW." The
+founder's answers show the ZBW has no second plane to specify. **χ adds a variable.** It is not native; it is one
+instance of location L2 below.
+
+## 2d. What composites can and cannot do (established at 4073, S1 conditional on F1a)
+
+- **S1 — composites confined to 3-space are never handed.** B∧B is a 4-form and needs all four dimensions. Any
+  rotation *or any sum of rotations* — any number of orbits, captured DPs, colour planes — confined to a
+  3-dimensional subspace has B∧B ≡ 0 (verified exactly, up to five superposed rotations). SPIN-1's captured-DP
+  orbit, the ZBW transverse plane and the qDP colour planes therefore cannot supply handedness **if** they all lie
+  in the 3-space perpendicular to n̂. *Conditional on F1a.*
+- **S2 — handedness needs a rotation into the fourth axis, and it is helicity-shaped.** Writing B = n̂∧e + b,
+  B∧B = 2 e·ω exactly (3.6×10⁻¹⁵), where ω is the 3D spin axis of b and e the partner of a rotation in a plane
+  containing n̂. The pseudoscalar is the alignment of a spin axis with a fourth-axis rotation.
+- **S3 — the substrate's symmetry already contains both hands.** The 600-cell's vertices are the unit
+  quaternions of 2I; left and right quaternion multiplication each preserve the 600-cell, carry opposite
+  duality (B∧B = ±0.789568), and are exchanged by conjugation (det −1). H4⁺ = (2I × 2I)/ℤ₂ is split into a left
+  and a right factor, and nothing in the axioms prefers either.
+
+## 2e. Where the axiom can live — three locations (the real decision)
+
+| | location | what it adds | strength | risk |
+|---|---|---|---|---|
+| **L1** | a primitive chirality label on each CP (like polarity) | a new binary variable | minimal, clean | no geometric content; the PD-007 "added attribute" concern |
+| **L2** | a rotation into the fourth axis (founder's "spin direction/pole"; χ is an instance) | a new rotational variable | pseudoscalar is naturally a helicity (S2), which is what the weak force selects | heaviest; must be shown not to enter EM (F2) |
+| **L3** | a rule selecting one of H4⁺'s two existing factors — e.g. the W⁰ catalytic step acts by left-isoclinic transformation only | **no new variable**; a law, not an attribute | matches the Standard Model, where chirality lives in the *coupling*, not in a particle property; uses a split already in the substrate (S3) | may be W-specific ⇒ must be shown to reach K3 Δp_LR and baryogenesis, or it fails F8 |
+
+**Claude's recommendation (PD-006): explore L3 first, L2 second, L1 last.** L3 adds no variable, which the
+founder's answers make the heaviest kind of addition; it puts chirality where the Standard Model puts it; and it
+uses structure the 600-cell already has. Its specific danger is single-use, and F8 is the test that decides it.
+
 ## 3. The candidate axiom (leading form)
 
 > **Axiom candidate χ (draft).** The ZBW of a Conscious Point is a *double* rotation — circulation in two
@@ -65,7 +107,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 | # | filter | source | χ status |
 |---|---|---|---|
 | F1 | P-odd under **physical** parity | definition | passes (2b) — *pending F1a* |
-| F1a | physical parity defined precisely in CPP's 4D setting | open | **UNDEFINED — must fix first** |
+| F1a | physical parity defined precisely in CPP's 4D setting — incl. where physical 3-space sits relative to n̂ | open | **UNDEFINED — blocking; S1 depends on it** |
 | F2 | EM stays P-even | 4069/4070, experiment | must show the double rotation does not enter the EM force law |
 | F3 | strong interaction stays P-even | experiment | untested |
 | F4 | weak: P and C maximal, CP ≈ conserved | experiment | pattern passes (§3); **maximality** not shown |
@@ -73,23 +115,23 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 | F6 | CPT exact | theorem | untested |
 | F7 | no new tunable parameter | PD-007 | passes in form (duality is binary) |
 | F8 | load-bearing in ≥ 3 disjoint sectors | PD-007, 4071 | targets named (K3 Δp_LR, W V−A, baryogenesis); none derived |
-| F9 | antiparticle = opposite polarity in CPP | must verify against A1′ | **UNVERIFIED — §3's CP argument depends on it** |
+| F9 | antiparticle = opposite polarity in CPP | founder 16 Sep | **RESOLVED (4073)** — confirmed, nothing else reverses |
 
 ## 5. Physics questions for the founder (picture form)
 
-- **Q1.** When a CP performs its ZBW, does it circulate in *one* plane only, or is there simultaneously a
+- **Q1 — ANSWERED 4073 (see 2c).** When a CP performs its ZBW, does it circulate in *one* plane only, or is there simultaneously a
   circulation in a second plane at right angles to the first — so that the CP is turning in two ways at once?
-- **Q2.** If two, do a positive and a negative CP turn the same way in the second plane relative to the first,
+- **Q2 — ANSWERED 4073.** If two, do a positive and a negative CP turn the same way in the second plane relative to the first,
   or opposite ways?
-- **Q3.** Is the antiparticle of a CP simply the same CP with opposite polarity, or is more reversed than that?
+- **Q3 — ANSWERED 4073.** Is the antiparticle of a CP simply the same CP with opposite polarity, or is more reversed than that?
 
 ## 6. Readiness criteria for the panel (all must hold)
 
 1. F1a resolved (physical parity defined).
-2. Q1–Q3 answered by the founder, or the axiom restated to depend on no answer.
+2. ~~Q1–Q3 answered~~ **DONE 4073.** Location chosen among L1/L2/L3 (§2e), by the founder, on a matured comparison.
 3. F2 and F3 shown (the axiom leaves EM and strong P-even), not assumed.
 4. At least one of the three F8 targets derived far enough to show a non-trivial number or sign.
-5. F9 verified.
+5. ~~F9 verified~~ **DONE 4073.**
 6. Falsifiers written (§7).
 
 ## 7. Falsifiers (draft)
@@ -101,6 +143,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4073** — founder answers filed (2c); F9 resolved; §3's "native" claim corrected (χ adds a variable); S1 (3-space composites never handed, conditional on F1a), S2 (handedness = helicity-shaped rotation into the 4th axis), S3 (H4⁺ already split into left/right factors) established; three axiom locations L1/L2/L3 laid out with recommendation L3 → L2 → L1.
 - **4072** — document opened; 2a (n̂ vs −n̂ is not a chirality in ℝ⁴) and 2b (a double rotation carries a
   pseudoscalar; simple rotation does not) established; candidate χ drafted; filters, founder questions,
   readiness criteria and falsifiers written.
