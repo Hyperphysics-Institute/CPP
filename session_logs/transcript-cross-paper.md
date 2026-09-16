@@ -29,3 +29,10 @@ Created at Patch 0974a (Step B of the Session 228 close). **Its absence until th
 - `021` 2026-09-14 Session 229 Session 228 Step C — vignettes filed by subject, not by session → `.../chirality_derivations/documentation_suite/development-chirality-derivations.md`
 - `022` 2026-09-14 Session 229 Step D declared unrecoverable, then superseded by 0975b's in-window capture → `.../chirality_derivations/reasoning/0977.md`
 - `023` 2026-09-14 Session 229 0975b's counts corrected; 0974a's exemption overturned → `.../chirality_derivations/reasoning/0979.md`
+- `024` 2026-09-15 Session 231 4062 (EW) — PD-008 critique: fixed total ⇒ −1/K anticorrelation; spatial Gram fails at δ = 0 too → `series_standard_model/reasoning/4062.md`
+- `025` 2026-09-15 Session 231 H1 audit — the 4022–4062 arc tested the spatial parity, not VW-2's Θ_OS; H1 OPEN ⟺ VW-a-4; four bookkeeping carriers, no theorem/scoping file → `.../chirality_derivations/reasoning/0983.md`, `code/0983_h1_reflection_audit.py`
+- `026` 2026-09-15 Session 231 VW route inapplicable — Thm 6.1 (ii) needs an unstated phase-source hypothesis H1′; Jensen reverses the VW inequality for a real equal-time pseudoscalar → `.../chirality_derivations/reasoning/0984.md`, `code/0984_vw_source_is_real.py`
+- `027` 2026-09-15 Session 231 0984 attacked and stands; VW-1 v1.5 corrigendum (H1′ in Thm 6.1 (ii), Thm 7.1, Rmk 6.3); recompile owed → `.../chirality_derivations/reasoning/0985.md`, `theo_chir_vw_1.tex`
+- `028` 2026-09-15 Session 231 CAPACITY-1 piece-1 conditionality qualified "on perturbed configurations" → `.../chirality_derivations/reasoning/0986.md`, `frontier_sectors/CHIR.md`
+- `029` 2026-09-15 Session 231 SF-2 notice — δ_CP contingency is CAPACITY-1's conditions, not H1; 4022 erratum line → `todolist.md` (TODO-4059-EW head), `series_standard_model/reasoning/4022.md`
+- `030` 2026-09-15 Session 231 Θ_OS exact-rate probe committed; run 1 (Kila6) adjudicated "claim nothing" under its own mis-sized rule; float-contamination reading refuted; run 2 rule pre-committed → `.../chirality_derivations/reasoning/0988.md`, `0989.md`, `code/0988_results_kila6_run1.txt`

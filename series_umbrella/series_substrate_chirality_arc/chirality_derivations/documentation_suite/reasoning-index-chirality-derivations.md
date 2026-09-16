@@ -148,3 +148,25 @@ wrapper heuristic: 0976 looks like transcription, 0977 like documentation, 0979 
 contained a finding. That the misclassification is easy to make from inside is the reason Step E′ demands an
 explicit per-patch list rather than a judgement.
 
+
+## Session 231 — Patches 0983–0990 (15 Sep 2026): H1 audit, VW-1 corrigendum, Θ_OS probe
+
+*Written at Patch 0990, in the window that produced the patches.*
+
+**Step E′ audit, scope test by content:**
+
+| patch | ships | finding? | verdict |
+|---|---|---|---|
+| **4062** (EW) | script | yes — −1/K anticorrelation from a fixed total | **CAPTURED** → `series_standard_model/reasoning/4062.md` |
+| **0983** | script | yes — the arc tested the spatial parity, not Θ_OS | **CAPTURED** → `reasoning/0983.md` |
+| **0984** | script | yes — VW needs a phase source; Jensen reverses it | **CAPTURED** → `reasoning/0984.md` |
+| **0985** | `.tex` edit | yes — the CONT-1 escape is not the corpus's reading | **CAPTURED** → `reasoning/0985.md` |
+| **0986** | — | text fix; finding is 4023's | **EXEMPT**, fragment written anyway → `reasoning/0986.md` |
+| 0987 | — | two notices, no finding of its own | **EXEMPT** |
+| **0988** | script | — | **GAP at patch; FILLED at 0990** → `reasoning/0988.md` |
+| **0989** | script revision, results file | yes — thresholds mis-sized; contamination refuted by slope bound | **CAPTURED** → `reasoning/0989.md` |
+| **0990** | — | session close | **EXEMPT** |
+
+**One gap, filled in-window.** 0988 shipped a script and I did not write its fragment at patch; the
+founder's question about the todolist was the whole content of that patch and I treated the patch as
+bookkeeping. Scope test by content: a script disqualifies the exemption.

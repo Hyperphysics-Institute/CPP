@@ -5,6 +5,15 @@ Patch history of the chirality-derivations sub-corpus. Newest first. Version his
 
 ---
 
+**Patches 0983–0990 (Session 231, 15 Sep 2026) — H1 audit; VW-1 v1.5 corrigendum; Θ_OS probe.**
+0983: the EW arc 4022–4062 tested the spatial parity, not VW-2's Θ_OS; H1 OPEN ⟺ VW-a-4, neither refuted
+nor conditionally restored; four EW bookkeeping carriers corrected. 0984: VW-1 Thm 6.1 (ii) consumes an
+unstated phase-source hypothesis H1′ that fails for a real equal-time pseudoscalar (Jensen reverses the
+bound); VW route inapplicable as posed. 0985: `theo_chir_vw_1.tex` → **v1.5** (H1′ added; Rmk 6.3;
+recompile owed). 0986: CAPACITY-1 piece-1 qualified "on perturbed configurations." 0987: 4022 erratum;
+SF-2 notice. 0988/0989: `code/0988_theta_os_exact_probe.py`; Kila6 run 1 filed; "claim nothing" under a
+mis-sized pre-committed rule; corrected rule pre-committed for run 2. 0990: session close. No verdict moved.
+
 **Patch 0670 (Session 151, 30 May 2026) — cross-sector hygiene.**
 Corrected the stale OPEN-SM-4 one-line in `frontier_sectors/SM.md` (χ "≈ φ⁻¹" → φ⁻³) — the
 documentation root cause of the apparent χ tension and of BRIDGE-1 falsifier B4. Isolated from

@@ -341,3 +341,33 @@ chain` on purpose, gated on `OPEN-EW-5`: it is the only place a published SM-2 n
 applying it now would assert a pure relabel that may be false. Edits (a)–(f) are independent of it.
 
 **PDF recompiles remain owed** (`TODO-0976-RECOMPILE`), founder-mechanical.
+
+## H1 and the Vafa–Witten route (Session 231, Patches 0983–0985, 15 Sep 2026)
+
+The EW lane had spent forty patches on H1 and closed with it refuted (4056/4057) and then, in an
+unpushed critique, conditionally restored (4062). The CHIR audit those patches owed turned out to be a
+reading question before it was a classification one. VW-2 v1.1 defines H1 as Osterwalder–Schrader
+positivity for the Euclidean time-reflection, equivalent to VW-a-4, and its bridge remark records that
+its own v1.0 had conflated that reflection with the spatial parity and withdrawn the conflation. The EW
+arc, opening at 4022 with Θ = diag(1,1,1,−1) on the single-time occupation law, tested exactly the
+withdrawn reading throughout. Neither the refutation nor the restoration is a statement about H1, which
+stands where VW-2 left it: open, with the δ = 0 base case proved from detailed balance. Only four EW
+bookkeeping files had absorbed the wrong status; none of the theorem sources or scoping documents had.
+
+Attacking that result produced a larger one. The Vafa–Witten bound is |∫dμ e^{iλO}| ≤ ∫dμ, and it needs
+the parity-odd source to be a phase — in Vafa–Witten's setting a Lorentz-invariant pseudoscalar carries
+a time index and Wick rotation supplies the i. On the substrate the Moment is time, η is a real
+pseudoscalar of the 4D ambient space at fixed Moment, its source is real, and Jensen gives the opposite
+inequality: the symmetric point maximises Z. Definition 2.1's "no sign problem" clause, automatic for a
+probability measure, carries nothing. VW-1 v1.1's review had folded "the measure-class transposition"
+into H1's scope; isolated, that step does not go through. The route H1 ⇒ μ² > 0 is inapplicable as
+posed, whatever H1's truth value. V3 confirmed / V1 excluded rest on CAPACITY-1 and do not move. VW-1
+carries a v1.5 corrigendum stating the missing hypothesis H1′; the one escape — a P-odd and Moment-odd
+order parameter carrying the time index — is named and not built.
+
+The exact-rate probe of the Θ_OS pairing on the single-walker toy returned λ_min = −3.5×10⁻¹⁵ at
+δ = 0.35, t = 1, identical at 30 and 45 digits and seventeen orders above the arithmetic floor, against a
+genuine spectral tail of ~10⁻¹⁶. Under the rule pre-committed before the run it adjudicates as "claim
+nothing," because the rule's thresholds had been sized before the tail scale was known. The rule was
+corrected and re-committed before a second run; a confirmed negative would be a toy result — a
+non-reversible chain's single-time pairing going negative at large tilt — and moves no verdict.
