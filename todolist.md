@@ -1984,6 +1984,21 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4072-EW — chirality axiom maturation (registered Patch 4072, EW lane; living document)
+
+- **WORKING OBJECT:** `series_standard_model/axiom_maturation/chirality_axiom_maturation.md`. Founder direction: mature the axiom fully *before* any panel. Its §6 readiness criteria are the gate. No AP number minted. **Lane: EW.**
+- **ESTABLISHED at 4072:** (a) **n̂ vs −n̂ is not a chirality in ℝ⁴** — det(−I₄) = +1 and −I₄ ∈ H4⁺, so the two are congruent by rotation; FI-C-9 *as worded* in CAP-1 scope R1 names no chirality (V3 unaffected — it concerns spontaneous breaking). (b) **A double rotation carries a pseudoscalar, a simple one does not** — B∧B ≡ 0 for one plane (1.8e-15); ±2 for isoclinic SD/ASD; proper-invariant, reflection-odd. 4071's four-directions threshold is right for vectors; its *minimal-form conclusion* missed the bivector route. `code/4072_what_can_carry_handedness.py`, `reasoning/4072.md`.
+- **CANDIDATE χ (draft):** the ZBW is a *double* rotation whose relative sense (SD/ASD) is fixed by polarity. Adds no attribute; specifies the existing ZBW. Truth table gives P violated, C violated, CP conserved — the weak pattern *by form*, not derived; predicts CP *exactly* conserved (nature: small violation), so a second source is owed.
+- **(1) FOUNDER QUESTIONS (picture form) — Q1–Q3 in the maturation doc §5:** Q1 does the ZBW circulate in one plane or two at once? Q2 if two, do + and − CPs turn the same or opposite way in the second plane? Q3 is a CP's antiparticle just opposite polarity? **Lane: EW (founder).**
+- **(2) BLOCKING — F1a: define physical parity in CPP's 4D setting.** Every P-odd claim in this arc (4046–4072) used Θ-type reflections as a proxy. Claude, next. **Lane: EW.**
+- **(3) BLOCKING — F9: verify CPP antiparticle = polarity-reversed CP** against A1′ and the corpus. χ's CP argument depends on it. Claude, next. **Lane: EW.**
+- **(4) F2/F3:** show the second ZBW plane does not enter the EM or strong force laws (else χ makes them P-odd — excluded). **Lane: EW.**
+- **(5) F5:** test sign(δ) as the small-CP-violation source via CPT. **Lane: EW.**
+- **(6) F8:** derive one of K3 Δp_LR / W V−A / baryogenesis under χ far enough to give a non-trivial sign or number. **Lane: SM/EW.**
+- **(7) NUMBERING NOTE:** `next_id.py` counts the frontier "Next patch: N" pointer as a reservation, so its "NEXT FREE" reads N+1. Claim the pointer number itself. This fully explains the unused 4065 and 4067. No tool bug. **Lane: EW (recorded).**
+
+---
+
 ### TODO-4071-EW — the P-odd search is exhausted; a P-odd axiom is required and is NOT single-use (registered Patch 4071, EW lane)
 
 - **CLOSED at 4071 — internal CP/DP structure does not avoid an axiom, it IS one.** Counting theorem: in R⁴ the only P-odd scalar from vectors is det[a,b,c,d], so a CP needs **≥ 4 independent internal directions** to carry any P-odd quantity. Verified: k = 1, 2, 3 give pseudoscalar **identically zero** (20,000 draws each); k = 4 gives 6.95e+01, flipping exactly under reflection. Polarity scalars (±) are P-even and cannot help. **This rederives 4046 generally** — n̂ fails because one vector is three short, not by luck. And lattice-derived quadruples give **80 positive / 80 negative**, ensemble sum −2.8e-17: the 600-cell supplies magnitude but **no net sign**. `code/4071_internal_cp_structure_needs_four_directions.py`, `reasoning/4071.md`.
