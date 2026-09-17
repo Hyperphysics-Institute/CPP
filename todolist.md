@@ -1984,6 +1984,20 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4075-EW — axiom maturation step 4: χ₄ passes F2 conditionally (registered Patch 4075, EW lane)
+
+- **RECORD CHECK:** SF-6 never specifies whether the DP displacement is 3D or includes the 4th axis — F2 is a requirement χ₄ imposes, not a lookup.
+- **ESTABLISHED:** χ₄'s hand lives entirely in the 4th-axis component (3D remainder ∝ cos sθ, even; 4th-axis part ∝ sin sθ, odd). **Reading A** (EM reads 3-space only): identical fields for both hands, E·B = 1.3e-14 — parity-even, compatible. **Reading B** (4D proximity feedback): E·B = 95.7, flips with hand at −1.0000 — parity-odd, excluded. **F2 passes iff EM reads the 4th axis only through even functions.** `code/4075_chi4_em_parity_filter.py`, `reasoning/4075.md`.
+- **REQUIREMENT χ₄ IMPOSES (not a result):** EM reads 3-space; the handed process reads the 4th axis linearly. Would explain why only the weak interaction violates parity *if* the W⁰ step is shown to read the 4th axis (F8).
+- **ERROR CAUGHT IN-PATCH (sixth in arc):** first Reading-B run built B = v × E from the modified field, forcing E·B = 0 by construction while the fields differed by 5.7 — a blind control. Fixed by building B from the source's motion. Recorded in the fragment.
+- **(1) NEXT, Claude — does any shipped SF-6 result use the 4th-axis component of the displacement linearly?** If none, Reading A is free to adopt; if one, χ₄ fails F2. **Lane: EW/SF-6.**
+- **(2) Founder, when ready (not asked yet):** accept "EM reads 3-space; the weak step reads the 4th axis" as part of χ₄'s package? **Lane: EW (founder).**
+- **(3) Claude — F8** (does χ₄ reach K3 Δp_LR, W V−A, baryogenesis) and **F3** (strong stays P-even). Unchanged. **Lane: EW/SM.**
+- **(4) P-even side effect to track:** Reading A scales the 3D field by cos θ for both hands; a varying θ could be observable. **Lane: EW.**
+- TODO-4074-EW item (1) is discharged by this entry.
+
+---
+
 ### TODO-4074-EW — axiom maturation step 3: the fourth axis is the carrier; L2 and L3 merge into χ₄ (registered Patch 4074, EW lane)
 
 - **FILED:** founder ruling on the fourth axis (verbatim, maturation doc §2f). Record check: confirmed the corpus gives the 4th axis no physical role. **F1a RESOLVED** — P = diag(+1,−1,−1,−1); S1 (4073) now unconditional. Arc's earlier negatives (4046–4073) stand: achirality does not depend on which improper element is named P.

@@ -109,6 +109,32 @@ unconditional.**
 retained from §3 because it is what yields P and C violated with CP conserved; **whether that clause is
 necessary, and whether the rule should be stated at the level of all interactions or only some, is open.**
 
+## 2i. F2 — does χ₄ make electromagnetism handed? (established at 4075)
+
+**Record check:** SF-6 never states whether the DP displacement behind E and B is three- or four-dimensional. So F2
+is not a fact to be looked up; it is a **requirement χ₄ places on SF-6.**
+
+**The mechanism.** χ₄ rotates a displacement component toward the fourth axis by an angle s·θ (s = ±1 for the two
+hands). The part that stays in 3-space scales as cos(sθ), which is **even** in s; the part moved onto the fourth
+axis scales as sin(sθ), which is **odd** in s. The hand lives entirely in the fourth-axis component.
+
+| reading of SF-6 | E left vs right | max &#124;E·B&#124; | E·B flips with hand | verdict |
+|---|---|---|---|---|
+| **A** — EM reads only 3-space components | identical (0.0) | 1.3×10⁻¹⁴ | — | **parity-even: compatible** |
+| **B** — 4D proximity feeds the fourth-axis part back into 3-space | differ by 5.7 | 95.7 | **yes, correlation −1.0000** | **parity-odd: excluded** |
+
+**F2 reduces to one clean condition:** χ₄ is compatible with experiment **if and only if** the electromagnetic
+field law depends on the fourth-axis component only through even functions of the mixing angle. Reading A — EM
+reads physical 3-space — is the simplest such law.
+
+**The requirement this places on the theory (not a result):** whatever process χ₄ makes handed must read the
+fourth-axis component **linearly**, the odd part. **Electromagnetism reads 3-space; the handed process reads the
+fourth axis.** If CPP adopts χ₄, this division is part of what it adopts.
+
+**A P-even side effect to track:** under Reading A the 3D field is scaled by cos θ for both hands. If θ is fixed
+it is absorbed into the charge normalisation; if θ varies between interactions it could be observable. Not a
+parity problem; recorded so it is not rediscovered as one.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -148,7 +174,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 |---|---|---|---|
 | F1 | P-odd under **physical** parity | definition | passes (2b) — *pending F1a* |
 | F1a | physical parity defined precisely in CPP's 4D setting | founder 16 Sep | **RESOLVED (4074)** — P = diag(+1,−1,−1,−1): 3-space inverted, 4th-axis address fixed |
-| F2 | EM stays P-even | 4069/4070, experiment | **must show χ₄'s rule does not act on SF-6's DP displacement** — if CP proximity processing includes the 4th axis, EM could pick up the sign; now the most dangerous filter |
+| F2 | EM stays P-even | 4069/4070, experiment | **CONDITIONALLY PASSES (4075)** — iff the EM field law reads the 4th-axis component only through even functions (e.g. EM reads 3-space only); under 4D-proximity feedback χ₄ makes EM P-odd and fails. Becomes a **specification SF-6 must adopt** |
 | F3 | strong interaction stays P-even | experiment | untested |
 | F4 | weak: P and C maximal, CP ≈ conserved | experiment | pattern passes (§3); **maximality** not shown |
 | F5 | small CP violation has a source | CKM phase | χ gives CP *exactly* conserved; needs a second source — candidate sign(δ) via CPT, untested |
@@ -169,7 +195,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 1. ~~F1a resolved~~ **DONE 4074.**
 2. ~~Q1–Q3 answered~~ **DONE 4073.** Location chosen among L1/L2/L3 (§2e), by the founder, on a matured comparison.
-3. F2 and F3 shown (the axiom leaves EM and strong P-even), not assumed.
+3. F2 **conditionally shown (4075)** — requires SF-6 to read 3-space only (or even functions of the 4th-axis component); founder must accept that specification. F3 (strong) still to show.
 4. At least one of the three F8 targets derived far enough to show a non-trivial number or sign.
 5. ~~F9 verified~~ **DONE 4073.**
 6. Falsifiers written (§7).
@@ -183,6 +209,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4075** — F2 tested: SF-6 leaves the displacement's dimensionality unspecified; χ₄ keeps EM parity-even iff EM reads the 4th axis only through even functions (Reading A: identical fields, E·B = 1.3e-14) and makes it parity-odd otherwise (Reading B: E·B = 95.7, flips with hand at −1.0000). Requirement recorded: EM reads 3-space, the handed process reads the 4th axis linearly. In-patch detector error caught and fixed.
 - **4074** — founder ruling on the fourth axis filed (2f); F1a resolved; S1 unconditional; T1 (P-odd object = 4th-axis mixing rotation aligned with 3D spin), T2 (carrier with no new variable, but 118/118 — sign still needs a rule), T3 (left/right factor = sign of e·ω in 236/236 — L2 and L3 merge) established; candidate χ₄ drafted; F2 promoted to most dangerous filter.
 - **4073** — founder answers filed (2c); F9 resolved; §3's "native" claim corrected (χ adds a variable); S1 (3-space composites never handed, conditional on F1a), S2 (handedness = helicity-shaped rotation into the 4th axis), S3 (H4⁺ already split into left/right factors) established; three axiom locations L1/L2/L3 laid out with recommendation L3 → L2 → L1.
 - **4072** — document opened; 2a (n̂ vs −n̂ is not a chirality in ℝ⁴) and 2b (a double rotation carries a
