@@ -69,6 +69,46 @@ instance of location L2 below.
   duality (B∧B = ±0.789568), and are exchanged by conjugation (det −1). H4⁺ = (2I × 2I)/ℤ₂ is split into a left
   and a right factor, and nothing in the axioms prefers either.
 
+## 2f. Founder ruling on the fourth axis (16 Sep 2026, verbatim, filed at 4074)
+
+> *"The 600-cell is already a 4D structure. Given that we are in a cyberworld, the 4th dimension is simply an
+> address on the 4th orthogonal axis, not physically visualizable, but existent at the level of perception and
+> reaction/interaction between CPs, processed according to proximity. If this can be used as a variable that gives
+> chirality-parity and an explanatory mechanism for W⁰ chirality, antimatter/matter asymmetry, and quark mixing,
+> then this is likewise an elegant solution requiring nothing but the use of the 4th dimension, which has not been
+> utilized, to my knowledge, in the corpus of CPP."*
+
+**Record check (D-1):** confirmed. The corpus gives the fourth axis no physical role; its only appearance is as a
+coordinate in Capotauro's cell-swap reflection ζ = diag(1,1,1,−1).
+
+**F1a RESOLVED by this ruling.** Coordinates (w, x, y, z): w is the fourth-axis address, (x, y, z) physical
+3-space. Physical parity P = diag(+1,−1,−1,−1) inverts 3-space and leaves the address alone. **S1 (4073) is now
+unconditional.**
+
+## 2g. What the fourth axis does and does not supply (established at 4074)
+
+- **T1 — it identifies the P-odd object exactly.** Under P: the w-address, displacement along w, and a 3D spin
+  are all **P-even**; a rotation mixing w with a spatial direction is **P-odd**; the pseudoscalar e·ω flips
+  exactly (residual 0).
+- **T2 — carrier yes, sign no.** Over all 236 non-trivial left and right multiplications of the substrate's own
+  rotation group: **118 positive, 118 negative**, net +2.6×10⁻¹⁴. The fourth axis gives handedness a place to
+  live with **no new variable**; the substrate's P-even structure supplies both hands equally. **One rule is still
+  needed to choose the sign.**
+- **T3 — the merge.** sign(e·ω) separates left-isoclinic from right-isoclinic in **236 of 236** substrate
+  rotations. The left/right factor of L3 *is* the sign of the fourth-axis/3D-spin alignment. **L2 (in its
+  fourth-axis form) and L3 are the same rule seen from two sides.**
+
+## 2h. Leading candidate after the merge
+
+> **Axiom candidate χ₄ (draft).** When the interaction of Conscious Points mixes the fourth-axis address with
+> physical 3-space, the fourth-axis mixing and the accompanying 3D circulation are aligned in one sense
+> (left-isoclinic) — with the sense reversed for the opposite polarity.
+
+**What it adds:** no new variable, no new particle, field, or lattice change. It uses the fourth axis the
+600-cell already has and the corpus has never used, and it adds one rule fixing a sign. The polarity clause is
+retained from §3 because it is what yields P and C violated with CP conserved; **whether that clause is
+necessary, and whether the rule should be stated at the level of all interactions or only some, is open.**
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -107,8 +147,8 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 | # | filter | source | χ status |
 |---|---|---|---|
 | F1 | P-odd under **physical** parity | definition | passes (2b) — *pending F1a* |
-| F1a | physical parity defined precisely in CPP's 4D setting — incl. where physical 3-space sits relative to n̂ | open | **UNDEFINED — blocking; S1 depends on it** |
-| F2 | EM stays P-even | 4069/4070, experiment | must show the double rotation does not enter the EM force law |
+| F1a | physical parity defined precisely in CPP's 4D setting | founder 16 Sep | **RESOLVED (4074)** — P = diag(+1,−1,−1,−1): 3-space inverted, 4th-axis address fixed |
+| F2 | EM stays P-even | 4069/4070, experiment | **must show χ₄'s rule does not act on SF-6's DP displacement** — if CP proximity processing includes the 4th axis, EM could pick up the sign; now the most dangerous filter |
 | F3 | strong interaction stays P-even | experiment | untested |
 | F4 | weak: P and C maximal, CP ≈ conserved | experiment | pattern passes (§3); **maximality** not shown |
 | F5 | small CP violation has a source | CKM phase | χ gives CP *exactly* conserved; needs a second source — candidate sign(δ) via CPT, untested |
@@ -127,7 +167,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 6. Readiness criteria for the panel (all must hold)
 
-1. F1a resolved (physical parity defined).
+1. ~~F1a resolved~~ **DONE 4074.**
 2. ~~Q1–Q3 answered~~ **DONE 4073.** Location chosen among L1/L2/L3 (§2e), by the founder, on a matured comparison.
 3. F2 and F3 shown (the axiom leaves EM and strong P-even), not assumed.
 4. At least one of the three F8 targets derived far enough to show a non-trivial number or sign.
@@ -143,6 +183,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4074** — founder ruling on the fourth axis filed (2f); F1a resolved; S1 unconditional; T1 (P-odd object = 4th-axis mixing rotation aligned with 3D spin), T2 (carrier with no new variable, but 118/118 — sign still needs a rule), T3 (left/right factor = sign of e·ω in 236/236 — L2 and L3 merge) established; candidate χ₄ drafted; F2 promoted to most dangerous filter.
 - **4073** — founder answers filed (2c); F9 resolved; §3's "native" claim corrected (χ adds a variable); S1 (3-space composites never handed, conditional on F1a), S2 (handedness = helicity-shaped rotation into the 4th axis), S3 (H4⁺ already split into left/right factors) established; three axiom locations L1/L2/L3 laid out with recommendation L3 → L2 → L1.
 - **4072** — document opened; 2a (n̂ vs −n̂ is not a chirality in ℝ⁴) and 2b (a double rotation carries a
   pseudoscalar; simple rotation does not) established; candidate χ drafted; filters, founder questions,

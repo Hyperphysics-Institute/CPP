@@ -1984,6 +1984,18 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4074-EW — axiom maturation step 3: the fourth axis is the carrier; L2 and L3 merge into χ₄ (registered Patch 4074, EW lane)
+
+- **FILED:** founder ruling on the fourth axis (verbatim, maturation doc §2f). Record check: confirmed the corpus gives the 4th axis no physical role. **F1a RESOLVED** — P = diag(+1,−1,−1,−1); S1 (4073) now unconditional. Arc's earlier negatives (4046–4073) stand: achirality does not depend on which improper element is named P.
+- **ESTABLISHED:** T1 the P-odd object is a rotation mixing the 4th axis with 3-space, aligned with a 3D spin (e·ω flips exactly). T2 **carrier yes, sign no** — substrate's 4th-axis-mixing rotations: 118 left / 118 right, net 2.6e-14; a rule is still needed. T3 sign(e·ω) = left/right factor in **236/236** ⇒ **L2 (4th-axis form) and L3 are one rule.** `code/4074_fourth_axis_carrier_and_sign.py`, `reasoning/4074.md`.
+- **LEADING CANDIDATE χ₄ (draft, doc §2h):** when CP interaction mixes the 4th-axis address with 3-space, the mixing and the 3D circulation align in one sense (left-isoclinic), reversed for opposite polarity. No new variable.
+- **(1) NEXT, Claude — F2 (most dangerous):** founder says interaction is processed by proximity, which on a 4D lattice includes the 4th axis. Determine whether SF-6's DP displacement uses 4th-axis proximity and whether χ₄'s rule would then enter EM (excluded by experiment, 4069). Could kill χ₄. **Lane: EW.**
+- **(2) Claude — F8 for χ₄:** stated once, does it reach K3 Δp_LR, W V−A and baryogenesis? **Lane: EW/SM.**
+- **(3) Open in χ₄'s wording:** is the polarity clause necessary; does the rule apply to all interactions or only some? Decided by (1) and (2). **Lane: EW.**
+- TODO-4073-EW items (1) and (2) are superseded by this entry's (1) and (2).
+
+---
+
 ### TODO-4073-EW — axiom maturation step 2: founder answers in; three locations for the axiom (registered Patch 4073, EW lane)
 
 - **FILED:** founder answers to Q1–Q3 (verbatim, maturation doc §2c). **F9 RESOLVED** (antiparticle = opposite polarity, nothing else reverses). **Q1/Q2 RESOLVED negative** (no second plane; any spin pole or second plane is an axiomatic addition).
