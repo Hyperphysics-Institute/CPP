@@ -201,6 +201,56 @@ variable gives all-or-nothing, which is what V−A's maximality needs). The corp
 a tie in the PCD cycle. That is not a gap to be filled with a new variable — it is an **existing unspecified
 rule** whose specification could carry the hand.
 
+## 2l. Evaluation of K2, K3, K4 (4078)
+
+### K2 — helical packing: the founder is right about the cells, and it costs periodicity
+
+Founder: *"it lets the 4D structure fit without stretching the space… I like that a lot better than the
+variable-position GPs that I agreed to."* (Variable-position GPs = the 4020 ruling permitting distorted cages to
+absorb 4019's deficit.)
+
+- **The deficit, recomputed:** tetrahedral dihedral 70.5288°, five around an edge 352.6439°, **deficit 7.3561°** —
+  4019 confirmed independently.
+- **What the helix buys — the founder's point, and it holds.** Boerdijk–Coxeter stacking uses **perfectly regular**
+  tetrahedra: max edge-length spread 2.5×10⁻¹³ over 400 cells. **No distortion, no stretching.** It is a genuine
+  alternative to variable-position GPs.
+- **What it costs.** The twist per tetrahedron is arccos(−2/3) = **131.81°**, an irrational multiple of 2π. The
+  helix **never closes and never repeats** — zero exact closures out to 10,000 tetrahedra. **No periodic lattice,
+  no repeating GP address grid along the helix axis.** The trade is exact cells for aperiodicity.
+- **z = 12 is not delivered.** A single BC helix gives **z = 6** — it is a 1D column, not a space-filling lattice.
+  Bundling helices to reach z = 12 and fill 3-space is an **open construction**, not something the helix gives.
+- **Chirality: hand available, hand not chosen.** torsion ±283.55; both hands are valid stackings of regular
+  tetrahedra. As with every earlier route, the structure supplies a hand and **a rule is still needed to say which
+  one the substrate builds**.
+
+**Verdict:** K2 is a real and attractive alternative to the 4020 distortion ruling, and it may dissolve 4019/4034
+(no flat tiling, no translation preserving z = 12) by **giving up periodicity rather than regularity**. But it does
+not by itself deliver chirality, and it does not yet deliver z = 12. **It is a lattice-structure proposal first and
+a chirality proposal second.**
+
+### K3 — procedural / tie-break chirality: still the cheapest, with one dependency
+
+No new variable; specifies a rule the corpus has left open; and degeneracy is where a binary rule has the
+all-or-nothing leverage V−A needs. **Dependency:** the tie-break must be built from quantities available locally.
+The simulated rule used a reference direction; in CPP that must be something local and 3D (an SSV gradient, say),
+**not** n̂, which is the fourth axis and not a 3D vector. Whether the PCD cycle actually has degeneracies, and what
+resolves them today, is the open question and it is bounded.
+
+### K4 — the CPT route: **circular, and I withdraw it as a route**
+
+P-odd = (C-odd) × (T-odd) is a valid identity, and CPP has the T-arrow. But the C-odd element I proposed was the
+**matter excess** — and by Sakharov's conditions, baryogenesis *requires* C and CP violation as an input. Using the
+matter excess to manufacture parity violation therefore assumes what it is meant to produce. **K4 is circular
+unless a C-odd element independent of baryogenesis is identified**, and none is on file. Downgraded from "most
+valuable if it holds" to **not a route as stated**.
+
+### Ranking after evaluation
+
+1. **K3** (tie-break) — cheapest, no new variable, leverage where V−A needs it. Next test is bounded.
+2. **χ₄ / spin bit** (4074–4076) — most developed, needs the helicity write rule and F8.
+3. **K2** (helical packing) — pursue as a **lattice** question; it bears on 4019/4020/4034 and may matter more there.
+4. **K5** — weak. **K4** — withdrawn as circular.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -275,6 +325,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4078** — K2/K3/K4 evaluated: helix uses perfectly regular cells (spread 2.5e-13) but never repeats (twist 131.81°, no closure in 10,000) and gives z = 6 not 12, and supplies a hand without choosing it; K3 remains cheapest with a locality dependency; **K4 withdrawn as circular** (Sakharov: baryogenesis needs C/CP violation as input).
 - **4077** — correction: three spatial directions suffice for physical-parity-oddness (4071's "four" was the 4D invariant), and 3-space *arrangements* can be chiral though 3-space *rotations* cannot (4073/4074 phrasing corrected). Four further routes registered: K2 Boerdijk–Coxeter chiral packing, K3 procedural/tie-break chirality, K4 the CPT product route, K5 P-odd initial condition (weak).
 - **4076** — founder's spin-bit proposal assessed: P-even as defined (B1), P-odd if written with helicity (B2), response must be linear in the bit (B3, answering the founder's question), identical to 4075's requirement (B4), and gives two slots per 3D GP which revises THEO-QM-10's basis (B5).
 - **4075** — F2 tested: SF-6 leaves the displacement's dimensionality unspecified; χ₄ keeps EM parity-even iff EM reads the 4th axis only through even functions (Reading A: identical fields, E·B = 1.3e-14) and makes it parity-odd otherwise (Reading B: E·B = 95.7, flips with hand at −1.0000). Requirement recorded: EM reads 3-space, the handed process reads the 4th axis linearly. In-patch detector error caught and fixed.

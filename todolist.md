@@ -1984,6 +1984,19 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4078-EW — routes evaluated: K2 is a lattice proposal, K3 leads for chirality, K4 withdrawn (registered Patch 4078, EW lane)
+
+- **K2 (helical packing) — founder's claim CONFIRMED:** BC stacking uses **perfectly regular** tetrahedra (edge spread 2.5e-13 over 400 cells), so it fits **without stretching** — a genuine alternative to the 4020 variable-position-GP ruling. Deficit recomputed independently: 5 × 70.5288° = 352.6439°, **7.3561°** (4019 confirmed).
+- **K2 — the costs, three of them:** (a) twist arccos(−2/3) = 131.81°, irrational, so the helix **never closes or repeats** (0 closures in 10,000) ⇒ **aperiodic; no repeating GP address grid**; (b) a single helix gives **z = 6**, not 12 — bundling helices to fill 3-space at z = 12 is an **open construction**; (c) both hands are valid stackings (torsion ±283.55) ⇒ **supplies a hand, not a choice of hand**. **Verdict: strong LATTICE proposal (belongs with 4019/4020/4034), weak chirality proposal.** `code/4078_evaluate_helix_tiebreak_cpt.py`, `reasoning/4078.md`.
+- **K4 — WITHDRAWN as circular.** The C-odd element proposed was the matter excess, but Sakharov's conditions make C and CP violation an **input** to baryogenesis — so it assumes what it should explain. Needs a C-odd element independent of baryogenesis; none on file.
+- **K3 — ranked first for chirality**, with a dependency named: the tie-break must be built from **locally available 3D** quantities (an SSV gradient), **not** n̂ (which is the 4th axis, not a 3D vector).
+- **RANKING:** (1) K3 tie-break; (2) χ₄ / spin bit (needs helicity write rule + F8); (3) K2 in the lattice thread; (4) K5 weak; K4 withdrawn.
+- **(1) NEXT, Claude — does the PCD cycle have genuine degeneracies, and what resolves them today?** Decides K3. Bounded. **Lane: EW.**
+- **(2) Claude — can BC helices be bundled to fill 3-space at z = 12?** Would make K2's aperiodicity a feature and may resolve 4019/4030/4034. Bounded. **Lane: SR/EW.**
+- **(3) Carried:** ω for a seeding unpaired CP (4076); SF-6 4th-axis linear-use check (4075); F8 for χ₄. **Lane: EW/QM.**
+
+---
+
 ### TODO-4077-EW — correction to my counting, and four further P-odd routes (registered Patch 4077, EW lane)
 
 - **CORRECTION (mine, to 4071/4073/4074):** under physical parity (3-space inversion), **det₃ of three spatial vectors is P-odd** (20,000/20,000) — 4071's "four directions" was the threshold for the 4D invariant. And "no composite confined to 3-space can be handed" holds for **rotations** (B∧B ≡ 0, stands) but is **false for arrangements** (a fixed cyclic triad: det₃ = +1, mirror −1). **A chiral arrangement in ordinary 3-space is P-odd with no 4th-axis machinery.** `code/4077_other_routes_and_correction.py`, `reasoning/4077.md`.
