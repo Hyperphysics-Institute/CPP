@@ -1984,6 +1984,17 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4080-EW — K3's EM leak was a model artifact; the real separation is exponential (registered Patch 4080, EW lane)
+
+- **CORRECTION to my own 4079 model.** AP-4 verbatim: the DI-bit imprint is "a STATIC SNAPSHOT of the origin GP's computed registers"; SSV_net = E + S is a **vector sum**; "every GP emits the same fixed number of DI-bits every Moment" — value **nowhere specified**. Degeneracy is equal **SSV_net vector sums**, not equal arrival counts. 4079 measured the wrong quantity.
+- **ESTABLISHED:** generic tie rate vs register depth b — 0.177 (b=4), 0.0114 (8), 0.00333 (10), 0.00056 (12), 0.00000 (16); **symmetric rate = 1.0000 at every depth**. Reason: the 600-cell vertex stabiliser is icosahedral and transitive on the 12 neighbours, so an isotropic source gives twelve identical contributions exactly, at any precision. **Separation is exponential in b, not 4079's marginal 7×.** `code/4080_k3_register_depth.py`, `reasoning/4080.md`.
+- **K3's EM objection ANSWERED** for any register deeper than a few bits (0.3% leak at b = 10). Requirement softens from "DI-bit counts ≳10³" to "registers deeper than a few bits" — **no tuned parameter**. K3 returns to first place.
+- **MODEL ERROR caught in-patch (seventh in arc):** first symmetric model used the same register *vector* at every neighbour — anisotropic, tied 0.24, and the symmetric rate fell with depth (absurd: symmetry is exact). Caught by the control "symmetric rate must not fall with b"; corrected to an isotropic source.
+- **(1) NEXT, Claude — the remaining load test of K3:** is the W bracelet's **decision environment** symmetric at the points where the catalytic step chooses, or is the D₆ symmetry broken by the incoming particle? This could still kill K3. Bounded. **Lane: EW/SF-2.**
+- **(2) Carried:** ω for a seeding unpaired CP (4076); SF-6 4th-axis linear-use check (4075); F8 for χ₄; BC-helix bundling to z = 12 (4078). **Lane: EW/SM/SR.**
+
+---
+
 ### TODO-4079-EW — K3 tested: maximality delivered, EM leak found, requirement quantified (registered Patch 4079, EW lane)
 
 - **ESTABLISHED:** on the 600-cell with integer DI-bit arrivals, tie fractions are **1.0000 symmetric**, 0.8664 ring-with-noise, **0.1427 generic**, 0.0000 continuum control. A3′ C5's "unique assembled metric" governs layer-1 displacement but does not make arrival **counts** non-degenerate. `code/4079_k3_degeneracy_frequency.py`, `reasoning/4079.md`.

@@ -291,6 +291,41 @@ violation is confined to symmetric structures only if typical DI-bit counts in o
 10³ the leak is 0.5%; at 10⁴, 0.07%. **This is a falsifiable condition on a quantity the corpus has never
 specified, and it is the sharpest thing the arc has produced.**
 
+## 2n. K3 re-tested against what AP-4 actually says (4080) — the leak is exponentially small
+
+**4079 modelled the wrong quantity.** AP-4, verbatim: the DI-bit imprint is *"a STATIC SNAPSHOT of the origin
+GP's computed registers"*, and the receiver extracts **SSV_net = E + S**, a **vector sum**. *"Every GP emits the
+same fixed number of DI-bits every Moment"* — fixed, but **the value is nowhere specified**. So degeneracy is not
+"equal arrival counts" (4079's model); it is **equal SSV_net vector sums**.
+
+That changes the answer qualitatively:
+
+| register depth b | generic tie rate (EM-like) | symmetric tie rate (bracelet-like) |
+|---|---|---|
+| 4 | 0.17722 | **1.0000** |
+| 6 | 0.04778 | **1.0000** |
+| 8 | 0.01139 | **1.0000** |
+| 10 | 0.00333 | **1.0000** |
+| 12 | 0.00056 | **1.0000** |
+| 16 | 0.00000 | **1.0000** |
+
+**The generic rate falls as ~2⁻ᵇ; the symmetric rate is 1.0000 at every depth**, because symmetry makes the sums
+equal *exactly*, not approximately — the 600-cell's vertex stabiliser is icosahedral and transitive on the 12
+neighbours, so an isotropic source produces twelve identical contributions at any precision.
+
+**The separation is exponential in register depth, not the marginal 7× that 4079 suggested.** K3's requirement
+softens from "DI-bit counts ≳10³" to **"registers deeper than a few bits"** — at b = 10 the EM leak is 0.3%, at
+b = 16 it is below measurement. Any plausible register depth satisfies it.
+
+**Model error caught in-patch:** my first symmetric model gave every neighbour the same register *vector*, which
+is anisotropic (the geometric direction differs per neighbour) and tied only 0.24 of the time. A symmetric source
+is **isotropic** — each imprint aligned with its own radial direction. The control (symmetric rate must not fall
+with b) is what exposed it.
+
+**Status of K3 after this:** the EM objection from 4079 is **answered**, conditional on register depth exceeding a
+few bits. K3 returns to first place: maximal violation in symmetric structures, exponentially suppressed elsewhere,
+one rule, no new variable.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -365,6 +400,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4080** — 4079's model corrected against AP-4 (DI-bits carry register *snapshots*; SSV_net is a *vector sum*, not a count): generic tie rate falls as 2⁻ᵇ with register depth (0.0033 at b = 10, 0.0000 at 16) while the symmetric rate stays 1.0000 at every depth. Separation exponential, not marginal; **K3's EM objection answered** for any register deeper than a few bits. In-patch model error caught by the control.
 - **4079** — K3 tested against CPP dynamics: ties are generic in symmetric configurations (1.0000) and 0.1427 in generic ones, so a chiral tie-break gives maximal violation in the D₆ bracelet **but leaks parity-violating EM** unless DI-bit counts are large; dynamic-range sweep converts K3 into a quantitative, falsifiable requirement.
 - **4078** — K2/K3/K4 evaluated: helix uses perfectly regular cells (spread 2.5e-13) but never repeats (twist 131.81°, no closure in 10,000) and gives z = 6 not 12, and supplies a hand without choosing it; K3 remains cheapest with a locality dependency; **K4 withdrawn as circular** (Sakharov: baryogenesis needs C/CP violation as input).
 - **4077** — correction: three spatial directions suffice for physical-parity-oddness (4071's "four" was the 4D invariant), and 3-space *arrangements* can be chiral though 3-space *rotations* cannot (4073/4074 phrasing corrected). Four further routes registered: K2 Boerdijk–Coxeter chiral packing, K3 procedural/tie-break chirality, K4 the CPT product route, K5 P-odd initial condition (weak).
