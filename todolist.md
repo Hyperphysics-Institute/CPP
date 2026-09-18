@@ -1984,6 +1984,21 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4076-EW — the founder's spin bit: assessed, repaired, and its QM side effect (registered Patch 4076, EW lane)
+
+- **FILED:** `founders_voice/founder_fourth_dimension_spin_bit_2026-09-17.md` (edited per the founder's standing transcript rule); raw Otter transcript at `founders_voice/raw_transcripts/2026-09-17_...` as provenance only.
+- **B1 — as defined the spin bit is P-EVEN** and does not give chirality: a ±1 value attached to an address is a scalar; parity relocates the address, not the value. Same class as polarity (4071).
+- **B2 — the repair:** write the bit with **helicity**, b = sign(ω·v) — P-odd in 20,000/20,000 draws. Register, DI-bit transport, majority rule and CP seeding all unchanged; only the write rule changes.
+- **B3 — answers the founder's question ("what response?"):** parity violation appears iff the response is **linear** in the bit; an even response gives exactly zero asymmetry even with a P-odd bit.
+- **B4:** B3 is 4075's requirement in the founder's variable — **the spin bit is a concrete implementation of χ₄'s 4th-axis carrier**, with DI-bit machinery the corpus already has.
+- **B5 — two slots per 3D GP** (Pauli doubling). **Revises THEO-QM-10's basis**, which derives Pauli exclusion and spin-statistics from *one* CP per GP via THEO-1. Not a contradiction of THEO-1 (co-occupation of the same point); THEO-QM-10 would need rewriting over (3D address, spin bit) pairs. **Lane: QM (registered, not attempted).**
+- **(1) NEXT, Claude — is ω defined for the seeding unpaired CP** in SPIN-1's captured-DP construction? If not, B2 has no ω and needs a different P-odd write rule. Decides the repair. **Lane: EW/QM.**
+- **(2) Claude — F2 follow-up from 4075:** does any shipped SF-6 result use the 4th-axis component linearly? **Lane: EW/SF-6.**
+- **(3) Founder, when ready:** adopt helicity as the spin bit's write rule (B2)? **Lane: EW (founder).**
+- **(4) NOT ASSESSED at 4076, registered:** the transcript's even/odd address scheme (a position label is P-even by B1, so unlikely to give chirality alone — may bear on exclusion), the orbital-DP-as-artifact suggestion, and the W⁰ bracelet eCP/qCP even–odd relationships. **Lane: EW/SM.**
+
+---
+
 ### TODO-4075-EW — axiom maturation step 4: χ₄ passes F2 conditionally (registered Patch 4075, EW lane)
 
 - **RECORD CHECK:** SF-6 never specifies whether the DP displacement is 3D or includes the 4th axis — F2 is a requirement χ₄ imposes, not a lookup.

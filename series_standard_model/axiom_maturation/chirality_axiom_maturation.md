@@ -135,6 +135,44 @@ fourth axis.** If CPP adopts χ₄, this division is part of what it adopts.
 it is absorbed into the charge normalisation; if θ varies between interactions it could be observable. Not a
 parity problem; recorded so it is not rediscovered as one.
 
+## 2j. The founder's spin-bit proposal (17 Sep 2026) — assessed at 4076
+
+**Source:** `founders_voice/founder_fourth_dimension_spin_bit_2026-09-17.md` (edited); raw transcript kept as
+provenance. Proposal: every GP carries a fourth-dimension ±1 **spin bit**; DI-bits carry it; a majority of
+arriving DI-bits tips the register; an unpaired CP seeds its neighbourhood; two opposite bits share one 3D
+location. Founder's question: *"For the spin bit to have any meaning, it must elicit a response. What is that
+response?"*
+
+**B1 — as defined, the spin bit is parity-EVEN.** A ±1 value attached to an address is a scalar: parity
+relocates the address and leaves the value alone. "Up/down on the fourth axis" is therefore in the same class as
+polarity, which 4071 showed cannot supply handedness. **The proposal as written does not give chirality.**
+
+**B2 — the repair is small and keeps everything else.** If the bit's *write rule* is the **helicity** of the
+seeding CP — b = sign(ω·v), its 3D spin axis projected on its direction of motion — then b flips under parity in
+20,000/20,000 draws, because ω is axial and v is polar. **Same register, same DI-bit plumbing, same majority
+rule; only the rule that writes the bit changes.**
+
+**B3 — the answer to the founder's question.** Let a process rate be R(b). Parity violation appears in
+observables **iff R depends on b linearly**. An even response (R ∝ b²) gives asymmetry exactly 0 even when b is
+P-odd; a linear response gives asymmetry 0.35 in the toy. **The response must be odd — linear — in the spin bit.**
+
+**B4 — this is exactly 4075's requirement in the founder's own variable.** 4075: EM must read the fourth-axis
+component through *even* functions; the handed process must read it *linearly*. B3 is the same statement. **The
+spin bit is a concrete implementation of χ₄'s fourth-axis component, with propagation machinery (DI-bits) the
+corpus already has.**
+
+**B5 — the two-slot result, independent of chirality, and possibly the proposal's real prize.** A ±1 register
+gives exactly **two** slots per 3D location — the Pauli doubling QM needs, and the founder's "room for another
+orbital DP with the opposite spin bit in the same 3D space." **Caution:** THEO-QM-10 currently derives Pauli
+exclusion and spin-statistics from *one* CP per GP (via THEO-1). A spin bit gives two. That is a **revision to a
+registered theorem's basis**, not a contradiction of THEO-1 (which concerns co-occupation of the same point).
+It must be worked through before the spin bit is adopted for QM purposes.
+
+**Not assessed here:** the transcript's even/odd address scheme, the orbital-DP-as-artifact suggestion, and the
+W⁰ bracelet's eCP/qCP even–odd relationships. Each is a separate question; the even/odd scheme in particular is
+a *position* parity, which B1's argument applies to unchanged (a position label is P-even), so it is unlikely to
+supply chirality on its own — but it may bear on exclusion and on the bracelet's structure.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -209,6 +247,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4076** — founder's spin-bit proposal assessed: P-even as defined (B1), P-odd if written with helicity (B2), response must be linear in the bit (B3, answering the founder's question), identical to 4075's requirement (B4), and gives two slots per 3D GP which revises THEO-QM-10's basis (B5).
 - **4075** — F2 tested: SF-6 leaves the displacement's dimensionality unspecified; χ₄ keeps EM parity-even iff EM reads the 4th axis only through even functions (Reading A: identical fields, E·B = 1.3e-14) and makes it parity-odd otherwise (Reading B: E·B = 95.7, flips with hand at −1.0000). Requirement recorded: EM reads 3-space, the handed process reads the 4th axis linearly. In-patch detector error caught and fixed.
 - **4074** — founder ruling on the fourth axis filed (2f); F1a resolved; S1 unconditional; T1 (P-odd object = 4th-axis mixing rotation aligned with 3D spin), T2 (carrier with no new variable, but 118/118 — sign still needs a rule), T3 (left/right factor = sign of e·ω in 236/236 — L2 and L3 merge) established; candidate χ₄ drafted; F2 promoted to most dangerous filter.
 - **4073** — founder answers filed (2c); F9 resolved; §3's "native" claim corrected (χ adds a variable); S1 (3-space composites never handed, conditional on F1a), S2 (handedness = helicity-shaped rotation into the 4th axis), S3 (H4⁺ already split into left/right factors) established; three axiom locations L1/L2/L3 laid out with recommendation L3 → L2 → L1.
