@@ -2228,7 +2228,7 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - **K3 — ranked first for chirality**, with a dependency named: the tie-break must be built from **locally available 3D** quantities (an SSV gradient), **not** n̂ (which is the 4th axis, not a 3D vector).
 - **RANKING:** (1) K3 tie-break; (2) χ₄ / spin bit (needs helicity write rule + F8); (3) K2 in the lattice thread; (4) K5 weak; K4 withdrawn.
 - **(1) NEXT, Claude — does the PCD cycle have genuine degeneracies, and what resolves them today?** Decides K3. Bounded. **Lane: EW.**
-- **(2) Claude — can BC helices be bundled to fill 3-space at z = 12?** Would make K2's aperiodicity a feature and may resolve 4019/4030/4034. Bounded. **Lane: SR/EW.**
+- **(2) Claude — can BC helices be bundled to fill 3-space at z = 12?** **CLOSED at Patch 4099.** Fundamental obstruction: BC helix diameter 2r≈1.039 > 1 = required axis spacing for unit bonds. z=12 requires D=1; non-overlap requires D>2r. Mutually exclusive. At D=1: min inter-vertex d=0.320 (overlap). 4020 distortion ruling stands. **Lane: SR/EW — DONE.**
 - **(3) Carried:** ω for a seeding unpaired CP (4076); SF-6 4th-axis linear-use check (4075); F8 for χ₄. **Lane: EW/QM.**
 
 ---
