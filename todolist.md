@@ -1984,6 +1984,19 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4084-EW — F8 PASSES: one sign, three sectors; panel readiness now has four items left (registered Patch 4084, EW lane)
+
+- **THE DECISIVE OBSERVATION:** every closed result under OPEN-SD-CHIR-PRIMITIVE is a **magnitude** — THEO-CAP-1 |M^K3| = χ/6, THEO-SD-CHIR-1 |M^K3| = |M^W| = χ/6. **Neither fixes which hand.** Reproduced: χ = φ⁻³ = 0.236068, χ/6 = **0.039345**, vs the η_B/leptogenesis anchor ≈ 0.04 (1.6%). **χ₄ is not a competitor to Capotauro — it is the missing factor in it.** `code/4084_f8_single_sign_three_sectors.py`, `reasoning/4084.md`.
+- **ONE SIGN FIXES ALL SECTORS:** the pairing operations (icosahedral-centre inversion for the W bracelet; combined-CP for qDP/eDP) act with **determinate eigenvalues** — 63/63 flip, 0/63 preserved, never mixed. Each sector's sign follows from its own existing convention: group theory, not a per-sector assumption.
+- **SUBTLETY, recorded so it is not read as contradicting 4072:** −I₄ is **proper** in 4D yet flips helicity here, because n̂ is held **fixed** rather than co-transformed (the physically right comparison — the substrate's n̂ does not rotate with the object). Both stand.
+- **F8 VERDICT: NOT single-use** — the sign is the missing factor in two **closed** sectors (K3-doublet, V−A) and the **open** cosmological one that already anchors (i) empirically.
+- **THE UMBRELLA IS SMALLER THAN IT CLAIMS:** of five manifestations, (iii) EM handedness is spurious (4069/4070) and (iv) the causal arrow is T-odd not P-odd (4071). **Five are really three** — still clears PD-007. **`manifestation_inventory.md` correction owed. Lane: SD/SSCA.**
+- **LIMIT UNCHANGED (4083):** χ₄ still **encodes** V−A rather than deriving it. F8 shows the encoding is economical, not explanatory.
+- **(1) PANEL READINESS — four items left before the axiom goes to a panel:** **F3** (strong sector stays P-even), **F5** (χ₄ conserves CP exactly; the small observed CP violation needs a source — sign(δ) via CPT is the untested candidate), **F6** (CPT), and the **falsifier list**. Claude, bounded, in that order. **Lane: EW.**
+- **(2) Carried:** SF-6 4th-axis linear-use check (4075); BC-helix bundling to z = 12 (4078, lattice thread). **Lane: EW/SR.**
+
+---
+
 ### TODO-4083-EW — ω is defined; χ₄ encodes V−A rather than deriving it (registered Patch 4083, EW lane)
 
 - **ω EXISTS for a seeding unpaired CP:** SPIN-1's captured-DP orbit supplies the axis, and the capture *requires* motion, so v exists too. **b = sign(ω·v) is well defined — 4076's B2 write rule survives.**

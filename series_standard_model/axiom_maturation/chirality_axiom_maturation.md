@@ -430,6 +430,34 @@ primitive the arc has been hunting since 4046 — it has been located and given 
 **What would convert encoding into derivation:** deriving *why* the response is linear rather than even, or
 deriving the sign. Both remain open, and neither is closed by anything in this arc.
 
+## 2r. F8 — the sign is NOT single-use (4084)
+
+**The decisive observation: every closed result in the umbrella is a MAGNITUDE.** THEO-CAP-1 gives
+|M^K3| = χ/6 and THEO-SD-CHIR-1 gives |M^K3| = |M^W| = χ/6 — **absolute values**. Neither fixes which hand.
+Reproduced independently: χ = φ⁻³ = 0.236068, χ/6 = **0.039345**, against the empirical anchor ≈ 0.04
+back-derived from η_B via leptogenesis (1.6%).
+
+**So the sign is precisely what the closed theorems lack, and precisely what χ₄ supplies.** This is consistent
+with the whole arc: n̂ yields magnitude (4046 — Θ fixes n̂) and never a sign (4071, 4074's 118/118 split).
+
+**Does one sign fix all sectors?** The sectors are related by pairing operations already in the corpus
+(icosahedral-centre inversion for the W bracelet; combined-CP for qDP/eDP). Measured on the bracelet's 63 rings,
+each operation acts with a **determinate eigenvalue** — 63/63 flip, 0/63 preserved, never mixed. So once one
+universal sign is fixed, each sector's sign follows from its own pairing convention: **group theory, not a new
+assumption per sector.**
+
+*Subtlety, so this does not appear to contradict 2a:* the inversion −I₄ is **proper** in 4D (det = +1, 4072), yet
+it flips the helicity here. That is because n̂ is held **fixed** in the helicity functional rather than
+co-transformed — which is the physically correct comparison (the substrate's n̂ does not rotate with the object).
+Both statements stand: n̂ ↔ −n̂ is a rotation (2a), and inversion-with-n̂-fixed flips helicity (here).
+
+**F8 verdict: the axiom is NOT single-use.** The single sign is the missing factor in **two closed sectors**
+(K3-doublet, V−A) and in the **open cosmological** one that already serves as (i)'s empirical anchor.
+
+**With the correction the umbrella's five manifestations are really three:** (iii) EM handedness is spurious
+(4069/4070) and (iv) the causal arrow is T-odd, not P-odd (4071). **Three disjoint sectors still clears PD-007's
+bar** — and that is the only ground on which the axiom is worth adopting.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -475,7 +503,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 | F5 | small CP violation has a source | CKM phase | χ gives CP *exactly* conserved; needs a second source — candidate sign(δ) via CPT, untested |
 | F6 | CPT exact | theorem | untested |
 | F7 | no new tunable parameter | PD-007 | passes in form (duality is binary) |
-| F8 | load-bearing in ≥ 3 disjoint sectors | PD-007, 4071 | targets named (K3 Δp_LR, W V−A, baryogenesis); none derived |
+| F8 | load-bearing in ≥ 3 disjoint sectors | PD-007, 4071 | **PASSES (4084)** — (i) and (ii) closed at magnitude χ/6, sign missing in both; (v) is (i)'s empirical anchor; one sign fixes all three via existing pairing conventions |
 | F9 | antiparticle = opposite polarity in CPP | founder 16 Sep | **RESOLVED (4073)** — confirmed, nothing else reverses |
 
 ## 5. Physics questions for the founder (picture form)
@@ -491,7 +519,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 1. ~~F1a resolved~~ **DONE 4074.**
 2. ~~Q1–Q3 answered~~ **DONE 4073.** Location chosen among L1/L2/L3 (§2e), by the founder, on a matured comparison.
 3. F2 **conditionally shown (4075)** — requires SF-6 to read 3-space only (or even functions of the 4th-axis component); founder must accept that specification. F3 (strong) still to show.
-4. At least one of the three F8 targets derived far enough to show a non-trivial number or sign.
+4. ~~At least one F8 target derived far enough~~ **DONE 4084** — (i) and (ii) are CLOSED at magnitude χ/6 = 0.039345 (1.6% of the anchor); the sign is the missing factor, and one sign fixes all three via existing pairing conventions.
 5. ~~F9 verified~~ **DONE 4073.**
 6. Falsifiers written (§7).
 
@@ -504,6 +532,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4084** — **F8 PASSES.** Every closed umbrella result is a magnitude (|M| = χ/6 = 0.039345, 1.6% of the η_B-derived anchor); the sign is exactly what they lack and what χ₄ supplies. Pairing operations act with determinate eigenvalues (63/63 flip, 0/63 preserved), so **one** sign fixes all sectors by group theory. Five manifestations are really three after 4069/4070 and 4071 — still clears PD-007.
 - **4083** — ω is defined for a seeding unpaired CP (SPIN-1's captured-DP orbit) and its orientation **must** be free, since that is what makes ω the spin state and b the physical helicity; linear response reproduces longitudinal polarisation from unpolarised sources (1.000 at c = 1), even response gives zero. **Honest accounting: χ₄ encodes V−A, it does not derive it** — the linearity and the universal sign are the irreducible axiom.
 - **4082** — **K3 REFUTED.** Founder's momentum-absorption answer is sound, but conservation puts the momentum into bulk motion, giving ε ≈ p/M_W in CPP's absolute frame. Weak processes span ε = 1.2e-5 to 0.50, capping b at 1.0 bit, while EM safety needs b > 10 even generously — window empty by 9–35.5 bits. Structural, not numerical: V−A is maximal across five orders of magnitude of momentum, so no degeneracy-based mechanism can produce it. Whole tie-break family disfavoured; χ₄ + helicity write rule is the surviving candidate.
 - **4081** — K3 load test: ties survive iff ε < 2⁻ᵇ, creating the window ε_bracelet < 2⁻ᵇ < Δ_EM. SF-2 §5 places the activating charge **at the D₆-symmetric centroid**, so the order-unity perturbation vanishes by symmetry; the residual is the charge's motion. Founder picture question raised.
