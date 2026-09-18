@@ -1984,6 +1984,19 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4085-EW — CPT forces the polarity clause; F5 fails; the axiom is NOT panel-ready (registered Patch 4085, EW lane)
+
+- **F6 DONE, and it FORCES a clause I had left optional.** b = sign(ω·v) is **P-odd, C-even, T-even** ⇒ **CPT-odd**, so a bare linear term with constant coefficient is **forbidden**; it is allowed only if the coefficient is **C-odd**, i.e. the sign **flips with polarity**. **The 4072 §3 polarity clause is required by CPT, not optional.** With it: P violated, C violated, CP conserved, CPT conserved. `code/4085_f3_f5_f6_readiness.py`, `reasoning/4085.md`.
+- **F5 FAILS QUANTITATIVELY.** χ₄ conserves CP exactly, so the observed CP violation needs a separate source. sign(δ) is legitimate and **not circular** (unlike K4, 4082) — but δ³ = 1.32e-2 is **~400× too large** and δ⁹ = 2.28e-6 is **~13× too small** against J = 3.08e-5. **No power of δ reproduces J. Open quantitative problem.**
+- **F3 REMAINS A CLAUSE** (as does F2): nothing yet explains why **only** the weak response is linear in b.
+- **(1) MOST VALUABLE OPEN ITEM — the capture distinction (Claude, bounded):** does SF-2's centroid **capture** read the captured CP's own register, while SF-6's EM acts through DP-sea **polarisation/exchange** reading displacement magnitudes only? **If so, linearity in b follows from capture and F2 + F3 become consequences instead of clauses.** **Lane: EW/SF-2/SF-6.**
+- **(2) F5 — no route in hand.** Registered as open. **Lane: EW.**
+- **(3) Falsifier list** — last readiness item, worth writing once F2/F3 settle. **Lane: EW.**
+- **READINESS SCOREBOARD:** F1/F1a done; F2 conditional; **F3 clause**; F4 pattern only (maximality not derived, 4083); **F5 FAILS**; **F6 done**; F7 passes; F8 passes (4084); F9 done. **NOT PANEL-READY** — sending it now would spend a round on a proposal with a known open problem and two stipulations.
+- **(4) Carried:** SF-6 4th-axis linear-use check (4075); BC-helix bundling to z = 12 (4078, lattice thread); `manifestation_inventory.md` correction (4084). **Lane: EW/SR/SD.**
+
+---
+
 ### TODO-4084-EW — F8 PASSES: one sign, three sectors; panel readiness now has four items left (registered Patch 4084, EW lane)
 
 - **THE DECISIVE OBSERVATION:** every closed result under OPEN-SD-CHIR-PRIMITIVE is a **magnitude** — THEO-CAP-1 |M^K3| = χ/6, THEO-SD-CHIR-1 |M^K3| = |M^W| = χ/6. **Neither fixes which hand.** Reproduced: χ = φ⁻³ = 0.236068, χ/6 = **0.039345**, vs the η_B/leptogenesis anchor ≈ 0.04 (1.6%). **χ₄ is not a competitor to Capotauro — it is the missing factor in it.** `code/4084_f8_single_sign_three_sectors.py`, `reasoning/4084.md`.

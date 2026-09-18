@@ -458,6 +458,56 @@ Both statements stand: n̂ ↔ −n̂ is a rotation (2a), and inversion-with-n̂
 (4069/4070) and (iv) the causal arrow is T-odd, not P-odd (4071). **Three disjoint sectors still clears PD-007's
 bar** — and that is the only ground on which the axiom is worth adopting.
 
+## 2s. F6, F5, F3 (4085) — CPT forces the polarity clause; F5 fails quantitatively; F3 is still a clause
+
+**F6 — CPT, and it settles something 4072 left open.** The helicity bit b = sign(ω·v) is **P-odd** (ω axial,
+v polar), **C-even** (charge conjugation does not act on space) and **T-even** (both ω and v flip). So b is
+**CPT-odd**, and a bare term linear in b with a constant coefficient is **forbidden** in a CPT-invariant theory.
+It is allowed only if the coefficient is itself **C-odd** — i.e. if the sign **flips with polarity**.
+
+**So the polarity clause, drafted at 4072 §3 and flagged there as "open whether necessary", is REQUIRED BY CPT.**
+It is not a convenience that happened to reproduce the Standard Model's C/CP pattern; it is forced. With it:
+P violated, C violated, **CP conserved, CPT conserved** — the SM's pattern.
+
+**F5 — FAILS quantitatively, and I am not going to soften it.** Because χ₄ conserves CP exactly, the small
+observed CP violation needs a separate source. The corpus's T-odd sign(δ) is a legitimate candidate — **not**
+circular in the way K4 was (4082), since δ is independently motivated by TARROW-1/2 and does not presuppose
+baryogenesis. But the magnitudes do not land:
+
+| quantity | value |
+|---|---|
+| δ = φ⁻³ | 2.361×10⁻¹ |
+| δ³ (TARROW-2's current onset) | 1.316×10⁻² |
+| δ⁹ | 2.277×10⁻⁶ |
+| observed Jarlskog invariant J | 3.08×10⁻⁵ |
+
+δ³ is ~400× too large; δ⁹ is ~13× too small. **No power of δ reproduces J.** F5 is an open quantitative problem,
+not a satisfied filter.
+
+**F3 — still a clause, with a candidate way out.** The strong sector must stay P-even, which requires its response
+to be **even** in b — the same shape as F2 (4075). Nothing yet explains why **only** the weak response is linear.
+**Candidate structural distinction (untested, and the most valuable open item in the document):** the W-bracelet
+mechanism **captures** a CP at its centroid (SF-2 §5) and therefore reads that CP's own register, while EM and the
+strong force act through DP-sea **polarisation and exchange**, which read displacement magnitudes rather than the
+captured particle's bit. **If that holds, linearity in b follows from capture, and F2 and F3 stop being clauses
+and become consequences.**
+
+### Readiness scoreboard
+
+| filter | status |
+|---|---|
+| F1, F1a | done (4072, 4074) |
+| F2 | conditional (4075) — becomes a consequence if the capture distinction holds |
+| **F3** | **clause, not result** — same fate as F2 |
+| F4 | pattern passes (4072/4085); maximality not derived (4083) |
+| **F5** | **FAILS quantitatively** — no power of δ gives J |
+| **F6** | **done (4085)** — and it forces the polarity clause |
+| F7 | passes (binary, no tunable parameter) |
+| F8 | passes (4084) |
+| F9 | done (4073) |
+
+**The axiom is not panel-ready.** F5 is an open problem and F3/F2 rest on an untested distinction.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -532,6 +582,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4085** — F6 done and it **forces** the polarity clause (b is CPT-odd, so a linear term needs a C-odd coefficient); F5 **fails quantitatively** (δ³ ~400× too large, δ⁹ ~13× too small vs J = 3.08e-5); F3 remains a clause, with the capture-vs-polarisation distinction as the candidate that would turn F2 and F3 into consequences. **Not panel-ready.**
 - **4084** — **F8 PASSES.** Every closed umbrella result is a magnitude (|M| = χ/6 = 0.039345, 1.6% of the η_B-derived anchor); the sign is exactly what they lack and what χ₄ supplies. Pairing operations act with determinate eigenvalues (63/63 flip, 0/63 preserved), so **one** sign fixes all sectors by group theory. Five manifestations are really three after 4069/4070 and 4071 — still clears PD-007.
 - **4083** — ω is defined for a seeding unpaired CP (SPIN-1's captured-DP orbit) and its orientation **must** be free, since that is what makes ω the spin state and b the physical helicity; linear response reproduces longitudinal polarisation from unpolarised sources (1.000 at c = 1), even response gives zero. **Honest accounting: χ₄ encodes V−A, it does not derive it** — the linearity and the universal sign are the irreducible axiom.
 - **4082** — **K3 REFUTED.** Founder's momentum-absorption answer is sound, but conservation puts the momentum into bulk motion, giving ε ≈ p/M_W in CPP's absolute frame. Weak processes span ε = 1.2e-5 to 0.50, capping b at 1.0 bit, while EM safety needs b > 10 even generously — window empty by 9–35.5 bits. Structural, not numerical: V−A is maximal across five orders of magnitude of momentum, so no degeneracy-based mechanism can produce it. Whole tie-break family disfavoured; χ₄ + helicity write rule is the surviving candidate.
