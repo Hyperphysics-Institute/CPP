@@ -1984,6 +1984,20 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4082-EW — K3 REFUTED; the tie-break family is closed; χ₄ + helicity is the survivor (registered Patch 4082, EW lane)
+
+- **FOUNDER ANSWER FILED (17 Sep, verbatim in maturation doc §2p):** momentum absorbed by the bracelet over a few Moments, dispersed randomly on dissolution rather than reconstituted. **Sound physics, and it helps** — the direction is not held as a free vector.
+- **BUT conservation puts the momentum into BULK MOTION**, and CPP's absolute (Nexus) frame makes bulk motion substrate-visible at order v/c. Residual **ε ≈ p_captured / M_W** — the founder's mass-ratio suppression, quantified.
+- **THE WINDOW IS EMPTY.** ε runs 1.2e-5 (beta decay) → 6.6e-4 (muon) → 1.1e-2 (tau) → 3.1e-2 (b) → **0.50 (top/on-shell W)**, capping register depth at **b < 1.0 bit**, while EM safety needs **b > 10.0** even on an absurd 10⁻³ bound (b > 36.5 on atomic parity violation). **Empty by 9–35.5 bits.** `code/4082_k3_window_empty.py`, `reasoning/4082.md`.
+- **STRUCTURAL, not numerical:** V−A is maximal across **five orders of magnitude** of captured momentum. Degeneracy-based mechanisms must weaken as the perturbation grows, so **K3 predicts parity violation fades at high momentum — it does not.** Direct falsification. **The whole tie-break family (K3) is closed.**
+- **ONE ATTACK LEFT on the refutation (registered, not pursued):** a reason the bracelet's internal SSV comparison is insensitive to its own bulk motion (a co-moving comparison despite the Nexus frame). Not obviously available in CPP. **Lane: EW.**
+- **SURVIVING CANDIDATE — χ₄ with the helicity write rule (4074/4076):** it acts **always**, independent of local symmetry, so it is immune to the failure that killed K3. **Arc returns to it.**
+- **(1) NEXT, Claude:** is ω (3D spin axis) defined for a seeding unpaired CP in SPIN-1's construction? Decides the helicity write rule. **Lane: EW/QM.**
+- **(2) Claude — F8 for χ₄:** does it reach K3-doublet Δp_LR and baryogenesis, stated once? **Lane: EW/SM.**
+- **(3) Carried:** SF-6 4th-axis linear-use check (4075); BC-helix bundling to z = 12 (4078, lattice thread). **Lane: EW/SR.**
+
+---
+
 ### TODO-4081-EW — K3 load test passed on SF-2's own construction; one residual is the founder's (registered Patch 4081, EW lane)
 
 - **ESTABLISHED:** ties survive a perturbation iff ε < 2⁻ᵇ (below one LSB it quantises away). Measured: 1.0000 up to ε ≈ 10⁻⁵; dead by ε ≈ 10⁻¹; knee tracks 2⁻ᵇ. Controls: ε = 0 → 1.0000 at every depth (4080 reproduced); ε = 1 → dead at every depth. `code/4081_k3_load_test_incoming_particle.py`, `reasoning/4081.md`.

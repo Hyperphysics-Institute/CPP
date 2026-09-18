@@ -355,6 +355,46 @@ exactly a degenerate SSV comparison — the place a tie-break rule acts.
 centroid. So ε_bracelet is set not by the charge's full amplitude but by its **directional asymmetry**. Whether
 that residual falls below one LSB is the open question, and it is a physical-picture question, not a computation.
 
+## 2p. K3 REFUTED (4082) — the founder's momentum answer is right, and quantifying it closes the window
+
+**Founder, 17 Sep (verbatim):** *"If the captured charge is retained for a few Moments, then the momentum it was
+carrying is absorbed by the bracelet. As the bracelet dissolves, reconstituting the momentum on the captured
+charge is exceedingly unlikely and is more likely to be dispersed randomly among the various CP/DP constituents
+into which the bracelet dissipates."*
+
+**The physics is sound and it helps.** The charge's direction is not held as a free vector at the decision point.
+But absorbed momentum does not vanish: **conservation** puts it into the bracelet's **bulk motion**, and CPP has an
+**absolute frame** — DI-bits travel at c in the Nexus frame, so a moving ring sees direction-dependent arrivals at
+order v/c. The residual is therefore **ε ≈ p_captured / M_W** — suppressed by the mass ratio, which is exactly the
+founder's point, made quantitative.
+
+| process | p | ε = p/M_W | register depth it allows (b < log₂ 1/ε) |
+|---|---|---|---|
+| nuclear beta decay | 1 MeV | 1.2×10⁻⁵ | b < 16.3 |
+| muon decay | 52.8 MeV | 6.6×10⁻⁴ | b < 10.6 |
+| tau decay | 890 MeV | 1.1×10⁻² | b < 6.5 |
+| b-quark decay | 2.5 GeV | 3.1×10⁻² | b < 5.0 |
+| top decay / on-shell W | 40 GeV | 0.50 | **b < 1.0** |
+
+**EM safety requires the opposite:** generic tie rate 2⁻ᵇ below observed limits on parity violation in
+electromagnetic processes — b > 36.5 (atomic parity violation), b > 19.9 (a 10⁻⁶ bound), **b > 10.0 even on a
+absurdly generous 10⁻³ bound**.
+
+**The window is empty by 9 bits on the most generous reading and 35.5 bits on the realistic one.** And the failure
+is structural, not numerical: V−A is observed **maximal** across five orders of magnitude in captured momentum,
+from 1 MeV to 40 GeV. A degeneracy-based mechanism necessarily weakens as the perturbation grows, so **K3 predicts
+parity violation should fade at high momentum, and it does not.** That is a direct falsification.
+
+**K3 is REFUTED as a universal mechanism.**
+
+### The general lesson this leaves
+
+**Any mechanism resting on exact degeneracy is fragile by construction, and V−A is robust.** The observed
+maximality holds across the whole momentum range, in every weak process, with no sign of degrading. That argues
+against the entire "tie-break" family — not just K3's particular form — and back toward a rule that acts
+**always**, independent of how symmetric the local configuration happens to be. **χ₄ with the helicity write rule
+(4074/4076) is such a rule**, and it is now the surviving candidate.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -429,6 +469,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4082** — **K3 REFUTED.** Founder's momentum-absorption answer is sound, but conservation puts the momentum into bulk motion, giving ε ≈ p/M_W in CPP's absolute frame. Weak processes span ε = 1.2e-5 to 0.50, capping b at 1.0 bit, while EM safety needs b > 10 even generously — window empty by 9–35.5 bits. Structural, not numerical: V−A is maximal across five orders of magnitude of momentum, so no degeneracy-based mechanism can produce it. Whole tie-break family disfavoured; χ₄ + helicity write rule is the surviving candidate.
 - **4081** — K3 load test: ties survive iff ε < 2⁻ᵇ, creating the window ε_bracelet < 2⁻ᵇ < Δ_EM. SF-2 §5 places the activating charge **at the D₆-symmetric centroid**, so the order-unity perturbation vanishes by symmetry; the residual is the charge's motion. Founder picture question raised.
 - **4080** — 4079's model corrected against AP-4 (DI-bits carry register *snapshots*; SSV_net is a *vector sum*, not a count): generic tie rate falls as 2⁻ᵇ with register depth (0.0033 at b = 10, 0.0000 at 16) while the symmetric rate stays 1.0000 at every depth. Separation exponential, not marginal; **K3's EM objection answered** for any register deeper than a few bits. In-patch model error caught by the control.
 - **4079** — K3 tested against CPP dynamics: ties are generic in symmetric configurations (1.0000) and 0.1427 in generic ones, so a chiral tie-break gives maximal violation in the D₆ bracelet **but leaks parity-violating EM** unless DI-bit counts are large; dynamic-range sweep converts K3 into a quantitative, falsifiable requirement.
