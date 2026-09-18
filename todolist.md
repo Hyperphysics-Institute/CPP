@@ -1984,6 +1984,18 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4083-EW — ω is defined; χ₄ encodes V−A rather than deriving it (registered Patch 4083, EW lane)
+
+- **ω EXISTS for a seeding unpaired CP:** SPIN-1's captured-DP orbit supplies the axis, and the capture *requires* motion, so v exists too. **b = sign(ω·v) is well defined — 4076's B2 write rule survives.**
+- **SPIN-1 does not fix the orbital plane's orientation, and must not:** ω ∥ v ⇒ no spin-up/down; ω ⊥ v ⇒ no weak coupling; **free orientation ⇒ ω is the spin state and b the physical helicity.** Measured: ⟨b⟩ = −0.0014 unpolarised (no substrate handedness, V3-consistent) with each particle definite; linear response gives net helicity 1.000 at c = 1 from an **unpolarised** source (= longitudinal polarisation of beta electrons), even response gives zero. `code/4083_omega_defined_and_what_chi4_assumes.py`, `reasoning/4083.md`.
+- **THE HONEST ACCOUNTING.** **Derived:** ω exists; v exists; b is P-odd; ⟨b⟩ = 0 for the substrate; linear response reproduces the observed pattern. **Assumed (irreducible):** that the response is **linear** rather than even, and the **universal sign** — which helicity couples. **χ₄ is a faithful CPP ENCODING of V−A, not a derivation of it.** The P-odd primitive is located and housed, not eliminated.
+- **(1) NEXT, Claude — F8 for χ₄, now the decisive test:** does the same single sign reach K3-doublet Δp_LR and baryogenesis, or does each sector need its own? **An encoding serving three sectors is worth adopting; one serving only V−A is V−A rewritten.** **Lane: EW/SM.**
+- **(2) What would upgrade encoding → derivation (registered, open):** derive why the response is linear rather than even, or derive the sign. **Lane: EW.**
+- **(3) Carried:** SF-6 4th-axis linear-use check (4075); BC-helix bundling to z = 12 (4078, lattice thread). **Lane: EW/SR.**
+- **ESTIMATOR ERRORS caught in-patch (8th, 9th in arc):** population-count asymmetry instead of the physical observable (reported 1.0000 at zero polarisation); and a 10⁻⁹ threshold against an estimator whose sampling error is 5/√n ≈ 0.008. Both fixed before any conclusion was read.
+
+---
+
 ### TODO-4082-EW — K3 REFUTED; the tie-break family is closed; χ₄ + helicity is the survivor (registered Patch 4082, EW lane)
 
 - **FOUNDER ANSWER FILED (17 Sep, verbatim in maturation doc §2p):** momentum absorbed by the bracelet over a few Moments, dispersed randomly on dissolution rather than reconstituted. **Sound physics, and it helps** — the direction is not held as a free vector.

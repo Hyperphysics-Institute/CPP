@@ -395,6 +395,41 @@ against the entire "tie-break" family — not just K3's particular form — and 
 **always**, independent of how symmetric the local configuration happens to be. **χ₄ with the helicity write rule
 (4074/4076) is such a rule**, and it is now the surviving candidate.
 
+## 2q. ω IS defined, its orientation MUST be free, and what χ₄ therefore is (4083)
+
+**ω exists for a seeding unpaired CP.** SPIN-1: an unpaired −eCP **moving** through the DP Sea captures a DP whose
+CPs orbit it, giving orbital angular momentum ħ/2. So the seeding CP has both a spin axis ω (the orbit's axis) and
+a velocity v (the capture *requires* motion). **Helicity b = sign(ω·v) is well defined; 4076's B2 write rule
+survives.**
+
+**SPIN-1 does not fix the orbital plane's orientation relative to v — and it must not.** Checked: the paper's only
+orientation discussion is the DP's internal phase lock, and it defers the qDP planes to open problems. That
+silence is **required**:
+
+- ω always parallel to v ⇒ every particle has the same helicity ⇒ no spin-up/down.
+- ω always perpendicular to v ⇒ helicity vanishes identically ⇒ no weak coupling at all.
+- **Free orientation ⇒ ω is the spin state and b is the particle's physical helicity.** This is the only viable case.
+
+**Consequences measured:** with free orientation, ⟨b⟩ = −0.0014 over an unpolarised ensemble (no substrate
+handedness — consistent with CAPACITY-1's V3) while each particle carries a definite b. A response **linear** in b
+then gives emitted particles a **net helicity** from an *unpolarised* source — 0.249, 0.498, 1.000 at couplings
+0.25, 0.5, 1.0 — saturating at maximal V−A. An **even** response gives zero at every coupling (within the 0.008
+sampling tolerance). Longitudinal polarisation of beta electrons from unpolarised sources is exactly the observed
+signature.
+
+### The honest accounting — and it is the most important line in this document
+
+| | |
+|---|---|
+| **Derived** (already in the corpus) | ω exists (SPIN-1); v exists (capture needs motion); b = sign(ω·v) is P-odd (4076); ⟨b⟩ = 0 for the substrate (V3-consistent); a linear response reproduces the observed polarised/unpolarised pattern |
+| **Assumed** (the irreducible axiom) | that the weak response is **linear** in b rather than even; and the **universal sign** of that linear term — which helicity couples |
+
+**χ₄ is a faithful CPP encoding of V−A. It is not a derivation of V−A.** The sign is precisely the one P-odd
+primitive the arc has been hunting since 4046 — it has been located and given a carrier, not eliminated.
+
+**What would convert encoding into derivation:** deriving *why* the response is linear rather than even, or
+deriving the sign. Both remain open, and neither is closed by anything in this arc.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -469,6 +504,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4083** — ω is defined for a seeding unpaired CP (SPIN-1's captured-DP orbit) and its orientation **must** be free, since that is what makes ω the spin state and b the physical helicity; linear response reproduces longitudinal polarisation from unpolarised sources (1.000 at c = 1), even response gives zero. **Honest accounting: χ₄ encodes V−A, it does not derive it** — the linearity and the universal sign are the irreducible axiom.
 - **4082** — **K3 REFUTED.** Founder's momentum-absorption answer is sound, but conservation puts the momentum into bulk motion, giving ε ≈ p/M_W in CPP's absolute frame. Weak processes span ε = 1.2e-5 to 0.50, capping b at 1.0 bit, while EM safety needs b > 10 even generously — window empty by 9–35.5 bits. Structural, not numerical: V−A is maximal across five orders of magnitude of momentum, so no degeneracy-based mechanism can produce it. Whole tie-break family disfavoured; χ₄ + helicity write rule is the surviving candidate.
 - **4081** — K3 load test: ties survive iff ε < 2⁻ᵇ, creating the window ε_bracelet < 2⁻ᵇ < Δ_EM. SF-2 §5 places the activating charge **at the D₆-symmetric centroid**, so the order-unity perturbation vanishes by symmetry; the residual is the charge's motion. Founder picture question raised.
 - **4080** — 4079's model corrected against AP-4 (DI-bits carry register *snapshots*; SSV_net is a *vector sum*, not a count): generic tie rate falls as 2⁻ᵇ with register depth (0.0033 at b = 10, 0.0000 at 16) while the symmetric rate stays 1.0000 at every depth. Separation exponential, not marginal; **K3's EM objection answered** for any register deeper than a few bits. In-patch model error caught by the control.
