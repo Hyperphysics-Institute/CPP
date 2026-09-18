@@ -267,7 +267,7 @@ Sources: QM-1 through QM-5. Registered 31 March 2026.
 | **THEO-QM-7** | Pointer basis = SSV eigenstates | Robust states are σ̂_z eigenstates (definite SSV phase projection). 12-edge broadcast selects dominant SSV. Stronger than standard einselection. | AXIM-2, AXIM-4 | QM-4, Theorem 2 |
 | **THEO-QM-8** | Global unitarity | System + DP Sea + Nexus evolves unitarily at every Absolute Moment. Apparent collapse from tracing over bath. | AXIM-6 | QM-4, Theorem 3 |
 | **THEO-QM-9** | Bosonic commutation | [aₖ, aₖ'†] = δₖₖ' from eigenmode orthonormality on 600-cell adjacency matrix. | AXIM-2 | QM-5, Theorem 1 |
-| **THEO-QM-10** | Fermion-boson distinction | Charged CP aggregates: Pauli exclusion (one per GP from THEO-1) → fermionic. Neutral DI-bit modes: no restriction → bosonic. Spin-statistics is geometric. | AXIM-1, AXIM-2, THEO-1 | QM-5, Theorem 2 |
+| **THEO-QM-10** | Fermion-boson distinction | Charged CP aggregates: Pauli exclusion (one per GP from THEO-1) → fermionic. Neutral DI-bit modes: no restriction → bosonic. Spin-statistics is geometric. **[REVISION SKETCH, Patch 4098:** with χ₄'s helicity bit b ∈ {+1,−1}, the site operator becomes ĉ_{i,b}, giving {a_{k,b}, a†_{k',b'}} = δ_{kk'}δ_{bb'} — TWO fermionic slots per spatial mode (Pauli doubling, spin-½). Sketch: `series_quantum_mechanics/sketches/4098_theo_qm10_helicity_bit_revision.md`. Conditional on χ₄ adoption. Addresses OPEN-QM-3 (spin-½) via the helicity-bit route; does not displace the ZBW-topology route.] | AXIM-1, AXIM-2, THEO-1 | QM-5, Theorem 2 |
 
 ---
 

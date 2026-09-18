@@ -163,10 +163,15 @@ corpus already has.**
 
 **B5 — the two-slot result, independent of chirality, and possibly the proposal's real prize.** A ±1 register
 gives exactly **two** slots per 3D location — the Pauli doubling QM needs, and the founder's "room for another
-orbital DP with the opposite spin bit in the same 3D space." **Caution:** THEO-QM-10 currently derives Pauli
-exclusion and spin-statistics from *one* CP per GP (via THEO-1). A spin bit gives two. That is a **revision to a
-registered theorem's basis**, not a contradiction of THEO-1 (which concerns co-occupation of the same point).
-It must be worked through before the spin bit is adopted for QM purposes.
+orbital DP with the opposite spin bit in the same 3D space." **WORKED THROUGH at Patch 4098.** With the
+helicity bit b ∈ {+1,−1}, the QM-5 site operator becomes ĉ_{i,b}, giving {a_{k,b}, a†_{k',b'}} = δ_{kk'}δ_{bb'}
+— two fermionic states per spatial mode. Same-bit pairs: strict SSV exclusion (same quantum state) → ĉ_{i,b}² = 0.
+Opposite-bit pairs: distinguishable by DP arc cohort direction (Patch 4097 ruling) → Coulomb cost only, not strict
+exclusion → ĉ†_{i,+1}ĉ†_{i,−1} ≠ 0 (Pauli doubling). Proof: unchanged eigenmode-orthonormality argument applied
+per spin sector. Total states: 120 × 2 = 240 per species. This addresses OPEN-QM-3 (spin-½ part) via the
+helicity-bit route, **conditional on χ₄ adoption**. QM-5 formal revision deferred until χ₄ adoption.
+Sketch: `series_quantum_mechanics/sketches/4098_theo_qm10_helicity_bit_revision.md`;
+verify: `series_quantum_mechanics/code/4098_theo_qm10_helicity_bit_verify.py` (ALL CHECKS PASS).
 
 **Not assessed here:** the transcript's even/odd address scheme, the orbital-DP-as-artifact suggestion, and the
 W⁰ bracelet's eCP/qCP even–odd relationships. Each is a separate question; the even/odd scheme in particular is
@@ -857,6 +862,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4098** — **THEO-QM-10 revision sketch: two-slot Pauli doubling from helicity bit (§2j B5 worked through).** With the helicity bit b ∈ {+1,−1}, the QM-5 site operator ĉ_i extends to ĉ_{i,b}. Same-bit pairs: strict exclusion (ĉ_{i,b}² = 0). Opposite-bit pairs: distinguishable by DP arc cohort direction (Patch 4097) → Coulomb cost only → ĉ†_{i,+1}ĉ†_{i,−1} ≠ 0. Mode algebra {a_{k,b}, a†_{k',b'}} = δ_{kk'}δ_{bb'} from eigenmode orthonormality (unchanged proof, per spin sector). 120 × 2 = 240 states; spin-½ fermions. Addresses OPEN-QM-3 (spin-½ part) conditionally (on χ₄ adoption). QM-5 formal revision deferred. Verify ALL PASS. **No verdict moved.**
 - **4097** — **Founder ruling on DP arcs; two todolist items; R2 filed (§§2aa, filter table).** Founder (18 Sep): *"the velocity of the particle is not something the CP carries intrinsically. The KE/momentum/inertia/velocity of a CP is carried by the DP arcs established during acceleration."* Corpus: SF-6 DP-arc cohort (Patch 3202); inertia sketch Patch 2496 (CP has no intrinsic KE). Implication: free particle has persistent DP arcs → b ≠ 0; confined quark has arcs continuously severed/re-established in all directions → ⟨b⟩ = 0. F3/F2 physical mechanism now founder-endorsed. F3 filter upgraded from "CONDITIONAL (no picture)" to "CONDITIONAL — founder-endorsed." TODO-4096-F3 ANSWERED. TODO-4097-R2 filed (δ_CP ≠ 600-cell angle — negative result formally in permanent record). CLOSED-EW-NOTE-001 added to frontier_sectors/EW.md. No verdict moved.
 - **4096** — **Empirical reconciliation + OPEN-SM-11 registration (§2aa).** F3: new structural argument (free vs confined replaces failed capture criterion); confined quarks have ⟨b⟩=0 (cage randomizes v), cage sees no helicity bias → strong force P-even; same logic covers EM sea DPs. Founder asked for physical picture; response: "I have no explanation." F3 CONDITIONAL, registered as PD-006(a) open question TODO-4096-F3. R2: 600-cell vertex-vertex angles are multiples of 36° only; δ_CP ≈ 65.5° is NOT a 600-cell angle; 66.1° hit was from 216-vertex non-standard build. F5 derivation referred to SF-2 via OPEN-SM-11. R3: χ₄ passes all direct parity measurements; CP sectors deferred to CHIR/W3. Thomas: "open a series and lane to refer to SF-2 for the theorem derivation." OPEN-SM-11 registered in frontier_sectors/SM.md, corresponding to SF-3's long-owed OPEN-FP-3-CKM frontier entry. **No verdict moved.**
 - **4095** — **PD-008 fresh-window audit (§2z).** §2q: constant c falsified by P = −v/c and by CONT-2's own ½(1+v); per-Moment write [PCD-EXT] derives (1−hβ)/2 and makes maximality non-tunable; sign still assumed. §2r: χ₄ conserves CP ⇒ η_B = 0 either hand ⇒ F8 weakened to one data contact; cosmological sector needs sign(δ). 4082: verdict stands on a frame-independent ground (unequal per-event shares, p*/M_W in the CM frame); printed Nexus-frame mechanism withdrawn. New falsifier: ²⁰Na sidereal bound 2×10⁻⁴ vs 1.2×10⁻³. Hazards: "spin bit" collides with SR-2; Compton-scale orbit vs single-cell planes. **No verdict moved.**

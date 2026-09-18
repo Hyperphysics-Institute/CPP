@@ -101,14 +101,17 @@ Earlier **Last updated:** 4 Aug 2026 (Patch 2997 — **QM-1 v2.0 REVISION SHIPPE
 ---
 
 ### OPEN-QM-3: Spin-½ and Pauli Exclusion from Cage Geometry
-**Status:** OPEN
+**Status:** OPEN — **PARTIAL PROGRESS via helicity-bit route, Patch 4098 (18 Sep 2026).**
 **Sector(s):** QM
 **Priority:** HIGH
 **One-line statement:** Derive s = 1/2 from ZBW orbital topology; derive Pauli exclusion from hDP chain antisymmetry.
+
+**Patch 4098 progress note (helicity-bit route, conditional on χ₄):** With the helicity bit b ∈ {+1,−1} from χ₄, the QM-5 site operator extends to ĉ_{i,b}, giving {a_{k,b}, a†_{k',b'}} = δ_{kk'}δ_{bb'} — TWO fermionic states per spatial mode (Pauli doubling). This provides the spin-½ degeneracy OPEN-QM-3 requires, by a different route than the ZBW-topology programme stated here. The derivation re-uses the unchanged eigenmode-orthonormality proof from QM-5, applied per spin sector. Verify script: `series_quantum_mechanics/code/4098_theo_qm10_helicity_bit_verify.py` (ALL CHECKS PASS). Sketch: `series_quantum_mechanics/sketches/4098_theo_qm10_helicity_bit_revision.md`. **This does NOT close OPEN-QM-3:** (a) conditional on χ₄ adoption (the sign question is still open); (b) the "hDP chain antisymmetry" route for Pauli exclusion is not addressed; (c) the ZBW-orbital-topology route for s = 1/2 is not addressed. If χ₄ is adopted, the spin-½ (two-slot) part of OPEN-QM-3 is addressed by this route; the antisymmetry part remains.
+
 **Dependencies:** None blocking
-**Cross-sector connections:** Connects to the inner/outer ZBW orbital relationship (CONJ-P-SS-1, corrected: radius ratio 2, angular-frequency ratio 2√2 — NOT a 2:1 frequency; phase-locked; registered as THEO-SPIN-1 v1.1, Patch 0572f)
+**Cross-sector connections:** Connects to the inner/outer ZBW orbital relationship (CONJ-P-SS-1, corrected: radius ratio 2, angular-frequency ratio 2√2 — NOT a 2:1 frequency; phase-locked; registered as THEO-SPIN-1 v1.1, Patch 0572f). Also connects to χ₄ (EW lane, chirality axiom maturation) via the helicity-bit route.
 **Paper(s):** QM-6, QM-7
-**Last updated:** 23 March 2026
+**Last updated:** 18 Sep 2026 (Patch 4098 — helicity-bit route progress note added)
 
 ---
 
