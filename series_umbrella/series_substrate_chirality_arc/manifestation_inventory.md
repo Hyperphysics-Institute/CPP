@@ -20,9 +20,19 @@ The five manifestations are not arbitrary. They correspond to the five places in
 | (i) | K3-doublet mass-mixing chirality | SM | **CLOSED** | Capotauro v1.0 | THEO-CAP-1 | Publication-grade L3 |
 | (ii) | Electroweak V−A coupling (substrate-level) | SEW | **CLOSED** | Capotauro v2.0 | THEO-SD-CHIR-1 | Publication-grade L3 |
 | (ii) | Electroweak V−A coupling (Layer 4 EFT) | SEW | **CLOSED** | Chirality Continuum | THEO-CHIR-CONT-2 | Layer 4 EFT |
-| (iii) | Electromagnetic-handedness | SEM | **OPEN** | — | — | — |
-| (iv) | Thermodynamic causal-arrow direction | SD | **CLOSED at sketch-document L3** | F.1 Dynamical Substrate Law | THEO-DSL-3 | Sketch-document L3 (umbrella) + Publication-grade L3 (building blocks) |
+| (iii) | Electromagnetic-handedness | SEM | **STRUCK 17 Sep 2026 (Patch 4069/4070, recorded 4088)** — **not a manifestation of chirality**: the EM right-hand rule is a convention with no P-odd content (v·B and E·B vanish identically for a moving charge; magnetostatics rebuilt left-handed gives bit-identical forces; the same physics is expressible in a bivector form with no hand) | — | — | — |
+| (iv) | Thermodynamic causal-arrow direction | SD | **RE-FILED 17 Sep 2026 (Patch 4071, recorded 4088)** — this is **T-odd, not P-odd**: it is the time-reversal asymmetry the corpus already carries as sign(δ) (TARROW-1/2, W3), and 4068 showed δ breaks T *without* breaking P. Belongs to the arrow question, not to the chirality primitive. Closure status under THEO-DSL-3 is unaffected; only its filing under this umbrella is wrong | F.1 Dynamical Substrate Law | THEO-DSL-3 | Sketch-document L3 |
 | (v) | Cosmological-vacuum asymmetry | SD / cosmology | **OPEN** | — | — | — |
+
+> **CORRECTION NOTICE (Patch 4088, 17 Sep 2026, EW lane).** Two of the five manifestations do not belong to
+> this umbrella. **(iii) Electromagnetic handedness is struck**: 4069 and 4070 established that the EM
+> right-hand rule carries no parity-odd content — v·B and E·B vanish identically for a moving charge,
+> magnetostatics rebuilt under the left-hand convention gives bit-identical forces, and the same physics is
+> expressible with a bivector that has no hand to choose. A parity-odd EM effect would contradict experiment.
+> **(iv) The thermodynamic causal arrow is re-filed**: it is T-odd, not P-odd (4068: δ breaks T without
+> breaking P), and belongs with TARROW-1/2 at W3. **The umbrella therefore has three genuine manifestations,
+> not five: (i) K3-doublet chirality, (ii) electroweak V−A, and (v) cosmological vacuum asymmetry.** Three
+> disjoint sectors still clears PD-007's carried-across-phenomena bar (Patch 4084).
 
 ## Per-manifestation detail
 

@@ -1984,6 +1984,15 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4088-EW — owed items cleared: SF-6 check clean, inventory corrected, F5→CKM registered (registered Patch 4088, EW lane)
+
+- **SF-6 FOURTH-AXIS CHECK — CLEAN (owed since 4075).** Full scan of SF-6 (61,144 chars): **zero** references to a fourth coordinate in any derivation; the single "4D" hit is inside SF-6's own OPEN-SD-CHIR-PRIMITIVE problem statement. **Reading A (EM reads 3-space only) is free to adopt — it revises nothing.** F2's condition is satisfiable at zero cost. **Does NOT upgrade F2 to a consequence** (4086: still a specification). `code/4088_sf6_fourth_axis_check.py`, `reasoning/4088.md`.
+- **MANIFESTATION INVENTORY CORRECTED (owed since 4071/4084).** `manifestation_inventory.md`: **(iii) EM handedness STRUCK** (a convention with no P-odd content, 4069/4070); **(iv) causal arrow RE-FILED** as T-odd not P-odd (4068), closure under THEO-DSL-3 unaffected. **Three genuine manifestations, not five** — still clears PD-007 (4084). **Lane: SD/SSCA — DONE.**
+- **F5 → CKM DEPENDENCY REGISTERED** in `frontier_sectors/EW.md`: the CP-violation filter cannot close inside the chirality arc; it needs an O(1) phase near 68.5° **and** the CKM angles (SF-2's generation-transition problem, 4087). **Lane: EW — DONE.**
+- **REMAINING OPEN, all registered:** F5 (reduced to CKM, 4087); F2/F3 (SM-level specifications, 4086); maximality not derived (4083); **founder's adoption decision** (4086). Lattice thread: BC-helix bundling to z = 12 (4078). **Lane: EW/SM/SR (founder for adoption).**
+
+---
+
 ### TODO-4087-EW — F5 reframed: 4085's factor-400 verdict withdrawn (registered Patch 4087, EW lane)
 
 - **MY 4085 COMPARISON WAS ILL-POSED.** J = s12·s13·s23·c12·c13²·c23·sin δ_CP = 3.133e-5 (PDG 3.08e-5). The **angle product alone is 3.366e-5 — a 29,706× suppression** — while **sin δ_CP = 0.931 is O(1)**. **J is small because the mixing is small, not because CP violation is weak.** The "δ³ is 400× too large" verdict is **withdrawn**. `code/4087_f5_reframed.py`, `reasoning/4087.md`.
