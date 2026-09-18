@@ -114,7 +114,7 @@ and two stipulations.
 - **Step A** (Tier 1 session log): N/A — this session's per-patch fragments carry the log; no separate Tier 1 file.
 - **Step B** (Tier 2 transcript): N/A — no transcript session.
 - **Step C** (Tier 3 vignette): N/A.
-- **Step D** (Tier 4 reasoning): ✓ — verbatim fragments at `series_standard_model/reasoning/4063–4092.md` and
+- **Step D** (Tier 4 reasoning): ✓ — verified file-by-file at Patch 4094: every patch 4063–4092 has a fragment (4065 and 4067 were never used; 4093 is a session-close patch and exempt by content). Fragments at `series_standard_model/reasoning/4063–4092.md` and
   `series_umbrella/.../reasoning/0991–0993.md`, one per patch, none exempt.
 - **Step E** (registries, per-registry audit):
   - `research_frontier.md` ✓ — updated every patch.
@@ -127,6 +127,18 @@ and two stipulations.
   - `paper_catalog` / `predictions` N/A — no paper shipped, no prediction registered.
   - `master_glossary` N/A. `methods_catalogue` N/A. `organizational_frontier` N/A.
 - **Step F** (reviewer artifacts): N/A — no panel convened, by design.
+- **§15.15 CAPTURE AUDIT — RUN LATE, AT PATCH 4094, AND IT FAILED ON FOUNDER VERBATIM.** The Session-232 close
+  (Patch 4093) executed Steps A–H but **did not run the §15.15 capture audit**, which per CONV-009 also covers
+  **founder verbatim**. Run on the founder's prompt afterwards, it found **one** `founders_voice/` capture for a
+  session containing **seven** founder rulings, ideas and standards. The other six were recorded verbatim in
+  `todolist.md` and the maturation document — so nothing was lost — but not in the location CONV-009 designates
+  as the primary source. **Fixed at Patch 4094:** `founders_voice/0994_ruling_linear_ecp_carries_mass.md`,
+  `4064_ruling_decoration_points_are_gps.md`, `4073_ruling_no_second_rotation_plane.md`,
+  `4074_ruling_fourth_dimension_is_an_address_axis.md`, `4082_ruling_bracelet_absorbs_captured_momentum.md`,
+  `4089_idea_fourth_axis_as_axis_of_oscillation.md`, `4093_standard_adopt_only_after_a_clean_win.md`.
+  **This is the exact failure mode §15.15 was written to catch** ("zero founders_voice captures were made across
+  an entire session of founder physics"), and it was again caught only on the founder's prompt — the second time
+  the OS records that. A fresh window should treat the capture audit as part of Step E, not as an optional extra.
 - **Step G** (protocol/OS updates): N/A — no OS change; the numbering trap is recorded here and in the registry.
 - **Step H** (this handover document): ✓ — `handovers/2026-09-17_session_232_ew_lane_chirality_axiom_maturation.md`.
 

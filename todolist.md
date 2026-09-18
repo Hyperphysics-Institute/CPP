@@ -1984,6 +1984,16 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4094-EW — §15.15 capture audit run late; seven founder captures filed (registered Patch 4094, EW lane)
+
+- **THE HANDOVER PROTOCOL WAS NOT FULLY EXECUTED AT 4093.** Steps A–H ran, but the **§15.15 capture audit did not** — and per CONV-009 it covers **founder verbatim**, not only fragments and scripts. Run afterwards on the founder's prompt: **1 `founders_voice/` capture for 7 founder rulings/ideas/standards**.
+- **NOTHING WAS LOST** — the other six were verbatim in `todolist.md` and the maturation document — **but not in CONV-009's designated primary location**. **Fixed at 4094:** seven files created (`0994`, `4064`, `4073`, `4074`, `4082`, `4089`, `4093` in `founders_voice/`), verbatim unaltered, each with what it settled.
+- **THIS IS THE EXACT FAILURE §15.15 EXISTS TO CATCH** ("zero founders_voice captures … across an entire session of founder physics"), caught again **only on the founder's prompt** — the second time the OS records that.
+- **Step D re-verified file-by-file:** every patch 4063–4092 has a reasoning fragment; 4065/4067 never used; 4093 exempt by content (session close).
+- **(1) FOR THE NEXT WINDOW:** treat the **§15.15 capture audit as part of Step E**, not an optional extra, and run it **incrementally** (every ~5 substantive patches) as §15.15 already requires — a close-only net cannot bound loss in a long session. **Lane: EW.**
+
+---
+
 ### TODO-4093-EW — Session 232 close: what the next window should take up (registered Patch 4093, EW lane)
 
 - **HANDOVER FILED:** `handovers/2026-09-17_session_232_ew_lane_chirality_axiom_maturation.md` — Steps A–H audit included. Patches 4063–4092 plus 0991–0994. **No verdict moved all session; the axiom is NOT adopted** (founder holds pending a clean win).
