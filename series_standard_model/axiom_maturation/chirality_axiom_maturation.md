@@ -498,7 +498,7 @@ and become consequences.**
 |---|---|
 | F1, F1a | done (4072, 4074) |
 | F2 | conditional (4075) — becomes a consequence if the capture distinction holds |
-| **F3** | **clause, not result** — same fate as F2 |
+| **F3** | **CONDITIONAL (4096)** — new structural argument: confined quarks have ⟨b⟩=0 (cage randomizes v while ω is conserved), so the cage sees no net helicity bias → strong force P-even. Same logic covers EM via sea DPs. Argument is worker-proposed; founder has no physical picture for the free-vs-confined distinction (session 233). Registered as open PD-006(a) founder question at TODO-4096-F3. Capture criterion (4086) still failed. |
 | F4 | pattern passes (4072/4085); maximality not derived (4083) |
 | **F5** | **REFRAMED (4087)** — 4085's comparison was ill-posed (J contains a 29,706× mixing suppression); the axiom needs an O(1) phase near 68.5°, and the angles belong to the separate CKM problem. Not solved, not a χ₄ failure |
 | **F6** | **done (4085)** — and it forces the polarity clause |
@@ -697,6 +697,90 @@ a different object; use **helicity bit** for this one. And legs "second plane �
 (2w–2y) identify a **Compton-scale** SPIN-1 orbit with **single-cell** lattice plane pairs — never argued;
 **both ticks are conditional on it** (TODO-4095-EW-c).
 
+## 2aa. Empirical reconciliation and OPEN-SM-11 registration (4096)
+
+**Session 233, Patch 4096. Trigger:** Thomas: *"examine if this candidate can be reconciled
+with empirics … open a series and lane to refer to SF-2 for the theorem derivation as to
+why this CP-violating phase would be present in the Corpus."*
+
+### F3 — new structural argument replacing the capture criterion
+
+**Capture criterion (4086) failed:** the strong sector captures too (Z/H cages, quark confinement).
+The session found a different structural distinction that the capture criterion conflated.
+
+**The free-vs-confined distinction:**
+
+*Free particle (W-bracelet incoming charge):* velocity direction is persistent — the particle
+travels in a definite direction. ω tracks the momentum. b = sign(ω·v) is non-zero and persistent.
+The bracelet reads a biased bit stream → parity violation.
+
+*Confined particle (quark in cage):* confinement force randomizes v every Moment. ω is a
+conserved quantity but v is isotropically random. ⟨sign(ω·v)⟩ = 0 exactly by isotropy.
+Verified: ⟨b_confined⟩ = 0.003 ± 0.002, consistent with zero at 1.4σ. The cage SSV comparison
+receives no net helicity bias → strong force P-even.
+
+Same logic for EM: Sea DPs have random ZBW phases → ⟨b_sea⟩ = 0 → EM P-even under Reading A.
+
+| interaction | particle state | ⟨b⟩ | linear in b | P-even/odd |
+|---|---|---|---|---|
+| Weak (W-bracelet) | FREE incoming charge | −β ≠ 0 | yes (D₆ degeneracy) | P-odd ✓ |
+| EM (sea exchange) | CONFINED sea DPs | = 0 | no (magnitude coupling) | P-even ✓ |
+| Strong (cage hop) | CONFINED quarks | = 0 | no (cage SSV dominates) | P-even ✓ |
+
+**Status: CONDITIONAL.** The argument needs one corpus confirmation: the per-Moment write
+rule applies specifically to particles with a PERSISTENT velocity direction. **Founder's
+response (session 233): "I have no explanation."** The argument is the worker's proposal,
+not yet the founder's. F3 therefore remains conditional. Registered as TODO-4096-F3.
+
+**Convenient branch, marked.** The capture criterion failed; this distinction works.
+What would overturn it: a corpus statement that confined quarks maintain persistent v.
+
+### R2 — 600-cell angle search: δ_CP is NOT a 600-cell vertex angle
+
+The genuine 120-vertex 600-cell has inner products at only eight values:
+±1, ±φ/2, ±1/2, ±1/(2φ), giving angles 36°, 60°, 72°, 90°, 108°, 120°, 144°, 180°.
+
+No angle is within 1.5σ of δ_CP = 65.5° ± 3.3°. Closest: 60° (−1.67σ) and 72° (+1.97σ).
+An earlier apparent hit at 66.1° (cos θ = φ/4) was from a 216-vertex non-standard build.
+It is NOT a genuine 600-cell angle.
+
+**Consequence for F5:** δ_CP does NOT emerge from 600-cell vertex-vertex geometry.
+The required O(1) substrate phase must come from SF-2's generation-transition structure.
+**F5 is correctly assigned to the SF-2 lane.** Nothing here closes or reopens F5.
+
+Structural observation recorded (not a derivation): two 600-cell angles bracket δ_CP
+(60° and 72°; mean = 66°). If SF-2's generation transitions combine inter-shell angles,
+the CP phase could land in range. Lane: SF-2 via OPEN-SM-11.
+
+### OPEN-SM-11 registered per Thomas's instruction
+
+Thomas instructed (18 Sep 2026): "open a series and lane to refer to SF-2 for the theorem
+derivation as to why this CP-violating phase would be present in the Corpus."
+
+SF-3 §8 had registered OPEN-FP-3-CKM with the note "to be entered in the frontier registry
+at ship time via a flagged integration patch" — that entry was never filed. This patch
+files it as **OPEN-SM-11** in `frontier_sectors/SM.md`.
+
+- **What is needed:** SF-2's generation-transition mechanism extended to derive CKM mixing
+  angles and δ_CP. SF-2 already derives sin²θ_W and α_s from 600-cell mode fractions; CKM
+  is the natural next target.
+- **F5 gate:** OPEN-SM-11's closure would also close χ₄'s F5.
+- **Lane:** SM (SF-2 vehicle).
+
+### Full empirical compatibility (session 233 result)
+
+χ₄ reconciles with ALL direct parity-violation measurements. No known experimental result
+refutes it. Summary:
+
+- **PASSES:** β-decay polarization P = −v/c, muon decay, neutrino handedness, W-boson V−A,
+  τ-decay lepton spectrum.
+- **CONDITIONAL:** EM P-even (SF-6 Reading A), strong P-even (free-vs-confined, pending
+  founder), Δp_LR sign correct (no independent measurement).
+- **DEFERRED:** Z-boson A_e (SF-2 Weinberg angle), CP violation η_B (CHIR/W3 sign(δ)).
+- **OPEN:** F5 Jarlskog J (OPEN-SM-11, SF-2 lane).
+- **WORDING CONSTRAINT:** ²⁰Na sidereal bound 2×10⁻⁴ excludes parent-bit wording; emitted-leg
+  wording survives.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -773,6 +857,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4096** — **Empirical reconciliation + OPEN-SM-11 registration (§2aa).** F3: new structural argument (free vs confined replaces failed capture criterion); confined quarks have ⟨b⟩=0 (cage randomizes v), cage sees no helicity bias → strong force P-even; same logic covers EM sea DPs. Founder asked for physical picture; response: "I have no explanation." F3 CONDITIONAL, registered as PD-006(a) open question TODO-4096-F3. R2: 600-cell vertex-vertex angles are multiples of 36° only; δ_CP ≈ 65.5° is NOT a 600-cell angle; 66.1° hit was from 216-vertex non-standard build. F5 derivation referred to SF-2 via OPEN-SM-11. R3: χ₄ passes all direct parity measurements; CP sectors deferred to CHIR/W3. Thomas: "open a series and lane to refer to SF-2 for the theorem derivation." OPEN-SM-11 registered in frontier_sectors/SM.md, corresponding to SF-3's long-owed OPEN-FP-3-CKM frontier entry. **No verdict moved.**
 - **4095** — **PD-008 fresh-window audit (§2z).** §2q: constant c falsified by P = −v/c and by CONT-2's own ½(1+v); per-Moment write [PCD-EXT] derives (1−hβ)/2 and makes maximality non-tunable; sign still assumed. §2r: χ₄ conserves CP ⇒ η_B = 0 either hand ⇒ F8 weakened to one data contact; cosmological sector needs sign(δ). 4082: verdict stands on a frame-independent ground (unequal per-event shares, p*/M_W in the CM frame); printed Nexus-frame mechanism withdrawn. New falsifier: ²⁰Na sidereal bound 2×10⁻⁴ vs 1.2×10⁻³. Hazards: "spin bit" collides with SR-2; Compton-scale orbit vs single-cell planes. **No verdict moved.**
 - **4086** — the capture criterion **fails**: SF-2's own framework captures in the strong sector too (Z/H cages, quark confinement), so capture separates EM from weak+strong but not weak from strong; the "transmutation" refinement is the same stipulation reworded. Honest comparison: F2/F3 leave CPP level with the SM (which also stipulates the parity assignment), while F5 is a gap by CPP's **own** zero-parameter standard.
 - **4085** — F6 done and it **forces** the polarity clause (b is CPT-odd, so a linear term needs a C-odd coefficient); F5 **fails quantitatively** (δ³ ~400× too large, δ⁹ ~13× too small vs J = 3.08e-5); F3 remains a clause, with the capture-vs-polarisation distinction as the candidate that would turn F2 and F3 into consequences. **Not panel-ready.**

@@ -168,6 +168,34 @@
 
 ---
 
+### OPEN-SM-11: CKM Mixing Matrix and Quark CP Phase
+**Status:** OPEN — **registered 18 Sep 2026, Patch 4096 (EW/SM cross-lane); corresponds to OPEN-FP-3-CKM from SF-3 §8, which promised frontier entry at ship time but was never filed.**
+**Sector(s):** SM, EW
+**Priority:** HIGH — **gates χ₄'s F5 filter (chirality axiom maturation, §4 filter table)**
+**One-line statement:** Derive the CKM quark mixing matrix elements and the quark CP-violating phase δ_CP ≈ 65.5° from SF-2's generation-transition structure.
+
+**Thomas's instruction (18 Sep 2026, session 233):** *"open a series and lane to refer to SF-2 for the theorem derivation as to why this CP-violating phase would be present in the Corpus."*
+
+**What a solution looks like:** SF-2's generation-transition mechanism (which already produces the Weinberg angle sin²θ_W = 3/(8φ) and the strong coupling α_s = 5/(8φ)) is extended to derive the three CKM mixing angles θ₁₂, θ₁₃, θ₂₃ and the CP phase δ_CP. A zero-parameter derivation of δ_CP would satisfy χ₄'s F5 filter (the chirality axiom needs an O(1) substrate phase near 65.5° to account for J ≈ 3.08×10⁻⁵). A calibrated derivation (one mixing parameter fitted) would at minimum constrain the form.
+
+**What is known (from session 233 empirical reconciliation, Patch 4096):**
+- The genuine 120-vertex 600-cell has vertex-vertex angles only at multiples of 36° (36°, 60°, 72°, 90°, 108°, 120°, 144°, 180°). None is within 1.5σ of δ_CP = 65.5° ± 3.3°. **δ_CP does NOT emerge from vertex-vertex 600-cell geometry alone.**
+- Two 600-cell angles bracket δ_CP: 60° (−1.67σ) and 72° (+1.97σ). Their mean is 66°. If SF-2's generation structure produces δ_CP as a mixture of these inter-shell transition angles, the magnitude can land in range. This is a conjecture, not a derivation.
+- Cabibbo angle 13.04° is also not a 600-cell vertex-vertex angle (closest is 15.5°, 2.5° off).
+
+**F5 connection (χ₄ maturation):** χ₄ conserves CP exactly (§2s, forced by CPT on the polarity clause). Therefore χ₄ gives J = 0 on its own. F5 requires a second source — candidate sign(δ) via CPT (already in corpus at W3/CHIR) **plus** an O(1) phase near 65.5° that must come from the generation-mixing structure. OPEN-SM-11 is the problem whose closure would close F5.
+
+**Parallel structure within the SF series:** SF-3 §8 states this is "structurally parallel to SF-4's open neutrino δ_CP in the limited sense that both flagships derive masses while deferring a mixing-sector CP observable." Both are "masses derived, mixing-sector open."
+
+**Lane assignment:** SM lane for theorem derivation; SF-2 is the primary vehicle (generation-transition structure is SF-2's domain). Cross-connection to SF-3 (quark masses) and SF-4 (neutrino sector, where a parallel PMNS open problem exists at OPEN-SM-5).
+
+**Dependencies:** SF-2 v1.05 generation-transition structure (shipped); OPEN-SM-4 (Capotauro mechanism — δ_CP and Δp_LR = χ/6 are its magnitude anchors, per OPEN-SM-4 cross-sector note)
+**Cross-sector connections:** OPEN-SM-4 (Capotauro), OPEN-SM-5 (PMNS — parallel structure), OPEN-FP-3-CKM (SF-3 §8 original registration), χ₄ F5 filter (chirality axiom maturation, EW lane)
+**Paper(s):** SF-2 (primary vehicle); SF-3 §8 (original registration as OPEN-FP-3-CKM)
+**Last updated:** 18 Sep 2026 (Patch 4096 — initial frontier registration)
+
+---
+
 ### OPEN-SD-lattice-scale: CPP Lattice-to-SI Conversion Constant
 **Status:** OPEN
 **Sector(s):** SD, GLOBAL

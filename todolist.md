@@ -1984,6 +1984,34 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4096-F3 — F3 (strong sector P-evenness): founder physics-picture question UNANSWERED (registered Patch 4096, EW lane)
+
+**Why this entry exists:** Session 233 found a new structural argument for F3 (the free-vs-confined distinction, replacing the failed capture criterion). The argument was put to Thomas as a physical-picture question: *does the per-Moment write rule apply exclusively to particles with a persistent velocity direction?* **Thomas's response: "I have no explanation."**
+
+**Status:** The free-vs-confined argument is the WORKER'S proposal, not yet endorsed by the founder. F3 therefore remains CONDITIONAL in the chirality axiom maturation document.
+
+**What the argument says:** Confined quarks have their velocity direction randomized every Moment by the cage potential. The ZBW spin ω is conserved but v is isotropic → ⟨sign(ω·v)⟩ = 0. The cage SSV comparison receives no net helicity bias from confined quarks → strong force P-even. Same for EM sea DPs (also isotropically random). Free incoming charges (W-bracelet case) have persistent v → b ≠ 0 → parity violation.
+
+**What is needed from the founder:** a physical picture confirming (or denying) that the per-Moment write rule fires only when a particle has a persistent velocity direction. This is a PD-006(a) question — physics framed in a physical picture.
+
+**Consequence if the argument is endorsed:** F3 and F2 both follow from the free-vs-confined distinction, replacing the failed capture criterion. Both become CONDITIONAL PASSES, not clauses.
+
+**Consequence if it is not endorsed or is denied:** F3 and F2 remain clauses without a structural explanation (same situation as before this session). The axiom's reconciliation with experiment is then weaker but not refuted (the SM also stipulates F2/F3 without deriving them).
+
+**Lane:** EW (founder physics question).
+
+### TODO-4096-SM11 — OPEN-SM-11 registered; SF-2 derivation of δ_CP is now a formal open problem (registered Patch 4096, SM/EW cross-lane)
+
+**What was done:** OPEN-FP-3-CKM from SF-3 §8 (promised to frontier at SF-3's ship time, never entered) is now registered as **OPEN-SM-11** in `frontier_sectors/SM.md`. Thomas's instruction: "open a series and lane to refer to SF-2 for the theorem derivation as to why this CP-violating phase would be present in the Corpus."
+
+**Key finding that motivated this:** The genuine 600-cell has vertex-vertex angles only at multiples of 36°. No angle is within 1.5σ of δ_CP = 65.5° ± 3.3°. The CKM phase does NOT emerge from vertex-vertex 600-cell geometry alone and must come from SF-2's generation-transition structure.
+
+**Next action:** SF-2 lane session targeting the generation-transition mechanism's extension to CKM mixing angles. SF-2 already derives sin²θ_W and α_s from the 600-cell mode spectrum; the CKM matrix is the next natural target. The lane is SM, the vehicle is SF-2.
+
+**F5 gate:** OPEN-SM-11's closure would also close χ₄'s F5 filter (the chirality axiom needs an O(1) phase near 65.5° for CP violation). Until OPEN-SM-11 is solved, no panel on χ₄.
+
+**Lane:** SM (SF-2 vehicle).
+
 ### TODO-4094-EW — §15.15 capture audit run late; seven founder captures filed (registered Patch 4094, EW lane)
 
 - **THE HANDOVER PROTOCOL WAS NOT FULLY EXECUTED AT 4093.** Steps A–H ran, but the **§15.15 capture audit did not** — and per CONV-009 it covers **founder verbatim**, not only fragments and scripts. Run afterwards on the founder's prompt: **1 `founders_voice/` capture for 7 founder rulings/ideas/standards**.
