@@ -1984,6 +1984,18 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4086-EW — the capture criterion fails; the remaining clauses sized against the SM (registered Patch 4086, EW lane)
+
+- **CAPTURE CRITERION FAILS.** SF-2's own framework **captures in the strong sector too** — quarks confined, Z built as an icosahedral cage (12-vertex first shell), H as a dodecahedral cage (20-vertex second shell), all verified independently here with the 12/20 mass gap. **Capture separates EM from weak+strong, but not weak from strong** — which is the separation F3 needs. My 4085 "most valuable open item" is closed negative. `code/4086_capture_criterion_fails.py`, `reasoning/4086.md`.
+- **THE REFINEMENT DOES NOT RESCUE IT:** "only transmuting processes read the bit" names the weak interaction rather than explaining it — the same stipulation reworded.
+- **PROPORTION, both ways:** **F2/F3** are **no worse than the Standard Model**, where "only the weak interaction violates parity" is also undeserved — it is the SU(2)-on-left-handed-doublets representation choice. **F5** is **worse than CPP's own standard**: the SM does not predict J either (free parameter), but CPP claims zero free parameters, so leaving J unexplained is a gap by CPP's own bar.
+- **STATE OF THE ARC:** every route to a *derived* P-odd source is closed (4046, 4068–4071, 4082). χ₄ + helicity write rule survives as an **encoding**: F6 forces its polarity clause; F8 gives one sign across three sectors; F2/F3 are SM-level stipulations; **F5 is open**.
+- **(1) FOUNDER DECISION, when he wants it (not asked this patch):** adopt the axiom with its stipulations (parity with the SM, economical across three sectors), or hold until F5 has a route. **The panel should not be convened until F5 is solved or consciously accepted as open.** **Lane: EW (founder).**
+- **(2) F5 — the only substantive item left.** No route in hand. Speculative attack worth trying: can J's smallness come from the ratio of the bracelet's D₆ phase bias to the cage scale, rather than from a power of δ? Bounded. **Lane: EW.**
+- **(3) Carried:** SF-6 4th-axis linear-use check (4075); BC-helix bundling to z = 12 (4078); `manifestation_inventory.md` correction (4084). **Lane: EW/SR/SD.**
+
+---
+
 ### TODO-4085-EW — CPT forces the polarity clause; F5 fails; the axiom is NOT panel-ready (registered Patch 4085, EW lane)
 
 - **F6 DONE, and it FORCES a clause I had left optional.** b = sign(ω·v) is **P-odd, C-even, T-even** ⇒ **CPT-odd**, so a bare linear term with constant coefficient is **forbidden**; it is allowed only if the coefficient is **C-odd**, i.e. the sign **flips with polarity**. **The 4072 §3 polarity clause is required by CPT, not optional.** With it: P violated, C violated, CP conserved, CPT conserved. `code/4085_f3_f5_f6_readiness.py`, `reasoning/4085.md`.

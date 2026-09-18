@@ -508,6 +508,39 @@ and become consequences.**
 
 **The axiom is not panel-ready.** F5 is an open problem and F3/F2 rest on an untested distinction.
 
+## 2t. The capture criterion FAILS (4086) — and the honest comparison with the Standard Model
+
+**4085 registered the capture distinction as the most valuable open item.** If the weak interaction were special
+because it **captures** a CP while EM merely polarises the sea, linearity in b would follow from capture and
+F2/F3 would stop being clauses. **Tested; it does not work.**
+
+| interaction | captures? | reads |
+|---|---|---|
+| weak (W bracelet, SF-2 §5) | **yes** — external charge captured at the D₆ centroid | the captured CP's own state |
+| strong (quark confinement, Z/H cages) | **yes** — quarks confined in cage structures | the confined CPs' states |
+| EM (SF-6 DP-sea polarisation) | **no** — polarises the sea, captures nothing | displacement magnitudes |
+
+**Capture separates EM from the other two but NOT weak from strong.** SF-2's own framework builds the Z
+(icosahedral cage, 12-vertex first shell) and H (dodecahedral cage, 20-vertex second shell) by confinement, and
+confines quarks — all verified independently here, including the 12/20 mass-gap structure. **The criterion I
+proposed fails to do the work asked of it.**
+
+**The sharper criterion, and why it is still a stipulation.** What *is* unique to the weak interaction is that it
+**transmutes** the captured particle (flavour change), whereas confinement binds without transmuting. But *"only
+transmuting processes read the bit"* is the same stipulation in new words: it names the weak interaction rather
+than deriving why it alone is linear in b.
+
+### How bad are the remaining clauses? The comparison that settles it
+
+- **F2/F3 (only the weak response is linear).** In the **Standard Model** this is *also* not derived — it is the
+  choice that SU(2) acts on left-handed doublets, a representation assignment, stipulated. **So these clauses
+  leave CPP no worse off than the SM.**
+- **F5 (the Jarlskog invariant).** The SM does not predict J either — it is a free parameter. **But CPP's standard
+  is zero free parameters, so leaving J unexplained is a gap by CPP's own standard, not by the SM's.**
+
+**That asymmetry of standards is the honest summary of where the axiom stands:** on parity assignment it matches
+the SM; on CP-violation magnitude it falls short of its own claim.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -582,6 +615,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4086** — the capture criterion **fails**: SF-2's own framework captures in the strong sector too (Z/H cages, quark confinement), so capture separates EM from weak+strong but not weak from strong; the "transmutation" refinement is the same stipulation reworded. Honest comparison: F2/F3 leave CPP level with the SM (which also stipulates the parity assignment), while F5 is a gap by CPP's **own** zero-parameter standard.
 - **4085** — F6 done and it **forces** the polarity clause (b is CPT-odd, so a linear term needs a C-odd coefficient); F5 **fails quantitatively** (δ³ ~400× too large, δ⁹ ~13× too small vs J = 3.08e-5); F3 remains a clause, with the capture-vs-polarisation distinction as the candidate that would turn F2 and F3 into consequences. **Not panel-ready.**
 - **4084** — **F8 PASSES.** Every closed umbrella result is a magnitude (|M| = χ/6 = 0.039345, 1.6% of the η_B-derived anchor); the sign is exactly what they lack and what χ₄ supplies. Pairing operations act with determinate eigenvalues (63/63 flip, 0/63 preserved), so **one** sign fixes all sectors by group theory. Five manifestations are really three after 4069/4070 and 4071 — still clears PD-007.
 - **4083** — ω is defined for a seeding unpaired CP (SPIN-1's captured-DP orbit) and its orientation **must** be free, since that is what makes ω the spin state and b the physical helicity; linear response reproduces longitudinal polarisation from unpolarised sources (1.000 at c = 1), even response gives zero. **Honest accounting: χ₄ encodes V−A, it does not derive it** — the linearity and the universal sign are the irreducible axiom.
