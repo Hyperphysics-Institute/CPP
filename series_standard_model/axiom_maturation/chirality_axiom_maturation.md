@@ -563,6 +563,36 @@ generation-transition problem, **not to chirality**.
 **F5 is not a failure of χ₄, and it is not satisfied** — it is reduced and re-assigned. The chirality arc cannot
 close it; it closes when the generation/mixing problem does.
 
+## 2v. The fourth axis as an axis of OSCILLATION (4089) — founder's idea, assessed
+
+**Founder, 17 Sep:** *"the 4th dimension as an axis of oscillation… Maybe the plus/minus polarity of the CP would
+produce the movement along that axis."*
+
+**The driver fails.** Displacement along w is P-even and polarity is P-even; the rule cannot produce handedness
+(same wall as 4076 B1).
+
+**The oscillation succeeds.** A w-oscillation phase-locked to 3D motion **is** the second rotation plane that 4072
+showed is the only carrier of a pseudoscalar — with **no new variable**.
+
+**The geometry it forces:** a **(w, direction-of-travel)** rotation *plus* a **(transverse)** 3D circulation.
+Together: **helicity**, with w supplying the fourth leg. (My first model used only three dimensions and returned
+identically zero — correctly.)
+
+**Results:** the pseudoscalar goes as **cos(phase)** — maximal in phase/antiphase (±2.8258), zero in quadrature
+(−0.0000) — and **flips with the transverse spin sense**. The hand is (phase sense) × (spin sense).
+
+**SHARP CONSTRAINT:** at a **1:1 frequency ratio the pseudoscalar is exactly zero** — at resonance the two
+circulations lock into a *simple* rotation, which has no handedness. Measured 0.0000 at Ω/ω = 1 versus −2.1000,
+−2.8258, −4.0000 at 1.05, √2, 2. **So the w-oscillation cannot simply be the ZBW; it must be detuned from the
+circulation it pairs with.**
+
+**What it buys:** maximality becomes natural (a driven oscillator locks in phase, not at a tuned angle); the sign
+becomes a mechanical phase rather than an abstract label; and if polarity fixes that phase, the CPT-required
+polarity clause (4085) stops being stipulated.
+
+**What it does not buy:** what fixes the phase for a given polarity is still not derived. **The irreducible sign is
+relocated into a phase convention, not eliminated** — not the clean win the founder is waiting for.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |

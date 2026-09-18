@@ -1984,6 +1984,19 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4089-EW — the fourth axis as an axis of oscillation: worth pursuing, with a constraint (registered Patch 4089, EW lane)
+
+- **FOUNDER'S DRIVER FAILS:** displacement along w is P-even and polarity is P-even, so "polarity drives w-motion" cannot produce handedness (same wall as 4076 B1).
+- **THE OSCILLATION SUCCEEDS:** a w-oscillation phase-locked to 3D motion **is** the second rotation plane 4072 showed is the only pseudoscalar carrier — **no new variable** (w exists; the CP circulates). `code/4089_fourth_axis_oscillation.py`, `reasoning/4089.md`.
+- **GEOMETRY FORCED:** a **(w, direction-of-travel)** rotation **plus** a **transverse** 3D circulation = **helicity**. (First model used only three dimensions and returned identically zero — correctly; a pseudoscalar needs all four.)
+- **RESULTS:** pseudoscalar ∝ **cos(phase)** — maximal in phase/antiphase (±2.8258), zero in quadrature — and **flips with the transverse spin sense**; the hand is (phase) × (spin).
+- **SHARP CONSTRAINT:** **zero at 1:1 frequency ratio** (resonance ⇒ simple rotation ⇒ no handedness): 0.0000 at Ω/ω = 1 vs −2.1000/−2.8258/−4.0000 at 1.05/√2/2. **The w-oscillation cannot simply BE the ZBW — it must be detuned.**
+- **BUYS:** natural maximality (phase lock, not a tuned angle); a **mechanical** sign (in-phase vs antiphase); and, if polarity fixes the phase, discharge of the CPT-required polarity clause (4085). **DOES NOT BUY:** what fixes the phase for a given polarity — **the sign is relocated into a phase convention, not derived.** Not the clean win the founder is waiting for.
+- **(1) NEXT, Claude, bounded:** is there a **detuned** oscillation already in the corpus? SPIN-1's captured-DP orbit (r_in) and the ZBW (Compton scale) run at different scales — if their frequency ratio is fixed by existing results, the resonance constraint is already satisfied or already violated. **Lane: EW/QM.**
+- **(2) Carried:** founder's adoption decision **held** at his instruction (wait for a clean win); F5 → CKM (4087); BC-helix bundling (4078). **Lane: EW/SR (founder).**
+
+---
+
 ### TODO-4088-EW — owed items cleared: SF-6 check clean, inventory corrected, F5→CKM registered (registered Patch 4088, EW lane)
 
 - **SF-6 FOURTH-AXIS CHECK — CLEAN (owed since 4075).** Full scan of SF-6 (61,144 chars): **zero** references to a fourth coordinate in any derivation; the single "4D" hit is inside SF-6's own OPEN-SD-CHIR-PRIMITIVE problem statement. **Reading A (EM reads 3-space only) is free to adopt — it revises nothing.** F2's condition is satisfiable at zero cost. **Does NOT upgrade F2 to a consequence** (4086: still a specification). `code/4088_sf6_fourth_axis_check.py`, `reasoning/4088.md`.
