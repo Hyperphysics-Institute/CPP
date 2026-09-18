@@ -636,6 +636,28 @@ such a plane *is* fourth-axis motion, not an extra postulate on top of it.
 **Standing of the avenue:** second plane ✔ (existing geometry), frequency ratio ✔ (derived, 4090), fourth-axis
 motion ✔ (required, not added) — **the sign ✘, still not derived.**
 
+## 2y. The capture supplies one plane; motion supplies the other, and it selects helicity (4092)
+
+**The capture cannot select a pair.** SPIN-1's inner and outer CPs orbit the same centre about a common axis —
+coplanar (4090). **A single-DP capture gives one plane**, so 4091's 60 orthogonal pairs are not selected by it.
+
+**A second captured DP is excluded, and backwards.** SPIN-1 assigns single-DP capture to **fermions** and
+double-DP capture to **bosons**. If handedness needed two captured DPs, only **bosons** could be handed — while
+helicity and V−A act on **fermions**.
+
+**So the second plane comes from motion** — 4089's (fourth-axis, direction-of-travel) leg — now **forced**: 4091
+made the fourth-axis leg dimensionally unavoidable, and the only alternative source is excluded.
+
+**And the geometry then selects helicity.** The pseudoscalar is exactly **2·cos(angle between spin axis and
+direction of travel)**: +2.000000 (0°), +1.732051 (30°), 0.000000 (90°), −2.000000 (180°). **Blind to transverse
+spin, tracking only the component along the motion.** The arc had been *assuming* helicity since 4076; here the
+geometry picks it out.
+
+**Both hands remain available** (±2.000000 at 0°/180°): the geometry selects the **quantity**, never the **sign**.
+
+**Standing:** second plane ✔ (forced), frequency ratio ✔ (derived), fourth-axis motion ✔ (required), variable ✔
+(helicity, selected) — **sign ✘, still not derived.** Four of five legs rest on existing structure.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |

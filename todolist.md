@@ -1984,6 +1984,19 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4092-EW — the capture gives one plane; motion gives the other and selects helicity (registered Patch 4092, EW lane)
+
+- **CAPTURE CANNOT SELECT A PAIR:** SPIN-1's inner/outer CPs orbit a common axis — coplanar (4090) — so a single-DP capture gives **one** plane; 4091's 60 orthogonal pairs are not selected by it.
+- **A SECOND CAPTURED DP IS EXCLUDED, AND BACKWARDS:** SPIN-1 assigns single-DP capture to **fermions**, double-DP to **bosons**; if handedness needed two DPs, only **bosons** could be handed, while helicity and V−A act on **fermions**.
+- **SO THE SECOND PLANE IS FORCED TO COME FROM MOTION** — 4089's (4th-axis, travel-direction) leg, now required rather than chosen (4091 made the 4th-axis leg dimensionally unavoidable).
+- **THE GEOMETRY SELECTS HELICITY:** pseudoscalar = **2·cos(angle between spin axis and direction of travel)** exactly (+2.000000 at 0°, 0.000000 at 90°, −2.000000 at 180°) — blind to transverse spin. The arc had been *assuming* helicity since 4076; here it is picked out. `code/4092_capture_plane_selects_helicity.py`, `reasoning/4092.md`.
+- **SIGN STILL ABSENT:** both hands available (±2.000000). Geometry selects the **quantity**, never the **sign** — unchanged since 4046.
+- **ERROR CAUGHT IN-PATCH (10th in arc):** the spin plane built from an arbitrary orthonormal basis has an orientation that jumps with angle — 0° and 180° both gave +2.000000. Fixed by orienting the bivector with the spin axis itself.
+- **STANDING:** second plane ✔, frequency ratio ✔, 4th-axis motion ✔, variable ✔ (helicity) — **sign ✘**. Four of five legs on existing structure.
+- **(1) NEXT:** every remaining question is either the sign itself or belongs to another lane (F5 → CKM, 4087). **A session close and handover is the natural next step.** **Lane: EW.**
+
+---
+
 ### TODO-4091-EW — the 600-cell supplies orthogonal orbital planes; the oscillation is grounded, not replaced (registered Patch 4091, EW lane)
 
 - **DIMENSIONAL FACT:** three mutually orthogonal 2-planes cannot exist in ℝ⁴ (2+2 = 4), so **SPIN-1's three colour planes cannot be mutually orthogonal**. Only a pair can be — and a pair is all a double rotation needs.
