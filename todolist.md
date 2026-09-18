@@ -1984,6 +1984,19 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4093-EW — Session 232 close: what the next window should take up (registered Patch 4093, EW lane)
+
+- **HANDOVER FILED:** `handovers/2026-09-17_session_232_ew_lane_chirality_axiom_maturation.md` — Steps A–H audit included. Patches 4063–4092 plus 0991–0994. **No verdict moved all session; the axiom is NOT adopted** (founder holds pending a clean win).
+- **(a) FRESH-EYES ADVERSARIAL AUDIT of the maturation document — highest value, gates everything else.** Thirty patches of my own reasoning; I chose χ₄, rescued it at 4080, withdrew my own blocking verdict at 4087, and wrote every convenient-branch label. Attack targets named in the handover §5(a): §2q's encoding claim, §2r's "one sign fixes three sectors", and 4082's refutation (the co-moving SSV comparison is the one attack left). **Lane: EW, fresh window.**
+- **(b) BOUNDED NEW PHYSICS, sign-independent — THEO-QM-10.** The spin bit gives **two** slots per 3D GP; THEO-QM-10 derives Pauli exclusion and spin-statistics from **one CP per GP**. Rewrite over (3D address, spin bit) pairs. Registered 4076 B5, never attempted. **Lane: QM.**
+- **(c) LONG CAMPAIGN — the lattice, CPP's least-tested foundation.** Can BC helices bundle to fill 3-space at z = 12 (4078)? Would bear on 4019/4030/4034 and could retire the 4020 variable-position-GP ruling. **Lane: SR.**
+- **(d) THE GATE ON THE AXIOM, not a chirality problem — F5 → CKM.** Needs an O(1) phase near 68.5° **and** the CKM mixing angles (SF-2 generation-transition). **Until that moves, the axiom cannot be completed and no panel should be convened.** **Lane: SM.**
+- **(e) NOT RECOMMENDED:** a panel, or adoption. F5 is open by CPP's own zero-parameter standard.
+- **SUGGESTED ORDER: (a) → (b) → (c), with (d) whenever the SM lane is live.**
+- **NUMBERING TRAP (recorded):** claim the frontier's "Next patch (EW): NNNN" pointer, **not** `next_id`'s "NEXT FREE" — the latter reads one past it. Cost this session: 4065 and 4067 unused.
+
+---
+
 ### TODO-4092-EW — the capture gives one plane; motion gives the other and selects helicity (registered Patch 4092, EW lane)
 
 - **CAPTURE CANNOT SELECT A PAIR:** SPIN-1's inner/outer CPs orbit a common axis — coplanar (4090) — so a single-DP capture gives **one** plane; 4091's 60 orthogonal pairs are not selected by it.
