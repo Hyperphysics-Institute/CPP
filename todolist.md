@@ -1984,21 +1984,41 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
-### TODO-4096-F3 — F3 (strong sector P-evenness): founder physics-picture question UNANSWERED (registered Patch 4096, EW lane)
+### TODO-4096-F3 — F3/F2 (strong and EM sector P-evenness): founder physics-picture question **ANSWERED Patch 4097** (registered Patch 4096, EW lane)
 
-**Why this entry exists:** Session 233 found a new structural argument for F3 (the free-vs-confined distinction, replacing the failed capture criterion). The argument was put to Thomas as a physical-picture question: *does the per-Moment write rule apply exclusively to particles with a persistent velocity direction?* **Thomas's response: "I have no explanation."**
+**Status: ANSWERED 18 Sep 2026, Patch 4097.**
 
-**Status:** The free-vs-confined argument is the WORKER'S proposal, not yet endorsed by the founder. F3 therefore remains CONDITIONAL in the chirality axiom maturation document.
+**Founder's ruling (verbatim, filed at `founders_voice/4097_ruling_velocity_dp_arcs_not_intrinsic_to_cp.md`):**
+*"the velocity of the particle is not something the CP carries intrinsically. The KE/momentum/inertia/velocity of a CP is carried by the DP arcs established during acceleration (see corpus under inertia/KE/DP arcs)."*
 
-**What the argument says:** Confined quarks have their velocity direction randomized every Moment by the cage potential. The ZBW spin ω is conserved but v is isotropic → ⟨sign(ω·v)⟩ = 0. The cage SSV comparison receives no net helicity bias from confined quarks → strong force P-even. Same for EM sea DPs (also isotropically random). Free incoming charges (W-bracelet case) have persistent v → b ≠ 0 → parity violation.
+**Corpus pointer:** SF-6 §(Emission as ZBW-chain discharge), Patch 3202: DP-arc cohort established during acceleration carries the KE/momentum. Inertia sketch Patch 2496: "the CP itself carries no momentum and no kinetic energy — all must live in the sea [arcs]."
 
-**What is needed from the founder:** a physical picture confirming (or denying) that the per-Moment write rule fires only when a particle has a persistent velocity direction. This is a PD-006(a) question — physics framed in a physical picture.
+**Implication for F3 and F2 (worker inference from ruling):**
+- v in b = sign(ω·v) is the direction of the DP arc cohort, not an intrinsic CP property.
+- *Free particle:* DP arcs point persistently in the direction of travel (sustained by fore/aft SSV_net recapture). v_arcs well-defined → b ≠ 0 → bracelet reads a biased bit stream.
+- *Confined quark:* confinement force continuously severs and re-establishes arcs in new directions (bremsstrahlung-like, SF-6). Net arc direction → 0 → ⟨b⟩ = 0 → strong force P-even.
+- *EM sea DPs:* random arc orientations from last interactions → ⟨b_sea⟩ = 0 → EM P-even under Reading A.
 
-**Consequence if the argument is endorsed:** F3 and F2 both follow from the free-vs-confined distinction, replacing the failed capture criterion. Both become CONDITIONAL PASSES, not clauses.
+**F3/F2 status after ruling:** upgraded from CONDITIONAL (no founder picture) to CONDITIONAL — founder-endorsed physical mechanism via DP arcs; pending formal derivation in the chirality axiom maturation document. **Lane: EW.**
 
-**Consequence if it is not endorsed or is denied:** F3 and F2 remain clauses without a structural explanation (same situation as before this session). The axiom's reconciliation with experiment is then weaker but not refuted (the SM also stipulates F2/F3 without deriving them).
+### TODO-4097-R2 — δ_CP ≠ any 600-cell angle: negative result formally filed (registered Patch 4097, EW/SM lane)
 
-**Lane:** EW (founder physics question).
+**Filed per Thomas's instruction (18 Sep 2026, session 233):** "The R2 negative result on δ_CP should be filed: it rules out the simplest possibility (600-cell geometry) and cleanly redirects F5 to SF-2."
+
+**What is filed:**
+- The genuine 120-vertex 600-cell has vertex-vertex angles ONLY at multiples of 36°: {36°, 60°, 72°, 90°, 108°, 120°, 144°, 180°}. The observed CKM phase δ_CP = 65.5° ± 3.3° does not match any of them. Closest: 60° at −1.67σ, 72° at +1.97σ.
+- The earlier apparent hit at 66.1° (cos θ = φ/4) was from a 216-vertex non-standard build (all permutations, not even permutations). NOT a genuine 600-cell angle.
+- **The simplest derivation route for δ_CP — direct 600-cell vertex geometry — is CLOSED.**
+
+**Locations of the filed result:**
+- `series_standard_model/axiom_maturation/chirality_axiom_maturation.md` §2aa (R2)
+- `series_standard_model/reasoning/4096.md`
+- `frontier_sectors/SM.md` OPEN-SM-11 (references the negative result)
+- `frontier_sectors/EW.md` note added at Patch 4097
+
+**Consequence:** F5 derivation belongs entirely to SF-2's generation-transition structure. The two bracketing 600-cell angles (60° and 72°) establish the scale range — the CP phase likely comes from a combination of inter-shell transition angles within SF-2's framework, not from vertex-vertex geometry alone. Lane: SM (SF-2 vehicle).
+
+**Status: FILED AND CLOSED** — the negative result is in the permanent record. No further action needed here; action lives in OPEN-SM-11.
 
 ### TODO-4096-SM11 — OPEN-SM-11 registered; SF-2 derivation of δ_CP is now a formal open problem (registered Patch 4096, SM/EW cross-lane)
 
