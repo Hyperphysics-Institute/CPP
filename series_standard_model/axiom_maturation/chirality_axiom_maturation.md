@@ -658,6 +658,45 @@ geometry picks it out.
 **Standing:** second plane ✔ (forced), frequency ratio ✔ (derived), fourth-axis motion ✔ (required), variable ✔
 (helicity, selected) — **sign ✘, still not derived.** Four of five legs rest on existing structure.
 
+## 2z. FRESH-WINDOW ADVERSARIAL AUDIT under PD-008 (4095) — by a window with no investment in χ₄
+
+Full argument: `series_standard_model/reasoning/4095.md`; verify: `code/4095_pd008_audit_chi4.py`.
+
+**(1) §2q corrected and then tightened.** A **constant** coupling c = 1 gives beta-electron polarisation −1 at
+every speed; the measured value is **−v/c**, and the shipped CONT-2 equation P_L^helicity = ½(1+v) already says
+so. §2q's "Assumed" column was short by one row: the *functional form* of the coefficient. **Repair, PCD-native
+[PCD-EXT]:** the substrate has no mean velocity, only the displacement made this Moment. A CP drifting at β
+makes a longitudinal hop in a fraction β of Moments; the bit is readable only then. A full-strength linear
+response gives **P(h) = (1 − hβ)/2** — the left-chirality projection — reproduced to 0.0029 across
+β = 0.1…1.0. **Maximality is thereby not a tunable strength:** the response is all-or-nothing per readable
+Moment and sub-maximal polarisation is kinematic dilution. Chirality = the per-Moment bit; helicity = its time
+average; mass separates them. **The sign is still assumed.** *Convenient branch, marked.*
+
+**(2) §2r overcounts — read this before citing F8.** With the CPT-forced polarity clause (2s) χ₄ conserves CP
+**exactly**, so by Sakharov it yields η_B = 0 for either hand — the ground on which 4078 withdrew K4, never
+applied to F8. Manifestation (i)'s **only** empirical anchor is η_B via leptogenesis, and (v) *is* that anchor.
+The cosmological sector needs the corpus's **second** sign, sign(δ) (T-odd ⇒ CP-odd; CHIR W3). No new
+assumption — but χ₄ does not supply it. **Against data, χ₄'s own sign is load-bearing in one place: V−A.**
+*Inconvenient branch, marked.*
+
+**(3) 4082 stands; its printed mechanism is withdrawn.** "Bulk motion seen through the Nexus frame" is
+understated if the frame is visible (floor β_Earth = 1.23×10⁻³ ⇒ b < 9.66 for *every* lab process) and void if
+it is not (SR-1). Frame-independent ground: the founder's "dispersed **randomly** among the constituents" is
+unequal per event, so ties break at p*/M_W in the CM frame; equal shares need exactly axial arrival, and SF-2
+says the centroid is reachable from **any** direction. Control: axial arrival keeps ties at 1.0000.
+*Convenient branch, marked.* A spin-tilt attack on K3 was tried and **withdrawn** (SPIN-1's orbit is
+picometre-scale, far outside the ring).
+
+**(4) New falsifier, already constraining.** "Displacement this Moment" is a Nexus-frame quantity. Any wording
+of the axiom in which a slow **parent's** bit shifts its decay rate predicts a sidereal lifetime modulation of
+polarised nuclei at O(β_Earth) = 1.2×10⁻³; the ²⁰Na bound is **2×10⁻⁴**. The bit must act on the emitted legs
+as the covariant chirality projection does. Full four-leg check **owed, not performed** (TODO-4095-EW-a).
+
+**(5) Two vocabulary hazards.** "Spin bit" is already SR-2's **adopted** axiom (the rank-2 broadcast field) —
+a different object; use **helicity bit** for this one. And legs "second plane ✔ / 4th-axis motion ✔"
+(2w–2y) identify a **Compton-scale** SPIN-1 orbit with **single-cell** lattice plane pairs — never argued;
+**both ticks are conditional on it** (TODO-4095-EW-c).
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -699,11 +738,11 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 | F1a | physical parity defined precisely in CPP's 4D setting | founder 16 Sep | **RESOLVED (4074)** — P = diag(+1,−1,−1,−1): 3-space inverted, 4th-axis address fixed |
 | F2 | EM stays P-even | 4069/4070, experiment | **CONDITIONALLY PASSES (4075)** — iff the EM field law reads the 4th-axis component only through even functions (e.g. EM reads 3-space only); under 4D-proximity feedback χ₄ makes EM P-odd and fails. Becomes a **specification SF-6 must adopt** |
 | F3 | strong interaction stays P-even | experiment | untested |
-| F4 | weak: P and C maximal, CP ≈ conserved | experiment | pattern passes (§3); **maximality** not shown |
+| F4 | weak: P and C maximal, CP ≈ conserved | experiment | pattern passes (§3); **maximality: all-or-nothing per readable Moment under the per-Moment write [PCD-EXT] (4095, §2z-1)** — reproduces P = −v/c; a *constant* c = 1 is falsified by that same datum |
 | F5 | small CP violation has a source | CKM phase | χ gives CP *exactly* conserved; needs a second source — candidate sign(δ) via CPT, untested |
 | F6 | CPT exact | theorem | untested |
 | F7 | no new tunable parameter | PD-007 | passes in form (duality is binary) |
-| F8 | load-bearing in ≥ 3 disjoint sectors | PD-007, 4071 | **PASSES (4084)** — (i) and (ii) closed at magnitude χ/6, sign missing in both; (v) is (i)'s empirical anchor; one sign fixes all three via existing pairing conventions |
+| F8 | load-bearing in ≥ 3 disjoint sectors | PD-007, 4071 | **WEAKENED at 4095 (§2z-2): χ₄ conserves CP, so its sign cannot reach η_B; (i)'s only anchor is η_B; against data the sign is load-bearing in ONE sector (V−A), the cosmological one needing sign(δ) as well.** As printed at 4084: PASSES — (i) and (ii) closed at magnitude χ/6, sign missing in both; (v) is (i)'s empirical anchor; one sign fixes all three via existing pairing conventions |
 | F9 | antiparticle = opposite polarity in CPP | founder 16 Sep | **RESOLVED (4073)** — confirmed, nothing else reverses |
 
 ## 5. Physics questions for the founder (picture form)
@@ -729,9 +768,12 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 - The double rotation, once specified, feeding into the EM force law (would make EM P-odd — excluded).
 - K3 Δp_LR computed under χ disagreeing with its established magnitude.
 - CPP antiparticles shown not to be polarity-reversed (breaks §3's CP argument).
+- **(4095)** A sidereal modulation of polarised-nuclei lifetimes at O(β_Earth) ≈ 1.2×10⁻³ is what a parent-bit wording predicts; the ²⁰Na bound is 2×10⁻⁴. That wording is **already excluded**.
+- **(4095)** Beta-electron longitudinal polarisation ≠ −v/c would falsify the per-Moment write; a constant-c wording is falsified by the existing −v/c data.
 
 ## 8. Log
 
+- **4095** — **PD-008 fresh-window audit (§2z).** §2q: constant c falsified by P = −v/c and by CONT-2's own ½(1+v); per-Moment write [PCD-EXT] derives (1−hβ)/2 and makes maximality non-tunable; sign still assumed. §2r: χ₄ conserves CP ⇒ η_B = 0 either hand ⇒ F8 weakened to one data contact; cosmological sector needs sign(δ). 4082: verdict stands on a frame-independent ground (unequal per-event shares, p*/M_W in the CM frame); printed Nexus-frame mechanism withdrawn. New falsifier: ²⁰Na sidereal bound 2×10⁻⁴ vs 1.2×10⁻³. Hazards: "spin bit" collides with SR-2; Compton-scale orbit vs single-cell planes. **No verdict moved.**
 - **4086** — the capture criterion **fails**: SF-2's own framework captures in the strong sector too (Z/H cages, quark confinement), so capture separates EM from weak+strong but not weak from strong; the "transmutation" refinement is the same stipulation reworded. Honest comparison: F2/F3 leave CPP level with the SM (which also stipulates the parity assignment), while F5 is a gap by CPP's **own** zero-parameter standard.
 - **4085** — F6 done and it **forces** the polarity clause (b is CPT-odd, so a linear term needs a C-odd coefficient); F5 **fails quantitatively** (δ³ ~400× too large, δ⁹ ~13× too small vs J = 3.08e-5); F3 remains a clause, with the capture-vs-polarisation distinction as the candidate that would turn F2 and F3 into consequences. **Not panel-ready.**
 - **4084** — **F8 PASSES.** Every closed umbrella result is a magnitude (|M| = χ/6 = 0.039345, 1.6% of the η_B-derived anchor); the sign is exactly what they lack and what χ₄ supplies. Pairing operations act with determinate eigenvalues (63/63 flip, 0/63 preserved), so **one** sign fixes all sectors by group theory. Five manifestations are really three after 4069/4070 and 4071 — still clears PD-007.
