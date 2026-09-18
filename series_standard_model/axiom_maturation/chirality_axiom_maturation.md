@@ -173,6 +173,34 @@ W⁰ bracelet's eCP/qCP even–odd relationships. Each is a separate question; t
 a *position* parity, which B1's argument applies to unchanged (a position label is P-even), so it is unlikely to
 supply chirality on its own — but it may bear on exclusion and on the bracelet's structure.
 
+## 2k. CORRECTION to my own counting, and four further routes (4077)
+
+**The correction.** Physical parity inverts 3-space (4074). Two of my earlier statements were scoped too broadly:
+
+- **4071: "a P-odd scalar needs four independent directions."** True for the 4D invariant det[a,b,c,d]. But under
+  *physical* parity, **det₃[a,b,c] of three spatial vectors is already P-odd** — each flips and (−1)³ = −1
+  (20,000/20,000). **Three spatial directions suffice.**
+- **4073/4074: "no composite confined to 3-space can be handed."** True for **rotations** — B∧B needs all four
+  dimensions, and that result stands (max |B∧B| = 0.0 over 5,000 superposed 3-space rotations). **False for
+  arrangements:** a fixed cyclic triad has det₃ = +1 and mirrors to −1. Ordinary 3D chirality — a left hand is
+  not a right hand — was excluded by my phrasing and should not have been.
+
+**This reopens ground.** A chiral *arrangement* in 3-space is P-odd without any fourth-axis machinery.
+
+### Four further routes
+
+| | route | what it needs | status |
+|---|---|---|---|
+| **K2** | **Chiral packing** — the Boerdijk–Coxeter helix: regular tetrahedra stacked face-to-face form a helix of definite hand (torsion +9.19, mirror −9.19, sum 0). | no new variable; the hand is in the **packing**. Bears directly on 4019 (the 600-cell cannot tile flat ℝ⁴) — helical packing is what tetrahedra actually do | **live, untested against CPP** |
+| **K3** | **Procedural chirality** — put the hand in the **tie-break rule**. When a CP's move is degenerate something must choose; a tie-break using sign(det₃) is P-odd. Simulated: chiral tie-break gives net P-odd invariant 1.000/step, P-even tie-break exactly 0.000. | no new variable; it **specifies a rule the corpus has left unspecified** | **live, and the cheapest of all** |
+| **K4** | **The CPT route** — P-odd = (C-odd) × (T-odd). CPP already has a T-odd element (sign δ, W3); nature has a C-odd fact (matter excess). Their product is C-odd and T-odd, hence P-odd if CPT is exact. | **no new primitive** — what is owed is the *link*, not an axiom | **live, most speculative** |
+| **K5** | **A P-odd initial condition** — the creation event fixed a net helicity, frozen since. | no new law | **weak:** V−A is *maximal and exact everywhere*; a frozen initial condition would be expected to vary or dilute. Listed for completeness |
+
+**K3 deserves emphasis.** Degeneracy resolution is where a binary rule has outsized leverage (4050: a binary
+variable gives all-or-nothing, which is what V−A's maximality needs). The corpus has never specified what breaks
+a tie in the PCD cycle. That is not a gap to be filled with a new variable — it is an **existing unspecified
+rule** whose specification could carry the hand.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -247,6 +275,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4077** — correction: three spatial directions suffice for physical-parity-oddness (4071's "four" was the 4D invariant), and 3-space *arrangements* can be chiral though 3-space *rotations* cannot (4073/4074 phrasing corrected). Four further routes registered: K2 Boerdijk–Coxeter chiral packing, K3 procedural/tie-break chirality, K4 the CPT product route, K5 P-odd initial condition (weak).
 - **4076** — founder's spin-bit proposal assessed: P-even as defined (B1), P-odd if written with helicity (B2), response must be linear in the bit (B3, answering the founder's question), identical to 4075's requirement (B4), and gives two slots per 3D GP which revises THEO-QM-10's basis (B5).
 - **4075** — F2 tested: SF-6 leaves the displacement's dimensionality unspecified; χ₄ keeps EM parity-even iff EM reads the 4th axis only through even functions (Reading A: identical fields, E·B = 1.3e-14) and makes it parity-odd otherwise (Reading B: E·B = 95.7, flips with hand at −1.0000). Requirement recorded: EM reads 3-space, the handed process reads the 4th axis linearly. In-patch detector error caught and fixed.
 - **4074** — founder ruling on the fourth axis filed (2f); F1a resolved; S1 unconditional; T1 (P-odd object = 4th-axis mixing rotation aligned with 3D spin), T2 (carrier with no new variable, but 118/118 — sign still needs a rule), T3 (left/right factor = sign of e·ω in 236/236 — L2 and L3 merge) established; candidate χ₄ drafted; F2 promoted to most dangerous filter.

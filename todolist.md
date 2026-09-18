@@ -1984,6 +1984,21 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4077-EW — correction to my counting, and four further P-odd routes (registered Patch 4077, EW lane)
+
+- **CORRECTION (mine, to 4071/4073/4074):** under physical parity (3-space inversion), **det₃ of three spatial vectors is P-odd** (20,000/20,000) — 4071's "four directions" was the threshold for the 4D invariant. And "no composite confined to 3-space can be handed" holds for **rotations** (B∧B ≡ 0, stands) but is **false for arrangements** (a fixed cyclic triad: det₃ = +1, mirror −1). **A chiral arrangement in ordinary 3-space is P-odd with no 4th-axis machinery.** `code/4077_other_routes_and_correction.py`, `reasoning/4077.md`.
+- **K3 — procedural chirality (cheapest; Claude's pick):** put the hand in the **tie-break rule** for degenerate CP moves — a rule the corpus has never specified. Chiral tie-break gives net P-odd invariant 1.000/step; P-even tie-break exactly 0.000. **No new variable.** Degeneracy is where a binary rule has the all-or-nothing leverage V−A needs (4050). **Lane: EW.**
+- **K2 — chiral packing (Boerdijk–Coxeter):** tetrahedra stacked face-to-face form a helix of definite hand (torsion +9.19 / −9.19, sum 0). No new variable; the hand is in the packing. **Connects to 4019** (600-cell cannot tile flat ℝ⁴): the global-lattice question and the chirality question may be the same question. **Lane: EW/SR.**
+- **K4 — the CPT route:** P-odd = (C-odd) × (T-odd). CPP has a T-odd element (sign δ, W3); nature has a C-odd fact (matter excess); their product is P-odd if CPT is exact. **No new primitive — the LINK is what is owed.** Most speculative, highest value: would make parity violation a consequence of the arrow of time. **Lane: EW.**
+- **K5 — P-odd initial condition:** listed, judged weak (V−A is maximal and exact everywhere; a frozen initial condition would vary or dilute). **Lane: EW (recorded).**
+- **(1) NEXT, Claude:** does the PCD cycle have degeneracies, and what resolves them today? Decides K3. **Lane: EW.**
+- **(2) Claude:** is the corpus's 600-cell packing helical anywhere? Decides K2 and may bear on 4019. **Lane: EW/SR.**
+- **(3) Claude:** attempt K4's link. **Lane: EW.**
+- **(4) Carried from 4076:** is ω defined for a seeding unpaired CP (decides the spin-bit repair); SF-6 4th-axis linear-use check. **Lane: EW/QM.**
+- **NOTE:** none of K2–K5 has been tested against CPP's actual dynamics. They are candidates, and each could fail as the first four did.
+
+---
+
 ### TODO-4076-EW — the founder's spin bit: assessed, repaired, and its QM side effect (registered Patch 4076, EW lane)
 
 - **FILED:** `founders_voice/founder_fourth_dimension_spin_bit_2026-09-17.md` (edited per the founder's standing transcript rule); raw Otter transcript at `founders_voice/raw_transcripts/2026-09-17_...` as provenance only.
