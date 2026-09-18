@@ -251,6 +251,46 @@ valuable if it holds" to **not a route as stated**.
 3. **K2** (helical packing) — pursue as a **lattice** question; it bears on 4019/4020/4034 and may matter more there.
 4. **K5** — weak. **K4** — withdrawn as circular.
 
+## 2m. K3 tested against CPP's own dynamics (4079)
+
+**Are CPP's degeneracies generic or measure-zero?** A3′ C5 speaks of a *unique* assembled metric, which suggests
+no ties. But the Perceive stage **counts DI-bit arrivals** (A3′ definitional clause; the founder's spin-bit note:
+*"tipped by the majority number of DI-bits arriving"*), and integer counting ties exactly and often.
+
+Measured on the real 600-cell (z = 12), integer arrivals:
+
+| configuration | tie fraction |
+|---|---|
+| symmetric (bracelet-like: equal arrivals) | **1.0000** |
+| ring source with ambient noise | 0.8664 |
+| generic asymmetric source (counts 0–40) | **0.1427** |
+| control: continuum-valued SSV, generic | 0.0000 |
+
+**The good half.** Ties are **generic in symmetric configurations** and rarer in asymmetric ones. Since the
+W bracelet is D₆-symmetric, a chiral tie-break would govern ~100% of its decisions — **maximal** violation, which
+is what V−A needs and what no earlier route supplied.
+
+**The bad half, and it is the finding.** 0.1427 is **not** ~0. A chiral tie-break would also govern 14% of
+decisions in generic configurations — including electromagnetic ones — producing parity-violating EM at a level
+4069/4070 exclude. **K3 does not separate the sectors by itself.**
+
+**What the sweep converts this into.** The generic tie fraction depends on the DI-bit **dynamic range**, which the
+corpus nowhere specifies:
+
+| counts drawn from | generic tie fraction |
+|---|---|
+| 0–4 | 0.8781 |
+| 0–10 | 0.4937 |
+| 0–40 | 0.1402 |
+| 0–200 | 0.0322 |
+| 0–1000 | 0.0054 |
+| 0–10 000 | 0.0007 |
+
+The symmetric case ties at 1.0000 for **every** range. So K3 becomes a **quantitative requirement**: parity
+violation is confined to symmetric structures only if typical DI-bit counts in ordinary matter are **large**. At
+10³ the leak is 0.5%; at 10⁴, 0.07%. **This is a falsifiable condition on a quantity the corpus has never
+specified, and it is the sharpest thing the arc has produced.**
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -325,6 +365,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4079** — K3 tested against CPP dynamics: ties are generic in symmetric configurations (1.0000) and 0.1427 in generic ones, so a chiral tie-break gives maximal violation in the D₆ bracelet **but leaks parity-violating EM** unless DI-bit counts are large; dynamic-range sweep converts K3 into a quantitative, falsifiable requirement.
 - **4078** — K2/K3/K4 evaluated: helix uses perfectly regular cells (spread 2.5e-13) but never repeats (twist 131.81°, no closure in 10,000) and gives z = 6 not 12, and supplies a hand without choosing it; K3 remains cheapest with a locality dependency; **K4 withdrawn as circular** (Sakharov: baryogenesis needs C/CP violation as input).
 - **4077** — correction: three spatial directions suffice for physical-parity-oddness (4071's "four" was the 4D invariant), and 3-space *arrangements* can be chiral though 3-space *rotations* cannot (4073/4074 phrasing corrected). Four further routes registered: K2 Boerdijk–Coxeter chiral packing, K3 procedural/tie-break chirality, K4 the CPT product route, K5 P-odd initial condition (weak).
 - **4076** — founder's spin-bit proposal assessed: P-even as defined (B1), P-odd if written with helicity (B2), response must be linear in the bit (B3, answering the founder's question), identical to 4075's requirement (B4), and gives two slots per 3D GP which revises THEO-QM-10's basis (B5).

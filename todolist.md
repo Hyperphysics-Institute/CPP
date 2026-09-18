@@ -1984,6 +1984,17 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4079-EW — K3 tested: maximality delivered, EM leak found, requirement quantified (registered Patch 4079, EW lane)
+
+- **ESTABLISHED:** on the 600-cell with integer DI-bit arrivals, tie fractions are **1.0000 symmetric**, 0.8664 ring-with-noise, **0.1427 generic**, 0.0000 continuum control. A3′ C5's "unique assembled metric" governs layer-1 displacement but does not make arrival **counts** non-degenerate. `code/4079_k3_degeneracy_frequency.py`, `reasoning/4079.md`.
+- **THE HALF THAT WORKS — first in this arc:** the W bracelet is D₆-symmetric, so every decision inside it is a tie and a chiral tie-break governs **~100%** ⇒ **MAXIMAL violation with no new variable**. Earlier routes capped at ~2% bias (4048).
+- **THE HALF THAT FAILS:** 0.1427 in generic configurations ⇒ the same rule biases 14% of EM decisions ⇒ **parity-violating EM**, excluded by 4069/4070. **K3 does not separate the sectors by itself.** My 4078 ranking of K3 first rested on the opposite expectation and was wrong.
+- **CONVERTED INTO A QUANTITATIVE REQUIREMENT:** generic tie fraction vs DI-bit dynamic range — 0.878 (0–4), 0.140 (0–40), 0.0054 (0–1000), 0.0007 (0–10 000); symmetric = 1.0000 at every range. **K3 holds iff typical DI-bit counts in ordinary matter are ≳10³** (leak ≲0.5%). Falsifiable against a number the corpus has never specified.
+- **(1) NEXT, Claude — does the corpus fix or bound the DI-bit count scale** (SSV_abs register depth, PSR shell occupancy, arrivals per Moment)? **That number decides K3.** Bounded. **Lane: EW/QM.**
+- **(2) Carried:** ω for a seeding unpaired CP (4076); SF-6 4th-axis linear-use check (4075); F8 for χ₄; BC-helix bundling to z = 12 (4078). **Lane: EW/SM/SR.**
+
+---
+
 ### TODO-4078-EW — routes evaluated: K2 is a lattice proposal, K3 leads for chirality, K4 withdrawn (registered Patch 4078, EW lane)
 
 - **K2 (helical packing) — founder's claim CONFIRMED:** BC stacking uses **perfectly regular** tetrahedra (edge spread 2.5e-13 over 400 cells), so it fits **without stretching** — a genuine alternative to the 4020 variable-position-GP ruling. Deficit recomputed independently: 5 × 70.5288° = 352.6439°, **7.3561°** (4019 confirmed).
