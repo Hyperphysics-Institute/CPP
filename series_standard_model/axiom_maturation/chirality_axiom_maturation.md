@@ -500,7 +500,7 @@ and become consequences.**
 | F2 | conditional (4075) — becomes a consequence if the capture distinction holds |
 | **F3** | **clause, not result** — same fate as F2 |
 | F4 | pattern passes (4072/4085); maximality not derived (4083) |
-| **F5** | **FAILS quantitatively** — no power of δ gives J |
+| **F5** | **REFRAMED (4087)** — 4085's comparison was ill-posed (J contains a 29,706× mixing suppression); the axiom needs an O(1) phase near 68.5°, and the angles belong to the separate CKM problem. Not solved, not a χ₄ failure |
 | **F6** | **done (4085)** — and it forces the polarity clause |
 | F7 | passes (binary, no tunable parameter) |
 | F8 | passes (4084) |
@@ -540,6 +540,28 @@ than deriving why it alone is linear in b.
 
 **That asymmetry of standards is the honest summary of where the axiom stands:** on parity assignment it matches
 the SM; on CP-violation magnitude it falls short of its own claim.
+
+## 2u. F5 re-examined (4087) — my 4085 comparison was against the wrong quantity
+
+**4085 compared powers of δ directly to the Jarlskog invariant J = 3.08×10⁻⁵ and called F5 a factor-400
+failure. That comparison was ill-posed.** J is not a CP-violating *phase*:
+
+  J = s₁₂ s₁₃ s₂₃ c₁₂ c₁₃² c₂₃ · sin δ_CP = 3.133×10⁻⁵ from PDG inputs (PDG quotes 3.08×10⁻⁵).
+
+**The angle product alone is 3.366×10⁻⁵ — a 29,706-fold suppression — while sin δ_CP = 0.931 is O(1).**
+**J is small because the mixing is small, not because CP violation is weak.** 4085 asked the substrate for a
+number that already contains the mixing suppression. **That verdict is withdrawn.**
+
+**The attractive rescue is excluded.** sin δ_CP = 1 gives J = 3.366×10⁻⁵, only 9% high — but at *phase* level
+δ_CP = 1.196 ± 0.044 rad is **8.5σ** from π/2. **A strictly maximal substrate phase is excluded; no prediction
+is claimed.**
+
+**F5 reduces to:** (a) an **O(1) phase near 68.5°** from the substrate — not derived, and not a free win, since
+"O(1)" is easy but "68.5°" is not; and (b) the three **CKM mixing angles**, which belong to SF-2's registered
+generation-transition problem, **not to chirality**.
+
+**F5 is not a failure of χ₄, and it is not satisfied** — it is reduced and re-assigned. The chirality arc cannot
+close it; it closes when the generation/mixing problem does.
 
 ## 2e. Where the axiom can live — three locations (the real decision)
 

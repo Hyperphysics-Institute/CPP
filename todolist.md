@@ -1984,6 +1984,16 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4087-EW — F5 reframed: 4085's factor-400 verdict withdrawn (registered Patch 4087, EW lane)
+
+- **MY 4085 COMPARISON WAS ILL-POSED.** J = s12·s13·s23·c12·c13²·c23·sin δ_CP = 3.133e-5 (PDG 3.08e-5). The **angle product alone is 3.366e-5 — a 29,706× suppression** — while **sin δ_CP = 0.931 is O(1)**. **J is small because the mixing is small, not because CP violation is weak.** The "δ³ is 400× too large" verdict is **withdrawn**. `code/4087_f5_reframed.py`, `reasoning/4087.md`.
+- **THE MAXIMAL-PHASE RESCUE IS EXCLUDED:** sin δ_CP = 1 gives J 9% high, but δ_CP = 1.196 ± 0.044 rad is **8.5σ from π/2**. **No prediction is claimed.**
+- **WHAT F5 REDUCES TO:** (a) an **O(1) substrate phase near 68.5°** — not derived, not a free win; (b) the **CKM mixing angles**, which belong to SF-2's generation-transition problem, **not to chirality**.
+- **STATUS:** not a χ₄ failure, not satisfied — reduced and re-assigned. **Not panel-ready.**
+- **(1) NEXT, Claude:** register the F5 → CKM dependency in SF-2's problem list. **Lane: EW/SF-2.**
+
+---
+
 ### TODO-4086-EW — the capture criterion fails; the remaining clauses sized against the SM (registered Patch 4086, EW lane)
 
 - **CAPTURE CRITERION FAILS.** SF-2's own framework **captures in the strong sector too** — quarks confined, Z built as an icosahedral cage (12-vertex first shell), H as a dodecahedral cage (20-vertex second shell), all verified independently here with the 12/20 mass gap. **Capture separates EM from weak+strong, but not weak from strong** — which is the separation F3 needs. My 4085 "most valuable open item" is closed negative. `code/4086_capture_criterion_fails.py`, `reasoning/4086.md`.
