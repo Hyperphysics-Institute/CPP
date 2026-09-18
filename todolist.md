@@ -1984,6 +1984,17 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4090-EW — resonance constraint met by a derived ratio; no prediction follows (registered Patch 4090, EW lane)
+
+- **CONSTRAINT MET.** SPIN-1 already contains a **derived** detuned pair: the captured DP's inner CP at r_in and outer CP at 2 r_in orbit with angular-frequency ratio **2√2**, *"not assumed"* — it follows from 1/r² balance and the factor-2 radius. Reproduced exactly (ω ∝ r^(−3/2) ⇒ 2^(3/2) = 2.828427). Pseudoscalar **−5.6564** at that ratio vs **0.0000** at 1:1. **4089's obstruction is removed by a structure the theory already owns.** `code/4090_resonance_constraint_met.py`, `reasoning/4090.md`.
+- **BUT NO PREDICTION FOLLOWS.** |pseudoscalar| = **2 × (frequency ratio)** exactly, across 1.05/√2/2/2√2/4. The ratio does no work: 2√2 gives 5.657, nothing distinguished. **Obstruction removed, nothing predicted.**
+- **GEOMETRY STILL MISSING.** SPIN-1's two orbits are **coplanar** (common axis), and two coplanar circulations do not make a double rotation (4072). **The detuned pair supplies the timing, not the second plane.** The w-leg remains required and unexplained; the founder's oscillation is still the only candidate.
+- **STATUS of the founder's avenue:** second plane — only candidate, unexplained (4089); frequency ratio — available and derived (this patch); **sign — still relocated into a phase convention, not derived** (4089). **Still not a clean win**, which is the standard set for adoption.
+- **(1) NEXT, Claude, bounded:** is there any corpus structure with two orbits in **orthogonal** planes? If so the w-leg might be replaceable by existing geometry. Look at the qDP colour planes (SPIN-1's deferred open problem). **Lane: EW/QM.**
+- **(2) Carried:** F5 → CKM (4087); founder's adoption decision **held**; BC-helix bundling to z = 12 (4078). **Lane: EW/SR (founder).**
+
+---
+
 ### TODO-4089-EW — the fourth axis as an axis of oscillation: worth pursuing, with a constraint (registered Patch 4089, EW lane)
 
 - **FOUNDER'S DRIVER FAILS:** displacement along w is P-even and polarity is P-even, so "polarity drives w-motion" cannot produce handedness (same wall as 4076 B1).

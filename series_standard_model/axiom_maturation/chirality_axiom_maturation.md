@@ -593,6 +593,24 @@ polarity clause (4085) stops being stipulated.
 **What it does not buy:** what fixes the phase for a given polarity is still not derived. **The irreducible sign is
 relocated into a phase convention, not eliminated** — not the clean win the founder is waiting for.
 
+## 2w. The resonance constraint is met — by a derived structure, and it predicts nothing (4090)
+
+**4089's constraint:** a w-oscillation at the same frequency as the circulation it pairs with gives **exactly
+zero** handedness. **Does the corpus contain a detuned oscillation?** Yes, and derived.
+
+**SPIN-1:** the captured DP's positive CP falls to r_in, its negative CP sits at 2 r_in, both orbiting the central
+−eCP, with angular-frequency ratio **2√2 ≈ 2.83** — *"not assumed; it falls out of the 1/r² Coulomb force law and
+the geometric fact that the outer radius is exactly twice the inner radius."* Reproduced independently: ω ∝ r^(−3/2)
+gives 2^(3/2) = 2.828427 exactly. At that ratio the pseudoscalar is **−5.6564** versus **0.0000** at resonance.
+
+**But the magnitude is exactly linear in the ratio:** |pseudoscalar| = 2 × (Ω/ω) to four figures across 1.05, √2,
+2, 2√2 and 4. **2√2 produces 5.657 and nothing distinguished — no zero-parameter prediction.** The obstruction is
+removed; nothing is predicted.
+
+**And the geometry is still missing.** SPIN-1's two orbits are **coplanar** (both about the same axis), and two
+coplanar circulations do not make a double rotation (4072). **The detuned pair supplies the timing, not the second
+plane.** The w-leg remains required and unexplained.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
