@@ -1999,7 +1999,27 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 - *Confined quark:* confinement force continuously severs and re-establishes arcs in new directions (bremsstrahlung-like, SF-6). Net arc direction → 0 → ⟨b⟩ = 0 → strong force P-even.
 - *EM sea DPs:* random arc orientations from last interactions → ⟨b_sea⟩ = 0 → EM P-even under Reading A.
 
-**F3/F2 status after ruling:** upgraded from CONDITIONAL (no founder picture) to CONDITIONAL — founder-endorsed physical mechanism via DP arcs; pending formal derivation in the chirality axiom maturation document. **Lane: EW.**
+**F3/F2 status after ruling:** upgraded from CONDITIONAL (no founder picture) to CONDITIONAL — founder-endorsed physical mechanism via DP arcs. **Formal derivation DELIVERED at Patch 4101** — F3 is now DERIVED conditional on R-F3 (arc cohort on cage bond directions), filed as TODO-4101-F3. F2 not discharged; see TODO-4101-F2. **Lane: EW.**
+
+### TODO-4101-F3 — R-F3: do a confined quark's DP arcs lie on cage bond directions? (registered Patch 4101, EW lane — PD-006(a) FOUNDER QUESTION)
+
+**Status: OPEN — awaiting founder. This is the one remaining physics-picture question in the F3 chain.**
+
+**Background.** Patch 4101 derived F3: the SF-2 cage shells (icosahedral 12, dodecahedral 20) are exactly antipodally paired, so Σ sign(ω·v̂) = 0 for every ω — algebraically, pairwise, with no averaging and no parity assumption (equal weighting comes from the proper rotation group I alone, all det +1, transitive on both shells). A free particle's arc cohort is a single direction and does not cancel: |⟨b⟩| = 1. Same linear coupling, opposite outcomes, no separate stipulation per sector.
+
+**The requirement that makes it work.** The icosahedral rotation group I does NOT contain −I. Antipodal pairing is a property of the **special symmetry-axis orbits** (12-shell on C5 axes, 20-shell on C3, 30-shell on C2) and **not** of icosahedral symmetry in general — 6 of 6 generic I-orbits tested come back 0/60 paired, with a residual bit sum of 6.7–10%.
+
+**R-F3:** the confined quark's DP arc cohort must lie along cage **bond directions** (those symmetry-axis shells), not in generic directions.
+
+**The question for Thomas (physical picture):** when a confined quark is deflected by the cage and its DP arc cohort is severed and re-established, is the new cohort laid down along a cage bond direction, or can it point in a generic direction? SF-6 describes arc establishment during acceleration but does not say whether the cage's bond geometry quantizes the resulting direction.
+
+**Stakes.** With R-F3: ⟨b⟩ = 0 exactly, F3 derived. Without it: strong-sector parity violation at ~10%, against an observed hadronic PV of ~1e−7 that is already fully accounted for by weak admixture — an overshoot of roughly **six orders of magnitude**. R-F3 is load-bearing and falsifiable, not a modelling convenience.
+
+**Doc:** `series_standard_model/axiom_maturation/4101_f3_derivation.md`. **Verify:** `series_standard_model/code/4101_f3_derivation_verify.py`. **Lane: EW.**
+
+### TODO-4101-F2 — F2 (EM sector) NOT discharged by the F3 derivation (registered Patch 4101, EW lane)
+
+Patch 4101's cancellation argument extends to F2 **only if** the DP sea's arc directions are isotropic (or antipodally balanced). That is a separate claim from R-F3 and is **not** established. F2 remains CONDITIONAL on SF-6 Reading A (3-space only). Bounded follow-up once R-F3 is answered: does the same pairing argument close F2, or does the sea need its own treatment? **Lane: EW.**
 
 ### TODO-4097-R2 — δ_CP ≠ any 600-cell angle: negative result formally filed (registered Patch 4097, EW/SM lane)
 
