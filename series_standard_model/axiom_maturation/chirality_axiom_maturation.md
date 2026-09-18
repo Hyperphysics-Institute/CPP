@@ -611,6 +611,31 @@ removed; nothing is predicted.
 coplanar circulations do not make a double rotation (4072). **The detuned pair supplies the timing, not the second
 plane.** The w-leg remains required and unexplained.
 
+## 2x. The 600-cell supplies orthogonal orbital planes (4091) — grounding the oscillation, not replacing it
+
+**Dimensional fact:** two orthogonal 2-planes span ℝ⁴, so **three mutually orthogonal 2-planes cannot exist** —
+SPIN-1's three colour planes cannot be mutually orthogonal. Only a **pair** can be, and a pair is all that a
+double rotation needs.
+
+**My first test was too narrow.** Testing each neighbour-spanned plane's orthogonal complement against only the
+12 neighbour directions gave **0 of 66** — an apparently clean negative. Complements may be spanned by
+**non-neighbour** directions; widened to all 119, the count is **60 of 66**, reproduced at a second vertex. **The
+verdict reverses.**
+
+**So the double rotation can be built from existing lattice geometry** — two orbits in orthogonal lattice planes
+— with no new oscillation postulated.
+
+**But it cannot avoid the fourth axis.** Across all 60 pairs the smallest out-of-3-space component of either
+plane is **0.8507**, never zero — dimensionally forced, since two orthogonal 2-planes span ℝ⁴ while physical
+3-space is 3-dimensional. **The founder's oscillation is therefore grounded rather than eliminated:** orbiting in
+such a plane *is* fourth-axis motion, not an extra postulate on top of it.
+
+**The sign is still absent:** both hands occur among the 60 pairs, as at every earlier step (4063, 4068, 4071,
+4074, 4078). Geometry supplies carriers, never a choice.
+
+**Standing of the avenue:** second plane ✔ (existing geometry), frequency ratio ✔ (derived, 4090), fourth-axis
+motion ✔ (required, not added) — **the sign ✘, still not derived.**
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |

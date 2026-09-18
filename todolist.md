@@ -1984,6 +1984,19 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4091-EW — the 600-cell supplies orthogonal orbital planes; the oscillation is grounded, not replaced (registered Patch 4091, EW lane)
+
+- **DIMENSIONAL FACT:** three mutually orthogonal 2-planes cannot exist in ℝ⁴ (2+2 = 4), so **SPIN-1's three colour planes cannot be mutually orthogonal**. Only a pair can be — and a pair is all a double rotation needs.
+- **MY FIRST TEST WAS TOO NARROW AND GAVE THE WRONG ANSWER:** testing complements against only the 12 neighbour directions gave **0 of 66**; complements may be spanned by **non-neighbour** vertices, and widened to all 119 directions the count is **60 of 66**, reproduced at a second vertex. **Verdict reversed.** `code/4091_orthogonal_lattice_planes.py`, `reasoning/4091.md`.
+- **ESTABLISHED:** the double rotation can be built from **existing 600-cell geometry** (two orbits in orthogonal lattice planes), with **no new oscillation postulated**.
+- **BUT THE FOURTH AXIS IS UNAVOIDABLE:** across all 60 pairs the smallest out-of-3-space component is **0.8507**, never zero — dimensionally forced. **The founder's oscillation is GROUNDED, not eliminated:** orbiting in such a plane *is* fourth-axis motion.
+- **THE SIGN IS STILL ABSENT:** both hands occur among the 60 pairs, as at 4063/4068/4071/4074/4078. Geometry supplies carriers, never a choice.
+- **AVENUE STANDING:** second plane ✔ (existing geometry); frequency ratio ✔ (derived, 4090); fourth-axis motion ✔ (required, not added); **sign ✘ (not derived)**. **Three of four legs now rest on existing structure.**
+- **(1) NEXT, Claude, bounded:** which orthogonal pair does a captured DP actually occupy? SPIN-1 fixes radii but not planes; if its capture geometry selects a pair, the double rotation is fully determined by shipped results. **Lane: EW/QM.**
+- **(2) Carried:** F5 → CKM (4087); founder's adoption decision **held**; BC-helix bundling (4078). **Lane: EW/SR (founder).**
+
+---
+
 ### TODO-4090-EW — resonance constraint met by a derived ratio; no prediction follows (registered Patch 4090, EW lane)
 
 - **CONSTRAINT MET.** SPIN-1 already contains a **derived** detuned pair: the captured DP's inner CP at r_in and outer CP at 2 r_in orbit with angular-frequency ratio **2√2**, *"not assumed"* — it follows from 1/r² balance and the factor-2 radius. Reproduced exactly (ω ∝ r^(−3/2) ⇒ 2^(3/2) = 2.828427). Pseudoscalar **−5.6564** at that ratio vs **0.0000** at 1:1. **4089's obstruction is removed by a structure the theory already owns.** `code/4090_resonance_constraint_met.py`, `reasoning/4090.md`.
