@@ -326,6 +326,35 @@ with b) is what exposed it.
 few bits. K3 returns to first place: maximal violation in symmetric structures, exponentially suppressed elsewhere,
 one rule, no new variable.
 
+## 2o. K3's load test: does the incoming particle break the bracelet's ties? (4081)
+
+**The quantitative structure.** With finite registers a perturbation below one LSB quantises away and does **not**
+break a tie. So bracelet ties survive iff the relative perturbation ε at the decision point satisfies ε < 2⁻ᵇ.
+Measured tie survival:
+
+| ε | b = 8 | b = 10 | b = 12 | b = 16 |
+|---|---|---|---|---|
+| 0 | 1.0000 | 1.0000 | 1.0000 | 1.0000 |
+| 10⁻⁵ | 1.0000 | 1.0000 | 1.0000 | 1.0000 |
+| 10⁻³ | 1.0000 | 0.5525 | 0.7050 | 0.0375 |
+| 10⁻² | 0.9200 | 0.3475 | 0.1350 | 0.0150 |
+| 1 | 0.0175 | 0.0025 | 0.0000 | 0.0000 |
+
+**The tension this exposes.** EM safety (4080) wants **deep** registers (leak ~2⁻ᵇ); bracelet ties want the
+perturbation **below one LSB**, which deep registers make harder. K3 is viable only in the window
+**ε_bracelet < 2⁻ᵇ < Δ_EM**.
+
+**SF-2 supplies the crucial fact, and it favours K3.** SF-2 §5: the W bracelet *"activates when an external charge
+is captured at its **D₆-symmetric centroid**"*, and the activated state *"disintegrates statistically per local
+SSV-gradient probabilities."* **A charge sitting at the symmetry centre does not break D₆** — it is a fixed point
+of the group. So the leading perturbation, which would otherwise be order unity and would kill the ties outright,
+**vanishes by symmetry in SF-2's own construction**. And the quantity that then chooses the decay channel is
+exactly a degenerate SSV comparison — the place a tie-break rule acts.
+
+**The residual, named.** The captured charge has *motion*, and a moving charge is not D₆-symmetric even at the
+centroid. So ε_bracelet is set not by the charge's full amplitude but by its **directional asymmetry**. Whether
+that residual falls below one LSB is the open question, and it is a physical-picture question, not a computation.
+
 ## 2e. Where the axiom can live — three locations (the real decision)
 
 | | location | what it adds | strength | risk |
@@ -400,6 +429,7 @@ warns against — whereas χ reads handedness off a rotation CPP already has.
 
 ## 8. Log
 
+- **4081** — K3 load test: ties survive iff ε < 2⁻ᵇ, creating the window ε_bracelet < 2⁻ᵇ < Δ_EM. SF-2 §5 places the activating charge **at the D₆-symmetric centroid**, so the order-unity perturbation vanishes by symmetry; the residual is the charge's motion. Founder picture question raised.
 - **4080** — 4079's model corrected against AP-4 (DI-bits carry register *snapshots*; SSV_net is a *vector sum*, not a count): generic tie rate falls as 2⁻ᵇ with register depth (0.0033 at b = 10, 0.0000 at 16) while the symmetric rate stays 1.0000 at every depth. Separation exponential, not marginal; **K3's EM objection answered** for any register deeper than a few bits. In-patch model error caught by the control.
 - **4079** — K3 tested against CPP dynamics: ties are generic in symmetric configurations (1.0000) and 0.1427 in generic ones, so a chiral tie-break gives maximal violation in the D₆ bracelet **but leaks parity-violating EM** unless DI-bit counts are large; dynamic-range sweep converts K3 into a quantitative, falsifiable requirement.
 - **4078** — K2/K3/K4 evaluated: helix uses perfectly regular cells (spread 2.5e-13) but never repeats (twist 131.81°, no closure in 10,000) and gives z = 6 not 12, and supplies a hand without choosing it; K3 remains cheapest with a locality dependency; **K4 withdrawn as circular** (Sakharov: baryogenesis needs C/CP violation as input).

@@ -1984,6 +1984,16 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 ---
 
+### TODO-4081-EW — K3 load test passed on SF-2's own construction; one residual is the founder's (registered Patch 4081, EW lane)
+
+- **ESTABLISHED:** ties survive a perturbation iff ε < 2⁻ᵇ (below one LSB it quantises away). Measured: 1.0000 up to ε ≈ 10⁻⁵; dead by ε ≈ 10⁻¹; knee tracks 2⁻ᵇ. Controls: ε = 0 → 1.0000 at every depth (4080 reproduced); ε = 1 → dead at every depth. `code/4081_k3_load_test_incoming_particle.py`, `reasoning/4081.md`.
+- **TENSION FOUND (corrects 4080's "deeper is better"):** EM safety wants **deep** registers (leak ~2⁻ᵇ); bracelet ties want the perturbation **below one LSB**, which deep registers make harder. **K3 lives only in the window ε_bracelet < 2⁻ᵇ < Δ_EM.**
+- **SF-2 REMOVES THE LEADING OBSTRUCTION:** §5 — the bracelet *"activates when an external charge is captured at its **D₆-symmetric centroid**"* and *"disintegrates statistically per local SSV-gradient probabilities."* A charge at the symmetry centre is a **fixed point of D₆** and does **not** break the symmetry, so the order-unity perturbation is absent by symmetry, and the channel-selecting SSV comparison is exactly where a tie-break would act.
+- **(1) FOUNDER PHYSICS QUESTION (picture form) — the residual, and it decides K3:** the captured charge sits at the centroid but it **arrives moving**. Does the bracelet's SSV comparison at the moment of disintegration see only the charge's **position** (which is symmetric — a fixed point of D₆, leaving the ring's twelve contributions exactly equal), or does it also see the charge's **direction of arrival** (which picks out an axis and breaks the equality)? If position only, K3 delivers maximal parity violation with no new variable. If the direction is seen at full strength, there is no window and K3 fails. **Lane: EW (founder).**
+- **(2) Carried:** ω for a seeding unpaired CP (4076); SF-6 4th-axis linear-use check (4075); F8 for χ₄; BC-helix bundling to z = 12 (4078). **Lane: EW/SM/SR.**
+
+---
+
 ### TODO-4080-EW — K3's EM leak was a model artifact; the real separation is exponential (registered Patch 4080, EW lane)
 
 - **CORRECTION to my own 4079 model.** AP-4 verbatim: the DI-bit imprint is "a STATIC SNAPSHOT of the origin GP's computed registers"; SSV_net = E + S is a **vector sum**; "every GP emits the same fixed number of DI-bits every Moment" — value **nowhere specified**. Degeneracy is equal **SSV_net vector sums**, not equal arrival counts. 4079 measured the wrong quantity.
