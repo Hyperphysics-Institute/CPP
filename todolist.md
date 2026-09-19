@@ -2013,7 +2013,17 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 **Why it matters now:** F5 is the one filter keeping χ₄ from panel-readiness. If the 65.5° target is signpost-only *and* F5 reduces to the H1 blocker (Patch 4102), then χ₄'s route to panel-readiness runs entirely through H1 and nothing else. That is worth knowing before any further F5 work. **Lane: SM/EW.**
 
-### TODO-4109-4071 — establish the relationship between the LSP′ pseudoscalar and Patch 4071's ≥4-directions result (registered Patch 4109, EW lane)
+### TODO-4111-A3AMEND — χ₄ requires a new irrep channel in A3′; price and propose it (registered Patch 4110, EW lane — AXIOM-LEVEL, founder decision)
+
+Patch 4110 proved that **no pseudoscalar buildable from A3′'s ratified LSP′ = (Φ, V_i, Q_ij) is nonzero on any CPP structure** — the unique candidate det[V,QV,Q²V] is a Vandermonde in Q's eigenvalues and dies on anything axially symmetric, which every CPP structure is (including the D6 W bracelet, where V−A is maximal).
+
+**So χ₄ cannot ride existing content. It requires amending A3′** to broadcast a genuine pseudoscalar channel — exactly the "new concept that has never been used" the founder named at 4109.
+
+**This is an axiom change, therefore a founder decision (PD-006).** What is owed before it can be put: the precise form of the added channel, its cost (what else in the corpus reads LSP′ and would have to accommodate a fourth irrep), and whether AP-4's DI-bit content {origin, E, S} needs the parallel amendment. Bounded scoping, then a founder question. **Lane: EW.**
+
+### TODO-4109-4071 — relationship between the LSP′ pseudoscalar and Patch 4071's ≥4-directions result — **ANSWERED at Patch 4110, affirmatively for 4071** (registered Patch 4109, EW lane)
+
+No conflict; they agree. 4071 found a CP needs ≥4 independent internal *directions* to carry a pseudoscalar. Patch 4110 reaches the same wall from the LSP′ side: (V, Q) cannot produce a nonzero pseudoscalar on any symmetric CPP structure. **4071's conclusion — "internal structure IS an axiom rather than an alternative to one" — is corroborated, not threatened.**
 
 Patch 4109 found a pseudoscalar inside A3′'s LSP′ content: det[V, QV, Q²V], rotation-invariant and P-odd (5000/5000 P-flips), vanishing identically for isotropic Q.
 
