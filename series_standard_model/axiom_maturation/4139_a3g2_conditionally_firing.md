@@ -1,5 +1,15 @@
 # A3G-2's Magnitude Test — the Amendment Meets the Preferred Frame
 
+> **⚠ WITHDRAWN AT PATCH 4140 — THE DRIFT TERM BELOW IS AN ARTIFACT.**
+> §2 boosted V (added the drift **u** to every quark's SSV_net) while holding **A fixed**. That is
+> half a transformation law. F6 forces (V_i, A_i) to be the boost-like and rotation-like halves of
+> one M_μν-type bivector, and then **b = A·V is a Lorentz pseudo-invariant** (the analogue of E·B):
+> boost both halves and the drift cancels identically. There is **no absolute-frame residual**, the
+> ~10²³ gap in §3 does not arise, **A3G-2 is not conditionally firing**, and **Patch 4134 stands as
+> originally written** — this document's "revision" of it is itself withdrawn. The founder ruling
+> that prompted the recheck is `founders_voice/4140_ruling_no_absolute_frame_signature.md`.
+> Retained verbatim below for provenance. See `4140_b_is_a_bivector_invariant.md`.
+
 **Patch:** 4139. **Lane:** EW. **Session:** 234.
 **Discharges:** TODO-4138-A3G2MAG. **Withdraws:** my own 4138 rescue.
 **Revises:** Patch 4134 (the rest-frame calculation was incomplete).
