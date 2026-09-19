@@ -2013,6 +2013,16 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 **Why it matters now:** F5 is the one filter keeping χ₄ from panel-readiness. If the 65.5° target is signpost-only *and* F5 reduces to the H1 blocker (Patch 4102), then χ₄'s route to panel-readiness runs entirely through H1 and nothing else. That is worth knowing before any further F5 work. **Lane: SM/EW.**
 
+### TEST-A3G-1…9 — the authorized test programme on the A3′ completion (registered Patch 4115, EW lane)
+
+**Founder authorization 18 Sep 2026:** *"Yes, please complete all missing tests to confirm this axiom and its compliance with empirics."* (verbatim: `founders_voice/4115_authorization_test_the_axiom_against_empirics.md`)
+
+Nine tests specified in `handovers/2026-09-18_session_233_carryover_a3g_test_programme.md` §3. **Falsifiers (run first):** A3G-1 vacuum magnetisation without DP-CAL-1; A3G-2 spin-dependent fifth force vs torsion-balance/comagnetometer bounds; A3G-3 EM parity re-derived from the axiom alone. **Consistency:** A3G-4 AP-4 messenger/computed split; A3G-5 SF-6 "axial part" disambiguation sweep; A3G-6 F3 re-derivation without R-F3. **Payoff:** A3G-7 nucleon magnetic moments (OPEN-SS-8 / PRED-O-14 — the strongest empirical test, and for L = 0 the spin half carries it entirely); A3G-8 spin-½/Pauli via 4098; A3G-9 promote DP-CAL-1 from calibration to derivation.
+
+**NOT in scope: F5.** A·V is a sign, not an angle; the axiom supplies no CP phase (4103/4110). Do not let the suite drift there.
+
+**Framing:** the instruction says *confirm*; the programme is written to *test*, per PD-008 and the founder's own 4093 standard ("adopt only after a clean win"). **Lane: EW.**
+
 ### TODO-4111-A3AMEND — χ₄ requires a new irrep channel in A3′; price and propose it (registered Patch 4110, EW lane — AXIOM-LEVEL, founder decision)
 
 Patch 4110 proved that **no pseudoscalar buildable from A3′'s ratified LSP′ = (Φ, V_i, Q_ij) is nonzero on any CPP structure** — the unique candidate det[V,QV,Q²V] is a Vandermonde in Q's eigenvalues and dies on anything axially symmetric, which every CPP structure is (including the D6 W bracelet, where V−A is maximal).
