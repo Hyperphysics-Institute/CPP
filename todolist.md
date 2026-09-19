@@ -2039,6 +2039,10 @@ Patch 4119 executed **E2** (|χ| renamed to *primitive anisotropy amplitude*, se
 
 **Provenance note:** Grok's authorship is not itself a reason to retire — the magnitude has since been re-derived from lattice geometry and validated. **Lane: CHIR/EW — founder decision.**
 
+### TODO-4126-CAGEMOMENT — do the real cage evaluation of ⟨L̂ + 2Ŝ⟩ (registered Patch 4126, SS/EW lane)
+
+Patch 4126 ran A3G-7 and got μ_p = +3.000 vs +2.793 observed (7.4%), μ_n = −2.000 vs −1.913 (4.5%), ratio −1.500 vs −1.460 (2.7%) — **zero parameters**, the amendment's first positive empirical result. But the scale came from the **naive** assignment m_q = M_N/3, not from a cage calculation. **OPEN-SS-8 asks for ⟨L̂ + 2Ŝ⟩ evaluated over the icosahedral/dodecahedral cage geometry, and that is undone.** Matching μ_p exactly needs m_q = 0.358 M_N against the naive 0.333 — a 6.9% gap that is precisely where the real calculation must do its work. **OPEN-SS-8 is ADVANCED, not closed; PRED-O-14 stays "to derive."** Doc: `axiom_maturation/4126_a3g7_result.md`. **Lane: SS/EW.**
+
 ### TODO-4124-QUADRATIC — the A3G-3 T-parity protection is linear-order only (registered Patch 4124, EW lane)
 
 A3G-3 passes because an EDM coupling is T-ODD while χ₄'s b is T-EVEN (F6), and the response is LINEAR in b (B3) — so a T-even carrier cannot source a T-odd term. **But a response QUADRATIC in b would be T-even × T-even = T-even and is NOT excluded by this argument.** B3 established linearity, so the protection holds exactly where B3 does. A higher-order term needs separate treatment before A3G-3 can be called closed rather than passed. Bounded. **Lane: EW.**
