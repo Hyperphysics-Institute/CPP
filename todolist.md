@@ -2049,7 +2049,27 @@ This lane's **Patch 4046** found that n̂ aligned with a host vertex is **fixed 
 
 **Doc:** `series_standard_model/axiom_maturation/4101_f3_derivation.md`. **Verify:** `series_standard_model/code/4101_f3_derivation_verify.py`. **Lane: EW.**
 
-### TODO-4101-F2 — F2 (EM sector) NOT discharged by the F3 derivation (registered Patch 4101, EW lane)
+### TODO-4106-F2DP — F2: is a sea DP's (spin, arc) relative-orientation parity matched? (registered Patch 4106, EW lane — PD-006(a) FOUNDER QUESTION)
+
+**Status: OPEN — awaiting founder. This question can REFUTE χ₄ outright.**
+
+**The reduction (Patch 4106).** A DP is a bound pair of opposite-polarity CPs (glossary); the response to b must be linear (B3, 4076) with a C-odd polarity coefficient forced by CPT (F6, 4085). So one sea DP's net χ₄ response is R = q(b₊ − b₋). Sea isotropy never enters — cancellation is per-DP and pointwise.
+
+**The question for Thomas (physical picture), for a ground-state sea DP:**
+1. Are the two CPs' ZBW spin vectors **parallel** or **antiparallel**?
+2. Is the DP's arc cohort direction **common to both** (the pair drifts together), or **opposed** (each CP's arcs follow its own orbital motion about the pair centre)?
+
+**F2 holds iff the two answers match in parity** (both flip, or neither). Exact, pointwise cancellation in those cases.
+
+**Stakes.** On a mismatch, R/q = 2 for *every* sea DP, against an intrinsic-EM-parity-violation bound of ~1e−10 — an overshoot of ~2×10¹⁰. No suppression is available: linearity is required and the polarity clause is CPT-forced. **A mismatch refutes χ₄.**
+
+**Note the hazard:** the naive reading of each — antiparallel spins (a spin-paired ground state) and a common drift direction — is one of the two fatal cells. So χ₄ needs the corpus to say otherwise on at least one.
+
+**Doc:** `series_standard_model/axiom_maturation/4106_f2_dp_parity_match.md`. **Verify:** `series_standard_model/code/4106_f2_dp_parity_match.py`. **Lane: EW.**
+
+### TODO-4101-F2 — F2 sea-isotropy framing — **SUPERSEDED at Patch 4106** (registered Patch 4101, EW lane)
+
+The 4101 entry asked whether sea-DP arc directions are isotropic. **Sea isotropy turns out to be irrelevant:** the polarity clause makes the cancellation per-DP and pointwise, independent of the sea's direction distribution. Replaced by TODO-4106-F2DP above.
 
 Patch 4101's cancellation argument extends to F2 **only if** the DP sea's arc directions are isotropic (or antipodally balanced). That is a separate claim from R-F3 and is **not** established. F2 remains CONDITIONAL on SF-6 Reading A (3-space only). Bounded follow-up once R-F3 is answered: does the same pairing argument close F2, or does the sea need its own treatment? **Lane: EW.**
 
