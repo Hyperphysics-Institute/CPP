@@ -35,7 +35,17 @@ YYYY-MM-DD_session_NNN_<scope>.md
 - **`session_NNN`** — three-digit session number with leading zeros for chronological sort within a date. Omit `session_NNN` only for legacy files where session number is ambiguous (pre-Session-numbering-codification handovers); use `YYYY-MM-DD_<scope>.md` for those.
 - **`<scope>`** — short snake_case descriptor. Examples: `programme` (no specific paper/trajectory), `capotauro_v1.0_ship`, `sf4_v4.4_archival`, `reading_c_closure_trajectory`, `ss-9_v1.0_ship`. Use lowercase and hyphens for paper IDs (`ss-9`, not `SS-9`).
 
-The naming gives you sortable + scoped names. `ls handovers/` shows chronological order; the last entry is the most recent. Scope appears in the filename so you can tell at a glance what each handover covers without opening it.
+- **`pNNNN` (added Patch 4132 — REQUIRED whenever a session writes more than one handover, recommended always)** — the four-digit number of the patch that files the handover, placed straight after the session number: `YYYY-MM-DD_session_NNN_pNNNN_<scope>.md`. Without it, files sharing a date and session sort **alphabetically by scope**, which is not chronological. *What it cost:* Session 233 wrote six handovers under the prefix `2026-09-18_session_233_`; the filename sort put `..._empirical_reconciliation_and_ckm_registration.md` (Patch 4096, the **oldest**) last, and the true newest (`..._close_B_steps_A_H.md`, Patch 4131) third from last. A window following the kickoff line literally would have booted from a handover 35 patches stale, carrying two payoffs since retracted. Existing files are **not renamed** (append-only; other handovers cite them by name).
+
+**Tie-break for the reader (Patch 4132).** If the last few entries share one `YYYY-MM-DD_session_NNN` prefix and carry no `pNNNN`, do not trust the alphabetical order. Ask git which was added last:
+
+```
+git log --name-only --diff-filter=A --format= -- handovers/ | grep -v '^$' | head -3
+```
+
+The first line is the newest handover. Read it, and read any file it names under "Read with".
+
+The naming gives you sortable + scoped names. `ls handovers/` shows chronological order; the last entry is the most recent (subject to the tie-break above). Scope appears in the filename so you can tell at a glance what each handover covers without opening it.
 
 ## When to write a handover
 
