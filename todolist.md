@@ -2001,6 +2001,22 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 **F3/F2 status after ruling:** upgraded from CONDITIONAL (no founder picture) to CONDITIONAL — founder-endorsed physical mechanism via DP arcs. **Formal derivation DELIVERED at Patch 4101** — F3 is now DERIVED conditional on R-F3 (arc cohort on cage bond directions), filed as TODO-4101-F3. F2 not discharged; see TODO-4101-F2. **Lane: EW.**
 
+### TODO-4102-CKM65 — the 65.5° CKM signpost has never had a provenance audit (registered Patch 4102, SM/EW lane)
+
+**Why this exists.** In June 2026 the SF-2 external-validation campaign put δ_CP to a three-reviewer panel (ChatGPT / Grok / Copilot). **SQ1 returned 3/3: no derivation chain** for the 193.3° signpost — "empirical coincidence / back-calculation / signpost-only." Adjudicated RESTATEMENT-NEEDED at Patch 1202.
+
+**That panel audited the PMNS signpost (193.3°) only.** The CKM value (65.5°) was never audited, yet it sits in the identical evidential position: SF-2 states δ_CP^(CKM) = arg(Capotauro phase factor) ≈ 65° as a "structural prediction," self-labels it "Conjectural (Phase 7 OPTIONAL)," and qualifies it — "matches at the ~1% level *if* the Capotauro phase factor closure proceeds as outlined." An unscoped corpus search confirms **arg(Capotauro phase factor) is never computed anywhere**.
+
+**The task:** the same provenance audit Patch 1202 prescribed for 193.3° — exact source, formula, author/date, dependency chain for the ≈65°. Expected outcome by symmetry with the June finding: signpost-only. If so, F5's "O(1) phase near 65.5°" has no corpus provenance at all and the maturation document should say so.
+
+**Why it matters now:** F5 is the one filter keeping χ₄ from panel-readiness. If the 65.5° target is signpost-only *and* F5 reduces to the H1 blocker (Patch 4102), then χ₄'s route to panel-readiness runs entirely through H1 and nothing else. That is worth knowing before any further F5 work. **Lane: SM/EW.**
+
+### TODO-4102-NEXTID — `next_id.py` was blind to 4xxx bare-numbered subjects; check the other gates for the same shape (registered Patch 4102, EW lane)
+
+**Fixed at 4102.** `taken()` matched bare-numbered commit subjects only with a leading zero (`^0\d{3}`), taught for the 09xx chirality lane at Patch 0936. The 4xxx EW lane uses the identical bare form (`4101 F3 DERIVED …`) and was invisible: **no git-log pattern saw 4100 or 4101.** The block was protected only by the `id_block_registry.md` cell narrative, so the moment a patch did not write "Patch NNNN" into a scanned file its ID vanished — which 4101 did, after which the gate RECOMMENDED the already-pushed 4101. Caught one step before a collision. Pattern broadened to any 4-digit opener; the existing `[lo, hi]` filter keeps date-like lines out; regression-checked against all lanes (chir/dm/de/gr/eu unchanged).
+
+**Residual, not done:** the same leading-zero assumption may exist in the sibling gates written in this lane — `code/continuity_gate.py` (Patch 4029), `code/absence_gate.py` (4012), `code/deferral_gate.py` (0939), `code/encoding_gate.py` (4014). Each should be checked for whether it can see a 4xxx bare-numbered subject. Bounded. **Lane: EW.**
+
 ### TODO-4101-F3 — R-F3: do a confined quark's DP arcs lie on cage bond directions? (registered Patch 4101, EW lane — PD-006(a) FOUNDER QUESTION)
 
 **Status: OPEN — awaiting founder. This is the one remaining physics-picture question in the F3 chain.**

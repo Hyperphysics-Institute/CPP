@@ -155,7 +155,7 @@
 
 The genuine 120-vertex 600-cell has vertex-vertex angles only at multiples of 36°: {36°, 60°, 72°, 90°, 108°, 120°, 144°, 180°}. The CKM phase δ_CP = 65.5° ± 3.3° does not match any of them (closest: 60° at −1.67σ, 72° at +1.97σ). An earlier apparent 66.1° hit was from a 216-vertex non-standard build — not a genuine 600-cell angle.
 
-**Consequence:** the simplest route to δ_CP from 600-cell geometry is closed. Derivation belongs to SF-2's generation-transition structure (OPEN-SM-11). Two bracketing angles (60°, 72°) suggest the CP phase may come from a combination of inter-shell transition angles in SF-2's framework.
+**Consequence:** the simplest route to δ_CP from 600-cell geometry is closed. Derivation belongs to OPEN-SM-11. *(This line originally read "SF-2's generation-transition structure"; no such structure exists — corrected at Patch 4102, which found SF-2 is explicitly generation-BLIND and routes δ_CP^(CKM) through the Capotauro phase factor instead.)* Two bracketing angles (60°, 72°) suggest the CP phase may come from a combination of inter-shell transition angles in SF-2's framework.
 
 **Filed in:** axiom_maturation.md §2aa, reasoning/4096.md, OPEN-SM-11, todolist.md TODO-4097-R2.
 

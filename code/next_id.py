@@ -93,7 +93,18 @@ def taken(lo, hi, blob):
     # bare ^(0\d{3})\s+ misses them entirely, because a letter sits where the
     # whitespace is expected, and an ID the gate cannot see is an ID the gate
     # cannot protect. (First minted 0974a, Patch 0974a; parser taught same patch.)
-    for m in re.finditer(r'(?m)^(0\d{3})[a-z]?\s+\S', blob):
+    # 4102: the leading-zero restriction above made this pattern BLIND to the
+    # 4xxx EW lane, whose commit subjects are bare-numbered in exactly the same
+    # way ('4101 F3 DERIVED ...'). Neither 4100 nor 4101 was visible to any
+    # git-log pattern here; the block was protected only by the id_block_registry
+    # cell narrative, and the moment a patch did not write 'Patch NNNN' into a
+    # scanned file its id vanished. 4101 did exactly that and the gate then
+    # RECOMMENDED 4101 while 4101 was already pushed -- the collision shape this
+    # file exists to prevent, one step from happening. The leading zero was never
+    # the point; the bare-number-opens-the-subject form was. Any 4-digit opener is
+    # now taken, and the [lo, hi] filter on return keeps a stray date-like line
+    # ('2026 ...') out of every block, since no block spans the 20xx range.
+    for m in re.finditer(r'(?m)^(\d{4})[a-z]?\s+\S', blob):
         hits.add(int(m.group(1)))
     return sorted(i for i in hits if lo <= i <= hi)
 

@@ -172,7 +172,9 @@
 **Status:** OPEN — **registered 18 Sep 2026, Patch 4096 (EW/SM cross-lane); corresponds to OPEN-FP-3-CKM from SF-3 §8, which promised frontier entry at ship time but was never filed.**
 **Sector(s):** SM, EW
 **Priority:** HIGH — **gates χ₄'s F5 filter (chirality axiom maturation, §4 filter table)**
-**One-line statement:** Derive the CKM quark mixing matrix elements and the quark CP-violating phase δ_CP ≈ 65.5° from SF-2's generation-transition structure.
+**One-line statement:** Derive the CKM quark mixing matrix elements and the quark CP-violating phase δ_CP ≈ 65.5°. *(Originally worded "from SF-2's generation-transition structure" — see the premise correction below.)*
+
+**PREMISE CORRECTED at Patch 4102:** SF-2 has NO generation-transition structure. SF-2 §sec:W_universality asserts the OPPOSITE as a load-bearing Proposition — the W⁰ mechanism is *generation-BLIND* (identical for all generations), which is how SF-2 derives lepton universality and tree-level FCNC absence. CKM enters SF-2 as an INPUT (CKM-weighted branching postdictions), never as an output. The phrase "generation-transition structure" originated at Patch 4096 (this lane's own) and propagated to six files; an unscoped corpus search finds it nowhere else. SF-2's ACTUAL route is δ_CP^(CKM) = arg(Capotauro phase factor) ≈ 65°, labelled by SF-2 itself "Conjectural (Phase 7 OPTIONAL)" and explicitly contingent ("*if* the Capotauro phase factor closure proceeds as outlined"). arg(Capotauro phase factor) is never computed anywhere in the corpus. **Consequence: F5 is NOT an independent untried route — it reduces to the Capotauro/H1 blocker already adjudicated long-horizon (2028+) by the June 2026 three-reviewer panel (Patch 1202).** See `series_standard_model/axiom_maturation/4102_f5_premise_correction.md`.
 
 **Thomas's instruction (18 Sep 2026, session 233):** *"open a series and lane to refer to SF-2 for the theorem derivation as to why this CP-violating phase would be present in the Corpus."*
 
