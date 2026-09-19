@@ -2039,7 +2039,9 @@ Patch 4119 executed **E2** (|χ| renamed to *primitive anisotropy amplitude*, se
 
 **Provenance note:** Grok's authorship is not itself a reason to retire — the magnitude has since been re-derived from lattice geometry and validated. **Lane: CHIR/EW — founder decision.**
 
-### TEST-A3G-1…9 — the authorized test programme on the A3′ completion (registered Patch 4115, EW lane)
+### TEST-A3G-1…9 — the test programme on the A3′ completion — **now running against a PROVISIONALLY ADOPTED axiom (Patch 4120)** (registered Patch 4115, EW lane)
+
+**STATUS CHANGE at 4120:** the founder ruled the 4D bit approved into the CP/GP/DI-bit vector string; χ₄ is recorded **PROVISIONALLY ADOPTED** and A3′ amended in the registry. **A3G-1/2/3 remain LIVE FALSIFIERS — if any fires, the amendment is WITHDRAWN, not patched.** The suite is now the lane's primary work.
 
 **Founder authorization 18 Sep 2026:** *"Yes, please complete all missing tests to confirm this axiom and its compliance with empirics."* (verbatim: `founders_voice/4115_authorization_test_the_axiom_against_empirics.md`)
 
