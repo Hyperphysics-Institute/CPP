@@ -61,6 +61,7 @@ If `git clone` fails (no bash tool, network restriction, github.com unreachable)
 
 **For any session that will produce a physics/derivation patch**, also read:
 - `templates/reasoning_capture_protocol.md` — the per-patch verbatim-reasoning + verify-script capture protocol, bound to the patch-presentation contract (§3). §9 carries the clone-first precondition and the line-1 BLOCKING handover-gate rule. (Registered Session 146 Patches 0608/0610.)
+- `templates/commit_message_format.md` — **short subject line, blank line, then the body** (registered Patch 4144). Subject MUST lead with the 4-digit patch number: `continuity_gate.py` reads `--format=%s` only. Patches 4132–4143 shipped 4,000+ character *subjects*, which made `git log --oneline` page for screens on the founder's terminal after every apply.
 
 ### Step 2: Check what happened last
 
@@ -236,7 +237,8 @@ cd ~/Documents/GitHub/CPP && git am --abort 2>/dev/null; git pull origin main &&
 
 ### Patch numbering convention
 
-Continue from the highest existing patch number in the repo's commit history. Run `git log --oneline | head -20` in the in-container clone to verify the current highest number. Patches are numbered sequentially across all sessions; the numbering does not reset. (As of 11 May 2026 Session 81 close, the highest committed patch is 0344; check `git log --oneline | head -1` for the actual current.) **Sub-commits between patches**: the Binary Artifact Workflow (adopted Session 78, patch 0339; documented in `templates/operating_system.md` §13 Binary Artifact Workflow) produces non-numbered ClearPC-local PDF-recompile commits between numbered Claude patches — these are PDF-only commits that don't receive a patch number. When determining "highest committed patch", read the highest `Patch NNNN:` in commit messages, not the highest commit SHA.
+Continue from the highest existing patch number in the repo's commit history. Run `git log --oneline | head -20` in the in-container clone to verify the current highest number. Patches are numbered sequentially across all sessions; the numbering does not reset. (As of 11 May 2026 Session 81 close, the highest committed patch is 0344; check `git log --oneline | head -1` for the actual current.) **Sub-commits between patches**: the Binary Artifact Workflow (adopted Session 78, patch 0339; documented in `templates/operating_system.md` §13 Binary Artifact Workflow) produces non-numbered ClearPC-local PDF-recompile commits between numbered Claude patches — these are PDF-only commits that don't receive a patch number. When determining "highest committed patch", read the highest `Patch NNNN:` in commit messages, not the highest commit SHA.  
+> **Use `git --no-pager log --oneline -20`** — and see `templates/commit_message_format.md` before writing any commit message.
 
 ### Generating the patch files in the container
 
