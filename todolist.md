@@ -2019,7 +2019,9 @@ Patch 4110 proved that **no pseudoscalar buildable from A3′'s ratified LSP′ 
 
 **So χ₄ cannot ride existing content. It requires amending A3′** to broadcast a genuine pseudoscalar channel — exactly the "new concept that has never been used" the founder named at 4109.
 
-**This is an axiom change, therefore a founder decision (PD-006).** What is owed before it can be put: the precise form of the added channel, its cost (what else in the corpus reads LSP′ and would have to accommodate a fourth irrep), and whether AP-4's DI-bit content {origin, E, S} needs the parallel amendment. Bounded scoping, then a founder question. **Lane: EW.**
+**SCOPING DONE at Patch 4111** (`series_standard_model/axiom_maturation/4111_a3_amendment_scoping.md`), on the founder's question. Recommended form: **Option B — add an AXIAL VECTOR channel A_i (the CP's ZBW spin)**, matched across A1′ (CPs carry it), A3′ (LSP′ broadcasts it), AP-4 (DI-bits transport it). Then b ~ A·V is *derived*, not postulated; it bypasses the 4110 obstruction (no Q dependence); and it independently reproduces F6's P-odd/T-even signature. Preserves F2 (DP-CAL-1) and F3 (4101 cage cancellation, max |Σ| = 0 over 20,000 spins).
+
+**REMAINING BEFORE THE AXIOM QUESTION CAN BE PUT — TODO-4111-BCONFLICT:** SF-6 derives **B as the curl of a polar displacement** (4069/4070). Option B adds a *second* independent axial object to the same packet. Formally distinct (B = ∇×V from the V channel; A a per-CP attribute) but every SF-6 result reading "the axial part of the lattice state" would need to say which. **Settle this before adoption.** Also unchecked: whether AP-5's saturation budget absorbs +33% broadcast content. **Lane: EW.**
 
 ### TODO-4109-4071 — relationship between the LSP′ pseudoscalar and Patch 4071's ≥4-directions result — **ANSWERED at Patch 4110, affirmatively for 4071** (registered Patch 4109, EW lane)
 
