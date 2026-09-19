@@ -2013,6 +2013,16 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 **Why it matters now:** F5 is the one filter keeping χ₄ from panel-readiness. If the 65.5° target is signpost-only *and* F5 reduces to the H1 blocker (Patch 4102), then χ₄'s route to panel-readiness runs entirely through H1 and nothing else. That is worth knowing before any further F5 work. **Lane: SM/EW.**
 
+### TODO-4116-CAPRETIRE — is Capotauro still needed? Founder decision, assessment done (registered Patch 4116, CHIR/EW lane)
+
+**Founder asked (18 Sep 2026)** whether the Capotauro event is still needed now that χ₄'s 4D helical bit supplies the chiral/mirror/parity effects.
+
+**Assessment (Patch 4116, `series_umbrella/series_substrate_chirality_arc/capotauro/4116_is_capotauro_still_needed.md`): half yes.** Capotauro and χ₄ are not competitors — Patch 4084 settled that Capotauro supplies the **magnitude** (|M| = χ/6 = φ⁻³/6 ≈ 0.0394, from lattice geometry) and χ₄ supplies the **sign**. χ₄ produces no magnitude anywhere (unscoped search).
+
+**RECOMMENDED THREE-WAY SPLIT:** (1) **KEEP** THEO-CAP-1 and the χ/6 machinery with PRED-O-25/26/27/31 — geometry not cosmology, and PRED-O-25 is validated within 2%; losing four theorems and a 2%-validated zero-parameter prediction to tidy an origin story is not a good trade. (2) **RETIRE** sub-claim (a), the nucleation event, as the handedness-selection mechanism — χ₄ supplies handedness structurally rather than historically, and the paper's own sign-from-n̂ clause was already withdrawn at 4104. Record as superseded, not deleted. (3) **RE-HOME F5 in the same decision** — 4103 established sub-claim (a) is F5's *only* named home, so retiring it leaves the CP phase with no candidate mechanism anywhere. That is acceptable and arguably more honest than a circular referral, but it must be *recorded* rather than discovered later.
+
+**Provenance note:** Grok's authorship is not itself a reason to retire — the magnitude has since been re-derived from lattice geometry and validated. **Lane: CHIR/EW — founder decision.**
+
 ### TEST-A3G-1…9 — the authorized test programme on the A3′ completion (registered Patch 4115, EW lane)
 
 **Founder authorization 18 Sep 2026:** *"Yes, please complete all missing tests to confirm this axiom and its compliance with empirics."* (verbatim: `founders_voice/4115_authorization_test_the_axiom_against_empirics.md`)
