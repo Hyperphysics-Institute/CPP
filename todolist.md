@@ -2039,6 +2039,12 @@ Patch 4119 executed **E2** (|χ| renamed to *primitive anisotropy amplitude*, se
 
 **Provenance note:** Grok's authorship is not itself a reason to retire — the magnitude has since been re-derived from lattice geometry and validated. **Lane: CHIR/EW — founder decision.**
 
+### TODO-4122-COHERENCE — do sea-DP contributions to the coherent EM channel add coherently or incoherently? (registered Patch 4122, EW lane)
+
+**This one question now sets how tight F2's bound is.** Founder correction at 4122: DP-CAL-1 is a strong bias, not an identity — sea DI-bits perturb the antiparallel alignment, so vacuum magnetism is not exactly zero at finite scale. F2's residual is then **δ/π per DP** (linear, verified: a misalignment flips a bit only when A·V lies within δ of zero, measure δ/π).
+
+Inverting the ~1e−10 intrinsic-EM-parity bound: **coherent** → δ < ~3e−10 rad, a severe constraint; **incoherent** → weakens by √N and is effectively unconstrained past N ~ 1e24. Deciding which applies is a structural question about the DI-bit sea that the corpus can address. Doc: `axiom_maturation/4122_dp_cal1_is_a_bias.md`. **Lane: EW.**
+
 ### TEST-A3G-1…9 — the test programme on the A3′ completion — **now running against a PROVISIONALLY ADOPTED axiom (Patch 4120)** (registered Patch 4115, EW lane)
 
 **A3G-1 RUN at Patch 4121 — DOES NOT FIRE, but returns a partial negative.** Only DP-CAL-1 (antiparallel) gives exact fluctuation-free cancellation of the sea's axial channel; without it the vacuum is non-magnetic only *on average* (RMS ~ √N, density ~ 1/√N). **The adopted axiom does NOT make DP-CAL-1 dispensable** — it supplies the referent, not the derivation. **This retracts payoff 5 of the 4111 scoping** ("DP-CAL-1 becomes derivable"); the payoff list is now 4, not 5. **A3G-9 should be re-scoped or retired** — it asks the same question from the other end and this largely answers it negatively in advance. **A3G-3 is now the sharper remaining falsifier.** Result: `axiom_maturation/4121_a3g1_result.md`.

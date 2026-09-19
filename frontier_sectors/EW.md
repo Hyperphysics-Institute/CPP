@@ -164,7 +164,9 @@ The genuine 120-vertex 600-cell has vertex-vertex angles only at multiples of 36
 ### DP-CAL-1: sea-DP internal configuration — a NAMED CALIBRATION, not a derivation (registered Patch 4107)
 
 **Status:** ADOPTED as a calibration on founder instruction (18 Sep 2026). **Sector(s):** EW, QM, CHIR.
-**One-line statement:** A ground-state sea DP has its two CPs' ZBW spins **antiparallel** and their DP arc cohorts **opposed**.
+**One-line statement:** A ground-state sea DP has its two CPs' ZBW spins **strongly biased antiparallel** (not exactly antiparallel) and their DP arc cohorts **opposed**.
+
+**RESTATED at Patch 4122 on founder correction:** *"The helical bit's orientation will be most strongly biased antiparallel by its pair, but it will not be exact because of the influence of the Di-bits from the DP Sea"*, and *"vacuum-state magnetism should not be exactly zero on a finite scale because of charge motion."* DP-CAL-1 is therefore a **bias with a residual**, not an identity. F2's cancellation is **bounded, not exact**: the residual is δ/π per DP for sea-induced misalignment δ, giving δ < ~3e−10 rad in the coherent channel and effectively no constraint if sea contributions are incoherent (TODO-4122-COHERENCE).
 
 **Provenance, split by rigor:**
 - **Arc cohorts opposed — DERIVED.** SF-6 derives EM from eDP-Sea Polarization; polarizing a dipole displaces its +CP and −CP in opposite directions by definition; Patch 4097 makes the arc cohort the product of that displacement. Not a free choice.
