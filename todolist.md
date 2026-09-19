@@ -2033,7 +2033,23 @@ This lane's **Patch 4046** found that n̂ aligned with a host vertex is **fixed 
 
 **Residual — DISCHARGED at Patch 4105.** The sibling gates do NOT carry the leading-zero assumption: `continuity_gate.py` matches `\s*(?:Patch\s+)?(\d{3,4})[a-z]?\b` and reads all four ID forms; `absence_gate.py`, `deferral_gate.py`, `encoding_gate.py` parse no IDs at all. **But the audit found a different defect in `continuity_gate.py`:** its `BLOCKS` still read `'ew':(4000,4099)`, so the gate whose purpose is catching a silently-missing patch was not watching 4100–4199 at all — patches 4100–4104 were outside its coverage. Root cause: Rule 6 named only `next_id.py` (written 3807; continuity_gate did not exist until 4029). **Rule 6 generalised to every gate carrying a block table**; both gates fixed and verified; exhausted block `ew-4000` restored per the eu-3800/gr-3600 convention. Fourth Rule-6 lag on record, first outside `next_id.py`. **Lane: EW — DONE.**
 
-### TODO-4101-F3 — R-F3: do a confined quark's DP arcs lie on cage bond directions? (registered Patch 4101, EW lane — PD-006(a) FOUNDER QUESTION)
+### TODO-4101-F3 — R-F3 — **SHARPENED at Patch 4108; still awaiting founder** (registered Patch 4101, EW lane — PD-006(a) FOUNDER QUESTION)
+
+**THE QUESTION, restated at Patch 4108 (this is the form to answer):**
+
+> **Is the helicity bit b written once per ARC in a CP's cohort, or once for the cohort's VECTOR SUM?**
+
+**Why this replaces the 4101 wording.** Patch 4107 showed the corpus already uses the per-interaction reading in the EM sector: a polarized sea DP at rest has net momentum zero, so a net-momentum reading would leave b undefined there — yet SF-6's polarization mechanism gives each constituent its own opposed arc, which is what 4107's F2 result depends on.
+
+**Consequences.** Per arc ⇒ a confined quark's arcs resolve per SSV partner ⇒ along the antipodally paired cage bonds ⇒ ⟨b⟩ = 0 exactly ⇒ **F3 derived**, and F2 keeps its basis. Per vector sum ⇒ b undefined for anything at rest (undermining 4107) and generic-direction for a confined quark ⇒ **F3 fails against the ~1e−7 hadronic PV bound by ~10⁷**.
+
+**Reconciliation with the 4097 ruling:** the cohort is a *set* whose vector sum is the momentum — sea DP at rest sums to 0 with two opposed arcs; free particle sums to p; confined quark sums to ≈0 along cage bonds. All three work under the per-arc picture.
+
+**Status:** argument from precedent, not derivation. Doc: `series_standard_model/axiom_maturation/4108_rf3_sharpened.md`. **Lane: EW.**
+
+*(original 4101 wording retained below for provenance)*
+
+### TODO-4101-F3-ORIG — R-F3 as originally filed: do a confined quark's DP arcs lie on cage bond directions? (registered Patch 4101, EW lane)
 
 **Status: OPEN — awaiting founder. This is the one remaining physics-picture question in the F3 chain.**
 
