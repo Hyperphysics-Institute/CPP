@@ -101,7 +101,7 @@ Earlier **Last updated:** 4 Aug 2026 (Patch 2997 — **QM-1 v2.0 REVISION SHIPPE
 ---
 
 ### OPEN-QM-3: Spin-½ and Pauli Exclusion from Cage Geometry
-**Status:** OPEN — **PARTIAL PROGRESS via helicity-bit route, Patch 4098 (18 Sep 2026).**
+**Status:** OPEN — **the Patch 4098 "partial progress" note is RETRACTED at Patch 4129.** The helicity-bit/A_i route gives spin a *referent* but not its **two-dimensionality**, and s = ½ *is* the two-dimensionality this entry asks to derive. A3G-8 (the two-slot result) was withdrawn at 4128 once a P-even coupling reading A's direction (A₁·A₂, ordinary magnetic dipole-dipole) was found; recovering it would require **postulating** A_i as a two-state spin-½ object, which assumes this entry's answer. **The amendment does not advance OPEN-QM-3.** See `series_standard_model/axiom_maturation/4129_qm_payoff_retracted.md`.
 **Sector(s):** QM
 **Priority:** HIGH
 **One-line statement:** Derive s = 1/2 from ZBW orbital topology; derive Pauli exclusion from hDP chain antisymmetry.

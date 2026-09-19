@@ -2039,7 +2039,9 @@ Patch 4119 executed **E2** (|χ| renamed to *primitive anisotropy amplitude*, se
 
 **Provenance note:** Grok's authorship is not itself a reason to retire — the magnitude has since been re-derived from lattice geometry and validated. **Lane: CHIR/EW — founder decision.**
 
-### TODO-4128-QUANTIZE — the amendment must state that A_i is QUANTIZED, not a classical vector (registered Patch 4128, EW/QM lane — blocks the QM payoff)
+### TODO-4128-QUANTIZE — **CLOSED at Patch 4129: the clause cannot be added — it would be circular** (registered Patch 4128, EW/QM lane)
+
+OPEN-QM-3 asks to **derive s = ½**, and s = ½ *is* the two-dimensionality that quantizing A_i would supply. So postulating A_i as a two-state spin-½ object assumes OPEN-QM-3's answer. **The QM payoff claimed at 4111 was circular and is RETRACTED.** The amendment gives spin a referent; the hard part of OPEN-QM-3 is the two-dimensionality, and a broadcast channel does not supply it. CPP derives QM rather than postulating it, so this route would abandon the programme's method on the question it cares most about. OPEN-QM-3 returns to its prior status; its 4098 progress note is corrected in `frontier_sectors/QM.md`.
 
 **Patch 4128 withdrew A3G-8.** A classical axial 3-vector has state space S² — a continuum — while Pauli doubling needs exactly **2**. Real QM gets two because spin-½ lives in a 2-dimensional Hilbert space and the continuum of directions is a continuum of *superpositions*, not of independent states.
 
