@@ -2039,7 +2039,13 @@ Patch 4119 executed **E2** (|χ| renamed to *primitive anisotropy amplitude*, se
 
 **Provenance note:** Grok's authorship is not itself a reason to retire — the magnitude has since been re-derived from lattice geometry and validated. **Lane: CHIR/EW — founder decision.**
 
-### TODO-4123-A3G3 — restate A3G-3 as a coupling calculation (registered Patch 4123, EW lane)
+### TODO-4124-QUADRATIC — the A3G-3 T-parity protection is linear-order only (registered Patch 4124, EW lane)
+
+A3G-3 passes because an EDM coupling is T-ODD while χ₄'s b is T-EVEN (F6), and the response is LINEAR in b (B3) — so a T-even carrier cannot source a T-odd term. **But a response QUADRATIC in b would be T-even × T-even = T-even and is NOT excluded by this argument.** B3 established linearity, so the protection holds exactly where B3 does. A higher-order term needs separate treatment before A3G-3 can be called closed rather than passed. Bounded. **Lane: EW.**
+
+### TODO-4123-A3G3 — **DONE at Patch 4124: A3G-3 PASSES structurally** (registered Patch 4123, EW lane)
+
+**Corrected my own 4123 bound first:** I had modelled the field-induced tilt as a fixed direction, which is not the physical response — a field acts on a spin by torque, δA ~ A × B, perpendicular to A. With the physical form the magnetic channel **cancels exactly** (0.00000 at every δ from 0.002 to 0.2), because the tilt is odd in A and sums to zero over isotropic spins. **Ordinary magnetism does not threaten F2 at all.** What survives is the *aligning* term ~ d(A·Ê) — an electric dipole moment, bounded at |d_e| < 4.1e−30 e·cm, twenty orders tighter than the 1e−10 rad I quoted. **But χ₄ cannot source it:** an EDM is P-odd AND T-odd, while b is T-EVEN (F6, from CPT at 4085) and the response is linear (B3). T = −1 required, T = +1 supplied — forbidden. Protection is structural, from a fact derived weeks earlier for unrelated reasons.
 
 Patch 4123 resolved the coherence question and thereby sharpened A3G-3 from a re-derivation into a **concrete calculation**: compute the **A_i-to-EM coupling coefficient** — how far an applied EM field torques a CP's axial spin — and check it against **δ_field < ~1e−10 rad** at atomic-parity-violation field strengths. If the coupling exceeds that, the amendment is withdrawn. Doc: `axiom_maturation/4123_coherence_resolved.md`. **Lane: EW.**
 
