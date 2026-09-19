@@ -2013,7 +2013,13 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 **Why it matters now:** F5 is the one filter keeping χ₄ from panel-readiness. If the 65.5° target is signpost-only *and* F5 reduces to the H1 blocker (Patch 4102), then χ₄'s route to panel-readiness runs entirely through H1 and nothing else. That is worth knowing before any further F5 work. **Lane: SM/EW.**
 
-### TODO-4103-NHAT — does Capotauro v2.0's sign(χ)-from-n̂ survive this lane's 4046? (registered Patch 4103, CHIR/EW lane)
+### TODO-4104-CAPRECOMPILE — Capotauro PDF recompile owed after the 4104 sign corrigendum (registered Patch 4104, Thomas's mechanical action)
+
+`capotauro.tex` source was edited at Patch 4104 (marked corrigendum withdrawing the sign-of-χ-from-n̂ clause; magnitude results untouched). The shipped PDF is now stale relative to source. **Thomas's mechanical action per PD-006(b).** Ledger precedent: the VW-1 v1.5 recompile owed since 0985.
+
+### TODO-4103-NHAT — does Capotauro v2.0's sign(χ)-from-n̂ survive this lane's 4046? — **ANSWERED NO at Patch 4104** (registered Patch 4103, CHIR/EW lane)
+
+**VERDICT: it does not survive, on two independent grounds.** (i) det(−I₄) = +1 and −I₄ is a 600-cell symmetry, so n̂ and −n̂ are related by a *proper* rotation and name the same configuration — the sign of n̂ selects no enantiomorph for **any** n̂ (4072). (ii) Under the vertex-aligned reading FI-C-RC-2 that Capotauro cites, **30 improper symmetries fix n̂**, so (600-cell, n̂) is achiral (4046). A generic n̂ escapes (ii) but not (i). Marked corrigendum applied to `capotauro.tex`; magnitude results (|χ| = φ⁻³, |M| = χ/6, THEO-CAP-1) untouched. Full write-up: `series_umbrella/series_substrate_chirality_arc/capotauro/4104_nhat_sign_corrigendum.md`. Recompile owed: TODO-4104-CAPRECOMPILE.
 
 Capotauro v2.0 states that **both** the sign and the magnitude of χ are derived from the substrate's primitive 4D direction n̂ (FI-C-RC-1): "the sign of χ (which enantiomorph is selected) … fixed by the substrate's primitive direction."
 
