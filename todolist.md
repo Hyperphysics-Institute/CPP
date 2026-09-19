@@ -2023,6 +2023,12 @@ Patch 4110 proved that **no pseudoscalar buildable from A3′'s ratified LSP′ 
 
 **TODO-4111-BCONFLICT — CLOSED at Patch 4112, NO CONFLICT.** SF-6's ∇×V and Option B's A_i are the *orbital* and *spin* halves of ⟨L̂ + 2Ŝ⟩ — the operator OPEN-SS-8's own solution statement already names. Not duplicates. And for the nucleon (ground state, L = 0) ⟨L̂⟩ = 0, so 100% of the moment is spin and orbital magnetism supplies *none* of it; spin-only SU(6) gives μ_p/μ_n = −1.500 against an observed −1.460, agreement 2.7% with no free parameter. The risk inverts into a payoff: Option B supplies the half OPEN-SS-8 (HIGH) and PRED-O-14 are blocked on. What survives is an editorial obligation at adoption — SF-6 text saying "the axial part" must specify which. **Still unchecked from 4111: AP-5 saturation budget vs +33% content.**
 
+### TODO-4113-CONTENTCOST — AP-5 does not budget per-CONTENT cost at all (registered Patch 4113, EW/GR lane)
+
+Ruling 1 at Patch 4113 found AP-5's saturation budget is **arrival-count based** ("more DI-bits *arrive* in one Moment than it can *act on*"; derived depth ⌈1.5 v⌉; D1 clips, D3 relays whole, D4 stores). A fourth irrep changes what each DI-bit carries, not how many arrive, so **no threshold is crossed**.
+
+**But AP-5 quantifies no per-content cost whatsoever.** D3's whole-relay and D4's register storage would each carry 33% more content per Moment with nothing in AP-5 to measure it against. The finding is "unbudgeted", not "free" — AP-5 cannot be violated because it does not constrain this. **If a future result makes per-content cost matter (register depth, relay bandwidth, the D4 held sector), this ruling does not protect it.** Worth a GR-lane look since AP-5 is that lane's amendment. **Lane: EW/GR.**
+
 ### TODO-4112-SS8DEP — OPEN-SS-8's dependency field was wrong; check the sibling entries for the same shape (registered Patch 4112, SS lane)
 
 OPEN-SS-8 carried **"Dependencies: None blocking"** at HIGH priority while its stated route required a spin operator CPP does not have — unreachable in principle, with nothing downstream to contradict it. Corrected in `frontier_sectors/SS.md` at 4112. **Residual:** this is the same failure shape as Patch 4102 (a route quietly presupposing something absent). The other OPEN-SS-* entries, and OPEN-G-2 (lepton anomalous moments, named as a cross-connection of SS-8), should be checked for dependency fields that presuppose missing attributes. Bounded. **Lane: SS.**
