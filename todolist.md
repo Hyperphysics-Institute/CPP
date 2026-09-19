@@ -2001,7 +2001,9 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 **F3/F2 status after ruling:** upgraded from CONDITIONAL (no founder picture) to CONDITIONAL — founder-endorsed physical mechanism via DP arcs. **Formal derivation DELIVERED at Patch 4101** — F3 is now DERIVED conditional on R-F3 (arc cohort on cage bond directions), filed as TODO-4101-F3. F2 not discharged; see TODO-4101-F2. **Lane: EW.**
 
-### TODO-4102-CKM65 — the 65.5° CKM signpost has never had a provenance audit (registered Patch 4102, SM/EW lane)
+### TODO-4102-CKM65 — the 65.5° CKM signpost provenance audit — **DONE at Patch 4103** (registered Patch 4102, SM/EW lane)
+
+**VERDICT: NO DERIVATION CHAIN; CIRCULAR REFERRAL.** SF-2 → Capotauro → SF-2. "Capotauro phase factor" occurs zero times in Capotauro. Full audit: `series_standard_model/axiom_maturation/4103_ckm65_provenance_audit.md`. Consequence: F5 is a missing mechanism, not a pending computation; H1 is not sufficient for it (a sign is not an angle).
 
 **Why this exists.** In June 2026 the SF-2 external-validation campaign put δ_CP to a three-reviewer panel (ChatGPT / Grok / Copilot). **SQ1 returned 3/3: no derivation chain** for the 193.3° signpost — "empirical coincidence / back-calculation / signpost-only." Adjudicated RESTATEMENT-NEEDED at Patch 1202.
 
@@ -2010,6 +2012,14 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 **The task:** the same provenance audit Patch 1202 prescribed for 193.3° — exact source, formula, author/date, dependency chain for the ≈65°. Expected outcome by symmetry with the June finding: signpost-only. If so, F5's "O(1) phase near 65.5°" has no corpus provenance at all and the maturation document should say so.
 
 **Why it matters now:** F5 is the one filter keeping χ₄ from panel-readiness. If the 65.5° target is signpost-only *and* F5 reduces to the H1 blocker (Patch 4102), then χ₄'s route to panel-readiness runs entirely through H1 and nothing else. That is worth knowing before any further F5 work. **Lane: SM/EW.**
+
+### TODO-4103-NHAT — does Capotauro v2.0's sign(χ)-from-n̂ survive this lane's 4046? (registered Patch 4103, CHIR/EW lane)
+
+Capotauro v2.0 states that **both** the sign and the magnitude of χ are derived from the substrate's primitive 4D direction n̂ (FI-C-RC-1): "the sign of χ (which enantiomorph is selected) … fixed by the substrate's primitive direction."
+
+This lane's **Patch 4046** found that n̂ aligned with a host vertex is **fixed by Θ = diag(1,1,1,−1)**, so (600-cell, n̂) is **achiral** — and read the five V3 confirmations as five demonstrations of exactly that.
+
+**Not examined at 4103** (out of audit scope): whether these two survive together, or whether Capotauro's sign derivation uses n̂ in a way 4046 does not reach. If they do not survive together, Capotauro v2.0's sign claim is affected, which bears on sub-claim (b) and on H1's role. Bounded read of `capotauro.tex` §sec:h4_i4 against `reasoning/4046`. **Lane: CHIR/EW.**
 
 ### TODO-4102-NEXTID — `next_id.py` was blind to 4xxx bare-numbered subjects; check the other gates for the same shape (registered Patch 4102, EW lane)
 

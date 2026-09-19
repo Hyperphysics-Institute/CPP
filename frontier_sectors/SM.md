@@ -170,6 +170,8 @@
 
 ### OPEN-SM-11: CKM Mixing Matrix and Quark CP Phase
 **Status:** OPEN — **registered 18 Sep 2026, Patch 4096 (EW/SM cross-lane); corresponds to OPEN-FP-3-CKM from SF-3 §8, which promised frontier entry at ship time but was never filed.**
+
+**AUDIT RESULT (Patch 4103):** the 65.5° target has **no derivation chain**, and the referral is **circular** — SF-2 computes it as arg(Capotauro phase factor) and defers to Capotauro; "phase factor" occurs zero times in Capotauro, which delivers the magnitude |M| = χ/6 and defers the CP phase back to SF-2. Neither shipped paper holds the machinery. The arc produces magnitudes and at most a sign, never a phase angle. **OPEN-SM-11 is therefore a missing-mechanism problem, not a pending computation.** See `series_standard_model/axiom_maturation/4103_ckm65_provenance_audit.md`.
 **Sector(s):** SM, EW
 **Priority:** HIGH — **gates χ₄'s F5 filter (chirality axiom maturation, §4 filter table)**
 **One-line statement:** Derive the CKM quark mixing matrix elements and the quark CP-violating phase δ_CP ≈ 65.5°. *(Originally worded "from SF-2's generation-transition structure" — see the premise correction below.)*
