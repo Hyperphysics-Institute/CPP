@@ -2013,6 +2013,12 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 **Why it matters now:** F5 is the one filter keeping χ₄ from panel-readiness. If the 65.5° target is signpost-only *and* F5 reduces to the H1 blocker (Patch 4102), then χ₄'s route to panel-readiness runs entirely through H1 and nothing else. That is worth knowing before any further F5 work. **Lane: SM/EW.**
 
+### TODO-4119-CAPV21-REMAINDER — E4/E7 + the sibling-paper sweep, still owed (registered Patch 4119, CHIR lane)
+
+Patch 4119 executed **E2** (|χ| renamed to *primitive anisotropy amplitude*, section + remark + 12 recurring occurrences), **E3** (sub-claim (a) retired as SUPERSEDED with reason, retained not deleted), **E5** (δ_CP/η_B referral withdrawn; "no candidate mechanism exists" recorded), and the E6 phrase sweep. LaTeX verified: whole-file brace balance unchanged from HEAD, all environments paired.
+
+**Still owed:** **E4** the Q7 cosmological-nucleation scoping section (19 lines); **E7** the sub-claim architecture table and abstract restated as (a) superseded / (b) open / (c) shipped; **E6 remainder** the ~29 residual one-line mentions in capotauro.tex plus **14 pointer updates across 10 sibling papers** (theo_chir_audit_1, chirality_continuum, theo_chir_cap_1, theo_chir_chi_1, theo_chir_merge_1/2, theo_chir_tarrow_1, theo_chir_vw_1/2, dynamical_substrate_law). Bounded and mechanical. **Then** version-bump to v2.1 with changelog and recompile once (folds TODO-4104-CAPRECOMPILE). **Lane: CHIR.**
+
 ### TODO-4118-CAPV21 — the Capotauro v2.1 revision plan (registered Patch 4118, CHIR lane; E3–E7 gated on TODO-4116-CAPRETIRE)
 
 **Founder asked whether the Capotauro papers need rewriting. Measured answer: NO — a v2.0 → v2.1 revision.** Audit of all 111 sections: real surgery is **119 lines of 2263 (5.3%)** in 7 sections, plus **41 scattered one-line edits** and **14 one-line pointer updates** across 10 sibling papers. **The flagship theorem section (`sec:composite_we`, |M| = χ/6) has ZERO affected hits** — THEO-CAP-1 and PRED-O-25/26/27/31 stand unchanged.
