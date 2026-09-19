@@ -2039,7 +2039,13 @@ Patch 4119 executed **E2** (|χ| renamed to *primitive anisotropy amplitude*, se
 
 **Provenance note:** Grok's authorship is not itself a reason to retire — the magnitude has since been re-derived from lattice geometry and validated. **Lane: CHIR/EW — founder decision.**
 
-### TODO-4122-COHERENCE — do sea-DP contributions to the coherent EM channel add coherently or incoherently? (registered Patch 4122, EW lane)
+### TODO-4123-A3G3 — restate A3G-3 as a coupling calculation (registered Patch 4123, EW lane)
+
+Patch 4123 resolved the coherence question and thereby sharpened A3G-3 from a re-derivation into a **concrete calculation**: compute the **A_i-to-EM coupling coefficient** — how far an applied EM field torques a CP's axial spin — and check it against **δ_field < ~1e−10 rad** at atomic-parity-violation field strengths. If the coupling exceeds that, the amendment is withdrawn. Doc: `axiom_maturation/4123_coherence_resolved.md`. **Lane: EW.**
+
+### TODO-4122-COHERENCE — **CLOSED at Patch 4123** — do sea-DP contributions add coherently or incoherently? (registered Patch 4122, EW lane)
+
+**Both channels exist, with opposite fates.** The per-DP residual is nonzero only when A·V lies between 0 and δ(n̂·V), and **its sign follows sign(n̂·V)**. Sea-driven disorder → V isotropic → sign ±1 equally → **cancels, unconstrained**. Field-driven → V polarized (which is what the EM channel *is*, per SF-6's eDP-Sea polarization) → sign biased → **survives, R/N = δ exactly, independent of N**. Verified across two decades (δ = 0.002→0.2, ratio 0.95–1.02). **Consequence: the EM parity bound does not constrain the sea's disorder at all — the founder's 4122 picture is safe — and constrains only the A_i–EM coupling.**
 
 **This one question now sets how tight F2's bound is.** Founder correction at 4122: DP-CAL-1 is a strong bias, not an identity — sea DI-bits perturb the antiparallel alignment, so vacuum magnetism is not exactly zero at finite scale. F2's residual is then **δ/π per DP** (linear, verified: a misalignment flips a bit only when A·V lies within δ of zero, measure δ/π).
 
