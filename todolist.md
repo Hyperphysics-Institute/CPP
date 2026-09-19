@@ -2013,6 +2013,14 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 **Why it matters now:** F5 is the one filter keeping χ₄ from panel-readiness. If the 65.5° target is signpost-only *and* F5 reduces to the H1 blocker (Patch 4102), then χ₄'s route to panel-readiness runs entirely through H1 and nothing else. That is worth knowing before any further F5 work. **Lane: SM/EW.**
 
+### TODO-4118-CAPV21 — the Capotauro v2.1 revision plan (registered Patch 4118, CHIR lane; E3–E7 gated on TODO-4116-CAPRETIRE)
+
+**Founder asked whether the Capotauro papers need rewriting. Measured answer: NO — a v2.0 → v2.1 revision.** Audit of all 111 sections: real surgery is **119 lines of 2263 (5.3%)** in 7 sections, plus **41 scattered one-line edits** and **14 one-line pointer updates** across 10 sibling papers. **The flagship theorem section (`sec:composite_we`, |M| = χ/6) has ZERO affected hits** — THEO-CAP-1 and PRED-O-25/26/27/31 stand unchanged.
+
+**E1** 4104 sign corrigendum — already in source, awaiting recompile. **E2** |χ| renaming (TODO-4117-CHIRENAME) — authorized now, follows from 4104, not contingent on the retirement. **E3–E5** retire sub-claim (a) and Q7 as *superseded notes with reasons*, not deletions; update falsifier/open-work/manifestation sections — **gated on the founder's ruling**. **E6** mechanical sweep of the 41 + 14 one-liners. **E7** sub-claim architecture table and abstract → (a) superseded, (b) open, (c) shipped.
+
+**Sequencing:** ruling first, then E2–E7 as one v2.1 patch, **one recompile** (folds TODO-4104-CAPRECOMPILE). Plan: `capotauro/4118_revision_scope.md`. **Lane: CHIR.**
+
 ### TODO-4116-CAPRETIRE — is Capotauro still needed? Founder decision, assessment done (registered Patch 4116, CHIR/EW lane)
 
 **Founder asked (18 Sep 2026)** whether the Capotauro event is still needed now that χ₄'s 4D helical bit supplies the chiral/mirror/parity effects.
