@@ -2039,6 +2039,16 @@ Patch 4119 executed **E2** (|χ| renamed to *primitive anisotropy amplitude*, se
 
 **Provenance note:** Grok's authorship is not itself a reason to retire — the magnitude has since been re-derived from lattice geometry and validated. **Lane: CHIR/EW — founder decision.**
 
+### TODO-4128-QUANTIZE — the amendment must state that A_i is QUANTIZED, not a classical vector (registered Patch 4128, EW/QM lane — blocks the QM payoff)
+
+**Patch 4128 withdrew A3G-8.** A classical axial 3-vector has state space S² — a continuum — while Pauli doubling needs exactly **2**. Real QM gets two because spin-½ lives in a 2-dimensional Hilbert space and the continuum of directions is a continuum of *superpositions*, not of independent states.
+
+**The amendment as written (A1′/A3′/AP-4) adds a classical axial vector.** For the two-slot/Pauli result — the amendment's largest claimed payoff, and the one that addresses OPEN-QM-3 — A_i must be **quantized as a two-state spin-½ object**. That requirement is not presently in any of the three amended axioms and must be added. Until it is, **the QM payoff is conditional, not delivered.** Doc: `axiom_maturation/4128_b3_audit_a3g8_withdrawn.md`. **Lane: EW/QM.**
+
+### TODO-4127-B3AUDIT — **DONE at Patch 4128; the gap was real** (registered Patch 4127, EW lane)
+
+B3 is a **necessary condition for parity violation** ("to get V−A the parity-violating response must be odd in b"), **not** a prohibition on other readings of A. A3G-8 needed the stronger claim and I stretched B3 to give it. A P-even coupling that reads A's direction already exists — **A₁·A₂, ordinary magnetic dipole-dipole, established by my own A3G-2 at 4125** — so same-b CPs with different A *are* distinguishable and strict exclusion fails. **A3G-2 and A3G-3 STAND**: they used B3 only for the T-parity argument, which is exactly what B3 licenses. The 4127 concentration was real and broke in precisely the one place B3 was overstretched.
+
 ### TODO-4127-B3AUDIT — re-examine B3's support; it is now the amendment's single point of failure (registered Patch 4127, EW lane — PRIORITY)
 
 **Patch 4127 found B3 (the χ₄ response is LINEAR in b) is the common factor under three passing results:** A3G-2 and A3G-3 (via the T-parity argument, B3 + F6) and A3G-8 (the two-slot/Pauli result). Six tests run, but the architecture underneath is far less redundant than the count suggests — at 4125 F6 carried two falsifiers; B3 carries three.
