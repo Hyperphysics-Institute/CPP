@@ -2049,9 +2049,9 @@ This lane's **Patch 4046** found that n̂ aligned with a host vertex is **fixed 
 
 **Doc:** `series_standard_model/axiom_maturation/4101_f3_derivation.md`. **Verify:** `series_standard_model/code/4101_f3_derivation_verify.py`. **Lane: EW.**
 
-### TODO-4106-F2DP — F2: is a sea DP's (spin, arc) relative-orientation parity matched? (registered Patch 4106, EW lane — PD-006(a) FOUNDER QUESTION)
+### TODO-4106-F2DP — F2: is a sea DP's (spin, arc) relative-orientation parity matched? — **ANSWERED at Patch 4107** (registered Patch 4106, EW lane)
 
-**Status: OPEN — awaiting founder. This question can REFUTE χ₄ outright.**
+**Status: CLOSED AFFIRMATIVE.** Founder ruled no CP spin has ever been assigned; assumes antiparallel, declines to assert, directs a calibration turn. Patch 4107 found the arc half was never a free choice (SF-6 derives EM from eDP-Sea Polarization; polarizing a dipole displaces its CPs oppositely; with 4097 the arc cohorts are opposed — forced). F2 then holds iff spins antiparallel = the assumed value. R = 0 exactly and pointwise. Empirics sweep: 4 supporting / 1 no-conflict / 1 silent. **F2 HOLDS under DP-CAL-1; the falsifier is not triggered.** Registered as a CALIBRATION, not a derivation.
 
 **The reduction (Patch 4106).** A DP is a bound pair of opposite-polarity CPs (glossary); the response to b must be linear (B3, 4076) with a C-odd polarity coefficient forced by CPT (F6, 4085). So one sea DP's net χ₄ response is R = q(b₊ − b₋). Sea isotropy never enters — cancellation is per-DP and pointwise.
 

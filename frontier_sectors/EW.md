@@ -160,3 +160,24 @@ The genuine 120-vertex 600-cell has vertex-vertex angles only at multiples of 36
 **Filed in:** axiom_maturation.md §2aa, reasoning/4096.md, OPEN-SM-11, todolist.md TODO-4097-R2.
 
 ---
+
+### DP-CAL-1: sea-DP internal configuration — a NAMED CALIBRATION, not a derivation (registered Patch 4107)
+
+**Status:** ADOPTED as a calibration on founder instruction (18 Sep 2026). **Sector(s):** EW, QM, CHIR.
+**One-line statement:** A ground-state sea DP has its two CPs' ZBW spins **antiparallel** and their DP arc cohorts **opposed**.
+
+**Provenance, split by rigor:**
+- **Arc cohorts opposed — DERIVED.** SF-6 derives EM from eDP-Sea Polarization; polarizing a dipole displaces its +CP and −CP in opposite directions by definition; Patch 4097 makes the arc cohort the product of that displacement. Not a free choice.
+- **Spins antiparallel — CALIBRATED.** The founder states plainly that no spin has ever been assigned to any CP (`founders_voice/4107_ruling_dp_spin_calibration_turn.md`). He assumes antiparallel and directed that the F2-supportive value be carried forward as a first point of evidence, then tested against the corpus.
+
+**What it buys:** F2 (EM stays P-even under χ₄) holds exactly and pointwise, R = q(b₊−b₋) = 0. The Patch 4106 falsifier is not triggered.
+
+**Supporting empirics (Patch 4107 sweep):** bosonic DP sea (spin 0); **no ferromagnetic vacuum** (parallel spins would magnetise the vacuum — the sharpest of the four); R-F3 wants the same underlying principle. No contradiction found anywhere in the sweep.
+
+**What would overturn it:** any corpus result requiring parallel sea-DP spins. A demonstration that a ground-state sea DP has no arc cohort at all would *also* save F2, by a third route.
+
+**Why it is registered here:** a calibration carried forward silently becomes a premise nobody audits — the failure mode this lane hit at Patch 4102. DP-CAL-1 is named so a future worker can find it and test it rather than inherit it as fact.
+
+**Registered:** Patch 4107, 18 Sep 2026.
+
+---
