@@ -1,5 +1,13 @@
 # b Is a Bivector Pseudo-Invariant — the Ruling Derived, and 4139 Withdrawn
 
+> **⚠ DOWNGRADED AT PATCH 4141 — §3's "forced, not chosen" OVERREACHED.**
+> LSP′'s nine components are the traceless **symmetric** rank-2 tensor (Φ = g_tt, V_i = g_ti,
+> Q_ij radiative), so **V_i is not available as A_i's bivector partner** and §3 does not establish
+> one. What survives: F6 fixes the *parities* any partner must have. b's Lorentz invariance is
+> therefore **unproven, not disproven**. §4–§5 stand as conditional-on-a-partner; **§5's withdrawal
+> of 4139's drift term stands unconditionally** (that calculation boosted one half of a two-part
+> object, wrong under either reading). See `4141_bivector_partner_absent.md`.
+
 **Patch:** 4140. **Lane:** EW. **Session:** 234.
 **Answers:** TODO-4139-BCOVARIANT (founder ruling, `founders_voice/4140_…`).
 **Withdraws:** Patch 4139's drift computation, and with it 4139's "revision" of Patch 4134.
