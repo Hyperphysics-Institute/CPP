@@ -2013,6 +2013,14 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 
 **Why it matters now:** F5 is the one filter keeping χ₄ from panel-readiness. If the 65.5° target is signpost-only *and* F5 reduces to the H1 blocker (Patch 4102), then χ₄'s route to panel-readiness runs entirely through H1 and nothing else. That is worth knowing before any further F5 work. **Lane: SM/EW.**
 
+### TODO-4109-4071 — establish the relationship between the LSP′ pseudoscalar and Patch 4071's ≥4-directions result (registered Patch 4109, EW lane)
+
+Patch 4109 found a pseudoscalar inside A3′'s LSP′ content: det[V, QV, Q²V], rotation-invariant and P-odd (5000/5000 P-flips), vanishing identically for isotropic Q.
+
+Patch 4071 found that a CP needs **≥ 4 independent internal directions** to carry any pseudoscalar, with k = 1,2,3 identically zero — and concluded "internal structure IS an axiom rather than an alternative to one."
+
+Q is a symmetric rank-2 object (5 dof), not a direction vector, so the two constructions are formally different and there is no contradiction on the face of it. But they are close enough that the relationship should be **established rather than assumed** — specifically, whether V + Q supplies what 4071 counted as ≥4 directions, and if so whether 4071's conclusion about internal structure needs restating. Bounded. **Lane: EW.**
+
 ### TODO-4104-CAPRECOMPILE — Capotauro PDF recompile owed after the 4104 sign corrigendum (registered Patch 4104, Thomas's mechanical action)
 
 `capotauro.tex` source was edited at Patch 4104 (marked corrigendum withdrawing the sign-of-χ-from-n̂ clause; magnitude results untouched). The shipped PDF is now stale relative to source. **Thomas's mechanical action per PD-006(b).** Ledger precedent: the VW-1 v1.5 recompile owed since 0985.
