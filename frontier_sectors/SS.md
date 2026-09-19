@@ -112,7 +112,7 @@
 **Priority:** HIGH
 **One-line statement:** Derive μ_p = +2.793 μ_N and μ_n = −1.913 μ_N from ZBW orbital dynamics.
 **What a solution looks like:** Compute ⟨L̂+2Ŝ⟩_ZBW for u,d quarks from cage geometry; apply SU(6) formula.
-**Dependencies:** None blocking
+**Dependencies:** **CORRECTED at Patch 4112 — this entry read "None blocking", which was wrong.** The stated solution route ("compute ⟨L̂ + 2Ŝ⟩_ZBW … apply SU(6) formula") requires a **spin operator Ŝ**, and CPP has never assigned a spin to any CP (founder, Patch 4107: *"we had not assigned a spin to any CP, whether ZBW or not"*). Since the nucleon is a ground state with L = 0, ⟨L̂⟩ = 0 and **100% of the moment is the spin term**, so SF-6's orbital magnetism (B = ∇×V) cannot supply any of it. **This problem is blocked on the missing CP spin attribute**, which the χ₄ A3′-amendment scoping (Patch 4111, Option B) would supply. See `series_standard_model/axiom_maturation/4112_bconflict_resolved.md`.
 **Cross-sector connections:** OPEN-G-2 (lepton anomalous moments by analogy)
 **Current best lead:** SU(6) + ZBW mechanism correct; notebook parameters (anomaly_base = 0.792) are fitted, not derived. Benchmark table values (0.03%, 0.16% error) better than notebook (30%, 12%).
 **Paper(s):** New (not in SS-1–5)
