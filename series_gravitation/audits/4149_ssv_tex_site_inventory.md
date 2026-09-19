@@ -59,6 +59,69 @@ caution here; it is the difference between a correct rename and a corrupted one.
 ---
 
 
+---
+
+## 2. Classification round 2 (Patch 4150) — 45 more sites settled, 20 contested
+
+**Settled, all by reading:**
+
+| file | sites | verdict |
+|---|---|---|
+| `GR-1f_kerr_metric` | 13 | **[V] all 13.** Azimuthal `SSV_net` sourcing g_tφ via "the LSP vector mapping"; "rotation adds an azimuthal component to the `SSV_net` **broadcast**". |
+| `GR-1c_strong_field_GR` | 12 | **[V] 11, [D] 1.** The LSP is stated as the four-component packet with mapping `SSV_net → g_ij`. The one [D]: *"same-polarity co-occupation can be forced by an external SSV_net"* — a field driving CPs. |
+| `SR-2_spin_bit_axiom` | 12 | **[V] all 12.** |
+| `GR-1_local_gravitation` | 8 | **[V] all 8.** The LSP as "the two-component broadcast object". |
+
+**SR-2 is documentary proof of the history in §1.** It writes the rename out explicitly:
+
+> `LSP′ = (x_GP, t_abs; Φ, V_i, Q_ij)`, where *"Φ ≡ SSVabs is the scalar (irrep A, l=0; sources
+> g_tt), **V_i ≡ SSVnet** is the vector…"* — and its inheritance table lists *"V_i = SSVnet (irrep
+> T₁) → g_ij"*.
+
+The identity `V_i ≡ SSV_net` is stated in a published paper. §1's reconstruction was inference from
+GR-1b's packet form; SR-2 states it outright. **The rename is not being invented here; it is being
+finished.**
+
+## 3. QM-1 (20 sites) — CONTESTED, and it puts a question mark on Patch 4147
+
+QM-1 fuses both roles in one object and cannot be classified without a ruling. It says both:
+
+- *"the A3′ register mapping … maps one-to-one onto the scalar (SSV_abs, **l=0**) and vector
+  (SSV_net, **l=1**)"* — the l=1 slot, which is **`V_i`**; and
+- *"each Grid Point **holds, and refreshes every Moment**, two dynamical registers (the A3′ state
+  protocol): the count-like scalar SSV_abs and the vector SSV_net"* — the GP-computed register,
+  which Patch 4147 classified as **`SSV_disp`**.
+
+**These are the same object in QM-1's usage**, and the whole quantum phase identification (φ = the
+orientation of that register, FI-QMRG-1) rests on it.
+
+**The difficulty is real, not a QM-1 sloppiness.** A3′'s own definitional clause reads: the GP
+*"computes, holds, and per-Moment refreshes SSV_abs and SSV_disp from Perceive-stage arrivals,
+**imprints on every outgoing DI-bit**"* — so the held register is **what gets broadcast**. If the
+register is what is imprinted and sent, it is broadcast content, and 4147's classification of that
+clause as `SSV_disp` is questionable.
+
+**Two readings, and they differ physically:**
+
+1. The GP holds **one** vector register; it both broadcasts it and hands it to its CP. Then `V_i`
+   and `SSV_disp` are the same register read at two moments in the cycle, and the 4142 split is a
+   distinction of *role*, not of *object*.
+2. The GP holds **two** vectors: the summed arrivals (what it imprints and sends — a potential) and
+   the displacement it computes for its resident CP (a field, the gradient). Then the split is a
+   distinction of *object*, as 4142 and GR-1a's `force = k∇(ΔSSV)` imply.
+
+Reading 2 is what the audit has assumed throughout. **Reading 1 would not overturn the retirement**
+— two names for one thing still needs fixing — **but it would change which name QM-1's phase
+register takes, and it would make 4147's A3′ edit wrong.**
+
+**Filed as TODO-4150-REGISTERCOUNT.** This is a physics question in a physical picture — *how many
+vector registers does a GP hold?* — and therefore **founder territory under PD-006(a)**. QM-1's 20
+sites, and the A3′ definitional clause, wait on it. Nothing is edited meanwhile.
+
+**Running totals: 74 of 162 classified (71 [V], 3 [D]), 20 contested, 68 unread.**
+
+---
+
 ## `series_gravitation/GR_companion_papers/GR-1b_weak_field_GR/GR-1b_weak_field_GR.tex` — 29 sites
 
 1. **[—]** `…bstract} We derive the \emph{weak-field limit} of general relativity in Conscious Point Physics by extending the DI-bit broadcast to include the net SSV vector $\mathbf{\SSV}_{\rm net}$ alon…`
