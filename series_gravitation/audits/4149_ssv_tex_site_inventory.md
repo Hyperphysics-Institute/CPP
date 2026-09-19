@@ -122,6 +122,62 @@ sites, and the A3′ definitional clause, wait on it. Nothing is edited meanwhil
 
 ---
 
+---
+
+## 4. Classification round 3 (Patch 4151) — all 162 sites now dispositioned
+
+**[V] → `V_i` (31 more):** GR-1g (5) and its development copy (5), GR-1h (5), GR-1i (3), the two
+GR-1b `duplicates/` copies (5 + 5), GR-1c `development/` (3). All the metric-sourcing sense —
+*"the LSP broadcast to carry the net vector"*, *"Vector broadcast → g_ij"*, azimuthal `SSV_net`
+sourcing g_tφ.
+
+**[D] → `SSV_disp` (23 more):** SF-8 (5), SF-6 (4), GR-1e (2) + development (2), GR-2 (4), c01 (2),
+c03 (3), c04 (1). All the displacement sense, and SF-8 states it outright:
+
+> *"The Space Stress Vector at a Grid Point is the running vector bookkeeping of DI-bit arrivals…
+> the vector sum and the scalar magnitude-sum of the contributions arriving at that point"* — then
+> *"each Conscious Point **displaces by** d = …"*.
+
+c01 likewise: *"determined by the net SSV (the vector sum, including direction): **d** = d(SSV_net…)"*.
+
+**The pattern is clean by series, and it is not random drift.** The gravitation and relativity
+*metric* papers use `SSV_net` for the broadcast vector; the electromagnetism and substrate papers
+(SF-6, SF-8, c01, c03, c04) use it for the displacement field. Each series is internally
+consistent — GR-1b's three stray [D] sites and GR-1c's one are the exceptions that prove it. **Two
+communities of usage, each coherent, that never reconciled.**
+
+### 4a. The contested set is larger than QM-1 — 31 sites, 7 files
+
+Every one hangs on **TODO-4150-REGISTERCOUNT**: QM-1 (20), QM-6 (3), GR-1j (3), c06 (2), SF-2 (1),
+QM-4 (1), QM-5 (1). All are the *"Grid Point holds two dynamical registers… count-like scalar and
+the vector"* formulation, on which the FI-QMRG-1 phase identification rests. **That is 19% of all
+sites, blocked on one physics question.**
+
+### 4b. Two scope reductions, both from existing policy
+
+- **20 sites are in `duplicates/` and `development/` folders** (GR-1b ×2, GR-1c, GR-1e, GR-1g).
+  Under Patch 4147's frozen-provenance policy these are **not live text** and need no edit.
+  **Live sites: 142, not 162.**
+- **3 sites in SR-1 look like false positives** of the permissive pattern — the contexts show
+  `\Delta\SSV` and "SSV-Induced", not a `net` subscript. Marked **[?] re-check before editing**;
+  I am not asserting them either way.
+
+### 4c. Running totals
+
+| | sites |
+|---|---|
+| **[V]** → `V_i` | 102 |
+| **[D]** → `SSV_disp` | 26 |
+| **[contested]** — blocked on REGISTERCOUNT | 31 |
+| **[?]** — probable false positives, re-check | 3 |
+| **total** | **162** (of which **142 live**) |
+
+**Classification of the live, uncontested sites is complete.** Editing waits on REGISTERCOUNT,
+because a wrong answer there would mean re-editing QM-1, QM-6, GR-1j, c06, SF-2, QM-4 and QM-5 —
+and would put the Patch 4147 A3′ edit in question besides.
+
+---
+
 ## `series_gravitation/GR_companion_papers/GR-1b_weak_field_GR/GR-1b_weak_field_GR.tex` — 29 sites
 
 1. **[—]** `…bstract} We derive the \emph{weak-field limit} of general relativity in Conscious Point Physics by extending the DI-bit broadcast to include the net SSV vector $\mathbf{\SSV}_{\rm net}$ alon…`
