@@ -2039,6 +2039,14 @@ Patch 4119 executed **E2** (|χ| renamed to *primitive anisotropy amplitude*, se
 
 **Provenance note:** Grok's authorship is not itself a reason to retire — the magnitude has since been re-derived from lattice geometry and validated. **Lane: CHIR/EW — founder decision.**
 
+### TODO-4127-B3AUDIT — re-examine B3's support; it is now the amendment's single point of failure (registered Patch 4127, EW lane — PRIORITY)
+
+**Patch 4127 found B3 (the χ₄ response is LINEAR in b) is the common factor under three passing results:** A3G-2 and A3G-3 (via the T-parity argument, B3 + F6) and A3G-8 (the two-slot/Pauli result). Six tests run, but the architecture underneath is far less redundant than the count suggests — at 4125 F6 carried two falsifiers; B3 carries three.
+
+**Its failure mode is the most severe in the suite.** If any interaction reads A's *direction* rather than just sign(A·V), same-b CPs become distinguishable, strict exclusion fails, and Pauli doubling becomes unbounded — that does not merely refute the amendment, **it breaks fermions**.
+
+**B3's own support has not been re-examined since Patch 4076**, where it was established as an answer to a founder question, *before* A_i existed as an axiom attribute. Whether an argument for linearity in a **binary bit** carries over to linearity in a quantity derived from a **continuous vector** is exactly the sort of step this session has repeatedly found to fail when checked (4102, 4110, 4123, 4124). **Recommend running this ahead of A3G-4/5/6:** those test whether the amendment fits; this tests whether three recorded passes are real. **Lane: EW.**
+
 ### TODO-4126-CAGEMOMENT — do the real cage evaluation of ⟨L̂ + 2Ŝ⟩ (registered Patch 4126, SS/EW lane)
 
 Patch 4126 ran A3G-7 and got μ_p = +3.000 vs +2.793 observed (7.4%), μ_n = −2.000 vs −1.913 (4.5%), ratio −1.500 vs −1.460 (2.7%) — **zero parameters**, the amendment's first positive empirical result. But the scale came from the **naive** assignment m_q = M_N/3, not from a cage calculation. **OPEN-SS-8 asks for ⟨L̂ + 2Ŝ⟩ evaluated over the icosahedral/dodecahedral cage geometry, and that is undone.** Matching μ_p exactly needs m_q = 0.358 M_N against the naive 0.333 — a 6.9% gap that is precisely where the real calculation must do its work. **OPEN-SS-8 is ADVANCED, not closed; PRED-O-14 stays "to derive."** Doc: `axiom_maturation/4126_a3g7_result.md`. **Lane: SS/EW.**
