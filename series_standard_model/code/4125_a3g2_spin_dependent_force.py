@@ -1,4 +1,11 @@
 """
+*** CORRECTED AT PATCH 4138: the READING and VERDICT prose below is WITHDRAWN. ***
+*** The table THIS SCRIPT PRINTS is right and its own prose inverted two rows:   ***
+***   A.v spin-velocity computes P-1 T+1 (T-EVEN) -- chi_4 CAN source it;        ***
+***   (A x v).r computes P+1 T+1, recorded as T-1 in the 4125 document.          ***
+*** A.v and A.V are the SAME invariant given F6 + A T-odd. A3G-2 -> UNRUN.       ***
+*** See code/4138_a3g2_tparity_error.py and 4138_a3g2_tparity_withdrawn.md.      ***
+
 TEST-A3G-2 (last falsifier): does the A_i channel mediate a spin-dependent force
 between separated matter, above torsion-balance / comagnetometer bounds?
 

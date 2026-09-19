@@ -1,5 +1,15 @@
 # TEST-A3G-2 — Spin-Dependent Force. Passes. And a caveat about the suite itself.
 
+> **⚠ CORRECTED AT PATCH 4138 — THE T-PARITY ARGUMENT BELOW IS WITHDRAWN.**
+> The spin-velocity row **A·v is T-EVEN, not T-odd**, as this patch's *own* verify script prints
+> in its own output table (`A.v … -1 +1 chi_4 CAN source`); the prose below inverted it, and the
+> (A × v)·r̂ row is likewise recorded T = −1 against a computed T = +1. The finding follows from
+> F6 itself: b = A·V is T-even (F6) and A is T-odd (4112), so V is T-odd — and then A·v, the same
+> contraction, is T-even. **A·v and A·V are the same invariant; b IS a spin-velocity pseudoscalar.**
+> A3G-3's protection is unaffected (A·E is genuinely T-odd) and so is the monopole-dipole row.
+> **A3G-2 returns to UNRUN, not failed.** Retained verbatim below for provenance.
+> See `4138_a3g2_tparity_withdrawn.md`.
+
 **Patch:** 4125. **Lane:** EW. **Third and last falsifier** of the three authorized at 4115.
 **Verify:** `series_standard_model/code/4125_a3g2_spin_dependent_force.py`.
 
