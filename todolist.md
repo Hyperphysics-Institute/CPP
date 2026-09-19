@@ -2041,6 +2041,8 @@ Patch 4119 executed **E2** (|χ| renamed to *primitive anisotropy amplitude*, se
 
 ### TEST-A3G-1…9 — the test programme on the A3′ completion — **now running against a PROVISIONALLY ADOPTED axiom (Patch 4120)** (registered Patch 4115, EW lane)
 
+**A3G-1 RUN at Patch 4121 — DOES NOT FIRE, but returns a partial negative.** Only DP-CAL-1 (antiparallel) gives exact fluctuation-free cancellation of the sea's axial channel; without it the vacuum is non-magnetic only *on average* (RMS ~ √N, density ~ 1/√N). **The adopted axiom does NOT make DP-CAL-1 dispensable** — it supplies the referent, not the derivation. **This retracts payoff 5 of the 4111 scoping** ("DP-CAL-1 becomes derivable"); the payoff list is now 4, not 5. **A3G-9 should be re-scoped or retired** — it asks the same question from the other end and this largely answers it negatively in advance. **A3G-3 is now the sharper remaining falsifier.** Result: `axiom_maturation/4121_a3g1_result.md`.
+
 **STATUS CHANGE at 4120:** the founder ruled the 4D bit approved into the CP/GP/DI-bit vector string; χ₄ is recorded **PROVISIONALLY ADOPTED** and A3′ amended in the registry. **A3G-1/2/3 remain LIVE FALSIFIERS — if any fires, the amendment is WITHDRAWN, not patched.** The suite is now the lane's primary work.
 
 **Founder authorization 18 Sep 2026:** *"Yes, please complete all missing tests to confirm this axiom and its compliance with empirics."* (verbatim: `founders_voice/4115_authorization_test_the_axiom_against_empirics.md`)
