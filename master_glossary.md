@@ -50,6 +50,19 @@
 > the potential: within the glossary, `V_i` already carried the potential role wherever it
 > appeared. That is evidence the retirement is cutting along a real seam rather than imposing one.
 >
+> **Scope of the retirement (Patch 4147).** The rule governs **live normative text** — this
+> glossary, `axiom-registry.md`, `templates/`, `bootup.md`, the papers, and all new writing.
+> **Frozen provenance is not retro-edited:** `handovers/`, `session_logs/`, `archive/`, and the
+> **verify scripts** under `*/code/` and `*/scripts/`. A verify script is the evidence for a
+> registered patch, fixed at the moment it was run; editing 103 occurrences across 43 of them
+> would alter provenance for a cosmetic gain and risks breaking a script that still runs. Every
+> such occurrence resolves to **`SSV_disp`** — checked by reading all 103, none is the potential —
+> and that fact is recorded here so a future reader needs no per-file annotation. *Precisely:*
+> all 103 were scanned for potential/metric-component markers; **6 matched, all inside the two
+> audit scripts `4141_bivector_partner_absent.py` and `4142_ssvrole_resolved.py`, which discuss
+> the distinction and legitimately quote the retired token. The other 97 are uniformly the
+> displacement field.**
+>
 > **The naming is deliberately asymmetric.** `V_i` and `SSV_disp` are not two flavours of one
 > thing; a symmetric pair of names would imply a symmetry the physics does not have. `V_i` keeps
 > its LSP′ slot name beside Φ and Q_ij — "broadcast" would not distinguish it, since Φ, Q_ij and
