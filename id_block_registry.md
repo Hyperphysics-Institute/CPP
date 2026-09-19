@@ -58,8 +58,19 @@ with one pointer, which cannot be made safe by care alone.
    lane's `Next patch` line, even while updating a shared file.
 5. **When a block is exhausted**, record it here as CONSUMED and open the
    next block by founder ruling, not unilaterally.
-6. **A block-opening patch updates `code/next_id.py`'s `BLOCKS` table in
-   the same commit** (added Patch 3807). Between 3700 and 3800 the gate
+6. **A block-opening patch updates the `BLOCKS` table of EVERY gate that
+   carries one, in the same commit** — currently `code/next_id.py` AND
+   `code/continuity_gate.py` (added Patch 3807; **generalised from
+   `next_id.py` alone at Patch 4104**). The rule named one file because
+   it was written before `continuity_gate.py` existed (Patch 4029), so
+   when EW opened 4100–4199 at Patch 4100 the continuity gate kept
+   watching 4000–4099 and stopped covering the live block entirely —
+   the gate whose whole purpose is catching a silently-missing patch was
+   not looking at the range every new patch was going into. **Fourth
+   Rule-6 lag on record, first outside `next_id.py`.** A block-opening
+   patch must also ADD the exhausted block beside the new one rather than
+   replacing it (the `eu-3800` / `gr-3600` convention): an exhausted block
+   that is invisible to the gate is one a later lane can be told is free. Between 3700 and 3800 the gate
    lagged this registry by one block and reported GR 3600–3699 EXHAUSTED
    on a fresh clone; a gate that disagrees with the registry is worse
    than no gate, because it is trusted.

@@ -29,8 +29,14 @@ EXIT:   0 clean, 1 a gap or an unpushed commit.
 """
 import re, subprocess, sys
 
+# 4104: 'ew' read (4000,4099) while the live EW block had been 4100-4199 since Patch 4100,
+# so THIS GATE -- the one whose whole job is spotting a silently-missing patch -- was not
+# watching the range every patch since 4100 was written into. Rule 6 in id_block_registry.md
+# named only code/next_id.py, because it was written at 3807 and this file did not exist until
+# 4029; the rule never grew to cover a second table. Rule 6 generalised in the same commit.
+# Fourth Rule-6 lag on record (3700, 3800, 3900 in next_id.py), first in this gate.
 BLOCKS = {'chir':(900,999),'de':(3400,3499),'dm':(3500,3599),'gr':(3700,3799),
-          'eu':(3900,3999),'ew':(4000,4099)}
+          'eu':(3900,3999),'ew':(4100,4199),'ew-4000':(4000,4099)}
 
 def sh(*a):
     return subprocess.run(["git",*a],capture_output=True,text=True,errors="replace").stdout
