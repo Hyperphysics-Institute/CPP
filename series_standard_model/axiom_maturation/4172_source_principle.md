@@ -1,5 +1,11 @@
 # The Principle That Selects T₁g — Sources, Not Representations
 
+> **⚠ §4's Einstein–Cartan consilience is WITHDRAWN at Patch 4174** — EC torsion is non-propagating
+> and A_i propagates. **§§1–3 stand**: the selecting principle is still *sources*, spin is still
+> matter's second conserved current, and A_u and H_u are still excluded because T_μν contains no
+> pseudoscalar and no parity-odd rank-2. **§5 stands and is strengthened** — A_i's missing source
+> equation is again unresolved. See `4174_torsion_identification_fails.md`.
+
 **Patch:** 4172. **Lane:** EW/GR. **Session:** 234.
 **Answers:** TODO-4171-PARITYPARTNERS.
 

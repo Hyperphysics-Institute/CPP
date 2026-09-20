@@ -1,5 +1,14 @@
 # A_i's Source Coefficient Is G — and That Explains the Whole Session
 
+> **⚠ §§2–5 WITHDRAWN AT PATCH 4174. The Einstein–Cartan identification they rest on FAILED.**
+> **EC torsion is non-propagating** — an algebraic field equation, tied point-by-point to local spin
+> density, no independent degrees of freedom — while **A3′ has every channel *"propagating at
+> c = l_P/t_P"*** and the amendment adds A_i as a fourth channel of that packet. **A propagating
+> axial field is not torsion.** So: the coefficient is **not** shown to be G (TODO-4172-SOURCEEQ
+> reopens), the contact-term smallness does **not** explain A_i's emptiness, and the early-universe
+> redirection is withdrawn. §1's dimensional analysis stands on its own. §6 predicted this.
+> Retained verbatim. See `4174_torsion_identification_fails.md`.
+
 **Patch:** 4173. **Lane:** EW/GR. **Session:** 234.
 **Discharges:** TODO-4172-SOURCEEQ.
 **Verify:** `series_standard_model/code/4173_source_equation.py`.
