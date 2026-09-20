@@ -82,9 +82,10 @@
 > written `e_i · SSV_net` (c03, GR-1b). Under the retirement that becomes **`e_i · V_i`**, where the
 > two `i` subscripts mean different things — the edge index and the vector's Cartesian component.
 > That is unacceptable in a corpus that has just spent a session on one-token-two-referents.
-> **Recommendation: re-letter the EDGE index**, `e_k` or `ê_n`, which has a far smaller footprint
-> than re-lettering the vector. Not executed here; the edit pass should carry it. See
-> TODO-4162-EDGEINDEX.
+> **Resolved at Patch 4163: the EDGE index is re-lettered to `k`.** The selection rule now reads
+> **`k* = argmax_k (e_k · V_i)`**, and the displacement is `d = l_P e_{k*}`. Footprint was three live
+> files — GR-1b, c03, c01 — plus two frozen duplicates left alone under the Patch 4147 policy.
+> `V_i` keeps `i` for its Cartesian component; the edge index is never `i` again.
 
 | PCD | Perceive-Compute-Displace | The three-phase agentic cycle of the substrate, run once per Absolute Moment under the A1′ division of labor (AP-1/AP-3, Patch 2982; founder GR-FE-1 picture, Patch 3255; nexus ruling R-A4-ROLE, 2026-08-10): the **GP** executes Perceive (integrate DI-bit arrivals) and Compute (refresh its SSV_abs/V_i registers, imprint outgoing DI-bits); the **CP** executes Displace, moving the distance associated with the V_i its GP computed and presented. Per-Moment synchrony (A4/Nexus) and the P→C→D ordering are unchanged from the original picture. Preserves the consciousness-as-fundamental commitment of the Conscious Point name. Distinct from ZBW (the between-CPs oscillation in DPs). *History (anti-erasure): pre-2982 wording read "executed by each CP at every Absolute Moment"; superseded by the A1′ three-type division and pinned by the founder's Patch-3255 ruling ("The CPs do not PCD in the large sense; the GPs do the PCD cycle"). Harmonized Patch 3256; audit: `founders_vision/PCD_executor_harmonization_audit_2026-08-19.md`.* |
 | K₃ | Complete graph on 3 vertices | The triangular face of the tetrahedral cage — the mass-generating structure |

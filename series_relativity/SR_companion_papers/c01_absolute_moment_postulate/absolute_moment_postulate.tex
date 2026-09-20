@@ -278,13 +278,13 @@ cycle, triggered simultaneously across the entire lattice by the Nexus:
 
   \item \textbf{Displace.}  The CP resident on this GP moves to its
     destination GP.  The destination is selected by evaluating the 12
-    nearest-neighbor edge vectors $\mathbf{e}_i$ of the appropriately-scaled
+    nearest-neighbor edge vectors $\mathbf{e}_k$ of the appropriately-scaled
     600-cell and choosing
     \begin{equation}
-      i^* \;=\; \arg\max_i\;(\mathbf{e}_i \cdot \nabla\text{SSV}),
+      k^* \;=\; \arg\max_k\;(\mathbf{e}_k \cdot \nabla\text{SSV}),
       \label{eq:argmax}
     \end{equation}
-    so the displacement is $\mathbf{d} = l_P\,\mathbf{e}_{i^*}$.  This
+    so the displacement is $\mathbf{d} = l_P\,\mathbf{e}_{k^*}$.  This
     implements the maximum-SSV-gradient rule and is identical to the
     selection used in the \texttt{compute\_geometric\_strain()} routine of
     Version~16 (Appendix~A.8.1).  Macroscopic straight-line motion emerges
