@@ -1,5 +1,14 @@
 # The Causal Argument, and a Miscount of Seventy-Six Orders
 
+> **⚠ §§2–3's CONCLUSION IS WITHDRAWN — Patch 4184. The arithmetic stands; the reading of it does not.**
+> I treated "no matter CP within the PSR shell" as meaning the shell is **silent**. The founder
+> corrected it: **every GP relays** — receives, integrates, rebroadcasts — so the shell is full of
+> **carriers** even where it holds no **sources**. The axial content is a **field**, not a
+> particle-to-particle wire. The register is A_env(x) + a self-term cut off at one grid spacing, so
+> the ratio is **r/a**: the local CP dominates by **10⁵⁰–10⁶⁵**, ε is **derived, not calibrated**,
+> and no parameter is introduced. **§1 stands** — the causal argument is unaffected and is
+> strengthened. See `4184_relay_and_the_ratio.md`.
+
 **Patch:** 4183. **Lane:** EW. **Session:** 234.
 **Corrects:** Patch 4182 §2 (the 10⁻⁴⁵ domination figure).
 **Verify:** occupancy arithmetic below; `code/4168_psr_shell_recount.py` for the GP count.
