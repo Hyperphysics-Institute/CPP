@@ -1,5 +1,15 @@
 # Which A Enters b — Decided, and the Asymmetry It Exposes
 
+> **⚠ §2's PREMISE IS WRONG — corrected at Patch 4166. THE VERDICT STANDS.**
+> §2 asserted that a GP's resident CP does not send itself a DI-bit, so its own A is absent from its
+> own GP's register. **The founder's objection (20 Sep) is decisive:** the GP must know its resident
+> CP's attributes or it could not imprint them on outgoing DI-bits, and a charge could not radiate
+> its presence at all. The register is **(own CP) + (arrivals)**. **The verdict — that b reads the
+> CP's own A — survives on a different and stronger argument: DILUTION.** In an unpolarised sea the
+> arrivals sum to ~√N while A_CP is one unit, so a register-read b would give V−A at **~15% of
+> maximal at N = 12**, against a measured maximal coupling. Retained verbatim below.
+> See `4166_register_composition.md`.
+
 **Patch:** 4165. **Lane:** EW. **Session:** 234.
 **Closes:** TODO-4154-WHICHA.
 **Verify:** `series_standard_model/code/4165_which_a.py`.
