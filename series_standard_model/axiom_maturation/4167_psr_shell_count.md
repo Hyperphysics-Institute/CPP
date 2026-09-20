@@ -1,5 +1,15 @@
 # How Many GPs Are in the PSR Shell? Exactly Twelve — and Why
 
+> **⚠ WITHDRAWN ENTIRELY AT PATCH 4168. THE ANSWER IS ~1.3×10⁹⁰, NOT TWELVE.**
+> This document identified the 600-cell's nearest-neighbour distance with the PSR. **The corpus says
+> otherwise and said so at Patch 0733:** c01 — *"the true grid is sub-Planck (~ l_P/10³⁰) by
+> nesting"*; founders_vision — *"the 0732 scope note **mis-read l_P as the lattice spacing** … l_P is
+> the **baseline PSR**, a radius enclosing ~10³⁰ sub-Planck grid points"*, after the founder *"pushed
+> back across several rounds"*. **A prior Opus made this identical error at 0732; I repeated it here.**
+> The founder's "vastly greater than 12" was right and understates it by ninety orders.
+> §4's observation — that a larger shell would *strengthen* the conclusion — is the one part that
+> holds. Retained verbatim. See `4168_psr_shell_recount.md`.
+
 **Patch:** 4167. **Lane:** EW/GR. **Session:** 234.
 **Answers the founder's question (20 Sep) on the PSR-shell population.**
 **Verify:** `series_standard_model/code/4167_psr_shell_count.py`.
