@@ -1,5 +1,13 @@
 # Retiring A3′'s A_i Channel — the Steelman, and What Retirement Requires
 
+> **⚠ §1(a) IS WRONG and §5's recommendation is WITHDRAWN — Patch 4182.** §1(a) said the
+> GP-must-hold-A argument *"establishes AP-4, not A3′"*. **The founder's spin-mixing loop needs the
+> GP-HELD REGISTER**, which is A3′'s content: a DI-bit payload alone cannot close the loop, since
+> something must compute and hold the sum between arrival and stamping. **The question is therefore
+> not "is A3′ useless" but "is the mixing loop part of the theory?"** — if yes, A3′ is required
+> machinery for a 1e−47 effect; if no, it retires. **§2's six requirements stand if retirement is
+> chosen.** See `4182_mixing_loop.md`.
+
 **Patch:** 4181. **Lane:** EW. **Session:** 234.
 **Answers the founder's question (20 Sep):** *"Unless you can think of a reason to keep it, we
 should probably retire it… If we retire it, do we need to do something else instead?"*
