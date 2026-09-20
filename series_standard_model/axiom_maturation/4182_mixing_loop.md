@@ -1,5 +1,13 @@
 # The Mixing Loop Does Need A3′ — and What the Loop Then Costs
 
+> **⚠ §2's 10⁴⁵ DOMINATION FIGURE IS WITHDRAWN — Patch 4183.** It counted **GPs**; axial content
+> comes only from GPs that **carry a CP**. The PSR shell holds 1.26×10⁹⁰ GPs but **5.3×10⁻⁷⁶ matter
+> CPs in solid matter** — none, by seventy-six orders. The only possible environmental source is the
+> **DP Sea**, and the mixing ratio is undetermined pending the Sea's spin-pairing structure
+> (TODO-4183-SEASPIN). **§1 stands** — the loop does need the GP-held register. **§4's conditional
+> stands**, but the founder's causal argument (4183 §1) is now the leading reason to answer it
+> "yes". See `4183_occupancy.md`.
+
 **Patch:** 4182. **Lane:** EW. **Session:** 234.
 **Corrects:** Patch 4181 §1(a). **Reframes:** the retirement question.
 
