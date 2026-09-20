@@ -38,6 +38,6 @@ is what the substrate is doing during each test. In causal order:
 
 **The load-bearing point is step 4's deflection entry.** The two-channel
 split is not fitted to the observation; GR-1b's extension of the LSP
-broadcast to carry **SSV**_net was *forced* by exactly this observable.
+broadcast to carry **V_i** was *forced* by exactly this observable.
 That makes the factor of two the arc's sharpest internal discriminant —
 it rules out scalar-only variants of CPP, not merely Newton.

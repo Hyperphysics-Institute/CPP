@@ -39,7 +39,7 @@ In causal order. The method is a single refusal: stop expanding.
    this is algebraically the flat-lattice census equation of T-1: one
    law, two variables. Weak-field reduction to ∇²Φ = 4πGρ and linearised
    Einstein is unchanged.
-8. **Rotation, sketched.** An azimuthal SSV_net component supplies
+8. **Rotation, sketched.** An azimuthal V_i component supplies
    frame-dragging, with the Lense–Thirring weak-field limit confirmed;
    the full Kerr structure is completed in GR-1f.
 

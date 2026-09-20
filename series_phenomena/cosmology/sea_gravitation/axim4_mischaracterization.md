@@ -76,9 +76,9 @@ imposed: when an argument in sector X leans on an axiom whose primary
 development lives in sector Y, quote the defining document, not the
 registry line.**
 
-## §5 — The founder's SSV_net observation, and where it fits
+## §5 — The founder's V_i observation, and where it fits
 
-The founder notes that SSV_net for a given CP can be displaced by a
+The founder notes that V_i for a given CP can be displaced by a
 sum of magnitude and polar-charge contributions exceeding the PSR —
 offering tunneling and Schrödinger phenomena — while the bulk average
 remains Newtonian and relativistic rather than instantaneous.

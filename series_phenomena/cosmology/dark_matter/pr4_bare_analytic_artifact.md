@@ -16,10 +16,10 @@ not finite (see item 8).
 1. inj_t(g) = Σ_{c: x_c = g} σ_c
 2. Q_{t+1} = W_R ∗ (Q_t + inj_t), where W_R is the origin-directed
    R-hop icosahedral relay kernel, probability-normalised (Ŵ(0) = 1)
-3. SSV_net(g) = [U_R ∗ (Q_t + inj_t)](g) (vector kernel);
+3. V_i(g) = [U_R ∗ (Q_t + inj_t)](g) (vector kernel);
    SSV_abs(g) = [W_R ∗ |Q_t + inj_t|](g)
-4. x_c ← snap[ x_c + σ_c · (|SSV_net|/SSV_abs)(x_c) · R ·
-   SSV_net(x_c)/|SSV_net(x_c)| ], zero-net ⇒ stasis
+4. x_c ← snap[ x_c + σ_c · (|V_i|/SSV_abs)(x_c) · R ·
+   V_i(x_c)/|V_i(x_c)| ], zero-net ⇒ stasis
 
 No stochastic element, no thermostat, no bath, no reservoir coupling.
 

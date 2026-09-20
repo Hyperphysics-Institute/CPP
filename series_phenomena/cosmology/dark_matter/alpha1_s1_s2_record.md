@@ -11,7 +11,7 @@ arc; the D2 branch recommendation routes to the CONV-001 packet (2703).
 ## §1 — S1: the kernel, from the mechanism
 
 The Sea is a two-species (±) CP field on GPs; each CP's Moment update
-follows the TOTAL SSV_net (commitment 2); pairing is transient
+follows the TOTAL V_i (commitment 2); pairing is transient
 (commitment 1); the bias response is a time-averaged occupation shift
 (commitments 4–5); self-exclusion is at GP/superposition scale,
 point-like (commitment 3). Linearizing the time-averaged occupation

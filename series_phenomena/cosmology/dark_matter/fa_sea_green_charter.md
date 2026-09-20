@@ -20,7 +20,7 @@ IS the FA-C2 screening length ℓ. Two discharges: FA-C2 grounded at Sea level
 The founder's picture (verbatim in founders_voice, 2026-07-20): influence
 propagates per Moment to the shell of GPs at PSR distance (rest-frame
 PSR = ℓ_P, glossary; SSV_abs-dependent per SR-1); influenced GPs re-radiate
-each subsequent Moment; SSV_net/abs at any GP is the holographic superposition
+each subsequent Moment; V_i/abs at any GP is the holographic superposition
 of all iterated, environment-added DI-bit signals; each individual signal
 fades by inverse-square dilution over its expanding sphere. **Structural
 consequence, frozen into this charter:** the elementary propagation step is
@@ -36,7 +36,7 @@ kernel).
 
 **S1a — Formalize the one-Moment kernel (P1).** Express the per-Moment
 re-radiation operator from registered PSR/SSV rules (AXIM-2/AXIM-7 lineage;
-glossary PSR and SSV_net definitions; SR-1 PSR formula). No locality
+glossary PSR and V_i definitions; SR-1 PSR formula). No locality
 assumption imported; range, radial weight, and normalization derived, not
 chosen. **GATE G1 (non-negotiable):** in the lossless limit, the iterated
 kernel's static superposition must recover the registered inverse-square

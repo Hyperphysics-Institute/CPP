@@ -89,7 +89,7 @@ risk of a third confident claim and then made one.
 ## §3 — CORRECTION 3: THE FOUNDER'S NO-SELF-FORCE RULING, ADDED AS A SCOPE CAVEAT
 
 Founder, 2026-07-29: *"CPP's use of the word force is shorthand for
-SSV_net… THERE IS NO SELF-FORCE IN CPP; there is a message sent out for
+V_i… THERE IS NO SELF-FORCE IN CPP; there is a message sent out for
 others to respond to, but nothing that powers the CP to locomote."*
 
 Two consequences now recorded at pin §5.7(a):
@@ -100,7 +100,7 @@ Two consequences now recorded at pin §5.7(a):
    reservoir may be bounded by the lattice and the runaway may not survive
    in CPP proper at all.
 2. **Whether this toy's F_self corresponds to any CPP quantity is now an
-   OPEN QUESTION, not an assumed correspondence.** SSV_net is others'
+   OPEN QUESTION, not an assumed correspondence.** V_i is others'
    responses re-entering at the CP's location, which is not obviously what
    F_self measures. Until settled, §5.7(a) is a statement about the scalar
    toy only.

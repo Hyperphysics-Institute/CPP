@@ -5,7 +5,7 @@
 ## §1 The mechanism, and why it needs nothing new (verify T1, T2)
 > **CPs stack because the summation of their arriving DI-bits directs them to the same GP address.**
 
-That is **ordinary A1′/AP-3 displacement**. A CP moves where its SSV_net points; two CPs whose summations point to the same address land on the same address. **No new mechanism is required and the founder proposes none.** For a candidate that needed a reservoir, getting one out of the existing displacement rule is the cheapest possible outcome.
+That is **ordinary A1′/AP-3 displacement**. A CP moves where its V_i points; two CPs whose summations point to the same address land on the same address. **No new mechanism is required and the founder proposes none.** For a candidate that needed a reservoir, getting one out of the existing displacement rule is the cheapest possible outcome.
 
 > **And the initial condition *is* stacking** — *"they start out with a large number of CPs on every GP."*
 

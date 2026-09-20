@@ -171,7 +171,7 @@ The founder's answer (verbatim + applied consequences at
 `founder_q_xi2_1_answered.md`) settles the missing temporal object:
 per-Moment displacement is PSR-scale (registered: PSR = l_P rest
 frame, Moment = t_P; GPs at finer sub-Planck spacing per SR-1 Patch
-0736), SSV_net-determined, GP-quantized landing — **nothing advances
+0736), V_i-determined, GP-quantized landing — **nothing advances
 one lattice edge per Moment**, and §5(a)'s edge-per-Moment option was
 never a live reading of the registered corpus (worker error,
 withdrawn). Consequences for THIS document: **FACT G2's claim that

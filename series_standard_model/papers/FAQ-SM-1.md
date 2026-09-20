@@ -106,7 +106,7 @@ their shared attraction to the central CP:
 The system would fly apart. Only the tetrahedral arrangement (N=4)
 satisfies both conditions simultaneously: energetic stability (total
 SSV potential is negative) and geometric completeness (T_d symmetry
-cancels all SSV_net multipole moments at the central CP, creating a
+cancels all V_i multipole moments at the central CP, creating a
 force-free equilibrium). See P-CPP-3 in propositions.md for the full
 energetic argument. The tetrahedral cage is not chosen — it is the
 unique geometry at which both conditions coincide.
@@ -270,7 +270,7 @@ CPP is deterministic at the micro-level (each CP makes a definite
 move each Absolute Moment) but stochastic at the observable level
 because of two sources of unpredictability:
 
-First, the bulk Dipole Sea provides stochastic SSV_net contributions
+First, the bulk Dipole Sea provides stochastic V_i contributions
 at each Grid Point that cannot in practice be computed because they
 involve the positions of ~10⁸⁰ Sea CPs in the observable universe.
 This is epistemic stochasticity — not fundamental randomness but

@@ -12,9 +12,9 @@ closed the classical-force sector with a scalar source, and a scalar
 source has a hard ceiling: it bends starlight by 0.875″ against a
 measured 1.75″. This paper's response was not to add a correction term
 but to add a *component* — the DI-bit broadcast carries the net vector
-**SSV**_net alongside the scalar |SSV|_abs, with the pair constructed
+**V_i** alongside the scalar |SSV|_abs, with the pair constructed
 explicitly from the eDP cloud's polarization energy. |SSV|_abs sources
-g_tt; **SSV**_net sources g_ij. In the weak field the two contributions
+g_tt; **V_i** sources g_ij. In the weak field the two contributions
 to deflection are equal, and the factor of two is recovered exactly.
 
 **Vignette 2 — a conjecture named as one.** The paper defines the CPP

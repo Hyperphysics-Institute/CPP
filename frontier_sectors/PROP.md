@@ -67,7 +67,7 @@ Physically motivated claims with partial demonstration. See `propositions.md` fo
 ### PROP-2: Solitonic Tunneling (TIER 3)
 **Status:** NEEDS QUANTITATIVE VERIFICATION
 **Sector(s):** QM
-**One-line statement:** Tunneling from rogue-wave SSV_net spike statistics. Must reproduce WKB exp(−2κd).
+**One-line statement:** Tunneling from rogue-wave V_i spike statistics. Must reproduce WKB exp(−2κd).
 
 ### PROP-4: Elastic Tunneling via Cage Dissolution (TIER 3)
 **Status:** NEEDS QUANTITATIVE VERIFICATION

@@ -16,7 +16,7 @@ From commitments 10 (micro T-symmetry), 11 (universal bath), 13
 local occupation statistics to a weak static potential, assuming ONLY
 that the stationary single-CP measure depends on configuration through
 the interaction-energy functional that generates the dynamics
-(SSV_net = its gradient — commitment 2). Deliverables: (i) the
+(V_i = its gradient — commitment 2). Deliverables: (i) the
 response form δn_± = ∓ n_± q φ_tot /θ_eff with
 **θ_eff ≡ −(d ln μ/dE)⁻¹** at the operating point — Boltzmann FORM
 without exponential μ; (ii) the static fluctuation-response identity

@@ -43,7 +43,7 @@ slope; the 0.5% gate remains recorded FAIL.
 ## OPEN-DM-AUTOMATON-1 (registered; the PR4 discriminator)
 
 A direct simulation of the REGISTERED Moment rule for a uniform Sea
-patch — Perceive (DI-bit summation → SSV_net), Compute, Displace —
+patch — Perceive (DI-bit summation → V_i), Compute, Displace —
 with statistics harvested to test: energy-only stationary marginal;
 Gibbsian shape to screening-relevant accuracy; stationary probability
 currents; additional slow variables; directional susceptibility;

@@ -18,7 +18,7 @@ the first thing any bound must fix.**
 
 ## §2 — A derivation attempt, and why it FAILS its own test
 
-CPP's primitive gives v/c ≡ |SSV_net|/SSV_abs (C20). For N
+CPP's primitive gives v/c ≡ |V_i|/SSV_abs (C20). For N
 uncorrelated contributions within a PSR, the vector sum grows as √N
 while the scalar sum grows as N, so
 
@@ -50,7 +50,7 @@ and the scaling is simply wrong physics.
 
 **Reading (b) is the more likely.** C26 commits the Sea to *dedicated
 bonded pairs*, which is the opposite of the independence the √N
-argument assumes; a CP's SSV_net is dominated by its own partner, not
+argument assumes; a CP's V_i is dominated by its own partner, not
 by a random sum. **The derivation was built on a premise the framework
 explicitly denies.** It is recorded here as a failed attempt so that
 no future session re-derives it and stops at the flattering step.
@@ -61,7 +61,7 @@ no future session re-derives it and stops at the flattering step.
    centre an effective inertial mass, v_centre/c follows from
    ½m⟨v²⟩ ~ θ. **Blocked:** the arc-inertia mass is exactly what
    PR4-COMPLETED's C23/C24 specification does not supply.
-2. **Correlated-Sea derivation.** Compute ⟨|SSV_net|/SSV_abs⟩ for the
+2. **Correlated-Sea derivation.** Compute ⟨|V_i|/SSV_abs⟩ for the
    *bonded* configuration rather than the uncorrelated one — the
    partner's dominant contribution largely cancels at superposition,
    leaving a residual whose size is the answer. Analytic, plausibly

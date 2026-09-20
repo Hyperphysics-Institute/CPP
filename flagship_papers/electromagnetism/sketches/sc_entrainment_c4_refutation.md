@@ -75,7 +75,7 @@ not decorative: **whatever delivers exact linearity for direction (A),
 it is not displacement-field dressing.** This connects directly to
 OPEN-EW-ANTISCREEN-1 — the measured many-body inversion is precisely
 the kind of Sea-side collective physics absent from this closure — and
-to the founder's constant-SSV_net picture, which is a statement about
+to the founder's constant-V_i picture, which is a statement about
 travelling steady states of the *coupled* system (the 2900 fragment's
 "different theorems" remark, now with a measured teeth mark).
 

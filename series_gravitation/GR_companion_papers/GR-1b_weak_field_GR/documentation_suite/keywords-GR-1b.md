@@ -5,7 +5,7 @@ two-component broadcast; gravitational lensing factor of two; metric
 reconstruction; linearised Einstein equations; equivalence principle;
 Conscious Point Physics.
 
-**Secondary:** SSV_abs and SSV_net; holographic LSP summation; geodesic
+**Secondary:** SSV_abs and V_i; holographic LSP summation; geodesic
 motion from maximum-gradient selection; gravitational waves; impedance
 of free space Z₀; GP Exclusion rule; effective horizon; 600-cell
 lattice; Eddington 1919.

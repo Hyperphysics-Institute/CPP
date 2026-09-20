@@ -23,7 +23,7 @@ is the conserved census current
              contribute over the homogeneous Sea),
     J(x,t) = its CP-displacement flux (matter content is carried by
              CPs, which Displace once per Moment per their GP's
-             computed SSV_net).
+             computed V_i).
 
 **T-3 (the conservation law).** Continuity, ∂_t ρ + ∇·J = 0, is exact
 at the census level, and it is a one-line consequence of the founder's

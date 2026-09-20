@@ -30,7 +30,7 @@ quarantined). **Deliberately omitted from the demonstration:** any gap
 parameter, Green function, or kernel comparison — the fork blind is intact.
 
 **I2 — Response degree of freedom: PINNED (definitional).** Per-vertex
-polarization amplitude; SSV_net = "the vector sum of all SSV contributions at
+polarization amplitude; V_i = "the vector sum of all SSV contributions at
 a point," SSV_abs its magnitude counterpart (glossary table). The static
 response field f of FA-C2 lives on vertices; the founders_voice 2026-07-20
 capture (2662) records the Perceive-phase spherical-totality summation as its

@@ -103,43 +103,43 @@ partner-switching dynamics of the Dipole Sea.
 
 *T-CPP-1: CP Non-Persistent Co-Occupation* — The CP Exclusion Postulate
 is redundant and was removed from the CPP core postulates on 30 March 2026.
-For same-polarity pairs, repulsive SSV_net prevents co-occupation. For
+For same-polarity pairs, repulsive V_i prevents co-occupation. For
 opposite-polarity pairs, superimposition is a transient one-Absolute-Moment
-state: at superimposition, intra-pair SSV_net direction is undefined; the
-bulk SSV_net drives them apart immediately. No additional postulate needed.
+state: at superimposition, intra-pair V_i direction is undefined; the
+bulk V_i drives them apart immediately. No additional postulate needed.
 
 *C-CPP-1a: ZBW Turning Point at Superimposition* — The ZBW oscillation
-turning point occurs at Grid Point superimposition, not before. SSV_net
+turning point occurs at Grid Point superimposition, not before. V_i
 is monotonically attractive throughout the approach. f_ZBW ≈ 1/(2t_P) is
 derived, not postulated. This demoted P5 (ZBW oscillations) from the CPP
 core postulate list, reducing the postulate count from 7 to 6.
 
 *C-CPP-1b: Stochastic Partner Exchange* — DP pair identities are not
 persistent. At each ZBW cycle, each CP's next partner is determined by
-the dominant SSV_net at its post-superimposition Grid Point, which need
+the dominant V_i at its post-superimposition Grid Point, which need
 not be its previous partner. This is the mechanism underlying quantum
 uncertainty, tunneling, virtual particles, and atomic orbital probability
 density.
 
-**SSV_net and SSV_abs distinction** — The session clarified that two
-physically distinct quantities must be separated: SSV_net (the directional
+**V_i and SSV_abs distinction** — The session clarified that two
+physically distinct quantities must be separated: V_i (the directional
 vector sum, governing CP displacement direction) and SSV_abs (the scalar
 magnitude, governing PSR compression and the local metric). These are
 independent: at superimposition, SSV_abs is near maximum while intra-pair
-SSV_net is exactly zero. This distinction is added to the SM-1 glossary
+V_i is exactly zero. This distinction is added to the SM-1 glossary
 and mechanism essay.
 
 **P-CPP-3: Tetrahedral cage uniqueness** — The energetic stability argument
 was formalised: the icosahedral arrangement (N=12) is unbound (U > 0);
 the tetrahedral arrangement (N=4) is the unique minimum satisfying both
 energetic stability (U < 0) and geometric completeness (T_d symmetry
-cancels all SSV_net multipoles). This closes the logical gap in SM-1's
+cancels all V_i multipoles). This closes the logical gap in SM-1's
 stability discussion.
 
 **Propositions P-CPP-1 through P-CPP-15** — The partner-switching analysis
 generated 15 propositions connecting CPP to quantum mechanics without QM
 postulates: position uncertainty (random walk), tunneling (rogue wave
-SSV_net spikes), elastic tunneling (cage dissolution and reformation),
+V_i spikes), elastic tunneling (cage dissolution and reformation),
 relativistic chain compaction as the de Broglie wavelength, atomic orbitals
 as DP chain standing waves, the Born rule from CP identity transfer, virtual
 particles from Gauss's law, pair production, pair annihilation thermodynamics,
@@ -154,7 +154,7 @@ wave conditions.
 
 **Impact on SM-1:** The paper's results are unchanged. Several v7
 corrections are flagged in reviews-SM-1.md Part 1 Review 2 (ZBW framing,
-CP exclusion footnote, SSV_net/SSV_abs notation, energetic stability
+CP exclusion footnote, V_i/SSV_abs notation, energetic stability
 argument). These are improvements to the paper's conceptual framing, not
 corrections to its physics.
 

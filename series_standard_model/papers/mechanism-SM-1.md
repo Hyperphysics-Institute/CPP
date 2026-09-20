@@ -32,10 +32,10 @@ into a coherent, stable, low-entropy configuration.
 independent postulate — it is a consequence of the SSV force law applied
 to opposite-polarity CP pairs on the discrete lattice. Opposite-polarity
 CPs attract monotonically with increasing force as they approach.
-There is no reversal of the attractive SSV_net before superimposition —
-the SSV_net grows all the way to the Grid Point occupied by the partner.
+There is no reversal of the attractive V_i before superimposition —
+the V_i grows all the way to the Grid Point occupied by the partner.
 At superimposition (both CPs at the same Grid Point), the intra-pair
-SSV direction is undefined; the bulk Dipole Sea SSV_net drives them apart
+SSV direction is undefined; the bulk Dipole Sea V_i drives them apart
 in opposite directions on the next Absolute Moment. The period of this
 approach-superimpose-separate cycle is approximately 2 Absolute Moments
 for a minimal-amplitude oscillation, giving f_ZBW ≈ 1/(2t_P). See
@@ -44,20 +44,20 @@ is similarly redundant — it follows from this same analysis.
 
 **Two distinct SSV quantities operate throughout this mechanism:**
 
-**SSV_net** is the vector sum of all SSV contributions at a Grid Point.
+**V_i** is the vector sum of all SSV contributions at a Grid Point.
 It has direction. It governs which Grid Point a CP moves to next —
-a CP moves toward the adjacent Grid Point with the highest SSV_net
-gradient. SSV_net is what drives ZBW oscillation to reverse: at
-superimposition, intra-pair SSV_net direction vanishes and the bulk
-SSV_net takes over.
+a CP moves toward the adjacent Grid Point with the highest V_i
+gradient. V_i is what drives ZBW oscillation to reverse: at
+superimposition, intra-pair V_i direction vanishes and the bulk
+V_i takes over.
 
 **SSV_abs** is the scalar magnitude of the total SSV field at a Grid
 Point — a local energy density with no direction. It governs PSR
 compression: PSR_eff = l_P/(1 + k·SSV_abs). High SSV_abs means the
 Dipole Sea is strongly stressed; the local metric is compressed; each
 lattice step covers less physical distance. This is the GR/Lorentzian
-effect. SSV_net and SSV_abs are physically independent: at
-superimposition, SSV_abs is near maximum while intra-pair SSV_net is
+effect. V_i and SSV_abs are physically independent: at
+superimposition, SSV_abs is near maximum while intra-pair V_i is
 exactly zero. Both operate simultaneously throughout all the steps below.
 
 ---
@@ -75,7 +75,7 @@ is pulled toward the eCP (for a negative central CP), the negative pole
 repelled. This alignment creates a net radial SSV field. Two distinct
 quantities arise simultaneously:
 
-SSV_net at any Grid Point: the vector sum of SSV contributions from all
+V_i at any Grid Point: the vector sum of SSV contributions from all
 nearby CPs. Points toward the central eCP (for a positive test CP) or
 away from it (for a negative test CP). This is what drives displacement.
 
@@ -85,10 +85,10 @@ central CP means each lattice step covers less physical distance there —
 the inner region is metrically compressed relative to the outer region.
 
 The two together:
-    SSV_net(r) = SSV₀ · p · t · r̂ / r²   [drives direction of motion]
+    V_i(r) = SSV₀ · p · t · r̂ / r²   [drives direction of motion]
     SSV_abs(r) = SSV₀ · t / r²            [compresses local metric]
 
-[Eq. 1 of SM-1 describes SSV_net; SSV_abs enters via the PSR formula]
+[Eq. 1 of SM-1 describes V_i; SSV_abs enters via the PSR formula]
 
 **Step 3 — The SSV field exerts force on other CPs.**
 Any other CP within the field experiences a force proportional to the
@@ -136,14 +136,14 @@ by exactly this process.
 
 **Step 7 — A single compensating CP does not produce a stable particle.**
 Place a −eCP at V₀ and a single +eCP at one of its nearest neighbours V₁.
-The two attract, but the SSV_net of this asymmetric pair has a residual
+The two attract, but the V_i of this asymmetric pair has a residual
 net dipole component pointing from V₀ to V₁. This dipole field interacts
 strongly with the surrounding Dipole Sea, causing continued torque and
 eventual reorganisation. One CP plus one compensating CP = a DP, which
 is a constituent of the Sea, not a stable particle.
 
 **Step 8 — Two compensating CPs create a residual torque.**
-Add a second +eCP at V₂ (a different nearest neighbour). The net SSV_net
+Add a second +eCP at V₂ (a different nearest neighbour). The net V_i
 from the pair {V₁, V₂} partially cancels, but not completely — the
 two-CP configuration has a residual quadrupole moment that still drives
 rotation. The system is metastable at best.
@@ -157,7 +157,7 @@ against rotational perturbations.
 **Step 10 — Four compensating CPs at tetrahedral vertices: first stability.**
 Add a fourth +eCP at V₄. If V₁, V₂, V₃, V₄ are the vertices of a regular
 tetrahedron — which is exactly the arrangement of four nearest neighbours
-in the 600-cell — the SSV_net forces from the four compensating CPs cancel
+in the 600-cell — the V_i forces from the four compensating CPs cancel
 exactly at the central CP's location in all directions simultaneously.
 The T_d symmetry of the regular tetrahedron guarantees that the vector sum
 of the four unit vectors from the centre to the tetrahedral vertices is
@@ -182,7 +182,7 @@ The twelve same-polarity CPs at icosahedral spacing repel each other
 more than they are attracted to the central CP. The icosahedral cage
 flies apart. The tetrahedral cage (N=4) is the unique minimum configuration
 where both energetic stability (U < 0) and geometric completeness
-(T_d cancels all SSV_net multipoles) are simultaneously satisfied.
+(T_d cancels all V_i multipoles) are simultaneously satisfied.
 This is Proposition P-CPP-3 in propositions.md.
 
 ---
@@ -276,8 +276,8 @@ In addition to the static cage structure, every fermion carries a
 Dipole Pair that oscillates in a closed orbital loop around the central
 CP. This orbital ZBW DP produces the particle's spin-½. The oscillation
 is mechanical: the orbital DP approaches the central CP under monotonically
-increasing SSV_net attraction (no reversal before superimposition), reaches
-superimposition, and is driven apart by the bulk SSV_net on the next
+increasing V_i attraction (no reversal before superimposition), reaches
+superimposition, and is driven apart by the bulk V_i on the next
 Absolute Moment. Period ≈ 2 Absolute Moments → f_ZBW ≈ 1/(2t_P). This is
 derived, not postulated (T-CPP-1, C-CPP-1a in propositions.md).
 

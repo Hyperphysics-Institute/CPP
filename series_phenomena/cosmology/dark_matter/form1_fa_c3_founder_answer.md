@@ -26,7 +26,7 @@ The two candidates are readings of different phases of the PCD cycle, so
 they are not symmetric alternatives:
 
 - **Perceive + Compute (response):** vertex-centered spherical integration
-  of the totality — all SSV_abs and SSV_net contributions from local
+  of the totality — all SSV_abs and V_i contributions from local
   (within l_P) and distant GPs, summed to the scalar and vector response
   quantities, once per Moment. Granularity: the **cell**.
 - **Displace (output):** the executed displacement carries a de facto edge

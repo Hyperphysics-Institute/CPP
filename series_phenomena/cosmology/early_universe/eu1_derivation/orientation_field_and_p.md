@@ -12,8 +12,8 @@ C-4 rests on an orientational order parameter. Three patches have developed its 
 ## §2 It is continuous, and that settles the fork p depended on (verify T2, T3, T4)
 FI-C-RC-1 registers n̂ as a **primitive direction**, not a vertex-quantised one. That decides a fork the p-computation turns on, and which 3843 did not name:
 
-- **Vertex-quantised reading** (the one implicitly assumed): the mean director is built by mixing the twelve axes, intermediate directions require local mixing, local SSV_net is O(1), and λ ≈ λ_hard = 0.052 ⇒ m/H = 7×10⁴ ⇒ **C-4 dead**.
-- **Continuum reading** (what FI-C-RC-1 actually says): a **uniform** n̂ configuration is translationally homogeneous **for every n̂**. In a homogeneous state SSV_net = 0 exactly (S-HENGINE-HELD §2.2, via T-1's dipole cancellation). So the displacement anisotropy vanishes identically over **all** uniform configurations.
+- **Vertex-quantised reading** (the one implicitly assumed): the mean director is built by mixing the twelve axes, intermediate directions require local mixing, local V_i is O(1), and λ ≈ λ_hard = 0.052 ⇒ m/H = 7×10⁴ ⇒ **C-4 dead**.
+- **Continuum reading** (what FI-C-RC-1 actually says): a **uniform** n̂ configuration is translationally homogeneous **for every n̂**. In a homogeneous state V_i = 0 exactly (S-HENGINE-HELD §2.2, via T-1's dipole cancellation). So the displacement anisotropy vanishes identically over **all** uniform configurations.
 
 > **V(n̂) = const across uniform configurations ⇒ m = 0 from this mechanism, at every order in x.**
 

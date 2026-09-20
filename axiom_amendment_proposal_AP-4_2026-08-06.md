@@ -53,7 +53,7 @@ vector sum of all strong-charge contributions (qCP only), the separate
 slot being the only species identifier. The imprint is a STATIC SNAPSHOT
 of the origin GP's computed registers: the DI-bit carries no oscillator,
 no evolving degree of freedom, and no per-messenger phase variable. The
-receiver extracts SSV_net = E + S and SSV_abs per AP-4b. Every GP emits
+receiver extracts V_i = E + S and SSV_abs per AP-4b. Every GP emits
 the same fixed number of DI-bits every Moment.
 
 **AP-4b (the absolute register):** SSV_abs = Σ|polar| + k·Σ|strong|,
@@ -100,7 +100,7 @@ speaks of the LSP′ packet being "broadcast," "transmitted," or
 "carried," the referent is the computed state that receivers
 reconstruct, never additional messenger content: messenger content is
 exhaustively {origin address, E, S}, and everything else attributed to
-the broadcast channel — Φ, V_i, Q_ij, SSV_net, SSV_abs, and all
+the broadcast channel — Φ, V_i, Q_ij, V_i, SSV_abs, and all
 gravitational parameters — is computed state, produced receiver-side by
 summation over arriving payloads.** The division is exclusive and
 exhaustive: every quantity in the theory is either (i) messenger
@@ -124,8 +124,8 @@ the payload beyond the three enumerated slots — excluded by AP-4a's
 exhaustive enumeration. The orientations of E and S are not phase
 degrees of freedom: they are frozen images of the origin GP's register
 orientation, carrying no dynamics; the phase-equivalent content of the
-theory is the RECEIVER's SSV_net orientation register (FI-QMRG-1:
-φ = SSV_net orientation), reconstructed by summation, exactly as R-1
+theory is the RECEIVER's V_i orientation register (FI-QMRG-1:
+φ = V_i orientation), reconstructed by summation, exactly as R-1
 below states.
 
 *Proof sketch that the identification obligations reintroduce no phase
@@ -165,8 +165,8 @@ derivation contradict this sketch.
 **R-1 (the no-phase clause).** The 2957 ruling (AP-2's provenance)
 retired the COHERENT-FRONT picture: a per-messenger oscillating phase
 degree of freedom. AP-4a carries a static snapshot of the source's
-SSV_net register — the phase-equivalent content lives in the GP register
-(FI-QMRG-1: φ = SSV_net orientation), and the messenger transports a
+V_i register — the phase-equivalent content lives in the GP register
+(FI-QMRG-1: φ = V_i orientation), and the messenger transports a
 frozen image of it, not an oscillator. The proposal's claim: everything
 F-AP2-1 protected (no derivation may irreducibly require per-messenger
 phase dynamics) survives; the falsifier is restated as F-AP4-1 (§5). The

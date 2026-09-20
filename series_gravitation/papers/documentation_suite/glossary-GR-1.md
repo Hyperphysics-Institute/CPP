@@ -2,7 +2,7 @@
 
 - **SSV (Space Stress Vector)** — the substrate's local stress state.
   Two channels matter for gravitation: |SSV|_abs, a positive scalar
-  sourced by compressive polarization energy, and **SSV**_net, its
+  sourced by compressive polarization energy, and **V_i**, its
   directional part.
 - **Δ|SSV|** — the local excess of absolute SSV over the ambient Sea
   value; the gravitational potential variable of the arc. The shell
@@ -19,7 +19,7 @@
   conscious-point type, emitted at fixed per-GP count each Moment and
   delivered at the PSR shell.
 - **LSP (Lattice State Packet)** — the two-component broadcast object:
-  |SSV|_abs sources g_tt (clock rate); **SSV**_net sources g_ij (spatial
+  |SSV|_abs sources g_tt (clock rate); **V_i** sources g_ij (spatial
   metric). The two-component structure is what produces the factor of
   two in light deflection.
 - **Scalar–vector transition** — the step (GR-1a → GR-1b) at which a

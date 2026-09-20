@@ -190,7 +190,7 @@ gated-out (honestly: NOT run).**
 **DEFECT DISCLOSED (D-G3RR-1, same-font):** the [W] phase
 definition ("static = droplet phase") conflated two populations:
 the 28-CP crystallite AND ~97 PARKED SINGLETONS — isolated CPs
-immobile for the whole final quarter, stuck where SSV_net rounds
+immobile for the whole final quarter, stuck where V_i rounds
 below the displacement floor. The R-2 ruling concerned
 crystallites; under a crystallite-only reading the droplet mass is
 28/216 = 13% (would PASS B3, growth 0%). The frozen verdict stands
@@ -257,7 +257,7 @@ mislabeled 1/32 by a fill-arithmetic error; they were fill 1/4. The
 error is corrected in the committed script and the comparison it
 supports — same density, two R values — is unaffected.)
 
-**Mechanism decomposition (fill 1/8):** R = 3 — ratio |SSV_net|/
+**Mechanism decomposition (fill 1/8):** R = 3 — ratio |V_i|/
 SSV_abs mean 0.154 against a floor of 0.5/R = 0.167, so only 40%
 clear the floor, median displacement 0.00 GP. R = 6 — ratio mean
 0.364 against floor 0.083, 100% clear, displacement 2.12 GP. Larger
@@ -359,7 +359,7 @@ misleading me — but does not dissolve the finding, because:
 with no growth trend. **A center that cannot coast cannot collide,
 cannot rebound, and cannot slowly re-orient anything — so the
 randomization channel the founder identifies (multibody kinetic
-collision directing SSV_net) has no stage to act on in the model as
+collision directing V_i) has no stage to act on in the model as
 built.** The gap is not a missing degree of freedom; it is missing
 MOMENTUM: C23 stores inertia in the Sea's arc configuration, but the
 model's state vector (positions + scalar charge field; C21 bits carry
@@ -367,7 +367,7 @@ charge/polarity/origin only) contains no rotational or orientational
 state for that storage to inhabit.
 
 ### §3 — Sequence step 3: the velocity proxy (founder-approved) — **THE MECHANISM VALIDATES**
-[W] proxy law: v ← v + η·σ_c·(SSV_net/|SSV_net|)·(|SSV_net|/SSV_abs);
+[W] proxy law: v ← v + η·σ_c·(V_i/|V_i|)·(|V_i|/SSV_abs);
 x ← x + v (continuous positions — which also removes the ½-GP snap
 floor); collisions within 1.0 GP → elastic exchange + energy-conserving
 random re-orientation of the pair's relative velocity (the founder's

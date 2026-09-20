@@ -8,12 +8,12 @@ In causal order, and starting from where GR-1a stopped:
    against a measured 1.75″. The shortfall is a factor of two, and it is
    not adjustable.
 2. **The broadcast is given a second component.** The DI-bit broadcast
-   is extended to carry the net vector **SSV**_net alongside the scalar
+   is extended to carry the net vector **V_i** alongside the scalar
    |SSV|_abs. The pair is the Lattice State Packet, constructed
    explicitly from the eDP cloud's compressive polarization energy:
    |SSV|_abs = E_pol/V₀.
 3. **The two channels source different parts of the metric.**
-   |SSV|_abs → g_tt (time curvature); **SSV**_net → g_ij (spatial
+   |SSV|_abs → g_tt (time curvature); **V_i** → g_ij (spatial
    curvature). Holographic summation over the broadcast reconstructs the
    weak-field isotropic Schwarzschild metric with no free parameters.
 4. **The factor of two falls out as an equality, not a fit.** In the

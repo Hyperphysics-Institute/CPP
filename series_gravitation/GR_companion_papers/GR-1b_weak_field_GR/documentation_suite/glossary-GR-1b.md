@@ -6,7 +6,7 @@ the suite-level companion, focused on what is specific to GR-1b.)*
 - **LSP (Lattice State Packet)** — this paper's central construction:
   the two-component broadcast object built explicitly from the eDP
   cloud's compressive polarization energy. |SSV|_abs = E_pol/V₀ sources
-  g_tt (time curvature); **SSV**_net sources g_ij (spatial curvature).
+  g_tt (time curvature); **V_i** sources g_ij (spatial curvature).
 - **The two channels** — the temporal and spatial halves of the
   broadcast. Everything that distinguishes this arc from a scalar-only
   substrate theory lives in the second one.

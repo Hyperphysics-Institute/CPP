@@ -1,4 +1,4 @@
-# λ computed as far as it can be — the twelve-direction anisotropy is **λ_hard = 0.052**, which as a potential would put C-4 at the register spring's wall and kill it. **It is not a potential.** All twelve axes are equivalent, the constraint acts on displacement (a mobility, not a restoring force), and decisively the symmetry-breaking step is **idle**: SSV_net = 0 exactly in the homogeneous era, resting on T-1's dipole cancellation. λ is therefore proportional to the departure of SSV_net from zero, and **C-4's survival reduces to one integer** — the power p. Even the pessimistic p = 2 misses by a factor ~3, not by orders
+# λ computed as far as it can be — the twelve-direction anisotropy is **λ_hard = 0.052**, which as a potential would put C-4 at the register spring's wall and kill it. **It is not a potential.** All twelve axes are equivalent, the constraint acts on displacement (a mobility, not a restoring force), and decisively the symmetry-breaking step is **idle**: V_i = 0 exactly in the homogeneous era, resting on T-1's dipole cancellation. λ is therefore proportional to the departure of V_i from zero, and **C-4's survival reduces to one integer** — the power p. Even the pessimistic p = 2 misses by a factor ~3, not by orders
 
 **Patch 3843, Session 181, 9 Sep 2026. Lane: EU.** Works C-4's debt (1) as restated at 3841 §6 — compute λ. Verify `scripts/3843_lambda_computation.py` (8/8). Reasoning `reasoning/3843_lambda_computation.md`. Nothing adopted; λ and p are **not** minted (PD-007); PRED-C-96 untouched; 3710 not retired.
 
@@ -17,14 +17,14 @@ The candidate mechanism named at 3841 §4 was the constraint that a CP displaces
 
 **(b) The constraint is a mobility, not a restoring force.** A1′/AP-3 constrains where a CP *displaces*. An orientation-dependent displacement efficiency is an anisotropic **mobility**: it makes relaxation direction-dependent. It does not create a force returning the director to a preferred orientation. **A Goldstone with anisotropic damping is still massless** — the k → 0 uniform rotation still costs nothing, which is the definition of the gap.
 
-**(c) Decisively, the symmetry-breaking step is idle.** The displacement is the *only* operation in the protocol that breaks continuous rotational symmetry — the register computation (SSV_abs as a sum of magnitudes, SSV_net as a vector sum) is exactly rotation-covariant. And in the homogeneous saturated era **the displacement does not occur at all**: S-HENGINE-HELD §2.2 establishes SSV_net = 0 exactly, because the twelve icosahedral neighbour vectors sum to zero — which is T-1's ℓ = 1 cancellation (3820), verified there as an identity.
+**(c) Decisively, the symmetry-breaking step is idle.** The displacement is the *only* operation in the protocol that breaks continuous rotational symmetry — the register computation (SSV_abs as a sum of magnitudes, V_i as a vector sum) is exactly rotation-covariant. And in the homogeneous saturated era **the displacement does not occur at all**: S-HENGINE-HELD §2.2 establishes V_i = 0 exactly, because the twelve icosahedral neighbour vectors sum to zero — which is T-1's ℓ = 1 cancellation (3820), verified there as an identity.
 
-> **The operation that would gap the Goldstone never fires during inflation.** λ is therefore not O(λ_hard); it is proportional to however far SSV_net departs from zero, and that departure is itself the perturbation.
+> **The operation that would gap the Goldstone never fires during inflation.** λ is therefore not O(λ_hard); it is proportional to however far V_i departs from zero, and that departure is itself the perturbation.
 
 This is the third independent job T-1 has done. It was delivered as a symmetry curiosity with no observable attached (3820 §4), re-graded to load-bearing for the mass at 3839 §5, and is now the reason the symmetry-breaking operation is idle.
 
 ## §3 What is left: one integer (verify T7, T8)
-Write λ ≈ λ_hard · x^p with x = SSV_net/SSV_abs, the fractional departure from the exact cancellation. At the perturbation scale x ~ ζ ~ 4.6×10⁻⁵ (from 3841's requirement λ ≤ 1.03×10⁻¹¹):
+Write λ ≈ λ_hard · x^p with x = V_i/SSV_abs, the fractional departure from the exact cancellation. At the perturbation scale x ~ ζ ~ 4.6×10⁻⁵ (from 3841's requirement λ ≤ 1.03×10⁻¹¹):
 
 | p | λ | m/H | verdict |
 |---|---|---|---|
@@ -38,7 +38,7 @@ Write λ ≈ λ_hard · x^p with x = SSV_net/SSV_abs, the fractional departure f
 
 ## §4 Honest scope
 - λ_hard is exact (a geometric property of the twelve axes) and is the correct number **if** the constraint were a potential. §2 argues it is not; that argument is structural and rests on the corpus's own protocol, not on a model.
-- The parameterisation λ ≈ λ_hard·x^p is a **scaling ansatz**, not a derivation. The integer p is what must be computed, and computing it requires tracking how a nonzero SSV_net feeds the displacement anisotropy back into the orientational sector. That is the next step and is not taken here (PD-007).
+- The parameterisation λ ≈ λ_hard·x^p is a **scaling ansatz**, not a derivation. The integer p is what must be computed, and computing it requires tracking how a nonzero V_i feeds the displacement anisotropy back into the orientational sector. That is the next step and is not taken here (PD-007).
 - x ~ ζ is itself an estimate — the departure from exact cancellation is set by the perturbation amplitude, but the coefficient is not derived.
 - Everything continues to assume Branch B2 and the 3839 coupling.
 

@@ -93,7 +93,7 @@ Founder ruling received and preserved verbatim at
 `founders_voice/fork_diss_1_ruling_bath_availability_2026-07-07.md` (and in the §10 block of
 `reasoning/2320.md`). Summary: **strong yes** — the Sea's sub-resolution configurational state is
 per-GP unique, time-varying every Moment (ZBW + transiting-CP generators named), dynamically
-coupled in both directions (configuration → SSV_abs/SSV_net → PSR → CP trajectory), sensitive to
+coupled in both directions (configuration → SSV_abs/V_i → PSR → CP trajectory), sensitive to
 near and far fields. The disorder IS available as the THEO-QM-8 tracing bath.
 
 **Grade:** bath availability = **FOUNDER-ATTESTED (PROVISIONAL per the D5-A′ precedent;

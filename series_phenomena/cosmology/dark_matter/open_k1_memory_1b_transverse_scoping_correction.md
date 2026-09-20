@@ -2,7 +2,7 @@
 
 **Filed 2026-07-27 on the founder's correction: *"there is no
 instantaneous communication in CPP, just c/lightspeed for DI bits and
-SSV_net for CPs. DI-bits arrive delayed from when they were emitted if
+V_i for CPs. DI-bits arrive delayed from when they were emitted if
 outside of one PSR."* This note narrows what the 2840 verdict is a
 verdict ABOUT. It does NOT restore the withdrawn bound.**
 

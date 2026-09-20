@@ -21,8 +21,8 @@ support for it.
 
 **The problem in three lines:**
 
-1. CPP's primitive is **velocity-proportional**: d = (|SSV_net|/SSV_abs)·PSR.
-   So SSV_net = 0 ⟹ the CP **stops**. Free motion must be actively
+1. CPP's primitive is **velocity-proportional**: d = (|V_i|/SSV_abs)·PSR.
+   So V_i = 0 ⟹ the CP **stops**. Free motion must be actively
    sustained every Moment.
 2. **Newton I therefore requires two EXACT conditions** — the drive exactly
    linear in v, and μ = PSR/SSV_abs exactly constant. Newtonian mechanics
@@ -34,9 +34,9 @@ support for it.
 
 ## §2 — FOUNDER'S STANDING DIRECTION (Patch 2899, verbatim in founders_voice)
 
-> *"Let's focus on finding a way to produce a constant SSV_net… I think all
+> *"Let's focus on finding a way to produce a constant V_i… I think all
 > we need is to come up with a better understanding of the DI-bits and the
-> production of SSV_net."*
+> production of V_i."*
 
 **RULED OUT:** 2898 direction (B). The velocity-proportional primitive
 stands; the 7 July no-carried-velocity ruling stands. **Do not attempt
@@ -57,7 +57,7 @@ Newton I by making displacement part of the CP's carried state.**
   Whether the identification survives for **uniform** motion is the
   load-bearing assumption.
 
-**The founder's requirement (constant SSV_net) and the B1 measurement
+**The founder's requirement (constant V_i) and the B1 measurement
 (β² curvature) are in DIRECT CONTRADICTION. That is the problem to solve,
 not to reconcile rhetorically.**
 

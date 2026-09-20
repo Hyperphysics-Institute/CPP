@@ -10,7 +10,7 @@ downstream use of its numbers.**
 
 1. **EMERGENT INVERSE-SQUARE ELECTROSTATICS.** The founder's Moment
    rule — synchronous GP relay of DI-bits carrying charge, polarity,
-   and origin only; d = (|SSV_net|/SSV_abs)·PSR — produces Coulomb's
+   and origin only; d = (|V_i|/SSV_abs)·PSR — produces Coulomb's
    law with NO field law as input, under TWO independent relay
    implementations: the idealized PSR shell (A1 V-1R, ratio-flat
    ±2.9%, Δp ≤ 0.022, 3/3 R) and the founder's lattice-native

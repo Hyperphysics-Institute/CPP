@@ -22,7 +22,7 @@
 
 ## AP-3 — GP state protocol (proposed classification: DEFINITIONAL under A3′, not a new axiom)
 
-**Proposed text:** The GP computes, holds, and per-Moment refreshes SSV_abs and SSV_net from Perceive-stage arrivals; it imprints on every outgoing DI-bit; DI-bits reset at every hop; the GP resets its SSV values each Moment from the newly arriving Perceive-stage data.
+**Proposed text:** The GP computes, holds, and per-Moment refreshes SSV_abs and V_i from Perceive-stage arrivals; it imprints on every outgoing DI-bit; DI-bits reset at every hop; the GP resets its SSV values each Moment from the newly arriving Perceive-stage data.
 **Founder provenance:** 2958 V-2 (verbatim registered).
 **Worker's proposed classification (the 2962a open question):** DEFINITIONAL — this is the operational protocol of the A3′ broadcast machinery (what "each GP broadcasts its LSP′" concretely does per Moment), not an independent postulate; it belongs in the A3′ clause structure / glossary, not as a new axiom row. Rationale: it introduces no new freedom — given A1′ types and A3′ broadcast, the protocol is the unique bookkeeping that avoids the signal/reservoir conflation the founder flagged. The panel is asked to CONFIRM or CONTEST the definitional classification; if contested toward axiom grade, it becomes an A3′ sub-clause amendment, not a tenth axiom.
 **Falsifiers / review targets:** F-AP3-1 — a consistent alternative GP protocol producing different physics from the same A1′+A3′ base would elevate the protocol to axiom grade (it would then carry physical content, not bookkeeping).

@@ -69,7 +69,7 @@ Bits travelling along lattice edges toward arbitrary shell GPs are
 **isotropic to the noise floor** (0.023). The lattice is not the problem.
 
 **The founder's specification says the whole shell** — *"re-radiates the
-SSV_net to the spherical shell that is at the distance that is present at
+V_i to the spherical shell that is at the distance that is present at
 each local SSV_abs (the PSR/l_P)"*, and *"the DI bits transit all the
 edges between all GPs between GP_origin to GP_PSR."*
 

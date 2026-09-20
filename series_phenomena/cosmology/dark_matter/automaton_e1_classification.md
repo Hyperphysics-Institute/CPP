@@ -50,7 +50,7 @@ GP_origin → GP_PSR broadcast in one step.
 **Update rule (read from the engine):** each Moment, the payload at
 every source point is transferred DIRECTLY to the radius-R shell,
 uniformly over the |S_R| shell sites (`K = shell/S`); carriers erased;
-SSV_net from radial unit vectors, SSV_abs from gross counts.
+V_i from radial unit vectors, SSV_abs from gross counts.
 
 **Class: VERSION A** — the transport step is origin→shell in one
 synchronous step with no intermediate GP mediation; this is the direct

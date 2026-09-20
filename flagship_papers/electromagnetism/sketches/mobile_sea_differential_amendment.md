@@ -18,7 +18,7 @@ equilibration, and measurement window:
   (`mobile_sea = False`); the source's transit and all retardation are
   otherwise identical.
 
-> **ΔD(β) ≡ ⟨SSV_net,x⟩_mobile − ⟨SSV_net,x⟩_frozen**
+> **ΔD(β) ≡ ⟨V_i,x⟩_mobile − ⟨V_i,x⟩_frozen**
 
 The transit-lock systematic (§3 of the execution record) is common-mode
 to first order and subtracts; ΔD isolates the Sea's *response* — the

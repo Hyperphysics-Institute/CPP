@@ -61,7 +61,7 @@ density n (the 2527 4D→3D-flagged density, packet N3), not any cosmic count.
 
 **F2 — "holographic" means the LOCAL sense only.** Three distinct uses of
 the word travel in the corpus; R1 uses exactly one:
-- **(local, R1's sense)** *holographic superposition* = SSV_net at a GP is
+- **(local, R1's sense)** *holographic superposition* = V_i at a GP is
   the sum of all overlapping, inverse-square-diluted DI-bit shells (charter
   §1 kernel picture). A superposition-at-a-point structure at the fm/Planck
   scale. THIS is what the R1 operator is built on.

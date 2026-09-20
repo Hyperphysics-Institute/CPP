@@ -38,7 +38,7 @@ charter targets the equations.
 
 **T-1 (The general equation):** a stated general equation for the
 LSP/SSV field configuration — derived from the deeper DI-bit /
-SSV_abs / SSV_net / DP Sea picture, not posited as a continuum-limit
+SSV_abs / V_i / DP Sea picture, not posited as a continuum-limit
 correspondence — whose static, spherically symmetric reduction IS the
 GR-1c nonlinear wave equation.
 
@@ -116,7 +116,7 @@ continuum limit is a nonlinear wave equation in Δ|SSV| with the PSR
 response as the constitutive closure; (E-2) the source object to be
 the polarization-energy density of bound ZBW content (E_pol = mc²
 localized in the eDP/qDP cloud) plus a directional flux term from
-SSV_net — a two-component object mirroring the two-component LSP;
+V_i — a two-component object mirroring the two-component LSP;
 (E-3) Birkhoff to follow from broadcast isotropy + the uniqueness of
 the static PSR profile for a given enclosed E_pol. These are
 expectations, not proposals; the founder's picture governs.
@@ -130,7 +130,7 @@ The derivation waits on the founder's mechanism narrative for:
    created nor destroyed in that PCD cycle?
 2. **What is the source, physically?** Is the gravitating source the
    polarization energy of the bound eDP cloud alone, or does kinetic/
-   flux content (moving ZBW patterns, SSV_net circulation) gravitate
+   flux content (moving ZBW patterns, V_i circulation) gravitate
    in its own right? (This decides the T-3 tensor's structure.)
 3. **How does the Sea "know" to be self-consistent?** In GR the field
    equations couple geometry to source everywhere simultaneously. In

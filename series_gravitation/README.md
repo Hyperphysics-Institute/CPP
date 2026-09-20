@@ -14,11 +14,11 @@ OPEN-ORG-023 Item 2 executed):
 | ID | Formerly | Content |
 |---|---|---|
 | GR-1a | c05 | Newtonian gravity from SSV shell broadcast |
-| GR-1b | c07 | Weak-field GR (two-component LSP; SSV_net vector) |
+| GR-1b | c07 | Weak-field GR (two-component LSP; V_i vector) |
 | GR-1c | c08 | Strong-field GR: exact isotropic Schwarzschild; Planck core r_S/2 |
 | GR-1d | c09 | Gravitational-wave echoes from the Planck core |
 | GR-1e | c10 | Hawking evaporation with a Planck remnant |
-| GR-1f | c11 | Kerr from azimuthal SSV_net |
+| GR-1f | c11 | Kerr from azimuthal V_i |
 | GR-1g | c12 | Kerr-Newman (M, J, Q) |
 | GR-1h | c13 | Superradiance |
 

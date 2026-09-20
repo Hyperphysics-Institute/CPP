@@ -99,7 +99,7 @@ mechanism: in the PCD cycle (Perceive-Compute-Displace, the per-Moment update
 of every Conscious Point), the screening length of FA-C2 is a property of the
 medium's STATIC RESPONSE -- the Perceive+Compute phases, a vertex-centered
 spherical integration of the totality of SSV contributions (all SSV_abs and
-SSV_net, local and distant), cell granularity, isotropized by holographic
+V_i, local and distant), cell granularity, isotropized by holographic
 overlapping-shell summation (the same summation producing the continuum 1/r^2
 behavior) -- while the edge quantity appears ONLY in the Displace phase as
 executed OUTPUT (a de facto magnitude and direction, downstream of the

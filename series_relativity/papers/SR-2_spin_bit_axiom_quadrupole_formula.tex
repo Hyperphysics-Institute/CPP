@@ -97,7 +97,7 @@
 \newcommand{\TF}{\mathrm{TF}}
 \newcommand{\TT}{\mathrm{TT}}
 \newcommand{\SSVabs}{|\SSV|_{\mathrm{abs}}}
-\newcommand{\SSVnet}{\SSV_{\mathrm{net}}}
+\newcommand{V_i}{V_i}
 
 % Axiom box environment for A3'
 \newmdenv[linewidth=0.8pt,linecolor=black,backgroundcolor=gray!4,
@@ -133,7 +133,7 @@ and the Derived Einstein Quadrupole Formula}\\[6pt]
 \begin{abstract}
 Conscious Point Physics (CPP) recovers the static and gravitomagnetic sectors of
 General Relativity from a Lattice State Packet (LSP) broadcast carrying one scalar
-($\SSVabs$) and one vector ($\SSVnet$) degree of freedom across the 600-cell
+($\SSVabs$) and one vector ($V_i$) degree of freedom across the 600-cell
 substrate. This work asks whether that content can also carry the radiative tensor
 sector --- the helicity-$\pm 2$ ($+$, $\times$) gravitational-wave polarizations.
 It cannot, and the impossibility is theorem-grade: three independent assaults
@@ -206,7 +206,7 @@ Conscious Point Physics derives gravity from the geometry of the 600-cell substr
 In its companion-7/8 (hereafter c07/c08) formulation, each Grid Point (GP) broadcasts a
 Lattice State Packet (LSP) to its Planck-Shell-Radius neighbors, and the packet's
 dynamical content is one scalar, $\SSVabs$ (sourcing gravitational time dilation,
-$g_{tt}$), and one vector, $\SSVnet$ (sourcing spatial curvature and gravitomagnetism,
+$g_{tt}$), and one vector, $V_i$ (sourcing spatial curvature and gravitomagnetism,
 $g_{ij}$). This content recovers the static and weak-field sectors of GR with notable
 economy --- Schwarzschild exactly (in conformally-flat isotropic form), the Newtonian
 potential, and plausibly Kerr frame-dragging. The open question that this paper closes
@@ -271,12 +271,12 @@ CC-reconciliation paper.
 
 The cheapest way (a) could fail is a degree-of-freedom mismatch. Einstein's equation is
 a tensor (10 components); c08's is a single scalar equation. The metric map is explicit
-(c07/c08): $\SSVabs \to g_{tt}$ (a scalar) and $\SSVnet \to g_{ij}$ (a vector). So the
+(c07/c08): $\SSVabs \to g_{tt}$ (a scalar) and $V_i \to g_{ij}$ (a vector). So the
 LSP's dynamical content is one scalar plus one vector field, with no rank-2 quantity
 named to carry GR's two propagating tensor polarizations.
 
 For a plane wave propagating along $z$, the most general symmetric spatial perturbation
-a scalar $S$ ($=\SSVabs$) and a vector $V_i$ ($=\SSVnet$) can build, up to gradients,
+a scalar $S$ ($=\SSVabs$) and a vector $V_i$ ($=V_i$) can build, up to gradients,
 decomposes by helicity as
 [\texttt{METH-L1-008 little-group helicity classification}]:
 \begin{align}
@@ -329,7 +329,7 @@ distinct structural reason, and together they make the new degree of freedom
 
 \subsection{First assault --- amplitude polynomials in $(\Phi, V)$}
 
-A transverse $\SSVnet$ plane wave $V=(a\cos f, b\cos f, 0)$, $f=kz-\omega t$, was tested
+A transverse $V_i$ plane wave $V=(a\cos f, b\cos f, 0)$, $f=kz-\omega t$, was tested
 for helicity-2 content in every local polynomial form. The linear map $h_{ij}\sim
 \partial_{(i}V_{j)}$ gives zero; the gradient-bilinear $h_{ij}\sim\partial_i V_k\,\partial_j V_k$
 gives zero (pure $T_{zz}$). The amplitude bilinear $h_{ij}\sim V_i V_j$ \emph{does} carry
@@ -485,11 +485,11 @@ wave operator the scalar and vector obey, and its helicity-$\pm 2$ part (tracele
 transverse) propagates at $c$ as the $+/\times$ modes.
 
 What the lattice does \emph{not} provide is the degree of freedom itself. The LSP state
-$(x_{\mathrm{GP}}, t_{\mathrm{abs}}, \SSVabs, \SSVnet)$ is one scalar plus one vector; a
+$(x_{\mathrm{GP}}, t_{\mathrm{abs}}, \SSVabs, V_i)$ is one scalar plus one vector; a
 point's state has no rank-2 part, and the diagnostic audit confirms that none of CPP's
 fundamental flows (CP$\to$GP state register; GP$\to$GP broadcast; GP$\to$CP displacement;
 the Nexus timing pulse) carries an $l=2$ channel. The candidate sources each reduce to
-content already counted: the Dipole-Sea polarization \emph{is} the vector $\SSVnet$; the
+content already counted: the Dipole-Sea polarization \emph{is} the vector $V_i$; the
 constituent ``spin state'' is emergent orbital angular momentum (an axial vector, $\ell/2$
 from the captured-DP orbit); and the $H_g$ shell mode, while available and propagable, is
 not excited by any existing flow. The seat exists; nothing sits in it. Filling it is a
@@ -533,7 +533,7 @@ exceeded the representational capacity of the existing content.
     Rung & Packet content & Sector it unlocked \\
     \midrule
     1 & DI-bit: scalar $\SSVabs$ & Special relativity; time dilation ($g_{tt}$) \\
-    2 & LSP: scalar $+$ vector $\SSVnet$ & Weak-field GR statics; spatial curvature ($g_{ij}$); Schwarzschild \\
+    2 & LSP: scalar $+$ vector $V_i$ & Weak-field GR statics; spatial curvature ($g_{ij}$); Schwarzschild \\
     3 & \textbf{LSP$'$: scalar $+$ vector $+$ tensor $\Qij$} & \textbf{The radiative tensor sector; GW polarizations; \texttt{op:einstein} (a)} \\
     \bottomrule
   \end{tabular}
@@ -557,7 +557,7 @@ irreducible representations of the lattice point group:
   \mathrm{LSP}' = \big(\,x_{\mathrm{GP}},\, t_{\mathrm{abs}}\,;\ \Phi,\ V_i,\ Q_{ij}\,\big),
 \]
 where $\Phi\equiv\SSVabs$ is the scalar (irrep $A$, $l=0$; sources $g_{tt}$),
-$V_i\equiv\SSVnet$ is the vector (irrep $T_1$, $l=1$; sources $g_{ij}$ statics and
+$V_i\equivV_i$ is the vector (irrep $T_1$, $l=1$; sources $g_{ij}$ statics and
 gravitomagnetism), and $Q_{ij}$ is the symmetric-traceless rank-2 field (irrep $H$,
 $l=2$; the radiative tensor sector --- the new, completing rung), subject to:
 \begin{description}[nosep,leftmargin=2.6em,style=nextline]
@@ -699,7 +699,7 @@ correspondence is summarized in Table~\ref{tab:mapping}.
     CPP object & GR / observational counterpart & Status \\
     \midrule
     $\Phi=\SSVabs$ (irrep $A$) & $g_{tt}$ / Newtonian potential & Recovered (c07/c08) \\
-    $V_i=\SSVnet$ (irrep $T_1$) & $g_{ij}$ statics / gravitomagnetism & Recovered (c07/c08) \\
+    $V_i=V_i$ (irrep $T_1$) & $g_{ij}$ statics / gravitomagnetism & Recovered (c07/c08) \\
     $Q_{ij}$ (irrep $H$) & TT metric perturbation $h^{\TT}_{ij}$ & Derived here (A3$'$) \\
     $\Box Q_{ij}=-\lambda T^{\TF}_{ij}$ & $\Box\bar h_{\mu\nu}=-16\pi G\,T_{\mu\nu}/c^4$ & Derived, $\lambda=16\pi G/c^4$ \\
     Rank-agnostic shell-sum & wave propagation at $c$ & Native (Thm.~\ref{thm:completion} content) \\

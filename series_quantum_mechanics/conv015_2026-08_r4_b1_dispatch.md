@@ -52,7 +52,7 @@ self-indicting.
   `sketches/3002_b1_amplitude_count_derivation.md`. Claims: the
   quadratic-vs-linear fork is DECIDED by ratified AP-2's
   intensity-like clause; elastic energy balance (SF-6 stiffness +
-  A3′ turnover + ħω per messenger) yields |SSV_net,⊥|² ∝ Nħ/(μω) —
+  A3′ turnover + ħω per messenger) yields |V_i,⊥|² ∝ Nħ/(μω) —
   the bridge with its constant; the canonical 1/(2ω) normalization is
   RECOVERED as output (circularity cut at its first link; the
   mutual-support prohibition dischargeable); verified with the fork

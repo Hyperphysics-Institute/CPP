@@ -6,9 +6,9 @@ March 2026 authoring is thin because nothing was recorded at the time.
 ## March 2026 — rotation, and a conjecture converted
 
 **Vignette 1 — one more channel.** GR-1c had noted that rotating bodies
-require vorticity in SSV_net and registered the full Kerr derivation as
+require vorticity in V_i and registered the full Kerr derivation as
 an open problem. This paper took it up by adding an azimuthal component
-to the broadcast — k(SSV_net)_φ = GJ sin²θ/(c²r³), from the same 12-edge
+to the broadcast — k(V_i)_φ = GJ sin²θ/(c²r³), from the same 12-edge
 selection rule already generating the scalar — and mapping it through
 the LSP to the off-diagonal term g_tφ. The Lense–Thirring limit came out
 exact, matching Gravity Probe B to 0.3%, and J = 0 recovered

@@ -111,7 +111,7 @@ arc-discharging return. Equivalently U is constant.
 with the Sea is zero: transverse components cancel by azimuthal
 symmetry; the longitudinal charging recoil (backward push) is
 exactly cancelled by the discharging advance (forward push). The
-SSV_net differential sustains exactly one displacement increment δ
+V_i differential sustains exactly one displacement increment δ
 per Moment — motion is re-caused each Moment at zero net cost.
 
 **(iii) Newton 1 at mechanism level.** Consequently constant v with
@@ -183,7 +183,7 @@ cancel identically. Longitudinal: by L1 the full-cycle impulse on
 each Sea DP is zero, and by L2 the per-Moment total longitudinal
 exchange is throughput × 0 = 0. The charging recoil and discharge
 advance are the two halves of that zero. What remains per Moment is
-not a force imbalance but the SSV_net displacement instruction:
+not a force imbalance but the V_i displacement instruction:
 under the substrate's re-caused motion (displacement must be
 produced each Moment), the fore/aft differential produces exactly
 the increment δ that reproduces the same steady state one step

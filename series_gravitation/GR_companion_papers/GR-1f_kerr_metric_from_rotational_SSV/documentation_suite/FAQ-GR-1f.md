@@ -3,7 +3,7 @@
 **Q1. Where does frame dragging come from?**
 From the broadcast acquiring a direction of rotation. A source with
 angular momentum J produces an azimuthal component
-k(SSV_net)_φ = GJ sin²θ/(c²r³) via the same 12-edge selection rule that
+k(V_i)_φ = GJ sin²θ/(c²r³) via the same 12-edge selection rule that
 generates the Schwarzschild scalar; the LSP mapping turns it into the
 off-diagonal metric term g_tφ = −2GJ sin²θ/(c²r), which is exactly
 Lense–Thirring in the weak field.

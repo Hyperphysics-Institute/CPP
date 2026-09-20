@@ -5,7 +5,7 @@ In causal order. No postulate beyond GR-1c.
 1. **A rotating source broadcasts asymmetrically.** The same 12-edge
    selection rule that generates the Schwarzschild scalar SSV, applied
    to a source with angular momentum J, produces an azimuthal component:
-   k(SSV_net)_φ = GJ sin²θ/(c²r³).
+   k(V_i)_φ = GJ sin²θ/(c²r³).
 2. **The azimuthal component maps to an off-diagonal metric term.** Via
    the LSP metric mapping, it gives g_tφ = −2GJ sin²θ/(c²r) — exactly
    the Lense–Thirring frame-dragging term in the weak field, confirmed

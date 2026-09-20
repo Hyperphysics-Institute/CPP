@@ -80,7 +80,7 @@
 \newcommand{\ZBW}{\mathrm{ZBW}}
 \newcommand{\AM}{\mathrm{AM}}
 \newcommand{\PSR}{\mathrm{PSR}}
-\newcommand{\SSVnet}{\SSV_{\mathrm{net}}}
+\newcommand{V_i}{V_i}
 \newcommand{\SSVabs}{\SSV_{\mathrm{abs}}}
 \newcommand{\DIbit}{\mathrm{DI}}
 
@@ -273,12 +273,12 @@ The \emph{Space Stress Vector} $\SSV$ at a Grid Point is the running
 vector bookkeeping of DI-bit arrivals at that point. Two reductions of it
 are used:
 \[
-\SSVnet \;=\; \sum_i \vec{s}_i ,
+V_i \;=\; \sum_i \vec{s}_i ,
 \qquad
 \SSVabs \;=\; \sum_i \lVert \vec{s}_i \rVert ,
 \]
 the vector sum and the scalar magnitude-sum of the contributions $\vec{s}_i$
-arriving at that point. $\SSVnet$ is directional and subject to
+arriving at that point. $V_i$ is directional and subject to
 cancellation; $\SSVabs$ is not.
 \end{definition}
 
@@ -319,7 +319,7 @@ the respecification.
 
 Having tallied arrivals, each Conscious Point displaces by
 \begin{equation}
-d \;=\; \frac{\lVert \SSVnet \rVert}{\SSVabs}\,\PSR .
+d \;=\; \frac{\lVert V_i \rVert}{\SSVabs}\,\PSR .
 \label{eq:displacement}
 \end{equation}
 The prefactor is a \emph{directional coherence fraction} lying in

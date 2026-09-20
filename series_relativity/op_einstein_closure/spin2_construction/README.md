@@ -12,7 +12,7 @@ remains a substantial effort. **op:einstein (a) NOT closed.**
 ---
 
 ## The diagnosis this fixes (from 1109–1110)
-The LSP carries `|SSV|_abs` (l=0 scalar → g_tt) and `SSV_net` (l=1 vector → g_ij via the gradient
+The LSP carries `|SSV|_abs` (l=0 scalar → g_tt) and `V_i` (l=1 vector → g_ij via the gradient
 tensor). A scalar + vector cannot source the helicity-±2 GW modes (`h_xx−h_yy`, `h_xy`); c07 §6 asserts
 the GR wave equation but its metric map provides no rank-2 d.o.f. So CPP is presently a scalar–vector
 gravity, missing the spin-2 radiative sector.
@@ -38,7 +38,7 @@ So the fix is concrete: **extend the LSP from (l=0 scalar, l=1 vector) to includ
    localizes to Step 3.
 3. **(done, 1114 — the verdict) A GP quadrupole d.o.f. is NOT independently motivated.** CPP's
    fundamental flows carry only scalar+vector (CP→GP CSR: type/polarity/emergent-vector-spin; GP→GP:
-   |SSV|_abs+SSV_net; GP→CP: displacement). Candidates fail: DP-sea polarization = the vector SSV_net;
+   |SSV|_abs+V_i; GP→CP: displacement). Candidates fail: DP-sea polarization = the vector V_i;
    CP spin = emergent orbital *vector*; the H_g (l=2) slot exists but nothing excites it. Corpus mute
    (only matter-side nuclear quadrupoles). ⇒ closing (a) is an **explicit axiom extension** — add a
    rank-2 d.o.f. to flow A (CSR), B (LSP), or C (GP→CP). The architect's decision.

@@ -6,7 +6,7 @@
   (or Newtonian corpuscular) treatment gives 0.875″. The paper's central
   result, and the arc's sharpest internal discriminant.
 - **Why space curves at all** in a theory whose lattice is rigid: the
-  **SSV**_net channel sources g_ij, so what appears as spatial curvature
+  **V_i** channel sources g_ij, so what appears as spatial curvature
   is directional Sea compression.
 - **Geodesic motion and the equivalence principle**, as the continuum
   limit of the 12-edge maximum-gradient selection rule — no separate

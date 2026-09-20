@@ -140,7 +140,7 @@ now naming **OPEN-QMRG-R4-MULTILINK + OPEN-QMRG-B1-CONST**:
 - (iii) EXACT plane stability under the shipped component-diagonal
   refresh (theorem-strength) and the (kΔs)⁴ anisotropic suppression
   for the declared single-edge kernel class;
-- (iv) B-QMRG-1 at PROPORTIONALITY level (|SSV_net,⊥|² ∝ ρ, coherent
+- (iv) B-QMRG-1 at PROPORTIONALITY level (|V_i,⊥|² ∝ ρ, coherent
   weak-field regime), citable as an energy-balance lemma;
 - (v) the unitarity Proposition at sketch grade with regime
   assumptions visible.

@@ -289,7 +289,7 @@ number changed. Compile gate: pdflatex ×2, 0 errors, 0 undefined,
 
 ## V1.8 — 2 September 2026, Patch 3382 (Session 161) — the wall law restated (CONV-039, 5/5; ENACT 3–2 with the RESTATE conditions folded)
 
-**Trigger.** The 3375–3379 derivation chain: the register is a scalar (conformal factor) and is not the even-parity wave (Lousto–Price + Moncrief reconstructions, sourced by the Grok seat; `H₂ − K` gauge-fixed-invariant and non-zero for a mode); the surface pins the spatial trace `H₂ + 2K = 0`, a Robin law `β_ℓ(ω)` on the Zerilli function at `r_w = 9M/4`; the shipped `X = 0` was imposed on the axial sector. Founder rulings R-SIMULTANEITY-UNIVERSAL (the trace condition is slicing-robust) and R-SHEAR-MUST-BE-REGISTERED (the axial wave is registered in the uncapped SSV_net and not refused — it enters the core).
+**Trigger.** The 3375–3379 derivation chain: the register is a scalar (conformal factor) and is not the even-parity wave (Lousto–Price + Moncrief reconstructions, sourced by the Grok seat; `H₂ − K` gauge-fixed-invariant and non-zero for a mode); the surface pins the spatial trace `H₂ + 2K = 0`, a Robin law `β_ℓ(ω)` on the Zerilli function at `r_w = 9M/4`; the shipped `X = 0` was imposed on the axial sector. Founder rulings R-SIMULTANEITY-UNIVERSAL (the trace condition is slicing-robust) and R-SHEAR-MUST-BE-REGISTERED (the axial wave is registered in the uncapped V_i and not refused — it enters the core).
 
 **Edit (text only; no number changed; no template moved).** A V1.8 block after the V1.7 caveats in the gravitational-grade paragraph, ending in the CONV-039 Q5 sentence: *no Kerr echo frequency is yet derived; 188–194 Hz retained as the Dirichlet-axial reference value only.* `\date` → V1.8. Compile gate: pdflatex ×2.
 

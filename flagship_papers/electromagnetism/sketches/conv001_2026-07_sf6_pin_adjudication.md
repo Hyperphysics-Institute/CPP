@@ -107,7 +107,7 @@ demoted to a SCALAR-TOY ANALOGUE pending the correspondence.** No seat
 took (a); no seat took (c).
 
 Reasoning converged independently. The founder's ruling separates the
-toy's F_self from CPP's SSV_net and denies that any self-force exists in
+toy's F_self from CPP's V_i and denies that any self-force exists in
 CPP; until a mapping is established, results proven inside the toy do not
 transfer. S1: option (a) *"presumes the mapping"*; option (c) fails
 because the ruling's wording *"explicitly broadens the uncertainty beyond
@@ -132,7 +132,7 @@ and is now:
 **Registered as OPEN-FSELF-CORRESPONDENCE-1:** establish explicitly
 whether the 2496 toy's F_self corresponds to a CPP substrate observable
 — specifically whether it is expressible in terms of others' responses
-re-entering as SSV_net at the CP's location — or whether it is an
+re-entering as V_i at the CP's location — or whether it is an
 artifact of the scalar toy's continuum construction. **Until this is
 discharged, no CPP-level inertia claim may cite the pin's dynamical
 result.**

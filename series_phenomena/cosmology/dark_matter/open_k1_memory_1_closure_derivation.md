@@ -50,10 +50,10 @@ scale-independent and equals the velocity ratio.
 ## §3 — Three consequences worth stating
 
 **(i) ε_mem IS the framework's own primitive.** CPP's displacement law
-is d = (|SSV_net|/SSV_abs)·PSR with **v/c ≡ |SSV_net|/SSV_abs**
+is d = (|V_i|/SSV_abs)·PSR with **v/c ≡ |V_i|/SSV_abs**
 (founder-confirmed, Patch 2732; C20). So
 
-> **ε_mem = |SSV_net| / SSV_abs** — the quantity every CP already
+> **ε_mem = |V_i| / SSV_abs** — the quantity every CP already
 > computes each Moment. The memory-subdominance parameter is not a new
 > construct requiring new machinery; it is the ratio the Moment rule is
 > written in, and it is **bounded ≤ 1 by construction**.
@@ -87,7 +87,7 @@ observations, offered without weight:
   explicitly not current conditions.
 - ε_mem ≤ 1 holds by construction, so the criterion cannot fail
   catastrophically — the question is margin, not sign.
-- AUTOMATON's measured |SSV_net|/SSV_abs values (0.154 at R = 3,
+- AUTOMATON's measured |V_i|/SSV_abs values (0.154 at R = 3,
   0.364 at R = 6, fill 1/8) are **regime artifacts** of PSR/spacing
   ≈ 1.5 (Patch 2810) and must NOT be read as physical Sea values.
   Cited only to forestall their misuse.

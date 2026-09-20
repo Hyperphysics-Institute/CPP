@@ -14,7 +14,7 @@ carry the radiative tensor sector? — became the summit.
 
 ## The diagnosis and the necessity proof (Patches 1109–1119)
 
-The metric map is explicit: |SSV|_abs → g_tt (scalar), SSV_net → g_ij (vector). The transverse-plane
+The metric map is explicit: |SSV|_abs → g_tt (scalar), V_i → g_ij (vector). The transverse-plane
 quadrupole that is the GW + and × signal has no source in that content (1109); c07 §6 *asserted* but
 did not *derive* the tensor modes (1110); the corpus has no rank-2 d.o.f. (1114). Three assaults then
 closed every no-new-axiom route: amplitude/gradient bilinears (helicity-2 only at 2nd order, double

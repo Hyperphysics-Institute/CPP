@@ -51,7 +51,7 @@ only.
 
 > *"the derivation could be done by showing that the energy/SSV
 > increment of the DP-arc-charged volume, in the increment of distance
-> advanced each moment, equals the SSV_net."*
+> advanced each moment, equals the V_i."*
 
 **This derivation is worth doing, and the worker's expectation is that
 it will yield a consistency condition rather than a velocity.**
@@ -60,9 +60,9 @@ Per Moment the CP advances δ = v·Δt. The transferred front→rear volume
 is ∝ δ ∝ v; the arc amplitude in it is set by the polarization, not by
 v. So the transferred organization per Moment is **∝ v**, giving
 
-> **SSV_net = α·v**
+> **V_i = α·v**
 
-Feed that back through the primitive v = μ·SSV_net:
+Feed that back through the primitive v = μ·V_i:
 
 > **v = μαv ⇒ v(1 − μα) = 0**
 

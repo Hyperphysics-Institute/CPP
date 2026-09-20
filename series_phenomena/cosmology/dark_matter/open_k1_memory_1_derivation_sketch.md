@@ -49,7 +49,7 @@ order. **The subdominance parameter is**
 The founder's ZBW draft already asserts the needed inequality
 qualitatively: *"Given the rapidity of the ZBW cycle compared to the
 translational velocity of the DP center, each ZBW cycle will have
-approximately the same SSV_net operating at each superposition and
+approximately the same V_i operating at each superposition and
 perigee moment."* That IS a timescale-separation statement. Clause 2
 asks for it quantitatively at d_DP.
 

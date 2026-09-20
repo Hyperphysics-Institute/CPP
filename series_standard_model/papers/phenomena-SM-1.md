@@ -419,7 +419,7 @@ extraordinary precision.
 **CPP route:** The g=2 result arises from the orbital ZBW DP — the
 electron's orbital Dipole Pair generates exactly one Bohr magneton
 (SM-1 §8). The small corrections (g > 2) arise from the statistical
-fluctuations of the Dipole Sea partnerships — the rogue-wave SSV_net
+fluctuations of the Dipole Sea partnerships — the rogue-wave V_i
 spikes (P-CPP-2) contribute a small additional magnetic moment from
 the non-orbital ZBW modes. The quantitative calculation of this
 contribution from CPP Sea statistics is an open problem (OP-QM-new-3

@@ -8,7 +8,7 @@ recorded in substance per the 3401 practice. Zero compute. Status in
 ## §1 — The founder's mechanism, recorded (so it is not lost again)
 
 **Expansion kinematics.** The universe's expansion is the Big Bang's
-radial kinetics — CPs moving outward via SSV_net each Moment at
+radial kinetics — CPs moving outward via V_i each Moment at
 constant radial velocity. There is NO metric expansion and no absolute
 acceleration. **No new Grid Points appear in the bulk of space**; new
 GPs may be built each Moment at the edge of the universe as it expands

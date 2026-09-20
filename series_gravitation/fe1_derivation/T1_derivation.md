@@ -30,10 +30,10 @@ and put to founder/panel adjudication before W-3/W-4 proceed.
 
 From the axiom layer: A1′ (three CP types; AP-4 payload {origin
 address, E, S}, static snapshot, fixed per-GP emission count, reset at
-Moment-level delivery); A3′ (completed broadcast; AP-4d: SSV_net and
+Moment-level delivery); A3′ (completed broadcast; AP-4d: V_i and
 SSV_abs are receiver-computed state); A4 (Nexus Moment
 synchronization). From the founder picture (3255/3257): GPs execute
-Perceive+Compute; CPs execute Displace per the GP-computed SSV_net;
+Perceive+Compute; CPs execute Displace per the GP-computed V_i;
 DI-bits are conserved and reused; every GP begins each Displace cycle
 with the same DI-bit count; "every GP's DI-bit total influence on its
 PSR is the same as every other GP"; symmetry exists only over the full
@@ -165,7 +165,7 @@ the dispersion FAMILY cos(ωτ) = α·sinc(kR) + (1−α) (annex L4):
 falsifier-shaped, non-vacuous, still deliberately UNMINTED.
 
 **Finding F-2 (two-component extension).** The identical census run on
-the vector channel (AP-4 E/S vectors → SSV_net) yields the same relay
+the vector channel (AP-4 E/S vectors → V_i) yields the same relay
 operator on V_i — consistent with A3′'s "all channels obey the same
 icosahedral shell-sum, flat per-hop transport." The tensor channel
 (Q_ij) is A3′-registered structure; its census derivation is W-4

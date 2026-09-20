@@ -1523,8 +1523,8 @@
 > the Task-4 metric map), then the a = 0 line set with both channels.
 >
 > **3608 — P-DIRECTION-VIA-ADDRESSES (founder: reincorporate r, θ, φ
-> through the DI-bits; SSV_net's direction/magnitude embed θ, φ;
-> compare SSV_net to SSV_abs along its direction) — "will this work?"
+> through the DI-bits; V_i's direction/magnitude embed θ, φ;
+> compare V_i to SSV_abs along its direction) — "will this work?"
 > (verify 5/5).** AS STATED, NO: a vector sum is BLIND to a census
 > arriving equally from +x and −x (net = 0, same as isotropic) — and
 > that zero-net "more along one axis than across it" pattern IS a GW at
@@ -1704,7 +1704,7 @@
 > separation) / B (DP arc) polarizations of the DP Sea, built from
 > DI-bit summations — IS the E/B decomposition of vector harmonics from
 > the substrate side: **E-type ↔ the even vector harmonic (the shift
-> h_tr); B-type ↔ the odd sector; both SSV_net** (refines R-SHEAR-MUST-
+> h_tr); B-type ↔ the odd sector; both V_i** (refines R-SHEAR-MUST-
 > BE-REGISTERED). The junction (3396–3398) is now short exactly ONE
 > coefficient κ: how a unit of E-polarization reads in the metric —
 > the rank-2 dictionary CONV-039 found absent, narrowed to a number
@@ -1731,9 +1731,9 @@
 > mode: |H₁|²/(|K|²+|H₂|²+|H₁|²) = 0.34 — a third of the mode is
 > shift.** The junction is fully posed (exterior components derived;
 > interior vector wave, 3384; register counts both sides, 3397) EXCEPT
-> for one dictionary: **shift h_tr ↔ δSSV_net — OPEN-GR-SHIFT-DICT-1**;
+> for one dictionary: **shift h_tr ↔ δV_i — OPEN-GR-SHIFT-DICT-1**;
 > candidate (stated as candidate): the shift is the census's net
-> direction = SSV_net by AP-4's definition. No coupling guessed; no
+> direction = V_i by AP-4's definition. No coupling guessed; no
 > corrected pole claimed. **F-6 to the founder: is "a tilt in the
 > direction of arriving DI-bits, without change in their number" the
 > whole of what the metric's shift is in CPP?** Record
@@ -2011,7 +2011,7 @@
 >
 > **3384 — OPEN-GR-ODDWALL-1 COMPUTED under both c_* brackets (verify
 > 14/14; Dirichlet reference = 3356's 0.44859 − 0.11749i to 1e-4).** The
-> founder's rule (shear registered in uncapped SSV_net → transmit →
+> founder's rule (shear registered in uncapped V_i → transmit →
 > interior regularity) is the Robin law (dψ/dr*)/ψ = (1/J)·k·g(kμ),
 > g = (xj_ℓ)′/(xj_ℓ), k = Jω, real (|R| = 1), → (ℓ+1)/J at low ω; the
 > whole odd wall depends on ONE number J = dr*/dr̄|_wall: **J = 2 (CPP
@@ -2056,7 +2056,7 @@
 > differ by ξ_t, under which H₂, K are invariant (3378 L3) → **the trace
 > condition is slicing-robust; the panel's 5–0 caveat discharged.** F-2:
 > "if a register doesn't see a wave, how could it interact?" → a shear
-> that arrives by DI-bits IS registered — in the uncapped **SSV_net** —
+> that arrives by DI-bits IS registered — in the uncapped **V_i** —
 > so the surface has no refusal mechanism for it: **the axial wave
 > enters the core and returns from the centre (3374 law (A), alive for
 > the odd sector).** This is the Q4 vector-sector rule; checked against
@@ -2178,7 +2178,7 @@
 > trivial solution — X = 0 is NOT the odd image of any scalar mirror.
 > Three branches for CONV-039 (map Dirichlet→Dirichlet: recompute the
 > ladder with the Robin wall; map Robin: derive; odd sector governed by
-> the SSV_net VECTOR sector, which has no wall ruling — X = 0 a separate
+> the V_i VECTOR sector, which has no wall ruling — X = 0 a separate
 > assumption, or the echo is even-parity only). Verify 16/16. Record
 > `rcore_derivation/3377_l2_spherical_parity_robin.md`. GR-2 caveat (a)
 > wording to change at V1.8/V2.0; not enacted; ledger unchanged. Next
@@ -2281,7 +2281,7 @@
 > initial expansion = THEO-1 repulsion + Axiom H. Glossary entry for
 > THEO-1 owed. **Physics question to the founder before the wall
 > computation:** THEO-1's proof is for an isolated pair — can an external
-> SSV_net (an impact) FORCE same-polarity co-occupation for one Moment?
+> V_i (an impact) FORCE same-polarity co-occupation for one Moment?
 > Record `rcore_derivation/3372_exclusion_dependency_sweep.md`. Next
 > patch (GR): 3373.
 >
@@ -2359,7 +2359,7 @@
 > traced to the **CP Exclusion Rule** — invoked live in GR-1b and in
 > GR-1c Thm 2's proof, absent from `axiom-registry.md`, and, per founder
 > ruling **R-EXCL-RETIRED**, *eliminated earlier as unnecessary* (ZBW +
-> next-Moment SSV_net displacement replaced it) with no retirement ever
+> next-Moment V_i displacement replaced it) with no retirement ever
 > recorded. Tombstone entered: `axiom-registry.md` §"Retired rules."
 > Founder rulings **R-FLOOR-REGISTER** (the l_P/2 floor is a
 > register-saturation limit; one-CP-per-GP "inconsistent with reality")
@@ -2403,7 +2403,7 @@
 > the founder's "ongoing movement of CPs internal to the BH" from the
 > opposite direction. Supersedes queue item 1 as the load-bearing GR
 > physics: the wall condition is now **the register's one-Moment-delay
-> response to an SSV_net rotation at saturation** (founder picture, ruling
+> response to an V_i rotation at saturation** (founder picture, ruling
 > file §4), a computation, not "X = 0 from a clamped register."
 >
 > **"Clamped register" — glossary entry HELD.** Wrong name (a clamp is
@@ -2894,7 +2894,7 @@ scoping assessment §3; founder ruling: V0 claims the solutions and registers
 the derivation).
 
 **The target.** Derive the general CPP field equations from the deeper
-DI-bit / SSV_abs / SSV_net / DP Sea picture — not by positing correspondence
+DI-bit / SSV_abs / V_i / DP Sea picture — not by positing correspondence
 in the continuum limit. Folded into this item (consequences of the same
 underived general equation, 0 mentions each across the eight companions):
 
@@ -2931,7 +2931,7 @@ narrative registered verbatim at
 W-2, per the labelled commentary: conserved quantity = the conscious
 points themselves + the per-Moment DI-bit equal-redistribution invariant
 (redirects §5 E-1); PCD executor = the GP (CP displaces per the GP's
-computed SSV_net; DI-bits a third conserved CP type — glossary/axiom-impact
+computed V_i; DI-bits a third conserved CP type — glossary/axiom-impact
 flag recorded, not actioned); source = compressed-DP SSV_abs content, no
 independent kinetic term posited (narrows §5 E-2); A3′ load-bearing
 (symmetry at full-Moment granularity only); lattice zero-freedom + CP-only

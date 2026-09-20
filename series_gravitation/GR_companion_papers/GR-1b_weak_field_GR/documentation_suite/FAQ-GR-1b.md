@@ -3,7 +3,7 @@
 **Q1. What does this paper add that GR-1a didn't have?**
 A direction. GR-1a's scalar |SSV|_abs sources clock rate and reproduces
 Newton, but a scalar has no orientation and cannot curve space. This
-paper extends the broadcast to carry the net vector **SSV**_net, which
+paper extends the broadcast to carry the net vector **V_i**, which
 sources g_ij — and that second channel is what makes the weak-field
 metric, the correct deflection, and gravitational waves possible.
 
@@ -38,7 +38,7 @@ rank-2 Einstein equivalence remains open at `op:einstein`.
 Propagating perturbations of the lattice geometry sourced by
 time-varying mass-energy quadrupoles, with both LSP channels jointly
 perturbed in transverse-traceless gauge. They travel at c. The LIGO
-observations therefore confirm, in this reading, that the **SSV**_net
+observations therefore confirm, in this reading, that the **V_i**
 component propagates at c and carries energy.
 
 **Q6. Why does the impedance of free space appear in a gravity paper?**

@@ -1,4 +1,4 @@
-# OPEN-DM-ALPHA-1 FOUNDER ANSWER — the DP-Sea static-polarization mechanism, in the founder's physical picture (21 July 2026): **there are no persistent dipoles** — the DP is a heuristic; each CP responds every Moment to the TOTAL summed field (SSV_net at its GP, all environment contributions including neighbor responses); the ZBW self-exclusion acts at SUPERPOSITION (same-GP) scale, not at lattice-spacing scale; the static response is a TIME-AVERAGED statistical redistribution of ± CP occupation obeying Gauss's law — this is the physical seed for the χ derivation
+# OPEN-DM-ALPHA-1 FOUNDER ANSWER — the DP-Sea static-polarization mechanism, in the founder's physical picture (21 July 2026): **there are no persistent dipoles** — the DP is a heuristic; each CP responds every Moment to the TOTAL summed field (V_i at its GP, all environment contributions including neighbor responses); the ZBW self-exclusion acts at SUPERPOSITION (same-GP) scale, not at lattice-spacing scale; the static response is a TIME-AVERAGED statistical redistribution of ± CP occupation obeying Gauss's law — this is the physical seed for the χ derivation
 
 **Patch 2697, 21 July 2026. Founder input to the OPEN-DM-ALPHA-1
 deliverable (registration §2 named it). The founder's original text is
@@ -19,7 +19,7 @@ detail the rewrite compresses away. Reasoning: `reasoning/2697.md`.**
 > but even in that closest apposition relationship, both DPs will have
 > different signals from the GP that they are on at the Moment. The
 > result is that each CP will be responding to the time-delayed signal
-> of a distant charge disparity. The sum of the DI-bits and SSV_net
+> of a distant charge disparity. The sum of the DI-bits and V_i
 > acting on each CP each Moment will vary each Moment. Thus, looking at
 > any individual CP or CP pair/DP will be a chaotic melee of forces
 > acting on it each Moment. If we look at each CP as a bonded pair,
@@ -35,7 +35,7 @@ detail the rewrite compresses away. Reasoning: `reasoning/2697.md`.**
 > their relationship as a unit. Rather, a better model is that the DP
 > Sea is a field of plus and minus CPs, whose individual positions
 > change with each Moment based on the sum of the DI bits arriving from
-> its environment, and executing its next movement based on the SSV_net
+> its environment, and executing its next movement based on the V_i
 > associated with that GP at that Moment. But that is not useful, other
 > than as a recognition of its base/factual reality. The place where
 > that understanding is useful is where there is local asymmetry. The
@@ -50,10 +50,10 @@ detail the rewrite compresses away. Reasoning: `reasoning/2697.md`.**
 > in effect, there is no such thing as a DP other than two CPs of
 > opposite charge that happen to be close to each other each Moment.
 > There is only a field of CPs, all of which are on GPs, which are
-> informing them of the SSV_net to follow at that Moment. The summation
+> informing them of the V_i to follow at that Moment. The summation
 > of all the forces composing that SSV net is due to the entirety of
 > the past and present state, near and far field from all the CPs in
-> the entire universe. So, there is only a net force/SSV_net that is
+> the entire universe. So, there is only a net force/V_i that is
 > acting upon each CP at each Moment. Certainly, there will always be a
 > closest net opposite-charge bias acting on the environment
 > surrounding the CPs. The stable biasing forces on the DP field/Sea
@@ -117,7 +117,7 @@ original governs.
    polarizability; it is a statistical density-response coefficient of
    the ± CP occupation field.
 2. **Total-field response.** Each CP responds to the full
-   self-consistently summed field (SSV_net) — never the bare source
+   self-consistently summed field (V_i) — never the bare source
    pull. (Both existing matchings already assumed this; it is now
    founder-confirmed.)
 3. **Self-exclusion at superposition scale.** The excluded

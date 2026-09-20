@@ -20,7 +20,7 @@ Its initial condition at ignition is the one 3816 §1 established and 3862 confi
 
 > **Under Reading S, E = 0 at every GP for all time.**
 
-And the consequence is not a failed ignition but the absence of physics: SSV_net = E + S = 0 identically, so by A1′/AP-3 **no CP ever displaces**, and nothing in the theory ever happens. The recursion never leaves its fixed point.
+And the consequence is not a failed ignition but the absence of physics: V_i = E + S = 0 identically, so by A1′/AP-3 **no CP ever displaces**, and nothing in the theory ever happens. The recursion never leaves its fixed point.
 
 ## §3 So Reading R is forced (verify T5, T6)
 > **Reading R:** E_i(t) = **q_i(resident CPs)** + Σ_j E_j(t−1).
@@ -31,7 +31,7 @@ The resident charge is a **source term**, making the recursion inhomogeneous. E 
 
 ## §4 What it discharges (verify T7, T8)
 - **The 3862 residual is resolved.** First-Moment bits carry **count and direction**: the count from AP-4's unconditional fixed emission, the direction from the resident CPs. The observation that they "carry count without direction" was correct only under the excluded reading, and is withdrawn.
-- **The founder's ignition picture requires it.** Twelve CPs per GP each displacing to an icosahedral vertex (3813/3814) needs a directional SSV_net at Moment 1. Under Reading R the resident twelve supply it. Under Reading S ignition could never occur — so the picture presupposed Reading R all along, which is further evidence that Reading R is what the corpus has always meant.
+- **The founder's ignition picture requires it.** Twelve CPs per GP each displacing to an icosahedral vertex (3813/3814) needs a directional V_i at Moment 1. Under Reading R the resident twelve supply it. Under Reading S ignition could never occur — so the picture presupposed Reading R all along, which is further evidence that Reading R is what the corpus has always meant.
 
 ## §5 What is owed
 **A one-line clarification to AP-4's E-slot wording**, not an amendment. Reading R is what the programme has always practised — every field result in it presupposes a resident source, or there would be no fields — but the ratified text admits a reading that yields no physics, and a ratified text should not admit that.

@@ -13,7 +13,7 @@ kill branch) were written before this computation and are graded in §7 against 
 ## 1. The harmonic-null theorem (the founder's ruling, made load-bearing)
 
 Under the ruling, a quiescent Sea DP center has no inertial memory: its per-Moment
-displacement is a function of the local SSV_net/SSV_abs only. The center is therefore
+displacement is a function of the local V_i/SSV_abs only. The center is therefore
 *slaved* to the local field. For the field's registered gapless coherence mode
 (2317: ω = ck, exact at the discrete level, C-e), the center's velocity autocorrelation is
 fixed by the thermal mode spectrum ~ ω³ n_B(ω), whose ω → 0 weight vanishes identically.

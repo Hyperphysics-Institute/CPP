@@ -29,7 +29,7 @@ state.** There is no random walk in the specification at any point.
 | 2887 | AUTOMATON-2 convolution | nearest-neighbour, isotropic re-spread |
 | 2889 | directed relay | nearest-neighbour, direction retained |
 | 2890 | σ-family | nearest-neighbour, σ-weighted mix |
-| 2892 | coherent rule | nearest-neighbour, SSV_net conserving |
+| 2892 | coherent rule | nearest-neighbour, V_i conserving |
 
 **All four are NEAREST-NEIGHBOUR RELAYS. None implements the shell
 broadcast.** The diffusive behaviour found at 2887, the σ-family
@@ -43,8 +43,8 @@ Reading it should have preceded five patches of instrumentation.**
 
 The founder's 2 Aug statement describes re-radiation *at each CP*:
 
-> *"Every CP receives the DI-bits it receives, calculates the SSV_net from
-> that totality, and then re-radiates the SSV_net to the spherical shell
+> *"Every CP receives the DI-bits it receives, calculates the V_i from
+> that totality, and then re-radiates the V_i to the spherical shell
 > that is at the distance that is present at each local SSV_abs (the
 > PSR/l_P). … It produces a holographic filling."*
 
@@ -57,7 +57,7 @@ factor is
 monopole and dipole weighted **equally**, vanishing **exactly backward**
 (θ = 180°). That backward null is what prevents a back-propagating wave.
 
-**The rule derived at Patch 2892 from exact SSV_net conservation is
+**The rule derived at Patch 2892 from exact V_i conservation is
 different.** For a directed pulse (S = |V|), w_d = S/12 + (V·d̂)/4 gives
 
     w(θ) ∝ (1 + 3cos θ)/12
@@ -71,7 +71,7 @@ w_d = (S/12)(1 + V̂·d̂) and the FCC sums Σd̂ = 0, Σd̂_i d̂_j = 4δ_ij,
 
 **which equals V only when |V| = S/3.**
 
-> **CONSERVING SSV_net EXACTLY AND REPRODUCING FREE-SPACE PROPAGATION ARE
+> **CONSERVING V_i EXACTLY AND REPRODUCING FREE-SPACE PROPAGATION ARE
 > DIFFERENT RULES.** They coincide only at the single ratio |V| = S/3.
 
 **This is a genuine physics fork, not an implementation detail**, and it is
@@ -110,14 +110,14 @@ emission expands as a shell; amplitude dilutes as 1/r² by area. Ballistic,
 retarded, 1/r² — all three immediately, with no closure problem.
 
 **READING B — per-CP re-radiation (2 Aug message).** Each CP compresses
-what it receives to SSV_net and re-emits to a shell at PSR. This is a
+what it receives to V_i and re-emits to a shell at PSR. This is a
 Huygens construction and reproduces Reading A **only if** the obliquity is
-Kirchhoff-like — which, per §3, conflicts with exact SSV_net conservation.
+Kirchhoff-like — which, per §3, conflicts with exact V_i conservation.
 
 **Which is the mechanism?** If A, the propagation problem is solved and the
 arc should return to CONJ-FP-1 Condition A (the sign of the Sea's
 response). If B, the obliquity must be specified, and whether it conserves
-SSV_net exactly or vanishes exactly backward is a physical choice with
+V_i exactly or vanishes exactly backward is a physical choice with
 different consequences.
 
 ## §6 — STANDING

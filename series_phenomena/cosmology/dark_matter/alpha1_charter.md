@@ -12,7 +12,7 @@ computation; founder loop for mechanism questions only (PD-006).**
 
 **A1-S1 — Formalization of the statistical response.** Translate the
 six commitments into a two-species (±) CP occupation-statistics model
-on GPs: Moment dynamics driven by the total SSV_net (commitment 2),
+on GPs: Moment dynamics driven by the total V_i (commitment 2),
 self-exclusion at superposition/GP scale only (3), individual ZBW mode
 untouched (5), source = stable biasing pattern (6). Deliverable: the
 static density-response kernel — its FORM (local vs structured at

@@ -1,4 +1,4 @@
-# POST-FIRE EXCHANGE — THE FOUNDER ASKS FOR BRIDGE MECHANISMS (registered verbatim); the arithmetic fact stated first (the fired assembly was computed WITH the ≈constant-speed instrument — the cap does not bridge); the candidate register assessed on INDEPENDENT-MOTIVATION grounds only; the strongest candidate is the founder's own morning ruling actually computed (D-STIFF-DYN under unbounded SSV_net); FQ-10 posed (memoryless vs inertial CP rule — load-bearing and unruled); the successor protocol stated: fired verdict STANDS, any bridge enters as ruled physics through a FRESH preregistration, never as post-hoc widening
+# POST-FIRE EXCHANGE — THE FOUNDER ASKS FOR BRIDGE MECHANISMS (registered verbatim); the arithmetic fact stated first (the fired assembly was computed WITH the ≈constant-speed instrument — the cap does not bridge); the candidate register assessed on INDEPENDENT-MOTIVATION grounds only; the strongest candidate is the founder's own morning ruling actually computed (D-STIFF-DYN under unbounded V_i); FQ-10 posed (memoryless vs inertial CP rule — load-bearing and unruled); the successor protocol stated: fired verdict STANDS, any bridge enters as ruled physics through a FRESH preregistration, never as post-hoc widening
 
 **Patch 3108 (13 Aug 2026). The founder's post-fire question,
 registered verbatim, with the requested mechanism survey. DISCIPLINE
@@ -34,7 +34,7 @@ much of the time, so the 3105 dynamics already approximate
 constant-speed-c motion. **The cap does not bridge; the fired number
 already contains it.** The UNMEASURED branch is the opposite one —
 the founder's own R-SSV-NOEXCEPT dynamics (unbounded per-Moment
-SSV_net), under which strong pairs plausibly excurse MORE, not less.
+V_i), under which strong pairs plausibly excurse MORE, not less.
 Constant-|v| = c ZBW as a positive ruling does have real independent
 grounding (Dirac's zitterbewegung is literally eigenvalue-c internal
 motion; the substrate has one speed, the DI-bit speed) and is
@@ -75,12 +75,12 @@ band arithmetic anywhere)
 candidate 1)
 
 **In the automaton, is a CP's per-Moment displacement the freshly
-computed SSV_net alone — memoryless, no velocity carried between
+computed V_i alone — memoryless, no velocity carried between
 Moments — or does prior motion persist at the CP level (inertia as a
 CP-level property)?** The corpus points toward memoryless: the SF-6
 inertia derivation makes inertia EMERGENT (the fore-charge/
 aft-discharge loading of a dressed mass's DP cloud), which suggests
-the bare CP rule is x → x + SSV_net with SSV_net recomputed each
+the bare CP rule is x → x + V_i with V_i recomputed each
 Moment and nothing else carried. But the instrument lineage
 (R-INERTIA-ARC: v += F) has modeled CP-level velocity persistence
 throughout. The two pictures give QUALITATIVELY different stiff-pair

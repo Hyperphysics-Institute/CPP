@@ -35,7 +35,7 @@ status and is honorable.
    registered as the re-grounding template (asset SF6-A1).
    `series_quantum_mechanics/qm_series_phase_attribution_sweep.md`
 3. **Patch 2996 — FI-QMRG-1.** The phase variable identified,
-   founder-anchored: φ = the orientation of the Grid Point's SSV_net
+   founder-anchored: φ = the orientation of the Grid Point's V_i
    directional content in the distinguished (ZBW/transverse) plane;
    DP-orientations are the microscopic contributors.
    `series_quantum_mechanics/founder_registration_2996_phase_variable.md`
@@ -58,7 +58,7 @@ conditionality move.
 
 **C-1 (FI-QMRG-1, the identification).** ψ_i = √ρ_i e^{iφ_i} with
 ρ_i = the count-like scalar register (SSV_abs; AP-2) and φ_i = the
-orientation of the SSV_net vector register in the distinguished
+orientation of the V_i vector register in the distinguished
 plane. Anchored by two arguments:
 - **A-1 (U(1) for free):** a phase needs a compact periodic target
   space; among the GP's held registers only a planar vector direction
@@ -79,12 +79,12 @@ traveling-pattern ontology.
 
 **C-3 (unitarity Proposition; derivation-sketch grade, named
 inputs).** Norm from Nexus count conservation + invertibility of
-deterministic PCD + linearity (vector summation of planar SSV_net
+deterministic PCD + linearity (vector summation of planar V_i
 contributions with magnitudes √ρ_j and angles φ_j IS complex
-addition of the ψ_j) → unitary update; −i = quarter-turn of SSV_net
+addition of the ψ_j) → unitary update; −i = quarter-turn of V_i
 in the plane.
 
-**C-4 (B-QMRG-1, the bridge).** |SSV_net,⊥|² ∝ ρ — the coherent-mode
+**C-4 (B-QMRG-1, the bridge).** |V_i,⊥|² ∝ ρ — the coherent-mode
 amplitude–count relation (amplitude ∝ √N), registered as a bridging
 input valid in the coherent weak-field regime; claimed to be the same
 harmonic structure QM-5's mode quantization presupposes, and to make
@@ -92,7 +92,7 @@ harmonic structure QM-5's mode quantization presupposes, and to make
 Born Rule entry).
 
 **C-5 (R-1, the plane).** The distinguished plane is not an external
-input: it is swept by the periodic (ZBW) component of SSV_net; the
+input: it is swept by the periodic (ZBW) component of V_i; the
 pattern supplies its own plane. Consilience claimed: φ is undefined
 exactly where the periodic component vanishes — the ρ→0 nodes, where
 standard QM also has phase singularities.
@@ -116,7 +116,7 @@ standard QM also has phase singularities.
   angle composes with the tight-binding update as complex
   multiplication; this is exact for planar rotations but the
   Proposition does not verify that the GP refresh never takes
-  SSV_net out of the distinguished plane (plane-leakage would break
+  V_i out of the distinguished plane (plane-leakage would break
   the U(1) reduction).
 - **D-5.** Grade discipline self-check invited: the worker chose
   Proposition-at-sketch-grade rather than Theorem. If any reviewer
@@ -128,7 +128,7 @@ standard QM also has phase singularities.
 ## §4 — THE QUESTIONS (frozen; answer each with the named verdict options)
 
 **Q1 — FI-QMRG-1 soundness.** Is the identification φ =
-SSV_net-orientation-in-plane sound as the substrate reading of
+V_i-orientation-in-plane sound as the substrate reading of
 quantum phase? Attack A-1 (does U(1)-compactness genuinely select, or
 merely permit?) and A-2 (genuine structural mapping, or numerological
 repackaging of registers?). Verdicts: **CONFIRM /

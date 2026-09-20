@@ -145,7 +145,7 @@ provided in full at Patch 2729 (`automaton1_founder_specification.md`,
 four verbatim answers, commitments 14–18) and completed by the
 founder's confirming ruling at Patch 2732 ("I accept your proposed
 resolution of v/c"), freezing the charter
-(`automaton1_charter.md`: d = (|SSV_net|/SSV_abs)·PSR_eff,
+(`automaton1_charter.md`: d = (|V_i|/SSV_abs)·PSR_eff,
 synchronous semantics, periodic boundaries). **PR4 awaits WORKER
 EXECUTION** — the AUTOMATON-1 execution prereg and run against the
 charter's deliverables (i)–(iii) — and nothing from the founder. The

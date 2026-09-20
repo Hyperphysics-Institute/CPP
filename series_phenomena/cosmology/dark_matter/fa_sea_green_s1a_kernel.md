@@ -1,4 +1,4 @@
-# FA-SEA-GREEN S1a — the one-Moment kernel formalized from A3′ and the founder's re-radiation picture: uniform PSR-shell average, signal-conserving, resolvent statics — GATE G1 PASS (first attempt): the lossless static superposition recovers the registered inverse-square in the SSV_net channel, with icosahedral symmetry protecting isotropy through fourth derivative order
+# FA-SEA-GREEN S1a — the one-Moment kernel formalized from A3′ and the founder's re-radiation picture: uniform PSR-shell average, signal-conserving, resolvent statics — GATE G1 PASS (first attempt): the lossless static superposition recovers the registered inverse-square in the V_i channel, with icosahedral symmetry protecting isotropy through fourth derivative order
 
 **Patch 2668, 20 July 2026. Stage S1a of the FA-SEA-GREEN charter
 (`fa_sea_green_charter.md`, FROZEN 2666). Blind guards in force: neither
@@ -12,10 +12,10 @@ anything below; no gap parameter and no screening length enter this stage.
   Absolute Moment each GP broadcasts its LSP′ to its **PSR shell**,
   propagating at c = ℓ_P/t_P with **flat per-hop transport**, all channels
   obeying **the same icosahedral shell-sum**. The scalar channel Φ suffices
-  for the kernel's structure; the vector channel V_i = SSV_net inherits the
+  for the kernel's structure; the vector channel V_i = V_i inherits the
   identical shell-sum per the axiom's "all channels" clause.
 - **Glossary:** PSR = effective displacement per Absolute Moment; rest-frame
-  PSR = ℓ_P. SSV_net = the vector sum of all SSV contributions at a point.
+  PSR = ℓ_P. V_i = the vector sum of all SSV contributions at a point.
 - **Founder kernel capture (verbatim, `founders_voice/
   kernel_psr_reradiation_2026-07-20.md`):** per-Moment spread to the shell
   of GPs at PSR distance; influenced GPs re-radiate identically each
@@ -62,7 +62,7 @@ re-radiation with the source refreshing each Moment:
 re-radiation (resolvent of the one-Moment kernel)." (On a signal-conserving
 K the resolvent is taken on the source's zero-total-charge complement /
 neutralizing-background convention; the physical field is defined up to the
-uniform mode, which carries no SSV_net.)
+uniform mode, which carries no V_i.)
 
 ## §3 — GATE G1: the lossless limit recovers registered inverse-square — PASS
 
@@ -93,16 +93,16 @@ Poisson's equation,
 
 **Step 3 — the registered channels.** For a point source, the scalar
 superposition is the Coulomb form **f ∝ 1/r** (the registered potential
-behavior of the Φ/SSV_abs channel), and the vector channel — SSV_net, the
+behavior of the Φ/SSV_abs channel), and the vector channel — V_i, the
 vector sum of arriving contributions, which by isotropy aligns with the
-radial gradient — scales as **|SSV_net| ∝ |∇f| ∝ 1/r²**: the registered
+radial gradient — scales as **|V_i| ∝ |∇f| ∝ 1/r²**: the registered
 inverse-square force behavior (glossary: gravity/EM as SSV gradient; the
 EM-side unscreened superposition the founder's picture names).
 
 **Two-readings note (registered honestly).** The founder's "inverse-square
 dilution of any individual signal" is the per-shell flux statement; the
 resolvent's accumulated scalar goes as 1/r with its gradient at 1/r². The
-two readings meet in the SSV_net channel: **the force-relevant vector field
+two readings meet in the V_i channel: **the force-relevant vector field
 is inverse-square in both**, so G1's verdict does not depend on the reading.
 The scalar-channel 1/r is itself the registered potential form, not a
 discrepancy.

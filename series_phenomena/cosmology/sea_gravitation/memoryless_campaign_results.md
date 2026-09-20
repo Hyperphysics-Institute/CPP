@@ -28,7 +28,7 @@ The panel receives this ordering explicitly.**
   choice):** r = 0.274 ± 0.02 · x_q = 0.700 ± 0.02 ·
   η_e = 0.0700 ± 0.005 · η_gas = 1.91 ± 0.05 · **s = 1.797 ± 0.05.**
 - **The physics of s > 1, stated:** a memoryless CP under a G ≈ 53
-  bond takes SSV_net-sized jumps — the overshoot dynamics of the
+  bond takes V_i-sized jumps — the overshoot dynamics of the
   founder's own ruling (R-ROGUE-EXCEED's per-Moment exceedance) —
   and its excursions EXCEED the e-pair's. The inertial-capped 0.52
   and the continuum 1/G² were both artifacts of dynamics the

@@ -214,7 +214,7 @@ The founder's DP-arc mechanism message (registered verbatim at
 `founder_registration_2956_dp_arc_mechanism.md`) CONFIRMS the §3.6
 identification in his own vocabulary: arcs = anchored, co-moving,
 fore-charging/aft-discharging displaced-DP patterns, with the
-SSV_net differential sustaining Newton-1 constant velocity and the
+V_i differential sustaining Newton-1 constant velocity and the
 same structure producing the magnetic field (SF-6 curl linkage).
 C-7: SATISFIED-IN-PICTURE, formalization owed to the K1 arc (which
 may now be chartered in parallel with E-1/E-2 per §4 there). E-3:

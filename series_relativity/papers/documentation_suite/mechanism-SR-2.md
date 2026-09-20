@@ -7,7 +7,7 @@ Physics, complementing the formal treatment in `../SR-2_spin_bit_axiom_quadrupol
 
 In the c07/c08 formulation, each Grid Point (GP) broadcasts a Lattice State Packet (LSP) to its
 Planck-Shell-Radius neighbours every Absolute Moment. The packet carried one scalar, |SSV|_abs
-(sourcing gravitational time dilation, g_tt), and one vector, SSV_net (sourcing spatial curvature
+(sourcing gravitational time dilation, g_tt), and one vector, V_i (sourcing spatial curvature
 and gravitomagnetism, g_ij). This recovers Schwarzschild, the Newtonian potential, and weak-field
 GR statics with notable economy.
 

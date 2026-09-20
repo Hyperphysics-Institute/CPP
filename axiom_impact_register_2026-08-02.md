@@ -20,7 +20,7 @@ P-1…P-3). Contradicts the current glossary entry (correction
 TODO-2957-A) and re-grounds QM-1 (audit TODO-2957-B). STATUS:
 founder-ruled; proposal to draft; QM-1 audit gates final wording.
 A-3. **GP state protocol: the GP computes, holds, and per-Moment
-refreshes SSV_abs/SSV_net from Perceive-stage arrivals, imprints on
+refreshes SSV_abs/V_i from Perceive-stage arrivals, imprints on
 DI-bits; DI-bits reset per hop** (2958 V-2, founder verbatim).
 STATUS: founder-stated; classify axiom vs definitional at drafting.
 

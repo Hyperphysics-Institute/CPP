@@ -4,7 +4,7 @@
   naturally appears; the spatial metric is conformally flat, so the two
   broadcast components separate cleanly: g_tt carries the scalar
   (|SSV|_abs) content, the conformal factor (1+ρ)⁴ carries the vector
-  (**SSV**_net) content. GR-1j later derives *why* the solution takes
+  (**V_i**) content. GR-1j later derives *why* the solution takes
   this form (the lattice is flat).
 - **Binet equation** — the orbit equation in u = 1/r used for both
   dynamical tests; the timelike form carries the ∝u² relativistic term,

@@ -56,7 +56,7 @@ omnidirectional?**
 **READING A — register alignment (pattern-level; the conservative
 resolution).** The mode's "outgoing-direction selection" S(t) is the
 ORIENTATION OF THE MODE'S OWN REGISTER CONTENT at its site — which of
-the 12 icosahedral directions the pattern's SSV_net alignment points
+the 12 icosahedral directions the pattern's V_i alignment points
 this Moment, i.e., the direction toward which the next Moment's
 constructive-summation reconstruction of the mode is coherent. The GP
 meanwhile emits snapshots on all 12 edges exactly as AP-4c says;

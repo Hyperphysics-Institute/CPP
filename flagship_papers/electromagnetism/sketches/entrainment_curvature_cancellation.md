@@ -4,7 +4,7 @@
 founder's opening direction
 (`founders_voice/founder_direction_constant_ssv_net_entrainment_2026-07-31.md`):
 pursue 2898 direction (A) — the co-moving Sea — as the path to a constant
-SSV_net. Both tests below were PRE-REGISTERED in the session chat before
+V_i. Both tests below were PRE-REGISTERED in the session chat before
 execution, per the 2898 caution that direction (A) is the option that
 would exonerate the previous worker's own number.**
 
@@ -90,7 +90,7 @@ was established by pre-registered test, not by re-description.
 2. **One-shot is not self-consistent.** The displaced DPs alter the field
    that displaces them. The correct object is the *fixed point* of the
    coupled CP+Sea dynamics — the travelling steady state, time-independent
-   in the co-moving frame. The founder's constant-SSV_net picture is
+   in the co-moving frame. The founder's constant-V_i picture is
    precisely the claim that this steady state exists at every v and
    regenerates itself each Moment (aft discharge re-supplying fore
    charge). **In the steady-state formulation, Newton I is the statement
@@ -111,7 +111,7 @@ was established by pre-registered test, not by re-description.
 The founder has ruled (31 Jul, captured this patch) that the c05 §254
 equivalence-principle identification wrongly equates two different
 phenomena: gravitational contraction is driven by a *differential* in
-SSV_abs (an acceleration), inertial coasting by a *constant* SSV_net.
+SSV_abs (an acceleration), inertial coasting by a *constant* V_i.
 **Direction (C) in its 2898 form — "re-derive the SR sector's PSR" — is
 therefore subsumed:** the coasting PSR is to be read off the entrained
 steady state of §3 item 2, not imported from free fall. If the steady

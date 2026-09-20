@@ -9,8 +9,8 @@ is its first execution.**
 
 ## §1 — THE ANALYTIC CORE
 
-Coasting map, from the CPP primitive d = (|SSV_net|/SSV_abs)·PSR with
-v = d per Moment, and the round-trip mechanism SSV_net = D(v):
+Coasting map, from the CPP primitive d = (|V_i|/SSV_abs)·PSR with
+v = d per Moment, and the round-trip mechanism V_i = D(v):
 
     v_{n+1} = μ · D(v_n)  ≡  f(v_n),      μ ≡ PSR/SSV_abs
 

@@ -8,7 +8,7 @@ symmetric-traceless rank-2 field Q_ij carried in the Grid-Point broadcast. "Bit"
 DI-bit and the LSP — successive rungs of the broadcast ladder.
 
 **Lattice State Packet (LSP).** The data each Grid Point broadcasts to its Planck-Shell-Radius
-neighbours each Absolute Moment. Pre-A3′: scalar |SSV|_abs + vector SSV_net (4 components).
+neighbours each Absolute Moment. Pre-A3′: scalar |SSV|_abs + vector V_i (4 components).
 
 **LSP′ (completed broadcast).** The LSP after A3′: (x_GP, t_abs; Φ, V_i, Q_ij), with dynamical
 content Φ (scalar) ⊕ V_i (vector) ⊕ Q_ij (tensor) = A ⊕ T₁ ⊕ H = 1 + 3 + 5 = 9 components.
@@ -19,7 +19,7 @@ the radiative tensor sector. Maps to the TT metric perturbation h^TT_ij.
 **Φ ≡ |SSV|_abs.** The scalar broadcast channel (irrep A, l=0); sources g_tt / the Newtonian
 potential / gravitational time dilation.
 
-**V_i ≡ SSV_net.** The vector broadcast channel (irrep T₁, l=1); sources g_ij statics and
+**V_i ≡ V_i.** The vector broadcast channel (irrep T₁, l=1); sources g_ij statics and
 gravitomagnetism.
 
 **Helicity.** The eigenvalue under rotation about the propagation axis. Scalar → 0; vector → 0, ±1;

@@ -33,7 +33,7 @@ physics is not contradicted — it is UNTESTED by a simulation in the
 wrong regime.
 
 **Secondary hypothesis H-FLOOR:** displacement quantization
-(nearest-GP snap of d = (|SSV_net|/SSV_abs)·R) creates absorbing
+(nearest-GP snap of d = (|V_i|/SSV_abs)·R) creates absorbing
 states: wherever the field cancels by local ± symmetry (droplet
 interiors; isolated CPs), d < ½ GP rounds to exactly zero motion
 forever. In a continuum the same residual force still accelerates.

@@ -109,7 +109,7 @@ proposition that already names them.
 **Q1 REJECT (Copilot).** The A-1 attack (permissive-not-selective) is
 the SAME point all four CONFIRM-WITH-AMENDMENTS seats make; they
 route it to an amendment, Copilot routes it to REJECT. The A-2
-attack ("not injective; √ρ is not the magnitude of SSV_net; the
+attack ("not injective; √ρ is not the magnitude of V_i; the
 mapping discards out-of-plane components") is substantively identical
 to DeepSeek's two amendment conditions — which are enacted. What
 REJECT adds beyond the amendments is only the demand that the
@@ -126,7 +126,7 @@ intersection of the three PARTIAL-LIFT returns).**
 ADMISSIBLE henceforth (in RELAY-MECH-1 and generally), each citation
 carrying a MANDATORY conditional note naming OPEN-QMRG-B1 + R-4:
 - (i) the pattern-level LOCATION claim: quantum phase lives at the
-  pattern level in the GP-held SSV_net orientation (FI-QMRG-1 as
+  pattern level in the GP-held V_i orientation (FI-QMRG-1 as
   amended at E-2), including the pattern-rotation re-label (C-2) and
   the SF-6 traveling-pattern consistency;
 - (ii) the FORMAL mathematical results of QM-1..6, cited AS formal
@@ -142,7 +142,7 @@ the conditionality persists).
 the A-1 rewording all sustaining seats require).** The identification
 now explicitly states: (a) A-1 establishes NATURAL AVAILABILITY among
 currently registered GP variables, not uniqueness; (b) condition
-C-i: |SSV_net,⊥| tracks √ρ (B-QMRG-1) so the vector register carries
+C-i: |V_i,⊥| tracks √ρ (B-QMRG-1) so the vector register carries
 no unmapped planar degree of freedom; (c) condition C-ii: plane
 stability under the GP refresh (R-4). Enacted in QM-1 → **v2.1**
 (this patch).

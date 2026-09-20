@@ -45,7 +45,7 @@ To fit the ensemble in the per-call compute cap, the retardation solve
 gains a compiled (numba) kernel with **identical float64 numerics and
 identical bisection logic** to the committed numpy path. Gate, frozen in
 advance: on identical state, kernel and reference must agree on the
-source's SSV_net to **≤ 1×10⁻¹⁰ absolute** over a 10-Moment comparison,
+source's V_i to **≤ 1×10⁻¹⁰ absolute** over a 10-Moment comparison,
 and V1/V2 must PASS on the kernel path; the validation output is
 committed with the execution record. If the gate fails, round 2 runs on
 the reference path at whatever pace that imposes.

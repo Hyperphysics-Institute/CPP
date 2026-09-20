@@ -28,9 +28,9 @@ written down.**
 **The CPP primitive** (`master_glossary.md`; founder ruling 7 July 2026):
 each Moment a CP displaces by
 
-    d = (|SSV_net| / SSV_abs) · PSR                                  (1)
+    d = (|V_i| / SSV_abs) · PSR                                  (1)
 
-where SSV_abs is the magnitude-sum of arriving contributions, SSV_net the
+where SSV_abs is the magnitude-sum of arriving contributions, V_i the
 vector sum, and PSR the per-Moment reach ceiling. The prefactor is a
 **directional coherence fraction** in [0,1]: unity when all arrivals
 agree in direction, zero when they cancel exactly.
@@ -42,7 +42,7 @@ displacement increment. So, with C collecting arc number density × the
 Position Plane's interacting cross-section × forward impulse per
 discharging arc:
 
-    SSV_net = C · d                                                  (2)
+    V_i = C · d                                                  (2)
 
 **Why (2) has this form and not another.** The transferred volume is
 (cross-section) × (slab thickness), and the slab thickness *is* d by
@@ -98,9 +98,9 @@ self-consistent coasting states, each neutrally reproduced.
 ### A.5 — The observation that (3) may be forced, and its status
 
 PSR is *defined* as the displacement achieved at **full coherence**, i.e.
-d = PSR exactly when |SSV_net| = SSV_abs. Evaluate (2) at that point:
+d = PSR exactly when |V_i| = SSV_abs. Evaluate (2) at that point:
 
-    SSV_net = C · PSR,  and full coherence means SSV_net = SSV_abs
+    V_i = C · PSR,  and full coherence means V_i = SSV_abs
 
     ⟹   C · PSR = SSV_abs
 
@@ -292,7 +292,7 @@ conjecture rather than a theorem.**
    zero (Patch 2875). Killed by the computation named as its own banking
    condition.
 5. **Treating a forward force on a coasting CP as a runaway pathology.**
-   Newtonian reflex; in a v ∝ SSV_net substrate a persistent forward drive
+   Newtonian reflex; in a v ∝ V_i substrate a persistent forward drive
    gives persistent *velocity*, not acceleration.
 
 **Items 1–3 were all corrections in the founder's favour, made by the
@@ -394,9 +394,9 @@ spurious drive here would be untrustworthy everywhere.
 ### E.6 — The escalation, derived
 
 If the relay is LW-like then the Sea's net axial drive on a coasting CP is
-**identically zero**, so SSV_net = 0, and the primitive
+**identically zero**, so V_i = 0, and the primitive
 
-    d = (|SSV_net| / SSV_abs) · PSR
+    d = (|V_i| / SSV_abs) · PSR
 
 gives **d = 0**. **Nothing could coast.** Hence a non-LW relay is required
 for coasting to exist *at all*, independently of this inertia mechanism.

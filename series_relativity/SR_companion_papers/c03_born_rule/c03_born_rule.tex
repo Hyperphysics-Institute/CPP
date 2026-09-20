@@ -332,7 +332,7 @@ Born-rule theorem (QM-2, Theorem~4.1): the probability of a CP state
 change at a Grid Point is proportional to the local DI-bit number
 density $\rho$, with $|\psi|^2 = \rho$ — a proof that consumes only the
 count register. Under the B-QMRG-1 coherent-mode bridge
-($|\SSV_{{\rm net},\perp}|^2 \propto \rho$), the squared-amplitude and
+($|V_{\perp}|^2 \propto \rho$), the squared-amplitude and
 count readings are dual statements of one quantity. The present
 conjecture is neither superseded by nor in competition with that
 theorem: it addresses the \emph{microscopic sampling mechanism} — why
@@ -465,7 +465,7 @@ clarify what a rigorous proof would require.
 
 At each tick, the net SSV at the aggregate's GP is:
 \begin{equation}
-  \SSV_{\rm net}(t) \;=\; \sum_i A_i\,\hat{\mathbf{n}}_i
+  V_i(t) \;=\; \sum_i A_i\,\hat{\mathbf{n}}_i
   \;+\; \xi_x(t)\,\hat{\mathbf{x}} + \xi_y(t)\,\hat{\mathbf{y}},
   \label{eq:netSSV}
 \end{equation}
@@ -474,7 +474,7 @@ outcome $i$, and $\xi_x, \xi_y$ are the two orthogonal ZBW noise components,
 each of amplitude $\sim \lP/\tP$ and oscillating at $\nu_{\rm ZBW}$.
 
 The 12-edge selection rule chooses the lattice edge $k^*$ that maximizes
-$\mathbf{e}_k\cdot\SSV_{\rm net}$.  Over many ticks, the fraction of ticks
+$\mathbf{e}_k\cdotV_i$.  Over many ticks, the fraction of ticks
 in which $k^*$ points toward outcome $k$ is the solid-angle fraction of the
 unit SSV sphere occupied by outcome $k$'s basin of attraction.
 

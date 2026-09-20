@@ -7,11 +7,11 @@
 ## §1 — THE ZBW RULING (founder), and what it closes
 
 **Registered:** ZBW is **NOT sub-Moment**. Every CP moves once per
-Moment, driven by SSV_net, during the PCD cycle — whether ZBW, DP-arc,
+Moment, driven by V_i, during the PCD cycle — whether ZBW, DP-arc,
 transiting, DP/DP-entity, or DM/baryon-bound. **Sub-Moment structure
 exists only as POSITIONING within the cycle**: DI-bit transit from
 GP_origin to GP_PSR, and the CP's displacement from GP_origin to
-GP_SSV_net, GP edge to GP edge.
+GP_V_i, GP edge to GP edge.
 
 **Consequence for the record:** `phaseD_saltation_prereg.md` §6 listed
 three alternatives that a NEAR-GAUSSIAN return would leave open, the

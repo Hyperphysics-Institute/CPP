@@ -15,7 +15,7 @@ posed as the re-entry's sharp question, not altered here).**
 > something. In general, every CP lands on a GP, and the SSV_abs
 > determines the PSR, which is typically many, many lattice points;
 > 10^30 is a number we have used. And the CP moves a distance
-> appropriate for its SSV_net at each Moment. Other than that, we
+> appropriate for its V_i at each Moment. Other than that, we
 > don't have many rules. The subquantum divisions are the number of
 > GPs between the minimum and maximum PSR at the current conditions
 > of the universe."
@@ -23,7 +23,7 @@ posed as the re-entry's sharp question, not altered here).**
 ## §2 — WHAT THE ANSWER SETTLES
 
 **(a) is ANSWERED: nothing advances one lattice edge per Moment.**
-Per-Moment displacement is SSV_net-determined, with reach up to the
+Per-Moment displacement is V_i-determined, with reach up to the
 PSR — many GP spacings. The worker confirms it can think of nothing
 edge-per-Moment, and notes the registered corpus already said so:
 `master_glossary.md` registers PSR = Planck Sphere Radius = "the
@@ -41,7 +41,7 @@ the founder caught it, and the withdrawal is recorded here.
 
 **(b) is effectively answered: the relay class is SSV-guided
 transport with GP-quantized landing.** Per Moment, a CP moves a
-computed distance ("appropriate for its SSV_net") and lands ON a GP.
+computed distance ("appropriate for its V_i") and lands ON a GP.
 The between-Moment memory is carried by the Sea's SSV state, not by
 a stored field-derivative at a Grid Point — so mechanically the step
 is hop-like at PSR scale, while the SSV field supplies the wave-like
@@ -52,7 +52,7 @@ stands unchanged** — they were exhibited to prove that the data
 class as construed at 2951 underdetermines ξ₂, and it did.
 
 **"We don't have many rules."** Registered as the honest boundary of
-the founder picture: displacement rule (SSV_net-appropriate,
+the founder picture: displacement rule (V_i-appropriate,
 GP-landing), perception rule (PSR from SSV_abs), and little else is
 axiomatically fixed. The re-entry derivation may use exactly this
 and the registered glossary structure — nothing more.

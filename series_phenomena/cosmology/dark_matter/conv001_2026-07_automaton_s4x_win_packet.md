@@ -9,7 +9,7 @@ data/x3x4/. Questions W1–W5 at the end.**
 ## Banked results (adjudication objects)
 
 1. **EMERGENT COULOMB, twice.** The founder's Moment rule
-   (synchronous GP relay; d = (|SSV_net|/SSV_abs)·PSR) produces
+   (synchronous GP relay; d = (|V_i|/SSV_abs)·PSR) produces
    inverse-square electrostatics with NO field law as input: A1
    idealized shell (V-1R 3/3, ratio-flat ±2.9%, Δp ≤ 0.022) and A2
    lattice-native directed 12-neighbor hop relay (G1 3/3, ±0.4%

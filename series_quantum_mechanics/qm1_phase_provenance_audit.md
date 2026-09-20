@@ -136,7 +136,7 @@ C-8) the founder has explicitly denied.
   grounding at the DP-displacement pattern level: (i) substrate
   origin of the complex site state (what Sea-polarization variable
   is φ_i — candidate: local DP polarization orientation registered
-  in SSV_net's directional content; physics-picture input from the
+  in V_i's directional content; physics-picture input from the
   founder welcome per PD-006, not required to open); (ii) origin of
   unitarity (reversible conserved PCD displacement → −i, replacing
   the retired per-bit accumulation argument); (iii) revise

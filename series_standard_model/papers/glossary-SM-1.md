@@ -139,7 +139,7 @@ parameter — it is a consequence of the cage geometry proved in SS-1.
 
 **Polarity (p)**
 The charge state of a CP: p = +1 or p = −1. Polarity is the single
-binary degree of freedom of a CP. Opposite polarities attract (the SSV_net
+binary degree of freedom of a CP. Opposite polarities attract (the V_i
 gradient points toward the opposite polarity); like polarities repel.
 In SM-1, polarity is what drives both the assembly of cages (central
 and compensating CPs must be opposite-polarity) and the force law
@@ -149,10 +149,10 @@ only a W-bracelet interaction (EW sector) can change it.
 
 Note on CP co-occupation (30 March 2026): the CP Exclusion Postulate
 (two CPs cannot occupy the same Grid Point) is no longer needed as an
-independent axiom. For same-polarity pairs, repulsive SSV_net prevents
+independent axiom. For same-polarity pairs, repulsive V_i prevents
 approach to the same Grid Point. For opposite-polarity pairs, co-occupation
 (superimposition) is a transient one-Absolute-Moment state: at
-superimposition, intra-pair SSV_net direction is undefined; bulk SSV_net
+superimposition, intra-pair V_i direction is undefined; bulk V_i
 drives opposite displacements on the following Moment. Persistent
 co-occupation is impossible in both cases without any additional postulate.
 See Theorem T-CPP-1 in propositions.md.
@@ -182,32 +182,32 @@ polarisation propagates outward as the SSV field. Two physically
 distinct quantities arise from the SSV field and must be carefully
 distinguished (30 March 2026 clarification):
 
-**SSV_net (directional SSV field)**
+**V_i (directional SSV field)**
 The vector sum of all SSV contributions at a Grid Point from all CPs
-within their PSR. SSV_net has both magnitude and direction. It governs
+within their PSR. V_i has both magnitude and direction. It governs
 which Grid Point a CP moves to next — a CP moves toward the adjacent
-Grid Point with the highest SSV_net gradient. SSV_net is what drives
+Grid Point with the highest V_i gradient. V_i is what drives
 the ZBW oscillation to reverse: when A(−) rebounds from B(+), it is
-because the SSV_net at the superimposition Grid Point (now from the
+because the V_i at the superimposition Grid Point (now from the
 bulk Dipole Sea, not from B) points away from B's original position.
 
-    SSV_net = Σ SSV₀ · p · t · f(type) · r̂ / r²   [Eq. 1 of SM-1]
+    V_i = Σ SSV₀ · p · t · f(type) · r̂ / r²   [Eq. 1 of SM-1]
 
 Key property: at the cage centre (central CP surrounded by four
-tetrahedral cage CPs), SSV_net from the cage = 0 exactly (T_d symmetry
+tetrahedral cage CPs), V_i from the cage = 0 exactly (T_d symmetry
 cancels all contributions). The central CP sits in a force-free pocket
-governed entirely by external SSV_net fields. This is why electrons
+governed entirely by external V_i fields. This is why electrons
 are mobile — their cage provides no restoring force on the central CP's
 absolute position.
 
 Key property: at Grid Point superimposition of an opposite-polarity
-pair, SSV_net from the intra-pair interaction = 0 (direction undefined).
-The bulk SSV_net governs both CPs, driving them apart in opposite
+pair, V_i from the intra-pair interaction = 0 (direction undefined).
+The bulk V_i governs both CPs, driving them apart in opposite
 directions.
 
 **SSV_abs (scalar SSV magnitude)**
 The scalar magnitude of the total SSV field at a Grid Point —
-|SSV_net| combined with any isotropic stress contributions. SSV_abs
+|V_i| combined with any isotropic stress contributions. SSV_abs
 has no direction; it is a local energy density. High SSV_abs means
 the Dipole Sea is strongly stressed at that location. SSV_abs governs
 PSR compression:
@@ -221,15 +221,15 @@ contraction and gravitational time dilation in SR-1.
 
 Critical distinction: at Grid Point superimposition of an opposite-
 polarity pair, SSV_abs is near its maximum (intra-pair field strongest)
-while SSV_net from the intra-pair interaction is exactly zero. This
-demonstrates that SSV_abs and SSV_net are physically independent
+while V_i from the intra-pair interaction is exactly zero. This
+demonstrates that SSV_abs and V_i are physically independent
 quantities — one can be maximised while the other vanishes at the
 same Grid Point.
 
 Summary of roles:
-- SSV_net → determines CP displacement direction → governs dynamics
+- V_i → determines CP displacement direction → governs dynamics
 - SSV_abs → determines PSR compression → governs local metric
-- SM-1 is primarily an SSV_net story (force law, cage stability)
+- SM-1 is primarily an V_i story (force law, cage stability)
 - SR-1 is primarily an SSV_abs story (PSR compression = Lorentz effects)
 - Both operate simultaneously in all physical processes
 
@@ -432,10 +432,10 @@ carries exactly one orbital ZBW DP.
 
 The ZBW oscillation is mechanical, not postulated (30 March 2026
 clarification): the orbital DP approaches the central CP under
-monotonically increasing SSV_net attraction — there is no reversal of
-the attractive SSV_net before superimposition. At superimposition (both
-at the same Grid Point), the intra-pair SSV_net direction is undefined;
-the bulk SSV_net drives them apart on the next Absolute Moment. This
+monotonically increasing V_i attraction — there is no reversal of
+the attractive V_i before superimposition. At superimposition (both
+at the same Grid Point), the intra-pair V_i direction is undefined;
+the bulk V_i drives them apart on the next Absolute Moment. This
 is Theorem T-CPP-1 and Corollary C-CPP-1a in propositions.md. The
 oscillation turning point is at Grid Point superimposition, not before.
 

@@ -14,11 +14,11 @@ The founder's framing is correct, and more so than it may have felt.
 ## §2 So why doesn't it collapse? T-1 answers it (verify T4, T5)
 This is the sharp part, and the answer was already on file without having been stated this way.
 
-**In CPP, motion is driven by SSV_net, not SSV_abs** (A1′/AP-3). Saturated SSV_abs puts the PSR at its floor — that is **time dilation, not infall**. What collapse requires is a **gradient**: SSV_net ≠ 0, pointing inward.
+**In CPP, motion is driven by V_i, not SSV_abs** (A1′/AP-3). Saturated SSV_abs puts the PSR at its floor — that is **time dilation, not infall**. What collapse requires is a **gradient**: V_i ≠ 0, pointing inward.
 
 And T-1 supplies exactly that:
 
-> **The twelve neighbour vectors cancel exactly**, so **SSV_net = 0** in a homogeneous state (3820, verified as an identity).
+> **The twelve neighbour vectors cancel exactly**, so **V_i = 0** in a homogeneous state (3820, verified as an identity).
 
 > **A black hole is saturated AND gradient-bearing. The ignition state is saturated and GRADIENT-FREE.**
 
@@ -46,7 +46,7 @@ The intuition is half-right and the half that fails is the important half.
 
 ## §5 Standing
 - **The ignition is a black-hole-like state on both criteria** — GR (84 orders inside R_s) and CPP's own (SSV_abs saturated) — but saturated **by breadth**, not depth.
-- **It does not collapse because it is gradient-free:** SSV_net = 0 by T-1's exact cancellation. **Saturation is time dilation; collapse needs a gradient.** T-1's fourth load-bearing role.
+- **It does not collapse because it is gradient-free:** V_i = 0 by T-1's exact cancellation. **Saturation is time dilation; collapse needs a gradient.** T-1's fourth load-bearing role.
 - **The escape is entropic, not kinetic** — the KE drives ≤0.45 e-folds and decelerates (3813); S-HENGINE-HELD is the driver. **There is nothing to escape from.**
 - **The fractal cascade does not give the CMB:** scale-free but non-Gaussian by 10²–10³; **processing, not generation**. The amplitude closure is unchanged.
 - No new physics derived; both answers assemble existing results. PRED-C-96, T-1, T-2, the amplitude closure: unaffected.

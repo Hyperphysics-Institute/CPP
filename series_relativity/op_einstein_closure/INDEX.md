@@ -11,7 +11,7 @@
 | **(b)** | excess-vs-absolute \|SSV\| sourcing — cheapest kill | **1107: cheapest kill does NOT fire.** Source (b1) is pure-excess (F→0 at Δ\|SSV\|=0); uniform PSR_eff background is flat (b2, R=2(−ΩΩ''+Ω'²)/Ω⁴→0 const). Inert-Sea holds as c08 eq is written. |
 | **(b′)** | rigorize the shell-sum reduction | **1108: conditionally CLOSED at leading order.** Neighbor shell = 600-cell 12-edge icosahedron = spherical 5-design: monopole Σv̂=0 exactly (absolute-\|SSV\| term annihilated), quadrupole isotropic exactly (operator = Laplacian); first anisotropy at deg 6. ⇒ shell-sum → ∇²(Δ\|SSV\|), no absolute term. Conditional on c05 (vector response) + c07 (12-edge shell). |
 | **(cosmo)** | uniform-Sea cosmological/Friedmann mode | HANDOFF to SR-5 Step A/C (horizon mechanism); not a local-field-equation question. |
-| **(a)** | nonlinear GR-recovery: F → R_μν − ½g_μν R | **OPEN — gap pinned (1109 + 1110).** 1109: scalar+vector LSP sources zero helicity-±2 (+,×) GW modes. 1110: audited companion 7 §6 — it ASSERTS the GR wave eq `□h̄=−16πG T/c⁴` + 'TT gauge' but its metric map sources `h_ij` from the gradient of the vector `SSV_net` (no helicity-2; TT is gauge-invariant so 'TT gauge' can't supply it); c07's own open-problems list concedes full tensor recovery unproven. ⇒ helicity-2 modes ASSERTED not derived; **gap = no spin-2 d.o.f. in the LSP**. Fork: extend LSP with a spin-2 lattice mode (the fix) **or** standing tension with observed tensor GW polarizations. NOT a falsification. |
+| **(a)** | nonlinear GR-recovery: F → R_μν − ½g_μν R | **OPEN — gap pinned (1109 + 1110).** 1109: scalar+vector LSP sources zero helicity-±2 (+,×) GW modes. 1110: audited companion 7 §6 — it ASSERTS the GR wave eq `□h̄=−16πG T/c⁴` + 'TT gauge' but its metric map sources `h_ij` from the gradient of the vector `V_i` (no helicity-2; TT is gauge-invariant so 'TT gauge' can't supply it); c07's own open-problems list concedes full tensor recovery unproven. ⇒ helicity-2 modes ASSERTED not derived; **gap = no spin-2 d.o.f. in the LSP**. Fork: extend LSP with a spin-2 lattice mode (the fix) **or** standing tension with observed tensor GW polarizations. NOT a falsification. |
 
 ## Patch log
 - **1107** — Step (b): excess-vs-absolute check (doc + verify script + reasoning). New arc folder.
@@ -39,7 +39,7 @@
   but a postulate). (a) closure localizes to one question: does the GP carry a quadrupole d.o.f.? (a)
   NOT closed. NO VERDICT MOVED.
 - **1114** — spin-2 Step 3 (foundational audit): CPP's fundamental flows carry ONLY scalar+vector
-  (CP→GP CSR: type/polarity/emergent-vector-spin; GP→GP: |SSV|_abs+SSV_net; GP→CP: displacement). No
+  (CP→GP CSR: type/polarity/emergent-vector-spin; GP→GP: |SSV|_abs+V_i; GP→CP: displacement). No
   rank-2 d.o.f. anywhere; candidates (DP-sea polarization=vector, CP spin=emergent vector, H_g=slot
   but unexcited) all fail; corpus mute (only matter-side nuclear quadrupoles). VERDICT: closing (a)
   requires a NEW AXIOM (rank-2 in one of the 3 flows) — see 1115, which adds the emergent option D.

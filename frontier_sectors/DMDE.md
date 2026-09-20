@@ -148,9 +148,9 @@ depletion reproduces −1.023.
 ### 3405 — ZBW ruling registered; the two rates mapped; "produce 1.023" declined with a result
 
 **FOUNDER RULING: ZBW is NOT sub-Moment.** Every CP moves once per
-Moment via SSV_net in the PCD cycle; sub-Moment structure is only
+Moment via V_i in the PCD cycle; sub-Moment structure is only
 POSITIONING (DI-bit GP_origin→GP_PSR transit; CP displacement
-GP_origin→GP_SSV_net, edge to edge). **This CLOSES `phaseD_saltation_prereg.md`
+GP_origin→GP_V_i, edge to edge). **This CLOSES `phaseD_saltation_prereg.md`
 §6's first alternative ("sub-Moment saltation, invisible at this
 sampling") — the Moment cadence is the substrate's own cadence, so
 D-SALT-1's INTERMITTENT result is STRONGER than when issued.**
@@ -334,7 +334,7 @@ offered, not imposed: when an argument in sector X leans on an axiom
 developed in sector Y, quote the DEFINING DOCUMENT, not the registry
 line.**
 
-**FOUNDER'S SSV_net POINT:** displacement sums exceeding PSR give
+**FOUNDER'S V_i POINT:** displacement sums exceeding PSR give
 tunneling/Schrödinger while the bulk average stays Newtonian and
 relativistic — **a THRESHOLD mechanism inside A3′-causal propagation,
 fully compatible with the cancellation-completion route and NOT with

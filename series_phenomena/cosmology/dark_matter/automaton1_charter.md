@@ -1,10 +1,10 @@
-# OPEN-DM-AUTOMATON-1 CHARTER (FROZEN) — the PR4 discriminator, chartered on the founder's confirming ruling (21 July 2026): **v/c = |SSV_net| / SSV_abs — CONFIRMED** — completing the simulable specification (commitments 14–18 + the SR-corpus magnitude law d = (v/c)·PSR_eff + synchronous semantics + periodic boundaries)
+# OPEN-DM-AUTOMATON-1 CHARTER (FROZEN) — the PR4 discriminator, chartered on the founder's confirming ruling (21 July 2026): **v/c = |V_i| / SSV_abs — CONFIRMED** — completing the simulable specification (commitments 14–18 + the SR-corpus magnitude law d = (v/c)·PSR_eff + synchronous semantics + periodic boundaries)
 
 **Patch 2732, 21 July 2026. The founder's ruling, verbatim: "I accept
 your proposed resolution of v/c." The candidate identification of
 2729 §2 is thereby CONSUMED as founder-confirmed physics: the
-per-Moment displacement of a CP is d = (|SSV_net|/SSV_abs) · PSR_eff
-along SSV_net's direction — the speed of light as the
+per-Moment displacement of a CP is d = (|V_i|/SSV_abs) · PSR_eff
+along V_i's direction — the speed of light as the
 perfect-alignment limit. Reasoning: `reasoning/2732.md`.**
 
 ## The frozen specification (assembly of record)
@@ -12,8 +12,8 @@ perfect-alignment limit. Reasoning: `reasoning/2732.md`.**
 Update rule per Moment (synchronous: all quantities of Moment t
 computed from Moment t−1 state): each GP computes SSV_abs → its PSR
 shell; transmits DI-bits (vector, type e/q, polarity ±) to that
-shell; each GP sums all arriving bits → SSV_net, SSV_abs; each CP
-displaces d = (|SSV_net|/SSV_abs)·PSR_eff along SSV_net (zero net →
+shell; each GP sums all arriving bits → V_i, SSV_abs; each CP
+displaces d = (|V_i|/SSV_abs)·PSR_eff along V_i (zero net →
 no motion; no tie mechanism); carriers repurposed (cost-free
 rewrite, commitment 18). PR4 runs on PERIODIC boundaries (uniform
 Sea as torus; 2729 §3 resolution); shell radii discretized to

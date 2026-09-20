@@ -37,17 +37,17 @@ not altered here. The 79.5% is untouchable.
 ## §1 — Founder commitments (C19–C30, continuing the A1 series C14–C18; each anchored to the founder's session wording)
 
 **C19 (One law, no branches).** The CP always displaces in the
-direction of SSV_net. The "gradient-survey branch" at neutrality is
+direction of V_i. The "gradient-survey branch" at neutrality is
 RETRACTED by the founder: "Stating that the CP moves in the
 direction of the greatest gradient is merely a restatement that the
-CP moves in the direction of the [SSV]_net summation… The CP always
-moves in the direction of the SSV_net." Steepest-gradient language
+CP moves in the direction of the V_i summation… The CP always
+moves in the direction of the V_i." Steepest-gradient language
 survives only as an interpretive correlate, never as a second rule.
 
 **C20 (Displacement magnitude law retained).** v/c =
-|SSV_net|/SSV_abs remains the computation and the normalization
+|V_i|/SSV_abs remains the computation and the normalization
 (founder: "Yes, I expected v/c to be the computation and
-|SSV_net|/SSV_abs to be the normalization"), with displacement
+|V_i|/SSV_abs to be the normalization"), with displacement
 d = (v/c) · PSR_eff per the A1 charter.
 
 **C21 (DI-bit content is closed).** DI-bits carry: source type
@@ -104,7 +104,7 @@ balance between the two channels is registered as PREDICTION
 P-A2-3, not assumed.
 
 **C25 (Superposition exit is a consequence, not a rule).** At
-superposition the pair's mutual field cancels; each CP's SSV_net is
+superposition the pair's mutual field cancels; each CP's V_i is
 then whatever the environment supplies; being opposite polarities
 they read the same field with opposite signs and displace in
 opposite directions ("both perceive the local environment and,
@@ -131,7 +131,7 @@ density in the automaton (D-A2-5).
 
 **C27 (Partner switching: the rogue-wave engine).** Bond
 dissociation occurs when a rogue-wave superposition of near+far
-DI-bits lands on a bonded CP's GP with sufficient SSV_net to
+DI-bits lands on a bonded CP's GP with sufficient V_i to
 displace it beyond bonding distance. The cascade arithmetic is
 committed as stated: one dissociation yields two free CPs; each
 free CP that captures a bonded partner liberates exactly one

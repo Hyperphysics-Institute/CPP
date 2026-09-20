@@ -18,7 +18,7 @@ physical-picture session (Patch 3255) answered all five charter
 questions the same day and corrected the worker on two of them:
 conservation is of the conscious points plus the equal-redistribution
 invariant, not energy-flux bookkeeping; and the source is the SSV_abs
-excess of volume-compressed DP aggregates, with SSV_net staying in the
+excess of volume-compressed DP aggregates, with V_i staying in the
 broadcast as transmission rather than source. Both redirections shaped
 the derivation that followed, which is the point of registering
 expectations first.

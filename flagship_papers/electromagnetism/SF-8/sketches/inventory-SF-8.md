@@ -28,7 +28,7 @@ thing that gets silently mis-cited at draft time.**
 ## §1 — RESULT 1: EMERGENT INVERSE-SQUARE ELECTROSTATICS (the lead result)
 
 **Claim.** The founder's Moment rule — synchronous GP relay of DI-bits
-carrying charge, polarity and origin only; d = (|SSV_net|/SSV_abs)·PSR —
+carrying charge, polarity and origin only; d = (|V_i|/SSV_abs)·PSR —
 produces Coulomb's law with **no field law as input**, under **two
 independent relay implementations**.
 

@@ -3,7 +3,7 @@
 **Patch 3896, Session 207, 11 Sep 2026. Lane: EU.** Discharges the correlation-length half of C-5's amplitude debt. Verify `scripts/3896_correlation_length.py` (10/10). Reasoning `reasoning/3896_correlation_length.md`. Nothing adopted; **C-5 still not reported as working**; PRED-C-96 untouched; 3710 not retired.
 
 ## §1 The bare range is fixed by the protocol, not estimated (verify T1, T2)
-The attraction between SCPs is mediated by **arriving DI-bits** — an SCP's pull on another is SSV_net, built from what reaches it. And AP-4/AP-4c give the DI-bit a **hard reach**: deposit once at the PSR shell, near field by the hop cascade within it.
+The attraction between SCPs is mediated by **arriving DI-bits** — an SCP's pull on another is V_i, built from what reaches it. And AP-4/AP-4c give the DI-bit a **hard reach**: deposit once at the PSR shell, near field by the hop cascade within it.
 
 > **The bare correlation length of the affinity is 1 PSR.** That is a protocol fact, not an estimate.
 

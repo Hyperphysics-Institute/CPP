@@ -87,7 +87,7 @@ enters the ledger. No branch table, no band contact, no second pass.
 > components will include, a) distant Signals b) nearby signals which
 > include 1) the local CP signals associated with the local DPs, 2)
 > the DP-arc signals associated with its own motion; the sum of all
-> of these will be an SSV_net summation that will move each CP each
+> of these will be an V_i summation that will move each CP each
 > Moment. In general, regarding the arc of its track, it will be
 > accelerated by the pull of its environment, gaining velocity.
 > Because the GP_origin communicates only with the PSR shell, and
@@ -99,7 +99,7 @@ enters the ledger. No branch table, no band contact, no second pass.
 > overwhelmed by the signal of the CP, which had only a Moment before
 > been dominant and caused the superimposition.) This delay in the
 > PSR shell of the other CP of the DP pair allows time for the
-> SSV_net of the local environment to be the predominant signal, and
+> V_i of the local environment to be the predominant signal, and
 > to accelerate the CP, even though the obviously larger signal of
 > the now-separated other CP component of the DP would clearly
 > predominate if its influence were felt immediately. So, in summary,
@@ -118,18 +118,18 @@ enters the ledger. No branch table, no band contact, no second pass.
 **FQ-3.3 (the dwell):**
 
 > I think it would only be a Moment, as the next Moment they would be
-> subject to the GP's instructions to move according to the SSV_net
+> subject to the GP's instructions to move according to the V_i
 > of that next Moment, which would be in the opposite direction,
 > because of them being opposite-polarity CPs and responding
-> oppositely to the same SSV_net GP instruction.
+> oppositely to the same V_i GP instruction.
 
 **FQ-3.4 (the swap restart):**
 
-> When partners switch, they move according to the SSV_net of the
+> When partners switch, they move according to the V_i of the
 > environment. There is no set size; there is always a random
-> distribution of external (outside the superposition) SSV_net. So,
+> distribution of external (outside the superposition) V_i. So,
 > in the sense that the new partner will be a random value of the
-> SSV_net at every Moment, whose randomness boundaries are shaped by
+> V_i at every Moment, whose randomness boundaries are shaped by
 > the possibilities of a near-distance environment with other CPs and
 > DPs, and summation of the far field. The same random environment
 > will produce the same random distribution of forces and the same
@@ -142,7 +142,7 @@ enters the ledger. No branch table, no band contact, no second pass.
   BECAUSE influence is retarded — GP_origin communicates only with
   its PSR shell, and re-radiation takes time, so the departed
   partner's (nearer, stronger) signal reaches the other member only
-  after a delay during which the local environment's SSV_net
+  after a delay during which the local environment's V_i
   dominates and ACCELERATES the members apart, establishing DP-arc
   inertia that the partner's signal must then cancel and reverse.
   Instantaneous influence would re-collapse the pair immediately (the
@@ -150,7 +150,7 @@ enters the ledger. No branch table, no band contact, no second pass.
   superposition → convex accelerating outbound (environment-driven)
   → retarded restoring dominance → decelerate, turn, return.
 - **R-DWELL-1 (from FQ-3.3):** superposition lasts exactly ONE Moment
-  — the next Moment's SSV_net instruction moves opposite-polarity
+  — the next Moment's V_i instruction moves opposite-polarity
   members oppositely. No apogee dwell was asserted.
 - **R-SWAP-EQUIV (from FQ-3.4):** swap restarts and faithful restarts
   draw from the SAME environmental randomness ⇒ identical amplitude
@@ -204,11 +204,11 @@ consonance, not by the factor's direction.
 
 **FQ-4.1 (what sets d):**
 
-> The d is set by how much SSV_net is pulling the CP radially away
-> from superimposition. Then the evolution of SSV_net with
+> The d is set by how much V_i is pulling the CP radially away
+> from superimposition. Then the evolution of V_i with
 > time/distance/at each Moment will determine how much
 > inertia/KE/momentum it builds up, and how the counterbalancing
-> SSV_net contribution of the CP associated with its faithful CP of
+> V_i contribution of the CP associated with its faithful CP of
 > the DP pair. The d is always due the sum of the forces and when the
 > force turns the outward velocity to perigee/zero before returning
 > to the faithful CP and it DP pairing and superposition.
@@ -227,7 +227,7 @@ consonance, not by the factor's direction.
 
 - **R-APOGEE-DYNAMIC:** the excursion apogee is a PURE FORCE-BALANCE
   outcome — no geometric shell condition anywhere. The outbound leg
-  is driven by the environment's SSV_net pull, builds DP-arc
+  is driven by the environment's V_i pull, builds DP-arc
   inertia, and ends at the Moment the (retarded) faithful-partner
   counterforce turns the outward velocity to zero; return and
   re-superposition follow. The nn-vs-next-shell dichotomy of the
@@ -257,7 +257,7 @@ consonance, not by the factor's direction.
 The founder's answers make spacing, reach, and η_z three faces of
 ONE dynamical problem, which suggests the arc's deepest possible
 closure. The loop: (1) the mean inter-DP spacing d_s sets the
-statistics of the environmental SSV_net a member feels at
+statistics of the environmental V_i a member feels at
 superposition-exit; (2) that field, through R-STEP-SSV displacement
 and R-INERTIA-ARC persistence, with the faithful partner's influence
 retarded per R-ZBW-DELAY, determines the apogee distribution and the
@@ -267,7 +267,7 @@ pairs at the stability boundary against partner-poaching. A
 self-consistent triple (d_s, apogee, η_z) with NO free parameter:
 every input is a registered ruling. Deliverable: a discrete PCD
 simulation implementing exactly the ruled dynamics (unit charges,
-1/r² DI-bit influence at unit propagation speed, SSV_net-proportional
+1/r² DI-bit influence at unit propagation speed, V_i-proportional
 displacement, arc inertia, retarded partner force, environmental
 field from the DP array itself), scanned in d_s for the fidelity
 boundary. Outputs: the boundary d_s*, the apogee/d_s ratio, and

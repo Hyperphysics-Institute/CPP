@@ -67,7 +67,7 @@ was armed to do.
 
 Recorded for the panel, reopenable ONLY by founder ruling or panel
 adjudication — never by bracket-widening: (i) **D-STIFF-DYN** — the
-strong-pair excursion under unbounded SSV_net (R-SSV-NOEXCEPT); the
+strong-pair excursion under unbounded V_i (R-SSV-NOEXCEPT); the
 s input's regularization is ruled non-physical and the true s is
 underived — the single input whose physical value is least
 constrained; (ii) **the boundary location pass** (d_s ∈ {2, 3, 4},

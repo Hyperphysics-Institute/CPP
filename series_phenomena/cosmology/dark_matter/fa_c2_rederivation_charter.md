@@ -32,7 +32,7 @@ subsequent dispatch.
 
 **Fence F3 (ontology inputs).** The physical inputs are the 2767
 ruling's, verbatim: the r < a core is occupied by responding
-both-charge DP-Sea medium; response is to SSV_net at each GP every
+both-charge DP-Sea medium; response is to V_i at each GP every
 Moment; the only exclusion is point-like same-GP self-superposition;
 near-core, adjacent charges' oppositely-signed radial polarization
 gradients SUPERPOSE under the Gauss's-law enclosed-charge

@@ -12,7 +12,7 @@ cites both. No computation here; no value of any open quantity.**
 constant velocity v, the fore-volume arc-charging momentum cost and
 the aft-volume arc-discharging momentum return balance exactly, with
 the per-Moment slab throughput (width = v per Moment) sustaining the
-SSV_net differential — zero net energy drawn while coasting.
+V_i differential — zero net energy drawn while coasting.
 **T-2 (Inertia as establishment cost):** changing v requires net
 work equal to re-configuring the co-moving arc pattern; derive the
 cost's proportionality structure (the mass-energy link at the

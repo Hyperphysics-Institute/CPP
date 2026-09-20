@@ -7,10 +7,10 @@ wall. First result below. NOT a bound; a structural suppression.**
 ## §1 — The result
 
 Under C19/C20 both CPs of a bonded pair displace along their own
-perceived SSV_net, with polarity sign:
+perceived V_i, with polarity sign:
 
-- **CP⁺** displaces along **+SSV_net** at its location;
-- **CP⁻** displaces along **−SSV_net** at its location.
+- **CP⁺** displaces along **+V_i** at its location;
+- **CP⁻** displaces along **−V_i** at its location.
 
 **If both CPs perceive the SAME field E, the pair's CENTRE DOES NOT
 MOVE.** The two displacements are equal and opposite; only the
@@ -25,7 +25,7 @@ with L_field the scale on which the external field varies.
 ## §2 — What this fixes, including a correction to Patch 2851
 
 **The ambient bound 1B needs is a DIFFERENT and SMALLER quantity than
-CPP's primitive ratio.** |SSV_net|/SSV_abs is the **CP-level** speed —
+CPP's primitive ratio.** |V_i|/SSV_abs is the **CP-level** speed —
 what an individual CP does, dominated by its own partner. The bound
 requires the **centre-level** speed, suppressed relative to it by
 d_DP/L_field.

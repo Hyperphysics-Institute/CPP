@@ -42,7 +42,7 @@ equivalence is bounded at op:einstein, which remains open.
 **Q5. Where does the factor of two in light deflection come from?**
 From the two-component LSP broadcast. The scalar channel |SSV|_abs
 sources clock rate (g_tt) and gives 0.875″ at the solar limb — the
-Newtonian answer. The vector channel **SSV**_net sources the spatial
+Newtonian answer. The vector channel **V_i** sources the spatial
 metric (g_ij) and contributes equally in the weak field, giving 1.75″.
 This is the arc's cleanest discriminant against scalar-only substrate
 theories, which cannot reach the measured value without adding

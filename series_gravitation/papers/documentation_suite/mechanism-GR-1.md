@@ -28,7 +28,7 @@ step 3's constitutive form.
 5. **The vector channel supplies the factor of two.** A scalar stress
    field slows clocks (sources g_tt) but has no direction in it, so it
    cannot curve space; scalar-only gravity deflects starlight by 0.875″,
-   half the measured value. The LSP's second component, **SSV**_net,
+   half the measured value. The LSP's second component, **V_i**,
    sources g_ij; in the weak field the two contributions to null
    deflection are equal, giving 1.75″. This is the arc's sharpest
    internal discriminant — it separates CPP from any scalar-only

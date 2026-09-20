@@ -226,10 +226,10 @@ future companions.
 
 Throughout, we use the notation of companion~7: the Lattice State
 Packet (LSP) is the four-component broadcast packet
-$(x_{\rm GP},\, t_{\rm abs},\, |\SSV|_{\rm abs},\, \SSV_{\rm net})$
+$(x_{\rm GP},\, t_{\rm abs},\, |\SSV|_{\rm abs},\, V_i)$
 emitted by each Grid Point each Absolute Moment tick.  The metric
 mapping is $|\SSV|_{\rm abs} \to g_{tt}$ and
-$\SSV_{\rm net} \to g_{ij}$, forced by the SR limit (companion~7,
+$V_i \to g_{ij}$, forced by the SR limit (companion~7,
 Proposition~2.1).
 
 %======================================================================
@@ -335,7 +335,7 @@ Eq.~\eqref{eq:psr_iso}:
 \end{equation}
 This is the isotropic Schwarzschild $g_{tt}$~\cite{wald1984}.
 The spatial components $g_{ij} = (1+\vrho)^4\delta_{ij}$ are the
-SSV-net contribution~\cite{c7}, giving the known isotropic
+V_i contribution~\cite{c7}, giving the known isotropic
 Schwarzschild spatial metric~\cite{misner1973}.  The full line
 element~\eqref{eq:isotropic_schw} is therefore exact.
 \end{proof}
@@ -516,7 +516,7 @@ Grid Point'').  That is the pre-demotion \emph{postulate}: on 13~April
 2026 it was demoted to THEO-1 (CP Non-Persistent Co-Occupation,
 \texttt{theorem-registry.md}), under which co-occupation is not
 forbidden but lasts one Absolute Moment, and same-polarity co-occupation
-can be forced by an external $\SSV_{\rm net}$ (founder rulings
+can be forced by an external $V_i$ (founder rulings
 R-EXCL-RETIRED, 1~September, and R-COOCCUPATION-FORCED, 2~September
 2026; \texttt{axiom-registry.md} \S``Retired rules'').  THEO-1 constrains
 co-occupation, not the PSR, and so delivers no floor.  The cited source,
@@ -816,12 +816,12 @@ remnant mass and spectrum is deferred (Open Problem~\ref{op:hawking}).
 \label{subsec:gw}
 
 The LSP is a four-component packet:
-$(x_{\rm GP},\, t_{\rm abs},\, |\SSV|_{\rm abs},\, \SSV_{\rm net})$.
+$(x_{\rm GP},\, t_{\rm abs},\, |\SSV|_{\rm abs},\, V_i)$.
 Gravitational waves are LSP perturbations propagating at $c$
 (companion~7, §6).  The GR gravitational wave has two tensor
 polarisation modes ($+$ and $\times$).  The additional LSP components
 permit, in principle, scalar ($|\SSV|_{\rm abs}$ perturbation) and
-vector ($\SSV_{\rm net}$ longitudinal) modes.
+vector ($V_i$ longitudinal) modes.
 
 In the weak-field limit these modes decouple: the tensor modes
 reproduce GR exactly and the scalar/vector modes are suppressed by
@@ -862,7 +862,7 @@ source GP broadcasts an azimuthal bias to its 12 nearest neighbours
 (the 12-edge selection rule of companion~7~\cite{c7}).  The net
 azimuthal SSV at distance $r$ and colatitude $\theta$ is:
 \begin{equation}
-  (\SSV_{\rm net})_\phi \;=\; \frac{J\sin^2\theta}{r^3}
+  (V_i)_\phi \;=\; \frac{J\sin^2\theta}{r^3}
   \cdot \xi_{\rm lattice},
   \label{eq:kerr_vector}
 \end{equation}
@@ -871,7 +871,7 @@ where $\xi_{\rm lattice}$ is the lattice projection factor from the
 electromagnetic case of companion~2~\cite{c2}).  The metric cross
 term is sourced by this azimuthal component via the LSP mapping:
 \begin{equation}
-  g_{t\phi} \;=\; -2k\,(\SSV_{\rm net})_\phi \cdot r\sin^2\theta
+  g_{t\phi} \;=\; -2k\,(V_i)_\phi \cdot r\sin^2\theta
   \;=\; -\frac{2GJ\sin^2\theta}{c^2 r}.
   \label{eq:gtphi}
 \end{equation}
@@ -885,7 +885,7 @@ The nonlinear PSR reduction applies to the total SSV magnitude:
 \begin{equation}
   |\Delta\SSV|_{\rm total}^2
   \;=\; |\Delta\SSV|_{\rm scalar}^2
-  \;+\; |(\SSV_{\rm net})_\phi|^2.
+  \;+\; |(V_i)_\phi|^2.
   \label{eq:ssv_total}
 \end{equation}
 The scalar component supplies the diagonal metric terms; the azimuthal
@@ -930,7 +930,7 @@ of Open Problem~\ref{op:kerr}.
 \begin{remark}[Verification in limits]
 Three consistency checks hold exactly:
 \begin{enumerate}[noitemsep]
-  \item \textbf{Zero rotation} ($a=0$, $J=0$): $(\SSV_{\rm net})_\phi=0$,
+  \item \textbf{Zero rotation} ($a=0$, $J=0$): $(V_i)_\phi=0$,
     $\Sigma \to r^2$, $\Delta \to r^2-2Mr$, recovering exact
     Schwarzschild (Theorem~\ref{thm:schwarzschild}).
   \item \textbf{Weak-field} ($M/r,\,a/r \ll 1$): expands to the
@@ -963,7 +963,7 @@ postulates:
   \item The \emph{shell-broadcast source} $k\,\Delta|\SSV| = GM/rc^2$
     is from companion~5~\cite{c5}, §3, proved exact.
   \item The \emph{LSP metric mapping} $|\SSV|_{\rm abs} \to g_{tt}$,
-    $\SSV_{\rm net} \to g_{ij}$ is from companion~7~\cite{c7},
+    $V_i \to g_{ij}$ is from companion~7~\cite{c7},
     Proposition~2.1, forced by the SR limit.
   \item The \emph{CP Exclusion Rule} $\PSR_{\rm eff} \geq \lP/2$ is
     from companion~1~\cite{c1}, §2.
@@ -1114,7 +1114,7 @@ postulates:
 
   \item \textbf{Frame-dragging} (Proposition~\ref{prop:kerr}):
     the Kerr $g_{t\phi}$ term arises from the azimuthal
-    $\SSV_{\rm net}$ curl; the Lense--Thirring limit is derived
+    $V_i$ curl; the Lense--Thirring limit is derived
     explicitly and confirmed by Gravity Probe~B.  Full Boyer--Lindquist
     Kerr is consistent with this mechanism; the all-orders derivation
     is Open Problem~\ref{op:kerr}.

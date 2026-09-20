@@ -82,7 +82,7 @@ run together, which is the same conflation 2876 §5 had to separate.**
 And the founder's ruling is stronger than S4's reading allows: **there is
 no self-force in CPP at all.** A mechanism whose engine is a self-force
 measured on the source is therefore not self-evidently the CPP mechanism;
-SSV_net is others' responses re-entering at the CP's location, and whether
+V_i is others' responses re-entering at the CP's location, and whether
 that route yields the same κ is exactly what is unestablished.
 
 ### What S4 is nonetheless right about, and it is worth having
@@ -98,7 +98,7 @@ the statics side of it is sound.
 is hereby scoped to a single question:
 
 > **Is the 2496 toy's F_self expressible as others' responses re-entering
-> as SSV_net at the CP's location?** If yes, F = κa is promoted to a CPP
+> as V_i at the CP's location?** If yes, F = κa is promoted to a CPP
 > substrate-mechanism result with κ already in hand. If no, the toy's
 > dynamical law does not travel and κ survives as a statics result only.
 

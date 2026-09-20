@@ -93,13 +93,13 @@ ask of this one.
 
 ## §3 — The drift ratio, computed directly
 
-Under C19/C20/C25 each CP displaces along its own perceived SSV_net
+Under C19/C20/C25 each CP displaces along its own perceived V_i
 with polarity sign, so
 
 > v_centre ∝ ½|**E**(+) − **E**(−)| , v_CP ∝ E_rms
 > **R_drift ≡ |E(+) − E(−)| / (2·E_rms)**
 
-and by C20, v_CP/c = |SSV_net|/SSV_abs ≤ 1, so **v_centre/c ≤ R_drift**
+and by C20, v_CP/c = |V_i|/SSV_abs ≤ 1, so **v_centre/c ≤ R_drift**
 unconditionally. Screened Coulomb fields, pairs placed at the committed
 density with random centres and orientations, probe pair's own partner
 excluded by construction.

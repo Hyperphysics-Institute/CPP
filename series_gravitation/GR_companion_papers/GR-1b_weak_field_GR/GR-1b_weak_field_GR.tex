@@ -87,12 +87,12 @@ waves, GP Exclusion, Schwarzschild horizon.
 \begin{abstract}
 We derive the \emph{weak-field limit} of general relativity in Conscious
 Point Physics by extending the DI-bit broadcast to include the net SSV
-vector $\mathbf{\SSV}_{\rm net}$ alongside the absolute SSV scalar
+vector $\mathbf{V}$ alongside the absolute SSV scalar
 $|\SSV|_{\rm abs}$.  The Lattice State Packet (LSP) is explicitly
 constructed from the compressive polarization energy $E_{\rm pol} = mc^2$
 of the eDP cloud \citep{abshier2026mass}:
 $|\SSV|_{\rm abs} = E_{\rm pol}/V_0$ sources $g_{tt}$ (time curvature)
-and $\mathbf{\SSV}_{\rm net}$ sources $g_{ij}$ (spatial curvature).
+and $\mathbf{V}$ sources $g_{ij}$ (spatial curvature).
 Together they reproduce the weak-field isotropic Schwarzschild metric with
 no free parameters.  The famous factor-of-two between the Newtonian and GR
 gravitational lensing deflection angles (0.875 vs.\ 1.75~arcsec) is
@@ -229,7 +229,7 @@ directly to Section~\ref{sec:intro}.}
   polarization at a Grid Point, arising from the net alignment of
   Dipole Particles. The scalar magnitude $|\SSV|_{\rm abs}$ governs
   time dilation and the local Planck length. The vector component
-  $\mathbf{SSV}_{\rm net}$ governs spatial curvature and CP
+  $\mathbf{V}$ governs spatial curvature and CP
   displacement direction.
 
 \item[Planck Sphere Radius (PSR):] The effective step size available
@@ -256,11 +256,11 @@ directly to Section~\ref{sec:intro}.}
   Moment:
   \[
     \LSP = \bigl(\mathbf{x}_{\rm GP},\; t_{\rm abs},\;
-    |\SSV|_{\rm abs},\; \mathbf{SSV}_{\rm net}\bigr).
+    |\SSV|_{\rm abs},\; \mathbf{V}\bigr).
   \]
   The scalar $|\SSV|_{\rm abs}$ sources gravitational time dilation
-  ($g_{tt}$); the vector $\mathbf{SSV}_{\rm net}$ sources spatial
-  curvature ($g_{ij}$). In flat space $\mathbf{SSV}_{\rm net}$
+  ($g_{tt}$); the vector $\mathbf{V}$ sources spatial
+  curvature ($g_{ij}$). In flat space $\mathbf{V}$
   averages to zero and all SR results are recovered. The LSP
   supersedes the SR-era DI-bit broadcast by adding the vector
   component needed for general relativity.
@@ -276,7 +276,7 @@ directly to Section~\ref{sec:intro}.}
   at CONV-013; founder-ratified Patch 3032), the DI-bit
   payload is \{origin address, $\mathbf{E}$, $\mathbf{S}$\} — a static
   snapshot imprinted by the origin GP — and the receiver extracts
-  $\SSV_{\rm net} = \mathbf{E}+\mathbf{S}$ and computes
+  $V_i = \mathbf{E}+\mathbf{S}$ and computes
   $|\SSV|_{\rm abs}$ per AP-4b. The LSP's four components read
   accordingly: $(\mathbf{x}_{\rm GP}, t_{\rm abs})$ is AP-4a's origin
   address, and the stress magnitude and direction are the
@@ -342,17 +342,17 @@ equal magnitude \citep{einstein1915}:
 \end{equation}
 The scalar $|\SSV|_{\rm abs}$ accounts for $g_{tt}$ (time dilation)
 but not $g_{rr}$ (spatial curvature).  The net SSV vector
-$\mathbf{\SSV}_{\rm net}$ provides the missing component.
+$\mathbf{V}$ provides the missing component.
 
 The Lattice State Packet carries four components:
 \begin{equation}
   \LSP \;=\; \bigl(\mathbf{x}_{\rm GP},\; t_{\rm abs},\;
-  |\SSV|_{\rm abs},\; \mathbf{\SSV}_{\rm net}\bigr).
+  |\SSV|_{\rm abs},\; \mathbf{V}\bigr).
   \label{eq:LSP}
 \end{equation}
 
 \begin{remark}[Backward compatibility]
-In flat space, $\mathbf{\SSV}_{\rm net}$ averages to zero over the
+In flat space, $\mathbf{V}$ averages to zero over the
 isotropic DP sea.  The LSP reduces to the SR-era scalar-only
 broadcast in flat spacetime \citep{abshier2026sr}, and all SR results
 are recovered unchanged.
@@ -394,9 +394,9 @@ The two physical components of the LSP are:
   |\SSV|_{\rm abs} &\;=\; \frac{E_{\rm pol}}{V_0}
   \;=\; \frac{mc^2}{V_0},
   \label{eq:SSV_abs}\\
-  \mathbf{\SSV}_{\rm net} &\;=\; \sum_{i=1}^{12}
+  \mathbf{V} &\;=\; \sum_{i=1}^{12}
   \hat{\mathbf{e}}_i\,\Delta\SSV_i,
-  \label{eq:SSV_net}
+  \label{eq:V_i}
 \end{align}
 where $E_{\rm pol} = mc^2 = \hbar\nu_C$ is the compressive ZBW
 polarization energy of the eDP cloud \citep[Proposition~4.1]{abshier2026mass},
@@ -428,7 +428,7 @@ The full LSP is:
   mapping to the weak-field metric tensor.
   The scalar component $|\SSV|_{\rm abs} = mc^2/V_0$ (red) sources
   the time-time perturbation $g_{tt}$, encoding gravitational time
-  dilation. The vector component $\mathbf{\SSV}_{\rm net}$ (green)
+  dilation. The vector component $\mathbf{V}$ (green)
   sources the spatial perturbation $g_{rr}$, encoding spatial
   curvature. The address components
   $(\mathbf{x}_{\rm GP}, t_{\rm abs})$ carry no curvature information
@@ -452,13 +452,13 @@ $\mathbf{x}$ is:
   g_{tt}(\mathbf{x}) &\;=\; 1 - k\,\Delta|\SSV|_{\rm abs}(\mathbf{x}),
   \label{eq:gtt}\\
   g_{ij}(\mathbf{x}) &\;=\; \delta_{ij}\bigl(1 +
-    k\,|\nabla\mathbf{\SSV}_{\rm net}|_{ij}(\mathbf{x})\bigr),
+    k\,|\nabla\mathbf{V}|_{ij}(\mathbf{x})\bigr),
   \label{eq:gij}
 \end{align}
 where $k = \lP^3/\EP$ is the CPP coupling constant
 \citep[Eq.~1]{abshier2026sr} and
-$|\nabla\mathbf{\SSV}_{\rm net}|_{ij}$ is the spatial gradient tensor
-of $\mathbf{\SSV}_{\rm net}$.
+$|\nabla\mathbf{V}|_{ij}$ is the spatial gradient tensor
+of $\mathbf{V}$.
 \end{definition}
 
 \begin{remark}[Metric mapping is forced, not postulated]
@@ -477,7 +477,7 @@ both LSP components.
 \label{prop:Schwarzschild}
 For a static spherically symmetric mass $M$, with gravitational SSV
 $\Delta|\SSV|_{\rm abs}(r) = GM/(k\,r\,c^2)$ and
-$|\nabla\mathbf{\SSV}_{\rm net}|_{rr}(r) = GM/(k\,r\,c^2)$
+$|\nabla\mathbf{V}|_{rr}(r) = GM/(k\,r\,c^2)$
 \citep{abshier2026grav}, Eqs.~\eqref{eq:gtt}--\eqref{eq:gij} give:
 \begin{equation}
   g_{tt} \;=\; 1 - \frac{2GM}{rc^2}, \qquad
@@ -515,7 +515,7 @@ In CPP the origin is transparent:
 \begin{itemize}[noitemsep]
   \item $|\SSV|_{\rm abs}$ broadcast $\to$ $g_{tt}$ perturbation
     $\to$ $0.875$~arcsec.
-  \item $\mathbf{\SSV}_{\rm net}$ broadcast $\to$ $g_{rr}$ perturbation
+  \item $\mathbf{V}$ broadcast $\to$ $g_{rr}$ perturbation
     $\to$ additional $0.875$~arcsec.
   \item Total: $1.750$~arcsec, confirming \citet{eddington1920}.
 \end{itemize}
@@ -584,7 +584,7 @@ only $0.875$~arcsec.  The LSP recovers the GR value.
   which the scalar-only ($|\SSV|_{\rm abs}$) CPP framework recovers.
   The breakdown box shows that the two equal contributions ---
   time curvature from $|\SSV|_{\rm abs}$ and spatial curvature
-  from $\mathbf{\SSV}_{\rm net}$ --- each contribute 0.875~arcsec,
+  from $\mathbf{V}$ --- each contribute 0.875~arcsec,
   summing to the Eddington value \citep{eddington1920}.
   This is a retroactive prediction of the LSP structure
   (Remark~\ref{rem:forced}).}
@@ -596,7 +596,7 @@ only $0.875$~arcsec.  The LSP recovers the GR value.
 %======================================================================
 
 At each Absolute Moment tick, a CP selects the 12-edge that maximises
-$\mathbf{e}_k\cdot\mathbf{\SSV}_{\rm net}$
+$\mathbf{e}_k\cdot\mathbf{V}$
 \citep[{\S}3, Eq.~3]{abshier2026am}.  In a gravitational SSV gradient
 this rule directs the CP preferentially toward lower gravitational
 potential --- free fall.
@@ -658,7 +658,7 @@ Gravitational waves in CPP are propagating perturbations of the
 600-cell lattice geometry, sourced by time-varying mass-energy
 quadrupoles.  They are the gravitational analog of photons
 \citep{abshier2026zdc}: a traveling perturbation of the LSP broadcast
-pattern, with both $|\SSV|_{\rm abs}$ and $\mathbf{\SSV}_{\rm net}$
+pattern, with both $|\SSV|_{\rm abs}$ and $\mathbf{V}$
 jointly perturbed in the transverse-traceless gauge.
 
 The linearised wave equation is:
@@ -668,7 +668,7 @@ The linearised wave equation is:
 \end{equation}
 Solutions propagate at $c$, consistent with the LIGO/Virgo/KAGRA
 observations of \citet{abbott2016}.  These observations confirm that
-the $\mathbf{\SSV}_{\rm net}$ component of the LSP propagates at $c$
+the $\mathbf{V}$ component of the LSP propagates at $c$
 and carries energy.
 
 %======================================================================
@@ -721,7 +721,7 @@ has never contained it.  The sentence ``GPs become unavailable as
 destinations for infalling CPs, which are deflected to neighboring
 GPs'' is superseded by the founder's replacement mechanism: a CP
 displaced onto an occupied GP superimposes for one Moment and is moved
-per the local $\SSV_{\rm net}$ the next.  The identification
+per the local $V_i$ the next.  The identification
 $k\,\Delta|\SSV|_{\rm abs} = 1$ at $r = r_s$ in
 Eq.~\eqref{eq:horizon} is superseded by GR-1c Corrigendum~2
 (saturation at isotropic $\bar r = \mu$, areal $9\mu/4$, outside the
@@ -797,7 +797,7 @@ Every element of the GR framework reuses established CPP machinery:
 
 \begin{itemize}[noitemsep]
   \item \emph{LSP}~\eqref{eq:LSP_explicit}: adds
-    $\mathbf{\SSV}_{\rm net}$ to the broadcast; backward compatible
+    $\mathbf{V}$ to the broadcast; backward compatible
     with all SR results \citep{abshier2026sr}.
   \item \emph{PSR formula} \citep[Eq.~1]{abshier2026sr}: is the
     $g_{tt}$ sector of the Schwarzschild metric in the weak-field limit.
@@ -855,11 +855,11 @@ non-singular interior behind a horizon, but a horizonless maximally
 compact body at the Buchdahl radius.]}
 
 \textbf{(3) Kerr metric.}  Rotating bodies require vorticity in
-$\mathbf{\SSV}_{\rm net}$, encoding frame dragging as angular momentum
+$\mathbf{V}$, encoding frame dragging as angular momentum
 of the SSV field.
 \emph{[Status note added Patch 3294 (W-D), 20 Aug 2026.  DELIVERED by
 companion GR-1f (18 Mar 2026): the azimuthal component
-$k(\SSV_{\rm net})_\phi = GJ\sin^2\theta/(c^2r^3)$ gives the
+$k(V_i)_\phi = GJ\sin^2\theta/(c^2r^3)$ gives the
 Lense--Thirring term exactly in the weak field, and the Kerr bound
 $J \leq GM^2/c$ follows from broadcast subluminality.  Companion GR-1g
 extends to Kerr--Newman.  Caveat carried forward: GR-1f shows the full
@@ -901,13 +901,13 @@ relativity in CPP:
 
 \begin{enumerate}
   \item \textbf{LSP} \citep{abshier2026mass,abshier2026grav}
-    (rigorous): $\mathbf{\SSV}_{\rm net}$ derived from
+    (rigorous): $\mathbf{V}$ derived from
     $E_{\rm pol} = mc^2$; backward compatible with all SR results
     \citep{abshier2026sr}.
 
   \item \textbf{Weak-field Schwarzschild}
     \citep[Eq.~2]{einstein1915} (rigorous): $g_{tt}$ from
-    $|\SSV|_{\rm abs}$, $g_{rr}$ from $\mathbf{\SSV}_{\rm net}$,
+    $|\SSV|_{\rm abs}$, $g_{rr}$ from $\mathbf{V}$,
     equal magnitudes with $G = \hbar c/\mP^2$
     \citep{abshier2026grav}; no free parameters.
 
@@ -959,7 +959,7 @@ development of the LSP framework throughout the companion series.
 
 The key conceptual advance in this paper --- extending the Lattice
 State Packet broadcast to include the net SSV vector component
-$\mathbf{SSV}_{\rm net}$ alongside the scalar $|\SSV|_{\rm abs}$ ---
+$\mathbf{V}$ alongside the scalar $|\SSV|_{\rm abs}$ ---
 arose from a question about the tensorial structure of the CPP data architecture posed during a working session on 15 March 2026. The author notes that this extension was not anticipated in the SR companion set and was motivated entirely by internal consistency requirements, making the subsequent recovery of the Eddington factor-of-two a genuine retroactive prediction.
 
 This work was conducted independently without institutional affiliation or external funding.

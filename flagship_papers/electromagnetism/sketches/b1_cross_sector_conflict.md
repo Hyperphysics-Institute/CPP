@@ -57,7 +57,7 @@ In the c05 parameterisation with ΔSSV ∝ β², B1 requires
 
 The CPP primitive is **velocity-proportional**:
 
-    d = (|SSV_net| / SSV_abs) · PSR         (displacement per Moment)
+    d = (|V_i| / SSV_abs) · PSR         (displacement per Moment)
 
 **not** acceleration-proportional. That distinction is decisive for
 Newton I.
@@ -65,8 +65,8 @@ Newton I.
 - **In a ∝ F mechanics:** free motion is automatic. F = 0 ⟹ a = 0 ⟹ v
   constant. Newton I costs nothing and is robust to any velocity-dependence
   of the coefficients, which affect only the *response to forces*.
-- **In v ∝ SSV_net mechanics:** free motion must be *actively sustained*.
-  SSV_net = 0 ⟹ d = 0 ⟹ **the CP stops.** So a coasting CP requires a
+- **In v ∝ V_i mechanics:** free motion must be *actively sustained*.
+  V_i = 0 ⟹ d = 0 ⟹ **the CP stops.** So a coasting CP requires a
   permanently maintained nonzero drive, and Newton I requires that drive
   to be **exactly** proportional to v with an **exactly** constant
   coefficient.
@@ -105,7 +105,7 @@ could change the β² term. **This is the cheapest to test and the worker
 recommends it first.**
 
 **(B) The primitive needs a distinct form for free motion.** If a free
-coasting CP has SSV_net = 0, the primitive gives d = 0 and nothing moves;
+coasting CP has V_i = 0, the primitive gives d = 0 and nothing moves;
 so CPP currently *requires* a sustained drive. **If instead the
 displacement carried forward were part of the state, Newton I would be
 automatic — but that contradicts the founder's 7 July no-carried-velocity

@@ -18,7 +18,7 @@ So MA.2's "r(−ê; v)" cannot be read as *the rate along the opposite edge at v
 
 ## 2. The PCD reading, which repairs it
 
-Per Absolute Moment (A6′ / A1′ division of labour): the **GP** at v runs **Perceive** — integrating DI-bit *arrivals* — then **Compute**, refreshing SSV_net; the **CP** executes **Displace** along the SSV_net its GP computed. The net flux at v is therefore *departures minus arrivals*, counted edge by edge.
+Per Absolute Moment (A6′ / A1′ division of labour): the **GP** at v runs **Perceive** — integrating DI-bit *arrivals* — then **Compute**, refreshing V_i; the **CP** executes **Displace** along the V_i its GP computed. The net flux at v is therefore *departures minus arrivals*, counted edge by edge.
 
 Every first-shell edge {v, w} carries both. The departure is imprinted at v and travels along û. The arrival is imprinted at **w**, and its direction of travel seen at v is exactly −û. Its rate is the rate law evaluated **at w** — and by **L4-B (Patch 0940)** w carries the same r₀ and the same δ as v, so that rate is r₀(1 + δ (−û)·n̂) = r(−û) (T5, checked at all 120 vertices, not only v_host).
 

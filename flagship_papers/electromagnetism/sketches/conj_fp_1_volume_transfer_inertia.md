@@ -59,8 +59,8 @@ origin moving +v, doubly-retarded round trip solved exactly per DP:
 ## ESCALATION: CONDITION B EXCEEDS THIS CONJECTURE
 
 **If the relay IS LW-like, the Sea exerts no net drive on a coasting CP at
-all.** Then SSV_net = 0 for uniform motion, and the CPP primitive
-d = (|SSV_net|/SSV_abs)·PSR gives **d = 0 — nothing could coast.**
+all.** Then V_i = 0 for uniform motion, and the CPP primitive
+d = (|V_i|/SSV_abs)·PSR gives **d = 0 — nothing could coast.**
 
 **The programme therefore requires a non-LW relay for COASTING ITSELF to
 be possible, independently of whether this inertia mechanism is correct.**
@@ -151,10 +151,10 @@ different regime and the force genuinely reverses in it.
 
 ## §2 — CONSEQUENCE: WHAT NEWTON I BECOMES
 
-Write the drive as SSV_net = C·d, with C collecting arc number density,
+Write the drive as V_i = C·d, with C collecting arc number density,
 the Position Plane's interacting cross-section, and the forward impulse
 per discharging arc. Combine with the CPP primitive
-d = (SSV_net/SSV_abs)·PSR:
+d = (V_i/SSV_abs)·PSR:
 
 > **C · PSR = SSV_abs**
 
@@ -168,8 +168,8 @@ quantities. It is, however, a **marginality** condition, and the mechanism
 as stated does not force it.
 
 **Flagged, NOT banked:** PSR is *defined* as the displacement at full
-coherence, i.e. d = PSR exactly when SSV_net = SSV_abs. Evaluating
-SSV_net = C·d at d = PSR gives C·PSR = SSV_abs directly. **The condition
+coherence, i.e. d = PSR exactly when V_i = SSV_abs. Evaluating
+V_i = C·d at d = PSR gives C·PSR = SSV_abs directly. **The condition
 may therefore be forced by the definition of PSR itself**, in which case
 Newton I follows from the primitive with nothing tuned. This is not
 asserted: it would be the seventh favourable convergence of this arc, it

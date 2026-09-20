@@ -119,7 +119,7 @@ boundary condition explicit.
 **The formulation:** Rest mass is the ground-state organisational energy
 of a CP cage structure — specifically, the energy required to maintain
 a stable nucleation seed against thermal dissipation of its DP chains
-at T = 0 and v = 0. The cage exists at the threshold where its SSV_net
+at T = 0 and v = 0. The cage exists at the threshold where its V_i
 nucleation force exactly overcomes the thermal pressure of the Dipole Sea
 attempting to dissolve the chains at the critical radius r_crit.
 
@@ -132,7 +132,7 @@ The same central −eCP, in a different temperature environment, would
 require different organisational energy to maintain stable cage structure.
 At T = T_c (QCD transition temperature), quark cages dissolve — quarks
 effectively become massless — because the thermal pressure overcomes
-the nucleation SSV_net. At T = 0, the cage is maximally stable. Mass
+the nucleation V_i. At T = 0, the cage is maximally stable. Mass
 is therefore a thermodynamic concept in CPP, not a purely mechanical one.
 
 **Mass is velocity-dependent through the same mechanism as confinement.**
@@ -149,7 +149,7 @@ that can be released when that organisation dissolves.
 calibrates SSV₀ = 0.2555 MeV to the electron rest mass. In the deeper
 P-CPP-14 picture, 0.511 MeV is the total organisational energy of the
 electron cage plus radial chains at the critical radius r_crit — the
-radius below which the nucleation SSV_net of the central −eCP exceeds
+radius below which the nucleation V_i of the central −eCP exceeds
 the thermal dissipation pressure and the cage maintains itself. The
 quantitative relationship between r_crit, SSV₀, and sea_strength is
 the content of OP-QM-new-5 (chain contribution to electron rest mass)

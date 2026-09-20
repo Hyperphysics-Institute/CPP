@@ -8,7 +8,7 @@ presented with the numbers it produced.**
 
 ## §1 — The founder's three elaborations, recorded
 
-> *"CPP's use of the word force is shorthand for SSV_net, since there is
+> *"CPP's use of the word force is shorthand for V_i, since there is
 > no pushing or pulling in CPP, only an amount of displacement in a
 > Moment… **There is no self-force in CPP**; there is a message sent out
 > for others to respond to, but nothing that powers the CP to
@@ -19,7 +19,7 @@ argued there that a runaway draws on *divergent bare-point
 self-energy*, citing Abraham–Lorentz. **That divergence is a
 continuum-field-theory artifact.** If CPP has no self-action — only a
 declaration to which other entities respond, their responses re-entering
-as SSV_net at the CP's location — and if the substrate is discrete, then
+as V_i at the CP's location — and if the substrate is discrete, then
 **there is no self-energy integral to diverge.** The reservoir the
 worker called unbounded may be bounded by the lattice.
 

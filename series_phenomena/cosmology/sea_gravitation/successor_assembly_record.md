@@ -38,7 +38,7 @@ and the elicitation-order note (3111) — all before the panel.
 ## §3 — The physics sentence
 
 The factor the inertial assembly was missing is the founder's
-memoryless rogue-overshoot dynamics — the same per-Moment SSV_net
+memoryless rogue-overshoot dynamics — the same per-Moment V_i
 exceedance he named as the basis of tunneling — acting on the
 strong-bound pairs of his weave: stiff bonds JUMP FARTHER, the
 strong register imprints at full amplified strength, and the vacuum

@@ -28,15 +28,15 @@ evolution, in ratification order:
 |---|---|---|
 | Original | A1 (axiom registry, pre-Aug-2026) + old glossary | "CPs execute the PCD cycle"; DI-bits as simple messengers |
 | 3 Aug 2026 | **A1′** (AP-1, panel 5/5, founder-ratified Patch 2982) | THREE Conscious-Point types, RISC division of labor: GPs (fixed sites; compute, hold, refresh state) · DI-bits (minimal messengers) · CPs (charge-bearers, the original A1 objects) |
-| 3 Aug 2026 | **AP-3** (A3′ definitional clause, Patch 2982) | GP state protocol: the GP computes/holds/per-Moment-refreshes SSV_abs and SSV_net from Perceive-stage arrivals; imprints outgoing DI-bits |
-| 8 Aug 2026 | **AP-4** (ratified Patch 3032) | DI-bit payload exactly {origin address, E, S}; SSV_net/SSV_abs are RECEIVER-COMPUTED state (AP-4d exclusive-and-exhaustive division); fixed per-GP emission count every Moment |
+| 3 Aug 2026 | **AP-3** (A3′ definitional clause, Patch 2982) | GP state protocol: the GP computes/holds/per-Moment-refreshes SSV_abs and V_i from Perceive-stage arrivals; imprints outgoing DI-bits |
+| 8 Aug 2026 | **AP-4** (ratified Patch 3032) | DI-bit payload exactly {origin address, E, S}; V_i/SSV_abs are RECEIVER-COMPUTED state (AP-4d exclusive-and-exhaustive division); fixed per-GP emission count every Moment |
 | 10 Aug 2026 | Nexus ruling (`founder_ruling_nexus_role_and_zbw_rebound_de_2026-08-10.md`, R-A4-ROLE) | A4 synchronizes "the PCD Moment cycle of all GPs" — GP-executor language explicit |
-| 19 Aug 2026 | **GR-FE-1 picture** (Patch 3255) | "The CPs do not PCD in the large sense; the GPs do the PCD cycle"; the CP displaces the distance associated with the GP-computed SSV_net; DI-bits conserved and reused each Moment; fan-wise radial dispersal, all DI-bits landing within 10% of the PSR, then equal per-GP redistribution; ~10^30 GPs per PSR (approximate) |
+| 19 Aug 2026 | **GR-FE-1 picture** (Patch 3255) | "The CPs do not PCD in the large sense; the GPs do the PCD cycle"; the CP displaces the distance associated with the GP-computed V_i; DI-bits conserved and reused each Moment; fan-wise radial dispersal, all DI-bits landing within 10% of the PSR, then equal per-GP redistribution; ~10^30 GPs per PSR (approximate) |
 
 **Canonical statement (assembled, nothing new):** Per Absolute Moment,
 the GP executes Perceive (integrate DI-bit arrivals) and Compute
-(refresh its SSV_abs / SSV_net registers, imprint outgoing DI-bits);
-the CP executes Displace, moving per the SSV_net its GP computed and
+(refresh its SSV_abs / V_i registers, imprint outgoing DI-bits);
+the CP executes Displace, moving per the V_i its GP computed and
 presented; DI-bits carry the AP-4 payload origin→PSR and reset at
 delivery. Per-Moment synchrony (A4/Nexus) and the P→C→D ordering are
 UNCHANGED from the original picture — what changed is the executor
@@ -73,7 +73,7 @@ history notes:
    division of labor (GP: Perceive+Compute; CP: Displace); history note
    carries the pre-2982 wording.
 2. `master_glossary.md` **CP entry**, clause (d) — "responds by
-   executing the Displace phase per its GP's computed SSV_net."
+   executing the Displace phase per its GP's computed V_i."
 3. `master_glossary.md` **Moment entry** — "every GP executes one PCD
    cycle; every CP executes one Displace step"; synchrony statement
    unchanged; history note carries the old wording.
@@ -120,12 +120,12 @@ trigger: next DSL-lane session.
 
 ## §6 — One open founder question (raised in-chat this session)
 
-The 3255 Q1 narrative says DI-bits are "carrying the SSV_net and
+The 3255 Q1 narrative says DI-bits are "carrying the V_i and
 SSV_abs, both EE_q and EE_e, and GP_origin address." The RATIFIED AP-4
-payload is exactly {origin address, E, S}, with SSV_net and SSV_abs
+payload is exactly {origin address, E, S}, with V_i and SSV_abs
 receiver-computed (AP-4d: exclusive and exhaustive). Two readings:
 (a) founder shorthand — "EE_q and EE_e" = the E/S vector slots, from
-which receivers compute SSV_net/SSV_abs (fully AP-4-consistent);
+which receivers compute V_i/SSV_abs (fully AP-4-consistent);
 (b) an intended payload respecification, which per the 3015 precedent
 would require a new amendment proposal (AP-5) and cannot be enacted by
 a picture registration. **Question put to the founder; W-2 proceeds

@@ -8,7 +8,7 @@ The twelve first-shell directions at a 600-cell vertex all sit at û·n̂ = −1
 
 That also shows why the antisymmetry is not cosmetic. The naive Σ r(ê)ê gives −r₀(6/φ)n̂ at δ = 0 (T4) — a substrate current with no perturbation in the substrate. Unphysical before any parameter is chosen. So something must kill the isotropic part, and the antisymmetric combination is what does.
 
-The repair is the Perceive/Displace split. GP perceives arrivals, computes SSV_net; CP displaces. Flux = departures − arrivals per edge. The arrival on edge {v,w} is imprinted at w and its travel direction seen at v is −û; its rate is the law evaluated at w. That is r(−û) — but ONLY if w carries the same r₀ and δ as v, which is exactly L4-B. So r(−ê;v) means the reverse traversal of the same edge governed by the law at the far end, and the antisymmetry is forced.
+The repair is the Perceive/Displace split. GP perceives arrivals, computes V_i; CP displaces. Flux = departures − arrivals per edge. The arrival on edge {v,w} is imprinted at w and its travel direction seen at v is −û; its rate is the law evaluated at w. That is r(−û) — but ONLY if w carries the same r₀ and δ as v, which is exactly L4-B. So r(−ê;v) means the reverse traversal of the same edge governed by the law at the far end, and the antisymmetry is forced.
 
 Checked rather than asserted (D-4): T5 over all 120 vertices, not just v_host; T6 the δ=0 cancellation at all 120; T8 denies L4-B at one neighbour and watches both fail. T8 is the one I would not have written a week ago — it establishes that L4-C consumes L4-B, which the 0646 decomposition lists as parallel items. They are not parallel.
 

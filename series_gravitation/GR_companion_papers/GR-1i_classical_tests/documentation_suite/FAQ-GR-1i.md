@@ -26,7 +26,7 @@ theories are structurally different where the substrate becomes visible.
 **Q4. Where does the factor of two in light deflection come from?**
 Half from time curvature (the scalar |SSV|_abs channel, which alone
 gives the Newtonian 0.875″) and half from spatial curvature (the vector
-**SSV**_net channel). In CPP this split is structural rather than
+**V_i** channel). In CPP this split is structural rather than
 accidental: GR-1b's extension of the LSP broadcast to carry the vector
 component was forced by exactly this observable. The test is therefore
 the arc's sharpest discriminant — it separates CPP from Newton *and*
