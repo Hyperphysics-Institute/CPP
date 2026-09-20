@@ -1,5 +1,15 @@
 # The Register Contains Its Own CP — 4165 Repaired, and a Bound on the Founder's Mixing
 
+> **⚠ §2's NUMBERS ARE WRONG BY FORTY-FOUR ORDERS — corrected at Patch 4168. THE VERDICT STANDS.**
+> §2 used N = 12 arrivals and reported corr(register, own spin) = 0.154, "V−A would be ~15% of
+> maximal." **The PSR band holds ~1.3×10⁹⁰ GPs, not 12** — c01: *"the true grid is sub-Planck
+> (~ l_P/10³⁰) by nesting"*; the founder corrected this reading at Patch 0733 after a prior Opus made
+> the same error at 0732. **The correct correlation is ~8.9×10⁻⁴⁶**, so V−A from a register-read b
+> would be ~10⁻⁴³ percent of maximal. **b cannot possibly read the A_i register — the conclusion is
+> overwhelming, not merely forced.** §3's ε bound is unaffected (it counts Moments, not arrivals) but
+> is itself superseded by Patch 4170's tight, correlated-environment bound. Retained verbatim.
+> See `4168_psr_shell_recount.md` and `4170_correlated_mixing.md`.
+
 **Patch:** 4166. **Lane:** EW. **Session:** 234.
 **Corrects:** Patch 4165 §2 (the premise, not the verdict).
 **Verify:** `series_standard_model/code/4166_register_composition.py`.
