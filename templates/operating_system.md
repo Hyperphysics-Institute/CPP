@@ -1690,6 +1690,15 @@ kickoff line **and** this short orienting paragraph are the sanctioned chat exce
 
 - `pNNNN` (added Patch 4132; REQUIRED whenever a session writes more than one handover, recommended always) is the four-digit number of the patch that files the handover, placed straight after the session number — `YYYY-MM-DD_session_NNN_pNNNN_<scope>.md` — so that files sharing a date and session still sort chronologically rather than alphabetically by scope. Session 233 wrote six handovers under one prefix and the filename sort returned the oldest (Patch 4096) as newest. Existing files are not renamed. See `handovers/README.md` "Naming convention" for the cost record and the reader's tie-break command.
 
+**Standing worker discipline D-10 and D-11 (registered Patch 4169).** `bootup.md` §0.5 carries the
+authoritative table. Two rules were added after Session 234: **D-10** — before asserting the corpus
+does not supply a premise, especially when contradicting the founder, grep `founders_vision.md` and
+the `reasoning/` records for a prior correction on that premise (three failures in one session, one
+of them repeating an error the founder had already corrected at Patch 0733). **D-11** — a document's
+prose must reproduce its script's classification table verbatim rather than paraphrase it (TEST-A3G-2
+stood recorded as passed for three sessions on an argument its own verify script refuted). D-4's
+cost record gained a second entry: Patch 4167 named its own unperformed check and published anyway.
+
 **Discoverability rule.** At new-session bootup, the canonical "what's next" pointer is the most recent file in `handovers/`. Sort `handovers/` by filename (chronological by construction **given the `pNNNN` token**; where the last entries share a `YYYY-MM-DD_session_NNN` prefix without it, take the first line of `git log --name-only --diff-filter=A --format= -- handovers/`) and read the last entry. If the last entry is paper-scoped or trajectory-scoped and doesn't match the work to be done in the new session, look back at the previous most-recent file with matching scope.
 
 **Append-only discipline.** Handover files are not edited after the session they were written for (apart from same-session fix-ups for typos or formatting). If a handover's forward queue changes, write a new handover file at the next session close rather than editing the old one. The old file is preserved as the historical handover state at the moment it was written. This ensures the chronological-sort-by-filename property continues to work: the newest file in the folder is always the current canonical handover.
