@@ -100,3 +100,5 @@ The single exception is fix-ups within the same session the file was written for
 ---
 
 *Folder created 17 May 2026 (Session 127 Patch 0422). Convention codified in `templates/operating_system.md` §15.*
+
+**Latest: `2026-09-20_session_234_p4180_chi4_arc_and_ssv_rename.md`** — first handover filed under the `pNNNN` convention (Patch 4132).
