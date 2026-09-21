@@ -2213,7 +2213,13 @@ Patch 4159 found that a **fixed** lattice orientation gives a **staircase**, not
 
 **UNIVERSAL FORMS EXCLUDED at 4194** (`code/4194_hop_gate_self_propulsion.py`): tie-only never fires (V is continuous and noisy — c03, 4161); always-on is identically a field κqA along the particle's own spin, so magnets self-accelerate, bounding κ at 5e−24 of an atomic field. 4193's symmetry table stands. **Still open:** re-derive hop = T-odd (next window); the relay question owed the founder. Successor: [[TODO-4194-VERTEXGATE]].
 
+### TODO-4196-CONTACTSCALAR — what in CPP measures contact with weak-charged matter? (registered Patch 4196, EW lane — the sharpened content question)
+
+4196: the measured neutral-current interaction, read as a rule of motion, is **a displacement along the particle's OWN spin, weighted by the local weak-charge density of the other party** — 1.7 km/s in nuclear matter, zero in free space (`code/4196_weak_drift_target.py`). That is 4193's gate with a non-constant weight, and it meets 4194's bound. **Owed:** (1) **locate** the CPP object that plays weak-charge density and that a GP can read (SF-2's Z icosahedron? hDP content?) — it must vanish in atoms to ~1e−10 (F2), so it is not Φ or V_i as they stand; (2) reciprocity — the nucleus's CPs must be displaced too, or momentum is lost; (3) re-derive the non-relativistic reduction (next-window critic); (4) the charged-current analogue (V−A in decay) in the same language; (5) whether n sub-Moment gatings give the graded weight (4196 §4). The founder's sub-Moment transit remains unregistered pending his ratification. **Lane: EW.**
+
 ### TODO-4195-SCREW — the turn gate and the handed acceptance rule (registered Patch 4195, EW lane — EXPLORATION under founder mandate)
+
+**PARKED at 4196:** the founder withdrew the fixed-endpoint premise and judges the screw unobservable. Items (1)–(3) are not to be worked unless he reopens it; item (4) moves to [[TODO-4196-CONTACTSCALAR]].
 
 Founder's sub-Moment transit (verbatim at 4195): V_i fixes the end GP, the gate acts at every GP on the way. Found: "toward A" is mirror-odd **and time-odd** (EDM-like, ~1e−34 e·cm, not the weak pattern); "turn about A" makes the track a **screw of handedness sign(A·D) = b**, a symmetric law. **Owed:** (1) does the screw's mean sense under ZBW jitter give (v/c)cos θ; (2) can a six-GP bracelet read screw sense under the register rules, and does the one primitive sign (THEO-CHIR-STATUS-1) live in that acceptance rule; (3) "turn" needs the GP to know the previous hop — which axiom; (4) reconcile sub-Moment transit with c03's "step each tick", and register the transit picture if the founder ratifies it (not located in axioms/glossary); (5) attack 4195 §5. **Lane: EW.**
 

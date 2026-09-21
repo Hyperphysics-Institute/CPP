@@ -1,5 +1,12 @@
 # The Sub-Moment Transit, Explored — It Is Not What 4194 Tested, and It Behaves Differently
 
+> **⚠ PREMISE WITHDRAWN BY THE FOUNDER — Patch 4196.** *"I was unclear on that specification as I
+> wrote it"*: the endpoint is **not** fixed by V_i; the axial vector is to produce **a real
+> displacement** from the e/q-determined end, and he judges the screw track *"an unobservable
+> corkscrew travel path subquantum effect."* §§2–3 stand as arithmetic for the fixed-endpoint
+> configuration only. With the endpoint free, 4193's table and 4194's bound both apply again. See
+> `4196_the_empirical_target_for_a_displacement.md`.
+
 **Patch:** 4195. **Lane:** EW. **Session:** 236.
 **Founder verbatim:** `founders_voice/4195_clarification_sub_moment_transit_and_per_gp_gating.md`.
 **Verify:** `series_standard_model/code/4195_sub_moment_turn_gate.py`.
