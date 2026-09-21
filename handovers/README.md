@@ -103,3 +103,24 @@ The single exception is fix-ups within the same session the file was written for
 
 **Latest: `2026-09-20_session_234_p4187_chi4_close_and_next_window_dispatch.md`** (supersedes the forward-pointer of `p4180`, which remains valid for what it records). Earlier:
 `2026-09-20_session_234_p4180_chi4_arc_and_ssv_rename.md` — first handover filed under the `pNNNN` convention (Patch 4132).
+
+## Two-step boot (Patch 4189)
+
+**Why:** Session 235 compacted mid-boot and confabulated. Both Session 234 handovers had listed
+`todolist.md` (~115k tokens) and the maturation log (~25k) as required reading — ~160k tokens before
+any work. See bootup §0.5 D-13.
+
+**The convention from now on:**
+- **The newest dated file here is a BOOT CARD** — hard cap **4 KB**. It states the expected HEAD and
+  next free ID, the state in a few lines, a **checksum fact** the window must report correctly, the
+  founder's owed items, and candidate tasks.
+- **Full handovers go in `handovers/detail/`**, so they never win the newest-file sort.
+- **STEP 1:** the window reads `bootup.md` and the boot card, then **stops and reports**. No work.
+- **STEP 2:** the founder checks the report and replies with the task; only then does the window
+  read the targeted section of the detail handover.
+
+**The checksum is the point.** A window that has compacted or confabulated gets it wrong in STEP 1,
+before anything is built on it. Session 235's report listed a withdrawn test (A3G-8) as outstanding —
+under this protocol that would have been caught in the first reply.
+
+**Latest boot card:** `2026-09-20_session_234_p4189_BOOTCARD.md`.
