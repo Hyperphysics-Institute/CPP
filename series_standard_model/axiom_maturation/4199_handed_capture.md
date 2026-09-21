@@ -1,5 +1,10 @@
 # Handed Capture — the Founder's Neutrino Picture Does Bear on the Right-Handed Question
 
+> **⚠ §2 RELOCATED — Patch 4201.** Under the founder's inheritance picture the electron takes the
+> quark's orbital DP and does not choose a sense; the handed rule keeps its form q (v̂·A) = +1 but
+> acts on the **ejection direction**, not the capture sense. §2 items 1–3 carry over in kind; the
+> mechanism named here does not. See `4201_inheritance_and_the_ejection_rule.md`.
+
 **Patch:** 4199. **Lane:** EW. **Session:** 236. **Last ID of block 4100–4199; the gate is switched
 to 4200–4299 in this commit.**
 **Founder verbatim:** `founders_voice/4199_how_the_neutrino_is_formed.md`.
