@@ -2181,6 +2181,8 @@ Patch 4159 found that a **fixed** lattice orientation gives a **staircase**, not
 
 ### TODO-4155-EDGETIE — can b act as the tie-break in the 12-edge selection rule? (registered Patch 4155, EW lane — Claude's proposal, NOT corpus)
 
+**AMENDED at 4193:** a tie-break *by b* is either parity-EVEN ((A·V) e·A) or cannot break the tie ((A·V) e·V) — `code/4193_hop_selector_symmetries.py`. Superseded by [[TODO-4193-HOPGATE]], the founder's e_i·A comparison.
+
 **The problem it answers:** a chiral *force* is not available — the only polar object from b and A is **F ∝ (A·V)A**, which is P-odd but **T-ODD**, and every alternative is P-even. There is no P-odd, T-even force from these ingredients. **Nor should there be:** parity violation is a rate/selection asymmetry, not a push, which is what **B3** already says. **The proposal:** c03's rule is *"the 12-edge selection rule chooses the lattice edge i\* that maximizes **e_i · V**"* — and **ties are the opening.** When two of the twelve edges are degenerate in e_i·V, the rule does not say which is taken; a degenerate pair related by reflection *is* a left/right choice, and **b is a sign**. Right shape on every count: a **selection** (satisfies B3, no T-odd force), **local** (needs only the CP's own A and its GP's V), **costless when V is generic** (ties are measure-zero in a continuum but common on an icosahedral coordination shell), and it **vanishes for a confined quark** whose ⟨b⟩ = 0 (4134–4135) — so F3's free/confined contrast *arises from* the mechanism instead of being imposed. **Needs:** the degeneracy census on the 12-shell (how often do ties occur; are tied pairs reflection-related?), then whether the bias reproduces the weak sector's **magnitude**, not just its sign. Doc: `series_standard_model/axiom_maturation/4155_what_a_i_acts_on.md` §3. **Lane: EW.**
 
 ### TODO-4168-PRIORCORRECTIONS — **ENACTED at Patch 4169 as bootup §0.5 D-10**
@@ -2206,6 +2208,10 @@ Patch 4159 found that a **fixed** lattice orientation gives a **staircase**, not
 ### TODO-4189-TODOSIZE — todolist.md is 460 KB (~115k tokens); it needs compacting (registered Patch 4189, WORKFLOW lane)
 
 **D-13 stops fresh windows reading it whole; it does not make it smaller.** A 115k-token work queue is itself a defect — it cannot be read, only grepped, and grep finds items only if you know their names. **Session 234 grew it from 380,357 bytes (at 4131) to 460,069 (+21%)** with verbose inline-result entries on every closed item. **Proposed shape:** move CLOSED items with their full results to `todolist_archive.md`, leaving a one-line pointer; keep only OPEN items, each capped at a few lines, in `todolist.md`. **A shared-registry edit every lane writes to**, so it wants its own patch and a moment when no parallel window is live. **Lane: WORKFLOW.**
+
+### TODO-4193-HOPGATE — test the founder's hop gate, q (e_i · A), against the filters (registered Patch 4193, EW lane — CANDIDATE AMENDMENT, not adopted)
+
+The register's A compared with the destination GP; the only C-odd, P-odd, T-even, CP-even term available (4193 §3). **Run in this order, tie-only before always-on:** (1) **self-propulsion** — does a free CP at V = 0 drift along ±A after averaging over its ZBW cycle? if yes the candidate is dead; (2) **F2**, EM stays P-even; (3) **F4** magnitude, −v/c; (4) **F7**. Next window re-derives the symmetry table first, above all **hop = T-odd**. Also owed the founder: whether a CP's axial content is relayed onward at all (4193 §1) — it decides whether [[TODO-4192-COHERENT]] is live or moot. **Lane: EW.**
 
 ### TODO-4192-COHERENT — critique the coherent-mixing exclusion before anything rests on it (registered Patch 4192, EW lane — PD-008 SUBMISSION)
 
