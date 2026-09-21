@@ -1,5 +1,11 @@
 # The Hop Gate's First Falsifier — Both Universal Forms Fail; a Vertex Form Is Left Standing
 
+> **⚠ SCOPE — Patch 4195.** This patch tested **one hop per Moment with the gate altering the net
+> displacement.** The founder's configuration is different: **V_i fixes the end GP and the gate acts
+> at each GP of a many-hop sub-Moment transit**, shaping the track only. §§2–3 stand for the
+> configuration tested and **do not reach his**; §4's argument for a vertex-only gate is no longer
+> forced. See `4195_sub_moment_transit_explored.md`.
+
 **Patch:** 4194. **Lane:** EW. **Session:** 236.
 **Runs:** TODO-4193-HOPGATE test (1), self-propulsion — and test (2), F2, falls with it.
 **Verify:** `series_standard_model/code/4194_hop_gate_self_propulsion.py`.

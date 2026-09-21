@@ -2213,7 +2213,13 @@ Patch 4159 found that a **fixed** lattice orientation gives a **staircase**, not
 
 **UNIVERSAL FORMS EXCLUDED at 4194** (`code/4194_hop_gate_self_propulsion.py`): tie-only never fires (V is continuous and noisy — c03, 4161); always-on is identically a field κqA along the particle's own spin, so magnets self-accelerate, bounding κ at 5e−24 of an atomic field. 4193's symmetry table stands. **Still open:** re-derive hop = T-odd (next window); the relay question owed the founder. Successor: [[TODO-4194-VERTEXGATE]].
 
+### TODO-4195-SCREW — the turn gate and the handed acceptance rule (registered Patch 4195, EW lane — EXPLORATION under founder mandate)
+
+Founder's sub-Moment transit (verbatim at 4195): V_i fixes the end GP, the gate acts at every GP on the way. Found: "toward A" is mirror-odd **and time-odd** (EDM-like, ~1e−34 e·cm, not the weak pattern); "turn about A" makes the track a **screw of handedness sign(A·D) = b**, a symmetric law. **Owed:** (1) does the screw's mean sense under ZBW jitter give (v/c)cos θ; (2) can a six-GP bracelet read screw sense under the register rules, and does the one primitive sign (THEO-CHIR-STATUS-1) live in that acceptance rule; (3) "turn" needs the GP to know the previous hop — which axiom; (4) reconcile sub-Moment transit with c03's "step each tick", and register the transit picture if the founder ratifies it (not located in axioms/glossary); (5) attack 4195 §5. **Lane: EW.**
+
 ### TODO-4194-VERTEXGATE — can the gate be switched on at the W bracelet only? (registered Patch 4194, EW lane — WORKER PROPOSAL)
+
+**4195: no longer forced** — the argument for it assumed one hop per Moment. Kept as a fallback; see [[TODO-4195-SCREW]] item (2), which is its successor.
 
 4194 §4: the gate as the rule by which a captured charge leaves the bracelet's centroid (V_org = 0 there, PROP-SF-2-2), toward the side along qA. **Locate first (D-3):** does any axiom let a GP's rule depend on which sector's content is in its register? If not, this is a second amendment. Then: does it give F4's −v/c? Attack 4194 §5's three points. Runs naturally with [[TODO-4188-F5SCOPE]] (CKM as a W-vertex mismatch). **Lane: EW.**
 
