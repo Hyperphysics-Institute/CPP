@@ -2207,11 +2207,15 @@ Patch 4159 found that a **fixed** lattice orientation gives a **staircase**, not
 
 **D-13 stops fresh windows reading it whole; it does not make it smaller.** A 115k-token work queue is itself a defect — it cannot be read, only grepped, and grep finds items only if you know their names. **Session 234 grew it from 380,357 bytes (at 4131) to 460,069 (+21%)** with verbose inline-result entries on every closed item. **Proposed shape:** move CLOSED items with their full results to `todolist_archive.md`, leaving a one-line pointer; keep only OPEN items, each capped at a few lines, in `todolist.md`. **A shared-registry edit every lane writes to**, so it wants its own patch and a moment when no parallel window is live. **Lane: WORKFLOW.**
 
+### TODO-4192-COHERENT — critique the coherent-mixing exclusion before anything rests on it (registered Patch 4192, EW lane — PD-008 SUBMISSION)
+
+4192: the derived ε = a/r, summed linearly over a **magnet**, exceeds 4170's caps by 6–12 orders (`code/4192_coherent_mixing.py`); 4184 §3 bannered. **Lands on the worker's convenient side and against the founder's bet.** Next window: attack §5's three points (self-term weight; one unit per unpaired electron; 4170's tolerances). If it stands, p4187 §3's FOR argument loses "costs no parameter". **Lane: EW.**
+
 ### TODO-4191-TILT — does ∇ × V_i actually tilt a CP-scale orbit? (registered Patch 4191, EW lane — UNPERFORMED CHECK)
 
 GR-1f derives the azimuthal V_i of a rotating *source* (exact Lense–Thirring). **Nothing on file derives the response of a single CP-scale circulation to that field.** The "twist closes the causal loop" picture needs it. Derive from the displacement rule; check the rate against GR-1f. **Do not assume.** See `axiom_maturation/4191_*.md` §6. **Lane: EW.**
 
-### TODO-4191-ESENSE — which motion in the electron carries the handed sense? (registered Patch 4191, EW lane — FOUNDER PICTURE, PD-006(a))
+### TODO-4191-ESENSE — **WITHDRAWN AS POSED at Patch 4192** (the founder: the double-rotation picture was a prior window's, not his; candidate χ is a draft)
 
 4178 generalised the **quark** ZBW entry to "CPP's spin". The founder's **electron** is a bare −eCP with an orbiting eDP whose two internal motions run at 2 : 1. Is their *relative sense* the double rotation of candidate χ, and is it locked to the central CP's polarity? Asked in chat at 4191; record the answer verbatim. **Lane: EW.**
 

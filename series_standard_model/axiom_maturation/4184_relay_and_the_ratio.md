@@ -1,5 +1,11 @@
 # Every GP Relays — and That Settles the Mixing Ratio Without Calibration
 
+> **⚠ §3's "AUTOMATICALLY CONSISTENT" IS CONDITIONAL — Patch 4192.** §3 compares **one** nearest spin
+> with 4170's cap. 4170's caps were set in **polarised media**, and 4186 proved the register
+> **linear**, so N aligned spins add as N. Summed over a magnet, a/r exceeds the cap by **six to
+> twelve orders** (`code/4192_coherent_mixing.py`). §§1–2 stand. See
+> `4192_mixing_overaligns_and_where_a_acts.md`.
+
 **Patch:** 4184. **Lane:** EW. **Session:** 234.
 **Corrects:** Patch 4183 §§2–3 (conclusion, not arithmetic) and Patch 4182 §2.
 **Resolves:** the founder's ratio question; largely moots TODO-4183-SEASPIN.
