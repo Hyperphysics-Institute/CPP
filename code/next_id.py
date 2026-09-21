@@ -31,6 +31,8 @@ BLOCKS = {                       # keep in sync with id_block_registry.md
     'gr': (3700, 3799),            # G-GR-BLOCK-3700, founder, 8 Sep 2026 (taught to the gate at Patch 3800; the gate had still reported 3600-3699 EXHAUSTED)
     'eu': (3900, 3999),            # EU second block, founder, 11 Sep 2026 (taught to the gate at Patch 4000; the gate had still reported EU EXHAUSTED at 3899 while 41 commits sat in 39xx)
     'ew': (4100, 4199),            # G-EW-BLOCK-4100, founder, 18 Sep 2026 ("open 4100-4199 as a new series"); 4000-4099 EXHAUSTED at 4099
+    'ew-4200': (4200, 4299),       # G-EW-BLOCK-4200, founder, 20 Sep 2026 ("open 4200-4299 preemptively for the next series when needed"); RESERVED, not yet in use.
+                                   # When 4199 is consumed: make this the 'ew' entry and keep the old block as 'ew-4100' (the 4104 lesson -- never REPLACE, always retain).
     'ew-4000': (4000, 4099),       # 4104: retained per the eu-3800 / gr-3600 convention. Patch 4100 REPLACED the ew entry instead of adding beside it,
                                    # which dropped 4000-4099 out of the gate's view entirely -- an exhausted block that is invisible is one a later lane
                                    # can be told is free. Exhausted blocks stay listed so --all reports them EXHAUSTED.
