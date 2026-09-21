@@ -2211,6 +2211,12 @@ Patch 4159 found that a **fixed** lattice orientation gives a **staircase**, not
 
 ### TODO-4193-HOPGATE — test the founder's hop gate, q (e_i · A), against the filters (registered Patch 4193, EW lane — CANDIDATE AMENDMENT, not adopted)
 
+**UNIVERSAL FORMS EXCLUDED at 4194** (`code/4194_hop_gate_self_propulsion.py`): tie-only never fires (V is continuous and noisy — c03, 4161); always-on is identically a field κqA along the particle's own spin, so magnets self-accelerate, bounding κ at 5e−24 of an atomic field. 4193's symmetry table stands. **Still open:** re-derive hop = T-odd (next window); the relay question owed the founder. Successor: [[TODO-4194-VERTEXGATE]].
+
+### TODO-4194-VERTEXGATE — can the gate be switched on at the W bracelet only? (registered Patch 4194, EW lane — WORKER PROPOSAL)
+
+4194 §4: the gate as the rule by which a captured charge leaves the bracelet's centroid (V_org = 0 there, PROP-SF-2-2), toward the side along qA. **Locate first (D-3):** does any axiom let a GP's rule depend on which sector's content is in its register? If not, this is a second amendment. Then: does it give F4's −v/c? Attack 4194 §5's three points. Runs naturally with [[TODO-4188-F5SCOPE]] (CKM as a W-vertex mismatch). **Lane: EW.**
+
 The register's A compared with the destination GP; the only C-odd, P-odd, T-even, CP-even term available (4193 §3). **Run in this order, tie-only before always-on:** (1) **self-propulsion** — does a free CP at V = 0 drift along ±A after averaging over its ZBW cycle? if yes the candidate is dead; (2) **F2**, EM stays P-even; (3) **F4** magnitude, −v/c; (4) **F7**. Next window re-derives the symmetry table first, above all **hop = T-odd**. Also owed the founder: whether a CP's axial content is relayed onward at all (4193 §1) — it decides whether [[TODO-4192-COHERENT]] is live or moot. **Lane: EW.**
 
 ### TODO-4192-COHERENT — critique the coherent-mixing exclusion before anything rests on it (registered Patch 4192, EW lane — PD-008 SUBMISSION)
