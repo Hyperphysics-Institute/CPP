@@ -50,3 +50,12 @@ Created at Patch 0974a (Step B of the Session 228 close). **Its absence until th
 - `042` 2026-09-22 Session 236 EW lane — PRED-O-42 registered: Dirac neutrinos, no 0νββ; basis corrected at 4220 → `predictions.md`
 - `043` 2026-09-22 Session 236 EW lane — founder corrections verbatim: which particle (4191), cage assignments (4212), which dipole (4220) → `founders_voice/4191_*.md`, `4212_*.md`, `4220_*.md`
 - `044` 2026-09-22 Session 236 EW lane — Session 236 close: boot card + detail handover; handovers/detail/ created → `handovers/2026-09-22_session_236_p4220_BOOTCARD.md`, `handovers/detail/2026-09-22_session_236_*.md`
+- `045` 2026-09-22 Session 237 EW lane — critic pass: 4193, 4216 confirmed; 4206 pure-GT match downgraded to coincidence → `series_standard_model/axiom_maturation/4222_*.md`
+- `046` 2026-09-22 Session 237 EW lane — pair-state inheritance model equals full V−A a, A, B to 1e−15; SF-2 v1.07 → `4223_*.md`, `code/4223_pair_state_correlations.py`
+- `047` 2026-09-22 Session 237 EW lane — spin flow in inheritance bookkeeping; founder mechanism (W⁰ centroid); a witnesses e–ν̄ entanglement → `4224_*.md`, `4225_*.md`, `founders_voice/4224, 4225`
+- `048` 2026-09-22 Session 237 EW lane — birth state sets the correlations; 4205 assignment excluded; swapped allocation = quark-level V−A → `4226_*.md`, `4227_*.md`
+- `049` 2026-09-22 Session 237 EW lane — G-EW-SWAP-4228 ratified; ONESIGN 7/7; TODO-4203 re-scoped to the cage; SF-2 v1.08 → `founders_voice/4228`, `4228_*.md`, `changelog-sf-2.md`
+- `050` 2026-09-22 Session 237 EW lane — release ledger; no binding rule; founder: ZBW reset binding, release at the pocket (G-EW-ZBWRESET-4231); L to 0.4%; energy is c04's → `4229–4232_*.md`, `founders_voice/4231, 4232`
+- `051` 2026-09-22 Session 237 EW lane — lifetime in cycle units, bracelet factor (E/m_W)² named; δ registered TODO-4234-DELTA → `4233_*.md`, `4234_*.md`
+- `052` 2026-09-22 Session 237 EW lane — OPEN-EW-NC split into EM + isospin integers; bare-core push along the spin; founder question → `4235_*.md`, `4236_*.md`, `frontier_sectors/EW.md`
+- `053` 2026-09-22 Session 237 EW lane — Session 237 close: boot card + detail handover → `handovers/2026-09-22_session_237_p4237_BOOTCARD.md`, `handovers/detail/2026-09-22_session_237_*.md`
