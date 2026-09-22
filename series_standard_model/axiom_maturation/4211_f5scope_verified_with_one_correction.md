@@ -1,5 +1,10 @@
 # TODO-4188-F5SCOPE, Verified: the Conclusion Holds, the Premise Was Wrong
 
+> **⚠ §1 STEP 2 WITHDRAWN — Patch 4212.** The founder: *"No quark has a tetrahedral cage except the
+> strange quark. The only lepton with a tetrahedral cage is the Muon."* My reading of SM-3 line 123
+> as "quarks have the K3 graph" is withdrawn; the discarded session's step 2 stands, and step 1 is
+> now in question. Step 3 and the disposition hold. See `4212_cage_assignments_conflict.md`.
+
 **Patch:** 4211. **Lane:** EW. **Session:** 236.
 **Verify:** `series_standard_model/code/4211_cabibbo_from_mass_ratio.py`.
 **Closes:** TODO-4188-F5SCOPE (the claim from the discarded Session 235). **Result:** F5 stays routed
