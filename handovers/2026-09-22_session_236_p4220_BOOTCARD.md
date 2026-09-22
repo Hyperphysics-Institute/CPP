@@ -1,5 +1,10 @@
 # BOOT CARD — Session 236 close — Patch 4220 — 22 Sep 2026 — EW lane
 
+**Kickoff line (paste into a fresh window, verbatim):**
+```
+Bootup for Conscious Point Physics (CPP). Clone the repo and read the bootup file at https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/bootup.md. Honor the line-1 CLONE-FIRST GATE before registering any ID, placing any file, or computing any coefficient (clone the repo and grep the registry first). Then open the handovers/ folder, sort by filename, and read the most recent dated file (named YYYY-MM-DD_session_NNN_*.md) — that newest entry is the canonical "what's next" pointer. Note: the folder is handovers/ (plural) and there is no file named handover.md; never look for either — always use the newest dated entry.
+```
+
 **HEAD after this patch:** 4220. **Next free ID:** run `python3 code/next_id.py EW` (block 4200–4299 active since 4199; 4100–4199 exhausted).
 **Detail handover:** `handovers/detail/2026-09-22_session_236_p4220_ew_arc_4191_4220.md` — read only the section the task needs.
 

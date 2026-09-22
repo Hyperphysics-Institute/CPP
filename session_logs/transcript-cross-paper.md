@@ -36,3 +36,17 @@ Created at Patch 0974a (Step B of the Session 228 close). **Its absence until th
 - `028` 2026-09-15 Session 231 CAPACITY-1 piece-1 conditionality qualified "on perturbed configurations" → `.../chirality_derivations/reasoning/0986.md`, `frontier_sectors/CHIR.md`
 - `029` 2026-09-15 Session 231 SF-2 notice — δ_CP contingency is CAPACITY-1's conditions, not H1; 4022 erratum line → `todolist.md` (TODO-4059-EW head), `series_standard_model/reasoning/4022.md`
 - `030` 2026-09-15 Session 231 Θ_OS exact-rate probe committed; run 1 (Kila6) adjudicated "claim nothing" under its own mis-sized rule; float-contamination reading refuted; run 2 rule pre-committed → `.../chirality_derivations/reasoning/0988.md`, `0989.md`, `code/0988_results_kila6_run1.txt`
+- `031` 2026-09-22 Session 236 EW lane — G-EW-BLOCK-4200 registered; handedness primitive on the CP, channel separate → `id_block_registry.md`, `series_standard_model/axiom_maturation/4191_*.md`
+- `032` 2026-09-22 Session 236 EW lane — coherent mixing excluded 6–12 orders near a magnet; 4184 §3 bannered → `series_standard_model/code/4192_coherent_mixing.py`, `axiom_maturation/4192_*.md`
+- `033` 2026-09-22 Session 236 EW lane — hop gate q(e·A) symmetry table: the one C-odd P-odd T-even CP-even term → `code/4193_hop_selector_symmetries.py`, `axiom_maturation/4193_*.md`
+- `034` 2026-09-22 Session 236 EW lane — measured neutral current read as displacement along own spin × contact weight → `code/4196_weak_drift_target.py`, `axiom_maturation/4196_*.md`
+- `035` 2026-09-22 Session 236 EW lane — weak charge by CPP constituent: +1/φ² per core, −1.073 per linear oscillator → `code/4197_*.py`, `code/4198_*.py`, `axiom_maturation/4197_*.md`, `4198_*.md`
+- `036` 2026-09-22 Session 236 EW lane — inheritance model: electron takes the quark DP; refill sense = Fermi/GT channel → `axiom_maturation/4201_*.md`, `4202_*.md`, `founders_voice/4201_*.md`
+- `037` 2026-09-22 Session 236 EW lane — founder ratifies inheritance — G-EW-INHERIT-4205; pure-GT limit reproduced exactly → `founders_voice/4205_*.md`, `code/4206_inheritance_correlations_full.py`, `axiom_maturation/4206_*.md`
+- `038` 2026-09-22 Session 236 EW lane — c03 vector-sum supplies the Fermi–GT cross term; λ = refill amplitude ratio → `axiom_maturation/4207_*.md`
+- `039` 2026-09-22 Session 236 EW lane — SF-2 v1.06: β⁻ walkthrough to inheritance; V−A attribution to own handedness; PRED-O-23 re-registered → `flagship_papers/electroweak/sf-2_electroweak.tex`, `documentation_suite/changelog-sf-2.md`, `predictions.md`
+- `040` 2026-09-22 Session 236 EW lane — OPEN-EW-NC registered: no neutral-current mechanism; SF-2's Z inert → `frontier_sectors/EW.md`, `axiom_maturation/4213_*.md`
+- `041` 2026-09-22 Session 236 EW lane — TODO-4214-ONESIGN: absolute sign not derivable; six relative signs pass (π decay, atomic PV, ν handedness, Goldhaber, CP); item 4 untested → `axiom_maturation/4214_*`–`4220_*.md`, `code/4215_*.py`, `4216_*.py`, `4217_*.py`
+- `042` 2026-09-22 Session 236 EW lane — PRED-O-42 registered: Dirac neutrinos, no 0νββ; basis corrected at 4220 → `predictions.md`
+- `043` 2026-09-22 Session 236 EW lane — founder corrections verbatim: which particle (4191), cage assignments (4212), which dipole (4220) → `founders_voice/4191_*.md`, `4212_*.md`, `4220_*.md`
+- `044` 2026-09-22 Session 236 EW lane — Session 236 close: boot card + detail handover; handovers/detail/ created → `handovers/2026-09-22_session_236_p4220_BOOTCARD.md`, `handovers/detail/2026-09-22_session_236_*.md`
