@@ -183,3 +183,7 @@ The genuine 120-vertex 600-cell has vertex-vertex angles only at multiples of 36
 **Registered:** Patch 4107, 18 Sep 2026.
 
 ---
+
+### OPEN-EW-NC: Neutral-current mechanism — none on file
+**Status:** OPEN — **registered 21 Sep 2026, Patch 4213 (EW lane).** SF-2 Cor. Zinert makes the Z a closed, inert shell (used for no-FCNC); it therefore cannot host the measured electron–quark neutral current (atomic parity violation, Qweak). 4196 read the measured interaction as a displacement along the electron's own spin weighted by local weak charge; 4197–4198 sorted that weight onto CPP constituents (+1/φ² per +qCP core, −1.073 per linear oscillator). **No CPP mechanism produces it.** Candidate routes (4213 §3): (a) an elastic W⁰ capture-and-re-ejection event near a quark core, using the ejection rule of 4201 — first to try; (b) an interacting Z, amending Cor. Zinert — second. Same kind of gap as OPEN-SM-11's 4103 audit.
+
