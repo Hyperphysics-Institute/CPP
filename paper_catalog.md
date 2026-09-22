@@ -19,10 +19,10 @@
 | Title | Ver | File | Last touched | Patch | Deposit |
 |---|---|---|---|---|---|
 | SF-1: The Charged-Lepton Sector from 600-Cell Geometry — Koide K=2/3 , the Koide Phase, and ... | 1.3 | `flagship_papers/charged_leptons/sf-1_charged_leptons.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| SF-8: Emergent Electrostatics and the Bonded ZBW Sea — Coulomb's Law Measured Out of the Mom... | 0.5 | `flagship_papers/electromagnetism/SF-8/sf-8_emergent_electrostatics.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| SF-6: Electromagnetism Unified — Classical, Relativistic, and Quantum Electrodynamics from e... | 1.6 | `flagship_papers/electromagnetism/sf-6_electromagnetism.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
+| SF-8: Emergent Electrostatics and the Bonded ZBW Sea — Coulomb's Law Measured Out of the Mom... | 0.5 | `flagship_papers/electromagnetism/SF-8/sf-8_emergent_electrostatics.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
+| SF-6: Electromagnetism Unified — Classical, Relativistic, and Quantum Electrodynamics from e... | 1.6 | `flagship_papers/electromagnetism/sf-6_electromagnetism.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 | SF-2 Companion: Cage Geometry Figures, Executive Overview, Glossary, Quantitative Frameworks... | 1.05 | `flagship_papers/electroweak/sf-2_companion.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry — W^ , W^0 , Z , and H as a ... | 1.05 | `flagship_papers/electroweak/sf-2_electroweak.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
+| SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry — W^ , W^0 , Z , and H as a ... | 1.08 | `flagship_papers/electroweak/sf-2_electroweak.tex` | 2026-09-22 | — | **UNKNOWN — not in prior catalog** |
 | SF-4: Neutrino Sector Unification from 600-Cell Geometry — Eight Parameters from One Calibra... | 3.4 | `flagship_papers/neutrinos/sf-4_neutrinos.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SF-3: The Quark Sector from 600-Cell Geometry — Masses, Strong Coupling, Koide Phase, and Ge... | 1.6 | `flagship_papers/quarks/sf-3_quarks.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SF-5: Strong-Sector Unification from 600-Cell Geometry — SU(3) Colour, the Eight Gluons, Con... | 1.04 | `flagship_papers/strong/sf-5_strong.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
@@ -61,7 +61,7 @@
 | Quark Confinement and the Cornell Potential — from qDP Chaining in Conscious Point Physics —... | 1.2 | `series_standard_model/papers/SM-11_quark_confinement_qDP_chaining.tex` | 2026-08-19 | 3231 | **UNKNOWN — not in prior catalog** |
 | Color Charge as Emergent Vertex Identity: — The hDP Tetrahedral Skeleton, the Shared Origin ... | — | `series_standard_model/papers/SM-12_SU3_color_from_600cell.tex` | 2026-08-19 | 3231 | **UNKNOWN — not in prior catalog** |
 | SM-1: Binding Mechanisms and Cage Stability — in the 600-Cell Lattice — 600-Cell Standard Mo... | — | `series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
-| SM-2: Mass Generation from Geometric Hierarchies — in the 600-Cell Lattice — 600-Cell Standa... | — | `series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex` | 2026-03-28 | — | **UNKNOWN — not in prior catalog** |
+| SM-2: Mass Generation from Geometric Hierarchies — in the 600-Cell Lattice — 600-Cell Standa... | — | `series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex` | 2026-09-14 | — | **UNKNOWN — not in prior catalog** |
 | SM-3: K3 Spectral Theorem and the Koide Formula — 600-Cell Standard Model Emergence Series — | — | `series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex` | 2026-04-16 | — | **UNKNOWN — not in prior catalog** |
 | SM-4: Charged Lepton Masses from the K3 Spectral Theorem — 600-Cell Standard Model Emergence... | — | `series_standard_model/papers/SM-4_charged_lepton_masses_from_k3.tex` | 2026-03-28 | — | **UNKNOWN — not in prior catalog** |
 | SM-5: Tribimaximal Neutrino Mixing as the Zeroth-Order — PMNS Matrix from the K3 Cage Base G... | — | `series_standard_model/papers/SM-5_tribimaximal_neutrino_mixing_from_k3.tex` | 2026-03-28 | — | **UNKNOWN — not in prior catalog** |
@@ -77,13 +77,13 @@
 
 | Title | Ver | File | Last touched | Patch | Deposit |
 |---|---|---|---|---|---|
-| The Absolute Moment Postulate: Necessity, Consistency, — and the PCD Cycle in Conscious Poin... | 3.3 | `series_relativity/SR_companion_papers/c01_absolute_moment_postulate/absolute_moment_postulate.tex` | 2026-08-17 | 3204 | **UNKNOWN — not in prior catalog** |
+| The Absolute Moment Postulate: Necessity, Consistency, — and the PCD Cycle in Conscious Poin... | 3.3 | `series_relativity/SR_companion_papers/c01_absolute_moment_postulate/absolute_moment_postulate.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 | Microscopic Origin of the Dipole Sea Stiffness C — in Conscious Point Physics — Companion Pa... | 2.3 | `series_relativity/SR_companion_papers/c02_dipole_stiffness_C/c02_dipole_stiffness_C.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
-| Quantum Probability and the Classical Transition — in Conscious Point Physics: A Mechanistic... | 2.1 | `series_relativity/SR_companion_papers/c03_born_rule/c03_born_rule.tex` | 2026-08-09 | 3030 | **UNKNOWN — not in prior catalog** |
-| Inertial Mass from Zitterbewegung: — A Two-Level Resonance Hierarchy in Conscious Point Phys... | 2.1 | `series_relativity/SR_companion_papers/c04_ZBW_hbar_mass_units/c04_ZBW_hbar_mass_units.tex` | 2026-08-17 | 3202 | **UNKNOWN — not in prior catalog** |
-| Dipole Chain Patterns as the Substrate of — Mass and Electromagnetic Radiation in CPP — Comp... | 2.5 | `series_relativity/SR_companion_papers/c06_DP_chaining_as_mass_and_EM_substrate/c06_dipole_chain_patterns_as_mass_EM_subtrate.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
+| Quantum Probability and the Classical Transition — in Conscious Point Physics: A Mechanistic... | 2.1 | `series_relativity/SR_companion_papers/c03_born_rule/c03_born_rule.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
+| Inertial Mass from Zitterbewegung: — A Two-Level Resonance Hierarchy in Conscious Point Phys... | 2.1 | `series_relativity/SR_companion_papers/c04_ZBW_hbar_mass_units/c04_ZBW_hbar_mass_units.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
+| Dipole Chain Patterns as the Substrate of — Mass and Electromagnetic Radiation in CPP — Comp... | 2.5 | `series_relativity/SR_companion_papers/c06_DP_chaining_as_mass_and_EM_substrate/c06_dipole_chain_patterns_as_mass_EM_subtrate.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 | SR-1: Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the ... | 1.2 | `series_relativity/papers/SR-1_special_relativity_emergence.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| SR-2: The Spin-Bit Axiom --- Necessity, Construction, — and the Derived Einstein Quadrupole ... | 1.5 | `series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
+| SR-2: The Spin-Bit Axiom --- Necessity, Construction, — and the Derived Einstein Quadrupole ... | 1.5 | `series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 
 ---
 
@@ -103,12 +103,12 @@
 
 | Title | Ver | File | Last touched | Patch | Deposit |
 |---|---|---|---|---|---|
-| Quantum Mechanics in Conscious Point Physics: — The Schr\"odinger Equation from Sea-Polariza... | 3.3 | `series_quantum_mechanics/papers/QM-1_schrodinger_emergence.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
+| Quantum Mechanics in Conscious Point Physics: — The Schr\"odinger Equation from Sea-Polariza... | 3.3 | `series_quantum_mechanics/papers/QM-1_schrodinger_emergence.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 | Quantum Mechanics in Conscious Point Physics: — Superposition and Interference from Multi-Pa... | 3.2 | `series_quantum_mechanics/papers/QM-2_superposition.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
 | Quantum Mechanics in Conscious Point Physics: — Entanglement and Bell Inequality Violation —... | 3.2 | `series_quantum_mechanics/papers/QM-3_bell_entanglement.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
-| Quantum Mechanics in Conscious Point Physics: — The Measurement Problem and Apparent Wavefun... | 3.2 | `series_quantum_mechanics/papers/QM-4_measurement_problem.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
-| Quantum Mechanics in Conscious Point Physics: — Emergent Quantum Field Theory, Second Quanti... | 3.1 | `series_quantum_mechanics/papers/QM-5_qft_emergence.tex` | 2026-08-04 | 2998 | **UNKNOWN — not in prior catalog** |
-| Quantum Mechanics in Conscious Point Physics: — Full Synthesis --- From Four Primitives to Q... | 3.2 | `series_quantum_mechanics/papers/QM-6_capstone.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
+| Quantum Mechanics in Conscious Point Physics: — The Measurement Problem and Apparent Wavefun... | 3.2 | `series_quantum_mechanics/papers/QM-4_measurement_problem.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
+| Quantum Mechanics in Conscious Point Physics: — Emergent Quantum Field Theory, Second Quanti... | 3.1 | `series_quantum_mechanics/papers/QM-5_qft_emergence.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
+| Quantum Mechanics in Conscious Point Physics: — Full Synthesis --- From Four Primitives to Q... | 3.2 | `series_quantum_mechanics/papers/QM-6_capstone.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 | SPIN-1: Emergent Spin- 12 from Captured Dipole Particle — Orbital Geometry in Conscious Poin... | 2.1 | `series_quantum_mechanics/spin_papers/SPIN-1_emergent_spin_from_captured_DPs/SPIN-1_emergent_spin_from_captured_DPs.tex` | 2026-08-20 | 3253 | **UNKNOWN — not in prior catalog** |
 | SPIN-2: Derivation of the Standing-Wave Sub-Harmonic Condition — for Captured Dipole Particl... | — | `series_quantum_mechanics/spin_papers/SPIN-2_standing_wave_subharmonics/SPIN-2_standing_wave_subharmonics.tex` | 2026-08-20 | 3253 | **UNKNOWN — not in prior catalog** |
 | SPIN-3: The ZBW Mode Spectrum and the Lattice Voronoi-Cell Eigenvalue Problem — | 1.0.1 | `series_quantum_mechanics/spin_papers/SPIN-3_600cell_voronoi_ZBW_eigenvalues/SPIN-3_600cell_voronoi_ZBW_eigenvalues.tex` | 2026-08-20 | 3253 | **UNKNOWN — not in prior catalog** |
@@ -136,7 +136,7 @@
 |---|---|---|---|---|---|
 | DM-1: A Velocity-Independent Self-Interacting Dark-Matter Candidate from Charge-Neutral qDP/... | 1.8 | `series_phenomena/cosmology/dark_matter/DM-1/DM-1_substrate_dark_matter_candidate.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | DM-3: The Discriminating Predictions — Nine observational protocols for the Cross-Rod dark-m... | 1.2 | `series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| EU-1: The Primordial Scalar Spectral Index from Substrate Inflation — A Zero-New-Axiom Deriv... | 1.6 | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | 2026-09-09 | 3809 | **UNKNOWN — not in prior catalog** |
+| EU-1: The Primordial Scalar Spectral Index from Substrate Inflation — A Zero-New-Axiom Deriv... | 1.6 | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | 2026-09-10 | 3852 | **UNKNOWN — not in prior catalog** |
 | DM-2: Sea Gravitation and the Dark Sector — One sourcing rule for matter, dark matter, and -... | 1.0 | `series_phenomena/cosmology/sea_gravitation/DM-2/DM-2_sea_gravitation_dark_sector.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
 | TP-1: The Truncated Photon and the Lattice Regularization of Shutter-Induced Photon Creation... | 1.4 | `series_phenomena/quantum_optics/photon_truncation/TP-1/TP-1_truncated_photon.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 
@@ -146,9 +146,9 @@
 
 | Title | Ver | File | Last touched | Patch | Deposit |
 |---|---|---|---|---|---|
-| The Capotauro Mechanism: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry P... | 2.3 | `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
+| The Capotauro Mechanism: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry P... | 2.3 | `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` | 2026-09-19 | 4104 | **UNKNOWN — not in prior catalog** |
 | Chirality Entry-Point Enumeration — in the Conscious Point Physics Framework — A Layer-3 unc... | 1.4 | `series_umbrella/series_substrate_chirality_arc/chirality_audit/theo_chir_audit_1.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| Cross-Sector Layer 4 Closure of the Substrate Chirality Handle: — Electroweak V--A Coupling ... | 1.3 | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
+| Cross-Sector Layer 4 Closure of the Substrate Chirality Handle: — Electroweak V--A Coupling ... | 1.3 | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` | 2026-09-14 | — | **UNKNOWN — not in prior catalog** |
 | The Substrate\, \,Electroweak Chirality Correspondence: — the -Match and the P/T-Face Dictio... | 1.4 | `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_bridge_1.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | The Capture/Partnering Handedness as a Registered Involution — Times the Enantiomorph Sign o... | 1.3 | `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_cap_1.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | The Substrate Chirality Magnitude = ^-3 as the — Locality-Selected Symmetric Bias of the 600... | 1.3 | `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_chi_1.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
@@ -158,10 +158,10 @@
 | The Primitive/Emergent Status of Chirality: — Verdict Structure and Current-Rigor Placement ... | 1.4 | `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_status_1.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | The Chiral-Vacuum Breaking Chain — and the V1-Pinning of the Chirality-Magnitude Emergence U... | 1.4 | `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_status_2.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | The Primitive/Emergent Status of the Time-Reversal Arrow () : — The Temporal Half of the Chi... | 1.4 | `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_tarrow_1.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| A Derived Substrate Time-Asymmetry Mechanism: — the ^3 Non-Reversibility of the Mechanism-A ... | 1.4 | `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_tarrow_2.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| The Reflection-Positivity Structure of the Substrate Parity : — Unifying the V2-Exclusion wi... | 1.5 | `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_vw_1.tex` | 2026-09-15 | 0985 | **UNKNOWN — not in prior catalog** |
+| A Derived Substrate Time-Asymmetry Mechanism: — the ^3 Non-Reversibility of the Mechanism-A ... | 1.4 | `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_tarrow_2.tex` | 2026-09-14 | — | **UNKNOWN — not in prior catalog** |
+| The Reflection-Positivity Structure of the Substrate Parity : — Unifying the V2-Exclusion wi... | 1.5 | `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_vw_1.tex` | 2026-09-15 | — | **UNKNOWN — not in prior catalog** |
 | The =0 Reflection-Positivity Anchor and the Osterwalder--Schrader Reduction of H1 to VW-a-4 ... | 1.3 | `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_vw_2.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| The Dynamical Substrate Law: — Substrate-Locality of DI-Bit Currents at — Vertex-Aligned Rea... | 1.3 | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
+| The Dynamical Substrate Law: — Substrate-Locality of DI-Bit Currents at — Vertex-Aligned Rea... | 1.3 | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` | 2026-09-14 | — | **UNKNOWN — not in prior catalog** |
 | Cross-Shell Edge Orbit Decompositions under D_5 D5 Stabilizer — at Edge-Aligned Reading C in... | 1.1 | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/cross_shell_edge_d5_orbits.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
 | Edge-Aligned Reading-C Invariant-Subspace Structural Theorem — for the Net DI-Bit Current at... | 1.2 | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/edge_aligned_invariant_subspace_structural.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | Face-Aligned Reading-C Invariant-Subspace Structural Theorem — for the Net DI-Bit Current at... | 1.2 | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/face_aligned_invariant_subspace_structural.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
@@ -193,29 +193,30 @@
 | Title | Ver | File | Last touched | Patch |
 |---|---|---|---|---|
 | Newtonian Gravity from SSV Shell Broadcast — in Conscious Point Physics — Companion Paper to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | — | `series_gravitation/GR_companion_papers/GR-1a_newtonian_gravity_from_SSV/GR-1a_gravity_from_SSV_shell_broadcast.tex` | 2026-08-20 | 3273 |
-| Weak-Field General Relativity — from the Lattice State Packet — in Conscious Point Physics — Companion Paper to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 3.7 | `series_gravitation/GR_companion_papers/GR-1b_weak_field_GR/GR-1b_weak_field_GR.tex` | 2026-09-02 | 3373 |
-| Strong-Field General Relativity and the CPP Field Equation — from the Lattice State Packet in Conscious Point Physics — Companion 8 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 2.3 | `series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/GR-1c_strong_field_GR.tex` | 2026-09-03 | 3395 |
+| Weak-Field General Relativity — from the Lattice State Packet — in Conscious Point Physics — Companion Paper to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 3.7 | `series_gravitation/GR_companion_papers/GR-1b_weak_field_GR/GR-1b_weak_field_GR.tex` | 2026-09-20 | — |
+| Strong-Field General Relativity and the CPP Field Equation — from the Lattice State Packet in Conscious Point Physics — Companion 8 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 2.3 | `series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/GR-1c_strong_field_GR.tex` | 2026-09-20 | — |
 | General Relativity from Lattice State Packet Dynamics — in Conscious Point Physics — Companion Paper to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | — | `series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/development/strong_field_GR.tex` | 2026-08-19 | 3230 |
 | Gravitational Wave Echoes from the Planck Core — in Conscious Point Physics — Companion 9 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | — | `series_gravitation/GR_companion_papers/GR-1d_gravitational_wave_echoes/GR-1d_GW_echoes.tex` | 2026-09-02 | 3371 |
 | Gravitational Wave Echoes from the Planck Core — in Conscious Point Physics — Companion 9 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | — | `series_gravitation/GR_companion_papers/GR-1d_gravitational_wave_echoes/development/Claude-GW-echoes.tex` | 2026-08-19 | 3230 |
 | Gravitational Wave Echoes from the Planck Core — in Conscious Point Physics — Companion Paper 9 --- Companion Paper 9 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | — | `series_gravitation/GR_companion_papers/GR-1d_gravitational_wave_echoes/development/Grok-GW_echoes.tex` | 2026-08-19 | 3230 |
-| Hawking Radiation and the Planck Remnant — in Conscious Point Physics — Companion 10 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 1.1 | `series_gravitation/GR_companion_papers/GR-1e_hawking_radiation_planck_remnant/GR-1e_hawking_radiation.tex` | 2026-08-21 | 3303 |
+| Hawking Radiation and the Planck Remnant — in Conscious Point Physics — Companion 10 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 1.1 | `series_gravitation/GR_companion_papers/GR-1e_hawking_radiation_planck_remnant/GR-1e_hawking_radiation.tex` | 2026-09-20 | — |
 | Hawking Radiation and the Planck Remnant — in Conscious Point Physics — Companion 10 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | — | `series_gravitation/GR_companion_papers/GR-1e_hawking_radiation_planck_remnant/development/Claude_Hawking_Radiation.tex` | 2026-08-19 | 3230 |
-| The Kerr Metric from Rotational SSV — in Conscious Point Physics — Companion 11 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 1.2 | `series_gravitation/GR_companion_papers/GR-1f_kerr_metric_from_rotational_SSV/GR-1f_kerr_metric.tex` | 2026-08-21 | 3327 |
-| The Kerr-Newman Metric from Combined SSV Sources — in Conscious Point Physics — Companion 12 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 1.1 | `series_gravitation/GR_companion_papers/GR-1g_kerr_newman_charged_rotating_BH/GR-1g_kerr_newman.tex` | 2026-08-21 | 3307 |
+| The Kerr Metric from Rotational SSV — in Conscious Point Physics — Companion 11 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 1.2 | `series_gravitation/GR_companion_papers/GR-1f_kerr_metric_from_rotational_SSV/GR-1f_kerr_metric.tex` | 2026-09-20 | — |
+| The Kerr-Newman Metric from Combined SSV Sources — in Conscious Point Physics — Companion 12 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 1.1 | `series_gravitation/GR_companion_papers/GR-1g_kerr_newman_charged_rotating_BH/GR-1g_kerr_newman.tex` | 2026-09-20 | — |
 | The Kerr-Newman Metric from Combined SSV Sources — in Conscious Point Physics — Companion 12 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | — | `series_gravitation/GR_companion_papers/GR-1g_kerr_newman_charged_rotating_BH/development/Claude_Kerr-Newman.tex` | 2026-08-19 | 3230 |
-| Superradiance from the Kerr SSV — in Conscious Point Physics — Companion 13 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 1.2 | `series_gravitation/GR_companion_papers/GR-1h_superradiance/GR-1h_superradiance.tex` | 2026-08-21 | 3328 |
-| GR-1i: The Classical Tests of Gravitation — Perihelion precession, light deflection, Shapiro delay, and gravitational redshift as geodesic consequences of the CPP shell-broadcast metric — Companion i to GR-1 --- Conscious Point Physics gravitation series --- | 0.1 | `series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex` | 2026-08-20 | 3269 |
-| GR-1j: The CPP Field Equations from the Messenger Census — T-1 (the general equation), T-2 (Birkhoff-type uniqueness), and T-3 (the conserved source current), derived from the three-type conscious-point automaton — Companion j to GR-1 --- Conscious Point Physics gravitation series --- | 1.0 | `series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex` | 2026-08-20 | 3270 |
-| GR-1: Local Gravitation from SSV Shell Broadcast — One nonlinear substrate response from Coulomb's law to the exact Schwarzschild, Kerr, and Kerr--Newman metrics — | 1.0.2 | `series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex` | 2026-08-20 | 3276 |
-| The Echo Falsifier: — Millisecond Gravitational-Wave Echoes from Horizonless — CPP Compact Objects — Second series paper of the Conscious Point Physics gravitation series (parent: GR-1) | 2.11 | `series_gravitation/papers/GR-2_echo_falsifier.tex` | 2026-09-09 | 3714 |
+| Superradiance from the Kerr SSV — in Conscious Point Physics — Companion 13 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 1.2 | `series_gravitation/GR_companion_papers/GR-1h_superradiance/GR-1h_superradiance.tex` | 2026-09-20 | — |
+| GR-1i: The Classical Tests of Gravitation — Perihelion precession, light deflection, Shapiro delay, and gravitational redshift as geodesic consequences of the CPP shell-broadcast metric — Companion i to GR-1 --- Conscious Point Physics gravitation series --- | 0.1 | `series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex` | 2026-09-20 | — |
+| GR-1j: The CPP Field Equations from the Messenger Census — T-1 (the general equation), T-2 (Birkhoff-type uniqueness), and T-3 (the conserved source current), derived from the three-type conscious-point automaton — Companion j to GR-1 --- Conscious Point Physics gravitation series --- | 1.0 | `series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex` | 2026-09-20 | — |
+| GR-1: Local Gravitation from SSV Shell Broadcast — One nonlinear substrate response from Coulomb's law to the exact Schwarzschild, Kerr, and Kerr--Newman metrics — | 1.0.2 | `series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex` | 2026-09-20 | — |
+| The Echo Falsifier: — Millisecond Gravitational-Wave Echoes from Horizonless — CPP Compact Objects — Second series paper of the Conscious Point Physics gravitation series (parent: GR-1) | 2.11 | `series_gravitation/papers/GR-2_echo_falsifier.tex` | 2026-09-20 | — |
 
 ## DEFECT — title-page version disagrees with the CHANGELOG
 
-**1 paper(s).** The version history is authoritative; `\date{}` renders it onto the title page and can be missed during a bump. **A PDF recompiled from these files would deposit to OSF carrying the wrong version number.** Fix the `\date{}` line before recompiling.
+**2 paper(s).** The version history is authoritative; `\date{}` renders it onto the title page and can be missed during a bump. **A PDF recompiled from these files would deposit to OSF carrying the wrong version number.** Fix the `\date{}` line before recompiling.
 
 | File | CHANGELOG | Title page | Last patch |
 |---|---|---|---|
+| `flagship_papers/electroweak/sf-2_electroweak.tex` | **1.08** | 1.06 | — |
 | `series_standard_model/papers/SM-11_quark_confinement_qDP_chaining.tex` | **1.2** | 1.1 | 3231 |
 
 ## Papers carrying no parseable version stamp
@@ -237,7 +238,7 @@
 | `series_standard_model/development-transcripts/SM-12/grok_SU3_color.tex` | 2026-08-19 | 3231 |
 | `series_standard_model/papers/SM-12_SU3_color_from_600cell.tex` | 2026-08-19 | 3231 |
 | `series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex` | 2026-04-02 | — |
-| `series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex` | 2026-03-28 | — |
+| `series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex` | 2026-09-14 | — |
 | `series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex` | 2026-04-16 | — |
 | `series_standard_model/papers/SM-4_charged_lepton_masses_from_k3.tex` | 2026-03-28 | — |
 | `series_standard_model/papers/SM-5_tribimaximal_neutrino_mixing_from_k3.tex` | 2026-03-28 | — |

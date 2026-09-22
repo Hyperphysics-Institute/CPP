@@ -212,7 +212,7 @@
       "rel": "flagship_papers/electromagnetism/SF-8/sf-8_emergent_electrostatics.tex",
       "title": "SF-8: Emergent Electrostatics and the Bonded ZBW Sea",
       "ver": "0.5",
-      "changed": "2026-08-18",
+      "changed": "2026-09-20",
       "cls": "Flagship",
       "withheld": "",
       "wave": 1,
@@ -226,7 +226,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -256,7 +256,7 @@
       "rel": "flagship_papers/electromagnetism/sf-6_electromagnetism.tex",
       "title": "SF-6: Electromagnetism Unified",
       "ver": "1.6",
-      "changed": "2026-08-18",
+      "changed": "2026-09-20",
       "cls": "Flagship",
       "withheld": "",
       "wave": 1,
@@ -270,7 +270,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -342,8 +342,8 @@
     {
       "rel": "flagship_papers/electroweak/sf-2_electroweak.tex",
       "title": "SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry",
-      "ver": "1.05",
-      "changed": "2026-08-18",
+      "ver": "1.08",
+      "changed": "2026-09-22",
       "cls": "Flagship",
       "withheld": "",
       "wave": 1,
@@ -357,14 +357,14 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-22",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
         "subjects": [
           "Physics"
         ],
-        "version": "1.05",
+        "version": "1.08",
         "description": "Paper type: Flagship derivation paper. Establishes a parameter-economic derivation of the electroweak cage-boson sector --- the $W^ $, $W^0$, $Z$, and Higgs bosons --- as a single geometric family from the 600-cell substrate machinery developed in the Standard Model Emergence (SM) and Strong Sector (SS) series, plus Conscious Point Physics (CPP) primitives. The Standard Model treats the electroweak bosons as the gauge-field excitations of $SU(2)_L U(1)_Y$ broken by a postulated Higgs field; the four boson masses and their internal structure are not derived from first principles. SF-2 proposes a structurally constrained derivation in which the four cage bosons emerge as specific subgraphs of the 600-cell substrate, with the $SU(2)_L$ gauge algebra arising from the binary icosahedral group $ $ acting on the 120 lattice vertices, and the Yang-Mills effective field theory recovering as the coarse-graining limit of CPP substrate dynamics at the level of proof outline (full continuum derivation registered as future work). The four cage geometries --- 6-vertex regular hexagonal bracelet ($W^ /W^0$), 12-vertex icosahedral closed loop ($Z$), 20-vertex dodecahedral closed shell ($H$), and the mass-gap prediction of no additional electroweak scalar below approximately 200 GeV --- are theorem-level forced by the distance-shell and symmetry-orbit classification of 600-cell substructures. The Weinberg angle is established as a zero-parameter numerical correspondence emerging from the spectral trace structure of the 600-cell, with the predicted value $ = 3/(8 ) 0.23121$ inherited from the SM-6 spectral-trace argument~ abshier_sm6; the correspondence is numerically coincident with the low-energy effective value of $ $ (Weinberg angle runs with scale, and renormalization-scheme conventions differ at the per-mille level). The tree-level mass-ratio cross-check $ / = 1/ _W = 1.140$ vs observed 1.134 closes to 0.5\\% with no cross-calibration between the Weinberg-angle spectral-trace correspondence and the cage-stability mass-formula machinery. The four-cage spin assignments emerge from the cage geometries with rigor tiered by cage. The $W$ is vector at $75\\%$ V--A from bracelet $120 ^ /240 ^ $ phase bias, becoming $100\\%$ V--A at the massless helicity limit per OPEN-FP-SF-2-CHIR; this is structural preference, not theorem-level. The $Z$ is axial-vector from icosahedral 4-layer phase interference; this is also structural preference. The $H$ is scalar at the finite-symmetry level from the dodecahedron's $A_5$ rotation group admitting only the trivial odd-dimensional representation, which is a theorem at finite-group level; the relativistic Lorentz-scalar character inherits via the continuum-limit Yang-Mills EFT (Theorem~ thm:YM_EFT). The forced-choice prediction. The $W^0$ is a CPP-novel neutral massive boson with no Standard Model analog. The 6-vertex regular hexagonal bracelet is the unique H$_4$ orbit of induced 6-cycles in the 600-cell with maximal symmetry ($D_6$ stabilizer of order 12; orbit size 1200, verified by direct enumeration of 4800 induced 6-cycles partitioned into exactly 2 orbits). The $W^0$ exists as a stable virtual bracelet configuration in the Dipole Sea at STP. The $W^ $ state we measure at colliders is the activated $W^0$: a transient catalyst-substrate composed of the bracelet plus a centroid-captured external charge plus source-particle charge debris bound to the bracelet's vertex surfaces. The activated $W^0$ disintegrates on the bracelet cage-stability timescale ($ 3 10^-25$ s, matching observed $W$ lifetime), with the debris reorganizing statistically into final-state particles per the local SSV-gradient probability structure. Two experimental signatures distinguish the $W^0$ from existing Standard Model channels: contribution to the oblique precision parameters $S$, $T$, $U$ from $W^0$ vacuum polarization with characteristic sign differences from the bracelet's zero net charge, and an energy-dependent $W$-mass shift pattern from collision-energy-dependent debris configurations on the bracelet --- proposed to partially account for the CDF $W$-mass anomaly at Tevatron energies. Electroweak symmetry breaking in CPP is reformulated: there is no fundamental Higgs field and no vacuum expectation value; the cage-formation event in which 6 hDPs from the DP Sea organize into a hexagonal bracelet (or 12 CPs into an icosahedral cage, or 20 CPs into a dodecahedral cage) is itself the CPP analog of EWSB. Note the unit asymmetry: the $W$ bracelet's six hDPs span 12 CPs across the bracelet's six vertices (two CPs per vertex), while the $Z$ icosahedron and $H$ dodecahedron host one CP per vertex (12 and 20 vertices respectively). The substrate H$_4$ symmetry breaks to the cage-internal symmetry ($D_6$ for $W$, icosahedral $I_h$ for $Z$, $I_h$ for $H$) at cage formation. The continuum-limit Yang-Mills EFT (Theorem~7.3) recovers the SM-form Lagrangian with a confinement potential $V_ cage$ in place of the Higgs potential. The paper makes specific structural predictions and identifies six falsifiers: $W^0$ ruled out at substrate level (substrate-level near-term, addressable during Phase 3); oblique-parameter constraint via existing LEP/SLC precision data (existing-data falsification window); CDF $W$-mass anomaly energy-dependence at HL-LHC Phase II (near-term experimental, 2029--2035); no second scalar below 200 GeV (LHC searches consistent through 2026); $ (Q)$ running deviation from SM-6 prediction (future precision via FCC-ee); and the Capotauro cross-sector closure attempt (Phase 7 OPTIONAL closure-attempt falsifier). The $W^0$ has both an existing-data falsifier (oblique parameters) and a near-term experimental falsifier (CDF energy-dependence pattern). The cage-shape geometry framework derives at theorem level via direct numerical enumeration of 600-cell substructures (Theorems~ thm:Zicos, thm:Wbracelet, thm:Hdodec, thm:massgap); the $W^0$ catalyst mechanism derives at framework level via six propositions (Propositions~ prop:centroid-- prop:universality) supplied by Thomas's Session~82 physical-intuition input. The four cage-boson masses remain at PARTIAL CLOSURE in v1.0: reproduced via independent calibration of the holographic dilution factor $ 10^-17$ per boson (OPEN-FP-SF-2-$ $, inheriting from EW corpus OPEN-P-EW-1).",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -1173,7 +1173,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1b_weak_field_GR/GR-1b_weak_field_GR.tex",
       "title": "Weak-Field General Relativity",
       "ver": "3.7",
-      "changed": "2026-09-02",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1186,7 +1186,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-02",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1194,7 +1194,7 @@
           "Physics"
         ],
         "version": "3.7",
-        "description": "We derive the weak-field limit of general relativity in Conscious Point Physics by extending the DI-bit broadcast to include the net SSV vector $ _ net$ alongside the absolute SSV scalar $| |_ abs$. The Lattice State Packet (LSP) is explicitly constructed from the compressive polarization energy $E_ pol = mc^2$ of the eDP cloud abshier2026mass: $| |_ abs = E_ pol/V_0$ sources $g_tt$ (time curvature) and $ _ net$ sources $g_ij$ (spatial curvature). Together they reproduce the weak-field isotropic Schwarzschild metric with no free parameters. The famous factor-of-two between the Newtonian and GR gravitational lensing deflection angles (0.875 vs.\\ 1.75~arcsec) is explained as equal contributions from temporal and spatial curvature --- a retroactive prediction of the two-component LSP structure that independently confirms the classical measurement of eddington1920. Geodesic motion follows from the 12-edge maximum-gradient selection rule in the continuum limit abshier2026am. The impedance of free space $Z_0 = _0/ _0$ is derived from lattice parameters, closing an open problem from the ZDC Chaining companion abshier2026zdc. Gravitational waves arise as lattice perturbations propagating at $c$, consistent with abbott2016. No new postulates beyond the LSP are introduced.",
+        "description": "We derive the weak-field limit of general relativity in Conscious Point Physics by extending the DI-bit broadcast to include the net SSV vector $ V$ alongside the absolute SSV scalar $| |_ abs$. The Lattice State Packet (LSP) is explicitly constructed from the compressive polarization energy $E_ pol = mc^2$ of the eDP cloud abshier2026mass: $| |_ abs = E_ pol/V_0$ sources $g_tt$ (time curvature) and $ V$ sources $g_ij$ (spatial curvature). Together they reproduce the weak-field isotropic Schwarzschild metric with no free parameters. The famous factor-of-two between the Newtonian and GR gravitational lensing deflection angles (0.875 vs.\\ 1.75~arcsec) is explained as equal contributions from temporal and spatial curvature --- a retroactive prediction of the two-component LSP structure that independently confirms the classical measurement of eddington1920. Geodesic motion follows from the 12-edge maximum-gradient selection rule in the continuum limit abshier2026am. The impedance of free space $Z_0 = _0/ _0$ is derived from lattice parameters, closing an open problem from the ZDC Chaining companion abshier2026zdc. Gravitational waves arise as lattice perturbations propagating at $c$, consistent with abbott2016. No new postulates beyond the LSP are introduced.",
         "description_ok": true,
         "description_source": "abstract environment"
       },
@@ -1216,7 +1216,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/GR-1c_strong_field_GR.tex",
       "title": "Strong-Field General Relativity and the CPP Field Equation",
       "ver": "2.3",
-      "changed": "2026-09-03",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1229,7 +1229,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-03",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1302,7 +1302,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1e_hawking_radiation_planck_remnant/GR-1e_hawking_radiation.tex",
       "title": "Hawking Radiation and the Planck Remnant",
       "ver": "1.1",
-      "changed": "2026-08-21",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1315,7 +1315,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-21",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1345,7 +1345,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1f_kerr_metric_from_rotational_SSV/GR-1f_kerr_metric.tex",
       "title": "The Kerr Metric from Rotational SSV",
       "ver": "1.2",
-      "changed": "2026-08-21",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1358,7 +1358,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-21",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1366,7 +1366,7 @@
           "Physics"
         ],
         "version": "1.2",
-        "description": "We derive the CPP origin of the Kerr metric for a rotating mass. A rotating source with angular momentum $J$ produces an azimuthal $ _ net$ component: equation k\\,( _ net)_ \\;=\\; GJ ^2 c^2 r^3, eq:ssv_phi_abstract equation sourced by the same 12-edge selection rule that generates the Schwarzschild scalar SSV. Via the LSP off-diagonal metric mapping, this produces the Lense-Thirring frame-dragging term: equation g_t \\;=\\; - 2GJ ^2 c^2 r eq:gtphi_abstract equation exactly in the weak-field limit, confirmed by Gravity Probe~B to $0.3\\%$~ everitt2011. The Kerr bound $J GM^2/c$ follows rigorously from the requirement that the azimuthal SSV broadcast velocity not exceed $c$ (Theorem~ thm:kerr_bound). The ergosphere arises where the azimuthal SSV drag velocity equals $c$ (Theorem~ thm:ergosphere). The Schwarzschild limit ($J=0$) is recovered exactly (Corollary~ cor:schwarz_limit). The full Boyer-Lindquist Kerr metric is consistent with the CPP mechanism at all orders (Proposition~ prop:kerr_full); the all-orders derivation from the CPP field equation is Open Problem~ op:allorders. No new postulates beyond companion~8 are introduced.",
+        "description": "We derive the CPP origin of the Kerr metric for a rotating mass. A rotating source with angular momentum $J$ produces an azimuthal $V_i$ component: equation k\\,(V_i)_ \\;=\\; GJ ^2 c^2 r^3, eq:ssv_phi_abstract equation sourced by the same 12-edge selection rule that generates the Schwarzschild scalar SSV. Via the LSP off-diagonal metric mapping, this produces the Lense-Thirring frame-dragging term: equation g_t \\;=\\; - 2GJ ^2 c^2 r eq:gtphi_abstract equation exactly in the weak-field limit, confirmed by Gravity Probe~B to $0.3\\%$~ everitt2011. The Kerr bound $J GM^2/c$ follows rigorously from the requirement that the azimuthal SSV broadcast velocity not exceed $c$ (Theorem~ thm:kerr_bound). The ergosphere arises where the azimuthal SSV drag velocity equals $c$ (Theorem~ thm:ergosphere). The Schwarzschild limit ($J=0$) is recovered exactly (Corollary~ cor:schwarz_limit). The full Boyer-Lindquist Kerr metric is consistent with the CPP mechanism at all orders (Proposition~ prop:kerr_full); the all-orders derivation from the CPP field equation is Open Problem~ op:allorders. No new postulates beyond companion~8 are introduced.",
         "description_ok": true,
         "description_source": "abstract environment"
       },
@@ -1388,7 +1388,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1g_kerr_newman_charged_rotating_BH/GR-1g_kerr_newman.tex",
       "title": "The Kerr-Newman Metric from Combined SSV Sources",
       "ver": "1.1",
-      "changed": "2026-08-21",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1401,7 +1401,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-21",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1431,7 +1431,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1h_superradiance/GR-1h_superradiance.tex",
       "title": "Superradiance from the Kerr SSV",
       "ver": "1.2",
-      "changed": "2026-08-21",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1444,7 +1444,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-21",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1474,7 +1474,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex",
       "title": "GR-1i: The Classical Tests of Gravitation",
       "ver": "0.1",
-      "changed": "2026-08-20",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1487,7 +1487,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute"
         ],
-        "publication_date": "2026-08-20",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1517,7 +1517,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex",
       "title": "GR-1j: The CPP Field Equations from the Messenger Census",
       "ver": "1.0",
-      "changed": "2026-08-20",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1530,7 +1530,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute"
         ],
-        "publication_date": "2026-08-20",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1560,7 +1560,7 @@
       "rel": "series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex",
       "title": "GR-1: Local Gravitation from SSV Shell Broadcast",
       "ver": "1.0.2",
-      "changed": "2026-08-20",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1573,7 +1573,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute"
         ],
-        "publication_date": "2026-08-20",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1603,7 +1603,7 @@
       "rel": "series_gravitation/papers/GR-2_echo_falsifier.tex",
       "title": "The Echo Falsifier:",
       "ver": "2.11",
-      "changed": "2026-09-09",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1616,7 +1616,7 @@
         "creators": [
           "Thomas Lee Abshier, NDInstitute"
         ],
-        "publication_date": "2026-09-09",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1872,7 +1872,7 @@
       "rel": "series_quantum_mechanics/papers/QM-1_schrodinger_emergence.tex",
       "title": "Quantum Mechanics in Conscious Point Physics:",
       "ver": "3.3",
-      "changed": "2026-08-18",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1885,7 +1885,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1893,7 +1893,7 @@
           "Physics"
         ],
         "version": "3.3",
-        "description": "The time-dependent Schr\\\"odinger equation is derived in Conscious Point Physics from the per-Moment dynamics of the Sea-polarization pattern registered at the Grid Points of the 600-cell lattice. The complex site field $ _i = _i\\,e^i _i$ is not postulated: it is a repackaging of the two dynamical registers the Grid-Point state protocol (A3$'$) already holds --- $ _i$ is the count-like scalar register ($ _ abs$; DI-bit number density), and $ _i$ is the orientation of the vector register ($ _ net$) in the distinguished ZBW plane (foundational input FI-QMRG-1, founder-anchored). DI-bits are stateless couriers with content \\origin address, electric vector $ E$, strong vector $ S$\\ (A1$'$/AP-4, ratified Patch 3032, superseding AP-2's \\charge, type, origin address\\ enumeration; the no-phase and count-like clauses are preserved, restated in AP-4a's static-snapshot form); they carry no phase --- the phase is a property of the pattern they collectively refresh. (O-7 reconciliation, v2.10: results in this paper proved from AP-2's one-arrival-one-edge minimality premise --- the Patch 3005 exclusion theorem and the Patch 3002 fork resolution --- remain stated as proved under their original premises; the watch condition W-MULTILINK-1 has FIRED on AP-4's content enrichment, and the O-6 re-derivation obligation is BLOCKING for anything shipping on AP-4 premises.) The pattern's phase advances at the Zitterbewegung rate $ _C = mc^2/ $, modulated to first order by the local $ $ potential; this preserves, at the pattern level, the exact numerical content of the earlier per-bit phase-accumulation equation, whose per-bit reading is retired (see the anti-erasure notes in 2). The discrete evolution over one Absolute Moment tick is a complex hopping Hamiltonian with off-diagonal amplitude $T = ^2/(4m s^2)$; the graph Laplacian of the 600-cell satisfies $ _j i( _j - _i) = 2 s^2 ^2 + O( s^4)$ in the continuum limit, yielding exactly $i _t = [- ^2 ^2/(2m) + V] $. The imaginary unit is grounded in the geometry of the phase register: multiplication by $-i$ is a quarter-turn of $ _ net$ in the distinguished plane, and the update is unitary because PCD displacement is reversible and the Nexus conserves the count register (derivation-sketch grade, conditional on the named inputs FI-QMRG-1 and B-QMRG-1; see 3). The Madelung decomposition shows the quantum pressure term $Q = - ^2 ^2\\! /(2m )$ emerges automatically from complex hopping; it is not postulated. Lattice corrections are of order $( / )^2$ and unobservable at laboratory wavelengths.",
+        "description": "The time-dependent Schr\\\"odinger equation is derived in Conscious Point Physics from the per-Moment dynamics of the Sea-polarization pattern registered at the Grid Points of the 600-cell lattice. The complex site field $ _i = _i\\,e^i _i$ is not postulated: it is a repackaging of the two dynamical registers the Grid-Point state protocol (A3$'$) already holds --- $ _i$ is the count-like scalar register ($ _ abs$; DI-bit number density), and $ _i$ is the orientation of the vector register ($V_i$) in the distinguished ZBW plane (foundational input FI-QMRG-1, founder-anchored). DI-bits are stateless couriers with content \\origin address, electric vector $ E$, strong vector $ S$\\ (A1$'$/AP-4, ratified Patch 3032, superseding AP-2's \\charge, type, origin address\\ enumeration; the no-phase and count-like clauses are preserved, restated in AP-4a's static-snapshot form); they carry no phase --- the phase is a property of the pattern they collectively refresh. (O-7 reconciliation, v2.10: results in this paper proved from AP-2's one-arrival-one-edge minimality premise --- the Patch 3005 exclusion theorem and the Patch 3002 fork resolution --- remain stated as proved under their original premises; the watch condition W-MULTILINK-1 has FIRED on AP-4's content enrichment, and the O-6 re-derivation obligation is BLOCKING for anything shipping on AP-4 premises.) The pattern's phase advances at the Zitterbewegung rate $ _C = mc^2/ $, modulated to first order by the local $ $ potential; this preserves, at the pattern level, the exact numerical content of the earlier per-bit phase-accumulation equation, whose per-bit reading is retired (see the anti-erasure notes in 2). The discrete evolution over one Absolute Moment tick is a complex hopping Hamiltonian with off-diagonal amplitude $T = ^2/(4m s^2)$; the graph Laplacian of the 600-cell satisfies $ _j i( _j - _i) = 2 s^2 ^2 + O( s^4)$ in the continuum limit, yielding exactly $i _t = [- ^2 ^2/(2m) + V] $. The imaginary unit is grounded in the geometry of the phase register: multiplication by $-i$ is a quarter-turn of $V_i$ in the distinguished plane, and the update is unitary because PCD displacement is reversible and the Nexus conserves the count register (derivation-sketch grade, conditional on the named inputs FI-QMRG-1 and B-QMRG-1; see 3). The Madelung decomposition shows the quantum pressure term $Q = - ^2 ^2\\! /(2m )$ emerges automatically from complex hopping; it is not postulated. Lattice corrections are of order $( / )^2$ and unobservable at laboratory wavelengths.",
         "description_ok": true,
         "description_source": "abstract environment"
       },
@@ -2001,7 +2001,7 @@
       "rel": "series_quantum_mechanics/papers/QM-4_measurement_problem.tex",
       "title": "Quantum Mechanics in Conscious Point Physics:",
       "ver": "3.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -2014,7 +2014,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2044,7 +2044,7 @@
       "rel": "series_quantum_mechanics/papers/QM-5_qft_emergence.tex",
       "title": "Quantum Mechanics in Conscious Point Physics:",
       "ver": "3.1",
-      "changed": "2026-08-04",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -2057,7 +2057,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-04",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2065,7 +2065,7 @@
           "Physics"
         ],
         "version": "3.1",
-        "description": "Quantum field theory emerges in Conscious Point Physics from the collective excitation modes of the complex Sea-polarization site field on the 600-cell lattice. The site field $ _i = _i\\,e^i _i$ (QM-1 v2.0: count register $ _i$, $ _ net$-orientation phase $ _i$) is expanded in the 120 orthonormal eigenmodes of the 600-cell adjacency matrix, yielding field operators $ ( r_i) = _k(a_k u_k(i) + a_k^ u_k(i)^*)/ 2 _k$. Bosonic commutation relations $[a_k,a_k'^ ] = _kk'$ follow from eigenmode orthonormality (Theorem~ thm:commutators). Fermions arise from charged CP aggregates obeying the CP exclusion principle (one per Grid Point); bosons from neutral DI-bit modes (Theorem~ thm:fermboson). The Planck-scale lattice provides a physical UV cutoff $k_ = / $, rendering every loop integral finite. The electron self-energy correction is large ($ E_P^2$) but finite; the hierarchy problem becomes a well-defined finite fine-tuning problem rather than an infinite renormalization. The 600-cell has exactly six distinct eigenvalues (golden-ratio multiples), mapping suggestively to the three SM generations --- a structural coincidence that remains an open problem (Open Problem~ op:generations). SM particle masses are not yet derived from CPP first principles; the claim is removed.",
+        "description": "Quantum field theory emerges in Conscious Point Physics from the collective excitation modes of the complex Sea-polarization site field on the 600-cell lattice. The site field $ _i = _i\\,e^i _i$ (QM-1 v2.0: count register $ _i$, $V_i$-orientation phase $ _i$) is expanded in the 120 orthonormal eigenmodes of the 600-cell adjacency matrix, yielding field operators $ ( r_i) = _k(a_k u_k(i) + a_k^ u_k(i)^*)/ 2 _k$. Bosonic commutation relations $[a_k,a_k'^ ] = _kk'$ follow from eigenmode orthonormality (Theorem~ thm:commutators). Fermions arise from charged CP aggregates obeying the CP exclusion principle (one per Grid Point); bosons from neutral DI-bit modes (Theorem~ thm:fermboson). The Planck-scale lattice provides a physical UV cutoff $k_ = / $, rendering every loop integral finite. The electron self-energy correction is large ($ E_P^2$) but finite; the hierarchy problem becomes a well-defined finite fine-tuning problem rather than an infinite renormalization. The 600-cell has exactly six distinct eigenvalues (golden-ratio multiples), mapping suggestively to the three SM generations --- a structural coincidence that remains an open problem (Open Problem~ op:generations). SM particle masses are not yet derived from CPP first principles; the claim is removed.",
         "description_ok": true,
         "description_source": "abstract environment"
       },
@@ -2087,7 +2087,7 @@
       "rel": "series_quantum_mechanics/papers/QM-6_capstone.tex",
       "title": "Quantum Mechanics in Conscious Point Physics:",
       "ver": "3.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -2100,7 +2100,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2108,7 +2108,7 @@
           "Physics"
         ],
         "version": "3.2",
-        "description": "All of quantum mechanics emerges in Conscious Point Physics from four primitives: Conscious Points in their three ratified types (charge bearers, Grid Points, and DI-bit messengers; A1$'$), the 600-cell lattice, the Grid-Point-held Sea-polarization pattern state (count register $ _ abs$ + orientation register $ _ net$; A3$'$), and the Nexus. The complex site field $ _i = _i\\,e^i _i$ --- reading the count and orientation registers (FI-QMRG-1) --- evolves by deterministic hopping, yielding the Schr\\\"odinger equation in the continuum limit (Paper~2~ cpp2040a, v2.0 pattern-level grounding). Simultaneous propagation along all geodesics gives the discrete Feynman path integral and quantum superposition (Paper~3~ cpp2040b_super). The Nexus maintains non-separable joint pattern states, giving quantum entanglement and Bell violation $| CHSH|=2 2$ with no-signaling (Paper~4~ cpp2040c). DP~Sea decoherence produces apparent collapse with pointer basis fixed at SSV eigenstates (Paper~5~ cpp2040d). Collective 600-cell eigenmodes give field operators, commutation relations, and finite renormalization (Paper~6~ cpp2040e). All lattice corrections are $ O(( / )^2)$ and unobservable at laboratory scales. The hierarchy problem is finite; SM masses remain an open problem. The entire QM sector is derived from four primitives with no new postulates.",
+        "description": "All of quantum mechanics emerges in Conscious Point Physics from four primitives: Conscious Points in their three ratified types (charge bearers, Grid Points, and DI-bit messengers; A1$'$), the 600-cell lattice, the Grid-Point-held Sea-polarization pattern state (count register $ _ abs$ + orientation register $V_i$; A3$'$), and the Nexus. The complex site field $ _i = _i\\,e^i _i$ --- reading the count and orientation registers (FI-QMRG-1) --- evolves by deterministic hopping, yielding the Schr\\\"odinger equation in the continuum limit (Paper~2~ cpp2040a, v2.0 pattern-level grounding). Simultaneous propagation along all geodesics gives the discrete Feynman path integral and quantum superposition (Paper~3~ cpp2040b_super). The Nexus maintains non-separable joint pattern states, giving quantum entanglement and Bell violation $| CHSH|=2 2$ with no-signaling (Paper~4~ cpp2040c). DP~Sea decoherence produces apparent collapse with pointer basis fixed at SSV eigenstates (Paper~5~ cpp2040d). Collective 600-cell eigenmodes give field operators, commutation relations, and finite renormalization (Paper~6~ cpp2040e). All lattice corrections are $ O(( / )^2)$ and unobservable at laboratory scales. The hierarchy problem is finite; SM masses remain an open problem. The entire QM sector is derived from four primitives with no new postulates.",
         "description_ok": true,
         "description_source": "abstract environment"
       },
@@ -2259,7 +2259,7 @@
       "rel": "series_relativity/SR_companion_papers/c01_absolute_moment_postulate/absolute_moment_postulate.tex",
       "title": "The Absolute Moment Postulate: Necessity, Consistency",
       "ver": "3.2",
-      "changed": "2026-08-17",
+      "changed": "2026-09-20",
       "cls": "Companion",
       "withheld": "",
       "wave": 1,
@@ -2272,7 +2272,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-17",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2345,7 +2345,7 @@
       "rel": "series_relativity/SR_companion_papers/c03_born_rule/c03_born_rule.tex",
       "title": "Quantum Probability and the Classical Transition",
       "ver": "2.1",
-      "changed": "2026-08-09",
+      "changed": "2026-09-20",
       "cls": "Companion",
       "withheld": "",
       "wave": 1,
@@ -2358,7 +2358,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-09",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2388,7 +2388,7 @@
       "rel": "series_relativity/SR_companion_papers/c04_ZBW_hbar_mass_units/c04_ZBW_hbar_mass_units.tex",
       "title": "Inertial Mass from Zitterbewegung:",
       "ver": "2",
-      "changed": "2026-08-17",
+      "changed": "2026-09-20",
       "cls": "Companion",
       "withheld": "",
       "wave": 1,
@@ -2401,7 +2401,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-17",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2431,7 +2431,7 @@
       "rel": "series_relativity/SR_companion_papers/c06_DP_chaining_as_mass_and_EM_substrate/c06_dipole_chain_patterns_as_mass_EM_subtrate.tex",
       "title": "Dipole Chain Patterns as the Substrate of",
       "ver": "2.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-20",
       "cls": "Companion",
       "withheld": "",
       "wave": 1,
@@ -2444,7 +2444,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2556,7 +2556,7 @@
       "rel": "series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex",
       "title": "SR-2: The Spin-Bit Axiom --- Necessity, Construction",
       "ver": "1.5",
-      "changed": "2026-08-18",
+      "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -2570,7 +2570,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-20",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2578,7 +2578,7 @@
           "Physics"
         ],
         "version": "1.5",
-        "description": "Conscious Point Physics (CPP) recovers the static and gravitomagnetic sectors of General Relativity from a Lattice State Packet (LSP) broadcast carrying one scalar ($ $) and one vector ($ $) degree of freedom across the 600-cell substrate. This work asks whether that content can also carry the radiative tensor sector --- the helicity-$ 2$ ($+$, $ $) gravitational-wave polarizations. It cannot, and the impossibility is theorem-grade: three independent assaults (amplitude bilinears, the full collective-mode spectrum of the lattice, and the most general per-edge connection consistent with icosahedral symmetry) each return a helicity content of $\\0,0, 1\\$ with no rank-2 channel, for every coupling. A genuine rank-2 fundamental degree of freedom is therefore required within CPP's current axioms to carry the observed helicity-$ 2$ polarizations --- consistent with the graviton's fundamental status in general relativity. We construct it. The 600-cell supplies the seat natively in the icosahedral shell's $H$ ($l=2$) representation, whose $m= 2$ content is precisely the GR $+$ and $ $ polarizations; the rank-agnostic icosahedral shell-sum supplies propagation at $c$. The resulting amendment $ A3 A3'$ --- the Completed Broadcast Axiom --- adds a single symmetric-traceless field $ $ to the LSP, completing it to $ LSP' = A T_1 H = 9$ numbers, which is shown to be the lattice's entire protected representation content: no fourth rung exists (Completion Theorem). The axiom pays for itself: the coupling is fixed at $ = 16 G/c^4$ by the single requirement that the Newton constant governing the scalar sector govern the tensor sector, so the field equation $ h_ = -16 G\\,T_ /c^4$ and the waveform $h^ _ij = (2G/c^4 r)\\, Q^ _ij(t_ ret)$ are derived, not asserted, at zero new parameters. Statics are untouched (a tensor-virial theorem); the tidal response is pure tensor (Eardley class N$_2$, via an exact cancellation theorem and a redundant trace completion); and the energy ledger closes operationally (Hulse--Taylor $-2.4031 10^-12$, double pulsar $-1.2483 10^-12$, eccentric flux/Peters ratio $1.000640$ --- nothing tuned). The construction passed the programme's first axiom-level adversarial swarm review (DG-3, CONFIRM from all panel members over two rounds, one objection upheld against a $2$--$1$ count and integrated as the Operational-Energy Lemma). Four falsifiers are registered. This closes the (a)-half of op:einstein (full Einstein-tensor recovery) for the radiative sector by necessity rather than convenience.",
+        "description": "Conscious Point Physics (CPP) recovers the static and gravitomagnetic sectors of General Relativity from a Lattice State Packet (LSP) broadcast carrying one scalar ($ $) and one vector ($V_i$) degree of freedom across the 600-cell substrate. This work asks whether that content can also carry the radiative tensor sector --- the helicity-$ 2$ ($+$, $ $) gravitational-wave polarizations. It cannot, and the impossibility is theorem-grade: three independent assaults (amplitude bilinears, the full collective-mode spectrum of the lattice, and the most general per-edge connection consistent with icosahedral symmetry) each return a helicity content of $\\0,0, 1\\$ with no rank-2 channel, for every coupling. A genuine rank-2 fundamental degree of freedom is therefore required within CPP's current axioms to carry the observed helicity-$ 2$ polarizations --- consistent with the graviton's fundamental status in general relativity. We construct it. The 600-cell supplies the seat natively in the icosahedral shell's $H$ ($l=2$) representation, whose $m= 2$ content is precisely the GR $+$ and $ $ polarizations; the rank-agnostic icosahedral shell-sum supplies propagation at $c$. The resulting amendment $ A3 A3'$ --- the Completed Broadcast Axiom --- adds a single symmetric-traceless field $ $ to the LSP, completing it to $ LSP' = A T_1 H = 9$ numbers, which is shown to be the lattice's entire protected representation content: no fourth rung exists (Completion Theorem). The axiom pays for itself: the coupling is fixed at $ = 16 G/c^4$ by the single requirement that the Newton constant governing the scalar sector govern the tensor sector, so the field equation $ h_ = -16 G\\,T_ /c^4$ and the waveform $h^ _ij = (2G/c^4 r)\\, Q^ _ij(t_ ret)$ are derived, not asserted, at zero new parameters. Statics are untouched (a tensor-virial theorem); the tidal response is pure tensor (Eardley class N$_2$, via an exact cancellation theorem and a redundant trace completion); and the energy ledger closes operationally (Hulse--Taylor $-2.4031 10^-12$, double pulsar $-1.2483 10^-12$, eccentric flux/Peters ratio $1.000640$ --- nothing tuned). The construction passed the programme's first axiom-level adversarial swarm review (DG-3, CONFIRM from all panel members over two rounds, one objection upheld against a $2$--$1$ count and integrated as the Operational-Energy Lemma). Four falsifiers are registered. This closes the (a)-half of op:einstein (full Einstein-tensor recovery) for the radiative sector by necessity rather than convenience.",
         "description_ok": true,
         "description_source": "abstract environment"
       },
@@ -3910,7 +3910,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex",
       "title": "The Capotauro Mechanism: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry Phys",
       "ver": "2.3",
-      "changed": "2026-09-14",
+      "changed": "2026-09-19",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -3923,7 +3923,7 @@
         "creators": [
           "Thomas Lee Abshier, NDThe Capotauro mechanism was originally proposed in the 13 December 2025 nucleation paper abshier_grok_capotauro_2025"
         ],
-        "publication_date": "2026-09-14",
+        "publication_date": "2026-09-19",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
