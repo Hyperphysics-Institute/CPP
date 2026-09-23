@@ -16,7 +16,7 @@ its CONV-004 tag; every modeling choice is J-tagged. Verify: `code/1887_si1_forw
 | M6 | E_hDP — qDP bond scale | ≈ 150 MeV (λ = ħc/E_hDP ≈ 1.3 fm) | PINNED (0835) | |
 | M7 | m_el — element mass | 1408 MeV | PINNED (08xx band) | |
 | M8 | kT_form — formation-window temperature | 16.2–16.6 keV | **MEASURED-scoping** (1873; cap mechanism open) | |
-| M9 | m_const — cage constituent scale | ħc/r_ZBW = 312.7 MeV (r_ZBW = 0.631 fm) | DERIVED (SS-2) | |
+| M9 | m_const — cage constituent scale | ħc/r_ZBW = 312.7 MeV (r_ZBW = 0.631 fm) | ASSIGNED m_p/3 in SS-2 (line 183; corrected from DERIVED at Patch 4240) | |
 
 r_c = 1 fm is used interchangeably with a throughout the DM corpus [J-SI-1: r_c ≡ a adopted; the η = χ
 measurement then reads "the gap in PITCH units is the Capotauro constant"].

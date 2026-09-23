@@ -509,6 +509,9 @@ def verify_ss5() -> List[CheckResult]:
     # --- Nucleon axial coupling g_A ---
     # SU(6) naive: g_A = 5/3 = 1.667 (too high)
     # CPP value from full_benchmark: 1.27  PDG: 1.2756±0.0013
+    # PATCH 4240: NOT A CPP RESULT. No formula behind the table's 1.27 is on file (development_strong_series.md
+    # Stage 17 says so); it is a PDG-matched entry. The first CPP computation is Patch 4240: 5/3 derived from the
+    # SS-2 cage (conditional on spin-1/2 and Fermi statistics); the reduction R = 0.765 is NOT derived (TODO-4234-DELTA).
     g_A_cpp = 1.27
     g_A_pdg = 1.2756
     results.append(CheckResult(

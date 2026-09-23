@@ -866,7 +866,7 @@ Six new non-trivial checks added to `mc_su3_algebra.py`:
 
 2. **Roper N(1440)** at 1% (within PDG range 1430–1470 MeV). First excited baryon state — not in the original script.
 
-3. **g_A = 1.27** (axial coupling, Δ = 0.4% off PDG 1.2756). The SU(6) quark model predicts 5/3 = 1.667 (30% too high). CPP gives 1.27, which is correct. This is a non-trivial result suggesting CPP includes spin-orbit corrections from cage geometry.
+3. **g_A = 1.27** (axial coupling, Δ = 0.4% off PDG 1.2756). The SU(6) quark model predicts 5/3 = 1.667 (30% too high). CPP gives 1.27, which is correct. This is a non-trivial result suggesting CPP includes spin-orbit corrections from cage geometry. **[Patch 4240 correction: there is no CPP derivation behind this 1.27 — the table entry has no formula on file (see the audit above) and matches PDG by construction. The first CPP computation is Patch 4240 (`series_standard_model/axiom_maturation/4240_*`): the 5/3 is derived from the cage's exchange symmetry; the reduction R = 0.765 is not derived, and a cavity (lower-component) mechanism is excluded by μ_p. Do not cite g_A = 1.27 as a CPP result.]**
 
 4. **n–p mass difference = 1.293 MeV** (exact). Isospin-breaking from QCD + QED; non-trivial.
 
