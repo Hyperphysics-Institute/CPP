@@ -2297,9 +2297,17 @@ TODO-4234-DELTA's reduction R must be spin–orbit sharing at the constituent sc
 
 4240 §3(A): the symmetric J = ½ state has ⟨2s⟩ = +2/3, +2/3, −1/3 per quark, not +1, +1, −1. 4134's |W| = 1.17 and rms ⟨n·W⟩ = 0.67, and 4136's bound ε ≤ 8.6×10⁻⁸ / g ≤ 2.6×10⁻⁷ (which used |W| = 1.1654), were computed on the product assignment. The isotropy result ⟨n·W⟩ = 0 does not depend on the spin state and stands; the rms and the two bounds should be recomputed on the true state. Small; one script. **Lane: EW.**
 
-### TODO-4248-BRACELET-SCALE — the W⁰ bracelet's physical radius: 0.0025 fm (4229's ħc/m_W) or 0.346 fm (600-cell 0.58779 × l_unit)? Two shipped numbers depend on it (registered Patch 4248, EW lane; founder question outstanding)
+### TODO-4248-BRACELET-SCALE — the W⁰ bracelet's physical radius: 0.0025 fm (4229's ħc/m_W) or 0.346 fm (600-cell 0.58779 × l_unit)? Two shipped numbers depend on it — **DECIDED at 4251 (working value, G-EW-BRACELETSCALE-4251): 0.346 fm; founder delegated the choice (`founders_voice/4251_*`)** (registered Patch 4248, EW lane)
 
 SF-2 gives the bracelet radius only in 600-cell units; 4229 set the pocket at ħc/m_W = 0.0025 fm and 4231 (kick bound 0.4%) and 4233 (pole-in-pocket 1.2e−3, lifetime budget) built on it. The lattice reading is 0.346 fm; SF-2's own ΔE_centroid = O(m_e) supports the lattice reading (`code/4248_*`: ring well 4 MeV vs 600 MeV). **Founder question (4248 §5).** **Then:** (i) redo 4231's kick bound and 4233's rate factor on the ruled scale; (ii) compute the ring's geometric factor for the −eCP trap (12 CPs, alternating polarity, 4D) — G-EW-CENTROIDTRAP-4248 quantified; (iii) check 4247's occupancy reading under the ruled scale (it strengthens under 0.35 fm). **Lane: EW.**
+
+### TODO-4251-LKICK — L-preservation at release no longer follows from pocket geometry at r_B = 0.346 fm (registered Patch 4251, EW lane)
+
+4231's *"B = +1 by geometry"* rested on r_pocket/r_orbit = 0.4%. At the working bracelet size a kick anywhere inside the ring could change the orbital's L by up to 55%. **Owed:** show that the reset acts at the ring's zero-gradient centre (lever arm ≪ r_B) — in tension with 4248's trapped −eCP oscillating *among* the +CPs — or accept that B = +1 rests on the pair state (4223/4228) alone and say so in SF-2 §5.7.1 at the next recompile. **Lane: EW.**
+
+### TODO-4251-LIFETIME — 4233's rate budget re-owed at r_B = 0.346 fm (registered Patch 4251, EW lane)
+
+Pole-in-ring per cycle is 0.175, not 1.2e−3; (W⁰ present, aligned) × (outward) must be 8.3e−26 = 0.031 × (m_e/m_W)⁴(m_e/m_const). The (E/m_W)² bracelet-formation target (4233, TODO-4234-era item 2 on the boot card) stands in form; its coefficient changes 4.4 → 0.03. Compute with the target, not before it. **Lane: EW.**
 
 ### TODO-4246-NCPHASE — the bare-core NC sign under the amplitude reading: phase of the direct transit vs photon exchange (registered Patch 4246, EW lane)
 
