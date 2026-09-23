@@ -1,0 +1,25 @@
+# Session 238 — Boot Card (23 Sep 2026, Patch 4257, EW lane → strong)
+
+**READ THIS FIRST. Do not read the detail file until the two-step boot is done.**
+
+## Two-step boot (unchanged from 4237)
+**STEP 1 (this window, no work):** clone (full history, no `--depth`), run `python3 code/next_id.py EW`, run the four gates, report HEAD, next free ID, suite status, and the recommended task below. **STOP** and wait for the founder's reply.
+**STEP 2 (after the reply):** read `handovers/detail/2026-09-23_session_238_p4257_ew_arc_4240_4256.md`, then work.
+
+## Facts
+- **HEAD:** 4257 (Session 238 close). **Next free: EW 4258** (block 4200–4299; continuity_gate now watches it, 4241).
+- **Checksum facts:** g_A = 1.406 from the breathing core, zero parameters (4244; measured 1.2754); μ_p = 2.772, μ_n = −1.829. OPEN-EW-NC route (a) complete as a mechanism, not closed (4254). Bracelet radius 0.346 fm, working (4251). TODO-4214-ONESIGN 7/7, item 2 passes in magnitude (4249). SF-2 v1.08; v1.09 owed.
+- **Rulings this session (all provisional, in `founders_voice/`):** G-EW-CENTROIDTRAP-4248, G-EW-BRACELETSCALE-4251 (worker, delegated), G-EW-NCMIX-4253, G-EW-W0CHANCE-4256. Candidate: CAND-EW-4DOVERLAP-4255.
+
+## Recommended task (in order)
+1. **TODO-4234-DELTA residual** — g_A needs ~20% more momentum spread per mode than the Compton ground state; untried: Dirac-oscillator spin–orbit, the d's internal linear oscillator, excited-mode admixture. Compute, do not attribute.
+2. **TODO-4251-LIFETIME** — the Sea's universal bracelet-presence rate (one number; lepton universality says host-independent); test CAND-EW-4DOVERLAP-4255 against it.
+3. **SF-2 v1.09** — items (i)–(v) in `development-SF-2.md`'s Session-238 vignette; the founder recompiles.
+4. Critic (next window): the exchange-antisymmetry-on-a-push-weight step (4254 R1 vs R2).
+
+## Founder owes
+23 PDF recompiles (SF-2 v1.08 among them); cage lines u, d, c, b, t (TODO-4212-CAGETABLE). No physics question outstanding.
+
+## Process reminders
+- **D-5:** never `reset --hard origin/main` mid-session; origin can lag the founder's "applied" (4256 lost and rebuilt 4255 this way).
+- **D-10:** grep `founders_voice/` for the object's name before asking the founder about it (4240 miss).
