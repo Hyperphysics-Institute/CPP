@@ -2307,7 +2307,7 @@ SF-2 gives the bracelet radius only in 600-cell units; 4229 set the pocket at ħ
 
 ### TODO-4251-LIFETIME — 4233's rate budget re-owed at r_B = 0.346 fm (registered Patch 4251, EW lane)
 
-Pole-in-ring per cycle is 0.175, not 1.2e−3; (W⁰ present, aligned) × (outward) must be 8.3e−26 = 0.031 × (m_e/m_W)⁴(m_e/m_const). The (E/m_W)² bracelet-formation target (4233, TODO-4234-era item 2 on the boot card) stands in form; its coefficient changes 4.4 → 0.03. Compute with the target, not before it. **Lane: EW.**
+Pole-in-ring per cycle is 0.175, not 1.2e−3; (W⁰ present, aligned) × (outward) must be 8.3e−26 = 0.031 × (m_e/m_W)⁴(m_e/m_const). The (E/m_W)² bracelet-formation target (4233, TODO-4234-era item 2 on the boot card) stands in form; its coefficient changes 4.4 → 0.03. Compute with the target, not before it. **Lane: EW.** **4255 — candidate registered (CAND-EW-4DOVERLAP-4255): the propagator squared as a 4D overlap (E/m_W)⁴ of the released wave with the bracelet's Compton pocket; shape right, coefficient 5e−3 (the SM's g⁴f/64π³) not supplied; needs a substrate statement on 4-volume coherence. Founder question (4255 §6): does the bracelet form by Sea chance or is it pulled together by the process? Not adopted.**
 
 ### TODO-4246-NCPHASE — **CLOSED at Patch 4254: the one-Moment hold gives ≤ 1e−5 rad, or an energy-dependent phase excluded by Q_W's constant sign (Cs to Qweak) — no sign; one sign + Fermi statistics + capacity one give all of Q_W's isospin part; R1 adopted as working, R2 kept as the critic's frame; OPEN-EW-NC route (a) complete as a mechanism, pending critic** (registered Patch 4246, EW lane)
 
