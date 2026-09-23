@@ -1,5 +1,12 @@
 # Session 238 — Boot Card (23 Sep 2026, Patch 4257, EW lane → strong)
 
+**Kickoff line (paste into a fresh window, verbatim):**
+```
+Bootup for Conscious Point Physics (CPP). Clone the repo and read the bootup file at https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/bootup.md. Honor the line-1 CLONE-FIRST GATE before registering any ID, placing any file, or computing any coefficient (clone the repo and grep the registry first). Then open the handovers/ folder, sort by filename, and read the most recent dated file (named YYYY-MM-DD_session_NNN_*.md) — that newest entry is the canonical "what's next" pointer. Note: the folder is handovers/ (plural) and there is no file named handover.md; never look for either — always use the newest dated entry.
+```
+
+**Orientation (paste with the kickoff line).** Single window on the EW lane, block 4200–4299; no parallel windows active, no anti-collision run needed. The lane's state: g_A = 1.406 with zero parameters from the founder's breathing-core picture (4244), the neutral-current integers from a capacity-one centroid plus fermion exchange with both premises founder-ruled (4246, 4248, 4253), the bracelet at a working radius of 0.346 fm (4251), and the Session-237 critic queue empty. The one most important next action is the g_A residual (TODO-4234-DELTA): three untried levers, a precise target of ~20% more momentum spread per mode. Boot under the two-step protocol below; report at STEP 1 and stop.
+
 **READ THIS FIRST. Do not read the detail file until the two-step boot is done.**
 
 ## Two-step boot (unchanged from 4237)
