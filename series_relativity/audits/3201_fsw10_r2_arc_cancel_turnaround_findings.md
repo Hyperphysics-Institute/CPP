@@ -128,3 +128,10 @@ Forward-pointer: 1 (§5, to R-5). **SUBSTANTIVE: 0.** R-2 requires no panel roun
 
 **Next in charter order:** R-5 (turnaround terminology — opens with §5 in
 hand), then R-1 (CAL-LABEL exposure), then R-3 (fanout / ~10% band citations).
+
+---
+
+**BANNER (appended 24 Sep 2026, Patch 4280; audit record unaltered):** the ruling this audit swept against
+(R-ARC-CANCEL-TURNAROUND, 3134 §3) is superseded by R-ZBW-PASS-THROUGH (4265). The swept shipped site, c04, was
+brought to Version 2.2 at 4277. CONV-023 row A was re-pointed at 4265. No other `.tex` site carries arc-cancel wording
+(whole-tree search, 4280).

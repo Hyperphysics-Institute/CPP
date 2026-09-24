@@ -73,3 +73,11 @@ its exact-1/s² claim, and its retirement of the band are all
 SUPERSEDED: the ~10% band is GENUINE (F-E2-3 option (a) ruled). The
 kick = E/12 and the maximize-inward conclusion survive. See
 `subpsr_pass3_fanout_results.md`.
+
+---
+
+**BANNER (appended 24 Sep 2026, Patch 4280; original unaltered):** item 3's chain *"arc cancellation → stop →
+dwell"* rests on R-ARC-CANCEL-TURNAROUND, which is superseded by R-ZBW-PASS-THROUGH (4265). The dwell survives as a
+one-Moment transit at top speed, and the energy accounting closes by the cycle's bipolarity (both arc polarities per
+full cycle) instead of by cancellation at co-location. See
+`series_phenomena/cosmology/sea_gravitation/4278_pass_through_dwell_fq12_bulk_null.md`.
