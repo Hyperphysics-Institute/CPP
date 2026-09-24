@@ -70,3 +70,11 @@ as 4225; the energy step is the next computation, and the roadblock test.
 Convenient branch: §2a — I looked for a consistency number and found one that agrees. The check against
 myself: the bound is geometric and would hold for *any* mechanism that acts inside the pocket; it confirms
 the pocket, not the reset. Recorded as such. The inconvenient item is §3, kept at the top of the list.
+
+---
+
+**BANNER (appended 24 Sep 2026, Patch 4279; original unaltered):** under R-ZBW-PASS-THROUGH (4265) the "reset" (a
+zero-gradient stop) is a **transit**. The pole passes through the core, and through the W⁰ pocket, at speed, and in
+the co-location Moment it is steered by whatever gradient is present. §2(b)'s pole-in-pocket fraction (1.24×10⁻³, for
+uniform circulation) must be recomputed for a pass-through swing, whose time density goes as 1/speed. See
+`4279_reset_mechanism_restated_as_transit.md`.
