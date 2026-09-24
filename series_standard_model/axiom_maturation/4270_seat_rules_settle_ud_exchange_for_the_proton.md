@@ -41,3 +41,6 @@ isospin. The neutron's own frame (seats, modes, d–d exchange) is the proper ca
 
 The convenient move would have been to read "the down may take turns at every vertex" as licence for L2's −0.3%.
 The seat count in (i) excludes it for the proton. L1's 1.310 stands.
+
+
+**Erratum (Patch 4271):** μ_n in this fragment was computed by flavour; in the neutron's own frame (the proton's mirror) R is assigned by role. Corrected, the ruled-state prediction is μ_n = −1.871 (−2.2%) at m_q fitted to μ_p. See `series_standard_model/axiom_maturation/4271_neutron_mirror_mu_n_correction_free_nucleon.md` §2.

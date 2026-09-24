@@ -55,3 +55,6 @@ eDP sphere, founders_voice/4263; c04's cloud resonance). That stays filed as ite
 
 Quoting "3 observables, 1 parameter" is the convenient framing. The honest count: m_q is fitted, and g_A and μ_n are
 the two predictions. Both are recorded with their residuals.
+
+
+**Erratum (Patch 4271):** μ_n in this fragment was computed by flavour; in the neutron's own frame (the proton's mirror) R is assigned by role. Corrected, the ruled-state prediction is μ_n = −1.871 (−2.2%) at m_q fitted to μ_p. See `series_standard_model/axiom_maturation/4271_neutron_mirror_mu_n_correction_free_nucleon.md` §2.
