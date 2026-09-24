@@ -1,6 +1,6 @@
 # Founder Proposal — ZBW Is a Pass-Through Oscillation, Not Superposition-Stop-and-Reverse (PENDING RULING)
 
-**Patch:** 4264. **Date:** 23 September 2026. **Status:** **PROPOSAL, not yet ruled.** The founder states it
+**Patch:** 4264. **Date:** 23 September 2026. **Status:** **RULED at Patch 4265 (R-ZBW-PASS-THROUGH)** — adopted. Originally recorded as a proposal, not yet ruled: The founder states it
 conditionally (*"if this picture is correct"*) and asks *"What do you think?"* — answered at
 `series_standard_model/axiom_maturation/4264_zbw_pass_through_assessment.md`.
 **Would supersede:** R-ARC-CANCEL-TURNAROUND, `founders_voice/founder_ruling_radial_arc_cancel_2026-08-14.md` §3

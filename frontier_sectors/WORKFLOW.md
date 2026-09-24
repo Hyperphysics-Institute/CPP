@@ -14,7 +14,7 @@
 
 | Sense | Referent | Rule |
 |---|---|---|
-| **A** | ZBW pair's stop-and-reverse at superposition (R-ARC-CANCEL-TURNAROUND, 3134) | **Must be qualified on first use** in any paper section — *ZBW turnaround*, *arc-cancel turnaround*, or an explicit superposition construction. Bare *turnaround* for this sense is not permitted in shipped prose. All current sites comply. |
+| **A** | ZBW turning point at the **extremes** of the pass-through cycle (R-ZBW-PASS-THROUGH, 4265; superseding 3134's stop-and-reverse at superposition) | **Must be qualified on first use** in any paper section — *ZBW turning point* or *ZBW turnaround*. *Arc-cancel turnaround* names the retired 3134 sense and is permitted only in historical reference. Bare *turnaround* for this sense is not permitted in shipped prose. Sites written under 3134 are re-checked in TODO-4264-PASSTHROUGH step 3. |
 | **B** | Relativistic trajectory reversal (twin paradox) | **Unqualified *turnaround* is correct and standard.** Do not "fix" it — it is the universal term in the SR literature and renaming it would read as an error to reviewers. |
 | **C** | Elapsed project time ("24-hour turnaround", "reviewer turnaround") | **Out of scope permanently.** Ordinary English idiom, no collision risk. Excluded with prejudice; future sweeps must not re-raise it. |
 

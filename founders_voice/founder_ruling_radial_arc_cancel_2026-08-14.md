@@ -61,3 +61,13 @@ superseded by the founder's clarification (R-OUTWARD-FANOUT:
 every-hop fan-out to all outward-component neighbors; the band is
 genuine physics; F-E2-3 = option (a)). §1's verbatim text and §3
 (R-ARC-CANCEL-TURNAROUND) are unaffected.
+
+---
+
+**SUPERSESSION BANNER (appended 23 Sep 2026, Patch 4265; original above unaltered):** §3
+(R-ARC-CANCEL-TURNAROUND) is **superseded** by R-ZBW-PASS-THROUGH
+(`founders_voice/4265_ruling_zbw_is_pass_through.md`). The ZBW cycle passes through superposition at maximum speed;
+the DP-arc store is not cancelled at co-location. The asymmetric-pair argument is at
+`series_standard_model/axiom_maturation/4264_zbw_pass_through_assessment.md` §2(ii). §3's own sentence — *"surviving
+inertia would carry the CPs THROUGH to a far-side turnaround"* — is now the ruled case. §1 and §2
+(R-RADIAL-AFTER-FIRST, with the 3135 fan-out clarification) are unaffected.
