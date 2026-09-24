@@ -76,3 +76,6 @@ stands. If the pull is charge only, it vanishes there, and the second up is loos
 
 The convenient step would be to call +2.7% "closed within model error". It is not closed. The u–d exchange is still
 uncomputed, and the μ_p cost is real. Both remain filed (TODO-4234-DELTA (ii), (iii)).
+
+
+**Erratum (Patch 4268):** the statement here that the g_A residual "is" the m_q tension is corrected at `series_standard_model/axiom_maturation/4268_mq_audit_gA_is_mass_independent.md` §2. Under route (H), g_A is independent of m_q; m_q moves only the moments. The +2.7% g_A residual belongs to the motion.

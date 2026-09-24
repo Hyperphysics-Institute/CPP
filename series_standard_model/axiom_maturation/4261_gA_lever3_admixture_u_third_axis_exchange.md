@@ -87,3 +87,6 @@ tightly) by the frame?**
 - The w question, recorded as awaiting the founder.
 - u–d exchange under colour = vertex (frame-geometry change), EW → strong.
 - The m_q tension: derive m_q, or show why g_A and μ_p jointly require ≈ 297 MeV, SS lane with EW.
+
+
+**Erratum (Patch 4268):** the statement here that the g_A residual "is" the m_q tension is corrected at `series_standard_model/axiom_maturation/4268_mq_audit_gA_is_mass_independent.md` §2. Under route (H), g_A is independent of m_q; m_q moves only the moments. The +2.7% g_A residual belongs to the motion.
