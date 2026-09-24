@@ -38,7 +38,12 @@ Hyperphysics Institute\\
 \date{13 March 2026 --- Version~2\\[2pt]
 {\small Version~2.1 --- 16 August 2026 (Patch 3202, F-SW-10 R-2.3 fix pass:
 scope note distinguishing the magnitude-setter of inertia from its dynamical
-carrier per R-ARC-CANCEL-TURNAROUND, Patch 3134; mathematics untouched)}}
+carrier per R-ARC-CANCEL-TURNAROUND, Patch 3134; mathematics untouched)\\[2pt]
+Version~2.2 --- 24 September 2026 (Patch 4277: pass-through ZBW cycle per
+R-ZBW-PASS-THROUGH, Patch 4265, supersedes the arc-cancel stop; proof of
+Proposition~\ref{prop:mass} restated --- the Version~2 derivation did not hold;
+$\nuC$ declared as the angular Compton frequency; Schr\"odinger remark
+reworded)}}
 
 \begin{document}
 \maketitle
@@ -97,9 +102,12 @@ standing wave derived from CPP boundary conditions.
 Schr\"odinger (1930) identified a rapid oscillatory motion of the Dirac
 electron at frequency $2mc^2/\hbar$ (twice the Compton frequency), arising
 from interference between positive- and negative-energy spinor components.
-The CPP picture gives this a concrete mechanism: the factor of 2 reflects
-the two-way radial transit of the standing wave (outward leg and return
-leg).  CPP therefore explains what Dirac's equation describes.
+In the pass-through ZBW cycle (Version~2.2) the oscillating CP crosses the
+centre twice per full cycle at its top speed, so its speed and kinetic
+energy oscillate at twice the cycle frequency; this is the natural CPP
+counterpart of Schr\"odinger's doubled frequency, which standard theory
+reads as an energy-gap ($2mc^2$) beat.  CPP offers a mechanism for what
+Dirac's equation describes; whether the correspondence is exact is left open.
 \end{remark}
 
 \section{The Two-Level ZBW Hierarchy}
@@ -192,6 +200,10 @@ thermal boundary:
   \label{eq:rth}
 \end{equation}
 where $\lambdabar_C = \hbar/(mc)$ is the reduced Compton wavelength.
+Throughout, $\nuC \equiv mc^2/\hbar$ is the \emph{angular} Compton frequency
+(radians per unit time) and ``half-wavelength'' is taken in reduced units;
+in cyclic units the Compton period is $h/mc^2 = 2\pi/\nuC$ \emph{(clarified,
+Version~2.2)}.
 Equation~\eqref{eq:rth} identifies the thermal radius of the polarization
 cloud with the reduced Compton wavelength --- a result known empirically
 in quantum mechanics, here derived from standing-wave boundary conditions.
@@ -225,18 +237,23 @@ Compton radial oscillation of its eDP polarization cloud:
 \end{proposition}
 
 \begin{proof}
-The standing wave completes one round trip in period $T_C = 2r_{\rm
-th}/c$.  The energy stored in the cloud is the product of the Planck ZBW
-action quantum $\hbar$ and the number of Planck ticks per Compton cycle:
+The substantive input is the resonance condition~\eqref{eq:rth},
+$r_{\rm th} = \hbar/2mc$.  The standing wave's light-crossing time of the
+cloud diameter is $T_C = 2r_{\rm th}/c = \hbar/mc^2 = 1/\nuC$ --- one radian of
+the Compton cycle in the angular convention.  The energy whose phase advances
+one radian in $T_C$ is $\hbar/T_C$, so
 \begin{equation}
-  E_{\rm cloud} \;=\; N_{\rm Planck}\cdot\frac{\hbar}{2\tP}
-  \;=\; \frac{\nuP}{\nuC}\cdot\frac{\hbar}{2\tP}
-  \;=\; \frac{1}{2\tP\nuC}\cdot\frac{\hbar}{2\tP}\cdot\frac{1}{2\tP}
-  \;=\; \hbar\nuC,
+  E_{\rm cloud} \;=\; \frac{\hbar}{T_C} \;=\; \hbar\nuC \;=\; mc^2 .
   \label{eq:E-cloud}
 \end{equation}
-where we used $\nuP = 1/(2\tP)$.  Setting $E_{\rm cloud} = mc^2$ gives
-$mc^2 = \hbar\nuC$ and determines $\nuC$ consistently.
+In Planck-tick terms: one Compton radian spans
+$N_{\rm Planck} = \nuP/\nuC = \mP/(2m)$ Planck ticks
+($\nuP = 1/(2\tP)$), and $E_{\rm cloud} = \hbar\nuP/N_{\rm Planck}$.
+The proposition is therefore \emph{equivalent} to the resonance
+condition~\eqref{eq:rth}, not independent of it.
+\emph{(Version~2.2: the Version~2 derivation wrote
+$E_{\rm cloud} = N_{\rm Planck}\,\hbar/(2\tP)$, which equals
+$\hbar\nuP^{2}/\nuC$, not $\hbar\nuC$; it is replaced here.)}
 \end{proof}
 
 \begin{remark}[Unified energy accounting]
@@ -336,17 +353,21 @@ Born-rule companion, \S7).
 Inertial mass in CPP is the energy stored in a two-level ZBW resonance
 hierarchy:
 
-\emph{[Scope of this claim (Version~2.1, Patch 3202, F-SW-10 R-2.3 fix pass).
+\emph{[Scope of this claim (Version~2.2, Patch 4277; supersedes the Version~2.1
+note, which followed R-ARC-CANCEL-TURNAROUND, Patch 3134, now superseded by
+R-ZBW-PASS-THROUGH, Patch 4265).
 This paper answers \textbf{what sets the magnitude} of inertial mass: the
 standing two-level ZBW resonance energy, $m = \hbar\nuC/c^2$. It does
 \emph{not} identify what \textbf{carries} the inertia dynamically. Under
-R-ARC-CANCEL-TURNAROUND (Patch 3134) the carrier is the dressed pair's
-\emph{stored DP arc field}: the pair's two arc stores have opposite rotation
-senses and cancel at co-location, zeroing the inertia-associated
-$V_i$ --- the necessary condition for stop and turnaround,
-since surviving inertia would carry the CPs through to a far-side turnaround.
-The two statements are complementary, not competing: the resonance sets how
-much inertia there is, the arc store is the thing whose removal releases it.]}
+R-ZBW-PASS-THROUGH (Patch 4265) the carrier is the dressed pair's
+\emph{stored DP arc field}, and that store \emph{survives} co-location: the
+ZBW cycle is a conservative oscillation in which the CP passes through
+superposition with its opposite-charge partner at maximum speed (one Moment
+of co-location), turns at the extremes, and returns.  The earlier reading ---
+arc stores cancelling at co-location to permit a stop and turnaround ---
+is retired: it erased and rebuilt the kinetic energy every cycle.
+The two statements remain complementary: the resonance sets how much inertia
+there is; the arc store is what carries it through the cycle.]}
 
 \begin{enumerate}
   \item \textbf{Level 1 (Planck ZBW):} Each elementary DP carries action
