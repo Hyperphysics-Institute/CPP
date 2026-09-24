@@ -67,3 +67,12 @@ the N216 CHALLENGE riding to the panel with its n = 7 resolution
 instrument specified. After FOLD-CHECK the lane YIELDS per the
 advisory order, F-W-1 live. Kila6 Route C and the DM ledger
 untouched; arrival still trumps all.
+
+---
+
+**BANNER (appended 24 Sep 2026, Patch 4278; text above unaltered):** Under R-ZBW-PASS-THROUGH (Patch 4265) there is no
+separate dwell-relaunch kick. The one-Moment co-location of R-DWELL-1 is a transit at top speed, and the exit momentum
+is the crossing momentum the pair carries through. **FQ-12 is answered in substance** (the pair's own dynamics set the
+amplitude; it is not a new constant). §4's bracket shows the calibration cannot move by more than 0.021, so no number
+here changes. Any future instrument that models the kick explicitly should use the carried-through crossing momentum.
+See `4278_pass_through_dwell_fq12_bulk_null.md`.

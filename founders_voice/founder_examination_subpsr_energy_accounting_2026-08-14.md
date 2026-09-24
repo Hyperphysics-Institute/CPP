@@ -103,3 +103,13 @@ the base-level cycle now has numbers attached (η_e = 0.115,
    fossil track its output taxonomy in advance (bonds, gradients,
    organized motion) — useful scaffolding for when that track
    opens.
+
+---
+
+**SUPERSESSION BANNER (appended 24 Sep 2026, Patch 4278; original unaltered):** §3 item 2 ("R-DWELL-1 and the
+overheating resolution mutually require each other") is superseded by R-ZBW-PASS-THROUGH (Patch 4265). In the
+pass-through cycle the pair's current peaks at the crossing and reverses only at the extremes (v = 0), which are now
+the two turnarounds. Every CP still generates both arc polarities per full cycle, so **R-ARC-BULK-NULL holds**,
+without cancellation at co-location. H-ZBW-ENERGY-CYCLE is strengthened, since the pass-through cycle is exactly its
+PE↔KE conversion. FQ-12 is answered in substance: the exit momentum is the carried-through crossing momentum. See
+`series_phenomena/cosmology/sea_gravitation/4278_pass_through_dwell_fq12_bulk_null.md`.
