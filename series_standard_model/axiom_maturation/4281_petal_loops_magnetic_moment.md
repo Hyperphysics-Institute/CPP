@@ -65,3 +65,5 @@ settled, not a correction to apply now.
 
 **PD-008.** The convenient statement would be "petal loops give g = 2". They give g = 2 only for a particular softness
 of well. That softness is recorded as what CPP must derive.
+
+**Erratum (Patch 4286):** "route (H)'s stiffness (k = 1)" mis-resolves route (H) (D-7). Route (H) is amplitude ħ/mc, frequency mc²/ħ, speed c (4266 (a), 4272 §1); k = 1 is the massive oscillator's ½mω²r², and for the massless pole its orbit has mean radius 0.805 r_ZBW and angular rate 1.225 mc²/ħ. On a circle g = 2r/r_ZBW exactly, so **route (H)'s own orbit gives g = 2**, and §4's 0.77 scaling (m_q ≈ 230 MeV) is withdrawn. See `series_standard_model/axiom_maturation/4286_g_is_orbit_radius_route_H_gives_2_spin1_gives_0172.md`.

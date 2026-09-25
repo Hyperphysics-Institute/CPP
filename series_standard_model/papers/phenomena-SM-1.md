@@ -425,6 +425,13 @@ the non-orbital ZBW modes. The quantitative calculation of this
 contribution from CPP Sea statistics is an open problem (OP-QM-new-3
 in part addresses this).
 
+> **Correction (Patch 4286).** The Bohr-magneton claim above cites SM-1 §8, which contains no
+> magnetic-moment derivation. The corpus's worked model of the orbital spin carrier (SPIN-1: a captured
+> neutral DP, +eCP at r_in, −eCP at 2r_in) gives, on its own equations, μ = 0.0858 μ_B, i.e.
+> g = 3 − 2√2 = 0.172, about 1/11.7 of the measured moment. A single net charge carrying ħ/2 on a
+> circle of radius ħ/mc at c gives g = 2 exactly. Which charge circulates is an open founder question.
+> See `series_standard_model/axiom_maturation/4286_g_is_orbit_radius_route_H_gives_2_spin1_gives_0172.md`.
+
 **Consilience significance:** Both frameworks predict g ≈ 2 from
 the same physical origin (ZBW oscillation / virtual photon loop —
 which may be the same phenomenon described at different levels).
