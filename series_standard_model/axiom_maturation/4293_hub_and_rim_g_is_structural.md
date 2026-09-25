@@ -88,3 +88,5 @@ and the no-spin condition is unexamined. It is recorded so that it is not later 
 Does this match your conception? In this picture the inner +eCP stays with the core, the two passing through each other
 in the core's own ZBW. The outer −eCP is held on the far end by its bond to the +eCP. The whole electron spins like a
 dumbbell, with the core swinging round the centre rather than sitting at it.
+
+**Erratum (Patch 4294):** §4's "the rim is held by … a sea-mediated bond" named no force. Charge falls short by α at the Compton scale, and a neutral hub supplies 10⁻³ of the needed force or less. A bond of ZBW strength would hold the rim, but it puts half the rest energy into the orbit, so §2's accounting (m_e = 3m, binding negligible) does not apply and **g = 2 here is provisional**. See `series_standard_model/axiom_maturation/4294_charge_cannot_hold_spin_zbw_force_can.md`.
