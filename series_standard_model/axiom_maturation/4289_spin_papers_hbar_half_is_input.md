@@ -94,3 +94,5 @@ the minimum. Whether that minimum is ħ/2 rather than ħ is the question, and wh
   radius-fixing step is the spin itself.
 - **Founder's physics not needed for this step.** It is logic plus one computation. The next physics question (§7, what
   sets the minimum action of a circulation) will need his picture.
+
+**Erratum (Patch 4290):** §7 says that on the founder's picture the inner lily-pad carries no spin. That was Claude's reading, not his. He takes ħ/2 as the unit, with the outer carrying ħ and the inner ħ/2 the opposite way (founders_voice/4290). With opposite charges that circulate oppositely, the magnets then add; see `series_standard_model/axiom_maturation/4290_opposite_rotation_opposite_charge_magnets_add.md`.
