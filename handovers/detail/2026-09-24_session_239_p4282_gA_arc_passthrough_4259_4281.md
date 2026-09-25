@@ -43,3 +43,38 @@ The ones to press:
 - 4262 / 4271: modes adopted from founder pictures, which help g_A.
 
 Each fragment's PD-008 section states what was rejected and why.
+
+## §5. Step A–H Completion Audit (Patch 4283)
+
+The 4282 close wrote the boot card and this file but did not run Steps A–E. The founder asked whether the handover
+protocol had been run; 4283 completes it.
+
+- **Step A** ✓ `session_logs/2026-09-24_session_239_log.md`
+- **Step B** ✓ transactions 063–071 in `session_logs/transcript-cross-paper.md`
+- **Step C** ✓ Session-239 vignette in `flagship_papers/electroweak/documentation_suite/development-SF-2.md` (v1.09 items (vii), (viii) added)
+- **Step D** ✓ per-patch fragments 4259–4281, with verify scripts wherever a number was computed (4259–4263, 4266–4269, 4271–4274, 4276, 4281). Fragments without scripts (4264–4265, 4270, 4275, 4277–4280) carry no new computed numbers.
+- **Step E** (per registry):
+  - `research_frontier.md` ✓ line per patch
+  - `future_projects.md` ✓ EW status line
+  - `theorem-registry.md` N/A
+  - `axiom-registry.md` N/A (R-ZBW-PASS-THROUGH and the founder pictures are in `founders_voice/`, as the lane's rulings have been)
+  - `paper_catalog.md` ✓ c04 2.1 → 2.2 (rebuilt by `code/rebuild_paper_catalog.py`)
+  - `predictions.md` N/A
+  - `master_glossary.md` ✓ ZBW cycle (4265); ZBW reset restated (4279)
+  - `methods_catalogue/methods_catalogue.md` ✓ METH-L2-027, -028, -029
+  - programme `methods_catalogue.md` N/A
+  - `organizational_frontier.md` N/A
+  - `INDEX.md` N/A
+  - `todolist.md` ✓ deferral_gate PASS on every patch (4282 by a stated override, every item pre-filed)
+  - `frontier_sectors/EW.md` ✓ status
+  - `frontier_sectors/WORKFLOW.md` ✓ CONV-023 row A (4265)
+  - `osf_deposit_queue.md` ✓ regenerated
+  - `problem_histories/` N/A
+  - TATWD N/A
+  - `id_block_registry.md` N/A (no new block)
+- **Step E′** ✓ reasoning capture: every patch has a fragment; founders_voice verbatim for 4262, 4263, 4264, 4265, 4270, 4275, 4276, 4281
+- **Step F′/F** N/A (no reviewer dispatch; the critic items go to the next window per PD-008)
+- **Step G** N/A (no OS text changed; the D-5 reminder is on the boot card)
+- **Step H** ✓ the boot card, this file, and the kickoff line echoed in chat
+
+The §15.15 capture audit found no patch missing a fragment, a script or a verbatim capture.

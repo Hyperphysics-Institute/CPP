@@ -16,7 +16,7 @@ The most important next action is **critique of this session's convenient result
 **STEP 2:** read `handovers/detail/2026-09-24_session_239_p4282_gA_arc_passthrough_4259_4281.md`, then work.
 
 ## Facts
-- **HEAD:** 4282. **Next free: EW 4283.**
+- **HEAD:** 4283 (4282 close; 4283 §15 A–H completion). **Next free: EW 4284.**
 - **g_A (measured 1.2754):**
   - Proton with the u–u Pauli term and SS-2's frame: 1.310.
   - Free nucleon: 1.294–1.297.
