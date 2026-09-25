@@ -94,3 +94,5 @@ go first?** Does it keep its heading for a while (its DP-arcs carrying it on), o
   uneasily with a +eCP moving at c when SF-6's inertia is m₀γ (flagged); planar; the poles' own ZBW is ignored.
 - **Reading of "one PSR per Moment".** Taken as speed c. If each leg took one Moment, the rod would be about a PSR long,
   which cannot carry ħ/2 (§5).
+
+**Erratum (Patch 4296):** §2–§3 assume the +eCP moves at a uniform speed. With the founder's turnaround rule (4296) and inertia, energy fixes the overshoot at the golden ratio, 0.618 d, not 9.5%. g = 2 then needs an energy set 0.004% above the crossing threshold, and full planar three-body runs break up. §3's "holds on charge alone" was a time-averaged force balance, a necessary condition never tested for stability, and is withdrawn. §1's close-pass force law stands. See `series_standard_model/axiom_maturation/4296_overshoot_from_energy_golden_ratio.md`.
