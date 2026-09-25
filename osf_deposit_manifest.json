@@ -15,14 +15,16 @@
   ],
   "counts": {
     "total": 123,
-    "withheld": 4,
+    "withheld": 6,
     "eligible_now": 0
   },
   "never_deposit": [
     "flagship_papers/unification/sf-7_grand_unification.tex",
     "series_foundations/series_superdeterminism/SD-5_k0_derivation.tex",
     "series_phenomena/cosmology/dark_matter/DM-1/DM-1_substrate_dark_matter_candidate.tex",
-    "series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex"
+    "series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex",
+    "series_quantum_mechanics/spin_papers/SPIN-1_emergent_spin_from_captured_DPs/SPIN-1_emergent_spin_from_captured_DPs.tex",
+    "series_quantum_mechanics/spin_papers/SPIN-2_standing_wave_subharmonics/SPIN-2_standing_wave_subharmonics.tex"
   ],
   "waves": {
     "1": [
@@ -2132,7 +2134,7 @@
       "ver": "2",
       "changed": "2026-08-20",
       "cls": "Series paper",
-      "withheld": "",
+      "withheld": "unfinished: live TODO/FIXME scaffolding markers",
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
@@ -2156,7 +2158,7 @@
         "description_source": "abstract environment"
       },
       "eligible": false,
-      "reason": "not approved",
+      "reason": "WITHHELD: unfinished: live TODO/FIXME scaffolding markers",
       "APPROVED": "",
       "CHANGE_CLASS": "",
       "RESERVED_DOI": "",
@@ -2175,7 +2177,7 @@
       "ver": "2",
       "changed": "2026-08-20",
       "cls": "Series paper",
-      "withheld": "",
+      "withheld": "unfinished: live TODO/FIXME scaffolding markers",
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
@@ -2199,7 +2201,7 @@
         "description_source": "abstract environment"
       },
       "eligible": false,
-      "reason": "not approved",
+      "reason": "WITHHELD: unfinished: live TODO/FIXME scaffolding markers",
       "APPROVED": "",
       "CHANGE_CLASS": "",
       "RESERVED_DOI": "",

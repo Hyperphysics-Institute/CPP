@@ -1,5 +1,7 @@
 # spin_papers — the CPP spin sub-arc
 
+> **STATUS (Patch 4289): SPIN-1 and SPIN-2 are HELD from deposit.** Together they take ħ/2 as input (SPIN-1 solves r_in from L = ħ/2), and read parameter-free they give L = 0.168 × ħ/2. SPIN-1’s carrier also gives g = 3 − 2√2 (4286). See `series_standard_model/axiom_maturation/4289_spin_papers_hbar_half_is_input.md` and TODO-4289-SPINREV.
+
 **Moved here from `series_relativity/SR_companion_papers/` at Patch 3233**
 (founder-approved home and interim naming; OPEN-ORG-023 Item 4 executed).
 Spin from captured-DP orbits and ZBW standing waves is quantum-mechanism
