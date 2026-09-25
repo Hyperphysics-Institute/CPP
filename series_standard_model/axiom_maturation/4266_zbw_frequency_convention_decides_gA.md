@@ -68,3 +68,5 @@ coincidence. That critic item is filed.
 Under the ruled picture (pass-through, ω = mc²/ħ, founder mode set, u–u exchange), g_A = 1.310 (simultaneous
 modes) and about 1.32 (sequential with energy carried; exchange not yet recomputed). μ_p is about 4% low in every
 version. Two items remain owed: the sequential exchange, and m_q (≈ 300 MeV restores μ_p).
+
+**Critic (Patch 4284):** the (iv) rejection stands on its first reason alone (the superseded mode set). The third reason is void: m_q is fitted to μ_p (4268), so μ_p cannot count against a branch. See `series_standard_model/axiom_maturation/4284_critic_4276_two_quark_masses_rp_floor.md`.

@@ -52,3 +52,5 @@ recorded as pointing at the frame size.
 Note on method: the momentum-space Gaussians used for g_A's exchange (overlap 0.35) and the position-space Gaussians
 used here (overlap 0.45) are not the same minimum-uncertainty state, because relativistic ground states are not
 Gaussian. A single consistent non-Gaussian treatment is part of the filed item.
+
+**Erratum (Patch 4284):** r_p here is converted to fm at m_q = m_p/3; with m_q fitted to μ_p (4268) it is ≈ 5–6% larger. See `series_standard_model/axiom_maturation/4284_critic_4276_two_quark_masses_rp_floor.md`.

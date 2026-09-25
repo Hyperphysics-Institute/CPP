@@ -70,3 +70,5 @@ filed and **held**; nothing is changed until the critique.
 Is the proton's hTetra frame about the size of one lattice cell, with the up–down bonds at the ordinary lattice
 spacing (≈ 0.36 fm) and the two ups pushed only somewhat further apart? Or is the whole frame stretched to about
 1.7–3 times that, as SS-2 has it (up–down 0.62 fm, up–up 1.07 fm)?
+
+**Erratum (Patch 4284):** (1) the rows' r_p uses m_q = m_p/3 for the length unit beside m_q(μ_p) ≈ 295–298 MeV; at one m_q they rise by ≈ 5–6%. (2) §1.2's conclusion (no +ħc/r term) stands, but the reason is that route (H)'s breath width does not depend on r, not double counting; the u–u Pauli energy is the one r-dependent kinetic term left. See `series_standard_model/axiom_maturation/4284_critic_4276_two_quark_masses_rp_floor.md`.

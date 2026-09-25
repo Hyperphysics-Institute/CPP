@@ -52,3 +52,5 @@ figure.
 This is convenient: the prediction lands close. It rests on one fitted size, and the three missing effects are named
 beside it. The earlier 4274 anchor (u–d = 0.364 fm) stays withdrawn. Here a comes from r_p, not from a lattice
 length.
+
+**Erratum (Patch 4284, PD-008 critic):** the r_p fit converts to fm at m_q = m_p/3 while the same row reports m_q ≈ 296 MeV from μ_p; r_ZBW = ħ/m_q c takes one mass (4240, 4272). With one m_q, **no frame size fits r_p** (floor +1.0%, collapsed frame), and these rows sit at r_p ≈ +5.8%. The g_A values are right for these geometries, but r_p does not select them: over the allowed range g_A spans 1.242–1.282 (−2.6% to +0.5%) and is **not predicted**. μ_n −2.2% to −2.6% is robust. See `series_standard_model/axiom_maturation/4284_critic_4276_two_quark_masses_rp_floor.md`.
