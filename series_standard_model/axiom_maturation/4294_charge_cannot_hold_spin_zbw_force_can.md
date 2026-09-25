@@ -93,3 +93,5 @@ the moving CP creates, or something else in your picture?
   ZBW-strength bond.
 - **What is solid.** The α shortfall of charge at the Compton scale is plain arithmetic, and it applies equally to the
   ZBW itself.
+
+**Erratum (Patch 4295):** §3's and §6's "charge cannot hold the electron's spinning structure at any size … below light speed, except at the Bohr scale" holds for 4293's neutral-hub dumbbell only. For the founder's symmetric shuttle rod, close passes of the +eCP multiply the pull by about d/2s, and charge alone holds the rod at a half-length of 4.1 r_C, with the poles at 0.15c (at the g = 2 overshoot). §3's α arithmetic and §4's point about the ZBW's force stand. See `series_standard_model/axiom_maturation/4295_shuttle_rod_close_pass_force_and_g.md`.
