@@ -97,3 +97,5 @@ always moves at the speed of light?
 - **For the next context window, press:** (i) redo SPIN-1's L = ħ/2 with massless speed-c poles: is r_out/r_in = 2
   compatible with R − ⟨b⟩ = r_ZBW? (ii) whether the inner's lily-pad really has ⟨b⟩ ≈ 0: row 1 shows b is large even
   for a small L, so "nearly through" is not "through".
+
+**Erratum (Patch 4288):** §4–§6 present massless speed-c poles as what g = 2 requires. That is one sufficient case. After the founder's ruling (CPs have no rest mass but have DP-arc inertia, and move at V_i), the requirement is that **the circulating −eCP's inertia be m_e/2**, at any speed: g = −(2m_e/eS)Σq_iL_i/(2m_i). §3's result stands (inertia m_e per CP gives g ≤ 1). See `series_standard_model/axiom_maturation/4288_g_is_mass_over_carrier_inertia.md`.
