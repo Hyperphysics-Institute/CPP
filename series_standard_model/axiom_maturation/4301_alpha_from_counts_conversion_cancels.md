@@ -78,3 +78,5 @@ re-radiation. Does that match your picture of how a CP's influence spreads?
   Changing σ or the push rescales the required N but not the 10³² conflict with the covering picture.
 - **Not read.** `flagship_papers/neutrinos/sketches/SF-4_alpha_exponent_closure.md` discusses DI-bit exchange counts and
   α; it should be read against §2 before any further step (D-1).
+
+**Erratum (Patch 4302):** §3's 10³² conflict compared α's N with a count of GPs on the PSR sphere. The founder's covering condition was CPs on the sphere, not GPs (founders_voice/4302); that count is of order one at every density on file, so there is no conflict and §3's "not all three can hold" is withdrawn. §2's relation α = N s/(4π PSR) stands. See `series_standard_model/axiom_maturation/4302_cover_every_cp_and_the_band_fraction.md`.
