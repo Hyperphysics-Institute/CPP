@@ -77,3 +77,5 @@ something you expect to derive?** If given, the remaining task is only why spin 
   an underived ½, so it is not reported as a result.
 - **What is solid.** One GP per DI-bit is a length quantum; its angular momentum spans 10³⁵ across ordinary objects; the
   covering count is 10⁶⁰–10⁶⁴ per Moment, on either corpus value of the GP spacing.
+
+**Erratum (Patch 4300):** the founder rules that the l_P/2 PSR floor has no conceptual standing (founders_voice/4300). §5's candidate "the PSR floor's l_P/2" for spin's ½ is withdrawn, and §4's coincidence loses even its ½. He expects ħ to be derived; see `series_standard_model/axiom_maturation/4300_what_a_derivation_of_hbar_needs.md`.
