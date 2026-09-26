@@ -63,3 +63,5 @@ band's depth in GPs?** If so, why is the band about a tenth of a PSR deep, and i
 - **What is solid.** The CP count in the shell at each corpus density; that covering CPs cannot set N; that N in GP
   layers is 0.0917 × PSR/s, whatever one makes of it.
 - **Correction.** 4301 §3's 10³² conflict applied to a GP covering the founder did not intend; withdrawn.
+
+**Erratum (Patch 4303):** the founder corrects 4302's premise: the covering is one DI-bit per GP, not per CP (founders_voice/4303). §1 stands as arithmetic but does not describe his condition; §2's per-layer relation α = f/4π is unchanged and is now the crux. See `series_standard_model/axiom_maturation/4303_every_gp_vs_alpha_1e60.md`.

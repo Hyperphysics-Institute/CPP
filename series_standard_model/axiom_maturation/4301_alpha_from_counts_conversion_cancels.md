@@ -80,3 +80,5 @@ re-radiation. Does that match your picture of how a CP's influence spreads?
   α; it should be read against §2 before any further step (D-1).
 
 **Erratum (Patch 4302):** §3's 10³² conflict compared α's N with a count of GPs on the PSR sphere. The founder's covering condition was CPs on the sphere, not GPs (founders_voice/4302); that count is of order one at every density on file, so there is no conflict and §3's "not all three can hold" is withdrawn. §2's relation α = N s/(4π PSR) stands. See `series_standard_model/axiom_maturation/4302_cover_every_cp_and_the_band_fraction.md`.
+
+**Erratum to the erratum (Patch 4303):** the founder's 4302 CP reading was a slip; the condition is one DI-bit per GP (founders_voice/4303). §3's tension stands as written. See `series_standard_model/axiom_maturation/4303_every_gp_vs_alpha_1e60.md`.
