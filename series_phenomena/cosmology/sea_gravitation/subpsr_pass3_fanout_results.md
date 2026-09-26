@@ -51,3 +51,5 @@ band result (§1) and the kick (§2) are geometry-robust (both
 follow from hop-count statistics and the origin split, not from
 angular harmonics). Kila6 Route C and the DM ledger untouched;
 arrival still trumps all.
+
+**Update (Patch 4305):** the §1 nuance is adjudicated. A sparse-matrix relay of the same rule reproduces the table exactly and extends it: rms/⟨r⟩ falls as ~N⁻⁰·³⁸ with no plateau through N = 72 (0.0489). The ~10% band therefore corresponds to N ≈ 6–10 fan-out hops per PSR; one GP-step per hop (~10³⁰) would give ~10⁻¹². At N = 9, rms/⟨r⟩ = 0.0918 = 4πα to 0.1%. See `series_standard_model/axiom_maturation/4305_fanout_band_no_plateau_alpha_at_nine_hops.md`.
