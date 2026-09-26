@@ -36,7 +36,7 @@ import re, subprocess, sys
 # 4029; the rule never grew to cover a second table. Rule 6 generalised in the same commit.
 # Fourth Rule-6 lag on record (3700, 3800, 3900 in next_id.py), first in this gate.
 BLOCKS = {'chir':(900,999),'de':(3400,3499),'dm':(3500,3599),'gr':(3700,3799),
-          'eu':(3900,3999),'ew':(4200,4299),'ew-4100':(4100,4199),'ew-4000':(4000,4099)}
+          'eu':(3900,3999),'ew':(4300,4399),'ew-4200':(4200,4299),'ew-4100':(4100,4199),'ew-4000':(4000,4099)}
 # 4241: FIFTH Rule-6 lag, second in this gate. The 4199 commit swapped next_id.py's key and the
 # registry row says 'gate keys swapped in the 4199 commit' -- but only next_id.py was swapped; this
 # table still read 'ew':(4100,4199) through 4200-4240, so the whole live 4200 block was unwatched.
