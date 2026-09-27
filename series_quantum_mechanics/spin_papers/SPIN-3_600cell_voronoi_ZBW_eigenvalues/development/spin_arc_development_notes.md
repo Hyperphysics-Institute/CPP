@@ -698,3 +698,7 @@ The GPU path uses `torch.linalg.eigh` for matrices up to ~25,000 points, and `to
 
 ---
 
+
+## Session 240 vignette (Patch 4315) — the spin arc's premise examined
+
+The electron's magnet was computed for SPIN-1's own carrier and came out at g = 3 − 2√2 = 0.172 (Patch 4286): the captured neutral DP's two ends nearly cancel. Following that, SPIN-1's spin derivation was read forwards (4289): Coulomb balance allows the pair at every radius (L ∝ √r_in), and thm:spin solves r_in from L = ħ/2, so ħ/2 is the input; with both radii at SPIN-2's anchors (r_th/3, 2r_th/3) the pair carries 0.168 × ħ/2, and SPIN-2's 35.27× scale connection moves the pair off the anchors that gave r_out = 2r_in. Both papers are held from deposit (`%%TODO:` markers) pending TODO-4289-SPINREV. The founder's successive pictures (4287–4297) and four classical models all failed to hold an electron together under Newton-plus-Coulomb dynamics; the conclusion filed at 4297 is that the electron is a quantised ground state, and the spin arc's next task is the quantisation rule rather than another orbit. This supersedes the "not a problem — it is a result" reading of the scale mismatch at l.491 above.

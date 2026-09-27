@@ -34,13 +34,13 @@ Kickoff line: see the boot card `handovers/2026-09-27_session_240_p4314_BOOTCARD
 - **The hub-and-rim g = 2 (4293)** is provisional under a self-consistent energy accounting (4294).
 - **Not to be rediscovered as results:** a_e-shaped coincidences (4286 §3, 4293 §5, 4296 §2); the nine-hop match (4305, withdrawn); the square-loop ħ/2 (4298).
 
-## §5. Step A–H Completion Audit (Patch 4314)
-- **A (Tier 1 session log):** ✓ this detail file + boot card.
-- **B (Tier 2 transcript pointers):** N/A (no transcript file; the chat's founder text is captured verbatim in `founders_voice/` per CONV-009).
-- **C (Tier 3 vignettes):** ✓ carried by the per-patch reasoning fragments in `series_standard_model/axiom_maturation/4284–4313` (reasoning-capture rider, bootup §3).
-- **D (Tier 4 verbatim reasoning):** ✓ same fragments, each with its verify script (`series_standard_model/code/4285–4313`); the Session-240 arc is EW-lane, not a single paper's `reasoning-<paper>.md`.
-- **E (registries):** research_frontier ✓ (head line per patch); todolist ✓ (every deferral filed in-patch, deferral gate on every commit); id_block_registry ✓ (4300–4399); theorem/axiom registries N/A (no theorem or axiom change; the CP-mass ruling 4288 is founder-voice, not registered as an axiom — flagged for the foundations lane); paper_catalog N/A; predictions N/A (no prediction registered; α relation is a calibration); glossary N/A; methods_catalogue: **one candidate**, the conversion-free count rule for α (a Layer-1 technique: express a dimensionless coupling as a ratio of lattice counts so the unit conversion cancels) — NOT registered here (catalog-first rule; next window registers if it reuses it); organizational_frontier N/A; INDEX N/A.
+## §5. Step A–H Completion Audit (Patch 4314, completed at Patch 4315)
+- **A (Tier 1 session log):** ✓ `session_logs/2026-09-27_session_240_log.md` (4315).
+- **B (Tier 2 transcript pointers):** ✓ `session_logs/transcript-cross-paper.md` entries 072–078 (4315); founder text verbatim in `founders_voice/` per CONV-009.
+- **C (Tier 3 vignette):** ✓ `series_quantum_mechanics/spin_papers/SPIN-3_600cell_voronoi_ZBW_eigenvalues/development/spin_arc_development_notes.md`, Session 240 vignette (4315); the α/count work is foundations, not paper-scoped (cross-paper log).
+- **D (Tier 4 reasoning):** ✓ the per-patch fragments `series_standard_model/axiom_maturation/4284–4313` with verify scripts `series_standard_model/code/4285–4313` (reasoning-capture rider); no single `reasoning-<paper>.md` applies (EW-lane arc).
+- **E (registries):** research_frontier ✓; todolist ✓ (every deferral filed in-patch); id_block_registry ✓ (4300–4399 at 4299); `frontier_sectors/EW.md` ✓ (4315); `future_projects.md` Project 7 ✓ (4315); `methods_catalogue.md` ✓ METH-L1-019 (4315); `paper_catalog.md` ✓ SPIN-1/SPIN-2 marked HELD (4315); OSF queue/manifest ✓ regenerated at 4289; theorem-registry N/A; axiom-registry N/A — **flag:** the founder's 4288 ruling (CPs have no rest mass; DP-arc inertia) is founder-voice only and should be registered by the foundations lane; predictions N/A (the α relation is a calibration); master_glossary N/A; organizational_frontier N/A; INDEX N/A.
 - **E′ (reasoning-capture audit):** ✓ every physics patch 4285–4313 has fragment + script; 4284 was the previous window's.
 - **F (reviewer artifacts):** N/A.
-- **G (protocol changes):** N/A (governance only in the block opening).
-- **H (handover document):** ✓ this file + boot card; kickoff line echoed in chat.
+- **G (protocol changes):** N/A (governance only: the block opening).
+- **H (handover document):** ✓ boot card + this detail; kickoff line and orientation echoed in chat (4314).

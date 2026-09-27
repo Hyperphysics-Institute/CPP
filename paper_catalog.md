@@ -109,8 +109,8 @@
 | Quantum Mechanics in Conscious Point Physics: — The Measurement Problem and Apparent Wavefun... | 3.2 | `series_quantum_mechanics/papers/QM-4_measurement_problem.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 | Quantum Mechanics in Conscious Point Physics: — Emergent Quantum Field Theory, Second Quanti... | 3.1 | `series_quantum_mechanics/papers/QM-5_qft_emergence.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 | Quantum Mechanics in Conscious Point Physics: — Full Synthesis --- From Four Primitives to Q... | 3.2 | `series_quantum_mechanics/papers/QM-6_capstone.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
-| SPIN-1: Emergent Spin- 12 from Captured Dipole Particle — Orbital Geometry in Conscious Poin... | 2.1 | `series_quantum_mechanics/spin_papers/SPIN-1_emergent_spin_from_captured_DPs/SPIN-1_emergent_spin_from_captured_DPs.tex` | 2026-08-20 | 3253 | **UNKNOWN — not in prior catalog** |
-| SPIN-2: Derivation of the Standing-Wave Sub-Harmonic Condition — for Captured Dipole Particl... | — | `series_quantum_mechanics/spin_papers/SPIN-2_standing_wave_subharmonics/SPIN-2_standing_wave_subharmonics.tex` | 2026-08-20 | 3253 | **UNKNOWN — not in prior catalog** |
+| SPIN-1: Emergent Spin- 12 from Captured Dipole Particle — Orbital Geometry in Conscious Poin... | 2.1 | `series_quantum_mechanics/spin_papers/SPIN-1_emergent_spin_from_captured_DPs/SPIN-1_emergent_spin_from_captured_DPs.tex` | 2026-08-20 | 3253 | **HELD from deposit (Patch 4289): takes ħ/2 as input; revision TODO-4289-SPINREV** |
+| SPIN-2: Derivation of the Standing-Wave Sub-Harmonic Condition — for Captured Dipole Particl... | — | `series_quantum_mechanics/spin_papers/SPIN-2_standing_wave_subharmonics/SPIN-2_standing_wave_subharmonics.tex` | 2026-08-20 | 3253 | **HELD from deposit (Patch 4289): takes ħ/2 as input; revision TODO-4289-SPINREV** |
 | SPIN-3: The ZBW Mode Spectrum and the Lattice Voronoi-Cell Eigenvalue Problem — | 1.0.1 | `series_quantum_mechanics/spin_papers/SPIN-3_600cell_voronoi_ZBW_eigenvalues/SPIN-3_600cell_voronoi_ZBW_eigenvalues.tex` | 2026-08-20 | 3253 | **UNKNOWN — not in prior catalog** |
 
 ---

@@ -281,6 +281,7 @@ The companion to Project 00's Gate 2: where Gate 2 is OPEN-SR-6→DM-2 (primordi
 ### Project 7: Electron g-2 Precision
 **Status:** Exploratory material in archive (153 files from Grok swarm analysis)
 **Goal:** Derive the anomalous magnetic moment of the electron from CPP
+**Session 240 note (Patch 4315):** a_e ≈ α/2π now sits inside the α programme (TODO-4286-GMOMENT). Recorded-not-claimed a_e-shaped coincidences: g = 2(1+ε) if a spin-free fraction ε of the mass lies outside the CPs (4293 §5); petals in a linear well give g > 2 (4286 §3); the golden-ratio shuttle passes g = 2 at a set energy (4296). None is a derivation.
 **Significance:** The most precisely measured quantity in physics — sub-ppm match would be definitive
 **Dependencies:** QM series, SM-6
 

@@ -17,7 +17,7 @@ The most important next action is **(P′): compute the coherent footprint of on
 **STEP 2:** read `handovers/detail/2026-09-27_session_240_p4314_electron_spin_alpha_arc_4284_4313.md`, then work.
 
 ## Facts
-- **HEAD:** 4314 (this close). **Next free: EW 4315.**
+- **HEAD:** 4315 (4314 close; 4315 §15 A–H completion). **Next free: EW 4316.**
 - **α = N s/(4π PSR)** (4301): conversion-free; N = DI-bits per GP per Moment, s = GP spacing. Calibrated: N = 9.2×10²⁸ (PSR/s = 10³⁰) or 9.3×10³⁰ (EU 10³²). Labelled a calibration (4310).
 - **Planck unit = 1/√α = 11.71 GPs** coherent emission and interception (4313); electron: charge 1 GP, mass 4.9×10⁻²² GPs.
 - **Landing band at the PSR: 1.9% rms, scale-free** (4309, sharing rule); the old 10% band is closed (toy hop count, 4307–4308). D-ARC-GAMMA rests on the 10% — flagged for the sea lane.
