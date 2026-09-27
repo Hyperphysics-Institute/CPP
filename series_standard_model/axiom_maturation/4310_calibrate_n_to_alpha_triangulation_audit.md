@@ -73,3 +73,5 @@ observable your triangulation needs.
   bites, and the one that bites now disagrees.
 - **What is solid.** The two calibrated N values; the 10¹⁶ mismatch of the surface-count PSR_min with SR-1's floor;
   GR-1a's independence from N and its α cancellation; the target ratio 2.4 × 10⁻⁴³.
+
+**Erratum (Patch 4311):** §2(C)'s "tension with AP-4" is withdrawn. GR-1a's mass-scaled source is the number of organised emitters, each at AP-4's fixed count, not more emission per GP; gravity needs no change to the PCD cycle. The surface-count identification PSR_min = √(N/4π)·s is dropped, which removes the 10¹⁶ mismatch. See `series_standard_model/axiom_maturation/4311_ap4_stands_c_over_2_assumed_gravity_in_counts.md`.
