@@ -70,3 +70,5 @@ both say about nine.
   derivation. It is not reported as one.
 - **What is solid.** Pass 3's table reproduced exactly; the band falls as N⁻⁰·³⁸ with no plateau; f = 4πα at N = 9; a
   GP-step-per-hop reading gives 10⁻¹².
+
+**Erratum (Patch 4306):** the founder rules the sub-Moment sharing count is not a physical parameter. §3's nine-hop match to 0.1% is an artefact of the dial and is withdrawn as evidence; §2's no-plateau result stands. See `series_standard_model/axiom_maturation/4306_hop_count_is_a_dial_band_must_be_positional.md`.

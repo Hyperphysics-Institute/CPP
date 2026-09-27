@@ -78,3 +78,5 @@ ordinary PSR to give α.
   than multiplies; that pass 3's derived band brackets 4πα.
 - **Not claimed.** That α is derived. Two readings of N exist and only one is on file (his); the other is a construction
   that happens to match a derived number.
+
+**Erratum (Patch 4306):** §3's "the band thickness that the corpus already derived" overstates pass 3: its hop count is a sub-Moment dial (founder ruling, founders_voice/4306), so f is not derived. α = f/4π stands as a relation with f an input. See `series_standard_model/axiom_maturation/4306_hop_count_is_a_dial_band_must_be_positional.md`.
