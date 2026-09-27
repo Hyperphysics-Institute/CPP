@@ -64,3 +64,5 @@ oscillation gives a footprint of about that many GPs, α is derived and N is tri
 - **Convenient branch, marked.** "137 GPs" is a neat number to hand the founder; it is a target, produced by
   translating GR-1a's hierarchy into counts under the coupling rule, not a derivation.
 - **What is solid.** G_P = 1/α follows from AP-4, the coupling rule and GR-1a's α_G = (m/m_P)²; the crowding radii.
+
+**Erratum (Patch 4313):** the coupling is quadratic in each source (emitter and interceptor both scale with organised emission; GR-1's (m/m_P)²/(e/e_P)²). Symmetrically, G_P² α = 1, so **a Planck unit is 1/√α ≈ 11.7 GPs, and 137 is the pair coupling**; the electron's coherent mass footprint is 4.9 × 10⁻²² GPs. §1's "137 GPs" and the crowding radius √R are corrected accordingly (a Planck mass's volley fills to √(G_P N₀/4π) = α^(−1/4)√(αR)). See `series_standard_model/axiom_maturation/4313_harmonised_with_gr1_planck_unit_is_11p7_gps.md`.
