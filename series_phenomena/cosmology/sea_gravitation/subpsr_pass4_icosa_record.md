@@ -64,3 +64,5 @@ cutoff; accelerator disabled; stable all day; Route C ≈ 55%
 complete, ≈ 4 days remaining; performance cost of the fix ≈ 1% per
 leg.** Kila6 Route C and the DM ledger untouched; arrival still
 trumps all.
+
+**Scope note (Patch 4307):** the "physical question handed back" above is adjudicated as far as the corpus allows: no computation fixes N; with one GP per hop (~10³⁰) the band is ~10⁻¹²; the ~10% band requires a PSR of about ten sharing-hops, which would have to be a level of the nested 600-cell hierarchy. See `series_standard_model/axiom_maturation/4307_the_10pct_shell_is_valid_only_if_a_psr_is_ten_hops.md`.
