@@ -1,6 +1,6 @@
 # Founder walk-and-talk, 12 Sep 2026 — "Planck epoch dispersal of lone CPs"
 
-**Patch 3513, DM block, from this window under PD-006; edited rendering at Patch 3514.** Offered by the founder in reply to the 3512 §4 picture question (what carries the dilution once each GP holds about one CP; does a third qCP on a GP spoil a pair). **This is an edited rendering of spoken material:** false starts and self-corrections removed, sentences completed, no content added; the raw speech-to-text is retained as `3513_planck_epoch_dispersal_raw.md` (provenance only, not for citation). Worker's reduction follows.
+**Patch 3513, DM block, from this window under PD-006; edited rendering at Patch 3514.** Offered by the founder in reply to the 3512 §4 picture question (what carries the dilution once each GP holds about one CP; does a third qCP on a GP spoil a pair). **This is an edited rendering of spoken material:** false starts and self-corrections removed, sentences completed, no content added; it is the founder's voice, edited by Claude for clarity. The raw transcript has been removed from the repo (founder, 28 Sep 2026; Patch 4319) and is not published. Worker's reduction follows.
 
 ---
 

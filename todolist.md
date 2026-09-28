@@ -2823,7 +2823,7 @@ Patch 4101's cancellation argument extends to F2 **only if** the DP sea's arc di
 
 ### TODO-4076-EW — the founder's spin bit: assessed, repaired, and its QM side effect (registered Patch 4076, EW lane)
 
-- **FILED:** `founders_voice/founder_fourth_dimension_spin_bit_2026-09-17.md` (edited per the founder's standing transcript rule); raw Otter transcript at `founders_voice/raw_transcripts/2026-09-17_...` as provenance only.
+- **FILED:** `founders_voice/founder_fourth_dimension_spin_bit_2026-09-17.md` (edited per the founder's standing transcript rule); raw Otter transcript at `founders_voice/raw_transcripts/2026-09-17_...` as provenance only. *[4319: raw transcript removed from the repo at the founder's instruction; not published.]*
 - **B1 — as defined the spin bit is P-EVEN** and does not give chirality: a ±1 value attached to an address is a scalar; parity relocates the address, not the value. Same class as polarity (4071).
 - **B2 — the repair:** write the bit with **helicity**, b = sign(ω·v) — P-odd in 20,000/20,000 draws. Register, DI-bit transport, majority rule and CP seeding all unchanged; only the write rule changes.
 - **B3 — answers the founder's question ("what response?"):** parity violation appears iff the response is **linear** in the bit; an even response gives exactly zero asymmetry even with a P-odd bit.

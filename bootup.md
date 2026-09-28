@@ -145,14 +145,16 @@ committed **while topics were being searched** — the search returned the right
 worker still supplied a textbook meaning for a term the document defined. **When the same error
 recurs under an existing rule, the rule is aimed at the wrong object.**
 
-**Founder spoken material (Patch 3514, the founder's standard).** A walk-and-talk or other speech-to-text
-transcript is NOT filed verbatim as the public `founders_voice/` record. The `founders_voice/` file carries an
-**edited rendering** — false starts and self-corrections removed, sentences completed, in the founder's voice, **no
-content added** — and the raw transcript is kept beside it as `<name>_raw.md`, headed *not for citation, provenance
-only*. CONV-009's verbatim principle is satisfied by the raw file; the founder's writing standard ("extremely edited
-and careful") is what the repo's public face must meet. Written founder text (messages, ratifications) is still filed
-verbatim as before. **What it cost:** 3513 filed an otter.ai transcript verbatim, with its false starts, on the public
-repo; the founder caught it the same day.
+**Founder spoken material (Patch 3514, the founder's standard; amended Patch 4319).** A walk-and-talk or other
+speech-to-text transcript is NOT filed verbatim, and **the raw transcript is not published at all** (founder, 28 Sep
+2026: *"My physics walks in their raw form are too stream-of-consciousness to publish"*). The `founders_voice/` file is
+the walk **in the founder's voice, edited by Claude for clarity** — false starts and self-corrections removed,
+sentences completed, **no content added** — and says so in its header ("edited by Claude for clarity; the raw
+transcript is not published"). Do not create `<name>_raw.md` or `raw_transcripts/` files. Written founder text
+(messages, ratifications) is still filed verbatim as before; CONV-009's verbatim principle applies to written text.
+**What it cost:** 3513 filed an otter.ai transcript verbatim, with its false starts, on the public repo; the founder
+caught it the same day. 3514 then kept the raw beside the edit as provenance, which still published it; the founder
+withdrew that at 4318/4319.
 
 **One physics-side rule earned the same way.** A **derived shift is not an error bar**
 (Patch 3850): the O(α) correction had been carried for five paper versions as a symmetric

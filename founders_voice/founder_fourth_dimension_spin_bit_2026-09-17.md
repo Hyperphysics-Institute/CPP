@@ -1,8 +1,8 @@
 # Founder's Voice — The Fourth Dimension as a Spin-Bit Register
 
 **Source:** founder's written note and walk-and-talk, 17 September 2026. Filed at Patch 4076.
-**Provenance:** `founders_voice/raw_transcripts/2026-09-17_4d_spin_orbit_walk_raw_otter.txt` (raw Otter.ai
-transcript, unedited). This document is the edited rendering — false starts and self-corrections removed,
+**Provenance:** the founder's walk in his own voice, edited by Claude for clarity from an Otter.ai transcript. The raw transcript has been removed from the repo (founder, 28 Sep 2026; Patch 4319) and is not published.
+This document is the edited rendering — false starts and self-corrections removed,
 sentences completed, **no content added**. Where the transcript corrects itself, the correction is kept and the
 false start dropped.
 
