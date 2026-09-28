@@ -104,3 +104,5 @@ not claimed to be anything, and σ = s² is still an assumption that rescales it
 - **For the critic in the next window:** confirm §2's line list is complete (grep c04 and the Born-rule companion
   for "half-cycle" and "E_P t_P") before the text changes; and check §4's σ = s² against any corpus definition of a
   GP's interception cross-section (D-7).
+
+**Erratum (Patch 4322):** the founder ruled the flip is **one PSR** per Moment (light speed), not one GP. §3's working reading (i) is overruled; §4's α = N/(8πR) becomes **α = N/(8πR²)**, R-independent; §5's "a line's worth, not a sphere's" is reversed: the volley reaches 2α ≈ 1/68.5 of its PSR sphere per Moment. §2 (c04's factor 2) is unaffected. See `series_standard_model/axiom_maturation/4322_psr_flip_makes_alpha_a_sphere_fraction.md`.
