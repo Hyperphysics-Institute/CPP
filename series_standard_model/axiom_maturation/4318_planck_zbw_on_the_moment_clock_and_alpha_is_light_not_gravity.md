@@ -140,3 +140,5 @@ which needs at least four to six Moments per cycle and so runs slower than c04's
   content change without breaking 4301's derivation of α = N s/(4π PSR), which counts DI-bits intercepted. The static
   reading counts push; the radiative reading counts changing content. They must give the same α, and that is not yet
   shown.
+
+**Erratum (Patch 4320):** the founder chose the flip (option (a)) and gave it ħ/2 as *"an elemental motion of a single GP over a single Moment"*. §2's statement that the flip is one PSR (about 10³⁰ GPs, at c) assumed maximum speed c; the working reading is now **one GP step**, and the one-PSR flip is a live alternative put to him. The table in §2 stands as computed. See `series_standard_model/axiom_maturation/4320_hbar_half_is_one_gp_flip_alpha_is_n_over_8pi_r.md`.
