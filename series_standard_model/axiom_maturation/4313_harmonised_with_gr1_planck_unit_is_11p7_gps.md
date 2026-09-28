@@ -78,3 +78,5 @@ it has the twelve alone, 1/144 as well; if it has a fractional footprint of 11.7
   as a test, not a result.
 - **What is solid.** GR-1's mechanism = the count rule; the symmetric derivation G_P = α^(−1/2); the electron's two
   numbers.
+
+**Erratum (Patch 4318):** the ratio G_P = 1/√α = 11.7 stands, but its physical referent is the Planck *charge* e_P = √(4πε₀ħc) — the charge that couples to light at strength 1 — not a Planck mass. No reading of α contains G; GR-1's hierarchy was a detour for α (it returns for (O2), counting G). "Organised emission" is read as the change in broadcast content (the founder, 4318: the DI-bit count is fixed, the LSP changes), not as a count of emitters. See `series_standard_model/axiom_maturation/4318_planck_zbw_on_the_moment_clock_and_alpha_is_light_not_gravity.md`.

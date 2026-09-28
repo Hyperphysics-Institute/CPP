@@ -115,3 +115,5 @@ where a charge organises one. Whatever makes that difference is the thing that w
 - **For the critic in the next window:** check §5's claim that R-OUTWARD-FANOUT, being universal, recruits for a
   charge exactly as for a Planck DP. If the fan-out applies only to relayed DI-bits and not to a GP's own broadcast
   state, §5 still holds (it then recruits for neither), but that should be checked against AP-4d.
+
+**Erratum (Patch 4318):** §6's open fork is settled at c04's frequency by the founder's own geometry: with two Moments per cycle, the Planck ZBW is a one-PSR flip each Moment (the first reading). His smooth profile needs at least 4–6 Moments per cycle, a fork now put to him. §5's "something the oscillation does" is his answer: the broadcast content changes every Moment while the count stays fixed. And the object to compute is not a Planck-mass footprint: 11.7 = e_P/e is a light-coupling ratio, without G. See `series_standard_model/axiom_maturation/4318_planck_zbw_on_the_moment_clock_and_alpha_is_light_not_gravity.md`.
