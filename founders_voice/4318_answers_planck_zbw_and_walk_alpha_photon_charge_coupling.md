@@ -3,11 +3,11 @@
 **Patch:** 4318. **Dates:** written answers and walk-and-talk, 28 September 2026 (walk begun 12:55 a.m.).
 **Lane:** EW → foundations. **Answers:** 4317 §8.
 **Worked at:** `series_standard_model/axiom_maturation/4318_planck_zbw_on_the_moment_clock_and_alpha_is_light_not_gravity.md`.
-**Provenance:** §1 is the founder's written text, verbatim. §2 is the **edited rendering** of an Otter.ai walk transcript
-(false starts and self-corrections removed, sentences completed, **no content added**; where the transcript corrects
-itself, the correction is kept). The raw transcript is kept at
-`founders_voice/raw_transcripts/2026-09-28_alpha_em_charge_coupling_walk_raw_otter.txt` — not for citation, provenance
-only. The founder also consulted Copilot on the standard meaning of α (a general explanation: α as the strength of the
+**Provenance:** §1 is the founder's written text, verbatim. §2 is the founder's walk-and-talk in his own voice,
+**edited by Claude for clarity** from an Otter.ai speech-to-text transcript: false starts and self-corrections
+removed, sentences completed, **no content added**; where the transcript corrects itself, the correction is kept.
+The raw transcript is not published (founder, 28 Sep 2026: raw walks are too stream-of-consciousness to publish).
+The founder also consulted Copilot on the standard meaning of α (a general explanation: α as the strength of the
 charge–photon interaction; Sommerfeld's fine structure; the Bohr v/c reading; measurement by the electron magnetic
 moment, atom recoil and the quantum Hall effect). That exchange is textbook material and is not filed.
 
@@ -43,7 +43,7 @@ moment, atom recoil and the quantum Hall effect). That exchange is textbook mate
 >
 > What do you think of these ideas?
 
-## 2. Walk-and-talk: α, the coupling of light and charge (edited rendering)
+## 2. Walk-and-talk: α, the coupling of light and charge (founder's voice, edited by Claude for clarity)
 
 **The question.** Today's topic is α, the fine-structure constant. It is the coupling between electromagnetism and
 charge, with the value 1/137, and that coupling produces nearly all electromagnetic phenomena: Compton scattering,

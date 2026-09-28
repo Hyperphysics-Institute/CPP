@@ -2,7 +2,7 @@
 
 **Patch:** 4318. **Lane:** EW → foundations. **Session:** 241.
 **Founder:** `founders_voice/4318_answers_planck_zbw_and_walk_alpha_photon_charge_coupling.md` (written answers verbatim;
-walk transcript edited, raw kept as provenance).
+walk in his voice, edited by Claude for clarity; raw not published).
 **Verify:** `series_standard_model/code/4318_planck_zbw_steps_and_alpha_readings.py`.
 **Answers:** 4317 §8. **Corrects:** the physical referent of 4313's "Planck unit" (errata appended to 4313 and 4317).
 
