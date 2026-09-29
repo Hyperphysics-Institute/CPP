@@ -78,3 +78,5 @@ than atomic clocks allow. If a grid point registers each source once (it can tel
   channel (μ/ε ratio) and this count-based α can both hold, or whether one supersedes the other; (ii) whether
   per-source counting alters any registered result that assumed additive arrivals (grep "sum of arrivals", Φ = count in
   A3′).
+
+**Note (Patch 4328):** escape 3 is not a new counting rule: the founder's 4308 stepping rule ("GP_empty", clarified at 4328 as empty of the same GP_origin family) already caps a family at one DI-bit per GP; registered as R-DIBIT-FAMILY-EXCLUSION. It prevents stacking but not voids, so LPI also needs the band saturated (fill f_sat, about 0.88 on a toy); then α = f_sat·PSR/(2L). See `series_standard_model/axiom_maturation/4328_family_exclusion_caps_occupancy_lpi_needs_saturation.md`.

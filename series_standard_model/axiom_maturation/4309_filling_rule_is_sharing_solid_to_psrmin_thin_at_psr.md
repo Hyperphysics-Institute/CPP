@@ -63,3 +63,5 @@ that GP_origin imprints about 1.86 PSR of edges?** Either is consistent; they di
   rule gives.
 - **What is solid.** The sharing rule fills shells; the crowding radius; the scale-free 1.9% band and the 0.537 landing
   ratio on the icosahedral neighbour set (the FCC values will differ slightly and are not computed).
+
+**Note (Patch 4328):** this simulation did not apply the founder's family-exclusion step rule (4308, clarified 4328: each step goes only to a GP empty of the same GP_origin family). Under that rule a family's occupancy is capped at one per GP and the band thickens with N; the 1.9% width should be re-run with it. See `series_standard_model/axiom_maturation/4328_family_exclusion_caps_occupancy_lpi_needs_saturation.md`.
