@@ -95,3 +95,5 @@ they bunch?
 - **For the critic in the next window:** (i) confirm the PCD reading used in §4 (perceive at the pre-displacement
   position; emit before displacing) against AP-1/AP-3; (ii) check whether "landing radius = PSR" or "summed path = PSR"
   (4309 §3) changes §4 (a flip of one summed-path PSR lands at 1/0.537 of the landing radius, off the shell).
+
+**Note (Patch 4324):** α = c/2 is the two-Moment-cycle case of the general relation **α = c·PSR/(2L)** (L = the half-cycle's path). The founder reopened the two-Moment cycle (DP-arcs need time to store and return energy); with a cycle of M Moments at light speed, **α = c/M**, and his full covering (c = 1) gives **M = 1/α ≈ 137 Moments** (215 with his slowing-apogee profile). See `series_standard_model/axiom_maturation/4324_one_zbw_cycle_is_137_moments_at_full_covering.md`.
