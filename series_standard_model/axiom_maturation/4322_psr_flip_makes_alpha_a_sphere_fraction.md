@@ -131,3 +131,5 @@ charge 68.5 times too strong. What in your picture of a CP receiving a DI-bit wo
 - **For the critic in the next window:** (i) re-derive §3 from 4301 independently; (ii) the σ = s² check against any
   corpus definition of a GP's interception cross-section (D-7); (iii) whether 4311's drop of the surface-count
   identification should be reversed now that it misses by 4.1 rather than 10¹⁶.
+
+**Erratum (Patch 4323):** the result is restated in the founder's variable: **α = c/2**, c = DI-bits landing on one GP per Moment in the landing zone at the PSR (one GP in 68.5). "R drops out" holds for α, not for N: with a landing band of finite depth (4309's 2%), N = c × (band GPs) carries R. §6's "coupling efficiency of one landing" is the same statement with a whole push per landing read as occupancy. See `series_standard_model/axiom_maturation/4323_alpha_is_half_the_landing_concentration.md`.
