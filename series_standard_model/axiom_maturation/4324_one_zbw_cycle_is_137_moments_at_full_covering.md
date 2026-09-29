@@ -106,3 +106,5 @@ what, in the DP-arcs' build-up and release, would set the number of Moments in o
   means N = 4πR², so the crowding radius is exactly R: **the volley fills shells solid out to its own PSR and thins as
   1/r² beyond it.** Consistent with 4309, and it is the founder's 4304 picture (a one-GP-deep surface covered at the
   PSR) at the baseline PSR.
+
+**Note (Patch 4325):** the founder ruled that the Planck-level CP moves at its V_i each Moment, not light speed (branch (B), a long cycle). Since α = c·PSR/(2L) contains no speed or Moment count, **α fixes the swing, not the duration**: at full covering L = PSR/(2α) ≈ 68.5 PSR apogee to apogee, and the "137 Moments" of §3 is only the light-speed lower bound on the cycle. See `series_standard_model/axiom_maturation/4325_alpha_fixes_the_zbw_swing_not_its_duration.md`.

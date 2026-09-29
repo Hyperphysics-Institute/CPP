@@ -97,3 +97,5 @@ they bunch?
   (4309 §3) changes §4 (a flip of one summed-path PSR lands at 1/0.537 of the landing radius, off the shell).
 
 **Note (Patch 4324):** α = c/2 is the two-Moment-cycle case of the general relation **α = c·PSR/(2L)** (L = the half-cycle's path). The founder reopened the two-Moment cycle (DP-arcs need time to store and return energy); with a cycle of M Moments at light speed, **α = c/M**, and his full covering (c = 1) gives **M = 1/α ≈ 137 Moments** (215 with his slowing-apogee profile). See `series_standard_model/axiom_maturation/4324_one_zbw_cycle_is_137_moments_at_full_covering.md`.
+
+**Note (Patch 4325):** §4's self-landing table assumed a one-PSR flip. Under the founder's 4325 ruling (the CP moves at V_i; the swing is about 68.5 PSR at full covering), the table no longer describes the Planck ZBW. See `series_standard_model/axiom_maturation/4325_alpha_fixes_the_zbw_swing_not_its_duration.md`.

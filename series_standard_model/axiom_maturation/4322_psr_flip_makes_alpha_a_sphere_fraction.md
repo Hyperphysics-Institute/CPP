@@ -133,3 +133,5 @@ charge 68.5 times too strong. What in your picture of a CP receiving a DI-bit wo
   identification should be reversed now that it misses by 4.1 rather than 10¹⁶.
 
 **Erratum (Patch 4323):** the result is restated in the founder's variable: **α = c/2**, c = DI-bits landing on one GP per Moment in the landing zone at the PSR (one GP in 68.5). "R drops out" holds for α, not for N: with a landing band of finite depth (4309's 2%), N = c × (band GPs) carries R. §6's "coupling efficiency of one landing" is the same statement with a whole push per landing read as occupancy. See `series_standard_model/axiom_maturation/4323_alpha_is_half_the_landing_concentration.md`.
+
+**Erratum (Patch 4325):** the one-PSR flip in one Moment is superseded by the founder's 4325 ruling (the CP moves at V_i every Moment at the Planck level too). ħ/2 is the action of the half-cycle swing, and α = c·PSR/(2L) (4324). See `series_standard_model/axiom_maturation/4325_alpha_fixes_the_zbw_swing_not_its_duration.md`.
