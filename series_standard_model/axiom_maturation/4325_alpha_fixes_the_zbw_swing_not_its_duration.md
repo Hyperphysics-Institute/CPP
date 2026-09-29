@@ -94,3 +94,5 @@ would stop them there — why that far and not one Planck length, or a thousand?
 - **For the critic in the next window:** (i) re-derive §2; (ii) whether a swing of up to 68.5 PSR is compatible
   with SF-6's DP-arc inertia and c04's Compton-level cloud; (iii) how the stress raised by the swing's own DP-arcs
   should enter the per-Moment action.
+
+**Note (Patch 4326):** the founder ruled the CP never reaches light speed, even at the centre (the cycle is strictly longer than 137 Moments), and directed that the swing be postulated and triangulated: registered as **CAL-ZBW1-SWING** (a calibration, not an axiom) with two legs, the running of α (sign agrees) and local position invariance (requires SSV_abs to rescale the swing with the PSR, SSV_net to shorten it). See `series_standard_model/axiom_maturation/4326_swing_postulated_triangulation_legs.md`.
