@@ -102,3 +102,5 @@ distance. In your picture of DP-arcs, is that how the two kinds of stress act on
 - **Checked here (D-1): no central calibration register exists.** Calibrations are recorded where they arise (4310's N
   in its fragment and the frontier; QM-lane calibrations in `frontier_sectors/QM.md`). CAL-ZBW1-SWING is recorded here,
   in `research_frontier.md` and in `todolist.md`.
+
+**Erratum (Patch 4327):** §4's T2 condition (SSV_abs rescales the swing with the PSR) is necessary but not sufficient. The founder confirmed it for the swing (4327), but α = c·PSR/(2L) also carries the landing occupancy c, which under AP-4 (fixed N) rises as (1+κ)² in a well: k_α = −2 with additive counting, excluded by ~10⁶. The only escape consistent with AP-4 and c07 is per-source counting at the landing GP (founder question). See `series_standard_model/axiom_maturation/4327_swing_passes_lpi_occupancy_does_not.md`.
