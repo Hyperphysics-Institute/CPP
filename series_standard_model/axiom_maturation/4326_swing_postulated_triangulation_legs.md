@@ -104,3 +104,5 @@ distance. In your picture of DP-arcs, is that how the two kinds of stress act on
   in `research_frontier.md` and in `todolist.md`.
 
 **Erratum (Patch 4327):** §4's T2 condition (SSV_abs rescales the swing with the PSR) is necessary but not sufficient. The founder confirmed it for the swing (4327), but α = c·PSR/(2L) also carries the landing occupancy c, which under AP-4 (fixed N) rises as (1+κ)² in a well: k_α = −2 with additive counting, excluded by ~10⁶. The only escape consistent with AP-4 and c07 is per-source counting at the landing GP (founder question). See `series_standard_model/axiom_maturation/4327_swing_passes_lpi_occupancy_does_not.md`.
+
+**Note (Patch 4329):** CAL-ZBW1-SWING is recast as a calibration of the effective swing **L_eff = L/f = PSR/(2α) ≈ 68.5 PSR**, where f is the landing band's fill under R-DIBIT-FAMILY-EXCLUSION (4328); α cannot separate L from f. See `series_standard_model/axiom_maturation/4329_fill_is_absorbed_saturation_is_what_matters.md`.

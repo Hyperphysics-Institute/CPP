@@ -84,3 +84,5 @@ that fraction.
 - **For the critic in the next window:** (i) re-run 4309's band with R-DIBIT-FAMILY-EXCLUSION on the icosahedral
   neighbour set; (ii) the band definition (percentiles vs a density threshold) and its effect on f; (iii) whether f_sat
   approaches 1 at larger N and P, or a definite value below it.
+
+**Note (Patch 4329):** the founder ruled that no stop criterion is specified, so the fill is left to the empirics. α depends only on L/f, so the fill is absorbed into the calibrated swing (CAL-ZBW1-SWING recast as L_eff = L/f = PSR/(2α)). Only saturation matters (for LPI); two natural stop criteria (path, radius) both trend to a fill plateau near 0.89 on the toy, with the well's effect shrinking. See `series_standard_model/axiom_maturation/4329_fill_is_absorbed_saturation_is_what_matters.md`.
