@@ -246,6 +246,7 @@ Standard structure:
 - **Parallel-window (ratified, pending activation):** once the Step-4 overnight audit exists, do not hand-edit the shared registry in-session; write the precise delta to `Registries_pending/<window-slug>.md` per §4 "Parallel-window registry discipline", and the audit merges it. Until the audit is built, edit in-session as before.
 
 ### Phase 6: OSF Registration
+*(Patch 4334: OSF is no longer used. Deposits go to the CERN repository (Zenodo) via Isak, who also builds the PDFs at deposit; see bootup §14.)*
 - Prepare PDF and .tex
 - Write OSF metadata (title, abstract, keywords, dependencies)
 - Register with DOI

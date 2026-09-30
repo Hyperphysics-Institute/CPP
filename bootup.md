@@ -177,8 +177,9 @@ Conscious Point Physics derives the Standard Model from the geometry of the 600-
 ```
 GitHub: https://github.com/Hyperphysics-Institute/CPP
 Clone: git clone https://github.com/Hyperphysics-Institute/CPP.git
-OSF:   https://osf.io/9dfya/
-DOI:   10.17605/OSF.IO/JXE8D
+Deposit: CERN repository (Zenodo), by Isak, per paper, which mints the DOI (founder, 29 Sep 2026, Patch 4334)
+OSF:   https://osf.io/9dfya/   (legacy; no longer used for deposits)
+DOI:   10.17605/OSF.IO/JXE8D (legacy OSF project DOI)
 Web:   https://hyperphysics.com
 ```
 
@@ -470,7 +471,7 @@ See `templates/operating_system.md` §4 "Four-Tier Documentation Discipline" for
 | File | Purpose | Update when |
 |------|---------|-------------|
 | `operating_system.md` | **THE COMPLETE WORKFLOW** — multi-AI review, transcripts, recovery, roles | When procedures change |
-| `paper_production_workflow.md` | 9-phase pipeline from vision to OSF | When pipeline changes |
+| `paper_production_workflow.md` | 9-phase pipeline from vision to deposit (OSF in its text is legacy; deposits now go to CERN/Zenodo, §14) | When pipeline changes |
 | `templates/paper-formatting.md` | LaTeX standard (16 sections) | When formatting changes |
 | `templates/documentation-suite.md` | 7-file companion template per paper | When template changes |
 | `templates/capture_and_audit_protocol.md` | **Raw-capture + overnight-audit** (CANONICAL, ratified Patch 2111; pending activation). Daytime raw capture only; judgment moves to a nightly audit. | When the model changes |
@@ -683,13 +684,22 @@ Do not rely on bootup for paper counts or versions; `paper_catalog.md` is the si
 
 ---
 
-## 14. OSF Registration
+## 14. Deposit and DOI (CERN repository / Zenodo)
 
-1. Prepare PDF + .tex + .bib + figures
-2. Write metadata (title, abstract, keywords, dependencies, version)
-3. Upload to OSF component under CPP project
-4. OSF auto-assigns DOI
-5. Update `paper_catalog.md` and `README.md`
+**Founder, 29 September 2026 (Patch 4334, verbatim in `founders_voice/4334_…`):** *"I don't generate PDFs. Isak does
+that when he uploads to the CERN repository to establish a DOI (we don't use OSF now, since they changed their policy on
+editing and posting). We haven't uploaded the 122+ papers to CERN yet."*
+
+1. **PDFs are built by Isak at deposit time**, from the `.tex` on `main`. "Founder PDF recompile" in older handovers
+   and todolist items means **"PDF built at deposit"**; it is not an action for Thomas and is never a per-patch owed
+   item. What a patch owes instead is a `.tex` that compiles (test-compile in the container with `pdflatex` before
+   presenting a paper patch).
+2. **Deposits go to the CERN repository (Zenodo)**, one record per paper, which assigns the DOI. The queue and manifest
+   are `osf_deposit_queue.md` / `osf_deposit_manifest.json` (legacy file names; the manifest already carries Zenodo
+   fields), built by `code/build_osf_queue.py`.
+3. **Nothing of the corpus is deposited yet.** The founder's view (29 Sep): fundamental issues remain to be resolved
+   before the full publication.
+4. After a deposit: update `paper_catalog.md` and `README.md`.
 
 ---
 
