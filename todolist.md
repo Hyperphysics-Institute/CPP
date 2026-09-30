@@ -2408,6 +2408,7 @@ The ordered list is `pre_deposit_roadmap.md`: (0) honest labelling + theory-over
 
 ### TODO-4335-OVERVIEW — refresh theory-overview.md and do the honest-labelling pass (registered Patch 4335, governance lane)
 `code/overview_staleness_gate.py` FAILS at 4335: the file was last refreshed 2026-06-21 (header 17 May), 75 scorecard-registry commits behind. Owed: rewrite its scorecard, key formulas, open problems and series status from the live registries (predictions.md, theorem-registry.md, axiom-registry.md, paper_catalog.md, research_frontier.md), with every headline carrying its basis (calibrations: m_e, m_c, η_W/Z/H, CAL-ZBW1-SWING, Λ; conditional: Koide on Layer B, SS-8/9 on hypothesis sets; conjecture: DM, TN-SR-1). Then README.md's headline table to match. Then the gate passes.
+**Stage 1 DONE 4336:** header, a new *Current state and headline basis* section (counts; a 19-row basis table: derived / conditional / calibrated / conjecture / input for every headline), a new one-paragraph theory with the 17 May paragraph kept for the record. **Stage 2 owed:** Registered Papers tables, results and key formulas, series status, open problems (all still the 17 May text), then README.md's headline table. The gate now reports **PARTIAL** (exit 1) while the header carries the STAGE-1 marker, so the stage-1 commit does not read as a pass.
 
 ### TODO-4234-DELTA — the nucleon's g_A/g_V from the cage (registered Patch 4234, EW lane; owned by the STRONG sector)
 

@@ -2,17 +2,74 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 17 May 2026 (Session 127 Patch 0422B refresh: previously stale since 26 April 2026 SS-8 v1.0 close. Cumulative changes since 26 April: SS-9 v1.0 SHIPPED Session 32 [conditional theorem closure paper closing OPEN-SS-24]; SF-4 v1.0/v2.0/v3.0/v4.0/v4.3/v4.4 progression Sessions 54-81 [partial closure → Picture A axiomatic closure → α-exponent residual closure → first cross-sector closure in CPP with SM-5 op:nu_id → archival-deposit-quality]; SF-2 v1.0 SHIPPED Session 83 [electroweak cage-boson unification, 24-patch campaign]; Capotauro v1.0 SHIPPED Session 122 [substrate-vacuum chirality, THEO-CAP-1 Composite Wigner-Eckart, $\Delta p_{LR} = \chi/6 \approx 0.0394$]; OPEN-FI-C-9-FP-MECHANISM Reading C closure trajectory in progress Sessions 121-127 [Q1+Q2 closed at Layer 3, Q1'+Q1'.A resolved at Layer 2 toward vertex-aligned]. Cumulative swarm total advanced from 103 to 108 predictions per `predictions.md`. Theorem count advanced from 47 to 62 (+15 theorems from SS-9 + SF-4 + SF-2 + Capotauro). Programme problem registry 93 entries / 58 open.) **Update 6 June 2026 (Session 155):** EU-1 v1.0 SHIPPED — first cosmology/early-universe-sector paper; CMB scalar spectral index $n_s = 1 - 2/N_* \approx 0.9649$ (PRED-C-96, framework-conditional, zero-new-axiom; NO THEO). The standing "108" figures below predate the n_s promotion (Patch 0778); `predictions.md` is the authoritative tally (108, with n_s as the SR/cosmology entry). A §15 Step-E count-provenance audit (Patch 0786) confirmed the current headline 108 is correct and fully accounted (103 + 4 alpha-chain + 1 n_s); the historical "108 as of 20 May 2026" was a transient +1 over-count (true count then = 107). See the Count Provenance Ledger in `predictions.md`; the by-tier TOTAL was reconciled up to 108 at Patch 0787 [reading (i)]; headline and tier now both read 108.
+**Last updated:** 29 September 2026 (Patch 4336, Session 241 — **STAGE-1 REFRESH**: header, the one-paragraph theory,
+and a new *Current state and headline basis* section, rebuilt from the live registries and `pre_deposit_roadmap.md`.
+**Everything from "Registered Papers" down is the 17 May 2026 text (stage 2 owed, TODO-4335-OVERVIEW)**; where it
+conflicts with this section or with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
+Patch 0422B), with a 6 June 2026 EU-1 note.
+
+---
+
+## Current state and headline basis (29 September 2026)
+
+**Counts, from the live registries (authoritative there, not here):** 9 axioms (`axiom-registry.md`; AP-4 and AP-5 are
+ratified clauses, count unchanged); 108 counted empirical correspondences (`predictions.md` Cumulative Swarm Tally, as
+of 6 June 2026; PRED-C-96's quoted n_s updated to 0.9654 one-sided at 3852); 123 papers in the deposit queue
+(`osf_deposit_queue.md`, 6 never-deposit); **nothing is deposited yet** — deposits go to the CERN repository (Zenodo)
+via Isak (CONV-012). What must be settled before the deposit is `pre_deposit_roadmap.md`.
+
+**What each headline rests on** (derived / calibrated / conditional / conjecture / input). A result is stated here at
+the strength its own paper or registry gives it:
+
+| Headline | Basis | Where recorded |
+|---|---|---|
+| sin²θ_W = 3/(8φ), α_s = 5/(8φ), their sum 1/φ | derived at zero parameters (as claimed by SM-6/SM-7) | SM-6, SM-7 |
+| Koide K = 2/3 | **conditional** on Layer B (OPEN-SS-16) | SM-3, `frontier_sectors/SS.md` |
+| Charged-lepton masses (μ, τ) | **1 calibration** (m_e) + Koide phase | SM-6 |
+| Heavy-quark masses (RMS 2.1%) | **1 calibration** (m_e; SF-3 v1.0 demoted m_c to derived) | SM-8/9, SF-3 |
+| W, Z, H absolute masses | **calibrated** dilution factors η_W, η_Z, η_H; the ratio m_Z/m_W = 1.140 is zero-parameter | SF-2 |
+| Nuclear bindings (SS-5, SS-7, SS-8, SS-9) | **conditional** on hypothesis stacks (C1–C8, D1–D3) | SS papers, `predictions.md` |
+| Neutrino sector | 8 parameters from **1 calibration** | SF-4 v4.4 |
+| n_s ≈ 0.9654 | **framework-conditional**, leading-order (OPEN-EU-1) | EU-1, PRED-C-96 |
+| g_A (nucleon axial coupling) | **not pinned**: with one quark mass, 1.242–1.282; the r_p "prediction" withdrawn (4284) | `series_standard_model/axiom_maturation/4284…` |
+| α (fine-structure constant) | **calibrated relation**: α = PSR/(2L), one calibrated swing (CAL-ZBW1-SWING, 4326–4330); passes local position invariance, running has the right sign; running law needs a cloud model (4331) | `series_standard_model/axiom_maturation/4322–4331` |
+| ħ | **identified, not derived** (c03); the Planck ZBW half-swing carries ħ/2 (founder, 4320/4325; c04 v2.3) | c03, c04, 4300 |
+| Spin ħ/2 | **input** throughout; SPIN-1 and SPIN-2 **held from deposit** (4289) | TODO-4289-SPINREV |
+| G and the Planck mass | GR-1/GR-1a's "fixed by the 600-cell lattice, no free parameters" is **an overstatement** (TODO-4300-HBARSWEEP); the general field equations are **not derived** (OPEN-GR-FE-1, the founder's deposit gate) | `frontier_sectors/GR.md` |
+| Exterior GR solutions (Schwarzschild, Kerr, Kerr–Newman) | reproduced as solutions; equations by correspondence only | GR series |
+| Special-relativistic ε(v) = γ − 1 | **recorded satisfied at W2 strength** for closed self-bound patterns (founder, 2502); theorem-grade debts remain | `frontier_sectors/SR.md` |
+| Electromagnetic constants μ₀, ε₀, c | **parameter-tuned** toy model (OPEN-FP-6-CONSTANTS) | SF-6 |
+| Dark energy / Λ | **Λ-like, Λ from calibration**; no dynamical prediction (3430); TN-SR-1's 10⁻¹²² suppression is a **conjecture** | `frontier_sectors/DMDE.md`, TN-SR-1 |
+| Dark matter | **conjecture** (CONJ-COSMO-1); the 11.26 GeV ring is 31 orders short on clumping amplitude and fails on shape (3884); DM-1/DM-3 never-deposit | `frontier_sectors/CONJ.md`, `research_frontier.md` |
+| Chirality (weak-interaction handedness) | **primitive** (OPEN-SD-CHIR-PRIMITIVE), not derived | `frontier_sectors/SD.md` |
+
+**Corrections to the 17 May text below, known at stage 1:** the "108 zero-parameter" headline rests on 9 axioms **and
+2 calibrations** (as the tally itself says) and includes conditional entries; "m_c calibration" is superseded by SF-3's
+single m_e calibration; OSF is no longer the deposit route; the paper list below predates the GR series (GR-1, GR-2 and
+the eight GR-1a–h companions), SF-6 (electromagnetism, shipped 21 June), TP-1, the DM and EU lanes' later papers and the
+spin papers' hold.
 
 ---
 
 ## The Theory in One Paragraph
 
+Conscious Point Physics models the physical world as Conscious Points on a lattice of Grid Points with the local
+structure of the 600-cell polytope (120 vertices, 720 edges, 1200 faces, 600 cells, coordination 12), exchanging
+DI-bits once per Absolute Moment under nine axioms. From that geometry it obtains, at zero adjustable parameters, the
+weak mixing angle 3/(8φ) and a strong coupling 5/(8φ); with one calibration (the electron mass) it reproduces the charged-
+lepton and heavy-quark masses to percent level and the neutrino sector; its nuclear-binding results hold conditionally on
+stated structural hypotheses; it reproduces the exterior solutions of general relativity but has not yet derived the
+field equations; its fine-structure constant, ħ, electromagnetic constants and cosmological constant enter as
+calibrations or identifications, not derivations; and dark matter and the chirality of the weak interaction are,
+respectively, a conjecture and a primitive. The table above says which is which.
+
+### The 17 May 2026 paragraph (kept for the record; superseded by the paragraph above)
+
 Conscious Point Physics derives the Standard Model from the 600-cell polytope (120 vertices, 720 edges, 1200 faces, 600 cells, coordination z=12). All gauge couplings are mode fractions of the lattice weighted by η = 1/φ. All fermion masses follow from the K₃ eigenvalue structure (bonding eigenvalue +2, antibonding −1) perturbed by isotropic gauge shifts, and from the zero-parameter cage mass formula M = m_e(z/φ)V^(7/3). The SS-5/SS-7/SS-8 nuclear cascade extends the K₃ mechanism across three structural scales — nucleon-nucleon (SS-5), alpha-alpha (SS-7), and interstitial-alpha (SS-8) — with the recurring binding quantum B_pair = M₀/φ = 2.342 MeV unrescaled at each scale (Pattern 6 scale recurrence). SS-9 v1.0 derives the simplicial-alpha-polytope connectivity (closing OPEN-SS-24 conditionally) via a bridge to Steinitz 1922 + Freudenthal-van der Waerden 1947. The SF-line flagship papers extend the framework across sectors: SF-4 v4.4 unifies the neutrino sector at first cross-sector closure with SM-5 op:nu_id (8 parameters from 1 calibration, normal hierarchy forced); SF-2 v1.0 unifies electroweak cage bosons (W±, W⁰, Z, H) via 4 cage-shape uniqueness theorems; Capotauro v1.0 closes OPEN-SM-4 sub-claim (c) via the Composite Capotauro Wigner-Eckart Theorem, predicting $\Delta p_{LR} = \chi/6 \approx 0.0394$ within 2% of leptogenesis; Capotauro v2.0 extends this to three-way substrate-level cross-sector unification $\|M^{K3}\| = \|M^W\| = \|M^{qDP}\| = \chi/6$; and Chirality Continuum v1.0 closes OPEN-FP-SF-2-CHIR at Layer 4 jointly with SM-2 v2.0+ chiral-polarity-bias via three theorems (THEO-CHIR-CONT-1+2+3) deriving Michel $\rho = 3/4$, 100% LH at massless helicity limit, and leptogenesis CP-asymmetry at zero parameters from the substrate handle $\chi/6$. The theory has 9 axioms (7 core + A8' + A11), 2 calibration constants (m_e, m_c), and 0 shape parameters. As of 20 May 2026 it predicts **108 zero-parameter empirical correspondences** (per `predictions.md` Cumulative Swarm Tally; chirality continuum elevates structural rigor of substrate-handle predictions to Layer 4 EFT operative-falsifier status without adding new swarm contributions per programme convention), of which 78+ are quantitative numerical with stated empirical residuals. **Theorem count advanced to 67** (47 → 62 → 67 over the last 2 months; +5 theorems from Capotauro v2.0 substrate-level cross-sector unification (THEO-SD-CHIR-1+2) + chirality continuum Layer 4 EFT closure (THEO-CHIR-CONT-1+2+3)); **Theorems:Axioms ratio = 67:9 ≈ 7.4 theorems per axiom**. **EU-1 (6 June 2026)** extends the framework to its first cosmology / early-universe result: the CMB scalar spectral index $n_s = 1 - 2/N_* \approx 0.9649$ (and running $\alpha_s \approx -0.0006$) derived from substrate inflation — the expansion boost tracking the logarithm of Grid-Point occupancy, $H_{\text{eff}} \propto \ln\bar n$, because the dispersal pressure of indistinguishable Conscious Points (axiom A1, Gibbs's $1/n!$) is the configurational chemical potential $\mu \propto \ln\bar n$ — zero-new-axiom, framework-conditional (PRED-C-96, the 108th swarm contribution and first SR/cosmology-sector entry; NO THEO; open residual OPEN-EU-1).
 
 ---
 
-## Registered Papers (23 papers in active corpus on OSF or pending)
+## Registered Papers (as of 17 May 2026 — stage-2 rewrite owed; 123 papers are now in the deposit queue)
 
 | ID | Title | Key Result | Version |
 |----|-------|------------|---------|

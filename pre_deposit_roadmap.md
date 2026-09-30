@@ -112,3 +112,6 @@ recorded, surveyed at 4335.)
 
 - **4335:** roadmap registered; `code/overview_staleness_gate.py` added (the item-0 gate); OS and bootup amended
   (theory-overview refresh triggered by scorecard-registry changes, not every turn).
+- **4336 (item 0, stage 1):** theory-overview.md header, *Current state and headline basis* section and one-paragraph
+  theory rewritten from the live registries; the gate reports PARTIAL until stage 2 (paper tables, results, series status,
+  open problems, README headline table) lands.

@@ -8,7 +8,7 @@ is deliberately NOT a trigger: refreshing the overview every turn is the D-8 fai
 
 The gate compares the last commit touching theory-overview.md with the last commit touching any trigger file, and counts
 the trigger commits since the overview was last refreshed.  Exit 1 (STALE) if any trigger file changed after the
-overview; exit 0 (PASS) otherwise.  Run at boot (with the other gates) and at the §15 session close.
+overview, or (4336) if the header still marks a STAGE-1 (partial) refresh; exit 0 (PASS) otherwise.  Run at boot (with the other gates) and at the §15 session close.
 """
 import subprocess, sys
 
@@ -39,5 +39,12 @@ if behind:
     for line in behind[:5]:
         print("   " + line[:150])
     print("Refresh theory-overview.md per templates/operating_system.md 'theory-overview.md update procedure'.")
+    sys.exit(1)
+# 4336: a partial refresh must not read as a pass.  While the header's "Last updated" line says STAGE-1 (stage 2 owed),
+# the gate reports PARTIAL and fails, so committing a header cannot game it (PD-008).
+head = open(OVERVIEW).read().split("---", 1)[0]
+if "STAGE-1 REFRESH" in head:
+    print("PARTIAL: the overview carries a stage-1 refresh only (paper tables, results, series status, open problems")
+    print("   still the 17 May text; TODO-4335-OVERVIEW stage 2 owed).  Remove the STAGE-1 marker when stage 2 lands.")
     sys.exit(1)
 print("PASS")
