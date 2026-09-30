@@ -1132,7 +1132,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1a_newtonian_gravity_from_SSV/GR-1a_gravity_from_SSV_shell_broadcast.tex",
       "title": "Newtonian Gravity from SSV Shell Broadcast",
       "ver": "3.1",
-      "changed": "2026-08-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1145,7 +1145,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1218,7 +1218,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/GR-1c_strong_field_GR.tex",
       "title": "Strong-Field General Relativity and the CPP Field Equation",
       "ver": "2.4",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1231,7 +1231,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1562,7 +1562,7 @@
       "rel": "series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex",
       "title": "GR-1: Local Gravitation from SSV Shell Broadcast",
       "ver": "1.0.3",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1575,7 +1575,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1738,7 +1738,7 @@
     {
       "rel": "series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex",
       "title": "EU-1: The Primordial Scalar Spectral Index from Substrate Inflation",
-      "ver": "1.6",
+      "ver": "1.6.1",
       "changed": "2026-09-10",
       "cls": "Series paper",
       "withheld": "",
@@ -1760,7 +1760,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.6",
+        "version": "1.6.1",
         "description": "The scalar spectral index $ $ is the single most precise observable of the inflationary epoch: Planck~2018 measures $ = 0.9649 0.0042$, an $ \\!8 $ departure from the scale-invariant Harrison--Zel'dovich value $ = 1$. We derive this tilt from the substrate dynamics of Conscious Point Physics (CPP) with no new axiom. In the CPP picture the inflationary background is a near-100\\%-occupied lattice of Grid Points (GPs) that dilutes by Dipole-Pair (DP) Sea unstacking on a fixed scaffold; the Hubble rate is driven by the configurational chemical potential of the over-occupied stack. The central result is that the per-tick expansion boost tracks the logarithm of the stack occupation, $ $, and this single fact fixes the tilt to the canonical slow-roll form \\[ = 1 - 2 , = - 2 ^2, \\] with $ 57$ fixed by the Conscious-Point count of the observable universe, $ = 13 (N_ CP/N_ GP)$. Numerically $ = 1 - 2/57 0.9649$ and $ -0.0006$, matching the Planck central value with zero free parameters. The logarithm is not a mechanical ``deeper-pushes-harder'' law (every power-law or geometric boost is excluded, predicting $ -1$); it is the configurational chemical potential of indistinguishable occupation units, an immediate consequence of axiom A1 (Conscious Points carry no individual identity). We establish the two supporting legs as standing CPP commitments rather than new posits: ( leg~1) the minimal Perceive--Compute--Displace (PCD) / Zitterbewegung (ZBW) occupation dynamics is a symmetric constant-rate zero-range process whose product-Poisson Gibbs state is reached by a provable $H$-theorem (LEMMA-NS-HTHEOREM), and which is itself derived to leading order from $\\$A1, the per-CP PCD cycle, the vertex-transitive $600$-cell, homogeneous inflation$\\$ (LEMMA-NS-ZRP-DERIVE); ( leg~2) the charge neutrality required to keep the tilt clean follows from the bound $ $ pair structure of the DP Sea. A potential long-range Coulomb ($ $ Debye) contamination is shown to be a phantom, bounded by the plasma coupling $ $ in the hot substrate bath (LEMMA-NS-BATH). The honest status is therefore: leading-order derived and consistent with Planck, zero-new-axiom, conditional on standing CPP cosmology-sector commitments (FRW/VSL homogeneity, DP-Sea neutrality, small-$ $ SSV corrections) --- not yet fully derived from the primitive axioms A1--A11. Residual SSV corrections enter at $O( )$. These are not a symmetric theory uncertainty: the correction coefficient closes as $ = / $ with $ kT_ bath/E_ Pl$, and because the substrate bath cannot exceed the substrate scale ($ 1$) the induced shift is one-sided and positive. At the bath clause ($ = 1$, $ = $) it is $ = +5.0 10^-4$, so the predicted value is $ = 0.9654$, lying $0.12\\, _ Planck$ from the measured central value. The companion running $ -0.0006$ is a falsifiable prediction.",
         "description_ok": true,
         "description_source": "abstract environment"

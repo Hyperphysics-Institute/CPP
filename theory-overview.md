@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 29 September 2026 (Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
+**Last updated:** 29 September 2026 (Patch 4340: catalog refreshed after the cosmology wording sweep. Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
 Patch 0422B), with a 6 June 2026 EU-1 note.
 
 ---

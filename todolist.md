@@ -673,6 +673,7 @@ The `SR_companion_papers` set (c01–c22) was restored from Archive to `series_r
 
 
 ### TODO-016 — DP-Sea appendix: the DP binding-energy formula is numerically inconsistent with its stated r_min by ~18 orders of magnitude
+**Option C part 1 DONE 4340** (DP-Sea v1.3): the appendix now states the 88/264/152 MeV scale is anchored to the calibrated strong-sector confinement scale, with the Planck derivation open (SS-1 `op:lambda_psr`); the v1.2 r_min = φ·l_p text kept as the corrected reading. **Part 2 (the derivation, SS-1 op:lambda_psr) remains open** in the strong lane.
 **Added:** 10 June 2026, Session 156, Patch 0834. **Priority:** P2 (does NOT block DM-2; the *ratio* the DM arc uses is unaffected).
 
 **The problem.** In `series_foundations/dp_sea_composition/DP_sea_and_cage_composition.tex` (Appendix, "DP Binding Energy Calculation"), the formula `E_bind = αℏc/r_min` is quoted with `r_min = φ·l_p ≈ 2.61×10⁻³⁵ m` (the golden-ratio-scaled **Planck** length) and is said to yield `E_eDP = αℏc/(φl_p) ≈ 88 MeV`, `E_qDP = 3·E_eDP ≈ 264 MeV`. But `αℏc/(2.61×10⁻³⁵ m) ≈ 5.5×10¹⁹ MeV`, not 88 MeV — the stated r_min and the quoted energies are inconsistent by ~6×10¹⁷. The quoted 88 MeV instead requires `r_min ≈ 0.016 fm = 1.6×10⁻¹⁷ m`, eighteen orders of magnitude larger than the Planck length. So as written the **absolute** eDP/qDP energy scale does not follow from the Planck length; it is calibrated to the constituent/QCD scale and the appendix mislabels its own r_min.
@@ -2426,6 +2427,12 @@ CONV-029 (Patch 3269) cleared GR-1i 5–0 with five adoptions and discharged OPE
 
 ### TODO-4339-TESTRUN — choose a new test-run deposit set (registered Patch 4339, governance; founder approves)
 OPEN-ORG-023 Item 1 planned a small test-run deposit first, using the spin trio; SPIN-1 and SPIN-2 are now held (4289), so the set must be re-chosen. Propose two or three papers that are finished, not held, and not gated (candidates: SPIN-3, SR-1, SS-3), for the founder's APPROVED column and Isak's DOI reservation.
+
+### TODO-4340-ZEROSWEEP — triage the "zero-parameter" wording paper by paper (registered Patch 4340, governance; roadmap item 0)
+`python3 code/claim_wording_sweep.py zero --counts` lists ~300 hits in 44 deposit candidates. Criterion (wording_sweep_register.md): a "zero-parameter" claim must be literally true of that result or name its calibration or condition in the same sentence. Largest first: SF-2 (35), SF-4 (29), SS-8 (24), Capotauro (22). Record each paper's verdict in the register.
+
+### TODO-4340-DPSEACOMPILE — DP-Sea paper does not compile cleanly (registered Patch 4340, foundations)
+Pre-existing, unchanged by 4340: the three figure SVGs (dpsea_fig1–3) are missing from the folder, and multi-byte characters (±, Λ, ≈, superscripts) sit inside lstlisting / plain text without a Unicode-capable setup (23 errors). Isak's PDF build at deposit will fail until fixed: restore or regenerate the figures, and replace the listing characters with ASCII.
 
 ### TODO-4234-DELTA — the nucleon's g_A/g_V from the cage (registered Patch 4234, EW lane; owned by the STRONG sector)
 

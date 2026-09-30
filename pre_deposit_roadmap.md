@@ -135,3 +135,6 @@ recorded, surveyed at 4335.)
 - **4339:** **item 1 corrected** — OPEN-GR-FE-1 was closed at 3267, so the founder's deposit gate is discharged; the item is
   now records-into-line. GR-1/GR-1a/GR-1c "no free parameters" wording scoped (TODO-4300-HBARSWEEP, papers part). Sweep tool
   `code/claim_wording_sweep.py` added (item 0/7).
+- **4340 (items 0 and 7):** cosmology wording sweep done (DP-Sea v1.3, EU-1 v1.6.1; others already labelled) —
+  `wording_sweep_register.md`. Item 7's wording condition is met for every deposit candidate except DM-2 (not approved).
+  Item 0 continues with the zero-parameter triage (TODO-4340-ZEROSWEEP).
