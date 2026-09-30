@@ -33,7 +33,8 @@ import sys
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE = os.path.join(REPO, "osf_deposit_queue.md")
 MANIFEST = os.path.join(REPO, "osf_deposit_manifest.json")
-EXCLUDE = ("archive/", "/duplicates/", "duplicates/", "/development/")
+EXCLUDE = ("archive/", "/duplicates/", "duplicates/", "/development/",
+           "/development-transcripts/")   # 4344: an independent Grok draft of SM-12 was in the queue from here
 
 # Phrases that mean DO NOT DEPOSIT. NOT-FOR-RELEASE is here because the
 # readiness checker's original wording list missed it, leaving DM-1 and DM-3 --

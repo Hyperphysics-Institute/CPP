@@ -430,11 +430,11 @@ def generate_600_cell_vertices():
     """Generate 120 vertices of 600-cell"""
     vertices = []
     
-    # 16 vertices: (±1,±1,±1,±1)/2
+    # 16 vertices: (+/-1,+/-1,+/-1,+/-1)/2
     for signs in itertools.product([-1,1], repeat=4):
         vertices.append([s*0.5 for s in signs])
     
-    # 8 vertices: (±1,0,0,0) and permutations
+    # 8 vertices: (+/-1,0,0,0) and permutations
     for i in range(4):
         for sign in [-1,1]:
             vertex = [0,0,0,0]

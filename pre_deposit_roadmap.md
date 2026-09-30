@@ -144,3 +144,5 @@ recorded, surveyed at 4335.)
   the hand a primitive — consistent with item 8); identifier-appendix regeneration registered (TODO-4342-GLOSSREGEN).
 - **4343 (build readiness):** identifier appendices regenerated (72 papers); compile pass: 98/123 clean, the 25 others listed
   in `compile_status.md` (TODO-4341-COMPILEERR) — a precondition for Isak's PDF build.
+- **4344 (build readiness):** 121/122 compile clean; DP-Sea's missing figures are the one blocker (founder asked).
+  Deposit queue 122 (a development transcript excluded).

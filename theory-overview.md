@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 29 September 2026 (Patch 4343: catalog refreshed after the identifier-appendix regeneration. Patch 4342: catalog refreshed (Capotauro v2.4, SS-8 v1.4). Patch 4341: m_Z/m_W row corrected (SF-2 arithmetic erratum). Patch 4340: catalog refreshed after the cosmology wording sweep. Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
+**Last updated:** 29 September 2026 (Patch 4344: 122 deposit candidates (a development transcript excluded); build fixes. Patch 4343: catalog refreshed after the identifier-appendix regeneration. Patch 4342: catalog refreshed (Capotauro v2.4, SS-8 v1.4). Patch 4341: m_Z/m_W row corrected (SF-2 arithmetic erratum). Patch 4340: catalog refreshed after the cosmology wording sweep. Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
 Patch 0422B), with a 6 June 2026 EU-1 note.
 
 ---
@@ -12,7 +12,7 @@ Patch 0422B), with a 6 June 2026 EU-1 note.
 **Counts, from the live registries (authoritative there, not here):** 9 axioms (`axiom-registry.md`; AP-4 and AP-5 are
 ratified clauses, count unchanged); 108 counted empirical correspondences (`predictions.md` Cumulative Swarm Tally, as
 of 6 June 2026, 60 of them conditional; PRED-C-96's quoted n_s updated to 0.9654 one-sided at 3852); 82 theorems + 9
-corollaries (`theorem-registry.md`); 123 papers in the deposit queue
+corollaries (`theorem-registry.md`); 122 papers in the deposit queue
 (`osf_deposit_queue.md`, 6 never-deposit); **nothing is deposited yet** — deposits go to the CERN repository (Zenodo)
 via Isak (CONV-012). What must be settled before the deposit is `pre_deposit_roadmap.md`.
 
@@ -71,10 +71,10 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 ## Papers (29 September 2026)
 
 **Per-paper detail lives in two generated files, not here:** `paper_catalog.md` (title, version, last touch; rebuilt by
-`code/rebuild_paper_catalog.py`, 128 live papers) and `osf_deposit_queue.md` / `osf_deposit_manifest.json` (the 123
+`code/rebuild_paper_catalog.py`, 128 live papers) and `osf_deposit_queue.md` / `osf_deposit_manifest.json` (the 122
 deposit candidates, waves, holds; rebuilt by `code/build_osf_queue.py`). The file names still say "osf"; the deposit
 route is the CERN repository (Zenodo), done by Isak, who builds the PDFs (CONV-012). **No paper is approved for
-deposit** (APPROVED column empty for all 123). An earlier OSF project registration exists (DOI 10.17605/OSF.IO/JXE8D).
+deposit** (APPROVED column empty for all 122). An earlier OSF project registration exists (DOI 10.17605/OSF.IO/JXE8D).
 
 | Series (folder) | Deposit candidates | Lead papers and current versions | Deposit status |
 |---|---|---|---|

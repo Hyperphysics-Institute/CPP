@@ -41,6 +41,8 @@ desktop.ini
 # never survived a clone — the paper compiled clean only on the machine
 # that generated them)
 !**/figures/*.pdf
+# Patch 4344: also figure PDFs one level down (figures/figures-QM-1/ etc.), converted from the committed SVGs
+!**/figures/**/*.pdf
 anaconda_projects/
 
 # Patch 3424: generated gate certificates and evidentiary legs for the

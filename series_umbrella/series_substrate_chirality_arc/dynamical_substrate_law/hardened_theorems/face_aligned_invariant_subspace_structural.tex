@@ -69,6 +69,7 @@
 \newcommand{\nhatperp}{\hat{n}_{\text{F}\perp}}
 \newcommand{\nhatmid}{\hat{n}_{\text{ax}}}
 \newcommand{\nhatrho}{\hat{n}_{\rho}}
+\newcommand{\nhatedge}{\hat{n}_{\text{edge}}}  % 4344: used at l.212/281 but not defined here (definition as in the edge-aligned companion)
 \newcommand{\vhost}{v_{\text{host}}}
 \newcommand{\ui}{u_i}
 \newcommand{\uj}{u_j}
@@ -168,10 +169,10 @@ where $\Aprime$ is the trivial 1-dimensional representation (fixed by $\sigma_E$
 
 \textbf{Three-vector basis for the invariant subspace.} A natural orthogonal basis for the 3-dimensional $\Cs$-invariant subspace $H^{(3)} = (\ui - \uj)^\perp$ at $\vhost$ is $\{\nhatrho,\,\nhatmid,\,\nhatperp\}$:
 \begin{itemize}[leftmargin=*]
-    \item \emph{$\nhatrho \in H^{(3)}$}: $\nhatrho \cdot (\ui - \uj) = \vhost \cdot \ui - \vhost \cdot \uj$. Since $\ui$ and $\uj$ are both first-shell neighbours of $\vhost$ at the same distance $1/\phi$, $\vhost \cdot \ui = \vhost \cdot \uj$ by symmetry, hence $\nhatrho \perp (\ui - \uj)$. ✓
-    \item \emph{$\nhatmid \in H^{(3)}$}: $\nhatmid \propto (\ui + \uj - 2\vhost)$, and $(\ui + \uj) \cdot (\ui - \uj) = |\ui|^2 - |\uj|^2 = 1 - 1 = 0$, plus $\vhost \cdot (\ui - \uj) = 0$ as above. ✓
-    \item \emph{$\nhatperp \in H^{(3)}$}: $\nhatperp$ is by construction perpendicular to the face plane, which contains $\ui - \uj$. ✓
-    \item \emph{Linear independence}: $\nhatrho$ along $\vhost$ (one specific vertex direction); $\nhatmid$ tangent to $S^3$ at $\vhost$, in the face plane; $\nhatperp$ perpendicular to the face plane. These span three mutually orthogonal directions in $\Reals^4$. ✓
+    \item \emph{$\nhatrho \in H^{(3)}$}: $\nhatrho \cdot (\ui - \uj) = \vhost \cdot \ui - \vhost \cdot \uj$. Since $\ui$ and $\uj$ are both first-shell neighbours of $\vhost$ at the same distance $1/\phi$, $\vhost \cdot \ui = \vhost \cdot \uj$ by symmetry, hence $\nhatrho \perp (\ui - \uj)$. $\checkmark$
+    \item \emph{$\nhatmid \in H^{(3)}$}: $\nhatmid \propto (\ui + \uj - 2\vhost)$, and $(\ui + \uj) \cdot (\ui - \uj) = |\ui|^2 - |\uj|^2 = 1 - 1 = 0$, plus $\vhost \cdot (\ui - \uj) = 0$ as above. $\checkmark$
+    \item \emph{$\nhatperp \in H^{(3)}$}: $\nhatperp$ is by construction perpendicular to the face plane, which contains $\ui - \uj$. $\checkmark$
+    \item \emph{Linear independence}: $\nhatrho$ along $\vhost$ (one specific vertex direction); $\nhatmid$ tangent to $S^3$ at $\vhost$, in the face plane; $\nhatperp$ perpendicular to the face plane. These span three mutually orthogonal directions in $\Reals^4$. $\checkmark$
 \end{itemize}
 
 \textbf{Conclusion of setup.} The space of $\Cs$-invariant vectors in $\Reals^4$ at $\vhost$ is the 3-dimensional hyperplane
@@ -252,7 +253,7 @@ Under (H1$_F$)--(H3$_F$), the subspace of $\Cs$-invariant vectors in $\Reals^4$ 
 \begin{proof}
 The argument is direct from the decomposition \eqref{eq:Cs_decomp}: $\Reals^4|_{\vhost}$ decomposes under $\Cs$ as $\Aprime^{\oplus 3} \oplus \Aprpr^{\oplus 1}$, where the trivial representation $\Aprime$ has multiplicity~3 occupying the hyperplane $(\ui - \uj)^\perp$ and the non-trivial representation $\Aprpr$ has multiplicity~1 occupying the line $\Reals(\ui - \uj)$. The space of $\Cs$-invariant vectors is exactly the multiplicity space of $\Aprime$, which is the 3-dimensional hyperplane $(\ui - \uj)^\perp$. The basis $\{\nhatrho, \nhatmid, \nhatperp\}$ for this hyperplane was verified at \S\ref{subsec:stabiliser}: each of these three directions is in $(\ui - \uj)^\perp$ (verified inner products) and they are mutually linearly independent (radial vs.\ in-face-axis vs.\ face-perpendicular).
 
-Equivalently via character calculation: $\Cs$ has two irreducible representations $\Aprime$ (1-dimensional trivial, $\chi(e) = 1, \chi(\sigma_E) = 1$) and $\Aprpr$ (1-dimensional sign, $\chi(e) = 1, \chi(\sigma_E) = -1$). On $\Reals^4|_{\vhost}$, the character is $\chi(e) = 4$, $\chi(\sigma_E) = \text{trace}(\sigma_E) = 3 - 1 = 2$ (three $+1$ eigenvalues from the 3-hyperplane fixed by reflection plus one $-1$ from the reflected line). The multiplicity of $\Aprime$ is $m_{\Aprime} = (1\cdot 4 + 1\cdot 2)/2 = 3$. The multiplicity of $\Aprpr$ is $m_{\Aprpr} = (1\cdot 4 + (-1)\cdot 2)/2 = 1$. Sum $3 + 1 = 4 = \dim \Reals^4$. ✓
+Equivalently via character calculation: $\Cs$ has two irreducible representations $\Aprime$ (1-dimensional trivial, $\chi(e) = 1, \chi(\sigma_E) = 1$) and $\Aprpr$ (1-dimensional sign, $\chi(e) = 1, \chi(\sigma_E) = -1$). On $\Reals^4|_{\vhost}$, the character is $\chi(e) = 4$, $\chi(\sigma_E) = \text{trace}(\sigma_E) = 3 - 1 = 2$ (three $+1$ eigenvalues from the 3-hyperplane fixed by reflection plus one $-1$ from the reflected line). The multiplicity of $\Aprime$ is $m_{\Aprime} = (1\cdot 4 + 1\cdot 2)/2 = 3$. The multiplicity of $\Aprpr$ is $m_{\Aprpr} = (1\cdot 4 + (-1)\cdot 2)/2 = 1$. Sum $3 + 1 = 4 = \dim \Reals^4$. $\checkmark$
 \end{proof}
 
 \section{Main proof of Theorem~\ref{thm:main}}\label{sec:main_proof}

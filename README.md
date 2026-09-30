@@ -24,7 +24,7 @@
 - **Not yet derived:** ħ (identified); spin ħ/2 (input); the electromagnetic constants (tuned toy model).
 - **Conjecture or primitive:** dark matter (a conjecture, far short of the needed clumping); the handedness of the weak interaction (a primitive).
 
-**Counts:** 9 axioms; 108 counted correspondences in the tally (60 of them conditional); 82 theorems + 9 corollaries; 128 papers in the tree, 123 deposit candidates, none yet deposited.
+**Counts:** 9 axioms; 108 counted correspondences in the tally (60 of them conditional); 82 theorems + 9 corollaries; 128 papers in the tree, 122 deposit candidates, none yet deposited.
 
 ---
 

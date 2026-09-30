@@ -14,7 +14,7 @@
     "NEVER delete a draft holding a reserved DOI that has already been written into a built PDF."
   ],
   "counts": {
-    "total": 123,
+    "total": 122,
     "withheld": 6,
     "eligible_now": 0
   },
@@ -79,7 +79,6 @@
       "series_relativity/SR_companion_papers/c06_DP_chaining_as_mass_and_EM_substrate/c06_dipole_chain_patterns_as_mass_EM_subtrate.tex",
       "series_relativity/papers/SR-1_special_relativity_emergence.tex",
       "series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex",
-      "series_standard_model/development-transcripts/SM-12/grok_SU3_color.tex",
       "series_standard_model/papers/SM-10_chain_network_FEM.tex",
       "series_standard_model/papers/SM-11_quark_confinement_qDP_chaining.tex",
       "series_standard_model/papers/SM-12_SU3_color_from_600cell.tex",
@@ -258,7 +257,7 @@
       "rel": "flagship_papers/electromagnetism/sf-6_electromagnetism.tex",
       "title": "SF-6: Electromagnetism Unified",
       "ver": "1.6",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Flagship",
       "withheld": "",
       "wave": 1,
@@ -272,7 +271,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -433,7 +432,7 @@
       "rel": "flagship_papers/quarks/sf-3_quarks.tex",
       "title": "SF-3: The Quark Sector from 600-Cell Geometry",
       "ver": "1.6",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Flagship",
       "withheld": "",
       "wave": 1,
@@ -447,7 +446,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -477,7 +476,7 @@
       "rel": "flagship_papers/strong/sf-5_strong.tex",
       "title": "SF-5: Strong-Sector Unification from 600-Cell Geometry",
       "ver": "1.04",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Flagship",
       "withheld": "",
       "wave": 1,
@@ -491,7 +490,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -521,7 +520,7 @@
       "rel": "flagship_papers/unification/sf-7_grand_unification.tex",
       "title": "SF-7: Standard Model Grand Unification from 600-Cell Geometry",
       "ver": "0.11",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Flagship",
       "withheld": "unfinished: live TODO/FIXME scaffolding markers",
       "wave": 3,
@@ -541,7 +540,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1175,7 +1174,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1b_weak_field_GR/GR-1b_weak_field_GR.tex",
       "title": "Weak-Field General Relativity",
       "ver": "3.7",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1188,7 +1187,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1261,7 +1260,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1d_gravitational_wave_echoes/GR-1d_GW_echoes.tex",
       "title": "Gravitational Wave Echoes from the Planck Core",
       "ver": "3",
-      "changed": "2026-09-02",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1274,7 +1273,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-02",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1304,7 +1303,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1e_hawking_radiation_planck_remnant/GR-1e_hawking_radiation.tex",
       "title": "Hawking Radiation and the Planck Remnant",
       "ver": "1.1",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1317,7 +1316,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1347,7 +1346,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1f_kerr_metric_from_rotational_SSV/GR-1f_kerr_metric.tex",
       "title": "The Kerr Metric from Rotational SSV",
       "ver": "1.2",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1360,7 +1359,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1390,7 +1389,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1g_kerr_newman_charged_rotating_BH/GR-1g_kerr_newman.tex",
       "title": "The Kerr-Newman Metric from Combined SSV Sources",
       "ver": "1.1",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1403,7 +1402,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1433,7 +1432,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1h_superradiance/GR-1h_superradiance.tex",
       "title": "Superradiance from the Kerr SSV",
       "ver": "1.2",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1446,7 +1445,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1476,7 +1475,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex",
       "title": "GR-1i: The Classical Tests of Gravitation",
       "ver": "0.1",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1489,7 +1488,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1519,7 +1518,7 @@
       "rel": "series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex",
       "title": "GR-1j: The CPP Field Equations from the Messenger Census",
       "ver": "1.0",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1532,7 +1531,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1605,7 +1604,7 @@
       "rel": "series_gravitation/papers/GR-2_echo_falsifier.tex",
       "title": "The Echo Falsifier:",
       "ver": "2.11",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1618,7 +1617,7 @@
         "creators": [
           "Thomas Lee Abshier, NDInstitute"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1648,7 +1647,7 @@
       "rel": "series_phenomena/cosmology/dark_matter/DM-1/DM-1_substrate_dark_matter_candidate.tex",
       "title": "DM-1: A Velocity-Independent Self-Interacting Dark-Matter Candidate from Charge-Neutral qDP/hTe",
       "ver": "1.8",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "founder-attested: retained as record, not for release",
       "wave": 2,
@@ -1665,7 +1664,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1827,7 +1826,7 @@
       "rel": "series_phenomena/quantum_optics/photon_truncation/TP-1/TP-1_truncated_photon.tex",
       "title": "TP-1: The Truncated Photon and the Lattice Regularization of Shutter-Induced Photon Creation",
       "ver": "1.4",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 2,
@@ -1844,7 +1843,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2218,7 +2217,7 @@
       "rel": "series_quantum_mechanics/spin_papers/SPIN-3_600cell_voronoi_ZBW_eigenvalues/SPIN-3_600cell_voronoi_ZBW_eigenvalues.tex",
       "title": "SPIN-3: The ZBW Mode Spectrum and the Lattice Voronoi-Cell Eigenvalue Problem",
       "ver": "1.0.1",
-      "changed": "2026-08-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -2231,7 +2230,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute"
         ],
-        "publication_date": "2026-08-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2304,7 +2303,7 @@
       "rel": "series_relativity/SR_companion_papers/c02_dipole_stiffness_C/c02_dipole_stiffness_C.tex",
       "title": "Microscopic Origin of the Dipole Sea Stiffness C",
       "ver": "2.1",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Companion",
       "withheld": "",
       "wave": 1,
@@ -2317,7 +2316,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2433,7 +2432,7 @@
       "rel": "series_relativity/SR_companion_papers/c06_DP_chaining_as_mass_and_EM_substrate/c06_dipole_chain_patterns_as_mass_EM_subtrate.tex",
       "title": "Dipole Chain Patterns as the Substrate of",
       "ver": "2.2",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Companion",
       "withheld": "",
       "wave": 1,
@@ -2446,7 +2445,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2476,7 +2475,7 @@
       "rel": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
       "title": "SR-1: Mechanistic Derivation of Relativistic Effects",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -2528,7 +2527,7 @@
           "Grok (xAI)",
           "Claude Sonnet (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2558,7 +2557,7 @@
       "rel": "series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex",
       "title": "SR-2: The Spin-Bit Axiom --- Necessity, Construction",
       "ver": "1.5",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -2572,7 +2571,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2581,49 +2580,6 @@
         ],
         "version": "1.5",
         "description": "Conscious Point Physics (CPP) recovers the static and gravitomagnetic sectors of General Relativity from a Lattice State Packet (LSP) broadcast carrying one scalar ($ $) and one vector ($V_i$) degree of freedom across the 600-cell substrate. This work asks whether that content can also carry the radiative tensor sector --- the helicity-$ 2$ ($+$, $ $) gravitational-wave polarizations. It cannot, and the impossibility is theorem-grade: three independent assaults (amplitude bilinears, the full collective-mode spectrum of the lattice, and the most general per-edge connection consistent with icosahedral symmetry) each return a helicity content of $\\0,0, 1\\$ with no rank-2 channel, for every coupling. A genuine rank-2 fundamental degree of freedom is therefore required within CPP's current axioms to carry the observed helicity-$ 2$ polarizations --- consistent with the graviton's fundamental status in general relativity. We construct it. The 600-cell supplies the seat natively in the icosahedral shell's $H$ ($l=2$) representation, whose $m= 2$ content is precisely the GR $+$ and $ $ polarizations; the rank-agnostic icosahedral shell-sum supplies propagation at $c$. The resulting amendment $ A3 A3'$ --- the Completed Broadcast Axiom --- adds a single symmetric-traceless field $ $ to the LSP, completing it to $ LSP' = A T_1 H = 9$ numbers, which is shown to be the lattice's entire protected representation content: no fourth rung exists (Completion Theorem). The axiom pays for itself: the coupling is fixed at $ = 16 G/c^4$ by the single requirement that the Newton constant governing the scalar sector govern the tensor sector, so the field equation $ h_ = -16 G\\,T_ /c^4$ and the waveform $h^ _ij = (2G/c^4 r)\\, Q^ _ij(t_ ret)$ are derived, not asserted, at zero new parameters. Statics are untouched (a tensor-virial theorem); the tidal response is pure tensor (Eardley class N$_2$, via an exact cancellation theorem and a redundant trace completion); and the energy ledger closes operationally (Hulse--Taylor $-2.4031 10^-12$, double pulsar $-1.2483 10^-12$, eccentric flux/Peters ratio $1.000640$ --- nothing tuned). The construction passed the programme's first axiom-level adversarial swarm review (DG-3, CONFIRM from all panel members over two rounds, one objection upheld against a $2$--$1$ count and integrated as the Operational-Energy Lemma). Four falsifiers are registered. This closes the (a)-half of op:einstein (full Einstein-tensor recovery) for the radiative sector by necessity rather than convenience.",
-        "description_ok": true,
-        "description_source": "abstract environment"
-      },
-      "eligible": false,
-      "reason": "not approved",
-      "APPROVED": "",
-      "CHANGE_CLASS": "",
-      "RESERVED_DOI": "",
-      "CONCEPT_DOI": "",
-      "PREPRINT_ID": "",
-      "POSTED": "",
-      "OSF_LINK": "",
-      "PARENT": "",
-      "RELATION": "",
-      "COMMUNITY": "conscious-point-physics",
-      "NOTES": ""
-    },
-    {
-      "rel": "series_standard_model/development-transcripts/SM-12/grok_SU3_color.tex",
-      "title": "SU(3) Color Charge from Tetrahedral Cage Representations",
-      "ver": "1",
-      "changed": "2026-08-19",
-      "cls": "Series paper",
-      "withheld": "",
-      "wave": 1,
-      "cites": [],
-      "wave_blocked_by": [],
-      "children": [],
-      "parent_source": "",
-      "zenodo": {
-        "title": "SU(3) Color Charge from Tetrahedral Cage Representations",
-        "creators": [
-          "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
-        ],
-        "publication_date": "2026-08-19",
-        "resource_type": "publication-preprint",
-        "license": "cc-by-4.0",
-        "access_right": "open",
-        "subjects": [
-          "Physics"
-        ],
-        "version": "1",
-        "description": "We derive the SU(3) color structure of quarks from the tetrahedral cage geometry of the 600-cell lattice. The qCP cage is a regular tetrahedron (Td symmetry). Its apex vertex plus three base vertices generate a color triplet under the C₃ rotation around the apex-centroid axis (Theorem 3.1). Color charge is the Z₃ quantum number carried by the chain-attachment point on the base triangle. The 1+3+4 layered qDP chain between quarks maps onto the 8 gluon generators: the central + constrained outer chains give the 2 diagonal Cartan generators, while the three middle-layer chains at 120° give the 6 off-diagonal raising/lowering operators (Proposition 4.1). Color neutrality requires the total Z₃ charge ≡ 0 mod 3, which algebraically selects only meson (\\(q q\\)), baryon (\\(qqq\\)), and glueball configurations (Theorem 5.1). Fractional electric charges and color share the same tetrahedral projection origin (Remark 3.2). The result closes the strong-force sector: confinement mechanism (companion 14) + color algebra (this paper) together give QCD phenomenology from first principles.",
         "description_ok": true,
         "description_source": "abstract environment"
       },
@@ -2820,7 +2776,7 @@
       "rel": "series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex",
       "title": "SM-2: Mass Generation from Geometric Hierarchies",
       "ver": "—",
-      "changed": "2026-09-14",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -2835,7 +2791,7 @@
           "Grok (xAI)",
           "Claude Sonnet (Anthropic)"
         ],
-        "publication_date": "2026-09-14",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -3594,7 +3550,7 @@
       "rel": "series_strong/papers/SS-3_su3_uniqueness.tex",
       "title": "SS-3: Uniqueness of SU(3) from the Tetrahedral Cage",
       "ver": "1.7",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -3608,7 +3564,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -3638,7 +3594,7 @@
       "rel": "series_strong/papers/SS-4_string_tension.tex",
       "title": "SS-4: String Tension from the 600-Cell Face-Mode Multiplicity",
       "ver": "0.4",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -3652,7 +3608,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -3682,7 +3638,7 @@
       "rel": "series_strong/papers/SS-5/SS-5_light_nuclei_open_vertex_cascade.tex",
       "title": "SS-5: Light-Nuclei Binding Energies from the Open-Vertex Cascade",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -3696,7 +3652,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -3726,7 +3682,7 @@
       "rel": "series_strong/papers/SS-6/SS-6_deuteron_observables_beyond_binding.tex",
       "title": "SS-6: Deuteron Observables Beyond Binding:",
       "ver": "0.5",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 6,
@@ -3744,7 +3700,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -3774,7 +3730,7 @@
       "rel": "series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex",
       "title": "SS-7: Alpha-Cluster Regime and the 3N-6 Edge Formula",
       "ver": "1.6",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -3788,7 +3744,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -3865,7 +3821,7 @@
       "rel": "series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex",
       "title": "(untitled)",
       "ver": "1.3",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 2,
@@ -3882,7 +3838,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -3955,7 +3911,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_audit/theo_chir_audit_1.tex",
       "title": "Chirality Entry-Point Enumeration",
       "ver": "1.1",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -3968,7 +3924,7 @@
         "creators": [
           "Conscious Point Physics --- Substrate Chirality Arc"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -3998,7 +3954,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex",
       "title": "Cross-Sector Layer 4 Closure of the Substrate Chirality Handle:",
       "ver": "1.0",
-      "changed": "2026-09-14",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4011,7 +3967,7 @@
         "creators": [
           "Thomas Lee Abshier, NDHyperphysics Institute / Renaissance Ministries. Email: drthomas@hyperphysics-institute.org"
         ],
-        "publication_date": "2026-09-14",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4041,7 +3997,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_bridge_1.tex",
       "title": "The Substrate,,Electroweak Chirality Correspondence:",
       "ver": "1.1",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4054,7 +4010,7 @@
         "creators": [
           "Conscious Point Physics --- Substrate Chirality Arc"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4084,7 +4040,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_cap_1.tex",
       "title": "The Capture/Partnering Handedness as a Registered Involution",
       "ver": "1.0",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4097,7 +4053,7 @@
         "creators": [
           "Conscious Point Physics --- Substrate Chirality Arc"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4127,7 +4083,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_chi_1.tex",
       "title": "The Substrate Chirality Magnitude = ^-3 as the",
       "ver": "1.0",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4140,7 +4096,7 @@
         "creators": [
           "Conscious Point Physics --- Substrate Chirality Arc"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4170,7 +4126,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_merge_1.tex",
       "title": "The Unified Chirality Sign: Identification of the PCD-Cycle Orientation",
       "ver": "1.0",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4183,7 +4139,7 @@
         "creators": [
           "Conscious Point Physics --- Substrate Chirality Arc"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4213,7 +4169,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_merge_2.tex",
       "title": "The Parity Decomposition of the Cycle Handedness:",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4226,7 +4182,7 @@
         "creators": [
           "Conscious Point Physics --- Substrate Chirality Arc"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4256,7 +4212,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_pcd_orientation_1.tex",
       "title": "Deriving the PCD Winding Orientation from the Chirality Director:",
       "ver": "1.0",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4269,7 +4225,7 @@
         "creators": [
           "Conscious Point Physics --- Substrate Chirality Arc"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4299,7 +4255,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_status_1.tex",
       "title": "The Primitive/Emergent Status of Chirality:",
       "ver": "1.1",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4312,7 +4268,7 @@
         "creators": [
           "Conscious Point Physics --- Substrate Chirality Arc"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4342,7 +4298,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_status_2.tex",
       "title": "The Chiral-Vacuum Breaking Chain",
       "ver": "1.1",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4355,7 +4311,7 @@
         "creators": [
           "Conscious Point Physics --- Substrate Chirality Arc"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4385,7 +4341,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_tarrow_1.tex",
       "title": "The Primitive/Emergent Status of the Time-Reversal Arrow ():",
       "ver": "1.1",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4398,7 +4354,7 @@
         "creators": [
           "Conscious Point Physics --- Substrate Chirality Arc"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4428,7 +4384,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_tarrow_2.tex",
       "title": "A Derived Substrate Time-Asymmetry Mechanism:",
       "ver": "1.1",
-      "changed": "2026-09-14",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4441,7 +4397,7 @@
         "creators": [
           "Conscious Point Physics --- Substrate Chirality Arc"
         ],
-        "publication_date": "2026-09-14",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4471,7 +4427,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_vw_1.tex",
       "title": "The Reflection-Positivity Structure of the Substrate Parity :",
       "ver": "1.1",
-      "changed": "2026-09-15",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4484,7 +4440,7 @@
         "creators": [
           "Conscious Point Physics --- Substrate Chirality Arc"
         ],
-        "publication_date": "2026-09-15",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4514,7 +4470,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_vw_2.tex",
       "title": "The =0 Reflection-Positivity Anchor and the Osterwalder--Schrader Reduction of H1 to VW-a-4",
       "ver": "1.1",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4527,7 +4483,7 @@
         "creators": [
           "Conscious Point Physics --- Substrate Chirality Arc"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4557,7 +4513,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex",
       "title": "The Dynamical Substrate Law:",
       "ver": "1.0",
-      "changed": "2026-09-14",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -4663,7 +4619,7 @@
         "creators": [
           "Dr.~Thomas Lee Abshier, ND Hyperphysics Institute drthomas@protonmail.com"
         ],
-        "publication_date": "2026-09-14",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4693,7 +4649,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/cross_shell_edge_d5_orbits.tex",
       "title": "Cross-Shell Edge Orbit Decompositions under D_5D5 Stabilizer",
       "ver": "1.1",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -4706,7 +4662,7 @@
         "creators": [
           "Patch 0604 hardened-theorem artifact"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4736,7 +4692,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/edge_aligned_invariant_subspace_structural.tex",
       "title": "Edge-Aligned Reading-C Invariant-Subspace Structural Theorem",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -4749,7 +4705,7 @@
         "creators": [
           "Thomas Lee Abshier, ND, and Claude Opus 4.7 Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4779,7 +4735,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/face_aligned_invariant_subspace_structural.tex",
       "title": "Face-Aligned Reading-C Invariant-Subspace Structural Theorem",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -4792,7 +4748,7 @@
         "creators": [
           "Thomas Lee Abshier, ND, and Claude Opus 4.7 Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4822,7 +4778,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_d5_orbit_projections.tex",
       "title": "First-Shell Projection Orbit Values under D_5D5 Stabilizer",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -4835,7 +4791,7 @@
         "creators": [
           "Patch 0601 hardened-theorem artifact"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4865,7 +4821,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_first_shell_edge_d5_orbits.tex",
       "title": "First-Shell-to-First-Shell Edge Orbit Decomposition under D_5D5 Stabilizer",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -4878,7 +4834,7 @@
         "creators": [
           "Patch 0602 hardened-theorem artifact"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4908,7 +4864,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex",
       "title": "First-Shell Inner-Product Primitive (G1)",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -4921,7 +4877,7 @@
         "creators": [
           "Thomas Lee Abshier, ND, and Claude Opus 4.7Institute --- F.1 Dynamical Substrate Law trajectory"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -4994,7 +4950,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_second_shell_edge_orbits.tex",
       "title": "First-Shell-to-Second-Shell Edge-Direction Projection (G2.3)",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5007,7 +4963,7 @@
         "creators": [
           "Thomas Lee Abshier, ND, and Claude Opus 4.7 Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -5037,7 +4993,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/host_second_shell_uniform_projection.tex",
       "title": "Host-to-Second-Shell Uniform Projection (G2.1)",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5050,7 +5006,7 @@
         "creators": [
           "Thomas Lee Abshier, ND, and Claude Opus 4.7 Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -5123,7 +5079,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_four_face_aligned_coefficient.tex",
       "title": "Fourth-Order Closed-Form Substrate-Current Coefficients",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5136,7 +5092,7 @@
         "creators": [
           "CPP Programme"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -5166,7 +5122,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_one_edge_aligned_coefficient.tex",
       "title": "First-Order Closed-Form Substrate-Current Coefficients",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5179,7 +5135,7 @@
         "creators": [
           "Patch 0600 hardened-theorem artifact"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -5209,7 +5165,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_squared_path_class_weights.tex",
       "title": "Path-Class Weight Enumeration at O(^2) for the",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5222,7 +5178,7 @@
         "creators": [
           "Thomas Lee Abshier, ND, and Claude Opus 4.7 Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -5252,7 +5208,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_squared_substrate_locality_umbrella.tex",
       "title": "O(^2) Substrate-Locality Umbrella Theorem at the Host Vertex",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5265,7 +5221,7 @@
         "creators": [
           "Thomas Lee Abshier, ND, and Claude Opus 4.7 Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -5295,7 +5251,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_three_edge_aligned_coefficient.tex",
       "title": "Third-Order Closed-Form Substrate-Current Coefficients",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5308,7 +5264,7 @@
         "creators": [
           "CPP Programme"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -5338,7 +5294,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_three_face_aligned_coefficient.tex",
       "title": "Third-Order Closed-Form Substrate-Current Coefficients",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5351,7 +5307,7 @@
         "creators": [
           "CPP Programme"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -5381,7 +5337,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_two_edge_aligned_coefficient.tex",
       "title": "Second-Order Closed-Form Substrate-Current Coefficients",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5394,7 +5350,7 @@
         "creators": [
           "Thomas Lee Abshier, ND, and Claude Opus 4.7 Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -5424,7 +5380,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/o_delta_two_face_aligned_coefficient.tex",
       "title": "Second-Order Closed-Form Substrate-Current Coefficients",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5437,7 +5393,7 @@
         "creators": [
           "Thomas Lee Abshier, ND, and Claude Opus 4.7 Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -5510,7 +5466,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_order_parallel_to_n_structural.tex",
       "title": "Second-Order Parallel-to- Structural Theorem",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5523,7 +5479,7 @@
         "creators": [
           "Thomas Lee Abshier, ND, and Claude Opus 4.7 Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -5553,7 +5509,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_shell_inner_product_primitive.tex",
       "title": "Second-Shell Inner-Product Primitive (G2)",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5566,7 +5522,7 @@
         "creators": [
           "Thomas Lee Abshier, ND, and Claude Opus 4.7 Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -5596,7 +5552,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_shell_perpendicularity.tex",
       "title": "Second-Shell-to-Second-Shell Edge-Direction Perpendicularity (G2.4)",
       "ver": "1.2",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5609,7 +5565,7 @@
         "creators": [
           "Thomas Lee Abshier, ND, and Claude Opus 4.7 Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -5639,7 +5595,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/second_shell_projection_d5_orbits.tex",
       "title": "Second-Shell Projection Orbit Values under D_5D5 Stabilizer",
       "ver": "1.1",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Theorem artifact",
       "withheld": "",
       "wave": 1,
@@ -5652,7 +5608,7 @@
         "creators": [
           "Patch 0603 hardened-theorem artifact"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
