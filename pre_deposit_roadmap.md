@@ -1,0 +1,114 @@
+# Pre-Deposit Roadmap — what must be settled before the corpus goes to the CERN repository (Zenodo)
+
+**Location:** `/CPP/pre_deposit_roadmap.md`. **Registered:** Patch 4335, 29 September 2026 (Session 241), at the founder's
+request (*"make the short, prioritized list of the theoretical developments … needed before publication on Zenodo …
+begin the process of completing the list"*, `founders_voice/4335_…`).
+**Queue entry:** TODO-4335-PREDEPOSIT (`todolist.md`). Update this file when an item's status changes; the work itself is
+done and recorded in the lanes named below.
+
+**Standing facts.** Nothing is deposited yet (4334). PDFs are built by Isak at deposit (CONV-012). The founder's 19 Aug 2026
+ruling (OPEN-ORG-023): a small test-run deposit first; then **most of the 105 non-gravitational papers wait until GR-1, its
+companions and OPEN-GR-FE-1 are done**. Deposit approval is the founder's (the queue's APPROVED column, fail-closed).
+
+---
+
+## The list, in order
+
+**0. Honest labelling and the scorecard (continuous; do first, it is cheap).**
+- `theory-overview.md` is stale since the 21 June commit (header 17 May); 75 scorecard-registry commits have landed since.
+- Headline claims must say what they rest on:
+  - "108 zero-parameter correspondences" rest on 9 axioms and **2 calibrations**.
+  - W, Z and Higgs use calibrated η factors.
+  - Koide K = 2/3 is conditional on Layer B.
+  - SS-8 and SS-9 are conditional on hypothesis sets.
+  - α is a calibrated relation (CAL-ZBW1-SWING).
+  - Λ is calibrated.
+- `publication_readiness.md`: 71 papers show internal codes in their PDFs; 7 are blocked by unfinished text.
+- **Enforced from 4335** by `code/overview_staleness_gate.py`. **Closes when** the gate passes and every README and
+  theory-overview headline carries its basis. *Lane:* governance (TODO-4335-OVERVIEW).
+
+**1. Gravity completion — OPEN-GR-FE-1 (derive the general field equations), the founder's deposit gate.**
+- The GR arc reproduces the Schwarzschild, Kerr and Kerr–Newman *solutions*, but the field *equations* are only
+  correspondence claims (`frontier_sectors/GR.md`, OPEN-GR-FE-1).
+- Carried with it:
+  - OPEN-GR-RCORE-1's HALT finding against the shipped GR-1d;
+  - gravity in DI-bit counts (the queued O2 from 4310–4313);
+  - TODO-4300-HBARSWEEP (GR-1 and GR-1a's "fixed by the 600-cell lattice / no free parameters" overstatements).
+- *Closes when* the field equations are derived from the DI-bit/SSV picture, not by continuum correspondence. *Lane:* GR.
+
+**2. The lattice-to-SI scale and the PSR floor.**
+- OPEN-SD-lattice-scale is marked *"#1 foundational — blocks experimental scrutiny"* (`frontier_sectors/SM.md`): how
+  many GPs make a Planck length (R = PSR/s = 10³⁰ or 10³²).
+- Tied to it is the black-hole PSR. Its disagreement with the register floor l_P/2 was 10¹⁶ (4310). After this session's
+  flip ruling it is a factor of 4.1 (4322 §4, not yet re-adjudicated). 4311 dropped the surface-count identification; the
+  critic owes whether to reverse that.
+- *Closes when* R is fixed by an independent observable or declared a calibration with its consequences stated.
+  *Lane:* foundations/GR.
+
+**3. Spin and the unit of action.**
+- ħ is identified, not derived; this session gave ħ/2 a physical carrier (the Planck ZBW half-swing, 4320/4325), but its
+  size is calibrated.
+- SPIN-1 and SPIN-2 are **held from deposit** because they take ħ/2 as input (TODO-4289-SPINREV/SPINSWEEP).
+- OPEN-QM-3 (spin-½ and Pauli) is open; its 4098 progress note was retracted.
+- Spin is input throughout the corpus. *Closes when* SPIN-1/2 are revised to state ħ/2 as input, and the corpus-wide
+  "spin derived, no free parameter" wording is swept. *Lane:* QM/SPIN.
+
+**4. Layer B and the QM foundation.**
+- OPEN-SS-16 (operator formalism and system–bath coupling, "CRITICAL") conditions Koide K = 2/3 and much of the strong
+  sector.
+- OPEN-QM-1-REGROUND ("un-conditions the QM sector") and OPEN-QM-1 (Born rule) sit beside it.
+- *Closes when* derived, or when every dependent paper states its conditionality in print. *Lane:* SS/QM.
+
+**5. The electromagnetic constants and α.**
+- OPEN-FP-6-CONSTANTS: μ₀, ε₀ and c rest on a parameter-tuned toy model.
+- α = PSR/(2L) with one calibrated swing (CAL-ZBW1-SWING, 4326–4330). It passes local position invariance (4327–4330)
+  and has the right sign of running (4326). The logarithmic running law (4331) needs a DP-arc cloud model.
+- *Closes when* the cloud model gives the PSR/(3π) law, or α is published as a calibrated relation with its two tests.
+  *Lane:* EW → foundations/SF-6.
+
+**6. Special relativity: the residual theorem debt.**
+- **Correction to the list as first given in chat (29 Sep):** OPEN-SR-EPSILON is **not** open at the verdict level. It
+  was recorded SATISFIED for closed self-bound patterns at W2 world-call strength (founder ruling, Patch 2502; ε = γ − 1
+  grounded at the energy level via the SF-6 pin and Laue).
+- What remains are theorem-grade debts, **not verdict-bearing**: OPEN-SR-10 item (i) (the from-PCD dispersion
+  derivation), SF-6 debt (b) (vector completion) and capacity-set integration.
+- SR-1 can be published with those stated. *Lane:* SR.
+
+**7. Cosmology: dark matter, dark energy, the cosmological constant — a scope decision, not a prerequisite.** (Status as
+recorded, surveyed at 4335.)
+- **Dark energy:** the corpus's own verdict is *"Λ-like, Λ from calibration, no distinguishing dynamical mechanism"*
+  (3430; w = −1.00 ± 0.02, 3419).
+  - Routes closed: VARC-1 (3430), GRADIENT-1 (3433), TIMEDIL-1 (3440). F-W-1 (w = −1.023) was demoted: its IR scale is
+    fitted and its sign is contradicted by the corpus's own calibration.
+  - The only live route, the open/comoving build, has a frozen budget and no execution. There is no DE paper.
+- **Cosmological constant / vacuum energy:** TN-SR-1's 1/N² ≈ 10⁻¹²² suppression is labelled by the paper itself *"a
+  conjecture (OP-SR-5), not a derived theorem"*.
+  - OPEN-SR-5 is open (Step 5b partial).
+  - 3920 found the Λ density degenerate in the Friedmann equation, so it cannot set H.
+  - 3930: the EU lane is not working Λ.
+- **Dark matter:** CONJ-COSMO-1 (Tetra-Gravity DM) is a conjecture, conditional-PASS on structure formation.
+  - The candidate is the 16-plane ring at 11.26 GeV (3426). At its real mass, clumping is **31 orders short** of the
+    required amplitude (Poisson δ ≈ 6 × 10⁻³⁷ against 10⁻⁵), and white Poisson clumping also **fails on shape at every
+    clump mass** (3884, which also retracted 3882's "within a factor of two").
+  - DM-1 and DM-3 are on the never-deposit list (record, not release); DM-2 is not approved.
+  - Open: OPEN-DM-SIGN-SELECTION-1, OPEN-DM-PAIRING-KINETICS-1, the owed "DM dance v5" rerun.
+- **The ~86-order DE–EU tension** was resolved at 3876 as the two lanes counting different objects. The counting bound it
+  left (N_CP ≥ 1.7 × 10¹⁸³, 99 orders above the founder's 10⁸⁴) is owed to the DE lane (TODO-3930-EU).
+- **Recommendation (sequencing, PD-006; deposit approval stays the founder's):** none of these is a prerequisite for
+  depositing the rest of the corpus, **provided nothing in the deposited papers claims them**.
+  - Keep DM-1/DM-3 as they are, and DM-2 unapproved.
+  - Deposit TN-SR-1 only as the labelled conjecture it already calls itself, or hold it.
+  - Sweep the deposited papers for any "CPP explains dark matter / dark energy / Λ" wording and scope it to "conjecture"
+    or "calibrated".
+  - A cosmology wave follows when a DM derivation closes the amplitude and shape gaps or the DE comoving build runs.
+
+**8. Chirality — OPEN-SD-CHIR-PRIMITIVE / OPEN-CHIR-3.**
+- Handedness is a primitive, not derived.
+- It can be published as a stated axiom without damaging anything else. *Lane:* chirality/EW.
+
+---
+
+## Work log (append; newest last)
+
+- **4335:** roadmap registered; `code/overview_staleness_gate.py` added (the item-0 gate); OS and bootup amended
+  (theory-overview refresh triggered by scorecard-registry changes, not every turn).

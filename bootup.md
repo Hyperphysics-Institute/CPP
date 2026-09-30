@@ -139,6 +139,11 @@ session log, a transcript row, a development vignette, a registry pass and a han
 addressed to a reader who never arrived. **The founder noticed the cadence change; the lane
 did not.**
 
+**The scorecard gate (Patch 4335).** `theory-overview.md` is refreshed whenever a scorecard registry changes (predictions,
+theorem-, axiom-registry, paper_catalog), not every turn; `python3 code/overview_staleness_gate.py` runs with the boot
+gates (five, from 4335: absence, continuity, deferral, encoding, overview) and at the §15 close. **What it cost:** 75
+scorecard commits and three months of drift before anyone noticed. The pre-deposit plan lives in `pre_deposit_roadmap.md`.
+
 **D-7 is aimed at a different object from D-1…D-6, and that is why it was needed.** The first
 six say *search the topic*. D-7 says *resolve the symbol*. The four failures it records were all
 committed **while topics were being searched** — the search returned the right document and the

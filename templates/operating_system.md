@@ -61,7 +61,7 @@
 |----------|---------|-----------------|
 | `programme_orientation.md` | **THE BOOK** — complete theory in connected prose | Every session with new physics |
 | `founders_vision.md` | Thomas's physical intuition — the WHY | Every session with new physics |
-| `theory-overview.md` | Current state snapshot — formulas, results, problems | After each paper |
+| `theory-overview.md` | Current state snapshot — formulas, results, problems | Whenever a scorecard registry changes (predictions, theorem-registry, axiom-registry, paper_catalog) — gated by `code/overview_staleness_gate.py` (Patch 4335) |
 | `axiom-registry.md` | All axioms, predictions, growth tracking | After each paper |
 | `master_glossary.md` | Every CPP term defined | Scan during Phase 7 |
 | `predictions.md` | Quantitative predictions with status | After each paper |
@@ -889,6 +889,12 @@ audit may have failed to run. A written `run=FAIL` is recoverable; only a *missi
 ### Content documents (update substance)
 
 #### theory-overview.md update procedure
+**Trigger (Patch 4335, founder 29 Sep 2026):** refresh this file in the same patch as, or the patch after, any change to a
+scorecard registry (`predictions.md`, `theorem-registry.md`, `axiom-registry.md`, `paper_catalog.md`), and at every §15
+session close. `python3 code/overview_staleness_gate.py` fails while the file is behind those registries; it runs with the
+boot gates and at close. It is deliberately NOT triggered by `research_frontier.md`, which changes every patch (D-8).
+**What it cost:** the file went from 17 May / 21 Jun 2026 to 29 Sep 2026 without a refresh — 75 scorecard commits —
+so the programme's own summary no longer matched the programme when a publication list was needed.
 1. Add any new quantitative results to the "Strongest Quantitative Results" table
 2. Update the "Key Formulas" reference card if new formulas were derived
 3. Update "Open Problems" — move solved problems out, add new ones
