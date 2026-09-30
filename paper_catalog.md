@@ -21,9 +21,9 @@
 | SF-1: The Charged-Lepton Sector from 600-Cell Geometry — Koide K=2/3 , the Koide Phase, and ... | 1.3 | `flagship_papers/charged_leptons/sf-1_charged_leptons.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SF-8: Emergent Electrostatics and the Bonded ZBW Sea — Coulomb's Law Measured Out of the Mom... | 0.5 | `flagship_papers/electromagnetism/SF-8/sf-8_emergent_electrostatics.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 | SF-6: Electromagnetism Unified — Classical, Relativistic, and Quantum Electrodynamics from e... | 1.6 | `flagship_papers/electromagnetism/sf-6_electromagnetism.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
-| SF-2 Companion: Cage Geometry Figures, Executive Overview, Glossary, Quantitative Frameworks... | 1.06 | `flagship_papers/electroweak/sf-2_companion.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry — W^ , W^0 , Z , and H as a ... | 1.08.1 | `flagship_papers/electroweak/sf-2_electroweak.tex` | 2026-09-22 | — | **UNKNOWN — not in prior catalog** |
-| SF-4: Neutrino Sector Unification from 600-Cell Geometry — Eight Parameters from One Calibra... | 3.5 | `flagship_papers/neutrinos/sf-4_neutrinos.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
+| SF-2 Companion: Cage Geometry Figures, Executive Overview, Glossary, Quantitative Frameworks... | 1.06 | `flagship_papers/electroweak/sf-2_companion.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
+| SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry — W^ , W^0 , Z , and H as a ... | 1.08.1 | `flagship_papers/electroweak/sf-2_electroweak.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
+| SF-4: Neutrino Sector Unification from 600-Cell Geometry — Eight Parameters from One Calibra... | 3.5 | `flagship_papers/neutrinos/sf-4_neutrinos.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | SF-3: The Quark Sector from 600-Cell Geometry — Masses, Strong Coupling, Koide Phase, and Ge... | 1.6 | `flagship_papers/quarks/sf-3_quarks.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SF-5: Strong-Sector Unification from 600-Cell Geometry — SU(3) Colour, the Eight Gluons, Con... | 1.04 | `flagship_papers/strong/sf-5_strong.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SF-7: Standard Model Grand Unification from 600-Cell Geometry — Hierarchy Without Hierarchy:... | 0.11 | `flagship_papers/unification/sf-7_grand_unification.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
@@ -47,7 +47,7 @@
 | SS-5: Light-Nuclei Binding Energies from the Open-Vertex Cascade — 600-Cell Standard Model E... | 1.2 | `series_strong/papers/SS-5/SS-5_light_nuclei_open_vertex_cascade.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SS-6: Deuteron Observables Beyond Binding: — Scope and Limits of the Base-to-Base Picture — ... | 0.5 | `series_strong/papers/SS-6/SS-6_deuteron_observables_beyond_binding.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SS-7: Alpha-Cluster Regime and the 3N-6 Edge Formula — for Medium-Mass Nuclei — 600-Cell Sta... | 1.6 | `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| Interstitial-Neutron Binding in Alpha-Cluster Nuclei: — The 2E/V Scaling Law from Simplicial... | 1.3 | `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
+| Interstitial-Neutron Binding in Alpha-Cluster Nuclei: — The 2E/V Scaling Law from Simplicial... | 1.4 | `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | (title not parsed) | 1.3 | `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 
 ---
@@ -146,7 +146,7 @@
 
 | Title | Ver | File | Last touched | Patch | Deposit |
 |---|---|---|---|---|---|
-| The Capotauro Mechanism: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry P... | 2.3 | `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` | 2026-09-19 | 4104 | **UNKNOWN — not in prior catalog** |
+| The Capotauro Mechanism: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry P... | 2.4 | `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` | 2026-09-19 | 4104 | **UNKNOWN — not in prior catalog** |
 | Chirality Entry-Point Enumeration — in the Conscious Point Physics Framework — A Layer-3 unc... | 1.4 | `series_umbrella/series_substrate_chirality_arc/chirality_audit/theo_chir_audit_1.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | Cross-Sector Layer 4 Closure of the Substrate Chirality Handle: — Electroweak V--A Coupling ... | 1.3 | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` | 2026-09-14 | — | **UNKNOWN — not in prior catalog** |
 | The Substrate\, \,Electroweak Chirality Correspondence: — the -Match and the P/T-Face Dictio... | 1.4 | `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_bridge_1.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |

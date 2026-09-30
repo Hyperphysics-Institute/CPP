@@ -2019,6 +2019,7 @@ records, not a queue — which is the TODO-0937-CHIR shape. Filed here at the mo
 **Why it matters now:** F5 is the one filter keeping χ₄ from panel-readiness. If the 65.5° target is signpost-only *and* F5 reduces to the H1 blocker (Patch 4102), then χ₄'s route to panel-readiness runs entirely through H1 and nothing else. That is worth knowing before any further F5 work. **Lane: SM/EW.**
 
 ### TODO-4119-CAPV21-REMAINDER — E4/E7 + the sibling-paper sweep, still owed (registered Patch 4119, CHIR lane)
+**Partly DONE 4342 (Capotauro file v2.4):** E4 (superseded banners at the sub-claim (a) and Q7 sections) and E7 (paper-type line scoped; a Status note after the abstract states (a) superseded, the hand a primitive, the EM leg a convention, what stands). The ~29 residual one-liners are covered by the Status note and retained in place as the v2.0 record — no further in-line edits planned. **The 14 sibling pointers** are all the generated identifier-appendix gloss of OPEN-SD-CHIR-PRIMITIVE; its source statement (frontier_sectors/SD.md) is corrected at 4342, and the papers update when the appendices are regenerated (TODO-4342-GLOSSREGEN). Recompile is Isak's at deposit (CONV-012), which folds TODO-4104-CAPRECOMPILE.
 
 Patch 4119 executed **E2** (|χ| renamed to *primitive anisotropy amplitude*, section + remark + 12 recurring occurrences), **E3** (sub-claim (a) retired as SUPERSEDED with reason, retained not deleted), **E5** (δ_CP/η_B referral withdrawn; "no candidate mechanism exists" recorded), and the E6 phrase sweep. LaTeX verified: whole-file brace balance unchanged from HEAD, all environments paired.
 
@@ -2429,6 +2430,7 @@ CONV-029 (Patch 3269) cleared GR-1i 5–0 with five adoptions and discharged OPE
 OPEN-ORG-023 Item 1 planned a small test-run deposit first, using the spin trio; SPIN-1 and SPIN-2 are now held (4289), so the set must be re-chosen. Propose two or three papers that are finished, not held, and not gated (candidates: SPIN-3, SR-1, SS-3), for the founder's APPROVED column and Isak's DOI reservation.
 
 ### TODO-4340-ZEROSWEEP — triage the "zero-parameter" wording paper by paper (registered Patch 4340, governance; roadmap item 0)
+**Progress 4342:** SS-8 (v1.4) and Capotauro (v2.4) done. Next: the `--counts` list from the fifth paper down.
 **Progress 4341:** SF-2 done (arithmetic erratum found: 3/(8φ) had been written as the observed 0.23121; v1.08.1 + companion v1.06), SF-4 done (v3.5). Next: SS-8 (24), Capotauro (22), then down the `--counts` list.
 `python3 code/claim_wording_sweep.py zero --counts` lists ~300 hits in 44 deposit candidates. Criterion (wording_sweep_register.md): a "zero-parameter" claim must be literally true of that result or name its calibration or condition in the same sentence. Largest first: SF-2 (35), SF-4 (29), SS-8 (24), Capotauro (22). Record each paper's verdict in the register.
 
@@ -2436,7 +2438,11 @@ OPEN-ORG-023 Item 1 planned a small test-run deposit first, using the spin trio;
 Pre-existing, unchanged by 4340: the three figure SVGs (dpsea_fig1–3) are missing from the folder, and multi-byte characters (±, Λ, ≈, superscripts) sit inside lstlisting / plain text without a Unicode-capable setup (23 errors). Isak's PDF build at deposit will fail until fixed: restore or regenerate the figures, and replace the listing characters with ASCII.
 
 ### TODO-4341-COMPILEERR — flagship .tex files with pre-existing compile errors (registered Patch 4341, governance; before Isak's PDF build)
+**Added 4342:** Capotauro (15 errors: Unicode U+000B and subscript ₃ outside math, pre-existing), SS-8 (3, pre-existing).
 Found while checking the 4341 edits (baseline and edited versions give the same errors): SF-2 (8 errors: Unicode α ×2 outside math, "Too many }'s" ×2, undefined control sequence ×2, "Missing \begin{document}" and "no line here to end" — the latter pair from the header region), SF-4 (Unicode α ×2). With TODO-4340-DPSEACOMPILE (DP-Sea) and GR-1c (fixed at 4339). A corpus-wide compile pass over the 117 deposit candidates is owed before deposit: `pdflatex` twice each, list files with errors, fix.
+
+### TODO-4342-GLOSSREGEN — regenerate the identifier appendices (registered Patch 4342, governance)
+`code/identifier_glossary.py --inject` REFUSES at present: 22 identifiers used in papers have no gloss (OPEN-GR-FE-1, OPEN-GR-RCORE-1…4, OPEN-GR-TESTS-1, PRED-O-39/40/41, THEO-CHIR-1, THEO-CHIR-CAPACITY-1 and others; `--report` lists them). Also, `tex_escape` escapes `$` and `\`, so glosses containing math print as literal text (e.g. "\$\textbackslash\{\}hat\{n\}\$" in the OPEN-SD-CHIR-PRIMITIVE gloss of 23 papers). Fix: add the 22 glosses to `glossary/identifier_glosses_manual.md` (or one-line statements in the frontier files), make `tex_escape` pass `$…$` spans through unchanged, then `--inject` once; the diff touches ~85 papers' generated appendices only. Picks up the 4342 correction of OPEN-SD-CHIR-PRIMITIVE's statement (the stale "n̂ leading candidate / EM handedness / nucleation" gloss).
 
 ### TODO-4234-DELTA — the nucleon's g_A/g_V from the cage (registered Patch 4234, EW lane; owned by the STRONG sector)
 

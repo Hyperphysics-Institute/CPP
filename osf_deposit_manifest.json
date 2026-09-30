@@ -302,7 +302,7 @@
       "rel": "flagship_papers/electroweak/sf-2_companion.tex",
       "title": "SF-2 Companion: Cage Geometry Figures, Executive Overview, Glossary, Quantitative Frameworks, a",
       "ver": "1.06",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Flagship",
       "withheld": "",
       "wave": 1,
@@ -315,7 +315,7 @@
         "creators": [
           "Thomas Lee Abshier, ND and Anthropic Claude Opus 4"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -345,7 +345,7 @@
       "rel": "flagship_papers/electroweak/sf-2_electroweak.tex",
       "title": "SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry",
       "ver": "1.08.1",
-      "changed": "2026-09-22",
+      "changed": "2026-09-29",
       "cls": "Flagship",
       "withheld": "",
       "wave": 1,
@@ -359,7 +359,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-09-22",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -389,7 +389,7 @@
       "rel": "flagship_papers/neutrinos/sf-4_neutrinos.tex",
       "title": "SF-4: Neutrino Sector Unification from 600-Cell Geometry",
       "ver": "3.5",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Flagship",
       "withheld": "",
       "wave": 1,
@@ -403,7 +403,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -3911,7 +3911,7 @@
     {
       "rel": "series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex",
       "title": "The Capotauro Mechanism: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry Phys",
-      "ver": "2.3",
+      "ver": "2.4",
       "changed": "2026-09-19",
       "cls": "Chirality derivation",
       "withheld": "",
@@ -3932,8 +3932,8 @@
         "subjects": [
           "Physics"
         ],
-        "version": "2.3",
-        "description": "Paper type: Conditional theorem closure paper. Establishes the substrate-level chirality matrix element $|M| = /6 = ^-3/6 0.0394$ as a cross-sector substrate-physics handle shared across three observable manifestations of substrate chirality --- mass-mixing (K3-doublet), electroweak V--A (W-bracelet), and electromagnetic handedness (qDP/eDP polarization) --- under a conditional-closure framework on twelve foundational inputs and four CPP axioms. Conscious Point Physics (CPP) registers chirality as a substrate-wide phenomenon~ abshier_axiom_registry,abshier_theorem_registry,abshier_research_frontier: a single substrate primitive --- a preferred 4D direction $ n$ in the ambient $ R^4$ where the 600-cell substrate sits (FI-C-RC-1) --- sources the chirality content of every parity-sensitive observable in the framework, with the vertex-aligned reading $ n = v_ host$ (FI-C-RC-2) identifying the substrate's local geometric structure as the icosahedral first-shell of a 600-cell host vertex. The substrate residual symmetry is $ _ (v_ host) = H_3 = I_h$ of order 120; the magnitude $| | = ^-3$ is derived from the perturbative-distance-ratio constraint on $ n$-induced edge perturbations~ abshier_capotauro_chiral_mechanism_sketch, replacing v1.0's free magnitude postulate. v2.0 derives the chirality matrix element on three substrate objects on the host vertex's first-shell icosahedron --- the K3-doublet of charged-lepton substrate states (3-vertex triangular face); the W-bracelet hosting the V--A coupling (6-vertex Petrie hexagon); the qDP/eDP linear-vs-orbital ZBW configuration of Dipole Points (1-vertex / 0-vertex first-shell subsets per SM-2~ abshier_sm2) --- with identical numerical content: \\[ |M^ | \\;=\\; |M^W| \\;=\\; |M^qDP| \\;=\\; 6 \\;=\\; ^-36 \\; \\; 0.0394. \\] The three-way unification at substrate level is mediated by a four-step proof chain --- local-$I_h$-preservation at $v_ host$ (Theorem~ thm:local_ih_preservation); Substrate-Locality Unification on first-shell substrate objects (Corollary~ cor:substrate_locality_unification); sector-specific cage-shell factor $d_ /V_ cage = 2/12 = 1/6$ on the shared icosahedral cage; sector-specific pairing-convention identification via sector-specific $ Z_2$ generator and matter-doublet structure --- producing structurally distinct mechanisms with identical numerical magnitude. The three sectors are registered as programme-level theorems THEO-CAP-1 (K3-doublet; Theorem~ thm:composite_cap_we, registered Patch 0397 Session 103 ahead of paper publication), THEO-SD-CHIR-1 (K3-doublet $ $ W-bracelet cross-sector unification; Theorem~ thm:theo_sd_chir_1, registered Patch 0434 Session 132), and THEO-SD-CHIR-2 (qDP/eDP closure; Theorem~ thm:theo_sd_chir_2, registered Patch 0440 Session 133)~ abshier_theorem_registry. End-to-end numerical verification matches to machine precision $10^-17$ at every checkpoint of the K3-doublet derivation chain (Theorem~ thm:composite_cap_we); cross-sector calculations are rigorous via standard character-table group theory. The single primary empirical prediction is the parity-violation asymmetry $ = /6 0.0394$, validated within $2\\%$ of the empirical anchor $ 0.04$ inferred from the baryon asymmetry $ _B$ via leptogenesis. The cross-sector predictions for the W-bracelet V--A coupling and qDP/eDP chiral-polarity-bias at substrate level are substrate-physics handles feeding sector-specific Layer 4 continuum-EFT kinematic projections to observable scales (registered as open work in the OPEN-FP-SF-2-CHIR and SM-2 v2.0+ programmes~ abshier_research_frontier). The paper makes explicit at theorem level: the substrate-locality theorem (Local-$I_h$-Preservation at the host vertex); the Substrate-Locality Unification corollary across first-shell substrate objects; the chirality-eigenvalue matching principle yielding amplitude factor $ $ in each sector; the cage-shell averaging principle yielding $1/6$ on the shared icosahedral cage; the pairing-convention identifications via icosahedral-center inversion for the W-bracelet and combined-$CP$ for the qDP/eDP sector; the empirical prediction $ $. The paper makes explicit as out of scope at v2.0: observable manifestations (iv) thermodynamic causal arrow and (v) cosmological-vacuum asymmetry of the OPEN-SD-CHIR-PRIMITIVE umbrella (future-window work); the Capotauro nucleation event (OPEN-SM-4 sub-claim (a) and Q7 cosmological-timing sub-questions of the Reading C closure trajectory); the first-principles derivation of $ n$ itself from CPP primitive axioms (Q1$'$+Q1$'$.A Layer 3 promotion; future-window dynamical/causal/energetic derivation); the PMNS reactor mixing angle $ ^2 _13$ (re-scoped to SF-2 v2.0+ flagship per v1.0); the CP-violating phase $ _CP$ and the baryon asymmetry $ _B$ (downstream sub-claim work); sector-specific Layer 4 continuum-EFT kinematic projections of the substrate handle $ /6$ to observable scales (SF-2 V--A coupling at the massless helicity limit; SM-2 chiral-polarity-bias EFT continuum-limit calculation). The paper's conditional-theorem-closure framework registers two new Reading C foundational inputs --- FI-C-RC-1 (primitive 4D direction $ n$) and FI-C-RC-2 (vertex-aligned reading $ n = v_ host$ at Layer 2 via three converging arguments) --- in addition to the ten foundational inputs of v1.0 (FI-C-1 through FI-C-10).",
+        "version": "2.4",
+        "description": "Paper type: Conditional theorem closure paper. Establishes the substrate-level chirality matrix element $|M| = /6 = ^-3/6 0.0394$ as a cross-sector substrate-physics handle shared across three sectors --- mass-mixing (K3-doublet), electroweak V--A (W-bracelet), and the qDP/eDP sector (Version~2.4: at magnitude level only; see the Status note after the abstract) --- under a conditional-closure framework on twelve foundational inputs and four CPP axioms. Conscious Point Physics (CPP) registers chirality as a substrate-wide phenomenon~ abshier_axiom_registry,abshier_theorem_registry,abshier_research_frontier: a single substrate primitive --- a preferred 4D direction $ n$ in the ambient $ R^4$ where the 600-cell substrate sits (FI-C-RC-1) --- sources the chirality content of every parity-sensitive observable in the framework, with the vertex-aligned reading $ n = v_ host$ (FI-C-RC-2) identifying the substrate's local geometric structure as the icosahedral first-shell of a 600-cell host vertex. The substrate residual symmetry is $ _ (v_ host) = H_3 = I_h$ of order 120; the magnitude $| | = ^-3$ is derived from the perturbative-distance-ratio constraint on $ n$-induced edge perturbations~ abshier_capotauro_chiral_mechanism_sketch, replacing v1.0's free magnitude postulate. v2.0 derives the chirality matrix element on three substrate objects on the host vertex's first-shell icosahedron --- the K3-doublet of charged-lepton substrate states (3-vertex triangular face); the W-bracelet hosting the V--A coupling (6-vertex Petrie hexagon); the qDP/eDP linear-vs-orbital ZBW configuration of Dipole Points (1-vertex / 0-vertex first-shell subsets per SM-2~ abshier_sm2) --- with identical numerical content: \\[ |M^ | \\;=\\; |M^W| \\;=\\; |M^qDP| \\;=\\; 6 \\;=\\; ^-36 \\; \\; 0.0394. \\] The three-way unification at substrate level is mediated by a four-step proof chain --- local-$I_h$-preservation at $v_ host$ (Theorem~ thm:local_ih_preservation); Substrate-Locality Unification on first-shell substrate objects (Corollary~ cor:substrate_locality_unification); sector-specific cage-shell factor $d_ /V_ cage = 2/12 = 1/6$ on the shared icosahedral cage; sector-specific pairing-convention identification via sector-specific $ Z_2$ generator and matter-doublet structure --- producing structurally distinct mechanisms with identical numerical magnitude. The three sectors are registered as programme-level theorems THEO-CAP-1 (K3-doublet; Theorem~ thm:composite_cap_we, registered Patch 0397 Session 103 ahead of paper publication), THEO-SD-CHIR-1 (K3-doublet $ $ W-bracelet cross-sector unification; Theorem~ thm:theo_sd_chir_1, registered Patch 0434 Session 132), and THEO-SD-CHIR-2 (qDP/eDP closure; Theorem~ thm:theo_sd_chir_2, registered Patch 0440 Session 133)~ abshier_theorem_registry. End-to-end numerical verification matches to machine precision $10^-17$ at every checkpoint of the K3-doublet derivation chain (Theorem~ thm:composite_cap_we); cross-sector calculations are rigorous via standard character-table group theory. The single primary empirical prediction is the parity-violation asymmetry $ = /6 0.0394$, validated within $2\\%$ of the empirical anchor $ 0.04$ inferred from the baryon asymmetry $ _B$ via leptogenesis. The cross-sector predictions for the W-bracelet V--A coupling and qDP/eDP chiral-polarity-bias at substrate level are substrate-physics handles feeding sector-specific Layer 4 continuum-EFT kinematic projections to observable scales (registered as open work in the OPEN-FP-SF-2-CHIR and SM-2 v2.0+ programmes~ abshier_research_frontier). The paper makes explicit at theorem level: the substrate-locality theorem (Local-$I_h$-Preservation at the host vertex); the Substrate-Locality Unification corollary across first-shell substrate objects; the chirality-eigenvalue matching principle yielding amplitude factor $ $ in each sector; the cage-shell averaging principle yielding $1/6$ on the shared icosahedral cage; the pairing-convention identifications via icosahedral-center inversion for the W-bracelet and combined-$CP$ for the qDP/eDP sector; the empirical prediction $ $. The paper makes explicit as out of scope at v2.0: observable manifestations (iv) thermodynamic causal arrow and (v) cosmological-vacuum asymmetry of the OPEN-SD-CHIR-PRIMITIVE umbrella (future-window work); the Capotauro nucleation event (OPEN-SM-4 sub-claim (a) and Q7 cosmological-timing sub-questions of the Reading C closure trajectory); the first-principles derivation of $ n$ itself from CPP primitive axioms (Q1$'$+Q1$'$.A Layer 3 promotion; future-window dynamical/causal/energetic derivation); the PMNS reactor mixing angle $ ^2 _13$ (re-scoped to SF-2 v2.0+ flagship per v1.0); the CP-violating phase $ _CP$ and the baryon asymmetry $ _B$ (downstream sub-claim work); sector-specific Layer 4 continuum-EFT kinematic projections of the substrate handle $ /6$ to observable scales (SF-2 V--A coupling at the massless helicity limit; SM-2 chiral-polarity-bias EFT continuum-limit calculation). The paper's conditional-theorem-closure framework registers two new Reading C foundational inputs --- FI-C-RC-1 (primitive 4D direction $ n$) and FI-C-RC-2 (vertex-aligned reading $ n = v_ host$ at Layer 2 via three converging arguments) --- in addition to the ten foundational inputs of v1.0 (FI-C-1 through FI-C-10).",
         "description_ok": true,
         "description_source": "abstract environment"
       },

@@ -33,6 +33,8 @@ judged to need, and where it was done. A hit that states its basis correctly nee
 |---|---|---|---|
 | SF-2 | 35 | wording correctly scoped (Weinberg angle and m_Z/m_W zero-param; masses stated calibrated) — **but an arithmetic error**: 3/(8φ) written as 0.23121 (the observed value), so m_Z/m_W given as 1.1405 / 0.54% instead of 1.1409 / 0.57%; the companion called the prediction "numerically coincident" with observation | SF-2 v1.08.1 and companion v1.06 at 4341 (erratum + on-shell/MS-bar scope note) |
 | SF-4 | 29 | "zero free parameters" for absolute masses omitted the electron-mass calibration carried by M₀ (title already says "One Calibration"); cross-paper paragraph misquoted SM-9 ("top to 0.02%", which SM-9 calls a fortunate cancellation in a two-calibration fit) and SS-7 (measured B(⁴He) input) | SF-4 v3.5 at 4341 |
+| SS-8 | 24 | explicitly "conditional-zero-parameter", defined once for the paper; the definition did not name the electron-mass calibration inside B_pair | v1.4 at 4342 (one clause) |
+| Capotauro | 22 | "zero free parameters" for χ/6 is honest given FI-C-9/10 named as inputs; **the larger issue is status**: sub-claim (a)/Q7 superseded, δ_CP referral withdrawn, the hand not fixed, the EM leg a convention (4069/4070) | v2.4 at 4342: Status note + superseded banners (E4/E7 of the v2.1 revision plan) |
 
 About 300 hits in some 45 papers. Most are scoped correctly ("zero free shape parameters, one calibration"). The
 triage is owed paper by paper, largest first: SF-2 (35), SF-4 (29), SS-8 (24), Capotauro (22). Criterion: a
