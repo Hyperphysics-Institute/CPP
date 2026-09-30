@@ -378,3 +378,22 @@ properties of inertia) because of the CP and DP-arc interactions."* (`founders_v
 
 **Consequences on file.** SPIN-1's carrier model assigned the CP the electron's rest mass; SPIN-1 v2.2 (Patch 4349)
 records this ruling beside that premise. TODO-4316-CPMASSAXIOM closed.
+
+## Registered rulings under A3′/AP-4 — DI-bit landing (30 September 2026, Patches 4328 and 4354, EW → foundations under PD-006)
+
+**R-DIBIT-FAMILY-EXCLUSION** (4328, clarification of the founder's 4308 rule): a GP holds at most one DI-bit of a given
+GP_origin family.
+
+**R-DIBIT-INWARD-FILL** (founder 4353 proposal, choice (b) confirmed at 4354; `founders_voice/4353_…`, `4354_…`): each
+submoment of the displace phase 12 DI-bits leave GP_origin toward their GP_PSR and occupy it; a bit whose GP_PSR is already
+held by its family takes the most radial free GP around that GP_PSR, going deeper only when the ring at that radius is full.
+Order-free statement: *the family fills the free GPs inside the PSR from the outside in.* Result (4353): a solid band, one
+DI-bit per GP, outer edge at the PSR and moving with it in a well.
+
+**Beyond the PSR (founder's stated picture, 4354):** no DI-bit of the origin family goes beyond its GP_PSR; the origin's
+influence reaches further only by re-radiation from GPs holding its DI-bits, each doing what every GP does. **Readings
+not yet confirmed** (put to the founder at 4354): the relay passes on exactly what it receives (lossless), and a charge
+reads the net flow across its own PSR. Under both, Gauss's law and α's local position invariance follow (4354).
+
+**Status.** Clauses under A3′/AP-4 (transport); **axiom count unchanged at 9.**
+

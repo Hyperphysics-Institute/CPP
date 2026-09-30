@@ -162,3 +162,5 @@ recorded, surveyed at 4335.)
   numbers and the Lange 2021 clock bound adopted; c03 v2.3. α is a calibrated re-expression; LPI and running are open constraints.
 - **4353 (item 5):** founder's inward-fill landing protocol tested: the band's outer edge is pinned to the PSR (near-field
   LPI premise restored as a protocol); solid only if a blocked bit spreads sideways first (TODO-4353-LANDINGRULE). Far field still open.
+- **4354 (item 5):** R-DIBIT-INWARD-FILL registered (founder: sideways first). Far field is re-radiation: Gauss's law follows;
+  α's LPI there hangs on one founder answer (does a charge read the net flow across its own PSR?).
