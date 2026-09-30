@@ -79,8 +79,8 @@
 |---|---|---|---|---|---|
 | The Absolute Moment Postulate: Necessity, Consistency, — and the PCD Cycle in Conscious Poin... | 3.3 | `series_relativity/SR_companion_papers/c01_absolute_moment_postulate/absolute_moment_postulate.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 | Microscopic Origin of the Dipole Sea Stiffness C — in Conscious Point Physics — Companion Pa... | 2.3 | `series_relativity/SR_companion_papers/c02_dipole_stiffness_C/c02_dipole_stiffness_C.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
-| Quantum Probability and the Classical Transition — in Conscious Point Physics: A Mechanistic... | 2.1 | `series_relativity/SR_companion_papers/c03_born_rule/c03_born_rule.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
-| Inertial Mass from Zitterbewegung: — A Two-Level Resonance Hierarchy in Conscious Point Phys... | 2.2 | `series_relativity/SR_companion_papers/c04_ZBW_hbar_mass_units/c04_ZBW_hbar_mass_units.tex` | 2026-09-24 | — | **UNKNOWN — not in prior catalog** |
+| Quantum Probability and the Classical Transition — in Conscious Point Physics: A Mechanistic... | 2.2 | `series_relativity/SR_companion_papers/c03_born_rule/c03_born_rule.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
+| Inertial Mass from Zitterbewegung: — A Two-Level Resonance Hierarchy in Conscious Point Phys... | 2.3 | `series_relativity/SR_companion_papers/c04_ZBW_hbar_mass_units/c04_ZBW_hbar_mass_units.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | Dipole Chain Patterns as the Substrate of — Mass and Electromagnetic Radiation in CPP — Comp... | 2.5 | `series_relativity/SR_companion_papers/c06_DP_chaining_as_mass_and_EM_substrate/c06_dipole_chain_patterns_as_mass_EM_subtrate.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 | SR-1: Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the ... | 1.2 | `series_relativity/papers/SR-1_special_relativity_emergence.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SR-2: The Spin-Bit Axiom --- Necessity, Construction, — and the Derived Einstein Quadrupole ... | 1.5 | `series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
@@ -109,8 +109,8 @@
 | Quantum Mechanics in Conscious Point Physics: — The Measurement Problem and Apparent Wavefun... | 3.2 | `series_quantum_mechanics/papers/QM-4_measurement_problem.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 | Quantum Mechanics in Conscious Point Physics: — Emergent Quantum Field Theory, Second Quanti... | 3.1 | `series_quantum_mechanics/papers/QM-5_qft_emergence.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 | Quantum Mechanics in Conscious Point Physics: — Full Synthesis --- From Four Primitives to Q... | 3.2 | `series_quantum_mechanics/papers/QM-6_capstone.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
-| SPIN-1: Emergent Spin- 12 from Captured Dipole Particle — Orbital Geometry in Conscious Poin... | 2.1 | `series_quantum_mechanics/spin_papers/SPIN-1_emergent_spin_from_captured_DPs/SPIN-1_emergent_spin_from_captured_DPs.tex` | 2026-08-20 | 3253 | **HELD from deposit (Patch 4289): takes ħ/2 as input; revision TODO-4289-SPINREV** |
-| SPIN-2: Derivation of the Standing-Wave Sub-Harmonic Condition — for Captured Dipole Particl... | — | `series_quantum_mechanics/spin_papers/SPIN-2_standing_wave_subharmonics/SPIN-2_standing_wave_subharmonics.tex` | 2026-08-20 | 3253 | **HELD from deposit (Patch 4289): takes ħ/2 as input; revision TODO-4289-SPINREV** |
+| SPIN-1: Emergent Spin- 12 from Captured Dipole Particle — Orbital Geometry in Conscious Poin... | 2.1 | `series_quantum_mechanics/spin_papers/SPIN-1_emergent_spin_from_captured_DPs/SPIN-1_emergent_spin_from_captured_DPs.tex` | 2026-09-25 | — | **UNKNOWN — not in prior catalog** |
+| SPIN-2: Derivation of the Standing-Wave Sub-Harmonic Condition — for Captured Dipole Particl... | — | `series_quantum_mechanics/spin_papers/SPIN-2_standing_wave_subharmonics/SPIN-2_standing_wave_subharmonics.tex` | 2026-09-25 | — | **UNKNOWN — not in prior catalog** |
 | SPIN-3: The ZBW Mode Spectrum and the Lattice Voronoi-Cell Eigenvalue Problem — | 1.0.1 | `series_quantum_mechanics/spin_papers/SPIN-3_600cell_voronoi_ZBW_eigenvalues/SPIN-3_600cell_voronoi_ZBW_eigenvalues.tex` | 2026-08-20 | 3253 | **UNKNOWN — not in prior catalog** |
 
 ---
@@ -234,7 +234,7 @@
 | `series_gravitation/GR_companion_papers/GR-1d_gravitational_wave_echoes/development/Grok-GW_echoes.tex` | 2026-08-19 | 3230 |
 | `series_gravitation/GR_companion_papers/GR-1e_hawking_radiation_planck_remnant/development/Claude_Hawking_Radiation.tex` | 2026-08-19 | 3230 |
 | `series_gravitation/GR_companion_papers/GR-1g_kerr_newman_charged_rotating_BH/development/Claude_Kerr-Newman.tex` | 2026-08-19 | 3230 |
-| `series_quantum_mechanics/spin_papers/SPIN-2_standing_wave_subharmonics/SPIN-2_standing_wave_subharmonics.tex` | 2026-08-20 | 3253 |
+| `series_quantum_mechanics/spin_papers/SPIN-2_standing_wave_subharmonics/SPIN-2_standing_wave_subharmonics.tex` | 2026-09-25 | — |
 | `series_standard_model/development-transcripts/SM-12/grok_SU3_color.tex` | 2026-08-19 | 3231 |
 | `series_standard_model/papers/SM-12_SU3_color_from_600cell.tex` | 2026-08-19 | 3231 |
 | `series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex` | 2026-04-02 | — |

@@ -115,3 +115,6 @@ recorded, surveyed at 4335.)
 - **4336 (item 0, stage 1):** theory-overview.md header, *Current state and headline basis* section and one-paragraph
   theory rewritten from the live registries; the gate reports PARTIAL until stage 2 (paper tables, results, series status,
   open problems, README headline table) lands.
+- **4337 (item 0, stage 2):** theory-overview.md fully refreshed (results re-audited row by row with a basis column);
+  README headlines refreshed; the overview gate passes. Item 0 stays open for TODO-4337-TALLYHOLDS, TODO-4337-SIGMALINK and
+  the corpus-wide wording sweep.

@@ -2,10 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 29 September 2026 (Patch 4336, Session 241 — **STAGE-1 REFRESH**: header, the one-paragraph theory,
-and a new *Current state and headline basis* section, rebuilt from the live registries and `pre_deposit_roadmap.md`.
-**Everything from "Registered Papers" down is the 17 May 2026 text (stage 2 owed, TODO-4335-OVERVIEW)**; where it
-conflicts with this section or with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
+**Last updated:** 29 September 2026 (Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
 Patch 0422B), with a 6 June 2026 EU-1 note.
 
 ---
@@ -14,7 +11,8 @@ Patch 0422B), with a 6 June 2026 EU-1 note.
 
 **Counts, from the live registries (authoritative there, not here):** 9 axioms (`axiom-registry.md`; AP-4 and AP-5 are
 ratified clauses, count unchanged); 108 counted empirical correspondences (`predictions.md` Cumulative Swarm Tally, as
-of 6 June 2026; PRED-C-96's quoted n_s updated to 0.9654 one-sided at 3852); 123 papers in the deposit queue
+of 6 June 2026, 60 of them conditional; PRED-C-96's quoted n_s updated to 0.9654 one-sided at 3852); 82 theorems + 9
+corollaries (`theorem-registry.md`); 123 papers in the deposit queue
 (`osf_deposit_queue.md`, 6 never-deposit); **nothing is deposited yet** — deposits go to the CERN repository (Zenodo)
 via Isak (CONV-012). What must be settled before the deposit is `pre_deposit_roadmap.md`.
 
@@ -25,11 +23,11 @@ the strength its own paper or registry gives it:
 |---|---|---|
 | sin²θ_W = 3/(8φ), α_s = 5/(8φ), their sum 1/φ | derived at zero parameters (as claimed by SM-6/SM-7) | SM-6, SM-7 |
 | Koide K = 2/3 | **conditional** on Layer B (OPEN-SS-16) | SM-3, `frontier_sectors/SS.md` |
-| Charged-lepton masses (μ, τ) | **1 calibration** (m_e) + Koide phase | SM-6 |
+| Charged-lepton masses (μ, τ) | **1 calibration** (m_e) + Koide phase; inherits Koide's Layer-B condition | SM-6 |
 | Heavy-quark masses (RMS 2.1%) | **1 calibration** (m_e; SF-3 v1.0 demoted m_c to derived) | SM-8/9, SF-3 |
 | W, Z, H absolute masses | **calibrated** dilution factors η_W, η_Z, η_H; the ratio m_Z/m_W = 1.140 is zero-parameter | SF-2 |
 | Nuclear bindings (SS-5, SS-7, SS-8, SS-9) | **conditional** on hypothesis stacks (C1–C8, D1–D3) | SS papers, `predictions.md` |
-| Neutrino sector | 8 parameters from **1 calibration** | SF-4 v4.4 |
+| Neutrino sector | 8 parameters from **1 calibration** | SF-4 v3.4 |
 | n_s ≈ 0.9654 | **framework-conditional**, leading-order (OPEN-EU-1) | EU-1, PRED-C-96 |
 | g_A (nucleon axial coupling) | **not pinned**: with one quark mass, 1.242–1.282; the r_p "prediction" withdrawn (4284) | `series_standard_model/axiom_maturation/4284…` |
 | α (fine-structure constant) | **calibrated relation**: α = PSR/(2L), one calibrated swing (CAL-ZBW1-SWING, 4326–4330); passes local position invariance, running has the right sign; running law needs a cloud model (4331) | `series_standard_model/axiom_maturation/4322–4331` |
@@ -43,11 +41,12 @@ the strength its own paper or registry gives it:
 | Dark matter | **conjecture** (CONJ-COSMO-1); the 11.26 GeV ring is 31 orders short on clumping amplitude and fails on shape (3884); DM-1/DM-3 never-deposit | `frontier_sectors/CONJ.md`, `research_frontier.md` |
 | Chirality (weak-interaction handedness) | **primitive** (OPEN-SD-CHIR-PRIMITIVE), not derived | `frontier_sectors/SD.md` |
 
-**Corrections to the 17 May text below, known at stage 1:** the "108 zero-parameter" headline rests on 9 axioms **and
-2 calibrations** (as the tally itself says) and includes conditional entries; "m_c calibration" is superseded by SF-3's
-single m_e calibration; OSF is no longer the deposit route; the paper list below predates the GR series (GR-1, GR-2 and
-the eight GR-1a–h companions), SF-6 (electromagnetism, shipped 21 June), TP-1, the DM and EU lanes' later papers and the
-spin papers' hold.
+**Corrections to the 17 May overview (recorded when it was replaced, 4336–4337):** its "108 zero-parameter from 9 axioms
+and 2 calibrations (m_e, m_c)" is replaced by the tally read at its own breakdown (below); m_c is no longer a calibration
+(SF-3); SF-4's "v4.4" was pre-ship numbering (current v3.4); r_p, μ_p and the SS-5/SS-9 nuclear rows are held; α_s(m_H)
+is calibrated in effect; SS-7 uses the measured B(⁴He); "67 theorems, 7.4 per axiom" is withdrawn; OSF is no longer the
+deposit route. **Erratum on stage 1 (4336):** it said the tally itself states "2 calibrations"; it does not — the
+"2 calibrations" wording was the May overview's.
 
 ---
 
@@ -69,181 +68,133 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 
 ---
 
-## Registered Papers (as of 17 May 2026 — stage-2 rewrite owed; 123 papers are now in the deposit queue)
+## Papers (29 September 2026)
 
-| ID | Title | Key Result | Version |
-|----|-------|------------|---------|
-| SS-1 | Strong Sector from 600-Cell | SU(3) exact; β₀ = 7; 9 theorems | v2 |
-| SM-1 | Binding Mechanisms and Cage Stability | Tetrahedral cage; δ = 1/3; SSV₀ | v6 |
-| SM-2 | Mass Generation from Geometric Hierarchies | Semi-empirical framework; k ≈ 0.0185 | v30 |
-| SM-3 | K3 Spectral Theorem and Koide Formula | K = 2/3 exact from K₃ eigenvalues (conditional on Layer B) | v6 |
-| SM-4 | Charged Lepton Masses from K3 | 11 ppm; θ cannot come from K3+SSV alone | v5 |
-| SM-5 | Tribimaximal Neutrino Mixing | U_PMNS = U_TBM from K₃ eigenvectors (op:nu_id RESOLVED cross-sector via SF-4 v4.0) | v1 |
-| SR-1 | Mechanistic Derivation of Relativistic Effects | Lorentz factor from Voronoi compression; k derived | v18 |
-| SR-2 | The Spin-Bit Axiom / Derived Einstein Quadrupole Formula | A3′ spin-bit axiom (necessity proof: 3 closed assaults); λ = 16πG/c⁴ at zero new parameters; THEO-SR-EIN-1..4; closes op:einstein (a) | v1.0 |
-| SM-6 | Charged Lepton Mass Spectrum | sin²θ_W = 3/(8φ); Koide phase derived; μ 0.18%, τ 0.15% | v3 |
-| SM-7 | Heavy Quark Mass Spectrum + Strong Coupling | α_s = 5/(8φ); quark Koide phase; m_b 1.4%, m_t 1.7% | v2.2 |
-| SM-8 | Quark Generation Structure from 600-Cell Distance Shells | Zero-param quark masses; 3-generation theorem; RMS 2.1% | v4.1 |
-| SM-9 | The Quark Mass Scaling Exponent | V^(7/3) derivation; Symmetry Degeneracy Theorem | v2.2 |
-| SM-10 | First-Principles Quark Mass from FEM Chain Network | Cascade mechanism; two-regime physics; organised DP density | v0.1 |
-| SS-2 | Lattice-Scale Grounding and Nucleon Structure | l_unit = 0.589 fm; r_proton = 0.883 fm (+5%, 0 params) | v1.0 |
-| SS-3 | Uniqueness of SU(3) from Tetrahedral Cage | SU(3) unique; 4+4 physical mode basis; det(M) = 2/√3 | v1.3 |
-| SS-4 | String Tension from 600-Cell Face-Mode Multiplicity | σ = M₀z²/(φ l_edge) = 926.5 MeV/fm (+1.8% vs Cornell) | v0.1 |
-| SS-5 | Light-Nuclei Binding Energies from Open-Vertex Cascade | $B_d, B_{^3H}, B_{^3He}, B_{^4He}$ all $\leq 5.3\%$ zero-param; $^5$He/$^5$Li/$^8$Be unbound $\checkmark$ | v6 |
-| SS-6 | Deuteron Observables Beyond Binding (scoping) | Rigid-bipyramid intrinsic $Q_d$ oblate (reveals $Q_d$ orbital-dominated); zero-range $a_{np}=1/\kappa=4.32$ fm from $B_d$ alone (-20%) | v0.2 |
-| SS-7 | Alpha-Cluster Regime and 3N−6 Edge Formula | 12 concurrent zero-param alpha-chain bindings at $N_\alpha\in[3,14]$ (¹²C→⁵⁶Ni), RMS 0.80%; retires OPEN-SS-22 (first retired open problem) | v1.2 |
-| SS-8 | Interstitial-Neutron Binding and the 2E/V Scaling Law on the Alpha-Polytope | 42 conditional zero-parameter predictions ($N_\text{ex}=2$ primary 12 + $N_\text{ex}\in[3,8]$ secondary 30); two sub-1% agreements (²⁶Mg octahedron, ⁴²Ca gyroelongated square bipyramid); D1–D3 conditional theorems; opens OPEN-SS-26/27/28; partially resolves OPEN-SS-23 | v1.0 |
-| **SS-9** | **Conditional Derivation of Simplicial Alpha-Polytope Connectivity from CPP Lattice Geometry** | **Five-clause conditional theorem THEO-SS-16 closing OPEN-SS-24 on hypothesis stack C1$'$+C2+C3+C5+C6+C7+C8+rigid packing+3D-non-degeneracy; Steinitz 1922 + FvdW 1947 bridge; PRED-C-75/76/77 (⁸⁴Mo/⁸⁸Ru/⁹²Pd) verified at 0.05%/0.07%/0.13%; opens OPEN-SS-29/30/31/33/37** | **v1.0** |
+**Per-paper detail lives in two generated files, not here:** `paper_catalog.md` (title, version, last touch; rebuilt by
+`code/rebuild_paper_catalog.py`, 128 live papers) and `osf_deposit_queue.md` / `osf_deposit_manifest.json` (the 123
+deposit candidates, waves, holds; rebuilt by `code/build_osf_queue.py`). The file names still say "osf"; the deposit
+route is the CERN repository (Zenodo), done by Isak, who builds the PDFs (CONV-012). **No paper is approved for
+deposit** (APPROVED column empty for all 123). An earlier OSF project registration exists (DOI 10.17605/OSF.IO/JXE8D).
 
-### Flagship Papers (SF-Line)
-
-| ID | Title | Key Result | Version |
-|----|-------|------------|---------|
-| **SF-4** | **Neutrino Sector Unification from 600-Cell Geometry — Eight Parameters from One Calibration** | **8 PMNS+mass parameters from m_e; 7 of 8 at zero parameters; TBM zeroth order from SM-5; normal hierarchy forced; $\sigma_\nu = z^{-10} \approx 1.62 \times 10^{-11}$ at 2% match (Picture A axiomatic closure at v2.0; α-exponent reduction $V^{7/3} \to V^2$ at v3.0 via THEO-SF-4-4; first cross-sector closure in CPP with SM-5 op:nu_id RESOLVED via THEO-SF-4-5 Composite K3-Cage-Shell Coupling Theorem at v4.0; archival polish v4.4)** | **v4.4 (archival-deposit-quality)** |
-| **SF-2** | **Electroweak Cage-Boson Unification from 600-Cell Geometry: W±, W⁰, Z, and H as a Single Geometric Family** | **4 cage-shape uniqueness theorems (W bracelet 1200-orbit + Z icosahedron + H dodecahedron + mass-gap theorem); 6-proposition W⁰ catalyst framework; $\sin^2\theta_W = 3/(8\phi) \approx 0.23121$; $m_Z/m_W = 1.140$ vs 1.134 to 0.54%; $m_{W^0} = m_{W^\pm}$ mass-degeneracy structural prediction; Yang-Mills EFT continuum-limit recovery at proof-outline level; 6 OPEN-FP-SF-2-* problems** | **v1.01 (post-SHIP micro-fix)** |
-| **Capotauro** | **Substrate-Vacuum Chirality as Primitive Feature: Composite Wigner-Eckart Closure of the K3-Doublet Chirality Matrix Element** | **THEO-CAP-1 Composite Capotauro Wigner-Eckart Theorem: $\|M\| = \chi/6 = \phi^{-3}/6 \approx 0.0394$ on K3-doublet; closes OPEN-SM-4 sub-claim (c); primary empirical prediction $\Delta p_{LR} \approx 0.0394$ validated within 2% of leptogenesis-inferred anchor; conditional on 10 FIs (FI-C-1 through FI-C-10) + 4 CPP axioms (A1+A3+A4+A7); sub-claim (b) Reading C closure trajectory in progress (Q1+Q2 closed at Layer 3; Q1'+Q1'.A resolved at Layer 2 toward vertex-aligned per Findings C-W35/36/37; 7-17 sessions estimated to full closure)** | **v1.0** |
-| **SF-3** | **The Quark Sector from 600-Cell Geometry: Masses, Strong Coupling, Koide Phase, and Generation Count from a Single Calibration** | **Synthesis/reframing (no new derivation) of SM-7/8/9/10 + SS-1/2 + SM-6: heavy-quark masses $M_q = m_e(z/\phi)V^{7/3}$ RMS 2.1% on a single $m_e$ calibration ($m_c$ demoted from calibration to derived); $\alpha_s = 5/(8\phi)$ with exact complementarity $\sin^2\theta_W+\alpha_s=1/\phi$; quark Koide phase 124.04° (0.05%); three generations selected within the SM-8 antipodal-identification model (no fourth quark). Proposition 5.1 phase–mass bookkeeping separation (NOT a theorem); CKM inherited-open as OPEN-FP-3-CKM. Swarm tally UNCHANGED at 108 (inherited predictions)** | **v1.0** |
-
-### Phenomena Series (Cosmology / Early Universe)
-
-| ID | Title | Key Result | Version |
-|----|-------|------------|---------|
-| **EU-1** | **The Primordial Scalar Spectral Index from Substrate Inflation** | **$n_s = 1 - 2/N_* \approx 0.9649$ + running $\alpha_s \approx -0.0006$ from A1 indistinguishability ($\mu \propto \ln\bar n$) + ZBW-bath symmetric constant-rate ZRP (+$H$-theorem) + $\delta N$; zero-new-axiom, framework-conditional; first cosmology / early-universe-sector paper; 3/3 panel SHIP; PRED-C-96 ($n_s$) + PRED-O-34 ($\alpha_s$); NO THEO; open residual OPEN-EU-1** | **v1.0** |
-| **TP-1** | **The Truncated Photon and the Lattice Regularization of Shutter-Induced Photon Creation** | **The Rukan–Gulla–Skaar truncated photon (PRL 2026) embedded in CPP: compatibility (QM-4 partial trace / QM-5 600-cell modes / driven-boundary dynamical Casimir) + foundational regularization. Logarithmic divergence class derived from the RGS kernel; cutoff grounded as the intrinsic 600-cell band top $\omega_{\max} = \sqrt{12}/t_P = 2\sqrt3/t_P$ ($\lambda_{\max} = z = 12$), ceiling $\approx 64.5\,C$. First quantum-optics-sector paper; 4/4 panel SHIP; NO THEO, NO PRED (framework-conditional, swarm tally unchanged); PROP-TP-1-1; open residual OPEN-TP-1** | **v1.0** |
+| Series (folder) | Deposit candidates | Lead papers and current versions | Deposit status |
+|---|---|---|---|
+| Flagships (`flagship_papers/`) | 9 | SF-1 v1.3 (leptons), SF-2 v1.08 (electroweak; v1.09 owed), SF-3 v1.6 (quarks), SF-4 v3.4 (neutrinos — the "v4.4" of May was pre-ship numbering), SF-5 v1.04 (strong), SF-6 v1.6 (electromagnetism), SF-8 v0.5 (emergent Coulomb), SF-7 v0.11 | SF-7 **never deposit** (placeholder) |
+| Strong (`series_strong/`) | 15 | SS-1 (+1a–1f), SS-3 v1.7, SS-4 v0.4, SS-5 v1.2, SS-7 v1.6, SS-8 v1.0, SS-9 v1.3 | **SS-2, SS-5, SS-6, SS-9 held pending critique** (the 1.07/0.62 fm frame superseded by founder rulings 4275/4276; TODO-4264-PASSTHROUGH) |
+| Standard Model (`series_standard_model/`) | 14 | SM-1…SM-12, SM-TN-2 (SM-8 v4.1, SM-9 v2.4, SM-7 v2.5) | SM-3's all-tetrahedral-lepton premise vs founder 4212 open (TODO-4212-CAGETABLE) |
+| Gravitation (`series_gravitation/`) | 12 | GR-1 v1.0.2, GR-1a–1j, GR-2 v2.11 (echo falsifier) | **wait for OPEN-GR-FE-1** (founder's ruling OPEN-ORG-023); GR-1d carries GR-RCORE-1's HALT finding |
+| Relativity (`series_relativity/`) | 7 | SR-1 v1.2, SR-2 v1.5, companions c01–c05 (c03 v2.2, c04 v2.3) | publishable with theorem debts stated (roadmap item 6) |
+| Quantum mechanics (`series_quantum_mechanics/`) | 9 | QM-1…QM-6 (v3.x), SPIN-1/2/3 | **SPIN-1, SPIN-2 never deposit until revised** (ħ/2 taken as input; TODO-4289-SPINREV) |
+| Electroweak (`series_electroweak/`) | 5 | EW-1…EW-5 (v1.1) | — |
+| Foundations (`series_foundations/`) | 8 | SD-1…SD-5, TN-SR-1, DP-sea, silly-putty note | SD-5 **never deposit** (unfinished); TN-SR-1 only as the labelled conjecture it is |
+| Phenomena (`series_phenomena/`) | 5 | EU-1 v1.6, TP-1 v1.4, DM-1 v1.8, DM-2 v1.0, DM-3 v1.2 | **DM-1, DM-3 never deposit** (record, not release); DM-2 not approved |
+| Umbrella / chirality arc (`series_umbrella/`) | 39 | Capotauro v2.3, Chirality Continuum v1.0, F.1 Dynamical Substrate Law v1.0, hardened theorems, THEO-CHIR-* notes | chirality is a **primitive** (roadmap item 8) |
 
 ---
 
-## Strongest Quantitative Results
+## Quantitative Results — current status (audited 29 September 2026)
 
-| Result | Formula | Predicted | PDG | Error | Params | Paper |
-|--------|---------|-----------|-----|-------|--------|-------|
-| Koide ratio | K₃ eigenvalue ratio | 2/3 | 0.6667 | 11 ppm | 0 | SM-3 |
-| Weinberg angle | 3/(8φ) | 0.2318 | 0.2312 | 0.24% | 0 | SM-6 |
-| Lepton Koide phase | -(2/3)(1+3/(104φ)) | 132.731° | 132.732° | 0.003% | 0 | SM-6 |
-| Muon mass | Koide + m_e calibration | 105.47 MeV | 105.66 | 0.18% | 0 shape | SM-6 |
-| Tau mass | Koide + m_e calibration | 1774.1 MeV | 1776.9 | 0.15% | 0 shape | SM-6 |
-| Strong coupling | 5/(8φ) | 0.386 | ~0.38 | ~1% | 0 | SM-7 |
-| Coupling ratio | F/E | 5/3 | — | topological | 0 | SM-7 |
-| Coupling sum | 3/(8φ)+5/(8φ) | 1/φ | — | exact | 0 | SM-7 |
-| Quark Koide phase | -(2/3)(1-27/(104φ)) | 124.035° | 124.094° | 0.048% | 0 | SM-7 |
-| Bottom mass | Koide + m_c calibration | 4.24 GeV | 4.18 | 1.4% | 0 shape | SM-7 |
-| Top mass | Koide + m_c calibration | 169.8 GeV | 172.7 | 1.7% | 0 shape | SM-7 |
-| m_s (zero-param) | m_e(z/φ)V^(7/3) | 96.3 MeV | 93.4 | +3.1% | 0 | SM-8 |
-| m_c (zero-param) | m_e(z/φ)V^(7/3) | 1,249 MeV | 1,270 | −1.6% | 0 | SM-8 |
-| m_b (zero-param) | m_e(z/φ)V^(7/3) | 4,115 MeV | 4,180 | −1.6% | 0 | SM-8 |
-| m_t (zero-param) | m_e(z/φ)V^(7/3)×16 | 169,571 MeV | 172,760 | −1.8% | 0 | SM-8 |
-| r_proton | Distorted tet + ZBW smearing | 0.883 fm | 0.841 | +5.0% | 0 | SS-2 |
-| μ_proton | Constituent quark model | 2.789 μ_N | 2.793 | −0.1% | 0 | SS-2 |
-| α_s(m_H) | Running from α_geom=1/√5 | 0.1132 | 0.1130 | +0.2% | 0 | SS-2 |
-| σ (string tension) | M₀z²/(φ l_edge) | 926.5 MeV/fm | ~910 | +1.8% | 0 | SS-4 |
-| B_d (deuteron binding) | M₀/φ cascade A=2 | 2.342 MeV | 2.22457 | +5.3% | 0 | SS-5 |
-| B(³H) (triton) | Cascade A=3, 0 Coul, 1 Pauli | 8.474 MeV | 8.482 | −0.09% | 0 | SS-5 |
-| B(³He) | Cascade A=3, 1 Coul, 1 Pauli | 7.642 MeV | 7.718 | −1.0% | 0 | SS-5 |
-| B(⁴He) | Cascade A=4, 1 Coul, 2 Pauli, +closure | 27.90 MeV | 28.30 | −1.4% | 0 | SS-5 |
-| ⁵He, ⁵Li, ⁸Be unbound | Closed-polytope gap A=5,8 | Unbound | Unbound ✓ | qual. exact | 0 | SS-5 |
-| Diproton / dineutron unbound | K₃ charge-misalignment | Unbound | Unbound | exact (qual.) | 0 | SS-5 |
-| Alpha-chain binding (12 nuclei, ¹²C→⁵⁶Ni) | $N_\alpha B_\alpha + (3N_\alpha{-}6) B_\text{pair}$ | All within ±1.5% | AME 2020 | RMS 0.80% | 0 | SS-7 |
-| ⁸Be near-threshold unbound | 1-edge Coulomb cancellation | 92 keV unbound (inverted → $R_{\alpha\alpha}=2.37$ fm) | 91.84 keV | consistency | 0 | SS-7 |
-| Alpha-polytope edge count | Euler + triangle constraint | $E = 3N_\alpha − 6$ | — | theorem | 0 | SS-7 |
-| Interstitial-n binding $\Delta_1$ ²⁶Mg ($N_\alpha=6$ octahedron) | $(6-12/N_\alpha) B_\text{pair}$, conditional on C1–C4 + D1–D3 | 9.37 MeV | 9.39 MeV | **−0.2%** | 0 | SS-8 |
-| Interstitial-n binding $\Delta_1$ ⁴²Ca ($N_\alpha=10$ gyroelong. sq. bipyramid) | $(6-12/N_\alpha) B_\text{pair}$, conditional on C1–C4 + D1–D3 | 11.24 MeV | 11.36 MeV | **−1.0%** | 0 | SS-8 |
-| Interstitial-n binding (12 alpha-chain rows at $N_\text{ex}=2$) | $(6-12/N_\alpha) B_\text{pair}$, conditional on C1–C4 + D1–D3 | All within 15% (11 of 12) | AME 2020 | bulk-regime band | 0 | SS-8 |
-| Average vertex degree (Euler-degree theorem) | Combinatorial corollary of THEO-SS-12 | $2E/V = 6 - 12/V$ | — | theorem | 0 | SS-8 |
-| Forward-predicted ⁸⁴Mo binding (SS-9) | satellite-regime formula | 698.92 MeV | 699.27 MeV (Kimura+2025 first direct meas.) | **0.05%** | 0 | SS-9 (PRED-C-75) |
-| Forward-predicted ⁸⁸Ru binding (SS-9) | satellite-regime formula | 729.56 MeV | 730.10 MeV (Kimura+2025 first direct meas.) | **0.07%** | 0 | SS-9 (PRED-C-76) |
-| Forward-predicted ⁹²Pd binding (SS-9) | satellite-regime formula | 760.20 MeV | 761.15 MeV (AME 2020) | 0.13% | 0 | SS-9 (PRED-C-77) |
-| Neutrino mass $m_{\nu_1}$ | SF-4 cage-shell mass formula at V=4 | 0.98 meV | (m_1 → 0 approx.) | structural | 0 | SF-4 v4.4 |
-| Neutrino mass $m_{\nu_2}$ | SF-4 cage-shell mass formula at V=12 | 8.81 meV | 8.66 meV (√Δm²_21) | 1.7% | 0 | SF-4 v4.4 |
-| Neutrino mass $m_{\nu_3}$ | SF-4 cage-shell mass formula at V=30 | 55.1 meV | 50.9 meV (√\|Δm²_31\|) | 8.3% | 0 | SF-4 v4.4 |
-| $\Sigma m_\nu$ (cosmological sum) | SF-4 mass formula sum | 64.9 meV | ≤72 meV (DESI/Planck) | within bound | 0 | SF-4 v4.4 |
-| Neutrino suppression $\sigma_\nu$ | $z^{-2 d_\text{eff}} = z^{-10}$ at $d_\text{eff}=5$ (Picture A) | $1.62 \times 10^{-11}$ | $1.59 \times 10^{-11}$ | 2.0% | 0 | SF-4 v4.4 |
-| PMNS angle $\sin^2\theta_{12}$ | TBM zeroth order | 1/3 | 0.307 | 8% (NuFIT 6.0) | 0 | SF-4 v4.4 |
-| PMNS angle $\sin^2\theta_{23}$ | TBM zeroth order | 1/2 | 0.572 | 13% (NuFIT 6.0) | 0 | SF-4 v4.4 |
-| Mass-ratio $m_Z/m_W$ (SF-2 tree-level) | $1/\cos\theta_W$ at $\sin^2\theta_W = 3/(8\phi)$ | 1.140 | 1.134 | **0.54%** | 0 | SF-2 v1.0 |
-| Mass-degeneracy $m_{W^0} - m_{W^\pm}$ (SF-2 structural) | PROP-SF-2-3 W⁰ catalyst framework | $\sim 1$ MeV | confirmed via $\Delta T \approx 0$ across sensitivity grid | parametric | 0 | SF-2 v1.0 |
-| Capotauro chirality matrix element $\|M\|$ | $\chi/6 = \phi^{-3}/6$ via THEO-CAP-1 | 0.0394 | $\sim 0.04$ (leptogenesis-inferred $\Delta p_{LR}$) | 2.0% | 0 | Capotauro v1.0 |
+Rewritten from the 17 May table after a row-by-row audit against `predictions.md`, `todolist.md`, the sector files and
+the papers. **Basis** says what each row rests on. "Zero-param" means no input beyond the axioms and the 600-cell;
+"1 cal (m_e)" means the electron mass sets the scale. Where the registry and this table disagree, the registry wins and
+this table is the thing to fix.
 
-**Net scorecard:** **108 zero-parameter empirical correspondences** from 9 axioms and 2 calibrations, per `predictions.md` Cumulative Swarm Tally (20 May 2026; chirality continuum v1.0 SHIP elevates structural rigor of substrate-handle predictions via Layer 4 EFT bridge but does not add new programme-level swarm entries per convention). Of the quantitative numerical (D-N) entries, a substantial fraction remain conditional on paper-level structural-hypothesis stacks (C1–C4 + C1$'$ through C8 across the SS-5→SS-7→SS-8→SS-9 cascade; D1–D3 in SS-8; SF-4 picture-A inheritance from CPP axioms; SF-2 6 OPEN-FP-SF-2-* problems; Capotauro 10 FIs at v1.0 / 12 FIs at v2.0 with FI-C-9 grounded at sharper position via FI-C-RC-1+2; chirality continuum 15 FIs FI-CHIR-CONT-1 through -15). Closing OPEN-SS-29/30/33/37 (SS-9 sub-conditions C5/C6/C7/C8) would convert the SS-9 conditional theorem to unconditional; closing **Q1$'$+Q1$'$.A Layer 3 promotion of $\hat{n}$ + $\|\chi\| = \varphi^{-3}$** (the dynamical-substrate-law gate, defining next programme gate identified by all three external reviewers at chirality continuum v1.0 SHIP) would promote FI-CHIR-CONT-1 + FI-CHIR-CONT-2 from Layer 2 to Layer 1 and contract the framework's foundational input stack by two. SM requires ~19 parameters for the same SM-side quantities; CPP requires 2 (m_e, m_c). **Theorems:Axioms ratio = 67:9 ≈ 7.4 theorems per axiom**.
+| Result | Value | Observed | Residual | Basis | Source |
+|---|---|---|---|---|---|
+| Weinberg angle 3/(8φ) | 0.23176 | 0.23122 (MS-bar) | +0.24% | zero-param, as claimed by SM-6 | SM-6, PRED-C-67 |
+| Strong coupling 5/(8φ) | 0.386 | ~0.38 (no fixed scale) | ~1% | zero-param; scale of the comparison not fixed | SM-7 |
+| α_s / sin²θ_W = F/E; sum | 5/3; 1/φ | — | exact | zero-param (topological) | SM-7 |
+| Koide ratio K | 2/3 | 0.666661 | 11 ppm | **conditional on Layer B** (OPEN-SS-16) | SM-3 |
+| Lepton Koide phase | 132.731° | 132.732° | 0.003% | zero-param given K = 2/3 | SM-6 |
+| m_μ, m_τ | 105.47, 1774.1 MeV | 105.66, 1776.9 | 0.18%, 0.15% | 1 cal (m_e); inherits K's Layer-B condition | SM-6 |
+| Quark Koide phase | 124.035° | 124.094° | 0.048% | SF-3 Prop. 5.1 (a proposition, not a theorem) | SM-7, SF-3 |
+| m_s, m_c, m_b, m_t | 96.3, 1249, 4115, 169 571 MeV | 93.4, 1270, 4180, 172 760 | RMS 2.1% | 1 cal (m_e) + A8′; m_t carries z·C_F = 16 | SM-8/9, SF-3 |
+| m_b, m_t by Koide + m_c | 4.24, 169.8 GeV | — | 1.4%, 1.7% | **demoted**: non-canonical two-calibration route (SF-3) | SM-7 |
+| m_Z/m_W | 1.140 | 1.134 | 0.54% | zero-param ratio (scheme mismatch MS-bar vs on-shell not yet addressed) | SF-2 |
+| m_W, m_Z, m_H | observed values | — | — | **calibrated** (η_W, η_Z, η_H) | SF-2 |
+| Neutrinos: m₂, m₃, Σm_ν, σ_ν | 8.81, 55.1, 64.9 meV; 1.62e-11 | 8.66, 50.9, ≤72 meV; 1.59e-11 | 1.7%, 8.3%, in bound, 2.0% | 1 cal (m_e); conditional theorem level | SF-4 v3.4 |
+| PMNS sin²θ₁₂, sin²θ₂₃ | 1/3, 1/2 | 0.307, 0.572 | 8%, 13% | zero-param TBM zeroth order | SM-5, SF-4 |
+| Dirac neutrinos, no 0νββ | — | untested | — | forward prediction PRED-O-42 | 4219 |
+| Chirality matrix element | χ/6 = 0.0393 | ~0.04 (leptogenesis-inferred) | ~1.6% | magnitude only, on FI-C-1…10; the hand is a **primitive** | Capotauro |
+| String tension σ | 926.5 MeV/fm | ~910 | +1.8% | **conditional**; registries cite CONJ-SS-2-1, whose formula gives 243 MeV/fm — the link is inconsistent (TODO-4337-SIGMALINK) | SS-4, PRED-C-31 |
+| r_p | 0.883 fm | 0.841 | +5.0% | **held**: SS-2 frame superseded; with one quark mass no frame reaches r_p | SS-2, TODO-4284-RPFLOOR |
+| μ_p | 2.789 μ_N | 2.793 | −0.1% | **held**: rests on m_q = m_p/3, assigned not derived | SS-2 |
+| g_A | 1.242–1.282 | 1.2754 | brackets it | **not pinned** (4284); zero-param exchange-off value 1.312 | EW lane 4234–4284 |
+| α_s(m_H) | 0.1132 | 0.1130 | +0.2% | **calibrated in effect**: SS-2 runs from a matched α_s(m_Z) (A11) | SS-2 |
+| B_d, B(³H), B(³He), B(⁴He) | 2.342, 8.474, 7.642, 27.90 MeV | 2.225, 8.482, 7.718, 28.30 | +5.3 … −1.4% | **conditional** (C-stack); SS-5 **held** | SS-5 |
+| ⁵He, ⁵Li, ⁸Be, ²He, 2n unbound | unbound | unbound | qualitative | conditional; SS-5 held | SS-5 |
+| Alpha-chain, 12 nuclei ¹²C→⁵⁶Ni | RMS 0.80% | AME 2020 | — | **conditional** on C1–C4, and **uses the measured B(⁴He)** as input (the paper says so; the LO-CPP variant uses 27.904) | SS-7 |
+| Interstitial-n Δ₁ (²⁶Mg, ⁴²Ca) | 9.37, 11.24 MeV | 9.39, 11.36 | −0.2%, −1.0% | conditional on C1–C4 + D1–D3 | SS-8 |
+| ⁸⁴Mo, ⁸⁸Ru, ⁹²Pd | 698.92, 729.56, 760.20 MeV | 699.27, 730.10, 761.15 | 0.05–0.13% | **calibrated** (B_slip from ⁵⁶Ni, measured B_α); SS-9 **held** | SS-9 |
+| n_s | 0.9654 | 0.9649 ± 0.0042 | 0.12σ | framework-conditional, leading order (OPEN-EU-1) | EU-1, PRED-C-96 |
+| Classical tests of gravity | GR values (43″/cy, 1.75″, …) | GR values | — | W2-conditional; field equations not derived | GR-1i v0.1 |
+| Coulomb's law from the lattice | ±0.4% pointwise at R = 4 | Ewald | — | cellular-automaton measurement; scalar sector only, no coupling constant predicted | SF-8 v0.5 |
+| α | 1/137.036 | — | — | **calibrated relation** α = PSR/(2L), L ≈ 68.5 PSR (CAL-ZBW1-SWING); passes local position invariance; running has the right sign, law owed | 4322–4331 |
+
+**Scorecard.** `predictions.md` headlines **"108 zero-parameter empirical correspondences from a 9-axiom stack"** (tally as of 6 June). Read at its own breakdown: 23 unconditional quantitative, **60 conditional** quantitative, the rest structural or qualitative; the mass rows use the m_e calibration and the SS-9 rows a calibrated B_slip, so "zero-parameter" does not hold for every entry. The tally is also not yet adjusted for the holds above (SS-2, SS-5, SS-9) or for SS-7's measured input (TODO-4337-TALLYHOLDS). **Theorems:** 82 theorems + 9 corollaries (+7 propositions, 1 lemma) in `theorem-registry.md` (summary as of Patch 2407); many are conditional, and a theorem count is not a measure of evidence. The May "67 : 9 ≈ 7.4" ratio is withdrawn.
 
 ---
 
-## The Axiom Set (Post–SS-3)
+## The Axiom Set (as registered, `axiom-registry.md`)
 
 | ID | Name | Statement (short) |
 |----|------|--------------------|
-| A1 | CP existence | Conscious Points with polarity and position |
-| A2 | 600-cell topology | CPs on 600-cell lattice (V=120, E=720, F=1200, z=12) |
-| A3 | DI-bit propagation | Complex amplitudes propagate at c = l_P/t_P |
-| A4 | Nexus | Global consistency constraint at each Absolute Moment |
+| A1′ | CP existence (three types) | Grid Points (fixed lattice sites that compute and broadcast), DI-bits, and charged Conscious Points |
+| A2 | 600-cell topology | the 600-cell (V=120, E=720, F=1200, z=12); the cage need not be exactly regular — the deficit is strain (founder, 4061) |
+| A3′ | Completed Broadcast (LSP′) | each GP broadcasts its Lattice State Packet to its PSR shell at c every Absolute Moment; AP-4 (fixed-N emission) and AP-5 (saturation protocol) are ratified clauses |
+| A4 | Nexus | a global consistency constraint at each Absolute Moment |
 | A5 | Propagation efficiency | η = l_edge/R_circ = 1/φ |
-| A6' | Walk-Dimension Gauge Principle | Walk dimensionality determines gauge structure; z=12 post-gap multiplier |
-| A10 | Colour attraction | Colour self-energy is negative (attractive binding) |
-| A8' | Cage-Volume Scaling | M ∝ m_e(z/φ)V^(7/3); pair counting × cage dimension |
-| A11 | Lattice-Scale Grounding | l_unit = ℏc/Λ_QCD = 0.589 fm from α_geom = 1/√5 running |
+| A6′ | Walk-Dimension Gauge Principle | walk dimensionality sets the gauge structure; z = 12 post-gap multiplier |
+| A10 | Colour attraction | colour self-energy is negative |
+| A8′ | Cage-Volume Scaling | M ∝ m_e(z/φ)V^(7/3) |
+| A11 | Lattice-Scale Grounding | l_unit = ħc/Λ_QCD = 0.589 fm, matched to α_s(m_Z) running |
 
-**Potential reductions:** A5→A2, A10→A2+A6'. If both succeed: 9→7 axioms.
+**Calibrations and identifications beside the axioms:** m_e (scale); η_W, η_Z, η_H (boson masses); CAL-ZBW1-SWING (α);
+Λ (dark energy); ħ identified (c03); spin ħ/2 input. **Pending registration:** the founder's 4288 ruling that a CP has no
+mass of its own, only DP-arc inertia (TODO-4316-CPMASSAXIOM). **Potential reductions:** A5 → A2, A10 → A2 + A6′.
 
 ---
 
 ## Key Formulas (reference card)
 
 ```
-sin²θ_W = η × Tr(A²)/N = (1/φ)(1440/3840) = 3/(8φ) ≈ 0.2318
+sin²θ_W = η × Tr(A²)/N = (1/φ)(1440/3840) = 3/(8φ) ≈ 0.23176
 α_s     = η × [Tr(A³)/3]/N = (1/φ)(2400/3840) = 5/(8φ) ≈ 0.3863
+α_s/sin²θ_W = F/E = 1200/720 = 5/3 ;   sin²θ_W + α_s = 1/φ ≈ 0.618
 
-α_s/sin²θ_W = F/E = 1200/720 = 5/3
-sin²θ_W + α_s = 1/φ ≈ 0.618
+ε_lepton = +2sin²θ_W/(z+1) = +3/(52φ) ;   ε_quark = (2sin²θ_W − 12α_s)/(z+1) = −27/(52φ)
+cos θ_lepton = −(2/3)(1 + 3/(104φ)) → 132.731° ;   cos θ_quark = −(2/3)(1 − 27/(104φ)) → 124.035°
+K = λ₊/(λ₊ + |λ₋|) = 2/3   [K₃ eigenvalues +2, −1, −1; conditional on Layer B]
+N = Tr(A²) + Tr(A³)/3 = 3840 ;  φ = (1+√5)/2 ;  z = 12
 
-ε_lepton = +2sin²θ_W/(z+1) = +3/(52φ) ≈ +0.0357
-ε_quark  = (2sin²θ_W - 12α_s)/(z+1) = -27/(52φ) ≈ -0.3209
+Quark masses (SM-8 v4.1 / SM-9; single m_e calibration per SF-3):
+  M_q = m_e (z/φ) V^(7/3), q = s, c, b ;  M_t = m_e (z/φ) V_t^(7/3) × z·C_F (= 16) ;  M₀ = m_e z/φ = 3.790 MeV
 
-cos θ_lepton = -(2/3)(1 + 3/(104φ))     → θ = 132.731°
-cos θ_quark  = -(2/3)(1 - 27/(104φ))    → θ = 124.035°
+Nuclear (conditional):  B_pair = M₀/φ = 2.342 MeV ;  alpha-chain E = 3N_α − 6 ;  2E/V = 6 − 12/V
+String tension (SS-4, conditional): σ = M₀z²/(φ l_edge) = 926.5 MeV/fm
+  [SS-2's CONJ-SS-2-1, σ = M₀zπ/(φ l_edge) = 243 MeV/fm, is a different formula; see TODO-4337-SIGMALINK]
 
-K = λ₊/(λ₊ + |λ₋|) = 2/(2+1) = 2/3     [K₃ eigenvalues: +2, -1, -1]
-
-N = Tr(A²) + Tr(A³)/3 = 1440 + 2400 = 3840
-φ = (1+√5)/2 ≈ 1.6180, z = 12, z+1 = 13
-
-Zero-Parameter Quark Mass Formula (SM-8 v4.1 / SM-9 v2.2):
-  M_q = m_e (z/φ) V^(7/3)              q = s, c, b
-  M_t = m_e (z/φ) V_t^(7/3) × z·C_F   q = t
-  M₀ = m_e z/φ = 3.790 MeV, V ∈ {4, 12, 20, 30}
-  z × C_F = 16 (post-gap multiplier), RMS = 2.1%
-
-Lattice-Scale Grounding (SS-2):
-  l_unit = ℏc/Λ_QCD = 0.589 fm
-  σ = M₀zπ/(φ l_edge) = 243 MeV/fm [CONJ]
-  r_p = 0.883 fm (distorted tet + ZBW, ε = 1.94)
-
-SU(3) Uniqueness (SS-3):
-  dim(traceless Hermitian 3×3) = 8 = dim(su(3))
-  Gell-Mann orthogonality: Tr(λ^a λ^b) = 2δ^{ab} → analytic independence
-  Physical basis: 4 linear bond modes + 4 junction modes = 8
-  Change-of-basis: det(M) = 2/√3; T³ = ½(L₂−L₄); T⁸ = (√3/2)(L₂+L₄)
-  OPEN-SS-11 → THEO-SS-10
+Fine-structure constant (calibrated relation, 4330):  α = PSR/(2L),  L ≈ 68.5 PSR (the Planck ZBW swing)
+  running requirement (4331): dL/d ln r = (PSR/3π) Σ_f N_c Q_f²  inside each species' reduced Compton length
+Unit of action (founder 4320/4325; c04 v2.3): the Planck ZBW half-swing carries ħ/2 over many Moments;
+  one Compton radian = m_P/m Absolute Moments
+Spectral index (EU-1): n_s = 1 − 2/N_* ≈ 0.9654 (one-sided)
 ```
 
 ---
 
-## Derivation Chains
+## Derivation Chains (with their present status)
 
-### SM-6 (Leptons): 600-cell → K₃ → K=2/3 → traces → 3/8 → η=1/φ → sin²θ_W=3/(8φ) → ε=3/(52φ) → θ=132.73° → masses
-
-### SM-7 (Quarks): Same chain + α_s=5/(8φ) from face modes + 12-bond colour coupling → ε=-27/(52φ) → θ=124.04° → masses
-
-### SS-1 (Strong): K₃ face permutations → 8 Gell-Mann generators → SU(3) exact → β₀=7
-### SS-3 (Strong): SU(3) is the UNIQUE algebra of 3 colour vertices (THEO-SS-10). 4+4 physical mode basis identified.
-### SS-9 (Polytope): C1$'$+C2 + C3+C5 (energy min) → maximum-edge selection → Lemma A + Lemma C → Lemma B$'$ + Steinitz 1922 → FvdW 1947 classification → THEO-SS-16 five-clause conditional theorem closing OPEN-SS-24
-
-### SF-4 (Neutrinos): SM-5 K₃ eigenmodes → cage-shell taxonomy (V=4,12,30) → mass formula $m \propto V^2$ → 7/8 zero-param + Picture A axiomatic closure $\sigma_\nu = z^{-10}$ + α-exponent reduction $V^{7/3} \to V^2$ at bound/unbound boundary + first cross-sector closure with SM-5 op:nu_id via Composite K3-Cage-Shell Coupling Theorem (THEO-SF-4-5)
-
-### SF-2 (Electroweak): 600-cell first/second distance shells → 4 cage-shape uniqueness theorems (W bracelet $D_6$, Z icosahedron $I_h$, H dodecahedron $I_h$, mass-gap) + W⁰ catalyst framework (6 propositions) + Weinberg angle $\sin^2\theta_W = 3/(8\phi)$ + Yang-Mills EFT continuum-limit recovery at proof-outline level
-
-### Capotauro: K3-doublet $\Phi_-^{(1)}, \Phi_-^{(2)}$ → tribimaximal alignment → chirality eigenvalue matching factor $\|M_{K_3}\| = \chi$ × cage-shell averaging factor $\|M_\perp\| = 1/6$ → $\|M\| = \chi/6 = \phi^{-3}/6 \approx 0.0394$ (THEO-CAP-1) → $\Delta p_{LR} \approx 0.0394$ closing OPEN-SM-4 sub-claim (c)
-
-### QM-1→6: DI-bit hopping → Schrödinger → Born rule → Bell S=2√2 → Lindblad → QFT → 3 generations
-### EU-1 (Cosmology): saturated lattice dilutes ($\bar n \propto e^{-3N}$) → indistinguishable CPs (A1) give $\mu \propto \ln\bar n$ (Gibbs $1/n!$) → ZBW bath = symmetric constant-rate ZRP + $H$-theorem reaches that state → $H_{\text{eff}} \propto \ln\bar n \propto N_{\text{rem}}$ → $\delta N$: $n_s - 1 = -2/N_{\text{rem}}$ → $n_s = 1 - 2/57 \approx 0.9649$, $\alpha_s = -2/N_*^2 \approx -0.0006$ (framework-conditional; OPEN-EU-1)
+- **SM-6 (leptons):** 600-cell → K₃ → K = 2/3 [Layer B] → traces → 3/8 → η = 1/φ → sin²θ_W = 3/(8φ) → ε = 3/(52φ) → θ = 132.73° → masses [1 cal].
+- **SM-7 / SF-3 (quarks):** the same chain + α_s = 5/(8φ) from face modes → ε = −27/(52φ) → θ = 124.04°; masses from A8′ on m_e.
+- **SS-1/SS-3 (strong):** K₃ face permutations → 8 generators → SU(3), unique among 3-vertex algebras (THEO-SS-10) → β₀ = 7.
+- **SS-5 → SS-9 (nuclei):** open-vertex cascade → alpha-polytope 3N−6 → 2E/V → Steinitz/FvdW bridge (THEO-SS-16); every step conditional on its hypothesis stack; SS-5 and SS-9 held.
+- **SF-4 (neutrinos):** SM-5 K₃ eigenmodes → cage-shell taxonomy (V = 4, 12, 30) → m ∝ V² → σ_ν = z⁻¹⁰ (Picture A) → cross-sector closure with SM-5 (THEO-SF-4-5).
+- **SF-2 (electroweak):** first/second distance shells → W bracelet, Z icosahedron, H dodecahedron, mass gap → m_Z/m_W at zero parameters; absolute masses calibrated.
+- **Capotauro / chirality:** K₃ doublet → |M| = χ/6 (THEO-CAP-1); the magnitude is derived on FI-C-1…10, the hand is a primitive; the EM-handedness leg of the three-way unification was found spurious (4069/4070).
+- **QM-1 → QM-6:** DI-bit hopping → Schrödinger → Born rule [OPEN-QM-1] → Bell 2√2 → Lindblad → QFT; spin ħ/2 is input (OPEN-QM-3); the sector awaits OPEN-QM-1-REGROUND.
+- **SR / GR:** SSV compression → Lorentz factor (ε(v) = γ − 1 satisfied at W2, 2502) → SSV shell broadcast → Newtonian gravity → Schwarzschild, Kerr, Kerr–Newman *solutions*; the field equations are by correspondence only (OPEN-GR-FE-1).
+- **α (4301 → 4331):** DI-bit count rule → α = c/2 → α = c·PSR/(2L) → α = PSR/(2L) with one calibrated swing; local position invariance passes via family exclusion (R-DIBIT-FAMILY-EXCLUSION) and saturation.
+- **EU-1 (cosmology):** diluting saturated lattice → A1 indistinguishability gives μ ∝ ln n̄ → ZBW bath reaches a constant-rate ZRP → H_eff ∝ N_rem → δN → n_s = 1 − 2/N_* (framework-conditional).
 
 ---
 
@@ -261,87 +212,43 @@ Uniform perturbation ε·I₃ on K₃ preserves C₃ symmetry (eigenvectors unch
 ### Walk-Dimension Gauge Principle
 1D edge walks commute (Abelian). 2D face loops don't commute in a Lorentzian lattice (non-Abelian). Walk dimensionality determines gauge group.
 
----
-
-## Open Problems (Top Priority)
-
-| ID | Problem | Status |
-|----|---------|--------|
-| OPEN-P-SM-cage-1 | Rigorous derivation of α = 7/3 from cage geometry | PARTIALLY RESOLVED — SM-9 pair decomposition; FEM (SM-10) pending |
-| OPEN-P-SM-10-FEM | First-principles quark mass from FEM chain network simulation | IN PROGRESS — Phase 1-2 (CPU) complete; Phase 3 (GPU) pending |
-| OPEN-P-SD-lattice-scale | Lattice spacing and physical scale | PARTIALLY RESOLVED — SS-2: l_unit = 0.589 fm; σ derivation open |
-| OPEN-P-SM-7-1 | Running of α_s from 0.386 to α_s(M_Z)=0.118 | Connection to SS-1 β₀=7 needed |
-| OPEN-P-SM-7-2 | Rigorous proof of face saturation from Green's function | Projector lemma provides framework |
-| OPEN-P-SM-7-5 | Length-4 cell modes — Higgs? Gravity? | **PARTIALLY RESOLVED** — SF-2 v1.0 places H at dodecahedron (V=20 second distance shell) with $I_h$ stabilizer via Platonic duality |
-| — | Light quark masses (u,d,s) | Chiral condensate dominates; new axiom likely needed |
-| — | W/Z/Higgs boson masses | **PARTIALLY RESOLVED** — SF-2 v1.0 calibrated mass-formula closure via 3 dilution factors $\eta_W, \eta_Z, \eta_H$ reproducing $m_W, m_Z, m_H$ at observed values; tree-level mass-ratio $m_Z/m_W = 1.140$ at 0.54% match with zero cross-calibration; Yang-Mills EFT continuum derivation deferred to Layer-4 dedicated paper per PD-004 |
-| — | Derive σ from lattice mode spectrum | Would promote CONJ-SS-2-1 to theorem |
-| OPEN-SS-10 | Nuclear Binding Energy V(r) | **RESOLVED at A=2,3,4 by SS-5 v0.2 (CONJ-SS-11); full V(r) shape remains** |
-| OPEN-SS-17 | Light-nuclei binding curve | PARTIALLY RESOLVED by SS-5 v0.2 at A=2,3,4; A≥6 → OPEN-SS-18 |
-| OPEN-SS-18 | Heavy-nuclei alpha-cluster regime A≥6 | **PARTIALLY RESOLVED by SS-7 v1.2 for strict N=Z alpha-chain at $N_\alpha\in[3,14]$ (¹²C→⁵⁶Ni, RMS 0.80%); non-N=Z and odd-A extension → OPEN-SS-23** |
-| OPEN-SS-19 | Rigorous derivation of (A-1) cascade factor and Pauli coefficient | OPEN |
-| ~~OPEN-SS-22~~ | ~~Icosahedral closure bonus at $N_\alpha=12$~~ | **✗ RETIRED 21 April 2026 — first retired open problem in CPP programme record; empirical anchor shown to be isotope-selection artifact; narrative at `problem_histories/PH-OPEN-SS-22.md`** |
-| OPEN-SS-23 | Non-N=Z and odd-A nuclei (neutron-excess extension) | **PARTIALLY RESOLVED by SS-8 v1.0 for $N_\text{ex} \in [2, 8]$, $N_\alpha \in [3, 14]$ even-even nuclei** |
-| ~~OPEN-SS-24~~ | ~~First-principles derivation of simplicial contact structure (SS-7 assumption C4)~~ | **✗ CLOSED via SS-9 v1.0 ship 7 May 2026 — conditional theorem THEO-SS-16 at C1$'$+C2+C3+C5+C6+C7+C8+rigid packing+3D-non-degeneracy inheritance tier; unconditional promotion pending closure of OPEN-SS-29/30/33/37** |
-| OPEN-SS-25 | DP-sea screening of alpha-alpha Coulomb in bound polytopes | OPEN — newly registered in SS-7 v1.2 |
-| OPEN-SS-26 | D1 interstitial site localization from SSV minimization (Level-3 PARTIAL) | SS-8 v1.0 |
-| OPEN-SS-27 | D2 K₃-edge coupling via A6′ extension | SS-8 v1.0 |
-| OPEN-SS-28 | D3 bulk-regime averaging derivation + residual decomposition | SS-8 v1.0 |
-| **OPEN-SS-29** | **C5 (ground-state energy minimization) first-principles closure from A1–A11** | SS-9 v1.0 |
-| **OPEN-SS-30** | **C6 (cluster surface-realization, no interior alphas) first-principles closure** | SS-9 v1.0 |
-| **OPEN-SS-31** | **Structural realization at deltahedra-gap $N_\alpha \in \{11, 13, 14\}$ (scope-extension target)** | SS-9 v1.0 |
-| **OPEN-SS-33** | **C7 (contact-graph planarity) first-principles closure** | ADVANCED via SS-9 v1.0 Sub-Lemma 2.1 (modulo H4 + H5) |
-| **OPEN-SS-37** | **C8 (FvdW centroid-realizability) first-principles closure** | SS-9 v1.0 with 4 candidate routes including Route (d) distance-geometry/EDM/rigidity/realization-spaces |
-| ~~OPEN-SM-4 sub-claim (c)~~ | ~~Chirality matrix element $\|M\|$ on K3-doublet~~ | **✗ CLOSED via Capotauro v1.0 ship 16 May 2026 — THEO-CAP-1 Composite Wigner-Eckart Theorem: $\|M\| = \chi/6 \approx 0.0394$; sub-claims (a) and (b) remain open** |
-| **OPEN-FI-C-9-FP-MECHANISM** | **Capotauro sub-claim (b) substrate chirality mechanism candidate derivation (Reading C closure trajectory)** | Q1+Q2 closed at Layer 3; Q1'+Q1'.A resolved at Layer 2 toward vertex-aligned; 7-17 sessions estimated to Layer 3 closure of full trajectory (Sessions 121-127 Patches 0414-0421; Findings C-W35/36/37 registered) |
-| **OPEN-FP-SF-4-1** | ~~Unbound-mode suppression mechanism~~ | **✗ RESOLVED at theorem level via Picture A axiomatic closure (THEO-SF-4-4) at SF-4 v3.0** |
-| **OPEN-FP-SF-4-2** | ~~K3-cage-shell consistency (vertex-by-vertex)~~ | **✗ RESOLVED at theorem level cross-sector with SM-5 op:nu_id via THEO-SF-4-5 Composite K3-Cage-Shell Coupling Theorem at SF-4 v4.0 — first cross-sector closure in CPP** |
-| **OPEN-FP-SF-2-η/EWSB/loopfactor/shelldens/chaincomp/CHIR** | **6 SF-2 v1.0 sub-problems (closure routes identified, Layer-4 continuum-EFT path)** | OPEN (registered at SF-2 v1.0 ship; Layer-4 dedicated paper per PD-004 publication-pathway is closure target for loopfactor + CHIR + Yang-Mills EFT) |
+### Zitterbewegung as a pass-through swing (founder rulings 4264/4265, 4320–4327)
+The ZBW is a conservative pass-through oscillation, not stop-and-reverse. At the Planck level the swing's CPs move at
+their own V_i each Moment (never at c); a half-swing carries ħ/2 and spans many Moments; DP-arcs move by SSV_net with
+their scale set by SSV_abs; each DI-bit steps only to a Grid Point holding no other DI-bit of its own family, which sets
+the 2–10% shell width.
 
 ---
 
-## Series Status
+## Open Problems — pre-deposit priority (from `pre_deposit_roadmap.md`)
 
-| Series | Papers | Compliance | PDFs | Doc suite | README | Keywords |
-|--------|--------|-----------|------|-----------|--------|----------|
-| SM (1-10) | 10 | ✅ | ✅ | ✅ (SM-1–10) | ✅ | ✅ |
-| SS (1-9) | 9 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| EW (1-5) | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| QM (1-6) | 6 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| SR-1 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| SR-2 | 1 | ✅ (7C CLEAR) | ✅ | ✅ (12 files) | ✅ | ✅ |
-| SD (1-5) | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **SF-line (flagship)** | **5 SHIPPED (SF-2, SF-3, SF-4, SF-5, Capotauro) + 3 future (SF-1, SF-6, SF-7)** | **✅ for SHIPPED** | **✅ for SHIPPED** | **partial (SF-4 v1.0-v4.4 full suite; SF-3 v1.0 full 7A suite + anthology; SF-5 v1.0 full 7A suite + anthology; SF-2 v1.0 4-tier in progress; Capotauro v1.0 4-tier in progress)** | **✅** | **partial** |
-| **Phenomena (cosmology / early universe)** | **EU-1 (1 SHIPPED)** | **✅** | **(build at OSF deposit)** | **✅ full suite (Patch 0789)** | **✅ (`series_phenomena/README.md`)** | **✅** |
+| # | Problem | IDs | Status (29 Sep) |
+|---|---|---|---|
+| 0 | Honest labelling and this scorecard | TODO-4335-OVERVIEW | overview refreshed (4336–4337); corpus-wide wording sweep and tally restatement remain |
+| 1 | General field equations of gravity (the founder's deposit gate) | OPEN-GR-FE-1, OPEN-GR-RCORE-1, TODO-4300-HBARSWEEP | open |
+| 2 | Lattice-to-SI scale; the PSR floor | OPEN-SD-lattice-scale | open; black-hole PSR vs l_P/2 now a factor 4.1 (4322), not re-adjudicated |
+| 3 | Spin and the unit of action | OPEN-QM-3, TODO-4289-SPINREV/SPINSWEEP | ħ/2 has a carrier (half-swing) but its size is calibrated; SPIN-1/2 held |
+| 4 | Layer B and the QM foundation | OPEN-SS-16, OPEN-QM-1-REGROUND, OPEN-QM-1 | open; conditions Koide and much of the strong sector |
+| 5 | Electromagnetic constants and α | OPEN-FP-6-CONSTANTS, CAL-ZBW1-SWING | α a calibrated relation with two tests; the running law needs a DP-arc cloud model |
+| 6 | SR residual theorem debt | OPEN-SR-10 (i), SF-6 debt (b) | not verdict-bearing; SR-1 publishable with debts stated |
+| 7 | Cosmology scope (DM, DE, Λ) | CONJ-COSMO-1, OPEN-SR-5, OPEN-EU-1 | not prerequisites if deposited papers do not claim them; wording sweep owed |
+| 8 | Chirality | OPEN-SD-CHIR-PRIMITIVE | primitive; publishable as a stated axiom |
 
-**~37 papers in active corpus.** SM-1–7 on OSF; SM-8 v4.1, SM-9 v2.2, SM-10 v0.1, SS-2 v1.0, SS-4 v0.1, SS-5 v0.2, SS-6 v0.2, SS-7 v1.2, SS-8 v1.0, SS-9 v1.0, SF-4 v4.4, SF-2 v1.01, Capotauro v1.0 + v2.0 v1.0, Chirality Continuum v1.0 pending OSF registration. **The five flagship paper SHIPs span ~7 weeks** (SS-9 Session 32, SF-4 v4.4 Session 81, SF-2 v1.0 Session 83, Capotauro v1.0 Session 122, Capotauro v2.0 v1.0 Session 135, Chirality Continuum v1.0 Session 137) — six paper-level v1.0 SHIPs counting Capotauro v2.0 separately from Capotauro v1.0; the chirality continuum SHIP is the third Layer 4 cross-sector closure in CPP (after SF-4 v4.0 and Capotauro v2.0 substrate-level three-way unification) and the first with ex ante joint-paper format adoption.
-
----
-
-## Pending Tasks (not urgent)
-
-- [ ] Register SM-8, SM-9, SM-10, SS-2 on OSF
-- [ ] Register SS-7 v1.2 on OSF (update existing DOI JXE8D with v1.2 PDF and CHANGELOG)
-- [ ] Register SS-8 v1.0 on OSF
-- [ ] Register SS-9 v1.0 on OSF (DOI 10.17605/OSF.IO/JXE8D registered; deposit pending)
-- [ ] Register SF-4 v4.4 on OSF (archival-deposit-quality; ready for public posting)
-- [ ] Register SF-2 v1.01 on OSF (post-SHIP micro-fix complete)
-- [ ] Register Capotauro v1.0 on OSF
-- [ ] Curate development transcripts for SS-7 v1.2 / SM-8/9/10/11 (retroactive)
-- [ ] Generate SM-8/9 verification notebooks (retroactive)
-- [ ] Regenerate site-wide cpp_references.bib from all local .bib files (OPEN-WORKFLOW-1)
-- [ ] Fill remaining sections of founders_vision.md (CP, DI-bit, Nexus, Vision, Theology)
-- [ ] arXiv submission for shipped papers (endorsement workaround via Zenodo if needed)
-- [ ] Complete Capotauro 7-file companion documentation suite (mechanism, glossary, phenomena, philosophy, reviews, keywords, FAQ); estimated 7-15 sessions
-- [ ] Complete SF-2 7-file companion documentation suite (mechanism, glossary, phenomena, philosophy, reviews, keywords, FAQ)
-- [ ] Layer-4 continuum-EFT dedicated paper per PD-004 publication-pathway (OPEN-FP-SF-2-loopfactor + CHIR closure target)
-- [ ] Capotauro Reading C closure trajectory continues at Q3 (precise $\epsilon$-$\chi$ relationship sharpening, 1-3 sessions); see `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` and `handovers/2026-05-17_session_127_reading_c_closure_trajectory.md`
-- [x] SS-8 Phase 1: empirical map of neutron-excess extension (OPEN-SS-23) — **DONE 25 April 2026 via SS-8 v1.0**
-- [x] SS-9 v1.0 SHIP closing OPEN-SS-24 conditionally — **DONE 7 May 2026 Session 32**
-- [x] SF-4 v1.0 → v4.4 cross-sector closure with SM-5 op:nu_id — **DONE 11 May 2026 Session 81 Patch 0342**
-- [x] SF-2 v1.0 SHIP — **DONE 14 May 2026 Session 83 Patch 0368**
-- [x] Capotauro v1.0 SHIP closing OPEN-SM-4 sub-claim (c) — **DONE 16 May 2026 Session 122 Patch 0415**
+**Sector problems still open from the May list** (detail in `frontier_sectors/`): OPEN-P-SM-cage-1 (the 7/3 exponent;
+SM-10 FEM), light-quark masses, OPEN-SS-5 (σ from the mode spectrum), OPEN-SS-19 (cascade factor), OPEN-SS-25…37 (the
+SS-8/SS-9 hypothesis closures), OPEN-FP-SF-2-* (six), OPEN-FP-3-CKM, OPEN-FP-5-GLUEBALL, g_A's residual and the m_q
+tension (TODO-4234-DELTA), OPEN-EU-1, OPEN-TP-1. Retired or closed since: OPEN-SS-22 (retired), OPEN-SS-24 (conditional,
+SS-9), OPEN-SM-4 (c) (magnitude only), OPEN-FP-SF-4-1/-2.
 
 ---
 
-*This document is updated after each paper production cycle. It is the AI's primary orientation document for new sessions.*
+## Pending Tasks
+
+The task queue is `todolist.md`; the deposit order is `pre_deposit_roadmap.md` and `osf_deposit_queue.md`. The May
+list of "Register X on OSF" items is withdrawn (OSF is no longer used; deposits go to Zenodo via Isak).
+
+---
+
+*Refresh this document when a scorecard registry changes (predictions.md, theorem-registry.md, axiom-registry.md,
+paper_catalog.md); `code/overview_staleness_gate.py` enforces it. It is the AI's primary orientation document for new
+sessions.*

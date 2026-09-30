@@ -300,7 +300,7 @@ def build(since=None):
             title = r["title"]
             if len(title) > 95:
                 title = title[:92] + "..."
-            A(f"| {title} | {r["version"]} | `{r["path"]}` | {r["date"]} | "
+            A(f"| {title} | {r['version']} | `{r['path']}` | {r['date']} | "
               f"{r['patch']} | {r['state']} |")
         A("")
         A("---")
