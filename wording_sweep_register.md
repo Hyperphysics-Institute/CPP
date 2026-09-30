@@ -27,7 +27,7 @@ judged to need, and where it was done. A hit that states its basis correctly nee
 | SPIN-3 | describes the spin programme's steps | SPIN-3 depends on SPIN-1/2's ħ/2 input — read with TODO-4289-SPINREV |
 | QM-6 l.116 | capstone summary | read with TODO-4289-SPINSWEEP |
 
-## zero — "zero-parameter", "no free parameters" (OPEN)
+## zero — "zero-parameter", "no free parameters" (DONE 4348)
 
 | Paper | Hits | Verdict | Done |
 |---|---|---|---|
@@ -41,8 +41,14 @@ judged to need, and where it was done. A hit that states its basis correctly nee
 | SM-8, SM-9, SF-3 | 14/11/14 | "zero free parameters" always displayed with M₀ = m_e z/φ, so the calibration is visible; SF-3 states the single m_e calibration throughout | none needed |
 | SF-5, SF-6, SR-2, SS-1 | 9/5/5/8 | SF-5 names m_e; SF-6 carries its two-tier rigor labels; SR-2's λ is fixed by G; SS-1 scopes its claim to the algebra | none needed |
 | GR-1d | 8 | "parameter-free echo" — the prediction itself is withdrawn | covered by the V4 status note (4345) |
+| EW-1, EW-5 | 1/– | **the EW-series Monte-Carlo Weinberg angle (0.2312, "0.004%", "no free parameters") was calibrated** — the 1 Apr 2026 code audit found g′ set from the PDG target; the docs were corrected then, the papers never were | status notes at 4348; superseded by SM-6's 3/(8φ) |
+| c02 | 2 | "fix the PSR formula without free parameters" — SR-1's k is a normalisation convention (2480) | scoped at 4348 |
+| DP-Sea | 3 | one comparison bullet still said "zero free parameters beyond Planck units" | pointed to the v1.3 Status note at 4348 |
+| GR-1a/1b/1c/1f/1g/1h/1j, GR-1, GR-2 | 1–3 each | "no free parameters" for metrics that depend only on G and M (the G identification scoped at 4339); GR-2's echo-era table rows are covered by its V2.11 withdrawals | none needed |
+| SF-1, SR-1, SR-2, SS-1d, SM-2/3/5/6, SM-10, TP-1, dynamical_substrate_law, SS-6 | 1–3 each | scoped in the same sentence (single calibration, "given the ansatz", "aims to", "consistency, not parameter-free", inherited counts) or already covered by a status note | none needed |
+| DM-2 | 4 | zero-parameter w(z) readings in a dark-sector paper not approved for deposit | none (not a deposit candidate until approved; scope with item 7 if it is) |
 
-About 300 hits in some 45 papers. Most are scoped correctly ("zero free shape parameters, one calibration"). The
+About 300 hits in some 45 papers — **all triaged by 4348**. Most are scoped correctly ("zero free shape parameters, one calibration"). The
 triage is owed paper by paper, largest first: SF-2 (35), SF-4 (29), SS-8 (24), Capotauro (22). Criterion: a
 "zero-parameter" claim must either be literally true of that result or name its calibration or condition in the same
 sentence. Tracked as TODO-4340-ZEROSWEEP.

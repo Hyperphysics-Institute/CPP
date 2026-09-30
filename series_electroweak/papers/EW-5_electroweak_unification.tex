@@ -1,3 +1,4 @@
+% Status note after the abstract (Patch 4348, 30 Sep 2026): the Monte-Carlo Weinberg angle was calibrated (g' set from the PDG target; 1 Apr 2026 audit); superseded by SM-6's 3/(8 phi).
 % ============================================================
 % EW-5: Electroweak Unification: From 600-Cell Modes to Yang-Mills
 % Version 1.1 -- 2 April 2026
@@ -77,6 +78,8 @@ directly computed $m_H = 125$~GeV.  This inconsistency is formally
 identified as Open Problem~\ref{op:e0} rather than presented as a
 result.
 \end{abstract}
+
+\paragraph{Status note (30 September 2026).} The Weinberg-angle value in this paper, $\sin^2\theta_W = 0.2312 \pm 0.0003$ from a Monte Carlo over four-layer phase interference, is \emph{not} a zero-parameter result: an audit of the Monte Carlo code (1~April 2026) found that the hypercharge coupling $g'$ was set from the measured target $0.23121$, so the $0.004\%$ agreement is by calibration. The programme's Weinberg angle is SM-6's spectral-trace value $3/(8\phi) = 0.23176$, $0.24\%$ above the measured $\overline{\rm MS}$ value, which supersedes this derivation (see SF-2). The phase-interference weights $p_k = (1-k/5)^2$ remain as descriptive structure. The boson masses here rest on the fitted holographic dilution factor, as the paper states.
 
 \medskip\noindent
 \textbf{Keywords:} electroweak unification, SU(2) times U(1), Yang-Mills emergence, binary icosahedral group, 600-cell spectrum, continuum limit, lattice gauge theory, Weinberg angle derivation
@@ -274,7 +277,7 @@ The 600-cell's dihedral projections to 120°/240° biases produce four
 distinct phase regimes with weights $p_1 = 0.64$, $p_2 = 0.36$,
 $p_3 = 0.16$, $p_4 = 0.04$ (from $(1-k/5)^2$).  Monte Carlo over
 $10^6$ configurations yields $\sin^2\theta_W(M_Z) = 0.2312\pm0.0003$
-(PDG: $0.23121\pm0.00004$, agreement to $0.004\%$).\qed
+(PDG: $0.23121\pm0.00004$, agreement to $0.004\%$ --- by calibration: $g'$ was set from this target; see the Status note).\qed
 \end{proof}
 
 \begin{remark}[Connection to mass ratio]

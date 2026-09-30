@@ -2434,6 +2434,7 @@ CONV-029 (Patch 3269) cleared GR-1i 5–0 with five adoptions and discharged OPE
 OPEN-ORG-023 Item 1 planned a small test-run deposit first, using the spin trio; SPIN-1 and SPIN-2 are now held (4289), so the set must be re-chosen. Propose two or three papers that are finished, not held, and not gated (candidates: SPIN-3, SR-1, SS-3), for the founder's APPROVED column and Isak's DOI reservation.
 
 ### TODO-4340-ZEROSWEEP — triage the "zero-parameter" wording paper by paper (registered Patch 4340, governance; roadmap item 0)
+**CLOSED 4348:** every hit triaged (`wording_sweep_register.md`). Last tranche found one more calibrated-as-derived claim — the EW series' Monte-Carlo Weinberg angle (g′ set from the PDG target, found by the 1 Apr 2026 code audit; docs corrected then, papers not): status notes in EW-1 and EW-5; c02's PSR claim scoped; DP-Sea's last bullet pointed to its status note.
 **Progress 4347:** SS-7 (v1.7; input misstatement + an arithmetic slip), EU-1 (v1.6.2; pivot adopted, not derived), SS-2/5/6/9 (held status notes), and SM-8, SM-9, SF-3, SF-5, SF-6, SR-2, SS-1, GR-1d triaged (no change needed or covered). Remaining: the papers below 8 hits on the `--counts` list.
 **Progress 4342:** SS-8 (v1.4) and Capotauro (v2.4) done. Next: the `--counts` list from the fifth paper down.
 **Progress 4341:** SF-2 done (arithmetic erratum found: 3/(8φ) had been written as the observed 0.23121; v1.08.1 + companion v1.06), SF-4 done (v3.5). Next: SS-8 (24), Capotauro (22), then down the `--counts` list.

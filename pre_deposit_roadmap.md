@@ -152,3 +152,6 @@ recorded, surveyed at 4335.)
   and DOIs must be written into the queue before the wave (TODO-4346-TRIALDOIS).
 - **4347 (item 0):** zero-parameter sweep second tranche: EU-1 pivot stated as adopted; SS-7 inputs and fully-CPP RMS (1.77%);
   held SS papers carry status notes.
+- **4348 (item 0): CLOSED.** The zero-parameter sweep is complete; with the overview refreshed (4336–4337), the tally audited
+  (4338), the cosmology wording swept (4340) and the gate passing, item 0's closing condition is met. Build readiness is
+  tracked separately (compile_status.md: DP-Sea's figures).

@@ -41,14 +41,14 @@
 | Conscious Point Physics: — Confinement, Asymptotic Freedom, and the QCD -Function — from qDP... | — | `series_strong/papers/SS-1d_confinement_beta_function.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
 | Conscious Point Physics: — The Hadron Spectrum: Baryons, Mesons, — and the Mass Hierarchy fr... | — | `series_strong/papers/SS-1e_hadron_spectrum.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
 | Conscious Point Physics: — The Physical Realization of the SU(3) Hop — How a Charge-Driven Z... | 1.0 | `series_strong/papers/SS-1f_su3_hop_realization.tex` | 2026-06-18 | — | **UNKNOWN — not in prior catalog** |
-| Lattice-Scale Grounding and Nucleon Structure — from 600-Cell Geometry | — | `series_strong/papers/SS-2_lattice_scale_nucleon_structure.tex` | 2026-04-12 | — | **UNKNOWN — not in prior catalog** |
+| Lattice-Scale Grounding and Nucleon Structure — from 600-Cell Geometry | — | `series_strong/papers/SS-2_lattice_scale_nucleon_structure.tex` | 2026-09-30 | — | **UNKNOWN — not in prior catalog** |
 | SS-3: Uniqueness of SU(3) from the Tetrahedral Cage — Conscious Point Physics --- Strong Sec... | 1.7 | `series_strong/papers/SS-3_su3_uniqueness.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | SS-4: String Tension from the 600-Cell Face-Mode Multiplicity — Conscious Point Physics --- ... | 0.4 | `series_strong/papers/SS-4_string_tension.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
-| SS-5: Light-Nuclei Binding Energies from the Open-Vertex Cascade — 600-Cell Standard Model E... | 1.2 | `series_strong/papers/SS-5/SS-5_light_nuclei_open_vertex_cascade.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
-| SS-6: Deuteron Observables Beyond Binding: — Scope and Limits of the Base-to-Base Picture — ... | 0.5 | `series_strong/papers/SS-6/SS-6_deuteron_observables_beyond_binding.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
-| SS-7: Alpha-Cluster Regime and the 3N-6 Edge Formula — for Medium-Mass Nuclei — 600-Cell Sta... | 1.7 | `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
+| SS-5: Light-Nuclei Binding Energies from the Open-Vertex Cascade — 600-Cell Standard Model E... | 1.2 | `series_strong/papers/SS-5/SS-5_light_nuclei_open_vertex_cascade.tex` | 2026-09-30 | — | **UNKNOWN — not in prior catalog** |
+| SS-6: Deuteron Observables Beyond Binding: — Scope and Limits of the Base-to-Base Picture — ... | 0.5 | `series_strong/papers/SS-6/SS-6_deuteron_observables_beyond_binding.tex` | 2026-09-30 | — | **UNKNOWN — not in prior catalog** |
+| SS-7: Alpha-Cluster Regime and the 3N-6 Edge Formula — for Medium-Mass Nuclei — 600-Cell Sta... | 1.7 | `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex` | 2026-09-30 | — | **UNKNOWN — not in prior catalog** |
 | Interstitial-Neutron Binding in Alpha-Cluster Nuclei: — The 2E/V Scaling Law from Simplicial... | 1.4 | `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
-| (title not parsed) | 1.3 | `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
+| (title not parsed) | 1.3 | `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` | 2026-09-30 | — | **UNKNOWN — not in prior catalog** |
 
 ---
 
@@ -136,7 +136,7 @@
 |---|---|---|---|---|---|
 | DM-1: A Velocity-Independent Self-Interacting Dark-Matter Candidate from Charge-Neutral qDP/... | 1.8 | `series_phenomena/cosmology/dark_matter/DM-1/DM-1_substrate_dark_matter_candidate.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | DM-3: The Discriminating Predictions — Nine observational protocols for the Cross-Rod dark-m... | 1.2 | `series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| EU-1: The Primordial Scalar Spectral Index from Substrate Inflation — A Zero-New-Axiom Deriv... | 1.6.2 | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
+| EU-1: The Primordial Scalar Spectral Index from Substrate Inflation — A Zero-New-Axiom Deriv... | 1.6.2 | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | 2026-09-30 | — | **UNKNOWN — not in prior catalog** |
 | DM-2: Sea Gravitation and the Dark Sector — One sourcing rule for matter, dark matter, and -... | 1.0 | `series_phenomena/cosmology/sea_gravitation/DM-2/DM-2_sea_gravitation_dark_sector.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
 | TP-1: The Truncated Photon and the Lattice Regularization of Shutter-Induced Photon Creation... | 1.4 | `series_phenomena/quantum_optics/photon_truncation/TP-1/TP-1_truncated_photon.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 
@@ -247,5 +247,5 @@
 | `series_strong/papers/SS-1c_eight_gluons_hdp_structures.tex` | 2026-04-02 | — |
 | `series_strong/papers/SS-1d_confinement_beta_function.tex` | 2026-04-02 | — |
 | `series_strong/papers/SS-1e_hadron_spectrum.tex` | 2026-04-02 | — |
-| `series_strong/papers/SS-2_lattice_scale_nucleon_structure.tex` | 2026-04-12 | — |
+| `series_strong/papers/SS-2_lattice_scale_nucleon_structure.tex` | 2026-09-30 | — |
 

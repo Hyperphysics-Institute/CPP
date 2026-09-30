@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 29 September 2026 (Patch 4347: n_s pivot adopted (EU-1 v1.6.2); SS-7 fully-CPP RMS 1.77%; held SS papers carry status notes. Patch 4345: GR-1d V4 (echo withdrawn), GR-1i V1.0. Patch 4344: 122 deposit candidates (a development transcript excluded); build fixes. Patch 4343: catalog refreshed after the identifier-appendix regeneration. Patch 4342: catalog refreshed (Capotauro v2.4, SS-8 v1.4). Patch 4341: m_Z/m_W row corrected (SF-2 arithmetic erratum). Patch 4340: catalog refreshed after the cosmology wording sweep. Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
+**Last updated:** 29 September 2026 (Patch 4348: item 0 closed; EW-series Monte-Carlo Weinberg angle marked calibrated. Patch 4347: n_s pivot adopted (EU-1 v1.6.2); SS-7 fully-CPP RMS 1.77%; held SS papers carry status notes. Patch 4345: GR-1d V4 (echo withdrawn), GR-1i V1.0. Patch 4344: 122 deposit candidates (a development transcript excluded); build fixes. Patch 4343: catalog refreshed after the identifier-appendix regeneration. Patch 4342: catalog refreshed (Capotauro v2.4, SS-8 v1.4). Patch 4341: m_Z/m_W row corrected (SF-2 arithmetic erratum). Patch 4340: catalog refreshed after the cosmology wording sweep. Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
 Patch 0422B), with a 6 June 2026 EU-1 note.
 
 ---
@@ -224,7 +224,7 @@ the 2–10% shell width.
 
 | # | Problem | IDs | Status (29 Sep) |
 |---|---|---|---|
-| 0 | Honest labelling and this scorecard | TODO-4335-OVERVIEW | overview refreshed (4336–4337); tally audited and σ citation fixed (4338); the corpus-wide wording sweep remains |
+| 0 | Honest labelling and this scorecard | TODO-4335-OVERVIEW | **closed 4348**: overview refreshed, tally audited, cosmology and zero-parameter wording swept (`wording_sweep_register.md`) |
 | 1 | Gravity: records into line (the FE-1 gate was discharged at 3267) | TODO-4339-GR1DECHO, TODO-4300-HBARSWEEP, TODO-4339-GR1IV1, OPEN-ORG-023 | done: wording 4339, GR-1d V4 and GR-1i V1.0 4345; trial deposit already done (founder) — its DOIs to be recorded (TODO-4346-TRIALDOIS) |
 | 2 | Lattice-to-SI scale; the PSR floor | OPEN-SD-lattice-scale | open; black-hole PSR vs l_P/2 now a factor 4.1 (4322), not re-adjudicated |
 | 3 | Spin and the unit of action | OPEN-QM-3, TODO-4289-SPINREV/SPINSWEEP | ħ/2 has a carrier (half-swing) but its size is calibrated; SPIN-1/2 held |
