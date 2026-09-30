@@ -77,3 +77,10 @@ of times more than atomic clocks allow. And second, does each grid point pass on
   continuum used here) still conserves the net flow when the PSR is not a whole number of GP spacings; (ii) check whether
   the solid band of R-DIBIT-INWARD-FILL emits as a sphere of radius PSR or as the whole band depth (it changes the
   near-field constant, not the far-field shape).
+
+---
+**Erratum (Patch 4355).** §2's model was a count-conserving particle relay. The registered relay (AP-3/A3′, AP-4;
+GR-1j Theorem "Exact statics") is a PSR-shell *mean*: the GP reads its whole PSR shell automatically (the founder's
+"entire arc", 4355), and Gauss's law is already a theorem there. Under that kernel the far field at fixed distance in
+PSRs scales as Q/R³, so §2's "per PSR cross-section → k_α = 0" is withdrawn: α's LPI holds only if a charge's family
+fills its whole PSR ball (injection ∝ R³). See `4355_registered_relay_window_automatic_lpi_needs_full_ball.md`.

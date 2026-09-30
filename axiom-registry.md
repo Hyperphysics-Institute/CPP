@@ -391,9 +391,12 @@ Order-free statement: *the family fills the free GPs inside the PSR from the out
 DI-bit per GP, outer edge at the PSR and moving with it in a well.
 
 **Beyond the PSR (founder's stated picture, 4354):** no DI-bit of the origin family goes beyond its GP_PSR; the origin's
-influence reaches further only by re-radiation from GPs holding its DI-bits, each doing what every GP does. **Readings
-not yet confirmed** (put to the founder at 4354): the relay passes on exactly what it receives (lossless), and a charge
-reads the net flow across its own PSR. Under both, Gauss's law and α's local position invariance follow (4354).
+influence reaches further only by re-radiation from GPs holding its DI-bits, each doing what every GP does. **Settled at 4355
+from the registered axioms** (founder: "look at AP-4"): the relay is AP-4's snapshot re-imprint (R-CP-ONLY-SOURCE) with
+AP-3/A3′'s PSR-shell kernel; a far CP is read at one GP whose state is the mean over its whole PSR shell (the founder's
+"entire arc of re-radiation"); GR-1j's exact statics makes it lossless and Laplace (Gauss's law). **Open (4355 §3):**
+α's far-field LPI then holds only if a charge's family fills its whole PSR ball (injection ∝ GPs per PSR volume); a band
+with an emptier core gives k_α = −3.
 
 **Status.** Clauses under A3′/AP-4 (transport); **axiom count unchanged at 9.**
 

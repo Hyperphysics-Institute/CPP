@@ -164,3 +164,5 @@ recorded, surveyed at 4335.)
   LPI premise restored as a protocol); solid only if a blocked bit spreads sideways first (TODO-4353-LANDINGRULE). Far field still open.
 - **4354 (item 5):** R-DIBIT-INWARD-FILL registered (founder: sideways first). Far field is re-radiation: Gauss's law follows;
   α's LPI there hangs on one founder answer (does a charge read the net flow across its own PSR?).
+- **4355 (item 5):** the registered relay answers the window and Gauss's law; α's far-field LPI now hangs on one founder answer
+  (does a charge's family fill its whole PSR ball?). Otherwise k_α = −3.
