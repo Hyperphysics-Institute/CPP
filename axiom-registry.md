@@ -363,8 +363,8 @@ description of inertia and DP-arcs)."* Completed by the rulings of 28–29 Sep (
 moves by its SSV_net (V_i) each Moment, never at light speed, the DP-arcs' motion set by SSV_net and their scale by
 SSV_abs.
 
-**Registered statement.** *A Conscious Point has no rest mass. Mass is the reaction of the DP-arcs a moving CP organises
-(its inertia, as in SF-6). Each Moment a CP advances by its SSV_net (V_i), at most one PSR and not at c.*
+**Registered statement.** *A Conscious Point has no rest mass. It resists acceleration and deceleration through its
+interaction with the DP-arcs its motion organises; that reaction is its inertia, and the origin of mass (SF-6). Each Moment a CP advances by its SSV_net (V_i), at most one PSR and not at c.*
 
 **Status.** A clarifying clause under A1′ (like AP-5 under A3′); **axiom count unchanged at 9.** It does not alter A1′'s
 three-type statement; it states what a CP does not carry.
@@ -372,7 +372,9 @@ three-type statement; it states what a CP does not carry.
 **Reading marked (PD-008).** The 4288 message also contains the thinking-aloud line *"it seems we must consider that the
 CPs have mass"*, in the sense that DP-arc formation with velocity is the signature of mass. It is read here as the
 inertia of the first sentence (mass arises from the CP's DP-arcs), not as a rest mass — the reading consistent with his
-first sentence and with the 4325/4326 rulings. If he meant a rest mass, this clause is to be corrected.
+first sentence and with the 4325/4326 rulings. **Confirmed by the founder at Patch 4351** (30 Sep 2026): *"This is exactly
+the correct understanding of the mass of the CP. It has no mass, but resists acceleration and deceleration (the
+properties of inertia) because of the CP and DP-arc interactions."* (`founders_voice/4351_…`).
 
 **Consequences on file.** SPIN-1's carrier model assigned the CP the electron's rest mass; SPIN-1 v2.2 (Patch 4349)
 records this ruling beside that premise. TODO-4316-CPMASSAXIOM closed.
