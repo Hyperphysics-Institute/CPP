@@ -10,6 +10,9 @@
 %     an explicitly labeled conjecture, consumed by no shipped result;
 %     consonance with the Patch 3006 derived 1/2 noted. No derivation
 %     touched.
+%   v2.2 29 Sep 2026 — (Patch 4332) §hbar ZBW-action paragraph restated per
+%     founder rulings 4320/4325: the Planck ZBW half-swing carries hbar/2 over
+%     many Moments (not E_P per half-cycle at 1/(2 t_P)). Proposition untouched.
 
 % ── packages ──────────────────────────────────────────────────────────────────
 \usepackage{amsmath,amssymb,amsthm}
@@ -49,7 +52,10 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{8 August 2026 --- Version~2.1}
+\date{8 August 2026 --- Version~2.1\\[2pt]
+{\small Version~2.2 --- 29 September 2026 (Patch 4332: the ZBW-action paragraph of
+\S\ref{sec:hbar} restated per founder rulings, Patches 4320 and 4325; the half-swing carries
+$\hbar/2$ over many Moments; Proposition~\ref{prop:hbar} and all derivations untouched)}}
 
 \begin{document}
 \maketitle
@@ -260,6 +266,12 @@ of quantum action: one tick of the universal clock corresponds to one
 elementary quantum of action.
 \end{proposition}
 
+\noindent\emph{Scope note (Version~2.2, Patch 4332).} The proposition is the dimensional
+identification $\hbar = \EP\cdot\tP$. Its reading ``one tick \ldots\ one elementary quantum
+of action'' is a statement of scale only: per the founder's rulings (Patches 4320, 4325) the
+physical carrier of the smallest action is the Planck ZBW half-swing, which carries $\hbar/2$
+over many ticks.
+
 It is important to state this identification precisely.  In Planck units,
 $\hbar = \EP\cdot\tP = 1$ by construction --- this is not an independent
 numerical derivation but a physical identification.  The content of
@@ -276,10 +288,14 @@ per ZBW half-cycle of an elementary DP:
   \;\equiv\; \text{(Planck energy)} \times \text{(Planck time)}.
   \label{eq:hbar}
 \end{equation}
-Every DP oscillates at $\nu_{\rm ZBW} = 1/(2\tP)$, spending energy $\EP$
-per half-cycle.  Macroscopic aggregates (particles, photons) are assemblies
-of these elementary ZBW units; their total action is an integer multiple of
-$\hbar$.  This gives $\hbar$ a physical interpretation --- the action of the
+\emph{(Version~2.2, Patch 4332, per founder rulings, Patches 4320 and 4325:)} every
+elementary DP swings its two CPs through each other; each half-swing (apogee to
+apogee) carries action $\hbar/2$ and spans many Absolute Moments, its CPs moving
+at their $V_i$.  Macroscopic aggregates (particles, photons) are assemblies of
+these elementary ZBW units; their total action is an integer multiple of
+$\hbar/2$.  \emph{(Version~2.1 read: every DP oscillates at
+$\nu_{\rm ZBW} = 1/(2\tP)$, spending $\EP$ per half-cycle, with total action a
+multiple of $\hbar$.)}  This gives $\hbar$ a physical interpretation --- the action of the
 smallest possible organized energy exchange in the CPP lattice --- rather than
 treating it as an irreducible empirical input.
 
@@ -474,7 +490,7 @@ outcome $i$, and $\xi_x, \xi_y$ are the two orthogonal ZBW noise components,
 each of amplitude $\sim \lP/\tP$ and oscillating at $\nu_{\rm ZBW}$.
 
 The 12-edge selection rule chooses the lattice edge $k^*$ that maximizes
-$\mathbf{e}_k\cdotV_i$.  Over many ticks, the fraction of ticks
+$\mathbf{e}_k\cdot V_i$.  Over many ticks, the fraction of ticks
 in which $k^*$ points toward outcome $k$ is the solid-angle fraction of the
 unit SSV sphere occupied by outcome $k$'s basin of attraction.
 
