@@ -160,3 +160,5 @@ recorded, surveyed at 4335.)
   registered under A1′ (TODO-4316-CPMASSAXIOM closed).
 - **4352 (item 5):** independent critic of the α arc: algebra confirmed; the LPI pass withdrawn (4330 sign bug); on-shell running
   numbers and the Lange 2021 clock bound adopted; c03 v2.3. α is a calibrated re-expression; LPI and running are open constraints.
+- **4353 (item 5):** founder's inward-fill landing protocol tested: the band's outer edge is pinned to the PSR (near-field
+  LPI premise restored as a protocol); solid only if a blocked bit spreads sideways first (TODO-4353-LANDINGRULE). Far field still open.
