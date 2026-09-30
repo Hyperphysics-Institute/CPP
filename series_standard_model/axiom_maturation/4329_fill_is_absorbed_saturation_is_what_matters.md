@@ -72,3 +72,5 @@ until an observable needs it. The next steps are computational (§6 and the queu
   plateau and on the well change; (ii) run the same on the 600-cell's icosahedral neighbourhood rather than FCC;
   (iii) look for a second observable sensitive to f or L separately (the band thickness, D-ARC-GAMMA's retention
   geometry, 4308/4309).
+
+**Erratum (Patch 4330):** the "plateau near 0.88" was read off unsaturated single runs. Multi-seed runs on FCC and on a strained-glass proxy, with N several times the shell's site count, show the fill rising toward one (FCC 0.954 → 0.982 → 0.996; glass 0.936 → 0.956) and its change in a well zero within error. **Saturation is a solid band (f → 1)**, so α = PSR/(2L) and the effective swing is the swing. See `series_standard_model/axiom_maturation/4330_saturation_is_a_solid_band.md`.
