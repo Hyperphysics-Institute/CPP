@@ -2132,7 +2132,7 @@
       "rel": "series_quantum_mechanics/spin_papers/SPIN-1_emergent_spin_from_captured_DPs/SPIN-1_emergent_spin_from_captured_DPs.tex",
       "title": "SPIN-1: Emergent Spin-12 from Captured Dipole Particle",
       "ver": "2",
-      "changed": "2026-08-20",
+      "changed": "2026-09-25",
       "cls": "Series paper",
       "withheld": "unfinished: live TODO/FIXME scaffolding markers",
       "wave": 1,
@@ -2145,7 +2145,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-20",
+        "publication_date": "2026-09-25",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2168,14 +2168,14 @@
       "OSF_LINK": "",
       "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
       "RELATION": "isSupplementTo",
-      "COMMUNITY": "conscious-point-physics",
+      "COMMUNITY": "",
       "NOTES": ""
     },
     {
       "rel": "series_quantum_mechanics/spin_papers/SPIN-2_standing_wave_subharmonics/SPIN-2_standing_wave_subharmonics.tex",
       "title": "SPIN-2: Derivation of the Standing-Wave Sub-Harmonic Condition",
       "ver": "2",
-      "changed": "2026-08-20",
+      "changed": "2026-09-25",
       "cls": "Series paper",
       "withheld": "unfinished: live TODO/FIXME scaffolding markers",
       "wave": 1,
@@ -2188,7 +2188,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-08-20",
+        "publication_date": "2026-09-25",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2211,7 +2211,7 @@
       "OSF_LINK": "",
       "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
       "RELATION": "isSupplementTo",
-      "COMMUNITY": "conscious-point-physics",
+      "COMMUNITY": "",
       "NOTES": ""
     },
     {
@@ -2347,7 +2347,7 @@
       "rel": "series_relativity/SR_companion_papers/c03_born_rule/c03_born_rule.tex",
       "title": "Quantum Probability and the Classical Transition",
       "ver": "2.1",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Companion",
       "withheld": "",
       "wave": 1,
@@ -2360,7 +2360,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2390,7 +2390,7 @@
       "rel": "series_relativity/SR_companion_papers/c04_ZBW_hbar_mass_units/c04_ZBW_hbar_mass_units.tex",
       "title": "Inertial Mass from Zitterbewegung:",
       "ver": "2",
-      "changed": "2026-09-24",
+      "changed": "2026-09-29",
       "cls": "Companion",
       "withheld": "",
       "wave": 1,
@@ -2403,7 +2403,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-24",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2411,7 +2411,7 @@
           "Physics"
         ],
         "version": "2",
-        "description": "We show that inertial mass in Conscious Point Physics (CPP) arises from a two-level Zitterbewegung (ZBW) resonance hierarchy in the polarized Dipole Sea. At the Planck scale (Level~1), each elementary Dipole Particle (DP) oscillates at frequency $ = 1/(2 )$, carrying action $ = $ per half-cycle. At the particle scale (Level~2), the coherent eDP polarization cloud surrounding an unpaired electron-type Conscious Point oscillates collectively as a radial standing wave at the Compton frequency $ = mc^2/ $, reflecting between the nucleation center and the thermal boundary of the cloud. The particle's rest mass is the energy of one complete Compton resonance cycle, $mc^2 = $, derived here from standing-wave boundary conditions rather than assumed. The ratio of scales $ / = /(2m)$ shows that one Compton cycle spans $ /m$ Planck ticks, realizing the assembly principle that larger organizational units are built from smaller ones. The relation $E = mc^2$ follows from the Absolute Moment step-budget constraint. The classical non-radiation of ground-state electrons is explained as a driven steady state maintained by the eternal nucleation signal of the unpaired eCP. All four DP types participate equally in the polarization cloud. No new postulates are introduced.",
+        "description": "We show that inertial mass in Conscious Point Physics (CPP) arises from a two-level Zitterbewegung (ZBW) resonance hierarchy in the polarized Dipole Sea. At the Planck scale (Level~1), each elementary Dipole Particle (DP) swings its two CPs through each other, each half-swing (apogee to apogee) carrying action $ /2$ over many Absolute Moments. At the particle scale (Level~2), the coherent eDP polarization cloud surrounding an unpaired electron-type Conscious Point oscillates collectively as a radial standing wave at the Compton frequency $ = mc^2/ $, reflecting between the nucleation center and the thermal boundary of the cloud. The particle's rest mass is the energy of one complete Compton resonance cycle, $mc^2 = $, derived here from standing-wave boundary conditions rather than assumed. One Compton radian spans $ /m$ Absolute Moments (Planck ticks), realizing the assembly principle that larger organizational units are built from smaller ones. The relation $E = mc^2$ follows from the Absolute Moment step-budget constraint. The classical non-radiation of ground-state electrons is explained as a driven steady state maintained by the eternal nucleation signal of the unpaired eCP. All four DP types participate equally in the polarization cloud. No new postulates are introduced.",
         "description_ok": true,
         "description_source": "abstract environment"
       },
