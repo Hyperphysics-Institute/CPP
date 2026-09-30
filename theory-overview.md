@@ -225,7 +225,7 @@ the 2–10% shell width.
 | # | Problem | IDs | Status (29 Sep) |
 |---|---|---|---|
 | 0 | Honest labelling and this scorecard | TODO-4335-OVERVIEW | overview refreshed (4336–4337); tally audited and σ citation fixed (4338); the corpus-wide wording sweep remains |
-| 1 | Gravity: records into line (the FE-1 gate was discharged at 3267) | TODO-4339-GR1DECHO, TODO-4300-HBARSWEEP, TODO-4339-GR1IV1, OPEN-ORG-023 | GR-1/1a/1c wording done 4339; the test-run set remains (proposed SS-3 + GR-1i) |
+| 1 | Gravity: records into line (the FE-1 gate was discharged at 3267) | TODO-4339-GR1DECHO, TODO-4300-HBARSWEEP, TODO-4339-GR1IV1, OPEN-ORG-023 | done: wording 4339, GR-1d V4 and GR-1i V1.0 4345; trial deposit already done (founder) — its DOIs to be recorded (TODO-4346-TRIALDOIS) |
 | 2 | Lattice-to-SI scale; the PSR floor | OPEN-SD-lattice-scale | open; black-hole PSR vs l_P/2 now a factor 4.1 (4322), not re-adjudicated |
 | 3 | Spin and the unit of action | OPEN-QM-3, TODO-4289-SPINREV/SPINSWEEP | ħ/2 has a carrier (half-swing) but its size is calibrated; SPIN-1/2 held |
 | 4 | Layer B and the QM foundation | OPEN-SS-16, OPEN-QM-1-REGROUND, OPEN-QM-1 | open; conditions Koide and much of the strong sector |

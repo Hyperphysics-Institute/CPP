@@ -9,7 +9,7 @@ done and recorded in the lanes named below.
 **Standing facts.** Nothing is deposited yet (4334). PDFs are built by Isak at deposit (CONV-012). The founder's 19 Aug 2026
 ruling (OPEN-ORG-023): a small test-run deposit first; then **most of the 105 non-gravitational papers wait until GR-1, its
 companions and OPEN-GR-FE-1 are done** — and **that condition was discharged on 20 Aug** (OPEN-GR-FE-1 CLOSED at Patch 3267,
-founder: "Confirm FE-1 complete."; see the correction under item 1). Deposit approval is the founder's (the queue's APPROVED column, fail-closed).
+founder: "Confirm FE-1 complete."; see the correction under item 1). Deposit approval is the founder's (the queue's APPROVED column, fail-closed). A trial deposit has already been done successfully (founder, 29 Sep).
 
 ---
 
@@ -148,3 +148,5 @@ recorded, surveyed at 4335.)
   Deposit queue 122 (a development transcript excluded).
 - **4345 (item 1):** GR-1d → V4 (echo withdrawn, status note); GR-1i → V1.0. Item 1's records-into-line work is done except
   the test-run choice (proposed: SS-3 and GR-1i; founder approval) and the OPEN-ORG-023 close.
+- **4346:** founder: a trial deposit was already done successfully; no second trial (TODO-4339-TESTRUN closed). Its papers
+  and DOIs must be written into the queue before the wave (TODO-4346-TRIALDOIS).
