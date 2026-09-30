@@ -22,11 +22,13 @@
 % 16 March 2026
 % ==================================================================
 
-% %%TODO: v2.2 REVISION REQUIRED BEFORE DEPOSIT (Patch 4289). Theorem thm:spin solves r_in FROM L = hbar/2:
-% Coulomb balance allows a circular pair at every r_in (L/(hbar/2) = 2(1+sqrt2) sqrt(r_in/a0)), so hbar/2 is the
-% input, and the abstract's 'No free parameters' and the verification table's 'exact match' restate it. With both
-% radii at SPIN-2's anchoring points (r_th/3, 2 r_th/3), L = 0.168 hbar/2. The magnetic moment of this carrier is
-% g = 3 - 2 sqrt2 (Patch 4286). See series_standard_model/axiom_maturation/4289_spin_papers_hbar_half_is_input.md.
+% Version 2.2 — 30 September 2026 (Patch 4349): REVISED PER PATCH 4289 (hold released). Theorem thm:spin is restated
+%   as what it is: the radius at which L = hbar/2, solved from hbar/2 as input (Coulomb balance allows a circular pair
+%   at every r_in, L/(hbar/2) = 2(1+sqrt2) sqrt(r_in/a0)). The abstract's "No free parameters", the verification
+%   table's "exact match" and the conclusion's "derivation ... with no free parameters" are corrected. Added: the
+%   forward reading (both radii at SPIN-2's anchors: L = 0.168 hbar/2), the moment g = 3 - 2 sqrt2 of this carrier
+%   (Patch 4286), the founder's rulings that a CP has no mass of its own (4288) and that the Planck ZBW half-swing
+%   carries hbar/2 (4320/4325). Verify: series_quantum_mechanics/spin_papers/code/4289_spin_L_non_circular.py.
 \documentclass[12pt]{article}
 
 \usepackage{amsmath,amssymb,amsthm}
@@ -73,7 +75,8 @@ Hyperphysics Institute\\
 \date{16 March 2026 --- Version~2\\[2pt]
 {\small Version~2.1 --- 16 August 2026 (Patch 3210: corrected the
 expanded denominator in Eq.~(\ref{eq:rin}) and the lepton radius
-scaling exponent; see CHANGELOG.)}}
+scaling exponent; see CHANGELOG.)}\\[2pt]
+{\small Version~2.2 --- 30 September 2026 (Patch 4349: the spin value $\hbar/2$ is stated as the input that fixes the orbital radius, not as a derived result; the forward reading and the carrier's magnetic moment added.)}}
 
 \begin{document}
 \maketitle
@@ -102,11 +105,11 @@ $2\sqrt{2} \approx 2.83$.  This ratio is not assumed; it falls out of
 the $1/r^2$ Coulomb force law and the geometric fact that the outer
 radius is exactly twice the inner radius.
 
-The total orbital angular momentum of this two-CP system turns out to
-be exactly $\hbar/2$ --- the spin quantum number of the electron ---
-when the orbital radii take the values determined by the Coulomb force
-balance and the standing-wave boundary condition of the ZBW cloud.  No
-free parameter is adjusted to achieve this.  The Bohr radius $\aBohr$
+The total orbital angular momentum of this two-CP system equals
+$\hbar/2$ --- the spin quantum number of the electron --- at one particular
+orbital radius. (Version~2.2: the Coulomb force balance allows a circular
+pair at every radius, so it is the value $\hbar/2$ that picks the radius;
+the spin is an input here, not an output.)  The Bohr radius $\aBohr$
 appears naturally as the length scale; the orbital radii are $\aBohr$
 divided by the pure geometric number $4(1+\sqrt{2})^2$.
 
@@ -117,8 +120,9 @@ constant.
 
 %======================================================================
 \begin{abstract}
-We derive the electron spin quantum number $s = 1/2$ from first
-principles in Conscious Point Physics.  An unpaired $-$eCP moving
+We model the electron spin as the orbital angular momentum of a captured
+Dipole Particle in Conscious Point Physics, and find the orbital geometry at
+which it equals $\hbar/2$.  An unpaired $-$eCP moving
 through the Dipole Sea captures a Dipole Particle (DP), placing the
 inner $+$CP at orbital radius $\rin$ and the outer $-$CP at
 $\rout = 2\rin$.  The Coulomb force balance for circular orbits gives
@@ -141,11 +145,15 @@ which equals $\hbar/2$ exactly when:
   \label{eq:rin_abstract}
 \end{equation}
 where $\aBohr = \hbar^2/(m_e k_e e^2)$ is the Bohr radius.
-This condition is shown to follow from the Coulomb force balance
-at the Compton scale.  No free parameters are introduced.
+The value $\hbar/2$ is the input that fixes this radius: the Coulomb force
+balance allows a circular pair at every radius, with $L$ growing as
+$\sqrt{\rin}$ (Version~2.2). Read forwards instead --- with both radii at the
+standing-wave anchoring points of the companion paper SPIN-2 and no input
+spin --- the pair carries $L = (1+\sqrt{2})\sqrt{\alpha/6}\,\hbar \approx
+0.168 \times \hbar/2$.
 The mechanism extends naturally to all spin-$1/2$ Standard Model
 fermions via the same orbital geometry with DP type (eDP or qDP)
-appropriate to the particle.  Spin is emergent, not intrinsic.
+appropriate to the particle.  In this model spin is emergent (orbital), not intrinsic; its value $\hbar/2$ is an input.
 \end{abstract}
 
 %======================================================================
@@ -170,8 +178,9 @@ $\rC = \hbar/(m_e c)$ is the reduced Compton wavelength.
 The present companion identifies the spin as a further consequence of
 the same capture event that builds the mass: the moving $-$eCP captures
 a DP from the Dipole Sea, placing it in orbit at the Compton scale.
-The orbital angular momentum of the captured DP is $\hbar/2$ exactly,
-with no free parameters.
+The orbital angular momentum of the captured DP is $\hbar/2$ at the radius
+of Theorem~\ref{thm:spin}, which is where that value is imposed
+(Version~2.2).
 
 %======================================================================
 \section{The Capture Mechanism}
@@ -312,10 +321,10 @@ Therefore:
 \label{sec:quantization}
 %======================================================================
 
-\begin{theorem}[Spin quantization]
+\begin{theorem}[The radius at which $L = \hbar/2$]
 \label{thm:spin}
 The total orbital angular momentum of the captured DP equals $\hbar/2$
-when the inner orbital radius is:
+if and only if the inner orbital radius is:
 \begin{equation}
   \rin \;=\; \frac{\aBohr}{4(1+\sqrt{2})^2}
   \;=\; \frac{\aBohr}{12+8\sqrt{2}},
@@ -330,6 +339,22 @@ Eq.~\eqref{eq:force_balance}, $\oout = \sqrt{k_e e^2/(m_e\rout^3)} =
 \sqrt{k_e e^2/(8m_e\rin^3)}$.  Substituting and solving yields the
 exact algebraic condition given above.
 \end{proof}
+
+\begin{remark}[What the theorem does and does not show (Version 2.2)]
+The proof sets $L = \hbar/2$ and solves for $\rin$. Coulomb balance alone gives
+$L/(\hbar/2) = 2(1+\sqrt{2})\sqrt{\rin/\aBohr}$, a continuous family: nothing in the balance
+selects $\hbar/2$. The theorem therefore states the radius that $\hbar/2$ requires; it does
+not derive $\hbar/2$. The one reading with no input spin takes both radii from SPIN-2's
+anchoring points ($\rin = r_{\rm th}/3$, $\rout = 2r_{\rm th}/3$), where the pair carries
+$L = (1+\sqrt{2})\sqrt{\alpha/6}\,\hbar = 0.0842\,\hbar$, about one-sixth of the electron's spin;
+the radius of Eq.~\eqref{eq:rin} is 35.27 times further out, beyond the cloud radius where
+SPIN-2's anchoring applies. The magnetic moment of this carrier is $g = 3 - 2\sqrt{2}$
+(programme Patch 4286), not 2. Later programme rulings bear on the carrier: a CP has no mass
+of its own, only DP-arc inertia (founder, Patch 4288), and the elementary Planck-scale
+half-swing carries $\hbar/2$ (founder, Patches 4320/4325) --- which gives $\hbar/2$ a physical
+home but not yet a derivation of its size. In the programme, the electron's spin is presently
+an input.
+\end{remark}
 
 \begin{remark}[Numerical value]
 With $\aBohr = 5.2918\times 10^{-11}$~m and
@@ -370,7 +395,7 @@ $\oout$         & $1.0639\times 10^{23}$~rad/s
 $L$             & $5.2729\times 10^{-35}$~J$\cdot$s
                 & $m_e\oout\rin^2(2\sqrt{2}+4)$ & --- \\
 $\hbar/2$       & $5.2729\times 10^{-35}$~J$\cdot$s
-                & exact match & --- \\
+                & input (Thm.~\ref{thm:spin}) & --- \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -462,8 +487,10 @@ maps onto single-DP vs.\ double-DP capture in the CPP framework.
     condition.
   \item The \emph{ZBW non-radiation argument} (ZBW Mass companion,
     \S4.3) provides orbital stability.
-  \item The \emph{CP Exclusion Rule} (Absolute Moment companion)
-    provides the inner boundary node at $r = 0$.
+  \item The \emph{CP Exclusion Rule} (programme theorem registry, THEO-1 and
+    its corollary CORL-1a; Version~2.2 corrects the earlier attribution to the
+    Absolute Moment companion, which does not contain it) provides the inner
+    boundary node at $r = 0$.
   \item The \emph{fine structure constant} $\alpha$ (Stiffness~$C$
     companion, \S4.3) enters through $\aBohr = \rC/\alpha$.
 \end{itemize}
@@ -514,12 +541,12 @@ companion.
     $\rout = 2\rin$.  This ratio is independent of all physical
     constants.
 
-  \item \textbf{Spin quantization} (rigorous, Theorem~\ref{thm:spin}):
-    $L = \hbar/2$ exactly when $\rin = \aBohr/[4(1+\sqrt{2})^2]$.
-    The Bohr radius enters naturally as the Coulomb length scale at
-    the Compton frequency.  No free parameters.
+  \item \textbf{Radius for spin $\hbar/2$} (Theorem~\ref{thm:spin}):
+    $L = \hbar/2$ exactly when $\rin = \aBohr/[4(1+\sqrt{2})^2]$ --- with
+    $\hbar/2$ as the input that fixes the radius (Version~2.2). Read forwards
+    at SPIN-2's anchors, $L \approx 0.168\times\hbar/2$.
 
-  \item \textbf{Spin is emergent} (rigorous): spin $1/2$ is the
+  \item \textbf{Spin as orbital motion} (a model; Version~2.2: not a derivation of the value): spin $1/2$ is modelled as the
     orbital angular momentum of a captured Dipole Particle, not an
     intrinsic CP property.  The Standard Model's assignment of
     $s = 1/2$ to all fermions is a consequence of the universality of
@@ -534,11 +561,13 @@ companion.
     \hbar/2$.
 \end{enumerate}
 
-The derivation of the electron spin quantum number from the $1/r^2$
-force law, the 600-cell geometry, and the Compton scale --- with no
-free parameters --- is the central result of this paper.  It
-constitutes a first-principles geometric derivation of a quantity
-that quantum mechanics takes as axiomatic.
+The central result of this paper is a geometric carrier for the electron
+spin --- a captured Dipole Particle whose orbital angular momentum equals
+$\hbar/2$ at a definite radius. (Version~2.2: the earlier claim that this
+derives the spin quantum number with no free parameters is withdrawn; the value
+$\hbar/2$ enters as input, and read forwards the carrier holds about one-sixth
+of it. Deriving why the elementary action is $\hbar/2$ remains open in the
+programme.)
 
 %======================================================================
 \section*{Acknowledgments}

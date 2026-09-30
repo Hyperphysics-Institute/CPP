@@ -15,16 +15,14 @@
   ],
   "counts": {
     "total": 122,
-    "withheld": 6,
+    "withheld": 4,
     "eligible_now": 0
   },
   "never_deposit": [
     "flagship_papers/unification/sf-7_grand_unification.tex",
     "series_foundations/series_superdeterminism/SD-5_k0_derivation.tex",
     "series_phenomena/cosmology/dark_matter/DM-1/DM-1_substrate_dark_matter_candidate.tex",
-    "series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex",
-    "series_quantum_mechanics/spin_papers/SPIN-1_emergent_spin_from_captured_DPs/SPIN-1_emergent_spin_from_captured_DPs.tex",
-    "series_quantum_mechanics/spin_papers/SPIN-2_standing_wave_subharmonics/SPIN-2_standing_wave_subharmonics.tex"
+    "series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex"
   ],
   "waves": {
     "1": [
@@ -570,7 +568,7 @@
       "rel": "series_electroweak/papers/EW-1_electroweak_introduction.tex",
       "title": "Conscious Point Physics:",
       "ver": "1.1",
-      "changed": "2026-04-02",
+      "changed": "2026-09-30",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -583,7 +581,7 @@
         "creators": [
           "Thomas Lee Abshier, ND and Grok (x.AI) Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-04-02",
+        "publication_date": "2026-09-30",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -742,7 +740,7 @@
       "rel": "series_electroweak/papers/EW-5_electroweak_unification.tex",
       "title": "Conscious Point Physics:",
       "ver": "1.1",
-      "changed": "2026-04-02",
+      "changed": "2026-09-30",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -755,7 +753,7 @@
         "creators": [
           "Thomas Lee Abshier, ND and Grok (x.AI) Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-04-02",
+        "publication_date": "2026-09-30",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -873,7 +871,7 @@
       "rel": "series_foundations/dp_sea_composition/DP_sea_and_cage_composition.tex",
       "title": "Conscious Point Physics:",
       "ver": "6",
-      "changed": "2026-09-29",
+      "changed": "2026-09-30",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -886,7 +884,7 @@
         "creators": [
           "Thomas Lee Abshier, ND, and Grok (x.AI) Hyperphysics Research Institute"
         ],
-        "publication_date": "2026-09-29",
+        "publication_date": "2026-09-30",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -2133,7 +2131,7 @@
       "ver": "2",
       "changed": "2026-09-25",
       "cls": "Series paper",
-      "withheld": "unfinished: live TODO/FIXME scaffolding markers",
+      "withheld": "",
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
@@ -2152,12 +2150,12 @@
           "Physics"
         ],
         "version": "2",
-        "description": "We derive the electron spin quantum number $s = 1/2$ from first principles in Conscious Point Physics. An unpaired $-$eCP moving through the Dipole Sea captures a Dipole Particle (DP), placing the inner $+$CP at orbital radius $ $ and the outer $-$CP at $ = 2 $. The Coulomb force balance for circular orbits gives the exact angular frequency ratio: equation \\;=\\; 2 2, eq:ratio_abstract equation derived solely from the $1/r^2$ force law and the standing-wave boundary condition. The total orbital angular momentum of the captured DP is: equation L \\;=\\; m_e\\, \\, ^2\\,(2 2+4), eq:L_abstract equation which equals $ /2$ exactly when: equation \\;=\\; 4(1+ 2)^2 \\;=\\; 12+8 2, eq:rin_abstract equation where $ = ^2/(m_e k_e e^2)$ is the Bohr radius. This condition is shown to follow from the Coulomb force balance at the Compton scale. No free parameters are introduced. The mechanism extends naturally to all spin-$1/2$ Standard Model fermions via the same orbital geometry with DP type (eDP or qDP) appropriate to the particle. Spin is emergent, not intrinsic.",
+        "description": "We model the electron spin as the orbital angular momentum of a captured Dipole Particle in Conscious Point Physics, and find the orbital geometry at which it equals $ /2$. An unpaired $-$eCP moving through the Dipole Sea captures a Dipole Particle (DP), placing the inner $+$CP at orbital radius $ $ and the outer $-$CP at $ = 2 $. The Coulomb force balance for circular orbits gives the exact angular frequency ratio: equation \\;=\\; 2 2, eq:ratio_abstract equation derived solely from the $1/r^2$ force law and the standing-wave boundary condition. The total orbital angular momentum of the captured DP is: equation L \\;=\\; m_e\\, \\, ^2\\,(2 2+4), eq:L_abstract equation which equals $ /2$ exactly when: equation \\;=\\; 4(1+ 2)^2 \\;=\\; 12+8 2, eq:rin_abstract equation where $ = ^2/(m_e k_e e^2)$ is the Bohr radius. The value $ /2$ is the input that fixes this radius: the Coulomb force balance allows a circular pair at every radius, with $L$ growing as $ $ (Version~2.2). Read forwards instead --- with both radii at the standing-wave anchoring points of the companion paper SPIN-2 and no input spin --- the pair carries $L = (1+ 2) /6\\, 0.168 /2$. The mechanism extends naturally to all spin-$1/2$ Standard Model fermions via the same orbital geometry with DP type (eDP or qDP) appropriate to the particle. In this model spin is emergent (orbital), not intrinsic; its value $ /2$ is an input.",
         "description_ok": true,
         "description_source": "abstract environment"
       },
       "eligible": false,
-      "reason": "WITHHELD: unfinished: live TODO/FIXME scaffolding markers",
+      "reason": "not approved",
       "APPROVED": "",
       "CHANGE_CLASS": "",
       "RESERVED_DOI": "",
@@ -2167,7 +2165,7 @@
       "OSF_LINK": "",
       "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
       "RELATION": "isSupplementTo",
-      "COMMUNITY": "",
+      "COMMUNITY": "conscious-point-physics",
       "NOTES": ""
     },
     {
@@ -2176,7 +2174,7 @@
       "ver": "2",
       "changed": "2026-09-25",
       "cls": "Series paper",
-      "withheld": "unfinished: live TODO/FIXME scaffolding markers",
+      "withheld": "",
       "wave": 1,
       "cites": [],
       "wave_blocked_by": [],
@@ -2195,12 +2193,12 @@
           "Physics"
         ],
         "version": "2",
-        "description": "The Spin~I companion established that the electron spin quantum number $L = /2$ follows from the captured Dipole Particle orbital geometry given the condition $ = 2 $. We derive this condition from the standing-wave mode structure of the ZBW polarization cloud. The ZBW cloud constitutes a radial standing-wave resonator with a node at $r = 0$ (CP Exclusion Rule) and an antinode at the thermal boundary $ = /(2m_e c)$. The allowed modes are: equation _n(r) \\;=\\; (k_n r), k_n \\;=\\; (2n-1) 2 , n = 1,\\,2,\\,3, eq:modes_abstract equation The fundamental mode ($n=1$) has no interior structure. The first sub-harmonic ($n=2$) has an interior antinode at $ /3$ and an interior node at $2 /3$. The captured DP anchors its inner $+$CP at the interior antinode and its outer $-$CP at the interior node, giving: equation \\;=\\; 2 /3 /3 \\;=\\; 2. eq:ratio_abstract equation This ratio is independent of all physical constants and depends only on the integer arithmetic of the trigonometric zeros of the $n=2$ mode. This is exact and independent of all physical constants. Mode 2 is the minimum-energy mode that simultaneously provides an interior antinode and an interior node. The orbital scale differs from the ZBW cloud scale by the factor $6/[ 4(1+ 2)^2]$ where $ $ is the fine structure constant, connecting the Compton scale to the Bohr scale. The derivation of this scale connection from the 600-cell Voronoi eigenvalue spectrum is deferred to Spin~III.",
+        "description": "The Spin~I companion established that the electron spin quantum number $L = /2$ follows from the captured Dipole Particle orbital geometry given the condition $ = 2 $. We derive this condition from the standing-wave mode structure of the ZBW polarization cloud. The ZBW cloud constitutes a radial standing-wave resonator with a node at $r = 0$ (CP Exclusion Rule) and an antinode at the thermal boundary $ = /(2m_e c)$. The allowed modes are: equation _n(r) \\;=\\; (k_n r), k_n \\;=\\; (2n-1) 2 , n = 1,\\,2,\\,3, eq:modes_abstract equation The fundamental mode ($n=1$) has no interior structure. The first sub-harmonic ($n=2$) has an interior antinode at $ /3$ and an interior node at $2 /3$. The captured DP anchors its inner $+$CP at the interior antinode and its outer $-$CP at the interior node, giving: equation \\;=\\; 2 /3 /3 \\;=\\; 2. eq:ratio_abstract equation This ratio is independent of all physical constants and depends only on the integer arithmetic of the trigonometric zeros of the $n=2$ mode. This is exact and independent of all physical constants. Mode 2 is the minimum-energy mode that simultaneously provides an interior antinode and an interior node. The orbital scale differs from the ZBW cloud scale by the factor $6/[ 4(1+ 2)^2]$ where $ $ is the fine structure constant, connecting the Compton scale to the Bohr scale. The derivation of this scale connection from the 600-cell Voronoi eigenvalue spectrum is deferred to Spin~III. (Version~2.1: that connection takes the pair 35 times beyond the anchoring points that fix the ratio; see the Status note.)",
         "description_ok": true,
         "description_source": "abstract environment"
       },
       "eligible": false,
-      "reason": "WITHHELD: unfinished: live TODO/FIXME scaffolding markers",
+      "reason": "not approved",
       "APPROVED": "",
       "CHANGE_CLASS": "",
       "RESERVED_DOI": "",
@@ -2210,7 +2208,7 @@
       "OSF_LINK": "",
       "PARENT": "series_relativity/papers/SR-1_special_relativity_emergence.tex",
       "RELATION": "isSupplementTo",
-      "COMMUNITY": "",
+      "COMMUNITY": "conscious-point-physics",
       "NOTES": ""
     },
     {
@@ -2303,7 +2301,7 @@
       "rel": "series_relativity/SR_companion_papers/c02_dipole_stiffness_C/c02_dipole_stiffness_C.tex",
       "title": "Microscopic Origin of the Dipole Sea Stiffness C",
       "ver": "2.1",
-      "changed": "2026-09-29",
+      "changed": "2026-09-30",
       "cls": "Companion",
       "withheld": "",
       "wave": 1,
@@ -2316,7 +2314,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-29",
+        "publication_date": "2026-09-30",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",

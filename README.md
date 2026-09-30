@@ -21,10 +21,10 @@
 - **Calibrated:** the absolute W, Z and Higgs masses; the fine-structure constant (α = PSR/(2L) with one calibrated swing); the cosmological constant.
 - **Held pending critique:** SS-2 (proton radius and moment), SS-5, SS-6, SS-9.
 - **Derived conditionally:** the general static field equation of gravity with a Birkhoff-type uniqueness (GR-1j), on a constitutive form graded at W2 strength; the full nonlinear Einstein equations remain open.
-- **Not yet derived:** ħ (identified); spin ħ/2 (input); the electromagnetic constants (tuned toy model).
+- **Not yet derived:** ħ (identified); spin ħ/2 (input; the spin papers now say so); the electromagnetic constants (tuned toy model).
 - **Conjecture or primitive:** dark matter (a conjecture, far short of the needed clumping); the handedness of the weak interaction (a primitive).
 
-**Counts:** 9 axioms; 108 counted correspondences in the tally (60 of them conditional); 82 theorems + 9 corollaries; 128 papers in the tree, 122 deposit candidates, none yet deposited.
+**Counts:** 9 axioms; 108 counted correspondences in the tally (60 of them conditional); 82 theorems + 9 corollaries; 128 papers in the tree, 122 deposit candidates; a trial deposit has been made, the main deposit not yet.
 
 ---
 

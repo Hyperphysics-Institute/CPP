@@ -1,8 +1,7 @@
-% %%TODO: v1.x REVISION REQUIRED BEFORE DEPOSIT (Patch 4289). thm:ratio anchors the pair at the mode-2 antinode
-% r_th/3 and node 2 r_th/3; sec 'Scale Connection' then moves the pair to 35.27x those radii (11.8 and 23.5 r_th),
-% beyond r_th, where the mode-2 wave has no node or antinode, so r_out = 2 r_in has no anchoring basis at that scale.
-% At the anchoring radii themselves L = 0.168 hbar/2. See
-% series_standard_model/axiom_maturation/4289_spin_papers_hbar_half_is_input.md.
+% Version 2.1 — 30 September 2026 (Patch 4349): REVISED PER PATCH 4289 (hold released). The Scale Connection now states
+%   that moving the pair to Spin I's radius takes it 35.27x beyond its anchoring points, past the cloud radius r_th where
+%   the mode-2 wave that defines the anchors ends; the conclusion's "complete derivation ... with no free parameters"
+%   is withdrawn. The ratio result r_out = 2 r_in at the anchoring radii stands. At the anchors, L = 0.168 hbar/2.
 \documentclass[12pt]{article}
 
 \usepackage{amsmath,amssymb,amsthm}
@@ -49,7 +48,8 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{16 March 2026 --- Version~2}
+\date{16 March 2026 --- Version~2\\[2pt]
+{\small Version~2.1 --- 30 September 2026 (Patch 4349: the scale connection's limits stated; the complete-derivation claim withdrawn --- see \S\ref{sec:scale}.)}}
 
 \begin{document}
 \maketitle
@@ -127,7 +127,17 @@ cloud scale by the factor $6/[\alpha\cdot 4(1+\sqrt{2})^2]$ where
 $\alpha$ is the fine structure constant, connecting the Compton scale
 to the Bohr scale.  The derivation of this scale connection from the
 600-cell Voronoi eigenvalue spectrum is deferred to Spin~III.
+(Version~2.1: that connection takes the pair 35 times beyond the anchoring
+points that fix the ratio; see the Status note.)
 \end{abstract}
+
+\paragraph{Status note (Version 2.1, 30 September 2026).} The ratio $\rout = 2\rin$ holds at the anchoring
+radii $\rth/3$ and $2\rth/3$, where the mode-2 standing wave has its interior antinode and node; there the
+captured pair carries $L = (1+\sqrt{2})\sqrt{\alpha/6}\,\hbar \approx 0.168\times\hbar/2$. The absolute scale
+used by Spin~I is fixed by setting $L = \hbar/2$ (Spin~I Version~2.2), and it places the pair at $11.8\,\rth$ and
+$23.5\,\rth$ --- beyond the cloud radius $\rth$, where the mode-2 wave, and so the reason for the ratio, does not
+apply. The two papers therefore do not together derive the electron's spin: they give a carrier whose angular
+momentum is $\hbar/2$ at a radius that the value $\hbar/2$ itself selects (programme Patch 4289).
 
 %======================================================================
 \section{Introduction}
@@ -390,7 +400,9 @@ Numerical values:
 
 The ZBW sub-harmonic fixes the \emph{ratio} $\rout = 2\rin$ but not
 the absolute orbital scale.  The orbital scale is determined by the
-Coulomb force balance and spin quantization condition of Spin~I:
+Coulomb force balance together with the condition $L = \hbar/2$ of Spin~I
+(Version~2.1: that condition is an input, not a result --- Coulomb balance
+allows a circular pair at every radius):
 \begin{equation}
   \rin^{\rm (orbit)} \;=\; \frac{\aBohr}{4(1+\sqrt{2})^2}
   \;=\; 2.270\times 10^{-12}\ \text{m}.
@@ -452,9 +464,13 @@ foundation for Proposition~3.1 and Theorem~5.1 of Spin~I:
     Theorem~5.1).
 \end{enumerate}
 
-The two papers together constitute a complete derivation of the
-electron spin quantum number from CPP geometry and the Coulomb
-interaction, with no free parameters.
+(Version~2.1: the earlier sentence here --- that the two papers together
+constitute a complete derivation of the electron spin quantum number with no
+free parameters --- is withdrawn. Step~3 uses $L = \hbar/2$ to fix the scale, and
+at that scale, $35.27$ times the anchoring radii and beyond $\rth$, the anchoring
+that gives Step~1 its ratio no longer applies. What stands is the ratio at the
+anchors, and a carrier model whose angular momentum at the anchors is about
+one-sixth of $\hbar/2$.)
 
 %======================================================================
 \section{Consistency with Previous Companions}

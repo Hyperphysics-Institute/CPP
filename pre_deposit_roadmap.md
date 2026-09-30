@@ -155,3 +155,5 @@ recorded, surveyed at 4335.)
 - **4348 (item 0): CLOSED.** The zero-parameter sweep is complete; with the overview refreshed (4336–4337), the tally audited
   (4338), the cosmology wording swept (4340) and the gate passing, item 0's closing condition is met. Build readiness is
   tracked separately (compile_status.md: DP-Sea's figures).
+- **4349 (item 3):** SPIN-1 v2.2 and SPIN-2 v2.1 revised and released from the hold; SPIN-3 noted; spin sweep done.
+  Item 3's wording condition is met; the physics (why the elementary action is ħ/2) stays open (OPEN-QM-3).

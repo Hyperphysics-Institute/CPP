@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 29 September 2026 (Patch 4348: item 0 closed; EW-series Monte-Carlo Weinberg angle marked calibrated. Patch 4347: n_s pivot adopted (EU-1 v1.6.2); SS-7 fully-CPP RMS 1.77%; held SS papers carry status notes. Patch 4345: GR-1d V4 (echo withdrawn), GR-1i V1.0. Patch 4344: 122 deposit candidates (a development transcript excluded); build fixes. Patch 4343: catalog refreshed after the identifier-appendix regeneration. Patch 4342: catalog refreshed (Capotauro v2.4, SS-8 v1.4). Patch 4341: m_Z/m_W row corrected (SF-2 arithmetic erratum). Patch 4340: catalog refreshed after the cosmology wording sweep. Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
+**Last updated:** 29 September 2026 (Patch 4349: spin papers revised and released. Patch 4348: item 0 closed; EW-series Monte-Carlo Weinberg angle marked calibrated. Patch 4347: n_s pivot adopted (EU-1 v1.6.2); SS-7 fully-CPP RMS 1.77%; held SS papers carry status notes. Patch 4345: GR-1d V4 (echo withdrawn), GR-1i V1.0. Patch 4344: 122 deposit candidates (a development transcript excluded); build fixes. Patch 4343: catalog refreshed after the identifier-appendix regeneration. Patch 4342: catalog refreshed (Capotauro v2.4, SS-8 v1.4). Patch 4341: m_Z/m_W row corrected (SF-2 arithmetic erratum). Patch 4340: catalog refreshed after the cosmology wording sweep. Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
 Patch 0422B), with a 6 June 2026 EU-1 note.
 
 ---
@@ -13,7 +13,7 @@ Patch 0422B), with a 6 June 2026 EU-1 note.
 ratified clauses, count unchanged); 108 counted empirical correspondences (`predictions.md` Cumulative Swarm Tally, as
 of 6 June 2026, 60 of them conditional; PRED-C-96's quoted n_s updated to 0.9654 one-sided at 3852); 82 theorems + 9
 corollaries (`theorem-registry.md`); 122 papers in the deposit queue
-(`osf_deposit_queue.md`, 6 never-deposit); **nothing is deposited yet** — deposits go to the CERN repository (Zenodo)
+(`osf_deposit_queue.md`, 4 never-deposit); **a trial deposit has been made; the main deposit has not** — deposits go to the CERN repository (Zenodo)
 via Isak (CONV-012). What must be settled before the deposit is `pre_deposit_roadmap.md`.
 
 **What each headline rests on** (derived / calibrated / conditional / conjecture / input). A result is stated here at
@@ -32,7 +32,7 @@ the strength its own paper or registry gives it:
 | g_A (nucleon axial coupling) | **not pinned**: with one quark mass, 1.242–1.282; the r_p "prediction" withdrawn (4284) | `series_standard_model/axiom_maturation/4284…` |
 | α (fine-structure constant) | **calibrated relation**: α = PSR/(2L), one calibrated swing (CAL-ZBW1-SWING, 4326–4330); passes local position invariance, running has the right sign; running law needs a cloud model (4331) | `series_standard_model/axiom_maturation/4322–4331` |
 | ħ | **identified, not derived** (c03); the Planck ZBW half-swing carries ħ/2 (founder, 4320/4325; c04 v2.3) | c03, c04, 4300 |
-| Spin ħ/2 | **input** throughout; SPIN-1 and SPIN-2 **held from deposit** (4289) | TODO-4289-SPINREV |
+| Spin ħ/2 | **input** throughout; SPIN-1 v2.2 / SPIN-2 v2.1 now say so (4349) | SPIN-1, SPIN-2 |
 | G and the Planck mass | GR-1/GR-1a's "fixed by the 600-cell lattice, no free parameters" is **an overstatement** (TODO-4300-HBARSWEEP); the general static field equation, a Birkhoff-type uniqueness and a conserved source current are **derived conditionally** (GR-1j V1.0; OPEN-GR-FE-1 CLOSED at 3267, founder-confirmed) on the PSR constitutive form at W2 strength, k a registered normalisation; the full nonlinear Einstein equations + Λ remain open (OPEN-SR-4) | `frontier_sectors/GR.md`, GR-1j |
 | Exterior GR solutions (Schwarzschild, Kerr, Kerr–Newman) | reproduced as solutions; equations by correspondence only | GR series |
 | Special-relativistic ε(v) = γ − 1 | **recorded satisfied at W2 strength** for closed self-bound patterns (founder, 2502); theorem-grade debts remain | `frontier_sectors/SR.md` |
@@ -78,12 +78,12 @@ deposit** (APPROVED column empty for all 122). An earlier OSF project registrati
 
 | Series (folder) | Deposit candidates | Lead papers and current versions | Deposit status |
 |---|---|---|---|
-| Flagships (`flagship_papers/`) | 9 | SF-1 v1.3 (leptons), SF-2 v1.08 (electroweak; v1.09 owed), SF-3 v1.6 (quarks), SF-4 v3.4 (neutrinos — the "v4.4" of May was pre-ship numbering), SF-5 v1.04 (strong), SF-6 v1.6 (electromagnetism), SF-8 v0.5 (emergent Coulomb), SF-7 v0.11 | SF-7 **never deposit** (placeholder) |
+| Flagships (`flagship_papers/`) | 9 | SF-1 v1.3 (leptons), SF-2 v1.08.1 (electroweak; v1.09 owed), SF-3 v1.6 (quarks), SF-4 v3.4 (neutrinos — the "v4.4" of May was pre-ship numbering), SF-5 v1.04 (strong), SF-6 v1.6 (electromagnetism), SF-8 v0.5 (emergent Coulomb), SF-7 v0.11 | SF-7 **never deposit** (placeholder) |
 | Strong (`series_strong/`) | 15 | SS-1 (+1a–1f), SS-3 v1.7, SS-4 v0.4, SS-5 v1.2, SS-7 v1.6, SS-8 v1.0, SS-9 v1.3 | **SS-2, SS-5, SS-6, SS-9 held pending critique** (the 1.07/0.62 fm frame superseded by founder rulings 4275/4276; TODO-4264-PASSTHROUGH) |
 | Standard Model (`series_standard_model/`) | 14 | SM-1…SM-12, SM-TN-2 (SM-8 v4.1, SM-9 v2.4, SM-7 v2.5) | SM-3's all-tetrahedral-lepton premise vs founder 4212 open (TODO-4212-CAGETABLE) |
 | Gravitation (`series_gravitation/`) | 12 | GR-1 v1.0.3, GR-1a v3.1, GR-1c v2.4, GR-1b, GR-1d–1j (GR-1j v1.0: the field equations), GR-2 v2.11 | the OPEN-ORG-023 gate's FE-1 condition is **discharged** (3267); GR-1d → V4 carries the withdrawal of its echo prediction (AP-5); GR-1i V1.0 (4345) |
 | Relativity (`series_relativity/`) | 7 | SR-1 v1.2, SR-2 v1.5, companions c01–c05 (c03 v2.2, c04 v2.3) | publishable with theorem debts stated (roadmap item 6) |
-| Quantum mechanics (`series_quantum_mechanics/`) | 9 | QM-1…QM-6 (v3.x), SPIN-1/2/3 | **SPIN-1, SPIN-2 never deposit until revised** (ħ/2 taken as input; TODO-4289-SPINREV) |
+| Quantum mechanics (`series_quantum_mechanics/`) | 9 | QM-1…QM-6 (v3.x), SPIN-1/2/3 | SPIN-1 v2.2, SPIN-2 v2.1 revised and released (4349) |
 | Electroweak (`series_electroweak/`) | 5 | EW-1…EW-5 (v1.1) | — |
 | Foundations (`series_foundations/`) | 8 | SD-1…SD-5, TN-SR-1, DP-sea, silly-putty note | SD-5 **never deposit** (unfinished); TN-SR-1 only as the labelled conjecture it is |
 | Phenomena (`series_phenomena/`) | 5 | EU-1 v1.6, TP-1 v1.4, DM-1 v1.8, DM-2 v1.0, DM-3 v1.2 | **DM-1, DM-3 never deposit** (record, not release); DM-2 not approved |
@@ -227,7 +227,7 @@ the 2–10% shell width.
 | 0 | Honest labelling and this scorecard | TODO-4335-OVERVIEW | **closed 4348**: overview refreshed, tally audited, cosmology and zero-parameter wording swept (`wording_sweep_register.md`) |
 | 1 | Gravity: records into line (the FE-1 gate was discharged at 3267) | TODO-4339-GR1DECHO, TODO-4300-HBARSWEEP, TODO-4339-GR1IV1, OPEN-ORG-023 | done: wording 4339, GR-1d V4 and GR-1i V1.0 4345; trial deposit already done (founder) — its DOIs to be recorded (TODO-4346-TRIALDOIS) |
 | 2 | Lattice-to-SI scale; the PSR floor | OPEN-SD-lattice-scale | open; black-hole PSR vs l_P/2 now a factor 4.1 (4322), not re-adjudicated |
-| 3 | Spin and the unit of action | OPEN-QM-3, TODO-4289-SPINREV/SPINSWEEP | ħ/2 has a carrier (half-swing) but its size is calibrated; SPIN-1/2 held |
+| 3 | Spin and the unit of action | OPEN-QM-3 | wording done (4349: SPIN-1/2 revised and released); the physics — why the elementary action is ħ/2 — is open |
 | 4 | Layer B and the QM foundation | OPEN-SS-16, OPEN-QM-1-REGROUND, OPEN-QM-1 | open; conditions Koide and much of the strong sector |
 | 5 | Electromagnetic constants and α | OPEN-FP-6-CONSTANTS, CAL-ZBW1-SWING | α a calibrated relation with two tests; the running law needs a DP-arc cloud model |
 | 6 | SR residual theorem debt | OPEN-SR-10 (i), SF-6 debt (b) | not verdict-bearing; SR-1 publishable with debts stated |

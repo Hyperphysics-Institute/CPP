@@ -7,7 +7,7 @@
 
 ## Quantum Mechanics (QM) — 7 problems (6 QM + 1 quantum-optics phenomena)
 
-> **CROSS-LANE NOTE FROM THE GR LANE (Patch 3372, 2 Sep 2026) — citation corrigendum OWED in SPIN-1 (line ~460):**
+> **CROSS-LANE NOTE FROM THE GR LANE (Patch 3372, 2 Sep 2026) — citation corrigendum in SPIN-1 — DONE at Patch 4349 (SPIN-1 v2.2):**
 > "the CP Exclusion Rule (Absolute Moment companion) provides the inner boundary node at r = 0" — the referent is
 > `theorem-registry.md` **THEO-1 / CORL-1a**, not c01 (which never contained the rule). No physics change. Sweep:
 > `series_gravitation/rcore_derivation/3372_exclusion_dependency_sweep.md`.
@@ -176,7 +176,7 @@ Earlier status: NUMERICAL LEG MEASURED — **MODE2-RECOVERED** (Patch 3236, froz
 **Assumption A1 (FOUNDER RULING REQUESTED):** the domain — is the 24-cell the intended Voronoi cell of the GP lattice, a deliberate surrogate, or a stand-in to be replaced by the true GP-lattice Voronoi cell? The corrected run waits on this ruling (or runs both as a robustness pair if so ruled).
 **Second route:** the analytic 2I-symmetry selection argument named in the arc's development notes; independent of the numerical instrument.
 **Dependencies:** none blocking besides A1.
-**Paper(s):** SPIN-3 / Spin III (v1.0 SHIPPED Patch 3248; file `SPIN-3_600cell_voronoi_ZBW_eigenvalues.tex`, formerly spin-III_...); SPIN-1 / Spin I, SPIN-2 / Spin II (complete at continuum level independently of this item). Permanent IDs confirmed Session 150, Patch 3253.
+**Paper(s):** SPIN-3 / Spin III (v1.0 SHIPPED Patch 3248; file `SPIN-3_600cell_voronoi_ZBW_eigenvalues.tex`, formerly spin-III_...); SPIN-1 / Spin I, SPIN-2 / Spin II (revised at Patch 4349 — SPIN-1 v2.2, SPIN-2 v2.1: ħ/2 is the input that fixes the orbital radius, not a derived result; read forwards at the anchors the carrier holds 0.168 × ħ/2; holds released). Permanent IDs confirmed Session 150, Patch 3253.
 **Last updated:** 19 Aug 2026 (Patch 3234)
 
 ---
