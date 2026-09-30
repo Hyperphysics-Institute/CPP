@@ -286,7 +286,8 @@ owes a corrigendum.*
 |---|---|---|
 | CONJ-SM-9-1 | α = 3 − 1/φ ≈ 2.382 (scaling exponent) | 0.27% match, not derived |
 | CONJ-SM-9-2 | EW feedback ε ≈ α_geom/z² ≈ 0.003 in scaling exponent | Conjectured unification signal |
-| CONJ-SS-2-1 | σ = M₀zπ/(φ l_edge) = 243 MeV/fm (string tension) | Physically motivated, not rigorously derived |
+| CONJ-SS-2-1 | σ = M₀zπ/(φ l_edge) = 243 MeV/fm (string tension) | Physically motivated, not rigorously derived; **SUPERSEDED by CONJ-SS-5 (SS-4)**, recorded 4338 |
+| CONJ-SS-5 | σ = M₀z²/(φ l_edge) = 926.5 MeV/fm (string tension; SS-4 replaces SS-2's factor π by the vertex count z) | Physically motivated, not rigorously derived; carries PRED-C-31 |
 | CONJ-red-A5 | A5 → A2 (efficiency from geometry) | Plausible, needs proof |
 | CONJ-red-A10 | A10 → A2 + A6' (colour sign from energy minimisation) | Speculative |
 | CONJ-cage-Koide | Cage 2/3 fraction = Koide K = 2/3 (same origin) | Tantalising, unexplored |

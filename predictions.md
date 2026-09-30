@@ -1,6 +1,7 @@
 # CPP Predictions Registry
 
 **Repository location:** CPP root level (peer of `research_frontier.md`, `theorem-registry.md`)
+**Last updated:** 29 Sep 2026 (governance, Patch 4338, Session 241 — **audit status added to the tally (TODO-4337-TALLYHOLDS):** 20 counted rows rest on papers held pending critique (SS-2 ×6, SS-5 ×10, SS-9 ×4); PRED-C-27 and PRED-C-29a are calibrated in effect (A11 matching); the 12 SS-7 rows use the measured B(⁴He) as input; PRED-C-67's predicted value corrected 0.2312 → 0.23176; PRED-C-72's "1 calibration m_c" re-stated per SF-3; PRED-C-31 re-cited to CONJ-SS-5 (SS-4's own formula), CONJ-SS-2-1 superseded (TODO-4337-SIGMALINK). The headline count is unchanged; its basis is stated.)
 **Last updated:** 9 Sep 2026 (EU-lane, Patch 3852, Session 185 — **PRED-C-96's QUOTED VALUE UPDATED: 0.9649 ± 5×10⁻⁴ → 0.9654 (one-sided).** T-2 (3850) closes the O(α) coefficient as λ = α/κ exactly (κ ≡ kT_bath/E_Pl), and κ ≤ 1 because the substrate bath runs on the substrate clock, so λ ≥ α and the correction is a **one-sided systematic shift**, not a symmetric theory uncertainty: at the bath clause λ = α, Δn_s = +5.0×10⁻⁴, n_s = **0.9654**, 0.12σ from the Planck central value. Agreement is unchanged in quality. **The tilt derivation, the count law and the swarm count are all untouched**; conditionality is unchanged at three framework legs, because T-2's residual is κ — already the bath clause's own parameter. New empirical by-product recorded in EU-1 V1.6: agreement at Planck 1σ requires **kT_bath ≳ 0.1 E_Pl**. Registry follows the paper (EU-1 V1.6, Patch 3852), not the reverse.)
 **Last updated:** 9 Sep 2026 (Session 167, Patch 3804 — **PRED-C-96 (n_s) COMPATIBLE WITH AP-5 UNDER READING S: S-HENGINE-HELD v1.0 ENACTED (CONV-045 ADMISSIBLE 5–0).** Under R-STACK-SENDS-EACH the observable epoch is saturated by ~74 orders and D1 clips the acted-on displacement; the tilt survives because the H-engine reads the *held* sector (μ = kT ln n̄, D4-conserved, D3-relayed), the unique consistent identification of 0746 fork (i) with AP-5's held sector (a bridge statement, not entailment — CONV-045 minority adopted). Conditionality: three framework legs unchanged in number, the third (count-driven coupling) RESTATED as S-HENGINE-HELD; the operational Reading-P / κ < κ_cap gate (3695/3708) REMOVED. New sub-condition of the bath-clause leg: OPEN-EU-BATH-DEPTH-1 (rate bound on the lag of μ behind n̄ at depth ~10⁷⁴; owed). Swarm UNCHANGED at 108. Files: `series_phenomena/cosmology/early_universe/hengine_driver_statement.md`, `review/reviews-CONV-045.md`.) Previous: 8 Sep 2026 (Session 166, Patch 3706 — **PRED-O-41 WITHDRAWN (no stored energy reaches a de-saturating region); the AP-5 GW sector is GR's exactly.** Previous: Patch 3705 — **PRED-O-40 WITHDRAWN as discriminating (Λ̃ ≈ 0 under DRAIN, 3703); NS rising-radius knee withdrawn, M_max ×1.3 at fixed EOS survives as an EOS-degenerate fingerprint (3704).** Previous: Patch 3699 — **AP-5 RATIFIED (CONV-044 5–0): PRED-O-39 → NULL (ringdown GR's, no echo; GW250114 locked search consistent), PRED-O-40 → 0 < Λ̃ ≲ 1.7 (bound with non-zero floor), PRED-O-41 registered as a candidate (transient release burst). Swarm UNCHANGED.**) Previous: 7 Sep 2026 (Session 165, Patch 3673 — **(2,+1) LOCATED (3672): the complex ray on CD Z⁺ at Kerr; retrograde-keyed ORDERING at exact grade for the model walls; GR-2 → V2.7. PRED-O-39 (e) restated.** Swarm UNCHANGED.)
 - 7 Sep 2026 (Session 165, Patch 3671 — **OPEN-GR-SURFACE-IMPEDANCE-1 RE-CUT (3670): "|R| ≈ 0.53 = the horizon's own from 8M/3" withdrawn (mixed-frequency number); s = 3.22 identified as GR's ℓ = 2 pole admittance; no passive surface meets the pole target at Kerr (Im β > 0); CANDIDATE-S-AREA withdrawn; GR-2 → V2.6. PRED-O-39 bracket appended.** Swarm UNCHANGED.)
@@ -69,6 +70,15 @@ The 108 figure separates into:
 
 The 105 figure is the count of empirical correspondences that survive a hostile-reviewer audit of "is this a CPP-derived result, or a CPP-accommodated input?" — see Methodology subsection below. Two additional entries (3 lepton generations, 3 quark generations) are explicitly excluded as accommodations of Standard Model input rather than derivations from the 600-cell.
 
+### Audit status (Patch 4338, 29 September 2026 — read this with the headline)
+
+The headline count is kept, and what it rests on is stated here (from the row-by-row audit in `theory-overview.md`, 4337):
+
+- **"Zero-parameter" is not true of every entry.** The mass rows use the electron-mass calibration (m_e); the SS-9 rows (PRED-C-75–78) use the satellite-regime B_slip calibrated on ⁵⁶Ni; PRED-C-27 (α_s(m_H)) and PRED-C-29a (Λ_QCD) are **calibrated in effect** through A11's α_s(m_Z) matching (SS-2's own table marks α_s(m_Z) as the calibration). The m_c calibration of the May headline is superseded: SF-3 derives m_c on m_e alone.
+- **20 counted rows rest on papers held pending critique** (founder rulings 4275/4276 superseded the nucleon frame; TODO-4264-PASSTHROUGH): SS-2 — PRED-C-25, 26, 27, 29a, 29b, 74; SS-5 — PRED-C-32 to 41; SS-9 — PRED-C-75 to 78. Held is not withdrawn; each row is tagged **HELD (4338)**.
+- **The 12 SS-7 rows (PRED-C-42 to 53) use the measured B(⁴He) = 28.296 MeV as an input** (the paper's own table caption; its LO-CPP variant uses SS-5's 27.904 MeV). Under this file's own methodology ("CPP-derived result, or CPP-accommodated input?") that is an accommodated input; each row is tagged.
+- **Read at its own tiers:** 23 unconditional quantitative, 60 conditional quantitative, 12 exact, 4 structural, 9 qualitative. The tier table below has **not** been re-sorted for the held and calibrated-in-effect rows; the per-row tags are authoritative until it is.
+
 ### Breakdown by validation tier
 
 | Tier | Count | Description |
@@ -119,7 +129,7 @@ The 105 figure is the count of empirical correspondences that survive a hostile-
 
 55 of 78 quantitative numerical entries (71%) are conditional on paper-level structural hypothesis stacks. The conditionality cascade:
 
-- **PRED-C-31 (string tension σ, SS-4):** conditional on CONJ-SS-2-1 (string-tension formula; not yet rigorously derived).
+- **PRED-C-31 (string tension σ, SS-4):** conditional on CONJ-SS-5, SS-4's σ = M₀z²/(φ l_edge) (not yet rigorously derived; the z² for zπ replacement is physically motivated). Before 4338 this line cited CONJ-SS-2-1, SS-2's different formula (243 MeV/fm), which SS-4 supersedes.
 - **PRED-C-42 through PRED-C-53 (12 entries, SS-7 v1.2):** conditional on C1 (alpha rigidity), C2 (alpha-alpha base-to-base contact), C3 (K₃ collective mode at alpha-alpha contact), C4 (simplicial polytope connectivity). C4 derivation = OPEN-SS-24.
 - **PRED-C-54 through PRED-C-66 (42 contributions, SS-8 v1.0):** 12 primary single entries (PRED-C-54 through PRED-C-65) + the **PRED-C-66 composite** (one ID counting as 30 contributions per the paper's own count; see §1 footnote ‡) = 42 contributions. Conditional on C1–C4 (inherited from SS-7) plus D1 (proximity-binding), D2 (K₃-edge coupling at host vertex), D3 (bulk-regime averaging). D1 is itself a conditional theorem at Level-1+2 independence; Level-3 = OPEN-SS-26 partial. *(Correction, Patch 0787: this entry previously read "PRED-C-54 through PRED-C-95 (42 entries)" — a conflation of the 42-contribution count with the 42-ID span 54–95 [95−54+1 = 42]; SS-8 actually occupies IDs 54–66 via the composite. The 75–78 IDs in that nominal range are SS-9 alpha-chain, not SS-8 — see next bullet.)*
 - **PRED-C-75 through PRED-C-78 (4 entries, SS-9 alpha-chain):** satellite-regime binding-energy predictions (⁸⁴Mo / ⁸⁸Ru direct via Kimura+2025; ⁹²Pd / ⁹⁶Cd via AME 2020), conditional on the satellite-regime $B_{\text{slip}}$ calibration (calibrated from ⁵⁶Ni). Registered 2 May 2026 (Session 5, PRED-O-19/20 verification), additional to the 26-Apr 103. Reconciled into the by-tier/by-series tables at Patch 0787 (reading (i) maintainer ruling) — they had been in the headline (108) but not the tier total (104) since 2 May, the source of the old 4-entry gap.
@@ -191,37 +201,37 @@ These are results CPP derives independently that agree with measurement.
 | PRED-C-22 | Attractive fraction = 2/3 (all cages) | 2/3 | — | Structural | SM-8 v4.1 |
 | PRED-C-23 | Charge census 1:1:2:2 | exact | — | Structural | SM-8 v4.1 |
 | PRED-C-24 | Top quark non-hadronization | Shell 4 cage too open | observed | Qualitative | SM-8 v4.1 |
-| PRED-C-25 | r_proton | 0.883 fm | 0.841 fm | +5.0% | SS-2 |
-| PRED-C-26 | μ_proton | 2.789 μ_N | 2.793 μ_N | −0.1% | SS-2 |
-| PRED-C-27 | α_s(m_H) | 0.1132 | 0.1130 | +0.2% | SS-2 |
+| PRED-C-25 | r_proton | 0.883 fm | 0.841 fm | +5.0% | SS-2 · **HELD (4338)**: SS-2 pending critique |
+| PRED-C-26 | μ_proton | 2.789 μ_N | 2.793 μ_N | −0.1% | SS-2 · **HELD (4338)**: SS-2 pending critique |
+| PRED-C-27 | α_s(m_H) | 0.1132 | 0.1130 | +0.2% | SS-2 · **HELD (4338)**: SS-2 pending critique; calibrated in effect (A11 α_s(m_Z) matching) |
 | PRED-C-28 | SU(3) is the unique gauge group of 3 colour states | exact | — | Structural | SS-3 |
 | PRED-C-29 | No exotic gauge group (SO(8), Sp(4), G₂) from cage | exact | — | Structural | SS-3 |
 | PRED-C-30 | Exactly 3 colours (not 2 or 4) from 600-cell tetrahedra | exact | — | Structural | SS-3 |
-| PRED-C-29a | Λ_QCD | 335 MeV | ~330 MeV | +2% | SS-2 |
-| PRED-C-29b | μ_neutron | −1.847 μ_N | −1.913 μ_N | −3.4% | SS-2 |
-| PRED-C-31 | String tension σ (Cornell fit) | 926.5 MeV/fm | ~910 MeV/fm | +1.8% | SS-4 v0.1 |
-| PRED-C-32 | **Deuteron binding energy B_d** | **2.342 MeV** | **2.22457 MeV** | **+5.3%** | **SS-5 v6** |
-| PRED-C-33 | **Triton binding energy B(³H)** | **8.474 MeV** | **8.482 MeV** | **−0.09%** | **SS-5 v6** |
-| PRED-C-34 | **³He binding energy B(³He)** | **7.642 MeV** | **7.718 MeV** | **−1.0%** | **SS-5 v6** |
-| PRED-C-35 | **⁴He binding energy B(⁴He)** | **27.904 MeV** | **28.296 MeV** | **−1.4%** | **SS-5 v6** |
-| PRED-C-36 | Diproton ²He unbound | Unbound (qual.) | Unbound | Exact (qual.) | SS-5 v6 |
-| PRED-C-37 | Dineutron ²n unbound | Unbound (qual.) | Unbound | Exact (qual.) | SS-5 v6 |
-| PRED-C-38 | Deuteron I=0, S=1 channel | Forced by K₃ contact antisymmetry | I=0, S=1 observed | Exact (qual.) | SS-5 v6 |
-| PRED-C-39 | **⁵He unbound (S_n < 0)** | Unbound | $S_n = -0.89$ MeV | Exact (qual.) | **SS-5 v6** |
-| PRED-C-40 | **⁵Li unbound (S_p < 0)** | Unbound | $S_p = -1.97$ MeV | Exact (qual.) | **SS-5 v6** |
-| PRED-C-41 | **⁸Be near-threshold unbound** | Near-threshold unbound | $-92$ keV | Exact (qual.) | **SS-5 v6** |
-| PRED-C-42 | **${}^{12}$C binding energy** | **91.915 MeV** | 92.162 MeV | **−0.27%** | **SS-7 v1.2** |
-| PRED-C-43 | **${}^{16}$O binding energy** | **127.237 MeV** | 127.619 MeV | **−0.30%** | **SS-7 v1.2** |
-| PRED-C-44 | **${}^{20}$Ne binding energy** | **162.560 MeV** | 160.645 MeV | **+1.19%** | **SS-7 v1.2** |
-| PRED-C-45 | **${}^{24}$Mg binding energy** | **197.883 MeV** | 198.257 MeV | **−0.19%** | **SS-7 v1.2** |
-| PRED-C-46 | **${}^{28}$Si binding energy** | **233.205 MeV** | 236.537 MeV | **−1.41%** | **SS-7 v1.2** |
-| PRED-C-47 | **${}^{32}$S binding energy** | **268.528 MeV** | 271.781 MeV | **−1.20%** | **SS-7 v1.2** |
-| PRED-C-48 | **${}^{36}$Ar binding energy** | **303.851 MeV** | 306.716 MeV | **−0.93%** | **SS-7 v1.2** |
-| PRED-C-49 | **${}^{40}$Ca binding energy** | **339.173 MeV** | 342.052 MeV | **−0.84%** | **SS-7 v1.2** |
-| PRED-C-50 | **${}^{44}$Ti binding energy** | **374.490 MeV** | 375.475 MeV | **−0.26%** | **SS-7 v1.2** |
-| PRED-C-51 | **${}^{48}$Cr binding energy** | **409.812 MeV** | 411.462 MeV | **−0.40%** | **SS-7 v1.2** |
-| PRED-C-52 | **${}^{52}$Fe binding energy** | **445.134 MeV** | 447.696 MeV | **−0.57%** | **SS-7 v1.2** |
-| PRED-C-53 | **${}^{56}$Ni binding energy** | **480.456 MeV** | 483.990 MeV | **−0.73%** | **SS-7 v1.2** |
+| PRED-C-29a | Λ_QCD | 335 MeV | ~330 MeV | +2% | SS-2 · **HELD (4338)**: SS-2 pending critique; calibrated in effect (A11 α_s(m_Z) matching) |
+| PRED-C-29b | μ_neutron | −1.847 μ_N | −1.913 μ_N | −3.4% | SS-2 · **HELD (4338)**: SS-2 pending critique |
+| PRED-C-31 | String tension σ (Cornell fit) | 926.5 MeV/fm | ~910 MeV/fm | +1.8% | SS-4 v0.1 · rests on CONJ-SS-5 (SS-4); CONJ-SS-2-1 superseded (4338) |
+| PRED-C-32 | **Deuteron binding energy B_d** | **2.342 MeV** | **2.22457 MeV** | **+5.3%** | **SS-5 v6** · **HELD (4338)**: SS-5 pending critique |
+| PRED-C-33 | **Triton binding energy B(³H)** | **8.474 MeV** | **8.482 MeV** | **−0.09%** | **SS-5 v6** · **HELD (4338)**: SS-5 pending critique |
+| PRED-C-34 | **³He binding energy B(³He)** | **7.642 MeV** | **7.718 MeV** | **−1.0%** | **SS-5 v6** · **HELD (4338)**: SS-5 pending critique |
+| PRED-C-35 | **⁴He binding energy B(⁴He)** | **27.904 MeV** | **28.296 MeV** | **−1.4%** | **SS-5 v6** · **HELD (4338)**: SS-5 pending critique |
+| PRED-C-36 | Diproton ²He unbound | Unbound (qual.) | Unbound | Exact (qual.) | SS-5 v6 · **HELD (4338)**: SS-5 pending critique |
+| PRED-C-37 | Dineutron ²n unbound | Unbound (qual.) | Unbound | Exact (qual.) | SS-5 v6 · **HELD (4338)**: SS-5 pending critique |
+| PRED-C-38 | Deuteron I=0, S=1 channel | Forced by K₃ contact antisymmetry | I=0, S=1 observed | Exact (qual.) | SS-5 v6 · **HELD (4338)**: SS-5 pending critique |
+| PRED-C-39 | **⁵He unbound (S_n < 0)** | Unbound | $S_n = -0.89$ MeV | Exact (qual.) | **SS-5 v6** · **HELD (4338)**: SS-5 pending critique |
+| PRED-C-40 | **⁵Li unbound (S_p < 0)** | Unbound | $S_p = -1.97$ MeV | Exact (qual.) | **SS-5 v6** · **HELD (4338)**: SS-5 pending critique |
+| PRED-C-41 | **⁸Be near-threshold unbound** | Near-threshold unbound | $-92$ keV | Exact (qual.) | **SS-5 v6** · **HELD (4338)**: SS-5 pending critique |
+| PRED-C-42 | **${}^{12}$C binding energy** | **91.915 MeV** | 92.162 MeV | **−0.27%** | **SS-7 v1.2** · uses measured B(⁴He) = 28.296 MeV as input (4338) |
+| PRED-C-43 | **${}^{16}$O binding energy** | **127.237 MeV** | 127.619 MeV | **−0.30%** | **SS-7 v1.2** · uses measured B(⁴He) = 28.296 MeV as input (4338) |
+| PRED-C-44 | **${}^{20}$Ne binding energy** | **162.560 MeV** | 160.645 MeV | **+1.19%** | **SS-7 v1.2** · uses measured B(⁴He) = 28.296 MeV as input (4338) |
+| PRED-C-45 | **${}^{24}$Mg binding energy** | **197.883 MeV** | 198.257 MeV | **−0.19%** | **SS-7 v1.2** · uses measured B(⁴He) = 28.296 MeV as input (4338) |
+| PRED-C-46 | **${}^{28}$Si binding energy** | **233.205 MeV** | 236.537 MeV | **−1.41%** | **SS-7 v1.2** · uses measured B(⁴He) = 28.296 MeV as input (4338) |
+| PRED-C-47 | **${}^{32}$S binding energy** | **268.528 MeV** | 271.781 MeV | **−1.20%** | **SS-7 v1.2** · uses measured B(⁴He) = 28.296 MeV as input (4338) |
+| PRED-C-48 | **${}^{36}$Ar binding energy** | **303.851 MeV** | 306.716 MeV | **−0.93%** | **SS-7 v1.2** · uses measured B(⁴He) = 28.296 MeV as input (4338) |
+| PRED-C-49 | **${}^{40}$Ca binding energy** | **339.173 MeV** | 342.052 MeV | **−0.84%** | **SS-7 v1.2** · uses measured B(⁴He) = 28.296 MeV as input (4338) |
+| PRED-C-50 | **${}^{44}$Ti binding energy** | **374.490 MeV** | 375.475 MeV | **−0.26%** | **SS-7 v1.2** · uses measured B(⁴He) = 28.296 MeV as input (4338) |
+| PRED-C-51 | **${}^{48}$Cr binding energy** | **409.812 MeV** | 411.462 MeV | **−0.40%** | **SS-7 v1.2** · uses measured B(⁴He) = 28.296 MeV as input (4338) |
+| PRED-C-52 | **${}^{52}$Fe binding energy** | **445.134 MeV** | 447.696 MeV | **−0.57%** | **SS-7 v1.2** · uses measured B(⁴He) = 28.296 MeV as input (4338) |
+| PRED-C-53 | **${}^{56}$Ni binding energy** | **480.456 MeV** | 483.990 MeV | **−0.73%** | **SS-7 v1.2** · uses measured B(⁴He) = 28.296 MeV as input (4338) |
 | PRED-C-54 | $\Delta_1$ (interstitial-n binding) at $N_\alpha=3$, $N_\text{ex}=2$ † | 4.68 MeV | 6.67 MeV | −29.8% (planar deg., H5′) | SS-8 v1.0 |
 | PRED-C-55 | $\Delta_1$ at $N_\alpha=4$ (${}^{18}$O), $N_\text{ex}=2$ † | 7.03 MeV | 6.28 MeV | +11.9% | SS-8 v1.0 |
 | PRED-C-56 | $\Delta_1$ at $N_\alpha=5$, $N_\text{ex}=2$ † | 8.43 MeV | 7.61 MeV | +10.8% | SS-8 v1.0 |
@@ -235,18 +245,18 @@ These are results CPP derives independently that agree with measurement.
 | PRED-C-64 | $\Delta_1$ at $N_\alpha=13$, $N_\text{ex}=2$ † | 11.90 MeV | 13.33 MeV | −10.7% | SS-8 v1.0 |
 | PRED-C-65 | $\Delta_1$ at $N_\alpha=14$ (${}^{58}$Ni), $N_\text{ex}=2$ † | 12.04 MeV | 13.00 MeV | −7.4% | SS-8 v1.0 |
 | PRED-C-66 | SS-8 secondary $N_\alpha \times N_\text{ex}$ extension grid (30 cells) †‡ | $(6-12/N_\alpha)\cdot B_\text{pair} \cdot N_\text{ex}^{H4'}$ | per Table tab:ext-nex | 7–15% (precision-degraded; 4 cells data-pending) | SS-8 v1.0 |
-| PRED-C-67 | sin²θ_W (Weinberg angle) | 3/(8φ) = 0.2312 | 0.23121 | 0.24% | SM-6 |
+| PRED-C-67 | sin²θ_W (Weinberg angle) | 3/(8φ) = 0.23176 | 0.23122 (MS-bar) | +0.24% | SM-6 · predicted value corrected from 0.2312 (which was the observed value) at 4338 |
 | PRED-C-68 | θ (Koide phase, leptons) | 132.731° | 132.732° | 0.003% | SM-6 |
 | PRED-C-69 | m_μ (derived, K3 spectral, 1 calibration m_e) | 105.47 MeV | 105.66 MeV | 0.18% | SM-6 |
 | PRED-C-70 | m_τ (derived, K3 spectral, 1 calibration m_e) | 1774.1 MeV | 1776.9 MeV | 0.15% | SM-6 |
 | PRED-C-71 | α_s (cage scale) | 5/(8φ) = 0.386 | ~0.38 | ~1% | SM-7 |
-| PRED-C-72 | θ_quark (Koide phase, heavy quarks, 1 calibration m_c) | 124.035° | 124.094° | 0.048% | SM-7 |
+| PRED-C-72 | θ_quark (Koide phase, heavy quarks) | 124.035° | 124.094° | 0.048% | SM-7 · the phase needs no mass calibration (SF-3 Prop. 5.1, a proposition); the May label "1 calibration m_c" is superseded — SF-3 derives m_c on m_e (4338) |
 | PRED-C-73 | C(n,2) → m_b/m_s ratio (frontier signal) | 45.0 | 44.75 | 0.6% | SM-8/frontier |
-| PRED-C-74 | r²_neutron (neutron charge radius squared) | −0.1161 fm² | −0.1161 fm² | exact | SS-2 (A11+δ) |
-| PRED-C-75 | $B(^{84}\text{Mo})$ from satellite-regime formula (PRED-O-19 forward prediction confirmed) | 698.92 MeV | 699.27 MeV (Kimura+2025, ME = $-54137 \pm 22$ keV, FIRST direct measurement) | 0.05% | SS-9 sketches/SS-9_PRED-O-19_verification.md |
-| PRED-C-76 | $B(^{88}\text{Ru})$ from satellite-regime formula (PRED-O-19 forward prediction confirmed) | 729.56 MeV | 730.10 MeV (Kimura+2025, ME = $-54250 \pm 19$ keV, FIRST direct measurement) | 0.07% | SS-9 sketches/SS-9_PRED-O-19_verification.md |
-| PRED-C-77 | $B(^{92}\text{Pd})$ from satellite-regime formula (PRED-O-20 confirmed at extrapolation level; direct measurement would strengthen) | 760.20 MeV | 761.15 MeV (AME 2020 evaluation, ME = $-54576.23$ keV; chemlin.org / AME 2020 vintage) | 0.13% (extrapolation-match) | SS-9 sketches/SS-9_AME2020_lookup_92Pd_96Cd.md |
-| PRED-C-78 | $B(^{96}\text{Cd})$ from satellite-regime formula (PRED-O-20 confirmed at extrapolation level; deviation $+2.56$ MeV consistent with shell-closure approach to $^{100}$Sn) | 790.84 MeV | 793.40 MeV (AME 2020 evaluation, ME $\approx -56104$ keV; periodictable.com) | 0.32% (extrapolation-match) | SS-9 sketches/SS-9_AME2020_lookup_92Pd_96Cd.md |
+| PRED-C-74 | r²_neutron (neutron charge radius squared) | −0.1161 fm² | −0.1161 fm² | exact | SS-2 (A11+δ) · **HELD (4338)**: SS-2 pending critique |
+| PRED-C-75 | $B(^{84}\text{Mo})$ from satellite-regime formula (PRED-O-19 forward prediction confirmed) | 698.92 MeV | 699.27 MeV (Kimura+2025, ME = $-54137 \pm 22$ keV, FIRST direct measurement) | 0.05% | SS-9 sketches/SS-9_PRED-O-19_verification.md · **HELD (4338)**: SS-9 pending critique; B_slip calibrated on ⁵⁶Ni |
+| PRED-C-76 | $B(^{88}\text{Ru})$ from satellite-regime formula (PRED-O-19 forward prediction confirmed) | 729.56 MeV | 730.10 MeV (Kimura+2025, ME = $-54250 \pm 19$ keV, FIRST direct measurement) | 0.07% | SS-9 sketches/SS-9_PRED-O-19_verification.md · **HELD (4338)**: SS-9 pending critique; B_slip calibrated on ⁵⁶Ni |
+| PRED-C-77 | $B(^{92}\text{Pd})$ from satellite-regime formula (PRED-O-20 confirmed at extrapolation level; direct measurement would strengthen) | 760.20 MeV | 761.15 MeV (AME 2020 evaluation, ME = $-54576.23$ keV; chemlin.org / AME 2020 vintage) | 0.13% (extrapolation-match) | SS-9 sketches/SS-9_AME2020_lookup_92Pd_96Cd.md · **HELD (4338)**: SS-9 pending critique; B_slip calibrated on ⁵⁶Ni |
+| PRED-C-78 | $B(^{96}\text{Cd})$ from satellite-regime formula (PRED-O-20 confirmed at extrapolation level; deviation $+2.56$ MeV consistent with shell-closure approach to $^{100}$Sn) | 790.84 MeV | 793.40 MeV (AME 2020 evaluation, ME $\approx -56104$ keV; periodictable.com) | 0.32% (extrapolation-match) | SS-9 sketches/SS-9_AME2020_lookup_92Pd_96Cd.md · **HELD (4338)**: SS-9 pending critique; B_slip calibrated on ⁵⁶Ni |
 | PRED-C-96§ | Scalar spectral index $n_s = 1 - 2/N_*$ (primordial inflationary tilt; $N_* \approx 57$ from $N_{\text{CP}} \approx 10^{80}$; zero free parameters) | $\mathbf{0.9654}$ (one-sided; see note) | $0.9649 \pm 0.0042$ (Planck 2018) | Red tilt $\sim 2/N_*$ robust; **updated at Patch 3852 (EU-1 V1.6)**: the $O(\alpha)$ correction is a *systematic shift*, not a symmetric uncertainty — $\lambda = \alpha/\kappa$ with $\kappa \le 1$, so $\Delta n_s = +5.0\times10^{-4}$ at the bath clause and the value is $0.9654$, $0.12\,\sigma$ from the Planck central. Prior versions quoted $0.9649 \pm 0.0005_{\text{theory}}$. Well within errors | n_s arc, `series_phenomena/cosmology/early_universe/EU-1/` (Patches 0742–0784, **EU-1 v1.0 SHIPPED**); §6 cosmology row |
 
 **Footnotes for §1:**
@@ -470,7 +480,7 @@ Quick reference map of which paper contributes which predictions.
 | SS-1 | PRED-C-8 to PRED-C-13 (SU(3), gluons, β₀, α_geom, Ω⁻, K(c,b,t)), PRED-O-5 to PRED-O-7, PRED-O-13 to PRED-O-15 |
 | SS-2 | PRED-C-25 to PRED-C-27 (r_proton, μ_proton, α_s(m_H)), PRED-C-29a (Λ_QCD), PRED-C-29b (μ_neutron), PRED-C-74 (r²_neutron) |
 | SS-3 | PRED-C-28 (SU(3) uniqueness theorem), PRED-C-29 (no exotic gauge group), PRED-C-30 (exactly 3 colours) |
-| SS-4 | PRED-C-31 (string tension σ, conditional on CONJ-SS-2-1) |
+| SS-4 | PRED-C-31 (string tension σ, conditional on CONJ-SS-5) |
 | SS-5 | PRED-C-32 to PRED-C-35 (light nuclei binding ²H, ³H, ³He, ⁴He), PRED-C-36 to PRED-C-41 (qualitative bound/unbound results) |
 | SS-7 | PRED-C-42 to PRED-C-53: twelve concurrent zero-parameter binding-energy predictions for strict N=Z alpha-chain nuclei (¹²C through ⁵⁶Ni) at N_α ∈ [3,14]; RMS 0.80%; conditional on C1–C4 |
 | SS-8 | PRED-C-54 to PRED-C-65 (12 primary $\Delta_1$ at $N_\text{ex}=2$, $N_\alpha \in [3,14]$), PRED-C-66 (composite secondary $N_\alpha \times N_\text{ex}$ extension grid, 30 cells); all conditional on C1–C4 + D1–D3 |

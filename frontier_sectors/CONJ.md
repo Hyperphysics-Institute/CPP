@@ -160,8 +160,18 @@ Proposed answers that exist but are not yet proved from CPP axioms.
 
 ---
 
+### CONJ-SS-5: String Tension σ = M₀z²/(φ l_edge)
+**Status:** CONJECTURE (registered in SS-4 v0.1, 16 April 2026; entered in this file at Patch 4338 — the registries had kept citing CONJ-SS-2-1)
+**Sector(s):** SS
+**One-line statement:** SS-2's heuristic σ = M₀zπ/(φ l_edge) = 243 MeV/fm is 3.75× short of the Cornell value; replacing the continuum factor π by the discrete vertex count z = 12 gives σ = M₀z²/(φ l_edge) = 926.5 MeV/fm (+1.8% vs ~910). The replacement is physically motivated, not derived.
+**Dependencies:** OPEN-SS-5 (the remaining rigorous step)
+**Paper(s):** SS-4; carries PRED-C-31
+**Supersedes:** CONJ-SS-2-1
+
+---
+
 ### CONJ-SS-2-1: String Tension σ = M₀zπ/(φ l_edge)
-**Status:** CONJECTURE
+**Status:** SUPERSEDED by CONJ-SS-5 (SS-4, April 2026; recorded here at Patch 4338). Retained for provenance.
 **Sector(s):** SS
 **One-line statement:** Physically motivated formula (z bonds × π orbit × 1/φ attenuation) giving σ = 243 MeV/fm.
 **Dependencies:** OPEN-SS-5

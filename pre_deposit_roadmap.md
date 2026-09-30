@@ -118,3 +118,5 @@ recorded, surveyed at 4335.)
 - **4337 (item 0, stage 2):** theory-overview.md fully refreshed (results re-audited row by row with a basis column);
   README headlines refreshed; the overview gate passes. Item 0 stays open for TODO-4337-TALLYHOLDS, TODO-4337-SIGMALINK and
   the corpus-wide wording sweep.
+- **4338 (item 0):** predictions.md tally audited in place (holds, calibrated-in-effect rows, SS-7 measured input tagged;
+  PRED-C-67/72 corrected); σ now cites CONJ-SS-5. Item 0 remains open only for the corpus-wide wording sweep.

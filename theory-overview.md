@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 29 September 2026 (Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
+**Last updated:** 29 September 2026 (Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
 Patch 0422B), with a 6 June 2026 EU-1 note.
 
 ---
@@ -115,7 +115,7 @@ this table is the thing to fix.
 | PMNS sin²θ₁₂, sin²θ₂₃ | 1/3, 1/2 | 0.307, 0.572 | 8%, 13% | zero-param TBM zeroth order | SM-5, SF-4 |
 | Dirac neutrinos, no 0νββ | — | untested | — | forward prediction PRED-O-42 | 4219 |
 | Chirality matrix element | χ/6 = 0.0393 | ~0.04 (leptogenesis-inferred) | ~1.6% | magnitude only, on FI-C-1…10; the hand is a **primitive** | Capotauro |
-| String tension σ | 926.5 MeV/fm | ~910 | +1.8% | **conditional**; registries cite CONJ-SS-2-1, whose formula gives 243 MeV/fm — the link is inconsistent (TODO-4337-SIGMALINK) | SS-4, PRED-C-31 |
+| String tension σ | 926.5 MeV/fm | ~910 | +1.8% | **conditional** on CONJ-SS-5 (SS-4's z² replacement, not derived); the registries' old citation of CONJ-SS-2-1 corrected at 4338 | SS-4, PRED-C-31 |
 | r_p | 0.883 fm | 0.841 | +5.0% | **held**: SS-2 frame superseded; with one quark mass no frame reaches r_p | SS-2, TODO-4284-RPFLOOR |
 | μ_p | 2.789 μ_N | 2.793 | −0.1% | **held**: rests on m_q = m_p/3, assigned not derived | SS-2 |
 | g_A | 1.242–1.282 | 1.2754 | brackets it | **not pinned** (4284); zero-param exchange-off value 1.312 | EW lane 4234–4284 |
@@ -130,7 +130,7 @@ this table is the thing to fix.
 | Coulomb's law from the lattice | ±0.4% pointwise at R = 4 | Ewald | — | cellular-automaton measurement; scalar sector only, no coupling constant predicted | SF-8 v0.5 |
 | α | 1/137.036 | — | — | **calibrated relation** α = PSR/(2L), L ≈ 68.5 PSR (CAL-ZBW1-SWING); passes local position invariance; running has the right sign, law owed | 4322–4331 |
 
-**Scorecard.** `predictions.md` headlines **"108 zero-parameter empirical correspondences from a 9-axiom stack"** (tally as of 6 June). Read at its own breakdown: 23 unconditional quantitative, **60 conditional** quantitative, the rest structural or qualitative; the mass rows use the m_e calibration and the SS-9 rows a calibrated B_slip, so "zero-parameter" does not hold for every entry. The tally is also not yet adjusted for the holds above (SS-2, SS-5, SS-9) or for SS-7's measured input (TODO-4337-TALLYHOLDS). **Theorems:** 82 theorems + 9 corollaries (+7 propositions, 1 lemma) in `theorem-registry.md` (summary as of Patch 2407); many are conditional, and a theorem count is not a measure of evidence. The May "67 : 9 ≈ 7.4" ratio is withdrawn.
+**Scorecard.** `predictions.md` headlines **"108 zero-parameter empirical correspondences from a 9-axiom stack"** (tally as of 6 June). Read at its own breakdown: 23 unconditional quantitative, **60 conditional** quantitative, the rest structural or qualitative; the mass rows use the m_e calibration and the SS-9 rows a calibrated B_slip, so "zero-parameter" does not hold for every entry. Since 4338 the tally carries an audit-status block and per-row tags: 20 counted rows rest on held papers (SS-2, SS-5, SS-9), two SS-2 rows are calibrated in effect, and the 12 SS-7 rows use the measured B(⁴He). **Theorems:** 82 theorems + 9 corollaries (+7 propositions, 1 lemma) in `theorem-registry.md` (summary as of Patch 2407); many are conditional, and a theorem count is not a measure of evidence. The May "67 : 9 ≈ 7.4" ratio is withdrawn.
 
 ---
 
@@ -171,7 +171,7 @@ Quark masses (SM-8 v4.1 / SM-9; single m_e calibration per SF-3):
 
 Nuclear (conditional):  B_pair = M₀/φ = 2.342 MeV ;  alpha-chain E = 3N_α − 6 ;  2E/V = 6 − 12/V
 String tension (SS-4, conditional): σ = M₀z²/(φ l_edge) = 926.5 MeV/fm
-  [SS-2's CONJ-SS-2-1, σ = M₀zπ/(φ l_edge) = 243 MeV/fm, is a different formula; see TODO-4337-SIGMALINK]
+  [CONJ-SS-5; it supersedes SS-2's CONJ-SS-2-1, σ = M₀zπ/(φ l_edge) = 243 MeV/fm]
 
 Fine-structure constant (calibrated relation, 4330):  α = PSR/(2L),  L ≈ 68.5 PSR (the Planck ZBW swing)
   running requirement (4331): dL/d ln r = (PSR/3π) Σ_f N_c Q_f²  inside each species' reduced Compton length
@@ -224,7 +224,7 @@ the 2–10% shell width.
 
 | # | Problem | IDs | Status (29 Sep) |
 |---|---|---|---|
-| 0 | Honest labelling and this scorecard | TODO-4335-OVERVIEW | overview refreshed (4336–4337); corpus-wide wording sweep and tally restatement remain |
+| 0 | Honest labelling and this scorecard | TODO-4335-OVERVIEW | overview refreshed (4336–4337); tally audited and σ citation fixed (4338); the corpus-wide wording sweep remains |
 | 1 | General field equations of gravity (the founder's deposit gate) | OPEN-GR-FE-1, OPEN-GR-RCORE-1, TODO-4300-HBARSWEEP | open |
 | 2 | Lattice-to-SI scale; the PSR floor | OPEN-SD-lattice-scale | open; black-hole PSR vs l_P/2 now a factor 4.1 (4322), not re-adjudicated |
 | 3 | Spin and the unit of action | OPEN-QM-3, TODO-4289-SPINREV/SPINSWEEP | ħ/2 has a carrier (half-swing) but its size is calibrated; SPIN-1/2 held |
