@@ -157,3 +157,5 @@ recorded, surveyed at 4335.)
   tracked separately (compile_status.md: DP-Sea's figures).
 - **4349 (item 3):** SPIN-1 v2.2 and SPIN-2 v2.1 revised and released from the hold; SPIN-3 noted; spin sweep done.
   Item 3's wording condition is met; the physics (why the elementary action is ħ/2) stays open (OPEN-QM-3).
+- **4350:** deposit queue now reports each paper's current version (TODO-4333-VERSIONPARSE closed); R-CP-NO-REST-MASS
+  registered under A1′ (TODO-4316-CPMASSAXIOM closed).

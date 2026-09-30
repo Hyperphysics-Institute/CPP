@@ -354,3 +354,25 @@ The goal: **axiom count stabilises; prediction count grows.**
 **Owed item 4 closed in the EU lane (9 September 2026, Patch 3804, CONV-045 ADMISSIBLE 5–0).** Under the founder's ruling R-STACK-SENDS-EACH (3711) every GP is saturated throughout inflation; the EU-1 tilt (PRED-C-96) survives because the H-engine reads the *held* sector (the stack's Gibbs entropy μ = kT ln n̄, D4-conserved, D3-relayed) and not the acted-on displacement D1 clips — S-HENGINE-HELD v1.0 (`series_phenomena/cosmology/early_universe/hengine_driver_statement.md`), recorded as the unique consistent identification of 0746 fork (i) with AP-5's held sector (a bridge statement, not entailment). The 3695 constraint κ < κ_cap is void. Residual: OPEN-EU-BATH-DEPTH-1 (bath rate at depth). Axiom count unchanged at 9; AP-5's owed list is now closed in every lane (items 1–9 in GR at 3711; item 4's EU continuation here; item 10 = GR-2 V2.9, done 3705).
 
 **What is derived from D1–D4 so far, at the grades CONV-044 set:** depth = ⌈1.5 v⌉; the conservation theorem (capacities cannot shrink geometrically); two local stiffness facts (zero linear shear from the count law's icosahedral Hessian; no compression below the floor) giving k₂(shell) ≤ k₂_incomp = 0.0188 as a bound; the dark surface conditional on D2's lockstep; the n_s clip (a saturated observable epoch would give n_s = 1, excluded 8σ) with the cosmology meeting the resulting constraint by ten orders. Predictions: 0 < Λ̃ ≲ 1.7 for a CPP black hole (GR: 0); a release burst wherever demand transiently drops below the cap (candidate). Lockstep inheritance DERIVED for V_i = 0 content (3701: a tensor pattern exerts no net force on the shell; charge enters only through the first moment) and bounded for EM content (→ OPEN-GR-RCORE-ALBEDO-1). Owed: the object's Λ̃; the layer-1/2 clock law; the EU-1 embedding of the clip; the release burst; the (l_P/λ)² EM coupling.
+
+## Registered ruling under A1′ — R-CP-NO-REST-MASS (30 September 2026, Patch 4350, foundations lane under PD-006)
+
+**Source (founder, verbatim, `founders_voice/4288_…`, 25 Sep 2026):** *"The CP has no mass. It is the element from which
+mass arises … The CP has inertia: a moving CP causes DP-arcs, which have their own reaction (See SF-6 with the
+description of inertia and DP-arcs)."* Completed by the rulings of 28–29 Sep (`founders_voice/4325_…`, `4326_…`): a CP
+moves by its SSV_net (V_i) each Moment, never at light speed, the DP-arcs' motion set by SSV_net and their scale by
+SSV_abs.
+
+**Registered statement.** *A Conscious Point has no rest mass. Mass is the reaction of the DP-arcs a moving CP organises
+(its inertia, as in SF-6). Each Moment a CP advances by its SSV_net (V_i), at most one PSR and not at c.*
+
+**Status.** A clarifying clause under A1′ (like AP-5 under A3′); **axiom count unchanged at 9.** It does not alter A1′'s
+three-type statement; it states what a CP does not carry.
+
+**Reading marked (PD-008).** The 4288 message also contains the thinking-aloud line *"it seems we must consider that the
+CPs have mass"*, in the sense that DP-arc formation with velocity is the signature of mass. It is read here as the
+inertia of the first sentence (mass arises from the CP's DP-arcs), not as a rest mass — the reading consistent with his
+first sentence and with the 4325/4326 rulings. If he meant a rest mass, this clause is to be corrected.
+
+**Consequences on file.** SPIN-1's carrier model assigned the CP the electron's rest mass; SPIN-1 v2.2 (Patch 4349)
+records this ruling beside that premise. TODO-4316-CPMASSAXIOM closed.

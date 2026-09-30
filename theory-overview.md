@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 29 September 2026 (Patch 4349: spin papers revised and released. Patch 4348: item 0 closed; EW-series Monte-Carlo Weinberg angle marked calibrated. Patch 4347: n_s pivot adopted (EU-1 v1.6.2); SS-7 fully-CPP RMS 1.77%; held SS papers carry status notes. Patch 4345: GR-1d V4 (echo withdrawn), GR-1i V1.0. Patch 4344: 122 deposit candidates (a development transcript excluded); build fixes. Patch 4343: catalog refreshed after the identifier-appendix regeneration. Patch 4342: catalog refreshed (Capotauro v2.4, SS-8 v1.4). Patch 4341: m_Z/m_W row corrected (SF-2 arithmetic erratum). Patch 4340: catalog refreshed after the cosmology wording sweep. Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
+**Last updated:** 29 September 2026 (Patch 4350: R-CP-NO-REST-MASS registered; queue versions fixed. Patch 4349: spin papers revised and released. Patch 4348: item 0 closed; EW-series Monte-Carlo Weinberg angle marked calibrated. Patch 4347: n_s pivot adopted (EU-1 v1.6.2); SS-7 fully-CPP RMS 1.77%; held SS papers carry status notes. Patch 4345: GR-1d V4 (echo withdrawn), GR-1i V1.0. Patch 4344: 122 deposit candidates (a development transcript excluded); build fixes. Patch 4343: catalog refreshed after the identifier-appendix regeneration. Patch 4342: catalog refreshed (Capotauro v2.4, SS-8 v1.4). Patch 4341: m_Z/m_W row corrected (SF-2 arithmetic erratum). Patch 4340: catalog refreshed after the cosmology wording sweep. Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
 Patch 0422B), with a 6 June 2026 EU-1 note.
 
 ---
@@ -149,8 +149,8 @@ this table is the thing to fix.
 | A11 | Lattice-Scale Grounding | l_unit = ħc/Λ_QCD = 0.589 fm, matched to α_s(m_Z) running |
 
 **Calibrations and identifications beside the axioms:** m_e (scale); η_W, η_Z, η_H (boson masses); CAL-ZBW1-SWING (α);
-Λ (dark energy); ħ identified (c03); spin ħ/2 input. **Pending registration:** the founder's 4288 ruling that a CP has no
-mass of its own, only DP-arc inertia (TODO-4316-CPMASSAXIOM). **Potential reductions:** A5 → A2, A10 → A2 + A6′.
+Λ (dark energy); ħ identified (c03); spin ħ/2 input. **Registered at 4350 (clause under A1′, count unchanged):** R-CP-NO-REST-MASS — a CP has no rest mass; mass is
+its DP-arcs' reaction; it advances by V_i, not at c. **Potential reductions:** A5 → A2, A10 → A2 + A6′.
 
 ---
 

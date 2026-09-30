@@ -102,22 +102,45 @@ def title_of(t):
     return re.sub(r"\s+", " ", s).strip(" ,.-")[:95] or "(untitled)"
 
 
+def _date_block(head):
+    """The balanced \\date{...} block, comment lines removed (4350)."""
+    head = "\n".join(l for l in head.split("\n") if not l.lstrip().startswith("%"))
+    i = head.find("\\date{")
+    if i < 0:
+        return None
+    j, d = i + 6, 1
+    while j < len(head) and d > 0:
+        if head[j] == "{" and head[j - 1] != "\\":
+            d += 1
+        elif head[j] == "}" and head[j - 1] != "\\":
+            d -= 1
+        j += 1
+    return head[i:j]
+
+
+def _vkey(v):
+    return tuple(int(x) for x in (v.split(".") + ["0", "0"])[:3])
+
+
 def version_of(t):
     cut = t.find("\\begin{document}")
     head = t[:cut] if cut > 0 else t[:20000]
-    # The \date{} line is authoritative when it carries a version: header
+    # The \\date{} block is authoritative when it carries a version: header
     # comments cite OTHER papers' versions (e.g. GR-1a citing the parent
-    # "Version~16"), so a max() over the whole header can report a foreign
-    # version. Integer versions ("Version~3") are legal in \date{} lines.
-    m = re.search(r"\\date\{[^{}]*?\bVersion[~\s]*(\d+(?:\.\d+){0,2})\b",
-                  head, re.I)
-    if m:
-        return m.group(1)
+    # "Version~16"). Since 4350 the HIGHEST version in the balanced \\date{}
+    # block is taken: version histories are listed oldest-first, so the first
+    # match reported superseded versions (c04 queued as 2 while at 2.3). The
+    # 4333 attempt at this rule misread SF-2 only because SF-2's \\date{} block
+    # was itself malformed (closed early; fixed at 4344).
+    b = _date_block(head)
+    if b:
+        c = re.findall(r"\bVersion[~\s]*(\d+(?:\.\d+){0,2})\b", b, re.I)
+        if c:
+            return max(c, key=_vkey)
     c = re.findall(r"\bVersion[~\s]*(\d+\.\d+(?:\.\d+)?)\b", head, re.I)
     if not c:
         return "—"
-    return max(c, key=lambda v: tuple(
-        int(x) for x in (v.split(".") + ["0", "0"])[:3]))
+    return max(c, key=_vkey)
 
 
 def last_changed(rel):
