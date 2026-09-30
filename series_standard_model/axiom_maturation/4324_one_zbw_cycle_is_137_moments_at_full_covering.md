@@ -108,3 +108,5 @@ what, in the DP-arcs' build-up and release, would set the number of Moments in o
   PSR) at the baseline PSR.
 
 **Note (Patch 4325):** the founder ruled that the Planck-level CP moves at its V_i each Moment, not light speed (branch (B), a long cycle). Since α = c·PSR/(2L) contains no speed or Moment count, **α fixes the swing, not the duration**: at full covering L = PSR/(2α) ≈ 68.5 PSR apogee to apogee, and the "137 Moments" of §3 is only the light-speed lower bound on the cycle. See `series_standard_model/axiom_maturation/4325_alpha_fixes_the_zbw_swing_not_its_duration.md`.
+
+**Note (Patch 4352):** "the Moments cancel" (§3) follows from defining the per-Moment momentum f₁t_M as speed-independent; with the ordinary ∫p dq (p ∝ v) the relation would depend on the swing's speed profile (independent critic).

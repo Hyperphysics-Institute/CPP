@@ -75,3 +75,5 @@ picture the eDP cloud's layers?
 - **Checked here (D-1): no registered screening law.** c04, SF-6 and c06 contain no logarithmic or layer-by-layer
   screening statement; the corpus's only "vacuum polarisation" mentions are in the dark-matter lane (DM-1 corona,
   CONJ l.303) and concern bound eDP creation, not charge screening.
+
+**Erratum (Patch 4352):** the comparison should use the physical (on-shell) running: 1/α(M_Z) ≈ 128.95, so the swing is 5.9% shorter at M_Z and L(M_Z) = 64.48 PSR (the 127.95 used here is the MS-bar parameter). The coefficient PSR/(3π) per e-fold is scheme-independent. In position space (Uehling) the logarithm starts near 0.24 λ̄_C, which weakens §2's "onset at c04's cloud diameter" alignment (already hedged as order-of-magnitude).

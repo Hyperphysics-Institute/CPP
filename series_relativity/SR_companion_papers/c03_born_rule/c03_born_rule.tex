@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 
 % CHANGELOG:
+%   v2.3 30 Sep 2026 — (Patch 4352) four residual "nu_ZBW = 1/(2 t_P)" / "hbar per half-cycle" sentences restated (critic of the alpha arc).
 %   v2   13 Mar 2026 — prior shipped text.
 %   v2.1  8 Aug 2026 — (Patch 3030, F-SW-7 R-E fix pass) reconciliation
 %     remark added to §Born: the shipped QM-series result is QM-2's
@@ -55,7 +56,8 @@ Hyperphysics Institute\\
 \date{8 August 2026 --- Version~2.1\\[2pt]
 {\small Version~2.2 --- 29 September 2026 (Patch 4332: the ZBW-action paragraph of
 \S\ref{sec:hbar} restated per founder rulings, Patches 4320 and 4325; the half-swing carries
-$\hbar/2$ over many Moments; Proposition~\ref{prop:hbar} and all derivations untouched)}}
+$\hbar/2$ over many Moments; Proposition~\ref{prop:hbar} and all derivations untouched)}\\[2pt]
+{\small Version~2.3 --- 30 September 2026 (Patch 4352: four remaining sentences that still spoke of a ZBW frequency $1/(2t_P)$ or of $\hbar$ per half-cycle restated to the same rulings; found by the independent critic of the $\alpha$ arc)}}
 
 \begin{document}
 \maketitle
@@ -166,7 +168,7 @@ organized aggregate is immersed in the surrounding DP Sea, which adds:
     excursions far from the mean trajectory.
 \end{enumerate}
 The combined net SSV at the aggregate's current GP therefore fluctuates
-rapidly, at the ZBW frequency $\nu_{\rm ZBW} = 1/(2\tP)$.  The CP still
+rapidly, changing from one Absolute Moment to the next (Version~2.3; Version~2.2 read ``at the ZBW frequency $\nu_{\rm ZBW} = 1/(2\tP)$'').  The CP still
 executes a \emph{deterministic} 12-edge step each tick (maximum-gradient
 selection, Absolute Moment companion Eq.~3), but over many ticks the
 trajectory samples multiple paths.
@@ -282,7 +284,8 @@ Absolute Moment tick.
 
 The significance is as follows.  In standard quantum mechanics, $\hbar$ is an
 empirical constant with no deeper explanation.  In CPP, $\hbar$ is the action
-per ZBW half-cycle of an elementary DP:
+scale of an elementary DP (Version~2.3: the identity below fixes the scale; the physical
+carrier is the half-swing, which carries $\hbar/2$, as stated after it):
 \begin{equation}
   \hbar \;=\; \EP \cdot \tP
   \;\equiv\; \text{(Planck energy)} \times \text{(Planck time)}.
@@ -391,7 +394,7 @@ in the SR and electromagnetic sectors:
     Coulomb law (Stiffness~$C$ companion, \S 4.1) and the irreversibility
     threshold that defines measurement.
   \item The \emph{stress-invariant Absolute Moment} produces both SR time
-    dilation and the universal ZBW frequency $\nu_{\rm ZBW} = 1/(2\tP)$.
+    dilation and the universal Moment tick $1/\tP$ (Version~2.3; Version~2.2 read ``the universal ZBW frequency $\nu_{\rm ZBW} = 1/(2\tP)$'').
 \end{itemize}
 
 No element of the quantum framework contradicts or modifies the SR or
@@ -487,7 +490,7 @@ At each tick, the net SSV at the aggregate's GP is:
 \end{equation}
 where $A_i\hat{\mathbf{n}}_i$ is the organized component pointing toward
 outcome $i$, and $\xi_x, \xi_y$ are the two orthogonal ZBW noise components,
-each of amplitude $\sim \lP/\tP$ and oscillating at $\nu_{\rm ZBW}$.
+each of amplitude $\sim \lP/\tP$ and changing from Moment to Moment (Version~2.3).
 
 The 12-edge selection rule chooses the lattice edge $k^*$ that maximizes
 $\mathbf{e}_k\cdot V_i$.  Over many ticks, the fraction of ticks

@@ -73,3 +73,5 @@ LPI-safe, with the right sign of running**. The remaining physics is the running
 - **For the critic in the next window:** (i) whether an analytic argument (exclusion packing with a surplus of bits)
   shows f → 1 exactly; (ii) a larger-shell run to confirm the trend; (iii) whether the GLASS proxy's hard-core spacing
   (0.85) or neighbour count biases the result.
+
+**Erratum (Patch 4352) — this fragment's result is WITHDRAWN.** `code/4330_fsat_lattice_robustness.py` l.44 tested the target position (`g[cand] @ x > 0`) instead of the step (`(g[cand] − x) @ x > 0`), so DI-bits could step back inward and filled a solid ball set by N. With the rule as ruled the fill is 0.72–0.80 and does not approach 1 up to N = 12000 (`4352_critic_of_the_alpha_arc_lpi_not_established.md`, `code/4352_fsat_outward_rule_fixed.out`). "Saturation is a solid band" and LPI-via-occupancy are not established. The erratum this fragment appended to 4328 and 4329 is withdrawn with it.

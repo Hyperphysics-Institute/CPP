@@ -2343,7 +2343,7 @@
     {
       "rel": "series_relativity/SR_companion_papers/c03_born_rule/c03_born_rule.tex",
       "title": "Quantum Probability and the Classical Transition",
-      "ver": "2.2",
+      "ver": "2.3",
       "changed": "2026-09-29",
       "cls": "Companion",
       "withheld": "",
@@ -2364,7 +2364,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "2.2",
+        "version": "2.3",
         "description": "We show that the machinery already established in the main paper (Version~16) and the two preceding companions --- the PCD cycle, 600-cell geometry, Shell-broadcast SSV propagation, and Zitterbewegung (ZBW) --- provides a natural mechanistic framework for quantum superposition, measurement, and wavefunction collapse. Four results are established rigorously and one remains a strong conjecture: (i)~ Superposition in CPP is not a single system in a mysterious indefinite state but the genuine superposition of two distinct systems --- an organized CP aggregate and the randomly fluctuating Dipole Sea --- whose combined net SSV fluctuates deterministically tick by tick. (ii)~ Measurement is any interaction that irreversibly modifies the local SSV field via 12-neighbor shell broadcast, requiring no conscious observer. (iii)~ Collapse is a progressive positive-feedback cascade in which early SSV fluctuations bias subsequent PCD cycles until the outcome is dynamically locked. One result is established as a dimensional identity: (iv)~The elementary quantum of action $ $ has the scale $ $, identifying the Absolute Moment tick as the natural unit of quantum action; this is a physical identification, not an independent numerical derivation. One result remains a strong conjecture: (v)~The precise $| |^2$ weighting of the Born rule plausibly arises from the two-quadrature structure of ZBW oscillation, but a rigorous proof is the central open problem of the CPP program. Full derivation of the Schr\\\"odinger equation from PCD dynamics and the treatment of spin and Pauli exclusion are deferred to dedicated companions. No new postulates are introduced.",
         "description_ok": true,
         "description_source": "abstract environment"

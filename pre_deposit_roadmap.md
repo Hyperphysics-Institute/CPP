@@ -73,9 +73,8 @@ founder: "Confirm FE-1 complete."; see the correction under item 1). Deposit app
 
 **5. The electromagnetic constants and α.**
 - OPEN-FP-6-CONSTANTS: μ₀, ε₀ and c rest on a parameter-tuned toy model.
-- α = PSR/(2L) with one calibrated swing (CAL-ZBW1-SWING, 4326–4330). It passes local position invariance (4327–4330)
-  and has the right sign of running (4326). The logarithmic running law (4331) needs a DP-arc cloud model.
-- *Closes when* the cloud model gives the PSR/(3π) law, or α is published as a calibrated relation with its two tests.
+- α = PSR/(2L) with one calibrated swing (CAL-ZBW1-SWING, 4326–4329). Its local position invariance is **not established**: 4330's "passes via saturation" had an outward-step sign bug (independent critic, 4352); with the rule as ruled the fill is 0.72–0.80, and a far-field problem is open (OPEN-ALPHA-FARFIELD-1). The logarithmic running law (4331) needs a DP-arc cloud model.
+- *Closes when* α is published as a calibrated relation with LPI and the running stated as open constraints (the honest option now), or the far-field and cloud models pass them.
   *Lane:* EW → foundations/SF-6.
 
 **6. Special relativity: the residual theorem debt.**
@@ -159,3 +158,5 @@ recorded, surveyed at 4335.)
   Item 3's wording condition is met; the physics (why the elementary action is ħ/2) stays open (OPEN-QM-3).
 - **4350:** deposit queue now reports each paper's current version (TODO-4333-VERSIONPARSE closed); R-CP-NO-REST-MASS
   registered under A1′ (TODO-4316-CPMASSAXIOM closed).
+- **4352 (item 5):** independent critic of the α arc: algebra confirmed; the LPI pass withdrawn (4330 sign bug); on-shell running
+  numbers and the Lange 2021 clock bound adopted; c03 v2.3. α is a calibrated re-expression; LPI and running are open constraints.

@@ -96,3 +96,5 @@ would stop them there — why that far and not one Planck length, or a thousand?
   should enter the per-Moment action.
 
 **Note (Patch 4326):** the founder ruled the CP never reaches light speed, even at the centre (the cycle is strictly longer than 137 Moments), and directed that the swing be postulated and triangulated: registered as **CAL-ZBW1-SWING** (a calibration, not an axiom) with two legs, the running of α (sign agrees) and local position invariance (requires SSV_abs to rescale the swing with the PSR, SSV_net to shorten it). See `series_standard_model/axiom_maturation/4326_swing_postulated_triangulation_legs.md`.
+
+**Erratum (Patch 4352):** §2's phrase "a prediction of the picture" is withdrawn: L = PSR/(2α) restates α (4324 §4) and has no independent content. The table is an identity (independent critic, 4352).

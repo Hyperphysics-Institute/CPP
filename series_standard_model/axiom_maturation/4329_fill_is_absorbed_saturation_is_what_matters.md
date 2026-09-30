@@ -74,3 +74,5 @@ until an observable needs it. The next steps are computational (§6 and the queu
   geometry, 4308/4309).
 
 **Erratum (Patch 4330):** the "plateau near 0.88" was read off unsaturated single runs. Multi-seed runs on FCC and on a strained-glass proxy, with N several times the shell's site count, show the fill rising toward one (FCC 0.954 → 0.982 → 0.996; glass 0.936 → 0.956) and its change in a well zero within error. **Saturation is a solid band (f → 1)**, so α = PSR/(2L) and the effective swing is the swing. See `series_standard_model/axiom_maturation/4330_saturation_is_a_solid_band.md`.
+
+**Note (Patch 4352):** the 4330 erratum above (fill → 1) is withdrawn — 4330 had an outward-step sign bug. With the correct rule the fill is 0.72–0.80, not → 1 (4352). This fragment's own numbers were computed with the correct rule and stand as computed.
