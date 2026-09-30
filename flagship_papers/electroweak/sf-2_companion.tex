@@ -14,6 +14,9 @@
 %
 % Companion paper to SF-2 v1.0 (sf-2_electroweak.tex)
 %
+% Version 1.06 --- 29 September 2026 (Patch 4341): ARITHMETIC ERRATUM, as in SF-2 v1.08.1:
+%   3/(8 phi) = 0.23176, not 0.23121; the "numerically coincident" note is withdrawn (the
+%   prediction is 0.24% above the observed MS-bar value); m_Z/m_W = 1.1409, 0.57%.
 % Version 1.05 --- 17 August 2026 (Patch 3214):
 %   added a How-we-review methodology note stating plainly that AI panel
 %   review is a self-applied verification method and not journal peer
@@ -118,7 +121,8 @@
 \texttt{github.com/Hyperphysics-Institute/CPP}\\[2pt]
 {\small Version~1.03 --- 17 August 2026 (Patch 3212: added the generated plain-language appendix glossing the internal programme identifiers used in this paper (founder jargon ruling, 16 Aug 2026). No claim, equation, number or section changed.)}\\[2pt]
 {\small Version~1.04 --- 17 August 2026 (Patch 3213: extended the generated identifier appendix to all five identifier families (THEO-, FI-, PRED-, CONJ-, PH- as well as OPEN-), and replaced review-convergence scores with AI review panel wording where present. No claim, equation, number or section changed.)}\\[2pt]
-{\small Version~1.05 --- 17 August 2026 (Patch 3214: added a How-we-review methodology note stating plainly that AI panel review is a self-applied verification method and not journal peer review; twelve chirality papers retitled so the descriptive title leads and the identifier is demoted to a subtitle. No claim, equation, number or section changed.)}}
+{\small Version~1.05 --- 17 August 2026 (Patch 3214: added a How-we-review methodology note stating plainly that AI panel review is a self-applied verification method and not journal peer review; twelve chirality papers retitled so the descriptive title leads and the identifier is demoted to a subtitle. No claim, equation, number or section changed.)}\\[2pt]
+{\small Version~1.06 --- 29 September 2026 (Patch 4341: arithmetic erratum --- $3/(8\phig) = 0.23176$, not $0.23121$; the ``numerically coincident'' note withdrawn; $\mZ/\mW = 1.1409$, $0.57\%$.)}}
 
 % =====================================================================
 \begin{document}
@@ -189,7 +193,7 @@ The 600-cell polychoron (vertex count 120, edge count 720, triangular face count
 
 \item \textbf{$SU(2)_L$ + Yang-Mills EFT} (SF-2 main \S 8): The $SU(2)_L$ gauge algebra arises from the binary icosahedral group $\Gamma$ acting on the 120 vertices (Theorem 8.1); local Nexus gauge invariance follows (Theorem 8.2); Yang-Mills EFT recovers as the coarse-graining limit at proof-outline level (Theorem 8.3).
 
-\item \textbf{Weinberg angle from SM-6 spectral traces} (SF-2 main \S 9): $\sinsqthetaW = 3/(8\phig) \approx 0.23121$ at zero parameters from $\mathrm{Tr}(A^2) = 1440$ and $\mathrm{Tr}(A^3) = 7200$.
+\item \textbf{Weinberg angle from SM-6 spectral traces} (SF-2 main \S 9): $\sinsqthetaW = 3/(8\phig) \approx 0.23176$ at zero parameters from $\mathrm{Tr}(A^2) = 1440$ and $\mathrm{Tr}(A^3) = 7200$.
 
 \item \textbf{Master mass formula} (SF-2 main \S 10): $m_B = \eta_B \cdot M_0^{(\mathrm{EW})} \cdot F_{\mathrm{cage}}(\mathrm{topology}_B)$ at PARTIAL CLOSURE; absolute masses calibrated via $\eta_B$ per boson.
 
@@ -210,8 +214,8 @@ The catalyst framework reproduces:
 \subsection{The zero-parameter cross-checks}
 
 \begin{itemize}[leftmargin=*]
-\item \emph{Weinberg angle}: $\sinsqthetaW = 3/(8\phig) = 0.23121$ vs observed $0.23121 \pm 0.00004$ --- exact inheritance, no parameters
-\item \emph{Tree-level $\mZ/\mW$}: $\mZ/\mW = 1/\cos\theta_W = 1.1405$ vs observed $1.1344$ --- $0.54\%$ agreement, no cross-calibration
+\item \emph{Weinberg angle}: $\sinsqthetaW = 3/(8\phig) = 0.23176$ vs observed $0.23121 \pm 0.00004$ ($\overline{\rm MS}$) --- $+0.24\%$, inherited, no parameters
+\item \emph{Tree-level $\mZ/\mW$}: $\mZ/\mW = 1/\cos\theta_W = 1.1409$ vs observed $1.1344$ --- $0.57\%$ agreement, no cross-calibration (scheme caveat: SF-2 v1.08.1)
 \item \emph{W and tau leptonic/hadronic splits}: 33\%/67\% and 35\%/65\% respectively --- channel counting at framework level
 \end{itemize}
 
@@ -563,7 +567,7 @@ This section provides alphabetical definitions of CPP-specific terms used throug
 
 \item[\textbf{W$^0$ catalyst framework}] The framework articulating that the observed $W^{\pm}$ is the activated state of an underlying neutral W bracelet (W$^0$), with the bracelet serving as transient catalyst-substrate for charged-current decays. Six propositions in SF-2 main \S 5 formalize the framework: centroid capture (Prop 5.1), activation transition (Prop 5.2), $W^0$ mass identification (Prop 5.3), disintegration timescale (Prop 5.4), reorganization probabilities (Prop 5.5), and universality (Prop 5.6).
 
-\item[\textbf{Weinberg angle}] The mixing angle $\theta_W$ in the SM electroweak gauge structure. In CPP, $\sinsqthetaW = 3/(8\phig) \approx 0.23121$ at zero parameters from SM-6 spectral traces. Topological-invariant interpretation: 1440/3840 = 3/8 is the fraction of EW modes in $U(1)_Y$ vs $SU(2)_L$ channels.
+\item[\textbf{Weinberg angle}] The mixing angle $\theta_W$ in the SM electroweak gauge structure. In CPP, $\sinsqthetaW = 3/(8\phig) \approx 0.23176$ at zero parameters from SM-6 spectral traces. Topological-invariant interpretation: 1440/3840 = 3/8 is the fraction of EW modes in $U(1)_Y$ vs $SU(2)_L$ channels.
 
 \item[\textbf{Zitterbewegung (ZBW)}] The high-frequency oscillation of CPs at the cage centroid in their PCD cycle. In CPP, ZBW is the substrate-level basis for relativistic kinematics and the substrate origin of the SM's massive-particle internal dynamics.
 \end{description}
@@ -615,14 +619,14 @@ H dodecahedron ($s_H$) & $\mathrm{hybrid\_weak\_factor} \cdot \phig^{-4} \cdot s
 
 \begin{table}[H]
 \centering
-\caption{SF-2 zero-parameter predictions and consistency cross-checks. ``Observation'' values from PDG 2024. \\ \hspace{3em} $^*$\emph{Numerically coincident}: the topological-invariant prediction $\sinsqthetaW = 3/(8\phig) = 0.23121$ is numerically coincident with the low-energy effective value of the Weinberg angle. The Weinberg angle runs with scale ($\sinsqthetaW$ evolves $\sim 0.23121$ at $m_Z$ to other values at higher and lower scales per electroweak RG), and renormalization-scheme conventions ($\overline{\text{MS}}$ vs on-shell) differ at the per-mille level. The CPP framework's prediction is a topological-invariant equality at the substrate level; its mapping to a specific renormalization scheme is via SM-6 inheritance.}
+\caption{SF-2 zero-parameter predictions and consistency cross-checks. ``Observation'' values from PDG 2024. \\ \hspace{3em} $^*$Version~1.06: the earlier note called the prediction ``numerically coincident'' with the observed value, having written $3/(8\phig)$ as $0.23121$; in fact $3/(8\phig) = 0.23176$, $0.24\%$ above the $\overline{\rm MS}$ value at $m_Z$. The Weinberg angle runs with scale ($\sinsqthetaW$ evolves $\sim 0.23121$ at $m_Z$ to other values at higher and lower scales per electroweak RG), and renormalization-scheme conventions ($\overline{\text{MS}}$ vs on-shell) differ at the per-mille level. The CPP framework's prediction is a topological-invariant equality at the substrate level; its mapping to a specific renormalization scheme is via SM-6 inheritance.}
 \label{tab:cheat_sheet_predictions}
 \begin{tabular}{lccc}
 \toprule
 Quantity & Predicted & Observed & Agreement \\
 \midrule
-$\sinsqthetaW = 3/(8\phig)$ & 0.23121 & $0.23121 \pm 0.00004$ & numerically coincident$^*$ \\
-$\mZ/\mW = 1/\cos\theta_W$ & 1.1405 & 1.1344 & $0.54\%$ \\
+$\sinsqthetaW = 3/(8\phig)$ & 0.23176 & $0.23121 \pm 0.00004$ & $+0.24\%^*$ \\
+$\mZ/\mW = 1/\cos\theta_W$ & 1.1409 & 1.1344 & $0.57\%$ \\
 $\mWpm$ (calibrated $\eta_W$) & 80.377 GeV & $80.377 \pm 0.012$ GeV & calibration target \\
 $\mZ$ (calibrated $\eta_Z$) & 91.1876 GeV & $91.1876 \pm 0.0021$ GeV & calibration target \\
 $\mH$ (calibrated $\eta_H$) & 125.10 GeV & $125.10 \pm 0.20$ GeV & calibration target \\

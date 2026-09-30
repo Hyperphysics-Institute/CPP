@@ -1,4 +1,12 @@
 % =====================================================================
+% Version 1.08.1 (Patch 4340b/4341, 29 Sep 2026) -- ARITHMETIC ERRATUM (zero-parameter sweep):
+%   3/(8 phi) = 0.231763, not 0.23121 (0.23121 is the observed MS-bar value); the paper had
+%   substituted the observed value into its own prediction. Predicted m_Z/m_W = 1/sqrt(1-3/(8phi))
+%   = 1.1409, not 1.1405; agreement with 1.1344 is 0.57%, not 0.54%. Also scoped: the tree-level
+%   relation holds exactly in the on-shell scheme; against an MS-bar-scheme angle the ~0.6% gap is
+%   of the size of the known radiative correction, and the "cage side" reproduces observed masses
+%   through calibrated eta factors, so the check compares 3/(8 phi) with the observed ratio.
+% =====================================================================
 % Post-SHIP terminology correction (Patch 0631, 29 May 2026, Session 148):
 % PCD acronym expansion corrected from "Polarize-Capture-Depolarize" (the
 % Session-146-introduced drift) back to canonical "Perceive-Compute-Displace"
@@ -157,7 +165,8 @@
 {\small Version~1.05 --- 17 August 2026 (Patch 3214: added a How-we-review methodology note stating plainly that AI panel review is a self-applied verification method and not journal peer review; twelve chirality papers retitled so the descriptive title leads and the identifier is demoted to a subtitle. No claim, equation, number or section changed.)}\\[2pt]
 {\small Version~1.06 --- 21 September 2026 (Patch 4210: \S 5.7.1 $\beta^-$ walkthrough rewritten to the inheritance mechanism (founder ruling G-EW-INHERIT-4205) --- the released $-\eCP$ takes the down quark's orbital DP, the bare core refills from the Sea, the refill's partner is $\bar\nu_e$, the refill sense is the Fermi/GT channel; the v1.0--v1.05 mechanism was Fermi-only. \S 5.7.3 Michel/V--A attribution moved from bracelet phase bias to the released charge's own handedness (THEO-CHIR-1). One mechanism and one attribution changed; no equation or number changed.)}}\\[2pt]
 {\small Version~1.07 --- 22 September 2026 (Patch 4223: \S 5.7.1 postdiction paragraph corrected --- the pure-GT ``exact'' match of Patch 4206 was a numerical coincidence (Patch 4222), and the full correlation coefficients $a, A, B$ are now reproduced for all $g_A/g_V$ by the pair-state form of the inheritance mechanism (lepton pair singlet for the same-sense refill, $\sigma$-written triplet for the opposite-sense refill, senses added as amplitudes; Patch 4223). One paragraph changed; no equation, theorem or number elsewhere changed.)}}\\[2pt]
-{\small Version~1.08 --- 22 September 2026 (Patch 4228: \S 5.7.1 steps 3, 5, 6 and the postdiction paragraph rewritten to the ratified swapped allocation, G-EW-SWAP-4228 --- the quark's orbital eDP leaves as the antineutrino; proton and electron are the two halves of one created counter-pair (singlet); the vertex is quark-level V--A with the sign of $g_A/g_V$ the singlet's; the nucleon's $-1.275$ is a cage admixture. Four items and one paragraph changed; no equation, theorem or number elsewhere changed.)}}
+{\small Version~1.08 --- 22 September 2026 (Patch 4228: \S 5.7.1 steps 3, 5, 6 and the postdiction paragraph rewritten to the ratified swapped allocation, G-EW-SWAP-4228 --- the quark's orbital eDP leaves as the antineutrino; proton and electron are the two halves of one created counter-pair (singlet); the vertex is quark-level V--A with the sign of $g_A/g_V$ the singlet's; the nucleon's $-1.275$ is a cage admixture. Four items and one paragraph changed; no equation, theorem or number elsewhere changed.)}\\[2pt]
+{\small Version~1.08.1 --- 29 September 2026 (Patch 4341: arithmetic erratum --- $3/(8\phig) = 0.23176$, not $0.23121$ (the observed value had been substituted into the prediction); predicted $\mZ/\mW = 1.1409$, agreement $0.57\%$; scheme caveat added to the $\mZ/\mW$ section.)}}
 
 \begin{document}
 \maketitle
@@ -165,7 +174,7 @@
 \begin{abstract}
 \noindent\textbf{Paper type:} Flagship derivation paper. Establishes a parameter-economic derivation of the electroweak cage-boson sector --- the $W^{\pm}$, $W^{0}$, $Z$, and Higgs bosons --- as a single geometric family from the 600-cell substrate machinery developed in the Standard Model Emergence (SM) and Strong Sector (SS) series, plus Conscious Point Physics (CPP) primitives.
 
-The Standard Model treats the electroweak bosons as the gauge-field excitations of $SU(2)_L \times U(1)_Y$ broken by a postulated Higgs field; the four boson masses and their internal structure are not derived from first principles. SF-2 proposes a structurally constrained derivation in which the four cage bosons emerge as specific subgraphs of the 600-cell substrate, with the $SU(2)_L$ gauge algebra arising from the binary icosahedral group $\Gamma$ acting on the 120 lattice vertices, and the Yang-Mills effective field theory recovering as the coarse-graining limit of CPP substrate dynamics at the level of proof outline (full continuum derivation registered as future work). The four cage geometries --- 6-vertex regular hexagonal bracelet ($W^{\pm}/W^{0}$), 12-vertex icosahedral closed loop ($Z$), 20-vertex dodecahedral closed shell ($H$), and the mass-gap prediction of no additional electroweak scalar below approximately 200 GeV --- are theorem-level forced by the distance-shell and symmetry-orbit classification of 600-cell substructures. The Weinberg angle is established as a zero-parameter numerical correspondence emerging from the spectral trace structure of the 600-cell, with the predicted value $\sinsqthetaW = 3/(8\phig) \approx 0.23121$ inherited from the SM-6 spectral-trace argument~\cite{abshier_sm6}; the correspondence is numerically coincident with the low-energy effective value of $\sinsqthetaW$ (Weinberg angle runs with scale, and renormalization-scheme conventions differ at the per-mille level). The tree-level mass-ratio cross-check $\mZ/\mW = 1/\cos\theta_W = 1.140$ vs observed 1.134 closes to 0.5\% with no cross-calibration between the Weinberg-angle spectral-trace correspondence and the cage-stability mass-formula machinery. The four-cage spin assignments emerge from the cage geometries with rigor tiered by cage. The $W$ is vector at $75\%$ V--A from bracelet $120\ensuremath{^\circ}/240\ensuremath{^\circ}$ phase bias, becoming $100\%$ V--A at the massless helicity limit per OPEN-FP-SF-2-CHIR; this is structural preference, not theorem-level. The $Z$ is axial-vector from icosahedral 4-layer phase interference; this is also structural preference. The $H$ is scalar at the finite-symmetry level from the dodecahedron's $A_5$ rotation group admitting only the trivial odd-dimensional representation, which is a theorem at finite-group level; the relativistic Lorentz-scalar character inherits via the continuum-limit Yang-Mills EFT (Theorem~\ref{thm:YM_EFT}).
+The Standard Model treats the electroweak bosons as the gauge-field excitations of $SU(2)_L \times U(1)_Y$ broken by a postulated Higgs field; the four boson masses and their internal structure are not derived from first principles. SF-2 proposes a structurally constrained derivation in which the four cage bosons emerge as specific subgraphs of the 600-cell substrate, with the $SU(2)_L$ gauge algebra arising from the binary icosahedral group $\Gamma$ acting on the 120 lattice vertices, and the Yang-Mills effective field theory recovering as the coarse-graining limit of CPP substrate dynamics at the level of proof outline (full continuum derivation registered as future work). The four cage geometries --- 6-vertex regular hexagonal bracelet ($W^{\pm}/W^{0}$), 12-vertex icosahedral closed loop ($Z$), 20-vertex dodecahedral closed shell ($H$), and the mass-gap prediction of no additional electroweak scalar below approximately 200 GeV --- are theorem-level forced by the distance-shell and symmetry-orbit classification of 600-cell substructures. The Weinberg angle is established as a zero-parameter numerical correspondence emerging from the spectral trace structure of the 600-cell, with the predicted value $\sinsqthetaW = 3/(8\phig) \approx 0.23176$ inherited from the SM-6 spectral-trace argument~\cite{abshier_sm6}; the correspondence is numerically coincident with the low-energy effective value of $\sinsqthetaW$ (Weinberg angle runs with scale, and renormalization-scheme conventions differ at the per-mille level). The tree-level mass-ratio cross-check $\mZ/\mW = 1/\cos\theta_W = 1.141$ vs observed 1.134 closes to 0.6\% with no cross-calibration between the Weinberg-angle spectral-trace correspondence and the cage-stability mass-formula machinery. The four-cage spin assignments emerge from the cage geometries with rigor tiered by cage. The $W$ is vector at $75\%$ V--A from bracelet $120\ensuremath{^\circ}/240\ensuremath{^\circ}$ phase bias, becoming $100\%$ V--A at the massless helicity limit per OPEN-FP-SF-2-CHIR; this is structural preference, not theorem-level. The $Z$ is axial-vector from icosahedral 4-layer phase interference; this is also structural preference. The $H$ is scalar at the finite-symmetry level from the dodecahedron's $A_5$ rotation group admitting only the trivial odd-dimensional representation, which is a theorem at finite-group level; the relativistic Lorentz-scalar character inherits via the continuum-limit Yang-Mills EFT (Theorem~\ref{thm:YM_EFT}).
 
 \textbf{The forced-choice prediction.} The $W^{0}$ is a CPP-novel neutral massive boson with no Standard Model analog. The 6-vertex regular hexagonal bracelet is the unique H$_4$ orbit of induced 6-cycles in the 600-cell with maximal symmetry ($D_6$ stabilizer of order 12; orbit size 1200, verified by direct enumeration of 4800 induced 6-cycles partitioned into exactly 2 orbits). The $W^{0}$ exists as a stable virtual bracelet configuration in the Dipole Sea at STP. The $W^{\pm}$ state we measure at colliders is the \emph{activated} $W^{0}$: a transient catalyst-substrate composed of the bracelet plus a centroid-captured external charge plus source-particle charge debris bound to the bracelet's vertex surfaces. The activated $W^{0}$ disintegrates on the bracelet cage-stability timescale ($\sim 3 \times 10^{-25}$ s, matching observed $W$ lifetime), with the debris reorganizing statistically into final-state particles per the local SSV-gradient probability structure. Two experimental signatures distinguish the $W^{0}$ from existing Standard Model channels: contribution to the oblique precision parameters $S$, $T$, $U$ from $W^{0}$ vacuum polarization with characteristic sign differences from the bracelet's zero net charge, and an energy-dependent $W$-mass shift pattern from collision-energy-dependent debris configurations on the bracelet --- proposed to partially account for the CDF $W$-mass anomaly at Tevatron energies.
 
@@ -187,7 +196,7 @@ The 600-cell has 120 vertices, each connected to its 12 nearest neighbors. When 
 
 The $W^{0}$ is the bracelet itself, neutral. The $W^{\pm}$ we measure at particle colliders is what happens when the $W^{0}$ briefly captures a stray charge: it is not a propagating fundamental particle but a transient catalyst that does the work of charged-current weak interactions and then dissolves back into the substrate. This single mechanism explains beta decay, electron capture, muon decay, tau decay, and $W$ production at colliders --- and produces ten qualitative predictions matching observation, including the $W$ lifetime, the lepton-versus-hadron branching ratio split, the V--A coupling structure, lepton universality, the absence of flavor-changing neutral currents at tree level, and why the $W$ (open-ring topology) mediates charge-changing processes while the $Z$ (closed-shell topology) does not.
 
-The Weinberg angle, which sets the mass ratio between the $W$ and the $Z$, comes out to $3/(8\phig) \approx 0.23121$ from a separate paper (SM-6) using only the connectivity counts of the 600-cell --- no free parameters. Independently, the cage-stability framework gives the $W$, $Z$, and Higgs masses at observed values once one calibration constant (an extreme suppression factor of $\sim 10^{-17}$, reflecting how the strong-force-scale geometry connects to the cosmological-horizon-scale embedding) is fixed per boson. Their ratio $\mZ/\mW = 1/\cos\theta_W = 1.140$ matches observation (1.134) to 0.5\% with no calibration --- a zero-parameter consistency check between the two independent derivations.
+The Weinberg angle, which sets the mass ratio between the $W$ and the $Z$, comes out to $3/(8\phig) \approx 0.23176$ from a separate paper (SM-6) using only the connectivity counts of the 600-cell --- no free parameters. Independently, the cage-stability framework gives the $W$, $Z$, and Higgs masses at observed values once one calibration constant (an extreme suppression factor of $\sim 10^{-17}$, reflecting how the strong-force-scale geometry connects to the cosmological-horizon-scale embedding) is fixed per boson. Their ratio $\mZ/\mW = 1/\cos\theta_W = 1.140$ matches observation (1.134) to 0.5\% with no calibration --- a zero-parameter consistency check between the two independent derivations.
 
 The paper proposes that ``electroweak symmetry breaking'' in CPP is the moment when six hybrid Dipoles from the substrate organize themselves into a hexagonal bracelet (the $W$ boson, with twelve underlying Conscious Points distributed two per vertex across the six bracelet vertices), or twelve Conscious Points organize into an icosahedral cage (the $Z$ boson, one Conscious Point per vertex), or twenty Conscious Points organize into a dodecahedral cage (the Higgs boson, one Conscious Point per vertex). There is no Higgs field, no vacuum expectation value, no spontaneous breaking of a global symmetry --- the cage formation event is itself the analog of what the Standard Model calls EWSB.
 
@@ -241,7 +250,7 @@ The conditional-closure framework is the same one applied to SF-4 v4.0+: foundat
 \item \textbf{The $W^{0}$ as forced-choice prediction} (Section~\ref{sec:W_cage}): a CPP-novel neutral massive boson, with the bracelet topology uniquely selected by the maximum-symmetry $H_4$-orbit principle.
 \item \textbf{$W^{0}$ catalyst framework} (Propositions~\ref{prop:centroid}--\ref{prop:universality}) explaining all observed charged-current dynamics through a single mechanism, with five worked decay-channel walkthroughs and ten qualitative postdictions matching observed empirics.
 \item \textbf{Three inherited theorems} from EW-5~\cite{abshier_ew5}: $SU(2)_L$ from $\Gamma$ (Theorem~\ref{thm:SU2L}), Nexus gauge invariance (Theorem~\ref{thm:nexus_gauge}), Yang-Mills EFT limit (Theorem~\ref{thm:YM_EFT}).
-\item \textbf{Inherited Weinberg angle} $\sinsqthetaW = 3/(8\phig)$ from SM-6~\cite{abshier_sm6} at zero parameters, with tree-level $\mZ/\mW$ cross-check at 0.5\%.
+\item \textbf{Inherited Weinberg angle} $\sinsqthetaW = 3/(8\phig)$ from SM-6~\cite{abshier_sm6} at zero parameters, with tree-level $\mZ/\mW$ cross-check at 0.6\%.
 \item \textbf{EWSB framing}: cage-formation event as the CPP analog of electroweak symmetry breaking (Section~\ref{sec:ewsb}).
 \item \textbf{Two falsifier signatures} for the $W^{0}$ (Section~\ref{sec:predictions_falsifiers}): oblique parameters via existing LEP/SLC data, and CDF $W$-mass anomaly energy-dependence via HL-LHC Phase II.
 \end{itemize}
@@ -288,7 +297,7 @@ Z icosahedral cage shape (12-vertex first shell) & Theorem & \S\ref{sec:Zicos_th
 H dodecahedral cage shape (20-vertex second shell) & Theorem & \S\ref{sec:Hdodec_thm} \\
 Mass-gap prediction (no scalar at $V \in (12, 20)$) & Theorem & \S\ref{sec:massgap_thm} \\
 $\sinsqthetaW = 3/(8\phig)$ from SM-6 spectral traces & Theorem (inherited, zero params) & \S\ref{sec:weinberg_sm6_inheritance} \\
-Tree-level $\mZ/\mW = 1/\cos\theta_W$ cross-check & Theorem-equivalent (zero params, $0.54\%$) & \S\ref{sec:Z_mZW_ratio} \\
+Tree-level $\mZ/\mW = 1/\cos\theta_W$ cross-check & Theorem-equivalent (zero params, $0.57\%$) & \S\ref{sec:Z_mZW_ratio} \\
 $W^{0}$ existence (CPP-novel particle) & Forced structural prediction & \S\ref{sec:W_bracelet_recap} \\
 $\mWpm = \mW^{0}$ within $\sim 1$ MeV & Framework-level prediction & \S\ref{sec:activated_W} \\
 $A_5$ finite-symmetry preference for $H$ scalar character & Theorem at finite-group level & \S\ref{sec:H_scalar} \\
@@ -325,8 +334,8 @@ H dodecahedral cage shape (20-vertex) & Exact geometric & \S\ref{sec:Hdodec_thm}
 Mass-gap (no scalar at $V \in (12, 20)$) & Exact geometric & \S\ref{sec:massgap_thm} (Theorem~\ref{thm:massgap}) \\
 $A_5 \to J_{\mathrm{cage}} = 0$ (Higgs finite-group scalar classification) & Exact (finite-group theorem) & \S\ref{sec:H_scalar} (Corollary~\ref{cor:higgs_scalar}) \\
 $W^{0}$ existence (CPP-novel particle) & Forced structural & \S\ref{sec:W_bracelet_recap} \\
-$\sinsqthetaW = 3/(8\phig) \approx 0.23121$ & Exact inherited (SM-6, zero params) & \S\ref{sec:weinberg_sm6_inheritance} \\
-$\mZ/\mW = 1/\cos\theta_W = 1.1405$ vs obs $1.1344$ ($0.54\%$) & Exact tree-level (zero-param consistency) & \S\ref{sec:Z_mZW_ratio} \\
+$\sinsqthetaW = 3/(8\phig) \approx 0.23176$ & Exact inherited (SM-6, zero params) & \S\ref{sec:weinberg_sm6_inheritance} \\
+$\mZ/\mW = 1/\cos\theta_W = 1.1409$ vs obs $1.1344$ ($0.57\%$) & Exact tree-level (zero-param consistency) & \S\ref{sec:Z_mZW_ratio} \\
 W width $\Gamma_W \sim \mW e^{-N}$, $N \sim 3.5$ & Calibrated (framework-level) & \S\ref{sec:dm_wprod} \\
 W leptonic/hadronic $33\%/67\%$ split & Exact framework (channel counting) & \S\ref{sec:dm_wprod} \\
 Tau leptonic/hadronic $35\%/65\%$ split & Exact framework (channel counting) & \S\ref{sec:dm_tau} \\
@@ -375,7 +384,7 @@ SM-1's cage-stability principle: a cage is stable if and only if (i) the CP arra
 \subsection{SM-6 Weinberg angle at zero parameters}
 \label{sec:inh_sm6}
 
-SM-6~\cite{abshier_sm6} derives the Weinberg angle $\sinsqthetaW = 3/(8\phig) \approx 0.23121$ from spectral traces on the 600-cell adjacency matrix $A$:
+SM-6~\cite{abshier_sm6} derives the Weinberg angle $\sinsqthetaW = 3/(8\phig) \approx 0.23176$ from spectral traces on the 600-cell adjacency matrix $A$:
 \begin{equation}
 \sinsqthetaW = \frac{1}{\phig} \cdot \frac{\mathrm{Tr}(A^2)}{\mathrm{Tr}(A^2) + \mathrm{Tr}(A^3)/3} = \frac{1}{\phig} \cdot \frac{1440}{3840} = \frac{3}{8\phig}.
 \label{eq:weinberg_sm6}
@@ -1167,20 +1176,22 @@ which inherits in CPP without modification because the gauge-coupling structure 
 
 Substituting $\sinsqthetaW = 3/(8\phig)$ from SM-6:
 \begin{equation}
-\cos\theta_W \;=\; \sqrt{1 - 3/(8\phig)} \;=\; \sqrt{1 - 0.23121} \;=\; \sqrt{0.76879} \;=\; 0.87681,
+\cos\theta_W \;=\; \sqrt{1 - 3/(8\phig)} \;=\; \sqrt{1 - 0.23176} \;=\; \sqrt{0.76824} \;=\; 0.87649,
 \end{equation}
 giving the predicted ratio
 \begin{equation}
-\left(\frac{\mZ}{\mW}\right)_{\mathrm{pred}} \;=\; \frac{1}{0.87681} \;=\; 1.1405.
+\left(\frac{\mZ}{\mW}\right)_{\mathrm{pred}} \;=\; \frac{1}{0.87649} \;=\; 1.1409.
 \label{eq:mZW_predicted}
 \end{equation}
 The observed ratio is
 \begin{equation}
 \left(\frac{\mZ}{\mW}\right)_{\mathrm{obs}} \;=\; \frac{91.1876}{80.377} \;=\; 1.1344.
 \end{equation}
-The agreement is $100 \cdot (1.1405 - 1.1344)/1.1344 = 0.54\%$ --- a \textbf{zero-parameter cross-check at the half-percent level}, with no calibration connecting the Weinberg-angle derivation in SM-6 to the cage-stability mass derivations in EW-2/EW-3.
+The agreement is $100 \cdot (1.1409 - 1.1344)/1.1344 = 0.57\%$ --- a \textbf{zero-parameter cross-check at the half-percent level}, with no calibration connecting the Weinberg-angle derivation in SM-6 to the cage-stability mass derivations in EW-2/EW-3. (Version~1.08.1: earlier versions gave $1.1405$ and $0.57\%$, having used the observed $0.23121$ in place of $3/(8\phig)$.)
 
-\textbf{This is the strongest internal-coherence demonstration of the SF-2 framework.} Each side of Equation~\ref{eq:mZW_treelevel} is derived independently from a different primitive structure (the SM-6 spectral traces on the 600-cell adjacency matrix versus the EW-2/EW-3 cage-stability calculations), and yet they agree to $0.5\%$ on a directly observable quantity. The cross-check both validates the SM-6 inheritance (Section~\ref{sec:weinberg}) and constrains the cage-stability calibration framework.
+\textbf{Scope of the check (Version~1.08.1).} The tree-level relation $\mZ/\mW = 1/\cos\theta_W$ holds exactly in the on-shell scheme, where $\sin^2\theta_W^{\rm OS} = 1 - \mW^2/\mZ^2 \approx 0.2230$; the value $3/(8\phig)$ is compared elsewhere with the $\overline{\rm MS}$ value $0.23121$. The $\sim$0.6\% gap found here is of the size of the known radiative correction between the two schemes, so the check tests the scheme to which $3/(8\phig)$ belongs as much as the value itself. The cage side reproduces the observed masses through the calibrated $\eta$ factors, so the comparison is, in effect, $3/(8\phig)$ against the observed mass ratio.
+
+\textbf{This is the strongest internal-coherence demonstration of the SF-2 framework.} Each side of Equation~\ref{eq:mZW_treelevel} is derived independently from a different primitive structure (the SM-6 spectral traces on the 600-cell adjacency matrix versus the EW-2/EW-3 cage-stability calculations), and yet they agree to $0.6\%$ on a directly observable quantity (but see the scope paragraph above). The cross-check both validates the SM-6 inheritance (Section~\ref{sec:weinberg}) and constrains the cage-stability calibration framework.
 
 \subsection{Z decay channels and width}
 \label{sec:Z_decay}
@@ -1194,7 +1205,7 @@ with branching ratios reproducing the observed values from the relative cage-sta
 \subsection{Section summary}
 \label{sec:Z_summary}
 
-The Z cage at v0.1 sits at PARTIAL CLOSURE: the icosahedral cage shape is theorem-level (Theorem~\ref{thm:Zicos}); the closure-implies-no-FCNC argument is theorem-equivalent (Corollary~\ref{cor:Zinert}); the tree-level $\mZ/\mW$ cross-check at $0.5\%$ is zero-parameter; the $Z$ mass absolute value is calibrated via $\eta_Z$ (with OPEN-FP-SF-2-$\eta$ inherited as open); the loop density factor reduction $\ell_Z^{\mathrm{ideal}} = 1.437 \to \ell_Z = 1.2$ is registered as OPEN-FP-SF-2-loopfactor.
+The Z cage at v0.1 sits at PARTIAL CLOSURE: the icosahedral cage shape is theorem-level (Theorem~\ref{thm:Zicos}); the closure-implies-no-FCNC argument is theorem-equivalent (Corollary~\ref{cor:Zinert}); the tree-level $\mZ/\mW$ cross-check at $0.6\%$ is zero-parameter; the $Z$ mass absolute value is calibrated via $\eta_Z$ (with OPEN-FP-SF-2-$\eta$ inherited as open); the loop density factor reduction $\ell_Z^{\mathrm{ideal}} = 1.437 \to \ell_Z = 1.2$ is registered as OPEN-FP-SF-2-loopfactor.
 
 % ===================================================================
 \section{The Higgs from Dodecahedral Closed Cage}
@@ -1384,7 +1395,7 @@ This partition respects the Session~41 architectural intent: photon dynamics bel
 \subsection{Tree-level $\mZ/\mW$ cross-check inheritance}
 \label{sec:weinberg_mzw_inherit}
 
-Per Section~\ref{sec:Z_mZW_ratio}, the tree-level relation $\mZ/\mW = 1/\cos\theta_W$ with $\sinsqthetaW = 3/(8\phig)$ from SM-6 gives the predicted ratio $1.1405$ at zero parameters, matching the observed ratio $91.1876 / 80.377 = 1.1344$ to $0.54\%$. This is the load-bearing zero-parameter consistency check of the SF-2 framework, validating both the SM-6 inheritance and the cage-stability calibration framework jointly with no cross-calibration.
+Per Section~\ref{sec:Z_mZW_ratio}, the tree-level relation $\mZ/\mW = 1/\cos\theta_W$ with $\sinsqthetaW = 3/(8\phig)$ from SM-6 gives the predicted ratio $1.1409$ at zero parameters, matching the observed ratio $91.1876 / 80.377 = 1.1344$ to $0.57\%$ (scheme caveat in Section~\ref{sec:Z_mZW_ratio}). This is the load-bearing zero-parameter consistency check of the SF-2 framework, validating both the SM-6 inheritance and the cage-stability calibration framework jointly with no cross-calibration.
 
 \subsection{Conditional closure framework remark}
 \label{sec:weinberg_conditional_closure}
@@ -1404,7 +1415,7 @@ Following the SF-4 v4.0+ precedent~\cite{abshier_sf4}, SF-2 ships at v1.0 with e
 \item The three EW-5 theorems (THEO-EW-6 through -8): $SU(2)_L$ from $\Gamma$, Nexus gauge invariance, Yang-Mills EFT limit. FIs inherited from EW-5~\cite{abshier_ew5} as Theorems~\ref{thm:SU2L}, \ref{thm:nexus_gauge}, \ref{thm:YM_EFT}.
 \end{enumerate}
 
-\textbf{Conditional closure statement.} Given the FI set above, SF-2 establishes the following at theorem level: cage-shape uniqueness (Theorems~\ref{thm:Zicos}, \ref{thm:Wbracelet}, \ref{thm:Hdodec}, \ref{thm:massgap}); the catalyst framework at framework level (Propositions~\ref{prop:centroid}--\ref{prop:universality}); $A_5 \to J=0$ for Higgs at theorem-equivalent level (Corollary~\ref{cor:higgs_scalar}); the tree-level $\mZ/\mW$ cross-check at $0.5\%$ (Section~\ref{sec:Z_mZW_ratio}). The four cage-boson masses are reproduced via calibration of $\eta_B$ per boson (PARTIAL CLOSURE, with OPEN-FP-SF-2-$\eta$ inheriting from EW corpus OPEN-P-EW-1).
+\textbf{Conditional closure statement.} Given the FI set above, SF-2 establishes the following at theorem level: cage-shape uniqueness (Theorems~\ref{thm:Zicos}, \ref{thm:Wbracelet}, \ref{thm:Hdodec}, \ref{thm:massgap}); the catalyst framework at framework level (Propositions~\ref{prop:centroid}--\ref{prop:universality}); $A_5 \to J=0$ for Higgs at theorem-equivalent level (Corollary~\ref{cor:higgs_scalar}); the tree-level $\mZ/\mW$ cross-check at $0.6\%$ (Section~\ref{sec:Z_mZW_ratio}). The four cage-boson masses are reproduced via calibration of $\eta_B$ per boson (PARTIAL CLOSURE, with OPEN-FP-SF-2-$\eta$ inheriting from EW corpus OPEN-P-EW-1).
 
 \textbf{The ``RESOLVED'' terminology in SF-2 is read in conditional sense by default}: claims marked as theorem-level closed are closed conditional on the FI set; claims marked as PARTIAL CLOSURE are explicitly partial within the same FI set. Future derivations that close additional FIs (theorem-level closure of OPEN-FP-SF-2-$\eta$ from cosmological-horizon embedding; theorem-level closure of OPEN-FP-SF-2-CHIR for V--A continuum limit; theorem-level closure of OPEN-FP-SF-2-loopfactor and OPEN-FP-SF-2-shelldens from substrate primitives) will advance SF-2's closure level beyond the conditional v1.0 framing.
 
@@ -1480,11 +1491,11 @@ Combining the master formula with the calibrated $\eta_B$ values per boson, the 
 \begin{itemize}[leftmargin=*]
 \item $\mWpm = 80.377 \pm 0.012$ GeV~\cite{pdg_2024} with $\eta_W$ calibrated.
 \item $\mW^{0}$ predicted equal to $\mWpm$ within $\sim 1$ MeV (Proposition~\ref{prop:activated}).
-\item $\mZ = 91.1876 \pm 0.0021$ GeV with $\eta_Z$ calibrated; tree-level $\mZ/\mW = 1/\cos\theta_W$ cross-check at $0.54\%$ zero-parameter (Section~\ref{sec:Z_mZW_ratio}).
+\item $\mZ = 91.1876 \pm 0.0021$ GeV with $\eta_Z$ calibrated; tree-level $\mZ/\mW = 1/\cos\theta_W$ cross-check at $0.57\%$ zero-parameter (Section~\ref{sec:Z_mZW_ratio}).
 \item $\mH = 125.10 \pm 0.20$ GeV with $\eta_H$ calibrated; resolution of op:e0 inconsistency via per-cage-stability-formula approach (Section~\ref{sec:H_ope0}).
 \end{itemize}
 
-\textbf{Parameter-economy assessment.} The framework reproduces four observed masses ($\mWpm$, $\mZ$, $\mH$, plus the structural prediction $\mW^{0} = \mWpm$) using three calibrated dilution factors ($\eta_W$, $\eta_Z$, $\eta_H$, with $\eta_{W^0} = \eta_W$ by Proposition~\ref{prop:activated}). The Weinberg angle $\sinsqthetaW = 3/(8\phig)$ is inherited from SM-6 as a zero-parameter numerical correspondence emerging from the spectral trace structure of the 600-cell, and the tree-level $\mZ/\mW$ cross-check at $0.54\%$ is zero-parameter. So the framework contains \emph{three calibrated parameters} reproducing \emph{four observables plus a zero-parameter consistency check}, with the $W^{0}$ existence as a forced structural prediction having no calibration.
+\textbf{Parameter-economy assessment.} The framework reproduces four observed masses ($\mWpm$, $\mZ$, $\mH$, plus the structural prediction $\mW^{0} = \mWpm$) using three calibrated dilution factors ($\eta_W$, $\eta_Z$, $\eta_H$, with $\eta_{W^0} = \eta_W$ by Proposition~\ref{prop:activated}). The Weinberg angle $\sinsqthetaW = 3/(8\phig)$ is inherited from SM-6 as a zero-parameter numerical correspondence emerging from the spectral trace structure of the 600-cell, and the tree-level $\mZ/\mW$ cross-check at $0.57\%$ is zero-parameter. So the framework contains \emph{three calibrated parameters} reproducing \emph{four observables plus a zero-parameter consistency check}, with the $W^{0}$ existence as a forced structural prediction having no calibration.
 
 \subsection{Resolution of the EW-corpus op:e0 inconsistency}
 \label{sec:mass_ope0_resolution}
@@ -1497,7 +1508,7 @@ The unified mass framework resolves the op:e0 inconsistency from the EW corpus (
 The unified mass framework ships at v1.0 as PARTIAL CLOSURE. Specifically:
 
 \begin{itemize}[leftmargin=*]
-\item \textbf{CLOSED at theorem level}: the master mass formula structure (Equation~\ref{eq:mass_master}); the cage-shape topologies for each boson (Theorems~\ref{thm:Zicos}, \ref{thm:Wbracelet}, \ref{thm:Hdodec}); the spin assignments ($W$ vector, $Z$ axial-vector, $H$ scalar) at the inherited level; the tree-level $\mZ/\mW = 1/\cos\theta_W$ cross-check at $0.54\%$ zero-parameter; the $\mWpm = \mW^{0}$ structural prediction within $\sim 1$ MeV (Proposition~\ref{prop:activated}).
+\item \textbf{CLOSED at theorem level}: the master mass formula structure (Equation~\ref{eq:mass_master}); the cage-shape topologies for each boson (Theorems~\ref{thm:Zicos}, \ref{thm:Wbracelet}, \ref{thm:Hdodec}); the spin assignments ($W$ vector, $Z$ axial-vector, $H$ scalar) at the inherited level; the tree-level $\mZ/\mW = 1/\cos\theta_W$ cross-check at $0.57\%$ zero-parameter; the $\mWpm = \mW^{0}$ structural prediction within $\sim 1$ MeV (Proposition~\ref{prop:activated}).
 \item \textbf{CALIBRATED reproduction} (not derivation): the four cage-boson absolute mass values, via independent $\eta_B$ per boson. PARTIAL CLOSURE pending theorem-level closure of OPEN-FP-SF-2-$\eta$.
 \item \textbf{Inherited OPEN problems}:
   \begin{itemize}[leftmargin=*]
@@ -1600,7 +1611,7 @@ The SF-2 v1.0 paper makes the following EWSB-related claims:
 \item \textbf{CPP has no fundamental Higgs field}; the 125 GeV scalar resonance observed at the LHC is the Higgs cage state (dodecahedral 20-vertex induced subgraph of the 600-cell, Theorem~\ref{thm:Hdodec}), not the excitation of a fundamental Higgs field.
 \item \textbf{CPP has no fundamental Higgs potential}; the SM Higgs potential $V_{\mathrm{Higgs}}^{\mathrm{(SM)}}$ is replaced in the continuum-limit Yang-Mills EFT by the cage-formation potential $V_{\mathrm{cage}}$ (Theorem~\ref{thm:YM_EFT}, Section~\ref{sec:ewsb_Vcage}).
 \item \textbf{The cage-formation event is the CPP analog of EWSB}; the substrate's $H_4$ symmetry breaks at cage formation to the cage-internal stabilizer ($D_6$ for W, $I_h$ for Z and H), structurally analogous to the SM's EWSB pattern.
-\item \textbf{The four cage-boson masses are reproduced at observation} via the master mass formula (Equation~\ref{eq:mass_master}) with calibrated $\eta_B$ per boson; the tree-level $\mZ/\mW = 1/\cos\theta_W$ relation inherits at $0.54\%$ zero-parameter cross-check (Section~\ref{sec:Z_mZW_ratio}).
+\item \textbf{The four cage-boson masses are reproduced at observation} via the master mass formula (Equation~\ref{eq:mass_master}) with calibrated $\eta_B$ per boson; the tree-level $\mZ/\mW = 1/\cos\theta_W$ relation inherits at $0.57\%$ zero-parameter cross-check (Section~\ref{sec:Z_mZW_ratio}).
 \item \textbf{First-principles closure of $V_{\mathrm{cage}}$ to SM EWSB phenomenology is registered as OPEN-FP-SF-2-EWSB} (Open Problem~\ref{op:sf2_ewsb}), inheriting PARTIAL CLOSURE at v1.0 in the strict-C posture.
 \end{itemize}
 
@@ -1699,8 +1710,8 @@ T & H dodecahedral cage (120 shells, $I_h$) & Direct enumeration confirms & \S\r
 T & No EW cage at $V \in (12, 20)$ (mass-gap) & LHC search consistent through 2026 & \S\ref{sec:massgap_thm} \\
 T & $A_5 \to J=0$ for Higgs (theorem-equivalent inheritance) & $J=0$ confirmed at LHC & \S\ref{sec:H_scalar} \\
 T & $W$ vector, $Z$ axial-vector (from cage phase bias) & Observed & \S\ref{sec:W_cage}, \S\ref{sec:Z_axial_vector} \\
-T & $\sinsqthetaW = 3/(8\phig) \approx 0.23121$ (SM-6 inheritance, zero params) & $0.23121 \pm 0.00004$ & \S\ref{sec:weinberg_sm6_inheritance} \\
-T & $\mZ/\mW = 1/\cos\theta_W = 1.1405$ (zero params) & $1.1344$ ($0.54\%$) & \S\ref{sec:Z_mZW_ratio} \\
+T & $\sinsqthetaW = 3/(8\phig) \approx 0.23176$ (SM-6 inheritance, zero params) & $0.23121 \pm 0.00004$ & \S\ref{sec:weinberg_sm6_inheritance} \\
+T & $\mZ/\mW = 1/\cos\theta_W = 1.1409$ (zero params) & $1.1344$ ($0.57\%$) & \S\ref{sec:Z_mZW_ratio} \\
 F & $\mWpm = \mW^{0}$ within $\sim 1$ MeV (sharp prediction) & Not directly tested & \S\ref{sec:activated_W} \\
 F & W lifetime $\tau_W \sim 3 \times 10^{-25}$ s & $3.16 \times 10^{-25}$ s & \S\ref{sec:activated_W_lifetime} \\
 F & Lepton universality (W $\to e\nu = \mu\nu = \tau\nu$ at tree level) & $10.8\%/10.6\%/11.4\%$ & \S\ref{sec:W_universality} \\
@@ -1800,7 +1811,7 @@ The SF-2 framework's predictions are testable across multiple time scales:
 \subsection{Closing statement: the SF-2 v1.0 articulation}
 \label{sec:disc_closing}
 
-SF-2 v1.0 articulates the electroweak cage-boson sector as a single geometric family emerging from the 600-cell substrate. The four cage geometries --- W bracelet (6-vertex hexagonal ring), $W^{0}$ at the same bracelet topology (forced-choice CPP novel prediction), Z icosahedron (12-vertex first shell), H dodecahedron (20-vertex second shell), plus the mass-gap prediction (no scalar in $(\mZ, \mH)$) --- are theorem-level forced by the distance-shell and symmetry-orbit classification of 600-cell substructures. The Standard Model gauge structure $SU(2)_L \times U(1)_Y$ emerges as the continuum-limit description of CPP substrate dynamics (Theorems~\ref{thm:SU2L}, \ref{thm:nexus_gauge}, \ref{thm:YM_EFT}); the Weinberg angle $\sinsqthetaW = 3/(8\phig)$ inherits at zero parameters from SM-6; the tree-level $\mZ/\mW = 1/\cos\theta_W$ cross-check at $0.54\%$ validates both the SM-6 inheritance and the cage-stability calibration framework jointly. The four cage-boson masses reproduce at observation via three calibrated $\eta_B$ values; the W$^{0}$ existence is a forced structural prediction with no calibration.
+SF-2 v1.0 articulates the electroweak cage-boson sector as a single geometric family emerging from the 600-cell substrate. The four cage geometries --- W bracelet (6-vertex hexagonal ring), $W^{0}$ at the same bracelet topology (forced-choice CPP novel prediction), Z icosahedron (12-vertex first shell), H dodecahedron (20-vertex second shell), plus the mass-gap prediction (no scalar in $(\mZ, \mH)$) --- are theorem-level forced by the distance-shell and symmetry-orbit classification of 600-cell substructures. The Standard Model gauge structure $SU(2)_L \times U(1)_Y$ emerges as the continuum-limit description of CPP substrate dynamics (Theorems~\ref{thm:SU2L}, \ref{thm:nexus_gauge}, \ref{thm:YM_EFT}); the Weinberg angle $\sinsqthetaW = 3/(8\phig)$ inherits at zero parameters from SM-6; the tree-level $\mZ/\mW = 1/\cos\theta_W$ cross-check at $0.57\%$ validates both the SM-6 inheritance and the cage-stability calibration framework jointly. The four cage-boson masses reproduce at observation via three calibrated $\eta_B$ values; the W$^{0}$ existence is a forced structural prediction with no calibration.
 
 The $W^{0}$ catalyst framework (Propositions~\ref{prop:centroid} -- \ref{prop:universality}) reinterprets the Standard Model $W^{\pm}$ as the activated configuration of the underlying $W^{0}$ bracelet during a charged-current event, with ten qualitative postdictions matching observed empirics across lepton universality, V--A coupling, no-FCNC-at-tree-level, $W$ and $\tau$ decay branching ratios, and decay-mechanism structure for beta decay, electron capture, muon decay, and tau decay. The reformulation explains all observed charged-current weak interactions through a single substrate-level mechanism without invoking fundamental gauge-boson propagation.
 

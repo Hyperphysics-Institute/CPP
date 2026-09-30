@@ -138,3 +138,5 @@ recorded, surveyed at 4335.)
 - **4340 (items 0 and 7):** cosmology wording sweep done (DP-Sea v1.3, EU-1 v1.6.1; others already labelled) —
   `wording_sweep_register.md`. Item 7's wording condition is met for every deposit candidate except DM-2 (not approved).
   Item 0 continues with the zero-parameter triage (TODO-4340-ZEROSWEEP).
+- **4341 (item 0):** zero-parameter triage started — SF-2 (arithmetic erratum: the predicted Weinberg value had been
+  written as the observed one) and SF-4 done; a corpus-wide compile pass registered (TODO-4341-COMPILEERR).

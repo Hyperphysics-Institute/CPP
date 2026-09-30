@@ -21,9 +21,9 @@
 | SF-1: The Charged-Lepton Sector from 600-Cell Geometry — Koide K=2/3 , the Koide Phase, and ... | 1.3 | `flagship_papers/charged_leptons/sf-1_charged_leptons.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SF-8: Emergent Electrostatics and the Bonded ZBW Sea — Coulomb's Law Measured Out of the Mom... | 0.5 | `flagship_papers/electromagnetism/SF-8/sf-8_emergent_electrostatics.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
 | SF-6: Electromagnetism Unified — Classical, Relativistic, and Quantum Electrodynamics from e... | 1.6 | `flagship_papers/electromagnetism/sf-6_electromagnetism.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
-| SF-2 Companion: Cage Geometry Figures, Executive Overview, Glossary, Quantitative Frameworks... | 1.05 | `flagship_papers/electroweak/sf-2_companion.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry — W^ , W^0 , Z , and H as a ... | 1.08 | `flagship_papers/electroweak/sf-2_electroweak.tex` | 2026-09-22 | — | **UNKNOWN — not in prior catalog** |
-| SF-4: Neutrino Sector Unification from 600-Cell Geometry — Eight Parameters from One Calibra... | 3.4 | `flagship_papers/neutrinos/sf-4_neutrinos.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
+| SF-2 Companion: Cage Geometry Figures, Executive Overview, Glossary, Quantitative Frameworks... | 1.06 | `flagship_papers/electroweak/sf-2_companion.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
+| SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry — W^ , W^0 , Z , and H as a ... | 1.08.1 | `flagship_papers/electroweak/sf-2_electroweak.tex` | 2026-09-22 | — | **UNKNOWN — not in prior catalog** |
+| SF-4: Neutrino Sector Unification from 600-Cell Geometry — Eight Parameters from One Calibra... | 3.5 | `flagship_papers/neutrinos/sf-4_neutrinos.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SF-3: The Quark Sector from 600-Cell Geometry — Masses, Strong Coupling, Koide Phase, and Ge... | 1.6 | `flagship_papers/quarks/sf-3_quarks.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SF-5: Strong-Sector Unification from 600-Cell Geometry — SU(3) Colour, the Eight Gluons, Con... | 1.04 | `flagship_papers/strong/sf-5_strong.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SF-7: Standard Model Grand Unification from 600-Cell Geometry — Hierarchy Without Hierarchy:... | 0.11 | `flagship_papers/unification/sf-7_grand_unification.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
@@ -121,7 +121,7 @@
 |---|---|---|---|---|---|
 | Holographic Vacuum Energy Suppression — from the 600-Cell Lattice Structure — Technical Note... | — | `series_foundations/TN-SR-1_vacuum_energy_holographic_suppression.tex` | 2026-03-27 | — | **UNKNOWN — not in prior catalog** |
 | The Silly Putty Analogy: Velocity-Dependent Polarization of the Dipole Particle Sea — in Con... | — | `series_foundations/dp-sea-polarization/DP-Sea-Polarization-Model.tex` | 2026-03-26 | — | **UNKNOWN — not in prior catalog** |
-| Conscious Point Physics: — DP Sea and Cage Composition Formation, Statistics, and Stability | 1.3 | `series_foundations/dp_sea_composition/DP_sea_and_cage_composition.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
+| Conscious Point Physics: — DP Sea and Cage Composition Formation, Statistics, and Stability | 1.3 | `series_foundations/dp_sea_composition/DP_sea_and_cage_composition.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | Conscious Point Physics: — The Nexus as Superdeterministic Mechanism: — Bell Correlations, H... | 1.1 | `series_foundations/series_superdeterminism/SD-1_nexus_superdeterminism.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
 | Conscious Point Physics: — The 600-Cell Angular Structure of Bell Deviations: — H_4 Symmetry... | 1.1 | `series_foundations/series_superdeterminism/SD-2_h4_angular_structure.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
 | Conscious Point Physics: — The CPP Apparatus Model: — Macroscopic Detectors, Decoherence, — ... | 1.1 | `series_foundations/series_superdeterminism/SD-3_apparatus_model.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
@@ -136,7 +136,7 @@
 |---|---|---|---|---|---|
 | DM-1: A Velocity-Independent Self-Interacting Dark-Matter Candidate from Charge-Neutral qDP/... | 1.8 | `series_phenomena/cosmology/dark_matter/DM-1/DM-1_substrate_dark_matter_candidate.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | DM-3: The Discriminating Predictions — Nine observational protocols for the Cross-Rod dark-m... | 1.2 | `series_phenomena/cosmology/dark_matter/DM-3/DM-3_discriminating_predictions.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| EU-1: The Primordial Scalar Spectral Index from Substrate Inflation — A Zero-New-Axiom Deriv... | 1.6.1 | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | 2026-09-10 | 3852 | **UNKNOWN — not in prior catalog** |
+| EU-1: The Primordial Scalar Spectral Index from Substrate Inflation — A Zero-New-Axiom Deriv... | 1.6.1 | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | DM-2: Sea Gravitation and the Dark Sector — One sourcing rule for matter, dark matter, and -... | 1.0 | `series_phenomena/cosmology/sea_gravitation/DM-2/DM-2_sea_gravitation_dark_sector.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
 | TP-1: The Truncated Photon and the Lattice Regularization of Shutter-Induced Photon Creation... | 1.4 | `series_phenomena/quantum_optics/photon_truncation/TP-1/TP-1_truncated_photon.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 
@@ -216,7 +216,7 @@
 
 | File | CHANGELOG | Title page | Last patch |
 |---|---|---|---|
-| `flagship_papers/electroweak/sf-2_electroweak.tex` | **1.08** | 1.06 | — |
+| `flagship_papers/electroweak/sf-2_electroweak.tex` | **1.08.1** | 1.06 | — |
 | `series_standard_model/papers/SM-11_quark_confinement_qDP_chaining.tex` | **1.2** | 1.1 | 3231 |
 
 ## Papers carrying no parseable version stamp

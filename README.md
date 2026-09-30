@@ -15,7 +15,7 @@
 
 **Where things stand, with the basis of each claim.** The authoritative sources are [`predictions.md`](predictions.md) (every quantitative claim with status), [`theory-overview.md`](theory-overview.md) (the scorecard, audited row by row), [`paper_catalog.md`](paper_catalog.md) (papers and versions) and [`pre_deposit_roadmap.md`](pre_deposit_roadmap.md) (what must be settled before the corpus is deposited).
 
-- **Derived at zero parameters (as claimed by the papers):** sin²θ_W = 3/(8φ), α_s = 5/(8φ), their exact sum 1/φ; the lepton and quark Koide phases; m_Z/m_W = 1.140; SU(3) as the unique algebra of the three-vertex cage.
+- **Derived at zero parameters (as claimed by the papers):** sin²θ_W = 3/(8φ), α_s = 5/(8φ), their exact sum 1/φ; the lepton and quark Koide phases; m_Z/m_W = 1.141; SU(3) as the unique algebra of the three-vertex cage.
 - **One calibration (the electron mass):** the muon and tau masses; the heavy-quark masses (RMS 2.1%); the neutrino sector.
 - **Conditional:** Koide K = 2/3 (on Layer B, OPEN-SS-16); the nuclear bindings (on stated hypothesis stacks); n_s ≈ 0.9654 (framework-conditional).
 - **Calibrated:** the absolute W, Z and Higgs masses; the fine-structure constant (α = PSR/(2L) with one calibrated swing); the cosmological constant.
@@ -108,7 +108,7 @@ No paper is yet deposited in the CERN repository (Zenodo); deposits are made by 
 | Koide ratio K = 2/3 | 11 ppm | SM-3 | conditional on Layer B |
 | Muon, tau masses | 0.18%, 0.15% | SM-6 | 1 calibration (m_e) |
 | Heavy-quark masses (s, c, b, t) | RMS 2.1% | SM-8/9, SF-3 | 1 calibration (m_e) |
-| m_Z/m_W = 1.140 | 0.54% | SF-2 | zero-param ratio |
+| m_Z/m_W = 1.141 | 0.57% | SF-2 | zero-param ratio |
 | Neutrino m₂, Σm_ν, σ_ν | 1.7%, in bound, 2.0% | SF-4 | 1 calibration (m_e) |
 | SU(3) colour algebra; uniqueness; β₀ = 7 | exact / structural | SS-1, SS-3 | zero-param |
 | Charge quantisation δ = 1/3 | exact | SM-1 | zero-param |

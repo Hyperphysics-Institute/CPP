@@ -2429,10 +2429,14 @@ CONV-029 (Patch 3269) cleared GR-1i 5–0 with five adoptions and discharged OPE
 OPEN-ORG-023 Item 1 planned a small test-run deposit first, using the spin trio; SPIN-1 and SPIN-2 are now held (4289), so the set must be re-chosen. Propose two or three papers that are finished, not held, and not gated (candidates: SPIN-3, SR-1, SS-3), for the founder's APPROVED column and Isak's DOI reservation.
 
 ### TODO-4340-ZEROSWEEP — triage the "zero-parameter" wording paper by paper (registered Patch 4340, governance; roadmap item 0)
+**Progress 4341:** SF-2 done (arithmetic erratum found: 3/(8φ) had been written as the observed 0.23121; v1.08.1 + companion v1.06), SF-4 done (v3.5). Next: SS-8 (24), Capotauro (22), then down the `--counts` list.
 `python3 code/claim_wording_sweep.py zero --counts` lists ~300 hits in 44 deposit candidates. Criterion (wording_sweep_register.md): a "zero-parameter" claim must be literally true of that result or name its calibration or condition in the same sentence. Largest first: SF-2 (35), SF-4 (29), SS-8 (24), Capotauro (22). Record each paper's verdict in the register.
 
 ### TODO-4340-DPSEACOMPILE — DP-Sea paper does not compile cleanly (registered Patch 4340, foundations)
 Pre-existing, unchanged by 4340: the three figure SVGs (dpsea_fig1–3) are missing from the folder, and multi-byte characters (±, Λ, ≈, superscripts) sit inside lstlisting / plain text without a Unicode-capable setup (23 errors). Isak's PDF build at deposit will fail until fixed: restore or regenerate the figures, and replace the listing characters with ASCII.
+
+### TODO-4341-COMPILEERR — flagship .tex files with pre-existing compile errors (registered Patch 4341, governance; before Isak's PDF build)
+Found while checking the 4341 edits (baseline and edited versions give the same errors): SF-2 (8 errors: Unicode α ×2 outside math, "Too many }'s" ×2, undefined control sequence ×2, "Missing \begin{document}" and "no line here to end" — the latter pair from the header region), SF-4 (Unicode α ×2). With TODO-4340-DPSEACOMPILE (DP-Sea) and GR-1c (fixed at 4339). A corpus-wide compile pass over the 117 deposit candidates is owed before deposit: `pdflatex` twice each, list files with errors, fix.
 
 ### TODO-4234-DELTA — the nucleon's g_A/g_V from the cage (registered Patch 4234, EW lane; owned by the STRONG sector)
 

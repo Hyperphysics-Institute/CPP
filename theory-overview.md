@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 29 September 2026 (Patch 4340: catalog refreshed after the cosmology wording sweep. Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
+**Last updated:** 29 September 2026 (Patch 4341: m_Z/m_W row corrected (SF-2 arithmetic erratum). Patch 4340: catalog refreshed after the cosmology wording sweep. Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
 Patch 0422B), with a 6 June 2026 EU-1 note.
 
 ---
@@ -25,7 +25,7 @@ the strength its own paper or registry gives it:
 | Koide K = 2/3 | **conditional** on Layer B (OPEN-SS-16) | SM-3, `frontier_sectors/SS.md` |
 | Charged-lepton masses (μ, τ) | **1 calibration** (m_e) + Koide phase; inherits Koide's Layer-B condition | SM-6 |
 | Heavy-quark masses (RMS 2.1%) | **1 calibration** (m_e; SF-3 v1.0 demoted m_c to derived) | SM-8/9, SF-3 |
-| W, Z, H absolute masses | **calibrated** dilution factors η_W, η_Z, η_H; the ratio m_Z/m_W = 1.140 is zero-parameter | SF-2 |
+| W, Z, H absolute masses | **calibrated** dilution factors η_W, η_Z, η_H; the ratio m_Z/m_W = 1.141 is zero-parameter | SF-2 |
 | Nuclear bindings (SS-5, SS-7, SS-8, SS-9) | **conditional** on hypothesis stacks (C1–C8, D1–D3) | SS papers, `predictions.md` |
 | Neutrino sector | 8 parameters from **1 calibration** | SF-4 v3.4 |
 | n_s ≈ 0.9654 | **framework-conditional**, leading-order (OPEN-EU-1) | EU-1, PRED-C-96 |
@@ -109,7 +109,7 @@ this table is the thing to fix.
 | Quark Koide phase | 124.035° | 124.094° | 0.048% | SF-3 Prop. 5.1 (a proposition, not a theorem) | SM-7, SF-3 |
 | m_s, m_c, m_b, m_t | 96.3, 1249, 4115, 169 571 MeV | 93.4, 1270, 4180, 172 760 | RMS 2.1% | 1 cal (m_e) + A8′; m_t carries z·C_F = 16 | SM-8/9, SF-3 |
 | m_b, m_t by Koide + m_c | 4.24, 169.8 GeV | — | 1.4%, 1.7% | **demoted**: non-canonical two-calibration route (SF-3) | SM-7 |
-| m_Z/m_W | 1.140 | 1.134 | 0.54% | zero-param ratio (scheme mismatch MS-bar vs on-shell not yet addressed) | SF-2 |
+| m_Z/m_W | 1.1409 | 1.1344 | 0.57% | zero-param ratio; the tree relation is exact on-shell, so the ~0.6% gap is of radiative-correction size (SF-2 v1.08.1; the earlier 1.1405/0.54% used the observed angle in place of 3/(8φ)) | SF-2 |
 | m_W, m_Z, m_H | observed values | — | — | **calibrated** (η_W, η_Z, η_H) | SF-2 |
 | Neutrinos: m₂, m₃, Σm_ν, σ_ν | 8.81, 55.1, 64.9 meV; 1.62e-11 | 8.66, 50.9, ≤72 meV; 1.59e-11 | 1.7%, 8.3%, in bound, 2.0% | 1 cal (m_e); conditional theorem level | SF-4 v3.4 |
 | PMNS sin²θ₁₂, sin²θ₂₃ | 1/3, 1/2 | 0.307, 0.572 | 8%, 13% | zero-param TBM zeroth order | SM-5, SF-4 |
