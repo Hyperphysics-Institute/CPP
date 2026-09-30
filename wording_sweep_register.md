@@ -35,6 +35,12 @@ judged to need, and where it was done. A hit that states its basis correctly nee
 | SF-4 | 29 | "zero free parameters" for absolute masses omitted the electron-mass calibration carried by M₀ (title already says "One Calibration"); cross-paper paragraph misquoted SM-9 ("top to 0.02%", which SM-9 calls a fortunate cancellation in a two-calibration fit) and SS-7 (measured B(⁴He) input) | SF-4 v3.5 at 4341 |
 | SS-8 | 24 | explicitly "conditional-zero-parameter", defined once for the paper; the definition did not name the electron-mass calibration inside B_pair | v1.4 at 4342 (one clause) |
 | Capotauro | 22 | "zero free parameters" for χ/6 is honest given FI-C-9/10 named as inputs; **the larger issue is status**: sub-claim (a)/Q7 superseded, δ_CP referral withdrawn, the hand not fixed, the EM leg a convention (4069/4070) | v2.4 at 4342: Status note + superseded banners (E4/E7 of the v2.1 revision plan) |
+| SS-7 | 17 | abstract said B_α comes "from SS-5's ⁴He prediction" but the table uses the measured 28.296 MeV; the body's fully-CPP variant misquoted (−4.0% at ⁴⁰Ca; actually −2.0%) | v1.7 at 4347: inputs stated; fully-CPP RMS 1.77% (verify `series_strong/code/4347_ss7_lo_cpp_variant.py`) |
+| EU-1 | 8 | abstract/table/conclusion said the pivot N_* ≈ 57 is "fixed by the CP count", "derived, not assumed"; the body says the pivot placement is adopted | v1.6.2 at 4347: "no fitted parameter, one adopted input" |
+| SS-2, SS-5, SS-6, SS-9 | 5/7/–/6 | held papers; SS-2's α_s(m_H) and constituent masses called zero-parameter | status notes at 4347 (held; frame superseded; α_s(m_H) calibrated in effect; m_q assigned; SS-9 calibrated on ⁵⁶Ni) |
+| SM-8, SM-9, SF-3 | 14/11/14 | "zero free parameters" always displayed with M₀ = m_e z/φ, so the calibration is visible; SF-3 states the single m_e calibration throughout | none needed |
+| SF-5, SF-6, SR-2, SS-1 | 9/5/5/8 | SF-5 names m_e; SF-6 carries its two-tier rigor labels; SR-2's λ is fixed by G; SS-1 scopes its claim to the algebra | none needed |
+| GR-1d | 8 | "parameter-free echo" — the prediction itself is withdrawn | covered by the V4 status note (4345) |
 
 About 300 hits in some 45 papers. Most are scoped correctly ("zero free shape parameters, one calibration"). The
 triage is owed paper by paper, largest first: SF-2 (35), SF-4 (29), SS-8 (24), Capotauro (22). Criterion: a

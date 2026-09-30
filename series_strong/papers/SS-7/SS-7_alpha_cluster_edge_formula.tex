@@ -3,6 +3,11 @@
 %        for Medium-Mass Nuclei
 % Strong Sector Series
 %
+% Version 1.7 --- 30 September 2026 (Patch 4347, zero-parameter sweep): the abstract said B_alpha comes "from
+%   SS-5's 4He prediction", but the headline table uses the MEASURED 28.296 MeV. Restated; status note added giving
+%   both readings (measured input: RMS 0.80%; fully-CPP B_alpha = 27.904 MeV: RMS 1.77%, -2.57% to -0.03%;
+%   verify series_strong/code/4347_ss7_lo_cpp_variant.py). The body's "-4.0% (40Ca)" for the fully-CPP variant is
+%   corrected to -1.99%.
 % Version 1.6 --- 17 August 2026 (Patch 3214):
 %   added a How-we-review methodology note stating plainly that AI panel
 %   review is a self-applied verification method and not journal peer
@@ -378,7 +383,8 @@
 \small OSF DOI: 10.17605/OSF.IO/JXE8D\\[2pt]
 {\small Version~1.4 --- 17 August 2026 (Patch 3212: added the generated plain-language appendix glossing the internal programme identifiers used in this paper (founder jargon ruling, 16 Aug 2026). No claim, equation, number or section changed.)}\\[2pt]
 {\small Version~1.5 --- 17 August 2026 (Patch 3213: extended the generated identifier appendix to all five identifier families (THEO-, FI-, PRED-, CONJ-, PH- as well as OPEN-), and replaced review-convergence scores with AI review panel wording where present. No claim, equation, number or section changed.)}\\[2pt]
-{\small Version~1.6 --- 17 August 2026 (Patch 3214: added a How-we-review methodology note stating plainly that AI panel review is a self-applied verification method and not journal peer review; twelve chirality papers retitled so the descriptive title leads and the identifier is demoted to a subtitle. No claim, equation, number or section changed.)}}
+{\small Version~1.6 --- 17 August 2026 (Patch 3214: added a How-we-review methodology note stating plainly that AI panel review is a self-applied verification method and not journal peer review; twelve chirality papers retitled so the descriptive title leads and the identifier is demoted to a subtitle. No claim, equation, number or section changed.)}\\[2pt]
+{\small Version~1.7 --- 30 September 2026 (Patch 4347: the inputs stated correctly --- the headline table uses the measured $^4$He binding; the fully-CPP reading is given alongside.)}}
 
 \begin{document}
 \maketitle
@@ -386,7 +392,7 @@
 \begin{abstract}
 \noindent\textbf{Paper type:} Prediction paper, presenting twelve zero-parameter concurrent predictions for strict-$N{=}Z$ alpha-chain nuclei at $\Nalpha \in [3, 14]$ with agreement below $1.5\%$ against AME 2020.
 
-SS-5 derived the binding energies of $A = 2, 3, 4$ nuclei from the open-vertex cascade of hybrid-tetrahedral nucleons, terminating at ${}^4$He as the unique closed 3-polytope. SS-7 extends the cascade paradigm one level up: for $A \geq 8$ nuclei, \emph{alpha particles} themselves act as rigid tetrahedral building blocks, assembling into closed polytopes of alphas with quark-quark contact bonds across each shared face. The only two numerical inputs are $\Balpha$ (from SS-5's ${}^4$He prediction) and $\Bpair = \Mzero/\phig = 2.342$~MeV (the SS-5 nucleon-pair binding quantum). Both are inherited from SS-5 without modification.
+SS-5 derived the binding energies of $A = 2, 3, 4$ nuclei from the open-vertex cascade of hybrid-tetrahedral nucleons, terminating at ${}^4$He as the unique closed 3-polytope. SS-7 extends the cascade paradigm one level up: for $A \geq 8$ nuclei, \emph{alpha particles} themselves act as rigid tetrahedral building blocks, assembling into closed polytopes of alphas with quark-quark contact bonds across each shared face. The two numerical inputs are $\Balpha$ and $\Bpair = \Mzero/\phig = 2.342$~MeV (the SS-5 nucleon-pair binding quantum, carrying the programme's electron-mass calibration). \emph{(Version~1.7: the headline table uses the measured $\Balpha = 28.296$~MeV, not SS-5's prediction; with SS-5's $27.904$~MeV the root-mean-square error is $1.77\%$ instead of $0.80\%$. No parameter is fitted in either reading; the predictions are conditional on hypotheses C1--C4.)}
 
 Under this hypothesis, an $N_\alpha$-alpha cluster nucleus (with $A = 4N_\alpha$, $Z = 2N_\alpha$) has binding energy
 \[
@@ -838,7 +844,7 @@ Following the SS-5 strategy, the strength of this result is not any one number b
 
 All twelve errors fall inside the CPP generic stereographic residual band ($\phig^{1/z} - 1 \approx 4.1\%$) that characterizes leading-order CPP predictions across SM-3, SM-6, SM-7, SM-8, SS-1, SS-3, SS-4, and now SS-5 and SS-7. The pattern is consistent with rigid-mode LO treatment neglecting finite-separation corrections, tensor effects, and other NLO contributions.
 
-\textbf{Alternative with LO-CPP $\Balpha$ value.} Table~\ref{tab:SS7_predictions} uses the experimental $\Balpha = 28.296$ MeV as input. An equivalent LO-CPP variant uses $\Balpha = 27.904$ MeV (the SS-5 zero-parameter prediction, itself at $-1.4\%$ residual from AME 2020), which carries the SS-5 per-alpha residual through to each multi-alpha prediction. Under this variant, the Table~\ref{tab:SS7_predictions} predictions shift uniformly downward by $\Nalpha \times 0.392$ MeV, producing errors of approximately $-1.5\%$ (${}^{12}$C) to $-4.0\%$ (${}^{40}$Ca). All errors remain within the CPP residual band. The v0.1 version of this paper discussed both variants explicitly; v1.0 uses the experimental $\Balpha$ as primary because it isolates what is specifically tested by SS-7 (the edge-count structure) from what is inherited from SS-5 (the per-alpha binding). Both framings are valid; they emphasize different aspects of the zero-parameter structure.
+\textbf{Alternative with LO-CPP $\Balpha$ value.} Table~\ref{tab:SS7_predictions} uses the experimental $\Balpha = 28.296$ MeV as input. An equivalent LO-CPP variant uses $\Balpha = 27.904$ MeV (the SS-5 zero-parameter prediction, itself at $-1.4\%$ residual from AME 2020), which carries the SS-5 per-alpha residual through to each multi-alpha prediction. Under this variant, the Table~\ref{tab:SS7_predictions} predictions shift uniformly downward by $\Nalpha \times 0.392$ MeV, producing errors of $-1.5\%$ (${}^{12}$C) to $-2.6\%$ (${}^{28}$Si), root-mean-square $1.77\%$ across the twelve (Version~1.7: the earlier ``$-4.0\%$ (${}^{40}$Ca)'' was an arithmetic slip; ${}^{40}$Ca is $-2.0\%$; \texttt{series\_strong/code/4347\_ss7\_lo\_cpp\_variant.py}). All errors remain within the CPP residual band. The v0.1 version of this paper discussed both variants explicitly; v1.0 uses the experimental $\Balpha$ as primary because it isolates what is specifically tested by SS-7 (the edge-count structure) from what is inherited from SS-5 (the per-alpha binding). Both framings are valid; they emphasize different aspects of the zero-parameter structure.
 
 \begin{figure}[H]
 \centering

@@ -150,3 +150,5 @@ recorded, surveyed at 4335.)
   the test-run choice (proposed: SS-3 and GR-1i; founder approval) and the OPEN-ORG-023 close.
 - **4346:** founder: a trial deposit was already done successfully; no second trial (TODO-4339-TESTRUN closed). Its papers
   and DOIs must be written into the queue before the wave (TODO-4346-TRIALDOIS).
+- **4347 (item 0):** zero-parameter sweep second tranche: EU-1 pivot stated as adopted; SS-7 inputs and fully-CPP RMS (1.77%);
+  held SS papers carry status notes.

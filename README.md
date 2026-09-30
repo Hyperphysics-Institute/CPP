@@ -17,7 +17,7 @@
 
 - **Derived at zero parameters (as claimed by the papers):** sin²θ_W = 3/(8φ), α_s = 5/(8φ), their exact sum 1/φ; the lepton and quark Koide phases; m_Z/m_W = 1.141; SU(3) as the unique algebra of the three-vertex cage.
 - **One calibration (the electron mass):** the muon and tau masses; the heavy-quark masses (RMS 2.1%); the neutrino sector.
-- **Conditional:** Koide K = 2/3 (on Layer B, OPEN-SS-16); the nuclear bindings (on stated hypothesis stacks); n_s ≈ 0.9654 (framework-conditional).
+- **Conditional:** Koide K = 2/3 (on Layer B, OPEN-SS-16); the nuclear bindings (on stated hypothesis stacks); n_s ≈ 0.9654 (framework-conditional, at an adopted pivot).
 - **Calibrated:** the absolute W, Z and Higgs masses; the fine-structure constant (α = PSR/(2L) with one calibrated swing); the cosmological constant.
 - **Held pending critique:** SS-2 (proton radius and moment), SS-5, SS-6, SS-9.
 - **Derived conditionally:** the general static field equation of gravity with a Birkhoff-type uniqueness (GR-1j), on a constitutive form graded at W2 strength; the full nonlinear Einstein equations remain open.
@@ -115,9 +115,9 @@ No paper is yet deposited in the CERN repository (Zenodo); deposits are made by 
 | Three-generation theorem | structural | SM-8 | within the SM-8 model |
 | String tension σ = 926.5 MeV/fm | +1.8% | SS-4 | conditional |
 | Light-nuclei bindings (d, ³H, ³He, ⁴He) | +5.3% … −1.4% | SS-5 | conditional; held |
-| Alpha-chain nuclei ¹²C→⁵⁶Ni | RMS 0.80% | SS-7 | conditional; measured ⁴He input |
+| Alpha-chain nuclei ¹²C→⁵⁶Ni | RMS 0.80% (1.77% fully CPP) | SS-7 | conditional; measured ⁴He input |
 | ⁸⁴Mo, ⁸⁸Ru, ⁹²Pd | 0.05–0.13% | SS-9 | calibrated (⁵⁶Ni); held |
-| Spectral index n_s = 0.9654 | 0.12σ | EU-1 | framework-conditional |
+| Spectral index n_s = 0.9654 | 0.12σ | EU-1 | framework-conditional; pivot adopted |
 | Proton radius, magnetic moment | +5.0%, −0.1% | SS-2 | held pending critique |
 | α_s(m_H) = 0.1132 | +0.2% | SS-2 | calibrated in effect (A11 matching) |
 

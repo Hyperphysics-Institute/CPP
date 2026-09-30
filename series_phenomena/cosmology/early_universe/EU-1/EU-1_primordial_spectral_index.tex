@@ -4,6 +4,12 @@
 % Conscious Point Physics --- Early-Universe / Cosmology Series
 % Version history: documentation_suite/changelog-EU-1.md (created Patch 0784; maintained there)
 % ============================================================
+% Version 1.6.2 --- 30 September 2026 (Patch 4347, zero-parameter sweep): the abstract, the parameter table and the
+%   conclusion said the pivot N_* ~ 57 is "fixed by the CP count" / "derived, not assumed", and called n_s
+%   "zero free parameters". The body (sec. 3, and the 3930-era remark) says the CP-count logarithm fixes the TOTAL
+%   (60.5; 61-65 at N_CP = 1e80-1e84) and the pivot's placement a few e-folds before the end is ADOPTED from the
+%   standard pivot offset, not derived. The three statements now agree with the body: no fitted parameter, one
+%   adopted input (the pivot placement), and N_CP itself taken from the observable-universe count.
 % Version 1.6.1 --- 29 September 2026 (Patch 4340): EDITORIAL. The two mentions of the
 %   dark-matter programme now say its identification is a conjecture (CONJ-COSMO-1).
 % Version 1.6 --- 9 September 2026 (Patch 3852):
@@ -105,7 +111,7 @@
 \title{\textbf{EU-1: The Primordial Scalar Spectral Index from Substrate Inflation}\\[6pt]
 {\large A Zero-New-Axiom Derivation of $\ns = 1 - 2/\nstar \approx 0.9649$ from A1 Indistinguishability and Zitterbewegung Bath Thermalization}\\[4pt]
 {\large \textbf{Conscious Point Physics --- Early-Universe / Cosmology Series}}\\[4pt]
-{\Large \textbf{Version 1.6.1 --- 29 September 2026 (Version 1.0 SHIPPED 6 June 2026)}}}
+{\Large \textbf{Version 1.6.2 --- 30 September 2026 (Version 1.0 SHIPPED 6 June 2026)}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -119,7 +125,8 @@
 {\small Version~1.4 --- 9 September 2026 (Patch 3809: dated note in the Problem Status section recording the saturation-protocol consequences established at Session 167 --- S-HENGINE-HELD, the ignition hand-off, the saturated-bath lag bound; title-block version reconciled with the catalog. No claim, equation, number or section changed.)}\\[2pt]
 {\small Version~1.5 --- 9 September 2026 (Patch 3817: dated note in the Problem Status section recording the re-grounding of the occupancy at Session 169 --- the referent of ``one address'' in Eq.~Nstar is one rest-frame Planck sphere; the thirteen-GP seed reading superseded; the causal-contact sentence re-grounded as the empty-register first Moment; OPEN-EU-PSR-EARLY-1. No equation, result, or section changed.)}\\[2pt]
 {\small Version~1.6 --- 9 September 2026 (Patch 3852: SUBSTANTIVE. The $O(\alpha)$ correction is re-characterised as a one-sided systematic shift rather than a symmetric theory uncertainty, per T-2 (Patch 3850): the coefficient closes as $\lambda = \alpha/\kappa$ with $\kappa = kT_{\mathrm{bath}}/E_{\mathrm{Pl}}$, and at the bath clause $\kappa = 1$ gives $\lambda = \alpha$ and $\Delta\ns = +5.0\times10^{-4}$. The quoted value moves from $0.9649 \pm 5\times10^{-4}$ to $\mathbf{0.9654}$ ($0.12\,\sigma_{\mathrm{Planck}}$). A second dated note records the amplitude closure (Patch 3847). The tilt derivation is unchanged.)}\\[2pt]
-{\small Version~1.6.1 --- 29 September 2026 (Patch 4340: editorial; the dark-matter identification is labelled a conjecture, CONJ-COSMO-1.)}}
+{\small Version~1.6.1 --- 29 September 2026 (Patch 4340: editorial; the dark-matter identification is labelled a conjecture, CONJ-COSMO-1.)}\\[2pt]
+{\small Version~1.6.2 --- 30 September 2026 (Patch 4347: the pivot $N_*\approx 57$ stated as adopted, not derived, in the abstract, parameter table and conclusion, matching the body.)}}
 
 \begin{document}
 \maketitle
@@ -137,9 +144,10 @@ fact fixes the tilt to the canonical slow-roll form
 \[
 \ns = 1 - \frac{2}{\nstar}, \qquad \alphas = -\frac{2}{\nstar^2},
 \]
-with $\nstar \approx 57$ \emph{fixed by the Conscious-Point count} of the observable universe,
-$\nstar = \tfrac{1}{3}\ln(N_{\mathrm{CP}}/N_{\mathrm{GP}})$. Numerically $\ns = 1 - 2/57 \approx
-0.9649$ and $\alphas \approx -0.0006$, matching the Planck central value with zero free parameters.
+with $\nstar \approx 57$ at the CMB pivot. The Conscious-Point count of the observable universe fixes the \emph{total}
+number of e-folds, $\tfrac{1}{3}\ln(N_{\mathrm{CP}}/N_{\mathrm{GP}}) \approx 60$; the pivot's placement a few e-folds before
+the end is \emph{adopted} from the standard pivot offset, not derived (Version~1.6.2). Numerically $\ns = 1 - 2/57 \approx
+0.9649$ and $\alphas \approx -0.0006$, matching the Planck central value with no fitted parameter and one adopted input.
 The logarithm is not a mechanical ``deeper-pushes-harder'' law (every power-law or geometric boost is
 excluded, predicting $\ns \le -1$); it is the configurational chemical potential of indistinguishable
 occupation units, an immediate consequence of axiom A1 (Conscious Points carry no individual
@@ -210,7 +218,7 @@ $\ns = 1 - 2/\nstar$ follows, with the pivot $\nstar$ fixed by the CP count of t
 universe.
 
 We state the result and its honest scope up front. The central value $\ns = 0.9649$ is obtained at
-leading order with zero free parameters and matches the Planck central value to four decimals. It is
+leading order with no fitted parameter (the pivot placement $\nstar \approx 57$ is adopted; see \S\ref{sec:background}) and matches the Planck central value to four decimals. It is
 \emph{not} claimed to be derived from the primitive axioms A1--A11 alone: it is conditional on three
 standing commitments of the CPP cosmology sector --- (i) a homogeneous, isotropic (FRW/VSL) inflating
 background, (ii) the charge-neutral DP-Sea equation of state, and (iii) the smallness of SSV
@@ -519,7 +527,7 @@ the canonical slow-roll form. Evaluated at the CMB pivot $\Nrem = \nstar \approx
 \begin{equation}\label{eq:ns}
 \boxed{\;\ns = 1 - \frac{2}{\nstar} = 1 - \frac{2}{57} \approx 0.9649\;}
 \end{equation}
-matching Planck~2018 ($0.9649\pm 0.0042$) at the central value with zero free parameters. The running
+matching Planck~2018 ($0.9649\pm 0.0042$) at the central value with no fitted parameter, at the adopted pivot. The running
 follows immediately,
 \begin{equation}\label{eq:running}
 \alphas \equiv \frac{d\ns}{d\ln k} = -\frac{2}{\nstar^2} \approx -0.0006,
@@ -602,7 +610,7 @@ slow-roll / $\delta N$ description.}
 GP-occupancy dilution $\nbar(N) = \nbar_{\mathrm{init}}e^{-3N}$ & background expansion / slow roll \\
 configurational chemical potential $\mu\propto\ln\nbar$ driving $\Heff$ & inflaton potential driving $H$ \\
 e-folds remaining $\Nrem = \tfrac{1}{3}\ln\nbar$ & $\delta N$-formalism field variable ($\zeta = \delta N$) \\
-$\nstar = \tfrac{1}{3}\ln(N_{\mathrm{CP}}/N_{\mathrm{GP}})\approx 57$ & pivot e-fold number $N_*$ (here \emph{derived}, not assumed) \\
+$\nstar = \tfrac{1}{3}\ln(N_{\mathrm{CP}}/N_{\mathrm{GP}})\approx 57$ & pivot e-fold number $N_*$ (the total is fixed by the CP count; the pivot placement within it is \emph{adopted}, Version~1.6.2) \\
 $p=2$ from A1 indistinguishability & $p=2$ of large-field $m^2\phi^2$ ($\ns = 1 - 2/N_*$) \\
 ZBW bath $\to$ Poisson Gibbs state (LEMMA-NS-HTHEOREM) & thermalization / attractor behaviour \\
 DP-Sea $\pm$ pair neutrality & adiabatic, single-clock perturbations \\
@@ -647,7 +655,7 @@ The CMB scalar spectral index follows from CPP substrate inflation with no new a
 boost tracks the logarithm of GP occupancy, $\Heff\propto\ln\nbar$, because the dispersal drive of
 over-occupied indistinguishable Conscious Points is the configurational chemical potential
 $\mu\propto\ln\nbar$ (axiom A1). The $\delta N$ relation then gives the canonical slow-roll tilt
-$\ns = 1 - 2/\nstar$ with $\nstar\approx 57$ fixed by the CP count, hence $\ns\approx 0.9649$ and
+$\ns = 1 - 2/\nstar$ with $\nstar\approx 57$ (the pivot, adopted within the CP-count total), hence $\ns\approx 0.9649$ and
 $\alphas\approx -0.0006$, the former matching Planck's central value. Both supporting legs are standing
 CPP commitments: leg 1 (bath) is derived to leading order as a symmetric constant-rate zero-range
 process with a provable $H$-theorem, and leg 2 (neutrality) is the $\pm$ pair structure of the DP Sea;

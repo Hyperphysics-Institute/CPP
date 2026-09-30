@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 29 September 2026 (Patch 4345: GR-1d V4 (echo withdrawn), GR-1i V1.0. Patch 4344: 122 deposit candidates (a development transcript excluded); build fixes. Patch 4343: catalog refreshed after the identifier-appendix regeneration. Patch 4342: catalog refreshed (Capotauro v2.4, SS-8 v1.4). Patch 4341: m_Z/m_W row corrected (SF-2 arithmetic erratum). Patch 4340: catalog refreshed after the cosmology wording sweep. Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
+**Last updated:** 29 September 2026 (Patch 4347: n_s pivot adopted (EU-1 v1.6.2); SS-7 fully-CPP RMS 1.77%; held SS papers carry status notes. Patch 4345: GR-1d V4 (echo withdrawn), GR-1i V1.0. Patch 4344: 122 deposit candidates (a development transcript excluded); build fixes. Patch 4343: catalog refreshed after the identifier-appendix regeneration. Patch 4342: catalog refreshed (Capotauro v2.4, SS-8 v1.4). Patch 4341: m_Z/m_W row corrected (SF-2 arithmetic erratum). Patch 4340: catalog refreshed after the cosmology wording sweep. Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
 Patch 0422B), with a 6 June 2026 EU-1 note.
 
 ---
@@ -28,7 +28,7 @@ the strength its own paper or registry gives it:
 | W, Z, H absolute masses | **calibrated** dilution factors η_W, η_Z, η_H; the ratio m_Z/m_W = 1.141 is zero-parameter | SF-2 |
 | Nuclear bindings (SS-5, SS-7, SS-8, SS-9) | **conditional** on hypothesis stacks (C1–C8, D1–D3) | SS papers, `predictions.md` |
 | Neutrino sector | 8 parameters from **1 calibration** | SF-4 v3.4 |
-| n_s ≈ 0.9654 | **framework-conditional**, leading-order (OPEN-EU-1) | EU-1, PRED-C-96 |
+| n_s ≈ 0.9654 | **framework-conditional**, leading-order (OPEN-EU-1); the pivot N_* ≈ 57 is **adopted**, not derived (EU-1 v1.6.2) | EU-1, PRED-C-96 |
 | g_A (nucleon axial coupling) | **not pinned**: with one quark mass, 1.242–1.282; the r_p "prediction" withdrawn (4284) | `series_standard_model/axiom_maturation/4284…` |
 | α (fine-structure constant) | **calibrated relation**: α = PSR/(2L), one calibrated swing (CAL-ZBW1-SWING, 4326–4330); passes local position invariance, running has the right sign; running law needs a cloud model (4331) | `series_standard_model/axiom_maturation/4322–4331` |
 | ħ | **identified, not derived** (c03); the Planck ZBW half-swing carries ħ/2 (founder, 4320/4325; c04 v2.3) | c03, c04, 4300 |
@@ -122,10 +122,10 @@ this table is the thing to fix.
 | α_s(m_H) | 0.1132 | 0.1130 | +0.2% | **calibrated in effect**: SS-2 runs from a matched α_s(m_Z) (A11) | SS-2 |
 | B_d, B(³H), B(³He), B(⁴He) | 2.342, 8.474, 7.642, 27.90 MeV | 2.225, 8.482, 7.718, 28.30 | +5.3 … −1.4% | **conditional** (C-stack); SS-5 **held** | SS-5 |
 | ⁵He, ⁵Li, ⁸Be, ²He, 2n unbound | unbound | unbound | qualitative | conditional; SS-5 held | SS-5 |
-| Alpha-chain, 12 nuclei ¹²C→⁵⁶Ni | RMS 0.80% | AME 2020 | — | **conditional** on C1–C4, and **uses the measured B(⁴He)** as input (the paper says so; the LO-CPP variant uses 27.904) | SS-7 |
+| Alpha-chain, 12 nuclei ¹²C→⁵⁶Ni | RMS 0.80% | AME 2020 | — | **conditional** on C1–C4, and **uses the measured B(⁴He)** as input; with the fully-CPP B(⁴He) = 27.904 the RMS is 1.77% (SS-7 v1.7) | SS-7 |
 | Interstitial-n Δ₁ (²⁶Mg, ⁴²Ca) | 9.37, 11.24 MeV | 9.39, 11.36 | −0.2%, −1.0% | conditional on C1–C4 + D1–D3 | SS-8 |
 | ⁸⁴Mo, ⁸⁸Ru, ⁹²Pd | 698.92, 729.56, 760.20 MeV | 699.27, 730.10, 761.15 | 0.05–0.13% | **calibrated** (B_slip from ⁵⁶Ni, measured B_α); SS-9 **held** | SS-9 |
-| n_s | 0.9654 | 0.9649 ± 0.0042 | 0.12σ | framework-conditional, leading order (OPEN-EU-1) | EU-1, PRED-C-96 |
+| n_s | 0.9654 | 0.9649 ± 0.0042 | 0.12σ | framework-conditional, leading order (OPEN-EU-1); pivot adopted | EU-1, PRED-C-96 |
 | Classical tests of gravity | GR values (43″/cy, 1.75″, …) | GR values | — | W2-conditional (reviewed 5–0, CONV-029) | GR-1i V1.0 |
 | Coulomb's law from the lattice | ±0.4% pointwise at R = 4 | Ewald | — | cellular-automaton measurement; scalar sector only, no coupling constant predicted | SF-8 v0.5 |
 | α | 1/137.036 | — | — | **calibrated relation** α = PSR/(2L), L ≈ 68.5 PSR (CAL-ZBW1-SWING); passes local position invariance; running has the right sign, law owed | 4322–4331 |
