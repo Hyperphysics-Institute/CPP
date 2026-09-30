@@ -3818,7 +3818,7 @@
       "rel": "series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex",
       "title": "Interstitial-Neutron Binding in Alpha-Cluster Nuclei:",
       "ver": "1.0",
-      "changed": "2026-08-18",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 2,
@@ -3835,7 +3835,7 @@
           "% Thomas Lee Abshier, ND Hyperphysics Institute",
           "Claude Opus (Anthropic) AI Research Collaborator%"
         ],
-        "publication_date": "2026-08-18",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -3912,7 +3912,7 @@
       "rel": "series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex",
       "title": "The Capotauro Mechanism: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry Phys",
       "ver": "2.4",
-      "changed": "2026-09-19",
+      "changed": "2026-09-29",
       "cls": "Chirality derivation",
       "withheld": "",
       "wave": 1,
@@ -3925,7 +3925,7 @@
         "creators": [
           "Thomas Lee Abshier, NDThe Capotauro mechanism was originally proposed in the 13 December 2025 nucleation paper abshier_grok_capotauro_2025"
         ],
-        "publication_date": "2026-09-19",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",

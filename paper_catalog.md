@@ -47,7 +47,7 @@
 | SS-5: Light-Nuclei Binding Energies from the Open-Vertex Cascade — 600-Cell Standard Model E... | 1.2 | `series_strong/papers/SS-5/SS-5_light_nuclei_open_vertex_cascade.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SS-6: Deuteron Observables Beyond Binding: — Scope and Limits of the Base-to-Base Picture — ... | 0.5 | `series_strong/papers/SS-6/SS-6_deuteron_observables_beyond_binding.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | SS-7: Alpha-Cluster Regime and the 3N-6 Edge Formula — for Medium-Mass Nuclei — 600-Cell Sta... | 1.6 | `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| Interstitial-Neutron Binding in Alpha-Cluster Nuclei: — The 2E/V Scaling Law from Simplicial... | 1.4 | `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
+| Interstitial-Neutron Binding in Alpha-Cluster Nuclei: — The 2E/V Scaling Law from Simplicial... | 1.4 | `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | (title not parsed) | 1.3 | `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 
 ---
@@ -146,7 +146,7 @@
 
 | Title | Ver | File | Last touched | Patch | Deposit |
 |---|---|---|---|---|---|
-| The Capotauro Mechanism: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry P... | 2.4 | `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` | 2026-09-19 | 4104 | **UNKNOWN — not in prior catalog** |
+| The Capotauro Mechanism: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry P... | 2.4 | `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | Chirality Entry-Point Enumeration — in the Conscious Point Physics Framework — A Layer-3 unc... | 1.4 | `series_umbrella/series_substrate_chirality_arc/chirality_audit/theo_chir_audit_1.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
 | Cross-Sector Layer 4 Closure of the Substrate Chirality Handle: — Electroweak V--A Coupling ... | 1.3 | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` | 2026-09-14 | — | **UNKNOWN — not in prior catalog** |
 | The Substrate\, \,Electroweak Chirality Correspondence: — the -Match and the P/T-Face Dictio... | 1.4 | `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_bridge_1.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |

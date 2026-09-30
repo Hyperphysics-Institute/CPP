@@ -142,3 +142,5 @@ recorded, surveyed at 4335.)
   written as the observed one) and SF-4 done; a corpus-wide compile pass registered (TODO-4341-COMPILEERR).
 - **4342 (items 0 and 8):** SS-8 and Capotauro triaged; Capotauro v2.4 carries a status note (chirality: magnitudes only,
   the hand a primitive — consistent with item 8); identifier-appendix regeneration registered (TODO-4342-GLOSSREGEN).
+- **4343 (build readiness):** identifier appendices regenerated (72 papers); compile pass: 98/123 clean, the 25 others listed
+  in `compile_status.md` (TODO-4341-COMPILEERR) — a precondition for Isak's PDF build.

@@ -144,13 +144,51 @@ def read_manual():
     return gl
 
 
-def tex_escape(s):
-    """Glosses are prose from Markdown; make them LaTeX-safe."""
+# Patch 4343: glosses harvested from Markdown carry **bold**, `code`, $math$ and Unicode symbols.
+# The old escaper turned $\hat{n}$ into literal text and passed Unicode through to pdflatex.
+UNI = {"\u03c7": r"$\chi$", "\u03c6": r"$\phi$", "\u03a6": r"$\Phi$", "\u03b1": r"$\alpha$", "\u03b2": r"$\beta$",
+       "\u03b3": r"$\gamma$", "\u03b4": r"$\delta$", "\u03b5": r"$\epsilon$", "\u03b6": r"$\zeta$", "\u03b7": r"$\eta$",
+       "\u03b8": r"$\theta$", "\u03bb": r"$\lambda$", "\u039b": r"$\Lambda$", "\u03bc": r"$\mu$", "\u03bd": r"$\nu$",
+       "\u03c0": r"$\pi$", "\u03c1": r"$\rho$", "\u03c3": r"$\sigma$", "\u03a3": r"$\Sigma$", "\u03c4": r"$\tau$",
+       "\u03c9": r"$\omega$", "\u03a9": r"$\Omega$", "\u0394": r"$\Delta$", "\u210f": r"$\hbar$",
+       "n\u0302": r"$\hat{n}$", "\u2212": "--", "\u2013": "--", "\u2014": "---", "\u2192": r"$\to$",
+       "\u2194": r"$\leftrightarrow$", "\u2248": r"$\approx$", "\u2264": r"$\le$", "\u2265": r"$\ge$",
+       "\u00d7": r"$\times$", "\u00b1": r"$\pm$", "\u221e": r"$\infty$", "\u2018": "`", "\u2019": "'",
+       "\u201c": "``", "\u201d": "''", "\u2032": "$'$", "\u00b7": r"$\cdot$", "\u2026": r"\ldots{}",
+       "\u2070": "$^0$", "\u00b9": "$^1$", "\u00b2": "$^2$", "\u00b3": "$^3$", "\u2074": "$^4$",
+       "\u2075": "$^5$", "\u207b": "$^-$", "\u2080": "$_0$", "\u2081": "$_1$", "\u2082": "$_2$",
+       "\u2083": "$_3$", "\u2084": "$_4$", "\u221d": r"$\propto$", "\u00a7": r"\S{}", "\u221a": r"$\surd$"}
+
+
+def _plain(s):
     s = s.replace("\\", "\\textbackslash{}")
-    for ch in "&%$#_{}":
+    for ch in "&%#_{}":
         s = s.replace(ch, "\\" + ch)
     s = s.replace("~", "\\textasciitilde{}").replace("^", "\\textasciicircum{}")
+    SUP = dict(zip("\u2070\u00b9\u00b2\u00b3\u2074\u2075\u2076\u2077\u2078\u2079\u207b\u207a", "0123456789-+"))
+    SUB = dict(zip("\u2080\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089", "0123456789"))
+    s = re.sub("[" + "".join(SUP) + "]+", lambda m: "$^{" + "".join(SUP[c] for c in m.group(0)) + "}$", s)
+    s = re.sub("[" + "".join(SUB) + "]+", lambda m: "$_{" + "".join(SUB[c] for c in m.group(0)) + "}$", s)
+    for k in sorted(UNI, key=len, reverse=True):
+        s = s.replace(k, UNI[k])
     return s
+
+
+def tex_escape(s):
+    """Glosses are prose from Markdown; make them LaTeX-safe. $...$ spans pass through as math;
+    Markdown bold/code markers are dropped; common Unicode is mapped to LaTeX; anything still
+    non-ASCII is replaced by '?' and reported by --report (never silently shipped)."""
+    s = s.replace("**", "").replace("`", "")
+    parts = re.split(r"(\$[^$]+\$)", s)
+    out = "".join(p if (p.startswith("$") and p.endswith("$") and len(p) > 1) else _plain(p) for p in parts)
+    out = re.sub(r"\$\$(?=[_^])", "", out)   # join a symbol with its following sub/superscript
+    if any(ord(c) > 127 for c in out):
+        NONASCII.update(c for c in out if ord(c) > 127)
+        out = "".join(c if ord(c) < 128 else "?" for c in out)
+    return out
+
+
+NONASCII = set()
 
 
 def collect():

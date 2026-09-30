@@ -45,3 +45,7 @@ sentence. Tracked as TODO-4340-ZEROSWEEP.
 
 DP_sea_and_cage_composition only (4 hits): scoped by the v1.3 Status note ("the programme's aim, not a result of this
 paper"). README's tagline is the programme's description and is left as the founder wrote it.
+
+## Generated identifier appendices (4343)
+
+Regenerated for 72 papers after the glossary generator was fixed (TODO-4342-GLOSSREGEN). The OPEN-SD-CHIR-PRIMITIVE gloss now states the current position (handedness a primitive; nucleation superseded; the EM right-hand rule a convention), and OPEN-GR-FE-1 reads as closed.
