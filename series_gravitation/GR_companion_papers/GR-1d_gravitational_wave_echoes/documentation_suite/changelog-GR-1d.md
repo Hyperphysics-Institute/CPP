@@ -60,3 +60,14 @@ supersession notes):**
 - Header amendment block; version line → Version 3.
 
 **Compile:** pdflatex ×2, 0 errors, no undefined refs, 13 pages.
+
+---
+
+## V4 — 29 September 2026, Patch 4345 (Session 241)
+
+Status note after the abstract: the echo prediction (V2 ~112 ms; V3 2.15 ± 0.14 ms) is **withdrawn**. AP-5 (Patches
+3675–3699) relays the wave whole at the saturation surface — GR's admittance, no cavity, no echo; PRED-O-39 is null;
+GR-2 V2.11 withdraws echo, tidal signature and merger burst; the GW250114 locked search found no echo. Body unchanged,
+kept as the record. Closes TODO-4339-GR1DECHO. Deposit approval remains the founder's; if deposited, it goes as the
+record of a withdrawn prediction.
+

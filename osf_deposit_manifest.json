@@ -213,7 +213,7 @@
       "rel": "flagship_papers/electromagnetism/SF-8/sf-8_emergent_electrostatics.tex",
       "title": "SF-8: Emergent Electrostatics and the Bonded ZBW Sea",
       "ver": "0.5",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Flagship",
       "withheld": "",
       "wave": 1,
@@ -227,7 +227,7 @@
           "Thomas Lee Abshier, ND",
           "Claude Opus (Anthropic)"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1088,7 +1088,7 @@
       "rel": "series_foundations/series_superdeterminism/SD-5_k0_derivation.tex",
       "title": "Conscious Point Physics:",
       "ver": "1",
-      "changed": "2026-04-02",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "unfinished: declares itself a placeholder",
       "wave": 1,
@@ -1101,7 +1101,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-04-02",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -1259,7 +1259,7 @@
     {
       "rel": "series_gravitation/GR_companion_papers/GR-1d_gravitational_wave_echoes/GR-1d_GW_echoes.tex",
       "title": "Gravitational Wave Echoes from the Planck Core",
-      "ver": "3",
+      "ver": "4",
       "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
@@ -1280,7 +1280,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "3",
+        "version": "4",
         "description": "The CPP strong-field companion (companion~8) established that the CP Exclusion Rule replaces the GR point singularity with a Planck-density core at radius $ = /2$ inside the event horizon. We show that this core acts as a partially reflective boundary for gravitational perturbations, producing post-merger gravitational wave echoes with a characteristic time delay: equation \\;=\\; 2 c\\! \\; \\; 2 c \\! ( ), eq:delay_abstract equation derived from the tortoise-coordinate travel time between the photon-sphere potential barrier ($r 3 /2$) and the effective reflective surface at $r_0 = + $ (quantum Planck boundary just outside the horizon). The correction term $-0.193$ is negligible compared to $ ( / ) 88$--$93$ for all astrophysical black holes. For the GW150914 remnant ($M 62\\,M_ $), the predicted echo delay is $ 112$~ms, with a signal frequency $f_ echo 8.9$~Hz at the boundary of LIGO O4 sensitivity and within the design band of the Einstein Telescope. A table of predictions spanning stellar-mass to intermediate-mass black holes is provided. No new postulates beyond companion~8 are required.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -1474,7 +1474,7 @@
     {
       "rel": "series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex",
       "title": "GR-1i: The Classical Tests of Gravitation",
-      "ver": "0.1",
+      "ver": "1.0",
       "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
@@ -1495,7 +1495,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "0.1",
+        "version": "1.0",
         "description": "GR-1c established --- conditional on the PSR constitutive form, whose SR-1 grounding stands at W2 viability strength (GR-1 7) --- that the CPP shell-broadcast mechanism yields exactly the Schwarzschild metric in isotropic coordinates. This companion works out the standard consequences: the full geodesic derivations of the four classical tests of gravitation on that metric. We derive the timelike orbit equation and the perihelion advance ($42.99''$/century for Mercury), the null geodesic and the light deflection at the solar limb ($1.75''$), the round-trip radar excess (Shapiro) delay at superior conjunction ($ \\!233\\, $s, Earth--Venus, grazing), and the static gravitational redshift ($ / = gh/c^2 = 2.46 10^-15$ over 22.5\\,m; GPS net $+38.5\\, $s/day including the special-relativistic term). The claim discipline is stated once and holds throughout: because the metric is exactly Schwarzschild, every value is identical to the GR prediction by construction. The classical tests therefore discriminate CPP from Newtonian gravity --- decisively, at the factor of two in deflection and at the entirety of the perihelion and Shapiro signals --- but they do not, and cannot, discriminate CPP from general relativity. This paper adds no new physics and no adjustable input; it is entry-criterion compliance, written so that a reader asking ``does this theory pass the classical tests?'' finds the derivations in one independently citable place. Every number is machine-verified in the series verify script ( series\\_gravitation/code/3228\\_classical\\_tests\\_verify.py, 8/8~PASS), which computes the two dynamical tests both in closed form and by independent numeric Binet-equation geodesic integration.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -1873,7 +1873,7 @@
       "rel": "series_quantum_mechanics/papers/QM-1_schrodinger_emergence.tex",
       "title": "Quantum Mechanics in Conscious Point Physics:",
       "ver": "3.3",
-      "changed": "2026-09-20",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -1886,7 +1886,7 @@
         "creators": [
           "Thomas Lee Abshier, ND Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-09-20",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -3203,7 +3203,7 @@
       "rel": "series_strong/papers/SS-1_strong_sector_from_600cell_lattice.tex",
       "title": "SS-1: The Strong Sector from the 600-Cell Lattice",
       "ver": "1.1",
-      "changed": "2026-04-02",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -3218,7 +3218,7 @@
           "Grok (xAI)",
           "Claude Sonnet (Anthropic)"
         ],
-        "publication_date": "2026-04-02",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",
@@ -3291,7 +3291,7 @@
       "rel": "series_strong/papers/SS-1b_su3_algebra_exact_proof.tex",
       "title": "Conscious Point Physics:",
       "ver": "—",
-      "changed": "2026-04-02",
+      "changed": "2026-09-29",
       "cls": "Series paper",
       "withheld": "",
       "wave": 1,
@@ -3304,7 +3304,7 @@
         "creators": [
           "Thomas Lee Abshier, ND and Grok (x.AI) Hyperphysics Institute https://hyperphysics.com"
         ],
-        "publication_date": "2026-04-02",
+        "publication_date": "2026-09-29",
         "resource_type": "publication-preprint",
         "license": "cc-by-4.0",
         "access_right": "open",

@@ -146,3 +146,5 @@ recorded, surveyed at 4335.)
   in `compile_status.md` (TODO-4341-COMPILEERR) — a precondition for Isak's PDF build.
 - **4344 (build readiness):** 121/122 compile clean; DP-Sea's missing figures are the one blocker (founder asked).
   Deposit queue 122 (a development transcript excluded).
+- **4345 (item 1):** GR-1d → V4 (echo withdrawn, status note); GR-1i → V1.0. Item 1's records-into-line work is done except
+  the test-run choice (proposed: SS-3 and GR-1i; founder approval) and the OPEN-ORG-023 close.

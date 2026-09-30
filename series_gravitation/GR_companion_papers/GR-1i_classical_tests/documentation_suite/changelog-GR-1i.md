@@ -68,3 +68,14 @@ consistency check; (3) the reproduces-vs-shares claim-discipline
 sentence; (4) the achromatic-bending falsifiable-feature remark
 (unminted); (5) the implementation-cross-check caution on numeric-vs-
 closed-form agreement. Compile gate clean. V1.0 prep may begin.
+
+---
+
+## V1.0 — 29 September 2026, Patch 4345 (Session 241)
+
+Ship stamp owed since CONV-029 (Patch 3269, 5–0 SHIP-PATH-CLEAR with five editorial adoptions, all present in
+V0.1's text: IAU constants and sensitivity, PPN β = γ = 1, reproduces-vs-shares, achromatic bending, cross-check
+caution). Closed-state updates only: the three OPEN-GR-FE-1 statements now record its closure at Patch 3267 (GR-1j),
+and Problem Status records OPEN-GR-TESTS-1's final discharge. No derivation, number or table changed.
+TODO-4339-GR1IV1 closed.
+

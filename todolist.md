@@ -2421,12 +2421,15 @@ Running `python3 code/build_osf_queue.py` at 4332 (to pick up c04 v2.3 / c03 v2.
 **CLOSED 4338**: SS-4 itself registers CONJ-SS-5 (σ = M₀z²/(φ l_edge)) and supersedes CONJ-SS-2-1; the registries had never been updated. CONJ-SS-5 entered in CONJ.md and axiom-registry; CONJ-SS-2-1 marked superseded; PRED-C-31 re-cited. PRED-C-31 and axiom-registry cite CONJ-SS-2-1 for SS-4's σ = M₀z²/(φ l_edge) = 926.5 MeV/fm, but CONJ-SS-2-1's own formula (CONJ.md) is SS-2's σ = M₀zπ/(φ l_edge) = 243 MeV/fm, used only for SS-2's now-superseded frame. Decide: register SS-4's formula as its own conjecture (or state its derivation status) and retire or re-scope CONJ-SS-2-1; fix PRED-C-31, axiom-registry, CONJ.md and SF-5's citation to match.
 
 ### TODO-4339-GR1DECHO — GR-1d V3 still predicts the echo that AP-5 and GR-2 withdrew (registered Patch 4339, GR lane)
+**CLOSED 4345:** GR-1d → Version 4 with a status note after the abstract (the echo prediction withdrawn under AP-5; PRED-O-39 null; GR-2 V2.11; GW250114 null); body kept as the record; changelog updated.
 GR-1d V3 (Patches 3301–3303) predicts Δt_A = 2.15 ± 0.14 ms echoes from a (9/8) r_S surface. Since then CONV-038 retired the clamped register (3366–3371), GR-2 V2.0 moved the surface to 8M/3 (3622), and AP-5 (3699) set PRED-O-39 NULL: the ringdown is GR's, no echo; GR-2 V2.11 withdraws echo, tidal signature and merger burst. GR-1d carries only a CONV-038 header comment. Bring GR-1d into line (a V4 restating it as the record of the superseded echo prediction, or hold it from deposit) before its row is approved. Found by the 4339 gravity-status audit.
 
 ### TODO-4339-GR1IV1 — GR-1i is reviewed but still V0.1 (registered Patch 4339, GR lane)
+**CLOSED 4345:** GR-1i → V1.0 (closed-state updates only; the five CONV-029 adoptions verified present).
 CONV-029 (Patch 3269) cleared GR-1i 5–0 with five adoptions and discharged OPEN-GR-TESTS-1; the version was never bumped to V1.0. Bump it (with the adoptions confirmed in the text) before its deposit row is approved.
 
 ### TODO-4339-TESTRUN — choose a new test-run deposit set (registered Patch 4339, governance; founder approves)
+**Proposal 4345 (awaiting the founder):** SS-3 (SU(3) uniqueness, v1.7) and GR-1i (classical tests, V1.0) — both finished, reviewed, not held, compiling clean, and making claims the registries support without caveat. Two papers is enough to exercise the pipeline (Isak's PDF build, DOI reservation, metadata, the queue write-back). Founder action if approved: date + initials in the APPROVED column of `osf_deposit_queue.md` for those two rows.
 OPEN-ORG-023 Item 1 planned a small test-run deposit first, using the spin trio; SPIN-1 and SPIN-2 are now held (4289), so the set must be re-chosen. Propose two or three papers that are finished, not held, and not gated (candidates: SPIN-3, SR-1, SS-3), for the founder's APPROVED column and Isak's DOI reservation.
 
 ### TODO-4340-ZEROSWEEP — triage the "zero-parameter" wording paper by paper (registered Patch 4340, governance; roadmap item 0)

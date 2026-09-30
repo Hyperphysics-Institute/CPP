@@ -19,7 +19,7 @@
 | Title | Ver | File | Last touched | Patch | Deposit |
 |---|---|---|---|---|---|
 | SF-1: The Charged-Lepton Sector from 600-Cell Geometry — Koide K=2/3 , the Koide Phase, and ... | 1.3 | `flagship_papers/charged_leptons/sf-1_charged_leptons.tex` | 2026-08-18 | 3214 | **UNKNOWN — not in prior catalog** |
-| SF-8: Emergent Electrostatics and the Bonded ZBW Sea — Coulomb's Law Measured Out of the Mom... | 0.5 | `flagship_papers/electromagnetism/SF-8/sf-8_emergent_electrostatics.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
+| SF-8: Emergent Electrostatics and the Bonded ZBW Sea — Coulomb's Law Measured Out of the Mom... | 0.5 | `flagship_papers/electromagnetism/SF-8/sf-8_emergent_electrostatics.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | SF-6: Electromagnetism Unified — Classical, Relativistic, and Quantum Electrodynamics from e... | 1.6 | `flagship_papers/electromagnetism/sf-6_electromagnetism.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | SF-2 Companion: Cage Geometry Figures, Executive Overview, Glossary, Quantitative Frameworks... | 1.06 | `flagship_papers/electroweak/sf-2_companion.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry — W^ , W^0 , Z , and H as a ... | 1.08.1 | `flagship_papers/electroweak/sf-2_electroweak.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
@@ -34,9 +34,9 @@
 
 | Title | Ver | File | Last touched | Patch | Deposit |
 |---|---|---|---|---|---|
-| SS-1: The Strong Sector from the 600-Cell Lattice — 600-Cell Standard Model Emergence Series — | 1.1 | `series_strong/papers/SS-1_strong_sector_from_600cell_lattice.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
+| SS-1: The Strong Sector from the 600-Cell Lattice — 600-Cell Standard Model Emergence Series — | 1.1 | `series_strong/papers/SS-1_strong_sector_from_600cell_lattice.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | Conscious Point Physics: — The Strong Sector --- — From Tetrahedral Cage Geometry to SU(3) _... | — | `series_strong/papers/SS-1a_cage_geometry_eigenvalue_bridge.tex` | 2026-08-17 | 3209 | **UNKNOWN — not in prior catalog** |
-| Conscious Point Physics: — SU(3) _c from Tetrahedral Phase Interference: — The Strong Sector... | — | `series_strong/papers/SS-1b_su3_algebra_exact_proof.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
+| Conscious Point Physics: — SU(3) _c from Tetrahedral Phase Interference: — The Strong Sector... | — | `series_strong/papers/SS-1b_su3_algebra_exact_proof.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | Conscious Point Physics: — The Eight Gluons as hDP Structures — on the Tetrahedral 600-Cell ... | — | `series_strong/papers/SS-1c_eight_gluons_hdp_structures.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
 | Conscious Point Physics: — Confinement, Asymptotic Freedom, and the QCD -Function — from qDP... | — | `series_strong/papers/SS-1d_confinement_beta_function.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
 | Conscious Point Physics: — The Hadron Spectrum: Baryons, Mesons, — and the Mass Hierarchy fr... | — | `series_strong/papers/SS-1e_hadron_spectrum.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
@@ -103,7 +103,7 @@
 
 | Title | Ver | File | Last touched | Patch | Deposit |
 |---|---|---|---|---|---|
-| Quantum Mechanics in Conscious Point Physics: — The Schr\"odinger Equation from Sea-Polariza... | 3.3 | `series_quantum_mechanics/papers/QM-1_schrodinger_emergence.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
+| Quantum Mechanics in Conscious Point Physics: — The Schr\"odinger Equation from Sea-Polariza... | 3.3 | `series_quantum_mechanics/papers/QM-1_schrodinger_emergence.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 | Quantum Mechanics in Conscious Point Physics: — Superposition and Interference from Multi-Pa... | 3.2 | `series_quantum_mechanics/papers/QM-2_superposition.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
 | Quantum Mechanics in Conscious Point Physics: — Entanglement and Bell Inequality Violation —... | 3.2 | `series_quantum_mechanics/papers/QM-3_bell_entanglement.tex` | 2026-08-18 | 3213 | **UNKNOWN — not in prior catalog** |
 | Quantum Mechanics in Conscious Point Physics: — The Measurement Problem and Apparent Wavefun... | 3.2 | `series_quantum_mechanics/papers/QM-4_measurement_problem.tex` | 2026-09-20 | — | **UNKNOWN — not in prior catalog** |
@@ -126,7 +126,7 @@
 | Conscious Point Physics: — The 600-Cell Angular Structure of Bell Deviations: — H_4 Symmetry... | 1.1 | `series_foundations/series_superdeterminism/SD-2_h4_angular_structure.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
 | Conscious Point Physics: — The CPP Apparatus Model: — Macroscopic Detectors, Decoherence, — ... | 1.1 | `series_foundations/series_superdeterminism/SD-3_apparatus_model.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
 | Conscious Point Physics: — The Nexus Correlation Function: — Derivation of K(,_A,_B) in Two ... | 1.1 | `series_foundations/series_superdeterminism/SD-4_nexus_correlation_function.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
-| Conscious Point Physics: — The Hidden Variable Factor K_0() : — Single-CP Path Integral and ... | 1.1 | `series_foundations/series_superdeterminism/SD-5_k0_derivation.tex` | 2026-04-02 | — | **UNKNOWN — not in prior catalog** |
+| Conscious Point Physics: — The Hidden Variable Factor K_0() : — Single-CP Path Integral and ... | 1.1 | `series_foundations/series_superdeterminism/SD-5_k0_derivation.tex` | 2026-09-29 | — | **UNKNOWN — not in prior catalog** |
 
 ---
 
@@ -205,7 +205,7 @@
 | The Kerr-Newman Metric from Combined SSV Sources — in Conscious Point Physics — Companion 12 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 1.1 | `series_gravitation/GR_companion_papers/GR-1g_kerr_newman_charged_rotating_BH/GR-1g_kerr_newman.tex` | 2026-09-29 | — |
 | The Kerr-Newman Metric from Combined SSV Sources — in Conscious Point Physics — Companion 12 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | — | `series_gravitation/GR_companion_papers/GR-1g_kerr_newman_charged_rotating_BH/development/Claude_Kerr-Newman.tex` | 2026-08-19 | 3230 |
 | Superradiance from the Kerr SSV — in Conscious Point Physics — Companion 13 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 1.2 | `series_gravitation/GR_companion_papers/GR-1h_superradiance/GR-1h_superradiance.tex` | 2026-09-29 | — |
-| GR-1i: The Classical Tests of Gravitation — Perihelion precession, light deflection, Shapiro delay, and gravitational redshift as geodesic consequences of the CPP shell-broadcast metric — Companion i to GR-1 --- Conscious Point Physics gravitation series --- | 0.1 | `series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex` | 2026-09-29 | — |
+| GR-1i: The Classical Tests of Gravitation — Perihelion precession, light deflection, Shapiro delay, and gravitational redshift as geodesic consequences of the CPP shell-broadcast metric — Companion i to GR-1 --- Conscious Point Physics gravitation series --- | 1.0 | `series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex` | 2026-09-29 | — |
 | GR-1j: The CPP Field Equations from the Messenger Census — T-1 (the general equation), T-2 (Birkhoff-type uniqueness), and T-3 (the conserved source current), derived from the three-type conscious-point automaton — Companion j to GR-1 --- Conscious Point Physics gravitation series --- | 1.0 | `series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex` | 2026-09-29 | — |
 | GR-1: Local Gravitation from SSV Shell Broadcast — One nonlinear substrate response from Coulomb's law to the exact Schwarzschild, Kerr, and Kerr--Newman metrics — | 1.0.3 | `series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex` | 2026-09-29 | — |
 | The Echo Falsifier: — Millisecond Gravitational-Wave Echoes from Horizonless — CPP Compact Objects — Second series paper of the Conscious Point Physics gravitation series (parent: GR-1) | 2.11 | `series_gravitation/papers/GR-2_echo_falsifier.tex` | 2026-09-29 | — |
@@ -243,7 +243,7 @@
 | `series_standard_model/papers/SM-6_lepton_mass_spectrum.tex` | 2026-06-13 | — |
 | `series_standard_model/papers/SM-TN-2_bridge_original_to_600cell.tex` | 2026-03-28 | — |
 | `series_strong/papers/SS-1a_cage_geometry_eigenvalue_bridge.tex` | 2026-08-17 | 3209 |
-| `series_strong/papers/SS-1b_su3_algebra_exact_proof.tex` | 2026-04-02 | — |
+| `series_strong/papers/SS-1b_su3_algebra_exact_proof.tex` | 2026-09-29 | — |
 | `series_strong/papers/SS-1c_eight_gluons_hdp_structures.tex` | 2026-04-02 | — |
 | `series_strong/papers/SS-1d_confinement_beta_function.tex` | 2026-04-02 | — |
 | `series_strong/papers/SS-1e_hadron_spectrum.tex` | 2026-04-02 | — |
