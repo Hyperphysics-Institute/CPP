@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 29 September 2026 (Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
+**Last updated:** 29 September 2026 (Patch 4339: gravity rows corrected — OPEN-GR-FE-1 was closed at 3267. Patch 4338: scorecard paragraph and σ row follow the tally audit. Patch 4337, Session 241 — **full refresh**: stage 1 at 4336 (header, headline basis, one-paragraph theory); stage 2 here (papers by series, quantitative results re-audited row by row, axioms, formulas, derivation chains with status, open problems keyed to `pre_deposit_roadmap.md`). Where this file conflicts with the live registries, the registries win.) Previous header: 17 May 2026 (Session 127
 Patch 0422B), with a 6 June 2026 EU-1 note.
 
 ---
@@ -33,7 +33,7 @@ the strength its own paper or registry gives it:
 | α (fine-structure constant) | **calibrated relation**: α = PSR/(2L), one calibrated swing (CAL-ZBW1-SWING, 4326–4330); passes local position invariance, running has the right sign; running law needs a cloud model (4331) | `series_standard_model/axiom_maturation/4322–4331` |
 | ħ | **identified, not derived** (c03); the Planck ZBW half-swing carries ħ/2 (founder, 4320/4325; c04 v2.3) | c03, c04, 4300 |
 | Spin ħ/2 | **input** throughout; SPIN-1 and SPIN-2 **held from deposit** (4289) | TODO-4289-SPINREV |
-| G and the Planck mass | GR-1/GR-1a's "fixed by the 600-cell lattice, no free parameters" is **an overstatement** (TODO-4300-HBARSWEEP); the general field equations are **not derived** (OPEN-GR-FE-1, the founder's deposit gate) | `frontier_sectors/GR.md` |
+| G and the Planck mass | GR-1/GR-1a's "fixed by the 600-cell lattice, no free parameters" is **an overstatement** (TODO-4300-HBARSWEEP); the general static field equation, a Birkhoff-type uniqueness and a conserved source current are **derived conditionally** (GR-1j V1.0; OPEN-GR-FE-1 CLOSED at 3267, founder-confirmed) on the PSR constitutive form at W2 strength, k a registered normalisation; the full nonlinear Einstein equations + Λ remain open (OPEN-SR-4) | `frontier_sectors/GR.md`, GR-1j |
 | Exterior GR solutions (Schwarzschild, Kerr, Kerr–Newman) | reproduced as solutions; equations by correspondence only | GR series |
 | Special-relativistic ε(v) = γ − 1 | **recorded satisfied at W2 strength** for closed self-bound patterns (founder, 2502); theorem-grade debts remain | `frontier_sectors/SR.md` |
 | Electromagnetic constants μ₀, ε₀, c | **parameter-tuned** toy model (OPEN-FP-6-CONSTANTS) | SF-6 |
@@ -57,8 +57,8 @@ structure of the 600-cell polytope (120 vertices, 720 edges, 1200 faces, 600 cel
 DI-bits once per Absolute Moment under nine axioms. From that geometry it obtains, at zero adjustable parameters, the
 weak mixing angle 3/(8φ) and a strong coupling 5/(8φ); with one calibration (the electron mass) it reproduces the charged-
 lepton and heavy-quark masses to percent level and the neutrino sector; its nuclear-binding results hold conditionally on
-stated structural hypotheses; it reproduces the exterior solutions of general relativity but has not yet derived the
-field equations; its fine-structure constant, ħ, electromagnetic constants and cosmological constant enter as
+stated structural hypotheses; it derives a general static gravitational field equation and reproduces the exterior solutions of general relativity,
+conditional on a constitutive form graded at W2 strength (the full nonlinear Einstein equations remain open); its fine-structure constant, ħ, electromagnetic constants and cosmological constant enter as
 calibrations or identifications, not derivations; and dark matter and the chirality of the weak interaction are,
 respectively, a conjecture and a primitive. The table above says which is which.
 
@@ -81,7 +81,7 @@ deposit** (APPROVED column empty for all 123). An earlier OSF project registrati
 | Flagships (`flagship_papers/`) | 9 | SF-1 v1.3 (leptons), SF-2 v1.08 (electroweak; v1.09 owed), SF-3 v1.6 (quarks), SF-4 v3.4 (neutrinos — the "v4.4" of May was pre-ship numbering), SF-5 v1.04 (strong), SF-6 v1.6 (electromagnetism), SF-8 v0.5 (emergent Coulomb), SF-7 v0.11 | SF-7 **never deposit** (placeholder) |
 | Strong (`series_strong/`) | 15 | SS-1 (+1a–1f), SS-3 v1.7, SS-4 v0.4, SS-5 v1.2, SS-7 v1.6, SS-8 v1.0, SS-9 v1.3 | **SS-2, SS-5, SS-6, SS-9 held pending critique** (the 1.07/0.62 fm frame superseded by founder rulings 4275/4276; TODO-4264-PASSTHROUGH) |
 | Standard Model (`series_standard_model/`) | 14 | SM-1…SM-12, SM-TN-2 (SM-8 v4.1, SM-9 v2.4, SM-7 v2.5) | SM-3's all-tetrahedral-lepton premise vs founder 4212 open (TODO-4212-CAGETABLE) |
-| Gravitation (`series_gravitation/`) | 12 | GR-1 v1.0.2, GR-1a–1j, GR-2 v2.11 (echo falsifier) | **wait for OPEN-GR-FE-1** (founder's ruling OPEN-ORG-023); GR-1d carries GR-RCORE-1's HALT finding |
+| Gravitation (`series_gravitation/`) | 12 | GR-1 v1.0.3, GR-1a v3.1, GR-1c v2.4, GR-1b, GR-1d–1j (GR-1j v1.0: the field equations), GR-2 v2.11 | the OPEN-ORG-023 gate's FE-1 condition is **discharged** (3267); **GR-1d V3 still predicts a 2.15 ms echo that AP-5 / GR-2 V2.11 withdrew** (TODO-4339-GR1DECHO); GR-1i reviewed, version bump owed |
 | Relativity (`series_relativity/`) | 7 | SR-1 v1.2, SR-2 v1.5, companions c01–c05 (c03 v2.2, c04 v2.3) | publishable with theorem debts stated (roadmap item 6) |
 | Quantum mechanics (`series_quantum_mechanics/`) | 9 | QM-1…QM-6 (v3.x), SPIN-1/2/3 | **SPIN-1, SPIN-2 never deposit until revised** (ħ/2 taken as input; TODO-4289-SPINREV) |
 | Electroweak (`series_electroweak/`) | 5 | EW-1…EW-5 (v1.1) | — |
@@ -126,7 +126,7 @@ this table is the thing to fix.
 | Interstitial-n Δ₁ (²⁶Mg, ⁴²Ca) | 9.37, 11.24 MeV | 9.39, 11.36 | −0.2%, −1.0% | conditional on C1–C4 + D1–D3 | SS-8 |
 | ⁸⁴Mo, ⁸⁸Ru, ⁹²Pd | 698.92, 729.56, 760.20 MeV | 699.27, 730.10, 761.15 | 0.05–0.13% | **calibrated** (B_slip from ⁵⁶Ni, measured B_α); SS-9 **held** | SS-9 |
 | n_s | 0.9654 | 0.9649 ± 0.0042 | 0.12σ | framework-conditional, leading order (OPEN-EU-1) | EU-1, PRED-C-96 |
-| Classical tests of gravity | GR values (43″/cy, 1.75″, …) | GR values | — | W2-conditional; field equations not derived | GR-1i v0.1 |
+| Classical tests of gravity | GR values (43″/cy, 1.75″, …) | GR values | — | W2-conditional (reviewed 5–0, CONV-029) | GR-1i v0.1 |
 | Coulomb's law from the lattice | ±0.4% pointwise at R = 4 | Ewald | — | cellular-automaton measurement; scalar sector only, no coupling constant predicted | SF-8 v0.5 |
 | α | 1/137.036 | — | — | **calibrated relation** α = PSR/(2L), L ≈ 68.5 PSR (CAL-ZBW1-SWING); passes local position invariance; running has the right sign, law owed | 4322–4331 |
 
@@ -192,7 +192,7 @@ Spectral index (EU-1): n_s = 1 − 2/N_* ≈ 0.9654 (one-sided)
 - **SF-2 (electroweak):** first/second distance shells → W bracelet, Z icosahedron, H dodecahedron, mass gap → m_Z/m_W at zero parameters; absolute masses calibrated.
 - **Capotauro / chirality:** K₃ doublet → |M| = χ/6 (THEO-CAP-1); the magnitude is derived on FI-C-1…10, the hand is a primitive; the EM-handedness leg of the three-way unification was found spurious (4069/4070).
 - **QM-1 → QM-6:** DI-bit hopping → Schrödinger → Born rule [OPEN-QM-1] → Bell 2√2 → Lindblad → QFT; spin ħ/2 is input (OPEN-QM-3); the sector awaits OPEN-QM-1-REGROUND.
-- **SR / GR:** SSV compression → Lorentz factor (ε(v) = γ − 1 satisfied at W2, 2502) → SSV shell broadcast → Newtonian gravity → Schwarzschild, Kerr, Kerr–Newman *solutions*; the field equations are by correspondence only (OPEN-GR-FE-1).
+- **SR / GR:** SSV compression → Lorentz factor (ε(v) = γ − 1 satisfied at W2, 2502) → SSV shell broadcast → Newtonian gravity → Schwarzschild, Kerr, Kerr–Newman *solutions* → the general static field equation, Birkhoff-type uniqueness and a conserved census current (GR-1j, OPEN-GR-FE-1 closed at 3267), all conditional on the PSR form at W2; radiative sector via SR-2/A3′ (λ = 16πG/c⁴); full nonlinear EFE + Λ open (OPEN-SR-4).
 - **α (4301 → 4331):** DI-bit count rule → α = c/2 → α = c·PSR/(2L) → α = PSR/(2L) with one calibrated swing; local position invariance passes via family exclusion (R-DIBIT-FAMILY-EXCLUSION) and saturation.
 - **EU-1 (cosmology):** diluting saturated lattice → A1 indistinguishability gives μ ∝ ln n̄ → ZBW bath reaches a constant-rate ZRP → H_eff ∝ N_rem → δN → n_s = 1 − 2/N_* (framework-conditional).
 
@@ -225,7 +225,7 @@ the 2–10% shell width.
 | # | Problem | IDs | Status (29 Sep) |
 |---|---|---|---|
 | 0 | Honest labelling and this scorecard | TODO-4335-OVERVIEW | overview refreshed (4336–4337); tally audited and σ citation fixed (4338); the corpus-wide wording sweep remains |
-| 1 | General field equations of gravity (the founder's deposit gate) | OPEN-GR-FE-1, OPEN-GR-RCORE-1, TODO-4300-HBARSWEEP | open |
+| 1 | Gravity: records into line (the FE-1 gate was discharged at 3267) | TODO-4339-GR1DECHO, TODO-4300-HBARSWEEP, TODO-4339-GR1IV1, OPEN-ORG-023 | GR-1/1a/1c wording done 4339; GR-1d echo, GR-1i bump, test-run set remain |
 | 2 | Lattice-to-SI scale; the PSR floor | OPEN-SD-lattice-scale | open; black-hole PSR vs l_P/2 now a factor 4.1 (4322), not re-adjudicated |
 | 3 | Spin and the unit of action | OPEN-QM-3, TODO-4289-SPINREV/SPINSWEEP | ħ/2 has a carrier (half-swing) but its size is calibrated; SPIN-1/2 held |
 | 4 | Layer B and the QM foundation | OPEN-SS-16, OPEN-QM-1-REGROUND, OPEN-QM-1 | open; conditions Koide and much of the strong sector |

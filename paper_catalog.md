@@ -192,9 +192,9 @@
 
 | Title | Ver | File | Last touched | Patch |
 |---|---|---|---|---|
-| Newtonian Gravity from SSV Shell Broadcast — in Conscious Point Physics — Companion Paper to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | — | `series_gravitation/GR_companion_papers/GR-1a_newtonian_gravity_from_SSV/GR-1a_gravity_from_SSV_shell_broadcast.tex` | 2026-08-20 | 3273 |
+| Newtonian Gravity from SSV Shell Broadcast — in Conscious Point Physics — Companion Paper to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 3.1 | `series_gravitation/GR_companion_papers/GR-1a_newtonian_gravity_from_SSV/GR-1a_gravity_from_SSV_shell_broadcast.tex` | 2026-08-20 | 3273 |
 | Weak-Field General Relativity — from the Lattice State Packet — in Conscious Point Physics — Companion Paper to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 3.7 | `series_gravitation/GR_companion_papers/GR-1b_weak_field_GR/GR-1b_weak_field_GR.tex` | 2026-09-20 | — |
-| Strong-Field General Relativity and the CPP Field Equation — from the Lattice State Packet in Conscious Point Physics — Companion 8 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 2.3 | `series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/GR-1c_strong_field_GR.tex` | 2026-09-20 | — |
+| Strong-Field General Relativity and the CPP Field Equation — from the Lattice State Packet in Conscious Point Physics — Companion 8 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 2.4 | `series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/GR-1c_strong_field_GR.tex` | 2026-09-20 | — |
 | General Relativity from Lattice State Packet Dynamics — in Conscious Point Physics — Companion Paper to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | — | `series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/development/strong_field_GR.tex` | 2026-08-19 | 3230 |
 | Gravitational Wave Echoes from the Planck Core — in Conscious Point Physics — Companion 9 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | — | `series_gravitation/GR_companion_papers/GR-1d_gravitational_wave_echoes/GR-1d_GW_echoes.tex` | 2026-09-02 | 3371 |
 | Gravitational Wave Echoes from the Planck Core — in Conscious Point Physics — Companion 9 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | — | `series_gravitation/GR_companion_papers/GR-1d_gravitational_wave_echoes/development/Claude-GW-echoes.tex` | 2026-08-19 | 3230 |
@@ -207,7 +207,7 @@
 | Superradiance from the Kerr SSV — in Conscious Point Physics — Companion 13 to ``Mechanistic Derivation of Relativistic Effects — via Space Stress Vector (SSV) in the Dipole Sea'' ( | 1.2 | `series_gravitation/GR_companion_papers/GR-1h_superradiance/GR-1h_superradiance.tex` | 2026-09-20 | — |
 | GR-1i: The Classical Tests of Gravitation — Perihelion precession, light deflection, Shapiro delay, and gravitational redshift as geodesic consequences of the CPP shell-broadcast metric — Companion i to GR-1 --- Conscious Point Physics gravitation series --- | 0.1 | `series_gravitation/GR_companion_papers/GR-1i_classical_tests/GR-1i_classical_tests.tex` | 2026-09-20 | — |
 | GR-1j: The CPP Field Equations from the Messenger Census — T-1 (the general equation), T-2 (Birkhoff-type uniqueness), and T-3 (the conserved source current), derived from the three-type conscious-point automaton — Companion j to GR-1 --- Conscious Point Physics gravitation series --- | 1.0 | `series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex` | 2026-09-20 | — |
-| GR-1: Local Gravitation from SSV Shell Broadcast — One nonlinear substrate response from Coulomb's law to the exact Schwarzschild, Kerr, and Kerr--Newman metrics — | 1.0.2 | `series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex` | 2026-09-20 | — |
+| GR-1: Local Gravitation from SSV Shell Broadcast — One nonlinear substrate response from Coulomb's law to the exact Schwarzschild, Kerr, and Kerr--Newman metrics — | 1.0.3 | `series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex` | 2026-09-20 | — |
 | The Echo Falsifier: — Millisecond Gravitational-Wave Echoes from Horizonless — CPP Compact Objects — Second series paper of the Conscious Point Physics gravitation series (parent: GR-1) | 2.11 | `series_gravitation/papers/GR-2_echo_falsifier.tex` | 2026-09-20 | — |
 
 ## DEFECT — title-page version disagrees with the CHANGELOG
@@ -221,13 +221,12 @@
 
 ## Papers carrying no parseable version stamp
 
-**25 of 128.** No `Version X.Y` string was found in the header, `\date{}`, or title block. These are reported rather than guessed at: an invented version in a deposit catalog is worse than a visible blank. Integer-only stamps (`Version 3`) are deliberately not accepted, because bare integers in these headers are usually cross-references to predecessor documents.
+**24 of 128.** No `Version X.Y` string was found in the header, `\date{}`, or title block. These are reported rather than guessed at: an invented version in a deposit catalog is worse than a visible blank. Integer-only stamps (`Version 3`) are deliberately not accepted, because bare integers in these headers are usually cross-references to predecessor documents.
 
 | File | Last touched | Patch |
 |---|---|---|
 | `series_foundations/TN-SR-1_vacuum_energy_holographic_suppression.tex` | 2026-03-27 | — |
 | `series_foundations/dp-sea-polarization/DP-Sea-Polarization-Model.tex` | 2026-03-26 | — |
-| `series_gravitation/GR_companion_papers/GR-1a_newtonian_gravity_from_SSV/GR-1a_gravity_from_SSV_shell_broadcast.tex` | 2026-08-20 | 3273 |
 | `series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/development/strong_field_GR.tex` | 2026-08-19 | 3230 |
 | `series_gravitation/GR_companion_papers/GR-1d_gravitational_wave_echoes/GR-1d_GW_echoes.tex` | 2026-09-02 | 3371 |
 | `series_gravitation/GR_companion_papers/GR-1d_gravitational_wave_echoes/development/Claude-GW-echoes.tex` | 2026-08-19 | 3230 |

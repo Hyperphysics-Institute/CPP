@@ -3526,7 +3526,7 @@ unchanged, flagged for a future pass rather than silently absorbed.
 
 ---
 
-## OPEN-GR-RCORE-1 — Planck-core reflectivity: **DERIVED-PENDING-REVIEW**, with a HALT finding against shipped GR-1d (Patch 3297, Session 154)
+## OPEN-GR-RCORE-1 — Planck-core reflectivity: **DERIVED-PENDING-REVIEW**, with a HALT finding against shipped GR-1d (Patch 3297, Session 154) — *[4339 header note: the review closed — CONV-030 5–0, ratified 3300, enacted 3301–3303 (GR-1d V3, GR-1c V2.3, GR-1e V1.1); later superseded in part by AP-5 (3699, PRED-O-39 NULL) and GR-2 V2.8–V2.11. GR-1d V3's 2.15 ms echo was not brought into line: TODO-4339-GR1DECHO.]*
 
 **Deliverable:** `series_gravitation/rcore_derivation/RCORE_derivation.md`;
 verify `code/3297_rcore_verify.py` **9/9 PASS**. Executed on the founder's

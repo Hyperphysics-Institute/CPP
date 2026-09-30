@@ -15,9 +15,9 @@ to rearrange, so there is nothing available to shield with.
 
 **Q3. Is G predicted, or just re-expressed?**
 Derivable, not predicted — and the distinction is worth keeping. G is
-identified as ħc/m_P², where m_P is already fixed by the 600-cell
-lattice, so the theory has nowhere to insert a free parameter and the
-CODATA value comes out. But G was a known number; nothing was foretold.
+identified as ħc/m_P². Once the lattice scale is identified with the Planck scale (an identification,
+not a numerical derivation — c03; the lattice-to-SI scale is an input, OPEN-SD-lattice-scale), the
+theory has nowhere to insert a further parameter and the CODATA value comes out (scoped at 4339). But G was a known number; nothing was foretold.
 The claim is about parameter-freedom, not about foresight.
 
 **Q4. Doesn't the hierarchy problem just get relabelled here?**

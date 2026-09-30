@@ -1131,7 +1131,7 @@
     {
       "rel": "series_gravitation/GR_companion_papers/GR-1a_newtonian_gravity_from_SSV/GR-1a_gravity_from_SSV_shell_broadcast.tex",
       "title": "Newtonian Gravity from SSV Shell Broadcast",
-      "ver": "3",
+      "ver": "3.1",
       "changed": "2026-08-20",
       "cls": "Series paper",
       "withheld": "",
@@ -1152,8 +1152,8 @@
         "subjects": [
           "Physics"
         ],
-        "version": "3",
-        "description": "We show that Newtonian gravity emerges from the same Space Stress Vector (SSV) shell-broadcast mechanism that produces Coulomb's law, with one essential difference: the gravitational SSV source is mass-energy (a positive scalar) rather than charge polarity (a signed quantity). This difference has two immediate consequences. First, gravity is universally attractive because mass-energy SSV has no polarity --- every ZBW Dipole Particle unit contributes compressive SSV in all directions, with no cancellation. Second, the gravitational coupling constant is $G = c/ ^2$, fixed entirely by the Planck mass $ $ already determined by the 600-cell lattice. The inverse-square law follows from the shell-broadcast geometry established in the Stiffness~$C$ companion. The weakness of gravity relative to electromagnetism is explained as the ratio $F_ grav/F_ EM = (m/ )^2/(e/ )^2$, a pure ratio of Planck-unit suppressions with no free parameters. No new postulates are introduced. This paper closes the classical-force sector of CPP and opens the direct path to the General Relativity companion.",
+        "version": "3.1",
+        "description": "We show that Newtonian gravity emerges from the same Space Stress Vector (SSV) shell-broadcast mechanism that produces Coulomb's law, with one essential difference: the gravitational SSV source is mass-energy (a positive scalar) rather than charge polarity (a signed quantity). This difference has two immediate consequences. First, gravity is universally attractive because mass-energy SSV has no polarity --- every ZBW Dipole Particle unit contributes compressive SSV in all directions, with no cancellation. Second, the gravitational coupling constant is $G = c/ ^2$, a Planck-unit identification: with the lattice spacing and tick identified with $ $ and $ $ and $ $ with $ $ (a physical identification, not a numerical derivation; c03), $G$ carries no further parameter, but the lattice-to-SI scale is an input (OPEN-SD-lattice-scale). The inverse-square law follows from the shell-broadcast geometry established in the Stiffness~$C$ companion. The weakness of gravity relative to electromagnetism is explained as the ratio $F_ grav/F_ EM = (m/ )^2/(e/ )^2$, a ratio of Planck-unit suppressions, with $(e/ )^2 = $ (calibrated in CPP at present). No new postulates are introduced. This paper closes the classical-force sector of CPP and opens the direct path to the General Relativity companion.",
         "description_ok": true,
         "description_source": "abstract environment"
       },
@@ -1217,7 +1217,7 @@
     {
       "rel": "series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/GR-1c_strong_field_GR.tex",
       "title": "Strong-Field General Relativity and the CPP Field Equation",
-      "ver": "2.3",
+      "ver": "2.4",
       "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
@@ -1238,7 +1238,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "2.3",
+        "version": "2.4",
         "description": "We extend the weak-field GR results of companion~7 to the full nonlinear regime. The PSR formula $ _ eff(r) = /(1 + k\\, | |(r))$, combined with the shell-broadcast source equation $k\\, | | = GM/rc^2$ (exact, from the Newtonian Gravity companion), yields the Schwarzschild metric in isotropic coordinates without approximation (Theorem~ thm:schwarzschild). Standard Schwarzschild follows by coordinate transformation. The CPP field equation governing the self-consistent LSP distribution is identified as a nonlinear wave equation for $ $ that reduces to the linearised Einstein equations in the weak-field limit (Proposition~ prop:field_eq). The CP Exclusion Rule imposes a minimum lattice spacing $ _ eff /2$, preventing the metric from reaching zero at $r = 0$ and replacing the GR singularity with a Planck-density core (Theorem~ thm:core). Additional predictions include a Planck remnant from Hawking evaporation, suppressed scalar/vector gravitational wave modes, and a qualitative derivation of the Kerr frame-dragging term from the angular SSV curl. No new postulates are introduced beyond those of Version~16.",
         "description_ok": true,
         "description_source": "abstract environment"
@@ -1561,7 +1561,7 @@
     {
       "rel": "series_gravitation/papers/GR-1_local_gravitation_from_SSV_shell_broadcast.tex",
       "title": "GR-1: Local Gravitation from SSV Shell Broadcast",
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "changed": "2026-09-20",
       "cls": "Series paper",
       "withheld": "",
@@ -1582,7 +1582,7 @@
         "subjects": [
           "Physics"
         ],
-        "version": "1.0.2",
+        "version": "1.0.3",
         "description": "This paper is the series parent for the Conscious Point Physics (CPP) gravitational arc. Its thesis is a single unifying statement, conditional throughout on the PSR constitutive form, whose SR-1 grounding stands at W2 viability strength (Section~ sec:inheritance): given that form, the same Space Stress Vector (SSV) shell-broadcast mechanism that produces Coulomb's law produces, in successive regimes of one nonlinear substrate response, Newtonian gravity, the weak-field limit of general relativity, and the exact Schwarzschild metric in isotropic coordinates --- extended by the companion papers to the Kerr and Kerr--Newman families and their consequences (gravitational-wave echoes, modified Hawking evaporation, superradiance). The nonlinearity resides entirely in the Planck Sphere Radius response formula $ _ eff = /(1 + k\\, | |)$, which is why one mechanism spans all four regimes. We state the claim precisely: conditional on the PSR constitutive form (W2), CPP reproduces the named solutions of general relativity --- Schwarzschild in isotropic coordinates, Kerr, Kerr--Newman --- exactly, with no free parameters beyond that form; At V0 the general field equations were registered as an open problem rather than claimed; that problem is now CLOSED ( OPEN-GR-FE-1, Patches 3254--3267): the general CPP field equation is derived from the messenger census, panel-ratified across two review rounds, and consolidated in companion GR-1j --- with the static sector proven equivalent to the corrected GR-1c Proposition (V2.2 corrigendum) and the uniqueness and source theorems (T-2/T-3) ratified alongside. The four classical tests (perihelion precession, light deflection, Shapiro delay, gravitational redshift) follow from the recovered metric by standard geodesic integration; this paper carries the predicted-versus-observed summary table, with the derivations in the dedicated tests companion GR-1i ( OPEN-GR-TESTS-1: finally discharged, CONV-029 unanimous). An epistemic ledger aggregates what is exact, what is correspondence, and what is conditional across the arc, and an inheritance subsection states explicitly what this arc does and does not inherit from SR-1, including SR-1's withdrawn prediction set (Patch~2474) and withdrawn class-coverage theorem (Patch~2475). Scope: local gravitation only. Cosmological solutions (FRW/Friedmann) are outside this series and are pursued separately under OPEN-EU-1 and the dark-energy programme.",
         "description_ok": true,
         "description_source": "abstract environment"

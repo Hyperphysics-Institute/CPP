@@ -8,7 +8,8 @@ done and recorded in the lanes named below.
 
 **Standing facts.** Nothing is deposited yet (4334). PDFs are built by Isak at deposit (CONV-012). The founder's 19 Aug 2026
 ruling (OPEN-ORG-023): a small test-run deposit first; then **most of the 105 non-gravitational papers wait until GR-1, its
-companions and OPEN-GR-FE-1 are done**. Deposit approval is the founder's (the queue's APPROVED column, fail-closed).
+companions and OPEN-GR-FE-1 are done** — and **that condition was discharged on 20 Aug** (OPEN-GR-FE-1 CLOSED at Patch 3267,
+founder: "Confirm FE-1 complete."; see the correction under item 1). Deposit approval is the founder's (the queue's APPROVED column, fail-closed).
 
 ---
 
@@ -27,14 +28,25 @@ companions and OPEN-GR-FE-1 are done**. Deposit approval is the founder's (the q
 - **Enforced from 4335** by `code/overview_staleness_gate.py`. **Closes when** the gate passes and every README and
   theory-overview headline carries its basis. *Lane:* governance (TODO-4335-OVERVIEW).
 
-**1. Gravity completion — OPEN-GR-FE-1 (derive the general field equations), the founder's deposit gate.**
-- The GR arc reproduces the Schwarzschild, Kerr and Kerr–Newman *solutions*, but the field *equations* are only
-  correspondence claims (`frontier_sectors/GR.md`, OPEN-GR-FE-1).
-- Carried with it:
-  - OPEN-GR-RCORE-1's HALT finding against the shipped GR-1d;
-  - gravity in DI-bit counts (the queued O2 from 4310–4313);
-  - TODO-4300-HBARSWEEP (GR-1 and GR-1a's "fixed by the 600-cell lattice / no free parameters" overstatements).
-- *Closes when* the field equations are derived from the DI-bit/SSV picture, not by continuum correspondence. *Lane:* GR.
+**1. Gravity: bring the records into line (not a derivation).**
+- **Correction (4339).** As first registered at 4335, this item said the general field equations were not derived and
+  that deriving them was the founder's deposit gate. **That was wrong.** OPEN-GR-FE-1 CLOSED at Patch 3267 (founder,
+  20 Aug: *"Confirm FE-1 complete."*). GR-1j V1.0 derives the general static field equation (T-1), a Birkhoff-type
+  uniqueness for isolated, no-incoming-radiation sources (T-2), and a conserved census current (T-3) — all conditional on
+  the PSR constitutive form at W2 strength, with k a registered normalisation. The FE-1 condition of OPEN-ORG-023 is
+  discharged. The error was mine: I read the item's registration text and not its status line.
+- **Radiative sector:** closed by SR-2/A3′ (λ = 16πG/c⁴). **The full nonlinear Einstein equations + Λ** remain OPEN-SR-4
+  research and do not gate deposit.
+- **What remains before the main wave:**
+  - GR-1d V3 still predicts a 2.15 ± 0.14 ms echo; AP-5 (3699) and GR-2 V2.8–V2.11 withdrew the echo (PRED-O-39 NULL).
+    GR-1d must be brought into line (TODO-4339-GR1DECHO).
+  - The "G = ħc/m_P², no free parameters" wording (TODO-4300-HBARSWEEP): GR-1, GR-1a, GR-1c done at 4339; the GR-1a
+    FAQ/phenomena companions remain.
+  - GR-1i: reviewed and cleared 5–0 (CONV-029) but still V0.1 (TODO-4339-GR1IV1). GR-2 recompile at deposit (Isak).
+  - OPEN-ORG-023's entry was never updated after 3232; the planned test-run set (the spin trio) is no longer available
+    because SPIN-1/2 are held (TODO-4339-TESTRUN).
+- **Open research that does not gate deposit:** O2 (G in DI-bit counts, 4310–4313); the black-hole PSR factor 4.1 (4322).
+  *Lane:* GR / governance.
 
 **2. The lattice-to-SI scale and the PSR floor.**
 - OPEN-SD-lattice-scale is marked *"#1 foundational — blocks experimental scrutiny"* (`frontier_sectors/SM.md`): how
@@ -120,3 +132,6 @@ recorded, surveyed at 4335.)
   the corpus-wide wording sweep.
 - **4338 (item 0):** predictions.md tally audited in place (holds, calibrated-in-effect rows, SS-7 measured input tagged;
   PRED-C-67/72 corrected); σ now cites CONJ-SS-5. Item 0 remains open only for the corpus-wide wording sweep.
+- **4339:** **item 1 corrected** — OPEN-GR-FE-1 was closed at 3267, so the founder's deposit gate is discharged; the item is
+  now records-into-line. GR-1/GR-1a/GR-1c "no free parameters" wording scoped (TODO-4300-HBARSWEEP, papers part). Sweep tool
+  `code/claim_wording_sweep.py` added (item 0/7).

@@ -4,8 +4,9 @@
 - Why gravity is universally attractive and electromagnetism is not:
   identical broadcast geometry, scalar versus signed source.
 - Why gravity is weak: the coupling is the pure Planck-unit ratio
-  G = ħc/m_P², with m_P fixed by the lattice — the hierarchy is a
-  consequence, not an input.
+  G = ħc/m_P², with m_P identified with the lattice scale (an identification, c03) — the weakness is
+  re-expressed as (m/m_P)², which c04 reads as a count of Planck ticks per Compton cycle; the ratio
+  itself is not derived (scoped at 4339).
 - Why Newtonian gravity, the weak field, and Schwarzschild are the same
   theory at three strengths: they are Taylor truncations of one response.
 - Why light deflection carries its factor of two: the two-component LSP

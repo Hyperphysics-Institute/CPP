@@ -22,8 +22,9 @@ The arc's ground floor, in causal order:
 5. **The coupling is fixed, not fitted.** Normalizing the gravitational
    quantum by the Planck-mass unit, Q_grav = (mc²/E_P)·Q_Planck, and
    pushing it through the shell broadcast gives F = Gmm'/r² with
-   **G = ħc/m_P²** — exact, parameter-free, since m_P is already
-   determined by the 600-cell lattice. The CODATA value comes out.
+   **G = ħc/m_P²** — an exact Planck-unit identification: once the lattice spacing, tick and ħ are identified
+   with l_P, t_P and E_P·t_P (c03: an identification, not a numerical derivation), G carries no further
+   parameter. The lattice-to-SI scale is an input (OPEN-SD-lattice-scale). *(Scoped at 4339, TODO-4300-HBARSWEEP.)*
 6. **The hierarchy is a consequence, not a puzzle.** F_grav/F_EM =
    (m/m_P)²/(e/e_P)² is a pure Planck-unit ratio. Gravity is weak
    because the electron sits ~10²² below the Planck mass — a fact about

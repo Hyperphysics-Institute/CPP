@@ -14,7 +14,8 @@ step 3's constitutive form.
    across any concentric shell is conserved, so per-site influence falls
    as 1/r² — the identical geometry that carries Coulomb's law. The
    source relation k·Δ|SSV| = GM/rc² is exact, and the coupling is not
-   fitted: G = ħc/m_P², with m_P already fixed by the 600-cell lattice.
+   fitted separately: G = ħc/m_P², a Planck-unit identification (c03); the lattice-to-SI scale is an input
+   (scoped at 4339, TODO-4300-HBARSWEEP).
 3. **The substrate responds nonlinearly.** PSR_eff = l_P/(1 + k·Δ|SSV|).
    This is the full constitutive statement, not a linearization awaiting
    corrections — and it is the arc's single premise beyond the axioms

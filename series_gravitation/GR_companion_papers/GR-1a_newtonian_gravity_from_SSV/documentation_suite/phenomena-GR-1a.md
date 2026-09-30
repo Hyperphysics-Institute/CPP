@@ -19,9 +19,10 @@
 
 **Reproduced (with a parameter-free coupling):**
 - **G = ħc/m_P² = 6.674×10⁻¹¹ m³kg⁻¹s⁻²**, agreeing with CODATA. The
-  value is exact within the theory in the sense that no free parameter
-  enters — m_P, l_P, t_P, ħ, and c are all fixed by the 600-cell lattice
-  and the Absolute Moment tick. What it is *not* is an independent
+  value is exact within the theory in the sense that no further parameter
+  enters once m_P, l_P, t_P and ħ are identified with the lattice spacing, the Absolute Moment tick and
+  E_P·t_P (c03: an identification, not a numerical derivation); the lattice-to-SI scale is an input
+  (scoped at 4339). What it is *not* is an independent
   prediction of a previously unknown number: G's role here is to be
   *derivable* rather than inserted.
 - Newton's law F = Gmm'/r² in the regime ΔSSV ≪ SSV_crit.
