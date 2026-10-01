@@ -552,3 +552,10 @@ photonic emission (activated orbital → ground state) modeled as a series of ZB
 nucleus, the envelope of ~20 oscillations constituting the photon. Status per the founder's own words: NOT rigorously
 validated. Filed as a validation-arc candidate; no number, no status beyond founder-picture. Natural adjacency: the
 OPEN-FP-RELAY-MECH-1 resolution (Patch 2953) and SF-6 successor content.
+
+### α's local position invariance from the relay (registered Patch 4363, Session 241)
+Derive, once for mass and charge, how a source's injection into the PSR-shell relay scales with the local PSR
+(TODO-4359-SOURCERULE). It sets the far-field dilution exponent, which decides whether the founder's Lorentz-ratio
+mechanism (R-ALPHA-LORENTZ-RATIO) keeps α fixed at first order (k·SSV_abs,0 = 1/3) and whether the second-order tension
+with atomic clocks (~2–3× the 2021 bound) or Mercury (β = 5/2) survives. Companion: TODO-4362-NRECONCILE (the DI-bit count).
+

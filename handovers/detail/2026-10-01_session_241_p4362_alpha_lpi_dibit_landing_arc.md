@@ -31,3 +31,15 @@ See `pre_deposit_roadmap.md`'s work log.
   before presenting it.
 - **The founder's physical pictures are usually already in the registered axioms** (AP-4, AP-5, 3703). Read them before
   modelling.
+
+## §15 Step A–H Completion Audit (Patch 4362, completed at Patch 4363)
+- **A (Tier 1 session log):** ✓ `session_logs/2026-10-01_session_241_log.md` (4363).
+- **B (Tier 2 transcript pointers):** ✓ `session_logs/transcript-cross-paper.md` entries 079–084 (4363); founder text in `founders_voice/` (edited for clarity per the transcript rule).
+- **C (Tier 3 vignette):** N/A — the α/DI-bit work is foundations (axiom_maturation), not paper-scoped; the paper revisions of 4340–4349 and c03 v2.3 were wording/status edits recorded in each paper's version history, not new paper-scoped reasoning.
+- **D (Tier 4 reasoning):** ✓ per-patch fragments `series_standard_model/axiom_maturation/4352–4362` with verify scripts `series_standard_model/code/4352–4360` (4359, 4361, 4362 are critic/ruling fragments without scripts).
+- **E (registries):** todolist ✓ (deferral gate PASS on all 28 patches; 4351 a legitimate NOTHING-DEFERRED); research_frontier ✓; axiom-registry ✓ (R-CP-NO-REST-MASS, R-DIBIT-INWARD-FILL, R-DIBIT-COUNT-AT-FLOOR, R-DPSEA-UNIFORM, R-ALPHA-LORENTZ-RATIO; count 9); theory-overview ✓ (α row restated at 4359); `frontier_sectors/EW.md` ✓ (4363); `future_projects.md` ✓ (4363); pre_deposit_roadmap ✓; paper_catalog ✓ (4340–4349); OSF queue/manifest ✓ (regenerated at 4352 after c03); predictions N/A (no new prediction; α a calibration); theorem-registry N/A; master_glossary N/A; methods_catalogue N/A (the fresh-critic discipline is protocol, filed as D-14); organizational_frontier N/A.
+- **E′ (reasoning-capture audit):** physics patches 4352–4362 all captured. 4335–4351 are programme/paperwork patches; the tools they shipped (`overview_staleness_gate.py`, `claim_wording_sweep.py`, `compile_pass.sh`) are infrastructure. **Named gaps:** 4347 shipped `series_strong/code/4347_ss7_lo_cpp_variant.py` (SS-7 fully-CPP RMS 1.77%) with the finding recorded in SS-7 v1.7 and the roadmap but no fragment; 4341's SF-2 arithmetic erratum is recorded in the paper's erratum only.
+- **F (reviewer artifacts):** ✓ the three fresh-context critic returns, verbatim, at `series_standard_model/reviews/2026-09-30_session_241_critic_returns_verbatim.md` (4363).
+- **G (protocol/OS):** ✓ bootup §3 container-hygiene rule (4362); bootup §0.5 **D-14** (one rule for every A3′ channel; exclusions to a fresh critic first) (4363).
+- **H (handover document):** ✓ boot card + this detail (4362, same-session fix-up at 4363); kickoff line and orientation echoed in chat.
+

@@ -5,7 +5,7 @@
 Bootup for Conscious Point Physics (CPP). Clone the repo and read the bootup file at https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/bootup.md. Honor the line-1 CLONE-FIRST GATE before registering any ID, placing any file, or computing any coefficient (clone the repo and grep the registry first). Then open the handovers/ folder, sort by filename, and read the most recent dated file (named YYYY-MM-DD_session_NNN_*.md) — that newest entry is the canonical "what's next" pointer. Note: the folder is handovers/ (plural) and there is no file named handover.md; never look for either — always use the newest dated entry.
 ```
 
-**Orientation.** One long window, 4335–4362 (28 patches). It did two things:
+**Orientation.** One long window, 4335–4363 (29 patches). It did two things:
 - **Pre-deposit paperwork (4335–4351):** the pre-deposit list (`pre_deposit_roadmap.md`) is essentially complete (items 0, 1, 3, 7 done); the deposit queue reports current versions; 121/122 candidates compile; R-CP-NO-REST-MASS registered and confirmed.
 - **The α arc pressed to the bottom (4352–4362):** an independent critic withdrew 4330's LPI pass (sign bug); the founder then supplied the DI-bit landing protocol, the black-hole calibration of the DI-bit count, and the Lorentz-ratio mechanism for α's invariance. Two of Claude's intermediate results (4355 k_α = −3; 4358 "excluded by 10⁸") were **withdrawn** after a second critic found the same premise would break gravity.
 
@@ -16,7 +16,7 @@ Bootup for Conscious Point Physics (CPP). Clone the repo and read the bootup fil
 **STEP 2:** read `handovers/detail/2026-10-01_session_241_p4362_alpha_lpi_dibit_landing_arc.md`, then work.
 
 ## Facts
-- **HEAD:** 4362. **Next free: EW 4363.**
+- **HEAD:** 4363 (4362 close; 4363 §15 A–H completion). **Next free: EW 4364.**
 - **Registered this window:** R-CP-NO-REST-MASS (A1′); R-DIBIT-INWARD-FILL; R-DIBIT-COUNT-AT-FLOOR; R-DPSEA-UNIFORM; R-ALPHA-LORENTZ-RATIO (all in axiom-registry.md, DI-bit landing section). Axiom count 9.
 - **Landing band:** solid, one DI-bit per GP, outer edge at the PSR; 4.35% of the PSR deep at zero stress, 100% at the black-hole floor (l_P/2).
 - **Withdrawn:** 4330's LPI pass (4352); 4354's cross-section result (4355); 4355–4358's k_α = −3 / "excluded by 10⁸" (4359).
