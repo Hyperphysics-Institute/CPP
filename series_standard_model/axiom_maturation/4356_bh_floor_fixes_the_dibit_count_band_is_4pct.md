@@ -75,3 +75,9 @@ charge, that weaken its push far away, so that more dipoles per grid point means
 path; the agreement is between two calculations, not a confirmation. 4.35% is the depth at zero stress (u = 0, ordinary
 space); the depth grows with stress (7.8% at a neutron-star surface, 100% at the R-core floor). See
 `4357_band_depth_reference_two_lapses_and_the_speck.md`. Critic item (ii) answered.
+
+---
+**Withdrawal (Patch 4359).** §4's "full-ball route closed, k_α = −3" and the Sea candidate (closed at 4359 §2) are superseded. An independent critic found that the premise (a fixed-count source, read without a
+lapse or medium dictionary) would also make Newton's constant vary with position in gravity, failing lunar laser ranging
+by ~10⁴; A3′'s metric coupling gives k_α = 0 by construction. The result is withdrawn as established; the source rule is
+owed for all channels together (TODO-4359-SOURCERULE). See `4359_sea_cannot_fix_alpha_and_4355_premise_would_break_gravity.md`.

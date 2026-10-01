@@ -57,3 +57,9 @@ oscillating in the cage of its own DI-bit zone, with information stored in that 
 - **The convenient branch this refuses:** letting the black-hole discussion stand in for the ordinary-space test. The
   clock contradiction is computed (§2) and stays open.
 - **Mine:** the restated Sea question (§3) and the outline reconciliation (§4).
+
+---
+**Withdrawal (Patch 4359).** §2's "contradicted by ~8×10⁷" is withdrawn. An independent critic found that the premise (a fixed-count source, read without a
+lapse or medium dictionary) would also make Newton's constant vary with position in gravity, failing lunar laser ranging
+by ~10⁴; A3′'s metric coupling gives k_α = 0 by construction. The result is withdrawn as established; the source rule is
+owed for all channels together (TODO-4359-SOURCERULE). See `4359_sea_cannot_fix_alpha_and_4355_premise_would_break_gravity.md`.

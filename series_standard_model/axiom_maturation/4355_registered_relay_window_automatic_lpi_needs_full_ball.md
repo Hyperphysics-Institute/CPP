@@ -82,3 +82,9 @@ to those?
 where the GPs inside the PSR equal the DI-bit count. So the sphere fills solid only at the black-hole floor; in ordinary
 space a charge's family is a band (4.4% of the PSR), and the full-ball escape of §2 is closed. See
 `4356_bh_floor_fixes_the_dibit_count_band_is_4pct.md`.
+
+---
+**Withdrawal (Patch 4359).** §2's k_α = −3 for a fixed-count source is conditional on its premise. An independent critic found that the premise (a fixed-count source, read without a
+lapse or medium dictionary) would also make Newton's constant vary with position in gravity, failing lunar laser ranging
+by ~10⁴; A3′'s metric coupling gives k_α = 0 by construction. The result is withdrawn as established; the source rule is
+owed for all channels together (TODO-4359-SOURCERULE). See `4359_sea_cannot_fix_alpha_and_4355_premise_would_break_gravity.md`.

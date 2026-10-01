@@ -172,3 +172,5 @@ recorded, surveyed at 4335.)
   N ≈ 5×10⁸⁹ (order of magnitude). α's far-field LPI question (DP-Sea screening) still pending.
 - **4358 (item 5):** clock test computed: the registered DI-bit rules predict an annual α swing ~8×10⁷ above Lange 2021;
   α's LPI fails as registered unless the Sea screens (founder question restated).
+- **4359 (item 5):** 4355–4358's α exclusion withdrawn (independent critic: same premise breaks gravity); α's LPI stands as
+  gravity's — asserted by A3′'s metric coupling, source rule owed for all channels (TODO-4359-SOURCERULE). R-DPSEA-UNIFORM.

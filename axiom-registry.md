@@ -404,5 +404,12 @@ PSR = l_P/2 (lapse ½; R-PSR-LAW-LOG; AP-5 cap), N = GPs inside a ball of radius
 flat-space landing band is then 4.35% of the PSR deep (4356). Consequence: above the floor the family is a band, not a
 full ball, so 4355's full-ball route to α's far-field LPI is closed; open (4356 §4–5).
 
+**R-DPSEA-UNIFORM** (founder 4359, `founders_voice/4359_…`): the DP-Sea concentration is the same everywhere; gravity does
+not pull DPs to mass. DPs orient toward an unpaired CP (opposite charge inward, like charge outward); mass carries a
+polarised cloud whose radius is set by the CP's polarising pull against thermal agitation. **4359 status of α's LPI:**
+the 4355–4358 exclusion is withdrawn (its fixed-count premise would break gravity too); LPI is asserted by A3′'s metric
+coupling, as for gravity; the relay's source rule (how a source's injection scales with the local PSR) is owed once for
+all channels (TODO-4359-SOURCERULE).
+
 **Status.** Clauses under A3′/AP-4 (transport); **axiom count unchanged at 9.**
 
