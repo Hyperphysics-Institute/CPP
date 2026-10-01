@@ -170,3 +170,5 @@ recorded, surveyed at 4335.)
   again (k_α = −3 as registered); candidate DP-Sea screening, founder question pending.
 - **4357 (item 5):** band depth referenced to zero stress (4.35%); founder's black-hole thoughts answered from 3703/AP-5;
   N ≈ 5×10⁸⁹ (order of magnitude). α's far-field LPI question (DP-Sea screening) still pending.
+- **4358 (item 5):** clock test computed: the registered DI-bit rules predict an annual α swing ~8×10⁷ above Lange 2021;
+  α's LPI fails as registered unless the Sea screens (founder question restated).
