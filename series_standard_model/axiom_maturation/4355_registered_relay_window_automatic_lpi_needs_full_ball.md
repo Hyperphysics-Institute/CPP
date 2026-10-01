@@ -76,3 +76,9 @@ to those?
   the static far field unchanged (GR-1j says statics is exempt); (iii) check whether GR-1j's registered source
   normalisation (∇²u = −(4πG/kc²)ρ) already implies an R-scaled injection for mass, and whether the same must hold for
   charge.
+
+---
+**Note (Patch 4356).** The founder answered §3: one DI-bit per GP holds down to maximum compression (the black hole),
+where the GPs inside the PSR equal the DI-bit count. So the sphere fills solid only at the black-hole floor; in ordinary
+space a charge's family is a band (4.4% of the PSR), and the full-ball escape of §2 is closed. See
+`4356_bh_floor_fixes_the_dibit_count_band_is_4pct.md`.

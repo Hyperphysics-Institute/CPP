@@ -398,5 +398,11 @@ AP-3/A3′'s PSR-shell kernel; a far CP is read at one GP whose state is the mea
 α's far-field LPI then holds only if a charge's family fills its whole PSR ball (injection ∝ GPs per PSR volume); a band
 with an emptier core gives k_α = −3.
 
+**R-DIBIT-COUNT-AT-FLOOR** (founder 4356, `founders_voice/4356_…`): one DI-bit per GP holds for any PSR down to maximum
+compression, the black hole, where the GPs inside the PSR equal a GP's DI-bit count N. With the corpus's R-core floor
+PSR = l_P/2 (lapse ½; R-PSR-LAW-LOG; AP-5 cap), N = GPs inside a ball of radius PSR₀/2 = 1/8 of a flat PSR ball; the
+flat-space landing band is then 4.35% of the PSR deep (4356). Consequence: above the floor the family is a band, not a
+full ball, so 4355's full-ball route to α's far-field LPI is closed; open (4356 §4–5).
+
 **Status.** Clauses under A3′/AP-4 (transport); **axiom count unchanged at 9.**
 

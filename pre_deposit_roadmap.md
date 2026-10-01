@@ -166,3 +166,5 @@ recorded, surveyed at 4335.)
   α's LPI there hangs on one founder answer (does a charge read the net flow across its own PSR?).
 - **4355 (item 5):** the registered relay answers the window and Gauss's law; α's far-field LPI now hangs on one founder answer
   (does a charge's family fill its whole PSR ball?). Otherwise k_α = −3.
+- **4356 (item 5):** R-DIBIT-COUNT-AT-FLOOR (founder): the landing band is 4.35% of the PSR; α's far-field LPI is open
+  again (k_α = −3 as registered); candidate DP-Sea screening, founder question pending.
