@@ -174,3 +174,5 @@ recorded, surveyed at 4335.)
   α's LPI fails as registered unless the Sea screens (founder question restated).
 - **4359 (item 5):** 4355–4358's α exclusion withdrawn (independent critic: same premise breaks gravity); α's LPI stands as
   gravity's — asserted by A3′'s metric coupling, source rule owed for all channels (TODO-4359-SOURCERULE). R-DPSEA-UNIFORM.
+- **4360 (item 5):** founder's mechanism (R-ALPHA-LORENTZ-RATIO) quantified: LPI at first order if k·SSV_abs,0 = 1/3;
+  second order indicative tension with clocks (~3×). Critic owed before any claim.

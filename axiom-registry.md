@@ -411,5 +411,12 @@ the 4355–4358 exclusion is withdrawn (its fixed-count premise would break grav
 coupling, as for gravity; the relay's source rule (how a source's injection scales with the local PSR) is owed once for
 all channels (TODO-4359-SOURCERULE).
 
+**R-ALPHA-LORENTZ-RATIO** (founder 4360, `founders_voice/4360_…`): nothing pushes the GPs; the CPs move by the SSV_abs and
+V_i their GPs compute. α is a ratio, kept the same in every frame by the Lorentz proportioning of the PSR and V_i that the
+GPs compute from their DI-bit arrivals; the same number of DI-bits go to the PSR shell whatever the PSR's size.
+**Quantified (4360):** invariance holds if a CP responds to V_i relative to its GP's SSV_abs and PSR³·SSV_abs is constant —
+at first order k·SSV_abs,0 = 1/3 (owed check); at second order the ratified ½ leaves a residual 4.5ε² (indicative tension
+with clocks at ~3×; critic owed).
+
 **Status.** Clauses under A3′/AP-4 (transport); **axiom count unchanged at 9.**
 
