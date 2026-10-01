@@ -168,3 +168,5 @@ recorded, surveyed at 4335.)
   (does a charge's family fill its whole PSR ball?). Otherwise k_α = −3.
 - **4356 (item 5):** R-DIBIT-COUNT-AT-FLOOR (founder): the landing band is 4.35% of the PSR; α's far-field LPI is open
   again (k_α = −3 as registered); candidate DP-Sea screening, founder question pending.
+- **4357 (item 5):** band depth referenced to zero stress (4.35%); founder's black-hole thoughts answered from 3703/AP-5;
+  N ≈ 5×10⁸⁹ (order of magnitude). α's far-field LPI question (DP-Sea screening) still pending.

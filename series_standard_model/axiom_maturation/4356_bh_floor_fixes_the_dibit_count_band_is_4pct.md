@@ -69,3 +69,9 @@ charge, that weaken its push far away, so that more dipoles per grid point means
   through R-CLOCK-RATE-IS-DISPLACEMENT with another map? A different ratio changes the 4.35% (ratio r → band depth
   1 − (1 − r³)^(1/3)); (ii) check 2–10% is cited as the founder's own statement in 4323/4325/4328 and not derived from
   an earlier toy.
+
+---
+**Correction (Patch 4357).** §2's "the 2–10% the founder gave independently" is his calculation of the DI-bits' zigzag
+path; the agreement is between two calculations, not a confirmation. 4.35% is the depth at zero stress (u = 0, ordinary
+space); the depth grows with stress (7.8% at a neutron-star surface, 100% at the R-core floor). See
+`4357_band_depth_reference_two_lapses_and_the_speck.md`. Critic item (ii) answered.
