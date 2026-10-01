@@ -288,6 +288,20 @@ git commit -m "..."
 
 This keeps Claude-authored commits visually distinct from Thomas's own commits in `git log`.
 
+### Container hygiene: leave no unpushed commits behind (Patch 4362, founder request 1 Oct 2026)
+
+The container's stop hook asks for every local commit not on `origin/main` to be re-signed and pushed. Claude does not
+push (Thomas applies and pushes every patch), so the answer is to leave nothing for the hook to see:
+
+1. **At the start of each turn:** `git fetch origin && git reset --hard origin/main`. If Thomas has not yet pushed the
+   previous patch, re-apply it from the scratchpad (`git am <file>`) before building on it.
+2. **Build, gate, commit** (Opus identity as above), `git format-patch -1`, test-apply on `origin/main` in a worktree,
+   send the file.
+3. **Then:** `git reset --hard origin/main`. The patch file holds the commit; the container holds nothing unpushed.
+   Keep scratch files outside the repo (untracked files also trip the hook).
+
+A stop-hook request that still appears is answered by this rule, silently: it is not raised with Thomas.
+
 ### When `git am` flow is NOT appropriate
 
 For trivial single-line edits Thomas wants to make himself, or for files Claude generates that don't need preserved authorship metadata, the simpler `git add` + `git commit` + `git push` flow can be used instead. Claude defaults to `git am` for any substantive deliverable (file additions, multi-line edits to existing files, anything with a meaningful commit message).

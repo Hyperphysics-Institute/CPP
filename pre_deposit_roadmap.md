@@ -178,3 +178,5 @@ recorded, surveyed at 4335.)
   second order indicative tension with clocks (~3×). Critic owed before any claim.
 - **4361 (item 5):** critic confirms 4360's second-order tension; it turns on whether relay reach and clock rate share one
   PSR (founder question). α stays a calibrated relation with LPI asserted, not derived.
+- **4362 (item 5, session close):** one PSR does both jobs (founder); α's second-order tension stands; routes and the N-count
+  reconciliation (TODO-4362-NRECONCILE) queued for the next window.
