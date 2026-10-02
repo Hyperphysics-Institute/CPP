@@ -207,3 +207,83 @@ A defensible version: "Within CPP's linear census, with the pure-count source ru
   q⁻²), and the 1PN perihelion depends only on γ and β. The second-order spatial difference does not enter Mercury, so
   the 43″ does not decide between them. The conflict lies at second order in space and third order in the lapse
   (TODO-4365-THIRDORDER).
+
+
+## Patch 4369 — Independent critic of the draft "R-PSR-SAME-PERCENTAGE" (the founder's change-of-pace statement)
+
+*Filed at Patch 4369. Sub-agent id `a3b8a4b86dcd26110`. Acted on by
+`series_standard_model/axiom_maturation/4369_pace_changes_at_n_equals_N.md` (§1–§6).*
+
+**Referee report on 4369. Draft and script read; script run (it reproduces every number); my own sympy checks are marked [mine].**
+
+**1. Reading of the founder's sentence: UNDERDETERMINED, and partly bent**
+- **Matches the registry.** "Enclosed GPs = N" is the same point as R-DIBIT-COUNT-AT-FLOOR (axiom-registry.md L401–404).
+- **The founder said the rate *changes* at n = N. The draft writes "the PSR stops shrinking there" (draft L19).** "Stops" is Claude's. It matches 3703 L6 for layer 1, but the founder's words fit equally well with AP-5 D2's deeper layers carrying on at a smaller scale (3699 L8).
+- **"Same percentage all the way to the cap" was never stated by him.** The draft flags this in a bullet (L26–28), but the boxed ruling (L17–19) states it as ruled. The flag must go inside the ruling text.
+- **Two clauses are dropped.**
+  - "Every GP enclosed … equal to the radius" is garbled. It most plausibly means every enclosed GP holds one DI-bit (the full-ball condition). That is a 4355/4356 statement and should be quoted and read, not left out.
+  - "Equalised by migration … at the end of the PCD cycle" says N is the same at every GP whatever the stress. It is consistent, but unused and uncited.
+- **Equating the cap with 3703's matter-lapse jam holds only if n_∞/N = 8.** 3703's cap is lapse ½, ratified in AP-5 D1 ("cap (lapse ½, v = ⅔)", registry L5). With n_∞/N = 4 the cap sits at q = 0.63, which is not AP-5's cap. So the draft's table contradicts its own L21–23: either the cap is lapse ½ (then the ratio is forced to 8, not "open"), or the ratio is open (then the cap is not AP-5's).
+
+**2. Cap table: VERIFIED algebra, WRONG framing**
+- **Formulas correct:** q_cap = (N/n_∞)^{1/3}, ε_cap = ⅓ ln(n_∞/N), and the photon sphere lies outside the cap iff n_∞/N > e^{1.5} = 4.48. The values for 8 and 4 check.
+- **Calling the 8 "Claude's identification" is accurate:** 4356 L66–67.
+- **The citations are wrong.** TODO-4362-NRECONCILE is about absolute N (9×10²⁸ vs 5×10⁸⁹; todolist L2498), not this ratio. The ratio is fixed once the floor is taken as lapse ½. The open question is whether the n = N point sits at AP-5's lapse ½.
+- **Missed:** at ratio 8 the cap's areal radius is 2.885 m. That moves the corpus's R-core surface off 8M/3 = 2.667 m (+8%).
+
+**3. Shadow and ringdown: VERIFIED numerics, caveat incomplete**
+- **Numbers check:** shadow 2e·m = 5.437 m (+4.63%); ω_R = 1/b_c.
+- **Lyapunov formula:** λ² = −(A/B)V″/(2V) at the extremum of V = A/C. [mine] I re-ran it on isotropic Schwarzschild: photon sphere r = m(1+√3/2), areal 3m, λ = 0.192450 = 1/(3√3). Damping −4.4% confirmed.
+- **Caveats missing:**
+  - The eikonal–QNM correspondence is proven for test fields in GR. It can fail for gravitational perturbations of a non-GR field equation (Konoplya–Stuchlík 2017). CPP's tensor-wave operator on this metric has not been derived.
+  - The spin caveat in L46–48 is honest. **But §5's "comparable to current precision" understates the risk.** The corpus's own GW250114 box is δf ±2.4%, δτ (−15, +17)% (3641_triangulation_ledger.md L28). A −4.4% frequency shift would sit about 1.8× outside the frequency box: a live failure risk, not a flag. Damping is inside. GW150914's box (+6.3/−4.8%, 3702 L9) is passed.
+  - My recollection, uncertain: LVK's GW250114 papers bound the (2,2,0) frequency at the few-percent level and the overtone at tens of percent, with spin around 0.68.
+- **Missed tests [mine]:**
+  - ISCO moves to areal 6.34 m (GR 6m); Ω_ISCO is −6.9%.
+  - The g₀₀ third-order term changes: −4/3 against −3/2 u³. That is 2PN, so inspiral phasing (the φ₄ tests) is exposed once the CPP two-body problem is done.
+- **Sgr A\*:** the EHT δ bounds of roughly ±0.09–0.10 (68%) admit +4.6%. VERIFIED.
+
+**4. Horizon paragraph: 3703 claim VERIFIED; core estimate WRONG**
+- **3703 L1 and L6 say it:** "sea lapse N_s = N(v_encl) → 0 at v = 2" under the Padé register.
+- **"Never reaches 0" holds only for isotropic r > 0.** [mine] The exponential metric has a throat at isotropic r = m (smallest areal radius e·m = 2.72m). The proper distance and tortoise time to r → 0 diverge. "Black in practice" follows from that, not from the core number.
+- **The DRAIN core estimate is misapplied.**
+  - 3703's 1.8×10⁻²² m is a physical (Planck-density) size. Under the exponential metric no sphere has areal radius below 2.72m (about 2.5×10⁵ m at 62 M☉).
+  - Using it as an isotropic radius to get U ≈ 5×10²⁶ is unjustified.
+  - The core sits inside the capped region in any case, where the exterior metric does not apply.
+- **Fix:** strike the 10^(2×10²⁶) figure. Instead say the lapse vanishes only at r → 0, which lies at infinite proper distance and infinite tortoise time.
+
+**5. Registry consequences: −1/6 VERIFIED only on the flagged reading; the table misses items**
+- −1/6 is the e^{−ε} third order (4365 L54). Solar-system tests are unchanged at β = γ = 1.
+- **"Light bending … second order" is too broad.** g_ij = e^{2U} gives a U² coefficient of 2 against Schwarzschild's 3/2. Second-order deflection becomes 4π against 15π/4 m²/b² (+6.7%) [mine]. This is unmeasurable, and it comes from 4362, not 4369.
+- **Missed by the "what changes" table:**
+  - (a) AP-5 D1's ratified "v = ⅔" (registry L5; 3699 L8, L16) becomes ε = ln 2. 3699 L27's depth = ⌈1.5v⌉ changes with it.
+  - (b) **THEO-PCD-SEA (3675 L11, L15).** Its ringdown pass "by construction" uses GR's interior with a horizon at v = 2. That is the single biggest consequence, and it is absent.
+  - (c) 3634's threshold (N_c = ½ on the Padé lapse; C = 5/18; M_thr = 1.78 M☉) and the NS branch work in 3704/3708.
+  - (d) 3702's shell bound and 3703's transit numbers (2 × 8M/3, 1.6 ms).
+  - (e) GR-1j's artanh field equation (GR-1j .tex L301–317).
+  - (f) 3641 ledger rows 5–7 and PRED-O-39/40 in predictions.md.
+  - (g) theory-overview L37 and L195.
+
+**6. Other problems**
+- **§6 (L74–78) is false as it stands.** The critic file has no 4369 entry, yet the draft claims the return is appended and its corrections are in the text.
+- **The PD-008 wording undersells the case.** The convenient branch is not only "selects my curve". The draft also turns "the rate changes at n = N" into "constant above, stops at". Those are two of Claude's steps, not one.
+
+**Verdict: do not register R-PSR-SAME-PERCENTAGE as drafted.** Register the founder's statement narrowly now, as **R-PSR-PACE-AT-N** (founder 4369):
+
+> "The PSR's natural change in rate of shrinking occurs where the GPs enclosed by the PSR equal N, the per-GP DI-bit count, equalised by end-of-PCD-cycle migration; this is the R-DIBIT-COUNT-AT-FLOOR point. Claude's reading, CONDITIONAL and put to the founder: no change of pace above it ⇒ PSR = PSR_∞e^{−ε}, R-PSR-LAW-LOG γ₃ = −1/6. Reconciliation owed: AP-5's cap value (v = ⅔ → ln 2, or n_∞/N ≠ 8), THEO-PCD-SEA's horizon, and the ringdown against GW250114's ±2.4%."
+
+Keep γ₃ formally open until the GR lane has checked THEO-PCD-SEA and the AP-5 cap on the exponential exterior. Also ask the founder one physical question: at that radius, does the shrinking stop, or continue at a slower pace? Every new deferral above belongs in todolist.md under D-9.
+
+**Derivations that are mine:** the isotropic Schwarzschild Lyapunov check, the ISCO, the throat, the g₀₀ and g_ij series, and the second-order deflection.
+
+**Plain Language summary:** The algebra and the code are right. The draft reads more into the founder's sentence than he said: he said the shrinking changes pace at the black-hole point, not that it is constant until then and then stops. The draft also skips that the corpus's ratified AP-5 cap and the theory's current explanation of black-hole ringing both assume a true horizon. And its predicted ringdown shift may already sit outside the precision of the best measured event. Record what the founder said now, and hold the "same percentage" reading and its third-order consequence as conditional until those checks are done.
+
+---
+
+## Claude's response to the 4369 return (not part of the verbatim report)
+
+- Verdict adopted: the founder's statement is registered narrowly as R-PSR-PACE-AT-N; both readings ("steady
+  above", "stops at") are held conditional and put to him; γ₃ stays open.
+- The GW250114 box was checked at its source (conv042 L33: f₂₂₀ = 247 ± 6 Hz; also used in 3668).
+- The DRAIN-core figure is withdrawn and replaced by the throat statement; the missed items (a)–(g) are carried in
+  TODO-4365-THIRDORDER (b).

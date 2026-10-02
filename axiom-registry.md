@@ -404,6 +404,15 @@ PSR = l_P/2 (lapse ½; R-PSR-LAW-LOG; AP-5 cap), N = GPs inside a ball of radius
 flat-space landing band is then 4.35% of the PSR deep (4356). Consequence: above the floor the family is a band, not a
 full ball, so 4355's full-ball route to α's far-field LPI is closed; open (4356 §4–5).
 
+**R-PSR-PACE-AT-N** (founder 4369, `founders_voice/4369_…`): the PSR's natural change in its rate of shrinking occurs
+where the GPs enclosed by the PSR sphere equal N, the per-GP DI-bit count (reset each Moment, equalised by DI-bit
+migration at the end of the PCD cycle). This is the R-DIBIT-COUNT-AT-FLOOR point. With 4368 (the count follows the PSR's
+volume at the absolute GP density), the PSR law's shape between ordinary gravity and that point is the open item.
+**Claude's reading, conditional and put to the founder (4369 §2, §5):** no change of pace above it, i.e.
+PSR = PSR_∞·e^{−ε}, which would fix R-PSR-LAW-LOG's third order at −1/6. **Not adopted:** it would remove the v = 2
+horizon THEO-PCD-SEA uses and move AP-5's cap to ε = ln 2. Its eikonal non-spinning ringdown estimate (−4.4%) sits
+1.8 box-widths outside GW250114's ±2.4% (`series_standard_model/axiom_maturation/4369_…`; TODO-4365-THIRDORDER).
+
 **R-DPSEA-UNIFORM** (founder 4359, `founders_voice/4359_…`): the DP-Sea concentration is the same everywhere; gravity does
 not pull DPs to mass. DPs orient toward an unpaired CP (opposite charge inward, like charge outward); mass carries a
 polarised cloud whose radius is set by the CP's polarising pull against thermal agitation. **4359 status of α's LPI:**
