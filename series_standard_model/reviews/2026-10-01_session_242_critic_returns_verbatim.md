@@ -123,3 +123,87 @@ The draft also overstates its case in three places:
 - **Preferred frame:** accepted → TODO-4364-PREFFRAME.
 - **"Per CP" vs census excess (GR-1j L419–425):** accepted as wording. The fragment speaks of "a source's injection";
   the carrier is GR-1j's census excess.
+
+
+## Patch 4365 — Independent critic of the draft "PSR from the GP count of the Planck sphere"
+
+*Filed at Patch 4365. Sub-agent id `aa7efb0410b4fd721`. Acted on by
+`series_standard_model/axiom_maturation/4365_planck_sphere_gp_count_sets_the_psr.md` (§4–§6).*
+
+# Referee report: Patch 4365 draft (PSR from the GP count of the Planck sphere)
+
+The headline is overclaimed. The algebra is correct, but "unique", "consequence" and "differs from GR only at third order" do not survive. I ran the script and checked it independently in sympy. Every derivation marked "mine" below is my own.
+
+**1. Reduction to |d ln q/dΔ|/k: VERIFIED, with conditions.**
+- The proper acceleration of a static observer is c²∇_proper ln(lapse). 4364 §2 (L37–45) already takes care of the q_s^(p−3) census scaling. What is left is the lapse sensitivity at the background, so the reduction holds.
+- It holds only for the gather kernel. Under scatter, D·u with D ∝ R² is the harmonic quantity, not u (4364 §5, TODO-4364-KERNEL). Then Δ is not flat-harmonic, and the form of d ln n/dΔ that invariance demands changes.
+- For α, the same factor applies only if the charge reading is metric-coupled through the lapse. 4364 §2 and §8 call that "inferred, not shown." 4365 inherits the gap; it does not close it.
+
+**2. (A) and (B): VERIFIED, but the "ratified polynomial" row is WRONG as stated.**
+- (A): (1+3ε)^(−1/3) = 1 − ε + 2ε², so β = 5/2, and the background factor is 1 − 3ε0 + 9ε0². Both check.
+- (B): e^(−ε), background factor exactly 1. Checks.
+- The ratified law is 1 − ε + ε²/2 + O(ε³) (founder ruling, L3). With a third-order term γε³ I get a background factor of 1 − (3γ + ½)ε0² (mine).
+  - The script's 1 − ε0²/2 silently sets γ = 0, which nothing ratified.
+  - γ = −1/6 gives zero. The Padé form (γ = −¼) gives +ε0²/4.
+  - So 4364's residual came from truncating the polynomial, not from the ratified law. 4364 §2 should be corrected along with 4365.
+
+**3. Uniqueness and "Mercury as a consequence": overclaimed, partly circular.**
+- The theorem the script proves (d ln n/dΔ constant ⇒ exponential) is valid only if the source rule is exactly S ∝ n_s.
+- But 4364's p = 3 was itself obtained by imposing invariance: "a requirement, not yet a mechanism" (4364 L22–23).
+  - A source rule S ∝ R_s³/|d ln q/dΔ|_s is equally "required" by invariance. It works with any law, Padé included (mine).
+  - So invariance fixes the product of source rule and law, not the law alone.
+- What is true: given a pure-count source rule, invariance forces q = e^(−kΔ). The ½ then follows from the first-order normalisation. That is a genuine reduction of free parameters, from two open choices to one, and should be stated that way.
+- On GR: the exact Schwarzschild lapse has third order −¼ and satisfies the strong equivalence principle with no exponential. So "local invariance requires the exponential" is false in general. It holds only inside CPP's linear-census, assembled-metric model. The draft must say "within CPP".
+- Supporting point the draft missed (mine): on 4364's assembled metric (g00 = −q², g_ij = q⁻²δ), √−g·g^ij = δ. So □f = q²∇²_flat f for any static f. GR-1j's flat-harmonic Δ plus GR-1c's covariantly harmonic log-lapse then force ln q ∝ Δ, which is (B), independently of the source rule.
+- That same point exposes a corpus conflict. GR-1c's spatial metric (1+ϱ)⁴ (GR-1c L285) is not q⁻². The two differ at O(ϱ²): +6ϱ² against +8ϱ².
+
+**4. Background stress scales out: VERIFIED for the lapse residual. "Dissolves" is overstated.**
+- Under (B) the expansion point is irrelevant, because e^(−ε0)·e^(−δε) is the same series in δε. Both halves of TODO-4364-EPSABS (todolist.md:2481) go for G.
+- For α they go only if item 1's metric-coupling assumption holds.
+- TODO-KERNEL, TODO-SELFGRAV and TODO-PREFFRAME are untouched.
+
+**5. Floor and the third order: script partly WRONG; corpus commitments missed.**
+- The script says the polynomial reaches ½ at ε = 1. But (1 − ε + ε²/2) − ½ = (ε − 1)²/2: the truncated polynomial only touches ½ at its minimum and never crosses it (mine). The corpus floor is v = 2/3 under the Padé form (3390 §1, L9). The line should be deleted.
+- Under (B), with g_ij = q⁻², the floor sits at isotropic r̄ = m/ln 2 and areal radius 2.885M, against 3390's held 8M/3 = 2.667M (mine).
+  - It stays outside the 2.38M stability boundary, so the held instability is probably unrelieved.
+  - All of 3383/3390's Regge–Wheeler machinery assumes a Schwarzschild exterior and would have to be redone.
+- R-DIBIT-COUNT-AT-FLOOR (n_floor = n_∞/8) and the AP-5 cap depend only on q = ½ at the floor, so there is no conflict.
+- The corpus is already committed to −¼. GR-1c's Theorem, "This is exactly the isotropic Schwarzschild metric" (L285–293), and Form A, N = −2 artanh(kΔ/2) (L640–642), are the Padé lapse to all orders. 3390's floor used it too. (B) withdraws a ratified GR-1c theorem; the draft is silent on this.
+  - The ruling leaves third order open (founder ruling L5), but the papers do not.
+  - The 3837 note (psr_early_dichotomy.md L9) already asserted "R-PSR-LAW-LOG is e^(−ε)", in conflict with GR-1c. That conflict was never reconciled.
+- Observables that could tell −1/6 from −¼ (mine, exponential metric):
+  - The photon sphere at isotropic 2m has areal radius 3.30M instead of 3M.
+  - The shadow is 2e·m ≈ 5.44M against 5.196M, about 4.6% larger. That is near EHT's Sgr A* precision.
+  - Ringdown frequencies, the ISCO, and the absence of a horizon. "Strong field only" is fair, but it is falsifiable now, not someday.
+
+**6. Missed items.**
+- **The founder's wording.** GR-1j L203–206 calls it a "rigid flat lattice; only the reach varies." On that lattice a ball of fixed radius l_P holds a constant GP count, so the literal reading gives nothing.
+  - The draft's reading (a ball of radius PSR) is forced, but then q = (n/n_∞)^(1/3) is a definition.
+  - The proposal restates the problem; it does not specify n(Δ). All the content is in the compounding assumption, which is Claude's.
+- **"Correlate" reads more naturally as (A).** Choosing (B) because it works is the convenient branch. Under PD-008 it must be marked as such and put to the founder as a physical picture. It cannot be credited to him.
+- **"Each equal step of stress removes the same fraction of GPs"** is a fair plain-language reading of (B).
+- **No conflict with census linearity.** The nonlinearity sits in the constitutive map, not in Δ.
+- **n_∞ is harmless under (B).** It is a multiplicative constant and fits calibration at STP (founder ruling of 26 Aug, L21–37). Background dependence of the reference cancels exactly.
+- **γ_PPN = 1 is assumed for Mercury.** The ½ gives 43″ only with g_ij = q⁻², which is the metric GR-1c contradicts.
+
+**Verdict on the headline:**
+- **"The founder's counting rule"**: no. The counting rule is a definition; the compounding form is the draft's own reading.
+- **"Unique form local invariance allows"**: only given the pure-count source rule, the gather kernel and the assembled metric. Without those, invariance fixes the product of source rule and law, not the law.
+- **"Mercury's ½ as a consequence"**: conditionally true. It reduces two free choices to one; it is not a parameter-free prediction.
+- **"Removes the background residual exactly"**: true for G, but the residual was partly a truncation artifact in the first place. For α it is conditional on the metric-coupled charge reading.
+- **"Differs from GR only at third order"**: true for the lapse. It also overturns GR-1c's exact-Schwarzschild theorem and moves 3390's held surface. It is testable now (shadow, ringdown).
+
+A defensible version: "Within CPP's linear census, with the pure-count source rule and the assembled metric, local invariance forces q = e^(−kΔ). This fixes the second order at Mercury's ½ and removes the background residual. It contradicts GR-1c's exact-Schwarzschild claim at third order, and the founder must confirm the compounding reading."
+
+**Plain Language:** The algebra in the draft is right, but the story it tells is too strong. The founder's idea of counting grid points inside the Planck sphere is a useful way to restate the question, but on its own it doesn't say how the count depends on stress. The "same fraction per step" rule that makes everything work came from the draft, not from him, and it is unique only once you have already fixed how sources inject. Adopting it also breaks an existing GR paper's claim to reproduce Schwarzschild exactly. It predicts a black-hole shadow about 5% larger than GR's, which current telescopes can nearly check.
+
+---
+
+## Claude's response to the 4365 return (not part of the verbatim report)
+
+- All verdicts adopted (fragment 4365 §6). The shadow figure was recomputed independently: 5.437 m against 5.196 m,
+  +4.63% (`code/4365_*`).
+- On "γ_PPN = 1 is assumed for Mercury": both metrics have γ = 1 at first order (GR-1c's (1+ϱ)⁴ ≈ 1 + 2U, as does
+  q⁻²), and the 1PN perihelion depends only on γ and β. The second-order spatial difference does not enter Mercury, so
+  the 43″ does not decide between them. The conflict lies at second order in space and third order in the lapse
+  (TODO-4365-THIRDORDER).
