@@ -8,6 +8,8 @@ shadow 3√3 m).
 
 ## 1. The clock as a round trip (corpus anchor)
 
+> **Erratum (Patch 4381):** the ± leg asymmetry below is Claude's construction, not the founder's picture (4377: slowing "by collision", on both legs); a static field cannot make outward and inward speeds differ without a flow. "The founder's … made quantitative" is withdrawn. The fixed path also conflicts with the thermal-boundary rule (c04). See `4381_hold_clock_ruling_gr_exterior_is_calibration.md` §2.
+
 The corpus already models the electron's ZBW clock as a **radial round trip**: a wave runs outward from the unpaired
 eCP through its polarisation cloud, reflects at the cloud's edge and returns, and the round-trip time sets the frequency
 (`series_relativity/SR_companion_papers/c04_ZBW_hbar_mass_units/development/development_notes.md` L1475–1490).

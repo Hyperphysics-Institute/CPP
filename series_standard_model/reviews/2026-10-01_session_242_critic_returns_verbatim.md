@@ -346,3 +346,80 @@ Keep γ₃ formally open until the GR lane has checked THEO-PCD-SEA and the AP-5
 - Verdict adopted in full; the "−14%" is withdrawn as a result. The script now computes all three profiles against
   exact Kerr and reproduces the critic's numbers. It adds one: profile C's light ring is also inside the cap at χ = 0.68.
 - The blocker (a rotating CPP exterior from the A3′ vector channel) is filed in todolist.md under TODO-4365-THIRDORDER (b).
+
+
+## Patch 4381 — Independent critic of 4372–4380 as one argument (before registering R-CLOCK-ROUND-TRIP)
+
+*Filed at Patch 4381. Sub-agent id `a8532ba4c8630ec67`. Acted on by
+`series_standard_model/axiom_maturation/4381_hold_clock_ruling_gr_exterior_is_calibration.md` (all sections; verdict
+HOLD adopted).*
+
+**Referee report on 4372–4380 as one argument (read-only; all five scripts run, numbers reproduced; spot checks are my own code)**
+
+I recomputed the κ table independently. The photon sphere, frequency and damping come out the same as the scripts at κ = 0, 0.5, 0.7, 1 and 1.21. The window 0.70–1.21 is correct (the upper edge gives +2.43%). r²√A N′ = m holds to 1e‑9. The weak-field series match the scripts. The algebra is clean. The problems are in the premises and in how the result is labelled.
+
+**(A) "Lapse harmonic in the effective geometry": UNDERDETERMINED, and partly circular.**
+- GR‑1c's fixed point (L622–627, eq. fixed_point) is abstract: M = G[M].
+- The Proposition (L636–645) asserts that it "is exactly" harmonicity of ln N. But the proof sketch (L702–716) derives it from the flat census plus the paper's own Schwarzschild dictionary. The identity holds "for the pointwise isotropic dictionary of this paper" (L665–675), with f = artanh.
+- So in the corpus, effective-geometry harmonicity and flat-harmonic ϱ are equivalent only at λ = 1. For any other X they are two independent conditions, and the second has no CPP derivation.
+- My check: for a static metric, □ln N = 0 ⇔ ∂ᵢ(√A ∂ᵢN) = 0, which is exactly GR's vacuum R₀₀ = 0. The 4372 script says so itself.
+- My derivation: X = 1 − ϱ² with ϱ flat-harmonic is equivalent to ψ = A^{1/4} = 1 + ϱ being harmonic. That is GR's Hamiltonian constraint.
+- So the λ = 1 exterior is "R₀₀ = 0 imported, plus the remaining Einstein equation chosen". GR‑1j's flat census alone does not imply it.
+
+**(B) Round-trip algebra: VERIFIED. The physical anchor: partly WRONG.**
+- T = 2L/(1 − κ²ϱ²) is correct. N = ((1 − κϱ)/(1 + κϱ))^{1/κ} is correct.
+- The round trip is in the c04 paper itself (c04 .tex L140–147), not only the dev notes. Cite the paper.
+- Fixed path: c04 and founder 4359 put the reflection at the "thermal boundary", where polarisation balances thermal forces. The 4377 mechanism strengthens the CP's polarisation. That moves the boundary at O(δP) ∝ ϱ, which is first order and so faces the Cassini bound. Holding L fixed contradicts the founder's own boundary rule (my derivation).
+- Also: L fixed in ruler units makes X a *local* ratio, ZBW clock to light clock. See (D).
+
+**(C) Mapping to the founder's words: WRONG as stated.**
+- Founder 4377 says propagation "slow[s] … by collision". That is a slowing on both legs, with no help on one leg and hindrance on the other. The ± structure is Claude's construction. 4379 §1 says it is "the founder's … made quantitative".
+- A static orientation field is time-reversal even. Reciprocity then forbids different outward and inward speeds. That would need a flow (the river-model analogue), and nothing in the corpus supplies one (my point).
+- Direction: the asymmetry is radial about the clock's own CP, so a uniform background needs no preferred direction. That much survives.
+- But a uniform background ϱ₀ does change the clock, by 1 − κ²ϱ₀² relative to a light clock. Self-consistency cannot remove this.
+- The 4380 requirement β₀ = 0 is in tension with 4359 ("DPs orient toward an unpaired CP"). The standing orientation is the natural source of any leg asymmetry, yet it must give zero asymmetry while the increment gives κ ≈ 1. That is asserted, not explained. Calling β₀ = 0 "derived" is overstated: it is a requirement.
+
+**(D) Weak field: metric tests VERIFIED; LPI UNDERDETERMINED, possibly live.**
+- N = 1 − ε + ε²/2 − (1/6 + κ²/12)ε³, so β = 1. The ruler is 1 − ε + (½ + κ²/4)ε², so γ = 1. Shapiro is unchanged.
+- The multi-body case works: the ODE is pointwise in ϱ, so EIH at 1PN is unaffected. 4364's p = 3 (L14–22) stands at first order.
+- Missed, issue 1 (critical): universality. GR‑1i L557–559 has light advancing one PSR per Moment, with no ZBW. If X slows only the polarised-cloud ZBW clock, photons and GWs do not see it. Then the photon sphere, shadow and ringdown stay at the κ = 0 values, and the calibration target is untouched. The scripts assume one universal metric without justification. If X is not universal, it is a clock-type (EEP) violation at O(ϱ²): m_e varies relative to other masses by −κ²ϱ². That is safe in the solar system but about 1% at neutron-star surfaces.
+- Missed, issue 2: under e^{−ε}, a background ϱ₀ scales out exactly (4365; todolist L2485). With κ = 1 the residual (κ²/4)ε₀² returns. By TODO‑4364‑EPSABS's own scaling (an ε₀·dε swing is 27× the clock bound at U_gal), α's annual swing would be about 13× the bound at U_gal *if* α carries the residual (my estimate). 4372 §3 dismisses this in one clause. It must be resolved before registering.
+
+**(E) Window: VERIFIED. "Calibration like Mercury's ½": WRONG framing.**
+- Mercury's ½ was fitted to a measurement precise to about 10⁻⁴. κ = 1 is fitted to a theory, GR. The data, eikonal, non-spinning and indicative only, bound κ only to about ±25%.
+- 4372 §6 marked "κ = 1 because GR‑1c assumes it" as the convenient branch. 4380 §4 then adopts it for exactly that reason, before the decisive spinning-ringdown computation that 4372 idea 2 required.
+- The normalisation scatter is fair, but it shows the "mechanism" adds no constraint.
+- Net result, to be stated plainly: **CPP reproduces GR's static exterior by importing R₀₀ = 0 and calibrating the remaining equation. CPP's distinctive strong-field prediction (shadow +4.6%, ringdown −4.4%, no horizon) is suspended, not refuted.**
+
+**(F) Consequences: what is listed is VERIFIED; what is missing is below.**
+- Verified: the ruler 1/(1 + ϱ)² = 1 − ε + ¾ε²; n ∝ (1 + ϱ)⁻⁶; the cap at ϱ = 1/3 and the ruler ½ at ϱ = √2 − 1 (sympy).
+- Missed:
+  - (i) R‑PSR‑LAW‑LOG ratified ½ for **PSR_eff/l_P** (ruling file, line 3). Restating it as the clock law, with the PSR at ¾, changes the subject of a founder ruling. Founder 4373 explicitly said the effect has "no effect on the PSR". 4373 §2 item 5 shows that picture fails Mercury: with the PSR fixed, β = 1 − λ/4 and λ < 4×10⁻⁴. This is an axiom-level change, so it goes to the founder (PD‑008).
+  - (ii) R‑DIBIT‑COUNT‑AT‑FLOOR's N (1/8 of a flat ball) and the 4.35% band assume floor = ruler ½. If the AP‑5 cap (clock ½) is the floor, the ruler there is 0.5625 and f₀ ≈ 0.178. That moves R‑PSR‑PACE‑AT‑N and the inputs to 4380's normalisation table.
+  - (iii) Clock ½ at ϱ = 1/3 sits at areal 8m/3, which is 3390's surface. The R‑PSR‑LAW‑LOG note records that surface as HELD for instability. 4380 cites 3390 as support. Check whether AP‑5 superseded that.
+  - (iv) "Wormhole retired": isotropic Schwarzschild has its own Einstein–Rosen throat at ϱ = 1 (areal 2m). It is retired only because it sits behind the horizon and the cap.
+
+**Verdict: HOLD R‑CLOCK‑ROUND‑TRIP.**
+- It would register a non-reciprocal, non-universal mechanism the founder did not describe, for a value chosen to equal GR.
+- It amends founder rulings 4362 and R‑PSR‑LAW‑LOG.
+
+What I would accept now is a working convention, not a ruling:
+
+> **WC‑GR‑EXTERIOR (working convention, Session 242):** Strong-field work uses N = (1−ϱ)/(1+ϱ), A = (1+ϱ)⁴, ϱ = kΔ/2 (isotropic Schwarzschild). It follows from GR's static R₀₀ = 0 (GR‑1c Prop., derived only for this dictionary) plus the ruler law A^{1/4} = 1 + ϱ (X = 1 − ϱ²). **This reproduces GR by calibration; CPP derives neither condition.** GW250114 (eikonal, non-spinning, indicative) allows X = 1 − κ²ϱ², 0.70 ≤ κ ≤ 1.21. The round-trip picture (4379) is a heuristic for the functional form: its leg asymmetry, fixed path, symmetric baseline and universality to light and GWs are unestablished. The κ = 0 prediction is suspended pending the spinning ringdown with CPP's wave operator. Rulings 4362 and R‑PSR‑LAW‑LOG are not amended by this entry.
+
+Put to the founder, framed physically: "If clocks slow extra deep in a well, Mercury forces the Planck sphere itself to shrink faster than your ratified curve (¾ instead of ½ at second order). A clock-only slowing with the PSR unchanged misses Mercury by about 1000×. Do you accept that the PSR curve changes?"
+
+**Plain language:** the maths is right, but the session ends with CPP copying Einstein by choosing a dial setting, not deriving it. The "mechanism" has holes. It may not affect light at all. Its helped-leg/hindered-leg picture needs a flow that nothing supplies. Adopting the dial setting also quietly changes two of Thomas's rulings. So: hold the registration, record the GR exterior as a labelled convention, and ask Thomas the Mercury question.
+
+Key files: /root/CPP/series_gravitation/GR_companion_papers/GR-1c_strong_field_GR/GR-1c_strong_field_GR.tex (L622–716); /root/CPP/series_relativity/SR_companion_papers/c04_ZBW_hbar_mass_units/c04_ZBW_hbar_mass_units.tex (L140–147); /root/CPP/founders_voice/founder_ruling_psr_law_beta_half_2026-09-02.md (L3); /root/CPP/todolist.md (L2482–2502).
+
+---
+
+## Claude's response to the 4381 return (not part of the verbatim report)
+
+- Verdict HOLD adopted; WC-GR-EXTERIOR recorded as a labelled working convention (fragment 4381 §5), not a ruling.
+- Re-checked here: GR-1i L555–557 (light advances one Planck sphere per Moment), c04 .tex L140–147 (radial standing wave
+  reflecting at the thermal boundary), and the R-PSR-LAW-LOG ruling file L3 (the ½ is for PSR_eff/l_P). All as the
+  critic stated.
+- Errata annotated in 4379 §1 and 4380 §2/§4. Questions to the founder: the Mercury/PSR-curve question and the
+  universality question (fragment 4381 §6).

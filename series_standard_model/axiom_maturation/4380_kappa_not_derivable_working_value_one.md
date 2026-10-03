@@ -13,6 +13,8 @@ With the round-trip clock (4379) and GR-1c's self-consistency, GW250114's ±2.4%
 
 ## 2. Can the corpus fix κ? Not yet
 
+> **Erratum (Patch 4381):** "β₀ = 0 is derived" is overstated: it is a requirement, in tension with founder 4359 (DPs already orient toward an unpaired CP). See 4381 §2.4.
+
 The natural move is to set the extra leg asymmetry equal to "the extra part of the sphere informed directly". That needs
 a normalisation, and the natural-looking ones disagree:
 
@@ -45,6 +47,8 @@ form.
   nor ruler beyond first order at κ = 1; it was the one-PSR (κ = 0) reading.
 
 ## 4. Recommendation (PD-006; founder deferred the magnitude): working value κ = 1
+
+> **Superseded (Patch 4381):** the fresh critic returned HOLD, which is adopted. κ = 1 is a calibration **to GR**, not "like Mercury's ½" (which was fitted to data good to about 10⁻⁴). It rests on GR's imported R₀₀ = 0 and would amend R-PSR-LAW-LOG. Recorded only as working convention WC-GR-EXTERIOR; R-CLOCK-ROUND-TRIP is not registered. See 4381.
 
 **Reasons:**
 - κ = 1 is inside the window.
