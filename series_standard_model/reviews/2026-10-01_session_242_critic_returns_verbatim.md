@@ -287,3 +287,62 @@ Keep γ₃ formally open until the GR lane has checked THEO-PCD-SEA and the AP-5
 - The GW250114 box was checked at its source (conv042 L33: f₂₂₀ = 247 ± 6 Hz; also used in 3668).
 - The DRAIN-core figure is withdrawn and replaced by the throat statement; the missed items (a)–(g) are carried in
   TODO-4365-THIRDORDER (b).
+
+
+## Patch 4376 — Independent critic of the draft spin first look (Lense–Thirring on both exteriors)
+
+*Filed at Patch 4376. Sub-agent id `ae32d152ff824ca61`. Acted on by
+`series_standard_model/axiom_maturation/4376_spin_not_yet_scoreable_near_zone_dragging.md` (all sections).*
+
+**Referee report on draft Patch 4376 (script 4376_spin_first_look_lense_thirring.py).** I ran the script, and it reproduces the claimed table. My own checks are in scratchpad files ref.py, ref2.py and ref3.py. I edited no project files.
+
+**(1) Null circular-orbit conditions and their solution: VERIFIED (my derivation).**
+- Setting f = −N² + R²(Ω−w)² = 0 and df/dr = 0, then dividing by 2N, gives −N′ + R′N/R − R w′ = 0 on the prograde branch Ω = w + N/R.
+- The condition is homogeneous in d/dr, so working in isotropic r is fine.
+- The metrics are coded correctly: isotropic Schwarzschild with ρ = m/2r, and N = e^{−1/r}, R = r e^{1/r} for the exponential.
+- At χ = 0 the script gives the exact static values 2/(3√3) and 1/e, a shift of −4.42%.
+- One minor point: the derivatives are taken by finite differences, but they converge.
+
+**(2) Is first order in J adequate at χ = 0.68? UNDERDETERMINED, leaning inadequate for the number (my computation).**
+- I compared Schwarzschild+LT against exact Kerr, using r_ph = 2[1+cos(⅔ arccos(−χ))] and Ω = 1/(r^{3/2}+χ).
+- The prograde frequency 2Ω differs from exact Kerr by +0.05% at χ = 0.2, −0.08% at 0.4 and −2.73% at 0.68.
+- The areal light ring is also off: 2.34 from LT versus Kerr's Boyer–Lindquist r_ph of 2.05.
+- So at χ = 0.68 the GR baseline itself is off by about the full width of the ±2.4% box.
+- Measured against exact Kerr, the exponential+LT shift becomes −16.7% at χ = 0.68 (the script says −14.4%). The sign of the trend holds, but the number does not.
+- The 2.7% truncation error applies only to the GR baseline. The exponential's own higher-order terms are unknown.
+
+**(3) "Same J" and whether the eikonal real part tracks the l=m=2 fundamental: VERIFIED with caveats.**
+- Matching J at large r is the physically correct choice: J is the asymptotic charge, and the same quantity the inspiral fixes.
+- Eikonal versus the actual Kerr f220 (Berti fit): the ratio 2Ω/(Mω₂₂₀) is 1.045, 1.042, 1.043 and 1.050 at χ = 0, 0.2, 0.4 and 0.68. The ratio is close to constant, so for Kerr-like rotation, ratios of eikonal values carry over to l = 2 at roughly the 0.5% level.
+- For the exponential, the static l = 2 correction is about 0.4% (WKB −4.06% versus eikonal −4.42%). Its spinning l = 2 correction has not been computed.
+
+**(4) Could the trend reverse under a consistent rotating exterior? YES, IT CAN, so this item is open (my computation, decisive).**
+- Matching the LT tail at large r fixes w only at O(1/r³). The near-zone profile at O(J) is not determined, and the exterior has no rotating field equation to fix it. I tested three profiles, each with the same far-field J, against exact Kerr:
+  - **Profile A, w = 2J/R³ (the script's choice):** −6.3%, −9.2%, −16.7% at χ = 0.2, 0.4, 0.68.
+  - **Profile C, w from GR's tφ operator on the exponential background (dw/dr = −6J·N·B/R⁴; reduces to 2J/R³ for Schwarzschild, checked):** −5.6%, −7.5%, −12.9%.
+  - **Profile B, w = 2J/(r_iso R²), i.e. g_tφ = −2J/r_iso, which is the isotropic-coordinate weak-field form CPP actually derives (GR-1b is isotropic):** −0.9%, +6.4%, +16.7%. The trend reverses.
+- Under profile B the prograde light ring falls inside the cap (isotropic 1.443 m) by χ = 0.4 (r_iso = 1.13), and inside the throat by χ = 0.68 (r_iso = 0.88). The ringdown would then be set by the cap or interior, not by a light ring.
+- Second-order terms (quadrupole, oblateness) are about 3% even in Kerr at χ = 0.68, and are unknown for CPP.
+- So the near-zone frame dragging is the controlling unknown. "Spin does not rescue λ = 0" follows from the profile choice, not from CPP.
+
+**(5) How LIGO's GR-based χ_f and M_f inference affects the comparison: UNDERDETERMINED.**
+- The ±2.4% box is δf₂₂₀ at the GR inspiral-merger-ringdown values M_f = 62.7 and χ_f = 0.68. Those values come from GR numerical-relativity remnant fits, which depend on strong-field plunge dynamics.
+- The exponential's ISCO (areal 6.34 m versus 6) and light ring differ from Schwarzschild's, so CPP's radiated energy and final J would differ.
+- Mω₂₂₀ in Kerr moves about 0.77 per unit χ, so an inference shift of Δχ ≈ 0.03 moves the frequency about 2.4%.
+- Under profile A no physical spin compensates: matching Kerr(0.68) needs χ ≈ 1.23.
+- Under profile B, small spin shifts compensate easily.
+- A fair test needs CPP's own remnant mapping, or a comparison against ringdown-only (M, χ, f, γ) posteriors.
+
+**Derivations that are mine:** the condition check in (1); the exact-Kerr light-ring and Berti-fit comparisons in (2) and (3); the three frame-drag profiles, including the GR-operator profile C and its Schwarzschild check, in (4); the sensitivity and spin-compensation estimates in (5).
+
+**Verdict.** The static result (−4.06% at l = 2 against a ±2.4% box) is the only solid statement, and it is strong tension at χ = 0 only. The spin extension is **indicative only**, and the draft's conclusion should be weakened. The algebra is right, but the claimed trend comes from choosing w = 2J/R³ in the near zone. An equally weak-field-correct profile, the isotropic g_tφ = −2J/r that CPP actually derives, reverses it and pushes the light ring inside the cap. The GR baseline is also off by 2.7% at χ = 0.68. What can honestly be said: "with areal-radius LT dragging (or GR's operator) the shift grows with spin; the sign is not robust to the unknown near-zone frame dragging; a rotating CPP exterior (derived g_tφ to all orders in m/r, then O(J²)) is required before any spin statement, and no exclusion or tension at χ = 0.68 can be claimed." The −14.4% figure should not appear as a result. TODO-4365-THIRDORDER (b), the spin item, stays owed, with the frame-drag profile named as the blocker; under bootup D-9 this needs to go into todolist.md.
+
+**Plain Language summary.** The script's orbit maths is correct. But its main conclusion, that spin makes CPP's ringdown mismatch worse, depends on one particular guess about how the spinning object drags space close in. Another guess that is just as valid, and is in fact the form CPP's own weak-field work uses, gives the opposite trend. At the measured spin of 0.68 the first-order approximation is also off by about 3% even for an ordinary black hole. The finding should be reported as indicative only, and the real spinning calculation is still owed.
+
+---
+
+## Claude's response to the 4376 return (not part of the verbatim report)
+
+- Verdict adopted in full; the "−14%" is withdrawn as a result. The script now computes all three profiles against
+  exact Kerr and reproduces the critic's numbers. It adds one: profile C's light ring is also inside the cap at χ = 0.68.
+- The blocker (a rotating CPP exterior from the A3′ vector channel) is filed in todolist.md under TODO-4365-THIRDORDER (b).
