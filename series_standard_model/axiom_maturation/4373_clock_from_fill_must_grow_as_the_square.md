@@ -18,6 +18,11 @@ candidate for 4372's dial, the extra clock factor X = clock/ruler.
 
 ## 2. The shape Einstein's black hole requires (script)
 
+> **Erratum (Patch 4377):** the "grows as the square of the fill increase" form below holds only near ordinary space.
+> Exactly, Einstein's extra clock factor is X = 1 − ϱ² with ϱ = kΔ/2, the square of half the stress excess. At the
+> photon sphere the small-fill form gives 0.72 against the exact 0.93. See
+> `series_standard_model/axiom_maturation/4377_slower_clocks_by_two_sided_polarisation.md` §2.
+
 Measure fill relative to ordinary space, g = f/f₀ = q_r⁻³ (f₀ = ⅛, R-DIBIT-COUNT-AT-FLOOR). Einstein's geometry
 (4372, λ = 1) then reads as a clock-from-fill law:
 
