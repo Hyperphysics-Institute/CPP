@@ -423,3 +423,76 @@ Key files: /root/CPP/series_gravitation/GR_companion_papers/GR-1c_strong_field_G
   critic stated.
 - Errata annotated in 4379 §1 and 4380 §2/§4. Questions to the founder: the Mercury/PSR-curve question and the
   universality question (fragment 4381 §6).
+
+## Patch 4382 — Independent critic of the first draft of 4382 (founder's half-fast/half-slow photon picture)
+
+Fresh-context sub-agent (a05652318edeeb943), 3 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: HOLD.** The algebra checks out. But the case the fragment depends on (case A) may be ruled out by CPP's own motion rule, and §2 states three of its claims as results when they are only conditional.
+
+**Maths check (script run).** Case A gives ½(1/(1−δ)+1/(1+δ)) = 1/(1−δ²), so speed = 1−δ² exactly, which is 4379's form. B and C give no net effect, correctly. D gives time 1+⅜x², so "speed 1−⅜x²" holds only to leading order. Part 3's coefficients are right: bδ, and sδ+δ²(1+s²). The Monte Carlo agrees with the formula to within about 2×10⁻⁴. That is statistical noise, and all the MC does is re-check the closed-form result. The table is correct.
+
+**Required changes**
+
+1. **Discreteness obstruction (most serious).** GR-1i L554–556 has light advancing one PSR per Moment. That is already the local maximum, and a Moment is the smallest time step. So a "fast" landing that covers the next PSR in less than a Moment is not allowed. Lines 44–46 present this as a requirement for the founder to supply, without saying it conflicts with the axiom. If light can only be held back, never sped up, there is no ± pair. The slowing is then one-sided and first order, which is the Cassini failure. Add this to §4 as a condition and to §6 as an explicit question. A possible escape: a "fast" landing means fewer holds than some held baseline in the well. But nothing on file says light is held at baseline. At first order its coordinate slowing comes from PSR shrinkage, not from holds (GR-1i L551–556).
+
+2. **The averaging assumption, stated plainly.** Case A vs C is a harmonic mean (equal distance per landing) vs an arithmetic mean (equal time per landing). Say so at L28–30 and L42. In A, "loss exceeds gain" (c > 0) follows automatically from symmetric ±δ speed changes. So §6's hiker question can get a casual "yes" that decides nothing. The real physical question is whether the shell scales the CP's rate of crossing (A) or adds a fixed wait (B).
+
+3. **§2.1 (L15–17), time reversal.** Say only that the objection is moot because no direction asymmetry is used. Do not say charge sign "evades" it. Also, a site that attracts the photon's + CP repels its − CP. Each landing is mixed for the DP as a whole, so the §4 "bound pairs" rule (average, not min) is central, not a footnote.
+
+4. **§2.2 (L18–22) and the title, universality.** Title and heading should say "could reach light, under conditions", not "It reaches light". Universality needs three things:
+   - δ is the same for a CP moving at 1 PSR/Moment (photon) and for ZBW cloud CPs at other speeds;
+   - the matter clock's tick really is per-landing transit, which 4379's clock was not;
+   - the same response curvature c applies to both.
+
+   None is shown. Note too that the first-order slowing is already shared by light and clocks through the PSR (GR-1i L551–556). X is only a second-order addition.
+
+5. **Polarisation hazard, missing from §4.** Founder 4359 (cited in 4381 §2.4) says DPs orient toward unpaired CPs, so the sea near a mass is radially polarised. That makes s ≠ 0, so "expected by symmetry near a neutral mass" (L55) is not established.
+   - For the photon, its neutral DP may cancel this at first order: b₊ = −b₋, if the response is averaged.
+   - A single-charge clock (an electron, or the unpaired CP in a ZBW clock) has no such cancellation. That gives a first-order, charge-sign-dependent clock shift (electron vs positron). This is an equivalence-principle and CPT hazard, far beyond second order.
+
+   Add this and make it a founder question.
+
+6. **§2.3 (L23–24).** Rewrite as: "First order cancels if b and s are zero; a net second-order term survives only in cases A or D (c > 0)." Sign balance by itself cancels first order in every case, and gives the needed second-order term in none.
+
+7. **b ~ 1/√N (L52).** This assumes landing signs are random along the path. On a structured or frustrated 600-cell, a straight ray could see a sign bias that depends on direction. That would be anisotropy, a Lorentz-violation risk. Say "if uncorrelated", and add a check for directional bias.
+
+8. **§6 rewrite.** Ask three physical-picture questions:
+   - (a) Can a photon's CP ever cross a Planck sphere in less than one Moment, and if not, what does "pushed on" mean?
+   - (b) Does the thick shell stretch the crossing time in proportion, or add a fixed wait?
+   - (c) Near a neutral mass, do + and − origin points carry equal shells, given the sea's polarisation toward the mass?
+
+9. **§7 PD-008.** Mostly honest about κ, but incomplete:
+   - Also mark as convenient the framing that "the founder's idea fits the pattern" (title, §2 headings). That is the same overstatement 4381 §2.2 caught in 4379 §1.
+   - State the discreteness obstruction as an unresolved branch.
+
+10. **D-9.** No `todolist.md` entry for 4382 exists. The work-tree is three untracked files and nothing references 4382 in any todolist. The following must be added in the same patch, and `code/deferral_gate.py` run:
+    - the charge-dependence-of-gravity check (L56);
+    - the gravity-wave composition question (L69–70);
+    - the ZBW boundary first-order question (L73–75);
+    - the pair-response rule (L57–59);
+    - items 1, 5 and 7 above.
+
+**Minor notes**
+- Case D models speed as v ∝ √(1∓x). That is massive-particle kinematics and does not apply to a photon. Label it illustrative.
+- The founder's sign assignment (opposite charge = slower) is not what produces the result. A plain potential well would speed the CP through an attracting site. The cases where this matters (A, D) are symmetric in sign anyway, so say the result does not depend on which sign is slow.
+- In Part 3's header, cite where the 8×10⁻⁶ Cassini figure comes from (4373 or 4378).
+- §1 L9 should say "statistically half and half". L53 already says strict ± alternation is impossible.
+
+**Plain Language:** The arithmetic is right: if a photon really alternates between slowed and sped-up stretches of equal length, the slowdown outweighs the speedup and gives exactly the needed second-order effect. But in CPP light already moves at the top speed, one Planck sphere per Moment, so it is unclear how any stretch could be "sped up". If light can only be slowed, the effect becomes first order, and the Cassini measurement rules that out. The draft also claims "it reaches light" and "it works for matter clocks too" as results when they are still only possibilities. It does not cover the sea's polarisation near a mass, which could shift single-charge clocks at first order. The founder needs to be asked about the speed limit and about polarisation, not only the hill question.
+
+---
+
+## Claude's response to the 4382 return (not part of the verbatim report)
+
+- **HOLD adopted.** All ten required changes and all four minor notes taken into the fragment.
+- **Title and §2** now say the picture "could" reach light, on three stated conditions. §2.1 says the time-reversal objection is moot, not evaded, and notes that every landing is mixed for the DP. §2.3 is rewritten as the critic gave it.
+- **§3** names the harmonic-vs-arithmetic averaging and recasts the question as stretch versus wait. Case D is labelled illustrative. The note that the slow sign does not matter is added.
+- **§4.1 (the discreteness obstruction)** is the lead obstruction. Two escapes are given:
+  - (i) a held baseline (not on file; brings back β₀);
+  - (ii) a square-law hold via a rotating DP's induced dipole (script part 5). This is Claude's construction, and it also fails if ordinary space already holds light.
+- **§4.2–4.4** add: the directional-bias check, the polarisation hazard (first-order electron-vs-positron clock shift), and the bound-pair rule.
+- **§6** has the three questions. **§7** marks both convenient framings and the unresolved branch.
+- **D-9:** the todolist entry is added in this patch, and the deferral gate is run.
