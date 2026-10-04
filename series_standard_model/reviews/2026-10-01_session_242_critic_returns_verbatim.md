@@ -496,3 +496,50 @@ Fresh-context sub-agent (a05652318edeeb943), 3 Oct 2026. Return filed verbatim b
 - **§4.2–4.4** add: the directional-bias check, the polarisation hazard (first-order electron-vs-positron clock shift), and the bound-pair rule.
 - **§6** has the three questions. **§7** marks both convenient framings and the unresolved branch.
 - **D-9:** the todolist entry is added in this patch, and the deferral gate is run.
+
+## Patch 4383 — Independent critic of the first draft of 4383 (founder's two-part photon; loaded-wave homogenisation)
+
+Fresh-context sub-agent (ace5c111ac52ec93d), 3 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: HOLD.** The core numbers are mostly right. But one headline result is a numerical artefact, the homogenisation model probably puts the ± signs in the wrong place, and the "loaded wave" step is Claude's, not the founder's.
+
+**Physics check**
+- 1D results are correct: the harmonic/arithmetic means give v² = 1−δ², 1 and 1. 3D numerics match the LL §9 formula (= bond EMA at z=6) to ~1e-4.
+- The 1D and 3D columns are consistent only through 1D duality: in 1D EM, ε is the mass-like coefficient, not the bond coefficient. This should be stated.
+- Random-sign δ²/15 is an artefact. I reran the ring and averaged the two lowest eigenvalues (the cos/sin doublet). That recovers √(1−δ²) to 1e-5 for every seed, at N=400 and N=1600. The disorder splits the degenerate doublet at first order (2k Fourier component, ~δ/√N), and the script keeps only the lower mode `w2[1]`. The "extra slowing" grows linearly in δ (0.0013/0.0026/0.0039), not as δ². In 1D the long-wave limit is exactly the harmonic mean for any arrangement.
+
+**Required changes**
+1. Delete the "Arrangement matters too… δ²/15" paragraph and its script lines. Replace with: "In 1D the long-wave speed is independent of sign arrangement (harmonic mean); the 3D arrangement dependence (600-cell, 3827) is open." Fix the script to average w2[1], w2[2].
+2. **Where the ± pairing sits.** Per the founder, a DP sits in one shell and its + and − CPs respond oppositely. So the half-and-half pairing is inside every DP, not in separate random domains. The DP's loading is the sum of its halves' compliances.
+   - Compliance ±δ → no change, exactly, to all orders.
+   - Stiffness ±δ → loading 1/(1−δ²) → v = √(1−δ²), with no 1/3 factor.
+   - The "faster by δ²/6" branch needs spatially separated domains with field redistribution. Present the per-DP average as the leading model, and the random-bond network only as the domain-scale alternative.
+3. **Loading is Claude's inference.** The founder says the shell carries the influence and the CP is pushed. He does not say the CPs feed back on the shell's propagation. Reword §2: "If the CPs load the shell wave (Claude's reading, not in the founder's text)…". Retitle: "…Would Remove the Speed-Limit Obstruction If the CPs Load the Shell Wave".
+4. **Tension about c.** If vacuum light is already loaded, the bare shell speed (1 PSR/Moment) is faster than observed c, and only the signal front travels at 1 PSR/Moment. The founder says the shell "transfers its influence at the speed of light". State the conflict and ask which one is c.
+5. **When quasi-static applies.** It needs λ ≫ GP spacing **and** wave frequency ≪ the CP response rate. "The CP moves slowly" may break the second condition, making the loading dispersive, possibly with the opposite sign above resonance. Add the constraints: gravitational deflection and Shapiro delay are achromatic (radio vs optical VLBI), and GRB vacuum-dispersion limits are tight. So the loading must be frequency-independent from radio to gamma rays.
+6. **§4 γ claim: make it conditional.** A first-order cross term shifts γ only if it enters light propagation differently from the channel that sets Newtonian acceleration. If it enters g00 universally (light and clocks), it renormalises G and is absorbed by the calibration. Reword: "would shift γ unless it enters universally; at minimum it is a first-order term the calibration must absorb."
+7. **Missing founder question.** He opens with "where the PSR is, given the DI-bit propagated 0–100% of the PSR computed at GP_origin" and asks "what propagates the photon's PSR". The draft never addresses this. Add it to §5 as open, or answer it.
+8. **Founder Q1 wording.** "Bigger push for the same distance" and "same push, shorter distance" describe the same hold-back, because compliance = 1/stiffness. What differs is which quantity changes by *equal* ± amounts, and that is not a physical picture he can check. Reframe: "Is the hold like an extra spring added (opposite shell) and an equal spring removed (like shell)? Or like a scale on how far every push carries the CP?" Add: "Is the effect on the + and − CP of one DP equal and opposite?" That decides change 2.
+
+**Minor notes**
+- "First-order effect, as in GR-1i" (§1) is a gloss. Mark it as such or move it out of the summary of the founder's words.
+- The 3D coefficient (1/3) differs from 4382's 1D 1−κ²ϱ². Note that κ absorbs it.
+- The inertia row: in 1D it is the same as the compliance row. Say so instead of listing it as a separate channel.
+- Q2 is well-posed and decisive (δ₀). Keep it.
+- PD-008 marking is good. Add "loading assumed" to the convenient branch.
+
+---
+
+## Claude's response to the 4383 return (not part of the verbatim report)
+
+- **HOLD adopted.** All eight required changes and all five minor notes are taken in.
+- **The δ²/15 arrangement effect is withdrawn.** The script now averages the split cos/sin doublet, and random arrangements reproduce √(1−δ²) to about 10⁻⁵. The fragment's §7 records the withdrawal.
+- **The per-DP pairing** is now the leading model (script part 1b). The 3D random network is kept only as the domain-scale alternative.
+- **Loading** is marked as Claude's reading throughout, and the title is conditional. The tension over which speed is c is stated and put to the founder as Q3.
+- Also added:
+  - the quasi-static validity conditions, plus the achromaticity and GRB-dispersion constraints;
+  - the conditional form of the γ claim;
+  - the founder's opening PSR question, recorded as open in §5.
+- **§6 Q1** is reframed as the equal-and-opposite and spring pictures.
