@@ -543,3 +543,64 @@ Fresh-context sub-agent (ace5c111ac52ec93d), 3 Oct 2026. Return filed verbatim b
   - the conditional form of the γ claim;
   - the founder's opening PSR question, recorded as open in §5.
 - **§6 Q1** is reframed as the equal-and-opposite and spring pictures.
+
+## Patch 4384 — Independent critic of the first draft of 4384 (back-reaction in the PSR; one-PSR ringdown class)
+
+Fresh-context sub-agent (a7602f790933db517), 4 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: HOLD.** The algebra and the a = 0 check are sound. The three headline claims are not: "X = 1 is forced", "WC-GR-EXTERIOR is contrary to his picture", and "no curve reaches the box". Each goes further than the founder's text or the calculation supports.
+
+**What I checked**
+- **(1) Eikonal formulas: correct.** V = f/R² = q⁴/r², and since V_r = 0 at the peak, V_{r*r*} = (f/h)V_rr with f/h = q⁴. Ω = √V_max. The script's a = 0 line gives −4.42%/−4.42%, matching 4372. I also recomputed ℓ = 2 with 3rd-order WKB (4374's formula, numerically, using the scratch script `/tmp/claude-0/s/wkbf.py`). It reproduces a = 0 as −4.05%/−4.57%, matching 4374. For the curves where the back-reaction resists, ℓ = 2 disagrees with the eikonal table (stable under changes to the fit window and degree):
+
+| curve | ℓ = 2 freq / damp | eikonal |
+|---|---|---|
+| p = 2, a = −0.3 | −3.21% / +20.0% | −2.51% / −26.8% |
+| p = 2, a = −0.2 | −3.27% / +4.6% | −3.24% / −15.7% |
+| p = 1.5, a = −0.175 | −3.10% / −3.3% | −2.58% / −13.9% |
+
+  The ℓ = 2 potential carries d(slope)/dε terms that the eikonal limit drops. Also, the peak sits only about 1.7 tortoise units outside the floor.
+- **(3) Shape dependence.** I added a localized steepening bump at g ≈ 0.7 to p = 2, a = −0.35. It lands inside the box at eikonal order (−2.07%, −9.2%). The 2-parameter monotone family does not bound the class.
+- **(4) Order counting: right.** g ≈ 3ε/7. p = 1 gives β = 1 + 3a/14, so the bound is |a| ≲ 5×10⁻⁴, not 1×10⁻⁴. p = 2 shifts γ₃ by −3a/49, which brings back a −(9a/49)ε₀² residual. p > 2 leaves a residual of order a·ε₀^p: negligible, not "untouched".
+
+**Required changes**
+1. **§4, premise 3.** Founder 4362 says the DI-bit relay reach and the clock rate share the PSR. It says nothing about rulers. "Rulers = PSR count" is 4372/4365 L41's reading. Change to: "Clocks and light share the PSR (founder 4362 + this answer). Whether rulers do is Q1." Then the conclusion becomes: "X = 1 follows if Q1 is yes. What his answer settles unconditionally is 4381 §3's universality worry: whatever reaches clocks reaches light."
+2. **Title, §4 heading, §6 "Stands", §8.** Make the class assignment conditional on Q1. Replace "contrary to his picture" with "requires rulers not to be a fixed PSR count. If Q1 is yes, it is excluded within CPP."
+3. **Light-speed dictionary.** State that "one PSR per Moment" gives Shapiro's factor 2 (coordinate speed q²) only under 3386's proper-length reading, which is a reading, not a ruling. Read literally in grid points it gives γ = 0.
+4. **§5 and the abstract.** Recompute the table and scan at ℓ = 2 with WKB. Delete "resisting… dies too slowly" (it reverses at ℓ = 2) and "at least about 2.5% low". Replace with: "Within the two-parameter power-law test family, no curve enters the box (eikonal and ℓ = 2 WKB). Non-monotone or threshold shapes are not excluded; one eikonal example enters."
+5. **Fairness, answer 3.** He ties significance to space "densely filled with mass" (white dwarfs, neutron stars, black holes), but the light ring is in vacuum. Add a third branch: if the effect acts only inside dense matter, the exterior stays at a = 0 (−4.05%), and the mechanism cannot affect the ringdown at all.
+6. **Fairness, answer 2.** He says the chance is "small" in ordinary space, while the fill mapping gives ⅛. Mark this as a tension with his words. Do not present it as "not tiny".
+7. **"Loaded-wave reading superseded" → "recast".** A DP-sourced μ₀ε₀ is a loaded medium by definition.
+8. **(6) Founder questions.** Add Q3: "Near a black hole but outside it, where there is no matter, only stressed space, do the DPs still act back on the Planck sphere, or only inside dense matter?" In Q1 and Q2, remove the attached numerical consequences ("at least 2.5% low", "dies too slowly"). They are not established, and they steer his answer.
+9. **Citation.** The box is labelled L8 in conv042 (file line 33). Cite it as "L8".
+
+**Minor**
+- "Grazes the box's corner": at p = 1.5 the damping (−13.9%) is inside the box; only the frequency misses, by 0.18 points.
+- Part 1's net hold 4cF²/d assumes x ∝ F with the same c for both CPs. Say so.
+- "κ = 0 class" and "X = 1 class" are used interchangeably. Define the mapping once.
+
+**D-9: owed items that need todolist entries**
+1. ℓ = 2 WKB rerun of §5 and the scan, plus a non-monotone family.
+2. Floor boundary condition for ℓ = 2, since the peak is about 1.7 tortoise units from the cap.
+3. Spinning ringdown in the X = 1 class (link to TODO-4365-THIRDORDER(b)).
+4. Founder Q1, Q2 and the new Q3, pending.
+5. Reconcile the landing-chance-equals-fill mapping with "small chance".
+6. 3386 proper-length reading: still unratified.
+7. Erratum to 4372 §2 and 4365 L41: the attribution "one PSR for clocks and rulers (founder 4362)".
+8. μ₀ε₀ from DP back-reaction (programme).
+9. Single-charge clock polarisation check (4382).
+10. Cap geometry under fill-dependent curves (ε_cap from 0.47 to 0.74).
+11. Correct the p = 1 bound to about 5×10⁻⁴.
+
+**Plain Language:** The maths is right and the starting check reproduces earlier results. But the draft claims more than Thomas actually said. He said light and clocks both ride on the Planck sphere. He did not say rulers do, so the "one class only" conclusion depends on a question still open to him. The "no fix reaches the measurement" result also changes when the more accurate ℓ = 2 calculation is used. One differently shaped curve does reach the measurement, so the "no curve" claim needs to be narrowed.
+
+---
+
+## Claude's response to the 4384 return (not part of the verbatim report)
+
+- **HOLD adopted.** All nine required changes and the three minor notes are taken in.
+- **The ℓ = 2 WKB is now in the script (part 5),** written independently and agreeing with the critic's numbers for resisting curves. The full scan went further than the critic's required wording: at ℓ = 2, three resisting curves do enter the box (p = 3, a = −0.15 and −0.2; p = 4, a = −0.15). For faster-shrinking curves the ℓ = 2 peak merges with the floor. Since the two methods disagree and WKB is unreliable this close to the floor, the fragment states a method split, not "no curve enters". The resisting branch is reported as a live candidate, pending a full mode calculation with the floor boundary condition. The critic's bump family was also tried at ℓ = 2; WKB returned nonsense there, so it is cited only at eikonal order.
+- **Errata added:** the attribution corrections to 4372 §2 and 4365 L41 are made in this patch.
+- **The other owed items** are filed in todolist.md (D-9).

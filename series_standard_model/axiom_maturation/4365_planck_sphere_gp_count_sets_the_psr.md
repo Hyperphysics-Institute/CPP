@@ -38,7 +38,7 @@ him as a physical picture (§5).
   invariance with a non-exponential lapse.
 - **A second route to the same form (the critic's, checked here).** On CPP's assembled metric (g₀₀ = −q², g_ij = q⁻²δ)
   the static wave operator is q²∇²_flat. If Δ is flat-harmonic (GR-1j) and the log-lapse is too, then ln q ∝ Δ,
-  which is (B), independently of the source rule. The input is "one PSR sets rulers and clocks" (founder, 4362).
+  which is (B), independently of the source rule. The input is "one PSR sets rulers and clocks" (founder, 4362). *(Erratum, Patch 4384: founder 4362 ties the DI-bit relay reach and the clock rate to one PSR; "rulers" is Claude's reading, put to the founder as 4384 §7 Q1.)*
 - **The background scales out exactly.** e^{−(ε₀+δε)} = e^{−ε₀}·e^{−δε}, so the absolute stress (Sun, Galaxy,
   cosmology) only rescales local units. TODO-4364-EPSABS closes for G under (B), and for α if its reading is
   metric-coupled (4364 §2, still inferred).

@@ -26,7 +26,7 @@ clocks relate to rulers.** Write the clock-to-ruler ratio as
 
     N·√A = (1 − ϱ²)^λ,   so   ln N = −2 ∫₀^ϱ dx/(1 − x²)^λ.
 
-- **λ = 0: one PSR for clocks and rulers** (founder 4362). This forces N = e^{−ε}, the steady curve. 4365's critic
+- **λ = 0: one PSR for clocks and rulers** (founder 4362). *(Erratum, Patch 4384: founder 4362 says the relay reach and the clock rate share the PSR; that rulers do is Claude's reading, now 4384 §7 Q1. Also, the "forces" rests on GR-1c's self-consistency, i.e. imported R₀₀ (4381).)* This forces N = e^{−ε}, the steady curve. 4365's critic
   noticed the same route.
 - **λ = 1: clocks slow by an extra factor (1 − ϱ²)** beyond the rulers' shrinkage. This gives N = (1 − ϱ)/(1 + ϱ)
   and A = (1 + ϱ)⁴: GR-1c's boxed exact-Schwarzschild theorem, and its Form A, N = −2 artanh(kΔ/2), exactly.
