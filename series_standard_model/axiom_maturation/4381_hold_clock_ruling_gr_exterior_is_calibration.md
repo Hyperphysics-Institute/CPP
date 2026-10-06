@@ -59,6 +59,8 @@ solar system but about 1% at neutron-star surfaces.
 
 ## 5. What is recorded instead: a labelled working convention, not a ruling
 
+> **Superseded (Patch 4385):** R-RULER-IN-PSR-UNITS (founder 4385) puts clocks, rulers and light on one PSR (X = 1), so WC-GR-EXTERIOR is excluded within CPP and kept for comparison only. CPP strong-field work now uses WC-EINSTEIN-AREAL (q = e^(−asinh ε)). See 4385.
+
 > **WC-GR-EXTERIOR (working convention, Session 242).** Strong-field work in the GR lane uses N = (1 − ϱ)/(1 + ϱ),
 > A = (1 + ϱ)⁴, ϱ = kΔ/2 (isotropic Schwarzschild). It follows from GR's static R₀₀ = 0 (GR-1c's proposition, derived
 > only for this dictionary) plus the ruler law A^{1/4} = 1 + ϱ (X = 1 − ϱ²). **This reproduces GR by calibration; CPP

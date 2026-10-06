@@ -413,6 +413,16 @@ PSR = PSR_∞·e^{−ε}, which would fix R-PSR-LAW-LOG's third order at −1/6.
 horizon THEO-PCD-SEA uses and move AP-5's cap to ε = ln 2. Its eikonal non-spinning ringdown estimate (−4.4%) sits
 1.8 box-widths outside GW250114's ±2.4% (`series_standard_model/axiom_maturation/4369_…`; TODO-4365-THIRDORDER).
 
+**R-RULER-IN-PSR-UNITS** (founder 4385, `founders_voice/4385_…`): the spacing of the CPs in an atom, a crystal or the
+subatomic particle cage is set by the forces among them, which act over distances counted in PSRs; near a black hole,
+where the PSR is smaller, the equilibrium spacing is the same number of PSRs, and the same number of Moments pass for the
+same number of PSR-size hops: the same physics in every frame, whether SSV_abs is raised by gravitational stress or by
+kinetic energy. **Consequences (with founder 4362 and 4384):** clocks, rulers and light share one PSR, X = N√A = 1, so
+CPP's exterior is the one-PSR (κ = 0) class; WC-GR-EXTERIOR is excluded within CPP (kept for comparison only). The
+absolute metric g₀₀ = −q² and γ = 1 additionally rest on 3386's proper-length reading (unratified). Strong-field work uses
+WC-EINSTEIN-AREAL, q = e^(−asinh ε), a founder-directed calibration, not a ruling
+(`series_standard_model/axiom_maturation/4385_…`; TODO-4365-THIRDORDER).
+
 **R-DPSEA-UNIFORM** (founder 4359, `founders_voice/4359_…`): the DP-Sea concentration is the same everywhere; gravity does
 not pull DPs to mass. DPs orient toward an unpaired CP (opposite charge inward, like charge outward); mass carries a
 polarised cloud whose radius is set by the CP's polarising pull against thermal agitation. **4359 status of α's LPI:**

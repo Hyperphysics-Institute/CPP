@@ -604,3 +604,79 @@ Fresh-context sub-agent (a7602f790933db517), 4 Oct 2026. Return filed verbatim b
 - **The ℓ = 2 WKB is now in the script (part 5),** written independently and agreeing with the critic's numbers for resisting curves. The full scan went further than the critic's required wording: at ℓ = 2, three resisting curves do enter the box (p = 3, a = −0.15 and −0.2; p = 4, a = −0.15). For faster-shrinking curves the ℓ = 2 peak merges with the floor. Since the two methods disagree and WKB is unreliable this close to the floor, the fragment states a method split, not "no curve enters". The resisting branch is reported as a live candidate, pending a full mode calculation with the floor boundary condition. The critic's bump family was also tried at ℓ = 2; WKB returned nonsense there, so it is cited only at eikonal order.
 - **Errata added:** the attribution corrections to 4372 §2 and 4365 L41 are made in this patch.
 - **The other owed items** are filed in todolist.md (D-9).
+
+## Patch 4385 — Independent critic of the first draft of 4385 (rulers in PSR units; Einstein-calibrated one-PSR curve)
+
+Fresh-context sub-agent (a539b56ea14742d4c), 6 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script (about 5 s) and re-derived the maths by hand. Both agree.
+- **Curve:** q² = 1 − 2m/R with R = r/q gives q² + 2εq − 1 = 0, so q = √(1+ε²) − ε.
+- **Radial ruler:** g_RR = (R−1)²/(R−2)², so the ratio to Einstein is (R−1)²/(R(R−2)) = 1 + m²/R² + 2m³/R³ + …
+- **Eikonal damping:** λ² goes as 1/(g_tt·g_RR) at the extremum. At R = 3 the ratio is √(3/4) = √3/2.
+- **Floor:** q = ½ gives ε = ¾ and R = 8m/3.
+- **S(f):** 1/q − q = 2ε, so √(1+ε²) = (u²+1)/(2u) and S = 2u/(1+u²).
+- **Series:** 1 − ε + ε²/2 + 0·ε³ − ε⁴/8.
+- **PPN:** β = γ = 1 at the level of the metric.
+
+All correct. The problems are in how the results are read, not in the algebra.
+
+**Required changes**
+
+1. **Ruling text is not all his words.** "So clocks, rulers and light share one PSR" is a synthesis: light is from 4384 Q3 and clocks from founder 4362. Take it out of the ruling block and put it under Consequences, with "(with 4362 and 4384: …)". Also keep his phrase "the subatomic particle cage."
+
+2. **X = 1 follows; the absolute metric does not.** The ratio X = 1 does follow from rulers + light + clocks all sharing one PSR. But g₀₀ = −q² and "γ = 1 holds by X = 1" also need 3386's proper-length reading. 4384 itself says that reading is unratified, and that a literal grid-point count gives γ = 0. Read literally, his "same number of Moments for the same number of PSR hops" leaves the clock-to-Moment rate unfixed. Reword to: "X = 1 follows; g₀₀ = −q² and γ = 1 additionally require 3386's proper-length reading (4384 owed item iv)."
+
+3. **"Unique" and "best" need a qualifier.** The curve is unique only once you choose to match g_tt against areal radius. Matching g_tt against isotropic r gives another one-PSR curve, GR-1c's Padé (1−ε/2)/(1+ε/2), which has a horizon at ε = 2. Change the title's "One Best Curve" to "the unique curve matching Einstein's redshift versus areal radius". In §3 add one sentence on why areal: circumference fixes the photon sphere and the shadow.
+
+4. **The ℓ = 2 WKB number is unreliable.** 4384 (todolist L2510) found WKB unreliable about 1.6–2 tortoise units from the floor. Here the peak sits at 1.33. Also say plainly that this is a scalar ℓ = 2 potential used as a stand-in for the gravitational one. Suggested wording: "the −13.3% is a scalar-proxy WKB estimate inside the region 4384 found WKB unreliable; only the eikonal √3/2 is robust."
+
+5. **The GW250114 comparison needs more hedging.**
+   - The margin to the box edge is only 1.2 points (−13.3 against −14.5).
+   - The remnant has χ_f = 0.68, which is not small. Spin could easily move the result across the edge.
+   - M_f was inferred using GR inspiral dynamics. This curve departs from GR at 2PN (g_RR ≈ 1 + m²/R²), so the inferred mass is not neutral.
+   - Suggested wording: "consistent with, not a fit to, GW250114: non-spinning, scalar proxy, WKB near the floor, GR-inferred M_f."
+
+6. **Tension with R-PSR-PACE-AT-N is understated.** That ruling places the PSR's change of pace at the N point. This curve changes pace from ε = 0 onward (S drops 1.9% already at a neutron-star surface). That conflicts with a registered founder ruling; it is not just "reconcile the wording". Flag it in §4 and §7, and either add it to §6 as a physics question or state explicitly why it is deferred. The ε = ¾ versus AP-5's ratified ⅔ is a second conflict with a ratified item. Say so in the same place.
+
+7. **S(f) depends on Claude's mapping.** S(f) rests on the fill f = 1/(8q³), which is Claude's mapping (4384 §3), and its ⅛-is-not-small tension is still open. Label it: "in terms of Claude's fill mapping (unratified; 4384 owed iii)".
+
+8. **§6 question: soften the either/or.** He asked to be told what Einstein needs, so stating the needed sign is fine. But "once" gives only the sign, not 2u/(1+u²). And the twice/once choice leaves out other options, such as counting that saturates partway. Add: "Counting once gives the needed direction, not yet the size. If neither picture fits, please describe what the GP does." Also note that his own mechanism was about extra early arrivals between GP_origin and GP_PSR, not repeated copies. Say the question reframes his picture.
+
+9. **D-9 owed items are not in `todolist.md`.** There is no 4385 entry. Add one covering:
+   - the floor boundary condition and the full mode calculation with this g_RR;
+   - redoing conv042's wall work and 3390's instability check;
+   - the spinning ringdown;
+   - ε = ¾ versus ⅔;
+   - R-PSR-PACE-AT-N;
+   - TODO-4364-EPSABS (α background);
+   - 3386's reading, now load-bearing for g₀₀ and γ;
+   - a PCD derivation of S(f);
+   - the 2PN spatial-metric departure as a weak-field falsifier;
+   - the carried 4384 items.
+
+   Run `code/deferral_gate.py`.
+
+**Minor notes**
+- WC-GR-EXTERIOR: keep it as a labelled comparison convention, as 4384 §4 said, not just "retired".
+- "No horizon (q > 0 for all ε)" adds nothing, since the exterior ends at the floor anyway. Say "no horizon above the floor."
+- Background residual 1 − ε₀²/2: correct if 4365's formula 1 − (3γ₃ + ½)ε₀² is right. I did not re-derive 4365.
+- The script prints the two WKB fit variants identically to two decimals. Show the spread explicitly, or say "<0.01%".
+- The box is in damping rate γ (221 +39/−32 Hz → −14.5%/+17.6%). conv042 L8 quotes it in τ as (−15, +17)%. Name the variable so readers don't confuse the two.
+- PD-008 section: the honesty is good. Add that the 2PN difference (g_RR) is the curve's earliest weak-field departure.
+
+---
+
+## Claude's response to the 4385 return (not part of the verbatim report)
+
+- **All nine required changes and all six minor notes are taken in.**
+- **The ruling block** is now in the founder's terms only. The synthesis (with 4362 and 4384) and the 3386 dependence are listed under Consequences.
+- **"Unique" is qualified** ("matching Einstein's redshift versus areal radius"), with the Padé alternative named.
+- **Hedges added:** the ℓ = 2 number is labelled a scalar-proxy WKB of unestablished accuracy; the GW250114 comparison reads "consistent with, not fitted to", with all four hedges listed.
+- **R-PSR-PACE-AT-N** is now flagged as a conflict with a ruling and put to the founder as §6 Q2. The ε = ¾ versus ⅔ question is stated as an owed check on the variables in which AP-5 states its cap.
+- **Fill mapping and §6 Q1:** the fill mapping is labelled unratified. Q1 now says it reframes his picture, gives the direction only, and asks him to describe the GP if neither option fits.
+- **Script:** shows the WKB spread and states the 3386 and 2PN points.
+- **D-9:** the todolist entry is added.
