@@ -740,3 +740,53 @@ Files: `/root/CPP/series_standard_model/axiom_maturation/4386_absolute_rulers_an
 - **R-PSR-PACE-AT-N** is clarified by quoting him; the N point is kept.
 - **Part 4** now rests on the mean-value property, not on counting once.
 - **D-9:** the todolist entry is added.
+
+## Patch 4387 — Independent critic of the first draft of 4387 (same PSRs, same Moments?)
+
+Fresh-context sub-agent (ada9aa4a0a7017674), 6 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: HOLD.** The arithmetic is right, but §3 and §4 frame things in ways that would mislead Thomas. Fix them before he sees it.
+
+**Checks**
+- **(1) Bookkeeping: correct.** I ran the script. In isotropic coordinates with universal Moments, signal speed v = √((1−2U)/(1+2U)) ≈ 1−2U, ruler r = 1−U, clock rate c = v/r = 1−U. All four pictures compute as tabled.
+- **(2) (A)'s failure is real.** Clock rate 1 gives no redshift for a far observer. "Half the bending" is right: refractive index n = 1+U against GR's 1+2U. The failure is understated, though: clock rate 1 means g₀₀ = −1, so in metric terms slow bodies feel no Newtonian pull. If CPP supplies the pull some other way, it breaks the equivalence-principle link between redshift and falling.
+- **(3)** (B) and (C) share only the first-order metric. The verdict on "clock rate = PSR ratio" depends on whether the PSR is measured in lattice units or proper units (see change 1).
+- **(4) and (5)** are covered in changes 2, 5 and 6.
+
+**Required changes**
+1. **Say which units the PSR is in.** 3386 itself says "PSR_eff is a proper length", and R-PSR-LAW-LOG and 3387 rest on that reading. Measured that way, (C) has a proper PSR of q and keeps clock = PSR. (B) keeps the ratio only for the PSR's lattice size; its PSR measured in local rulers is constant. Rewrite the §3 bullets, and the claim that (C) "departs", to state the unit. Also say that 3386 §4's "lapse tension" is about second order, not this.
+2. **(B) is 3385's withdrawn mechanism.** 3386 withdrew 3385's GP-counted hop (1−u) times a lapse-slowed rate (1−u) as "a knob invented to reproduce a number". (B) is exactly that. Cite it, and say what would now make it acceptable.
+3. **Read his words fairly.** He used nearly the same wording in 4385: "the same number of Moments pass for the same number of PSR-size hops". The corpus then read it as the passing one-PSR class with g₀₀ = −q². His own bullet 2 also says Moments between events vary per CP, so "Moments" may mean the CP's own count, which is (B). Present (A) as the universal-Moment reading only, and reconcile it with 4385.
+4. **Weaken "same observables".** Say "same first-order metric." Second order is unchecked; the script is first order only. Also, R-PSR-LAW-LOG fixes the PSR's GP count, and whether that count is a proper or a lattice size separates (B) from (C) within CPP. The choice is not purely about mechanism.
+5. **Discreteness.** A hop of 1/q Moments is not a whole number. (B) needs a duty cycle (a fraction ≈U of Moments with no hop). Say so in the picture.
+6. **Closing question.** (C)'s "a crystal holds more Planck spheres" contradicts the half of his proposal the draft accepts. Say that. Add a direct question: "When you said 'same number of Moments', did you mean as the CP itself counts them?"
+
+**Minor**
+- Neither R-CLOCK-RATE-IS-DISPLACEMENT nor R-SIMULTANEITY-UNIVERSAL is in `axiom-registry.md`. Cite `founders_voice/founder_ruling_clock_rate_is_displacement_2026-09-02.md`. Taken literally (clock ∝ displacement per Moment), that ruling fits (B) only if displacement is counted in PSRs: in lattice units it is q², not q.
+- (A) does pass the local light-speed test (v/(r·c) = 1). The table should mark that.
+
+**Deferred items needing todolist entries (none for 4387 exist yet)**
+- the (B) hop-time mechanism, against the 3385 withdrawal;
+- the "one PSR per local tick" wording change for GR-1i and 4384, if (B) is chosen;
+- the second-order check of (B) against R-PSR-LAW-LOG's ½;
+- reconciling with 4385's wording;
+- updating 4386's owed items (vi) and (vii): (B) passes with shrinking rulers too;
+- WC-EINSTEIN-AREAL and the WC-GR-EXTERIOR exclusion stay suspended until he answers.
+
+**Plain language:** the sums are right, and "same Planck spheres, same universal Moments" really does lose the redshift. But the draft treats one way of measuring the Planck sphere as the only one. Its preferred option is a mechanism the corpus already threw out. And Thomas may have meant the option that works. Rewrite before asking him.
+
+---
+
+## Claude's response to the 4387 return (not part of the verbatim report)
+
+- **HOLD adopted.** All six required changes, both minor notes, and every deferred item are taken in.
+- **The fragment now leads with "whose Moments?".** Counted by the CP itself, his proposal is (B) and passes; counted as universal Moments, it is (A) and fails, now including the missing Newtonian pull.
+- **Also added:**
+  - the units question (proper versus lattice PSR), with the clock-rate ruling cited from its founder file;
+  - (B)'s history as 3385's withdrawn knob, and what would make it acceptable;
+  - the duty cycle (about one Moment in 470,000 at the Sun's surface with no step);
+  - "same first-order metric", in place of "same observables".
+- **The closing questions** now ask "whose Moments?" first and say that (C) contradicts "same number of PSRs".
+- **D-9:** the todolist entry is added.
