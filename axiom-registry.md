@@ -411,17 +411,9 @@ volume at the absolute GP density), the PSR law's shape between ordinary gravity
 **Claude's reading, conditional and put to the founder (4369 §2, §5):** no change of pace above it, i.e.
 PSR = PSR_∞·e^{−ε}, which would fix R-PSR-LAW-LOG's third order at −1/6. **Not adopted:** it would remove the v = 2
 horizon THEO-PCD-SEA uses and move AP-5's cap to ε = ln 2. Its eikonal non-spinning ringdown estimate (−4.4%) sits
-1.8 box-widths outside GW250114's ±2.4% (`series_standard_model/axiom_maturation/4369_…`; TODO-4365-THIRDORDER).
+1.8 box-widths outside GW250114's ±2.4% (`series_standard_model/axiom_maturation/4369_…`; TODO-4365-THIRDORDER). **Founder clarification (4386):** "The change in pace would start at the beginning of the change in SSV_abs." Read as gradual from the first change in SSV_abs; whether a distinct change at the N point remains is not stated, so the N point is kept.
 
-**R-RULER-IN-PSR-UNITS** (founder 4385, `founders_voice/4385_…`): the spacing of the CPs in an atom, a crystal or the
-subatomic particle cage is set by the forces among them, which act over distances counted in PSRs; near a black hole,
-where the PSR is smaller, the equilibrium spacing is the same number of PSRs, and the same number of Moments pass for the
-same number of PSR-size hops: the same physics in every frame, whether SSV_abs is raised by gravitational stress or by
-kinetic energy. **Consequences (with founder 4362 and 4384):** clocks, rulers and light share one PSR, X = N√A = 1, so
-CPP's exterior is the one-PSR (κ = 0) class; WC-GR-EXTERIOR is excluded within CPP (kept for comparison only). The
-absolute metric g₀₀ = −q² and γ = 1 additionally rest on 3386's proper-length reading (unratified). Strong-field work uses
-WC-EINSTEIN-AREAL, q = e^(−asinh ε), a founder-directed calibration, not a ruling
-(`series_standard_model/axiom_maturation/4385_…`; TODO-4365-THIRDORDER).
+~~**R-RULER-IN-PSR-UNITS** (founder 4385, `founders_voice/4385_…`): the spacing of the CPs in an atom, a crystal or the subatomic particle cage is set by the forces among them, which act over distances counted in PSRs; near a black hole, where the PSR is smaller, the equilibrium spacing is the same number of PSRs, and the same number of Moments pass for the same number of PSR-size hops: the same physics in every frame, whether SSV_abs is raised by gravitational stress or by kinetic energy. **Consequences (with founder 4362 and 4384):** clocks, rulers and light share one PSR, X = N√A = 1, so CPP's exterior is the one-PSR (κ = 0) class; WC-GR-EXTERIOR is excluded within CPP (kept for comparison only). The absolute metric g₀₀ = −q² and γ = 1 additionally rest on 3386's proper-length reading (unratified). Strong-field work uses WC-EINSTEIN-AREAL, q = e^(−asinh ε), a founder-directed calibration, not a ruling (`series_standard_model/axiom_maturation/4385_…`; TODO-4365-THIRDORDER).~~ **WITHDRAWN (founder 4386: "I think I made a mistake"; CP spacings are fixed in absolute distance). His corrected statement is recorded, not registered, pending the light-bending question (`series_standard_model/axiom_maturation/4386_…` §3, §6). WC-EINSTEIN-AREAL and the exclusion of WC-GR-EXTERIOR are suspended.**
 
 **R-DPSEA-UNIFORM** (founder 4359, `founders_voice/4359_…`): the DP-Sea concentration is the same everywhere; gravity does
 not pull DPs to mass. DPs orient toward an unpaired CP (opposite charge inward, like charge outward); mass carries a

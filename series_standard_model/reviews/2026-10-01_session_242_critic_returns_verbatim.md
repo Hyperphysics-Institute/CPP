@@ -680,3 +680,63 @@ All correct. The problems are in how the results are read, not in the algebra.
 - **Fill mapping and §6 Q1:** the fill mapping is labelled unratified. Q1 now says it reframes his picture, gives the direction only, and asks him to describe the GP if neither option fits.
 - **Script:** shows the WKB spread and states the 3386 and 2PN points.
 - **D-9:** the todolist entry is added.
+
+## Patch 4386 — Independent critic of the first draft of 4386 (absolute rulers; light bending)
+
+Fresh-context sub-agent (a2bf7937fe927c545), 6 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: ACCEPT WITH CHANGES.** The core calculation is right. But the founder question leaves out a real way out, and option (a) doesn't work as written.
+
+**Checks**
+- **(1) γ = 0.** I ran the script. With rulers in absolute distance, light at one PSR per Moment (speed q), and clock rate = q, you get g₀₀ = −q², g_ij = δ, so γ = 0. Factor 2 confirmed. The weak point is the clock premise. "Clock rate = light speed" is Claude's reading, not his words. He said only that a smaller PSR makes oscillations take longer. With absolute rulers, the light tests pass if the clock rate goes as √q and the PSR law has a = 2:
+  - clocks slow by U, so redshift is right;
+  - light slows by 2U, so bending and Shapiro are right.
+  
+  This is physically plausible. Without the square root, a harmonic oscillator has ω ∝ √(k/m) with k ∝ q. The corpus already allows clocks to differ from the PSR: 4373 (the founder: the clock slows and the PSR is left alone) and 4379/4380 (the ZBW round trip, X = 1 − κ²ϱ²). Those were second order. Here a first-order split is exactly what passes, and Cassini forbade one only in the one-PSR class. Whatever mechanism does this must apply to every kind of clock the same way (LPI).
+  - **Direct grad-SSV deflection:** a sideways push alone cannot fix Shapiro, which is a timing test. Also, 4378 records the founder saying that light bending near the Sun *is* grad SSV_abs. The draft never cites 4378.
+- **(2) Numbers.** 4GM☉/(c²R☉) = 1.7505″ and half is 0.875″. U☉ = 2.12×10⁻⁶. Cassini γ − 1 = (2.1 ± 2.3)×10⁻⁵, so "one part in 40,000" is right for γ (about 1/43,000). The delay itself is known to about 1/87,000, so word it as γ. "Eddington 1919 ruled out 0.875″" is historically contested. Lead with VLBI (γ to about 10⁻⁴).
+- **(3) Part 4.** The conclusion holds, but the reason given is wrong. The census cannot depend on shell thickness because of the mean-value property: a harmonic u = C/r equals its average over any centred, isotropic kernel, of any thickness. Counting once guarantees the relay is linear, not that thickness doesn't matter. The PSR-gradient skew of the kernel is O(l_P/r) and negligible.
+- **(4) Registry.**
+  - Withdrawing R-RULER-IN-PSR-UNITS is faithful ("I think I made a mistake").
+  - Holding the new ruler statement unregistered is defensible, provided the reason and a todolist pointer are recorded.
+  - The amendment to R-PSR-PACE-AT-N reads too much in. "The change in pace would start at the beginning of the change in SSV_abs" could mean just that the PSR shrinks from the start. It does not clearly say the N point no longer matters.
+- **(5) Founder question.** It steers. It offers only (a) and (b), both of which need non-absolute rulers. In 3386, "proper length" means what the local ruler reads, so (a) collapses into (b) under his correction. The "clock ticks by PSR hops" premise is presented as his.
+- **(6) D-9.** todolist.md has no 4386 entry, and the draft has no "Owed" list.
+
+**Required changes**
+1. **§3 heading/summary:** "γ = 0 follows **if clocks tick at the rate light advances (one PSR per Moment)** — Claude's reading of 'longer time for oscillations'."
+2. **§3 "readings that pass":** add "(iii) rulers absolute, light one PSR per Moment, clocks slow as the square root of the PSR's shrinkage (PSR law twice as strong). Precedent for a clock law separate from the PSR: 4373, 4379–4380. It must apply to every kind of clock the same way." Cite 4378 and state that a grad-SSV push alone cannot supply Shapiro's timing.
+3. **§6:**
+   - Rewrite (a) as: "Near a mass, light covers less absolute distance per Moment than one Planck sphere — about twice the amount clocks slow."
+   - Add (d): "Clocks slow only half as much as the Planck sphere shrinks — for example, a cage oscillation whose rate goes as the square root of the hop rate."
+   - Mark the hop-clock premise as Claude's reading.
+4. **R-PSR-PACE-AT-N:** quote him verbatim. Say "read as: gradual from the first change in SSV_abs; whether a distinct change at N remains is not stated." Do not delete the N point.
+5. **Part 4:** state the actual reason (mean-value property for any centred, isotropic, linear kernel; skew O(l_P/r)) and attribute it to that, not to counting once.
+6. **Observation line:** VLBI first. Eddington becomes "historically favoured the full value." Write "γ to one part in 40,000".
+7. **D-9:** add a 4386 todolist entry and run `code/deferral_gate.py`. The entry needs:
+   - the corrected ruler statement, recorded but unregistered, pending §6;
+   - WC-EINSTEIN-AREAL and the WC-GR-EXTERIOR exclusion suspended;
+   - 4385 owed items: (iv) answered; (vi) now (a)/(d); (i), (ii) and (viii) suspended with the class;
+   - the clock-√q branch (iii)/(d) as an open derivation;
+   - the N-point ambiguity;
+   - the 4378 grad-SSV link.
+
+**Minor notes**
+- The opening in §5 overstates: "X = 1 is no longer established" should read "conditional on §6."
+- The script header says "against measurement" but no measured inputs are coded in. That's fine; note that it is analytic.
+- The PD-008 section should name (d) as the branch that would keep his correction intact. It is the convenient one for him, so flag it the same way.
+
+Files: `/root/CPP/series_standard_model/axiom_maturation/4386_absolute_rulers_and_light_bending.md`, `/root/CPP/todolist.md` (needs the 4386 entry).
+
+---
+
+## Claude's response to the 4386 return (not part of the verbatim report)
+
+- **All seven required changes and the three minor notes are taken in.**
+- **One step further than asked.** I generalised the critic's √q branch: with absolute rulers, the two measured weak-field facts (redshift U, light delay 2U) force the locally measured light speed to be (1 − 2U)/(1 − U) ≈ 1 − U. So absolute rulers allow only γ = 0 (excluded) or a potential-dependent local light speed. The √q clock is the second of these. Its observable is an annual cavity-versus-atomic-clock swing of about 3.3 × 10⁻¹⁰. Checking the published bounds is owed.
+- **The founder question** now offers three outcomes, with the hop-clock premise marked as Claude's reading.
+- **R-PSR-PACE-AT-N** is clarified by quoting him; the N point is kept.
+- **Part 4** now rests on the mean-value property, not on counting once.
+- **D-9:** the todolist entry is added.
