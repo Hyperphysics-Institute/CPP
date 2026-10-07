@@ -790,3 +790,50 @@ Fresh-context sub-agent (ada9aa4a0a7017674), 6 Oct 2026. Return filed verbatim b
   - "same first-order metric", in place of "same observables".
 - **The closing questions** now ask "whose Moments?" first and say that (C) contradicts "same number of PSRs".
 - **D-9:** the todolist entry is added.
+
+## Patch 4388 — Independent critic of the first draft of 4388 (clock half explained; space half open)
+
+Fresh-context sub-agent (aa498eed14c51207e), 7 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: ACCEPT WITH CHANGES.** The arithmetic is right, but row 4 is presented misleadingly and the founder question leaves out one branch.
+
+**Checks**
+1. **Rows.** I ran the script and all four rows reproduce. First order: row 1 gives r=1, v=1−U, c=1−U (redshift passes, bending fails). Row 2 gives c=1 (fails). Rows 3 and 4 both give r=1−U, v=1−2U, c=1−U (pass). As the 4387 critic noted, rows 3 and 4 have the same first-order metric.
+2. **Tension claim.** It is correct if the clock is a signal crossing the crystal at one PSR per Moment. Row 4 keeps his mechanism almost word for word: crossing A–B takes more Moments because the PSR shrinks faster than A–B. The fragment should say so.
+3. **Instant vs settled.** "Suddenly" supports this reading, but he wrote "This implies…", a deduction from his clock picture that may be meant generally. Under the general reading, rulers are absolute. That is row 1 (γ=0), or the missing branch below.
+4. **Fairness.** The founder file is verbatim and §1 paraphrases him accurately. But the table leaves out 4386's live branch (iii)/(d): absolute rulers, PSR law twice as strong, clocks slowing as √. This is the branch closest to his literal "GPs and CP positions unaffected". The question steers by leaving it out.
+5. **Row 4's 1/√2.** This depends on units. It holds only for the PSR's lattice size. In proper units (3386 says "PSR_eff is a proper length"; R-CLOCK-RATE-IS-DISPLACEMENT says N = PSR_eff/l_P), row 4's PSR is 1−U, so clock = PSR and "PSR halves → clocks halve" survives exactly. On top of that, the √ step from first order to a finite halving is an extrapolation, not a unique result: crystal = (1+q)/2 would give 2/3. The 4387 critic's change 1 (state the units) has not been applied here.
+6. **D-9.** todolist.md has an entry for 4387 but none for 4388.
+
+**Required changes**
+1. Rows 3 and 4: state whether the PSR is measured in lattice or proper units. Row 4's "PSR 1−2U" is the lattice size; its proper size is 1−U.
+2. Replace the 1/√2 claim with: "if the PSR is counted in lattice units and the √ form is extended to finite size, 1/√2; in proper units (3386, R-CLOCK-RATE-IS-DISPLACEMENT) his '½' stands."
+3. Add row 5: absolute crystal, light slowing by 2U, clock slowing as √ (4386 (iii)). It passes the light tests at the cost of a potential-dependent local light speed, with the cavity-vs-atomic swing of about 3.3×10⁻¹⁰ owed against published bounds. Add it to §4's question and mark it in PD-008 as the branch convenient for his literal wording.
+4. §3: note that row 4 keeps his "more Moments" mechanism literally.
+5. §3: give both readings of "positions don't change": the instant of a change, and a general statement (which means row 1 or row 5).
+6. D-9: add a 4388 todolist entry and run `code/deferral_gate.py`. It should cover:
+   - the §4 founder questions;
+   - row 5 and its cavity-clock check;
+   - the unit statement;
+   - the finite-size extrapolation in row 4;
+   - 4387 owed (i), now partly answered (his Moments are universal ticks; whether a step takes longer than one Moment is still open);
+   - 4387 owed (ii)–(viii), carried forward.
+
+**Minor notes**
+- The script header should say that "c" means the clock rate (v/r), not the speed of light.
+- Row 3's finite form also gives ½ for "PSR halves". Say so, since it matches his number.
+- "Nothing registered" is fine. WC suspensions stand.
+
+Files: `/root/CPP/series_standard_model/axiom_maturation/4388_clock_half_explained_space_half_open.md`, `/root/CPP/series_standard_model/code/4388_settled_crystal_size_and_clock.py`, `/root/CPP/todolist.md`.
+
+---
+
+## Claude's response to the 4388 return (not part of the verbatim report)
+
+- **All six required changes and all three minor notes are taken in.**
+- **Row 5** (absolute crystal; clocks slow as the square root) is added to the table, the script and the question, and is flagged in PD-008 as the branch convenient for his literal wording.
+- **Units:** the table states that PSR sizes are lattice sizes unless stated. Row 4's 1/√2 is recast as a units-dependent extrapolation; in proper units, his "½" stands.
+- **Both readings of "positions don't change"** are given. Row 4 is noted as keeping his "more Moments" mechanism literally.
+- **D-9:** the todolist entry is added.
