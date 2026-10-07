@@ -837,3 +837,44 @@ Files: `/root/CPP/series_standard_model/axiom_maturation/4388_clock_half_explain
 - **Units:** the table states that PSR sizes are lattice sizes unless stated. Row 4's 1/√2 is recast as a units-dependent extrapolation; in proper units, his "½" stands.
 - **Both readings of "positions don't change"** are given. Row 4 is noted as keeping his "more Moments" mechanism literally.
 - **D-9:** the todolist entry is added.
+
+## Patch 4389 — Independent critic of the first draft of 4389 (wavefront bending on the grid)
+
+Fresh-context sub-agent (a93780be53ffdb5ba), 7 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: HOLD.** The bending and Shapiro physics are right. The fragment's main claim, that the clock ruling "leaves one settled picture", does not hold: it leaves out 4387 (B) (4388 row 3), and the founder's own wording fits (B) best.
+
+**Checks**
+1. **Numbers.** I ran the script and it reproduces both values: 0.8756″ for k=1 and 1.7512″ for k=2. 4GM/(c²R☉) = 1.7512″. The Shapiro delay ∫(1/v−1)dl scales linearly with k, so k=1 gives half of GR. The "integrity is not needed" remark is correct.
+2. **"k=2 ⇒ PSR's absolute size 1−2U".** This only follows if light moves exactly one PSR per *universal* Moment. His fourth bullet says the inner limb moves "slower (**less PSR per moment**)". The natural reading is steps of one PSR each, with fewer steps per Moment. That is (B): the PSR shrinks to 1−U, and light moves (1−U) PSRs per Moment, so its speed is 1−2U. §1 paraphrases this faithfully, and §2 then silently uses the other reading. The data fix k=2 for *light*. They do not fix the PSR's size.
+3. **The clock ruling does not discriminate.** Row 4 satisfies clock rate = PSR_eff/l_P only in *proper* units; in lattice units its PSR is 1−2U, not 1−U. Row 3/(B) satisfies the ruling in *lattice* units, with the PSR at 1−U, the clock at 1−U and displacement counted in PSRs. Its proper PSR is constant. 4387 §3 already made this point ("partly a choice of units"), and that item is still open as 4387 owed (iv). 3386 itself says its proper reading "is a reading, not a ruling" (L40). Only row 5 is excluded robustly, because it fails in both unit systems. (B) is still live.
+4. **Units and one-PSR class.** The first-order metric is correct: g₀₀=−q², g_ij=q⁻² with q=1−U, and the grid size scales as PSR_eff². But in row 4 a crystal spans n/q PSRs, not n. So "crystal-rulers share the PSR" holds only as a statement about proper-unit rates, and 4385's "same number of PSRs" fails.
+5. **Fairness.** The founder file is filed verbatim. The §5 question is a fair physical picture, but it steers: it offers only row 4. It also does not say that row 4 contradicts his 4387 "same number of PSRs", which 4387 §5.2 had already flagged.
+6. **D-9.** `todolist.md` has no 4389 entry, but §4 lists owed items.
+
+**Required changes**
+1. **Rewrite §2's inference** as conditional. If light moves one PSR per universal Moment, the PSR is 1−2U (row 4). If it moves "less PSR per moment" in one-PSR steps, the PSR is 1−U (row 3/(B)). Quote his fourth bullet.
+2. **Put row 3/(B) back in the §3 table and the script.** Show that the clock ruling holds for it in lattice units and for row 4 in proper units. Replace "leaves one settled picture" with "excludes row 5; rows 3 and 4 remain, separated by the units choice (4387 owed iv) and by the mechanism."
+3. **§4 "one-PSR class returns".** State that in row 4 a crystal holds about n(1+U) PSRs, so his "same number of PSRs" fails. Restoring WC-EINSTEIN-AREAL depends on settling the units as well as on §5.
+4. **§5: ask both pictures.** Either (a) each step is one Planck sphere but takes a little more than a Moment near the Sun (his "less PSR per moment"; crystals shrink with the PSR), or (b) one Planck sphere per Moment, with crystals shrinking half as much and so holding more Planck spheres.
+5. **PD-008.** Mark the row-4 selection as the convenient branch. It "closes" the question by quietly turning a units reading into a ruling.
+6. **D-9.** Add a 4389 todolist entry: the §5 question(s), the crystal-settling mechanism, the second-order check against R-PSR-LAW-LOG's ½, the units decision, (B) as live, and the suspensions carried forward. Then run `code/deferral_gate.py`.
+
+**Minor notes**
+- VLBI bounds γ−1 at about 2×10⁻⁴. Say "a few ×10⁻⁴".
+- "Light speed on the grid" means per universal Moment, taken as Earth time to first order. Say so once.
+- The script's Part 3 only prints hard-coded strings, so it computes nothing. Either compute the ratios or label it as a summary.
+
+Files: `/root/CPP/series_standard_model/axiom_maturation/4389_wavefront_bending_fixes_the_factor_two.md`, `/root/CPP/series_standard_model/code/4389_wavefront_bending_on_the_grid.py`, `/root/CPP/todolist.md`.
+
+---
+
+## Claude's response to the 4389 return (not part of the verbatim report)
+
+- **HOLD adopted.** All six required changes and the three minor notes are taken in.
+- **Two pictures remain** after the rewrite: (a) his "less PSR per moment" (= 4387 (B)), and (b) one PSR per Moment (3386). §2's inference is now conditional on which one holds.
+- **Clock ruling across units:** part 3 of the script now computes it in both lattice and proper units. Row 5 fails in both and is excluded; (a) and (b) each pass in one.
+- **§5** now asks both pictures. **PD-008** marks the first draft's single-picture claim as withdrawn.
+- **D-9:** the todolist entry is added.
