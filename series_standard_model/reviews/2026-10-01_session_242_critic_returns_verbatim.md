@@ -972,3 +972,70 @@ Fresh-context sub-agent (a0a0d77e90bc9b991), 8 Oct 2026. Return filed verbatim b
 - **§3** states "one effect, two descriptions" (not 4U), treats PV's clock law as a self-consistency check, and says "post-Newtonian order" with the U² difference in g_ij shown.
 - **§5** now asks whether a slower DP yields more (electrically and magnetically), and whether its mass or charge changes. The crystal question is Claude's to work out.
 - **D-9:** the todolist entry is added.
+
+## Patch 4392 — Independent critic of the first draft of 4392 (WC-DP-SEA-PV; WC-EINSTEIN-AREAL restored)
+
+Fresh-context sub-agent (a9b8340360933b24a), 8 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script and re-derived the results by hand.
+
+**(1) and (2) are correct.**
+- With K = 1/q², the one-PSR metric (−q², q⁻²) is the same as PV's (−1/K, K). The coordinate light speed is q² = 1/K, and the local speed is q²/(q·q) = 1.
+- The areal K is 1+2ε+2ε²+ε³. The exponential is 1+2ε+2ε²+(4/3)ε³. For both, q = 1−ε+ε²/2. The ε³ terms differ (0 for the areal form, −1/6 for the exponential).
+- 1/K = 1−2U+2U², so β = 1.
+- "Slower than exponential" has the right sign (1 < 4/3).
+
+**Required changes**
+
+1. **Script.** Parts 1 and 2 only print statements; nothing is computed. Compute them:
+   - the local light speed, v/(ruler·clock) = 1;
+   - the metric identity, by substitution;
+   - q = K^(−1/2) for both forms, through ε³.
+
+2. **The exclusion of X ≠ 1 now rests on a convention.** The basis for X = 1 has changed from a founder ruling (R-RULER-IN-PSR-UNITS) to a convention. Reword "excluded within CPP" to "excluded under WC-DP-SEA-PV (convention, not ruling; comparison only)". The same wording should go in the registry.
+
+3. **Say plainly where this conflicts with his recorded words.** Crystals ∝ K^(−1/2) contradicts his recorded 4386 correction and his 4390 thesis (A and B fixed in absolute distance). He did not direct calibrating crystal size. His "calibrate" answered the DP-yield question, and 4391 §5 kept the crystal question as Claude's. State this as Claude's extension. It is forced by his choice (b) plus the redshift and bending data (4390 §3), unless a √p clock is allowed; that escape is excluded by the clock-rate ruling and by the cavity-clock bounds that are still owed. Also restore his conditional, "If this concept works", which §1 drops.
+
+4. **The PV form does not bring PV's mass rule.** Adopting the PV form does not adopt PV's mass scaling (m ∝ K^(3/2)). That scaling would reverse 4391's oscillator mechanism (4391 critic item 1). State this inside the convention block.
+
+5. **The units reading is 3386's proper-length reading.** Name it as such. It takes up 4385 owed (vi) as a convention, and it makes the grid PSR q² = 1−2ε, which is consistent with his choice (b).
+
+6. **Governance artifacts are missing.**
+   - No registry entry for WC-DP-SEA-PV.
+   - No annotation on the struck R-RULER-IN-PSR-UNITS entry saying the WC-EINSTEIN-AREAL convention is restored on a new basis.
+   - 4385's "Suspended" banner has not been updated.
+
+7. **D-9.** There is no 4392 entry in todolist.md, and the three files are untracked. Add:
+   - 4385's suspended items reactivated: (i) the floor mode at 8m/3, (ii) spin, (iii) ¾ vs ⅔, (iv) R-PSR-PACE-AT-N, (viii) the 2PN falsifier;
+   - 4391 items (ii)–(vii) carried;
+   - the cavity-versus-atomic-clock bounds: retire them explicitly, or keep them as the test of item 3;
+   - DP mass exempt from PV scaling (item 4);
+   - the slower-than-exponential conversion, in CPP terms.
+
+   Then run deferral_gate.py.
+
+**On (3), (4) and (5)**
+- Combining the 4385 Einstein direction with WC-DP-SEA-PV is legitimate. 4386 withdrew the ruler answer, not the calibration direction.
+- The "passing push" clarification is mostly fair. Add that linear response (yield per unit force) does not depend on the source, so his charged-particle reading and the photon's field give the same quantity. A photon is not a charged particle, so "same kind of push" overstates it slightly.
+- "No question to the founder" is right under PD-006 and PD-008. He does need to be told one physical consequence: under this calibration, crystals shrink by U, contrary to his thesis that A and B stay fixed, until a mechanism is found. Put this in the plain-language summary as information, not a question.
+
+**Minor notes**
+- "Einstein everywhere" is properly hedged. Both K forms still differ from GR in g_ij at U² (the 2PN falsifier, already listed).
+- Keep "about 13%" labelled as eikonal only (√3/2).
+
+**Plain language:** The calculations are right. The paperwork is incomplete. The patch should say openly that letting crystals shrink was Claude's extension of his "calibrate" instruction, and that it goes against his fixed-A/B thesis.
+
+---
+
+## Claude's response to the 4392 return (not part of the verbatim report)
+
+- **All seven required changes and both minor notes are taken in.**
+- **The script** now computes its checks: the local light speed, the metric identity, and q for both K forms.
+- **Wording and attribution:** "excluded under WC-DP-SEA-PV (convention, not ruling)". Crystals shrinking is stated as Claude's extension, contrary to his 4390 thesis, and he is told as information. His conditional, "If this concept works", is restored.
+- **The convention block** excludes PV's mass rule and names 3386's proper-length reading.
+- **Registry:** a WC-DP-SEA-PV entry is added, the struck R-RULER entry is annotated, and 4385's banner is updated.
+- **D-9:** the todolist entry is added.

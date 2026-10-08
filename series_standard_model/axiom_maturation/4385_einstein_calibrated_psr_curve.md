@@ -1,7 +1,7 @@
 # Rulers Are Fixed in PSR Units, So CPP Lives in Its One-PSR Class; Calibrated to Einstein as the Founder Asks, the Curve Matching Einstein's Redshift Versus Areal Radius Is q = e^(−asinh ε): His Photon Sphere, Shadow and Pitch Exactly, Damping About 13% Lower, Floor at 8m/3. It Needs the PSR to Resist Shrinking Gradually as Its Shell Fills: the Opposite of the Founder's Tentative Sign, and in Tension With R-PSR-PACE-AT-N
 
 
-> **Suspended (Patch 4386):** the founder withdrew his ruler answer (rulers are fixed in absolute distance), so R-RULER-IN-PSR-UNITS is withdrawn, and X = 1, WC-EINSTEIN-AREAL and the exclusion of WC-GR-EXTERIOR are suspended pending 4386 §6 (light bending). The maths here stands.
+> **Suspended (Patch 4386):** the founder withdrew his ruler answer (rulers are fixed in absolute distance), so R-RULER-IN-PSR-UNITS is withdrawn, and X = 1, WC-EINSTEIN-AREAL and the exclusion of WC-GR-EXTERIOR are suspended pending 4386 §6 (light bending). The maths here stands. **Restored (Patch 4392)** on a new basis: WC-DP-SEA-PV (founder-directed calibration; crystals ∝ K^(−1/2)). The class assignment is now a convention, not R-RULER-IN-PSR-UNITS (withdrawn).
 **Patch:** 4385. **Lane:** foundations, with GR. **Session:** 242.
 **Founder input:** `founders_voice/4385_rulers_in_psr_units_use_einstein_as_calibration_dps_act_in_vacuum.md`
 (answers 4384 §7).
