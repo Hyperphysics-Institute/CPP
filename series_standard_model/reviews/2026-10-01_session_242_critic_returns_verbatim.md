@@ -878,3 +878,52 @@ Files: `/root/CPP/series_standard_model/axiom_maturation/4389_wavefront_bending_
 - **Clock ruling across units:** part 3 of the script now computes it in both lattice and proper units. Row 5 fails in both and is excluded; (a) and (b) each pass in one.
 - **§5** now asks both pictures. **PD-008** marks the first draft's single-picture claim as withdrawn.
 - **D-9:** the todolist entry is added.
+
+## Patch 4390 — Independent critic of the first draft of 4390 (A and B fixed; one number, two jobs)
+
+Fresh-context sub-agent (a989e2ab7234d35e1), 8 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: ACCEPT WITH CHANGES.** The physics core holds. The draft has one fairness gap, one oversell, and is missing its D-9 entry.
+
+**Checks**
+1. **The "one number" argument.** With A–B fixed on the grid and all motion measured in PSRs per Moment, any oscillation that crosses A–B runs at a rate proportional to p. So it is fair to equate "more Moments to go the same distance" with clock ∝ p. I tried three escapes:
+   - **Photon redshift.** This fails as an escape. In a static field a photon's frequency counted in Moments is conserved, so the received ratio is the emitter's rate in Moments. GPS and Gravity Probe A compare those rates directly.
+   - **Anisotropic PSR.** This also fails. The clock rate would then depend on the crystal's orientation, which Hughes–Drever-type tests exclude.
+   - **A clock that is not a light-speed crossing.** This is the one real escape: CP motion at a speed that scales as √p. It is 4388's row 5. 4389 excluded it only by the internal clock ruling. Even then, a light clock (a cavity between fixed A and B) still runs as p, so comparing a cavity clock with an atomic clock over the annual change in the solar potential (about 3.3×10⁻¹⁰) would show the mismatch. The draft never names this escape.
+2. **Numbers.** All verified: U☉ = 2.12×10⁻⁶; bending 4U = 1.751″, half = 0.876″; GPS gravitational offset 4.435 mm × (1/R⊕ − 1/r) × 86400 s = 45.7 μs/day; the extra 45.7 μs × c ≈ 13.7 km/day. Gravity Probe A reached 7×10⁻⁵, so "~1e-4" is fine; Galileo's 2018 result (about 2.5×10⁻⁵) is stronger. The script's "measured 2.12e-06" just prints U itself. The solar redshift has only been measured to a few percent.
+3. **Balance-rule table.** It is reverse-engineered. The family p^n/d² gives d ∝ p^(n/2), so any exponent is available, and "per Planck-sphere length" is simply the n that fits. The draft does flag it ("illustrative, not derived"), which is honest. But it leaves out the most natural reading of "measured over its own Planck sphere", which is the volume: p³/d² gives d ∝ p^1.5, and clocks would then speed up. The §5 question offers "over its Planck sphere" as the working option without warning about this.
+4. **Tone.** The answer is direct and fair to the question he asked. §2 agrees with him first. The §5 question is a fair physical picture once the volume caveat is added.
+5. **D-9.** `todolist.md` has no 4390 entry (the last one is 4389, at L2520).
+
+**Required changes**
+1. **§3:** name the non-light-speed clock escape (row 5). Say it is excluded only by the clock ruling, plus the cavity-vs-atomic argument: a light clock across a fixed A–B runs as p whatever the atom does.
+2. **§3:** add one line on why redshift measurements cannot escape: photon frequency in Moments is conserved, so they read the emitter's rate directly.
+3. **§4 table:** add a "per Planck-sphere volume" row (d ∝ p^1.5, clocks speed up). State that the length rule was chosen to hit the target, so it is a fit, not a prediction.
+4. **§4 heading, title and §5:** change "can give exactly (b)" to "can give (b) only under one particular sensing rule". In §5, warn that the volume reading fails.
+5. **PD-008:** mark the √p rescue as the convenient branch, since it keeps his inverse-square language alive.
+6. **Script:** relabel "measured" as "GR value (solar observations agree to a few %)". Either compute the GPS 45.7 and the 14 km or label them as quoted.
+7. **D-9:** add the 4390 todolist entry and run `code/deferral_gate.py`. It should cover:
+   - the §5 founder question;
+   - the derivation of the balance rule;
+   - row 5's cavity-clock check, re-opened as the only data-level exclusion;
+   - 4389 owed items (ii)–(vi), carried forward;
+   - his statement that A and B stay fixed, flagged as conflicting with the data.
+
+**Minor notes**
+- d ∝ √p is exactly GR's isotropic spatial factor (1−U). Saying so would add confidence.
+- The title is very long; shorten it.
+- Script Part 3 prints hard-coded exponents. It could solve p^n/d² = const instead.
+
+Files: `/root/CPP/series_standard_model/axiom_maturation/4390_fixed_ab_one_number_two_jobs.md`, `/root/CPP/series_standard_model/code/4390_one_number_cannot_do_two_jobs.py`, `/root/CPP/todolist.md`.
+
+---
+
+## Claude's response to the 4390 return (not part of the verbatim report)
+
+- **All seven required changes and all three minor notes are taken in.**
+- **§3** now names the row-5 escape and why it is excluded (the clock ruling, and the cavity light-clock across a fixed A–B). It also says why redshift measurements cannot escape (photon frequency in Moments is conserved).
+- **§4** adds the volume row (clocks would speed up) and labels the length rule as a fit. The script now solves p^n/d² = const for each rule and computes the GPS numbers.
+- **The title is shortened.** PD-008 marks the √p rescue as the convenient branch.
+- **D-9:** the todolist entry is added.
