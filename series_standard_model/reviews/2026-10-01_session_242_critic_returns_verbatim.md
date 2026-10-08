@@ -927,3 +927,48 @@ Files: `/root/CPP/series_standard_model/axiom_maturation/4390_fixed_ab_one_numbe
 - **§4** adds the volume row (clocks would speed up) and labels the length rule as a fit. The script now solves p^n/d² = const for each rule and computes the GPS numbers.
 - **The title is shortened.** PD-008 marks the √p rescue as the convenient branch.
 - **D-9:** the todolist entry is added.
+
+## Patch 4391 — Independent critic of the first draft of 4391 (DP sea as polarizable vacuum)
+
+Fresh-context sub-agent (a0a0d77e90bc9b991), 8 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: ACCEPT WITH CHANGES.** I ran the script: all three parts reproduce what it claims. The weak-field bookkeeping is right. The problems are in how §2 hands off to §3, and in where the input U comes from.
+
+**Required changes**
+
+1. **Mass inconsistency between §2 and §3. This is the main problem.** §2 uses χ = q²/(mω₀²) with the charge q and mass m held fixed. §3 then imports PV, where every mass scales as K^{3/2}. The fragment itself relies on that scaling for the crystal shrink. If DP masses scale like other masses, then with ω₀ ∝ K^{-1/2} the response goes as χ ∝ K^{-3/2}·K = K^{-1/2}. The response would fall, not rise by 2U. Two fixes are possible: state that DP mass and charge are exempt from the scaling and owe a reason, or drop the claim that the oscillator mechanism reproduces PV. Puthoff postulates ε = Kε₀ and μ = Kμ₀. He does not derive them from oscillators. Add this to §4's owed list.
+
+2. **Both ε and μ are needed.** Since n = √(εμ), raising ε alone by 2U slows light by only U. That gives half the measured bending, the "Newtonian" value. Say this explicitly in §2. Also state the condition that ε₀ is entirely DP response (χ ≫ the bare part, per 4384). Otherwise ε = 1 + χ rises by less than 2U. The magnetic analogue is not shown at all. An oscillator's diamagnetic response does not scale as 1/ω₀². "Both rise by 2U" should be marked as an assumption, not a result.
+
+3. **Circularity.** "Slows by U (as all clocks do)" borrows the clock slowing. In PV, clock slowing is a consequence of K, so using it to derive K is circular. Make the chain one-way: SSV_abs (cite the CPP patch that derives the 1−U redshift) → DP ZBW slows by U → response rises → K. Then present PV's "clocks ∝ K^{-1/2}" as a self-consistency check, not a second cause. This is the founder's own premise, and the text should rest on it.
+
+4. **Double counting.** The text has light slowed by 2U through the DP index, and also by 2U through the PSR grid size ∝ 1/K. State in §3, not only in §4, that these are one effect described two ways. Otherwise the reader gets 4U.
+
+5. **"Through second order" is overstated.** Exponential g₀₀ matches isotropic Schwarzschild through U², so β = 1. But g_ij = e^{2U} = 1+2U+2U² against (1+U/2)⁴ = 1+2U+1.5U², which differs at U². Say "through post-Newtonian order (β = γ = 1)". The Mercury claim then stands. The strong-field statement is correct: the shadow 2e·M ≈ 5.44M against 3√3M ≈ 5.20M is +4.6%. The identification with the 4375 κ=0 exterior is consistent.
+
+6. **D-9.** `todolist.md` has no 4391 entry, and the three files are still untracked. Add entries for:
+   - DP ε and μ both ×(1+2U), with the mass exemption (item 1);
+   - CPP crystal ∝ K^{-1/2};
+   - the PSR/DP split;
+   - the second-order check against R-PSR-LAW-LOG;
+   - the GW250114 strong-field tension.
+
+   Then run `code/deferral_gate.py`.
+
+**Minor notes**
+- The founder file appears to be his text filed verbatim, as labelled. §1 summarises it fairly, including the point that A and B are marking points, really GP A and GP B, and his "calibration" bullet.
+- §5: the first question (does a slower DP yield more, electrically and magnetically?) is a fair physical-picture question. The second (do the CPs sit closer?) is a derivation Claude owes under PD-008; drop it. Replace it with the real picture question: does a slower DP's mass or charge change, or only its rate? That decides item 1.
+- §6 is honest about which branch was the convenient one.
+- Script line "light*clock^-1/ruler" is correct but cryptic. Write it as v/(ruler·clock).
+
+---
+
+## Claude's response to the 4391 return (not part of the verbatim report)
+
+- **All six required changes and the minor notes are taken in.**
+- **§2 is now a one-way chain.** SSV_abs slows the ZBW (the clock-rate ruling with R-PSR-LAW-LOG) → the response rises → K. Its three conditions are stated: DP mass and charge fixed (the PV mass scaling would reverse it); both ε and μ rising (the magnetic part is marked as an assumption); and ε₀ and μ₀ being essentially all DP response.
+- **§3** states "one effect, two descriptions" (not 4U), treats PV's clock law as a self-consistency check, and says "post-Newtonian order" with the U² difference in g_ij shown.
+- **§5** now asks whether a slower DP yields more (electrically and magnetically), and whether its mass or charge changes. The crystal question is Claude's to work out.
+- **D-9:** the todolist entry is added.
