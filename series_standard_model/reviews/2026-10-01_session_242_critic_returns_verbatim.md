@@ -1083,3 +1083,60 @@ Fresh-context sub-agent (a62159b97a4d30732), 8 Oct 2026. Return filed verbatim b
 - **The conflict with 4391** is stated plainly: 4391's mechanism and 4393's bookkeeping cannot both hold as written.
 - **The photon-drive ingredient** is marked as reinterpreted, and the "slower alone" row is marked for contrast only.
 - **D-9:** the todolist entry is added.
+
+## Patch 4394 — Independent critic of the first draft of 4394 (AP-4 / A3′ C5 and the factor 2)
+
+Fresh-context sub-agent (a1db0b83767c87f45), 9 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: HOLD.** The arithmetic is right, but the central claim misreads C5.
+
+**Checks**
+- The script runs. The trace reversal is correct: h̄₀₀ = H gives h₀₀ = h_ii = H/2. That is linearised GR in harmonic gauge.
+- The muon/electron mass ratio is 206.8 and the reduced-mass ratio is 185.9. Both correct.
+- "3U" is correct: E falls by U and c_grid² falls by 4U, so m rises by 3U.
+
+**Required changes**
+
+1. **C5 does not say Φ alone supplies the spatial half.** C5 itself says statics "reduces exactly to the c07 map". The c07 map (C07-STATIC-COMPLETENESS-RESOLVED §2) gives g_tt from the scalar and g_ij from the vector V_i. A3′'s own list says V_i "sources spatial curvature … g_ij statics". GR-1i §10 says the same: half from the clock (scalar), half from the "compressed spatial lattice (vector)", and "a scalar-only Sea would bend light half as much." So the draft's line "one census … in statics, no other channel" contradicts the shipped corpus. Fix: cite c07 and GR-1i for γ = 1, and drop the "one census, equal parts" derivation. Also state as an open item that C5's text lists V_i under h̄₀ᵢ, while c07 and GR-1i put V_i in g_ij. A nonzero static SSV_net makes this question real.
+
+2. **Geodesics do not set ruler size.** C5 governs how CPs move. A bound CP is not in free fall, since electric forces act on it. Crystals shrinking in absolute coordinates needs a further assumption: that the non-gravitational forces also couple to the same metric. That is the founder's 4385 "same physics in every frame", which is exactly 4393's result. The sentence "geodesic coupling makes local physics the same everywhere" is false as written. Fix: γ = 1 is in the corpus (c07, GR-1c, GR-1i). Crystals shrinking is γ = 1 plus metric universality, not C5 by itself.
+
+3. **Drop "his A-and-B thesis conflicts with C5 as ratified."** That claim depends on items 1 and 2. The supportable conflict is with the data plus his own 4385 principle, already recorded in 4390, 4392 and 4393. Moving it to the level of an axiom puts undue pressure on him.
+
+4. **The table double-counts.** It gives light's first U to the PSR and the second U to the Dipole Sea. 4392 puts all of light's 2U in the PSR grid size ∝ 1/K, with the sea causing the PSR to shrink: one effect, and 4391 owed (v) is still open. GR-1i splits the halves scalar/vector instead. Pick one bookkeeping, or present the table as one effect read out two ways. Mark "DI-bit shell = strong-field modifier" as Claude's placement, not derived.
+
+5. **Fix the §6 question.** "If … the pull between them is about the same" gives a shrink of −⅓U, not U (3δa = δk − δm − 2δω = 0 − 3 + 2). The 4393 bookkeeping needs the pull weaker by 2U. Say "slightly weaker pull". The muon analogy also partly answers the question for him. Keep it, but frame it as an illustration.
+
+6. **D-9 is not met.** todolist.md has no 4394 entry. The gate printed PASS on HEAD, which does not include the 4394 files. File these:
+   - the Φ-vs-V_i attribution of static g_ij (C5 text vs c07/GR-1i);
+   - the static h̄₀ᵢ ← V_i tension;
+   - a PCD mechanism for C5's readout;
+   - the metric-universality premise behind the ruler shrink;
+   - the DP-arc force picture as the candidate for +3U;
+   - the DI-bit shell placement;
+   - founder question 4394 §6;
+   - the PSR/DP-sea single-effect question (carried from 4391 (v));
+   - 4391 vs 4393 (carried).
+
+**Minor notes**
+- "Extension, not foundation change" is the right answer. The reason should be "GR-1i already ships γ = 1 with this split", not the trace reversal.
+- The muonic hydrogen point holds only at fixed coupling. Here the coupling also weakens by 2U, so the net is −U. Say so.
+- The PD-008 section should also mark "it's already in the axioms" as the convenient branch for the conflict claim.
+- The founder file is verbatim and fair.
+
+**Plain language:** The factor 2 is already in the corpus, but through the vector channel (GR-1i), not hidden inside the scalar formula as the draft says. "Matter follows geodesics" does not by itself make crystals shrink. That needs the extra rule that all forces feel the same geometry. So don't tell Thomas his idea breaks an axiom. Fix the table and the question, and file the owed items.
+
+---
+
+## Claude's response to the 4394 return (not part of the verbatim report)
+
+- **HOLD adopted.** All six required changes and the minor notes are taken in.
+- **The fragment is rewritten around GR-1i §5, the c07 map and GR-1b.** The space half is the vector channel V, carried by AP-4's E slot. So AP-4 is directly applicable, and the answer is "extension, not foundation change", for the shipped reason.
+- **Removed:** the trace-reversal derivation, and the claim that his thesis conflicts with an axiom.
+- **Crystal shrink** is now stated as γ = 1 plus metric universality, which is his own same-physics principle.
+- **The table** uses GR-1i's scalar/vector bookkeeping, with 4392's single-K form noted as the same effect read another way. The DI-bit shell placement is marked as Claude's.
+- **The question** now says "slightly weaker pull", with the muon as an illustration.
+- **The script** now computes scalar-only versus scalar-plus-vector bending.
+- **D-9:** the todolist entry is added.
