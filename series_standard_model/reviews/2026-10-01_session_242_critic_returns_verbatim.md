@@ -1039,3 +1039,47 @@ I ran the script and re-derived the results by hand.
 - **The convention block** excludes PV's mass rule and names 3386's proper-length reading.
 - **Registry:** a WC-DP-SEA-PV entry is added, the struck R-RULER entry is annotated, and 4385's banner is updated.
 - **D-9:** the todolist entry is added.
+
+## Patch 4393 — Independent critic of the first draft of 4393 (oscillating CPs; Kepler shrink)
+
+Fresh-context sub-agent (a62159b97a4d30732), 8 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: ACCEPT WITH CHANGES.** The arithmetic is right, but the framing claims more than the result supports. I ran the script and re-derived the results by hand.
+
+**Required changes**
+
+1. **The "mechanism" is really a consistency result, and the argument is circular.** In the Bohr form, m = ħω/(α²c²_grid) holds identically, and α is constant for every μ. So "m = E/c²_grid" adds no constraint. For any μ, ħω/c² ∝ K^(μ−2)·K² = K^μ = m. The "+3U" in §2 comes from "energy down U", and that is the redshift input itself. The size also follows directly: a ∝ c_grid/ω, which is just "local light speed constant". With c down 2U (bending) and ω down U (redshift), a falls by U. Kepler adds nothing beyond local light-speed invariance plus the two measurements. Required: (a) state that the shrink is equivalent to redshift + bending + local light-speed invariance; (b) drop "no longer just Claude's extension" and say "a consistent reading compatible with his ingredients; μ is an input taken from redshift, not derived"; (c) remove "mass is an energy equivalent" as a separate ingredient, since it is automatic.
+
+2. **Grid versus local light speed.** Using c_grid is legitimate only as a far-away (coordinate) bookkeeping, which is how PV assigns m ∝ K^(3/2). A locally measured mass is unchanged. Say so. §5 asks whether mass is "energy measured against the *local* speed of light", but local light speed does not change, so that question gives no rise. Change it to grid (far-away) speed, or reframe §5 as "judged from far away, is a CP near the Sun harder to move?"
+
+3. **The 4391 tension is understated.** The same identity applied to a DP's own ZBW (E = ħω_ZBW) raises the DP's mass by 3U too. That reverses the 4391 oscillator mechanism, whose response goes as 1/(mω₀²) and falls to K^(−1/2), and 4391 owed (ii) and 4392 owed (a) both rest on it. The proposed escape, "a DP's ZBW is internal, not a bound orbit", conflicts with his own message, which describes isolated ± CPs passing through each other in the ZBW. Either supply a real distinction or state plainly that 4391 and 4393 cannot both hold as written.
+
+4. **Fairness to his message.** His second ingredient, the photon driving the CPs more slowly, is replaced by "softer sea weakens the force by 2U". Say that it was reinterpreted, and that the photon-drive idea as he stated it is not modelled. Also say that row 1 of the table (slower alone, so it grows) is unphysical: with k and m unchanged, ω cannot change.
+
+5. **D-9 is not met.** todolist.md has no 4393 entry, and the deferral gate fails. File these: the §4 tension (item 3); "is μ derivable in CPP without redshift"; the magnetic ×K premise; ħ fixed; Kepler/Bohr scaling for cages and the ZBW; the founder's §5 question; the 4392 (a) status change. Then run deferral_gate.py.
+
+**Checks that pass**
+- The table's signs are right: 3δa = δk − δm − 2δω gives +⅔, 0, −1.
+- k ∝ 1/ε is the right force constant. Coulomb binding dominates, and magnetic terms are of order v²/c². The magnetic ×K matters for light speed, not for the binding, so k ∝ 1/K stands.
+- Bohr exponents: size K^(1−μ) and rate K^(μ−2), with local c and α constant. Correct.
+- μ = 3/2 reproduces Puthoff's PV scaling exactly.
+
+**Minor notes**
+- §6's convenient branch is honestly marked, but it should also name the circularity in item 1.
+- Isotropic shrink matches PV and isotropic Schwarzschild only to first order (the 2PN falsifier is already owed).
+- The script prints μ = 3/2 as "selected", but μ is entered from redshift. Label it as an input.
+
+**Plain language:** The sums are right. But the shrinking crystal is not explained by a new mechanism. It comes straight from two measurements plus the rule that light's speed measures the same everywhere locally. The patch should say this, fix the wording of the question to Thomas, admit the clash with the earlier DP argument, and file its owed items.
+
+---
+
+## Claude's response to the 4393 return (not part of the verbatim report)
+
+- **All five required changes and the minor notes are taken in.**
+- **The fragment is reframed as a consistency result.** The shrink follows from redshift, bending and constant local light speed. Constant local light speed is the founder's own 4385 principle, "the same physics in every frame". Kepler translates it into "heavier by 3U, judged from far away", with μ entered from the redshift and labelled as an input.
+- **The masses are grid bookkeeping.** The founder question now reads "judged from far away".
+- **The conflict with 4391** is stated plainly: 4391's mechanism and 4393's bookkeeping cannot both hold as written.
+- **The photon-drive ingredient** is marked as reinterpreted, and the "slower alone" row is marked for contrast only.
+- **D-9:** the todolist entry is added.
