@@ -436,12 +436,9 @@ But having said that we should not attend yoga classes, I did not follow that ad
 - The Bible declares that Jesus Christ is the truth and the way, and no man comes to the Father except through Him. If this is True, and I believe it is, following other spiritual paths without comparing them to the Truth of Jesus’s life and His direction as Lord and creator will put the spiritual seeker at risk of being distracted by disciplines that cannot restore our love-relationship with God in the only way that He has authorized.
 
 
-
-
-
 Summary Essay:
 
-**“Divine Singularity: A ****Theological Analysis of Psalm 51:4’s Implications for Divine-Human Relations”**
+**“Divine Singularity: A Theological Analysis of Psalm 51:4’s Implications for Divine-Human Relations”**
 
 
 **Abstract:**
@@ -534,7 +531,7 @@ Divine sovereignty over physical laws while maintaining their consistency
 **Critical Analysis:**
 
 
-**The CPH presents several advantages:****
+**The CPH presents several advantages:
 
 **Offers a coherent framework for understanding divine creation ex nihilo
 
@@ -562,9 +559,6 @@ Mind-body relationship
 Divine action in physical systems
 
 Free will and determinism
-
-
-
 
 
 **God is Everywhere**

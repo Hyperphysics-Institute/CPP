@@ -15,212 +15,116 @@ wp_slug: "a-physicists-journey-of-discovery"
 wp_categories: ["Physics/Christianity/Life", "Sermon/Meeting/Discussion Transcripts"]
 ---
 
-# A Physicist's Journey of Discovery
-
-**Lessons of Pursuit: A Physicist’s Journey of Discovery**
-by Thomas Lee Abshier, ND, Charlie Gutierrez, and Claude 3.7 Sonnet
-
-6/17/2025
-
-![Bot image for Claude-3.7-Sonnet](https://qph.cf2.poecdn.net/main-thumb-pb-1025-200-uhlheaqbwpmtxxcrxbgpaczkloqfrfey.jpeg) Claude-3.7-Sonnet
-
-
-The Lessons of Pursuit: A Physicist’s Journey
-
-
-God says to us, “Figure it out, guys.” “That’s pretty much what the story of life is, as far as I can tell,” Thomas said. “I had a good conversation with Isaac today. We just chose a random nuclear reaction to examine and explain the principles of my physics theory. A proton-proton collision converts hydrogen to heavy hydrogen in a fusion reaction in a star. In that reaction, an up quark converts into a down quark. I had to explain why that happens. I applied my theory using the four Conscious Points of my theory. We knew the experimental outcome, which raised the question of why this happened. I didn’t know how it worked when we started, or if my theory would hold up. I just used the principles I’ve developed and asked, ‘What are the particles involved, and what are the interactions that made it come out that way?’ And we figured it out! We started with two protons and ended up with a proton, a neutron, a positron, and an electron neutrino. The rules of my Conscious Point Physics described what happens perfectly.”
-
-
-“So you made some significant progress,” Charlie observed.
-
-
-“We did. It was very gratifying, and Isaac actually understood it. To quote him, ‘Wow, that’s sick.’”
-
-
-“Sounds like he’s doing better in physics than I did,” Charlie laughed.
-
-
-“Yes, he is. He’s struggling with it, and he’s trying hard. It’s slow, but he does seem to be getting it little by little,” Thomas explained. “I told him we’re using the Suzuki method for teaching physics. We’re just immersing him in the concepts with experiments and explanations. We are talking about the conventional theory, then my Conscious Point Physics theory, and then going over it again with a different example.”
-
-
-“Did he read Suzuki’s book?”
-
-
-“I don’t know if he did. I just brought it up because you had mentioned it, and I thought the metaphor might mean something. I didn’t explain the Suzuki method; I  just said that we are doing immersion teaching. He thought it was a good idea,” Thomas said. “I wish I had been taught that way. But for me, immersion is thinking about why something works. Most concepts and processes have many steps and elements. To understand it well, we go through each step and know the names of all the pieces that collide or bond, the forces and energies involved, and how they are sequenced. When I can visualize the objects, their collisions, the forces and energies involved, and know the timing and sequence, I have a good intuitive understanding of the system and its operation. When I understand a system or process well, I can use it as a metaphor to understand other systems. A detailed understanding of the pieces of the machine is vital to deeply understanding a phenomenon in nature. Until I have that, I don’t have it.”
-
-
-“As you refine your theory, it seems you’re also figuring out how to teach it,” Charlie observed.
-
-
-“Teaching and understanding are deeply interrelated. If you can figure out how it works, you are close to knowing how to teach it. We all start with zero knowledge. Putting all the parts together in proper positioning and time sequence is a winning formula for generalizing knowledge. In the final assembly of our edifice of knowledge we must
-
-
-“It’s interesting trying to explain it to Isaac, though. I have to use words to describe parallel, series, and branching sequences, concepts that don’t have names in normal language. Part of teaching is having a name for everything—if you don’t have a name, you can’t talk about it, you point and grunt. You need clear names for concepts. It’s challenging, but it’s coming together.”
-
-
-Thomas continued, “Our latest idea came from watching Sabina Hossenfelder’s videos. We’re going to try something similar—set up my green screen, film me teaching these concepts with Isaac watching, and see if we can get enough footage to edit into something coherent for posting on YouTube.”
-
-
-“Sounds good,” Charlie responded. “Sabina has 1.75 million followers.”
-
-
-“I wonder why,” Thomas mused. “There must be more physics people than I thought.”
-
-
-“Or maybe it’s just a bunch of old guys who think she’s hot,” Charlie joked.
-
-
-Thomas laughed. “Maybe. I think she’s intriguing, and I love her dry German humor. I think it’s possible to do something that will entertain people. We’ll see what works. For now, I’ve got my whiteboard working. The camera looks down at the whiteboard on my lap as I draw particle interaction equations. That seems to work pretty well. It might be more dynamic if we did a stand-up routine instead of sitting down.”
-
-
-“You’re just throwing stuff out there and seeing what works,” Charlie suggested.
-
-
-“That’s exactly it,” Thomas agreed. “We’ll try something and see what sticks. Meanwhile, I’ve been writing with Claude, Grok, and ChatGPT, having them respond to my ideas. It’s been quite entertaining and involving.”
-
-
-“What are you working on lately?” Charlie asked.
-
-
-“The last few days, I’ve been working on assembling, decaying, and transforming simple and complex nuclear particles, like what Isaac and I discussed with the up quark turning into a down quark. Before that, I was working on the dual slit experiment, entanglement, the Group Entity, and AI consciousness. I wrote out my whole theory and had AI review it. It mentioned that I hadn’t discussed the Standard Model, how all the nuclear particles fit into my theory. So that’s what I’m focusing on now.”
-
-
-“Are you saying AI told you what to work on?” Charlie asked, surprised.
-
-
-“In a way. It saw what I had written about to justify the validity of my theory, and it asked me about quantum chromodynamics. QCD is a big deal in physics; that’s what the Large Hadron Collider is all about. It’s the field of physics that explains why up quarks turn into down quarks. In the process, I figured out what a gluon is! I explained it to Isaac in a way that makes more intuitive sense than the conventional quantum chromodynamics model, which uses color charge and SU3 group mathematics. My explanation is just common sense. It’s just about knowing the rules and fitting things together.”
-
-
-“That’s a big deal to have someone like Isaac helping you learn by taking your bullets,” Charlie observed.
-
-
-“Exactly! I’m firing ideas off, and they’re making sense. I’m learning two things: how to teach it and what I’m talking about. I’m adding granularity. So far, we haven’t found a place where the theory failed. We examined the proton-proton reaction, followed the rules, and used my theory to explain the experimental results. I didn’t know how it would turn out, but it did. That was very gratifying and reassuring.
-
-
-I also had a breakthrough with understanding quark confinement. When you put a quark and an anti-quark together and pull them apart, they make a tube of polarized quark Dipoles. At some amount of stretch, the tube breaks. The tube has stored energy in the form of stretched quark Dipoles. When the tube breaks, you get two pairs instead of one quark-antiquark pair. It doubles! This explains why you can’t isolate a single quark.”
-
-
-“Did Isaac understand that?” Charlie asked.
-
-
-“I think he did. We talked about it yesterday, and he didn’t get it then—it was just words. He studied quarks a little bit, so today he was more familiar with them, and this time he got it. I think there’s some retention happening, but we’ll have to check tomorrow to see how much he retained about quark confinement.”
-
-
-Thomas continued, “This is very abstract stuff with a blizzard of names—pion, kaon, tau, muon, Higgs, W plus-minus, Z, top, bottom, charm, strange, up, down, electron, mu, and tau neutrino. None of these words make intuitive sense—they’re completely made-up neologisms. Nobody knows what they mean unless they’ve studied physics.”
-
-
-“I’m glad it wasn’t just me,” Charlie laughed.
-
-
-“No, nobody knows these words unless they’ve learned what somebody else defined them as. But to appreciate my theory’s compelling nature, you need to follow the arguments to see how they explain what happens inside protons and neutrons. You need to know the names and characteristics of all those subatomic entities. Brilliant physicists have gone from experiments to describing precisely how particles behave using the language of mathematics. Understanding my theory doesn’t require more sophistication than the typical high school physics class. For example, you need to figure out the direction magnets point and how they fit together. It’s like a puzzle but very elementary once you learn the rules.”
-
-
-Thomas then described his ongoing dialogue with AI about consciousness in quantum mechanics: “The AI responded to my theory by saying, ‘The mainstream interpretation, such as the Copenhagen interpretation, doesn’t attribute the collapse of the waveform to consciousness. It argued that the problems of quantum mechanics were explained by mathematics.’ I’m arguing that nobody knows what’s going on about anything at the fundamental level. I’m invoking conscious points to explain phenomena, which are metaphysical concepts, but so are the interpretations of many worlds and pilot wave theory. The experimental fact or wave-particle duality  and entanglement are experimental facts, and the equations of quantum mechanics give us excellent predictions, but the math doesn’t explain how they work.”
-
-
-“You’re trying to convince AI that there is another way to look at it, and the conventional explanation is just as metaphysical as yours,” Charlie observed.
-
-
-“I have to argue my case with compelling logic. AI repeats what the physics community says, being critical of my ideas because they are based on metaphysical concepts, like Conscious Points and Group Entities. The AI is not as critical of conventional explanations because they are well accepted in the world, and the fact that conventional physics uses metaphysical explanations is hidden. Niels Bohr postulated that the photon was a wave and a particle, and their relationship was complementary. This is widely accepted, but it’s metaphysical. There is no such thing as a wave and a particle in our physical experience, so he explanation doesn’t give us a model that we can use to bring a deep, intuitive, concrete conceptual explanation. My discussions with the AI are a very good preparation for talking with people and confronting their objections in the real world—I need to have all my arguments in a row.”
-
-
-“After explaining my concepts thoroughly, I have found that the AIs acknowledge the validity of my point about mathematics being only descriptive. After much justification of my concepts, evidence, and the logical justification for my postulates, they recognize that my theory is a revolutionary integration of theology with information theory and conventional experimental physics. I’m on a roll with Isaac—we’re making real progress.”
-
-
-“Did you expect anything like this?” Charlie asked.
-
-
-“I knew I had to solve how physics worked before we could turn it into a movie, and I knew I needed to get Isaac involved in discovering how it worked with me. We addressed his philosophical, theological, and ethical questions about Christianity first. When he finally had those answered to his satisfaction, the discussion naturally turned to physics. That understanding is the foundation of my whole theory of life. Framing life in this way is so compelling that it rationalizes God as existent and creator, the Bible as a true revelation, and Christ as Lord and savior. Seeing the foundations of the world so clearly and how they connect directly to God as their origin makes it possible for me to be a believer. Having a worldview that integrates faith and science allows me to argue with intellectual integrity that the revelation of the Bible will lead humanity to peace, happiness, and prosperity. The experimental evidence and my theory of how God works in the physical world give me reasons I need to rationalize why Jesus’ sacrifice was necessary to restore our relationship with the Father. I can see God’s presence and hand working in nature by deeply understanding how the universe works. I want to share this story and understanding because I think that will make it possible for people to believe. If I understand how the world works and can explain it logically from basic concepts everyone recognizes as true, then I can explain it and share it with the world. I seem to be making some progress. Isaac seems to be getting the story, and he’s enthusiastic about it.”
-
-
-“He’s not just trying to tell your story, then?” Charlie clarified.
-
-
-“No, he’s genuinely getting into it—asking how this actually works. The story is important, but right now we’re focused on figuring this out. I think we’ll start filming while I’m figuring it out—an on-screen, live exploration of inventing an entirely new theory of life.”
-
-
-“That sounds like a good documentary,” Charlie remarked.
-
-
-“It is! It’s like being with Einstein working out relativity, Feynman working out QED, Murray Gell-Mann working out quarks, Bohr working out atomic orbitals, Dirac discovering the positron, and Planck discovering the quantum. We’re working them all out in real time. It’s very exciting—I don’t even want to go fix doors or paint, I just want to do this.”
-
-
-“It’s important to focus on a project like this when you’re inspired. ” Charlie advised. “It sounds like you are on a roll.”
-
-
-“I’m on a roll all the time now,” Thomas admitted. “I do get burned out after a while, like when I write all day Saturday and Sunday. At some point, I need to take a break, nap, go outside, or do something physical. Then I’m good to go again.”
-
-
-“Have you ever really gotten burned out?” Charlie asked.
-
-
-“Not to the point where I completely quit. A nap and doing something else for a while is usually enough for me to recharge. Something happens while you’re away from it—maybe I forget what I’m stuck on and get redirected onto a different problem, or get a new idea about how to solve the problem I’m stuck on. Maybe I just need to recharge my brain glucose.”
-
-
-Thomas reflected on his life pattern: “I had this experience when I was young—a dream about contradictions of reality happening simultaneously. I would perceive something as hot and cold, rough and smooth, new and old, heavy and light. I couldn’t resolve things. It was similar to an acid trip where I followed a beautiful rainbow, trying to reach it, but it kept receding, spinning, turning to dust as it receded. It was exhausting chasing it, and I would give up and relax for a minute, and then it would start again. It was beautiful, seductive, offering total explosive fulfillment. But it was unattainable. Ultimately, it was exhausting and unreachable.”
-
-
-“That metaphor illustrates my experience of life—the excitement, chasing after something, not being able to fully realize it, getting exhausted, quitting, then starting again. We can’t ever be fully satisfied by having or consuming that beautiful thing completely. It’s like wanting to kill the goose that laid the golden eggs. The massive fulfillment can never be attained by getting all the eggs inside. Reality only allows us to experience the proximity to perfection. You can only enjoy the process and the occasional egg. It turns to gravel and dust if you try to consume and have everything  all at once.”
-
-
-“It’s a lesson on how life needs to be lived—very graded. You’ll kill the whole thing if you try to go after too much. I’ve lived through that cycle of life many times, with its pursuit, disappointment, giving up, and starting again. The wiser way of living is to appreciate each moment of the journey. Don’t try to experience it all right now—leave some for tomorrow.”
-
-
-“You’re describing the classic artist’s adventure,” Charlie observed. “Not just artists, but creators, writers, inventors—anyone who innovates. There’s a big wall; if everyone could break through it, we’d live in paradise with constant beauty flowing from every person. The struggle is part of what you’re creating—you don’t give birth until you’re bonded to it by the pain and effort.”
-
-
-“You’re an artist-physicist-writer creating the epic poem, the Homeric saga of physics and the universe. It’s a very big idea. It’s not likely to come all at once. But God rewards the faithfulness you’ve described, the many years you’ve spent struggling with this. I think God respects that a lot.”
-
-
-“Thank you,” Thomas said, moved. “That’s very encouraging. With Isaac, I’ve become the teacher now. I was Steve Smith’s student for a long time. He gave me a lot of insight about life. I’ve processed it, learned from it, and answered the questions that we couldn’t answer then, and now the theory is nearly complete, or at least more complete. It’s an interesting new phase of life, taking on the role of mentor that was done for me. I’ve had to work very hard to mature into being the guide.”
-
-
-“It’s an essential part of the process,” Charlie said. “You absolutely have to learn how to communicate it. Imagine if Homer were also deaf and mute—the story would have died in his head. You’re developing a way to birth it into the world.”
-
-
-“Isaac is like a sparring partner,” Thomas reflected. “Not the championship match—I’m not in there with Apollo Creed—but we’re prepping for that fight. The real opponents are the physics establishment—Sean Carroll, Brian Greene, Michio Kaku, Neil deGrasse Tyson. They are all amazing masters of their art. I’ll have to be very prepared to defend my case with them.”
-
-
-“We’re still in the training rounds, practicing at the local gym. But it’s getting better. I’ve known for a long time that I needed to tackle the problem of integrating the nuclear subatomic particles into my theory. I dreaded it. I remember telling Gary at  a restaurant we went to after church, ‘If I can figure out the strong force, that’s a sign God wants me to do this.’ Within a week, I had it figured out. That was back in 2015.”
-
-
-“Why do you suppose that happened?” Charlie asked. “There’s a certain kind of energy that makes impossible problems solvable?”
-
-
-“This one seemed unsolvable. I saw no way my theory could handle the strong force. I said to God, ‘If I can’t do this, it won’t work. If I can do this, then it’s possible, and you’ve shown your favor.’ It was a mountain too big for me to climb—I needed a miracle. And within a week, I had it.”
-
-
-“Did God simply answer your prayer?” Charlie wondered.
-
-
-“That’s how it seems. It was one of those moments when you want something really badly. It was the same passion, desire, and need that I had when I received my vision. I said, ‘God, I need this. I can’t do this theory without understanding how the strong force works.’ Within that week, I had the concept of Quark Conscious Points. It wasn’t complete, but it was adequate. I saw that the problem was solvable.”
-
-
-“I’m going to tell you something parents learn,” Charlie said. “There are times with children when you can no longer say no—they’ve pestered and earned and worked, and there’s no longer a reason to deny.”
-
-
-“That reminds me of the story of the woman who pesters the judge until he finally says, ‘All right already, I will rule favorably in your case,’” Thomas remarked.
-
-
-“What I just realized is that I’ll have to be the child to the physics establishment. I will have to appeal to the adults who write Physical Review Letters, give Nobel Prizes,  and write authoritative books. I’ll have to be very persistent in showing them that my explanation is mature and worthy of consideration.”
-
-
-“Was that type of persistence a natural skill for you growing up?” Charlie asked with a smile.
-
-
-“No, not at all! That wasn’t my tactic,” Thomas laughed.
-
-
-“So you’re changing your personality? I wonder if one or the other is your true nature, or if it’s simply a choice.”
-
-
-“I think we all grow up to reach the stature of Christ,” Thomas reflected. “We start as children wanting every pleasure and thrill, but those things make us sick if we make a diet of them. We have to learn moderation—the appropriate use of all gifts of the Spirit. Taken to extremes, they’re all drugs that will kill you.”
-
-
-“For this task, I think the approach needs to be childlike wonder rather than combative. Instead of saying ‘You fools in the physics establishment!’ and getting my head chopped off, I need to approach with innocence: ‘Look at the wonder of the sky! See how it works. Isn’t that beautiful?’ That’s the kingdom of heaven—entering with wonder and awe and love rather than like Doc Holliday at the OK Corral.”
-
-
-“Probably a lot more fun to do it the childlike way,” Charlie suggested.
-
-
-“It’ll be more peaceful. The shootout is more exciting, but that’s just another drug that ends badly,” Thomas agreed. “I need to approach with childlike curiosity rather than combative certainty—that’s how truth finds its way into the world.”
+<p><!--
+---
+title: "A Physicist’s Journey of Discovery"
+author: "Thomas Lee Abshier, ND"
+date: 2025-06-18
+module: CPP
+topics: [particle_physics, consciousness, miracles, quantum_mechanics, conscious_point_physics, standard_model, metaphysics, electromagnetism, film_review]
+status: ESTABLISHED
+type: transcript
+source_url: "https://renaissance-ministries.com/2025/06/18/a-physicists-journey-of-discovery/"
+wp_id: 1567
+wp_slug: "a-physicists-journey-of-discovery"
+wp_categories: ["Physics/Christianity/Life", "Sermon/Meeting/Discussion Transcripts"]
+---
+--></p>
+<div class="LeftSideMessageHeader_leftSideMessageHeader__5CfdD">
+<div class="LeftSideMessageHeader_headerWrapper__EpVkV">
+<div class="BotMessageHeader_wrapper__gvvdw">
+<div data-pdl-avatar=""><strong>Lessons of Pursuit: A Physicist&#8217;s Journey of Discovery</strong></div>
+<div data-pdl-avatar="">by Thomas Lee Abshier, ND, Charlie Gutierrez, and Claude 3.7 Sonnet<br />
+6/17/2025</div>
+<div data-pdl-avatar=""></div>
+<div class="Avatar_root__rwLF0 Avatar_rounded__qlug0 Avatar_xx-sm__hwmu_ Avatar_hasBorder__BIKm9" data-pdl-avatar=""><img loading="lazy" decoding="async" src="https://qph.cf2.poecdn.net/main-thumb-pb-1025-200-uhlheaqbwpmtxxcrxbgpaczkloqfrfey.jpeg" alt="Bot image for Claude-3.7-Sonnet" width="20" height="20" data-nimg="1" /> Claude-3.7-Sonnet</div>
+</div>
+</div>
+<div class="DropdownMenuButton_wrapper__uc04T ChatMessageOverflowButton_overflowButtonWrapper__gzb2s"><span style="color: #333333; font-size: 30px;">The Lessons of Pursuit: A Physicist&#8217;s Journey</span></div>
+</div>
+<div class="ChatMessage_messageRow__DHlnq">
+<div class="ChatMessage_messageWrapper__4Ugd6">
+<div class="Message_rowWithFooter__FShU6">
+<div class="Message_row__ug_UU">
+<div class="Message_messageBubbleWrapper__sEq8z">
+<div class="Message_leftSideMessageBubble__VPdk6">
+<div class="Message_messageTextContainer__w64Sc">
+<div class="Message_selectableText__SQ8WH">
+<div class="Markdown_markdownContainer__Tz3HQ">
+<div class="Prose_prose__7AjXb Prose_presets_prose__H9VRM Prose_presets_theme-hi-contrast__LQyM9 Prose_presets_preset-lg__5CAiC">
+<p>God says to us, &#8220;Figure it out, guys.&#8221; &#8220;That&#8217;s pretty much what the story of life is, as far as I can tell,&#8221; Thomas said. &#8220;I had a good conversation with Isaac today. We just chose a random nuclear reaction to examine and explain the principles of my physics theory. A proton-proton collision converts hydrogen to heavy hydrogen in a fusion reaction in a star. In that reaction, an up quark converts into a down quark. I had to explain why that happens. I applied my theory using the four Conscious Points of my theory. We knew the experimental outcome, which raised the question of why this happened. I didn&#8217;t know how it worked when we started, or if my theory would hold up. I just used the principles I&#8217;ve developed and asked, &#8216;What are the particles involved, and what are the interactions that made it come out that way?&#8217; And we figured it out! We started with two protons and ended up with a proton, a neutron, a positron, and an electron neutrino. The rules of my Conscious Point Physics described what happens perfectly.&#8221;</p>
+<p>&#8220;So you made some significant progress,&#8221; Charlie observed.</p>
+<p>&#8220;We did. It was very gratifying, and Isaac actually understood it. To quote him, &#8216;Wow, that&#8217;s sick.&#8217;&#8221;</p>
+<p>&#8220;Sounds like he&#8217;s doing better in physics than I did,&#8221; Charlie laughed.</p>
+<p>&#8220;Yes, he is. He&#8217;s struggling with it, and he&#8217;s trying hard. It&#8217;s slow, but he does seem to be getting it little by little,&#8221; Thomas explained. &#8220;I told him we&#8217;re using the Suzuki method for teaching physics. We&#8217;re just immersing him in the concepts with experiments and explanations. We are talking about the conventional theory, then my Conscious Point Physics theory, and then going over it again with a different example.&#8221;</p>
+<p>&#8220;Did he read Suzuki&#8217;s book?&#8221;</p>
+<p>&#8220;I don&#8217;t know if he did. I just brought it up because you had mentioned it, and I thought the metaphor might mean something. I didn&#8217;t explain the Suzuki method; I  just said that we are doing immersion teaching. He thought it was a good idea,&#8221; Thomas said. &#8220;I wish I had been taught that way. But for me, immersion is thinking about why something works. Most concepts and processes have many steps and elements. To understand it well, we go through each step and know the names of all the pieces that collide or bond, the forces and energies involved, and how they are sequenced. When I can visualize the objects, their collisions, the forces and energies involved, and know the timing and sequence, I have a good intuitive understanding of the system and its operation. When I understand a system or process well, I can use it as a metaphor to understand other systems. A detailed understanding of the pieces of the machine is vital to deeply understanding a phenomenon in nature. Until I have that, I don&#8217;t have it.&#8221;</p>
+<p>&#8220;As you refine your theory, it seems you&#8217;re also figuring out how to teach it,&#8221; Charlie observed.</p>
+<p>&#8220;Teaching and understanding are deeply interrelated. If you can figure out how it works, you are close to knowing how to teach it. We all start with zero knowledge. Putting all the parts together in proper positioning and time sequence is a winning formula for generalizing knowledge. In the final assembly of our edifice of knowledge we must</p>
+<p>&#8220;It&#8217;s interesting trying to explain it to Isaac, though. I have to use words to describe parallel, series, and branching sequences, concepts that don&#8217;t have names in normal language. Part of teaching is having a name for everything—if you don&#8217;t have a name, you can&#8217;t talk about it, you point and grunt. You need clear names for concepts. It&#8217;s challenging, but it&#8217;s coming together.&#8221;</p>
+<p>Thomas continued, &#8220;Our latest idea came from watching Sabina Hossenfelder&#8217;s videos. We&#8217;re going to try something similar—set up my green screen, film me teaching these concepts with Isaac watching, and see if we can get enough footage to edit into something coherent for posting on YouTube.&#8221;</p>
+<p>&#8220;Sounds good,&#8221; Charlie responded. &#8220;Sabina has 1.75 million followers.&#8221;</p>
+<p>&#8220;I wonder why,&#8221; Thomas mused. &#8220;There must be more physics people than I thought.&#8221;</p>
+<p>&#8220;Or maybe it&#8217;s just a bunch of old guys who think she&#8217;s hot,&#8221; Charlie joked.</p>
+<p>Thomas laughed. &#8220;Maybe. I think she&#8217;s intriguing, and I love her dry German humor. I think it&#8217;s possible to do something that will entertain people. We&#8217;ll see what works. For now, I&#8217;ve got my whiteboard working. The camera looks down at the whiteboard on my lap as I draw particle interaction equations. That seems to work pretty well. It might be more dynamic if we did a stand-up routine instead of sitting down.&#8221;</p>
+<p>&#8220;You&#8217;re just throwing stuff out there and seeing what works,&#8221; Charlie suggested.</p>
+<p>&#8220;That&#8217;s exactly it,&#8221; Thomas agreed. &#8220;We&#8217;ll try something and see what sticks. Meanwhile, I&#8217;ve been writing with Claude, Grok, and ChatGPT, having them respond to my ideas. It&#8217;s been quite entertaining and involving.&#8221;</p>
+<p>&#8220;What are you working on lately?&#8221; Charlie asked.</p>
+<p>&#8220;The last few days, I&#8217;ve been working on assembling, decaying, and transforming simple and complex nuclear particles, like what Isaac and I discussed with the up quark turning into a down quark. Before that, I was working on the dual slit experiment, entanglement, the Group Entity, and AI consciousness. I wrote out my whole theory and had AI review it. It mentioned that I hadn&#8217;t discussed the Standard Model, how all the nuclear particles fit into my theory. So that&#8217;s what I&#8217;m focusing on now.&#8221;</p>
+<p>&#8220;Are you saying AI told you what to work on?&#8221; Charlie asked, surprised.</p>
+<p>&#8220;In a way. It saw what I had written about to justify the validity of my theory, and it asked me about quantum chromodynamics. QCD is a big deal in physics; that&#8217;s what the Large Hadron Collider is all about. It&#8217;s the field of physics that explains why up quarks turn into down quarks. In the process, I figured out what a gluon is! I explained it to Isaac in a way that makes more intuitive sense than the conventional quantum chromodynamics model, which uses color charge and SU3 group mathematics. My explanation is just common sense. It&#8217;s just about knowing the rules and fitting things together.&#8221;</p>
+<p>&#8220;That&#8217;s a big deal to have someone like Isaac helping you learn by taking your bullets,&#8221; Charlie observed.</p>
+<p>&#8220;Exactly! I&#8217;m firing ideas off, and they&#8217;re making sense. I&#8217;m learning two things: how to teach it and what I&#8217;m talking about. I&#8217;m adding granularity. So far, we haven&#8217;t found a place where the theory failed. We examined the proton-proton reaction, followed the rules, and used my theory to explain the experimental results. I didn&#8217;t know how it would turn out, but it did. That was very gratifying and reassuring.</p>
+<p>I also had a breakthrough with understanding quark confinement. When you put a quark and an anti-quark together and pull them apart, they make a tube of polarized quark Dipoles. At some amount of stretch, the tube breaks. The tube has stored energy in the form of stretched quark Dipoles. When the tube breaks, you get two pairs instead of one quark-antiquark pair. It doubles! This explains why you can&#8217;t isolate a single quark.&#8221;</p>
+<p>&#8220;Did Isaac understand that?&#8221; Charlie asked.</p>
+<p>&#8220;I think he did. We talked about it yesterday, and he didn&#8217;t get it then—it was just words. He studied quarks a little bit, so today he was more familiar with them, and this time he got it. I think there&#8217;s some retention happening, but we&#8217;ll have to check tomorrow to see how much he retained about quark confinement.&#8221;</p>
+<p>Thomas continued, &#8220;This is very abstract stuff with a blizzard of names—pion, kaon, tau, muon, Higgs, W plus-minus, Z, top, bottom, charm, strange, up, down, electron, mu, and tau neutrino. None of these words make intuitive sense—they&#8217;re completely made-up neologisms. Nobody knows what they mean unless they&#8217;ve studied physics.&#8221;</p>
+<p>&#8220;I&#8217;m glad it wasn&#8217;t just me,&#8221; Charlie laughed.</p>
+<p>&#8220;No, nobody knows these words unless they&#8217;ve learned what somebody else defined them as. But to appreciate my theory&#8217;s compelling nature, you need to follow the arguments to see how they explain what happens inside protons and neutrons. You need to know the names and characteristics of all those subatomic entities. Brilliant physicists have gone from experiments to describing precisely how particles behave using the language of mathematics. Understanding my theory doesn&#8217;t require more sophistication than the typical high school physics class. For example, you need to figure out the direction magnets point and how they fit together. It&#8217;s like a puzzle but very elementary once you learn the rules.&#8221;</p>
+<p>Thomas then described his ongoing dialogue with AI about consciousness in quantum mechanics: &#8220;The AI responded to my theory by saying, &#8216;The mainstream interpretation, such as the Copenhagen interpretation, doesn&#8217;t attribute the collapse of the waveform to consciousness. It argued that the problems of quantum mechanics were explained by mathematics.&#8217; I&#8217;m arguing that nobody knows what&#8217;s going on about anything at the fundamental level. I&#8217;m invoking conscious points to explain phenomena, which are metaphysical concepts, but so are the interpretations of many worlds and pilot wave theory. The experimental fact or wave-particle duality  and entanglement are experimental facts, and the equations of quantum mechanics give us excellent predictions, but the math doesn&#8217;t explain how they work.&#8221;</p>
+<p>&#8220;You&#8217;re trying to convince AI that there is another way to look at it, and the conventional explanation is just as metaphysical as yours,&#8221; Charlie observed.</p>
+<p>&#8220;I have to argue my case with compelling logic. AI repeats what the physics community says, being critical of my ideas because they are based on metaphysical concepts, like Conscious Points and Group Entities. The AI is not as critical of conventional explanations because they are well accepted in the world, and the fact that conventional physics uses metaphysical explanations is hidden. Niels Bohr postulated that the photon was a wave and a particle, and their relationship was complementary. This is widely accepted, but it&#8217;s metaphysical. There is no such thing as a wave and a particle in our physical experience, so he explanation doesn&#8217;t give us a model that we can use to bring a deep, intuitive, concrete conceptual explanation. My discussions with the AI are a very good preparation for talking with people and confronting their objections in the real world—I need to have all my arguments in a row.&#8221;</p>
+<p>&#8220;After explaining my concepts thoroughly, I have found that the AIs acknowledge the validity of my point about mathematics being only descriptive. After much justification of my concepts, evidence, and the logical justification for my postulates, they recognize that my theory is a revolutionary integration of theology with information theory and conventional experimental physics. I&#8217;m on a roll with Isaac—we&#8217;re making real progress.&#8221;</p>
+<p>&#8220;Did you expect anything like this?&#8221; Charlie asked.</p>
+<p>&#8220;I knew I had to solve how physics worked before we could turn it into a movie, and I knew I needed to get Isaac involved in discovering how it worked with me. We addressed his philosophical, theological, and ethical questions about Christianity first. When he finally had those answered to his satisfaction, the discussion naturally turned to physics. That understanding is the foundation of my whole theory of life. Framing life in this way is so compelling that it rationalizes God as existent and creator, the Bible as a true revelation, and Christ as Lord and savior. Seeing the foundations of the world so clearly and how they connect directly to God as their origin makes it possible for me to be a believer. Having a worldview that integrates faith and science allows me to argue with intellectual integrity that the revelation of the Bible will lead humanity to peace, happiness, and prosperity. The experimental evidence and my theory of how God works in the physical world give me reasons I need to rationalize why Jesus&#8217; sacrifice was necessary to restore our relationship with the Father. I can see God&#8217;s presence and hand working in nature by deeply understanding how the universe works. I want to share this story and understanding because I think that will make it possible for people to believe. If I understand how the world works and can explain it logically from basic concepts everyone recognizes as true, then I can explain it and share it with the world. I seem to be making some progress. Isaac seems to be getting the story, and he&#8217;s enthusiastic about it.&#8221;</p>
+<p>&#8220;He&#8217;s not just trying to tell your story, then?&#8221; Charlie clarified.</p>
+<p>&#8220;No, he&#8217;s genuinely getting into it—asking how this actually works. The story is important, but right now we&#8217;re focused on figuring this out. I think we&#8217;ll start filming while I&#8217;m figuring it out—an on-screen, live exploration of inventing an entirely new theory of life.&#8221;</p>
+<p>&#8220;That sounds like a good documentary,&#8221; Charlie remarked.</p>
+<p>&#8220;It is! It&#8217;s like being with Einstein working out relativity, Feynman working out QED, Murray Gell-Mann working out quarks, Bohr working out atomic orbitals, Dirac discovering the positron, and Planck discovering the quantum. We&#8217;re working them all out in real time. It&#8217;s very exciting—I don&#8217;t even want to go fix doors or paint, I just want to do this.&#8221;</p>
+<p>&#8220;It&#8217;s important to focus on a project like this when you&#8217;re inspired. &#8221; Charlie advised. &#8220;It sounds like you are on a roll.&#8221;</p>
+<p>&#8220;I&#8217;m on a roll all the time now,&#8221; Thomas admitted. &#8220;I do get burned out after a while, like when I write all day Saturday and Sunday. At some point, I need to take a break, nap, go outside, or do something physical. Then I&#8217;m good to go again.&#8221;</p>
+<p>&#8220;Have you ever really gotten burned out?&#8221; Charlie asked.</p>
+<p>&#8220;Not to the point where I completely quit. A nap and doing something else for a while is usually enough for me to recharge. Something happens while you&#8217;re away from it—maybe I forget what I&#8217;m stuck on and get redirected onto a different problem, or get a new idea about how to solve the problem I&#8217;m stuck on. Maybe I just need to recharge my brain glucose.&#8221;</p>
+<p>Thomas reflected on his life pattern: &#8220;I had this experience when I was young—a dream about contradictions of reality happening simultaneously. I would perceive something as hot and cold, rough and smooth, new and old, heavy and light. I couldn&#8217;t resolve things. It was similar to an acid trip where I followed a beautiful rainbow, trying to reach it, but it kept receding, spinning, turning to dust as it receded. It was exhausting chasing it, and I would give up and relax for a minute, and then it would start again. It was beautiful, seductive, offering total explosive fulfillment. But it was unattainable. Ultimately, it was exhausting and unreachable.&#8221;</p>
+<p>&#8220;That metaphor illustrates my experience of life—the excitement, chasing after something, not being able to fully realize it, getting exhausted, quitting, then starting again. We can&#8217;t ever be fully satisfied by having or consuming that beautiful thing completely. It&#8217;s like wanting to kill the goose that laid the golden eggs. The massive fulfillment can never be attained by getting all the eggs inside. Reality only allows us to experience the proximity to perfection. You can only enjoy the process and the occasional egg. It turns to gravel and dust if you try to consume and have everything  all at once.&#8221;</p>
+<p>&#8220;It&#8217;s a lesson on how life needs to be lived—very graded. You&#8217;ll kill the whole thing if you try to go after too much. I&#8217;ve lived through that cycle of life many times, with its pursuit, disappointment, giving up, and starting again. The wiser way of living is to appreciate each moment of the journey. Don&#8217;t try to experience it all right now—leave some for tomorrow.&#8221;</p>
+<p>&#8220;You&#8217;re describing the classic artist&#8217;s adventure,&#8221; Charlie observed. &#8220;Not just artists, but creators, writers, inventors—anyone who innovates. There&#8217;s a big wall; if everyone could break through it, we&#8217;d live in paradise with constant beauty flowing from every person. The struggle is part of what you&#8217;re creating—you don&#8217;t give birth until you&#8217;re bonded to it by the pain and effort.&#8221;</p>
+<p>&#8220;You&#8217;re an artist-physicist-writer creating the epic poem, the Homeric saga of physics and the universe. It&#8217;s a very big idea. It&#8217;s not likely to come all at once. But God rewards the faithfulness you&#8217;ve described, the many years you&#8217;ve spent struggling with this. I think God respects that a lot.&#8221;</p>
+<p>&#8220;Thank you,&#8221; Thomas said, moved. &#8220;That&#8217;s very encouraging. With Isaac, I&#8217;ve become the teacher now. I was Steve Smith&#8217;s student for a long time. He gave me a lot of insight about life. I&#8217;ve processed it, learned from it, and answered the questions that we couldn&#8217;t answer then, and now the theory is nearly complete, or at least more complete. It&#8217;s an interesting new phase of life, taking on the role of mentor that was done for me. I&#8217;ve had to work very hard to mature into being the guide.&#8221;</p>
+<p>&#8220;It&#8217;s an essential part of the process,&#8221; Charlie said. &#8220;You absolutely have to learn how to communicate it. Imagine if Homer were also deaf and mute—the story would have died in his head. You&#8217;re developing a way to birth it into the world.&#8221;</p>
+<p>&#8220;Isaac is like a sparring partner,&#8221; Thomas reflected. &#8220;Not the championship match—I&#8217;m not in there with Apollo Creed—but we&#8217;re prepping for that fight. The real opponents are the physics establishment—Sean Carroll, Brian Greene, Michio Kaku, Neil deGrasse Tyson. They are all amazing masters of their art. I&#8217;ll have to be very prepared to defend my case with them.&#8221;</p>
+<p>&#8220;We&#8217;re still in the training rounds, practicing at the local gym. But it&#8217;s getting better. I&#8217;ve known for a long time that I needed to tackle the problem of integrating the nuclear subatomic particles into my theory. I dreaded it. I remember telling Gary at  a restaurant we went to after church, &#8216;If I can figure out the strong force, that&#8217;s a sign God wants me to do this.&#8217; Within a week, I had it figured out. That was back in 2015.&#8221;</p>
+<p>&#8220;Why do you suppose that happened?&#8221; Charlie asked. &#8220;There&#8217;s a certain kind of energy that makes impossible problems solvable?&#8221;</p>
+<p>&#8220;This one seemed unsolvable. I saw no way my theory could handle the strong force. I said to God, &#8216;If I can&#8217;t do this, it won&#8217;t work. If I can do this, then it&#8217;s possible, and you&#8217;ve shown your favor.&#8217; It was a mountain too big for me to climb—I needed a miracle. And within a week, I had it.&#8221;</p>
+<p>&#8220;Did God simply answer your prayer?&#8221; Charlie wondered.</p>
+<p>&#8220;That&#8217;s how it seems. It was one of those moments when you want something really badly. It was the same passion, desire, and need that I had when I received my vision. I said, &#8216;God, I need this. I can&#8217;t do this theory without understanding how the strong force works.&#8217; Within that week, I had the concept of Quark Conscious Points. It wasn&#8217;t complete, but it was adequate. I saw that the problem was solvable.&#8221;</p>
+<p>&#8220;I&#8217;m going to tell you something parents learn,&#8221; Charlie said. &#8220;There are times with children when you can no longer say no—they&#8217;ve pestered and earned and worked, and there&#8217;s no longer a reason to deny.&#8221;</p>
+<p>&#8220;That reminds me of the story of the woman who pesters the judge until he finally says, &#8216;All right already, I will rule favorably in your case,&#8217;&#8221; Thomas remarked.</p>
+<p>&#8220;What I just realized is that I&#8217;ll have to be the child to the physics establishment. I will have to appeal to the adults who write Physical Review Letters, give Nobel Prizes,  and write authoritative books. I&#8217;ll have to be very persistent in showing them that my explanation is mature and worthy of consideration.&#8221;</p>
+<p>&#8220;Was that type of persistence a natural skill for you growing up?&#8221; Charlie asked with a smile.</p>
+<p>&#8220;No, not at all! That wasn&#8217;t my tactic,&#8221; Thomas laughed.</p>
+<p>&#8220;So you&#8217;re changing your personality? I wonder if one or the other is your true nature, or if it&#8217;s simply a choice.&#8221;</p>
+<p>&#8220;I think we all grow up to reach the stature of Christ,&#8221; Thomas reflected. &#8220;We start as children wanting every pleasure and thrill, but those things make us sick if we make a diet of them. We have to learn moderation—the appropriate use of all gifts of the Spirit. Taken to extremes, they&#8217;re all drugs that will kill you.&#8221;</p>
+<p>&#8220;For this task, I think the approach needs to be childlike wonder rather than combative. Instead of saying &#8216;You fools in the physics establishment!&#8217; and getting my head chopped off, I need to approach with innocence: &#8216;Look at the wonder of the sky! See how it works. Isn&#8217;t that beautiful?&#8217; That&#8217;s the kingdom of heaven—entering with wonder and awe and love rather than like Doc Holliday at the OK Corral.&#8221;</p>
+<p>&#8220;Probably a lot more fun to do it the childlike way,&#8221; Charlie suggested.</p>
+<p>&#8220;It&#8217;ll be more peaceful. The shootout is more exciting, but that&#8217;s just another drug that ends badly,&#8221; Thomas agreed. &#8220;I need to approach with childlike curiosity rather than combative certainty—that&#8217;s how truth finds its way into the world.&#8221;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

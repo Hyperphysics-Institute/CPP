@@ -17,7 +17,7 @@ wp_categories: ["Physics/Christianity/Life"]
 
 # The Theory of Absolutes
 
-**A Physics Theory Connecting Nature with God and Man****
+**A Physics Theory Connecting Nature with God and Man
 An Apologetic for the Congregation of Believing Physicists
 
 By: Thomas Lee Abshier, ND
@@ -153,7 +153,7 @@ The messages (Force Particles – FPs) emitted by the Conscious Particles are ge
 
 - Definition: **The Planck Number: **The Conscious Particles (CPs) emit a large and fixed number of Force Particles each Moment.  We shall call the number of FPs emitted each Moment the Planck Number.
 
-- Definition: **The ****Moment** is the fundamental unit of time, the name for one information processing cycle.  The cycle includes, 1) Perception, 2) Processing, 3) Projection.
+- Definition: **The Moment** is the fundamental unit of time, the name for one information processing cycle.  The cycle includes, 1) Perception, 2) Processing, 3) Projection.
 
 - Every CP emits the same number of FPs each Moment, and each FP is connected to the FP emitted the previous Moment from that CP.
 
