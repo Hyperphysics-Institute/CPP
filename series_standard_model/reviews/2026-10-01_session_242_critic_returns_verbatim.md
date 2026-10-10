@@ -1140,3 +1140,45 @@ Fresh-context sub-agent (a1db0b83767c87f45), 9 Oct 2026. Return filed verbatim b
 - **The question** now says "slightly weaker pull", with the muon as an illustration.
 - **The script** now computes scalar-only versus scalar-plus-vector bending.
 - **D-9:** the todolist entry is added.
+
+## Patch 4395 — Independent critic of the first draft of 4395 (SSV_net squeezed with the PSR)
+
+Fresh-context sub-agent (a497e76eddb0118bd), 10 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: HOLD.** The script runs and its arithmetic is right. But the headline offers a reading he already rejected as if it were new, and the GR-1b identification is overstated.
+
+**Required changes**
+
+1. **Say plainly that reading (i) is 4389 (a) and 4387 (B).** In 4390 he wrote "(a) is not my conception." 4387 §3 says (B) is the 3385 bookkeeping that 3386 withdrew as a knob. §3 now presents (i) as "the natural home" and splits "fewer PSRs per Moment, as an average" from "longer single steps". 4387 §2 already showed these are the same thing: a skipped step roughly one Moment in 470,000. Drop that split. State the history in the title or abstract and in §6, and mark (i) as the convenient branch. Also, b = 1 is set by hand for light in the script. The "squeeze" adds no mechanism, so the knob objection still stands.
+
+2. **Correct "crystal = n PSRs".** "DP-arc scale by SSV_abs" sets the size of DP-arcs. It does not set the equilibrium spacing between CPs. The support for "n PSRs" is his 4385 force picture, and in 4390 he replaced it with "A and B fixed on the grid". §3's "his own 4385 picture, and the registered rule" must say this, and must say (i) conflicts with both of his 4390 statements.
+
+3. **Weaken "these are the same claim" (§2, script output).** GR-1b's g_ij uses |∇V|, and the Proposition simply sets |∇V|_rr = GM/(k r c²). For a static source, V goes as 1/r², so its gradient goes as 1/r³, not 1/r. The single k does not force equal magnitudes unless the two source values are made equal. Also, g_ij is a ruler metric, while "V_i squeezed" is a CP step rate. Say "consistent with, supplies a candidate picture for", and file the gradient mismatch.
+
+4. **Make the A3′ C2 flag more general (§4).** If the PSR (the shell radius) shrinks in grid size, a broadcast moving one PSR per Moment cannot also move at l_P/t_P absolute with flat transport. That tension exists in every reading (i)–(iv), not only for light in (i).
+
+5. **Rebuild the table.** If "squeezed as the PSR is squeezed" means b = a, row (iii) should have b = 2, not 1. Under b = a, the data fix a = 1 uniquely. That is a cleaner result and should be stated. The "redshift" column only tests CP clocks. A light-crossing clock runs at 1 in (ii) and (iii), so those rows also fail clock universality (4390 §3).
+
+6. **D-9 is not met.** todolist.md has no 4395 entry, and the gate passed on HEAD. File: the C2-versus-PSR tension; the GR-1b gradient/1/r mismatch and calibration; founder question §5; 4394 §5, whose status is unstated (open or superseded?); the items carried from 4394.
+
+**Minor**
+- The founder file is verbatim and fair.
+- §5 should remind him that he chose (b) in 4390 and ask whether he is revising that. As written, it asks the 4389 question again without saying so. The question could also cite 4385's "no fundamental difference between … photonic EM … and mass" as the reason the CP rule might govern light, and note that 4389 put light on the GPs.
+- The title runs about 50 words. Shorten it.
+
+**Plain language:** The arithmetic is fine. But "light also gets squeezed" is the option Thomas turned down two patches ago, and the fragment should say so up front. His own latest words (A and B fixed) also go against "crystals keep their number of Planck spheres". The match to GR-1b is looser than claimed, and the owed items are not yet in the todolist.
+
+---
+
+## Claude's response to the 4395 return (not part of the verbatim report)
+
+- **HOLD adopted.** All six required changes and the minor notes are taken in.
+- **History up front.** Reading (i) is identified as 4389 (a) / 4387 (B), set aside in 4390, and as 3386's withdrawn knob. The average-versus-single-step split is dropped.
+- **Crystal = n PSRs** is attributed to his 4385 force picture, not to a registered rule, and the conflict with both of his 4390 statements is stated.
+- **GR-1b** is now "consistent with", and the gradient (1/r³) mismatch is filed.
+- **The C2 tension** is generalised to all readings.
+- **The table is rebuilt** with b = a and a light-clock column. Only (i) works with the squeeze, and then a = 1 uniquely.
+- **The question** now asks whether he is revising his 4390 choice.
+- **D-9:** the todolist entry is added.
