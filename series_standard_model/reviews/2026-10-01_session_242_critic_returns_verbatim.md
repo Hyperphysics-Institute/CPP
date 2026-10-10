@@ -1182,3 +1182,59 @@ Fresh-context sub-agent (a497e76eddb0118bd), 10 Oct 2026. Return filed verbatim 
 - **The table is rebuilt** with b = a and a light-clock column. Only (i) works with the squeeze, and then a = 1 uniquely.
 - **The question** now asks whether he is revising his 4390 choice.
 - **D-9:** the todolist entry is added.
+
+## Patch 4396 — Independent critic of the first draft of 4396 (directional PSR on the fixed grid)
+
+Fresh-context sub-agent (af66aecda0d4301f5), 10 Oct 2026. Return filed verbatim below.
+
+---
+
+**Verdict: ACCEPT WITH CHANGES.** The script runs and its algebra is right. The kinematic identification is correct. Three framing claims are overstated, and D-9 is not met.
+
+**What checks out**
+- **Coordinate speeds:** in Schwarzschild areal coordinates, radial dr/dt = 1−2u and tangential r dφ/dt = √(1−2u). Clocks run at √(1−2u). A proper rod covers √(1−2u) of grid distance radially and 1 tangentially. Radial and tangential light-clocks agree (I checked: 2L/√(1−2u) in grid time, 2L proper).
+- **Oblique rays (item 2):** the null-cone section is the ellipse v²cos²θ/(1−2u)² + v²sin²θ/(1−2u) = 1. So reading "one PSR per Moment in its direction" as the ellipsoid's radius along the ray reproduces the null cone at every angle, and Huygens envelopes give the same answer. The script tests only θ = 0 and 90°.
+- The floor at 8m/3, the light ring at 3m and the 4m/b bending are all correct.
+
+**Required changes**
+1. **Clocks and rulers are assumed, not derived.** Clock isotropy and the Hughes–Drever claim follow only because the crystal is *posited* to shrink radially by √(1−2u). That is metric universality, already owed from 4394. Say so in §3, and soften "Hughes–Drever tests are safe" to "safe if matter couples to the same geometry".
+2. **3608's numbers contradict the table and must be reconciled.** 3608's (kΔ, k₂Δ) = (u/3, u), with Q ∝ (n̂n̂ − δ/3), gives PSR_r = 1−u and PSR_⊥ = 1. Its (u, 0) gives 1−u isotropic. Those are *ruler* factors (3608 says "spatial geometry"). 4396's PSR is the light step, i.e. ruler × lapse: 1−2u and √(1−2u). §2 quotes 3608 as support without noting that 3608's tangential PSR is unchanged while 4396's shrinks. Either the PSR concept changed between the two patches, or one of them is mislabelled. Flag it and file it.
+3. **Restate the ringdown claim (§2 and §4).** 4380/4381 show the isotropic picture already reached exact Einstein at κ = 1 (isotropic Schwarzschild), and 3607 says statics cannot tell the two coordinatizations apart. The tension came from the one-PSR (κ = 0) law: one function setting both clocks and rulers. That single-function form, g_tt·g_rr = −1, cannot be Schwarzschild in isotropic coordinates but *is* Schwarzschild in areal ones. That is the real finding, and it should be stated that way. Also drop "no calibration". PSR_r = 1−2u is chosen to reproduce Schwarzschild, just as κ = 1 was (4381's critique applies). Mark it as the convenient branch.
+4. **R-PSR-LAW-LOG is amended, not "consistent" (§4, script part 4).** The ratified law is PSR as a function of the census on the grid, with ε²/2. If the grid census is u, the coefficient becomes −½, the opposite sign. Physical equivalence holds only through a change of radius. Since the GP grid is fixed, this amends a founder ruling (4381 said the same of κ = 1). Say so and file it.
+5. **"Every 'light slower' phrasing came from keeping the PSR a sphere" goes too far.** It came from identifying the PSR with the clock factor under a single isotropic function. Reword.
+6. **D-9 is not met.** todolist.md has no 4396 entry, and the files are untracked. File:
+   - owed items 1–5;
+   - the 3608 ruler-versus-light-step mismatch;
+   - the R-PSR-LAW-LOG amendment;
+   - the metric-universality premise;
+   - the oblique-ray check;
+   - R-DIBIT-COUNT-AT-FLOOR with PSR_r = ¼ at the floor;
+   - founder question §5;
+   - the granularity question he raised (unaddressed);
+   - the status of 4395 owed items.
+
+**Minor notes**
+- The apology is proportionate and accurate: 4387 (B) and 4389 (a) did offer slower light, and he rejected it in 4390. The founder file is verbatim and fair.
+- The §5 question is a good physical picture. Also ask whether crystal spacings *across* the line to the Sun stay fixed, which tests "half right" against his 4390 "A and B fixed".
+- "His A and B is half right" should be framed as a consequence for him to confirm, not a grade.
+- In the table the weak-field rows use U and the exact rows use u. Say they are the same quantity.
+- Add the oblique-angle null-cone check to the script.
+
+**Plain language:** The core idea works. A Planck sphere squashed toward the mass, with light crossing exactly one per Moment, gives Einstein's black-hole geometry exactly, and the speeds at every angle agree. But three claims go too far:
+- It was not isotropy itself that caused the ringdown problem. It was the rule that a single number sets both clocks and rulers.
+- The 1−2u law is still chosen to match Einstein, so it is a calibration, not a derivation.
+- It quietly changes the sign of the founder-ratified second-order term and conflicts with how 3608 defined the PSR.
+
+These need saying, and the owed items need to go into the todolist.
+
+---
+
+## Claude's response to the 4396 return (not part of the verbatim report)
+
+- **All six required changes and the minor notes are taken in.**
+- **Clocks and rulers** are marked as resting on the metric-universality premise.
+- **3608** is flagged: its numbers are ruler factors and this patch's PSR is the light step. They agree when read that way. Filed.
+- **The ringdown finding is restated.** It was the single-function κ = 0 rule, not isotropy, that caused the tension; the same rule applied radially is exactly Schwarzschild. "No calibration" is dropped; PSR_r = 1 − 2u is a calibration.
+- **R-PSR-LAW-LOG** would be amended (the second-order sign in the grid census) and goes to him before any registration.
+- **The script** now checks oblique rays against the null cone. The question adds the across-the-line test, and his granularity question is filed.
+- **D-9:** the todolist entry is added.
