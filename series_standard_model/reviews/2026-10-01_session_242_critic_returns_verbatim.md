@@ -1238,3 +1238,50 @@ These need saying, and the owed items need to go into the todolist.
 - **R-PSR-LAW-LOG** would be amended (the second-order sign in the grid census) and goes to him before any registration.
 - **The script** now checks oblique rays against the null cone. The question adds the across-the-line test, and his granularity question is filed.
 - **D-9:** the todolist entry is added.
+
+---
+
+## Patch 4397 — critic return (fresh context), verbatim
+
+**Verdict: HOLD.** The script runs and its first-order algebra is correct. But the patch's main conclusions (§2–§3, the §6 question, and the corpus tie in §4) fail once you go past first order in a, and a is exactly the part allowed to be large.
+
+**Required changes**
+
+1. **a² acts as an extra b, so the measurable quantity is not b.** The time per unit length is 1/PSR = 1 + a c + (b + a²)c² + O(a³, ab) c³, with c = cos θ. Only the term linear in c is a pure end-point term. The a²c² term is even in direction and bends light like b. So the observable is b_eff = b + a², which must equal U. The odd c³ terms (2ab, a³) do depend on the path and send light differently each way, but they are O(U^{3/2}) or smaller at most. If a ~ √U, then a² ~ U and changes the result at first order.
+   - **Decisive case:** a pure shift with no flattening. That is a unit sphere moved off the GP by β = √(2u). It gives reach 1 ∓ β toward and away, and √(1 − β²) across. The round-trip radial harmonic mean is 1 − β² = 1 − 2u, and the across reach is √(1 − 2u). That is exactly 4396's areal Schwarzschild, to all orders. It is the Painlevé–Gullstrand "river" picture: in GR it is Schwarzschild in Painlevé–Gullstrand coordinates, the time-reversed version for his "smallest toward" sign.
+   - **So his shape alone may be the whole answer.** §3's "toward-and-away average shorter than across by U" and §6's "is it flattened as well as shifted? That flattening, not the shift, bends starlight" are wrong in general. Rewrite §2, §3 and §6 using the harmonic mean, and fix the script so it uses the exact 1/PSR rather than the linearised form.
+2. **"No static measurement can see it" needs qualifying.** Round-trip and light-synchronised measurements cancel the first-order a term. In CPP, though, Moments are universal, so a is the physical slicing, not a choice of how to set clocks. With clocks synchronised by Moment, the one-way times A→B and B→A differ by 2∫a dr. The patch also never looks at how matter moves. A fore-aft PSR could be what drives falling, which was the purpose of his gedanken experiment. Say "invisible to round-trip and light-synchronised measurements at first order".
+3. **The corpus tie in §4 conflicts with A3′ itself.**
+   - Line 45 has V "sources spatial curvature… g_ij statics".
+   - C4 sources Q from T^TF, which is zero for static matter "as a theorem", so A3′'s Q is zero for the static Sun and cannot hold the space half.
+   - C3 sources h̄₀ᵢ from T₀ᵢ, which is zero for a static mass. The static harmonic condition ∂ᵢh̄₀ᵢ = 0 allows a radial h̄₀ᵢ only as C/r² outside the matter.
+   - 3608's Q (the second moment of the DI-bit addresses) is not obviously the same object as C4's Q.
+
+   State these conflicts, or drop the suggestion.
+4. **D-9 is not met.** todolist.md has no 4397 entry, and the files are untracked. File these:
+   - the a² / harmonic-mean correction;
+   - the PCD derivation of a and b;
+   - the size of a in frame dragging (Gravity Probe B, LAGEOS);
+   - the off-centre census shell, added to 4396's owed item 1;
+   - the one-way asymmetry under Moment synchronisation;
+   - whether the fore-aft part moves matter;
+   - the §4 conflicts;
+   - the revised founder question.
+
+**Minor notes**
+- The monotonic condition (a + 2b cos θ ≥ 0 for all θ, so a ≥ 2|b|) is correct. With b_eff = b + a², b can be zero or negative.
+- The script's "0.1% quadrature accuracy" is loose. Proper quadrature should agree to about 1e-8. The 5e-4 scatter suggests sloppy integration, not a check.
+- Fairness: the founder file is verbatim, and the attribution correction and the 4396 annotation are proportionate.
+- Re-mark the convenient branch: the convenient-to-the-patch branch was "only the flattening matters". The likelier result is that his pure shift already works.
+
+**Plain language:** The patch says the toward-versus-away part of his Planck sphere can't be seen and only a flattening bends light. That holds only if the shift is tiny. A sphere simply shifted off-centre by the right amount (about the square root of twice the gravitational strength) bends light and delays signals exactly as Einstein's theory does. So his picture may already be complete. The question to him, the link to the A3′ axiom and the todolist all need redoing.
+
+---
+
+## Claude's response to the 4397 return (not part of the verbatim report)
+
+- **Required change 1 taken in:** the fragment is rebuilt around b_eff = b + a² and the pure shift. The script now checks the exact shifted-sphere reach against the Painlevé–Gullstrand light speed at every tested angle, and gives β² = 2u's clock, rulers, round-trip and across speeds, and floor (8m/3) exactly. The quadrature check is replaced by the exact one.
+- **Change 2 taken in:** "invisible" is now "agrees on every round-trip and light-synchronised measurement"; the one-way difference 2∫a dr under universal Moments and the unmodelled motion of matter are filed.
+- **Change 3:** the A3′ channel tie is withdrawn, with the four conflicts stated.
+- **Change 4 (D-9):** the todolist entry is added with all eight items, plus the outflow-versus-inflow sign and the 4396 carry.
+- **Convenient branch re-marked** as advised. β² = 2u is marked as a calibration, not a derivation.

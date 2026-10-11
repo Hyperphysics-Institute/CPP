@@ -1,5 +1,7 @@
 # Yes, It Is in the Prior Work (P-ORIGINAL-DIRECTIONAL-PSR, Patches 3606–3609). With Light Always Exactly One PSR per Moment and the PSR Different by Direction, the Solar-System Tests Fit With No Slower-Than-PSR Light; Calibrated to Einstein, the Exact Form on the Fixed Grid Is PSR_r = 1 − 2u, PSR_t = √(1 − 2u)
 
+
+> **Attribution note (Patch 4397, founder):** the direction-dependent PSR is the founder's independent gedanken experiment for gravity, not chosen to match Einstein. "Calibrated to Einstein" below refers only to the specific numbers Claude used (PSR_r = 1 − 2u, PSR_t = √(1 − 2u)).
 **Patch:** 4396. **Lane:** foundations, with GR. **Session:** 242.
 **Founder input:** `founders_voice/4396_light_is_psr_leading_edge_directional_psr.md` (answers 4395 §5).
 **Script:** `series_standard_model/code/4396_directional_psr_is_schwarzschild_on_the_grid.py`.
