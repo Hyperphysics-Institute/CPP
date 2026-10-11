@@ -1285,3 +1285,73 @@ These need saying, and the owed items need to go into the todolist.
 - **Change 3:** the A3′ channel tie is withdrawn, with the four conflicts stated.
 - **Change 4 (D-9):** the todolist entry is added with all eight items, plus the outflow-versus-inflow sign and the 4396 carry.
 - **Convenient branch re-marked** as advised. β² = 2u is marked as a calibration, not a derivation.
+
+---
+
+## Patch 4398 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES.** The core GR computations are correct. But two statements are wrong, one claim of independence is circular, and the "hollow shell" mapping hides a real conflict with the corpus.
+
+I ran the script (exit 0, output matches the fragment) and checked the Einstein tensor myself in sympy for ds² = −N²dt² + (dr − vN dt)² + r²dΩ².
+
+**What checks out**
+- G^t_t = −(r v²)'/r². That gives v² = 2m(r)/r with m(r) the Misner–Sharp mass. It holds generally on flat slices, because g^rr = 1 − v².
+- With v = √(2m/r) in vacuum, N' = 0 is forced.
+- With constant v₀, G_tt = N²v₀²(1 − v₀²)/r². So a pull-free, matter-free region on flat slices needs v = 0.
+- The hollow-shell clock just inside equals the clock just outside, √(1 − 2M/R). The clock and the across reach are continuous.
+- Floor values: toward 0.134, away 1.866, across ½, clock ½. Inside at N = ½ every direction gives ½, so light crosses at c/2 on the grid.
+- β_max = √3/2 at 8m/3, so no horizon forms, given the floor.
+- "Round size must stay full outside or the redshift doubles" is correct. With N = √(1 − 2m/r) outside, the clock goes as 1 − 2m/r, which is twice the weak-field redshift. The field equations already exclude it, since N' = 0 in vacuum.
+
+**Required changes**
+1. **"Only the shift jumps" (§4) is false.** The round size N also jumps at the boundary, from 1 to √(1 − 2M/R), which is 1 → ½ at the floor. The radial reaches jump too, as §5 itself says. The table already shows this. Correct it to: "the clock and the across reach are continuous; the shift and the round size both jump." Script part 3 should print the N jump as well.
+2. **"Round size changes only where there is radial stress (G_rr)" is wrong**, in the fragment (§4 table and text) and in the script (line 57). My computation gives G^t_t − G^r_r = −2(1 − v²)N'/(rN), so N' = 4πr(ρ + p_r)N/(1 − v²). N steps wherever there is energy density plus radial pressure, not radial stress alone.
+   - A thin dust shell has radial pressure p_r = 0, and its N jump comes from its surface energy density σ.
+   - The script's G_rr = 2N'/(rN) only holds after v is fixed at its vacuum value. Inside matter, in these coordinates, T_rr = (ρ + p_r)v²/(1 − v²) + p_r, so it picks up ρ too.
+   - Fix: "N changes only where there is matter-energy (ρ + p_r ≠ 0), e.g. the shell's own surface energy."
+3. **The c/2 match is circular, not independent.** §4's "was not chosen to match it; it follows from clock continuity" must go.
+   - The floor was placed where the across reach is ½: R-DIBIT-COUNT-AT-FLOOR in 4397 §3, and the l_P/2 floor at lapse ½ in 4311 §2.
+   - 4311 says outright that "the c/2 is ... a floor the corpus assumed", and that reaching it is an extremality assumption, not derived (window 0.536 < u_max ≤ 1).
+   - Clock continuity just carries that same ½ inside. So the result is a consistency check: the interior agrees with the assumed floor and with 3623. It is not confirmation.
+   - §8's convenient-branch note should say exactly this. It should also drop "the match is real" as evidence.
+4. **The hollow-shell mapping must be stated, and it conflicts with the corpus.**
+   - The founder never says the interior is like a hollow shell. He says there is no gradient inside. The fragment brings in the shell as an analogy (fine) and then treats the two as the same.
+   - In GR, a no-pull interior (Φ' = 0) needs m(r) + 4πr³p = 0. With ρ ≥ 0 and p ≥ 0, that means no mass-energy inside at all; it all sits in the surface layer. A uniform or filled ball has a gradient in GR.
+   - So 4398's flat, tide-free, round-½ interior requires (a) the black hole's mass to sit in the floor layer, and (b) energy stored inside to have no gravitational effect in GR terms. That collides with:
+     - 3623: absorbed energy is stored as CP vibration *inside* the core.
+     - 3703 and 4370: matter drains to a Planck-density core deep inside, with the visible shell nearly empty (3702).
+   - A central core with vacuum between it and the floor would have v² = 2M/r inside the floor, reaching 1 at r = 2m. A horizon would form.
+   - Say this explicitly in §3/§4. Replace the vague §5 item "check against RCORE interior assumptions" with this specific tension.
+5. **"Costs nothing / the sign is settled" (§2) is conditional.** It holds only if the floor is actually reached. 4311 flags that as assumed. If u_max approached 1, v would reach 1 and the outward versus inward sign would matter (a white-hole versus black-hole chart). Add one clause.
+6. **The question to the founder (§7)** is a fair physical picture, but it assumes the answer to the key unknown. Add the missing picture: "Do the black hole's CPs sit mostly in the edge layer, like the hollow ball's matter, or throughout the interior? (In Einstein's gravity only the first gives no pull inside.)" Keep the round-but-smaller question and the full-size-outside question.
+
+**Minor notes**
+- "The shift follows the gradient" is right in direction. In size, β² = 2r·g(r), so it goes with the local pull times r, i.e. the potential, not the gradient alone. Worth one clause, because the founder's earlier "PSR shrinks with SSV_abs" (4383) is about magnitude.
+- "Round size" here means the lapse N: the size of the coordinate light-reach sphere, not a spatial-metric scale. Define it once, so no one reads "smaller round sphere" as a curved interior.
+- The founder's earlier statements fit the interior-½ picture: 4356 has the PSR shrinking to a minimum at the black hole. The §8 flag on 4382/4383 is correct and fair.
+- §2's darkness note (redshift factor 2, non-thermal storage from 3623) is fine.
+- "Nothing registered" is fine, since there is no new ruling.
+
+**D-9: items to file in todolist.md in the same patch** (none are there yet; there are no TODO-4396/4397/4398 entries)
+- (a) The PCD reason for the two parts: what makes the gradient set the shift (β² = 2m/r), and what sets the round size.
+- (b) The floor surface layer: the jumps in shift, round size and radial reach (0.134/1.866 → ½) must be carried by CPP's floor, tied to the AP-5 saturation layer.
+- (c) The mass-location tension between the 4398 hollow interior and 3623, 3703, 4370 and 3702: interior stored energy and drain to a central core.
+- (d) An interior-flat, no-tides check against the RCORE arc.
+- (e) One-way light-time sign under universal Moments (carried from 4397 §4).
+- (f) Frame dragging for moving and rotating masses, the census with off-centre shells, and matter motion (carried from 4397).
+- (g) A derivation of the floor's attainment (u_max = 3/8), which the c/2 match and the no-horizon claim depend on (4311 Corrigendum 3).
+- (h) Fix the script's line-57 "radial stress" text and add the N-jump print in part 3.
+
+**Plain language:** The math in this draft is mostly right. Making the Planck sphere shortest toward the mass everywhere is harmless, as long as the black hole's edge really stops outside where a horizon would form. And inside a region with no pull, clocks can only stay slow if the sphere shrinks evenly, to half size at a black hole. But two lines misstate what changes at the boundary and why. The "it matches his c/2" point is not a fresh confirmation, because the edge was placed at "half" to begin with. And in Einstein's gravity, "no pull inside" only works if the black hole's matter sits at its edge like a hollow ball. That contradicts earlier patches, which store energy inside the core or let matter fall to the centre. The founder should be asked where the black hole's matter sits.
+
+---
+
+## Claude's response to the 4398 return (not part of the verbatim report)
+
+- **1 taken in:** "only the shift jumps" corrected; the clock and sideways reach are continuous, the shift and the round size both jump. The script's part 3 prints the N jump.
+- **2 taken in:** the round size changes where there is matter-energy (ρ + p_r), not radial stress; the fragment and script line corrected, with N′ = 4πr(ρ + p_r)N/(1 − v²).
+- **3 taken in:** the c/2 agreement is called a consistency check; "not chosen to match it" is removed, and the floor's ½ is traced to R-DIBIT-COUNT-AT-FLOOR and 4311.
+- **4 taken in:** a new §5 states that the hollow-shell picture is Claude's analogy, that in GR no pull inside means mass in the edge layer, and the conflict with 3623 and 3702–3703/4370; the central-core alternative would form a horizon.
+- **5 taken in:** §2 is conditional on the floor being reached (4311).
+- **6 taken in:** a second founder question asks where a black hole's CPs sit.
+- **Minor notes:** the round size is defined as a clock scale, not a curvature; the shift's size goes with the potential; 4356 is cited. All D-9 items (a)–(h) are filed in todolist.md.
