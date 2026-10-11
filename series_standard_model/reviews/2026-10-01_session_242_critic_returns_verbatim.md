@@ -1355,3 +1355,79 @@ I ran the script (exit 0, output matches the fragment) and checked the Einstein 
 - **5 taken in:** §2 is conditional on the floor being reached (4311).
 - **6 taken in:** a second founder question asks where a black hole's CPs sit.
 - **Minor notes:** the round size is defined as a clock scale, not a curvature; the shift's size goes with the potential; 4356 is cited. All D-9 items (a)–(h) are filed in todolist.md.
+
+---
+
+## Patch 4399 — critic return (fresh context), verbatim
+
+## Verdict: HOLD
+
+The GR algebra is right, but the fragment has two serious problems. First, it leaves out a recorded observational bound that the founder's curve breaks (3702). Second, it presents option B as delivering his gravity when in B his gravity acts on nothing. Both need fixing before this goes to Thomas.
+
+### What I checked and found correct
+- **Script runs** in about 1.5 s, not 1–3 min.
+- **Shell theorem:** correct. The Monte Carlo residues (0.001–0.013) are sampling noise. Pull = m(r)/r².
+- **β² = 2m(r)/r:** continuous at the edge at √3/2. This holds for any profile with no surface mass, so it is not special to his curve.
+- **Option A:** I re-derived it. Centre clock (3/2)(½) − ½ = ¼. Central p/ρ = (1−A)/(3A−1) = 1. Buchdahl is satisfied (3/4 < 8/9). No surface layer is needed (p(R) = 0).
+- **Option B:** I diagonalised it to −¼dT² + dr²/(1−2m/r) + r²dΩ². That is the Einstein-static spatial section with ρ = 3M/4πR³ and p_r = p_t = −ρ/3, as the draft says. Static worldlines are geodesics, so the "no felt pull" claim is correct.
+  - **The B surface layer is real and holds for any profile.** For a pinned clock, p_r = −m(r)/4πr³, so p_r(R) = −M/4πR³ ≠ 0 whatever the density profile.
+  - **Israel junction values:** [K^θ_θ] = 0, so the surface energy σ = 0. The surface pressure is S = (M/R²)/(8π√(1−2M/R)) = 3/(32πR) > 0. So the layer is a membrane with pressure but no energy, which violates the dominant energy condition. The draft should say so.
+
+### Required changes
+1. **3702 is an observational exclusion, not just a "picture".** 3702 states that the ringdown requires ≳90% of M inside 2M, and that "a uniform flat core (42% inside 2M) is excluded for black holes."
+   - His curve (pull largest at the edge) requires m(r) ≤ M(r/R)² everywhere. At r = 2M = ¾R that means m ≤ 0.5625 M.
+   - So his curve and 3702's bound cannot both hold (3702 is estimate-grade, from a proxy potential). State this in §2 and §5 with the number.
+   - §5's line "the light ring and pitch are set outside the floor in both A and B" must go. 3702 argues the interior mass moves the (2,2) pole. Also, both A and B have β < 1 everywhere, so there is no wave horizon at 2M, and the ingoing boundary used by 3675/3702 fails. The ringdown has to be redone, not just checked for echoes.
+   - Note the trade honestly: the drain-to-a-central-core picture puts β = 1 at r = 2m (4398 (c); 3703's sea lapse → 0 at v = 2). That is exactly what makes the GR ringdown work.
+2. **B's cost is understated: in B his gravity does nothing to matter.** A CP released at rest inside stays at rest. His bullet says the gradient acts "as a gravitational force" on the middle region; B contradicts that, not just Einstein's link between pull and clock. Say that B matches his curve only in the shift profile, not in force. The convenient-branch note should name this cost.
+3. **The B tension is physically backwards for a jammed core.** A medium "resisting further shrinking" (or his 4370 six-neighbour halt) supplies positive pressure, which is option A. B needs isotropic tension (ρ + 3p = 0). Remove or reverse the §5 suggestion, and note that his halt mechanism points to A-type support.
+4. **A vs B leaves out the corpus's existing position.** 3703 already derives a bimetric interior: the matter lapse is flat at ½ (B-like, "no register quantity continues below lapse ½"), while the sea lapse follows the enclosed demand (A-like, down to 0 at v = 2).
+   - Add this as option C, or explain why it is set aside.
+   - This also softens the claim that A "takes the Planck sphere below the floor": the corpus already allows a sea lapse below ½.
+   - Also state that the ¼ centre clock and the "largest at the edge" felt pull are uniform-profile results. His curve allows any profile with ρ(r) ≥ ⅔ × the mean density enclosed (for example ρ ∝ r^k with k > −1). The A/B split (clock falls vs pinned) is qualitatively fair because the edge already sits at ½; the numbers are not.
+5. **The light-speed row is wrong as written.** On the river grid (4398 §4 reaches), both A and B have reaches of 0.134 toward and 1.866 away just inside the edge.
+   - B gives c/2 only sideways throughout, and in all directions only at the centre. It is not "c/2 throughout".
+   - A gives sideways ½ → ¼. Radially in static coordinates it is ¼ at both the edge and the centre.
+   - Qualify "B gives his c/2, A does not" accordingly. 3623 does not specify a direction.
+6. **"Agrees with 3623" is not supported.** 3623 does not say where the energy sits. Its "locations are at 1 PSR" spacing is Planck density, which 4370 §3 used to identify the drain end-state speck, not a filled ball out to 8m/3. Call 3623 neutral and remove the claim of agreement.
+7. **"Sharpens his third bullet" undersells him.** His chord count (R+r inward against R−r outward, net 2r ∝ r) is Newton's own cone proof: per solid angle, mass grows as d² and force falls as 1/d², so pull goes with chord length. His mechanism already has the outer segments cancelling exactly. Reword to "is Newton's proof".
+8. **Reframe the founder question around one physical picture.** "Release a CP at rest halfway to the centre. Does it start to fall toward the centre (A, and clocks keep slowing inward), or stay where it is (B)? In B, what holds the edge?" Put the clock and Planck-sphere sizes after that. Also ask how his filled interior squares with the ringdown needing most of the mass deep inside.
+
+### Minor notes
+- In A the felt pull peaks at about 0.86R (0.0968 against 0.0938 at the edge) because pressure adds to it. "Near the edge" is fine, but it is not exactly his "max at the perimeter".
+- In A, 2M/R = ¾ is exactly where a uniform star's central pressure equals its energy density (p_c = ρ, the dominant-energy limit). "Buchdahl OK" undersells this. It is a notable coincidence with the 8m/3 floor and worth stating.
+- The "replaces" framing is fair: his 4398 text does say "there is no gravitational gradient, so the gradient is zero". Note that 4398 §5 read his words faithfully and that he revised them. It was not Claude's misreading.
+- 4370 §2 and 3702 already disagree about whether the interior affects the ringdown. 4399 should not side with 4370 silently.
+- §3's continuity of the shift is generic (any interior with m(R) = M) and should not be counted as support for his curve.
+- 3703 owed item 8 (neutron stars under DRAIN) and 3634–3637 are affected by any STOP-like filled interior. Cross-reference them.
+- The script header says ~1–3 min; it runs in 1.5 s.
+
+### D-9: items owed in todolist.md
+1. His filled-core curve against 3702's ringdown bound (it needs ≤56% of M inside 2M; the bound needs ≥90%). Resolve or retract one.
+2. The ringdown under A or B: no wave horizon at 2M, so the ingoing boundary of 3675/3702 must be redone. Also echoes and damping (RCORE arc).
+3. 3703's bimetric interior (matter lapse ½ against sea lapse) mapped onto A/B/C; DRAIN against STOP inside a filled core.
+4. 4370's Planck-density speck end-state against the filled core; and 4370 §2 against 3702 on whether the interior affects the ringdown.
+5. 3623's "1 PSR" spacing and density against a filled ball out to 8m/3.
+6. B: the surface layer (σ = 0, S = (M/R²)/(8π√(1−2M/R)) > 0, violates the dominant energy condition) tied to the AP-5 layer; what the interior tension means in CPP terms.
+7. A: how the PSR goes below the floor; effects on R-DIBIT-COUNT-AT-FLOOR, 4356, and 3623's c/2.
+8. Non-uniform profiles allowed by his curve (ρ ≥ ⅔ × mean enclosed density): central clock and compactness for each.
+9. Felt-pull peak inside the edge in A; the p_c = ρ coincidence at the 8m/3 floor.
+10. Founder question 4399 §7 (reframed).
+11. Carried: 4398 (a), (b) (round-size jump, B only; and the B layer), (d), (e), (f), (g); 4398 (c) superseded by item 1; the 4397 items; 4311 floor attainment; 3703 owed item 8 and 3634–3637 cross-check.
+
+### Plain language
+The maths in the draft is right, and the founder's picture of gravity inside a black hole (zero at the centre, strongest at the edge) is exactly Newton's classic proof, which his own counting already reproduces. But that picture needs the black hole's material spread through its interior. An earlier patch (3702) found that the measured "ringing" of merging black holes needs almost all of the mass packed near the centre. The draft does not mention that clash, and it has to be faced. The draft's preferred option (B) also has a hidden price: in it, nothing inside would actually fall, so the founder's inward force would not act on anything. The simplest question to put to Thomas is: if you let go of a particle halfway in, does it fall toward the centre or stay put?
+
+---
+
+## Claude's response to the 4399 return (not part of the verbatim report)
+
+- **1 taken in:** §3 now states 3702's bound (≳ 90% of M inside 2M, estimate-grade) against his curve (≤ 56%), the "light ring set outside the floor" line is removed, and the ringdown is listed as needing a redo (no wave horizon). The trade (draining gives β = 1 at 2m, which the GR ringdown uses) is stated. Checked against 3702 and 3703 directly.
+- **2 taken in:** B's cost is named: his gravity would move nothing; B matches his curve only in the shift.
+- **3 taken in:** the "resisting shrinking" suggestion for B is reversed: a jammed core supplies pressure, which is A.
+- **4 taken in:** 3703's bimetric interior is option C; the uniform-profile caveat and the allowed-profile condition are stated.
+- **5 taken in:** the light row is corrected (radial 0.134/1.866 just inside the edge in every option; B gives c/2 sideways throughout).
+- **6 taken in:** 3623 is called neutral.
+- **7 taken in:** his counting is credited as Newton's own proof.
+- **8 taken in:** the founder question is rebuilt around where the matter goes, and then a CP released halfway in.
+- **Minor notes:** felt-pull peak at ~0.86R, the p_c = ρ coincidence at 8m/3, "read faithfully and revised", shift continuity generic, neutron-star cross-reference, and the script timing are all taken in. All eleven D-9 items are filed.
