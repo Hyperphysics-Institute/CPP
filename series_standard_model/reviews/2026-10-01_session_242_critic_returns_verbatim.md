@@ -1669,3 +1669,90 @@ The draft has the core logic right but needs fixes. Its "free" match in B was ac
 - **7 taken in:** the founder question says "the side facing the hole", scales the times, and gives B's costs.
 - **8 taken in:** the 4402 todolist entry carries 4401 item (3), closes item (5), and restates items (1), (6), (8).
 - **Minor notes:** the finite proper time in GR (A differs physically) and the frame difference between B's 0.134 and 3703's c/2 are noted.
+
+---
+
+## Patch 4403 — critic return (fresh context), verbatim
+
+## Critic report, Draft Patch 4403 (how gravity moves a CP)
+
+**Verdict: ACCEPT WITH CHANGES.** The quantitative core holds up. The critique of the founder's analogy does not, in two places: one is a misreading and one mixes up speed with acceleration. The draft also misses three items already in the corpus that answer what it calls open. Changes 1 to 4 must go in before §7 and §8 reach Thomas. Without them, treat it as HOLD.
+
+The script runs cleanly from /root/CPP. Its numbers check out: limb difference 3.532e-51, per-Moment drift change equal to the half-difference (ratio 1.000000), 9.82 m/s after one second, v dv/dr = −M/r², and 1/α ≈ 137.
+
+### What checks out
+- **The rule is Newton's law in per-Moment units.** "Drift change per Moment = census difference across one PSR" is just g·t_P/c = (g/c²)·l_P. The draft honestly says the coefficient of one is a units identity and that G comes in through the census normalisation. The boxed "half the difference between limbs one PSR either side" says the same thing.
+- **Inverse square and shell theorem** follow because u is harmonic. Correct.
+- **River identity.** v dv/dr = −du/dr is correct. It is actually exact in GR for radial geodesics, in proper time and areal r (d²r/dτ² = −M/r² for any energy). It is not merely a weak-field result.
+- **MICROSCOPE citation** is right. Touboul et al. 2022 (PRL 129, 121102) used titanium and platinum-alloy test masses and found η = [−1.5 ± 2.3 ± 1.5]×10⁻¹⁵.
+- **Inertia point** is right and consistent with R-CP-NO-REST-MASS.
+- **137 identities** are right: G m_P² = ħc and e²/(4πε₀) = αħc.
+
+### Required changes
+1. **Cite the prior art; this is not a new mechanism.**
+   - **GR-1a** (`series_gravitation/GR_companion_papers/GR-1a_newtonian_gravity_from_SSV/…tex`, around lines 136–180 and 278) already has: force proportional to ∇ΔSSV_grav, a free-fall particle "moves along the local SSV gradient", attraction "toward higher stress" (the same sign as 4403), and the Universal-attraction corollary that "gravitational SSV has no polarity". Correction 3 restates that corollary.
+   - **A3′ clause C5** (registry line 39) already registers that matter couples only through geodesics of the assembled metric. The 4403 rule is C5's Newtonian limit. Say so.
+   - **GR-FE-1 founder ruling** (`founders_voice/founder_ruling_GR-FE-1_physical_picture_2026-08-19.md`, lines 70–87) is Thomas's own step mechanism. The radial rise in SSV_abs is the cause. The smaller PSR on the inner limb reduces displacement per Moment there, which bends the centre of mass from tangent to orbit to fall, "depending on the gradient between the inner and outer radius of each CP". That is a refraction mechanism, and it fills much of what §6 lists as open ("why a CP's drift changes toward more SSV_abs"). §6 and §8 must engage with it.
+2. **Correction 2 misreads the founder.** He wrote "fewer DI-bits from the inner limb (due to PSR being smaller on the inner limb)". The natural reading is the PSR at the inner limb's location compared with the outer limb's, which is a gradient. It is not the single sphere's lopsidedness β.
+   - In GR-1a, PSR_eff = l_P/(1+kΔSSV). That is linear in u, so the inner-to-outer PSR difference scales as ∇u. That gives the inverse square, with the right direction (more push from the outer side).
+   - So his second phrasing works in both sign and size. The r^{−1/2} only appears if you substitute the 4397 shift β = √(2u) for the PSR.
+   - With PSR_eff a function of SSV_abs, "pulled toward more SSV_abs" and "pushed from the side with the larger PSR" describe one field. The "reconcile the two counts" item in §3.1 and §6 mostly falls away.
+   - Rewrite §3.2 and §7. Mark that "the census version is the one that works" was the convenient branch under PD-008.
+3. **Correction 1 corrects a claim he did not make.**
+   - He never said the pressure scales with SSV_abs. He said the outer limb has more "pressure" because it has a larger volume, and fewer DI-bits arrive from the inner side. Both point toward the mass.
+   - He also wrote that DI-bits "can cause attraction and repulsion", so he already allows a pull.
+   - "His own bullet says SSV_abs increases toward the mass" is not in this message. His bullet literally reads "SSV_abs will be shorter in the direction of the gravitational mass", meaning the PSR. The rising-SSV_abs statement is in GR-FE-1; cite it there.
+   - Reframe correction 1 as a consistency note, not a sign correction.
+4. **Parts 3 and 4 mix up speed and acceleration, and ignore option E (river or DP-sea carrier, 4401/4402).**
+   - A displacement per Moment equal to the local β(r), set afresh each Moment, does not fall at constant speed. It is exactly the river free-fall from rest at infinity. "β gives an r^{−1/2} pull" treats a velocity as an acceleration.
+   - The real failures of a non-accumulating β step are different: a body released at rest at finite r would jump straight to β(r₀), and orbits come out wrong. Both need a peculiar velocity that the CP keeps, on top of the river.
+   - Fix §3.2, §3 "inertia", script parts 3 and 4, and §4.
+5. **Where is the accumulated drift stored?** R-CP-NO-REST-MASS (registry, Patch 4350) says "each Moment a CP advances by its SSV_net (V_i)". Thomas now puts SSV_net on charge displacement and gravity on the limb difference. If gravity's drift accumulates, it has to live in V_i, in the DP-arcs, or somewhere new. State this tension and record it as owed.
+6. **Narrow "one gravity, two descriptions" (§4).**
+   - It is exact for radial infall when the Moment is the infaller's proper time, or the river grid time.
+   - A hovering observer needs M/r²/√(1−2M/r).
+   - The Newtonian rule has no 3ML²/r⁴ term, so it gives no perihelion precession. Non-radial motion needs the full C5 geodesic.
+   - "What light sees vs what matter feels" should say that the limb rule alone gives half the light deflection.
+7. **Rework or remove the 137 argument (§5).**
+   - It assumes a Planck mass per packed unit. That is unsupported and in tension with R-CP-NO-REST-MASS.
+   - It compares the gravity of one neighbouring pair with that pair's Coulomb force. It is not a gradient argument.
+   - The gravitational force of the whole core on one unit, against the Coulomb force of its nearest neighbour, comes out at about l_P/(2Rα). That is tiny for any real hole, so "the gradient far overpowers" fails as a force comparison.
+   - 4370 says there is no SSV_abs gradient among touching CPs, and 4399 says gravity inside the core tends to zero.
+   - Report the founder's view that alternation is not significant as his stated view, and do not claim 4370 "loses its force". Keep the 12-vs-6 packing question open (4402 item 7, OPEN-GR-RCORE-4).
+8. **Revise the §8 question.** As written it is leading and asks him to give up polarity without noting his own earlier position. Ask whether his August GR-FE-1 picture (smaller step on the inner limb bends the path toward the mass) and the 4403 limb rule are the same mechanism. If he wants polarity kept, ask how it stays polarity-blind to 10⁻¹⁵. Cite GR-1a's no-polarity corollary as existing corpus.
+9. **D-9: todolist entry for 4403.** None exists yet. The gate passes at HEAD because 4403 is not yet committed. The entry must cover:
+   - the mechanism (now partly answered by GR-FE-1)
+   - the equivalence principle at CP level, 10⁻¹⁵
+   - where the drift is stored (change 5)
+   - reconciling C5 and GR-1a (non-radial terms)
+   - the light-edge limit at 2M (GP or sphere centre)
+   - 10³⁰ at low priority
+   - packing 12 vs 6
+   - carried 4402 items (2), (3), (4), (6), (7), (8), (9), (10), marking item (1) answered and item (5) answered by his "SSV_net for the charge step"
+   - option E (the DP sea as carrier) still unanswered by Thomas
+
+   Then run `code/deferral_gate.py` before the format-patch.
+
+### Minor notes
+- In §2, say "half the inner-minus-outer difference, i.e. the difference across one PSR" in both places, to avoid a factor-2 misreading.
+- The rule assumes the PSR equals l_P exactly. Directional PSR corrections are of order u; mention it in one line.
+- The script's part 3 prints β, not ∇β. Once change 4 is made, add a line showing ∇u computed from PSR_eff(u).
+- The 2M note in §5 is fair. Premise (i) of 4402 survives his answer. Carrying it rather than asking again is right.
+- The founder file is correctly verbatim. The title's "Alternation… Not Significant" is accurate.
+
+### Plain language
+Claude's main result is sound: if a particle's speed toward a mass grows each tick by the tiny difference in the "crowding" signal between its near and far side, you get Newton's gravity exactly. But that is a restatement of Newton in the theory's own units, and the corpus already said most of it. The Newtonian-gravity paper (GR-1a) has particles following the gradient with no charge-dependence, the registered axiom has matter following the curved-space paths, and Thomas's own August ruling explains the fall as the near side taking shorter steps. The draft also corrects Thomas where he was not wrong. His "fewer signals from the smaller inner side" naturally means the size difference between the two sides, and that gives exactly the right law. Fix those points, drop or soften the "137 times stronger" core argument, and add the owed items to the todolist before this goes to him.
+
+---
+
+## Claude's response to the 4403 return (not part of the verbatim report)
+
+- **1 taken in:** GR-FE-1 (lines 70–87, his refraction mechanism), GR-1a (gradient, toward higher stress, no-polarity corollary) and A3′ C5 are credited in a new §2; the rule is called C5's Newtonian limit.
+- **2 taken in:** his "smaller PSR on the inner limb" is read as a gradient; with PSR_eff = l_P/(1 + k u) it gives the inverse square in the right direction (script part 3); the first draft's misreading is withdrawn and marked as a convenient branch.
+- **3 taken in:** the "sign correction" is removed; his attraction/repulsion wording and the GR-FE-1 source of "SSV_abs rises toward the mass" are respected.
+- **4 taken in:** the speed/acceleration confusion is removed; the body-at-rest gap is addressed with the internal-oscillation refraction idea (script part 4: momentum m g t from a clock-slowed internal rate).
+- **5 taken in:** where the accumulated drift is stored (V_i vs DP-arcs vs new) is stated and filed; the idea in §5 offers one answer.
+- **6 taken in:** "one gravity" is narrowed (radial infall exact; hovering factor; no perihelion term; half the light bending).
+- **7 taken in:** the 137 argument is withdrawn; alternation is recorded as his view; the packing question stays open.
+- **8 taken in:** the founder question asks whether his GR-FE-1 refraction operates inside a still body, and about polarity, citing GR-1a's corollary.
+- **9 taken in:** the D-9 entry is filed with all listed items.
