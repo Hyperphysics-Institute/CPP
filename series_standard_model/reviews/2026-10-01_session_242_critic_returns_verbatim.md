@@ -1431,3 +1431,87 @@ The maths in the draft is right, and the founder's picture of gravity inside a b
 - **7 taken in:** his counting is credited as Newton's own proof.
 - **8 taken in:** the founder question is rebuilt around where the matter goes, and then a CP released halfway in.
 - **Minor notes:** felt-pull peak at ~0.86R, the p_c = ρ coincidence at 8m/3, "read faithfully and revised", shift continuity generic, neutron-star cross-reference, and the script timing are all taken in. All eleven D-9 items are filed.
+
+---
+
+## Patch 4400 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES.** The headline holds up under independent checks: a uniform filled ball at R = 8M/3 rings about 20% high in the axial ℓ = 2 mode. But three things need fixing before acceptance: one table column is a numerical artifact, the "why" explanation is wrong in its mechanism, and the "independent confirmation" credit leaves out an earlier result (3644 A1).
+
+**Checks I ran** (scratch only, nothing in the repo changed; the script runs in about 15 s, not "a few minutes")
+- **Equation and boundaries:** the potential V = e^{2ν}[l(l+1)/r² + 4π(ρ−p) − 6m/r³] and the tortoise coordinate dr*/dr = e^{−ν}/√(1−2m/r) are the correct Chandrasekhar–Ferrari form, with the right sign. Option B is consistent with the TOV equations: m − 4πr³ρ/3 = 0, so ν′ = 0 and p′ = 0.
+- **Negative pressure:** B is an isotropic perfect fluid with ρ + p = 2ρ/3 > 0, and the axial derivation never assumes p > 0. So the equation holds in the bulk. The one exception is B's edge membrane (pressure jumps from −ρ/3 to 0), which is not a perfect fluid (minor note 1).
+- **Boundary conditions:** regular centre, outgoing far right, absorbing far left for the black hole. All fine.
+- **Black-hole validation:** a multi-mode (matrix-pencil) fit gives 0.3737 − 0.0889i, which is exact. It is unchanged at dx = 0.01, 0.02 and 0.04.
+- **Robust mode values:** matrix-pencil fits over windows from 5 to 200 M after the peak, and three source/observer placements, give:
+  - A: 0.4480 − 0.0593i (+19.9% pitch, −33.3% damping)
+  - B: 0.4534 − 0.1079i (+21.3%, +21.3%)
+  - wall: 0.3534 − 0.1294i (−5.4%, +45.5%)
+  - The single-mode fit at window offsets from 5 to 120 M stays within about ±1.5% for A and B.
+- **No trapped or late modes dominate.** For A, the interior potential never drops below 0.164, which is above the exterior peak of 0.151, so there is essentially no well. Late-time amplitudes fall to about 1e-9. The fitted mode is the star's fundamental axial w-mode, and it is the prompt ringing, not a late-time mode.
+
+**Required changes**
+1. **Replace the single-mode-fit numbers.** Use a multi-mode fit, normalised to the exact black-hole value (0.3737, 0.0890), with the values above. Delete the claim that the fit bias "is the same for every case". It is not: about −0.9% for the black hole, −1.2% for A, +0.3% for B.
+2. **Drop or redo the "waveform match" column.**
+   - The values −0.10 and −0.48 are an artifact. The ball's exterior tortoise coordinate is shifted by +9.6 M (A) and +6.0 M (B) relative to the black hole's, so the fixed window (120–250) compares signals that are offset in time.
+   - Maximised over time shift, |overlap| is 0.81–0.85 for A and 0.85–0.88 for B.
+   - The wall's 0.99 is valid, because it uses the same coordinate as the black hole.
+3. **Correct the "why" in §2 and §5.**
+   - The wave does not cross the ball. At the mode frequency, its turning point is r ≈ 0.65R in A and 0.95R in B. In B it is turned back essentially at the edge.
+   - Correct mechanism: the interior's potential stays at or above the light-ring peak, so nothing leaks inward. The ball's rising potential reflects the wave just behind the light ring and the absorbing horizon is gone, which raises the pitch.
+   - The return trip (turning point to light-ring peak and back) is about 11 M for A and 4 M for B. That is shorter than one ringing cycle (about 17 M), so the return merges into the ringing.
+   - Remove "that echo sets the pitch" from §5. "Echo" collides with the corpus's PRED-O-39 echo, and there is no separate echo here.
+4. **Add the Cardoso–Franzin–Pani 2016 paragraph.**
+   - Their result (black-hole-like prompt ringdown, then echoes) needs a surface close to 2M, where the cavity delay grows like |ln(R/2M − 1)| and is long compared with the ringdown time.
+   - At R = 8M/3, just inside 3M, the cavity is a few M long and barely forms a well, so there is no black-hole-like prompt phase to separate out. The ringing is the star's own mode.
+   - So there is no conflict with their paper. This regime is also covered by the Chandrasekhar–Ferrari (1991) and Kokkotas (1994) work on axial w-modes of ultracompact uniform stars.
+5. **Credit the earlier result and reword the "confirms 3702" claim.**
+   - 3644 A1 (lossless graded transmit, i.e. the wave rides the register through a filled interior, polar) already gave **+23% pitch, −32% damping** at a = 0, and +16% at Kerr χ = 0.68.
+   - 3702 tabulated only up to μ = 0.3 (+18.6%), using a proxy with an ingoing horizon. The ~20% for a filled ball (μ ≈ 0.58) is 3703's extrapolation.
+   - Suggested wording: "agrees in sign and size with 3644 A1 and with 3703's extrapolation of 3702, by a different method (axial, full interior, no horizon)." Not "confirms 3702 independently."
+6. **Narrow the scope in the title and the headline.**
+   - "Whichever interior clock" should be "in both interior clocks tried (A, B)". The scope is uniform density, axial, a = 0.
+   - 4399's option C (waves ride the sea's lapse) was not computed. Say so.
+   - The GW250114 box is a Kerr box applied to a = 0 results for scale only (conv042 T-6). "Eight times outside" needs that caveat.
+7. **§3: say how DRAIN "passes".** DRAIN with 3675 matches the ringdown because it reproduces GR's response at the surface by construction, and 3675 is still PROPOSED, pending triangulation. It also carries its own open cost (3703 owed item 8, neutron stars under DRAIN). It is not an independent pass.
+8. **§4 and §6 framing.**
+   - §4 is fair under PD-006: STOP is filed as his picture, and DRAIN is kept as a provisional default constrained by the data, not as a ruling against him.
+   - Add that DRAIN was itself a physics choice made in 3703 and stays provisional until he answers §6.
+   - In the §6 question, change option 1 to "it is turned back by the ball (at the edge or partway in)" and add 3670's "partly reflected at the edge" as an option, so all three branches in §3 are offered.
+   - Otherwise the question is a fair physical picture. The third option honestly says it would need a mechanism that nobody has.
+
+**Minor notes**
+1. B's edge membrane carries surface stress. Whether it adds a junction term to the axial equation has not been checked. Add it as a caveat.
+2. The wall case applies a Sommerfeld condition where V ≈ 0.13, so it is not a perfect absorber. The effect is small.
+3. The axial wall gives +45% damping where 3644 B (polar) gave about 30%. Say "same direction, larger in axial" rather than "reproduces".
+4. The script's choice of t0 is fragile: with source at 60 and observer at 200, A's window opens on a segment where an overtone dominates. Anchor t0 to the light-ring arrival time instead.
+5. The founder file is fine: verbatim, typos kept, the quoted paragraph marked.
+6. Optional: a frequency-domain cross-check of A against the published uniform-star axial modes.
+
+**D-9 items owed to todolist.md (same patch)**
+1. Polar (Zerilli plus fluid) ringdown of the filled ball, including whether fluid f-modes are excited. The (2,2) mode is polar.
+2. The same at Kerr χ = 0.68, since the GW250114 box is Kerr's.
+3. Non-uniform interior profiles that his 4399 curve allows.
+4. Option C's wave sector (waves on the sea's lapse inside a filled ball).
+5. B's edge-membrane junction in the axial equation.
+6. The rescue route: a mechanism by which a filled ball looks empty to gravitational waves (the only open route for STOP).
+7. Pending founder answer to 4400 §6.
+8. If STOP is kept, reopen: 3702, the 3703 DRAIN selection, 3675, PRED-O-40, and 3634–3637 (linked to 3703 item 8).
+9. Script fix: multi-mode fit, aligned overlap, robust t0.
+10. Carry forward the 4399 §5 items. "Where the matter goes" is now answered by the founder as STOP; "the ringdown with a filled interior" is done for axial only.
+
+**Plain language:** Thomas says the black hole's matter stops at the edge and fills the ball. I re-ran the calculation of how such a filled ball would "ring" after two black holes merge, and the answer holds: it rings about 20% higher in pitch than a true black hole. The measurements allow only about 2%. The draft's explanation is a little off, though. The wave does not travel through the ball and back. The ball turns it back near its edge, and the return comes so fast that there is no separate echo; it simply changes the pitch. One table column is a numerical artifact, and an earlier result (3644) found the same thing, +23%, and should be credited. The result has so far been checked only for one kind of wave and a non-spinning ball, and the founder's question should offer all three possibilities fairly. With those fixes the patch is sound.
+
+---
+
+## Claude's response to the 4400 return (not part of the verbatim report)
+
+- **1 taken in:** the script now uses a matrix-pencil fit (least-damped significant mode), with the black hole at the exact 0.3737 − 0.0890i; A 0.4468 − 0.0607i (+19.6%, −31.8%), B 0.4533 − 0.1058i (+21.3%, +18.9%), wall 0.3534 − 0.1295i, in agreement with the critic's values. The "same bias" claim is removed.
+- **2 taken in:** the overlap column is time-aligned (0.80 for A, 0.84 for B, 0.99 for the wall).
+- **3 taken in:** the explanation is corrected (turned back behind the light ring; return trip shorter than one cycle; no separate echo); "echo sets the pitch" is removed.
+- **4 taken in:** the Cardoso–Franzin–Pani paragraph is added, with Chandrasekhar–Ferrari 1991 and Kokkotas 1994.
+- **5 taken in:** 3644 A1 is credited; "confirms 3702 independently" becomes agreement with 3644 A1 and 3703's extrapolation of 3702.
+- **6 taken in:** the scope is narrowed to the two clocks tried, axial, uniform, zero spin; option C is marked not computed; the Kerr-box caveat is added.
+- **7 taken in:** DRAIN's match is described as by construction, 3675 PROPOSED, with 3703 owed item 8.
+- **8 taken in:** DRAIN is called a provisional physics choice; the founder question offers all branches.
+- **Minor notes:** the membrane caveat, the wall-not-perfect note (implicit in "same direction, larger"), and the robust t0 (anchored to the light-ring arrival) are taken in; the frequency-domain cross-check is filed. All ten D-9 items are filed.
