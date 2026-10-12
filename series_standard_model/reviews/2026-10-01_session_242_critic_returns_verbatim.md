@@ -1515,3 +1515,89 @@ The maths in the draft is right, and the founder's picture of gravity inside a b
 - **7 taken in:** DRAIN's match is described as by construction, 3675 PROPOSED, with 3703 owed item 8.
 - **8 taken in:** DRAIN is called a provisional physics choice; the founder question offers all branches.
 - **Minor notes:** the membrane caveat, the wall-not-perfect note (implicit in "same direction, larger"), and the robust t0 (anchored to the light-ring arrival) are taken in; the frequency-domain cross-check is filed. All ten D-9 items are filed.
+
+---
+
+## Patch 4401 — critic return (fresh context), verbatim
+
+**Critic report, Patch 4401 (fresh context; nothing in the repo was modified)**
+
+**Verdict: ACCEPT WITH CHANGES.** The core physics is right. The sign assignment, the reach table, the claim that the field equations see only v², and the 2M behaviour all check out. Six claims need scoping or correction. None of them changes the conclusion.
+
+**What I verified**
+- **Which sign is which hole.** In the river metric ds² = −dt² + (dr − v dt)² + r²dΩ², radial light moves at dr/dt = v ± 1.
+  - v = −√(2M/r), sphere carried inward: reach toward the mass 1+β, away 1−β. This is the black-hole (ingoing) chart.
+  - v = +√(2M/r), "shortest toward": reach toward 1−β, away 1+β. This is the white-hole chart.
+  - The table and the script output (8/3, 2.4, 2.1, 2, 1.5) are correct. So are the statements at r = 2M (one reach is zero) and inside (both reaches point the same way).
+- **Einstein tensor, recomputed independently with sympy.** For static v(r) with N = 1:
+  - G^t_t = G^r_r = −(v² + 2rvv′)/r² = −(rv²)′/r².
+  - G^θ_θ = −(vv″ + v′² + 2vv′/r) = −[(v²)″/2 + (v²)′/r].
+  - Off-diagonal components are zero.
+  - These match the script's formulas, so G depends on v only through v². ✓
+- **Flip outside 2M.** Ingoing and outgoing river time both equal Schwarzschild time ± f(r), with f finite for r > 2M. Gluing them at some r₀ > 2M is a C⁰ coordinate change with a kink: the geometry is still Schwarzschild and no source is needed. ✓ At 2M, f diverges logarithmically, so the two signs cannot be joined there. ✓
+- **Core size.** Taking N = M/m_P, a sphere of radius l_P(3N/4π)^{1/3} gives 1.8e-22 m at 62 M☉, matching 3703. The script prints N^{1/3}·l_P ≈ 2.9e-22 m, which is the cube side. The ratio to 2M is about 1e-27. ✓
+
+**Required changes**
+1. **The "one CP per Planck volume" basis (§2 bullet 3, script part 1).**
+   - The script uses N = M/m_P, which means one *Planck mass* per Planck volume (Planck density). It does not count CPs.
+   - The founder's picture is CPs filling GPs. If the CP count is about baryon number × O(few) (~1e58–1e59 at 62 M☉), the core comes out about 1e-16 to 1e-15 m. That is about 7 orders larger, though still ≪ 2M.
+   - Fix: state the assumption explicitly ("Planck density, i.e. each CP carrying ~m_P, e.g. via 3623's stored vibration"), or give both counts. Note that the conclusion (core ≪ 2M, ringdown unaffected) holds for either.
+   - Also add a note reconciling with R-EXCL-RETIRED (packing at the PSR floor, possibly l_P/2 spacing, not one CP per GP). This is an order-one factor.
+   - Script wording: label the printed number "cube side", or print the radius to match 3703.
+2. **"Outside 2M every measurement is the same for both signs" (§3) overstates it.** Two qualifications are needed:
+   - (a) The claim holds for round-trip and light-synchronised measurements. One-way times under universal Moments differ by 2∫v dr (4397 §4, 4398 §2). Say "every measurement made so far / every round-trip measurement".
+   - (b) The ringdown does not belong in this list without a caveat. Its quasinormal modes need a boundary that absorbs at the horizon, which is exactly the draining sign at 2M. 4398 could list ringdown pitch only because there the floor lay outside 2M and there was no horizon. Reword: "bending, delay, redshift, light ring, shadow; the ringdown needs the draining sign at 2M, which DRAIN supplies."
+3. **"Needs" must be stated conditionally (§3, §6, title).** The draining sign is required only if the grid's Moment is a time that crosses the horizon (N = 1 with a shift), so that the core forms in a finite number of Moments. That is the founder's picture and 3703's 1.6 ms crossing time.
+   - Name the alternative and why it is set aside. A static description with a lapse and no shift (Schwarzschild/isotropic form, i.e. 3703's sea clock going to 0 at 2M) is time-symmetric and needs no sign. In it, matter never reaches 2M in grid time (a frozen star), so the core never forms on the grid.
+   - Note one more option that keeps his shape. If the PSR is read as the sphere a GP *receives from* rather than *broadcasts to*, "shortest toward the mass" gives the black-hole sign. The corpus reads it as broadcast (4007, 4397 §3), so the draft's reading is the standard one, but this option should be in front of the founder.
+   - A falling-frame reading cannot rescue "shortest toward": in any local free-fall or static frame the reach is isotropic, so the asymmetry exists only in the grid frame.
+4. **Framing of the founder's 4398 position (§3 "What does not change").** The draft says only the displacement reverses, not the gradient. That is accurate about his stated reason (SSV_abs direction cannot reverse), but it understates the change.
+   - His explicit rule, "SSV_abs increases toward the body, and the PSR decreases in that direction" (founders_voice 4398), is what must be replaced.
+   - "Draining sign everywhere" (§4) also reverses his original 4397 shape ("PSR smallest toward the Sun").
+   - Say both plainly.
+   - In §7, offer the receiver reading (item 3) as a second option, so the choice is not framed only as giving up his picture.
+5. **Scoping of "superseded" (§2 "Records").** 4399's filled-core curve is Newton's shell result for any filled body. It is superseded *for black holes* only and still applies to filled bodies (e.g. 3703 item 8, neutron stars under DRAIN). §5 scopes 4398/4399 correctly, but §2 does not. Make them consistent.
+6. **Matter's c/2 cap against the river (§5 bullet 3).** Here is the concrete conflict the bullet should state.
+   - If c/2 is a grid-frame cap, then for r < 8M (where β > ½) matter cannot keep up with free fall.
+   - For r < 8M/9 (where β > 3/2), matter moving inward at c/2 on the grid falls more slowly than light aimed outward, which the river sweeps inward at β − 1 > ½. Matter would then sit outside its own light cone.
+   - So under the draining sign the cap must be relative to the falling sea, not the grid.
+   - This also bears on 3703's 2 × (8M/3)/c crossing estimate, which is grid-frame.
+
+**Minor notes**
+- §4 and script part 4 say "one-way light times jump". More exactly, the constant-time slices have a crease at r₀ and the coordinate one-way speed jumps there. Times stay continuous if the time coordinate is chosen continuous. Better: "a crease in the time slicing (one-way coordinate speeds jump)".
+- §2: "about 10⁻²² m across". 3703 quotes 1.8e-22 m as a *radius*. Say "radius ~2×10⁻²² m".
+- Checked and correct:
+  - 4400's ~20%, 3675 as PROPOSED-PENDING-TRIANGULATION, 4398 §2 naming the horizon condition, and the Hamilton & Lisle 2008 reference (Am. J. Phys. 76, 519).
+  - 3703 on the 8M/3 floor: the surface at 8M/3 is where the *field* saturates, not where matter stops; matter clock ½ above the cap; sea clock to 0 at v = 2 (r = 2M). The draft reports this correctly.
+  - Calling 4398's round, half-size, no-shift interior superseded for black holes is right: it assumed a filled core.
+- §3: "inside, both reaches point inward" is right. It is worth one clause to say that the "away" reach going negative means outward-aimed light is carried inward.
+- §7 is a fair physical picture. It joins two questions (black hole; Sun and Earth), and numbering them 1 and 2 would help the answer map back. Add the receiver-sphere option (item 3).
+- §8 PD-008: "Convenient branch" should also name "the drain *needs* the inward sign". The static/frozen-star alternative is the inconvenient one to set aside (item 3).
+
+**D-9: owed items for todolist.md (Patch 4401)**
+1. Physical cause of the inward displacement (the falling DP sea carrying the Planck sphere?).
+2. A GP lying outside its own Planck sphere inside 2M: is that allowed by the PSR construction?
+3. Matter's c/2 cap: sea frame or grid frame. It must be the sea frame under the draining sign (r < 8M/9 conflict). Re-check 3703's 1.6 ms crossing estimate.
+4. Core size basis: CP count vs Planck-mass count. Reconcile with R-EXCL-RETIRED (floor spacing) and 3623's vibration storage.
+5. Founder question 4401 §7 (inward-carried sphere at the black hole; same around the Sun and Earth?). Include the receiver-sphere option.
+6. Sign far from holes: what fixes it in CPP. The "direction from the mass" rule now has to produce the *inward* displacement. Restate the rule replacing "the PSR decreases toward increasing SSV_abs".
+7. 4398's "no flip" ruling and the 4397 shape: status pending the founder's answer.
+8. Ringdown boundary condition: confirm it is tied to the draining sign at 2M (3675/3702). 3675 is still pending triangulation.
+9. 4400's items 1–5 and 9 (polar, Kerr, profiles, option C, membrane): move to the neutron-star context, together with 3703 item 8 (DRAIN neutron stars), with 4399's curve kept for filled bodies.
+10. Carried: β² = 2u calibration (4397), off-centre shell census, PSR→A3′ channel mapping (4397), frame dragging as a test of the shift's angular part, 4370 Q1, 4358 lattice reconciliation, and the remaining 4398/4399 items not closed by the retraction.
+11. Close: 4399 owed (1) and (10) (answered: speck, i.e. DRAIN); 4400 owed (6)–(8) (STOP withdrawn by the founder).
+
+**Plain language**
+The founder now says the matter inside a black hole falls all the way to a tiny packed core, which is the picture the earlier patches had already chosen because it gives the right "ring" in the gravitational-wave data. The draft's main new point is about direction. For matter to fall in, the grid has to behave as though space itself flows inward, faster than light inside the dark surface. The founder's earlier picture has the opposite tilt, and near a black hole it would describe a "white hole" that nothing can enter. That point is correct. But the draft should say it holds only if the grid's clock keeps running through the dark surface. It should also note one way to keep the founder's shape: read the sphere as where a point *listens* from rather than where it *sends* to. Three more fixes: the core-size number assumes each particle carries a Planck mass, which should be said; "no measurement can tell the signs apart" needs two exceptions (one-way timing, and the ringing, which depends on the dark surface); and the matter speed limit of c/2 has to be measured against the flowing space, not the fixed grid.
+
+---
+
+## Claude's response to the 4401 return (not part of the verbatim report)
+
+- **1 taken in:** the core size is given on both bases (Planck density: radius ~1.8e-22 m at 62 M☉, matching 3703; CP count: ~6e-16 m), as radii, with R-EXCL-RETIRED noted; the conclusion (far inside 2M) holds for both.
+- **2 taken in:** "every measurement" is now "every round-trip and light-synchronised measurement made so far", with one-way times excepted and the ringdown tied to the draining sign at 2M.
+- **3 taken in:** "needs" is conditional on the Moment running through the dark surface; the frozen-star (shiftless) alternative is named and set aside; the listening-sphere reading, which keeps his shape, is offered; the falling-frame non-rescue is implicit in the grid-frame statement.
+- **4 taken in:** §3 says plainly that his 4398 rule and 4397 shape, read as the broadcast sphere, must be replaced near a black hole; §7 offers the listening reading first.
+- **5 taken in:** "superseded" is scoped to black holes in §2.
+- **6 taken in:** the c/2-cap conflict is stated (r < 8M, r < 8M/9) with the conclusion that the cap must be sea-frame.
+- **Minor notes:** "crease in the time slicing", "radius", the outward-light clause, numbered founder questions, and the second convenient branch are all taken in. All eleven D-9 items are filed.
