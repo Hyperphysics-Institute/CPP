@@ -1601,3 +1601,71 @@ The founder now says the matter inside a black hole falls all the way to a tiny 
 - **5 taken in:** "superseded" is scoped to black holes in §2.
 - **6 taken in:** the c/2-cap conflict is stated (r < 8M, r < 8M/9) with the conclusion that the cap must be sea-frame.
 - **Minor notes:** "crease in the time slicing", "radius", the outward-light clause, numbered founder questions, and the second convenient branch are all taken in. All eleven D-9 items are filed.
+
+---
+
+## Patch 4402 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES.** The draft's main structure holds up: the sending-sphere sign is the outgoing Painlevé–Gullstrand slicing, the inward reach is 1−β, and the fall time diverges as a logarithm. The script runs cleanly and its numbers check out (the A times rise by 18.44M per factor of 100 in ε, which is 4M·ln, matching surface gravity 1/4M). But Picture B has one internal error, one consistency gap and one observational strike it does not name, and the packing citation is wrong.
+
+**Checks**
+1. **2M and 8M/3.** Both are defined correctly and all table values are right. 8M/3 is the radius where the static lapse √(1−2M/r) equals ½; this matches 3703's isotropic N=(1−v/2)/(1+v/2)=½ at v=⅔, which maps to r=8M/3. Calling it "four-thirds of 2M" is correct.
+2. **Packing.** GR-FE-1 line 36 says "approximately 10^30 GPs **per PSR** at STP", and line 202 says "~10^30 GPs per PSR". Both read literally as a count. The founder now repeats "10^30 per Planck sphere". The radius-ratio reading (about 10^90 GPs per sphere) comes from c01 ("~l_P/10^30", "~10^30 GPs per Planck length"), founders_vision at 0733, and 4168. It does not come from GR-FE-1. 4358:51 is where 10^90 appears, not 4317 or 4357.
+   - The draft's citation "(GR-FE-1, c01)" for the radius-ratio reading is therefore a miscitation, and the founder's words disagree with the corpus reading twice over.
+   - Count-reading numbers: spacing l_P/10^10, so a core of about 6×10⁻²⁶ m at 62 M☉. That is still far inside 2M and denser than Planck density.
+   - The 600-cell structure is stated correctly: 12 neighbours forming an icosahedron, with triangular faces, so charges cannot alternate.
+3. **Core physics.**
+   - **Outgoing chart.** It is right that infalling matter never crosses 2M in that slicing's time: the future horizon sits at T=+∞, so this is the frozen-star (Schwarzschild-t) picture made physical. The prompt ringdown is set by the light ring at 3M and the boundary condition there. That ringdown is unchanged *if and only if* nothing reflects from the pile-up layer. In this chart, "purely ingoing at the horizon" is the same statement as "the layer does not reflect".
+   - **Subtlety the draft misses.** Ingoing waves are squeezed in r by e^(−T/4M), so on a discrete grid they reach the finest spacing after T ≈ 4M·ln(2M/ℓ). That is about 600M, or roughly 0.2 s at 62 M☉, for ℓ ~ 10⁻⁴⁵ to 10⁻⁶⁵ m. After that, any reflection from the grid gives **echoes** (Cardoso et al. 2016) delayed by about 8M·ln(M/ℓ). LIGO has found no confirmed echoes. The draft's "to be checked" should name echoes and this time scale.
+   - **Inner layers.** In a collapsing star the inner shells freeze at the event horizon as it passes them outward. So "all matter in a layer at 2M" is only a sketch.
+   - **The 4401 correction is right**, conditional on no reflection within the window, which is satisfied for GW150914's roughly 13M damping time.
+   - **Picture B is not consistent as stated.** With N=1 and the shift v held at √3/2, the mass function is m(r)=3r/8. That is continuous with m=M at 8M/3, but it implies an effective source ρ=3/(32πr²), p_r=−ρ, p_t=0.
+     - That source spreads the mass through the whole interior as 1/r². It is not a tiny core.
+     - 1−2m/r = ¼ everywhere inside, so there is no trapped surface and no horizon at all.
+     - So either B's metric is not Einstein's inside, or "the core forms" contradicts its own geometry. One of the two must be stated.
+   - **The "½ match" is built in, not found.** The sideways reach √(1−β²) equals the static lapse. Capping β at its 8M/3 value therefore caps the sideways reach at the lapse at 8M/3, which is ½ by the floor's definition. "That match was not put in" is false.
+   - **Light escaping in B.** The draft understates the cost.
+     - A surface at 8M/3 with redshift only 2 hits the Sgr A* no-surface bound (Broderick & Narayan 2006/2009): infalling matter would thermalise and radiate far above the observed luminosity.
+     - An object at R=8M/3 (inside 3M) with a transparent or reflecting interior has trapped long-lived modes and short-delay echoes. Its ringdown would no longer be Einstein's unless gravitational waves use a separate, uncapped metric. That separate metric (bimetric: light capped, waves not) must be stated as an assumption.
+4. **Framing.** The draft is fair to the founder in tone. The trilemma is correctly stated, but only under hidden premises: (i) the CP step is bounded by *its own* sending sphere's inward reach; (ii) Moments are PG time with N=1; (iii) the shift tracks √(2M/r) exactly below the floor. Options missed:
+   - **(a) GP-computed step.** GR-FE-1 (around line 28) says the CP "displaces the distance associated with the SSV_net the GP has computed". The step may be set by the GP's computation, or by the receiving GP's sphere, rather than by the CP's own sending reach.
+   - **(b) Discrete lattice.** The asymptotic approach ends after about 4M·ln(2M/ℓ). If the last step can be one lattice hop, the CP crosses in finite Moments (around 600M) rather than never, which is a variant of A *with* a core.
+   - **(c) Sea carrying the CP.** The CP may be carried by the infalling DP sea (3675; this was 4401 owed item 1) rather than stepping on the GP grid.
+5. **Founder question.** "Sunward side" is wrong for a black hole; use "the side facing the hole". "A few milliseconds" holds only for 62 M☉ (about 20M, which is roughly 10 minutes for Sgr A*), so say so. The B option should also state its other cost briefly: no horizon at all, and a visible surface that should glow.
+6. **D-9 owed items.** There is no 4402 entry in todolist.md yet (only 4401 at line 2544). The carried list omits 4401 item (3); keep it, because it is replaced only "if B". 4401 item (5) should be closed. Items (1), (6) and (8) are stale after the founder's answer and §5, and need restating rather than carrying unchanged.
+
+**Required changes**
+1. In §3, fix the citation. The radius-ratio reading is c01, founders_vision 0733 and 4168; GR-FE-1 lines 36 and 202 say "per PSR", a count, as the founder does now. State the discrepancy, give both readings' core sizes (about 6×10⁻⁴⁶ m and about 6×10⁻²⁶ m), and either add a one-line physical check for him or record it as owed.
+2. Delete "That match was not put in" from §4B and say the ½ follows from capping at the floor by construction (sideways reach = lapse, and the floor is where the lapse is ½).
+3. Add B's field-equation consequence: N=1 with a capped shift gives m(r)=3r/8, ρ∝1/r², p_r=−ρ, and no trapped surface. Either the interior is not Einstein's or the mass is not a tiny core. Remove "the tiny core forms" as an unqualified claim.
+4. Add B's observational strikes: the Sgr A* surface-emission bound for a redshift-2 surface, and changed ringdown or echoes unless gravitational waves use a separate uncapped metric (state that bimetric assumption).
+5. In A and §5, name the check as echoes. Give the grid compression time 4M·ln(2M/ℓ) (about 0.2 s at 62 M☉) and the echo delay of about 8M·ln(M/ℓ). Note that the ringdown claim holds only for a non-reflecting layer.
+6. Add the missed options: (a) GP-computed or receiving-sphere step, (b) discrete-lattice finite crossing, (c) sea-carried CP. State the trilemma's premises explicitly in §9.
+7. In §8, replace "sunward side" with "the side facing the hole", scale "a few milliseconds" to the 62 M☉ case, and add B's costs (no horizon, a surface that should glow).
+8. D-9: write the 4402 todolist entry in the same patch with every §6 item plus the new ones (echo check, B's source and horizon, Sgr A* bound, discrete-hop option, the 10^30 reading discrepancy). Carry 4401 item (3), close item (5), and restate items (1), (6) and (8).
+
+**Minor notes**
+- Light ring 3M versus photon-sphere impact √27·M: the "shadow set at 3M" is fine as shorthand.
+- "About an eighth" is fine (0.134 ≈ 1/7.5).
+- §4A: "not a choice of clocks but what the grid does" is fair. You could add that A differs from GR physically, because in GR an infaller's proper time to reach 2M is finite.
+- 3703's DRAIN speed (≤ c/2 in its own frame) and B's 0.134 grid-frame inward reach are measured in different frames; one sentence would prevent a false comparison.
+
+**Plain language:** The founder's picture says each point of space broadcasts a shorter distance toward a heavy mass. That works everywhere outside a black hole. At the black hole's edge (2M, the "point of no return") the inward broadcast shrinks to zero, so falling matter can never step across. The draft rightly offers two ways out:
+- **A:** the matter hugs the edge forever. From outside it looks like a black hole, but no tiny core forms.
+- **B:** the shrinking stops at the corpus's floor, so matter falls through, but then light can get out too.
+
+The draft has the core logic right but needs fixes. Its "free" match in B was actually built in. B, taken literally, spreads the mass out instead of making a tiny core, and leaves no edge of no return at all. B also faces observations that suggest Sgr A*, the black hole at our galaxy's centre, has no glowing surface. A should be tested for "echoes" in gravitational-wave signals. Two further ways out are missing: a finite crossing on a grain-sized lattice, and the step being set by the receiving point rather than the sending one. The packing number is also miscited: the founder twice said 10^30 points per Planck sphere, and the corpus reads it as 10^30 per Planck length. The question to the founder should say "the side facing the hole", not "sunward".
+
+---
+
+## Claude's response to the 4402 return (not part of the verbatim report)
+
+- **1 taken in:** the citation is fixed (GR-FE-1 and the founder: a count; c01, founders_vision 0733, 4168: a ratio, 10⁹⁰ at 4358); both core sizes are given (6×10⁻⁴⁶ m, 6×10⁻²⁶ m); the reading is filed as owed.
+- **2 taken in:** the ½ match is called built in.
+- **3 taken in:** B's field-equation consequence (m(r) = 3r/8, ρ ∝ 1/r², p_r = −ρ, no trapped surface) is computed in the script and stated; "the core forms" is qualified.
+- **4 taken in:** the Sgr A* surface bound and the two-geometry assumption for waves are stated.
+- **5 taken in:** echoes are named as A's test, with the compression time and echo delay computed.
+- **6 taken in:** premises (i)–(iii) are stated; options A′ (final lattice hop), D (GP-computed or receiving-sphere step) and E (sea-carried CP) are added.
+- **7 taken in:** the founder question says "the side facing the hole", scales the times, and gives B's costs.
+- **8 taken in:** the 4402 todolist entry carries 4401 item (3), closes item (5), and restates items (1), (6), (8).
+- **Minor notes:** the finite proper time in GR (A differs physically) and the frame difference between B's 0.134 and 3703's c/2 are noted.
