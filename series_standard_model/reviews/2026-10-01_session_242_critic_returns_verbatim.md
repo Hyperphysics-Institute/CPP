@@ -1831,3 +1831,64 @@ Thomas said a moving body keeps its speed because its DP-arcs carry it, and that
 - **6 taken in:** the founder question uses equal-weight titanium and platinum balls and asks the real fork.
 - **7 taken in:** the 4404 todolist entry is filed.
 - **Minor notes:** ~10¹³, the alloy clause, the LLR bound ~10⁻⁴ (Hofmann and Müller 2018), "assumed, not derived" in the script, and "once SSV_abs is normalised to G" are taken in.
+
+---
+
+## Patch 4405 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES.** The arithmetic checks out and the founder's text is filed verbatim. The script runs cleanly: it gives 0.090% and 5.0e-13 kg. Two claims go too far, though. First, the patch says equal fall is "by construction" under a per-CP Δv. Second, it presents the energy-weighted cohort as a condition he hasn't met, when the corpus already counts mass by energy.
+
+**Required changes**
+
+1. **§2's "by construction" needs a condition, and §2 should stop closing 4403 item 2.** R-CP-NO-REST-MASS (axiom-registry.md L363–367) says a CP advances at most one PSR per Moment and never reaches c. 4324–4326 put the ZBW CPs just under that cap; 4286 L120 has the eCP swinging at light speed. A CP near the cap cannot take the same +Δv along its direction of motion. The rule then has two possible readings:
+   - Simple addition (Galilean): the rule breaks the cap.
+   - A capped or relativistic rule: a body's velocity gain depends on how its internal speeds are spread, so it depends on what the body is made of.
+   
+   This does matter at 10⁻¹⁵. In CPP all mass sits in near-cap ZBW motion, and the share of binding energy or electrostatic energy differs between materials by about 10⁻³–10⁻⁴. A rule that gets fast CPs wrong would fail MICROSCOPE by many orders of magnitude. Only one form works: each CP gains momentum (E_i/c²)·g per unit time, so the body's centre of energy gains g. Stated that way, §2 and §3 make the same point: the gradient must act on energy. Suggested wording: "4404 §6 answered (direct increase); equal fall holds by construction if 'the same increase' means the same centre-of-energy increase, each CP's momentum gain going as its energy; 4403 item 2 stays open, sharpened." Move the clause in §5 ("for fast-moving CPs, the energy-weighted momentum") up into §2.
+
+2. **Be fair to the founder in §3: the energy weighting is already in his list and in the corpus.** His cohort explicitly includes "the polarized DP cloud". The moving CPs "increase their storage of DP-arc and DP-separation KE", which is energy language. GR-1a, in the section "Inertial and Gravitational Mass Are Identical by Construction", sets inertial mass to mc² = E_pol, the polarization energy of the eDP cloud (it cites the ZBW Mass companion, Prop. 4.1). So recast §3/§6 as "here is the reading under which your rule is right, consistent with GR-1a; please confirm", not as a correction. Add one caution. If "cohort" meant the number of DP-cloud CPs counted by cloud size, the ZBW radius ħ/mc shrinks as mass grows, so a size count would go the wrong way. That is one more reason the count has to be E_pol, not size. Keep the PD-008 mark on the convenient branch.
+
+3. **Fix §4's description of GR-1a.** GR-1a does not stop at "active mass = mc²". It claims active = inertial by construction, with mc² both the source and the resistance, for a single particle. What is still owed is the bound-body budget (TODO-4364-SELFGRAV). Say that.
+
+4. **Fix the Ti/Pt sentence.** The masses quoted are atomic masses, so electrons are included. Ti-48 has 22 electrons per 48 nucleons and Pt-195 has 78 per 195, so the CPs per nucleon are not equal. The 0.090% also contains about 0.005% from the neutron/proton mix (N/A of 0.542 vs 0.600, times 0.00084 u). Binding alone gives about 0.087%. Suggested form: counting by number fails at about 2% (4404's figure: 3.46 vs 3.40 unpaired CPs per u). Even at a fixed three quarks per nucleon, binding moves mass per nucleon by about 0.09%.
+
+5. **Soften "set aside" for the internal clock in §1 and §8.** His answer doesn't need the clock, but it doesn't rule it out either. In 4404 Part 2 the clock/refraction picture ("momentum m g t") was the mechanism that gave energy-weighted momentum automatically. That is exactly what item 1 now requires. Keep it as a live candidate for the "GP computation" item, not "not his mechanism".
+
+6. **D-9: write the owed items into todolist.md in the same patch.** The 4405 entry should list:
+   - (1) Founder question 4405 §7 (hot vs cold ball).
+   - (2) The per-CP rule under the one-PSR cap. Express it as an energy-weighted momentum gain for near-cap ZBW CPs. 4403 item 2 stays open.
+   - (3) The GP computation that delivers (2). This carries 4403 item 1 and 4404 item 2, with the internal-clock/refraction picture kept as a candidate.
+   - (4) Energy-weighted cohort = inertia, reconciled with GR-1a's E_pol = mc². How DP-arc, separation and binding energy enter.
+   - (5) Active = passive = inertial for bound bodies. Cite Bartlett–van Buren 4e-12 and Nordtvedt in TODO-4364-SELFGRAV.
+   - (6) Energy bookkeeping of a fall: where the KE comes from, in CPP terms.
+   - (7) R-CP-NO-REST-MASS restatement (4404 item 3), now including the tension between the cap and Δv.
+   - (8) DI-bit polarity read as polarity-blind, pending his confirmation (4403 item 6, second half).
+   - (9) Carried: 4404 items (5) and (6), and the 4403 items 4404 carried.
+   - (10) Closed: 4404 item 1, and 4403 item 6 first half (with the candidate note from item 5).
+   
+   Then run code/deferral_gate.py.
+
+**Minor notes**
+
+- The numbers check out:
+  - Ti-48 47.9479463 and Pt-195 194.9647911 are slightly older mass-table values (AME2020: 47.94794198 and 194.9647917). The effect is negligible; consider citing AME2020.
+  - Heat example: 450 J/kg·K × 100 K / c² = 5.0e-13 kg. Correct.
+  - P = (E/c²)V is exact for an isolated system (von Laue: internal stresses integrate to zero). Note that a bound body in a field also needs its stress terms. That is the 1PN subtlety, already in SELFGRAV.
+  - Bartlett & van Buren, PRL 57, 21 (1986): about 4×10⁻¹² for Al vs Fe in the Moon. Correct. Strictly, it tests whether the active/passive mass ratio is the same for both materials. "Active = inertial" follows only when combined with equal fall. Reword slightly.
+- Polarity-blind reading: fair. SSV_abs is polarity-blind by definition, and the draft correctly files it as a reading, not a ruling.
+- Founder question (§7): fair, physical, and answerable. Add that the hot-ball effect (about 5e-13) has never been measured directly. E = mc² predicts it, backed by measured cases: binding energy in Eötvös/MICROSCOPE tests, and active mass in lunar laser ranging.
+- Script: Part 1 only prints a claim; it doesn't demonstrate anything. Consider a small toy that adds Δv to near-cap CPs, capped versus energy-weighted, so item 1 is shown by the code. Part 3's "active mass x g_Earth-at-ball" is garbled. Better: the ball pulls the Earth with G·M_E·m_active/r².
+
+**Plain language:** The founder says everything falls alike because every particle gets the same added speed. That is right for slow particles. But in CPP most of a body's mass is particles moving close to the speed limit, and they can't simply all get the same added speed. The rule works if each particle's gain goes with its energy. That is also what makes a hot ball, or a tightly bound nucleus, have the inertia it measurably has. The founder's own list, and GR-1a's statement that mass is the energy stored in the polarized cloud, already point that way. So the draft should present energy weighting as the reading under which he is right, not as a correction. It should also not declare equal fall settled until the rule for fast particles is written down.
+
+---
+
+## Claude's response to the 4405 return (not part of the verbatim report)
+
+- **1 taken in:** equal fall is conditional on an energy-weighted momentum gain for near-cap CPs; the script now shows it (velocity added and capped: 73 and 78 times the intended gain for two toy mixes; momentum ∝ energy: exactly 1 for both); 4403 item 2 stays open, sharpened.
+- **2 taken in:** the energy weighting is presented as the reading his list and GR-1a (E_pol = mc²) already support, for him to confirm; the cloud-size caution is added.
+- **3 taken in:** GR-1a is described as claiming active = inertial by construction for a single particle; the bound-body budget is owed (TODO-4364-SELFGRAV).
+- **4 taken in:** the Ti/Pt sentence is fixed (≈2% by number; 0.087% binding + 0.005% n/p mix).
+- **5 taken in:** the internal-clock picture is kept as a live candidate, not set aside.
+- **6 taken in:** the 4405 todolist entry is filed.
+- **Minor notes:** the Bartlett–van Buren wording (ratio, plus equal fall), the unmeasured hot-ball size, and the script's Part 3 wording are taken in; AME2020 values noted as negligible.
