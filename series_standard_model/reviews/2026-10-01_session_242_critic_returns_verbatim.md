@@ -1756,3 +1756,78 @@ Claude's main result is sound: if a particle's speed toward a mass grows each ti
 - **7 taken in:** the 137 argument is withdrawn; alternation is recorded as his view; the packing question stays open.
 - **8 taken in:** the founder question asks whether his GR-FE-1 refraction operates inside a still body, and about polarity, citing GR-1a's corollary.
 - **9 taken in:** the D-9 entry is filed with all listed items.
+
+---
+
+## Patch 4404 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+The arithmetic is right. The script runs and gives η(Ti-48 vs Pt-195) = 1.79e-2 under 3A+Z CPs per atom. The ratio m_p/(3m_e) is 612. MICROSCOPE's final 2022 result is (−1.5 ± 2.3 stat ± 1.5 syst)×10⁻¹⁵, and ±2.7 is the quadrature sum, so it is quoted correctly. The trouble is the framing: the "refinement" as written comes close to a straw man of the founder, and the plan for the registry note overreaches.
+
+**Required changes**
+
+1. **Straw-man risk: reframe §3, §5, §7 and the title.** His message describes a kinematic step. The limb difference raises each CP's displacement per Moment, so v_{i+1} > v_i. That is exactly 4403 §3's rule, which the fragment's own §2 adopts: each CP's drift changes by the census difference across one PSR. That is a per-CP *acceleration* that does not depend on type, so it already gives universal free fall. GR-1a also receives gravity kinematically: a test particle "moves along the local SSV gradient", and PSR contraction is identical to acceleration (sec:equivalence). Only one reading fails: a fixed push per CP that the DP-arc inertia then resists (a = N·F/m).
+   - State that his mechanism as he described it passes the equivalence principle, and that "ΔSSV_abs is the F" holds as F = m·g with g set by the limb difference.
+   - Present the per-CP-force model as the one reading to rule out, not as "his literal reading fails" (§7) or "a refinement forced on him".
+   - Retitle along the lines of "…consistent with experiment if the limb difference sets the acceleration (as his v_{i+1} step does)".
+   - Re-mark the convenient branch. It is "Claude found a correction to the founder", not "his F = ma reading is confirmed".
+
+2. **Make the CP-counting model explicit.** Under GR-1a and the ZBW Mass companion, an electron's mass is its eDP polarization cloud, which holds many CPs of both polarities. It is not "one CP", and a proton is more than "a three-quark cage" plus nothing.
+   - Label the 612× and 2% figures as "counting unpaired CPs only".
+   - Add the caveat that a per-CP force *including DP-cloud CPs* might scale with mass-energy if cloud size goes with mc². Then F would already go with m, which is the straw-man worry.
+   - The conclusion that survives every counting is that the received gravitational change must go with inertial mass-energy to about 10⁻¹⁵. Say that, and use the 2% case only as an example.
+
+3. **Fix the GR-1a citation.** The "no-polarity corollary" is about the *sign of the source* (active mass), not the equivalence principle. Cite GR-1a §"Inertial and Gravitational Mass Are Identical by Construction". It covers active = inertial (both are mc²) and handles passive mass kinematically.
+   - The corpus does not yet give a received-per-mass budget for a bound body. TODO-4364-SELFGRAV ("state CPP's passive and inertial masses of a bound body") is the place for it. Say so rather than implying it is settled.
+
+4. **"Settles" and the registry note.** His statement does answer 4403 owed item 3: the gained velocity is stored as new DP-arcs and DP separation. Recording that as his answer is fine. But §2's split ("inertial advance by DP-arcs, charge advance by SSV_net") is Claude's synthesis, and it is in tension with the registered text "Each Moment a CP advances by its SSV_net (V_i)" and with the 4325/4326 rulings. A note adding that split changes what the ruling means, so "no change to the ruling" is not accurate.
+   - Under PD-006, record his 4404 sentence verbatim beside R-CP-NO-REST-MASS as "founder input, recorded beside", the way SPIN-1 v2.2 was handled.
+   - Mark the inertial/charge split as a reading (PD-008) and flag the V_i tension.
+   - Leave the restatement owed for a founder ruling, as §4 already says. Do not paraphrase it into the entry now.
+   - Use "answers" or "places", not "settles".
+
+5. **Carry the unanswered half of 4403 §9.** He answered neither the internal-oscillation question nor "do DI-bit polarities play any part, or only their number?" The fragment mentions only the first. Carry both explicitly (4403 item 6).
+
+6. **Rewrite the founder question (§6).**
+   - It contains an error: "the heavy ball carries far more DP-arc energy for its size". What matters is composition, not total size: a heavy and a light ball of the same material fall alike under any per-CP rule.
+   - Use two equal-mass balls of different materials (titanium and platinum) with different numbers of CPs.
+   - Ask the real fork in physical terms: "Does the limb difference raise each CP's speed directly by the same amount, as in your v_{i+1} step, or is it a push that the DP-arcs' inertia resists, so that it must be stronger on the ball with more DP-arc energy?"
+   - Either answer passes the experiment if it is stated consistently. The question should not presuppose the per-CP-force reading.
+
+7. **D-9: no 4404 entry exists in todolist.md yet**; only 4403's is there. The format-patch must add a 4404 entry listing:
+   - item 3 closed, as answered by him;
+   - the mechanism that makes received change go with energy, or confirmation of the kinematic reading;
+   - the R-CP-NO-REST-MASS restatement owed for a founder ruling, including the V_i tension;
+   - the founder question in §6;
+   - 4403 item 6, both halves, still unanswered;
+   - the internal-clock idea, not adopted;
+   - a link to TODO-4364-SELFGRAV (passive and inertial mass of a bound body);
+   - the 4403 carried items (1), (2), (4)–(10), with (2) marked as sharpened or possibly closed by the kinematic reading.
+
+   Then run code/deferral_gate.py. I did not run it, because it needs the commit and the draft is still untracked.
+
+**Minor notes**
+- 1.8e-2 / 2.7e-15 is about 7e12, which is 12 to 13 orders. Write "about twelve to thirteen orders" or "~10¹³".
+- MICROSCOPE's masses were the alloys TA6V (Ti) and PtRh10, not pure Ti-48 and Pt-195. The order of magnitude is unaffected; one clause would cover it.
+- The LLR Nordtvedt bound is |η_N| ≲ 10⁻⁴ ((−0.2 ± 1.1)×10⁻⁴, Hofmann and Müller 2018). "A few ×10⁻⁴" is loose; use ~10⁻⁴. Strong equivalence is correctly deferred to TODO-4364-SELFGRAV.
+- In the script's Part 2, "eta = 0 by construction" is true, but it is assumed, not derived. Say so in the script's output.
+- In §5, "gives Galileo's falling bodies exactly" restates 4403's unit identity. Add "once SSV_abs is normalised to G".
+- The founders_voice file is properly verbatim, with his note that 4403 was applied correctly marked as operational.
+
+**Plain language**
+
+Thomas said a moving body keeps its speed because its DP-arcs carry it, and that the difference in SSV_abs between a particle's inner and outer sides adds speed each Moment. The draft agrees, then warns that if gravity gave every CP the same push, titanium and platinum would fall at rates 2% apart. Experiment says they match to better than one part in a million billion. The arithmetic is correct. But what Thomas described is a direct addition of speed to each CP, the same for every CP, and that already makes everything fall alike. So the draft should credit his picture with passing the test rather than present a correction. It should also count the electron's and proton's surrounding DP clouds, cite GR-1a's actual equivalence section, and record his statement beside the registry entry without rewording what that entry means. The question to him should compare two balls of equal weight made of different materials. And the patch must log its open items in todolist.md, which has not been done yet.
+
+---
+
+## Claude's response to the 4404 return (not part of the verbatim report)
+
+- **1 taken in:** reframed: his step as described passes the equivalence principle (a per-CP acceleration); the per-CP push resisted by inertia is the one reading ruled out; title and convenient branch re-marked.
+- **2 taken in:** the counting is labelled "unpaired CPs only", with the DP-cloud caveat; the surviving conclusion (received change ∝ mass-energy to ~10⁻¹⁵) is stated.
+- **3 taken in:** GR-1a's equivalence section is cited instead of the no-polarity corollary; TODO-4364-SELFGRAV is named as where the passive mass of a bound body belongs.
+- **4 taken in:** "settles" → "answers"; his sentence is recorded verbatim beside R-CP-NO-REST-MASS as founder input; the inertial/charge split is marked as a reading with the V_i tension; the restatement is owed.
+- **5 taken in:** both halves of 4403 §9 are carried.
+- **6 taken in:** the founder question uses equal-weight titanium and platinum balls and asks the real fork.
+- **7 taken in:** the 4404 todolist entry is filed.
+- **Minor notes:** ~10¹³, the alloy clause, the LLR bound ~10⁻⁴ (Hofmann and Müller 2018), "assumed, not derived" in the script, and "once SSV_abs is normalised to G" are taken in.

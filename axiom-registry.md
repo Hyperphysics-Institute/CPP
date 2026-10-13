@@ -376,6 +376,13 @@ first sentence and with the 4325/4326 rulings. **Confirmed by the founder at Pat
 the correct understanding of the mass of the CP. It has no mass, but resists acceleration and deceleration (the
 properties of inertia) because of the CP and DP-arc interactions."* (`founders_voice/4351_…`).
 
+**Founder input recorded beside (Patch 4404, 12 Oct 2026; `founders_voice/4404_…`), not a change to the ruling:** *"the
+mass keeps the speed it gains from the moment-to-moment delta SSV_abs between the inner and outer limbs … At Moment i+1,
+v_i+1 is greater and has stored the increased velocity as new DP-arcs and DP-separation. The arcs and separation maintain
+the constant velocity, and the grad SSV_abs drives the acceleration."* A reading in which the inertial advance is carried
+by the DP-arcs and separation and the charge advance by SSV_net is in tension with "advances by its SSV_net (V_i)" above;
+a restatement is owed for a founder ruling (todolist 4404).
+
 **Consequences on file.** SPIN-1's carrier model assigned the CP the electron's rest mass; SPIN-1 v2.2 (Patch 4349)
 records this ruling beside that premise. TODO-4316-CPMASSAXIOM closed.
 
