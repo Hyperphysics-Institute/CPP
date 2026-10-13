@@ -1892,3 +1892,82 @@ Thomas said a moving body keeps its speed because its DP-arcs carry it, and that
 - **5 taken in:** the internal-clock picture is kept as a live candidate, not set aside.
 - **6 taken in:** the 4405 todolist entry is filed.
 - **Minor notes:** the Bartlett–van Buren wording (ratio, plus equal fall), the unmeasured hot-ball size, and the script's Part 3 wording are taken in; AME2020 values noted as negligible.
+
+---
+
+## Patch 4406 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES.** The core correction is right. In CPP the CP carries no momentum (4097, 4288/4351, R-CP-NO-REST-MASS, SF-6 pin §2). So 4405's toy, which gave near-cap CPs their own relativistic momentum γmv, models a mechanism CPP does not have, and it should be withdrawn. The arithmetic in §5 is correct: run from /root/CPP, the script reproduces Al 2.643e-4, Fe 2.550e-4, a difference of 3.1e-6, about 8e5 times the 4e-12 bound. But three claims go further than the corpus allows: "equal fall by construction", "SF-6 gives κ = E₀/c²", and "every physical particle must be a closed pattern". The hot/cold closure also needs fixing.
+
+**Required changes**
+
+1. **§3: "by construction" needs its condition, and the cap is not gone.** The withdrawal removes the *momentum* half of 4405's objection, not the *kinematic* half.
+   - R-CP-NO-REST-MASS still says each CP advances "at most one PSR" per Moment. A CP swinging at the cap cannot have a drift added to its forward step. If the drift were added CP by CP with capping, a near-cap CP's centroid would gain only about Δv/2 against Δv for a slow CP. That is a first-order dependence on composition, with no momentum anywhere in the argument.
+   - Equal fall holds only if "drift" means the whole pattern moves as a boost: swings re-timed (a longer forward leg), not sped up, so the centre of energy moves at V.
+   - State it as: equal fall holds by construction *given* that the gain is a uniform kinematic Δv of the body's centre of energy, carried by the sea. Whether the substrate does this under the cap is open (SR-1, SF-6 debt (c), the GP computation).
+   - The draft's time-dilation note covers only the O(v²/c²) clock effect, not this.
+   - It also contradicts §6, which carries 4405 item (7), the "cap vs Δv tension".
+   - 4325 and the registry (the CP moves at V_i, never at c) are worth citing: they question 4405's "most of the mass is near the cap" premise from the other side.
+
+2. **§3: 4405's energy-weighting condition survives in sea form.** The sea must add momentum κ_i·Δv for each constituent, field and binding energy included, with κ_i = E_i/c². That is 4405's "momentum gain ∝ energy" restated as what the sea stores, not something removed. Withdraw the toy and the per-CP γmv picture. Keep the condition, as a requirement on how the GP computation deposits arcs and separation each Moment.
+
+3. **§4, the title and §7: the Laue result is overclaimed against CONV-001.**
+   - CONV-001 A3 (2876, and 4–1 in the addendum) ruled that the Laue coefficient-1 half "waits on the SF-1 cage computation at §5.7(d)". The open-cloud κ = (2/3)U/c² was authorised; Laue was deferred.
+   - So "SF-6 gives κ = E₀/c², exactly, with no freedom" and "the weighting is what SF-6 already produces" must become "the SF-6 pin invokes Laue's theorem for closed patterns; CONV-001 deferred this pending debt (d)".
+   - Add that Laue presupposes a closed, stationary system under a Lorentz-covariant dynamics. For a cage held by its interaction with the sea, and on a lattice whose covariance is open (debt (c), SR-1), that is itself an assumption.
+   - Note OPEN-FSELF-CORRESPONDENCE-1. Citing the statics coefficient and the ½κV² storage is allowed; citing the pin's F = κa is not.
+   - The title "SF-6's Own Closed-Pattern Result" needs the same hedge.
+
+4. **§5: say what Bartlett–van Buren actually bounds.** It bounds the difference in *active-to-passive* mass ratio between Al and Fe (about 4e-12 fractional). The test is the Moon's centre-of-mass/centre-of-figure offset producing a self-acceleration, not an Earth–ball pair. Write: "active/passive, and with passive = inertial (§3) that is active/inertial".
+
+5. **§5: "every physical particle must be a closed pattern" is too strong.** What lunar laser ranging forces, given GR-1a's active mass = E₀, is that the ratio of κ to active mass is the same for electrons as for nucleons. Since Δf ≈ 9.3e-6, that means |1 − k_e| ≲ 4e-7, whatever the open-cloud number is. It is also more robust, because the 2/3 is scalar-specific (debt (b)). Restate as:
+   - "the electron's κ must equal its E₀/c² to about 4e-7; the closed-pattern (Laue) route is the corpus's candidate for delivering this; the alternative, that active mass also scales with κ, contradicts GR-1a's source rule."
+   - Limit the claim to what Al/Fe tests (electrons, nucleons, binding). "Every particle" (muons, neutrinos) is untested here.
+   - Add the stronger leg: nuclear binding differs between Al and Fe by about 5e-4 of the mass (8.33 vs 8.79 MeV/nucleon), so LLR requires binding-field energy to carry κ = E/c² to about 1e-8. That is the Laue point for bound fields.
+
+6. **§5 and §6: flag the tension inside GR-1a.** GR-1a's "Identical by Construction" section sets inertial mass = E_pol = mc² for the ZBW eDP cloud through a Hooke stiffness. SF-6's toy gives an open cloud (2/3)U/c². So GR-1a's "by construction" holds only if the electron's cloud is closed in the Laue sense. Record a GR-1a annotation as owed.
+
+7. **§6 and §8: the hot/cold closure contradicts itself.** "Answered in principle … pending his confirmation; it is not asked again" says both closed and open at once. His 4406 message did not address it, and counting the cohort by energy rather than by number is a physical choice he has not made. Not re-asking is defensible: binding-energy inertia is empirically forced (point 5), and heat follows only through the deferred Laue result (point 3). So either:
+   - (a) mark it under PD-008 §9 as the convenient branch and keep "founder confirmation of energy-counted cohort (hot/cold)" as an open item in todolist, or
+   - (b) leave 4405 §7 standing.
+
+   "No new founder question" is otherwise fine. Optionally, point 1 could be put to him as a physical picture: "when a body whose CPs swing at their limit starts to drift, are the swings re-timed rather than sped up?" It can also stay a computation.
+
+8. **§9 PD-008: name the convenient branch.** The convenient branch is "the whole near-cap objection disappears". Mark it, and say the residue (points 1–2) is carried.
+
+**Minor notes**
+- The script's Part 1 and Part 2 only print statements; there is no computation. Label them as statements, or add a toy that shows centroid drift under re-timed versus capped-additive swings, which would exhibit point 1.
+- In the script, 1/(1 − f/3) is fine (≈ 1 + f/3). It ignores atomic electron binding, which is negligible.
+- §2's quote "½κv² is measured in the field": cite it as the statics-pinned coefficient, so it does not lean on the demoted dynamical reading.
+- The 4405 file itself should get a withdrawal annotation pointing to 4406. It should be withdrawn, not silently superseded.
+- §6's carry list drops 4405 items (1), (2), (3) without saying so. State their disposition: (1) see point 7; (2) reformulated per points 1–2; (3) is the GP item.
+- The registry's owed restatement (4404 item 3: inertial advance by arcs and separation against "advances by SSV_net") bears directly on "drift stored in sea". Cross-reference it.
+
+**Owed items for todolist.md (D-9; run code/deferral_gate.py)**
+1. The drift-under-cap requirement: show that the substrate implements a body's drift as a boost (re-timed swings, centre of energy at V) under the one-PSR cap. This replaces 4405 item (2) and folds into the GP computation and SR-1 / debt (c).
+2. The GP computation must deposit κ_i·Δv in the sea for each constituent, including field and binding energy (4405 item (3), 4403 item 1, 4404 item 2).
+3. SF-6 debt (d), the SF-1 cage run: now an empirical requirement, the electron's κ = E₀/c² to about 4e-7, with binding to about 1e-8. Note the CONV-001 deferral and OPEN-FSELF-CORRESPONDENCE-1.
+4. Laue applicability in CPP: closed system plus covariant substrate (debt (c), SR-1).
+5. A GR-1a annotation: "identical by construction" depends on a closed electron pattern, against SF-6's open-cloud 2/3.
+6. Founder confirmation of the energy-counted cohort (hot/cold), or 4405 §7 kept open (point 7).
+7. A withdrawal annotation in the 4405 file.
+8. Carried: 4405 items (4)–(9), including the R-CP-NO-REST-MASS restatement with the cap tension; TODO-4364-SELFGRAV.
+
+**Plain language**
+Thomas is right that a body's speed is stored in the DP sea, not in its CPs swinging faster. So my earlier argument, which treated the CPs as carrying momentum, was wrong and should be withdrawn. Two things are still not settled. First, the CPs inside a body still have a speed limit, so when a body drifts their swings have to be re-timed rather than simply sped up; equal fall depends on the sea doing exactly that, and the computation to show it is still owed. Second, the claim that the sea's stored inertia always equals the pattern's energy over c² rests on a theorem whose use in CPP the review panel set aside until the electron-cage computation is run. The Moon test does force electrons and binding energy to carry inertia equal to their energy to high precision. What it proves is "inertia matches pull for every ingredient", not, by itself, "every particle is a closed pattern". The patch should say those things plainly, and it should not treat the hot-ball question as answered while also leaving it pending.
+
+Files reviewed: /root/CPP/series_standard_model/axiom_maturation/4406_the_gain_is_in_the_sea.md, /root/CPP/founders_voice/4406_ke_stored_in_dp_sea_not_faster_swing.md, /root/CPP/series_standard_model/code/4406_drift_in_the_sea.py, /root/CPP/series_standard_model/axiom_maturation/4405_cohort_counted_by_energy.md, /root/CPP/flagship_papers/electromagnetism/sketches/sf6_inertia_impulse_pin.md (§5 items 6–7), /root/CPP/flagship_papers/electromagnetism/sketches/conv001_2026-07_sf6_pin_adjudication.md (§4–§5) and its _addendum, the GR-1a .tex (L264–284), /root/CPP/axiom-registry.md (L358ff), and /root/CPP/todolist.md (L2550–2552). Nothing was modified.
+
+---
+
+## Claude's response to the 4406 return (not part of the verbatim report)
+
+- **1 taken in:** equal fall is conditional on the drift being a boost of the whole pattern (swings re-timed) under the one-PSR cap; the capped-addition failure is stated; 4325/registry cited; this is now the founder question.
+- **2 taken in:** the energy-weighting condition is kept in sea form (the sea deposits κᵢ·Δv per constituent).
+- **3 taken in:** the Laue half is described as invoked by the pin and deferred by CONV-001 pending debt (d); Laue's presuppositions and OPEN-FSELF-CORRESPONDENCE-1 are noted; the title is hedged.
+- **4 taken in:** Bartlett–van Buren is described correctly (active/passive via the Moon's CM/CF offset).
+- **5 taken in:** the conclusion is restated (electron κ = E₀/c² to ~4e-7; binding to ~1e-8; tested ingredients only); script extended.
+- **6 taken in:** the GR-1a tension is flagged and an annotation is owed.
+- **7 taken in:** the hot/cold question is kept open (founder confirmation wanted), not closed.
+- **8 taken in:** the convenient branch is named.
+- **Minor notes:** script parts labelled as statements; 4405 annotated as partly withdrawn; dispositions of 4405 items (1)–(3) stated; registry cross-reference added.

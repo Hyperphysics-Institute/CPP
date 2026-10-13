@@ -1,5 +1,10 @@
 # Falling From Rest and Equal Fall: the Founder Chooses the Direct Per-CP Increase. Because Most of a Body's Mass Is CPs Moving Near the One-PSR Cap, "the Same Increase" Must Mean Each CP Gaining Momentum in Proportion to Its Energy; Then Every Body Falls Alike, and His Cohort Rule Is Right With the Cohort Counted by Energy, as GR-1a Already Has It
 
+> **Partly withdrawn at Patch 4406** (`4406_the_gain_is_in_the_sea.md`): §2's toy, which gave near-cap CPs their own
+> relativistic momentum, models a mechanism CPP does not have (the CP carries no momentum; the body's drift is stored in
+> the sea, SF-6). Its residue is restated in sea form in 4406 §3 (drift as a boost under the cap; the sea depositing
+> κ_i·Δv per constituent).
+
 **Patch:** 4405. **Lane:** foundations, with GR. **Session:** 242.
 **Founder input:** `founders_voice/4405_falls_from_rest_cohort_stores_ke.md` (answers 4404 §6 and 4403 §9).
 **Script:** `series_standard_model/code/4405_cohort_counted_by_energy.py`.
