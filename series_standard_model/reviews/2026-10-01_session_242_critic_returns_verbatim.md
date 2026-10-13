@@ -1971,3 +1971,105 @@ Files reviewed: /root/CPP/series_standard_model/axiom_maturation/4406_the_gain_i
 - **7 taken in:** the hot/cold question is kept open (founder confirmation wanted), not closed.
 - **8 taken in:** the convenient branch is named.
 - **Minor notes:** script parts labelled as statements; 4405 annotated as partly withdrawn; dispositions of 4405 items (1)–(3) stated; registry cross-reference added.
+
+---
+
+## Patch 4407 — critic return (fresh context), verbatim
+
+**Patch 4407 critic return**
+
+**Verdict: HOLD.** The founder file is fine. The fragment's central claim, that VTD-1/SR-1 already answer 4406's "drift under the cap" item, overstates what the corpus holds. Several conclusions depend on that claim.
+
+**What I checked**
+- VTD-1_RESOLUTION (2037) and VTD-1_CONFIRMED (2038).
+- Reasoning 2040–2043. VTD-1 was panel-confirmed SOUND (four of four) at SR-1 strength; R2 is at conditional-PASS.
+- SR-1 v20 .tex, abstract and Appendix H.
+- frontier_sectors/SR.md: OPEN-SR-EPSILON, OPEN-SR-H1-CLASS, SF6-RECON-1.
+- SR-MECH-2485 session log, reasoning 2471 and 2475.
+- SF-6 pin §5.
+- 4405 §7, 4406 in full, and todolist lines 2552–2554.
+- I ran the 4407 script.
+
+**Required changes**
+
+1. **VTD-1 does not answer 4406 item (2). Restate its status correctly.**
+   - VTD-1 is PASS *at SR-1 strength* only, and that means the *effective* γ(v). 2038 §3 explicitly declined to approve the literal claim that each CP's step is divided into bulk and internal parts. It reserved that question for a later founder's-voice capture.
+   - After VTD-1, the corpus went further against a literal reading:
+     - 2475 withdrew the H.1 class theorem, which VTD-1's "unique f_eff" leaned on.
+     - SR-MECH-2485 records that SR-1's sentence "bulk velocity consumes part of the displacement budget" was withdrawn as a premise in the 2471–2475 triage.
+     - OPEN-SR-H1-CLASS closed NEGATIVE-FOR-MECHANISM (2493).
+     - Round 2, Q1, came back unanimous NOTHING (2500): the pinned SF-6 mechanism has no per-Moment capacity set. The geometric route is dead, and the quadrature survives only as the ungrounded identity PROP-SR-H1-1.
+   - SR-1 v20 states that γ is an *input* (A.8.1). It now grounds ε = γ−1 at the energy level through the SF-6 pin plus Laue, at W2 strength (OPEN-SR-EPSILON RESOLVED-α, 2502). It does not ground γ through a displacement budget.
+   - Rewrite §2 as follows: the corpus reproduces time dilation of a moving body's internal processes at SR-1 strength, with γ imported or grounded through the energy-level Laue route. A substrate rule for how each CP shares its PSR between bulk and internal motion is not in hand; the geometric route was closed negative at 2493/2500. 4406 item (2) stays open, sharpened.
+   - Delete "already derived" and "the corpus's rule". Remove the cross-reference wording "VTD-1 shows is the same object".
+
+2. **The dissolution of the "transverse only" worry holds only at the effective level, not per CP.**
+   - VTD-1 §3's orientation-independent remainder is a statement about the magnitude of a 4-vector (proper time). It is not an allocation of spatial steps.
+   - Read literally, the fragment's sentence "each Moment a CP's one-PSR step is split …" breaks the cap for a CP swinging along the direction of motion. At v = 0.5c, a bulk step of 0.5 l_P plus an internal step of 0.866 l_P in the same direction gives 1.37 l_P.
+   - That case is exactly 4406's near-cap problem, so the fragment cannot say it is answered.
+   - In SR the honest picture for that CP is 4406's re-timing: in the lab frame both legs stay at or below c, the forward leg lasts longer, and the period is dilated. Say so.
+
+3. **The equal-fall argument in §2 is circular.**
+   - "Raises every body's bulk speed by the same amount each Moment" assumes the universality that is in question.
+   - "The internal remainder is the same for every body at the same speed" is true but empty, because it is a function of v alone. The composition worry was about near-cap constituents and about the sea depositing κᵢ = Eᵢ/c² for each constituent (4406 item 3, plus LLR).
+   - Change "Equal fall holds" to: equal fall holds *if* the drift is a whole-pattern boost and the sea's deposit for each constituent is energy-weighted (4406 items 2 and 3 stay open).
+   - The order v²/c² ≈ 10⁻¹⁵ is fine. But the script's 5.6e-16 is a floating-point cancellation artifact; the true value is 5.34e-16. Compute it as x/2 or `-np.expm1(0.5*np.log1p(-x))`.
+
+4. **The hot ball (§3): close the founder-question part only.**
+   - His answer settles CPP's *position*: the hot ball has more inertia because of its larger DP-arcs and greater DP separation. Closing 4406 item (7) as his qualitative confirmation is fair.
+   - He did not give the coefficient. "Heavier by its heat divided by c²" is still the deferred Laue / debt (d) result, which 4406 §4 said heat rests on.
+   - He did not answer 4405 §7's "more pull" half (active mass).
+   - Retitle the section "energy-counted inertia: founder-confirmed qualitatively". Carry the exact heat/c² coefficient (debt (d), Laue) and the active-mass half (GR-1a, TODO-4364-SELFGRAV) as owed.
+
+5. **Founder question (§8): do not say "None".** Two items genuinely belong to Thomas:
+   - **The 4406 §8 picture.** He asked "what is the drift?" instead of answering it, and 2038 §3 explicitly reserved the literal-allocation question for his mechanism intuition. Re-put it with "drift" defined: *A body moves to the right as a whole. One of its CPs swings back and forth along the direction of motion, near its top speed. Does that CP keep its speed and spend longer going right than going left, so its swings take longer per cycle (the moving clock runs slow) but it never exceeds one PSR per Moment?*
+   - **The "more pull" half of 4405 §7.** Does the hot ball also pull other bodies harder?
+
+6. **§7, the reply to him.** Remove "the corpus already handles the speed limit … each Moment a CP's one-Planck-sphere step is shared …" and "exactly Einstein's factor" stated as derived. Replace with the conditional wording from item 1.
+
+**Fair as written**
+- **Muon citation (§2):** Bailey et al. 1977, Nature 268, 301, CERN muon storage ring, γ = 29.33, lifetime dilation confirmed to about 0.1%. Correct.
+- **"Matches γmc² qualitatively" (§5):** fair as worded. An unbounded energy with speed staying below c is a weak match, and that is all it claims. Two fixes:
+  - Drop "because the bulk share of the one-PSR step can approach but not reach the whole step"; that phrase is the per-CP budget again (item 1).
+  - The script's "as his unlimited enrolment requires" should read "consistent with": the γ values are standard SR, not output from his picture.
+
+**Minor notes**
+- **Wrong cross-reference:** OPEN-FP-6-CONSTANTS (frontier_sectors/FP.md:148) covers electromagnetic constants, not γ from the sea's enrolment. Cite SF-6 debt (c) and OPEN-SR-10 item (i) (the from-PCD dispersion derivation) instead.
+- **Debt (d) label:** in the SF-6 pin, debt (d) is the electron SF-1 cage only. The "nuclear analogue" is not registered there; call it new owed work or point to 4406 item (4).
+- **§6 duplicates:** it lists the Laue item and the GR-1a item on their own lines and again under "Carried: 4406 items (4),(5),(6),(8)". Pick one form.
+- **Superseded wording:** "4406 item (1) superseded by §2's answer from the corpus" should become "re-put as §8".
+- **Founder file:** a verbatim filing with his quoted lines in brackets, which is fine. The heading is split across two `##` lines and renders oddly. Its metadata says it answers 4405 §7; per item 4, that is partial.
+- **Deferral gate:** `code/deferral_gate.py` reads its input from a git commit, so I could not run it on the uncommitted draft. Run it on the format-patch.
+
+**Owed items for todolist.md (D-9)**
+1. The drift under the cap. Carry 4406 item (2), sharpened: a substrate per-CP rule that is consistent with the longitudinal-swing cap; the geometric route is closed (2493/2500); SR-1 strength is effective only.
+2. Founder question 4407 §8: the re-timed longitudinal swing, now with drift defined.
+3. Founder question: the hot ball's "more pull" (active mass), from 4405 §7; links to GR-1a and TODO-4364-SELFGRAV.
+4. The exact heat/c² inertia coefficient: the Laue route and debt (d), with the CONV-001 deferral noted.
+5. Equal fall conditional on 4406 items (2) and (3); the sea's deposit κᵢ·Δv per constituent stays open.
+6. SF-6 debt (d) (electron cage) plus a nuclear-binding analogue (new) at the LLR precisions: about 4×10⁻⁷ for electrons, about 10⁻⁸ for nuclear binding.
+7. The exact γ from the sea's enrolment: SF-6 debt (c) and OPEN-SR-10 item (i). Correct the OPEN-FP-6-CONSTANTS citation.
+8. Laue's applicability in CPP (4406 item 5).
+9. The GR-1a annotation (4406 item 6).
+10. Carry 4406 item (8): 4405 items (4)–(9) and TODO-4364-SELFGRAV.
+11. Fix the cancellation error in the script's part 2.
+12. Dispositions:
+    - 4406 item (7) closed qualitatively by founder confirmation; the coefficient goes to item 4.
+    - 4406 item (1) re-put as item 2.
+    - 4405 §7 split: the inertia half answered, the pull half goes to item 3.
+
+**Plain language**
+
+Thomas asked what "the drift" meant. It means the body's motion as a whole, and the draft says that correctly. The draft then claims an older result (VTD-1) already shows how each CP shares its one-Planck-sphere step between the body's motion and its own internal swing. That goes too far. The older result reproduces the slowing of moving clocks, but only by taking Einstein's factor as given. Since then the corpus has withdrawn the idea of a literal step-sharing rule and closed that route as a failure. Read literally, the rule would let a CP swinging forward exceed its limit, which is exactly the problem 4406 raised. So the "drift under the cap" question is still open. The equal-fall argument assumes what it sets out to show. Thomas's hot-ball answer does settle CPP's position that heat adds inertia, but not by exactly heat/c², and not whether the hot ball pulls harder. The draft should ask Thomas the swing question again, now that "drift" is defined, instead of saying no question is needed.
+
+---
+
+## Claude's response to the 4407 return (not part of the verbatim report)
+
+- **1 taken in:** §2 restates the corpus's status: time dilation at SR-1 strength (γ imported or energy-grounded via SF-6 + Laue, 2502); no per-CP step rule (2038 declined; 2471–2475 withdrew the premise; 2493/2500 closed the geometric route); 4406 item 2 stays open, sharpened.
+- **2 taken in:** the literal split's failure for a forward swing (1.37 l_P at 0.5c) and the re-timing picture are stated and shown in the script.
+- **3 taken in:** equal fall is conditional on 4406 items 2 and 3; the cancellation is fixed (5.34e-16).
+- **4 taken in:** heat's inertia is closed qualitatively only; the heat/c² coefficient and the active-mass half are carried.
+- **5 taken in:** two founder questions (the re-timed swing, with drift defined; the hot ball's pull).
+- **6 taken in:** §7 uses the conditional wording.
+- **Minor notes:** OPEN-FP-6-CONSTANTS replaced by SF-6 debt (c) and OPEN-SR-10 (i); the nuclear analogue marked as new; §6 deduplicated; "superseded" → "re-put"; founder-file heading and metadata fixed; script "consistent with".
