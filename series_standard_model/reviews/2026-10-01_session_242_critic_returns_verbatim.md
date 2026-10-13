@@ -2144,3 +2144,86 @@ Thomas asked what "the drift" meant. It means the body's motion as a whole, and 
 - **6 taken in:** the mass definition is a reading, with the fraction/extensive and paired/unpaired tensions.
 - **7 taken in:** the 4408 todolist entry is filed.
 - **Minor notes:** "in substance" Lorentz–Poincaré with SR-1 appendix B; pressure/virial note; signed column label.
+
+---
+
+## Patch 4409 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script, and its arithmetic is correct. Part 1's reaches (front 1−v, rear 1+v, across √(1−v²)) are right in the absolute frame. Part 2's round trips (2L/(1−v²) along, 2L/√(1−v²) across) and the √(1−v²) axial fix are the standard Lorentz–FitzGerald result. The problems are in how the draft reads the founder, one self-contradiction, the sign of the gravity identification, and D-9.
+
+**Required changes**
+
+1. **State the sign of the 4397 identification.** The front reach 1−v plays the part of 4397's "toward the Sun" reach 1−β. So in his picture a CP held near a mass has the light geometry of a CP moving *toward* the mass at the fall speed. That means space flowing *outward* past it (the white-hole / outgoing Painlevé–Gullstrand slicing, as 4397 §4 already says). It is the opposite of Hamilton–Lisle's inward river, where the freely falling body is the one at rest in the flow.
+   - §2's "core of the river picture" sentence must name the direction.
+   - It must also add that, with his sign, the frame at rest in the flow is one moving outward at escape speed, not an infalling body.
+   - It should cross-reference the 4402 horizon trilemma.
+   - As written, "the same as the object moving through space" hides which way the object moves.
+
+2. **Make the motion–gravity equivalence local.** "Moving through the absolute frame and standing in a gravitational field have the same light geometry" holds only at a point.
+   - Gravity's shift β = √(2M/r) varies from place to place. Its gradient carries tidal curvature, and a uniform motion has none.
+   - β² = 2u is still calibrated (4397 §4).
+   - In 4397 the shift belongs to the GP's sending sphere, which is attached to the grid. In 4409 it is the emitted light front relative to a moving CP. Matching them is a kinematic identity, not a shared mechanism.
+   - Rewrite as "locally, at each point, the same light geometry," and do the same in the title and §6.
+
+3. **Fix the self-contradiction in §4.** "'Time passes faster going backward' holds only relative to the forward leg, and only for swings that are not near the cap" is wrong. Compared with the forward leg it holds for every swing; the script's own case gives backward 0.9981 against forward 0.9995. What fails for near-cap swings is the comparison with the *bulk*. Swap the two clauses.
+
+4. **"His velocities are right" needs one caveat.** He said the average equals the bulk velocity "in a non-relativistic frame," and that qualifier matters.
+   - The simple average of the two leg velocities is not v relativistically: (0.4717 + 0.1064)/2 = 0.289 against 0.3.
+   - The time-weighted average is exactly v, because the CP stays with the body.
+   - State this, so that "right" is accurate rather than generous.
+   - Also note, without resolving it, his sentence that the CP's "velocity equals the bulk mass's absolute velocity at all points along its oscillation." Read literally, it conflicts with his forward-faster / backward-slower bullets. The draft silently smooths it to "averaged."
+
+5. **"His answer settles the contraction" overclaims.** Change it to "consistent with / affirms."
+   - His wording is about the **PSR** compressing along "the PSR's axial direction," and he limits it to clock-like oscillatory motion ("the only frame in which it makes sense"). The axis may be the oscillation axis, not necessarily the body's direction of motion.
+   - He says nothing about a body's rod length. Moving from a non-uniform PSR to an axial-only body contraction is Claude's reading.
+   - His "compressed at the front, elongated at the rear" is a *shift*, which is front–rear asymmetric. "Oblate" is symmetric. The shift is what *creates* the along/across mismatch; the contraction is what cures it. Keep §2 and §3 clearly apart, and don't call the shift "his oblate compression."
+
+6. **Qualify "they agree only if … no change across" (§3).** Equal round trips in every direction (Michelson–Morley) fix only the *ratio* of along to across. Zero change across also needs the clock rate γ to be tied in (the Kennedy–Thorndike-type check). Add that clause, or say "with clocks slowing by γ (4408)."
+
+7. **The founder question should not be "none."**
+   - His bullet, "I don't think that is possible" (a CP outrunning the body while moving backward), conflicts with the corpus's at-cap ZBW (4324–4326). 4408's non-circular γ result rests on exactly that at-cap case.
+   - That is a genuine physics question that can be put as a physical picture: "Inside a moving body, does a CP swing back and forth at nearly light speed (as the corpus's ZBW has it), so that on its backward leg it rushes backward faster than the body moves forward, or is its swing slower than that?"
+   - The interpretive gap in item 5 (is the "axial direction" the oscillation axis or the direction of travel?) could be folded into the same question.
+
+8. **D-9 (a gate failure today).** todolist.md has no 4409 entry yet. Add one in the same patch with:
+   - 4408 (c) marked answered, partially: affirmed for the PSR, with the body reading as in item 5.
+   - Carries for 4408 (a), (b), (d), (e), (f), **and (g).** The draft drops (g)'s carry of 4407 items (1) and (4)–(10).
+   - The new owed items:
+     - the sign / outward-flow direction of the motion–gravity identity;
+     - the locality / tidal limit of that identity;
+     - deriving both shifts from one rule (4385);
+     - the transverse-factor (Kennedy–Thorndike) tie;
+     - his "velocity equals bulk at all points" sentence;
+     - the at-cap swing tension (or the founder question from item 7).
+   - Run code/deferral_gate.py before the format-patch.
+
+**Minor notes**
+- §4's "That is the non-linear effect he mentions" goes too far. His non-linearity is about how clock slowing depends on speed, not the velocity-versus-speed sign issue. Say "related to."
+- The slow-swing condition (backward speed below the bulk's only while the swing speed is below 2v/(1+v²)) should be stated in §4, as 4408 did.
+- PD-008 §8 is good. Add "the sign" as a second convenient branch, because the river analogy reads naturally only with the inward sign.
+- In the script, the Part 3 label "(below the bulk's v)" is printed even when the velocity is negative. That is correct but reads oddly, so consider "signed."
+
+**Plain language**
+The math checks out. If a particle moving through absolute space sends out a light pulse, the pulse ends up nearer it in front and farther behind. Making light's round trip take the same time in every direction then needs the body to shrink only front to back, which is Thomas's point. The draft goes too far in four places:
+- It doesn't say which way the gravity match runs. With his sign, holding still near a mass is like moving *toward* it, which is the opposite of the usual "river" picture.
+- It doesn't say the match holds only point by point, not for tides.
+- It calls his answer "settling" the contraction, when he spoke about the Planck sphere's shape under oscillation, not about a body's length.
+- One sentence about the backward swing contradicts itself.
+
+There is also a real physics disagreement worth asking him about: whether particles inside a body swing at nearly light speed. And the to-do list entry for this patch still has to be written.
+
+---
+
+## Claude's response to the 4409 return (not part of the verbatim report)
+
+- **1 taken in:** the sign is stated (a held CP ≈ moving toward the mass; outward flow; 4402 cross-reference).
+- **2 taken in:** the identity is local (tides, calibrated β², grid sphere vs emitted front); title and §7 adjusted.
+- **3 taken in:** the swing sentence is corrected (always slower than the forward leg; slower than the bulk only for w < 2v/(1+v²)).
+- **4 taken in:** the averaging caveat (time-weighted exact; simple mean non-relativistic only) is stated and computed; his "at all points" sentence noted.
+- **5 taken in:** "settles" → "consistent with / affirms" for the Planck sphere; the body-length and axis readings put to him; shift and contraction kept distinct.
+- **6 taken in:** the clock-rate tie for zero transverse change is stated.
+- **7 taken in:** a founder question (near-cap swing; which axis) replaces "None".
+- **8 taken in:** the 4409 todolist entry is filed with all items and the 4408 (g) carry.
+- **Minor notes:** "related to", the 2v/(1+v²) condition, the second convenient branch, the signed label.
