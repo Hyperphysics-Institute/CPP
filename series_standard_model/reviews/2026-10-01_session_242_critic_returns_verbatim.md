@@ -2073,3 +2073,74 @@ Thomas asked what "the drift" meant. It means the body's motion as a whole, and 
 - **5 taken in:** two founder questions (the re-timed swing, with drift defined; the hot ball's pull).
 - **6 taken in:** §7 uses the conditional wording.
 - **Minor notes:** OPEN-FP-6-CONSTANTS replaced by SF-6 debt (c) and OPEN-SR-10 (i); the nuclear analogue marked as new; §6 deduplicated; "superseded" → "re-put"; founder-file heading and metadata fixed; script "consistent with".
+
+---
+
+## Patch 4408 — critic return (fresh context), verbatim
+
+**Critic report: draft Patch 4408 (the swing in the absolute frame)**
+
+**Verdict: ACCEPT WITH CHANGES.** The arithmetic is right. The headline credits the wrong ingredient, and one physics point (the contraction must be directional) is turned into a citation when it should be put to Thomas.
+
+**What I checked.** I ran the script from /root/CPP and it reproduces the table. Lab period with the swing length contracted to L/γ is γT0. Proper time per cycle is unchanged. Without contraction the period is γ²T0 (the bracketed column equals γ: 1.0483, 1.25, 2.294). Forward legs stay below c, and the forward leg lasts longer than the backward one. None of the three files is registered or committed yet (all untracked), and `todolist.md` has no 4408 entry.
+
+**Required changes**
+
+1. **Circularity and attribution (§2, §5, script docstring).**
+   - The lab period T = t₊ + t₋ is computed without using the √(1−u²) rule at all. It comes entirely from relativistic velocity addition plus L/γ.
+   - Velocity addition comes from the Lorentz transformation, so for a swing slower than light γ is put in, not obtained. As a check, Galilean addition with L/γ gives T/(γT0) = 1−v² (0.91 at v = 0.3), not 1.
+   - His PSR rule only makes the CP's own proper time per cycle unchanged, which is Lorentz kinematics restated.
+   - Fix: say plainly that "moving clock slowed by exactly γ" follows from SR kinematics (velocity addition) plus contraction. His leg-by-leg PSR rule is *consistent with* that; it does not *produce* it.
+   - The one case that is not circular is w = 1, a CP swinging at its cap (one Planck sphere per Moment), which is what 4407 asked about ("near its top speed"). There u± = ±1 in any frame, and the result is T = γT0 with contraction and γ²T0 without. Lead with that light-clock case. The PD-008 line "√(1−u²) used as his rule" should also name velocity addition as SR input.
+
+2. **His statement is accurate only relative to the forward leg, not relative to the bulk.** He says that going backward the CP's absolute speed is slower than the bulk's (larger PSR, faster time). That holds only when w < 2v/(1+v²). Near the cap the backward leg moves faster absolutely than the bulk: v = 0.3, w = 0.999 gives |u₋| = 0.998. The draft's "slower going forward, faster going back" is right only in comparison with the forward leg. Add one sentence saying so. Otherwise the fragment silently corrects him while calling his picture exact.
+
+3. **The 4395 citation is over-read, and the contraction has to be directional.**
+   - In 4395, "Lorentz contraction" is the reason the PSR is squeezed by SSV_abs. The PSR is a radius, so that reads as an isotropic shrinking, not a contraction of body lengths along the motion.
+   - The swing check needs contraction **only along the motion**. If transverse lengths also shrank by γ, a transverse swing would give T0 instead of γT0, and clocks would again depend on orientation.
+   - Reword "His 4395 statement already includes the contraction" as "his 4395 phrase points toward it; the needed contraction is longitudinal only."
+   - Do the same in §5 ("he has already stated it in 4395").
+   - The script docstring says "his 4394 'Lorentz contraction'"; the quote is in 4395. Fix the number.
+
+4. **Ask Thomas a question (replaces §6 "None").** Whether a moving body shrinks only along its motion, and what in the substrate does that (perhaps SSV_net, the directional V_i, as 4395 hints), is a physics question that can be put as a physical picture. It is not a derivation chore, so under PD-006/PD-008 it is his. Suggested wording: "When a body moves, does it shrink only along its direction of motion and not across it? A Planck sphere shrinking the same amount in every direction would shrink it across the motion too, and then clocks would run at different rates depending on which way they point. Is it the directional part, SSV_net, that does the squeezing along the motion?"
+
+5. **The drift-raises-SSV_abs remark (§3) is a preferred-frame claim.**
+   - "Kinetic energy gravitates" is standard GR when the kinetic energy is measured relative to an observer. Thomas's addition is different: drift through the *absolute* frame raises SSV_abs and so the pull.
+   - That would show up as preferred-frame effects. Earth and the Sun move about 370 km/s relative to the CMB, so v²/c² ≈ 1.5×10⁻⁶. The published limits (PPN α₁ and α₂, from lunar laser ranging, binary pulsars and the alignment of the Sun's spin axis) are of order 10⁻⁵ for α₁ and roughly 10⁻⁷ to 10⁻⁹ for α₂. Those figures are my recollection and should be checked before they go in the corpus.
+   - Fix: state that any drift contribution must cancel out of what can be observed, exactly as the clock and ruler effects do, and register this as an owed item.
+
+6. **Mass as an exposure fraction (§3) is stated as fact; make it a reading.**
+   - "The exposure is the energy measure" is the draft's interpretation. Write it as "if read with GR-1a…".
+   - Two tensions should be noted. A *fraction* (a percentage) does not grow with the size of the body, but mass does. And in the same message he says paired CPs also contribute ("whether paired or unpaired"), while the definition counts only unpaired ones.
+   - Register the reconciliation (already in §4) as an owed item.
+
+7. **D-9: add a 4408 entry to `todolist.md` in the same patch.** §7's "Nothing registered" does not exempt §4's open items. Owed items:
+   - (a) a substrate reason for PSR ∝ √(1−u²) with absolute speed (SR-1 input, energy-level route; geometric route closed 2493/2500);
+   - (b) a substrate reason for contraction along the motion only, longitudinal and not isotropic;
+   - (c) the founder question from change 4;
+   - (d) the momentum part of a moving body's gravity (frame dragging; carry with the 4397 item);
+   - (e) the preferred-frame bounds on drift-dependent gravitating mass (PPN α₁ and α₂);
+   - (f) mass as an exposure fraction versus E_pol (GR-1a): a fraction versus an extensive mass, paired versus unpaired, and the LLR precisions (SF-6 debt (d) plus the nuclear analogue);
+   - (g) dispositions: 4407 items (2) and (3) answered here; carry 4407 items (1) and (4)–(10).
+   - Run `code/deferral_gate.py` before the format-patch. It needs a commit and fails without one; I did not commit anything.
+
+**Minor notes**
+- **"Lorentz–Poincaré" framing: fair.** SR-1 has an absolute Moment and a "preferred foliation at the ontological level" while matching SR in what can be observed (app. B, near line 1372). It lists length contraction L′ = L₀/γ and time dilation as fewer cycles per absolute Moment. That is the Lorentz–Poincaré position in substance, though SR-1 does not use those names. Say "in substance" and cite where SR-1 says it.
+- **Frame-dragging remark: accurate.** Gravitomagnetism comes from mass currents (the momentum part of the source). For the hot ball, add that in GR pressure and stress gravitate as well. For a bound body in equilibrium the stress contributions cancel overall (the virial theorem), so the pull still matches its total energy, which is why "in proportion to its extra energy" holds.
+- The table's "backward u" column is signed while the header says "|u|" only for the forward leg. Label it "signed".
+- The title is very long; consider trimming it.
+
+**Plain language:** Thomas pictured a particle swinging back and forth inside a moving body: faster on the forward stroke, so its clock runs slower, and slower on the back stroke, so its clock runs faster. The draft's calculation is correct: if the swing's length shrinks along the direction of motion, the body's clock slows by exactly Einstein's amount. But most of that answer comes from Einstein's rule for adding speeds, which already contains the slowing. Thomas's rule fits it; it doesn't create it. The one clean case is a particle swinging at its top speed, and that case works without borrowing anything. The shrinking also has to happen only along the motion, not in every direction, and that is a physical question to put to Thomas rather than something already settled in his 4395 message. "The hot ball pulls harder" matches Einstein. The idea that drifting through the absolute frame adds to gravity must stay hidden, because experiments look closely for exactly that kind of effect. The open items have to be written into the todo list.
+
+---
+
+## Claude's response to the 4408 return (not part of the verbatim report)
+
+- **1 taken in:** the at-cap (w = 1) light-clock case leads, with no velocity addition used; for slower swings γ is attributed to relativistic velocity addition (SR input), with the Galilean check; his rule is "consistent with", not "produces".
+- **2 taken in:** the nuance in his wording (backward slower than the forward leg always, than the bulk only for w < 2v/(1+v²)) is stated.
+- **3 taken in:** the 4395 phrase is read as pointing toward contraction; the needed contraction is longitudinal only (script shows all-round shrinking fails); the 4394→4395 slip fixed.
+- **4 taken in:** a founder question on longitudinal-only contraction replaces "None".
+- **5 taken in:** the drift-raises-pull remark is flagged as a preferred-frame claim with α₁/α₂ bounds; owed.
+- **6 taken in:** the mass definition is a reading, with the fraction/extensive and paired/unpaired tensions.
+- **7 taken in:** the 4408 todolist entry is filed.
+- **Minor notes:** "in substance" Lorentz–Poincaré with SR-1 appendix B; pressure/virial note; signed column label.
