@@ -2227,3 +2227,68 @@ There is also a real physics disagreement worth asking him about: whether partic
 - **7 taken in:** a founder question (near-cap swing; which axis) replaces "None".
 - **8 taken in:** the 4409 todolist entry is filed with all items and the 4408 (g) carry.
 - **Minor notes:** "related to", the 2v/(1+v²) condition, the second convenient branch, the signed label.
+
+---
+
+## Patch 4410 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+The arithmetic is right and the script runs cleanly. The correction on the ZBW swing speed is sound. There are four problems: one misattribution, one overclaim about what his argument gives, a 4386/4390 point the patch understates, and the D-9 bookkeeping.
+
+**Required changes**
+
+1. **The 4396 misattribution (§5).** The patch calls "crystals shrink only along the line to the mass" his 4396 picture. It is not his:
+   - His 4396 message (21 lines) says nothing about crystals.
+   - The along-only reading is Claude's assumption in the 4396 *fragment* (§"A consequence for him to confirm"). It was put to him in 4396 §5, and his 4397 answer was "I don't know the numbers". He did not confirm it.
+   - The founder move away from absolute spacing for gravity is **4393** ("the crystals need to shrink slightly near a mass — there has to be a mechanism"). It does not say along-only.
+   - Fix: cite 4393 for the shrinking. Label the along-only part as Claude's 4396/4397 reading, still unconfirmed.
+2. **His argument does not give the factor or the direction (§3, §7 "gives exactly the required contraction: front to back only").**
+   - His relativity-principle argument shows that the crystal must be shorter. It is a consistency inference, the same as the classic Michelson–Morley one. It does not give √(1−v²), and it does not give along-only.
+   - The ratio along/across = √(1−v²) comes from 4409's light round trips. "Across unchanged" needs the clock rate γ as well (4409 owed item 3, a Kennedy–Thorndike-type tie).
+   - Read literally, "same number of Steps in the same number of absolute Moments" also conflicts with time dilation: a moving crystal's cycle takes γ times more absolute Moments. It works only if "Moments" means measured Moments. Flag it as a reading.
+   - Fix: "his argument requires the shortening; with 4409's round trips and 4408's clock rate, the size is √(1−v²) along the motion and none across."
+3. **"Settles the contraction for bodies" (§8, §3 last sentence).** This is fair only as "affirms it for bodies, answering 4409's body-length question". The contraction is required by the relativity principle, which is taken as a premise, so it is not derived. §9 marks this branch correctly; §8 and §3 should match it.
+4. **The heavy-handed "magnetic part" sentence (§4).**
+   - The equipotentials of the scalar potential φ alone do not set the force on a co-moving charge.
+   - The full electric plus magnetic force derives from the convection potential ψ = φ(1−v²) (Heaviside and Searle). It has the same ellipsoids, γ²x²+y²+z² = const. That is why static balances contract by 1/γ (Lorentz 1895, corresponding states).
+   - Bell's version, for bound systems with moving parts (orbits, swings), also needs the relativistic momentum law. Lorentz needed every force, not only electromagnetism, to transform the same way.
+   - Fix: state this. The CPP owed item then becomes: the DI-bit relay must reproduce ψ for every CP-to-CP force, plus the dynamics.
+5. **The 4386/4390 tension is understated (§5, §6).**
+   - In 4410 he frames the choice himself: "the same number of PSR distances or the same number of absolute GPs". He picks the PSR count ("the distance must become shorter").
+   - For moving crystals, that is his own answer against the 4386/4390 absolute-spacing thesis, back toward 4385.
+   - With 4393 on gravity, it is fairer to say "retired by his own 4393/4410 statements (Claude's reading), not just recorded".
+6. **The founder-facing correction is incomplete (§7).** 4408 §5 told him the time dilation comes out "without borrowing any rule from relativity". That claim rested on the at-cap case. §7 should say that, for the actual slower swing, exact γ needs relativistic velocity addition, which SR-1 takes as input. It should not just say "still comes out exactly".
+7. **D-9 bookkeeping.**
+   - `todolist.md` has no 4410 entry. The gate only checks HEAD, so it does not cover this draft. Add the entry in the same patch.
+   - 4409 item (5) (the near-cap swing tension) is resolved here, so it should be closed, not carried in "items (2)–(6)". Item (1) is answered.
+   - New owed items:
+     - (a) the CPP origin of relativistic velocity addition for the sub-cap swing, since 4408's non-circular γ no longer covers the physical ZBW;
+     - (b) convection-potential and Bell dynamics through the DI-bit relay, for all CP forces;
+     - (c) the 4396 attribution correction (add an annotation to 4396 if the convention allows);
+     - (d) what "PSR distance" means directionally: if the moving CP's PSR shrank all round, as √(1−u²), a fixed PSR count would shrink the crystal across the motion too. Only 4409's oblate sphere gives along-only.
+
+**Minor notes**
+
+- **Point 1 is confirmed.** 4325 says the CP moves at V_i and the DI-bits move at light speed. 4326 says the CP does not reach light speed even at the centre, and the 68.5-PSR swing is postulated. 4326 is hedged ("I don't think"), so "his statements" is more accurate than "rulings". Calling 4408's at-cap case a "limiting illustration" is fair.
+- **The §2 backward-leg statement is correct**, with w the swing speed in the body's frame: the backward leg is faster than the body iff w > 2v/(1+v²). It would be plainer to say outright that for everyday bodies his 4409 view does not hold, though the result is unaffected.
+- **The 4397 ruler is accurate.** In Schwarzschild areal (grid) coordinates, a fixed proper length spans √(1−2u) radially and is unchanged across. Carry 4409's caveats (local only; held CP ≈ moving *toward* the mass, the outward sign). §5's "same rule" should read "same geometry, locally".
+- **The script asserts rather than checks.** Parts 1–3 print √(1−v²) or 1/γ from the formula itself. A real check of Part 2 would compute the Liénard–Wiechert (retarded) potential numerically and fit the equipotential, or verify that the co-moving force follows the convection potential ψ ellipsoid.
+- **No founder question is appropriate** under PD-006/008. What remains is derivation, plus a reading of his 4410/4393 statements that is Claude's to mark. If anything goes to him later, it is whether absolute spacing is retired for gravity as well as for motion.
+
+**Plain language**
+
+The draft rightly corrects itself: the founder's earlier answers do put the inner back-and-forth motion of a particle below light speed. His new argument is that a moving body has to get shorter, or physics inside it would look different. That is right, but it only says "shorter". The exact amount, and the fact that it happens only front to back, come from the earlier light-timing calculation and the clock slowing. The classic explanation (a moving charge's field is squashed in its direction of travel) is correct, but the patch should name the combined electric-magnetic potential that actually holds charges in balance. It also credits him with a statement about gravity in 4396 that he never made: that was Claude's assumption. And the draft understates that his own answer now favors "same count of Planck steps" over "fixed absolute spacing". The deferred items also need to go into the todo list.
+
+---
+
+## Claude's response to the 4410 return (not part of the verbatim report)
+
+- **1 taken in:** the shrinking near a mass is attributed to 4393; the along-only part is marked as Claude's 4396/4397 reading, unconfirmed; the 4396 misattribution is corrected in §5.
+- **2 taken in:** his argument requires the shortening; the factor and direction come from 4409's round trips and 4408's clock rate; the "absolute Moments" reading is flagged.
+- **3 taken in:** "settles" → "affirms … for bodies".
+- **4 taken in:** the convection potential (Heaviside, Searle), Lorentz 1895, and Bell's dynamics are stated; the script now computes the retarded potential (ratio 1/γ).
+- **5 taken in:** the absolute-spacing thesis is read as retired by his own 4393 and 4410 statements (Claude's reading).
+- **6 taken in:** §7 tells him that, for the sub-cap swing, exact γ needs relativistic velocity addition, and that 4408's "without borrowing" applied only to the at-cap case.
+- **7 taken in:** the 4410 todolist entry is filed; 4409 items (1) and (5) closed; new items (a)–(d) filed.
+- **Minor notes:** "statements" rather than "rulings" for 4326; "same geometry, locally"; script checks rather than asserts.
