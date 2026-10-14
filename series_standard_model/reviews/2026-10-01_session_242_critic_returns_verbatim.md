@@ -2292,3 +2292,83 @@ The draft rightly corrects itself: the founder's earlier answers do put the inne
 - **6 taken in:** §7 tells him that, for the sub-cap swing, exact γ needs relativistic velocity addition, and that 4408's "without borrowing" applied only to the at-cap case.
 - **7 taken in:** the 4410 todolist entry is filed; 4409 items (1) and (5) closed; new items (a)–(d) filed.
 - **Minor notes:** "statements" rather than "rulings" for 4326; "same geometry, locally"; script checks rather than asserts.
+
+---
+
+## Patch 4411 — critic return (fresh context), verbatim
+
+**Critic report: Patch 4411 draft ("The Census Around a Moving CP")**
+
+**Verdict: ACCEPT WITH CHANGES.** The mathematics is right. Most of the problems are in how the results are framed and in record-keeping. I modified nothing in the repo. The script runs cleanly from /root/CPP and reproduces the table.
+
+**Physics check (point 1)**
+- **Census equals the LW potential, exactly: correct.** Retarded R × (1 − n·v) = √(X² + (1 − v²)ρ²), where X is the offset from the present position along the motion and ρ the distance across it. So 1/(R(1 − n·v)) is exactly the Liénard–Wiechert (LW) scalar potential.
+  - Its equipotentials are X² + (1 − v²)ρ² = const, which is Heaviside's ellipsoid with axis ratio 1/γ.
+  - On the axis the potential is exactly 1/x ahead and behind: R = x/(1 ∓ v) and (1 ∓ v)R = x.
+- **Arrival compression: correct.** For an emitter that is isotropic in the absolute frame, counted per receiver Moment, dt_obs = (1 − n·v) dt_ret.
+- **Flux: correct.** The flux is 1/(R²(1 − n·v)). On the axis it gives (1 ∓ v)/x². At the side point R = γ and n·v = v², so the flux there is 1, and the equal-count points are √(1 ∓ v). The naive axis vector sum (1 ∓ v) at unit present distance is also correct.
+- **"True field (1 − v²) on axis": correct.** E = q(1 − v²)/[R_p²(1 − v²sin²θ)^{3/2}].
+
+**Required changes**
+
+1. **The 1/R weight is assumed, not derived. Say so.** Weighting each arrival by 1/R from its emission point *is* the retarded Green's function δ(t − R)/R of the scalar wave equation. So the census result is a theorem of "the census obeys GR-1j's wave equation for a moving source", not something derived from the DI-bit rule.
+   - Counting bits arriving at a receiver naturally gives the flux (i).
+   - AP-4 defines SSV_abs = Σ|polar| over arrivals. The patch needs to show why that sum carries 1/R per arrival rather than 1/R², or else downgrade "CPP's own census channel supplies 4410's flattening" to "if the census obeys GR-1j's wave equation for moving sources".
+   - Add this to the PD-008 convenient-branch line.
+   - State the modelling idealization too: arrivals are treated as coming straight from the retarded CP position, but AP-4's relay is multi-hop, GP to PSR shell.
+
+2. **Condition B is not settled by inspection; 4411 undercuts 2895's argument.** branch1_verification.md §5 (2895) closed Condition B "by inspection" on the reasoning "retarded ⇒ no LW cancellation". 4411 shows that premise is false in general: LW is itself built from retarded arrivals. Whether Branch 1 is LW depends on what the receiver does with the arrivals (vector sum or flux: non-LW; census gradient: LW).
+   - The patch should say this explicitly. Condition B reduces to the receiver-rule question in §6 "Where the census sits"; it is not closed.
+   - Also note the 2889 automaton A_vol ≈ −1 result measured a vector-sum observable. It is consistent with (i) and is not evidence against the census result.
+
+3. **Correct the record-inconsistency claim.**
+   - transport_family_unification.md is Patch 2890. It *predates* 2895, so its "OPEN" is historical, not an inconsistency.
+   - The real inconsistency: the CONJ-FP-1 registry entry in frontier_sectors/CONJ.md (line 477) never records the 2895 closure. It still describes the moving-source test as what "settles Condition B". Meanwhile mobile_sea_promotion_record.md, b1_*.md and mobile_sea_execution_record.md say CLOSED-VERIFIED (2895).
+   - The M = 128 clean run really was never filed (confirmed).
+
+4. **§4: the pair "distortion" claim and the cited experiment are wrong.**
+   - For the raw vector-sum pair, the trailer gets (1 + v) and the leader (1 − v). The relative closing push stays 2 at first order; what changes is a net centre-of-mass push of ±2v (forward if the pair attracts, backward if it repels). So the first-order effect is a self-drive, not a front-back distortion.
+   - Michelson–Morley-type cavity tests are second-order, round-trip tests and are the wrong citation.
+   - In CPP's dynamics (displacement ∝ SSV_net) a net drive ∝ v has the *same form* as CONJ-FP-1's coasting drive. The right exclusion is: bound and free matter would coast differently. Coasting would depend on internal binding, so atoms would self-accelerate relative to free particles, which is grossly excluded.
+   - Trouton–Noble and Trouton–Rankine are the direct tests of forces between co-moving charges and can be cited alongside.
+   - Keep the 4410-principle argument; it is sound.
+
+5. **Reframe the "self channel vs mutual channel" way through.**
+   - DP-sea reflectors are themselves made of CPs. A DI-bit carries only an origin-GP address, so nothing in the messenger tells "own reflections" from "another CP".
+   - The workable distinction is a *receiver rule*: DPs (at rest) respond to the vector sum of arrivals, which is retarded and non-LW, while CP forces follow the census gradient, which is LW. That is two rules, and probably an axiom-level question. Say so.
+   - Add the empirical constraint: detectors at rest see the field of a uniformly moving relativistic beam point at its *present* position (de Sangro et al., Eur. Phys. J. C 75 (2015) 137, as I recall; verify the citation). Since DPs are at-rest responders, this bears directly on the non-LW self channel.
+
+6. **D-9 (point 5): the patch has no todolist entry, and the deferral gate has not run.** `code/deferral_gate.py` only checks commits and errored on the uncommitted draft. The same patch must add a 4411 entry to todolist.md listing:
+   - (a) the vector/magnetic channel, continuing 4410 owed item (b);
+   - (b) the founder's answer to §7;
+   - (c) the M = 128 clean run, owed since 2889;
+   - (d) the CONJ.md CONJ-FP-1 entry, which is missing the 2895 status, plus re-adjudicating the 2895 inspection argument (change 2);
+   - (e) the receiver rule, census gradient versus AP-4 vector sum (point 5's two-rule question);
+   - (f) Darwin: reconciling the first-order cancellation with CONJ-FP-1;
+   - (g) a cross-link to TODO-4364-PREFFRAME, since 4411 is the scalar-sector moving-source rule it asks for;
+   - (h) 4410 owed item (b) marked partially addressed (scalar census only).
+
+**Minor notes**
+- **§3:** "cancel at first order" undersells it. The front-back symmetry is exact at all orders.
+- **§6:** for co-moving test charges the full LW force is exactly −(1 − v²)∇φ. So the census gradient alone already gives equal-and-opposite pair forces and the 1/γ equilibrium geometry, with only an overall factor missing. The vector channel then matters for magnitudes and dynamics (the time-dilation side), not for the contraction shape. This strengthens the result and is worth stating.
+- **Darwin bullet:** the Darwin adjudication does not literally "assume LW fields". It concludes there is no O(v/c) retardation term, which is LW-type and in conflict with CONJ-FP-1's first-order drive. Reword.
+- **Script:**
+  - The axis vector-sum lines print hard-coded formulas (1 ∓ v, 1 − v²). They should compute these with ret().
+  - It should check the ellipsoid at a few oblique angles, not just on the axis and at the side.
+- **Point 2, Newton's third law:** retarded forces need not be equal and opposite in general. For uniform co-motion, though, LW gives exactly equal-and-opposite forces and constant field momentum, so the criterion used is valid here. One sentence saying so would pre-empt the objection.
+- **Founder question (point 4):** fair and physical. It would be better with the rest-versus-co-moving difference added: DPs sit at rest while the partner CP moves along. That difference, not "own versus other", is the real physical handle.
+
+**Plain language**
+The patch asks what a moving particle's signal looks like if it is relayed at light speed. Built one way (the "census"), it comes out as exactly the textbook moving-charge potential, squashed front-to-back the right amount. The arithmetic checks out. But that only follows if the census obeys the textbook wave equation, and the patch must say it assumed that. Built the other way (counting arriving signals as pushes), it comes out lopsided. A lopsided version would make bound pairs push themselves along. That is ruled out because atoms and free particles coast the same way; the cavity experiments the patch cites are the wrong evidence. The theory's coasting idea needs exactly such a lopsided response from the surrounding sea, so the tension is real. The patch also shows that an earlier "closed by inspection" verdict on this question rested on a false step ("delayed means not textbook"), so that verdict should be reopened, not just flagged. The proposed way out needs restating as two different rules for two kinds of receiver. The patch must list its owed items in the todo list.
+
+---
+
+## Claude's response to the 4411 return (not part of the verbatim report)
+
+- **1 taken in:** the 1/R weight is stated as assumed (GR-1j's retarded Green's function), with the multi-hop idealization; the headline and PD-008 line are conditional.
+- **2 taken in:** 2895's "by inspection" closure of Condition B is shown to rest on a false step and is reopened as the receiver-rule question; the 2889 A_vol result is placed with the vector-sum observable.
+- **3 taken in:** the record note is corrected (CONJ.md lacks the 2895 status; transport_family_unification.md is historical).
+- **4 taken in:** the pair consequence is a first-order self-drive (bound vs free coasting differently), with Trouton–Noble/Trouton–Rankine; the cavity citation is removed.
+- **5 taken in:** the way through is restated as two receiver rules (DPs at rest vs CPs), probably axiom-level; the 2015 at-rest-detector result is noted with its citation to be verified.
+- **6 taken in:** the 4411 todolist entry is filed.
+- **Minor notes:** symmetry exact at all orders; census gradient gives the co-moving shape with only the (1 − v²) factor missing; Darwin bullet reworded; script now computes the axis sums and checks seven angles; equal-force criterion justified for uniform co-motion; founder question uses the rest-versus-moving handle.
