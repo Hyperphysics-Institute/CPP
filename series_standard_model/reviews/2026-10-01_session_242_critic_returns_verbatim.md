@@ -2372,3 +2372,55 @@ The patch asks what a moving particle's signal looks like if it is relayed at li
 - **5 taken in:** the way through is restated as two receiver rules (DPs at rest vs CPs), probably axiom-level; the 2015 at-rest-detector result is noted with its citation to be verified.
 - **6 taken in:** the 4411 todolist entry is filed.
 - **Minor notes:** symmetry exact at all orders; census gradient gives the co-moving shape with only the (1 − v²) factor missing; Darwin bullet reworded; script now computes the axis sums and checks seven angles; equal-force criterion justified for uniform co-motion; founder question uses the rest-versus-moving handle.
+
+---
+
+## Patch 4412 — critic return (fresh context), verbatim
+
+**Critic return: Patch 4412 (fresh context)**
+
+**Verdict: HOLD.** §1–3 are close to acceptable as drafted. §4 and §6 (second paragraph) misstate what CONJ-FP-1 is. That error sits in the patch's headline claim, so it has to be fixed before the patch is applied.
+
+**Required changes**
+
+1. **The CONJ-FP-1 framing in §4, §5, §6 and the title is wrong.** The draft says "the forward drive must cancel the sea's drag exactly … net effect on uniform motion exactly zero." CONJ-FP-1 does not say that.
+   - Per CONJ.md L477 and the 2 Aug ruling (§3–§4), the round-trip asymmetry gives one net drive. Its sign follows the Sea response (Condition A: an attractive response gives drag, a repulsive one gives a forward drive). There are not two separate drive and drag terms to balance.
+   - In CPP the velocity is not carried by the particle (7 July ruling). The primitive d = (|SSV_net|/SSV_abs)·PSR needs a **non-zero** forward SSV_net for coasting to happen at all. The ruling says it outright: if the drive is zero, "nothing could coast."
+   - So the requirement his principle actually imposes is **self-consistency at every speed**: the drive at velocity v must reproduce exactly displacement v per Moment (the marginality condition C·PSR = SSV_abs). It must hold at all v, with no leftover dependence on speed that a lab could detect, and the coasting family must be neutrally stable (LINK 3).
+   - Exact linearity in β was only checked for β ≤ 0.10. At higher speeds the drive must take the relativistic form (momentum-like, γ-dependent), and nothing has shown that it does.
+   - Rewrite §4, the §5 bullet, the second paragraph of §6 and the title to match. Drop "drive equal to drag" and "that is just Newton's first law" in the cancellation sense.
+2. **The Condition A statement in §5 is half right.** Condition A asserts that the Sea response is repulsive, which is what makes the drive point forward. It is not a sign condition on a drive-minus-drag balance. The exact-at-all-speeds requirement belongs with LINK 2 (marginality) and LINK 3 (stability), not with Condition A. Correct the parenthesis.
+3. **Mark the "the sea is not a co-moving partner" licence as Claude's inference.** His message says nothing about the second half of 4411 §7 (whether the front-back difference is a moving CP against resting DPs). §4's "His principle permits that interaction to be lopsided … because the sea is not a co-moving partner" is Claude's reading. Mark it as such, and add it to PD-008 as a second convenient branch.
+4. **Name the gap in the two-part rule.** DPs are made of CPs. A rule of the form "DPs respond to the vector sum, CPs to the census" would make a *moving* DP-like bound state (real positronium in a lab) drive itself. That is an observable lab object, so it would break his principle. The rule therefore cannot depend on species or composition. It can only depend on being at rest in the absolute frame, which makes it an explicit preferred-frame rule that has to leave no trace.
+   - A related gap: part of the force between two CPs passes through the sea (B is acted on by DPs that A polarised). The lopsided sea response would enter that part too. The CP-to-CP versus CP-to-sea split is therefore not clean, and §3's "settles" needs the qualifier "for the direct channel; the sea-mediated part must also come out free of first-order asymmetry".
+   - Note the empirical anchor: Trouton–Noble / Trouton–Rankine confirm the equal-force conclusion whatever the mechanism.
+5. **Add the observational stake.** A lopsided CP–sea interaction must be the same for every species and every binding state (free versus bound, and whatever local SSV_abs each CP sees), to very high precision. Earth's motion relative to the CMB is about 10⁻³ c, so second-order mismatches come in at about 10⁻⁶ times the coupling. Preferred-frame bounds are many orders tighter: Hughes–Drever / SME clock-comparison tests, modern Michelson–Morley and Kennedy–Thorndike tests, and the PPN α₁/α₂ limits. Add one sentence saying the self-consistency must hold to that level, and cite TODO-4364-PREFFRAME.
+6. **D-9.** No 4412 entry exists in todolist.md (checked; the last entry is 4411, at L2564). Add one that:
+   - marks 4411 (c) as answered for the CP–CP half only, with the CP-versus-resting-DPs half resting on Claude's inference;
+   - carries forward 4411 (a), (b), (d)–(k);
+   - adds new items: (i) restate the CONJ-FP-1 requirement as all-speeds marginality plus neutral stability plus a relativistic (γ) form of the drive, and annotate CONJ.md L477 when the 4411 (f) update is made; (ii) a receiver rule that does not make a moving DP-like bound state (positronium) drive itself; (iii) the sea-mediated part of the CP–CP force must be free of first-order asymmetry; (iv) a quantitative preferred-frame bound check (SME, Hughes–Drever, PPN α₁/α₂) on any species- or binding-dependence of the CP–sea drive.
+   - Then run `code/deferral_gate.py`.
+
+**Minor notes**
+- The "Lorentz–Poincaré position" reading is fair, both of his answer and of SR-1 as 4408 §2 states it: an ontological absolute frame and foliation, with c and the PSR defined in that frame, and Lorentz-invariant observables. One caveat to add: Lorentz derived contraction from electrodynamics, while SR-1 takes the SR kinematics as input (4408 §2). The arc is trying to supply the Lorentz-style derivation (4410/4411), so "the position" is the target, not yet the result.
+- The refinement ("a single CP has no rulers or clocks; the lab is a body riding with it") is fair and correctly modest. It could just say "each CP's rest frame defines a possible lab", which keeps his wording.
+- §3's "selects the census channel" is conditional on the 1/R weight (said) and on the multi-hop check (4411 (a), not said). Add it.
+- §7, no founder question: appropriate *after* changes 1–4. The open items are derivation and records. If the change-4 gap pushes toward an axiom-level receiver rule, that goes to him later as a physical picture (positronium moving through the sea), not now.
+- PD-008 should list the convenient branches in changes 3 and 4, not only "resolves the 4411 tension."
+
+**Plain language**
+The founder says there is a real fixed background (the lattice). Moving things really are squashed in it, but every lab sees the same laws. That is the old Lorentz–Poincaré view, and the draft is right to call it that. It also correctly concludes that two particles moving together must push each other equally. The draft gets the coasting mechanism wrong, though. In CPP a particle does not carry its own momentum. The uneven push it gets from the surrounding sea is what moves it forward each step, so that push must be non-zero, not cancelled out. What the founder's principle really demands is that this push is always exactly the size needed to keep the particle at its current speed, at every speed, and works identically for every kind of particle, free or bound. Experiments rule out any lab sensing its motion through a background to extremely high precision, so this is a very demanding condition, and the draft should say so. The rule that lets the sea treat particles unevenly while particles treat each other evenly also has a gap. Sea particles are made of ordinary particles, so a sea-like pair moving through a lab must not be able to push itself along.
+
+**Files reviewed:** /root/CPP/series_standard_model/axiom_maturation/4412_absolute_flattening_relative_laws.md, /root/CPP/founders_voice/4412_flattening_in_absolute_frame_each_cp_a_lab_frame.md, 4411 and 4408 in the same folder, /root/CPP/founders_voice/founder_mechanism_roundtrip_timing_inertia_2026-08-02.md, /root/CPP/frontier_sectors/CONJ.md (L477), /root/CPP/flagship_papers/electromagnetism/sketches/conj_fp_1_volume_transfer_inertia.md, /root/CPP/todolist.md. Nothing was modified.
+
+---
+
+## Claude's response to the 4412 return (not part of the verbatim report)
+
+- **1 taken in:** CONJ-FP-1 is restated correctly: one net drive that must be non-zero (CPs carry no velocity); his principle requires self-consistency at every speed (marginality), neutral stability and a relativistic form; "drive equal to drag" removed throughout, including the title.
+- **2 taken in:** Condition A described as the repulsive-response sign; the all-speeds requirement placed with the marginality and stability links.
+- **3 taken in:** "the sea is not a co-moving partner" marked as Claude's inference and added to PD-008.
+- **4 taken in:** the positronium gap in a composition-dependent receiver rule and the sea-mediated part of CP–CP forces are stated; Trouton–Noble/Rankine cited.
+- **5 taken in:** the observational stake (species and binding independence; preferred-frame bounds; TODO-4364-PREFFRAME) is added.
+- **6 taken in:** the 4412 todolist entry is filed.
+- **Minor notes:** Lorentz–Poincaré as target not result; "each CP's rest frame defines a possible lab"; multi-hop condition added; PD-008 lists all convenient branches.
