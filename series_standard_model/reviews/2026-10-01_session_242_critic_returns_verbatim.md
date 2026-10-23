@@ -2517,3 +2517,128 @@ The question to Thomas should give him the three pictures to choose from, not ju
 - **8 taken in:** the founder question offers (a), (b), (c) and the echo sub-question.
 - **9 taken in:** the 4413 todolist entry is filed; 4412 (i) and (ii) marked as addressed by proposal, pending answer.
 - **Minor notes:** Part 4 labelled as illustration; resolution line; r defined at emission; t_b naming unified.
+
+---
+
+## Patch 4414 — first critic return (fresh context), verbatim
+
+**Verdict: HOLD.** The algebra in the script is right, but it is applied to a geometry that is wrong at first order in v. When the geometry is done consistently, the result flips: uniform emission (U) gives exactly v, and the headlight (H) gives about v/3. It also points the opposite way. There are two further problems that are not settled: the sign convention, and dilution by outside DI-bits, which looks fatal under the stated primitive.
+
+I modified nothing in /root/CPP. My check scripts are in /tmp/claude-0/-home-claude/809b5738-7ea0-5402-b8f6-d8c84894d09f/scratchpad/ (chk.py and chk3.py; chk2.py was an early version with a truncation flaw, which I corrected in chk3.py).
+
+## Checks
+
+**1. Physics**
+- **The algebra is correct as stated.** The rate compression 1/(1 − vμ) at a stationary receiver is correct (single Doppler). The aberrated density 1/(γ²(1 − vμ)²) is correct for emission that is isotropic in the source frame.
+  - ∫(1 − vμ)⁻³ dμ = 2γ⁴ and ∫μ(1 − vμ)⁻³ dμ = 2vγ⁴, so ⟨μ⟩ = v exactly.
+  - For (U): ⟨μ⟩ = 1/v − 1/artanh v.
+  - With the 1/γ time dilation, SSV_abs ∝ 2γ⁴/γ³ = 2γ. Part 4 is consistent.
+- **The geometry is not consistent.** The script uses one angle θ for three different things: the emission density, the Doppler factor at the reflector, and the arrival direction at the landing GP.
+  - During a round trip to a reflector at distance r the CP moves about 2vr. The change in angle is therefore O(v) whatever r is. Example: a reflector now at 90° was lit from cos θ_e = 2v/(1 + v²).
+  - So the fragment's §5 simplification ("far enough that directions do not change during a round trip") cannot hold at any distance.
+  - The model also leaves out the inverse-square illumination asymmetry: the CP emitted from points behind its current position, so it was closer to the rear reflectors.
+- **The consistent 3D calculation.** Setup: stationary reflectors spread evenly in space, isotropic re-emission, returns counted at the CP's current GP. I checked it two independent ways (fixed reflector, and emission direction plus path length); the two agree.
+  - (U): |SSV_net|/SSV_abs = v **exactly**, for every reflector shell. The excess comes **from behind**.
+  - (H): about v/3 (0.0033, 0.034, 0.108, 0.204, 0.632 at v = 0.01, 0.1, 0.3, 0.5, 0.9). Also from behind, so (H) decays.
+  - The 1D Part 1 result (front excess, exactly v) holds only in strict 1D, where there is no spreading.
+  - The γ growth does not survive under (U): SSV_abs goes as artanh v / v.
+
+**2. The primitive**
+- d = (|SSV_net|/SSV_abs)·PSR is **not AP-4**, and it is not in axiom-registry.md.
+  - It is the AUTOMATON-1 v/c map, which the founder confirmed at Patch 2732 ("I accept your proposed resolution of v/c"; handovers/2026-07-21_session_close_2732_2734_x1_done.md). It also appears in series_relativity/development/UNIV-1_S1_primitive_inventory.md.
+  - The registered wording is only R-CP-NO-REST-MASS: "advances by its SSV_net (V_i), at most one PSR".
+- AP-4 defines the receiver's sums differently from the script:
+  - SSV_abs = Σ|polar| + k·Σ|strong|, a sum of magnitudes of the E payloads, not a count.
+  - V_i = E + S, where E is the reflecting GP's snapshot register (R-CP-ONLY-SOURCE), not the arrival direction.
+- Under AP-4, a return from a front reflector carries an E that points away from the CP, which is forward, even though the DI-bit itself travels backward. So:
+  - With AP-4's payload directions, the consistent-geometry rear excess gives a **backward** step under (U).
+  - With the founder's "rear signal minus front signal" (repulsive), it gives a **forward** step of exactly v under (U).
+- The result does not survive until both the sign and the weights are fixed. In addition, the bounce-off-reflectors picture is not the registered relay: AP-4c has deposit at the PSR shell and re-imprint, and the R-DIBIT rulings say no DI-bit goes beyond its GP_PSR.
+
+**3. Fairness to the founder**
+- Withdrawing 4413's "step = readout + forces" is fair: he rejected the speedometer.
+- But the fragment's model sets aside what he named as the carrier: "DP arcs and separations are … an accurate representation of the effect", and the summation is from "many sources". The fragment treats exactly that polarized, co-moving cloud as a bias (§5).
+- §6 "He is right … the registered rule is enough on its own" overclaims.
+- The fragment never states which way the founder's "rear minus front" points the step. In its own 1D model (front excess), his sign gives braking.
+
+**4. The headlight question**
+- It should not go to him. The registry already answers it as (U):
+  - AP-4: "every GP emits the same fixed number of DI-bits every Moment", and GPs are at rest.
+  - R-DIBIT: one DI-bit per GP, filling the PSR ball.
+  - 4409 §2: the moving CP "broadcasts a sphere of one PSR from where it is" and then moves forward inside it. That sphere is centred on the emission point.
+- So 4409 **does** imply the absolute-frame density. The fragment's claim that it concerns only reach is incorrect.
+- And with the geometry corrected, (U) is the case that gives v.
+
+**5. Dilution (likely fatal under the stated primitive)**
+- Outside DI-bits that do not depend on the CP's motion (other charges, the sea, the gravitational SSV_abs) add to SSV_abs but nothing to SSV_net.
+- So the step is v·s, where s = self/(self + outside) < 1, and v_{n+1} = s·v_n decays exponentially.
+- s also changes with the environment. A free CP would slow on entering a region of higher SSV_abs (near a mass, near other charges) with no force acting. That is a first-order breach of the first law and would make gravity act like friction.
+- The only exits I see:
+  - (a) a rule that normalizes self-returns by the self-count only. The origin address cannot do this, because AP-4c re-imprints the reflector's address.
+  - (b) proof that the self-contribution dominates SSV_abs at the CP's own GP.
+  - (c) a different primitive.
+- The fragment must face this explicitly.
+
+**6. D-9:** there is no 4414 entry in todolist.md (the latest is 4413). deferral_gate.py only runs on a commit, so I could not run it on the uncommitted draft.
+
+## Required changes
+1. Replace the single-θ model with consistent geometry: emission point versus current GP, inverse-square illumination, arrival direction at the current GP. Report that (U) gives exactly v with a rear excess and (H) gives about v/3. Remove the "directions do not change" simplification, or show it fails at O(v).
+2. State the sign convention and justify it. Arrival direction with repulsion (his "rear minus front") gives a forward step; AP-4 payload E-direction gives a backward step. This is the real founder-facing binary, and it is CONJ-FP-1's Condition A again.
+3. Correct the attribution. The primitive is the AUTOMATON-1 / Patch 2732 founder-confirmed map, not AP-4. Address AP-4's |E|-sum SSV_abs and its E-direction V_i, and note that the bounce model is not the registered relay (AP-4c, R-DIBIT).
+4. Add the dilution analysis (s < 1 means decay and environment-dependent speed). Either resolve it or state it as the gating obstacle. Do not claim coasting "from the primitive itself".
+5. Withdraw the §7 headlight question; AP-4, R-DIBIT and 4409 already set (U). If a founder question remains, ask about the sign (does the extra signal from behind push the CP forward?) and about separating self from outside signals.
+6. Withdraw the γ "relativistic inertia" by-product (it fails under (U)). Soften §6 and §4 (CONJ-FP-1), and §1's "the registered clause stands". The 4404 restatement (TODO 4404 item 3) is narrowed by his "summary" remark, not closed.
+7. Represent the founder's DP-arc point fairly: he said the summation the DP-arcs represent carries the effect, which the model excludes.
+8. Add a 4414 todolist entry for all owed items. That covers 4413 items (4)–(10) carried; the sign question; dilution; payload-weighting; relay-versus-bounce; the self-cloud; and CONJ.md line 477. Run deferral_gate.py after committing.
+
+## Minor notes
+- The Part 2 printed format is misleading: the (H) column shows v only because of the model's assumptions.
+- Part 4 sets v = 0 to the special value 2.0 by hand; that is cosmetic.
+- The reflection probability cancels only if it is isotropic and the same fore and aft.
+- With moving or polarized reflectors (DPs whose response moves with the CP), the flowing-sea readout (v − u)/(1 − uv) from 4413 reappears in another form; this should be carried forward.
+
+## Plain language
+The draft said a moving particle keeps its speed only if it throws more of its signals forward, like a headlight. When the returning signals are tracked properly, the opposite holds. Allowing for the fact that the particle was closer to the reflectors behind it when it sent its signals, an even spray in the grid's frame (which the registered rules already specify) gives a return imbalance of exactly the particle's speed, and the headlight spray falls short. But the extra returns come from behind, so whether this pushes the particle forward or holds it back depends on a sign rule that is not yet fixed. There is a bigger problem too: the rule divides by all the signals arriving, including those from everything else. Unless the particle's own echoes can be counted separately, any outside signal makes the step smaller than the speed, and a free particle would gradually slow down. So the draft should be held and reworked, not sent to Thomas as it stands.
+
+---
+
+## Patch 4414 — second critic return on the revision (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES.** Two changes are needed: one is a definition the result depends on, the other is a logical error in the dilution exits. The physics checks out.
+
+**Previous HOLD items, checked one by one**
+1. **Geometry:** fixed. The emission point is now kept separate from the current landing GP. Even emission (U) gives exactly v with the excess from the rear. Headlight emission (H) gives about v/3 at low speed (0.034 at v = 0.1), rising to 0.63 at v = 0.9; "about v/3" is accurate only at low v.
+2. **Sign convention:** stated. The founder's "rear minus front" gives a forward step; AP-4's V_i = E + S payload direction gives a backward step. The conflict is tied to CONJ-FP-1 Condition A.
+3. **Attribution:** correct. The automaton1_charter.md for Patch 2732 does carry the founder-confirmed rule d = (|V_i|/SSV_abs)·PSR_eff.
+4. **Dilution as the gating obstacle:** added (§4, script part 2), but see Required change 2.
+5. **Headlight question:** withdrawn. §7 now asks only about dilution.
+6. **γ by-product:** withdrawn (§3).
+7. **The founder's DP-arc point:** represented fairly (§5). It now separates DP-arcs that move with the CP from at-rest DPs that the CP's passage organizes.
+8. **D-9 entry:** not yet in todolist.md (grep finds no 4414). It must go in at commit, covering every §6 item, with `code/deferral_gate.py` run before the patch.
+
+**Monte Carlo physics: verified**
+- **Emission-time root:** algebra checked. t_e = 2(r + v·Px)/(v² − 1) is the correct negative root, and the reflection time −r − t_e stays positive.
+- **Weights:** emission density × 1/re² × 1/(1 − v·n_e·x) × 1/r² is correct. The headlight density 1/(γ²(1 − v·n_e·x)²) is the correct aberration factor; the overall time-dilation factor cancels in the ratio.
+- **Arrival direction:** each return arrives from P's direction. Sampling reflectors evenly through the volume is correct.
+- **Independent check:** I ran a separate fixed-reflector quadrature. It gives 0.0100, 0.1000, 0.3000, 0.5000 and 0.9000 at v = 0.01, 0.1, 0.3, 0.5 and 0.9, so "exactly v at every speed" holds.
+- **Distance independence:** this follows from scale invariance; the second shell in the script agrees.
+
+**Required changes**
+1. **Say what "rear minus front" means.** The exact-v result holds only for the x-projected vector sum, Σw·cosθ / Σw (the SSV_net component, consistent with |V_i| in the 2732 rule). If his words are read as raw counts, rear hemisphere minus front hemisphere, my quadrature gives about 1.5v (0.149 at v = 0.1, 0.668 at v = 0.5). On that reading the CP would speed up, not coast. §3 (table header and text), §8 and the script header must say "the projected net (vector sum) over the total". Add one line saying the hemisphere-count reading overshoots. Since this is his own rule, it may deserve a clause in the §7 question or a follow-up.
+2. **Exit (b) is not an exit.** By §4's own equation v_{n+1} = s·v_n, any self share s < 1 decays geometrically. A share that is merely overwhelming only slows the decay; over the very large number of Moments per second the CP still stops. Either remove (b), or restate it as "outside DI-bits enter neither SSV_net nor the CP's normalization" (which is exit (a)), or make it exact (s = 1). Fix the matching wording in §8 ("works exactly only if…") and in the script's "(or dominate)" line.
+
+**Minor notes**
+- The script uses only Monte Carlo. Its v = 0.01 row reads 0.0087, which is noise of about ±0.001. Either add the quadrature check to the script (the draft says the geometry was "checked two independent ways") or print the error bars and drop "exactly" from the Monte Carlo printout.
+- "Never reaching light speed" is empty under exact coasting, since v is simply kept. Consider "preserves any v < 1".
+- §4 writes "·PSR"; the charter writes PSR_eff. Use the charter's symbol.
+- The review file's name says session 242 but is dated 2026-10-01, while the patch is dated 22 Oct. Confirm that is the intended file.
+- The founder's voice file is verbatim, attributed correctly, and does not overclaim.
+
+**Plain Language summary:** The corrected calculation is right. If a moving particle steers by the vector difference of its own returning signals, it keeps exactly its speed. Two fixes remain. First, the paper must say "vector difference", because a plain count of rear signals minus front signals would make the particle speed up. Second, "the particle's own signals dominate" does not rescue the rule, because any dilution at all makes a free particle slow down over time.
+
+---
+
+## Claude's response to the 4414 returns (not part of the verbatim reports)
+
+- **First return (HOLD), all eight taken in:** consistent geometry (registered even emission gives exactly v with a rear excess; headlight ~v/3); the sign stated (his rear-minus-front forward; AP-4 payload backward; Condition A); attribution corrected (AUTOMATON-1 v/c map, Patch 2732; AP-4's SSV_abs as payload magnitudes; the bounce model is not the registered relay); dilution as the gating obstacle; headlight question withdrawn; γ by-product withdrawn; the DP-arc point represented (co-moving vs at-rest reflectors); D-9 entry filed.
+- **Second return (ACCEPT WITH CHANGES), both taken in:** "rear minus front" defined as the projected vector sum (hemisphere counts give ~1.5v, shown in the script and added to the founder question); exit (b) removed (any s < 1 decays). Minor notes: exact quadrature added to the script; "preserving any speed below light speed"; PSR_eff per the charter. (The review file name keeps its session-start date by convention.)
