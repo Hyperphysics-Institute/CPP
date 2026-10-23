@@ -2814,3 +2814,70 @@ Files: `/root/CPP/series_standard_model/axiom_maturation/4416_fields_orient_mass
 ## Claude's response to the 4416 return (not part of the verbatim report)
 
 All eleven required changes taken in: (1) part 1 described as a symmetry identity, valid for any radial weight, with the coincident-start assumption and real DPs' random internal separation stated; (2) the size ratios dropped, only the x4 versus x2 scaling kept, sample and sign dependence stated; (3) the signed census relabelled a signed scalar (bound-charge potential), a rank-1 vector-sum census added, and a uniform-field run added (part 2); (4) the two AP-4 readings named (P per contribution, V per payload), the split shown to require (P), carried with 4414 item 5; (5) the 4408 quote given in full with the mass-cohort qualifier, the conflict stated plainly, 4408's PSR-with-speed statement set against the B case, B noted as unmodelled, the reconciliation labelled Claude's guess; (6) order counting corrected (field and kinetic energy both second order); (7) founder question rewritten: the 4408/4416 difference asked directly, 'relativity predicts, nuclear tests support'; (8) the literal 'denser sea near mass' reading (4407) given alongside the census reading; (9) Kreuzer (F/Br, ~5e-5, active/passive), Bartlett–van Buren (Al/Fe, 4e-12, centre-of-mass offset) and Singh et al. 2023 stated as composition-difference inferences; MICROSCOPE as passive; (10) §8 and §9 softened; (11) D-9 entry written, with 4415 item (12) dispositions noted. Optional items taken in: WC-DP-SEA-PV labelled a convention, Singh et al. 2023, the softening comment, 4415 item (5) 'answered for the field's own strength'.
+
+---
+
+## Patch 4417 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script and every number checks: 0.5 J gives 5.6e-18 kg; 1 T over a litre is 398 J, or 4.4e-15 kg; for the shell, U/c² = 0.500 m_e and (4/3)U/c² = 0.667 m_e, the same as 2471's m_EM = μ0q²/6πa. The founder never mentions gravity, and the draft correctly marks gravity as Claude's reading. The gaps are in the wording, the history, and the claimed resolution.
+
+**Required changes**
+
+1. **"In proportion" is not his phrase.** He wrote "real (as per the amount of separation of the DPs)". §1, the title, §4 ("has to mean the square… Read as linear…") and §8 all build a correction on "proportion", a word he did not use. "As per the amount" sets no power law.
+   - Quote his actual words.
+   - Present the square law as the specification relativity requires, not as a correction of his words.
+   - The founders_voice file title, which Claude wrote, has the same "in Proportion" wording and should be fixed too.
+
+2. **The resolution (§3, §8) does not hold as written. It reintroduces an SSV_abs change.**
+   - In CPP, gravity is a raised SSV_abs (K = 1 + 2U). If realized DPs pull as mass, they must raise SSV_abs by exactly their energy/c². So the capacitor does raise SSV_abs, by a second-order, G-sized amount (about 3e-39, far too small to slow light measurably).
+   - His phrase "fermionic extra charges in space" literally points the same way: realized DPs counting as charges.
+   - So "neither adds CPs" is Claude's claim, not his. It also rewrites 4408, where the hot ball adds "CP enrollment" and "increased SSV_abs".
+   - **Fix:** say plainly that 4417 sides with 4408 (organization enrols or realizes DPs). Say that 4416's "not more SSV_abs" survives only at first order, at the field's own strength. Say that this is 4416's labelled scale-distinction guess, now given a carrier.
+   - Add that this second-order rise cannot be the count redistribution in 4416 part 1, which vanishes in a uniform field. It must be a separate mechanism.
+   - Mark this as the convenient branch in §9.
+
+3. **The 4/3 history needs correcting (§5).**
+   - Rohrlich (1960), with Fermi (1922) before him, did not cure 4/3 with stresses. He showed the 4/3 comes from a non-covariant definition of the field's energy and momentum. With a covariant definition the field alone gives U/c². Stresses are still needed for stability (Poincaré 1906). Laue (1911) is the theorem that a closed static system has inertia exactly E/c².
+   - Abraham (1902–03) and Lorentz (1904) found the 4/3 in its longitudinal and transverse forms.
+   - Thomson's 1881 coefficient was wrong. Heaviside (1889) corrected it.
+   - State the two cures separately.
+
+4. **CPP's own coefficient for this is missing.** The SF-6 pin (2496; FP.md and SR.md, around line 282) already computed the sea's back-reaction inertia: κ = (2/3)U_pol/c² for an open cloud, against the Laue coefficient of 1 for closed patterns (Patch 2502 ruling, OPEN-SR-10 caveats).
+   - So in CPP the question is a 2/3 problem, not a 4/3 one. Realized-DP inertia has already been computed once at 2/3, and only closure brings it to 1.
+   - Cite this in §5 and §6, and tie it to 4406 and 4407's owed Laue items.
+
+5. **"GR puts field energy where it sits" (§2, §8) is only half right.**
+   - The energy density is local. But the active gravitational source includes the stresses. A static field has a tension of u along its lines and a pressure of u across them, so it sources about 2u/c² locally between the plates. The plates' mechanical stresses cancel the surplus, and only the integral over the whole closed system is E/c² (Tolman–Laue).
+   - Inertia has the same feature: a moving capacitor's field momentum depends on its orientation (the Trouton–Noble setting).
+   - So "the extra mass is located between the plates" (§4, script part 3) needs this caveat. It is the gravitational counterpart of point 3 and belongs in the §5 test.
+
+6. **The spring identity (§4, part 2) is overstated.**
+   - The toy is algebra, not a check: ε_pol is defined as nq²/k, so the equality holds by construction.
+   - The real content is this. In a linear dielectric, u = ½ε_bare E² + ½E·P, and the spring energy is exactly ½E·P. That spring energy equals the whole field energy ½E·D only if ε_bare = 0, so that D = P.
+   - With ε_bare = 0, Gauss's law forces ρ_free + ρ_bound = 0 everywhere (complete screening), and E is fixed by the springs' balance, not by the charges. That is a strong commitment about the vacuum, not a mild assumption.
+   - Setting realness equal to energy/c² is also assumed, so "the realized mass is exactly that energy over c²" adds nothing beyond E = mc².
+   - Reword "checked in a toy" to "an identity, given ε_bare = 0". In §8, make "exactly" conditional on ε_bare = 0.
+
+7. **The AP-5 D4 citation is a stretch.** D4 (clarified at 3706) is about saturation overflow above the cap, and the clause is inactive below the cap. It says nothing about ordinary field energy being held only in the DPs. Drop it, or say only that D4 is silent on this.
+
+8. **The 2471 citation is overweighted.**
+   - Per-CP unconditional emission as an absolute sum is a one-line provenance note in 2471, from July. AP-4 was ratified later, at Patch 3032. The note can suggest (P) but cannot settle AP-4's reading. Say "suggestive, pre-AP-4" in §3 and §6 item (2).
+   - 2471 records the founder's B correction as energy ∝ v² "via field-energy density, **not via DP speed**". §4 is accurate, but §6's "μ0 from arc inertia" reads the energy as the arcs' kinetic energy, which is what he ruled out. Rephrase the B coefficient as open, without "arc inertia".
+
+9. **Add a founder question on the central point.** None of the three questions asks whether realized DPs count toward SSV_abs. Suggested wording: "Do the partly-real DPs between a charged capacitor's plates count as extra charges in the space, so that they very slightly shorten the PSR there, as a mass does, only far less?" It is a physical picture and it does not lead.
+   - Q1 ("double, or grow by more than that?") is acceptable but leans toward the answer, given §4. It reads better as "How does it change?" with the doubled voltage still stated.
+
+**Optional suggestions**
+
+- §4 says a linear law would show up in "the tests on nuclear electrostatic energy (4416 §5)". Those are gravitational tests. For inertia, cite the direct E = mc² test (Rainville et al. 2005, about 4e-7) and nuclear masses, which include the Coulomb energy.
+- Note that real DPs' random internal separation (4416) makes the square law hold for the ensemble, not for each DP.
+- Under PD-008 (§9), also mark "the symmetry favours the square" as convenient. The symmetry allows the square; it does not favour it.
+- Check that the owed items (the 2/3 vs Laue tie-in, the stress/2u caveat, the SSV_abs-at-second-order commitment) go into todolist.md in the same patch.
+
+Files reviewed: /root/CPP/series_standard_model/axiom_maturation/4417_organized_dps_become_real_mass.md, /root/CPP/series_standard_model/code/4417_organized_dps_become_real_mass.py, /root/CPP/founders_voice/4417_organized_dps_become_real_mass.md, /root/CPP/series_relativity/reasoning/2471.md, /root/CPP/series_standard_model/axiom_maturation/4416_fields_orient_mass_counts.md, /root/CPP/frontier_sectors/FP.md and /root/CPP/frontier_sectors/SR.md (for the SF-6 2/3 coefficient).
+
+## Claude's response to the 4417 return (not part of the verbatim report)
+
+All nine required changes taken in: (1) his words quoted ('as per the amount of separation'); the square law presented as relativity's specification, not a correction; the founders_voice title fixed; (2) §3 rewritten: 4417 sides with 4408; realized DPs that gravitate raise SSV_abs by their energy at second order; 4416's statement kept at first order only; not the part-1 redistribution; marked convenient in §9; (3) the 4/3 history corrected (Heaviside 1889; Abraham, Lorentz; covariant cure Fermi 1922/Rohrlich 1960; Poincaré stresses for stability; Laue 1911); (4) CPP's own 2/3 (2496 scalar toy, demoted at 2880) against Laue's 1 cited and tied to SF-6, CONV-001, 4406/4407; (5) the stress caveat (2u/c² locally; E/c² for the closed whole; Trouton–Noble) added to §2 and script part 3; (6) the spring identity stated as an identity holding only if ε_bare = 0, with its screening consequence; 'exactly' made conditional; (7) the AP-5 D4 citation dropped; (8) 2471 marked suggestive and pre-AP-4; the B coefficient left open, 'arc inertia' dropped; (9) founder question on whether realized DPs count as charges and shorten the PSR added first; Q1 made 'How does it change?'. Optional items taken in: Rainville et al. 2005 and nuclear masses for inertia; ensemble square law; 'the symmetry allows, not favours'; owed items in todolist.
