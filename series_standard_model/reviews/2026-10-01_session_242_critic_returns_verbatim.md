@@ -2424,3 +2424,96 @@ The founder says there is a real fixed background (the lattice). Moving things r
 - **5 taken in:** the observational stake (species and binding independence; preferred-frame bounds; TODO-4364-PREFFRAME) is added.
 - **6 taken in:** the 4412 todolist entry is filed.
 - **Minor notes:** Lorentz–Poincaré as target not result; "each CP's rest frame defines a possible lab"; multi-hop condition added; PD-008 lists all convenient branches.
+
+---
+
+## Patch 4413 — critic return (fresh context), verbatim
+
+**Critic report: Patch 4413 (coasting by timing ratio)**
+
+**Verdict: ACCEPT WITH CHANGES.** The central identity is correct and the reading is worth putting to the founder. But the toy in Part 3 hides a speed dependence the real rule has. The patch also skips a registered clause it conflicts with. Two of its statements, the information claim and the flowing-sea consequence, are wrong as written. I checked everything from /root/CPP, ran the script, and ran my own check at /tmp/claude-0/-home-claude/809b5738-7ea0-5402-b8f6-d8c84894d09f/scratchpad/chk.py. Nothing in the repo was modified.
+
+**Physics checks**
+- **The identity holds.** (t_b − t_f)/(t_b + t_f) = v/c is exact. Here r is the reflector distance at the moment of emission, with fore and aft reflectors equally far away and at rest. The patch should say this.
+- **Time dilation is not a problem.** The ratio has no units, so a common clock rate (the CP's dilated clock or absolute time) cancels.
+- **Under acceleration the readout is not a simple average.** It mixes displacements over two unequal windows: c·t_f = 2r − Δx_f and c·t_b = 2r + Δx_b.
+
+**Required changes**
+
+1. **Part 3 misrepresents the real rule.** I ran the exact rule: each Moment the CP steps by the ratio from returns arriving now (r = 10), with the actual unequal windows.
+   - It does coast and stay stable at v = 0.2 and 0.9, and a kick leaves a lasting change. So Newton I, neutral stability and lasting Δv survive.
+   - At rest, the kick response equals the toy's 2Δx/(W+1) with W = 2r.
+   - But the response falls with speed. Relative to rest it is 0.93 at v = 0.2, 0.61 at 0.5, 0.23 at 0.8 and 0.11 at 0.9. That is close to, but not equal to, 1/γ³ (0.94, 0.65, 0.22, 0.08).
+   - So the coasting rule itself produces a speed-dependent longitudinal inertia. That contradicts §4's statement that the relativistic form "belongs to what the sea stores … not to the coasting rule", and it risks double counting with SF-6 / CONJ-FP-1 debt (d).
+   - Add the exact-window rule to the script, report this, and restate the moving-average model as the low-speed limit only.
+
+2. **The information gap is understated (§4 bullet 2, §6).**
+   - AP-4's payload carries an origin address, not an emission time. A return re-imprinted by a DP carries that DP's address and Moment. With reflectors at every distance, the CP cannot pair fore and aft returns from equal r unless the return also carries its emission Moment and position, or the CP keeps a memory of its emissions.
+   - Either way, once the return carries (x_e, t_e), the CP already has its velocity as (x_now − x_e)/(t_now − t_e). The fore/aft ratio is then one readout among several equivalent ones.
+   - What the mechanism really needs is "the sea echoes the CP's past position back to it". That fits the 7 July ruling that velocity is held in the sea, but only if the memory is in-flight and not in the CP's GP. Otherwise it is carried velocity under another name.
+   - State this plainly. "The timing is in principle available" is an overclaim.
+
+3. **The patch conflicts with R-CP-NO-REST-MASS and the 4404 input, and does not say so.**
+   - The registered clause (axiom-registry, about line 358) reads "Each Moment a CP advances by its SSV_net (V_i)". It also says inertia is the reaction of the DP-arcs (SF-6).
+   - 4404 says "the arcs and separation maintain the constant velocity".
+   - 4413's rule (step = readout + forces) replaces "advances by SSV_net". The patch must name this tension, say whether the readout can be written as part of V_i, and note that adopting it would need a clause restatement. That restatement is the founder's call; it is already owed under todolist 4404.
+
+4. **The flowing-sea consequence is wrong as written (§4 last bullet).** If the reflectors move at u and signals travel at c in the absolute frame, the ratio reads exactly (v − u)/(1 − uv/c²), the relativistic relative velocity (checked numerically).
+   - A CP at rest in the flow reads 0. If it steps by the readout in absolute coordinates, as the rule says, it is not carried. Iterating v → (v − u)/(1 − uv) has no coasting fixed point at v = u.
+   - Being carried needs an added rule: the step is taken in the reflecting DPs' frame. Say so. The inward-sign versus outward-sign point (4402/4409) is then correct, conditional on that rule.
+
+5. **Fixed reflection delays are an observable drag in the absolute frame (Part 2).** A fixed delay is not just a bias. It slows every CP relative to the sea, which is a first-order preferred-frame effect that experiments would see. Tie it to TODO-4364-PREFFRAME / 4412 (iv).
+   - Also distinguish it from the founder's 2 Aug words "a one-increment delay in every DP's reflection". That phrase means the fore/aft difference, not a fixed delay per reflection.
+   - Cite his 30 July disavowal of a medium response lag (τ_Sea) as support for immediate reflection.
+
+6. **Fairness about Condition B (§5).**
+   - It is fair to say Condition B kills the force reading and not the timing reading.
+   - Add that Condition B and the automaton moving-source test still stand as tests of the force reading. Under LW the field of a moving source still encodes v, so the information exists, which supports the proposal.
+   - CONJ-FP-1's marginality condition C·PSR = SSV_abs becomes moot under the timing reading. Say so instead of leaving it implied.
+   - The description of the 2 Aug ruling is fair, though his own phrase was "storage of inertial volume". Quote it.
+
+7. **Species independence has a hidden premise (Condition 2).** The reflectors must be at rest in the absolute frame. If a CP's nearest reflectors are its own polarized cloud, and that polarization (or the DP displacements) moves with it, the readout is biased toward 0, with species-dependent size.
+   - Name this as a gap.
+   - If the window W is set by the PSR (DI-bits do not go beyond the PSR, per the R-DIBIT rulings), the coasting inertia would be the same for every CP and would depend on location (smaller where the PSR shrinks in a gravity well). Say this beside the scaling remark.
+   - The scaling remark itself (W ∝ cloud size, ZBW radius ∝ 1/m, so inertia scales the wrong way) is correct.
+
+8. **The founder question (§7) is leading and incomplete.** It offers a single option and leaves out that the answer would amend "advances by SSV_net" and his 4404 DP-arc storage picture. Reframe it as a physical-picture choice:
+   - (a) the imbalance pushes (the force reading, dead under LW);
+   - (b) the returns tell the CP its speed (timing);
+   - (c) the DP-arcs and separation store the velocity (4404).
+   - Add one physical sub-question: does a returning DI-bit carry the Moment and place the CP sent it from, or must the CP remember?
+
+9. **D-9.** There is no 4413 entry in todolist.md. The draft defers several things: §6's five open items, the scaling relation "is owed", the "Carried" line and the CONJ.md annotation.
+   - File a 4413 entry with those plus items 1–7 above.
+   - Update the 4412 entry: mark (i) and (ii) as "addressed by proposal 4413, pending founder answer", not closed.
+   - Run code/deferral_gate.py.
+
+**Minor notes**
+- Part 4 of the script never uses the coasting rule; it only adds the forces. Label it as an illustration.
+- Returns arrive in whole Moments, which limits the readout's resolution to about 1/(4r). Worth one line, together with the question of sub-GP steps.
+- In the toy, the second-largest root is 0.96, so transients ring for a long time. That is harmless.
+- Name the absolute-frame definition of r in §2.
+- The script calls the back time t_a; the text calls it t_b. Make them match.
+
+**Plain language**
+The patch's key idea holds up. A moving particle hears echoes from the sea sooner ahead than behind, and a simple comparison of the two echo times gives its speed exactly, for any particle at any speed. So a particle that steps by what its echoes say keeps coasting and never reaches light speed. Three things need fixing before it goes to Thomas:
+- The simple model hides the fact that the exact rule makes a fast particle harder to push, which the patch says comes from elsewhere.
+- The particle can only compare echo times if the echoes record when they were sent, or if it remembers. That is really "the sea echoes your past position back to you", which should be said plainly.
+- The proposal quietly replaces a registered rule ("a CP advances by its SSV_net"), and its gravity consequence needs one extra assumption.
+
+The question to Thomas should give him the three pictures to choose from, not just one.
+
+---
+
+## Claude's response to the 4413 return (not part of the verbatim report)
+
+- **1 taken in:** the exact-window rule is added to the script (part 5) and reported: coasting and neutral stability hold; the kick response falls with speed, close to 1/γ³; the moving-average toy is the low-speed limit. A short r-convergence check (r = 5, 20) did not settle at v = 0.9; stated.
+- **2 taken in:** the information gap is stated plainly (AP-4 carries an origin, not an emission time; the mechanism needs the sea to echo the CP's past position; memory in the sea, not the GP).
+- **3 taken in:** the conflict with R-CP-NO-REST-MASS ("advances by its SSV_net") and 4404 is named; restatement is the founder's call.
+- **4 taken in:** the flowing-sea consequence is corrected ((v − u)/(1 − uv); carried only with an added step-in-reflector-frame rule); script part 6.
+- **5 taken in:** a fixed reflection delay is tied to preferred-frame bounds; his 30 July disavowal and his 2 Aug phrase distinguished.
+- **6 taken in:** Condition B and the automaton test stand for the force reading; marginality becomes unnecessary; his "storage of inertial volume" quoted.
+- **7 taken in:** the self-cloud reflector premise and the PSR-window alternative are stated.
+- **8 taken in:** the founder question offers (a), (b), (c) and the echo sub-question.
+- **9 taken in:** the 4413 todolist entry is filed; 4412 (i) and (ii) marked as addressed by proposal, pending answer.
+- **Minor notes:** Part 4 labelled as illustration; resolution line; r defined at emission; t_b naming unified.
