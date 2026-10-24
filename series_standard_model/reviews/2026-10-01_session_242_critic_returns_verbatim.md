@@ -3468,3 +3468,54 @@ The founder question also nudges toward a yes and should be asked neutrally.
 ## Claude's response to the 4426 return (not part of the verbatim report)
 
 All eight taken in: (1) the false equipotential claim deleted; part 2 now computes fixed-potential surfaces (along unchanged, across ×γ, volume ×γ²); the core contraction stated as an input; (2) his 'the geometry grows' kept literally, with the computed counterpart; the 'content grows, volume shrinks' reading withdrawn; title, §3, §7 restated; (3) the 4416 PSR-isotropy tension stated (§4), carried and asked; (4) the binding column labelled imported and an identity, with the stress-energy model dependence (Schwinger 1983, 4/3 U0); (5) the covariant Fermi/Rohrlich cure added alongside stresses; title and §7 softened; (6) founder questions neutral (PSR isotropy; what keeps CP and cloud as one, and whether the cloud's SSV_abs includes more than the DPs); (7) the LW census conditional (1/R weight, single hop) and the square law stated as assumed; (8) D-9 entry written. Optional: 2/3 (scalar toy) vs 4/3 (vector field) noted as different quantities.
+
+---
+
+## Patch 4427 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES.** The physics is right. Part 1 is the problem: its link to the founder's statement is read too strongly, and it mixes up two different effects (the first-order front/back shift and the second-order contraction). The §6 question also needs to be rewritten.
+
+**What I checked (script run, no files edited)**
+- The energy-density formula is correct. For a uniformly moving charge, |B|² = v² sin²θ |E|². This gives (E²+B²)/E0² = (1−v²)²(1+v² sin²θ)/(1−v² sin²θ)³, and all the table values reproduce.
+- The band-share integrand is correct. Density goes as coef/r⁴, so ∫ r² dr from r_core(θ) to ∞ gives coef/r_core. As an independent check, the total field energy outside the contracted core equals γ(1+v²/3) to 1e-11 at v = 0.3, 0.6 and 0.9, which matches 4426.
+- The pancake conflict is real and fairly stated. The fast-charge field is concentrated across the motion (Weizsäcker–Williams, short transverse pulses at beam pickups). The 2015 citation is already flagged "to be verified"; leave that flag in place.
+
+**Required changes**
+
+1. **Fix the "γ² at 90°" factor (§4).** The density at 90° rises as (1+v²)/(1−v²) = γ²(1+v²), which approaches 2γ² for a fast charge. It is not γ². The γ⁻⁴ along the axis is correct.
+
+2. **Separate the two effects in Part 1 (§2, §7).**
+   - The 1−v / 1+v reach is first order. It is opposite in sign ahead and behind, and it goes as cosθ, so it is not "maximum only along the axis". It is still −0.212 at 45° for v = 0.3. It also has a nonzero second-order shortening across (−0.046).
+   - Relativistic contraction is the opposite pattern. It is second order (1−1/γ), the same ahead and behind, and exactly zero across.
+   - So the sentences "fits the along-only contraction of 4409–4410" and "which is what relativity's front-to-back-only contraction needs" join two different things. Ironically, "zero at 90°, maximum when collinear" describes the contraction pattern better than the shifted sphere does.
+   - Say which one is being matched. The description "first order along the axis, second order across" is accurate only for the Doppler-like part.
+
+3. **Withdraw "answers 4426 Q1" and soften the 4416 claim.**
+   - His message is about energy and organization ("the energy (organization of the DP sea…)", "totality of the energy stored"). It does not mention the PSR. At most, Q1 is answered by inference: if his directional SSV_abs change is combined with 4416's rule that SSV_abs shrinks the PSR, the PSR shrinks along the motion. Say that, and mark it as an inference, not his answer.
+   - "Resolves the 4416 tension toward directional" is acceptable as a reading of his words. But 4426 §4 already noted that a directional SSV_abs change conflicts with 4416's SSV_abs/SSV_net split. Record that cost, and keep the tension open rather than resolved.
+   - Move Q1 from "Answered" to "open (inferred)" in §5 and §8.
+
+4. **Add the readings under which both statements can be true (§4).**
+   - **(a) First order.** The energy density has no first-order term in v anywhere, because it is even in v. So a first-order front/back change in the organization, maximal along the axis and zero at 90°, adds no energy at first order and can sit alongside the pancake. The total increase is second order.
+     - At second order the density goes as ≈ 1 + v²(4 sin²θ − 2). That is −2v² along the axis, +2v² across, and zero at 45°. So for stored energy, "zero at 90°" fails at every order.
+   - **(b) Orientation.** "The angle of the axis between the locus of the velocity and the DP" can be read as the orientation of each DP's own separation axis relative to v, rather than where the DP sits. The arc-separation of a comoving DP aligned with v contracts by 1/γ, and one at 90° is unchanged. That is exactly his "zero at 90°, maximum collinear", and it is consistent with the pancake: those are local changes in each DP's spacing, not where the energy sits in space.
+   - Reading (b) is probably the strongest charitable reading, and the draft misses it.
+
+5. **Rewrite the §6 question.** As written it is a textbook quiz (the beside-the-path detector at closest approach). §7 then gives the answer ("detectors beside a beam see a sharp sideways pulse"), so §7 answers it in advance. It also does not ask what §5 says is open, namely which quantity he means. Replace it with a disambiguating physical picture, for example:
+   > A fast electron passes two DPs at the same distance, one straight ahead on its path and one beside it, and a third DP that is beside the path but has its separation axis pointed along the motion. Which has its arc-separation changed most, and is the DP ahead changed the same way as one behind?
+
+   Then cut §7's "that answers my question" and the detector sentence, or present the detector point as background with no question attached.
+
+**Optional notes**
+- The 1/(1−n·v) arrival-rate factor uses the retarded direction n, not the present-position angle used in Part 2. Mention this so readers do not mix the two angle conventions.
+- The band shares depend on the contracted-core cutoff, but the conclusion does not change with it. One clause noting this would be enough.
+- The headline is very long and builds in the "answers 4426 PSR question" over-read. Trim it to match change 3.
+- Thomas's quoted words were checked against the founder file and are verbatim.
+
+Relevant files: /root/CPP/series_standard_model/axiom_maturation/4427_where_the_moving_cloud_holds_its_energy.md, /root/CPP/series_standard_model/code/4427_where_the_moving_cloud_holds_its_energy.py, /root/CPP/founders_voice/4427_ssv_abs_modification_by_angle_max_colinear.md, /root/CPP/series_standard_model/axiom_maturation/4426_the_cloud_grows_with_ssv_abs.md
+
+**Plain Language:** The calculations are correct. A fast charge does store its field energy in a flat disc across its direction of travel. But the write-up claims too much when it says Thomas's message answered the earlier question about the electron's PSR, and it treats two different effects as one. It also misses the most charitable reading of his words: he may mean how each DP is squeezed according to which way it points, which agrees with relativity. The question to him should ask which meaning he intends, and the "answer" section should not give the reply in advance.
+
+## Claude's response to the 4427 return (not part of the verbatim report)
+
+All five taken in: (1) the 90° factor corrected to γ²(1+v²); (2) the first-order sending-sphere shift (cosθ, opposite ahead/behind, small second-order shortening across) separated from the second-order contraction (same ahead/behind, zero across); (3) 'answers 4426 Q1' withdrawn: inferred only, kept open; the 4416 tension narrowed, not resolved, with its cost (directional SSV_abs vs the undirected count) recorded; (4) readings added: (a) first-order front/back change with no first-order energy, with the second-order density v²(4 sin²θ − 2) shown (script part 3a); (b) the orientation reading — each DP's axis contracted by its angle to the motion, zero at 90°, maximum collinear, consistent with the pancake (script part 3b); (5) founder question replaced by the three-DP disambiguating picture; §7's pre-answer removed. Optional: retarded vs present angle noted; core-cutoff note; headline trimmed.
