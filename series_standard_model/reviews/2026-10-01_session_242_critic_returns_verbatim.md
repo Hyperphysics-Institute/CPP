@@ -3519,3 +3519,57 @@ Relevant files: /root/CPP/series_standard_model/axiom_maturation/4427_where_the_
 ## Claude's response to the 4427 return (not part of the verbatim report)
 
 All five taken in: (1) the 90° factor corrected to γ²(1+v²); (2) the first-order sending-sphere shift (cosθ, opposite ahead/behind, small second-order shortening across) separated from the second-order contraction (same ahead/behind, zero across); (3) 'answers 4426 Q1' withdrawn: inferred only, kept open; the 4416 tension narrowed, not resolved, with its cost (directional SSV_abs vs the undirected count) recorded; (4) readings added: (a) first-order front/back change with no first-order energy, with the second-order density v²(4 sin²θ − 2) shown (script part 3a); (b) the orientation reading — each DP's axis contracted by its angle to the motion, zero at 90°, maximum collinear, consistent with the pancake (script part 3b); (5) founder question replaced by the three-DP disambiguating picture; §7's pre-answer removed. Optional: retarded vs present angle noted; core-cutoff note; headline trimmed.
+
+---
+
+## Patch 4428 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script (about 1 minute). Its numbers match the closed forms: electric energy U_E = γU₀(1 − v²/3), magnetic energy U_B = (2/3)γU₀v², total γU₀(1 + v²/3). For example, at v = 0.9 these give 0.837 and 0.619; the script gives 0.835 and 0.618, the gap being its stated ~0.25% cutoff.
+
+**Physics check (item 1)**
+- E²/E₀² = (1−v²)²/(1−v² sin²θ)³ and B² = v² sin²θ E² are correct.
+- Forward ×γ⁻⁴, side ×γ², and side arcs ×v²γ² are correct.
+- E² and B² are largest at 90° for every v > 0, since the denominator shrinks steadily as sin²θ grows.
+- E and B energies do become equal as v → 1: U_B/U_E = (2/3)v²/(1 − v²/3) → 1.
+- Low-speed U_B ≈ (2/3)U₀v² = ½(4/3 U₀)v² is correct. It is the historical Thomson/Abraham "electromagnetic mass from magnetic energy."
+
+**Required changes**
+1. **§3, "the arcs are where the field's kinetic energy is stored," is incomplete and overstated.** At low speed the total field energy rises by (5/6)U₀v². The arcs take (2/3)U₀v² of that. The separation also rises, by (1/6)U₀v², since γ(1 − v²/3) ≈ 1 + v²/6. Your own table shows this (separation 0.499 → 0.507 at v = 0.3). Suggested wording: the arcs hold about 80% of the low-speed field kinetic energy, and that part matches ½(4/3 U₀)v², the momentum-based mass. The energy-based mass is (5/3)U₀.
+   - The classical "4/3 problem" is this mismatch: (5/3)U₀ from energy against (4/3)U₀ from momentum, or equivalently γ(1 + v²/3) against γ. It is not that "the arcs carry the 4/3." Please reword how §3 links this to the mass-shell problem of 4426.
+2. **The 4427 reconciliation goes too far in two places.**
+   - (a) His clarification, that "the angle" is the line from the CP out to each DP, picks 4427's *position* reading. It rules out reading (b), the orientation of each DP's own axis, which 4427 said "agrees exactly." Say so plainly.
+   - (b) His 4427 message explicitly called the angle-dependent quantity "the energy (organization… as DP arc-separation)." Today he places the energy to the side. A plain alternative to your reconciliation is that he has revised the 4427 statement. Name that alternative alongside Claude's "PSR-modification" reading.
+   - "Unchanged at 90°" is not in his 4428 message; it is exactly what §5 asks him. So 4427 item 2 cannot be listed as "Closed" (§4). Mark it "provisionally answered, pending §5," or tie the closure to his answer to §5.
+3. **§2, "his forward PSR shortened by the Lorentz factor *is* 4410's along-the-motion contraction":** soften to "matches" or "corresponds to." 4410 is about a moving crystal (matter) shortening along its motion. Equating it with the PSR (a sea spacing) is Claude's identification, and it should be marked as such in §7 PD-008.
+4. **"Every element of his answer appears" (§2):** limit this to the parts of his answer that describe field energy, and add one qualifier. "Stored largely to the side" holds strongly only at high speed; at low v the electric energy is nearly the same in all directions. The other matches stand:
+   - greatest separation at the side ↔ E² largest at 90°;
+   - most rapid arc differential ↔ B largest at 90°;
+   - no arc storage forward ↔ B = 0 on the axis;
+   - some forward separation ↔ E reduced ×γ⁻⁴ but not zero.
+
+   The PSR shortening and the "radial angle" are separate claims that the field mapping does not test.
+5. **§6, "I think it's exactly right":** this does not sit well with the conditions in §7. Soften it to "it matches the moving charge's field point by point, under the separation↔E², arcs↔B² mapping." Also mention briefly that it supersedes the 4427 placement.
+
+**Items checked that are fine**
+- **Item 2, the mapping:** it is fairly grounded. 4416 reads "A stronger E or B field creates more SSV_net… because of separation or arcs," and the order supports E↔separation, B↔arcs. Extending that to the energy densities E²/8π and B²/8π is Claude's step, and it is marked as Claude's in §4 and §7.
+- **Item 5, the question in §5:** it is physical, non-leading and two-sided. It does essentially re-ask 4426 question 1. Consider noting that, and that relativity predicts no change across the motion, so a "changes" answer would be informative either way.
+
+**Optional notes**
+- Script part 1 only evaluates the formulas, so it confirms nothing on its own. Consider printing the analytic split γU₀(1−v²/3) and (2/3)γU₀v² beside the integrals, plus the low-v ratio U_B/(total − U₀) → 4/5, which supports change 1.
+- The equal split as v → 1 depends on the core-cutoff convention. It is fine as stated, but could be noted.
+- The 4416 tension (an undirected PSR change against a forward-only shortening) is correctly left open.
+
+Files reviewed:
+- /root/CPP/series_standard_model/axiom_maturation/4428_separation_and_arcs_as_the_two_field_energies.md
+- /root/CPP/series_standard_model/code/4428_separation_and_arcs.py
+- /root/CPP/founders_voice/4428_energy_stored_to_the_side_no_arcs_forward.md
+- /root/CPP/founders_voice/4427_ssv_abs_modification_by_angle_max_colinear.md
+- /root/CPP/founders_voice/4416_mu_epsilon_from_ssv_abs_fields_orient_not_add.md
+
+Plain Language: The physics in 4428 is correct. Two claims go further than the evidence: that the "arcs" hold all of the field's motion energy (about a fifth sits in the "separation"), and that the earlier 4427 disagreement is settled (it rests on Claude's reading and should wait for the founder's answer). Fix those and soften a few "exactly" phrasings, and it can go in.
+
+## Claude's response to the 4428 return (not part of the verbatim report)
+
+All five taken in: (1) the arcs hold four-fifths of the low-speed field kinetic energy (separation one-fifth); the 4/3 problem restated as (5/3)U0 from energy vs (4/3)U0 from momentum (script part 3 prints the closed forms and the 4/5 share); (2) his clarification stated as picking the position reading and ruling out the orientation reading; 'he revised 4427' named alongside Claude's PSR reading; 4427 item 2 marked provisionally answered pending §5; (3) 'is 4410's contraction' softened to 'corresponds to', marked as Claude's identification; (4) 'every element' limited to the field-energy parts, with the low-speed qualifier; PSR shortening and radial angle noted as untested by the mapping; (5) §6 softened and noted as superseding the 4427 placement. Optional: closed forms printed; cutoff-convention note; §5 noted as re-asking 4426 Q1.
