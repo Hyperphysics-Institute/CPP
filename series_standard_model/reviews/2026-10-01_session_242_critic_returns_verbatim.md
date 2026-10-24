@@ -3624,3 +3624,58 @@ d. **The M/S reading.** It is a relabelling of 1/γ. The added content, that "S 
 ## Claude's response to the 4429 return (not part of the verbatim report)
 
 All five taken in: (1) 'forward' read as ahead; 'the same behind' and the identification with 4410 marked as Claude's; 4426 Q1 answered ahead and sideways, behind inferred; (2) Michelson–Morley fixes the ratio; 'unchanged across' needs the clock rate (Kennedy–Thorndike); script docstring corrected; (3) the gravity contrast qualified (WC-DP-SEA-PV isotropic convention; 4409's river is directional; the K^(−1/2) vs 1/K mismatch noted); 'one rule' softened; (4) 4427 item 2 kept open as 'consistent, not confirmed'; (5) D-9 entry written. Optional: the recommended founder question (behind the electron) asked; the sending-sphere shift vs contraction distinction noted; 4421's item cited by name; whose S sets the PSR flagged.
+
+---
+
+## Patch 4430 — critic return (fresh context), verbatim
+
+**Verdict:** ACCEPT WITH CHANGES
+
+I edited no files. `todolist.md` currently has no 4430 entry and no R-MOVING-PSR. I assume the patch adds them; required change 5 covers this.
+
+**Required changes**
+
+1. **§1: give the reasons for the reading, and record the literal alternative.** Reading "the SSV_abs is reduced front and rear" as "the PSR is reduced" is fair, but at present it rests on a single parenthetical. State the actual grounds:
+   - His "yes, as you noted" answers a question that was only about the PSR behind.
+   - Read literally, the sentence is circular ("the SSV_abs … is based upon the SSV_abs of the moving CP").
+   - Taken literally, it fights 4428. By 4416, less SSV_abs gives a longer PSR, which contradicts his "forward shrinks by the Lorentz factor".
+
+   Then add that a coherent literal reading also exists. The CP's own field contribution (its SSV) could be reduced fore and aft compared with the sides. That fits his 4428 "energy stored largely to the side, no DP-arc storage forward", and it matches relativity's field compression toward the transverse plane. On that reading it is a statement about the field, not the PSR. It does not threaten the shortening only because his clause puts what sets the PSR at the CP's own GP, not in the field ahead and behind. Record this as consistent but not what was asked. The "yes" about the shortening behind is unambiguous and stands.
+
+2. **Title and §3: "answers whose S" overclaims.** His answer says where S is read (the CP's GP each Moment). It does not say whose DI-bits count. His wording, "the value at the GP upon which it is at each Moment", is close to his 4415 totality wording ("affected by the totality of DI-bits arriving at the GP it is on, each Moment"). Read naturally, it is the totality, which is the very branch §3 then shows fails. So:
+   - Rewrite the title and §3 to say his answer locates S, and that membership is still open.
+   - State openly that "it must be the CP's own share" is Claude's inference, going against the most natural reading of his words and his 4415 acceptance.
+
+3. **§3: present "dominated by the sea background" as the 4425 §4.1 argument, not as an established fact.** The step is sound: if S were the totality and the sea's share is large and does not depend on speed, S/M cannot reach γ. But nowhere in the repo has the sea's share at a GP been quantified against the CP's own. Write it as "if the sea's share is comparable or larger (4425 §4.1)…". The tie to 4425 condition 1 is correct and is the patch's most useful point.
+
+4. **§8 PD-008: mark the convenient branch.** "S is the CP's own organized share" is the branch that rescues the M/S rule (Claude's candidate from 4429) and the 4425 step. It should be listed under the convenient branches, not left out of the "Not overclaimed" line.
+
+5. **D-9: the todolist entry.** `todolist.md` needs a 4430 entry before the patch goes in, and `code/deferral_gate.py` should be run. The entry should list:
+   - R-MOVING-PSR (his wording needed);
+   - membership at the CP's GP, now governing both the step and the PSR;
+   - the relay producing the oblate PSR;
+   - the clock rate for "unchanged across" (Kennedy–Thorndike);
+   - the literal field reading from change 1;
+   - carried 4429 items 2–7, with that entry's (3) narrowed.
+
+6. **§6: ask the membership question rather than skip it, or give a real reason for not asking.** It has never been put to him directly. 4414 asked, and he chose totality in 4415; 4425 only flagged it. It now decides two results, and his own words point the other way from Claude's conclusion. Per PD-006 and PD-008, this is exactly the kind of physics question in a physical picture that should go to him. Suggested wording: "When a fast electron sits on a GP, most of the DI-bits arriving there come from the resting Sea around it, and those don't change with the electron's speed. Is the PSR shortening set by all of them, or only by the electron's own share?"
+
+   The literal "SSV_abs reduced" ambiguity does not need its own question. Recording it (change 1) is enough, because it does not change the shortening result.
+
+**Answers to the checks**
+
+- **(1) The founder's words.** Treating it as the PSR is fair, and "yes" is clearly about the same shortening behind. The marking is too thin (change 1). Read literally, as the PSR set by a reduced SSV_abs, it contradicts 4416 and 4428. Read literally as the field fore and aft, it is coherent and does not threaten the shortening.
+- **(2) "His stated physics."** Accurate, given the reading in (1): 4428 forward by the Lorentz factor, 4429 unchanged sideways, 4430 the same front and rear. Matching it to 4410's contraction is fairly called "natural" rather than stated. Optionally, add a line in §2 that this rests on the §1 reading.
+- **(3) Whose S.** The logic is right if the sea's share is large, and the link to 4425 condition 1 is right. The flaws are the overclaimed title, the unquantified "dominated" claim, and the inference running against his literal wording (changes 2–4).
+- **(4) Registration.** Not registering is right, and so is listing R-MOVING-PSR as a candidate. The shape depends on a Claude reading of his sentence and has no derivation from the relay.
+- **(5) Founder question.** Skipping the membership question is not appropriate (change 6). Skipping the literal-ambiguity question is.
+- **(6) Missed or overclaimed.** Covered above: the title, PD-008, and the D-9 entry.
+
+**Optional notes**
+
+- §2 could repeat 4429's distinction: his 4409 picture (front compressed, rear elongated) is the first-order shift of the sending sphere, while this result is the second-order contraction. That way "front and rear alike" is not read as replacing 4409.
+- Plain Language §7: soften "He also said what sets it" to "He also said where it is read".
+
+## Claude's response to the 4430 return (not part of the verbatim report)
+
+All six taken in: (1) three grounds given for the PSR reading, and the coherent literal field reading recorded; (2) title and §3: he located S; membership open; 'the CP's own share' marked as Claude's inference against the natural reading and his 4415; (3) the sea's dominance stated conditionally (4425 §4.1; not quantified); (4) the convenient branch marked; (5) D-9 entry written with R-MOVING-PSR; (6) the membership question asked in a physical picture. Optional: the 4409 first-order shift vs second-order contraction distinction added; Plain Language softened to 'where it is read'.
