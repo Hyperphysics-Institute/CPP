@@ -3573,3 +3573,54 @@ Plain Language: The physics in 4428 is correct. Two claims go further than the e
 ## Claude's response to the 4428 return (not part of the verbatim report)
 
 All five taken in: (1) the arcs hold four-fifths of the low-speed field kinetic energy (separation one-fifth); the 4/3 problem restated as (5/3)U0 from energy vs (4/3)U0 from momentum (script part 3 prints the closed forms and the 4/5 share); (2) his clarification stated as picking the position reading and ruling out the orientation reading; 'he revised 4427' named alongside Claude's PSR reading; 4427 item 2 marked provisionally answered pending §5; (3) 'is 4410's contraction' softened to 'corresponds to', marked as Claude's identification; (4) 'every element' limited to the field-energy parts, with the low-speed qualifier; PSR shortening and radial angle noted as untested by the mapping; (5) §6 softened and noted as superseding the 4427 placement. Optional: closed forms printed; cutoff-convention note; §5 noted as re-asking 4426 Q1.
+
+---
+
+## Patch 4429 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script and the arithmetic checks out. Round trips: along 2(L/γ)/(1−v²) and across 2L/√(1−v²) both give 2.0966, 2.5000 and 4.5883 at v = 0.3, 0.6 and 0.9. If the PSR shrank by 1/γ sideways as well, the across trip would be 2L at every speed. The M/S rule is correct and is fairly marked as an identity and as Claude's.
+
+**Required changes**
+
+1. **"Forward" is not the same as "along the motion". §2's "state exactly" overclaims.**
+   - In his 4428 message, the very next bullet says "whether forward, side, rear or intermediate angle". He separates forward from rear in the same breath, so "forward" most naturally means ahead.
+   - The row label "forward (along the motion)" is Claude's gloss in 4428. 4428 §2 and §7 also marked "forward PSR shortening = 4410's contraction" as *Claude's identification*.
+   - In 4409 he described the moving CP as "compressed at the front and elongated at the rear". That was the sending sphere, but it shows that his picture can treat front and rear differently.
+   - Fix: replace "His 4428 and 4429 answers state exactly that shape" with something like: "He states shortening by the Lorentz factor ahead and no change sideways. That it is the same behind (the symmetric oblate PSR of 4410), and that it is the same contraction as 4410's, are Claude's reading." Make the same correction to the Plain Language "exactly the shape relativity needs" and to 4426 Q1 "answered", which should say "answered ahead and sideways; behind inferred".
+
+2. **The Michelson–Morley wording.**
+   - The null result fixes only the *ratio* of along to across: 1/γ along relative to across. It does not by itself fix "unchanged across". An overall factor k (k/γ along, k across) also gives equal round trips. The absolute transverse scale needs the clock rate as well (4409 §3 says this: "with clocks slowing by γ"), which is the Kennedy–Thorndike constraint.
+   - The "if it shrank sideways too" comparison is correct as stated, because it keeps 1/γ along and makes the across arm 1/γ as well. It does not depend on clocks, because one clock at the beam splitter times both arms.
+   - But the script docstring says "any other across-factor breaks it unless clocks change too". That is wrong: a clock-rate change scales both arms equally and cannot rescue a ratio mismatch. What any other across-factor does break is the *absolute* period (Kennedy–Thorndike), unless the clock rate changes to match.
+   - Fix the docstring. Add one sentence to §2: "Michelson–Morley fixes the ratio; 'unchanged across' additionally needs the clock rate (4408/4409)."
+
+3. **The gravity contrast needs to say which coordinates it is in (§3, §4, Plain Language).**
+   - "Gravity shrinks the PSR all round" is true under WC-DP-SEA-PV. That is a *convention*, in isotropic coordinates of the absolute frame, with PSR grid ∝ 1/K. Clocks and crystals ∝ K^(−1/2) also change there, and the PSR and the ruler change by *different* factors (1/K vs K^(−1/2)). That difference itself sits uneasily with the 4421 one-ruler picture the patch leans on.
+   - 4397 and 4409 gave gravity locally the *directional* shifted-sphere (river) geometry along the line to the mass, the same geometry as motion.
+   - So "isotropic vs directional" depends on the slicing and is not an invariant distinction. Fix: qualify it as "under WC-DP-SEA-PV (isotropic convention); in 4409's river picture gravity is also directional, along the radial line".
+   - Soften §4 "gravity's isotropic shortening … as two cases of one rule" to "whether the M/S rule and gravity's shortening are one rule". The M/S rule as written has no net-direction term for gravity to use.
+
+4. **Do not close 4427 item 2.**
+   - He answered a PSR question. He never said his 4427 "SSV_abs modification zero at 90°, max collinear" *meant* the PSR.
+   - 4428 left two readings: he revised it, or it is a PSR statement. His 4429 answer is consistent with the PSR reading but does not choose between them. On a literal reading, "SSV_abs modification" still conflicts with 4416's undirected SSV_abs, which is the very tension §3 says is only narrowed.
+   - Mark it "consistent with the PSR reading (Claude's); not confirmed", and keep it carried.
+
+5. **The todolist entry (D-9).** `todolist.md` has no 4429 entry yet. Add one in the same patch, carrying: item 1's behind-the-electron question (or a founder question, see note a); 4421 item 3; the M/S candidate; 4428 items 2, 3, 5, 6, 7; and 4427 item 2 if it stays open (change 4). Run `deferral_gate.py` before the format-patch.
+
+**Optional notes**
+
+a. **Skipping the founder question.** It is defensible, but change 1 opens a real physical-picture question: "Directly behind a fast electron, is the PSR shortened by the same Lorentz factor as ahead, or different?" It is cheap to ask and it settles the symmetric oblate shape. I recommend asking it rather than skipping.
+
+b. **The M/S rule against 4409's sending-sphere reaches.** There is no conflict, provided the PSR is read as symmetric. The reaches (1−v ahead, 1+v behind) are the first-order emission geometry. The contraction (M/S = 1/γ) is second order and the same ahead and behind, as 4427 §3 already separated. Say this in one line, because his "front compressed, rear elongated" picture invites confusing the two.
+
+c. **4421 item 3.** 4421's owed list uses (a), (b), then unlabelled bullets, so "item 3" is ambiguous. Cite it by name ("the oblate PSR from the relay").
+
+d. **The M/S reading.** It is a relabelling of 1/γ. The added content, that "S rising with speed shortens the PSR", agrees in sign with 4416's "more SSV_abs shortens the PSR", which is worth a line. But it also implies the CP's own S, not the surrounding sea's, sets the sea's PSR spacing. That question of mechanism (whose PSR is it?) should be flagged.
+
+**Plain Language:** The arithmetic is right. But the founder said the PSR shrinks "forward", and in the same message he distinguishes forward from rear, so the claim that he has stated the full symmetric shape goes beyond his words. The patch also leans on an "all-round" gravity picture that is a coordinate convention, closes an earlier item he never confirmed, and still needs its todolist entry.
+
+## Claude's response to the 4429 return (not part of the verbatim report)
+
+All five taken in: (1) 'forward' read as ahead; 'the same behind' and the identification with 4410 marked as Claude's; 4426 Q1 answered ahead and sideways, behind inferred; (2) Michelson–Morley fixes the ratio; 'unchanged across' needs the clock rate (Kennedy–Thorndike); script docstring corrected; (3) the gravity contrast qualified (WC-DP-SEA-PV isotropic convention; 4409's river is directional; the K^(−1/2) vs 1/K mismatch noted); 'one rule' softened; (4) 4427 item 2 kept open as 'consistent, not confirmed'; (5) D-9 entry written. Optional: the recommended founder question (behind the electron) asked; the sending-sphere shift vs contraction distinction noted; 4421's item cited by name; whose S sets the PSR flagged.
