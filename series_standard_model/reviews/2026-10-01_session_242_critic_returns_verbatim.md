@@ -3014,3 +3014,58 @@ None of these changes the physics argument.
 ## Claude's response to the 4418 returns (not part of the verbatim reports)
 
 First return (HOLD), all nine taken in: the Q3 tension stated, the garbled clause quoted, the stay-put reading and 'renewed by switching' labelled Claude's, 'Settle' dropped; 4414 item 6 re-posed (pattern-held differential), not answered; Clausius–Mossotti presented as a heuristic needing a bare background, 'macroscopic field'; 'no mass beyond E/c²' stated as a requirement and put to him (Q3); the pull-in shown number-conserving (no net mass without DP creation); PVLAS limited to the anisotropic part, figures computed or labelled; Q1 marked partly answered, ∇·P = 0 'extra charges' carried; secondary arcing (μ₀) noted as unmodelled; founder questions rewritten as the two neutral pictures plus the requirement question. Second return (ACCEPT WITH CHANGES), all four taken in: script docstring PVLAS line corrected; ε₀ 'measured constant'; 4417 cross-references corrected (items 2, 3, 4; item 6 identity half answered); ε_bare = 0 kept conditional. Optional notes taken in: open form of Q1, compressibility clause cut, script label tied to field energy, '[garbled as sent]', 3035 marked as Claude's pointer.
+
+---
+
+## Patch 4419 — critic return (fresh context), verbatim
+
+**Verdict:** ACCEPT WITH CHANGES (close to HOLD on item 2 below)
+
+I ran the script. It reproduces the numbers in the draft: 0.300 drops to 0.111 in 100 Moments at a cohort/sea ratio of 0.01, and the bound comes out at about 3e-19 per second, about 2e-62 per Moment (Moment = 5.39e-44 s, which matches the "10^43 Moments a second" figure in 4414). The arithmetic is fine. The problems are in what the draft builds on it.
+
+**Required changes**
+
+1. **Call it a clarification, not just a correction, and tone down §8.** Calling the stay-put reading Claude's (§2, §9) is accurate, since 4418 marked it that way. But the founder's own 4418 text supports that reading: "remaining center-of-mass/charge stationary in the surrounding sea … which does not move with the velocity of the CP". In 4419 he says "I did not make it explicit". Describe 4419 as his clarification of an earlier clause that was ambiguous. "He is right, and I had it wrong" should become something like "his clarification replaces my reading". Two more things to mark as Claude's construction:
+   - The three-layer picture and "the anchor is that outer sea". He says only that there is something to push against, the DP Sea.
+   - What sways. In his sentence "These sway in the Sea", "these" refers to the arc-separations, not "the surrounding sea" as §2 has it.
+
+2. **Part 1, reading (a), is a straw model. It ignores 4415.** The compounding rule v_{n+1} = s·v_n is 4414's step, iterated from the last step. 4415 already replaced it with the rule Claude rendered from his words: step = f × local light speed, with f regenerated each Moment by the sea's organization ("not iterated from the last step"). Under that rule, a cohort counted in the normalization would at most rescale f by a constant. It would not make the speed decay. The real risk is different: the cohort's weight probably depends on speed (the arcs grow with v), so f would become speed-dependent. That is a marginality and preferred-frame problem, not dilution. Two fixes:
+   - Redo part 1 against the 4415 rule, or drop "4414's dilution in a new form".
+   - Make clear that "0.300 → 0.111" holds only under the rule that was withdrawn.
+
+3. **Reading (b) is not well defined, and it seems to conflict with his 4415 answer.** Under AP-4c the landing GP cannot tell cohort DI-bits from sea DI-bits, because relayed bits carry the relaying GP's address (4414 exit (a)). In 4415 he chose "totality": no separate treatment of some signals. So "the cohort counts with the moving system" is either 4414's exit (a) again, which he rejected, or it needs an operational definition. Either define it in payload terms (4415 item: how the payload differential is weighted) or say plainly that it is undefined and sits in tension with 4415.
+
+4. **Deal with the 7 July no-carried-velocity ruling.** A cohort that travels with the CP still has no carried velocity. Each member DP is displaced each Moment only by its own SSV. The draft treats the cohort as "DPs moving with the CP" (giving zero differential) versus "DPs at rest". It misses the option his own words point to: a coherent pattern whose membership turns over. He says "the DPs that start on earth and end on Mars will probably be completely different". Members are recruited from the at-rest sea and released, so no individual DP need move at v. That changes the "readout against co-moving DPs gives zero" premise of §3. Either:
+   - each member coasts by its own summation, in which case condition 1 repeats one level down, or
+   - the pattern moves while its membership turns over, and its coherence must be emergent (SR-9: not axiomatized).
+
+   Say which, or list both as open.
+
+5. **Map "push against / greater push forward" onto the 4414 summation, not onto forces.** He defined "force" as displacement per Moment (4418), and 4414 says "no pushing". The natural reading is that the push against is the front signal and the greater push forward is the rear signal of his rear-minus-front summation. The 4413 timing ratio already gives exactly v/c for this. "Now with a named drag" and "friction through the absolute frame" make it sound like separate pushes and edge back toward the force reading of CONJ-FP-1 that was set aside. The marginality claim (net exactly v at every speed and for every species, 4412 §4) is fair. Present it as 4412's condition restated, not as a new condition, and state the mapping.
+
+6. **Fix the logic of the ephemeris bound.** The order of magnitude, 1e-14 m/s², is fair for anomalous-acceleration bounds from ephemerides (roughly 1e-13 to 1e-15 depending on the planet). The logic is incomplete:
+   - A universal drag also acts on the Sun, which moves at about 370 km/s relative to the CMB. A common deceleration of the whole solar system is invisible to ephemerides.
+   - Using orbital speed is right only if the drag is linear in velocity. Then the relative acceleration is -k·v_orb.
+   - If the drag is nonlinear in absolute speed, the relevant speed is about 370 km/s and the effect is anisotropic.
+
+   State the linear-drag assumption in one sentence. Optionally note that an along-track drag is constrained more directly by secular changes in orbits: k ≈ 3e-19 per second gives da/dt of order metres per year for Earth, which is at or beyond what ephemerides allow, and lunar laser ranging and binary-pulsar orbital-period decay are tighter.
+
+7. **Tighten the Trouton–Noble wording and make the §7 question non-leading.**
+   - Trouton–Noble: 1903 (Trouton and Noble). Repetitions: Tomaschek (1925–26), Chase (1926–27), Hayden (1994). The experiment is second order in v/c.
+   - Laue (1911): the field's angular momentum is balanced by the angular momentum carried by the plates' non-electromagnetic stresses, so a closed static system feels no net torque. Say "stresses whose momentum flux balances the field's angular momentum", not loosely "carrying the field's momentum".
+   - In §7, the parenthetical "(Experiments looking for such a turning have found none.)" signals the wanted answer. Move it after his reply or into the analysis. The question is otherwise a physical picture, but it is a consistency check whose answer is already known.
+   - A more useful founder question, in a physical picture: do the cohort's DPs each move along with the CP, or are they picked up from the resting sea and let go as it passes? This is the item 4 issue.
+
+8. **Owed items need to go into todolist.md.** The new owed items (conditions 1 and 2, closure, what bounds the cohort, plus whatever comes out of items 3 and 4) are not in todolist.md. grep finds no "4419". Add them and run code/deferral_gate.py before the format-patch (D-9).
+
+**Optional notes**
+- The §1 summary of his message is accurate, including the capacitor clause and the last bullet on each DP's own arc-separation (the 4418 cascade).
+- In §6, "4418 question 2 answered" and "item 2 closed" are fair. "Item 3 restated as condition 1" depends on items 2–4 above.
+- The PD-008 entries are good. Add the convenient branch "reading (a) is dilution" (item 2).
+- A curiosity, not needed: the bound k of about 3e-19 per second is below H0 (about 2.3e-18 per second).
+
+**Plain Language:** The draft gets the founder's new point right: the particle's cloud travels with it. But it argues from an older rule, and tests one of its claims against that rule, after 4415 already replaced it. It also doesn't say how cloud members move when nothing carries velocity, and its "drag" wording drifts back toward forces. The numbers check out. The text needs these fixes, and the owed items need to go into the todo list.
+
+## Claude's response to the 4419 return (not part of the verbatim report)
+
+All eight required changes taken in: (1) 4419 called his clarification of an ambiguous clause; §8 toned down; the three-layer picture and 'anchor' marked Claude's; 'these sway' attributed to the arc-separations (founders_voice title fixed too); (2) part 1 redone under 4415's rule: the cohort in the normalization gives a speed-dependent rescaling of f (marginality/preferred-frame), not a decay; the iterated 0.300→0.111 shown only as contrast under the withdrawn rule; (3) reading (b) stated as undefined, in tension with his 4415 totality and AP-4c, to be defined in payload terms; (4) the 7 July ruling addressed: (i) each member coasts or (ii) a pattern with turning-over membership (coherence emergent, SR-9), put to him; (5) push against / greater push forward mapped onto the front and rear signals of the rear-minus-front summation; marginality presented as 4412's condition restated; (6) linear-drag assumption stated; common solar-system deceleration invisible; ephemeris range 1e-13–1e-15; secular orbits, LLR, pulsars noted; nonlinear case anisotropic; (7) Trouton–Noble history (Tomaschek, Chase, Hayden; second order) and Laue's angular-momentum balance stated; the cue removed from the question; the cohort-membership question added first; (8) D-9 entry written.
