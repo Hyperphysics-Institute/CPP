@@ -3224,3 +3224,95 @@ It also still needs its owed items written into the todolist.
 ## Claude's response to the 4422 return (not part of the verbatim report)
 
 All six taken in: (1) the one-line rescaling stated as the proof, the grid as illustration; error statement corrected (up to ~4%, sign set by source width; long-range error grows with distance from periodic images) in fragment and script; (2) 'whatever the range m'; general c-covariant laws (higher-derivative, nonlinear, confinement) stated separately; (3) 'same statement' replaced by 'a sufficient condition, for linear channels, for the |Λr| shape', with force law, prefactor and receiver response named as further needs; (4) 'the PSR ruler and the relay are one thing' withdrawn (light sphere centred on the emission point; the flattened surface is the equipotential); 4421 item 3 kept open; (5) the γ prefactor stated as belonging to a lab-frame density source, absent for a proper-time-weighted scalar source, tied to the common-prefactor item; (6) D-9 entry written. Optional notes taken in: A3′ 'all channels' vs AP-4's E and S; AP-5 saturation covariance; a₀ = ħ²/(m_e e²) and full covariant bound-state dynamics; table labels and box limits; linear-channel note on field vs pair potential.
+
+---
+
+## Patch 4423 — first critic return (fresh context), verbatim
+
+**Verdict: HOLD.** The arithmetic is sound. The fragment, though, is built on an assumed relay when the registered relay already exists, with its own dispersion law, in GR-1j. It also gets the measured quantity wrong (phase speed where group speed is needed), and it says a quadratic term "is allowed" when existing UHECR bounds probably already exclude it if the term is universal.
+
+I ran `code/4423_lattice_grain.py`. Its output matches the fragment's tables.
+
+## What checks out
+- **5-design.** The 12 icosahedral directions form a 5-design but not a 6-design. Over 20,000 directions, Σ(e·n)² = 4 and Σ(e·n)⁴ = 12/5, both constant to about 1e-15. Σ(e·n)⁶ ranges from 1.511 to 2.080.
+- **Even slowing, 1/40.** The analytic result is −(ka)²/40 in phase speed: the x⁴ term is (12/5)/24 divided by 2x², which gives x²/20 in ω² and x²/40 in ω. The cubic set gives the same mean.
+- **Spread, 2e-4.** The spread is Δ(Σc⁶)/2880 = 0.569/2880 = 1.98e-4 (ka)⁴. This matches the script.
+- **Cubic set.** It is a 3-design with spread (ka)²/36, which is 2.78e-4 at ka = 0.1. This matches.
+- **Physics numbers.** ħc/l_P = E_P is correct. The ka values and the resulting magnitudes are correct.
+
+## Required changes
+1. **K is misstated.** The fragment says "K = Σᵢ(eᵢ·n)²/2 = 2 (summing over the six ± pairs)". Summed over the six pairs, Σc² is 2, so Σc²/2 is 1, not 2. The correct statement is either K = Σ over all 12 of (e·n)²/2 = 2, or Σ over the pairs of (e·n)² = 2. The script's code computes this correctly. Its docstring does not: it says "K = Σ(e·n)² = 4" with ω² = (c²/K)Σ_pairs 2(1−cos)/a², which would give ω = ck/√2. A constant K also only needs a 2-design. Saying it holds "because 5-design" is true but more than is needed.
+2. **Rebase on the registered relay, GR-1j.** The fragment's main omission: the registered relay's continuum limit and dispersion are already on file.
+   - GR-1j Lemmas L1–L2 and Theorem T-1 (`series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex`, around lines 230–285) give the two-level, discrete-time relay u(t+τ) + u(t−τ) = 2[αM_R + (1−α)I]u(t), with dispersion cos ωτ = α·sinc(kR) + (1−α). Its continuum limit is the wave equation with c* = √α·R/(√3τ). R-CSTAR-MAP sets c ≡ R_vac/(√3 t_P).
+   - GR-1j already registers this "dispersion FAMILY" as a falsifier-shaped residue, deliberately unminted.
+   - So §1's "the second-order form is assumed", §4, and §5 item 1 misstate the position. The second-order form is derived on file: time-reversal invariance forces the two-level form, and the one-level relay damps every mode. Its continuum limit is already a theorem.
+   - The fragment should use that relay, not a continuous-time 12-neighbour stencil. Wherever it says "the continuum limit is the wave equation", it should cite GR-1j T-1.
+   - I computed the even term for α = 1: phase speed is c[1 − (kR)²/90] and group speed is c[1 − (kR)²/30]. Both were checked numerically. With R_vac = √3·l_P this becomes phase 1 − (k l_P)²/30 and group 1 − (k l_P)²/10.
+   - The sign and size of the even term depend on the time stepping and on α. They are not fixed by the spatial stencil.
+3. **Time discretisation, if the 12-neighbour model is kept as an illustration.** CPP's time is discrete (Moments t_P), so the continuous d²/dt² has to go.
+   - With leapfrog stepping and Courant number cΔt/a = 1, the time step adds +(ka)²/24. The net phase correction becomes +(ka)²/60, which is faster than light, the opposite sign.
+   - The update is also unstable: for this stencil, max Σ(1−cos) ≈ 23.6, so stability needs cΔt ≤ 0.58a.
+   - A one-GP-per-Moment hop at c = l_P/t_P on this stencil therefore cannot be the relay. This is one more reason to use GR-1j's PSR-shell operator.
+4. **Phase speed vs group speed.** Time-of-flight and threshold kinematics depend on the group speed, or on the E(p) relation. For ω = ck(1 − βx²), the group speed is c(1 − 3βx²): 3/40, not 1/40, in this model, and 1/30 in (kR)² for GR-1j. The anisotropy term is about 5× larger in group speed, and the group direction also tilts. The orders of magnitude do not change. Relabel the table columns as phase speed and quote group-speed coefficients in §3.
+5. **Quadratic Lorentz-violation bounds: the "literature check owed" can be done now, and the result goes against "allowed".**
+   - In the convention E² = p² + m² + η p⁴/M_P², this model gives η ≈ −1/20 (GR-1j with α = 1 gives about −1/15). Both are subluminal and of order 1e-1, not 1e-2.
+   - **Time-of-flight:** E_QG,2 bounds are about 1e11 GeV (Fermi GRB 090510, Vasileiou et al. 2013), about 6e10 GeV (H.E.S.S. PKS 2155-304; MAGIC GRB 190114C), and about 1e12 GeV (LHAASO GRB 221009A, from memory). The model's E_QG,2 ≈ 5e19 GeV, so time-of-flight is indeed blind to it.
+   - **UHECR threshold:** Maccione, Taylor, Mattingly & Liberati, JCAP 0904:022 (2009), arXiv:0902.1756, use Auger data. They bound the dimension-6 proton coefficient at |η_p| ≲ 1e-6. The exception is a narrow region where the proton and pion coefficients are both negative and nearly equal, where the bound is |η_p| ≲ 1e-3. A universal subluminal relay sits in exactly that region, so η ≈ −0.05 is excluded there by a factor of about 50.
+   - Caveats: those bounds assume EFT and a proton-dominated composition. Auger now favours a mixed or heavier composition, which weakens them.
+   - Photon-sector n = 2 bounds from UHE-photon limits also exist (Galaverni & Sigl, PRL 2008). I recall them as much smaller than 1e-1, but please verify that.
+   - Required: replace "far below sensitivity … allowed by today's measurements" in §3 and in the Plain Language summary with "below time-of-flight sensitivity; in apparent tension with UHECR threshold bounds if it applies to hadron constituents". Write this into `todolist.md` as a live falsifier check, cross-referenced to GR-1j's dispersion family and to TODO-4364-PREFFRAME. Per D-9, run the deferral gate.
+6. **§4 "a PSR-shell broadcast would be at least as even".** For direction dependence this is plausible, since it depends on the shell's design order. For the even term it is wrong in kind: the even term scales as (kR)², so it grows with R, and it is GR-1j's coefficient, not the stencil's. Restate.
+7. **Lattice orientation vs the crystallographic remark.** The crystallographic-restriction point is fair, and stronger than stated: 12-fold icosahedral coordination cannot tile flat 3D at all. That frustration is why the 600-cell lives on S³. However, 4160 §1 asserts the same twelve directions everywhere, a global orientation. Say explicitly which picture the bound assumes. Under a global orientation the computed anisotropy bound holds. If orientations vary, the anisotropy averages further and nothing gets worse.
+8. **4160/4161 are cited only for the 5-design.** That is correct as far as it goes. Add 4161's open residual, TODO-4161-STARVED: when a GP or CP reads only one arrival, it sees the 12 directions themselves, not their sum. That is the one known place where the anisotropy could appear at low order. It is the same kind of loophole for this patch's claim.
+
+## Optional notes
+- The 3e20 eV event was probably a nucleus, so the energy per nucleon is lower. This makes no difference at order-of-magnitude level.
+- The title should say "phase speed", and once item 2 is done it should drop "(ka)²/40".
+- **Skipping the founder question** is appropriate under PD-006 and PD-008: everything here is computation and literature in Claude's lane. If item 5's tension holds after checking, whether the relay dispersion applies to hadron constituents may eventually become a physical-picture question for him. It is not one yet.
+- §1's caveat (that the registered relay may differ from the assumed one) was honest. It just missed that GR-1j had already settled the question. The PD-008 "convenient branch" marking is good, but the convenient branch actually taken was "the even slowing is allowed", and it should be marked.
+
+**Sources:**
+- [Maccione et al. 2009, arXiv:0902.1756](https://ar5iv.labs.arxiv.org/html/0902.1756)
+- The time-of-flight and photon-sector figures are from memory and should be verified.
+
+**Repository files used:**
+- /root/CPP/series_standard_model/axiom_maturation/4423_lattice_grain.md
+- /root/CPP/series_standard_model/code/4423_lattice_grain.py
+- /root/CPP/series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex
+- /root/CPP/series_gravitation/GR_companion_papers/GR-1j_field_equations/documentation_suite/FAQ-GR-1j.md
+- /root/CPP/series_gravitation/GR_companion_papers/GR-1j_field_equations/documentation_suite/mechanism-GR-1j.md
+
+## Patch 4423 — second critic return on the rebuild (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+The rebuild takes in all eight of the first critic's changes. It is now built on GR-1j's relay (L1–L2, T-1, R-CSTAR-MAP) and its discrete-time dispersion. It uses group speed throughout, reports the quadratic LV bounds as "tension", and states the PSR-shell even term, global orientation (with the crystallographic remark) and TODO-4161-STARVED. The script runs cleanly and reproduces every number in the doc.
+
+**Checks (a) to (f)**
+- **(a) Phase and group speed: correct.** From cos ω = sinc x with ω = (x/√3)(1 + a x²), a = 1/216 − 1/120 = −1/90 over 3, so a = −1/90. The phase speed is therefore 1 − x²/90 and the group speed 1 + 3a x² = 1 − x²/30. The numerics match to 3 significant figures.
+- **(b) Planck units: correct, given τ = t_P.** kR = √3 E/E_P, so the group slowing is (1/10)(E/E_P)².
+- **(c) η: correct.** For massless E² = p² + η p⁴/M²: v_g = 1 + (3/2)η p²/M². Setting this equal to 1 − 1/10 gives η = −1/15. A cross-check: E = p[1 − 3p²/(90M²)] gives E² = p²(1 − p²/(15M²)).
+- **(d) 32-point shell: correct.** I checked it independently. Moments of degree 2 and 4 match the sphere to 1e-16 for the icosahedron, the dodecahedron and the equal-weight union. Degree 6 deviates (max 0.016 for the 32-point shell), so the shell is a 5-design but not a 7-design. The anisotropy scaling also checks: δm ~ (kR)⁶, so δω ~ (kR)⁵ and the speed spread ~ (kR)⁴.
+- **(e) Composite suppression: the factor 9 is right, but not for the reason the question suggests.** Energy adds, not E². Each constituent's shift is δE_i = η p_i³/(2M²), so η_eff = η Σ x_i³, not Σ x_i⁴. Three equal shares give 1/9, so the factor 9 holds. There is a consequence the doc misses (change 2).
+- **(f) Time-of-flight figures: fairly hedged.** "Roughly 10¹⁰–10¹² GeV, from memory, verification owed" is fair. Fermi/GRB 090510, H.E.S.S. PKS 2155 and MAGIC GRB 190114C all give a few ×10¹⁰ to ~10¹¹ GeV. The relay's E_QG,2 ≈ 5×10¹⁹ GeV corresponds to √15 E_P, which holds in the Jacob–Piran convention v = 1 − (3/2)(E/E_QG,2)². In the convention v = 1 − (E/E_QG)² it would be √10 E_P ≈ 3.9×10¹⁹ GeV.
+
+**Required changes**
+1. **The η value assumes τ = t_P.** GR-1j's R-CSTAR-MAP remark says R_vac and t_P "are not separately observable at long wavelength; only their ratio". So η = −1/15 assumes the Moment is exactly t_P; in general η = −(1/15)(τ/t_P)². State this in §2 and §4, and give the converse: the threshold tension disappears if τ ≲ 0.12 t_P (i.e. R ≲ 0.2 l_P). This is the honest form of the falsifier.
+2. **Composite suppression also breaks the "nearly equal" condition.** With Σ x_i³, the proton gets 1/9 (about −0.0074) but a two-constituent pion gets 1/4 (about −0.017). The coefficients are then no longer nearly equal, and Maccione et al.'s loosened region (~10⁻³) needs exactly that. The relevant bound may move back toward ~10⁻⁶, which would make the tension worse, not "still above 10⁻³". Rewrite that caveat to say the suppressed case leaves the near-equal region and the bound comparison is open. The same rewrite is needed in the script's closing print line and in §7's plain-language "ways out".
+3. **§2's attribution of the even term is wrong.** "Its sign and size come from GR-1j's time stepping and α, not from the shell's directional sampling" leaves out a source. The term comes jointly from the shell's finite radius and the discrete time step. In continuous time, ω²τ² = 2(1 − sinc x) gives a phase speed of 1 − x²/40; the discrete step shifts this to 1 − x²/90. Say "from the finite shell radius and the discrete time step (and α), not from directional sampling."
+4. **D-9 filing.** todolist.md is not touched, and the doc defers items with "verification owed" twice and an "open" list in §5. That list covers the time-of-flight figure check, the Galaverni–Sigl photon bounds, composite suppression, whether CP motion inherits the p⁴ term, and the τ/t_P dependence from change 1. Give these a named TODO entry (e.g. TODO-4423-EVENTERM), cross-referenced to TODO-4364-PREFFRAME, and file it in the same patch. Otherwise `code/deferral_gate.py` will fail.
+
+**Optional notes**
+- Give the E_QG,2 convention (Jacob–Piran, (n+1)/2 = 3/2) next to "about 5×10¹⁹ GeV".
+- In a real QCD proton, gluons and sea quarks carry a large momentum share, so Σ⟨x³⟩ is well below 1/9 (more suppression). Add one clause that the equal-shares figure is illustrative only, since CPP constituents need not be partons.
+- The cosmic-ray row rounds 3×10⁻³³ up to ~10⁻³², and 6×10⁻¹⁷ to ~10⁻¹⁶. This is harmless but could read "~10⁻³³" and "~10⁻¹⁶·²".
+- 4161 records that the 12-edge rule quantises a CP's displacement, not V. When the next patch (electrons by relativity's laws) asks whether CP motion inherits the relay's p⁴ term or the 12-direction anisotropy, that is the place to check, not here.
+- The parenthetical that icosahedral coordination cannot tile flat space sits awkwardly beside GR-1j's "the lattice IS flat". It is fine as a flag, but check it does not open a separate claim the corpus has not addressed.
+
+**Plain language:** The rebuilt draft gets the physics arithmetic right: the slowing numbers, the "−1/15" coefficient and the claim that adding the dodecahedron points does not improve the direction-evenness all check out. Four fixes are needed. First, the −1/15 depends on assuming the relay's time step is exactly the Planck time; say so, and note that a step about 8 times shorter would remove the cosmic-ray conflict. Second, sharing momentum among a proton's three parts and a pion's two suppresses them by different amounts, so the loophole the cosmic-ray paper leaves open may no longer apply. Third, say the slowing comes from both the shell's size and the time stepping. Fourth, file the owed items in todolist.md.
+
+Files reviewed: /root/CPP/series_standard_model/axiom_maturation/4423_lattice_grain.md, /root/CPP/series_standard_model/code/4423_lattice_grain.py, /root/CPP/series_gravitation/GR_companion_papers/GR-1j_field_equations/GR-1j_field_equations.tex (lines 230–285), /root/CPP/todolist.md (TODO-4161-STARVED).
+
+## Claude's response to the 4423 returns (not part of the verbatim reports)
+
+First return (HOLD), all eight taken in: the draft rebuilt on GR-1j's registered relay (L1–L2, T-1, R-CSTAR-MAP; dispersion cos ωτ = α sinc(kR) + 1 − α), so the stencil, the K slip and the time-discretization issues fall away; group speed used throughout (phase 1 − (kR)²/90, group 1 − (kR)²/30, η = −1/15); 'allowed' replaced by a live tension with Maccione et al. 2009 (verified: |η_p| ≲ 1e-6, ~1e-3 in the negative near-equal region); the even term attributed to GR-1j, not the shell's sampling; global orientation and the crystallographic remark stated; TODO-4161-STARVED cited; convenient branch marked. Second return (ACCEPT WITH CHANGES), all four taken in: η = −(1/15)(τ/t_P)², tension gone for τ ≲ 0.12 t_P; composite suppression (η Σx³: proton 1/9, pion 1/4) breaks the near-equal condition, so the comparison is open and may tighten; the even term's joint origin (finite shell radius and discrete time step); TODO-4423-EVENTERM filed. Optional: Jacob–Piran convention, illustrative equal shares, rounding, 4161 pointer for the next patch.
