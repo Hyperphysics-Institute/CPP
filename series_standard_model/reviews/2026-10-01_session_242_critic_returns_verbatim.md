@@ -3316,3 +3316,60 @@ Files reviewed: /root/CPP/series_standard_model/axiom_maturation/4423_lattice_gr
 ## Claude's response to the 4423 returns (not part of the verbatim reports)
 
 First return (HOLD), all eight taken in: the draft rebuilt on GR-1j's registered relay (L1–L2, T-1, R-CSTAR-MAP; dispersion cos ωτ = α sinc(kR) + 1 − α), so the stencil, the K slip and the time-discretization issues fall away; group speed used throughout (phase 1 − (kR)²/90, group 1 − (kR)²/30, η = −1/15); 'allowed' replaced by a live tension with Maccione et al. 2009 (verified: |η_p| ≲ 1e-6, ~1e-3 in the negative near-equal region); the even term attributed to GR-1j, not the shell's sampling; global orientation and the crystallographic remark stated; TODO-4161-STARVED cited; convenient branch marked. Second return (ACCEPT WITH CHANGES), all four taken in: η = −(1/15)(τ/t_P)², tension gone for τ ≲ 0.12 t_P; composite suppression (η Σx³: proton 1/9, pion 1/4) breaks the near-equal condition, so the comparison is open and may tighten; the even term's joint origin (finite shell radius and discrete time step); TODO-4423-EVENTERM filed. Optional: Jacob–Piran convention, illustrative equal shares, rounding, 4161 pointer for the next patch.
+
+---
+
+## Patch 4424 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script and it reproduces every number in the fragment. Hyperbolic motion matches to 6.1e-6, work against (γ−1) matches to 9.1e-5, and the inertia table and the velocity-addition values are exact.
+
+**Physics checks (item 1): all correct.**
+- With p = m sinh w and dp/dt = F, you get m cosh w · dw/dt = F, so dw = (F/m)√(1−tanh²w) dt. That is exact 1D relativity. Equivalently dw/dτ = F/m, so "a fixed amount per tick of the CP's own clock" is the right reading of the √(1−f²) factor.
+- Lab force versus proper force: the two agree here, because in 1D the force along the motion is the same in every frame (F′∥ = F∥). A constant lab force therefore equals a constant proper force, which gives hyperbolic motion. The fragment never says this, and it should (change 4).
+- Work: W = ∫v dp = (γ−1)mc². Correct.
+- Inertia along the motion: (1/v)dE/dv = γ³m. Correct.
+- Inertia across the motion: γm follows from p = γmv with |v| constant. Correct, but it is taken from relativity, not from the 1D count rule.
+- Velocity addition: tanh(w₁+w₂) = (u+v)/(1+uv) is correct. The remark about non-collinear pushes (rapidities do not add as scalars; Wigner/Thomas rotation) is fair.
+
+**Honesty (2), founder's words (3), experiments (4):**
+- (2) "Reformulation, not derivation" is stated plainly in the title, §5 and §9. The circularity between 4408 and 4410 is described accurately: 4408's at-cap γ is the non-circular case, and the sub-cap swing needs velocity addition.
+- (3) 4404 (ΔSSV_abs is the F) and 4406 (kinetic energy stored in the sea) are represented accurately. The 4407 wording is a paraphrase shown in quotation marks (change 5).
+- (4) The experimental claims are fair. LEP electrons at about 104 GeV have γ ≈ 2×10⁵. Synchrotron orbits (r = p/eB) test p = γmv and so the γm across the motion. Bertozzi (1964) measured speed against kinetic energy up to about 15 MeV (γ ≈ 30), which tests E(v). Naming Bertozzi 1964 in the text would help.
+
+**Required changes**
+
+1. **The momentum reading is missing, and it changes the circularity claim.** The same dynamics can be written as "the sea stores momentum p; each absolute Moment's ΔSSV_abs adds a fixed amount F·dt; the step is f = p/√(m²c²+p²)." This is mathematically identical to the rapidity rule (W). It needs no CP clock factor and no 4408, so the circularity in §5 belongs to the rapidity reading only. It is not built into the physics. The momentum reading is also closer to the founder's literal 4404, where the increase is stored "at Moment i+1", in absolute Moments. Present both readings. State that momentum adds under pushes, while rapidity adds under collinear frame changes. Then revise §5's circularity bullet and the title or abstract so they do not imply that the clock factor is required.
+
+2. **§4 and §6 overclaim on 4410's velocity-addition item.** For collinear motion, "the organization is an additive count (rapidity)" is the relativistic velocity-addition law restated. It is not a CPP origin of it. Adding two counts already assumes that the count a moving body assigns is the count that adds in the absolute frame, and that is the content to be shown. Also, 4410's item concerns the sub-cap ZBW swing (internal swing composed with drift), not a pushed electron. Change "answered for collinear motion, conditional on additivity" to "restated as a precise target: show the sea's organization composes additively". Keep the 4410 item open.
+
+3. **Founder question (§7) is leading.** Its second option, a ceiling at light speed, is one §2 already rules out by experiment, so the binary has one live answer. Replace it with a genuinely open physical question. For example, from his 4407 picture: as the electron nears light speed, does each further push add the same amount of DP-arc and separation, spread over an ever larger polarized volume, so that a fixed push buys less and less speed? And is that "same amount" counted per absolute Moment or per tick of the electron's own clock? This also brings out the distinction in change 1.
+
+4. **Define m and state the force convention.** Write the rule as dw = (F/m)dτ. Say what m is: the rest energy/c² of the whole electron including its cohort (4417–4420), with m = c = 1 in the script. Add one sentence that in 1D the lab force equals the proper force, so the rule holds for either.
+
+5. **Quotation accuracy.** "the sea enrols indefinitely toward c" is not verbatim from 4407. Either quote his words ("The DP Sea can continue to polarize more volume around the near-lightspeed CP indefinitely … as the velocity continues to increase asymptotically to lightspeed") or remove the quotation marks.
+
+6. **Deferral gate (D-9).** §6 lists owed items without TODO tags:
+   - additivity and tanh, with 4408 derived alongside;
+   - the sea holding (γ−1)mc² and γmv (closure);
+   - non-collinear pushes;
+   - quantum bound states;
+   - plus the carried items.
+
+   todolist.md is not yet touched. The gate PASSes only because none of its trigger words appear (§6 says "open" and "carried", which it does not catch). Add the 4424 todolist entry in the same patch and run `code/deferral_gate.py`.
+
+**Optional notes**
+
+- Uniqueness: given dE = v dp, the condition (1/v)dE/dv = γ³m fixes E up to an additive constant, set by E(0) = 0. So "only (γ−1)mc²" holds, but say "up to a constant, given work-energy". The table illustrates consistency rather than giving independent evidence, since γ³ already follows from p = γmv.
+- Interaction with 4415: f is a ratio to local light speed, so w is unchanged when crossing a region of raised μ-ε. That is consistent with 4415's "recovers on leaving" and worth one sentence. The energy bookkeeping, (γ−1)m c_loc², and the CP clock rate in such a region (gravitational slowing on top of γ) depend on 4415's open condition (ii), the gradient plus μ-ε reproducing GR. Flag that rather than leave it implicit.
+- §1 cites the step rule as 4415's. 4415 labels it "Claude's rendering" of his answer, and 4424 should keep that label.
+- The transverse γm and the 4417 four-vector closure are correctly marked as imported targets. The 1D count rule says nothing about motion across the line of push. §5 implies this, and a few words making it explicit would help.
+
+**Plain Language:** The maths in 4424 is right: the rule it proposes is exactly relativity's rule for a steadily pushed particle. There are two problems. First, the same rule can be written as "the sea stores momentum, and each push adds a fixed amount per ordinary tick." That version does not need the slowed-clock result from 4408, so the circular dependence the fragment warns about is a side effect of the chosen form, not a feature of the physics. Second, the fragment says it explains how speeds add, but it only restates that law; the CPP explanation is still owed. The question for Thomas also needs rewording, because one of its two options is already ruled out by experiment. Smaller fixes: define the mass, quote his 4407 words exactly, and enter the owed items in todolist.md.
+
+Files reviewed: /root/CPP/series_standard_model/axiom_maturation/4424_electrons_by_relativity.md, /root/CPP/series_standard_model/code/4424_electrons_by_relativity.py, /root/CPP/founders_voice/4404_velocity_stored_in_dp_arcs_delta_ssv_abs_is_force.md, /root/CPP/founders_voice/4406_ke_stored_in_dp_sea_not_faster_swing.md, /root/CPP/founders_voice/4407_hot_ball_heavier_binding_levels_sea_enrols_indefinitely.md, /root/CPP/series_standard_model/axiom_maturation/4408_the_swing_in_the_absolute_frame.md, 4410, 4415, 4417 (same directory), /root/CPP/todolist.md.
+
+## Claude's response to the 4424 return (not part of the verbatim report)
+
+All six taken in: (1) the stored-momentum reading (P) added (sea stores p; each absolute Moment's push adds F·dt; f = p/√(m²c²+p²)), shown identical to the rapidity reading and to relativity in the script; the 4408 circularity confined to the rapidity reading; title revised; momentum adds under pushes, rapidity under collinear frame changes; (2) velocity addition restated as a target, 4410's item kept open; (3) founder question rewritten from his 4407 picture, asking whether a fixed push adds the same DP organization spread over a growing volume, and whether counted per absolute Moment or per electron tick; (4) m defined (rest energy/c² of CP plus cohort), dw = (F/m)dτ, 1D lab force = proper force; (5) 4407 quoted verbatim; (6) D-9 entry written. Optional: uniqueness 'up to a constant'; table as consistency; 4415 interaction and condition (ii) flagged; 'Claude's rendering' kept; transverse γm marked as imported; Bertozzi 1964 named.
