@@ -3148,3 +3148,79 @@ Script output (Case A): max force ~1.5e-12 and couple ≤3e-13 at every tilt. Ca
 ## Claude's response to the 4421 return (not part of the verbatim report)
 
 All six taken in: (1) the census credited with the |Λr| shape only; the (1−v²) prefactor assigned to the owed vector channel and added to §3/§4; (2) the theorem split into (a) no twist from the PSR ruler alone (energy a function of Λx, rotation-free in PSR units, any prefactors; many-body binding included) and (b) the exact contracted shape from a common prefactor; owed items separated; (3) 'if and only if' removed; (4) the script now relaxes each case: A and A' (mismatched prefactors) stay at their starting tilt; B turns until the plates lie along the motion (the twist); '≈0' at 0° and 90°; (5) his phrasing restored ('the plate-DPs are essentially an integrated system'; 'contracting space in the direction of motion'); '4408–4412' marked as Claude's gloss; (6) 4410 cited with 4409. Optional notes taken in: many-body binding; 'two bookkeepings of the same balance' for Laue.
+
+---
+
+## Patch 4422 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I read the fragment, the script, 4421, 4411's owed items, A3′ (line 39), AP-4's payload clause, and the todolist entries. I ran the script; its output matches the table. I also ran my own convergence check, varying σ, side distance, box and n (scratch script at /tmp/claude-0/-home-claude/809b5738-7ea0-5402-b8f6-d8c84894d09f/scratchpad/conv.py).
+
+**What holds up**
+- **Steady solution and γ prefactor.** The steady equation in the source frame, −((c²−v²)∂x² + c²∇⊥²)φ + m²φ = δ, is correct. Rescaling x′ = γx turns it into the static equation with source γδ(x′)δ(y)δ(z), so φ = γφ_static(γx, y, z) exactly, for any m. The prefactor γ is right for a source written as δ(x−vt) in the lab frame.
+- **The script's solver.** The FFT denominator (c²−v²)kx² + c²k⊥² + m² is correct, and so is the log-interpolated equipotential ratio.
+- **The channel at c_s.** The same rescaling with c_s leaves m² isotropic, so √(1−v²/c_s²) is exactly the expected aspect.
+- **The A3′ quote** is verbatim. AP-4's payload is {origin address, E, S}, so E and S do ride the same DI-bit. "Nothing in the rules gives the strong channel a different speed" is fair (but see note 2).
+- **Bell and lattice points.** Both are fair and properly left open.
+- **No founder question.** Skipping it is appropriate under PD-006 and PD-008: what remains is derivation, and the strong-census question is the same kind as 4411(a), which is already owed.
+
+**Required changes**
+1. **Error statement is not honest as written.** The fragment says the residuals are about 0.5–1% and shrink with distance. My check found:
+   - **Up to 3.7% error** in the 0.7c, v = 0.6 case (0.5339 against 0.5151).
+   - **The sign of the error depends on σ:** +3.65% at σ = 0.25, −1.73% at σ = 0.1. A grid of 200 instead of 160 changes nothing.
+   - **For the long-range channel the error grows with distance:** −0.34% at side 4, −5.9% at side 8. The cause is periodic images, since m = 0.05 gives a range of about 20 in a box of 24.
+
+   Fix the wording in the fragment and in the script docstring. Better still:
+   - state the one-line analytic rescaling as the proof, and present the grid as an illustration;
+   - optionally add a small convergence table, or compare pointwise against the stretched-source prediction.
+2. **"Whatever the range or static law" contradicts the operator.** (∂t² − c²∇² + m²) only produces Coulomb or Yukawa static laws, so it cannot give a confining law. Say "whatever the range m". For other static laws, say that any field law which is Lorentz-covariant with invariant speed c gives the |Λr| shape. That includes higher-derivative and nonlinear laws, which is where confinement would fall. This is not "the covariant wave form".
+3. **"Same statement as" is an overclaim in both directions.**
+   - The Klein–Gordon form is sufficient but not necessary: any c-covariant law works.
+   - It is not sufficient on its own for "every force counted with the PSR ruler". That also needs the force law (gradient plus vector part), the common prefactor, and the moving receiver's response.
+
+   Restate it as: "a sufficient condition, for linear channels, for the |Λr| shape of the field".
+4. **"The PSR ruler and the relay are one thing … the light sphere of that relay" needs to go or be reworded.** Two problems:
+   - **It is factually wrong.** The light sphere from a moving emitter is a sphere centred on the emission point in the absolute frame. The flattened surface is the Heaviside ellipsoid, i.e. the equipotential.
+   - **It quietly closes 4421 owed item 3** ("the oblate PSR from the relay"), which is still open.
+
+   Remove it, or mark it as a conjecture and keep item 3 open.
+5. **The prefactor γ is not universal; say so.**
+   - The γ belongs to a source that is a lab-frame density (the time component of a current, as with A₀).
+   - A Lorentz-scalar point source (weighted by proper time, δ/γ) gives no γ at all.
+   - The script measures only the aspect, not the prefactor.
+
+   Add one sentence noting all three, and link it to the "common prefactor" item. This is exactly why that item stays open, and why it depends on each channel's tensor character.
+6. **No todolist entry yet (D-9).** todolist.md has no 4422 entry, so the owed items are not recorded:
+   - wave form of each census;
+   - kinetic/Bell;
+   - common prefactor;
+   - lattice discreteness / TODO-4364-PREFFRAME;
+   - carried 4421 items 2–6;
+   - the partial disposition of 4421 item 1.
+
+   Add the entry in the same patch and run code/deferral_gate.py before the format-patch.
+
+**Optional notes**
+1. **Where the link to E and S comes from.** A3′'s "all channels" refers to the LSP′ channels (Φ, V_i, Q_ij), which now also includes the provisional A_i. The tie to E and S comes from AP-4's emergence reading, not from A3′ itself. One clause saying so would make it precise.
+2. **AP-5 saturation.** AP-5's saturation protocol (D > K) may be active in dense nuclear interiors. It is a nonlinear receiver rule, and its covariance is unexamined. It deserves a line under "What remains".
+3. **Bohr radius notation.** Write a₀ = ħ²/(m_e e²); "ħ²/me²" is ambiguous. The kinetic point could also note that quantum bound states need the full covariant dynamics, not just the relativistic momentum law for point constituents.
+4. **Table labels.** Label the table's "long range" row as m = 0.05, and add a sentence on box-size limits.
+5. **Equipotential shape vs pair force.** The equipotential shape of a single source's field equals the pair-potential shape only for linear channels. One sentence would cover this.
+
+Key files:
+- /root/CPP/series_standard_model/axiom_maturation/4422_every_channel_one_relay.md
+- /root/CPP/series_standard_model/code/4422_every_channel_one_relay.py
+- /root/CPP/axiom-registry.md (line 39)
+- /root/CPP/todolist.md (no 4422 entry; 4421 entry at line 2577)
+
+Plain Language: The core physics is right. A force sent at light speed from a moving particle, whether long or short range, is squeezed along the motion by exactly the Lorentz factor, and this can be proved in one line. The draft overstates three things:
+- that this condition is the same as "one ruler" (it is only one sufficient route to it);
+- that the PSR "is" the light sphere (wrong surface, and it closes an item that is still open);
+- how small the numerical errors are (up to about 4%, and growing with distance in one case).
+
+It also still needs its owed items written into the todolist.
+
+## Claude's response to the 4422 return (not part of the verbatim report)
+
+All six taken in: (1) the one-line rescaling stated as the proof, the grid as illustration; error statement corrected (up to ~4%, sign set by source width; long-range error grows with distance from periodic images) in fragment and script; (2) 'whatever the range m'; general c-covariant laws (higher-derivative, nonlinear, confinement) stated separately; (3) 'same statement' replaced by 'a sufficient condition, for linear channels, for the |Λr| shape', with force law, prefactor and receiver response named as further needs; (4) 'the PSR ruler and the relay are one thing' withdrawn (light sphere centred on the emission point; the flattened surface is the equipotential); 4421 item 3 kept open; (5) the γ prefactor stated as belonging to a lab-frame density source, absent for a proper-time-weighted scalar source, tied to the common-prefactor item; (6) D-9 entry written. Optional notes taken in: A3′ 'all channels' vs AP-4's E and S; AP-5 saturation covariance; a₀ = ħ²/(m_e e²) and full covariant bound-state dynamics; table labels and box limits; linear-channel note on field vs pair potential.
