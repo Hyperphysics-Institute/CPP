@@ -3417,3 +3417,54 @@ I ran the script. Its output matches §3: the net after boosting by f is about 1
 ## Claude's response to the 4425 return (not part of the verbatim report)
 
 All ten taken in: (1) the mass-shell condition stated as an input; title retitled ('has the form p/E; relativity follows if a push keeps SSV_abs² − SSV_net² fixed'); 'exactly' dropped where it implied derivation; (2) 4408 quoted in full with the mass-cohort qualifier and 'exposed SSV_net', noted as qualitative; (3) AP-4's k weighting and the count (Φ) reading added as condition 3; (4) field direction vs arrival direction added as condition 4; (5) PSR_eff need added as condition 5; (6) the γ missing from 4411's compression added as condition 6, and §2 softened (4408 not needed for dynamics, probably for covariance); (7) 'as he says' corrected; (8) founder question rewritten as a physical picture (cloud growing overall vs only lopsidedness), no answer prefaced; (9) novelty claim removed (textbook invariant mass of a photon system); (10) conditions in §5 and todolist. Optional: script disclaimer for Part 1; totality-vs-own-organization kept prominent.
+
+---
+
+## Patch 4426 — critic return (fresh context), verbatim
+
+**Verdict:** ACCEPT WITH CHANGES
+
+I ran the script (about 1 min) and it reproduces the table exactly. The physics core checks out:
+- The Heaviside field, B = v×E, the energy density (E²+B²)/8π and the momentum density are all correct. (E×B)_x = vE_ρ², and the code uses E_ρ·B with B = vE_ρ.
+- The substitution x = x'/γ with dV = dV'/γ is correct.
+- The cutoff shortfall is right: q²/(2·400) = 0.00125, which is 0.25% of U₀.
+- From E = γ(W + v²S) and p = γv(W + S): the field alone (W = U₀, S = U₀/3) gives γU₀(1 + v²/3) and (4/3)γU₀v, the standard Abraham–Lorentz values.
+- Poincaré stresses with S = −U₀/3 give −γU₀v²/3 and −γU₀v/3, so the totals are γU₀ and γU₀v.
+
+**Required changes**
+
+1. **The "equipotential shrinks by 1/γ" claim is false, and the 1/γ volume is an input, not a result.** This applies to §3 bullet 1, Part 2 of the script and its docstring. For a moving charge, φ = qγ/√(γ²x² + ρ²). A surface of fixed φ has the same semi-axis along the motion (q/φ) but a semi-axis across it of γq/φ, so its volume *grows* by γ². Part 2 only prints 1/γ, which is the contraction the core was given by construction. It computes no equipotential and no cloud volume. Delete the equipotential claim. Say the 1/γ core contraction is assumed (from 4410). Also say the cloud has no volume of its own beyond the core boundary. Note that the literal "geometry grows" has a real counterpart: fixed-φ surfaces and the transverse field (×γ) both expand across the motion.
+
+2. **The founder's words are over-read as "content grows, volume shrinks".** He wrote "the *geometry* … grows to the size corresponding to the SSV_abs". Claude's reading reverses this to "geometry compressed, content grows". §2 and §7 mark it as Claude's reading, but other places assert it as his:
+   - the title ("the Founder Says … Its Volume Shrinks");
+   - §3 ("That is his picture: the content grows…");
+   - §6 ("I think it's right… the cloud does just what he says").
+   
+   Restate those places as Claude's reading. Give the literal alternative (the geometry itself grows, as in item 1). Note that "volume related to the PSR in each direction" fits either reading.
+
+3. **The tension with 4416 is not addressed.** 4416 has "More SSV_abs reduces the PSR", and that effect has no direction. If the cloud's SSV_abs rises by γ, that reading shrinks the PSR all round, not only along the motion as 4409–4410 need. Either the extra SSV_abs is directional (an SSV_net-like effect, which conflicts with 4416's split), or it does not act on the PSR, or 4416 needs qualifying. State this, add it to §4 as open, and consider making it the founder question (item 6).
+
+4. **The "with binding" column is true by construction.** It subtracts analytic stress terms from integrals that already match the analytic field values, so the 0.499 rest value is an identity, not a finding. The table header itself carries no "imported" flag. Label the column "with classical Poincaré stresses (imported; identity)" and drop "exactly … stays 0.499 at every speed" as a result. Also say that the stress terms assume the stresses carry no rest energy. That is one of two standard choices: Schwinger (1983) shows that counting stress energy instead gives a rest mass of (4/3)U₀. So "the binding makes up the difference exactly" depends on the model.
+
+5. **The covariant definition is missing.** 4417 §5 already says that with the Fermi (1922) / Rohrlich (1960) covariant definition, the field alone gives γU₀ and γU₀v with no 4/3. In that account stresses are needed only for stability (Poincaré). Leaving this out makes "the mass shell needs the binding" (title, §3, §6) read as forced when it is not. Present both cures, as 4417 did, and soften the title and §6 to match.
+
+6. **The founder question leads.** "…and does that holding itself carry part of the electron's mass?" invites a yes. Its premise also assumes classical extended-charge stresses, while CPP's central CP is a point. Make it neutral. One option: "What keeps the central CP and its polarized cloud moving as one unit? Does the cloud's total SSV_abs at speed include anything besides the separated and arced DPs themselves?" Another option is to ask the 4416 PSR-isotropy question from item 3 in a physical picture.
+
+7. **Two modelling premises are stated without their conditions.** The script and §3 say "the census is exactly Liénard–Wiechert (4411)". 4411 makes that conditional on an assumed 1/R weight per arrival and a single-hop relay, so carry the condition. Also, using (E²+B²)/8π as the cloud's SSV_abs assumes realness is the stored energy, the square of the separation. 4417 stated that as a requirement, not a result. Say both are assumed. With those conditions stated, the classical field is a fair model of the organized cloud.
+
+8. **D-9 entries are missing.** Nothing for 4426 is in todolist.md. Add the open items with the format-patch: the CPP binding analogue, the 4416 PSR-isotropy tension, and the stress-energy choice. The deferral gate passes now only because todolist.md was touched.
+
+**Optional notes**
+- §6 "content grows nearly three times at 90%" is fine numerically (×2.906), but it is field energy outside an assumed contracted core.
+- The 2/3 (2496) vs 4/3 vs 1 comparison is a useful frame. Say that 2/3 comes from a scalar toy and 4/3 from the vector field, so they are not the same quantity.
+
+**Plain Language:** The calculation is done correctly and matches textbook results for the energy of a moving charge's field. Three problems need fixing:
+- One claim is wrong: surfaces of equal potential around a moving charge get bigger, not smaller.
+- The write-up reverses the founder's words ("the geometry grows") into "the volume shrinks" without always saying that is Claude's interpretation.
+- The "binding" fix is borrowed from classical physics and is true by construction. The note also leaves out a known alternative, the covariant definition, which gets relativity right without any binding.
+
+The founder question also nudges toward a yes and should be asked neutrally.
+
+## Claude's response to the 4426 return (not part of the verbatim report)
+
+All eight taken in: (1) the false equipotential claim deleted; part 2 now computes fixed-potential surfaces (along unchanged, across ×γ, volume ×γ²); the core contraction stated as an input; (2) his 'the geometry grows' kept literally, with the computed counterpart; the 'content grows, volume shrinks' reading withdrawn; title, §3, §7 restated; (3) the 4416 PSR-isotropy tension stated (§4), carried and asked; (4) the binding column labelled imported and an identity, with the stress-energy model dependence (Schwinger 1983, 4/3 U0); (5) the covariant Fermi/Rohrlich cure added alongside stresses; title and §7 softened; (6) founder questions neutral (PSR isotropy; what keeps CP and cloud as one, and whether the cloud's SSV_abs includes more than the DPs); (7) the LW census conditional (1/R weight, single hop) and the square law stated as assumed; (8) D-9 entry written. Optional: 2/3 (scalar toy) vs 4/3 (vector field) noted as different quantities.
