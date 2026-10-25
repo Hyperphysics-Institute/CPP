@@ -3679,3 +3679,60 @@ I edited no files. `todolist.md` currently has no 4430 entry and no R-MOVING-PSR
 ## Claude's response to the 4430 return (not part of the verbatim report)
 
 All six taken in: (1) three grounds given for the PSR reading, and the coherent literal field reading recorded; (2) title and §3: he located S; membership open; 'the CP's own share' marked as Claude's inference against the natural reading and his 4415; (3) the sea's dominance stated conditionally (4425 §4.1; not quantified); (4) the convenient branch marked; (5) D-9 entry written with R-MOVING-PSR; (6) the membership question asked in a physical picture. Optional: the 4409 first-order shift vs second-order contraction distinction added; Plain Language softened to 'where it is read'.
+
+---
+
+## Patch 4431 — critic return (fresh context), verbatim
+
+**Verdict:** ACCEPT WITH CHANGES
+
+I ran the script, and it reproduces every number in the note. The problems are in the framing, not the arithmetic.
+
+**Required changes**
+
+1. **4385 quote: say it was withdrawn.** The quote is verbatim. But it sits inside the R-RULER-IN-PSR-UNITS passage, which the founder withdrew in 4386 ("I think I made a mistake"). The registry shows it struck through. §1 calls 4431 a continuation of 4385 without saying this. Add the withdrawal, or say only the "gravity or kinetic energy, same physics" clause is being cited, and that its status after 4386 is not settled.
+
+2. **4408 is cited unfairly.** His words are "the percentage of partially exposed (unpaired) CPs … underlie the inertial effect, and hence what mass is." That is a statement about inertia and mass, not about what counts toward SSV_abs. The same paragraph says the motion of CPs "whether paired or unpaired" adds "CP enrollment" and "increased SSV_abs". So 4408 cuts against "paired DPs count for nothing" as well as for it. Say the application to SSV_abs is Claude's extension, and note the paired-or-unpaired clause.
+
+3. **The 4415 "totality" needs the same flag 4430 gave it.** The note says "the totality at the GP is then the realized total" with no flag. That reinterprets his words. 4415 also says μ-ε is higher "in a space with more fields", meaning fields count. Mark this as going against the natural reading of 4415, as 4430 §3 did.
+
+4. **Realized-only does not remove dilution. It moves it to matter.** This is the main gap. Under realized-only, the realized CPs of nearby matter still arrive at the electron's GP. In CPP these are the source of gravity's raised SSV_abs, so they must count. Then the step reads V/(S_own + S_matter), and the dilution returns, at order unity rather than the tiny gravitational size of U ~ 1e-9. There is a second problem. If paired sea DPs count for nothing, the SSV_abs of empty space far from matter is near zero. That conflicts with the K = 1 + 2U form of WC-DP-SEA-PV, which needs a large vacuum baseline for U to be small (the "polarizable vacuum" picture: the sea's response sets c). So the step's requirement is still 4430's "the CP's own organized share", which is narrower than "realized". The note runs "own" and "realized" together. Required fixes:
+   - (a) Say realized-only removes the resting sea's share but not that of realized external charge.
+   - (b) Name the vacuum-baseline consequence.
+   - (c) Say Part 2's f = 0.6000 holds by construction (sea share set to 0). It is not a result.
+   - (d) Revise the §6 claim that it "points to a way out" to match.
+
+5. **Reading (P) is reversed, not just "borne on".** 4416's reading (P) counts every CP's contribution, paired or not. Realized-only drops paired DPs entirely. Say plainly that this replaces (P) and that 4416's first-order split needs re-deriving on the new basis. The split may hold more simply there, but then 4415's "more fields, higher μ-ε" becomes second order only. On orders, the rest is consistent: (γ−1)M ≈ (v²/2)M is second order. That agrees with 4416's "no change at first order" and with 4417's realness tracking stored energy (realized DPs raise SSV_abs at second order). Add one line saying so. It strengthens the note.
+
+6. **"Energy gravitates" is incomplete.** In GR the source is the full stress-energy. A moving body's momentum and momentum flux gravitate too: the pull of a fast mass on a slow test body goes roughly as γ(1+β²)m, not γm. "Equivalence of energy content" should read "of energy and momentum (realized S and V)". This also supports the note's "different geometry" point.
+
+7. **Planck-energy argument: state the standard resolution exactly.** Boosting cannot form a black hole, because horizon formation is frame-independent and is set by invariant mass. For collisions, it is set by the centre-of-mass energy √s. The v → c field of a point mass is the Aichelburg–Sexl impulsive gravitational wave: a flattened shock with no horizon. Say that, instead of "boosted, not enlarged". The ~2.4e22 figure is fine as an order of magnitude, using the "Schwarzschild radius equals the Compton wavelength" criterion. Also say the absolute-frame S at γ ~ 1e22 is real in CPP. The note must then explain why it does not act gravitationally as a static γm. That is the CPP burden, and it ties to item 8.
+
+8. **"Nothing changes in its own frame" (4412).** The tie to 4412 is fair: laws are the same in each CP's lab frame, and the PSR is measured in the absolute frame. But in CPP realized charge is ontic, a fact in the absolute frame. Say "nothing measurable changes for co-moving rulers and clocks", not "a fast electron is not a heavier electron to itself". Otherwise the note seems to make realness frame-dependent.
+
+9. **(γ−1)M: say exactly what makes it "exact".** It is the correct requirement and is fairly called exact, given three conditions:
+   - 4425's mass-shell identification, S² − V² = M²;
+   - S is the CP's own share, with no external share;
+   - the rest share M is unchanged.
+
+   State these. Also say the (γ−1)M is in SSV_abs units at the GP, not a number of CPs (the weighting is open). And say the realized charge must also carry the net, V = γMv. Charge that is merely realized and adds no net would not do.
+
+10. **Founder question: widen it.** It is physical and mostly non-leading. But it offers only two options, sea DPs or realized CPs, and leaves out the realized CPs of nearby matter. Add that third option, for example: "…and do the real CPs of nearby atoms count the same as the electron's own?". Without it, his "yes, only real ones" would look like a resolution when it isn't (item 4).
+
+11. **Deferral rule (D-9).** todolist.md currently has no 4431 entries. Every §4 open item must be entered in the same patch, plus the new ones from items 4 and 6. Then run the deferral gate (code/deferral_gate.py).
+
+**Optional notes**
+- His proposal is represented accurately. He said "increased DP arc-separation"; "gain arc-separation" is fine. "Without limit" and "realness emerges from the sea" are his. The title's "equivalence must be partial" is fairly presented as Claude's.
+- "4416 tension sharpened" and the "convenient branch, marked" statement under PD-008 are appropriate. Under PD-008, also mark §6's endorsement of realized-only as the convenient branch.
+- The γ ~ 2e5 accelerator and γ ~ 3e11 cosmic-ray figures are fine.
+
+**Plain language:** The arithmetic is right, and his idea is reported fairly. But the note's main selling point, "count only real charge and the dilution problem goes away", only gets rid of the empty sea. The real charges in nearby matter would still water down the step, and empty space would lose the baseline gravity needs. Two of the founder quotes (4385, 4408) also need context. The gravity comparison should say that momentum gravitates as well as energy, and give the standard reason a fast particle never becomes a black hole.
+
+Files reviewed (none edited):
+- /root/CPP/series_standard_model/axiom_maturation/4431_kinetic_ssv_abs_as_realized_charge.md
+- /root/CPP/series_standard_model/code/4431_kinetic_ssv_abs.py
+- /root/CPP/founders_voice/4431_kinetic_ssv_abs_by_realized_cps_gravity_equivalence.md
+
+## Claude's response to the 4431 return (not part of the verbatim report)
+
+All eleven taken in: (1) 4385's withdrawal (4386) stated; only its gravity-or-kinetic clause cited, status unsettled; (2) 4408 cited fully, incl. 'whether paired or unpaired', application to SSV_abs marked Claude's; (3) 4415 totality flagged as against the natural reading; (4) realized-only shown to remove the sea's share but keep nearby matter's (script part 2 adds the matter case; f = 0.6 marked by construction) and to empty the vacuum baseline (WC-DP-SEA-PV K = 1 + 2U); the requirement restated as the CP's own share; §7 revised; (5) reading (P) stated as reversed, 4416's split to re-derive, 4415's field effect second order; orders consistency added; (6) 'energy and momentum (realized S and V)' with the γ(1+v²)m pull; (7) the standard resolution (invariant mass/√s; Aichelburg–Sexl) and the CPP burden stated; (8) 'nothing measurable changes for co-moving rulers and clocks'; (9) the three conditions for exact (γ−1)M, SSV_abs units, and the net γMv requirement; (10) founder question widened to three sources; (11) D-9 entry written. Optional: PD-008 extended.
