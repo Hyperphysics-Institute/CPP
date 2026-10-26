@@ -3821,3 +3821,44 @@ I checked the founder file, the 4432/4403/4415/4425 text, the registry at about 
 ## Claude's response to the 4433 return (not part of the verbatim report)
 
 All nine taken in: (1) his sum vs the registered shell mean stated (shell-count normalization; open); (2) census units stated; equal fall as normalization by the background, not the CP's own S; (3) the baseline outweighs the near cloud ~1e18 in count units: the two-roles split stated as required and the main open condition; 4432's picture reversed; (4) 4432 item 4 partly answered (trajectory), clock/PSR carried; (5) 4432 item 5's baseline half carried; (6) realness weighting must sum to mass-energy (composition tests); script assumption noted; (7) Sciama reworded (guaranteed ratio; only order-one content), with sphere factor ~2.4, cosmology/past light cone, Ġ/G caveats; (8) equal-fall citation corrected (WEP of internal energy; light bending/Shapiro; clock-half push independent of own S); founder question rephrased as 'push'; (9) 'his stated rule (unregistered)'. Optional: item 2 premature-message note; item 3 cross-reference.
+
+---
+
+## Patch 4434 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script and checked the formulas. GR has δ = (2GM/(bv²))(1+v²/c²). The two parts are 2GM/(bv²) and 2GM/(bc²), and the shares the script prints are correct: 0.0001, 0.01, 0.20, 0.448 and 0.50. In PPN terms, δ = (2GM/(bv²))(1+γ_PPN·v²/c²). The time-time (clock) part alone gives exactly 2GM/(bv²) at every speed, and the γ factors cancel. So the split, the "isotropic coordinates, a way of keeping the books, not an invariant" caveat, and "the remainder is the same at every speed (as an angle)" are all correct. The claim that 4403 found the limb half gives half of light's bending is accurate (4403 §6, line 89). 4403 §3 also defines the limb push as a "change of drift per Moment", which is an acceleration.
+
+**Required changes**
+
+1. **Units error in §3 (the text, not the script).** "δ = (2GM/(bv²c²))(1+v²/c²)" and "Newtonian part, 2GM/(bv²c²)" have the wrong dimensions unless v means β. Write δ = (2GM/(bv²))(1+v²/c²) and Newtonian part 2GM/(bv²), or say v is in units of c. The script's G = c = 1 is fine.
+
+2. **"Speed-dependent" is used for something whose angle does not depend on speed.** The title says "the Remaining, Speed-Dependent Part" and §3 ends with "a speed-dependent refraction by the PSR". But the remainder 2GM/(bc²) is the same angle at every speed; only its share of the total changes with speed. Change both to something like "the part that does not shrink with speed (it matters only near c)", so they match §3's own correct sentence.
+
+3. **The founder's words are slightly shifted.** §1 says "the electron's velocity has no effect on it [the push]". He actually wrote: "The velocity of the electron has no effect on the inner and outer limb gradient." That is about the gradient, which obviously doesn't depend on the electron's speed. 4433's question was about the response: whether the electron's own large S changes how much that gradient moves it. Reading his "the gradient produces the gravitational effect" as covering the response is reasonable, but it is Claude's reading. Quote him exactly in §1. In §2 and §7, mark "the push (drift change per Moment) is independent of the CP's own S" as Claude's reading of his two sentences together. Then the §4 item should say 4433 item 5 is "answered by the founder; response normalization read by Claude", not closed outright.
+
+4. **The relativistic form of the push is missing, and this is the point 4424 needs.** The Newtonian part 2GM/(bv²) at every speed needs the transverse acceleration to be independent of speed, meaning the drift change per Moment (4403 §3). A speed-independent force would not do it. 4424 gives γm inertia across the motion, so a speed-independent force would give 2GM/(bγv²) instead. In the g₀₀-only geodesic, dp⊥/dt = γm·g, so the effective "force" grows with γ, in proportion to energy. Add one sentence: "his velocity-independent push must be a velocity-independent drift change per Moment (an acceleration), equivalently a force ∝ γ, consistent with 4424's γm transverse inertia; a speed-independent force would undershoot by 1/γ." Add this to §4 as an owed item (and to todolist.md per D-9) unless 4403's drift reading is taken as settling it.
+
+5. **The founder question risks double counting.** The analogy to a light beam is imprecise. Under WC-DP-SEA-PV (n = K = 1 + 2U), the light-speed gradient already gives light its whole bending, 4GM/(bc²), clock half included. For the electron, the extra part is only 2GM/(bc²), which is half of what that same gradient does to light. As worded ("does that difference in light speed … also turn the electron's path, the way it turns a beam of light?"), a "yes, the same way" would add the full refraction on top of the limb push and overshoot. Reword in a physical picture without suggesting an answer, for example: "For a light beam, the slower light speed near the Earth accounts for all of its bending. For a fast electron, the limb push already does part of the work. Does the slower space near the Earth turn the electron's path as well, and if so, by the same amount as it turns light, or by a different amount?" Also say in §3 that for light the K-refraction contains both halves.
+
+6. **Missing citation.** For the space half, cite 4389 and 4397 alongside 4415 condition (ii). Those are what 4403 §6 names as supplying the rest of light's bending.
+
+**Optional notes**
+
+- "Neutralized = kept out of the step" is properly marked as Claude's reading in §2, §4 and §7. The mechanism under AP-4 is correctly listed as owed. That part is fine.
+- Closing the "trajectory part" of 4432 item 4 "for the limb half" is acceptable once change 3 is made. The weak-field limb rule still has no perihelion term (4403 §6), so non-radial orbits still need C5's full geodesic. A short reminder in §4 would prevent over-reading.
+- §6's "exactly twice as much" for light is correct (with PPN γ = 1).
+
+Files reviewed:
+- /root/CPP/series_standard_model/axiom_maturation/4434_background_neutralized_push_independent_of_speed.md
+- /root/CPP/series_standard_model/code/4434_deflection_by_speed.py
+- /root/CPP/founders_voice/4434_background_neutralized_limb_gradient_velocity_independent.md
+- /root/CPP/series_standard_model/axiom_maturation/4403_how_gravity_moves_a_cp.md (§3 line 40, §6 line 89)
+- /root/CPP/series_standard_model/axiom_maturation/4424_electrons_by_relativity.md (γ³/γm inertia, line 21)
+- /root/CPP/series_standard_model/axiom_maturation/4433_two_roles_of_ssv_abs.md (item 5, line 108)
+- /root/CPP/axiom-registry.md (WC-DP-SEA-PV)
+
+## Claude's response to the 4434 return (not part of the verbatim report)
+
+All six taken in: (1) units corrected (δ = (2GM/(bv²))(1+v²/c²)); (2) 'speed-dependent' replaced (same angle at every speed; share grows); (3) his words quoted exactly; 'push independent of own S' marked Claude's reading; 4433 item 5 'answered by the founder, response normalization read by Claude'; (4) the push as an acceleration (force ∝ γ, 4424's γm; speed-independent force undershoots by 1/γ) added and owed; (5) founder question reworded to avoid double counting (light's refraction contains both halves; the electron needs only 2GM/(bc²) extra); (6) 4389 and 4397 cited. Optional: perihelion reminder added.
