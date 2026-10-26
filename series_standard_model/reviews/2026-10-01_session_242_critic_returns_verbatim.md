@@ -3775,3 +3775,49 @@ Files reviewed: /root/CPP/series_standard_model/axiom_maturation/4432_proximity_
 ## Claude's response to the 4432 return (not part of the verbatim report)
 
 All seven taken in: (1) the continuum 1/r² at l_P flagged as not CPP-native (R-DIBIT family exclusion, inward fill); (2) 4355's relay cited (distant sources as relayed register state, 1/r statics); the tension reframed as which register SSV_abs is (AP-4 Σ|E| vs census Φ); (3) AP-4 co-located partners giving E ≈ 0 named as the first check; (4) the gravity cost stated (Earth ~1e-30 of the own cloud vs U ~ 7e-10); (5) 'Closed' downgraded to 'answered in principle, closure pending'; (6) founder question replaced by the co-location picture; (7) robustness stated (1/r²: down to realness ~1e-33; 1/r: short by ~1e9 even fully real); docstring fixed. Optional: universe 1/r sum and Mach-like baseline; rest-value M flag; '10 km' sentence as a G-sized bound; 'quantum-dimension thick' added.
+
+---
+
+## Patch 4433 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I checked the founder file, the 4432/4403/4415/4425 text, the registry at about lines 389–430, and todolist entry 4432. I ran the script and redid its arithmetic. Earth: N = 3.57e51, N/r = 5.6e44, N_u/R_u = 2.27e53, fraction 2.47e-9, GM/(rc²) 6.96e-10. Sun: 3.50e-8 against 9.87e-9. The ratio c²R_u/(GM_u) comes out at 3.55. The numbers are correct. The founder's words are quoted accurately in §1.
+
+**Required changes**
+
+1. **Sum or mean in the relay (§2).** The registry's 4355 entry says a far CP is read at one GP "whose state is the **mean** over its whole PSR shell", and that this is why the relay is lossless and Laplace (the mean-value property). The founder says each GP emits "the integrated **sum**". §2 says "the registered rule … is his" as if the two were identical. They agree only up to a factor: the number of GPs on the shell. That factor changes with PSR inside a well, and without it a raw sum grows at every hop. Say this plainly. Either add "the 4355 mean equals his sum divided by the shell count, and the lossless 1/r result needs that normalisation", or list the gap as open. Do not assert identity.
+
+2. **Census units (§3).** 4403's limb rule uses the census u = ΣGM/(rc²), not raw SSV_abs. In census units the cloud's share (G(γ−1)m/(rc²)) is negligible, so the "drowning" problem only exists if SSV_abs is the raw realness-weighted count. State which units §3 uses. Also state that the equal-fall condition means the limb difference is divided by the **background** baseline (K = 1 + 2U is fractional, §4), not by the CP's own S. "Absolute" alone is misleading.
+
+3. **The doc's own baseline outweighs the cloud.** With §4's baseline, N_u/R_u ≈ 2.3e53 per metre. A single fully real charge even at l_P gives only about 6e34. So in count units the background exceeds the near cloud at the CP's GP by at least about 1e18. 4425 already warns that adding to S without adding to V pins f near zero, which is the dilution problem. So the two-roles split is not optional: f = |V|/S must use the CP's own share only, and AP-4's summation at a GP does not tell sources apart. Say this in §4 and §5. It is the main open condition, and it changes 4432's picture: with this baseline the far universe dominates the GP, not the near cloud.
+
+4. **4432 item 4 (gravity cost) is only half closed.** As written in todolist 4432, item 4 is gravity's action on the moving electron's **clock and PSR**. Those depend on the amplitude U through K, not on the gradient. The gradient argument answers only the trajectory part. The clock/PSR part rests on the open two-roles synthesis. Mark it "trajectory part answered; clock/PSR part carried with the two-roles synthesis."
+
+5. **4432 item 5 also contains the vacuum baseline.** Item 5 covers both paired DPs and the vacuum baseline. Close only the paired-DP half. The baseline is open in §5, but carry it explicitly under the 4432 item number in the todolist entry (D-9).
+
+6. **Counting real charges is not proportional to mass (§4).** "Nucleons as the unit of real charge" hides a problem. A count of fully real CPs (quarks plus electrons, at 100% each) per unit mass differs between H and Fe by a large fraction. The founder's rule, "only fully real CPs for 100%", read as a count, would break Eötvös/MICROSCOPE composition tests, which hold to about 1e-15. Gravity must follow mass-energy, including binding energy. The 3.54 match holds only because the script set N ∝ M by assumption. Add this as an open condition: the realness weighting must sum to mass-energy (this links to 4431's (γ−1)M).
+
+7. **The Sciama overclaim.** "It shows that a realness-weighted 1/r sum … gives every body's gravitational potential up to one universal factor" claims too much. Any sum ∝ M/r gives the same ratio for every body, so the Earth/Sun agreement is guaranteed, not evidence. The only content is that the factor is of order one. Reword. Also add to §5:
+   - The point-mass form N_u/R_u is an approximation. A uniform sphere seen from its centre gives (3/2)N_u/R_u, so the factor becomes about 2.4.
+   - A sum out to cosmic distances depends on the cosmology: the horizon, expansion, and retardation (the relay runs at c, so it sums over the past light cone).
+   - G set by R_u/M_u implies G varies over cosmic time unless that ratio stays fixed. Lunar laser ranging limits this to |Ġ/G| ≲ 1e-13 per year.
+
+8. **The equal-fall citation (§3).** MICROSCOPE tests whether fall depends on composition. It does not test fast electrons. Cite what actually applies: free fall of internal kinetic and binding energy (WEP tests) and the photon limit (light bending, Shapiro delay). Also note that GR's deflection of a fast particle depends on its speed. 4403 itself says the limb (clock) half gives only half of light's bending. So the condition is "the clock-half push does not depend on the CP's own S". It is not "the same bending".
+
+9. **"His rule" (§4).** He stated the realness weighting; it is not registered, and §8 says "nothing registered". Write "his stated rule (unregistered)". Also note that its replacing 4416's reading (P) for paired DPs is pending registration.
+
+**Checked and fine**
+- The gradient argument: a symmetric, CP-centred cloud gives zero limb difference. The lopsided moving cloud is acknowledged.
+- The two-roles synthesis is consistent with 4415 (step = f × local light speed) and 4425 (f = |V|/S) once change 3 is made. It is marked as Claude's in §4, §5 and §8.
+- The founder question is physical and offers both options, so it is not leading. Optional: phrase it as "the same push across its PSR", not "the same bending", so it fits change 8.
+- Item 2 closure: it rests on the founder's "answered satisfactorily". His premature message breaks off mid-sentence; a parenthetical saying so would help.
+
+**Optional notes**
+- In §5, "Carried: 4432 items 3, 6, 7, 8" matches the todolist numbering. Item 3 ("which register") is partly addressed by §4, which adopts the 1/r census for the background; cross-reference it.
+
+**Plain language:** The arithmetic is right and the founder is quoted faithfully. Three things are overstated. First, the registered relay averages what a GP receives, while he says it sums it; that difference matters and needs saying. Second, the universe-wide background the patch proposes would itself swamp the electron's own cloud, so the "two roles" split becomes essential, not just convenient. Third, counting real charges instead of mass would break the experimental tests showing all materials fall alike. Two closures need trimming: gravity's effect on the electron's clock is still open, and so is the vacuum baseline.
+
+## Claude's response to the 4433 return (not part of the verbatim report)
+
+All nine taken in: (1) his sum vs the registered shell mean stated (shell-count normalization; open); (2) census units stated; equal fall as normalization by the background, not the CP's own S; (3) the baseline outweighs the near cloud ~1e18 in count units: the two-roles split stated as required and the main open condition; 4432's picture reversed; (4) 4432 item 4 partly answered (trajectory), clock/PSR carried; (5) 4432 item 5's baseline half carried; (6) realness weighting must sum to mass-energy (composition tests); script assumption noted; (7) Sciama reworded (guaranteed ratio; only order-one content), with sphere factor ~2.4, cosmology/past light cone, Ġ/G caveats; (8) equal-fall citation corrected (WEP of internal energy; light bending/Shapiro; clock-half push independent of own S); founder question rephrased as 'push'; (9) 'his stated rule (unregistered)'. Optional: item 2 premature-message note; item 3 cross-reference.
