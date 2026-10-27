@@ -4211,3 +4211,58 @@ All nine taken in: (1) "the 4415 rule picks it" replaced throughout by "given fu
 
 All six taken in: (1) §4 retitled "How this differs from the version 4438 dropped, and what it needs": the candidate is 4438's per-beat delivery with equal resistance γm in every direction; it survives only if a fast CP's f responds equally in all directions, against 4424's along inertia; §8 names the price; (2) stated that both factors are 1/γ, so the decomposition is fitted, not tested; (m/E)² cited to 4438 in the title and §3; script Part 3 labelled illustration; (3) §2 reworded: his structural clause fits 4436's split, on Claude's reading; "bends like light" alone does not decide; (4) the DP-fraction ↔ energy-share matching marked as Claude's; the rest share is the central CP with the rest organization it still holds; the fixed-m tension in his limit added as owed; (5) §6 now offers four options, including (a) every Moment with greater resistance along and (c) the whole organization, plus a set-drift vs less-drift question; §7 says "one candidate"; (6) todolist 4439 entry written; 4438 item 7's "dropped" disposition updated. Optional notes taken: Aichelburg–Sexl and GR's ultra-relativistic end point added; Weizsäcker–Williams refined; the linear m/E weight marked as Claude's quantification.
 
+---
+
+## Patch 4440 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES.** The math is right. The framing turns his (a) into (c), and it overrides two of his 4437 statements while naming only one. The owed items were never written.
+
+  **What I checked (script run, results reproduced)**
+  - **GR values.** Isotropic weak-field GR gives 1+v² across and 1−3v² along, exactly. Clock-only gives 1 across and 1−2v² along. So the space part is +v² across and −v² along, and −2v² along = clock −v² + space −v². That is correct.
+  - **The force candidates.** E·g over 4424's inertia gives g across and g/γ² along, so the totals match GR exactly. m·g and (m/γ)g fail. Confirmed.
+  - **The speed-follows-c/K term.** It is legitimately the 4415 rule: 4436 line 39 has s = f·c/K. "Half-Snell turning = relativity's space part" is correct. One mixed point should be said out loud: the speed magnitude follows the full K (clock half plus space half), but the turning follows only the space half. The clock half of the turning is replaced by the push.
+  - **Uniqueness.** "Others are not excluded" (§8) is the wrong caveat. Given the kinematic terms and a force that is the same in every direction, the across equation fixes F = γm·g uniquely, and the along direction is then a real, passing check. I also checked: with 4424's inertia and full-Snell turning, no direction-independent F works (across forces F = (m/γ)g, and then along gives 1−4v²). The real non-uniqueness is the choice of split. 4436's split, with equal response in every direction, also matches GR.
+  - **No double counting.** Force on E acting against γm is ordinary relativistic mechanics. "Realness is mass" is exactly why the force is E·g.
+
+  **Required changes**
+  1. **He picked (a), not (c).** 4439 §6 framed the question as how the push reaches *the rest part*, and listed (c), "the push reaches the whole moving organization," as a separate option. He chose (a) and did not choose (c). 4440 concludes that (a) needs the push on the whole energy, which is (c). Say this plainly in §1, §2 and §4: (a) taken as framed (push on the rest part, every Moment, 4424's inertia) is the m·g row and misses GR by 11% sideways at half light speed. Matching GR needs (a) plus (c). Retitle accordingly. "(a) settles it" (§7) overstates his answer.
+  2. **There is a second conflict with his 4437 words.** In 4437 he said "light, with no rest mass, only turns" (4437 lines 1 and 36). 4440 §3 calls "light only turns" 4436's, says it describes the same refraction, and moves on. Do three things:
+     - Name it as his statement.
+     - Mark the reconciliation as Claude's reading: his "only turns" taken to cover the whole refraction by K, which can be split into a push half and a turning half.
+     - List it in §4 beside "the push works on the rest mass."
+     Note that 4403 §6 ("the limb rule (the clock half) gives only half the bending") already sat in tension with 4436–4439's reading of light as unpushed. Owning that is right, but own it across the series.
+  3. **Withdraw 4439 §2's reading by name.** That reading said his structural clause fits 4436's split, with the push fading to zero at light speed. 4440 now has a near-light electron feeling the full push with half-rate turning. "4439's continuity still holds" is true only under the new reading of light. Say that 4439 §2's conclusion is withdrawn and now neutral, as 4438's argument is.
+  4. **Balance the conflict with 4437.** It is stated, but too lightly given that he chose (a) without seeing this consequence. Present it as a fork, not an overturn: either
+     - (a) with (c), the push on the whole energy, which matches GR; or
+     - he keeps the push on the rest part, which needs equal response in every direction (4436/4439's route, against 4424's along inertia) or misses GR.
+     Do not treat 4437's rule as replaced until he answers.
+  5. **The founder question (§6) leads.** "Relativity needs…" and "that is what the limb push already does to light" point at one answer. State both consequences evenly: if it pushes the DP pairs that carry the motion, everything matches GR. If it pushes only the CP and cloud, a fast electron bends about 11% too little sideways at half light speed, unless it answers a push equally in every direction. The physical-picture question itself is fine.
+  6. **Puzzle over-read (§5).**
+     - His words say the CP and cloud keep their integrity. They do not say the kinetic energy is carried by "further" DP arc-separation "in the sea around it" rather than by the cloud's DPs. Cloud DPs are sea DPs, so the second horn (the cloud's DPs do both jobs) is not excluded.
+     - His own 4439 statement that only the central CP is not carrying the kinetic energy is reinterpreted as "a statement of proportion" without marking it.
+     - Mark both as Claude's reading, and drop "resolves … without either horn."
+  7. **Founder words.**
+     - The reading of the garbled clause is flagged as Claude's in §1, but the §1 bullet states it as his answer before his words appear. Lead with the verbatim words.
+     - The founder file's title ("Diminishes as the Sea's Organization … Grows") also presents Claude's reversed reading as his. Reword it neutrally or mark it.
+     - The reading itself (reversed sense) is reasonable.
+  8. **D-9: nothing is recorded as owed, and todolist.md has no 4440 entry.** The deferral gate passes only because the doc avoids deferral words. Add a "What stays open" section and a todolist entry covering:
+     - the founder question;
+     - **4424's across γm is imported from relativity** (4424 lines 59–60), and the whole result rests on it;
+     - the half-Snell rate, and the split of speed following the full K versus turning following the space half of K, are Claude's quantification, with no CPP mechanism;
+     - his unanswered second 4439 question: does each push shift the drift by a set amount, or does a faster electron drift less? Under (a) with 4424's inertia, a faster electron drifts less along its path;
+     - dispositions: the (m/E)² mechanism owed from 4437/4438 is moot under 4434's split (still open if he keeps the rest-mass push), and 4439's per-beat candidate is set aside;
+     - carried from 4436: second order and perihelion, WC-DP-SEA-PV (γ=1 put in), bound-system equal fall, and the earlier carried items.
+
+  **Optional**
+  - "Now complete in both directions" (§2) slightly overclaims. 4436 §4 and the 4436 todolist entry already noted that a weight ∝ γm with 4424's inertia gives g across and g/γ² along, which is 4434's split. Say "confirmed under his (a)."
+  - Label the turning rate in the (m/γ)g table row (it is half-Snell).
+  - §2 could state the stronger uniqueness result (the third physics point above) in place of "others are not excluded."
+
+  **Plain language:** The arithmetic is correct. A push on all of the electron's energy, plus the slower space near the Earth turning it at half light's rate, matches relativity exactly, and the other two candidate pushes don't. But Thomas picked "the push acts every Moment," not "the push reaches the whole moving organization." The patch quietly turns the first into the second, and it overrides his earlier "light only turns" without saying so. It should put both conflicts to him evenly, mark the readings that are Claude's, and write the open items into todolist.md.
+
+  Files: /root/CPP/series_standard_model/axiom_maturation/4440_the_push_every_moment.md, /root/CPP/founders_voice/4440_push_every_moment_integrity_fades_with_ke.md, /root/CPP/series_standard_model/code/4440_push_every_moment.py, /root/CPP/todolist.md
+
+## Claude's response to the 4440 return (not part of the verbatim report)
+
+All eight taken in: (1) (a) as framed (push on the rest part) shown as the m·g row, 11% short; the match needs (a) with (c); title, §1, §2, §4, §7 reworded; (2) "light only turns" named as his 4437 statement, the halves reconciliation marked as Claude's, listed in §4 beside "the push works on the rest mass"; the 4403 §6 tension owned across the series; (3) 4439 §2's reading withdrawn by name as neutral; (4) the conflict put as a fork (Path 1: (a)+(c); Path 2: keep the rest-part push with equal response, against 4424, or miss GR); 4437's rule stands until he chooses; (5) §6 states both consequences evenly; (6) the puzzle marked as Claude's reading, both horns left open, "without either horn" dropped; (7) his verbatim words lead §1; the founder file title neutralized; (8) "What stays open" added (§8) and todolist 4440 entry written. Optional notes taken: "confirms 4434's split under his (a)"; the stronger uniqueness result stated in §2; the (m/γ)g row labelled.
+
