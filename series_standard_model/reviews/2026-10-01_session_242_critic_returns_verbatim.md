@@ -3915,3 +3915,58 @@ I ran the script. Its output matches the tables in the fragment. The physics is 
 ## Claude's response to the 4435 return (not part of the verbatim report)
 
 All six taken in: (1) his 'negligible at non-relativistic speeds' answered (nucleons 0.2–0.3c, Pt 1s electrons ~0.57c; a v^n rule needs n ≳ 20, a near-step at c; script part 2 extended); §6 reworded; (2) the charitable reading added: GR's sideways 1+v² is 'falls faster with speed', entirely the space (γ) term = his component (1); component (2) adds nothing to passive fall, for the electron and light; (3) 'gravitates' vs 'is pulled' separated; (4) founder question replaced by the Pt/Ti picture, no answer in parentheses, 'same mass'; (5) reversal 'above about 0.58c'; (6) 'motions together with the binding'. Optional: docstring cleaned; Cassini 'via γ, ~1e-5'; PV mass rule m ∝ K^(3/2) linked as the open item; the difference confirmed as calculated and measured.
+
+---
+
+## Patch 4436 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script (about 40 s). It reproduces the doc's tables exactly. The algebra and the GR comparison are correct. The problems are in how the result is framed, in a conflict with 4424 and "realness is mass" that the doc does not mention, and in the founder question.
+
+**Checks**
+
+1. **Algebra (correct).**
+   - Signs: ∇U = g, so ∇lnK = 2g. With s = f/K, ds/dt = −s(u·∇lnK). Snell turning toward higher K gives dn/dt = s∇⊥lnK. Together these give du/dt = 2s²g − 4(u·g)u.
+   - GR at first order in GM (isotropic coordinates, γ = β = 1): a = g(1 + v² − 4U) − 4(v·g)v. Linear in GM, this holds at every speed, not only at low speed. Dropping −4Ug is fine for bending.
+   - Uniqueness: P = 1 − s² is unique only on the stated assumption that the push points along g with an isotropic size P(s). The genuine check is that one P matches both the sideways component (1 + v²) and the along-field component (1 − 3v²). The doc should say that this is where the content lies.
+2. **Script (correct, but not an independent test).**
+   - The integrator is fine (semi-implicit Euler, dt = 0.02/v). The finite-path factor √(1 − 1/L²) has the same size as the true L/√(L² + b²), and both are negligible.
+   - But it integrates the closed-form a, which Part 1 already showed is identical to GR's. So Part 2 only confirms that GR's acceleration integrates to GR's deflection. It never runs the CPP step rule itself (f stored, n turned at the Snell rate).
+   - P is applied to the coordinate speed s rather than the local ratio f. For light this gives P ≈ 4U instead of 0. That is second order, so harmless here, but the text should define P(f).
+3. **The Snell-rate turning is legitimate for a particle, and the doc can say why.** In GR, a particle's path follows the Jacobi–Maupertuis "index" n_J = K·√(E² − m²/K). Its gradient is ∇lnK·[1 + m²/(2p²)]. Multiplying out, s²·dn/dl = 2s²g⊥ + (1 − v²)g⊥. So the decomposition is exactly the geodesic at this order: a full Snell term plus a rest-mass term.
+   - The fading push is therefore the rest-mass term of the matter index. Equivalently, g·m²/E²: it acts on the rest-mass fraction, not on energy or realness.
+   - It is not PV's mechanism (PV uses a Lagrangian with m ∝ K^{3/2}). The doc's "which PV supplies through its mass rule" should say "plays the role PV's mass rule plays."
+   - Reading his limb picture as the full Snell rate at every speed is Claude's quantification and should be labelled so.
+
+**Required changes**
+
+1. **State the conflict with 4424 plus "realness is mass."**
+   - Weight ∝ γm (realness as mass), with 4424's inertia (γ³ along the motion, γ across), gives g across and g/γ² along. That is 4434's split, not an isotropic 1/γ².
+   - Combined with 4436's full Snell term, it gives g(1 + 2v²) across: light would bend 3/2 too much.
+   - Under 4436's split, the push must couple to the rest-mass fraction (m²/E²), and the motion's gravity enters through the refraction. §1/§2/§7 present "realness is mass" and the fading push side by side as if they fit together. They need reconciling, or the tension should be flagged as owed.
+2. **Revise how 4434 is described.** 4434's split (push g across with γm inertia, plus a half-strength space part of 2GM/(bc²)) is also GR-consistent. It was not a misreading. What rules it out is the choice of full Snell-rate refraction under the 4415 rule. Say "given the 4415 rule with full Snell refraction, 4434's split is unavailable," not "4434's reading revised" as if it were wrong.
+3. **Don't claim the items are closed.**
+   - 4435 item 4 (the missing mass rule) is moved into "why P = 1/γ²," not closed.
+   - 4434 item 2 is supplied, but in a different bookkeeping.
+   - Replace "solved" in the title, §3 and §7 with "reproduced, given K = 1 + 2U (γ = 1 is put in), 4415's rendering, Snell-rate refraction, and a fitted P(s)." The PD-008 note already concedes this.
+4. **Redo the founder question (§6), which is leading and also physically off.** It proposes the mechanism Claude needs ("less to work with near light speed") and invites a yes.
+   - That mechanism is ordinary relativistic inertia saturation. It is direction-dependent (γ³ along, γ across) and cannot give an isotropic 1/γ².
+   - Ask instead in a physical picture, with alternatives. For example: does the limb push act on the CP's own resting organization only, while the bending from its motion comes from the slower inner limb? Or does the push act on the whole moving organization, including its realness?
+   - Drop "candidate: the part of the step not spent keeping pace" from §4/§5, or test it first.
+5. **Shapiro delay is first order in U.** Move it out of "Second order" in §5.
+6. **Equal fall for bound systems (§2).** In this bookkeeping, a constituent's acceleration depends on its speed: the average over directions is g(1 − ⟨v²⟩/3), exactly as in GR. Equal fall for composites then needs the binding fields to gravitate as in GR (the virial cancellation, as 4435 said). Say that this is required and not shown, rather than "every body falls at the same rate whatever its internal speeds."
+7. **Script.** Label Part 2 as a consistency check. Better still, add a run that integrates the actual step rule (store f, update speed s = f/K, turn n at the Snell rate, add the push to f) and confirm it matches.
+
+**Optional notes**
+- The Jacobi-index derivation in check 3 would make a strong addition to §3. It turns "fitted P" into "P is the rest-mass term of the matter-wave index," which is a concrete target for the CPP mechanism.
+- Perihelion needs more than K's 2U². It also needs the −4Ug term and second-order pieces of both the push and the refraction. Say so in §4/§5.
+- "The split is not invariant" is correctly stated. Keep it.
+
+Files reviewed: /root/CPP/series_standard_model/axiom_maturation/4436_bending_of_light_and_electrons_from_the_4415_rule.md, /root/CPP/series_standard_model/code/4436_bending_solved.py, /root/CPP/founders_voice/4436_equal_fall_accepted_realness_is_mass.md (with 4434, 4435, 4415 and the WC-DP-SEA-PV entry in axiom-registry.md). No files edited.
+
+**Plain Language:** The math is right. A particle that slows near a mass and turns toward the slower side does bend exactly as relativity predicts, provided the ordinary pull of gravity weakens as the particle nears light speed. But the write-up claims too much ("solved"). It doesn't say that this weakening clashes with the earlier "realness is mass" dynamics. And it asks the founder a question that suggests its own answer, using a mechanism that wouldn't actually produce the needed weakening.
+
+## Claude's response to the 4436 return (not part of the verbatim report)
+
+All seven taken in: (1) the tension with 'realness is mass' + 4424 inertia stated (weight ∝ γm gives 4434's split; with full Snell refraction light would bend 3/2); push coupling to the rest-mass fraction under this split; founder question put; (2) 4434's split described as GR-consistent, ruled out here only by the full-Snell choice; (3) 'solved' replaced by 'reproduced under stated assumptions'; 4435 item 4 moved, 4434 item 2 supplied in a different bookkeeping; (4) founder question replaced by the core-vs-whole-organization picture, the 'less room' mechanism dropped; (5) Shapiro first order; (6) equal fall for bound systems stated as requiring binding fields to gravitate as in GR; (7) Part 2 labelled a consistency check and Part 3 added, running the step rule itself (matches GR at every speed). Optional: Jacobi-index derivation added (the push as the rest-mass term m²/E²); perihelion needs −4Ug and second-order pieces; P(f) defined.
