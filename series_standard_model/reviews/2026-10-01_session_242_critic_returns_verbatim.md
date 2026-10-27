@@ -4379,3 +4379,55 @@ All eleven taken in: (1) §2 and §6 say the measurements fit Path 2 as well; Pa
 
 All ten taken in: (1) "whole motion" → path shape and sideways acceleration; the along motion from conserving E in the same metric, where the clock half enters; (2) reading (ii) imports the metric and mass shell; 4424's inertia absorbed, not removed; "settled" made conditional on WC-DP-SEA-PV and K = 1 + 2U; (3) the split question remains a mechanism question; (i) and (ii) stated as differing only in mechanism; (4) COW history corrected (1975 ~10% agreement; Staudenmann 1980 and Littrell 1997 sub-percent with a ~1% discrepancy; Peters–Chung–Chu 1999 atom interferometry ~3 ppb); "exactly" removed; (5) COW tests the slow-speed limit (Schrödinger in mgz), not the ruler term, 1 + v² or K; (6) the threshold argument restated: no measurement excludes it; disfavoured only by GR-consistency at unmeasured speeds; §7 rewritten; (7) the founder question now has four options, including a wave whose fall comes from the push; "exactly" and the mixing aside dropped; (8) "a quarter more" → "about a fifth more"; (9) the title marks reading (ii) as Claude's synthesis, no "whole motion" or "no threshold"; (10) todolist 4442 entry written (reversing 4441 item 9's "(m/E)² mechanism moot"). Optional notes taken: the splits as regroupings (literal 2g − g(m/E)²), script Part 3 derived from n², sharp vs gradual threshold.
 
+---
+
+## Patch 4443 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+  I checked the 4443 doc, its script (ran cleanly), the founder message, 4418, 4265, PROP.md, 4442 and the todolist entry for 4442. The founder's words are rendered faithfully. The 4418 quote is verbatim (line 45) and fairly cited; 4418 lines 49–50 ("the CP remains the focus of the mass' velocity, even if it does partner switching") would also support the drag reading. All numbers check out. The dispersion algebra is correct. The problems are in what the doc claims, not in the math.
+
+  **Numbers (all confirmed)**
+  - **Electron:** f_C = 1.236e20 Hz, period 8.09e-21 s, 1.50e23 Planck times.
+  - **Neutron:** f_C = 2.272e23 Hz, period 4.40e-24 s, 8.16e19 Planck times.
+  - **Moment caveat:** present and adequate.
+  - **De Broglie:** h/(m_n × 2700 m/s) = 1.465 Å, so 1.47 Å is right.
+  - **Dispersion:** for g00 = 1/K and g_ij = K δ_ij, Klein–Gordon gives ω² = (ck/K)² + ω_C²/K, and n² = K² − K(m/E)² follows (ω is the conserved E/ħ). Writing ω_C²/K is the same as the rest clock slowed by K^(−1/2), so the clock-slowing statement is consistent.
+  - **ZBW factor 2:** correct. Dirac's 2mc²/ħ is twice the rest beat's angular frequency mc²/ħ.
+
+  **Required changes**
+  1. **"Phase relayed at c/K" is wrong for a mass (§3 bullet 3, §4, §6).** From the dispersion:
+     - phase speed = c/n, which is more than c/K, because n < K;
+     - group speed = dω/dk = c·n/K², which is less than c/K.
+
+     c/K is the wave operator's characteristic (front, or high-frequency) speed. That is light's speed and the speed of the relay itself, not the phase speed of a massive wave. Suggested wording: "the pattern handed on with the local light speed c/K as its front speed, as light's is."
+  2. **"A relayed pattern is a wave … has a phase and can interfere" is overclaimed (title, §2, §6).** A relay explains why no carrier transits: it is a pattern, not a body. But a relayed pulse or soliton need not interfere. Interference needs two things: a periodic phase (the beat and crests of §3) and superposition, meaning two relayed copies that add rather than one overwriting the other. §3 itself concedes that the beat and crests are not yet shown. Suggested restatement: "a relay is the kind of thing that can be a wave; it is a wave if its pattern carries a repeating phase and two copies add." Make the same fix in the §6 sentence "A pattern handed on like that is a wave" and in the title's "naturally a wave".
+  3. **The rest beat is not what the neutron interferometer tests (§3 lead, §6).** In slow-neutron interferometry the mc²/h phase is common to both arms and cancels. COW (Colella–Overhauser–Werner, the 1975 neutron gravity interferometer) tests h/p and the gravitational phase that comes from conserving E. The rest beat is needed for the index's rest-mass term, i.e. relativistic consistency of the phase (Et − px)/ħ. Reword to: "for the index, the pattern must carry the rest beat; for the interferometer, crests at h/p and a phase that responds to gravity."
+  4. **The ZBW candidate is described more firmly than the corpus supports (§3, §5).**
+     - 4265 rules on the up quark passing through its CP vertex. The electron's ZBW is the 4295 "dual pass-through rod", with the +eCP shuttling.
+     - "With its rate tied to the rest energy" needs a citation or a hedge. The corpus disagrees on the ZBW rate. The SM-1 development transcript derives f_ZBW ≈ 1/(2t_P), a Planck-scale rate. The SM-8 transcript says "the ZBW frequency IS the mass", which is Compton-scale and, it notes, circular.
+     - A Planck-rate ZBW would sit at the swap scale, not the beat. That is the very distinction §3 draws. State this conflict, and phrase the §5 option as "a Compton-rate ZBW cycle of the electron's shuttling +eCP, if CPP's ZBW runs at that rate".
+  5. **"Of the four options, his is closest to the first" (§2).** His answer, the partner-changing relay, is really option 4 ("something else"). It shares only option 1's conclusion that even a slow particle is a wave. Say that.
+  6. **Relay plus drag is not needed to explain why mass moves slower than c/K (§2, §4, §6).** The dispersion already gives a group speed below c/K from the rest term alone. Keep the drag reading flagged as Claude's (it is), but note it must coincide with the rest term, not add to it. Otherwise it double counts, the same trap 4442 §2 avoided.
+  7. **Fill in the critic line, and write the D-9 todolist entry 4443 in the same patch.** The entry should list:
+     - (a) founder question 4443 §5 (what completes one cycle of the rest beat; what sets the crest spacing);
+     - (b) the beat at mc²/h in CPP terms, including reconciling the conflicting ZBW rates (1/(2t_P) vs Compton) and the factor 2 against Dirac;
+     - (c) crest spacing h/p from the relay (PROP-6);
+     - (d) the relay's front speed c/K for a mass's pattern (corrected wording);
+     - (e) superposition, i.e. why two relayed copies add (the interference requirement in change 2);
+     - (f) relay plus drag as Claude's reading, to be shown identical to the rest term (change 6);
+     - (g) carried: 4442 items 2–9;
+     - (h) dispositions: 4442 item 1 answered; item 3 partly addressed (relay picture), still owed in CPP terms; item 4 given a physical reading (rest beat as clock), still unshown.
+
+  **Optional notes**
+  - The question to the founder is physical and lists "something else". Putting Claude's ZBW candidate first leans the question slightly; it would be more neutral to order the options without a favourite.
+  - COW's stated wavelength is 1.445 Å (about 2.74 km/s). "Matches the ~1.4 Å" is fine; saying "1.445 Å" would be more exact.
+  - The founder's "photon has little permanent displacement" fits light moving at c, because it is the CPs that barely move, not the pattern. The doc handles this correctly. There is one tension to state: §2 says a slow particle "is always a relay", yet a mass's CPs "may actually displace". So a mass is a relay plus some carriage, and §2 should say so.
+  - PD-008: the convenient branch and Claude's readings are properly marked. Add the corrected c/K wording under "Not claimed / standard".
+
+  **Plain Language:** The doc reports the founder's words correctly, and its sums are right. It overstates three things: that any relayed pattern must interfere like a wave, that the slow-neutron experiment tests the rest-energy beat (it doesn't, because that beat cancels between the two paths), and that a massive wave's phase travels at the local light speed (it travels faster; the particle itself travels slower). CPP's ZBW is a fair candidate for the beat, but the corpus gives two different speeds for it, and the doc should say so. The todolist entry still has to be written.
+
+## Claude's response to the 4443 return (not part of the verbatim report)
+
+All seven taken in: (1) c/K restated as the relay's front speed; phase speed c/n above it, group speed cn/K² below (script too); (2) "a relay is the kind of thing that can be a wave; it is one if its pattern carries a repeating phase and two copies add" in the title, §2 and §6; superposition added as owed and asked; (3) the interferometer tests h/p and gravity's phase via conserved energy; the rest beat cancels between arms and is needed for the index; (4) the ZBW described per 4265 (up quark) and 4295 (electron dual pass-through rod); the conflicting corpus rates (SM-1: ~1/(2t_P); SM-8: Compton, circular) stated; §5's option hedged; (5) his answer placed as option 4, sharing option 1's conclusion; (6) the drag reading must coincide with the rest term, not add to it; (7) todolist 4443 entry written. Optional notes taken: relay plus carriage for mass (4418 lines 49–50 cited); COW's 1.445 Å; the question's options reordered without the ZBW first; standard speeds listed under PD-008.
+
