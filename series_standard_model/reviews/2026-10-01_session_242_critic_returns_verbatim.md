@@ -4266,3 +4266,57 @@ All six taken in: (1) §4 retitled "How this differs from the version 4438 dropp
 
 All eight taken in: (1) (a) as framed (push on the rest part) shown as the m·g row, 11% short; the match needs (a) with (c); title, §1, §2, §4, §7 reworded; (2) "light only turns" named as his 4437 statement, the halves reconciliation marked as Claude's, listed in §4 beside "the push works on the rest mass"; the 4403 §6 tension owned across the series; (3) 4439 §2's reading withdrawn by name as neutral; (4) the conflict put as a fork (Path 1: (a)+(c); Path 2: keep the rest-part push with equal response, against 4424, or miss GR); 4437's rule stands until he chooses; (5) §6 states both consequences evenly; (6) the puzzle marked as Claude's reading, both horns left open, "without either horn" dropped; (7) his verbatim words lead §1; the founder file title neutralized; (8) "What stays open" added (§8) and todolist 4440 entry written. Optional notes taken: "confirms 4434's split under his (a)"; the stronger uniqueness result stated in §2; the (m/γ)g row labelled.
 
+---
+
+## Patch 4441 — critic return (fresh context), verbatim
+
+**Verdict:** ACCEPT WITH CHANGES
+
+  The script runs and its numbers are right. I checked the γ_ppn formulas on my own by deriving the weak-field geodesic for g00 = −(1−2U), gij = (1+2γU)δij at any speed. Across: a⊥ = (1+γ v²) g, which matches the table. Light: (1+γ)/2 of GR, which matches. Along: a∥ = [1 − (2+γ) v²] g. That is 1−3v² in GR, and 1−2v² at γ=0, which agrees with 4440's "clock-only" result. Part 1 of the script is a consistency check, not a derivation: it hard-codes E·g/(γm), E·g/(γ³m), +v² and −2v².
+
+  **Required changes**
+
+  1. **The empirical claims don't decide the fork, and the doc implies they do.** Light bending and the equivalence-principle tests on bound energy fit Path 2 as well as Path 1. 4437 already counts internal energy as rest mass, and on Path 2 light "only turns" with the full bending. 4440 §4 also says Path 2 matches GR if a fast CP responds to a push equally in every direction. So "if that is what is seen empirically" is met by GR's predictions either way. The choice of Path 1 rests on consistency with 4424's along-inertia and his (a), not on any measurement. Say this in §2 and §6. "The parts that have been measured agree" is true but suggests the fork was tested.
+
+  2. **The Cassini claim is wrong.** Cassini measured the Shapiro time delay, not light's bending: γ−1 = (2.1±2.3)×10⁻⁵. The best bending measurements (VLBI) reach about 10⁻⁴ in γ. Reword §2 to "light's delay and bending (Cassini Shapiro delay, γ to ~2×10⁻⁵; VLBI deflection ~10⁻⁴)".
+
+  3. **The massive-particle statement needs one test added.** SN1987A neutrinos arrived alongside the light, which shows ultrarelativistic massive particles take the same Shapiro delay as photons to roughly 10⁻³ (Longo 1988; Krauss & Tremaine 1988). That is the v→1 limit, where both paths converge, so it doesn't decide the fork either. Intermediate speeds (around 0.5c) are unmeasured. The doc's statement is otherwise correct.
+
+  4. **Reword "he takes Path 1".** Write: "he takes Path 1, conditional on empirics (his words: 'if that is what is seen empirically')". Then show in §2 how the condition stands, following change 1.
+
+  5. **Mark where the reading goes past his words.** His words describe a gradual mixing: "as velocity increases", "increasingly close to light speed", the full energy content "becomes" the entity. Path 1 needs the whole kinetic energy pushed at every speed (E·g at 0.5c too). Partial inclusion at moderate speeds fails GR, as 4439 showed for a linear rest-share weight. "What it covers grows with speed" hides this. Mark "complete at every speed" as Claude's reading (PD-008 convenient branch). Add it to the founder question or log it as owed.
+
+  6. **Name the 4437 statement he reversed, and soften "retired".** In 4437 he said the whole body's arc-separation has "no radial force connection" to the rest mass. His new statement, that the sea's arc-separation mixes into the cloud and keeps the connected-force integrity, reverses that, at least near light speed. Name it. "Cohesion extended" is a fair reading of "retains the integrity of the connected force we described above". But "4437's rest-mass rule … retired" claims more than he withdrew. Use "superseded by his 4441 answer (conditional on empirics)".
+
+  7. **"With nothing fading" (§6) reads as contradicting him.** His whole answer is that the electron's integrity fades. Say "the push doesn't weaken".
+
+  8. **Qualify "reproduces GR's first-order motion" in the §2 body**, as the title already does. Add: given 4424's inertia (imported), the speed following c/K, and the space-half turning at γ_ppn = 1 (a convention, 4392), the split itself being Claude's quantification (4440 item 3). Likewise §6's "What's left at first order is that second half" leaves out the imported inertia.
+
+  9. **Fix the "Carried" line in §4.** The parenthetical (second order/perihelion, WC-DP-SEA-PV, bound-system equal fall) describes 4440 item 7 (4439 items 3–6), not items 2, 3 and 4. Items 2 and 4 are already listed separately above it. Item 3 (half-Snell turning and the split) should be shown as folded into the space-half item.
+
+  10. **The founder question (§5) has a leading preface.** "On his rule, half of that is now the push on light's energy" states Claude's inference as his. Write "on Claude's reading of his rule". "Is becoming light-like" also tilts toward option 1. Otherwise it is physical and offers three real options. Consider adding the completeness point from change 5.
+
+  11. **D-9: the todolist entry for 4441 is missing and is required.** §4 uses "carried" and the open items, so deferral_gate.py will flag the patch. Write it in the same patch. It needs:
+     - (1) the founder question in 4441 §5 (does the mixed cloud turn like a wavefront);
+     - (2) a CPP mechanism for γ_ppn = 1 (4392; crystal shrinking conflicts with 4386 and 4390);
+     - (3) 4424's inertia, imported from relativity;
+     - (4) his second 4439 question, answered by Claude on Path 1 (g across, g/γ² along), awaiting his confirmation;
+     - (5) the puzzle's open part (Claude's lean toward "both");
+     - (6) Claude's light inference, revising "light only turns", pending his confirmation;
+     - (7) the new completeness item from change 5;
+     - (8) carried: 4440 item 7;
+     - (9) dispositions: 4440 founder question answered (Path 1, conditional on empirics); 4440 item 3 folded into (1)/(2); 4440 item 6 disposed of; the (m/E)² mechanism (4437, 4438, 4439 item 2) moot; 4437's rest-mass rule superseded; his 4437 "no radial connection" statement reversed by him.
+
+  **Optional notes**
+
+  - The γ_ppn table could add an along column, which also depends on γ: at 0.9c, −1.43 in GR versus −0.62 at γ=0. If not, add one line saying the along value changes too.
+  - The 4392 history is fair. Calling it a "founder-directed calibration to the empirics" would be more exact.
+  - The light inference is properly marked as Claude's. 4440's question, which he quoted, already said light feels the push, and he didn't object. That is acquiescence, not agreement.
+  - Label script part 1 as arithmetic that combines the assumed pieces.
+
+  Files: /root/CPP/series_standard_model/axiom_maturation/4441_the_whole_energy_cohort_is_bent.md, /root/CPP/series_standard_model/code/4441_space_half_and_ruler_fraction.py, /root/CPP/todolist.md (the 4437–4440 entries are at lines 2593–2596; there is no 4441 entry yet).
+
+## Claude's response to the 4441 return (not part of the verbatim report)
+
+All eleven taken in: (1) §2 and §6 say the measurements fit Path 2 as well; Path 1 is chosen by (a) and 4424's along inertia; (2) Cassini restated as the Shapiro delay (γ ~2×10⁻⁵), VLBI deflection ~10⁻⁴; (3) SN1987A neutrinos added (v→1 limit, ~10⁻³; intermediate speeds unmeasured); (4) "Path 1, conditional on the empirics" with his words, and how the condition stands; (5) "complete inclusion at every speed" marked as Claude's reading, asked in §5, owed; (6) his 4437 "no radial force connection" named as reversed; "retired" → "superseded"; (7) "nothing fading" → "the push doesn't weaken"; (8) "reproduces" qualified in §2 and §6 (imported inertia, c/K, γ_ppn = 1 convention, Claude's split); (9) Carried line fixed (4440 item 7; item 3 folded into the space half); (10) the question's preface marked as Claude's reading, "is becoming light-like" dropped, completeness added; (11) todolist 4441 entry written. Optional notes taken: along column in the γ_ppn table and script; 4392 as a founder-directed calibration; acquiescence noted; script part 1 labelled arithmetic.
+
