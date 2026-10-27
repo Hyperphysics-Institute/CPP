@@ -3970,3 +3970,53 @@ Files reviewed: /root/CPP/series_standard_model/axiom_maturation/4436_bending_of
 ## Claude's response to the 4436 return (not part of the verbatim report)
 
 All seven taken in: (1) the tension with 'realness is mass' + 4424 inertia stated (weight ∝ γm gives 4434's split; with full Snell refraction light would bend 3/2); push coupling to the rest-mass fraction under this split; founder question put; (2) 4434's split described as GR-consistent, ruled out here only by the full-Snell choice; (3) 'solved' replaced by 'reproduced under stated assumptions'; 4435 item 4 moved, 4434 item 2 supplied in a different bookkeeping; (4) founder question replaced by the core-vs-whole-organization picture, the 'less room' mechanism dropped; (5) Shapiro first order; (6) equal fall for bound systems stated as requiring binding fields to gravitate as in GR; (7) Part 2 labelled a consistency check and Part 3 added, running the step rule itself (matches GR at every speed). Optional: Jacobi-index derivation added (the push as the rest-mass term m²/E²); perihelion needs −4Ug and second-order pieces; P(f) defined.
+
+---
+
+## Patch 4437 — critic return (fresh context), verbatim
+
+**Verdict:** ACCEPT WITH CHANGES
+
+I read the patch, the founder file and 4436 §3–4, and ran the script. Its output matches the numbers in the patch.
+
+**Checks**
+
+(1) **Founder representation.**
+- The verbatim filing is complete and well ordered: the 07:00 reply, then the 10:02 message, with Claude's quoted text in brackets.
+- The §1 bullets are accurate. Dropping "chorot" (probably meant as "cohort") is fine.
+- §1 says "His earlier reply read 4436 as saying..." This is neutral, and "Owned" in §8 takes responsibility for the framing. That is fair. His reading was in fact correct for the push under (A); it went wrong only in "do not gravitate" overall.
+- The explanation was given in conversation, and only its Plain Language summary and closing question are on record, through his quotes. §1 paraphrases more than that record shows: "hot ball's thermal motion" and "(A)/(B)" as labels do not appear in the quoted text. See change 1.
+- **Does he select (A)?** For the push, yes, clearly: "gravity works on the rest mass", and the motion's arc-separation "has no radial force connection... the rest mass only perceives the axial". For the turning, "acts on the rest mass also / the entire rest mass" does not contradict (A), but it is not (A)'s wording either. In 4436 the Snell turning is a change of direction that does not depend on mass. His phrase fits only if read as "the whole body, rest mass included, turns together". He never says the turning is full strength rather than half, and never says the turning "carries the motion's effect". Those are Claude's inferences, yet the title, §2 ("the realness gathered by the whole body's motion... acts through the turning") and the script docstring attribute them to him. See change 2.
+
+(2) **Invariant mass.**
+- Two balls: 2γm gives 2.500 at v = 0.6 and 4.588 at v = 0.9. Correct.
+- Electron plus Earth: exactly, M − M_E − m = (γ−1)m − p²/(2M_E) + O(m²/M_E). The script uses this expansion, which is correct and avoids round-off. But §3 says the kinetic energy "adds exactly that much". It is not exact; it holds to first order, with a correction of about p²/2M_E, which is negligible. See change 3.
+- "Cohesion = invariant mass" is fair as stated, given the unbound caveat in §3 and §8.
+
+(3) **The subtlety.**
+- The GR coordinate acceleration in this weak-field gauge is −(1+v²)∇Φ + 4v(v·∇Φ): 1+v² across and 1−3v² along. The turning term is +2v² across and −2v² along.
+- Push g/γ²: 1.250 and +0.250 at v = 0.5. A literal force mg: 1/γ + 0.5 = 1.366 across, 1/γ³ − 0.5 = 0.150 along. All correct, and so are the v = 0.9 values.
+- The Jacobi index is n ≈ 1 − 2Φ − Φm²/p². The transverse ray-curvature acceleration is v²∇⊥ln n = 2v²g + g(m/E)². So yes, the push term is g(m/E)² as a transverse acceleration.
+- The Jacobi index fixes only the path's shape. The along-track component, and so "the same in every direction", comes from the coordinate-acceleration decomposition, not from the index. That is a minor wording issue, optional, because 4436 already makes the same identification.
+
+(4) **Source side.** The remark is fair. One nuance: the far-field mass is the total energy in the observer's frame. It equals the invariant mass only in the system's centre-of-mass frame, which here is effectively the Earth's frame. Optional to add.
+
+(5) **The §6 question.** It is a physical picture and only mildly leading. It is weak, though: the walls do communicate force, so his cohesion criterion arguably already answers "yes". Two balls flying apart (unbound, no walls) is the real test of "cohesion vs bookkeeping". Optional: add it, or replace the box with it.
+
+(6) **Missed.** In GR, cohesion is not just bookkeeping. Averaging free-particle accelerations over an isotropic gas gives −(1+v²)g + (4/3)v²g = −(1 − v²/3)g, not g. A bound body falls at g, with all its internal energy weighing, only when its internal stresses are included (von Laue/Tolman). His "force communicated to the other parts" plays that role. This supports him more than §3 and §8 credit ("bookkeeping same whether bound or not"). It also bears on the gas-in-box question, where the wall stresses are the cohesion. I have not checked that −(1 − v²/3)g line beyond leading order. See change 4.
+
+**Required changes**
+1. In §1, mark that the full explanation is not on file: only its Plain Language summary and closing question survive, through his quotes. Label the hot-ball and (A)/(B) wording as Claude's restatement, or file the explanation text itself as Claude's in a Claude-text appendix.
+2. In the title, §2 and the docstring, separate what he said from Claude's inference. His words select (A) for the push. "The turning carries the motion's effect", full strength and independent of mass, is Claude's reading of "the turning acts on the entire rest mass" as "the whole body turns together". State that reading explicitly, and add it to §8 PD-008 as a convenient inference, or to §6 as a confirmation question.
+3. In §3, change "adds exactly that much" to "adds that much, to first order (correction −p²/2M_E, negligible)".
+4. Add a note to §3 or §5 on the stress/cohesion point in (6): GR's internal stresses do what his cohesion does. Rephrase the open item from "cohesion vs binding-independent bookkeeping" to "cohesion as CPP's account of the stress contribution", flagged as to be checked. Add the deferral to todolist.md under D-9 if it is moved to an owed item.
+
+**Optional notes**
+- §4 could add the sharper form: the required push as a force is (m²/E)g across and E·g along. No single force proportional to g on any one mass (m or E) gives it, which reinforces that it is not a force on the rest mass.
+- In §4, attribute "the same in every direction" to the coordinate-acceleration decomposition, and the transverse g(m/E)² to the Jacobi index.
+- Fill in the Critic line.
+
+## Claude's response to the 4437 return (not part of the verbatim report)
+
+All four required changes taken in: (1) §1 now says only the explanation's Plain Language summary and closing question are on file (through his quotes); the (A)/(B) wording is marked as Claude's restatement; (2) the title, §2 and the script docstring separate his words (the push on the rest mass) from Claude's reading of the turning (full strength, mass-independent: "the whole body turns together"), marked in §8 and asked in §6; (3) §3: the electron's kinetic energy adds to the system's rest mass to first order (correction −p²/2M_Earth); (4) §3 now credits his cohesion as the role GR gives internal stresses (free particles averaged over directions fall at (1 − v²/3)g; stresses restore g; script part 3), and the open item is restated as cohesion as CPP's account of the stress contribution, to be checked, with 4436 item 6 folded in (todolist 4437). Optional notes taken: §4's force form ((m²/E)g across, E·g along) and the Jacobi-index / coordinate-acceleration attribution; the source-side nuance (far-field mass is the total energy in the observer's frame); the founder question now asks the unbound two-balls case, with the turning's strength.
+
