@@ -4020,3 +4020,128 @@ I read the patch, the founder file and 4436 §3–4, and ran the script. Its out
 
 All four required changes taken in: (1) §1 now says only the explanation's Plain Language summary and closing question are on file (through his quotes); the (A)/(B) wording is marked as Claude's restatement; (2) the title, §2 and the script docstring separate his words (the push on the rest mass) from Claude's reading of the turning (full strength, mass-independent: "the whole body turns together"), marked in §8 and asked in §6; (3) §3: the electron's kinetic energy adds to the system's rest mass to first order (correction −p²/2M_Earth); (4) §3 now credits his cohesion as the role GR gives internal stresses (free particles averaged over directions fall at (1 − v²/3)g; stresses restore g; script part 3), and the open item is restated as cohesion as CPP's account of the stress contribution, to be checked, with 4436 item 6 folded in (todolist 4437). Optional notes taken: §4's force form ((m²/E)g across, E·g along) and the Jacobi-index / coordinate-acceleration attribution; the source-side nuance (far-field mass is the total energy in the observer's frame); the founder question now asks the unbound two-balls case, with the turning's strength.
 
+---
+
+## Patch 4438 — first critic return (fresh context), verbatim
+
+**Verdict: HOLD**
+
+  I ran the script and it reproduces its own outputs: across 1+v², along 1−3v², the across split push (1−v²) + turning 2v², and 2.5 mc² for the balls. The problem is not the arithmetic. It is the physical reading laid on top of it and the along direction. I confirmed both points below with my own sympy check, using the same Lagrangian.
+
+  **What is right**
+  - **The factorization.** L = −m√A·√(1−v²B/A) is exact. A/B ≈ 1/K² and √A ≈ K^(−1/2) hold at first order.
+  - **The across split.** Taking ∂L/∂x factor by factor, holding the other factor fixed, gives a push force (m/γ)g and a turning force 2γmv²g. Dividing by γm gives g/γ² + 2v²g = (1+v²)g. Across, this is exact in v, not only first order.
+  - **Founder's words (check 1).** Represented accurately: "I don't know", the two-ball framing, both bullets, the endless-hole worry. Only his clause "given how hard it is to conduct and even know the answer" is dropped, which is harmless.
+  - **Two balls.** The arithmetic is correct and the case is uncontested.
+
+  **Required changes**
+
+  1. **The "clock push" reading is not physical in the sense §2 and §7 claim.** The (m/γ)g comes from the choice of what is held fixed (v/c_loc) while A varies. It is not a fact about clocks.
+     - If only the clock rate varies (B = 1, ruler fixed), the force is **γmg**: stronger with speed, not weaker. 4434 §3 states exactly this ("in the clock-only geodesic, dp⊥/dt = γm·g"), so 4438 contradicts 4434 without saying so.
+     - §7's "In relativity, gravity's ordinary pull on a body comes from its clock… a fast body's own clock already runs slow, so it feels that pull less" is wrong as a statement about relativity. In relativity, gravity couples to energy.
+     - §2's "now with a physical reason" and §7's "I think it is the right one" must go. Reword: within this bookkeeping the push term carries a 1/γ, and a mechanism like "delivered once per cycle of the CP's own organization" would match it. That is a CPP hypothesis, not relativity's explanation.
+     - The §2 caution paragraph has to be strengthened to match, and §8 should list "the clock-push reading" itself as the convenient branch.
+
+  2. **The along direction fails, and is not handled.**
+     - Inertia along is γ³m, so the push (m/γ)g gives g/γ⁴ along. The Lagrangian turning term gives 2v²(1−v²)g.
+     - The rest along, (−3v² + v⁴)g, comes from the position dependence of the momentum (the d/dt ∂L/∂v terms). It belongs to neither piece.
+     - So the two-piece split does not cover the along direction. The table and §4 ("CPP produces it with two pieces") claim it does.
+     - It also conflicts with 4437. 4437 §3 requires the push to be an acceleration g/γ² in every direction, which along means a force γmg = E·g. The per-cycle candidate gives (m/γ)g in every direction, which is g/γ⁴ along.
+     - It conflicts with 4436 too. 4436's step-rule turning along (−2v²) plus a g/γ⁴ push gives 1 − 4v² + v⁴, not GR's 1 − 3v².
+     - Fix:
+       - State that the clock-push split covers across only.
+       - State that, with 4424's inertia, the per-cycle candidate fails along unless the along push is γ² larger.
+       - Either drop the claim that the candidate gives 4437 item 2's g(m/E)² "in every direction", or register the along mismatch as an open item in todolist.md, per D-9.
+       - Add an along term-by-term part to the script, so the failure is shown, not hidden.
+
+  3. **§4 overclaims.**
+     - "Yes, at first order, in outline" and "His two bullets: yes and yes" are not supported. 4434's split, with the push on the whole energy and the turning at half strength, also reproduces GR, and in it light still "only turns". So the bullets hold only under a chosen bookkeeping, and the along direction is unreconciled (item 2).
+     - Suggested wording: "At first order GR's motion is two numbers. CPP has a candidate split that matches across. Along, and the mechanism of each piece, remain open."
+     - The table needs an along column, or a note that its figures are across only.
+     - "Not an endless hole" can stay, framed as: the remaining items are finite and listed.
+
+  4. **The 2.5 "correction" should be charitable.** His "2.5 times the mass energy of the original two balls" may mean 2.5 times one ball's mc². Say: "if m is one ball's mass, 2.5 mc² is right; relative to both balls' rest energy it is 1.25×." That is better than "correction of the number".
+
+  **Optional notes**
+  - **The equivalence-principle remark (check 3)** is broadly fair: Eötvös-type tests are sensitive to nuclear binding and internal kinetic energy. But the free pair is unbound, and "this energy weighs" for the pair as a system is the active-mass and total-energy statement. One clause on that would help. "Invariant mass 2.5 m" is fine, since the lab is the pair's zero-momentum frame.
+  - **The CPP candidate (check 5)** is clearly marked as Claude's (§2, §5, §8).
+  - **The §6 question** is physical and offers alternatives, including "or in some other way". It still frames per-beat delivery as the expected answer, because §2 and §7 have already endorsed it. Once item 1 is fixed it reads as non-leading. It might also ask whether the push changes the drift by a fixed amount per beat, or delivers a fixed force, since those differ along.
+  - **Script, Part 2.** The numeric loop just evaluates the assumed split. Only the symbolic check derives anything. Label it that way.
+
+  **Plain Language:** The maths is right, but the story told about it is not. "A fast body's clock runs slow, so it feels gravity less" is an artifact of how the equation was split. Relativity's own clock-only picture, which 4434 already cites, says a fast body feels gravity more. The split also does not work for motion straight toward or away from the mass, and there it conflicts with 4436 and 4437. The two-ball numbers are correct. The summary should say "a candidate for sideways motion", not "yes, we understand it".
+
+## Claude's response to the first 4438 return (not part of the verbatim report)
+
+HOLD accepted. The "clock push" reading was an artifact of the factorization and failed along the path (and contradicted 4434's clock-only γmg without saying so). The draft was discarded and rebuilt on 4436's step rule: the push acts on the step fraction f with weight W; W = 1 − f² matches GR across and along given full Snell-rate turning; the per-cycle (clock) candidate is shown failing along in the script and dropped; §4's claims made conditional; the two-ball number stated charitably. The rebuild went to a second fresh critic.
+
+## Patch 4438 — second critic return (fresh context, on the rebuild), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+  I ran the script and it reproduces everything. GR's first-order result is 1+v² across and 1−3v² along. With W=1−f² the step rule matches GR in both directions. With W=1 it gives 1+2v² and 1−2v². The per-cycle candidate gives 1−4v²+v⁴ along. The two balls come to 2.5 mc² total, 1.25× their rest energy. The algebra is sound. One push weight fitting both directions is a real consistency check, not a fit.
+
+  **Required changes**
+
+  1. **The "CPP's rules choose it" claim goes too far.** This appears in the title ("CPP's 4415 Rule Picks It"), §2 ("CPP's rules do choose it") and §4 ("set by the 4415 rule").
+     - Only the assumed full Snell-rate turning at every f does the selecting, as 4436 §4 already said.
+     - Continuity with light alone only fixes the f→1 limit: W(1)=0, plus full turning in the limit. Many pairs of push weight W(f) and turning rate T(f) meet that limit and still match GR. W=1−f² follows only if the turning is at the full Snell rate at every f.
+     - Fix: say "the 4415 rule plus full Snell-rate turning (assumed)" wherever this is claimed. Keep §8's marking.
+
+  2. **Treat 4434 fairly in §2 step 3.** The only alternative shown is W=1 with full turning, which no one proposed. 4434's actual split is W=1 with half turning. Its totals also run smoothly into light's: 1+v² goes to 2 at v=1. And in 4434 light is not pushed either; its refraction "contains both halves" (4434 l.47).
+     - What 4434 lacks is continuity of the parts, not of the totals. A CP near c would turn at half light's rate while light turns at full rate, and its push would stay at g while light's is 0.
+     - Say this explicitly. That is the honest form of the continuity argument, and it is a reasonable one.
+     - Also clarify "With an unweakened push, light-speed motion would bend 3g". It is a fair statement only as "a CP near c, with W=1 and full turning". The script line "light (v=1) would get 3g" is loose, since light has no push. Reword both.
+
+  3. **Sources for "light turns fully, no push".**
+     - "No push" is the founder's own 4437 statement ("light, with no rest mass, only turns"). Cite it, not only 4435/4436.
+     - "Fully (2g)" rests on the WC-DP-SEA-PV convention K=1+2U (4392), which puts in PPN γ=1 (4436 lists it as an assumption).
+     - So the argument against 4434 does depend on light's full refraction. That is a CPP convention, not something derived.
+     - §4 says "two assumptions still to be shown". There are really three: add the K convention.
+
+  4. **Register identity (§2).**
+     - "The numerator is the register's rest part" should read that the numerator is the rest part squared (m² under 4425). sqrt(S²−V²) is the rest part.
+     - "= (m/E)²" holds only under 4425's reading, with its mass-shell condition as an input and the fidelity conditions still owed (for example AP-4's k weighting, item 3). Say so next to the identity.
+     - It is marked as a candidate; that part is fine.
+
+  5. **Founder-word accuracy in the "fits his 4437 statement" lines.**
+     - 4437 §1: he said "the rest mass perceives only the axial SSV_net, the force that gives it its kinetic energy". He also said the velocity-related arc separation has "no radial force connection" to the rest mass.
+     - §2 recasts this as "the part of the register tied up in the motion does not feel the push". That is Claude's extension; label it.
+     - §7's "the rest mass feels only the push along its path and not the motion's DP separation" garbles him. He spoke of the axial SSV_net that gives the kinetic energy, not of "the push along its path". Fix it, or quote him.
+     - The better-fitting founder line is "gravity's push works on the rest mass".
+
+  6. **Two balls (§3).**
+     - Say plainly that, as worded, his "2.5 times the mass energy of the original two balls" is 1.25×. The 2.5 is in units of one ball's mass. "His framing is right" followed by an unstated correction reads as evasive.
+     - "The recorder gets 2.5 mc² in total" is loose. A calorimeter takes in the 0.5 mc² kinetic energy as heat, while the 2 mc² stays as the balls' matter. Phrase it as: the mass of recorder plus balls rises by 2.5 m, of which 0.5 m is captured energy.
+     - The equivalence-principle remark (nuclear binding and internal energies tested; the free pair as a source untested directly) is fine.
+
+  7. **§4 "yes and yes, in this split".**
+     - Add that "gravity acting on its rest mass" means a drift change g(m/E)² in every direction, not a force mg (4437 §4's own caveat).
+     - Make the yes conditional on the three assumptions.
+     - Bullet 2 (light bends by turning alone) is also yes under 4434's split and under the K convention generally. Say so, so the yes is not read as evidence for this split.
+
+  8. **Founder question (§6).**
+     - He already answered "on the rest mass" in 4437, so the question partly re-asks it. Its middle option is the candidate, which is mildly leading.
+     - It also misses the real open point. A push on "only the part not tied up in motion" suggests a weight that is linear, m/E, not (m/E)².
+     - Acknowledge his 4437 answer and ask the mechanism in a physical picture. For example: when the limb difference acts on a fast electron, does it change how much of the register moves (its SSV_net), how much it holds (SSV_abs), or both? Keep "or something else".
+
+  9. **Deferral gate (D-9).** todolist.md has no 4438 entries. This patch adds or reframes owed items:
+     - the push weight in register terms, and why it is squared;
+     - the K convention as an assumption;
+     - the 4425 fidelity conditions it now leans on.
+
+     Write them in, or confirm they are covered under the 4437 items, and run code/deferral_gate.py before the format-patch.
+
+  **Optional notes**
+  - The per-cycle candidate is described correctly. Across it gives g/γ² = 1−v², which matches; along it gives (1−v²)², so the total is 1−4v²+v⁴. §8 owns it properly. One small addition: its across match coincides with W only because γm·(1/γ²)… is the same factor. That is a coincidence, which is why it looked plausible.
+  - Say "first order, isotropic coordinates" where GR's 1+v² and 1−3v² are quoted. The script and 4436 do.
+  - "It is not an endless hole" is acceptable as "the known first-order list is finite". Consider "as far as we can now see", since second order (perihelion) requires second-order pieces that have not yet been built.
+  - 4425 item 5 (the PSR is tied to SSV_abs, so a fast CP's own register might shift its local light speed) bears on "step = f c/K". Consider carrying it into §4's list.
+
+  **Plain Language:** The core math checks out. Relativity says gravity's pull on a fast particle comes partly from a push and partly from a turning. In CPP's version, with the particle turning just as light turns, the push has to fade with speed, and the formula for that fading matches relativity exactly. But the draft says CPP's rules force this version, when it actually depends on an assumption: that a moving particle turns at light's full rate. That assumption and two others need to be stated plainly. The rival version (4434) needs a fairer hearing. A few of Thomas's words are stretched. And on the two balls, the draft should say plainly that the answer is 1.25 times the pair's rest energy, which is 2.5 times one ball's.
+
+  Files reviewed: /root/CPP/series_standard_model/axiom_maturation/4438_why_the_push_fades.md, /root/CPP/series_standard_model/code/4438_push_weight_and_turning.py, /root/CPP/founders_voice/4438_why_less_push_two_balls_framing_do_we_understand.md, and the 4425, 4434, 4435, 4436 and 4437 context files in /root/CPP/series_standard_model/axiom_maturation/.
+
+## Claude's response to the second 4438 return (not part of the verbatim report)
+
+All nine taken in: (1) "the 4415 rule picks it" replaced throughout by "given full Snell-rate turning (assumed)"; (2) 4434's actual split (W = 1, half turning, light unpushed) stated; the continuity argument restated as continuity of the parts, not the totals; the 3g line reworded as a CP near c with full turning (script too); (3) "no push" cited to his 4437 words; "fully" to the K = 1 + 2U convention (4392), added as the third assumption; (4) the numerator is the rest part squared; the identity flagged as resting on 4425's reading, mass-shell input and fidelity conditions; (5) his 4437 words quoted ("gravity's push works on the rest mass"); the "tied up in motion" reading labelled Claude's extension; §7 fixed; (6) the two-ball number stated plainly (1.25× the pair's rest energy; 2.5 in one-ball units); what the recorder captures rephrased; (7) the yes made conditional on the three assumptions, with 4437 §4's caveat, and bullet 2 noted as true in 4434's split too; (8) the founder question now acknowledges his answer and asks whether the push changes SSV_net, SSV_abs, both or something else; (9) todolist 4438 entry written. Optional notes taken: the across coincidence of the per-cycle candidate; "first order, isotropic coordinates"; "as far as we can now see"; 4425 item 5 added to §4's list.
+
