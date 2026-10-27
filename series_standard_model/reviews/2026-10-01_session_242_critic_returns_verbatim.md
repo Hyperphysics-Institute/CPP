@@ -4145,3 +4145,69 @@ HOLD accepted. The "clock push" reading was an artifact of the factorization and
 
 All nine taken in: (1) "the 4415 rule picks it" replaced throughout by "given full Snell-rate turning (assumed)"; (2) 4434's actual split (W = 1, half turning, light unpushed) stated; the continuity argument restated as continuity of the parts, not the totals; the 3g line reworded as a CP near c with full turning (script too); (3) "no push" cited to his 4437 words; "fully" to the K = 1 + 2U convention (4392), added as the third assumption; (4) the numerator is the rest part squared; the identity flagged as resting on 4425's reading, mass-shell input and fidelity conditions; (5) his 4437 words quoted ("gravity's push works on the rest mass"); the "tied up in motion" reading labelled Claude's extension; §7 fixed; (6) the two-ball number stated plainly (1.25× the pair's rest energy; 2.5 in one-ball units); what the recorder captures rephrased; (7) the yes made conditional on the three assumptions, with 4437 §4's caveat, and bullet 2 noted as true in 4434's split too; (8) the founder question now acknowledges his answer and asks whether the push changes SSV_net, SSV_abs, both or something else; (9) todolist 4438 entry written. Optional notes taken: the across coincidence of the per-cycle candidate; "first order, isotropic coordinates"; "as far as we can now see"; 4425 item 5 added to §4's list.
 
+---
+
+## Patch 4439 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+  I ran the script and it reproduces every number in the draft. Shares: 0.134, 0.564, 0.859, 0.986. Table rows: GR equals (m/E)² at all three speeds; m/E gives 1.366/+0.366, 2.056/−1.184, 2.101/−1.819; no fading gives 1.500/+0.500, 2.620/−0.620, 2.960/−0.960. The 9% is correct: 1.366/1.25 = 1.093, sideways. Along the path at 0.5c, m/E gives +0.366 against GR's +0.250, which is 46% too much toward the mass, so "overshoots" holds in both directions. "Only (m/E)² matches" is correct for a speed-only weight under full turning; this is 4436's "if and only if" result. The founder's words are quoted accurately.
+
+  **Required changes**
+
+  1. **§4 overstates "not the candidate 4438 dropped".** In 4436's step rule (code line 52, `u = s*nd + g*P(f)*dt`), the push adds W·g to the velocity as a vector, so it does act the same in every direction. But that sameness is built into the rule; the per-beat mechanism does not supply it. Look at what the two factors mean physically:
+     - "Only the rest share m/E is pushed, and the result is shared over the whole electron" is a force on a body whose resistance to being pushed is E = γm in every direction.
+     - "Once per beat" makes the force (m/γ)g.
+     - Put together, (m/γ)g/(γm) is 4438's dropped clock push with one change: equal resistance γm in all directions replaces 4424's γm sideways and γ³m along.
+
+     4415 also says f "is changed only by forces", so "a weight on f, not a force on the inertia" is not a clean distinction inside CPP. Required: say plainly that the candidate is 4438's per-beat delivery with equal resistance in all directions. It survives only if a fast CP's f responds equally in all directions, which sits against 4424's along inertia (the tension 4436 §4 already names). Retitle "Why this is not…" to something like "How this differs from the dropped version, and what it needs". §8 should name this as the price.
+
+  2. **"Rest share × rest rhythm" double-counting.** Both factors are the same 1/γ. Any two stories that each give 1/γ multiply to (m/E)², so the match carries no evidence for this particular pair. State that the decomposition is fitted to the target, not tested by it. Also note that 4438 already had W = (SSV_abs² − SSV_net²)/SSV_abs² = (m/E)² and called the square "not derived". 4439 offers a way to split that square, not a new weight. The title and §3 should cite 4438 for (m/E)².
+
+  3. **§2 "a physical reason for 4436's split" reads more into his words than they say.** "Bends like light" is a statement about the total bending, and both splits give that total (4438 §4 itself says light bending by turning alone is not evidence for either split). What favours 4436 is his structural claim, that the electron's make-up becomes almost identical to light's. Read as the mechanism becoming light's, that implies the parts become light's too. Reword it as Claude's reading of the structural clause, for example "his picture fits 4436's split", not "gives it a physical reason".
+
+  4. **§2 rest share vs "only the central CP".** Two fixes:
+     - Mark as Claude's the step of matching his fraction of DPs that carry kinetic energy to the energy share 1 − 1/γ. He gave no count or measure.
+     - Change "the rest share is what remains with the central CP" to "the central CP and the rest organization it still holds" (as §6 already says).
+
+     Also add the tension his limit creates: the rest mass m stays fixed, yet in his limit only the central CP is not carrying kinetic energy. Then either the central CP alone carries m at high speed, which pulls against 4417/4426 where the organized cloud is part of the mass, or the cloud's DPs do both jobs at once. That is an owed item.
+
+  5. **§6 question leads the answer.** It offers alternatives, including "or in some other way", but §4, §7 ("That's my candidate, and it's my next question") and §8 all favour per-beat delivery. Required:
+     - Soften §7 to "one candidate".
+     - Add to §6 a real alternative that differs physically. One option: the push is taken every Moment, but the electron's response to it differs sideways and along (4424). Another: the push reaches the whole moving organization.
+     - Also ask whether the push changes the drift by a fixed amount per beat or delivers a fixed force. The first 4438 critic raised this because the two differ along the path.
+
+  6. **D-9.** todolist.md has no 4439 entry, and §5 lists open and carried items. File these:
+     - the founder question (§6);
+     - the per-beat weight on f, flagged as reviving the candidate 4438 item 7 records as dropped, with its condition from item 1;
+     - the push acting on f rather than on the inertia, and the 4424 along tension;
+     - the Snell-rate turning at every speed;
+     - the m-in-the-limit tension from item 4;
+     - 4438 items 4–6 carried;
+     - 4438 item 1 marked answered in part.
+
+     Update 4438 item 7's "dropped" disposition. Run `code/deferral_gate.py` on the commit. Running it on the .md path gave a vacuous PASS, because the gate expects a commit.
+
+  **Optional notes**
+  - **Weizsäcker–Williams:** accurately described and not overclaimed, since it is labelled a parallel. Two refinements:
+    - It concerns the charge's flattened electromagnetic field seen by a target, not the particle's own gravitational bending, and for a point charge the field's share of the energy is not 1 − 1/γ.
+    - The closer gravitational parallel is Aichelburg–Sexl: a boosted mass's gravitational field becomes that of a light-like (null) particle. Separately, the standard result that an ultra-relativistic particle's deflection tends to light's 4GM/b supports the end point directly.
+  - **"First factor, his":** his words (4437) are "gravity's push works on the rest mass" and "no radial force connection". The linear weight m/E is Claude's quantification of them; say so.
+  - **§1:** fair to say he did not take up 4438's SSV_net/SSV_abs question directly. His "re: 4436" answers the "You:" line, and the pointer that his answer bears on that question (§4) is reasonable.
+  - **Script:** Part 3 only multiplies 1/γ by 1/γ. Label it as illustration, not a check.
+
+  **Plain Language:** The numbers and his words are right. The weak spot is §4. The "once per beat" idea that 4438 dropped comes back by calling it a weight on the step fraction instead of a force. But it is the same idea, with the assumption that a fast electron resists a push equally in all directions, which is not what relativity's inertia (4424) says. Its two factors are the same 1/γ, so getting (m/E)² from them proves nothing on its own. The draft should say so, stop steering the founder toward that answer, and file its open items in todolist.md.
+
+  Files reviewed:
+  - /root/CPP/series_standard_model/axiom_maturation/4439_the_electron_becomes_light_like.md
+  - /root/CPP/series_standard_model/code/4439_light_limit_and_push_weight.py (run)
+  - /root/CPP/founders_voice/4439_near_light_speed_electron_bends_like_light.md
+  - context files 4436, 4437, 4438, 4424, 4426 and 4417 in the same directory
+  - /root/CPP/series_standard_model/reviews/2026-10-01_session_242_critic_returns_verbatim.md (Patch 4438 sections)
+  - /root/CPP/series_standard_model/code/4436 step-rule script
+  - /root/CPP/todolist.md
+
+## Claude's response to the 4439 return (not part of the verbatim report)
+
+All six taken in: (1) §4 retitled "How this differs from the version 4438 dropped, and what it needs": the candidate is 4438's per-beat delivery with equal resistance γm in every direction; it survives only if a fast CP's f responds equally in all directions, against 4424's along inertia; §8 names the price; (2) stated that both factors are 1/γ, so the decomposition is fitted, not tested; (m/E)² cited to 4438 in the title and §3; script Part 3 labelled illustration; (3) §2 reworded: his structural clause fits 4436's split, on Claude's reading; "bends like light" alone does not decide; (4) the DP-fraction ↔ energy-share matching marked as Claude's; the rest share is the central CP with the rest organization it still holds; the fixed-m tension in his limit added as owed; (5) §6 now offers four options, including (a) every Moment with greater resistance along and (c) the whole organization, plus a set-drift vs less-drift question; §7 says "one candidate"; (6) todolist 4439 entry written; 4438 item 7's "dropped" disposition updated. Optional notes taken: Aichelburg–Sexl and GR's ultra-relativistic end point added; Weizsäcker–Williams refined; the linear m/E weight marked as Claude's quantification.
+
