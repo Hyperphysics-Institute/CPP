@@ -3862,3 +3862,56 @@ Files reviewed:
 ## Claude's response to the 4434 return (not part of the verbatim report)
 
 All six taken in: (1) units corrected (δ = (2GM/(bv²))(1+v²/c²)); (2) 'speed-dependent' replaced (same angle at every speed; share grows); (3) his words quoted exactly; 'push independent of own S' marked Claude's reading; 4433 item 5 'answered by the founder, response normalization read by Claude'; (4) the push as an acceleration (force ∝ γ, 4424's γm; speed-independent force undershoots by 1/γ) added and owed; (5) founder question reworded to avoid double counting (light's refraction contains both halves; the electron needs only 2GM/(bc²) extra); (6) 4389 and 4397 cited. Optional: perihelion reminder added.
+
+---
+
+## Patch 4435 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script. Its output matches the tables in the fragment. The physics is correct. The main gap is that the fragment never answers the founder's own escape hatch, "negligible at non-relativistic speeds". It also misses the most charitable reading of his "falls faster".
+
+**Physics checks (all pass)**
+- **Acceleration formula.** a = g(1+v²) − 4v(v·g) is right in isotropic coordinates with γ = β = 1, to first order in U and to all orders in v. That is why it can be used at v = 0.9 and v = 1. It drops the −4U term, which is fine.
+  - Moving across the field: 1+v². Moving along it: 1−3v². Average over directions: 1−v²/3. All correct.
+  - In the general PPN form the sideways v² term has coefficient γ, so it comes from the space part of the metric. That bears on change 2.
+- **Equal fall for bound systems.** "Internal motions together with their binding fall like the whole" is the correct statement. With γ = β = 1 there is no Nordtvedt effect: total mass-energy, including kinetic and binding energy and stresses, falls at g.
+- **Ti/Pt figures.** Using Fermi-gas nucleons, a mean v² of 0.04–0.05 with a difference of a few ×10⁻³ is fair as an illustration.
+  - MICROSCOPE 2022 gives η = (−1.5 ± 2.3 ± 1.5)×10⁻¹⁵, so "about 10⁻¹⁵" is fine.
+  - "Excluded by about 4×10¹² for k = 1" is honestly framed as a ratio of predicted violation to the bound.
+- **Cassini.** γ−1 = (2.1 ± 2.3)×10⁻⁵ is correct (Bertotti et al. 2003).
+- **Light bending from refraction.** With n = K ≈ 1+2U, the deflection is ∫∇⊥n dl = 4GM/(bc²). This is correct and consistent with WC-DP-SEA-PV at axiom-registry line 423.
+- **Founder's text.** His words are summarised accurately, including the "negligible at ordinary speeds" sentence in §1.
+
+**Required changes**
+
+1. **Answer his "negligible at non-relativistic speeds" directly.** Right now the k = 10⁻⁶ row half-answers it, and §6's "a trillion times" ignores his caveat. Add a short paragraph making two points:
+   - **Matter's insides are not slow.** Nucleons in nuclei move at about 0.2–0.3c (v² ≈ 0.04, γ−1 ≈ 0.02). The 1s electrons in platinum move at about Zα ≈ 0.57c. These are mildly to strongly relativistic speeds, not ordinary ones.
+   - **Only an extremely steep rule survives.** Suppose the effect grows as v^n, so it is "significant near c". For the Ti/Pt difference to stay below 10⁻¹⁵ at v ≈ 0.2c, with about a 10% difference between the elements, n must be about 20 or more. That is effectively a step function that switches on only near c. The argument stays decisive, but it needs to be made in his terms. §6 should then say "for any rule that matters near light speed" rather than "a trillion times".
+
+2. **Offer the charitable reading.** His text is about tangential tracks ("increased radial bending of tangential photons and electrons"). For sideways motion, GR's coordinate acceleration does rise with speed, as 1+v², reaching twice g for light. That is literally "falls faster with speed".
+   - In PPN that v² term is the γ (space) term, so it is his component (1). It follows that component (2) must add nothing extra to the passive fall, for the electron as well as for light. The fragment says this only for light (§3, last paragraph).
+   - Say it for both: his "falls faster" is right for sideways motion, it is entirely the slower-space effect, and as a general change in how strongly matter responds to gravity it is excluded.
+
+3. **Separate "gravitates" from "is pulled".** §2 credits component (2) as "the motion's energy gravitates". That is about energy acting as a source of gravity. His claim is about a particle being acted on more, per unit mass ("more susceptible … fall faster"). State that energy is both a source and acted on, but with the pull per unit mass-energy unchanged. Otherwise §2's "right too" reads as agreeing with something he did not say.
+
+4. **Rewrite the founder question (§5).**
+   - (a) It is leading: the parenthesis gives the experimental answer. Move that fact into §3 or §6, or drop it.
+   - (b) Under his own caveat the hot/cold block does not test his claim. Thermal speeds give v² ≈ 10⁻¹¹, which he would call negligible, so the question cannot discriminate.
+   - (c) "Same weight" builds in equal gravitational force, which muddles the question. Use "same mass" if any version is kept.
+   - Suggested replacement, a physical picture he can answer: "Inside a platinum atom the innermost electrons move at more than half light speed, and nucleons at about a fifth; in titanium, slower. In your picture, do the faster parts carry more partly real DPs, and if so, does the platinum ball fall faster than the titanium one, or exactly alike?"
+
+5. **Fix "even reverses near light speed" (§3).** The motion along the field reverses for v > 1/√3 ≈ 0.58c, as the v = 0.9 row shows. Say "above about 0.58c".
+
+6. **Fix "it all averages out exactly" (§6).** The direction average for free particles is 1−v²/3, not 1. Equal fall comes from the motions together with their binding. Reword to "the motions together with the binding that holds them fall exactly like the whole".
+
+**Optional notes**
+- **Script docstring.** Part 1 has a garbled fragment, "/|...|". Clean it up.
+- **What Cassini measured.** Cassini measured the Shapiro delay, not bending. Bending ∝ (1+γ)/2, so the bound on a fractional departure in bending is about 1×10⁻⁵. Direct VLBI bending measurements give about 10⁻⁴. Consider "via γ, about 10⁻⁵".
+- **Mass rule.** WC-DP-SEA-PV is PV "without PV's mass rule". In Puthoff's PV, the m ∝ K^{3/2} mass rule is exactly what produces matter's 1+v² and 1−3v² behaviour. Its absence in CPP is the real open item behind 4434 item 2. One sentence in §4 linking "space part of a fast particle's bending" to that missing rule would sharpen what is owed. If it is deferred, it needs a todolist entry (D-9).
+- **Thomas's "What do you think?"** He wrote "(It looks like you were able to calculate or measure the difference.)" §6 could confirm in one clause that the difference is calculated and measured: the extra 2GM/(bc²) is the same angle at every speed.
+- **Disagreement framing.** The disagreement is otherwise stated fairly and not overstated. §7 PD-008 is appropriate.
+
+## Claude's response to the 4435 return (not part of the verbatim report)
+
+All six taken in: (1) his 'negligible at non-relativistic speeds' answered (nucleons 0.2–0.3c, Pt 1s electrons ~0.57c; a v^n rule needs n ≳ 20, a near-step at c; script part 2 extended); §6 reworded; (2) the charitable reading added: GR's sideways 1+v² is 'falls faster with speed', entirely the space (γ) term = his component (1); component (2) adds nothing to passive fall, for the electron and light; (3) 'gravitates' vs 'is pulled' separated; (4) founder question replaced by the Pt/Ti picture, no answer in parentheses, 'same mass'; (5) reversal 'above about 0.58c'; (6) 'motions together with the binding'. Optional: docstring cleaned; Cassini 'via γ, ~1e-5'; PV mass rule m ∝ K^(3/2) linked as the open item; the difference confirmed as calculated and measured.
