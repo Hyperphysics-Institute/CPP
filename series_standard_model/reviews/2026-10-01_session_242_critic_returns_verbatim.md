@@ -4632,3 +4632,66 @@ All six taken in: (1) Lyman-α is ultraviolet; (2) the which-way example now use
 
 All thirteen taken in: (1) his variable-energy-per-cycle and cascade clauses restored; (2) (c) stated as the Bohr condition, an identity; the content is the quadratic charge oscillation; title reworded; (3) tuning forks now only illustrate that a plain sum makes a loudness pulse, not a tone; the requirement is something quadratic in the two rhythms; (4) rhythms written as (mc² + E_n)/h, answering "is Compton relevant?" (the nearly common rhythm; light is the difference); (5) direction: spread of collision directions for sin²θ; kinematics of a perpendicular swing flagged and asked; (6) forward-only: single-photon detection and recoil (Frisch 1933) vs a sea-sized travelling pattern (atom 1000× smaller than λ); (7) energy: agreement, per-cycle share not independent; photoelectric statement corrected; (8) no-chirp test added (line constant to 4e-8; script part 4); (9) no-upward-knocks constraint added; (10) Purcell 1946, Goy et al. 1983, Kleppner 1981, Hulet–Hilfer–Kleppner 1985; mirror spacing condition stated; (11) "answered" scaled back; 4445 b's harmonics and s-like motion carried; (12) the question asked neutrally, with the kinematics question; (13) todolist 4446 entry written. Optional notes taken: correspondence principle; Dalibard–Dupont-Roc–Cohen-Tannoudji 1982; script part 2 labelled illustrative.
 
+---
+
+## Patch 4447 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+  I ran the script. Its numbers check out: d = 1666.7 nm gives 656 nm at 23.18° and 486 nm at 16.95°, the Compton wavelength comes out at 2.43 pm and 0.300″, and the 1S–2S value matches Parthey et al. 2011 (PRL 107, 203001), 2 466 061 413 187 035(10) Hz. The problems are in how the patch characterizes the founder, in some circular reasoning, and in its bookkeeping.
+
+  **Required changes**
+
+  1. **Unfair characterization (title, §3, §4 "Not adopted", §7).** He never denies that there is an oscillation at E/h. He was answering *what sets* the rate, and he says the total energy determines the colour. The frequency, he says, is "interpreted" from it, as the de Broglie frequency is from mass+KE, and as a count of ħ increments. That is a claim about which comes first, energy or frequency, not a denial that an oscillation exists. In standard physics the colour *is* fixed by the energy (E = hf), so "If the colour were only the energy, there would be nothing to test" argues against a weaker position than he holds. Reword "Not adopted: frequency as only an interpretation…, without an oscillation at E/h" to something like "**Condition added:** the reading must be a physical oscillation at E/h, with crests c/f apart. Whether his 'interpretation' means that is asked in §5." Soften the title to match.
+
+  2. **Circular 1S–2S claim.** "It agrees with E/h to the digits measured" is circular. No independent energy measurement of 1S–2S exists at 15 digits; the level energy is *inferred* from this frequency. 4446 itself says ΔE = hf for atomic transitions is an identity, so this line contradicts 4446. Replace it with: the comb shows that an optical field oscillation can be counted, and that the atom answers that exact frequency (QED predicts the frequency from α, R∞ and r_p).
+     - A two-photon detail is also needed. The comb counts the *drive laser's* cycles: a 486 nm laser, doubled to 243 nm, with the transition at twice the 243 nm light's frequency. It does not count the cycles of light the atom emits.
+     - The script's "per cycle the action is h" is printed, not computed, and h·f/f = h is a tautology. Remove it or label it as a definition.
+
+  3. **Spell out how "E = hf is a finding" fits with 4446.** One sentence would do: the Bohr condition, used to *assign* level energies from spectra, is an identity; E = hf for the energy light *delivers* (Millikan 1916, Phys. Rev. 7, 355, stopping potential against frequency from spectral lines; also Compton scattering) is empirical. The Millikan argument itself is fair. Note in the script that Part 3 is illustrative, made from h and not from Millikan's data. It is labelled, but "the two turn out proportional" in the patch reads as if the script showed that.
+
+  4. **"Each increment is one cycle carrying action h" is muddled (§3, §6).** For a packet of N cycles at frequency f, total energy E and duration τ, the action is Eτ = Nh. So "number of h increments = number of cycles" holds only if action means *total* energy × time. The per-cycle energy share E/N times one period gives h/N, not h. That is 4446's "per-cycle share not independent" point. The count N also depends on packet length, which he says does not set the colour. Two more details:
+     - He wrote ħ: ħ is action per radian, h is per cycle.
+     - He said "however big or small the increments", which sits awkwardly with "spaced evenly at E/h".
+
+     Restate the reading as: E·(one period) = h, and the packet holds Eτ/h = N such cycles. Mark it as Claude's reading.
+
+  5. **Wrong de Broglie claim (§3).** "A moving mass's energy sets a rhythm E/h, and … a crystal grating detects" mixes two things. Crystals detect the *wavelength* h/p. The absolute de Broglie frequency E/h is *not* observable, because it shifts with the choice of energy zero; only differences are. So on that point his analogy actually *favours* him: for matter the frequency really is only an interpretation. The patch should say this, then add what makes light different: a photon's frequency is directly observable through its field.
+
+  6. **Missed link: his "modulated carrier" is 4446's beat.** A carrier near the Compton rate, modulated at the difference (mc² + E_up)/h − (mc² + E_low)/h = ΔE/h, *is* 4446 item (b). The Compton-diffraction exclusion is right for linear optics: a grating sorts the field's Fourier components, and a carrier at f_C modulated at f has sidebands at f_C ± f, so it still diffracts near 2.43 pm. But the exclusion applies only if the *radiated field* is the carrier. If the radiated quantity follows the envelope (square-law, 4446 b), the modulation at E/h is the oscillation the grating sees. State this in §3/§4. It turns "excluded" into "the ZBW as radiated carrier is excluded; the ZBW as carrier whose beat is radiated is the open candidate", which is closer to what he wrote.
+
+  7. **Resonance as self-recapture: mild overclaim and missing prior art (§2, §6).** "A clear physical picture of *why* an orbit is stable" should be "a CPP picture of what could make the stable orbits non-radiating". It has no quantitative condition yet: it should reproduce E_n and a far field of zero. The standard account is that a stationary state's charge density does not change in time, so there is no oscillating dipole. Under PD-008 "Not claimed", credit the close analogues: Puthoff 1987 (Phys. Rev. D 35, 3266, the ground state as a balance between radiation and absorption from the zero-point field, after Boyer), and the non-radiating-source literature (Goedecke 1964).
+
+  8. **D-9: todolist entry 4447 is missing and must be written in the same patch.** The deferral gate passed only because no deferral words appear in the patch, while §4 carries items forward. The entry should list:
+     - (a) the founder question 4447 §5;
+     - (b) the oscillation at E/h inside the packet: what repeats at crest spacing c/f, and what holds the rate fixed, carrying 4446 a's rate half;
+     - (c) the ZBW's role: modulated carrier ↔ 4446 b beat, square-law radiation (change 6);
+     - (d) resonance as self-recapture, made quantitative: reproduce E_n, a far field of zero, compare with Puthoff/Boyer;
+     - (e) his action-increments reading reconciled with Eτ = Nh, ħ vs h, and variable increment size (change 4);
+     - (f) carried 4446 items c, d, e, f, g, i, j.
+
+     Also give dispositions the patch leaves out:
+     - 4446 **(h)** (photon energy independent of packet length) is neither carried nor answered. It is agreed in §2, so mark it answered or carried explicitly.
+     - 4446 **(b)** is not listed explicitly.
+     - 4446 (a): the kick half is answered, the rate half continues as (b) above.
+
+     Fill in the Critic line too.
+
+  **Optional notes**
+
+  - **Direct frequency evidence the patch misses**, stronger than gratings, which measure λ and give f only through c:
+    - the heterodyne beat of two lasers: a photodiode outputs an electrical oscillation at f₁ − f₂, which is how the comb itself works;
+    - direct field sampling of light: Goulielmakis et al. 2004, Science 305, 1267 (attosecond streaking), and electro-optic sampling of THz/mid-IR fields;
+    - radio antennas, which record the field's oscillation directly while the light still comes in quanta of hf.
+
+    Adding these makes §3's case without leaning on spatial crest spacing.
+  - **The founder question (§5)** is physical and acceptable. It slightly presupposes the answer ("something repeats in space"). A neutral add-on: "Are his ħ increments spaced evenly in time, and if so, at what rate?"
+  - **His garbled line** ("the total amount of radiation in each ZBW oscillation is the totality of the energy") is fairly rendered as "sum" in §1.
+  - **The founders_voice file** is verbatim and fairly titled.
+
+  **Plain Language:** The numbers are right, but the patch argues against a stronger view than Thomas holds. He says the energy decides the colour and the frequency is a way of reading it; he never says nothing oscillates. The hydrogen comb argument is circular, because that energy is only known from the frequency. The "one h per cycle" idea needs restating, and the de Broglie point actually supports him. His "modulated carrier" may be the same beat idea as 4446, which the patch should say. The todo list entry still has to be written.
+
+## Claude's response to the 4447 return (not part of the verbatim report)
+
+All eight taken in: (1) recast as a condition added, not a rejection; title, §3, §4, §7 reworded; he never denies an oscillation at E/h, and §5 asks whether his interpretation means one; (2) the 1S–2S line no longer claims an independent check of E/h; the comb counts the drive laser's cycles (486 nm doubled to 243 nm, two-photon); the script tautology removed; (3) Bohr condition (identity, assigning levels) vs E = hf for delivered energy (Millikan 1916, Compton) reconciled; script part 3 labelled illustrative; (4) action reading restated as N = Eτ/h cycles, E × one period = h; ħ vs h; variable increments vs steady spacing; marked Claude's; (5) de Broglie: absolute frequency unobservable, so his analogy favours him for matter; light differs by direct field observation; (6) his modulated carrier linked to 4446's beat: ZBW as radiated carrier excluded, ZBW as carrier whose beat is radiated open; (7) resonance credited as a CPP picture with no quantitative condition yet; Puthoff 1987/Boyer and Goedecke 1964 cited; (8) todolist 4447 entry written with dispositions (4446 h answered; 4446 b carried; 4446 a kick answered, rate continuing). Optional notes taken: beat notes, field sampling (Goulielmakis 2004), radio antennas; the question asks about spacing in time.
+
