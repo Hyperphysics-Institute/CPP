@@ -4431,3 +4431,69 @@ All ten taken in: (1) "whole motion" → path shape and sideways acceleration; t
 
 All seven taken in: (1) c/K restated as the relay's front speed; phase speed c/n above it, group speed cn/K² below (script too); (2) "a relay is the kind of thing that can be a wave; it is one if its pattern carries a repeating phase and two copies add" in the title, §2 and §6; superposition added as owed and asked; (3) the interferometer tests h/p and gravity's phase via conserved energy; the rest beat cancels between arms and is needed for the index; (4) the ZBW described per 4265 (up quark) and 4295 (electron dual pass-through rod); the conflicting corpus rates (SM-1: ~1/(2t_P); SM-8: Compton, circular) stated; §5's option hedged; (5) his answer placed as option 4, sharing option 1's conclusion; (6) the drag reading must coincide with the rest term, not add to it; (7) todolist 4443 entry written. Optional notes taken: relay plus carriage for mass (4418 lines 49–50 cited); COW's 1.445 Å; the question's options reordered without the ZBW first; standard speeds listed under PD-008.
 
+---
+
+## Patch 4444 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+  I ran the script. Every printed number matches the text: 3.0e-24 rad against 5.0e-3 rad; minima at 1.43°, 2.87° and 4.30°; 5 mm fringes inside a 50 mm envelope; Lyman-α/Compton = 2.0e-5 ≈ 3α²/8. The 3α²/8 is exact, not "about": Lyman-α energy = (3/4)·Ry and Ry = α²mc²/2. I made no edits.
+
+  **Required changes**
+
+  1. **Edge material: the claim is overstated.** Two places need fixing.
+     - §3 says "Fringes also come out the same for slits of any material" and "not what bends the light into fringes, by gravity or otherwise". Physically, light is diffracted at a slit by the electromagnetic response of the screen's charges; the textbook boundary picture (Kirchhoff) is an idealization of that. Edge material also measurably changes intensities:
+       - atom and molecule gratings: van der Waals / Casimir-Polder forces from the bars (Grisenti et al., PRL 83, 1755, 1999);
+       - light: edge conductivity, screen thickness and near-field effects.
+     - Suggested rewording: "Fringe positions are set by the openings' geometry and the wavelength, whatever the material. The material changes only finer details of intensity, through electromagnetic forces (van der Waals for atoms, Grisenti 1999; edge conductivity for light), never through gravity, which is 10²¹ too weak."
+     - Change "by gravity or otherwise" to "by gravity". This also does more justice to the founder's broader intuition that the slit edges interact with what passes. That part has a real kernel; only the gravity mechanism fails. §5 "Not adopted" and §7 ("Fringes come out the same whatever the slits are made of") need the same qualifier.
+  2. **§4/§6 "must stretch half a metre" overreaches.** The measurement requires something belonging to the atom to be present on both paths, 54 cm apart, and coherent. It does not require one continuous body spanning the gap. In Kovachy 2015 each wavepacket is small; the two packets are far apart. Pilot-wave theory (Bohm) shows a further option: the particle takes one path and only a guiding wave takes both.
+     - Reword to "must be present on both paths, up to 54 cm apart (not necessarily as one continuous volume)".
+     - Add "the particle's pattern splitting into two parts that later recombine" as an explicit option.
+     - In the §6 question, replace "stretched that far" with "split into two parts that far apart". That keeps the question non-leading.
+  3. **§7 arithmetic.** "about a hundred-thousandth of the Compton frequency" is wrong: 2e-5 is about one fifty-thousandth. Write "about 1/50,000", or "about 3α²/8, roughly a fifty-thousandth".
+  4. **Tonomura separation: change "of order 10 μm" to "a few micrometres", in the text and in script part 3.** The 1989 biprism (Am. J. Phys. 57, 117) used a filament well under 1 μm thick, and the beams passed on either side of it. I could not confirm a 10 μm figure. Neither number is load-bearing.
+  5. **Single-slit correction: acknowledge the likely intended meaning.** His "no pattern at all with a single slit" probably meant no two-slit interference fringes. Add one clause, e.g. "If 'no pattern' means no fine two-slit fringes, that is right; but a single slit does give its own broader pattern…". The correction stays; the tone becomes fair.
+  6. **Write the D-9 entry for 4444 in `todolist.md`, in the same patch.** Items:
+     - (a) founder question 4444 §6: what part of the atom is present on both paths, and what a which-way detector changes in his picture;
+     - (b) what spans or splits across both paths (core cloud, relay, the sea's arc-separation of 4441, the DI-bit field, or split pattern), up to 54 cm;
+     - (c) which-way erasure of fringes in CPP terms;
+     - (d) the rest beat at mc²/h, still unidentified, with the orbital oscillation ruled out (carries 4443 b);
+     - (e) crest spacing λ = h/p from the longitudinal wavelength (4443 c, PROP-6);
+     - (f) transverse fields and polarization from purely longitudinal DP displacement (C23-R, 2026-07-28 ruling);
+     - (g) the slit's electromagnetic interaction with the edge (positions set by geometry, intensities by edge physics), in CPP terms (optional, low priority);
+     - (h) carried: 4443 items b–g;
+     - (i) dispositions: 4443 founder question answered in outline; not adopted: edge gravity and "no single-slit pattern".
+     - Run `code/deferral_gate.py` before the format-patch.
+
+  **Checks that passed**
+
+  - **(1) Founder words and his Compton/orbital recollection.** The verbatim file is intact and the §1 paraphrases are accurate. The recollection is represented fairly; it fits his 4318 emission account. The correction is correct.
+  - **(2) Edge gravity and Kapitza–Dirac.** The edge-gravity formula is correct, and the point-mass-at-1-μm assumption overestimates the deflection, so the comparison is conservative. Kapitza–Dirac (Freimund, Aflatooni, Batelaan, Nature 413, 142, 2001) is correct. Atom diffraction by light gratings is correct (Moskowitz et al. 1983; Gould et al. 1986).
+  - **(3) Single-slit numbers.** Correct.
+  - **(4) Polarization statement and the ruling.** The crossed-polarizer argument and the C23-R characterization are fair: longitudinal displacement, transverse field. "Longitudinal waves interfere, but cannot be polarized" is right.
+  - **(5) Other experiment facts.**
+    - COW 1975: path separation of a few cm, so ~3 cm is acceptable.
+    - Kovachy et al., Nature 528, 530 (2015): rubidium-87, 54 cm, correct.
+  - **(7) Founder question.** It is physical and mostly non-leading once change 2 is made.
+  - **(9) Tone.** Respectful. The corrections are firm and not softened, and his sharpest point is credited.
+
+  **Optional notes**
+
+  - §3 "Compton" paragraph: add that emitted light is at ΔE/h for any internal mechanism, so the conclusion follows without assuming anything about the oscillation through the nucleus.
+  - Single-electron buildup was first done by Merli, Missiroli and Pozzi (1976). Cite it alongside Tonomura if precedence matters.
+  - With d/a = 5 in the example, the 5th-order fringe is missing exactly at the envelope minimum. Harmless.
+  - Kovachy used a Bose-Einstein condensate, but the interference is single-atom. One clause would head off an objection.
+
+  **Plain Language:** The review mostly holds up. The numbers are right, the experiments are cited correctly apart from one shaky figure, and the corrections to Thomas are respectful and firm. Six fixes are needed:
+  - don't say slit material makes no difference at all (it changes fine details, through electrical forces, never through gravity);
+  - don't say one continuous thing must stretch half a metre (two separate parts, one on each path, is enough);
+  - fix "a hundred-thousandth" to "a fifty-thousandth";
+  - soften the Tonomura separation to "a few micrometres";
+  - grant that his "no pattern with one slit" probably meant no double-slit fringes;
+  - write the owed items into the todolist.
+
+## Claude's response to the 4444 return (not part of the verbatim report)
+
+All six taken in: (1) edge material: fringe positions set by geometry and wavelength; intensities changed electromagnetically (Grisenti 1999 for atoms; edge conductivity for light), never by gravity; "or otherwise" removed; his edge-interaction intuition credited as having a real kernel (§3, §5, §7); (2) "must stretch half a metre" → something of the atom present on both paths, not necessarily one continuous volume; split pattern and pilot-wave-like options added; §6 question reworded; (3) "a hundred-thousandth" → "a fifty-thousandth"; (4) Tonomura separation → a few micrometres (text and script); (5) single slit: his likely meaning (no two-slit fringes) granted; (6) todolist 4444 entry written. Optional notes taken: 3α²/8 exact; ΔE/h for any mechanism; Merli–Missiroli–Pozzi 1976 cited; Kovachy's single-atom interference clause.
+
