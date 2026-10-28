@@ -4559,3 +4559,76 @@ All six taken in: (1) edge material: fringe positions set by geometry and wavele
 
 All six taken in: (1) Lyman-α is ultraviolet; (2) the which-way example now uses a lossless half-wave plate (Fresnel–Arago), and Walborn 2002 is described correctly (quarter-wave plates, entangled partner, erasure by coincidence); (3) the dipole match qualified: the ring fits, "forward along the collision" does not unless forward is at right angles to the swing; single-photon localization vs the probability ring and recoil added as open and asked; (4) the real ω³|d|² trend behind "short burst for high energy" acknowledged (H 2p 1.6 ns vs 3p 5.4 ns; Fe-57 a counterexample across kinds); "frequency ≈ 1/τ" marked as Claude's reading; (5) bookkeeping fixed (4444 f partly answered; c replaced; d carried; carried list e, g, h); (6) todolist 4445 entry written. Optional notes taken: the classical-damping lifetime check (script part 4: 1.60 ns); harmonics and s-like motion flagged; "for a linear swing" and σ light; superposition needs a trigger; the question reworded neutrally; D = 0.5; "orbital" restored in §1.
 
+---
+
+## Patch 4446 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+  I ran the script. Its numbers agree with the text: light 2.467e15 Hz, Compton 1.236e20 Hz, classical revolution rates 6.580e15 and 8.225e14 Hz (difference 5.757e15 Hz, ratio 2.33), and the decay fractions 0.367, 0.134 and 0.049. The founder's words in §1 are accurate, with two small omissions (see 1 below). No files were edited.
+
+  **Required changes**
+
+  1. **§1 founder words: restore two clauses.** He said the energy could come in "many small, a few large, or a sequence of variable-energy radiations per ZBW oscillation". He also said the CP can fall back to resonance "at activated and ground-level energies, or activated and any level in between" (a cascade). The first clause bears directly on §4. The second is missing from the document.
+
+  2. **§3: the beat is presented as a test, but it is a definition.** (c) is (E₂−E₁)/h, which is how the light's frequency was computed. "Exactly the light's frequency" is an identity, not a confirmation. This also applies to the title's "Comes Out at Exactly". State that (c) is the Bohr frequency condition, true by definition. The real content is a separate claim: in QM, the charge density of an atom in a superposition of two states oscillates at the difference. Only (a) and (b) are genuine tests, and both are rejected.
+
+  3. **§3: the tuning-fork analogy gets the physics wrong.** Two forks sounding together give a loudness envelope at |f₁−f₂|. They give no sound at that frequency, because a linear sum of two tones has no component at the difference. As written, "its swing rises and falls at their difference" describes an amplitude envelope on a fast carrier. That would radiate near the carriers, not at ΔE/h. QM gets an oscillation at the difference only because charge density is |ψ|², which is quadratic and contains the cross term. Rewrite the picture: something quadratic in the two rhythms (the CP's density or position) must itself oscillate at the difference. Then remove the tuning forks from §3, §7 and §8, or say plainly that forks only give a loudness beat.
+
+  4. **§3: the rhythm of a state.** A state's rhythm E/h has no meaning on its own (E₁/h is negative), because only differences can be observed. To be consistent with the 4443 tie-in, write each state's rhythm as (mc² + E_n)/h, about 1.24e20 Hz each. The difference is unchanged. This also answers his question "Is the Compton frequency relevant?" properly: yes, as the near-common rhythm of both states, with the light as the small difference between them. At present §8 only says Compton is "50,000 times too fast".
+
+  5. **§2: the direction has two problems.**
+     - (a) If "at right angles" is taken strictly, every photon would leave at exactly 90°. That is a thin disk, not the sin²θ pattern. So the collision directions must actually spread over angles relative to the swing axis. Also note that sin²θ applies to atoms with an aligned swing axis (e.g. Δm=0); unpolarized atoms emit the same in all directions overall.
+     - (b) Kinematics: a kick normally drives motion along the kick. A collision that makes the CP swing at right angles to itself needs a mechanism. Flag this as open, or put it to him as a physical question.
+
+  6. **§2: "forward only needs an end-fire travelling phase" is overstated.**
+     - In QM a single photon's emission spreads over the dipole pattern as a probability, but each photon is detected in one direction, and the atom recoils in one direction per event (Frisch 1933). So a single event does not have to build forward reinforcement out of classical sources.
+     - If CPP does want classical directivity, the atom (about 0.1 nm) is about 1000 times smaller than Lyman-α's wavelength (121 nm). No arrangement of sources inside the atom can be end-fire directive. The travelling pattern would have to extend over at least a wavelength of the surrounding DP sea.
+     - Present both options. Do not present end-fire as the only requirement. The recoil statement (momentum E/c, opposite the photon) is correct.
+
+  7. **§4 and §8: the "correction" partly attacks a position he did not take.** In 4446 he says the total energy released fixes the photon's energy. That is ΔE = hf, which is correct. He also allowed the energy per cycle to vary. A per-cycle share that changes with packet length therefore does not contradict him. Change the "correction" to agreement plus a clarification: the total is fixed by the frequency, so the per-cycle share is not an independent quantity, and the packet length sets only the linewidth. Also, the photoelectric effect shows independence from intensity, not directly from packet length. Say that independence from packet length follows from E = hf.
+
+  8. **A constraint is missing: the line is sharp, but his falling picture would chirp.** He has the CP fall toward the nucleus and pass through repeatedly while radiating. A charge losing energy in a Coulomb fall changes its frequency as its energy changes, which would give a spread of colours. Lyman-α's linewidth (1e8 Hz on 2.47e15 Hz) means the swing rate holds constant to about 4e-8 while the amplitude decays. Add this as a test his picture must pass (the beat reading passes it).
+
+  9. **§5: a constraint on the rogue-wave trigger is missing.** In vacuum, ground-state atoms are never knocked upward. Random rogue waves must therefore de-excite but never excite, which is the known ground-state stability problem of random-field pictures. Add this as an open item.
+
+  10. **§5 and §7: make the Purcell citations precise.**
+      - The history checks out: Kleppner's 1981 PRL proposed inhibited emission, and Hulet, Hilfer and Kleppner's 1985 PRL (55, 2137) observed it in a Rydberg atom.
+      - Add Purcell 1946 (enhancement) and Goy, Raimond, Gross and Haroche 1983 (enhancement observed in a cavity).
+      - In §7, "between two close mirrors decays more slowly" holds only for spacing below half the wavelength, for the matching polarization. State that condition.
+
+  11. **§6: "answered" overstates.** The beat is Claude's reading and is not shown in CPP, so 4445 (b) should read "proposed/carried", not "answered". 4445 (g) is not settled in outline, given 5 and 6. 4445 (b)'s sub-items, harmonics and the s-like straight-line motion versus the 2p→1s transition, were dropped and must be carried.
+
+  12. **§7: the founder question leads him.** The tuning forks frame it, and Claude's preferred option comes first in a two-way choice. Ask it neutrally instead, for example: "While the CP is between the two orbits, what does its swing take its rate from, and how does that rate stay fixed while the swing dies away?" Consider adding the kinematics question from 5(b).
+
+  13. **D-9 todolist entry 4446 (not yet written).** Owed items:
+      - the beat in CPP terms: what quadratic quantity of the CP carries the two rhythms (mc² + E_n)/h and oscillates at their difference;
+      - collision perpendicular to swing: the mechanism, and the spread of collision directions that gives sin²θ;
+      - single-photon direction: probability pattern versus a travelling pattern at least a wavelength across in the DP sea; recoil;
+      - the rogue-wave trigger and its surroundings (Purcell; inhibited and enhanced emission);
+      - no upward knocks for ground-state atoms;
+      - a constant swing rate during decay (no chirp) in his falling picture;
+      - photon energy hf independent of packet length, and the role of the per-cycle share;
+      - harmonics and the s-like motion (from 4445 b);
+      - carried: 4445 c, e (the rest beat, now as (mc² + E_n)/h), f, h, i;
+      - dispositions: 4445 a answered; 4445 d (trigger) proposed by him, with tests open;
+      - the critic line filled in.
+
+  **Optional notes**
+  - Correspondence principle: for large n, ΔE/h for Δn = 1 approaches the classical revolution rate. Saying so would show that (b) failing at n = 2→1 is expected, not arbitrary. Candidate (b) is better framed as "either revolution rate" than "their difference".
+  - In standard QED, spontaneous emission comes from vacuum fluctuations plus radiation reaction (Dalibard, Dupont-Roc and Cohen-Tannoudji 1982). This is a useful comparison for the rogue-wave picture.
+  - Script part 2 only prints a constant; it is illustrative, not a test. That is fine as long as the text does not call it one.
+  - In his message, "Thomas, that is what I was trying to say" is probably a dictation slip, but it is filed verbatim, which is correct.
+
+  **Plain Language:** The arithmetic and the founder's quotes are sound, and the references check out. Four things need fixing:
+  - The "exact match" of the light's frequency is a definition, not a confirmation.
+  - The tuning-fork beat is the wrong picture: two forks make loudness pulse, not a new tone, so the claim must rest on something that squares the two rhythms.
+  - The "forward only" requirement is overstated, since an atom is far too small to aim light classically and single photons are detected in one direction anyway.
+  - The "energy correction" disagrees with something he didn't actually say.
+
+  Three tests are missing: the colour must stay steady while the atom decays, random kicks must never push ground-state atoms upward, and a collision at right angles to the swing needs a mechanism. The todolist entry still has to be written.
+
+## Claude's response to the 4446 return (not part of the verbatim report)
+
+All thirteen taken in: (1) his variable-energy-per-cycle and cascade clauses restored; (2) (c) stated as the Bohr condition, an identity; the content is the quadratic charge oscillation; title reworded; (3) tuning forks now only illustrate that a plain sum makes a loudness pulse, not a tone; the requirement is something quadratic in the two rhythms; (4) rhythms written as (mc² + E_n)/h, answering "is Compton relevant?" (the nearly common rhythm; light is the difference); (5) direction: spread of collision directions for sin²θ; kinematics of a perpendicular swing flagged and asked; (6) forward-only: single-photon detection and recoil (Frisch 1933) vs a sea-sized travelling pattern (atom 1000× smaller than λ); (7) energy: agreement, per-cycle share not independent; photoelectric statement corrected; (8) no-chirp test added (line constant to 4e-8; script part 4); (9) no-upward-knocks constraint added; (10) Purcell 1946, Goy et al. 1983, Kleppner 1981, Hulet–Hilfer–Kleppner 1985; mirror spacing condition stated; (11) "answered" scaled back; 4445 b's harmonics and s-like motion carried; (12) the question asked neutrally, with the kinematics question; (13) todolist 4446 entry written. Optional notes taken: correspondence principle; Dalibard–Dupont-Roc–Cohen-Tannoudji 1982; script part 2 labelled illustrative.
+
