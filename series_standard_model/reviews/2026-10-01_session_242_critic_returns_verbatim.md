@@ -4909,3 +4909,55 @@ HOLD accepted. The draft was rebuilt: "always between" restricted to one-level j
 
 All four taken in: (1) energy per swing restated as a fixed share 1/(fτ) ≈ 2.5×10⁻⁷ of what remains (≈2.6 µeV at first), 63% per lifetime, ΔE over the whole decay (text and script); (2) the founder question now states the measured facts and asks openly what sets the rate and what in the discharge makes the energy come out that way; (3) "his summation is right" marked as Claude's reading, with the other reading (count of quanta) noted as ruled out by 4447; listed under PD-008; (4) the half-wave burst described as shorter than the one-cycle photon, its failures worse. Optional notes taken: "It sounds like" restored; "quantitative form of his picture"; "for large orbits" on harmonics; the leading question owned.
 
+---
+
+## Patch 4450 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+The physics conclusion holds: a pulse lasting about one cycle cannot be a single colour, and a cascade that crosses the atom in one sweep cannot last 1.6 ns. But the table mislabels one pulse, sets up the Hann case unfairly, and the headline "more than half" contradicts 4448's "a third to a half" without saying so. I ran the script (under 1 s; it reproduces every number in the doc) and wrote a cross-check at /tmp/claude-0/-home-claude/809b5738-7ea0-5402-b8f6-d8c84894d09f/scratchpad/chk.py.
+
+**Check results**
+1. **Founder words:** §1 is accurate. Small omission: he says rogue-wave initiation activates the CP "to another stable resonant orbital", and §1 drops that clause.
+2. **Did 4448 assume a square wave?** No. Its text and script use a smooth pulse, "1/(pi N), Gaussian-like", with 1/π and 0.44 (the Gaussian width at half height). But the 4448 script only asserted those numbers; it computed no spectrum. 4450 is the first FFT.
+3. **Cascade timing:** a0/c = 1.76e-19 s, which is 4.4e-4 of a Lyman-α cycle (about 1/2270, so "a two-thousandth" is right). Emission lasts 3.9e6 cycles. Correct.
+4. **Radio analogy:** acceptable. A one-cycle AM or FM burst would indeed spread across roughly the whole band. "Heard as a click across the dial" would be more exact than "heard".
+5. **Question:** physical and in his picture, but it rests on our light-speed assumption (change 4).
+6. **Tone:** respectful. It credits his discharge drive as the power source, which helps on a third rejection in a row.
+
+**Required changes**
+1. **Mislabelled pulse (table row 1).** The script's "one sine cycle, sharp ends" is a *cosine* over |t| ≤ T/2. It jumps from 0 to −1 at both ends, so its spectrum has tails that never die out (rms fractional spread about 6.9). A true single sine cycle, sin(2πt) on [0, T], starts and ends at zero, and is most likely what he means by "perfectly sinusoidal". It gives a width of **0.90**, with the peak shifted to 0.84 f0. Add or replace that row, and fix the label.
+2. **Hann row is unfair.** The window is applied correctly: cos²(πt/T) over |t| ≤ T/2 is a one-cycle-wide Hann. But its envelope is only **half a cycle** wide at half height. So its spectrum reaches down to zero frequency, which is why the peak shifts to 0.69 and the width reaches 1.67. That is an artefact of the short envelope, not a fair "one cycle" case. Use a Hann envelope one cycle wide at half height (window width 2T): width **0.72**, peak at 0.99. Or keep the current row with a footnote saying why it is so wide.
+3. **Reconcile with 4448, and soften the headline.** Whether a one-cycle Gaussian spreads 0.62 or 0.44 depends on how "one cycle" is measured:
+   - **0.62:** the amplitude envelope is one cycle wide at half height (the 4450 choice).
+   - **0.44:** the intensity is one cycle wide at half height (4448's number; I checked, it gives 0.441).
+
+   So "any pulse lasting ~one cycle spreads over more than half its frequency" is not true under every definition. The rms bound Δt·Δf ≥ 1/(4π) is met: about 0.08 for the Gaussians. Rewrite the title, the §2 claim and §6 as "about half its own frequency or more (0.44–0.9 depending on shape and how the length is measured)". Say explicitly that this updates 4448's "a third to a half": 0.44 confirmed; 1/π was a rough estimate. Likewise use "0.44–0.62 divided by N" in place of "0.6/N". "Millions of cycles" still holds either way.
+4. **Flag the cascade-speed assumption.** He named no speed; light speed is ours. Mark it as an assumption in §3, and add a sentence on why it barely matters: to last 1.6 ns across a0, a single sweep would have to travel at about 3 cm/s. Any faster cascade empties the reservoir far too quickly. Also note that a0 is the radius; across the diameter it is about a thousandth of a cycle. In §5, ask him how fast he pictures the cascade spreading, rather than presupposing c.
+5. **Gaussian wording.** "The smoothest possible pulse of that length" should be "the pulse with the smallest product of length and spread (a Gaussian)".
+6. **D-9 todolist entry for 4450 (not yet written; must go in this patch):**
+   - (a) **Founder question 4450 §5:** what meters the discharge over millions of swings, and what keeps every swing the same length. Plus the cascade speed he pictures. This merges 4449 (a) and (b).
+   - (b) **The reservoir targets:** carry 4449 (b), the per-swing share 1/(fτ).
+   - (c) **His Moment-by-Moment discharge drive in CPP terms:** which DP arcs push the CP, and in what directions.
+   - (d) **Carried:** 4449 (c), (d), (e).
+   - (e) **Assumption flagged, pending his answer:** the cascade spreads at c.
+   - (f) **Pending reading:** his rogue-wave initiation "activating it to another stable resonant orbital", which sounds like absorption, not emission.
+   - (g) **Dispositions:**
+     - 4449's founder question answered in part: the energy source is the discharging DP arcs, and the amount is ΔE.
+     - Not adopted: a single sinusoidal cycle as one frequency.
+     - Corrected: 4448 did not assume a square wave.
+     - Reconciled: 4448's 1/π–0.44 against the 4450 FFT numbers.
+   - (h) **Update 4449's entry:** mark (a) and (b) as merged into 4450 (a).
+
+**Optional notes**
+- Script docstring: "spreads over ~1/N" is inconsistent with the printed 0.62/N. Align it with the wording chosen in change 3.
+- Add one line on the half-wave version he also mentions: it is shorter, so it spreads wider still (4449 already ruled it out).
+- §6: change "is the right one" to "is the one the measurements need". It reads less like a verdict on his idea.
+- The Critic line is still the placeholder "(filled in after review)".
+
+**Plain Language summary:** The main point is correct: a burst of light lasting only one swing always contains a broad mix of colours, however smooth its shape, and an atom's light is far too pure for that. But two table rows use the wrong shapes: a cosine that jumps at its ends is labelled a sine, and the "smooth" pulse is really only half a swing long. The "more than half" claim also depends on how you measure the burst's length, and it should say so and agree with what 4448 said. The doc should also admit that "the cascade spreads at light speed" is our assumption, not his, and ask him how fast he pictures it. The todolist entry still needs to be written.
+
+## Claude's response to the 4450 return (not part of the verbatim report)
+
+All six taken in: (1) a true sine cycle on [0, T] added (0.90, peak at 0.84 f0); the cosine row relabelled (jumps at its ends); (2) the Hann envelope widened to one cycle at half height (0.72, peak 0.99); (3) headline softened to "about half or more (0.44–0.9, by shape and length convention)", 4448 reconciled (0.44 confirmed for its intensity-FWHM convention; 1/π a rough estimate), scaling stated as (0.44–0.62)/N; (4) the light-speed cascade flagged as Claude's assumption, with the ~3 cm/s single-sweep speed and the diameter figure; §5 asks his cascade speed; (5) Gaussian described as the smallest length-spread product; (6) todolist 4450 entry written; 4449 a and b marked merged. Optional notes taken: script docstring aligned; half-wave line; "the one the measurements need"; "heard as a click"; his "activating it to another stable resonant orbital" restored and flagged.
+
