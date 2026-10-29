@@ -4773,3 +4773,139 @@ All eight taken in: (1) recast as a condition added, not a rejection; title, §3
 
 All seven taken in: (1) the one-cycle Hα range corrected to yellow-green into the infrared (566–780 or 540–840 nm, script computes both), "a third to a half in all", §6 made consistent; (2) line width and fringe reach restated as two faces of one property (Wiener–Khinchin); (3) single-photon fringe reach stated as first-order coherence's prediction; cavity packets cited (Kuhn–Hennrich–Rempe 2002; Keller et al. 2004), long reach marked inferred; (4) "the distinction" restored; both readings of "the CP rate" named (swing during emission; Moment/swap rate) and asked; (5) credited: one-cycle light exists (ultrafast lasers, octave-wide), higher-energy atomic lines tend to be shorter (ω³|d|²); (6) "or something else" added to the question, its observation rephrased; (7) todolist 4448 entry written (amplitude per photon; ZBW rates and factor 2; dispositions). Optional notes taken: Hα named in prose with script line; 1955 beat noise noted; the Planck-scale case strengthens the conclusion.
 
+---
+
+## Patch 4449 — first critic return (fresh context), verbatim
+
+**Verdict:** HOLD. The core physics is sound, but the headline "always lies between" claim is false as stated, and the account of which part of his picture failed misreports what he said this time.
+
+  I ran the script. It reproduces the table and its part 2 (3.9 × 10⁶ swings, a colour spread of about 0.32). I also checked the bracketing condition by brute force over n₂ = 1–5 and n₁ up to 40.
+
+  **Required changes**
+
+  1. **"Always lies between" is false in general.** Fix the title, §3, §5 and §6.
+     - Condition: 2/n₁³ < 1/n₂² − 1/n₁² < 2/n₂³.
+     - The lower bound always holds. The upper bound fails for some Δn > 1 transitions:
+       - 6→3: light = 1.125 × the rate of the orbit entered;
+       - 6→4: 1.11 ×;
+       - 7→5: 1.22 ×;
+       - 10→3, and the whole Paschen series limit.
+     - It holds for every Δn = 1 transition, with a one-line proof. With n₂ = n, f/(Ry/h) = (2n+1)/(n²(n+1)²).
+       - Below 2/n³ because (2n+1)n < 2(n+1)².
+       - Above 2/(n+1)³ because (2n+1)(n+1) > 2n².
+     - The claim should be limited to Δn = 1, with that proof stated. Also add the 3→1 row the script already prints (it does bracket), or explain why it was left out.
+     - The script's docstring repeats the general claim and needs the same restriction.
+
+  2. **Say what the "between" fact really contains.** Since E_n ∝ −1/n², the mean value theorem gives ΔE/h = Δn × f_rev(n*) for some n* between the two orbits. For Δn = 1 that is the revolution rate of an intermediate orbit, so bracketing is automatic.
+     - The real content is Bohr/correspondence: h × f_rev(n) = dE_n/dn.
+     - For Δn > 1 the light approaches the Δn-th harmonic, not the orbit's rate. That is why it can rise above the rate of the orbit entered.
+     - The draft should not present "set jointly by both orbits" as a clue from the data. It is a property of a smooth E(n). It does not point to a joint mechanism.
+
+  3. **"Only one part failed: the count sets the colour" mislabels his statement.** This time he said the count of oscillations "added up to the total energy emitted," not that it sets the colour. That statement is not refuted.
+     - In 4445's own lifetime check, the energy radiated is power × time. That is a sum over about 4 × 10⁶ swings of about ΔE/N ≈ 2.6 μeV each.
+     - So "the count adds up to the energy" is true. What 4446–4448 ruled out is that the count fixes the colour or that ΔE is "N quanta" (4447). ΔE = hf whatever N is.
+     - Rewrite §2 and §6 to say his summation is right in this sense. The colour is set by the rate, not by N. The reconciliation (rate = colour, energy = hf, count = fτ) then sits consistently with his words. As drafted it does not contradict him, but it does not credit him either.
+
+  4. **The beat link (§3, last paragraph) conflates two things.** 4446's beat is the difference of (mc² + E_n)/h rhythms. The table brackets the light with orbital revolution rates. These are not "the same fact."
+     - 4446 also said explicitly that the orbits' revolution rates fail as the swing rate. §3 needs a sentence reconciling "between" with that "fail."
+     - He set the beat aside in 4448, so bringing it back as "exactly that" is not respectful. Drop the "same fact" sentence, or reduce it to one marked cross-reference.
+
+  5. **Mark Claude's readings in the text.** "For small orbits the swing … runs at a rate set by both orbits together" (§3) is stated as fact. It is Claude's reading (PD-008 §7 already marks it), so mark it in §3 as well.
+     - §1's summary "accelerated by the difference between…" paraphrases "by an amount equal to the current energetically charged state of the DP Sea and the new state of orbital space charge." He did not say "difference." Mark that as Claude's reading or quote him.
+     - §1 drops his "a single photon of the frequency of the total shell-drop energy." Restore it. It shows his burst still carries f = ΔE/h, which is why it is the one-cycle photon of 4448.
+
+  6. **The founder question (§5) is leading.** "Does the CP's swing take its rate from both orbits at once" asks him to confirm Claude's own marked convenient branch, and it rests on the bracketing that fails for Δn > 1.
+     - Ask it neutrally, for example: "During the drop, what in your picture sets the CP's swing rate at 2.47 × 10¹⁵ per second, which differs from both orbits' revolution rates?"
+     - Keep the second half (what keeps the rate steady while the reservoir drains). Consider adding: how fast does the reservoir drain each swing (about 2.6 μeV per swing), and why does it drain in proportion to what is left?
+
+  7. **D-9: write the todolist 4449 entry in the same patch** and run `code/deferral_gate.py`. Items owed:
+     - what fixes the rate at ΔE/h;
+     - what holds it steady;
+     - the reservoir discharge rate matching the lifetime;
+     - "the CP rate" still unanswered;
+     - carried from 4448: c, d, e, f;
+     - dispositions: 4448(a) part 1 answered; the half-wave burst not adopted; 4448(b) carried or merged into the rate item, so it is not lost;
+     - plus the new test in item 8 below.
+
+  8. **Missed test of his reservoir discharge.** In his picture the CP is accelerated by the discharge. Measurement requires three things of that discharge:
+     - exponential decay, so the drain is proportional to the energy remaining, which gives the Lorentzian line of width 10⁸ Hz;
+     - a steady frequency while the amplitude decays (4446 test a);
+     - about ΔE/N per swing.
+     - Add these to §4 as the quantitative targets his reservoir must hit. They also give him something physical to answer to, instead of the burst.
+
+  **Checked and fine**
+  - His words: the verbatim filing matches. "He did not say what he means by the CP rate" is fair; his message does not address it.
+  - Item (4): for large n with Δn = 1, the light goes to the orbit's revolution rate, which is what a classical circular-orbit charge radiates. This is correct. It would read better with "for Δn = 1" added. Higher Δn corresponds to harmonics, which only elliptical orbits radiate.
+  - Item (6): 4445 is cited correctly. A charge swinging at the Lyman-α frequency radiates in 0.66 ns; weighted by f = 0.416 and the multiplicity ratio 1/3, that gives 1.60 ns. 4 × 10⁶ swings matches 3.9 × 10⁶.
+  - Ruling out the single burst as 4448's one-cycle photon is fair and well grounded.
+
+  **Optional**
+  - Point out to him that 4445's lifetime check is itself his "count adds up to the energy," done quantitatively. That is the strongest support for his first picture.
+  - 4448's owed item (e), amplitude per photon via hf = ∫ε₀E² dV, connects naturally to the energy per swing. It could be noted.
+
+  **Plain Language:** The draft's main idea holds up: the founder's first picture, a steady swing repeated millions of times, fits the measurements. But its key "clue", that hydrogen's light always lies between the speeds of the two orbits, is only true for jumps of one level. It fails for jumps like 6→3. Even where it holds, it follows from simple maths rather than revealing a mechanism. The draft also says the wrong part of his idea failed. His claim this time, that the swings add up to the energy, is actually right; what failed earlier was the claim that the number of swings sets the colour. The question to him nudges him toward Claude's own preferred answer, and the required todolist entry has not been written yet.
+
+## Claude's response to the first 4449 return (not part of the verbatim report)
+
+HOLD accepted. The draft was rebuilt: "always between" restricted to one-level jumps with the one-line proof, larger-jump counterexamples (6→3, 7→5) shown in the script, and the fact reframed as the mean-value/correspondence consequence of smooth E_n, not a mechanism clue; his summation ("the count adds up to the energy") credited, with the failed part named correctly (count sets the colour); the conflation with 4446's beat removed; his words restored; the question made neutral; the reservoir given quantitative targets. The rebuild went to a second fresh critic.
+
+## Patch 4449 — second critic return (fresh context, on the rebuild), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+  I ran the script. Its numbers match the text: about 3.9e6 swings, 2.6 µeV each, 10.2 eV total; linewidth 1.0e8 Hz; steadiness 4e-8; and the "between" table, including the scan of one-level jumps for n = 1..2000.
+
+  **Checks**
+  1. **Founder words.** The quotes are accurate, including the restored "a single photon of the frequency of the total shell-drop energy is released in a single burst" and the Summary line. One small slip: §1's "We need an entity" drops his hedge "It sounds like we need" (optional note 1).
+  2. **Proof and counterexamples.**
+     - The one-level proof is correct. f/R = (2n+1)/(n²(n+1)²). The upper bound 2/n³ reduces to 2n²+n < 2n²+4n+2, and the lower bound 2/(n+1)³ reduces to 2n²+3n+1 > 2n². Both hold for all n.
+     - The mean-value framing is correct: dE/dn = 2Rh/n³ = h·f_rev(n), and f_rev is monotone.
+     - The ratios 6→3 = 1.125 and 7→5 = 1.224 are right. The table also correctly shows 3→1 as between.
+  3. **"His summation is right."** This is defensible and consistent with 4445 (the lifetime check) and 4447 (the action-increment reading). However, his literal words, "the total number of oscillations added up to the total energy", can also be read as energy ∝ count, which 4447 ruled out. The doc adopts the per-swing-sum reading without marking it as Claude's reading (change 3).
+  4. **Reservoir targets.** The exponential drain and the steady rate are stated correctly. The third target, "about 2.6 µeV per swing, over about 4 million swings, adding to ΔE", contradicts the first: a fixed amount per swing is a linear drain, not an exponential one (change 1).
+  5. **Founder question.** It is physical, but its second half is still leading. "Does each swing take a fixed share of what is left…?" hands him the answer as a yes/no. It also repeats the constant 2.6 µeV per swing (change 2).
+  6. **Overclaim.** There are small ones: changes 3 and 4, and optional note 2.
+
+  **Required changes**
+  1. **Fix the energy per swing to fit the exponential drain** (§2, §4 third bullet, §6, §7, script Part 1/4 labels).
+     - With exponential decay, each swing gives up a fixed fraction 1/(fτ) ≈ 2.5×10⁻⁷ of what remains. That is about 2.6 µeV at the start and less later.
+     - About 4 million swings occur in one lifetime and release about 63% of ΔE. The full 10.2 eV is reached only as the tail runs out.
+     - Restate it this way: "about 1 part in 4 million of what is left, per swing (about 2.6 µeV at first); the sum over the whole decay is ΔE." Drop "4 million swings … adding up to 10.2 eV" as an exact statement wherever it appears.
+  2. **Make §6 non-leading** (and the matching sentence in §7). State the measured facts, then ask an open question. Suggested wording: "the measured light dies away smoothly, losing the same share of what is left in each nanosecond-scale interval, while its rate holds to 4 parts in 10⁸. During the drop, what in his picture sets the swing at 2.47 × 10¹⁵ per second, and what in the DP reservoir's discharge makes the energy come out that way?" Remove the "does each swing take a fixed share…?" yes/no and the constant 2.6 µeV phrasing.
+  3. **Mark the reading of his count.** In §2 (and §7), say that "his summation is right" is Claude's reading: the swings' energies sum to ΔE. Say that under the other reading, energy as count × a fixed quantum per swing, it is what 4447 ruled out. Add this reading to the §8 "Claude's reading, marked" list.
+  4. **Correct the half-wave burst description** (§2, title, §7, script Part 2 label).
+     - His burst is half a cycle, which is shorter than 4448's one-cycle photon. So its colour spread is at least as broad (a third to a half or more, not "about a third"), and its fringes go beyond about half a wavelength, not one.
+     - Write it as "shorter than 4448's one-cycle photon, so its failures are worse." The verdict stands, but the label "is the one-cycle photon" is imprecise.
+
+  **Optional notes**
+  1. In §1, restore "It sounds like" before "we need an entity".
+  2. §2's "4445's lifetime check is his picture done with numbers" overstates: 4445's check was Claude's proposal. Prefer "is the quantitative form of his picture".
+  3. §3's "For larger jumps the light tends to a multiple of the orbit's rate" holds only asymptotically, for large n at fixed Δn. Add "for large orbits".
+  4. The PD-008 "Owned" list could also own the earlier leading question, which the first critic flagged.
+
+  **D-9: todolist entry 4449 (not yet written), items to include**
+  - (a) The founder question in 4449 §6 (as revised): what sets the swing's rate at ΔE/h in CPP terms, and how the DP reservoir's discharge produces the exponential drain while the rate stays steady. This merges 4448 b.
+  - (b) The reservoir's three quantitative targets:
+    - exponential drain (37% left after τ; Lorentzian width 10⁸ Hz for Lyman-α);
+    - rate steady to about 4e-8 (4446 c);
+    - a per-swing share of 1/(fτ) of what remains.
+  - (c) What "the CP rate" means: 4448 a, part 2, still unanswered.
+  - (d) Amplitude per swing and per photon: 4448 e, now linked to the energy per swing (hf = ∫ε₀E² dV).
+  - (e) Carried: 4448 c (the ZBW's two corpus rates and the factor 2 against Dirac's rate), 4448 d (the ZBW's role), 4448 f (4447 d, e, f).
+  - (f) Dispositions:
+    - answered: 4448 founder question part 1 (yes, a steady swing millions of times);
+    - not adopted: the single half-wave burst;
+    - Claude's readings pending: his "acceleration equal to the charged state" read as a steady draining swing; his count read as a per-swing energy sum.
+  - (g) The second critic's verdict to be filled into the 4449 header, with the verbatim return filed in `reviews/2026-10-01_session_242_critic_returns_verbatim.md`. Nothing registered.
+
+  Files reviewed:
+  - /root/CPP/series_standard_model/axiom_maturation/4449_the_steady_swing_works.md
+  - /root/CPP/series_standard_model/code/4449_rate_between_two_orbits.py
+  - /root/CPP/founders_voice/4449_single_burst_discharge_of_orbital_reservoir.md
+  - /root/CPP/series_standard_model/axiom_maturation/4445_the_photon_as_a_packet.md, 4447_the_colour_is_counted.md, 4448_how_long_is_a_photon.md
+  - /root/CPP/todolist.md (entry 4448)
+
+## Claude's response to the second 4449 return (not part of the verbatim report)
+
+All four taken in: (1) energy per swing restated as a fixed share 1/(fτ) ≈ 2.5×10⁻⁷ of what remains (≈2.6 µeV at first), 63% per lifetime, ΔE over the whole decay (text and script); (2) the founder question now states the measured facts and asks openly what sets the rate and what in the discharge makes the energy come out that way; (3) "his summation is right" marked as Claude's reading, with the other reading (count of quanta) noted as ruled out by 4447; listed under PD-008; (4) the half-wave burst described as shorter than the one-cycle photon, its failures worse. Optional notes taken: "It sounds like" restored; "quantitative form of his picture"; "for large orbits" on harmonics; the leading question owned.
+
