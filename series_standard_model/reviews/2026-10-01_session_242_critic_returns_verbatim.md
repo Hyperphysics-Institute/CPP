@@ -5015,3 +5015,46 @@ Files: /root/CPP/series_standard_model/axiom_maturation/4451_the_cp_as_the_only_
 
 All six taken in: (1) the metering credited as a structure; the drain rate (power per swing giving τ ≈ 1.6 ns; orbit dependence) added as owed, with classical radiation damping (~0.66 ns) as a guide; title and §2 reworded; (2) "measured lines are Lorentzian" hedged: exponential decay leads; the natural line seen Doppler-free is Lorentzian; (3) the identical-packet assumption stated, with Lorentz's collision-broadening loophole and why it doesn't apply; (4) pendulum → mass on a spring; (5) todolist 4451 entry written; his unfinished last bullet noted in §1 and listed; (6) the second question reworded neutrally. Optional notes taken: radiation damping as a second route to "same share of what is left"; script comments tidied.
 
+---
+
+## Patch 4452 — critic return (fresh context), verbatim
+
+**Verdict:** ACCEPT WITH CHANGES
+
+I ran the script. It works and prints exponential histograms (6324/2319/904… against expected shares 0.632/0.233/0.086) as described.
+
+**Required changes**
+
+1. **4451 never said the rise is smooth. Change "correction" to "clarification".** 4451 only says the light "dies away smoothly" and "fades smoothly" (lines 50, 60, 89, 99). It contrasts this with a flat pulse "that switches off." It never says a leading edge rises smoothly. The founder paraphrased. Edit §2 ("4451's wording needs one correction"), §3 ("Correction to 4451's wording"), §4 ("I should correct one thing I said") and §5 ("Corrected: 4451's 'rise and fall smoothly' wording"). Reword along these lines: "4451 described only the fall as smooth. To be explicit, the start is sharp." In §4 something like: "To be clear about the start: it isn't gradual." As written, the note puts words in 4451's mouth and takes on an error 4451 did not make.
+
+2. **"Starts at full strength" needs a qualifier.** It holds only when the excitation pulse is short compared with the lifetime. In Darquié 2005 the pulse was about 4 ns against τ ≈ 26 ns. The rise is then limited by the pulse length (plus detector timing jitter), a few ns. Add "(within the few-ns excitation pulse)" or similar.
+
+3. **Say whether the numbers describe amplitude or strength squared.** The question is exactly amplitude versus frequency. The click histogram follows intensity, which is amplitude squared. The 63/23/9% per lifetime are intensity shares. The amplitude itself falls half as fast (e^{-t/2τ}). One sentence fixes it: "The clicks trace the strength squared (the energy); the swing's amplitude fades at half that rate."
+
+4. **Legero et al. 2004 is mis-cited. Remove it or describe it correctly.** Legero et al., PRL 93, 070503 ("Quantum beat of two single photons") used photons from an atom–cavity system, made by vacuum-stimulated Raman passage. Their shape was set by the pump pulse: long and roughly bell-shaped, not exponential spontaneous-emission packets. As far as I recall, both photons came from the same cavity source, one delayed in fibre, not from "two separate atoms" in free space. So it supports neither "two separate atoms" nor "match exponential packets." Beugnon et al., Nature 440, 779 (2006) is accurate: two independently trapped Rb atoms in two optical tweezers, same group as Darquié, spontaneous-emission photons. Darquié et al., Science 309, 454 (2005) is accurate: one ⁸⁷Rb atom in an optical tweezer, triggered single photons, lifetime about 26 ns.
+
+5. **Soften "confirms that each photon carries that fading shape" and add the reason two-photon interference is the real test.** The click histogram alone cannot tell the two pictures apart. I checked numerically: flat packets starting at excitation, with lengths spread as gamma(k=2, τ), reproduce the exponential click histogram exactly. But two such photons overlap only about 0.50 on average, so they interfere poorly. Identical exponential packets overlap about 1. So two-photon interference is what separates "every photon is one fading packet" from "packets of random shape that only add up to the fading curve." Beugnon's result is consistent with exponential packets, but its visibility was not near-perfect, so write "consistent with." Optional: cite later near-unity two-photon interference with spontaneous-emission photons for a stronger statement (single ions, e.g. Maunz et al. 2007; quantum dots with visibility above 0.95, e.g. Somaschi et al. 2016, which are not atoms).
+
+6. **Add one sentence on the interpretation.** In standard QM a single photon's envelope is a probability amplitude and is never seen in one shot (the note says this correctly). Read literally, CPP has each photon as a fading swing. That reading is the one that predicts near-perfect interference between photons from identical atoms. Flag it in one sentence so the dot-by-dot analogy is not taken to settle the interpretation. The analogy itself is fair: one dot or click per run, and the pattern appears only across many runs.
+
+7. **D-9: the todolist entry for 4452 is not yet written.** Write it in this patch. It should contain:
+   - founder clarifying question answered (amplitude not frequency; one photon, envelope seen through repeats);
+   - 4451 wording clarified, not corrected (see change 1);
+   - carried: 4451 owed items (a)–(f), including (a), the 4451 §5 founder question, still pending; disposition (g) unchanged.
+   - New, small, which I recommend recording: "CPP literal-envelope reading: one fading swing per photon predicts near-unity two-photon interference between identical atoms. Note this as consistency or a test, to be merged with 4451 (c) if preferred."
+   
+   Nothing else new is owed.
+
+**Optional notes**
+- "4 parts in 10⁸ for Lyman-α" is the natural linewidth as a fraction of the frequency (≈100 MHz / 2.47×10¹⁵ Hz). It is fine as a "colour holds" figure, but it is a width, not a measured limit on frequency drift within a packet. A "(the line's natural width)" gloss would help.
+- The very-early departure from exponential decay predicted by QED (femtoseconds) is negligible here; no need to mention it.
+- Tone and length suit a clarifying question. §4 is clear and in plain language. The title is long but matches the series style.
+
+**Plain language:** The note's answer is right: the strength of the light fades, its colour does not. But it "corrects" something 4451 never said, since 4451 only called the fade smooth. It cites one experiment (Legero 2004) that doesn't show what is claimed. It should say that the click counts track the energy, which fades twice as fast as the swing's size. And it should say that the experiment which really tests "each photon fades" is two photons interfering, not the click histogram, which other packet shapes can also produce.
+
+Key files: /root/CPP/series_standard_model/axiom_maturation/4452_what_fades_in_a_photon.md, /root/CPP/series_standard_model/code/4452_one_photon_many_clicks.py, /root/CPP/series_standard_model/axiom_maturation/4451_the_cp_as_the_only_outlet.md, /root/CPP/todolist.md (4451 entry around line 2607).
+
+## Claude's response to the 4452 return (not part of the verbatim report)
+
+All seven taken in: (1) "correction" changed to "clarification" (4451 described only the fall as smooth); (2) "starts at full strength (within the few-ns excitation pulse)"; (3) the clicks trace energy (amplitude squared), the amplitude fading at half the rate; (4) Legero 2004 removed; Beugnon 2006 and Darquié 2005 kept as described; (5) the histogram alone cannot distinguish packet shapes; two-photon interference is the test (Beugnon 2006 consistent; Maunz 2007, Somaschi 2016 near-unity); (6) the interpretation flagged: CPP's literal fading-swing reading predicts near-unity two-photon interference; (7) todolist 4452 entry written. Optional note taken: the 4e-8 glossed as the line's natural width.
+
