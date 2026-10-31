@@ -5362,3 +5362,87 @@ I ran the script. Parts 1 to 3 reproduce exactly. The square-root speed values, 
 
 All six taken in: (1) the photon-mass bound re-scoped to a fixed sideways rhythm shared by every photon; the decisive argument (sideways share 1, no travel) stated as needing no bound; GRB's blindness to a fixed fractional share noted; plain-language sentence fixed; (2) the laser-profile paragraph recast: a profile many wavelengths wide costs a tiny share (script part 4), Giovannini et al. 2015 cited as free-space evidence for the waveguide relation, Gaussian spreading noted, the half-wavelength radius as the cutoff case; (3) §4 reframed to his energy-tied faster message (relay at local c; smaller radius needed; GRB rules out energy-dependent speed); ATLAS 2017 as first evidence, 2019 observation; (4) todolist 4457 entry written with the floor tension (geomagnetic mHz ~1e-17 eV; ~5e-44 h per Planck-time Moment for a 1 Hz photon); (5) "settled" downgraded to "agreed in outline", resting on the open swing; (6) script Part 4 now has code and output. Optional notes taken: the mass bound marked as the over-broad branch under PD-008; the question offers his "another way" first.
 
+---
+
+## Patch 4458 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES.** The required changes are substantial. §3 and §7 claim more than the script and the physics support. I edited no files.
+
+I ran the script. Part 1 prints the expected time-dilation factors. Part 2 prints (a) peaks at 99, 100, 101 and (b) a peak at 1.00. Both are correct for what the script computes. I also ran two checks of my own in a scratch run:
+- The averaged strength (1+m cos)²/2 stays between 0.02 and 1.62. It never changes sign.
+- Two modulated carriers (envelopes at 3 and 5, carriers at 100 and 103.7, arbitrary phases), squared and averaged, show peaks at 3, 5 and the carrier difference 3.7 ± the modulations. There is **no component at the envelope difference, 2.**
+
+## Required changes
+
+1. **Case (b) does not reproduce measured light fields (§3, §5, §7, §8).** The averaged strength is a square-law quantity, so it is never negative. It has a DC part and only grows and shrinks between low and high. Measured optical fields are different in four ways:
+   - (i) Field sampling (4447) shows the field swinging through zero to opposite signs, with zero mean. Radiated far fields have no zero-frequency (DC) part.
+   - (ii) Fields are transverse vectors with polarization. A scalar strength has neither.
+   - (iii) The field superposes linearly. The averaged square of a sum is not the sum of the averaged squares.
+   - (iv) A carrier-envelope phase shift of π flips the field's sign. A strength cannot show that.
+
+   So "the electric field of light must be this averaged quantity" cannot hold as stated. The doc must say that (b) is **necessary but not sufficient**. At least the varying part would need to be signed, zero-mean, linearly superposing and polarized. Remove "So his picture fits if (b) holds" and "That is the colour" (§7), or qualify them heavily.
+
+2. **Interference fails under (b).** Dark fringes need signed amplitudes that cancel to zero. Two non-negative strengths only add.
+   - For a single photon on two paths, the cross term in the averaged square goes as cos(2π F Δt). It swings once per carrier wavelength, about a picometre of path difference.
+   - So any fringes would sit at the carrier scale and be washed out, not at the colour's wavelength.
+   - §1 records his one- and two-slit claims, and §4 treats them as matching. The doc must state that (b) as written does not yield fringes at the colour's wavelength with dark minima. Add this as an open item.
+
+3. **The two-photon beat claim is wrong as stated (§3 "Two photons mixing", §7 last sentence).** Squaring and averaging two modulated carriers does not give the envelope difference (my run above).
+   - The ZBW carriers of two different electrons have unrelated phases. Any tiny carrier offset, even parts per million of about 10²⁰ Hz, shifts the cross term far away.
+   - In standard physics, a beat note is the square-law detector acting on two linear fields.
+   - In this picture, a beat would need the colour-rate quantity to be a signed linear field that the detector then squares: a second square-law step. Rewrite the passage, or mark it as not shown.
+
+4. **"Structure cannot evolve in flight" is too strong, and it contradicts 4457** (line 58: "profile also spreads slowly as the beam travels").
+   - What is right: no internal clock, no decay, no self-initiated change.
+   - Propagation still reshapes the pattern deterministically, with no new energy: diffraction and Gaussian beam spreading, dispersion and chirp in matter, Doppler and gravitational redshift.
+   - Reword §2 and §7 along these lines: "nothing happens inside it; how its shape spreads is fixed by the shape it was given and by what it passes through."
+
+5. **Photon stability needs a better basis (§2, §7).** Proper-time zero is a heuristic. The firm statements are:
+   - Decay of a massless photon is kinematically forbidden.
+   - Experiment gives bounds, not proof: photon mass and lifetime limits (e.g. Heeck 2013).
+
+   Reword "That is why photons do not decay" to "consistent with". The neutrino sentence is accurate: oscillation requires at least two nonzero mass differences.
+
+6. **Founder wording fixes (§1):**
+   - He wrote "interacts with **mass** and energy". The doc has "matter and energy".
+   - "Ultimate holder of energy/**organization**": "organization" was dropped.
+   - His first bullet's "the forward/backward (leading/trailing) edge … cannot move in space" is omitted. Add it briefly.
+   - The unfinished sentence is handled acceptably: it is flagged in §1 and "reading pending" in §5. Keep that, and add no completion.
+
+7. **Revise the founder question (§6).** As written it leads: it offers two options, and the doc has already argued for the second. After change 1, the decisive physical picture is the sign. Suggested wording: "Along the photon, does the DP arc-separation swing to both sides of its resting value, like a field that points one way and then the other, or does it only grow and shrink? And when two parts of one photon meet out of step, can they cancel to nothing?" This is physical, non-leading, and goes to the real gap.
+
+8. **D-9 todolist entry 4458 must be written in the same patch.** It should cover:
+   - the averaged-DP-arc-separation condition, now marked "not sufficient": sign, linearity, polarization;
+   - interference at the colour's wavelength with dark minima;
+   - the two-photon difference under (b);
+   - the profile's spacing set at emission;
+   - displacement and rate fixed in exact proportion (E = hf);
+   - the reading of the unfinished sentence;
+   - the founder question;
+   - carried items: 4457 b–g, 4444 b, c;
+   - dispositions: 4457's question answered; "frozen at emission" agreed with the propagation qualifier.
+
+9. **PD-008 (§8):** add that the convenient branch (b) has been checked and fails three observations (sign, interference, beats) unless strengthened. Marking it as convenient is not enough.
+
+## Optional notes
+
+- The gratings point (case a vs b, item 4) is fair. Diffraction angle follows the spatial period of whatever superposes linearly at the grating, so the requirement is about linearity, not merely about "responds to". Say so.
+- The averaged square also contains a 2f component (amplitude m²/2 against 2m at f). It is harmless, but a pure-colour photon would then carry a second harmonic unless the depth m is small. Worth one clause.
+- The ZBW rate is 2mc²/h, about 2.5×10²⁰ Hz, at roughly half the Compton wavelength. "About the Compton wavelength" is acceptable.
+- §2's dipole/radio analogy is fine. A dipole's radiated field is signed, though, which reinforces change 1.
+- The Plain Language summary in §7 should drop "the fast ZBW riding underneath where nothing that measures light can see it" as settled fact. It is a requirement, not a result.
+
+The two governing rules came from Thomas's saved preferences: the D-9 rule (deferrals go into `todolist.md` in the same patch) and the PD-008 rule (mark the convenient branch).
+
+Files reviewed:
+- /root/CPP/series_standard_model/axiom_maturation/4458_frozen_at_emission.md
+- /root/CPP/series_standard_model/code/4458_frozen_profile_and_envelope.py
+- /root/CPP/founders_voice/4458_photon_frozen_at_emission_carrier_amplitude.md
+- /root/CPP/series_standard_model/axiom_maturation/4457_a_sideways_standing_wave_would_not_travel.md (line 58)
+- /root/CPP/series_standard_model/axiom_maturation/4447_the_colour_is_counted.md
+- /root/CPP/todolist.md (entry 4457; no 4458 entry yet)
+
+## Claude's response to the 4458 return (not part of the verbatim report)
+
+All nine taken in: (1) case (b) stated as necessary-rate but not sufficient: non-negative, no polarization, not linear, no sign flip; "his picture fits if (b) holds" and "that is the colour" removed; (2) interference failure under (b) stated (cross term at the carrier scale; no dark minima; script part 3 shows signed cancellation vs non-negative sums); (3) the two-photon beat under (b) rewritten as not shown (beat needs a detector squaring two signed fields); (4) "cannot evolve in flight" → nothing happens inside; external, deterministic reshaping (diffraction, dispersion, redshift) stays, consistent with 4457; (5) photon stability on kinematics and bounds, "consistent with"; (6) his words restored (mass and energy; organization; leading/trailing edges); (7) the question rewritten as suggested (both sides or only grow and shrink; can parts cancel); (8) todolist 4458 entry written; (9) PD-008 records (b) as checked and failing three observations. A new case (c), a signed swing (Claude's candidate: the direction of the DP arc-separation), added as the requirement. Optional notes taken: linearity as the grating criterion; the dipole's signed field; Plain Language no longer states the ZBW as settled.
+
