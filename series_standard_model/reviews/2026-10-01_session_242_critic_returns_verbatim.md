@@ -5446,3 +5446,107 @@ Files reviewed:
 
 All nine taken in: (1) case (b) stated as necessary-rate but not sufficient: non-negative, no polarization, not linear, no sign flip; "his picture fits if (b) holds" and "that is the colour" removed; (2) interference failure under (b) stated (cross term at the carrier scale; no dark minima; script part 3 shows signed cancellation vs non-negative sums); (3) the two-photon beat under (b) rewritten as not shown (beat needs a detector squaring two signed fields); (4) "cannot evolve in flight" → nothing happens inside; external, deterministic reshaping (diffraction, dispersion, redshift) stays, consistent with 4457; (5) photon stability on kinematics and bounds, "consistent with"; (6) his words restored (mass and energy; organization; leading/trailing edges); (7) the question rewritten as suggested (both sides or only grow and shrink; can parts cancel); (8) todolist 4458 entry written; (9) PD-008 records (b) as checked and failing three observations. A new case (c), a signed swing (Claude's candidate: the direction of the DP arc-separation), added as the requirement. Optional notes taken: linearity as the grating criterion; the dipole's signed field; Plain Language no longer states the ZBW as settled.
 
+---
+
+## Patch 4459 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+The arithmetic is right. The script runs and reproduces every number: Lyman-α 2.467e15 Hz, 4.93e15 reversals/s, 121.5 nm; 2mc²/h = 2.471e20 Hz, 4.94e20 reversals/s, 1.21 pm; dark remainder 1.9e-15; bright 2.001 against a separate total of 1.000; ZBW/Lyman-α ratio about 1.0e5. The problems are four kinds:
+- the founder's hedge is dropped and his words are over-read;
+- one citation points to the wrong patch;
+- the polarization claim is imprecise and counted as settled while §5 (b) says it is open;
+- the main "consequence" and the §6 question are presented as new, but the session settled the first and has asked the second since 4446–4455.
+
+## Required changes
+
+1. **The founder's hedge is dropped (fidelity).** §1's second bullet quotes him from "The SSV_net is produced…" and leaves out his opening words, "Yes, that is consistent with what could be produced." Fix: start the quote with those words. In the title, change "the Founder Confirms That … Two Parts Out of Step Cancel" to "the Founder Answers Yes … and Says Two Parts Out of Step Cancelling Is 'Consistent With What Could Be Produced'".
+
+2. **"Rate set by the energy difference" is attributed to him; he did not say it.** He said the CP oscillates "due to the energy difference between the two orbitals". That names a cause, not a rate.
+   - §3: replace "His second answer already points this way … with its rate set by the energy difference" with: "His second answer names the energy difference as what drives the oscillation. He does not give its rate. A rate of ΔE/h is the Bohr condition (4446), not something he stated here."
+   - §7: replace "set by the energy difference between the orbits, which is what his second answer says" with "at ΔE/h. His second answer says the energy difference drives it, though not at what rate."
+
+3. **The "consequence" is not new. Cite where it was established.** The CP's radiating swing at ΔE/h, and not at the Compton/ZBW rate, was already stated in 4445 §2 ("a charge swinging at the light's own frequency gives hydrogen's 1.6 ns packet"), 4446 (Compton rate and orbit revolutions both fail), 4448, 4449 ("the rate does"), 4453 and 4455. 4458 case (a) excluded the carrier seen directly.
+   - Fix §3's opening: "This restates, from his dipole picture, what 4445–4449 found: …"
+   - Fix the title clause "Its Consequence: …" to read "It Restates 4445–4449: …"
+   - Add 4446's founder words to the "On the word ZBW" paragraph: "The ZBW oscillation is not the photon; the packet is", and the photon as "an envelope holding a total energy sum of many ZBW cycles". These bear directly on which reading of "ZBW" he means.
+
+4. **"Must run at ΔE/h" is too strong, and the "fast ZBW rides underneath" branch is incomplete.** By the same dipole logic, a CP that also moves at 10²⁰ Hz would also radiate at 10²⁰ Hz (photon energy 2mc² ≈ 1.02 MeV), unless that motion does not radiate.
+   - Fix §3's bold sentence: "So the part of the CP's motion that radiates during the emission must run at ΔE/h. Any faster ZBW motion underneath must not radiate, as his 4445 picture of a mass's non-radiating ZBW already requires."
+   - Add to the "On the word ZBW" paragraph that 4454's collective mode and 4455's relayed chain are the existing candidates for 10¹⁵ and 10²⁰ coexisting.
+
+5. **Wrong citation.** "His earlier picture (4445) of the DP plane radiating at right angles to the CP's oscillation" is 4446 §1 ("the DP arc-separation plane radiates at right angles to the CP's oscillation"). 4445's wording is "a wake of perpendicular DP arc-separation". Fix: change (4445) to (4446) and quote 4446's wording.
+
+6. **Dipole polarization is stated imprecisely.** "A dipole's radiated swing lies along the dipole's axis" is true only at broadside. In general the radiated E lies along the part of the axis perpendicular to the line of sight (θ̂), in the plane holding the axis and the direction of travel. Fix: "A dipole's radiated field lies in the plane of its axis and the direction of travel, at right angles to the travel (along the axis itself for light sent out broadside, as 4446's photon is). That gives a polarization."
+
+7. **§4 claims polarization is settled while §5 (b) says it is open.** If his "forward and reverse DP displacement" is longitudinal (the 2026-07-28 ruling), it carries no polarization. Fix §4's first bullet:
+   - rename "Settled in outline" to "Agreed in outline (his cancellation hedged as 'consistent with what could be produced')";
+   - list only the signed swing, and dark fringes with the energy moved to the bright bands, conditional on (b) and (c);
+   - move "polarization from the dipole's axis" to "Not settled", tied to §5 (b).
+   Also replace "4458 items (b) and (c) are answered in outline" with "… answered in outline, conditional on 4459 (b) and (c)".
+
+8. **The single-photon claim overreaches.** "For one photon, that is why it is never found in a dark band" assumes the detection probability follows the squared swing. That is CPP's detector square law, which is owed (§5 (d)). It also assumes energy goes as V_i², which is not registered. Fix: "If the energy and the chance of detection go as the square of the swing (not yet derived in CPP; §5 (d)), that is why one photon is never found in a dark band." Add to §5 a new item (i): "energy ∝ V_i² in CPP terms (needed for the fringe energy balance)." Add the same assumption to PD-008 "Marked".
+
+9. **The 4355 citation needs scoping.** 4355 registers a linear static relay (u = M_R u + s, the PSR shell mean; GR-1j exact statics). It does not register the dynamic relay, and does not address whether discreteness (one GP per Moment, 4457 (d)) breaks linearity at small amplitudes. The parenthesis already marks dynamic linearity as Claude's reading, which is right. Fix: change "the relay's shell-sum is linear in what arrives (AP-3/AP-4; 4355)" to "the registered static relay is a linear shell mean (AP-3; 4355, u = M_R u + s)". Add to §5 (c): "and whether the one-GP-per-Moment floor (4457 d) breaks linearity for weak swings."
+
+10. **The script overstates what it tests.**
+    - The docstring says "energy x4 at the bright band", but the printed bright value is 2.001 against a separate total of 1.000. Fix: "x2 the two parts' separate total (x4 one part alone)".
+    - "the same on average" is never computed. Either add a line averaging over the phase difference δ (mean over δ of mean((a + cos(2πx + δ))²), which should print 1.000), or drop the claim from the docstring and from §2 ("over the fringe pattern the two average out").
+    - Add to the docstring: "Part 1 assumes linear superposition; it is an arithmetic check, not a test of the relay."
+
+11. **§6 question.** As written it re-asks the item owed since 4449 ("Left: what sets the swing's rate at ΔE/h"), 4455 and 4457 (b). Its parenthesis also hands him the required answer, which is mildly leading. The genuinely new ambiguity in his message is which way "forward and reverse" points, and that decides §5 (b). Fix: replace §6 with:
+    > When he says the DP displacement is forward and then reverse with the CP's direction, **forward and reverse along which line: along the CP's swing (across the photon's path), or along the photon's direction of travel?** And while the atom emits, **is the CP's back-and-forth that he calls a ZBW oscillation the same motion as the free electron's ZBW, or a slower swing?**
+
+    Drop the 5 × 10¹⁵ / 5 × 10²⁰ parenthesis, or move it to §3. Make §7's closing sentence match the new question.
+
+12. **§7 hype and over-reading.**
+    - "is exactly what light needs" → "is what light needs".
+    - "And a dipole's swing has a direction across the beam, which is polarization" → "And if his forward and back is across the beam, it gives polarization; I've asked which way it points."
+    - Apply the §7 fix from change 2.
+
+13. **§5 disposition gaps and duplicates.**
+    - 4458 (e) had two parts: the pattern's spacing set at emission by the swing rate, and E = hf. 4459 (e) carries only E = hf. Add: "4458 (e) spacing: restated in outline by §3 (crest spacing c/f with f the CP's out-and-back rate); E = hf carried."
+    - §5 (a) is the same item as 4449's "what sets the swing's rate", 4455's question and 4457 (b). Write "(= 4457 b, 4455 §6; not a new item)".
+    - §5 (b) is the same item as 4444 (f) (C23-R, 2026-07-28 ruling). Write "(= 4444 f)".
+    - 4458 (a), (b), (c), (d), (f), (g) and (h) are otherwise dispositioned or carried correctly.
+
+14. **PD-008 (§8).** Add under "Marked":
+    - The signed swing is the founder's yes, adopted as a property of his picture, not derived from AP-3/AP-4.
+    - The fringe energy balance assumes energy ∝ V_i².
+
+## The todolist entry must contain
+
+The header line must begin "**4459 — " and include:
+- the founder's answer in brief: a signed swing, forward and reverse with the CP's direction, like a dipole antenna; cancellation to net-zero V_i, a dark fringe, with his hedge "consistent with what could be produced";
+- the critic verdict and how many required changes were taken in;
+- "nothing registered";
+- the file paths (founders_voice/4459_…, axiom_maturation/4459_…, code/4459_…).
+
+Then **Owed:**
+- (a) the founder question (revised §6: which way forward/reverse points; whether his atomic "ZBW" is the free electron's ZBW);
+- (b) the mapping from longitudinal DP displacement to the transverse, polarized field (= 4444 f, C23-R);
+- (c) dynamic relay linearity for overlapping photons, including the one-GP-per-Moment floor;
+- (d) the CPP detector square law and the two-photon beat (4458 d);
+- (e) E = hf, size and rate fixed together (4456, 4458 e); the spacing part restated;
+- (f) the reading of his unfinished 4458 sentence;
+- (g) carried: 4457 b–g (4457 b = what sets the rate at ΔE/h, also 4455 §6) and 4444 b, c;
+- (h) dispositions of 4458 (a)–(h) as in change 13;
+- (i) energy ∝ V_i² in CPP terms;
+- (j) any fast ZBW component of the CP during emission must not radiate (from change 4).
+
+Run `code/deferral_gate.py` before the format-patch.
+
+## Optional notes
+
+- The 1.2 pm wavelength is h/(2mc), half the Compton wavelength, and the photon energy would be 2mc² ≈ 1.02 MeV, more than the electron's own rest energy. Stating that is more concrete than "gamma-ray-like" and squares with 4458's "about the Compton wavelength".
+- The zitterbewegung frequency 2mc²/h is correct. "Schrödinger's zitterbewegung of the Dirac electron" is the more accurate label than "Dirac's".
+- §2's "two equal swings half a cycle apart sum to zero" should add "with the same polarization".
+- The light-by-light scattering remark is used correctly, as a requirement on the relay rather than evidence for CPP. The correspondence remark is correctly labelled not-evidence. Neither textbook fact is presented as evidence for CPP.
+- The founders_voice file is accurate and verbatim, with the quoted questions bracketed correctly. Its heading paraphrase is faithful but also drops "consistent with what could be produced". Consider adding it there too.
+
+---
+
+## Claude's response to the 4459 return (not part of the verbatim report)
+
+All fourteen required changes taken in: (1) his hedge "Yes, that is consistent with what could be produced" restored in §1 and in the titles of the fragment and the founders_voice file; (2) ΔE/h no longer attributed to him: his second answer names the energy difference as the driver, not the rate; ΔE/h is the Bohr condition (4446); (3) §3 now restates 4445–4449 (with 4453, 4455, 4458 a) rather than presenting a new consequence; title changed; his 4446 words on ZBW and the envelope added; (4) 'must run at ΔE/h' narrowed to the radiating part of the CP's motion, with any faster ZBW required not to radiate (his 4445 non-radiating ZBW); 4454's cohort and 4455's chain named as the candidates for the two rates coexisting; (5) right-angles picture cited to 4446 with its wording; (6) dipole polarization stated as the plane of axis and travel, along the axis at broadside; (7) polarization moved to 'not settled', conditional on which way his forward and reverse points; 4458 (b), (c) answered in outline conditional on 4459 (b), (c); (8) single-photon dark band made conditional on a square-law detector and energy ∝ V_i²; new item (i); PD-008 marked; (9) 4355 scoped to the registered static relay (u = M_R u + s); one-GP floor added to (c); (10) script docstring corrected (x2 the separate total, x4 one part), phase-averaged energy computed (1.000), linearity stated as assumed; (11) §6 replaced with the suggested question (which line forward and reverse lie along; whether his atomic ZBW is the free electron's); §7 matched; (12) §7 de-hyped and polarization made conditional; (13) dispositions: 4458 (e) spacing restated, (a) = 4457 b / 4455 §6, (b) = 4444 f; (14) PD-008 marks the signed swing as his yes, not derived, and the V_i² assumption. Optional notes taken: 1.02 MeV and h/(2mc) stated; 'Schrödinger's zitterbewegung of the Dirac electron'; 'same polarization'; founders_voice heading carries his hedge. New item (j) recorded.
+
