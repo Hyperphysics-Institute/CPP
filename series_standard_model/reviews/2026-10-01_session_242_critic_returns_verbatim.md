@@ -5316,3 +5316,49 @@ From memory: the D-9 todolist rule, the PD-008 handover discipline, and the rule
 
 All eight taken in: (1) E/f = h stated plainly as a measured fixed action per colour cycle; his "not fixed" read per Moment; the blurring sentence removed; 4455 b dispositioned as reframed; (2) both readings of "propagation rate" set out (swing rate fits; internal speed either irrelevant for a rigid pattern or dispersive, excluded by Evenson 1972 and GRB timing); §6 no longer closes it; asked; (3) TES claim scaled to "within resolution" (0.15 eV, a few percent), X-ray microcalorimeters and Romani 1999 (Crab) added; (4) GRB numbers aligned (0.829 s, few parts in 10¹⁸, emission-together assumption, gamma-ray energies); (5) the low-energy floor test added (radio, ELF; h per Planck-time Moment ~10²⁹ eV) and asked openly; (6) carried items fixed (4455 c, d, f, g; b reframed); (7) his words restored ("standing wave", V_i, the two sentences quoted separately); (8) todolist 4456 entry written. Optional notes taken: displacement vs wavelength noted; the 1.5× illustration labelled.
 
+---
+
+## Patch 4457 — critic return (fresh context), verbatim
+
+**Verdict:** ACCEPT WITH CHANGES
+
+I ran the script. Parts 1 to 3 reproduce exactly. The square-root speed values, 2.4e-4 Hz (= 1e-18 eV / h, the right conversion to cycles per second), the visible-light share below 5e-19, and the radii of 1.5 m, 0.3 µm and 6.2e-13 m (R = c/2f = λ/2) are all correct.
+
+**Required changes**
+
+1. **Photon-mass bound is mis-scoped (§3, §7 "less than a thousandth of a vibration per second", script Part 2).** The mass bound limits a sideways frequency that is the same for every colour, i.e. a mass in the free-field relation. It does not limit "any across-the-photon standing frequency." Photons with a sideways structure do have one far above 2e-4 Hz and are fine. Giovannini et al., Science 347, 857 (2015), measured single photons in Bessel and focused Gaussian beams arriving several µm late over about 1 m, which is the waveguide relation in free space. Restate it this way:
+   - (a) A fixed sideways rhythm built into every photon would act as a mass and is capped at about 2e-4 Hz.
+   - (b) His case, where the bounce sets the colour, has the sideways share of the frequency equal to 1. Then k_along = 0 and the photon does not move. That decisive argument needs no mass bound.
+   - (c) A fixed fractional share would slow all colours equally. GRB 090510 compares colours, so it cannot detect that. Say so, and do not lean on GRB for it.
+   - Fix the plain-language "thousandth of a vibration" sentence to match.
+
+2. **The laser-profile paragraph is wrong as written (§3 and §7).** A finite profile does slow the beam slightly (Giovannini; for a Gaussian beam about (k_⊥/k)²/2, the Gouy/geometric delay). A Gaussian profile also does not travel unchanged: it spreads beyond the Rayleigh range. Recast it: a profile many wavelengths wide costs only a tiny sideways share, so the beam travels at very nearly c, and the measured delays match the beam's geometry. A profile half a wavelength across, which is his radial standing wave at the colour's rate per Part 3, puts the photon at cutoff. Part 3 is then the size argument, not just a comparison. Cite Giovannini as supporting evidence for the waveguide relation in free space.
+
+3. **§4 first bullet attacks the wrong variable.** He ties the faster propagation to a larger orbital-energy difference, which means a higher-energy photon. He does not tie it to brighter light, and in his reading the rate is the radial message speed. The rebuttal treats it as intensity ("strong and weak light"). Reframe:
+   - The relay speed is fixed at local c (4415). So the radial message cannot speed up with photon energy.
+   - A higher radial rate at fixed speed would need a smaller radius.
+   - If the speed did rise with energy, the photon's speed would depend on its energy, which GRB 090510 rules out.
+   - Intensity-independence and light-by-light scattering can stay as a secondary note. Also correct the history: ATLAS 2017 (Nature Physics) was *evidence*, at 4.4σ; the observation came in 2019 (PRL 123, 052001). Change "first seen" to "first evidence".
+
+4. **D-9: the todolist.md entry for 4457 has not been written.** It must carry the five §5 open items and 4456 b, c, e, f, g, and `code/deferral_gate.py` must be run. Include the tension from 4456(c): with a Planck-time Moment, the floor test needs the action per Moment far below h. A 1 Hz photon has about 5e-44 h per Moment. The §5 floor item should state this, not just "below 1e-14 eV".
+
+5. **"Settled" for the displacement account (§2, §5, §7) is a little strong.** The account rests on the CP passing repeatedly through the nucleus, and §5 itself keeps that open ("what drives the swing"). Larger acceleration giving more radiated power (Larmor) is sound, so the account is fine as a *link*. Downgrade the label to "agreed in outline, given the through-the-nucleus swing, which stays open".
+
+6. **The script docstring describes a Part 4 that has no code or output.** Add a print line or remove Part 4 from the docstring.
+
+**Checks that passed**
+- **(1) Founder words:** accurate. The paraphrases in §1 keep his hedge ("don't know what the driving force would be"), the floor, and the "constant profile of amplitude vs radius" reading. Fine.
+- **(2) Fairness of reading "centre to circumference" as sideways:** fair. It matches 4445's transverse ring picture. Optionally note that if the packet were radial in 3D, the along-the-path part adds no escape, because a standing pattern along a packet moving at c is the same problem.
+- **(5) Floor:** fair. Optionally note that the weakest observed waves go below ELF: geomagnetic pulsations at mHz are about 1e-17 eV. That tightens the floor target.
+- **(7) Founder question:** physical, with an alternative offered. It is mildly leading because Claude's answer is offered first. Acceptable. Optionally put the open "or another way" option first.
+
+**Optional notes**
+- §8 PD-008 could mark (1)(b) explicitly: the decisive argument is k_along = 0, not the mass bound. The mass bound was the convenient but over-broad branch.
+- Fill in the "Critic:" line after the review.
+
+**Plain Language summary:** The main argument holds: a wave whose whole rhythm comes from bouncing across the photon would not move forward. Two pieces of supporting physics are overstated. First, the photon-mass limit only rules out a fixed sideways rhythm shared by every photon, not every sideways rhythm. Second, real laser beams do travel very slightly slower than c, as was measured in 2015. Also, Thomas tied the faster message to higher-energy photons, not brighter light, so the rebuttal should answer that. A todolist entry is still owed.
+
+## Claude's response to the 4457 return (not part of the verbatim report)
+
+All six taken in: (1) the photon-mass bound re-scoped to a fixed sideways rhythm shared by every photon; the decisive argument (sideways share 1, no travel) stated as needing no bound; GRB's blindness to a fixed fractional share noted; plain-language sentence fixed; (2) the laser-profile paragraph recast: a profile many wavelengths wide costs a tiny share (script part 4), Giovannini et al. 2015 cited as free-space evidence for the waveguide relation, Gaussian spreading noted, the half-wavelength radius as the cutoff case; (3) §4 reframed to his energy-tied faster message (relay at local c; smaller radius needed; GRB rules out energy-dependent speed); ATLAS 2017 as first evidence, 2019 observation; (4) todolist 4457 entry written with the floor tension (geomagnetic mHz ~1e-17 eV; ~5e-44 h per Planck-time Moment for a 1 Hz photon); (5) "settled" downgraded to "agreed in outline", resting on the open swing; (6) script Part 4 now has code and output. Optional notes taken: the mass bound marked as the over-broad branch under PD-008; the question offers his "another way" first.
+
