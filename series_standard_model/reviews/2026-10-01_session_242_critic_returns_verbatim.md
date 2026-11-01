@@ -5550,3 +5550,105 @@ Run `code/deferral_gate.py` before the format-patch.
 
 All fourteen required changes taken in: (1) his hedge "Yes, that is consistent with what could be produced" restored in §1 and in the titles of the fragment and the founders_voice file; (2) ΔE/h no longer attributed to him: his second answer names the energy difference as the driver, not the rate; ΔE/h is the Bohr condition (4446); (3) §3 now restates 4445–4449 (with 4453, 4455, 4458 a) rather than presenting a new consequence; title changed; his 4446 words on ZBW and the envelope added; (4) 'must run at ΔE/h' narrowed to the radiating part of the CP's motion, with any faster ZBW required not to radiate (his 4445 non-radiating ZBW); 4454's cohort and 4455's chain named as the candidates for the two rates coexisting; (5) right-angles picture cited to 4446 with its wording; (6) dipole polarization stated as the plane of axis and travel, along the axis at broadside; (7) polarization moved to 'not settled', conditional on which way his forward and reverse points; 4458 (b), (c) answered in outline conditional on 4459 (b), (c); (8) single-photon dark band made conditional on a square-law detector and energy ∝ V_i²; new item (i); PD-008 marked; (9) 4355 scoped to the registered static relay (u = M_R u + s); one-GP floor added to (c); (10) script docstring corrected (x2 the separate total, x4 one part), phase-averaged energy computed (1.000), linearity stated as assumed; (11) §6 replaced with the suggested question (which line forward and reverse lie along; whether his atomic ZBW is the free electron's); §7 matched; (12) §7 de-hyped and polarization made conditional; (13) dispositions: 4458 (e) spacing restated, (a) = 4457 b / 4455 §6, (b) = 4444 f; (14) PD-008 marks the signed swing as his yes, not derived, and the V_i² assumption. Optional notes taken: 1.02 MeV and h/(2mc) stated; 'Schrödinger's zitterbewegung of the Dirac electron'; 'same polarization'; founders_voice heading carries his hedge. New item (j) recorded.
 
+---
+
+## Patch 4460 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+The numbers check out (script run; all values reproduced). The fault is in how firmly some readings are stated. The "half metre = c × τ" match is presented as fact, and so is "experiments show the photon does not follow the collision". The record of the 2026-07-28 ruling leaves out his own 4455 wording and his 4446 kinematics. §7 has two mis-mappings.
+
+**Arithmetic verified:**
+- sin²θ values: 0, 0.25, 0.75, 1.
+- Lyman-α: 2.466e15 Hz, τ = 1.596 ns, A = 6.265e8 s⁻¹, natural width A/2π = 9.97e7 Hz (4.0e-8 of the frequency).
+- c×τ = 0.48 m, 3.94e6 cycles; one cycle = 0.41 fs, 121.6 nm.
+- One-cycle half-power band ≈ 0.8 f.
+- Kepler rate ∝ |E|^{3/2}: 8.22e14 → 6.58e15 Hz, a factor of 8. A radial (bounce) orbit has the period of the circular orbit with the same energy. A pass-through orbit doubles the dipole period, so "only halves" is correct.
+- ZBW 2mc²/h ≈ 2.5e20 Hz. Sodium D 16 ns → 4.9 m.
+
+## Required changes
+
+1. **Title, §4 heading, §8: the "His Half Metre Is Light Speed × Hydrogen's 1.6 ns Lifetime" claim is overstated.** He gave no derivation. His "1/2 meter" most likely echoes Claude's own 4444 §6 ("half a metre apart", the 54 cm Kovachy atom paths). And c×τ ≈ 0.5 m holds only for Lyman-α: Na D gives about 5 m and Rb D2 about 8 m.
+   - Fix (title): "His Half Metre Matches Light Speed × Hydrogen's 1.6 ns Lifetime".
+   - Fix (§4): add "His figure may echo the 54 cm of 4444; the match to c×τ holds for Lyman-α only and is Claude's reading (convenient: it makes his number come out)".
+   - Fix (§4 bold line): "So, on this reading, his half metre argues for the many-cycle swing".
+   - Fix (§8): "His half metre matches light speed times hydrogen's 1.6-nanosecond emission time".
+   - Fix (§9 Marked): mark this as a convenient branch.
+
+2. **Title: "So the Photon Must Leave Across the Swing, Which Makes the Displacement Transverse … but Revises the Reading of the 2026-07-28 Ruling".** This decides an axiom-level reading in the title, while §3 says the call is his. Fix: "If the Photon Leaves Across the Swing, Where a Dipole Radiates, the Displacement Is Transverse and Gives Polarization, Which Would Revise the Reading of the 2026-07-28 Ruling (His Call)".
+
+3. **§3: the ruling record is incomplete.** 4455 §1 records his clarification that "transverse CP displacement" was his error: he meant the E and B fields, and "the DP separation is front, back and side". It also closed 4454 e as "no conflict with the 2026-07-28 ruling". Fix: after "(DP arc displacement longitudinal; 4444, 4455)" add: "In 4455 he withdrew 'transverse CP displacement' as meaning the fields, and described the DP separation as 'front, back and side'. The across branch would put the CP's own swing, and the displacement along it, across the travel. That reopens what 4455 closed, unless 'side' in 4455 already allows it. Which it is, is his call."
+
+4. **§3: his own 4446 statement and Claude's 4446 open point are missing.**
+   - His 4446 position: the photon goes at right angles to the swing, "collinear with the collision vector".
+   - Claude's 4446 open point: "a kick normally drives motion along the kick" (4446 owed d).
+   - In 4460 he says the collision's forward impulse drove the CP. Read with 4446, the open question is whether the kick sets the swing along itself or across it.
+   - Fix: add after the two bullets: "In 4446 he put the photon at right angles to the swing and along the collision. That needs a collision that sets the CP swinging across its own line (4446 d, still open). In 4460 the collision's forward impulse drives the CP. If that drives the swing along the collision, the photon follows the swing axis, where a dipole does not radiate."
+
+5. **§3 and §8: the claim that the collision's direction is not the photon's is too absolute, and it revises 4446 without saying so.**
+   - 4446 §2/§8 recorded agreement in outline that "the collision picks which way". 4460 now rejects this. Fix: add "This revises Claude's 4446 agreement that the collision picks the direction."
+   - Qualify the fluorescence statement as true for single atoms and dilute gases. In optically dense, extended samples there is a coherent forward-directed emission (forward scattering, timed-Dicke superradiance). That is a phase effect over many atoms, not one atom following its excitation. Fix: add "(single atoms and dilute gases; in dense samples a collective forward emission appears, a many-atom phase effect)".
+   - Add the cleanest evidence, which needs no lens at all: radiation pressure and laser cooling work only because spontaneous recoil averages to zero, i.e. emission is not along the absorbed photon.
+   - §8: change "experiments don't show photons following the collision" to "for single atoms and thin gases, experiments don't show photons following the collision".
+
+6. **§3: wrong citation and an unsourced number.** Darquié 2005 and Beugnon 2006 are discussed in 4452/4453, not 4447. Neither paper is a directionality measurement, and "the collection lens catches only a few percent" is not sourced in the repo. Fix: "(Darquié 2005, Beugnon 2006; 4452, 4453) … a lens catches only the share of directions it covers", with no percentage unless one is quoted from the paper.
+
+7. **§4 and §5: "measured line is steady to 4 parts in 10⁸" overstates.** 4×10⁻⁸ is the natural width implied by the 1.6 ns lifetime. Observed Lyman-α lines are Doppler-broadened to about 10⁻⁵. Fix:
+   - §4: "Lyman-α's natural width (from its lifetime) is 1.0 × 10⁸ Hz".
+   - §5: "the line's natural width is 4 parts in 10⁸, and even Doppler-broadened lines are narrower than 10⁻⁴; an eightfold sweep would spread it across a factor of 8".
+   - Make the same fix in §7(a), §9 and §8 ("steady to a few parts in a hundred million" → "far narrower than an eightfold sweep allows").
+
+8. **§3: the "cylinder" is endorsed.** A dipole's far field is a doughnut (torus) of strength on an expanding spherical wavefront. It is not a cylinder of fixed radius. Fix: "That is the antenna's pattern: a doughnut around the wire, spreading outward as a sphere; 'cylindrical' in the sense of all round the axis, not a fixed radius."
+
+9. **§1: part of his argument is omitted.** He gave a reason it radiates: "In this particular case, the electron CP is being driven by the KE (DP-arc separation), which is no longer associated with the higher-to-lower orbital energy differential. It is not in resonance with the orbital DP-arc-separations … hence, it is radiating outward". Fix: add a bullet, "**Why it radiates:** the CP is driven by the KE (DP arc-separation), no longer tied to the orbital energy difference and out of resonance with the orbital's DP arc-separations, so it radiates outward." Optionally note the tension with "driven by the orbital energy differential" in the same paragraph.
+
+10. **§2 and §8: "the criterion he suggests/suggested" over-reads him.** He wrote "I'm not sure whether there is a criterion … such as the oscillation of the CPs through each other in a DP." Fix: "the criterion he floated, unsure". The same paragraph says "ZBW stays reserved for the pass-through of CPs inside a DP". CPP also uses ZBW for the CP's ZBW spin (A3′ provisional A_i channel), the CORL-1a turning point, and the SM-2 ZBW configurations. Fix: "The name 'ZBW' is not used for the emission swing; existing CPP uses of ZBW (CORL-1a, the A_i ZBW spin, SM-2) are unchanged." The PD-006 naming is otherwise appropriate and clearly marked.
+
+11. **§2 "Fixed after emission: agreed" over-reads him.** He wrote "DP sea being DP-arc-separation polarized and staying fixed in that configuration until it collides". That can be read as the sea itself staying imprinted in place. Fix: "Claude reads it in the 4458 sense …; if he means the sea stays imprinted in place, that would not travel (4457)". Mark it as Claude's reading in §9.
+
+12. **§6 Q1 is leading and misses the deciding question.** "as he said in 4446" steers toward one branch. Fix: replace Q1 with "**When the collision knocks the CP out of resonance, does its swing through the nucleus run along the collision's line or across it, and which way does the photon then leave relative to the swing?**" Q2 uses a laser, but his mechanism is a kinetic collision. Fix: "When atoms are excited by an electron beam, or by a laser from one side, their light goes out all round, not mainly forward along the beam. In his picture, what sets the direction each photon takes?"
+
+13. **§7 mis-mappings and missing dispositions.**
+   - (a): "= 4457 b, 4459 a" is wrong, because 4459 (a) is the founder question. Fix: "= 4457 b (carried as 4459 g), 4446 c".
+   - (c): add "= 4446 e".
+   - (b): add "with 4446 d (kinematics of the collision)".
+   - (g): "4459 (a) founder question answered" → "answered in part (the line is the CP's swing; the swing's orientation to the travel is now (b) and §6)".
+   - Add "4457 c (what drives the swing) answered: through the nucleus, driven by the orbital energy difference and the nucleus's pull; carried as (a)". Then change (f) to "4457 d–g" (b is now (a), c is answered).
+   - 4459 (j) restatement narrows it. Fix: "4459 (j) restated: no ZBW-rate motion radiates (neither the DP-internal pass-through nor the electron CP's own ZBW); only the emission swing radiates, at ΔE/h."
+
+14. **§8 "If it leaves at right angles … everything fits" overclaims.** Fix: "the pattern and the polarization fit". Also add one plain sentence: "But a kick usually drives a swing along itself, so a kick that sets up a swing across itself still needs explaining."
+
+15. **Founders_voice filing.** The bracketed first question does not match the wording of 4459 §6. §6 reads: "forward and reverse along which line: along the CP's swing (across the photon's path), or along the photon's direction of travel?" The filing reads: "which line does it move along? Across the photon's path, along the CP's swing? Or along the photon's direction of travel?" If he quoted a chat reply worded this way, change the header to "the questions of Claude's 4459 chat reply, as he pasted them". If Claude rewrote them, restore his pasted text exactly. Everything else appears verbatim: Claude's text is bracketed, the empty bullet is kept, and "4459 applied" is noted as operational.
+
+## The todolist entry must contain
+
+`**4460 — founder: …**` with:
+- **Header:** the critic verdict, the three file paths, and "nothing registered".
+- **Agreed:** the displacement lies along the CP's line of motion and reverses each cycle. The naming decision is recorded as "emission swing" (PD-006, Claude's), with existing ZBW uses unchanged.
+- **Owed:**
+  - (a) what times the swing at ΔE/h (= 4457 b, 4446 c);
+  - (b) the photon's direction relative to the swing, with 4446 d. If across, the 2026-07-28 ruling's reading is revised, including the 4455 "front, back and side" / withdrawn-transverse point (= 4444 f, 4459 b; axiom-level, his);
+  - (c) each photon's direction (= 4446 e), with the dense-sample forward-emission caveat;
+  - (d) one cycle vs many;
+  - (e) the sideways reach as c×duration (Claude's reading, convenient; possible echo of 4444's 54 cm);
+  - (f) carried explicitly by letter: 4459 c, d, e, f, i; 4457 d–g; 4444 b, c;
+  - (g) the corrected 4459 (j) wording;
+  - (h) the founder question 4460 §6.
+- **Dispositions:** 4459 a answered in part; 4459 b → (b); 4459 h closed; 4457 c answered; Claude's 4446 agreement that "the collision picks the direction" revised.
+- Run `code/deferral_gate.py` on the commit. The patch is currently uncommitted and todolist.md is unchanged, so the gate will fail until the entry is added.
+
+## Optional notes
+
+- §5: "the way a pendulum's swing dies at a fixed rate". A pendulum is isochronous only at small amplitude. A tuning fork, or "a damped spring keeps its pitch", is the better image.
+- §5: a Coulomb-timed radial swing would also radiate a broad comb of harmonics (an extremely eccentric orbit), not one line. That is a second, independent failure worth one clause.
+- Script Part 4: the "sweep factor" is computed tautologically, as f1/(f1/8). Computing it from the two printed rates would be cleaner. Part 3's frequency resolution is fL/40, which is adequate for the 0.8 result.
+- §2: "That answers the first half of 4459's question" is odd, because the question was one either/or. Use "answers the line: along the CP's swing; its orientation to the travel remains (§6)".
+- The founder writes both "1/2 meter radius" and "1/2 meter-wide space between slits". §1 uses radius, which is fine. A parenthetical could note both.
+- Governance otherwise handled correctly: the ruling's reading is left to him, nothing is registered, textbook facts are disclaimed as not CPP evidence (§5, §9), and the inconvenient branch is marked.
+
+---
+
+## Claude's response to the 4460 return (not part of the verbatim report)
+
+All fifteen required changes taken in: (1) the half-metre match to c × τ restated as a match and Claude's reading, convenient, Lyman-α only, possibly echoing 4444's 54 cm (title, §4, §8, §9); (2) title no longer decides the axiom-level branch; (3) his 4455 clarification ('front, back and side'; 'transverse' withdrawn as the fields) added to the ruling record; (4) his 4446 kinematics (photon at right angles, along the collision) and 4446 d added, with the deciding question which way the kick sets the swing; (5) fluorescence scoped to single atoms and dilute gases, dense-sample forward emission noted, laser-cooling recoil added, and Claude's 4446 agreement explicitly revised; (6) citation corrected to 4452, 4453, percentage removed; (7) 4 × 10⁻⁸ called the natural width, Doppler widths noted, §5/§7/§8 reworded; (8) the dipole pattern described as a doughnut on an expanding sphere, not a fixed cylinder; (9) his reason for the radiation added, with the tension noted; (10) 'the criterion he floated, unsure'; existing ZBW uses (CORL-1a, A_i ZBW spin, SM-2) stated unchanged; (11) 'fixed' marked as Claude's reading; (12) §6 replaced with the suggested questions; (13) §7 remapped ((a) = 4457 b via 4459 g, 4446 c; (c) = 4446 e; (b) with 4446 d; 4459 (a) answered in part; 4457 c answered; 4459 (j) restated as no ZBW-rate motion radiates); (14) §8 'everything fits' narrowed, the kick-across-itself sentence added; (15) founder filing header now says the questions are from Claude's 4459 chat reply as he pasted them (that was the chat wording). Optional notes taken: tuning fork for pendulum; the harmonic-comb clause; sweep factor computed from the two rates; both of his half-metre phrasings quoted; 'answers the line' wording.
+
