@@ -5652,3 +5652,106 @@ The numbers check out (script run; all values reproduced). The fault is in how f
 
 All fifteen required changes taken in: (1) the half-metre match to c × τ restated as a match and Claude's reading, convenient, Lyman-α only, possibly echoing 4444's 54 cm (title, §4, §8, §9); (2) title no longer decides the axiom-level branch; (3) his 4455 clarification ('front, back and side'; 'transverse' withdrawn as the fields) added to the ruling record; (4) his 4446 kinematics (photon at right angles, along the collision) and 4446 d added, with the deciding question which way the kick sets the swing; (5) fluorescence scoped to single atoms and dilute gases, dense-sample forward emission noted, laser-cooling recoil added, and Claude's 4446 agreement explicitly revised; (6) citation corrected to 4452, 4453, percentage removed; (7) 4 × 10⁻⁸ called the natural width, Doppler widths noted, §5/§7/§8 reworded; (8) the dipole pattern described as a doughnut on an expanding sphere, not a fixed cylinder; (9) his reason for the radiation added, with the tension noted; (10) 'the criterion he floated, unsure'; existing ZBW uses (CORL-1a, A_i ZBW spin, SM-2) stated unchanged; (11) 'fixed' marked as Claude's reading; (12) §6 replaced with the suggested questions; (13) §7 remapped ((a) = 4457 b via 4459 g, 4446 c; (c) = 4446 e; (b) with 4446 d; 4459 (a) answered in part; 4457 c answered; 4459 (j) restated as no ZBW-rate motion radiates); (14) §8 'everything fits' narrowed, the kick-across-itself sentence added; (15) founder filing header now says the questions are from Claude's 4459 chat reply as he pasted them (that was the chat wording). Optional notes taken: tuning fork for pendulum; the harmonic-comb clause; sweep factor computed from the two rates; both of his half-metre phrasings quoted; 'answers the line' wording.
 
+---
+
+## Patch 4461 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script and checked it by hand. Every printed number is right: N = fτ = 3.94 × 10⁶, Q = 2.47 × 10⁷, 2.6 μeV in the first cycle, a box side lobe of 0.046 against a Lorentzian tail of 0.0044 (by hand 1/(1+(1.2·4π)²) = 0.0044), R = 1.018 × 10⁻¹⁰ m = 1.92 a₀, and the three pass rates. The fall-time formula t = (π/2)√(m r³/(2ke²)) is correct. The ratio Lyβ/Balmer-α comes out at 1.25 in the model against 6.4 measured.
+
+The problems are in framing, fidelity and citation, plus two physics errors (§4 sign, §5 polarization). Required changes follow.
+
+## Required changes
+
+1. **§4: the restoring force has the wrong sign as written.** "For an electron inside a uniform sphere of one electron's charge" gives a repulsion. A negative CP displaced inside a negative cloud is pushed outward, not pulled back. Thomson's restoring sphere was positive. Fix: "inside a uniform sphere of charge +e (opposite in sign to the CP), the pull back is in proportion to the displacement." Add: "A CP displaced inside a cloud of its own sign would be pushed out. So the candidate needs the extended unit to present net opposite charge to a displaced CP (for example, DP polarization with its positive poles turned toward the electron CP). Whether it does is open (§7 d)." Make the matching fix in §8 ("is pulled back harder" becomes "if the cloud around it pulls it back harder, which needs the cloud to attract it") and in the script's docstring ("charge e" becomes "charge +e, opposite to the CP").
+
+2. **§5: "a steady turn would make the light circularly polarized" is wrong for small steps.** Circular light (m = ±1) comes from a charge going round once per optical cycle. A back-and-forth swing whose axis turns slowly, by a small step per pass, gives linear light whose plane rotates. That is the same as two opposite circular components at ν ± Ω/2π, which is a split or broadened line, not circular light at ν. Replace the three bullets with:
+   - "steps that cancel: a fixed axis, linear polarization (as in the m = 0 transition)";
+   - "a steady slow turn at rate Ω: the plane of polarization rotates, which splits the line by about Ω/2π. To stay inside the natural width, the total turn over a lifetime must be under about a radian, about 10⁻⁷ rad per pass";
+   - "a random wander: depolarized, and broadened";
+   - "circular light (m = ±1) needs the charge to go round once per cycle, which a pass through the nucleus with small sideways steps does not do."
+
+   Also note that m = ±1 light is circular only viewed along the axis (linear edge-on). Change §7(e) to match.
+
+3. **§4: wrong patch.** "He set aside a beat between orbits in 4447." In 4447 Claude proposed that his modulated carrier may be 4446's beat. He set the beat aside in his reply filed as 4448 ("No, not beats between orbits", founders_voice/4448). Fix: "in 4448". Also "each state has its own rhythm, E/h" should be "(mc² + E_n)/h (4446)". The 4446 critic required the rest energy, and the difference is unchanged.
+
+4. **§3.1: the "four million photons" horn assumes what his sequence does not say.** If each pass radiated the whole difference, the pool would be empty after one pass, not after 3.9 million. Fix: "If each pass radiated the whole high-to-low difference, the interval would be spent in one pass. The photon would then be one cycle long, with a band about 0.8 times its own frequency (4460 §4, 4450) against a measured Q of 2.5 × 10⁷. Only if the passes went on for the measured lifetime would it come to about four million photons' worth."
+
+   Also cite the earlier results. The per-cycle share 1/(fτ) ≈ 2.5 × 10⁻⁷ and the 2.6 μeV are 4449 §2/§4 and 4451 §2. Write "(as in 4449 §2, 4451 §2)". The new part is only its application to his recharge.
+
+5. **§3.1 and §9: the convenient reading cuts against his own words.** He writes "picked up an additional quantum of the tangential DP-arc-separation, radiated it out on the emission swing" and "recharged with another quantum of high energy". Read most directly, each pass radiates what it picked up. Add to §3.1 and to §9 Marked: "His 'picked up … a quantum … radiated it out' reads most directly as the whole picked-up quantum radiated per pass. A third reading, that his 'quantum' is itself the small per-pass share, also fits the budget without any return to the pool. 'The rest goes back into the pool' is Claude's reading and the convenient one."
+
+6. **§3.3: the pass-time model's assumptions are stated wrongly or left out.**
+   - (i) "Radiation loss neglected" contradicts the model. Starting from rest at n_u²a₀ under a conservative Coulomb pull, the CP would come back out to n_u²a₀, not stop at n_l²a₀. The model splices a fall from the upper radius onto a rise to the lower one. That needs the energy difference removed at the nucleus, where the point-Coulomb speed diverges and the time spent is negligible. Say so.
+   - (ii) Bohr radii are the radii of circular orbits. A zero-angular-momentum orbit with the level's energy turns at 2n²a₀. That would lower every rate by 2^(3/2) ≈ 2.8 (Lyman-α ratio about 0.30). So "Two lines come out near" depends on the choice of turning points and should go, or be marked as such. Only the ordering and the ratios carry, as §9 says.
+   - (iii) "Out-and-back = two passes" puts the recharge leg (from the low radius back up to the high level on the landing side, before the next drop) at zero time. Say so. A finite recharge leg adds time that grows with n_u, which makes the order worse.
+   - (iv) "the pass puts it at about a quarter of the rate" is ambiguous. Model Lyβ/Lyα = 0.32. Fix: "the pass puts Lyman-β at about a third of Lyman-α's pass rate (and about a quarter of its own measured rate)".
+   - (v) Cite 4460 §5 (Kepler timing of a swing through the nucleus, the eightfold sweep) and 4451 §3 part 2 (an upper-turning swing from n = 3 has one rate) alongside 4449. Note that 4451 used the bounce convention (2.33 × 10¹⁵ Hz turning at 4a₀) and this patch uses pass-through, so the numbers are not directly comparable.
+
+7. **§2 bullet 4 and the title, "Fixed turning points would hold the rate", present an earlier proposal as a new gain.** In 4451 §1 he proposed a swing back "to the same apogee at the upper orbit", "the same rate and amplitude". 4451 did not adopt it, because a fixed amplitude conflicts with the exponential fade and the rate must hold while the swing shrinks (4451 §3 part 3). Fix §2: "As in 4451, fixed turning points would keep the rate from sweeping (4460 §5). The new element is the asymmetric landing at the lower level. But §3.2 (from 4451) shows the turning points cannot stay fixed, and §3.3 shows that even fixed ones give the wrong order." Remove "answers the eightfold sweep" and say "would avoid it". In the title, make "Fixed Turning Points Would Hold the Rate" conditional and add "as in 4451". In the §3.2 title clause, add "(4451)".
+
+8. **§2 bullet 2 and the title drop his "probably" and leave Claude's reading unmarked.** He wrote that the nuclear pull "will probably overpower/override any KE direction kick". Restore "probably" in the fragment title ("The Nuclear Pull Overriding the Kick Removes…" becomes "If, as He Thinks Probable, the Nuclear Pull Overrides the Kick, 4460's Kick Problem Goes Away"), in §2, in §8 ("solves" becomes "would solve"), and in the founders_voice filing title ("the Nuclear Pull Probably Overrides the Kick's Direction").
+
+   Then mark as Claude's reading, in §2 and §9: "the swing runs along whatever line the CP is on, independent of the collision." Also state that this reading drops his 4460 claim that the photon goes "the direction of the collision". He has not withdrawn that claim. Either ask about it or carry it as open; do not treat it as settled.
+
+9. **§2 bullet 2: "The photon still leaves across the swing, where a dipole radiates" decides the axiom-level branch that 4460 left to him.** That branch is 4460 (b) and the 2026-07-28 ruling. Fix: "A dipole radiates most strongly across its swing. Whether the photon's displacement is then transverse, which would revise the 2026-07-28 ruling's reading, remains 4460 (b), his call."
+
+10. **§2 bullet 1 and §8 ("what swings during emission is the centre of that spread-out charge") overstate standard physics.** An excited eigenstate has no oscillating mean dipole. The charge centre swings at ΔE/h only in a superposition of the two states (the semiclassical, Schrödinger-charge-density reading), and in QED spontaneous emission from a pure excited state has no classical swinging charge. Fix: "In the semiclassical reading, an atom in a superposition of the two states has a charge centre that swings at ΔE/h (a fact for CPP to match, not evidence)." §4 already says "caught between two states". Make §2 and §8 match it.
+
+11. **§1, first bullet: the paraphrase shifts his subject.** He wrote "the central electron CP is a combination of two components", not that the CP "combines with" them. Quote it: he postulates that "the central electron CP is a combination of two components: 1) a distributed cloud of DP arc-separations … and 2) the static polarized electron cloud DPs". Also keep his agent in "Why it radiates": "the high energy DP-arcs did not direct the CP electron in an energy conserving direction".
+
+12. **§7(h): the 4460 founder questions are mis-mapped.** 4460 §6 had two bullets. Bullet 1 asked (a) along or across the collision and (b) which way the photon leaves relative to the swing. Bullet 2 asked what sets each photon's direction. Fix:
+    - "4460 Q1(a): answered on Claude's reading (the nuclear pull probably overrides the kick)."
+    - "Q1(b): photon relative to the swing, not answered; carried as 4460 (b)."
+    - "Q2: what sets each photon's direction, not answered; carried as 4460 (c)."
+    - Add: "His 4460 'photon along the collision': not withdrawn, in tension with the override; open (new item)."
+    - Add: "4446 d (the kick's kinematics) answered on Claude's reading."
+    - Restore the aliases on (a): "= 4460 a, 4457 b, 4446 c".
+    - For 4460 (d), one cycle vs many: "answered in part. His sequence repeats until discharged, so it has many passes."
+
+13. **§6, first question: it is mildly leading.** It packages Claude's convenient mechanism as one of two options. Neutral form: "Each time the CP drops from the high level through the nucleus to the low level and is raised back, how much of that energy leaves as light, and where does the rest go?" The second question is acceptable. It would be better still in turning-point terms: "As the pool empties, does the CP still turn at the same two places on each pass, or nearer the nucleus?"
+
+14. **§7: missing open items.** Add:
+    - (i) the sign of the extended unit's force on a displaced CP (from change 1);
+    - (j) the recharge leg's duration and mechanism (from 6 iii);
+    - (k) the per-pass axis turn bound of about 10⁻⁷ rad and its line-splitting test (from 2);
+    - (l) whether he keeps "photon along the collision" (from 8);
+    - (m) which reading of "quantum … radiated it out" he means (from 5).
+
+    Bring §9 into line: under Marked, add the override reading, the photon-direction branch left to him, and the third reading of "quantum". Under Not softened, add "a slowly turning swing axis splits the line, not circular light".
+
+## What the todolist entry must contain
+
+A line starting "**4461 — founder: …**" with:
+- a one-clause summary of his postulate (extended unit; collision trigger; a possible high-to-low-through-nucleus sequence; the nuclear pull probably overrides the kick; sideways step);
+- the critic verdict and how many required changes were taken in;
+- the three files: `founders_voice/4461_extended_orbital_unit_ratchet_swing.md`, `series_standard_model/axiom_maturation/4461_the_same_swing_every_pass.md`, `code/4461_ratchet_swing_budget.py`;
+- "nothing registered";
+- **Owed:**
+  - (a) what times the swing at ΔE/h (= 4460 a, 4457 b, 4446 c);
+  - (b) the share per pass and where the rest goes (three readings, the pool-return one convenient);
+  - (c) the swing must shrink, so the turning points cannot stay fixed (4451);
+  - (d) the extended unit in CPP terms, including the sign of the restoring force;
+  - (e) the sideways step: cancel, or a slow turn bounded at about a radian per lifetime (line-splitting test);
+  - (f) carried: 4460 b (photon relative to the swing; 2026-07-28 ruling, his), c, e, g; 4459 c, d, e, f, i; 4457 d–g; 4444 b, c;
+  - (g) founder question 4461 §6;
+  - the new items (i)–(m) from change 14;
+- **Dispositions:** 4460 (h) as mapped in change 12; 4460 (a) refined; 4460 (d) answered in part; 4446 d answered on Claude's reading; 4460 (i) dispositions stand.
+
+Run `code/deferral_gate.py` before format-patch. The fragment has many deferral hits ("owed", "carried", "open").
+
+## Optional notes
+
+- The founders_voice header says he quotes "the sentence of Claude's 4460 chat reply". The bracketed text ("Either way, a kick normally drives…") differs from the filed 4460 §8 ("And a kick usually drives…"). That is fine if it matches the chat reply. Consider noting "chat wording; filed §8 differs slightly". I could not check the filing word for word against his original message. Internally it looks like an unedited capture: "Schroedinger/Schrödinger", "mileau", "thie high eenergy", "obital", "where were volumes" and the empty bullet are all kept.
+- Part 2: the box length τ (the same initial power and total energy as the exponential) sets where the side lobes fall. Say so in the docstring. The FFT grid of 0.125/τ samples the true 4.7% lobe as 4.6%. That is consistent with 4451's 0.047.
+- §3.2: "a dipole radiates according to how big its swing is" is Larmor (power ∝ ω⁴d²). The point that a full-size pass radiates the same each time is 4451 §2's radiation-damping argument and should cite it.
+- §8 leaves out §5 (the sideways step and polarization). One plain sentence would make it complete: "The small sideways steps must nearly cancel, or the colour would split."
+- Thomson remark: "it has his failure" is ambiguous in a fragment about the founder. Write "Thomson's failure".
+
+---
+
+## Claude's response to the 4461 return (not part of the verbatim report)
+
+All fourteen required changes taken in: (1) restoring force corrected to a cloud of charge +e, opposite to the CP; a same-sign cloud pushes out; the candidate needs an attracting cloud (§4, §8, script; new item i); (2) §5 rewritten: cancelling steps give linear light; a slow turn rotates the plane and splits the line (bound ~1 rad per lifetime, ~10⁻⁷ rad per pass); wander depolarizes; circular light needs a charge going round once per cycle; (3) beat set aside cited to 4448; rhythms (mc² + E_n)/h (4446); (4) the 'millions of photons' horn replaced by the one-pass, one-cycle photon (4450, 4460 §4); per-cycle share cited to 4449 §2, 4451 §2; (5) three readings of his 'quantum … radiated it out' stated, the pool-return one marked convenient; (6) the pass model's assumptions stated (energy removed at the nucleus, zero-time recharge, circular-orbit turning points vs 2n²a₀, pass-through vs 4451's bounce); 'two lines come out near' replaced by 'absolute ratios carry nothing'; Lyβ at a third of Lyα's pass rate; 4460 §5 and 4451 §3 cited; (7) fixed turning points credited to 4451 and made conditional; (8) 'probably' restored in titles, §2 and §8; the override reading marked as Claude's; tension with his 4460 'photon along the collision' carried (new item l); (9) the photon-direction branch left to him (4460 b); (10) standard physics stated in the semiclassical superposition reading, with the excited-eigenstate and QED caveats; (11) his subject quoted ('the central electron CP is a combination of two components'); his agent kept in 'why it radiates'; (12) §7(h) remapped as specified; (13) §6 neutral questions as suggested, the second in turning-point terms; (14) items (i)–(m) added; §9 brought into line. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change. Optional notes taken: chat-wording note in the founder filing; box length stated in the docstring; Larmor and 4451 §2 cited; sideways-step sentence added to §8; 'Thomson's failure'.
+
