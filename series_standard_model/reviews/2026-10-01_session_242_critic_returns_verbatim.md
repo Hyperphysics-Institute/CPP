@@ -5755,3 +5755,148 @@ Run `code/deferral_gate.py` before format-patch. The fragment has many deferral 
 
 All fourteen required changes taken in: (1) restoring force corrected to a cloud of charge +e, opposite to the CP; a same-sign cloud pushes out; the candidate needs an attracting cloud (§4, §8, script; new item i); (2) §5 rewritten: cancelling steps give linear light; a slow turn rotates the plane and splits the line (bound ~1 rad per lifetime, ~10⁻⁷ rad per pass); wander depolarizes; circular light needs a charge going round once per cycle; (3) beat set aside cited to 4448; rhythms (mc² + E_n)/h (4446); (4) the 'millions of photons' horn replaced by the one-pass, one-cycle photon (4450, 4460 §4); per-cycle share cited to 4449 §2, 4451 §2; (5) three readings of his 'quantum … radiated it out' stated, the pool-return one marked convenient; (6) the pass model's assumptions stated (energy removed at the nucleus, zero-time recharge, circular-orbit turning points vs 2n²a₀, pass-through vs 4451's bounce); 'two lines come out near' replaced by 'absolute ratios carry nothing'; Lyβ at a third of Lyα's pass rate; 4460 §5 and 4451 §3 cited; (7) fixed turning points credited to 4451 and made conditional; (8) 'probably' restored in titles, §2 and §8; the override reading marked as Claude's; tension with his 4460 'photon along the collision' carried (new item l); (9) the photon-direction branch left to him (4460 b); (10) standard physics stated in the semiclassical superposition reading, with the excited-eigenstate and QED caveats; (11) his subject quoted ('the central electron CP is a combination of two components'); his agent kept in 'why it radiates'; (12) §7(h) remapped as specified; (13) §6 neutral questions as suggested, the second in turning-point terms; (14) items (i)–(m) added; §9 brought into line. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change. Optional notes taken: chat-wording note in the founder filing; box length stated in the docstring; Larmor and 4451 §2 cited; sideways-step sentence added to §8; 'Thomson's failure'.
 
+---
+
+## Patch 4462 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script, rechecked every number, and checked the cited experiments against their papers. The direction of the fragment is sound. Taking his histogram point is right, and so is answering the reassembly point with diffraction plus the Eschner mirror experiment. But the headline two-photon number rests on a length distribution that does not give the exponential histogram. One cited result is described wrongly. The line-shape step of the inference has a gap. And the account of Claude's 4461 misreading does not match what 4461 said. All of these can be fixed in this patch.
+
+## Required changes
+
+1. **The 2 ln 2 − 1 ≈ 0.39 overlap uses the wrong length distribution (§2, §7, §8, script part 1 and docstring).**
+   - The problem: a flat packet of length L that starts at the excitation gives a detection time spread evenly over [0, L]. If L is exponentially distributed, the resulting histogram is p(t) = (1/τ)E₁(t/τ), the exponential-integral function. That curve rises without limit as t → 0; it is not an exponential.
+   - My check (1e6 samples, bins 0–0.1, 0.1–1, 1–2, 2–3 τ):
+     - exponential lengths: 0.278 / 0.574 / 0.111 / 0.027
+     - true exponential: 0.095 / 0.537 / 0.233 / 0.086
+   - The distribution that does reproduce the exponential histogram is g(L) = (L/τ²)e^(−L/τ), a gamma distribution of shape 2 (from p(t) = ∫ₜ^∞ g(L)/L dL). My check gave 0.095 / 0.536 / 0.233 / 0.086.
+   - For those lengths the mean overlap ⟨min/max⟩ is exactly **1/2** (numerical double integral 0.5000; Monte Carlo 0.5000). The min/max overlap itself, |⟨ψ₁|ψ₂⟩|² for flat packets starting together, is the right measure of two-photon interference visibility. Only the length distribution is wrong.
+   - Fix in §2: replace "overlap on average only 2 ln 2 − 1 ≈ 0.39 of the way (script: Monte Carlo and exact)" with "overlap on average only one half (lengths distributed as (L/τ²)e^(−L/τ), the spread that makes flat packets starting together reproduce the exponential histogram; script: Monte Carlo and exact)".
+   - Fix in §7: change "about 40% of the way" to "only about half the way".
+   - Fix in §8: change the mark to "the overlap of 0.50 is for flat packets starting together, with lengths spread to reproduce the exponential histogram; one alternative among others".
+   - Fix in the script:
+     - part 1 should draw `rng.gamma(2, 1, n)`;
+     - print a histogram check of `rng.uniform(0, L)` against the exponential;
+     - also print the exponential-length case (0.386) labelled "does not reproduce the histogram";
+     - correct the docstring's claim that exponential lengths "reproduce an exponential histogram".
+   - Note: 4451 §3's statement that exponential lengths average to a Lorentzian (Lorentz's model) is a statement about the spectrum. It stands and does not conflict with this fix.
+
+2. **Somaschi 2016 is described wrongly (§2 and §7). The same error is in 4452 §2.**
+   - Somaschi et al., Nature Photonics 10, 340 (2016) reports indistinguishability 0.9956 ± 0.0045 between *consecutive photons from the same quantum dot*. The fragment presents it as photons "from separate emitters".
+   - The separate-emitter atomic result is Maunz et al., Nature Physics 3, 538 (2007): two ¹⁷⁴Yb⁺ ions in separate traps about 1 m apart, about 95% contrast after dark-count subtraction, picosecond excitation of both ions, ±8 ns coincidence window.
+   - Fix in §2: "Photons from two trapped ions about a metre apart interfere with about 95% contrast (Maunz and others, 2007); photons from two trapped rubidium atoms (Beugnon and others, 2006) are consistent with identical packets; successive photons from one quantum dot reach 99.6% (Somaschi and others, 2016), a test of sameness from one emitter, not between two (4452 §2, corrected here)."
+   - Delete "The strongest numbers come from quantum dots, which are not atoms." In §8, replace the quantum-dot mark with "the near-perfect quantum-dot figure is for successive photons from one dot, not separate emitters".
+   - Fix in §7: "the best sources match above 95%" becomes "photons from two separate trapped ions match about 95%".
+   - Add to §6 (f): "4452 §2's description of Somaschi 2016 corrected (same dot, successive photons)."
+   - The todolist entry must record this correction to 4452.
+
+3. **The line-shape step does not deliver an *exponentially fading* envelope (§2, §7).**
+   - A Lorentzian power spectrum fixes only |Ẽ(ω)|². A rising exponential, or any chirped or phase-modulated packet with the same spectral magnitude, has the same Lorentzian. The sentence "A Lorentzian spectrum belongs to an exponentially fading packet" is therefore false as stated.
+   - The valid inference has two steps:
+     - near-unit two-photon visibility means the photons are identical and *pure*, so the detection-time histogram is each photon's |envelope|²;
+     - a Lorentzian of width exactly 1/(2πτ) (transform-limited) then rules out chirp and phase wander.
+   - Random start times, or timing jitter comparable to τ, would lower the two-photon visibility, so they are excluded by step one, not by the line shape.
+   - Also, the measured natural line (4451 §3) is usually an excitation/absorption spectrum, not a spectrum of the emitted photons.
+   - Fix: replace the "line shape" bullet and the "So the statement should read" paragraph with: "**What the two measurements give together.** If the photons are identical and pure, which near-perfect two-photon interference indicates, the histogram is each photon's own envelope (in energy). The line's width, exactly 1/(2πτ) once the atoms' motion is removed (4451 §3), then excludes a chirp or a wandering phase; the line shape alone could not tell a fading packet from a rising one, and identical flat packets would give side lobes (4461 §3.2). So each photon's envelope is inferred, not measured on one photon, to fade exponentially over the lifetime."
+   - Fix §7 to match: "if the photons are identical, the fading curve built from many of them is each one's own shape, and the width of the colour shows the packet is not chirped."
+
+4. **The acknowledgment of Claude's 4461 misreading does not match 4461 (§4, §6 f, §8).**
+   - 4461 §2 read the override as *direction*: "the swing then runs through the nucleus along whatever line the CP is on". That is essentially his present clarification.
+   - What he objects to is 4461 §3.3, a pass "timed by the Coulomb pull", which was labelled a "rough model" but not marked as Claude's rather than his, together with the chat reply's "if the nucleus's pull times each pass".
+   - His 4461 message did give the nucleus a dynamical role ("the nuclear positive charge will superimpose with the KE kick, with a net result of a drop of energy from high to low"). That made a Coulomb test reasonable to run, but it was never his postulate.
+   - Fix in §4: replace "In 4461 Claude read '… override any KE direction kick' as the pull timing the swing, and timed the pass by the Coulomb fall (4461 §3.3)" with "In 4461 Claude read the override as setting the swing's line (4461 §2), which agrees with his clarification, but then timed each pass by the Coulomb fall (4461 §3.3) and said in the reply 'if the nucleus's pull times each pass', without marking that timing as Claude's model rather than his."
+   - Fix in §6 (f): delete "4461's 'the nuclear pull overrides the kick' reading corrected", which wrongly implies 4461 §2 was the error. Keep "4461 §3.3 (Coulomb timing) re-marked as Claude's model, not his".
+   - Fix in §8: "Corrected: … Claude's reading of the nuclear pull (now direction only)" becomes "Claude's unmarked Coulomb timing of the pass (4461 §3.3)".
+
+5. **The citation for "statistical, not causal" is wrong (§2).** The phrase is his in **4454** (founder file and 4454 §1), not 4453; 4453 contains neither word. 4454 §2 had already conceded "it is an inference, not a certainty", with two-photon interference as the test. His "As we mentioned earlier" refers to that.
+   - Fix: "That is the point he made in 4454 ('statistical rather than causal'), which 4454 §2 already accepted as an inference resting on two-photon interference; 4461's wording went back beyond it."
+   - Add 4454 to the context list.
+
+6. **The line-order claim overstates the result (title, §4, §7, §8).**
+   - The order comes out wrong only for Lyman-β against Lyman-α (0.33 and 0.54 against 1.19).
+   - For Lyman-β against Balmer-α the order is right (1.30 and 3.29 against 6.40); only the ratio is wrong.
+   - "whatever drives it" is an overclaim. Only speeds set by these energies were tested. Here is the general bound:
+     - with each crossing spanning (n_u² + n_l²)a₀, matching Lyβ/Lyα needs the CP's speed from n = 3 to be 1.19 × 10/5 ≈ 2.4 times its speed from n = 2;
+     - no speed set by hydrogen's level energies or their differences rises that much (at most √(12.09/10.2) ≈ 1.09);
+     - a constant speed (even c) gives 0.5.
+   - Fix in §4: "The order of Lyman-α and Lyman-β comes out wrong (both choices make Lyman-β slower, where it is measured 1.19 times bluer), and Lyman-β against Balmer-α comes out in the right order but far too close (1.30 and 3.29 against 6.40). The reason is geometric: the distance across grows as n². To match, the CP would have to cross about 2.4 times faster from the third level than from the second; no speed set by hydrogen's energies does (at most about 1.09 times), and a constant speed gives half. So a crossing between the two orbits' distances cannot set the colour at any speed set by these energies, unless the swing's length is not the orbits' size."
+   - Fix the title: "…the Order of Lyman-α and Lyman-β Still Comes Out Wrong".
+   - Fix §7: "the colours still come out wrong: the line from the higher level should be bluer, and both ways make it redder".
+   - Fix §8: "gives the wrong Lyman-α/Lyman-β order and the wrong Lyman-β/Balmer-α ratio for both speeds tried, and for any speed set by these energies".
+
+7. **The recharge leg is an unstated assumption (§4).** The model gives the recharge (low to high on the same side, a radial distance (n_u² − n_l²)a₀) zero time, as 4461 §3.3 did. That is owed item 4461 (j). Add to the §4 model description: "the recharge from the lower to the upper distance between crossings is given zero time (as in 4461 §3.3; a finite recharge lengthens the higher levels' cycles and makes the order worse)." Add the same to the §8 marked list.
+
+8. **His "emitted total" has an unmarked convenient reading (§4, §8).**
+   - The fragment reads "the power/energy that was emitted total was related to its KE from the start of its transit to its end" as the *sum over passes*, which "fits the budget". That is the convenient branch.
+   - The other reading is that the KE lost across *one* transit is what that transit radiates. That reading makes each transit radiate the interval again and fails 4461 §3.1 (a one-cycle photon).
+   - Speed choice (ii), ½mv² = ΔE per crossing, is itself built on the per-transit reading.
+   - Fix in §4: "His '… emitted total …' fits the budget if the sum over the passes is ΔE (Claude's reading, the convenient one); read per transit, the KE lost across one crossing would be radiated in that crossing, which returns to 4461 §3.1's one-cycle photon. Speed (ii) uses that per-transit KE only to set the speed."
+   - Add to §8 Marked: "'emitted total' read as the sum over passes is Claude's reading and the convenient one; the per-transit reading fails 4461 §3.1."
+   - Fold this into §5 question 1 neutrally: "…and is the energy given up across one crossing what that crossing radiates, or a share of the whole interval?"
+
+9. **The Gaussian-beam numbers mislabel radius as width, and the half-metre waist is an arbitrary choice that is not marked (§3, §7, script part 2).**
+   - The arithmetic is right (θ = λ/πw₀: 8.1 × 10⁻⁸ and 3.5 × 10⁻⁷ rad).
+   - But θz is the 1/e² *radius*, so the width across is about 160 light-years for Lyman-α and about 700 for 550 nm, not 80 and 350 "across".
+   - The 0.48 m is the packet's *length* (cτ), reused as its transverse waist without saying so.
+   - Fix in §3: "A Lyman-α packet with a waist of half a metre (its length, cτ, used here as an illustrative width) spreads at about 8 × 10⁻⁸ rad; after a billion light-years it is about 160 light-years across, and visible light about 700. A wider start spreads less, but to stay within a 10 m telescope after a billion light-years a Lyman-α packet would have to start about 4 × 10¹⁰ m (a quarter of the Earth–Sun distance) wide."
+   - Fix the title wording to "to Over a Hundred Light-Years" and §7 to "over a hundred light-years across".
+   - In the script, label the printed figure "radius", add the diameter, and add the required waist.
+   - Add to §8 Marked: "the half-metre waist is illustrative."
+
+10. **The Eschner 2001 description should state the facts the argument depends on (§3).**
+    - The paper confirms: one ¹³⁸Ba⁺ ion; 493 nm light; mirror 25 cm away; fringes with **72% visibility** as the mirror distance varied; antibunching shown; the ion's emission into the mirrored mode suppressed or enhanced by up to 72% (total emission rate changed by about 1%).
+    - It was a *continuously driven* ion (resonance fluorescence, much of it elastically scattered), not one excitation followed by one spontaneous decay.
+    - Fix: "Eschner, Raab, Schmidt-Kaler and Blatt (Nature, 2001) drove a single trapped barium ion continuously with lasers and collected its 493 nm light on one side, while a mirror 25 cm away on the other side sent the light leaving that side back past the ion into the same detector. The detected light showed fringes of 72% visibility as the mirror was moved, while the photons stayed antibunched (one at a time); the mirror also raised or lowered the ion's own emission into that direction. (A driven ion, not a single decay; the single-decay version is not this experiment.)"
+
+11. **§5 question 2 is a broken sentence and is slightly leading.** "When one atom's light leaving on one side, and its light leaving on the other side … are brought together, they interfere" has no main verb. "How does one photon reach both?" builds the standard reading into his picture.
+    - Fix: "**A single ion's light leaving toward a detector, and its light leaving the other way and sent back by a mirror, together give fringes, while the photons still arrive one at a time. In his picture, what goes out on each side, and what arrives at the detector?**"
+    - Question 1 is acceptable once item 8's addition is in. Put "or a shorter or longer distance" first, or phrase it openly: "between which two places does the CP travel on each crossing?"
+
+12. **The §6 (f) disposition of 4461 §6 is ambiguous.** "carried as 4461 b and (c) here" mixes two numbering schemes, and 4461 §6's second question (does the CP still turn at the same two places as the pool empties) belongs with 4461 (c), not 4462 (c).
+    - Fix: "4461 §6 Q1 (how much of each drop leaves as light, where the rest goes): not answered; carried as 4461 (b) and (m). 4461 §6 Q2 (same turning places as the pool empties): not answered; carried as 4461 (c), now conditional on (a) here, and bears on (c) here."
+    - Also add an explicit disposition for 4461 (g) (the founder question), currently implied but not named. Note that 4461 has no owed item (h); its (h) is its dispositions, so the carried list (a)–(f), (i)–(m) is complete.
+
+13. **"One photon is on both sides at once" (§3 heading, §7) is an interpretation, not the observation.** Replace it with "a single photon's detection carries light from both sides" in §3. In §7, change "So one photon is on both sides at once" to "So light from both sides of the atom adds up in each photon's arrival."
+
+## What the todolist entry must contain
+
+The entry line starts "**4462 — " and must contain:
+- **Header:** the founder's three points (pulse length: histogram or radiated duration; omnidirectional emission needs a reassembly postulate; nucleus as direction, not power, energy from the CP's KE across the transit), the critic verdict, and "nothing registered".
+- **Files:** the founder file, the fragment and the script.
+- **Gains and corrections:**
+  - the decay curve is a histogram;
+  - each photon's envelope is an inference from two-photon interference (identical, pure) plus a transform-limited line;
+  - the flat-packet alternative gives 0.50;
+  - Claude's unmarked Coulomb timing of 4461 §3.3 is re-marked as Claude's;
+  - the 4452 §2 Somaschi correction;
+  - the 4454 citation corrected from 4453.
+- **Checks:**
+  - a directed packet diffracts (radius figures and the waist bound);
+  - Eschner 2001 (Ba⁺, 25 cm, 72%, driven);
+  - the speed-timed crossing gets the Lyα/Lyβ order wrong and the Lyβ/Hα ratio wrong for both speeds; the 2.4× bound.
+- **Owed:**
+  - (a) the envelope inference that his picture must meet;
+  - (b) the reassembly (= 4444 b, c, extended to opposite sides and arrival whole after spreading);
+  - (c) the transit's length and speed, with the per-transit / sum-over-passes reading of "emitted total" (convenient branch marked);
+  - (d) 4461 (a)–(f), (i)–(m) carried by letter, with (c) conditional on (a) here and (j) used at zero time;
+  - (e) founder question 4462 §5.
+- **Dispositions:** 4461 §6 Q1 and Q2 mapped as in item 12; 4461 (g) disposed; 4461 §3.3 re-marked; 4461's "leak must shrink" restated as an inference.
+- **Process:** run `code/deferral_gate.py` before the format-patch, since items are deferred.
+
+## Optional notes
+
+- **Time-resolved two-photon interference.** Legero, Wilk, Hennrich, Rempe and Kuhn (PRL 93, 070503, 2004) measured two-photon interference resolved in time *within* the photons' duration. That is the closest experiment to his "length of time over which it is radiated", and worth one sentence in §2.
+- **A possible stronger test (not computed).** No single family of flat packets seems able to give both the exponential histogram (gamma-2 lengths) and the Lorentzian line (exponential lengths, per 4451). If a short script confirms this, the flat-packet alternative fails even without two-photon interference. Unverified, so check before using.
+- **Founder file note.** The bracketed quote is from Claude's chat reply, which differs slightly from the filed 4461 §8 ("not shutting off" against "not switching off"). The founder file should say so, as the 4461 founder file did for its quote.
+- **What I confirmed unchanged.** The §1 quotes are verbatim. The transit-table numbers are exact. The measured ratios are exact: 1.185 and 6.40. The 4444 b, c and 4458 citations are correct. Textbook facts are not presented as evidence for CPP, and the "Not claimed" list is adequate.
+- **Plain language (§7).** After the fixes above it is accurate and unhyped.
+
+Sources checked: [Eschner et al. ICOLS 2001 summary](https://www.quantumoptics.at/images/publications/papers/icols01_ba_eschner.pdf), [Maunz et al. Nature Physics 2007](https://personal.denison.edu/~olmschenks/papers/naturephysics_3_538_2007_two-photon_interference_Maunz.pdf), [Somaschi et al. arXiv:1510.06499](https://www.arxiv.org/abs/1510.06499). The fact that Somaschi's 0.9956 is for successive photons from one dot is from my knowledge of the paper; the abstract does not say.
+
+---
+
+## Claude's response to the 4462 return (not part of the verbatim report)
+
+All thirteen required changes taken in: (1) flat-packet lengths now gamma-2 (reproducing the exponential histogram, script check printed), mean overlap 1/2; the exponential-length case shown as not reproducing it (0.386); (2) Somaschi 2016 described as successive photons from one dot; Maunz 2007 (two ions ~1 m apart, ~95%) as the separate-emitter result; erratum appended to 4452; (3) the inference restated in two steps (identical, pure photons make the histogram each photon's envelope; the transform-limited width excludes chirp), the line-shape-alone claim withdrawn, and the absorption/excitation caveat noted; (4) the 4461 misreading restated: §2's line reading agreed with him; the unmarked Coulomb timing of §3.3 and the chat line were the error; (5) 'statistical rather than causal' cited to 4454; (6) the line-order claim narrowed to Lyα/Lyβ, the Lyβ/Hα ratio wrong but ordered right, with the 2.4× bound (≤1.09 from these energies; constant speed 0.5); title, §7, §8 changed; (7) the zero-time recharge leg stated; (8) 'emitted total' sum-over-passes reading marked convenient, the per-transit reading noted, folded into question 1; (9) radius vs width corrected (about 160 and 700 light-years across), the half-metre waist marked illustrative. The critic's waist bound (about 4 × 10¹⁰ m to stay within a 10 m telescope) is itself wrong: a Gaussian beam's radius after distance z is at least √(2λz/π), about 9 × 10⁸ m for Lyman-α after a billion light-years, so no starting width keeps it within a telescope; the script prints this and §3 says so; (10) Eschner 2001 described as specified (driven Ba⁺ ion, 493 nm, 25 cm, 72%, antibunched); (11) both questions rephrased as suggested; (12) dispositions remapped, 4461 (g) disposed; (13) the observation stated as light from both sides in each photon's arrival. Optional notes taken: Legero 2004 sentence; founder-file chat-wording note. The 'stronger test' (no flat-packet family giving both histogram and Lorentzian) was not used, since it is unverified and the natural line is usually measured in absorption. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+

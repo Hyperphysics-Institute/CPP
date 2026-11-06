@@ -78,3 +78,7 @@ should predict.
 - **Clarified, not corrected:** 4451 described only the fall as smooth.
 - **Not claimed:** novelty for single-photon timing or two-photon interference.
 - Nothing registered.
+
+## Erratum (Patch 4462)
+
+The 4462 critic noted that Somaschi and others (2016) measured two-photon interference between successive photons from the same quantum dot (indistinguishability about 0.996), a test of sameness from one emitter, not between two separate emitters. The separate-emitter result with near-unit contrast is Maunz and others (2007), two ytterbium ions in traps about a metre apart, about 95%. See `4462_one_photon_on_both_sides.md` §2.
