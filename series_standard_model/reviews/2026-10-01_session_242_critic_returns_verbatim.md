@@ -5900,3 +5900,156 @@ Sources checked: [Eschner et al. ICOLS 2001 summary](https://www.quantumoptics.a
 
 All thirteen required changes taken in: (1) flat-packet lengths now gamma-2 (reproducing the exponential histogram, script check printed), mean overlap 1/2; the exponential-length case shown as not reproducing it (0.386); (2) Somaschi 2016 described as successive photons from one dot; Maunz 2007 (two ions ~1 m apart, ~95%) as the separate-emitter result; erratum appended to 4452; (3) the inference restated in two steps (identical, pure photons make the histogram each photon's envelope; the transform-limited width excludes chirp), the line-shape-alone claim withdrawn, and the absorption/excitation caveat noted; (4) the 4461 misreading restated: §2's line reading agreed with him; the unmarked Coulomb timing of §3.3 and the chat line were the error; (5) 'statistical rather than causal' cited to 4454; (6) the line-order claim narrowed to Lyα/Lyβ, the Lyβ/Hα ratio wrong but ordered right, with the 2.4× bound (≤1.09 from these energies; constant speed 0.5); title, §7, §8 changed; (7) the zero-time recharge leg stated; (8) 'emitted total' sum-over-passes reading marked convenient, the per-transit reading noted, folded into question 1; (9) radius vs width corrected (about 160 and 700 light-years across), the half-metre waist marked illustrative. The critic's waist bound (about 4 × 10¹⁰ m to stay within a 10 m telescope) is itself wrong: a Gaussian beam's radius after distance z is at least √(2λz/π), about 9 × 10⁸ m for Lyman-α after a billion light-years, so no starting width keeps it within a telescope; the script prints this and §3 says so; (10) Eschner 2001 described as specified (driven Ba⁺ ion, 493 nm, 25 cm, 72%, antibunched); (11) both questions rephrased as suggested; (12) dispositions remapped, 4461 (g) disposed; (13) the observation stated as light from both sides in each photon's arrival. Optional notes taken: Legero 2004 sentence; founder-file chat-wording note. The 'stronger test' (no flat-packet family giving both histogram and Lorentzian) was not used, since it is unverified and the natural line is usually measured in absorption. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4463 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script. Every number in the fragment matches its output: overlaps 0.033/0.093/0.264/0.544/0.820; departures 0.047/0.126/0.308/0.538/0.760; 2.25 and 1.63 mm; 0.48, 2.37 and 4.86 m. I checked the experiments against the papers. Eschner 2001 is from the ICOLS'01 write-up and the Nature abstract. Maunz 2007 is from the Nature Physics PDF.
+
+What holds up:
+- The main argument stands.
+- The founder's verbatim message is filed accurately.
+- 4462's owed items (a)–(e) are all accounted for.
+- The script is sound.
+
+What needs fixing: several overclaims, one quote altered inside quotation marks, two dropped hedges or unmarked readings, a convenient concession on the orbital radius, an inconsistency with 4460 about the metre, and two missing dispositions.
+
+## Required changes
+
+1. **§2, the radius concession goes too far (PD-008: agreeing with him is the convenient branch).** "An orbital's energy is not set by a distance" is only half right. In hydrogen the energy is fixed exactly by the mean inverse distance (virial theorem: E_n = −(e²/8πε₀)⟨1/r⟩ = −(e²/8πε₀)/(n²a₀)). The orbital's size does grow as n². The p-orbital shape shows that the distance is *spread out*, not that it is irrelevant (2s and 2p have the same energy and different shapes).
+   Fix: after "the energy belongs to the whole state", add: "But the orbital's overall size still scales with its energy: in hydrogen the energy is fixed exactly by the average of 1/distance, and the orbital's size grows as n². So any swing whose extent grows with the orbital's size meets the same line-order difficulty as 4462 §4. Claude marks agreeing on the radius as the convenient branch."
+   List the same point in §9 under "Not softened".
+
+2. **§2, "marked as such" is wrong for 4461 §3.3.** 4461 §3.3 was *not* marked when written; 4462 §4 re-marked it.
+   Fix: "(4461 §3.3, re-marked as Claude's in 4462 §4; 4462 §4's own speed models, marked)".
+
+3. **§3, Claude's construal is presented as his statement.** "He is right that a photon's emission could start at a random time and have a shape of its own" attributes the random-start model to him. He said the statistics belong to "the system that is stimulated and then emits", and "There may be a shaping of the system, but it is not a 1:1 correlation".
+   Fix: "Claude reads his point as: each photon could start at a random time and have a shape of its own. That reading is Claude's, and it is the one Claude can test; it is marked (§9)."
+   Add it to §9 "Marked" as the convenient construal.
+
+4. **§3, an altered quote inside quotation marks.** "So the shape is not 'simply determined by the probability of decay timing'" does not match his text. He wrote "simply determine the shape o the emission amplitude sequence by the propbability of decay timing".
+   Fix: either quote him exactly (spelling as written, marked [sic]) or drop the quotation marks and paraphrase: "So, as he says, the shape is not simply read off the decay timing; it follows from …".
+
+5. **§3, "Only a packet that starts at the excitation and itself fades over the lifetime fits both" overclaims.** In general the histogram is the start-time spread convolved with each packet's |envelope|². So the measurements allow:
+   - start jitter that is small compared with the lifetime, not only zero;
+   - a fixed delay before the start;
+   - any envelope, so long as jitter ⊗ |envelope|² is exponential.
+
+   What the measurements exclude is a start spread *comparable to the lifetime* (as 4462 §2 already said).
+   Fix, in §3: "Only packets whose start is fixed relative to the excitation to well within a lifetime, with the exponential carried in each packet's own fading, fit both."
+   Fix, in §8: "Only a packet that starts at a set moment after excitation and then fades fits both."
+
+6. **§3 table, the "departs" measure is not explained, and it sits awkwardly with the slow-detector assumption.** The figure is the largest gap between cumulative shares (a Kolmogorov distance). For packets up to about τ long, the departure is mostly a delayed, rounded start of the curve. The tail's slope is unchanged. So the departure shows up only when the detector resolves times shorter than the packet, measured from a known excitation time. That is the opposite of the "detector slower than the packets" used for the overlap column.
+   Fix: under the table, add: "'Departs by' is the largest gap in the cumulative share. For packets up to a lifetime long, it is mainly a delayed, rounded start; the tail's slope is unchanged. Seeing it needs timing finer than the packet, measured from a pulsed excitation (Maunz used ~2 ps pulses and 4 ps time tags). The overlap column assumes the coincidence is integrated over the packet; integrating changes the coincidence total only through the overlap, so the column stands for either detector."
+   Also note that Maunz's 95% is the contrast after dark-count subtraction, from pairs within an 8 ns window (≈ τ for Yb⁺).
+
+7. **§3, the detector-rule evidence is stated too strongly, and a citation is incomplete.** The shaped-photon experiments compare the histogram with the shape *predicted by theory, which already assumes the detector rule*. That is a consistency test of emission theory plus detector rule together, not an independent test of the rule. Kuhn, Hennrich and Rempe 2002 also did not shape photons to a chosen form; they showed the pulse set by the pump.
+   Fix: "That rule is consistent with every test so far. When an ion in a cavity is driven by a pump pulse of chosen shape, the histogram follows the photon shape predicted for that pump (Keller and others, Nature 431, 1075, 2004, a calcium ion). A neutral-atom cavity source shows the same with a pump-set pulse (Kuhn, Hennrich and Rempe, Phys. Rev. Lett. 89, 067901, 2002). Two-photon interference resolved within the photon (Legero and others, 2004; 4462 §2) tests it more directly."
+   Mark the rule's status in §9 accordingly.
+
+8. **§4, beam size is misstated.** The 1 mm figure is the waist *radius*, so the beam is 2 mm across.
+   Fix: "A laser beam with a waist radius of 1 mm (2 mm across) …".
+
+9. **§4, laser-beam spreading is a many-photon measurement.** Taken alone, it does not show that *each photon's* width spreads. His picture is per photon.
+   Fix: add: "Per photon, the same spreading is seen when single-photon diffraction and interference patterns build up one click at a time, with the spread angle ∝ wavelength ÷ width." Cite the single-photon slit/interferometer results already used in the series (4444, 4458).
+
+10. **§4, the lensing argument needs its source and its size.** "Gravitational lensing bends all colours alike" comes from general relativity and is confirmed observationally (achromatic microlensing light curves). That should be stated, since CPP's "gravitational slowing" has not been derived. The size argument is also stronger and does not depend on GR's colour rule. The tidal focusing of Earth's gravity over 10 m is about (GM/R³)L²/c² ≈ 10⁻²¹, far below the measured ~10⁰ fractional growth.
+    Fix: add both sentences. Add to §7(d): "his microlensing explanation not adopted for lab spreading (colour dependence; size about 10⁻²¹); §6 asks."
+
+11. **§4, "only" in the nonlinear-relay argument overclaims.**
+    - In linear media, Bessel and Airy beams hold a central spot over a finite distance, although they spread overall and carry most of their energy in side rings.
+    - The argument also skips a logical branch: a self-interaction acting *within* one photon but not between photons. Two photons crossing does not test that branch; single-photon self-interference (its parts recombining in fringes) bears on it.
+
+    Fix: "Apart from structured beams (Bessel, Airy) whose central spot holds only over a limited range and which still spread overall, a beam keeps a fixed width without guidance only in a medium whose response depends on the light's own strength." Then add: "A self-holding that acted only within one photon would be tested instead by single-photon fringes, which add strictly (4459 §2). That branch is marked."
+
+12. **§4, the coherence-length convention is unstated, and the reading of his metre flips from 4460 without saying so.**
+    - c × τ is the intensity 1/e length. The other common convention, c/Δν = 2πcτ, gives 3.0 m (Lyα), 15 m (Ba⁺) and 31 m (Na). Under that convention the "around a metre" match fails, so the match depends on the convention chosen. These are natural-width figures; real lamps are much shorter because of Doppler broadening.
+    - In 4460 he gave the photon "a 1/2 meter radius" cylinder, explicitly sideways. 4460 §4 and 4460 (e) matched that *radius* to c × τ as a *sideways reach* and marked it convenient. 4463 now compares his 1 m *diameter* with c × τ and calls it the length along travel, against his explicit sideways statement.
+
+    Fix: "Coherence length here means c × lifetime (the 1/e length of the intensity; the convention c/Δν is 2π times longer). He gave the photon a sideways radius of half a metre in 4460, and 4460 §4 read that, as the convenient branch, as a sideways reach of c × τ. Here Claude reads his metre instead as the photon's length along its travel. That too is Claude's reading and convenient, and it does not match his stated sideways meaning."
+    Also replace "fits nicely" in §8 with "is close to".
+
+13. **§5, Eschner details: antibunching overclaimed, emission change misdescribed.**
+    - "Two clicks were never closer together than the ion can emit twice" is too strong. Antibunching means coincidences at zero delay are strongly suppressed; in the paper's Mach–Zehnder check, the two-photon probability was cut by a factor of 2 × 10⁻³.
+    - The mirror's effect on the ion was about a 1% change in *total* fluorescence, with the 650 nm light varying in anticorrelation. The 72% applies to the detected direction only.
+    - The collection lens is 12.5 mm from the ion and covers about 4% of the solid angle.
+    - Thermal motion limits the visibility to 93%.
+
+    Fix the bullets:
+    - "the photons stayed antibunched: two clicks at the same instant were strongly suppressed, so the light came one photon at a time";
+    - "the mirror also changed the ion itself: its total light rose and fell by about 1%, and its 650 nm light varied in opposition";
+    - add "the lens on the mirror side sat 12.5 mm from the ion and gathered about 4% of its light";
+    - "cooled until its motion is small compared with a wavelength (which still limits the visibility to 93%)".
+
+    In the caveat, replace "scattered without delay" with "elastically scattered, sharing the laser's steady rhythm".
+
+14. **§1, a hedge was dropped.** He wrote "I think that speaks to the speed-of-light mutual interaction …".
+    Fix: "the coherence, he thinks, speaks to 'the speed-of-light mutual interaction …'".
+
+15. **§6 Q1 is leading.** "A shell … or a packet heading one way?" is a binary question his volume or light-cone picture may fit neither way.
+    Fix: "… is it a shell spreading out around the atom, a packet heading one way, or some other form?"
+
+16. **§7, dispositions are missing.**
+    - The "emitted total" reading of 4462 (c) and 4462 §8 ("sum over passes, convenient") is now his stated view: "only that the total quantum equals the energy difference". Record: "4462 (c)'s 'emitted total' read as the sum over swings: now his stated view (§1), no longer only Claude's reading; the per-transit reading dropped. The transit's length (start and end anywhere) answered; its speed not given, carried in (a)."
+    - Disposition 4461 (m) (which reading of "quantum"): answered in part by the same statement, or carry it explicitly. At present it is carried bare in (g).
+    - Add a new item: "(j) The active portion in CPP terms: his 'non-zero organization integral' and the light-cone influence volume, and how a 2 mm laser beam is made of photons whose active portion is about a metre across." (This last point is a sharper conflict than the colour argument and is not raised anywhere. Raise it in §4 or carry it here.)
+
+17. **§9 PD-008 must list the new marks:**
+    - the random-start reading of "emitted statistically" (change 3);
+    - the agreement on the radius (change 1);
+    - the coherence-length convention and the length-versus-width flip from 4460 (change 12);
+    - the detector rule being consistent rather than independently tested (change 7);
+    - lensing's achromaticity taken from GR and observation (change 10);
+    - the within-photon nonlinearity branch (change 11).
+
+## What the todolist entry must contain
+
+The entry starts "**4463 — founder: …". It must contain:
+- the three file paths;
+- critic verdict and count taken in;
+- "nothing registered".
+
+**Gains and corrections:**
+- radius models withdrawn as tests of his picture, with the virial caveat that orbital size still scales with n²;
+- 4461 §3.3 marking history corrected;
+- random-start test: no single packet length fits both the histogram and ~95% two-photon contrast; start jitter must be ≪ τ;
+- detector rule consistent with shaped-photon results (Keller 2004; Kuhn, Hennrich and Rempe 2002), owed in CPP;
+- lab diffraction ∝ λ (633 vs 405 nm, 1 mm waist radius, 10 m: 2.25 vs 1.63 mm);
+- lensing achromatic and ~10⁻²¹ in the lab;
+- fixed width needs a nonlinear relay (Bessel/Airy exception; within-photon branch marked);
+- coherence lengths c·τ (0.48, 2.37, 4.86 m; convention stated);
+- his metre read as length along travel (Claude's, convenient, against his 4460 sideways radius);
+- Eschner 2001 setup (¹³⁸Ba⁺ Paul trap, 493/650 nm, lens 12.5 mm at 4%, mirror 25 cm, 72% fringes, antibunching, ~1% emission change, driven-ion caveat).
+
+**Owed (a)–(j), each with its cross-references:**
+- (a) ΔE/h timing (= 4461 a, 4460 a, 4457 b, 4446 c);
+- (b) share per swing (= 4461 b, 4462 c);
+- (c) CPP detector rule (= 4459 d);
+- (d) the photon's width and his microlensing (not adopted);
+- (e) shell or packet (with 4461 l);
+- (f) coherence in CPP terms;
+- (g) the full carried list: 4462 a, b; 4444 b, c; 4461 c, d, e, i, j, k, l, m; 4460 b, c, e, g; 4459 c, e, f, i; 4457 d–g;
+- (h) founder question 4463 §6, both questions summarized;
+- (i) dispositions, including the "emitted total" reading now his;
+- (j) the active portion in CPP terms, and the beam-width conflict.
+
+## Optional notes
+
+- §2's "the colour is a rate" is fair as a constraint, not used as evidence. It is conditional on his emission-swing picture plus Claude's 4459 §3 argument; one clause saying so would help.
+- §5's "fits qualitatively" for a 1 m volume reaching a mirror 25 cm away is weak support: almost any extended picture "reaches" 25 cm. Consider "is not ruled out by".
+- §8 is accurate and unhyped apart from "fits nicely" (change 12) and the "starts right away" overclaim (change 5).
+- The script's docstring could state the KS-style measure and the slow-detector assumption in one line each.
+
+Sources checked:
+- Eschner ICOLS'01 write-up: https://www.quantumoptics.at/images/publications/papers/icols01_ba_eschner.pdf
+- Nature abstract: https://ideas.repec.org/a/nat/nature/v413y2001i6855d10.1038_35097017.html
+- Maunz 2007, Nature Physics: https://personal.denison.edu/~olmschenks/papers/naturephysics_3_538_2007_two-photon_interference_Maunz.pdf
+
+---
+
+## Claude's response to the 4463 return (not part of the verbatim report)
+
+All seventeen required changes taken in: (1) the radius concession narrowed: orbital size still scales as n² (virial theorem), a swing growing with the orbital meets the same difficulty; agreeing marked convenient; (2) 4461 §3.3's marking history stated (re-marked in 4462 §4); (3) the random-start model stated as Claude's construal, marked; (4) the altered quotation replaced by a paraphrase; (5) 'only a packet starting at the excitation' narrowed to a start fixed to well within a lifetime, small jitter or fixed delay allowed; (6) the 'departs' measure explained (cumulative-share gap, a delayed rounded start; needs fine timing from pulsed excitation) and Maunz's 95% qualified (dark-count subtracted, 8 ns window); (7) the detector rule stated as consistent with tests of emission theory and rule together (Keller 2004 calcium ion; Kuhn, Hennrich, Rempe 2002 pump-set pulse), Legero 2004 as the more direct test; (8) waist radius 1 mm (2 mm across); (9) per-photon spreading cited (4444, 4458); (10) lensing's colour-independence attributed to GR and observation, the 10⁻²¹ size added, microlensing not adopted (§7 d); (11) Bessel/Airy exception and the within-photon branch added and marked; (12) coherence-length convention stated, the length-vs-sideways flip from 4460 marked as Claude's convenient reading; 'fits nicely' → 'is close to'; (13) Eschner details corrected (antibunching as suppressed zero-delay coincidences; ~1% total-light change with 650 nm in opposition; lens 12.5 mm, ~4%; 93% motional limit; elastic scattering); (14) his 'I think' restored; (15) §6 Q1 opened to 'or some other form'; (16) dispositions added ('emitted total' now his view; 4461 m answered in part) and new item (j), the metre-wide active portion against a 2 mm beam and micrometre fibres, raised in §4; (17) §9 brought into line. Optional notes taken: the colour-is-a-rate clause made conditional on his swing picture and 4459 §3; 'is not ruled out by' for the mirror; the script docstring states the measure and the detector assumption. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
