@@ -1,0 +1,86 @@
+# Founder — First, Answers on Width and Shape: the Microgravity He Meant Was That of Gas Atoms, Not Applicable in a Lab or Vacuum, so His Assumption Was Probably Wrong; Divergence Perhaps From Each Emission Swing Starting at a Slightly Different GP; the Photon a Superposition Packet Heading One Way, Radiating Toroidally, Additive Forward and Subtractive Behind; He Asks What Experiment Showed Red and Violet Beams Diverge Differently. Then: "Please Ignore All the Answers Above. This Is a Completely New Postulate": the Colour Is the Energy Packet's Totality, Particle and Wave Alike Arising From a Zero-to-Maximum-to-Zero Envelope of DP Arc-Separation; Knocked Out of Resonance, the CP Accelerates From Zero to a Maximum Velocity and Decelerates to Zero as It Settles Into the Lower Orbital; That One Rise and Fall Is the Photon's Waving, Shorter and Denser (More Violet) for a Larger Energy Difference; the Direction Could Be Any; Each Orbital Has Its Own Envelope Shape; the Photon's Metre Volume Passes Through Both Slits; a Particle's KE/Momentum Volume Goes Through Both While Its Mass Goes Through One
+
+**Patch:** 4464. **Date:** 8 November 2026, 07:11 local. **Answers:** 4463 §6 and the lines of Claude's 4463 chat reply that he quotes.
+**Worked at:** `series_standard_model/axiom_maturation/4464_one_rise_and_fall.md`.
+
+## His message (filed verbatim; the lines of Claude's 4463 chat reply that he quoted are shown in brackets; empty bullets kept as written; spelling as written; his note that 4463 was applied is operational)
+
+> [Width: a photon's width does spread, even in the lab, and red spreads more than violet. Gravity bends all colours alike, so it can't be the cause.]
+>
+> * Thomas: The gravity I refer to was referring to was the microgravity of an atom in gaseous distribution, which is small, but gravitational
+>   nevertheless, and inapplicable if the experiment was done in a vacuum.
+> * I was assuming this effect was noted over galactic scales and that the galactic gas was the distortion. But it was done in a lab, so my assumption
+>   is that atomic near misses were the cause of the dispersion was probably wrong. T
+> * The distinctive mis-assumption I made was that the photon divergence was over galactic distances, but in fact it was within the confines of a lab,
+>   distances measured in meters, not light-years. The light beam's meter-diameter influence could not be significantly affected by atomic near misses
+>   in such a short distance.
+> * So, if the divergence of the photon beam's radius increased from a small radius to a larger radius within the distance of the laboratory frame,
+>   then a more likely cause of the divergence is the photon emerging from various points along its emission swing and the angular divergence due to the
+>   various components of the photon radiating in slightly different directions.
+> * This would be consistent with my postulate that each emission swing started from a slightly different GP than the previous emission swing. Thus,
+>   each perpendicular radiation from the emission swing axis would have had a slightly different launch angle and therefore the photon, being a group
+>   phenomena would have a slight divergence of the beam width due to the slightly different launch angle.
+>
+>
+> * [You: When the active portion of a photon leaves an atom, is it a shell spreading out around the atom, a packet heading one way, or some other form?]
+>
+> Thomas: I see the superposition packet heading in one direction. I see the photon as the radiation radiating toroidally, perpendicular to the
+> electron's CP motion.
+>
+> * Each of the Emission swing segments will radiate torroidally perpendicularly from the locus of the higher to lower orbital swing, with the direction
+>   of the bump being the direction of initiation, as we see in LASER mediated coordinated emission.
+> * While the emission is torroidal, the superimposition of the successive emissions is additive in the forward direction, and subtractive in the rear,
+>   resulting in a concentration of the totality of the amount of order (actual non-zero DP-arc-separations that add together to make the total energy
+>   of the photon).
+> *
+>
+>
+> * [You: In the lab, a red laser beam spreads more than a violet one of the same starting width, over a few metres with no large mass nearby. In your
+>   picture, what makes the spreading depend on the colour?]
+>
+>
+> * Thomas: The mass is clearly irrelevant, which is what I also thought. I was only postulating some diffusive effect associated with small atomic
+>   masses, in the atmosphere or space, that I was postulating had an effect. This is clearly not the case as above.
+> * What was the experiment that determined that proved that the red and violet laser beams had a different divergence.
+> * Using my above postulate of the perpendicular torroid having a different launch direction on each emission swing, it seems that the red photon was
+>   generated by a slower CP electron movement, given that there was not as much differential in the high  to low energy levels, so there would not have
+>   been as high a velocity CP electron, so there will be more time elapse in a red photon vs. the violet photon.
+>
+>
+> NOTE: Please ignore all the answers above.
+> This is a completely new postulate.
+> Let's see if this one will work:
+> [You: The colour is still a rate the swing has to match.]
+>
+> * Thomas: Postulate: The color (frequency of the waveness of the photon) is the energy packet totality, both as a particle and a wave.
+> *  Wave-ness or particleness of both arise from the nature of  a property that which is common to them (the zero to max to zero configuration of the
+>   leading edge/front to middle, to trailing edge, envelope volume  of DP-arc-separation).
+> * The photon and particle carry a total energy as KE/momentum in the volume of space as the sum of all DP-arc-separation order stored in each.
+> * The particle's (momentum/KE) and the energy carried by the photon are both generated by an accelerating force applied to a charge.
+> * The differential velocity of the charge generating the photon goes from zero to max to zero. That is, there was no photon DP-arc-separation being
+>   generated when the atom was in non-radiative, resonant orbital mode.
+> * When disturbed out of resonance (the state where generation equals absorption/cancellation), the orbital electron CP is accelerated by the
+>   differential of DP-arc-separations associated the differential between the high and low energy orbitals.
+> * The non-resonant radiation starts slow (being that the differential acting on the CP electron is small). This velocity increases, to a maximum, then
+>   decreases to zero as the CP electron settles into its new lower energy orbital resonance. Thus, the shape of the amplitude of the radiated
+>   DP-arc-separation goes from zero to max to zero over the course of the acceleration, deceleration, radiation period. That period of rise/max/fall of
+>   DP-arc-separation radiation is the waving aspect of the photon.
+> * The greater differential from higher to lower orbital energy will accelerate the electron CP more strongly, thus the period of rise and fall of
+>   radation of DP-arc-separation will be shorter/more violet, and the space will be more dense than the redder/longer/less dense DP-arc-separation.
+> * The direction of radiation could be in any direction, as it is merely the bumping out of resonance by a rogue superimposition of DPs that  moved
+>   that electron CP out of orbital resonance.
+> * Each orbital will have its own characteristic zero to max to zero envelope shape,
+> * The place where we detect that photons have a wave nature is in experiments like the double slit or the single hole interference patterns. This is
+>   produced by the fact that the photon has the 1 meter volume over which the DP-arc-separation is distributed. Some of that volume passes through the
+>   two slits. That portion interacts with the edges of the slits and is bent to varying amounts depending on how far away it was. The two slits create
+>   two separate volumes of DP-arc-separation which have an axial distribution along the axis of travel. They will bend and superimpose. The short/high
+>   energy/violet ones will only superimpose over a narrow screen angle, and the redder/longer ones over a wider screen angle.  Each photon will produce
+>   one superimposition where the entire bolus/quantum of the photon collapses and makes a point of contact pulse, as the entirety of the photon's
+>   arc-separation quantum reresonates with an orbital and is absorbed into that new orbital system.
+> * The particle is the same thing, having a short vs. long volume of DP-arc-separation associated with its velocity/KE/p.  That energetic driver of
+>   the DP-arc-separation volume extends out from the particle and can go through both slits, and thus can direct the particle after the DP-arcs
+>   superimpose after passing through the slits. The mass portion of the particle must pass through one of the slits for the KE/p portion of the
+>   particle to interfere.
+>
+> What do you think.
+> 4463 applied.

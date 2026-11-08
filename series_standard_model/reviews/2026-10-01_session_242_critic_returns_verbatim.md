@@ -6053,3 +6053,95 @@ Sources checked:
 
 All seventeen required changes taken in: (1) the radius concession narrowed: orbital size still scales as n² (virial theorem), a swing growing with the orbital meets the same difficulty; agreeing marked convenient; (2) 4461 §3.3's marking history stated (re-marked in 4462 §4); (3) the random-start model stated as Claude's construal, marked; (4) the altered quotation replaced by a paraphrase; (5) 'only a packet starting at the excitation' narrowed to a start fixed to well within a lifetime, small jitter or fixed delay allowed; (6) the 'departs' measure explained (cumulative-share gap, a delayed rounded start; needs fine timing from pulsed excitation) and Maunz's 95% qualified (dark-count subtracted, 8 ns window); (7) the detector rule stated as consistent with tests of emission theory and rule together (Keller 2004 calcium ion; Kuhn, Hennrich, Rempe 2002 pump-set pulse), Legero 2004 as the more direct test; (8) waist radius 1 mm (2 mm across); (9) per-photon spreading cited (4444, 4458); (10) lensing's colour-independence attributed to GR and observation, the 10⁻²¹ size added, microlensing not adopted (§7 d); (11) Bessel/Airy exception and the within-photon branch added and marked; (12) coherence-length convention stated, the length-vs-sideways flip from 4460 marked as Claude's convenient reading; 'fits nicely' → 'is close to'; (13) Eschner details corrected (antibunching as suppressed zero-delay coincidences; ~1% total-light change with 650 nm in opposition; lens 12.5 mm, ~4%; 93% motional limit; elastic scattering); (14) his 'I think' restored; (15) §6 Q1 opened to 'or some other form'; (16) dispositions added ('emitted total' now his view; 4461 m answered in part) and new item (j), the metre-wide active portion against a 2 mm beam and micrometre fibres, raised in §4; (17) §9 brought into line. Optional notes taken: the colour-is-a-rate clause made conditional on his swing picture and 4459 §3; 'is not ruled out by' for the mirror; the script docstring states the measure and the detector assumption. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4464 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script and it reproduces every number the fragment quotes: T = 3.40e-16 s, cT = 0.10 μm, half-power width/peak = 1.07, about 0.9 fringes, v_max = 1.89e6 m/s, 3.2 Å moved, 1.9e-6 eV radiated, a factor of 5.5e6, and sodium D at 0.49 μm. The Larmor algebra is right: for v = v_max sin²(πt/T) the acceleration is a = (πv_max/T) sin(2πt/T), so the mean of a² over the pulse is a_max²/2, and E = K·a_max²·T/2 as coded. The single-cycle spectrum, the 4×10⁻⁸ natural width (1/(2πτ) ÷ f) and the 3.9×10⁶ lifetime cycles are all correct. His quotations match the founder file, apart from whitespace normalised and one fair ellipsis. The central result stands: one rise and fall is one cycle, and it fails the line width and the energy.
+
+Several things do not stand. One evidence claim is wrong (quantum cryptography), one premise is wrong (the laser double-slit "hundreds"), one convenient branch is unmarked, the "rescue" claim is overstated, two citations are wrong, and the disposition of 4461 (l) is not supported.
+
+## Required changes
+
+1. **§3, quantum cryptography: the evidence is wrong.** Time-bin QKD uses matched unbalanced interferometers at sender and receiver. Its pulses (~100 ps) are deliberately *shorter* than the arm delay. The interference comes from the short–long and long–short amplitudes being indistinguishable, not from a photon overlapping itself delayed by the full imbalance. So it does not show that photons are centimetres long, and it uses attenuated laser pulses, not single-emitter photons. Fix: delete "Interferometers fed one photon at a time, with arms unequal by many centimetres (as in quantum cryptography), still show fringes." Replace it with: "Single photons from one emitter (an atom or quantum dot) sent through a Michelson interferometer show fringes whose visibility falls off only as the path difference approaches c × the emitter's coherence time, centimetres to tens of centimetres for nanosecond lifetimes." Cite one checked paper or none. Keep the following sentence ("A photon a tenth of a micrometre long could not overlap with itself delayed by a centimetre").
+
+2. **§3 and §5 Q2: the double-slit fringe count premise is wrong.** In a double slit the number of visible laser fringes is set by the slits' geometry (separation ÷ width, the single-slit envelope), not by the light's band. "A laser shows hundreds" is not a general fact, and "white light a few" versus "laser hundreds" mixes two different limits. The claim frequency ÷ bandwidth ≈ number of fringes is right for path-difference interference.
+   - Fix §3 to: "How many fringes a light can show, as the path difference grows, is about its frequency ÷ its spread of frequencies: about 1 for this pulse. White light shows only a few coloured fringes near the centre of a double-slit pattern; with the same slits, laser light shows fringes as far out as the slits' own diffraction allows, and in a Michelson interferometer laser fringes persist over path differences of metres."
+   - Fix §5 Q2 to: "White light through two slits shows only a few coloured fringes near the centre; laser light through the same slits shows fringes all the way out, and in a mirror interferometer keeps showing them when one path is made much longer than the other. In his picture, what makes a laser's photons keep interfering over a longer path difference?"
+   - Make the same change in §8 ("where a laser makes hundreds") and in §6 (e).
+
+3. **§2 first bullet and §9: a convenient branch is unmarked, and his own words point the other way.** In this message he wrote that "the shape of the amplitude of the radiated DP-arc-separation goes from zero to max to zero". That directly describes the one-sided envelope reading, which §2 says fails (4458 case b). The acceleration reading rests on his 4457 statement, not on this message. Fix:
+   - Add to §2: "His own words here, 'the shape of the amplitude of the radiated DP-arc-separation goes from zero to max to zero', describe the radiated amount following the velocity, the reading that fails; the acceleration reading is taken from his 4457 statement."
+   - In §9, re-mark it: "'what radiates follows the CP's acceleration' is Claude's choice between two readings, the convenient one (it gives the signed swing); this message's own wording favours the other, which fails the sign."
+   - Make §1 or §6 (b) ask which reading he means, or fold this into §5 Q1 (see 9).
+
+4. **§3 last paragraph, §4 and §9: "rescues" overstates.** Reading his rise and fall as the envelope keeps a shape, not his postulate. His postulate's central claim, "That period of rise/max/fall … is the waving aspect of the photon" (the colour), is dropped. The envelope reading also brings back the earlier picture he told Claude to set aside, and its symmetric shape conflicts with the measured fading (§4). His mechanism also does not fit the envelope reading. A transit over a few ångströms lasting 1.6 ns averages about 0.2 m/s, so the CP cannot reach the 1.9×10⁶ m/s of a 10.2 eV acceleration in that motion. Fix:
+   - §9: "'his rise and fall is the envelope, the colour a swing inside it' is Claude's reading and the convenient one; it keeps his zero-to-maximum-to-zero shape but not his postulate's claim that this rise and fall is the colour, it returns to the picture he set aside, and its symmetric shape conflicts with the measured fading."
+   - Add the speed mismatch to §4 and carry it in §6.
+   - In §3 change "That is where the series stood before his new postulate" to "That returns to the picture he set aside; Claude records this, not as his view."
+
+5. **§4 and §8: the metre is wrongly attributed.** 4460 §4 gives c × τ = 0.48 m, "half a metre", for Lyman-α, not "about a metre". Fix §4 to "about half a metre for Lyman-α (c × τ = 0.48 m, 4460 §4, 4463 §4), more if its tail is counted". In §8 change "the photon's whole length of about a metre" to "about half a metre or more".
+
+6. **§3 "not the 1 meter volume" and §4: an orientation reading is unmarked.** 4463 §4 marked "his metre = length along travel" as Claude's convenient reading, against his 4460 sideways radius. Here he does say his envelope runs "leading edge/front to middle, to trailing edge" and has "an axial distribution along the axis of travel", which supports the along-travel reading. Fix: quote that phrase in §1. In §3 state that the 0.1 μm against 1 m conflict compares lengths along travel, on that wording. In §9 mark that if his metre is sideways (4460), §3's length conflict does not arise and the other three failures still stand.
+
+7. **§2 "Any direction … drops the tension with 'photon along the collision' (4461 l)": not supported.** He did not withdraw "along the collision". "Any direction, as it is merely the bumping out of resonance by a rogue superimposition" is compatible with a photon along a randomly directed bump. The 4463 §5 tension is also separate and still stands: Eschner's ion shows each detection carries light that left *both* sides, which a one-way packet does not give. Fix: replace with "Any direction fits single atoms glowing all round (4460 §3). Whether it replaces his 4460 'photon along the collision' is not stated; 4461 (l) stays open, with 4463 §5's both-sides result." In §6 (h) delete "4461 (l) … dropped by the new postulate" and carry 4461 l in (f).
+
+8. **§2 pilot-wave bullet: "is the de Broglie–Bohm pilot wave in outline" overclaims.** In dBB the guiding wave lives in configuration space (for more than one particle) and carries no energy or momentum of its own. In his picture the guiding volume *is* the KE/momentum. And for light his photon has no one-slit part; it "collapses" whole at detection, which is not pilot-wave. Fix: "His particle picture resembles the de Broglie–Bohm pilot wave … It differs: the pilot wave carries no energy of its own and, for more than one particle, lives in configuration space, while his guiding volume is the particle's KE/momentum; and for light his photon has no part that takes one slit." Make the same softening in §8 ("close to … in one respect").
+
+9. **§5 Q1 needs one more physical-picture clause** to cover change 3: "… once, or many times? And does the radiated DP arc-separation follow the CP's speed (zero to maximum to zero) or its speeding up and slowing down (one way, then the other)?" This is neutral, not leading.
+
+10. **§4 third bullet: the envelope-shape evidence is misstated and conflicts with 4462 §2.** 4462 §2 says "the line shape alone could not tell a fading packet from a rising one." Fix: "After a short excitation pulse, the detection-time histogram rises within the pulse and then fades over the lifetime (4462 §2, 4463 §3, on the detector rule). With near-identical photons, that is each photon's envelope. A symmetric slow rise and fall of the same length would also give a non-Lorentzian line, though the line shape alone cannot tell a fading packet from its time-reverse (4462 §2)." Delete "in time-resolved two-photon interference" as the evidence, or justify it.
+
+11. **§3 Larmor: "close to … which is the lifetime" is too strong.** The factor scales as 1/v_max², and v_max is a construct. Hydrogen 1s's orbital speed, αc = 2.19×10⁶ m/s, exceeds it, so "upper value" is not strictly true. Fix: "of the same order as the four million cycles … (the classical radiation-damping estimate gives the same order)". In §9 replace "an upper value" with "a constructed value; the factor scales as 1/v_max²". In §8 change "matches" to "is about the same order as".
+
+12. **§7 Gaussian beam: "from the same optics" is wrong.** A fixed focusing optic gives a waist w₀ ∝ λ, which cancels the λ in the divergence. Fix: "beams of different colours with the same starting width spread in proportion to their wavelengths", and give the angle as "half-angle λ/(π w₀), w₀ the waist radius".
+
+13. **§2 slit-width bullet: credit the order, not the mechanism.** He gets violet narrow and red wide from the packet being short. In optics the fringe spacing goes with wavelength whatever the packet's length, and a shorter packet (a wider band) washes fringes out. Add: "(the order matches; his reason, the packet's shortness, is not the measured one)".
+
+14. **§6 completeness.** Against 4463 (a)–(j): (a), (b), (c), (d), (f) and (j) are carried; (e) and (h) are dispositioned; (i) was itself dispositions. Most of (g) is carried, except 4461 l (change 7). Add:
+    - **(i) CPP's radiation rule**, the Larmor analogue that §3 says is owed. It is not among the carried items (4459 a is the rate, not the rule).
+    - **(j)** which radiated quantity follows which (velocity or acceleration; change 3).
+    - **(k)** under the envelope reading, the slow-transit speed mismatch (change 4).
+    - **(l)** the orientation of his metre (change 6).
+    - **(m)** 4461 l restored to open, with the Eschner both-sides result.
+    - Change 4463 §6 Q2's disposition from "not pursued" to "set aside by him; the substance stays open as 4463 (d) in (f)".
+    - Change Q1's "carried as answered in the new form" to "answered in the set-aside part; the new postulate gives a direction (any) but not a form; carried with (m)".
+
+15. **§8 plain language** must follow changes 2, 5, 8 and 11. Keep "by the standard radiation rule" next to the energy claim.
+
+## What the todolist entry must contain
+- A "**4464 — founder: …**" header naming the set-aside answers (microlensing withdrawn, divergence from launch angles, a one-way toroidal packet) and the new postulate (one rise and fall as the colour; any direction; each orbital its own envelope; a 1 m volume through both slits; the particle's KE/p volume through both slits, its mass through one).
+- The critic verdict, and how many changes were taken in.
+- File paths for the founder file, the fragment and the script.
+- Gains: one cycle fails the line width (1.07 against 4×10⁻⁸), the length (0.10 μm Lyman-α, 0.49 μm Na D, along travel), path-difference coherence (about 1 fringe) and the energy (1.9×10⁻⁶ eV against 10.2 eV, a factor of ~5×10⁶, the same order as 3.9×10⁶ cycles, by Larmor); the signed swing on the acceleration reading, marked; the pilot-wave resemblance with its differences; the answer to the divergence experiment.
+- **Owed:**
+  - (a) what swings at ΔE/h (= 4463 a, 4461 a, 4460 a, 4457 b, 4446 c);
+  - (b) one cycle or many (founder question);
+  - (c) envelope shape against the measured fade;
+  - (d) the pilot-wave parallel in CPP terms, giving h/p (4443, 4444);
+  - (e) path-difference coherence (founder question);
+  - (f) carried: 4463 b, c, d, f, j; 4462 a, b; 4444 b, c; 4461 c, d, e, i, j, k, **l**; 4460 b, c, e, g; 4459 c, e, f, i; 4457 d–g; 4456 (E = hf proportion);
+  - (g) founder question 4464 §5;
+  - (h) dispositions as corrected in change 14;
+  - (i) CPP's radiation rule;
+  - (j) velocity or acceleration as what radiates;
+  - (k) the envelope reading's slow-transit speed;
+  - (l) the orientation of his metre;
+  - (m) the Eschner both-sides result against a one-way packet.
+- "Nothing registered."
+
+## Optional notes
+- §7 could name the founding experiments for colour-dependent spreading: Young's two-slit fringes, whose spacing he measured differing by colour (1803), Fresnel's diffraction (1818), and Gaussian-beam theory (Kogelnik and Li, Appl. Opt. 5, 1550, 1966). This would answer "what was the experiment" more directly than "no single experiment".
+- "4461 §3.1" and "§3.2" point at 4461 §3's numbered checks 1 and 2; "4461 §3, checks 1 and 2" would be exact.
+- §2 "It reproduces the measured predictions of quantum mechanics" could add "(it is constructed to give the same predictions as non-relativistic quantum mechanics)".
+- Respecting "ignore all the answers above" is otherwise handled fairly. The set-aside part is summarised without being argued, and recording only the microlensing withdrawal and his experiment question is proportionate.
+- No textbook fact is offered as evidence for CPP. The marked parallels are fine once changes 3, 4, 6 and 8 are made.
+
+---
+
+## Claude's response to the 4464 return (not part of the verbatim report)
+
+All fifteen required changes taken in: (1) the quantum-cryptography claim replaced by single-emitter Michelson coherence (no paper cited); (2) the fringe-count premise corrected to path-difference coherence, §3, §5 Q2, §6 e and §8 changed; (3) the acceleration reading marked as Claude's convenient choice, his own wording here noted as favouring the velocity reading, which fails the sign, and asked; (4) 'rescues' withdrawn: the envelope reading keeps his shape, not his claim, returns to the set-aside picture, conflicts with the measured fading, and his motion does not fit it (0.2 m/s average over 1.6 ns); (5) the envelope length given as about half a metre (0.48 m) or more; (6) his along-travel wording quoted and the orientation marked; (7) 4461 (l) kept open with Eschner's both-sides result; (8) the pilot-wave match softened to a resemblance with its differences; (9) §5 Q1 extended (speed or speeding up and slowing down); (10) the envelope-shape evidence restated (histogram rises within the pulse then fades; line shape alone cannot tell); (11) the Larmor factor stated as the same order, v_max a constructed value, factor ∝ 1/v_max²; (12) Gaussian beams of the same starting width, half-angle λ/(πw₀); (13) the slit-width order credited, not his mechanism; (14) items (i)–(m) added and dispositions corrected; (15) §8 follows. Optional notes taken: Young (1803), Fresnel (1818), Kogelnik and Li (1966) named in §7; 4461 §3 check numbering; the pilot wave 'constructed to give the same predictions'. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
