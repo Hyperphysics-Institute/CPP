@@ -6515,3 +6515,73 @@ A "**4468 — founder: …**" line in the same style as 4467:
 
 All eleven required changes taken in: (1) 'each/every' → 'most' throughout, with the faint-pedestal allowance; (2) the independence assumption stated for the grating argument, with the mode-locked exception; (3) the Doppler cause distinguished from his varying-jump mechanism, which is assessed against two-photon interference on other emitters; §5(d) updated; (4) the one-crest row 'of order one' (0.9 in this model; 0.7–1.07 for real cycles), docstring corrected; (5) 4000 photons; the middle row now prints 9.9e-05; (6) full citation, Balmer-α vs Lyman-α noted, §6 'red line … in absorption'; (7) 'low-pressure gas', collisions noted; (8) the question now about a short photon of definite energy, linked to 4466 (a) and 4467 §4; (9) carried wording restored with 4467(a)–(e) labels; (10) new items (a) and (e); (11) the Doppler reframing marked as Claude's convenient branch. Optional notes taken: the third crediting of his statistical reading; the detector-resolution clause; '(from the width computed for a hot discharge, 4467)'. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4469 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script (`series_standard_model/code/4469_how_a_grating_sorts_a_train.py`, exit 0). Its output matches the §3 table: 1.8e-1, 1.8e-2, 1.9e-3, 9.1e-4, 8.8e-4. It also gives 94.1 nm, 9.4 nm and 0.9 nm for the three pulses. The model is sound: the train's spectrum (sinc² for a flat train of M crests) is summed against the response of a grating with G grooves in first order. That is the right way to get the energy from one wave train, by Parseval. The answer to "is it a postulate?" is correct in substance. The femtosecond arithmetic is right: 0.441·λ²/(cΔt) gives 94 nm at 10 fs, and a 10 fs half-power duration is about 3.7 cycles of 800 nm light, so "about four crests" is fair. The fragment marks the convenient branch. Seven defects need fixing. One is a plain error of physics wording (§3), one is a misquote of 4468, and one leaves out the key gap in the evidence (classical pulses versus single photons).
+
+## Required changes
+
+1. **§3, the sentence on the narrower of two limits is backwards.** "So a spectroscope's line is as thin as the narrower of two limits" says the line takes the *smaller* of the two widths. The table shows it takes the larger, combined when the two are close (the 500-crest row is 0.0019, more than either 0.0018 or 0.0009). The next sentence, "A line thinner than a few crests' worth of spread can only come from light with many crests", is garbled. Replace both with: "So a spectroscope's line can be no thinner than either limit: the spread set by the light's own crest count (about 0.9 ÷ N) and the spread set by the grating's groove count (about 0.9 ÷ G). When the two are close they combine. A line thinner than 0.9 ÷ N therefore needs light with more than N crests, whatever the spectroscope."
+
+2. **§2, first bullet and the title: say accurately where "narrow" comes from.** The 4468 chat lines he quoted do not contain the word "narrow". They say "only a long photon is that sharp" and "spread across a huge band". The 4468 fragment does use "narrow" in the colour sense ("most photons must be narrower than the line", "a narrow line", §3 and §7). Rewrite the bullet's opening as: "**'Long and narrow': the narrowness is in colour, not in space.** The lines of 4468 he quotes say 'sharp'; the 4468 fragment says photons must be 'narrower than the line' (§3). Both mean a small spread of frequencies, not a thin photon." Adjust the title clause to match, for example "Narrowness Meant in Colour".
+
+3. **§2: correct the chat reply's "each photon".** The quoted Plain Language said "Each photon's own spread of colour has to fit inside the line" and "Each photon must fit inside the line". The 4468 fragment, after its critic's first required change, says the bound covers *most* photons, with a faint broad pedestal allowed. The chat reply restored the overclaim the critic had removed, and he is now answering that wording. Add one line to §2 or §5: "The 4468 chat reply he quotes said 'each photon'; the bound covers most photons. A small fraction of short ones would show only as a faint, broad pedestal (4468 §3)."
+
+4. **§4: the time–bandwidth rule is a lower bound.** As written ("the two agree with the rule"; "a 1-picosecond pulse, about 1 nm") it reads as an equality. The relation is Δν·Δt ≥ 0.441 for a Gaussian. Equality holds only for an unchirped (transform-limited) pulse; a chirped pulse can be long and still broad. Fix: "…spreads over *at least* about 94 nm (exactly that for an unchirped Gaussian pulse; the figures are for unchirped pulses)." Add: "The rule runs one way: a short pulse must be broad in colour; a long one need not be narrow. That is the direction the argument uses: a sharp colour requires a long wave." On "measured separately": intensity autocorrelation measures the duration only once a pulse shape is assumed. It is spectrometer-free, but FROG and SPIDER are not, because they resolve the spectrum. Say "(by intensity autocorrelation, given an assumed pulse shape)".
+
+5. **§4/§5 and §9: mark that the laser tests are on classical pulses of many photons.** His question is about *a photon's* structure. Femtosecond pulses contain enormous numbers of photons, so carrying the rule to single photons is part of the inference, alongside independence. Add to §5's "Inference" bullet and to §9 "Marked": "the laser-pulse tests are on classical many-photon pulses; for single photons the evidence is 4466 §3 (two-photon interference resolved in time, and length measurements on single photons) and transform-limited single photons from quantum dots, whose measured duration and linewidth obey the same rule." For the second, cite after checking: Kuhlmann and others, "Transform-limited single photons from a single quantum dot", Nature Communications 6, 8204 (2015). If no single-photon citation goes in, the gap must be owed as a new item and carried in todolist.md (D-9).
+
+6. **§2 second bullet: deal with the prism, and fix "rainbow".** He wrote "refracts". The fragment says "how a grating or prism treats any wave", but the groove-by-groove explanation in §3 is specific to gratings. Add to §3: "A prism does the same by a different route. Light crossing its thick base is delayed by many more wavelengths than light crossing near its apex. Every spectroscope's sharpness is set by that largest delay, counted in wavelengths: for a grating, the groove count times the order; for a prism, the base thickness times how fast the glass's index changes with colour. A wave shorter than that delay cannot line up with itself across the instrument, so a prism also fans a few-crest pulse over a range of angles." Separately, "a pulse of a few crests … fans out into a broad rainbow": a 10 fs pulse at 800 nm spans roughly 750–850 nm, mostly near-infrared, so it is not a visible rainbow. Change §4 to "fans out into a broad band of colours (for 800 nm pulses, mostly in the near infrared), not a line". In §8, change "about a hundred nanometres of colour" to "a spread of about a hundred nanometres of wavelength, most of it infrared".
+
+7. **§7(a): use the standard labels and restore the carried wording.**
+   - The nested "(a) Carried from 4468: (a) … (b) … (c) …" collides with the outer labels. Relabel as 4468(a) through 4468(e), as earlier patches did with "4467(a)".
+   - Restore the wording 4468 carries, which was dropped:
+     - 4468(a): "(standard: about 0.9 ÷ crests for a flat train, within about 2 for other shapes)".
+     - 4467(c): the full parenthesis, "(does each crest come from one back-and-forth of the CP, can a single jump lay down many crests and what spaces them a wavelength apart, or does something other than the CP's motion lay them down)".
+     - 4467(d): "to replace the computed Doppler bound".
+     - 4468(c): the question's text, "when one photon of a single, definite energy but only one or a few crests long reaches a grating, does it go to one sharp angle or spread over a range, and what in the photon decides which".
+     - 4468(d): spelled out as in 4468 §5(d). Right that a line is many photons and that a gas's width is mostly a spread of their energies, from motion. Not right that a spread of jump energies makes up the natural width, nor that this replaces long photons. The 4467(e) dispositions stand, including the 4466 erratum added in 4467.
+     - 4468(e): "(used by the grating and fringe arguments)".
+   - In §7(c), add the dispositions from changes 2–3 (the chat reply's "each" corrected to "most") and from change 6 (prism).
+   - Shorthand like "its dispositions" is the dropped carried wording that 4468's critic already flagged.
+
+## Optional notes
+
+- §2, third bullet: "about 1 ÷ N of its wavelength wide" mixes angle and wavelength. Better: "a range of angles matching a spread in wavelength of about 0.9 ÷ N". Likewise, the table column "Spread of angles (as a share of the wavelength)" would be clearer as "Spread of the matching wavelength, as a fraction of the wavelength".
+- §3 "Why a short wave does not": say "over about as many grooves as it has crests" rather than "a few grooves". That gives the M-versus-G crossover directly in the physical picture.
+- §2 "How wide it is across the beam … (4463, 4464 l)": the precise item is 4463 (d), the photon's width; cite "4463 (d), 4464 (l)".
+- §6 is neutral and framed as a physical picture. To avoid a forced binary, consider adding "or something else". It mostly restates 4468 §4, which he has not yet answered; the laser-pulse contrast does make it sharper.
+- §5's "would have to behave unlike the measured laser pulses" should read "unlike the measured laser pulses and single photons" once change 5 is made.
+- §9 "Not claimed" could add "prism resolving power".
+- No textbook fact is presented as evidence for CPP; the fragment keeps CPP's version as owed (4468 a). The convenient branch is marked properly, and the claim that "hydrogen's photons are long" is conceded as inference without weakening the rule. That balance is right.
+- §8 is accurate and unhyped apart from the points in changes 4 and 6. It mixes "I" with "he/his", as 4468 did; that is acceptable, since it is the convention.
+
+## What the todolist entry must contain
+
+The entry starts "**4469 — founder: is Claude rationalizing a thin line by postulating a long, narrow photon that the spectroscope sends to exactly the right angle (critic ACCEPT WITH CHANGES, …; nothing registered):**", followed by the three files (founders_voice/4469_long_and_narrow_photon.md, axiom_maturation/4469_how_a_grating_sorts_a_wave.md, code/4469_how_a_grating_sorts_a_train.py). It needs:
+
+**Gains:**
+- Narrowness is in colour; "long" means crests along the travel.
+- It is not a postulate: a grating, and by a different route a prism, sends a few-crest wave over a range of angles. The line can be no thinner than the larger of about 0.9/N and about 0.9/G.
+- The time–bandwidth rule is a lower bound (0.441 for a Gaussian). For unchirped pulses: 10 fs at 800 nm ≈ 94 nm, 100 fs ≈ 9 nm, 1 ps ≈ 0.9 nm. Durations come from autocorrelation.
+- The chat reply's "each photon" is corrected to "most".
+- The step from the rule to "hydrogen's photons are long" is inference: it rests on independence, and on carrying the rule to single photons (4466 §3; quantum-dot transform-limited photons, if cited).
+
+**Owed:**
+- (a) Carried from 4468, by label 4468(a) through 4468(e), with the full wording of 4468's todolist entry. That includes the whole 4467/4466/4464 chain, the 4467(c) parenthesis, "to replace the computed Doppler bound", the text of the 4468 §4 question, the 4468(d) dispositions and the 4468(e) independence wording.
+- (b) **Founder question 4469 §6**, with its text: is a short photon of definite energy more like the few-crest pulse at a grating or like the steady beam, and what in its structure makes the difference. It sharpens 4468 §4.
+- (c) Dispositions as in §7(c), corrected.
+- (d) Single-photon evidence, but only if it is not put into the text (change 5).
+
+Run `code/deferral_gate.py` before the format-patch, per D-9.
+
+---
+
+## Claude's response to the 4469 return (not part of the verbatim report)
+
+All seven required changes taken in: (1) the two-limit sentence corrected (no thinner than either limit; they combine when close; a line thinner than 0.9 ÷ N needs more than N crests); (2) 'narrow' traced to the 4468 fragment's colour sense, title adjusted; (3) the chat reply's 'each photon' corrected to 'most'; (4) the rule stated as a lower bound, unchirped figures, one-way direction, autocorrelation given an assumed shape; (5) many-photon pulses vs single photons marked, with 4466 §3 and Kuhlmann and others, Nature Communications 6, 8204 (2015) for transform-limited quantum-dot photons; (6) the prism added, 'rainbow' replaced by a near-infrared band; (7) carried wording restored with 4468(a)–(e) labels, dispositions extended. Optional notes taken: 'spread in wavelength of about 0.9 ÷ N'; the table column relabelled; 'about as many grooves as it has crests'; '4463 (d), 4464 (l)'; 'or something else' in the question; 'and single photons'; prism resolving power in 'Not claimed'. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
