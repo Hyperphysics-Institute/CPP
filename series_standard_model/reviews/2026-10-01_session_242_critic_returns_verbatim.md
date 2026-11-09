@@ -6425,3 +6425,93 @@ It should then contain:
 
 All fifteen required changes taken in: (1) the Lyman-α millimetres stated as computed; 300 K row labelled hypothetical; a fast-atom (~2 eV) case added (~7e3 crests, ~0.8 mm); erratum note appended to 4466 §5/§8/§9 and the 4466 todolist wording corrected; (2) 'by measurement alone' and 'we know' removed; the fairer statement rewritten as suggested; (3) 'one part in tens of thousands' for a hot gas; (4) 'tens of thousands of times narrower', with the natural width's ~2e7; (5) the one-cycle smear 90–190 nm, the shape dependence noted; (6) the microvolt's two sources distinguished, his description credited as partly right for the lifetime branch; (7) the 2p natural width added as measured (ensemble, absorption/excitation); (8) 'most of the photons'; (9) 'per cycle (one out-and-back)'; (10) the flat-envelope caveat; (11) convenient branches marked; (12) the Balmer-line claim marked as general knowledge, unsourced, a different transition; (13) the question widened and linked to 4464 §5 and 4464 (b); (14) carried wording restored with prefixed letters; new item (e) a measured Lyman-α profile; (15) the plain-language sentence on computed widths. Optional notes taken: the N = 1 width relative to the peak and band edges in nm printed; 'a few ten-thousandths to a thousandth'; the filter clause; 'the least number of crests the light can have'. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4468 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+The main result stands. For mutually incoherent emitters (independent atoms in a lamp), the measured line is the sum of the photons' own power spectra. A line of half-power width w therefore needs most of its photons to be narrower than w, which means at least about 0.9/w crests. Spreading short photons' centre energies cannot narrow the line. I ran the script and it reproduces its three cases. I confirmed the Hänsch–Shahin–Schawlow result: Doppler-free saturation spectroscopy of Hα resolved the Lamb shift (Nature Physical Science 235, 63 (1972), https://www.nature.com/articles/physci235063a0). The cross-references to 4462 §2, 4466 §2/§3/§5/§9 and 4467 §3 point to the right content.
+
+Eleven changes are required, though. The draft repeats the "each" overstatement that the 4467 critic already struck. It leaves out the independence assumption the grating argument depends on. It credits Claude's Doppler mechanism to him as "exactly his picture", when his mechanism is a spread in the jump's own energy. It misses the one measurement that tests his mechanism directly. It also has one script number that is a sampling artifact, a citation that is incomplete, and two carried items that lost wording.
+
+## Required changes
+
+1. **"Each/every" must become "most" throughout (4467 critic item, now repeated).** A small fraction of short photons adds a low, broad pedestal and barely changes the half-power width (4467 §3 says this itself). Fix:
+   - Title: "Every Photon's Own Spread Must Fit Inside the Line" → "Most Photons' Own Spreads Must Fit Inside the Line (a Few Short Ones Would Only Add a Faint, Broad Pedestal)". Also "The Two Readings Are Both True at Once: Many Photons, Each Long" → "…Many Photons, Most of Them Long".
+   - §3: "Each photon's own spread has to fit inside the line" → "Most photons' own spreads have to fit inside the line". "each of them must be long enough to be narrower than the line" → "most of them must be long enough…". "A line of width w needs photons of at least about 0.9 ÷ w crests" → "A line of width w needs most of its photons to have at least about 0.9 ÷ w crests (a small fraction of short ones would show only as a faint, broad pedestal in the wings)".
+   - §6: "Every photon's own spread of colour has to fit inside the line" → "Most photons' own spread of colour has to fit inside the line". "each of them has to have at least many thousands of crests" → "most of them have to have at least of order ten thousand crests (from the width computed for a hot discharge, 4467)".
+   - §7 "Not softened": "each photon's own spread" → "most photons' own spread".
+   - Script docstring: "only if each photon is itself narrower than w" → "only if most photons are themselves narrower than w".
+
+2. **State the independence assumption in the grating argument, and add the correlated-photon loophole.** "The line is the sum of all the photons' own spectra" holds only when the photons have random phases relative to each other (independent emitters). The fragment states that assumption for the fringe argument but not here. Phase-locked short packets can produce narrow lines. A mode-locked laser emits pulses a few crests long, yet its spectrum is a comb of very narrow lines. This works only because the pulses are phase-locked into one long coherent wave, and the comb's overall envelope stays as wide as one pulse's spread. Fix: after "The line is the sum of all the photons' own spectra." insert: "(This holds when the photons' phases are random relative to each other, as for independent atoms in a lamp. Short packets whose phases are locked to each other can build narrow lines, as a mode-locked laser's pulse train does, but only by forming one long coherent wave, and the overall spread stays as wide as one packet's; a lamp's independent atoms do not do this.)" In §7 "Marked", add: "the grating argument, like the fringe argument, assumes random phases between photons from independent atoms; phase-locked short packets are the exception (mode-locked lasers), and do not apply to a lamp."
+
+3. **Do not credit Claude's Doppler mechanism to him as "exactly his picture". Answer the mechanism he actually proposed.** He says the distribution is "of the energy from a high- to low-energy emission drop": the jump itself releases different energies from one emission to the next. Doppler shifts are a different mechanism, supplied by Claude. Fix in §2, second bullet: replace "So a gas's line is mostly a distribution of photons of different energies, exactly his picture." with "So a gas's line is mostly a distribution of photons of different energies, as he says, though the cause here is the atoms' motion, not a varying jump."
+
+   Then add a §2/§3 paragraph on his mechanism:
+
+   "**What is left when the motion is removed is each photon's own spread, not a spread of jump energies.** Once the motion is removed, the remaining width is the natural width (4451 §3, 4466 §5). If that width were made of photons with different definite energies, photons from the same kind of emitter would differ in colour and could be told apart. Then two of them meeting at a beam splitter would not leave together. Measured, they do: about 95% for two trapped ions (Maunz and others, 2007), and 99.6% for successive photons from one quantum dot (Somaschi and others, 2016) (4462 §2). So at that level, each photon carries the whole spread itself. These are other emitters, not hydrogen."
+
+   Add a line to §7 "Marked": "that the residual width is each photon's own spread rests on two-photon interference on other emitters (ions, quantum dots), not hydrogen." Update §5(d) to match: "right that a line is many photons and that a gas's width is mostly a spread of their energies (from motion); not right that a spread of jump energies makes up the natural width (two-photon interference, other emitters), nor that this replaces long photons."
+
+4. **Correct the one-crest figure, and the script docstring that contradicts its own output.** The sinc² model at N = 1 runs down to zero frequency and leaves out the real signal's negative-frequency part, so its 0.89 is a model artifact. The docstring says "~0.7"; the script prints 8.9e-01. 4467 §3 gives 0.7 for a flat single cycle and 1.07 for 4464's push-pull. Fix:
+   - §3 table, row 1, third column: "about 0.9 of the frequency" → "of order one (0.9 in this simple model; 0.7–1.07 for real single cycles, 4467 §3)".
+   - Docstring (a): "(~0.7)" → "(~0.9 in this sinc² model, which is crude at one crest; 4467 gives 0.7–1.07): of order one".
+
+5. **The middle table row is a 400-photon sampling artifact.** With seed 4 the script prints 7.8e-05. I reran it without editing: seed 5 gives 9.5e-05, 4000 photons give 9.9e-05, and the exact convolution gives 1.02e-04. So "about 1 part in 10⁴" is the right physics, but the printed number does not show it. Fix: in the script, raise the photon count to 4000, or replace the random draw with the exact convolution (Gaussian of full width 1e-4 convolved with sinc²(1e5·Δ)). Make sure the printed value is about 1.0e-4.
+
+6. **Complete the citation, and say it is Balmer-α, not Lyman-α, in §6.**
+   - §2: "(Hänsch, Shahin and Schawlow, Nature, 1972)" → "(Hänsch, Shahin and Schawlow, 'Optical resolution of the Lamb shift in atomic hydrogen by laser saturation spectroscopy', Nature Physical Science 235, 63, 1972)".
+   - §2, after the absorption parenthesis, add: "It is a different line (red, n = 3 → 2) from the ultraviolet Lyman-α, so it shows how a discharge line is built, not Lyman-α's photon length."
+   - §6: "hydrogen's line gets much narrower" → "hydrogen's red line gets much narrower (measured in absorption)".
+   - §7 "Marked", add: "the Doppler-free measurement is on Balmer-α, a different transition from Lyman-α."
+
+7. **Qualify "in a gas, most of the width is Doppler".** In dense discharges, Stark and collisional broadening contribute. Impact (collision) broadening is homogeneous: it shortens each photon rather than spreading energies across photons. Fix, §2 second bullet: "In a gas, most of the width…" → "In a low-pressure gas, most of the width… (in denser discharges, collisions also widen each photon's own spread, which only strengthens the bound)".
+
+8. **Make the §4 question about the actual crux: a short photon with a definite energy.** As written, a long photon of definite energy goes to a sharp angle in both pictures, so the answer cannot discriminate. Fix: "when one photon of a single, definite energy reaches a grating" → "when one photon of a single, definite energy, but only one or a few crests long, reaches a grating". Add after the question: "(This bears on 4466 (a), a photon's length in CPP terms, and on 4467 §4, what lays down the crests.)" The question stays neutral and physical-picture.
+
+9. **Restore the carried wording in §5(b) and remove the nested lettering.**
+   - "4466(a) a photon's length in CPP terms (bears on 4464 b, e)" → "4466(a) a photon's length in CPP terms, including what 'length' is in his volume picture (bears on 4464 b, e)". The 4467 todolist has this wording; it was dropped.
+   - The inner "(a)…(b)…(c)…(d)" inside outer item (b) repeat the outer letters. Relabel them "4467(a) the 4466 carried list: …; 4467(b) founder question 4466 §6; 4467(c) founder question 4467 §4 (does each crest come from one back-and-forth of the CP, can a single jump lay down many crests and what spaces them a wavelength apart, or does something other than the CP's motion lay them down), sharpening 4464 §5's first question and 4464 (b); 4467(d) a measured Lyman-α emission profile (lamp or beam), to replace the computed Doppler bound".
+   - §5(d): "4467 (e) dispositions stand" → "4467(e) dispositions stand: 4466 dispositions and errata stand, including the 4466 erratum added in 4467".
+
+10. **Add the new items to §5.** Add "(e) the independence assumption: whether in CPP independent atoms' photons have random relative phases, which both the grating and fringe arguments use (§3)". Make new item (a) cite where the rule enters: "(a) The rule linking a photon's length to its spread of colours in CPP (new): the standard rule (spread about 0.9 ÷ crests for a flat train, within about 2 for other shapes) underlies 4464–4468; with it, whether a photon can have a definite energy while short (§3 'In his picture')."
+
+11. **Mark the Claude-supplied reframing as a convenient branch in §7.** Add to "Marked": "treating his 'distribution of energies' as the Doppler distribution was Claude's reframing; it would let the half credited to him rest on a mechanism he did not propose. Corrected in §2 (his jump-energy mechanism is assessed separately against two-photon interference)."
+
+## What the 4467-style todolist entry must contain
+
+A "**4468 — founder: …**" line in the same style as 4467:
+- **Topic and critic verdict:** "line width as the statistical spread of many photons' energies, not one photon of 10,000 crests; asked whether that is correct (critic ACCEPT WITH CHANGES, all eleven taken in; nothing registered)".
+- **Files:** `founders_voice/4468_line_width_as_energy_distribution.md`, `series_standard_model/axiom_maturation/4468_many_photons_in_one_line.md`, `code/4468_many_photons_in_one_line.py`.
+- **Gains:**
+  - A line is many photons; in a low-pressure gas its width is mostly a Doppler spread of different photons' energies.
+  - The Doppler-free Balmer-α result (Nature Phys. Sci. 1972, absorption, different line).
+  - Most photons must be narrower than the line, so most need at least ~0.9/w crests (a faint pedestal allowed); this assumes independent emitters, with the mode-locked exception marked.
+  - The residual (natural) width is each photon's own spread, not a spread of jump energies (two-photon interference, other emitters).
+  - Corrected script numbers.
+- **Owed, verbatim from the fixed §5:**
+  - (a) CPP's length-to-spread rule, and whether a short photon can have a definite energy.
+  - (b) The full 4467 carried list, by 4467(a)–(e) labels, with the restored wording: "including what 'length' is in his volume picture", the 4467 §4 parenthetical with "sharpening 4464 §5's first question and 4464 (b)", and "(lamp or beam), to replace the computed Doppler bound".
+  - (c) **Founder question 4468 §4**, in its revised wording.
+  - (d) Dispositions as revised in change 3.
+  - (e) The independence assumption.
+- **Gate:** run `code/deferral_gate.py` before the format-patch. Every deferral named in the fragment (the CPP length rule, the independence assumption, the Balmer-to-Lyman extrapolation, the measured Lyman-α profile) must appear in the entry.
+
+## Optional notes
+
+- §2's first bullet could note that the founder's "statistical distribution" reading has already been accepted twice for timing (4454, 4462 §2). Crediting it a third time, now for the colour, is fair and consistent.
+- §3 "In his picture": a definite-energy short photon would also conflict with energy-resolving detectors only if their resolution were fine enough. Calorimetric detectors are far too coarse (of order 10⁻³ or worse relative), so the grating and fringe measurements remain the operative test. Worth one clause, so the founder does not hear "definite energy" as directly measured.
+- §6 is accurate and unhyped once changes 1 and 6 are made. Consider adding "(computed for a hot discharge)" after "many thousands of crests", following 4467's erratum discipline.
+- The fragment makes no claim of novelty and does not use textbook facts as evidence for CPP. That is correct and should stay.
+
+**Sources:**
+- [Nature Physical Science 235, 63 (1972)](https://www.nature.com/articles/physci235063a0)
+- [Physics Today: fine-structure components of Hα line resolved](https://physicstoday.aip.org/news/fine-structure-components-of-hα-line-resolved)
+
+---
+
+## Claude's response to the 4468 return (not part of the verbatim report)
+
+All eleven required changes taken in: (1) 'each/every' → 'most' throughout, with the faint-pedestal allowance; (2) the independence assumption stated for the grating argument, with the mode-locked exception; (3) the Doppler cause distinguished from his varying-jump mechanism, which is assessed against two-photon interference on other emitters; §5(d) updated; (4) the one-crest row 'of order one' (0.9 in this model; 0.7–1.07 for real cycles), docstring corrected; (5) 4000 photons; the middle row now prints 9.9e-05; (6) full citation, Balmer-α vs Lyman-α noted, §6 'red line … in absorption'; (7) 'low-pressure gas', collisions noted; (8) the question now about a short photon of definite energy, linked to 4466 (a) and 4467 §4; (9) carried wording restored with 4467(a)–(e) labels; (10) new items (a) and (e); (11) the Doppler reframing marked as Claude's convenient branch. Optional notes taken: the third crediting of his statistical reading; the detector-resolution clause; '(from the width computed for a hot discharge, 4467)'. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
