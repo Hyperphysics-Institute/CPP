@@ -6313,3 +6313,115 @@ The direct answer is right and honest. For the lifetime measurement he has it ri
 
 All eleven required changes taken in: (1) the self-interference bound restated as a fraction bound (V(d) ≤ fraction of photons at least d long) with its two assumptions; (2) the gas bound on 'the photons' length'; (3) quantum-dot coherence qualified 'after a short excitation pulse', with weak steady driving (Matthiesen 2012) and spectral wandering noted; (4) §5 rewritten on the emitted spectrum, the natural width marked as an absorption/excitation ensemble width, the convenient branch marked; (5) 'not measured' narrowed to the full length, with a room-temperature Doppler lower bound (script: 3e10 Hz, a few tens of ps, millimetres to a centimetre); the Michelson Balmer-α citation was not verified and not added; (6) Claude's overstatement attributed to the 4465 chat reply and 4465 §7, without excuse; his last step noted as going one step past the measurement; 'he asked it in 4462'; erratum note appended to 4465; (7) script part 1 computes the histogram gap (0.024); parts relabelled; (8) standard-physics assumptions marked; (9) §6 question rephrased as suggested; (10) §8 aligned; (11) the link to 4464 §5 recorded. Optional notes taken: sodium doublet and cadmium as the clean example; Legero's cavity photons pump-set; Maunz read as fixing starts; an erratum note appended to 4464 §3 on 'an atom'. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4467 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+Review of Patch 4467 (`series_standard_model/axiom_maturation/4467_what_the_line_width_counts.md`). I ran the script and it reproduces every number printed in the fragment. I rechecked the Doppler arithmetic independently and it is correct: at 300 K the line is 1.236 × 10⁻⁵ of its frequency, giving 7.2 × 10⁴ crests and 8.7 mm; at 3000 K it is 3.91 × 10⁻⁵, giving 2.3 × 10⁴ crests and 2.8 mm. The central result stands. A line of fractional width w needs a train of roughly 0.9/w cycles. Chirp, phase jumps and gaps only widen a spectrum, so they cannot shorten the minimum duration. Pressure, collisional and instrumental broadening likewise only widen, so the measured width is a ceiling on per-photon width, not a floor. The Wiener–Khinchin equivalence is stated correctly for the ensemble light. The quotes in §1 match his message word for word. The problems are in what is called "measured", one wrong number, one wrong wavelength range, one adjustment that concedes too little to him, and some loose bookkeeping.
+
+## Required changes
+
+1. **The "millimetres" for Lyman-α is computed, not measured. Say so in §2, and file an erratum on 4466.** §3 now correctly says the Lyman-α widths are "computed from the Doppler formula for the stated temperatures… not quoted measurements". But 4466 §5 ("hydrogen's own room-temperature Lyman-α emission is about 1 part in 10⁵ wide"), 4466 §9 ("only a lower bound (millimetres) is measured, from the emitted spectrum of a gas"), 4466 §8 and the 4466 todolist line ("from the room-temperature emission width") all present it as measured. His own "we only know… millimetres" took that framing from 4466. Also, room-temperature hydrogen gas does not emit Lyman-α. Emission needs a discharge, and in a discharge the atoms are hot, often with eV-scale fast atoms from dissociation. So the 300 K row is hypothetical.
+   - Fix: add a fourth adjustment to §2: "**The millimetres is itself a computation.** No measured Lyman-α emission profile has been cited; the millimetre figure is the Doppler width computed for an assumed temperature. Room-temperature hydrogen does not emit Lyman-α; a discharge does, with hotter atoms, and fast atoms from dissociation (a few eV) would widen the line to about 10⁻⁴ of its frequency, about 10⁴ crests, about 1 mm."
+   - Append an erratum note to 4466 (at §5 and §9) saying the Lyman-α width there was computed, not measured.
+   - Label the 300 K row in §3 "hypothetical (room-temperature hydrogen does not emit)".
+
+2. **Remove "by measurement alone" and "we know" for the hydrogen crest count.** These appear in §2 ("by measurement alone"; "we know that the light it produces has at least tens of thousands of crests (hydrogen gas)") and in §6 ("by measurement alone"). By change 1 the count is computed. It also rests on the 4459 picture, which §2 itself marks.
+   - Fix §2's fairer statement to read: "…we know the energy of one jump is not measured; the Doppler width computed for a hot discharge implies the light has at least of order 10⁴ crests (a measured Lyman-α profile is owed); for other single emitters (quantum dots, not hydrogen), measured directly, the photons last up to about the emitter's lifetime. If each cycle comes from one out-and-back, the average per cycle is of order a thousandth of an eV or less; about 2.6 millionths if the photon lasts the lifetime."
+   - In §6, replace "by measurement alone" with "from the computed width alone".
+
+3. **"Hydrogen's ultraviolet line from a gas is about one part in a hundred thousand wide" (§6) is wrong as stated.** This is the hypothetical 300 K number, stated as fact. The 3000 K figure the patch itself uses is about 1 in 25,000.
+   - Fix: "Hydrogen's ultraviolet line from a hot gas, computed from the atoms' speeds, is about one part in tens of thousands wide."
+
+4. **"At least a hundred thousand times narrower" (§3, last paragraph) is wrong.** 0.8 ÷ 3.9 × 10⁻⁵ ≈ 2 × 10⁴, and 0.8 ÷ 1.2 × 10⁻⁵ ≈ 7 × 10⁴.
+   - Fix: "It is computed to be tens of thousands of times narrower (from the Doppler width; the natural width, measured in absorption, is some twenty million times narrower)."
+
+5. **"Smeared from deep ultraviolet to near-visible" (§3) is wrong.** For the script's one-cycle train, the half-power band runs from 0.64 to 1.36 times the peak frequency. With the peak at Lyman-α that is about 90 nm to 190 nm. Near-visible would be 300–400 nm. Also, the script's N = 1 spectrum peaks at 1.125 times the nominal frequency, so the 0.80 width relative to the peak is about 0.71. And 4464 §3 gave 1.07 times the peak for its push-pull shape.
+   - Fix: "smeared over about 90 to 190 nm, across the vacuum ultraviolet."
+   - Add one sentence: "The exact share depends on the shape of the single cycle (4464's push-pull gave 1.07 of the peak); any one-cycle shape gives a share of order one."
+
+6. **The microvolt adjustment concedes too little to him.** §2 says the microvolt "was not inferred from the fringes." That holds for the Larmor estimate (4464 §3, 4465 §2). But the lifetime arithmetic (4465 §3) rests on the inference that each photon lasts the lifetime. Per 4465 §3 and 4466 §4, that inference comes from the natural width plus two-photon interference and self-interference (fringe) measurements on other emitters. So his "backward inference from how long the emission appears to be because of the path difference that still produces interference" partly describes the second branch correctly.
+   - Fix: replace the first bullet under "Three adjustments" with: "**Where the microvolt came from.** One source, the radiation-rule estimate (4464 §3, 4465 §2), used no fringes. The other, 10.2 eV ÷ 3.9 million cycles (4465 §3), assumes each photon lasts the lifetime. That assumption rests on the natural width and on interference measurements, self-interference and two-photon, on other emitters (4466 §3–§4). So for that branch his description is partly right: it is an inference from how long emission appears to last, drawn partly from interference, but not from hydrogen's millimetre fringes."
+   - Make the matching change to the first sentence of §6 ("the millionths didn't come from the fringes").
+
+7. **His "we only know" leaves out a measured fact.** The 2p natural width, about 1/(2π × 1.6 ns), is measured as an ensemble width, mostly in absorption or excitation (4466 §4).
+   - Fix: add to the measured-bounds adjustment in §2: "Also measured, on hydrogen: the 2p level's natural width, about 1/(2π × 1.6 ns), in absorption or excitation; an ensemble width, which applies to each emitted photon only by the standard rule that the two lines coincide (4466 §5)."
+
+8. **"Each photon" overclaims, as 4466's critic found for the fringe bound.** The gas width bounds most of the photons, not each one. A small share of very short photons would add only a low, broad pedestal and leave the half-power width almost unchanged.
+   - Fix §3's "lower limit on each photon's crests" and the matching §6 wording to: "a lower limit on the crests of most of the photons (a small fraction of short ones would barely change the width)."
+
+9. **Crests and reversals are conflated.** By 4459 §3, one cycle (crest) is one out-and-back, which is two reversals. "Tens of thousands of crests mean tens of thousands of reversals" and "per reversal" are therefore off by a factor of 2. 4465 worked per cycle.
+   - Fix: say "per cycle (one out-and-back)" throughout §2, §6 and §7, and change "reversals" to "out-and-backs" where crests are counted.
+
+10. **The 0.9/N coefficient assumes a flat envelope.** For a Gaussian or exponential envelope the half-power duration for the same width is about half as long.
+    - Fix: add to §3, "In numbers": "(For a flat train; other envelope shapes change the factor by about two, so the counts are orders of magnitude, not exact.)"
+
+11. **Mark the convenient branches (PD-008).**
+    - Fix: add to §7, under Marked:
+      - "that the line width still rules out one jump making one cycle is the convenient branch for Claude (it keeps 4464 standing); it is held because any width of the observed order needs of order 10⁴ cycles or more";
+      - "the reading that the microvolt's sources did not involve interference was the convenient branch; corrected in §2 (the lifetime branch rests partly on interference measurements on other emitters)";
+      - "the Lyman-α widths are computed; a measured Lyman-α emission profile is owed".
+
+12. **Source or mark the visible-line claim, and add its caveat.** "For hydrogen's visible lines, lamp widths of this order are measured routinely" is unsourced. Balmer-α is a different transition (n = 3 → 2), and its measured width includes a fine-structure splitting of about 2 × 10⁻⁵ of its frequency.
+    - Fix: "(Claude's general knowledge, no source cited: Balmer-line widths in discharges are measured at 10⁻⁵–10⁻⁴ of their frequency, including fine structure; a different transition, so not a bound on Lyman-α.)"
+    - Add it to Marked in §7.
+
+13. **Link the §4 question to the open questions it sharpens, and widen it slightly.** §4 is a sharper form of 4464 §5's first question (how many swings per photon) and 4464 (b) ("one cycle or many"). 4466's critic required this kind of link. The two-option framing also leaves out the case where the cycles come from something the jump triggers rather than from the CP's own motion.
+    - Fix: end §4 with: "**Or does something other than the CP's motion lay them down?** (This sharpens 4464 §5's first question and 4464 (b).)"
+    - In §5 (d), add: "4467 §4 sharpens 4464 §5's first question and 4464 (b); all stay open."
+
+14. **§5 drops wording from 4466's owed items.** The letters are all present, but content is lost.
+    - Fix: restore the following in §5 (b):
+      - (a) "including what 'length' is in his volume picture (bears on 4464 b, e)";
+      - 4465 (a) "with the quantum dipole emission-rate analogue and the CP-in-atom case";
+      - (c) "against the measured rise-then-fade";
+      - (k) "the envelope reading's slow-transit speed (0.2 m/s)".
+    - Fix in (d): add "errata on 4465 §7 and 4464 §3 stand; erratum on 4466 §5/§9 (computed width; this patch)."
+    - Add a new open item: "**(e) A measured Lyman-α emission profile** (lamp or beam), to replace the computed Doppler bound."
+    - The nesting "(b) Carried from 4466: (a)…(b)…(a)…" is hard to follow. Prefix the inner letters (for example "4466(a)" and "4465(a)").
+
+15. **In §6, add one plain-language sentence on the hydrogen numbers.** Fix: "Those hydrogen widths are worked out from how fast the atoms move, not read off a measured spectrum."
+
+## What the todolist entry must contain
+
+A line in the 4466 format:
+
+**4467 — founder: asked whether his restatement is fair (the energy of one jump is not measured; the microvolt is not a measured maximum; 1.6 ns does not show the jump takes that long; only self-interference over millimetres is known), and asked for the line-width criterion to be explained (critic ACCEPT WITH CHANGES, [n] taken in; nothing registered)**
+
+It should then contain:
+
+- **Files:** `founders_voice/4467_fair_statement_and_line_width.md`, `series_standard_model/axiom_maturation/4467_what_the_line_width_counts.md`, `code/4467_line_width_counts_crests.py`.
+- **Gains:**
+  - his statement is largely fair;
+  - the adjustments: the microvolt's two sources, the lifetime branch resting partly on interference measurements on other emitters; measured bounds for other sources; the natural width as an ensemble measurement; the millimetres computed, not measured;
+  - the criterion: N cycles give a half-power width of about 0.9/N (flat envelope, within a factor of about 2 for other shapes);
+  - motion only widens, so the gas width gives a lower bound on most photons' cycles;
+  - Lyman-α Doppler bounds computed (3000 K: about 2 × 10⁴ cycles, about 3 mm; hot dissociation atoms: about 10⁴, about 1 mm);
+  - width and fringe fade are one measurement (Wiener–Khinchin);
+  - on the 4459 picture, the average per out-and-back is of order 10⁻³ eV or less;
+  - one cycle smears over about 90–190 nm;
+  - the convenient branches marked;
+  - the erratum appended to 4466 §5/§9 (and the 4466 todolist wording corrected).
+- **Owed:**
+  - (a) the full 4466 carried list, with the wording restored as in change 14;
+  - (b) founder question 4466 §6;
+  - (c) founder question 4467 §4, sharpening 4464 §5's first question and 4464 (b);
+  - (d) a measured Lyman-α emission profile;
+  - (e) dispositions: 4466 dispositions and errata stand; the erratum on 4466 is new.
+
+## Optional notes
+
+- The script's Part 1 for N = 1 takes all half-power points. It would be cleaner to report the width relative to the peak (0.71) and print the band edges in nm, which would also support change 5.
+- "about a thousandth" for 10.2 eV ÷ 2 × 10⁴ = 5 × 10⁻⁴ is fine as an order, but "a few ten-thousandths to a thousandth" is more exact.
+- A narrow filter between source and spectrometer can lengthen photons. The bound applies to the light as it reaches the spectrometer. This does not matter for an unfiltered lamp, but one clause would close it.
+- Calling cadmium's tens of centimetres an "adjustment" to a hydrogen-only statement is slightly off-target, but it is clearly labelled "not hydrogen". Fine as is.
+- The bell analogy is good and is correctly marked as illustration. The phrase "so it counts the crests, at least" in §6 reads awkwardly. Suggested: "so it gives the least number of crests the light can have."
+
+---
+
+## Claude's response to the 4467 return (not part of the verbatim report)
+
+All fifteen required changes taken in: (1) the Lyman-α millimetres stated as computed; 300 K row labelled hypothetical; a fast-atom (~2 eV) case added (~7e3 crests, ~0.8 mm); erratum note appended to 4466 §5/§8/§9 and the 4466 todolist wording corrected; (2) 'by measurement alone' and 'we know' removed; the fairer statement rewritten as suggested; (3) 'one part in tens of thousands' for a hot gas; (4) 'tens of thousands of times narrower', with the natural width's ~2e7; (5) the one-cycle smear 90–190 nm, the shape dependence noted; (6) the microvolt's two sources distinguished, his description credited as partly right for the lifetime branch; (7) the 2p natural width added as measured (ensemble, absorption/excitation); (8) 'most of the photons'; (9) 'per cycle (one out-and-back)'; (10) the flat-envelope caveat; (11) convenient branches marked; (12) the Balmer-line claim marked as general knowledge, unsourced, a different transition; (13) the question widened and linked to 4464 §5 and 4464 (b); (14) carried wording restored with prefixed letters; new item (e) a measured Lyman-α profile; (15) the plain-language sentence on computed widths. Optional notes taken: the N = 1 width relative to the peak and band edges in nm printed; 'a few ten-thousandths to a thousandth'; the filter clause; 'the least number of crests the light can have'. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+

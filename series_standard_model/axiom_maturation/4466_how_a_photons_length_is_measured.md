@@ -139,3 +139,7 @@ asked, in his picture, what of one photon meets what when lamp light makes fring
   - "a strong inference" is Claude's judgement.
 - **Not claimed:** novelty for Michelson interferometry, first-order coherence, two-photon interference or quantum-dot coherence measurements.
 - Nothing registered.
+
+## Erratum note (Patch 4467)
+
+§5's "hydrogen's own room-temperature Lyman-α emission is about 1 part in 10⁵ wide", §8's "the sharpness of its emitted colour shows its photons are at least a few millimetres long" and §9's "only a lower bound (millimetres) is measured, from the emitted spectrum of a gas" present a computed Doppler width as measured. No measured Lyman-α emission profile is cited; room-temperature hydrogen does not emit Lyman-α, and a hot discharge gives a computed bound of order 10⁴ crests, about a millimetre. See `4467_what_the_line_width_counts.md` §2–§3.
