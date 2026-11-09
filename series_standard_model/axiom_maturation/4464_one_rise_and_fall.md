@@ -192,3 +192,7 @@ one path is made much longer.
   - the pilot-wave resemblance is a resemblance, not evidence.
 - **Not claimed:** novelty for the time–bandwidth relation, Larmor's rule, the Rayleigh limit, Gaussian-beam divergence or the pilot-wave interpretation.
 - Nothing registered.
+
+## Erratum note (Patch 4466)
+
+§3's "single photons from one emitter, an atom or a quantum dot" should read "a quantum dot (after pulsed excitation)": no single-atom first-order (self-interference) measurement after pulsed excitation is cited. See `4466_how_a_photons_length_is_measured.md` §3.

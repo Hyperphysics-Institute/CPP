@@ -121,3 +121,7 @@ inference, not a measured limit on any one swing.
 - **Not claimed:** novelty for Larmor's or Liénard's rule, synchrotron radiation, Project 8's measurement, the quantum dipole emission rate or the hydrogen 2p
   lifetime.
 - Nothing registered.
+
+## Erratum note (Patch 4466)
+
+§7's "hydrogen's emission time, 1.6 nanoseconds" went beyond the measurement: the 1.6 ns is the spread of emission times from a click-time histogram, not a measured length of each photon. See `4466_how_a_photons_length_is_measured.md` §2, §4.
