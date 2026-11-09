@@ -6585,3 +6585,100 @@ Run `code/deferral_gate.py` before the format-patch, per D-9.
 
 All seven required changes taken in: (1) the two-limit sentence corrected (no thinner than either limit; they combine when close; a line thinner than 0.9 ÷ N needs more than N crests); (2) 'narrow' traced to the 4468 fragment's colour sense, title adjusted; (3) the chat reply's 'each photon' corrected to 'most'; (4) the rule stated as a lower bound, unchirped figures, one-way direction, autocorrelation given an assumed shape; (5) many-photon pulses vs single photons marked, with 4466 §3 and Kuhlmann and others, Nature Communications 6, 8204 (2015) for transform-limited quantum-dot photons; (6) the prism added, 'rainbow' replaced by a near-infrared band; (7) carried wording restored with 4468(a)–(e) labels, dispositions extended. Optional notes taken: 'spread in wavelength of about 0.9 ÷ N'; the table column relabelled; 'about as many grooves as it has crests'; '4463 (d), 4464 (l)'; 'or something else' in the question; 'and single photons'; prism resolving power in 'Not claimed'. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4470 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I ran the script (`series_standard_model/code/4470_drop_time_and_colour.py`). It runs and reproduces the table. The input numbers are correct: 2p 1.596 ns; 3p 5.27 ns; 3d 15.6 ns; 3s 158 ns; A(21 cm) = 2.87e-15 /s, so τ ≈ 3.5e14 s ≈ 11 Myr; Lyman-α 2.466e15 Hz; Balmer-α 4.568e14 Hz. The decay routes are right: 3s→2p and 3d→2p are both 100% and both give Balmer-α; 3p→1s (Lyman-β) is about 88% and 3p→2s (Balmer-α) about 12%. His words are filed verbatim in founders_voice and quoted accurately in fragment §1; I checked them against the attachment. The Copilot summary is fair and kept separate from his words. The problems are in the argument. Two of them are serious: the dichotomy in §3 leaves out a reading, and the 21 cm example is used against him when it partly supports his monotone claim.
+
+## Required changes
+
+1. **§3: the two horns do not cover what he said.** He wrote that the drop time "corresponds to" the frequency, with a monotone mechanism: a faster drop gives a faster cohort and more polarization. He did not write "drop time = 1/f". §3 tests only two equalities: one period, and the decay time. A third reading is left out: the drop lasts a number of periods, N/f, with N large. On that reading the drop time tracks the colour by construction and the line can still be narrow. Horn 1 does not touch it, and the table does not touch it unless the drop's duration is tied to the measured lifetime. 4466 §2 says the lifetime alone does not fix a photon's length.
+   **Fix:** add a third bullet. "If the drop lasts many periods (N ÷ frequency), it would track the colour only if N were fixed. Then every photon of one colour would have the same length and the same spread of colour. But Balmer-α from 3s, 3p and 3d has the same colour with different measured natural widths, which follow the levels' lifetimes and not the colour (and photon lengths measured on single emitters follow the emitter's lifetime, 4466 §3). So N is not fixed, and the colour is not set by the drop's length." Also rewrite the lead sentence "His postulate joins two things" to quote "corresponds to" and say that §3 tests three readings of it.
+
+2. **§3, §5, §7: "does not track the colour" overstates, and the 21 cm line is used the wrong way.** In standard physics spontaneous decay rates scale roughly as frequency³ × (dipole)². So across lines, faster drops do tend to go with higher frequencies: Lyman-α is fast and high, 21 cm is extremely slow and low. That is a real trend, and it is probably what his intuition is reaching for. The table's own end rows fit his monotone claim. Only the Balmer-α triplet (same colour, thirtyfold spread in times) breaks it, and the reciprocal reading fails by 6 to 24 orders of magnitude.
+   **Fix:**
+   - In §3, replace "that time does not track the colour" with: "that time does not set the colour. Across lines there is a broad trend (standard decay rates go roughly as frequency cubed, so higher lines tend to decay faster, as he says). But the same colour comes with decay times thirtyfold apart, and 1 ÷ decay time misses the colour by a factor of 10⁶ (optical) to 10²⁴ (21 cm)."
+   - Record the trend as consistent with his "faster drop, higher frequency" and add it to the PD-008 list as "not softened / conceded".
+   - In §5 and §7, present the 21 cm line as showing that the colour is not 1 ÷ the time. Do not present it as evidence against the monotone link.
+
+3. **"The same colour" is not exact.** The 3s, 3p and 3d routes reach different fine-structure sublevels, and the components of Balmer-α differ by up to about 10 GHz: roughly 2 parts in 10⁵, which Doppler-free spectroscopy resolves.
+   **Fix:** wherever the fragment says "the same red line" or "the same colour" (§3 bullets, §5, §7), add "the same to about 2 parts in 10⁵ (fine structure), against decay times thirtyfold apart". The argument stands; the word "same" needs this qualifier.
+
+4. **§4's "matches how standard physics describes emission" is imprecise, and the script's width column is wrong for two rows.** In standard physics a line's natural width is (Γ_upper + Γ_lower) ÷ 2π, not 1 ÷ (2π τ_upper). For 3s→2p and 3d→2p the lower level, 2p, decays in 1.6 ns. That lower level dominates the width: for the 3s route about 1.0e8 Hz, not 1.0e6 Hz. The script prints natural width/f from the upper lifetime only, so the 3s and 3d values are roughly 100× and 10× too small. Only the 3p→2s route (2s is metastable) and Lyman-α are right as computed.
+   **Fix:**
+   - In the script, compute the width from both levels' rates, with 2p for the 3s and 3d routes and 2s ≈ 0 for the 3p route, and print both.
+   - In §4, write: "the rate from the energy difference; the width from the lifetimes of both the upper and lower levels (for Balmer-α from 3s and 3d, mostly the lower level, 2p)". Then "the drop's duration is how long it rings, which sets the line's narrowness" becomes "which contributes to the line's narrowness (with the lower level's lifetime)".
+   - Also add that the cycle counts (f × τ) are for the upper level's emission envelope only.
+
+5. **§4 mislabels Copilot's model B.** Copilot's model B is a photon that is short along its travel and whose own collective eigenmode gives a narrow response. The split in §4 has the atom's orbital cohort ring for about τ, which lays down a photon millions of cycles long. That is Copilot's model A (a long phase-locked train) produced by a ringing source. The fragment has also moved the eigenmode: in Copilot's text it belongs to the photon's DP-arc cohorts; the split gives it to the emitting cohort (central CP plus DP cloud). His message does not say which of the two he means.
+   **Fix:** replace "This is Copilot's model B with the drop as its envelope" with: "Here the eigenmode belongs to the emitting cohort, and its ringing lays down a long train (Copilot's model A). Copilot's model B, a short photon whose own eigenmode is narrow, is a different picture; whether CPP allows it is the open question 4468(a) and 4469 §6. Which cohort's eigenmode he means is not settled, and the reassignment is Claude's (marked)." Add this to the PD-008 "Marked" list. Re-word §6(f)'s "4469 §6's question answered in part (the eigenmode route, many cycles)" to "4469 §6 left open; the split answers it only on the reading where the photon is long".
+
+6. **§3 horn 1 pre-judges model B.** "That fails the line width, whatever eigenmode is added" rules out, without argument, the very case Copilot named as the alternative (a short object with a narrow eigenmode response).
+   **Fix:** "That fails the line width for an ordinary wave of one cycle. A one-cycle photon with a narrow line would need Copilot's model B, a short object whose own response is narrow; it would have to behave unlike measured single photons (4469 §4), and that is the open question 4468(a) and 4469 §6."
+
+7. **§4 changes two things he said, not one.** Besides moving the drop time from setting the colour to setting the narrowness, the fragment replaces his mechanism (faster drop, higher-velocity cohort, more DP-arc polarization, higher frequency) with "a larger energy difference makes a stiffer, faster mode". "Stiffness" is Claude's word and Claude's mechanism.
+   **Fix:** in §4 write "it changes two things he said: the drop time sets the narrowness, not the colour; and his velocity-and-polarization link becomes a stiffness of the mode (Claude's word, not his)". Add both to PD-008 "Marked".
+
+8. **His "many waves hitting the grating, each carrying their own contribution to the total energy" is not given a position.** The founders_voice summary records Copilot's warning and its alternative wording, "one extended coherent excitation". The fragment §2 and §6(f) say nothing about it.
+   **Fix:** add a §2 bullet stating whether Claude agrees, which it should: "many waves, each with part of the energy" suggests many sub-photons; one extended excitation absorbed as one quantum fits single-click detection (4462 §2, 4466 §2). Add a disposition to §6(f).
+
+9. **§5 question: neutral in form, but it offers only Claude's reading.** The preamble's 21 cm sentence is slanted (see change 2), and the first option is Claude's split with "or some other way" as the only alternative.
+   **Fix:** drop the 21 cm clause from the preamble or reword it as in change 2. Add his reading as an explicit option: "…Or does the speed of the drop set the colour, and if so, what makes the drops from 3s, 3p and 3d, of very different lengths, give the same red? Or something else?" Keep it in physical-picture terms.
+
+10. **PD-008: mark the convenient interpretation.** Reading "corresponds to" as an equality is the convenient branch, because equalities are easy to refute. Add it to "Marked", with the note that the monotone reading is tested by change 1 and partly supported by the trend in change 2.
+
+11. **§6 completeness against the 4469 todolist entry.** 4469's (a) and (b) are carried in (d), and nothing is dropped outright, but carried wording is shortened.
+    **Fix:**
+    - Restore the parentheticals for 4468(c) ("when one photon of a single, definite energy but only one or a few crests long reaches a grating, does it go to one sharp angle or spread over a range, and what in the photon decides which").
+    - Restore the parentheticals for 4468(d) ("right that a line is many photons and a gas's width mostly a spread of their energies, from motion; not right that a spread of jump energies makes up the natural width, nor that this replaces long photons; 4467(e) dispositions stand, including the 4466 erratum added in 4467").
+    - Restore the parentheticals for 4468(e) ("whether in CPP independent atoms' photons have random relative phases; used by the grating and fringe arguments").
+    - Write 4469(b) in full and mark it "open".
+    - Add an explicit "4469(c) dispositions stand, with §3 re-read in Copilot's order", since 4469 §3 is being amended.
+    - Add new owed items:
+      - (g) the third reading of change 1, and the line-width-versus-lifetime evidence it rests on (natural widths following lifetimes; Hα component widths), tied to 4467(d);
+      - (h) CPP's account of the decay-rate trend with frequency (rate ∝ f³ d² in standard physics), under 4465(a);
+      - (i) which cohort carries the eigenmode, emitting or photon (change 5).
+
+12. **§2: state the 4469 §3 correction accurately.** 4469 §3 already ends with Copilot's order ("The same thing in the language of 4467: a wave of N crests has a spread of colours about 0.9 ÷ N; the grating sends each colour to its own angle"). Copilot's critique was aimed at the pasted chat reply, which gave only the groove story. 4470 also partly disagrees with Copilot: it says the two stories are the same fact, where Copilot said "those aren't quite the same claim". The fragment's position is right, but it should not be filed as simple agreement.
+    **Fix:** "Its order is clearer than the groove-by-groove story that leads 4469 §3 and the 4469 chat reply (4469 §3 states Copilot's order only in its closing paragraph). Claude differs on one point: Copilot says the two are not quite the same claim; for a linear grating they are the same fact seen from the light and from the grating, but the narrowness belongs to the light. 4469 §3 and §8 are better led in Copilot's order." Also change §2's opening "agrees with its main points" to "agrees with its main points, with one difference (below)".
+
+13. **§7 plain language.**
+    - "The eigenmode half works" should become "The eigenmode half can work, if CPP can show it".
+    - Add the fine-structure qualifier ("the same colour to within a few parts in a hundred thousand").
+    - Add one sentence conceding the trend: "Across different lines, faster drops do tend to go with higher colours, as he says, but a drop's time isn't what fixes the colour: the same red comes from drops thirtyfold apart."
+    - Change "the drop's duration is how long it rings, which sets how sharp the line is" to "…which helps set how sharp the line is (the lower level's lifetime counts too)".
+
+## What the todolist entry must contain
+
+- Header in the house format: "**4470 — founder (with an attached Copilot analysis): his orbital cohort includes the central CP and its polarized DP cloud; postulate: the shell-drop time corresponds to the frequency, with a collective eigenmode giving a narrow line (critic ACCEPT WITH CHANGES, N of 13 taken in; nothing registered):**"
+- The three file paths: founders_voice, axiom_maturation, code.
+- Gains: Copilot's causal order adopted, with the one difference; transverse multiplicity is not longitudinal cycles; energy is not yet frequency; the drop time is not the colour under all three readings, with the frequency-cubed trend conceded and fine structure noted; the split (eigenmode rate = colour; ringing time plus the lower level's lifetime = width), marked as Claude's reading and as convenient, with the model A/B correction.
+- **Owed**, written out in full and not by label only:
+  - (a) eigenmode in CPP terms (Copilot's six items; = 4461 a, 4464 a);
+  - (b) energy and frequency linked by h (4456);
+  - (c) what in CPP adds longitudinal cycles;
+  - (d) the full carried 4469 list, with 4468(c), (d) and (e) and 4469(b) worded in full, and 4469(c) "dispositions stand, §3 re-read";
+  - (e) founder question 4470 §5, quoted;
+  - (f) dispositions, including the "many waves each carrying part of the energy" disposition;
+  - (g) the third reading and the line-width-versus-lifetime evidence (with 4467(d));
+  - (h) CPP's account of the decay-rate trend with frequency (under 4465(a));
+  - (i) which cohort carries the eigenmode.
+- "Nothing registered."
+
+## Optional notes
+
+- "Long-shell drop" may mean an outer-shell or spatially longer drop, not only a long-lasting one. In hydrogen, n = 3→2 spans 5 Bohr radii against 3 for 2→1, and outer orbital speeds are lower (v ∝ 1/n), so his "long and slow, low energy" fits the spatial sense too. Consider recording the ambiguity in §1 or §5.
+- In the attachment he includes the "spin DP" in the energy-carrying set; his message's new aspect does not. Consider noting it in the disposition.
+- The 21 cm "some 10²³ cycles" is the formal emission envelope. In the interstellar medium, collisions and Doppler broadening dominate and the natural width is unobservable. Say "formally" in §4.
+- The founders_voice summary could add two of Copilot's points that are fair to him: a short-but-sharp CPP photon "would not automatically make CPP wrong"; and its praise of 4469's "lower bound" correction.
+- Nothing in the fragment uses textbook facts as evidence for CPP, and §8 correctly claims no novelty.
+
+---
+
+## Claude's response to the 4470 return (not part of the verbatim report)
+
+All thirteen required changes taken in: (1) a third reading (a fixed number of periods) added, tested against the Balmer-α routes' computed natural widths and single-emitter photon lengths; the lead quotes 'corresponds to'; (2) the frequency-cubed trend conceded as consistent with his monotone link, 'does not set' replacing 'does not track', the 21 cm line used only against the reciprocal reading; (3) the fine-structure qualifier added (~2 parts in 10⁵); (4) the script computes natural widths from both levels (3p route ~3e7 Hz; 3s and 3d ~1e8 Hz), §4 says both levels and that cycle counts are the upper envelope only; (5) the split identified as Copilot's model A with the eigenmode moved to the emitting cohort, marked; 4469 §6 left open; (6) reading 1 no longer prejudges model B; (7) both changes to what he said named, 'stiffer' marked as Claude's word; (8) 'one extended excitation, not many energy-carrying waves' adopted, with a disposition; (9) the question now offers his reading explicitly; (10) the equality reading marked as convenient; (11) carried wording restored in full and new items (g)–(i) added; (12) the grating ordering stated with the one difference from Copilot; (13) §7 follows. Optional notes taken: the spatial sense of 'long-shell drop'; the spin DP in the disposition; 'formally' for the 21 cm cycle count; two Copilot points fair to him added to the founder file's summary. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
