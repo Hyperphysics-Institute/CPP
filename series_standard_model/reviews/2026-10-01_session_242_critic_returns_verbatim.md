@@ -6921,3 +6921,98 @@ A "**4472 — …**" entry under the 4471 entry, in the same format, containing:
 
 All eleven required changes taken in: (1) the two-way choice replaced by four options (crawl; wait at each stage; cycle; quick trigger then each section rings on), marked as Claude's, title retitled; (2) light speed stated as the upper bound, the CP at V_i; crossing at c/137 (0.1–0.3 period) added; the cycle branch's front speed (1.5–4.6 × 10⁶ m/s, c/193 to c/64 in the script) stated; (3) the 'correction' removed: the pieces are shares by his own wording; readings (i)–(iii) given, with the h ÷ N per period against ħ-per-increment tension; title tail changed; (4) his ħ recollection identified as his 4320 ruling, restated at 4325; the 4457 floor cited to its founder file; (5) the Brusselator described precisely (self-oscillation above threshold; below, generic damped ringing; ringing range; simulated near-threshold count ~18 against linear 16; B within ~8 × 10⁻⁸ for 3.9 million cycles; the rate–ΔE link marked as Claude's, owed; 'fits one part'); (6) hedges and elided words restored; (7) 'transformation cell', the collision trigger and local-depletion emissions treated and owed; the change of cascade unit recorded; (8) the question rewritten as suggested; (9) bold labels fixed; new items lettered; (10) tentativeness kept; (11) §8 and §9 brought into line. Optional notes taken: the LaViolette description and references owed for verification, 'his friend' kept; the qualifier credited as implicit in PRED-Q-1 / PROP-6; 'computed Doppler bound for a hot discharge'; script adds dx = 1.0, a simulated near-threshold run, the cycle-branch speed and the crossing at c/137. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4473 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+Checked: the founder's message against the fragment's quotes; the script, which I ran and whose output matches the §3 table; the §7(d) carry against 4472 §7 (a)–(l), compared by script after whitespace was normalised and the labels mapped as "- **(x) " to "- 4472(x) **", and it is an **exact match**; the registry (450 lines); and 4446, 4451 §3, 4460 §5, 4461 §3–4 and 4472 §3, §5 and §7.
+
+The core arithmetic is sound:
+- The p = 0 width of 8.3 × 10⁻⁵ matches 1/(2πN).
+- 3.9 × 10⁶ cycles × 2π gives about 4 × 10⁻⁸, which is the Lyman-α Q⁻¹.
+- For T ∝ E^(−p), the period changes by a fraction of about p per e-fold, so "per e-fold" is the right measure.
+
+The faults are a sign assumption that the record itself contradicts, a mis-statement of standard physics, a quotation the founder never wrote, dropped hedges, a mis-stated CP motion rule, and an over-broad "the registry lacks the rules" claim.
+
+## Required changes
+
+1. **The sign of the drift is assumed, and the record cited contradicts it (§3, §6, §8, §9).** "A realignment driven by weaker forces would normally take longer" is an assumption. The cited Coulomb case goes the other way: 4460 §5 has the draining swing's rate *rise* eightfold, and 4451 §3 says "A swing through the nucleus speeds up as it shrinks". A force can weaken because displacements shrink while stiffness stays fixed, which is the harmonic case, with no change. Only the *change* matters, not its direction. The fix:
+   - **§3:** replace "As the cloud empties, those forces weaken, and a realignment driven by weaker forces would normally take longer. If it does, the rate drifts down" with: "As the cloud empties, those forces change (Claude reads them as weakening; his text says only 'change'), and a realignment driven by changing forces would generally change its time, longer or shorter: the Coulomb-timed swing of 4460 §5 speeds up as it drains. If it changes, the rate drifts".
+   - **Table lead-in:** change "grow as the energy left falls" to "depend on the energy left".
+   - **Tolerance sentence:** write |p| for p, and add: "(the toy runs p > 0; p < 0 smears alike)".
+   - **§9 "Not softened":** replace "would normally lengthen" with "would generally change its time".
+   - **§8:** replace "so you'd normally expect each realignment to take a little longer than the last. If it does" with "so you'd generally expect each realignment to take a slightly different time from the last, longer or shorter. If it does".
+
+2. **Standard physics is mis-stated (§3).** "In standard physics the same requirement is met because the atom's swing is harmonic … (4451's 'mass on a spring', 4461 §4)" is wrong on two counts. The mass on a spring is an analogue (4451 §3), and 4461 §4 is *Claude's candidate within his postulate*, not standard physics. The record's standard-physics statement is 4460 §5. Replace the sentence with: "In standard physics the requirement is met because the atom's charge cloud, caught between two states, oscillates at exactly ΔE/h however much of each state it holds; the mixture sets the strength, not the rate (4460 §5; a fact for CPP to match, not evidence for CPP). The mechanical analogue is a mass on a spring, whose period does not depend on how far it swings (4451 §3; Claude's harmonic candidate, 4461 §4)."
+
+3. **A quotation the founder never wrote, and an overstated title.**
+   - The title's "It Picks 'Each Discharge Makes the Next Possible', a Self-Timed Cascade" puts in quotation marks words that appear neither in his message nor in 4472. "Picks" also overstates what §2 says ("closest to").
+   - Replace that title clause with: "On Claude's Reading It Is Closest to 4472's 'Wait at Each Stage', Made Self-Timing, With a Share Each Cycle as in 'Cycle'".
+   - §2 also places the postulate unfairly. His own words are "on each cycle of discharge", and each increment is one wave of the colour. That is the share-per-round content of 4472's "cycle" option (whose round is spatial, while his realignment happens in place), and the realignment wait is the "wait at each stage" content.
+   - In §2, after "made self-timing: …", add: "It also has the content of 'cycle': in his words, 'on each cycle of discharge' a portion leaves, one wave per cycle, though his cycle is a realignment in place rather than a front going round. 4472 marked the cycle branch as the convenient one."
+   - Add the same point as a §9 "Marked" bullet.
+
+4. **The founder's hedges were dropped, and one quote is truncated (§1).**
+   - Restore "it appears". Change the fifth sub-bullet's opening to: "'Thus, it appears that, on each cycle of discharge of DP-arcs, a portion of the cohort of DP-arcs in the orbital cloud will be in the orientation to allow them to discharge';".
+   - Restore his "Postulate:" label. The fourth sub-bullet should begin "(his 'Postulate:') given the arcs' varied orientations and positions …".
+   - In the second sub-bullet, complete the quote: "…apart/charged/oscillating with their arc-separation distance".
+
+5. **The realignment time must also *equal* h/ΔE, not only stay fixed (§3, §7 a).** In his picture each increment is one wave ("repeated increments of the same … duration, resulting in the repeated waves of the same color"). So the realignment time is the optical period, about 4 × 10⁻¹⁶ s for Lyman-α. It must be the same in every atom and tied to the energy gap, not just constant within one emission.
+   - At the end of §3, add: "And since each increment is one wave, the realignment time is the period itself: it must also equal h ÷ ΔE, the same in every atom, so the cloud's own dynamics must set it from the energy gap (= 4472 a, 4470 b)."
+   - Extend §7(a) to read: "…to about 4 × 10⁻⁸ per e-fold for Lyman-α, and equal to h ÷ ΔE (= 4472 a; 4470 a, b)."
+
+6. **The CP motion rule is wrong (§5).** "(its inertia, or the CPP rule that replaces it, one GP per Moment)" contradicts the registry. R-CP-NO-REST-MASS reads: "Each Moment a CP advances by its SSV_net (V_i), at most one PSR and not at c", with inertia as the reaction of its DP-arcs. "One GP" is the 4457 floor on displacement, not the motion rule. Replace the parenthesis with: "(its inertia, which in CPP is the reaction of the DP-arcs a CP's motion organises, each CP advancing by its SSV_net (V_i) each Moment: R-CP-NO-REST-MASS; with the 4404 tension noted there)".
+
+7. **The claim that the registry lacks the rules is too broad, and the handover is unmarked (§5, §6, §8, §9).**
+   - What the registry has, at the CP level:
+     - the relay (A3′/AP-3/AP-4, 4355);
+     - the CP motion rule (R-CP-NO-REST-MASS: advance by SSV_net each Moment; inertia from DP-arc reaction);
+     - an orientation rule (R-DPSEA-UNIFORM: "DPs orient toward an unpaired CP (opposite charge inward, like charge outward)").
+   - In CPP's own terms, then, DP motion is in principle specified by registered rules. The search confirms that no rule exists at the arc level: no arc–arc force law, no arc turning rule, no discharge rule, no radiation rule. But these would be *derived* (coarse-grained) quantities, not missing axioms. A Planck-scale CP-level simulation of an atom is out of reach in practice.
+   - Replace "The registry has the relay (AP-3/AP-4, 4355) and the statics, but not, as far as Claude can find, these dynamical rules at this level" with: "The registry has the CP-level rules: the relay (A3′/AP-4, 4355), the CP's advance by its SSV_net each Moment with inertia from its DP-arcs (R-CP-NO-REST-MASS), and DP orientation toward an unpaired CP (R-DPSEA-UNIFORM). It has no arc-level rules (the force between arcs, their turning, discharge, radiation); these would have to be derived from the CP-level rules, since a simulation at the Planck scale of a whole atom is out of reach."
+   - Restate the PD-006 decision as: "the first deliverable is the arc-level rule set, derived by Claude from the registered rules; the founder's physical picture of how one arc pushes another is asked as a check on that derivation (§6)".
+   - Add a §9 "Marked" bullet: "Asking the founder for the arc–arc force is the convenient handover; Claude owes the derivation from the registered rules (§7 c)."
+   - Amend §7(c) to begin: "**(c) The rule set for a simulation, derived from the registered CP-level rules (A3′/AP-4, R-CP-NO-REST-MASS, R-DPSEA-UNIFORM):** …".
+   - In §8, replace "Those aren't in the record yet" with "The record has the rules for single points but not for whole arcs; I'll work those out from the point rules first".
+
+8. **The §6 question leads the answer.** "Rather than longer as the cloud empties" puts in the answer that change 1 corrects. The closed list in the second half also narrows it. Replace with: "**After a portion of the arcs discharges, the forces on the rest have changed. In his picture, why would they take the same time to turn into line for the next discharge, rather than a time that changes as the cloud empties? And how does one DP arc push on another: how does the push depend on how close they are and how they are lined up?**" Two questions are fine here; both are physical pictures.
+
+9. **The §4 "same energy" disposition must be squared with 4472 §5.** 4472 §5 recorded his pieces as "each identical piece is a share, hf ÷ N" without flagging the conflict with exponential fading. Identical increments have been his standing view since 4471 and 4472 ("every piece of the decay products formed an identical E=hf increment"). "Same energy" may also be his way of saying "same colour".
+   - At the end of §4, add: "This refines 4472 §5: hf ÷ N is the *average* share; under exponential fading the early shares are larger and the late ones smaller. 'The same energy' may also be his way of saying the same colour (E = hf per increment), which is 4472(h)'s open question, not a claim about size; on that reading nothing here contradicts him."
+   - Amend the §7(f) disposition to: "'The same energy' per increment, read as equal size, not adopted (§4); read as the same colour, open under 4472(h)."
+
+10. **The script's docstring promises output it does not produce.** It says "Also: the energy per increment -- fixed increments … versus a share of what is left (exponential), cf. 4461 3.2." No code computes this. Either delete that line, or add the computation: a flat envelope stopping at N cycles against an exponential one, printing the largest side lobe, which should reproduce 4451's ~0.047.
+
+11. **§8 analogy.** "The way a pendulum's swing time hardly depends on how far it swings" is weak at the required four parts in 10⁸: a pendulum's period changes by about θ²/16, roughly 1% at 23°. The record's analogue is the mass on a spring. Replace it with "the way a mass on a spring keeps the same period as its swing dies away". The phrase "falls by about two-thirds" for an e-fold (to 37%) is acceptable.
+
+## Optional notes
+
+- **§3 tolerance wording.** At p ≈ 1/(2πN) the toy line is already about twice the natural width (p = 10⁻⁴ ≈ 1.26/(2πN) gives 1.9 × 10⁻⁴). Consider "p of order 4 × 10⁻⁸ or less (at that value the line is already roughly doubled)". §9 already marks that the scale (about 1 ÷ cycles) is general but the detail depends on the model; that is fine.
+- **Phase coherence.** His arcs discharge "an amount from zero to full DP-arc" from varied positions. For their contributions to add as one wave, they must be in phase across the cloud. A one-line pointer to 4471(g) and 4472(g) (in step, without gaps) in §5 or §7(a) would close this.
+- **Rogue-wave citation.** The citation to 4446 is correct (his "rogue wave of DI-bit superposition", 4446 §5). 4446 §5 also owes two tests on the trigger: it must not knock ground-state atoms upward, and it must be shaped by the surroundings. These ride on 4472(f) and need not be repeated.
+- **Textbook facts.** These are not used as evidence for CPP, apart from the §3 mis-statement fixed above. §9's "Not claimed" is adequate.
+- **Sequencing.** Under PD-006, putting the rule set before the simulation is appropriate, once reframed as in change 7.
+
+## What the todolist entry must contain
+
+The entry line begins "**4473 — " and contains:
+- **Summary:** "founder: realignment-discharge postulate (rogue wave knocks the central CP out of resonance; arcs collapse; disturbance at c; on each cycle the aligned portion discharges; changed forces realign the rest; increments of the same energy and duration); asks for an FEM-type simulation".
+- **Status:** the critic's verdict and how many required changes were taken in; "nothing registered".
+- **Files:** `founders_voice/4473_realignment_discharge_simulation.md`, `series_standard_model/axiom_maturation/4473_a_realignment_clock.md`, `code/4473_realignment_clock.py`.
+- **Gains:**
+  - 4472 §6 answered;
+  - the realignment time must be fixed to about 4 × 10⁻⁸ per e-fold (toy |p| < 1/(2πN)), and equal to h ÷ ΔE;
+  - drift of either sign smears the line (4460 §5);
+  - shares, not equal increments, refining 4472 §5's hf ÷ N as an average;
+  - the simulation is possible in principle, with the arc-level rules to be derived from the CP-level rules first (PD-006);
+  - the convenient branches as marked.
+- **Owed:** **(a)–(f) exactly as in the final §7**, with (d) carrying 4472(a)–(l) word for word with the bold labels intact, and (e) "Founder question 4473 §6". Then run `code/deferral_gate.py`.
+
+---
+
+## Claude's response to the 4473 return (not part of the verbatim report)
+
+All eleven required changes taken in: (1) the drift's sign no longer assumed: the forces 'change' (Claude reads weakening), the time changes either way, the 4460 §5 Coulomb swing speeding up cited; table lead-in, |p|, a p < 0 row, §8 and §9 brought into line; (2) the standard-physics sentence replaced with 4460 §5's two-state statement, the mass on a spring marked as analogue (4451 §3) and 4461 §4 as Claude's candidate; (3) the invented quotation removed from the title, now 'closest to wait at each stage, made self-timing, with a share each cycle as in cycle'; §2 adds the cycle content, marked convenient in §9; (4) 'Thus, it appears that', 'Postulate:' and 'with their arc-separation distance' restored; (5) the realignment time must equal h ÷ ΔE, added to §3 and §7(a); (6) the CP motion rule corrected to R-CP-NO-REST-MASS; (7) the registry's CP-level rules (A3′/AP-4, R-CP-NO-REST-MASS, R-DPSEA-UNIFORM) stated; arc-level rules to be derived by Claude, the founder's picture asked as a check; §7(c), §8 and §9 amended, the handover marked convenient; (8) the §6 question rewritten as suggested; (9) §4 refines 4472 §5's hf ÷ N as the average share, with the same-colour reading open under 4472(h); §7(f) amended; (10) the script now computes the flat-versus-exponential comparison: largest side lobe 0.047 (flat) against a numerical floor of 1 × 10⁻⁵ (exponential); (11) the pendulum replaced with a mass on a spring. Optional notes taken: tolerance worded 'of order 4 × 10⁻⁸ or less (at that value the line is already roughly doubled)'; phase-coherence pointer to 4471(g), 4472(g) added in §5 and §7(a). The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
