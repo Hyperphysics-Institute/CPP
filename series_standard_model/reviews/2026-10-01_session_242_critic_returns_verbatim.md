@@ -6682,3 +6682,118 @@ I ran the script (`series_standard_model/code/4470_drop_time_and_colour.py`). It
 
 All thirteen required changes taken in: (1) a third reading (a fixed number of periods) added, tested against the Balmer-α routes' computed natural widths and single-emitter photon lengths; the lead quotes 'corresponds to'; (2) the frequency-cubed trend conceded as consistent with his monotone link, 'does not set' replacing 'does not track', the 21 cm line used only against the reciprocal reading; (3) the fine-structure qualifier added (~2 parts in 10⁵); (4) the script computes natural widths from both levels (3p route ~3e7 Hz; 3s and 3d ~1e8 Hz), §4 says both levels and that cycle counts are the upper envelope only; (5) the split identified as Copilot's model A with the eigenmode moved to the emitting cohort, marked; 4469 §6 left open; (6) reading 1 no longer prejudges model B; (7) both changes to what he said named, 'stiffer' marked as Claude's word; (8) 'one extended excitation, not many energy-carrying waves' adopted, with a disposition; (9) the question now offers his reading explicitly; (10) the equality reading marked as convenient; (11) carried wording restored in full and new items (g)–(i) added; (12) the grating ordering stated with the one difference from Copilot; (13) §7 follows. Optional notes taken: the spatial sense of 'long-shell drop'; the spin DP in the disposition; 'formally' for the 21 cm cycle count; two Copilot points fair to him added to the founder file's summary. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4471 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+Checked: the founder file, the 4471 fragment, the script (I ran it: (a) 0.291, (b) 0.291, (c) 0.278, (d) 0.0050 against the printed 0.0059, (e) 0.0055), 4470 in full, the cited sections of 4464, 4466, 4467, 4468, 4469, 4443 and 4444, and the 4470 todolist entry (todolist.md:2626). I also ran an independent check of my own (`python3 -I /tmp/chk4471.py`, outside the repo). The direction of the patch is sound: side by side gives one short pulse, random moments stay broad, and only a long in-step sequence is narrow. But it has one physics error in the sequence condition, a binning artefact in the table, an overstated "agreed" on the solid datum, a likely misreading of "single large potential difference", and the carried list in §6 is shortened throughout.
+
+## Required changes
+
+1. **The condition "a whole number of cycles behind" is wrong (§3, §4, §5, §7).** In-step wavelets spaced D periods apart give a comb of lines at the carrier ± k/D, each line inside one wavelet's broad envelope. The result is a single line only if the wavelets leave no gaps: spacing no longer than one wavelet (about one wavelet-length or less). I checked with 3-cycle wavelets: spacing 1 or 3 periods gives one line at 1.0; spacing 4 gives lines at 1.0 and 1.25; spacing 5 gives 0.8, 1.0 and 1.2; spacing 6 gives 0.83, 1.0 and 1.17. Spacing 3 works only because the side lines fall on the zeros of a 3-cycle wavelet's spectrum. 4468 §3 already says this ("the overall spread stays as wide as one packet's").
+   - Fix in §3, third bullet: "One after another, in step, and with no gaps (each starting no later than the previous one ends; in the script, exactly one wavelet-length, three cycles, later), they join into one long wave of fifty times three crests, and the line narrows to about 0.9 ÷ (number of crests). If gaps are left between in-step wavelets, the light splits into several lines spaced 1 ÷ (spacing) apart within one wavelet's broad spread (4468 §3)."
+   - Fix in §4, first bullet: replace "each a whole number of periods behind the last" with "each in step with the last and with no gap between them".
+   - Fix in §5: see change 8.
+   - Fix in §7: replace "each exactly a whole number of cycles behind the last, in step" with "in step and with no gaps between them".
+   - Add a part (f) to the script showing the comb at spacings of 4 and 5 periods.
+
+2. **The table's (d) value is a binning artefact.** With T = 2000 periods the frequency bins are 0.0005 apart, so the half-power width of the 150-crest train reads 0.0050. Zero-padded (8×), it is 0.0059, which matches 0.886/150.
+   - Fix the script: compute the widths on a zero-padded FFT (`np.fft.rfft(E, n=8*t.size)` with the matching `rfftfreq`), or refine the edges by interpolation.
+   - Fix the fragment table: "0.006 (a long train; 0.9 ÷ 150)".
+   - Fix (e) the same way.
+   - The (e) line prints "(and a broad pedestal)" without computing it. Compute and print the share of power in the narrow core. I get about 0.73 at a 0.1-period jitter, near exp(−(2π·0.1)²) = 0.67, and about 0.25 at 0.25 period. Add to §3: "at a quarter-cycle wander, only about a quarter of the light is left in the narrow line".
+
+3. **"The solid datum: agreed" passes over a physics point that bears on his "total energy cohort" (§2, §8, §7).** For matter the wavelength follows momentum, not total energy content. An electron at rest has the full rest energy and no finite de Broglie wavelength, and two particles of equal energy content but different speeds have different wavelengths. For a photon, E = pc, so the two coincide. Fix by adding to §2, after the de Broglie sentence: "One difference matters for his unifying cause: for a particle it is the momentum, not the total energy content, that sets the wavelength; a particle at rest carries its whole energy but has no finite wavelength. For a photon the two coincide (E = pc). So in CPP it must be the part of the DP-arc cohort that goes with motion, not the whole cohort, that sets the crest spacing (= 4443 c, PROP-6)." Then:
+   - change §8 "Agreed" to "Agreed, with the momentum-not-energy qualifier";
+   - add one plain sentence to §7;
+   - add a §6 item (change 9).
+
+4. **The matter-wave evidence is cited too broadly (§2).**
+   - "Electrons, neutrons, atoms and large molecules make fringes, one at a time … (4443, 4444)": 4443 and 4444 cover electrons built up one dot at a time (Tonomura 1989), the neutron interferometer and atom interferometry (Kovachy 2015). They do not cover large molecules (4444 cites Grisenti 1999 for van der Waals effects on atoms and molecules, not for large-molecule fringes). Fix by adding "large molecules (C₆₀, Arndt et al. 1999; molecules above 25,000 u, Fein et al. 2019)" as external citations.
+   - "One at a time" is literal for electrons. For the others it means beams dilute enough that each particle interferes only with itself. Fix by saying so in a parenthesis.
+   - In §7, "at exactly that wavelength" becomes "at that wavelength".
+
+5. **Possible misreading of "single large potential difference" (§1 parenthesis, §4 first bullet, §7 third paragraph).** His sentence is about the energy structure ("between upper and lower energy orbitals", with the cohort as the carrier). It most naturally reads as one energy gap, as against many small steps, not as one instant. The fragment converts it into "one drop … crossed all at once" and then into "a single all-at-once drop gives a broad line", which reads as a verdict on his view.
+   - Fix §1 to: "(On 4470 §5's question he does not say directly. His 'whose sum corresponds to the wavelength/frequency and hence the total energy' ties the colour to the energy difference, which is the first half of 4470 §5's first option, and he does not return to the drop's speed as the colour. 'A single large potential difference' says one energy gap; whether it is crossed at once or over many cycles he does not say.)"
+   - Fix §4, first bullet, to: "If the single potential difference is crossed all at once (Claude's reading of one possibility), the wavelets come side by side, and the line is broad."
+   - Fix §7: "if the drop happened all at once, the line would be broad".
+   - Add this reading to the §8 Marked list as Claude's.
+
+6. **"The grating does not need many separate waves; it needs one wave with many crests" (§3 last paragraph, §7) contradicts 4468 §2 and 4469 §2 as written.** A visible line is many photons (many waves) built up click by click. What the grating needs is many crests in each photon. Fix in §3: "It also answers his 'needing multiple waves': for sharpness the grating needs, in each photon, one wave with many crests; many photons build up the line's brightness, click by click (4468 §2, 4469 §2), not its sharpness (4469 §3, read in Copilot's order)." Make the matching edit in §7.
+
+7. **"Identical drops define the colour" is conditional and, in §7, ambiguous (§3, §7, §8).**
+   - Same-drop-gives-same-rate holds only if the rate is set by the common energy difference. That link is owed (4470 a, b; 4461 a), and his own wording ties the frequency to the sum. Fix in §3: "If the central CP and each polarized DP drop through the same energy difference, and if the rate is set by that difference (owed: 4470 a, b), each wavelet has the same rate…"
+   - "Defined" means the same centre colour, not a sharp one. In §7, "so the colour is well defined" will read as "sharp", which is the opposite of the point. Fix to "so they all share the same centre colour (though each short wavelet on its own is still smeared)". In §8 say "identical drops give a common centre colour, given the rate–ΔE link".
+   - Keep the parenthesis about each wavelet carrying a share of the energy, not its own E = hf, and add one clause tying it to 4470 §2: "many wavelets in step and without gaps are one extended excitation, absorbed whole (4470 §2), so this does not revive 'many waves each carrying part of the energy' as many quanta."
+
+8. **The §5 question.** It is physical-picture, but it offers only a binary, follows up only the sequence branch (the convenient one), and its "exactly one period" contradicts the script (three periods) and change 1. Fix: "**When the central CP and its polarized DPs each make the same drop, do they drop all at once, one after another, or something else? If one after another, what keeps each in step with the last, and does each follow straight on from the one before, with no gap?**"
+
+9. **§6 does not keep carried wording in full and is missing new items.** Restore 4470(a)–(i) word for word from the 4470 §6 / todolist entry. Specifically:
+   - 4470(a): "its dynamical variable, its equation, its eigenfrequency (= ΔE/h), its ringing time, its grating coupling and its line shape (Copilot's list; = 4461 a, 4464 a)".
+   - 4470(b): "in CPP: why the eigenmode's energy and its rate stand in the ratio h (Copilot's E = hν vs Fourier ν; 4456)".
+   - 4470(c): "Transverse multiplicity vs longitudinal cycles: his central CP plus polarized DP cloud adds width, not cycles; what in CPP adds cycles along the travel".
+   - 4470(d): "Carried from 4469", with "4469(a) its 4468 list, by label:".
+   - 4468(a): restore "(standard: about 0.9 ÷ crests for a flat train, within about 2 for other shapes), and whether a photon can have a definite energy while short".
+   - 4468(c): restore "(when one photon of a single, definite energy but only one or a few crests long reaches a grating, does it go to one sharp angle or spread over a range, and what in the photon decides which)".
+   - 4468(d): restore its full parenthesis.
+   - 4468(e): restore "(whether in CPP independent atoms' photons have random relative phases; used by the grating and fringe arguments)".
+   - 4469(b): restore its full parenthesis.
+   - 4469(c): restore "dispositions stand, with 4469 §3 re-read in Copilot's order".
+   - 4470(f): restore the full dispositions text, not "its dispositions".
+   - 4470(g): "The third reading's evidence: measured natural widths of the Balmer-α components against the computed ones (3 × 10⁷ and 1 × 10⁸ Hz), with 4467(d)".
+   - 4470(h): restore "(rate ∝ frequency³ × dipole² in standard physics)".
+   - 4470(i): restore "the emitting cohort (Claude's split) or the photon's own DP-arc cohorts (Copilot's model B)".
+
+   Add the new items:
+   - (f) momentum, not total energy, sets matter's wavelength: which part of the DP-arc cohort sets h/p (= 4443 c, PROP-6, 4464 d);
+   - (g) the no-gap condition: in his sequence picture, what makes the wavelets follow on without gaps, or else the light splits into several lines;
+   - (h) whether a gapless in-step sequence of wavelets is one excitation absorbed whole (consistency with 4470 §2 and (f));
+   - add "4443 c" to (b)'s cross-reference.
+
+10. **Hedge dropped and a key phrase missing in §1.**
+    - His "It seems that if each…" is quoted from "if each", which loses "It seems that". Fix: start the quote at "It seems that if each of the polarized DPs…".
+    - §3 answers his "needing multiple waves", but §1 never quotes it. Add a bullet: "**The difficulty:** 'The problem is getting an oscillating wave to hit the grating at a particular angle of incidence to produce a specific angle of refraction (which corresponds to a wavelength), and needing multiple waves to produce that effect.'" Optionally note that at a grating it is diffraction, not refraction; he also names refractive materials, so keep any note light.
+
+11. **PD-008 Marked list (§8).** Add:
+    - the "all at once" reading of "single large potential difference" is Claude's (change 5);
+    - the rate-set-by-common-ΔE premise behind "identical drops give a common colour" is the convenient branch and is owed (change 7);
+    - "Not claimed: novelty for the frequency comb of a gapped pulse train".
+    - In §2, "That task is exactly his: to derive h" goes beyond what he wrote, which was to show a causal relationship producing the wavelength effects. Fix to "His task, in Claude's words: to derive λ = h ÷ p, and with it h, from the DP arcs".
+
+## What the todolist entry must contain
+
+**4471 — founder: the one solid datum (the DP-arc quantum carried by photons and particles produces both wave and particle effects; de Broglie λ from momentum, the photon's from energy); leaning toward a single large potential difference between orbitals; proposal that identical drops by the central CP and each polarized DP give many identical wavelets that make the fine line (critic ACCEPT WITH CHANGES, all N taken in; nothing registered).** The entry should give:
+- **File paths:** the three files.
+- **Gains:**
+  - λ = h/p is common to light and matter, with the qualifier that momentum, not total energy, sets matter's λ;
+  - identical drops give a common centre colour, conditional on the rate–ΔE link;
+  - side by side gives one short pulse with the same width; random moments stay broad; in step and gapless gives one long wave, width about 0.9 ÷ crests; gaps give a comb of several lines; jitter puts power into a pedestal (about 27% at 0.1 period, about 75% at 0.25 period);
+  - the grating needs many crests per photon, while many photons give brightness;
+  - the sequence reading and the all-at-once reading of his "single large potential difference" are both Claude's, with the sequence reading marked convenient.
+- **Owed:**
+  - (a) the wavelets' sequence (founder question) and what sets the spacing (= 4467 §4, 4470 a);
+  - (b) λ = h ÷ p from the DP-arc cohort (= 4464 d, 4470 b, 4443 c, PROP-6);
+  - (c) the 4470 list (a)–(i), carried word for word as in change 9;
+  - (d) founder question 4471 §5;
+  - (e) dispositions, as in §6(e) amended;
+  - (f) momentum vs total energy;
+  - (g) the no-gap condition;
+  - (h) consistency of the wavelet sequence with one extended excitation absorbed whole.
+
+## Optional notes
+
+- (c) is computed fairly: the ensemble-averaged power spectrum is the right quantity for independent emitters at a grating, and 0.278 against 0.291 is residual noise from only 20 realizations. Say "about 0.29 (the single-wavelet spread, within noise)", or raise the realization count.
+- The script's wavelets have flat envelopes with abrupt edges. Smooth (Gaussian) wavelets would make the gap comb even clearer and remove the accidental zeros that make spacing 3 work. Worth one line in §8 Marked.
+- "Of order millions for a free atom's line" (4466 §4) checks: Lyman-α at 2.47 × 10¹⁵ Hz × 1.6 ns ≈ 4 × 10⁶. "At least of order ten thousand" (4467 §2) checks. The other citations check: 4470 §2 and §4, 4468 §3, 4469 §3, 4467 §4, 4464 d.
+- The note that he did not answer 4470 §5 directly is fair, but should credit the partial answer (change 5): his "sum corresponds to the wavelength/frequency" sides with the energy difference setting the colour, and he does not return to the drop's speed.
+- §7 is otherwise plain and unhyped. "It's a good place to stand" is fine.
+- No textbook fact is presented as evidence for CPP: §2 and §8 say "a fact for CPP to match", which is correct.
+
+---
+
+## Claude's response to the 4471 return (not part of the verbatim report)
+
+All eleven required changes taken in: (1) the sequence condition restated as in step with no gaps; script part (f) shows the comb (spacing 4: 1.00 with weak lines at 0.75, 1.25, 1.50; spacing 5: 0.80, 1.00, 1.20; spacing 6: 0.83, 1.00, 1.17); (2) zero-padded FFT: (d) now 0.0059 = 0.9 ÷ 150; the pedestal computed: core share 0.69 at 0.1-period jitter, 0.20 at 0.25 (the fragment says about seven-tenths and about a fifth, from this run; the critic's 0.73 and 0.25 differ within sampling); (3) the momentum-not-energy qualifier added; (4) matter-wave citations narrowed and C₆₀ (Arndt 1999) and Fein 2019 added, 'one at a time' qualified; (5) 'single large potential difference' read as one energy gap, the all-at-once reading marked as Claude's, his partial answer to 4470 §5 credited; (6) many crests per photon for sharpness, many photons for brightness; (7) 'common centre colour', conditional on the rate–ΔE link, tied to 4470 §2; (8) the question offers three options and the no-gap clause; (9) the 4470 list carried word for word (spliced from 4470 §6) and items (f)–(h) added; (10) 'It seems that' restored and 'the difficulty' quoted; (11) §8 marks added, 'his task, in Claude's words'. Optional notes taken: (c) 'about 0.29 (the single-wavelet spread, within noise)', with 60 realizations; the flat-wavelet caveat in §8. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
