@@ -7189,3 +7189,143 @@ Report items: none from memory beyond the standing rules the caller supplied. No
 
 All eleven required changes taken in: (1) the creep branch corrected: a creep-then-discharge cycle is a relaxation oscillator (dripping tap; 4472 'wait at each stage'), condition (i) restated for either way of settling; (2) 'only' removed from the title; (ii) restated as isochronous, linearity sufficient not necessary (cycloidal pendulum, ax² + b/x², precession); (3) the relay paragraph qualified: one body at c, a tenth to a third of a cycle lag at c/137, absorbed by the in-step condition; (4) the radiating coordinates of an arc cloud named as each arc's stretch and turn, the whole-cloud mode radiating nothing for neutral arcs; the inside-arc versus arc–arc terms separated; toy-inertia caveat with R-CP-NO-REST-MASS; (5) the 'energy goes with number' hedge and the non-exact-mode wording restored; (6) his 'all surrounding CPs/DP-arcs' quoted, the 4473 quote attributed, the narrowing marked as Claude's; §7 softened to 'much of the force'; (7) R-DPSEA-UNIFORM applied: the registered hold is the CP's polarising pull, which his 4473 trigger disturbs; the turning-rate dependence on distance and the Thomson one-rate failure of a fixed hold (4461 §4) added; (8) the founder question rewritten as suggested; (9) 'the hold decides' marked convenient; the creep and precession branches marked unworked and owed; (10) §6 (g), (h) added and (f) updated; (11) §7 carries changes 1, 2, 4 and 7 in plain words; the title rewritten to match. Optional notes taken: script docstring corrected (median and highest), dead code removed, the energy-with-number assumption printed; 'numerical precision'; the cubic term described as half the linear pull at a shift of 1; Kohn 1961 cited with Dobson 1994. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4475 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I checked everything listed. The founder text is filed verbatim, and every quote of his in §1 matches it word for word, including his "depolaration" typo. The 4474 §6 carry in §6(e) is exact: I applied the label change and two-space indent with a script and compared line by line, and they are identical. The script runs and agrees with the fragment's numbers. The hydrogen figures are right: revolution rates 8.225e14 and 6.580e15 Hz; binding energy ÷ h 8.225e14 and 3.290e15 Hz; ΔE/h 2.4674e15 Hz; ratios 0.33 and 1.33. Spread 1.9e-6 in his order, peak at 0.69 τ in the hand-over.
+
+The physics of §2–§4 has five problems the fragment does not state:
+- The beat argument is incoherent with his energy bookkeeping.
+- The "to any precision" claim is circular.
+- The "no condition on linearity" claim is false.
+- The well-known failures of semiclassical radiation theory are not mentioned.
+- §3 skips an obvious branch.
+
+Also, the registered QM theorems are not cited, though they bear directly on "rhythm = energy ÷ h". Hedges have been dropped in three places, the "between" reading is overstated, the founder question leads, and §7's heading quotes a question he did not ask this time.
+
+## Required changes
+
+**1. §7 heading misattributes a question (fidelity).** The 4475 founder file has no "What do you think?"; 4470–4474 all have one, 4475 has none. Unless the founder file is incomplete (if so, fix the file, verbatim), replace:
+`## 7. Answer to his "What do you think?"` → `## 7. Reply to his message`
+
+**2. Dropped hedge "somewhat like" (three places).** His fourth bullet reads "This is an issue somewhat like that amount of DP-arc polarization dropping down and being sustained…".
+- §2: replace `which "drop[s] down and [is] sustained".` with `which, in his words, is "somewhat like that amount of DP-arc polarization dropping down and being sustained".`
+- §8 Agreed: replace `the lower share is retained;` with `the lower share is retained (his "somewhat like");`
+- Founder-file title (Claude-written): replace `While a Share of the Polarization Drops Down and Is Sustained` with `While, Somewhat Like It, a Share of the Polarization Drops Down and Is Sustained`. Make the same insertion in the 4475 fragment title: `the Lower Orbital's Share Drops Down and Is Sustained` → `the Lower Orbital's Share, Somewhat Like It, Drops Down and Is Sustained`.
+
+**3. "Between" is overstated, and the bold is unattributed (§3).** One sentence earlier he uses "between" for a *difference* of energies ("The difference in energy between the high-energy orbital … and the low-energy orbital"). The plainest reading is that the give-and-take accounting for the gap is what gets shed, not that two rhythms run together. Replace `His own wording points there: "the sustaining give-and-take … will be shed". (Claude's reading of "between".)` with:
+"His wording allows this: "the sustaining give-and-take of polarization-depolarization **between** the high-energy and low-energy orbitals will be shed" (emphasis Claude's). It does not require it. In the sentence before, "between" marks a difference of energies, and read that way he says only that the difference is shed. Reading "between" as both orbitals' give-and-take running together is Claude's reading, and the convenient one (§8)."
+
+**4. Under-pressed branch in §3: the excess ringing at its *own* energy ÷ h.** §3 rules out only the excess ringing at an *orbital's* rhythm, then concludes "So the shedding must involve both orbitals at once". That does not follow. The excess holds ΔE. If rhythm = energy ÷ h applies to the excess itself, it rings at ΔE/h, the right colour, with no beat, using the same owed rule (4470 b). Its problem is timing: if the rhythm tracks the energy *still held*, it chirps down to zero as the excess drains (the 4460 §5 failure). If it is set once by ΔE, that is E = hf applied to the photon itself, which is 4470 b again. Replace `So the shedding must involve both orbitals at once.` with:
+"So the excess cannot ring at either orbital's rhythm. Two branches remain:
+- (i) the excess rings at its own energy ÷ h, which is ΔE ÷ h. The colour is right, but only if the rhythm is fixed by the energy shed in total, not by what is still held; otherwise it would sweep down as the excess drains (4460 §5). This is 4470 b applied to the photon.
+- (ii) the shedding involves both orbitals at once (§4).
+
+Both rest on 4470 b."
+Add (i) to §6 (new item (h) below) and to §8 Marked.
+
+**5. §3's "a third / four-thirds" depends on the energy zero, and §4 says the zero drops out.** These cannot both stand unqualified. Add after the §3 energy-÷-h bullet:
+"(Energy ÷ h depends on where the energy zero is set. These values take it at ionisation, using binding energies. With rest energy included, each orbital's rhythm is about 1.24 × 10²⁰ Hz, some 5 × 10⁴ times the colour. The revolution rates do not depend on the zero, and they also miss. In §4 only the difference of the energy rhythms matters, so an orbital's absolute rhythm cannot be a radiating rhythm in its own right.)"
+Then add to §4, after the energy-zero bullet:
+"For the same reason, a single orbital's give-and-take must not itself radiate at its own rhythm. His "self-sustaining system of lossless resonance" is the CPP form of that (in standard physics a single state's charge cloud is static). Only the overlap of two orbitals' give-and-take may radiate. The radiating quantity must therefore be quadratic in the two, like a density (|ψ|²), not their sum. Two notes heard in air give no tone at the difference frequency; the beat is only in the loudness. What in the cloud does the squaring is owed (§6 j)."
+Also replace "(as two notes close in pitch give a beat at the difference)" with "(as two notes close in pitch give a loudness that rises and falls at the difference; in the atom the oscillating quantity is the density, which is quadratic)".
+
+**6. Shares as amplitudes vs his energy bookkeeping (§4, §8): the toy contradicts §2.** In his-order toy, a_up(0) = a_low(0) = 1, so the cloud initially holds a full upper share *and* a full lower share. Weighted by energy that is E_up + E_low, not E_up. And as a_up fades to zero with a_low fixed, the energy lost is the whole E_up, not ΔE. In standard physics that state does not exist (a_up² + a_low² = 1). There, a fully excited atom has a_low = 0 and zero oscillating dipole: the "gradual hand-over" is the standard semiclassical case, not his.
+
+To match §2 (retained E_low plus excess ΔE = E_up), the shares would have to be energies: a_low² ∝ E_low and a_up² ∝ ΔE·e^(−t/τ). Then the excess, holding ΔE, oscillates at E_up/h, not ΔE/h. That needs the rule "rhythm = the energy of the orbital's *level* ÷ h, not the energy the share holds". With energy-share weights, the beat's strength (not its rate) depends on the energy zero.
+
+Replace the last bullet of §8 Marked with:
+"- the toy (two shares, fixed rhythms, the upper amplitude's fading e^(−t/2τ) imposed, not derived) is Claude's, not CPP dynamics. It treats the shares as amplitudes, and in his order it is not consistent with §2's bookkeeping: with both shares full at the start, the cloud would hold E_up + E_low, and the fading would remove E_up, not ΔE. Made consistent with §2 (shares as energies: E_low retained, ΔE excess), the excess holds ΔE yet runs at the upper rhythm E_up ÷ h. That requires the rhythm to be set by the orbital's level, not by the energy the share holds, and it makes the beat's strength depend on the energy zero. Which of these his "share" is remains open (§6 i)."
+Add a matching sentence in §4 after "in his order …": "(This order is not available in standard physics, where a state's shares add to one. A fully excited atom there starts with no oscillating charge; see the next paragraph.)"
+
+**7. "No condition on stiffness, linearity", "to any precision", and "the standard-physics mechanism" are overstated (§4).** The rate in the toy is fixed because f_up and f_low are put in fixed. The zero-crossing measurement checks a trig identity (cross = 2 a_up a_low cos 2πΔf t) to numerical precision; it tests nothing more. The physical condition moves; it is not removed. Each orbital's rhythm must not depend on how much of its share remains, and the two give-and-takes must not pull each other's rhythm (in any nonlinear or self-interacting medium, two oscillators sharing a medium pull or lock). That is a linearity condition, to about 4 × 10⁻⁸ per e-fold, the bound set by the natural width and two-photon interference excluding a chirp (4462 §2).
+
+Known history to state: semiclassical (neoclassical) radiation theory, in which the atom's own oscillating charge radiates classically, predicted:
+- that a fully excited atom does not start to radiate;
+- a decay rate depending on the initial mixture, giving a hyperbolic-secant pulse rather than an exponential;
+- a frequency shift that changes with the mixture (a chirp).
+
+Measurement contradicted it (Crisp and Jaynes, Phys. Rev. 179, 1253, 1969; Gibbs, Phys. Rev. Lett. 29, 459, 1972; both to be verified before final citation). In standard physics the exponential fading from the start comes from the atom's coupling to the vacuum field (Wigner–Weisskopf), not from the beat started at full strength.
+
+Replace the paragraph beginning `This meets both timing requirements at once` with:
+"If each orbital's rhythm stays fixed while its share changes, and the two do not pull each other, this meets both timing requirements: "the same duration" (4473 §3, 4474 §3) and equal to h ÷ ΔE (4473 a), the same in every atom. The condition has moved from the arcs' stiffness to the two give-and-takes. Each must keep its rhythm whatever its share, and the two must not shift each other's rhythm, to about 4 × 10⁻⁸ per e-fold for Lyman-α (the chirp bound, 4462 §2). That is a linearity condition. The toy's fixed rate is built in, not derived. The arcs' discharge then supplies the energy; the pace is the beat between the two rhythms. (Claude's reading.)"
+
+Replace the paragraph beginning `This is the standard-physics mechanism` with:
+"For the colour, this is the standard-physics mechanism (4460 §5: the charge cloud of an atom caught between two states oscillates at exactly ΔE ÷ h, however much of each state it holds), read into his picture. It is a fact for CPP to match, not evidence for CPP. For the fading it is not the standard mechanism. Semiclassical theory, where the oscillating cloud itself radiates, predicts that a fully excited atom does not start radiating, that the pulse rises and falls rather than fading from the start, and that the frequency shifts as the mixture changes. Experiment ruled those out (Crisp and Jaynes 1969; Gibbs 1972; to verify). Standard physics gets the exponential from the start from the vacuum field. His order (the lower share full from the drop) would avoid the first two in a different way, but only with the bookkeeping question of §8 answered."
+
+Also, in the his-order bullet, replace "as the measured fading does" with "consistent with the measured rise no slower than the excitation, then fade (4464 c; 4462 §2, 4463 §3, with the caveats there)". In the first §4 bullet, replace "(to the script's precision, 2 × 10⁻⁶)" with "(to the script's numerical precision, 2 × 10⁻⁶ in his order, 7 × 10⁻⁶ in the hand-over; this is an identity for fixed rhythms, not a test)".
+
+**8. Registered QM theorems not cited (the registry search).** The axiom registry has no rule linking an orbital's or a CP's rhythm to its energy. The theorem registry, however, has:
+- THEO-QM-1: iℏ∂ψ/∂t from discrete hopping, so each stationary state's phase turns at E/ħ.
+- THEO-QM-2: |ψ|² identified with the DI-bit number density. This supplies the squaring of change 5.
+
+These are conditional: ħ is input (OPEN-QM-3), and the Born rule is under OPEN-QM-1-REGROUND per theory-overview. Add to §4 after the convenient paragraph:
+"The record already holds a version of this rule for the wavefunction. THEO-QM-1 (Schrödinger from discrete hopping) makes each stationary state's phase turn at its energy ÷ ħ. THEO-QM-2 identifies |ψ|² with the DI-bit density, whose overlap term oscillates at ΔE ÷ h. Both are conditional: ħ is an input (OPEN-QM-3), and the Born identification is being re-grounded (OPEN-QM-1). What is owed is not the rule for ψ but the link: whether his DP-arc give-and-take is that phase and that density. Otherwise 4470 b stands as a separate rule."
+Change §6(b) to: "**(b) Each orbital's rhythm equal to its energy ÷ h,** with the same h for every orbital (= 4470 b); the energy zero drops out; set by the orbital's level, not the energy its share still holds (§8); and the link to THEO-QM-1/-2 (ψ's phase at E ÷ ħ, |ψ|² as DI-bit density; OPEN-QM-1, OPEN-QM-3)."
+
+**9. §2's bookkeeping claim "whatever the details" ignores the CP's kinetic energy.** His first bullet says the arcs' discharge "drives the orbital electron CP's kinetic energy". On dropping n = 2 → 1, the electron's kinetic energy *rises*, by 10.2 eV (from 3.4 to 13.6 eV; virial), while the potential energy falls by 20.4 eV. If the cloud "has the same amount of energy stored" after the drop and the CP is faster, the extra 10.2 eV of motion must come from somewhere. The ΔE result holds only if each orbital's energy counts cloud plus CP motion together. Separately, the bookkeeping fixes the total shed, not that it leaves as one photon (4471 h, 4472 g). Replace the first §2 bullet with:
+"- **The photon's energy is fixed by bookkeeping, if each orbital's energy is the whole: cloud plus the CP's motion.** The cloud holds the upper orbital's energy; the lower orbital keeps its share; what is shed totals the difference, ΔE, whatever the details of the shedding. The pieces need not be tuned to add up (4472 §5, 4473 §4). Two cautions. First, the electron moves faster in the lower orbital (for n = 2 → 1 its motion gains 10.2 eV while the electrical energy falls by 20.4 eV), and he says the arcs' discharge drives that motion. So "the cloud has the same energy after the drop" must leave room for the CP's gain, or the shed amount is not ΔE. Second, the bookkeeping fixes the total, not that it leaves as one photon (4471 h, 4472 g). This is energy conservation, which standard physics also has; it is not evidence for CPP."
+
+**10. Founder question §5 leads.** It proposes Claude's convenient answer as a yes/no and leaves "energy the orbital holds" ambiguous (level vs amount). Replace with:
+"**While the excess is being shed, what is going on in the cloud: does the upper orbital's give-and-take stop when the CP drops, fade away gradually, or keep going at its own pace while the lower one starts? And what sets the pace of an orbital's give-and-take: which orbital it is, how much energy is still in that part of the cloud, or something else? Last, when the electron CP drops and speeds up in the lower orbital, where does its extra motion come from?**"
+
+**11. §7 overstatement.** Replace `That would solve the timing problem of the last few patches in one move.` with:
+"That would move the timing problem of the last few patches onto one question, provided the two rhythms don't pull on each other, and provided the cloud's starting state squares with your energy accounting. Standard physics hit trouble with this kind of picture for the fading, and I've written that down."
+Also replace `it's how standard physics does it` with `it's how standard physics gets the colour (not the fading)`.
+
+**12. §8 Marked: strengthen the convenient branch.** Replace the second Marked bullet with:
+"- the two-rhythm beat is the standard mechanism for the colour (4460 §5) read into his picture. It is convenient: it removes the stiffness and isochrony conditions of 4473–4474 in one move and rests on an owed item (4470 b). It is also a convergence onto Claude's own 4460 §5 statement. It is not the standard account of the fading, and the semiclassical version failed experiment (§4). It rests on a linearity condition (§4) and on a bookkeeping question (Marked, last bullet). The earlier clocks (4473 a, 4474 a, g) are kept open, not discharged. The rival branch, the excess ringing at its own energy ÷ h (§3 (i)), is equally convenient and also rests on 4470 b."
+
+**13. "What stays open" is missing owed items.** Add, before "(f) Founder question 4475 §5" (relabel f→m and g→n, or append after (g)):
+- **(h) The excess's own rhythm:** whether the shed excess rings at its own energy ÷ h (ΔE ÷ h) and, if so, what keeps that rhythm fixed as the excess drains (§3 (i)) rather than sweeping down (4460 §5).
+- **(i) What a "share" is:** amplitude or energy; how the cloud's starting state after the drop squares with E_up = E_low + ΔE; why the excess, holding ΔE, would run at the upper rhythm (§4, §8).
+- **(j) The radiating quantity:** why one orbital's give-and-take alone does not radiate at its own rhythm (his "lossless resonance"), and what in the cloud is quadratic in the two give-and-takes, so that only their overlap radiates, at the difference (§4).
+- **(k) No pulling:** what keeps the two give-and-takes from shifting each other's rhythm as the shares change, to about 4 × 10⁻⁸ per e-fold for Lyman-α (the chirp bound, 4462 §2); and the semiclassical-radiation record (Crisp and Jaynes 1969; Gibbs 1972; to verify): a fully excited atom not starting, the mixture-dependent rate and pulse shape, and the chirp (§4).
+- **(l) The CP's kinetic energy on dropping:** where the electron's added motion in the lower orbital (10.2 eV for n = 2 → 1) comes from, if the cloud keeps the upper energy; and one photon or several from the shed ΔE (= 4471 h, 4472 g) (§2).
+
+Revise (g) Dispositions to add: "the bookkeeping holds if each orbital's energy includes the CP's motion (§2); the two-rhythm reading rests on a linearity condition and on the bookkeeping question (i), and is the standard account of the colour, not of the fading (§4)."
+
+**14. Title (4475 fragment).** It asserts the result without the conditions. Replace `That Meets "the Same Duration" and "Equal to h ÷ ΔE" Without a Stiffness Condition` with `That Meets "the Same Duration" and Equal to h ÷ ΔE If the Two Rhythms Do Not Pull Each Other`. "Equal to h ÷ ΔE" is Claude's 4473 a phrase, not his, so it should not be in quotation marks.
+
+## Optional notes
+- §3: for hydrogen, the n = 2 binding-energy rhythm equals the n = 2 revolution rate (both Ry/4h). This is a coincidence of the Bohr formulas; a parenthetical stops a reader taking it as two independent confirmations.
+- §3 lists the lower orbital's rhythm (four-thirds) as a candidate for the excess "from the orbital it came from". The excess came from the upper orbital, so say why the lower one is listed (the retained share's rhythm).
+- §6(c): the 1.6 ns is the 2p lifetime (1.596 ns); fine as is.
+- The script's docstring could say plainly that part 2 confirms an identity for fixed rhythms. The hand-over's fading is imposed, not self-consistent (in self-consistent semiclassical theory the pulse is hyperbolic-secant-shaped).
+
+## What the todolist entry must contain
+**4475 — Two rhythms, one colour (founder: the driving force is the upper-to-lower orbital energy difference; the upper orbital's energy is stored in its DP-arc cloud in a self-sustaining, lossless give-and-take with the electron CP; not lost at once when the CP loses resonance; after the drop the cloud still holds the upper energy; the difference, no longer sustained, is shed; somewhat like, a share drops down and is sustained by the lower orbital's give-and-take) (critic ACCEPT WITH CHANGES, [n] taken in; nothing registered):** (`founders_voice/4475_stranded_difference_is_shed.md`, `series_standard_model/axiom_maturation/4475_two_rhythms_one_colour.md`, `code/4475_two_rhythms.py`).
+
+Gains:
+- 4474 §5 answered in part.
+- The photon's energy fixed at ΔE by bookkeeping, if each orbital's energy includes the CP's motion (the CP's 10.2 eV gain on n = 2 → 1 owed).
+- The excess at either orbital's rhythm gives the wrong colour (a third or four-thirds of Lyman-α, with the zero at ionisation; revolution rates also miss).
+- Two branches remain, both resting on 4470 b: the excess at its own energy ÷ h, and the two-rhythm beat at exactly ΔE ÷ h.
+- The beat is the standard account of the colour, not of the fading. Semiclassical failures recorded (citations to verify).
+- The beat needs a linearity/no-pulling condition (~4 × 10⁻⁸ per e-fold) and a quadratic radiating quantity.
+- In his order, the toy contradicts the §2 bookkeeping unless shares are energies.
+- THEO-QM-1/-2 cited as the record's version of rhythm = E ÷ ħ for ψ (OPEN-QM-1, OPEN-QM-3); the link to the DP-arc give-and-take is owed.
+- "Between" read as two rhythms is Claude's and convenient; the beat convergence is marked convenient.
+
+**Owed:** every item of §6 word for word, as in the 4474 entry: (a)–(d), the new (h)–(l), (e) the full 4474 carry word for word (4474(a), (b), (c), (g), (h), (d) with its nested 4473/4472/4471/4470/4469 lists, (e), (f)), the founder question 4475 §5 item, and the Dispositions item.
+
+## Status of the checks
+1. Hydrogen numbers correct. "The excess alone rings at the upper orbital's rhythm" is Claude's hypothetical, not his picture; it should be marked so, and it omits the excess-at-its-own-energy branch (changes 3, 4, 5).
+2. The beat is correct linear physics for the colour. "To any precision" is by construction; linearity is required; the semiclassical history is unstated; the amplitudes-vs-energies treatment is incoherent with his bookkeeping in his order (changes 5–8).
+3. The bookkeeping ignores the CP's kinetic energy gain. "Drop first, shed after" is a fair, marked reading of his second bullet (change 9).
+4. Quotes are verbatim, apart from the dropped hedge, the unattributed bold, and the §7 heading (changes 1–3).
+5. The 4474 carry is exact.
+6. The script matches the fragment.
+7. The convenient branch is marked, but it needs strengthening, and the rival branch is under-pressed (changes 4, 12).
+
+Nothing in this review came from memory beyond the standing-rule context the caller supplied. I modified no files.
+
+---
+
+## Claude's response to the 4475 return (not part of the verbatim report)
+
+All fourteen required changes taken in: (1) §7 retitled 'Reply to his message' (he did not ask 'What do you think?' this time); (2) 'somewhat like' restored in §2, §8 and both titles; (3) 'between' marked as allowing, not requiring, the two-rhythm reading, the bold attributed, the reading marked convenient; (4) the excess-at-its-own-energy branch added to §3 as (i), owed as §6(h); (5) the energy-zero dependence of §3's ratios stated (rest energy ~1.24 × 10²⁰ Hz); the radiating quantity must be quadratic, a single orbital's give-and-take not radiating, owed as §6(j); the beat analogy corrected to loudness; (6) the toy's amplitude/energy inconsistency with §2 stated in §4 and §8, owed as §6(i); (7) the timing claim restated as a linearity/no-pulling condition, the toy's fixed rate marked built in; the semiclassical record stated; (8) THEO-QM-1/-2 cited with OPEN-QM-1, OPEN-QM-3; §6(b) revised; (9) the CP's 10.2 eV kinetic gain and the one-photon caveat added to §2, owed as §6(l); (10) the founder question replaced as suggested; (11) §7 overstatement removed; (12) the §8 convenient bullet strengthened; (13) §6 (h)–(l) added and (g) revised; (14) the title made conditional. Citations verified before filing: Crisp and Jaynes, Phys. Rev. 179, 1253 (1969) (semiclassical decay with a small time-dependent frequency shift); Gibbs, Phys. Rev. Lett. 29, 459 (1972) (Rb fluorescence consistent with the quantized field, inconsistent with neoclassical theory); and Gibbs, Phys. Rev. A 8, 456 (1973) (decay curves simple exponentials with times independent of the fraction excited) added; 'to verify' therefore removed. Optional notes taken: the n = 2 coincidence of rates marked; why the lower rhythm is listed stated; the script docstring says part 2 is an identity and the hand-over fading is imposed. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
