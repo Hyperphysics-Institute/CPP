@@ -7016,3 +7016,176 @@ The entry line begins "**4473 — " and contains:
 
 All eleven required changes taken in: (1) the drift's sign no longer assumed: the forces 'change' (Claude reads weakening), the time changes either way, the 4460 §5 Coulomb swing speeding up cited; table lead-in, |p|, a p < 0 row, §8 and §9 brought into line; (2) the standard-physics sentence replaced with 4460 §5's two-state statement, the mass on a spring marked as analogue (4451 §3) and 4461 §4 as Claude's candidate; (3) the invented quotation removed from the title, now 'closest to wait at each stage, made self-timing, with a share each cycle as in cycle'; §2 adds the cycle content, marked convenient in §9; (4) 'Thus, it appears that', 'Postulate:' and 'with their arc-separation distance' restored; (5) the realignment time must equal h ÷ ΔE, added to §3 and §7(a); (6) the CP motion rule corrected to R-CP-NO-REST-MASS; (7) the registry's CP-level rules (A3′/AP-4, R-CP-NO-REST-MASS, R-DPSEA-UNIFORM) stated; arc-level rules to be derived by Claude, the founder's picture asked as a check; §7(c), §8 and §9 amended, the handover marked convenient; (8) the §6 question rewritten as suggested; (9) §4 refines 4472 §5's hf ÷ N as the average share, with the same-colour reading open under 4472(h); §7(f) amended; (10) the script now computes the flat-versus-exponential comparison: largest side lobe 0.047 (flat) against a numerical floor of 1 × 10⁻⁵ (exponential); (11) the pendulum replaced with a mass on a spring. Optional notes taken: tolerance worded 'of order 4 × 10⁻⁸ or less (at that value the line is already roughly doubled)'; phase-coherence pointer to 4471(g), 4472(g) added in §5 and §7(a). The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4474 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+What I checked: I read both 4474 files, 4473 (whole), 4472 §3, 4461 §4 and the registry rows for R-CP-NO-REST-MASS, R-DPSEA-UNIFORM and A3′/AP-4. I ran the script (it took about 2 s, not about 1 min) and compared the 4473 §7 carry by program.
+
+- **The carry is exact.** 4473 §7, with "- **(x) " relabelled to "- 4473(x) **" and indented two spaces, is identical to 4474 §6(d), byte for byte.
+- **The founder quotes in 4474 §1 match the founders_voice file.**
+- **The script output matches every number quoted in the fragment:**
+  - 2π to seven figures in the linear case;
+  - 6.283068 rounds to 6.2831, and 5.366659 to 5.37;
+  - the overdamped run has 0 sign changes;
+  - the centre-of-mass mode changes by 2.7e-11 (the fragment says 3 × 10⁻¹¹);
+  - median 1.5310 → 1.2861 (16%); highest 2.7621 → 2.3165;
+  - the non-harmonic centre-of-mass value shifts by 1.1e-2.
+- **The light-crossing numbers check:**
+  - 10⁻¹⁰ m ÷ c = 3.3 × 10⁻¹⁹ s;
+  - the Lyman-α period is 4.06 × 10⁻¹⁶ s, a ratio of 8 × 10⁻⁴;
+  - at c/137 the crossing takes 4.6 × 10⁻¹⁷ s, about 0.11 period; the 0.3 end comes from 4472's 0.3 nm orbital.
+- **The Dobson citation is correct:** Phys. Rev. Lett. 73, 2244 (1994), the harmonic potential theorem.
+- **The mixed-sign algebra is correct for equal masses:** q_i F_ij/m + q_j F_ji/m = (q_i − q_j) F_ij/m. With unequal inertia it becomes (q_i/m_i − q_j/m_j) F_ij.
+
+The problems are in the physics of §3–§4 and in how far the conclusion reaches.
+
+## Required changes
+
+**1. §3: a creep does not rule out repeated waves in his own picture (physics error).**
+
+In 4473 the wave is the *discharge*: "each realignment makes a new increment of discharge available". The realignment only sets the interval between discharges. A creep into line followed by a discharge is a relaxation oscillator, like a dripping tap. It gives a periodic train of pulses even though the arcs never swing, and this is close to 4472's "wait at each stage" and the near-threshold (Brusselator) option. What a creep changes is what sets the clock: the drag-to-stiffness time plus the time to reach threshold, which in general depends on the size of the step (logarithmically, for an exponential approach). The script's "no sign change" shows only that the arc itself does not ring.
+
+Replace the creep bullet with:
+
+> - **Creep in** (heavily damped, like a door on a closer): it never passes its new resting place, so the arc itself does not ring (script: no sign change). A wave can still come once per realignment if, as in 4473, each realignment brings a new portion into line and that portion discharges: a creep-then-discharge cycle is a relaxation oscillator (like a dripping tap; 4472's "wait at each stage"). Its period is then set by how long the creep takes to bring the next portion to the point of discharge, which depends on the drag, the stiffness and the size of the step, and must itself stay fixed to the same tolerance.
+
+Change the sentence "So his re-equilibration gives …" so that (i) reads:
+
+> **(i) whichever way the arcs settle (a swing that rings, or a creep that sets the interval between discharges), the time it takes must not depend on the size of the discharge;**
+
+**2. §3 and the fragment title: "only under three conditions" is too strong; linearity is sufficient but not necessary.**
+
+Some non-linear restoring forces are also isochronous: the cycloidal (tautochrone) pendulum, and the isotonic potential V = ax² + b/x². Precession about a field is also isochronous at any tilt, with no linear restoring force at all (Larmor precession, rate set by the field, not by the angle). Precession is directly relevant to his "rotate so that a portion … will be inline".
+
+- In the title, replace "Re-Equilibration Can Give "the Same Duration" Only Under Three Conditions" with "Re-Equilibration Gives "the Same Duration" Under Three Conditions".
+- Replace condition (ii) with:
+
+> **(ii) the restoring action must be isochronous over the displacements: a linear force is the simplest case (twice as far, twice the pull); a few non-linear forms, and steady precession about a field, also keep a fixed time;**
+
+- Add after the non-linear bullet:
+
+> (Linearity is sufficient, not necessary: the cycloidal pendulum and the potential ax² + b/x² are exactly isochronous though non-linear, and an arc precessing about a steady field turns at a rate that does not depend on its tilt; Claude's working-out, not claimed as new.)
+
+**3. §3, the relay paragraph overstates.**
+
+At light speed the crossing is under a thousandth of a period, so the cloud can act as one body. At c/137 it is 0.1–0.3 period, which is not negligible: different parts of the cloud would be out of step by that much. Replace "The relay is fast enough for the cloud to settle as one body:" with:
+
+> Whether the cloud can settle as one body depends on the speed of the push:
+
+and append:
+
+> At light speed the cloud acts as one body; at the CP's own speed the far side lags the near side by a tenth to a third of a cycle, which the in-step condition (4471 g, 4472 g) must then absorb.
+
+**4. §4 identifies the wrong radiating motion for a cloud of arcs; it should name stretch and rotation.**
+
+Each arc is a + and a −, so it is neutral. Its contribution to Σ q r is q times its separation vector, q d_i, and moving the whole arc does not change it. So for arcs, the centre-of-mass mode that the theorem protects radiates nothing. The radiating coordinates are each arc's *separation* and *orientation*, which are exactly his "changed separation" and "rotate".
+
+The (q_i − q_j) F_ij/m term for a + and − pair also includes the arc's *own* internal force. That is a candidate fixed clock that the *other* arcs do not make. Arc–arc dipole coupling would then shift the collective rate with density, like a local-field shift.
+
+Replace the third bullet of §4 with:
+
+> - **A cloud of arcs**, each a + and a − (part 3): each arc is neutral, so moving it whole changes nothing that radiates; the radiating sum is the total of the arcs' own dipoles (charge × separation), changed only by an arc stretching or turning, his "changed separation" and "rotate". The sum is moved by the mutual forces, since a pair force contributes (q_i − q_j) F_ij / m (equal inertia assumed; in CPP a CP has no rest mass and its inertia comes from its DP-arcs, R-CP-NO-REST-MASS, so this is toy dynamics). Inside one arc that term is the arc's own pull between its + and −, which the other arcs need not change; between arcs it is their mutual push, which changes as they discharge. So the theorem does not carry over, and the clock is fixed only if each arc's own stretch or turn sets it and the arc–arc coupling shifts it by less than about 4 × 10⁻⁸ per e-fold.
+
+**5. §4: the hedge "if energy goes with the number of arcs" was dropped.**
+
+The script states it; the fragment does not. Replace "shows what happens when two-thirds of it is removed, about one e-fold:" with:
+
+> shows what happens when two-thirds of it is removed, about one e-fold if the energy goes with the number of arcs:
+
+Also, in the non-harmonic case the centre-of-mass motion is no longer an exact mode (residual 3 × 10⁻²). Replace "With a slightly non-linear hold it shifts by about 1%." with:
+
+> With a slightly non-linear hold it is no longer an exact mode, and its frequency shifts by about 1%.
+
+**6. §4 and §7: "in his picture the forces are made by the arcs" narrows his text, and is not marked as Claude's.**
+
+- His 4474 text says the changed separation alters the "relative angle and distance to all surrounding **CPs**/DP-arcs". That includes CPs, so the electron CP and the nucleus are among the force sources.
+- The supporting quote "the forces acting between DPs change after each discharge" is from 4473, not 4474.
+
+Replace "In his picture the forces are made by the arcs ("the forces acting between DPs change after each discharge"), which is the case that drifts." with:
+
+> In his picture the forces come from "all surrounding CPs/DP-arcs" (4474) and "the forces acting between DPs change after each discharge" (4473); so far as they come from the arcs, they drift (Claude's reading); so far as they come from the CPs, they may be the hold.
+
+In §7, replace "in your picture the arcs make the forces, so as they discharge the stiffness changes" with:
+
+> in your picture much of the force comes from the arcs themselves, so as they discharge the stiffness changes
+
+**7. §4: apply the registered rule before asking, and state the tension with 4473 (PD-006 / PD-008).**
+
+R-DPSEA-UNIFORM already gives a hold that the discharging arcs do not make: "DPs orient toward an unpaired CP … mass carries a polarised cloud whose radius is set by the CP's polarising pull". But in 4473 his trigger is that the central CP is knocked out of resonance and "is no longer organizing" the cloud. So the registered hold is the very thing his trigger removes during the discharge. This should be pressed in the fragment, not only asked.
+
+Add a paragraph before "Met, conditions (i)–(iii)…":
+
+> The registry already names one hold the discharging arcs do not make: the unpaired CP's polarising pull, which orients the DPs around it and sets the cloud's radius (R-DPSEA-UNIFORM). It acts on orientation, so it bears on the turning of arcs, not on moving the whole cloud. But in 4473 the trigger is that the central CP is knocked out of resonance and "is no longer organizing" the cloud, so on his own sequence this hold is disturbed during the discharge. Whether the CP's pull still sets the turning while the cloud discharges is therefore the sharp form of the question. A turning in the CP's pull is a pendulum-like swing, isochronous only for small angles (or a precession), and its rate depends on the strength of the pull where each arc sits, so arcs at different distances would turn at different rates unless something locks them in step. (Claude's working-out.)
+
+Also add the Thomson caveat from 4461 §4, which carries over:
+
+> A hold fixed independently of the arcs gives one rate per hold, set by its stiffness, not by ΔE; it shares the failure of 4461 §4 (one cloud, one rate, not a family of lines), so (4473 a)'s "equal to h ÷ ΔE" is not met by a fixed hold alone.
+
+**8. §5 founder question: sharpen it and stop telegraphing the preferred answer.**
+
+The descriptors ("stays the same" against "changes as they go") lean toward one answer. The question also leaves out the case of something else, and it ignores the 4473 tension above. Replace with:
+
+> **When the neighbouring arcs come into their new line after a discharge, how do they get there: do they swing past and back, ease straight in, or keep turning steadily, like a top? And once the rogue wave has knocked the central CP out of resonance, does the CP's pull still turn the arcs while the cloud discharges, or are they then turned only by one another, or by something else?**
+
+**9. §8 PD-008: mark "the hold decides" as convenient.**
+
+A fixed linear hold is exactly Claude's own 4461 §4 candidate (a uniform cloud pulling back in proportion to displacement). So the conclusion converges on Claude's option twice. Replace "- "the hold decides" is Claude's conclusion; the question (§5) is asked so that his picture can overturn it." with:
+
+> - "the hold decides" is Claude's conclusion, and convenient: a fixed linear hold is Claude's own 4461 §4 candidate, with its Thomson failure (one rate, not set by ΔE); the question (§5) is asked so that his picture can overturn it;
+> - the creep branch (a relaxation clock, 4472 "wait at each stage") and the turning/precession branch are not worked to the end here; owed (§6 g).
+
+**10. §6: add the owed items the changes above create.**
+
+Insert after (c):
+
+> - **(g) The other clocks:** the creep-then-discharge (relaxation) clock and the steady turning or precession of arcs, each with what would keep its time fixed as the cloud empties (§3, §4).
+> - **(h) The radiating coordinates of an arc cloud:** each arc's separation and orientation (not the whole cloud's motion), how much of their restoring comes from the arc itself, from the CP's polarising pull (R-DPSEA-UNIFORM) and from the other arcs, and whether the CP's pull acts after the 4473 trigger (§4).
+
+Update (f) to:
+
+> - **(f) Dispositions:** 4473 §6 answered in part: the push is indirect, through the discharging arc's changed separation, distance and angle to the surrounding CPs and DP arcs, and the cloud re-equilibrates (recorded); why the time stays the same not answered directly; his re-equilibration gives it under three conditions (§3), linearity being sufficient, not necessary. 4473(f) dispositions stand.
+
+**11. §7 (answer to "What do you think?"): carry changes 1, 2, 4 and 7 in plain words.**
+
+Replace the sentence "Settling only gives repeated waves if the arcs swing … there's no wave." with:
+
+> Settling can give repeated waves two ways: the arcs can swing past their new position and back, like a plucked string, and ring; or they can ease straight in, like a door on a closer, and each easing-in brings the next portion into line to discharge, like a dripping tap. Either way, the time it takes has to be the same every time.
+
+Then add after the toy-cloud sentence:
+
+> For arcs, which are + and − together, what gives off light is their stretching and turning, not the cloud moving as a whole; and the one outside pull the record already has, the CP orienting the arcs around it, is the thing your rogue wave knocks out. So whether the CP still turns the arcs while they discharge is the sharp question.
+
+## Optional notes
+
+- **Script docstring:** it says it prints the "median and lowest internal modes", but the code prints the highest. The function `modes()` and the `dip` vector are dead code. It would also help to state the "energy goes with number" assumption in the printed output.
+- **"the computer's limit":** "numerical precision (finite-difference Hessian)" would be more exact.
+- **"a small extra pull growing as the cube":** at s = 1 the cubic term (c3 = 0.5) is half the linear pull, so "small" holds only for the small shifts.
+- **Kohn (Phys. Rev. 123, 1242, 1961)** could be cited alongside Dobson as the original form of the theorem; this is optional.
+- **Bracketed question in the founder file:** it reads "In your picture", whereas 4473 §6 says "In his picture". That is consistent with what he pasted (the chat wording) and is fine as verbatim.
+- **Header:** "Critic: pending" should be updated when the changes are taken in.
+- **Standard-physics facts:** none is presented as evidence for CPP. Novelty is disclaimed, the toy cloud is marked as not CPP dynamics, and the ringing-mode convergence is marked convenient.
+
+## What the todolist entry must contain
+
+**4474 — Settling into line (founder: one arc pushes another through its changed separation; the cloud re-equilibrates).** Owed:
+- (a) the re-equilibration clock: whether the arcs swing, creep or turn; whether the restoring action is isochronous over the displacements (linear or otherwise); what keeps the stiffness and inertia fixed as arcs discharge, to about 4 × 10⁻⁸ per e-fold for Lyman-α, and equal to h ÷ ΔE; the arc-cloud mixed-sign result (= 4473 a);
+- (b) the hold: what holds and orients the arc cloud, whether it is linear, and whether the discharging arcs make it; the Thomson one-rate failure of a fixed hold (4461 §4);
+- (c) the arc–arc force law (distance and angle) derived from the CP-level rules (= 4473 c);
+- (g) the other clocks: creep-then-discharge (relaxation) and steady turning/precession, each with what fixes its time;
+- (h) the radiating coordinates of an arc cloud (each arc's separation and orientation), with the restoring shares from the arc itself, from the CP's polarising pull (R-DPSEA-UNIFORM) and from other arcs, and whether the CP's pull still acts after the 4473 trigger (the central CP "no longer organizing");
+- founder question 4474 §5;
+- all of 4473(a)–(f) carried word for word (verified exact), including the nested 4472/4471/4470/4469 carries.
+
+Dispositions recorded: the push is indirect; three conditions, linearity sufficient but not necessary; "the hold decides" and the ringing-mode convergence are marked convenient.
+
+Report items: none from memory beyond the standing rules the caller supplied. Nothing new to save.
+
+---
+
+## Claude's response to the 4474 return (not part of the verbatim report)
+
+All eleven required changes taken in: (1) the creep branch corrected: a creep-then-discharge cycle is a relaxation oscillator (dripping tap; 4472 'wait at each stage'), condition (i) restated for either way of settling; (2) 'only' removed from the title; (ii) restated as isochronous, linearity sufficient not necessary (cycloidal pendulum, ax² + b/x², precession); (3) the relay paragraph qualified: one body at c, a tenth to a third of a cycle lag at c/137, absorbed by the in-step condition; (4) the radiating coordinates of an arc cloud named as each arc's stretch and turn, the whole-cloud mode radiating nothing for neutral arcs; the inside-arc versus arc–arc terms separated; toy-inertia caveat with R-CP-NO-REST-MASS; (5) the 'energy goes with number' hedge and the non-exact-mode wording restored; (6) his 'all surrounding CPs/DP-arcs' quoted, the 4473 quote attributed, the narrowing marked as Claude's; §7 softened to 'much of the force'; (7) R-DPSEA-UNIFORM applied: the registered hold is the CP's polarising pull, which his 4473 trigger disturbs; the turning-rate dependence on distance and the Thomson one-rate failure of a fixed hold (4461 §4) added; (8) the founder question rewritten as suggested; (9) 'the hold decides' marked convenient; the creep and precession branches marked unworked and owed; (10) §6 (g), (h) added and (f) updated; (11) §7 carries changes 1, 2, 4 and 7 in plain words; the title rewritten to match. Optional notes taken: script docstring corrected (median and highest), dead code removed, the energy-with-number assumption printed; 'numerical precision'; the cubic term described as half the linear pull at a shift of 1; Kohn 1961 cited with Dobson 1994. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
