@@ -7922,3 +7922,151 @@ Sources checked: [arXiv quant-ph/0402146 (Hackermüller et al. 2004, abstract)](
 
 All eleven required changes taken in, change 1 adjusted on one fact: the pasted paragraph came from Claude's interim chat message on 4478, sent while the review ran; Claude's final 4478 message had already withdrawn the rock reason ('Molecules don't split the way I suggested: a whole C60 molecule interferes like one quantum'), so he had been told; §1 and §7 say so and repeat the correction. Otherwise as required: (2) founder-file heading and title; (3) scope confirmed, not the list; the ħ-unit / entangled-set tension, with his archive's 'hierarchical QGEs' and 'allowable/resonant assemblies of QGEs'; (4) Pedalino et al., Nature 649, 866 (2026), verified; (5) tier 3 rewritten (isolation, spreading not ending; large cold bodies); (6) §4; (7) founder question; (8) §6 (f), (g), (e), order a, b, f, g, c, d, e; (9) §7 rewritten; (10) §8; (11) title. Optional notes taken: the 2026-06-09 note's weak/relational reading cited (its exact wording quoted); the AP-4 caution quoted for tier 4; the process note recorded in §1 and the todolist. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4480 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I reviewed the three files read-only and ran the script. The script runs cleanly, and its numbers match the fragment: 1.3e-12 and 1.3e-10 for (1); 0.048, 0.413 and 0.935 for (2).
+
+Some things are right as filed:
+- **The §6(d) carry is exact.** I rebuilt the expected block from 4479 §6 programmatically: the label rewrite "- **(x) " → "- 4479(x) **", a two-space indent, and the order a, b, f, g, c, d, e. All 181 lines match the 4480 file with no difference.
+- **The founder text in §1 is verbatim**, including "subtracts or from the entangled pair QGE".
+
+Checked against sources:
+- **Hackermüller et al. 2004 (arXiv quant-ph/0402146):**
+  - The quote is real. It is in the Fig. 3 caption: "This is sufficient to determine the path of the molecule if the emission occurs close to the second grating."
+  - The decoherence function is sinc-shaped: η(r) = (1/R_tot)∫R_λ sinc(2π|r|/λ)dλ, averaged over the thermal spectrum.
+  - The path separation is ℓd(L−|vt−L|)/L_T. It is largest at G2, about 1 µm, and falls linearly toward G1 and G3. Grating period about 990 nm; L = L_T = 38 cm; λ_dB = 2.6 pm at 190 m/s.
+  - So the fragment's Δx ≈ 1 µm and the isotropic sinc are correct, as the maximum case.
+  - The paper gives **no Δv/v**.
+- **Velocity spread (Brezger et al., PRL 88, 100404, 2002, same apparatus):** the FWHM spread of the selected velocity class runs from 8% to 35%. Visibility depends strongly on velocity through L_T = d²/λ_dB, but the visibility-against-velocity curve changes over tens of percent. A 1e-12 change in λ_dB is therefore negligible, and the argument holds. The source and the size need correcting, though.
+- **The C70 mass-change number is right.** 840 amu is 7.82e11 eV, so 1 eV/mc² = 1.28e-12. But 0.1/1.28e-12 = 7.8e10, and against the 8–35% spread the factor is 6e10 to 3e11. "Ten billion" understates this by about 8×. It is about 10¹¹, eleven orders of magnitude.
+- **Walborn et al., PRA 65, 033818 (2002).** The description is fair:
+  - The paths are marked by quarter-wave plates on the interfering photon.
+  - Interference returns by measuring the *other* photon's polarization, in coincidence, as fringes and antifringes.
+  - A delayed-erasure version was done.
+  - One precision point: the record lives in the *joint* polarization state, not in the partner alone.
+
+**The central problem (your item 4).** The fragment's "wrong dependence" argument works only against shrinkage read as loss of mass or energy. Each emitted 1 eV photon also carries momentum h/λ:
+- The sideways kick is 3.8e-4 m/s, against the grating's own diffraction kick h/(md) = 4.8e-4 m/s. Their ratio is d/λ = 0.8.
+- The longitudinal change is 2.0e-6 of the speed. That is still far below the spread.
+- Averaging e^{iΔp·Δx/ħ} over isotropic directions *is* the sinc(2πΔx/λ) factor. How much the kick spoils the fringes depends on how far apart the paths are where it happens, which is the "close to the second grating" dependence.
+
+So "losing quantum elements", read as losing momentum-carrying ħ units, has the **right size and the right dependence**. It is the standard recoil description of the same decoherence. The paper itself says this sinc form appears in other experiments where the momentum change is isotropic. Pfau et al. (PRL 73, 1223, 1994) and Chapman et al. (PRL 75, 3783, 1995, "coherence lost and regained", where fringes were recovered by sorting atoms by their recoil) are the recoil-picture analogues. I am citing both from memory, so verify them before filing.
+
+The C70 data therefore do **not** decide between "shrink" and "spread". The case that does is marking with no kick, which is exactly Walborn's polarization marking (Dürr, Nonn and Rempe, Nature 395, 33, 1998, is the atom case; also verify). The fragment uses Walborn but never says that this is why it is the one that decides. As filed, §3, §6(f), §7 and §8 overstate the case against the founder.
+
+## Required changes
+
+1. **Title, §3 first bullet, §8: the size and source of the spread.**
+   - In the title, replace "Ten Billion Times Smaller Than the Beam's Own Speed Spread" with "About a Hundred Billion Times Smaller Than the Beam's Own Speed Spread".
+   - In §3, replace "The beam already spreads in speed by of order 10%, which the interferometer tolerates. A loss ten billion times smaller than a spread the fringes already survive cannot blur them by that route." with:
+     > The selected beam already spreads in speed by 8–35% (full width; Brezger et al., Phys. Rev. Lett. 88, 100404, 2002, the same apparatus). A near-field interferometer is sensitive to speed, through the Talbot length d²/λ_dB, but its visibility changes over tens of percent in speed. A change about 10¹¹ times smaller than the spread it already survives cannot blur the fringes by that route.
+   - In §8, replace "too small by about ten orders of magnitude" with "too small by about eleven orders of magnitude".
+
+2. **§3: add the momentum reading after the "What the loss depends on" bullet** (new bullet):
+   > - **Read as momentum, the loss is the right size.** Each photon also carries off momentum h/λ. For a 1 eV photon (1.24 μm) the sideways kick to C70 is 3.8 × 10⁻⁴ m/s, about 0.8 of the kick the grating itself gives (h/md = 4.8 × 10⁻⁴ m/s), while the forward change is 2 × 10⁻⁶ of the speed (script, (3)). A random sideways kick of that size, averaged over directions, gives the same sinc(2π Δx/λ) and the same dependence on place. In standard physics the recoil kick and the which-way record are two descriptions of one effect (Pfau et al. 1994; Chapman et al. 1995, where sorting atoms by their recoil brought fringes back). So if the ħ units he says are lost carry momentum, his shrinkage gets the size and the dependence right, and the C70 data cannot tell it from spreading. (Claude's reading of "quantum elements" as including momentum.)
+
+   In the "What the loss depends on" bullet, change "An energy loss of the same size would act the same wherever and at whatever wavelength it happened." to "A loss of mass-energy alone would act the same wherever and at whatever wavelength it happened."
+
+   Replace "Gas collisions (Hornberger et al. 2003) blur fringes with no emission at all." with "Gas collisions (Hornberger et al. 2003) blur fringes with no emission at all; in his terms they add or remove groups and give kicks, so this case does not separate the readings either."
+
+3. **§3: rewrite the conclusion paragraphs.** Replace from "So what blurs the fringes is not that the molecule became smaller…" through "…the photon case is the direct one.)" with:
+   > So what blurs the fringes is not that the molecule became lighter. It is the light it gave off: by its kick or, equivalently, by the record it carries of which way the molecule went. For the C70 experiments the two descriptions agree. What separates them is marking without a kick. In quantum-eraser experiments the path is marked in polarization, which gives no kick. Then the which-way record held in the polarizations of the photon and its partner together is read in a way that cannot tell the paths apart, and the fringes come back as fringes and antifringes sorted by the partner's result (Walborn, Terra Cunha, Pádua and Monken, Phys. Rev. A 65, 033818, 2002, with photons, including a delayed version). Nothing was added back to the photon that went through the slits; only how its partner was read changed. A lost kick cannot explain that; a record still joined to the group can. In group terms (Claude's reading), the emitted light stays joined to the molecule's group and carries the record. (No such eraser has been done for light from heated molecules; the photon case is the direct one.)
+
+   Replace "So his 'smaller quantum group' is right as energy bookkeeping (the molecule does hold less), and 'the group spreads' is what the fringes require" with:
+   > So his "smaller quantum group" is right as energy bookkeeping, and right as a description of the C70 fading if the lost units carry momentum. "The group spreads" is what the no-kick erasers require, and the two can both hold
+
+   Keep the rest of the sentence.
+
+4. **§4: give the collapse branch and fix the Bell wording.** Replace the §4 paragraph with:
+   > If "collapsed" means "combines with a larger group", then when one photon of a pair is absorbed by an atom, the partner, still in flight, becomes predictable from the atom's record: perfectly correlated for matched settings, Bell-correlated for others. Two readings fit. (i) The partner is now joined to the atom's enlarged group, though it never touched it. This is 4478 §3's merging applied at a distance, read without collapse, and it is the branch convenient to §3's "spread". (ii) The pair's group ends, and the partner goes on as a quantum of its own, in a definite state correlated with the record. This is the collapse reading. Both give the same statistics and no signalling. His words ("a single quantum until it is collapsed and combines with a larger group") do not say whether the whole pair joins or only the absorbed photon. (Claude's reading; what the Nexus has to keep either way is the correlation.)
+
+5. **§5: make the founder question less leading and add the momentum picture.** Replace the bold question with:
+   > **Three questions. First: when the glowing molecule gives off a bit of light, does the ħ that leaves give the molecule a push as it goes, opposite to the way the light went? And does the molecule keep any tie to that light afterwards? Second: a photon goes through two slits while its entangled partner flies off elsewhere. Marking the slits so that the pair together can tell which slit was taken wipes out the fringes. Reading the partner afterwards in a way that cannot tell the slits apart brings them back, though nothing touched the first photon again. In his picture, where is the record of the slit kept, and what happens to it when the partner is read? Third: when one photon of a pair is absorbed by an atom, what becomes of the partner still flying: does it stay with the pair's group, join the atom's, or go on as a quantum of its own?**
+
+   The present second and first questions are yes/no questions pointing at Claude's answer.
+
+6. **§6 (a), (b), (c), (f).**
+   - (a) becomes:
+     > **(a) Spread or shrink:** whether the ħ units a glowing molecule loses carry momentum (the recoil reading, which fits the C70 data, §3); and whether its group also takes in the light it emits (the record), as the no-kick erasers require; his energy bookkeeping (§3).
+   - (b) becomes:
+     > **(b) The ħ unit:** a DP's ZBW as one ħ (a full swing of 4325's ħ/2 half-swing), against the ħ–h factor (4476 a), his 4320 ruling that ħ/2 is the smallest increment of action, and the electron's spin ħ/2 (= OPEN-QM-3; THEO-SPIN-1 takes L = ħ/2 as an input).
+   - (c) becomes:
+     > **(c) Merging at a distance:** whether the partner of an absorbed photon joins the absorber's group or goes on as its own quantum (§4).
+   - (f): replace "4479 §5 answered (shrinkage: the glowing quantum becomes smaller, recorded) and the entangled-pair question answered (one quantum until collapsed by combining with a larger group; 4479 (f) answered)" with:
+     > 4479 §5 answered in its second half (shrinkage: the glowing quantum becomes smaller, recorded); its first half (one group entity or a group of members' group entities) answered only as Claude reads his first bullet (a group of ħ units acts as one larger quantum). The entangled-pair question answered (one quantum until collapsed by combining with a larger group); 4479(f) answered in its first half, gathering at once for groups of groups still open.
+   - Also in (f), replace "Shrinkage tested: too small by ten orders of magnitude and the wrong dependence on wavelength and place; spreading kept as what the fringes require, shrinkage as energy bookkeeping" with:
+     > Shrinkage tested: as mass-energy, too small by about eleven orders of magnitude and without the dependence on wavelength and place; as momentum (recoil), the right size and dependence, the standard recoil description of the same decoherence, so the C70 data do not separate it from spreading; spreading kept as what the no-kick erasers require, shrinkage as bookkeeping and as recoil
+
+7. **§7 reply: rewrite the second paragraph** (it currently tells him "shrinking" fails without the momentum concession):
+   > On the glowing molecule: if the shrinking is the energy, the mass the molecule loses, it's far too small. One photon of heat light changes a fullerene's mass by about a part in a million million, and the beam's own speeds already differ by ten to thirty percent. But each photon also carries off a push, and that push is big enough: sideways, it's about as large as the kick the grating itself gives. Read that way, your "losing quantum elements" is a standard way of describing the same fading, and it gets the details right. Long-wave light gives too small a push to matter, short-wave light a big one, and the push spoils the fringes most where the two paths are farthest apart. Where the pictures may part is what happens to the light afterwards. With entangled photons, the path can be marked with no push at all, and reading the partner light a certain way brings the fringes back. That says the light carrying the record stays tied to the group. So I'd put it this way: the molecule does get smaller and does get pushed, and its group also takes in the light. That's why the record can matter.
+
+   In the first paragraph, "the electron's spin, which is half your unit" may stay. Optionally add "and your own earlier ruling that ħ/2 is the smallest step".
+
+8. **§8 PD-008.**
+   - Replace the "Not softened" line with:
+     > **Not softened:** shrinkage as mass-energy loss does not explain the fading (about eleven orders too small; no dependence on wavelength or place).
+   - Add:
+     > **Conceded:** read as momentum carried off (recoil), his loss has the right size and dependence; it is the standard recoil description of the same decoherence, and the C70 data do not separate it from spreading.
+   - Add to "Marked":
+     > the momentum reading of his "quantum elements" is Claude's (the branch less convenient to Claude's spread thesis, adopted anyway); the case for spread over shrink rests on no-kick erasers with photons, not on the C70 data; §4's joining branch is convenient to §3, and the collapse branch is kept beside it.
+   - Add to "Not claimed": "recoil-induced decoherence".
+
+9. **Script `series_standard_model/code/4480_what_blurs_the_fringes.py`.**
+   - In the docstring, change "order 10%" to "8-35% FWHM (Brezger et al. 2002)".
+   - Add check (3), and docstring text noting that recoil and which-way are two descriptions of one effect:
+   ```python
+   h=6.62607015e-34; c=299792458.0; e=1.602176634e-19; m_kg=840*1.66053907e-27; v=190.0; d=0.99e-6
+   for E in (1.0, 2.0):
+       p=E*e/c; lam=h*c/(E*e)
+       print(f"(3) one {E:.0f} eV photon ({lam*1e6:.2f} um): sideways kick {p/m_kg:.1e} m/s vs grating kick h/(m d) {h/(m_kg*d):.1e} m/s (ratio d/lambda {d/lam:.2f}); forward change {p/(m_kg*v):.1e} of the speed")
+   ```
+   Expected output for 1 eV: 3.8e-04, 4.8e-04, 0.80, 2.0e-06.
+   - Have (1) print the ratio to the spread: 0.08/1.28e-12 ≈ 6e10 and 0.35/1.28e-12 ≈ 3e11.
+
+## Optional notes
+
+- §3 could say that Hackermüller et al. average the sinc over the thermal spectrum and over where along the path the light is emitted, and that 1 μm is the separation at the second grating, the largest.
+- The ħ unit as the ZBW of a DP made of two CPs, set beside 4325's "Planck ZBW". 4320 and 4325 speak of the CP's Planck-level ZBW, so whether "a DP's ZBW" is the same object is worth one clause in §2 or §6(b).
+- Walborn's "partner reads afterwards" is the delayed version; the main runs are not delayed. The new §5 wording is fine either way.
+- There is no Plain Language section in the assessment, but 4478 and 4479 have none either, so it follows precedent. The Plain Language belongs in the chat turn.
+
+## What the todolist entry must contain
+
+The entry begins "**4480 — " and should contain:
+- **Header:** "Spread or shrink". The founder names the ħ unit, a ZBW of two CPs bonded as a DP, as the fundamental unit of the quantum, with groups of ħ units as larger quanta showing entanglement, interference and collapse. The entangled pair is one quantum until it is collapsed by combining with a larger group (an orbital, a band gap). The glowing molecule shrinks as it loses ħ units. Then "(critic ACCEPT WITH CHANGES, all N taken in; nothing registered)".
+- **Files:** `founders_voice/4480_hbar_unit_and_shrinking_groups.md`, `series_standard_model/axiom_maturation/4480_spread_or_shrink.md`, `series_standard_model/code/4480_what_blurs_the_fringes.py`.
+- **Gains:**
+  - the unit and the pair recorded and agreed;
+  - shrinkage as mass-energy too small by about 10¹¹ (1.3e-12 per 1 eV photon against an 8–35% speed spread, Brezger et al. 2002);
+  - shrinkage as momentum (recoil) the right size: sideways kick about 0.8 of the grating kick, the same sinc(2πΔx/λ) and place dependence, the standard recoil description, not separated from spreading by the C70 data;
+  - Hackermüller et al. 2004: quote (Fig. 3 caption), the sinc, maximum separation about 1 μm at G2;
+  - no-kick erasers (Walborn et al. 2002) as the case favouring spread (Claude's reading);
+  - merging at a distance with the collapse branch kept;
+  - 4479 §5 and 4479(f) answered in part.
+- **Owed**, in label order a, b, c, d (carried word for word from 4479 §6 in the order a, b, f, g, c, d, e), e, f:
+  - (a) spread or shrink, with the momentum question;
+  - (b) the ħ unit against the ħ–h factor (4476 a), his 4320 ħ/2 smallest increment, and the electron's spin ħ/2 (OPEN-QM-3);
+  - (c) merging at a distance, joined or its own quantum;
+  - (d) the 4479 carry;
+  - (e) founder question 4480 §5 (three questions);
+  - (f) dispositions.
+- **Verify before relying on them:** Pfau et al., PRL 73, 1223 (1994); Chapman et al., PRL 75, 3783 (1995); Dürr, Nonn and Rempe, Nature 395, 33 (1998). The reviewer cited these from memory.
+- **Process note:** the shrinkage test first missed the recoil reading; photon recoil and which-path information are two descriptions of one effect, and a test of a founder mechanism must try its most favourable physical reading before calling it wrong.
+
+## Sources
+
+- [Hackermüller et al. 2004, arXiv quant-ph/0402146](https://arxiv.org/abs/quant-ph/0402146) (PDF read through WebFetch)
+- [Brezger et al., PRL 88, 100404, arXiv quant-ph/0202158](https://arxiv.org/pdf/quant-ph/0202158)
+- [Walborn et al., arXiv quant-ph/0106078](https://arxiv.org/abs/quant-ph/0106078) (abstract only)
+- Registry and archive checks done locally: 4325 §4 (ħ/2 as the half-cycle swing); `frontier_sectors/QM.md` OPEN-QM-3 (spin-½ open); `theorem-registry.md` THEO-SPIN-1 (L = ħ/2 taken as an input).
+
+---
+
+## Claude's response to the 4480 return (not part of the verbatim report)
+
+All nine required changes taken in: (1) the speed spread sourced (Brezger et al. 2002, 8–35%) and the ratio corrected to about 10¹¹; (2) the momentum (recoil) reading added and conceded: the right size and dependence, the standard recoil description; (3) the conclusion rewritten: the C70 data do not separate shrink from spread; no-kick marking does (Walborn et al. 2002), with Dürr, Nonn and Rempe 1998 added for atoms; (4) §4 gives both the joining and the collapse branch; (5) the founder question replaced (three questions); (6) §6 (a), (b), (c), (f) revised; (7) §7's second paragraph rewritten; (8) §8 revised, with 'Conceded'; (9) script (3) added and (1) prints the ratio. Citations verified before filing: Chapman et al., PRL 75, 3783 (1995) ('the lost coherence can be recovered by observing only atoms that are correlated with photons emitted into a limited angular range'); Dürr, Nonn and Rempe, Nature 395, 33 (1998) (back action 'too small to explain the disappearance of the interference pattern'); Pfau et al., PRL 73, 1223 (1994), confirmed from Hackermüller et al.'s reference list. Optional note taken: whether 'a DP's ZBW' is 4325's CP-level Planck ZBW added to §6(b). Process note recorded: a test of a founder mechanism must try its most favourable physical reading before calling it wrong. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
