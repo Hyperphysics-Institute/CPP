@@ -7630,3 +7630,156 @@ No memory facts were used beyond standing preferences. Nothing new needs saving 
 
 All ten required changes taken in: (1) §2 now gives the record's layers fairly (website-era PSR chaining 'sans nonlocality', QM-3 v1, SD-1 'Why CPP is local') against the reviewed position (QM-3 V3.2, philosophy-QM-3, FAQ-QM-3, CONV-031), quote attributions fixed, the ε-hierarchy bullet added, the locality wording owed as §6(e′); (2) his group entity located and described from the archive (one per quantum, superluminal, 'issues placement commands', 'regathered into a single dot'), close to the Nexus in function, different in scope and kind; (3) Einstein's Solvay example corrected to the pinhole case; the count uncertainty stated; (4) the light-speed-pull argument rebuilt on click timing (1 ns against 33 ns), consistent with the absorber point; (5) the splitter branch corrected: only 'nothing goes the other way' is ruled out; energy committed early with an energyless guide (de Broglie–Bohm, named by Guerreiro et al.) left open, owed as §6(g); (6) §4 gives three branches, the pilot-wave branch marked inconvenient and kept open; InGaAs point added; (7) the founder question replaced; (8) §7 reply revised; (9) §6 and §8 revised; (10) title revised; script computes the Table I ratios (1.24 × 10⁻³, 1.34 × 10⁻³), labels the 1 ps train illustrative, prints the 1 ns window against 33 ns; 'about 800 times' used. Quotes from the archive and SD-1 were checked against the files before filing. Optional notes: the Aspect-group link noted in the reply; the single-photon steering tests not cited (unverified); the noise-level residue stated with its hedge. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4478 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+The founder file is fine as filed: verbatim, typos kept ("The questions is", "photon collaps timing"), the bracketed pasted question and "4477applied" kept. The 4477 carry in §7(d) is exact. I checked it by program: 4477 §6 lines 107–254, with the labels converted and two spaces of indent, match 4478 lines 84–229 line for line, including (e′) and 4477's order (e), (e′), (g), (f). The script runs (seed 7) and reproduces its printed claims.
+
+The physics needs repair in six places:
+- the Bancal citation is misapplied to pairs and to the single photon;
+- the registered Born-rule companion c03 contradicts "at once" and is not mentioned;
+- the absorber-gap point from 4477 §4 is dropped, which inflates what counts as new;
+- "whole or not at all" is false as written (Compton/Raman scattering, electrons);
+- (B) is presented as adding less than (A) when the physics is the same;
+- the molecule/rock reason does not hold.
+
+The founder's history is not checked against the record either, and there is a registered AP-4 anchor for exactly this kind of proposal that the fragment does not cite.
+
+## Required changes
+
+**1. §2, first paragraph: Bancal is a result for four parties (three in a later paper), not for pairs or one photon.**
+
+Checked against arXiv:1110.3795. For two parties the paper says a v-causal model can always reproduce the correlations ("In the bipartite case, this is always possible"; "the only possibility is to lower bound v experimentally"). The main result uses four parties. Barnea, Bancal, Liang and Gisin, Phys. Rev. A 88, 022123 (2013) brought it down to three. One photon's anticorrelation at two detectors is matched by a local model (energy rides one arm; the pilot-wave branch, 4477 g), so no such theorem reaches the one-photon case.
+
+On Salart: the bound is stated for frames in which Earth moves at under 10⁻³ c. The record's own TODO-4364-PREFFRAME puts the solar system at about 370 km/s, about 1.2 × 10⁻³ c, relative to the CMB. That is just outside the stated condition.
+
+Replace from "Whatever gathers the photon must act at once…" through "…facts to match." with:
+
+> Whatever gathers the photon must act at once, not merely faster than light, but the ground for that is not a theorem about one photon. For three or more particles, any hidden influence travelling at a finite speed above c in a preferred frame, and reproducing the quantum correlations, would let people signal faster than light (four parties: Bancal, Pironio, Acín, Liang, Scarani and Gisin, Nature Physics 8, 867, 2012; three: Barnea, Bancal, Liang and Gisin, Phys. Rev. A 88, 022123, 2013). Bancal et al. assume the influence's speed is defined in a privileged frame, which is CPP's case. For two particles there is no such theorem: a finite-speed model can reproduce the pair's correlations without signalling, and the speed is only bounded by experiment, at more than about 10⁴ c for any preferred frame in which Earth moves at under 10⁻³ c (Salart, Baas, Branciard, Gisin and Zbinden, Nature 454, 861, 2008). If CPP's absolute frame is the CMB rest frame, Earth moves at about 1.2 × 10⁻³ c in it (TODO-4364-PREFFRAME), just outside that stated condition. For one photon neither result applies: its anticorrelation at two detectors is matched by a local model in which the energy rides one arm (the pilot-wave branch, 4477 g), and the spacelike antibunching test (Guerreiro et al. 2012; 4477 §3) rules out a pull at light speed, not every finite speed above it. "At once" reaches the one photon only because he proposes one mechanism for both ("the problem of entanglement/split photons and photon collaps timing resolves with the QGE concept"), with the energy spread until a detector fires. So "faster than light", as he wrote the QGE, has to mean "at once" for the QGE as one mechanism for pairs, triples and single photons. These are standard results, facts to match.
+
+**2. §2: add the c03 tension (new paragraph after the A4 paragraph).** The registered Born-rule companion says the opposite of "at once" and is not mentioned. Add:
+
+> One registered text says otherwise. The Born-rule companion c03 (`series_relativity/SR_companion_papers/c03_born_rule/c03_born_rule.tex`, §"Collapse as Progressive Positive-Feedback Cascade", v2.3) has collapse "not instantaneous", a cascade that "propagates outward at speed c" and locks within r_irrev, "not because the Nexus forbids it". Read as the local locking of an outcome at the detector that fires, it is compatible with gathering at once. Read as the whole of collapse, it is the light-speed pull that 4477 §3 ruled out for the split photon. Its wording is owed a reconciliation (§7 (g)), as SD-1's is (4477 e′). (Claude's reading.)
+
+**3. §3: put back the gap, credit what is already registered, and correct "whole or not at all".**
+
+- Rule G alone ignores 4477 §4's own point: half of a 0.80 eV photon cannot cross a 0.75 eV InGaAs gap. With gaps, half-and-half gives no click at all, not two half-clicks. So the absorber's level structure already forbids half-absorption. What it cannot do is bring the far half to the detector that fires. That gathering is the real new content.
+- Born weights are registered as THEO-QM-2 (from c03), and no-signalling for the pair as THEO-QM-5.
+- "Passes to one absorber whole, or not at all" is false for Compton and Raman scattering and for an electron in a collision.
+- In QM-3, A4 enforces DI-bit conservation and the pair's total spin, not energy. AP-4d gives energy no payload slot.
+
+Replace from "Global conservation alone does not give one lump." through "…the Nexus keeps a membership per quantum or passes energy whole." with:
+
+> Global conservation alone does not give one lump: half the photon's energy at each detector conserves energy exactly as well as all of it at one (script, rule G). The absorber's gap does part of the work (4477 §4). Half of a 0.80 eV photon cannot cross a 0.75 eV InGaAs gap, so with gaps the halves would not be absorbed at all and neither detector would fire, against the measured full rate (script, rule G with a gap). The gap forbids half-absorption; it cannot bring the far half to the detector that fires. Two items below are already registered for densities and pairs: the Born weights (THEO-QM-2, via c03) and no-signalling (THEO-QM-5). What the measured result needs (coincidences about a thousandth of independent, near detector noise; 4477 §3), and the registry lacks, is a rule per quantum:
+> - **membership:** which CPs and DP arcs belong to this quantum;
+> - **gathered at once:** at the Moment of absorption, the quantum's whole energy is made available at the absorbing place, from wherever its members are;
+> - **made and unmade whole:** a quantum is absorbed or emitted only whole and at one place. Where energy is given up in part (Compton or Raman scattering, an electron in a collision), either the quantum is unmade and a new one made, or it keeps its identity and its group. ("Whole or not at all" for energy, as first written, fails for scattering; Claude's restatement.)
+> - **which one:** chosen with the Born weights (THEO-QM-2, extended from a density to the choice of one site; the script's rule Q gives zero coincidences and each detector its weight);
+> - **no-signalling for one quantum:** what one detector does cannot change the other's rate (THEO-QM-5 extended; script);
+> - **inheritance and merging:** when a quantum splits or is transformed (a photon into an electron–positron pair, as his archive has it), its products carry the group on, which is where entanglement begins; when groups meet (a joint measurement in entanglement swapping, two identical photons at a beam splitter), they merge.
+>
+> That list is the physics core of his QGE. Its new content is membership, gathering at once, making and unmaking whole, and merging: nothing in the registry now says that the Nexus keeps a membership per quantum or gathers a quantum's energy. In QM-3 the Nexus enforces DI-bit conservation and the pair's total spin, not energy, and AP-4d gives energy no payload slot (it is configuration the census sees). So an energy rule per quantum also needs a lattice definition of a quantum's energy (his archive: the total stretch of its DPs; §7 (i)).
+
+**4. §3: mark the toy's limits.** Replace the closing parenthetical "(The toy draws the detector at random… 4477 g.)" with:
+
+> (The toy is bookkeeping, not CPP dynamics. It has no distance, no timing and no gathering, so it does not test "at once". Its zero coincidences and B's unchanged rate hold by construction, since the site is drawn with fixed weights before A's setting is applied: it shows the rule, it does not test it. It does not say whether the energy was spread before the choice, so it does not separate his picture from the pilot-wave branch, 4477 g.)
+
+**5. Script: match the fragment.**
+
+- In the docstring, item (3) should end "-- holds by construction (the site is drawn before A's setting is applied); displayed, not tested. No distance or timing is modelled, so 'at once' is not tested."
+- After the rule-G print, add:
+  `print("(1b) Rule G with a gap (0.80 eV photon, 0.75 eV InGaAs gap, 4477 sec. 4): each half 0.40 eV < 0.75 eV -> neither detector fires; measured: each fires at the whole-photon rate")`
+- In the last print, change "Rule Q gives zero coincidences" to "Rule Q gives zero coincidences (by construction)".
+
+**6. §4: say how much (B) actually saves, list the problems, and give the process.**
+
+As he proposed it, (A) also uses the Nexus as its connection, so (A) and (B) carry the same physics. "It adds the least" holds for the label, not the physics. After the (B) bullet, add:
+
+> **How much (B) saves.** As he proposed it, (A) also uses the Nexus as its connection, so (A) and (B) carry the same physics: membership, gathering at once, making and unmaking whole, inheritance and merging. What differs is the label and what comes attached: (B) attaches only the bookkeeping, while his QGE comes with the consciousness and character of groups. So (B) adds less than (A) as a whole, but not less physics. The saving is that no second at-once element and no consciousness attribute enter the physics. The addition is not small either: A4 now enforces DI-bit conservation and a pair's spin, and (B) gives it energy per quantum and a membership that changes in time. Either version must meet (§7 (h)):
+> - what a quantum is where the number of quanta is not definite (laser light, a coherent state: one group per mode rather than per photon?);
+> - identical particles (two photons meeting at a beam splitter leave together, so their groups act as one);
+> - entanglement swapping (a joint measurement on two pairs merges groups that never met);
+> - decoherence (an entangled set grows into its surroundings, so unless membership ends at an irreversible detection, c03's r_irrev, every group grows toward the whole lattice and the per-quantum scope falls back into the global A4; when membership ends is the measurement problem in another place).
+>
+> **The road.** Either way this is an amendment by the registered process. His 8 August 2026 AP-4 ratification already names "linking conscious points into larger conscious point groups" as a foreseen future amendment and makes that record the anchor for any such proposal (`founders_voice/founder_ratification_AP-4_2026-08-08.md` §2, item 2). A per-quantum membership extends the state the substrate keeps, so it goes as a proposal (AP-6, citing that anchor), then to the panel, then to his ratification. His ruling now sets the direction; it does not register anything.
+
+In the same section, after the "The Nexus is underused…" quote, add: "(That note is a wish in the registry, not evidence that A4 does this.)"
+
+**7. §5: replace the molecule/rock reason.**
+
+An entangled pair also loses its all-or-nothing character when one photon is absorbed and the other goes on, so "each entangled set" fails the stated test. A molecule is itself one quantum system: its levels take photons whole, and whole C60 molecules interfere. Replace the paragraph after its first sentence with:
+
+> The physics core above is narrower, but not because groups of many parts can be broken. An entangled pair is broken too, when one photon is absorbed and the other goes on. A molecule is itself one quantum system: its levels take a photon whole, and whole molecules interfere (C60: Arndt, Nairz, Vos-Andreae, Keller, van der Zouw and Zeilinger, Nature 401, 680, 1999). The difference is in what is claimed. The physics rule is about bookkeeping: quanta made and unmade whole, joint states gathered at once. His wider idea is about character: what a bound group is like because of its conformation and substance. The first can be tested against the experiments above. The second is not yet stated in a form physics can test, so it belongs in the vision lane. There the 2026-06-09 note already frames it as a proposal on the combination problem, and its registry anchor is the AP-4 consciousness-grouping trigger (§4). (Claude's reading and lane decision; his "configuration of a substance creates the character" is recorded, not adopted into the physics.)
+
+**8. §1: check his history against the record (new last bullet).** The brief asked whether the QGE was ever retired and whether Claude "judged it no longer needed". The record answers it. Add:
+
+> - **His history, against the record (Claude's reading):** no registry entry or ruling ever retired the QGE. His archive defines QGEs as quanta "in units of h-bar", with "membership in quantum units" (`rm_website_archive/conscious-point-physics-version-3-0.md`), so the per-quantum scope is his own. A May 2026 handover listed QGE among "older framework" terms to watch for in reviewers (`handovers/2026-05-11_session_081_sf2_campaign_launch.md`), and the reviewed QM-3 put entanglement on the Nexus without naming the QGE. The 9 June 2026 vision note concluded "No *new* discriminating primitive is helpful or necessary". That was a judgement about a chirality discriminator, not about the QGE's role for quanta, and plausibly the one he recalls. At the AP-4 ratification (8 August 2026) he himself held group parameters back: "I can foresee that linking conscious points into larger conscious point groups may exist, but at this time, I do not know how to describe or justify including such a parameter". So he is right that it fell out of use, and right that the judgement he recalls was not about the split photon; it was set aside by drift and by his own caution, not by a ruling.
+
+Also in §1, change "(So, in his picture, the energy is spread until a detector fires…; Claude's reading of 'handled'.)" to: "(He does not say directly whether the energy is spread or rides one half; read as spread, from 'handled' and his archive's definition of the photon's energy as the stretch of all its DPs; Claude's reading.)"
+
+**9. §6: repair the question.** "Each electron… its energy… go to an absorber whole" is false, and merging is missing. Replace the bold text with:
+
+> **Shall the registry say, as part of the Nexus (A4), that each quantum (each photon, each particle, each entangled set) is one group whose members are kept track of at every moment; that a quantum is absorbed or emitted only whole and at one place, its energy gathered there at once from wherever its members are, at the place picked with the usual probabilities and in a way no one can use to send a message; and that when a quantum splits its products carry the group on, and when groups meet they can merge? Or does he want the QGE as an axiom of its own, or held back until it can be derived? (Either way it would then go as a proposal to the panel before his ratification.)**
+
+**10. §7: new owed items, and corrected dispositions.** Insert after (d) (the order (d), (g), (h), (i), (j), (e), (f) follows the 4477 precedent):
+
+> - **(g) c03 reconciliation:** c03's "Collapse … not instantaneous … propagates outward at speed c" against gathering at once; state it as local locking of the outcome, or revise (§2).
+> - **(h) What a quantum is:** coherent states and indefinite number (group per mode?), identical particles (beam-splitter bunching), merging in entanglement swapping, and when membership ends (decoherence; c03's r_irrev), without which per-quantum A4 falls back into global A4 (§4).
+> - **(i) A quantum's energy on the lattice:** a definition A4 can enforce, given AP-4d (energy has no payload slot); his archive's total DP stretch as the candidate (§3).
+> - **(j) The road:** on his ruling, an AP-6 proposal citing the AP-4 consciousness-grouping anchor, then panel, then ratification (§4).
+
+Replace (f) with:
+
+> - **(f) Dispositions:** 4477 §5 answered in part. The split beam is handled by the group entity (yes). He withdraws light-speed timing. Whether the energy is spread or rides one half is not said directly (read as spread; Claude's reading). He proposes the QGE return, possibly using the Nexus. His history checked against the record: never formally retired; it fell out of use; the June "not necessary" concerned a chirality discriminator; at AP-4 he held group parameters back himself (§1). The at-once part is supplied by A4 (§2), on grounds for three or more parties, reaching the one photon only through one mechanism for both; c03's light-speed collapse owed a reconciliation. The per-quantum core is new content, apart from the gap, the Born weights and pair no-signalling, which are already registered (§3). (B) is recommended under PD-006 and convenient; it is the same physics as (A) with the Nexus, and awaits his ruling and then the proposal road (§4). His wider group entity is recorded for the vision lane, anchored at AP-4 (§5). The pilot-wave branch (4477 g) was not addressed by him and is kept as the rival. 4477(f) dispositions stand.
+
+**11. §8 reply.**
+- Replace "(it's been shown that any finite speed would let people send signals faster than light)" with "(for three or more particles it's been shown that any finite speed would let people send signals faster than light; for two, experiments put it above ten thousand times light speed; for one photon alone there's no such proof, so it rests on your QGE doing both jobs)".
+- After the first paragraph add: "On the history: nothing in the record ever retired the QGE. It dropped out of use. The 'not necessary' from June was about a chirality discriminator. And in August you yourself held group parameters back because you couldn't yet describe them. One of our own papers, the Born-rule companion, still says collapse spreads at light speed; that needs fixing."
+- Change "it adds the least" to "it adds no second mechanism and no consciousness attribute to the physics, though the physics is the same as your QGE using the Nexus".
+
+**12. Title and §9.**
+- In the title, replace "(Any Finite Speed Above c Would Allow Signalling, Bancal et al. 2012)" with "(for Three or More Particles Any Finite Speed Above c Would Allow Signalling, Bancal et al. 2012, Barnea et al. 2013; One Mechanism for Both Carries It to the Photon)".
+- In the title, after "Global Conservation Alone Allows Half the Energy at Each Detector", insert ", and the Absorber's Gap Stops Half Being Absorbed but Cannot Bring the Far Half".
+- §9 Not softened, add: "Bancal is a result for three or more particles; no theorem forces 'at once' for one photon"; "c03 contradicts 'at once' as written".
+- §9 Marked, add: "(B) and (A)-with-the-Nexus are the same physics; the recommendation is about labels and attachments"; "the June 'not necessary' as the judgement he recalls is Claude's reading".
+- Header: set "**Critic:** ACCEPT WITH CHANGES".
+
+## Optional notes
+
+- The Nexus frame vs the CMB point can also go to TODO-4364-PREFFRAME as a cross-reference. A more recent bound to cite there: Cocciaro, Faetti and Fronzoni, Phys. Rev. A 97, 052124 (2018). I did not check its numbers.
+- The registry's "Nexus is underused" list (charge quantisation, baryon number) would be a natural first test of (B), if adopted: per-quantum conservation by A4 should give those as applications.
+- His archive also gave the QGE other roles: entropy maximisation, confinement ("QGE splits tubes"), gravity surveys. The fragment could say these are not carried into (B).
+- The founder file's long title paraphrase is fine. It might add his own words "That is a new postulate," which §1 omits.
+
+## What the todolist entry must contain
+
+The entry begins "**4478 — One group per quantum (founder: the split beam is handled by his Quantum Group Entity, one of his first postulates, dropped when he took Claude to have judged it unneeded; light-speed timing withdrawn; the QGE may use the Nexus as its connection; asks whether it can be done without adding a mechanism; its origin in consciousness-grouping) (critic ACCEPT WITH CHANGES, all twelve taken in; nothing registered):**". It must then contain:
+
+- **Files:** the three files.
+- **Gains:**
+  - "at once" grounded on Bancal et al. 2012 (four parties) and Barnea et al. 2013 (three); pairs bounded only by Salart et al. 2008, with the CMB-frame caveat; the one photon reached only through one mechanism for both;
+  - c03's light-speed collapse flagged;
+  - global conservation alone allows half-and-half, the gap forbids half-absorption but cannot gather;
+  - Born weights (THEO-QM-2) and pair no-signalling (THEO-QM-5) already registered;
+  - the new core: membership, gathering at once, made and unmade whole (restated for scattering), inheritance and merging;
+  - (B), the per-quantum scope of A4, recommended, convenient, the same physics as (A) with the Nexus;
+  - the AP-4 consciousness-grouping anchor and the AP-6 road;
+  - the history checked: never formally retired; the June chirality "not necessary"; his own August caution;
+  - the wider group entity kept in the vision lane, with the reason corrected (bookkeeping vs character);
+  - the toy's limits marked (no-signalling and zero coincidences by construction; no timing).
+- **Owed:** (a) the per-quantum rule; (b) derivation from A1–A4; (c) enrolment; (d) the 4477 list carried word for word by label (4477 a, b, c, d [4476 list nested], e, e′, g, f); (g) c03 reconciliation; (h) what a quantum is (coherent states, identical particles, swapping/merging, end of membership and decoherence); (i) a quantum's energy on the lattice under AP-4d; (j) the AP-6 proposal road on his ruling; (e) founder question 4478 §6; (f) dispositions as in change 10.
+- Run `code/deferral_gate.py` before the format-patch, per D-9.
+
+Sources checked: [Bancal et al., arXiv:1110.3795](https://arxiv.org/pdf/1110.3795) (four parties; bipartite reproducible; privileged frame assumed); [Barnea et al., arXiv:1304.1812 / PRA 88, 022123](https://arxiv.org/pdf/1304.1812) (tripartite); [Salart et al., arXiv:0808.3316](https://arxiv.org/pdf/0808.3316) (≥10⁴ c for β ≤ 10⁻³; scans frames over 24 h); [Cocciaro et al., arXiv:1802.00423](https://arxiv.org/abs/1802.00423v1) (PRA 97, 052124).
+
+Nothing from memory was used beyond the standing rules in the brief, and nothing new needs saving. Files were read only; nothing in /root/CPP was modified.
+
+---
+
+## Claude's response to the 4478 return (not part of the verbatim report)
+
+All twelve required changes taken in: (1) 'at once' regrounded: Bancal et al. 2012 (four parties) and Barnea et al. 2013 (three); pairs bounded only by Salart et al. 2008, with the CMB-frame caveat (TODO-4364-PREFFRAME); the one photon reached only through one mechanism for both; (2) c03's light-speed collapse flagged, owed as §7(g); (3) §3 rewritten: the gap forbids half-absorption but cannot gather; Born weights (THEO-QM-2) and pair no-signalling (THEO-QM-5) credited as registered; 'whole or not at all' restated as 'made and unmade whole' for scattering; merging added; A4's present content (DI-bits, pair spin) and AP-4d stated; (4) the toy's limits marked; (5) the script brought into line (gap line; 'by construction'); (6) §4 says (B) is the same physics as (A) with the Nexus, lists what a quantum must survive (coherent states, identical particles, swapping, decoherence), and gives the road (AP-6 citing the AP-4 consciousness-grouping anchor, panel, ratification); the 'underused' note marked as a wish; (7) §5's reason replaced (bookkeeping vs character; C60 interference); (8) his history checked against the record in §1; (9) the founder question repaired; (10) §7 (g)–(j) added and (f) replaced; (11) §8 reply revised; (12) title and §9 revised. Quotes from c03, the AP-4 ratification, the v3.0 archive, the May handover and the June vision note were checked against the files before filing. Optional notes: the archive's other QGE roles (entropy, confinement, gravity) are not carried into (B); the Cocciaro 2018 bound not cited (unchecked). The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
