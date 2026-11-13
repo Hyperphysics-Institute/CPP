@@ -7329,3 +7329,97 @@ Nothing in this review came from memory beyond the standing-rule context the cal
 
 All fourteen required changes taken in: (1) §7 retitled 'Reply to his message' (he did not ask 'What do you think?' this time); (2) 'somewhat like' restored in §2, §8 and both titles; (3) 'between' marked as allowing, not requiring, the two-rhythm reading, the bold attributed, the reading marked convenient; (4) the excess-at-its-own-energy branch added to §3 as (i), owed as §6(h); (5) the energy-zero dependence of §3's ratios stated (rest energy ~1.24 × 10²⁰ Hz); the radiating quantity must be quadratic, a single orbital's give-and-take not radiating, owed as §6(j); the beat analogy corrected to loudness; (6) the toy's amplitude/energy inconsistency with §2 stated in §4 and §8, owed as §6(i); (7) the timing claim restated as a linearity/no-pulling condition, the toy's fixed rate marked built in; the semiclassical record stated; (8) THEO-QM-1/-2 cited with OPEN-QM-1, OPEN-QM-3; §6(b) revised; (9) the CP's 10.2 eV kinetic gain and the one-photon caveat added to §2, owed as §6(l); (10) the founder question replaced as suggested; (11) §7 overstatement removed; (12) the §8 convenient bullet strengthened; (13) §6 (h)–(l) added and (g) revised; (14) the title made conditional. Citations verified before filing: Crisp and Jaynes, Phys. Rev. 179, 1253 (1969) (semiclassical decay with a small time-dependent frequency shift); Gibbs, Phys. Rev. Lett. 29, 459 (1972) (Rb fluorescence consistent with the quantized field, inconsistent with neoclassical theory); and Gibbs, Phys. Rev. A 8, 456 (1973) (decay curves simple exponentials with times independent of the fraction excited) added; 'to verify' therefore removed. Optional notes taken: the n = 2 coincidence of rates marked; why the lower rhythm is listed stated; the script docstring says part 2 is an identity and the hand-over fading is imposed. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4476 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I reviewed read-only and changed no files. I ran the script, and its output matches every number in the fragment: 1.67× and about 10⁵× for the sum, 6.2 × 10⁻⁷ for Ritz, 2× for the 2E/h rhythm, and 36.8699° at both amplitudes. The 4475 §6 carry in §8(d) is word for word. I diffed it after changing the top-level labels "- **(x) " to "- 4475(x) **" and indenting two spaces, and found zero differences. The founder file has his text verbatim, his pasted summary in brackets and "4474 applied" marked as operational.
+
+Most of the patch is sound. Three things need fixing:
+- §5 drops a 4471 hedge.
+- The Ritz and Grangier numbers are stated too strongly.
+- §6 claims more than the argument supports.
+
+## Required changes
+
+**1. Ritz precision (title, §4, §9).** The three wavelengths are correct NIST vacuum values, averaged over fine structure (121.567, 102.5722 and 656.461 nm). But Ly-α is given only to the nearest 0.001 nm. That rounding (±0.0005 nm) alone moves the residual between −2.9 × 10⁻⁶ and +4.1 × 10⁻⁶, which I checked by running the numbers. So the printed 6 × 10⁻⁷ is smaller than what the inputs can resolve, and is luck. A second, smaller effect: the averaged lines do not share exact levels. Ly-α is 2p→1s, while H-α's blend includes 3→2s, and the 2s–2p Lamb shift is about 1 GHz, roughly 4 × 10⁻⁷ of Ly-β. Replace:
+- In the title: "to 6 Parts in 10⁷ for Hydrogen's 3→1 = 3→2 + 2→1" → "Within the Rounding of the Measured Wavelengths (a Few Parts in 10⁶) for Hydrogen's 3→1 = 3→2 + 2→1".
+- In §4: "to 6 parts in 10⁷ (fine-structure-averaged values; the residual is at the level of that averaging)" → "within the rounding of the inputs, a few parts in 10⁶ (the printed residual, 6 × 10⁻⁷, is smaller than that rounding and should not be read as the precision). The values are averaged over fine structure, and the averaged lines do not share exact levels (Ly-α is 2p→1s, H-α's blend includes 3→2s; the 2s–2p splitting is about 4 × 10⁻⁷ of Ly-β). Level by level, the principle holds to the precision of modern spectroscopy."
+- In §9: "to better than a part in a million" → "to a few parts in a million, as far as the rounded wavelengths go".
+
+**2. Grating: restore the dropped 4471 §3 hedge, and say what the script shows.** 4471 §3 said that "each short wavelet on its own is still smeared". Side by side, wavelets make one bigger short pulse. Only a sequence in step and without gaps gives a fine line, with width about 0.9 ÷ (number of crests). As written, 4476 §5 says "wavelets that each carry a small share diffract exactly like the whole photon", which is the founder's premise and which 4471 showed is false for a wavelet taken alone. What amplitude does not change is the *centre* angle. The *sharpness* belongs to the whole in-step train. Also, the script's part 4 cannot fail: scaling a signal cannot move the peak of its Fourier transform. It shows only that the wave equation is linear, and it uses a single 2,000-crest train. Replace in §5 the sentence beginning "So wavelets that each carry a small share…" with:
+
+"So the centre angle does not depend on how much energy each crest carries. But a single short wavelet on its own goes to that centre angle smeared over a wide range (4471 §3). Wavelets side by side make one bigger short pulse, no sharper. Only wavelets that follow one another in step and without gaps diffract like the whole photon, because together they *are* the whole photon's long train (4469 §3, 4471 §3, 4471 g). E = hf is not checked crest by crest at a grating; it applies to the whole. (Script part 4 shows only linearity, that scaling the amplitude cannot move the angle. The dependence on length was shown in 4471's script.)"
+
+In §9, "so tiny wavelets in step go to exactly the same angle as one big wave" → "so tiny wavelets go to the same angle as one big wave, and they give the same sharp line only if they follow one another in step and without gaps, so that together they are the one long wave".
+
+**3. Grangier–Roger–Aspect (§5, §9).** The citation is correct: Europhys. Lett. 1, 173 (1986), a heralded calcium-cascade source. They measured an anticorrelation parameter α = 0.18 ± 0.06, against a classical lower limit of 1. "About five times below" is fair. "Never on both" is not: the residual coincidences came mainly from cascades that put two photons into one gate. Replace:
+- In §5: "is detected on one side or the other, never on both: Grangier, Roger and Aspect found coincidences five times below the lowest any classical wave allows" → "is detected on one side or the other, almost never on both: Grangier, Roger and Aspect found coincidences about five times below the lowest any classical wave allows (α = 0.18 ± 0.06 against a classical α ≥ 1; the remainder is mostly from two photons in one gate)".
+- In §9: "only one of the two detectors ever fires" → "almost always only one of the two detectors fires".
+
+The Lamb and Scully citation is correct: "The photoelectric effect without photons", in *Polarisation, Matière et Rayonnement* (Presses Universitaires de France, 1969). So is the use made of it.
+
+**4. §6 claims more than it shows.** The logic is valid as far as it goes: if each level has rhythm E ÷ h and the beat radiates, then f = ΔE ÷ h, and energy conservation gives ΔE, so photon E = hf. It is not circular, because the h postulate moves from the photon to the level. Four corrections:
+- (i) **The colour depends on more than the fixed action.** "Granting it settles the colour" is wrong without the radiating squared quantity (4475 j) and the no-pulling condition (4475 k). These are the items §6 lists as not settled.
+- (ii) **The photon's E = hf cannot be wholly inherited from the levels.** Photons made with no levels obey it too: bremsstrahlung, synchrotron light, antenna and cavity photons, Compton-scattered and Doppler-shifted photons. So "with no separate rule for the photon" holds only for light from transitions between levels.
+- (iii) **The energy zero matters.** A fixed action per cycle is a physical rule, so it needs positive energy. With the zero at ionisation, a bound level's E ÷ h is negative. The level rhythm must therefore include the rest energy (about 1.2356 × 10²⁰ Hz), which is exactly what brings the ZBW in. Say so; it is what gives his ZBW suggestion its point.
+- (iv) **The constants differ by more than two.** His ruling puts ħ/2 per ZBW half-swing, so ħ = h ÷ 2π per full swing. That is neither h ÷ 2 (action per cycle at 2E/h) nor h (at E/h). So the gap is a factor of two *and* a factor of 2π (or π). 4447 §4 already had "h per cycle; ħ is per radian".
+
+Replace §6's sentence "The photon's frequency and energy stand in the ratio h with no separate rule for the photon: the photon's E = hf is inherited from the levels' E = hf plus conservation of energy." with:
+
+"For light from a transition between levels, the photon's frequency and energy would then stand in the ratio h with no separate rule: E = hf inherited from the levels plus conservation of energy, provided the beat itself radiates (4475 j) and the two rhythms do not pull (4475 k). It does not cover photons made without levels (bremsstrahlung, synchrotron, antenna and cavity photons, Doppler-shifted and Compton-scattered photons), which obey E = hf too. So a rule for the field itself is still owed. A fixed action per cycle needs a positive energy, so the level's rhythm must include the rest energy (about 1.2356 × 10²⁰ Hz). That is where his ZBW enters."
+
+Replace the factor-of-two bullet's last two sentences with:
+
+"His 4320 ruling put ħ ÷ 2 at the smallest step, restated at 4325 as the action of the whole Planck ZBW half-swing (4472 d). Two half-swings give ħ = h ÷ 2π per full swing, which is neither h ÷ 2 nor h. So besides the factor of two there is the factor between ħ and h (2π, or π) (h per cycle, ħ per radian: 4447 §4). Which holds is open."
+
+Also change "Granting it settles the colour and the photon's E = hf together" → "Granting it, with 4475 j and k, settles the colour and the E = hf of photons from transitions together". In §9, "the photon's E = hf comes for free" → "the E = hf of light from an atom's levels comes for free (light made without levels would still need its own rule)", and "a factor of two" → "a factor of two, and of 2π between ħ and h,".
+
+**5. "Sum" (§3).** Reading "sum" as a slip is fair, and it is marked as Claude's. His "beating against" points to the difference, and the sum is far off at either energy zero. But leave room for his meaning. In mixing (heterodyning), a real quantity that goes as the square of two rhythms produces the sum (and twice each rhythm) as well as the difference. Only a complex phase, as in |ψ|², gives the difference alone. Add to the end of §3:
+
+"(A second reading: in radio mixing, squaring two real oscillations gives both the sum and the difference. If his 'sum' meant that, the sum tone must be missing from what is radiated: hydrogen emits nothing at 1.67 times or 10⁵ times Lyman-α. Whatever does the squaring in the cloud (4475 j) must give the difference alone, as the overlap term of |ψ|² does.)"
+
+Add the same condition to §8(c).
+
+**6. Recall 4447 §4 in §2 (recalled items not presented as new).** Add: "**Action per cycle:** for a photon, h per cycle (ħ per radian), so a packet of N cycles holds N h (4447 §4). §6 moves the same rule to the level."
+
+**7. Disposition of 4475 §5 (§8(f)).** He partly answered the second question: the pace is "an inherent frequency associated with any given orbital energy", which means it is set by which orbital it is. Replace "4475 §5 not answered directly" with "4475 §5 answered in part: the pace of an orbital's give-and-take is an inherent frequency set by the orbital's energy (recorded). Whether the upper give-and-take stops, fades or runs on, and where the CP's added motion comes from (4475 l), not answered."
+
+**8. Reply §9: standard physics is not evidence for CPP.** "the measured spectrum already backs your 'inherent frequency for each orbital'" → "the measured spectrum already shows your 'inherent frequency for each orbital'. That is standard physics, a fact any theory has to match, not evidence for CPP in particular." Add to §10 under "Marked": "the grating/detection split leans on standard physics (linearity, the 1986 result); it is not evidence for CPP".
+
+**9. §8 additions (owed items, written into the patch).**
+- To (a): "with the energy zero (the level's rhythm must include the rest energy for a positive action per cycle) and the factor between ħ and h (his ħ/2 per half-swing gives ħ per full swing)"; and "the E = hf of photons not made by transitions between levels".
+- To (c): "the squaring must give the difference alone, with no sum tone (§3)".
+- To (b): "almost never both detectors (α = 0.18 ± 0.06)".
+
+**10. Header.** Update "**Critic:** pending." when this review is entered.
+
+## Optional notes
+
+- "Bohr's frequency condition seen from the other side" is fair. The closer historical parallel is Schrödinger 1926: the charge density beating at (E_m − E_n) ÷ h. That attribution could be added.
+- §6's "in step and without gaps by construction" assumes both give-and-takes run without break and without pulling (4475 k). It could say "given 4475 k".
+- The 4325 restatement (ħ/2 as the whole half-swing) was the record's restatement after his ruling on V_i, not words he wrote at 4325. 4476 follows the wording of 4472 d and the overview, which is acceptable. A more precise version would be "restated in the record at 4325".
+- §7's questions are physical pictures. The first offers "train or detector" and the second offers "same, faster or slower", so neither leads. The second bears on (a) and the energy zero, so it could be cross-referenced there.
+- A link worth making later: one photon at a time still builds up the fine grating line, each landing as one point. So the grating case also has a one-lump side, which joins §5's two halves.
+- The script could add a short-train case (1 to 10 crests) and a train with gaps or phase jumps, so that part 4 tests something rather than only showing linearity.
+
+## What the todolist entry must contain
+
+**4476 —** Founder: orbitals made of ZBW oscillations (his indivisible unit, ħ), each with an inherent frequency, beating against the other; asks how wavelets each diffract like the whole photon without each carrying hf. Owed:
+- (a) A fixed action h per cycle of a level's give-and-take (each level's rhythm = E ÷ h, the same h for every level). This includes the energy zero (rest energy must be included for a positive action per cycle), the factor of two (E ÷ h versus the ZBW's 2E ÷ h; 4453 §3), the factor between ħ and h (his 4320 ruling of ħ/2 as the smallest step, restated at 4325 as the Planck ZBW half-swing, so ħ per full swing; 4447 §4), and the E = hf of photons not made by transitions between levels (bremsstrahlung, antenna, cavity, Doppler/Compton) (= 4470 b, 4475 b, 4472 d, OPEN-QM-3).
+- (b) One lump at detection: what gathers a long train's energy, split by a mirror, into one detector (Grangier, Roger and Aspect 1986; α = 0.18 ± 0.06 against a classical ≥ 1) (= 4471 h, 4470 §2).
+- (c) The pulses as crests: what in the cloud pulses once per beat and sends one crest each time, the squared quantity giving the difference alone with no sum tone (= 4475 j; given 4475 k).
+- (d) The 4475 §6 list carried word for word (4475 a–l, including the nested 4474, 4473, 4472, 4471, 4470 and 4469 lists).
+- (e) Founder question 4476 §7: what gathers the split train into one detector; whether the electron's ZBW runs at the same pace in a lower orbital as in a higher one, faster, or slower.
+- (f) Dispositions: 4475 §5 answered in part (pace set by the orbital's energy); his ZBW-made orbitals recorded; "sum" read as a slip for difference (Claude's reading, with the mixing alternative noted); not the orbital speed, agreed; the Compton connection recalled (4446 §3, an identity, not evidence); Ritz agreement within the rounding of the inputs (a few parts in 10⁶), a fact to match, not evidence; the wavelet puzzle split (centre angle independent of amplitude; sharpness only from the in-step train without gaps; the real puzzle is one-lump detection); the inherited photon E = hf for light from levels, conditional on 4475 j and k (Claude's reading, convenient); the pulses-as-crests reading (Claude's, convenient). 4475(g) dispositions stand.
+
+Files reviewed: /root/CPP/founders_voice/4476_zbw_orbitals_beat_wavelet_puzzle.md, /root/CPP/series_standard_model/axiom_maturation/4476_terms_and_one_lump.md, /root/CPP/series_standard_model/code/4476_terms_and_wavelets.py. Context checked: 4475 (§2–§6), 4446 §3, 4447 §4, 4453 §3, 4471 §3, 4472 (the 4320/4325 text and item d), founders_voice/4320_* and 4325_*, theory-overview.md (unit of action), axiom-registry.md and theorem-registry.md (nothing there settles E ÷ h versus 2E ÷ h for the electron's ZBW).
+
+---
+
+## Claude's response to the 4476 return (not part of the verbatim report)
+
+All ten required changes taken in: (1) the Ritz agreement restated as within the rounding of the inputs (a few parts in 10⁶), with the fine-structure caveat, in the title, §4 and §9; (2) the 4471 §3 hedge restored: centre angle independent of amplitude, sharpness only from the in-step train without gaps; script part 4 described as showing linearity only; (3) Grangier–Roger–Aspect restated as 'almost never on both' (α = 0.18 ± 0.06 against a classical ≥ 1); (4) §6 narrowed to light from transitions, conditional on 4475 j and k; photons made without levels noted as needing their own rule; the energy zero (rest energy) and the factor between ħ and h added; (5) the mixing reading of 'sum' added to §3 and §8(c); (6) 4447 §4 recalled in §2; (7) 4475 §5 disposition changed to answered in part; (8) §9 says the spectrum is a fact to match, not evidence; §10 marks the grating/detection split as standard physics; (9) §8 (a)–(c) extended; (10) header updated. Optional notes taken: Schrödinger 1926 added as the closer parallel; 'given 4475 k' added; 'restated in the record at 4325'. The script's short-train and gapped-train cases are not added: they were shown in 4471's script, now cited. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
