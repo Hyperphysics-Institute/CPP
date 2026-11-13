@@ -7783,3 +7783,142 @@ Nothing from memory was used beyond the standing rules in the brief, and nothing
 
 All twelve required changes taken in: (1) 'at once' regrounded: Bancal et al. 2012 (four parties) and Barnea et al. 2013 (three); pairs bounded only by Salart et al. 2008, with the CMB-frame caveat (TODO-4364-PREFFRAME); the one photon reached only through one mechanism for both; (2) c03's light-speed collapse flagged, owed as §7(g); (3) §3 rewritten: the gap forbids half-absorption but cannot gather; Born weights (THEO-QM-2) and pair no-signalling (THEO-QM-5) credited as registered; 'whole or not at all' restated as 'made and unmade whole' for scattering; merging added; A4's present content (DI-bits, pair spin) and AP-4d stated; (4) the toy's limits marked; (5) the script brought into line (gap line; 'by construction'); (6) §4 says (B) is the same physics as (A) with the Nexus, lists what a quantum must survive (coherent states, identical particles, swapping, decoherence), and gives the road (AP-6 citing the AP-4 consciousness-grouping anchor, panel, ratification); the 'underused' note marked as a wish; (7) §5's reason replaced (bookkeeping vs character; C60 interference); (8) his history checked against the record in §1; (9) the founder question repaired; (10) §7 (g)–(j) added and (f) replaced; (11) §8 reply revised; (12) title and §9 revised. Quotes from c03, the AP-4 ratification, the v3.0 archive, the May handover and the June vision note were checked against the files before filing. Optional notes: the archive's other QGE roles (entropy, confinement, gravity) are not carried into (B); the Cocciaro 2018 bound not cited (unchecked). The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4479 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I reviewed both 4479 files read-only and changed nothing in /root/CPP.
+
+**What passed:**
+- **The 4478 carry is exact.** I checked it by program. 4478 §7 (167 lines), with labels changed from "- **(x) " to "- 4478(x) **" and indented two spaces, matches 4479 §6(c) line for line. That includes 4478's order (a, b, c, d, g, h, i, j, e, f).
+- **The founder file's message section appears verbatim.** His wording and double spaces are kept, and the pasted paragraph is in brackets.
+- **The three citations are correct.**
+  - Fein, Geyer, Zwick, Kiałka, Pedalino, Mayor, Gerlich and Arndt, Nature Physics 15, 1242 (2019): up to 2,000 atoms, beyond 25 kDa.
+  - Hornberger, Uttenthaler, Brezger, Hackermüller, Arndt and Zeilinger, PRL 90, 160401 (2003): fringes fade as gas pressure rises.
+  - Hackermüller, Hornberger, Brezger, Zeilinger and Arndt, Nature 427, 711 (2004): C70. The quote is exact; the abstract's last sentence reads "Decoherence by emission of thermal radiation is a general mechanism that should be relevant to all macroscopic bodies."
+- **The placement ruling is not inferred from his "yes."** §2 and §8 both say so.
+
+**What fails:**
+- **The pasted paragraph is misdescribed (§1).** It is the last paragraph of Claude's chat reply to 4478 as he received it. It is not the 4477 reply: molecules to stars first came up in his 4478 message, and 4477 has no molecule text. It also does not match 4478 §8 as filed. The 4478 critic rejected its reason in change 7: "the molecule/rock reason does not hold." So his "Yes" was given to a reason the record has withdrawn. 4479 says the filed reason "is what he describes"; it is not, and he has never been told of the correction.
+- **"Bonds can be broken piece by piece" brings back that rejected reason (§3).** Molecules in tier 2 also have bonds and can be broken up.
+- **Tier 3 is overstated.** "Unity is mechanical" is wrong, because bonds are quantum. "Does not act as one quantum" is the wrong wording for decoherence, which spreads the quantum state rather than ending it. And big, cold, isolated bodies do show quantum group behaviour, which the text ignores. His own archive calls a condensate's collective state "a hierarchical QGE."
+- **"The same molecules" is wrong (§7).** The 2,000-atom molecules were never decohered by gas or heat. Those experiments used C70.
+- **"The record so far" is out of date.** Sodium clusters of about 5,000–10,000 atoms, over 170,000 amu, were interfered in a 2026 Nature paper.
+- **One tension is not raised.** His "ħ unit of organization" sits against 4478's "each entangled set is one group."
+
+## Required changes
+
+**1. §1, replace the paragraph "The paragraph he pasted is from Claude's 4478 reply … which is what he describes." with:**
+
+> The paragraph he pasted is the last paragraph of Claude's chat reply to 4478 as he received it. It is not in 4478 as filed. The 4478 critic rejected its reason ("the molecule/rock reason does not hold", change 7: an entangled pair is broken too, when one photon is absorbed and the other goes on, and a molecule is itself one quantum system), and filed §5 and §8 give a different distinction, bookkeeping against character. So his "Yes" answers the reply as sent, including "keep the physics rule to single quanta and entangled sets" and the rock reason, which the record no longer holds. His own elaboration grounds larger groups in physical bonding and in consciousness, not in character. The correction is given to him in §7.
+
+**2. Founder file, same fact.**
+- Change the section heading parenthetical to: "(filed verbatim; the paragraph he pasted at the top, in brackets, is the last paragraph of Claude's chat reply to 4478 as he received it; it differs from 4478 §8 as filed)."
+- In the title, change "Anything Beyond an ħ Unit of Organization Is a Group of Groups" to "Anything Beyond an ħ Unit of Organization He Thinks of as Groups." "Group of groups" is Claude's phrase, not his.
+
+**3. §2, first bullet.** Replace "This confirms the per-quantum content of 4478 §3." with:
+
+> This confirms the per-quantum scope (the quantum as the group entity). It does not confirm the 4478 §3 list item by item (gathering at once, Born weights, no-signalling, merging), which he has not addressed.
+
+After the bullet's last sentence, add:
+
+> One tension: an entangled set holds more than one ħ unit (a pair of photons carries two units of spin), yet 4478 §3 and §6 make each entangled set one group. On his words, an entangled set might instead be a group of groups, and then whether gathering at once holds for it has to be said (§6 (f)). His archive also speaks of "hierarchical QGEs" and of "allowable/resonant assemblies of QGEs" (`rm_website_archive/conscious-point-physics-version-3-0.md`; `conscious-point-physics-version-1-1-part-2i.md`), so groups of groups are his own idea. (Claude's reading.)
+
+**4. §3 tier 2, the record sentence.** Replace "The record so far is molecules of up to 2,000 atoms and over 25,000 atomic mass units (Fein … 2019)." with:
+
+> Molecules of up to 2,000 atoms and over 25,000 atomic mass units have done so (Fein, Geyer, Zwick, Kiałka, Pedalino, Mayor, Gerlich and Arndt, Nature Physics 15, 1242, 2019), and since then clusters of about 5,000–10,000 sodium atoms, over 170,000 atomic mass units (Pedalino, Ramírez-Galindo, Ferstl, Hornberger, Arndt and Gerlich, Nature, 2026, doi:10.1038/s41586-025-09917-9).
+
+Also mark the sentence "So physical bonding can make a group of groups that behaves, as a whole, like one quantum group" as "(Claude's reading)".
+
+**5. §3 tier 3, replace the whole item with:**
+
+> 3. **Bound bodies whose motion as a whole is not kept as one quantum.** A dog or a mountain is held together by bonds, and each bond is itself quantum (shared electrons). What breakability does not mark is the line: molecules in tier 2 have bonds and can be broken up too (4478 critic, change 7). The mark is isolation. The body's motion as a whole shows no two-path behaviour, because a warm body cannot in practice be kept apart from its surroundings: collisions with gas molecules and photons of its own heat radiation carry off records of where it is. In standard physics this does not end the quantum state. It spreads it: the body's two paths become joined to different states of its surroundings and no longer interfere where the body is looked at. This has been watched in fullerene (C70) molecules, whose fringes fade as the gas around them is made denser (Hornberger, Uttenthaler, Brezger, Hackermüller, Arndt and Zeilinger, Phys. Rev. Lett. 90, 160401, 2003) and as they are heated until they glow (Hackermüller, Hornberger, Brezger, Zeilinger and Arndt, Nature 427, 711, 2004); decoherence by thermal emission "should be relevant to all macroscopic bodies" (ibid.). Size alone is not the line. Large bodies kept cold and isolated show quantum group behaviour in one chosen collective motion while the rest of the body does not:
+> - a Bose–Einstein condensate (two condensates interfere: Andrews et al., Science 275, 637, 1997);
+> - a superconducting loop in a superposition of opposite currents (Friedman, Patel, Chen, Tolpygo and Lukens, Nature 406, 43, 2000);
+> - a mechanical resonator cooled to its ground state (O'Connell et al., Nature 464, 697, 2010);
+> - two millimetre-sized diamonds whose vibrations were entangled at room temperature (Lee et al., Science 334, 1253, 2011).
+>
+> His archive calls a condensate's collective state "a hierarchical QGE" (`rm_website_archive/conscious-point-physics-version-1-1-part-2i.md`). So a dog is a group of groups, held by bonds, whose motion as a whole is not in practice one quantum group. Tier 3 is a matter of isolation and of which motion is meant, not of size or kind. (Claude's reading.)
+
+I did not re-check the four citations for the large cold bodies online. They are standard, but check them before filing.
+
+**6. §4.** Replace "and loses it, as a usable group, when its heat radiation or collisions do." with:
+
+> and its two-path behaviour fades when its heat radiation or collisions record its path: in standard physics the group is not destroyed but spread into the surroundings.
+
+**7. §5, replace the founder question.** The current one says the molecule "stops" going both ways, gives only two outcomes, and puts "if so" in front of the main alternative. Use:
+
+> **A large molecule sent through two slits in a good vacuum makes fringes, as one whole that went both ways. Heat the same molecule until it glows and the fringes fade, because the light it gives off carries away a record of which way it went. In his picture, is the bonded molecule one group entity as a whole, or a group of its members' group entities held together by bonds? And when it glows, what happens to the group that made the fringes: does it end, does it take in the light it gave off, or something else?**
+
+**8. §6, add owed items and revise the dispositions.** Insert after (b):
+
+> - **(f) An ħ unit and an entangled set:** whether an entangled set (more than one ħ unit) is one group entity, as 4478 §3 and §6 have it, or a group of groups on his "beyond an hbar unit of organization", and whether gathering at once holds for groups of groups (§2).
+> - **(g) Large quantum bodies:** where condensates, superconducting loops, ground-state resonators and entangled diamonds sit among the tiers (one collective motion acting as one quantum within a body that does not), and his archive's "hierarchical QGE" for a condensate (§3).
+
+Replace (e) with:
+
+> - **(e) Dispositions:** the quantum as the group entity confirmed as his (§2); the 4478 §3 list not confirmed item by item; larger groups recorded as assemblies, bound physically or by consciousness ("groups of groups" is Claude's phrase); his "Yes" was to the reply as sent, whose rock reason the 4478 critic rejected and the filed 4478 replaced, and the correction is given in §7; four tiers proposed (Claude's reading), with the line between tiers 2 and 3 set by isolation and recording, not by breakability or size (§3); consciousness-bound groups kept in the vision lane; the 4478 §6 placement ruling still open. 4478(f) dispositions stand.
+
+Order: (a), (b), (f), (g), (c), (d), (e), or keep alphabetical. Either way, state the order in the todolist.
+
+**9. §7 reply, replace the whole reply with:**
+
+> I agree, and it fits your archive: one group entity per quantum, and larger things built as groups of those groups.
+>
+> One correction first. The reason I gave you last time, that you can chip a piece off a rock, doesn't hold, and the filed version drops it. An entangled pair is broken too, when one photon is absorbed and the other goes on, and a molecule acts as one quantum. So breakability isn't the line.
+>
+> The line physics draws is isolation. Bonded things act as one quantum while nothing outside records their path. Molecules of two thousand atoms, and lately clumps of several thousand metal atoms, have been sent through interferometers and went both ways as one whole. A dog or a mountain can't be kept that isolated: every bump from an air molecule and every bit of heat it radiates carries off a record of where it is. That's been seen in smaller molecules (seventy-atom fullerenes): their fringes fade when the gas around them is thickened, or when they're heated until they glow. In standard physics the group isn't destroyed; it's spread into the surroundings. Size alone isn't the line, though. Big things kept cold and quiet (a superconducting loop, a condensate of atoms, a tiny drum cooled to its lowest state) do act as one quantum in one collective motion. Your archive called a condensate a "hierarchical QGE".
+>
+> One question that follows from your "hbar unit": an entangled pair carries more than one unit, yet last time we treated it as one group. Is it one group or a group of groups? Your looser groups, bound by consciousness, are beyond what physics can test for now, so they stay in the vision notes. I've asked you how you see the molecule that stops making fringes when it glows.
+
+**10. §8 PD-008.**
+- Replace the "Not softened" line with: "**Not softened:** the rock reason he said yes to is withdrawn and he is told so; a warm body's motion as a whole is not in practice one quantum group, though its bonds are quantum and isolated collective motions of large bodies can be."
+- Add to "Marked": "'groups of groups' is Claude's phrase; the reading of 'anything beyond an hbar unit of organization as groups' is Claude's; the ħ-unit / entangled-set tension is raised by Claude; his 'yes' confirms the scope, not the 4478 §3 list."
+
+**11. Title of the assessment file.**
+- Replace "(3) Bound Bodies Whose Unity Is Mechanical, Their Quantum Group-ness Spread Into the Surroundings by Collisions and Their Own Heat Radiation" with: "(3) Bound Bodies Whose Motion as a Whole Is Not Kept as One Quantum, Their Group Spread Into the Surroundings by Collisions and Their Own Heat Radiation (Not by Size: Cold, Isolated Large Bodies Show It in One Collective Motion)".
+- In tier (2), add "(and Sodium Clusters Over 170,000 amu, Pedalino et al. 2026)".
+- After "Molecules of 2,000 Atoms Interfere", insert "; the Rock Reason He Agreed To Is Withdrawn".
+
+## Optional notes
+- The 2026-06-09 vision note records his "weak/relational reading of group entities" ("not a new free-standing being") and lists levels (lepton–quark, atomic, molecular, crystalline/amorphous). It supports §2's "nothing larger is a new quantum group by fiat" and could be cited there.
+- This is a process lapse to record: the chat reply he received differed from the filed §8. Either the reply went out before the critic's changes, or it was not kept in step with them. A line in the todolist or handover would stop it recurring: chat replies must match the filed §8 after critic changes.
+- His AP-4 caution ("linking conscious points into larger conscious point groups … does not presently know how to … justify") still applies to tier 4. §3 could quote it rather than only point to it.
+
+## What the todolist entry must contain
+
+The entry begins "**4479 — Groups of groups (founder: yes, the quantum is the group entity; anything beyond an ħ unit of organization he thinks of as groups; molecules to planets named only as the precedent of group-ness made by physical bonding; looser groups bound by consciousness: family, community, school, state, nation, ethnic group) (critic ACCEPT WITH CHANGES, all eleven taken in; nothing registered):**". It must then contain:
+
+- **Files:** `founders_voice/4479_groups_of_groups.md`, `series_standard_model/axiom_maturation/4479_groups_of_groups.md`.
+- **Gains:**
+  - the per-quantum scope confirmed as his, not the 4478 §3 list item by item;
+  - the pasted paragraph identified as Claude's chat reply to 4478 as sent, which differs from filed 4478 §8; its rock reason (rejected by the 4478 critic, change 7) withdrawn to him;
+  - four tiers (Claude's reading), with the tier 2/3 line set by isolation and recording, not breakability or size;
+  - Fein et al. 2019 and Pedalino et al. 2026 for tier 2; Hornberger et al. 2003 and Hackermüller et al. 2004 (C70) for decoherence, spreading rather than ending the state;
+  - large cold bodies (condensates, superconducting loops, ground-state resonators, entangled diamonds) qualifying tier 3;
+  - his archive's "hierarchical QGE";
+  - consciousness-bound groups kept in the vision lane at the AP-4 anchor.
+- **Owed:**
+  - (a) a whole's group entity and how it ends or spreads (= 4478 h);
+  - (b) his placement ruling (4478 §6);
+  - (f) an ħ unit against an entangled set, and gathering at once for groups of groups;
+  - (g) large quantum bodies among the tiers, and the archive's hierarchical QGE;
+  - (c) the 4478 list carried word for word by label (4478 a, b, c, d [4477 list nested], g, h, i, j, e, f);
+  - (d) founder question 4479 §5 (as revised);
+  - (e) dispositions as in change 8;
+  - give the label order used.
+- **Process note:** the chat reply must match the filed §8 after critic changes.
+- Run `code/deferral_gate.py` before the format-patch, per D-9.
+
+Sources checked: [arXiv quant-ph/0402146 (Hackermüller et al. 2004, abstract)](https://arxiv.org/abs/quant-ph/0402146); [arXiv quant-ph/0303093 (Hornberger et al. 2003)](https://arxiv.org/abs/quant-ph/0303093); [Uni Wien, "2000 molecules exist at two places at once" (Fein et al. 2019)](https://quantum.univie.ac.at/news/details-news/news/2000-molecules-exist-at-two-places-at-once/); [Uni Wien, "metal clumps in quantum state" (Pedalino et al., Nature, doi 10.1038/s41586-025-09917-9)](https://www.univie.ac.at/en/news/detail/metal-clumps-in-quantum-state-vienna-research-team-breaks-records). The nature.com page for Pedalino would not load, so its volume and pages are unconfirmed.
+
+**From memory:** only the standing rules given in the brief, which match the stored PD-006 and PD-008 entries. Nothing new needs saving.
+
+---
+
+## Claude's response to the 4479 return (not part of the verbatim report)
+
+All eleven required changes taken in, change 1 adjusted on one fact: the pasted paragraph came from Claude's interim chat message on 4478, sent while the review ran; Claude's final 4478 message had already withdrawn the rock reason ('Molecules don't split the way I suggested: a whole C60 molecule interferes like one quantum'), so he had been told; §1 and §7 say so and repeat the correction. Otherwise as required: (2) founder-file heading and title; (3) scope confirmed, not the list; the ħ-unit / entangled-set tension, with his archive's 'hierarchical QGEs' and 'allowable/resonant assemblies of QGEs'; (4) Pedalino et al., Nature 649, 866 (2026), verified; (5) tier 3 rewritten (isolation, spreading not ending; large cold bodies); (6) §4; (7) founder question; (8) §6 (f), (g), (e), order a, b, f, g, c, d, e; (9) §7 rewritten; (10) §8; (11) title. Optional notes taken: the 2026-06-09 note's weak/relational reading cited (its exact wording quoted); the AP-4 caution quoted for tier 4; the process note recorded in §1 and the todolist. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
