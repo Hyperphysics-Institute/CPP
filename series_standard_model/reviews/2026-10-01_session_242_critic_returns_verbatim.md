@@ -7423,3 +7423,210 @@ Files reviewed: /root/CPP/founders_voice/4476_zbw_orbitals_beat_wavelet_puzzle.m
 
 All ten required changes taken in: (1) the Ritz agreement restated as within the rounding of the inputs (a few parts in 10⁶), with the fine-structure caveat, in the title, §4 and §9; (2) the 4471 §3 hedge restored: centre angle independent of amplitude, sharpness only from the in-step train without gaps; script part 4 described as showing linearity only; (3) Grangier–Roger–Aspect restated as 'almost never on both' (α = 0.18 ± 0.06 against a classical ≥ 1); (4) §6 narrowed to light from transitions, conditional on 4475 j and k; photons made without levels noted as needing their own rule; the energy zero (rest energy) and the factor between ħ and h added; (5) the mixing reading of 'sum' added to §3 and §8(c); (6) 4447 §4 recalled in §2; (7) 4475 §5 disposition changed to answered in part; (8) §9 says the spectrum is a fact to match, not evidence; §10 marks the grating/detection split as standard physics; (9) §8 (a)–(c) extended; (10) header updated. Optional notes taken: Schrödinger 1926 added as the closer parallel; 'given 4475 k' added; 'restated in the record at 4325'. The script's short-train and gapped-train cases are not added: they were shown in 4471's script, now cited. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4477 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+Patch 4477 is sound on its central physics. A pull that starts when the photon is absorbed at one detector and travels at light speed to the other cannot explain spacelike single-photon antibunching. The paper's numbers check out. The 4476 carry is exact. But the correction of the founder overstates what the record says, and the "deciding at the splitter fails" step is wrong as written. There is also an internal inconsistency between §3 and §4. Claude was right to correct him; the problems are in how fully and how accurately it was done.
+
+## Findings (checked against the repository and the primary source)
+
+- **(1) Is "the record does not find entanglement consistent with light-speed transmission" accurate?** Not as stated. The record holds several positions over time:
+  - **Website era.** `rm_website_archive/conscious-point-physics-vixra-article.md` has DI propagation "capped at r = c·t_P/2 … precluding supraluminal conveyance" and entanglement "from sequential SSS/DI propagations … sans nonlocality" (PSR chaining). `rm_website_archive/conscious-point-physics-version-1-1-part-2g.md` has "Explains entanglement as persistent PSR chaining without non-locality." This is very likely what he remembers.
+  - **QM-3 v1.** It used a DI-bit pool set at emission (a local hidden-variable model), and was later retracted.
+  - **SD series.** `series_foundations/series_superdeterminism/SD-1_nexus_superdeterminism.tex` §"Why CPP is local" says "the actual causal chain is local: the two particles shared a common causal past". `mechanism-SD-1.md` Step 5 says "CPP is local at the interaction level". `FAQ-SD-1.md` says the Nexus "violates statistical independence … while maintaining a specific form of locality".
+  - **Current reviewed position.** QM-3 V3.2 together with `philosophy-QM-3.md` ("CPP therefore violates *both* of Bell's assumptions … The non-locality (global constraint) is what produces the standard Bell violations"), `FAQ-QM-3.md` A1/B1 ("The Nexus is not local") and CONV-031 put the Bell violation on the non-local Nexus. The superdeterministic correlations are only O(ε) ~ 10⁻²⁶.
+  - **Why the substance survives.** Under the record's own ε-hierarchy, a local superdeterministic account cannot carry the Bell violation; that would need O(1) measurement dependence. CONV-031 §3.3 also says the SD story "cannot serve as an independent derivation" until K₀(λ) exists. Even SD-1's Claim 3 says the correlations come "faster than any signal". So the correction is right in substance, but "His recollection is not what the record holds" is unfair.
+- **(2) Guerreiro et al. 2012 numbers.** Confirmed from arXiv:1204.1712:
+  - About 10 m between detectors; "a signal would take 33 ns".
+  - Table I spacelike: P(1,1) = (2.3 ± 1.2)×10⁻⁷, P_A = 1.703×10⁻², P_B = 1.090×10⁻², giving a ratio of 1.24×10⁻³.
+  - Timelike: (2.2 ± 1.1)×10⁻⁷ / (1.616×10⁻² × 1.019×10⁻²), giving 1.34×10⁻³.
+  - 4 ± 2 triple coincidences per 30 min. The uncertainty is about ±50%, and the residual is near the detector-noise level (P_N = 9×10⁻⁶).
+  - Detection timing: matched to within 1 ns, with a 1 ns coincidence window and 400 ps detector jitter.
+  - The paper does **not** give the heralded photon's coherence time, so the fragment's "about a picosecond" is unsourced.
+  - On Solvay 1927: Einstein's case was "a single particle diffracted at a pin-hole" hitting a plate (an electron), not a photon split two ways.
+  - The paper itself presents Bohm's model, where "which detector clicks is already determined at the pin-hole" and the other detector "only 'sees' an empty wave", as resolving Einstein's puzzle and being empirically indistinguishable from quantum theory.
+- **(3) Is the light-speed-pull argument airtight?** Not in its present form:
+  - **(i)** It leans on the unsourced ~1 ps train length.
+  - **(ii)** It assumes B "acts on its own half alone". But §4 argues that a half-energy share cannot be absorbed across a gap. If halves cannot fire detectors, the "independent rate" conclusion does not follow.
+  - **(iii)** It does not say that "commitment" is placed at absorption (the founder's own Ag bond or band gap).
+
+  The airtight version uses the click timing. Each click came within about 1 ns of the arrival time set by the herald, while gathering anything from the other detector at c takes 33 ns. So whether or not a half can fire a detector, the energy was gathered at the firing detector before anything from the other could arrive. Cross-check (approximate): about 10% detector efficiency × about 35% coupling × ½ ≈ 1.75%, against P_A = 1.70% measured. Each site does register whole photons on time.
+
+  The pull argument does **not** rule out the energy being committed to one arm before detection (point 4).
+- **(4) Grangier 1986.** The second experiment (Mach-Zehnder, single photons from an atomic cascade, high visibility) is correctly cited. But it rules out only "the whole photon takes one arm and nothing takes the other". It does not rule out "the energy takes one arm while an energyless guide takes both" (de Broglie–Bohm, local for a single particle, no setting choices involved). Bell's theorem does not apply to a fixed-splitter, single-photon experiment.
+
+  That option costs his picture something: the energy would not be spread over the cohort, which conflicts with the archive definition (energy = total stretch of all the photon's DPs) and with 4470(f) "one extended excitation". It is still a live branch. The record already owes a pilot-wave thread (4464 d), and his own archive essay cites pilot-wave theory as support for the group entity.
+
+  Also, "the same kind of single photons" is ambiguous: Grangier used cascade photons, Guerreiro used SPDC.
+- **(5) Absorber / band-gap point.** Correct: 1 eV is below silicon's 1.12 eV gap. It is sharper with the real detector: InGaAs at 1550 nm (0.80 eV photon, about 0.75 eV gap) cannot absorb a 0.40 eV half. It must be reconciled with §3; see change 4.
+- **(6) Is "group entity ≈ Nexus" fair?** Partly. The archive (`rm_website_archive/the-plausibility-of-the-soul-of-ai.md`; QGE in `conscious-point-physics-version-1-1-part-1.md`, `-part-2f.md`, `-part-4.md`; `pair-production-and-the-cpp-matter-from-energy.md`) defines it as follows:
+  - One group entity **per quantum**, inherited from parent to daughters.
+  - A coordinating "meta-consciousness" that "issues placement commands" in order to conserve energy and momentum.
+  - Explicitly **supraluminal** or instant ("supraluminal 'label'", "Remote QGE interactions instantly affect local energy density. The QGE ensures 100% probability of collapse at this point").
+  - Proposed for exactly this problem: the double slit "regathered into a single dot", and a 700 nm photon absorbed by a 0.1 nm orbital.
+
+  So it is close to the Nexus in function: it does not travel and it enforces conservation. It differs in scope (one per quantum versus one global constraint) and in kind (a conscious coordinator versus a constraint). §6(b)'s statement that it was "not found … outside the website archive" is wrong: it is also at `founders_vision/physical_metaphysical_speculation/2026-06-09_chirality_primitive_QGE_and_imprint_epoch.md`. The fragment also never cites the archive at all. Note too that his own group entity was superluminal, which bears directly on his light-speed recollection.
+- **(7) Founder question.** It leads toward the convenient Nexus branch and omits the energy-pre-committed branch.
+- **(8) The 4476 carry.** Exact. I diffed 4476 lines 100–229 (all of §8) against 4477 lines 89–217, applying the label rule and the two-space indent, and found no difference. 4476 §7's second question (the ZBW pace) stays owed through 4476(e).
+- **(9) Script versus fragment.** The script prints 33.4 ns, 20.9 train-lengths for Lyman-α and 3.34×10⁴ for the 1 ps train. The fragment rounds the last to "some 30,000", which should be "about 33,000". The shortfall is 833×, so "a thousand times more often" should be "about 800 times (some three orders of magnitude)". The script's "coherence ~1 ps" is unsourced.
+- **Quote attribution.** "enforcing total DI-bit conservation across all Grid Points regardless of separation" comes from `conv031_qm3_entanglement_review_package_v1.0.md` §1, not from `papers/mechanism-QM-3.md`. The second quote ("operates atemporally … without any signal propagating …") is from mechanism-QM-3.md line 51.
+
+## Required changes
+
+**1. Rewrite the §2 opening and the first bullet** to give the record's history fairly. Replace "His recollection is not what the record holds. … states:" with:
+
+> His recollection matches earlier parts of the record, not its current reviewed position. The website-era CPP (`rm_website_archive/conscious-point-physics-vixra-article.md`; `…-version-1-1-part-2g.md`) capped every DI step at light speed and described entanglement as "sequential SSS/DI propagations … sans nonlocality" (PSR chaining). QM-3's first version used a DI-bit pool set at emission. And SD-1 still says "the actual causal chain is local: the two particles shared a common causal past" (`series_foundations/series_superdeterminism/SD-1_nexus_superdeterminism.tex`, "Why CPP is local"; `mechanism-SD-1.md` Step 5). The current reviewed position (QM-3 V3.2, `papers/philosophy-QM-3.md`, `papers/FAQ-QM-3.md`, CONV-031) is different:
+
+Keep the three bullets. Fix the attribution in the second bullet: the "regardless of separation" quote goes to CONV-031 §1, and "operates atemporally …" to `papers/mechanism-QM-3.md`. Add a fourth bullet:
+
+> - **The local readings do not carry Bell's violation on the record's own terms.** A local account escapes Bell only if the hidden state is correlated with the settings at order one; the record puts that correlation at ε ~ 10⁻²⁶ and the violation on the non-local Nexus ("CPP therefore violates *both* of Bell's assumptions … The non-locality (global constraint) is what produces the standard Bell violations", `philosophy-QM-3.md`), and CONV-031 §3.3 holds that the SD story cannot serve as an independent derivation until K₀(λ) exists. Even SD-1's Claim 3 has the correlations arrive "faster than any signal". SD-1's "Why CPP is local" is in tension with QM-3's philosophy and FAQ (Claude's reading; the wording is owed a reconciliation, §6 (e′)).
+
+Replace the closing parenthesis "(Whether 'the papers' he recalls … retracts one.)" with:
+
+> (So he is remembering real text; it is the earlier text, and the reviewed papers have moved off it.)
+
+**2. Replace the §2 group-entity paragraph:**
+
+> His dropped "group entity" is in the website archive (`rm_website_archive/the-plausibility-of-the-soul-of-ai.md`; as the "Quantum Group Entity", QGE, in `conscious-point-physics-version-1-1-part-1.md`, `-part-2f.md`, `-part-4.md`; `pair-production-and-the-cpp-matter-from-energy.md`; discussed in `founders_vision/physical_metaphysical_speculation/2026-06-09_chirality_primitive_QGE_and_imprint_epoch.md`). There it is one coordinating entity per quantum, passed from a photon to its daughter pair, that "issues placement commands to the constituent cohort of DPs" to conserve energy and momentum. He proposed it for exactly this puzzle: the photon or electron "regathered into a single dot", and a 700 nm photon absorbed whole by a 0.1 nm orbital. And he made it explicitly faster than light ("supraluminal", "Remote QGE interactions instantly affect local energy density"). In function it is close to the Nexus: it gathers without travelling, to conserve. It differs in scope (one per quantum, against one constraint for the whole lattice) and in kind (a coordinating consciousness, against a constraint). (Claude's reading.)
+
+**3. §3, Einstein attribution.** Replace "the same question Einstein raised at the 1927 Solvay conference: when a photon spread over two places is detected in one, how does the other place know not to fire?" with:
+
+> the question Einstein raised at the 1927 Solvay conference: when a particle's wave, spread over a screen after a pinhole (his example was an electron), is detected at one point, how does the rest of the screen know not to fire? For one photon split to two detectors it is the same question.
+
+Replace "(The counts are few, about 4 per 30 minutes, so the ratios are rough; the conclusion is not.)" with:
+
+> (The counts are few, 4 ± 2 per 30 minutes, so each ratio is uncertain by about half, and the residue is near what detector noise alone gives; the conclusion is not in doubt.)
+
+**4. Replace the §3 paragraph "A pull at light speed fails this." with the timing argument**, which does not depend on the train length and is consistent with §4:
+
+> **A pull at light speed fails this.** In the experiment each click came within about a nanosecond of the photon's arrival, which the herald fixes (1 ns window, 0.4 ns detector jitter), while anything travelling at c from the other detector needs 33 ns. So whenever a detector took the whole energy, nothing from the other detector could yet have reached it. If a half could fire a detector by itself, the two would fire independently and coincide about 800 times more often than measured (script). If a half cannot (§4), then neither could fire within the nanosecond, yet each fired at the rate expected for whole photons. **Parts arriving "at really different times" cannot rescue it,** because the click does not wait. (This takes the commitment to be at absorption, as in his picture: the Ag bond, the gap.) For scale only: a 1.6 ns Lyman-α train is half a metre long, and a pull 10 m away arrives twenty train-lengths late (script).
+
+**5. Replace the §3 paragraph "Deciding at the splitter fails the other way."**
+
+> **Deciding at the splitter fails only in its simplest form.** If each photon simply took one arm and nothing went the other way, there would be no pull to explain, but single photons sent through an interferometer that recombines the two arms interfere: each photon's chance of reaching a given output depends on both arm lengths (Grangier, Roger and Aspect 1986, the second experiment, with cascade photons). That rules out "nothing goes the other way". It does not rule out the energy taking one arm while a part carrying no energy goes both ways and guides it. That is de Broglie–Bohm, which Guerreiro et al. themselves name as answering Einstein ("which detector clicks is already determined at the pin-hole"; the other detector "only 'sees' an empty wave"). It matches every single-photon result here, and with a fixed splitter and no settings Bell's theorem has nothing to say. Its cost in his picture: the photon's energy would not be spread over the whole cohort (his archive defines it as the total stretch of all its DPs; 4470 f, "one extended excitation"), and the far half would carry none. CPP already owes a pilot-wave thread (4464 d).
+
+Also replace "These are standard results, facts any account has to match, not evidence for or against CPP in particular." with:
+
+> These are standard results, facts any account has to match, not evidence for or against CPP.
+
+**6. §4: present three branches and mark them.** After the first paragraph, replace "In CPP's own terms there is a candidate that does not travel: the Nexus, …" with:
+
+> Three ways remain, none derived: (i) **gathering that does not travel**, the Nexus holding one photon's cohort as one joint state as it holds a pair; (ii) **energy committed early**, the energy riding one part from the splitter while an energyless part goes both ways (§3), at the cost of his spread-energy picture; (iii) **a pull at light speed**, ruled out (§3). On (i): …
+
+Keep the existing (i) text and its convenient marking. Add after it:
+
+> (ii) is the less convenient branch for this lane, since it would move the energy off the cohort, and it is kept open, not dismissed.
+
+Add to the absorber paragraph:
+
+> The same holds for the detector in the experiment: an InGaAs gap (about 0.75 eV) absorbs the whole 0.80 eV photon at 1550 nm but not a 0.40 eV half. That is why §3 argues from the click time and not from the half acting alone.
+
+**7. Replace the §5 founder question** with a non-leading physical picture:
+
+> **A single photon is split by a half-silvered mirror to two detectors ten metres apart. One detector fires within a nanosecond of the photon's arrival, taking all its energy; light would need 33 ns to cross between them. In his picture, until a detector fires, is the photon's energy still spread over both halves of the cohort, or does it already ride with one half, the other half carrying none? If it is spread, what gathers it into the firing detector in that nanosecond? Is that what his group entity did, and does he still see the group entity as faster than light, as he wrote it?**
+
+**8. Reply (§7).**
+- Replace the first paragraph's second and third sentences with:
+
+  > But the record has two layers. The early website versions and a passage in the superdeterminism paper did describe entanglement as local, built from light-speed steps, and that is probably what you remember. The reviewed entanglement paper (QM-3) dropped its first version in so many words ("The previous CPP argument was wrong"), and its reviewed position is that entanglement comes from the Nexus, which keeps the pair's joint state whole at every moment without any signal travelling between the two sites. On the record's own numbers, the local readings can't produce the measured correlations.
+
+- Replace "A pull travelling at light speed … because the same photons interfere through both paths." with:
+
+  > Each detector fires within about a nanosecond of the photon arriving, but a pull travelling at light speed needs 33 ns to cross, so it can't do the job, however the parts are spread in time. The photon can't simply take one path at the mirror with nothing going the other way, because the same photons interfere through both paths. One option is still open, though: the energy takes one path while a part with no energy goes both ways and steers it. That's the pilot-wave picture. It would mean the energy isn't spread over the whole cohort, which cuts against your picture.
+
+- Add after "That sounds a lot like your group entity.":
+
+  > (in the archive you made it one per quantum and faster than light; the Nexus is one for everything).
+
+**9. §6 and §8 (PD-008).**
+- In §6(b) replace the text with:
+
+  > **(b) His "group entity":** found in the website archive (§2); whether its per-quantum scope and its superluminal coordination can be stated as the Nexus, or need more than one global constraint.
+
+- Add:
+
+  > - **(e′) The locality wording:** reconcile SD-1 "Why CPP is local" / `mechanism-SD-1.md` Step 5 / `FAQ-SD-1.md` ("a specific form of locality") with QM-3's philosophy and FAQ ("The Nexus is not local"; non-local, plus SD at O(ε)).
+  > - **(g) Energy committed early:** the pilot-wave branch for one photon (energy with one part, an energyless guide both ways), its cost to the spread-energy picture and to 4470 f, and the relation to 4464 d.
+
+- In the dispositions replace "corrected from the record (QM-3 retracted that model and uses the atemporal Nexus)" with:
+
+  > corrected from the record: he remembers the website-era PSR-chaining text, QM-3 v1 and SD-1's "Why CPP is local", and the reviewed position (QM-3 V3.2, philosophy-QM-3, CONV-031) is the non-local Nexus (§2)
+
+  Then replace "deciding at the splitter ruled out by single-photon interference" with:
+
+  > deciding at the splitter ruled out only where nothing goes the other way; energy committed early with an energyless guide left open (§3)
+
+- In §8, replace the "Not softened" bullet with:
+
+  > - **Not softened:** the reviewed record does not find entanglement consistent with light-speed transmission (it retracted the local model, and its local readings cannot carry the violation at ε ~ 10⁻²⁶); a light-speed pull is ruled out by the click timing in spacelike antibunching.
+
+  And add:
+
+  > - **Marked:** the pilot-wave branch is the inconvenient one and is kept open; the archive's group entity was superluminal.
+
+**10. Title and script.**
+- Title: change "The Record Says Otherwise: QM-3 Retracted Its Own Light-Speed-Compatible Model …" to say "The Reviewed Record Says Otherwise (His Recollection Matches the Website-Era and SD-1 Local Readings, Which QM-3 Has Moved Off) …". Replace "Deciding the Arm at the Splitter Fails Too (the Same Photons Interfere Through Both Arms)" with "Deciding at the Splitter Fails Only Where Nothing Goes the Other Way; Energy Committed Early With an Energyless Guide Stays Open".
+- Script: label the 1 ps line "(illustrative; the paper does not state a coherence time)". Compute the measured ratios from Table I (2.3e-7/(1.703e-2·1.090e-2) and 2.2e-7/(1.616e-2·1.019e-2)) instead of hardcoding them. Print the 1 ns click window against 33 ns.
+- §3 numbers: "about 33,000" and "about 800 times".
+
+## Optional notes
+
+- Grangier, Roger and Aspect 1986 is by Aspect's own group, a neat link to his "Alain Aspect's entanglement problem".
+- If a single-photon test that excludes local branch (ii) is wanted, it would need varying local-oscillator settings: Tan–Walls–Collett 1991, Hardy 1994, and Guerreiro et al. PRL 117, 070404 (2016) on single-photon path-entanglement steering. Verify before citing.
+- The residual coincidences in Guerreiro et al. are roughly what detector noise gives (P_N ≈ 9×10⁻⁶ × P_A,B ≈ 1–2×10⁻⁷), so the true ratio may be consistent with zero. Say so only with that hedge.
+
+## What the todolist entry must contain
+
+**4477 — The pricked bubble (founder: the one-lump puzzle is Aspect's entanglement problem; his dropped group entity; recalls the QM papers found entanglement consistent with light-speed transmission; proposes the photon's DP-arc bubble, pricked at one absorber, follows down into it, its parts arriving at different times) (critic ACCEPT WITH CHANGES; nothing registered):** (`founders_voice/4477_bubble_pricked_collapse_group_entity.md`, `series_standard_model/axiom_maturation/4477_the_pricked_bubble.md`, `series_standard_model/code/4477_pull_at_light_speed.py`).
+
+Gains:
+- His recollection traced to the website-era PSR-chaining text, QM-3 v1 and SD-1's "Why CPP is local".
+- The reviewed position stated as the non-local Nexus, with superdeterminism at O(ε) ~ 10⁻²⁶.
+- A light-speed pull ruled out by click timing (1 ns against 33 ns; Guerreiro et al. 2012, ratios 1.2×10⁻³ and 1.3×10⁻³, ±50%).
+- "Nothing goes the other way" ruled out by single-photon interference (Grangier, Roger and Aspect 1986).
+- Energy committed early with an energyless guide (pilot wave) left open.
+- Gathering by the Nexus kept as Claude's reading, convenient, not derived.
+- The absorber point (half a quantum is not absorbed across a gap).
+- His group entity located in the archive: one per quantum, superluminal, close to the Nexus in function, different in scope and kind.
+
+**Owed:**
+- **(a) One lump by the Nexus:** whether one photon's cohort is held as one joint state as QM-3 holds a pair; how the whole energy goes to one absorber; one-photon no-signalling (= 4476 b, 4471 h, THEO-QM-5).
+- **(b) His group entity:** whether its per-quantum scope and superluminal coordination can be stated as the Nexus.
+- **(c) Delivery at one absorber:** parts arriving at different times absorbed as one quantum across a gap.
+- **(d) Carried from 4476, word for word:** 4476(a)–(f), with the nested 4475–4469 carries.
+- **(e) Founder question 4477 §5.**
+- **(e′) The locality wording:** reconcile SD-1 "Why CPP is local" / `mechanism-SD-1.md` Step 5 / `FAQ-SD-1.md` with `philosophy-QM-3.md` / `FAQ-QM-3.md`.
+- **(f) Dispositions** (as revised).
+- **(g) Energy committed early:** the pilot-wave branch for one photon, its cost to the spread-energy picture and to 4470 f, and the relation to 4464 d.
+- **Also still owed:** the ZBW-pace question of 4476 §7, unanswered.
+
+## Files
+
+- `/root/CPP/series_standard_model/axiom_maturation/4477_the_pricked_bubble.md`
+- `/root/CPP/series_standard_model/code/4477_pull_at_light_speed.py`
+- `/root/CPP/series_foundations/series_superdeterminism/SD-1_nexus_superdeterminism.tex` (lines 187–200, 567–572)
+- `/root/CPP/series_foundations/series_superdeterminism/mechanism-SD-1.md` (Step 5)
+- `/root/CPP/series_foundations/series_superdeterminism/FAQ-SD-1.md` (line 73)
+- `/root/CPP/series_quantum_mechanics/papers/philosophy-QM-3.md`
+- `/root/CPP/series_quantum_mechanics/papers/FAQ-QM-3.md` (A1, B1)
+- `/root/CPP/series_quantum_mechanics/conv031_qm3_entanglement_review_package_v1.0.md` (line 56)
+- `/root/CPP/rm_website_archive/conscious-point-physics-vixra-article.md`
+- `/root/CPP/rm_website_archive/conscious-point-physics-version-1-1-part-2g.md`
+- `/root/CPP/rm_website_archive/conscious-point-physics-version-1-1-part-2f.md`
+- `/root/CPP/rm_website_archive/conscious-point-physics-version-1-1-part-1.md`
+- `/root/CPP/rm_website_archive/the-plausibility-of-the-soul-of-ai.md`
+- `/root/CPP/founders_vision/physical_metaphysical_speculation/2026-06-09_chirality_primitive_QGE_and_imprint_epoch.md`
+
+Primary source: Guerreiro et al., arXiv:1204.1712 (https://arxiv.org/pdf/1204.1712), Table I and the Bohm and Solvay passages.
+
+No memory facts were used beyond standing preferences. Nothing new needs saving to memory.
+
+---
+
+## Claude's response to the 4477 return (not part of the verbatim report)
+
+All ten required changes taken in: (1) §2 now gives the record's layers fairly (website-era PSR chaining 'sans nonlocality', QM-3 v1, SD-1 'Why CPP is local') against the reviewed position (QM-3 V3.2, philosophy-QM-3, FAQ-QM-3, CONV-031), quote attributions fixed, the ε-hierarchy bullet added, the locality wording owed as §6(e′); (2) his group entity located and described from the archive (one per quantum, superluminal, 'issues placement commands', 'regathered into a single dot'), close to the Nexus in function, different in scope and kind; (3) Einstein's Solvay example corrected to the pinhole case; the count uncertainty stated; (4) the light-speed-pull argument rebuilt on click timing (1 ns against 33 ns), consistent with the absorber point; (5) the splitter branch corrected: only 'nothing goes the other way' is ruled out; energy committed early with an energyless guide (de Broglie–Bohm, named by Guerreiro et al.) left open, owed as §6(g); (6) §4 gives three branches, the pilot-wave branch marked inconvenient and kept open; InGaAs point added; (7) the founder question replaced; (8) §7 reply revised; (9) §6 and §8 revised; (10) title revised; script computes the Table I ratios (1.24 × 10⁻³, 1.34 × 10⁻³), labels the 1 ps train illustrative, prints the 1 ns window against 33 ns; 'about 800 times' used. Quotes from the archive and SD-1 were checked against the files before filing. Optional notes: the Aspect-group link noted in the reply; the single-photon steering tests not cited (unverified); the noise-level residue stated with its hedge. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
