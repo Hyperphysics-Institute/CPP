@@ -8070,3 +8070,127 @@ The entry begins "**4480 — " and should contain:
 
 All nine required changes taken in: (1) the speed spread sourced (Brezger et al. 2002, 8–35%) and the ratio corrected to about 10¹¹; (2) the momentum (recoil) reading added and conceded: the right size and dependence, the standard recoil description; (3) the conclusion rewritten: the C70 data do not separate shrink from spread; no-kick marking does (Walborn et al. 2002), with Dürr, Nonn and Rempe 1998 added for atoms; (4) §4 gives both the joining and the collapse branch; (5) the founder question replaced (three questions); (6) §6 (a), (b), (c), (f) revised; (7) §7's second paragraph rewritten; (8) §8 revised, with 'Conceded'; (9) script (3) added and (1) prints the ratio. Citations verified before filing: Chapman et al., PRL 75, 3783 (1995) ('the lost coherence can be recovered by observing only atoms that are correlated with photons emitted into a limited angular range'); Dürr, Nonn and Rempe, Nature 395, 33 (1998) (back action 'too small to explain the disappearance of the interference pattern'); Pfau et al., PRL 73, 1223 (1994), confirmed from Hackermüller et al.'s reference list. Optional note taken: whether 'a DP's ZBW' is 4325's CP-level Planck ZBW added to §6(b). Process note recorded: a test of a founder mechanism must try its most favourable physical reading before calling it wrong. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
 
+---
+
+## Patch 4481 — critic return (fresh context), verbatim
+
+**Verdict: ACCEPT WITH CHANGES**
+
+I reviewed the four files read-only and changed nothing. The founder file is verbatim and consistent, and the 4480 §6 carry is exact. Three things need fixing: two physics statements in §2/§6/§7 go further than the evidence, the fifth-element analysis leaves out a provisional amendment that is already registered, and the bootcard misstates the session's scope (it covers 4459–4481, but Session 242 began at 4364) and its Copilot-filing instruction contradicts the 4470 precedent set in this same session.
+
+## What checks out
+- **Carry exactness (6).** I extracted 4480 §6 (lines 85–281), changed `- **(x) ` to `  - 4480(x) **`, indented every other line by two spaces, and diffed the result against 4481 §5(c). They are identical. The label order is a, b, c, d, e, f.
+- **Kickoff line.** It is byte-identical to the one in `handovers/2026-10-01_session_241_p4362_BOOTCARD.md`.
+- **HEAD and next number.** Git HEAD is 4480 (f9c16965), so 4481 once applied, and 4482 is next. `code/next_id.py EW` does report the 4300–4399 block exhausted.
+- **"rank 2 is the last rung".** The quote is accurate (axiom-registry.md line 331, R-RANK-2-REAFFIRMED, 4 Sep). The packet form agrees with the harmonisation note (line 329) and with A3′.
+- **BBO (4).** Fair and kind. §2 says "beta-boron crystals", i.e. beta-barium borate, and the reply just says "the special crystals (beta-barium borate)". It does not correct him pointedly.
+- **Reading his answer as yes to push and tie (5).** It is marked "(Claude's reading)" in §2 and again in §7. Note that he did not address the push at all; see change 6.
+- **The founder file.** It is verbatim, Claude's pasted questions are in brackets, and "4480 applied" is labelled operational.
+- **4480 summary spot-check.** The one-line-per-patch summaries for 4476–4480 and the correction list match the todolist entries 4476–4480 and the patch titles.
+
+## Required changes
+
+**1. Momentum conservation does not by itself entangle (check 2).** "Any interaction that conserves momentum between two systems correlates them" (§2) and "Any time two things trade momentum, they end up tied" (§6) are both false as stated. A photon diffracting off a grating, or bouncing off a mirror, conserves momentum but leaves no usable tie. The kick is lost inside the grating's own momentum spread, which is exactly why gratings do not wash out fringes, and CPP's own interferometers depend on that. Two systems come out entangled when their total momentum is well defined while the individual momenta are spread and correlated, and the kick can in principle be read from one of them. Two systems in a product state with definite momenta also conserve momentum.
+- In §2, replace "This agrees with the standard account: any interaction that conserves momentum between two systems correlates them, so entanglement is the rule, not the exception;" with:
+  "This agrees with the standard account, with one condition: an exchange of momentum ties two systems when the kick could in principle be read from one of them, i.e. when it is not lost in that system's own spread of momentum (a grating or a mirror takes the kick without keeping a usable record, which is why gratings do not wash out fringes). With that condition, entanglement is the rule, not the exception;"
+- In §6, replace "Any time two things trade momentum, they end up tied, and in ordinary matter" with:
+  "Whenever two things trade momentum and the trade could in principle be read from one of them, they end up tied (a heavy grating or mirror takes the kick without keeping a usable record, which is why gratings don't spoil fringes), and in ordinary matter"
+- In §7 Agreed, replace "entanglement normally accompanies momentum conservation" with "entanglement normally accompanies a momentum exchange that could in principle be read (Claude's condition: not when the kick is lost in the partner's own spread)".
+
+**2. Absorption does not as such make entanglement unreachable.** Claude agrees too readily with his third answer. Every Bell test reads a photon by absorbing it in a detector. Quantum memories absorb one photon of a pair and later release it with the entanglement intact: Clausen et al., Nature 469, 508 (2011), arXiv:1009.0489; Saglamyurek et al., Nature 469, 512 (2011). Atom–photon and atom–atom Bell violations are routine (Blinov et al., Nature 428, 153, 2004; Hofmann et al., Science 337, 72, 2012). What makes the tie unreachable is an absorber that is not isolated, so the correlation spreads into its surroundings.
+- In §2, third bullet, replace "and it agrees with the standard account (entanglement passes to the absorber and spreads, so the correlation becomes unreachable, not destroyed)." with:
+  "and it agrees with the standard account when the absorber is an ordinary, unisolated atom (the entanglement passes to it and spreads into its surroundings, so the correlation becomes unreachable, not destroyed). Absorption as such does not end the tie. An isolated absorber keeps it: quantum memories absorb one photon of a pair and later re-emit it still entangled (Clausen et al., Nature 469, 508, 2011; Saglamyurek et al., Nature 469, 512, 2011), and atom–photon and atom–atom Bell tests are done (Blinov et al. 2004; Hofmann et al. 2012). What diffuses the tie is the absorber's contact with its surroundings, not the absorption. (Claude's qualification.)"
+- In §6, replace "I agree too that an absorbed photon hands its tie to the atom, which spreads it on." with:
+  "I agree too that an absorbed photon hands its tie to the atom. In ordinary matter the atom spreads it on. An isolated atom, or a quantum memory crystal, can keep it and hand it back, so it's the spreading, not the absorbing, that hides it."
+- In §7 Agreed, append ", spreading when the absorber is not isolated (isolated absorbers keep the tie: quantum memories)".
+
+**3. The eraser claim: right, but the source has to be stated exactly (check 1).** Walborn et al. 2002 (arXiv quant-ph/0106078) report **coincidence counts only**: fringes at polarizer angle θ, antifringes at θ+π/2, "out of phase". They never report the signal photon's single counts. The statement that the unsorted pattern has no fringes whether or not the idler is measured is correct, but it follows from fringes plus antifringes adding to a smooth pattern and from no-signalling, not from a measured singles curve. Also, the which-path marker is the signal photon's own circular polarization (the quarter-wave plates), correlated with the idler. So "held jointly" is fair, and indeed part of the record rides on the first photon itself.
+- In §2, replace "Fringes (and their complementary antifringes) appear only when its hits are sorted by the partner's result (Walborn et al. 2002, coincidence counting)." with:
+  "Fringes (and their complementary antifringes) appear only when its hits are sorted by the partner's result (Walborn et al. 2002, who report coincidence counts only; the unsorted pattern is the sum of the fringes and the out-of-phase antifringes, smooth, as no-signalling requires). There the slit is marked in the first photon's own polarization (quarter-wave plates), correlated with the partner's."
+- "it needs only to be kept jointly by the two" can stay. Add "(the marking itself rides partly on the first photon)".
+
+**4. The fifth element: the packet as stated leaves out a registered provisional amendment, and an addition is not the only option (check 3).** axiom-registry.md line 39 records A3′ as **PROVISIONALLY AMENDED, Patch 4120**: LSP′ gains a fourth channel A_i (an axial vector, T₁_g; falsifiers TEST-A3G-1/2/3). The packet in 4481 is the pre-4120 form. This matters three ways:
+- "Complete" was proved over rotation irreps, and the 4120 amendment shows that the claim was relative to the group used.
+- His "5th element" may be counting A_i, or the origin address, as one of the first four.
+- A per-GP local entry cannot by itself carry Bell correlations (Bell's theorem). The registered home of a pair's joint state is the Nexus (QM-3; 4477 a).
+
+Replace the "A fifth element is an addition" sub-bullet with:
+
+"- **A fifth element: where it could sit.** The registry's packet is LSP′ = {origin address, t; Φ, V_i, Q_ij}, ranks 0, 1 and 2, "rank 2 is the last rung" (A3′, AP-4, harmonisation note; R-RANK-2-REAFFIRMED, founder, 4 September 2026), provisionally amended at Patch 4120 with a fourth channel A_i (the axial vector, T₁_g; falsifiers TEST-A3G-1/2/3 live). The completeness proved is over the irreducible moments of the census; it says nothing about labels that are not moments. Which count gives "fifth" is not said (Φ, V_i, A_i, Q_ij are four channels; with the origin address, five). Three places are possible (Claude's list): (i) in the existing channels: in the eraser the slit is marked in polarization, which in CPP is presumably carried by the orientation of the DP vectors (V_i), so that record needs no new entry; (ii) in the origin-address field: a group tag read off the addresses a GP receives, not a new slot; (iii) a new per-GP entry, which would extend what a GP holds and go by the proposal road (AP-6, citing the AP-4 grouping anchor, 4478 j), a natural home for 4478's per-quantum membership. Under every option, a record stored locally in each GP cannot by itself give a pair's Bell correlations; the registered home of a pair's joint state is the Nexus (QM-3; 4477 a), so a GP entry could at most be a local tag that the Nexus reads. Not adopted here."
+
+In §6, replace "A fifth entry in each GP would be an addition to what the registry calls a complete set (counts, vectors and the alignment tensor), so if we adopt it, it goes through the proposal process. It might also be the natural place to keep which group each quantum belongs to." with:
+
+"A fifth entry in each GP could be new, or it could already fit in what a GP holds: the eraser marks the slit by polarization, which the vectors already carry, and a group tag could be read off where the arrivals came from. If it is new, it goes through the proposal process. One limit either way: a record kept separately in each GP can't by itself produce the pair's Bell correlations; in the registry that joint tie is the Nexus's job, so a GP entry would be a local tag the Nexus reads."
+
+In §5(a), replace "how it relates to the complete packet LSP′ (rank 0/1/2)" with "how it relates to the packet LSP′ (rank 0/1/2, with 4120's provisional A_i), whether it fits an existing channel or the origin-address field, its relation to the Nexus (QM-3; a local entry cannot carry Bell correlations),". This is a change inside 4481's own (a), not inside a carry.
+
+In §7 Marked, add: "the three placements (existing channel, origin address, new entry) and the Bell limit on local storage are Claude's; the 'addition' branch is the one convenient to the proposal-road framing."
+
+Update the bootcard's 4481 bullet to match change 4 (see change 8).
+
+**5. Founder question (§4).** It offers a menu of Claude's options. Make it open and physical, and let him say what he is counting. Replace the bold question with:
+
+"**When he pastes the Copilot conversation: in his picture, what are the four things a GP already holds, so that this one is the fifth? What does the fifth one hold when a photon passes through one slit, and what changes in it when the partner, a mile away, is read? And where is the tie between the two photons kept while they are apart?**"
+
+**6. Dispositions §5(e) and the §2 header.** His first bullet answers the tie but says nothing about the push.
+- Replace "4480 §5 answered: push and tie read as yes" with "4480 §5 answered: the second and third questions directly; the first in part (the tie by his momentum-conservation answer; the push not addressed, read as yes; Claude's reading)".
+- Add: "4480(c) answered by his choice of reading (i) (the partner tied to the atom); with change 2's qualification (isolated absorbers keep the tie)."
+- Add to the list of dispositions: "Agreement qualified: momentum exchange entangles when the kick is readable (not a grating or mirror); absorption hides the tie only through an unisolated absorber."
+
+**7. Bootcard scope is wrong; the next window would lose 4364–4458 (check 7).** Session 242's review file (`series_standard_model/reviews/2026-10-01_session_242_critic_returns_verbatim.md`) begins at **Patch 4364** and runs to 4480. Git confirms continuous patches 4364–4480 from 1 Oct to 16 Nov with no handover in between; the newest handover before this one is Session 241 at 4362. The bootcard's "One long window, Patches 4459–4481", "Registered this window: nothing", "every critic return 4459–4481" and "Owed items: entries 4459–4481" are therefore wrong for the session, and a fresh window would never learn about the gravity, moving-PSR and matter-wave arc (4364–4444) or the early photon arc (4445–4458). Required edits to the bootcard:
+- **Orientation:** "One long window, Patches 4364–4481 (founder dialogue, one patch per founder message, each sent to a fresh critic). 4364–4444: the source rule and PSR pace, the black-hole interior (STOP retracted; DRAIN), how gravity moves a CP, inertia stored in DP arcs, the moving PSR and Lorentz contraction, the bending of light and fast electrons, matter waves (4443 the relay is the wave). 4445–4477: what makes a photon's colour and its narrow line. 4477–4481: the founder's Quantum Group Entity."
+- **Registered this session:** R-PSR-PACE-AT-N (4369); R-RULER-IN-PSR-UNITS (4385; ruling withdrawn by the founder at 4386; state its registry status); WC-DP-SEA-PV and WC-EINSTEIN-AREAL working conventions (4392); the 4404 registry note beside R-CP-NO-REST-MASS. "Nothing registered in 4445–4481. Axiom count unchanged." Verify each against the registry before writing.
+- **Review file:** "holds every critic return 4364–4481 verbatim".
+- **Owed items:** "`todolist.md` entries 4364–4481 and the TODO-43xx/44xx blocks (TODO-4364-SELFGRAV, TODO-4364-PREFFRAME, TODO-4362-NRECONCILE, TODO-4359-SOURCERULE, TODO-4358-BHLATTICE, TODO-4356-NCALIB, TODO-4352-EQUALFORCE, TODO-4353-LANDINGRULE)."
+- **Recommended tasks:** add "5. The gravity lane left at 4444: Session 241's queue (TODO-4359-SOURCERULE; TODO-4362-NRECONCILE; TODO-4356-NCALIB; TODO-4358-BHLATTICE), state each one's status after 4364–4444, with TODO-4364-SELFGRAV and -PREFFRAME."
+- **Title line:** "(Patch 4481, gravity and the moving PSR → the photon's colour and line → the quantum group entity)".
+- **Detail file:** add arc lines for 4364–4444 and corrections made in that range. Rename the file or retitle it to match (e.g. "..._p4481_gravity_photon_qge_arc.md"), and update STEP 2's path to match.
+- 4481 §3 has the same scope error: replace "(4459–4481, the todolist, the review file)" with "(4364–4481, the todolist, the review file)".
+
+**8. Bootcard: how to file the Copilot conversation (check 7).** "File it verbatim in `founders_voice/` (it is a written exchange, not a transcript; Copilot's text marked as Copilot's)" contradicts the precedent set in this same session. `founders_voice/4470_drop_time_and_collective_eigenmode.md` filed his own words verbatim and put Copilot's text under "## Copilot's analysis (summarized; it is a third party's text, not the founder's, and is not filed verbatim)". It also leaves out the spoken-material rule (bootup.md lines 154–160). Replace task 1's parenthesis with:
+
+"(as at 4470: his own typed words verbatim; Claude's pasted text in brackets; Copilot's text summarized under its own heading, marked as a third party's and not filed verbatim, with any Copilot sentence he relies on quoted. If his turns in it are dictated (speech-to-text, stream-of-consciousness), bootup §0.5's spoken-material rule applies to them: render them edited for clarity, add no content, say so in the header, and do not publish the raw text.)"
+
+Also change the 4481 bullet in "Where it stands" to: "The founder places the slit record in a **fifth GP element** (a tensor entry); whether that is new or fits an existing channel or the origin-address field is open, and a local GP entry cannot by itself carry Bell correlations (the Nexus, QM-3); a new entry goes by the proposal road. Agreements qualified: a momentum exchange entangles when the kick is readable; absorption hides a tie only through an unisolated absorber."
+
+## Optional notes
+- §1 collapses a double space in his quote ("a  tensor entry" becomes "a tensor entry"). The quote is otherwise faithful; harmless.
+- In the founder file, the bracketed questions are numbered "1." three times because of markdown. That is fine as pasted, but a note saying they are 4480 §5's three questions as he pasted them (from the reply, shortened) would help a reader.
+- Recommended task 1 could also say: check whether the Copilot conversation contains Claude text pasted by him (as at 4470), and bracket it.
+- The "Corrections made to the founder" list could add 4481's qualifications (changes 1 and 2) once they are taken in.
+- Standing rules in the bootcard: also add the 4481 lesson that an agreement with a standard-sounding founder claim must still be checked for its conditions (grating/mirror; isolated absorbers).
+
+## What the todolist entry must contain
+**4481 — Accounting for entanglement (founder: entanglement normally accompanies momentum conservation and is so widely distributed that a Bell test cannot reach it; the slit record is a fifth element, a tensor entry stored in each GP; an absorbed photon's entanglement passes to the atom and diffuses; asks whether to paste a long Copilot conversation now or hand over first) (critic ACCEPT WITH CHANGES, all N taken in; nothing registered):**
+- **Files:** `founders_voice/4481_entanglement_accounting_gp_record.md`, `series_standard_model/axiom_maturation/4481_accounting_for_entanglement.md`, `handovers/2026-11-16_session_242_p4481_BOOTCARD.md` and its detail file.
+- **Gains:**
+  - Distributed entanglement agreed, with the condition that the kick be readable (grating and mirror as counter-cases).
+  - Absorption agreed for unisolated absorbers. Isolated absorbers keep the tie (Clausen et al. 2011; Saglamyurek et al. 2011; Blinov et al. 2004; Hofmann et al. 2012).
+  - The eraser's unsorted pattern is fringeless by no-signalling. Walborn et al. 2002 report coincidences only, fringes and antifringes out of phase, marking in the first photon's own polarization. The record need only be held jointly, which corrects 4480's "brings them back" shorthand.
+  - The fifth element has three possible placements (existing channel, origin-address field, new entry), against LSP′ with 4120's provisional A_i. A local GP entry cannot carry Bell correlations; that is the Nexus (QM-3).
+  - BBO named.
+  - Sequencing: handover before the Copilot paste (PD-006).
+- **Owed items, in label order a, b, c, d, e:**
+  - (a) The fifth GP element, in the amended §5(a) wording.
+  - (b) The Copilot conversation, read against 4478–4481.
+  - (c) Carried from 4480 word for word: the entire 4480 §6 block, 4480(a)–(f) with all nested carries.
+  - (d) Founder question 4481 §4.
+  - (e) Dispositions, as amended by change 6.
+- **Process note:** the handover must cover the whole session from the previous handover (4364–4481), not the latest arc. Copilot text is filed as at 4470 (summarized, third party), and his dictated turns are edited for clarity under bootup §0.5.
+- Run `code/deferral_gate.py` on the format-patch and check the carry by program, as at 4480.
+
+## Sources
+- [Walborn et al., "A double-slit quantum eraser" (arXiv quant-ph/0106078)](https://www.arxiv.org/pdf/quant-ph/0106078)
+- [Clausen et al., "Quantum storage of photonic entanglement in a crystal" (arXiv:1009.0489)](https://www.arxiv.org/abs/1009.0489)
+
+## Memory note
+No new facts about the user for memory. I used his stored preferences (verbatim founder text, PD-006/PD-008, owed items carried word for word, spoken transcripts edited for clarity and not published raw) only as review criteria.
+
+**Plain Language:** The patch is mostly sound, and the long list of open items is copied exactly. Two of Claude's agreements go too far. Trading momentum doesn't always tie two things together: a heavy grating takes the kick and keeps no usable record. And absorption alone doesn't hide a tie, because isolated atoms and memory crystals keep it. The founder's "fifth element" may not be a new entry at all, and any entry stored separately in each grid point can't by itself explain the pair's correlations, which the registry gives to the Nexus. The handover covers only the last part of the session, which actually began at 4364. And it says to file the Copilot conversation word for word, though at 4470 Copilot's text was summarized as a third party's.
+
+---
+
+## Claude's response to the 4481 return (not part of the verbatim report)
+
+All eight required changes taken in: (1) the momentum condition (readable kick; grating and mirror as counter-cases); (2) the absorption qualification (isolated absorbers keep the tie; quantum memories, atom–photon and atom–atom Bell tests); (3) the eraser stated exactly (coincidences only; smooth unsorted pattern by no-signalling; marking on the first photon's polarization); (4) the fifth element: LSP′ with 4120's provisional A_i, three placements, the Bell limit on local storage; (5) the founder question replaced; (6) dispositions revised; (7) the bootcard and detail file rewritten to cover the whole session, 4364–4481 (registrations checked against the registry: R-PSR-PACE-AT-N; R-RULER-IN-PSR-UNITS struck; WC-DP-SEA-PV and WC-EINSTEIN-AREAL; the 4404 note), owed TODO blocks listed, task 5 added, the detail file renamed `..._p4481_gravity_photon_qge_arc.md`, §3's scope fixed; (8) the Copilot filing instruction now follows 4470 (summarized third-party text; dictated turns edited under bootup §0.5). Optional notes taken: the double space restored in §1's quote; the founder file's bracket note; the Claude-text check in task 1; the 4481 corrections and the conditions lesson added to the detail file and bootcard. Citations from the critic (Clausen 2011, Saglamyurek 2011, Blinov 2004, Hofmann 2012) are standard and filed as the critic gave them. The verbatim report above was transcribed from the critic's hand-back message, since the session transcript file was not available after a container change.
+
