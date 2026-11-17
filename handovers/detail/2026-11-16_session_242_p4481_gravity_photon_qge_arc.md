@@ -5,6 +5,22 @@ assessment, critic changes taken in), often a script under `series_standard_mode
 `series_standard_model/reviews/2026-10-01_session_242_critic_returns_verbatim.md`, a `todolist.md` entry, and a `research_frontier.md` line. The todolist entry
 headings for 4364–4481 are the fullest per-patch index.
 
+## Where it stands (moved from the boot card at 4482)
+
+- **Colour.** The colour is a difference between two levels' rhythms (the Ritz combination; 4476). If each level's give-and-take carries a fixed action h per
+  cycle, E = hf for light from levels is inherited (4476 §6, convenient). Open: the factor of two and the ħ–h factor (4476 a), the energy zero (rest energy),
+  the radiating quadratic quantity, no pulling between rhythms (4475 j, k), and why the shed excess fades exponentially.
+- **One lump.** A light-speed gathering is ruled out by click timing (4477). The founder restored his QGE (4478): one group per quantum, gathered at once,
+  made and unmade whole; recommended as the per-quantum scope of A4 (the Nexus), awaiting his **placement ruling** (A4 or its own axiom) and then the AP-6
+  road from the AP-4 grouping anchor. c03's "collapse propagates at c" needs reconciling (4478 g).
+- **Groups of groups.** The quantum is the group entity, one ħ unit = a DP's ZBW (4479–4480); larger groups are assemblies; whether an assembly acts as one
+  quantum is set by isolation, not size. Shrinkage on emission is right as bookkeeping and as recoil; the group also spreads to take in the light (no-kick
+  erasers; 4480).
+- **Accounting for entanglement (4481).** The founder places the slit record in a **fifth GP element** (a tensor entry); whether that is new or fits an
+  existing channel or the origin-address field is open, and a local GP entry cannot by itself carry Bell correlations (the Nexus, QM-3); a new entry goes by
+  the proposal road. Agreements qualified: a momentum exchange entangles when the kick is readable; absorption hides a tie only through an unisolated absorber.
+
+
 ## 4364–4444: gravity, the PSR and matter waves (from the todolist headings)
 - 4364–4373: the source rule's exponent fixed as a requirement; the PSR and the GP count; addition and the curve's shape; R-PSR-PACE-AT-N registered (4369);
   overlap ruled out as the ringdown fix; the founder's halt mechanism and domains; clocks against rulers.
@@ -53,3 +69,33 @@ headings for 4364–4481 are the fullest per-patch index.
 - Test a founder mechanism in its most favourable reading (4480); check the conditions on an agreement (4481).
 - The handover must cover the whole session since the previous handover (4481: the first draft covered only 4459–4481).
 - The deferral gate passed on every patch; carries were checked by program each time.
+
+## §15 Step A–H Completion Audit (Patch 4481, completed at Patch 4482)
+- **A (Tier 1 session log):** ✓ `session_logs/2026-11-16_session_242_log.md` (4482).
+- **B (Tier 2 transcript pointers):** ✓ `session_logs/transcript-cross-paper.md` entries 085–089 (4482); founder text in `founders_voice/` (his typed text
+  verbatim, Claude's quoted text in brackets).
+- **C (Tier 3 vignette):** N/A — foundations dialogue (axiom_maturation and the GR/QM lanes), not paper-scoped; no paper version changed in the session.
+- **D (Tier 4 reasoning):** ✓ per-patch fragments for every one of 4364–4481 (checked by program over the git log: all 118 numbered patches have a fragment;
+  113 have a founders_voice capture; 4411, 4413, 4422–4424 are Claude-initiated workings with no founder input), with verify scripts under the lanes' `code/`
+  folders where a number was computed.
+- **E (registries):**
+  - `research_frontier.md`: ✓ updated every patch (F[3] line); 4482 adds the close line.
+  - `future_projects.md`: N/A — no multi-session project registered; open work is in `todolist.md`.
+  - `theorem-registry.md`: N/A — no theorem registered or changed.
+  - `axiom-registry.md`: ✓ in-session (R-PSR-PACE-AT-N 4369; R-RULER-IN-PSR-UNITS 4385, struck 4386; WC-DP-SEA-PV, WC-EINSTEIN-AREAL 4392; 4404 note);
+    nothing in 4445–4482; the QGE / per-quantum rule awaits his ruling (4478 §6) and the AP-6 road.
+  - `paper_catalog.md`: N/A — no paper changed.
+  - `predictions.md`: N/A — no new prediction registered.
+  - `master_glossary.md`: N/A — QGE, "ħ unit" and "groups of groups" are not adopted terms yet (awaiting the ruling); add on adoption.
+  - `methods_catalogue/methods_catalogue.md`: N/A — methods used (toy spectra, chirp tolerance, sinc decoherence factor, carry-by-program check) are standard.
+  - `methods_catalogue.md` (METH-CHIR): N/A.
+  - `organizational_frontier.md`: N/A — the process lessons are durable rules in bootup §0.5 D-15 (G), not open organisational questions.
+  - `INDEX.md`: N/A — no anthology chapter.
+  - `todolist.md`: ✓ an entry per patch 4364–4481; `code/deferral_gate.py` PASS on every patch.
+  - `theory-overview.md`: N/A — `code/overview_staleness_gate.py` PASS at 4482 (the scorecard registries' last changes predate it).
+- **E′ (reasoning-capture audit):** ✓ as D; no gaps found.
+- **F (reviewer artifacts):** ✓ every fresh-context critic return 4364–4481 verbatim with Claude's response, in
+  `series_standard_model/reviews/2026-10-01_session_242_critic_returns_verbatim.md`.
+- **G (protocol/OS):** ✓ bootup §0.5 **D-15** (most favourable reading; conditions on agreements; the chat reply says what the critic changed) and the §0.5
+  count corrected to fifteen (4482).
+- **H (handover document):** ✓ boot card (now under the 4 KB cap, 4482) + this detail (4481, completed 4482); kickoff line echoed in chat.
