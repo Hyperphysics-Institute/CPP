@@ -96,3 +96,5 @@ Created at Patch 0974a (Step B of the Session 228 close). **Its absence until th
 - `087` 2026-10-26/11-11 Session 242 QM/EM — the photon's colour and narrow line (4445–4476) → `series_standard_model/axiom_maturation/444[5-9]*–4476*`; `series_standard_model/reviews/2026-10-01_session_242_critic_returns_verbatim.md`
 - `088` 2026-11-12/16 Session 242 QM foundations — the QGE: pricked bubble, one group per quantum, groups of groups, spread or shrink, accounting for entanglement (4477–4481) → `series_standard_model/axiom_maturation/447[7-9]*, 448[01]*`
 - `089` 2026-11-16 Session 242 — close: boot card + detail (4481); §15 A–H artifacts, D-15 (4482) → `handovers/2026-11-16_session_242_*`, `session_logs/2026-11-16_session_242_log.md`
+- `090` 2026-11-18 Session 243 QM foundations — the Copilot conversation on accounting for entanglement filed bare in four tranches (4483–4486) → `founders_voice/448[3-6]_copilot_entanglement_tranche_*`; `todolist.md` 4483–4486
+- `091` 2026-11-18 Session 243 — close: boot card + detail, session log (4487) → `handovers/2026-11-18_session_243_*`, `session_logs/2026-11-18_session_243_log.md`

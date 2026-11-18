@@ -1,7 +1,8 @@
 # CPP Research Frontier
 
 **Location:** `/CPP/research_frontier.md`
-**Last updated:** 18 Nov 2026 (Patch 4486, foundations with QM, Session 243 — **Copilot entanglement conversation, tranche 4 of 4 filed; filing complete (4483–4486)** (the eight constraints and Copilot's build order). The reading against 4478–4481 is next.)
+**Last updated:** 18 Nov 2026 (Patch 4487, Session 243 close — session log, transcript entries 090–091, boot card and detail. Next: the reading of 4483–4486 against 4478–4481, Patch 4488.)
+Earlier **Last updated:** 18 Nov 2026 (Patch 4486, foundations with QM, Session 243 — **Copilot entanglement conversation, tranche 4 of 4 filed; filing complete (4483–4486)** (the eight constraints and Copilot's build order). The reading against 4478–4481 is next.)
 Earlier **Last updated:** 18 Nov 2026 (Patch 4485, foundations with QM, Session 243 — **Copilot entanglement conversation, tranche 3 of 4 filed** (the founder's Group Entity postulate and fifth element; Copilot's relational bond records). Filing only.)
 Earlier **Last updated:** 18 Nov 2026 (Patch 4484, foundations with QM, Session 243 — **Copilot entanglement conversation, tranche 2 of 4 filed** (photon recoil; "can" versus "are" entangled). Filing only.)
 Earlier **Last updated:** 18 Nov 2026 (Patch 4483, foundations with QM, Session 243 — **Copilot entanglement conversation, tranche 1 of 4 filed** (BBO; Bell tests; Mach-Zehnder). Filing only; the reading against 4478–4481 follows when all four are filed.)
