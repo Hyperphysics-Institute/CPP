@@ -1,7 +1,8 @@
 # CPP Research Frontier
 
 **Location:** `/CPP/research_frontier.md`
-**Last updated:** 18 Nov 2026 (Patch 4487, Session 243 close — session log, transcript entries 090–091, boot card and detail. Next: the reading of 4483–4486 against 4478–4481, Patch 4488.)
+**Last updated:** 18 Nov 2026 (Patch 4488, foundations with QM, Session 244 — **the Copilot entanglement conversation (4483–4486) read against 4478–4481 and the registry**: Copilot's three jobs map onto homes the corpus already names (4478's per-quantum membership; QM-3's Nexus for the joint state; THEO-QM-2 and his 2025 QGE wording for the update); a tie read out of what each CP carries alone is bounded |S| ≤ 2 (QM-3's own retraction, restated per CP; script 5/5), his "direct connection regardless of address" is the Nexus reading; "produces a displacement" agreed as selection under two conditions (no momentum of its own; no-signalling on the weights). Critic ACCEPT WITH CHANGES, all fourteen taken in; nothing registered. Next: his answer to 4488 §6 and the 4478 §6 placement ruling.)
+Earlier **Last updated:** 18 Nov 2026 (Patch 4487, Session 243 close — session log, transcript entries 090–091, boot card and detail. Next: the reading of 4483–4486 against 4478–4481, Patch 4488.)
 Earlier **Last updated:** 18 Nov 2026 (Patch 4486, foundations with QM, Session 243 — **Copilot entanglement conversation, tranche 4 of 4 filed; filing complete (4483–4486)** (the eight constraints and Copilot's build order). The reading against 4478–4481 is next.)
 Earlier **Last updated:** 18 Nov 2026 (Patch 4485, foundations with QM, Session 243 — **Copilot entanglement conversation, tranche 3 of 4 filed** (the founder's Group Entity postulate and fifth element; Copilot's relational bond records). Filing only.)
 Earlier **Last updated:** 18 Nov 2026 (Patch 4484, foundations with QM, Session 243 — **Copilot entanglement conversation, tranche 2 of 4 filed** (photon recoil; "can" versus "are" entangled). Filing only.)
