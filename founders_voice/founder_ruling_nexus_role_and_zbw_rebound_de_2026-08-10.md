@@ -60,3 +60,9 @@ mechanism. Registered verbatim per the founders_voice discipline.**
   expansion increment ∝ current spacing ⇒ ȧ ∝ a ⇒ a de Sitter-like
   term, w = −1 exactly (verified `scripts/3059_zbw_rebound_desitter.py`).
   ID minting deferred to the panel round per DG-3 discipline.
+
+---
+
+**[Forward pointer, Patch 4490 — annotation only; the text above is unchanged.]** On 18 Nov 2026 the founder stated the Nexus has two jobs:
+synchronizing the Moment, and updating the shared vector (`founders_voice/4490_nexus_two_jobs_and_threshold_of_irrelevance.md`, R-A4-JOBS, registered
+under A4). See the scope note there on how R-A4-ROLE's two clauses now read; he said he is not sure what he meant here at 3059.

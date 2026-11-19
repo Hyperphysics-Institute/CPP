@@ -448,3 +448,21 @@ with clocks at ~3×; critic owed).
 
 **Status.** Clauses under A3′/AP-4 (transport); **axiom count unchanged at 9.**
 
+
+## Registered ruling under A4 — R-A4-JOBS (18 November 2026, Patch 4490, foundations lane under PD-006)
+
+**Source (founder, verbatim, `founders_voice/4490_nexus_two_jobs_and_threshold_of_irrelevance.md`, 18 Nov 2026):** *"synchronizing the Moment is one
+job; updating the shared vector is a second job. The two jobs could be done on the same transmission."* With: *"Each GP address is a point of
+Consciousness and is individual (holding its address and occupants, doing calculations, communicating with the Nexus). The Nexus connects with every GP and
+provides the timing pulse that governs the universe."* The shared vector is the one of 4489 (each CP reports every Moment; the Nexus computes one vector for
+the connected system and returns it as each CP's input).
+
+**Registered statement.** *The Nexus has two jobs: it synchronizes the Absolute Moment (the timing pulse of every GP), and it updates the shared vector, the
+joint record of connected CPs. Both may ride one transmission. Each GP communicates with the Nexus.*
+
+**Reading (Claude's, PD-008, not his words):** job (2) is the joint-state and conservation role QM-3, QM-4 (thm:unitary) and SD-4 (μ) already give A4, so
+the A4 row stands as written; R-A4-ROLE (3059) reads as job (1) of two and as "not a domain-separation agent" (scope note in the 4490 founders_voice file;
+he said he is not sure what he meant at 3059). The micro-mechanism of job (2) stays the registered debt K₀(λ), OPEN-SD-1..4; the Nexus label is not the
+mechanism (CONV-031 §3).
+
+**Status.** Clarifying clause under A4; **axiom count unchanged at 9.**

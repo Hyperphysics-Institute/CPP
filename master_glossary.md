@@ -87,7 +87,7 @@
 > files — GR-1b, c03, c01 — plus two frozen duplicates left alone under the Patch 4147 policy.
 > `V_i` keeps `i` for its Cartesian component; the edge index is never `i` again.
 
-| PCD | Perceive-Compute-Displace | The three-phase agentic cycle of the substrate, run once per Absolute Moment under the A1′ division of labor (AP-1/AP-3, Patch 2982; founder GR-FE-1 picture, Patch 3255; nexus ruling R-A4-ROLE, 2026-08-10): the **GP** executes Perceive (integrate DI-bit arrivals) and Compute (refresh its SSV_abs/V_i registers, imprint outgoing DI-bits); the **CP** executes Displace, moving the distance associated with the V_i its GP computed and presented. Per-Moment synchrony (A4/Nexus) and the P→C→D ordering are unchanged from the original picture. Preserves the consciousness-as-fundamental commitment of the Conscious Point name. Distinct from ZBW (the between-CPs oscillation in DPs). *History (anti-erasure): pre-2982 wording read "executed by each CP at every Absolute Moment"; superseded by the A1′ three-type division and pinned by the founder's Patch-3255 ruling ("The CPs do not PCD in the large sense; the GPs do the PCD cycle"). Harmonized Patch 3256; audit: `founders_vision/PCD_executor_harmonization_audit_2026-08-19.md`.* |
+| PCD | Perceive-Compute-Displace | The three-phase agentic cycle of the substrate, run once per Absolute Moment under the A1′ division of labor (AP-1/AP-3, Patch 2982; founder GR-FE-1 picture, Patch 3255; nexus ruling R-A4-ROLE, 2026-08-10, now job (1) of two under R-A4-JOBS, Patch 4490): the **GP** executes Perceive (integrate DI-bit arrivals) and Compute (refresh its SSV_abs/V_i registers, imprint outgoing DI-bits); the **CP** executes Displace, moving the distance associated with the V_i its GP computed and presented. Per-Moment synchrony (A4/Nexus) and the P→C→D ordering are unchanged from the original picture. Preserves the consciousness-as-fundamental commitment of the Conscious Point name. Distinct from ZBW (the between-CPs oscillation in DPs). *History (anti-erasure): pre-2982 wording read "executed by each CP at every Absolute Moment"; superseded by the A1′ three-type division and pinned by the founder's Patch-3255 ruling ("The CPs do not PCD in the large sense; the GPs do the PCD cycle"). Harmonized Patch 3256; audit: `founders_vision/PCD_executor_harmonization_audit_2026-08-19.md`.* |
 | K₃ | Complete graph on 3 vertices | The triangular face of the tetrahedral cage — the mass-generating structure |
 | K₄ | Complete graph on 4 vertices | The full tetrahedral cage — 4 vertices, 6 edges, 4 faces |
 | TBM | Tribimaximal Mixing | The zeroth-order neutrino mixing pattern derived from K₃ eigenvectors |
@@ -128,7 +128,7 @@ parameters); matter couples only via the assembled metric (C5); tidal response i
 
 ### Nexus
 
-The global consistency constraint that enforces physical law at each Absolute Moment. The Nexus ensures that all CPs act consistently — it is the mechanism by which the universe computes its next state. In CPP's theological framework, the Nexus corresponds to God's sustaining action.
+The global consistency constraint that enforces physical law at each Absolute Moment. The Nexus ensures that all CPs act consistently — it is the mechanism by which the universe computes its next state. In CPP's theological framework, the Nexus corresponds to God's sustaining action. Its two jobs (R-A4-JOBS, founder, Patch 4490): synchronizing the Moment, and updating the shared vector (the joint state); both may ride one transmission.
 
 ---
 

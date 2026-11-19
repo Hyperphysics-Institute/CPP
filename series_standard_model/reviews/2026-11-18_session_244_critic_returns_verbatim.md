@@ -158,3 +158,100 @@ PLAIN LANGUAGE: The draft is careful and its arithmetic checks out. Its claim th
 ## Claude's response to the 4489 return (not part of the verbatim report)
 
 All twelve required changes taken in, after spot-checking SD-4's μ (mechanism-SD-4.md l.21–36), QM-4's thm:unitary and "No collapse postulate", OPEN-QM-5, OPEN-P-SD-4 and the cosmology file: (1) "first statement" replaced by "a founder-level statement of the role SD-4's μ plays, an input to K₀(λ) and OPEN-SD-1..4", in §1 and §9; (2) the 3058 context stated, reading (iv) added, (i) and (iv) marked convenient, "third role" recast; (3) reading (T-c) added as his criterion at its strongest, (T-b) made secondary, §7.2 rewritten in his terms; (4) the development-note sentence attributed to (T-a) with QM-4, (T-b)/(T-c) flagged as contradicting thm:unitary, OPEN-QM-5 and OPEN-P-SD-4 cited and added to §8(d); (5) decoherence pruning stated FAPP with the eraser limit; (6) momentum conserved on average, per run only for momentum-compatible branchings; (7) area-law wording; (8) budget restricted to two-level units, log₂ d for larger, χ recast as a per-site cap; (9) the port rule strengthened and linked to 4488 (b); (10) his GP list recorded against 4488 (d), the SSV_abs difference and rank question carried; (11) a 4489 todolist entry in this patch, the deferral gate run; (12) curly quotes and the double blank line restored, header notes typography as sent. Optional notes 1–7 taken (Ockeloen-Korppi et al. verified: Nature 556, 478, 2018, about 10¹² atoms each; Koashi–Winter cited as Phys. Rev. A 69, 022309, 2004). Claude's chat reply before this return had said "first description anywhere in the repo" and posed the cutoff question as heavy-versus-light; both are corrected in the reply that delivers this patch.
+
+
+## Patch 4490 — Independent critic of the reading of the founder's two-jobs and weak-tie answers (4489 §7)
+
+VERDICT: ACCEPT WITH CHANGES
+
+The founder file is verbatim, and the D-11 table matches the script exactly. The required changes are about where rulings are marked, attribution, one wrong reading of the corpus (the lattice spacing), and one wrong physics citation (Hornberger 2003) that §4's question builds on.
+
+**What I checked**
+- **Verbatim:** I unwrapped the blockquote, took out the disclosed brackets and compared it with the message as sent. It is identical: text, curly vs straight apostrophes, double spaces and the counts of blank lines. The only losses are trailing single spaces ("applied. ", "apart? ", "transmission. ", "universe. ", "away. "), which is harmless in markdown. Line wrapping is disclosed and follows the 4489 founder file's convention.
+- **D-11:** `python3 -I` exits 0, and the output is byte-identical to lines 67–75 of the draft (diffed).
+
+**REQUIRED CHANGES**
+
+1. **Founder file, R-A4-JOBS scope note.** It is written as if it were his ruling, unmarked. Draft §1 says "(Claude's extraction; the rulings file says so.)", but the rulings file does not say so.
+   - Prefix the scope note: "*Claude's extraction (PD-008). He said he is not sure what he meant at 3059 ("I'm not sure what I meant at that time, in that context"), so this note rests on his present statement, not on what 3059 meant.*"
+   - Mark "job (2) is the joint-state role QM-3, QM-4 and SD-4 already give A4" as Claude's reading, carried from 4489 §1, where it was marked "Claude's reading, not registered". He never said "coherence".
+   - Also scope R-A4-ROLE's positive clause ("A4's role is THE synchronization"). It now reads as job (1) of two. The note currently fixes only the "NOT" clause.
+
+2. **Founder file, R-ADDRESS-TABLE.** The ruling drops his "only … as an artifact". Use his words: "space only arises as an artifact of timing and address relationship; mass and energy arise only as an artifact of CP displacement and the relationship between CPs and their rule-of-relationship properties." Also add his sentence "the universe is only a collection of individual consciousnesses coordinated … by the timing pulse of the Nexus." It is the sentence that ties the ontology to job (1).
+
+3. **Draft §2.3, Planck-scale remark.** This is a D-7/D-10 failure. The corpus does not put the GP spacing at Planck scale:
+   - `founders_vision.md:984` (Opus correction, Patch 0733) says reading l_P as the lattice spacing was a mis-read, and l_P is the baseline PSR.
+   - c01 has "~10³⁰ GPs per Planck length".
+   - todolist 4357 has "grid spacing ~ l_P/10³⁰".
+   - 4310 lists "two GP spacings" (N = 9×10²⁸ or 9×10³⁰).
+
+   Replace with: "One GP step is far below the Planck length on the corpus's working values (c01: ~10³⁰ GPs per Planck length; Patch 0733 correction; 4310's two candidate spacings), so the threshold sits even further below anything an experiment touches." Drop "which CPP places at Planck scale (about 1.6 × 10⁻³⁵ m)" and "the lattice-spacing identification is the corpus's". The conclusion is unchanged, and stronger.
+
+4. **Draft §2.2(3), Hornberger et al. 2003, wrong as an example of weak ties compounding.** In the C70 gas-collision experiment a single collision essentially decoheres: the gas atom's momentum kick is large next to the grating period. Visibility falls with pressure as the chance of no collision falls. Each collision is a strong record, not "a small record". Two fixes:
+   - Keep Hornberger only as "collisions decohere".
+   - For compounding of individually weak records, cite Kokorowski, Cronin, Roberts and Pritchard, "From Single- to Multiple-Photon Decoherence in an Atom Interferometer," PRL 86, 2191 (2001). There, photons with wavelength longer than the path separation each remove a little coherence, and many of them compound. Joos–Zeh long-wavelength scattering is the general theory.
+
+   Hornberger 2003 is already in the corpus (4479 §3, line 52; 4480 line 35). Say so in §3.
+
+5. **Draft §4, the founder question.** It has a false premise ("ten million gas atoms … each brush so faint") and a leading cue ("as experiments show"). Rewrite as a physical picture with no cue:
+
+   "An atom flies through two slits while a dim glow of very long-wavelength light shines across it. Each photon that bounces off it has a wavelength far longer than the gap between the slits, so by itself it would tell almost nothing about which slit. Ten million such photons bounce off it. Does each faint bounce stay in the Nexus's ledger, so that together they add up, or does each one, being individually irrelevant, simply not count?"
+
+   Update the §6 reply's "gas molecules brush past" to match.
+
+6. **Draft §2.2(1) and the §6 reply, Walborn attribution.** In Walborn et al. 2002 the path is marked in the photon's own polarization (quarter-wave plates), which is entangled with the partner. That is how 4445 (line 85) and 4481 §2 file it. It is not a "path fully recorded in its partner".
+   - Keep Englert's general which-way detector for D1.
+   - Cite Walborn as: "marked in its own polarization, entangled with the partner; the fringes appear only when its hits are sorted by the partner's polarizer result in coincidence; the unsorted pattern is smooth (4481 §2)."
+   - If you want a case where the partner holds the which-slit record, use Kim, Yu, Kulik, Shih and Scully, PRL 84, 1 (2000).
+   - Fix §6's bullet the same way.
+
+7. **Draft §2.1 / §2.2, D-15 most favourable reading missing.** His "cannot affect its entangled photon … when measured light-years away" is also, and most favourably, the no-signalling statement. Measuring the far partner never changes the near photon's own statistics, for any tie strength and any distance (THEO-QM-5, already in Reads-against). Add this reading. On it he is right without conditions (2) or (1): what removes the photon's own fringes is the existence of a strong tie, not the measurement of the partner. This also softens (2). Distance needs no reinterpretation on this reading, so present the dilution reading as the second reading, not the only one.
+
+8. **Draft §2.1, (T-a) mislabelled.** 4489's (T-a) is "drop only what can no longer change any outcome", which is decoherence pruning (4489 §5, §6: "Under (T-a), memory rests on the records within the realized branch"). "Nothing is deleted, nothing is erased" is stricter than that: pure global unitarity, QM-4's "Apparent collapse is an artifact of tracing over the bath". Say: "kept and inert: (T-a) without even its pruning". Also mark the tension honestly in §2.1 and §7: his 4489 message proposed to "truncate the accounting of entanglement beyond a certain magnitude", so reading 4490 as "nothing dropped" goes beyond his 4489 words. That makes it more plainly the convenient branch, and the reason §4 asks.
+
+9. **Draft §1, "The GP talks to the Nexus," a change not flagged.** In 4489 he wrote "Each CP connects to the nexus". Now he writes "Each GP … communicating with the Nexus". State the shift and read it, marked as Claude's reading, as the CP reporting through its GP (`founders_voice/4166_ruling_cp_reports_to_gp.md`; A1′: GPs compute).
+
+10. **Draft §3, D-10 list incomplete or wrong.**
+    - "Distance alone does not end the tie: 4481 §2": 4481 §2 is about absorption ("Absorption as such does not end the tie"), not distance. Cite 4484 (tranche 2, line 28) and 4488 §2 (line 38) only, or say "absorption alone: 4481 §2".
+    - Add QM-4 thm:lindblad: a Lindblad rate γ = π Σ_j g_j² δ(ω_j) from many weak couplings to the DP Sea bath. That is the corpus's own form of "weak ties add up".
+    - Add 4479/4480 for Hornberger.
+    - Add 4074 ("the 4th dimension is simply an address") as the nearest prior address ontology, next to "no prior 'table of addresses'".
+
+11. **§5 and D-9.** `todolist.md` has no 4490 entry, so the deferral gate will fail. File every new item (a)–(e) in todolist in the same patch. Also file these, which are owed but not listed anywhere:
+    - (i) A forward pointer (anti-erasure annotation, text unchanged) on `founder_ruling_nexus_role_and_zbw_rebound_de_2026-08-10.md`'s R-A4-ROLE, pointing to the 4490 scope note.
+    - (ii) `master_glossary.md` line 90 (PCD row, which cites "nexus ruling R-A4-ROLE") and line 131 (the Nexus entry) to carry R-A4-JOBS.
+    - (iii) The registry decision in change 12.
+
+    Add "(f) two ledgers" (claimed in the header's "Joins 4489 §8 (a), (d), (f), (h)") explicitly to §5: say whether "nothing deleted" makes it moot. Fix "(still his ruling at 4478 §6)" to "(awaiting his ruling, 4478 §6)": 4478 §6 is a question, not a ruling.
+
+12. **Registry convention.** The repo does register founder rulings that bear on an axiom's statement in `axiom-registry.md`, as sections under the axiom:
+    - "Registered ruling under A1′ — R-CP-NO-REST-MASS (Patch 4350 … under PD-006)", line 358.
+    - The A3′/AP-4 DI-bit rulings, line 389.
+
+    R-A4-ROLE (3059) was never registered, so leaving these in founders_voice alone has precedent. But R-A4-JOBS restates A4's role. Either register it under A4 on the 4350 precedent, as a clarifying clause with the axiom count unchanged and the reading marked, or say in the draft and the founder file why not, and file the decision in todolist. "By that file's convention" is not enough as written.
+
+**OPTIONAL NOTES**
+
+1. The script's seven PASS checks are identities: V² + D² = 1 holds because D is defined from g, and (1−δ)^N ≈ e^(−Nδ) is arithmetic. Call it an illustration script, not a verification of physics.
+2. The independence assumption (product environment states, so overlaps multiply) is stated in the draft. Add to the script docstring that correlated environments can do better or worse than g^N.
+3. A per-tie D = 1.4×10⁻³ against a per-tie V-shift of 10⁻⁶: say which one the "threshold" is measured in. His criterion is CP displacement under one GP step, and the draft never maps that to g.
+4. §1 quotes "Synchronizing" with a capital; he typed "synchronizing". §2.2(1) quotes "it still does everything a photon does, on its own" without the ellipsis for the words cut.
+5. R-NO-SEPARATION only reaffirms R-DISCONNECT. Consider recording it as a reaffirmation note on R-DISCONNECT rather than minting a new ID.
+6. Micius: correct (Yin et al., Science 356, 1140, 2017; 1,203 km; 2.37 ± 0.09; strict Einstein locality). It does not close the detection loophole, which doesn't matter here.
+7. §6 states the R-A4-ROLE rescoping to him as settled. One clause ("tell me if that's not what you mean") would match the 4351 confirm-the-marked-reading precedent.
+8. D-15: the final chat message must say what this critic changed.
+
+**PLAIN LANGUAGE**
+
+Thomas's answers were copied into the record exactly. Two of the three rulings drawn from them need tightening. One sentence that reinterprets his August ruling is presented as his, but it is Claude's inference, and he said he doesn't remember what he meant then. The ontology ruling also drops his "only … as an artifact". The physics in the draft is mostly sound: a faint tie leaves a photon's interference intact, a strong tie removes it, and distance alone doesn't weaken entanglement. Three things need fixing:
+- The draft says the grid is Planck-sized, but the repo's own notes put it far finer.
+- The gas-collision experiment it cites shows strong single bumps, not many faint ones adding up; a different experiment, with long-wavelength light, shows the faint-ones-add-up effect.
+- The question to Thomas hints at the answer and rests on that same mistaken picture of the experiment.
+
+The draft also misses the simplest favourable reading of his answer: measuring a far-away partner never changes anything you can see here, for any tie strength and any distance. Finally, several things the draft defers need entries in the to-do list. Among them are pointers from the August ruling file and the glossary to the new ruling, and a decision on whether the ruling goes in the axiom registry.
+
+---
+
+## Claude's response to the 4490 return (not part of the verbatim report)
+
+All twelve required changes taken in, after spot-checking founders_vision.md l.984 (Patch 0733 correction), the c01 "~10³⁰ GPs per Planck length" quote, 4310's two GP spacings, 4166, 4074, QM-4's thm:lindblad and "Apparent collapse is an artifact of tracing", and the registry's R-CP-NO-REST-MASS precedent: (1) the scope note marked as Claude's extraction, both R-A4-ROLE clauses scoped, job (2) marked as Claude's reading; (2) R-ADDRESS-TABLE in his words with "only ... as an artifact" and the "collection of individual consciousnesses" sentence; (3) the Planck remark replaced by the corpus's sub-Planck working values; (4) Hornberger kept only as "collisions decohere," compounding cited to Kokorowski et al. 2001; (5) §4 rewritten as the long-wavelength-light picture, no cue, and §6 matched; (6) Walborn re-described as own-polarization marking, Kim et al. 2000 added for partner-held records; (7) R1, the no-signalling reading, added first; (8) R2 labelled "(T-a) without even its pruning," its tension with his 4489 truncation words marked; (9) the CP→GP shift stated and read through 4166; (10) the D-10 list corrected (4484/4488 for distance; 4481 §2 for absorption; thm:lindblad; 4479/4480; 4074); (11) a 4490 todolist entry, the forward pointer on the 3059 file, the glossary PCD row and Nexus entry, (f) two ledgers dispositioned, "awaiting his ruling, 4478 §6"; (12) R-A4-JOBS registered under A4 in his words on the 4350 precedent, axiom count unchanged at 9, the reading marked. QM-4's Lindblad rate is quoted in the paper's boxed form, γ = (sea_strength)² E_P/ħ, not the critic's Σ form. Optional notes 1–8 taken (5: R-NO-SEPARATION recorded as a reaffirmation, no new ID; 7: "tell me if that's not what you mean" added to the reply).
