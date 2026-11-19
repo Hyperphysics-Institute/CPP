@@ -465,4 +465,7 @@ the A4 row stands as written; R-A4-ROLE (3059) reads as job (1) of two and as "n
 he said he is not sure what he meant at 3059). The micro-mechanism of job (2) stays the registered debt K₀(λ), OPEN-SD-1..4; the Nexus label is not the
 mechanism (CONV-031 §3).
 
+**His confirmation (4491,** `founders_voice/4491_collision_disperses_and_the_kick_blurs.md`**):** *"I think that is what happened.  I don't remember
+the Nexus being used to keep regions apart."* He agrees the scope note matches what happened.
+
 **Status.** Clarifying clause under A4; **axiom count unchanged at 9.**

@@ -255,3 +255,95 @@ The draft also misses the simplest favourable reading of his answer: measuring a
 ## Claude's response to the 4490 return (not part of the verbatim report)
 
 All twelve required changes taken in, after spot-checking founders_vision.md l.984 (Patch 0733 correction), the c01 "~10³⁰ GPs per Planck length" quote, 4310's two GP spacings, 4166, 4074, QM-4's thm:lindblad and "Apparent collapse is an artifact of tracing", and the registry's R-CP-NO-REST-MASS precedent: (1) the scope note marked as Claude's extraction, both R-A4-ROLE clauses scoped, job (2) marked as Claude's reading; (2) R-ADDRESS-TABLE in his words with "only ... as an artifact" and the "collection of individual consciousnesses" sentence; (3) the Planck remark replaced by the corpus's sub-Planck working values; (4) Hornberger kept only as "collisions decohere," compounding cited to Kokorowski et al. 2001; (5) §4 rewritten as the long-wavelength-light picture, no cue, and §6 matched; (6) Walborn re-described as own-polarization marking, Kim et al. 2000 added for partner-held records; (7) R1, the no-signalling reading, added first; (8) R2 labelled "(T-a) without even its pruning," its tension with his 4489 truncation words marked; (9) the CP→GP shift stated and read through 4166; (10) the D-10 list corrected (4484/4488 for distance; 4481 §2 for absorption; thm:lindblad; 4479/4480; 4074); (11) a 4490 todolist entry, the forward pointer on the 3059 file, the glossary PCD row and Nexus entry, (f) two ledgers dispositioned, "awaiting his ruling, 4478 §6"; (12) R-A4-JOBS registered under A4 in his words on the 4350 precedent, axiom count unchanged at 9, the reading marked. QM-4's Lindblad rate is quoted in the paper's boxed form, γ = (sea_strength)² E_P/ħ, not the critic's Σ form. Optional notes 1–8 taken (5: R-NO-SEPARATION recorded as a reaffirmation, no new ID; 7: "tell me if that's not what you mean" added to the reply).
+
+
+## Patch 4491 — Independent critic of the reading of the founder's collision and faint-bounce answers (4490 §4)
+
+VERDICT: ACCEPT WITH CHANGES
+
+What I checked: the founder file against his message, byte for byte after rejoining lines; the script (ran it and checked it against the closed form); the D-11 table; and the claims against 4464, 4480, 4481, 4485, 4489, 4490, QM-4, the 4490 critic returns, Walborn et al. 2002 (arXiv quant-ph/0106078) and the Chapman et al. 1995 abstract.
+
+REQUIRED CHANGES
+
+1. **The kick is not the general cause (D-15, D-10).** Draft §3.2, §7, §8 "Agreed: … the kick as the cause", and the title.
+   - The corpus already settled this at 4480, lines 44–55: the kick and the which-way record are two descriptions of one effect. What tells them apart is marking with no kick. In the Walborn eraser the path is marked in polarization, with no momentum given. Dürr, Nonn and Rempe (Nature 395, 33, 1998; verified at the Session 242 critic) found the back-action "too small to explain the disappearance."
+   - 4491 never cites 4480, although 4480 already carries Pfau 1994 and Chapman 1995 in this same recoil role.
+   - Fix:
+     - Add 4480 to "Reads against".
+     - In §3.2 add: "In this experiment the kick and the photon's record of the path are one effect described two ways (4480). Where the path is marked with no kick (Walborn 2002; Dürr, Nonn and Rempe 1998), the fringes still go. So the kick account covers scattering, but the general cause is the record."
+     - In §8, move "the kick as the cause" from Agreed to Marked, worded as "for scattering, where kick and record coincide."
+     - Add this as a new open item.
+   - It also ties into §4, which explains Walborn without saying that this is exactly the case the kick picture does not cover.
+
+2. **"(T-b) is not his picture" overreaches.** §3.1, and §6 "4489 (d)".
+   - (T-b) is the object-size cut (GRW/CSL). His answer is about faint bounces on one atom and says nothing about object size.
+   - Fix: "(T-c) is excluded by his answer. (T-b) is not addressed by it." Then either carry 4489 (d) for (T-b) or close it explicitly as Claude's reading. That reading: his 4489 criterion was the size of the effect, not the size of the object, so (T-b) was only ever a secondary reading.
+   - Mark 4489 (d) as "closed on Claude's reading" either way.
+
+3. **"Confirms the Nexus was never used to keep regions apart" overstates him.** He said: "I think that is what happened. I don't remember the Nexus being used to keep regions apart."
+   - Locations: the title ("He Confirms the Nexus Was Never Used to Keep Regions Apart"), §8 ("the Nexus never kept regions apart"), and the theory-overview header ("the founder's confirmation that the Nexus was never used to keep regions apart").
+   - Fix: "He agrees the scope note matches what happened ('I think…'); he does not remember the Nexus being used to keep regions apart." The physics claim that there is no separation job is already his, at 4490.
+
+4. **Energy sign.** §3.2 "Energy" paragraph.
+   - In resonant scattering the atom's kinetic energy changes by recoil in either direction. On average it gains (recoil heating); it does not lose.
+   - Fix: "The atom's energy changes by a tiny recoil amount, up or down (on average slightly up). So 'a little' is right in size; what matters is the momentum."
+
+5. **Walborn facts.** §4 and §7.
+   - The quarter-wave plates are placed "in front of each slit" (Walborn et al. 2002), not behind. Fix "Behind each slit sits a plate" and "behind each slit a plate" to "Just before each slit sits a plate."
+   - "sorted by whether B passed or not" is not how the experiment ran. Walborn's polarizer was set at the angle of one plate's fast axis for fringes, then of the other plate's for antifringes, in separate coincidence runs.
+   - Fix: "…sort A's hits by B's result at a polarizer, set first at one angle, then at the perpendicular angle."
+   - Optionally, "turns A's polarization one way / the opposite way" could become "gives it a left- or right-handed twist."
+
+6. **4464 attribution.** §3.1.
+   - 4464 §2 lists three differences from the pilot wave, not two. The third is "for light his photon has no part that takes one slit". 4464 also adds that his picture must give h/p.
+   - Fix: "noted the resemblance and its differences, among them: …" or add the third.
+   - The quote "DP-arc-separation volume extends out…" starts in the middle of the subject. His sentence is "That energetic driver of the DP-arc-separation volume extends out from the particle and can go through both slits…" Quote it from "That energetic driver".
+
+7. **Script checks.** Script lines for K2 n = 1 and n = 10, and the title "Script 8/8".
+   - Two K2 rows hard-code `True`, so they are reported values, not checks.
+   - Fix one of two ways:
+     - make them real checks, e.g. compare with the closed form j0 − j2/2 at kd = 0.2π, which gives C1 = 0.92270, C1^10 = 0.4473, C1^100 = 3.2e-4; or
+     - relabel those rows as "value" and say "6 checks, 2 reported values" in the header and the title.
+   - If either changes the output, re-paste the table under D-11.
+
+8. **Consistency.** §1 says R-COLLISION-DISPERSES "joins 4489 (e) and 4490 (d)", but §6 closes 4490 (d). Fix to: "closes 4490 (d); joins 4489 (e)."
+
+9. **§5 question is leading.** It is a physical picture, but §7 tells him the data require "both" before asking "both or one side?". He himself said the photons hit "one or the other side."
+   - Fix — reword as an open "how": "A long-wave photon bounces off the atom's core as it passes through one slit, while its KE/DP-arcs pass through both. How does that bounce reach the arcs passing through the other slit?"
+   - Keep the §8 marking: the condition is Claude's statement, drawn from the data.
+
+10. **Bundled files (D-9).** `todolist.md` and `research_frontier.md` are not in the diff; 4488–4490 each updated both. Also add this critic return to `series_standard_model/reviews/2026-11-18_session_244_critic_returns_verbatim.md` or a 11-19 file. The todolist 4491 entry must contain:
+    - the files;
+    - Done: the R-A4-JOBS confirmation line, the overview header, R-COLLISION-DISPERSES filed in founders_voice only;
+    - Closed: 4489 (d) for (T-c) (and (T-b) per change 2), 4489 (f) moot, 4490 (a), 4490 (b) summing part, 4490 (d), 4490 (f);
+    - Owed, word for word: 4491 (a)–(e), plus the kick-versus-record item from change 1;
+    - Carried unchanged: 4490 (c), (e); 4489 §8 (b), (c), (e), (g); 4488 §7 as carried at 4489 §8; 4481 (a), (c), (e); 4478 (a) and the 4478 §6 placement ruling; 4464 (d); 4477 (g); the 4478 §4 citation correction; and, if carried, (T-b).
+    - The chat reply must say what this critic changed (D-15).
+
+OPTIONAL NOTES
+
+1. The founder file's text matches his message exactly: every double space ("happened.  I", "lines.  That", "slit.  The", "the  DP-arcs") and every blank line, including the two before "Question for you". The only difference is that trailing spaces at line ends were dropped. You could add "trailing spaces not kept" to the disclosure. I could not check the "01:23 local" time.
+2. In the draft, §2 quotes "happened. I don't" and §3.1 quotes "changes the DP-arcs" with single spaces. The registry and the founder file keep his double spaces; match them.
+3. The no-cut reading can be made stronger rather than only marked. Any real photon kick moves the atom by vastly more than one GP step during its flight (4490 §2.3: a GP step is far below the Planck length). So even his own 4489 "one GP displacement" criterion keeps every bounce. Saying so answers the obvious objection that his threshold was framed in exactly the displacement a kick produces. Keep the convenience marking in §8; it is honest.
+4. §3.2's "multiplies … in both arms by the same factor" is loose. Better: "by the same factor exp(i q·x), which takes a different phase at each arm."
+5. On the model's numbers: the closed form for dipole emission with its axis perpendicular to d is C = j0(kd) − j2(kd)/2. Its first zero is at 0.4367 λ and its revival is 0.3355 at 0.6737 λ. The script's 0.435 λ, 0.675 λ and 0.3353 are right to the grid step of 0.005 and the Monte-Carlo noise; the 0.0042 at the minimum is noise, the true value is 0. The incident direction only adds a constant phase, so |C| does not depend on it. The K3 cone sits in the strong-emission plane, so 0.9999 is right. The K2 rule C^N, with photons independent, is right.
+6. Chapman et al. used a three-grating Mach–Zehnder interferometer, and the path separation was set by where along it the laser struck. "Two slits" is 4490's idealisation; a parenthesis would say so. The author list, PRL 75, 3783 (1995), the observed loss and revivals with separation, and the recovery by keeping only atoms correlated with photons in a limited range of directions all match the abstract.
+7. The title's "Matches the Standard Account Under One Condition" goes further than 4464's critic allowed ("overclaimed the pilot-wave match"). K3 also needs the kick written in the photon. Consider "Is Consistent With … Under Conditions."
+8. Registry: his confirmation sits inside the paragraph headed "Reading (Claude's, PD-008, not his words)". A separate "His confirmation (4491)" line would keep the attribution clean. Otherwise the edit is faithful. The overview refresh is adequate as a header line once change 3 is made.
+9. 4485's exceptions (one possible outcome; alternatives acting alike; a swap passing a tie on) are reproduced faithfully. Note that 4485 is Copilot's text summarized, and that he called these "an exception that really is not an exception."
+10. On reading his answers generously (D-15): "add up" is a fair reading of "See above comment" together with "the only thing that diminishes the entanglement is collision", and §8 marks it as convenient. The QM-4 quotes and labels (thm:unitary, thm:lindblad, "artifact of tracing") and the THEO-QM-5 reference check out.
+
+PLAIN LANGUAGE: The draft is mostly right, and his message is filed word for word. His idea is that when light bounces off an atom it gives the atom a small push, the push disturbs the invisible waves that steer the atom, and many small pushes add up to blur the stripes on the screen. A real 1995 experiment fits that, provided the push acts on the steering waves in both slits at once. The draft needs fixes in a few places:
+- Other experiments wipe out the stripes with almost no push at all, just by tagging which slit the particle used. So the push can't be the whole story, and the draft should say so; an earlier patch (4480) already did.
+- It claims more from his answers than he said: on heavy-object cutoffs, and on his memory ("I think… I don't remember").
+- It gets the sign of the energy change wrong (on average the atom gains a little, it doesn't lose).
+- It puts the plates in the Walborn experiment behind the slits, when they sit in front of them.
+- It counts two script rows as checks when they are only reported numbers.
+- It asks him a question after already telling him the answer it wants.
+- It still needs the to-do list and research-frontier entries bundled into the same patch.
+
+---
+
+## Claude's response to the 4491 return (not part of the verbatim report)
+
+All ten required changes taken in, after spot-checking 4480 l.44–55 (kick and record as one effect; marking without a kick) and 4445/4481's description of Walborn: (1) 4480 added to Reads-against, a "Kick and record" paragraph in §3.2, "the kick as the cause" moved to Marked, new open item (f), and the §4 Walborn account tied to it; (2) (T-c) excluded by his answer, (T-b) closed as secondary on Claude's reading, 4489 (d) marked "closed on Claude's reading"; (3) "confirms" replaced by his agreement and his "I don't remember" in the title, §2, §8, the founder file, the registry and the overview header; (4) energy recoil up or down, on average slightly up; (5) plates "just before each slit", a left/right-handed twist, the polarizer set at one angle then the perpendicular angle in separate runs; (6) 4464's differences listed with the third and h/p, the quote begun at "That energetic driver"; (7) K1 and K2 now checked against the closed form j0 − j2/2 (the table re-pasted; values unchanged in K1/K3, K2 rows now show the exact value); (8) R-COLLISION-DISPERSES closes 4490 (d) and joins 4489 (e); (9) §5 reworded as an open "how"; (10) todolist and research_frontier entries in this patch, this return filed. Optional notes 1–10 taken (3: his own one-GP-step criterion keeps every bounce; 4: exp(i q·x) wording; 6: Chapman's three-grating interferometer noted; 7: "consistent with … under conditions"; 8: his words on a separate registry line).
