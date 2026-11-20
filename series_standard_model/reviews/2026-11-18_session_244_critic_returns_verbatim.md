@@ -347,3 +347,85 @@ PLAIN LANGUAGE: The draft is mostly right, and his message is filed word for wor
 ## Claude's response to the 4491 return (not part of the verbatim report)
 
 All ten required changes taken in, after spot-checking 4480 l.44–55 (kick and record as one effect; marking without a kick) and 4445/4481's description of Walborn: (1) 4480 added to Reads-against, a "Kick and record" paragraph in §3.2, "the kick as the cause" moved to Marked, new open item (f), and the §4 Walborn account tied to it; (2) (T-c) excluded by his answer, (T-b) closed as secondary on Claude's reading, 4489 (d) marked "closed on Claude's reading"; (3) "confirms" replaced by his agreement and his "I don't remember" in the title, §2, §8, the founder file, the registry and the overview header; (4) energy recoil up or down, on average slightly up; (5) plates "just before each slit", a left/right-handed twist, the polarizer set at one angle then the perpendicular angle in separate runs; (6) 4464's differences listed with the third and h/p, the quote begun at "That energetic driver"; (7) K1 and K2 now checked against the closed form j0 − j2/2 (the table re-pasted; values unchanged in K1/K3, K2 rows now show the exact value); (8) R-COLLISION-DISPERSES closes 4490 (d) and joins 4489 (e); (9) §5 reworded as an open "how"; (10) todolist and research_frontier entries in this patch, this return filed. Optional notes 1–10 taken (3: his own one-GP-step criterion keeps every bounce; 4: exp(i q·x) wording; 6: Chapman's three-grating interferometer noted; 7: "consistent with … under conditions"; 8: his words on a separate registry line).
+
+
+## Patch 4492 — Independent critic of the reading of the founder's quantum-cohort answer (4491 §5)
+
+VERDICT: ACCEPT WITH CHANGES
+
+The script runs 10/10 PASS and the D-11 table in the draft matches its output byte for byte. The founder text matches his message word for word. Three things are wrong and must be fixed: the Moment-duration claim, the no-signalling sentence, and the §3.3 scope finding (wrong attribution, and an incomplete D-10 search).
+
+REQUIRED CHANGES:
+1. **The Moment is t_P, not "maybe shorter"** (draft §3.2, second paragraph, and script docstring S1).
+   - The draft says "generous, since on the corpus's sub-Planck GP spacing (4490 §2.3) a Moment may be shorter." That contradicts the corpus.
+   - founders_vision.md ~l.1069 (the founder's 0733 correction) says l_P is "one displacement step per Absolute Moment" while the GP lattice is finer. The light speed is one PSR (l_P) per Moment, not one GP per Moment.
+   - Moment = t_P is stated in `founders_voice/kernel_psr_reradiation_2026-07-20.md` ("the next Moment/t_P"), research_frontier 4299 ("Moment = t_P"), reasoning/0766, TP-1 ("CPP forbids T < t_P") and QM-4's bath section (τ_corr = t_P, "shortest time in the theory").
+   - Fix: replace the clause with "taking one Moment as t_P (the corpus value: founder 20 Jul 2026; 0733; QM-4 τ_corr)". Drop "generous" in the draft and in the script docstring ("generous: … a Moment may be shorter, which makes the condition stricter"). Editing the docstring does not change the output, so the D-11 table still holds.
+   - The draft's §8 phrase "(under a generous Moment)" becomes "(Moment = t_P)".
+2. **The no-signalling sentence is false** (§2, first bullet).
+   - Current text: "an observer watching only the other path sees nothing change until the paths are brought back together."
+   - A kick e^{iq·x} gives the other path's component the recoil momentum too, and a detector in that arm would see it deflected.
+   - Replace with: "No-signalling is kept: the kick's direction is random, set by the emitted photon, and nothing chosen at one path changes the statistics at the other (THEO-QM-5; 4489 §1's port condition). The far path's part does carry the recoil, as the standard account requires."
+3. **"Answered" for 4491 (a) needs the Nexus caveat** (§2, first bullet, and §6 "Answered here").
+   - Add: "answered at the level of his ontology; the mechanism of the Nexus's job (2) stays the registered debt K₀(λ)/OPEN-SD-1..4, and the Nexus label is not the mechanism (CONV-031 §3; R-A4-JOBS reading)."
+   - In §8, mark closing 4491 (a) on this footing as a convenient branch, alongside the one already named.
+4. **The conservation agreement drops 4481 §2's condition** (§2, fourth bullet, D-15).
+   - 4481 §2 says an exchange of momentum ties two systems only "when the kick could in principle be read from one of them". A grating takes a kick and keeps no record.
+   - Add that condition to the bullet.
+5. **Tie §3.2 to what the corpus already holds** (§3.2 and §5, D-10). The no-trail condition is already in the corpus twice:
+   - 4481 §2's grating condition: the Sea must take the core's per-Moment kicks the way a grating does, with no usable record.
+   - 4491 §1: "collision" means an interaction that leaves a record, plus Copilot's 4485 exceptions (interactions "whose alternatives act alike" disperse nothing).
+   - Under his R-COLLISION-DISPERSES ("only collision diminishes [entanglement]"), his own rule that the core collides with the Sea every Moment would disperse the atom's coherence unless those collisions fall in the no-record class. So §3.2 is a consistency condition between his two rulings, not only a condition the data impose. Say so, and cite 4481 §2, 4491 §1, 4485 and R-COLLISION-DISPERSES in §3.2 and in the §5 list.
+6. **Wrong attribution in §3.3.** "every measurement" is from QM-4's Plain Language Summary, not its introduction. The introduction states the coupling without any condition ("the pattern state couples to the thermal DP Sea"). Fix the attribution and quote both.
+7. **"No earlier statement of the scope was found" is false** (§3.3, D-10).
+   - Prior scope-by-example statements exist:
+     - QM-4's Plain Language Summary: "every measurement couples…", "Macroscopic objects decohere so fast…".
+     - `series_quantum_mechanics/papers/phenomena-QM-2.md` PHEN-QM-V2: "the DP Sea decoheres any macroscopic superposition in ~10⁻⁴³ s".
+     - `development-QM-4.md`: "macroscopic objects decohere … in ~10⁻⁴² s".
+     - `FAQ-QM-4.md` Q1: "measurement produces decoherence".
+     - THEO-SD-6 (theorem-registry): a size-dependent rate τ_dec = ħ/(N_app k_B T) "for macroscopic detectors".
+   - Restate the finding: "The corpus applies γ to measurement and to macroscopic objects by example. But γ has no size, mass, separation or record dependence, and no file says when g_j acts. Read literally, it would also decohere a free atom (and, since QM-4's system is a σ_z 'pattern qubit', any SSV-basis superposition in flight)."
+   - Also add the basis step: applying γ to a path superposition assumes the two paths differ in σ_z (the SSV projection). Write it conditionally: "if applied to the path superposition…".
+   - Name the registry entry: THEO-QM-6.
+8. **A factor-10 arithmetic slip in the companion files** (new §3.3 sentence and a new §6 item).
+   - These files quote γ = (0.178)² E_P/ħ ≈ 5.9×10⁴² s⁻¹: README-series_quantum_mechanics.md l.25, development-QM-4.md l.17, mechanism-QM-6.md l.58, phenomena-QM-2.md P2/V2, FAQ-QM-4.md Q2, keywords-QM-4.md l.32/36.
+   - The correct value is (0.178)² × 1.956e9 J / 1.0546e-34 J·s = 5.9×10⁴¹ s⁻¹.
+   - sea_strength is also 0.178 in the companions and 0.185 in QM-4 (C1).
+   - The draft's 6.3×10⁴¹ (with 0.185) is right. Record both discrepancies as owed corrections.
+9. **4490 inherits the scope issue** (§3.3 or §5). 4490 §2.2(3) and §3 cite thm:lindblad as "the corpus's own form" of faint records compounding. Add one line saying that citation inherits the scope finding. Nothing in 4490's conclusion changes.
+10. **Downgrade the eraser claim** (§3.1, last paragraph, and §6 (e)).
+    - In Walborn's eraser each slit's quarter-wave plate acts locally on its own path's part. Nothing has to reach across paths, so it does not exercise the Nexus update. "A path-dependent update leaving a record" is standard which-path complementarity, and it does not say how a no-kick record changes where the guiding arcs send the atom, which is what 4491 (f) asks.
+    - Change "That is a candidate answer to 4491 (f)" to "This restates the standard complementarity condition; 4491 (f) stays open in his terms." Edit (e) to match, and say (e) joins 4491 (f).
+11. **Kicks shift; the spread blurs** (§3.1, first paragraph). Add: "A single known kick shifts the fringes by q·d; blur comes from averaging over the emitted photon's direction, i.e. from the record the photon carries (4491 K3). The laser-absorption kick is the same for every atom and only shifts the fringes."
+12. **Wrong digit in the D-11 caption.** The exact first zero is 0.43667 λ (bisection on C(x)), not 0.43670 λ. Fix "the exact zero, 0.43670 λ" to "0.43667 λ". The revival at 0.6737 λ = 0.3355 checks.
+13. **§6 wording and the todolist entry** (D-9).
+    - In §6 (b), say that the GP-step-to-overlap map it needs is 4491 (e) (carried).
+    - Add a new §6 (g) for change 8 (the companion slip and sea_strength 0.178 vs 0.185).
+    - Make (c) cover the QM-4 edit plus a THEO-QM-6 registry note, and name the companion files.
+    - Carried-unchanged list: verified complete against 4491 §6.
+    - The todolist entry, in the same patch, must hold:
+      - TODO-4492-a, position-dependent update (joins 4491 b / 4464 d; foundations).
+      - TODO-4492-b, no-trail bound (joins 4491 e; foundations).
+      - TODO-4492-c, QM-4/THEO-QM-6 scope statement (QM lane, with file list).
+      - TODO-4492-d, bond rule as candidate for 4478 (a)/4481 (a)/OPEN-QM-9.
+      - TODO-4492-e, joins 4491 (f).
+      - TODO-4492-f, founder question 4492 §4.
+      - TODO-4492-g, the 5.9e42 → 5.9e41 correction and the sea_strength reconciliation (QM lane), listing the six files.
+    - Run `code/deferral_gate.py`.
+14. **Founder file disclosure** (header line 7). Add "the square brackets around the pasted paragraphs are the filer's". The square brackets were added by the filer and are not in his message. With them removed and line wraps rejoined, the text matches word for word. The only spacing change is that the double space after "discussing." falls at a line wrap, which "trailing spaces not kept" covers.
+
+OPTIONAL NOTES:
+1. Quote case. In §1, "the effect is instantaneous" (his text has "The effect") and in §2, "The entire quantum cohort ... respond together" (his "the entire") change case inside quotes. Use [t] / [T], or match his case.
+2. S1 counts Moments as the independent record events. If the core displaces many Sea DPs per Moment (on the order of 10³⁰ GPs per l_P), the bound per DP is much stricter. Correlated re-displacement of the same DPs would loosen it. Consider one clause.
+3. The §4 question is a physical picture and is not leading: it gives three options and two of them are compatible with his picture. Consider adding "or something else".
+4. In his picture the arcs carry KE. So an instant change to the arcs in the far path moves momentum density across the gap at once. That costs no signalling, but it is a feature worth naming in 4464 (d).
+5. 4478's "gathered at once" is about energy at absorption, not about an update after a kick. The §2 "carried to a massive particle" framing is fair but is an extension. It is already marked as Claude's reading.
+6. The script's U1 rows are an identity (phi − phi). This is disclosed, so it is fine.
+
+PLAIN LANGUAGE: Thomas says the atom's core and the energy it carries in the surrounding Sea form one linked unit, so a bump on the core changes the whole unit at once, including the part in the other path. That fits what experiments show, and the draft says so fairly. The draft has three errors. First, it suggests one tick of time (a Moment) might be shorter than the Planck time; the repo says it equals the Planck time, so that has to come out. Second, it says nothing changes in the other path until the paths rejoin; in fact that part gets the recoil too. Third, it says no earlier file limits when the Sea's decoherence applies. Several files do, by tying it to measurement and to large objects, though none gives a rule. Some of those files also overstate the rate tenfold. With these fixes, plus links to places in the repo that already state the "no trail left in the Sea" condition, the draft is sound.
+
+---
+
+## Claude's response to the 4492 return (not part of the verbatim report)
+
+All fourteen required changes taken in, after spot-checking founders_vision.md l.1069, THEO-QM-6 and THEO-SD-6 in the theorem registry, QM-4's Plain Language Summary and introduction, and the 5.9 × 10⁴² figure across the tree (found in sixteen files, including `axiom-registry.md` and `glossary-QM-1.md`, `glossary-QM-4.md`, `phenomena-QM-1/3/4/5/6.md`, `reviews-QM-4.md` and `series_standard_model/papers/phenomena-QM-6a.md` beyond the critic's list; all are named in §3.3 and TODO-4492-g). Optional notes 1–5 taken. The tree-wide correction and the QM-4/THEO-QM-6 scope edit are filed as owed, not made in this patch.
