@@ -619,3 +619,92 @@ Sources: [Kovachy et al. response, arXiv:1607.03485](https://arxiv.org/abs/1607.
 ## Claude's response to the 4494 return (not part of the verbatim report)
 
 All twelve required changes taken in, after spot-checking his 1 August §4 "That is exactly what I am implying", the website's "orientation randomizes due to entropy effects" (CPP v1.1 part 1), 4442's Peters, Chung and Chu 1999, and Asenbaum et al. 2017 (wave packets up to 16 cm; a 1 rad phase shift from a source mass): the 54 cm evidence restated with the comment's argument and the response, and the conclusion rested on determinate-phase experiments; reading (P), present-field, added first with the persistence fork; the three further readings; §3.1 marked; the 4493 tension as §3.4; store-and-release as his 1 August answer restored; the interim summary's withdrawn line noted; §4 replaced with the persistence picture; §6 reworked; §5 and the todolist rebuilt. Optional notes 1–5 and 8 taken (8: two T1 rows added; the script now shows 7/7 and the table is re-pasted).
+
+
+## Patch 4495 — Independent critic of the reading of the founder's persistent-turn answer (4494 §4)
+
+VERDICT: ACCEPT WITH CHANGES
+
+The founder file is verbatim on every point I checked, apart from one missing disclosure (item 1). The physics is mostly sound. Three places need fixing before this goes to Thomas: the "jostling only moves the record" claim needs its condition stated, route (B) is credited to his words more strongly than they support, and the momentum-or-energy rule leaves out the 4481 readability condition.
+
+REQUIRED CHANGES
+
+1. `founders_voice/4495_the_turn_persists.md`, disclosure paragraph (line 7). Add the note that 4493's founder file sets as precedent: the question he pasted is Claude's chat wording, which differs from 4494 §4 as filed. Fix: append "; his pasted question is Claude's 4494 chat wording, which differs from 4494 §4 as filed ('My question for you:', 'Is it still turned …', 'And what about along the other arm')". Everything else checks out against the message as sent:
+   - both double spaces ("core,  it" and "the  atomic") are kept;
+   - the blank line after "Thomas:" and between the bullets is kept;
+   - the two blank lines before "4494 applied." are kept;
+   - the dropped trailing spaces and the bracketing are disclosed.
+
+2. Draft §1, lines 13 and 15. The quotes turn his double spaces into single ones; 4494 §1 kept "the  rearward". Fix: "the atomic core,  it is turned" and "repulsion-attraction to the  atomic core left it in".
+
+3. Draft §2, second bullet (lines 23–26), the reset reading (D-15, conditions on agreement). The statement that a history-independent reset "moves the record, it does not vanish" holds only if the microdynamics are reversible. In the corpus, reversibility is a Copilot proposal (4485, 4486 tranche 4), not an established CPP rule. Fix:
+   - Mark it "(Claude's statement; standard under reversible/unitary dynamics)".
+   - Add: if CPP's rule for a DP is many-to-one (truly dissipative), a local reset could genuinely erase the record. The fringes would then return if the reset finishes before detection. That is a third route, (C), and it too departs from quantum mechanics (it is not unitary). Fold (C) into §3 or §5(a).
+   - Cite his own prior statement (D-10): the website says DP orientation "randomizes due to entropy effects … driving the system toward equilibrium with no internal forces" (`rm_website_archive/conscious-point-physics-version-1-1-part-1.md`, line 1119; already cited at 4494 §3.3). His word "entropy" fits coarse-grained randomization, which does not erase the record. Say so.
+
+4. Draft §2, first bullet: record that his "left in the orientation" also excludes "turning back". Fix: "Reading (P) and row T5 (trail undone) are both excluded."
+
+5. Draft §3 (B), lines 37–45, and lines 56–57 (PD-008). The plainest reading of "not tied by entanglement … so the DP will be randomly jostled" is mechanical: the DP no longer follows the core (which is what excludes (P)), and it is untied as his 4493 transient bond releases ("disentangling when the DP-arcs discharge"). It is not a claim that an untied record does not count for the fringes. Fixes:
+   - Retitle (B) as "compatible with his words; Claude's extension".
+   - Replace "the one his words most directly support" with "his words are compatible with it; whether an untied record counts he has not said".
+   - Cite the 4493 founder text as the source of "untied".
+   - Reconcile with 4494 §3.3, last bullet ("the trail outside the ledger … Claude's statement; not his position"). 4495 must say it is the same argument, now offered as a candidate reading of his words, not a new one (D-10).
+
+6. Draft §3, line 49: "on the 4419 cap, essentially no momentum". This stretches 4419 §5. That cap is an ephemeris bound on net drag on bulk orbital motion, assuming a linear drag, in order of magnitude. It does not bound what a single DP takes. His own account also has momentum going back and forth during the passage (resist in front, push behind; 4493, 4494). Fix: "carries no net momentum once the core has passed (a turn in place; his push-pull nets to zero), and any net drag is in any case capped near 10⁻⁶² per Moment (4419 §5, ephemeris bound, linear drag assumed)".
+
+7. Draft §3, lines 50–51, and §5(b): the candidate rule leaves out 4481 §2's condition. Under the rule as written, a grating's kick would spoil the fringes, and it does not. Fix: "ties persist where momentum or energy is exchanged **readably** (not lost in the receiver's own momentum spread, 4481 §2)". Also note that by his 4492 bond rule ("collide/transfer Moment/forcefully displace") the DP was tied while it was being turned. So the rule is a rule for when a tie is **released**, not for when one forms.
+
+8. Draft §3, lines 52–54: Dürr, Nonn and Rempe is not an energy-free record. The microwave pulse changes the atom's hyperfine energy; that experiment's point is a negligible momentum kick. Fixes:
+   - Call Walborn's polarization tag energy-free and internal.
+   - Call Dürr–Nonn–Rempe internal with negligible momentum kick.
+   - Restate the closing alternative as: "records that take no energy, or no momentum, never count" is contradicted by these experiments; "external records of that kind do not count" is not tested by them.
+
+9. Draft §3, lines 43–45, and §5(c): the search (D-4). This check is load-bearing for calling (B) a departure from quantum mechanics, so it should be started in this patch. Two experiments I can name with confidence are close to the case:
+   - Buks, Schuster, Heiblum, Mahalu and Umansky, "Dephasing in electron interference by a 'which-path' detector", Nature 391, 871 (1998). A nearby quantum point contact senses the path through electrostatic coupling alone. It takes no energy or momentum from the interfering electron, and the visibility falls.
+   - Sonnentag and Hasselbach, Phys. Rev. Lett. 98, 200402 (2007). Electrons passing over a resistive plate decohere through the image charges they induce in a nearby medium. A small Ohmic energy loss does occur.
+
+   Fix: name both. Say that Buks et al. bears directly on (B) taken as "external, momentum-free records do not count", and is likely to contradict it. Keep (c) open only for checking whether either experiment fully meets (B)'s conditions.
+
+10. Draft §4, the question. The two descriptions are not parallel: momentum for the gas atom, energy for the DP. That steers him toward Claude's candidate rule. Fix:
+    - "a gas atom it bumped, which flew off with a little of its momentum, and Sea DPs it turned, which kept their new orientation but kept no energy or momentum from it."
+    - Add the neutral fact that both are left different according to which arm the atom took.
+    - Keep "Experiments show the bumped gas atom spoils the stripes"; it is fair and factual.
+
+11. Draft §5 (D-9). Changes to the list:
+    - **TODO-4493-d (bends)** is listed as carried unchanged, but 4494's bearing on it was "on reading (P), a change of direction is where a record could form". With (P) out, re-scope it: on a persistent turn the record forms along the whole path, not mainly at bends.
+    - **TODO-4493-f / TODO-4203** ("a turned orientation may outlast the release"): his answer now supports this. Re-scope it as supported, not as a possibility.
+    - Carry 4494's bearings, which are dropped: 4419 item 4 (front and rear signals netting exactly v, carried at 4420 §5) and 4420 §5's "charge in front, discharge in back".
+    - Add new item (e): route (C), from change 3.
+    - Give the new items IDs TODO-4495-a … -e.
+
+    The todolist entry, added in the same patch with `research_frontier`, must contain:
+    - the header pattern 4494 used: files, "no new script", critic verdict;
+    - **Answered:** TODO-4494-d in part; TODO-4494-e closed; (P) and T5 excluded;
+    - **Owed (4495 §5, word for word):** TODO-4495-a route (A)/(B)/(C); TODO-4495-b the release rule, with the readability condition, checked against Walborn and Dürr–Nonn–Rempe; TODO-4495-c the search, with Buks 1998 and Sonnentag–Hasselbach 2007 as the leads; TODO-4495-d founder question 4495 §4 (gas atom versus turned DP; the other arm); TODO-4495-e route (C) and whether DP dynamics are reversible;
+    - **Re-scoped:** TODO-4494-a, -b, -f; TODO-4492-b; TODO-4493-a, -b, -d, -f;
+    - the bearings carried from 4494;
+    - the full carried-unchanged list;
+    - the top-of-file "Last updated" line.
+
+    Run `code/deferral_gate.py` before format-patch.
+
+12. Draft §6, the reply. Line 99 says "a turned DP takes none": change it to "keeps none" (see change 6). Under D-15 the chat message must also say what the critic changed, and it must carry a Plain Language summary.
+
+OPTIONAL NOTES
+
+1. Founder file, "Statement extracted": add his second bullet ("left in the orientation … as the entanglement and forces acting upon it fade to zero and leave it to be oriented as per the local forces of the space act upon it locally"). §2 and the reset reading rest on it.
+2. "Tens of centimetres" (§2): the determinate-phase result 4494 relies on is 16 cm (Asenbaum et al. 2017). "Up to 16 cm" would be more exact; 4494 used the same wording.
+3. Having no new script is acceptable: no new numbers are claimed. If route (C) is added, two rows would make the contrast concrete:
+   - a reset of the DP into a coupled environment, done unitarily, leaves V unchanged when computed on DP plus environment;
+   - a many-to-one reset that is not unitary restores V = 1.
+4. Line 41, "The guiding arcs from both arms still superpose at the screen": mark it as Claude's reading of his arcs picture.
+5. PD-008: (B) or (C) is also convenient in a sense, because it gives a crisp "CPP departs here" story. Consider marking that too.
+6. No prior founder statement turned up that a record outside the quantum does not count. The only prior statement on DPs settling to a local equilibrium orientation is the website "randomizes due to entropy effects" (change 3). The founders_voice files hold no statement on CPP departing from complementarity.
+
+PLAIN LANGUAGE: Thomas says that once the atom is far away, the specks of space it passed stay turned the way it left them, then get knocked about by whatever else passes through. The draft rightly says the knocking about doesn't wipe out the mark of which way the atom went; it only spreads it around. That holds only if nature never truly forgets, and the draft should say that is an assumption. The draft also reads too much into his phrase "not tied by entanglement": most likely he only meant the specks stop following the atom, not that their marks don't count. The rule it proposes (gas atoms that take momentum count, turned specks don't) needs one condition added, and one experiment is described slightly wrongly. Finally, there is already a 1998 experiment in which a nearby electrical sensor noticed which way an electron went, without taking any energy or push from it, and the stripes faded. That experiment probably bears directly on whether CPP can keep the stripes this way, so the draft should name it rather than call the search still to be done.
+
+---
+
+## Claude's response to the 4495 return (not part of the verbatim report)
+
+All twelve required changes taken in, after verifying Buks, Schuster, Heiblum, Mahalu and Umansky (Nature 391, 871, 1998; the QPC which-path detector) and the website line 1119 quote. The Buks description in the reading is worded as "senses the path through electrostatic coupling to the passing charge, without scattering the interfering electron," which is what the paper reports; the stronger "takes no energy or momentum" is left as the critic's characterization. Optional notes 1, 2, 4 and 5 taken; note 3 (two script rows for route (C)) not taken, since no new number is claimed.
