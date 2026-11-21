@@ -708,3 +708,82 @@ PLAIN LANGUAGE: Thomas says that once the atom is far away, the specks of space 
 ## Claude's response to the 4495 return (not part of the verbatim report)
 
 All twelve required changes taken in, after verifying Buks, Schuster, Heiblum, Mahalu and Umansky (Nature 391, 871, 1998; the QPC which-path detector) and the website line 1119 quote. The Buks description in the reading is worded as "senses the path through electrostatic coupling to the passing charge, without scattering the interfering electron," which is what the paper reports; the stronger "takes no energy or momentum" is left as the critic's characterization. Optional notes 1, 2, 4 and 5 taken; note 3 (two script rows for route (C)) not taken, since no new number is claimed.
+
+
+## Patch 4496 — Independent critic of the reading of the founder's both-arms-flip answer (4495 §4)
+
+VERDICT: ACCEPT WITH CHANGES
+
+The founder file is a faithful verbatim copy. The draft reads his answer fairly overall, but it claims too much in four places, states the empty-arm physics inaccurately, and gives "conservation of action" a reading that conflicts with standard physics. Its §6 bookkeeping also has gaps.
+
+REQUIRED CHANGES
+
+1. **Overclaim: title, §2 first bullet, §7 first sentence.** "CPP Then Agrees With Quantum Mechanics Here" / "On this route CPP agrees with quantum mechanics" / "That's the answer that keeps CPP in line with standard physics." Change to "On Route (A) CPP Can Agree With Quantum Mechanics, Provided the Same-Flip Condition (§3) and the Empty-Arm Rule (§3) Hold." In §7: "That's the route on which CPP can stay in line with standard physics, given one condition."
+
+2. **§3, the empty-arm sentence is inaccurate.** It reads: "in quantum mechanics, no single-shot measurement in the empty arm finds the atom's momentum there." The sentence assumes a fact QM does not have, namely which arm the core took. Replace with: "In quantum mechanics a single-shot probe in either arm either registers nothing or registers the whole atom, and the atom is then found in that arm. No probe registers a share of the atom's momentum in an arm where the atom is not then found. Weak measurements read nonzero values in both arms, but only as ensemble averages (Aharonov, Albert and Vaidman 1988; Kocsis et al., Science 332, 1170, 2011; Danan et al., PRL 111, 240402, 2013; the neutron 'Cheshire cat', Denkmayr et al., Nat. Commun. 5, 4492, 2014). Protective measurement (Aharonov, Anandan and Vaidman, PRA 47, 4616, 1993) reads the wave on a single system only under protection. Neither gives a single-shot reading in the arm the atom was not found in." Add the closest standard precedent:
+   - Hardy, Phys. Lett. A 167, 11 (1992), on empty waves.
+   - Englert, Scully, Süssmann and Walther, Z. Naturforsch. 47a, 1175 (1992), "surrealistic" trajectories; tested by Mahler et al., Sci. Adv. 2, e1501466 (2016).
+   - The point of these papers: in a guided-particle theory, a which-path detector can fire in the arm the particle did not take. The record follows the wave, not the particle.
+   - Mark the whole as Claude's statement.
+   - None of this is in the repo yet (grep finds only generic dBB mentions in 4464, 4477 and the website archive).
+
+3. **§3, state the empty-arm fork in his terms.** He says gas "will" take momentum but does not say in which arm. Add (Claude's statement):
+   - (i) The arcs in the empty arm never transfer momentum to gas there. The empty arm is then inert to gas, as dBB's empty wave is to particle positions.
+   - (ii) They can bump a gas atom. Then a bump in arm B must coincide with the atom being found in B, which needs the 4478 per-quantum gathering ("gathered at once") to bring the core to B.
+   - Either way, collision rates must match the single-path cross-section that Hornberger et al. 2003 used (4479 §3).
+   - File this under TODO-4496-c.
+
+4. **§3, D-10 links missing.** The empty-arm momentum has already been discussed:
+   - 4492 §2: "an instant change to the arcs in the far path moves momentum density across the gap at once … a feature to name in 4464 (d)."
+   - 4477 §3: the photon's empty-wave cost, "the far half would carry none."
+   - 4494 §3.3 T4: probes in the empty arm, e.g. an ion interferometer.
+
+   Cite all three. Note that his "the arc-cloud is the totality of the KE/Momentum/action" puts momentum in the arcs, which is the opposite of the pilot wave, so the cost is real.
+
+5. **§3, D-15 most favourable reading.** Add (Claude's reading): if the arc-cloud carries the totality of the momentum, the core carries none of its own. His own statement then already gives the momentum part of the same-flip condition. What is left is only the core's electric pull, the 4494 mechanism, which for a neutral atom is confined to roughly an atomic-radius tube (4494 §3.1). That tube is the specific asymmetry §5 asks about.
+
+6. **§4, the reading conflicts with standard physics.** "On that reading his conjecture says the entanglement term exists to keep the quantum's phase coherent." In QM, entanglement of the atom with anything outside it is what destroys the fringes (Englert). Route (A) works because the trail is not entangled with the path.
+   - Make the strongest reading the standard one: conservation laws produce entanglement. EPR's 1935 state has definite total momentum, so the parts are entangled. This is his own earlier reason at 4492 §2, "to conserve momentum and energy," and 4481 §2's "when the kick could in principle be read." Cite both (D-10).
+   - Keep S/ħ only as a second reading, limited to the quantum's own members, and labelled semiclassical/path-integral ("the phase along each arm is S/ħ in the semiclassical picture").
+   - Delete "exactly" in "is exactly what keeps the two arms' phases comparable."
+
+7. **§6, TODO-4494-d left open.** 4495 left its other-arm part open, and 4496 answers it. Add: "TODO-4494-d answered in full (other arm: the arcs flip their DPs too)." Add -d to the "Bears on" line.
+
+8. **§6, labels and moved items.**
+   - 4495 uses "4492 (d)", not "TODO-4492-d". Use one form throughout §2, §6 and the todolist.
+   - 4492 (d), 4478 (a) and 4464 (d) are now joined or re-scoped (by TODO-4493-c, -4496-b and -4496-c). Move them from "Carried unchanged" to "Re-scoped" with one clause each.
+   - Note that 4492 (d) no longer appears in "Carried unchanged" because it is re-scoped.
+
+9. **§8 "Agreed".** "the atom-arc-cloud is one unit by shared momentum" is listed as agreed, but the same section marks "membership by shared momentum" as Claude's reading. Under "Agreed", quote his words instead: "one unit, because the momentum is conserved within" it.
+
+10. **Header and §7, critic note.**
+    - Add a **Critic:** line in 4495's form: verdict, changes taken in, and the reviews-file path.
+    - D-15 requires the chat reply to say what the critic changed. Add one sentence to §7.
+
+11. **§2 first bullet, mark the reading.** "He answers the first part of 4495 §4 by the second" (§1, last line) is an inference. Mark it as Claude's reading: he did not say whether a one-arm trail would spoil the stripes. TODO-4495-a is answered as "route (A) chosen, under TODO-4496-a". Route (B) is made moot, not rejected by him.
+
+12. **Todolist entry (D-9, same patch, with the research_frontier "Last updated").** It must contain:
+    - Header "4496 — Both arms flip: the founder's answer to 4495 §4 (critic …; nothing registered)", the file paths, "no new script", and the review path.
+    - **Answered:** TODO-4495-a (route (A), under -4496-a); TODO-4495-d; TODO-4494-d remainder; TODO-4493-c (in his terms).
+    - **Owed:** TODO-4496-a through -e, word for word from §6, with -c including the gas-in-empty-arm fork and the Hardy/ESSW/weak-value leads.
+    - **Re-scoped:** TODO-4495-b, -c, -e (background); TODO-4494-a, -b, -f; TODO-4492-b; TODO-4493-a, -b; 4492 (d); 4478 (a); 4464 (d).
+    - The bearings line, then "Carried unchanged" exactly as the corrected §6.
+
+OPTIONAL NOTES
+
+1. Founder file title: "Ensure Conservation of Action" paraphrases his "insure". Use "Insure" so the title does not appear to correct him.
+2. Founder disclosure wording: "operational, and as typed: origin was at 4494 …" reads awkwardly. Suggest: "'4494 applied.' is operational and accurate: origin was at 4494, so 4495 had not been applied, and it is delivered with this patch." Verbatim check passed on every point: text, curly apostrophes in the pasted summary, "path .", both double spaces, blank lines, and the disclosed brackets and trailing-space removal.
+3. §3, row S1: add its assumptions, "(Moment = t_P, 1 ms flight; 4492 S1)". The T2 reuse checks out: cos(5×10⁻⁴)^10⁶ = e^−0.125 = 0.8825.
+4. §2: "matches 4419 §5's drag cap" should be "is consistent with". The cap is an observational bound of about 10⁻⁶² per Moment, not zero.
+5. §7, "both arms carry the same trail": for unequal arms the trails differ. The condition is that each arm's trail does not depend on where the core went, as §3 states correctly. Align the reply with §3.
+6. §5 is a physical picture and balanced. Consider adding the gas fork from change 3: "If a gas atom sits in the other arm, can the arcs alone bump it?"
+7. "Action is not conserved in standard physics" is correct: action is the quantity a path makes stationary, not a Noether charge. Keep it.
+8. No new script is acceptable. Nothing new is computed, and the rows reused are quoted from 4494 and 4492.
+
+PLAIN LANGUAGE: Thomas says the part of the atom's "cloud" that goes through the other slit also flips the Sea's DPs, because flipping marks where momentum passes. Both paths then look alike, and the stripes can survive. The draft records this fairly, but in a few places it says CPP "agrees with standard physics" when that holds only if the atom's core adds nothing extra to the flips on its own path. It also says too simply what experiments show about momentum on the path the atom didn't take. Known results about "empty waves" and detectors that fire on the "wrong" path (Hardy; Englert and colleagues) should be cited. One open question should be added: can the cloud on the other path bump a gas atom by itself? His "conservation of action" idea is best read the standard way: conservation laws are what tie particles together. It should not be read as entanglement keeping the stripes sharp, because in standard physics entanglement with outside things washes them out. A few bookkeeping items need to be closed or moved, and all of it has to go into the to-do list in the same patch.
+
+---
+
+## Claude's response to the 4496 return (not part of the verbatim report)
+
+All twelve required changes taken in; the literature in change 2 is cited as the critic gave it and marked as Claude's statement in the reading. Optional notes 1–6 taken; 7 kept as is; 8 noted.
