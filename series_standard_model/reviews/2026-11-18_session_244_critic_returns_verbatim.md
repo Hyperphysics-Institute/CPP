@@ -787,3 +787,69 @@ PLAIN LANGUAGE: Thomas says the part of the atom's "cloud" that goes through the
 ## Claude's response to the 4496 return (not part of the verbatim report)
 
 All twelve required changes taken in; the literature in change 2 is cited as the critic gave it and marked as Claude's statement in the reading. Optional notes 1–6 taken; 7 kept as is; 8 noted.
+
+
+## Patch 4497 — Independent critic of the reading of the founder's flips-by-share and two-influences answer (4496 §5)
+
+VERDICT: ACCEPT WITH CHANGES
+
+REQUIRED CHANGES:
+
+1. **Draft line 8 (Script).** "the bound used is 4492's row S1, quoted" is wrong. 4497 never uses S1, which is the per-Moment coherence bound. Replace with: "**Script:** none new; no computed numbers; the speed bounds in §5 are quoted from the literature (Salart et al. 2008 via 4478 §2; Yin et al. 2013)."
+
+2. **Your answer was already given, so §4, §6, §8 ¶3 and TODO-4497-c need rework (D-15).** He already answered the §6 question. His words are "the core and DP-arc cloud entity carry all the energy through only one slit". Read at their most favourable, they say an atom that passes the open slit keeps all its energy, which is what QM says. So:
+   - **§4:** say his answer already meets the condition ("all the energy through only one slit"). What his words leave open is only the mechanism: what the blocked arm's arcs do at the block (turned back to rejoin the atom, never sent into that arm, or gathered as in §3). Add the experimental check, which the draft lacks. If half the KE were lost, the de Broglie wavelength would grow by √2 and single-slit diffraction angles by about 41%. Observed open-slit patterns match the incoming λ = h/p. Light through a half-blocked aperture keeps its frequency, which every slit or grating spectrometer shows. Candidate citations, to verify before citing: neutron single and double slit, Zeilinger, Gähler, Shull, Treimer and Mampe, Rev. Mod. Phys. 60, 1067 (1988); velocity-resolved atom double slit, Carnal and Mlynek, PRL 66, 2689 (1991). Cross-cite 4477/4478, where the photon's energy "lands whole", as the same gathering (D-10).
+   - **§8 ¶3:** say he already said all the energy goes through. Drop "raises the same point".
+   - **TODO-4497-c:** answered in his terms (full energy through the open slit). Still owed: the mechanism at the block.
+
+3. **§6 (the question).** As drafted it asks something he has answered, and it does not directly test the branch §9 marks as convenient. Replace it with a neutral physical picture that tests that branch: "**When the arcs in the empty arm bump a gas atom hard enough that the bump could, in principle, be noticed, where is the atom's core afterwards: does it end up in that arm, or does it stay in the other arm and only get nudged? And with one slit blocked, what happens to the arcs that meet the block?**" Update TODO-4497-e and the §8 closing line to match.
+
+4. **§3 ¶2, the surreal-trajectory comparison.** It is mis-characterised in three places:
+   - (a) Hardy 1992 is about empty waves, not surrealistic trajectories (4496 §3.2 keeps them separate). Write it as "(Englert, Scully, Süssmann and Walther 1992; with Hardy 1992 on empty waves; Mahler et al. 2016)".
+   - (b) Mahler et al. did not "test" ESSW. They reconstructed average photon trajectories by weak measurement and observed surreal ones, with the which-path mark held in an entangled partner's polarization. Write "observed in weak-measurement reconstructions by Mahler et al. 2016".
+   - (c) "only with a record that does not disturb the particle's later guidance" is wrong. ESSW's record does destroy the fringes. The real condition is that the record sits in a non-position degree of freedom: a cavity photon in ESSW, a partner's polarization in Mahler. When the record is a position that separates at once, as a recoiling gas atom's does, the guided particle and the record agree (Dürr, Fusseder, Goldstein and Zanghì, Z. Naturforsch. 48a, 1261, 1993; Tastevin and Laloë, arXiv:1802.03783, 2018; verify the DFGZ reference before citing). This strengthens the draft's conclusion "For a gas atom that recoils, CPP needs the first reading". Keep that conclusion.
+
+5. **§5 bullet 1, title, TODO-4497-d and §8 ¶4 drop a condition.** "Correlations at least 10⁴ c" holds only for preferred frames in which Earth moves at under 10⁻³ c. 4478 §2 records that CPP's likely frame, the CMB, has Earth at about 1.2 × 10⁻³ c, just outside that condition (TODO-4364-PREFFRAME). Fixes:
+   - **Title:** "Correlations at Least 10⁴ c (for Frames in Which Earth Moves Below 10⁻³ c)".
+   - **§5:** add the 4478 sentence and cross-link TODO-4364-PREFFRAME.
+   - **§8 ¶4:** add "for any preferred frame in which Earth moves slower than a thousandth of light speed; CPP's own frame may sit just outside that." Replace "That's exactly your split" with "That matches your split."
+
+   Yin's wording itself is right as drafted. I checked the arXiv abstract: "four orders of magnitude", "if the Earth's speed in any inertial reference frame was less than 10^(-3) times of the speed of light", "12-hour continuous violation", "strictly closed the locality loopholes". "Measurement-choice" comes from the title and is fine.
+
+6. **§2 ¶1, fairness (D-15).** "What his answer does not address is the core's electric pull" is not fair to him. The question he was answering named it explicitly ("sit right beside the core's own charges … flipped more, or differently?"), and he answered "The flipping happens in the same way." Rewrite as: "He answers the tube asymmetry directly — 'the same way'; Claude reads that as the core's pull adding nothing beyond the share, which is the condition (Claude's reading)."
+
+7. **§9 PD-008.** The "shares set by the split" reading (§2) is also the branch convenient to Claude, because it makes the answer meet TODO-4496-a. Mark it as such alongside "gather the core". Also address the textual tension honestly. His "energy lost … will be small" and "friction" could suggest the nudge reading. Note that they are compatible with gathering, because a readable bump needs only a momentum transfer of about h/d (d = slit separation), which is tiny.
+
+8. **§7 bookkeeping (D-9), with gaps against 4496 §6.** These items were re-scoped at 4496 and are still open. They appear in neither "carried" nor "re-scoped" in 4497 §7: TODO-4494-a, -b, -f; TODO-4492-b; TODO-4493-a, -b; 4492 (d); 4478 (a); 4464 (d). Add them under Re-scoped. TODO-4494-a/-b/-f, TODO-4492-b and TODO-4493-a/-b now rest on route (A) under **TODO-4497-a** (successor to TODO-4496-a). 4492 (d) stands with TODO-4496-b. 4478 (a)'s gathering now bears on TODO-4497-b and -c. 4464 (d) gains the surreal-trajectory comparison (§3). Add a cross-link to TODO-4364-PREFFRAME under TODO-4497-d. Keep the bearings line (4419 item 4; 4420 §5).
+
+9. **The todolist entry (same patch as research_frontier).** Follow the 4496 entry's form:
+   - Header: "4497 — Flips by share: the founder's answer to 4496 §5 (critic …, nothing registered)", the two file paths, "no new script", and the review file.
+   - **Answered:** TODO-4496-a (in his terms, condition carried as TODO-4497-a); TODO-4496-e.
+   - **Owed (4497 §7, word for word):** TODO-4497-a..e as revised. TODO-4497-b should also carry the rate condition: bumps in arm B at the single-path Hornberger rate. TODO-4497-c is revised per change 2, TODO-4497-d per change 5, TODO-4497-e is the new §6 question.
+   - **Re-scoped:** TODO-4496-c (toward (ii), under TODO-4497-b); TODO-4496-b stands; plus the change-8 list.
+   - **Bearings**, and **Carried unchanged** exactly as in §7.
+   - Then run `code/deferral_gate.py`.
+
+10. **§8, the reply (D-15).** Add the closing parenthesis saying what the critic changed: the blocked slit now taken as already answered; the surreal-trajectory description corrected; the speed bound's frame condition restored; the question moved to the core's location after a bump.
+
+OPTIONAL NOTES:
+
+1. The founder file is verbatim. I rebuilt the text programmatically and it matches word for word: curly ’ in the question, straight ' in "don't", all three double spaces kept, the double blank line before "What do you think?". Brackets and dropped trailing spaces are disclosed. The added brackets are the one intrusion. A header note alone, without brackets, would be cleaner, but this is acceptable as disclosed.
+2. §5 could add 4478 §2's stronger point (D-10): for three or more parties, any finite-speed influence allows signalling (Bancal et al. 2012; Barnea et al. 2013). So the Nexus must be at once, not merely at 10⁴ c or more.
+3. §3 says "reaches the core through the Nexus". He bets on both channels. Add one clause saying a relay-speed version is excluded by Guerreiro et al. 2012 (4477 §3), which is why the Nexus is read here.
+4. §3: "found in arm B, every time" holds for a fully distinguishable record. For a partial one the atom is found in B more often than not. A clause on this would match 4481 §2's readability condition.
+5. §4: give the arithmetic. Losing a share s of the KE means speed × √(1−s), so 0.71 for an even split.
+6. §2: momentum is a vector, so the arms' shares point different ways. "Half the momentum" is shorthand; that's fine but could be noted.
+7. §1 writes "Nexus tensor"; he writes "Nexus Tensor". Match his capitalisation inside paraphrase. The quote on line 16 cuts "…to friction as the atomic core passes through a gas"; mark it with an ellipsis or quote it in full.
+8. No new script is fine. Nothing is computed beyond the √2 arithmetic, which can stay in prose.
+9. Search results for prior treatment (D-10): the repo had no earlier blocked-slit energy discussion and no CPP treatment of gas friction or drag. Outside the 4492/4488/4489 chain, "instantaneous force" appears only in unrelated places (darcforce validation, a 2026-08-25 framing note). His 4492 "The effect is instantaneous because the update of the Nexus tensor…" was conditioned at 4488 §5 (selection, not a push) and 4489 §1 (the port rule). The draft's §5 conditioning is consistent with that.
+
+PLAIN LANGUAGE: Your filed message is copied exactly. The draft reads you fairly, with three exceptions that need fixing. First, the draft asks you whether an atom going through the open slit loses energy, but you had already said all the energy goes through the one open slit, which is what standard physics and the experiments say. The better question is what happens to the cloud's other part when it meets the block, and whether a bump in the empty arm brings the atom's core into that arm. Second, the speed-of-correlation result (at least ten thousand times light speed) only holds if Earth's motion through the hidden "true" frame is under a thousandth of light speed. CPP's likely frame is just over that, and the reply must say so. Third, the comparison with Bohm-style "surreal" paths needs correcting. Those paths happen only when the which-way record is held in something other than a position. A gas atom that gets knocked aside is a position record, so the draft's main conclusion still stands. The to-do list also has to carry several open items forward that the draft dropped.
+
+Sources checked: [Yin et al. 2013, arXiv:1303.0614](https://arxiv.org/abs/1303.0614v1); [Mahler et al. 2016, Sci. Adv.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4788483); [Tastevin and Laloë 2018, arXiv:1802.03783](https://arxiv.org/pdf/1802.03783).
+
+---
+
+## Claude's response to the 4497 return (not part of the verbatim report)
+
+All ten required changes taken in, after checking 4478 §2 (the CMB-frame sentence and TODO-4364-PREFFRAME; Bancal et al. 2012 and Barnea et al. 2013). The DFGZ 1993, Zeilinger et al. 1988 and Carnal and Mlynek 1991 references are cited as the critic gave them; they match Claude's own knowledge of those papers but were not re-fetched in this session. Optional notes 1–7 taken (1: the brackets kept, as disclosed); 8 and 9 noted.
