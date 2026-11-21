@@ -853,3 +853,95 @@ Sources checked: [Yin et al. 2013, arXiv:1303.0614](https://arxiv.org/abs/1303.0
 ## Claude's response to the 4497 return (not part of the verbatim report)
 
 All ten required changes taken in, after checking 4478 §2 (the CMB-frame sentence and TODO-4364-PREFFRAME; Bancal et al. 2012 and Barnea et al. 2013). The DFGZ 1993, Zeilinger et al. 1988 and Carnal and Mlynek 1991 references are cited as the critic gave them; they match Claude's own knowledge of those papers but were not re-fetched in this session. Optional notes 1–7 taken (1: the brackets kept, as disclosed); 8 and 9 noted.
+
+
+## Patch 4498 — Independent critic of the reading of the founder's core-stays and arcs-reform answer (4497 §6)
+
+VERDICT: ACCEPT WITH CHANGES
+
+The founder filing is verbatim. I checked it by script: once the filer's line wrapping, the "> " markers and the disclosed square brackets are removed, the text is word-for-word identical to the message as sent. The draft reading has one physics error (§2), one D-15 gap (§3) and several bookkeeping points.
+
+REQUIRED CHANGES
+
+1. **§2 first bullet: a wrong statement about QM.** "In quantum mechanics the block takes momentum only from atoms that are absorbed by it" is false.
+   - Every atom that passes the open slit and is diffracted gives the opposite transverse momentum to the mask: the Bohr–Einstein recoiling slit. Measured by Schmidt et al., PRL 111, 103201 (2013), and by Liu et al., Nature Photonics 9, 120 (2015). Atoms that are reflected or absorbed also give it longitudinal momentum.
+   - Replace the bullet with: "**Momentum at the mask, exactly as conservation requires.** In quantum mechanics the mask (open-slit edges and block, one rigid body) takes, from each atom that passes, exactly the opposite of that atom's change of momentum, distributed as the single-slit diffraction (Bohr's recoiling slit; Schmidt et al., PRL 111, 103201, 2013). The arcs that meet the block carry a share of the atom's forward momentum (about half for an even split, 4497 §2). As they reform through the open slit they must hand that share back to the atom and leave none in the block. Otherwise each passing atom loses about half its forward momentum to the block, contradicting the measured open-slit wavelength (4497 §4)."
+   - Make the same change in TODO-4498-a (§6), in §7's "The block mustn't get a push from atoms that miss it", and in §8.
+
+2. **§2 last sentence: overclaim.** "which his 'fanned out beam we expect to see' states" → "which his 'fanned out beam we expect to see' is consistent with".
+
+3. **§3: add the most favourable reading consistent with QM (D-15) before "What it predicts".** Add a paragraph:
+   - "**Read most favourably** (D-15): 'cannot be bumped hard enough' can mean that the arcs in the arm without the core never give a gas atom a readable kick (4481 §2: one lost in the gas atom's own spread of momentum). Readable kicks would then happen only in the arm the core is in. On that reading the gas record and the core's arm agree, and quantum mechanics' correlation rule and the single-path collision rate both hold.
+   - Fork (i) of 4496 §3.2 (no momentum to gas at all) is excluded by his 'it will cause an absolute loss or gain of momentum'. Only this weakened version, which allows kicks but never readable ones, survives.
+   - Against this reading: 'The big collision with the other path/slit DP-arcs will be to change the trajectory of the atom core traveling in the other path' implies a kick large enough to change the core's course.
+   - His 'So, its trajectory would change, but it would not become part of the beam that went through the other side' is ambiguous: 'its' may be the gas atom or the empty branch.
+   - §5 asks which reading he means."
+   - Retitle §3, the file title and the §7 wording from a flat "definite departure" to "a departure **if** the empty arm's kick can ever be readable". The §7 line "That's a real point where CPP and quantum mechanics part" becomes conditional.
+
+4. **§3, "One way his picture avoids the conflict": the paragraph contradicts itself.** It says "there is no conflict with quantum mechanics' correlation rule" and then, in its "Correlation" bullet, that the correlation still conflicts.
+   - Fix: "On that reading the gas record carries no which-path information inside CPP. But the observable that quantum mechanics constrains, a readable recoil located in B, would still be followed by atoms from A. So it still conflicts with quantum mechanics' prediction. It conflicts with complementarity only in one respect: fringes would come back when atoms are sorted by the gas recoil."
+   - Add the signature. With gas in one arm only, quantum mechanics says atoms sorted by a readable recoil in B show the single-slit pattern of arm B, shifted by the kick, with no fringes. A shared kick to the whole cohort would instead give shifted fringes that sorting recovers (the Chapman et al. 1995 kind of recovery). Without sorting, both pictures can lose the fringes once the kick spread is at least about h/d.
+
+5. **§3 "Rates": the citation does not support the claim.** 4479 §3 does not say Hornberger et al. "fit their C70 decoherence to the single-path cross-section".
+   - Cite Hornberger et al., PRL 90, 160401 (2003) directly.
+   - State the claim as: their measured decoherence pressures agree with the standard collision rate n·σ·v, using cross-sections calculated from the van der Waals interaction, counted once per molecule. In their Talbot–Lau setup the gas fills every path and each molecule is coherent over several grating slits, so counting collisions per path would multiply the rate by roughly the number of slits.
+   - Mark it as Claude's statement, and say the level of agreement has not been checked in this patch. File that check under TODO-4498-c.
+
+6. **§3 "The test, stated": make it operational.**
+   - "where the atom arrives" → "which arm the atom leaves by (detectors close behind the arms, or the output ports of an interferometer whose paths are still apart), or, in the far field, whether sorting by recoil brings fringes back (change 4)".
+   - Replace "a search ... is owed" with what is known. Experiments for massive particles where scattering or a marker affects one or both arms, all consistent with QM:
+     - Pfau et al., PRL 73, 1223 (1994)
+     - Chapman et al., PRL 75, 3783 (1995): scattering in both arms, sorted by photon direction, not by position
+     - Buks et al., Nature 391, 871 (1998): a detector beside one arm; dephasing seen, no coincidence
+     - Dürr, Nonn and Rempe, Nature 395, 33 (1998): marking with no kick
+     - neutron absorber in one arm: Summhammer, Rauch and Tuppinger, PRA 36, 4447 (1987)
+   - None that I know of records, in coincidence, where a gas or position scatterer in one arm was hit and which arm the atom left by. The search stays owed (TODO-4498-d) and should start from these.
+
+7. **§3, the photon sentence.**
+   - "a photon in CPP is all arcs, with no core" has no corpus citation. Cite it (e.g. 4470 §1's "a volume of DP arc-separation"), or soften it to "on Claude's reading". 4470's "central CP" belongs to the emitting cohort, not the photon, so say so.
+   - Also say the anticorrelation at two detectors is a detection result, not a test of where the photon scattered. 4478 line 40 already records that a model with the energy in one arm reproduces it.
+
+8. **§5: the question presupposes the answer and does not let the atom's arm be told.** Replace it with:
+   - "**Put a thin gas in one arm only, and put a detector close behind each arm, so you can tell which arm each atom came out of. When the core goes down the arm without gas, can its arcs passing through the gas arm ever kick a gas atom hard enough that the kick could be noticed? If they can, then whenever such a kick is noticed, which detector does the atom reach: always the one behind the gas arm, or sometimes the one behind the other arm?**"
+   - Make §7's closing paragraph match.
+
+9. **§6 bookkeeping.**
+   - **(a)** "TODO-4497-b answered by his choice" is wrong: TODO-4497-b was a requirement, and his answer takes the branch it excluded. Write: "**TODO-4497-b** closed by his choice against it: the core stays and is nudged (§3). Its requirement is carried as TODO-4498-b, its rate clause as TODO-4498-c."
+   - **(b)** TODO-4495-a was answered at 4496 §6 (route A), so do not list it as re-scoped. Say instead: "TODO-4495-a stays answered (route A); the empty-arm kick is a separate question (TODO-4498-b)."
+   - **(c)** TODO-4496-c: say that fork (i) is excluded by his words, that (ii) (gathering) is declined, and that his answer is a third branch, the nudge, which 4497 §3 had excluded, except under the change-3 reading.
+   - **(d)** Add new items for what changes 3–6 put aside: the change-3 reading (no readable empty-arm kick) as a fork in TODO-4498-b; the recoil-sorted fringe signature under TODO-4498-d; and the check of Hornberger's level of agreement under TODO-4498-c.
+
+10. **The todolist entry (D-9) must be in the same patch, together with the research_frontier "Last updated" line.**
+    - It must contain: "**4498 — The core stays, the arcs reform: the founder's answer to 4497 §6 (critic …; nothing registered):**"
+    - the two file paths, "no new script", and the location of the review file
+    - **Answered:** TODO-4497-c (in his terms; its conditions in TODO-4498-a), TODO-4497-e
+    - **Closed against:** TODO-4497-b (carried as TODO-4498-b and -c)
+    - **Owed (4498 §6, word for word):** TODO-4498-a to -e, as corrected above
+    - **Re-scoped:** TODO-4496-c, 4478 (a), 4464 (d), and the TODO-4495-a note
+    - the bearings carried, and the "Carried unchanged" list exactly as in §6
+    - Run `code/deferral_gate.py`.
+
+11. **D-15 and the header.**
+    - Add a "**Critic:**" line to the header.
+    - Add a parenthesis to §7 saying what the reviewer changed: the mask recoil, the reading in which the empty arm never makes a readable kick, the corrected question, and the measured experiments.
+
+12. **Founder filing disclosure.** The pasted first question differs from 4497 §6 as filed: it is split into two questions, and reads "Does it end up … or stay …" where §6 reads "does it end up … or does it stay …". Add "which differs slightly from 4497 §6 as filed" to the parenthesis, as 4495–4497 did.
+
+OPTIONAL NOTES
+
+1. §2 calls his reforming "4478's gathering applied to arcs". His description is a local process that unfolds in time (concentrating, then spreading). 4478's gathering happens at once. Say "a local analogue of" or "compare", not "is".
+2. §2's second condition (arcs gathered back when the core hits the block) cannot be met by a reforming that travels no faster than light if the open slit is far from the block. Spacelike single-quantum tests (Guerreiro et al. 2012, 4477 §3) point to "at once".
+3. In §1 and §2, keep his "material around the slit (the blocking material/mass)", which may mean the open slit's own edges, separate from the cover on the other slit.
+4. "the share-weighted rule that, in quantum mechanics, is the Born rule": add "the probability of a scatter in B equals the probability weight of arm B, which equals the momentum share when both arms move at the same speed".
+5. The "12:19 local" timestamp in the founder filing cannot be checked from the repo. That is fine if it comes from the chat.
+6. Having no new script is acceptable: this is a reading, nothing is computed, and the header says so.
+7. Search results: "central source" appears nowhere earlier in the corpus. No earlier founder statement says the empty branch cannot move the particle; 4496 §3.2 fork (i) and 4497 §3 are the nearest. Nothing earlier covers recoil of the mask in the corpus.
+
+PLAIN LANGUAGE
+Thomas's message is copied exactly. On the blocked slit, his picture can work, but the draft got one fact wrong. In standard physics the slit plate is nudged by every atom that goes through and bends, not only by the atoms it stops. So the condition is that the plate takes only the matching nudge and no extra share of the atom's push. On the gas question, the draft calls his answer a clear break with quantum physics, but his words have a gentler reading: the empty arm may only ever brush the gas too lightly to leave a usable trace. On that reading he agrees with quantum physics. The question sent back to him should ask exactly that, with detectors placed so you can tell which arm each atom came out of. I know of no experiment yet that has checked "gas hit in one arm, atom came out of the other" one atom at a time, so the search for one stays on the to-do list.
+
+---
+
+## Claude's response to the 4498 return (not part of the verbatim report)
+
+All twelve required changes taken in, after checking 4470 §1's "a volume of DP arc-separation around the axis of travel". The experimental references in changes 1 and 6 are cited as the critic gave them; they match Claude's own knowledge but were not re-fetched in this session. Optional notes 1–4 taken; 5–7 noted.
