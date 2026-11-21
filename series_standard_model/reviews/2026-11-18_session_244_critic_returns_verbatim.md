@@ -534,3 +534,88 @@ The founder's copy of his message is faithful. The physics reading has the right
 ## Claude's response to the 4493 return (not part of the verbatim report)
 
 All thirteen required changes taken in, after spot-checking 4419 §5 (the ~10⁻⁶² per Moment drag cap) and §7 Q1, 4420's founder file ("It coasts from its previous Moment's charge in front, discharge in back") and §2, and 4415's "no 'DI-bits coming back'": the reading was rewritten around 4419–4420 (§2), the comparison given its thresholds and CPP limit (§3), trail and drag separated with the energy-free record as the live risk and the condition softened to "tells nothing about the path" (§4), the far-path tension added (§5), the inertia section rebuilt on the corpus as it now stands with the 2 August exclusion attributed to the worker (§6), the founder question replaced (§7), and the open items and PD-008 marking rebuilt (§8, §10). Optional notes 1, 2, 3 and 5 taken (3: unused citations trimmed from Reads-against); note 4 (4427, 4430) not pursued, since the reading does not discuss the cloud's front–rear shape. The interim chat message sent before this return is corrected in the reply that delivers the patch.
+
+
+## Patch 4494 — Independent critic of the reading of the founder's store-something and orientation-trail answer
+
+VERDICT: ACCEPT WITH CHANGES
+
+I checked the founder file against his message, the draft against 4493, 4492 §2–§3, 4490, 4445, 4464 §2, 4420, the 1 August file §4, CONJ.md lines 476–477, the 4493 todolist entry and bootup D-9/D-11/D-15, and both published papers on the 2015 experiment. I ran the script: `python3 -I` gives 5/5 PASS, exit 0.
+
+REQUIRED CHANGES
+
+1. **§3.2, the 54 cm evidence is misused (D-14).** The Stamper-Kurn/Marti/Müller comment (Nature, 2016, doi 10.1038/nature19108) says the opposite of how the draft uses it. Its point is that a which-path localization between the arms would remove the coherence between them but still leave high-contrast fringes, with a phase that changes randomly from shot to shot. High contrast proves only coherence within each cloud. So "the contrast itself is not in dispute" is misleading, and Kovachy et al. alone cannot rule out a trail in one arm.
+   - Fix: keep Kovachy et al. 2015 (Nature 528, 530; up to 54 cm; about 1 s; the citation is accurate). State the comment's argument correctly. Credit "constrains any modifications that would reduce contrast" to the authors' 2016 response (arXiv:1607.03485).
+   - Rest the conclusion on experiments that read a determinate phase. Two options: Asenbaum et al., PRL 118, 183602 (2017), a gradiometer with wave packets up to 16 cm apart; or the light-pulse gravimeters already in the corpus (Peters, Chung, Chu 1999, in 4442), whose arms are mm apart.
+   - Change "half a metre" to "tens of centimetres" in the title, §3.2, §4 and §6.
+
+2. **§3.3, the most favourable reading is missing (D-15).** Call it the present-field reading. Both of his bullets say the opposite charge is "drawn toward the atomic core", ahead of it and behind it. That is a rule set by where the core is now, which is 4493 §3's "paths rejoin" premise. On it:
+   - The "transposition" is the front-to-rear asymmetry of the pattern that travels with the core: rear DPs point forward because the core is now ahead of them.
+   - Once the core is past the point where the arms meet, the DPs along both arms are behind it and point toward it alike, whichever arm it took. That gives V = 1 with no help from the arcs.
+   - So the trail tells nothing about the path if a DP's orientation always follows the core's present position (no memory). It tells which path if the turned orientation stays put after the pull fades.
+   - Add this as the first bullet of §3.3. Mark T4 as needed only if the turn persists. The convenient-branch line in §3.3 and §7 must name both branches.
+
+3. **§3.3, three more readings to address in a sentence each:**
+   - **Re-randomization.** Partner swapping (4420), or the founder's own "orientation randomizes due to entropy effects" (rm_website_archive, CPP v1.1 part 1), would not erase the record. Later dynamics that are the same on both paths leave V = |Tr(ρ U_A† S† S U_B)| unchanged. Randomization by coupling to the rest of the Sea hands the record on, which is the 4491/4493 hand-on case.
+   - **"A flipped random DP looks like an unflipped one."** True of the statistics, false of the microstate; V depends on the microstate overlap (this is T3 in words).
+   - **A ± symmetry.** Swapping the + and − CPs of a DP gives a different configuration, so a symmetry carries no protection unless the Sea's whole final microstate is the same on both paths.
+
+4. **§3.1, mark the reading.** "The DP is left turned end for end … a record of where the core went" is Claude's reading of "trail left". Label it, and point to change 2.
+
+5. **New subsection (D-10): tension with 4493.** At 4493 he wrote "no disturbed space left in the wake"; now he writes "there is a trail left". 4493 §3 marked 4492 (f) answered and the no-wake condition met on the strength of the first statement. State the tension and the reconciling reading ("disturbed" means energy-carrying; the trail is energy-free). Record that 4493 §3's "no wake" settlement now depends on change 2.
+
+6. **§2, the corpus already holds his store-and-release (D-10).** He answered "That is exactly what I am implying" to the worker's store-and-release question at 1 August §4. So "store something" restores his own 1 August answer and is not new. "Settles" overstates it. Storage of displacement and the 2 August timing delay can both hold, since a stored displacement is what lags. Mark the "settled" reading as Claude's and soften the title wording.
+
+7. **§2 or §1, the interim summary (D-15 interim rule).** The first pasted summary says "the same 'no trail' rule is also what keeps a moving thing from slowing down". That is the one-test unification 4493's critic withdrew (4493 §4, §10). Add one sentence: his reply does not rest on it, and his "trail … no energy lost or given" agrees with the withdrawal. The reply in §6 should say so in one line.
+
+8. **§4, the question presumes and leads.** It takes for granted that the turned DPs stay turned, and it offers the convenient answer first. Replace it with a persistence picture first, for example:
+   > "Long after the atom has gone by, say a metre behind it, what is a DP it passed doing: still turned the way the atom left it, turning back, scrambled again, or still turning to point at the atom where it is now? And along the other arm, where only the arcs went?"
+
+9. **§6 reply.** Rework it to match changes 1, 2, 7 and 8. Present the present-field branch as the one that keeps the stripes with no new requirement on the arcs.
+
+10. **§5 carry-forward (D-9):**
+    - (i) "Carried unchanged: 4493 (a)–(f)" conflicts with "4493 §7 answered in part". Write "4493 (e) answered in part (turned, not handed on, at no energy); the persistence and other-arm parts carried as 4494 (d)", and list (a)–(d) and (f) as carried.
+    - (ii) Add the 4493 pointer that was dropped: "4419 item 4 (front and rear signals netting exactly v; carried at 4420 §5) and 4420 §5's 'charge in front, discharge in back' item."
+    - (iii) Add that "trail left" bears on 4493 (f) / TODO-4203: a turned orientation may outlast the release.
+    - (iv) Add 4493 (d), bends: on the present-field reading, a change of direction is where a record could form.
+    - (v) Add a new item: the present-field versus persistent-trail fork (change 2).
+
+11. **The todolist entry for 4494 must contain:**
+    - Header: "Answered: interim 4493 question (store something); 4493 (e) in part."
+    - TODO-4494-a: both arms trailed alike, needed only on the persistent reading; joins TODO-4493-c.
+    - TODO-4494-b: the literal reading's prediction, and the Englert violation if a record coexists with fringes; joins TODO-4493-a and -b and TODO-4492-b.
+    - TODO-4494-c: the CONJ-FP-1 pointer, under 4411 (f), 4412 (i), 4414 (8) and 4415 (11), not duplicated. Note that his 1 August §4 store-and-release statement is to be recorded there.
+    - TODO-4494-d: founder question 4494 §4.
+    - TODO-4494-e: the present-field versus persistent fork.
+    - TODO-4494-f: "no disturbed space" (4493) against "trail left" (4494), and the re-scoping of 4493 §3's 4492 (f) settlement.
+    - The TODO-4493-e status. The bearing on TODO-4493-f / TODO-4203. The 4419 item 4 / 4420 §5 bearing. "Carried unchanged" exactly as in §5.
+
+12. **Quote truncations (founder file, extracts, and draft §1).** "…relative to the charge of the atomic core." ends with a period inside the quote, but his sentence goes on (", which entails progressive separation…"). Use "…atomic core, …" or an ellipsis. In draft §1, his double space in "and the  rearward" became single inside a quotation; restore it or mark it normalized.
+
+OPTIONAL NOTES
+
+1. The founder file is verbatim. I checked text, curly and straight quotes, the double space, blank lines and bullets. The square brackets and the other disclosures follow the 4493 precedent. "23:15 local" cannot be checked from the repo.
+2. Physics checks:
+   - T1 is right, with one condition: a π turn about x gives V = 0 for a z start but V = 1 for an x start, where it adds only a phase. The mixed start gives 0. Say in a sentence that the result holds averaged over orientations, not for every one.
+   - A real 180° swing is a rotation in the plane that contains the path and the DP, so the component perpendicular to that plane is unchanged. The microstate still changes, so the conclusion stands.
+   - A permanent dipole following a passing charge does swing through 180° between far ahead and far behind, at any impact parameter. An induced (stretched) dipole relaxes toward zero instead. Whether CPP's DP is rigid or induced decides persistence, which is what change 8 asks.
+   - Turning randomly oriented DPs to point at the approaching core lowers their entropy, so it is not unitary on the DP alone. The fixed-rotation model is fair only for the front-to-rear swing; the alignment step would move its record into the atom or the Sea.
+3. The atom is neutral. Beyond the electron cloud the core's monopole field is screened (his own pair-production page says this for B), so the flipped volume is roughly a tube of atomic radius along the path. That still holds vast numbers of DPs, so T1's conclusion is unchanged. Worth one line.
+4. T4 has a hidden cost. If the arcs in the empty arm turn DPs exactly as the core does, the core's electrical effect is present in both arms. Note that it would then act on probes in the empty arm, for example in an ion interferometer.
+5. V = |Tr(ρ U_A† U_B)| is the standard decoherence-factor overlap. Englert's relation is the duality V² + D² ≤ 1. Credit the overlap formula as standard, with Englert as its bound.
+6. The CONJ-FP-1 heading is at CONJ.md line 476; line 477 is its banner. This matches 4493's citation; fine as is.
+7. D-11: the table in §3.2 matches the script output character for character.
+8. Script: optionally add a T1 row with a mixed start and a T1 row with an x start, to show the axis condition in note 2.
+
+PLAIN LANGUAGE: Thomas says the bits of space an atom passes are left flipped, with plus and minus swapped, at no energy cost. The draft rightly says a flip left in only one path would show which way the atom went and wipe out the stripes. Three things need fixing:
+- The half-metre experiment it cites is disputed on exactly this point: a critic showed its stripes could appear even if a trace had been left. Better evidence is experiments that measure a stable stripe position.
+- The draft misses the kindest reading of his words. If each flipped bit keeps pointing at wherever the atom is now, then once the two paths rejoin both paths look alike and the stripes survive. Nothing extra would be needed.
+- The question to him should first ask what a flipped bit does long after the atom has gone: does it stay flipped, flip back, scramble, or keep following the atom? It should also note that last time he said nothing was left behind, and now he says a trail is.
+
+Sources: [Kovachy et al. response, arXiv:1607.03485](https://arxiv.org/abs/1607.03485v1); [Stamper-Kurn, Marti, Müller, arXiv:1607.01454](https://arxiv.org/abs/1607.01454v2); [Asenbaum et al., arXiv:1610.03832](https://arxiv.org/abs/1610.03832v2).
+
+---
+
+## Claude's response to the 4494 return (not part of the verbatim report)
+
+All twelve required changes taken in, after spot-checking his 1 August §4 "That is exactly what I am implying", the website's "orientation randomizes due to entropy effects" (CPP v1.1 part 1), 4442's Peters, Chung and Chu 1999, and Asenbaum et al. 2017 (wave packets up to 16 cm; a 1 rad phase shift from a source mass): the 54 cm evidence restated with the comment's argument and the response, and the conclusion rested on determinate-phase experiments; reading (P), present-field, added first with the persistence fork; the three further readings; §3.1 marked; the 4493 tension as §3.4; store-and-release as his 1 August answer restored; the interim summary's withdrawn line noted; §4 replaced with the persistence picture; §6 reworked; §5 and the todolist rebuilt. Optional notes 1–5 and 8 taken (8: two T1 rows added; the script now shows 7/7 and the table is re-pasted).
