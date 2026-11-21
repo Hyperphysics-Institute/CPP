@@ -429,3 +429,108 @@ PLAIN LANGUAGE: Thomas says the atom's core and the energy it carries in the sur
 ## Claude's response to the 4492 return (not part of the verbatim report)
 
 All fourteen required changes taken in, after spot-checking founders_vision.md l.1069, THEO-QM-6 and THEO-SD-6 in the theorem registry, QM-4's Plain Language Summary and introduction, and the 5.9 × 10⁴² figure across the tree (found in sixteen files, including `axiom-registry.md` and `glossary-QM-1.md`, `glossary-QM-4.md`, `phenomena-QM-1/3/4/5/6.md`, `reviews-QM-4.md` and `series_standard_model/papers/phenomena-QM-6a.md` beyond the critic's list; all are named in §3.3 and TODO-4492-g). Optional notes 1–5 taken. The tree-wide correction and the QM-4/THEO-QM-6 scope edit are filed as owed, not made in this patch.
+
+
+## Patch 4493 — Independent critic of the reading of the founder's transient-bond answer (4492 §4)
+
+VERDICT: ACCEPT WITH CHANGES
+
+The founder file is verbatim. The reading misses the 4411–4422 coasting arc: the same question was asked at 4419 §7 Q1 and answered at 4420, and CONJ-FP-1 (2884) is no longer the live inertia picture. It also overstates the "no trail = no drag" identity.
+
+REQUIRED CHANGES
+
+1. **D-10: 4419–4420 already hold this question and its answer.** Location: §2 bullet 1, §4, §6.
+   - 4419 §7 Q1 asked whether each cloud DP moves with the particle or DPs are "picked up from the resting sea ahead and let go behind".
+   - 4420 (23 Oct) answered it with turning-over membership. In 4420's founder file he wrote: "It coasts from its previous Moment's charge in front, discharge in back." 4420 §2 read that as held in the sea, under the 7 July ruling (`founders_voice/no_carried_velocity_displacement_from_ssv_2026-07-07.md`).
+   - Fix: say 4493 restates and sharpens 4420's turning-over membership and its "charge in front, discharge in back" for a Sea DP passed by a core. The cloud (cohort) travels with the core (4419), and its members are released behind and settle back. It is not simply 4492's third option; label it "something else: the cloud travels, its members settle back".
+   - Cite 4419 §3 (ii), 4420 §2 and the 7 July ruling (each DP momentarily at rest, no carried velocity).
+   - In §6, mark 4419 item 2 / 4420 item 2 as bearing.
+
+2. **§4 bullet 1 treats CONJ-FP-1 (2884) as the live ruling. It is not.**
+   - "No collapse asymmetry, no store-and-release lifecycle" is the worker's note in `founder_mechanism_roundtrip_timing_inertia_2026-08-02.md` §2, copied into CONJ.md. It is not his wording.
+   - His words are only: "this idea replaces all the others because every DP-arc … has a corresponding effect that is related to the timing delay … I think this is the only effect."
+   - Since then the picture has moved:
+     - 4411 (e) reopened Condition B.
+     - 4413 recast the round trip as a timing ratio.
+     - 4415: "There are no DI-bits 'coming back' to the CP." 4414's count mechanism is replaced, and the differential is held in the sea's DP-arc/separation organization (f × local light speed, Claude's rendering).
+     - 4420 gives his post-2884 wording, "charge in front, discharge in back".
+   - CONJ.md line 477 is stale. Its update is owed under todolist 4411 (f), 4412 (i), 4414 (8) and 4415 (11).
+   - Fix: attribute the store-and-release exclusion to the worker's 2 August note. Say the round-trip echo was withdrawn by his 4415 "no returns". State that on the corpus as it stands (4415 + 4420), his 4493 lifecycle wording does not conflict with any ruling of his. What is left is the stale registry entry, to be carried.
+   - Rewrite §8's convenient-branch line to match (see change 9).
+
+3. **§7, last paragraph, misattributes.** "your 2 August ruling, which made the round-trip timing the only inertia mechanism with no store-and-release" credits him with the worker's gloss, and that gloss was later overtaken by his 4415 and 4420 answers. Fix: remove the paragraph or replace it with: "This matches your October 'charge in front, discharge in back' (4420)."
+
+4. **§5 rests on a mechanism he later withdrew, and it is binary.** "The delay in its reply — the round-trip timing of 2 August" assumes returns, which he denied at 4415. Replace it with the open question this patch actually needs (the condition in §3 (1)), as a physical picture with an open option. Suggested: "When a DP behind the core lets go of it, is that DP left exactly as it was before the core came, or is it left shifted or turned, or does it hand something on to the DPs around it? Or something else?"
+
+5. **§2 bullet 4 and §7 paragraph 2: "a trail … is energy left behind, which is drag … one condition" is false as stated.**
+   - Energy-free records exist. A degenerate orientation or phase flip records the path with no energy cost; the Walborn polarization marker, which 4492 §3.1 already cites, is this kind. So does Darwin drift: in d'Alembert potential flow past a body there is no wake and no drag, yet every fluid element is left permanently displaced, with total drift volume equal to the added-mass volume (Darwin 1953).
+   - Conversely, drag into modes longer than the path separation d slows the atom without telling the paths apart.
+   - Fix: "A trail that carries energy is drag. A trail can also carry no energy (an orientation or phase record, or a permanent displacement as in Darwin drift); it decoheres without slowing. The two tests overlap but are not one."
+   - Rescale accordingly: 4419 §5 already caps any drag near 10⁻⁶² per Moment (ephemerides), which is far tighter than 4492 S1's 10⁻²⁰. So the energetic part of the trail is essentially excluded already, and the live coherence risk is the energy-free record. That makes §3 (1) the operative condition.
+   - Rename §6 (b) to match (for example "Two tests, overlapping").
+
+6. **§2 bullet 2: the comoving-cloud comparison needs D-15 conditions and its CPP limit.**
+   - Add: no shedding holds only below a threshold (Cherenkov in a medium, Landau's critical velocity in a superfluid). The cleanest standard analogue is d'Alembert/potential flow: fluid displaced ahead, closing behind, zero net force, no wake.
+   - Add the CPP limit: the standard (Liénard–Wiechert) cloud is fore-aft balanced and supplies no drive, which is why CONJ-FP-1's Condition B says such a relay gives d = 0 (reopened at 4411 (e)). In CPP the front–rear difference must also produce the step, exactly v (4419 item 4, carried at 4420 (7)).
+   - Delete "Records … are shed only when the motion changes" or qualify it the same way.
+
+7. **§2 bullet 4: three citations are wrong or misleading.**
+   - (a) The quoted "falsification route (b)" sits in CONJ-FP-1's original registration, which is superseded in mechanism and kept for provenance. Cite the revised entry's "Surviving unchanged: … stability of the coasting family (B1)" and say the route (b) wording comes from the provenance block.
+   - (b) The 2880 "drag at every lag ratio" note (1 Aug file §4) states explicitly that the result "applies to relaxing polarization and NOT to a store-and-release element". His 4493 bond-held-then-released is closer to store-and-release. Say so; do not present the result as a threat to his picture.
+   - (c) "The corpus also holds that … the wake *is* the kinetic energy" (25 Aug file §3) is labelled there as "worker interpretation for the 1B closure artifact to confirm or correct". It also uses "wake" for the comoving self-signal, which is not a trailing record. Attribute it as the worker's framing and note the terminology clash with his "no disturbed space left in the wake". Otherwise drop the sentence.
+
+8. **§4 bullet 2: the 4414 reading is stale.** 4415 replaced 4414's count mechanism, and the differential now sits in payloads. Restate: "his 'pushes on the atomic core' is read as the rear contribution to the front–rear differential (4414's rear-minus-front, carried in payloads since 4415; 4419 §5 / 4420 §2 read his pushes the same way), not a mechanical push."
+   - The 4414 owed item on "environment-dependent slowing" (dilution) was reframed at 4415 as reversible μ-ε slowing, which is not drag. Cite the live no-drag item instead: 4419 item 4 (front and rear signals netting exactly v; linear-drag scale), carried at 4420 (7).
+
+9. **§8 PD-008 marking.** Once change 2 is made, the old "convenient branch" (compatibility with 2 August) is no longer a live question. Mark as convenient:
+   - declaring 4492 (b) "met", and
+   - the coherence–inertia unification (one test), now weakened per change 5.
+   Also add "the comoving-cloud analogy (conditions stated)" to the Marked list.
+
+10. **§1/§2: map "equatorial line" to the Position Plane.** His 1 Aug picture says the DP-arcs are "established … ahead of … the Position Plane, which is the plane perpendicular … to the axis of velocity" and "decay behind the Position Plane". State this as Claude's reading, cited to `founder_mechanism_volume_transfer_inertia_2026-08-01.md`.
+
+11. **New tension to state and carry: the far-path arcs.**
+    - In 4492 the quantum includes "the arcs in the other path" (4492 §1, §2), and membership comes from collision/forceful displacement (4492 (d)).
+    - In 4493, bonds exist only while a DP is in contact with the core, front to rear. DPs in the path the core does not take are never touched, so on the literal reading they are not members.
+    - Fix: add a §3 note and a §6 item: how the far-path arcs belong to the quantum under transient membership; with 4492 (d) and 4492 §2's update reaching the other path. Change the header "Bears on" to include 4492 (d) explicitly, since the body now uses it.
+
+12. **§6 bookkeeping (D-9).**
+    - Move 4492 (b) from "Answered here" to carried and re-scoped (the bound stays open). The TODO-4492-b entry must stay open.
+    - Add new items:
+      - far-path arc membership (change 11);
+      - energy-free records (orientation/phase/Darwin drift) as the operative coherence risk (change 5);
+      - CONJ.md line 477 update, carrying 4413–4415, 4420 and 4493 (already owed at 4411 (f), 4412 (i), 4414 (8), 4415 (11); carry, do not duplicate);
+      - 4220 / TODO-4203: his answer is a candidate founder picture for how long an induced sense persists in a Sea DP after the inducer passes (released at the rear hemisphere), not claimed for an orbital's wake. Either add this item or drop 4220 from "Reads against", where it is unused.
+    - Add 4419 item 4 / 4420 (7) and 4420 (2) to the "Bears on" or carried lists.
+    - The todolist entry, added in the same patch, must contain:
+      - file paths;
+      - "Answered: 4492 (f)";
+      - TODO-4493-a undoing vs dispersal (reworded per change 5: the DP left in a state that does not tell the paths apart, not necessarily its prior position);
+      - TODO-4493-b the trail–drag overlap, with the 10⁻⁶² drag cap vs the 10⁻²⁰ coherence bound;
+      - TODO-4493-c far-path arc membership;
+      - TODO-4493-d bends;
+      - TODO-4493-e founder question 4493 §5 (new wording);
+      - TODO-4493-f the 4220/TODO-4203 bearing;
+      - TODO-4492-b re-scoped and still open;
+      - the CONJ.md update as a carry pointer;
+      - the "Carried unchanged" list word for word (4492 (a), (c), (d), (e), (g); 4491 (b)–(f); 4490 (c), (e); 4489 §8 (b), (c), (e), (g); 4488 §7; 4481 (a), (c), (e); 4478 (a) and the §6 ruling; 4464 (d); 4477 (g); the 4478 §4 citation correction).
+
+13. **§3 (1): soften "the DP must return to its prior state".** The requirement is that the final state carries no path information: identical on both paths, or erased in the Nexus. A return to the prior state is sufficient but not necessary (compare Darwin drift for indistinguishable DPs). In §3 (2), likewise say the 10⁻²⁰ bound is on path distinguishability per Moment, not on the size of the residue.
+
+OPTIONAL NOTES
+
+1. **Founder file:** checked and verbatim — text, curly apostrophe, "(§4)", the asterisk bullets, the one blank line before "Thomas:" and before the bullets, the two blank lines before "What do you think?", and the "reward" typo kept. The disclosures cover wrapping, trailing spaces, brackets and the operational line. One addition: note that his pasted question differs in wording from 4492 §4 as filed ("doing? Do they…", "settle back to how they were before"). The title's "Rearward" is a headline paraphrase; acceptable given the note.
+2. **Paths-rejoin argument (§2 bullet 3):** state the premise, that the comoving cloud depends only on the present velocity and position. Paths with different kick histories rejoin with the same cloud only if their final momenta match up to the recoil 4492 already treats.
+3. **"Reads against" lists sections the body never uses:** 4478 §3, 4481 §2 and 4491 §1 (other than R-COLLISION-DISPERSES). Use them or trim the list.
+4. **4430 (shortening the same front and rear) and 4427 (where the moving cloud's energy sits)** are the latest corpus statements on the moving cloud's shape. Worth a pointer if the cloud's front–rear structure is discussed.
+5. **No new script is acceptable.** Every number is reused (4492 S1) or cited (4419 §5's ~10⁻⁶² per Moment, which should be cited as such, not recomputed). Keep the "Script: none new" line and add the 4419 citation.
+6. **§7:** if an interim chat message was sent before this critic returned, D-15 requires the final reply to say what the critic changed.
+
+PLAIN LANGUAGE
+The founder's copy of his message is faithful. The physics reading has the right core idea: Sea particles get pushed as the atom's core passes, hold on briefly, and let go behind it, so nothing is left in its track. But it missed that the founder gave this same picture in October ("charge in front, discharge in back"), and it treated an August idea he later dropped as his current view. It also claimed that leaving any trace would necessarily slow the atom. That is not true. A trace can cost no energy, like a tile flipped over or a fluid parcel nudged and left in place, and such a trace would spoil the atom's wave behaviour without slowing it. Since planetary orbits already rule out almost any slowing, the real question is whether those energy-free traces are left. The question for the founder should be reworded to ask exactly that, in plain physical terms.
+
+---
+
+## Claude's response to the 4493 return (not part of the verbatim report)
+
+All thirteen required changes taken in, after spot-checking 4419 §5 (the ~10⁻⁶² per Moment drag cap) and §7 Q1, 4420's founder file ("It coasts from its previous Moment's charge in front, discharge in back") and §2, and 4415's "no 'DI-bits coming back'": the reading was rewritten around 4419–4420 (§2), the comparison given its thresholds and CPP limit (§3), trail and drag separated with the energy-free record as the live risk and the condition softened to "tells nothing about the path" (§4), the far-path tension added (§5), the inertia section rebuilt on the corpus as it now stands with the 2 August exclusion attributed to the worker (§6), the founder question replaced (§7), and the open items and PD-008 marking rebuilt (§8, §10). Optional notes 1, 2, 3 and 5 taken (3: unused citations trimmed from Reads-against); note 4 (4427, 4430) not pursued, since the reading does not discuss the cloud's front–rear shape. The interim chat message sent before this return is corrected in the reply that delivers the patch.
